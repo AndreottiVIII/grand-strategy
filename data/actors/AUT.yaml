@@ -1,5 +1,6 @@
 id: AUT
 name: Austria
+short: Austria
 type: state
 iso2: at
 wikipedia: https://en.wikipedia.org/wiki/Austria
@@ -7,8 +8,154 @@ coords:
 - 16.37
 - 48.21
 seat: Vienna
-regions:
-- world
-card: stub
-tier: minor
+regions: [central-north-europe]
+card: full
+tier: protagonist
+last_verified: 2026-10-12
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep permanent neutrality as the working definition of national security while buying protection inside the EU's tent: no NATO, no mutual-assistance treaty, no foreign bases, but air defence bought jointly with Germany (European Sky Shield Initiative, a non-binding memorandum), a defence budget rising toward 2% of GDP by 2032 and a Bundesheer rebuilt under the 'Aufbauplan 2032+'. The Stocker coalition (ÖVP, SPÖ, NEOS, sworn in March 2025) kept Austria in Sky Shield after the FPÖ's first place in 2024 had put it in doubt."
+      confidence: B
+      sources:
+        - {url: "https://www.defensenews.com/global/europe/2025/02/28/austria-sticks-to-euro-sky-shield-under-moderate-coalition-government/", title: "Austria sticks to Euro Sky Shield under moderate coalition government", publisher: "Defense News", date: 2025-02-28, tier: 3}
+        - {url: "https://www.defensenews.com/global/europe/2025/02/03/austria-could-turn-its-back-on-european-missile-shield-pact/", title: "Austria could turn its back on European missile shield pact", publisher: "Defense News", date: 2025-02-03, tier: 3}
+        - {url: "https://icds.ee/en/austrias-neutrality-at-70-is-it-still-fit-for-purpose/", title: "Austria's neutrality at 70: is it still fit for purpose?", publisher: "International Centre for Defence and Security (ICDS)", date: 2025, tier: 2}
+    - rank: 2
+      text: "Cut the dependence on Russian energy and keep the money in the bank: pipeline gas from Russia stopped in January 2025 after OMV ended its Gazprom contract (16 Nov 2024 cut-off, 11 Dec 2024 termination), supply was re-routed through Germany and Italy and storage is filled; the open file is Raiffeisen Bank International, which still runs a Russian bank under an ECB wind-down demand and has taken a EUR 2bn Russian judgment, and which on 23 Jul 2026 announced a EUR 3.15bn claim in Austria against Rasperia (the Deripaska company that holds a frozen Strabag stake)."
+      confidence: B
+      sources:
+        - {url: "https://www.omv.com/en/news/241113-omv-successfully-receives-arbitral-award-in-relation-to-its-german-gas-supplies-from-gazprom-export", title: "OMV successfully receives arbitral award in relation to its German gas supplies from Gazprom Export", publisher: "OMV", date: 2024-11-13, tier: 1}
+        - {url: "https://www.vienna.at/e-control-gasversorgung-im-winter-2025-26-gesichert/9302957", title: "E-Control: gas supply secure in winter 2025/26", title_original: "E-Control: Gasversorgung im Winter 2025/26 gesichert", lang: de, publisher: "Vienna.at (APA)", date: 2025-03-27, tier: 3}
+        - {url: "https://www.ots.at/presseaussendung/EQS_20260723_EQS0004/eqs-adhoc-raiffeisen-bank-international-ag-rbi-and-ao-raiffeisenbank-russia-to-file-a-claim-against-rasperia-in-austria", title: "RBI and AO Raiffeisenbank Russia to file a claim against Rasperia in Austria", publisher: "Raiffeisen Bank International (ad hoc release)", date: 2026-07-23, tier: 1}
+    - rank: 3
+      text: "Lead the EU's enlargement to the Western Balkans, Austria's declared foreign-policy pillar, in the form of 'gradual integration' (single-market access sector by sector, equal conditions for all) with Montenegro and Albania as frontrunners; Stocker took part in the EU-Western Balkans summit in Tivat in June 2026, after state visits to Podgorica and Belgrade in August 2025. Austria is the third largest investor in Serbia and still supplies EUFOR Althea."
+      confidence: B
+      sources:
+        - {url: "https://www.vienna.at/eu-erweiterung-am-westbalkan-meinl-reisinger-wuenscht-sich-neuen-schwung/9641531", title: "EU enlargement in the Western Balkans: Meinl-Reisinger wants 'new momentum'", title_original: "EU-Erweiterung am Westbalkan: Meinl-Reisinger wünscht sich 'neuen Schwung'", lang: de, publisher: "Vienna.at (APA)", date: 2025-09, tier: 3}
+        - {url: "https://www.gov.me/en/article/ibrahimovic-pays-an-official-visit-to-viennaaustria-a-reliable-partner-on-montenegros-european-pathstrengthening-bilateral-cooperation-and-political-dialogue", title: "Ibrahimovic pays an official visit to Vienna: Austria a reliable partner on Montenegro's European path", publisher: "Government of Montenegro", date: 2026-04, tier: 1}
+        - {url: "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/06/bundeskanzler-stocker-stabilitaet-am-westbalkan-staerkt-oesterreich-und-europa.html", title: "Chancellor Stocker: stability in the Western Balkans strengthens Austria and Europe", title_original: "Bundeskanzler Stocker: Stabilität am Westbalkan stärkt Österreich und Europa", lang: de, publisher: "Austrian Federal Chancellery", date: 2026-06, tier: 1}
+        - {url: "https://betabriefing.com/news/politics/32099-austrian-chancellor-in-belgrade-affirms-support-to-serbias-eu-path", title: "Austrian Chancellor in Belgrade affirms support to Serbia's EU path", publisher: "Beta Briefing", date: 2025-08, tier: 3}
+    - rank: 4
+      text: "Shrink the migration inflow and the bill for it: border controls kept since 2015 (Stocker to Merz: Schengen does not yet give 'robust external border protection'), family reunification suspended since March 2025 under the EU emergency clause, deportations of Syrians, and a Schengen deal in which Austria lifted its veto on Romania and Bulgaria (12 Dec 2024) once interceptions had fallen."
+      confidence: B
+      sources:
+        - {url: "https://dip.euaa.europa.eu/node/1779", title: "Council of Ministers suspends family reunification", publisher: "European Union Agency for Asylum", date: 2025-03, tier: 1}
+        - {url: "https://www.salzburg24.at/news/oesterreich/bundeskanzler-christian-stocker-bei-antrittsbesuch-in-berlin-grosse-uebereinstimmung-mit-merz-art-294515", title: "Chancellor Stocker on inaugural visit in Berlin: great agreement with Merz", title_original: "Bundeskanzler Christian Stocker bei Antrittsbesuch in Berlin: große Übereinstimmung mit Merz", lang: de, publisher: "Salzburg24 (APA)", date: 2025-06-27, tier: 3}
+        - {url: "https://romania-insider.com/austria-drops-veto-romania-full-schengen-decemebr-2024", title: "Austria drops veto, paving way for Romania and Bulgaria to join Schengen fully", publisher: "Romania Insider", date: 2024-12, tier: 3}
+    - rank: 5
+      text: "Hold the line on the budget: as a net contributor Austria asks for a 2028-2034 EU budget of about 1% of gross national income, no larger Commission staff and an extended rebate, together with Germany, the Netherlands, Denmark, Finland and Sweden, while the government is losing in the polls to the FPÖ (34-36% in recent surveys against 21-23% for the ÖVP)."
+      confidence: B
+      sources:
+        - {url: "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/08/bundeskanzler-stocker-europa-braucht-ein-budget-mit-mass-wirkung-und-faire-lastenverteilung.html", title: "Chancellor Stocker: Europe needs a budget of measure, effect and fair burden-sharing", title_original: "Bundeskanzler Stocker: Europa braucht ein Budget mit Maß, Wirkung und fairer Lastenverteilung", lang: de, publisher: "Austrian Federal Chancellery", date: 2026-08, tier: 1}
+        - {url: "https://www.news.at/politik/eu-budget-osterreich-beharrt-auf-substanziellen-kurzungen", title: "EU budget: Austria insists on substantial cuts", title_original: "EU-Budget: Österreich beharrt auf substanziellen Kürzungen", lang: de, publisher: "News.at", date: 2026, tier: 3}
+        - {url: "https://www.derstandard.at/inland/politische-umfragen", title: "Political polls (Sonntagsfrage overview)", title_original: "Politische Umfragen", lang: de, publisher: "Der Standard", date: 2026, tier: 3}
+    - rank: 6
+      text: "Keep the trade machine running through the tariff storm: Germany takes about 30% of exports and the United States is the second market (EUR 12.9bn); the economy minister asks the EU to repeal the US steel tariffs, to keep suspension rights over the 2025 Turnberry framework and not to be 'blackmailed' over the threatened rise of US car tariffs from 15% to 25% (May 2026), while seeking fair terms for 650 Austrian firms in China."
+      confidence: B
+      sources:
+        - {url: "https://www.bmwet.gv.at/Presse/Archiv/BMWET-Pressemeldungen-2026/pa-bmwet-2026-05/US-Ultimatum.html", title: "US ultimatum", title_original: "US-Ultimatum", lang: de, publisher: "Austrian Federal Ministry for Economy, Energy and Tourism", date: 2026-05-09, tier: 1}
+        - {url: "https://www.vol.at/oesterreichs-aussenhandel-rutschte-2025-tief-ins-minus/10288316", title: "Austria's foreign trade slid deep into the red in 2025", title_original: "Österreichs Außenhandel rutschte 2025 tief ins Minus", lang: de, publisher: "Vol.at (APA, Statistik Austria data)", date: 2026-06, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "Seat diplomacy: Vienna houses the OSCE, the IAEA, OPEC and a UN headquarters (UNOV), almost 50 international organisations in all; Switzerland chairs the OSCE in 2026 but the secretariat is Austrian soil. Neutrality is sold as the licence to host and to mediate, and the Western Balkans file gives the foreign ministry a regional agenda inside the EU."
+      confidence: B
+      sources:
+        - {url: "https://www.unvienna.org/unvienna/multi-lang-link/host-city/index.html", title: "Vienna as a centre of international diplomacy", publisher: "United Nations Office at Vienna", date: 2024, tier: 1}
+        - {url: "https://www.eda.admin.ch/eda/en/fdfa/fdfa/aktuell/newsuebersicht/newsticker/osze-vorsitz-2026.html", title: "Switzerland assumes OSCE chairpersonship in 2026", publisher: "Swiss Federal Department of Foreign Affairs", date: 2026-01, tier: 1}
+    - domain: diplomatic
+      text: "Neighbour formats that give a small state a larger voice: the Slavkov/Austerlitz format with Czechia and Slovakia (Stocker's first summit in it was Bratislava, 10 Feb 2026, on energy prices and competitiveness), the trilateral with Hungary on migration, joint cabinet meetings (a government session with Hungary in Gödöllő planned for September 2026) and the 'frugal' letter on the EU budget."
+      confidence: B
+      sources:
+        - {url: "https://www.vienna.at/babis-bei-stocker-ehre-wieder-in-oesterreich-zu-sein/9979298", title: "Babiš with Stocker: 'an honour to be back in Austria'", title_original: "Babiš bei Stocker - 'Ehre, wieder in Österreich zu sein'", lang: de, publisher: "Vienna.at (APA)", date: 2026-02-10, tier: 3}
+        - {url: "https://schoenherr.eu/content/hungary-and-austria-to-hold-joint-government-session-in-september-2026", title: "Hungary and Austria to hold joint government session in September 2026", publisher: "Schoenherr", date: 2026-05-22, tier: 3}
+    - domain: informational
+      text: "Austria answers Russia's influence operations with courts and expulsions rather than rhetoric: the former BVT officer Egisto Ott was convicted in Vienna in May 2026 of espionage and abuse of office (four years and one month) for passing data to Jan Marsalek's Russian network, and on 4 May 2026 three Russian diplomats were expelled over an 'antenna forest' on embassy roofs, 14 since 2020."
+      confidence: B
+      sources:
+        - {url: "https://www.salzburg24.at/news/oesterreich/urteil-im-spionage-krimi-ex-bvt-chefinspektor-egisto-ott-wegen-amtsmissbrauchs-und-spionage-verurteilt-art-326354", title: "Verdict in the espionage thriller: ex-BVT chief inspector Egisto Ott convicted of abuse of office and espionage", title_original: "Urteil im Spionage-Krimi: Ex-BVT-Chefinspektor Egisto Ott wegen Amtsmissbrauchs und Spionage verurteilt", lang: de, publisher: "Salzburg24 (APA)", date: 2026-05-20, tier: 3}
+        - {url: "https://babel.ua/en/news/126699-austria-expels-three-russian-diplomats-on-suspicion-of-espionage", title: "Austria expels three Russian diplomats on suspicion of espionage", publisher: "Babel", date: 2026-05-04, tier: 3}
+    - domain: military
+      text: "A Bundesheer built for territorial defence and peace support, not for war abroad: about 290 soldiers in EUFOR Althea in Bosnia (Austrian generals commanded the mission from December 2009 to January 2024), a defence budget of about EUR 5.2-5.3bn in 2027 (Tanner: the largest ever; Finance Minister Marterbauer: around 1.2% of GDP, not 2% by 2032), air defence bought jointly with Germany."
+      confidence: C
+      sources:
+        - {url: "https://militaeraktuell.at/en/major-general-habermayer-new-eufor-commander/", title: "Major General Habermayer new EUFOR commander", publisher: "Militär Aktuell", date: 2023-01, tier: 3}
+        - {url: "https://www.vienna.at/geplante-heeres-investitionen-sollen-realisiert-werden/9402356", title: "Planned army investments to be realised", title_original: "Geplante Heeres-Investitionen sollen realisiert werden", lang: de, publisher: "Vienna.at (APA)", date: 2025, tier: 3}
+        - {url: "https://euforbih.org/index.php/latest-news/3134-major-general-laszlo-sticz-takes-command-of-eufor-operation-althea", title: "Major General László Sticz takes command of EUFOR Operation Althea", publisher: "EUFOR Althea", date: 2024-01, tier: 1}
+    - domain: economic
+      text: "Money as soft power: EUR 3bn counted as support to Ukraine since 2022 (EUR 294m bilateral, humanitarian and reconstruction, no weapons), direct investment in the Western Balkans (third in Serbia), bank balance sheets in Central and Eastern Europe (Raiffeisen above all), and gas-storage capacity that serves Central Europe (82.8 TWh injected by 8 Sep 2025)."
+      confidence: B
+      sources:
+        - {url: "https://orf.at/stories/3390701/", title: "Austria supported Kyiv with about three billion euros", title_original: "Österreich unterstützte Kiew mit rund drei Milliarden Euro", lang: de, publisher: "ORF", date: 2025-04-15, tier: 3}
+        - {url: "https://www.salzburg24.at/news/oesterreich/oesterreichs-gasspeicher-auch-ohne-russische-lieferungen-gut-gefuellt-art-301957", title: "Austria's gas storage well filled even without Russian deliveries", title_original: "Österreichs Gasspeicher auch ohne russische Lieferungen gut gefüllt", lang: de, publisher: "Salzburg24 (APA)", date: 2025-09, tier: 3}
+
+  constraints:
+    - text: "Neutrality is constitutional and popular: the 1955 law bars membership of a military alliance, participation in war and foreign bases; 74-75% of Austrians prefer neutrality to NATO (Gallup March 2024, Defence Ministry survey 2025) and only 14% want NATO, so no government can move on it, even while three quarters think the country is badly prepared to defend itself."
+      confidence: B
+      sources:
+        - {url: "https://icds.ee/en/austrias-neutrality-at-70-is-it-still-fit-for-purpose/", title: "Austria's neutrality at 70: is it still fit for purpose?", publisher: "International Centre for Defence and Security (ICDS)", date: 2025, tier: 2}
+        - {url: "https://militaeraktuell.at/en/neutral-but-defensive-population-strengthens-national-defense-course/", title: "Neutral but defensive: population strengthens national defense course", publisher: "Militär Aktuell", date: 2025, tier: 3}
+    - text: "A three-party coalition squeezed by the FPÖ: ÖVP, SPÖ and NEOS govern after Kickl's party won 2024 and talks with it collapsed; the FPÖ now polls 34-36% against 21-23% for the ÖVP, opposes sanctions on Russia and aid to Ukraine in the name of neutrality (Kickl called Zelensky's Vienna visit of June 2025 'neutrality-eroding'), and the three partners disagree on defence money."
+      confidence: B
+      sources:
+        - {url: "https://www.derstandard.at/inland/politische-umfragen", title: "Political polls (Sonntagsfrage overview)", title_original: "Politische Umfragen", lang: de, publisher: "Der Standard", date: 2026, tier: 3}
+        - {url: "https://www.euronews.com/2025/01/07/the-far-right-is-on-the-verge-of-gaining-power-in-austria-the-eu-holds-its-breath", title: "The far right is on the verge of gaining power in Austria: the EU holds its breath", publisher: "Euronews", date: 2025-01-07, tier: 3}
+        - {url: "https://www.falter.at/blauland/20250227/sinnlos-sanktionen", title: "'Senseless sanctions' (FPÖ line on Russia sanctions)", title_original: "Sinnlos-Sanktionen", lang: de, publisher: "Falter", date: 2025-02-27, tier: 3}
+    - text: "Germany is the market and the supply chain: about 30% of goods exports (EUR 56.2bn in 2025) go to Germany, which also takes much of the car-parts output that is finished there and re-exported to the United States, so a German slowdown or a US auto tariff lands in Austria twice. The trade balance with China is the widest deficit (EUR 12.6bn in 2025)."
+      confidence: B
+      sources:
+        - {url: "https://www.vol.at/oesterreichs-aussenhandel-rutschte-2025-tief-ins-minus/10288316", title: "Austria's foreign trade slid deep into the red in 2025", title_original: "Österreichs Außenhandel rutschte 2025 tief ins Minus", lang: de, publisher: "Vol.at (APA, Statistik Austria data)", date: 2026-06, tier: 3}
+        - {url: "https://www.vienna.at/less-growth-in-austria-due-to-trump-tariffs/9318455", title: "Less growth in Austria due to Trump tariffs", publisher: "Vienna.at", date: 2025-04, tier: 3}
+    - text: "Public finances: Agenda Austria projects the financing need rising from 15.3% of GDP in 2026 to about 21.3% in 2036; the budget leaves little for the army, the EU bill or Ukraine and is the reason for Vienna's hard line on the EU budget."
+      confidence: C
+      sources:
+        - {url: "https://www.news.at/politik/eu-budget-osterreich-beharrt-auf-substanziellen-kurzungen", title: "EU budget: Austria insists on substantial cuts", title_original: "EU-Budget: Österreich beharrt auf substanziellen Kürzungen", lang: de, publisher: "News.at", date: 2026, tier: 3}
+    - text: "Alpine geography and a Brenner problem: the Inntal and Brenner motorways carry Italy's trade with northern Europe and Tyrol's truck bans are under attack in the EU Court of Justice (Italy v Austria, C-524/24; Advocate General opinion of 16 Jul 2026 finds three of four measures contrary to the free movement of goods). Rome refuses the cross-border slot system Vienna wants."
+      confidence: A
+      sources:
+        - {url: "https://www.cipra.org/en/media-releases/interim-ruling-in-the-legal-dispute-over-alpine-transit", title: "Interim ruling in the legal dispute over Alpine transit", publisher: "CIPRA International", date: 2026-07-16, tier: 2}
+        - {url: "https://www.lovguiden.dk/en/det-offentlige/eu-domstolen/2026-07-16-eu-generaladvokat-oestrigs-lastbilforbud-paa-brennerpasset-og-i-inntal-strider-mod-eu-retten", title: "EU Advocate General: Austria's truck bans on the Brenner and in the Inn valley conflict with EU law", title_original: "EU-generaladvokat: Østrigs lastbilforbud på Brennerpasset og i Inntal strider mod EU-retten", lang: da, publisher: "Lovguiden", date: 2026-07-16, tier: 3}
+    - text: "Bank exposure it cannot unwind: Raiffeisen Bank Russia has cut loans from EUR 13.7bn to EUR 4.5bn, but its sale needs Russian state approval, a Russian court froze 100% of its shares in January 2025, and the ECB demanded a 65% cut of its loan book; Vienna twice failed in EU sanctions talks to release Rasperia's frozen Strabag stake as compensation, so the state cannot choose between pressure on Moscow and the interests of its largest banks."
+      confidence: B
+      sources:
+        - {url: "https://www.worldecr.com/news/raiffeisen-bank-continues-russian-exit-amid-sanctions-pressure/", title: "Raiffeisen Bank continues Russian exit amid sanctions pressure", publisher: "WorldECR", date: 2025-05-09, tier: 3}
+        - {url: "https://www.bnn.ca/raiffeisen-expects-ecb-will-ask-for-significant-russia-wind-down-1.2060727", title: "Raiffeisen expects ECB will ask for significant Russia wind-down", publisher: "Bloomberg via BNN", date: 2024-04-18, tier: 3}
+        - {url: "https://www.banktrack.org/article/dont_let_raiffeisen_use_austrian_courts_to_bail_out_its_russia_business", title: "Don't let Raiffeisen use Austrian courts to bail out its Russia business", publisher: "BankTrack", date: 2026, tier: 4}
+
+  paradoxes:
+    - text: "Neutrality buys no safety and costs a seat. Austria cannot join NATO or any mutual-defence pact, but it sits under the EU's Article 42(7) clause and buys its air shield from a German-led club; it therefore depends on the alliance it will not join for the protection it needs, while the party that promises to protect neutrality (FPÖ) would take it out of Sky Shield and so make the Bundesheer both weaker and costlier (estimated EUR 100m extra for leaving)."
+      confidence: B
+      sources:
+        - {url: "https://www.defensenews.com/global/europe/2025/02/03/austria-could-turn-its-back-on-european-missile-shield-pact/", title: "Austria could turn its back on European missile shield pact", publisher: "Defense News", date: 2025-02-03, tier: 3}
+        - {url: "https://icds.ee/en/austrias-neutrality-at-70-is-it-still-fit-for-purpose/", title: "Austria's neutrality at 70: is it still fit for purpose?", publisher: "International Centre for Defence and Security (ICDS)", date: 2025, tier: 2}
+    - text: "The gas break was won by OMV's own lawsuit, and it worked because the old dependence had already been replaced. OMV set off its EUR 230m ICC award against Gazprom invoices, expecting the cut-off, and Gazprom stopped deliveries on 16 Nov 2024; but the state that for decades relied on the Gazprom contract had to rebuild a gas system through Germany and Italy, and its banks still earn money in Russia, so the energy break from Moscow is complete while the financial one is not."
+      confidence: B
+      sources:
+        - {url: "https://www.omv.com/en/news/241113-omv-successfully-receives-arbitral-award-in-relation-to-its-german-gas-supplies-from-gazprom-export", title: "OMV successfully receives arbitral award in relation to its German gas supplies from Gazprom Export", publisher: "OMV", date: 2024-11-13, tier: 1}
+        - {url: "https://www.intellinews.com/russia-cuts-off-gas-supply-to-austria-s-omv-353600", title: "Russia cuts off gas supply to Austria's OMV", publisher: "bne IntelliNews", date: 2024-11-16, tier: 3}
+    - text: "The Schengen veto that Vienna used as leverage ended up unblocking the countries it wanted to discipline. Austria held Romania and Bulgaria out of Schengen for two years in the name of migration control, dropped the veto on 12 Dec 2024 after Karner showed interceptions falling from 70,000 to 4,000, and still keeps its own internal border controls, in place since 2015, on the argument that Schengen does not yet protect the external frontier; the leverage worked, but Vienna now keeps the checks it had said the veto would make unnecessary."
+      confidence: B
+      sources:
+        - {url: "https://romania-insider.com/austria-drops-veto-romania-full-schengen-decemebr-2024", title: "Austria drops veto, paving way for Romania and Bulgaria to join Schengen fully", publisher: "Romania Insider", date: 2024-12, tier: 3}
+        - {url: "https://www.salzburg24.at/news/oesterreich/bundeskanzler-christian-stocker-bei-antrittsbesuch-in-berlin-grosse-uebereinstimmung-mit-merz-art-294515", title: "Chancellor Stocker on inaugural visit in Berlin: great agreement with Merz", title_original: "Bundeskanzler Christian Stocker bei Antrittsbesuch in Berlin: große Übereinstimmung mit Merz", lang: de, publisher: "Salzburg24 (APA)", date: 2025-06-27, tier: 3}
+    - text: "Backing the Balkans into the EU while insisting on the EU's strictest terms. Austria champions Montenegro, Albania and Serbia and wants 'gradual integration', but asks for the same criteria for all, caps the EU budget it would take to pay for enlargement at about 1% of GNI and, by blocking Schengen for two years, showed candidates that membership can be held hostage to migration; Belgrade's irritation at Stocker's press questions in August 2025 shows the limits of leverage."
+      confidence: C
+      sources:
+        - {url: "https://www.vienna.at/eu-erweiterung-am-westbalkan-meinl-reisinger-wuenscht-sich-neuen-schwung/9641531", title: "EU enlargement in the Western Balkans: Meinl-Reisinger wants 'new momentum'", title_original: "EU-Erweiterung am Westbalkan: Meinl-Reisinger wünscht sich 'neuen Schwung'", lang: de, publisher: "Vienna.at (APA)", date: 2025-09, tier: 3}
+        - {url: "https://n1info.rs/english/news/stocker-surprised-by-vucics-reaction-to-reporters/", title: "Stocker surprised by Vucic's reaction to reporters", publisher: "N1 Serbia", date: 2025-08, tier: 3}
+        - {url: "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/08/bundeskanzler-stocker-europa-braucht-ein-budget-mit-mass-wirkung-und-faire-lastenverteilung.html", title: "Chancellor Stocker: Europe needs a budget of measure, effect and fair burden-sharing", title_original: "Bundeskanzler Stocker: Europa braucht ein Budget mit Maß, Wirkung und fairer Lastenverteilung", lang: de, publisher: "Austrian Federal Chancellery", date: 2026-08, tier: 1}
+    - text: "Fighting the Brenner lorries in Luxembourg is a fight against its own single-market gains. Tyrol's truck bans protect health and air quality but Italy sued in 2024 and the Commission took Rome's side; the Advocate General's July 2026 opinion suggests most of the bans fall, so the member state that leads the 'frugal' push for a tighter EU must defend its transit policy against the EU's own court and against the neighbour it needs for the Brenner Base Tunnel and the slot system."
+      confidence: C
+      sources:
+        - {url: "https://www.cipra.org/en/media-releases/interim-ruling-in-the-legal-dispute-over-alpine-transit", title: "Interim ruling in the legal dispute over Alpine transit", publisher: "CIPRA International", date: 2026-07-16, tier: 2}
+    - text: "Austria's banking footprint in Russia has kept it from using sanctions against Russia as an instrument: the state backs every EU package, yet its largest foreign-exposed lender is suing in Austrian courts for compensation from a sanctioned Russian company."
+      confidence: C
+      sources:
+        - {url: "https://www.ots.at/presseaussendung/EQS_20260723_EQS0004/eqs-adhoc-raiffeisen-bank-international-ag-rbi-and-ao-raiffeisenbank-russia-to-file-a-claim-against-rasperia-in-austria", title: "RBI and AO Raiffeisenbank Russia to file a claim against Rasperia in Austria", publisher: "Raiffeisen Bank International (ad hoc release)", date: 2026-07-23, tier: 1}
+        - {url: "https://www.banktrack.org/article/dont_let_raiffeisen_use_austrian_courts_to_bail_out_its_russia_business", title: "Don't let Raiffeisen use Austrian courts to bail out its Russia business", publisher: "BankTrack", date: 2026, tier: 4}
+
+  reading: |
+    Austria is a middle-sized trading state that has made a security policy out of not having one, and the two things that held that bargain up - cheap Russian gas and a post-1989 buffer of friendly neighbours - are gone. The gas is gone by the company's own choice and the market's help (December 2024); the buffer is being rebuilt through the Slavkov format, the Magyar reset in Hungary, the Balkan enlargement file and a Germany that now agrees with Vienna on borders. Neutrality remains untouchable at 75% public support, so the Stocker government, squeezed by an FPÖ polling at 34-36%, does what the Cold War Austria did: it moves with the West in everything except the vocabulary (EU sanctions yes, weapons no; Sky Shield yes, NATO no; a 2% defence goal on paper and about 1.2% in the budget). The real strategic exposure is economic, not military: Germany for the market, the United States for the second-largest outlet, China for the deficit, and the Brenner for the lorries. The Russia file shows the paradox best: the espionage cases (Ott, the embassy antennas) are taken to court and the diplomats expelled, but Raiffeisen's Russian bank and its EUR 3.15bn claim keep one Austrian foot in Moscow. For the atlas, Austria is a partner of almost everyone and an ally of a few by treaty, and its grade toward each follows the structure (EU membership, trade, geography), not the declaration of neutrality.
