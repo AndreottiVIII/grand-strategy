@@ -119,6 +119,10 @@ because GitHub Pages serves it as-is.
 
 ## Adding or updating an actor
 
+After every review: `python tools/reciprocate.py --write` (Davide's rule: a new card's
+grades and treaties retroact on the cards already written - Pakistan calling Turkey an
+ally puts the reciprocal into Turkey's files, flagged `reciprocal_of`), then build.
+
 1. Research with sources first; never write a row you cannot cite.
 2. Create or edit the three files for the actor (stub counterparts if they do not exist).
 3. `python tools/build.py`; fix every error it names.

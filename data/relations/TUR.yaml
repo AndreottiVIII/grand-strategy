@@ -1,468 +1,907 @@
 from: TUR
 relations:
-  # ---------- objective ----------
-  - to: SYR
-    layer: objective
-    type: influence_goal
-    summary: "Ankara wants a friendly, unified Syria under the post-Assad authorities, with 'one state, one army' and no autonomous Kurdish force on its border; a military training agreement was signed on 13 Aug 2025 (counter-terrorism, demining, cyber, logistics) and talks on Turkish air bases were reported but not confirmed by either government."
-    since: 2024-12
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://english.enabbaladi.net/archives/2025/08/syria-turkey-military-agreement-a-new-approach-constrained-by-limits/", title: "Syria-Turkey military agreement: a new approach constrained by limits", publisher: "Enab Baladi", date: 2025-08, tier: 3}
-      - {url: "https://pukmedia.com/EN/Details/80404", title: "Türkiye welcomes Damascus-SDF integration deal, urges transparent implementation", publisher: "PUKmedia", date: 2026-02, tier: 3}
-  - to: nsa-sdf
-    layer: objective
-    type: influence_goal
-    summary: "Turkey's aim is the end of the SDF as an autonomous armed force; Ankara welcomed the Damascus-SDF integration deal of 30 Jan 2026 and Mazloum Abdi announced on 25 Aug 2026 that the SDF had dissolved as an independent force and completed integration into the Syrian army; Erdogan called it a step to a 'Terror-Free Region'. Integration is self-reported."
-    since: 2025-03-10
-    until: null
-    last_verified: 2026-10-12
-    confidence: C
-    sources:
-      - {url: "https://www.birgun.net/haber/everything-is-going-according-to-plan-731406", title: "Everything is going according to plan (SDF announces it has dissolved as an independent force)", publisher: "BirGün", date: 2026-08-27, tier: 3}
-      - {url: "https://pukmedia.com/EN/Details/80404", title: "Türkiye welcomes Damascus-SDF integration deal, urges transparent implementation", publisher: "PUKmedia", date: 2026-02, tier: 3}
-      - {url: "https://www.longwarjournal.org/archives/2025/10/sdf-moves-forward-with-integration-into-new-syrian-security-forces.php", title: "SDF moves forward with integration into new Syrian security forces", publisher: "FDD's Long War Journal", date: 2025-10-17, tier: 2}
-  - to: nsa-pkk
-    layer: objective
-    type: influence_goal
-    summary: "The 'Terror-Free Türkiye' process aims at the PKK's disbandment and disarmament: Öcalan called on the group in Feb 2025 to disarm, the PKK said in May 2025 it would end its armed struggle and dissolve, and a parliamentary commission set up in August 2025 recommended legislation; Law No. 7595 passed on 10 Aug 2026 (468 of 600 votes, with DEM and CHP support reported) and sets conditional suspensions of sentences."
-    since: 2024-10
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.thestar.com.my/news/world/2026/08/11/turkish-parliament-passes-landmark-law-to-advance-pkk-peace-process", title: "Turkish parliament passes landmark law to advance PKK peace process", publisher: "Reuters via The Star", date: 2026-08-11, tier: 3}
-      - {url: "https://www.al-monitor.com/originals/2026/08/turkish-parliament-passes-landmark-law-advance-pkk-peace-process", title: "Turkish parliament passes landmark law to advance PKK peace process", publisher: "Al-Monitor / Reuters", date: 2026-08-11, tier: 3}
-      - {url: "https://today.lorientlejour.com/article/1544432/turkey-s-limited-pardon-law-advances-pkk-peace-process-leaves-kurdish-question-unresolved.html", title: "Turkey's limited pardon law advances PKK peace process, leaves Kurdish question unresolved", publisher: "L'Orient Today", date: 2026-08, tier: 3}
-  - to: org-eu
-    layer: objective
-    type: influence_goal
-    summary: "Ankara seeks modernisation of the customs union (Kos-Fidan declaration of 6 Feb 2026, relaunch confirmed in the EU's 30 Jun 2026 statement), visa liberalisation and access to the EUR 150bn SAFE defence instrument; the EIB resumed lending after seven years (EUR 200m letter of intent). Accession itself is frozen and every item needs unanimity."
-    since: 2026-02-06
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2026-02-11/turkey-and-eu-renewed-efforts-a-complex-web-disputes", title: "Turkey and the EU: renewed efforts in a complex web of disputes", publisher: "OSW", date: 2026-02-11, tier: 2}
-      - {url: "https://www.lovguiden.dk/en/det-offentlige/eu-udenrigstjenesten/2026-06-30-eu-og-tyrkiet-styrker-samarbejdet-toldunion-visa-og-migration-paa-dagsordenen", title: "EU and Türkiye strengthen cooperation: customs union, visas and migration on the agenda (30 June 2026 EEAS statement)", publisher: "Lovguiden (EEAS release)", date: 2026-06-30, tier: 1}
-  - to: GRC
-    layer: objective
-    type: territorial_claim
-    summary: "Maritime claim under the 'Blue Homeland' doctrine: Turkey disputes Greek continental shelf and EEZ rights from islands, keeps the 1995 casus belli against any Greek extension of territorial waters beyond 6 nm, and decreed marine parks on 15 Aug 2026 between Lemnos and Samothrace and around Kastellorizo; a Blue Homeland law is expected in parliament in October 2026. Athens calls the parks illegal."
-    since: 1995
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://moderndiplomacy.eu/2026/09/04/turkey-marine-parks-aegean-eastern-mediterranean-tensions/", title: "Turkey's marine parks in the Aegean and the Eastern Mediterranean provoke regional turbulence", publisher: "Modern Diplomacy", date: 2026-09-04, tier: 3}
-      - {url: "https://www.iefimerida.gr/english/greece-declares-turkeys-new-marine-parks-illegal-under-international-law", title: "Greece declares Turkey's new 'marine parks' illegal under international law", publisher: "iefimerida", date: 2026-08, tier: 3}
-      - {url: "https://www.al-monitor.com/originals/2026/02/turkish-and-greek-leaders-set-talks-migration-maritime-borders", title: "Turkish and Greek leaders set talks on migration, maritime borders", publisher: "Al-Monitor / Reuters", date: 2026-02-11, tier: 3}
-  - to: USA
-    layer: objective
-    type: influence_goal
-    summary: "Ankara wants F-35 readmission and the lifting of CAATSA sanctions (imposed Dec 2020 over the S-400): Trump said on 7 Jul 2026 in Ankara the sanctions would come off and called a sale 'something we would consider'; Erdogan says he got a promise and on 2 Sep 2026 that talks continue; on 2 Oct Trump gave no timetable. Congress's F-35 ban and the S-400 in Turkey still stand."
-    since: 2019-07-17
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://jewishinsider.com/2026/07/trump-announces-lifting-sanctions-on-turkey-alongside-erdogan-at-nato-summit/", title: "Trump announces lifting sanctions on Turkey alongside Erdoğan at NATO summit", publisher: "Jewish Insider", date: 2026-07-07, tier: 3}
-      - {url: "https://news.bloombergtax.com/federal-contracting/erdogan-hopes-f-35-issue-will-be-resolved-after-us-processes-aa", title: "Erdogan hopes F-35 issue will be resolved after US processes (Anadolu)", publisher: "Bloomberg Tax", date: 2026-09-02, tier: 3}
-      - {url: "https://jinsa.org/wp-content/uploads/2026/07/Turkey-CAATSA-Insight-07.09.2026.pdf", title: "Turkey CAATSA Insight, 9 July 2026", publisher: "JINSA", date: 2026-07-09, tier: 2}
-
-  # ---------- alignment ----------
-  - to: AZE
-    layer: alignment
-    type: security_guarantee
-    summary: "Shusha Declaration on Allied Relations (15 Jun 2021): the parties coordinate their armed forces and give each other the necessary assistance if a third state threatens the independence or territorial integrity of either; it builds on the 2010 Agreement on Strategic Partnership and Mutual Assistance."
-    since: 2021-06-15
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://president.az/en/articles/view/52122", title: "Shusha Declaration on Allied Relations between the Republic of Azerbaijan and the Republic of Turkey", publisher: "Presidential Administration of Azerbaijan", date: 2021-06-15, tier: 1}
-      - {url: "https://jam-news.net/azerbaijan-and-turkey-agree-on-mutual-military-assistance/", title: "Azerbaijan and Turkey agree on mutual military assistance", publisher: "JAMnews", date: 2021-06-15, tier: 3}
-  - to: SAU
-    layer: alignment
-    type: security_guarantee
-    summary: "Makkah Joint Defense Agreement signed on 7 Aug 2026 by Türkiye, Saudi Arabia and Pakistan: an armed attack on any one 'shall be regarded as an attack against them all'; officials say it is a deterrent and not a military coalition, with joint exercises and defence-industry cooperation planned. Erdogan wants more members (Fidan: Egypt is next)."
-    since: 2026-08-07
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.dawn.com/news/2023386", title: "'Big, bold and important first step': Trump welcomes defence pact between Pakistan, Saudi Arabia and Turkiye", publisher: "Dawn (AFP)", date: 2026-08-17, tier: 3}
-      - {url: "https://www.al-monitor.com/originals/2026/08/turkey-lays-out-plans-defence-pact-pakistan-and-saudi-arabia", title: "Turkey lays out plans for defence pact with Pakistan and Saudi Arabia", publisher: "Al-Monitor", date: 2026-08, tier: 3}
-  - to: org-eu
-    layer: alignment
-    type: candidate
-    summary: "Candidate for EU membership since 1999, with accession negotiations frozen for years; the customs union with the EU remains the operative framework and Turkey takes part in the EU's high-level dialogues on economy, migration, security and agriculture planned for the rest of 2026."
-    since: 1999
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2026-02-11/turkey-and-eu-renewed-efforts-a-complex-web-disputes", title: "Turkey and the EU: renewed efforts in a complex web of disputes", publisher: "OSW", date: 2026-02-11, tier: 2}
-      - {url: "https://www.cer.eu/sites/default/files/pb_TM_turkey_3.7.26.pdf", title: "Policy brief on EU-Türkiye relations, 3 July 2026", publisher: "Centre for European Reform", date: 2026-07-03, tier: 2}
-  - to: CYP
-    layer: alignment
-    type: non_recognition
-    summary: "Turkey does not recognise the Republic of Cyprus and backs a two-state, 'sovereign equality' settlement; a UN track is open (Guterres in Cyprus 27-29 Jul 2026, leaders' meetings of 26 Aug, 9 Sep and 17 Sep with the Turkish Cypriot leader Erhurman) and Ankara has not rejected the UN proposals but is said to want EU concessions in return."
-    since: 1974
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://cyprus-mail.com/2026/08/05/christodoulides-and-erhurman-meeting-set-for-august-26", title: "Christodoulides and Erhurman meeting set for August 26", publisher: "Cyprus Mail", date: 2026-08-05, tier: 3}
-      - {url: "https://www.thenationalherald.com/?p=580793", title: "Cyprus talks: Turkey signals openness while attaching conditions (citing DW)", publisher: "The National Herald", date: 2026-08, tier: 3}
-      - {url: "https://www.hurriyetdailynews.com/no-extended-meeting-planned-on-cyprus-issue-guterres-says-226993", title: "No extended meeting planned on Cyprus issue, Guterres says", publisher: "Hürriyet Daily News", date: 2026-09, tier: 3}
-  - to: UKR
-    layer: alignment
-    type: treaty
-    summary: "Free-trade agreement signed in Kyiv on 3 Feb 2022 during Erdogan's visit, after negotiations dragging since 2007; in Sep 2026 the two presidents set a target of USD 10bn of trade, from about USD 1bn."
-    since: 2022-02-03
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://kyivindependent.com/erdogan-visits-kyiv-signs-long-anticipated-free-trade-agreement/", title: "Erdogan visits Kyiv, signs long-anticipated free trade agreement", publisher: "Kyiv Independent", date: 2022-02-03, tier: 3}
-      - {url: "https://aa.com.tr/en/eurasia/zelenskyy-says-ukraine-very-open-to-turkiye-hosting-trilateral-peace-talks/4067073", title: "Zelenskyy says Ukraine 'very open' to Turkiye hosting trilateral peace talks", publisher: "Anadolu Agency", date: 2026-09, tier: 3}
-  - to: ALB
-    layer: alignment
-    type: treaty
-    summary: "Military cooperation agreement of 29 Jul 1992 and a joint declaration on a strategic partnership signed during Erdogan's visit to Tirana on 10 Oct 2024, with Turkish equipment, drones and training for the Albanian armed forces."
-    since: 2024-10-10
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://arab.news/mr6r3", title: "Erdogan inaugurates mosque in Albania, pledges military drones as he begins Balkan tour", publisher: "Arab News", date: 2024-10-10, tier: 3}
-      - {url: "https://abcnews.go.com/International/wireStory/turkeys-erdogan-inaugurates-turkish-funded-mosque-albanias-capital-114685341", title: "Turkey's Erdogan inaugurates a Turkish-funded mosque in Albania's capital", publisher: "AP via ABC News", date: 2024-10-10, tier: 3}
-  - to: MKD
-    layer: alignment
-    type: treaty
-    summary: "Framework agreement on military cooperation signed in October 2024; a political declaration of 28 Feb 2025 in Istanbul set up a High-Level Cooperation Council and agreed to update the free trade agreement. Turkey has donated military equipment to the army."
-    since: 2024-10
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://enlargement-infohub.eu/wp-content/uploads/2025/11/north-macedonia-report-2025.pdf", title: "North Macedonia 2025 Report (regional relations: Turkiye)", publisher: "European Commission", date: 2025-11-04, tier: 1}
-      - {url: "https://aa.com.tr/en/europe/turkiyes-relations-with-north-macedonia-rock-solid-president-erdogan/3496430", title: "Turkiye's relations with North Macedonia rock solid: President Erdogan", publisher: "Anadolu Agency", date: 2025-02-28, tier: 3}
-
-  # ---------- dependency ----------
-  - to: RUS
-    layer: dependency
-    type: energy_import
-    summary: "Gazprom contracts for about 22 bcm a year via Blue Stream and TurkStream, extended by one year on 3 Dec 2025 despite US pressure; under 40% of Turkey's gas mix, down from over 50% in 2018. Energy Minister Bayraktar: 'We cannot tell our citizens that there is no gas.' Turkey is diversifying (a 20-year LNG deal with Mercuria for US gas)."
-    value: 22
-    unit: bcm_per_year_gazprom_contracts_extended_dec_2025
-    since: 2020
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.iene.eu/energy-news/turkey-extends-russian-gas-imports-for-a-year-as-it-plans-us-investment-p8230.html", title: "Turkey extends Russian gas imports for a year as it plans US investment", publisher: "IENE (Reuters)", date: 2025-12-05, tier: 3}
-  - to: RUS
-    layer: dependency
-    type: energy_import
-    summary: "Russia was Turkey's largest petroleum supplier in December 2025 (2.16 million tonnes) but its share fell from 61.1% in Oct to 54.4% in Nov and 47.5% in Dec after Trump urged Erdogan on 25 Sep 2025 to stop buying Russian oil; Russian crude fell about 33% over the quarter and Iraq and Kazakhstan took the slack."
-    value: 0.475
-    unit: share_of_petroleum_imports_dec_2025
-    since: 2022
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://turkishminute.com/2026/02/16/turkey-cut-crude-oil-imports-from-russia-after-trumps-appeal-in-september/", title: "Turkey cut crude oil imports from Russia after Trump's appeal in September", publisher: "Turkish Minute", date: 2026-02-16, tier: 3}
-  - to: RUS
-    layer: dependency
-    type: investment
-    summary: "The Rosatom-built Akkuyu nuclear plant in Mersin: the first of four units is due to start generating before the end of 2026 (the rest in stages to 2028), three years late because of sanctions on Rosatom and financing problems; the cost has exceeded the original USD 20bn budget. Putin and Erdogan discussed it in Bishkek on 1 Sep 2026 and Erdogan proposed commissioning it together."
-    value: 20
-    unit: usd_bn_original_budget_exceeded
-    since: 2010
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www1.ru/en/news/2026/08/05/426566-pervyi-blok-postroennoi-rosatomom-aes-akkuiu-zapustiat-v-turcii-do-konca-goda.html", title: "First unit of Rosatom-built Akkuyu plant to start in Türkiye before year end", publisher: "Business and politics wire (www1.ru)", date: 2026-08-05, tier: 3}
-      - {url: "https://report.az/en/region/putin-erdogan-discuss-akkuyu-nuclear-plant-new-energy-projects", title: "Putin, Erdogan discuss Akkuyu nuclear plant, new energy projects", publisher: "Report.az", date: 2026-09-01, tier: 3}
-      - {url: "https://www.hurriyetdailynews.com/rosatom-says-akkuyu-plant-enters-final-pre-start-phase-224762", title: "Rosatom says Akkuyu plant enters final pre-start phase", publisher: "Hürriyet Daily News", date: 2026, tier: 3}
-  - to: RUS
-    layer: dependency
-    type: arms_supply
-    summary: "The Russian S-400 air-defence system bought in 2019 stays in Turkey in 2026 and is the reason for the F-35 exclusion and the CAATSA sanctions; US experts say the S-400 must go before any F-35 sale. Ankara has not said it will give it up. The count of batteries is not given in the sources found."
-    value: 1
-    unit: s400_system_in_turkish_service
-    since: 2019-07
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://jewishinsider.com/2026/07/trump-announces-lifting-sanctions-on-turkey-alongside-erdogan-at-nato-summit/", title: "Trump announces lifting sanctions on Turkey alongside Erdoğan at NATO summit", publisher: "Jewish Insider", date: 2026-07-07, tier: 3}
-      - {url: "https://carleton.ca/eetn/2025/strategic-autonomy-and-the-deepening-turkiye-russia-relationship/", title: "Strategic autonomy and the deepening Türkiye-Russia relationship", publisher: "Carleton University, EETN", date: 2025, tier: 2}
-  - to: USA
-    layer: dependency
-    type: arms_supply
-    summary: "US State Department approved on 26 Jan 2024 the sale of 40 F-16 (32 F-16C and 8 F-16D) with engines and modernisation kits for existing jets, a package worth up to USD 23bn, two days after Turkey's parliament ratified Sweden's NATO accession. The F-35 remains blocked."
-    value: 40
-    unit: f16_block70_aircraft_approved_jan_2024
-    since: 2024-01-26
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.aa.com.tr/en/americas/us-state-department-approves-sale-of-f-16s-to-turkiye-formally-notifies-congress/3120327", title: "US State Department approves sale of F-16s to Türkiye, formally notifies Congress", publisher: "Anadolu Agency", date: 2024-01-26, tier: 3}
-      - {url: "https://www.bloomberg.com/news/articles/2024-01-27/us-approves-f-16-sale-to-turkey-after-nato-sweden-accord", title: "US approves F-16 sale to Turkey after NATO-Sweden accord", publisher: "Bloomberg", date: 2024-01-27, tier: 3}
-  - to: GBR
-    layer: dependency
-    type: arms_supply
-    summary: "Contract signed on 27 Oct 2025 in Ankara for 20 new Eurofighter Typhoons, worth up to GBP 8bn (USD 10.7bn), following a July 2025 memorandum covering up to 40 jets and a German go-ahead; first delivery expected in 2030, with second-hand Typhoons from Qatar and Oman also planned."
-    value: 20
-    unit: eurofighter_typhoon_jets_ordered_oct_2025
-    since: 2025-10-27
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.defensenews.com/global/europe/2025/10/27/turkey-signs-107-billion-deal-with-uk-for-20-eurofighter-jets/", title: "Turkey signs $10.7 billion deal with UK for 20 Eurofighter jets", publisher: "Defense News", date: 2025-10-27, tier: 3}
-      - {url: "https://breakingdefense.com/2025/10/turkey-inks-deal-for-20-eurofighter-typhoon-jets/", title: "Turkey inks deal for 20 Eurofighter Typhoon jets", publisher: "Breaking Defense", date: 2025-10-27, tier: 3}
-  - to: CHN
-    layer: dependency
-    type: trade_share
-    summary: "China was the largest single source of Turkish imports in early 2026 (13.7% of all imports, one analysis), with a persistent deficit; Turkey's exports to China are raw materials (marble, boron compounds, copper, chromium). Erdogan raised the imbalance with Xi at the SCO summit in Tianjin on 31 Aug 2025. No official customs series was retrieved."
-    value: 0.137
-    unit: share_of_turkish_imports_early_2026
-    since: 2026
-    until: null
-    last_verified: 2026-10-12
-    confidence: C
-    sources:
-      - {url: "https://thediplomaticinsight.com/50-years-silk-road-turkiye-china-rebalance/", title: "50 years of the Silk Road: Türkiye-China rebalance", publisher: "The Diplomatic Insight", date: 2025, tier: 3}
-      - {url: "https://www.merics.org/de/turkey-china-relations-ankara-must-balance-complications-many-fronts", title: "Turkey-China relations: Ankara must balance complications on many fronts", publisher: "MERICS", date: 2024, tier: 2}
-  - to: ARE
-    layer: dependency
-    type: investment
-    summary: "UAE institutions signed agreements and MoUs valued at USD 50.7bn with Turkey during Erdogan's visit to Abu Dhabi in July 2023 (energy, finance, defence, space), on top of a March 2023 free trade agreement and a USD 5bn currency swap; ADQ pledged up to USD 8.5bn for earthquake-relief bonds. No 2026 figure on how much was implemented was found."
-    value: 50.7
-    unit: usd_bn_agreements_signed_july_2023
-    since: 2023-07-19
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.mofa.gov.ae/en/MediaHub/News/2023/7/19/19-7-2023-UAE-ministry-of-investment", title: "UAE Ministry of Investment announces agreements worth over $50 billion in Republic of Türkiye", publisher: "UAE Ministry of Foreign Affairs", date: 2023-07-19, tier: 1}
-      - {url: "https://www.al-monitor.com/originals/2023/07/turkeys-erdogan-uae-meet-mbz-thaw-investments-grow", title: "Turkey, UAE ink $50 billion in trade deals during Erdogan visit", publisher: "Al-Monitor", date: 2023-07, tier: 3}
-
-  # ---------- action ----------
-  - to: USA
-    layer: action
-    type: visit
-    summary: "Trump and Erdogan met in Ankara on 7 Jul 2026 at the NATO summit, where Trump said 'we're going to be taking the sanctions off' and called an F-35 sale something the US would consider; the previous face-to-face was at the White House on 25 Sep 2025, where Trump urged an end to Russian oil purchases. Erdogan phoned Trump on 17 Aug 2026 to urge talks with Iran."
-    since: 2026-07-07
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://jewishinsider.com/2026/07/trump-announces-lifting-sanctions-on-turkey-alongside-erdogan-at-nato-summit/", title: "Trump announces lifting sanctions on Turkey alongside Erdoğan at NATO summit", publisher: "Jewish Insider", date: 2026-07-07, tier: 3}
-      - {url: "https://www.al-monitor.com/originals/2026/08/erdogan-urges-trump-pursue-talks-iran-offers-support", title: "Erdogan urges Trump to pursue talks with Iran, offers support", publisher: "Al-Monitor / Reuters", date: 2026-08-18, tier: 3}
-  - to: org-nato
-    layer: action
-    type: agreement
-    summary: "Türkiye hosted the 36th NATO summit at the Bestepe Presidential Complex in Ankara on 7-8 Jul 2026: the Ankara Declaration reaffirmed Article 5 and named Russia a long-term threat; allies pledged EUR 70bn for Ukraine in 2026 and at least as much in 2027, and announced over USD 50bn of new procurements."
-    since: 2026-07-08
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://brusselssignal.eu/2026/07/nato-ends-ankara-summit-with-arms-pledges-and-trumps-blessing/", title: "NATO ends Ankara summit with arms pledges and Trump's blessing", publisher: "Brussels Signal", date: 2026-07-09, tier: 3}
-      - {url: "https://foreignpolicy.com/2026/07/08/nato-ankara-summit-declaration-full-text-trump-ukraine-russia/", title: "The Ankara Summit Declaration", publisher: "Foreign Policy", date: 2026-07-08, tier: 3}
-  - to: SWE
-    layer: action
-    type: agreement
-    summary: "Turkey's parliament ratified Sweden's NATO accession protocol on 23 Jan 2024 by 287 votes to 55 after a 20-month delay; Erdogan signed it that week and the US approved the F-16 sale days later (Hungary was then the last holdout)."
-    since: 2024-01-23
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.diplomatie.gouv.fr/en/french-foreign-policy/security-disarmament-and-non-proliferation/news/2024/article/nato-turkey-s-parliament-votes-to-authorize-the-ratification-of-sweden-s", title: "NATO - Turkey's Parliament votes to authorize the ratification of Sweden's accession protocol (23 January 2024)", publisher: "French Ministry for Europe and Foreign Affairs", date: 2024-01-23, tier: 1}
-      - {url: "https://www.aljazeera.com/amp/news/2024/1/23/turkeys-parliament-set-to-vote-on-swedens-nato-bid-this-week-reports", title: "Turkey's parliament approves Sweden's NATO bid", publisher: "Al Jazeera", date: 2024-01-23, tier: 3}
-  - to: GRC
-    layer: action
-    type: visit
-    summary: "Erdogan hosted Prime Minister Mitsotakis in Ankara on 11 Feb 2026 for talks on migration, maritime disputes, Iran and Ukraine; no agreements were reported, both sides said they wanted to resolve the disputes and Erdogan called the talks 'open and sincere'."
-    since: 2026-02-11
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.al-monitor.com/originals/2026/02/turkish-and-greek-leaders-set-talks-migration-maritime-borders", title: "Turkish and Greek leaders set talks on migration, maritime borders", publisher: "Al-Monitor / Reuters", date: 2026-02-11, tier: 3}
-      - {url: "https://www.tovima.com/politics/mitsotakis-erdogan-meet-amid-aegean-tensions-and-red-lines/amp/", title: "Mitsotakis-Erdogan meet amid Aegean tensions and red lines", publisher: "To Vima", date: 2026-02, tier: 3}
-  - to: GRC
-    layer: action
-    type: incident
-    summary: "Turkish decrees of 15 Aug 2026 created marine parks in the north-eastern Aegean between Lemnos and Samothrace and around Kastellorizo; Greece said they are illegal and create no fait accompli, and Greek analysts read them as markers for a planned maritime boundary and a response to the Great Sea Interconnector."
-    since: 2026-08-15
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.iefimerida.gr/english/greece-declares-turkeys-new-marine-parks-illegal-under-international-law", title: "Greece declares Turkey's new 'marine parks' illegal under international law", publisher: "iefimerida", date: 2026-08, tier: 3}
-      - {url: "https://moderndiplomacy.eu/2026/09/04/turkey-marine-parks-aegean-eastern-mediterranean-tensions/", title: "Turkey's marine parks in the Aegean and the Eastern Mediterranean provoke regional turbulence", publisher: "Modern Diplomacy", date: 2026-09-04, tier: 3}
-      - {url: "https://en.politis.com.cy/news/politics/1026610/daily-sabah-links-turkeys-marine-parks-to-blue-homeland-strategy", title: "Daily Sabah links Turkey's marine parks to 'Blue Homeland' strategy", publisher: "Politis (Cyprus)", date: 2026-08, tier: 3}
-  - to: ARM
-    layer: action
-    type: agreement
-    summary: "Normalisation without diplomatic relations - the Margara checkpoint opened for humanitarian cargo to Lebanon on 12-22 Jun 2026 (people and goods otherwise not allowed); the Akhalkalaki-Kars rail link through Georgia opened to Armenian trade on 24 May 2026; a Gyumri-Kars working group met on 28 Apr 2026; Turkey said on 11 May 2026 the preparations for direct trade were complete; Erdogan telephoned Pashinyan after the June 2026 election. The land border is closed since 1993."
-    since: 2026-04-28
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://panarmenian.net/m/eng/news/334128", title: "Border checkpoint opens for humanitarian shipments", publisher: "PanARMENIAN", date: 2026-06-11, tier: 3}
-      - {url: "https://oc-media.org/turkish-rail-routes-open-for-armenian-cargo/", title: "Turkish rail routes open for Armenian cargo", publisher: "OC Media", date: 2026-05, tier: 3}
-      - {url: "https://jamestown.org/armenias-election-results-telling-for-azerbaijan-peace-process/", title: "Armenia's election results telling for Azerbaijan peace process (Erdogan congratulation)", publisher: "Jamestown Foundation", date: 2026-06, tier: 2}
-      - {url: "https://www.aa.com.tr/en/turkiye/turkiye-says-bureaucratic-preparations-completed-for-direct-trade-with-armenia/3935765", title: "Turkiye says bureaucratic preparations completed for direct trade with Armenia", publisher: "Anadolu Agency", date: 2026-05-11, tier: 3}
-  - to: ISR
-    layer: action
-    type: sanction
-    summary: "Turkey cut direct trade with Israel in May 2024 (about USD 7bn in 2023) and on 29 Aug 2025 Fidan told parliament it had 'completely' severed economic and trade ties, barred Turkish ships from Israeli ports and denied Israeli aircraft its airspace; Turkish port authorities also informally ask shipping agents for declarations that vessels carry no cargo for Israel."
-    since: 2024-05
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.aljazeera.com/news/2025/8/29/turkiye-closes-airspace-to-israel-entirely-cutting-ties-over-gaza-war", title: "Türkiye closes airspace to Israel, bans Israeli ships from Turkish ports", publisher: "Al Jazeera", date: 2025-08-29, tier: 3}
-      - {url: "https://www.al-monitor.com/originals/2025/08/turkey-says-it-bars-israeli-ships-its-ports-restricting-airspace", title: "Turkey says it bars Israeli ships from its ports, restricting airspace", publisher: "Al-Monitor / Reuters", date: 2025-08, tier: 3}
-  - to: ISR
-    layer: action
-    type: incident
-    summary: "Israel carried out eight air strikes on the runway of the Abu al-Duhur military airfield in Idlib on 18 Aug 2026; Netanyahu said it acted because Syria was about to let Turkish troops deploy there ('we will not tolerate a Turkish military foothold moving south'); Turkey called the claim 'frivolous', said it had no delegation at the base, and condemned the strikes. US envoy Tom Barrack called them 'unnecessary' and said Washington is working on a Turkey-Syria-Israel deconfliction mechanism."
-    since: 2026-08-18
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.thenationalnews.com/news/mena/2026/08/19/us-working-on-deconfliction-mechanism-between-turkey-syria-and-israel-says-barrack/", title: "US working on deconfliction mechanism between Turkey, Syria and Israel, says Barrack", publisher: "The National", date: 2026-08-19, tier: 3}
-      - {url: "https://www.al-monitor.com/originals/2026/08/turkey-rejects-israeli-claims-after-strike-syria-air-base", title: "Turkey rejects Israeli claims after strike on Syria air base", publisher: "Al-Monitor", date: 2026-08, tier: 3}
-      - {url: "https://english.aawsat.com/arab-world/5308616-t%C3%BCrkiye-rejects-israeli-claims-after-strike-syria-air-base", title: "Türkiye rejects Israeli claims after strike on Syria air base", publisher: "Asharq Al-Awsat", date: 2026-08, tier: 3}
-  - to: IRN
-    layer: action
-    type: incident
-    summary: "During the US-Israeli war on Iran of 2026, three Iranian missiles entered Turkish airspace and were intercepted by NATO air defences (NATO said they targeted Turkey, Iran denied it); Turkey closed its airspace to US forces, had a US Patriot battery deployed on its soil, and kept ~500 km of border under tighter security. Erdogan offered in July to help demine the Strait of Hormuz."
-    since: 2026-03
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://arabcenterdc.org/resource/turkey-and-the-war-on-iran-between-opportunity-and-catastrophe/", title: "Turkey and the war on Iran: between opportunity and catastrophe", publisher: "Arab Center Washington DC", date: 2026-03-18, tier: 2}
-      - {url: "https://english.alarabiya.net/News/middle-east/2026/07/08/turkey-ready-to-help-demine-strait-of-hormuz-erdogan-", title: "Turkey ready to help demine Strait of Hormuz: Erdogan", publisher: "Al Arabiya", date: 2026-07-08, tier: 3}
-  - to: IRQ
-    layer: action
-    type: agreement
-    summary: "Prime Minister al-Zaidi's visit to Ankara in late Jul 2026 produced contracts to start the Development Road (energy, transport, education, water), a water 'mechanism document' (signed 2 Nov 2025, ratified by Iraq's parliament on 25 Jul 2026 for implementation from 1 Sep: Turkish firms build water projects financed from Iraqi oil sales) and a one-year extension of the 1973 Kirkuk-Ceyhan pipeline agreement."
-    since: 2026-07-29
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://english.aawsat.com/node/5301168", title: "Iraqi-Turkish coordination on energy, water corridors as Al-Zaidi visits Ankara", publisher: "Asharq Al-Awsat", date: 2026-07, tier: 3}
-      - {url: "https://www.iraq-businessnews.com/2026/07/29/iraq-and-turkey-agree-to-launch-development-road-project/", title: "Iraq and Turkey agree to launch Development Road project", publisher: "Iraq Business News", date: 2026-07-29, tier: 3}
-  - to: SOM
-    layer: action
-    type: agreement
-    summary: "Turkey's parliament approved on 21 Jul 2026 a two-year extension of the military mission in Somalia to 27 Jul 2028, covering forces in 'jointly determined areas' on land and at sea; work on a spaceport and missile-test range at Warsheikh, about 70 km north of Mogadishu, began in Oct 2025 and an agreement to build it was announced by Erdogan in October 2026."
-    since: 2026-07-21
-    until: 2028-07-27
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.meforum.org/mef-observer/turkey-renews-its-somalia-mandate-to-guard-the-spaceport-and-missile-base", title: "Turkey renews its Somalia mandate to guard the spaceport and missile base", publisher: "Middle East Forum", date: 2026-07, tier: 2}
-      - {url: "https://allafrica.com/stories/202607060081.html", title: "Somalia: Turkey's new Somalia spaceport doubles as missile range, threatening Israel", publisher: "allAfrica", date: 2026-07-06, tier: 3}
-      - {url: "https://app.al-monitor.com/originals/2026/02/turkey-touts-somalia-spaceport-horn-africa-rivalry-heats", title: "Turkey touts Somalia spaceport as Horn of Africa rivalry heats", publisher: "Al-Monitor", date: 2026-02, tier: 3}
-  - to: LBY
-    layer: action
-    type: visit
-    summary: "Turkey works both camps in Libya: intelligence chief Kalin met Saddam Haftar in Benghazi on 23 Jun 2026, Haftar's son visited Ankara and met Fidan on 24 Jul 2026, and the 'Efes-2026' exercise in May 2026 trained over 500 soldiers from East and West; Ankara's Tripoli ties (the 2019 military support to the GNA) continue alongside."
-    since: 2026-06-23
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://turkishminute.com/2026/06/23/turkish-intelligence-chief-meets-with-son-of-eastern-libya-commander-haftar-in-benghazi/", title: "Turkish intelligence chief meets with son of eastern Libya commander Haftar in Benghazi", publisher: "Turkish Minute", date: 2026-06-23, tier: 3}
-      - {url: "https://www.agenzianova.com/en/news/Libya--Turkey-concludes-training-of-362-soldiers-from-the-East-and-West/", title: "Libya: Turkey concludes training of 362 soldiers from the East and West", publisher: "Agenzia Nova", date: 2026, tier: 3}
-      - {url: "https://libyasecuritymonitor.com/saddam-haftar-meets-turkish-fm-in-official-visit-to-ankara/", title: "Saddam Haftar meets Turkish FM in official visit to Ankara", publisher: "Libya Security Monitor", date: 2026-07, tier: 3}
-  - to: org-ots
-    layer: action
-    type: visit
-    summary: "Erdogan attended the 12th summit of the Organization of Turkic States in Gabala on 7 Oct 2025 (Azerbaijan took the chair; the Gabala Declaration and an 'OTS+' format with third countries were adopted; Aliyev proposed joint exercises in 2026); the next regular summit is set for Türkiye in autumn 2026 and an informal one for Kazakhstan."
-    since: 2025-10-07
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://turkicstates.org/en/news/12th-summit-of-the-organization-of-turkic-states-will-be-held-in-gabala-azerbaijan", title: "12th Summit of the Organization of Turkic States will be held in Gabala, Azerbaijan", publisher: "Organization of Turkic States", date: 2025-10, tier: 1}
-      - {url: "https://president.az/en/articles/view/70283", title: "12th Summit of the Council of Heads of State of the Organization of Turkic States commenced in Gabala", publisher: "Presidential Administration of Azerbaijan", date: 2025-10-07, tier: 1}
-  - to: RUS
-    layer: action
-    type: visit
-    summary: "Putin and Erdogan met on 1 Sep 2026 in Bishkek on the margins of the SCO summit: Erdogan said relations are 'at their highest level', Putin called Türkiye one of Russia's privileged partners, and both discussed Akkuyu and new power plants. Erdogan said the next day he had discussed 'all bilateral issues' with Putin."
-    since: 2026-09-01
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://report.az/en/region/putin-erdogan-discuss-akkuyu-nuclear-plant-new-energy-projects", title: "Putin, Erdogan discuss Akkuyu nuclear plant, new energy projects", publisher: "Report.az", date: 2026-09-01, tier: 3}
-      - {url: "https://en.apa.az/asia/erdogan-meets-with-putin-in-bishkek-updated-522455", title: "Erdogan meets with Putin in Bishkek", publisher: "APA", date: 2026-09-01, tier: 3}
-      - {url: "https://news.bloombergtax.com/federal-contracting/erdogan-hopes-f-35-issue-will-be-resolved-after-us-processes-aa", title: "Erdogan hopes F-35 issue will be resolved after US processes (Anadolu)", publisher: "Bloomberg Tax", date: 2026-09-02, tier: 3}
-  - to: UKR
-    layer: action
-    type: agreement
-    summary: "Istanbul hosted direct Russia-Ukraine talks on 16 May, 2 Jun and 23 Jul 2025 (no ceasefire; exchanges of 1,000 prisoners each); Ankara closed the straits to belligerent warships in Feb 2022, co-brokered the Black Sea grain corridor of 22 Jul 2022 (Russia left in Jul 2023), hosted Zelensky at the NATO summit on 7-8 Jul 2026 and on 7 Sep 2026 said it hoped to bring the talks back to Istanbul."
-    since: 2025-05-16
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.axios.com/2025/05/16/russia-ukraine-ceasefire-talks-turkey", title: "Russia and Ukraine far apart on ceasefire in first meeting in 3 years", publisher: "Axios", date: 2025-05-16, tier: 3}
-      - {url: "https://www.un.org/en/black-sea-grain-initiative", title: "Black Sea Grain Initiative", publisher: "United Nations", date: 2023-07, tier: 1}
-      - {url: "https://www.3newsnow.com/news/national/russia-ukraine-conflict/turkey-exercises-1936-pact-blocks-warships-from-entering-black-sea", title: "Turkey exercises 1936 pact, blocks warships from entering Black Sea", publisher: "ABC / Scripps News", date: 2022-02-28, tier: 3}
-      - {url: "https://www.uniindia.com/international/turkey-russia-ukraine-talks/171202", title: "Turkey hopes to return Russia-Ukraine negotiation process to Istanbul", publisher: "UNI", date: 2026-09-07, tier: 3}
-      - {url: "https://www.eurointegration.com.ua/eng/news/2026/07/7/7241099/", title: "Zelenskyy arrives at NATO summit in Ankara", publisher: "European Pravda", date: 2026-07-07, tier: 3}
-  - to: SRB
-    layer: action
-    type: agreement
-    summary: "Erdogan hosted Vucic in Ankara on 13 Feb 2026 - joint declaration on foreign policy, trade, defence industry and energy; USD 5bn trade target."
-    since: 2026-02-13
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://turkishminute.com/2026/02/13/erdogan-hosts-vucic-in-ankara-pledges-closer-turkey-serbia-ties/", title: "Erdoğan hosts Vučić in Ankara, pledges closer Turkey-Serbia ties", publisher: "Turkish Minute", date: 2026-02-13, tier: 3}
-  - to: BIH
-    layer: action
-    type: visit
-    summary: "Erdogan received Presidency member Denis Becirovic in Istanbul on 14 Mar 2025, on an emergency trip to discuss the Dodik crisis, with Foreign Minister Fidan present; Becirovic met the Turkish ambassador again on 24 Feb 2026."
-    since: 2025-03-14
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://fena.ba/article/1618819/becirovic-and-erdogan-meet-in-istanbul-to-discuss-the-situation-in-bosnia-and-herzegovina", title: "Becirovic and Erdogan meet in Istanbul to discuss the situation in Bosnia and Herzegovina", publisher: "FENA", date: 2025-03-14, tier: 3}
-      - {url: "https://www.iletisim.gov.tr/english/haberler/detay/president-erdogan-receives-bosnia-and-herzegovina-presidential-council-member-beirovi", title: "President Erdogan receives Bosnia and Herzegovina Presidential Council Member Becirovic", publisher: "Presidency of the Republic of Turkiye, Communications Directorate", date: 2025-03-14, tier: 1}
-  - to: XKX
-    layer: action
-    type: agreement
-    summary: "Kosovo announced in July 2023 the purchase of Turkish Bayraktar TB2 drones (KFOR said it conflicted with its authority over Kosovo's airspace); Turkey has supported the KSF transformation since 2018 (equipment, training, an ammunition agreement). Erdogan received Kurti at the UN General Assembly sidelines on 21 Sep 2026."
-    since: 2023-07
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.rferl.org/a/kosovo-buys-turkish-bayraktar-drones/32505916.html", title: "Kosovo buys Turkish Bayraktar drones", publisher: "RFE/RL", date: 2023-07, tier: 3}
-      - {url: "https://www.kosovo-online.com/en/news/analysis/turkish-arming-kosovo-continuation-military-cooperation-or-ankaras-support-kurti", title: "Turkish arming of Kosovo: continuation of military cooperation or Ankara's support for Kurti?", publisher: "Kosovo Online", date: 2026, tier: 3}
-      - {url: "https://en.yenisafak.com/turkiye/erdogan-meets-kosovar-pm-kurti-at-un-sidelines-3723535", title: "Turkiye's President meets Kosovar premier at UN sidelines", publisher: "Yeni Safak", date: 2026-09-21, tier: 3}
+- to: SYR
+  layer: objective
+  type: influence_goal
+  summary: Ankara wants a friendly, unified Syria under the post-Assad authorities, with 'one state, one army' and no autonomous Kurdish force on its border; a military training agreement was signed on
+    13 Aug 2025 (counter-terrorism, demining, cyber, logistics) and talks on Turkish air bases were reported but not confirmed by either government.
+  since: 2024-12
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://english.enabbaladi.net/archives/2025/08/syria-turkey-military-agreement-a-new-approach-constrained-by-limits/
+    title: 'Syria-Turkey military agreement: a new approach constrained by limits'
+    publisher: Enab Baladi
+    date: 2025-08
+    tier: 3
+  - url: https://pukmedia.com/EN/Details/80404
+    title: Türkiye welcomes Damascus-SDF integration deal, urges transparent implementation
+    publisher: PUKmedia
+    date: 2026-02
+    tier: 3
+- to: nsa-sdf
+  layer: objective
+  type: influence_goal
+  summary: Turkey's aim is the end of the SDF as an autonomous armed force; Ankara welcomed the Damascus-SDF integration deal of 30 Jan 2026 and Mazloum Abdi announced on 25 Aug 2026 that the SDF had dissolved
+    as an independent force and completed integration into the Syrian army; Erdogan called it a step to a 'Terror-Free Region'. Integration is self-reported.
+  since: 2025-03-10
+  until: null
+  last_verified: 2026-10-12
+  confidence: C
+  sources:
+  - url: https://www.birgun.net/haber/everything-is-going-according-to-plan-731406
+    title: Everything is going according to plan (SDF announces it has dissolved as an independent force)
+    publisher: BirGün
+    date: 2026-08-27
+    tier: 3
+  - url: https://pukmedia.com/EN/Details/80404
+    title: Türkiye welcomes Damascus-SDF integration deal, urges transparent implementation
+    publisher: PUKmedia
+    date: 2026-02
+    tier: 3
+  - url: https://www.longwarjournal.org/archives/2025/10/sdf-moves-forward-with-integration-into-new-syrian-security-forces.php
+    title: SDF moves forward with integration into new Syrian security forces
+    publisher: FDD's Long War Journal
+    date: 2025-10-17
+    tier: 2
+- to: nsa-pkk
+  layer: objective
+  type: influence_goal
+  summary: 'The ''Terror-Free Türkiye'' process aims at the PKK''s disbandment and disarmament: Öcalan called on the group in Feb 2025 to disarm, the PKK said in May 2025 it would end its armed struggle
+    and dissolve, and a parliamentary commission set up in August 2025 recommended legislation; Law No. 7595 passed on 10 Aug 2026 (468 of 600 votes, with DEM and CHP support reported) and sets conditional
+    suspensions of sentences.'
+  since: 2024-10
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.thestar.com.my/news/world/2026/08/11/turkish-parliament-passes-landmark-law-to-advance-pkk-peace-process
+    title: Turkish parliament passes landmark law to advance PKK peace process
+    publisher: Reuters via The Star
+    date: 2026-08-11
+    tier: 3
+  - url: https://www.al-monitor.com/originals/2026/08/turkish-parliament-passes-landmark-law-advance-pkk-peace-process
+    title: Turkish parliament passes landmark law to advance PKK peace process
+    publisher: Al-Monitor / Reuters
+    date: 2026-08-11
+    tier: 3
+  - url: https://today.lorientlejour.com/article/1544432/turkey-s-limited-pardon-law-advances-pkk-peace-process-leaves-kurdish-question-unresolved.html
+    title: Turkey's limited pardon law advances PKK peace process, leaves Kurdish question unresolved
+    publisher: L'Orient Today
+    date: 2026-08
+    tier: 3
+- to: org-eu
+  layer: objective
+  type: influence_goal
+  summary: Ankara seeks modernisation of the customs union (Kos-Fidan declaration of 6 Feb 2026, relaunch confirmed in the EU's 30 Jun 2026 statement), visa liberalisation and access to the EUR 150bn SAFE
+    defence instrument; the EIB resumed lending after seven years (EUR 200m letter of intent). Accession itself is frozen and every item needs unanimity.
+  since: 2026-02-06
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.osw.waw.pl/en/publikacje/analyses/2026-02-11/turkey-and-eu-renewed-efforts-a-complex-web-disputes
+    title: 'Turkey and the EU: renewed efforts in a complex web of disputes'
+    publisher: OSW
+    date: 2026-02-11
+    tier: 2
+  - url: https://www.lovguiden.dk/en/det-offentlige/eu-udenrigstjenesten/2026-06-30-eu-og-tyrkiet-styrker-samarbejdet-toldunion-visa-og-migration-paa-dagsordenen
+    title: 'EU and Türkiye strengthen cooperation: customs union, visas and migration on the agenda (30 June 2026 EEAS statement)'
+    publisher: Lovguiden (EEAS release)
+    date: 2026-06-30
+    tier: 1
+- to: GRC
+  layer: objective
+  type: territorial_claim
+  summary: 'Maritime claim under the ''Blue Homeland'' doctrine: Turkey disputes Greek continental shelf and EEZ rights from islands, keeps the 1995 casus belli against any Greek extension of territorial
+    waters beyond 6 nm, and decreed marine parks on 15 Aug 2026 between Lemnos and Samothrace and around Kastellorizo; a Blue Homeland law is expected in parliament in October 2026. Athens calls the parks
+    illegal.'
+  since: 1995
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://moderndiplomacy.eu/2026/09/04/turkey-marine-parks-aegean-eastern-mediterranean-tensions/
+    title: Turkey's marine parks in the Aegean and the Eastern Mediterranean provoke regional turbulence
+    publisher: Modern Diplomacy
+    date: 2026-09-04
+    tier: 3
+  - url: https://www.iefimerida.gr/english/greece-declares-turkeys-new-marine-parks-illegal-under-international-law
+    title: Greece declares Turkey's new 'marine parks' illegal under international law
+    publisher: iefimerida
+    date: 2026-08
+    tier: 3
+  - url: https://www.al-monitor.com/originals/2026/02/turkish-and-greek-leaders-set-talks-migration-maritime-borders
+    title: Turkish and Greek leaders set talks on migration, maritime borders
+    publisher: Al-Monitor / Reuters
+    date: 2026-02-11
+    tier: 3
+- to: USA
+  layer: objective
+  type: influence_goal
+  summary: 'Ankara wants F-35 readmission and the lifting of CAATSA sanctions (imposed Dec 2020 over the S-400): Trump said on 7 Jul 2026 in Ankara the sanctions would come off and called a sale ''something
+    we would consider''; Erdogan says he got a promise and on 2 Sep 2026 that talks continue; on 2 Oct Trump gave no timetable. Congress''s F-35 ban and the S-400 in Turkey still stand.'
+  since: 2019-07-17
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://jewishinsider.com/2026/07/trump-announces-lifting-sanctions-on-turkey-alongside-erdogan-at-nato-summit/
+    title: Trump announces lifting sanctions on Turkey alongside Erdoğan at NATO summit
+    publisher: Jewish Insider
+    date: 2026-07-07
+    tier: 3
+  - url: https://news.bloombergtax.com/federal-contracting/erdogan-hopes-f-35-issue-will-be-resolved-after-us-processes-aa
+    title: Erdogan hopes F-35 issue will be resolved after US processes (Anadolu)
+    publisher: Bloomberg Tax
+    date: 2026-09-02
+    tier: 3
+  - url: https://jinsa.org/wp-content/uploads/2026/07/Turkey-CAATSA-Insight-07.09.2026.pdf
+    title: Turkey CAATSA Insight, 9 July 2026
+    publisher: JINSA
+    date: 2026-07-09
+    tier: 2
+- to: AZE
+  layer: alignment
+  type: security_guarantee
+  summary: 'Shusha Declaration on Allied Relations (15 Jun 2021): the parties coordinate their armed forces and give each other the necessary assistance if a third state threatens the independence or territorial
+    integrity of either; it builds on the 2010 Agreement on Strategic Partnership and Mutual Assistance.'
+  since: 2021-06-15
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://president.az/en/articles/view/52122
+    title: Shusha Declaration on Allied Relations between the Republic of Azerbaijan and the Republic of Turkey
+    publisher: Presidential Administration of Azerbaijan
+    date: 2021-06-15
+    tier: 1
+  - url: https://jam-news.net/azerbaijan-and-turkey-agree-on-mutual-military-assistance/
+    title: Azerbaijan and Turkey agree on mutual military assistance
+    publisher: JAMnews
+    date: 2021-06-15
+    tier: 3
+- to: SAU
+  layer: alignment
+  type: security_guarantee
+  summary: 'Makkah Joint Defense Agreement signed on 7 Aug 2026 by Türkiye, Saudi Arabia and Pakistan: an armed attack on any one ''shall be regarded as an attack against them all''; officials say it is
+    a deterrent and not a military coalition, with joint exercises and defence-industry cooperation planned. Erdogan wants more members (Fidan: Egypt is next).'
+  since: 2026-08-07
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.dawn.com/news/2023386
+    title: '''Big, bold and important first step'': Trump welcomes defence pact between Pakistan, Saudi Arabia and Turkiye'
+    publisher: Dawn (AFP)
+    date: 2026-08-17
+    tier: 3
+  - url: https://www.al-monitor.com/originals/2026/08/turkey-lays-out-plans-defence-pact-pakistan-and-saudi-arabia
+    title: Turkey lays out plans for defence pact with Pakistan and Saudi Arabia
+    publisher: Al-Monitor
+    date: 2026-08
+    tier: 3
+- to: org-eu
+  layer: alignment
+  type: candidate
+  summary: Candidate for EU membership since 1999, with accession negotiations frozen for years; the customs union with the EU remains the operative framework and Turkey takes part in the EU's high-level
+    dialogues on economy, migration, security and agriculture planned for the rest of 2026.
+  since: 1999
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.osw.waw.pl/en/publikacje/analyses/2026-02-11/turkey-and-eu-renewed-efforts-a-complex-web-disputes
+    title: 'Turkey and the EU: renewed efforts in a complex web of disputes'
+    publisher: OSW
+    date: 2026-02-11
+    tier: 2
+  - url: https://www.cer.eu/sites/default/files/pb_TM_turkey_3.7.26.pdf
+    title: Policy brief on EU-Türkiye relations, 3 July 2026
+    publisher: Centre for European Reform
+    date: 2026-07-03
+    tier: 2
+- to: CYP
+  layer: alignment
+  type: non_recognition
+  summary: Turkey does not recognise the Republic of Cyprus and backs a two-state, 'sovereign equality' settlement; a UN track is open (Guterres in Cyprus 27-29 Jul 2026, leaders' meetings of 26 Aug, 9
+    Sep and 17 Sep with the Turkish Cypriot leader Erhurman) and Ankara has not rejected the UN proposals but is said to want EU concessions in return.
+  since: 1974
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://cyprus-mail.com/2026/08/05/christodoulides-and-erhurman-meeting-set-for-august-26
+    title: Christodoulides and Erhurman meeting set for August 26
+    publisher: Cyprus Mail
+    date: 2026-08-05
+    tier: 3
+  - url: https://www.thenationalherald.com/?p=580793
+    title: 'Cyprus talks: Turkey signals openness while attaching conditions (citing DW)'
+    publisher: The National Herald
+    date: 2026-08
+    tier: 3
+  - url: https://www.hurriyetdailynews.com/no-extended-meeting-planned-on-cyprus-issue-guterres-says-226993
+    title: No extended meeting planned on Cyprus issue, Guterres says
+    publisher: Hürriyet Daily News
+    date: 2026-09
+    tier: 3
+- to: UKR
+  layer: alignment
+  type: treaty
+  summary: Free-trade agreement signed in Kyiv on 3 Feb 2022 during Erdogan's visit, after negotiations dragging since 2007; in Sep 2026 the two presidents set a target of USD 10bn of trade, from about
+    USD 1bn.
+  since: 2022-02-03
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://kyivindependent.com/erdogan-visits-kyiv-signs-long-anticipated-free-trade-agreement/
+    title: Erdogan visits Kyiv, signs long-anticipated free trade agreement
+    publisher: Kyiv Independent
+    date: 2022-02-03
+    tier: 3
+  - url: https://aa.com.tr/en/eurasia/zelenskyy-says-ukraine-very-open-to-turkiye-hosting-trilateral-peace-talks/4067073
+    title: Zelenskyy says Ukraine 'very open' to Turkiye hosting trilateral peace talks
+    publisher: Anadolu Agency
+    date: 2026-09
+    tier: 3
+- to: ALB
+  layer: alignment
+  type: treaty
+  summary: Military cooperation agreement of 29 Jul 1992 and a joint declaration on a strategic partnership signed during Erdogan's visit to Tirana on 10 Oct 2024, with Turkish equipment, drones and training
+    for the Albanian armed forces.
+  since: 2024-10-10
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://arab.news/mr6r3
+    title: Erdogan inaugurates mosque in Albania, pledges military drones as he begins Balkan tour
+    publisher: Arab News
+    date: 2024-10-10
+    tier: 3
+  - url: https://abcnews.go.com/International/wireStory/turkeys-erdogan-inaugurates-turkish-funded-mosque-albanias-capital-114685341
+    title: Turkey's Erdogan inaugurates a Turkish-funded mosque in Albania's capital
+    publisher: AP via ABC News
+    date: 2024-10-10
+    tier: 3
+- to: MKD
+  layer: alignment
+  type: treaty
+  summary: Framework agreement on military cooperation signed in October 2024; a political declaration of 28 Feb 2025 in Istanbul set up a High-Level Cooperation Council and agreed to update the free trade
+    agreement. Turkey has donated military equipment to the army.
+  since: 2024-10
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://enlargement-infohub.eu/wp-content/uploads/2025/11/north-macedonia-report-2025.pdf
+    title: 'North Macedonia 2025 Report (regional relations: Turkiye)'
+    publisher: European Commission
+    date: 2025-11-04
+    tier: 1
+  - url: https://aa.com.tr/en/europe/turkiyes-relations-with-north-macedonia-rock-solid-president-erdogan/3496430
+    title: 'Turkiye''s relations with North Macedonia rock solid: President Erdogan'
+    publisher: Anadolu Agency
+    date: 2025-02-28
+    tier: 3
+- to: RUS
+  layer: dependency
+  type: energy_import
+  summary: 'Gazprom contracts for about 22 bcm a year via Blue Stream and TurkStream, extended by one year on 3 Dec 2025 despite US pressure; under 40% of Turkey''s gas mix, down from over 50% in 2018.
+    Energy Minister Bayraktar: ''We cannot tell our citizens that there is no gas.'' Turkey is diversifying (a 20-year LNG deal with Mercuria for US gas).'
+  value: 22
+  unit: bcm_per_year_gazprom_contracts_extended_dec_2025
+  since: 2020
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.iene.eu/energy-news/turkey-extends-russian-gas-imports-for-a-year-as-it-plans-us-investment-p8230.html
+    title: Turkey extends Russian gas imports for a year as it plans US investment
+    publisher: IENE (Reuters)
+    date: 2025-12-05
+    tier: 3
+- to: RUS
+  layer: dependency
+  type: energy_import
+  summary: Russia was Turkey's largest petroleum supplier in December 2025 (2.16 million tonnes) but its share fell from 61.1% in Oct to 54.4% in Nov and 47.5% in Dec after Trump urged Erdogan on 25 Sep
+    2025 to stop buying Russian oil; Russian crude fell about 33% over the quarter and Iraq and Kazakhstan took the slack.
+  value: 0.475
+  unit: share_of_petroleum_imports_dec_2025
+  since: 2022
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://turkishminute.com/2026/02/16/turkey-cut-crude-oil-imports-from-russia-after-trumps-appeal-in-september/
+    title: Turkey cut crude oil imports from Russia after Trump's appeal in September
+    publisher: Turkish Minute
+    date: 2026-02-16
+    tier: 3
+- to: RUS
+  layer: dependency
+  type: investment
+  summary: 'The Rosatom-built Akkuyu nuclear plant in Mersin: the first of four units is due to start generating before the end of 2026 (the rest in stages to 2028), three years late because of sanctions
+    on Rosatom and financing problems; the cost has exceeded the original USD 20bn budget. Putin and Erdogan discussed it in Bishkek on 1 Sep 2026 and Erdogan proposed commissioning it together.'
+  value: 20
+  unit: usd_bn_original_budget_exceeded
+  since: 2010
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www1.ru/en/news/2026/08/05/426566-pervyi-blok-postroennoi-rosatomom-aes-akkuiu-zapustiat-v-turcii-do-konca-goda.html
+    title: First unit of Rosatom-built Akkuyu plant to start in Türkiye before year end
+    publisher: Business and politics wire (www1.ru)
+    date: 2026-08-05
+    tier: 3
+  - url: https://report.az/en/region/putin-erdogan-discuss-akkuyu-nuclear-plant-new-energy-projects
+    title: Putin, Erdogan discuss Akkuyu nuclear plant, new energy projects
+    publisher: Report.az
+    date: 2026-09-01
+    tier: 3
+  - url: https://www.hurriyetdailynews.com/rosatom-says-akkuyu-plant-enters-final-pre-start-phase-224762
+    title: Rosatom says Akkuyu plant enters final pre-start phase
+    publisher: Hürriyet Daily News
+    date: 2026
+    tier: 3
+- to: RUS
+  layer: dependency
+  type: arms_supply
+  summary: The Russian S-400 air-defence system bought in 2019 stays in Turkey in 2026 and is the reason for the F-35 exclusion and the CAATSA sanctions; US experts say the S-400 must go before any F-35
+    sale. Ankara has not said it will give it up. The count of batteries is not given in the sources found.
+  value: 1
+  unit: s400_system_in_turkish_service
+  since: 2019-07
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://jewishinsider.com/2026/07/trump-announces-lifting-sanctions-on-turkey-alongside-erdogan-at-nato-summit/
+    title: Trump announces lifting sanctions on Turkey alongside Erdoğan at NATO summit
+    publisher: Jewish Insider
+    date: 2026-07-07
+    tier: 3
+  - url: https://carleton.ca/eetn/2025/strategic-autonomy-and-the-deepening-turkiye-russia-relationship/
+    title: Strategic autonomy and the deepening Türkiye-Russia relationship
+    publisher: Carleton University, EETN
+    date: 2025
+    tier: 2
+- to: USA
+  layer: dependency
+  type: arms_supply
+  summary: US State Department approved on 26 Jan 2024 the sale of 40 F-16 (32 F-16C and 8 F-16D) with engines and modernisation kits for existing jets, a package worth up to USD 23bn, two days after Turkey's
+    parliament ratified Sweden's NATO accession. The F-35 remains blocked.
+  value: 40
+  unit: f16_block70_aircraft_approved_jan_2024
+  since: 2024-01-26
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.aa.com.tr/en/americas/us-state-department-approves-sale-of-f-16s-to-turkiye-formally-notifies-congress/3120327
+    title: US State Department approves sale of F-16s to Türkiye, formally notifies Congress
+    publisher: Anadolu Agency
+    date: 2024-01-26
+    tier: 3
+  - url: https://www.bloomberg.com/news/articles/2024-01-27/us-approves-f-16-sale-to-turkey-after-nato-sweden-accord
+    title: US approves F-16 sale to Turkey after NATO-Sweden accord
+    publisher: Bloomberg
+    date: 2024-01-27
+    tier: 3
+- to: GBR
+  layer: dependency
+  type: arms_supply
+  summary: Contract signed on 27 Oct 2025 in Ankara for 20 new Eurofighter Typhoons, worth up to GBP 8bn (USD 10.7bn), following a July 2025 memorandum covering up to 40 jets and a German go-ahead; first
+    delivery expected in 2030, with second-hand Typhoons from Qatar and Oman also planned.
+  value: 20
+  unit: eurofighter_typhoon_jets_ordered_oct_2025
+  since: 2025-10-27
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.defensenews.com/global/europe/2025/10/27/turkey-signs-107-billion-deal-with-uk-for-20-eurofighter-jets/
+    title: Turkey signs $10.7 billion deal with UK for 20 Eurofighter jets
+    publisher: Defense News
+    date: 2025-10-27
+    tier: 3
+  - url: https://breakingdefense.com/2025/10/turkey-inks-deal-for-20-eurofighter-typhoon-jets/
+    title: Turkey inks deal for 20 Eurofighter Typhoon jets
+    publisher: Breaking Defense
+    date: 2025-10-27
+    tier: 3
+- to: CHN
+  layer: dependency
+  type: trade_share
+  summary: China was the largest single source of Turkish imports in early 2026 (13.7% of all imports, one analysis), with a persistent deficit; Turkey's exports to China are raw materials (marble, boron
+    compounds, copper, chromium). Erdogan raised the imbalance with Xi at the SCO summit in Tianjin on 31 Aug 2025. No official customs series was retrieved.
+  value: 0.137
+  unit: share_of_turkish_imports_early_2026
+  since: 2026
+  until: null
+  last_verified: 2026-10-12
+  confidence: C
+  sources:
+  - url: https://thediplomaticinsight.com/50-years-silk-road-turkiye-china-rebalance/
+    title: '50 years of the Silk Road: Türkiye-China rebalance'
+    publisher: The Diplomatic Insight
+    date: 2025
+    tier: 3
+  - url: https://www.merics.org/de/turkey-china-relations-ankara-must-balance-complications-many-fronts
+    title: 'Turkey-China relations: Ankara must balance complications on many fronts'
+    publisher: MERICS
+    date: 2024
+    tier: 2
+- to: ARE
+  layer: dependency
+  type: investment
+  summary: UAE institutions signed agreements and MoUs valued at USD 50.7bn with Turkey during Erdogan's visit to Abu Dhabi in July 2023 (energy, finance, defence, space), on top of a March 2023 free trade
+    agreement and a USD 5bn currency swap; ADQ pledged up to USD 8.5bn for earthquake-relief bonds. No 2026 figure on how much was implemented was found.
+  value: 50.7
+  unit: usd_bn_agreements_signed_july_2023
+  since: 2023-07-19
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.mofa.gov.ae/en/MediaHub/News/2023/7/19/19-7-2023-UAE-ministry-of-investment
+    title: UAE Ministry of Investment announces agreements worth over $50 billion in Republic of Türkiye
+    publisher: UAE Ministry of Foreign Affairs
+    date: 2023-07-19
+    tier: 1
+  - url: https://www.al-monitor.com/originals/2023/07/turkeys-erdogan-uae-meet-mbz-thaw-investments-grow
+    title: Turkey, UAE ink $50 billion in trade deals during Erdogan visit
+    publisher: Al-Monitor
+    date: 2023-07
+    tier: 3
+- to: USA
+  layer: action
+  type: visit
+  summary: Trump and Erdogan met in Ankara on 7 Jul 2026 at the NATO summit, where Trump said 'we're going to be taking the sanctions off' and called an F-35 sale something the US would consider; the previous
+    face-to-face was at the White House on 25 Sep 2025, where Trump urged an end to Russian oil purchases. Erdogan phoned Trump on 17 Aug 2026 to urge talks with Iran.
+  since: 2026-07-07
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://jewishinsider.com/2026/07/trump-announces-lifting-sanctions-on-turkey-alongside-erdogan-at-nato-summit/
+    title: Trump announces lifting sanctions on Turkey alongside Erdoğan at NATO summit
+    publisher: Jewish Insider
+    date: 2026-07-07
+    tier: 3
+  - url: https://www.al-monitor.com/originals/2026/08/erdogan-urges-trump-pursue-talks-iran-offers-support
+    title: Erdogan urges Trump to pursue talks with Iran, offers support
+    publisher: Al-Monitor / Reuters
+    date: 2026-08-18
+    tier: 3
+- to: org-nato
+  layer: action
+  type: agreement
+  summary: 'Türkiye hosted the 36th NATO summit at the Bestepe Presidential Complex in Ankara on 7-8 Jul 2026: the Ankara Declaration reaffirmed Article 5 and named Russia a long-term threat; allies pledged
+    EUR 70bn for Ukraine in 2026 and at least as much in 2027, and announced over USD 50bn of new procurements.'
+  since: 2026-07-08
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://brusselssignal.eu/2026/07/nato-ends-ankara-summit-with-arms-pledges-and-trumps-blessing/
+    title: NATO ends Ankara summit with arms pledges and Trump's blessing
+    publisher: Brussels Signal
+    date: 2026-07-09
+    tier: 3
+  - url: https://foreignpolicy.com/2026/07/08/nato-ankara-summit-declaration-full-text-trump-ukraine-russia/
+    title: The Ankara Summit Declaration
+    publisher: Foreign Policy
+    date: 2026-07-08
+    tier: 3
+- to: SWE
+  layer: action
+  type: agreement
+  summary: Turkey's parliament ratified Sweden's NATO accession protocol on 23 Jan 2024 by 287 votes to 55 after a 20-month delay; Erdogan signed it that week and the US approved the F-16 sale days later
+    (Hungary was then the last holdout).
+  since: 2024-01-23
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.diplomatie.gouv.fr/en/french-foreign-policy/security-disarmament-and-non-proliferation/news/2024/article/nato-turkey-s-parliament-votes-to-authorize-the-ratification-of-sweden-s
+    title: NATO - Turkey's Parliament votes to authorize the ratification of Sweden's accession protocol (23 January 2024)
+    publisher: French Ministry for Europe and Foreign Affairs
+    date: 2024-01-23
+    tier: 1
+  - url: https://www.aljazeera.com/amp/news/2024/1/23/turkeys-parliament-set-to-vote-on-swedens-nato-bid-this-week-reports
+    title: Turkey's parliament approves Sweden's NATO bid
+    publisher: Al Jazeera
+    date: 2024-01-23
+    tier: 3
+- to: GRC
+  layer: action
+  type: visit
+  summary: Erdogan hosted Prime Minister Mitsotakis in Ankara on 11 Feb 2026 for talks on migration, maritime disputes, Iran and Ukraine; no agreements were reported, both sides said they wanted to resolve
+    the disputes and Erdogan called the talks 'open and sincere'.
+  since: 2026-02-11
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.al-monitor.com/originals/2026/02/turkish-and-greek-leaders-set-talks-migration-maritime-borders
+    title: Turkish and Greek leaders set talks on migration, maritime borders
+    publisher: Al-Monitor / Reuters
+    date: 2026-02-11
+    tier: 3
+  - url: https://www.tovima.com/politics/mitsotakis-erdogan-meet-amid-aegean-tensions-and-red-lines/amp/
+    title: Mitsotakis-Erdogan meet amid Aegean tensions and red lines
+    publisher: To Vima
+    date: 2026-02
+    tier: 3
+- to: GRC
+  layer: action
+  type: incident
+  summary: Turkish decrees of 15 Aug 2026 created marine parks in the north-eastern Aegean between Lemnos and Samothrace and around Kastellorizo; Greece said they are illegal and create no fait accompli,
+    and Greek analysts read them as markers for a planned maritime boundary and a response to the Great Sea Interconnector.
+  since: 2026-08-15
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.iefimerida.gr/english/greece-declares-turkeys-new-marine-parks-illegal-under-international-law
+    title: Greece declares Turkey's new 'marine parks' illegal under international law
+    publisher: iefimerida
+    date: 2026-08
+    tier: 3
+  - url: https://moderndiplomacy.eu/2026/09/04/turkey-marine-parks-aegean-eastern-mediterranean-tensions/
+    title: Turkey's marine parks in the Aegean and the Eastern Mediterranean provoke regional turbulence
+    publisher: Modern Diplomacy
+    date: 2026-09-04
+    tier: 3
+  - url: https://en.politis.com.cy/news/politics/1026610/daily-sabah-links-turkeys-marine-parks-to-blue-homeland-strategy
+    title: Daily Sabah links Turkey's marine parks to 'Blue Homeland' strategy
+    publisher: Politis (Cyprus)
+    date: 2026-08
+    tier: 3
+- to: ARM
+  layer: action
+  type: agreement
+  summary: Normalisation without diplomatic relations - the Margara checkpoint opened for humanitarian cargo to Lebanon on 12-22 Jun 2026 (people and goods otherwise not allowed); the Akhalkalaki-Kars rail
+    link through Georgia opened to Armenian trade on 24 May 2026; a Gyumri-Kars working group met on 28 Apr 2026; Turkey said on 11 May 2026 the preparations for direct trade were complete; Erdogan telephoned
+    Pashinyan after the June 2026 election. The land border is closed since 1993.
+  since: 2026-04-28
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://panarmenian.net/m/eng/news/334128
+    title: Border checkpoint opens for humanitarian shipments
+    publisher: PanARMENIAN
+    date: 2026-06-11
+    tier: 3
+  - url: https://oc-media.org/turkish-rail-routes-open-for-armenian-cargo/
+    title: Turkish rail routes open for Armenian cargo
+    publisher: OC Media
+    date: 2026-05
+    tier: 3
+  - url: https://jamestown.org/armenias-election-results-telling-for-azerbaijan-peace-process/
+    title: Armenia's election results telling for Azerbaijan peace process (Erdogan congratulation)
+    publisher: Jamestown Foundation
+    date: 2026-06
+    tier: 2
+  - url: https://www.aa.com.tr/en/turkiye/turkiye-says-bureaucratic-preparations-completed-for-direct-trade-with-armenia/3935765
+    title: Turkiye says bureaucratic preparations completed for direct trade with Armenia
+    publisher: Anadolu Agency
+    date: 2026-05-11
+    tier: 3
+- to: ISR
+  layer: action
+  type: sanction
+  summary: Turkey cut direct trade with Israel in May 2024 (about USD 7bn in 2023) and on 29 Aug 2025 Fidan told parliament it had 'completely' severed economic and trade ties, barred Turkish ships from
+    Israeli ports and denied Israeli aircraft its airspace; Turkish port authorities also informally ask shipping agents for declarations that vessels carry no cargo for Israel.
+  since: 2024-05
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/news/2025/8/29/turkiye-closes-airspace-to-israel-entirely-cutting-ties-over-gaza-war
+    title: Türkiye closes airspace to Israel, bans Israeli ships from Turkish ports
+    publisher: Al Jazeera
+    date: 2025-08-29
+    tier: 3
+  - url: https://www.al-monitor.com/originals/2025/08/turkey-says-it-bars-israeli-ships-its-ports-restricting-airspace
+    title: Turkey says it bars Israeli ships from its ports, restricting airspace
+    publisher: Al-Monitor / Reuters
+    date: 2025-08
+    tier: 3
+- to: ISR
+  layer: action
+  type: incident
+  summary: Israel carried out eight air strikes on the runway of the Abu al-Duhur military airfield in Idlib on 18 Aug 2026; Netanyahu said it acted because Syria was about to let Turkish troops deploy
+    there ('we will not tolerate a Turkish military foothold moving south'); Turkey called the claim 'frivolous', said it had no delegation at the base, and condemned the strikes. US envoy Tom Barrack called
+    them 'unnecessary' and said Washington is working on a Turkey-Syria-Israel deconfliction mechanism.
+  since: 2026-08-18
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.thenationalnews.com/news/mena/2026/08/19/us-working-on-deconfliction-mechanism-between-turkey-syria-and-israel-says-barrack/
+    title: US working on deconfliction mechanism between Turkey, Syria and Israel, says Barrack
+    publisher: The National
+    date: 2026-08-19
+    tier: 3
+  - url: https://www.al-monitor.com/originals/2026/08/turkey-rejects-israeli-claims-after-strike-syria-air-base
+    title: Turkey rejects Israeli claims after strike on Syria air base
+    publisher: Al-Monitor
+    date: 2026-08
+    tier: 3
+  - url: https://english.aawsat.com/arab-world/5308616-t%C3%BCrkiye-rejects-israeli-claims-after-strike-syria-air-base
+    title: Türkiye rejects Israeli claims after strike on Syria air base
+    publisher: Asharq Al-Awsat
+    date: 2026-08
+    tier: 3
+- to: IRN
+  layer: action
+  type: incident
+  summary: During the US-Israeli war on Iran of 2026, three Iranian missiles entered Turkish airspace and were intercepted by NATO air defences (NATO said they targeted Turkey, Iran denied it); Turkey closed
+    its airspace to US forces, had a US Patriot battery deployed on its soil, and kept ~500 km of border under tighter security. Erdogan offered in July to help demine the Strait of Hormuz.
+  since: 2026-03
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://arabcenterdc.org/resource/turkey-and-the-war-on-iran-between-opportunity-and-catastrophe/
+    title: 'Turkey and the war on Iran: between opportunity and catastrophe'
+    publisher: Arab Center Washington DC
+    date: 2026-03-18
+    tier: 2
+  - url: https://english.alarabiya.net/News/middle-east/2026/07/08/turkey-ready-to-help-demine-strait-of-hormuz-erdogan-
+    title: 'Turkey ready to help demine Strait of Hormuz: Erdogan'
+    publisher: Al Arabiya
+    date: 2026-07-08
+    tier: 3
+- to: IRQ
+  layer: action
+  type: agreement
+  summary: 'Prime Minister al-Zaidi''s visit to Ankara in late Jul 2026 produced contracts to start the Development Road (energy, transport, education, water), a water ''mechanism document'' (signed 2 Nov
+    2025, ratified by Iraq''s parliament on 25 Jul 2026 for implementation from 1 Sep: Turkish firms build water projects financed from Iraqi oil sales) and a one-year extension of the 1973 Kirkuk-Ceyhan
+    pipeline agreement.'
+  since: 2026-07-29
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://english.aawsat.com/node/5301168
+    title: Iraqi-Turkish coordination on energy, water corridors as Al-Zaidi visits Ankara
+    publisher: Asharq Al-Awsat
+    date: 2026-07
+    tier: 3
+  - url: https://www.iraq-businessnews.com/2026/07/29/iraq-and-turkey-agree-to-launch-development-road-project/
+    title: Iraq and Turkey agree to launch Development Road project
+    publisher: Iraq Business News
+    date: 2026-07-29
+    tier: 3
+- to: SOM
+  layer: action
+  type: agreement
+  summary: Turkey's parliament approved on 21 Jul 2026 a two-year extension of the military mission in Somalia to 27 Jul 2028, covering forces in 'jointly determined areas' on land and at sea; work on a
+    spaceport and missile-test range at Warsheikh, about 70 km north of Mogadishu, began in Oct 2025 and an agreement to build it was announced by Erdogan in October 2026.
+  since: 2026-07-21
+  until: 2028-07-27
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.meforum.org/mef-observer/turkey-renews-its-somalia-mandate-to-guard-the-spaceport-and-missile-base
+    title: Turkey renews its Somalia mandate to guard the spaceport and missile base
+    publisher: Middle East Forum
+    date: 2026-07
+    tier: 2
+  - url: https://allafrica.com/stories/202607060081.html
+    title: 'Somalia: Turkey''s new Somalia spaceport doubles as missile range, threatening Israel'
+    publisher: allAfrica
+    date: 2026-07-06
+    tier: 3
+  - url: https://app.al-monitor.com/originals/2026/02/turkey-touts-somalia-spaceport-horn-africa-rivalry-heats
+    title: Turkey touts Somalia spaceport as Horn of Africa rivalry heats
+    publisher: Al-Monitor
+    date: 2026-02
+    tier: 3
+- to: LBY
+  layer: action
+  type: visit
+  summary: 'Turkey works both camps in Libya: intelligence chief Kalin met Saddam Haftar in Benghazi on 23 Jun 2026, Haftar''s son visited Ankara and met Fidan on 24 Jul 2026, and the ''Efes-2026'' exercise
+    in May 2026 trained over 500 soldiers from East and West; Ankara''s Tripoli ties (the 2019 military support to the GNA) continue alongside.'
+  since: 2026-06-23
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://turkishminute.com/2026/06/23/turkish-intelligence-chief-meets-with-son-of-eastern-libya-commander-haftar-in-benghazi/
+    title: Turkish intelligence chief meets with son of eastern Libya commander Haftar in Benghazi
+    publisher: Turkish Minute
+    date: 2026-06-23
+    tier: 3
+  - url: https://www.agenzianova.com/en/news/Libya--Turkey-concludes-training-of-362-soldiers-from-the-East-and-West/
+    title: 'Libya: Turkey concludes training of 362 soldiers from the East and West'
+    publisher: Agenzia Nova
+    date: 2026
+    tier: 3
+  - url: https://libyasecuritymonitor.com/saddam-haftar-meets-turkish-fm-in-official-visit-to-ankara/
+    title: Saddam Haftar meets Turkish FM in official visit to Ankara
+    publisher: Libya Security Monitor
+    date: 2026-07
+    tier: 3
+- to: org-ots
+  layer: action
+  type: visit
+  summary: Erdogan attended the 12th summit of the Organization of Turkic States in Gabala on 7 Oct 2025 (Azerbaijan took the chair; the Gabala Declaration and an 'OTS+' format with third countries were
+    adopted; Aliyev proposed joint exercises in 2026); the next regular summit is set for Türkiye in autumn 2026 and an informal one for Kazakhstan.
+  since: 2025-10-07
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://turkicstates.org/en/news/12th-summit-of-the-organization-of-turkic-states-will-be-held-in-gabala-azerbaijan
+    title: 12th Summit of the Organization of Turkic States will be held in Gabala, Azerbaijan
+    publisher: Organization of Turkic States
+    date: 2025-10
+    tier: 1
+  - url: https://president.az/en/articles/view/70283
+    title: 12th Summit of the Council of Heads of State of the Organization of Turkic States commenced in Gabala
+    publisher: Presidential Administration of Azerbaijan
+    date: 2025-10-07
+    tier: 1
+- to: RUS
+  layer: action
+  type: visit
+  summary: 'Putin and Erdogan met on 1 Sep 2026 in Bishkek on the margins of the SCO summit: Erdogan said relations are ''at their highest level'', Putin called Türkiye one of Russia''s privileged partners,
+    and both discussed Akkuyu and new power plants. Erdogan said the next day he had discussed ''all bilateral issues'' with Putin.'
+  since: 2026-09-01
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://report.az/en/region/putin-erdogan-discuss-akkuyu-nuclear-plant-new-energy-projects
+    title: Putin, Erdogan discuss Akkuyu nuclear plant, new energy projects
+    publisher: Report.az
+    date: 2026-09-01
+    tier: 3
+  - url: https://en.apa.az/asia/erdogan-meets-with-putin-in-bishkek-updated-522455
+    title: Erdogan meets with Putin in Bishkek
+    publisher: APA
+    date: 2026-09-01
+    tier: 3
+  - url: https://news.bloombergtax.com/federal-contracting/erdogan-hopes-f-35-issue-will-be-resolved-after-us-processes-aa
+    title: Erdogan hopes F-35 issue will be resolved after US processes (Anadolu)
+    publisher: Bloomberg Tax
+    date: 2026-09-02
+    tier: 3
+- to: UKR
+  layer: action
+  type: agreement
+  summary: Istanbul hosted direct Russia-Ukraine talks on 16 May, 2 Jun and 23 Jul 2025 (no ceasefire; exchanges of 1,000 prisoners each); Ankara closed the straits to belligerent warships in Feb 2022,
+    co-brokered the Black Sea grain corridor of 22 Jul 2022 (Russia left in Jul 2023), hosted Zelensky at the NATO summit on 7-8 Jul 2026 and on 7 Sep 2026 said it hoped to bring the talks back to Istanbul.
+  since: 2025-05-16
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.axios.com/2025/05/16/russia-ukraine-ceasefire-talks-turkey
+    title: Russia and Ukraine far apart on ceasefire in first meeting in 3 years
+    publisher: Axios
+    date: 2025-05-16
+    tier: 3
+  - url: https://www.un.org/en/black-sea-grain-initiative
+    title: Black Sea Grain Initiative
+    publisher: United Nations
+    date: 2023-07
+    tier: 1
+  - url: https://www.3newsnow.com/news/national/russia-ukraine-conflict/turkey-exercises-1936-pact-blocks-warships-from-entering-black-sea
+    title: Turkey exercises 1936 pact, blocks warships from entering Black Sea
+    publisher: ABC / Scripps News
+    date: 2022-02-28
+    tier: 3
+  - url: https://www.uniindia.com/international/turkey-russia-ukraine-talks/171202
+    title: Turkey hopes to return Russia-Ukraine negotiation process to Istanbul
+    publisher: UNI
+    date: 2026-09-07
+    tier: 3
+  - url: https://www.eurointegration.com.ua/eng/news/2026/07/7/7241099/
+    title: Zelenskyy arrives at NATO summit in Ankara
+    publisher: European Pravda
+    date: 2026-07-07
+    tier: 3
+- to: SRB
+  layer: action
+  type: agreement
+  summary: Erdogan hosted Vucic in Ankara on 13 Feb 2026 - joint declaration on foreign policy, trade, defence industry and energy; USD 5bn trade target.
+  since: 2026-02-13
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://turkishminute.com/2026/02/13/erdogan-hosts-vucic-in-ankara-pledges-closer-turkey-serbia-ties/
+    title: Erdoğan hosts Vučić in Ankara, pledges closer Turkey-Serbia ties
+    publisher: Turkish Minute
+    date: 2026-02-13
+    tier: 3
+- to: BIH
+  layer: action
+  type: visit
+  summary: Erdogan received Presidency member Denis Becirovic in Istanbul on 14 Mar 2025, on an emergency trip to discuss the Dodik crisis, with Foreign Minister Fidan present; Becirovic met the Turkish
+    ambassador again on 24 Feb 2026.
+  since: 2025-03-14
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://fena.ba/article/1618819/becirovic-and-erdogan-meet-in-istanbul-to-discuss-the-situation-in-bosnia-and-herzegovina
+    title: Becirovic and Erdogan meet in Istanbul to discuss the situation in Bosnia and Herzegovina
+    publisher: FENA
+    date: 2025-03-14
+    tier: 3
+  - url: https://www.iletisim.gov.tr/english/haberler/detay/president-erdogan-receives-bosnia-and-herzegovina-presidential-council-member-beirovi
+    title: President Erdogan receives Bosnia and Herzegovina Presidential Council Member Becirovic
+    publisher: Presidency of the Republic of Turkiye, Communications Directorate
+    date: 2025-03-14
+    tier: 1
+- to: XKX
+  layer: action
+  type: agreement
+  summary: Kosovo announced in July 2023 the purchase of Turkish Bayraktar TB2 drones (KFOR said it conflicted with its authority over Kosovo's airspace); Turkey has supported the KSF transformation since
+    2018 (equipment, training, an ammunition agreement). Erdogan received Kurti at the UN General Assembly sidelines on 21 Sep 2026.
+  since: 2023-07
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.rferl.org/a/kosovo-buys-turkish-bayraktar-drones/32505916.html
+    title: Kosovo buys Turkish Bayraktar drones
+    publisher: RFE/RL
+    date: 2023-07
+    tier: 3
+  - url: https://www.kosovo-online.com/en/news/analysis/turkish-arming-kosovo-continuation-military-cooperation-or-ankaras-support-kurti
+    title: 'Turkish arming of Kosovo: continuation of military cooperation or Ankara''s support for Kurti?'
+    publisher: Kosovo Online
+    date: 2026
+    tier: 3
+  - url: https://en.yenisafak.com/turkiye/erdogan-meets-kosovar-pm-kurti-at-un-sidelines-3723535
+    title: Turkiye's President meets Kosovar premier at UN sidelines
+    publisher: Yeni Safak
+    date: 2026-09-21
+    tier: 3
+- layer: alignment
+  type: treaty
+  summary: 'Georgia-Turkey-Azerbaijan trilateral framework: Istanbul Declaration signed by the three foreign ministers on 8 June 2026; the 11th ministerial will be held in Georgia.'
+  since: '2026-06-08'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://turkey.mfa.gov.ge/en/news/350234-saqartvelos-vitse-premierma-sagareo-saqmeta-ministrma-maka-botchorishvilma-monatsileoba-miigho-q-sta
+    title: Deputy Prime Minister and Foreign Minister Maka Botchorishvili takes part in the 10th Georgia-Türkiye-Azerbaijan trilateral ministerial meeting (Istanbul Declaration)
+    publisher: Ministry of Foreign Affairs of Georgia
+    date: '2026-06-08'
+    tier: 1
+  - url: https://georgiatoday.ge/georgia-turkey-and-azerbaijan-to-hold-10th-trilateral-foreign-ministers-meeting-in-istanbul/
+    title: Georgia, Turkey and Azerbaijan to hold 10th trilateral foreign ministers meeting in Istanbul
+    publisher: Georgia Today
+    date: 2026-06
+    tier: 3
+  to: GEO
+  mirrored_from: GEO
+- layer: alignment
+  type: treaty
+  summary: Free trade agreement signed 27 Sep 2013, in force since 1 Sep 2019; in April 2026 Kurti and Trade Minister Bolat discussed extending it to services (IT, logistics, finance).
+  since: 2019-09-01
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://kryeministri.rks-gov.net/en/?p=201201
+    title: Prime Minister Kurti received the Minister of Trade of the Republic of Turkey, Bolat
+    publisher: Office of the Prime Minister of Kosovo
+    date: 2026-04
+    tier: 1
+  to: XKX
+  mirrored_from: XKX

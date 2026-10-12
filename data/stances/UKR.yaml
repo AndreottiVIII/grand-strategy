@@ -1,221 +1,652 @@
 actor: UKR
 stances:
-  - toward: RUS
-    grade: adversary
-    trend: stable
-    bond: grievance
-    since: 2014-02
-    last_verified: 2026-10-12
-    confidence: B
-    note: "The only mortal-enemy grade in Ukraine's map, and the structural one: Russia's aim, as ISW reads the Kremlin's position in February 2026, is neutrality, a limited army and a pro-Russian government in Kyiv; the Atlantic Council argues that Putin cannot accept any deal that secures Ukrainian statehood. Kyiv's reading is on the record: the Rada asked the US to name Russia a state sponsor of terrorism (May 2022) and PACE declared the Russian regime terrorist (Oct 2022). Since January 2026 the two have talked (Abu Dhabi, Geneva, with the US) and the Kremlin has insisted on the Donbas, so 'adversary' is not rhetoric; it describes a war whose settlement would decide whether Ukraine remains a state. Bond - grievance: the open wound is 2014 and 2022, not kinship, whatever Putin says about 'one people'."
-    sources:
-      - {url: "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-february-19-2026", title: "Russian Offensive Campaign Assessment, February 19, 2026", publisher: "Institute for the Study of War / Critical Threats", date: 2026-02-19, tier: 2}
-      - {url: "https://www.atlanticcouncil.org/blogs/ukrainealert/putin-cannot-accept-any-peace-deal-that-secures-ukrainian-statehood/", title: "Putin cannot accept any peace deal that secures Ukrainian statehood", publisher: "Atlantic Council", date: 2026-01, tier: 2}
-      - {url: "https://ukrinform.net/rubric-polytics/3473834-ukraines-parliament-asks-united-states-to-recognize-russia-as-state-sponsor-of-terrorism.html", title: "Ukraine's Parliament asks United States to recognize Russia as state sponsor of terrorism", publisher: "Ukrinform", date: 2022-05, tier: 3}
-      - {url: "https://english.nv.ua/amp/pace-adopts-resolution-declaring-russian-regime-as-terrorist-50276526.html", title: "PACE adopts resolution declaring Russian regime as terrorist one", publisher: "NV", date: 2022-10, tier: 3}
-
-  - toward: sub-crimea
-    grade: claimed_territory
-    trend: stable
-    bond: grievance
-    since: 2014-03
-    last_verified: 2026-10-12
-    confidence: A
-    note: "Occupied and annexed by Russia in 2014 and claimed by Ukraine; the General Assembly voted 143-5-35 on 12 Oct 2022 (ES-11/4) to reject the annexations and affirm Ukraine's territorial integrity, and the 24 Feb 2026 text did the same. DeepState counts Crimea as 100% occupied at the start of 2026. Not a negotiating item for Kyiv."
-    sources:
-      - {url: "https://digitallibrary.un.org/record/3990400", title: "A/RES/ES-11/4 Territorial integrity of Ukraine: defending the principles of the Charter - voting record", publisher: "United Nations", date: 2022-10-12, tier: 1}
-      - {url: "https://euromaidanpress.com/?p=384242", title: "Russia occupied 0.72% of Ukraine's territory in 2025, DeepState reports", publisher: "Euromaidan Press", date: 2026-01-02, tier: 3}
-      - {url: "https://euromaidanpress.com/2026/02/25/unga-backs-ukraines-peace-resolution-with-107-votes-rejects-us-push-to-drop-territorial-integrity/", title: "UNGA backs Ukraine's peace resolution with 107 votes, rejects US push to drop territorial integrity", publisher: "Euromaidan Press", date: 2026-02-25, tier: 3}
-
-  - toward: sub-occupied-ukraine
-    grade: claimed_territory
-    trend: stable
-    bond: grievance
-    since: 2022-09-30
-    last_verified: 2026-10-12
-    confidence: A
-    note: "Luhansk (99.6% occupied), Donetsk (78%), Zaporizhzhia (75%) and Kherson (72%) at the start of 2026 (DeepState); Russia proclaimed their annexation on 30 Sep 2022 and the General Assembly rejected it on 12 Oct 2022. The unoccupied rest of Donetsk (Sloviansk-Kramatorsk) is the sticking point: the Kremlin demands a Ukrainian withdrawal as the condition of peace, Kyiv refuses. Ukraine's map shows these oblasts as claimed, not controlled; the part still under Ukrainian control is own territory and is not drawn separately."
-    sources:
-      - {url: "https://digitallibrary.un.org/record/3990400", title: "A/RES/ES-11/4 Territorial integrity of Ukraine - voting record", publisher: "United Nations", date: 2022-10-12, tier: 1}
-      - {url: "https://euromaidanpress.com/?p=384242", title: "Russia occupied 0.72% of Ukraine's territory in 2025, DeepState reports (shares by oblast)", publisher: "Euromaidan Press", date: 2026-01-02, tier: 3}
-      - {url: "https://rubryka.com/en/2026/01/23/vyvedennya-ukrayinskyh-vijsk/", title: "Russia demands Ukrainian troop withdrawal from Donbas ahead of Abu Dhabi negotiations", publisher: "Rubryka", date: 2026-01-23, tier: 3}
-
-  - toward: USA
-    grade: partner
-    trend: warming
-    bond: none
-    since: 2025-02
-    last_verified: 2026-10-12
-    confidence: B
-    note: "Transactional, and it should not be read as an alliance: no treaty, direct US funding stopped in early 2025 (Kiel), the Trump administration asked the General Assembly on 24 Feb 2026 to drop the territorial-integrity paragraphs (69 to 11 against) and then abstained, and the Iran war froze the talks from March. Yet Washington remains the supplier Kyiv cannot replace (about 95% of Patriot interceptors reach Ukraine through PURL, paid by allies), the minerals fund has made its first deals, and the line changed in July 2026: at Ankara Trump promised a licence to build Patriot missiles and said he wants Ukrainian drones, then received Zelensky at the White House on 28 July. Trend: warming since July, with a Miami round on 9-10 Oct. Bond - none: pure interest after the US voted against Ukraine's resolution in Feb 2025."
-    sources:
-      - {url: "https://www.intellinews.com/trump-offers-ukraine-patriot-production-licence-in-major-policy-about-face-453534/", title: "Trump offers Ukraine Patriot production licence in major policy about-face", publisher: "bne IntelliNews", date: 2026-07, tier: 3}
-      - {url: "https://www.local10.com/news/world/2026/07/28/zelenskyy-has-a-good-meeting-with-trump-at-the-white-house-as-he-seeks-more-cooperation-with-us/", title: "Zelenskyy has a 'good meeting' with Trump at the White House as he seeks more cooperation with US", publisher: "AP via Local 10", date: 2026-07-28, tier: 3}
-      - {url: "https://euromaidanpress.com/2026/02/25/unga-backs-ukraines-peace-resolution-with-107-votes-rejects-us-push-to-drop-territorial-integrity/", title: "UNGA backs Ukraine's peace resolution with 107 votes, rejects US push to drop territorial integrity", publisher: "Euromaidan Press", date: 2026-02-25, tier: 3}
-      - {url: "https://nachrichten.idw-online.de/2026/08/13/ukraine-support-tracker-europe-leads-on-aid-us-weapons-remain-key", title: "Ukraine Support Tracker: Europe leads on aid - US weapons remain key", publisher: "Kiel Institute for the World Economy (via idw)", date: 2026-08-13, tier: 2}
-
-  - toward: org-eu
-    grade: partner
-    trend: warming
-    bond: affinity
-    since: 2022-06-23
-    last_verified: 2026-10-12
-    confidence: A
-    note: "Partner, not member: candidate since 23 Jun 2022, first cluster opened 15 Jun 2026, external relations on 14 Jul, clusters 2 and 3 cleared by Hungary on 7 Oct on condition of a minority-education law (reported passed by the Rada on 12 Oct), and the EUR 90bn Ukraine Support Loan disbursing since the summer. The EU is now the main financier of the war. The trend is warming because the Hungarian veto, the largest obstacle since 2024, was lifted after the April 2026 election; the Union still refuses a fast-track and Poland, Slovakia and Hungary each hold a lever. Bond - affinity: the European choice is the state's own project, though not kinship."
-    sources:
-      - {url: "https://www.eeas.europa.eu/delegations/moldova/european-council-conclusions-membership-applications-ukraine-republic-moldova-and-georgia-23-june_en", title: "European Council conclusions on the membership applications of Ukraine, Moldova and Georgia", publisher: "European Council / EEAS", date: 2022-06-23, tier: 1}
-      - {url: "https://www.euronews.com/2026/10/07/hungary-set-to-lift-veto-on-ukraines-eu-membership-talks", title: "Hungary set to lift veto on Ukraine's EU membership talks", publisher: "Euronews", date: 2026-10-07, tier: 3}
-      - {url: "https://www.pravda.com.ua/eng/news/2026/09/01/8051344/", title: "EU points out that EUR 90bn loan will cover only two-thirds of Ukraine's needs", publisher: "European Pravda", date: 2026-09-01, tier: 3}
-
-  - toward: org-nato
-    grade: partner
-    trend: stable
-    bond: affinity
-    since: 2024-07-10
-    last_verified: 2026-10-12
-    confidence: A
-    note: "Not an ally in the Article 5 sense. The 2024 Washington declaration calls Ukraine's path to NATO 'irreversible' and promises an invitation 'when Allies agree and conditions are met'; no invitation has come. The Ankara summit (7-8 Jul 2026) did not change that; it pledged EUR 70bn for 2026 and at least the same in 2027 and, per Kyiv, recognised Ukraine as a contributor to Euro-Atlantic security. Stable: more money and more words, no door. Bond - affinity: NATO is the aim, not a shared past."
-    sources:
-      - {url: "https://www.nato.int/cps/en/natohq/official_texts_227678.htm", title: "Washington Summit Declaration, para. 16", publisher: "NATO", date: 2024-07-10, tier: 1}
-      - {url: "https://euromaidanpress.com/2026/07/03/ukraine-wants-the-ankara-summit-to-name-it-a-nato-security-contributor-not-just-an-aid-recipient/", title: "Ukraine wants the Ankara summit to name it a NATO security contributor - not just an aid recipient", publisher: "Euromaidan Press", date: 2026-07-03, tier: 3}
-      - {url: "https://english.enabbaladi.net/archives/2026/07/ankara-summit-sets-nato-priorities-backs-ukraine/", title: "Ankara Summit Sets NATO Priorities, Backs Ukraine", publisher: "Enab Baladi", date: 2026-07, tier: 3}
-
-  - toward: POL
-    grade: reluctant_ally
-    trend: cooling
-    bond: grievance
-    since: 2022-02-24
-    last_verified: 2026-10-12
-    confidence: B
-    note: "The closest neighbour and the logistics hub of the war, aligned by necessity, with open friction: the Volhynia massacres (1943-45) and the May 2026 row over a Ukrainian army unit named after the UPA led President Nawrocki to strip Zelensky of the Order of the White Eagle; Zelensky skipped the Gdansk reconstruction conference on 25 Jun; 51.9% of Poles say the naming hurt their view of Ukraine. Prime Minister Tusk takes a conciliatory line and a Warsaw diplomat told Reuters that Ukraine's EU and NATO policy will still be set by the government. Exhumations resumed in 2025 (Puzniki). No bilateral treaty of alliance in this atlas, so 'reluctant ally', not 'ally'. Trend: cooling until August, with Nawrocki wishing victory but listing 'points of tension' on Independence Day. Bond - grievance: the historical wound."
-    sources:
-      - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/06/25/analysis-poland-and-ukraine-s-difficult-history-creates-political-minefield-for-tusk", title: "Analysis: Poland and Ukraine's difficult history creates political minefield for Tusk", publisher: "Reuters via Internazionale", date: 2026-06-25, tier: 3}
-      - {url: "https://www.eurointegration.com.ua/eng/news/2026/08/26/7244215/", title: "Poland reveals what President Nawrocki wished Ukraine on Independence Day", publisher: "European Pravda", date: 2026-08-26, tier: 3}
-      - {url: "https://www.euronews.com/my-europe/2025/01/11/poland-and-ukraine-agree-to-exhume-ww2-volhynia-massacre-victims", title: "Poland and Ukraine agree to exhume WW2 Volhynia massacre victims", publisher: "Euronews", date: 2025-01-11, tier: 3}
-
-  - toward: HUN
-    grade: rival
-    trend: warming
-    bond: grievance
-    since: 2022-02-24
-    last_verified: 2026-10-12
-    confidence: C
-    note: "Hungary is an EU member and Ukraine only a candidate, so the 'co-members become reluctant allies' rule does not apply; Hungary has been the most obstructive member state: it held the accession veto for 17 months, blocked clusters 2 and 3 on 17 Jul, 1 Sep and 8 Sep 2026, and opposes a fast-track. Rival, not adversary: Budapest never wished Ukraine's defeat. Warming because the April 2026 election removed Orban and Prime Minister Magyar announced a 'comprehensive agreement' on the rights of about 100,000 ethnic Hungarians in Transcarpathia and lifted the veto on 7 Oct, conditional on Ukraine's education law; relations stay tense (Sybiha-Magyar clash in Sep, the football blacklist). No source uses the word 'rival'; our reading, confidence C. Bond - grievance: the minority question."
-    sources:
-      - {url: "https://www.euronews.com/2026/10/07/hungary-set-to-lift-veto-on-ukraines-eu-membership-talks", title: "Hungary set to lift veto on Ukraine's EU membership talks", publisher: "Euronews", date: 2026-10-07, tier: 3}
-      - {url: "https://osw.waw.pl/en/publikacje/analyses/2026-06-09/hungarian-ukrainian-agreement-rights-national-minorities-ukraine", title: "Hungarian-Ukrainian agreement on the rights of national minorities in Ukraine", publisher: "OSW", date: 2026-06-09, tier: 2}
-      - {url: "https://www.pravda.com.ua/eng/news/2026/10/02/8056094/", title: "Hungary boasts of agreement with Ukraine: achieving what Viktor Orban failed to do in 10 years", publisher: "Ukrainska Pravda", date: 2026-10-02, tier: 3}
-
-  - toward: SVK
-    grade: rival
-    trend: stable
-    bond: none
-    since: 2025-01-01
-    last_verified: 2026-10-12
-    confidence: C
-    note: "Prime Minister Fico is the second veto player on the road to the EU: he cut emergency electricity to Ukraine in February 2026 and threatened to block the 20th sanctions package and slow accession over the Druzhba oil outage, then said on 22 Apr 2026 that he would stop objecting to the EUR 90bn loan since the pipeline was working again. Bratislava also lost Russian gas transit when the contract with Naftogaz expired on 1 Jan 2025. Rival, not partner: Slovakia uses its vote as a weapon against Kyiv; our reading, confidence C. Bond - none."
-    sources:
-      - {url: "https://www.pravda.com.ua/eng/news/2026/03/29/8027690", title: "Slovak PM threatens to block EU's 20th Russia sanctions package amid Druzhba pipeline dispute", publisher: "Ukrainska Pravda", date: 2026-03-29, tier: 3}
-      - {url: "https://interfax.com/newsroom/top-stories/117273/", title: "Fico: Slovakia lifts veto on 20th package only when Druzhba supply resumes", publisher: "Interfax", date: 2026-04-22, tier: 3}
-      - {url: "https://www.aljazeera.com/news/2026/4/29/ukraine-targets-druzhba-pipeline-to-sever-russian-oil-influence-in-eu", title: "Ukraine targets Druzhba pipeline to sever Russian oil, influence in EU", publisher: "Al Jazeera", date: 2026-04-29, tier: 3}
-
-  - toward: MDA
-    grade: partner
-    trend: stable
-    bond: affinity
-    since: 2022-02-24
-    last_verified: 2026-10-12
-    confidence: B
-    note: "Fellow EU candidate on a joint track since 2022, border neighbour and refugee host; both opened their first cluster on 15 Jun 2026. The friction is structural: in June 2026 the EU set the stage for decoupling Moldova from Ukraine, which Chisinau (Sandu wants the other clusters 'immediately') would welcome and Kyiv loses its partner in the queue. Moldova's Transnistria issue is also Ukraine's (it ended Russian gas transit in 2025 and Zelensky offered coal to Tiraspol). Partner, stable: shared interest, no treaty. Bond - affinity."
-    sources:
-      - {url: "https://www.euronews.com/2026/06/22/eu-sets-stage-for-decoupling-moldovas-accession-bid-from-ukraines", title: "EU sets stage for decoupling Moldova's accession bid from Ukraine's", publisher: "Euronews", date: 2026-06-22, tier: 3}
-      - {url: "https://www.euronews.com/my-europe/2025/01/26/kyiv-says-it-can-supply-moldova-with-coal-as-gas-transit-agreement-with-russia-ends", title: "Kyiv says it can supply Moldova with coal as gas transit agreement with Russia ends", publisher: "Euronews", date: 2025-01-26, tier: 3}
-
-  - toward: TUR
-    grade: partner
-    trend: stable
-    bond: none
-    since: 2022-02-24
-    last_verified: 2026-10-12
-    confidence: B
-    note: "Black Sea gatekeeper that sells Ukraine drones and keeps its ties with Moscow: Ankara hosted the NATO summit (7-8 Jul 2026) with Zelensky invited, backs Ukrainian sovereignty over Crimea, offered to host trilateral talks (Zelensky 'very open', Sep 2026) and to monitor a Black Sea ceasefire. Bilateral trade is only about USD 1bn, with a target of USD 10bn after the Zelensky-Erdogan meeting in New York. The free-trade agreement was signed on 3 Feb 2022. Partner, not ally: no treaty of alliance, and Ankara balances between Kyiv and Moscow. Bond - none."
-    sources:
-      - {url: "https://aa.com.tr/en/eurasia/zelenskyy-says-ukraine-very-open-to-turkiye-hosting-trilateral-peace-talks/4067073", title: "Zelenskyy says Ukraine 'very open' to Turkiye hosting trilateral peace talks", publisher: "Anadolu Agency", date: 2026-09, tier: 3}
-      - {url: "https://www.nikvesti.com/en/news/politics/305001-zelenskyy-erdogan-discuss-security-black-sea", title: "Zelenskyy and Erdogan discuss security in the Black Sea", publisher: "Nikvesti", date: 2026, tier: 3}
-      - {url: "https://kyivindependent.com/erdogan-visits-kyiv-signs-long-anticipated-free-trade-agreement/", title: "Erdogan visits Kyiv, signs long-anticipated free trade agreement", publisher: "Kyiv Independent", date: 2022-02-03, tier: 3}
-
-  - toward: CHN
-    grade: partner
-    trend: stable
-    bond: none
-    since: 2011
-    last_verified: 2026-10-12
-    confidence: B
-    note: "China is Ukraine's largest trading partner and import source (both sides said so at Munich on 13 Feb 2026), pledged a new package of humanitarian energy aid, and keeps the 2011 strategic partnership. Kyiv asks it to play an important role in achieving a ceasefire; Beijing abstained at the General Assembly on 24 Feb 2026 and says it supplies no weapons to Russia. Partner, not rival: a transactional channel Ukraine needs for imports and mediation, whatever China's weight on Russia's side. Bond - none."
-    sources:
-      - {url: "https://www.mfa.gov.cn/eng/wjbzhd/202602/t20260215_11860282.html", title: "Wang Yi meets Ukrainian Foreign Minister Andrii Sybiha (Munich, 13 Feb 2026)", publisher: "Ministry of Foreign Affairs of the PRC", date: 2026-02-15, tier: 1}
-      - {url: "https://www.caixinglobal.com/2026-02-14/china-pledges-energy-aid-to-ukraine-as-top-diplomats-meet-in-munich-102414717.html", title: "China pledges energy aid to Ukraine as top diplomats meet in Munich", publisher: "Caixin", date: 2026-02-14, tier: 3}
-      - {url: "https://euromaidanpress.com/2026/02/25/unga-backs-ukraines-peace-resolution-with-107-votes-rejects-us-push-to-drop-territorial-integrity/", title: "UNGA backs Ukraine's peace resolution with 107 votes (China abstained)", publisher: "Euromaidan Press", date: 2026-02-25, tier: 3}
-
-  - toward: BLR
-    grade: rival
-    trend: stable
-    bond: grievance
-    since: 2022-02-24
-    last_verified: 2026-10-12
-    confidence: C
-    note: "Mirrored from Belarus's card, whose sources are reused here. Rival, not adversary: Belarusian troops have not entered Ukraine and Lukashenko says they will not (Moscow Times, 2 Oct 2026); relay stations on Belarusian soil stopped working on 22 Jun 2026 after Kyiv's complaint. Against partner: Belarus was the staging area of the 2022 invasion, hosts Russian forces and weapons along 1,084 km of border, and Zelensky said in Nov 2025 that Lukashenko 'will pay'; Kyiv opened a Mission of Democratic Belarus on 27 May 2026. Channels persist for prisoner exchanges. No source uses the word 'rival'; our reading, confidence C. Bond - grievance (Kyiv's, not Minsk's)."
-    sources:
-      - {url: "https://www.themoscowtimes.com/2026/10/02/lukashenko-vows-belarus-full-support-for-putin-on-ukraine-a93858", title: "Lukashenko vows Belarus' full support for Putin on Ukraine", publisher: "The Moscow Times", date: 2026-10-02, tier: 3}
-      - {url: "https://kdhnews.com/news/world/ukraine-is-still-fortifying-its-border-with-belarus-years-after-russia-invaded-from-there/article_98881595-802e-52fa-994b-8499df420fba.html", title: "Ukraine is still fortifying its border with Belarus years after Russia invaded from there", publisher: "AP", date: 2026-07-24, tier: 3}
-      - {url: "https://www.pravda.com.ua/eng/news/2025/11/07/8006344", title: "Zelenskyy says Belarusian leader will pay for taking part in Russia's invasion of Ukraine", publisher: "Ukrainska Pravda", date: 2025-11-07, tier: 3}
-      - {url: "https://isans.org/analysis/belarus-review/belarus-review-by-isans-june-1-2026.html", title: "Belarus Review by iSANS - June 1, 2026", publisher: "iSANS", date: 2026-06-01, tier: 2}
-
-  - toward: GBR
-    grade: ally
-    trend: stable
-    bond: affinity
-    since: 2022-02-24
-    last_verified: 2026-10-12
-    confidence: B
-    note: "Stable de facto alignment rather than treaty ally: with France the UK co-leads the Coalition of the Willing and signed in January 2026 a declaration pledging troops to Ukraine under a future peace deal; in 2026 it allocated at least 120,000 drones (Kiel) and USD 205m to PURL. Not a treaty ally in the Article 5 sense; the guarantee is conditional on a ceasefire. Bond - affinity."
-    sources:
-      - {url: "https://www.foxnews.com/world/uk-france-strike-new-ukraine-security-pact-us-takes-lead-ceasefire-enforcement.print", title: "UK and France strike new Ukraine security pact; US takes lead on ceasefire enforcement", publisher: "Fox News", date: 2026-01-06, tier: 3}
-      - {url: "https://nachrichten.idw-online.de/2026/08/13/ukraine-support-tracker-europe-leads-on-aid-us-weapons-remain-key", title: "Ukraine Support Tracker: Europe leads on aid - US weapons remain key", publisher: "Kiel Institute for the World Economy (via idw)", date: 2026-08-13, tier: 2}
-      - {url: "https://euromaidanpress.com/2026/02/11/britain-joins-purl-205-million-for-us-made-weapons-as-nato-aims-to-raise-15-billion-for-ukraine-in-2026/", title: "Britain joins PURL: USD 205 million for US-made weapons", publisher: "Euromaidan Press", date: 2026-02-11, tier: 3}
-
-  - toward: FRA
-    grade: ally
-    trend: stable
-    bond: affinity
-    since: 2022-02-24
-    last_verified: 2026-10-12
-    confidence: B
-    note: "Co-leader of the Coalition of the Willing: the Paris Declaration of 6 Jan 2026 was signed in Paris and, with the UK, France pledged troops for the post-ceasefire force. Same caveat as the UK: no mutual-defence treaty, the guarantee is conditional on a ceasefire. Bond - affinity."
-    sources:
-      - {url: "https://euromaidanpress.com/2026/01/06/paris-declaration-signed/", title: "Paris Declaration: Ukraine, US, allies sign most comprehensive security deal yet", publisher: "Euromaidan Press", date: 2026-01-06, tier: 3}
-      - {url: "https://www.foxnews.com/world/uk-france-strike-new-ukraine-security-pact-us-takes-lead-ceasefire-enforcement.print", title: "UK and France strike new Ukraine security pact; US takes lead on ceasefire enforcement", publisher: "Fox News", date: 2026-01-06, tier: 3}
-
-  - toward: DEU
-    grade: partner
-    trend: stable
-    bond: affinity
-    since: 2022-02-24
-    last_verified: 2026-10-12
-    confidence: B
-    note: "Germany is the largest European military donor in the Kiel figures (EUR 700m in May-June 2026 alone, ahead of Denmark and the Netherlands) and sits with France, the UK and Italy in the E5 format, but it has not pledged troops to the Paris force Partner, stable: money without a guarantee. Bond - affinity."
-    sources:
-      - {url: "https://nachrichten.idw-online.de/2026/08/13/ukraine-support-tracker-europe-leads-on-aid-us-weapons-remain-key", title: "Ukraine Support Tracker: Europe leads on aid - US weapons remain key", publisher: "Kiel Institute for the World Economy (via idw)", date: 2026-08-13, tier: 2}
-      - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/06/25/analysis-poland-and-ukraine-s-difficult-history-creates-political-minefield-for-tusk", title: "Analysis: Poland and Ukraine's difficult history creates political minefield for Tusk (E3/E5 formats)", publisher: "Reuters via Internazionale", date: 2026-06-25, tier: 3}
-
-  - toward: IND
-    grade: neutral
-    trend: stable
-    bond: none
-    since: 2022-02-24
-    last_verified: 2026-10-12
-    confidence: B
-    note: "The Global South as Ukraine sees it: India, like Brazil and China, abstained on the General Assembly's 'lasting peace' text on 24 Feb 2026 (107-12-51) and neither condemns nor supports. Neutral is the right grade, and the 51 abstentions are the larger fact. Bond - none."
-    sources:
-      - {url: "https://euromaidanpress.com/2026/02/25/unga-backs-ukraines-peace-resolution-with-107-votes-rejects-us-push-to-drop-territorial-integrity/", title: "UNGA backs Ukraine's peace resolution with 107 votes (India, Brazil, China abstained)", publisher: "Euromaidan Press", date: 2026-02-25, tier: 3}
-      - {url: "https://digitallibrary.un.org/record/4103179", title: "A/RES/ES-11/10 Support for lasting peace in Ukraine - voting record", publisher: "United Nations", date: 2026-02-24, tier: 1}
+- toward: RUS
+  grade: adversary
+  trend: stable
+  bond: grievance
+  since: 2014-02
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'The only mortal-enemy grade in Ukraine''s map, and the structural one: Russia''s aim, as ISW reads the Kremlin''s position in February 2026, is neutrality, a limited army and a pro-Russian government
+    in Kyiv; the Atlantic Council argues that Putin cannot accept any deal that secures Ukrainian statehood. Kyiv''s reading is on the record: the Rada asked the US to name Russia a state sponsor of terrorism
+    (May 2022) and PACE declared the Russian regime terrorist (Oct 2022). Since January 2026 the two have talked (Abu Dhabi, Geneva, with the US) and the Kremlin has insisted on the Donbas, so ''adversary''
+    is not rhetoric; it describes a war whose settlement would decide whether Ukraine remains a state. Bond - grievance: the open wound is 2014 and 2022, not kinship, whatever Putin says about ''one people''.'
+  sources:
+  - url: https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-february-19-2026
+    title: Russian Offensive Campaign Assessment, February 19, 2026
+    publisher: Institute for the Study of War / Critical Threats
+    date: 2026-02-19
+    tier: 2
+  - url: https://www.atlanticcouncil.org/blogs/ukrainealert/putin-cannot-accept-any-peace-deal-that-secures-ukrainian-statehood/
+    title: Putin cannot accept any peace deal that secures Ukrainian statehood
+    publisher: Atlantic Council
+    date: 2026-01
+    tier: 2
+  - url: https://ukrinform.net/rubric-polytics/3473834-ukraines-parliament-asks-united-states-to-recognize-russia-as-state-sponsor-of-terrorism.html
+    title: Ukraine's Parliament asks United States to recognize Russia as state sponsor of terrorism
+    publisher: Ukrinform
+    date: 2022-05
+    tier: 3
+  - url: https://english.nv.ua/amp/pace-adopts-resolution-declaring-russian-regime-as-terrorist-50276526.html
+    title: PACE adopts resolution declaring Russian regime as terrorist one
+    publisher: NV
+    date: 2022-10
+    tier: 3
+- toward: sub-crimea
+  grade: claimed_territory
+  trend: stable
+  bond: grievance
+  since: 2014-03
+  last_verified: 2026-10-12
+  confidence: A
+  note: Occupied and annexed by Russia in 2014 and claimed by Ukraine; the General Assembly voted 143-5-35 on 12 Oct 2022 (ES-11/4) to reject the annexations and affirm Ukraine's territorial integrity,
+    and the 24 Feb 2026 text did the same. DeepState counts Crimea as 100% occupied at the start of 2026. Not a negotiating item for Kyiv.
+  sources:
+  - url: https://digitallibrary.un.org/record/3990400
+    title: 'A/RES/ES-11/4 Territorial integrity of Ukraine: defending the principles of the Charter - voting record'
+    publisher: United Nations
+    date: 2022-10-12
+    tier: 1
+  - url: https://euromaidanpress.com/?p=384242
+    title: Russia occupied 0.72% of Ukraine's territory in 2025, DeepState reports
+    publisher: Euromaidan Press
+    date: 2026-01-02
+    tier: 3
+  - url: https://euromaidanpress.com/2026/02/25/unga-backs-ukraines-peace-resolution-with-107-votes-rejects-us-push-to-drop-territorial-integrity/
+    title: UNGA backs Ukraine's peace resolution with 107 votes, rejects US push to drop territorial integrity
+    publisher: Euromaidan Press
+    date: 2026-02-25
+    tier: 3
+- toward: sub-occupied-ukraine
+  grade: claimed_territory
+  trend: stable
+  bond: grievance
+  since: 2022-09-30
+  last_verified: 2026-10-12
+  confidence: A
+  note: 'Luhansk (99.6% occupied), Donetsk (78%), Zaporizhzhia (75%) and Kherson (72%) at the start of 2026 (DeepState); Russia proclaimed their annexation on 30 Sep 2022 and the General Assembly rejected
+    it on 12 Oct 2022. The unoccupied rest of Donetsk (Sloviansk-Kramatorsk) is the sticking point: the Kremlin demands a Ukrainian withdrawal as the condition of peace, Kyiv refuses. Ukraine''s map shows
+    these oblasts as claimed, not controlled; the part still under Ukrainian control is own territory and is not drawn separately.'
+  sources:
+  - url: https://digitallibrary.un.org/record/3990400
+    title: A/RES/ES-11/4 Territorial integrity of Ukraine - voting record
+    publisher: United Nations
+    date: 2022-10-12
+    tier: 1
+  - url: https://euromaidanpress.com/?p=384242
+    title: Russia occupied 0.72% of Ukraine's territory in 2025, DeepState reports (shares by oblast)
+    publisher: Euromaidan Press
+    date: 2026-01-02
+    tier: 3
+  - url: https://rubryka.com/en/2026/01/23/vyvedennya-ukrayinskyh-vijsk/
+    title: Russia demands Ukrainian troop withdrawal from Donbas ahead of Abu Dhabi negotiations
+    publisher: Rubryka
+    date: 2026-01-23
+    tier: 3
+- toward: USA
+  grade: partner
+  trend: warming
+  bond: none
+  since: 2025-02
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'Transactional, and it should not be read as an alliance: no treaty, direct US funding stopped in early 2025 (Kiel), the Trump administration asked the General Assembly on 24 Feb 2026 to drop the
+    territorial-integrity paragraphs (69 to 11 against) and then abstained, and the Iran war froze the talks from March. Yet Washington remains the supplier Kyiv cannot replace (about 95% of Patriot interceptors
+    reach Ukraine through PURL, paid by allies), the minerals fund has made its first deals, and the line changed in July 2026: at Ankara Trump promised a licence to build Patriot missiles and said he wants
+    Ukrainian drones, then received Zelensky at the White House on 28 July. Trend: warming since July, with a Miami round on 9-10 Oct. Bond - none: pure interest after the US voted against Ukraine''s resolution
+    in Feb 2025.'
+  sources:
+  - url: https://www.intellinews.com/trump-offers-ukraine-patriot-production-licence-in-major-policy-about-face-453534/
+    title: Trump offers Ukraine Patriot production licence in major policy about-face
+    publisher: bne IntelliNews
+    date: 2026-07
+    tier: 3
+  - url: https://www.local10.com/news/world/2026/07/28/zelenskyy-has-a-good-meeting-with-trump-at-the-white-house-as-he-seeks-more-cooperation-with-us/
+    title: Zelenskyy has a 'good meeting' with Trump at the White House as he seeks more cooperation with US
+    publisher: AP via Local 10
+    date: 2026-07-28
+    tier: 3
+  - url: https://euromaidanpress.com/2026/02/25/unga-backs-ukraines-peace-resolution-with-107-votes-rejects-us-push-to-drop-territorial-integrity/
+    title: UNGA backs Ukraine's peace resolution with 107 votes, rejects US push to drop territorial integrity
+    publisher: Euromaidan Press
+    date: 2026-02-25
+    tier: 3
+  - url: https://nachrichten.idw-online.de/2026/08/13/ukraine-support-tracker-europe-leads-on-aid-us-weapons-remain-key
+    title: 'Ukraine Support Tracker: Europe leads on aid - US weapons remain key'
+    publisher: Kiel Institute for the World Economy (via idw)
+    date: 2026-08-13
+    tier: 2
+- toward: org-eu
+  grade: partner
+  trend: warming
+  bond: affinity
+  since: 2022-06-23
+  last_verified: 2026-10-12
+  confidence: A
+  note: 'Partner, not member: candidate since 23 Jun 2022, first cluster opened 15 Jun 2026, external relations on 14 Jul, clusters 2 and 3 cleared by Hungary on 7 Oct on condition of a minority-education
+    law (reported passed by the Rada on 12 Oct), and the EUR 90bn Ukraine Support Loan disbursing since the summer. The EU is now the main financier of the war. The trend is warming because the Hungarian
+    veto, the largest obstacle since 2024, was lifted after the April 2026 election; the Union still refuses a fast-track and Poland, Slovakia and Hungary each hold a lever. Bond - affinity: the European
+    choice is the state''s own project, though not kinship.'
+  sources:
+  - url: https://www.eeas.europa.eu/delegations/moldova/european-council-conclusions-membership-applications-ukraine-republic-moldova-and-georgia-23-june_en
+    title: European Council conclusions on the membership applications of Ukraine, Moldova and Georgia
+    publisher: European Council / EEAS
+    date: 2022-06-23
+    tier: 1
+  - url: https://www.euronews.com/2026/10/07/hungary-set-to-lift-veto-on-ukraines-eu-membership-talks
+    title: Hungary set to lift veto on Ukraine's EU membership talks
+    publisher: Euronews
+    date: 2026-10-07
+    tier: 3
+  - url: https://www.pravda.com.ua/eng/news/2026/09/01/8051344/
+    title: EU points out that EUR 90bn loan will cover only two-thirds of Ukraine's needs
+    publisher: European Pravda
+    date: 2026-09-01
+    tier: 3
+- toward: org-nato
+  grade: partner
+  trend: stable
+  bond: affinity
+  since: 2024-07-10
+  last_verified: 2026-10-12
+  confidence: A
+  note: 'Not an ally in the Article 5 sense. The 2024 Washington declaration calls Ukraine''s path to NATO ''irreversible'' and promises an invitation ''when Allies agree and conditions are met''; no invitation
+    has come. The Ankara summit (7-8 Jul 2026) did not change that; it pledged EUR 70bn for 2026 and at least the same in 2027 and, per Kyiv, recognised Ukraine as a contributor to Euro-Atlantic security.
+    Stable: more money and more words, no door. Bond - affinity: NATO is the aim, not a shared past.'
+  sources:
+  - url: https://www.nato.int/cps/en/natohq/official_texts_227678.htm
+    title: Washington Summit Declaration, para. 16
+    publisher: NATO
+    date: 2024-07-10
+    tier: 1
+  - url: https://euromaidanpress.com/2026/07/03/ukraine-wants-the-ankara-summit-to-name-it-a-nato-security-contributor-not-just-an-aid-recipient/
+    title: Ukraine wants the Ankara summit to name it a NATO security contributor - not just an aid recipient
+    publisher: Euromaidan Press
+    date: 2026-07-03
+    tier: 3
+  - url: https://english.enabbaladi.net/archives/2026/07/ankara-summit-sets-nato-priorities-backs-ukraine/
+    title: Ankara Summit Sets NATO Priorities, Backs Ukraine
+    publisher: Enab Baladi
+    date: 2026-07
+    tier: 3
+- toward: POL
+  grade: reluctant_ally
+  trend: cooling
+  bond: grievance
+  since: 2022-02-24
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'The closest neighbour and the logistics hub of the war, aligned by necessity, with open friction: the Volhynia massacres (1943-45) and the May 2026 row over a Ukrainian army unit named after the
+    UPA led President Nawrocki to strip Zelensky of the Order of the White Eagle; Zelensky skipped the Gdansk reconstruction conference on 25 Jun; 51.9% of Poles say the naming hurt their view of Ukraine.
+    Prime Minister Tusk takes a conciliatory line and a Warsaw diplomat told Reuters that Ukraine''s EU and NATO policy will still be set by the government. Exhumations resumed in 2025 (Puzniki). No bilateral
+    treaty of alliance in this atlas, so ''reluctant ally'', not ''ally''. Trend: cooling until August, with Nawrocki wishing victory but listing ''points of tension'' on Independence Day. Bond - grievance:
+    the historical wound.'
+  sources:
+  - url: https://www.internazionale.it/ultime-notizie-reuters/2026/06/25/analysis-poland-and-ukraine-s-difficult-history-creates-political-minefield-for-tusk
+    title: 'Analysis: Poland and Ukraine''s difficult history creates political minefield for Tusk'
+    publisher: Reuters via Internazionale
+    date: 2026-06-25
+    tier: 3
+  - url: https://www.eurointegration.com.ua/eng/news/2026/08/26/7244215/
+    title: Poland reveals what President Nawrocki wished Ukraine on Independence Day
+    publisher: European Pravda
+    date: 2026-08-26
+    tier: 3
+  - url: https://www.euronews.com/my-europe/2025/01/11/poland-and-ukraine-agree-to-exhume-ww2-volhynia-massacre-victims
+    title: Poland and Ukraine agree to exhume WW2 Volhynia massacre victims
+    publisher: Euronews
+    date: 2025-01-11
+    tier: 3
+- toward: HUN
+  grade: rival
+  trend: warming
+  bond: grievance
+  since: 2022-02-24
+  last_verified: 2026-10-12
+  confidence: C
+  note: 'Hungary is an EU member and Ukraine only a candidate, so the ''co-members become reluctant allies'' rule does not apply; Hungary has been the most obstructive member state: it held the accession
+    veto for 17 months, blocked clusters 2 and 3 on 17 Jul, 1 Sep and 8 Sep 2026, and opposes a fast-track. Rival, not adversary: Budapest never wished Ukraine''s defeat. Warming because the April 2026
+    election removed Orban and Prime Minister Magyar announced a ''comprehensive agreement'' on the rights of about 100,000 ethnic Hungarians in Transcarpathia and lifted the veto on 7 Oct, conditional
+    on Ukraine''s education law; relations stay tense (Sybiha-Magyar clash in Sep, the football blacklist). No source uses the word ''rival''; our reading, confidence C. Bond - grievance: the minority question.'
+  sources:
+  - url: https://www.euronews.com/2026/10/07/hungary-set-to-lift-veto-on-ukraines-eu-membership-talks
+    title: Hungary set to lift veto on Ukraine's EU membership talks
+    publisher: Euronews
+    date: 2026-10-07
+    tier: 3
+  - url: https://osw.waw.pl/en/publikacje/analyses/2026-06-09/hungarian-ukrainian-agreement-rights-national-minorities-ukraine
+    title: Hungarian-Ukrainian agreement on the rights of national minorities in Ukraine
+    publisher: OSW
+    date: 2026-06-09
+    tier: 2
+  - url: https://www.pravda.com.ua/eng/news/2026/10/02/8056094/
+    title: 'Hungary boasts of agreement with Ukraine: achieving what Viktor Orban failed to do in 10 years'
+    publisher: Ukrainska Pravda
+    date: 2026-10-02
+    tier: 3
+- toward: SVK
+  grade: rival
+  trend: stable
+  bond: none
+  since: 2025-01-01
+  last_verified: 2026-10-12
+  confidence: C
+  note: 'Prime Minister Fico is the second veto player on the road to the EU: he cut emergency electricity to Ukraine in February 2026 and threatened to block the 20th sanctions package and slow accession
+    over the Druzhba oil outage, then said on 22 Apr 2026 that he would stop objecting to the EUR 90bn loan since the pipeline was working again. Bratislava also lost Russian gas transit when the contract
+    with Naftogaz expired on 1 Jan 2025. Rival, not partner: Slovakia uses its vote as a weapon against Kyiv; our reading, confidence C. Bond - none.'
+  sources:
+  - url: https://www.pravda.com.ua/eng/news/2026/03/29/8027690
+    title: Slovak PM threatens to block EU's 20th Russia sanctions package amid Druzhba pipeline dispute
+    publisher: Ukrainska Pravda
+    date: 2026-03-29
+    tier: 3
+  - url: https://interfax.com/newsroom/top-stories/117273/
+    title: 'Fico: Slovakia lifts veto on 20th package only when Druzhba supply resumes'
+    publisher: Interfax
+    date: 2026-04-22
+    tier: 3
+  - url: https://www.aljazeera.com/news/2026/4/29/ukraine-targets-druzhba-pipeline-to-sever-russian-oil-influence-in-eu
+    title: Ukraine targets Druzhba pipeline to sever Russian oil, influence in EU
+    publisher: Al Jazeera
+    date: 2026-04-29
+    tier: 3
+- toward: MDA
+  grade: partner
+  trend: stable
+  bond: affinity
+  since: 2022-02-24
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'Fellow EU candidate on a joint track since 2022, border neighbour and refugee host; both opened their first cluster on 15 Jun 2026. The friction is structural: in June 2026 the EU set the stage
+    for decoupling Moldova from Ukraine, which Chisinau (Sandu wants the other clusters ''immediately'') would welcome and Kyiv loses its partner in the queue. Moldova''s Transnistria issue is also Ukraine''s
+    (it ended Russian gas transit in 2025 and Zelensky offered coal to Tiraspol). Partner, stable: shared interest, no treaty. Bond - affinity.'
+  sources:
+  - url: https://www.euronews.com/2026/06/22/eu-sets-stage-for-decoupling-moldovas-accession-bid-from-ukraines
+    title: EU sets stage for decoupling Moldova's accession bid from Ukraine's
+    publisher: Euronews
+    date: 2026-06-22
+    tier: 3
+  - url: https://www.euronews.com/my-europe/2025/01/26/kyiv-says-it-can-supply-moldova-with-coal-as-gas-transit-agreement-with-russia-ends
+    title: Kyiv says it can supply Moldova with coal as gas transit agreement with Russia ends
+    publisher: Euronews
+    date: 2025-01-26
+    tier: 3
+- toward: TUR
+  grade: partner
+  trend: stable
+  bond: none
+  since: 2022-02-24
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'Black Sea gatekeeper that sells Ukraine drones and keeps its ties with Moscow: Ankara hosted the NATO summit (7-8 Jul 2026) with Zelensky invited, backs Ukrainian sovereignty over Crimea, offered
+    to host trilateral talks (Zelensky ''very open'', Sep 2026) and to monitor a Black Sea ceasefire. Bilateral trade is only about USD 1bn, with a target of USD 10bn after the Zelensky-Erdogan meeting
+    in New York. The free-trade agreement was signed on 3 Feb 2022. Partner, not ally: no treaty of alliance, and Ankara balances between Kyiv and Moscow. Bond - none.'
+  sources:
+  - url: https://aa.com.tr/en/eurasia/zelenskyy-says-ukraine-very-open-to-turkiye-hosting-trilateral-peace-talks/4067073
+    title: Zelenskyy says Ukraine 'very open' to Turkiye hosting trilateral peace talks
+    publisher: Anadolu Agency
+    date: 2026-09
+    tier: 3
+  - url: https://www.nikvesti.com/en/news/politics/305001-zelenskyy-erdogan-discuss-security-black-sea
+    title: Zelenskyy and Erdogan discuss security in the Black Sea
+    publisher: Nikvesti
+    date: 2026
+    tier: 3
+  - url: https://kyivindependent.com/erdogan-visits-kyiv-signs-long-anticipated-free-trade-agreement/
+    title: Erdogan visits Kyiv, signs long-anticipated free trade agreement
+    publisher: Kyiv Independent
+    date: 2022-02-03
+    tier: 3
+- toward: CHN
+  grade: partner
+  trend: stable
+  bond: none
+  since: 2011
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'China is Ukraine''s largest trading partner and import source (both sides said so at Munich on 13 Feb 2026), pledged a new package of humanitarian energy aid, and keeps the 2011 strategic partnership.
+    Kyiv asks it to play an important role in achieving a ceasefire; Beijing abstained at the General Assembly on 24 Feb 2026 and says it supplies no weapons to Russia. Partner, not rival: a transactional
+    channel Ukraine needs for imports and mediation, whatever China''s weight on Russia''s side. Bond - none.'
+  sources:
+  - url: https://www.mfa.gov.cn/eng/wjbzhd/202602/t20260215_11860282.html
+    title: Wang Yi meets Ukrainian Foreign Minister Andrii Sybiha (Munich, 13 Feb 2026)
+    publisher: Ministry of Foreign Affairs of the PRC
+    date: 2026-02-15
+    tier: 1
+  - url: https://www.caixinglobal.com/2026-02-14/china-pledges-energy-aid-to-ukraine-as-top-diplomats-meet-in-munich-102414717.html
+    title: China pledges energy aid to Ukraine as top diplomats meet in Munich
+    publisher: Caixin
+    date: 2026-02-14
+    tier: 3
+  - url: https://euromaidanpress.com/2026/02/25/unga-backs-ukraines-peace-resolution-with-107-votes-rejects-us-push-to-drop-territorial-integrity/
+    title: UNGA backs Ukraine's peace resolution with 107 votes (China abstained)
+    publisher: Euromaidan Press
+    date: 2026-02-25
+    tier: 3
+- toward: BLR
+  grade: rival
+  trend: stable
+  bond: grievance
+  since: 2022-02-24
+  last_verified: 2026-10-12
+  confidence: C
+  note: 'Mirrored from Belarus''s card, whose sources are reused here. Rival, not adversary: Belarusian troops have not entered Ukraine and Lukashenko says they will not (Moscow Times, 2 Oct 2026); relay
+    stations on Belarusian soil stopped working on 22 Jun 2026 after Kyiv''s complaint. Against partner: Belarus was the staging area of the 2022 invasion, hosts Russian forces and weapons along 1,084 km
+    of border, and Zelensky said in Nov 2025 that Lukashenko ''will pay''; Kyiv opened a Mission of Democratic Belarus on 27 May 2026. Channels persist for prisoner exchanges. No source uses the word ''rival'';
+    our reading, confidence C. Bond - grievance (Kyiv''s, not Minsk''s).'
+  sources:
+  - url: https://www.themoscowtimes.com/2026/10/02/lukashenko-vows-belarus-full-support-for-putin-on-ukraine-a93858
+    title: Lukashenko vows Belarus' full support for Putin on Ukraine
+    publisher: The Moscow Times
+    date: 2026-10-02
+    tier: 3
+  - url: https://kdhnews.com/news/world/ukraine-is-still-fortifying-its-border-with-belarus-years-after-russia-invaded-from-there/article_98881595-802e-52fa-994b-8499df420fba.html
+    title: Ukraine is still fortifying its border with Belarus years after Russia invaded from there
+    publisher: AP
+    date: 2026-07-24
+    tier: 3
+  - url: https://www.pravda.com.ua/eng/news/2025/11/07/8006344
+    title: Zelenskyy says Belarusian leader will pay for taking part in Russia's invasion of Ukraine
+    publisher: Ukrainska Pravda
+    date: 2025-11-07
+    tier: 3
+  - url: https://isans.org/analysis/belarus-review/belarus-review-by-isans-june-1-2026.html
+    title: Belarus Review by iSANS - June 1, 2026
+    publisher: iSANS
+    date: 2026-06-01
+    tier: 2
+- toward: GBR
+  grade: ally
+  trend: stable
+  bond: affinity
+  since: 2022-02-24
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'Stable de facto alignment rather than treaty ally: with France the UK co-leads the Coalition of the Willing and signed in January 2026 a declaration pledging troops to Ukraine under a future peace
+    deal; in 2026 it allocated at least 120,000 drones (Kiel) and USD 205m to PURL. Not a treaty ally in the Article 5 sense; the guarantee is conditional on a ceasefire. Bond - affinity.'
+  sources:
+  - url: https://www.foxnews.com/world/uk-france-strike-new-ukraine-security-pact-us-takes-lead-ceasefire-enforcement.print
+    title: UK and France strike new Ukraine security pact; US takes lead on ceasefire enforcement
+    publisher: Fox News
+    date: 2026-01-06
+    tier: 3
+  - url: https://nachrichten.idw-online.de/2026/08/13/ukraine-support-tracker-europe-leads-on-aid-us-weapons-remain-key
+    title: 'Ukraine Support Tracker: Europe leads on aid - US weapons remain key'
+    publisher: Kiel Institute for the World Economy (via idw)
+    date: 2026-08-13
+    tier: 2
+  - url: https://euromaidanpress.com/2026/02/11/britain-joins-purl-205-million-for-us-made-weapons-as-nato-aims-to-raise-15-billion-for-ukraine-in-2026/
+    title: 'Britain joins PURL: USD 205 million for US-made weapons'
+    publisher: Euromaidan Press
+    date: 2026-02-11
+    tier: 3
+- toward: FRA
+  grade: ally
+  trend: stable
+  bond: affinity
+  since: 2022-02-24
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'Co-leader of the Coalition of the Willing: the Paris Declaration of 6 Jan 2026 was signed in Paris and, with the UK, France pledged troops for the post-ceasefire force. Same caveat as the UK: no
+    mutual-defence treaty, the guarantee is conditional on a ceasefire. Bond - affinity.'
+  sources:
+  - url: https://euromaidanpress.com/2026/01/06/paris-declaration-signed/
+    title: 'Paris Declaration: Ukraine, US, allies sign most comprehensive security deal yet'
+    publisher: Euromaidan Press
+    date: 2026-01-06
+    tier: 3
+  - url: https://www.foxnews.com/world/uk-france-strike-new-ukraine-security-pact-us-takes-lead-ceasefire-enforcement.print
+    title: UK and France strike new Ukraine security pact; US takes lead on ceasefire enforcement
+    publisher: Fox News
+    date: 2026-01-06
+    tier: 3
+- toward: DEU
+  grade: partner
+  trend: stable
+  bond: affinity
+  since: 2022-02-24
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'Germany is the largest European military donor in the Kiel figures (EUR 700m in May-June 2026 alone, ahead of Denmark and the Netherlands) and sits with France, the UK and Italy in the E5 format,
+    but it has not pledged troops to the Paris force Partner, stable: money without a guarantee. Bond - affinity.'
+  sources:
+  - url: https://nachrichten.idw-online.de/2026/08/13/ukraine-support-tracker-europe-leads-on-aid-us-weapons-remain-key
+    title: 'Ukraine Support Tracker: Europe leads on aid - US weapons remain key'
+    publisher: Kiel Institute for the World Economy (via idw)
+    date: 2026-08-13
+    tier: 2
+  - url: https://www.internazionale.it/ultime-notizie-reuters/2026/06/25/analysis-poland-and-ukraine-s-difficult-history-creates-political-minefield-for-tusk
+    title: 'Analysis: Poland and Ukraine''s difficult history creates political minefield for Tusk (E3/E5 formats)'
+    publisher: Reuters via Internazionale
+    date: 2026-06-25
+    tier: 3
+- toward: IND
+  grade: neutral
+  trend: stable
+  bond: none
+  since: 2022-02-24
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'The Global South as Ukraine sees it: India, like Brazil and China, abstained on the General Assembly''s ''lasting peace'' text on 24 Feb 2026 (107-12-51) and neither condemns nor supports. Neutral
+    is the right grade, and the 51 abstentions are the larger fact. Bond - none.'
+  sources:
+  - url: https://euromaidanpress.com/2026/02/25/unga-backs-ukraines-peace-resolution-with-107-votes-rejects-us-push-to-drop-territorial-integrity/
+    title: UNGA backs Ukraine's peace resolution with 107 votes (India, Brazil, China abstained)
+    publisher: Euromaidan Press
+    date: 2026-02-25
+    tier: 3
+  - url: https://digitallibrary.un.org/record/4103179
+    title: A/RES/ES-11/10 Support for lasting peace in Ukraine - voting record
+    publisher: United Nations
+    date: 2026-02-24
+    tier: 1
+- toward: ARM
+  grade: neutral
+  trend: warming
+  bond: none
+  since: 2022-02-24
+  last_verified: '2026-10-12'
+  confidence: C
+  reciprocal_of: ARM
+  note: Provisional reciprocal of Armenia's 'neutral' stance toward Ukraine, written on 2026-10-12 by tools/reciprocate.py from the same evidence; to be rewritten from Ukraine's side.
+  sources:
+  - url: https://ukranews.com/en/news/1150650-armenia-not-russia-s-ally-in-ukraine-pashinyan
+    title: Armenia is not Russia's ally on Ukraine - Pashinyan
+    publisher: Ukranews
+    date: 2026-05
+    tier: 3
+  - url: https://ukranews.com/en/amp/news/1150664-russia-expresses-outrage-to-armenian-ambassador-over-zelenskyy-s-visit-to-the-country-s-capital
+    title: Russia expresses outrage to Armenian ambassador over Zelenskyy's visit
+    publisher: Ukranews
+    date: 2026-05-07
+    tier: 3
+- toward: AZE
+  grade: partner
+  trend: stable
+  bond: affinity
+  since: 1992
+  last_verified: '2026-10-12'
+  confidence: C
+  reciprocal_of: AZE
+  note: Provisional reciprocal of Azerbaijan's 'partner' stance toward Ukraine, written on 2026-10-12 by tools/reciprocate.py from the same evidence; to be rewritten from Ukraine's side.
+  sources:
+  - url: https://www.trend.az/azerbaijan/politics/4178917.html
+    title: SOCAR has been successfully operating in Ukraine for many years - President Ilham Aliyev
+    publisher: Trend
+    date: 2026-04
+    tier: 3
+  - url: https://www.pravda.com.ua/eng/news/2025/08/11/7525573
+    title: Azerbaijan's president allocates US$2 million to Ukraine amid Russian strikes on gas infrastructure
+    publisher: Ukrainska Pravda
+    date: 2025-08-11
+    tier: 3
+- toward: BGR
+  grade: partner
+  trend: cooling
+  bond: affinity
+  since: 2022-02-24
+  last_verified: '2026-10-12'
+  confidence: C
+  reciprocal_of: BGR
+  note: Provisional reciprocal of Bulgaria's 'partner' stance toward Ukraine, written on 2026-10-12 by tools/reciprocate.py from the same evidence; to be rewritten from Ukraine's side.
+  sources:
+  - url: https://euromaidanpress.com/2026/07/14/two-months-in-office-three-blows-to-ukraine-bulgarias-premier-stacks-coalition-of-the-willing-exit-on-aid-freeze-and-sanctions-blocks/
+    title: Two months in office, three blows to Ukraine
+    publisher: Euromaidan Press
+    date: 2026-07-14
+    tier: 3
+  - url: https://www.intellinews.com/bulgaria-reaches-limit-on-military-aid-to-ukraine-pm-says-450355/
+    title: Bulgaria reaches limit on military aid to Ukraine, PM says
+    publisher: bne IntelliNews
+    date: 2026-07
+    tier: 3
+  - url: https://www.pravda.com.ua/eng/news/2025/09/1/7528713/
+    title: Bulgaria has provided a third of EU weapons for Ukraine - von der Leyen
+    publisher: Ukrainska Pravda
+    date: 2025-09-01
+    tier: 3
+- toward: CZE
+  grade: partner
+  trend: cooling
+  bond: affinity
+  since: 2022-02-24
+  last_verified: '2026-10-12'
+  confidence: C
+  reciprocal_of: CZE
+  note: Provisional reciprocal of Czech Republic's 'partner' stance toward Ukraine, written on 2026-10-12 by tools/reciprocate.py from the same evidence; to be rewritten from Ukraine's side.
+  sources:
+  - url: https://www.expats.cz/czech-news/article/czech-government-to-keep-ammunition-initiative-but-without-state-funding
+    title: Czech government to keep ammunition initiative, but without state funding
+    publisher: Expats.cz
+    date: 2026-01
+    tier: 3
+  - url: https://www.pravda.com.ua/eng/news/2026/01/06/8014908/
+    title: Ukraine and Czechia agree to 'turn the page' after Czech speaker controversy
+    publisher: Ukrainska Pravda
+    date: 2026-01-06
+    tier: 3
+  - url: https://www.expats.cz/czech-news/article/prague-stands-with-slovakia-and-hungary-in-ukraine-loan-refusal
+    title: 'EU Summit stand-off: Czechia opts out of Ukraine loan alongside Slovakia, Hungary'
+    publisher: Expats.cz
+    date: 2025-12-20
+    tier: 3
+  - url: https://pism.pl/webroot/upload/files/PISM%20Bulletin%20no%201%20(2633)%2016%20January%202026.pdf
+    title: PISM Bulletin no. 1 (2633), 16 January 2026 - the Babiš cabinet and Ukraine
+    publisher: PISM
+    date: 2026-01-16
+    tier: 2
+- toward: GEO
+  grade: reluctant_partner
+  trend: warming
+  bond: affinity
+  since: 2022-03
+  last_verified: '2026-10-12'
+  confidence: C
+  reciprocal_of: GEO
+  note: Provisional reciprocal of Georgia's 'reluctant_partner' stance toward Ukraine, written on 2026-10-12 by tools/reciprocate.py from the same evidence; to be rewritten from Ukraine's side.
+  sources:
+  - url: https://oldwp.civil.ge/?p=476348
+    title: Ukraine Recalls Ambassador over Georgia Government's 'Immoral Position'
+    publisher: Civil.ge
+    date: '2022-03-01'
+    tier: 3
+  - url: https://oc-media.org/after-long-hiatus-zelenskyi-appoints-new-ukrainian-ambassador-to-georgia
+    title: After long hiatus, Zelenskyi appoints new Ukrainian ambassador to Georgia
+    publisher: OC Media
+    date: '2026-01-27'
+    tier: 3
+  - url: https://eualive.net/zelenskyy-opens-direct-dialogue-with-the-pro-russian-georgian-government/
+    title: Zelenskyy opens direct dialogue with the pro-Russian Georgian government
+    publisher: EUalive
+    date: 2026-05
+    tier: 3
+  - url: https://www.kyivpost.com/videos/77519
+    title: Interview with Salome Zourabichvili at the Odesa Security Forum
+    publisher: Kyiv Post
+    date: '2026-06-06'
+    tier: 3
+  - url: https://caucasuswatch.de/news/13426
+    title: Kobakhidze Accuses 'Deep State' of Fueling Russophobia and Seeking Conflict with Russia
+    publisher: Caucasus Watch
+    date: '2026-08-12'
+    tier: 3
+- toward: HRV
+  grade: partner
+  trend: stable
+  bond: affinity
+  since: 2022-02-24
+  last_verified: '2026-10-12'
+  confidence: C
+  reciprocal_of: HRV
+  note: Provisional reciprocal of Croatia's 'partner' stance toward Ukraine, written on 2026-10-12 by tools/reciprocate.py from the same evidence; to be rewritten from Ukraine's side.
+  sources:
+  - url: https://vlada.gov.hr/croatia-contributes-significantly-to-collective-security-we-have-exceeded-the-2-percent-of-gdp-allocation-for-defense/45899
+    title: 'Croatia contributes significantly to collective security (Rutte: over EUR 300m of military assistance to Ukraine since 2022)'
+    publisher: Government of Croatia
+    date: 2026-01-12
+    tier: 1
+  - url: https://n1info.hr/english/news/pm-calls-the-presidents-refusal-to-authorise-croatias-participation-in-nsatu-manipulation
+    title: PM calls the president's refusal to authorise Croatia's participation in NSATU 'manipulation'
+    publisher: N1 Croatia
+    date: 2024-10
+    tier: 3
+  - url: https://www.richmond-news.com/politics/croatia-rejects-joining-in-eus-ukraine-training-mission-6258903
+    title: Croatia rejects joining in EU's Ukraine training mission
+    publisher: AP via Richmond News
+    date: 2024-11
+    tier: 3
+  - url: https://glashrvatske.hrt.hr/en/foreign/zelensky-honors-croatian-leaders-on-ukraine-s-independence-day-12303619
+    title: Zelensky honors Croatian leaders on Ukraine's Independence Day
+    publisher: HRT (Croatian public broadcaster)
+    date: 2025-08
+    tier: 3
+  - url: https://www.defensenews.com/global/europe/2025/12/11/croatia-buys-german-leopard-tanks-using-eu-loans/
+    title: Croatia buys German Leopard tanks using EU loans (M-84 and M-80 transfers credited by Germany)
+    publisher: Defense News
+    date: 2025-12-11
+    tier: 3
+- toward: MKD
+  grade: partner
+  trend: stable
+  bond: affinity
+  since: 2022-02-24
+  last_verified: '2026-10-12'
+  confidence: C
+  reciprocal_of: MKD
+  note: Provisional reciprocal of North Macedonia's 'partner' stance toward Ukraine, written on 2026-10-12 by tools/reciprocate.py from the same evidence; to be rewritten from Ukraine's side.
+  sources:
+  - url: https://enlargement-infohub.eu/wp-content/uploads/2025/11/north-macedonia-report-2025.pdf
+    title: North Macedonia 2025 Report (relations with Ukraine; UNGA vote of February 2025)
+    publisher: European Commission
+    date: 2025-11-04
+    tier: 1
+  - url: https://dia.dp.gov.ua/en/north-macedonia-and-ukraine-during-wartime-support-and-solidarity/
+    title: 'North Macedonia and Ukraine during wartime: support and solidarity'
+    publisher: Dnipropetrovsk Regional State Administration (Ukraine)
+    date: 2025
+    tier: 1
+  - url: https://neweasterneurope.eu/2025/05/05/north-macedonias-us-pivot-raises-questions-about-its-eu-ambitions/
+    title: North Macedonia's US pivot raises questions about its EU ambitions
+    publisher: New Eastern Europe
+    date: 2025-05-05
+    tier: 3
+- toward: SRB
+  grade: neutral
+  trend: stable
+  bond: affinity
+  since: 2022-02-24
+  last_verified: '2026-10-12'
+  confidence: C
+  reciprocal_of: SRB
+  note: Provisional reciprocal of Serbia's 'neutral' stance toward Ukraine, written on 2026-10-12 by tools/reciprocate.py from the same evidence; to be rewritten from Ukraine's side.
+  sources:
+  - url: https://www.rferl.org/a/serbia-arms-exports-ukraine-russia-vucic/33453578.html
+    title: Serbia halts arms exports after Russia accuses it of arming Ukraine
+    publisher: RFE/RL
+    date: 2025-06-26
+    tier: 3
+  - url: https://www.internazionale.it/ultime-notizie-reuters/2026/07/07/eu-candidate-countries-should-not-expect-membership-soon-serbia-s-vucic-says
+    title: EU candidate countries should not expect membership soon, Serbia's Vučić says
+    publisher: Reuters
+    date: 2026-07-07
+    tier: 3
