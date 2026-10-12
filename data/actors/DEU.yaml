@@ -1,9 +1,509 @@
 id: DEU
 name: Germany
+short: Germany
 type: state
-coords: [13.4, 52.52]
+seat: Berlin
+coords:
+- 13.4
+- 52.52
 iso2: de
 wikipedia: https://en.wikipedia.org/wiki/Germany
-seat: Berlin
-regions: ['western-europe']
-card: stub
+regions:
+- central-north-europe
+card: full
+tier: protagonist
+last_verified: '2026-10-12'
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: 'Rebuild a Bundeswehr able to deter Russia and defend NATO''s eastern flank: the March 2025 constitutional amendment lifted defence above 1% of GDP out of the debt brake, the
+      2027 draft budget lifts the regular defence budget to EUR 109.7bn (plus EUR 30bn from the special fund), and Berlin plans to reach NATO''s 3.5% core target in 2029, six years early.
+      The 45th Panzer Brigade is the flagship (about 4,800 soldiers in Lithuania by end-2027).'
+    confidence: B
+    sources:
+    - &id002
+      url: https://www.aa.com.tr/en/europe/germany-s-lower-house-approves-constitutional-changes-for-massive-defense-spending/3513282
+      title: Germany's lower house approves constitutional changes for massive defense spending
+      publisher: Anadolu Agency
+      date: '2025-03-18'
+      tier: 3
+    - &id001
+      url: https://en.ilsole24ore.com/art/berlin-military-spending-110-billion-33-per-cent-we-cannot-defend-ourselves-putin-a-balanced-budget-AJrfnp
+      title: 'German rearmament: Berlin military spending EUR 110 billion (2027 draft budget)'
+      publisher: Il Sole 24 Ore
+      date: 2026-07
+      tier: 3
+    - url: https://www.nato.int/en/news-and-events/articles/news/2026/07/01/nato-secretary-general-in-berlin-germany-leads-and-germany-delivers
+      title: 'NATO Secretary General in Berlin: Germany leads and Germany delivers'
+      publisher: NATO
+      date: '2026-07-01'
+      tier: 1
+    - url: https://www.globalsecurity.org/wmd/library/news/germany/2024/germany-240916-de-bmvg01.htm
+      title: Intergovernmental agreement on the Bundeswehr brigade in Lithuania
+      publisher: German Federal Ministry of Defence (via GlobalSecurity)
+      date: '2024-09-16'
+      tier: 1
+  - rank: 2
+    text: 'Keep the United States committed to Europe while making NATO ''more European'', the chancellor''s formula at the Ankara summit (7-8 Jul 2026): nuclear sharing via the F-35,
+      a request for Typhon/Tomahawk long-range fires, and a Franco-German nuclear steering group meant to complement, not replace, NATO deterrence.'
+    confidence: B
+    sources:
+    - &id014
+      url: https://www.bundesregierung.de/breg-en/news/defence-cabinet-meeting-2445642
+      title: Making NATO more European
+      publisher: Federal Government of Germany
+      date: '2026-07-01'
+      tier: 1
+    - url: https://www.deutschland.de/en/news/merz-appeals-in-ankara-for-strong-nato
+      title: Merz appeals in Ankara for a strong NATO
+      publisher: deutschland.de (Federal Government)
+      date: 2026-07
+      tier: 1
+    - &id006
+      url: https://theaviationist.com/2025/10/21/germany-wants-15-more-f-35s/
+      title: Germany Wants 15 More F-35A Lightning IIs
+      publisher: The Aviationist
+      date: '2025-10-21'
+      tier: 3
+    - url: https://pircenter.org/en/editions/pir-post-№-1-15-2026-one-europe-two-umbrellas-extended-nuclear-deterrence-a-la-francaise/
+      title: 'One Europe, Two Umbrellas: Extended Nuclear Deterrence a la Francaise'
+      publisher: PIR Center
+      date: '2026'
+      tier: 2
+  - rank: 3
+    text: 'Make sure Ukraine does not lose and Russia does not win, without becoming a belligerent: largest European military donor in the Kiel tracker, EUR 11.6bn for Ukraine in the
+      2027 draft budget, a ceasefire-first line on guarantees, German troops only in a neighbouring NATO state after a ceasefire, no Taurus.'
+    confidence: B
+    sources:
+    - url: https://nachrichten.idw-online.de/2026/08/13/ukraine-support-tracker-europe-leads-on-aid-us-weapons-remain-key
+      title: 'Ukraine Support Tracker: Europe leads on aid - US weapons remain key'
+      publisher: Kiel Institute for the World Economy (via idw)
+      date: '2026-08-13'
+      tier: 2
+    - *id001
+    - url: https://www.deutschland.de/en/news/merz-wants-to-help-secure-ukraine-ceasefire
+      title: Merz wants to help secure a Ukraine ceasefire
+      publisher: deutschland.de (Federal Government)
+      date: 2026-01
+      tier: 1
+    - url: https://euromaidanpress.com/2026/03/26/germany-wont-send-taurus-missiles-to-ukraine/
+      title: Germany won't send Taurus missiles to Ukraine - and now Merz says Ukraine doesn't need them anyway
+      publisher: Euromaidan Press
+      date: '2026-03-26'
+      tier: 3
+  - rank: 4
+    text: 'Restore the economic base: industrial recession, expensive energy, a EUR 500bn infrastructure fund over twelve years, a subsidised industrial power price (up to EUR 3.8bn
+      to 2028), the exit from Russian gas and de-risking from China without losing the Chinese market.'
+    confidence: B
+    sources:
+    - *id002
+    - url: https://www.renewable-energy-industry.com/news/world/article-7447-eu-approves-german-industrial-electricity-price-relief-for-energy-intensive-industry-from-2026
+      title: EU approves German industrial electricity price relief for energy-intensive industry from 2026
+      publisher: Renewable Energy Industry
+      date: '2026'
+      tier: 3
+    - url: https://brusselssignal.eu/2026/08/german-industry-losing-15000-jobs-a-month/
+      title: German industry losing 15,000 jobs a month
+      publisher: Brussels Signal
+      date: 2026-08
+      tier: 3
+    - &id012
+      url: https://www.nbcnews.com/world/asia/german-leader-friedrich-merz-hails-china-ties-seeks-reset-beijing-rcna260759
+      title: German leader Friedrich Merz hails China ties, seeks reset in Beijing
+      publisher: NBC News
+      date: 2026-02
+      tier: 3
+  - rank: 5
+    text: 'Keep the EU engine running and the enlargement door open: the Franco-German tandem (FCAS, nuclear cooperation), the EUR 90bn Ukraine loan, support for Montenegro''s accession
+      by 2028 and for the Berlin Process, a reset with a post-Orban Hungary.'
+    confidence: C
+    sources:
+    - &id007
+      url: https://www.enca.com/business/eu-agrees-90-bn-euro-loan-ukraine-without-russian-assets-0
+      title: EU agrees 90-bn-euro loan for Ukraine, but without Russian assets
+      publisher: eNCA (AFP)
+      date: '2025-12-19'
+      tier: 3
+    - &id003
+      url: https://de.euronews.com/2026/07/17/merz-macron-und-ministerrat-beraten-nach-fcas-aus-uber-zusammenarbeit
+      title: Merz, Macron and the Council of Ministers confer on cooperation after FCAS ends
+      title_original: Merz, Macron und Ministerrat beraten nach FCAS-Aus ueber Zusammenarbeit
+      lang: de
+      publisher: Euronews (German edition)
+      date: '2026-07-17'
+      tier: 3
+    - &id005
+      url: https://www.gov.me/en/article/ibrahimovic-wadephul-germany-supports-montenegros-reform-efforts-and-the-european-future-of-the-western-balkans
+      title: 'Ibrahimovic, Wadephul: Germany supports Montenegro''s reform efforts and the European future of the Western Balkans'
+      publisher: Government of Montenegro
+      date: 2025-11
+      tier: 1
+    - &id004
+      url: https://telex.hu/english/2026/06/02/german-chancellor-to-peter-magyar-you-have-proved-that-the-pendulum-does-not-swing-only-in-an-authoritarian-illiberal-direction
+      title: 'Merz to Magyar: You''ve proven that the pendulum doesn''t just swing in the illiberal or authoritarian direction'
+      publisher: Telex
+      date: '2026-06-02'
+      tier: 3
+  - rank: 6
+    text: 'Hold the political centre against the AfD while governing with a thin majority: border controls and the asylum fall (113,236 first applications in 2025 against 229,751 in
+      2024), a pension and welfare reform the SPD wants softened, and an AfD that won Saxony-Anhalt with 43.8% on 6 Sep 2026.'
+    confidence: B
+    sources:
+    - &id020
+      url: https://www.bluewin.ch/en/news/international/sharp-drop-in-asylum-figures-in-germany-li.3034393
+      title: Sharp drop in asylum figures in Germany
+      publisher: blue News (dpa)
+      date: '2026'
+      tier: 3
+    - &id009
+      url: https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-wahlergebnisse-cdu-afd-schulze-siegmund-100.html
+      title: 'Saxony-Anhalt election: AfD clearly ahead of CDU'
+      title_original: 'Wahl in Sachsen-Anhalt: AfD liegt klar vor CDU'
+      lang: de
+      publisher: ZDFheute
+      date: '2026-09-06'
+      tier: 3
+    - &id008
+      url: https://www.thestar.com.my/news/world/2026/09/08/afd-victory-clouds-merz039s-reform-agenda-as-ally-seeks-changes
+      title: AfD victory clouds Merz's reform agenda as ally seeks changes
+      publisher: Reuters via The Star
+      date: '2026-09-08'
+      tier: 3
+  means:
+  - domain: diplomatic
+    text: 'Berlin as the hinge of Europe''s ad hoc formats: the coalition of the willing for Ukraine''s guarantees (Paris, Jan 2026), the E5, the Franco-German Council of Ministers,
+      the Berlin Process (Montenegro chairs in 2026), bilateral defence texts with Poland (17 Jun 2026) and Lithuania, and quick repair of ties with Budapest (Magyar in Berlin, Jun 2026).'
+    confidence: B
+    sources:
+    - url: https://www.bundesregierung.de/breg-en/news/coalition-of-the-willing-paris-2446888
+      title: 'Coalition of the Willing: Peace for Ukraine and security for Europe'
+      publisher: Federal Government of Germany
+      date: 2026-01
+      tier: 1
+    - *id003
+    - url: https://www.bundesregierung.de/breg-en/news/cabinet-german-polish-defence-2438794
+      title: New German-Polish defence agreement concluded
+      publisher: Federal Government of Germany
+      date: 2026-06
+      tier: 1
+    - *id004
+    - *id005
+  - domain: diplomatic
+    text: 'Staatsraeson as an instrument and a constraint: unconditional rhetoric on Israel, then a partial arms pause (Aug-Nov 2025), criticism of West Bank annexation steps (Feb 2026)
+      and an open door for Netanyahu despite the ICC warrant.'
+    confidence: B
+    sources:
+    - &id022
+      url: https://www.enca.com/business/germany-suspends-arms-exports-israel-use-gaza
+      title: Germany suspends arms exports to Israel for use in Gaza
+      publisher: eNCA (AFP)
+      date: 2025-08
+      tier: 3
+    - &id023
+      url: https://www.aljazeera.com/news/2025/11/17/germany-lifts-curbs-on-arms-exports-to-israel-citing-gaza-ceasefire
+      title: Germany lifts curbs on arms exports to Israel, citing Gaza ceasefire
+      publisher: Al Jazeera
+      date: '2025-11-17'
+      tier: 3
+    - &id024
+      url: https://defence24.com/geopolitics/revamped-staatsrason-merzs-germany-hardens-tone-on-israel
+      title: 'Revamped Staatsraison: Merz''s Germany hardens tone on Israel'
+      publisher: Defence24
+      date: '2026'
+      tier: 3
+    - &id025
+      url: https://www.aljazeera.com/news/2025/2/24/merz-says-netanyahu-will-be-able-to-visit-germany-despite-icc-warrant
+      title: Merz says Netanyahu will be able to visit Germany despite ICC warrant
+      publisher: Al Jazeera
+      date: '2025-02-24'
+      tier: 3
+  - domain: military
+    text: 'Procurement and forward presence: 35 F-35A on order (the Luftwaffe wants 15 more) for the nuclear-sharing role, 44 Leopard 2A8 for Croatia, the Eurofighter export approval
+      for Turkey, Bundeswehr engineers on Poland''s East Shield from 22 Jun 2026, up to 50 soldiers in EUFOR Althea and a large KFOR contingent, and a Typhon/Tomahawk purchase request
+      (about EUR 3.4bn estimate).'
+    confidence: B
+    sources:
+    - *id006
+    - url: https://aircosmosinternational.com/article/germany-officially-orders-35-f-35a-3450
+      title: Germany officially orders 35 F-35A
+      publisher: Air & Cosmos International
+      date: 2023-07
+      tier: 3
+    - url: https://www.morh.hr/en/deputy-prime-minister-and-defence-minister-ivan-anusic-signs-contracts-in-berlin-for-the-delivery-of-44-leopard-2a8-tanks/
+      title: Deputy Prime Minister and Defence Minister Ivan Anusic signs contracts in Berlin for the delivery of 44 Leopard 2A8 tanks
+      publisher: Ministry of Defence of Croatia
+      date: '2025-12-10'
+      tier: 1
+    - url: https://de.euronews.com/my-europe/2026/07/31/eastern-shield-bundeswehr-polen-nato-ostflanke
+      title: 'Eastern Shield: Bundeswehr engineers support Poland on NATO''s eastern flank'
+      lang: de
+      publisher: Euronews (German edition)
+      date: '2026-07-31'
+      tier: 3
+    - url: https://www.bundestag.de/ausschuesse/verteidigung/eufor-althea-1075806
+      title: EUFOR Althea - Defence Committee
+      publisher: German Bundestag
+      date: '2026-06-11'
+      tier: 1
+    - &id011
+      url: https://defence-industry.eu/germany-turns-to-e3-4-billion-typhon-and-tomahawk-purchase-to-field-2500-kilometer-strike-capability-after-u-s-cancels-deployment/
+      title: Germany turns to EUR 3.4 billion Typhon and Tomahawk purchase to field 2,500-kilometer strike capability after U.S. cancels deployment
+      publisher: Defence-Industry.eu
+      date: '2026'
+      tier: 3
+  - domain: military
+    text: 'Manpower law: the Military Service Modernisation Act (voluntary first; a questionnaire for every 18-year-old from 2026, mandatory medical screening for men born 2008 or later
+      from 1 Jul 2027, a needs-based conscription trigger the Bundestag could pull) and, since September 2026, compulsory postings to the Lithuania brigade.'
+    confidence: B
+    sources:
+    - url: https://www.bundesregierung.de/breg-en/news/new-draft-military-service-law-2397962
+      title: New attractive military service plan passed
+      publisher: Federal Government of Germany
+      date: 2025-12
+      tier: 1
+    - url: https://chronicle.lu/category/international-news/60528-germanys-young-men-do-not-need-permit-for-foreign-travel-ministry-said
+      title: Germany's young men do not need permit for foreign travel, ministry said
+      publisher: Reuters via Chronicle.lu
+      date: '2026-04-07'
+      tier: 3
+    - &id010
+      url: https://es.euronews.com/video/2026/09/14/fracasa-el-modelo-voluntario-las-fuerzas-armadas-alemanas-obligaran-a-sus-soldados-a-ir-a
+      title: 'Voluntary model fails: German armed forces will oblige soldiers to go to Lithuania'
+      lang: es
+      publisher: Euronews (Spanish edition)
+      date: '2026-09-14'
+      tier: 3
+  - domain: economic
+    text: 'The balance sheet as a weapon: debt-brake carve-out, EUR 500bn infrastructure fund, the largest share of the EU''s Ukraine funding, EUR 1.2bn+ for the Czech ammunition initiative,
+      EUR 660m+ of cooperation with Kosovo since 1999, and the Russian-gas phase-out agreed in Brussels (LNG ban from end-2026, pipeline gas from autumn 2027).'
+    confidence: B
+    sources:
+    - *id002
+    - *id007
+    - url: https://euromaidanpress.com/?p=410524
+      title: Germany adds EUR 300 million to Czech ammunition drive, about 50,000 long-range rounds for Ukraine
+      publisher: Euromaidan Press
+      date: 2026-06
+      tier: 3
+    - url: https://www.auswaertiges-amt.de/en/aussenpolitik/kosovo-228088
+      title: Kosovo - bilateral relations
+      publisher: Federal Foreign Office of Germany
+      date: '2026-04-08'
+      tier: 1
+    - &id019
+      url: https://www.upstreamonline.com/energy-security/eu-signs-off-on-russian-gas-ban/2-1-1934031
+      title: EU signs off on Russian gas ban
+      publisher: Upstream
+      date: '2026'
+      tier: 3
+  - domain: informational
+    text: 'Threat framing to carry public opinion: Pistorius''s 2029 (possibly earlier) window for a Russian attack on NATO, the ''greatest effort we have ever made'' line on defence,
+      and a hybrid-threat response to sabotage (165+ suspected incidents in 2026 on a BKA count reported by SZ).'
+    confidence: B
+    sources:
+    - url: https://pravda.com.ua/eng/news/2025/01/22/7494843
+      title: German defence minister still believes Russia could attack NATO in 4-5 years
+      publisher: Ukrainska Pravda
+      date: '2025-01-22'
+      tier: 3
+    - url: https://aljazeera.com/news/2026/7/3/germanys-merz-defends-nato-spending-after-trump-calls-it-ridiculous
+      title: Germany's Merz defends NATO spending after Trump calls it 'ridiculous'
+      publisher: Al Jazeera
+      date: '2026-07-03'
+      tier: 3
+    - url: https://news.liga.net/en/world/news/suddeutsche-zeitung-v-germanii-v-etom-godu-zafiksirovano-bolee-165-veroyatnyh-diversii
+      title: 'SZ: More than 165 suspected acts of sabotage have been recorded in Germany this year'
+      publisher: LIGA.net (citing Suddeutsche Zeitung)
+      date: '2026'
+      tier: 3
+  constraints:
+  - text: 'Politics: a coalition with a majority of about twelve seats, an SPD that wants the pension and welfare package softened after the AfD''s win, a Chancellor with weak ratings,
+      and an AfD that is ahead of the CDU in polls and took 43.8% in Saxony-Anhalt.'
+    confidence: B
+    sources:
+    - url: https://www.internazionale.it/ultime-notizie-reuters/2026/04/21/germany-s-ruling-coalition-at-odds-over-reform-push
+      title: Germany's ruling coalition at odds over reform push
+      publisher: Reuters via Internazionale
+      date: '2026-04-21'
+      tier: 3
+    - *id008
+    - *id009
+    - url: https://www.kas.de/documents/d/guest/wahlanalyse-der-landtagswahl-in-sachsen-anhalt-am-6-september-2026-1
+      title: Election analysis of the Saxony-Anhalt state election on 6 September 2026
+      title_original: Wahlanalyse der Landtagswahl in Sachsen-Anhalt am 6. September 2026
+      lang: de
+      publisher: Konrad-Adenauer-Stiftung
+      date: 2026-09
+      tier: 2
+  - text: 'People, not money: the Bundeswehr cannot fill its posts. About 2,000 of the 4,800 posts in the Lithuania brigade had no confirmed personnel in 2026, volunteers covered only
+      part of the need and Pistorius approved compulsory postings in September 2026; conscription stays a trigger, not a decision.'
+    confidence: B
+    sources:
+    - &id013
+      url: https://www.nordkurier.de/politik/litauen-brigade-fordert-die-ganze-bundeswehr-4822297
+      title: Lithuania brigade demands the whole Bundeswehr
+      title_original: Litauen-Brigade fordert die ganze Bundeswehr
+      lang: de
+      publisher: Nordkurier
+      date: '2026'
+      tier: 3
+    - *id010
+    - url: https://www.kyivpost.com/post/84475
+      title: Germany moves to order soldiers into the Lithuania brigade
+      publisher: Kyiv Post
+      date: 2026-09
+      tier: 3
+  - text: 'Dependence on Washington for what Europe cannot yet replace: the nuclear umbrella and B61 sharing, F-35, Patriot, long-range fires. The US announced on 1 May 2026 a withdrawal
+      of about 5,000 of its 36,436 troops in Germany over six to twelve months, and Trump said the cut would go ''a lot further''.'
+    confidence: B
+    sources:
+    - &id015
+      url: https://english.alarabiya.net/News/world/2026/05/02/us-to-withdraw-about-5000-troops-from-germany
+      title: US to withdraw about 5,000 troops from Germany
+      publisher: Al Arabiya (AFP)
+      date: '2026-05-02'
+      tier: 3
+    - url: https://wtop.com/europe/2026/05/germany-focuses-on-shared-interests-after-us-announces-troop-drawdown/
+      title: Trump says US will reduce number of troops in Germany 'a lot further' than withdrawal of 5,000
+      publisher: AP via WTOP
+      date: 2026-05
+      tier: 3
+    - *id006
+    - *id011
+  - text: 'An export model squeezed from both sides: exports to the US fell about 9.3% in 2025 under the 15% EU-US tariff deal, China is back as the largest trading partner with a deficit
+      of roughly EUR 90bn, and Chinese rare-earth controls exposed the supply chain.'
+    confidence: B
+    sources:
+    - &id017
+      url: https://www.thelocal.de/20260206/german-exports-to-us-plunge-as-tariffs-take-toll
+      title: German exports to US plunge as tariffs take toll
+      publisher: The Local (AFP)
+      date: '2026-02-06'
+      tier: 3
+    - &id018
+      url: https://www.axios.com/2025/07/27/trump-eu-trade-deal-tariffs
+      title: U.S. reaches trade agreement with Europe with 15% tariff
+      publisher: Axios
+      date: '2025-07-27'
+      tier: 3
+    - *id012
+  - text: 'Energy: Russian gas is gone, the nuclear exit is ''irreversible'' in Merz''s words (January 2026: ''a strategic mistake''), industry pays far more for power than US rivals,
+      and the 2026 Hormuz crisis pushed LNG prices up and left storage at 42.9% in early July; Germany gets most of its LNG from the USA.'
+    confidence: B
+    sources:
+    - url: https://oenergetice.cz/en/germany/german-chancellor-nuclear-phase-out-was-a-major-strategic-mistake
+      title: 'German chancellor: nuclear phase-out was a major strategic mistake'
+      publisher: oenergetice.cz
+      date: 2026-01
+      tier: 3
+    - url: https://lucian.uchicago.edu/blogs/atomicage/2026/03/12/germany-wont-return-to-nuclear-power-chancellor-says-via-dw/
+      title: Germany won't return to nuclear power, chancellor says (via DW)
+      publisher: University of Chicago Lucian blog (relaying Deutsche Welle)
+      date: '2026-03-12'
+      tier: 4
+    - &id016
+      url: https://www.bveg.de/der-verband/energie-update/hormus-krise-erschuettert-globalen-lng-markt-mit-welchen-konsequenzen-fuer-die-deutsche-gasversorgung/
+      title: 'Hormuz crisis shakes the global LNG market: consequences for German gas supply'
+      title_original: 'Hormus-Krise erschuettert globalen LNG-Markt: mit welchen Konsequenzen fuer die deutsche Gasversorgung'
+      lang: de
+      publisher: BVEG (German oil and gas association)
+      date: '2026'
+      tier: 3
+    - url: https://www.energyaspects.com/resources/insights/europe-gas-storage-ttf-outlook-summer-2026
+      title: Europe gas storage shortfall and TTF price outlook, summer 2026
+      publisher: Energy Aspects
+      date: 2026-07
+      tier: 2
+  - text: 'History and law: Poland''s reparations claim (Berlin: closed), a Nord Stream trial of a Ukrainian suspect in Hamburg from October 2026 while Poland refused extradition of
+      a second suspect, a large public majority that wants tighter arms-export control toward Israel, and courts that have begun striking down border controls.'
+    confidence: B
+    sources:
+    - url: https://notesfrompoland.com/2025/12/01/tusk-hails-relations-with-germany-after-merz-talks-but-urges-berlin-to-hurry-up-with-ww2-compensation/
+      title: Tusk hails relations with Germany after Merz talks but urges Berlin to hurry up with WW2 compensation
+      publisher: Notes from Poland
+      date: '2025-12-01'
+      tier: 3
+    - url: https://www.aljazeera.com/amp/news/2026/7/2/german-prosecutors-charge-ukrainian-suspect-over-nord-stream-explosions
+      title: German prosecutors charge Ukrainian suspect over Nord Stream explosions
+      publisher: Al Jazeera
+      date: '2026-07-02'
+      tier: 3
+    - url: https://www.bloomberg.com/news/articles/2025-10-17/poland-denies-extradition-of-nord-stream-suspect-to-germany
+      title: Poland denies extradition of Nord Stream suspect to Germany
+      publisher: Bloomberg
+      date: '2025-10-17'
+      tier: 3
+    - &id021
+      url: https://www.euronews.com/my-europe/2026/05/04/german-interior-minister-alexander-dobrindt-wants-to-retain-controls-at-eu-borders
+      title: German interior minister Alexander Dobrindt wants to retain controls at EU borders
+      publisher: Euronews
+      date: '2026-05-04'
+      tier: 3
+  paradoxes:
+  - text: 'The money outruns the men. The 2027 budget lifts the regular defence budget by a third to EUR 109.7bn, but the Lithuania brigade, the proof of commitment to the eastern flank,
+      is short of about 2,000 posts and the Bundeswehr resorts to compelling soldiers: the more Berlin spends, the more visible the gap between declared and usable strength, and the
+      harder the conscription question gets.'
+    confidence: B
+    sources:
+    - *id001
+    - *id013
+    - *id010
+  - text: 'Making NATO ''more European'' while buying American. Berlin''s autonomy moves (French nuclear steering group, E5, a European pillar) are what Washington can cite to justify
+      leaving, and Germany answers the withdrawal and the cancelled US long-range fires deployment by asking to buy Typhon and Tomahawk and by adding F-35s: more dependence on the same
+      supplier.'
+    confidence: C
+    sources:
+    - *id014
+    - *id015
+    - *id011
+    - *id006
+  - text: Quitting Russian gas bound Germany to other hostages. The exit left the economy exposed to a Hormuz shock and to American LNG at the moment Washington imposes 15% tariffs on
+      German cars and threatens more; the leverage Berlin lost in Moscow it has not recovered in Washington.
+    confidence: C
+    sources:
+    - *id016
+    - *id017
+    - *id018
+    - *id019
+  - text: 'Tough on migration, stronger AfD. Border controls and turn-backs coincided with halved asylum applications, but courts have begun striking the controls down, Poland answered
+      with its own checks, and the AfD still won 43.8% in an eastern state: conceding the opponent''s agenda did not take away his vote.'
+    confidence: B
+    sources:
+    - *id020
+    - *id021
+    - url: https://www.thelocal.de/20250701/poland-to-impose-checks-on-german-border-to-stop-irregular-migrants
+      title: Poland to impose checks on German border to stop irregular migrants
+      publisher: The Local
+      date: '2025-07-01'
+      tier: 3
+    - *id009
+  - text: Unconditional on Israel, conditional in practice. Staatsraeson was supposed to be the fixed point of German foreign policy, yet Merz suspended arms exports in August 2025,
+      reversed in November, and in 2026 treats annexation steps as 'a big mistake'; and the ICC warrant makes the promise of a state visit for Netanyahu a legal liability for the government
+      that most insists on the rules-based order.
+    confidence: B
+    sources:
+    - *id022
+    - *id023
+    - *id024
+    - *id025
+  - text: Leading Europe's defence requires France, and the flagship project with France failed. FCAS, the EUR 100bn fighter, collapsed in 2026 over work share and export freedom, so
+      Germany turns to national and US solutions at the moment it asks its partners for a common European pillar.
+    confidence: B
+    sources:
+    - url: https://www.internazionale.it/ultime-notizie-reuters/2026/03/19/germany-sets-mid-april-deadline-for-troubled-fighter-project-with-france
+      title: Germany sets mid-April deadline for troubled fighter project with France
+      publisher: Reuters via Internazionale
+      date: '2026-03-19'
+      tier: 3
+    - *id003
+  reading: 'Germany is a trading state that has to become a military power without having the people, the habits or the political consensus for it. Its grand strategy since 2022 is to
+    buy security from three directions at once: from itself (the debt-brake carve-out and a Bundeswehr meant to be the strongest conventional force in Europe), from Washington (nuclear
+    sharing, Patriot, F-35, and the hope that the troop drawdown stops at 5,000) and from a Europe it tries to organise around Paris and Warsaw. Each channel undermines another: autonomy
+    hastens American retreat, American purchases weaken the Franco-German industrial project, spending outruns recruitment, and the domestic price, an AfD that wins eastern states while
+    the centre governs with a thin majority, limits how much of this the electorate will fund. Its handling of Russia is the clearest part: Moscow is the declared ''greatest threat'',
+    hybrid attacks are treated as such, aid to Ukraine is the largest in Europe but stops short of Taurus and of troops. Toward China, Israel and Turkey the same Germany behaves less
+    like a leader than like an exporter with a guilty conscience: de-risking is proclaimed and the trade deficit grows, Staatsraeson is proclaimed and then conditioned, a difficult NATO
+    partner becomes the bet in the eastern Mediterranean. The pattern a Luttwak reader would flag is that Berlin''s choices are rational one by one and self-defeating together; the test
+    of 2027 is whether the Lithuania brigade, the F-35s and the budget become forces in being before the American drawdown and the AfD set the terms.
+
+    '
