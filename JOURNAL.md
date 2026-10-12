@@ -3,6 +3,25 @@
 Decision log, newest first. The path matters more than the destination: record why,
 not only what. Dead ends are entries too.
 
+## 2026-10-12 · Davide catches a wrong map
+
+Serbia's posture map showed the whole of NATO and the EU in green. Two causes, both
+mine. (1) Serbia's hand-written Partnership for Peace row toward NATO was typed
+`membership`, and the ally derivation took any membership row: fixed by deriving only
+from dataset rows and retyping the PfP row as `treaty`. (2) Worse: several Wikidata
+ids for organisations in `tools/datasets/wikidata.py` had been written from memory and
+were wrong (CSTO, SCO, BRICS, GCC, OAS, G7, G20, Sahel alliance, Non-Aligned Movement
+pointed at unrelated items; "OIC" was the OSCE). Rule from now on: every Wikidata id is
+resolved by name through the search API with its label checked and kept in
+`data/datasets/wikidata/org-ids.json`, never typed from memory. Denmark and the
+Netherlands carry EU/NATO membership on their "Kingdom of" items: added by hand.
+Organisations extended from 22 to 34.
+
+Davide's next instruction: two menus on the home map, visible to everyone -
+organisations (members of the chosen one) and the common issues (Taiwan, Ukraine,
+Palestine, Kosovo: who stands where). Then the Balkans built like Serbia, well, without
+burning tokens, to estimate the rest.
+
 ## 2026-10-12 · Populating the map with the datasets
 
 Davide: "start populating the map with all this, then we'll see what's missing" - and

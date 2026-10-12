@@ -57,6 +57,9 @@ Pilot demo built on 2026-10-12: one full card (Serbia) with 18 stances and 43 re
 
 ## Working rules
 
+- **Never type a Wikidata id, ISO code or count from memory.** Resolve ids by name
+  through the search API and check the label (`data/datasets/wikidata/org-ids.json`);
+  Davide caught a map coloured by wrong ids on day one.
 - **Method is in METHOD.md** (tiers, region-by-region order, pipeline, protagonist
   list). Read it before researching any actor. Datasets before agents; one agent per
   actor writing YAML directly; economical model for the draft, then the best model

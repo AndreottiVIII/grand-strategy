@@ -55,6 +55,21 @@
   const CLUB_CLASSES = [[6, "c6"], [4, "c4"], [2, "c2"], [1, "c1"]];
   const clubClass = n => { const c = CLUB_CLASSES.find(([t]) => n >= t); return c ? c[1] : null; };
   const CLUB_LABEL = { c6: "6 or more organisations in common", c4: "4-5", c2: "2-3", c1: "1" };
+  // home lenses: an organisation (its members) or an issue (who stands where), chosen from the sidebar
+  let homeLens = null;                               // { kind: "org", id } | { kind: "issue", id }
+  const membersOf = {};                              // org -> { actor: since }
+  data.relations.forEach(r => { if (r.type === "membership") (membersOf[r.to] = membersOf[r.to] || {})[r.from] = r.since; });
+  const ISSUES = {
+    TWN: { label: "Taiwan - who recognises the Republic of China", kind: "recognition", target: "TWN" },
+    PSE: { label: "Palestine - who recognises the State of Palestine", kind: "recognition", target: "PSE" },
+    XKX: { label: "Kosovo - who recognises it", kind: "recognition", target: "XKX" },
+    UKR: { label: "Ukraine - the last General Assembly vote on the war", kind: "vote", symbol: "A/RES/ES-11/10" },
+    SREB: { label: "Srebrenica - the 2024 genocide remembrance vote", kind: "vote", symbol: "A/RES/78/282" },
+    GAZA: { label: "Gaza - the 2024 vote to end Israel's presence in the territories", kind: "vote", symbol: "A/RES/ES-10/24" },
+  };
+  const voteOn = (symbol, id) => { const l = (unga.landmarks[id] || []).find(x => x.symbol === symbol); return l ? l.vote : null; };
+  const VOTE_CLS = { Y: "yes", N: "no", A: "abst" };
+  const VOTE_LBL = { yes: "Voted in favour", no: "Voted against", abst: "Abstained" };
   const REC_LABEL = { yes: "Recognises", withdrew: "Recognised, then withdrew", no: "Does not recognise" };
   const voteClass = x => x == null ? null : VOTE_CLASSES.find(([t]) => x >= t)[1];
   const VOTE_LABEL = { v90: "Votes together 90% or more", v80: "80-89%", v70: "70-79%", v60: "60-69%", vlow: "Under 60%" };
@@ -73,14 +88,26 @@
     .forEach(a => grpData.appendChild(new Option(a.name, a.id)));
   povSel.appendChild(grpData);
   povSel.onchange = () => { if (povSel.value) setPov(povSel.value); else goHome(); };
-  function goHome() { pov = null; mapMode = "world"; povSel.value = ""; window.scrollTo(0, 0); renderLegend(); setView("map"); }
+  function goHome(keepLens) { if (!keepLens) { homeLens = null; orgSel.value = ""; issueSel.value = ""; } pov = null; mapMode = "world"; povSel.value = ""; window.scrollTo(0, 0); renderLegend(); setView("map"); }
   function setPov(id) {
-    pov = id; povSel.value = id;
+    pov = id; povSel.value = id; homeLens = null; orgSel.value = ""; issueSel.value = "";
+    document.getElementById("home-menus").style.display = "none";
     lens = hasStances(id) ? "posture" : hasRecog(id) ? "recognition" : hasVotes(id) ? "votes" : "clubs";
     mapMode = hasStances(id) ? "near" : "world";
     renderLegend(); setView("map");
   }
 
+  const orgSel = document.getElementById("orgsel"), issueSel = document.getElementById("issuesel");
+  // official member counts, so the menu says when a list is short (Wikidata coverage is uneven)
+  const EXPECTED = { "org-un": 193, "org-nato": 32, "org-eu": 27, "org-csto": 6, "org-sco": 10, "org-brics": 10, "org-opec": 12, "org-arab-league": 22, "org-au": 55, "org-asean": 11, "org-gcc": 6, "org-oic": 57, "org-osce": 57, "org-coe": 46, "org-cis": 10, "org-eaeu": 5, "org-oas": 35, "org-commonwealth": 56, "org-g7": 7, "org-g20": 19, "org-oecd": 38, "org-ecowas": 12, "org-aes": 3, "org-nam": 120, "org-cefta": 7, "org-mercosur": 5, "org-celac": 33, "org-saarc": 8, "org-pif": 18, "org-sadc": 16, "org-eac": 8, "org-ots": 5, "org-wto": 166, "org-icc": 125 };
+  const orgs = data.actors.filter(a => a.type === "org" && membersOf[a.id] && a.id !== "org-un")
+    .map(a => ({ a, n: Object.keys(membersOf[a.id]).length, exp: EXPECTED[a.id] || 0 }))
+    .map(o => ({ ...o, ok: !o.exp || o.n >= 0.7 * o.exp }))
+    .sort((x, y) => (y.ok - x.ok) || (y.n - x.n));
+  orgs.forEach(o => { const opt = new Option(`${o.a.name} (${o.n}${o.exp && o.n < o.exp ? ` of ${o.exp}` : ""})`, o.a.id); if (!o.ok) { opt.disabled = true; opt.text += " - list incomplete"; } orgSel.add(opt); });
+  Object.entries(ISSUES).forEach(([k, v]) => issueSel.add(new Option(v.label, k)));
+  orgSel.onchange = () => { issueSel.value = ""; homeLens = orgSel.value ? { kind: "org", id: orgSel.value } : null; goHome(true); };
+  issueSel.onchange = () => { orgSel.value = ""; homeLens = issueSel.value ? { kind: "issue", id: issueSel.value } : null; goHome(true); };
   document.querySelectorAll(".tab").forEach(b => b.onclick = () => setView(b.dataset.view));
   document.getElementById("home").onclick = ev => { ev.preventDefault(); goHome(); };
   function setView(v, render = true) {
@@ -107,7 +134,7 @@
   }
   const VFRAC = { v90: [.85, "a"], v80: [.5, "a"], v70: [.26, "a"], v60: [.12, "a"], vlow: [.3, "b"],
                   c6: [.85, "a"], c4: [.5, "a"], c2: [.26, "a"], c1: [.12, "a"],
-                  yes: [.85, "c"], withdrew: [.8, "b"], no: [.3, "b"] };
+                  yes: [.85, "c"], withdrew: [.8, "b"], no: [.3, "b"], abst: [.26, "a"], member: [.85, "c"] };
   function voteSwatch(c) {
     const [f, ink] = VFRAC[c];
     const r = Math.sqrt(16 * f / Math.PI);
@@ -115,6 +142,18 @@
   }
   function renderLegend() {
     const el = document.getElementById("legend");
+    if (!pov && homeLens && homeLens.kind === "org") {
+      const o = actors[homeLens.id], n = Object.keys(membersOf[homeLens.id]).length;
+      el.innerHTML = `<h3>${esc(o.name)}</h3><div class="row"><span class="sw" style="background:${voteSwatch("member")} var(--land)"></span>Member (${n})</div><div class="row"><span class="sw"></span>Not a member</div><div class="row" style="color:var(--ink-3)">Memberships from the official list and Wikidata; some lists are hand-checked.</div>`;
+      return;
+    }
+    if (!pov && homeLens && homeLens.kind === "issue") {
+      const iss = ISSUES[homeLens.id];
+      el.innerHTML = `<h3>${esc(iss.label)}</h3>` + (iss.kind === "recognition"
+        ? ["yes", "withdrew", "no"].map(c => `<div class="row"><span class="sw" style="background:${voteSwatch(c)} var(--land)"></span>${REC_LABEL[c]}</div>`).join("") + `<div class="row"><span class="sw"></span>No data</div>`
+        : ["yes", "abst", "no"].map(c => `<div class="row"><span class="sw" style="background:${voteSwatch(c)} var(--land)"></span>${VOTE_LBL[c]}</div>`).join("") + `<div class="row"><span class="sw"></span>Did not vote</div><div class="row" style="color:var(--ink-3)">${esc((unga.resolutions[iss.symbol] || {}).label || "")}, ${esc((unga.resolutions[iss.symbol] || {}).date || "")}, ${esc((unga.resolutions[iss.symbol] || {}).tally || "")}</div>`);
+      return;
+    }
     if (!pov) {
       el.innerHTML = `<h3>The world of today</h3><div class="row">Borders and flags as of ${data.generated}. Click a country that has a card to see the world as it sees it; ${fullActors.length} card${fullActors.length > 1 ? "s" : ""} so far: ${fullActors.map(a => a.name).join(", ")}.</div>`;
       return;
@@ -174,7 +213,7 @@
         .append("circle").attr("cx", 2).attr("cy", 2).attr("r", r).attr("fill", color);
     });
     // home: every country wears its flag of today
-    if (!pov) world.features.forEach(f => {
+    if (!pov && !homeLens) world.features.forEach(f => {
       if (!iso2[f.id]) return;
       defs.append("pattern").attr("id", "flag-" + f.id).attr("width", 1).attr("height", 1).attr("patternContentUnits", "objectBoundingBox")
         .append("image").attr("href", `https://flagcdn.com/w320/${iso2[f.id]}.png`).attr("width", 1).attr("height", 1).attr("preserveAspectRatio", "xMidYMid slice");
@@ -208,7 +247,7 @@
     const countries = g.append("g");
     // base: every country in the land tint
     countries.selectAll("path.c").data(world.features).join("path").attr("class", "c")
-      .attr("d", path).attr("fill", f => !pov && iso2[f.id] ? `url(#flag-${f.id})` : land)
+      .attr("d", path).attr("fill", f => !pov && !homeLens && iso2[f.id] ? `url(#flag-${f.id})` : land)
       .attr("stroke", css("--coast")).attr("stroke-width", .5).attr("stroke-linejoin", "round")
       .style("cursor", f => actors[f.id] ? "pointer" : "default")
       .on("mousemove", (ev, f) => { tipFor(f.id, f.properties.name, ev); lightCard(f.id); })
@@ -217,13 +256,20 @@
     // posture screens over the stanced countries
     const aff = pov && lens === "votes" ? (unga.affinity[pov] || {}) : null;
     const rec = pov && lens === "recognition" ? (recog[pov] || {}) : null;
-    const lensClass = id => lens === "votes" ? voteClass(aff[id]) : lens === "clubs" ? clubClass(sharedClubs(pov, id).length) : lens === "recognition" ? rec[id] : null;
-    const screened = !pov ? [] : lens === "posture" ? world.features.filter(f => f.id === pov || stanceOf(f.id)) : world.features.filter(f => f.id === pov || lensClass(f.id));
+    const homeClass = id => {
+      if (!homeLens) return null;
+      if (homeLens.kind === "org") return membersOf[homeLens.id][id] !== undefined ? "member" : null;
+      const iss = ISSUES[homeLens.id];
+      if (iss.kind === "recognition") return id === iss.target ? "member" : (recog[iss.target] || {})[id] || null;
+      const v = voteOn(iss.symbol, id); return v ? VOTE_CLS[v] : null;
+    };
+    const lensClass = id => !pov ? homeClass(id) : lens === "votes" ? voteClass(aff[id]) : lens === "clubs" ? clubClass(sharedClubs(pov, id).length) : lens === "recognition" ? rec[id] : null;
+    const screened = !pov ? (homeLens ? world.features.filter(f => lensClass(f.id)) : []) : lens === "posture" ? world.features.filter(f => f.id === pov || stanceOf(f.id)) : world.features.filter(f => f.id === pov || lensClass(f.id));
     countries.selectAll("path.p").data(screened).join("path").attr("class", "p")
       .attr("d", path).attr("pointer-events", "none")
       .attr("fill", f => {
         if (f.id === pov) return inkA;
-        if (lens !== "posture") return `url(#s-${lensClass(f.id)})`;
+        if (!pov || lens !== "posture") return `url(#s-${lensClass(f.id)})`;
         const gr = stanceOf(f.id).grade;
         return gr === "claimed_territory" ? "url(#hatch)" : gr === "neutral" ? "none" : `url(#s-${gr})`;
       });
@@ -292,7 +338,9 @@
         (hasRecog(pov) ? `<button class="frame-btn lens ${lens === "recognition" ? "is-on" : ""}" data-lens="recognition">Recognition</button>` : "") +
         (hasVotes(pov) ? `<button class="frame-btn lens ${lens === "votes" ? "is-on" : ""}" data-lens="votes">UN votes</button>` : "") +
         (hasClubs(pov) ? `<button class="frame-btn lens ${lens === "clubs" ? "is-on" : ""}" data-lens="clubs">Clubs</button>` : "")
+      : homeLens ? `<button class="frame-btn" data-home="flags">Flags</button><button class="frame-btn is-on" data-mode="world">${esc(homeLens.kind === "org" ? actors[homeLens.id].name : ISSUES[homeLens.id].label.split(" - ")[0])}</button>`
       : `<button class="frame-btn is-on" data-mode="world">The world of today</button>`);
+    ctl.selectAll("button[data-home]").on("click", () => goHome());
     ctl.selectAll("button[data-mode]").on("click", ev => { mapMode = ev.currentTarget.dataset.mode; frame(mapMode); });
     ctl.selectAll("button[data-lens]").on("click", ev => { lens = ev.currentTarget.dataset.lens; renderLegend(); drawMap(); });
     frame(mapMode);
@@ -308,6 +356,10 @@
       ? `<b>${actors[pov].name}</b> in solid navy; every other member screened by how often it voted the same way in the General Assembly (${unga.span || ""}, recorded votes only, pairs with at least 20 common votes). Navy = votes together, vermilion = votes apart. Hover for the figure; click for the dossier.`
       : pov
       ? `<b>${actors[pov].name}</b> in solid navy. Dots are the posture, denser is stronger: green for allies, navy for partners, vermilion for the hostile side; hatched = claimed, not controlled. A band inside a border is the standing bond: navy = kin, vermilion = grievance. Hover for the reading; click a country or seat for its dossier; scroll to zoom. The relations are listed below the map.`
+      : homeLens && homeLens.kind === "org"
+      ? `Members of <b>${esc(actors[homeLens.id].name)}</b> in green. Sources: the organisation's official member list; Wikidata as index. Click a country for its own point of view.`
+      : homeLens
+      ? `<b>${esc(ISSUES[homeLens.id].label)}</b>. ${ISSUES[homeLens.id].kind === "recognition" ? "From Wikipedia's recognition tables, each row with its own citation where one exists." : "UN General Assembly recorded vote, from the UN Digital Library."} Click a country for its own point of view.`
       : `Borders and flags of today. Click <b>${fullActors.map(a => a.name).join("</b>, <b>")}</b> to see the world as it sees it. Flags by flagcdn.`;
   }
 
@@ -341,6 +393,13 @@
   function tipFor(id, fallbackName, ev) {
     const a = actors[id], name = a ? a.name : fallbackName;
     if (id === pov) return showTip(`<b>${esc(name)}</b><span class="k">Point of view</span>`, ev);
+    if (!pov && homeLens) {
+      const c = (lens => lens)(null);
+      if (homeLens.kind === "org") { const since = membersOf[homeLens.id][id]; return showTip(`<b>${esc(name)}</b>${since !== undefined ? `Member of ${esc(actors[homeLens.id].name)}${since ? " since " + esc(since) : ""}` : "Not a member"}`, ev); }
+      const iss = ISSUES[homeLens.id];
+      if (iss.kind === "recognition") { const r = (recog[iss.target] || {})[id]; return showTip(`<b>${esc(name)}</b>${id === iss.target ? "The subject" : r ? REC_LABEL[r] : "No data"}`, ev); }
+      const v = voteOn(iss.symbol, id); return showTip(`<b>${esc(name)}</b>${v ? VOTE_LBL[VOTE_CLS[v]] : "Did not vote / not a member"} on ${esc(iss.symbol)}`, ev);
+    }
     if (!pov) return showTip(`<b>${esc(name)}</b><span class="k">${a && a.card === "full" ? "Has a card - click to see the world as it sees it" : a && (hasVotes(a.id) || hasClubs(a.id) || hasRecog(a.id)) ? "Data only - click to see the world from its seat" : a ? "Actor without data yet" : "Not an actor yet"}</span>`, ev);
     if (lens === "clubs") {
       el.innerHTML = `<h3>Organisations shared with ${actors[pov].name}</h3><div class="row" style="color:var(--ink-3)">Of ${[...clubs[pov]].filter(o => o !== "org-un").length} memberships besides the UN (NATO, EU, BRICS, OPEC...)</div>` +

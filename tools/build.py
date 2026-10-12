@@ -287,7 +287,8 @@ def main():
     }
     members_of = {}
     for rel in rows:
-        if rel["layer"] == "alignment" and rel["type"] == "membership" and rel["to"] in ALLIANCES:
+        # only full memberships from the dataset count; a hand-written row (e.g. Partnership for Peace) never makes an ally
+        if rel["layer"] == "alignment" and rel["type"] == "membership" and rel["to"] in ALLIANCES and rel.get("dataset") == "wikidata":
             members_of.setdefault(rel["to"], set()).add(rel["from"])
     derived = 0
     for org, (name, article, url) in ALLIANCES.items():

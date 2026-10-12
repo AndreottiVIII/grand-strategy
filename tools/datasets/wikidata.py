@@ -21,30 +21,43 @@ ACTORS = ROOT / "data" / "actors"
 UA = "grand-strategy-atlas/0.1 (https://github.com/AndreottiVIII/grand-strategy; davide.caniatti@gmail.com)"
 SPARQL = "https://query.wikidata.org/sparql"
 
-# organisations whose membership is an alignment row: our id, Wikidata item, official member list (tier 1)
+# organisations whose membership is an alignment row: our id, Wikidata item (resolved by name and label-checked,
+# see data/datasets/wikidata/org-ids.json - never typed from memory), official member list (tier 1)
 ORGS = {
-    "org-un":    ("United Nations", "Q1065", "https://www.un.org/en/about-us/member-states"),
-    "org-nato":  ("NATO", "Q7184", "https://www.nato.int/cps/en/natohq/nato_countries.htm"),
-    "org-eu":    ("European Union", "Q458", "https://european-union.europa.eu/principles-countries-history/eu-countries_en"),
-    "org-csto":  ("Collective Security Treaty Organization", "Q190185", "https://en.odkb-csto.org/structure/"),
-    "org-sco":   ("Shanghai Cooperation Organisation", "Q190364", "https://eng.sectsco.org/20170109/192193.html"),
-    "org-brics": ("BRICS", "Q47539", "https://brics.br/en/about-brics"),
-    "org-opec":  ("OPEC", "Q7795", "https://www.opec.org/opec_web/en/about_us/25.htm"),
+    "org-un": ("United Nations", "Q1065", "https://www.un.org/en/about-us/member-states"),
+    "org-nato": ("NATO", "Q7184", "https://www.nato.int/cps/en/natohq/nato_countries.htm"),
+    "org-eu": ("European Union", "Q458", "https://european-union.europa.eu/principles-countries-history/eu-countries_en"),
+    "org-csto": ("Collective Security Treaty Organization", "Q318693", "https://en.odkb-csto.org/structure/"),
+    "org-sco": ("Shanghai Cooperation Organisation", "Q485207", "https://eng.sectsco.org/"),
+    "org-brics": ("BRICS", "Q243630", "https://brics.br/en/about-brics"),
+    "org-opec": ("OPEC", "Q7795", "https://www.opec.org/opec_web/en/about_us/25.htm"),
     "org-arab-league": ("Arab League", "Q7172", "http://www.lasportal.org/"),
-    "org-au":    ("African Union", "Q7159", "https://au.int/en/member_states/countryprofiles2"),
+    "org-au": ("African Union", "Q7159", "https://au.int/en/member_states/countryprofiles2"),
     "org-asean": ("ASEAN", "Q7768", "https://asean.org/member-states/"),
-    "org-gcc":   ("Gulf Cooperation Council", "Q170989", "https://www.gcc-sg.org/en-us/AboutGCC/MemberStates/Pages/default.aspx"),
-    "org-oic":   ("Organisation of Islamic Cooperation", "Q81299", "https://www.oic-oci.org/states/?lan=en"),
-    "org-cis":   ("Commonwealth of Independent States", "Q7779", "https://cis.minsk.by/page/178"),
-    "org-eaeu":  ("Eurasian Economic Union", "Q4173083", "https://eec.eaeunion.org/en/"),
-    "org-oas":   ("Organization of American States", "Q7814", "https://www.oas.org/en/member_states/default.asp"),
+    "org-gcc": ("Gulf Cooperation Council", "Q217172", "https://www.gcc-sg.org/en-us/AboutGCC/MemberStates/Pages/default.aspx"),
+    "org-oic": ("Organisation of Islamic Cooperation", "Q47543", "https://www.oic-oci.org/states/?lan=en"),
+    "org-osce": ("OSCE", "Q81299", "https://www.osce.org/participating-states"),
+    "org-coe": ("Council of Europe", "Q8908", "https://www.coe.int/en/web/portal/46-members-states"),
+    "org-cis": ("Commonwealth of Independent States", "Q7779", "https://cis.minsk.by/page/178"),
+    "org-eaeu": ("Eurasian Economic Union", "Q4173083", "https://eec.eaeunion.org/en/"),
+    "org-oas": ("Organization of American States", "Q123759", "https://www.oas.org/en/member_states/default.asp"),
     "org-commonwealth": ("Commonwealth of Nations", "Q7785", "https://thecommonwealth.org/our-member-countries"),
-    "org-g7":    ("G7", "Q170481", "https://www.g7italy.it/en/"),
-    "org-g20":   ("G20", "Q19097", "https://g20.org/about-g20/"),
-    "org-oecd":  ("OECD", "Q41550", "https://www.oecd.org/en/about/members-partners.html"),
+    "org-g7": ("G7", "Q1764511", "https://www.g7italy.it/en/"),
+    "org-g20": ("G20", "Q19771", "https://g20.org/about-g20/"),
+    "org-oecd": ("OECD", "Q41550", "https://www.oecd.org/en/about/members-partners.html"),
     "org-ecowas": ("ECOWAS", "Q193272", "https://ecowas.int/member-states/"),
-    "org-aes":   ("Alliance of Sahel States", "Q122258006", "https://en.wikipedia.org/wiki/Alliance_of_Sahel_States"),
-    "org-nam":   ("Non-Aligned Movement", "Q152776", "https://en.wikipedia.org/wiki/Non-Aligned_Movement"),
+    "org-aes": ("Alliance of Sahel States", "Q122624387", "https://en.wikipedia.org/wiki/Alliance_of_Sahel_States"),
+    "org-nam": ("Non-Aligned Movement", "Q83201", "https://en.wikipedia.org/wiki/Non-Aligned_Movement"),
+    "org-cefta": ("CEFTA", "Q319014", "https://cefta.int/cefta-parties/"),
+    "org-mercosur": ("Mercosur", "Q4264", "https://www.mercosur.int/en/about-mercosur/mercosur-countries/"),
+    "org-celac": ("CELAC", "Q1045401", "https://celacinternational.org/"),
+    "org-saarc": ("SAARC", "Q145700", "https://www.saarc-sec.org/index.php/about-saarc/about-saarc"),
+    "org-pif": ("Pacific Islands Forum", "Q757276", "https://forumsec.org/who-we-are"),
+    "org-sadc": ("SADC", "Q816706", "https://www.sadc.int/member-states"),
+    "org-eac": ("East African Community", "Q337456", "https://www.eac.int/eac-partner-states"),
+    "org-ots": ("Organization of Turkic States", "Q596850", "https://www.turkicstates.org/en/uye-ulkeler"),
+    "org-wto": ("WTO", "Q7825", "https://www.wto.org/english/thewto_e/whatis_e/tif_e/org6_e.htm"),
+    "org-icc": ("International Criminal Court (Rome Statute)", "Q47488", "https://asp.icc-cpi.int/states-parties"),
 }
 
 # Natural Earth / our ids differ from ISO in a few cases
@@ -126,6 +139,44 @@ def main():
         if not iso3 or val(b, "end"):
             continue
         members.append({"iso3": iso3, "org": org, "since": (val(b, "start") or "")[:10] or None})
+    EXTRA = [("DNK", "org-eu", "1973-01-01"), ("DNK", "org-nato", "1949-04-04"), ("NLD", "org-eu", "1958-01-01"), ("NLD", "org-nato", "1949-04-04")]
+    have = {(m["iso3"], m["org"]) for m in members}
+    members += [{"iso3": i, "org": o, "since": d} for i, o, d in EXTRA if (i, o) not in have]
+    # hand-kept lists for organisations Wikidata covers badly (data/datasets/memberships-manual.yaml)
+    manual_p = ROOT / "data" / "datasets" / "memberships-manual.yaml"
+    manual = yaml.safe_load(manual_p.open(encoding="utf-8")) if manual_p.exists() else {}
+    have = {(m["iso3"], m["org"]) for m in members}
+    for org, spec in manual.items():
+        for iso3 in spec["members"]:
+            if (iso3, org) not in have:
+                members.append({"iso3": iso3, "org": org, "since": None, "manual": True})
+    # Non-Aligned Movement: Wikidata has 6 of ~120; take the English Wikipedia category
+    try:
+        import urllib.request as _u
+        nam = []
+        cont = ""
+        while True:
+            q = urllib.parse.urlencode({"action": "query", "list": "categorymembers", "cmtitle": "Category:Member states of the Non-Aligned Movement", "cmlimit": 500, "format": "json", "cmcontinue": cont})
+            d = json.load(_u.urlopen(_u.Request("https://en.wikipedia.org/w/api.php?" + q, headers={"User-Agent": UA}), timeout=60))
+            nam += [m["title"] for m in d["query"]["categorymembers"] if m["ns"] == 0]
+            cont = d.get("continue", {}).get("cmcontinue")
+            if not cont:
+                break
+        import pycountry
+        fix = {"Russia": None, "Iran": "IRN", "Syria": "SYR", "Vietnam": "VNM", "Laos": "LAO", "North Korea": "PRK", "Bolivia": "BOL", "Venezuela": "VEN", "Tanzania": "TZA", "Brunei": "BRN", "Democratic Republic of the Congo": "COD", "Republic of the Congo": "COG", "The Gambia": "GMB", "The Bahamas": "BHS", "Eswatini": "SWZ", "East Timor": "TLS", "Ivory Coast": "CIV", "Cape Verde": "CPV", "Micronesia": "FSM", "Myanmar": "MMR", "State of Palestine": "PSE", "Palestine": "PSE", "Turkey": "TUR"}
+        n0 = len(members)
+        for t in nam:
+            iso = fix.get(t)
+            if iso is None and t not in fix:
+                try:
+                    iso = pycountry.countries.lookup(t).alpha_3
+                except LookupError:
+                    continue
+            if iso and (iso, "org-nam") not in have:
+                members.append({"iso3": iso, "org": "org-nam", "since": None, "manual": True}); have.add((iso, "org-nam"))
+        print(f"NAM from Wikipedia category: +{len(members) - n0}")
+    except Exception as e:  # noqa: BLE001
+        print("NAM category failed:", e, file=sys.stderr)
     json.dump(members, (OUT / "memberships.json").open("w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(f"{len(members)} current memberships in {len(ORGS)} organisations")
 
@@ -158,8 +209,8 @@ def main():
         rel.append({"from": m["iso3"], "to": m["org"], "layer": "alignment", "type": "membership",
                     "summary": f"Member of {name}" + (f" since {m['since']}" if m["since"] else "") + ".",
                     "since": m["since"], "until": None, "last_verified": today, "confidence": "A", "dataset": "wikidata",
-                    "sources": [{"url": url, "title": f"{name} - member states", "publisher": name, "date": today, "tier": 1, "dataset": "wikidata"},
-                                {"url": f"https://www.wikidata.org/wiki/{q}", "title": f"{name} (Wikidata, member of / P463)", "publisher": "Wikidata", "date": today, "tier": 4, "dataset": "wikidata"}]})
+                    "sources": [{"url": url, "title": f"{name} - member states", "publisher": name, "date": today, "tier": 1, "dataset": "wikidata"}] +
+                               ([] if m.get("manual") else [{"url": f"https://www.wikidata.org/wiki/{q}", "title": f"{name} (Wikidata, member of / P463)", "publisher": "Wikidata", "date": today, "tier": 4, "dataset": "wikidata"}])})
     (ROOT / "data" / "relations" / "_wikidata.yaml").write_text(
         yaml.safe_dump({"generated": today, "relations": rel}, sort_keys=False, allow_unicode=True, width=200), encoding="utf-8")
     print(f"{len(rel)} membership rows -> data/relations/_wikidata.yaml")

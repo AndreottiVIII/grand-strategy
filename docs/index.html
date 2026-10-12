@@ -7,7 +7,7 @@
 <meta name="description" content="A situation map of what the world's actors want and do, read through grand strategy. Every row sourced, dated and graded.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Narrow:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=202610121405">
+<link rel="stylesheet" href="style.css?v=202610121415">
 </head>
 <body>
 <header class="top">
@@ -23,6 +23,12 @@
     <div class="block">
       <label class="lbl" for="pov">Point of view</label>
       <select id="pov"></select>
+    </div>
+    <div class="block home-only" id="home-menus">
+      <label class="lbl" for="orgsel">Organisations</label>
+      <select id="orgsel"><option value="">Members of...</option></select>
+      <label class="lbl" for="issuesel" style="margin-top:10px">Issues</label>
+      <select id="issuesel"><option value="">Who stands where on...</option></select>
     </div>
     <nav class="tabs" role="tablist">
       <button class="tab is-on" data-view="map" role="tab">Situation map</button>
@@ -48,6 +54,6 @@
 <div id="tip" class="tip" hidden></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
-<script src="app.js?v=202610121405"></script>
+<script src="app.js?v=202610121415"></script>
 </body>
 </html>
