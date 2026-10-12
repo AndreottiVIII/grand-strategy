@@ -3,12 +3,182 @@ name: Spain
 type: state
 iso2: es
 wikipedia: https://en.wikipedia.org/wiki/Spain
-coords:
-- -3.7
-- 40.42
+coords: [-3.7, 40.42]
 seat: Madrid
-regions:
-- world
-card: stub
-tier: minor
+regions: ['western-south-europe']
+card: full
+tier: protagonist
+last_verified: 2026-10-12
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Hold the southern flank: keep Morocco cooperative on migration and quiet on Ceuta and Melilla (which Madrid says are not negotiable), and keep Algerian gas flowing, by courting both Maghreb capitals at once. Madrid backs Morocco's autonomy plan for Western Sahara (2022 joint declaration, welcomed UNSCR 2797 in Dec 2025) and in July 2026 reopened the relationship with Algiers."
+      confidence: B
+      sources:
+        - {url: "https://en.ara.cat/politics/spain-sides-with-morocco-and-supports-its-proposal-for-autonomy-for-western-sahara_1_4310485.html", title: "Spain sides with Morocco and supports its proposal for autonomy for Western Sahara", publisher: "Ara", date: 2022-03-18, tier: 3}
+        - {url: "https://diplomatie.ma/en/moroccan-sahara-spain-welcomes-adoption-resolution-2797-which-emphasizes-genuine-autonomy-under-moroccan-sovereignty-most-feasible-solution", title: "Moroccan Sahara - Spain welcomes adoption of Resolution 2797 (statement as reported by Morocco's foreign ministry)", publisher: "Morocco Ministry of Foreign Affairs (official statement)", date: 2025-12-04, tier: 1}
+        - {url: "https://www.moroccoworldnews.com/2026/09/339312/spain-rules-out-dialogue-with-morocco-over-ceuta-and-melilla/", title: "Spain rules out dialogue with Morocco over Ceuta and Melilla", publisher: "Morocco World News", date: 2026-09-22, tier: 3}
+        - {url: "https://www.africanews.com/amp/2026/07/20/spain-algeria-seek-fresh-start-as-sanchez-visits-algiers/", title: "Spain, Algeria seek fresh start as Sanchez visits Algiers", publisher: "Africanews", date: 2026-07-20, tier: 3}
+    - rank: 2
+      text: "Stay at the centre of the EU and make the Iberian peninsula less of an energy island: Bay of Biscay interconnector with France (due 2028), the EU-Mercosur deal Madrid wants applied at once, EU cover on trade (Brussels, not Madrid, answers US tariffs) and on migration."
+      confidence: B
+      sources:
+        - {url: "https://www.eib.org/en/press/all/2025-241-eib-supports-with-eur1-6-bn-the-strategic-bay-of-biscay-electricity-interconnection-between-spain-and-france", title: "EIB supports with EUR 1.6bn the strategic Bay of Biscay electricity interconnection between Spain and France", publisher: "European Investment Bank", date: 2025-06-16, tier: 1}
+        - {url: "https://es.ara.cat/economia/comercio/espana-apuesta-aplicacion-inmediata-acuerdo-mercosur_1_5625951.html", title: "Spain bets on immediate application of the Mercosur agreement", title_original: "España apuesta por la aplicación inmediata del acuerdo con Mercosur", lang: es, publisher: "Ara", date: 2026-01, tier: 3}
+        - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/03/20/iberian-blackout-was-caused-by-multiple-factors-report-says", title: "Iberian blackout was caused by multiple factors, report says", publisher: "Reuters (via Internazionale)", date: 2026-03-20, tier: 3}
+    - rank: 3
+      text: "Keep the Atlantic guarantee cheap: stay in NATO and in the US base arrangement while holding defence spending near 2.1% of GDP instead of the 3.5%+1.5% target agreed at The Hague in June 2025, to protect the welfare state and public finances."
+      confidence: A
+      sources:
+        - {url: "https://www.aa.com.tr/en/europe/spain-stands-firm-against-natos-proposed-5-defense-spending-target/3987930", title: "Spain stands firm against NATO's proposed 5% defense spending target", publisher: "Anadolu Agency", date: 2026-07, tier: 3}
+        - {url: "https://en.ara.cat/economy/trump-threatens-spain-with-tariffs-again-for-failing-to-meet-the-5-defense-spending-target_1_5528988.html", title: "Trump threatens Spain with tariffs again for failing to meet the 5% defense spending target", publisher: "Ara", date: 2025-10, tier: 3}
+        - {url: "https://www.lamoncloa.gob.es/lang/en/presidente/news/Paginas/2026/20260708-nato-turkiye-summit.aspx", title: "NATO Summit (Ankara)", publisher: "Moncloa - Presidency of the Government of Spain", date: 2026-07-08, tier: 1}
+    - rank: 4
+      text: "Be a rule-of-law, anti-war middle power on Gaza and Iran: recognise Palestine (May 2024), embargo arms to Israel by law (Oct 2025), refuse the US use of Rota and Moron for the Iran war (Mar 2026), decline Trump's Board of Peace. The line also holds the left of the governing coalition together."
+      confidence: A
+      sources:
+        - {url: "https://www.aljazeera.com/news/2025/10/8/spains-parliament-formally-approves-israel-arms-embargo", title: "Spain's parliament formally approves Israel arms embargo", publisher: "Al Jazeera", date: 2025-10-08, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/3/2/spain-refuses-to-let-us-use-bases-for-iran-attacks", title: "Spain refuses to let US use bases for Iran attacks", publisher: "Al Jazeera", date: 2026-03-02, tier: 3}
+        - {url: "https://www.elobservador.com.uy/espana/actualidad/pedro-sanchez-afirma-que-espana-no-participara-la-junta-paz-gaza-propuesta-trump-n6032030", title: "Pedro Sanchez says Spain will not take part in the Gaza Board of Peace proposed by Trump", title_original: "Pedro Sanchez afirma que Espana no participara en la Junta de Paz para Gaza propuesta por Trump", lang: es, publisher: "El Observador", date: 2026-01-23, tier: 3}
+    - rank: 5
+      text: "Stay in office and keep the territorial settlement together: a minority coalition (PSOE and Sumar) that needs Catalan, Basque and other regional votes, with a snap general election called for 29 November 2026 after the housing decrees fell, and Puigdemont's return now cleared by the Constitutional Court."
+      confidence: A
+      sources:
+        - {url: "https://www.aljazeera.com/amp/news/2026/10/5/spanish-prime-minister-pedro-sanchez-announces-snap-election", title: "Spanish Prime Minister Pedro Sanchez announces snap election", publisher: "Al Jazeera", date: 2026-10-05, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/10/6/catalan-separatist-leader-puigdemont-to-return-home-after-warrant-lifted", title: "Catalan separatist leader Puigdemont to return home after warrant lifted", publisher: "Al Jazeera", date: 2026-10-06, tier: 3}
+        - {url: "https://en.ara.cat/politics/junts-members-endorse-breaking-with-sanchez-with-87-support_1_5546089.html", title: "Junts members endorse breaking with Sanchez with 87% support", publisher: "Ara", date: 2025-10, tier: 3}
+    - rank: 6
+      text: "Rebuild an Ibero-American and Mediterranean voice: the Ibero-American summit in Madrid (4-5 Nov 2026) with Delcy Rodriguez invited, the thaw with Mexico after the King's March 2026 acknowledgement of abuses, migration pacts with Mauritania, and Gibraltar reopened under the July 2026 EU-UK treaty while the sovereignty claim stays."
+      confidence: B
+      sources:
+        - {url: "https://es.euronews.com/2026/04/29/albares-espana-invitara-delcy-rodriguez-cumbre-iberoamericana-madrid", title: "Albares: Spain will invite Delcy Rodriguez to the Ibero-American summit in Madrid", title_original: "Albares: Espana invitara a Delcy Rodriguez a la Cumbre Iberoamericana de Madrid", lang: es, publisher: "Euronews", date: 2026-04-29, tier: 3}
+        - {url: "https://www.thelocal.es/20260318/mexican-president-hails-spanish-kings-acknowledgement-of-abuses-during-conquest", title: "Mexican president hails Spanish King's acknowledgement of abuses during conquest", publisher: "The Local Spain", date: 2026-03-18, tier: 3}
+        - {url: "https://aljazeera.com/news/2026/7/15/gibraltar-border-controls-lifted-is-it-part-of-schengen-the-uk-or-both", title: "Gibraltar border controls lifted: is it part of Schengen, the UK - or both?", publisher: "Al Jazeera", date: 2026-07-15, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "Recognition and legal diplomacy rather than force: Palestine recognised on 28 May 2024, a total arms embargo on Israel passed by Congress 178-169 on 8 Oct 2025, the ambassador to Israel removed in March 2026, a 'No to the war' line at the UN (23 Sep 2026), and joint declarations with Rabat (2022) and Algiers (treaty of friendship reactivated March 2026)."
+      confidence: A
+      sources:
+        - {url: "https://www.aljazeera.com/news/2025/10/8/spains-parliament-formally-approves-israel-arms-embargo", title: "Spain's parliament formally approves Israel arms embargo", publisher: "Al Jazeera", date: 2025-10-08, tier: 3}
+        - {url: "https://euronews.com/2026/03/11/spain-formally-dismisses-ambassador-to-israel-amid-tensions-with-tel-aviv", title: "Spain formally dismisses ambassador to Israel amid tensions with Tel Aviv", publisher: "Euronews", date: 2026-03-11, tier: 3}
+        - {url: "https://www.dzair-tube.dz/en/president-tebboune-announces-reactivation-of-algeria-spain-treaty-of-friendship-and-good-neighborliness", title: "President Tebboune announces reactivation of Algeria-Spain treaty of friendship and good-neighborliness", publisher: "Dzair Tube (Algerian state-affiliated, official statement)", date: 2026-03-27, tier: 1}
+    - domain: informational
+      text: "Moral framing aimed at a domestic audience as much as a foreign one: Sanchez's 'genocide' language on Gaza, the published Rutte letter used to argue that Spain has an exemption from the 5% goal, and 'You cannot play Russian roulette with the destiny of millions' to Trump (4 Mar 2026). Reuters found the anti-war stance gained the PSOE ground in April 2026 polls."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2025/9/8/spain-imposes-total-arms-embargo-on-israel-to-stop-genocide-in", title: "Spain PM Sanchez imposes arms embargo on Israel to stop Gaza genocide", publisher: "Al Jazeera", date: 2025-09-08, tier: 3}
+        - {url: "https://www.reuters.com/world/spanish-pms-party-gains-anti-war-stance-support-far-right-stalls-polls-2026-04-06/", title: "Spanish PM's party gains on anti-war stance, support for far right stalls - polls", publisher: "Reuters", date: 2026-04-06, tier: 3}
+        - {url: "https://thesun.my/news/world-news/spain-publishes-nato-letter-to-back-spending-exemption-claim-bf14335664/", title: "Spain publishes NATO letter to back spending exemption claim", publisher: "The Sun Malaysia (agency copy)", date: 2025-06, tier: 4}
+    - domain: military
+      text: "A modest force used as a veto and a hedge: the government says defence spending reached EUR 35.4bn in 2026 (about 2% of GDP, tripled since 2018), troops in Latvia, Slovakia, Romania, Bulgaria and Turkey instead of a higher percentage, and sovereign control over the joint-use bases at Rota and Moron, which Madrid refused for the Iran war and from which the US moved 15 aircraft."
+      confidence: B
+      sources:
+        - {url: "https://thecorner.eu/news-spain/government-approved-an-additional-e6-287-billion-in-defense-spending-hours-before-the-nato-summit/126724/", title: "Government approved an additional EUR 6.287 billion in defense spending hours before the NATO summit", publisher: "The Corner", date: 2026-07, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/3/2/spain-refuses-to-let-us-use-bases-for-iran-attacks", title: "Spain refuses to let US use bases for Iran attacks", publisher: "Al Jazeera", date: 2026-03-02, tier: 3}
+        - {url: "https://en.ara.cat/economy/trump-threatens-spain-with-tariffs-again-for-failing-to-meet-the-5-defense-spending-target_1_5528988.html", title: "Trump threatens Spain with tariffs again for failing to meet the 5% defense spending target", publisher: "Ara", date: 2025-10, tier: 3}
+    - domain: economic
+      text: "Energy and migration bargaining: Medgaz gas from Algeria (34.5% of imports in 2025), a regasified-LNG reverse flow to Morocco, circular-migration pacts (Mauritania, Aug 2024), an extraordinary regularisation of undocumented migrants (about 900,000 applications by mid-June 2026), purchases that double as diplomacy (30 Turkish Hurjet trainers, Dec 2025) and a pragmatic opening to China (19 agreements in April 2026)."
+      confidence: B
+      sources:
+        - {url: "https://en.ara.cat/economy/spain-strengthens-itself-with-gas-from-algeria-in-the-midst-of-war-in-the-middle-east_1_5691272.html", title: "Spain strengthens itself with gas from Algeria in the midst of war in the Middle East", publisher: "Ara", date: 2026-03, tier: 3}
+        - {url: "https://www.imidaily.com/europe/spains-migrant-regularization-hits-900000-applications-double-the-forecast/", title: "Spain's migrant regularization hits 900,000 applications, double the forecast", publisher: "IMI Daily", date: 2026-06, tier: 3}
+        - {url: "https://theaviationist.com/2025/12/30/spain-signs-contract-for-30-hurjets/", title: "Spain signs contract for 30 Hurjets", publisher: "The Aviationist", date: 2025-12-30, tier: 3}
+        - {url: "https://www.euronews.com/my-europe/2026/04/14/spain-strengthens-ties-with-china-as-sanchez-backs-beijings-middle-east-role", title: "Spain strengthens ties with China as Sanchez backs Beijing's Middle East role", publisher: "Euronews", date: 2026-04-14, tier: 3}
+
+  constraints:
+    - text: "A fragile parliamentary base: no majority of its own, Junts (the Catalan right-nationalists) broke with the government in October 2025, no new budget is passing, and the snap election of 29 November 2026 points, in current polls, to a PP-led coalition with Vox that would put the far right in central government for the first time since Franco. Every foreign-policy line is read as an election move."
+      confidence: A
+      sources:
+        - {url: "https://www.aljazeera.com/amp/news/2026/10/5/spanish-prime-minister-pedro-sanchez-announces-snap-election", title: "Spanish Prime Minister Pedro Sanchez announces snap election", publisher: "Al Jazeera", date: 2026-10-05, tier: 3}
+        - {url: "https://en.ara.cat/politics/junts-members-endorse-breaking-with-sanchez-with-87-support_1_5546089.html", title: "Junts members endorse breaking with Sanchez with 87% support", publisher: "Ara", date: 2025-10, tier: 3}
+    - text: "Corruption cases in the party and the family: the Koldo/Abalos/Cerdan mask and public-works cases (Abalos resigned his seat in January 2026 and was tried at the Supreme Court from April), Begona Gomez sent to a jury trial on 21 Sep 2026 for embezzlement and influence peddling. They hand the opposition, and Israeli ministers, a line against the government's moral claims."
+      confidence: B
+      sources:
+        - {url: "https://table.media/en/europe/news-en/spain-first-major-corruption-case-of-the-sanchez-era-goes-to-trial", title: "Spain: first major corruption case of the Sanchez era goes to trial", publisher: "Table.Media", date: 2026-04, tier: 3}
+        - {url: "https://en.ara.cat/politics/peinado-sends-begona-gomez-to-trial-and-from-moncloa-they-denounce-judicial-persecution_1_5856298.html", title: "Peinado sends Begona Gomez to trial and Moncloa denounces judicial persecution", publisher: "Ara", date: 2026-09-21, tier: 3}
+        - {url: "https://www.jns.org/saar-slaps-sanctions-on-two-anti-israel-spanish-ministers/", title: "Sa'ar slaps sanctions on two anti-Israel Spanish ministers", publisher: "JNS", date: 2025-09-08, tier: 3}
+    - text: "Energy dependence and the 'energy island': Algeria supplied 34.5% of gas imports in 2025 and 29.2% in early 2026, and Medgaz is the line that Algeria reduced by 25% in May 2022 after the Sahara turn; the peninsula has only about 3% of its electricity connected to neighbours against an EU target of 15% by 2030, and the 28 Apr 2025 blackout (ENTSO-E: a voltage surge chain, 'perfect storm') showed the exposure."
+      confidence: B
+      sources:
+        - {url: "https://en.ara.cat/economy/spain-strengthens-itself-with-gas-from-algeria-in-the-midst-of-war-in-the-middle-east_1_5691272.html", title: "Spain strengthens itself with gas from Algeria in the midst of war in the Middle East", publisher: "Ara", date: 2026-03, tier: 3}
+        - {url: "https://www.moroccoworldnews.com/2022/05/46396/algeria-reduces-gas-supply-to-spain-by-25/", title: "Algeria reduces gas supply to Spain by 25%", publisher: "Morocco World News", date: 2022-05, tier: 3}
+        - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/03/20/iberian-blackout-was-caused-by-multiple-factors-report-says", title: "Iberian blackout was caused by multiple factors, report says", publisher: "Reuters (via Internazionale)", date: 2026-03-20, tier: 3}
+    - text: "Dependence on the United States for hard security and on the EU for trade: Washington can threaten (Trump on 3-4 Mar 2026: cut off all trade; 8 Jul 2026: Spain 'came back all the way'), but only Brussels can act, so Madrid hides behind Commission competence, as Merz said ('no way to treat Spain particularly badly'). The defence industrial base is thin: FCAS collapsed in June 2026 and the new fighter and trainer buys come from partners."
+      confidence: B
+      sources:
+        - {url: "https://www.usnews.com/news/world/articles/2026-03-03/trump-says-us-will-cut-all-trade-with-spain-over-military-bases-defence-spending", title: "Trump says US will cut all trade with Spain over military bases, defence spending", publisher: "US News (Reuters/AP copy)", date: 2026-03-03, tier: 3}
+        - {url: "https://news.bgov.com/international-trade/trump-says-spain-agreed-to-pay-more-after-trade-embargo-threat", title: "Trump says Spain agreed to pay more after trade embargo threat", publisher: "Bloomberg Government", date: 2026-07-08, tier: 3}
+        - {url: "https://es.ara.cat/economia/industria/afecta-espana-ruptura-francia-alemania-avion-combate-europeo_1_5767559.html", title: "How the Franco-German split on the European fighter affects Spain", title_original: "Como afecta a Espana la ruptura entre Francia y Alemania por el avion de combate europeo", lang: es, publisher: "Ara", date: 2026-06, tier: 3}
+    - text: "Migration politics inside the EU: after the July 2026 Ceuta crossing Italy suspended Schengen arrangements with Spain for August and 22 member states wrote to the Commission calling the regularisation a pull factor. Spain cannot be both the humanitarian outlier and the hand that holds the southern border without Morocco's policing."
+      confidence: B
+      sources:
+        - {url: "https://euronews.com/my-europe/2026/07/31/italy-suspends-schengen-with-spain-over-ceuta-migrant-crisis-shuts-air-and-sea-borders", title: "Italy suspends Schengen with Spain over Ceuta migrant crisis, shuts air and sea borders", publisher: "Euronews", date: 2026-07-31, tier: 3}
+        - {url: "https://en.wikipedia.org/wiki/2026_Ceuta_migrant_crisis", title: "2026 Ceuta migrant crisis (index; letter of 22 states, 1 Aug 2026)", publisher: "Wikipedia (index)", date: 2026-10-12, tier: 4}
+    - text: "Weak leverage over Morocco on the one issue it cannot trade: Rabat reopened the Ceuta and Melilla claim in August 2026 through ministers, Spain summoned the ambassador, and Madrid says it 'will never speak' about its territorial integrity, but it relies on Moroccan police to hold the border and on Moroccan goodwill for the Canary route."
+      confidence: B
+      sources:
+        - {url: "https://www.moroccoworldnews.com/2026/09/339312/spain-rules-out-dialogue-with-morocco-over-ceuta-and-melilla/", title: "Spain rules out dialogue with Morocco over Ceuta and Melilla", publisher: "Morocco World News", date: 2026-09-22, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/8/12/morocco-says-working-to-prevent-potential-new-ceuta-crossings-surge", title: "Morocco says working to prevent potential new Ceuta crossings surge", publisher: "Al Jazeera", date: 2026-08-12, tier: 3}
+
+  paradoxes:
+    - text: "The Sahara turn bought quiet in Rabat and cost Algeria. In March 2022 Sanchez backed Morocco's autonomy plan; Algiers recalled its ambassador, suspended the friendship treaty and trimmed Medgaz, and Spain made up the gas elsewhere. In July 2026, after the thaw with Algiers, a Ceuta crossing of tens of thousands followed with Moroccan patrols reported absent, some analysts reading it as Rabat's irritation at the Algerian rapprochement. The two Maghreb capitals cannot both be courted without the one noticing."
+      confidence: C
+      sources:
+        - {url: "https://www.infobae.com/en/2022/03/19/algeria-summons-its-ambassador-to-madrid-after-spains-turn-on-western-sahara", title: "Algeria summons its ambassador to Madrid after Spain's turn on Western Sahara", publisher: "Infobae", date: 2022-03-19, tier: 3}
+        - {url: "https://www.africanews.com/amp/2026/07/20/spain-algeria-seek-fresh-start-as-sanchez-visits-algiers/", title: "Spain, Algeria seek fresh start as Sanchez visits Algiers", publisher: "Africanews", date: 2026-07-20, tier: 3}
+        - {url: "https://www.cnn.com/2026/08/01/europe/spain-morocco-migrants-intl", title: "The Supreme Court ruling at the center of Spain's Ceuta migrant crisis", publisher: "CNN", date: 2026-08-01, tier: 3}
+    - text: "Saving on defence to protect the welfare state makes Spain the one ally Trump names. The 2.1% line lets Madrid spend on pensions, but it turned a spending dispute into a trade and bases dispute (Oct 2025 tariff threat, Mar 2026 'cut off all trade') and into the argument of those who say Spain free-rides on Europe's border and on NATO's umbrella. Madrid then raised the budget by billions in the weeks before Ankara, conceding in practice what it refused in principle."
+      confidence: B
+      sources:
+        - {url: "https://www.thelocal.es/20251015/trump-says-spain-should-be-punished-in-second-threat-over-nato-spend", title: "Trump says Spain should be punished in second threat over NATO spend", publisher: "The Local Spain", date: 2025-10-15, tier: 3}
+        - {url: "https://thecorner.eu/news-spain/government-approved-an-additional-e6-287-billion-in-defense-spending-hours-before-the-nato-summit/126724/", title: "Government approved an additional EUR 6.287 billion in defense spending hours before the NATO summit", publisher: "The Corner", date: 2026-07, tier: 3}
+        - {url: "https://news.bgov.com/international-trade/trump-says-spain-agreed-to-pay-more-after-trade-embargo-threat", title: "Trump says Spain agreed to pay more after trade embargo threat", publisher: "Bloomberg Government", date: 2026-07-08, tier: 3}
+    - text: "Refusing the bases earned votes and cost cover. The Iran-war refusal and the Gaza embargo gained the PSOE ground at home (Reuters poll, April 2026), yet they pushed the US to move tankers out of Rota and Moron, put Madrid against Paris, Berlin and London on Iran, and left it with no channel to the White House just as Washington reviews its European posture. The base that makes Spain useful to the US is the one Spain has now shown it can close."
+      confidence: B
+      sources:
+        - {url: "https://www.reuters.com/world/spanish-pms-party-gains-anti-war-stance-support-far-right-stalls-polls-2026-04-06/", title: "Spanish PM's party gains on anti-war stance, support for far right stalls - polls", publisher: "Reuters", date: 2026-04-06, tier: 3}
+        - {url: "https://english.elpais.com/international/2026-03-02/spain-refuses-to-provide-military-support-for-us-attack-on-iran-and-distances-itself-from-france-germany-and-the-uk.html", title: "Spain refuses to provide military support for US attack on Iran and distances itself from France, Germany and the UK", publisher: "El Pais English", date: 2026-03-02, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/3/2/spain-refuses-to-let-us-use-bases-for-iran-attacks", title: "Spain refuses to let US use bases for Iran attacks", publisher: "Al Jazeera", date: 2026-03-02, tier: 3}
+    - text: "The amnesty that bought the government now helps end it. The 2023 amnesty law won Catalan votes for Sanchez's investiture; Junts left in October 2025 over its non-application, and on 6 Oct 2026 the Constitutional Court ordered the Supreme Court to apply it 'preferentially and urgently', lifting Puigdemont's warrant three weeks before the 29 November vote. The same logic keeps Spain from recognising Kosovo, which Madrid reads through Catalonia, while its government depends on Catalan votes."
+      confidence: B
+      sources:
+        - {url: "https://en.ara.cat/politics/the-constitutional-court-orders-the-supreme-court-to-amnesty-the-1-leaders-in-preferential-and-urgent-manner_1_5870772.html", title: "The Constitutional Court orders the Supreme Court to amnesty the 1-O leaders in a preferential and urgent manner", publisher: "Ara", date: 2026-10-06, tier: 3}
+        - {url: "https://en.ara.cat/politics/junts-members-endorse-breaking-with-sanchez-with-87-support_1_5546089.html", title: "Junts members endorse breaking with Sanchez with 87% support", publisher: "Ara", date: 2025-10, tier: 3}
+        - {url: "https://europeanwesternbalkans.com/?p=42737", title: "Spain's impact on Kosovo's accession process into the EU", publisher: "European Western Balkans", date: 2025, tier: 3}
+    - text: "Regularisation strengthens the labour market and weakens the Schengen standing. About 900,000 applications by mid-June 2026 gave Spain workers and tax base, but on 1 Aug 2026 22 states called it a pull factor, Italy and France reimposed checks after Ceuta, and the Commission found no direct link. Spain gains workers and loses standing with the governments it must work with inside the EU."
+      confidence: B
+      sources:
+        - {url: "https://www.imidaily.com/europe/spains-migrant-regularization-hits-900000-applications-double-the-forecast/", title: "Spain's migrant regularization hits 900,000 applications, double the forecast", publisher: "IMI Daily", date: 2026-06, tier: 3}
+        - {url: "https://euronews.com/my-europe/2026/07/31/italy-suspends-schengen-with-spain-over-ceuta-migrant-crisis-shuts-air-and-sea-borders", title: "Italy suspends Schengen with Spain over Ceuta migrant crisis, shuts air and sea borders", publisher: "Euronews", date: 2026-07-31, tier: 3}
+        - {url: "https://www.lamoncloa.gob.es/lang/en/gobierno/councilministers/Paginas/2026/20260414-council-press-conference.aspx", title: "Council of Ministers press conference, 14 April 2026 (extraordinary regularisation)", publisher: "Moncloa - Presidency of the Government of Spain", date: 2026-04-14, tier: 1}
+    - text: "The China hedge feeds the American grievance it was meant to offset. Sanchez went to Beijing four times in four years (April 2026: 19 agreements, a strategic dialogue) and sells Spain as the pragmatic EU voice, while the Interior Ministry's EUR 12.3m Huawei contract for storing court-ordered wiretaps drew a letter from the US intelligence committee chairs asking whether intelligence sharing with Spain should continue."
+      confidence: C
+      sources:
+        - {url: "https://www.euronews.com/my-europe/2026/04/14/spain-strengthens-ties-with-china-as-sanchez-backs-beijings-middle-east-role", title: "Spain strengthens ties with China as Sanchez backs Beijing's Middle East role", publisher: "Euronews", date: 2026-04-14, tier: 3}
+        - {url: "https://securityaffairs.com/179884/intelligence/spain-awarded-e12-3-million-in-contracts-to-huawei.html", title: "Spain awarded EUR 12.3 million in contracts to Huawei", publisher: "Security Affairs", date: 2025-07, tier: 4}
+        - {url: "https://www.telecoms.com/public-policy/eu-sits-on-the-fence-over-spanish-huawei-awkwardness", title: "EU sits on the fence over Spanish Huawei awkwardness", publisher: "Telecoms.com", date: 2025-07, tier: 3}
+
+  reading: |
+    Spain's grand strategy is the strategy of a middle power that has chosen to be
+    ruled by its law and its domestic coalition rather than by its geography, and
+    geography is now collecting. Madrid's south is a border with a monarchy it
+    cannot afford to quarrel with and a gas pipeline from a republic that cannot
+    be ignored; its east is an energy island; its west an ally; its north a
+    grudging partner (France) and a flat refusal of the Atlantic bill (2.1%
+    against 5%). The Sanchez government answered each pressure with a legal
+    gesture (the Sahara letter of 2022, Palestine in 2024, the arms embargo of
+    2025, the bases refusal of 2026, regularisation), which won votes and
+    moral standing but accumulated debts: Trump now names Spain as the outlier,
+    Israel and Spain have downgraded embassies, Morocco reopened Ceuta and
+    Melilla in August 2026 after a mass crossing, Italy suspended Schengen
+    arrangements for a month. The Luttwak reading is that the gestures were
+    cheap while the system was friendly, and became expensive when friction
+    arrived in a pile - Iran war, Ceuta, NATO summit, Trump, an election. Two
+    signals that are not rows: the government itself justifies the 2.1% line by the welfare
+    state and public finances, so it is a domestic bargain as much as a
+    strategy, and the snap election of 29 Nov 2026 makes every position here
+    provisional: polls point to a PP-led government with Vox, whose foreign
+    line on Gaza, Iran and Latin America would likely differ.
