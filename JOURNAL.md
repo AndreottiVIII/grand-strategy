@@ -3,6 +3,22 @@
 Decision log, newest first. The path matters more than the destination: record why,
 not only what. Dead ends are entries too.
 
+## 2026-10-12 · Second review: "not the Claude yellow everywhere"
+
+Davide on the paper-and-ink map: the cream palette is the default aesthetic, not an
+identity. Three directions were mocked up on the same abstract shape (ops room on
+charcoal; two-ink risograph; admiralty chart in grey). **Chosen: two inks** - navy and
+vermilion on cold white, posture as a dot screen whose density is the strength (navy
+for the friendly side, vermilion for the hostile), claimed territory as vermilion
+hatch, Archivo / Archivo Narrow grotesque, the point of view in solid navy with its
+name knocked out in paper.
+
+**Bond.** The first idea (line screens underneath) was rejected mid-build: "the extra
+lines distract". Replaced by a band inside the border in the bond's ink (navy = kin,
+vermilion = grievance), clipped to the country so it never paints a neighbour. Still a
+provisional rendering; alternatives on the table: bond only as a toggle that swaps the
+whole map to a bond view; or a glyph at the seat.
+
 ## 2026-10-12 · First review: seven objections, two model changes
 
 Davide saw the demo and listed seven things. Two of them were about the model, not

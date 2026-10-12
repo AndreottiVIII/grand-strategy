@@ -81,8 +81,9 @@ Pilot demo built on 2026-10-12: one full card (Serbia) with 18 stances and 43 re
   `world.geojson` from Natural Earth 110m with Kosovo as `XKX`, and the compiled
   `data.json`). D3 7.9 from cdnjs is the only dependency. Two views: the situation
   map from the point-of-view actor (posture = colour, bond = screen, relations =
-  arrows by layer) and the dossier with footnoted sources. The look is a 1970s
-  situation map (paper, ink, screens, condensed capitals): keep it that way.
+  arrows by layer) and the dossier with footnoted sources. The look is a 1970s two-ink
+  print (navy and vermilion on cold white, dot screens for posture, Archivo type):
+  keep it that way, no third colour.
 
 ## Commands
 

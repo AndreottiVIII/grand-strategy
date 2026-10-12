@@ -14,8 +14,8 @@
   };
   const BOND_LABEL = { kin: "Kin - shared identity", affinity: "Affinity", none: "No standing tie", grievance: "Grievance - open wound" };
   const LAYER_LABEL = { objective: "Objectives", alignment: "Alignments", dependency: "Dependencies", action: "Actions" };
-  const LAYER_DASH = { objective: "", alignment: "", dependency: "7 4", action: "2 4" };
-  const LAYER_W = { objective: 2.2, alignment: 1.4, dependency: 1.6, action: 1.3 };
+  const LAYER_DASH = { objective: "", alignment: "", dependency: "6 4", action: "1.5 3.5" };
+  const LAYER_W = { objective: 2.4, alignment: 1.3, dependency: 1.5, action: 1.6 };
   const TREND = { warming: "warming", stable: "stable", cooling: "cooling" };
   const TREND_SIGN = { warming: "↗", stable: "→", cooling: "↘" };
   const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
@@ -59,15 +59,24 @@
   const stanceOf = id => (data.stances[pov] || []).find(s => s.toward === id);
   const gradeOf = id => id === pov ? "own_territory" : (stanceOf(id) ? stanceOf(id).grade : "neutral");
 
+  // CSS renderings of the same screens, for the legend and the dossier table
+  const FRAC = { ally: .72, reluctant_ally: .45, partner: .26, reluctant_partner: .12, rival: .3, adversary: .72 };
+  function gradeSwatch(g) {
+    if (g === "own_territory") return "var(--ink-a)";
+    if (g === "claimed_territory") return "repeating-linear-gradient(45deg, var(--ink-b) 0 1.6px, transparent 1.6px 5px)";
+    if (g === "neutral") return "var(--land)";
+    const ink = ["rival", "adversary"].includes(g) ? "var(--ink-b)" : "var(--ink-a)";
+    const r = Math.sqrt(16 * FRAC[g] / Math.PI);
+    return `radial-gradient(${ink} ${r.toFixed(2)}px, transparent ${(r + .15).toFixed(2)}px) 0 0 / 4px 4px`;
+  }
   function renderLegend() {
     const el = document.getElementById("legend");
-    const sw = (g, extra = "") => `<span class="sw" style="background:${g === "claimed_territory" ? "repeating-linear-gradient(45deg, var(--g-own_territory) 0 1.5px, var(--land) 1.5px 5px)" : gradeColor(g)};${extra}"></span>`;
     el.innerHTML = `<h3>Posture of ${actors[pov].name}</h3>` +
-      data.grades.map(g => `<div class="row">${sw(g)}${GRADE_LABEL[g]}</div>`).join("") +
+      data.grades.map(g => `<div class="row"><span class="sw" style="background:${gradeSwatch(g)} var(--land)"></span>${GRADE_LABEL[g]}</div>`).join("") +
       `<h3>Bond</h3>
-       <div class="row"><span class="sw" style="background:radial-gradient(var(--ink) .9px, transparent 1px) 0 0/4px 4px, var(--g-partner)"></span>Kin - shared identity</div>
-       <div class="row"><span class="sw" style="background:linear-gradient(45deg, transparent 45%, var(--ink) 45% 55%, transparent 55%) 0 0/5px 5px, linear-gradient(-45deg, transparent 45%, var(--ink) 45% 55%, transparent 55%) 0 0/5px 5px, var(--g-partner)"></span>Grievance - open wound</div>
-       <div class="row"><span class="sw" style="background:var(--g-partner)"></span>Affinity or no standing tie</div>`;
+       <div class="row"><span class="sw" style="box-shadow:inset 0 0 0 2.5px var(--ink-a)"></span>Kin - shared identity</div>
+       <div class="row"><span class="sw" style="box-shadow:inset 0 0 0 2.5px var(--ink-b)"></span>Grievance - open wound</div>
+       <div class="row"><span class="sw"></span>Affinity or no standing tie</div>`;
   }
 
   // ---------- tooltip
@@ -87,21 +96,20 @@
     const { width, height } = svg.node().getBoundingClientRect();
     const proj = d3.geoNaturalEarth1().fitExtent([[10, 10], [width - 10, height - 10]], world);
     const path = d3.geoPath(proj);
-    const ink = css("--ink"), sea = css("--sea"), land = css("--land");
+    const ink = css("--ink-a"), sea = css("--paper"), land = css("--land");
 
     const defs = svg.append("defs");
-    // paper grain
-    const filt = defs.append("filter").attr("id", "grain").attr("x", 0).attr("y", 0).attr("width", "100%").attr("height", "100%");
-    filt.append("feTurbulence").attr("type", "fractalNoise").attr("baseFrequency", ".9").attr("numOctaves", 2).attr("seed", 7);
-    filt.append("feColorMatrix").attr("type", "saturate").attr("values", 0);
-    // hatch for claimed territory, dots for kin, crosses for grievance
+    const inkA = css("--ink-a"), inkB = css("--ink-b");
+    // posture = dot screen of one ink, denser is stronger. radius from the covered fraction on a 4-unit grid
+    const SCREEN = { ally: [inkA, .72], reluctant_ally: [inkA, .45], partner: [inkA, .26], reluctant_partner: [inkA, .12], rival: [inkB, .3], adversary: [inkB, .72] };
+    Object.entries(SCREEN).forEach(([g, [color, frac]]) => {
+      const r = Math.sqrt(16 * frac / Math.PI);
+      defs.append("pattern").attr("id", "s-" + g).attr("width", 4).attr("height", 4).attr("patternUnits", "userSpaceOnUse")
+        .append("circle").attr("cx", 2).attr("cy", 2).attr("r", r).attr("fill", color);
+    });
+    // claimed, not controlled: vermilion hatch
     const hatch = defs.append("pattern").attr("id", "hatch").attr("width", 5).attr("height", 5).attr("patternUnits", "userSpaceOnUse").attr("patternTransform", "rotate(45)");
-    hatch.append("rect").attr("width", 5).attr("height", 5).attr("fill", land);
-    hatch.append("rect").attr("width", 1.6).attr("height", 5).attr("fill", gradeColor("own_territory"));
-    const dots = defs.append("pattern").attr("id", "dots").attr("width", 4).attr("height", 4).attr("patternUnits", "userSpaceOnUse");
-    dots.append("circle").attr("cx", 2).attr("cy", 2).attr("r", .8).attr("fill", ink).attr("opacity", .7);
-    const cross = defs.append("pattern").attr("id", "cross").attr("width", 6).attr("height", 6).attr("patternUnits", "userSpaceOnUse");
-    cross.append("path").attr("d", "M1,1 L5,5 M5,1 L1,5").attr("stroke", ink).attr("stroke-width", .7).attr("opacity", .75);
+    hatch.append("rect").attr("width", 1.8).attr("height", 5).attr("fill", inkB);
     data.layers.forEach(l => {
       defs.append("marker").attr("id", "arrow-" + l).attr("viewBox", "0 0 10 10").attr("refX", 9).attr("refY", 5)
         .attr("markerUnits", "userSpaceOnUse").attr("markerWidth", 9).attr("markerHeight", 9).attr("orient", "auto-start-reverse")
@@ -109,11 +117,10 @@
     });
     // keep screens, arrowheads, dashes and type at screen size whatever the zoom
     function rescale(k) {
-      defs.select("#hatch").attr("patternTransform", `rotate(45) scale(${1 / k})`);
-      defs.select("#dots").attr("patternTransform", `scale(${1 / k})`);
-      defs.select("#cross").attr("patternTransform", `scale(${1 / k})`);
+      defs.selectAll("pattern").attr("patternTransform", function () { return (this.id === "hatch" ? "rotate(45) " : "") + `scale(${1 / k})`; });
       defs.selectAll("marker").attr("markerWidth", 9 / k).attr("markerHeight", 9 / k);
       g.selectAll("path.c").attr("stroke-width", .5 / k);
+      g.selectAll("path.bond").attr("stroke-width", 3.6 / k);
       // a label shows only when its country is wide enough on screen to carry it (the point of view always does)
       g.selectAll(".labels text").attr("font-size", 9.5 / k).attr("stroke-width", 2.2 / k)
         .attr("opacity", a => {
@@ -126,36 +133,42 @@
         .attr("stroke-dasharray", function () { const d = this.dataset.dash; return d ? d.split(" ").map(v => v / k).join(" ") : null; });
     }
 
-    svg.append("rect").attr("width", width).attr("height", height).attr("fill", sea);
+    svg.append("rect").attr("width", width).attr("height", height).attr("fill", css("--paper"));
     const g = svg.append("g");
-    g.append("path").datum(d3.geoGraticule10()).attr("d", path).attr("fill", "none").attr("stroke", css("--grat")).attr("stroke-width", .4).attr("stroke-dasharray", "2 3");
+    g.append("path").datum(d3.geoGraticule10()).attr("d", path).attr("fill", "none").attr("stroke", css("--grat")).attr("stroke-width", .4);
 
     const countries = g.append("g");
+    // base: every country in the land tint
     countries.selectAll("path.c").data(world.features).join("path").attr("class", "c")
-      .attr("d", path)
-      .attr("fill", f => {
-        if (f.id === pov) return gradeColor("own_territory");
-        const st = stanceOf(f.id);
-        if (!st) return land;
-        return st.grade === "claimed_territory" ? "url(#hatch)" : gradeColor(st.grade);
-      })
+      .attr("d", path).attr("fill", land)
       .attr("stroke", css("--coast")).attr("stroke-width", .5).attr("stroke-linejoin", "round")
       .style("cursor", f => actors[f.id] ? "pointer" : "default")
       .on("mousemove", (ev, f) => tipFor(f.id, f.properties.name, ev))
       .on("mouseleave", hideTip)
       .on("click", (ev, f) => { if (actors[f.id]) showDossier(f.id); });
-    // bond screens
-    countries.selectAll("path.b").data(world.features.filter(f => stanceOf(f.id) && ["kin", "grievance"].includes(stanceOf(f.id).bond))).join("path").attr("class", "b")
-      .attr("d", path).attr("fill", f => stanceOf(f.id).bond === "kin" ? "url(#dots)" : "url(#cross)").attr("pointer-events", "none");
-    // grain overlay
-    svg.append("rect").attr("width", width).attr("height", height).attr("filter", "url(#grain)").attr("opacity", .08).attr("pointer-events", "none");
+    // posture screens over the stanced countries
+    countries.selectAll("path.p").data(world.features.filter(f => f.id === pov || stanceOf(f.id))).join("path").attr("class", "p")
+      .attr("d", path).attr("pointer-events", "none")
+      .attr("fill", f => {
+        if (f.id === pov) return inkA;
+        const gr = stanceOf(f.id).grade;
+        return gr === "claimed_territory" ? "url(#hatch)" : gr === "neutral" ? "none" : `url(#s-${gr})`;
+      });
+    // bond: a band inside the border in the bond's ink - navy for kin, vermilion for grievance, none otherwise.
+    // each band is clipped to its own country so it never paints the neighbour
+    const bonded = world.features.filter(f => stanceOf(f.id) && ["kin", "grievance"].includes(stanceOf(f.id).bond));
+    bonded.forEach(f => defs.append("clipPath").attr("id", "clip-" + f.id).append("path").attr("d", path(f)));
+    countries.selectAll("path.bond").data(bonded).join("path").attr("class", "bond")
+      .attr("d", path).attr("fill", "none").attr("pointer-events", "none").attr("stroke-linejoin", "round")
+      .attr("clip-path", f => `url(#clip-${f.id})`)
+      .attr("stroke", f => stanceOf(f.id).bond === "kin" ? inkA : inkB).attr("stroke-width", 3.6);
 
     // non-state actors and seats
     const seats = g.append("g").attr("class", "seats");
     const nonState = data.actors.filter(a => !feature[a.id] && (a.id === pov || stanceOf(a.id)));
     seats.selectAll("rect").data(nonState).join("rect")
       .attr("x", a => proj(a.coords)[0] - 4).attr("y", a => proj(a.coords)[1] - 4).attr("width", 8).attr("height", 8)
-      .attr("fill", a => gradeColor(gradeOf(a.id))).attr("stroke", ink).attr("stroke-width", .8)
+      .attr("fill", a => ["rival", "adversary", "claimed_territory"].includes(gradeOf(a.id)) ? inkB : gradeOf(a.id) === "neutral" ? land : inkA).attr("stroke", ink).attr("stroke-width", .8)
       .style("cursor", "pointer")
       .on("mousemove", (ev, a) => tipFor(a.id, a.name, ev)).on("mouseleave", hideTip).on("click", (ev, a) => showDossier(a.id));
 
@@ -171,9 +184,9 @@
         return proj(a.coords)[1] + 3 + stacked[key] * 3;
       })
       .attr("text-anchor", "middle").attr("dominant-baseline", "middle")
-      .attr("font-family", "IBM Plex Sans Condensed, Arial Narrow, sans-serif").attr("font-weight", 500)
-      .attr("letter-spacing", ".1em").attr("fill", ink)
-      .attr("paint-order", "stroke").attr("stroke", sea).attr("stroke-opacity", .85)
+      .attr("font-family", "Archivo Narrow, Arial Narrow, sans-serif").attr("font-weight", 700)
+      .attr("letter-spacing", ".1em").attr("fill", a => a.id === pov ? css("--paper") : ink)
+      .attr("paint-order", "stroke").attr("stroke", a => a.id === pov ? inkA : sea).attr("stroke-opacity", .9)
       .text(a => (a.short || a.name).toUpperCase());
 
     const arrows = g.append("g").attr("class", "arrows");
@@ -206,7 +219,7 @@
     drawArrows();
 
     document.getElementById("map-note").innerHTML =
-      `<b>${actors[pov].name}</b> in solid ink; hatched = claimed, not controlled; dots = kin, crosses = grievance. Arrows run from ${actors[pov].name}'s seat to the counterpart, one per layer; several rows between the same pair share an arrow. Hover for the rows; click a country or seat for its dossier; scroll to zoom.`;
+      `<b>${actors[pov].name}</b> in solid navy. Dots are the posture, denser is stronger: navy for the friendly side, vermilion for the hostile; hatched = claimed, not controlled. A heavy outline is the bond: navy = kin, vermilion = grievance. Arrows run from ${actors[pov].name}'s seat to the counterpart, one per layer; several rows between the same pair share an arrow. Hover for the rows; click a country or seat for its dossier; scroll to zoom.`;
   }
 
   function drawArrows() {
@@ -286,7 +299,7 @@
         <h3>The world as ${esc(a.name)} sees it</h3>
         <table class="tbl"><thead><tr><th>Toward</th><th>Posture</th><th>Bond</th><th>Why this reading</th></tr></thead><tbody>
         ${(data.stances[id] || []).map(s => `<tr><td><b>${esc(actors[s.toward].name)}</b><br><span class="meta">since ${esc(s.since)}</span></td>
-          <td><span class="sw" style="background:${gradeColor(s.grade)}"></span>${GRADE_LABEL[s.grade]}<br><span class="meta">${TREND_SIGN[s.trend]} ${TREND[s.trend]}${badge(s)}</span></td>
+          <td><span class="sw" style="background:${gradeSwatch(s.grade)} var(--land)"></span>${GRADE_LABEL[s.grade]}<br><span class="meta">${TREND_SIGN[s.trend]} ${TREND[s.trend]}${badge(s)}</span></td>
           <td>${BOND_LABEL[s.bond]}</td>
           <td class="note">${esc(s.note || "")}${fn(s.sources)}</td></tr>`).join("")}
         </tbody></table>` + relationsHtml(id);
