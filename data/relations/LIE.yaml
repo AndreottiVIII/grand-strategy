@@ -1,0 +1,123 @@
+from: LIE
+relations:
+  # ---------- objective ----------
+  - to: CHE
+    layer: objective
+    type: influence_goal
+    summary: Keep the customs union, the franc and Swiss representation abroad as they are. Vaduz needs Bern for its foreign voice and for its trade, and does not seek any change in the arrangement.
+    since: 1924
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "http://www.wto.org/english/tratop_e/tpr_e/tp150_e.htm", title: "Switzerland and Liechtenstein (trade policy review)", publisher: "WTO", date: 2000-12-06, tier: 1}
+      - {url: "https://historisches-lexikon.li/Zollanschlussvertrag", title: "Zollanschlussvertrag (customs union treaty)", publisher: "Historisches Lexikon des Fürstentums Liechtenstein (Marxer)", date: 2011-12-31, tier: 2}
+      - {url: "http://www.eda.admin.ch/eda/en/home/topics/fl.html", title: "Principality of Liechtenstein", publisher: "Swiss Federal Department of Foreign Affairs (EDA)", date: 2026-10-12, tier: 1}
+  - to: USA
+    layer: objective
+    type: influence_goal
+    summary: Keep access to US capital markets for the financial centre. The 2014 FATCA agreement was signed in Vaduz to secure that access; the government said unhindered access was essential for its financial service providers.
+    since: 2014-05-16
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.brecorder.com/news/175953", title: "Liechtenstein signs FATCA agreement with the United States", publisher: "Business Recorder", date: 2014-05-16, tier: 3}
+      - {url: "https://chambers.com/articles/from-sanctuaries-to-stasis", title: "From sanctuaries to stasis", publisher: "Chambers", date: 2026-10-12, tier: 3}
+
+  # ---------- alignment ----------
+  - to: org-eu
+    layer: alignment
+    type: treaty
+    summary: EEA member since 1 May 1995, so the single market and most EU rules apply in Liechtenstein without EU membership; associate member of Schengen since December 2011 and part of the Dublin asylum system.
+    since: 1995-05-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.llv.li/en/national-administration/office-for-foreign-affairs/topics/european-policy", title: "European policy (Office for Foreign Affairs)", publisher: "Government of Liechtenstein", date: 2026-10-12, tier: 1}
+      - {url: "https://www.eeas.europa.eu/node/410172_az", title: "The European Union and the Principality of Liechtenstein", publisher: "European External Action Service", date: 2026-10-12, tier: 1}
+  - to: CHE
+    layer: alignment
+    type: treaty
+    summary: Customs union since 1924 (open borders with Switzerland, Swiss customs administration) and the Swiss franc as currency since 1920; the customs treaty is the basis of Swiss trade policy for Liechtenstein.
+    since: 1924
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "http://www.wto.org/english/tratop_e/tpr_e/tp150_e.htm", title: "Switzerland and Liechtenstein (trade policy review)", publisher: "WTO", date: 2000-12-06, tier: 1}
+      - {url: "https://historisches-lexikon.li/Zollanschlussvertrag", title: "Zollanschlussvertrag (customs union treaty)", publisher: "Historisches Lexikon des Fürstentums Liechtenstein (Marxer)", date: 2011-12-31, tier: 2}
+
+  # ---------- dependency ----------
+  - to: CHE
+    layer: dependency
+    type: trade_share
+    summary: Goods exports of CHF 3,210 million in 2024, excluding Switzerland, and imports of CHF 1,725 million. Swiss trade is not in the national statistics because of the customs union, so this is not a share and the Swiss share cannot be read from it.
+    value: 3210
+    unit: CHF_million_goods_exports_2024_excl_CHE
+    since: 2024
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: 'Figures read from the search excerpt of the Office for Statistics publication (the PDF returned HTTP 403 when fetched). Imports 2024 CHF 1,725m, down 9.7%. Germany and Austria shares were not published in the excerpt; the back-calculated shares were not used.'
+    sources:
+      - {url: "https://www.statistikportal.li/de/publikation/warenhandel-2024/2024/17/v-1/p31677/pdf", title: "Foreign trade 2024 (Office for Statistics, excluding Switzerland)", publisher: "Amt für Statistik Liechtenstein", date: 2025, tier: 1}
+  - to: CHE
+    layer: dependency
+    type: military_presence
+    summary: No army of its own; Switzerland does not commit to defend Liechtenstein militarily, and the Federal Council reaffirmed this in February 2025. The dependency is on Swiss goodwill, not on Swiss troops.
+    value: 0
+    unit: Swiss_troops_stationed_in_LIE
+    since: 2025-02-21
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.vaterland.li/liechtenstein/politik/bundesrat-bestaetigt-schweiz-wuerde-liechtenstein-nicht-verteidigen-art-590902", title: "Federal Council confirms: Switzerland would not defend Liechtenstein", title_original: "Bundesrat bestätigt: Schweiz würde Liechtenstein nicht verteidigen", lang: de, publisher: "Liechtensteiner Vaterland", date: 2025-02-21, tier: 3}
+  - to: RUS
+    layer: dependency
+    type: investment
+    summary: The trust and foundation sector holds Russian-linked wealth. Estimates of the number of entities affected run from several hundred to up to 800 (Financial Times, July 2025, as cited by Chambers); the counts conflict and the figure is not a share of anything.
+    value: 800
+    unit: trusts_and_foundations_affected_up_to
+    since: 2025-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: 'Counts conflict: government and press figures range from about 475 foundations to several hundred and up to 800 entities. The top figure is used because it is the highest cited, not because it is verified.'
+    sources:
+      - {url: "https://chambers.com/articles/from-sanctuaries-to-stasis", title: "From sanctuaries to stasis", publisher: "Chambers", date: 2026-10-12, tier: 3}
+
+  # ---------- action ----------
+  - to: RUS
+    layer: action
+    type: sanction
+    summary: In September 2024 the financial regulator (FMA) told fiduciaries that certain US measures were de facto binding and that Russian client relationships should end; directors resigned en masse and many trusts were left without managers.
+    since: 2024-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://chambers.com/articles/from-sanctuaries-to-stasis", title: "From sanctuaries to stasis", publisher: "Chambers", date: 2026-10-12, tier: 3}
+  - to: UKR
+    layer: action
+    type: agreement
+    summary: 'Announced in April 2025 (at the meeting of the Ukrainian and Liechtenstein prime ministers): CHF 8 million for rapid recovery and CHF 800,000 to increase EBRD capital, as reported by the Ukrainian government.'
+    since: 2025-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: 'Figures read from the search excerpt of the Ukrainian government page (the page itself could not be fetched). Reported in the Ukrainian government statement, so the amounts are the Kyiv side of the record.'
+    sources:
+      - {url: "https://www.kmu.gov.ua/en/news/premier-ministry-ukrainy-ta-likhtenshteinu-obhovoryly-spivpratsiu-sanktsii-ta-pidtrymku-vidnovlennia", title: "Prime Ministers of Ukraine and Liechtenstein discuss cooperation, sanctions, and support for recovery", publisher: "Government of Ukraine", date: 2025-04, tier: 1}
+  - to: org-coe
+    layer: action
+    type: agreement
+    summary: Voluntary contribution of CHF 115,000 to Council of Europe action plans, including the Ukraine plan on resilience, recovery and reconstruction 2023-2026 and the Armenia and Georgia plans; signed by Deputy Prime Minister and Foreign Minister Sabine Monauni.
+    since: 2025-11-13
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.coe.int/en/web/programmes/-/liechtenstein-funds-council-of-europe-action-plans-and-projects-1", title: "Liechtenstein funds Council of Europe action plans and projects", publisher: "Council of Europe", date: 2025-11-13, tier: 1}

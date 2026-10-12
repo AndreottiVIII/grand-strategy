@@ -1,0 +1,449 @@
+from: LVA
+relations:
+  # ---------- objective ----------
+  - to: RUS
+    layer: objective
+    type: influence_goal
+    summary: "Latvia's declared aim is that Russia does not win in Ukraine and that the Russian threat is contained for good; the VDD names Russian services the main threat to the state and the Saeima declared Russia a state sponsor of terrorism (11 Aug 2022). Riga does not seek a change of regime in Moscow."
+    since: 2022-08-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://saeima.lv/en/news/saeima-news/31309-saeima-adopts-statement-declaring-russia-a-state-sponsor-of-terrorism", title: "Saeima adopts statement declaring Russia a state sponsor of terrorism", publisher: "Saeima of Latvia", date: 2022-08-11, tier: 1}
+      - {url: "https://vdd.gov.lv/en/news/press-releases/vdd-publishes-its-annual-report", title: "VDD publishes its Annual Report on the identified threats and implemented countermeasures", publisher: "State Security Service of Latvia (VDD)", date: 2026-02, tier: 1}
+  - to: UKR
+    layer: objective
+    type: influence_goal
+    summary: "Latvia seeks Ukraine's victory and its European path; it asks Europe to give Ukraine at least 0.25% of GDP in military support a year, lobbies for use of the immobilised Russian central bank assets and backs opening EU accession clusters with Ukraine and Moldova."
+    since: 2022-02-24
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.baltictimes.com/latvia_s_practical_support_to_ukraine_since_the_start_of_war_reaches_almost_eur_1_billion_-_report/", title: "Latvia's practical support to Ukraine since the start of war reaches almost EUR 1 billion - report", publisher: "The Baltic Times", date: 2026-01, tier: 3}
+      - {url: "https://www.mfa.gov.lv/en/article/baiba-braze-eu-foreign-affairs-council-we-must-continue-provide-decisive-support-ukraine-and-increase-pressure-russia", title: "Baiba Braze at the EU Foreign Affairs Council: we must continue to provide decisive support to Ukraine and increase pressure on Russia", publisher: "Ministry of Foreign Affairs of Latvia", date: 2025-10, tier: 1}
+  - to: org-nato
+    layer: objective
+    type: influence_goal
+    summary: "Latvia seeks permanent allied forces on its soil and the Article 5 guarantee made credible; Canada confirmed its brigade contribution until 2031 and Riga pledges defence at 5% of GDP (4.91% in the 2026 budget)."
+    since: 2017-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.baltictimes.com/nato_summit_provided_latvia_with_assurances_regarding_importance_of_collective_defense_commitments_-_rinkevics/", title: "NATO summit provided Latvia with assurances regarding importance of collective defense commitments - Rinkevics", publisher: "The Baltic Times", date: 2026-07-10, tier: 3}
+      - {url: "https://www.mod.gov.lv/en/news/saeima-adopts-defence-budget-2026-final-reading", title: "Saeima Adopts the Defence Budget for 2026 in Final Reading", publisher: "Ministry of Defence of Latvia", date: 2025-12-04, tier: 1}
+  - to: PSE
+    layer: objective
+    type: recognition_denied
+    summary: "Latvia does not recognise a Palestinian state for now; it holds that recognition should come only through a negotiated two-state agreement, and Foreign Ministry repeated this position in September 2025 as other Western states recognised."
+    since: 2014
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.baltictimes.com/latvia_remains_in_favor_of_two-state_solution__but_will_not_recognize_palestinian_state_for_now_-_foreign_ministry", title: "Latvia remains in favor of two-state solution, but will not recognize Palestinian state for now - Foreign Ministry", publisher: "The Baltic Times", date: 2025-09, tier: 3}
+      - {url: "https://www.mfa.gov.lv/en/article/braze-baiba-meeting-palestinian-foreign-minister-discusses-security-situation-middle-east-and-russias-war-aggression-against-ukraine", title: "Braze meets Palestinian Foreign Minister, discusses security situation in the Middle East and Russia's war against Ukraine", publisher: "Ministry of Foreign Affairs of Latvia", date: 2025-08-28, tier: 1}
+
+  # ---------- alignment ----------
+  - to: org-nato
+    layer: alignment
+    type: security_guarantee
+    summary: "Article 5 of the North Atlantic Treaty covers Latvia (member since 29 Mar 2004); the July 2026 Ankara summit declaration reaffirmed collective defence as the alliance's highest priority."
+    since: 2004-03-29
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.baltictimes.com/nato_summit_provided_latvia_with_assurances_regarding_importance_of_collective_defense_commitments_-_rinkevics/", title: "NATO summit provided Latvia with assurances regarding importance of collective defense commitments - Rinkevics", publisher: "The Baltic Times", date: 2026-07-10, tier: 3}
+      - {url: "https://www.mod.gov.lv/en/nato/nato-capabilities/nato-efp-battle-group", title: "NATO Multinational Brigade in Latvia", publisher: "Ministry of Defence of Latvia", date: 2026, tier: 1}
+  - to: GBR
+    layer: alignment
+    type: treaty
+    summary: "Latvia belongs to the UK-led Joint Expeditionary Force (a non-binding framework of ten northern European nations); the JEF ran Exercise Joint Protector in Latvia in November 2024 with more than 300 personnel."
+    since: 2017
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://jefnations.org/2024/10/29/joint-expeditionary-force-leads-exercise-joint-protector-2024/", title: "Joint Expeditionary Force leads Exercise JOINT PROTECTOR 2024", publisher: "Joint Expeditionary Force", date: 2024-10-29, tier: 1}
+      - {url: "https://ukdefencejournal.org.uk/british-forces-lead-ten-nation-exercise-in-latvia/", title: "British forces lead ten-nation exercise in Latvia", publisher: "UK Defence Journal", date: 2024-11, tier: 3}
+  - to: CAN
+    layer: alignment
+    type: security_guarantee
+    summary: "Canada is the framework nation of the NATO Multinational Brigade in Latvia and confirmed in July 2026 that its forces (more than 2,000) will stay until 2031, a five-year extension; Latvia is the Canadian Armed Forces' largest standing deployment in Europe."
+    since: 2017-06
+    until: 2031
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.baltictimes.com/nato_summit_provided_latvia_with_assurances_regarding_importance_of_collective_defense_commitments_-_rinkevics/", title: "NATO summit provided Latvia with assurances regarding importance of collective defense commitments - Rinkevics", publisher: "The Baltic Times", date: 2026-07-10, tier: 3}
+      - {url: "https://www.cmfmag.ca/operations/nato-multinational-brigade-latvia-enters-new-chapter", title: "NATO Multinational Brigade Latvia enters new chapter", publisher: "Canadian Military Family Magazine", date: 2024, tier: 3}
+
+  # ---------- dependency ----------
+  - to: RUS
+    layer: dependency
+    type: energy_import
+    summary: "Russian natural gas has been banned in Latvia since 1 Jan 2023; the Baltic-Finnish gas market now runs almost entirely on LNG through Klaipeda, Inkoo and Hamina, the last Russian LNG cargo arrived in July 2024, and Russian gas survives only as transit to Kaliningrad through Lithuania."
+    value: 0
+    unit: share_of_latvian_gas_supply_from_russia_2025
+    since: 2023-01-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "The zero is the regional picture from Argus (Lithuania, Latvia, Estonia, Finland: 'Russian gas effectively zero'), not a Latvia-only customs count; the 1 Jan 2023 ban date comes from the Latvian Energy Law amendments as reported in the press."
+    sources:
+      - {url: "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2775120-finnish-and-baltic-gas-demand-declines-in-2025", title: "Finnish and Baltic gas demand declines in 2025", publisher: "Argus Media", date: 2026-01, tier: 3}
+      - {url: "https://www.conexus.lv/uploads/filedir/Komercdala/Prezentacijas/Market_presentation_Aug-27-2026.pdf", title: "Market presentation, 27 August 2026 (Incukalns storage 11.0 TWh of 24.4 TWh)", publisher: "Conexus Baltic Grid", date: 2026-08-27, tier: 1}
+  - to: RUS
+    layer: dependency
+    type: trade_share
+    summary: "Latvian exports to Russia were EUR 962.5m in 2025 (4.9% of EUR 19.54bn), down 7.3%, led by prepared foodstuffs and beverages; imports from Russia fell 68.2% to EUR 125.6m (0.5% of imports). Imports from Russia and Belarus together fell from EUR 2.13bn in 2022 to EUR 193m in 2025."
+    value: 0.049
+    unit: share_of_exports_to_russia_2025
+    since: 2022-02-24
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://stat.gov.lv/en/statistics-themes/trade-and-services/foreign-trade-goods/press-releases/26797-foreign-trade-latvia", title: "Value of exported goods rose by 3.7% in 2025", publisher: "Central Statistical Bureau of Latvia", date: 2026-02-19, tier: 1}
+      - {url: "https://www.mfa.gov.lv/en/article/cabinet-ministers-approves-regulations-banning-import-industrial-goods-russia-and-belarus", title: "Cabinet of Ministers approves regulations banning import of industrial goods from Russia and Belarus", publisher: "Ministry of Foreign Affairs of Latvia", date: 2026, tier: 1}
+  - to: BLR
+    layer: dependency
+    type: trade_share
+    summary: "Latvian exports to Belarus were EUR 132.5m in 2025 (0.7% of exports, down 7.1%) and imports EUR 65.4m (0.3%, down 56.1%)."
+    value: 0.007
+    unit: share_of_exports_to_belarus_2025
+    since: 2022-02-24
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://stat.gov.lv/en/statistics-themes/trade-and-services/foreign-trade-goods/press-releases/26797-foreign-trade-latvia", title: "Value of exported goods rose by 3.7% in 2025", publisher: "Central Statistical Bureau of Latvia", date: 2026-02-19, tier: 1}
+  - to: LTU
+    layer: dependency
+    type: trade_share
+    summary: "Lithuania is Latvia's first export market (19.7% of exports in Dec 2025, among the five partners Lithuania, Estonia, Germany, UK, Sweden that took 47.4% of 2025 exports) and the source of 47% of its imported mineral fuels, including gas from Klaipeda."
+    value: 0.197
+    unit: share_of_exports_december_2025
+    since: 2025-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    note: "The monthly December 2025 share is used because the full-year share per partner is only charted in the statistics office release; the 47.4% for the five largest partners and the 47% fuel-import share are full-year 2025."
+    sources:
+      - {url: "https://stat.gov.lv/en/statistics-themes/trade-and-services/foreign-trade-goods/press-releases/26797-foreign-trade-latvia", title: "Value of exported goods rose by 3.7% in 2025", publisher: "Central Statistical Bureau of Latvia", date: 2026-02-19, tier: 1}
+      - {url: "https://stat.gov.lv/en/statistics-themes/trade-and-services/foreign-trade-goods/press-releases/26796-foreign-trade-latvia", title: "Value of exported goods rose by 2.7% in December", publisher: "Central Statistical Bureau of Latvia", date: 2026-02-10, tier: 1}
+  - to: EST
+    layer: dependency
+    type: trade_share
+    summary: "Estonia is Latvia's second export market (12.3% of exports in Dec 2025) and takes the next share of electrical machinery and mineral fuels exports."
+    value: 0.123
+    unit: share_of_exports_december_2025
+    since: 2025-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://stat.gov.lv/en/statistics-themes/trade-and-services/foreign-trade-goods/press-releases/26796-foreign-trade-latvia", title: "Value of exported goods rose by 2.7% in December", publisher: "Central Statistical Bureau of Latvia", date: 2026-02-10, tier: 1}
+  - to: CAN
+    layer: dependency
+    type: military_presence
+    summary: "More than 2,000 Canadian troops are stationed in Latvia as the lead element of the NATO Multinational Brigade; Canada paid EUR 18.5m for the four Adazi barracks buildings for 600 soldiers (1,200 if needed)."
+    value: 2000
+    unit: canadian_troops_in_latvia_2026
+    since: 2017-06
+    until: 2031
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Figures vary: 'more than 2,000' (Baltic Times, July 2026), 2,200 planned by 2026 (OSW/CMF), about 1,600 earlier. The round 2,000 is kept."
+    sources:
+      - {url: "https://www.baltictimes.com/nato_summit_provided_latvia_with_assurances_regarding_importance_of_collective_defense_commitments_-_rinkevics/", title: "NATO summit provided Latvia with assurances regarding importance of collective defense commitments - Rinkevics", publisher: "The Baltic Times", date: 2026-07-10, tier: 3}
+      - {url: "https://eng.lsm.lv/article/society/defence/22.05.2025-barracks-for-natos-multinational-brigade-unveiled-in-adazi-latvia.a600038/", title: "Barracks for NATO's Multinational Brigade unveiled in Adazi, Latvia", publisher: "LSM (Latvian public broadcaster)", date: 2025-05-22, tier: 3}
+  - to: DNK
+    layer: dependency
+    type: military_presence
+    summary: "Denmark approved sending up to 850 soldiers to the NATO brigade in Latvia for the second half of 2026."
+    value: 850
+    unit: danish_troops_planned_h2_2026
+    since: 2026
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://defence24.com/defence-policy/denmark-to-deploy-850-troops-to-natos-latvia-brigade", title: "Denmark to deploy 850 troops to NATO's Latvia brigade", publisher: "Defence24", date: 2026, tier: 3}
+  - to: SWE
+    layer: dependency
+    type: military_presence
+    summary: "About 550 Swedish soldiers arrived in Riga in January 2025 to join the Canadian-led brigade near Adazi."
+    value: 550
+    unit: swedish_troops_arrived_jan_2025
+    since: 2025-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2024-10-23/nato-brigades-baltic-states-new-chapters-long-march-toward", title: "NATO brigades in the Baltic states: new chapters in the long march toward", publisher: "OSW", date: 2024-10-23, tier: 2}
+  - to: org-nato
+    layer: dependency
+    type: military_presence
+    summary: "The NATO Multinational Brigade in Latvia has about 3,000 soldiers at high readiness, rising to 3,500 for the annual exercises, and reached full combat readiness in 2026."
+    value: 3000
+    unit: allied_troops_in_multinational_brigade_2026
+    since: 2017-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.mod.gov.lv/en/nato/nato-capabilities/nato-efp-battle-group", title: "NATO Multinational Brigade in Latvia", publisher: "Ministry of Defence of Latvia", date: 2026, tier: 1}
+  - to: USA
+    layer: dependency
+    type: arms_supply
+    summary: "Latvia bought six HIMARS launchers and ATACMS munitions in a package of about USD 180m (EUR 164m) with deliveries from 2027, plus Naval Strike Missiles; Washington has warned Nordic and Baltic buyers of possible delays to approved US weapons orders."
+    value: 180
+    unit: usd_millions_himars_atacms_package
+    since: 2023
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.baltictimes.com/latvia_signs_eur_164_million_contract_on_the_purchase_of_himars_systems", title: "Latvia signs EUR 164 million contract on the purchase of HIMARS systems", publisher: "The Baltic Times", date: 2023, tier: 3}
+      - {url: "https://www.euronews.com/my-europe/2026/04/23/latvian-defence-minister-has-no-doubt-us-would-aid-nato-allies-if-needed", title: "Latvian defence minister has no doubt US would aid NATO allies if needed", publisher: "Euronews", date: 2026-04-23, tier: 3}
+  - to: DEU
+    layer: dependency
+    type: arms_supply
+    summary: "Latvia (with Estonia) ordered IRIS-T SLM medium-range air defence from Diehl Defence for about EUR 600m in November 2023, deliveries starting in 2026; Rheinmetall is developing ammunition production in Latvia."
+    value: 600
+    unit: eur_millions_iris_t_contract
+    since: 2023-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.mod.gov.lv/en/news/latvia-and-german-company-diehl-defence-sign-purchase-order-procurement-iris-t-medium-range", title: "Latvia and German company Diehl Defence sign purchase order for procurement of IRIS-T medium-range air defence", publisher: "Ministry of Defence of Latvia", date: 2023-11, tier: 1}
+      - {url: "https://www.globalsecurity.org/military/library/news/2026/04/mil-260416-latvia-mfa01.htm", title: "Latvia-Germany cooperation in defence and innovation (Foreign Ministry, 16 April 2026)", publisher: "Ministry of Foreign Affairs of Latvia (via GlobalSecurity)", date: 2026-04-16, tier: 1}
+  - to: org-eu
+    layer: dependency
+    type: investment
+    summary: "Rail Baltica, the EU-funded standard-gauge line through the three Baltic states, will cost about EUR 23.8bn (against EUR 6bn estimated in 2020) and miss its 2030 target according to the European Court of Auditors; the Latvian section has a funding gap of about EUR 4.4bn, and the Baltics lack about EUR 10bn for the first phase."
+    value: 23.8
+    unit: eur_billions_rail_baltica_total_cost_estimate_2026
+    since: 2014
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.intellinews.com/eu-auditors-say-23-8bn-rail-baltica-project-will-miss-2030-deadline-final-completion-date-uncertain-421392/", title: "EU auditors say EUR 23.8bn Rail Baltica project will miss 2030 deadline, final completion date uncertain", publisher: "bne IntelliNews", date: 2026-01, tier: 3}
+      - {url: "https://www.intellinews.com/baltic-states-face-10bn-funding-gap-for-rail-baltica-451484/", title: "Baltic states face EUR 10bn funding gap for Rail Baltica", publisher: "bne IntelliNews", date: 2026-06, tier: 3}
+  - to: org-eu
+    layer: dependency
+    type: investment
+    summary: "Latvia's request for EUR 3.49bn in EU loans for defence procurement under the SAFE instrument was approved, on top of the EU escape clause that lets defence spending exceed deficit limits (Commission forecast: deficit 3.3% of GDP in 2026, 4.3% in 2027)."
+    value: 3.49
+    unit: eur_billions_safe_loan_approved
+    since: 2026
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://data.consilium.europa.eu/doc/document/ST-10130-2026-ADD-1/en/pdf", title: "Council document ST 10130/2026 ADD 1 (SAFE implementing decision, Latvia)", publisher: "Council of the European Union", date: 2026, tier: 1}
+      - {url: "https://eng.lsm.lv/article/society/defence/09.12.2025-latvian-defence-ministry-details-its-2026-spending-plans.a625508/", title: "Latvian Defence Ministry details its 2026 spending plans", publisher: "LSM (Latvian public broadcaster)", date: 2025-12-09, tier: 3}
+
+  # ---------- action ----------
+  - to: RUS
+    layer: action
+    type: expulsion
+    summary: "Latvia lowered its diplomatic relations with Russia to charge d'affaires level from 24 Feb 2023 and Moscow expelled the Latvian ambassador; the Russian ambassador post in Riga has been vacant since March 2023. On 27 Mar 2024 Latvia declared a Russian embassy diplomat persona non grata (to leave by 10 April)."
+    since: 2023-02-24
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.mfa.gov.lv/en/article/latvia-lowers-level-diplomatic-relations-russian-federation", title: "Latvia lowers the level of diplomatic relations with the Russian Federation", publisher: "Ministry of Foreign Affairs of Latvia", date: 2023-01, tier: 1}
+      - {url: "https://www.mfa.gov.lv/en/article/declaring-russian-embassy-diplomat-persona-non-grata", title: "Declaring Russian embassy diplomat persona non grata", publisher: "Ministry of Foreign Affairs of Latvia", date: 2024-03, tier: 1}
+      - {url: "https://www.pravda.com.ua/eng/news/2023/01/27/7386840/", title: "Russia banishes Latvian ambassador as diplomatic relations worsen", publisher: "Ukrainska Pravda", date: 2023-01-27, tier: 3}
+  - to: RUS
+    layer: action
+    type: expulsion
+    summary: "Russian citizens resident in Latvia must pass a Latvian language exam to keep residence; the Saeima extended it on 20 Jun 2024 to about 5,000 Russian citizens holding permanent permits (under 75), whose permits lapse after 15 Jul or 17 Nov 2025 if they lack long-term resident status. In 2023, 61% of about 11,300 test-takers failed the first sitting."
+    since: 2022
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    note: "Counts differ: about 25,000 Russian citizens in the 2023 ERR report, 30,000 or 25,000 in later press. The Saeima release and the Interior Ministry's 5,000 are used for the 2024 extension."
+    sources:
+      - {url: "https://www.saeima.lv/en/news/saeima-news/33685-state-language-exam-requirement-applied-to-wider-circle-of-russian-citizens", title: "State language exam requirement applied to wider circle of Russian citizens", publisher: "Saeima of Latvia", date: 2024-06-20, tier: 1}
+      - {url: "https://news.err.ee/1609090079/thousands-of-russian-citizens-in-latvia-set-to-lose-their-residence-permits", title: "Thousands of Russian citizens in Latvia set to lose their residence permits", publisher: "ERR News", date: 2023-09-05, tier: 3}
+  - to: RUS
+    layer: action
+    type: incident
+    summary: "A Russian military drone entered from Belarus and crashed near Rezekne on 7 Sep 2024, the first Russian UAV violation of Latvian airspace since the full-scale invasion; Latvia summoned a Russian embassy representative."
+    since: 2024-09-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://news.err.ee/1609447271/russian-drone-that-entered-from-belarus-crashes-in-latvia", title: "Russian drone that entered from Belarus crashes in Latvia", publisher: "ERR News", date: 2024-09-07, tier: 3}
+      - {url: "https://www.pravda.com.ua/eng/news/2024/09/08/7474014/", title: "Russian UAV crashed in Latvia on Saturday", publisher: "Ukrainska Pravda", date: 2024-09-08, tier: 3}
+  - to: RUS
+    layer: action
+    type: incident
+    summary: "The VDD asked prosecutors in Oct 2025 to charge four people (investigation since June 2024) over Russia-linked sabotage and arson, including an arson attack in autumn 2023 on a company working on a defence project; a security chief said in Feb 2026 that Russia recruits ex-convicts and drug addicts for such tasks."
+    since: 2023-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://euromaidanpress.com/2025/10/28/latvia-says-it-caught-russian-linked-arsonists-scouting-targets-filming-sensitive-facilities-planning-more-fires/", title: "Latvia says it caught Russian-linked arsonists scouting targets, filming sensitive facilities, planning more fires", publisher: "Euromaidan Press", date: 2025-10-28, tier: 3}
+      - {url: "https://euromaidanpress.com/2026/02/10/former-convicts-and-drug-addicts-security-chief-reveals-russias-recruitment-method-for-sabotage-in-latvia/", title: "Former convicts and drug addicts: security chief reveals Russia's recruitment method for sabotage in Latvia", publisher: "Euromaidan Press", date: 2026-02-10, tier: 3}
+      - {url: "https://vdd.gov.lv/en/news/press-releases/vdd-publishes-its-annual-report", title: "VDD publishes its Annual Report on the identified threats and implemented countermeasures", publisher: "State Security Service of Latvia (VDD)", date: 2026-02, tier: 1}
+  - to: RUS
+    layer: action
+    type: incident
+    summary: "Russian GPS jamming and spoofing from Kaliningrad and the Gulf of Finland disrupts aviation across the Baltic; Lithuanian officials say the signal reaches aircraft over Latvia more than 400 km away, and the regulator logged 302 pilot reports in Lithuania in January to early March 2026."
+    since: 2023
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "No Latvia-specific count was found; the figures are Lithuanian and regional (a Baltic ICAO submission estimated about 123,000 aircraft affected in January-April 2025)."
+    sources:
+      - {url: "https://www.lrt.lt/en/news-in-english/19/2862230/gps-jamming-incidents-reported-by-pilots-continue-in-lithuania-regulator-says", title: "GPS jamming incidents reported by pilots continue in Lithuania, regulator says", publisher: "LRT", date: 2026-03-09, tier: 3}
+      - {url: "https://www.defensenews.com/global/europe/2025/07/02/researchers-home-in-on-origins-of-russias-baltic-gps-jamming/", title: "Researchers home in on origins of Russia's Baltic GPS jamming", publisher: "Defense News", date: 2025-07-02, tier: 3}
+  - to: RUS
+    layer: action
+    type: incident
+    summary: "Russia closed seven rail border crossings with Finland, Estonia and Latvia from 1 Jul 2026, including Pytalovo on the Latvian border (a limited backup freight route; Zilupe-Sebezh and road crossings stay open), after doubling rail freight tariffs on cargo for the three states from 1 June. Moscow gave no reason."
+    since: 2026-07-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.themoscowtimes.com/2026/07/01/russia-closes-railway-border-crossings-with-finland-and-baltic-neighbors-a93136", title: "Russia closes railway border crossings with Finland and Baltic neighbors", publisher: "The Moscow Times", date: 2026-07-01, tier: 3}
+      - {url: "https://www.euronews.com/2026/07/01/russia-closes-railway-border-crossings-with-finland-estonia-and-latvia", title: "Russia closes railway border crossings with Finland, Estonia and Latvia", publisher: "Euronews", date: 2026-07-01, tier: 3}
+  - to: RUS
+    layer: action
+    type: sanction
+    summary: "Latvia banned imports of Russian and Belarusian agricultural products in 2024 and of industrial goods (printed matter, clothing, footwear, toys, sports goods; about EUR 12.5m in 2025) from 1 Sep 2026, including such goods transiting third countries; on 4 Aug 2026 the Cabinet backed higher EU tariffs and wider sanctions on both countries."
+    since: 2024
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.mfa.gov.lv/en/article/cabinet-ministers-approves-regulations-banning-import-industrial-goods-russia-and-belarus", title: "Cabinet of Ministers approves regulations banning import of industrial goods from Russia and Belarus", publisher: "Ministry of Foreign Affairs of Latvia", date: 2026, tier: 1}
+      - {url: "https://www.globalsecurity.org/wmd/library/news/russia/2026/08/russia-260804-latvia-mfa01.htm", title: "Cabinet approves national position on expanding sanctions and tariffs against Russia and Belarus (4 Aug 2026)", publisher: "Ministry of Foreign Affairs of Latvia (via GlobalSecurity)", date: 2026-08-04, tier: 1}
+  - to: RUS
+    layer: action
+    type: sanction
+    summary: "Latvia is one of 14 states that signed a January 2026 statement treating false-flag or undocumented shadow-fleet tankers as stateless vessels that can be detained, and asked the EU in February 2026 for a full ban on maritime services for Russian vessels; unlike Sweden or Germany it has made no reported seizure, and bunkering outside port is not prohibited."
+    since: 2026-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://militarnyi.com/en/news/european-states-claim-control-over-russia-s-shadow-fleet-in-the-baltic-sea/", title: "European states claim control over Russia's shadow fleet in the Baltic Sea", publisher: "Militarnyi", date: 2026-01, tier: 4}
+      - {url: "https://eenews.net/articles/clamp-down-on-russian-shadow-fleet-after-tanker-oil-spill-says-latvia", title: "Clamp down on Russian shadow fleet after tanker oil spill, says Latvia", publisher: "E&E News", date: 2026, tier: 3}
+  - to: RUS
+    layer: action
+    type: incident
+    summary: "The Swedish authorities seized the Vezhen in January 2025 over damage to the Sweden-Latvia subsea cable in the Baltic; attribution to Russia is unproven and the Swedish security police chief warns against jumping to it."
+    since: 2025-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.govinfosecurity.com/swedish-authorities-seize-vessel-in-cable-sabotage-probe-a-27388", title: "Swedish authorities seize vessel in cable sabotage probe", publisher: "GovInfoSecurity", date: 2025-01, tier: 3}
+  - to: BLR
+    layer: action
+    type: incident
+    summary: "Latvia has kept the Silene crossing closed since 19 Sep 2023 and stopped nearly 10,000 illegal crossing attempts in the first eight months of 2026 (12,046 in 2025), including two tunnels found in August 2026; the Prosecutor General opened a criminal case in mid-July 2026 against Belarusian border officials, and the government declined on 5 Aug 2026 to close the last crossing, Paternieki."
+    since: 2023-09-19
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.euronews.com/my-europe/2026/08/21/we-are-guarding-germans-belgians-latvia-stops-28-migrants-from-belarus-after-tunnel-discov", title: "'We are guarding Germans, Belgians': Latvia stops 28 migrants from Belarus after tunnel discovery", publisher: "Euronews", date: 2026-08-21, tier: 3}
+      - {url: "https://www.lrt.lt/en/news-in-english/19/3011074/latvia-proposes-closing-the-belarus-border-to-the-general-public-and-freight-transport", title: "Latvia proposes closing the Belarus border to the general public and freight transport", publisher: "LRT", date: 2026-08-04, tier: 3}
+      - {url: "https://aa.com.tr/en/world/latvia-suspends-silene-border-crossing-with-belarus/2995767", title: "Latvia suspends Silene border crossing with Belarus", publisher: "Anadolu Agency", date: 2023-09, tier: 3}
+      - {url: "https://pism.pl/publications/belarus-applies-increased-migration-pressure-on-latvia", title: "Belarus applies increased migration pressure on Latvia", publisher: "PISM", date: 2026-07, tier: 2}
+  - to: UKR
+    layer: action
+    type: agreement
+    summary: "Latvia co-leads with the UK the Drone Capability Coalition for Ukraine (set up at Ramstein on 14 Feb 2024; the International Drone Fund contracted about EUR 54m for 30,000 drones in Jan 2025); Latvia supplied 12,000 drones under it in 2025 and budgets EUR 15m for 2026 plus 0.25% of GDP (EUR 110m) in military aid."
+    since: 2024-02-14
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.mod.gov.lv/en/drone-coalition", title: "Drone Coalition", publisher: "Ministry of Defence of Latvia", date: 2025, tier: 1}
+      - {url: "https://mod.gov.lv/en/news/latvian-uk-led-drone-coalition-deliver-30-000-drones-ukraine-12-000-which-are-latvian-made", title: "Latvian-UK led Drone Coalition to deliver 30,000 drones to Ukraine, 12,000 of which are Latvian-made", publisher: "Ministry of Defence of Latvia", date: 2025-01, tier: 1}
+      - {url: "https://www.pravda.com.ua/eng/news/2025/11/27/8009212", title: "Latvia set to allocate EUR 15m for Drone Capability Coalition in 2026", publisher: "Ukrainska Pravda", date: 2025-11-27, tier: 3}
+  - to: UKR
+    layer: action
+    type: incident
+    summary: "On 7 May 2026 two Ukrainian drones, which Kyiv said were diverted by Russian electronic warfare, entered eastern Latvia and one hit an oil depot in Rezekne; Defence Minister Sprud resigned on 10 May and the Silina government fell on 14 May."
+    since: 2026-05-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.euronews.com/my-europe/2026/05/11/latvian-defence-minister-resigns-following-recent-drone-incursions-that-hit-oil-facilities", title: "Latvian defence minister resigns following recent drone incursions that hit oil facilities", publisher: "Euronews", date: 2026-05-11, tier: 3}
+      - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2026-06-02/latvia-andris-kulbergs-caretaker-government", title: "Latvia: Andris Kulbergs' caretaker government", publisher: "OSW", date: 2026-06-02, tier: 2}
+      - {url: "https://saeima.lv/en/news/saeima-news/35891-saeima-approves-the-cabinet-formed-by-andris-kulbergs", title: "Saeima approves the Cabinet formed by Andris Kulbergs", publisher: "Saeima of Latvia", date: 2026-05-28, tier: 1}
+  - to: EST
+    layer: action
+    type: agreement
+    summary: "Latvia, Estonia and Lithuania signed a letter of intent on a Baltic Regional Military Mobility Area at the Baltic Defence Ministerial Committee in Tallinn on 29-30 Jan 2026 (Latvia took the 2026 chair), and Estonia and Latvia began a joint procurement for hundreds of concrete bunkers for the Baltic Defence Line in Feb 2026."
+    since: 2026-01-29
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://kaitseministeerium.ee/sites/default/files/3b_mc_joint_communique_27jan.pdf", title: "Joint communique of the Baltic Defence Ministerial Committee (Tallinn, 29-30 January 2026)", publisher: "Ministry of Defence of Estonia", date: 2026-01, tier: 1}
+      - {url: "https://www.baltictimes.com/estonia_and_latvia_to_procure_hundreds_of_bunkers_for_baltic_defense_line", title: "Estonia and Latvia to procure hundreds of bunkers for Baltic Defense Line", publisher: "The Baltic Times", date: 2026-02, tier: 3}
+  - to: LTU
+    layer: action
+    type: exercise
+    summary: "The Baltic Defence Line is tested on the Selija training ground near Jekabpils from June 2026 with US and Danish units (bunkers, trenches, anti-tank obstacles); Latvia's segment was approved in March 2024 with EUR 303m over five years."
+    since: 2026-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://polskieradio.pl/395/7785/Artykul/3697324,baltic-states-test-border-fortification-line-with-us-danish-forces-at-latvian-training-ground", title: "Baltic states test border fortification line with US, Danish forces at Latvian training ground", publisher: "Polskie Radio", date: 2026-06, tier: 3}
+      - {url: "https://www.baltictimes.com/construction_of_bunkers_and_other_fortifications_along_baltic_defense_line_to_be_gradual_-_defense_ministry/", title: "Construction of bunkers and other fortifications along Baltic Defense Line to be gradual - Defense Ministry", publisher: "The Baltic Times", date: 2026-01, tier: 3}
+  - to: org-eu
+    layer: action
+    type: agreement
+    summary: "Latvia, Estonia and Lithuania left the Russian-Belarusian BRELL grid on 8 Feb 2025 and joined the Continental European synchronous area on 9 Feb 2025 (EUR 1.6bn, 75% EU-funded), ending the last electrical dependence on Russia; no blackouts followed."
+    since: 2025-02-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.osw.waw.pl/en/publikacje/osw-commentary/2025-04-15/baltic-de-risking-baltic-states-sever-energy-ties-russia", title: "Baltic de-risking: the Baltic states sever energy ties with Russia", publisher: "OSW", date: 2025-04-15, tier: 2}
+      - {url: "https://www.hhs.se/en/about-us/news/site-publications/2025/baltic-states-energy-independence/", title: "Baltic states cut energy ties with Russia, but new risks emerge", publisher: "Stockholm School of Economics (SITE)", date: 2025, tier: 2}
+      - {url: "https://news.err.ee/1609367879/baltics-to-leave-brell-electricity-grid-at-start-of-february-2025", title: "Baltics to leave BRELL electricity grid at start of February 2025", publisher: "ERR News", date: 2024, tier: 3}
+  - to: CHN
+    layer: action
+    type: agreement
+    summary: "Latvia and Estonia announced on 11 Aug 2022 that they were leaving China's 16+1 cooperation format (no binding agreement tied them to it); Riga cited its foreign and trade policy priorities and said it would keep constructive and pragmatic relations with China."
+    since: 2022-08-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.lrt.lt/en/news-in-english/19/1758798/following-lithuania-s-example-latvia-and-estonia-quit-china-s-16plus1-platform", title: "Following Lithuania's example, Latvia and Estonia quit China's 16+1 platform", publisher: "LRT", date: 2022-08-11, tier: 3}
+      - {url: "https://chinaobservers.eu/mild-wording-but-harsh-timing-latvia-and-estonias-exit-from-161/", title: "Mild wording but harsh timing: Latvia and Estonia's exit from 16+1", publisher: "China Observers in Central and Eastern Europe (CHOICE)", date: 2022-08, tier: 2}
+  - to: USA
+    layer: action
+    type: incident
+    summary: "On 13 Feb 2018 FinCEN named ABLV, Latvia's second-largest bank, an institution of primary money laundering concern (shell-company activity, links to North Korea's missile procurement); the bank was wound down, Latvia banned banking for shell companies and non-resident deposits fell about 38% in the first half of 2018 as the model was dismantled."
+    since: 2018-02-13
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "The current non-resident deposit share was not found; the 2018 figures are historical context. Five banks held 87.2% of assets at end-2025."
+    sources:
+      - {url: "https://www.fincen.gov/news/news-releases/fincen-names-ablv-bank-latvia-institution-primary-money-laundering-concern-and", title: "FinCEN names ABLV Bank of Latvia an institution of primary money laundering concern and proposes Section 311 special measure", publisher: "FinCEN (US Treasury)", date: 2018-02-13, tier: 1}
+      - {url: "https://eng.lsm.lv/article/economy/banks/banks-should-stop-business-with-shell-companies-within-half-a-year-says-financial-regulator.a272027/", title: "Banks should stop business with shell companies within half a year, says financial regulator", publisher: "LSM (Latvian public broadcaster)", date: 2018, tier: 3}
