@@ -1,0 +1,132 @@
+from: LUX
+relations:
+  # ---------- objective ----------
+  - to: FRA
+    layer: objective
+    type: influence_goal
+    summary: Luxembourg wants the Cattenom nuclear plant in France closed (with Tihange and Doel in Belgium); the government opposes EDF's plan to run Cattenom past 40 years. Prime Minister Frieden kept the closure line in March 2024 while saying Luxembourg cannot impose its view on other countries.
+    since: 2023
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "Closure line taken from the 2023-28 coalition agreement as reported by the press; the coalition agreement itself was not retrieved. Confidence C: tier-3 reporting."
+    sources:
+      - {url: "https://luxtoday.lu/en/technology-innovation-energy/nuclear-conflict-luxembourg-opposes-extension-of-cattenom-npp-operation", title: "Nuclear conflict: Luxembourg opposes extension of Cattenom NPP operation", publisher: "Luxtoday", date: 2026, tier: 3}
+
+  # ---------- alignment (mirror of BEL.yaml: one treaty, same sources) ----------
+  - to: BEL
+    layer: alignment
+    type: treaty
+    summary: The Belgium-Luxembourg Economic Union (treaty of 25 Jul 1921, renewed in 1982, 1992 and a new convention in 2002) is the oldest tie and the forerunner of the Benelux Union; the three Benelux prime ministers also share a defence steering group.
+    since: 1921-07-25
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://gouvernement.lu/fr/actualites/toutes_actualites/communiques/2021/11-novembre/17-centenaire-uebl.html", title: "Centenary of the Belgium-Luxembourg Economic Union", title_original: "Centenaire de l'Union économique belgo-luxembourgeoise", lang: fr, publisher: "Government of Luxembourg", date: 2021-11-17, tier: 1}
+      - {url: "https://www.rijksoverheid.nl/documenten/2025/09/10/benelux-prime-ministers-summit-joint-declaration-luxembourg-10-september-2025", title: "Benelux Prime Ministers Summit joint declaration, Luxembourg, 10 September 2025", publisher: "Government of the Netherlands", date: 2025-09-10, tier: 1}
+
+  # ---------- dependency ----------
+  - to: FRA
+    layer: dependency
+    type: remittances
+    summary: About 129,000 salaried workers who live in France commute into Luxembourg, the largest group of the cross-border workforce (about 232,000 of about 494,000 salaried jobs, 47%, at end 2025). Typed as remittances because the vocabulary has no labour-flow type - these are wages earned in Luxembourg and spent in France.
+    value: 129000
+    unit: salaried_cross_border_workers_from_france_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "STATEC figures as reported by secondary coverage (Moovijob, citing STATEC); the STATEC tables were not accessed. A second STATEC aggregate (all workers, 522,200 in 2025) uses another denominator and is not mixed in here."
+    sources:
+      - {url: "https://en.moovijob.com/blog/article/a-look-back-at-the-key-figures-from-luxembourgs-labour-market-in-2025", title: "A look back at the key figures from Luxembourg's labour market in 2025 (STATEC figures)", publisher: "Moovijob", date: 2026, tier: 3}
+  - to: BEL
+    layer: dependency
+    type: remittances
+    summary: About 52,000 salaried workers who live in Belgium commute into Luxembourg at end 2025, the second-largest group of the cross-border workforce. Same typing caveat as the France row.
+    value: 52000
+    unit: salaried_cross_border_workers_from_belgium_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "STATEC figures as reported by secondary coverage (Moovijob). See the France row for the denominator caveat."
+    sources:
+      - {url: "https://en.moovijob.com/blog/article/a-look-back-at-the-key-figures-from-luxembourgs-labour-market-in-2025", title: "A look back at the key figures from Luxembourg's labour market in 2025 (STATEC figures)", publisher: "Moovijob", date: 2026, tier: 3}
+  - to: DEU
+    layer: dependency
+    type: remittances
+    summary: About 51,000 salaried workers who live in Germany commute into Luxembourg at end 2025. Same typing caveat as the France row.
+    value: 51000
+    unit: salaried_cross_border_workers_from_germany_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "STATEC figures as reported by secondary coverage (Moovijob). See the France row for the denominator caveat."
+    sources:
+      - {url: "https://en.moovijob.com/blog/article/a-look-back-at-the-key-figures-from-luxembourgs-labour-market-in-2025", title: "A look back at the key figures from Luxembourg's labour market in 2025 (STATEC figures)", publisher: "Moovijob", date: 2026, tier: 3}
+  - to: inst-govsat
+    layer: dependency
+    type: investment
+    summary: The state holds half of LuxGovSat, the joint venture with SES that operates the military-grade satellites; the company pre-commits a block of its capacity to NATO. Each partner put in EUR 50m, and the company also took a EUR 125m bank loan for the first satellite (launched 31 Jan 2018). A follow-on satellite (GovSat-2) is being financed by the state; the figure is reported as EUR 301m (or USD 350m) over 12 years, which sources do not agree on.
+    value: 50
+    unit: eur_million_state_equity
+    since: 2018-01-31
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "Equity figure from search summaries, not from the parliamentary text; to be checked against the government's GovSat-2 documents before use. The GovSat-2 figure is deliberately not written as a number because sources disagree."
+    sources:
+      - {url: "https://govsat.lu/?p=50", title: "Our Mission (LuxGovSat)", publisher: "LuxGovSat", date: 2026, tier: 3}
+      - {url: "https://www.ses.com/press-release/ses-nato-ground-surveillance-contract-awarded-govsat", title: "SES: NATO ground surveillance contract awarded to GovSat", publisher: "SES", date: 2016, tier: 3}
+  - to: RUS
+    layer: dependency
+    type: investment
+    summary: Russian central-bank assets immobilised in Luxembourg, custodied mainly through Clearstream. The estimate of EUR 5.5bn is from an older Commission figure reported by Paperjam; a September 2025 Parliament figure of about EUR 10bn could not be retrieved. EU Regulation 2025/2600 (13 Dec 2025) immobilised the assets indefinitely; Luxembourg says it is not directly affected by the 2024 depository rules.
+    value: 5.5
+    unit: eur_billion_immobilised_russian_assets_lu_estimate
+    since: 2025-12-13
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "Figures conflict across sources (EUR 5.5bn older Commission figure; about EUR 10bn in a Parliament briefing that was not retrieved; the Clearstream headline figure of EUR 68bn was not confirmed). The lower sourced figure is kept. Clearstream's own disclosures were not verified."
+    sources:
+      - {url: "https://en.paperjam.lu/article/russian-assets-worth-5-5bn-blo", title: "Russian assets worth 5.5bn blocked (Luxembourg)", publisher: "Paperjam", date: 2025, tier: 3}
+      - {url: "https://www.mayerbrown.com/ja/insights/publications/2025/12/eu-fast-tracks-new-russia-and-belarus-sanctions-while-indefinitely-immobilizing-russian-sovereign-assets", title: "EU fast-tracks new Russia and Belarus sanctions while indefinitely immobilizing Russian sovereign assets", publisher: "Mayer Brown", date: 2025-12, tier: 3}
+
+  # ---------- action ----------
+  - to: BEL
+    layer: action
+    type: agreement
+    summary: At the Benelux summit in Luxembourg on 10 Sep 2025 the Belgian, Dutch and Luxembourg prime ministers signed a joint declaration reaffirming defence cooperation through the Benelux Steering Group and their role as founding NATO allies. Mirror of the BEL row.
+    since: 2025-09-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.rijksoverheid.nl/documenten/2025/09/10/benelux-prime-ministers-summit-joint-declaration-luxembourg-10-september-2025", title: "Benelux Prime Ministers Summit joint declaration, Luxembourg, 10 September 2025", publisher: "Government of the Netherlands", date: 2025-09-10, tier: 1}
+      - {url: "https://gouvernement.lu/fr/actualites/toutes_actualites.gouvernement2024%2Ben%2Bactualites%2Btoutes_actualites%2Bcommuniques%2B2025%2B09-septembre%2B10-frieden-sommet-benelux.html", title: "Benelux Summit 2025 - Joint Declaration", publisher: "Government of Luxembourg", date: 2025-09-10, tier: 1}
+  - to: UKR
+    layer: action
+    type: agreement
+    summary: Ten-year bilateral security agreement signed by Prime Minister Frieden and President Zelensky on 10 Jul 2024 in Washington (consultation within 24 hours of an armed attack; intelligence and cyber training; defence-industry integration). Military aid - EUR 74.4m (2022), EUR 96m (2023), EUR 80m for 2024, rising to EUR 120m in 2025 according to Ukrainian sources.
+    since: 2024-07-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "Two tier-3 sources agree on the signing; the aid figures are from the agreement text as reported by Ukrainian media and were not checked against Luxembourg's budget documents."
+    sources:
+      - {url: "https://www.pravda.com.ua/eng/news/2024/07/10/7465047", title: "Ukraine signs security agreement with Luxembourg", publisher: "Ukrainska Pravda", date: 2024-07-10, tier: 3}
+      - {url: "https://www.chronicle.lu/category/abroad/50643-luxembourg-ukraine-sign-bilateral-security-cooperation-agreement", title: "Luxembourg and Ukraine sign bilateral security cooperation agreement", publisher: "Luxembourg Chronicle", date: 2024-07, tier: 3}
+  - to: USA
+    layer: action
+    type: visit
+    summary: Prime Minister Frieden made a working trip to Boston and then Ottawa in early February 2026; the French-language press framed it as a possible 'rupture' with the United States and a push to deepen ties with Canada.
+    since: 2026-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "Exact dates and the government's own statement on the trip were not retrieved. Tier-3 press."
+    sources:
+      - {url: "https://www.lesfrontaliers.lu/?p=1216878", title: "Luc Frieden wants closer ties with Canada and speaks of a 'rupture' with the United States", title_original: "Luc Frieden veut se rapprocher du Canada, et évoque une « rupture » avec les États-Unis", lang: fr, publisher: "Les Frontaliers", date: 2026-02, tier: 3}

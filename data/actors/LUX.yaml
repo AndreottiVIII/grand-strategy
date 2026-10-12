@@ -1,14 +1,87 @@
 id: LUX
 name: Luxembourg
+short: Luxembourg
 type: state
 iso2: lu
 wikipedia: https://en.wikipedia.org/wiki/Luxembourg
-coords:
-- 6.13
-- 49.61
+coords: [6.13, 49.61]
 seat: Luxembourg
-regions:
-- world
-card: stub
+regions: ['western-south-europe']
+card: full
 tier: minor
+last_verified: 2026-10-12
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the financial centre and the EU seats in Luxembourg: the Court of Justice and the European Investment Bank are seated there, Eurostat has a directorate in the city, and foreign banks (Chinese ones among them) use the Grand Duchy as their European hub. Every security choice is measured against what it does to that base."
+      confidence: C
+      sources:
+        - {url: "https://luxembourg.public.lu/en/society-and-culture/international-openness/eu-institutions.html", title: "EU institutions in Luxembourg", publisher: "Luxembourg.public.lu (government portal)", date: 2026, tier: 1}
+        - {url: "https://en.paperjam.lu/article/news_renminbi-clearing-deal-signed", title: "Chinese and Luxembourg central bank governors sign renminbi clearing deal", publisher: "Paperjam", date: 2014, tier: 3}
+    - rank: 2
+      text: "Keep the cross-border labour market open: almost half of salaried jobs are held by people who live in France, Belgium or Germany, so the Greater Region's commuting flow is a precondition of the economy and of the state's budget."
+      confidence: C
+      sources:
+        - {url: "https://en.moovijob.com/blog/article/a-look-back-at-the-key-figures-from-luxembourgs-labour-market-in-2025", title: "A look back at the key figures from Luxembourg's labour market in 2025 (STATEC figures)", publisher: "Moovijob", date: 2026, tier: 3}
+    - rank: 3
+      text: "Meet the NATO spending benchmark cheaply and with an economic return: 2% of GNI was claimed for 2025 (brought forward from 2030 by the State of the Nation of May 2025), and the government now plans 2.3% of GNI by 2029, with the satellite capacity bought from a joint venture with SES rather than foreign hardware."
+      confidence: B
+      sources:
+        - {url: "https://gouvernement.lu/en/actualites/toutes_actualites/communiques/2026/05-mai/20-backes-defense-2029.html", title: "Government communiqué on the defence spending path to 2029 (Yuriko Backes)", publisher: "Government of Luxembourg", date: 2026-05-20, tier: 1}
+        - {url: "https://chronicle.lu/category/at-home/61314-luxembourg-sets-defence-spending-trajectory-through-2029", title: "Luxembourg sets defence spending trajectory through 2029", publisher: "Luxembourg Chronicle", date: 2026-05, tier: 3}
+        - {url: "https://govsat.lu/?p=50", title: "Our Mission (LuxGovSat)", publisher: "LuxGovSat", date: 2026, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "Benelux as the core of its diplomacy (joint declaration with Belgium and the Netherlands at Bourglinster, 10 Sep 2025), recognition of Palestine on 22 Sep 2025 (dataset row, government communiqué), and the EU as the multiplier: Luxembourg uses the seats and the Council votes to shape EU positions on Ukraine and on Russian assets; towards Washington the Prime Minister has spoken of a 'rupture' and of diversifying partners (Feb 2026)."
+      confidence: B
+      sources:
+        - {url: "https://www.rijksoverheid.nl/documenten/2025/09/10/benelux-prime-ministers-summit-joint-declaration-luxembourg-10-september-2025", title: "Benelux Prime Ministers Summit joint declaration, Luxembourg, 10 September 2025", publisher: "Government of the Netherlands", date: 2025-09-10, tier: 1}
+        - {url: "https://gouvernement.lu/en/actualites/toutes_actualites/communiques/2025/09-septembre/22-frieden-ny-palestine.html", title: "Luxembourg formally recognises the State of Palestine", publisher: "Government of Luxembourg", date: 2025-09-22, tier: 1}
+    - domain: economic
+      text: "Financial services as an instrument of statecraft: an EU passport for foreign banks (Bank of China and ICBC branches; ICBC designated renminbi clearing bank for Luxembourg), the SES satellite operator and the custody of securities (Clearstream), which gives the state a lever on capital flows and on the Russian assets held in the country."
+      confidence: C
+      sources:
+        - {url: "https://en.paperjam.lu/article/news_renminbi-clearing-deal-signed", title: "Chinese and Luxembourg central bank governors sign renminbi clearing deal", publisher: "Paperjam", date: 2014, tier: 3}
+        - {url: "https://www.centralbanking.com/node/2370535", title: "PBoC designates renminbi clearing banks for France and Luxembourg", publisher: "Central Banking", date: 2014, tier: 3}
+        - {url: "https://en.paperjam.lu/article/luxembourg-remains-unaffected-", title: "Luxembourg remains unaffected", publisher: "Paperjam", date: 2025, tier: 3}
+    - domain: military
+      text: "Satellite capacity as the defence contribution: LuxGovSat (government and SES, 50% each) sells military capacity, a block is pre-committed to NATO, and a 2016 contract ties the joint venture to NATO's ground surveillance system, so the 2% money buys access to allied systems rather than tanks."
+      confidence: B
+      sources:
+        - {url: "https://govsat.lu/?p=50", title: "Our Mission (LuxGovSat)", publisher: "LuxGovSat", date: 2026, tier: 3}
+        - {url: "https://www.ses.com/press-release/ses-nato-ground-surveillance-contract-awarded-govsat", title: "SES: NATO ground surveillance contract awarded to GovSat", publisher: "SES", date: 2016, tier: 3}
+
+  constraints:
+    - text: "Size and a single airport: Luxembourg has one international airport, and on 18 Sep 2026 unidentified drones halted it for hours (19 flights diverted). The government said the origin could not be established and that it was working with NATO allies and foreign partners on detection. Nothing in the sources ties the incident to Russia."
+      confidence: B
+      sources:
+        - {url: "https://meduza.io/en/news/2026/09/20/luxembourg-s-only-airport-halted-flights-for-hours-after-unauthorized-drones-were-detected-overhead", title: "Luxembourg's only airport halted flights for hours after unauthorized drones were detected overhead", publisher: "Meduza", date: 2026-09-20, tier: 3}
+        - {url: "https://www.aa.com.tr/en/europe/flights-resume-at-luxembourg-airport-after-drone-activity/4061670", title: "Flights resume at Luxembourg airport after drone activity", publisher: "Anadolu Agency", date: 2026-09, tier: 3}
+    - text: "The defence bill grows faster than the budget can carry: the Conseil national des finances publiques estimated the extra cost of the path to 5% by 2035 at EUR 13.4bn, with spending rising from EUR 1.18bn in 2025 to EUR 4.63bn in 2035. The 2% benchmark is measured on GNI, which is smaller than GDP and so lowers the bill."
+      confidence: C
+      sources:
+        - {url: "https://chronicle.lu/category/at-home/61314-luxembourg-sets-defence-spending-trajectory-through-2029", title: "Luxembourg sets defence spending trajectory through 2029", publisher: "Luxembourg Chronicle", date: 2026-05, tier: 3}
+    - text: "Dependence on commuters and on neighbours' nuclear policy: about 47% of salaried workers are cross-border (129,000 from France, 52,000 from Belgium, 51,000 from Germany), and the government's push to close the Cattenom plant in France and the Tihange and Doel plants in Belgium is pursued against the states whose workers it needs."
+      confidence: C
+      sources:
+        - {url: "https://en.moovijob.com/blog/article/a-look-back-at-the-key-figures-from-luxembourgs-labour-market-in-2025", title: "A look back at the key figures from Luxembourg's labour market in 2025 (STATEC figures)", publisher: "Moovijob", date: 2026, tier: 3}
+        - {url: "https://luxtoday.lu/en/technology-innovation-energy/nuclear-conflict-luxembourg-opposes-extension-of-cattenom-npp-operation", title: "Nuclear conflict: Luxembourg opposes extension of Cattenom NPP operation", publisher: "Luxtoday", date: 2026, tier: 3}
+
+  paradoxes:
+    - text: "The commuters are the economy, and the nuclear campaign is aimed at the country that sends the most of them. Pushing for the closure of Cattenom to protect its population from a French plant puts pressure on the neighbour whose 129,000 workers keep the financial centre running."
+      confidence: C
+      sources:
+        - {url: "https://luxtoday.lu/en/technology-innovation-energy/nuclear-conflict-luxembourg-opposes-extension-of-cattenom-npp-operation", title: "Nuclear conflict: Luxembourg opposes extension of Cattenom NPP operation", publisher: "Luxtoday", date: 2026, tier: 3}
+        - {url: "https://en.moovijob.com/blog/article/a-look-back-at-the-key-figures-from-luxembourgs-labour-market-in-2025", title: "A look back at the key figures from Luxembourg's labour market in 2025 (STATEC figures)", publisher: "Moovijob", date: 2026, tier: 3}
+
+  reading: |
+    Luxembourg runs the strategy of a rich small state that buys security with money and
+    with the right to host other people's institutions: the EU courts, the bank hubs, the
+    satellite company. Its 2% benchmark, its Ukraine pact and its EU votes are paid for by
+    a financial centre that depends on the Greater Region's commuters, and that centre is
+    also where the Russian assets are custodied. The drone closure of its single airport in
+    September 2026 is the first sign that a state so reliant on one hub and one airport has
+    no margin if it is attacked; the origin is unknown and the reading must stay open.
