@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grand Strategy - proposte per l'interfaccia, seconda serie</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=Share+Tech+Mono&family=IBM+Plex+Mono:wght@400;500;700&family=Special+Elite&family=Courier+Prime:wght@400;700&family=Barlow+Condensed:wght@400;600;700&family=Barlow:wght@400;600&family=Inter:wght@400;500;700;900&family=Archivo+Narrow:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #2a2a2a; color: #ddd; font-family: Inter, Arial, sans-serif; }
+  .intro { padding: 26px 36px 4px; max-width: 980px; }
+  .intro h1 { font-size: 20px; margin: 0 0 6px; font-weight: 600; }
+  .intro p { margin: 0; font-size: 14px; color: #bbb; }
+  .prop { margin: 30px 36px 48px; }
+  .prop > .lbl { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; margin: 0 0 4px; color: #fff; }
+  .prop > .desc { font-size: 14px; color: #bbb; margin: 0 0 12px; max-width: 980px; }
+  .ui { position: relative; overflow: hidden; box-shadow: 0 10px 40px #000a; }
+  .ui svg { width: 100%; height: 430px; display: block; }
+  .ui .body { display: grid; grid-template-columns: 240px 1fr; }
+  .ui .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; padding: 12px 18px 16px; }
+
+  /* A - mainframe 3270 */
+  .mf { background: #050a06; color: #4dff7a; font-family: "IBM Plex Mono", monospace; font-size: 13px; }
+  .mf::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: repeating-linear-gradient(0deg, rgba(0,0,0,.28) 0 1px, transparent 1px 3px); mix-blend-mode: multiply; }
+  .mf .top { display: flex; align-items: baseline; gap: 26px; padding: 12px 18px 8px; border-bottom: 1px solid #2a8a46; }
+  .mf .brand { font-family: VT323, monospace; font-size: 40px; line-height: 1; letter-spacing: .04em; text-shadow: 0 0 6px #4dff7a88; }
+  .mf .brand span { color: #ffb000; text-shadow: 0 0 6px #ffb00088; }
+  .mf .tag { font-size: 12px; color: #2fbf5a; text-transform: uppercase; letter-spacing: .08em; }
+  .mf nav { display: flex; gap: 18px; margin-left: 10px; }
+  .mf nav a { text-transform: uppercase; letter-spacing: .1em; color: #2fbf5a; }
+  .mf nav a.on { background: #4dff7a; color: #050a06; padding: 0 6px; }
+  .mf .stamp { margin-left: auto; color: #ffb000; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; text-align: right; line-height: 1.4; }
+  .mf .side { padding: 12px 14px; border-right: 1px solid #2a8a46; }
+  .mf .side h3 { margin: 10px 0 4px; font-size: 12px; font-weight: 500; color: #2fbf5a; text-transform: uppercase; }
+  .mf .side h3::before { content: "== "; }
+  .mf .side h3::after { content: " =="; }
+  .mf .sel { border: 1px solid #2a8a46; padding: 4px 8px; color: #4dff7a; }
+  .mf .row { display: flex; gap: 8px; align-items: center; padding: 1px 0; text-transform: uppercase; font-size: 12px; }
+  .mf .sw { width: 26px; height: 12px; flex: none; border: 1px solid #2a8a46; background-color: #0b1a0e; }
+  .mf .status { border-top: 1px solid #2a8a46; padding: 6px 18px; font-size: 12px; color: #2fbf5a; text-transform: uppercase; letter-spacing: .06em; display: flex; justify-content: space-between; }
+  .mf .status b { color: #4dff7a; font-weight: 500; }
+  .mf .cur::after { content: "_"; animation: blink 1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+  .mf .card { border: 1px solid #2a8a46; padding: 8px 10px; font-size: 12px; line-height: 1.4; color: #2fbf5a; }
+  .mf .card b { display: block; color: #4dff7a; font-weight: 500; text-transform: uppercase; }
+  .mf .card i { color: #ffb000; font-style: normal; }
+  .mf .dossier { padding: 10px 18px 20px; border-top: 1px solid #2a8a46; }
+  .mf .dossier h2 { font-family: VT323, monospace; font-size: 34px; margin: 0; font-weight: 400; color: #4dff7a; }
+  .mf .dossier h4 { font-size: 12px; margin: 10px 0 4px; color: #ffb000; font-weight: 500; text-transform: uppercase; }
+  .mf .dossier p { margin: 0; max-width: 780px; color: #2fbf5a; line-height: 1.5; }
+
+  /* B - dossier militare */
+  .ds { background: #5b574e; padding: 26px 30px; font-family: "Courier Prime", monospace; color: #1d1b17; }
+  .ds .folder { background: #e2cb98; position: relative; box-shadow: 2px 3px 0 #b89a62, 0 12px 30px #0006; background-image: radial-gradient(#0000000c 1px, transparent 1px); background-size: 4px 4px; }
+  .ds .tabs { position: absolute; right: -26px; top: 40px; display: flex; flex-direction: column; gap: 8px; }
+  .ds .tabs a { writing-mode: vertical-rl; background: #cfae72; padding: 10px 5px; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #1d1b17; }
+  .ds .tabs a.on { background: #1d1b17; color: #e2cb98; }
+  .ds .top { display: flex; align-items: flex-start; gap: 24px; padding: 20px 26px 10px; border-bottom: 2px solid #1d1b17; }
+  .ds .brand { font-family: "Special Elite", "Courier Prime", monospace; font-size: 30px; line-height: 1; letter-spacing: .02em; }
+  .ds .tag { font-size: 12px; margin-top: 6px; }
+  .ds .stamp { margin-left: auto; border: 3px double #b4271d; color: #b4271d; padding: 6px 12px; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; transform: rotate(-7deg); opacity: .85; font-weight: 700; line-height: 1.4; mix-blend-mode: multiply; }
+  .ds .holes { position: absolute; left: 14px; top: 110px; bottom: 60px; width: 10px; }
+  .ds .holes i { display: block; width: 12px; height: 12px; border-radius: 50%; background: #5b574e; margin: 0 0 110px; box-shadow: inset 1px 1px 2px #0008; }
+  .ds .side { padding: 14px 16px 14px 36px; font-size: 12px; }
+  .ds .side h3 { font-size: 12px; margin: 10px 0 4px; text-transform: uppercase; letter-spacing: .1em; font-weight: 700; }
+  .ds .sel { border-bottom: 1px solid #1d1b17; padding: 2px 0; }
+  .ds .row { display: flex; gap: 8px; align-items: center; padding: 1px 0; }
+  .ds .sw { width: 26px; height: 12px; flex: none; border: 1px solid #1d1b17; background-color: #f1ead6; }
+  .ds .redact { background: #1d1b17; color: #1d1b17; }
+  .ds .mapwrap { position: relative; margin: 12px 14px 0 0; border: 1px solid #1d1b17; background: #f3efe3; }
+  .ds .clip { position: absolute; top: -10px; left: 24px; width: 18px; height: 42px; border: 3px solid #7d7a70; border-radius: 9px; border-bottom: 0; z-index: 2; }
+  .ds .mapwrap .cap { font-size: 11px; padding: 4px 8px; border-top: 1px solid #1d1b17; text-transform: uppercase; letter-spacing: .08em; }
+  .ds .card { border: 1px solid #1d1b17; background: #f3efe3; padding: 8px 10px; font-size: 12px; line-height: 1.4; }
+  .ds .card b { display: block; text-transform: uppercase; letter-spacing: .06em; }
+  .ds .card i { font-style: normal; color: #b4271d; }
+  .ds .dossier { padding: 10px 26px 26px 36px; border-top: 2px solid #1d1b17; }
+  .ds .dossier h2 { font-family: "Special Elite", monospace; font-size: 28px; margin: 0; }
+  .ds .dossier h4 { font-size: 12px; margin: 12px 0 4px; text-transform: uppercase; letter-spacing: .1em; }
+  .ds .dossier p { margin: 0; max-width: 780px; font-size: 13px; line-height: 1.55; }
+
+  /* C - carta operativa */
+  .op { background: #0b1b33; color: #d8e6f5; font-family: Barlow, sans-serif; background-image: linear-gradient(#ffffff0a 1px, transparent 1px), linear-gradient(90deg, #ffffff0a 1px, transparent 1px); background-size: 40px 40px; }
+  .op .top { display: flex; align-items: center; gap: 28px; padding: 12px 22px; border-bottom: 2px solid #ffd23f; }
+  .op .brand { font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 34px; letter-spacing: .06em; text-transform: uppercase; line-height: 1; }
+  .op .brand span { color: #ffd23f; }
+  .op .tag { font-family: "Barlow Condensed", sans-serif; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: #7fd1ff; margin-top: 4px; }
+  .op nav { display: flex; gap: 2px; }
+  .op nav a { font-family: "Barlow Condensed", sans-serif; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; font-size: 13px; padding: 6px 14px; border: 1px solid #7fd1ff; color: #7fd1ff; }
+  .op nav a.on { background: #7fd1ff; color: #0b1b33; }
+  .op .stamp { margin-left: auto; font-family: "Barlow Condensed", sans-serif; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #ffd23f; border-left: 2px solid #ffd23f; padding-left: 10px; line-height: 1.4; }
+  .op .side { padding: 14px 16px; border-right: 1px solid #2d4a73; font-size: 13px; }
+  .op .side h3 { font-family: "Barlow Condensed", sans-serif; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: #7fd1ff; margin: 10px 0 4px; }
+  .op .sel { border: 1px solid #7fd1ff; padding: 5px 8px; }
+  .op .row { display: flex; gap: 8px; align-items: center; padding: 1px 0; color: #b8c8dc; font-family: "Barlow Condensed", sans-serif; letter-spacing: .06em; text-transform: uppercase; }
+  .op .sw { width: 26px; height: 12px; flex: none; border: 1px solid #7fd1ff; background-color: #16305a; }
+  .op .mapwrap { position: relative; }
+  .op .corner { position: absolute; width: 16px; height: 16px; border: 2px solid #ffd23f; }
+  .op .corner.tl { top: 8px; left: 8px; border-right: 0; border-bottom: 0; } .op .corner.tr { top: 8px; right: 8px; border-left: 0; border-bottom: 0; }
+  .op .corner.bl { bottom: 8px; left: 8px; border-right: 0; border-top: 0; } .op .corner.br { bottom: 8px; right: 8px; border-left: 0; border-top: 0; }
+  .op .card { border: 1px solid #2d4a73; padding: 8px 10px; font-size: 12px; line-height: 1.4; color: #b8c8dc; background: #0e2240; }
+  .op .card b { display: block; font-family: "Barlow Condensed", sans-serif; font-size: 15px; letter-spacing: .1em; text-transform: uppercase; color: #fff; }
+  .op .card i { font-style: normal; color: #ffd23f; }
+  .op .dossier { padding: 10px 22px 22px; border-top: 1px solid #2d4a73; }
+  .op .dossier h2 { font-family: "Barlow Condensed", sans-serif; font-size: 36px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; margin: 0; }
+  .op .dossier h4 { font-family: "Barlow Condensed", sans-serif; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: #ffd23f; margin: 12px 0 4px; }
+  .op .dossier p { margin: 0; max-width: 780px; font-size: 14px; line-height: 1.5; color: #d8e6f5; }
+
+  /* D - Vignelli */
+  .vg { background: #0d0d0d; color: #fff; font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .vg .top { display: grid; grid-template-columns: 1fr auto auto; align-items: end; gap: 30px; padding: 18px 26px 14px; border-bottom: 6px solid #1f5bff; }
+  .vg .brand { font-weight: 900; font-size: 38px; letter-spacing: -.03em; line-height: .95; }
+  .vg .brand span { color: #1f5bff; }
+  .vg .tag { font-size: 13px; color: #9a9a9a; margin-top: 6px; }
+  .vg nav { display: flex; gap: 22px; }
+  .vg nav a { font-size: 14px; font-weight: 500; color: #9a9a9a; padding-bottom: 4px; }
+  .vg nav a.on { color: #fff; border-bottom: 3px solid #1f5bff; }
+  .vg .stamp { font-size: 12px; color: #9a9a9a; text-align: right; line-height: 1.5; }
+  .vg .stamp b { color: #fff; font-weight: 500; }
+  .vg .side { padding: 16px 20px; border-right: 1px solid #2a2a2a; font-size: 13px; }
+  .vg .side h3 { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #9a9a9a; margin: 12px 0 6px; }
+  .vg .sel { border-bottom: 2px solid #fff; padding: 4px 0; font-weight: 500; font-size: 15px; }
+  .vg .row { display: flex; gap: 10px; align-items: center; padding: 2px 0; color: #d0d0d0; }
+  .vg .sw { width: 26px; height: 12px; flex: none; background-color: #2a2a2a; }
+  .vg .card { padding: 10px 12px; font-size: 12px; line-height: 1.4; color: #bdbdbd; border-top: 3px solid #fff; background: #161616; }
+  .vg .card b { display: block; font-size: 15px; font-weight: 700; color: #fff; letter-spacing: -.01em; }
+  .vg .card i { font-style: normal; color: #1f5bff; font-weight: 500; }
+  .vg .dossier { padding: 14px 26px 26px; border-top: 1px solid #2a2a2a; }
+  .vg .dossier h2 { font-size: 44px; font-weight: 900; letter-spacing: -.03em; margin: 0; line-height: 1; }
+  .vg .dossier h4 { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: #1f5bff; margin: 14px 0 4px; font-weight: 700; }
+  .vg .dossier p { margin: 0; max-width: 760px; font-size: 14px; line-height: 1.55; color: #d0d0d0; }
+
+  /* E - rapporto declassificato */
+  .dc { background: #ecebe3; color: #141414; font-family: Inter, Arial, sans-serif; }
+  .dc .bar { background: #141414; color: #fff; font-size: 11px; letter-spacing: .2em; text-transform: uppercase; text-align: center; padding: 4px; font-weight: 700; }
+  .dc .top { display: flex; align-items: flex-end; gap: 26px; padding: 14px 24px 10px; border-bottom: 1px solid #141414; }
+  .dc .brand { font-size: 26px; font-weight: 700; letter-spacing: .02em; text-transform: uppercase; line-height: 1; }
+  .dc .tag { font-size: 12px; color: #555; margin-top: 4px; }
+  .dc nav { display: flex; }
+  .dc nav a { font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; padding: 6px 12px; border: 1px solid #141414; margin-left: -1px; }
+  .dc nav a.on { background: #141414; color: #fff; }
+  .dc .stamp { margin-left: auto; border: 2px solid #c0392b; color: #c0392b; padding: 4px 10px; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; transform: rotate(3deg); line-height: 1.4; opacity: .85; }
+  .dc .side { padding: 14px 16px; border-right: 1px solid #141414; font-size: 12px; background: #e4e3da; }
+  .dc .side h3 { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; margin: 10px 0 4px; font-weight: 700; }
+  .dc .sel { border: 1px solid #141414; padding: 5px 8px; background: #fff; }
+  .dc .row { display: flex; gap: 8px; align-items: center; padding: 1px 0; color: #333; }
+  .dc .sw { width: 26px; height: 12px; flex: none; border: 1px solid #141414; background-color: #f6f5ee; }
+  .dc .card { border: 1px solid #141414; background: #fff; padding: 8px 10px; font-size: 12px; line-height: 1.4; color: #333; }
+  .dc .card b { display: block; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: #141414; }
+  .dc .card i { font-style: normal; color: #c0392b; font-weight: 600; }
+  .dc .dossier { padding: 12px 24px 22px; border-top: 1px solid #141414; }
+  .dc .dossier h2 { font-size: 30px; font-weight: 700; text-transform: uppercase; margin: 0; }
+  .dc .dossier h4 { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; margin: 12px 0 4px; font-weight: 700; color: #4a5f8e; }
+  .dc .dossier p { margin: 0; max-width: 760px; font-size: 13.5px; line-height: 1.55; }
+  .dc .foot { display: flex; justify-content: space-between; padding: 6px 24px; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; border-top: 1px solid #141414; color: #555; }
+
+  /* F - teletype */
+  .tt { background: #3a3a3a; padding: 20px 60px; font-family: "IBM Plex Mono", monospace; }
+  .tt .paper { background: #f3e9bf; color: #1c1c1c; position: relative; background-image: repeating-linear-gradient(0deg, #0000000a 0 1px, transparent 1px 24px); box-shadow: 0 12px 30px #0007; }
+  .tt .paper::before, .tt .paper::after { content: ""; position: absolute; top: 0; bottom: 0; width: 22px; background-image: radial-gradient(circle, #3a3a3a 4px, transparent 4.5px); background-size: 22px 26px; background-position: center 6px; }
+  .tt .paper::before { left: 0; border-right: 1px dashed #b9ad7c; } .tt .paper::after { right: 0; border-left: 1px dashed #b9ad7c; }
+  .tt .inner { padding: 14px 44px 20px; font-size: 13px; text-transform: uppercase; }
+  .tt .top { display: flex; gap: 28px; align-items: baseline; padding-bottom: 8px; border-bottom: 2px solid #1c1c1c; }
+  .tt .brand { font-size: 22px; font-weight: 700; letter-spacing: .08em; }
+  .tt .brand span { color: #2c4e9b; }
+  .tt .tag { font-size: 11px; letter-spacing: .06em; }
+  .tt nav { display: flex; gap: 16px; }
+  .tt nav a { font-weight: 700; letter-spacing: .1em; font-size: 12px; }
+  .tt nav a.on { background: #1c1c1c; color: #f3e9bf; padding: 0 6px; }
+  .tt .stamp { margin-left: auto; font-size: 11px; color: #b4271d; text-align: right; line-height: 1.4; letter-spacing: .06em; }
+  .tt .body { grid-template-columns: 220px 1fr; }
+  .tt .side { padding: 10px 12px 10px 0; font-size: 12px; }
+  .tt .side h3 { font-size: 12px; font-weight: 700; margin: 10px 0 4px; letter-spacing: .08em; }
+  .tt .side h3::before { content: "> "; }
+  .tt .sel { border-bottom: 2px dotted #1c1c1c; }
+  .tt .row { display: flex; gap: 8px; align-items: center; padding: 1px 0; }
+  .tt .sw { width: 26px; height: 12px; flex: none; border: 1px solid #1c1c1c; background-color: #faf4d9; }
+  .tt .mapwrap { border: 2px solid #1c1c1c; margin-top: 10px; }
+  .tt .cards { padding: 12px 0 8px; }
+  .tt .card { border: 1px dashed #1c1c1c; padding: 8px 10px; font-size: 12px; line-height: 1.4; text-transform: none; }
+  .tt .card b { display: block; text-transform: uppercase; letter-spacing: .06em; }
+  .tt .card i { font-style: normal; color: #2c4e9b; }
+  .tt .dossier { border-top: 2px solid #1c1c1c; padding-top: 10px; text-transform: none; }
+  .tt .dossier h2 { font-size: 24px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin: 0; }
+  .tt .dossier h4 { font-size: 12px; font-weight: 700; margin: 12px 0 4px; letter-spacing: .08em; text-transform: uppercase; color: #2c4e9b; }
+  .tt .dossier p { margin: 0; max-width: 760px; font-size: 13px; line-height: 1.55; }
+  .tt .eot { margin-top: 14px; font-size: 12px; letter-spacing: .08em; }
+
+  /* G - WarGames / NORAD vector display */
+  .wg { background: #000; color: #9fd3ff; font-family: "Share Tech Mono", "IBM Plex Mono", monospace; }
+  .wg::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: repeating-linear-gradient(0deg, rgba(0,0,0,.22) 0 1px, transparent 1px 3px); }
+  .wg .top { display: flex; align-items: baseline; gap: 28px; padding: 12px 20px 8px; border-bottom: 1px solid #1f4a6e; }
+  .wg .brand { font-family: VT323, monospace; font-size: 42px; line-height: 1; letter-spacing: .06em; color: #cfeaff; text-shadow: 0 0 8px #4fb3ff, 0 0 2px #fff; }
+  .wg .brand span { color: #ff5a4a; text-shadow: 0 0 8px #ff5a4a; }
+  .wg .tag { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: #4fb3ff; }
+  .wg nav { display: flex; gap: 18px; }
+  .wg nav a { text-transform: uppercase; letter-spacing: .12em; font-size: 13px; color: #4fb3ff; }
+  .wg nav a::before { content: attr(data-n) " "; color: #9fd3ff; }
+  .wg nav a.on { color: #cfeaff; text-shadow: 0 0 6px #4fb3ff; text-decoration: underline; text-underline-offset: 4px; }
+  .wg .stamp { margin-left: auto; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; text-align: right; line-height: 1.4; color: #6ec6ff; }
+  .wg .side { padding: 12px 16px; border-right: 1px solid #1f4a6e; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; }
+  .wg .side h3 { font-size: 12px; font-weight: 400; margin: 10px 0 4px; color: #4fb3ff; }
+  .wg .side h3::before { content: "> "; }
+  .wg .sel { border: 1px solid #4fb3ff; padding: 4px 8px; color: #cfeaff; }
+  .wg .row { display: flex; gap: 8px; align-items: center; padding: 1px 0; color: #9fd3ff; }
+  .wg .sw { width: 26px; height: 12px; flex: none; border: 1px solid; background: transparent; }
+  .wg .mapwrap { position: relative; }
+  .wg .readout { position: absolute; right: 18px; bottom: 14px; font-size: 13px; line-height: 1.45; color: #cfeaff; text-transform: uppercase; letter-spacing: .06em; text-shadow: 0 0 4px #4fb3ff; }
+  .wg .card { border: 1px solid #1f4a6e; padding: 8px 10px; font-size: 12px; line-height: 1.4; color: #9fd3ff; }
+  .wg .card b { display: block; text-transform: uppercase; letter-spacing: .08em; color: #cfeaff; font-weight: 400; }
+  .wg .card i { font-style: normal; color: #7fff8a; }
+  .wg .dossier { padding: 10px 20px 20px; border-top: 1px solid #1f4a6e; }
+  .wg .dossier h2 { font-family: VT323, monospace; font-size: 36px; margin: 0; font-weight: 400; color: #cfeaff; text-shadow: 0 0 8px #4fb3ff; }
+  .wg .dossier h4 { font-size: 12px; margin: 10px 0 4px; color: #4fb3ff; font-weight: 400; text-transform: uppercase; letter-spacing: .1em; }
+  .wg .dossier p { margin: 0; max-width: 780px; line-height: 1.5; color: #9fd3ff; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="intro">
+  <h1>Interfaccia: seconda serie di proposte</h1>
+  <p>Sei direzioni diverse, ognuna con una fonte reale anni 60-70: terminale mainframe, cartella da dossier militare, carta operativa, modernismo italiano (Vignelli/Olivetti), rapporto declassificato, telescrivente. Dati veri, vista dalla Serbia.</p>
+</div>
+<div id="themes"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+(async function () {
+  const [data, world] = await Promise.all([fetch("data.json").then(r => r.json()), fetch("world.geojson").then(r => r.json())]);
+  const actors = Object.fromEntries(data.actors.map(a => [a.id, a]));
+  const POV = "SRB", srb = actors[POV];
+  const stances = Object.fromEntries((data.stances[POV] || []).map(s => [s.toward, s]));
+  const FRAC = { ally: .85, reluctant_ally: .3, partner: .5, reluctant_partner: .15, rival: .25, adversary: .8 };
+  const SIDE = { ally: "ally", reluctant_ally: "ally", partner: "partner", reluctant_partner: "partner", rival: "hostile", adversary: "hostile" };
+  const rel = (data.relations || []).filter(r => r.from === POV);
+  const byTo = d3.group(rel, r => r.to);
+  const cps = [...byTo.keys()].sort((a, b) => byTo.get(b).length - byTo.get(a).length).slice(0, 4);
+  const stamp = `Situation map · in construction<br>compiled ${data.generated} · ${data.progress ? data.progress.cards + " of " + data.progress.total + " cards" : ""}`;
+  const GRADES = ["ally", "reluctant_ally", "partner", "reluctant_partner", "rival", "adversary"];
+  const sw = (v, g) => { const r = Math.sqrt(16 * FRAC[g] / Math.PI); return `radial-gradient(${v[SIDE[g]]} ${r.toFixed(2)}px, transparent ${(r + .15).toFixed(2)}px) 0 0 / 4px 4px ${v.land}`; };
+  const legend = v => GRADES.map(g => `<div class="row"><span class="sw" style="background:${sw(v, g)}"></span>${g.replace("_", " ")}</div>`).join("") + `<div class="row"><span class="sw" style="background:repeating-linear-gradient(45deg,${v.hostile} 0 1.6px,transparent 1.6px 5px) ${v.land}"></span>claimed, not controlled</div>`;
+  const bonds = v => `<div class="row"><span class="sw" style="box-shadow:inset 0 0 0 2.5px ${v.partner}"></span>kin</div><div class="row"><span class="sw" style="box-shadow:inset 0 0 0 2.5px ${v.hostile}"></span>grievance</div>`;
+  const cards = () => cps.map(id => { const a = actors[id], s = stances[id], rows = byTo.get(id); return `<div class="card"><b>${a.name}</b>${s ? `${s.grade.replace("_", " ")} · ${s.trend} · ${s.bond}` : "no stance"}<br><i>${rows[0].since}</i> ${(rows[0].summary || "").slice(0, 80)}…<br>${rows.length} rows</div>`; }).join("");
+  const obj = (srb.grand_strategy.objectives[0].text || "").slice(0, 230), par = (srb.grand_strategy.paradoxes[0].text || "").slice(0, 230);
+  const nav = `<nav><a class="on">Map</a><a>Organisations</a><a>Issues</a><a>Luttwak</a></nav>`;
+
+  const THEMES = [
+    { id: "mf", cls: "mf", name: "A · Mainframe 3270", desc: "Terminale IBM a fosfori verdi: tutto a spaziatura fissa, barra di stato in basso, cursore che lampeggia, righe di scansione sopra lo schermo. Ambra per i partner, rosso per gli ostili. Il più radicale: zero decorazione, solo testo e mappa.",
+      v: { sea: "#050a06", land: "#0f2414", coast: "#2a8a46", ally: "#4dff7a", partner: "#ffb000", hostile: "#ff4a3d", pov: "#4dff7a", paper: "#050a06", ink: "#4dff7a", font: "'IBM Plex Mono', monospace" },
+      html: v => `<div class="top"><div><div class="brand">GRAND <span>STRATEGY</span></div><div class="tag">What the world's actors want and do, and where it collides</div></div>${nav}<div class="stamp">${stamp.replace("<br>", "<br>")}</div></div>
+        <div class="body"><div class="side"><h3>Point of view</h3><div class="sel">THE WORLD AS SERBIA SEES IT</div><h3>Posture</h3>${legend(v)}<h3>Bond</h3>${bonds(v)}</div>
+        <div><svg id="m-mf"></svg><div class="cards">${cards()}</div></div></div>
+        <div class="dossier"><h2>SERBIA</h2><h4>Objectives, ranked</h4><p>1. ${obj} [1]</p><h4>Paradoxes</h4><p>${par} [2]</p></div>
+        <div class="status"><span>GS/370 · SITUATION MAP · POV=SRB · LENS=POSTURE</span><span><b>READY</b> <span class="cur"></span></span></div>` },
+    { id: "ds", cls: "ds", name: "B · Dossier militare", desc: "Cartella manila con fori, linguette laterali per le sezioni, graffetta sulla mappa, timbro rosso inclinato, macchina da scrivere. La mappa è una fotocopia: due inchiostri su carta. Il tema più materico.",
+      v: { sea: "#f3efe3", land: "#e4ddc8", coast: "#1d1b17", ally: "#3d4a2a", partner: "#2a3a6b", hostile: "#b4271d", pov: "#1d1b17", paper: "#f3efe3", ink: "#1d1b17", font: "'Courier Prime', monospace" },
+      html: v => `<div class="folder"><div class="tabs"><a class="on">Map</a><a>Organisations</a><a>Issues</a><a>Luttwak</a></div><div class="holes"><i></i><i></i><i></i></div>
+        <div class="top"><div><div class="brand">GRAND STRATEGY</div><div class="tag">What the world's actors want and do, and where it collides.</div></div><div class="stamp">${stamp}</div></div>
+        <div class="body"><div class="side"><h3>Point of view</h3><div class="sel">The world as Serbia sees it</div><h3>Posture of Serbia</h3>${legend(v)}<h3>Bond</h3>${bonds(v)}<h3>Classification</h3><div><span class="redact">xxxxxxxxxxxxxxxx</span> open sources only</div></div>
+        <div><div class="mapwrap"><div class="clip"></div><svg id="m-ds"></svg><div class="cap">Fig. 1 - Posture as recorded, ${data.generated}. Two inks. Hatched = claimed, not controlled.</div></div><div class="cards">${cards()}</div></div></div>
+        <div class="dossier"><h2>SERBIA</h2><h4>Objectives, ranked</h4><p>1. ${obj} [1]</p><h4>Paradoxes</h4><p>${par} [2]</p></div></div>` },
+    { id: "op", cls: "op", name: "C · Carta operativa", desc: "Carta nautica militare: blu notte con griglia, segni d'angolo gialli, ciano per gli alleati, giallo per i partner, rosso per gli ostili. Barlow Condensed maiuscolo spaziato, come le stampe DIN. Serio, leggibile, non decorativo.",
+      v: { sea: "#0b1b33", land: "#16305a", coast: "#5b7fb0", ally: "#7fd1ff", partner: "#ffd23f", hostile: "#ff4e3a", pov: "#ffd23f", paper: "#0b1b33", ink: "#d8e6f5", font: "'Barlow Condensed', sans-serif", grat: "#ffffff14" },
+      html: v => `<div class="top"><div><div class="brand">Grand <span>Strategy</span></div><div class="tag">Chart 01 · What the world's actors want and do, and where it collides</div></div>${nav}<div class="stamp">${stamp}</div></div>
+        <div class="body"><div class="side"><h3>Point of view</h3><div class="sel">The world as Serbia sees it</div><h3>Posture of Serbia</h3>${legend(v)}<h3>Bond</h3>${bonds(v)}</div>
+        <div><div class="mapwrap"><div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div><svg id="m-op"></svg></div><div class="cards">${cards()}</div></div></div>
+        <div class="dossier"><h2>Serbia</h2><h4>Objectives, ranked</h4><p>1. ${obj}<sup>1</sup></p><h4>Paradoxes</h4><p>${par}<sup>2</sup></p></div>` },
+    { id: "vg", cls: "vg", name: "D · Vignelli / Olivetti", desc: "Modernismo italiano: nero, Helvetica pesante, una sola riga blu elettrico, nessun bordo decorativo, gerarchia fatta solo di peso e dimensione. La mappa in nero con bianco alleati, blu partner, rosso ostili. Il più pulito.",
+      v: { sea: "#0d0d0d", land: "#262626", coast: "#4a4a4a", ally: "#ffffff", partner: "#1f5bff", hostile: "#ff3b30", pov: "#1f5bff", paper: "#0d0d0d", ink: "#ffffff", font: "Inter, sans-serif" },
+      html: v => `<div class="top"><div><div class="brand">Grand<br><span>Strategy</span></div><div class="tag">What the world's actors want and do, and where it collides.</div></div>${nav}<div class="stamp"><b>Situation map</b> · in construction<br>${data.generated} · ${data.progress ? data.progress.cards + " of " + data.progress.total + " cards" : ""}</div></div>
+        <div class="body"><div class="side"><h3>Point of view</h3><div class="sel">Serbia</div><h3>Posture</h3>${legend(v)}<h3>Bond</h3>${bonds(v)}</div>
+        <div><svg id="m-vg"></svg><div class="cards">${cards()}</div></div></div>
+        <div class="dossier"><h2>Serbia</h2><h4>Objectives, ranked</h4><p>1. ${obj}<sup>1</sup></p><h4>Paradoxes</h4><p>${par}<sup>2</sup></p></div>` },
+    { id: "dc", cls: "dc", name: "E · Rapporto declassificato", desc: "Carta grigio-bianca, nero, una fascia 'approved for release' in alto, timbro rosso, piè di pagina con numerazione. Colori della mappa smorzati come nelle carte CIA degli anni 70. Il più istituzionale, da leggere a lungo.",
+      v: { sea: "#cfd8e3", land: "#f6f5ee", coast: "#141414", ally: "#5b7a4a", partner: "#4a5f8e", hostile: "#c0392b", pov: "#141414", paper: "#ecebe3", ink: "#141414", font: "Inter, sans-serif" },
+      html: v => `<div class="bar">Approved for release · open sources only · ${data.generated}</div><div class="top"><div><div class="brand">Grand Strategy</div><div class="tag">What the world's actors want and do, and where it collides.</div></div>${nav}<div class="stamp">${stamp}</div></div>
+        <div class="body"><div class="side"><h3>Point of view</h3><div class="sel">The world as Serbia sees it ▾</div><h3>Posture of Serbia</h3>${legend(v)}<h3>Bond</h3>${bonds(v)}</div>
+        <div><svg id="m-dc"></svg><div class="cards">${cards()}</div></div></div>
+        <div class="dossier"><h2>Serbia</h2><h4>Objectives, ranked</h4><p>1. ${obj}<sup>1</sup></p><h4>Paradoxes</h4><p>${par}<sup>2</sup></p></div>
+        <div class="foot"><span>Grand Strategy · situation map</span><span>Serbia · card verified ${srb.last_verified || ""}</span><span>page 1 of 205</span></div>` },
+    { id: "tt", cls: "tt", name: "F · Telescrivente", desc: "Carta gialla da telescrivente con i fori di trascinamento, tutto maiuscolo a spaziatura fissa, 'END OF TRANSMISSION' in fondo. Blu carbone per i partner, rosso per gli ostili. Tra il dossier e il mainframe, ma su carta.",
+      v: { sea: "#faf4d9", land: "#eadfae", coast: "#1c1c1c", ally: "#1c1c1c", partner: "#2c4e9b", hostile: "#b4271d", pov: "#1c1c1c", paper: "#f3e9bf", ink: "#1c1c1c", font: "'IBM Plex Mono', monospace" },
+      html: v => `<div class="paper"><div class="inner"><div class="top"><div><div class="brand">GRAND <span>STRATEGY</span></div><div class="tag">What the world's actors want and do, and where it collides</div></div>${nav}<div class="stamp">${stamp}</div></div>
+        <div class="body"><div class="side"><h3>Point of view</h3><div class="sel">SERBIA</div><h3>Posture</h3>${legend(v)}<h3>Bond</h3>${bonds(v)}</div>
+        <div><div class="mapwrap"><svg id="m-tt"></svg></div><div class="cards">${cards()}</div></div></div>
+        <div class="dossier"><h2>Serbia</h2><h4>Objectives, ranked</h4><p>1. ${obj} [1]</p><h4>Paradoxes</h4><p>${par} [2]</p></div><div class="eot">=== END OF TRANSMISSION · 37 OF 205 CARDS · NNNN ===</div></div></div>` },
+    { id: "wg", cls: "wg", name: "G · WarGames 1983 (schermo vettoriale NORAD)", desc: "Nero assoluto, paesi disegnati solo come contorni luminosi, niente riempimenti: il punto di vista in bianco-azzurro acceso, gli alleati in verde, i partner in azzurro, gli ostili in rosso, con il bagliore del fosforo. Blocco di lettura in basso a destra come sul WOPR. Caratteri da display, righe di scansione. Il più cinematografico.",
+      v: { sea: "#000", land: "none", coast: "#8fb0c8", ally: "#7fff8a", partner: "#4fb3ff", hostile: "#ff5a4a", pov: "#e6f6ff", paper: "#000", ink: "#cfeaff", font: "'Share Tech Mono', monospace" }, draw: "vector",
+      html: v => `<div class="top"><div><div class="brand">GRAND <span>STRATEGY</span></div><div class="tag">What the world's actors want and do, and where it collides</div></div><nav><a class="on" data-n="01">Map</a><a data-n="02">Organisations</a><a data-n="03">Issues</a><a data-n="04">Luttwak</a></nav><div class="stamp">${stamp}</div></div>
+        <div class="body"><div class="side"><h3>Point of view</h3><div class="sel">SERBIA</div><h3>Posture</h3>${GRADES.map(g => `<div class="row"><span class="sw" style="border-color:${v[SIDE[g]]};box-shadow:0 0 ${FRAC[g] > .5 ? 8 : 3}px ${v[SIDE[g]]}"></span>${g.replace("_", " ")}</div>`).join("")}<div class="row"><span class="sw" style="border-color:${v.hostile};border-style:dashed"></span>claimed, not controlled</div><h3>Bond</h3><div class="row"><span class="sw" style="border-color:${v.partner};border-width:3px"></span>kin</div><div class="row"><span class="sw" style="border-color:${v.hostile};border-width:3px"></span>grievance</div></div>
+        <div><div class="mapwrap"><svg id="m-wg"></svg><div class="readout">STS D: SERBIA · POSTURE<br>ALLIES 00 · PARTNERS 05 · HOSTILE 03<br>LENS: POSTURE / UN VOTES / CLUBS<br>BN DTA AVLB: 43 ROWS · SELECT 012</div></div><div class="cards">${cards()}</div></div></div>
+        <div class="dossier"><h2>SERBIA</h2><h4>Objectives, ranked</h4><p>1. ${obj} [1]</p><h4>Paradoxes</h4><p>${par} [2]</p></div>` },
+  ];
+
+  // WarGames: outlines only, glow by posture strength
+  function drawVector(svg, v) {
+    const { width, height } = svg.node().getBoundingClientRect();
+    const proj = d3.geoNaturalEarth1().fitExtent([[6, 6], [width - 6, height - 6]], world);
+    const path = d3.geoPath(proj);
+    svg.append("rect").attr("width", width).attr("height", height).attr("fill", "#000");
+    const defs = svg.append("defs");
+    const glow = defs.append("filter").attr("id", `${svg.attr("id")}-glow`).attr("x", "-20%").attr("y", "-20%").attr("width", "140%").attr("height", "140%");
+    glow.append("feGaussianBlur").attr("stdDeviation", 1.6).attr("result", "b");
+    const m = glow.append("feMerge"); m.append("feMergeNode").attr("in", "b"); m.append("feMergeNode").attr("in", "SourceGraphic");
+    const [[x0, y0], [x1, y1]] = path.bounds(world.features.find(f => f.id === POV));
+    const k = Math.min(14, Math.min(width, height) / (Math.max(x1 - x0, y1 - y0) * 8));
+    const g = svg.append("g").attr("transform", `translate(${width / 2 - k * (x0 + x1) / 2},${height / 2 - k * (y0 + y1) / 2}) scale(${k})`);
+    g.append("path").attr("d", path(d3.geoGraticule10())).attr("fill", "none").attr("stroke", "#1f4a6e").attr("stroke-width", .5 / k).attr("stroke-dasharray", `${2 / k} ${3 / k}`);
+    g.selectAll("path.c").data(world.features).join("path").attr("d", path).attr("fill", "none").attr("stroke", v.coast).attr("stroke-width", .6 / k).attr("stroke-opacity", .7);
+    const sc = world.features.filter(f => f.id === POV || (stances[f.id] && stances[f.id].grade !== "neutral"));
+    const col = f => f.id === POV ? v.pov : stances[f.id].grade === "claimed_territory" ? v.hostile : v[SIDE[stances[f.id].grade]];
+    g.selectAll("path.p").data(sc).join("path").attr("d", path).attr("fill", f => f.id === POV ? v.pov : col(f)).attr("fill-opacity", f => f.id === POV ? .18 : (FRAC[stances[f.id].grade] || .3) * .22)
+      .attr("stroke", col).attr("stroke-width", f => (f.id === POV ? 2.2 : stances[f.id].grade === "claimed_territory" ? 1.2 : 1 + (FRAC[stances[f.id].grade] || .3) * 1.4) / k)
+      .attr("stroke-dasharray", f => f.id !== POV && stances[f.id].grade === "claimed_territory" ? `${3 / k} ${2 / k}` : null)
+      .attr("filter", `url(#${svg.attr("id")}-glow)`);
+    const labels = data.actors.filter(a => a.id === POV || (stances[a.id] && stances[a.id].grade !== "neutral")).filter(a => world.features.find(f => f.id === a.id));
+    g.selectAll("text").data(labels).join("text").attr("transform", a => { const [x, y] = path.centroid(world.features.find(f => f.id === a.id)); return `translate(${x},${y}) scale(${1 / k})`; })
+      .attr("text-anchor", "middle").attr("font-family", v.font).attr("font-size", 11).attr("letter-spacing", ".12em").attr("fill", a => a.id === POV ? v.pov : col(world.features.find(f => f.id === a.id))).attr("paint-order", "stroke").attr("stroke", "#000").attr("stroke-width", 3)
+      .text(a => (a.short || a.name).toUpperCase());
+  }
+
+  function drawPosture(svg, v) {
+    const { width, height } = svg.node().getBoundingClientRect();
+    const proj = d3.geoNaturalEarth1().fitExtent([[6, 6], [width - 6, height - 6]], world);
+    const path = d3.geoPath(proj);
+    svg.append("rect").attr("width", width).attr("height", height).attr("fill", v.sea);
+    const defs = svg.append("defs");
+    const [[x0, y0], [x1, y1]] = path.bounds(world.features.find(f => f.id === POV));
+    const k = Math.min(14, Math.min(width, height) / (Math.max(x1 - x0, y1 - y0) * 9));
+    const tx = width / 2 - k * (x0 + x1) / 2, ty = height / 2 - k * (y0 + y1) / 2;
+    Object.entries(FRAC).forEach(([g, frac]) => {
+      const r = Math.sqrt(16 * frac / Math.PI);
+      defs.append("pattern").attr("id", `${svg.attr("id")}-s-${g}`).attr("width", 4).attr("height", 4).attr("patternUnits", "userSpaceOnUse").attr("patternTransform", `scale(${1 / k})`)
+        .append("circle").attr("cx", 2).attr("cy", 2).attr("r", r).attr("fill", v[SIDE[g]]);
+    });
+    const hatch = defs.append("pattern").attr("id", `${svg.attr("id")}-h`).attr("width", 5).attr("height", 5).attr("patternUnits", "userSpaceOnUse").attr("patternTransform", `rotate(45) scale(${1 / k})`);
+    hatch.append("rect").attr("width", 1.8).attr("height", 5).attr("fill", v.hostile);
+    const g = svg.append("g").attr("transform", `translate(${tx},${ty}) scale(${k})`);
+    if (v.grat) g.append("path").attr("d", path(d3.geoGraticule10())).attr("fill", "none").attr("stroke", v.grat).attr("stroke-width", .6 / k);
+    g.selectAll("path.c").data(world.features).join("path").attr("d", path).attr("fill", v.land).attr("stroke", v.coast).attr("stroke-width", .5 / k);
+    const sc = world.features.filter(f => f.id === POV || stances[f.id]);
+    g.selectAll("path.p").data(sc).join("path").attr("d", path).attr("fill", f => f.id === POV ? v.pov : stances[f.id].grade === "neutral" ? "none" : stances[f.id].grade === "claimed_territory" ? `url(#${svg.attr("id")}-h)` : `url(#${svg.attr("id")}-s-${stances[f.id].grade})`);
+    const bonded = world.features.filter(f => stances[f.id] && ["kin", "grievance"].includes(stances[f.id].bond));
+    bonded.forEach(f => defs.append("clipPath").attr("id", `${svg.attr("id")}-clip-${f.id}`).append("path").attr("d", path(f)));
+    g.selectAll("path.b").data(bonded).join("path").attr("d", path).attr("fill", "none").attr("stroke", f => stances[f.id].bond === "kin" ? v.partner : v.hostile).attr("stroke-width", 3.4 / k).attr("clip-path", f => `url(#${svg.attr("id")}-clip-${f.id})`);
+    const labels = data.actors.filter(a => a.id === POV || stances[a.id]).filter(a => world.features.find(f => f.id === a.id));
+    g.selectAll("text").data(labels).join("text").attr("transform", a => { const [x, y] = path.centroid(world.features.find(f => f.id === a.id)); return `translate(${x},${y}) scale(${1 / k})`; })
+      .attr("text-anchor", "middle").attr("font-family", v.font).attr("font-weight", 700).attr("font-size", 10).attr("letter-spacing", ".1em").attr("fill", a => a.id === POV ? v.paper : v.ink).attr("paint-order", "stroke").attr("stroke", a => a.id === POV ? v.pov : v.land).attr("stroke-width", 2.5).attr("stroke-opacity", .9)
+      .text(a => (a.short || a.name).toUpperCase());
+  }
+
+  const host = document.getElementById("themes");
+  THEMES.forEach(t => {
+    const sec = document.createElement("section"); sec.className = "prop";
+    sec.innerHTML = `<p class="lbl">${t.name}</p><p class="desc">${t.desc}</p><div class="ui ${t.cls}">${t.html(t.v)}</div>`;
+    host.appendChild(sec);
+    (t.draw === "vector" ? drawVector : drawPosture)(d3.select(`#m-${t.id}`), t.v);
+  });
+})();
+</script>
+</body>
+</html>
