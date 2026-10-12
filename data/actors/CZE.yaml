@@ -1,14 +1,179 @@
 id: CZE
 name: Czech Republic
+short: Czechia
 type: state
+coords: [14.42, 50.09]
 iso2: cz
 wikipedia: https://en.wikipedia.org/wiki/Czech_Republic
-coords:
-- 14.42
-- 50.09
 seat: Prague
-regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+regions: ['central-north-europe']
+card: full
+tier: protagonist
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Stay inside the Euro-Atlantic security perimeter (NATO since 1999, EU) with Russia as the named principal threat, but at a lower price: the Babiš cabinet keeps the F-35 contract and the NATO membership while cutting the defence budget to about 1.8% of GDP in 2026 (NATO method) and promising 2% only for 2027."
+      confidence: B
+      sources:
+        - {url: "https://www.expats.cz/czech-news/article/czech-government-to-boost-defence-budget-by-czk-36-billion-to-hit-nato-target", title: "Czech government to boost defence budget by CZK 36 billion to hit NATO target", publisher: "Expats.cz", date: 2026-07-07, tier: 3}
+        - {url: "https://euronews.com/2026/03/12/czech-2026-budget-passes-but-defence-outlays-fall-short-of-nato-pledge", title: "Czech 2026 budget passes but defence outlays fall short of NATO pledge", publisher: "Euronews", date: 2026-03-12, tier: 3}
+        - {url: "https://www.e15.cz/domaci/rusko-loni-zustavalo-nejvetsi-bezpecnostni-hrozbou-pro-cesko-uvadi-bis-1418558", title: "Russia remained the biggest security threat to Czechia last year, BIS says", title_original: "Rusko loni zůstávalo největší bezpečnostní hrozbou pro Česko, uvádí BIS", lang: cs, publisher: "E15", date: 2026-08, tier: 3}
+    - rank: 2
+      text: "Energy security through nuclear power and the end of Russian fuel: two APR-1000 units at Dukovany from Korea's KHNP (contract signed 4 Jun 2025, CZK 407bn, construction aimed at 2029), no Russian pipeline oil since April 2025 after the TAL upgrade, no Russian gas since 2023, coal exit by 2033 and a nuclear share of 68% by 2040."
+      confidence: A
+      sources:
+        - {url: "https://world-nuclear-news.org/articles/czech-supreme-court-lifts-ban-on-signing-dukovany-contract", title: "Czech-KHNP Dukovany contract signed after court lifts injunction", publisher: "World Nuclear News", date: 2025-06-04, tier: 3}
+        - {url: "https://www.freemalaysiatoday.com/category/world/2025/04/17/czechs-hail-end-of-russian-oil-dependence", title: "Czechs hail end of Russian oil dependence", publisher: "Free Malaysia Today (Reuters/AFP)", date: 2025-04-17, tier: 3}
+        - {url: "https://www.nucnet.org/news/czech-republic-unveils-plans-for-68-nuclear-share-by-2040-1-4-2025", title: "Czech Republic unveils plans for 68% nuclear share by 2040", publisher: "NucNet", date: 2025-04-01, tier: 3}
+    - rank: 3
+      text: "Protect the German-linked export and car industry from EU climate rules: the coalition programme calls the Green Deal unsustainable in its current form, rejects the 2035 combustion-engine ban and ETS2, and promises cheaper energy."
+      confidence: B
+      sources:
+        - {url: "https://www.newstream.cz/politika/babisova-vlada-vyhlasila-valku-green-dealu-eu-se-obava-dalsiho-rebela", title: "Babiš's government has declared war on the Green Deal; the EU fears another rebel", title_original: "Babišova vláda vyhlásila válku Green Dealu, EU se obává dalšího rebela", lang: cs, publisher: "Newstream.cz", date: 2025-12, tier: 3}
+        - {url: "https://cnn.iprima.cz/babis-vyjmenoval-prvni-kroky-vlady-odmitneme-migracni-pakt-a-ets-2-prislibil-487729", title: "Babiš listed the government's first steps: we will reject the migration pact and ETS2", title_original: "Babiš vyjmenoval první kroky vlády: Odmítneme migrační pakt a nové emisní povolenky, slíbil", lang: cs, publisher: "CNN Prima News", date: 2025-12, tier: 3}
+        - {url: "https://www.fortune.com/europe/article/czech-republic-quiet-automotive-giant-skoda-bucking-economic-downturn-germany", title: "Czech Republic: the quiet automotive giant bucking Germany's downturn", publisher: "Fortune Europe", date: 2025-01-21, tier: 3}
+    - rank: 4
+      text: "Keep Czech taxpayers out of Ukraine's bill without giving up the ammunition channel: Babiš kept the Czech-led initiative in January 2026 as 'coordinator' with no state money, opted out of the EUR 90bn EU loan guarantees (19 Dec 2025) and wants NATO to carry more of it; the Czech arms industry (CSG) is the supplier either way."
+      confidence: A
+      sources:
+        - {url: "https://www.expats.cz/czech-news/article/czech-government-to-keep-ammunition-initiative-but-without-state-funding", title: "Czech government to keep ammunition initiative, but without state funding", publisher: "Expats.cz", date: 2026-01, tier: 3}
+        - {url: "https://www.expats.cz/czech-news/article/prague-stands-with-slovakia-and-hungary-in-ukraine-loan-refusal", title: "EU Summit stand-off: Czechia opts out of Ukraine loan alongside Slovakia, Hungary", publisher: "Expats.cz", date: 2025-12-20, tier: 3}
+        - {url: "https://www.osw.waw.pl/en/publikacja/33685/pdf", title: "EU summit decision on financing Ukraine and the Czech, Slovak and Hungarian opt-out (enhanced cooperation, Article 20 TEU)", publisher: "OSW", date: 2025-12, tier: 2}
+    - rank: 5
+      text: "Close the migration door: reject the EU pact's relocation, apply 'zero tolerance' on illegal migration, and tighten the temporary-protection rules for Ukrainian refugees (a bill in first reading in June 2026, most changes planned for 1 Jan 2027)."
+      confidence: B
+      sources:
+        - {url: "https://www.expats.cz/czech-news/article/czech-pm-firmly-pushes-back-against-eu-s-migration-pact-calling-for-zero-tolerance", title: "Czech government says it will reject EU migration reform, calls for zero-tolerance policy", publisher: "Expats.cz", date: 2025-12, tier: 3}
+        - {url: "https://dip.euaa.europa.eu/node/13657", title: "Czechia - new legislation comes into force as of 12 June 2026 to implement the Pact", publisher: "European Union Agency for Asylum", date: 2026-06-12, tier: 1}
+        - {url: "https://news.liga.net/en/world/news/czech-authorities-plan-to-tighten-rules-of-temporary-protection-for-ukrainian-refugees", title: "Czech authorities plan to tighten rules of temporary protection for Ukrainian refugees", publisher: "Liga.net", date: 2026-06, tier: 3}
+    - rank: 6
+      text: "Rebuild regional weight with the 'three musketeers' (Slovakia, Poland) and a revived Visegrad Group after Orbán's fall in April 2026, plus the Slavkov format with Austria, while seeking 'pragmatic' business ties with Beijing and an openly pro-Israel line (embassy move to Jerusalem announced as expected in 2026)."
+      confidence: B
+      sources:
+        - {url: "https://444.hu/2026/05/04/babis-es-fico-mar-arrol-posztol-tuskkal-hogy-nagyon-varjak-a-negyedik-musketast-magyar-petert", title: "Babiš and Fico are already posting with Tusk that they eagerly await the fourth musketeer, Péter Magyar", title_original: "Babiš és Fico már arról posztol Tuskkal, hogy nagyon várják a negyedik muskétást, Magyar Pétert", lang: hu, publisher: "444.hu", date: 2026-05-04, tier: 3}
+        - {url: "https://www.fpri.org/article/2026/04/hungarian-elections-ramifications-for-central-europe/", title: "Hungarian elections: ramifications for Central Europe", publisher: "Foreign Policy Research Institute", date: 2026-04, tier: 2}
+        - {url: "https://www.jns.org/saar-set-for-diplomatic-visit-to-czech-republic/", title: "Saar set for diplomatic visit to Czech Republic", publisher: "JNS", date: 2026-01, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "Coordinator and broker rather than payer: Prague runs the shell-procurement channel for Ukraine (more than 4 million rounds since 2024, up to half of Ukraine's large-calibre ammunition), while the cabinet wins domestic credit by opting out of EU guarantees (Article 20 TEU) alongside Slovakia and Hungary. The president runs a second, separate channel (NATO summit, the Dalai Lama meeting of July 2025)."
+      confidence: A
+      sources:
+        - {url: "https://news.liga.net/en/war/news/president-of-the-czech-republic-coalition-of-ammunition-for-ukraine-has-been-halved", title: "President of the Czech Republic: 'Coalition of Ammunition' for Ukraine has been halved", publisher: "Liga.net", date: 2026-05-26, tier: 3}
+        - {url: "https://www.pravda.com.ua/eng/news/2025/12/19/8012550", title: "EUR 90bn for Ukraine: EU summit approves exemption for Hungary, Slovakia and Czechia", publisher: "Ukrainska Pravda", date: 2025-12-19, tier: 3}
+        - {url: "https://chinaobservers.eu/is-a-czech-china-policy-reset-likely-under-babis-2-0/", title: "Is a Czech China policy reset likely under Babiš 2.0?", publisher: "CHOICE / AMO (Ivana Karásková)", date: 2026-08-03, tier: 2}
+    - domain: informational
+      text: "Public attribution of Russian operations, now weaker at the centre: Vrbětice (2021), the Prague bus-depot arson (2024), national sanctions on Medvedchuk and 'Voice of Europe' (March 2024) and the annual BIS reports, which rate Russia the main threat and warn of 'one-time agents' aimed at firms that make aid for Ukraine. Counter-pressure: Foreign Minister Macinka dissolved the ministry unit on sanctions and Russian influence."
+      confidence: B
+      sources:
+        - {url: "https://www.czdefence.eu/article/bis-annual-report-reveals-how-russia-is-changing-its-tactics-and-china-is-stepping-up-intelligence-pressure", title: "BIS annual report reveals how Russia is changing its tactics and China is stepping up intelligence pressure", publisher: "CZ Defence", date: 2026-08, tier: 3}
+        - {url: "https://www.swissinfo.ch/eng/czechs-sanction-medvedchuk%2c-website-over-pro-russian-eu-political-influence/74431307", title: "Czechs sanction Medvedchuk, website over pro-Russian EU political influence", publisher: "Reuters via SWI swissinfo.ch", date: 2024-03, tier: 3}
+        - {url: "https://www.seznamzpravy.cz/clanek/domaci-kauzy-macinka-rozpustil-ministersky-odbor-ktery-se-venoval-sankcim-a-ruskemu-vlivu-301720", title: "Macinka dissolved the ministry department that dealt with sanctions and Russian influence", title_original: "Macinka rozpustil ministerský odbor, který se věnoval sankcím a ruskému vlivu", lang: cs, publisher: "Seznam Zprávy", date: 2026, tier: 3}
+    - domain: military
+      text: "Equipment and industry: 24 F-35A (CZK 150bn, deliveries 2031-2035) kept by Babiš in February 2026 because cancellation would cost about CZK 30bn; a defence budget of CZK 154.8bn in 2026 (about 1.8% of GDP by NATO's method, 2.06% by the government's); a plan for CZK 190bn in 2027. The arms industry (CSG) produced 2.7 million of the 3.7 million rounds delivered to Ukraine through the Czech channel."
+      confidence: B
+      sources:
+        - {url: "https://cnn.iprima.cz/zrusenim-nakupu-f-35-by-cesko-prislo-o-30-miliard-rekl-babis-ano-a-spd-ho-chteli-rusit-504565", title: "Cancelling the F-35 purchase would cost Czechia CZK 30bn, Babiš said", title_original: "Zrušením nákupu F-35 by Česko přišlo o 30 miliard, řekl Babiš", lang: cs, publisher: "CNN Prima News", date: 2026-02, tier: 3}
+        - {url: "https://english.radio.cz/node/8806970", title: "Czechia signs agreement on purchase of US F-35 fighter jets for Czech military", publisher: "Radio Prague International", date: 2024, tier: 3}
+        - {url: "https://www.expats.cz/czech-news/article/czech-government-to-boost-defence-budget-by-czk-36-billion-to-hit-nato-target", title: "Czech government to boost defence budget by CZK 36 billion to hit NATO target", publisher: "Expats.cz", date: 2026-07-07, tier: 3}
+        - {url: "https://rubryka.com/en/2026/01/07/snaryadnoyi-initsiatyvy", title: "Czech Republic maintains Ukraine ammo supply plan but withdraws state funding - PM Babiš", publisher: "Rubryka", date: 2026-01-07, tier: 3}
+    - domain: economic
+      text: "State-led energy build and an export model tied to Germany: a state loan estimated at EUR 23-30bn plus a 40-year two-way contract for difference for Dukovany (notified 2 Oct 2025, under formal Commission review); Škoda and the supply chain behind Volkswagen; Germany takes about a third of exports. The TAL pipeline upgrade (EUR 61m, capacity 8 Mt a year) replaced Druzhba."
+      confidence: B
+      sources:
+        - {url: "https://oenergetice.cz/en/quick-news/commission-raises-concerns-over-support-for-new-dukovany-units", title: "Commission raises concerns over support for new Dukovany units", publisher: "Oenergetice.cz", date: 2026-06-08, tier: 3}
+        - {url: "https://www.hellenicshippingnews.com/czech-republic-ready-to-end-russian-crude-imports-after-launching-tal-pipeline-upgrade/", title: "Czech Republic ready to end Russian crude imports after launching TAL pipeline upgrade", publisher: "Hellenic Shipping News (Reuters)", date: 2025-04, tier: 3}
+        - {url: "https://www.czechtradeoffices.com/hr/novosti/exports-from-the-czech-republic-are-estimated-to-reach-a-record-this-year", title: "Exports from the Czech Republic are estimated to reach a record this year", publisher: "CzechTrade / Association of Exporters", date: 2025-11-28, tier: 3}
+
+  constraints:
+    - text: "A divided executive: the cabinet (ANO, SPD, Motorists; 108 of 200 seats) and the president disagree on foreign policy. Pavel refused to appoint Motorists' Filip Turek as minister, the government survived a no-confidence vote in February 2026 (84 votes for, 101 needed), and Pavel vetoed a budget-rules law; Macinka threatened to keep him from NATO summits."
+      confidence: A
+      sources:
+        - {url: "https://wtop.com/europe/2026/02/the-new-czech-government-of-populist-prime-minister-babis-survives-parliamentary-no-confidence-vote/", title: "The new Czech government of populist prime minister Babiš survives parliamentary no-confidence vote", publisher: "Associated Press via WTOP", date: 2026-02, tier: 3}
+        - {url: "https://www.novinky.cz/clanek/domaci-ohrozuje-tim-vsechno-babis-a-schillerova-reaguji-na-prezidentovo-veto-40589322", title: "'He is endangering everything': Babiš and Schillerová react to the president's veto", title_original: "Ohrožuje tím všechno, Babiš a Schillerová reagují na prezidentovo veto", lang: cs, publisher: "Novinky.cz", date: 2026, tier: 3}
+        - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2025-10-06/parliamentary-elections-czech-republic-babiss-triumph", title: "Parliamentary elections in the Czech Republic: Babiš's triumph", publisher: "OSW", date: 2025-10-06, tier: 2}
+    - text: "Industrial dependence on Germany and the car chain: Germany took EUR 77.8bn of Czech goods in 2023 (about a third of exports) and Škoda alone is close to a tenth of the economy; a slump in German demand or a US car tariff reaches Czech output directly."
+      confidence: B
+      sources:
+        - {url: "https://www.fortune.com/europe/article/czech-republic-quiet-automotive-giant-skoda-bucking-economic-downturn-germany", title: "Czech Republic: the quiet automotive giant bucking Germany's downturn", publisher: "Fortune Europe", date: 2025-01-21, tier: 3}
+        - {url: "https://www.cnb.cz/en/monetary-policy/monetary-policy-reports/boxes-and-articles/Czech-exports-holding-course-amid-a-storm-of-uncertainty", title: "Czech exports holding course amid a storm of uncertainty", publisher: "Czech National Bank", date: 2025, tier: 1}
+    - text: "The ammunition channel lives on other people's money: Prague needs about EUR 5bn in 2026 and had EUR 1.4bn by February; funders fell from 18 to about nine after Babiš's return; Germany, Denmark and the Netherlands carry most of it (Germany added EUR 300m in June 2026)."
+      confidence: B
+      sources:
+        - {url: "https://euromaidanpress.com/2026/02/11/czech-ammunition-initiative-for-ukraine-needs-e5-billion-in-2026-only-e1-4-billion-raised-so-far", title: "Czech ammunition initiative for Ukraine needs EUR 5 billion in 2026 - only EUR 1.4 billion raised so far", publisher: "Euromaidan Press", date: 2026-02-11, tier: 3}
+        - {url: "https://news.liga.net/en/war/news/president-of-the-czech-republic-coalition-of-ammunition-for-ukraine-has-been-halved", title: "President of the Czech Republic: 'Coalition of Ammunition' for Ukraine has been halved", publisher: "Liga.net", date: 2026-05-26, tier: 3}
+        - {url: "https://euromaidanpress.com/?p=410524", title: "Germany adds EUR 300 million to Czech ammunition drive, about 50,000 long-range rounds for Ukraine", publisher: "Euromaidan Press", date: 2026-06, tier: 3}
+    - text: "Brussels holds the nuclear financing: the Commission opened an in-depth State-aid investigation into the two-unit Dukovany package (loan EUR 23-30bn, 40-year CfD), says the support may be too generous and expects a decision by end-2026; the 2024 approval covered only one unit."
+      confidence: B
+      sources:
+        - {url: "https://oenergetice.cz/en/quick-news/commission-raises-concerns-over-support-for-new-dukovany-units", title: "Commission raises concerns over support for new Dukovany units", publisher: "Oenergetice.cz", date: 2026-06-08, tier: 3}
+        - {url: "https://world-nuclear-news.org/articles/czech-republic-seeks-ec-funding-approval-for-second-new-nuclear-unit", title: "Czech Republic seeks EC funding approval for second new nuclear unit", publisher: "World Nuclear News", date: 2025, tier: 3}
+    - text: "Weak counter-Russia capacity and a hybrid threat that targets the Czech arms industry: BIS says sabotage risk centres on firms producing or delivering aid to Ukraine; Russia's Defence Ministry and Medvedev named Czech companies as possible targets; the ministry's sanctions unit was closed and tighter rules for Russian diplomats were delayed until Moscow tightened those on Czech staff in 2026."
+      confidence: B
+      sources:
+        - {url: "https://www.expats.cz/czech-news/article/russia-linked-threats-target-czechia-online-and-off", title: "Fresh wave of Russian-linked threats hits Czechia online and off", publisher: "Expats.cz", date: 2026, tier: 3}
+        - {url: "https://www.ceskenoviny.cz/index_view.php?id=2869629", title: "Macinka rejects Russian ambassador's explanation of Leipzig incidents", title_original: "Macinka odmítl vysvětlení ruské velvyslankyně", lang: cs, publisher: "Czech News Agency (ČTK)", date: 2026-09-03, tier: 3}
+    - text: "Isolation inside the EU if it follows Bratislava: Politico's phrase for Czechia, Slovakia and Hungary after December 2025 was 'pariah status'; with Orbán beaten in the April 2026 election, Prague's partners for a V4 revival are Tusk and Magyar, who are pro-EU and pro-Ukraine."
+      confidence: C
+      sources:
+        - {url: "https://www.expats.cz/czech-news/article/prague-stands-with-slovakia-and-hungary-in-ukraine-loan-refusal", title: "EU Summit stand-off: Czechia opts out of Ukraine loan alongside Slovakia, Hungary", publisher: "Expats.cz", date: 2025-12-20, tier: 3}
+        - {url: "https://www.fpri.org/article/2026/04/hungarian-elections-ramifications-for-central-europe/", title: "Hungarian elections: ramifications for Central Europe", publisher: "Foreign Policy Research Institute", date: 2026-04, tier: 2}
+
+  paradoxes:
+    - text: "Coordinating the ammunition channel without paying for it hollows out the channel. The 'no Czech crown' line won votes, yet the number of funders fell from 18 to about nine, only EUR 1.4bn of the EUR 5bn needed for 2026 had been raised by February; the thing that gave Prague leverage with Berlin and Washington (more than 4 million rounds, half of Ukraine's supply) is the thing the cabinet is letting wither."
+      confidence: B
+      sources:
+        - {url: "https://news.liga.net/en/war/news/president-of-the-czech-republic-coalition-of-ammunition-for-ukraine-has-been-halved", title: "President of the Czech Republic: 'Coalition of Ammunition' for Ukraine has been halved", publisher: "Liga.net", date: 2026-05-26, tier: 3}
+        - {url: "https://euromaidanpress.com/2026/02/11/czech-ammunition-initiative-for-ukraine-needs-e5-billion-in-2026-only-e1-4-billion-raised-so-far", title: "Czech ammunition initiative for Ukraine needs EUR 5 billion in 2026 - only EUR 1.4 billion raised so far", publisher: "Euromaidan Press", date: 2026-02-11, tier: 3}
+    - text: "Saving on defence while locking in the most expensive weapon in the country's history. Babiš cut the 2026 defence budget below the NATO line (about 1.8%, against 2.35% planned by Fiala) and 'certainly' rejects the 3.5% path, but the F-35 prepayments are not refundable, so the money that is spent goes to an American system whose first delivery is 2031 - paying the price of credibility without getting the credibility."
+      confidence: B
+      sources:
+        - {url: "https://finance.yahoo.com/news/czech-republic-certainly-not-path-135729457.html", title: "Czech Republic 'certainly not' on path to higher defence spending target, says Babis", publisher: "Reuters via Yahoo Finance", date: 2026, tier: 3}
+        - {url: "https://cnn.iprima.cz/zrusenim-nakupu-f-35-by-cesko-prislo-o-30-miliard-rekl-babis-ano-a-spd-ho-chteli-rusit-504565", title: "Cancelling the F-35 purchase would cost Czechia CZK 30bn, Babiš said", title_original: "Zrušením nákupu F-35 by Česko přišlo o 30 miliard, řekl Babiš", lang: cs, publisher: "CNN Prima News", date: 2026-02, tier: 3}
+        - {url: "https://www.yahoo.com/news/czech-government-gradually-lift-defence-164514496.html", title: "Czech Republic to lift defence spending to 3% of GDP by 2030, PM says", publisher: "Reuters via Yahoo", date: 2025-03, tier: 3}
+    - text: "Energy independence needs the Brussels the cabinet attacks. Prague escaped Russian oil and gas and chose Korea over France and the US for Dukovany, but the loan of EUR 23-30bn and the 40-year price guarantee need Commission approval; a government that calls the Green Deal 'unsustainable', rejects ETS2 and takes opt-outs is asking the same Commission for a state loan of up to EUR 30bn."
+      confidence: B
+      sources:
+        - {url: "https://oenergetice.cz/en/quick-news/commission-raises-concerns-over-support-for-new-dukovany-units", title: "Commission raises concerns over support for new Dukovany units", publisher: "Oenergetice.cz", date: 2026-06-08, tier: 3}
+        - {url: "https://www.newstream.cz/politika/babisova-vlada-vyhlasila-valku-green-dealu-eu-se-obava-dalsiho-rebela", title: "Babiš's government has declared war on the Green Deal; the EU fears another rebel", title_original: "Babišova vláda vyhlásila válku Green Dealu, EU se obává dalšího rebela", lang: cs, publisher: "Newstream.cz", date: 2025-12, tier: 3}
+    - text: "The Ukraine opt-out buys a domestic win and loses the room. Standing with Fico and Orbán on the EUR 90bn loan made Czechia, in Politico's phrase, nearly a pariah just as Orbán fell in April 2026; the V4 revival Babiš wants now depends on Tusk and Magyar, whose terms are the opposite of the opt-out."
+      confidence: C
+      sources:
+        - {url: "https://www.pravda.com.ua/eng/news/2025/12/19/8012550", title: "EUR 90bn for Ukraine: EU summit approves exemption for Hungary, Slovakia and Czechia", publisher: "Ukrainska Pravda", date: 2025-12-19, tier: 3}
+        - {url: "https://ct24.ceskatelevize.cz/clanek/svet/podle-macinky-cesko-prislo-v-orbanovi-o-spojence-havlicek-poblahopral-vitezi-372304", title: "According to Macinka, Czechia lost an ally in Orbán; Havlíček congratulated the winner", title_original: "Podle Macinky Česko přišlo v Orbánovi o spojence", lang: cs, publisher: "Czech Television (ČT24)", date: 2026-04, tier: 3}
+    - text: "A 'pragmatic' China line that costs Taiwan ties and buys little. The cabinet refused a government aircraft for Senate President Vystrčil's Taiwan trip (April 2026) and Okamura went to China (July 2026), yet Beijing had already cut contact with Pavel, the 2023 security strategy still treats China as a security problem, BIS reports more Chinese intelligence activity, and the visible gains are tourists, flights and a visa-free regime."
+      confidence: B
+      sources:
+        - {url: "https://sinopsis.cz/?p=11651", title: "Czech-Taiwan relations under Babiš: the shift is real, but shallow", publisher: "Sinopsis (Martin Hála)", date: 2026-05-26, tier: 2}
+        - {url: "https://chinaobservers.eu/is-a-czech-china-policy-reset-likely-under-babis-2-0/", title: "Is a Czech China policy reset likely under Babiš 2.0?", publisher: "CHOICE / AMO (Ivana Karásková)", date: 2026-08-03, tier: 2}
+    - text: "Cutting the anti-Russia apparatus while Russia targets the companies that make Czech weapons. The ministry unit on sanctions and Russian influence was dissolved, rules on Russian diplomats were stalled, and the same cabinet coordinates a programme that BIS names as the main sabotage target; the reciprocal measures announced on 3 Sep 2026 came only after Moscow tightened life for Czech diplomats."
+      confidence: B
+      sources:
+        - {url: "https://www.seznamzpravy.cz/clanek/domaci-kauzy-macinka-rozpustil-ministersky-odbor-ktery-se-venoval-sankcim-a-ruskemu-vlivu-301720", title: "Macinka dissolved the ministry department that dealt with sanctions and Russian influence", title_original: "Macinka rozpustil ministerský odbor, který se věnoval sankcím a ruskému vlivu", lang: cs, publisher: "Seznam Zprávy", date: 2026, tier: 3}
+        - {url: "https://www.ceskenoviny.cz/index_view.php?id=2869629", title: "Macinka rejects Russian ambassador's explanation of Leipzig incidents", title_original: "Macinka odmítl vysvětlení ruské velvyslankyně", lang: cs, publisher: "Czech News Agency (ČTK)", date: 2026-09-03, tier: 3}
+        - {url: "https://www.czdefence.eu/article/bis-annual-report-reveals-how-russia-is-changing-its-tactics-and-china-is-stepping-up-intelligence-pressure", title: "BIS annual report reveals how Russia is changing its tactics and China is stepping up intelligence pressure", publisher: "CZ Defence", date: 2026-08, tier: 3}
+
+  reading: |
+    Czechia in 2026 runs two foreign policies out of one state. The government
+    of Andrej Babiš (ANO with the SPD and the Motorists, in office since December
+    2025) wants a cheaper, more domestic and more bilateral Czech Republic: no
+    Czech money for Ukraine, no migration pact relocation, no Green Deal, a
+    cautious opening to Beijing and a warm one to Jerusalem. The president, Petr
+    Pavel, the intelligence services and most of the arms industry keep the older
+    line: Russia as the threat, NATO and Berlin as the frame, Ukraine's war as
+    Czechia's own. Luttwak's pattern is the squeeze between them: each saving
+    made for the voter (the ammunition channel left unfunded, defence at 1.8%,
+    the opt-out from the EU loan) erodes a lever that Prague needs elsewhere -
+    leverage in Berlin and Washington, credibility in NATO, goodwill in Brussels
+    that the Dukovany loan will need before the end of 2026. What has not
+    changed is the structure: Russian oil and gas are out, the Korean nuclear
+    build is under way, Germany still takes a third of exports, and every
+    hostile act from Moscow (the BIS warnings, the September 2026 reciprocal
+    measures) pushes the cabinet back toward the line it ran against. Two signals
+    that are not rows: Babiš said in March 2026 that he was not planning a White
+    House visit and that the EU is 'always the most important'; and Pavel's
+    own suggestion in June 2026 that Czechia should drop the koruna for the
+    euro if it holds the country back, which the cabinet (which dropped the
+    annual euro-readiness report) will not follow.

@@ -1,0 +1,457 @@
+from: BGR
+relations:
+  # ---------- objective ----------
+  - to: MKD
+    layer: objective
+    type: recognition_sought
+    summary: "Sofia requires that the constitution of North Macedonia name Bulgarians among its peoples (the July 2022 French-proposal consensus, two protocols to the 2017 treaty) before it lifts the block on EU negotiations in place since November 2020. Zhelyazkov (Oct 2025): no new condition; Radev as prime minister (18 Jun 2026): Skopje's leadership is doing everything to delay accession. Mirrored from Skopje's rows toward Bulgaria, same sources."
+    since: 2020-11-17
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.bta.bg/en/news/bulgaria/1150083-north-macedonia-s-leadership-doing-everything-possible-to-delay-eu-membership-p", title: "North Macedonia's leadership doing everything possible to delay EU membership, PM Radev says", publisher: "BTA", date: 2026-06-18, tier: 3}
+      - {url: "https://www.bta.bg/en/news/balkans/1018537-pm-zhelyazkov-bulgaria-is-not-setting-new-conditions-for-republic-of-north-mace", title: "PM Zhelyazkov: Bulgaria is not setting new conditions for Republic of North Macedonia's EU path", publisher: "BTA", date: 2025-10, tier: 3}
+      - {url: "https://www.bta.bg/en/news/balkans/1053499-north-macedonia-pm-mickoski-sets-two-conditions-for-constitutional-amendments", title: "North Macedonia PM Mickoski sets two conditions for constitutional amendments", publisher: "BTA", date: 2026-01-29, tier: 3}
+      - {url: "https://enlargement-infohub.eu/wp-content/uploads/2025/11/north-macedonia-report-2025.pdf", title: "North Macedonia 2025 Report (SWD(2025) 753)", publisher: "European Commission", date: 2025-11-04, tier: 1}
+  - to: RUS
+    layer: objective
+    type: influence_goal
+    summary: "The Radev cabinet seeks 'pragmatic' relations with Moscow inside the EU and NATO: no state arms aid to Ukraine, a veto threat against the 21st sanctions package over Patriarch Kirill and Lukoil's Alekperov, and (as a candidate, undated) the view that Crimea is 'currently Russian'. Zakharova (29 May 2026): no sign from Sofia of restoring dialogue."
+    since: 2026-05-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "The aim is a posture, not a stated policy document; the sources are press and analyst readings, and Moscow denies it sees a turn."
+    sources:
+      - {url: "https://www.veridica.ro/en/opinions/rumen-radev-may-be-positioning-bulgaria-as-russias-new-darling-within-the-eu", title: "Rumen Radev may be positioning Bulgaria as Russia's new darling within the EU", publisher: "Veridica", date: 2026-07, tier: 3}
+      - {url: "https://www.novinite.com/view_news.php?id=238749", title: "Moscow Says No Sign Yet From Bulgaria to Restore Dialogue With Russia", publisher: "Novinite", date: 2026-05-29, tier: 3}
+      - {url: "https://based.info/bulgarias-radev-poised-for-victory-in-sunday-poll-testing-eu-unity-on-russia/", title: "Bulgaria's Radev poised for victory in Sunday poll, testing EU unity on Russia", publisher: "Based.info", date: 2026-04, tier: 3}
+  - to: org-nato
+    layer: objective
+    type: membership_goal
+    summary: "Bulgaria's declared aim is to lift defence spending to 5% of GDP: Radev told Rutte (Brussels, 28 May 2026) that the 2% threshold had been reached and 5% was the next step; the defence minister's national plan sets 2035 and Radev wants infrastructure, transport and cyber counted in the 5%."
+    since: 2025-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/05/28/bulgaria-aims-to-raise-defence-spending-to-5-of-gdp-pm-radev-says", title: "Bulgaria aims to raise defence spending to 5% of GDP, PM Radev says", publisher: "Reuters (via Internazionale)", date: 2026-05-28, tier: 3}
+      - {url: "https://www.novinite.com/view_news.php?id=239479", title: "Radev at NATO Summit: Bulgaria Will Strengthen Defense Capabilities and Support Ukraine Within Its Means", publisher: "Novinite", date: 2026-07-08, tier: 3}
+
+  # ---------- alignment ----------
+  - to: MKD
+    layer: alignment
+    type: treaty
+    summary: "Treaty of Friendship, Good Neighbourliness and Cooperation signed in August 2017 and ratified by Bulgaria on 18 January 2018, with a protocol and a joint commission on historical and educational issues; the Commission asks both sides to implement it in good faith (mirrored from Skopje's row, same sources)."
+    since: 2017-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://enlargement-infohub.eu/wp-content/uploads/2025/11/north-macedonia-report-2025.pdf", title: "North Macedonia 2025 Report (regional relations: Treaty of Friendship, Good Neighbourliness and Cooperation)", publisher: "European Commission", date: 2025-11-04, tier: 1}
+  - to: org-eu
+    layer: alignment
+    type: membership
+    summary: "Bulgaria became the 21st member of the euro area on 1 January 2026 at the fixed rate of 1.95583 lev per euro, after the Commission and Council green light of June-July 2025; opinion was 46.5% for and 46.8% against in May 2025 (Alpha Research) and Vazrazhdane campaigned against it."
+    since: 2026-01-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.aljazeera.com/economy/2025/12/31/bulgaria-set-to-adopt-the-euro-why-is-this-causing-controversy", title: "Bulgaria set to adopt the euro - why is this causing controversy?", publisher: "Al Jazeera", date: 2025-12-31, tier: 3}
+      - {url: "https://www.bta.bg/en/news/bulgaria/1036434-bulgaria-marks-one-year-as-full-schengen-member", title: "Bulgaria Marks One Year as Full Schengen Member (also records the euro changeover)", publisher: "BTA", date: 2026-01, tier: 3}
+  - to: org-eu
+    layer: alignment
+    type: membership
+    summary: "Full Schengen membership: air and sea borders from March 2024 and, after the 12 Dec 2024 Council decision lifting Austria's veto, land-border checks lifted on 1 January 2025; a joint Austrian-Hungarian-Romanian-Greek-Bulgarian police contingent of 100 patrols the Bulgarian-Turkish border from 2 Jan 2025."
+    since: 2025-01-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.gov.bg/en/Press-center/News/The-Council-of-the-European-Union-confirms-Bulgaria-to-become-a-full-Schengen-member-as-air-and-maritime-internal-border-controls-are-lifted-in-March-2024", title: "The Council of the European Union confirms Bulgaria to become a full Schengen member as air and maritime internal border controls are lifted in March 2024", publisher: "Government of Bulgaria", date: 2024-12-12, tier: 1}
+      - {url: "https://www.yahoo.com/news/romania-bulgaria-fully-join-eus-092743814.html", title: "Romania and Bulgaria become full members of EU's Schengen zone", publisher: "Reuters (via Yahoo)", date: 2025-01-01, tier: 3}
+  - to: CHN
+    layer: alignment
+    type: treaty
+    summary: "Strategic partnership signed by President Radev in 2019, after Bulgaria joined the Belt and Road Initiative in 2015; China granted visa-free travel to Bulgarian citizens in 2024. EU and NATO membership limit the political depth, and many Chinese-financed projects were never completed."
+    since: 2019
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.iir.cz/en/china-s-quiet-strategy-in-bulgaria-economic-appeal-political-constraints", title: "China's Quiet Strategy in Bulgaria: Economic Appeal, Political Constraints", publisher: "Institute of International Relations Prague", date: 2025-09-17, tier: 2}
+
+  # ---------- dependency ----------
+  - to: org-nato
+    layer: dependency
+    type: military_presence
+    summary: "NATO Multinational Battlegroup at Novo Selo with Italy as framework nation (battalion size, to be raised to brigade level): the government approved the deployment of up to 800 Italian personnel and a joint facility at Kabile near Yambol; the group was approved by the previous government in decisions of March and May 2022."
+    value: 800
+    unit: italian_personnel_approved
+    since: 2022-05
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://sofiaglobe.com/?p=106497", title: "Bulgaria's government approves Italian deployment in battle group", publisher: "Sofia Globe", date: 2023, tier: 3}
+      - {url: "https://mncse.ro/forces-nato-mn-bg-bgr/", title: "NATO Multinational Battlegroup deployed in Bulgaria, with Italy as framework nation", publisher: "Multinational Corps South-East (NATO)", date: 2025, tier: 1}
+      - {url: "https://www.bta.bg/en/news/bulgaria/1006775-significant-departure-from-bulgaria-italy-draft-defence-cooperation-agreement-ap", title: "Significant departure from Bulgaria-Italy draft defence cooperation agreement approved", publisher: "BTA", date: 2025, tier: 3}
+  - to: USA
+    layer: dependency
+    type: arms_supply
+    summary: "16 F-16 Block 70 fighters (eight ordered in 2019, eight in 2022): the first eight were all at Graf Ignatievo by 17 Dec 2025 after delays and a fuel-leak fault, and the second batch is due by 2027; combat patrols were announced for mid-2026."
+    value: 16
+    unit: f16_block70_ordered
+    since: 2019
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.bta.bg/en/news/1030695-bulgaria-welcomes-full-first-batch-of-f-16-block-70-fighter-jets", title: "Bulgaria Welcomes Full First Batch of F-16 Block 70 Fighter Jets", publisher: "BTA", date: 2025-12-17, tier: 3}
+      - {url: "https://sofiaglobe.com/?p=125915", title: "Bulgaria holds official ceremony for completion of delivery of first eight F-16s", publisher: "Sofia Globe", date: 2025-12, tier: 3}
+  - to: USA
+    layer: dependency
+    type: investment
+    summary: "Two Westinghouse AP1000 reactors (units 7 and 8) at Kozloduy under a US-Bulgarian intergovernmental agreement of 2024, ratified by 149 deputies; Hyundai E&C was chosen to negotiate; unit 7 is expected by 2034-2035 and unit 8 by 2037, at a cost estimated at about USD 14bn (some experts say up to USD 30bn)."
+    value: 14
+    unit: usd_bn_estimated_cost_two_units
+    since: 2024
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Cost estimates conflict (EUR 14bn, USD 14bn, up to USD 30bn); the most commonly quoted figure is kept. We found no 2026 report on the Radev cabinet's position."
+    sources:
+      - {url: "https://ans.org/news/article-5771/bulgaria-us-partner-on-nuclear-program", title: "Bulgaria, US partner on nuclear program", publisher: "American Nuclear Society", date: 2024, tier: 3}
+      - {url: "https://wnn.world-nuclear.org/articles/bulgaria-says-citi-to-help-financing-of-new-kozloduy-units", title: "Bulgaria partners with Citi for financing of new Kozloduy units", publisher: "World Nuclear News", date: 2024, tier: 3}
+  - to: USA
+    layer: dependency
+    type: energy_import
+    summary: "Kozloduy unit 5 runs on Westinghouse VVER-1000 fuel under a 10-year contract signed on 22 Dec 2022 (first assemblies loaded in June 2024; first fuel cycle completed with 43 assemblies); unit 6 is to follow with Framatome. Kozloduy produces about a third of Bulgaria's electricity."
+    value: 1
+    unit: kozloduy_units_on_us_fuel
+    since: 2024-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://world-nuclear-news.org/articles/bulgarian-plant-signs-10-year-deal-for-westinghous", title: "Bulgarian plant signs 10-year deal for Westinghouse fuel", publisher: "World Nuclear News", date: 2022-12-22, tier: 3}
+      - {url: "https://smr.nucnet.org/news/bulgaria-s-kozloduy-5-completes-first-fuel-cycle-with-westinghouse-rwfa-assemblies-6-4-2025", title: "Bulgaria's Kozloduy 5 completes first fuel cycle with Westinghouse RWFA assemblies", publisher: "NucNet", date: 2025, tier: 3}
+  - to: RUS
+    layer: dependency
+    type: energy_import
+    summary: "Kozloduy's two VVER-1000 reactors, of Russian design and first fuelled from Russia, supply about 34% of Bulgaria's electricity; unit 5 left Russian fuel in 2024, unit 6 is to follow with Framatome, and the National Assembly voted in Nov 2022 to speed up an alternative to Russian supply. The residual Russian share for unit 6 is not given in the sources."
+    value: 0.34
+    unit: share_of_electricity_from_vver_units
+    since: 1987
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "The value is the share of electricity from the Russian-designed units, not the share of Russian fuel, which no source quantifies."
+    sources:
+      - {url: "https://world-nuclear-news.org/articles/bulgarian-plant-signs-10-year-deal-for-westinghous", title: "Bulgarian plant signs 10-year deal for Westinghouse fuel", publisher: "World Nuclear News", date: 2022-12-22, tier: 3}
+  - to: RUS
+    layer: dependency
+    type: investment
+    summary: "Lukoil Neftochim Burgas, Bulgaria's only refinery (7-8 million tonnes of crude a year, annual impact put above BGN 15bn), is owned by a company under US sanctions; Washington gave a temporary derogation to the end of April 2026, a special commercial manager (Rumen Spetsov, later Evgeni Simeonov) runs Lukoil's Bulgarian companies, and the sale of Lukoil International (agreement with Carlyle, January 2026) needs US approval."
+    value: 7.5
+    unit: million_tonnes_crude_capacity_per_year
+    since: 2025-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Capacity is given as a 7-8 million tonne range (Spetsov); the midpoint is kept. A 22 Oct 2025 OFAC designation is widely cited but the date was not confirmed in the sources read."
+    sources:
+      - {url: "https://bntnews.bg/news/case-lukoil-what-is-the-role-of-a-special-manager-at-the-refinery-1364637news.html", title: "Case Lukoil: what is the role of a special manager at the refinery", publisher: "BNT", date: 2025-11-11, tier: 3}
+      - {url: "https://www.novinite.com/view_news.php?id=238574", title: "Bulgarian Authorities Weigh Potential Purchase of Lukoil Refinery", publisher: "Novinite", date: 2026-05-18, tier: 3}
+      - {url: "https://www.spglobal.com/energy/en/news-research/latest-news/crude-oil/081326-uk-extends-sanctions-waivers-for-lukoil-international-subsidiaries", title: "UK extends sanctions waivers for Lukoil international subsidiaries", publisher: "S&P Global", date: 2026-08-13, tier: 3}
+  - to: RUS
+    layer: dependency
+    type: energy_export
+    summary: "Bulgaria hosts the European string of TurkStream (the Balkan Stream section) and earns transit fees on Russian gas for Serbia and Hungary: 52 million m3 a day at the Turkey-Bulgaria entry in January 2026, a record; transit income of about EUR 800m in 2022 to March 2024 (Romanian estimate). Zhelyazkov said in Sept 2025 that transit contracts would end in 2026 and Russian gas leave the domestic market by 2028; the Commission has said the EU ban does not stop transit to non-EU states and we found no decision by the Radev cabinet."
+    value: 52
+    unit: mcm_per_day_turkstream_entry_jan_2026
+    since: 2020-01-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Transit, not export: Bulgaria sells no Russian gas of its own. The January 2026 flow is the S&P figure; the 2026 end-of-transit statement predates the change of government."
+    sources:
+      - {url: "https://www.spglobal.com/energy/en/news-research/latest-news/natural-gas/020226-russian-gas-flows-to-europe-via-turkstream-remain-at-sustained-high-in-jan", title: "Russian gas flows to Europe via TurkStream remain at sustained high in Jan", publisher: "S&P Global", date: 2026-02-02, tier: 3}
+      - {url: "https://serbia-energy.eu/bulgaria-to-end-russian-gas-transit-to-serbia-and-hungary-by-2026-phase-out-domestic-use-by-2028/", title: "Bulgaria to end Russian gas transit to Serbia and Hungary by 2026, phase out domestic use by 2028", publisher: "Serbia Energy", date: 2025-09, tier: 3}
+      - {url: "https://www.energynomics.ro/en/bulgaria-to-end-russian-gas-transit-through-its-territory-in-2026/", title: "Bulgaria to end Russian gas transit through its territory in 2026", publisher: "Energynomics", date: 2025-09, tier: 3}
+  - to: SRB
+    layer: dependency
+    type: energy_export
+    summary: "Russian gas reaches Serbia through Bulgaria: about 75% of Serbian consumption (over 90% a year earlier) at EUR 318 per 1,000 m3, on quarterly extensions with the latest to 31 Dec 2026. Mirrored from Serbia's row toward Russia, same sources; the route is TurkStream's European string."
+    value: 0.75
+    unit: share_of_serbian_gas_consumption_transiting_bulgaria
+    since: 2022-05
+    until: 2026-12-31
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Serbia's card gives 75% (Energy Community) against press 'around 90%'; the most recent official-based figure is kept."
+    sources:
+      - {url: "https://www.connaissancedesenergies.org/afp/la-serbie-obtient-une-prolongation-de-trois-mois-de-son-accord-gazier-avec-la-russie-260930", title: "Serbia obtains a three-month extension of its gas agreement with Russia (Energy Community figure)", publisher: "AFP", date: 2026-09-30, tier: 3}
+      - {url: "https://n1info.rs/english/news/srbijagas-ceo-bajatovic-gas-supply-deal-with-russia-extended-through-end-of-year/", title: "Srbijagas CEO Bajatovic: gas supply deal with Russia extended through end of year", publisher: "N1", date: 2026-09-30, tier: 3}
+  - to: SRB
+    layer: dependency
+    type: energy_export
+    summary: "The Bulgaria-Serbia gas interconnector (opened in Nis on 10 Dec 2023, a project of common interest of the EU) carries Azerbaijani gas to Serbia: about 300 million m3 delivered Jan 2024-Oct 2025 against a SOCAR-Srbijagas contract of up to 400 million m3 a year; the link's reported capacity is 1.8 bcm a year with reverse flow possible. Mirrored from Serbia's and Azerbaijan's rows, same sources."
+    value: 0.3
+    unit: bcm_azerbaijani_gas_delivered_2024_2025
+    since: 2023-12-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://en.apa.az/finance/azerbaijan-exports-300-million-cubic-meters-of-gas-to-serbia-since-january-481653", title: "Azerbaijan exports 300 million cubic meters of gas to Serbia since January", publisher: "APA", date: 2025-10-23, tier: 3}
+      - {url: "https://m.president.bg/en/news7524/prezidentat-rumen-radev-gazovata-vrazka-mezhdu-balgariya-i-sarbiya-promenya-energiynata-karta-na-evropa-i-dava-vazmozhnosti-za-diversifikatsiya-na-dostavkite-ne-samo-za-dvete-darzhavi-a-i-za-tseliya-region", title: "President Radev: the gas link between Bulgaria and Serbia changes Europe's energy map and offers diversification opportunities", publisher: "Presidency of Bulgaria", date: 2023-12-10, tier: 1}
+      - {url: "https://www.energyintel.com/0000018c-5994-dd84-a3fd-5bf782850000", title: "Serbia, Bulgaria Launch Gas Interconnector", publisher: "Energy Intelligence", date: 2023-12, tier: 3}
+  - to: AZE
+    layer: dependency
+    type: energy_import
+    summary: "SOCAR supplies Bulgargaz under a contract of 1 bcm a year in force since early 2021; deliveries were limited to 225 million m3 in the first nine months of 2021 because the IGB pipeline to Greece was unfinished, and the gas now arrives through the Greece-Bulgaria interconnector."
+    value: 1
+    unit: bcm_per_year_contracted
+    since: 2021-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://report.az/en/amp/energy/bulgaria-wants-more-azerbaijani-gas", title: "Bulgaria wants more Azerbaijani gas", publisher: "Report.az", date: 2021-12-20, tier: 3}
+  - to: GRC
+    layer: dependency
+    type: energy_import
+    summary: "The Greece-Bulgaria interconnector (IGB, 3 bcm a year, operational October 2022) links Bulgaria to Greek LNG at Alexandroupolis and Revithoussa and to Azerbaijani gas arriving through Greece; Mitsotakis (4 Jun 2026) said Greece completed it when Bulgaria urgently needed gas in the first year of Russia's war."
+    value: 3
+    unit: bcm_per_year_igb_capacity
+    since: 2022-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "The 3 bcm a year capacity and the October 2022 start come from search-engine summaries of energy-trade reporting, not from the BTA article, which only confirms that Greece completed the link."
+    sources:
+      - {url: "https://www.bta.bg/en/news/1140423-in-sofia-greek-prime-minister-urges-stronger-defence-cooperation-between-greece", title: "In Sofia, Greek Prime Minister urges stronger defence cooperation between Greece and Bulgaria", publisher: "BTA", date: 2026-06-04, tier: 3}
+  - to: TUR
+    layer: dependency
+    type: energy_import
+    summary: "Bulgargaz holds a take-or-pay contract of 3 Jan 2023 with BOTAS booking 106.4 GWh a day of regasification capacity at Turkish terminals through 2035 at about BGN 1m (EUR 512,000) a day; it owes about BGN 300m in arrears (early May 2026) and on 6 Jul 2026 signed a protocol suspending the agreement for 15 months, paying only for capacity used. Rescinding the contract would cost close to BGN 3bn."
+    value: 106.4
+    unit: gwh_per_day_regas_capacity_booked_to_2035
+    since: 2023-01-03
+    until: 2035
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.bta.bg/en/news/balkans/1162195-bulgarian-pm-meets-turkish-president-in-ankara-sides-agree-to-suspend-bilateral", title: "Bulgarian PM meets Turkish president in Ankara, sides agree to suspend bilateral gas agreement", publisher: "BTA", date: 2026-07-06, tier: 3}
+  - to: TUR
+    layer: dependency
+    type: trade_share
+    summary: "Bilateral trade of about EUR 9bn, trending upward (Ankara talks of 6 Jul 2026); Radev asked for more high-value Turkish investment, Erdogan urged the EU to implement the customs union better."
+    value: 9
+    unit: eur_bn_bilateral_trade
+    since: 2026
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.bta.bg/en/news/balkans/1162195-bulgarian-pm-meets-turkish-president-in-ankara-sides-agree-to-suspend-bilateral", title: "Bulgarian PM meets Turkish president in Ankara, sides agree to suspend bilateral gas agreement", publisher: "BTA", date: 2026-07-06, tier: 3}
+  - to: UKR
+    layer: dependency
+    type: arms_supply
+    summary: "Bulgaria delivered 13 aid packages from its stocks and its industry supplied, by von der Leyen's count, about a third of the weapons the EU gave Ukraine; UN-register data show direct transfers of 3,000 Bulspike launchers, 100 ATGL-L2 grenade launchers, 100 machine guns and 50 ZU-2 guns in 2025, and heavy equipment via Czechia, Poland, Romania and the UK. Radev froze state military aid on 9 Jun 2026; commercial sales continue."
+    value: 13
+    unit: government_aid_packages_delivered
+    since: 2022-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "The UN register excludes ammunition; the 'third of EU weapons' is von der Leyen's wording and may refer to the weapons the EU gave rather than all of Ukraine's supply. Defense Express's earlier figure (one third of the ammunition used by Ukraine in the first six months of 2022) is a different, older claim."
+    sources:
+      - {url: "https://www.novinite.com/articles/238879/Revealed%3A+How+Bulgaria+Has+Been+Arming+Ukraine+for+Four+Years", title: "Revealed: How Bulgaria Has Been Arming Ukraine for Four Years", publisher: "Novinite", date: 2026-06-04, tier: 3}
+      - {url: "https://www.pravda.com.ua/eng/news/2025/09/1/7528713/", title: "Bulgaria has provided a third of EU weapons for Ukraine - von der Leyen", publisher: "Ukrainska Pravda", date: 2025-09-01, tier: 3}
+      - {url: "https://news.liga.net/en/politics/news/bulgarian-prime-minister-on-military-aid-to-ukraine-we-have-already-exhausted-our-options", title: "Bulgarian Prime Minister on military aid to Ukraine: we have already exhausted our options", publisher: "Liga.net", date: 2026-07, tier: 3}
+  - to: CHN
+    layer: dependency
+    type: investment
+    summary: "Huawei's Bulgarian presence accounts for almost 1% of GDP and Chinese providers dominate 5G coverage (IIR Prague); Bulgaria had signed a 5G security declaration with the US in 2020, but no ban on Huawei equipment was found in the sources read."
+    value: 0.01
+    unit: huawei_share_of_gdp_approx
+    since: 2015
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.iir.cz/en/china-s-quiet-strategy-in-bulgaria-economic-appeal-political-constraints", title: "China's Quiet Strategy in Bulgaria: Economic Appeal, Political Constraints", publisher: "Institute of International Relations Prague", date: 2025-09-17, tier: 2}
+      - {url: "https://industryeurope.com/sectors/technology-innovation/bulgaria-becomes-latest-to-join-US-anti-huawei-coalition/", title: "Bulgaria becomes latest to join US anti-Huawei coalition", publisher: "Industry Europe", date: 2020, tier: 3}
+
+  # ---------- action ----------
+  - to: MKD
+    layer: action
+    type: incident
+    summary: "Two vehicles with diplomatic plates were set on fire in front of the Bulgarian embassy in Skopje on 15 Jun 2026; a 44-year-old suspect was detained and admitted the act, motive unknown. President Iotova called it an attack on Bulgaria; Mickoski condemned it. Mirrored from Skopje's row, same sources."
+    since: 2026-06-15
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://balkaninsight.com/2026/06/16/arson-of-diplomatic-cars-adds-to-bulgaria-north-macedonia-strains/bi/", title: "Arson of Diplomatic Cars Adds to Bulgaria-North Macedonia Strains", publisher: "Balkan Insight (BIRN)", date: 2026-06-16, tier: 3}
+      - {url: "https://www.bta.bg/en/news/balkans/1147874-bulgarian-associations-in-north-macedonia-condemn-skopje-arson-attack-on-bulgari", title: "Bulgarian associations in North Macedonia condemn Skopje arson attack on Bulgarian embassy diplomatic vehicles", publisher: "BTA", date: 2026-06, tier: 3}
+  - to: MKD
+    layer: action
+    type: incident
+    summary: "Radev (18 Jun 2026, three days after the arson) ruled out a bilateral meeting with Mickoski ('nothing more to discuss' until the rule of law is established and those responsible face consequences), said the perpetrators were used in election campaigns, and would not exclude using Bulgaria's EU leverage over North Macedonia's funds."
+    since: 2026-06-18
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.bta.bg/en/news/bulgaria/1150083-north-macedonia-s-leadership-doing-everything-possible-to-delay-eu-membership-p", title: "North Macedonia's leadership doing everything possible to delay EU membership, PM Radev says", publisher: "BTA", date: 2026-06-18, tier: 3}
+  - to: MKD
+    layer: action
+    type: incident
+    summary: "Ljupcho Georgievski, head of the banned Ivan Mihailov Cultural Club in Bitola and a dual citizen, received a one-year suspended sentence in June 2025 for quoting Mihailov online; Bulgaria's foreign minister called it 'categorically unacceptable' and a protest was held outside the Macedonian embassy in Sofia. Mirrored from Skopje's row, same source."
+    since: 2025-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://eualive.net/north-macedonias-sentence-against-bulgarian-activist-sparks-backlash-in-sofia/", title: "North Macedonia's sentence against Bulgarian activist sparks backlash in Sofia", publisher: "EUalive", date: 2025-06-16, tier: 3}
+  - to: MKD
+    layer: action
+    type: visit
+    summary: "President Iotova met President Siljanovska-Davkova in Sofia on 10 Jun 2026 on the sidelines of the South-East European Cooperation Process summit; the Macedonian president said Sofia's concerns went beyond the constitution to history and the joint history commission. Mirrored from Skopje's row, same source."
+    since: 2026-06-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://balkaninsight.com/2026/06/16/arson-of-diplomatic-cars-adds-to-bulgaria-north-macedonia-strains/bi/", title: "Arson of Diplomatic Cars Adds to Bulgaria-North Macedonia Strains", publisher: "Balkan Insight (BIRN)", date: 2026-06-16, tier: 3}
+  - to: RUS
+    layer: action
+    type: sanction
+    summary: "Bulgaria blocked the listing of Patriarch Kirill and Lukoil's founder Vagit Alekperov in the EU's 21st sanctions package: Radev declared on 18 Jun 2026 that Bulgaria would not support the package and was ready to veto it, and on 13 Jul the EU again failed to sanction Kirill after the names were removed. Bulgaria has not blocked earlier packages."
+    since: 2026-06-18
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://euromaidanpress.com/2026/07/14/two-months-in-office-three-blows-to-ukraine-bulgarias-premier-stacks-coalition-of-the-willing-exit-on-aid-freeze-and-sanctions-blocks/", title: "Two months in office, three blows to Ukraine", publisher: "Euromaidan Press", date: 2026-07-14, tier: 3}
+      - {url: "https://www.veridica.ro/en/opinions/rumen-radev-may-be-positioning-bulgaria-as-russias-new-darling-within-the-eu", title: "Rumen Radev may be positioning Bulgaria as Russia's new darling within the EU", publisher: "Veridica", date: 2026-07, tier: 3}
+  - to: RUS
+    layer: action
+    type: sanction
+    summary: "Under the amended Law on the Administrative Regulation of Petroleum Trade, the government appointed special administrators over Lukoil's Bulgarian companies (Spetsov, then Simeonov), able to sell shares but not property, with proceeds to a Bulgarian Development Bank account under the finance minister; Radev's cabinet is weighing a buyback (Gunvor, Chevron, Carlyle named in the debate)."
+    since: 2025-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://bntnews.bg/news/case-lukoil-what-is-the-role-of-a-special-manager-at-the-refinery-1364637news.html", title: "Case Lukoil: what is the role of a special manager at the refinery", publisher: "BNT", date: 2025-11-11, tier: 3}
+      - {url: "https://www.novinite.com/view_news.php?id=238574", title: "Bulgarian Authorities Weigh Potential Purchase of Lukoil Refinery", publisher: "Novinite", date: 2026-05-18, tier: 3}
+  - to: UKR
+    layer: action
+    type: agreement
+    summary: "Withdrawal from state support: Radev froze government-supplied military aid (plan dated 9 Jun 2026), said on 9 Jul that 'this year there is no such capability', skipped the Paris summit of 13 Jul and announced Bulgaria's exit from the Coalition of the Willing on 14 Jul. Bulgaria still offers to repair Ukrainian equipment and has not blocked Ukraine's EU path."
+    since: 2026-06-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://euromaidanpress.com/2026/07/14/two-months-in-office-three-blows-to-ukraine-bulgarias-premier-stacks-coalition-of-the-willing-exit-on-aid-freeze-and-sanctions-blocks/", title: "Two months in office, three blows to Ukraine", publisher: "Euromaidan Press", date: 2026-07-14, tier: 3}
+      - {url: "https://www.intellinews.com/bulgaria-reaches-limit-on-military-aid-to-ukraine-pm-says-450355/", title: "Bulgaria reaches limit on military aid to Ukraine, PM says", publisher: "bne IntelliNews", date: 2026-07, tier: 3}
+  - to: UKR
+    layer: action
+    type: agreement
+    summary: "In March 2026, before the Radev government, Sofia reportedly signed a ten-year defence agreement with Ukraine on joint drone and ammunition production, which Radev's coalition allies called 'provocative'; the Rheinmetall plant at Sopot has since been left without funds (Economy Minister Pulev, 9 Jul 2026)."
+    since: 2026-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "Single secondary source (an analytical piece written before the election); the agreement's text and status under the new cabinet were not found."
+    sources:
+      - {url: "https://based.info/bulgarias-radev-poised-for-victory-in-sunday-poll-testing-eu-unity-on-russia/", title: "Bulgaria's Radev poised for victory in Sunday poll, testing EU unity on Russia", publisher: "Based.info", date: 2026-04, tier: 3}
+      - {url: "https://www.veridica.ro/en/opinions/rumen-radev-may-be-positioning-bulgaria-as-russias-new-darling-within-the-eu", title: "Rumen Radev may be positioning Bulgaria as Russia's new darling within the EU", publisher: "Veridica", date: 2026-07, tier: 3}
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "Bulgaria joined Trump's Board of Peace on 22 Jan 2026 (signed in Davos by Zhelyazkov's outgoing government after Trump invited Radev, then president, to be its representative); the Zhelyazkov government left ratification to the next National Assembly and Foreign Minister Georgiev said no financial commitment is involved."
+    since: 2026-01-22
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Ratification status under the new parliament was not found."
+    sources:
+      - {url: "https://www.bta.bg/en/news/1048919-bulgaria-joins-president-trump-s-board-of-peace", title: "Bulgaria Joins President Trump's Board of Peace", publisher: "BTA", date: 2026-01-22, tier: 3}
+      - {url: "https://eualive.net/bulgarias-caretaker-pm-joins-trumps-board-of-peace-at-oligarchs-urging/", title: "Bulgaria's caretaker PM joins Trump's Board of Peace at oligarch's urging", publisher: "EUalive", date: 2026-01, tier: 3}
+      - {url: "https://www.gov.bg/en/Press-center/News/Prime-Minister-Rossen-Jeliazkov-United-States-and-international-community-duly-appreciate-Bulgaria%E2%80%99s-accession-to-Board-of-Peace", title: "Prime Minister Rossen Jeliazkov: United States and international community duly appreciate Bulgaria's accession to Board of Peace", publisher: "Government of Bulgaria", date: 2026-01, tier: 1}
+  - to: org-nato
+    layer: action
+    type: visit
+    summary: "Radev led the Bulgarian delegation to the NATO summit in Ankara (7-8 Jul 2026): defence capabilities and alliance unity, support to Ukraine 'within its means', 5% of GDP to include infrastructure and cyber, and Bulgaria presented as a stability anchor on the Black Sea."
+    since: 2026-07-07
+    until: 2026-07-08
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.bta.bg/en/news/balkans/1163056-pm-radev-bulgaria-focusing-on-defence-capabilities-nato-unity-at-ankara-summit", title: "PM Radev: Bulgaria focusing on defence capabilities, NATO unity at Ankara summit", publisher: "BTA", date: 2026-07, tier: 3}
+      - {url: "https://www.novinite.com/view_news.php?id=239479", title: "Radev at NATO Summit: Bulgaria Will Strengthen Defense Capabilities and Support Ukraine Within Its Means", publisher: "Novinite", date: 2026-07-08, tier: 3}
+  - to: TUR
+    layer: action
+    type: visit
+    summary: "First Radev-Erdogan meeting as prime minister, in Ankara on 6 Jul 2026 before the NATO summit: Bulgargaz-BOTAS protocol suspending the gas contract for 15 months, Radev's thanks for tighter Turkish border controls, Erdogan's praise of Bulgaria's 'sensitive approach' to the Turkish minority, an invitation to COP31 at Antalya."
+    since: 2026-07-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.bta.bg/en/news/balkans/1162195-bulgarian-pm-meets-turkish-president-in-ankara-sides-agree-to-suspend-bilateral", title: "Bulgarian PM meets Turkish president in Ankara, sides agree to suspend bilateral gas agreement", publisher: "BTA", date: 2026-07-06, tier: 3}
+      - {url: "https://bnrnews.bg/en/post/499606/erdogan-praises-bulgarias-approach-to-its-turkish-community", title: "Erdogan praises Bulgaria's approach to its Turkish community", publisher: "BNR", date: 2026-07, tier: 3}
+  - to: TUR
+    layer: action
+    type: agreement
+    summary: "Black Sea Mine Countermeasures Task Group (memorandum of 11 Jan 2024 between Romania, Bulgaria and Turkey; more than 150 drifting mines neutralised): on 8 Jul 2026 in Ankara the three defence ministers added surveillance of critical underwater infrastructure to its mandate, and Bulgaria took command for six months from 9 Jul 2026 (change of command at Burgas)."
+    since: 2024-01-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://bnrnews.bg/en/post/500332/bulgaria-romania-and-turkiye-expand-black-sea-mine-countermeasures-mission", title: "Bulgaria, Romania and Turkiye expand Black Sea mine countermeasures mission", publisher: "BNR", date: 2026-07, tier: 3}
+      - {url: "https://eualive.net/nato-allies-expand-black-sea-mission-to-protect-critical-underwater-infrastructure/", title: "NATO allies expand Black Sea mission to protect critical underwater infrastructure", publisher: "EUalive", date: 2026-07, tier: 3}
+      - {url: "https://www.romania-insider.com/romania-bulgaria-turkey-black-sea-cooperation-july-2026", title: "Romania, Bulgaria and Turkey expand Black Sea mine countermeasure cooperation", publisher: "Romania Insider", date: 2026-07, tier: 3}
+  - to: ROU
+    layer: action
+    type: agreement
+    summary: "Vertical Corridor: the Greece-Bulgaria-Romania-Moldova-Ukraine gas route, with seven transmission operators; capacity extensions at Kulata/Sidirokastro and Negru Voda/Kardam are due by end-2026 (Stara Zagora and Komotini in 2027); a March 2026 tariff revision cut costs, and a July 2026 auction at Sidirokastro booked over 45% of capacity across four gas years."
+    since: 2025-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "The 45% booking figure comes from one outlet (Model Diplomat citing eKathimerini) and was not checked against the auction operator."
+    sources:
+      - {url: "https://euronews.com/business/2026/02/12/greece-bets-on-lng-corridor-to-power-europes-post-russia-energy-future", title: "Greece bets on LNG corridor to power Europe's post-Russia energy future", publisher: "Euronews", date: 2026-02-12, tier: 3}
+      - {url: "https://modeldiplomat.com/story/greeces-vertical-gas-corridor-books-45", title: "Greece's Vertical Gas Corridor books 45%", publisher: "Model Diplomat", date: 2026-07, tier: 3}
+      - {url: "https://balkangreenenergynews.com/greeces-papastavrou-serbia-north-macedonia-to-join-vertical-corridor-with-gas-interconnections/", title: "Greece's Papastavrou: Serbia, North Macedonia to join Vertical Corridor with gas interconnections", publisher: "Balkan Green Energy News", date: 2026-05, tier: 3}
+  - to: GRC
+    layer: action
+    type: visit
+    summary: "Mitsotakis visited Radev in Sofia on 4 Jun 2026, the first European leader to do so: Greek help with Bulgaria's airspace protection, deeper defence cooperation, the Vertical Gas Corridor, a long-term agreement on the Arda, Maritsa and Mesta waters, a joint trip to Montenegro on Western Balkans enlargement."
+    since: 2026-06-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.bta.bg/en/news/1140423-in-sofia-greek-prime-minister-urges-stronger-defence-cooperation-between-greece", title: "In Sofia, Greek Prime Minister urges stronger defence cooperation between Greece and Bulgaria", publisher: "BTA", date: 2026-06-04, tier: 3}
+  - to: GRC
+    layer: action
+    type: agreement
+    summary: "Vertical Corridor and Alexandroupolis: the FSRU at Alexandroupolis and Revithoussa supply the IGB link to Bulgaria; in May 2026 the ministers of Greece, Bulgaria, Serbia and North Macedonia agreed in Athens to extend the corridor to Skopje (Greek section by end-2026) and Belgrade (end-2027)."
+    since: 2026-05
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://balkangreenenergynews.com/greeces-papastavrou-serbia-north-macedonia-to-join-vertical-corridor-with-gas-interconnections/", title: "Greece's Papastavrou: Serbia, North Macedonia to join Vertical Corridor with gas interconnections", publisher: "Balkan Green Energy News", date: 2026-05, tier: 3}
+      - {url: "https://euronews.com/business/2026/02/12/greece-bets-on-lng-corridor-to-power-europes-post-russia-energy-future", title: "Greece bets on LNG corridor to power Europe's post-Russia energy future", publisher: "Euronews", date: 2026-02-12, tier: 3}

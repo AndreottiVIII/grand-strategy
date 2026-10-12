@@ -1,5 +1,6 @@
 id: BGR
 name: Bulgaria
+short: Bulgaria
 type: state
 iso2: bg
 wikipedia: https://en.wikipedia.org/wiki/Bulgaria
@@ -7,8 +8,182 @@ coords:
 - 23.32
 - 42.7
 seat: Sofia
-regions:
-- world
-card: stub
-tier: minor
+regions: ['east-europe-black-sea']
+card: full
+tier: protagonist
+last_verified: 2026-10-12
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the Euro-Atlantic anchor and cash in its dividends: the euro (21st member, 1 Jan 2026, at 1.95583 lev), full Schengen (land borders open from 1 Jan 2025) and NATO, whose spending target Radev's cabinet says it will reach (2% 'reached', 5% by 2035 in the defence minister's plan). The anchor is the one fixed point in a political system that produced eight elections in five years."
+      confidence: A
+      sources:
+        - {url: "https://www.aljazeera.com/economy/2025/12/31/bulgaria-set-to-adopt-the-euro-why-is-this-causing-controversy", title: "Bulgaria set to adopt the euro - why is this causing controversy?", publisher: "Al Jazeera", date: 2025-12-31, tier: 3}
+        - {url: "https://www.bta.bg/en/news/bulgaria/1036434-bulgaria-marks-one-year-as-full-schengen-member", title: "Bulgaria Marks One Year as Full Schengen Member", publisher: "BTA", date: 2026-01, tier: 3}
+        - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/05/28/bulgaria-aims-to-raise-defence-spending-to-5-of-gdp-pm-radev-says", title: "Bulgaria aims to raise defence spending to 5% of GDP, PM Radev says", publisher: "Reuters (via Internazionale)", date: 2026-05-28, tier: 3}
+    - rank: 2
+      text: "End the cycle of unstable governments and take the state back from the oligarchic networks that the 2025 street protests named. Rumen Radev quit the presidency (January 2026) to found Progressive Bulgaria, which won 131 of 240 seats on 19 April 2026 and governs alone; Delyan Peevski's DPS, the pivot of the previous cabinet, fell to 21 seats and opposition."
+      confidence: A
+      sources:
+        - {url: "https://www.novinite.com/view_news.php?id=238183", title: "CEC Confirms New Parliament: Progressive Bulgaria With 131 Seats", publisher: "Novinite", date: 2026-04-24, tier: 3}
+        - {url: "https://pism.pl/publications/former-president-becomes-new-prime-minister-progressive-bulgarias-electoral-victory", title: "Former president becomes new prime minister - Progressive Bulgaria's electoral victory", publisher: "PISM", date: 2026-04, tier: 2}
+        - {url: "https://ianslive.in/bulgarian-pm-zhelyazkov-resigns-after-weeks-of-mass-protests--20251211192059", title: "Bulgarian PM Zhelyazkov resigns after weeks of mass protests", publisher: "IANS", date: 2025-12-11, tier: 3}
+    - rank: 3
+      text: "Secure fuel and gas without Russia and without a shutdown: keep the Burgas refinery running under state-appointed special managers while the US sanctions on Lukoil (the sale of Lukoil International pending), move Kozloduy off Russian fuel (Westinghouse for unit 5), and sell the country as a gas gateway (IGB, Vertical Corridor, Alexandroupolis, the interconnector to Serbia)."
+      confidence: B
+      sources:
+        - {url: "https://bntnews.bg/news/case-lukoil-what-is-the-role-of-a-special-manager-at-the-refinery-1364637news.html", title: "Case Lukoil: what is the role of a special manager at the refinery", publisher: "BNT", date: 2025-11-11, tier: 3}
+        - {url: "https://www.novinite.com/view_news.php?id=238574", title: "Bulgarian Authorities Weigh Potential Purchase of Lukoil Refinery", publisher: "Novinite", date: 2026-05-18, tier: 3}
+        - {url: "https://euronews.com/business/2026/02/12/greece-bets-on-lng-corridor-to-power-europes-post-russia-energy-future", title: "Greece bets on LNG corridor to power Europe's post-Russia energy future", publisher: "Euronews", date: 2026-02-12, tier: 3}
+    - rank: 4
+      text: "Hold the line on North Macedonia: constitutional recognition of Bulgarians, the history commission and no change to the July 2022 French-proposal consensus as the price of lifting the block on its EU negotiations (in place since November 2020). Radev as prime minister has refused even to meet Mickoski."
+      confidence: B
+      sources:
+        - {url: "https://www.bta.bg/en/news/bulgaria/1150083-north-macedonia-s-leadership-doing-everything-possible-to-delay-eu-membership-p", title: "North Macedonia's leadership doing everything possible to delay EU membership, PM Radev says", publisher: "BTA", date: 2026-06-18, tier: 3}
+        - {url: "https://www.bta.bg/en/news/balkans/1018537-pm-zhelyazkov-bulgaria-is-not-setting-new-conditions-for-republic-of-north-mace", title: "PM Zhelyazkov: Bulgaria is not setting new conditions for Republic of North Macedonia's EU path", publisher: "BTA", date: 2025-10, tier: 3}
+        - {url: "https://europeanwesternbalkans.com/2026/04/23/what-does-radevs-victory-mean-for-the-western-balkans/", title: "What does Radev's victory mean for the Western Balkans?", publisher: "European Western Balkans", date: 2026-04-23, tier: 3}
+    - rank: 5
+      text: "Keep room for a 'pragmatic' line toward Moscow inside the EU and NATO: stop state arms aid to Ukraine and leave the Coalition of the Willing (14 Jul 2026), block the listing of Patriarch Kirill and Lukoil's Alekperov in the 21st sanctions package, while still not blocking Ukraine's EU path or earlier packages."
+      confidence: B
+      sources:
+        - {url: "https://euromaidanpress.com/2026/07/14/two-months-in-office-three-blows-to-ukraine-bulgarias-premier-stacks-coalition-of-the-willing-exit-on-aid-freeze-and-sanctions-blocks/", title: "Two months in office, three blows to Ukraine: Bulgaria's premier stacks Coalition of the Willing exit on aid freeze and sanctions blocks", publisher: "Euromaidan Press", date: 2026-07-14, tier: 3}
+        - {url: "https://www.veridica.ro/en/opinions/rumen-radev-may-be-positioning-bulgaria-as-russias-new-darling-within-the-eu", title: "Rumen Radev may be positioning Bulgaria as Russia's new darling within the EU", publisher: "Veridica", date: 2026-07, tier: 3}
+        - {url: "https://www.novinite.com/view_news.php?id=238749", title: "Moscow Says No Sign Yet From Bulgaria to Restore Dialogue With Russia", publisher: "Novinite", date: 2026-05-29, tier: 3}
+    - rank: 6
+      text: "Defend the Black Sea flank and the defence industry that pays for it: host the NATO battlegroup at Novo Selo (Italy framework nation, to grow to brigade size), take delivery of 16 F-16 Block 70 (eight in service by December 2025), command the Romania-Bulgaria-Turkey mine-countermeasures group from July 2026 and keep defence exports (about EUR 2.5bn in 2025) flowing."
+      confidence: B
+      sources:
+        - {url: "https://bnrnews.bg/en/post/500332/bulgaria-romania-and-turkiye-expand-black-sea-mine-countermeasures-mission", title: "Bulgaria, Romania and Turkiye expand Black Sea mine countermeasures mission", publisher: "BNR", date: 2026-07, tier: 3}
+        - {url: "https://www.bta.bg/en/news/1030695-bulgaria-welcomes-full-first-batch-of-f-16-block-70-fighter-jets", title: "Bulgaria Welcomes Full First Batch of F-16 Block 70 Fighter Jets", publisher: "BTA", date: 2025-12-17, tier: 3}
+        - {url: "https://mncse.ro/forces-nato-mn-bg-bgr/", title: "NATO Multinational Battlegroup deployed in Bulgaria, with Italy as framework nation", publisher: "Multinational Corps South-East (NATO)", date: 2025, tier: 1}
+        - {url: "https://www.novinite.com/articles/238879/Revealed%3A+How+Bulgaria+Has+Been+Arming+Ukraine+for+Four+Years", title: "Revealed: How Bulgaria Has Been Arming Ukraine for Four Years", publisher: "Novinite", date: 2026-06-04, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "The veto, used selectively: the November 2020 block on North Macedonia's negotiations, kept by both Zhelyazkov and Radev; the July 2026 refusal to list Patriarch Kirill and Alekperov, backed by a threat to veto the whole 21st package; exit from the Coalition of the Willing. Each is a use of EU unanimity for a national interest, not a break with the club."
+      confidence: B
+      sources:
+        - {url: "https://euromaidanpress.com/2026/07/14/two-months-in-office-three-blows-to-ukraine-bulgarias-premier-stacks-coalition-of-the-willing-exit-on-aid-freeze-and-sanctions-blocks/", title: "Two months in office, three blows to Ukraine", publisher: "Euromaidan Press", date: 2026-07-14, tier: 3}
+        - {url: "https://www.bta.bg/en/news/bulgaria/1150083-north-macedonia-s-leadership-doing-everything-possible-to-delay-eu-membership-p", title: "North Macedonia's leadership doing everything possible to delay EU membership, PM Radev says", publisher: "BTA", date: 2026-06-18, tier: 3}
+    - domain: diplomatic
+      text: "Regional hub diplomacy: Mitsotakis was the first European leader to visit Radev's Sofia (4 Jun 2026); the Ankara meeting with Erdogan (6 Jul) bought a 15-month suspension of the Bulgargaz-BOTAS contract; Bulgaria joined Trump's Board of Peace (signed in Davos, 22 Jan 2026, ratification left to the new parliament)."
+      confidence: B
+      sources:
+        - {url: "https://www.bta.bg/en/news/1140423-in-sofia-greek-prime-minister-urges-stronger-defence-cooperation-between-greece", title: "In Sofia, Greek Prime Minister urges stronger defence cooperation between Greece and Bulgaria", publisher: "BTA", date: 2026-06-04, tier: 3}
+        - {url: "https://www.bta.bg/en/news/balkans/1162195-bulgarian-pm-meets-turkish-president-in-ankara-sides-agree-to-suspend-bilateral", title: "Bulgarian PM meets Turkish president in Ankara, sides agree to suspend bilateral gas agreement", publisher: "BTA", date: 2026-07-06, tier: 3}
+        - {url: "https://www.bta.bg/en/news/1048919-bulgaria-joins-president-trump-s-board-of-peace", title: "Bulgaria Joins President Trump's Board of Peace", publisher: "BTA", date: 2026-01-22, tier: 3}
+    - domain: informational
+      text: "The sovereignty frame: Radev calls his Russia and Ukraine line 'national interest' defended 'in a collective format', says Europe should lead peace talks and has called Crimea 'currently Russian' (campaign statements); Moscow's own reading (Zakharova) is that Sofia is 'too weak' to help Ukraine rather than turning toward Russia."
+      confidence: C
+      sources:
+        - {url: "https://www.veridica.ro/en/opinions/rumen-radev-may-be-positioning-bulgaria-as-russias-new-darling-within-the-eu", title: "Rumen Radev may be positioning Bulgaria as Russia's new darling within the EU", publisher: "Veridica", date: 2026-07, tier: 3}
+        - {url: "https://www.novinite.com/view_news.php?id=239687", title: "Zakharova: Bulgaria Is Not Turning Toward Russia, It Is Simply Too Weak To Help Ukraine", publisher: "Novinite", date: 2026-07, tier: 3}
+        - {url: "https://based.info/bulgarias-radev-poised-for-victory-in-sunday-poll-testing-eu-unity-on-russia/", title: "Bulgaria's Radev poised for victory in Sunday poll, testing EU unity on Russia", publisher: "Based.info", date: 2026-04, tier: 3}
+    - domain: military
+      text: "A frontline host more than a power: the NATO battlegroup at Novo Selo (up to about 800 Italian troops approved), eight F-16 Block 70 delivered by 17 Dec 2025 and eight more due by 2027, a NATO planning team in Sofia (February 2026) for Eastern Sentry, command of the Black Sea mine-countermeasures task group from 9 Jul 2026 and a defence plan to reach 5% of GDP by 2035."
+      confidence: B
+      sources:
+        - {url: "https://sofiaglobe.com/?p=106497", title: "Bulgaria's government approves Italian deployment in battle group", publisher: "Sofia Globe", date: 2023, tier: 3}
+        - {url: "https://www.bta.bg/en/news/1030695-bulgaria-welcomes-full-first-batch-of-f-16-block-70-fighter-jets", title: "Bulgaria Welcomes Full First Batch of F-16 Block 70 Fighter Jets", publisher: "BTA", date: 2025-12-17, tier: 3}
+        - {url: "https://bnrnews.bg/en/post/500332/bulgaria-romania-and-turkiye-expand-black-sea-mine-countermeasures-mission", title: "Bulgaria, Romania and Turkiye expand Black Sea mine countermeasures mission", publisher: "BNR", date: 2026-07, tier: 3}
+    - domain: economic
+      text: "Control of chokepoints it already has: the special commercial manager of Lukoil Neftochim Burgas (the only refinery, impact put at over BGN 15bn a year), the Balkan Stream/TurkStream transit corridor (transit income about EUR 800m January 2022 - March 2024, Romanian estimate), the IGB and Serbia interconnectors, and a defence industry whose exports reached about EUR 2.5bn in 2025."
+      confidence: B
+      sources:
+        - {url: "https://bntnews.bg/news/case-lukoil-what-is-the-role-of-a-special-manager-at-the-refinery-1364637news.html", title: "Case Lukoil: what is the role of a special manager at the refinery", publisher: "BNT", date: 2025-11-11, tier: 3}
+        - {url: "https://www.energynomics.ro/en/bulgaria-to-end-russian-gas-transit-through-its-territory-in-2026/", title: "Bulgaria to end Russian gas transit through its territory in 2026", publisher: "Energynomics", date: 2025-09, tier: 3}
+        - {url: "https://www.novinite.com/articles/238879/Revealed%3A+How+Bulgaria+Has+Been+Arming+Ukraine+for+Four+Years", title: "Revealed: How Bulgaria Has Been Arming Ukraine for Four Years (defence exports about EUR 2.5bn in 2025, HEMUS 2026)", publisher: "Novinite", date: 2026-06-04, tier: 3}
+
+  constraints:
+    - text: "Sanctions law it does not write: the US Treasury's measures on Lukoil, the pending sale of Lukoil International to Carlyle and OFAC/OFSI licences decide whether Burgas can buy crude and sell fuel; Sofia can only ask for waivers, and in November 2025 had 11 days to apply for one. Any sale that looks like nationalisation exposes Bulgaria to Russian investment-treaty claims."
+      confidence: B
+      sources:
+        - {url: "https://bntnews.bg/news/case-lukoil-what-is-the-role-of-a-special-manager-at-the-refinery-1364637news.html", title: "Case Lukoil: what is the role of a special manager at the refinery", publisher: "BNT", date: 2025-11-11, tier: 3}
+        - {url: "https://www.spglobal.com/energy/en/news-research/latest-news/crude-oil/081326-uk-extends-sanctions-waivers-for-lukoil-international-subsidiaries", title: "UK extends sanctions waivers for Lukoil international subsidiaries", publisher: "S&P Global", date: 2026-08-13, tier: 3}
+    - text: "Demography and poverty: the population was 6,423,207 at the end of 2025 (down 14,153), with 50,241 births against 99,479 deaths, 24.3% aged 65 or more, and about 344,000 people lost to emigration in the decade to the 2021 census. The EU's poorest member has less labour, fewer conscripts and a narrower tax base each year."
+      confidence: B
+      sources:
+        - {url: "https://www.novinite.com/view_news.php?id=238273", title: "Bulgaria Lost 14,000 People in 2025: Deaths Nearly Double Births, Population Decline Deepens", publisher: "Novinite (NSI data)", date: 2026, tier: 3}
+        - {url: "https://www.osw.waw.pl/en/publikacje/osw-commentary/2024-12-16/a-dwindling-nation-bulgaria-brink-a-demographic-collapse", title: "A dwindling nation. Bulgaria is on the brink of a demographic collapse", publisher: "OSW", date: 2024-12-16, tier: 2}
+    - text: "A public split on the euro and a fragile fiscal base: opinion was 46.5% for and 46.8% against in May 2025 (Alpha Research); Vazrazhdane campaigned against it as 'treason'; the 2026 budget meant to meet the new regime (higher dividend tax and contributions) toppled the Zhelyazkov cabinet in December 2025."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/economy/2025/12/31/bulgaria-set-to-adopt-the-euro-why-is-this-causing-controversy", title: "Bulgaria set to adopt the euro - why is this causing controversy?", publisher: "Al Jazeera", date: 2025-12-31, tier: 3}
+        - {url: "https://ianslive.in/bulgarian-pm-zhelyazkov-resigns-after-weeks-of-mass-protests--20251211192059", title: "Bulgarian PM Zhelyazkov resigns after weeks of mass protests", publisher: "IANS", date: 2025-12-11, tier: 3}
+    - text: "A take-or-pay contract with Turkey: Bulgargaz booked 106.4 GWh/day of regasification capacity at Turkish terminals through 2035 (about BGN 1m a day), owes BOTAS about BGN 300m in arrears, and rescinding the deal could cost close to BGN 3bn; the July 2026 suspension is for 15 months only."
+      confidence: B
+      sources:
+        - {url: "https://www.bta.bg/en/news/balkans/1162195-bulgarian-pm-meets-turkish-president-in-ankara-sides-agree-to-suspend-bilateral", title: "Bulgarian PM meets Turkish president in Ankara, sides agree to suspend bilateral gas agreement", publisher: "BTA", date: 2026-07-06, tier: 3}
+    - text: "Russian-designed nuclear base and a long fuel transition: Kozloduy's two VVER-1000 units supply about a third of Bulgaria's electricity; unit 5 is on Westinghouse fuel (10-year contract of December 2022), unit 6 is to follow with Framatome, and the new AP1000 units 7 and 8 are not expected before 2034-2037."
+      confidence: B
+      sources:
+        - {url: "https://world-nuclear-news.org/articles/bulgarian-plant-signs-10-year-deal-for-westinghous", title: "Bulgarian plant signs 10-year deal for Westinghouse fuel", publisher: "World Nuclear News", date: 2022-12-22, tier: 3}
+        - {url: "https://ans.org/news/article-5771/bulgaria-us-partner-on-nuclear-program", title: "Bulgaria, US partner on nuclear program", publisher: "American Nuclear Society", date: 2024, tier: 3}
+    - text: "Dependence on partners it also irritates: Bulgaria is the EU's poorest member and a net recipient, hosts NATO and US forces, and needs Washington (F-16, AP1000, LNG) and Brussels (euro, Schengen, cohesion money) at once; the veto it brandished on the 21st sanctions package was dropped once Kirill and Alekperov were removed from the list, which shows how far leverage goes."
+      confidence: C
+      sources:
+        - {url: "https://euromaidanpress.com/2026/07/14/two-months-in-office-three-blows-to-ukraine-bulgarias-premier-stacks-coalition-of-the-willing-exit-on-aid-freeze-and-sanctions-blocks/", title: "Two months in office, three blows to Ukraine", publisher: "Euromaidan Press", date: 2026-07-14, tier: 3}
+        - {url: "https://www.bta.bg/en/news/1140423-in-sofia-greek-prime-minister-urges-stronger-defence-cooperation-between-greece", title: "In Sofia, Greek Prime Minister urges stronger defence cooperation between Greece and Bulgaria", publisher: "BTA", date: 2026-06-04, tier: 3}
+
+  paradoxes:
+    - text: "Seizing Lukoil to save the refinery puts the state against its own constitution and creditors. The special-manager law removed judicial oversight (a constitutional problem for the Centre for the Study of Democracy) and a sale that looks like nationalisation could draw Russian claims under the bilateral investment treaty; yet without the manager the refinery would stop within weeks of US sanctions. Control bought with legal risk."
+      confidence: B
+      sources:
+        - {url: "https://bntnews.bg/news/case-lukoil-what-is-the-role-of-a-special-manager-at-the-refinery-1364637news.html", title: "Case Lukoil: what is the role of a special manager at the refinery", publisher: "BNT", date: 2025-11-11, tier: 3}
+        - {url: "https://www.novinite.com/view_news.php?id=238574", title: "Bulgarian Authorities Weigh Potential Purchase of Lukoil Refinery", publisher: "Novinite", date: 2026-05-18, tier: 3}
+    - text: "The block on North Macedonia protects Bulgarian identity and spends Bulgarian influence. After six years Skopje answers with counter-conditions (rights for Macedonians in Bulgaria, no further vetoes) and an arson attack on Bulgarian embassy cars (15 Jun 2026); Radev now says there is 'nothing more to discuss' with Mickoski. Sofia, which wants the Western Balkans stable and anchored in the EU, has made itself the first obstacle on that road."
+      confidence: B
+      sources:
+        - {url: "https://www.bta.bg/en/news/bulgaria/1150083-north-macedonia-s-leadership-doing-everything-possible-to-delay-eu-membership-p", title: "North Macedonia's leadership doing everything possible to delay EU membership, PM Radev says", publisher: "BTA", date: 2026-06-18, tier: 3}
+        - {url: "https://balkaninsight.com/2026/06/16/arson-of-diplomatic-cars-adds-to-bulgaria-north-macedonia-strains/bi/", title: "Arson of Diplomatic Cars Adds to Bulgaria-North Macedonia Strains", publisher: "Balkan Insight (BIRN)", date: 2026-06-16, tier: 3}
+        - {url: "https://www.bta.bg/en/news/balkans/1053499-north-macedonia-pm-mickoski-sets-two-conditions-for-constitutional-amendments", title: "North Macedonia PM Mickoski sets two conditions for constitutional amendments", publisher: "BTA", date: 2026-01-29, tier: 3}
+    - text: "Bulgaria earns from the Russian gas it says it will stop carrying. TurkStream's European string delivers to Serbia and Hungary through Bulgaria (52 mcm/day at the Turkey-Bulgaria entry in January 2026, a record), the transit fee paid about EUR 800m in 2022-24, and Zhelyazkov promised to end transit contracts in 2026 and Russian gas in the domestic market by 2028 - while the Vertical Corridor it builds to replace those flows cost almost three times more than rival routes to Ukraine until the March 2026 tariff revision."
+      confidence: B
+      sources:
+        - {url: "https://www.spglobal.com/energy/en/news-research/latest-news/natural-gas/020226-russian-gas-flows-to-europe-via-turkstream-remain-at-sustained-high-in-jan", title: "Russian gas flows to Europe via TurkStream remain at sustained high in Jan", publisher: "S&P Global", date: 2026-02-02, tier: 3}
+        - {url: "https://serbia-energy.eu/bulgaria-to-end-russian-gas-transit-to-serbia-and-hungary-by-2026-phase-out-domestic-use-by-2028/", title: "Bulgaria to end Russian gas transit to Serbia and Hungary by 2026, phase out domestic use by 2028", publisher: "Serbia Energy", date: 2025-09, tier: 3}
+        - {url: "https://modeldiplomat.com/story/greeces-vertical-gas-corridor-books-45", title: "Greece's Vertical Gas Corridor books 45%", publisher: "Model Diplomat", date: 2026-07, tier: 3}
+    - text: "Bulgaria arms Ukraine through its factories and disarms it through its government. Its defence industry supplied by von der Leyen's count about a third of the EU's weapons to Ukraine and exports about EUR 2.5bn a year, yet Radev froze state military aid (9 Jun 2026), left the Coalition of the Willing (14 Jul) and his economy minister says there are no funds for the Rheinmetall plant at Sopot that would anchor the industry's next generation."
+      confidence: B
+      sources:
+        - {url: "https://www.pravda.com.ua/eng/news/2025/09/1/7528713/", title: "Bulgaria has provided a third of EU weapons for Ukraine - von der Leyen", publisher: "Ukrainska Pravda", date: 2025-09-01, tier: 3}
+        - {url: "https://www.veridica.ro/en/opinions/rumen-radev-may-be-positioning-bulgaria-as-russias-new-darling-within-the-eu", title: "Rumen Radev may be positioning Bulgaria as Russia's new darling within the EU", publisher: "Veridica", date: 2026-07, tier: 3}
+        - {url: "https://euromaidanpress.com/2026/07/14/two-months-in-office-three-blows-to-ukraine-bulgarias-premier-stacks-coalition-of-the-willing-exit-on-aid-freeze-and-sanctions-blocks/", title: "Two months in office, three blows to Ukraine", publisher: "Euromaidan Press", date: 2026-07-14, tier: 3}
+    - text: "The euro it won cost the government that won it. Adoption on 1 Jan 2026 was the central achievement of the Zhelyazkov cabinet, but the budget needed to stay inside the new regime (higher dividend tax and contributions) triggered the largest protests in three decades and the cabinet's resignation on 11 Dec 2025 - three weeks before the changeover. The beneficiary was an outsider, Radev, who had opposed the party system that carried the euro."
+      confidence: B
+      sources:
+        - {url: "https://ianslive.in/bulgarian-pm-zhelyazkov-resigns-after-weeks-of-mass-protests--20251211192059", title: "Bulgarian PM Zhelyazkov resigns after weeks of mass protests", publisher: "IANS", date: 2025-12-11, tier: 3}
+        - {url: "https://pism.pl/publications/resignation-of-the-zhelyazkov-government-in-bulgaria", title: "Resignation of the Zhelyazkov government in Bulgaria", publisher: "PISM", date: 2025-12, tier: 2}
+    - text: "Pledging 5% to NATO while the army's modernisation is on hold. Radev told Rutte that 2% was reached and 5% (by 2035 in the defence minister's plan) was the aim, and presented Bulgaria at Ankara as a 'stability anchor' on the Black Sea; six weeks later the economy minister said there was no money for the Sopot plant and the cabinet put modernisation on hold."
+      confidence: C
+      sources:
+        - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/05/28/bulgaria-aims-to-raise-defence-spending-to-5-of-gdp-pm-radev-says", title: "Bulgaria aims to raise defence spending to 5% of GDP, PM Radev says", publisher: "Reuters (via Internazionale)", date: 2026-05-28, tier: 3}
+        - {url: "https://www.veridica.ro/en/opinions/rumen-radev-may-be-positioning-bulgaria-as-russias-new-darling-within-the-eu", title: "Rumen Radev may be positioning Bulgaria as Russia's new darling within the EU", publisher: "Veridica", date: 2026-07, tier: 3}
+
+  reading: |
+    Bulgaria's strategy is that of a small, poor, shrinking member of two clubs
+    that has just chosen a leader who sells distance from both while keeping the
+    benefits of each. The euro (1 Jan 2026), full Schengen (1 Jan 2025), the NATO
+    battlegroup, the F-16s and the Westinghouse fuel are the anchor and nobody in
+    power is seriously proposing to cut it; what moves is the margin. Rumen Radev,
+    elected on 19 April 2026 with a single-party majority, uses the one thing a
+    small state has inside the EU, the veto, on Patriarch Kirill, on Lukoil's
+    founder and on North Macedonia, and pays for it by leaving Ukraine's
+    coalition and freezing state arms aid, while the factories keep selling.
+    The Luttwakian pattern is plain: each gain in leverage (the veto, the special
+    manager at Burgas, the transit corridor, the defence industry) is bought
+    with a loss in trust among the same partners who guarantee the anchor, and
+    the paradox of the North Macedonia block shows the end of that road.
+    Signals that are not rows: Zakharova said on 29 May 2026 that Sofia showed
+    no sign of restoring dialogue with Moscow and on 14 Jul that it was 'too weak'
+    to help Ukraine, not turning toward Russia; the pivot is therefore toward
+    caution, not toward the Kremlin. The oligarch network of Peevski, Magnitsky-listed
+    by the US in June 2021, lost its place in government in April 2026, but the
+    underlying fragility (eight elections in five years, a cabinet toppled by a
+    budget in December 2025) has not yet been tested by a hard budget under Radev.
+    What to watch: the Lukoil licences (reported to run to the end of October 2026),
+    the 21st-package endgame, whether Skopje and Sofia talk again before the
+    Council's next enlargement report, and whether the 15-month BOTAS suspension
+    ends with a renegotiated or a litigated contract.

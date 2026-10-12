@@ -1,14 +1,178 @@
 id: ROU
 name: Romania
+short: Romania
 type: state
 iso2: ro
 wikipedia: https://en.wikipedia.org/wiki/Romania
-coords:
-- 26.1
-- 44.41
+coords: [26.1, 44.41]
 seat: Bucharest
-regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+regions: ['east-europe-black-sea']
+card: full
+tier: protagonist
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the United States and NATO anchored on the Black Sea flank: US troops and bases (Mihail Kogalniceanu, Deveselu), US arms (F-35, Patriot, HIMARS) and a NATO command role in the Black Sea. Bucharest says it sees 'no risk' of a US pullback from the eastern flank while the Pentagon has already ended the rotational brigade."
+      confidence: B
+      sources:
+        - {url: "https://www.romania-insider.com/us-troops-nato-eastern-flank-romanian-president-july-2026", title: "No risk of US troops withdrawing from NATO's eastern flank, Romanian president says", publisher: "Romania Insider", date: 2026-07-08, tier: 3}
+        - {url: "https://cursdeguvernare.ro/romania-at-the-nato-summit-17-decisions-and-discussions-concerning-us.html", title: "Romania at the NATO summit: 17 decisions and discussions concerning the US", publisher: "Curs de Guvernare", date: 2026-07, tier: 3, lang: ro}
+        - {url: "https://www.stripes.com/theaters/europe/2025-10-29/romania-us-forces-reduction-19584091.html", title: "Romania says US forces will be reduced", publisher: "Stars and Stripes", date: 2025-10-29, tier: 3}
+    - rank: 2
+      text: "Keep Ukraine standing and the Black Sea open: Danube and Constanta as Ukraine's export outlet, the Romania-Bulgaria-Turkiye mine-countermeasures group, joint drone production with Kyiv (declaration of 12 Mar 2026) and the National Defence Strategy 2025-2030 that names Russia's hybrid war as the main threat."
+      confidence: B
+      sources:
+        - {url: "https://www.romania-insider.com/romania-ukraine-strategic-partnership-march-2026", title: "Romania, Ukraine sign strategic partnership declaration during Zelensky's visit to Bucharest", publisher: "Romania Insider", date: 2026-03-12, tier: 3}
+        - {url: "https://www.romania-insider.com/parliament-approves-defense-strategy-nov-2025", title: "Parliament approves Romania's new 2025-2030 National Defense Strategy", publisher: "Romania Insider", date: 2025-11-26, tier: 3}
+        - {url: "https://agerpres.ro/english/2026/07/08/defence-ministry-romania-bulgaria-and-turkey-expand-black-sea-mine-countermeasure-missions--1574222", title: "Defence Ministry: Romania, Bulgaria and Turkey expand Black Sea mine countermeasure missions", publisher: "Agerpres (state agency, official statement)", date: 2026-07-08, tier: 1}
+    - rank: 3
+      text: "Stop the fiscal slide and stay inside the EU core: the deficit was 7.9% of GDP in 2025 (the EU's highest) and every agency rates Romania one notch above junk with a negative outlook. EU money (recovery plan, SAFE loans of EUR 16.68bn) and the euro path depend on consolidation."
+      confidence: A
+      sources:
+        - {url: "https://www.businessforum.ro/finance/20260422/romania-achieves-largest-eu-fiscal-correction-in-2025-3116/amp", title: "Romania achieves largest EU fiscal correction in 2025", publisher: "Business Forum Romania (Eurostat data)", date: 2026-04-22, tier: 3}
+        - {url: "https://agerpres.ro/english/2026/10/03/standard-poor-s-affirms-romania-bbb--a-3-ratings-outlook-negative--1599689", title: "Standard & Poor's affirms Romania at BBB-/A-3, outlook negative", publisher: "Agerpres (state agency)", date: 2026-10-03, tier: 1}
+        - {url: "https://www.intellinews.com/romania-signs-16-7bn-safe-financing-agreement-with-european-commission-444426/", title: "Romania signs EUR 16.7bn SAFE financing agreement with European Commission", publisher: "bne IntelliNews", date: 2026-05, tier: 3}
+    - rank: 4
+      text: "Close the political door that foreign-boosted populism opened: the annulled 2024 election, the prosecution of Calin Georgescu, a governing majority that excludes the AUR party, and a new government after the May 2026 collapse (President Dan has nominated four prime ministers in five months)."
+      confidence: B
+      sources:
+        - {url: "https://www.timeslive.co.za/news/world/2026-10-06-romanian-president-nominates-diplomat-luca-niculescu-as-pm/", title: "Romanian president nominates diplomat Luca Niculescu as PM", publisher: "Reuters via TimesLIVE", date: 2026-10-06, tier: 3}
+        - {url: "https://www.romania-insider.com/calin-georgescu-sent-trial-attemped-coup-sept-2025", title: "Former presidential candidate Calin Georgescu sent to trial for complicity in attempted coup in Romania", publisher: "Romania Insider", date: 2025-09, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/9/30/romanian-political-crisis-intensifies-as-parliament-rejects-pro-eu-pm", title: "Romania's political crisis intensifies as Parliament rejects pro-EU PM", publisher: "Al Jazeera", date: 2026-09-30, tier: 3}
+    - rank: 5
+      text: "Anchor Moldova in the West short of unification: the EU path, electricity and gas links, the trilateral with Chisinau and Kyiv (27 Aug 2026), a price cap on Romanian power sold to Moldova. Sandu says she would vote for unification but the polls do not give a majority and Bucharest does not pursue it."
+      confidence: B
+      sources:
+        - {url: "https://spotmedia.ro/stiri/eveniment/nicusor-dan-dupa-reuniunea-trilaterala-de-la-chisinau-romania-sustine-ucraina-si-parcursul-european-al-republicii-moldova", title: "Nicusor Dan after the Chisinau trilateral: Romania backs Ukraine and the European path of Moldova", publisher: "Spotmedia", date: 2026-08-27, tier: 3, title_original: "Nicusor Dan, dupa reuniunea trilaterala de la Chisinau: Romania sustine Ucraina si parcursul european al Republicii Moldova", lang: ro}
+        - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/01/12/moldova-s-president-sandu-says-she-would-vote-to-join-romania", title: "Moldova's President Sandu says she would vote to join Romania", publisher: "Reuters via Internazionale", date: 2026-01-12, tier: 3}
+        - {url: "https://www.romania-insider.com/moldovands-unification-romania-march-2026", title: "More Moldovans support than oppose their country's unification with Romania", publisher: "Romania Insider", date: 2026-03, tier: 3}
+    - rank: 6
+      text: "Become a Black Sea energy hub rather than a transit corridor for Russian molecules: Neptun Deep (about 8 bcm a year, first gas planned for the first half of 2027), the Vertical Gas Corridor from Greece through Bulgaria, and the nuclear units at Cernavoda."
+      confidence: B
+      sources:
+        - {url: "https://www.omvpetrom.com/en/media/latest-news/2025/omv-petrom-and-romgaz-spud-the-first-gas-production-well-of-neptun-deep-project", title: "OMV Petrom and ROMGAZ spud the first gas production well of Neptun Deep project", publisher: "OMV Petrom", date: 2025-03-26, tier: 1}
+        - {url: "https://inspenet.com/en/news/neptun-deep-expects-to-start-gas-production-in-the-first-half-of-2027/", title: "Neptun Deep expects to start gas production in the first half of 2027", publisher: "Inspenet", date: 2026, tier: 3}
+        - {url: "https://text.president.bg/en/news8877/prezidentat-iliyana-yotova-vertikalniyat-gazov-koridor-e-ot-strategichesko-znachenie-za-sigurnostta-na-evropeyskata-energiyna-sistema.html", title: "President Yotova: the Vertical Gas Corridor is of strategic importance for the security of the European energy system", publisher: "Presidency of Bulgaria", date: 2026-05, tier: 1}
+
+  means:
+    - domain: diplomatic
+      text: "Triangular diplomacy with Chisinau and Kyiv (the 'Odesa Triangle'), a strategic partnership with Turkiye (Dan, June 2026: extend it to undersea infrastructure and move the NATO Black Sea centre to Constanta), and NATO asks at the Ankara summit of 7-8 July 2026: rotating command of the Combined Task Force Black Sea from 2028, a NATO defence-bank office and a fuel pipeline into Romania."
+      confidence: B
+      sources:
+        - {url: "https://agerpres.ro/english/2026/06/21/president-dan-says-strategic-partnership-between-romania-and-turkey-could-be-expanded--1568475", title: "President Dan says strategic partnership between Romania and Turkey could be expanded", publisher: "Agerpres (state agency, official statement)", date: 2026-06-21, tier: 1}
+        - {url: "https://cursdeguvernare.ro/romania-at-the-nato-summit-17-decisions-and-discussions-concerning-us.html", title: "Romania at the NATO summit: 17 decisions and discussions concerning the US", publisher: "Curs de Guvernare", date: 2026-07, tier: 3, lang: ro}
+        - {url: "https://moldpres.md/eng/politics/live-presidents-of-moldova-romania-ukraine-hold-a-joint-press-conference-in-chisinau", title: "LIVE: Presidents of Moldova, Romania, Ukraine hold a joint press conference in Chisinau", publisher: "Moldpres (state agency, official statement)", date: 2026-08-27, tier: 1}
+    - domain: diplomatic
+      text: "Expulsions as signalling against Russia: the Russian consul in Constanta declared persona non grata and the consulate closed after a Russian drone hit a block in Galati on 29 May 2026; a Russian embassy official expelled and the ambassador in Moscow recalled on 27 Jul 2026 after three drones were shot down. Moscow answered each time in kind."
+      confidence: B
+      sources:
+        - {url: "https://news.liga.net/en/politics/news/the-romanian-mission-will-no-longer-operate-in-one-of-russias-major-cities", title: "The Romanian mission will no longer operate in one of Russia's major cities", publisher: "Liga.net", date: 2026-06-25, tier: 3}
+        - {url: "https://en.apa.az/europe/romania-expels-russian-diplomat-after-drone-incursions-517786", title: "Romania expels Russian diplomat after drone incursions", publisher: "APA", date: 2026-07-27, tier: 3}
+        - {url: "https://www.eurointegration.com.ua/eng/news/2026/08/26/7244220/", title: "Russian Foreign Ministry summons Romanian representative", publisher: "Evropeiska Pravda", date: 2026-08-26, tier: 3}
+    - domain: military
+      text: "Hosting and buying: Mihail Kogalniceanu approved for US use in the Iran operation (11 Mar 2026), expansion of the base planned at about EUR 2.5bn, Deveselu Aegis Ashore, 32 F-35A ordered, F-16s that now shoot drones down (first kill 24 Jul 2026, under the 2025 law that allows it), a Patriot battery given to Ukraine in 2024 against the promise of a replacement."
+      confidence: B
+      sources:
+        - {url: "https://www.stripes.com/theaters/europe/2026-03-11/us-romania-airbase-iran-21025925.html", title: "US to use Romanian air base for Iran operations", publisher: "Stars and Stripes", date: 2026-03-11, tier: 3}
+        - {url: "https://thedefensepost.com/2026/07/25/romania-shoots-second-drone/", title: "Romania shoots down second drone in two days", publisher: "The Defense Post", date: 2026-07-25, tier: 3}
+        - {url: "https://www.aljazeera.com/amp/news/2024/6/20/romania-to-send-patriot-system-to-ukraine-as-russia-pounds-its-power-grid", title: "Romania to send Patriot system to Ukraine as Russia pounds its power grid", publisher: "Al Jazeera", date: 2024-06-20, tier: 3}
+    - domain: military
+      text: "EU money for arms: SAFE loan agreement of EUR 16.68bn (second after Poland, 45-year maturity), first EUR 2.5bn paid in August 2026; about EUR 4.2bn of it is for strategic roads. Defence spending 2.2-2.45% of GDP in 2025 depending on the source, with the NATO Hague long-term ambition of 5% of GDP."
+      confidence: B
+      sources:
+        - {url: "https://www.romania-insider.com/romania-first-payment-safe-eu-august-2026", title: "Romania receives first EUR 2.5 bln payment under EU's SAFE defense instrument", publisher: "Romania Insider", date: 2026-08, tier: 3}
+        - {url: "https://www.businessforum.ro/finance/20260522/romania-secures-eur1668-billion-eu-defence-funding-deal-3232", title: "Romania secures EUR 16.68 billion EU defence funding deal", publisher: "Business Forum Romania", date: 2026-05-22, tier: 3}
+        - {url: "https://militaryspend.org/country-profiles/romania", title: "Romania defence spending profile", publisher: "militaryspend.org", date: 2025, tier: 4}
+    - domain: informational
+      text: "Naming the threat in law and in court: the National Defence Strategy 2025-2030 (adopted 26 Nov 2025 by 314 votes to 43) puts Russia's hybrid war first; prosecutors tried Georgescu as 'beneficiary of Russia's hybrid war actions' (trial confirmed April 2026); the declassified intelligence of December 2024 and the Commission's DSA proceedings against TikTok (17 Dec 2024) are the evidentiary base."
+      confidence: B
+      sources:
+        - {url: "https://www.romania-insider.com/parliament-approves-defense-strategy-nov-2025", title: "Parliament approves Romania's new 2025-2030 National Defense Strategy", publisher: "Romania Insider", date: 2025-11-26, tier: 3}
+        - {url: "https://romania-insider.com/coup-trial-calin-georgescu-begin-april-2026", title: "Court rules to continue coup d'etat trial of far-right Romanian politician Calin Georgescu, mercenaries", publisher: "Romania Insider", date: 2026-04, tier: 3}
+        - {url: "https://digital-strategy.ec.europa.eu/en/news/commission-opens-formal-proceedings-against-tiktok-election-risks-under-digital-services-act", title: "Commission opens formal proceedings against TikTok on election risks under the Digital Services Act", publisher: "European Commission", date: 2024-12-17, tier: 1}
+    - domain: economic
+      text: "Fiscal consolidation to buy EU money and a rating: VAT up from 19% to 21% on 1 Aug 2025, wage and pension freezes, a deficit cut from 9.3% (2024) to 7.9% (2025); sanctions compliance on Lukoil (US-UK sanctions of October 2025) with state supervision of the Petrotel refinery; a cap on the price of electricity sold to Moldova (announced 1 Mar 2025)."
+      confidence: B
+      sources:
+        - {url: "https://www.businessforum.ro/finance/20260422/romania-achieves-largest-eu-fiscal-correction-in-2025-3116/amp", title: "Romania achieves largest EU fiscal correction in 2025", publisher: "Business Forum Romania (Eurostat data)", date: 2026-04-22, tier: 3}
+        - {url: "https://www.romania-insider.com/ro-operate-lukoil-refinery-apr-2026", title: "Romania plans to operate Lukoil's local refinery", publisher: "Romania Insider", date: 2026-04, tier: 3}
+        - {url: "https://www.antena3.ro/politica/romania-va-plafona-pretul-la-energia-electrica-cumparata-de-republica-moldova-a-dat-asigurari-ilie-bolojan-737873.html", title: "Romania will cap the price of electricity bought by the Republic of Moldova, Ilie Bolojan assured", publisher: "Antena 3", date: 2025-03-01, tier: 3, title_original: "Romania va plafona pretul la energia electrica cumparata de Republica Moldova, a dat asigurari Ilie Bolojan", lang: ro}
+
+  constraints:
+    - text: "No government with full powers since 5 May 2026. The Bolojan cabinet fell to a no-confidence vote (281 to 4) moved by the AUR with the Social Democrats; a second nominee, Siegfried Muresan, got 182 of the 233 votes needed on 30 Sep 2026; the fourth nominee, Luca Niculescu, was named on 5 Oct. The far right holds about a third of Parliament and Dan refuses a cabinet with it. Dissolution conditions are met but Dan calls it a last resort."
+      confidence: A
+      sources:
+        - {url: "https://www.jurist.org/news/?p=312241", title: "Romania dispatch: Bolojan government removed by successful vote of no confidence", publisher: "JURIST", date: 2026-05-14, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/9/30/romanian-political-crisis-intensifies-as-parliament-rejects-pro-eu-pm", title: "Romania's political crisis intensifies as Parliament rejects pro-EU PM", publisher: "Al Jazeera", date: 2026-09-30, tier: 3}
+        - {url: "https://www.timeslive.co.za/news/world/2026-10-06-romanian-president-nominates-diplomat-luca-niculescu-as-pm/", title: "Romanian president nominates diplomat Luca Niculescu as PM", publisher: "Reuters via TimesLIVE", date: 2026-10-06, tier: 3}
+    - text: "Public finances: ESA deficit 7.9% of GDP in 2025 (9.3% in 2024), debt 59.3% of GDP (48.1% in 2022), interest bill rising to about 3.2% of GDP in 2026. S&P (2 Oct 2026) and Fitch (31 Jul 2026) hold BBB- with a negative outlook, S&P warning that a long government formation could hinder the 2027-28 consolidation. One notch from junk, with large external financing needs and high non-resident holdings of debt."
+      confidence: A
+      sources:
+        - {url: "https://agerpres.ro/english/2026/10/03/standard-poor-s-affirms-romania-bbb--a-3-ratings-outlook-negative--1599689", title: "Standard & Poor's affirms Romania at BBB-/A-3, outlook negative", publisher: "Agerpres (state agency)", date: 2026-10-03, tier: 1}
+        - {url: "https://www.businessforum.ro/finance/20260422/romania-achieves-largest-eu-fiscal-correction-in-2025-3116/amp", title: "Romania achieves largest EU fiscal correction in 2025", publisher: "Business Forum Romania (Eurostat data)", date: 2026-04-22, tier: 3}
+    - text: "Washington decides the posture: the 2nd Brigade of the 101st Airborne was not replaced (announced 29 Oct 2025), about 1,000 US troops remain, and the House and Senate Armed Services chairs said they were not consulted. Romania can lobby but not compel; the base it is building for NATO's largest hub has no guaranteed tenants."
+      confidence: B
+      sources:
+        - {url: "https://www.stripes.com/theaters/europe/2025-10-29/romania-us-forces-reduction-19584091.html", title: "Romania says US forces will be reduced", publisher: "Stars and Stripes", date: 2025-10-29, tier: 3}
+        - {url: "https://www.wicker.senate.gov/2025/10/chairmen-of-senate-and-house-armed-services-committees-we-strongly-oppose-the-pentagon-s-decision-to-scale-back-the-u-s-troop-presence-in-romania", title: "Chairmen of Senate and House Armed Services Committees: we strongly oppose the Pentagon's decision to scale back the US troop presence in Romania", publisher: "US Senate (Sen. Wicker)", date: 2025-10, tier: 1}
+        - {url: "https://www.rferl.org/a/33575594.html", title: "US cuts troops in Romania amid military posture 'adjustments'", publisher: "RFE/RL", date: 2025-10, tier: 3}
+    - text: "A border it cannot seal: 650 km with Ukraine along the Danube, where Russian drones cross, fall or are shot down (Galati 29 May 2026; Tulcea 26 Mar and 2 Aug 2026; kills only from 24 Jul 2026, with Italian Typhoons supporting the F-16s). The F-35s arrive in the early 2030s and the Patriot gap left by the 2024 donation is still open."
+      confidence: B
+      sources:
+        - {url: "https://euromaidanpress.com/2026/08/02/romanian-jets-scramble-as-russian-drone-enters-nato-airspace/", title: "Romanian jets scramble as Russian drone enters NATO airspace before Ukraine shoots it down", publisher: "Euromaidan Press", date: 2026-08-02, tier: 3}
+        - {url: "https://thedefensepost.com/2026/07/25/romania-shoots-second-drone/", title: "Romania shoots down second drone in two days", publisher: "The Defense Post", date: 2026-07-25, tier: 3}
+        - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/03/12/romania-signs-deal-with-ukraine-on-joint-defence-production-including-drones", title: "Romania signs deal with Ukraine on joint defence production including drones", publisher: "Reuters via Internazionale", date: 2026-03-12, tier: 3}
+    - text: "Kin and minorities cut both ways. Romania does not recognise Kosovo (one of five EU non-recognisers); it quarrels with Kyiv over Romanian-language schooling (Draft Law 16119 before the Rada on 12 Oct 2026) and with Belgrade over whether Timoc Vlachs are Romanians; and Moldova's 33% to 44% support for unification stops it from claiming Moldova."
+      confidence: C
+      sources:
+        - {url: "https://www.securitycouncilreport.org/monthly-forecast/2026-10/kosovo-17.php", title: "Kosovo - October 2026 monthly forecast", publisher: "Security Council Report", date: 2026-10, tier: 2}
+        - {url: "https://agerpres.ro/english/2026/10/08/bill-on-educational-rights-of-national-minorities-challenged-by-associations-of-romanians-in-ukraine--1601339", title: "Bill on educational rights of national minorities challenged by associations of Romanians in Ukraine", publisher: "Agerpres (state agency)", date: 2026-10-08, tier: 1}
+        - {url: "https://www.gla.ac.uk/schools/socialpolitical/research/political-international-studies-research/kinpol/knowledgeexchangeactivities/headline_1197340_en.html", title: "A Security Conundrum in European Kin-State Politics: The (Mis)Recognition of Vlachs and Romanian-Serbian Relations", publisher: "University of Glasgow (KINPOL)", date: 2025-07, tier: 2}
+        - {url: "https://www.romania-insider.com/moldovands-unification-romania-march-2026", title: "More Moldovans support than oppose their country's unification with Romania", publisher: "Romania Insider", date: 2026-03, tier: 3}
+    - text: "Energy gaps before the gas arrives: Neptun Deep gives no gas before the first half of 2027, and the Petrotel refinery (about a fifth to a quarter of national fuel output) has been shut since the Lukoil sanctions of October 2025 and entered insolvency in late August 2026, so Romania imports more fuel in the meantime."
+      confidence: C
+      sources:
+        - {url: "https://ies.lublin.pl/?p=52695", title: "Eastern Team: analysis of Petrotel Lukoil insolvency", publisher: "Institute of Central Europe (IES Lublin)", date: 2026-09-03, tier: 2}
+        - {url: "https://www.energyintel.com/0000019d-96bd-d2db-addf-9fffd4640000", title: "Lukoil's assets get sanctions relief", publisher: "Energy Intelligence", date: 2026, tier: 3}
+        - {url: "https://inspenet.com/en/news/neptun-deep-expects-to-start-gas-production-in-the-first-half-of-2027/", title: "Neptun Deep expects to start gas production in the first half of 2027", publisher: "Inspenet", date: 2026, tier: 3}
+
+  paradoxes:
+    - text: "Annulling the election to protect the system fed the forces it was meant to stop. The Constitutional Court cancelled the vote (6 Dec 2024) on declassified evidence of a Russian-backed campaign for Georgescu, yet George Simion of the AUR led the re-run's first round with 40.96% (4 May 2025) and the AUR now holds about a third of Parliament, enough to topple a government with the Social Democrats. Dan won the runoff 53.6 to 46.4 and still governs against that bloc."
+      confidence: B
+      sources:
+        - {url: "https://pism.pl/publications/constitutional-court-nullifies-romanias-presidential-election", title: "Constitutional Court nullifies Romania's presidential election", publisher: "PISM", date: 2024-12, tier: 2}
+        - {url: "https://www.romania-insider.com/george-simion-defeat-presidential-runoff-romania-2025", title: "Romania's far-right leader George Simion concedes defeat, congratulates Nicusor Dan on presidential win", publisher: "Romania Insider", date: 2025-05, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/9/30/romanian-political-crisis-intensifies-as-parliament-rejects-pro-eu-pm", title: "Romania's political crisis intensifies as Parliament rejects pro-EU PM", publisher: "Al Jazeera", date: 2026-09-30, tier: 3}
+    - text: "Austerity bought the rating and brought down the government. The tax rises and freezes that kept Romania off junk and unlocked EU funds split the four-party coalition: the Social Democrats left in April 2026 and joined the far right to remove Bolojan on 5 May. The vacuum now threatens the 2027-28 consolidation, which is the reason S&P gives for its negative outlook."
+      confidence: B
+      sources:
+        - {url: "https://www.jurist.org/news/?p=312241", title: "Romania dispatch: Bolojan government removed by successful vote of no confidence", publisher: "JURIST", date: 2026-05-14, tier: 3}
+        - {url: "https://agerpres.ro/english/2026/10/03/standard-poor-s-affirms-romania-bbb--a-3-ratings-outlook-negative--1599689", title: "Standard & Poor's affirms Romania at BBB-/A-3, outlook negative", publisher: "Agerpres (state agency)", date: 2026-10-03, tier: 1}
+    - text: "Making itself indispensable to Washington has not bought a fixed garrison. Romania lent Kogalniceanu to the Iran operation within 24 hours (11 Mar 2026) and Rutte praised it on Fox News, Iran accused NATO of complicity (June 2026), yet the US had already pulled the rotational brigade (Oct 2025). The more Bucharest hosts, the more it exposes itself to Tehran without a guarantee of more US troops."
+      confidence: B
+      sources:
+        - {url: "https://www.stripes.com/theaters/europe/2026-03-11/us-romania-airbase-iran-21025925.html", title: "US to use Romanian air base for Iran operations", publisher: "Stars and Stripes", date: 2026-03-11, tier: 3}
+        - {url: "https://www.bursa.ro/iranul-acuza-nato-de-complicitate-romania-si-italia-numite-explicit-de-rutte-drept-tari-participante-la-operatiunea-8222epic-fury-05993950", title: "Iran accuses NATO of complicity; Romania and Italy named by Rutte as participants in Operation Epic Fury", publisher: "Bursa (citing AFP)", date: 2026-06-25, tier: 3, lang: ro}
+        - {url: "https://www.stripes.com/theaters/europe/2025-10-29/romania-us-forces-reduction-19584091.html", title: "Romania says US forces will be reduced", publisher: "Stars and Stripes", date: 2025-10-29, tier: 3}
+    - text: "Backing Ukraine pulls the war onto Romanian soil and the minority quarrel weakens the partner it needs. The Patriot donation, Danube transit and drone co-production make Romania a target (Galati, Tulcea, Buzau) while Kyiv's school-law bill puts the Romanian community and the 1997 treaty on the agenda in the same weeks as the March 2026 strategic partnership."
+      confidence: B
+      sources:
+        - {url: "https://www.romania-insider.com/romania-ukraine-strategic-partnership-march-2026", title: "Romania, Ukraine sign strategic partnership declaration during Zelensky's visit to Bucharest", publisher: "Romania Insider", date: 2026-03-12, tier: 3}
+        - {url: "https://agerpres.ro/english/2026/10/09/basarabia-association-demands-recall-of-romania-s-ambassador-to-ukraine-over-romanian-language-educa--1601616", title: "Basarabia association demands recall of Romania's ambassador to Ukraine over Romanian-language education", publisher: "Agerpres (state agency)", date: 2026-10-09, tier: 1}
+        - {url: "https://thedefensepost.com/2026/07/25/romania-shoots-second-drone/", title: "Romania shoots down second drone in two days", publisher: "The Defense Post", date: 2026-07-25, tier: 3}
+    - text: "The strongest tool for Moldova is the one Moscow uses against it. Romanian passports (about 1.5 million Moldovans hold one) and kinship carry the EU path, but they let Russian and domestic opponents describe it as absorption; Sandu's own words (January 2026) hand them the line, and by 8 Oct 2026 she was saying unification needs a majority that does not exist."
+      confidence: B
+      sources:
+        - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/01/12/moldova-s-president-sandu-says-she-would-vote-to-join-romania", title: "Moldova's President Sandu says she would vote to join Romania", publisher: "Reuters via Internazionale", date: 2026-01-12, tier: 3}
+        - {url: "https://interfax.com/newsroom/top-stories/119457/", title: "Sandu: unification only with the will of the majority", publisher: "Interfax", date: 2026-10-08, tier: 3}
+        - {url: "https://www.eurointegration.com.ua/eng/articles/2026/01/14/7229005/", title: "Moldova's president backs unification with Romania. Why is this happening and where could it lead?", publisher: "Evropeiska Pravda", date: 2026-01-14, tier: 3}
+    - text: "Complying with sanctions on Russian oil switched off a domestic refinery. Applying the US-UK sanctions on Lukoil without asking for the deadline to be extended (November 2025) left Petrotel, a fifth to a quarter of national fuel output, idle and then insolvent, so the policy that cuts Russian money raises Romania's fuel imports until Neptun Deep gas arrives in 2027."
+      confidence: C
+      sources:
+        - {url: "https://ies.lublin.pl/?p=52695", title: "Eastern Team: analysis of Petrotel Lukoil insolvency", publisher: "Institute of Central Europe (IES Lublin)", date: 2026-09-03, tier: 2}
+        - {url: "https://www.romania-insider.com/ro-operate-lukoil-refinery-apr-2026", title: "Romania plans to operate Lukoil's local refinery", publisher: "Romania Insider", date: 2026-04, tier: 3}
+
+  reading: |
+    Romania is a frontline state with a rear-area politics. Its grand strategy is borrowed security: bind the United States, NATO and the EU to the Black Sea by hosting their bases, buying their arms with their loans and keeping Ukraine and Moldova alive as buffers. The method has worked in hardware (Kogalniceanu, Deveselu, F-35s, SAFE) and fails at the margin Washington controls: the brigade left in October 2025 while Bucharest was offering a base for the Iran operation five months later. What is new in 2026 is that the weak point is internal. The annulled election of 2024 did not remove the sovereigntist vote, a third of Parliament, and the fiscal repair that the EU and the rating agencies demanded took the coalition apart; the country has had a caretaker cabinet since 5 May and a fourth nominee since 5 October, with every agency one step above junk. Neighbours show the same split between kinship and interest: Moldova is kin and a partner, Ukraine is a partner and a dispute over Romanian schools, Hungary is a co-member whose new government (Magyar, April 2026) has restarted the conversation, Serbia is a partner it presses on the Vlachs, Turkey the one NATO ally in the Black Sea with ships and a strategic partnership. China is held at arm's length by law (the 5G rules that exclude Huawei) and, since Dan's remarks on the 2025 strategy, with open caution; Israel is a partner whose war Romania abstained on in 2023 and 2024 and voted for the Palestinian seat in 2026. Read through Luttwak, the danger is that Romania's policy of making itself useful rests on stable government in Bucharest, which is the thing it lacks.
