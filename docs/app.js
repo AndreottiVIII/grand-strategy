@@ -39,6 +39,7 @@
   povSel.onchange = () => { pov = povSel.value; renderAll(); };
 
   document.querySelectorAll(".tab").forEach(b => b.onclick = () => setView(b.dataset.view));
+  document.getElementById("home").onclick = ev => { ev.preventDefault(); window.scrollTo(0, 0); setView("map"); };
   function setView(v, render = true) {
     view = v;
     document.querySelectorAll(".tab").forEach(b => b.classList.toggle("is-on", b.dataset.view === v));
