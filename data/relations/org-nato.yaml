@@ -1,473 +1,973 @@
 from: org-nato
 relations:
-  # ---------- Russia and the eastern front
-  - to: RUS
-    layer: objective
-    type: influence_goal
-    summary: Deter Russia and defend Allied territory; the Strategic Concept names it 'the most significant and direct threat' (2022) and the Ankara declaration 'the long-term threat' (8 Jul 2026), while NATO states its aim is deterrence and a door left open to dialogue, not Russia's defeat.
-    since: 2022-06-29
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.nato.int/cps/en/natohq/topics_210907.htm", title: "NATO 2022 Strategic Concept (Madrid, 29 June 2022)", publisher: "NATO", date: 2022-06-29, tier: 1}
-      - {url: "https://foreignpolicy.com/2026/07/08/nato-ankara-summit-declaration-full-text-trump-ukraine-russia/", title: "The Ankara Summit Declaration (full text)", publisher: "Foreign Policy", date: 2026-07-08, tier: 3}
-      - {url: "https://www.nato.int/en/about-us/official-texts-and-resources/official-texts/2025/06/25/the-hague-summit-declaration", title: "The Hague Summit Declaration", publisher: "NATO", date: 2025-06-25, tier: 1}
-  - to: RUS
-    layer: action
-    type: exercise
-    summary: Operation Eastern Sentry, announced by Rutte and SACEUR Grynkewich on 12 Sep 2025, two days after the Russian drone incursion into Poland, covers the whole eastern flank with air defence, counter-drone systems and forces from Denmark, France, Germany, the UK and others.
-    since: 2025-09-12
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://theaviationist.com/2025/09/13/nato-launches-operation-eastern-sentry/", title: "NATO launches Operation Eastern Sentry after drone incursions", publisher: "The Aviationist", date: 2025-09-13, tier: 3}
-      - {url: "https://www.bta.bg/en/news/world/966076-nato-launches-eastern-sentry-to-bolster-posture-along-eastern-flank", title: "NATO launches 'Eastern Sentry' to bolster posture along eastern flank", publisher: "BTA", date: 2025-09, tier: 3}
-  - to: RUS
-    layer: action
-    type: exercise
-    summary: Baltic Sentry, launched on 14 Jan 2025 after the Estlink 2 cable damage (Eagle S, 25 Dec 2024), puts ships, aircraft and drones on the Baltic seabed infrastructure and the shadow fleet; run through JFC Brunssum and MARCOM with Commander Task Force Baltic in Rostock.
-    since: 2025-01-14
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.defensenews.com/global/europe/2025/01/14/nato-launches-baltic-patrol-mission-eyes-standard-for-detaining-ships/", title: "NATO launches Baltic patrol mission, eyes standard for detaining ships", publisher: "Defense News", date: 2025-01-14, tier: 3}
-      - {url: "https://www.forsvaret.dk/en/news/2025/the-danish-defence-supports-increased-nato-monitoring-of-critical-infrastructure/", title: "The Danish Defence supports increased NATO monitoring of critical infrastructure", publisher: "Danish Defence (Forsvaret)", date: 2025-01, tier: 1}
-  - to: RUS
-    layer: action
-    type: incident
-    summary: On 19 Sep 2025 three armed Russian MiG-31s violated Estonian airspace near Vaindloo for over ten minutes with transponders off; at Estonia's request the North Atlantic Council met under Article 4 on 23 Sep and condemned it as part of a pattern, the second Article 4 session in two weeks after Poland (10 Sep). Moscow denied the violation.
-    since: 2025-09-19
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.globalsecurity.org/military/library/news/2025/09/mil-250923-nato01.htm", title: "Statement by the North Atlantic Council on recent airspace violations by Russia (23 Sep 2025)", publisher: "NATO (via GlobalSecurity)", date: 2025-09-23, tier: 1}
-      - {url: "https://www.aljazeera.com/amp/news/2025/9/19/estonia-says-russian-fighter-jets-entered-airspace-in-brazen-intrusion", title: "Estonia, NATO slam 'brazen' Russian air incursion, Moscow denies claim", publisher: "Al Jazeera", date: 2025-09-19, tier: 3}
-  - to: RUS
-    layer: action
-    type: expulsion
-    summary: In October 2021 NATO withdrew the accreditation of eight Russian officials it said were intelligence officers and cut Moscow's mission from 20 to 10; Russia answered by suspending its mission to NATO from 1 Nov 2021 and closing NATO's offices in Moscow. NATO had suspended practical cooperation after Crimea in April 2014. No normal channel has been restored.
-    since: 2021-10
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://military.com/daily-news/2021/10/18/russia-suspends-its-mission-nato-foreign-minister-says.html", title: "Russia suspends its mission to NATO, foreign minister says", publisher: "Military.com / AP", date: 2021-10-18, tier: 3}
-      - {url: "https://nato.int/content/dam/nato/legacy-wcm/media_pdf/2022/2/pdf/220214-factsheet_NATO-Russia_Relations_e.pdf", title: "NATO-Russia relations factsheet (February 2022)", publisher: "NATO", date: 2022-02-14, tier: 1}
-  # ---------- Ukraine
-  - to: UKR
-    layer: alignment
-    type: candidate
-    summary: Aspirant without invitation. Washington 2024 (para 16) calls Ukraine's path to NATO 'irreversible' and promises an invitation when allies agree and conditions are met; The Hague text of June 2025 left membership out and Rutte said the commitment stood regardless; Ankara (8 Jul 2026) did not restore it. Mirrored from Ukraine's card.
-    since: 2008-04-03
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.nato.int/cps/en/natohq/official_texts_227678.htm", title: "Washington Summit Declaration, para. 16", publisher: "NATO", date: 2024-07-10, tier: 1}
-      - {url: "https://kyivindependent.com/ukraines-nato-membership-remains-irreversible-despite-possible-communique-omission-rutte-says/", title: "Ukraine's NATO membership remains irreversible despite possible communique omission, Rutte says", publisher: "Kyiv Independent", date: 2025-06, tier: 3}
-      - {url: "https://euromaidanpress.com/2025/06/18/ukraine-nato-summit-2025/", title: "No invitation - not even a mention: Ukraine to be left out of NATO's summit statement", publisher: "Euromaidan Press", date: 2025-06-18, tier: 3}
-  - to: UKR
-    layer: action
-    type: agreement
-    summary: Ankara declaration (8 Jul 2026), para 4: unwavering support for Ukraine's sovereignty and territorial integrity, EUR 70bn for 2026 and at least equivalent levels in 2027, welcome for the EU Ukraine Support Loan; Kyiv says it was recognised as a contributor to Euro-Atlantic security. Trump announced the Patriot production licence at the summit. Mirrored from Ukraine's card.
-    since: 2026-07-08
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://foreignpolicy.com/2026/07/08/nato-ankara-summit-declaration-full-text-trump-ukraine-russia/", title: "The Ankara Summit Declaration (full text, para 4)", publisher: "Foreign Policy", date: 2026-07-08, tier: 3}
-      - {url: "https://english.enabbaladi.net/archives/2026/07/ankara-summit-sets-nato-priorities-backs-ukraine/", title: "Ankara Summit Sets NATO Priorities, Backs Ukraine", publisher: "Enab Baladi", date: 2026-07, tier: 3}
-      - {url: "https://euromaidanpress.com/2026/07/03/ukraine-wants-the-ankara-summit-to-name-it-a-nato-security-contributor-not-just-an-aid-recipient/", title: "Ukraine wants the Ankara summit to name it a NATO security contributor - not just an aid recipient", publisher: "Euromaidan Press", date: 2026-07-03, tier: 3}
-  - to: UKR
-    layer: dependency
-    type: arms_supply
-    summary: PURL (Prioritised Ukraine Requirements List), agreed by Rutte and Trump on 14 Jul 2025: allies pay for packages of about USD 500m of US-made weapons chosen by Ukraine and validated by SACEUR; the Netherlands funded the first (about EUR 500m) and Denmark, Norway and Sweden the second; the Nordic-Baltic eight added USD 500m in Nov 2025. About USD 6.7bn in the first year, and about 95% of Ukraine's Patriot interceptors arrive this way.
-    value: 6.7
-    unit: USD_billion_PURL_contributions_first_year
-    since: 2025-07-14
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.kmu.gov.ua/en/news/rik-purl-maizhe-7-mlrd-dlia-postavok-krytychnoho-ozbroiennia-dlia-ukrainy", title: "A year of PURL: nearly USD 7 billion for deliveries of critical weapons to Ukraine", publisher: "Cabinet of Ministers of Ukraine", date: 2026-07, tier: 1}
-      - {url: "https://thedefensepost.com/2025/11/13/nordic-baltic-500m-kyiv-purl/", title: "Nordic, Baltic Nations Pledge $500M to Kyiv via NATO's PURL Aid System", publisher: "The Defense Post", date: 2025-11-13, tier: 3}
-      - {url: "https://nachrichten.idw-online.de/2026/08/13/ukraine-support-tracker-europe-leads-on-aid-us-weapons-remain-key", title: "Ukraine Support Tracker: Europe leads on aid - US weapons remain key", publisher: "Kiel Institute for the World Economy (via idw)", date: 2026-08-13, tier: 2}
-  - to: UKR
-    layer: action
-    type: agreement
-    summary: NSATU (NATO Security Assistance and Training for Ukraine), created at Washington 2024, took over the coordination of Western military aid from the US-led Ramstein format and began operating at Clay Barracks, Wiesbaden, in December 2024, with logistics hubs in Poland and Romania and a planned staff of about 700.
-    since: 2024-12
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.romania-insider.com/society/nato-nsatu-support-mission-ukraine-poland-and-romania-oct-2024", title: "NATO forms NSATU, a support mission for Ukraine with logistics centers in Poland and Romania", publisher: "Romania Insider", date: 2024-10, tier: 3}
-      - {url: "https://www.hessenschau.de/politik/nato-generalsekretaer-rutte-besucht-neues-kommando-in-wiesbaden-v3,nato-wiesbaden-102.html", title: "NATO Secretary General Rutte visits new command in Wiesbaden", title_original: "Ukraine-Einheit: NATO-Generalsekretaer Rutte besucht neues Kommando in Wiesbaden", lang: de, publisher: "hessenschau", date: 2024-12, tier: 3}
-  # ---------- The United States
-  - to: USA
-    layer: objective
-    type: influence_goal
-    summary: Keep the US in (its nuclear umbrella, its enablers, its troops) while meeting its demand that Europeans take primary responsibility for conventional defence - Colby's 'NATO 3.0' (Feb 2026), Hegseth's six-month posture review (18 Jun 2026) and the Hague 5% pledge; Rutte frames it as a 'more European NATO' that remains transatlantic.
-    since: 2025-06-25
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.aljazeera.com/amp/news/2026/2/12/us-urges-europe-to-take-the-lead-on-defence-in-nato", title: "US urges Europe to take the lead on defence in NATO", publisher: "Al Jazeera", date: 2026-02-12, tier: 3}
-      - {url: "https://www.euronews.com/my-europe/2026/02/12/nato-30-us-and-europe-appear-to-agree-rebalancing-of-power-is-needed", title: "NATO 3.0: US and Europe appear to agree rebalancing of power is needed", publisher: "Euronews", date: 2026-02-12, tier: 3}
-      - {url: "https://san.com/cc/hegseth-dreams-of-a-nato-3-0-heres-what-that-might-look-like/", title: "Hegseth dreams of a NATO 3.0. Here's what that might look like", publisher: "Straight Arrow News", date: 2026-06, tier: 3}
-  - to: USA
-    layer: dependency
-    type: military_presence
-    summary: About 80,000 US troops are stationed in Europe (more than 36,000 in Germany, over 12,000 in Italy, about 10,000 in the UK). A six-month Pentagon review, with a final recommendation to Hegseth on 6 Nov 2026, weighs cutting 25,000-40,000 and possibly moving some units to the eastern flank; the Pentagon already announced on 1 May 2026 that up to 5,000 would leave Germany.
-    value: 80000
-    unit: us_troops_in_europe_sep_2026
-    since: 2026-09-18
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://aa.com.tr/en/world/pentagon-weighs-pulling-at-least-25-000-us-troops-from-europe-report/4060679", title: "Pentagon weighs pulling at least 25,000 US troops from Europe (NBC report)", publisher: "Anadolu Agency", date: 2026-09-18, tier: 3}
-      - {url: "https://wtop.com/europe/2026/05/what-to-know-about-the-us-military-presence-in-europe-as-trump-seeks-drawdown-of-thousands-of-troops/", title: "What to know about the US military presence in Europe as Trump seeks drawdown of thousands of troops", publisher: "AP via WTOP", date: 2026-05, tier: 3}
-  - to: USA
-    layer: action
-    type: incident
-    summary: In May 2026 the US told allies it would cut its contribution to the NATO Force Model (the pool of forces for a crisis): a third fewer fighter jets, fewer destroyers, no submarines, fewer drones. Grynkewich said on 3 Jun 2026 that Europe and Canada 'can step up now' and that the 'unhealthy co-dependence' on US forces 'will change'; in July he said Europe had backfilled most gaps.
-    since: 2026-05
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.defensenews.com/global/europe/2026/06/03/us-tells-europe-canada-to-boost-nato-air-and-naval-forces/", title: "US tells Europe, Canada to boost NATO air and naval forces", publisher: "Defense News", date: 2026-06-03, tier: 3}
-      - {url: "https://www.stripes.com/theaters/europe/2026-05-20/nato-force-model-us-reduction-21728364.html", title: "NATO Force Model: US reduction", publisher: "Stars and Stripes", date: 2026-05-20, tier: 3}
-      - {url: "https://lasvegassun.com/news/2026/jul/03/nato-commander-says-europe-has-backfilled-most-gap/", title: "NATO commander says Europe has backfilled most gaps from US cutbacks on military equipment", publisher: "AP via Las Vegas Sun", date: 2026-07-03, tier: 3}
-  - to: USA
-    layer: action
-    type: agreement
-    summary: The Hague summit (24-25 Jun 2025), Rutte's first as Secretary General, committed allies to 5% of GDP by 2035 - 3.5% core defence plus up to 1.5% on related spending - with annual plans and a 2029 review; direct support to Ukraine counts toward it. The target was sought by President Trump. Mirrored from the Dutch card.
-    since: 2025-06-25
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.nato.int/en/about-us/official-texts-and-resources/official-texts/2025/06/25/the-hague-summit-declaration", title: "The Hague Summit Declaration", publisher: "NATO", date: 2025-06-25, tier: 1}
-      - {url: "https://europeanwesternbalkans.com/2025/06/25/nato-leaders-agree-to-increase-defence-spending-to-5-of-gdp-at-the-hague-summit/", title: "NATO leaders agree to increase defence spending to 5% of GDP at the Hague summit", publisher: "European Western Balkans", date: 2025-06-25, tier: 3}
-      - {url: "https://www.government.nl/latest/news/2025/06/13/the-netherlands-supports-nato-5-target", title: "The Netherlands supports NATO 5% target", publisher: "Government of the Netherlands", date: 2025-06-13, tier: 1}
-  - to: USA
-    layer: action
-    type: incident
-    summary: After allies would not join the US-Israeli war on Iran (from 28 Feb 2026), Trump wrote that NATO 'wasn't there when we needed them'; the White House said NATO 'was tested, and they failed'; Rutte answered that leaders had heard the complaints 'loud and clear' and that basing agreements were being implemented. The Pentagon announced on 1 May 2026 that up to 5,000 troops would leave Germany. Spain alone denied bases and airspace.
-    since: 2026-04
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.stripes.com/theaters/europe/2026-05-04/rutte-nato-trump-germany-21570969.html", title: "Rutte: NATO leaders heard Trump's complaints 'loud and clear'", publisher: "Stars and Stripes", date: 2026-05-04, tier: 3}
-      - {url: "https://en.majalla.com/node/331985", title: "One big happy family? NATO 'survives' Trump in Ankara", publisher: "The Majalla", date: 2026-07, tier: 3}
-  - to: USA
-    layer: action
-    type: agreement
-    summary: Greenland: after Trump's tariff announcement of 17 Jan 2026 against Denmark and seven allies, Rutte brokered a 'framework' with Trump at Davos on 21 Jan that dropped the tariffs and ruled out force; NATO launched Arctic Sentry on 11 Feb 2026 under SACEUR to make Arctic security an Alliance matter, and welcomed the 22 Sep 2026 US-Denmark-Greenland agreement. Mirrored from Denmark's card.
-    since: 2026-01-21
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.koreajoongangdaily.com/world/trump-says-he-will-not-impose-greenlandrelated-tariffs-on-8-nato-allies/12150007", title: "Trump says he will not impose Greenland-related tariffs on 8 NATO allies", publisher: "Korea JoongAng Daily (wire)", date: 2026-01-21, tier: 3}
-      - {url: "https://www.axios.com/2026/01/21/trump-drops-greenland-tariff-invasion-threats", title: "Trump backs off Greenland tariff threat based on new 'solution'", publisher: "Axios", date: 2026-01-21, tier: 3}
-      - {url: "https://www.defensenews.com/global/europe/2026/02/11/nato-kicks-off-arctic-sentry-operation-following-greenland-brouhaha/", title: "NATO kicks off Arctic Sentry operation following Greenland brouhaha", publisher: "Defense News", date: 2026-02-11, tier: 3}
-  # ---------- China, Belarus, Iran
-  - to: CHN
-    layer: objective
-    type: influence_goal
-    summary: Contain China's weight in Euro-Atlantic security without opening a Pacific front: the 2022 Concept says the PRC's 'ambitions and coercive policies challenge our interests, security and values'; Ankara's declaration omits China but Rutte told the Indo-Pacific partners NATO 'cannot be naive about China' and the CNA record has China called out as an enabler of Russia's war. Beijing called it 'Cold War mentality'.
-    since: 2022-06-29
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.nato.int/cps/en/natohq/topics_210907.htm", title: "NATO 2022 Strategic Concept", publisher: "NATO", date: 2022-06-29, tier: 1}
-      - {url: "https://www.cna.org/analyses/2026/08/natos-ankara-summit-the-indo-pacific-dimensions", title: "NATO's Ankara summit: the Indo-Pacific dimensions", publisher: "CNA", date: 2026-08, tier: 2}
-      - {url: "https://www.turkiyetoday.com/world/north-korea-china-criticize-nato-after-ankara-summit-3223670", title: "North Korea, China criticize NATO after Ankara summit", publisher: "Turkiye Today", date: 2026-07, tier: 3}
-  - to: BLR
-    layer: action
-    type: incident
-    summary: Russian drones entered Polish airspace on 9-10 Sep 2025, some from Belarus (at least 19 drones, three downed) just before Zapad-2025 (12-16 Sep, with nuclear-use planning); Poland closed all crossings and invoked Article 4; the North Atlantic Council met on 10 Sep. Mirrored from the Belarus card.
-    since: 2025-09-10
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.ktvh.com/world/europe/russian-drones-breach-nato-airspace-in-poland-prompting-alliance-response", title: "Russian drones breach NATO airspace in Poland, prompting alliance response", publisher: "AP", date: 2025-09-10, tier: 3}
-      - {url: "https://www.news4jax.com/news/world/2025/09/12/russia-and-belarus-launch-military-exercise-that-fueled-western-concerns/", title: "Russia and Belarus launch military exercise that fueled Western concerns", publisher: "AP", date: 2025-09-12, tier: 3}
-      - {url: "https://www.pbs.org/newshour/world/nato-allies-held-article-4-consultations-after-russian-drone-incursion-heres-what-that-means", title: "NATO allies held Article 4 consultations after Russian drone incursion", publisher: "PBS NewsHour", date: 2025-09-10, tier: 3}
-  - to: IRN
-    layer: objective
-    type: influence_goal
-    summary: Ankara declaration, para 5: 'Iran must never have a nuclear weapon' and it should respect freedom of navigation in the Strait of Hormuz. Rutte said NATO would not join the US-Israeli war; allied bases in Romania, Italy, Germany and Britain were used and Iran accused the Alliance of complicity in June 2026. Allies discussed a post-war Hormuz mission outside NATO.
-    since: 2026-02-28
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://foreignpolicy.com/2026/07/08/nato-ankara-summit-declaration-full-text-trump-ukraine-russia/", title: "The Ankara Summit Declaration (full text, para 5)", publisher: "Foreign Policy", date: 2026-07-08, tier: 3}
-      - {url: "https://www.bursa.ro/iranul-acuza-nato-de-complicitate-romania-si-italia-numite-explicit-de-rutte-drept-tari-participante-la-operatiunea-8222epic-fury-05993950", title: "Iran accuses NATO of complicity; Romania and Italy named by Rutte as participants in Operation Epic Fury", publisher: "Bursa (citing AFP)", date: 2026-06-25, tier: 3}
-      - {url: "https://www.stripes.com/theaters/europe/2026-05-04/rutte-nato-trump-germany-21570969.html", title: "Rutte: NATO leaders heard Trump's complaints 'loud and clear'", publisher: "Stars and Stripes", date: 2026-05-04, tier: 3}
-  # ---------- The EU and the Indo-Pacific partners
-  - to: org-eu
-    layer: alignment
-    type: treaty
-    summary: Third EU-NATO joint declaration (10 Jan 2023, Stoltenberg, Michel, von der Leyen): European defence 'complementary to, and interoperable with NATO'; the cooperation rests on the Berlin Plus arrangements and the standing rule against duplication. 23 of 27 EU members are allies.
-    since: 2023-01-10
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.csis.org/analysis/does-new-eu-nato-joint-declaration-matter", title: "Does the new EU-NATO joint declaration matter?", publisher: "CSIS", date: 2023-01, tier: 2}
-      - {url: "https://www.euronews.com/my-europe/2023/01/10/eu-leaders-and-nato-sign-a-third-joint-declaration-deepening-cooperation-on-security-and-d", title: "EU leaders and NATO sign a third joint declaration deepening cooperation on security and defence", publisher: "Euronews", date: 2023-01-10, tier: 3}
-  - to: org-eu
-    layer: action
-    type: agreement
-    summary: Before Ankara (7 Jul 2026) Rutte and von der Leyen called for a 'more European NATO' with a clear division of labour: NATO for command structures, capabilities and standards, the EU for industry, investment and regulation. Merz made the same case ('more European so that it remains transatlantic'); SAFE loans are limited to EU members, which keeps Turkey, the UK and Canada outside unless a SAFE-plus arrangement is agreed.
-    since: 2026-07-07
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://de.euronews.com/2026/07/07/von-der-leyen-und-rutte-nato-muss-europaischer-werden", title: "Von der Leyen und Rutte: NATO muss europaischer werden", publisher: "Euronews (DE)", date: 2026-07-07, tier: 3}
-      - {url: "https://www.bundesregierung.de/breg-en/news/defence-cabinet-meeting-2445642", title: "Making NATO more European", publisher: "Federal Government of Germany", date: 2026-07-01, tier: 1}
-      - {url: "https://thedefensepost.com/2025/07/30/eu-defense-loan-scheme", title: "EU states seek $147B under defense loan scheme", publisher: "The Defense Post", date: 2025-07-30, tier: 3}
-  - to: JPN
-    layer: action
-    type: visit
-    summary: Rutte held a 30-minute meeting with the Indo-Pacific partners at Ankara on 7 Jul 2026; Japan was represented by foreign minister Motegi and defence minister Koizumi; cooperation agreed on defence industry, cyber and advanced technology. No communique.
-    since: 2026-07-07
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.mod.go.jp/en/article/2026/07/5b1b1a333d818f3bba12873c5c6c13c30fff26e9.html", title: "Meeting between NATO Secretary General Rutte and Indo-Pacific Partners (Overview)", publisher: "Ministry of Defense of Japan", date: 2026-07, tier: 1}
-      - {url: "https://en.yenisafak.com/world/nato-chief-rutte-hosts-indo-pacific-partners-in-ankara-3720540", title: "NATO chief meets Indo-Pacific partners at Ankara summit", publisher: "Yeni Safak / Anadolu", date: 2026-07-07, tier: 3}
-  - to: KOR
-    layer: action
-    type: visit
-    summary: President Lee Jae Myung, the only Indo-Pacific partner head of state at Ankara, attended the 7 Jul 2026 meeting with Rutte (defence industry, cyber, advanced technology).
-    since: 2026-07-07
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.cna.org/analyses/2026/08/natos-ankara-summit-the-indo-pacific-dimensions", title: "NATO's Ankara summit: the Indo-Pacific dimensions", publisher: "CNA", date: 2026-08, tier: 2}
-      - {url: "https://en.yenisafak.com/world/nato-chief-rutte-hosts-indo-pacific-partners-in-ankara-3720540", title: "NATO chief meets Indo-Pacific partners at Ankara summit", publisher: "Yeni Safak / Anadolu", date: 2026-07-07, tier: 3}
-  - to: AUS
-    layer: action
-    type: visit
-    summary: Australia was represented at the 7 Jul 2026 meeting at Ankara by a minister (Pat Conroy), not by its prime minister; analysts read the Indo-Pacific format as downgraded from Vilnius 2023.
-    since: 2026-07-07
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.cna.org/analyses/2026/08/natos-ankara-summit-the-indo-pacific-dimensions", title: "NATO's Ankara summit: the Indo-Pacific dimensions", publisher: "CNA", date: 2026-08, tier: 2}
-      - {url: "https://www.mod.go.jp/en/article/2026/07/5b1b1a333d818f3bba12873c5c6c13c30fff26e9.html", title: "Meeting between NATO Secretary General Rutte and Indo-Pacific Partners (Overview)", publisher: "Ministry of Defense of Japan", date: 2026-07, tier: 1}
-  # ---------- Turkey, Hungary, Sweden, Finland
-  - to: TUR
-    layer: action
-    type: agreement
-    summary: Turkey hosted the 36th summit at the Bestepe complex in Ankara on 7-8 Jul 2026: Article 5 reaffirmed, Russia 'the long-term threat', EUR 70bn for Ukraine, over USD 50bn of new procurements; the Ankara declaration thanks Turkey for its hospitality and Turkey is part of the Black Sea mine-countermeasure group. Mirrored from Turkey's card.
-    since: 2026-07-08
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://brusselssignal.eu/2026/07/nato-ends-ankara-summit-with-arms-pledges-and-trumps-blessing/", title: "NATO ends Ankara summit with arms pledges and Trump's blessing", publisher: "Brussels Signal", date: 2026-07, tier: 3}
-      - {url: "https://foreignpolicy.com/2026/07/08/nato-ankara-summit-declaration-full-text-trump-ukraine-russia/", title: "The Ankara Summit Declaration", publisher: "Foreign Policy", date: 2026-07-08, tier: 3}
-      - {url: "https://agerpres.ro/english/2026/07/08/defence-ministry-romania-bulgaria-and-turkey-expand-black-sea-mine-countermeasure-missions--1574222", title: "Defence Ministry: Romania, Bulgaria and Turkey expand Black Sea mine countermeasure missions", publisher: "Agerpres (state agency, official statement)", date: 2026-07-08, tier: 1}
-  - to: TUR
-    layer: action
-    type: incident
-    summary: The S-400 question: Turkey bought Russian S-400 air defence in 2019 and was expelled from the F-35 programme and sanctioned (CAATSA); at Ankara on 7 Jul 2026 Trump said CAATSA sanctions would be lifted and an F-35 sale 'considered', but the 2020 NDAA bars transfer while Turkey keeps the S-400 and the State Department told Congress on 22 Jul that Turkey had not met the conditions.
-    since: 2019-07
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.aljazeera.com/2026/7/7/trump-says-will-lift-sanctions-on-turkiye-consider-selling-f-35s", title: "Trump says will lift sanctions on Turkiye, 'consider' selling F-35s", publisher: "Al Jazeera", date: 2026-07-07, tier: 3}
-      - {url: "https://jinsa.org/jinsa_report/after-ankara-lifting-caatsa-doesnt-unlock-the-f-35-for-turkey/", title: "After Ankara, lifting CAATSA doesn't unlock the F-35 for Turkey", publisher: "JINSA", date: 2026-07, tier: 2}
-  - to: HUN
-    layer: action
-    type: agreement
-    summary: Re-anchoring after the 2026 change of government: Magyar told the Ankara summit that Ukraine is the victim and Russia the aggressor and pledged 5% of GDP by 2035; Hungary was the only member that cut real defence spending in 2024-25 under Orban and has 410 troops in KFOR. Mirrored from Hungary's card.
-    since: 2026-07-08
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.portfolio.hu/gazdasag/20260708/a-nato-csucson-mondta-el-magyar-peter-milyen-jovot-kepzel-el-magyarorszagnak-a-szovetsegen-belul-848422", title: "Magyar at the NATO summit: what future he sees for Hungary within the alliance", publisher: "Portfolio.hu", date: 2026-07-08, tier: 3}
-      - {url: "https://dailynewshungary.com/magyar-nato-ukraine-victim-russia-aggressor/", title: "Magyar at the NATO summit: Ukraine is the victim, Russia the aggressor", publisher: "Daily News Hungary", date: 2026-07, tier: 3}
-  - to: SWE
-    layer: action
-    type: agreement
-    summary: Sweden deposited its instrument of accession in Washington on 7 Mar 2024 and became the 32nd member (flag raised at HQ on 11 Mar), after Turkey (23 Jan) and Hungary (5-7 Mar) completed ratification. Mirrored from Sweden's card.
-    since: 2024-03-07
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.nato.int/en/news-and-events/articles/news/2024/03/07/sweden-officially-joins-nato", title: "Sweden officially joins NATO", publisher: "NATO", date: 2024-03-07, tier: 1}
-      - {url: "https://kyivindependent.com/sweden-officially-joins-nato/", title: "Sweden officially joins NATO", publisher: "Kyiv Independent", date: 2024-03-07, tier: 3}
-  - to: FIN
-    layer: dependency
-    type: military_presence
-    summary: NATO's Multi-Corps Land Component Command at Mikkeli, co-located with the Finnish Army Command, became operational on 1 Sep 2025 with 10 staff and a plan for about 50; Forward Land Forces Finland stood up on 6 Jun 2026 (Swedish-led battlegroup at Boden, staff element in Rovaniemi), and France announced at Ankara that French ground forces will join. Mirrored from Finland's card.
-    value: 10
-    unit: nato_staff_at_mikkeli_land_command_sep_2025
-    since: 2025-09-01
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.yahoo.com/news/articles/nato-launches-command-finland-near-080428297.html", title: "NATO launches new command in Finland near Russian border", publisher: "Yahoo News / AP", date: 2025-09-01, tier: 3}
-      - {url: "https://valtioneuvosto.fi/en/-/236553176/nato-forward-land-forces-finland-to-start-operations-on-6-june", title: "NATO Forward Land Forces Finland to start operations on 6 June", publisher: "Finnish Government / Ministry of Defence", date: 2026-06, tier: 1}
-      - {url: "https://www.janes.com/defence-intelligence-insights/defence-news/defence/nato-summit-2026-france-to-contribute-troops-to-forward-land-forces-finland", title: "NATO Summit 2026: France to contribute troops to Forward Land Forces Finland", publisher: "Janes", date: 2026-07, tier: 2}
-  # ---------- Western Balkans, Caucasus, Eastern members
-  - to: XKX
-    layer: dependency
-    type: military_presence
-    summary: KFOR, under UNSCR 1244 since 12 Jun 1999, numbered 4,739 troops from 31 nations in June 2026 (Italy 984, USA 590, Turkey 420, Hungary 410). Mirrored from the Kosovo and Serbia cards.
-    value: 4739
-    unit: kfor_troops_june_2026
-    since: 1999-06-12
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.nato.int/content/dam/nato/webready/documents/factsheets/kfor/KFOR-Placemat.pdf", title: "KFOR Placemat, June 2026", publisher: "NATO", date: 2026-06, tier: 1}
-  - to: XKX
-    layer: action
-    type: incident
-    summary: NATO announced on 12 Jun 2026 a gradual, reversible reduction of KFOR toward 3,000-3,500 troops (the 2023 level) over the coming year, citing an improved security situation; KFOR continues to support the EU-led dialogue. Mirrored from the Kosovo card.
-    since: 2026-06-12
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.euronews.com/my-europe/2026/06/12/nato-to-cut-troop-numbers-in-kosovo-amid-improved-security-situation", title: "NATO to cut troop numbers in Kosovo amid improved security situation", publisher: "Euronews", date: 2026-06-12, tier: 3}
-      - {url: "https://www.nato.int/content/dam/nato/webready/documents/factsheets/kfor/KFOR-Placemat.pdf", title: "KFOR Placemat, June 2026", publisher: "NATO", date: 2026-06, tier: 1}
-  - to: SRB
-    layer: action
-    type: exercise
-    summary: First NATO-Serbia exercise (NSE26) on Serbian soil, 12 May 2026, about 600 troops from Serbia, Italy, Romania and Turkey, led by JFC Naples; Serbia has been a Partnership for Peace partner with an IPAP since December 2006 under declared military neutrality. Mirrored from the Serbia card.
-    since: 2026-05-12
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://jfcnaples.nato.int/newsroom/news/news-archive/2026/jfc-naples-participates-in-natoserbia-exercise-2026", title: "JFC Naples participates in NATO-Serbia Exercise 2026", publisher: "NATO JFC Naples", date: 2026-05, tier: 1}
-      - {url: "https://mfa.gov.rs/en/foreign-policy/security-policy/partnership-peace", title: "Partnership for Peace", publisher: "Ministry of Foreign Affairs of Serbia", date: 2025, tier: 1}
-  - to: BIH
-    layer: alignment
-    type: candidate
-    summary: Bosnia and Herzegovina was invited to a Membership Action Plan in 2010 that was never activated because Republika Srpska refuses to register defence property as state property; a new Individually Tailored Partnership Programme was agreed on 23 Oct 2025 (single index source). Mirrored from the Bosnia card.
-    since: 2010
-    until: null
-    last_verified: 2026-10-12
-    confidence: C
-    sources:
-      - {url: "https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina%E2%80%93NATO_relations", title: "Bosnia and Herzegovina-NATO relations (index)", publisher: "Wikipedia (index)", date: 2026-10-12, tier: 4}
-      - {url: "https://www.foxnews.com/world/nato-chief-says-bosnia-set-for-new-move-on-membership-path", title: "NATO chief says Bosnia set for new move on membership path", publisher: "AP via Fox News", date: 2018-12-04, tier: 3}
-  - to: GEO
-    layer: alignment
-    type: candidate
-    summary: Aspirant partner since the 2008 Bucharest promise; the relationship continues at working level while NATO reviewed parts of the Substantial NATO-Georgia Package after the 2024 election, and Rutte (March 2026) prefers to keep the relationship for dialogue despite concern. Mirrored from the Georgia card.
-    since: 2008-04
-    until: null
-    last_verified: 2026-10-12
-    confidence: C
-    sources:
-      - {url: "https://info.imedi.ge/en/foreigpolicy/9097/mark-rutte-says-maintaining-georgianato-ties-valuable", title: "Mark Rutte says maintaining Georgia-NATO ties valuable", publisher: "Imedi (pro-government broadcaster)", date: 2026-03-26, tier: 3}
-  - to: ALB
-    layer: action
-    type: incident
-    summary: The Hague summit (2025) agreed that Albania would host the next meeting after Ankara; a draft of the Ankara declaration dropped the line (30 Jun 2026 reporting), Albania's spending was below 2% in 2025, and Rutte said after Ankara that the next summit will 'certainly' be in Albania but the date is not set; Bloomberg-sourced reports say allies considered skipping 2027. Mirrored from the Albania card.
-    since: 2026-06-30
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.al-monitor.com/originals/2026/06/next-nato-summit-albania-doubt-amid-us-reluctance-and-low-defence-spending", title: "Next NATO summit in Albania in doubt amid US reluctance and low defence spending", publisher: "Al-Monitor / Reuters", date: 2026-06-30, tier: 3}
-      - {url: "https://mezha.net/eng/bukvy/a257e53b_nato_members_consider/", title: "NATO members consider skipping 2027 summit to avoid giving Trump another platform", publisher: "Mezha (citing Bloomberg)", date: 2026-07, tier: 4}
-  - to: ESP
-    layer: action
-    type: agreement
-    summary: Spain signed the Hague declaration but says it needs only about 2.1% of GDP, not 3.5% core plus 1.5% related by 2035; at Ankara it again refused the 5% target and Rutte asked all allies for 'credible plans'; Trump repeated tariff threats against Madrid. Madrid says its spending rose to EUR 35.4bn in 2026. Mirrored from the Spanish card.
-    since: 2025-06-25
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.lamoncloa.gob.es/lang/en/presidente/news/Paginas/2026/20260708-nato-turkiye-summit.aspx", title: "NATO Summit (Ankara)", publisher: "Moncloa - Presidency of the Government of Spain", date: 2026-07-08, tier: 1}
-      - {url: "https://www.aljazeera.com/news/2026/7/6/nato-urges-members-to-deliver-plans-for-reaching-defence-spending-targets", title: "NATO urges members to deliver plans for reaching defence spending targets", publisher: "Al Jazeera", date: 2026-07-06, tier: 3}
-      - {url: "https://www.aa.com.tr/en/europe/spain-stands-firm-against-natos-proposed-5-defense-spending-target/3987930", title: "Spain stands firm against NATO's proposed 5% defense spending target", publisher: "Anadolu Agency", date: 2026-07, tier: 3}
-  - to: ROU
-    layer: dependency
-    type: military_presence
-    summary: Mihail Kogalniceanu air base near Constanta is being expanded to become NATO's largest base (about 2,800 hectares, housing for up to 10,000 troops and families), cost quoted at EUR 2.5bn; at Ankara Romania won Black Sea language, rotating command of the Combined Task Force Black Sea from 2028 and a NATO fuel pipeline into Romania. Mirrored from the Romania card.
-    value: 2.5
-    unit: eur_bn_planned_expansion_kogalniceanu
-    since: 2025-09
-    until: null
-    last_verified: 2026-10-12
-    confidence: C
-    sources:
-      - {url: "https://www.romania-insider.com/society/romania-kogalniceanu-base-role-nato-sept-2025", title: "Romania's Black Sea military base reportedly considered for post-war security role", publisher: "Romania Insider", date: 2025-09, tier: 3}
-      - {url: "https://cursdeguvernare.ro/romania-at-the-nato-summit-17-decisions-and-discussions-concerning-us.html", title: "Romania at the NATO summit: 17 decisions and discussions concerning the US", publisher: "Curs de Guvernare", date: 2026-07, tier: 3}
-  - to: POL
-    layer: action
-    type: incident
-    summary: Poland invoked Article 4 after the drone incursion of 9-10 Sep 2025 (at least 19 drones, three downed by Polish and Dutch aircraft); the North Atlantic Council met on 10 Sep and Eastern Sentry was launched two days later; Poland is the top spender relative to GDP in the Alliance (4.3% in 2025). Mirrored from the Polish card.
-    since: 2025-09-10
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.ktvh.com/world/europe/russian-drones-breach-nato-airspace-in-poland-prompting-alliance-response", title: "Russian drones breach NATO airspace in Poland, prompting alliance response", publisher: "AP", date: 2025-09-10, tier: 3}
-      - {url: "https://www.pbs.org/newshour/world/nato-allies-held-article-4-consultations-after-russian-drone-incursion-heres-what-that-means", title: "NATO allies held Article 4 consultations after Russian drone incursion", publisher: "PBS NewsHour", date: 2025-09-10, tier: 3}
-      - {url: "https://polskieradio.pl/395/7786/Artykul/3665844,poland-leads-nato-in-defence-spending-for-another-year-report-shows", title: "Poland leads NATO in defence spending for another year, report shows", publisher: "Polskie Radio (citing NATO annual report)", date: 2026-03-26, tier: 3}
-  - to: DNK
-    layer: action
-    type: exercise
-    summary: Arctic Sentry, launched on 11 Feb 2026 under Joint Force Command Norfolk and SACEUR after the Greenland crisis and the Rutte-Trump Davos meeting, ties together allied activity in the High North (Denmark's Arctic Endurance, Cold Response 26 in Norway); Denmark and France and the UK joined the Greenland build-up. Mirrored from the Danish and Norwegian cards.
-    since: 2026-02-11
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.defensenews.com/global/europe/2026/02/11/nato-kicks-off-arctic-sentry-operation-following-greenland-brouhaha/", title: "NATO kicks off Arctic Sentry operation following Greenland brouhaha", publisher: "Defense News", date: 2026-02-11, tier: 3}
-      - {url: "https://www.nato.int/en/news-and-events/articles/news/2026/03/18/nato-secretary-general-visits-norway-and-observes-exercise-cold-response-26-in-the-high-north", title: "NATO Secretary General visits Norway and observes Exercise Cold Response 26 in the High North", publisher: "NATO", date: 2026-03-18, tier: 1}
-  - to: DEU
-    layer: action
-    type: visit
-    summary: Rutte in Berlin on 1 Jul 2026 ('Germany leads and Germany delivers'): Germany committed to 3.5% + 1.5% and plans 3.5% as early as 2029, a regular defence budget of EUR 109.7bn in 2027 and the Lithuania brigade; Berlin's line is a 'more European NATO'. Mirrored from the German card.
-    since: 2026-07-01
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.nato.int/en/news-and-events/articles/news/2026/07/01/nato-secretary-general-in-berlin-germany-leads-and-germany-delivers", title: "NATO Secretary General in Berlin: Germany leads and Germany delivers", publisher: "NATO", date: 2026-07-01, tier: 1}
-      - {url: "https://www.bundesregierung.de/breg-en/news/defence-cabinet-meeting-2445642", title: "Making NATO more European", publisher: "Federal Government of Germany", date: 2026-07-01, tier: 1}
-  - to: MAR
-    layer: action
-    type: visit
-    summary: NATO's Special Representative for the Southern Neighbourhood, Javier Colomina, made his third official visit to Rabat on 6-7 Oct 2026 (North Africa, the Sahel, terrorism, maritime security, a regional small-arms conference), under the Southern Neighbourhood Action Plan adopted at Washington in July 2024.
-    since: 2026-10-06
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.nato.int/en/news-and-events/articles/news/2026/10/08/natos-special-representative-for-the-southern-neighbourhood-visits-morocco", title: "NATO's Special Representative for the Southern Neighbourhood visits Morocco", publisher: "NATO", date: 2026-10-08, tier: 1}
-      - {url: "https://www.nato.int/cps/en/natohq/topics_229634.htm", title: "NATO Secretary General's Special Representative for the Southern Neighbourhood", publisher: "NATO", date: 2024-07-23, tier: 1}
+- to: RUS
+  layer: objective
+  type: influence_goal
+  summary: Deter Russia and defend Allied territory; the Strategic Concept names it 'the most significant and direct threat' (2022) and the Ankara declaration 'the long-term threat' (8 Jul 2026), while
+    NATO states its aim is deterrence and a door left open to dialogue, not Russia's defeat.
+  since: 2022-06-29
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.nato.int/cps/en/natohq/topics_210907.htm
+    title: NATO 2022 Strategic Concept (Madrid, 29 June 2022)
+    publisher: NATO
+    date: 2022-06-29
+    tier: 1
+  - url: https://foreignpolicy.com/2026/07/08/nato-ankara-summit-declaration-full-text-trump-ukraine-russia/
+    title: The Ankara Summit Declaration (full text)
+    publisher: Foreign Policy
+    date: 2026-07-08
+    tier: 3
+  - url: https://www.nato.int/en/about-us/official-texts-and-resources/official-texts/2025/06/25/the-hague-summit-declaration
+    title: The Hague Summit Declaration
+    publisher: NATO
+    date: 2025-06-25
+    tier: 1
+- to: RUS
+  layer: action
+  type: exercise
+  summary: Operation Eastern Sentry, announced by Rutte and SACEUR Grynkewich on 12 Sep 2025, two days after the Russian drone incursion into Poland, covers the whole eastern flank with air defence, counter-drone
+    systems and forces from Denmark, France, Germany, the UK and others.
+  since: 2025-09-12
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://theaviationist.com/2025/09/13/nato-launches-operation-eastern-sentry/
+    title: NATO launches Operation Eastern Sentry after drone incursions
+    publisher: The Aviationist
+    date: 2025-09-13
+    tier: 3
+  - url: https://www.bta.bg/en/news/world/966076-nato-launches-eastern-sentry-to-bolster-posture-along-eastern-flank
+    title: NATO launches 'Eastern Sentry' to bolster posture along eastern flank
+    publisher: BTA
+    date: 2025-09
+    tier: 3
+- to: RUS
+  layer: action
+  type: exercise
+  summary: Baltic Sentry, launched on 14 Jan 2025 after the Estlink 2 cable damage (Eagle S, 25 Dec 2024), puts ships, aircraft and drones on the Baltic seabed infrastructure and the shadow fleet; run through
+    JFC Brunssum and MARCOM with Commander Task Force Baltic in Rostock.
+  since: 2025-01-14
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.defensenews.com/global/europe/2025/01/14/nato-launches-baltic-patrol-mission-eyes-standard-for-detaining-ships/
+    title: NATO launches Baltic patrol mission, eyes standard for detaining ships
+    publisher: Defense News
+    date: 2025-01-14
+    tier: 3
+  - url: https://www.forsvaret.dk/en/news/2025/the-danish-defence-supports-increased-nato-monitoring-of-critical-infrastructure/
+    title: The Danish Defence supports increased NATO monitoring of critical infrastructure
+    publisher: Danish Defence (Forsvaret)
+    date: 2025-01
+    tier: 1
+- to: RUS
+  layer: action
+  type: incident
+  summary: On 19 Sep 2025 three armed Russian MiG-31s violated Estonian airspace near Vaindloo for over ten minutes with transponders off; at Estonia's request the North Atlantic Council met under Article
+    4 on 23 Sep and condemned it as part of a pattern, the second Article 4 session in two weeks after Poland (10 Sep). Moscow denied the violation.
+  since: 2025-09-19
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.globalsecurity.org/military/library/news/2025/09/mil-250923-nato01.htm
+    title: Statement by the North Atlantic Council on recent airspace violations by Russia (23 Sep 2025)
+    publisher: NATO (via GlobalSecurity)
+    date: 2025-09-23
+    tier: 1
+  - url: https://www.aljazeera.com/amp/news/2025/9/19/estonia-says-russian-fighter-jets-entered-airspace-in-brazen-intrusion
+    title: Estonia, NATO slam 'brazen' Russian air incursion, Moscow denies claim
+    publisher: Al Jazeera
+    date: 2025-09-19
+    tier: 3
+- to: RUS
+  layer: action
+  type: expulsion
+  summary: In October 2021 NATO withdrew the accreditation of eight Russian officials it said were intelligence officers and cut Moscow's mission from 20 to 10; Russia answered by suspending its mission
+    to NATO from 1 Nov 2021 and closing NATO's offices in Moscow. NATO had suspended practical cooperation after Crimea in April 2014. No normal channel has been restored.
+  since: 2021-10
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://military.com/daily-news/2021/10/18/russia-suspends-its-mission-nato-foreign-minister-says.html
+    title: Russia suspends its mission to NATO, foreign minister says
+    publisher: Military.com / AP
+    date: 2021-10-18
+    tier: 3
+  - url: https://nato.int/content/dam/nato/legacy-wcm/media_pdf/2022/2/pdf/220214-factsheet_NATO-Russia_Relations_e.pdf
+    title: NATO-Russia relations factsheet (February 2022)
+    publisher: NATO
+    date: 2022-02-14
+    tier: 1
+- to: UKR
+  layer: alignment
+  type: candidate
+  summary: Aspirant without invitation. Washington 2024 (para 16) calls Ukraine's path to NATO 'irreversible' and promises an invitation when allies agree and conditions are met; The Hague text of June
+    2025 left membership out and Rutte said the commitment stood regardless; Ankara (8 Jul 2026) did not restore it. Mirrored from Ukraine's card.
+  since: 2008-04-03
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.nato.int/cps/en/natohq/official_texts_227678.htm
+    title: Washington Summit Declaration, para. 16
+    publisher: NATO
+    date: 2024-07-10
+    tier: 1
+  - url: https://kyivindependent.com/ukraines-nato-membership-remains-irreversible-despite-possible-communique-omission-rutte-says/
+    title: Ukraine's NATO membership remains irreversible despite possible communique omission, Rutte says
+    publisher: Kyiv Independent
+    date: 2025-06
+    tier: 3
+  - url: https://euromaidanpress.com/2025/06/18/ukraine-nato-summit-2025/
+    title: 'No invitation - not even a mention: Ukraine to be left out of NATO''s summit statement'
+    publisher: Euromaidan Press
+    date: 2025-06-18
+    tier: 3
+- to: UKR
+  layer: action
+  type: agreement
+  summary: 'Ankara declaration (8 Jul 2026), para 4: unwavering support for Ukraine''s sovereignty and territorial integrity, EUR 70bn for 2026 and at least equivalent levels in 2027, welcome for the EU
+    Ukraine Support Loan; Kyiv says it was recognised as a contributor to Euro-Atlantic security. Trump announced the Patriot production licence at the summit. Mirrored from Ukraine''s card.'
+  since: 2026-07-08
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://foreignpolicy.com/2026/07/08/nato-ankara-summit-declaration-full-text-trump-ukraine-russia/
+    title: The Ankara Summit Declaration (full text, para 4)
+    publisher: Foreign Policy
+    date: 2026-07-08
+    tier: 3
+  - url: https://english.enabbaladi.net/archives/2026/07/ankara-summit-sets-nato-priorities-backs-ukraine/
+    title: Ankara Summit Sets NATO Priorities, Backs Ukraine
+    publisher: Enab Baladi
+    date: 2026-07
+    tier: 3
+  - url: https://euromaidanpress.com/2026/07/03/ukraine-wants-the-ankara-summit-to-name-it-a-nato-security-contributor-not-just-an-aid-recipient/
+    title: Ukraine wants the Ankara summit to name it a NATO security contributor - not just an aid recipient
+    publisher: Euromaidan Press
+    date: 2026-07-03
+    tier: 3
+- to: UKR
+  layer: dependency
+  type: arms_supply
+  summary: 'PURL (Prioritised Ukraine Requirements List), agreed by Rutte and Trump on 14 Jul 2025: allies pay for packages of about USD 500m of US-made weapons chosen by Ukraine and validated by SACEUR;
+    the Netherlands funded the first (about EUR 500m) and Denmark, Norway and Sweden the second; the Nordic-Baltic eight added USD 500m in Nov 2025. About USD 6.7bn in the first year, and about 95% of Ukraine''s
+    Patriot interceptors arrive this way.'
+  value: 6.7
+  unit: USD_billion_PURL_contributions_first_year
+  since: 2025-07-14
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.kmu.gov.ua/en/news/rik-purl-maizhe-7-mlrd-dlia-postavok-krytychnoho-ozbroiennia-dlia-ukrainy
+    title: 'A year of PURL: nearly USD 7 billion for deliveries of critical weapons to Ukraine'
+    publisher: Cabinet of Ministers of Ukraine
+    date: 2026-07
+    tier: 1
+  - url: https://thedefensepost.com/2025/11/13/nordic-baltic-500m-kyiv-purl/
+    title: Nordic, Baltic Nations Pledge $500M to Kyiv via NATO's PURL Aid System
+    publisher: The Defense Post
+    date: 2025-11-13
+    tier: 3
+  - url: https://nachrichten.idw-online.de/2026/08/13/ukraine-support-tracker-europe-leads-on-aid-us-weapons-remain-key
+    title: 'Ukraine Support Tracker: Europe leads on aid - US weapons remain key'
+    publisher: Kiel Institute for the World Economy (via idw)
+    date: 2026-08-13
+    tier: 2
+- to: UKR
+  layer: action
+  type: agreement
+  summary: NSATU (NATO Security Assistance and Training for Ukraine), created at Washington 2024, took over the coordination of Western military aid from the US-led Ramstein format and began operating at
+    Clay Barracks, Wiesbaden, in December 2024, with logistics hubs in Poland and Romania and a planned staff of about 700.
+  since: 2024-12
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.romania-insider.com/society/nato-nsatu-support-mission-ukraine-poland-and-romania-oct-2024
+    title: NATO forms NSATU, a support mission for Ukraine with logistics centers in Poland and Romania
+    publisher: Romania Insider
+    date: 2024-10
+    tier: 3
+  - url: https://www.hessenschau.de/politik/nato-generalsekretaer-rutte-besucht-neues-kommando-in-wiesbaden-v3,nato-wiesbaden-102.html
+    title: NATO Secretary General Rutte visits new command in Wiesbaden
+    title_original: 'Ukraine-Einheit: NATO-Generalsekretaer Rutte besucht neues Kommando in Wiesbaden'
+    lang: de
+    publisher: hessenschau
+    date: 2024-12
+    tier: 3
+- to: USA
+  layer: objective
+  type: influence_goal
+  summary: Keep the US in (its nuclear umbrella, its enablers, its troops) while meeting its demand that Europeans take primary responsibility for conventional defence - Colby's 'NATO 3.0' (Feb 2026), Hegseth's
+    six-month posture review (18 Jun 2026) and the Hague 5% pledge; Rutte frames it as a 'more European NATO' that remains transatlantic.
+  since: 2025-06-25
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/amp/news/2026/2/12/us-urges-europe-to-take-the-lead-on-defence-in-nato
+    title: US urges Europe to take the lead on defence in NATO
+    publisher: Al Jazeera
+    date: 2026-02-12
+    tier: 3
+  - url: https://www.euronews.com/my-europe/2026/02/12/nato-30-us-and-europe-appear-to-agree-rebalancing-of-power-is-needed
+    title: 'NATO 3.0: US and Europe appear to agree rebalancing of power is needed'
+    publisher: Euronews
+    date: 2026-02-12
+    tier: 3
+  - url: https://san.com/cc/hegseth-dreams-of-a-nato-3-0-heres-what-that-might-look-like/
+    title: Hegseth dreams of a NATO 3.0. Here's what that might look like
+    publisher: Straight Arrow News
+    date: 2026-06
+    tier: 3
+- to: USA
+  layer: dependency
+  type: military_presence
+  summary: About 80,000 US troops are stationed in Europe (more than 36,000 in Germany, over 12,000 in Italy, about 10,000 in the UK). A six-month Pentagon review, with a final recommendation to Hegseth
+    on 6 Nov 2026, weighs cutting 25,000-40,000 and possibly moving some units to the eastern flank; the Pentagon already announced on 1 May 2026 that up to 5,000 would leave Germany.
+  value: 80000
+  unit: us_troops_in_europe_sep_2026
+  since: 2026-09-18
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://aa.com.tr/en/world/pentagon-weighs-pulling-at-least-25-000-us-troops-from-europe-report/4060679
+    title: Pentagon weighs pulling at least 25,000 US troops from Europe (NBC report)
+    publisher: Anadolu Agency
+    date: 2026-09-18
+    tier: 3
+  - url: https://wtop.com/europe/2026/05/what-to-know-about-the-us-military-presence-in-europe-as-trump-seeks-drawdown-of-thousands-of-troops/
+    title: What to know about the US military presence in Europe as Trump seeks drawdown of thousands of troops
+    publisher: AP via WTOP
+    date: 2026-05
+    tier: 3
+- to: USA
+  layer: action
+  type: incident
+  summary: 'In May 2026 the US told allies it would cut its contribution to the NATO Force Model (the pool of forces for a crisis): a third fewer fighter jets, fewer destroyers, no submarines, fewer drones.
+    Grynkewich said on 3 Jun 2026 that Europe and Canada ''can step up now'' and that the ''unhealthy co-dependence'' on US forces ''will change''; in July he said Europe had backfilled most gaps.'
+  since: 2026-05
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.defensenews.com/global/europe/2026/06/03/us-tells-europe-canada-to-boost-nato-air-and-naval-forces/
+    title: US tells Europe, Canada to boost NATO air and naval forces
+    publisher: Defense News
+    date: 2026-06-03
+    tier: 3
+  - url: https://www.stripes.com/theaters/europe/2026-05-20/nato-force-model-us-reduction-21728364.html
+    title: 'NATO Force Model: US reduction'
+    publisher: Stars and Stripes
+    date: 2026-05-20
+    tier: 3
+  - url: https://lasvegassun.com/news/2026/jul/03/nato-commander-says-europe-has-backfilled-most-gap/
+    title: NATO commander says Europe has backfilled most gaps from US cutbacks on military equipment
+    publisher: AP via Las Vegas Sun
+    date: 2026-07-03
+    tier: 3
+- to: USA
+  layer: action
+  type: agreement
+  summary: The Hague summit (24-25 Jun 2025), Rutte's first as Secretary General, committed allies to 5% of GDP by 2035 - 3.5% core defence plus up to 1.5% on related spending - with annual plans and a
+    2029 review; direct support to Ukraine counts toward it. The target was sought by President Trump. Mirrored from the Dutch card.
+  since: 2025-06-25
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.nato.int/en/about-us/official-texts-and-resources/official-texts/2025/06/25/the-hague-summit-declaration
+    title: The Hague Summit Declaration
+    publisher: NATO
+    date: 2025-06-25
+    tier: 1
+  - url: https://europeanwesternbalkans.com/2025/06/25/nato-leaders-agree-to-increase-defence-spending-to-5-of-gdp-at-the-hague-summit/
+    title: NATO leaders agree to increase defence spending to 5% of GDP at the Hague summit
+    publisher: European Western Balkans
+    date: 2025-06-25
+    tier: 3
+  - url: https://www.government.nl/latest/news/2025/06/13/the-netherlands-supports-nato-5-target
+    title: The Netherlands supports NATO 5% target
+    publisher: Government of the Netherlands
+    date: 2025-06-13
+    tier: 1
+- to: USA
+  layer: action
+  type: incident
+  summary: After allies would not join the US-Israeli war on Iran (from 28 Feb 2026), Trump wrote that NATO 'wasn't there when we needed them'; the White House said NATO 'was tested, and they failed'; Rutte
+    answered that leaders had heard the complaints 'loud and clear' and that basing agreements were being implemented. The Pentagon announced on 1 May 2026 that up to 5,000 troops would leave Germany. Spain
+    alone denied bases and airspace.
+  since: 2026-04
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.stripes.com/theaters/europe/2026-05-04/rutte-nato-trump-germany-21570969.html
+    title: 'Rutte: NATO leaders heard Trump''s complaints ''loud and clear'''
+    publisher: Stars and Stripes
+    date: 2026-05-04
+    tier: 3
+  - url: https://en.majalla.com/node/331985
+    title: One big happy family? NATO 'survives' Trump in Ankara
+    publisher: The Majalla
+    date: 2026-07
+    tier: 3
+- to: USA
+  layer: action
+  type: agreement
+  summary: 'Greenland: after Trump''s tariff announcement of 17 Jan 2026 against Denmark and seven allies, Rutte brokered a ''framework'' with Trump at Davos on 21 Jan that dropped the tariffs and ruled
+    out force; NATO launched Arctic Sentry on 11 Feb 2026 under SACEUR to make Arctic security an Alliance matter, and welcomed the 22 Sep 2026 US-Denmark-Greenland agreement. Mirrored from Denmark''s card.'
+  since: 2026-01-21
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.koreajoongangdaily.com/world/trump-says-he-will-not-impose-greenlandrelated-tariffs-on-8-nato-allies/12150007
+    title: Trump says he will not impose Greenland-related tariffs on 8 NATO allies
+    publisher: Korea JoongAng Daily (wire)
+    date: 2026-01-21
+    tier: 3
+  - url: https://www.axios.com/2026/01/21/trump-drops-greenland-tariff-invasion-threats
+    title: Trump backs off Greenland tariff threat based on new 'solution'
+    publisher: Axios
+    date: 2026-01-21
+    tier: 3
+  - url: https://www.defensenews.com/global/europe/2026/02/11/nato-kicks-off-arctic-sentry-operation-following-greenland-brouhaha/
+    title: NATO kicks off Arctic Sentry operation following Greenland brouhaha
+    publisher: Defense News
+    date: 2026-02-11
+    tier: 3
+- to: CHN
+  layer: objective
+  type: influence_goal
+  summary: 'Contain China''s weight in Euro-Atlantic security without opening a Pacific front: the 2022 Concept says the PRC''s ''ambitions and coercive policies challenge our interests, security and values'';
+    Ankara''s declaration omits China but Rutte told the Indo-Pacific partners NATO ''cannot be naive about China'' and the CNA record has China called out as an enabler of Russia''s war. Beijing called
+    it ''Cold War mentality''.'
+  since: 2022-06-29
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.nato.int/cps/en/natohq/topics_210907.htm
+    title: NATO 2022 Strategic Concept
+    publisher: NATO
+    date: 2022-06-29
+    tier: 1
+  - url: https://www.cna.org/analyses/2026/08/natos-ankara-summit-the-indo-pacific-dimensions
+    title: 'NATO''s Ankara summit: the Indo-Pacific dimensions'
+    publisher: CNA
+    date: 2026-08
+    tier: 2
+  - url: https://www.turkiyetoday.com/world/north-korea-china-criticize-nato-after-ankara-summit-3223670
+    title: North Korea, China criticize NATO after Ankara summit
+    publisher: Turkiye Today
+    date: 2026-07
+    tier: 3
+- to: BLR
+  layer: action
+  type: incident
+  summary: Russian drones entered Polish airspace on 9-10 Sep 2025, some from Belarus (at least 19 drones, three downed) just before Zapad-2025 (12-16 Sep, with nuclear-use planning); Poland closed all
+    crossings and invoked Article 4; the North Atlantic Council met on 10 Sep. Mirrored from the Belarus card.
+  since: 2025-09-10
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.ktvh.com/world/europe/russian-drones-breach-nato-airspace-in-poland-prompting-alliance-response
+    title: Russian drones breach NATO airspace in Poland, prompting alliance response
+    publisher: AP
+    date: 2025-09-10
+    tier: 3
+  - url: https://www.news4jax.com/news/world/2025/09/12/russia-and-belarus-launch-military-exercise-that-fueled-western-concerns/
+    title: Russia and Belarus launch military exercise that fueled Western concerns
+    publisher: AP
+    date: 2025-09-12
+    tier: 3
+  - url: https://www.pbs.org/newshour/world/nato-allies-held-article-4-consultations-after-russian-drone-incursion-heres-what-that-means
+    title: NATO allies held Article 4 consultations after Russian drone incursion
+    publisher: PBS NewsHour
+    date: 2025-09-10
+    tier: 3
+- to: IRN
+  layer: objective
+  type: influence_goal
+  summary: 'Ankara declaration, para 5: ''Iran must never have a nuclear weapon'' and it should respect freedom of navigation in the Strait of Hormuz. Rutte said NATO would not join the US-Israeli war;
+    allied bases in Romania, Italy, Germany and Britain were used and Iran accused the Alliance of complicity in June 2026. Allies discussed a post-war Hormuz mission outside NATO.'
+  since: 2026-02-28
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://foreignpolicy.com/2026/07/08/nato-ankara-summit-declaration-full-text-trump-ukraine-russia/
+    title: The Ankara Summit Declaration (full text, para 5)
+    publisher: Foreign Policy
+    date: 2026-07-08
+    tier: 3
+  - url: https://www.bursa.ro/iranul-acuza-nato-de-complicitate-romania-si-italia-numite-explicit-de-rutte-drept-tari-participante-la-operatiunea-8222epic-fury-05993950
+    title: Iran accuses NATO of complicity; Romania and Italy named by Rutte as participants in Operation Epic Fury
+    publisher: Bursa (citing AFP)
+    date: 2026-06-25
+    tier: 3
+  - url: https://www.stripes.com/theaters/europe/2026-05-04/rutte-nato-trump-germany-21570969.html
+    title: 'Rutte: NATO leaders heard Trump''s complaints ''loud and clear'''
+    publisher: Stars and Stripes
+    date: 2026-05-04
+    tier: 3
+- to: org-eu
+  layer: alignment
+  type: treaty
+  summary: 'Third EU-NATO joint declaration (10 Jan 2023, Stoltenberg, Michel, von der Leyen): European defence ''complementary to, and interoperable with NATO''; the cooperation rests on the Berlin Plus
+    arrangements and the standing rule against duplication. 23 of 27 EU members are allies.'
+  since: 2023-01-10
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.csis.org/analysis/does-new-eu-nato-joint-declaration-matter
+    title: Does the new EU-NATO joint declaration matter?
+    publisher: CSIS
+    date: 2023-01
+    tier: 2
+  - url: https://www.euronews.com/my-europe/2023/01/10/eu-leaders-and-nato-sign-a-third-joint-declaration-deepening-cooperation-on-security-and-d
+    title: EU leaders and NATO sign a third joint declaration deepening cooperation on security and defence
+    publisher: Euronews
+    date: 2023-01-10
+    tier: 3
+- to: org-eu
+  layer: action
+  type: agreement
+  summary: 'Before Ankara (7 Jul 2026) Rutte and von der Leyen called for a ''more European NATO'' with a clear division of labour: NATO for command structures, capabilities and standards, the EU for industry,
+    investment and regulation. Merz made the same case (''more European so that it remains transatlantic''); SAFE loans are limited to EU members, which keeps Turkey, the UK and Canada outside unless a
+    SAFE-plus arrangement is agreed.'
+  since: 2026-07-07
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://de.euronews.com/2026/07/07/von-der-leyen-und-rutte-nato-muss-europaischer-werden
+    title: 'Von der Leyen und Rutte: NATO muss europaischer werden'
+    publisher: Euronews (DE)
+    date: 2026-07-07
+    tier: 3
+  - url: https://www.bundesregierung.de/breg-en/news/defence-cabinet-meeting-2445642
+    title: Making NATO more European
+    publisher: Federal Government of Germany
+    date: 2026-07-01
+    tier: 1
+  - url: https://thedefensepost.com/2025/07/30/eu-defense-loan-scheme
+    title: EU states seek $147B under defense loan scheme
+    publisher: The Defense Post
+    date: 2025-07-30
+    tier: 3
+- to: JPN
+  layer: action
+  type: visit
+  summary: Rutte held a 30-minute meeting with the Indo-Pacific partners at Ankara on 7 Jul 2026; Japan was represented by foreign minister Motegi and defence minister Koizumi; cooperation agreed on defence
+    industry, cyber and advanced technology. No communique.
+  since: 2026-07-07
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.mod.go.jp/en/article/2026/07/5b1b1a333d818f3bba12873c5c6c13c30fff26e9.html
+    title: Meeting between NATO Secretary General Rutte and Indo-Pacific Partners (Overview)
+    publisher: Ministry of Defense of Japan
+    date: 2026-07
+    tier: 1
+  - url: https://en.yenisafak.com/world/nato-chief-rutte-hosts-indo-pacific-partners-in-ankara-3720540
+    title: NATO chief meets Indo-Pacific partners at Ankara summit
+    publisher: Yeni Safak / Anadolu
+    date: 2026-07-07
+    tier: 3
+- to: KOR
+  layer: action
+  type: visit
+  summary: President Lee Jae Myung, the only Indo-Pacific partner head of state at Ankara, attended the 7 Jul 2026 meeting with Rutte (defence industry, cyber, advanced technology).
+  since: 2026-07-07
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.cna.org/analyses/2026/08/natos-ankara-summit-the-indo-pacific-dimensions
+    title: 'NATO''s Ankara summit: the Indo-Pacific dimensions'
+    publisher: CNA
+    date: 2026-08
+    tier: 2
+  - url: https://en.yenisafak.com/world/nato-chief-rutte-hosts-indo-pacific-partners-in-ankara-3720540
+    title: NATO chief meets Indo-Pacific partners at Ankara summit
+    publisher: Yeni Safak / Anadolu
+    date: 2026-07-07
+    tier: 3
+- to: AUS
+  layer: action
+  type: visit
+  summary: Australia was represented at the 7 Jul 2026 meeting at Ankara by a minister (Pat Conroy), not by its prime minister; analysts read the Indo-Pacific format as downgraded from Vilnius 2023.
+  since: 2026-07-07
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.cna.org/analyses/2026/08/natos-ankara-summit-the-indo-pacific-dimensions
+    title: 'NATO''s Ankara summit: the Indo-Pacific dimensions'
+    publisher: CNA
+    date: 2026-08
+    tier: 2
+  - url: https://www.mod.go.jp/en/article/2026/07/5b1b1a333d818f3bba12873c5c6c13c30fff26e9.html
+    title: Meeting between NATO Secretary General Rutte and Indo-Pacific Partners (Overview)
+    publisher: Ministry of Defense of Japan
+    date: 2026-07
+    tier: 1
+- to: TUR
+  layer: action
+  type: agreement
+  summary: 'Turkey hosted the 36th summit at the Bestepe complex in Ankara on 7-8 Jul 2026: Article 5 reaffirmed, Russia ''the long-term threat'', EUR 70bn for Ukraine, over USD 50bn of new procurements;
+    the Ankara declaration thanks Turkey for its hospitality and Turkey is part of the Black Sea mine-countermeasure group. Mirrored from Turkey''s card.'
+  since: 2026-07-08
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://brusselssignal.eu/2026/07/nato-ends-ankara-summit-with-arms-pledges-and-trumps-blessing/
+    title: NATO ends Ankara summit with arms pledges and Trump's blessing
+    publisher: Brussels Signal
+    date: 2026-07
+    tier: 3
+  - url: https://foreignpolicy.com/2026/07/08/nato-ankara-summit-declaration-full-text-trump-ukraine-russia/
+    title: The Ankara Summit Declaration
+    publisher: Foreign Policy
+    date: 2026-07-08
+    tier: 3
+  - url: https://agerpres.ro/english/2026/07/08/defence-ministry-romania-bulgaria-and-turkey-expand-black-sea-mine-countermeasure-missions--1574222
+    title: 'Defence Ministry: Romania, Bulgaria and Turkey expand Black Sea mine countermeasure missions'
+    publisher: Agerpres (state agency, official statement)
+    date: 2026-07-08
+    tier: 1
+- to: TUR
+  layer: action
+  type: incident
+  summary: 'The S-400 question: Turkey bought Russian S-400 air defence in 2019 and was expelled from the F-35 programme and sanctioned (CAATSA); at Ankara on 7 Jul 2026 Trump said CAATSA sanctions would
+    be lifted and an F-35 sale ''considered'', but the 2020 NDAA bars transfer while Turkey keeps the S-400 and the State Department told Congress on 22 Jul that Turkey had not met the conditions.'
+  since: 2019-07
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/2026/7/7/trump-says-will-lift-sanctions-on-turkiye-consider-selling-f-35s
+    title: Trump says will lift sanctions on Turkiye, 'consider' selling F-35s
+    publisher: Al Jazeera
+    date: 2026-07-07
+    tier: 3
+  - url: https://jinsa.org/jinsa_report/after-ankara-lifting-caatsa-doesnt-unlock-the-f-35-for-turkey/
+    title: After Ankara, lifting CAATSA doesn't unlock the F-35 for Turkey
+    publisher: JINSA
+    date: 2026-07
+    tier: 2
+- to: HUN
+  layer: action
+  type: agreement
+  summary: 'Re-anchoring after the 2026 change of government: Magyar told the Ankara summit that Ukraine is the victim and Russia the aggressor and pledged 5% of GDP by 2035; Hungary was the only member
+    that cut real defence spending in 2024-25 under Orban and has 410 troops in KFOR. Mirrored from Hungary''s card.'
+  since: 2026-07-08
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.portfolio.hu/gazdasag/20260708/a-nato-csucson-mondta-el-magyar-peter-milyen-jovot-kepzel-el-magyarorszagnak-a-szovetsegen-belul-848422
+    title: 'Magyar at the NATO summit: what future he sees for Hungary within the alliance'
+    publisher: Portfolio.hu
+    date: 2026-07-08
+    tier: 3
+  - url: https://dailynewshungary.com/magyar-nato-ukraine-victim-russia-aggressor/
+    title: 'Magyar at the NATO summit: Ukraine is the victim, Russia the aggressor'
+    publisher: Daily News Hungary
+    date: 2026-07
+    tier: 3
+- to: SWE
+  layer: action
+  type: agreement
+  summary: Sweden deposited its instrument of accession in Washington on 7 Mar 2024 and became the 32nd member (flag raised at HQ on 11 Mar), after Turkey (23 Jan) and Hungary (5-7 Mar) completed ratification.
+    Mirrored from Sweden's card.
+  since: 2024-03-07
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.nato.int/en/news-and-events/articles/news/2024/03/07/sweden-officially-joins-nato
+    title: Sweden officially joins NATO
+    publisher: NATO
+    date: 2024-03-07
+    tier: 1
+  - url: https://kyivindependent.com/sweden-officially-joins-nato/
+    title: Sweden officially joins NATO
+    publisher: Kyiv Independent
+    date: 2024-03-07
+    tier: 3
+- to: FIN
+  layer: dependency
+  type: military_presence
+  summary: NATO's Multi-Corps Land Component Command at Mikkeli, co-located with the Finnish Army Command, became operational on 1 Sep 2025 with 10 staff and a plan for about 50; Forward Land Forces Finland
+    stood up on 6 Jun 2026 (Swedish-led battlegroup at Boden, staff element in Rovaniemi), and France announced at Ankara that French ground forces will join. Mirrored from Finland's card.
+  value: 10
+  unit: nato_staff_at_mikkeli_land_command_sep_2025
+  since: 2025-09-01
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.yahoo.com/news/articles/nato-launches-command-finland-near-080428297.html
+    title: NATO launches new command in Finland near Russian border
+    publisher: Yahoo News / AP
+    date: 2025-09-01
+    tier: 3
+  - url: https://valtioneuvosto.fi/en/-/236553176/nato-forward-land-forces-finland-to-start-operations-on-6-june
+    title: NATO Forward Land Forces Finland to start operations on 6 June
+    publisher: Finnish Government / Ministry of Defence
+    date: 2026-06
+    tier: 1
+  - url: https://www.janes.com/defence-intelligence-insights/defence-news/defence/nato-summit-2026-france-to-contribute-troops-to-forward-land-forces-finland
+    title: 'NATO Summit 2026: France to contribute troops to Forward Land Forces Finland'
+    publisher: Janes
+    date: 2026-07
+    tier: 2
+- to: XKX
+  layer: dependency
+  type: military_presence
+  summary: KFOR, under UNSCR 1244 since 12 Jun 1999, numbered 4,739 troops from 31 nations in June 2026 (Italy 984, USA 590, Turkey 420, Hungary 410). Mirrored from the Kosovo and Serbia cards.
+  value: 4739
+  unit: kfor_troops_june_2026
+  since: 1999-06-12
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.nato.int/content/dam/nato/webready/documents/factsheets/kfor/KFOR-Placemat.pdf
+    title: KFOR Placemat, June 2026
+    publisher: NATO
+    date: 2026-06
+    tier: 1
+- to: XKX
+  layer: action
+  type: incident
+  summary: NATO announced on 12 Jun 2026 a gradual, reversible reduction of KFOR toward 3,000-3,500 troops (the 2023 level) over the coming year, citing an improved security situation; KFOR continues to
+    support the EU-led dialogue. Mirrored from the Kosovo card.
+  since: 2026-06-12
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.euronews.com/my-europe/2026/06/12/nato-to-cut-troop-numbers-in-kosovo-amid-improved-security-situation
+    title: NATO to cut troop numbers in Kosovo amid improved security situation
+    publisher: Euronews
+    date: 2026-06-12
+    tier: 3
+  - url: https://www.nato.int/content/dam/nato/webready/documents/factsheets/kfor/KFOR-Placemat.pdf
+    title: KFOR Placemat, June 2026
+    publisher: NATO
+    date: 2026-06
+    tier: 1
+- to: SRB
+  layer: action
+  type: exercise
+  summary: First NATO-Serbia exercise (NSE26) on Serbian soil, 12 May 2026, about 600 troops from Serbia, Italy, Romania and Turkey, led by JFC Naples; Serbia has been a Partnership for Peace partner with
+    an IPAP since December 2006 under declared military neutrality. Mirrored from the Serbia card.
+  since: 2026-05-12
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://jfcnaples.nato.int/newsroom/news/news-archive/2026/jfc-naples-participates-in-natoserbia-exercise-2026
+    title: JFC Naples participates in NATO-Serbia Exercise 2026
+    publisher: NATO JFC Naples
+    date: 2026-05
+    tier: 1
+  - url: https://mfa.gov.rs/en/foreign-policy/security-policy/partnership-peace
+    title: Partnership for Peace
+    publisher: Ministry of Foreign Affairs of Serbia
+    date: 2025
+    tier: 1
+- to: BIH
+  layer: alignment
+  type: candidate
+  summary: Bosnia and Herzegovina was invited to a Membership Action Plan in 2010 that was never activated because Republika Srpska refuses to register defence property as state property; a new Individually
+    Tailored Partnership Programme was agreed on 23 Oct 2025 (single index source). Mirrored from the Bosnia card.
+  since: 2010
+  until: null
+  last_verified: 2026-10-12
+  confidence: C
+  sources:
+  - url: https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina%E2%80%93NATO_relations
+    title: Bosnia and Herzegovina-NATO relations (index)
+    publisher: Wikipedia (index)
+    date: 2026-10-12
+    tier: 4
+  - url: https://www.foxnews.com/world/nato-chief-says-bosnia-set-for-new-move-on-membership-path
+    title: NATO chief says Bosnia set for new move on membership path
+    publisher: AP via Fox News
+    date: 2018-12-04
+    tier: 3
+- to: GEO
+  layer: alignment
+  type: candidate
+  summary: Aspirant partner since the 2008 Bucharest promise; the relationship continues at working level while NATO reviewed parts of the Substantial NATO-Georgia Package after the 2024 election, and Rutte
+    (March 2026) prefers to keep the relationship for dialogue despite concern. Mirrored from the Georgia card.
+  since: 2008-04
+  until: null
+  last_verified: 2026-10-12
+  confidence: C
+  sources:
+  - url: https://info.imedi.ge/en/foreigpolicy/9097/mark-rutte-says-maintaining-georgianato-ties-valuable
+    title: Mark Rutte says maintaining Georgia-NATO ties valuable
+    publisher: Imedi (pro-government broadcaster)
+    date: 2026-03-26
+    tier: 3
+- to: ALB
+  layer: action
+  type: incident
+  summary: The Hague summit (2025) agreed that Albania would host the next meeting after Ankara; a draft of the Ankara declaration dropped the line (30 Jun 2026 reporting), Albania's spending was below
+    2% in 2025, and Rutte said after Ankara that the next summit will 'certainly' be in Albania but the date is not set; Bloomberg-sourced reports say allies considered skipping 2027. Mirrored from the
+    Albania card.
+  since: 2026-06-30
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.al-monitor.com/originals/2026/06/next-nato-summit-albania-doubt-amid-us-reluctance-and-low-defence-spending
+    title: Next NATO summit in Albania in doubt amid US reluctance and low defence spending
+    publisher: Al-Monitor / Reuters
+    date: 2026-06-30
+    tier: 3
+  - url: https://mezha.net/eng/bukvy/a257e53b_nato_members_consider/
+    title: NATO members consider skipping 2027 summit to avoid giving Trump another platform
+    publisher: Mezha (citing Bloomberg)
+    date: 2026-07
+    tier: 4
+- to: ESP
+  layer: action
+  type: agreement
+  summary: Spain signed the Hague declaration but says it needs only about 2.1% of GDP, not 3.5% core plus 1.5% related by 2035; at Ankara it again refused the 5% target and Rutte asked all allies for 'credible
+    plans'; Trump repeated tariff threats against Madrid. Madrid says its spending rose to EUR 35.4bn in 2026. Mirrored from the Spanish card.
+  since: 2025-06-25
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.lamoncloa.gob.es/lang/en/presidente/news/Paginas/2026/20260708-nato-turkiye-summit.aspx
+    title: NATO Summit (Ankara)
+    publisher: Moncloa - Presidency of the Government of Spain
+    date: 2026-07-08
+    tier: 1
+  - url: https://www.aljazeera.com/news/2026/7/6/nato-urges-members-to-deliver-plans-for-reaching-defence-spending-targets
+    title: NATO urges members to deliver plans for reaching defence spending targets
+    publisher: Al Jazeera
+    date: 2026-07-06
+    tier: 3
+  - url: https://www.aa.com.tr/en/europe/spain-stands-firm-against-natos-proposed-5-defense-spending-target/3987930
+    title: Spain stands firm against NATO's proposed 5% defense spending target
+    publisher: Anadolu Agency
+    date: 2026-07
+    tier: 3
+- to: ROU
+  layer: dependency
+  type: military_presence
+  summary: Mihail Kogalniceanu air base near Constanta is being expanded to become NATO's largest base (about 2,800 hectares, housing for up to 10,000 troops and families), cost quoted at EUR 2.5bn; at
+    Ankara Romania won Black Sea language, rotating command of the Combined Task Force Black Sea from 2028 and a NATO fuel pipeline into Romania. Mirrored from the Romania card.
+  value: 2.5
+  unit: eur_bn_planned_expansion_kogalniceanu
+  since: 2025-09
+  until: null
+  last_verified: 2026-10-12
+  confidence: C
+  sources:
+  - url: https://www.romania-insider.com/society/romania-kogalniceanu-base-role-nato-sept-2025
+    title: Romania's Black Sea military base reportedly considered for post-war security role
+    publisher: Romania Insider
+    date: 2025-09
+    tier: 3
+  - url: https://cursdeguvernare.ro/romania-at-the-nato-summit-17-decisions-and-discussions-concerning-us.html
+    title: 'Romania at the NATO summit: 17 decisions and discussions concerning the US'
+    publisher: Curs de Guvernare
+    date: 2026-07
+    tier: 3
+- to: POL
+  layer: action
+  type: incident
+  summary: Poland invoked Article 4 after the drone incursion of 9-10 Sep 2025 (at least 19 drones, three downed by Polish and Dutch aircraft); the North Atlantic Council met on 10 Sep and Eastern Sentry
+    was launched two days later; Poland is the top spender relative to GDP in the Alliance (4.3% in 2025). Mirrored from the Polish card.
+  since: 2025-09-10
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.ktvh.com/world/europe/russian-drones-breach-nato-airspace-in-poland-prompting-alliance-response
+    title: Russian drones breach NATO airspace in Poland, prompting alliance response
+    publisher: AP
+    date: 2025-09-10
+    tier: 3
+  - url: https://www.pbs.org/newshour/world/nato-allies-held-article-4-consultations-after-russian-drone-incursion-heres-what-that-means
+    title: NATO allies held Article 4 consultations after Russian drone incursion
+    publisher: PBS NewsHour
+    date: 2025-09-10
+    tier: 3
+  - url: https://polskieradio.pl/395/7786/Artykul/3665844,poland-leads-nato-in-defence-spending-for-another-year-report-shows
+    title: Poland leads NATO in defence spending for another year, report shows
+    publisher: Polskie Radio (citing NATO annual report)
+    date: 2026-03-26
+    tier: 3
+- to: DNK
+  layer: action
+  type: exercise
+  summary: Arctic Sentry, launched on 11 Feb 2026 under Joint Force Command Norfolk and SACEUR after the Greenland crisis and the Rutte-Trump Davos meeting, ties together allied activity in the High North
+    (Denmark's Arctic Endurance, Cold Response 26 in Norway); Denmark and France and the UK joined the Greenland build-up. Mirrored from the Danish and Norwegian cards.
+  since: 2026-02-11
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.defensenews.com/global/europe/2026/02/11/nato-kicks-off-arctic-sentry-operation-following-greenland-brouhaha/
+    title: NATO kicks off Arctic Sentry operation following Greenland brouhaha
+    publisher: Defense News
+    date: 2026-02-11
+    tier: 3
+  - url: https://www.nato.int/en/news-and-events/articles/news/2026/03/18/nato-secretary-general-visits-norway-and-observes-exercise-cold-response-26-in-the-high-north
+    title: NATO Secretary General visits Norway and observes Exercise Cold Response 26 in the High North
+    publisher: NATO
+    date: 2026-03-18
+    tier: 1
+- to: DEU
+  layer: action
+  type: visit
+  summary: 'Rutte in Berlin on 1 Jul 2026 (''Germany leads and Germany delivers''): Germany committed to 3.5% + 1.5% and plans 3.5% as early as 2029, a regular defence budget of EUR 109.7bn in 2027 and
+    the Lithuania brigade; Berlin''s line is a ''more European NATO''. Mirrored from the German card.'
+  since: 2026-07-01
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.nato.int/en/news-and-events/articles/news/2026/07/01/nato-secretary-general-in-berlin-germany-leads-and-germany-delivers
+    title: 'NATO Secretary General in Berlin: Germany leads and Germany delivers'
+    publisher: NATO
+    date: 2026-07-01
+    tier: 1
+  - url: https://www.bundesregierung.de/breg-en/news/defence-cabinet-meeting-2445642
+    title: Making NATO more European
+    publisher: Federal Government of Germany
+    date: 2026-07-01
+    tier: 1
+- to: MAR
+  layer: action
+  type: visit
+  summary: NATO's Special Representative for the Southern Neighbourhood, Javier Colomina, made his third official visit to Rabat on 6-7 Oct 2026 (North Africa, the Sahel, terrorism, maritime security, a
+    regional small-arms conference), under the Southern Neighbourhood Action Plan adopted at Washington in July 2024.
+  since: 2026-10-06
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.nato.int/en/news-and-events/articles/news/2026/10/08/natos-special-representative-for-the-southern-neighbourhood-visits-morocco
+    title: NATO's Special Representative for the Southern Neighbourhood visits Morocco
+    publisher: NATO
+    date: 2026-10-08
+    tier: 1
+  - url: https://www.nato.int/cps/en/natohq/topics_229634.htm
+    title: NATO Secretary General's Special Representative for the Southern Neighbourhood
+    publisher: NATO
+    date: 2024-07-23
+    tier: 1
+- layer: alignment
+  type: security_guarantee
+  summary: Article 5 of the North Atlantic Treaty covers Latvia (member since 29 Mar 2004); the July 2026 Ankara summit declaration reaffirmed collective defence as the alliance's highest priority.
+  since: 2004-03-29
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://www.baltictimes.com/nato_summit_provided_latvia_with_assurances_regarding_importance_of_collective_defense_commitments_-_rinkevics/
+    title: NATO summit provided Latvia with assurances regarding importance of collective defense commitments - Rinkevics
+    publisher: The Baltic Times
+    date: 2026-07-10
+    tier: 3
+  - url: https://www.mod.gov.lv/en/nato/nato-capabilities/nato-efp-battle-group
+    title: NATO Multinational Brigade in Latvia
+    publisher: Ministry of Defence of Latvia
+    date: 2026
+    tier: 1
+  to: LVA
+  mirrored_from: LVA
+- layer: alignment
+  type: treaty
+  summary: Partnership for Peace partner since 16 Mar 1994 with a cooperation programme (no Article 5 and no membership bid); the 2023 strategy names NATO as a partner for strengthening the army while neutrality
+    stays in the constitution.
+  since: '1994-03-16'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.nato.int/issues/nato-moldova/index.html
+    title: Relations with the Republic of Moldova
+    publisher: NATO
+    date: '2025'
+    tier: 1
+  - url: https://jamestown.org/?p=97153
+    title: Moldova's National Security Strategy designates Russia as existential threat, Europe as destination (Part Two)
+    publisher: Jamestown Foundation, Eurasia Daily Monitor
+    date: '2023-10-16'
+    tier: 2
+  - url: https://www.politico.eu/article/maia-sandu-moldova-nato-alliance-joining-ukraine-war-russia-invasion/
+    title: Time to join NATO? Moldova eyes joining 'a larger alliance'
+    publisher: Politico Europe
+    date: '2023-01-20'
+    tier: 3
+  to: MDA
+  mirrored_from: MDA
+- layer: alignment
+  type: security_guarantee
+  summary: Article 5 guarantee as a NATO member since 5 June 2017; Montenegro spends above 2% of GDP (2.05% in 2025, 2.2-2.3% projected for 2026) and says it is committed to collective defence. The membership
+    row itself comes from the Wikidata dataset.
+  since: '2017-06-05'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://www.gov.me/en/article/montenegro-committed-to-strengthening-collective-defence-modernising-defence-capabilities
+    title: Montenegro committed to strengthening collective defence, modernising defence capabilities
+    publisher: Government of Montenegro
+    date: '2026'
+    tier: 1
+  - url: https://mina.news/article/krapovic-montenegro-continues-to-contribute-to-nato-security
+    title: 'Krapovic: Montenegro continues to contribute to NATO security'
+    publisher: MINA news agency
+    date: 2026-07
+    tier: 3
+  - url: https://militaeraktuell.at/en/5-percent-montenegro-gradually-increases-its-defense-budget/
+    title: '5 percent: Montenegro gradually increases its defense budget'
+    publisher: Militaeraktuell
+    date: '2026'
+    tier: 3
+  to: MNE
+  mirrored_from: MNE
+- layer: alignment
+  type: treaty
+  summary: Partnership for Peace framework document signed December 2006 with an Individual Partnership Action Plan, under declared military neutrality.
+  since: 2006-12-14
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://mfa.gov.rs/en/foreign-policy/security-policy/partnership-peace
+    title: Partnership for Peace
+    publisher: Ministry of Foreign Affairs of Serbia
+    date: 2025
+    tier: 1
+  to: SRB
+  mirrored_from: SRB
