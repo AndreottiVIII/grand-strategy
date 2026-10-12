@@ -1,442 +1,879 @@
 from: SVK
 relations:
-  # ---------- objective ----------
-  - to: UKR
-    layer: objective
-    type: influence_goal
-    summary: Since 10 Jan 2026 Bratislava gives Ukraine no state military aid, sends no troops and takes no part in EU loan guarantees (Fico, Pellegrini and the parliament speaker agreed at Bratislava Castle); it opposes Ukraine's NATO membership and an accelerated EU accession ('Ukraine cannot overtake Montenegro') while supporting accession on the merits (Fico to Zelensky, 2 May 2026). Commercial arms sales are left to companies.
-    since: 2026-01-10
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://euromaidanpress.com/2026/01/12/slovakias-pro-russian-leadership-halts-all-military-aid-to-ukraine-including-weapons-and-eu-loans/", title: "Slovakia's pro-Russian leadership halts all military aid to Ukraine, including weapons and EU loans", publisher: "Euromaidan Press", date: 2026-01-12, tier: 3}
-      - {url: "https://enrsi.stvr.sk/articles/news/419946/planned-parliamentary-session-on-ukraine-aid", title: "Planned parliamentary session on Ukraine aid", publisher: "STVR (Slovak public broadcaster)", date: 2026-01, tier: 3}
-      - {url: "https://unn.ua/en/news/cannot-overtake-montenegro-fico-opposed-accelerating-ukraines-accession-to-the-eu", title: "Cannot overtake Montenegro: Fico opposed accelerating Ukraine's accession to the EU", publisher: "UNN", date: 2026, tier: 3}
-  - to: RUS
-    layer: objective
-    type: influence_goal
-    summary: Fico seeks to 'normalise' relations with Moscow inside the EU - secure gas and oil, keep the Gazprom contract to 2034 and open a channel to Putin - under the label 'sovereign foreign policy'. Reuters read the 2025 increase in Russian gas imports as part of that push.
-    since: 2023-10-25
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.pravda.com.ua/eng/news/2025/09/02/7529018/", title: "Slovakia increases Russian gas imports to normalise relations with Moscow", publisher: "Reuters via Ukrainska Pravda", date: 2025-09-02, tier: 3}
-      - {url: "https://www.euronews.com/my-europe/2024/12/22/slovakias-prime-minister-has-controversial-talks-with-putin-in-moscow", title: "Slovakia's prime minister has controversial talks with Putin in Moscow", publisher: "Euronews", date: 2024-12-22, tier: 3}
-  - to: org-eu
-    layer: objective
-    type: influence_goal
-    summary: Fico's government seeks to keep EU membership and funds while carving national sovereignty out of EU law. The constitutional amendment of 26 Sep 2025 (90 of 99 present) recognises two sexes only and declares Slovak sovereignty over 'cultural and ethical questions' above EU law; the Commission opened infringement proceedings on 21 Nov 2025 for breaching the primacy of EU law.
-    since: 2025-09-26
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://aa.com.tr/en/europe/eu-launches-infringement-procedure-against-slovakia-over-constitutional-amendment/3750268", title: "EU launches infringement procedure against Slovakia over constitutional amendment", publisher: "Anadolu Agency", date: 2025-11-21, tier: 3}
-      - {url: "https://www.aljazeera.com/news/2025/9/26/slovak-constitutional-change-promotes-anti-lgbtq-national-identity", title: "Slovak constitutional change promotes anti-LGBTQ 'national identity'", publisher: "Al Jazeera", date: 2025-09-26, tier: 3}
-      - {url: "https://www.icj.org/wp-content/uploads/2025/10/Joint-open-letter-on-new-Constitutional-amendments-adopted-in-Slovakia.pdf", title: "Joint open letter on new constitutional amendments adopted in Slovakia", publisher: "International Commission of Jurists / Amnesty International et al.", date: 2025-10, tier: 3}
-  - to: org-nato
-    layer: objective
-    type: influence_goal
-    summary: Bratislava keeps defence spending at about 2% of GDP (EUR 2.88bn in 2026; 2.02% by NATO estimate) and rejects the 5%-by-2035 target ('the state must retain the sovereign right to determine the pace'); the plan is 3.5% only by 2034. On 18 Sep 2026 Fico said he does not want Slovakia in a conflict 'because of some Article 5'.
-    since: 2025-06
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.tasr.sk/tasr-clanok/TASR:2025102100000312", title: "Budget26: 2 Percent of GDP, or More than EUR 2.88 billion, to Go to Defence", publisher: "TASR (Slovak public agency)", date: 2025-10-21, tier: 3}
-      - {url: "https://www.intellinews.com/comment-fico-hints-slovakia-won-t-spend-5-gdp-on-nato-defence-under-his-watch-387572/", title: "COMMENT: Fico hints Slovakia won't spend 5% GDP on NATO defence under his watch", publisher: "bne IntelliNews", date: 2025-06, tier: 3}
-      - {url: "https://www.pravda.com.ua/eng/news/2026/09/18/8054000/", title: "Slovakia's Fico says he will do everything to keep country out of war if NATO Article 5 invoked", publisher: "Ukrainska Pravda", date: 2026-09-18, tier: 3}
-  - to: HUN
-    layer: objective
-    type: influence_goal
-    summary: Slovakia keeps the December 2025 penal-code clause that makes public questioning of the post-war settlement (the Benes decrees) an offence; Prime Minister-elect Magyar told Fico on 21 Apr 2026 that policy talks depend on repeal of the clause and on no new confiscations, while Fico wanted to talk Druzhba and the joint suit against the EU gas ban.
-    since: 2025-12
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://production.telex.hu/english/2026/04/21/peter-magyar-asked-robert-fico-to-revoke-legislation-referencing-benes-decrees", title: "Peter Magyar asked Robert Fico to revoke legislation referencing Benes Decrees", publisher: "Telex", date: 2026-04-21, tier: 3}
-      - {url: "https://newsnow.tasr.sk/magyar-i-told-fico-slovakia-must-first-repeal-act-threatening-hungarians-with-jail/", title: "Magyar: I told Fico, Slovakia must first repeal act threatening Hungarians with jail", publisher: "TASR (Slovak public agency)", date: 2026-04, tier: 3}
-      - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2026-06-22/enduring-legacy-benes-slovak-hungarian-tensions-a-historical-context", title: "The enduring legacy of the Benes decrees in Slovak-Hungarian tensions", publisher: "OSW", date: 2026-06-22, tier: 2}
-
-  # ---------- alignment ----------
-  - to: USA
-    layer: alignment
-    type: treaty
-    summary: Intergovernmental agreement on the civil nuclear programme signed in Washington by Energy Secretary Wright and Prime Minister Fico on 16 Jan 2026 - a framework for a new state-owned 1,200 MW American unit at Jaslovske Bohunice (Westinghouse the expected vendor; binding contract due 2027, operation by 2041) and for small modular reactors, with export-credit cooperation.
-    since: 2026-01-16
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.energy.gov/node/4855805", title: "U.S. Energy Secretary and Slovakia's Prime Minister sign agreement to advance U.S.-Slovakia civil nuclear program", publisher: "US Department of Energy", date: 2026-01-16, tier: 1}
-      - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2026-01-21/fico-trump-meeting-slovakia-turns-to-us-nuclear-technologies", title: "Fico-Trump meeting: Slovakia turns to US nuclear technologies", publisher: "OSW", date: 2026-01-21, tier: 2}
-  - to: CHN
-    layer: alignment
-    type: treaty
-    summary: Strategic partnership declared by Xi Jinping and Fico in Beijing on 1 Nov 2024 and set down in a joint statement; implemented through an intergovernmental committee whose first meeting was in Bratislava. Fico also visited Gotion's headquarters in Hefei on 4 Nov 2024.
-    since: 2024-11-01
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.vlada.gov.sk/tlacove-spravy/robert-fico-navsteva-ciny-je-cestou-roka-2024-1", title: "Robert Fico: the visit to China is the trip of the year 2024", title_original: "Robert Fico: návšteva Číny je cestou roka 2024", lang: sk, publisher: "Government Office of the Slovak Republic", date: 2024-11, tier: 1}
-      - {url: "https://newsnow.tasr.sk/pm-fico-meets-li-hongzhong-to-discuss-slovak-chinese-ties/", title: "PM Fico meets Li Hongzhong to discuss Slovak-Chinese ties", publisher: "TASR (Slovak public agency)", date: 2024-11, tier: 3}
-  - to: inst-gazprom
-    layer: alignment
-    type: treaty
-    summary: SPP (state gas company) has a long-term supply contract with Gazprom valid until 2034 which, Fico says, obliges the Russian side to bring gas to the Slovak border; Bratislava cites it against the EU phase-out and said SPP planned to cover its 2026 domestic supply with Russian pipeline gas under the exemption for long-term contracts.
-    since: 2008-01-01
-    until: 2034-12-31
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.intellinews.com/slovakia-seeks-eu-guarantees-on-russian-gas-phase-out-ahead-of-sanctions-deal-390731", title: "Slovakia seeks EU guarantees on Russian gas phase-out ahead of sanctions deal", publisher: "bne IntelliNews", date: 2025-07, tier: 3}
-      - {url: "https://www.business-humanrights.org/ar/أحدث-الأخبار/slovakia-goes-against-eu-energy-plans-and-will-rely-on-russian-gas-until-2027", title: "Slovakia goes against EU energy plans and will rely on Russian gas until 2027", publisher: "Business & Human Rights Resource Centre", date: 2025, tier: 3}
-  - to: CZE
-    layer: alignment
-    type: security_guarantee
-    summary: Czechia and Slovakia are co-members of NATO and the EU and share gas-storage responsibility (Dolni Bojanovice) and a memorandum on enhanced cooperation of 31 Mar 2026; the Czech cabinet of Babis and the Slovak cabinet opted out together of the EU Ukraine-loan guarantees (Article 20 TEU, December 2025).
-    since: 2025-12-19
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://uv.gov.cz/en/media-centrum/aktualne/czech-slovak-government-meeting-reaffirmed-the-strengthening-of-the-partnership-between-the-two-countries-226355/", title: "Czech-Slovak government meeting reaffirmed the strengthening of the partnership between the two countries", publisher: "Government of the Czech Republic", date: 2026-03-31, tier: 1}
-      - {url: "https://www.osw.waw.pl/en/publikacja/33685/pdf", title: "EU summit decision on financing Ukraine and the Czech, Slovak and Hungarian opt-out (enhanced cooperation, Article 20 TEU)", publisher: "OSW", date: 2025-12, tier: 2}
-
-  # ---------- dependency ----------
-  - to: RUS
-    layer: dependency
-    type: energy_import
-    summary: Russian gas arrives by TurkStream via Hungary since 1 Feb 2025, after Ukrainian transit ended on 1 Jan 2025 - about 1.7 bcm imported through Hungary in January-August 2025 against a domestic demand of about 4.5 bcm a year. Figures conflict - SPP reported that two-thirds of its gas in 2025 came from non-Russian sources; the TurkStream route cannot carry full demand.
-    value: 1.7
-    unit: bcm_russian_gas_via_hungary_jan_aug_2025
-    since: 2025-02-01
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.pravda.com.ua/eng/news/2025/09/02/7529018/", title: "Slovakia increases Russian gas imports to normalise relations with Moscow", publisher: "Reuters via Ukrainska Pravda", date: 2025-09-02, tier: 3}
-      - {url: "https://www.tasr.sk/tasr-clanok/TASR:2025020600000181", title: "Slovakia Importing Russian Gas Via TurkStream as of February", publisher: "TASR (Slovak public agency)", date: 2025-02-06, tier: 3}
-      - {url: "https://gasprocessingnews.com/news/2025/11/slovakias-gas-importer-takes-two-thirds-of-gas-from-non-russian-sources-this-year", title: "Slovakia's gas importer takes two-thirds of gas from non-Russian sources this year", publisher: "Gas Processing News", date: 2025-11, tier: 3}
-      - {url: "https://pism.pl/publications/slovakia-remains-dependent-on-russian-energy", title: "Slovakia remains dependent on Russian energy", publisher: "PISM", date: 2025, tier: 2}
-  - to: RUS
-    layer: dependency
-    type: energy_import
-    summary: Crude oil through the Druzhba pipeline for the Slovnaft refinery (MOL group), halted on 27 Jan 2026 and resumed on 23 Apr 2026 after almost three months; imports of Russian crude were worth about USD 2.35bn in 2025 (UN-based trade data). Slovnaft had by then moved almost entirely to non-Russian crude via the Adria pipeline from Croatia; Kyiv blames Russian drones for the outage and Fico says the pipeline was never damaged.
-    value: 2.35
-    unit: USD_bn_crude_oil_imports_from_russia_2025
-    since: 1962-01-01
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://oenergetice.cz/en/oil/slovakia-reports-oil-returning-via-druzhba-fico-speaks-of-geopolitical-game", title: "Slovakia reports oil returning via Druzhba, Fico speaks of geopolitical game", publisher: "oEnergetice", date: 2026-04, tier: 3}
-      - {url: "https://tradingeconomics.com/slovakia/imports/russia/crude-oil-petroleum-bituminous-minerals", title: "Slovakia imports from Russia of crude oil", publisher: "Trading Economics (UN Comtrade data)", date: 2026, tier: 3}
-      - {url: "https://pgjonline.com/news/2026/april/no-deal-on-adria-oil-pipeline-tests-as-slovakia-seeks-alternative-to-druzhba", title: "No deal on Adria oil pipeline tests as Slovakia seeks alternative to Druzhba", publisher: "Pipeline & Gas Journal", date: 2026-04, tier: 3}
-  - to: org-eu
-    layer: dependency
-    type: investment
-    summary: EU money at stake - the Commission weighed in 2024 freezing part of EUR 12.8bn of cohesion funds and clawing back up to EUR 2.7bn of recovery grants over rule-of-law concerns; the Parliament asked on 29 Apr 2026 (418 votes) for the conditionality mechanism to be used for the first time. No freeze has been decided.
-    value: 12.8
-    unit: EUR_bn_cohesion_funds_weighed_for_freezing
-    since: 2024-09
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://bnnbloomberg.ca/business/international/2024/09/08/eu-weighs-blocking-slovakia-funds-over-democratic-backsliding", title: "EU weighs blocking Slovakia funds over democratic backsliding", publisher: "Bloomberg via BNN", date: 2024-09-08, tier: 3}
-      - {url: "https://www.pravda.com.ua/eng/news/2026/04/29/8032397/", title: "European Parliament supports financial restrictions for Slovakia over actions of PM Fico's government", publisher: "Ukrainska Pravda", date: 2026-04-29, tier: 3}
-  - to: USA
-    layer: dependency
-    type: arms_supply
-    summary: 14 F-16 C/D Block 70 fighters bought from Lockheed Martin in 2018 (USD 1.6bn contract); the first two handed over on 29 Feb 2024 and ten in Slovakia by December 2025, in service from mid-2026. The US also supplied Black Hawk helicopters (nine UH-60M ordered in 2015; twelve used UH-60L at the end of 2024).
-    value: 1.6
-    unit: USD_bn_f16_block70_contract
-    since: 2018
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.mod.gov.sk/53798-en/slovensko-si-v-usa-oficialne-prevzalo-prve-dve-stihacky-f-16/", title: "Slovakia takes official delivery of first two F-16 Block 70 fighter jets in USA", publisher: "Ministry of Defence of the Slovak Republic", date: 2024-02-29, tier: 1}
-      - {url: "https://militaeraktuell.at/en/already-ten-f-16-c-d-block-70-in-slovakia/", title: "Already ten F-16 C/D Block 70 in Slovakia", publisher: "Militaer Aktuell", date: 2025-12, tier: 3}
-      - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2026-01-21/fico-trump-meeting-slovakia-turns-to-us-nuclear-technologies", title: "Fico-Trump meeting: Slovakia turns to US nuclear technologies", publisher: "OSW", date: 2026-01-21, tier: 2}
-  - to: ISR
-    layer: dependency
-    type: arms_supply
-    summary: Barak MX integrated air-defence system from Israel Aerospace Industries, EUR 560m, signed in December 2024 as the largest defence deal between the two countries; six batteries to replace the Kub systems and to cover the gap left by the S-300 given to Ukraine, with Blanar calling it 'extremely important from a timing perspective'.
-    value: 560
-    unit: EUR_m_barak_mx_contract
-    since: 2024-12
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.mod.gov.il/en/press-releases/press-room/israel-mod-seals-560-million-euro-agreement-barak-mx-integrated-air-defense-system-produced-by-iai-sold-to-slovakia-in-landmark-agreement", title: "Israel MOD seals EUR 560 million agreement: Barak MX integrated air defense system produced by IAI sold to Slovakia", publisher: "Israel Ministry of Defense", date: 2024-12, tier: 1}
-      - {url: "https://breakingdefense.com/2024/12/israel-signs-583-million-deal-to-sell-barak-air-defense-to-slovakia/", title: "Israel signs $583 million deal to sell Barak air defense to Slovakia", publisher: "Breaking Defense", date: 2024-12, tier: 3}
-  - to: UKR
-    layer: dependency
-    type: arms_supply
-    summary: Slovak arms firms export EUR 2.4-2.5bn in 2025 (Statistical Office EUR 2.39bn, Finance Ministry EUR 2.54bn), the first time above EUR 2bn; in 2024 heavy artillery ammunition intended for Ukraine was 83% of EUR 1.15bn. The state does not supply from its stocks since January 2026 but owns half of ZVS Holding and licenses the exports, often routed through third countries. Totals cover all customers; Ukraine is the leading buyer of ammunition.
-    value: 2.39
-    unit: EUR_bn_arms_exports_all_customers_2025
-    since: 2022-02-24
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.czdefence.com/article/exports-of-weapons-and-ammunition-from-slovakia-continued-to-grow-in-2025-surpassing-the-two-billion-euro-mark-for-the-first-time-in-history", title: "Exports of weapons and ammunition from Slovakia continued to grow in 2025, surpassing the two billion euro mark for the first time", publisher: "CZ Defence", date: 2026, tier: 3}
-      - {url: "https://cepa.org/article/adapt-to-survive-slovakias-arms-industry-faces-new-reality/", title: "Adapt to survive: Slovakia's arms industry faces new reality", publisher: "CEPA", date: 2024, tier: 2}
-      - {url: "https://spectator.sme.sk/politics-and-society/c/news-digest-when-it-comes-to-rearmament-slovak-gvt-says-one-thing-and-does-another", title: "News digest: when it comes to rearmament, Slovak government says one thing and does another", publisher: "The Slovak Spectator", date: 2025-04-30, tier: 3}
-  - to: CHN
-    layer: dependency
-    type: investment
-    summary: Gotion High-Tech's battery-cell plant at Surany with InoBat, described by Fico on 4 Nov 2024 as one of the biggest investments in independent Slovakia's history (EUR 1.2-1.4bn by different sources). Exports to China fell 27.6% in 2025, so the investment is the substance of the relation.
-    value: 1.2
-    unit: EUR_bn_gotion_investment_low_estimate
-    since: 2024-11-04
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://tasr.sk/tasr-clanok/TASR:2024110400000413", title: "Fico: Gotion's Investment to Be Turning Point in Slovak-Chinese Relationship", publisher: "TASR (Slovak public agency)", date: 2024-11-04, tier: 3}
-      - {url: "https://www.tasr.sk/tasr-clanok/TASR:2026031100000175", title: "Stats: Slovakia Posted Trade-balance Surplus of EUR 2.8 billion Last Year", publisher: "TASR (Slovak public agency, Statistical Office data)", date: 2026-03-11, tier: 3}
-  - to: DEU
-    layer: dependency
-    type: trade_share
-    summary: Germany is Slovakia's largest export partner and the anchor of its car industry; exports to Germany grew 3.8% in 2025 within total goods exports of EUR 110.9bn (+3.8%) and a EUR 2.8bn surplus; Fico says about 900 German firms operate in Slovakia. The exact share of exports is not in the retrieved sources and is a gap - the value below is the total, not the German share.
-    value: 110.9
-    unit: EUR_bn_total_goods_exports_2025
-    since: 2025
-    until: null
-    last_verified: 2026-10-12
-    confidence: C
-    sources:
-      - {url: "https://www.tasr.sk/tasr-clanok/TASR:2026031100000175", title: "Stats: Slovakia Posted Trade-balance Surplus of EUR 2.8 billion Last Year", publisher: "TASR (Slovak public agency, Statistical Office data)", date: 2026-03-11, tier: 3}
-      - {url: "https://www.tasr.sk/tasr-clanok/TASR:2026051400000480", title: "German Chancellor Merz Has Not Planned Slovakia Visit, Berlin Says", publisher: "TASR (Slovak public agency)", date: 2026-05-14, tier: 3}
-
-  # ---------- action ----------
-  - to: RUS
-    layer: action
-    type: visit
-    summary: Fico flew to Moscow on 22 Dec 2024 for talks with Putin on the expiring Ukrainian gas transit, the first meeting of the two since 2016 and an event that started the 2025 protest wave in Slovakia; he said Putin confirmed Russia's readiness to keep supplying Slovakia.
-    since: 2024-12-22
-    until: 2024-12-22
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.euronews.com/my-europe/2024/12/22/slovakias-prime-minister-has-controversial-talks-with-putin-in-moscow", title: "Slovakia's prime minister has controversial talks with Putin in Moscow", publisher: "Euronews", date: 2024-12-22, tier: 3}
-      - {url: "https://intellinews.com/slovakia-s-fico-in-surprise-visit-to-putin-in-moscow-359597", title: "Slovakia's Fico in surprise visit to Putin in Moscow", publisher: "bne IntelliNews", date: 2024-12-22, tier: 3}
-  - to: RUS
-    layer: action
-    type: visit
-    summary: Fico was the only EU leader at Moscow's Victory Day parade on 9 May 2025 (with Vucic) and met Putin; Estonia, Latvia and Lithuania refused his plane overflight. On 2 Sep 2025 he met Putin again in Beijing.
-    since: 2025-05-09
-    until: 2025-09-02
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.bluewin.ch/en/news/international/xi-jinping-fico-and-vui-march-in-victory-parade-in-moscow-li.2686899", title: "Xi Jinping, Fico and Vucic march in victory parade in Moscow", publisher: "bluewin (wire)", date: 2025-05-09, tier: 3}
-      - {url: "https://www.pravda.com.ua/eng/news/2025/09/02/7528957/", title: "Slovak PM meets with Putin in Beijing", publisher: "Ukrainska Pravda", date: 2025-09-02, tier: 3}
-  - to: RUS
-    layer: action
-    type: visit
-    summary: Fico went to Moscow again on 9 May 2026, the only EU leader there, did not attend the parade, laid flowers at the Tomb of the Unknown Soldier, met Putin briefly and passed on Zelensky's readiness to meet him 'in any format'; Putin told him to call. Merz said he regretted the trip and Costa said the EU saw no sign of Russian readiness for dialogue.
-    since: 2026-05-09
-    until: 2026-05-09
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.teraz.sk/najnovsie/fico-odovzdal-putinovi-odkaz-od-zelensk/961631-clanok.html", title: "Fico passed Zelensky's message to Putin", title_original: "Fico odovzdal Putinovi odkaz od Zelenského", lang: sk, publisher: "TASR / Teraz.sk", date: 2026-05-09, tier: 3}
-      - {url: "https://euromaidanpress.com/2026/05/08/fico-the-only-eu-leader-heading-to-moscow-for-9-may-to-deliver-zelenskyys-message-to-putin", title: "Fico, the only EU leader heading to Moscow for 9 May, to deliver Zelenskyy's message to Putin", publisher: "Euromaidan Press", date: 2026-05-08, tier: 3}
-      - {url: "https://www.intellinews.com/eu-slams-slovakia-s-fico-for-moscow-victory-day-trip-441873/", title: "EU slams Slovakia's Fico for Moscow Victory Day trip", publisher: "bne IntelliNews", date: 2026-05, tier: 3}
-  - to: CHN
-    layer: action
-    type: visit
-    summary: Fico visited China twice - 31 Oct-5 Nov 2024 (Beijing, Hefei, Shanghai; met Xi on 1 Nov) and, as the only EU leader, the 3 Sep 2025 military parade in Beijing with talks with Xi on 4 Sep; Poland and Czechia sent no one.
-    since: 2024-10-31
-    until: 2025-09-04
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://table.media/en/china/feature/military-parade-what-do-fico-and-vucic-want-in-beijing", title: "Military parade: What are Fico and Vucic seeking in Beijing?", publisher: "Table.Media", date: 2025-08, tier: 3}
-      - {url: "https://www.czdefence.com/article/china-shows-its-strength-visegrad-fractures-what-the-beijing-military-parade-revealed", title: "China shows its strength, Visegrad fractures: what the Beijing military parade revealed", publisher: "CZ Defence", date: 2025-09, tier: 3}
-      - {url: "https://www.vlada.gov.sk/tlacove-spravy/robert-fico-navsteva-ciny-je-cestou-roka-2024-1", title: "Robert Fico: the visit to China is the trip of the year 2024", title_original: "Robert Fico: návšteva Číny je cestou roka 2024", lang: sk, publisher: "Government Office of the Slovak Republic", date: 2024-11, tier: 1}
-  - to: USA
-    layer: action
-    type: visit
-    summary: Fico met Trump at Mar-a-Lago on 18 Jan 2026, the day after signing the nuclear agreement in Washington; they discussed nuclear cooperation and Ukraine's ceasefire prospects. In February 2026 Foreign Minister Blanar attended the first session of the Board of Peace in Washington as an observer; Slovakia has not accepted membership.
-    since: 2026-01-18
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.intellinews.com/fico-visits-trump-in-mar-a-lago-slovakia-signs-nuclear-deal-with-us-420759/", title: "Fico visits Trump in Mar-a-Lago, Slovakia signs nuclear deal with US", publisher: "bne IntelliNews", date: 2026-01, tier: 3}
-      - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2026-01-21/fico-trump-meeting-slovakia-turns-to-us-nuclear-technologies", title: "Fico-Trump meeting: Slovakia turns to US nuclear technologies", publisher: "OSW", date: 2026-01-21, tier: 2}
-      - {url: "https://www.tasr.sk/tasr-clanok/TASR:2026022100000050", title: "Blanar on the Board of Peace session in Washington (observer, not a member)", publisher: "TASR (Slovak public agency)", date: 2026-02-21, tier: 3}
-  - to: org-eu
-    layer: action
-    type: sanction
-    summary: Slovakia blocked the EU's 18th sanctions package six times in June-July 2025, demanding written guarantees on gas prices, supply and transit fees after the 2027 phase-out, and released its veto on 17 Jul 2025 after the Commission gave written assurances. Under EU rules the gas phase-out passes by qualified majority while sanctions need unanimity.
-    since: 2025-06-30
-    until: 2025-07-17
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.pravda.com.ua/eng/news/2025/07/10/7521158", title: "Fico: Slovakia will not support 18th package of sanctions against Russia without compensation for gas transit loss", publisher: "Ukrainska Pravda", date: 2025-07-10, tier: 3}
-      - {url: "https://www.kyivindependent.com/slovakia-agrees-to-approve-eus-18th-sanctions-package-against-russia-fico-says", title: "Slovakia agrees to approve EU's 18th sanctions package against Russia, Fico says", publisher: "Kyiv Independent", date: 2025-07-17, tier: 3}
-      - {url: "https://www.intellinews.com/slovakia-seeks-eu-guarantees-on-russian-gas-phase-out-ahead-of-sanctions-deal-390731", title: "Slovakia seeks EU guarantees on Russian gas phase-out ahead of sanctions deal", publisher: "bne IntelliNews", date: 2025-07, tier: 3}
-  - to: UKR
-    layer: action
-    type: incident
-    summary: After the Druzhba pipeline went offline on 27 Jan 2026, Fico halted emergency electricity to Ukraine and threatened to veto the 20th sanctions package; on 22 Apr he said he would lift the veto only when oil flowed again and would no longer object to the EUR 90bn loan, and oil reached Slovakia on 23 Apr. Kyiv blamed Russian drones; Bratislava and Budapest accused Kyiv of delaying repairs.
-    since: 2026-02
-    until: 2026-04-22
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.pravda.com.ua/eng/news/2026/03/29/8027690", title: "Slovak PM threatens to block EU's 20th Russia sanctions package amid Druzhba pipeline dispute", publisher: "Ukrainska Pravda", date: 2026-03-29, tier: 3}
-      - {url: "https://interfax.com/newsroom/top-stories/117273/", title: "Fico: Slovakia lifts veto on 20th package only when Druzhba supply resumes", publisher: "Interfax", date: 2026-04-22, tier: 3}
-      - {url: "https://www.aljazeera.com/news/2026/4/29/ukraine-targets-druzhba-pipeline-to-sever-russian-oil-influence-in-eu", title: "Ukraine targets Druzhba pipeline to sever Russian oil, influence in EU", publisher: "Al Jazeera", date: 2026-04-29, tier: 3}
-      - {url: "https://www.yahoo.com/news/articles/slovakia-halts-electricity-ukraine-amid-175833104.html", title: "Slovakia halts electricity for Ukraine amid Russian oil row", publisher: "Yahoo News", date: 2026-02, tier: 3}
-  - to: UKR
-    layer: action
-    type: visit
-    summary: Fico met Zelensky in Uzhhorod on 5 Sep 2025 (energy and the Druzhba strikes, days after Beijing) and at the European Political Community summit in Yerevan on 4 May 2026, where Zelensky wrote that Fico supports Ukraine's EU accession; Foreign Minister Sybiha reported Blanar's assurances on opening the first negotiating cluster. The two agreed to hold a joint government meeting, not confirmed as held.
-    since: 2025-09-05
-    until: 2026-05-04
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.ukrinform.net/rubric-polytics/4096238-zelensky-holds-talks-with-fico.html", title: "Zelensky holds talks with Fico", publisher: "Ukrinform", date: 2025-09-05, tier: 3}
-      - {url: "https://news.liga.net/en/amp/politics/news/we-are-ready-to-share-our-experience-zelenskyy-writes-that-fico-supports-ukraines-accession-to-the-eu", title: "'We are ready to share our experience': Zelenskyy writes that Fico supports Ukraine's accession to the EU", publisher: "Liga.net", date: 2026-05-02, tier: 3}
-      - {url: "https://www.tasr.sk/tasr-clanok/TASR:2025090100000477", title: "On His Return from China Premier Fico Is Set to Meet Zelenskyy on Friday", publisher: "TASR (Slovak public agency)", date: 2025-09-01, tier: 3}
-  - to: org-eu
-    layer: action
-    type: incident
-    summary: At the 18-19 Dec 2025 European Council Slovakia for the first time refused to support the conclusions on Ukraine, and the EUR 90bn loan was built through enhanced cooperation (Article 20 TEU) so that Slovakia, Hungary and Czechia carry no guarantee obligation. On 8 Mar 2026 Fico said Slovakia would block the loan if necessary and on 21 Mar that Bratislava might follow Hungary.
-    since: 2025-12-19
-    until: 2026-04-22
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.pravda.com.ua/eng/news/2025/12/19/8012550", title: "EUR 90bn for Ukraine: EU summit approves exemption for Hungary, Slovakia and Czechia", publisher: "Ukrainska Pravda", date: 2025-12-19, tier: 3}
-      - {url: "https://www.osw.waw.pl/en/publikacja/33685/pdf", title: "EU summit decision on financing Ukraine and the Czech, Slovak and Hungarian opt-out (enhanced cooperation, Article 20 TEU)", publisher: "OSW", date: 2025-12, tier: 2}
-      - {url: "https://www.tasr.sk/tasr-clanok/TASR:2025121900000273", title: "Fico: Slovakia Rejects EU Council Conclusions on Ukraine (2)", publisher: "TASR (Slovak public agency)", date: 2025-12-19, tier: 3}
-      - {url: "https://www.pravda.com.ua/eng/news/2026/03/08/8024467", title: "Slovak PM says his country will block EUR 90bn EU loan to Ukraine if necessary", publisher: "Ukrainska Pravda", date: 2026-03-08, tier: 3}
-  - to: org-eu
-    layer: action
-    type: incident
-    summary: Slovakia filed an action for annulment at the EU Court of Justice on 24 Apr 2026 against the regulation of 26 Jan 2026 that phases out Russian gas (LNG by end-2026, pipeline gas by 30 Sep 2027) and prepares an oil phase-out, arguing it was passed as trade policy by qualified majority although it is a sanctions-type measure needing unanimity; it asked for an injunction. Hungary filed a similar case on 2 Feb 2026.
-    since: 2026-04-24
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.tasr.sk/tasr-clanok/TASR:2026042800000228", title: "Slovakia Files Lawsuit with Court of Justice of EU over Russian Gas Import Ban", publisher: "TASR (Slovak public agency)", date: 2026-04-28, tier: 3}
-      - {url: "https://biz.liga.net/en/energy/news/slovakia-to-challenge-eu-plan-to-phase-out-russian-gas-in-court", title: "Slovakia to challenge EU plan to phase out Russian gas in court", publisher: "Liga.net", date: 2026-04, tier: 3}
-      - {url: "https://www.budapesttimes.hu/hungary/hungary-challenges-brussels-repowereu-regulation-at-european-court-says-szijjarto/", title: "Hungary challenges Brussels' REPowerEU regulation at European Court, says Szijjarto", publisher: "Budapest Times", date: 2026-02, tier: 3}
-  - to: org-eu
-    layer: action
-    type: incident
-    summary: The Slovak parliament passed the NGO law in April 2025 (donor disclosure and lobbying-style obligations, criticised as 'Russian-style' by tens of thousands of protesters in Bratislava) and the Commission's infringement procedure on the constitutional amendment followed on 21 Nov 2025; the Parliament's conditionality resolution of 29 Apr 2026 cites the government's rule-of-law record.
-    since: 2025-04
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.euronews.com/2025/04/04/thousands-of-slovaks-protest-against-russian-style-law-targeting-ngos", title: "Thousands of Slovaks protest against 'Russian-style' law targeting NGOs", publisher: "Euronews", date: 2025-04-04, tier: 3}
-      - {url: "https://www.ibanet.org/Rule-of-law-Slovakias-NGO-law-is-latest-curb-on-civic-life", title: "Rule of law: Slovakia's NGO law is latest curb on civic life", publisher: "International Bar Association", date: 2025, tier: 3}
-      - {url: "https://www.pravda.com.ua/eng/news/2026/04/29/8032397/", title: "European Parliament supports financial restrictions for Slovakia over actions of PM Fico's government", publisher: "Ukrainska Pravda", date: 2026-04-29, tier: 3}
-  - to: CZE
-    layer: action
-    type: visit
-    summary: Fico and his cabinet travelled to the ninth joint Czech-Slovak government meeting on 31 Mar 2026, the first in three years, where the two prime ministers signed a memorandum on enhanced cooperation; the meetings had resumed after Babis's first foreign visit to Bratislava on 8 Jan 2026.
-    since: 2026-03-31
-    until: 2026-03-31
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://uv.gov.cz/en/media-centrum/aktualne/czech-slovak-government-meeting-reaffirmed-the-strengthening-of-the-partnership-between-the-two-countries-226355/", title: "Czech-Slovak government meeting reaffirmed the strengthening of the partnership between the two countries", publisher: "Government of the Czech Republic", date: 2026-03-31, tier: 1}
-      - {url: "https://newsnow.tasr.sk/slovak-and-czech-premiers-sign-memorandum-on-enhanced-cooperation/", title: "Slovak and Czech premiers sign memorandum on enhanced cooperation", publisher: "TASR (state agency)", date: 2026-03-31, tier: 1}
-  - to: AUT
-    layer: action
-    type: visit
-    summary: Fico hosted Chancellor Stocker and Prime Minister Babis in Bratislava on 10 Feb 2026 for a Slavkov-format meeting ahead of the informal European Council; the three agreed a joint declaration on lowering electricity prices and criticised the EU emissions-trading scheme.
-    since: 2026-02-10
-    until: 2026-02-10
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://uv.gov.cz/en/media-centrum/aktualne/prime-minister-andrej-babis-holds-key-talks-on-eu-priorities-in-austria-and-slovakia-225798/", title: "Prime Minister Andrej Babis holds key talks on EU priorities in Austria and Slovakia", publisher: "Government of the Czech Republic", date: 2026-02-10, tier: 1}
-      - {url: "https://ct24.ceskatelevize.cz/clanek/svet/brifink-babise-po-schuzce-s-ficem-a-stockerem-370193", title: "Babis, Fico and Stocker want to talk about electricity prices at the EU summit", title_original: "Babiš, Fico a Stocker chtějí na summitu EU mluvit o cenách elektřiny", lang: cs, publisher: "Czech Television", date: 2026-02, tier: 3}
-  - to: HUN
-    layer: action
-    type: visit
-    summary: Fico attended the Visegrad summit hosted by Magyar at Godollo on 23 Jun 2026 with Babis and Tusk, the first V4 heads-of-government meeting of the revival; Slovakia took over the annual V4 presidency from Hungary on 1 Jul 2026 under the motto 'V4 for a stronger Europe'.
-    since: 2026-06-23
-    until: 2026-06-23
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.arabnews.com/node/2648345/amp", title: "Leaders of four Central European countries meet in Hungary to reboot regional group", publisher: "AP via Arab News", date: 2026-06-24, tier: 3}
-      - {url: "https://pism.pl/publications/v4-a-stronger-europe-slovakias-presidency-of-the-visegrad-group", title: "V4 a Stronger Europe: Slovakia's presidency of the Visegrad Group", publisher: "PISM", date: 2026-07, tier: 2}
-  - to: POL
-    layer: action
-    type: incident
-    summary: Poland's Sejm speaker Czarzasty visited Bratislava in May 2026 but declined to meet Fico, saying democratic politicians do not meet people who meet Putin; at the same time Tusk, Babis and Fico met at the Yerevan summit (May 2026) and revived the V4 format, and Sikorski said Fico's more constructive line toward Kyiv could help 'forgive' the Moscow visit.
-    since: 2026-05
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://polskieradio.pl/395/7784/Artykul/3688203,polands-parliament-speaker-visits-bratislava-but-declines-to-meet-fico", title: "Poland's parliament speaker visits Bratislava but declines to meet Fico", publisher: "Polskie Radio", date: 2026-05, tier: 3}
-      - {url: "https://visegradinsight.eu/revival-of-visegrad-group-babis-tusk-epc-yerevan/", title: "V4 revival: Babis, Fico and Tusk call Magyar their d'Artagnan", publisher: "Visegrad Insight", date: 2026-05, tier: 2}
-      - {url: "https://euromaidanpress.com/2026/05/08/fico-the-only-eu-leader-heading-to-moscow-for-9-may-to-deliver-zelenskyys-message-to-putin", title: "Fico, the only EU leader heading to Moscow for 9 May, to deliver Zelenskyy's message to Putin", publisher: "Euromaidan Press", date: 2026-05-08, tier: 3}
-  - to: DEU
-    layer: action
-    type: incident
-    summary: Chancellor Merz said on 9 May 2026 that he regretted Fico's Moscow trip and would raise it with him; Fico had announced a Merz visit to Bratislava for 29 May, which the Berlin government told TASR it had not planned.
-    since: 2026-05-09
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.brusselstimes.com/news/2122553/german-chancellor-merz-criticises-slovakian-presence-in-moscow", title: "German Chancellor Merz criticises Slovakian presence in Moscow", publisher: "Brussels Times", date: 2026-05-09, tier: 3}
-      - {url: "https://www.tasr.sk/tasr-clanok/TASR:2026051400000480", title: "German Chancellor Merz Has Not Planned Slovakia Visit, Berlin Says", publisher: "TASR (Slovak public agency)", date: 2026-05-14, tier: 3}
-  - to: ISR
-    layer: action
-    type: visit
-    summary: Foreign Minister Blanar received Israeli Foreign Minister Sa'ar in Bratislava in July 2025 and said Slovakia would reject any proposal to suspend the EU's dialogue with Israel; in February 2025 he had met Sa'ar in Brussels, welcomed the ceasefire and backed the release of hostages, citing the two-state solution and Slovakia's recognition of Palestine.
-    since: 2025-07
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.teraz.sk/slovensko/blanar-sr-bude-odmietat-navrhy-preru/891797-clanok.html", title: "Blanar: Slovakia will reject proposals to interrupt dialogue with Israel", title_original: "Blanár: SR bude odmietať návrhy prerušiť dialóg s Izraelom", lang: sk, publisher: "TASR / Teraz.sk", date: 2025-07, tier: 3}
-      - {url: "https://tasr.sk/tasr-clanok/TASR:2025022400000381", title: "Foreign Affairs Ministry: Slovakia Supports Two-State Solution in Gaza Conflict", publisher: "TASR (Slovak public agency)", date: 2025-02-24, tier: 3}
-  - to: SRB
-    layer: action
-    type: visit
-    summary: Fico and Vucic were the only Western heads of government at Moscow's Victory Day parade on 9 May 2025 and again at Beijing's parade on 3 Sep 2025, which Table.Media read as the two leaders hedging their EU ties.
-    since: 2025-05-09
-    until: 2025-09-03
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://table.media/en/china/feature/military-parade-what-do-fico-and-vucic-want-in-beijing", title: "Military parade: What are Fico and Vucic seeking in Beijing?", publisher: "Table.Media", date: 2025-08, tier: 3}
-      - {url: "https://www.bluewin.ch/en/news/international/xi-jinping-fico-and-vui-march-in-victory-parade-in-moscow-li.2686899", title: "Xi Jinping, Fico and Vucic march in victory parade in Moscow", publisher: "bluewin (wire)", date: 2025-05-09, tier: 3}
-  - to: HRV
-    layer: action
-    type: incident
-    summary: On 16 Feb 2026 Slovakia and Hungary formally asked Croatia to let Russian crude pass through the Adria (JANAF) pipeline during the Druzhba outage; Croatia refused to carry Russian oil and offered non-Russian crude, and on 4 Mar MOL and Slovnaft reported JANAF to the European Commission for abuse of a monopoly position.
-    since: 2026-02-16
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://hydrocarbonprocessing.com/news/2026/02/croatia-must-allow-russian-oil-flows-to-hungary-and-slovakia-mol-says/", title: "Croatia must allow Russian oil flows to Hungary and Slovakia, MOL says", publisher: "Hydrocarbon Processing", date: 2026-02, tier: 3}
-      - {url: "https://pgjonline.com/news/2026/march/druzhba-outage-spurs-eu-complaint-over-russian-crude-transit-via-croatia-pipeline", title: "Druzhba outage spurs EU complaint over Russian crude transit via Croatia pipeline", publisher: "Pipeline & Gas Journal", date: 2026-03, tier: 3}
+- to: UKR
+  layer: objective
+  type: influence_goal
+  summary: Since 10 Jan 2026 Bratislava gives Ukraine no state military aid, sends no troops and takes no part in EU loan guarantees (Fico, Pellegrini and the parliament speaker agreed at Bratislava Castle);
+    it opposes Ukraine's NATO membership and an accelerated EU accession ('Ukraine cannot overtake Montenegro') while supporting accession on the merits (Fico to Zelensky, 2 May 2026). Commercial arms sales
+    are left to companies.
+  since: 2026-01-10
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://euromaidanpress.com/2026/01/12/slovakias-pro-russian-leadership-halts-all-military-aid-to-ukraine-including-weapons-and-eu-loans/
+    title: Slovakia's pro-Russian leadership halts all military aid to Ukraine, including weapons and EU loans
+    publisher: Euromaidan Press
+    date: 2026-01-12
+    tier: 3
+  - url: https://enrsi.stvr.sk/articles/news/419946/planned-parliamentary-session-on-ukraine-aid
+    title: Planned parliamentary session on Ukraine aid
+    publisher: STVR (Slovak public broadcaster)
+    date: 2026-01
+    tier: 3
+  - url: https://unn.ua/en/news/cannot-overtake-montenegro-fico-opposed-accelerating-ukraines-accession-to-the-eu
+    title: 'Cannot overtake Montenegro: Fico opposed accelerating Ukraine''s accession to the EU'
+    publisher: UNN
+    date: 2026
+    tier: 3
+- to: RUS
+  layer: objective
+  type: influence_goal
+  summary: Fico seeks to 'normalise' relations with Moscow inside the EU - secure gas and oil, keep the Gazprom contract to 2034 and open a channel to Putin - under the label 'sovereign foreign policy'.
+    Reuters read the 2025 increase in Russian gas imports as part of that push.
+  since: 2023-10-25
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.pravda.com.ua/eng/news/2025/09/02/7529018/
+    title: Slovakia increases Russian gas imports to normalise relations with Moscow
+    publisher: Reuters via Ukrainska Pravda
+    date: 2025-09-02
+    tier: 3
+  - url: https://www.euronews.com/my-europe/2024/12/22/slovakias-prime-minister-has-controversial-talks-with-putin-in-moscow
+    title: Slovakia's prime minister has controversial talks with Putin in Moscow
+    publisher: Euronews
+    date: 2024-12-22
+    tier: 3
+- to: org-eu
+  layer: objective
+  type: influence_goal
+  summary: Fico's government seeks to keep EU membership and funds while carving national sovereignty out of EU law. The constitutional amendment of 26 Sep 2025 (90 of 99 present) recognises two sexes only
+    and declares Slovak sovereignty over 'cultural and ethical questions' above EU law; the Commission opened infringement proceedings on 21 Nov 2025 for breaching the primacy of EU law.
+  since: 2025-09-26
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://aa.com.tr/en/europe/eu-launches-infringement-procedure-against-slovakia-over-constitutional-amendment/3750268
+    title: EU launches infringement procedure against Slovakia over constitutional amendment
+    publisher: Anadolu Agency
+    date: 2025-11-21
+    tier: 3
+  - url: https://www.aljazeera.com/news/2025/9/26/slovak-constitutional-change-promotes-anti-lgbtq-national-identity
+    title: Slovak constitutional change promotes anti-LGBTQ 'national identity'
+    publisher: Al Jazeera
+    date: 2025-09-26
+    tier: 3
+  - url: https://www.icj.org/wp-content/uploads/2025/10/Joint-open-letter-on-new-Constitutional-amendments-adopted-in-Slovakia.pdf
+    title: Joint open letter on new constitutional amendments adopted in Slovakia
+    publisher: International Commission of Jurists / Amnesty International et al.
+    date: 2025-10
+    tier: 3
+- to: org-nato
+  layer: objective
+  type: influence_goal
+  summary: Bratislava keeps defence spending at about 2% of GDP (EUR 2.88bn in 2026; 2.02% by NATO estimate) and rejects the 5%-by-2035 target ('the state must retain the sovereign right to determine the
+    pace'); the plan is 3.5% only by 2034. On 18 Sep 2026 Fico said he does not want Slovakia in a conflict 'because of some Article 5'.
+  since: 2025-06
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.tasr.sk/tasr-clanok/TASR:2025102100000312
+    title: 'Budget26: 2 Percent of GDP, or More than EUR 2.88 billion, to Go to Defence'
+    publisher: TASR (Slovak public agency)
+    date: 2025-10-21
+    tier: 3
+  - url: https://www.intellinews.com/comment-fico-hints-slovakia-won-t-spend-5-gdp-on-nato-defence-under-his-watch-387572/
+    title: 'COMMENT: Fico hints Slovakia won''t spend 5% GDP on NATO defence under his watch'
+    publisher: bne IntelliNews
+    date: 2025-06
+    tier: 3
+  - url: https://www.pravda.com.ua/eng/news/2026/09/18/8054000/
+    title: Slovakia's Fico says he will do everything to keep country out of war if NATO Article 5 invoked
+    publisher: Ukrainska Pravda
+    date: 2026-09-18
+    tier: 3
+- to: HUN
+  layer: objective
+  type: influence_goal
+  summary: Slovakia keeps the December 2025 penal-code clause that makes public questioning of the post-war settlement (the Benes decrees) an offence; Prime Minister-elect Magyar told Fico on 21 Apr 2026
+    that policy talks depend on repeal of the clause and on no new confiscations, while Fico wanted to talk Druzhba and the joint suit against the EU gas ban.
+  since: 2025-12
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://production.telex.hu/english/2026/04/21/peter-magyar-asked-robert-fico-to-revoke-legislation-referencing-benes-decrees
+    title: Peter Magyar asked Robert Fico to revoke legislation referencing Benes Decrees
+    publisher: Telex
+    date: 2026-04-21
+    tier: 3
+  - url: https://newsnow.tasr.sk/magyar-i-told-fico-slovakia-must-first-repeal-act-threatening-hungarians-with-jail/
+    title: 'Magyar: I told Fico, Slovakia must first repeal act threatening Hungarians with jail'
+    publisher: TASR (Slovak public agency)
+    date: 2026-04
+    tier: 3
+  - url: https://www.osw.waw.pl/en/publikacje/analyses/2026-06-22/enduring-legacy-benes-slovak-hungarian-tensions-a-historical-context
+    title: The enduring legacy of the Benes decrees in Slovak-Hungarian tensions
+    publisher: OSW
+    date: 2026-06-22
+    tier: 2
+- to: USA
+  layer: alignment
+  type: treaty
+  summary: Intergovernmental agreement on the civil nuclear programme signed in Washington by Energy Secretary Wright and Prime Minister Fico on 16 Jan 2026 - a framework for a new state-owned 1,200 MW
+    American unit at Jaslovske Bohunice (Westinghouse the expected vendor; binding contract due 2027, operation by 2041) and for small modular reactors, with export-credit cooperation.
+  since: 2026-01-16
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.energy.gov/node/4855805
+    title: U.S. Energy Secretary and Slovakia's Prime Minister sign agreement to advance U.S.-Slovakia civil nuclear program
+    publisher: US Department of Energy
+    date: 2026-01-16
+    tier: 1
+  - url: https://www.osw.waw.pl/en/publikacje/analyses/2026-01-21/fico-trump-meeting-slovakia-turns-to-us-nuclear-technologies
+    title: 'Fico-Trump meeting: Slovakia turns to US nuclear technologies'
+    publisher: OSW
+    date: 2026-01-21
+    tier: 2
+- to: CHN
+  layer: alignment
+  type: treaty
+  summary: Strategic partnership declared by Xi Jinping and Fico in Beijing on 1 Nov 2024 and set down in a joint statement; implemented through an intergovernmental committee whose first meeting was in
+    Bratislava. Fico also visited Gotion's headquarters in Hefei on 4 Nov 2024.
+  since: 2024-11-01
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.vlada.gov.sk/tlacove-spravy/robert-fico-navsteva-ciny-je-cestou-roka-2024-1
+    title: 'Robert Fico: the visit to China is the trip of the year 2024'
+    title_original: 'Robert Fico: návšteva Číny je cestou roka 2024'
+    lang: sk
+    publisher: Government Office of the Slovak Republic
+    date: 2024-11
+    tier: 1
+  - url: https://newsnow.tasr.sk/pm-fico-meets-li-hongzhong-to-discuss-slovak-chinese-ties/
+    title: PM Fico meets Li Hongzhong to discuss Slovak-Chinese ties
+    publisher: TASR (Slovak public agency)
+    date: 2024-11
+    tier: 3
+- to: inst-gazprom
+  layer: alignment
+  type: treaty
+  summary: SPP (state gas company) has a long-term supply contract with Gazprom valid until 2034 which, Fico says, obliges the Russian side to bring gas to the Slovak border; Bratislava cites it against
+    the EU phase-out and said SPP planned to cover its 2026 domestic supply with Russian pipeline gas under the exemption for long-term contracts.
+  since: 2008-01-01
+  until: 2034-12-31
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.intellinews.com/slovakia-seeks-eu-guarantees-on-russian-gas-phase-out-ahead-of-sanctions-deal-390731
+    title: Slovakia seeks EU guarantees on Russian gas phase-out ahead of sanctions deal
+    publisher: bne IntelliNews
+    date: 2025-07
+    tier: 3
+  - url: https://www.business-humanrights.org/ar/أحدث-الأخبار/slovakia-goes-against-eu-energy-plans-and-will-rely-on-russian-gas-until-2027
+    title: Slovakia goes against EU energy plans and will rely on Russian gas until 2027
+    publisher: Business & Human Rights Resource Centre
+    date: 2025
+    tier: 3
+- to: CZE
+  layer: alignment
+  type: security_guarantee
+  summary: Czechia and Slovakia are co-members of NATO and the EU and share gas-storage responsibility (Dolni Bojanovice) and a memorandum on enhanced cooperation of 31 Mar 2026; the Czech cabinet of Babis
+    and the Slovak cabinet opted out together of the EU Ukraine-loan guarantees (Article 20 TEU, December 2025).
+  since: 2025-12-19
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://uv.gov.cz/en/media-centrum/aktualne/czech-slovak-government-meeting-reaffirmed-the-strengthening-of-the-partnership-between-the-two-countries-226355/
+    title: Czech-Slovak government meeting reaffirmed the strengthening of the partnership between the two countries
+    publisher: Government of the Czech Republic
+    date: 2026-03-31
+    tier: 1
+  - url: https://www.osw.waw.pl/en/publikacja/33685/pdf
+    title: EU summit decision on financing Ukraine and the Czech, Slovak and Hungarian opt-out (enhanced cooperation, Article 20 TEU)
+    publisher: OSW
+    date: 2025-12
+    tier: 2
+- to: RUS
+  layer: dependency
+  type: energy_import
+  summary: Russian gas arrives by TurkStream via Hungary since 1 Feb 2025, after Ukrainian transit ended on 1 Jan 2025 - about 1.7 bcm imported through Hungary in January-August 2025 against a domestic
+    demand of about 4.5 bcm a year. Figures conflict - SPP reported that two-thirds of its gas in 2025 came from non-Russian sources; the TurkStream route cannot carry full demand.
+  value: 1.7
+  unit: bcm_russian_gas_via_hungary_jan_aug_2025
+  since: 2025-02-01
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.pravda.com.ua/eng/news/2025/09/02/7529018/
+    title: Slovakia increases Russian gas imports to normalise relations with Moscow
+    publisher: Reuters via Ukrainska Pravda
+    date: 2025-09-02
+    tier: 3
+  - url: https://www.tasr.sk/tasr-clanok/TASR:2025020600000181
+    title: Slovakia Importing Russian Gas Via TurkStream as of February
+    publisher: TASR (Slovak public agency)
+    date: 2025-02-06
+    tier: 3
+  - url: https://gasprocessingnews.com/news/2025/11/slovakias-gas-importer-takes-two-thirds-of-gas-from-non-russian-sources-this-year
+    title: Slovakia's gas importer takes two-thirds of gas from non-Russian sources this year
+    publisher: Gas Processing News
+    date: 2025-11
+    tier: 3
+  - url: https://pism.pl/publications/slovakia-remains-dependent-on-russian-energy
+    title: Slovakia remains dependent on Russian energy
+    publisher: PISM
+    date: 2025
+    tier: 2
+- to: RUS
+  layer: dependency
+  type: energy_import
+  summary: Crude oil through the Druzhba pipeline for the Slovnaft refinery (MOL group), halted on 27 Jan 2026 and resumed on 23 Apr 2026 after almost three months; imports of Russian crude were worth about
+    USD 2.35bn in 2025 (UN-based trade data). Slovnaft had by then moved almost entirely to non-Russian crude via the Adria pipeline from Croatia; Kyiv blames Russian drones for the outage and Fico says
+    the pipeline was never damaged.
+  value: 2.35
+  unit: USD_bn_crude_oil_imports_from_russia_2025
+  since: 1962-01-01
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://oenergetice.cz/en/oil/slovakia-reports-oil-returning-via-druzhba-fico-speaks-of-geopolitical-game
+    title: Slovakia reports oil returning via Druzhba, Fico speaks of geopolitical game
+    publisher: oEnergetice
+    date: 2026-04
+    tier: 3
+  - url: https://tradingeconomics.com/slovakia/imports/russia/crude-oil-petroleum-bituminous-minerals
+    title: Slovakia imports from Russia of crude oil
+    publisher: Trading Economics (UN Comtrade data)
+    date: 2026
+    tier: 3
+  - url: https://pgjonline.com/news/2026/april/no-deal-on-adria-oil-pipeline-tests-as-slovakia-seeks-alternative-to-druzhba
+    title: No deal on Adria oil pipeline tests as Slovakia seeks alternative to Druzhba
+    publisher: Pipeline & Gas Journal
+    date: 2026-04
+    tier: 3
+- to: org-eu
+  layer: dependency
+  type: investment
+  summary: EU money at stake - the Commission weighed in 2024 freezing part of EUR 12.8bn of cohesion funds and clawing back up to EUR 2.7bn of recovery grants over rule-of-law concerns; the Parliament
+    asked on 29 Apr 2026 (418 votes) for the conditionality mechanism to be used for the first time. No freeze has been decided.
+  value: 12.8
+  unit: EUR_bn_cohesion_funds_weighed_for_freezing
+  since: 2024-09
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://bnnbloomberg.ca/business/international/2024/09/08/eu-weighs-blocking-slovakia-funds-over-democratic-backsliding
+    title: EU weighs blocking Slovakia funds over democratic backsliding
+    publisher: Bloomberg via BNN
+    date: 2024-09-08
+    tier: 3
+  - url: https://www.pravda.com.ua/eng/news/2026/04/29/8032397/
+    title: European Parliament supports financial restrictions for Slovakia over actions of PM Fico's government
+    publisher: Ukrainska Pravda
+    date: 2026-04-29
+    tier: 3
+- to: USA
+  layer: dependency
+  type: arms_supply
+  summary: 14 F-16 C/D Block 70 fighters bought from Lockheed Martin in 2018 (USD 1.6bn contract); the first two handed over on 29 Feb 2024 and ten in Slovakia by December 2025, in service from mid-2026.
+    The US also supplied Black Hawk helicopters (nine UH-60M ordered in 2015; twelve used UH-60L at the end of 2024).
+  value: 1.6
+  unit: USD_bn_f16_block70_contract
+  since: 2018
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.mod.gov.sk/53798-en/slovensko-si-v-usa-oficialne-prevzalo-prve-dve-stihacky-f-16/
+    title: Slovakia takes official delivery of first two F-16 Block 70 fighter jets in USA
+    publisher: Ministry of Defence of the Slovak Republic
+    date: 2024-02-29
+    tier: 1
+  - url: https://militaeraktuell.at/en/already-ten-f-16-c-d-block-70-in-slovakia/
+    title: Already ten F-16 C/D Block 70 in Slovakia
+    publisher: Militaer Aktuell
+    date: 2025-12
+    tier: 3
+  - url: https://www.osw.waw.pl/en/publikacje/analyses/2026-01-21/fico-trump-meeting-slovakia-turns-to-us-nuclear-technologies
+    title: 'Fico-Trump meeting: Slovakia turns to US nuclear technologies'
+    publisher: OSW
+    date: 2026-01-21
+    tier: 2
+- to: ISR
+  layer: dependency
+  type: arms_supply
+  summary: Barak MX integrated air-defence system from Israel Aerospace Industries, EUR 560m, signed in December 2024 as the largest defence deal between the two countries; six batteries to replace the
+    Kub systems and to cover the gap left by the S-300 given to Ukraine, with Blanar calling it 'extremely important from a timing perspective'.
+  value: 560
+  unit: EUR_m_barak_mx_contract
+  since: 2024-12
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.mod.gov.il/en/press-releases/press-room/israel-mod-seals-560-million-euro-agreement-barak-mx-integrated-air-defense-system-produced-by-iai-sold-to-slovakia-in-landmark-agreement
+    title: 'Israel MOD seals EUR 560 million agreement: Barak MX integrated air defense system produced by IAI sold to Slovakia'
+    publisher: Israel Ministry of Defense
+    date: 2024-12
+    tier: 1
+  - url: https://breakingdefense.com/2024/12/israel-signs-583-million-deal-to-sell-barak-air-defense-to-slovakia/
+    title: Israel signs $583 million deal to sell Barak air defense to Slovakia
+    publisher: Breaking Defense
+    date: 2024-12
+    tier: 3
+- to: UKR
+  layer: dependency
+  type: arms_supply
+  summary: Slovak arms firms export EUR 2.4-2.5bn in 2025 (Statistical Office EUR 2.39bn, Finance Ministry EUR 2.54bn), the first time above EUR 2bn; in 2024 heavy artillery ammunition intended for Ukraine
+    was 83% of EUR 1.15bn. The state does not supply from its stocks since January 2026 but owns half of ZVS Holding and licenses the exports, often routed through third countries. Totals cover all customers;
+    Ukraine is the leading buyer of ammunition.
+  value: 2.39
+  unit: EUR_bn_arms_exports_all_customers_2025
+  since: 2022-02-24
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.czdefence.com/article/exports-of-weapons-and-ammunition-from-slovakia-continued-to-grow-in-2025-surpassing-the-two-billion-euro-mark-for-the-first-time-in-history
+    title: Exports of weapons and ammunition from Slovakia continued to grow in 2025, surpassing the two billion euro mark for the first time
+    publisher: CZ Defence
+    date: 2026
+    tier: 3
+  - url: https://cepa.org/article/adapt-to-survive-slovakias-arms-industry-faces-new-reality/
+    title: 'Adapt to survive: Slovakia''s arms industry faces new reality'
+    publisher: CEPA
+    date: 2024
+    tier: 2
+  - url: https://spectator.sme.sk/politics-and-society/c/news-digest-when-it-comes-to-rearmament-slovak-gvt-says-one-thing-and-does-another
+    title: 'News digest: when it comes to rearmament, Slovak government says one thing and does another'
+    publisher: The Slovak Spectator
+    date: 2025-04-30
+    tier: 3
+- to: CHN
+  layer: dependency
+  type: investment
+  summary: Gotion High-Tech's battery-cell plant at Surany with InoBat, described by Fico on 4 Nov 2024 as one of the biggest investments in independent Slovakia's history (EUR 1.2-1.4bn by different sources).
+    Exports to China fell 27.6% in 2025, so the investment is the substance of the relation.
+  value: 1.2
+  unit: EUR_bn_gotion_investment_low_estimate
+  since: 2024-11-04
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://tasr.sk/tasr-clanok/TASR:2024110400000413
+    title: 'Fico: Gotion''s Investment to Be Turning Point in Slovak-Chinese Relationship'
+    publisher: TASR (Slovak public agency)
+    date: 2024-11-04
+    tier: 3
+  - url: https://www.tasr.sk/tasr-clanok/TASR:2026031100000175
+    title: 'Stats: Slovakia Posted Trade-balance Surplus of EUR 2.8 billion Last Year'
+    publisher: TASR (Slovak public agency, Statistical Office data)
+    date: 2026-03-11
+    tier: 3
+- to: DEU
+  layer: dependency
+  type: trade_share
+  summary: Germany is Slovakia's largest export partner and the anchor of its car industry; exports to Germany grew 3.8% in 2025 within total goods exports of EUR 110.9bn (+3.8%) and a EUR 2.8bn surplus;
+    Fico says about 900 German firms operate in Slovakia. The exact share of exports is not in the retrieved sources and is a gap - the value below is the total, not the German share.
+  value: 110.9
+  unit: EUR_bn_total_goods_exports_2025
+  since: 2025
+  until: null
+  last_verified: 2026-10-12
+  confidence: C
+  sources:
+  - url: https://www.tasr.sk/tasr-clanok/TASR:2026031100000175
+    title: 'Stats: Slovakia Posted Trade-balance Surplus of EUR 2.8 billion Last Year'
+    publisher: TASR (Slovak public agency, Statistical Office data)
+    date: 2026-03-11
+    tier: 3
+  - url: https://www.tasr.sk/tasr-clanok/TASR:2026051400000480
+    title: German Chancellor Merz Has Not Planned Slovakia Visit, Berlin Says
+    publisher: TASR (Slovak public agency)
+    date: 2026-05-14
+    tier: 3
+- to: RUS
+  layer: action
+  type: visit
+  summary: Fico flew to Moscow on 22 Dec 2024 for talks with Putin on the expiring Ukrainian gas transit, the first meeting of the two since 2016 and an event that started the 2025 protest wave in Slovakia;
+    he said Putin confirmed Russia's readiness to keep supplying Slovakia.
+  since: 2024-12-22
+  until: 2024-12-22
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.euronews.com/my-europe/2024/12/22/slovakias-prime-minister-has-controversial-talks-with-putin-in-moscow
+    title: Slovakia's prime minister has controversial talks with Putin in Moscow
+    publisher: Euronews
+    date: 2024-12-22
+    tier: 3
+  - url: https://intellinews.com/slovakia-s-fico-in-surprise-visit-to-putin-in-moscow-359597
+    title: Slovakia's Fico in surprise visit to Putin in Moscow
+    publisher: bne IntelliNews
+    date: 2024-12-22
+    tier: 3
+- to: RUS
+  layer: action
+  type: visit
+  summary: Fico was the only EU leader at Moscow's Victory Day parade on 9 May 2025 (with Vucic) and met Putin; Estonia, Latvia and Lithuania refused his plane overflight. On 2 Sep 2025 he met Putin again
+    in Beijing.
+  since: 2025-05-09
+  until: 2025-09-02
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.bluewin.ch/en/news/international/xi-jinping-fico-and-vui-march-in-victory-parade-in-moscow-li.2686899
+    title: Xi Jinping, Fico and Vucic march in victory parade in Moscow
+    publisher: bluewin (wire)
+    date: 2025-05-09
+    tier: 3
+  - url: https://www.pravda.com.ua/eng/news/2025/09/02/7528957/
+    title: Slovak PM meets with Putin in Beijing
+    publisher: Ukrainska Pravda
+    date: 2025-09-02
+    tier: 3
+- to: RUS
+  layer: action
+  type: visit
+  summary: Fico went to Moscow again on 9 May 2026, the only EU leader there, did not attend the parade, laid flowers at the Tomb of the Unknown Soldier, met Putin briefly and passed on Zelensky's readiness
+    to meet him 'in any format'; Putin told him to call. Merz said he regretted the trip and Costa said the EU saw no sign of Russian readiness for dialogue.
+  since: 2026-05-09
+  until: 2026-05-09
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.teraz.sk/najnovsie/fico-odovzdal-putinovi-odkaz-od-zelensk/961631-clanok.html
+    title: Fico passed Zelensky's message to Putin
+    title_original: Fico odovzdal Putinovi odkaz od Zelenského
+    lang: sk
+    publisher: TASR / Teraz.sk
+    date: 2026-05-09
+    tier: 3
+  - url: https://euromaidanpress.com/2026/05/08/fico-the-only-eu-leader-heading-to-moscow-for-9-may-to-deliver-zelenskyys-message-to-putin
+    title: Fico, the only EU leader heading to Moscow for 9 May, to deliver Zelenskyy's message to Putin
+    publisher: Euromaidan Press
+    date: 2026-05-08
+    tier: 3
+  - url: https://www.intellinews.com/eu-slams-slovakia-s-fico-for-moscow-victory-day-trip-441873/
+    title: EU slams Slovakia's Fico for Moscow Victory Day trip
+    publisher: bne IntelliNews
+    date: 2026-05
+    tier: 3
+- to: CHN
+  layer: action
+  type: visit
+  summary: Fico visited China twice - 31 Oct-5 Nov 2024 (Beijing, Hefei, Shanghai; met Xi on 1 Nov) and, as the only EU leader, the 3 Sep 2025 military parade in Beijing with talks with Xi on 4 Sep; Poland
+    and Czechia sent no one.
+  since: 2024-10-31
+  until: 2025-09-04
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://table.media/en/china/feature/military-parade-what-do-fico-and-vucic-want-in-beijing
+    title: 'Military parade: What are Fico and Vucic seeking in Beijing?'
+    publisher: Table.Media
+    date: 2025-08
+    tier: 3
+  - url: https://www.czdefence.com/article/china-shows-its-strength-visegrad-fractures-what-the-beijing-military-parade-revealed
+    title: 'China shows its strength, Visegrad fractures: what the Beijing military parade revealed'
+    publisher: CZ Defence
+    date: 2025-09
+    tier: 3
+  - url: https://www.vlada.gov.sk/tlacove-spravy/robert-fico-navsteva-ciny-je-cestou-roka-2024-1
+    title: 'Robert Fico: the visit to China is the trip of the year 2024'
+    title_original: 'Robert Fico: návšteva Číny je cestou roka 2024'
+    lang: sk
+    publisher: Government Office of the Slovak Republic
+    date: 2024-11
+    tier: 1
+- to: USA
+  layer: action
+  type: visit
+  summary: Fico met Trump at Mar-a-Lago on 18 Jan 2026, the day after signing the nuclear agreement in Washington; they discussed nuclear cooperation and Ukraine's ceasefire prospects. In February 2026
+    Foreign Minister Blanar attended the first session of the Board of Peace in Washington as an observer; Slovakia has not accepted membership.
+  since: 2026-01-18
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.intellinews.com/fico-visits-trump-in-mar-a-lago-slovakia-signs-nuclear-deal-with-us-420759/
+    title: Fico visits Trump in Mar-a-Lago, Slovakia signs nuclear deal with US
+    publisher: bne IntelliNews
+    date: 2026-01
+    tier: 3
+  - url: https://www.osw.waw.pl/en/publikacje/analyses/2026-01-21/fico-trump-meeting-slovakia-turns-to-us-nuclear-technologies
+    title: 'Fico-Trump meeting: Slovakia turns to US nuclear technologies'
+    publisher: OSW
+    date: 2026-01-21
+    tier: 2
+  - url: https://www.tasr.sk/tasr-clanok/TASR:2026022100000050
+    title: Blanar on the Board of Peace session in Washington (observer, not a member)
+    publisher: TASR (Slovak public agency)
+    date: 2026-02-21
+    tier: 3
+- to: org-eu
+  layer: action
+  type: sanction
+  summary: Slovakia blocked the EU's 18th sanctions package six times in June-July 2025, demanding written guarantees on gas prices, supply and transit fees after the 2027 phase-out, and released its veto
+    on 17 Jul 2025 after the Commission gave written assurances. Under EU rules the gas phase-out passes by qualified majority while sanctions need unanimity.
+  since: 2025-06-30
+  until: 2025-07-17
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.pravda.com.ua/eng/news/2025/07/10/7521158
+    title: 'Fico: Slovakia will not support 18th package of sanctions against Russia without compensation for gas transit loss'
+    publisher: Ukrainska Pravda
+    date: 2025-07-10
+    tier: 3
+  - url: https://www.kyivindependent.com/slovakia-agrees-to-approve-eus-18th-sanctions-package-against-russia-fico-says
+    title: Slovakia agrees to approve EU's 18th sanctions package against Russia, Fico says
+    publisher: Kyiv Independent
+    date: 2025-07-17
+    tier: 3
+  - url: https://www.intellinews.com/slovakia-seeks-eu-guarantees-on-russian-gas-phase-out-ahead-of-sanctions-deal-390731
+    title: Slovakia seeks EU guarantees on Russian gas phase-out ahead of sanctions deal
+    publisher: bne IntelliNews
+    date: 2025-07
+    tier: 3
+- to: UKR
+  layer: action
+  type: incident
+  summary: After the Druzhba pipeline went offline on 27 Jan 2026, Fico halted emergency electricity to Ukraine and threatened to veto the 20th sanctions package; on 22 Apr he said he would lift the veto
+    only when oil flowed again and would no longer object to the EUR 90bn loan, and oil reached Slovakia on 23 Apr. Kyiv blamed Russian drones; Bratislava and Budapest accused Kyiv of delaying repairs.
+  since: 2026-02
+  until: 2026-04-22
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.pravda.com.ua/eng/news/2026/03/29/8027690
+    title: Slovak PM threatens to block EU's 20th Russia sanctions package amid Druzhba pipeline dispute
+    publisher: Ukrainska Pravda
+    date: 2026-03-29
+    tier: 3
+  - url: https://interfax.com/newsroom/top-stories/117273/
+    title: 'Fico: Slovakia lifts veto on 20th package only when Druzhba supply resumes'
+    publisher: Interfax
+    date: 2026-04-22
+    tier: 3
+  - url: https://www.aljazeera.com/news/2026/4/29/ukraine-targets-druzhba-pipeline-to-sever-russian-oil-influence-in-eu
+    title: Ukraine targets Druzhba pipeline to sever Russian oil, influence in EU
+    publisher: Al Jazeera
+    date: 2026-04-29
+    tier: 3
+  - url: https://www.yahoo.com/news/articles/slovakia-halts-electricity-ukraine-amid-175833104.html
+    title: Slovakia halts electricity for Ukraine amid Russian oil row
+    publisher: Yahoo News
+    date: 2026-02
+    tier: 3
+- to: UKR
+  layer: action
+  type: visit
+  summary: Fico met Zelensky in Uzhhorod on 5 Sep 2025 (energy and the Druzhba strikes, days after Beijing) and at the European Political Community summit in Yerevan on 4 May 2026, where Zelensky wrote
+    that Fico supports Ukraine's EU accession; Foreign Minister Sybiha reported Blanar's assurances on opening the first negotiating cluster. The two agreed to hold a joint government meeting, not confirmed
+    as held.
+  since: 2025-09-05
+  until: 2026-05-04
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.ukrinform.net/rubric-polytics/4096238-zelensky-holds-talks-with-fico.html
+    title: Zelensky holds talks with Fico
+    publisher: Ukrinform
+    date: 2025-09-05
+    tier: 3
+  - url: https://news.liga.net/en/amp/politics/news/we-are-ready-to-share-our-experience-zelenskyy-writes-that-fico-supports-ukraines-accession-to-the-eu
+    title: '''We are ready to share our experience'': Zelenskyy writes that Fico supports Ukraine''s accession to the EU'
+    publisher: Liga.net
+    date: 2026-05-02
+    tier: 3
+  - url: https://www.tasr.sk/tasr-clanok/TASR:2025090100000477
+    title: On His Return from China Premier Fico Is Set to Meet Zelenskyy on Friday
+    publisher: TASR (Slovak public agency)
+    date: 2025-09-01
+    tier: 3
+- to: org-eu
+  layer: action
+  type: incident
+  summary: At the 18-19 Dec 2025 European Council Slovakia for the first time refused to support the conclusions on Ukraine, and the EUR 90bn loan was built through enhanced cooperation (Article 20 TEU)
+    so that Slovakia, Hungary and Czechia carry no guarantee obligation. On 8 Mar 2026 Fico said Slovakia would block the loan if necessary and on 21 Mar that Bratislava might follow Hungary.
+  since: 2025-12-19
+  until: 2026-04-22
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.pravda.com.ua/eng/news/2025/12/19/8012550
+    title: 'EUR 90bn for Ukraine: EU summit approves exemption for Hungary, Slovakia and Czechia'
+    publisher: Ukrainska Pravda
+    date: 2025-12-19
+    tier: 3
+  - url: https://www.osw.waw.pl/en/publikacja/33685/pdf
+    title: EU summit decision on financing Ukraine and the Czech, Slovak and Hungarian opt-out (enhanced cooperation, Article 20 TEU)
+    publisher: OSW
+    date: 2025-12
+    tier: 2
+  - url: https://www.tasr.sk/tasr-clanok/TASR:2025121900000273
+    title: 'Fico: Slovakia Rejects EU Council Conclusions on Ukraine (2)'
+    publisher: TASR (Slovak public agency)
+    date: 2025-12-19
+    tier: 3
+  - url: https://www.pravda.com.ua/eng/news/2026/03/08/8024467
+    title: Slovak PM says his country will block EUR 90bn EU loan to Ukraine if necessary
+    publisher: Ukrainska Pravda
+    date: 2026-03-08
+    tier: 3
+- to: org-eu
+  layer: action
+  type: incident
+  summary: Slovakia filed an action for annulment at the EU Court of Justice on 24 Apr 2026 against the regulation of 26 Jan 2026 that phases out Russian gas (LNG by end-2026, pipeline gas by 30 Sep 2027)
+    and prepares an oil phase-out, arguing it was passed as trade policy by qualified majority although it is a sanctions-type measure needing unanimity; it asked for an injunction. Hungary filed a similar
+    case on 2 Feb 2026.
+  since: 2026-04-24
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.tasr.sk/tasr-clanok/TASR:2026042800000228
+    title: Slovakia Files Lawsuit with Court of Justice of EU over Russian Gas Import Ban
+    publisher: TASR (Slovak public agency)
+    date: 2026-04-28
+    tier: 3
+  - url: https://biz.liga.net/en/energy/news/slovakia-to-challenge-eu-plan-to-phase-out-russian-gas-in-court
+    title: Slovakia to challenge EU plan to phase out Russian gas in court
+    publisher: Liga.net
+    date: 2026-04
+    tier: 3
+  - url: https://www.budapesttimes.hu/hungary/hungary-challenges-brussels-repowereu-regulation-at-european-court-says-szijjarto/
+    title: Hungary challenges Brussels' REPowerEU regulation at European Court, says Szijjarto
+    publisher: Budapest Times
+    date: 2026-02
+    tier: 3
+- to: org-eu
+  layer: action
+  type: incident
+  summary: The Slovak parliament passed the NGO law in April 2025 (donor disclosure and lobbying-style obligations, criticised as 'Russian-style' by tens of thousands of protesters in Bratislava) and the
+    Commission's infringement procedure on the constitutional amendment followed on 21 Nov 2025; the Parliament's conditionality resolution of 29 Apr 2026 cites the government's rule-of-law record.
+  since: 2025-04
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.euronews.com/2025/04/04/thousands-of-slovaks-protest-against-russian-style-law-targeting-ngos
+    title: Thousands of Slovaks protest against 'Russian-style' law targeting NGOs
+    publisher: Euronews
+    date: 2025-04-04
+    tier: 3
+  - url: https://www.ibanet.org/Rule-of-law-Slovakias-NGO-law-is-latest-curb-on-civic-life
+    title: 'Rule of law: Slovakia''s NGO law is latest curb on civic life'
+    publisher: International Bar Association
+    date: 2025
+    tier: 3
+  - url: https://www.pravda.com.ua/eng/news/2026/04/29/8032397/
+    title: European Parliament supports financial restrictions for Slovakia over actions of PM Fico's government
+    publisher: Ukrainska Pravda
+    date: 2026-04-29
+    tier: 3
+- to: CZE
+  layer: action
+  type: visit
+  summary: Fico and his cabinet travelled to the ninth joint Czech-Slovak government meeting on 31 Mar 2026, the first in three years, where the two prime ministers signed a memorandum on enhanced cooperation;
+    the meetings had resumed after Babis's first foreign visit to Bratislava on 8 Jan 2026.
+  since: 2026-03-31
+  until: 2026-03-31
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://uv.gov.cz/en/media-centrum/aktualne/czech-slovak-government-meeting-reaffirmed-the-strengthening-of-the-partnership-between-the-two-countries-226355/
+    title: Czech-Slovak government meeting reaffirmed the strengthening of the partnership between the two countries
+    publisher: Government of the Czech Republic
+    date: 2026-03-31
+    tier: 1
+  - url: https://newsnow.tasr.sk/slovak-and-czech-premiers-sign-memorandum-on-enhanced-cooperation/
+    title: Slovak and Czech premiers sign memorandum on enhanced cooperation
+    publisher: TASR (state agency)
+    date: 2026-03-31
+    tier: 1
+- to: AUT
+  layer: action
+  type: visit
+  summary: Fico hosted Chancellor Stocker and Prime Minister Babis in Bratislava on 10 Feb 2026 for a Slavkov-format meeting ahead of the informal European Council; the three agreed a joint declaration
+    on lowering electricity prices and criticised the EU emissions-trading scheme.
+  since: 2026-02-10
+  until: 2026-02-10
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://uv.gov.cz/en/media-centrum/aktualne/prime-minister-andrej-babis-holds-key-talks-on-eu-priorities-in-austria-and-slovakia-225798/
+    title: Prime Minister Andrej Babis holds key talks on EU priorities in Austria and Slovakia
+    publisher: Government of the Czech Republic
+    date: 2026-02-10
+    tier: 1
+  - url: https://ct24.ceskatelevize.cz/clanek/svet/brifink-babise-po-schuzce-s-ficem-a-stockerem-370193
+    title: Babis, Fico and Stocker want to talk about electricity prices at the EU summit
+    title_original: Babiš, Fico a Stocker chtějí na summitu EU mluvit o cenách elektřiny
+    lang: cs
+    publisher: Czech Television
+    date: 2026-02
+    tier: 3
+- to: HUN
+  layer: action
+  type: visit
+  summary: Fico attended the Visegrad summit hosted by Magyar at Godollo on 23 Jun 2026 with Babis and Tusk, the first V4 heads-of-government meeting of the revival; Slovakia took over the annual V4 presidency
+    from Hungary on 1 Jul 2026 under the motto 'V4 for a stronger Europe'.
+  since: 2026-06-23
+  until: 2026-06-23
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.arabnews.com/node/2648345/amp
+    title: Leaders of four Central European countries meet in Hungary to reboot regional group
+    publisher: AP via Arab News
+    date: 2026-06-24
+    tier: 3
+  - url: https://pism.pl/publications/v4-a-stronger-europe-slovakias-presidency-of-the-visegrad-group
+    title: 'V4 a Stronger Europe: Slovakia''s presidency of the Visegrad Group'
+    publisher: PISM
+    date: 2026-07
+    tier: 2
+- to: POL
+  layer: action
+  type: incident
+  summary: Poland's Sejm speaker Czarzasty visited Bratislava in May 2026 but declined to meet Fico, saying democratic politicians do not meet people who meet Putin; at the same time Tusk, Babis and Fico
+    met at the Yerevan summit (May 2026) and revived the V4 format, and Sikorski said Fico's more constructive line toward Kyiv could help 'forgive' the Moscow visit.
+  since: 2026-05
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://polskieradio.pl/395/7784/Artykul/3688203,polands-parliament-speaker-visits-bratislava-but-declines-to-meet-fico
+    title: Poland's parliament speaker visits Bratislava but declines to meet Fico
+    publisher: Polskie Radio
+    date: 2026-05
+    tier: 3
+  - url: https://visegradinsight.eu/revival-of-visegrad-group-babis-tusk-epc-yerevan/
+    title: 'V4 revival: Babis, Fico and Tusk call Magyar their d''Artagnan'
+    publisher: Visegrad Insight
+    date: 2026-05
+    tier: 2
+  - url: https://euromaidanpress.com/2026/05/08/fico-the-only-eu-leader-heading-to-moscow-for-9-may-to-deliver-zelenskyys-message-to-putin
+    title: Fico, the only EU leader heading to Moscow for 9 May, to deliver Zelenskyy's message to Putin
+    publisher: Euromaidan Press
+    date: 2026-05-08
+    tier: 3
+- to: DEU
+  layer: action
+  type: incident
+  summary: Chancellor Merz said on 9 May 2026 that he regretted Fico's Moscow trip and would raise it with him; Fico had announced a Merz visit to Bratislava for 29 May, which the Berlin government told
+    TASR it had not planned.
+  since: 2026-05-09
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.brusselstimes.com/news/2122553/german-chancellor-merz-criticises-slovakian-presence-in-moscow
+    title: German Chancellor Merz criticises Slovakian presence in Moscow
+    publisher: Brussels Times
+    date: 2026-05-09
+    tier: 3
+  - url: https://www.tasr.sk/tasr-clanok/TASR:2026051400000480
+    title: German Chancellor Merz Has Not Planned Slovakia Visit, Berlin Says
+    publisher: TASR (Slovak public agency)
+    date: 2026-05-14
+    tier: 3
+- to: ISR
+  layer: action
+  type: visit
+  summary: Foreign Minister Blanar received Israeli Foreign Minister Sa'ar in Bratislava in July 2025 and said Slovakia would reject any proposal to suspend the EU's dialogue with Israel; in February 2025
+    he had met Sa'ar in Brussels, welcomed the ceasefire and backed the release of hostages, citing the two-state solution and Slovakia's recognition of Palestine.
+  since: 2025-07
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.teraz.sk/slovensko/blanar-sr-bude-odmietat-navrhy-preru/891797-clanok.html
+    title: 'Blanar: Slovakia will reject proposals to interrupt dialogue with Israel'
+    title_original: 'Blanár: SR bude odmietať návrhy prerušiť dialóg s Izraelom'
+    lang: sk
+    publisher: TASR / Teraz.sk
+    date: 2025-07
+    tier: 3
+  - url: https://tasr.sk/tasr-clanok/TASR:2025022400000381
+    title: 'Foreign Affairs Ministry: Slovakia Supports Two-State Solution in Gaza Conflict'
+    publisher: TASR (Slovak public agency)
+    date: 2025-02-24
+    tier: 3
+- to: SRB
+  layer: action
+  type: visit
+  summary: Fico and Vucic were the only Western heads of government at Moscow's Victory Day parade on 9 May 2025 and again at Beijing's parade on 3 Sep 2025, which Table.Media read as the two leaders hedging
+    their EU ties.
+  since: 2025-05-09
+  until: 2025-09-03
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://table.media/en/china/feature/military-parade-what-do-fico-and-vucic-want-in-beijing
+    title: 'Military parade: What are Fico and Vucic seeking in Beijing?'
+    publisher: Table.Media
+    date: 2025-08
+    tier: 3
+  - url: https://www.bluewin.ch/en/news/international/xi-jinping-fico-and-vui-march-in-victory-parade-in-moscow-li.2686899
+    title: Xi Jinping, Fico and Vucic march in victory parade in Moscow
+    publisher: bluewin (wire)
+    date: 2025-05-09
+    tier: 3
+- to: HRV
+  layer: action
+  type: incident
+  summary: On 16 Feb 2026 Slovakia and Hungary formally asked Croatia to let Russian crude pass through the Adria (JANAF) pipeline during the Druzhba outage; Croatia refused to carry Russian oil and offered
+    non-Russian crude, and on 4 Mar MOL and Slovnaft reported JANAF to the European Commission for abuse of a monopoly position.
+  since: 2026-02-16
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://hydrocarbonprocessing.com/news/2026/02/croatia-must-allow-russian-oil-flows-to-hungary-and-slovakia-mol-says/
+    title: Croatia must allow Russian oil flows to Hungary and Slovakia, MOL says
+    publisher: Hydrocarbon Processing
+    date: 2026-02
+    tier: 3
+  - url: https://pgjonline.com/news/2026/march/druzhba-outage-spurs-eu-complaint-over-russian-crude-transit-via-croatia-pipeline
+    title: Druzhba outage spurs EU complaint over Russian crude transit via Croatia pipeline
+    publisher: Pipeline & Gas Journal
+    date: 2026-03
+    tier: 3
+- layer: alignment
+  type: treaty
+  summary: Memorandum on Enhanced Cooperation signed by Babiš and Fico at the ninth joint meeting of the two governments (Nova Horka, 31 Mar 2026), the first in three years; it follows Babiš's first foreign
+    visit as prime minister, to Bratislava on 8 Jan 2026, and a separate agreement on shared gas-storage responsibility at Dolni Bojanovice.
+  since: 2026-03-31
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://uv.gov.cz/en/media-centrum/aktualne/czech-slovak-government-meeting-reaffirmed-the-strengthening-of-the-partnership-between-the-two-countries-226355/
+    title: Czech-Slovak government meeting reaffirmed the strengthening of the partnership between the two countries
+    publisher: Government of the Czech Republic
+    date: 2026-03-31
+    tier: 1
+  - url: https://newsnow.tasr.sk/slovak-and-czech-premiers-sign-memorandum-on-enhanced-cooperation/
+    title: Slovak and Czech premiers sign memorandum on enhanced cooperation
+    publisher: TASR (state agency)
+    date: 2026-03-31
+    tier: 1
+  to: CZE
+  mirrored_from: CZE
