@@ -1,0 +1,447 @@
+from: ARM
+relations:
+  # ---------- objective ----------
+  - to: AZE
+    layer: objective
+    type: recognition_sought
+    summary: "Armenia seeks mutual recognition of the existing borders and a treaty with no territorial claims (17-article Agreement on the Establishment of Peace and Inter-State Relations, text agreed 13 Mar 2025, initialled in Washington 8 Aug 2025). Azerbaijan will sign only after Armenia removes the preamble reference to the 1990 Declaration of Independence by referendum."
+    since: 2025-03-13
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.aa.com.tr/en/politics/azerbaijan-armenia-share-text-of-initialed-peace-deal/3656700", title: "Azerbaijan, Armenia share text of initialed peace deal", publisher: "Anadolu Agency", date: 2025-08-11, tier: 3}
+      - {url: "https://panarmenian.net/m/eng/news/320325", title: "Armenia accepts Azerbaijan's last two proposals (13 March 2025)", publisher: "PanARMENIAN", date: 2025-03-13, tier: 3}
+      - {url: "https://jamestown.org/constitutional-delay-in-armenia-threatens-to-derail-peace-talks-with-azerbaijan/", title: "Constitutional delay in Armenia threatens to derail peace talks with Azerbaijan", publisher: "Jamestown Foundation", date: 2025, tier: 2}
+  - to: org-eu
+    layer: objective
+    type: membership_goal
+    summary: "Parliament passed a law on 26 Mar 2025 (64 votes, all Civil Contract) declaring the start of Armenia's EU accession process, from a 60,000-signature civic initiative; the government says it is not a membership application and that the process needs a referendum. Moscow says EU membership means leaving the EAEU."
+    since: 2025-03-26
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.intellinews.com/armenian-parliament-passes-bill-on-launching-eu-accession-process-373543/", title: "Armenian parliament passes bill on launching EU accession process", publisher: "bne IntelliNews", date: 2025-03-26, tier: 3}
+      - {url: "https://kyivindependent.com/armenias-parliament-passes-bill-on-eu-accession-process/", title: "Armenia's parliament passes bill on EU accession process", publisher: "Kyiv Independent", date: 2025-03-26, tier: 3}
+      - {url: "https://jam-news.net/armenia-to-begin-eu-accession-process-as-parliament-backs-civil-society-initiative/", title: "Armenia to begin EU accession process as parliament backs civil society initiative", publisher: "JAMnews", date: 2025-03, tier: 3}
+  - to: RUS
+    layer: objective
+    type: influence_goal
+    summary: "Armenia aims to reduce Russian influence without a break - CSTO frozen and not to be unfrozen, no Russian border guards at Zvartnots, the Gyumri base no longer defended as essential - while staying in the EAEU. Carnegie reads Putin as now treating Pashinyan 'as a partner, albeit a problematic one, not as an ally'."
+    since: 2024-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://carnegieendowment.org/russia-eurasia/politika/2026/06/russia-armenia-post-election", title: "Russia-Armenia after the election", publisher: "Carnegie Politika", date: 2026-06-11, tier: 2}
+      - {url: "https://meduza.io/en/news/2026/06/05/we-ll-decide-and-we-ll-leave-armenian-leader-says-of-russian-led-defense-bloc", title: "'We'll decide and we'll leave', Armenian leader says of Russian-led defense bloc", publisher: "Meduza", date: 2026-06-05, tier: 3}
+
+  # ---------- alignment ----------
+  - to: AZE
+    layer: alignment
+    type: treaty
+    summary: "Peace treaty initialled by the foreign ministers at the White House on 8 Aug 2025, text published 11 Aug; it enters into force on exchange of ratification notifications and is not signed. The Minsk Group was dissolved on 1 Sep 2025 at the parties' joint request. As of October 2026 the preamble referendum has no date; Azerbaijan's envoy says Armenia must still 'remove an obstacle'."
+    since: 2025-08-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.aa.com.tr/en/politics/azerbaijan-armenia-share-text-of-initialed-peace-deal/3656700", title: "Azerbaijan, Armenia share text of initialed peace deal", publisher: "Anadolu Agency", date: 2025-08-11, tier: 3}
+      - {url: "https://jam-news.net/dissolution-of-the-osce-minsk-group/", title: "OSCE Minsk Group disbanded: Armenia debates whether it is 'progress or a loss'", publisher: "JAMnews", date: 2025-09, tier: 3}
+      - {url: "https://jam-news.net/news-in-azerbaijan-armenia-georgia-5-9-october-2026/", title: "News in Azerbaijan, Armenia, Georgia, 5-9 October 2026", publisher: "JAMnews", date: 2026-10-09, tier: 3}
+  - to: USA
+    layer: alignment
+    type: treaty
+    summary: "Charter on Strategic Partnership signed by Blinken and Mirzoyan on 14 Jan 2025 (commission; four pillars of economic, security and defence, democratic and people-to-people cooperation; nuclear 123 agreement talks; customs and border team; Armenia joins the anti-ISIS coalition). Not a security guarantee."
+    since: 2025-01-14
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.mfa.am/en/press-releases/2025/01/14/the/13032", title: "Armenia and the United States sign the Charter on Strategic Partnership", publisher: "Ministry of Foreign Affairs of Armenia", date: 2025-01-14, tier: 1}
+      - {url: "https://www.globalsecurity.org/military/library/news/2025/01/mil-250114-state01.htm", title: "Signing of the U.S.-Armenia Strategic Partnership Charter (State Department remarks)", publisher: "US Department of State (via GlobalSecurity)", date: 2025-01-14, tier: 1}
+      - {url: "https://armenianweekly.com/2025/01/15/armenia-and-u-s-sign-strategic-partnership-charter/", title: "Armenia and U.S. sign strategic partnership charter", publisher: "Armenian Weekly", date: 2025-01-15, tier: 3}
+  - to: org-eu
+    layer: alignment
+    type: treaty
+    summary: "Comprehensive and Enhanced Partnership Agreement (2017, deliberately without a free-trade part to fit EAEU obligations), the Strategic Agenda for the EU-Armenia Partnership (Dec 2025) and the Connectivity Partnership signed at the first EU-Armenia summit in Yerevan on 5 May 2026."
+    since: 2017-11-24
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://euneighbourseast.eu/news/latest-news/eu-and-armenia-sign-connectivity-partnership-strengthen-economic-ties-and-deepen-security-cooperation/", title: "EU and Armenia sign Connectivity Partnership, strengthen economic ties and deepen security cooperation", publisher: "EU Neighbours East (EU)", date: 2026-05, tier: 1}
+      - {url: "https://armenpress.am/en/article/1238602/amp", title: "2025 a pivotal year for Armenia-EU partnership, Foreign Ministry highlights key developments", publisher: "Armenpress (state agency, official statement)", date: 2025-12, tier: 1}
+      - {url: "https://icds.ee/en/armenia-after-the-election-diversification-without-decoupling-from-russia/", title: "Armenia after the election (CEPA of 2017 without a free-trade component)", publisher: "ICDS", date: 2026-06-18, tier: 2}
+  - to: CHN
+    layer: alignment
+    type: treaty
+    summary: "Strategic partnership declared by Xi Jinping and Pashinyan at Tianjin on 31 Aug 2025, with a joint statement and several cooperation documents; Armenia reaffirms one-China and Beijing supports Armenia's SCO bid (dialogue partner today)."
+    since: 2025-08-31
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://eng.yidaiyilu.gov.cn/p/080QRGSP.html", title: "(SCO Tianjin Summit) China, Armenia establish strategic partnership", publisher: "Xinhua", date: 2025-08-31, tier: 1}
+      - {url: "https://www.fmprc.gov.cn/eng/xw/zyxw/202508/t20250831_11699058.html", title: "Xi Jinping meets with Prime Minister Nikol Pashinyan of Armenia", publisher: "Ministry of Foreign Affairs of the PRC", date: 2025-08-31, tier: 1}
+  - to: RUS
+    layer: alignment
+    type: security_guarantee
+    summary: "Russia's guarantee to Armenia (CSTO Art. 4 and bilateral treaty, base in Gyumri) is formally intact but frozen in practice - Yerevan has suspended CSTO participation since Feb 2024, the bloc did not act in 2021-23, and the Secretariat says Armenia remains a member de jure. Russia's Foreign Minister said in June 2026 Armenia had not paid its dues for two years and charter provisions to suspend its vote were being considered."
+    since: 1992
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://jam-news.net/armenias-participation-in-the-csto-is-frozen/", title: "'Belated response': Armenia freezes participation in Russia-led CSTO bloc", publisher: "JAMnews", date: 2024-02, tier: 3}
+      - {url: "https://meduza.io/en/news/2026/06/05/we-ll-decide-and-we-ll-leave-armenian-leader-says-of-russian-led-defense-bloc", title: "'We'll decide and we'll leave', Armenian leader says of Russian-led defense bloc", publisher: "Meduza", date: 2026-06-05, tier: 3}
+
+  # ---------- dependency ----------
+  - to: RUS
+    layer: dependency
+    type: energy_import
+    summary: "Gazprom Armenia (100% Gazprom) is the monopoly gas seller; deliveries 2.3 bcm in 2025 (2.6 bcm in 2022). The base price is USD 165 per 1,000 m3, frozen to July 2032 under the 2022 intergovernmental agreement; Putin gave USD 177.5 in April 2026. Russia notified on 27 May 2026 that it may denounce the 2013 gas, oil-products and diamonds agreement if Armenia joins the EU."
+    value: 2.3
+    unit: bcm_russian_gas_2025
+    since: 2014
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://tass.com/economy/2137475/amp", title: "FACTBOX: What is known about Russian gas supplies to Armenia", publisher: "TASS (state agency, official statements)", date: 2026-05, tier: 1}
+      - {url: "https://arka.am/en/news/economy/pashinyan-rules-out-gas-price-increase-in-armenia/", title: "Pashinyan rules out gas price increase in Armenia", publisher: "ARKA", date: 2026-05, tier: 3}
+      - {url: "https://www.interfax.com/newsroom/top-stories/117709/", title: "Russian Foreign Ministry on gas agreement denunciation (22 May 2026 digest)", publisher: "Interfax", date: 2026-05, tier: 3}
+  - to: RUS
+    layer: dependency
+    type: trade_share
+    summary: "Russia is Armenia's largest trading partner, ahead of China (12.5%) and the EU (11.8%). Bilateral trade hit a record USD 12bn in 2024, driven by re-exports of Western goods, then fell by about half; Armenian exports to Russia rose from USD 840m (2021) to almost USD 3bn (2025)."
+    value: 0.355
+    unit: share_of_foreign_trade
+    since: 2022
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Figures differ: ICDS gives 35.5% of foreign trade; Russia's Security Council secretary Shoigu says 36% (unverified against Armstat). The ICDS figure is kept because it comes from an analyst with the three-partner comparison."
+    sources:
+      - {url: "https://icds.ee/en/armenia-after-the-election-diversification-without-decoupling-from-russia/", title: "Armenia after the election: diversification without decoupling from Russia", publisher: "ICDS", date: 2026-06-18, tier: 2}
+      - {url: "https://carnegieendowment.org/russia-eurasia/politika/2026/06/russia-armenia-post-election", title: "Russia-Armenia after the election (export figures)", publisher: "Carnegie Politika", date: 2026-06-11, tier: 2}
+      - {url: "https://arka.am/en/news/economy/shoigu-calls-cooperation-with-russia-the-driving-force-of-armenia-s-economic-development/", title: "Shoigu calls cooperation with Russia the driving force of Armenia's economic development", publisher: "ARKA", date: 2026, tier: 3}
+  - to: RUS
+    layer: dependency
+    type: remittances
+    summary: "Russia is the main source of money sent home. Shoigu claims USD 3.9bn a year (about two thirds of the total and 13% of GDP); the World Bank's net inflow figure for 2025 is lower (USD 714m total net, 52% from Russia in late 2025), because the series differ."
+    value: 3.9
+    unit: usd_bn_remittances_from_russia_claimed_2025
+    since: 2022
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    claims:
+      - by: RUS
+        text: USD 3.9bn from Russia, about two thirds of all remittances, about 13% of GDP (Shoigu)
+        source: https://arka.am/en/news/economy/shoigu-calls-cooperation-with-russia-the-driving-force-of-armenia-s-economic-development/
+    note: "Contested: the claim is an interested party's figure; the World Bank net-inflow series (USD 714m in 2025, 52% from Russia) was read in a secondary report and not reconciled. Treat the value as the Russian claim, not an Armenian statistic."
+    sources:
+      - {url: "https://arka.am/en/news/economy/shoigu-calls-cooperation-with-russia-the-driving-force-of-armenia-s-economic-development/", title: "Shoigu calls cooperation with Russia the driving force of Armenia's economic development", publisher: "ARKA", date: 2026, tier: 3}
+  - to: RUS
+    layer: dependency
+    type: arms_supply
+    summary: "Russia's share of Armenian arms procurement fell from over 96% before 2022 to about 10% (Security Council secretary Grigoryan, June 2024), replaced by India and France."
+    value: 0.10
+    unit: share_of_arms_procurement_2024
+    since: 2022
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "SIPRI's 2011-2020 series showed Russia at 93.7% of Armenian imports (IDSA); the 2024 figure is an Armenian official's statement, not a SIPRI measurement."
+    sources:
+      - {url: "https://euro-sd.com/2025/05/articles/44516/diversifying-armenias-defence-shifting-alliances-and-military-modernisation/", title: "Diversifying Armenia's defence: shifting alliances and military modernisation", publisher: "European Security & Defence", date: 2025-05, tier: 3}
+      - {url: "https://idsa.in/?p=84335", title: "The India-Armenia defence partnership: strategic drivers", publisher: "Manohar Parrikar IDSA", date: 2024, tier: 2}
+  - to: RUS
+    layer: dependency
+    type: military_presence
+    summary: "The 102nd Russian base in Gyumri, about 3,000 troops, under a 2010 agreement valid to 2044; Putin said in September 2026 Russia is ready to withdraw 'even tomorrow'; Pashinyan said Armenia 'will not object' and that the base adds nothing to Armenia's security. Russian border guards remain on the Turkish and Iranian borders (they left Zvartnots on 31 Jul 2024)."
+    value: 3000
+    unit: russian_troops_102nd_base
+    since: 1995
+    until: 2044
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.dailysabah.com/world/europe/armenia-would-not-oppose-closure-of-russian-base-pashinyan/amp", title: "Armenia would not oppose closure of Russian base: Pashinyan", publisher: "Daily Sabah", date: 2026-09-17, tier: 3}
+      - {url: "https://eurasianet.org/russia-signs-base-lease-extension-with-armenia", title: "Russia signs base lease extension with Armenia", publisher: "Eurasianet", date: 2010, tier: 3}
+  - to: RUS
+    layer: dependency
+    type: energy_import
+    summary: "Metsamor (the only nuclear plant, 30-40% of Armenian electricity) runs on Russian fuel and Rosatom; Rosatom said on 8 Oct 2026 that Unit 2 is safe to operate until 2031, with a life extension discussed to 2036. Moscow also refuses to hand over the South Caucasus Railway concession (Russian, to 2038)."
+    value: 0.35
+    unit: share_of_electricity_from_metsamor
+    since: 1995
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "ICDS gives 30-40% of electricity; the midpoint 35% is stored as the value."
+    sources:
+      - {url: "https://icds.ee/en/armenia-after-the-election-diversification-without-decoupling-from-russia/", title: "Armenia after the election (Metsamor, South Caucasus Railway)", publisher: "ICDS", date: 2026-06-18, tier: 2}
+      - {url: "https://jam-news.net/news-in-azerbaijan-armenia-georgia-5-9-october-2026/", title: "News in Azerbaijan, Armenia, Georgia, 5-9 October 2026 (Rosatom, 8 Oct)", publisher: "JAMnews", date: 2026-10-09, tier: 3}
+  - to: IRN
+    layer: dependency
+    type: energy_import
+    summary: "The 2004 gas-for-electricity swap, extended in August 2023 to 2030: Iranian gas comes via the Tabriz-Meghri pipeline in exchange for Armenian electricity. A new roadmap (July 2026) covers grid integration, Meghri hydropower and a rebuilt barter; the 400 kV line is awaiting finance."
+    value: 2030
+    unit: swap_agreement_end_year
+    since: 2004
+    until: 2030
+    last_verified: 2026-10-12
+    confidence: B
+    note: "No volume was read: the value is the year the extended agreement runs to, not a quantity. A volume row needs the Armenian energy ministry or PSRC data."
+    sources:
+      - {url: "https://arka.am/en/news/technology/armenia-and-iran-discuss-construction-of-overhead-power-line-and-gas-for-electricity-exchange", title: "Armenia and Iran discuss construction of overhead power line and gas for electricity exchange", publisher: "ARKA", date: 2026, tier: 3}
+      - {url: "https://armenpress.am/en/article/1256695/amp", title: "Armenia, Iran have capacity to expand gas-for-electricity swap programme, Khudatyan says", publisher: "Armenpress", date: 2026, tier: 3}
+      - {url: "https://tass.com/economy/2137475/amp", title: "FACTBOX: What is known about Russian gas supplies to Armenia (Iranian swap since 2004)", publisher: "TASS (state agency, official statements)", date: 2026-05, tier: 1}
+  - to: IND
+    layer: dependency
+    type: arms_supply
+    summary: "India supplies Pinaka rockets, Konkurs missiles, mortars, MArG and ATAGS howitzers, Akash air defence and anti-drone systems; India's Ministry of Defence confirmed USD 600m paid by the start of FY2024-25, experts estimate USD 1-2bn of contracts. Armenia is among the top three destinations of Indian defence exports."
+    value: 600
+    unit: usd_million_paid_by_fy2024_25
+    since: 2022-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://euro-sd.com/2025/05/articles/44516/diversifying-armenias-defence-shifting-alliances-and-military-modernisation/", title: "Diversifying Armenia's defence: shifting alliances and military modernisation", publisher: "European Security & Defence", date: 2025-05, tier: 3}
+      - {url: "https://idsa.in/?p=84335", title: "The India-Armenia defence partnership: strategic drivers", publisher: "Manohar Parrikar IDSA", date: 2024, tier: 2}
+  - to: FRA
+    layer: dependency
+    type: arms_supply
+    summary: "First arms agreement October 2023; June 2024 contract for 36 Caesar 155 mm howitzers (delivery due by September 2025); 50 Bastion armoured vehicles, three GM200 radars and Mistral missiles in the packages; Defence Cooperation Programme for 2025 agreed December 2024. Financial terms are not published."
+    value: 36
+    unit: caesar_howitzers_contracted
+    since: 2023-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://euro-sd.com/2025/05/articles/44516/diversifying-armenias-defence-shifting-alliances-and-military-modernisation/", title: "Diversifying Armenia's defence: shifting alliances and military modernisation", publisher: "European Security & Defence", date: 2025-05, tier: 3}
+  - to: org-eu
+    layer: dependency
+    type: investment
+    summary: "EUR 270m under the EU Resilience and Growth Plan for Armenia 2024-27; the EU also announced aid and a temporary duty exemption for Armenian fruit and vegetables after Russia's bans (May 2026). EU is 11.8% of foreign trade; Armenian-origin exports to the EU up almost 70% (economy minister, Oct 2026)."
+    value: 270
+    unit: eur_million_resilience_growth_plan_2024_27
+    since: 2024
+    until: 2027
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://icds.ee/en/armenia-after-the-election-diversification-without-decoupling-from-russia/", title: "Armenia after the election (EUR 270m plan; EU 11.8% of trade)", publisher: "ICDS", date: 2026-06-18, tier: 2}
+      - {url: "https://carnegieendowment.org/russia-eurasia/politika/2026/06/russia-armenia-post-election", title: "Russia-Armenia after the election (EU duty exemption)", publisher: "Carnegie Politika", date: 2026-06-11, tier: 2}
+      - {url: "https://jam-news.net/news-in-azerbaijan-armenia-georgia-5-9-october-2026/", title: "News in Azerbaijan, Armenia, Georgia, 5-9 October 2026 (exports to the EU)", publisher: "JAMnews", date: 2026-10-09, tier: 3}
+  - to: org-eu
+    layer: dependency
+    type: military_presence
+    summary: "The EU Mission in Armenia (EUMA), unarmed and civilian, observes the Azerbaijan border; its mandate was extended to 19 Feb 2027 (budget over EUR 44m for 2025-27) and the May 2026 summit welcomed an EU Partnership Mission to follow. Baku demands its withdrawal. EPF assistance of EUR 30m began to be delivered in 2026."
+    value: 225
+    unit: euma_personnel_approx
+    since: 2023-02-20
+    until: 2027-02-19
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Sources differ: about 225 staff in one source, 165 observers plus 44 Armenian staff in another. The higher round figure is kept."
+    sources:
+      - {url: "https://www.eeas.europa.eu/delegations/armenia/armenia-council-extends-mandate-eu-civilian-mission-two-years_en", title: "Armenia: Council extends the mandate of the EU civilian mission for two years", publisher: "European External Action Service", date: 2025-01-30, tier: 1}
+      - {url: "https://oc-media.org/eu-approves-extension-of-armenia-monitoring-mission-until-2027", title: "EU approves extension of Armenia monitoring mission until 2027", publisher: "OC Media", date: 2025-01-30, tier: 3}
+      - {url: "https://www.balcanicaucaso.org/en/cp_article/eu-armenia-ever-closer/", title: "EU-Armenia, ever closer (EU Partnership Mission, EPF EUR 30m)", publisher: "OBC Transeuropa", date: 2026-05, tier: 3}
+  - to: GEO
+    layer: dependency
+    type: trade_share
+    summary: "Georgia is Armenia's land route to the Black Sea and Europe; in April 2026 Pashinyan called rail through Georgia a reliable alternative until the line through Azerbaijan reopens, and from 24 May 2026 the Akhalkalaki-Kars rail link through Georgia opened to Armenian trade with Turkey."
+    value: 1
+    unit: of_four_land_borders_open_for_commercial_transit_other_than_iran
+    since: 1992
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "No share of trade was read. The value only marks that Georgia is the single commercial gateway besides Iran; replace with Armstat transit data when read."
+    sources:
+      - {url: "https://1tv.ge/lang/en/news/armenian-pm-rail-exports-through-georgia-remain-viable-until-trump-route-rail-link-with-azerbaijan-is-reopened/", title: "Armenian PM: rail exports through Georgia remain viable until Trump Route rail link with Azerbaijan is reopened", publisher: "Georgian Public Broadcaster (1TV)", date: 2026-04, tier: 3}
+      - {url: "https://arka.am/en/news/economy/pashinyan-announced-the-opening-of-the-akhalkalaki-kars-railway-for-freight-transport-from-armenia/", title: "Pashinyan announced the opening of the Akhalkalaki-Kars railway for freight transport from Armenia", publisher: "ARKA", date: 2026-05-24, tier: 3}
+
+  # ---------- action ----------
+  - to: AZE
+    layer: action
+    type: incident
+    summary: "The September 2023 offensive (19-20 Sep) ended the Republic of Artsakh in a day; more than 100,000 people (about 80% of the enclave's Armenians) fled to Armenia in ten days and the UNHCR launched an Armenia refugee plan on 17 Oct 2023. Former Karabakh leaders were later sentenced in Baku (life terms on 5 Feb 2026; Ruben Vardanyan 20 years on 17 Feb 2026); 19 Armenians remain in Azerbaijani prisons."
+    since: 2023-09-19
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://unhcr.org/sites/default/files/2023-10/30-armenia.pdf", title: "Armenia Refugee Response Plan, October 2023", publisher: "UNHCR", date: 2023-10, tier: 1}
+      - {url: "https://www.cbc.ca/1.6983642", title: "More than 80% of ethnic Armenian population has fled Nagorno-Karabakh", publisher: "CBC", date: 2023-09-29, tier: 3}
+      - {url: "https://oc-media.org/ruben-vardanyan-sentenced-to-20-years-in-prison", title: "Ruben Vardanyan sentenced to 20 years in prison", publisher: "OC Media", date: 2026-02-17, tier: 3}
+  - to: AZE
+    layer: action
+    type: agreement
+    summary: "On 21 Oct 2025 Aliyev lifted Azerbaijan's transit ban on cargo to Armenia, the first cargo being Kazakh grain; Russian grain, fertiliser and timber and Azerbaijani fuel have since moved by rail. Azerbaijan confirmed in early 2026 that Armenian goods can use its railway. The Dilijan meeting of 14 Jun 2026 (Hajiyev-Grigoryan) set the next round in Azerbaijan."
+    since: 2025-10-21
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.eng.kavkaz-uzel.eu/articles/69513", title: "Azerbaijan lifts transit restrictions on cargo to Armenia", publisher: "Caucasian Knot", date: 2025-10-21, tier: 3}
+      - {url: "https://www.trend.az/azerbaijan/politics/4169777.html", title: "Azerbaijan transits another batch of grain to Armenia", publisher: "Trend (Azerbaijani state-aligned)", date: 2025, tier: 3}
+      - {url: "https://jamestown.org/armenias-election-results-telling-for-azerbaijan-peace-process/", title: "Armenia's election results telling for Azerbaijan peace process (Dilijan, 14 Jun 2026)", publisher: "Jamestown Foundation", date: 2026-06, tier: 2}
+  - to: AZE
+    layer: action
+    type: incident
+    summary: "In October 2026 an Azerbaijani serviceman crossed into Syunik, shot and wounded a woman and was detained ('Shaki incident'); Pashinyan called it a criminal incident, rejected calls to swap him for Armenian prisoners in Baku, and said he would serve part of his sentence in Armenia; Defence Minister Papikyan admitted shortcomings; the Strong Armenia faction demanded his resignation."
+    since: 2026-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://jam-news.net/news-in-azerbaijan-armenia-georgia-5-9-october-2026/", title: "News in Azerbaijan, Armenia, Georgia, 5-9 October 2026", publisher: "JAMnews", date: 2026-10-09, tier: 3}
+      - {url: "https://armenpress.am/en/video/1262234", title: "Pashinyan addresses incident involving Azerbaijani serviceman who crossed into Armenia", publisher: "Armenpress (state agency, official statement)", date: 2026-10, tier: 1}
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "Washington summit on 8 Aug 2025 created TRIPP (43 km in Syunik linking mainland Azerbaijan to Nakhchivan); on 26 May 2026 Rubio and Mirzoyan signed a Charter on Comprehensive Strategic Partnership and a critical-minerals memorandum and initialled the TRIPP framework agreement (TRIPP Development Company, a 74% US / 26% Armenia concession under discussion, 49 or 99 years, land remains Armenian). Ratification was under way in June; construction is expected from autumn-winter 2026."
+    since: 2025-08-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Sources differ on whether the TRIPP framework was 'signed' or 'initialled' on 26 May 2026; the stricter 'initialled' is used, with Pashinyan saying signature would follow within a month. The 74/26 split is from an interim framework document reported by Caucasian Knot."
+    sources:
+      - {url: "https://arka.am/en/news/politics/armenia-and-the-united-states-initialed-agreements-on-the-tripp-project-rare-earth-metals-and-strate/", title: "Armenia and the United States initialed agreements on the TRIPP project, rare earth metals, and strategic partnership", publisher: "ARKA", date: 2026-05-26, tier: 3}
+      - {url: "https://arka.am/en/news/politics/armenia-ready-to-quickly-advance-cooperation-with-the-us-on-the-tripp-project-pashinyan/", title: "Armenia ready to quickly advance cooperation with the US on the TRIPP project - Pashinyan", publisher: "ARKA", date: 2026-06-18, tier: 3}
+      - {url: "https://amp.eng.kavkaz-uzel.eu/articles/71965", title: "The TRIPP Implementation Framework defines the powers and benefits of Armenia and the United States", publisher: "Caucasian Knot", date: 2025-12, tier: 3}
+      - {url: "https://jamestown.org/armenias-election-results-telling-for-azerbaijan-peace-process/", title: "Armenia's election results telling for Azerbaijan peace process", publisher: "Jamestown Foundation", date: 2026-06, tier: 2}
+  - to: USA
+    layer: action
+    type: visit
+    summary: "Vice-President Vance visited Yerevan in February 2026 and Secretary of State Rubio on 26 May 2026, two weeks before the election; Trump endorsed Pashinyan online and congratulated him on 11 Jun 2026."
+    since: 2026-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://icds.ee/en/armenia-after-the-election-diversification-without-decoupling-from-russia/", title: "Armenia after the election (Vance, Rubio, Trump endorsement)", publisher: "ICDS", date: 2026-06-18, tier: 2}
+      - {url: "https://jamestown.org/armenias-election-results-telling-for-azerbaijan-peace-process/", title: "Armenia's election results telling for Azerbaijan peace process (Trump and Erdogan congratulations)", publisher: "Jamestown Foundation", date: 2026-06, tier: 2}
+  - to: org-eu
+    layer: action
+    type: visit
+    summary: "First EU-Armenia summit, Yerevan, 5 May 2026: Connectivity Partnership signed, first visa-liberalisation progress report handed over, Frontex arrangement started, EU Partnership Mission welcomed, first EUR 30m of European Peace Facility deliveries. On 5 Oct 2026 two further EU-Armenia documents were adopted in Granada and on 7 Oct Commissioner Kos said the EU is 'ready to support Armenia as it moves towards the EU'."
+    since: 2026-05-05
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://euneighbourseast.eu/news/latest-news/eu-and-armenia-sign-connectivity-partnership-strengthen-economic-ties-and-deepen-security-cooperation/", title: "EU and Armenia sign Connectivity Partnership, strengthen economic ties and deepen security cooperation", publisher: "EU Neighbours East (EU)", date: 2026-05, tier: 1}
+      - {url: "https://www.balcanicaucaso.org/en/cp_article/eu-armenia-ever-closer/", title: "EU-Armenia, ever closer", publisher: "OBC Transeuropa", date: 2026-05, tier: 3}
+      - {url: "https://jam-news.net/news-in-azerbaijan-armenia-georgia-5-9-october-2026/", title: "News in Azerbaijan, Armenia, Georgia, 5-9 October 2026 (Kos, 7 Oct)", publisher: "JAMnews", date: 2026-10-09, tier: 3}
+  - to: RUS
+    layer: action
+    type: expulsion
+    summary: "Russian FSB border guards left Yerevan's Zvartnots airport on 31 Jul 2024, a day before Armenia's 1 August deadline (requested in March 2024); Russian guards stay on the Turkish and Iranian borders. Moscow called the move 'irreparable damage' to relations."
+    since: 2024-07-31
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://eurasianet.org/russian-border-guards-gone-from-yerevan-airport", title: "Russian border guards gone from Yerevan airport", publisher: "Eurasianet", date: 2024-08, tier: 3}
+      - {url: "https://jam-news.net/russian-border-guards-leave-zvartnots/", title: "Russian border guards leaving the airport strengthens Armenia's sovereignty (opinion)", publisher: "JAMnews", date: 2024-08, tier: 3}
+  - to: RUS
+    layer: action
+    type: sanction
+    summary: "Before the June 2026 election Russia banned Armenian flowers, fruit, vegetables, alcohol and dairy and raised inspections (a few percent of exports); Pashinyan said the measures breach EAEU rules. The EU answered with aid and a temporary duty exemption for Armenian fruit and vegetables. Russia lifted earlier cognac bans in 2023-24."
+    since: 2026-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://carnegieendowment.org/russia-eurasia/politika/2026/06/russia-armenia-post-election", title: "Russia-Armenia after the election", publisher: "Carnegie Politika", date: 2026-06-11, tier: 2}
+      - {url: "https://icds.ee/en/armenia-after-the-election-diversification-without-decoupling-from-russia/", title: "Armenia after the election (Russian import restrictions)", publisher: "ICDS", date: 2026-06-18, tier: 2}
+  - to: RUS
+    layer: action
+    type: incident
+    summary: "The Karapetyan affair and the Church: Samvel Karapetyan (Moscow-based Tashir Group, Strong Armenia leader) was arrested in June 2025 for calls to overthrow the constitutional order, moved to house arrest on 30 Dec 2025 and tried from April 2026; parliament backed nationalisation of his Electric Networks of Armenia in July 2025; Putin said in April 2026 Russia's 'friends' should be allowed to run. Archbishops arrested in 2025, the Catholicos indicted in 2026; Patriarch Kirill's delegation was received at Etchmiadzin on 4 Sep 2026."
+    since: 2025-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.eng.kavkaz-uzel.eu/articles/72047", title: "Karapetyan: house arrest and the Electric Networks case", publisher: "Caucasian Knot", date: 2026-03, tier: 3}
+      - {url: "https://icds.ee/en/armenia-after-the-election-diversification-without-decoupling-from-russia/", title: "Armenia after the election (Karapetyan, Church, Putin's 'friends')", publisher: "ICDS", date: 2026-06-18, tier: 2}
+      - {url: "https://mirrorspectator.com/2026/04/14/court-scraps-catholicos-travel-ban/", title: "Court scraps Catholicos travel ban", publisher: "Armenian Mirror-Spectator (Azatutyun)", date: 2026-04-14, tier: 3}
+      - {url: "https://christianpost.com/news/armenia-arrests-bishop-12-clergy-amid-church-pm-feud.html", title: "Armenia arrests bishop, 12 clergymen as feud between church leaders, PM deepens", publisher: "Christian Post", date: 2025-06, tier: 4}
+  - to: RUS
+    layer: action
+    type: incident
+    summary: "Rhetorical escalation after the election - Medvedev (5 Oct 2026) that Armenia 'could become a second Ukraine', Kalugin (7 Oct) that leaving the alliance means losing discounted gas, Shoigu accusing Yerevan of seeking to sever ties and cooperate with NATO; Moscow's foreign ministry on 7 Oct accused Yerevan of shifting responsibility for the Gyumri base. Putin and Pashinyan spoke by phone on 8 Oct; Peskov said no date is set for a Pashinyan visit to Moscow."
+    since: 2026-10-05
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://jam-news.net/news-in-azerbaijan-armenia-georgia-5-9-october-2026/", title: "News in Azerbaijan, Armenia, Georgia, 5-9 October 2026", publisher: "JAMnews", date: 2026-10-09, tier: 3}
+      - {url: "https://carnegieendowment.org/russia-eurasia/politika/2026/06/russia-armenia-post-election", title: "Russia-Armenia after the election (Pashinyan's promised Moscow trip)", publisher: "Carnegie Politika", date: 2026-06-11, tier: 2}
+  - to: org-eaeu
+    layer: action
+    type: incident
+    summary: "A joint EAEU statement (reported 29 May 2026) called on Armenia to hold a referendum on EU membership; at the EAEU council on 5 Oct 2026 Pashinyan said Armenia remains committed to cooperation but that no significant progress had been made in the negotiations, and Lukashenko warned against leaving the common market."
+    since: 2026-05-29
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://carnegieendowment.org/russia-eurasia/politika/2026/06/russia-armenia-post-election", title: "Russia-Armenia after the election (EAEU statement, Reuters 29 May 2026)", publisher: "Carnegie Politika", date: 2026-06-11, tier: 2}
+      - {url: "https://jam-news.net/news-in-azerbaijan-armenia-georgia-5-9-october-2026/", title: "News in Azerbaijan, Armenia, Georgia, 5-9 October 2026 (EAEU council, 5 Oct)", publisher: "JAMnews", date: 2026-10-09, tier: 3}
+  - to: org-csto
+    layer: action
+    type: incident
+    summary: "Armenia froze its participation in the CSTO (Pashinyan to France 24 in Feb 2024; 'at all levels' in Aug 2024), said in April 2026 no unfreezing is planned and, in the 2026-31 government programme debate, that it will not return within five years and would be pleased to be expelled. Russia's foreign minister said in June 2026 that dues were two years in arrears."
+    since: 2024-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://jam-news.net/armenias-participation-in-the-csto-is-frozen/", title: "'Belated response': Armenia freezes participation in Russia-led CSTO bloc", publisher: "JAMnews", date: 2024-02, tier: 3}
+      - {url: "https://euromaidanpress.com/2024/09/01/armenia-freezes-participation-in-csto-russias-nato-equivalent-pm-pashinyan-confirms/", title: "Armenia freezes participation in CSTO, Russia's NATO equivalent, PM Pashinyan confirms", publisher: "Euromaidan Press", date: 2024-09-01, tier: 3}
+      - {url: "https://meduza.io/en/news/2026/06/05/we-ll-decide-and-we-ll-leave-armenian-leader-says-of-russian-led-defense-bloc", title: "'We'll decide and we'll leave', Armenian leader says of Russian-led defense bloc", publisher: "Meduza", date: 2026-06-05, tier: 3}
+  - to: TUR
+    layer: action
+    type: agreement
+    summary: "Normalisation without diplomatic relations - the Margara checkpoint opened for humanitarian cargo to Lebanon on 12-22 Jun 2026 (people and goods otherwise not allowed); the Akhalkalaki-Kars rail link through Georgia opened to Armenian trade on 24 May 2026; a Gyumri-Kars working group met on 28 Apr 2026; Erdogan telephoned Pashinyan and congratulated him on the June 2026 election. The land border is closed since 1993."
+    since: 2026-04-28
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://panarmenian.net/m/eng/news/334128", title: "Border checkpoint opens for humanitarian shipments", publisher: "PanARMENIAN", date: 2026-06-11, tier: 3}
+      - {url: "https://oc-media.org/turkish-rail-routes-open-for-armenian-cargo/", title: "Turkish rail routes open for Armenian cargo", publisher: "OC Media", date: 2026-05, tier: 3}
+      - {url: "https://jamestown.org/armenias-election-results-telling-for-azerbaijan-peace-process/", title: "Armenia's election results telling for Azerbaijan peace process (Erdogan congratulation)", publisher: "Jamestown Foundation", date: 2026-06, tier: 2}
+  - to: IRN
+    layer: action
+    type: visit
+    summary: "Foreign minister Mirzoyan visited Tehran on 5-6 Oct 2026 (met Pezeshkian and Ghalibaf; strategic cooperation agreement said to be near; Iran 'satisfied' with TRIPP, a call with Araghchi followed on 9 Oct); the Meghri-Nordooz bridge and Kajaran-Agarak road, built by an Iranian consortium, are the physical links of the North-South corridor."
+    since: 2026-10-05
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://jam-news.net/news-in-azerbaijan-armenia-georgia-5-9-october-2026/", title: "News in Azerbaijan, Armenia, Georgia, 5-9 October 2026", publisher: "JAMnews", date: 2026-10-09, tier: 3}
+      - {url: "https://www.globalsecurity.org/wmd/library/news/iran/2025/08/iran-250819-presstv01.htm", title: "Iran and Armenia agree to widen a bridge and build a second one at the border", publisher: "Press TV (state broadcaster, official statement)", date: 2025-08-19, tier: 1}
+  - to: UKR
+    layer: action
+    type: visit
+    summary: "Zelensky visited Yerevan in May 2026 for the European Political Community summit; Pashinyan said Armenia has sent humanitarian aid to Ukraine and 'is not Russia's ally on Ukraine'. Russia summoned the Armenian ambassador on 7 May 2026."
+    since: 2026-05
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://ukranews.com/en/news/1150650-armenia-not-russia-s-ally-in-ukraine-pashinyan", title: "Armenia is not Russia's ally on Ukraine - Pashinyan", publisher: "Ukranews", date: 2026-05, tier: 3}
+      - {url: "https://ukranews.com/en/amp/news/1150664-russia-expresses-outrage-to-armenian-ambassador-over-zelenskyy-s-visit-to-the-country-s-capital", title: "Russia expresses outrage to Armenian ambassador over Zelenskyy's visit", publisher: "Ukranews", date: 2026-05-07, tier: 3}

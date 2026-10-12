@@ -1,9 +1,175 @@
 id: UKR
 name: Ukraine
+short: Ukraine
 type: state
 coords: [30.52, 50.45]
 iso2: ua
 wikipedia: https://en.wikipedia.org/wiki/Ukraine
 seat: Kyiv
-regions: ['eastern-europe']
-card: stub
+regions: ['east-europe-black-sea']
+card: full
+tier: protagonist
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Survive as a sovereign state inside its internationally recognised borders: end the war without ceding the Donbas it still holds, without accepting neutrality or a change of government, and without recognising the annexations. Moscow's price for talks is the withdrawal of Ukrainian forces from the rest of Donetsk; Kyiv has refused every version of it, and the General Assembly (107-12-51, 24 Feb 2026) again wrote territorial integrity into the text of a ceasefire call."
+      confidence: A
+      sources:
+        - {url: "https://www.ukrinform.net/rubric-polytics/4120909-kremlin-suspends-trilateral-peace-talks-until-afu-withdraws-from-donbas.html", title: "Kremlin suspends trilateral peace talks until AFU withdraws from Donbas", publisher: "Ukrinform", date: 2026, tier: 3}
+        - {url: "https://rubryka.com/en/2026/01/23/vyvedennya-ukrayinskyh-vijsk/", title: "Russia demands Ukrainian troop withdrawal from Donbas ahead of Abu Dhabi negotiations", publisher: "Rubryka", date: 2026-01-23, tier: 3}
+        - {url: "https://euromaidanpress.com/2026/02/25/unga-backs-ukraines-peace-resolution-with-107-votes-rejects-us-push-to-drop-territorial-integrity/", title: "UNGA backs Ukraine's peace resolution with 107 votes, rejects US push to drop territorial integrity", publisher: "Euromaidan Press", date: 2026-02-25, tier: 3}
+        - {url: "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-february-19-2026", title: "Russian Offensive Campaign Assessment, February 19, 2026 (Kremlin aims: neutrality, limits on the army, a pro-Russian government)", publisher: "Institute for the Study of War / Critical Threats", date: 2026-02-19, tier: 2}
+    - rank: 2
+      text: "Obtain a security guarantee that outlasts any ceasefire: NATO membership as the long-term aim (the 2024 Washington text calls the path 'irreversible' but offers no invitation), and in the meantime the Coalition of the Willing's Paris Declaration of 6 Jan 2026 (a multinational force after the fighting, a US-led ceasefire monitoring mechanism), which enters into force only after a ceasefire that Russia has not accepted."
+      confidence: B
+      sources:
+        - {url: "https://www.nato.int/cps/en/natohq/official_texts_227678.htm", title: "Washington Summit Declaration (para. 16: irreversible path, invitation 'when Allies agree and conditions are met')", publisher: "NATO", date: 2024-07-10, tier: 1}
+        - {url: "https://euromaidanpress.com/2026/01/06/paris-declaration-signed/", title: "Paris Declaration: Ukraine, US, allies sign most comprehensive security deal yet", publisher: "Euromaidan Press", date: 2026-01-06, tier: 3}
+        - {url: "https://razomua.media/en/news/politika/koalitsiya-pohodyla-harantiyi-dlya-ukrayiny-bez-pidpysu-rosiyi-i-bez-chitkoyi-daty-nabrannya-chynnosti", title: "Coalition agreed on guarantees for Ukraine - without Russia's signature and without a clear entry-into-force date", publisher: "Razom", date: 2026-01, tier: 3}
+    - rank: 3
+      text: "Join the European Union: candidate since 23 June 2022, negotiations formally opened in 2024; the fundamentals cluster (15 Jun 2026) and external relations (14 Jul 2026) are open, clusters 2 and 3 were blocked by Hungary until early October 2026 and clusters 4 and 5 are still to come. Brussels says it wants all clusters open by year-end; Hungary and others reject a fast-track."
+      confidence: B
+      sources:
+        - {url: "https://www.eeas.europa.eu/delegations/moldova/european-council-conclusions-membership-applications-ukraine-republic-moldova-and-georgia-23-june_en", title: "European Council conclusions on the membership applications of Ukraine, Moldova and Georgia, 23 June 2022", publisher: "European Council / EEAS", date: 2022-06-23, tier: 1}
+        - {url: "https://www.eurointegration.com.ua/eng/news/2026/09/29/7246508/", title: "EU to try to overcome Hungary's veto on negotiating clusters 2 and 3 for Ukraine on Tuesday", publisher: "European Pravda", date: 2026-09-29, tier: 3}
+        - {url: "https://www.euronews.com/2026/10/07/hungary-set-to-lift-veto-on-ukraines-eu-membership-talks", title: "Hungary set to lift veto on Ukraine's EU membership talks", publisher: "Euronews", date: 2026-10-07, tier: 3}
+    - rank: 4
+      text: "Keep the weapons and the money coming through 2027, and replace dependence with its own production: the EUR 90bn EU loan (EUR 60bn defence, EUR 30bn budget), NATO's pledge of EUR 70bn for 2026 and at least the same in 2027, US weapons bought by allies through PURL, the IMF's USD 8.1bn programme, and the licence to build Patriot interceptors that Trump promised at Ankara on 8 July 2026."
+      confidence: B
+      sources:
+        - {url: "https://www.pravda.com.ua/eng/news/2026/09/01/8051344/", title: "EU points out that EUR 90bn loan will cover only two-thirds of Ukraine's needs", publisher: "European Pravda", date: 2026-09-01, tier: 3}
+        - {url: "https://www.kmu.gov.ua/en/news/rik-purl-maizhe-7-mlrd-dlia-postavok-krytychnoho-ozbroiennia-dlia-ukrainy", title: "A year of PURL: nearly USD 7 billion for deliveries of critical weapons to Ukraine", publisher: "Cabinet of Ministers of Ukraine", date: 2026-07, tier: 1}
+        - {url: "https://www.intellinews.com/trump-offers-ukraine-patriot-production-licence-in-major-policy-about-face-453534/", title: "Trump offers Ukraine Patriot production licence in major policy about-face", publisher: "bne IntelliNews", date: 2026-07, tier: 3}
+        - {url: "https://www.kmu.gov.ua/en/news/mvf-zatverdyv-dlia-ukrainy-novu-prohramu-rozshyrenoho-finansuvannia-na-81-mlrd-dol", title: "IMF approves new Extended Fund Facility arrangement for Ukraine worth USD 8.1 billion", publisher: "Cabinet of Ministers of Ukraine", date: 2026-02-26, tier: 1}
+    - rank: 5
+      text: "Make Russia pay and bring people back: reparations and use of frozen Russian assets (the EU loan is repaid only if Russia pays reparations), return of deported children (UNGA, 3 Dec 2025, 91-12-57), prisoner exchanges, and accountability for the aggression."
+      confidence: B
+      sources:
+        - {url: "https://digitallibrary.un.org/record/4094643", title: "A/RES/ES-11/9 Return of Ukrainian children - voting record", publisher: "United Nations", date: 2025-12-03, tier: 1}
+        - {url: "https://digitallibrary.un.org/record/3994052", title: "A/RES/ES-11/5 Furtherance of remedy and reparation for aggression against Ukraine - voting record", publisher: "United Nations", date: 2022-11-14, tier: 1}
+        - {url: "https://www.pravda.com.ua/eng/news/2026/09/01/8051344/", title: "EU points out that EUR 90bn loan will cover only two-thirds of Ukraine's needs", publisher: "European Pravda", date: 2026-09-01, tier: 3}
+    - rank: 6
+      text: "Rebuild and re-populate: the World Bank's fifth damage assessment puts recovery at about USD 588bn over 2026-2035 (nearly three times 2025 GDP), a third or more to come from private money; 5.3 million Ukrainian refugees are registered in Europe and their return, together with the demography, decides whether there is an economy to rebuild."
+      confidence: B
+      sources:
+        - {url: "https://www.worldbank.org/en/news/press-release/2026/02/23/updated-ukraine-recovery-and-reconstruction-needs-assessment-released", title: "Updated Ukraine Recovery and Reconstruction Needs Assessment released (RDNA5)", publisher: "World Bank", date: 2026-02-23, tier: 1}
+        - {url: "https://www.unhcr.org/system/files/protected-files/2026-03/europe-95-sc-e.pdf", title: "UNHCR Europe regional update (refugees from Ukraine, end 2025)", publisher: "UNHCR", date: 2026-03, tier: 1}
+        - {url: "https://www.kmu.gov.ua/en/news/amerykansko-ukrainskyi-investytsiinyi-fond-vidbudovy-za-misiats-otrymav-ponad-60-proektnykh-propozytsii-premier-ministr", title: "U.S.-Ukraine Reconstruction Investment Fund receives over 60 project proposals in its first month", publisher: "Cabinet of Ministers of Ukraine", date: 2026-01, tier: 1}
+
+  means:
+    - domain: diplomatic
+      text: "A coalition built on Europe and the UK: the Coalition of the Willing (Paris Declaration, 6 Jan 2026, with the US backing guarantees for the first time), a General Assembly majority for territorial integrity (107 votes in Feb 2026, up from 93 a year earlier), and a negotiating team led by Kyrylo Budanov, now head of the Presidential Office, that works the Witkoff-Kushner channel (Miami, 9-10 Oct 2026) while Europe is kept in the room."
+      confidence: B
+      sources:
+        - {url: "https://euromaidanpress.com/2026/01/06/paris-declaration-signed/", title: "Paris Declaration: Ukraine, US, allies sign most comprehensive security deal yet", publisher: "Euromaidan Press", date: 2026-01-06, tier: 3}
+        - {url: "https://euromaidanpress.com/2026/02/25/unga-backs-ukraines-peace-resolution-with-107-votes-rejects-us-push-to-drop-territorial-integrity/", title: "UNGA backs Ukraine's peace resolution with 107 votes", publisher: "Euromaidan Press", date: 2026-02-25, tier: 3}
+        - {url: "https://unn.ua/en/news/budanov-umerov-and-arakhamia-arrived-in-the-us-whats-on-the-agenda", title: "Budanov, Umerov and Arakhamia arrived in the US: what is on the agenda", publisher: "UNN", date: 2026-10-09, tier: 3}
+    - domain: informational
+      text: "A new story for Washington and NATO: Ukraine as a contributor to security, not only a recipient (the Ankara summit, 7-8 July 2026), with its drone and counter-drone expertise as the product; the White House that rebuffed a USD 50bn drones-for-weapons offer in 2025 now says it wants to buy Ukrainian drones."
+      confidence: B
+      sources:
+        - {url: "https://euromaidanpress.com/2026/07/03/ukraine-wants-the-ankara-summit-to-name-it-a-nato-security-contributor-not-just-an-aid-recipient/", title: "Ukraine wants the Ankara summit to name it a NATO security contributor - not just an aid recipient", publisher: "Euromaidan Press", date: 2026-07-03, tier: 3}
+        - {url: "https://www.intellinews.com/trump-offers-ukraine-patriot-production-licence-in-major-policy-about-face-453534/", title: "Trump offers Ukraine Patriot production licence in major policy about-face", publisher: "bne IntelliNews", date: 2026-07, tier: 3}
+    - domain: military
+      text: "Attrition defence plus long-range strikes: Russia took 4,336 sq km in 2025 (0.72% of Ukraine) and the front is slowing in 2026, while Ukraine hits Russian energy and the Druzhba oil pipeline to cut Moscow's revenue and its leverage in Hungary and Slovakia. The UK alone allocated at least 120,000 drones in 2026."
+      confidence: B
+      sources:
+        - {url: "https://euromaidanpress.com/?p=384242", title: "Russia occupied 0.72% of Ukraine's territory in 2025, DeepState reports", publisher: "Euromaidan Press", date: 2026-01-02, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/4/29/ukraine-targets-druzhba-pipeline-to-sever-russian-oil-influence-in-eu", title: "Ukraine targets Druzhba pipeline to sever Russian oil, influence in EU", publisher: "Al Jazeera", date: 2026-04-29, tier: 3}
+        - {url: "https://nachrichten.idw-online.de/2026/08/13/ukraine-support-tracker-europe-leads-on-aid-us-weapons-remain-key", title: "Ukraine Support Tracker: Europe leads on aid - US weapons remain key", publisher: "Kiel Institute for the World Economy (via idw)", date: 2026-08-13, tier: 2}
+    - domain: economic
+      text: "Turning the minerals into a bond with Washington: the US-Ukraine Reconstruction Investment Fund (USD 150m initial capital, USD 75m from each side) signed its first critical-minerals deal, about USD 30m, in October 2026; sanctions pressure through the EU packages; ending Russian gas transit on 1 Jan 2025."
+      confidence: B
+      sources:
+        - {url: "https://www.pravda.com.ua/eng/news/2026/10/03/8056248/", title: "US-Ukraine fund signs first critical minerals deal worth US$30 million", publisher: "Ukrainska Pravda", date: 2026-10-03, tier: 3}
+        - {url: "https://www.kitco.com/news/off-the-wire/2026-10-05/us-ukrainian-investment-fund-seals-first-critical-minerals-deal", title: "US-Ukrainian investment fund seals first critical minerals deal", publisher: "Reuters via Kitco", date: 2026-10-05, tier: 3}
+        - {url: "https://interfax.com/newsroom/top-stories/108961/", title: "Gazprom: transit of Russian gas via Ukraine stopped on 1 January 2025", publisher: "Interfax", date: 2025-01-09, tier: 3}
+
+  constraints:
+    - text: "Territory and manpower: Russia holds about 19% of the country (DeepState: 116,165 sq km at the start of 2026; Crimea 100%, Luhansk 99.6%, Donetsk 78%, Zaporizhzhia 75%, Kherson 72%) and gained 4,336 sq km in 2025, almost double 2023 and 2024 together. Ukraine cannot retake the occupied land by force and cannot give up the unoccupied Donbas without exposing Sloviansk and Kramatorsk."
+      confidence: B
+      sources:
+        - {url: "https://euromaidanpress.com/?p=384242", title: "Russia occupied 0.72% of Ukraine's territory in 2025, DeepState reports", publisher: "Euromaidan Press", date: 2026-01-02, tier: 3}
+        - {url: "https://www.pravda.com.ua/eng/news/2026/01/01/8014292/", title: "Russia occupied more than 4,000 sq km of Ukrainian territory in 2025", publisher: "Ukrainska Pravda", date: 2026-01-01, tier: 3}
+    - text: "The state is financed by others: the EUR 90bn loan covers only two-thirds of 2026-27 budget and defence needs, a third has to be found elsewhere, and disbursement is tied to reforms and minority rights; direct US funding stopped in early 2025, yet about 95% of Patriot interceptors still arrive through PURL and 30% of European arms spending goes to US firms."
+      confidence: A
+      sources:
+        - {url: "https://www.pravda.com.ua/eng/news/2026/09/01/8051344/", title: "EU points out that EUR 90bn loan will cover only two-thirds of Ukraine's needs", publisher: "European Pravda", date: 2026-09-01, tier: 3}
+        - {url: "https://nachrichten.idw-online.de/2026/08/13/ukraine-support-tracker-europe-leads-on-aid-us-weapons-remain-key", title: "Ukraine Support Tracker: Europe leads on aid - US weapons remain key", publisher: "Kiel Institute for the World Economy (via idw)", date: 2026-08-13, tier: 2}
+        - {url: "https://www.kmu.gov.ua/en/news/rik-purl-maizhe-7-mlrd-dlia-postavok-krytychnoho-ozbroiennia-dlia-ukrainy", title: "A year of PURL: nearly USD 7 billion for deliveries of critical weapons to Ukraine", publisher: "Cabinet of Ministers of Ukraine", date: 2026-07, tier: 1}
+    - text: "A mediator that is also the supplier: Washington's attention is elastic (the Iran war froze the talks from March 2026 and drained Patriot stocks), it asked the General Assembly on 24 Feb 2026 to delete the territorial-integrity paragraphs and then abstained, and, by Budanov's own account, it has set no deadline for peace."
+      confidence: B
+      sources:
+        - {url: "https://euromaidanpress.com/2026/03/18/zelenskyy-says-iran-war-is-delaying-ukraine-peace-talks-and-depleting-missile-stocks/", title: "Zelenskyy says Iran war is delaying Ukraine peace talks and depleting missile stocks", publisher: "Euromaidan Press", date: 2026-03-18, tier: 3}
+        - {url: "https://english.adnkronos.com/2026/02/25/ukraine-un-general-assembly-calls-for-immediate-ceasefire-and-lasting-peace-us-abstains/", title: "Ukraine, UN General Assembly calls for immediate ceasefire and lasting peace, US abstains", publisher: "Adnkronos", date: 2026-02-25, tier: 3}
+    - text: "Veto players on the road to Brussels: Hungary blocked clusters 2 and 3 from July to early October 2026 and made their opening depend on a minority-education law; Slovakia's Fico cut emergency electricity and threatened the 20th sanctions package over the Druzhba oil outage; Poland's president stripped Zelensky of the Order of the White Eagle over the UPA naming row."
+      confidence: B
+      sources:
+        - {url: "https://www.euronews.com/2026/10/07/hungary-set-to-lift-veto-on-ukraines-eu-membership-talks", title: "Hungary set to lift veto on Ukraine's EU membership talks", publisher: "Euronews", date: 2026-10-07, tier: 3}
+        - {url: "https://www.pravda.com.ua/eng/news/2026/03/29/8027690", title: "Slovak PM threatens to block EU's 20th Russia sanctions package amid Druzhba pipeline dispute", publisher: "Ukrainska Pravda", date: 2026-03-29, tier: 3}
+        - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/06/25/analysis-poland-and-ukraine-s-difficult-history-creates-political-minefield-for-tusk", title: "Analysis: Poland and Ukraine's difficult history creates political minefield for Tusk", publisher: "Reuters via Internazionale", date: 2026-06-25, tier: 3}
+    - text: "Energy under fire: Naftogaz facilities were hit 293 times in 2026 by August against 229 in all of 2025, Ukraine buys gas abroad to fill storage, and every winter since 2022 has meant rolling blackouts; the transit income and leverage over Russian gas are gone since 1 Jan 2025."
+      confidence: B
+      sources:
+        - {url: "https://euromaidanpress.com/?p=421127", title: "Russia is hitting Ukraine's gas facilities 13 times a week - months before winter", publisher: "Euromaidan Press", date: 2026-08, tier: 3}
+        - {url: "https://www.bruegel.org/analysis/end-russian-gas-transit-ukraine-and-options-eu", title: "The end of Russian gas transit via Ukraine and options for the EU", publisher: "Bruegel", date: 2025-01, tier: 2}
+    - text: "People: 5.3 million Ukrainians are registered refugees in Europe (UNHCR, end 2025; EU temporary protection runs to March 2027), and UNHCR's own scenarios keep 2.9 to 5.2 million abroad in 2029; the UN projects about 300,000 fewer people a year, with fertility near 1.3. There are not enough people to fight, rebuild and refill the budget at once."
+      confidence: B
+      sources:
+        - {url: "https://www.unhcr.org/system/files/protected-files/2026-03/europe-95-sc-e.pdf", title: "UNHCR Europe regional update (refugees from Ukraine, end 2025)", publisher: "UNHCR", date: 2026-03, tier: 1}
+        - {url: "https://www.statisticstimes.com/m/demographics/country/ukraine-population.php", title: "Ukraine population (UN World Population Prospects 2024 projection)", publisher: "Statistics Times", date: 2026, tier: 4}
+
+  paradoxes:
+    - text: "The strikes that cut Russia's oil leverage in Europe feed the vetoes that block Ukraine's road to Europe. Hitting the Druzhba pipeline to end Russian oil in Hungary and Slovakia was meant to free the EU of Moscow's influence; Fico answered by halting emergency electricity to Ukraine and threatening the sanctions package, the EUR 90bn loan and accession. The weapon aimed at Russia's grip lands on the two capitals whose consent Kyiv needs."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/4/29/ukraine-targets-druzhba-pipeline-to-sever-russian-oil-influence-in-eu", title: "Ukraine targets Druzhba pipeline to sever Russian oil, influence in EU", publisher: "Al Jazeera", date: 2026-04-29, tier: 3}
+        - {url: "https://www.pravda.com.ua/eng/news/2026/03/29/8027690", title: "Slovak PM threatens to block EU's 20th Russia sanctions package amid Druzhba pipeline dispute", publisher: "Ukrainska Pravda", date: 2026-03-29, tier: 3}
+        - {url: "https://interfax.com/newsroom/top-stories/117273/", title: "Fico: Slovakia lifts veto on 20th package only when Druzhba supply resumes", publisher: "Interfax", date: 2026-04-22, tier: 3}
+    - text: "Naming a unit after the UPA wins the home front and loses the neighbour that carries the war. Poland is the logistics hub and the loudest friend in Europe; the Volhynia massacres of 1943-45 are its open wound. The naming dispute of May 2026 cost Zelensky Poland's highest order, kept him away from the Gdansk reconstruction conference and left Warsaw outside some E3 formats, just as 51.9% of Poles said it worsened their view of Ukraine."
+      confidence: B
+      sources:
+        - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/06/25/analysis-poland-and-ukraine-s-difficult-history-creates-political-minefield-for-tusk", title: "Analysis: Poland and Ukraine's difficult history creates political minefield for Tusk", publisher: "Reuters via Internazionale", date: 2026-06-25, tier: 3}
+        - {url: "https://www.pravda.com.ua/eng/news/2026/07/03/8042302/", title: "More Poles support President Nawrocki's approach to Ukraine than the government's - poll", publisher: "Ukrainska Pravda", date: 2026-07-03, tier: 3}
+    - text: "Refusing to give up the Donbas protects the principle and prolongs the thing that erodes the state. Every year of war costs about 4,000 sq km, more refugees abroad, and the patience of a mediator whose own text, the General Assembly vote shows, the US would rather not tie to territorial integrity. The Kremlin has stopped the trilateral talks until the withdrawal is agreed, so Kyiv's most important red line is also the veto on the only negotiation that exists."
+      confidence: C
+      sources:
+        - {url: "https://www.ukrinform.net/rubric-polytics/4120909-kremlin-suspends-trilateral-peace-talks-until-afu-withdraws-from-donbas.html", title: "Kremlin suspends trilateral peace talks until AFU withdraws from Donbas", publisher: "Ukrinform", date: 2026, tier: 3}
+        - {url: "https://euromaidanpress.com/?p=384242", title: "Russia occupied 0.72% of Ukraine's territory in 2025, DeepState reports", publisher: "Euromaidan Press", date: 2026-01-02, tier: 3}
+        - {url: "https://www.atlanticcouncil.org/blogs/ukrainealert/putin-cannot-accept-any-peace-deal-that-secures-ukrainian-statehood/", title: "Putin cannot accept any peace deal that secures Ukrainian statehood", publisher: "Atlantic Council", date: 2026-01, tier: 2}
+    - text: "Courting the patron who brokers with the enemy. Kyiv's best cards with Washington (minerals, drones, a Patriot production line) are given to a White House that abstained on territorial integrity in February 2026 and let the Iran war freeze the talks; the more Ukraine becomes useful to the US, the more the US can propose a deal that suits its own interests. The same Patriot licence that frees Kyiv from PURL also ties it more closely to US technology."
+      confidence: C
+      sources:
+        - {url: "https://www.intellinews.com/trump-offers-ukraine-patriot-production-licence-in-major-policy-about-face-453534/", title: "Trump offers Ukraine Patriot production licence in major policy about-face", publisher: "bne IntelliNews", date: 2026-07, tier: 3}
+        - {url: "https://www.pravda.com.ua/eng/news/2026/10/03/8056248/", title: "US-Ukraine fund signs first critical minerals deal worth US$30 million", publisher: "Ukrainska Pravda", date: 2026-10-03, tier: 3}
+        - {url: "https://english.adnkronos.com/2026/02/25/ukraine-un-general-assembly-calls-for-immediate-ceasefire-and-lasting-peace-us-abstains/", title: "Ukraine, UN General Assembly calls for immediate ceasefire and lasting peace, US abstains", publisher: "Adnkronos", date: 2026-02-25, tier: 3}
+    - text: "A loan repaid only if Russia pays turns the creditors into stakeholders in the peace terms. Ukraine begins to repay the EUR 90bn only after Russia pays reparations, and Russian state assets stay frozen meanwhile; the guarantee that makes the loan possible also makes any deal that skips reparations a problem for Brussels, not only for Kyiv."
+      confidence: C
+      sources:
+        - {url: "https://www.pravda.com.ua/eng/news/2026/09/01/8051344/", title: "EU points out that EUR 90bn loan will cover only two-thirds of Ukraine's needs", publisher: "European Pravda", date: 2026-09-01, tier: 3}
+        - {url: "https://www.baltictimes.com/tsahkna__agreement_reached_on_allocating__90_billion_to_ukraine/", title: "Tsahkna: Agreement reached on allocating EUR 90 billion to Ukraine", publisher: "Baltic Times", date: 2026-04, tier: 3}
+
+  reading: |
+    Ukraine runs a grand strategy of the weaker party that must make itself
+    indispensable to stronger ones: it cannot win the war outright, cannot
+    afford to lose it, and has to keep three patrons (the EU, the UK-led
+    coalition, the United States) paying while it negotiates with an adversary
+    whose price is its statehood. At the tactical level it is holding (the
+    front is slow in 2026, drones and strikes compensate for men), at the
+    theatre level it is trading minerals, drones and the promise of a rebuilt
+    country for money and guarantees, and at the grand-strategic level it is
+    betting that the road to the EU gives it an anchor that no ceasefire can
+    cancel. Luttwak's reversal is everywhere: the same logic that keeps the
+    patrons engaged (usefulness, visible strength, deep strikes, a national
+    story told in battle) irritates the neighbours whose vetoes decide the
+    anchor, from Fico's pipeline to Warsaw's history. 2026 is also the year the
+    centre of the question moved from the front to the table: talks opened
+    in Abu Dhabi in January, were frozen by the Iran war in March, and resumed
+    with the Miami round of 9-10 October, while the Kremlin still demands the
+    Donbas. Two signals that are not rows: the new Hungarian government's
+    shift from veto to conditions (Magyar, since May) and the Ankara
+    summit's quiet re-labelling of Ukraine as a contributor to Euro-Atlantic
+    security. Open question for the next review: whether the 15 Oct European
+    Council and the Miami outcome change the guarantee from a text to a force.

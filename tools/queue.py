@@ -22,7 +22,7 @@ BRIEFS = ROOT / "tools" / "briefs"
 REGIONS = {
     "western-balkans": ["SRB", "XKX", "HRV", "BIH", "MNE", "ALB", "MKD", "sub-rs"],
     "east-europe-black-sea": ["UKR", "MDA", "BLR", "GEO", "ARM", "AZE", "ROU", "BGR", "TUR"],
-    "central-north-europe": ["POL", "HUN", "CZE", "SVK", "DEU", "AUT", "CHE", "SWE", "FIN", "NOR", "DNK", "EST", "LVA", "LTU", "ISL", "LIE"],
+    "central-north-europe": ["POL", "HUN", "CZE", "SVK", "SVN", "DEU", "AUT", "CHE", "SWE", "FIN", "NOR", "DNK", "EST", "LVA", "LTU", "ISL", "LIE"],
     "western-south-europe": ["FRA", "ITA", "GBR", "ESP", "NLD", "BEL", "GRC", "CYP", "PRT", "IRL", "LUX", "MLT", "AND", "MCO", "SMR", "VAT", "org-eu", "org-nato"],
     "middle-east": ["ISR", "IRN", "SAU", "ARE", "QAT", "EGY", "IRQ", "SYR", "LBN", "JOR", "YEM", "PSE", "KWT", "OMN", "BHR", "nsa-houthis", "nsa-hezbollah", "nsa-hamas", "nsa-sdf"],
     "south-central-asia": ["IND", "PAK", "AFG", "BGD", "LKA", "NPL", "BTN", "MDV", "KAZ", "UZB", "TKM", "KGZ", "TJK", "MNG"],

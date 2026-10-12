@@ -1,0 +1,476 @@
+from: AZE
+relations:
+  # ---------- objective ----------
+  - to: ARM
+    layer: objective
+    type: influence_goal
+    summary: "Baku makes signature of the peace treaty conditional on Armenia adopting a new constitution without the preamble reference to the 1989 unification act; Aliyev says the treaty can be signed 'the very next day' once it is done. Armenia's government says it has no such condition in the negotiations but is preparing a referendum (2027 at the earliest)."
+    since: 2025-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://armenianweekly.com/2026/02/19/peace-on-bakus-terms-aliyev-says-treaty-possible-next-day-if-armenia-amends-constitution/", title: "Peace on Baku's terms: Aliyev says treaty possible 'next day' if Armenia amends constitution", publisher: "Armenian Weekly", date: 2026-02-19, tier: 3}
+      - {url: "https://www.rand.org/pubs/commentary/2026/01/what-prospects-for-lasting-peace-between-armenia-and-azerbaijan.html", title: "What Prospects for Lasting Peace Between Armenia and Azerbaijan?", publisher: "RAND", date: 2026-01, tier: 2}
+      - {url: "https://events.ceip.org/russia-eurasia/politika/2026/06/azerbaijan-armenia-elections", title: "Who Does Azerbaijan Want to See Win Armenia's Elections?", publisher: "Carnegie Politika", date: 2026-06-05, tier: 2}
+  - to: ARM
+    layer: objective
+    type: influence_goal
+    summary: "Official Baku uses 'Western Azerbaijan' for the Armenian republic (a state-university department on its 'economic potential', a football team under discussion in 2026) while the government says it has no territorial claim; read as leverage on the treaty and on the Azerbaijani returnees' narrative, not a formal claim."
+    since: 2021
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://events.ceip.org/russia-eurasia/politika/2026/06/azerbaijan-armenia-elections", title: "Who Does Azerbaijan Want to See Win Armenia's Elections?", publisher: "Carnegie Politika", date: 2026-06-05, tier: 2}
+  - to: org-brics
+    layer: objective
+    type: membership_goal
+    summary: "Azerbaijan announced its application to join BRICS on 20 Aug 2024 (paragraph 4.5 of the Astana declaration); no membership has been reported by October 2026."
+    since: 2024-08-20
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://armenpress.am/en/article/1198017", title: "Azerbaijan officially applies for BRICS membership", publisher: "Armenpress", date: 2024-08-20, tier: 3}
+      - {url: "https://jam-news.net/azerbaijani-chinese-relations/", title: "Azerbaijani-Chinese relations and the SCO summit: new partnership and points of tension", publisher: "JAMnews", date: 2025-09, tier: 3}
+  - to: org-sco
+    layer: objective
+    type: membership_goal
+    summary: "Azerbaijan is an SCO dialogue partner seeking a higher status; Xi said on 31 Aug 2025 at Tianjin that China supports its accession, but admission needs consensus and India reportedly broke it."
+    since: 2024-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.mfa.gov.cn/eng/xw/zyxw/202508/t20250831_11699049.html", title: "Xi Jinping meets with Azerbaijani President Ilham Aliyev", publisher: "Ministry of Foreign Affairs of China", date: 2025-08-31, tier: 1}
+      - {url: "https://jam-news.net/azerbaijani-chinese-relations/", title: "Azerbaijani-Chinese relations and the SCO summit: new partnership and points of tension", publisher: "JAMnews", date: 2025-09, tier: 3}
+  - to: FRA
+    layer: objective
+    type: influence_goal
+    summary: "Baku hosted the founding of the Baku Initiative Group against 'French colonialism' on the margins of the Non-Aligned Movement meeting (July 2023); France does not recognise it and accused Azerbaijan-linked accounts of amplifying the 2024 New Caledonia unrest, which Baku denies."
+    since: 2023-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.euronews.com/my-europe/2024/05/19/how-is-azerbaijan-involved-with-france-and-new-caledonia", title: "How is Azerbaijan involved with France and New Caledonia?", publisher: "Euronews", date: 2024-05-19, tier: 3}
+      - {url: "https://eurasianet.org/azerbaijan-baku-denying-french-accusations-of-meddling-in-new-caledonia", title: "Azerbaijan: Baku denying French accusations of meddling in New Caledonia", publisher: "Eurasianet", date: 2024-05, tier: 3}
+
+  # ---------- alignment ----------
+  - to: ARM
+    layer: alignment
+    type: treaty
+    summary: "Agreement on Peace and Establishment of Interstate Relations initialled by the foreign ministers at the White House on 8 Aug 2025 together with a trilateral joint declaration; not signed or ratified, because Baku wants the Armenian constitution changed first. Provides for separate border delimitation and a transit route (TRIPP)."
+    since: 2025-08-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://jamestown.substack.com/p/armenia-and-azerbaijan-agree-on-next", title: "Armenia and Azerbaijan Agree on Next Steps at White House Summit", publisher: "Jamestown Foundation", date: 2025-08, tier: 2}
+      - {url: "https://azertag.az/en/xeber/historic_washington_summit_a_chronological_timeline-4358089", title: "Historic Washington Summit: A chronological timeline", publisher: "AZERTAC (state agency, official statement)", date: 2025-08, tier: 1}
+  - to: TUR
+    layer: alignment
+    type: security_guarantee
+    summary: "Shusha Declaration on Allied Relations (15 Jun 2021): the parties coordinate their armed forces and give each other the necessary assistance if a third state threatens the independence or territorial integrity of either; it builds on the 2010 Agreement on Strategic Partnership and Mutual Assistance."
+    since: 2021-06-15
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://president.az/en/articles/view/52122", title: "Shusha Declaration on Allied Relations between the Republic of Azerbaijan and the Republic of Turkey", publisher: "Presidential Administration of Azerbaijan", date: 2021-06-15, tier: 1}
+      - {url: "https://jam-news.net/azerbaijan-and-turkey-agree-on-mutual-military-assistance/", title: "Azerbaijan and Turkey agree on mutual military assistance", publisher: "JAMnews", date: 2021-06-15, tier: 3}
+  - to: CHN
+    layer: alignment
+    type: treaty
+    summary: "Comprehensive strategic partnership established during Aliyev's April 2025 state visit to China, with about 20 cooperation agreements (trade, investment, transport, green energy, digital, aerospace); a strategic partnership had been declared at Astana in July 2024."
+    since: 2025-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://jam-news.net/azerbaijani-chinese-relations/", title: "Azerbaijani-Chinese relations and the SCO summit: new partnership and points of tension", publisher: "JAMnews", date: 2025-09, tier: 3}
+      - {url: "https://www.mfa.gov.cn/eng/xw/zyxw/202508/t20250831_11699049.html", title: "Xi Jinping meets with Azerbaijani President Ilham Aliyev", publisher: "Ministry of Foreign Affairs of China", date: 2025-08-31, tier: 1}
+  - to: USA
+    layer: alignment
+    type: treaty
+    summary: "Charter on Strategic Partnership signed by Vice President Vance and Aliyev in Baku on 10 Feb 2026, following the 8 Aug 2025 memorandum for a strategic working group; covers regional connectivity, AI and digital infrastructure, energy, defence sales and counter-terrorism. No mutual-defence clause."
+    since: 2026-02-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/02/10/us-and-azerbaijan-sign-strategic-partnership-charter-during-vance-visit", title: "US and Azerbaijan sign strategic partnership charter during Vance visit", publisher: "Reuters (via Internazionale)", date: 2026-02-10, tier: 3}
+      - {url: "https://president.az/en/pages/view/azerbaijan/visittous", title: "Working visit of Ilham Aliyev to the United States", publisher: "Presidential Administration of Azerbaijan", date: 2025-08, tier: 1}
+  - to: org-eu
+    layer: alignment
+    type: treaty
+    summary: "Memorandum of Understanding on a Strategic Partnership in the Field of Energy signed in Baku on 18 Jul 2022, aspiring to exports to the EU of at least 20 bcm a year by 2027 'in accordance with commercial viability and market demand'; the 1999 Partnership and Cooperation Agreement is still the legal base, with a new agreement and Partnership Priorities 2026-2030 under negotiation."
+    since: 2022-07-18
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.aljazeera.com/news/2022/7/18/eu-signs-deal-with-azerbaijan-to-double-gas-imports-by-2027", title: "EU signs deal with Azerbaijan to double gas imports by 2027", publisher: "Al Jazeera", date: 2022-07-18, tier: 3}
+      - {url: "https://jam-news.net/what-lies-behind-the-resumption-of-baku-brussels-talks-amid-tensions-with-european-parliament/", title: "What lies behind the resumption of Baku-Brussels talks amid tensions with European Parliament?", publisher: "JAMnews", date: 2026-07, tier: 3}
+  - to: SRB
+    layer: alignment
+    type: treaty
+    summary: "Strategic partnership declared in Belgrade on 23 Nov 2022, with mutual support on territorial integrity; defence and gas cooperation followed (mirrored from Serbia's card)."
+    since: 2022-11-23
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.srbija.gov.rs/vest/en/197728/strengthening-of-strategic-partnership-with-azerbaijan.php", title: "Strengthening of strategic partnership with Azerbaijan", publisher: "Government of Serbia", date: 2022-11-23, tier: 1}
+      - {url: "https://jamestown.org/program/azerbaijan-and-serbia-expand-defense-partnership/", title: "Azerbaijan and Serbia expand defense partnership", publisher: "Jamestown Foundation", date: 2024-02-28, tier: 2}
+
+  # ---------- dependency ----------
+  - to: ARM
+    layer: dependency
+    type: trade_share
+    summary: "Azerbaijani goods exports to Armenia (mainly fuel) after the lifting of all transit restrictions on 21 Oct 2025; Russian grain and fertiliser also cross Azerbaijan to Armenia. Figure from the Azerbaijani customs committee."
+    value: 17.6
+    unit: usd_million_azerbaijani_exports_to_armenia_jan_aug_2026
+    since: 2025-10-21
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.trend.az/azerbaijan/4224224.html", title: "Azerbaijan exports $17.6M worth of goods to Armenia over 8M2026", publisher: "Trend", date: 2026-09, tier: 3}
+      - {url: "https://astanatimes.com/2025/10/kazakh-grain-becomes-first-transit-cargo-from-azerbaijan-to-armenia/", title: "Kazakh Grain Becomes First Transit Cargo from Azerbaijan to Armenia", publisher: "The Astana Times", date: 2025-10, tier: 3}
+  - to: RUS
+    layer: dependency
+    type: military_presence
+    summary: "Russian peacekeeping contingent in Karabakh under the November 2020 ceasefire; withdrawal agreed between Putin and Aliyev, begun in April and completed on 12 Jun 2024 (mandate ran to 2025). Russia has no troops in Azerbaijan since."
+    value: 2000
+    unit: russian_peacekeepers_in_karabakh_approx
+    since: 2020-11-10
+    until: 2024-06-12
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://themoscowtimes.com/2024/06/12/russian-peacekeepers-complete-withdrawal-from-nagorno-karabakh-a85385", title: "Russian peacekeepers complete withdrawal from Nagorno-Karabakh", publisher: "The Moscow Times", date: 2024-06-12, tier: 3}
+  - to: ISR
+    layer: dependency
+    type: energy_export
+    summary: "Azerbaijan supplies more than half of Israel's crude imports through the BTC pipeline and Ceyhan (RFE/RL, June 2025); SOCAR bought 10% of the Tamar gas field in October 2024."
+    value: 0.5
+    unit: minimum_share_of_israeli_crude_imports
+    since: 2006
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Estimates differ: 'more than half' (RFE/RL, 2025), 46.4% in 2025 (Geopolitical Monitor) and about 65% in 2023 (JAMnews/Eurasianet). The row keeps the lowest defensible bound."
+    sources:
+      - {url: "https://www.rferl.org/a/azerbaijan-iran-azeris-israel-attacks-war-weapons/33449040.html", title: "Israel's Barrage Of Iran Is Furious. Azerbaijan, To Iran's North, Is Treading Lightly.", publisher: "RFE/RL", date: 2025-06-19, tier: 3}
+      - {url: "https://jam-news.net/in-shadow-of-the-gaza-war-peak-in-azerbaijan-israel-relations/", title: "In shadow of Gaza war: peak in Azerbaijan-Israel relations", publisher: "JAMnews", date: 2024, tier: 3}
+  - to: ISR
+    layer: dependency
+    type: arms_supply
+    summary: "Israel supplied about 69% of Azerbaijan's arms imports in 2016-2021 (SIPRI, cited by RFE/RL): missiles and drones such as Harop and Orbiter. A later claim by CNN, via OC Media, that Israeli troops were sent to Azerbaijan during the 2026 war is anonymous and rejected by Baku."
+    value: 0.69
+    unit: share_of_azerbaijani_arms_imports_2016_2021
+    since: 2016
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.rferl.org/a/azerbaijan-iran-azeris-israel-attacks-war-weapons/33449040.html", title: "Israel's Barrage Of Iran Is Furious. Azerbaijan, To Iran's North, Is Treading Lightly.", publisher: "RFE/RL", date: 2025-06-19, tier: 3}
+      - {url: "https://oc-media.org/israel-sent-troops-to-azerbaijan-during-iran-war-sources-tell-cnn/", title: "Israel sent troops to Azerbaijan during Iran War, sources tell CNN", publisher: "OC Media", date: 2026, tier: 3}
+  - to: PAK
+    layer: dependency
+    type: arms_supply
+    summary: "Pakistan announced in June 2025 a sale of 40 JF-17C Thunder fighters to Azerbaijan worth up to USD 4.6bn (the post was later deleted and the package structure is not confirmed; an earlier 2024 order covered 16 aircraft, first delivered in Sep 2024); JF-17s flew over Baku in the 8 Nov 2025 parade."
+    value: 4.6
+    unit: usd_billion_announced_jf17_package_upper_bound
+    since: 2024-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://thedefensepost.com/2025/06/09/azerbaijan-jf17-pakistan/", title: "Azerbaijan Orders More JF-17 Fighters From Pakistan", publisher: "The Defense Post", date: 2025-06-09, tier: 3}
+      - {url: "https://propakistani.pk/2025/11/12/another-country-inducts-pakistans-jf-17-thunder-fighter-jets/amp/", title: "Another country inducts Pakistan's JF-17 Thunder fighter jets", publisher: "ProPakistani", date: 2025-11-12, tier: 4}
+  - to: org-eu
+    layer: dependency
+    type: energy_export
+    summary: "Gas delivered to the EU through the Southern Gas Corridor, about 12.8 bcm in 2025 out of 25.2 bcm of total Azerbaijani exports (more than half to the EU); Azerbaijani gas began reaching Germany and Austria in January 2026."
+    value: 12.8
+    unit: bcm_gas_to_eu_2025
+    since: 2020-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Figures conflict: JAMnews gives 12.8 bcm to the EU in 2025; another analysis cites 11.3 bcm (about 4% of EU gas imports) against a 20 bcm target. The Astana Times confirms 25.2 bcm total exports with 'more than half' to the EU, which is consistent with 12.8."
+    sources:
+      - {url: "https://jam-news.net/what-lies-behind-the-resumption-of-baku-brussels-talks-amid-tensions-with-european-parliament/", title: "What lies behind the resumption of Baku-Brussels talks amid tensions with European Parliament?", publisher: "JAMnews", date: 2026-07, tier: 3}
+      - {url: "https://astanatimes.com/2026/03/azerbaijan-boosts-gas-exports-to-europe-by-56-as-southern-corridor-expands/", title: "Azerbaijan Boosts Gas Exports to Europe by 56% as Southern Corridor Expands", publisher: "The Astana Times", date: 2026-03-04, tier: 3}
+  - to: SRB
+    layer: dependency
+    type: energy_export
+    summary: "Azerbaijani gas via the Bulgaria-Serbia interconnector - about 300 million m3 delivered Jan 2024-Oct 2025 against a contract of up to 400 million m3 a year (mirrored from Serbia's card, same source)."
+    value: 0.3
+    unit: bcm_cumulative_2024_2025
+    since: 2024-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://en.apa.az/finance/azerbaijan-exports-300-million-cubic-meters-of-gas-to-serbia-since-january-481653", title: "Azerbaijan exports 300 million cubic meters of gas to Serbia since January", publisher: "APA", date: 2025-10-23, tier: 3}
+  - to: KAZ
+    layer: dependency
+    type: trade_share
+    summary: "Cargo moved on the Trans-Caspian International Transport Route (Middle Corridor) in January-August 2026, up 22% year on year against a designed capacity of 6 million tonnes; about 4 million tonnes moved in 2025."
+    value: 3.0
+    unit: million_tonnes_middle_corridor_jan_aug_2026
+    since: 2024
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://report.az/en/infrastructure/cargo-traffic-via-middle-corridor-exceeds-3-million-tons-in-8-months", title: "Cargo traffic via Middle Corridor exceeds 3 million tons in 8 months", publisher: "Report.az", date: 2026-09, tier: 3}
+  - to: GEO
+    layer: dependency
+    type: energy_export
+    summary: "20-year extension of the 2003 gas purchase and sale contract and a 20-year agreement on electricity supply and transit, signed after Kobakhidze met Aliyev (2026); BTC, SCP and the Baku-Tbilisi-Kars railway all cross Georgia, which is the Middle Corridor's only gateway to Europe until TRIPP exists."
+    value: 20
+    unit: years_gas_contract_extension
+    since: 2026
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://1tv.ge/lang/en/news/georgias-pm-irakli-kobakhidze-meets-azerbaijans-president-ilham-aliyev/", title: "Georgia's PM Irakli Kobakhidze meets Azerbaijan's President Ilham Aliyev", publisher: "Georgian Public Broadcaster", date: 2026, tier: 3}
+      - {url: "https://info.imedi.ge/en/foreigpolicy/9178/azerbaijans-president-ilham-aliyev-arrives-in-georgia-on-state-visit", title: "Azerbaijan's President Ilham Aliyev arrives in Georgia on state visit", publisher: "Imedi", date: 2026-04-06, tier: 3}
+  - to: UKR
+    layer: dependency
+    type: trade_share
+    summary: "Bilateral trade above USD 0.5bn in 2025 according to Aliyev; SOCAR operates in Ukraine and Azerbaijani gas reached Ukraine through the Trans-Balkan route from 28 Jun 2025."
+    value: 0.5
+    unit: usd_billion_bilateral_trade_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.trend.az/azerbaijan/politics/4178917.html", title: "SOCAR has been successfully operating in Ukraine for many years - President Ilham Aliyev", publisher: "Trend", date: 2026-04, tier: 3}
+      - {url: "https://www.pravda.com.ua/eng/news/2025/08/11/7525573", title: "Azerbaijan's president allocates US$2 million to Ukraine amid Russian strikes on gas infrastructure", publisher: "Ukrainska Pravda", date: 2025-08-11, tier: 3}
+  - to: TUR
+    layer: dependency
+    type: arms_supply
+    summary: "Turkish defence-industry cooperation behind the army (Bayraktar drones used in 2020), with defence-industry projects discussed by the two defence ministries at ADEX-2026 on 30 Sep 2026; no public contract value is confirmed."
+    value: 0
+    unit: confirmed_contract_value_not_published
+    since: 2020
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://mezha.net/eng/bukvy/turkey_and_azerbaijan/", title: "Turkey and Azerbaijan launch Unwavering Brotherhood 2026 drills in Kars", publisher: "Mezha", date: 2026-03, tier: 4}
+      - {url: "https://www.rferl.org/a/azerbaijan-iran-azeris-israel-attacks-war-weapons/33449040.html", title: "Israel's Barrage Of Iran Is Furious. Azerbaijan, To Iran's North, Is Treading Lightly.", publisher: "RFE/RL", date: 2025-06-19, tier: 3}
+
+  # ---------- action ----------
+  - to: ARM
+    layer: action
+    type: incident
+    summary: "Azerbaijan's offensive of 19-20 Sep 2023 ended the Karabakh de facto state after 24 hours; more than 100,000 Armenians (about 100,417 counted by Armenia's government in a week) fled to Armenia."
+    since: 2023-09-19
+    until: 2023-09-30
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.pbs.org/newshour/world/more-than-80-percnt-of-nagorno-karabakhs-population-flees-amid-azerbaijan-offensive", title: "More than 80 percent of Nagorno-Karabakh's population flees amid Azerbaijan offensive", publisher: "PBS NewsHour / AP", date: 2023-09, tier: 3}
+      - {url: "https://today.lorientlejour.com/article/1351002/armenia-says-over-100000-refugees-flee-nagorno-karabakh", title: "Armenia says over 100,000 refugees flee Nagorno-Karabakh", publisher: "L'Orient-Le Jour (AFP)", date: 2023-09, tier: 3}
+  - to: ARM
+    layer: action
+    type: incident
+    summary: "A Baku military court sentenced Ruben Vardanyan to 20 years on 17 Feb 2026 (terrorism, war crimes and other charges; closed hearings) and gave life terms to several former Karabakh leaders, including Arayik Harutyunyan, earlier in February."
+    since: 2026-02-17
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://novayagazeta.eu/en/articles/2026/02/17/former-karabakh-leader-sentenced-to-20-year-prison-term-in-azerbaijan-en-news", title: "Former Karabakh leader sentenced to 20-year prison term in Azerbaijan", publisher: "Novaya Gazeta Europe", date: 2026-02-17, tier: 3}
+  - to: ARM
+    layer: action
+    type: agreement
+    summary: "Trilateral joint declaration with Trump at the White House (8 Aug 2025): commitment to peace, to work on the framework for TRIPP rights granted to the US, and to dissolve the Minsk process; Washington waived Section 907 for Azerbaijan the same day."
+    since: 2025-08-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://jamestown.substack.com/p/armenia-and-azerbaijan-agree-on-next", title: "Armenia and Azerbaijan Agree on Next Steps at White House Summit", publisher: "Jamestown Foundation", date: 2025-08, tier: 2}
+      - {url: "https://president.az/en/pages/view/azerbaijan/visittous", title: "Working visit of Ilham Aliyev to the United States", publisher: "Presidential Administration of Azerbaijan", date: 2025-08, tier: 1}
+  - to: TUR
+    layer: action
+    type: exercise
+    summary: "Joint exercise 'Unwavering Brotherhood-2026' in Kars, near the Armenian border, from 26 Mar to 1 Apr 2026, followed by the 'Heydar Aliyev' live-fire exercise planned for April."
+    since: 2026-03-26
+    until: 2026-04-01
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://mezha.net/eng/bukvy/turkey_and_azerbaijan/", title: "Turkey and Azerbaijan launch Unwavering Brotherhood 2026 drills in Kars", publisher: "Mezha", date: 2026-03, tier: 4}
+  - to: RUS
+    layer: action
+    type: incident
+    summary: "AZAL Embraer 190 on the Baku-Grozny route crashed near Aktau on 25 Dec 2024 after being hit by Russian air defence; 38 of 67 aboard died. Putin apologised on 28 Dec without accepting responsibility; he acknowledged that two Russian missiles exploded near the aircraft at Dushanbe on 9 Oct 2025."
+    since: 2024-12-25
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://jam-news.net/why-azerbaijan-russia-ties-have-cooled-and-what-comes-next/", title: "Why Azerbaijan-Russia ties cooled - and what comes next", publisher: "JAMnews", date: 2025-05-11, tier: 3}
+      - {url: "https://jam-news.net/aliyev-and-putin-meet-against-backdrop-of-azal-crash-and-peace-act-bill/", title: "Aliyev and Putin meet against backdrop of AZAL crash and PEACE Act bill", publisher: "JAMnews", date: 2025-10, tier: 3}
+  - to: RUS
+    layer: action
+    type: incident
+    summary: "Two Azerbaijani brothers died in a police operation in Yekaterinburg on 27 Jun 2025; Baku summoned Russia's chargé, cancelled meetings and visits, raided Sputnik Azerbaijan on 30 Jun and jailed its head and editor; Russia then summoned Baku's ambassador after eight Russians were arrested on 1 Jul."
+    since: 2025-06-27
+    until: 2025-07-03
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://en.zona.media/article/2025/07/03/azerus", title: "Russia and Azerbaijan trade arrests in a spiraling criminal-diplomatic spat", publisher: "Mediazona", date: 2025-07-03, tier: 3}
+      - {url: "https://meduza.io/en/feature/2025/07/02/tit-for-tat-arrests", title: "Tit for tat arrests", publisher: "Meduza", date: 2025-07-02, tier: 3}
+  - to: RUS
+    layer: action
+    type: agreement
+    summary: "Russian and Azerbaijani foreign ministries said on 15 Apr 2026 that they had settled all issues of the AZAL crash, including compensation, and recognised that it resulted from an unintentional launch of an air defence system; Baku dropped its demand for punishment of those responsible. Lavrov repeated it on 17 Jul 2026."
+    since: 2026-04-15
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://meduza.io/en/news/2026/04/15/russia-and-azerbaijan-say-they-have-settled-all-issues-related-to-the-2024-azal-plane-crash-including-compensation", title: "Russia and Azerbaijan say they have settled all issues related to the 2024 AZAL plane crash, including compensation", publisher: "Meduza", date: 2026-04-15, tier: 3}
+      - {url: "https://jam-news.net/deal-on-azerbaijani-plane-downed-by-russian-air-defences-baku-drops-demand-to-punish-those-responsible/", title: "Deal on Azerbaijani plane downed by Russian air defences: Baku drops demand to punish those responsible", publisher: "JAMnews", date: 2026-04, tier: 3}
+      - {url: "https://tass.com/politics/2161577/amp", title: "Russia, Azerbaijan settle all issues related to 2024 AZAL plane crash - Lavrov", publisher: "TASS (state agency, official statement)", date: 2026-07-17, tier: 1}
+  - to: IRN
+    layer: action
+    type: incident
+    summary: "Four drones launched from Iranian territory hit or fell near civilian sites in Nakhchivan, including the airport, on 5 Mar 2026 during the US-Israeli war on Iran; four civilians were hurt. Aliyev called it terrorism and demanded an apology; Iran denied responsibility and promised an investigation. Baku withdrew diplomats from Tehran and Tabriz on 6 Mar and reported foiled IRGC-linked plots against the BTC pipeline and the Israeli embassy."
+    since: 2026-03-05
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://jamestown.substack.com/p/irans-drone-attacks-strain-tensions", title: "Iran's Drone Attacks Strain Tensions between Baku and Tehran", publisher: "Jamestown Foundation", date: 2026-03-12, tier: 2}
+      - {url: "https://www.dailysabah.com/world/iran-denies-role-in-drone-attack-on-azerbaijans-nakhchivan/news", title: "Iran denies role in drone attack on Azerbaijan's Nakhchivan", publisher: "Daily Sabah", date: 2026-03, tier: 3}
+  - to: IRN
+    layer: action
+    type: visit
+    summary: "Aliyev and Pezeshkian met in Bishkek on 31 Aug 2026 (Pezeshkian thanked Baku for support and humanitarian aid during the war); an Iranian armed forces delegation attended ADEX-2026 in Baku and met the Azerbaijani chief of general staff on 30 Sep 2026."
+    since: 2026-08-31
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://en.apa.az/foreign-policy/masoud-pezeshkian-iran-interested-in-expanding-relations-with-azerbaijan-in-all-areas-522286", title: "Masoud Pezeshkian: Iran interested in expanding relations with Azerbaijan in all areas", publisher: "APA", date: 2026-08-31, tier: 3}
+      - {url: "https://www.trend.az/azerbaijan/society/4229772.html", title: "Azerbaijan, Iran discuss military co-op and regional developments", publisher: "Trend", date: 2026-09-30, tier: 3}
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "Aliyev signed the Board of Peace charter at Davos on 22 Jan 2026 as a founding member after Trump's invitation letter; Azerbaijan thereby joined the US-led body for Gaza without any recorded troop pledge."
+    since: 2026-01-22
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://oc-media.org/pashinyan-and-aliyev-attend-inauguration-of-trumps-board-of-peace", title: "Pashinyan and Aliyev attend inauguration of Trump's Board of Peace", publisher: "OC Media", date: 2026, tier: 3}
+      - {url: "https://www.trend.az/azerbaijan/politics/4144270.html", title: "President Ilham Aliyev sends letter to U.S. President Donald Trump", publisher: "Trend", date: 2026-01, tier: 3}
+  - to: org-eu
+    layer: action
+    type: agreement
+    summary: "Baku and Brussels provisionally agreed about 90% of the Partnership Priorities 2026-2030 on 2-3 Jun 2026 and resumed talks on a comprehensive agreement to replace the 1999 PCA; von der Leyen visited Baku on 1 Jul 2026, Costa in March and Kallas in May."
+    since: 2026-06-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://jam-news.net/what-lies-behind-the-resumption-of-baku-brussels-talks-amid-tensions-with-european-parliament/", title: "What lies behind the resumption of Baku-Brussels talks amid tensions with European Parliament?", publisher: "JAMnews", date: 2026-07, tier: 3}
+  - to: org-eu
+    layer: action
+    type: incident
+    summary: "After the European Parliament's resolution of 30 Apr 2026 on Armenia's democratic resilience, Azerbaijan summoned the EU ambassador on 1 May and the Milli Majlis suspended all cooperation with the European Parliament, left the EU-Azerbaijan Parliamentary Cooperation Committee and began withdrawing from Euronest."
+    since: 2026-05-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://aa.com.tr/en/world/azerbaijan-suspends-cooperation-with-european-parliament-over-anti-azerbaijani-policy/3924090", title: "Azerbaijan suspends cooperation with European Parliament over anti-Azerbaijani policy", publisher: "Anadolu Agency", date: 2026-05, tier: 3}
+      - {url: "https://jam-news.net/what-lies-behind-the-resumption-of-baku-brussels-talks-amid-tensions-with-european-parliament/", title: "What lies behind the resumption of Baku-Brussels talks amid tensions with European Parliament?", publisher: "JAMnews", date: 2026-07, tier: 3}
+  - to: org-coe
+    layer: action
+    type: sanction
+    summary: "The Parliamentary Assembly of the Council of Europe refused to ratify the Azerbaijani delegation's credentials in 2024 (the dispute remains open in 2026 and a PACE committee voiced concern again in May 2026 about the suppression of critical voices)."
+    since: 2024-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://jam-news.net/what-lies-behind-the-resumption-of-baku-brussels-talks-amid-tensions-with-european-parliament/", title: "What lies behind the resumption of Baku-Brussels talks amid tensions with European Parliament?", publisher: "JAMnews", date: 2026-07, tier: 3}
+  - to: FRA
+    layer: action
+    type: visit
+    summary: "Foreign Minister Bayramov met Jean-Noel Barrot on the margins of UNGA81 (September 2026), after an Aliyev-Macron call and a Hajiyev meeting in Baku in June 2026 - the thaw after the 2023-24 quarrel over arms to Armenia and New Caledonia."
+    since: 2026-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.trend.az/azerbaijan/4201634.html", title: "Azerbaijan, France discuss bilateral relations in Baku", publisher: "Trend", date: 2026-06, tier: 3}
+  - to: UKR
+    layer: action
+    type: visit
+    summary: "Aliyev and Zelensky met in Qabala in April 2026 and discussed political dialogue and energy; in August 2025 they had condemned Russian strikes on a SOCAR depot in Odesa oblast and Aliyev gave USD 2m of electrical equipment as humanitarian aid."
+    since: 2026-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.trend.az/azerbaijan/politics/4178917.html", title: "SOCAR has been successfully operating in Ukraine for many years - President Ilham Aliyev", publisher: "Trend", date: 2026-04, tier: 3}
+      - {url: "https://www.pravda.com.ua/eng/news/2025/08/11/7525573", title: "Azerbaijan's president allocates US$2 million to Ukraine amid Russian strikes on gas infrastructure", publisher: "Ukrainska Pravda", date: 2025-08-11, tier: 3}
+  - to: UZB
+    layer: action
+    type: agreement
+    summary: "At the Tashkent summit of 15-16 Nov 2025 the Central Asian leaders made Azerbaijan a full participant of their consultative meetings (the first non-Central Asian state), now 'Central Asia and Azerbaijan'; Aliyev sat as one of six at the Cholpon-Ata informal summit on 31 Jul 2026."
+    since: 2025-11-16
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://jam-news.net/azerbaijan-joins-central-asia-advisory-council-what-it-means-for-south-caucasus/", title: "Azerbaijan joins Central Asia advisory council: what it means for South Caucasus", publisher: "JAMnews", date: 2025-11, tier: 3}
+      - {url: "https://timesca.com/azerbaijan-joins-central-asia-to-build-a-c6-corridor-core/", title: "Azerbaijan joins Central Asia to build a C6 corridor core", publisher: "Times of Central Asia", date: 2025-11, tier: 3}
+  - to: KAZ
+    layer: action
+    type: agreement
+    summary: "Announced in Astana with Tokayev on 21 Oct 2025 that Azerbaijan lifted all restrictions on cargo transit to Armenia in force since the occupation; the first transit cargo was Kazakh grain (arrived in November 2025)."
+    since: 2025-10-21
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://astanatimes.com/2025/10/kazakh-grain-becomes-first-transit-cargo-from-azerbaijan-to-armenia/", title: "Kazakh Grain Becomes First Transit Cargo from Azerbaijan to Armenia", publisher: "The Astana Times", date: 2025-10, tier: 3}
+  - to: GEO
+    layer: action
+    type: visit
+    summary: "State visit of Aliyev to Georgia from 6 Apr 2026, with meetings with President Kavelashvili, Prime Minister Kobakhidze and Bidzina Ivanishvili; agreements on gas contract extension, electricity transit and the Baku-Tbilisi-Kars railway followed."
+    since: 2026-04-06
+    until: 2026-04-07
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://info.imedi.ge/en/foreigpolicy/9178/azerbaijans-president-ilham-aliyev-arrives-in-georgia-on-state-visit", title: "Azerbaijan's President Ilham Aliyev arrives in Georgia on state visit", publisher: "Imedi", date: 2026-04-06, tier: 3}
+      - {url: "https://oc-media.org/aliyev-meets-ivanishvili-before-leaving-georgia", title: "Aliyev meets Ivanishvili before leaving Georgia", publisher: "OC Media", date: 2026-04, tier: 3}
+  - to: SRB
+    layer: action
+    type: agreement
+    summary: "SOCAR-Srbijagas contract of November 2023 for up to 400 million m3 of Azerbaijani gas a year in 2024-2026, with talks on up to 0.9 bcm a year and a gas-fired plant near Nis; Azerbaijan-Serbia defence cooperation reported at USD 300m+ (Jamestown). Mirrored from Serbia's rows and stances."
+    since: 2023-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://en.apa.az/finance/azerbaijan-exports-300-million-cubic-meters-of-gas-to-serbia-since-january-481653", title: "Azerbaijan exports 300 million cubic meters of gas to Serbia since January", publisher: "APA", date: 2025-10-23, tier: 3}
+      - {url: "https://jamestown.org/program/azerbaijan-and-serbia-expand-defense-partnership/", title: "Azerbaijan and Serbia expand defense partnership", publisher: "Jamestown Foundation", date: 2024-02-28, tier: 2}

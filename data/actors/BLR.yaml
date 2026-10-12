@@ -1,14 +1,185 @@
 id: BLR
 name: Belarus
+short: Belarus
 type: state
+coords: [27.56, 53.9]
 iso2: by
 wikipedia: https://en.wikipedia.org/wiki/Belarus
-coords:
-- 27.56
-- 53.9
 seat: Minsk
-regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+regions: ['east-europe-black-sea']
+card: full
+tier: protagonist
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Regime survival and continuity of Lukashenko's personal power: a seventh term won on 26 Jan 2025 (87.48%, turnout 85.7%, in an election the EU's High Representative called a sham with no legitimacy), a repressive apparatus that still holds roughly 850-1,000 political prisoners, and a succession that stays inside the system - the question of who follows him (a son, a loyal technocrat, or Moscow's choice) is deliberately left open."
+      confidence: B
+      sources:
+        - {url: "https://www.pravda.com.ua/eng/news/2025/01/26/7495316", title: "EU chief diplomat says 'elections' in Belarus are sham, Lukashenko has no legitimacy", publisher: "Ukrainska Pravda", date: 2025-01-26, tier: 3}
+        - {url: "https://www.intellinews.com/belarus-president-lukashenko-wins-re-election-in-a-landslide-to-no-one-s-surprise-363430/", title: "Belarus President Lukashenko wins re-election in a landslide, to no one's surprise", publisher: "bne IntelliNews", date: 2025-01, tier: 3}
+        - {url: "https://isans.org/analysis/belarus-review/belarus-review-by-isans-june-1-2026.html", title: "Belarus Review by iSANS - June 1, 2026 (Viasna counts 854 political prisoners; Bialiatski says about a thousand)", publisher: "iSANS", date: 2026-06-01, tier: 2}
+        - {url: "https://www.atlanticcouncil.org/blogs/new-atlanticist/lukashenkas-succession-game-promises-power-and-the-illusion-of-an-exit/", title: "Lukashenka's succession game: Promises, power, and the illusion of an exit", publisher: "Atlantic Council", date: 2025, tier: 2}
+    - rank: 2
+      text: "Keep Russia as shield and paymaster without being absorbed: the Union State security-guarantees treaty (signed 6 Dec 2024, ratified Feb-Mar 2025) puts Belarus under Russia's nuclear umbrella and obliges each side to support the other's constitutional order; the same week Russia ratified a deferral of about USD 800m of state-loan repayments. Lukashenko pays in loyalty ('we have never been traitors') while keeping 'my own understanding' of the war."
+      confidence: B
+      sources:
+        - {url: "https://kyivindependent.com/belarus-weekly-belarus-russia-ratify-security-pact-expanding-nuclear-umbrella-military-integration/", title: "Belarus Weekly: Belarus, Russia ratify security pact, expanding nuclear umbrella, military integration", publisher: "Kyiv Independent", date: 2025-03, tier: 3}
+        - {url: "https://aa.com.tr/en/world/putin-signs-law-ratifying-security-guarantees-treaty-with-belarus/3496485", title: "Putin signs law ratifying security guarantees treaty with Belarus", publisher: "Anadolu Agency", date: 2025-02-28, tier: 3}
+        - {url: "https://www.themoscowtimes.com/2026/10/02/lukashenko-vows-belarus-full-support-for-putin-on-ukraine-a93858", title: "Lukashenko vows Belarus' full support for Putin on Ukraine", publisher: "The Moscow Times", date: 2026-10-02, tier: 3}
+    - rank: 3
+      text: "Stay out of the shooting war while hosting it: Belarusian troops have not entered Ukraine (Lukashenko repeats they will not unless Belarus is attacked), yet territory served as the 2022 staging area, hosts (according to Kyiv) Russian drone relay stations, nuclear-capable Iskanders and, since December 2025, the Oreshnik; the price of that line is a hostile Ukraine fortifying 1,084 km of border, and Lukashenko's declared 'targeted mobilisation' (May 2026) is the sign of the strain."
+      confidence: B
+      sources:
+        - {url: "https://www.themoscowtimes.com/2026/10/02/lukashenko-vows-belarus-full-support-for-putin-on-ukraine-a93858", title: "Lukashenko vows Belarus' full support for Putin on Ukraine", publisher: "The Moscow Times", date: 2026-10-02, tier: 3}
+        - {url: "https://kdhnews.com/news/world/ukraine-is-still-fortifying-its-border-with-belarus-years-after-russia-invaded-from-there/article_98881595-802e-52fa-994b-8499df420fba.html", title: "Ukraine is still fortifying its border with Belarus years after Russia invaded from there", publisher: "AP", date: 2026-07-24, tier: 3}
+        - {url: "https://babel.ua/en/news/126919-lukashenko-declared-the-targeted-mobilization-of-military-units-in-belarus", title: "Lukashenko declared the targeted mobilization of military units in Belarus", publisher: "Babel", date: 2026-05, tier: 3}
+    - rank: 4
+      text: "Trade prisoners for an opening to Washington: sanctions relief on Belavia (Sep 2025), potash (Dec 2025) and banks, the Finance Ministry and the Development Bank (19 Mar 2026), reopening of the US embassy in Minsk and a possible Lukashenko visit to the United States. Envoy Coale said in Minsk on 19 Mar 2026 that a Lukashenko trip to the US and the reopening of the embassy were being discussed."
+      confidence: B
+      sources:
+        - {url: "https://euromaidanpress.com/2026/03/19/250-belarusians-freed-after-washington-lifts-sanctions/", title: "250 Belarusians freed after Washington lifts sanctions on banks and potash", publisher: "Euromaidan Press", date: 2026-03-19, tier: 3}
+        - {url: "https://www.lrt.lt/en/news-in-english/19/2872355/trump-envoy-says-us-seeks-improved-belarus-lithuania-ties-as-minsk-releases-more-prisoners", title: "Trump envoy says US seeks improved Belarus-Lithuania ties as Minsk releases more prisoners", publisher: "LRT", date: 2026-03-19, tier: 3}
+        - {url: "https://carnegieendowment.org/russia-eurasia/politika/2025/08/belarus-usa-trump-benefits", title: "Belarus and the USA: what Trump and Lukashenko can get from each other", publisher: "Carnegie Politika", date: 2025-08, tier: 2}
+    - rank: 5
+      text: "Protect the export economy: potash (the largest foreign-currency earner, now shipped through Russian ports because Lithuania closed Klaipeda in 2022), refined oil products from two refineries run on Russian crude, and a Russian market that takes about 61% of foreign goods trade. The target is to reopen the Western routes (US relief, a Klaipeda transit deal, the EUR 12bn arbitration claim against Lithuania) so Russia is not the only door."
+      confidence: B
+      sources:
+        - {url: "https://carnegieendowment.org/russia-eurasia/politika/2026/01/belarus-eu-fertilizers-sanctions", title: "Belarus, the EU and fertilizers: what happens when sanctions stop working", publisher: "Carnegie Politika (D. Kishinevsky)", date: 2026-01-28, tier: 2}
+        - {url: "https://reform.news/en/belarus-russia-trade-turnover-rises-by-1-8-to-usd-44-billion/", title: "Belarus-Russia trade turnover rises by 1.8% to USD 44 billion", publisher: "Reform.news", date: 2025, tier: 3}
+    - rank: 6
+      text: "Diversify outward so that Russia is not the only partner: full SCO membership since 4 Jul 2024, an 'all-weather strategic partnership' with China (2025), China as the second trading partner (about 11% of external trade), plus tentative ties with North Korea and a seat in the EAEU and CIS. Beijing offers markets and a hedge, not security or money on Moscow's scale."
+      confidence: B
+      sources:
+        - {url: "https://nmn.media/yearbook/2026/en/page10.html", title: "Belarus - China relations: ambitious goals, dour achievements, uncertain outlook", publisher: "Belarusian Yearbook 2026 (A. Sivitsky)", date: 2026-03, tier: 2}
+        - {url: "https://english.www.gov.cn/news/202407/04/content_WS66866147c6d0868f4e8e8dc0.html", title: "Xi congratulates Lukashenko as Belarus joins SCO", publisher: "Government of China", date: 2024-07-04, tier: 1}
+
+  means:
+    - domain: diplomatic
+      text: "Political prisoners as currency: batches of releases (52 in Sep 2025, 123 in Dec 2025 including Bialiatski, Kalesnikava and Babaryka, 250 on 19 Mar 2026 with Tsikhanouski among them, 15 sent to Lithuania) are traded for US sanctions relief through the Coale channel; a prisoner swap with Poland (Poczobut, 28 Apr 2026) and a telephone call with Macron (24 May 2026) extend the same method toward Europe."
+      confidence: B
+      sources:
+        - {url: "https://euromaidanpress.com/2026/03/19/250-belarusians-freed-after-washington-lifts-sanctions/", title: "250 Belarusians freed after Washington lifts sanctions on banks and potash", publisher: "Euromaidan Press", date: 2026-03-19, tier: 3}
+        - {url: "https://www.aljazeera.com/amp/news/2026/4/28/belarus-eyes-western-ties-as-it-frees-journalist-andrzej-poczobut", title: "Belarus eyes Western ties as it frees journalist Andrzej Poczobut", publisher: "Al Jazeera", date: 2026-04-28, tier: 3}
+        - {url: "https://isans.org/analysis/belarus-review/belarus-review-by-isans-june-1-2026.html", title: "Belarus Review by iSANS - June 1, 2026 (Lukashenko-Macron call of 24 May)", publisher: "iSANS", date: 2026-06-01, tier: 2}
+    - domain: diplomatic
+      text: "Multi-vector membership: the Union State, CSTO (Minsk hosted the 2023 summit), EAEU (Eurasian Intergovernmental Council in Minsk on 2 Oct 2026), CIS (summit in Turkmenistan 8-9 Oct 2026) and SCO, used to present Belarus as part of a post-Western order rather than a Russian province."
+      confidence: B
+      sources:
+        - {url: "https://www.themoscowtimes.com/2026/10/02/lukashenko-vows-belarus-full-support-for-putin-on-ukraine-a93858", title: "Lukashenko vows Belarus' full support for Putin on Ukraine", publisher: "The Moscow Times", date: 2026-10-02, tier: 3}
+        - {url: "https://kyivindependent.com/belarus-weekly-putin-attends-the-csto-summit-in-minsk-armenia-skips/", title: "Belarus Weekly: Putin attends the CSTO summit in Minsk, Armenia skips", publisher: "Kyiv Independent", date: 2023-11, tier: 3}
+    - domain: informational
+      text: "Total control of the information field: independent media banned, a list of 'extremists' of 6,650 names (May 2026), in-absentia sentences for exiled analysts, even the exiled European Humanities University labelled extremist; the regime frames the prisoner releases as 'humanitarian' and denies Ukrainian claims (Valfovich's claim of 116 Ukrainian drone incidents in a week was called 'absurd' by Kyiv)."
+      confidence: B
+      sources:
+        - {url: "https://isans.org/analysis/belarus-review/belarus-review-by-isans-june-1-2026.html", title: "Belarus Review by iSANS - June 1, 2026", publisher: "iSANS", date: 2026-06-01, tier: 2}
+        - {url: "https://euromaidanpress.com/2026/03/19/250-belarusians-freed-after-washington-lifts-sanctions/", title: "250 Belarusians freed after Washington lifts sanctions on banks and potash", publisher: "Euromaidan Press", date: 2026-03-19, tier: 3}
+    - domain: military
+      text: "Hosting as leverage: Russian tactical nuclear weapons (delivery announced from June 2023 under a May 2023 storage agreement; Lukashenko claimed 'several dozen' warheads in Dec 2024, unverified), Iskander launchers, the Oreshnik brigade declared on combat duty in December 2025 (subordinate to Russian Strategic Missile Forces according to Jamestown), the Zapad-2025 exercise of 12-16 Sep 2025, and a Regional Group of Forces with Russia since Oct 2022."
+      confidence: B
+      sources:
+        - {url: "https://www.nbcnews.com/news/world/belarus-starts-taking-delivery-russian-nuclear-weapons-rcna89212", title: "Belarus starts taking delivery of Russian nuclear weapons", publisher: "NBC News", date: 2023-06-14, tier: 3}
+        - {url: "https://euromaidanpress.com/2025/12/18/russias-nuclear-capable-oreshnik-missile-in-belarus/", title: "Russia's nuclear-capable Oreshnik missile now on combat duty in Belarus, Lukashenka says", publisher: "Euromaidan Press", date: 2025-12-18, tier: 3}
+        - {url: "https://jamestown.org/belarus-liable-for-oreshnik-but-lacks-control/", title: "Belarus liable for Oreshnik but lacks control", publisher: "Jamestown Foundation", date: 2025-12, tier: 2}
+        - {url: "https://pism.pl/publications/belarus-announces-the-formation-of-a-regional-forces-group-with-russia", title: "Belarus announces the formation of a Regional Forces Group with Russia", publisher: "PISM", date: 2022-10, tier: 2}
+    - domain: military
+      text: "Hybrid pressure on the EU's border: the 2021 instrumentalisation of migrants (EU legal basis for sanctions in Nov 2021), Wagner fighters hosted after the June 2023 mutiny (Morawiecki said on 29 Jul 2023 that over 100 moved toward the Suwalki gap, disputed by Belarusian monitors), cigarette-smuggling balloons that closed Vilnius airport repeatedly in 2025-26."
+      confidence: B
+      sources:
+        - {url: "https://www.eeas.europa.eu/delegations/japan/belarus-eu-adopts-5th-package-sanctions-over-continued-human-rights-abuses-and_en", title: "Belarus: EU adopts 5th package of sanctions over continued human rights abuses and the instrumentalisation of migrants", publisher: "European External Action Service", date: 2021-12-02, tier: 1}
+        - {url: "https://meduza.io/en/news/2023/07/29/poland-prime-minister-100-wagner-fighters-moving-toward-suwalki-gap-gateway-to-e-u", title: "Polish PM: 100 Wagner fighters moving toward Suwalki Gap", publisher: "Meduza", date: 2023-07-29, tier: 3}
+        - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2025-10-30/lithuania-closes-its-border-belarus-a-month", title: "Lithuania closes its border with Belarus for a month", publisher: "OSW", date: 2025-10-30, tier: 2}
+    - domain: economic
+      text: "Potash, refined products and a customs union as levers and lifelines: Belarus exports potash to non-Western markets via Russian ports and bargains for US relief on it; it retaliates against Lithuania by detaining trucks (about 200 still held in May 2026); it uses the EAEU to place goods in Russia's market and China's markets for machinery and food."
+      confidence: B
+      sources:
+        - {url: "https://carnegieendowment.org/russia-eurasia/politika/2026/01/belarus-eu-fertilizers-sanctions", title: "Belarus, the EU and fertilizers: what happens when sanctions stop working", publisher: "Carnegie Politika", date: 2026-01-28, tier: 2}
+        - {url: "https://isans.org/analysis/belarus-review/belarus-review-by-isans-june-1-2026.html", title: "Belarus Review by iSANS - June 1, 2026", publisher: "iSANS", date: 2026-06-01, tier: 2}
+
+  constraints:
+    - text: "Economic hostage to Russia: about 61% of foreign goods trade and about 93% of trade with the CIS (Belstat figures cited by Lukashenko's chief of staff, 2025), Russian state loans (about USD 800m of repayments deferred in the winter of 2024-25) and Russian crude for both refineries; Moscow's planned shipment-confirmation system (SPOT, Feb 2026) can complicate trade at will."
+      confidence: B
+      sources:
+        - {url: "https://reform.news/en/belarus-russia-trade-turnover-rises-by-1-8-to-usd-44-billion/", title: "Belarus-Russia trade turnover rises by 1.8% to USD 44 billion", publisher: "Reform.news", date: 2025, tier: 3}
+        - {url: "https://kyivindependent.com/belarus-weekly-belarus-russia-ratify-security-pact-expanding-nuclear-umbrella-military-integration/", title: "Belarus Weekly: Belarus, Russia ratify security pact", publisher: "Kyiv Independent", date: 2025-03, tier: 3}
+        - {url: "https://isans.org/analysis/belarus-review/belarus-review-by-isans-june-1-2026.html", title: "Belarus Review by iSANS - June 1, 2026 (SPOT)", publisher: "iSANS", date: 2026-06-01, tier: 2}
+    - text: "The EU wall: the EU renewed its Belarus sanctions on 26 Feb 2026 until 28 Feb 2027 (312 persons, 57 entities, sectoral measures incl. fertilisers) and Lithuania's foreign minister said on 26 May 2026 that no review comes before February 2027; US relief does not open the European routes."
+      confidence: A
+      sources:
+        - {url: "https://euneighbourseast.eu/news/latest-news/belarus-eu-prolongs-restrictive-measures-for-another-year/", title: "Belarus: EU prolongs restrictive measures for another year", publisher: "EU Neighbours East", date: 2026-02-26, tier: 1}
+        - {url: "https://isans.org/analysis/belarus-review/belarus-review-by-isans-june-1-2026.html", title: "Belarus Review by iSANS - June 1, 2026 (Budrys, 26 May)", publisher: "iSANS", date: 2026-06-01, tier: 2}
+    - text: "No control over the weapons it hosts: the Oreshnik battalion is subordinate to Russian Strategic Missile Forces according to Jamestown and Ukrainian intelligence (Lukashenko's claim that 'targets will be determined by us' is unverified), the nuclear warheads stay under Russian custody, and the treaty allows Russian bases and troops 'to repel aggression'."
+      confidence: B
+      sources:
+        - {url: "https://jamestown.org/belarus-liable-for-oreshnik-but-lacks-control/", title: "Belarus liable for Oreshnik but lacks control", publisher: "Jamestown Foundation", date: 2025-12, tier: 2}
+        - {url: "https://www.rferl.org/a/lukashenka-russia-oreshnik-missile-deployment-belarus-putin-ukraine/33234767.html", title: "Lukashenka: Oreshnik targets 'will be determined by us'; several dozen warheads in Belarus", publisher: "RFE/RL", date: 2024-12-10, tier: 3}
+        - {url: "https://isans.org/military/the-belarusian-nuclear-myth-2-in-the-shadow-of-oreshnik.html", title: "The Belarusian nuclear myth 2: in the shadow of Oreshnik", publisher: "iSANS", date: 2025-11, tier: 2}
+    - text: "A closing western border: Poland sealed all crossings during Zapad-2025 (12 Sep 2025) and reopened two on 17 Nov 2025 only for limited traffic, Lithuania shut its last two crossings for three weeks (27 Oct - 20 Nov 2025), Latvia has kept Silene closed since Sep 2023 and counts over 9,000 illegal-crossing attempts in 2026; China-Europe rail transit was blocked in the process."
+      confidence: B
+      sources:
+        - {url: "https://www.pap.pl/aktualnosci/poland-reopens-two-border-crossings-belarus", title: "Poland reopens two border crossings with Belarus", publisher: "Polish Press Agency", date: 2025-11-17, tier: 1}
+        - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2025-10-30/lithuania-closes-its-border-belarus-a-month", title: "Lithuania closes its border with Belarus for a month", publisher: "OSW", date: 2025-10-30, tier: 2}
+        - {url: "https://www.lrt.lt/en/news-in-english/19/3011074/latvia-proposes-closing-the-belarus-border-to-the-general-public-and-freight-transport", title: "Latvia proposes closing the Belarus border to the general public and freight transport", publisher: "LRT", date: 2026-08-04, tier: 3}
+    - text: "A narrow domestic base: 52% of Belarusians in an iSANS survey want normalisation with the EU, a mass exile since 2020 (Tsikhanouskaya's office now in Warsaw as well as Vilnius, a Mission of Democratic Belarus opened in Kyiv on 27 May 2026), and repression that only works while the security services are loyal - and the 2026 call-up of reservists was reported by Ukrainian and opposition sources to be done under cover of combat-readiness inspections."
+      confidence: C
+      sources:
+        - {url: "https://isans.org/analysis/belarus-review/belarus-review-by-isans-june-1-2026.html", title: "Belarus Review by iSANS - June 1, 2026", publisher: "iSANS", date: 2026-06-01, tier: 2}
+        - {url: "https://www.lrt.lt/en/news-in-english/19/2834388/belarus-opposition-leader-tsikhanouskaya-begins-work-in-warsaw-after-move-from-vilnius", title: "Belarus opposition leader Tsikhanouskaya begins work in Warsaw after move from Vilnius", publisher: "LRT", date: 2026-02-09, tier: 3}
+    - text: "China is a hedge, not a rescuer: bilateral trade of USD 8.85bn in 2025 with a USD 5.53bn deficit for Belarus, direct investment of about USD 550m over ten years (against USD 17.45bn in Russia), Chinese loans at no more than 1.3% of industrial investment, Great Stone park results described as minimal, 11 of 13 certified poultry farms barred from China."
+      confidence: B
+      sources:
+        - {url: "https://nmn.media/yearbook/2026/en/page10.html", title: "Belarus - China relations: ambitious goals, dour achievements, uncertain outlook", publisher: "Belarusian Yearbook 2026", date: 2026-03, tier: 2}
+
+  paradoxes:
+    - text: "Buying Russian protection removes the autonomy it was meant to protect. The security-guarantees treaty, the nuclear umbrella and the Oreshnik brigade make an invasion of Belarus unthinkable - and place the launchers under Russian command, open the way to Russian bases and commit Belarus to help 'support' the other side's constitutional order, so that Moscow, not Minsk, holds the last word over succession."
+      confidence: B
+      sources:
+        - {url: "https://kyivindependent.com/belarus-weekly-belarus-russia-ratify-security-pact-expanding-nuclear-umbrella-military-integration/", title: "Belarus Weekly: Belarus, Russia ratify security pact", publisher: "Kyiv Independent", date: 2025-03, tier: 3}
+        - {url: "https://jamestown.org/belarus-liable-for-oreshnik-but-lacks-control/", title: "Belarus liable for Oreshnik but lacks control", publisher: "Jamestown Foundation", date: 2025-12, tier: 2}
+    - text: "Border pressure meant to extract concessions has produced the closed borders that choke Belarus. The 2021 migrant push, the 2023 Wagner presence and the 2025 smuggling balloons won attention in Brussels and Vilnius, but they also bought sanctions, the closing of Polish, Lithuanian and Latvian crossings, about 200 detained Lithuanian trucks that keep Vilnius hostile, and a halt to the China-Europe rail transit that Belarus wanted to sell."
+      confidence: B
+      sources:
+        - {url: "https://nmn.media/yearbook/2026/en/page10.html", title: "Belarus - China relations (Poland suspends rail links around Zapad-2025)", publisher: "Belarusian Yearbook 2026", date: 2026-03, tier: 2}
+        - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2025-10-30/lithuania-closes-its-border-belarus-a-month", title: "Lithuania closes its border with Belarus for a month", publisher: "OSW", date: 2025-10-30, tier: 2}
+        - {url: "https://www.eeas.europa.eu/delegations/japan/belarus-eu-adopts-5th-package-sanctions-over-continued-human-rights-abuses-and_en", title: "Belarus: EU adopts 5th package of sanctions (instrumentalisation of migrants)", publisher: "European External Action Service", date: 2021-12-02, tier: 1}
+    - text: "Releasing prisoners to win relief exports the opposition leadership. Each batch (Bialiatski, Kalesnikava, Babaryka, then Tikhanovsky) goes to Lithuania, Poland or Ukraine, where the exile network has grown to a Warsaw office, a Kyiv mission and an ambassador-at-large for Belarusian democratic forces; meanwhile Viasna still counts 854 political prisoners, because new arrests refill the cells."
+      confidence: B
+      sources:
+        - {url: "https://isans.org/analysis/belarus-review/belarus-review-by-isans-june-1-2026.html", title: "Belarus Review by iSANS - June 1, 2026", publisher: "iSANS", date: 2026-06-01, tier: 2}
+        - {url: "https://euromaidanpress.com/2026/03/19/250-belarusians-freed-after-washington-lifts-sanctions/", title: "250 Belarusians freed after Washington lifts sanctions on banks and potash", publisher: "Euromaidan Press", date: 2026-03-19, tier: 3}
+    - text: "The 2020 crackdown that secured the regime cost it the potash route that paid for the regime. Lithuania closed Klaipeda in 2022 and Belaruskali's exports moved to Ust-Luga and St Petersburg, shifting transit revenue from Lithuania to Russia and deepening the dependence on Moscow that Lukashenko wants to reduce; the EUR 12bn arbitration claim against Lithuania will not be decided before 2027."
+      confidence: B
+      sources:
+        - {url: "https://carnegieendowment.org/russia-eurasia/politika/2026/01/belarus-eu-fertilizers-sanctions", title: "Belarus, the EU and fertilizers: what happens when sanctions stop working", publisher: "Carnegie Politika", date: 2026-01-28, tier: 2}
+    - text: "Staying 'neutral' in the war while hosting it earned the enmity of Kyiv without the gratitude of Moscow. Zelensky said on 7 Nov 2025 that Lukashenko 'will pay' for enabling the offensive; Ukraine mans a fortified border and opened a Belarusian democratic mission in Kyiv, while Moscow's own measures (the SPOT shipment-confirmation system that Lukashenko admits 'may complicate' trade) show its trust has limits."
+      confidence: C
+      sources:
+        - {url: "https://www.pravda.com.ua/eng/news/2025/11/07/8006344", title: "Zelenskyy says Belarusian leader will pay for taking part in Russia's invasion of Ukraine", publisher: "Ukrainska Pravda", date: 2025-11-07, tier: 3}
+        - {url: "https://isans.org/analysis/belarus-review/belarus-review-by-isans-june-1-2026.html", title: "Belarus Review by iSANS - June 1, 2026", publisher: "iSANS", date: 2026-06-01, tier: 2}
+    - text: "The opening to the West and the arming against it run side by side. While Coale negotiates, Lukashenko announced a 'targeted mobilisation' (12 May 2026), Western Operational Command was put on readiness in February 2026, and the EU added listings in April and July 2026 - the very behaviour that keeps European sanctions in place until at least February 2027 and leaves the US as the only door."
+      confidence: C
+      sources:
+        - {url: "https://babel.ua/en/news/126919-lukashenko-declared-the-targeted-mobilization-of-military-units-in-belarus", title: "Lukashenko declared the targeted mobilization of military units in Belarus", publisher: "Babel", date: 2026-05, tier: 3}
+        - {url: "https://euneighbourseast.eu/news/latest-news/belarus-eu-prolongs-restrictive-measures-for-another-year/", title: "Belarus: EU prolongs restrictive measures for another year", publisher: "EU Neighbours East", date: 2026-02-26, tier: 1}
+
+  reading: |
+    Belarus runs the strategy of a regime that has no allies except the one that
+    can also swallow it. Every move is a trade of the same thin assets - territory,
+    prisoners, potash, nuclear hosting, the capacity to make trouble at the
+    border - for survival, and the Luttwak pattern is that each trade sells a part
+    of the autonomy it was meant to protect: protection from Russia is bought with
+    the right to decide on launchers and on succession, and the hybrid pressure on
+    Poland and Lithuania, meant to be a lever, has closed the doors Minsk wanted
+    to sell (transit, rail, Klaipeda). Since September 2025 Lukashenko has found a
+    second buyer in Trump's Washington, which pays in sanctions relief for batches
+    of prisoners and which neither Moscow nor Brussels can yet outbid; the question
+    for 2026-27 is whether the American channel (embassy, Lukashenko's possible US
+    trip, a potash deal) is a real exit from Moscow's orbit or only a premium on the
+    old rent. The evidence says the second: the Oct 2026 statements promise 'full
+    support' to Putin, the Oreshnik is on duty, mobilisation is under way and the
+    EU wall stands until February 2027. Two signals that are not rows: Lukashenko's
+    remark that he has 'my own understanding' of the Ukraine war (2 Oct 2026), and
+    the unanswered succession question - no heir has been designated, the minimum
+    age for the presidency was raised, and the treaty's clause on mutual support for the constitutional order gives Moscow a say
+    in how it will be answered.
