@@ -29,7 +29,16 @@
   let view = "map";
   let mapMode = "world";
   let lens = "posture";           // posture (stances) | votes (UN General Assembly affinity)
-  const unga = data.unga || { affinity: {}, landmarks: {}, members: [] };
+  const unga = data.unga || { affinity: {}, landmarks: {}, members: [], resolutions: {} };
+  // dataset vote rows are stored compact; give them their text and source back
+  const VOTE_WORD = { Y: "YES", N: "NO", A: "ABSTAINED" };
+  data.relations.forEach(r => {
+    if (r.dataset !== "unga-votes") return;
+    const res = unga.resolutions[r.symbol] || {};
+    r.summary = `Voted ${VOTE_WORD[r.vote] || r.vote} on ${r.symbol} - ${res.label || ""} (${res.tally || ""}).`;
+    r.until = r.since; r.last_verified = r.since; r.stale = false;
+    r.sources = [{ url: res.url, title: `${r.symbol} voting record`, publisher: "UN Digital Library", date: r.since, tier: 1 }];
+  });
   const hasStances = id => !!(data.stances[id] && data.stances[id].length);
   const hasVotes = id => !!unga.affinity[id];
   const VOTE_CLASSES = [[.9, "v90"], [.8, "v80"], [.7, "v70"], [.6, "v60"], [0, "vlow"]];

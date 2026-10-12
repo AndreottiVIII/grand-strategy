@@ -108,8 +108,8 @@ def load_unga():
         with p.open(encoding="utf-8") as f:
             y = json.load(f)
         for r in y["records"]:
-            if r["y"] + r["n"] + r["a"] == 0:
-                continue
+            if r["y"] + r["n"] + r["a"] == 0 or not str(r["date"]).startswith(str(y["year"])):
+                continue   # adopted without a vote, or a record filed under the wrong year
             r["votes"] = {c: v for c, v in zip(y["countries"], r["v"]) if v in ("Y", "N", "A")}
             records.append(r)
     lm = DATA / "datasets" / "unga-landmarks.yaml"
@@ -136,14 +136,9 @@ def unga_rows_and_affinity(records, landmarks, actors):
             for about in lm["about"]:
                 if about not in actors or about == aid:
                     continue
-                rows.append({
-                    "from": aid, "to": about, "layer": "action", "type": "un_vote",
-                    "summary": f"Voted {word[v]} on {r['sym']} - {lm['label']} ({r['y']}-{r['n']}-{r['a']}).",
-                    "since": r["date"], "until": r["date"], "last_verified": r["date"],
-                    "confidence": "A", "symbol": r["sym"], "vote": v, "dataset": "unga-votes",
-                    "sources": [{"url": UNGA_SOURCE.format(id=r["id"]), "title": f"{r['sym']} voting record",
-                                 "publisher": "UN Digital Library", "date": r["date"], "tier": 1}],
-                })
+                # compact on purpose: thousands of these; the site recomposes summary and source from unga.resolutions
+                rows.append({"from": aid, "to": about, "layer": "action", "type": "un_vote", "since": r["date"],
+                             "confidence": "A", "symbol": r["sym"], "vote": v, "dataset": "unga-votes"})
     # affinity matrix over every member that voted: share of identical votes, pairs with >= 20 common votes
     members = sorted({c for r in records for c in r["votes"]})
     idx = {c: i for i, c in enumerate(members)}
@@ -173,7 +168,10 @@ def unga_rows_and_affinity(records, landmarks, actors):
     landmark_votes = {aid: [{"symbol": lm["symbol"], "label": lm["label"], "date": by_symbol[lm["symbol"]]["date"],
                              "vote": by_symbol[lm["symbol"]]["votes"].get(aid, "-"), "url": UNGA_SOURCE.format(id=by_symbol[lm["symbol"]]["id"])}
                             for lm in landmarks if lm["symbol"] in by_symbol] for aid in actors if aid in idx}
-    return rows, {"span": span, "n_records": len(records), "members": members, "affinity": affinity, "landmarks": landmark_votes}
+    resolutions = {lm["symbol"]: {"label": lm["label"], "date": by_symbol[lm["symbol"]]["date"], "url": UNGA_SOURCE.format(id=by_symbol[lm["symbol"]]["id"]),
+                                  "tally": f"{by_symbol[lm['symbol']]['y']}-{by_symbol[lm['symbol']]['n']}-{by_symbol[lm['symbol']]['a']}"}
+                   for lm in landmarks if lm["symbol"] in by_symbol}
+    return rows, {"span": span, "n_records": len(records), "members": members, "affinity": affinity, "landmarks": landmark_votes, "resolutions": resolutions}
 
 
 def main():
@@ -275,7 +273,7 @@ def main():
     records, landmarks = load_unga()
     unga_rows, unga = unga_rows_and_affinity(records, landmarks, actors)
     hand_symbols = {(r["from"], r["to"], sym) for r in rows if r["type"] == "un_vote"
-                    for sym in re.findall(r"A/RES/[A-Z0-9./-]+", r["summary"])}
+                    for sym in re.findall(r"A/RES/[A-Z0-9./-]+", r.get("summary", ""))}
     unga_rows = [r for r in unga_rows if (r["from"], r["to"], r["symbol"]) not in hand_symbols]
     for r in unga_rows:
         r["stale"] = False
