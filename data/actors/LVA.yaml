@@ -1,14 +1,184 @@
 id: LVA
 name: Latvia
+short: Latvia
 type: state
+coords: [24.11, 56.95]
 iso2: lv
 wikipedia: https://en.wikipedia.org/wiki/Latvia
-coords:
-- 24.11
-- 56.95
 seat: Riga
-regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+regions: ['central-north-europe']
+card: full
+tier: protagonist
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Make an attack on Latvia unthinkable by keeping allied troops on its soil and the US-led Article 5 guarantee credible: the Canadian-led NATO Multinational Brigade at Adazi (about 3,000 soldiers, 3,500 for exercises, Canadian presence confirmed until 2031) is the tripwire that Latvia's own army cannot replace."
+      confidence: A
+      sources:
+        - {url: "https://www.mod.gov.lv/en/nato/nato-capabilities/nato-efp-battle-group", title: "NATO Multinational Brigade in Latvia", publisher: "Ministry of Defence of Latvia", date: 2026, tier: 1}
+        - {url: "https://www.baltictimes.com/nato_summit_provided_latvia_with_assurances_regarding_importance_of_collective_defense_commitments_-_rinkevics/", title: "NATO summit provided Latvia with assurances regarding importance of collective defense commitments - Rinkevics", publisher: "The Baltic Times", date: 2026-07-10, tier: 3}
+    - rank: 2
+      text: "Build a national defence that raises the price of aggression: a 2026 defence budget of EUR 2.16bn (4.91% of GDP, target 5%), conscription restored in 2023, six HIMARS and IRIS-T air defence ordered, and the Baltic Defence Line on the eastern border (EUR 303m over five years)."
+      confidence: A
+      sources:
+        - {url: "https://www.mod.gov.lv/en/news/saeima-adopts-defence-budget-2026-final-reading", title: "Saeima Adopts the Defence Budget for 2026 in Final Reading", publisher: "Ministry of Defence of Latvia", date: 2025-12-04, tier: 1}
+        - {url: "https://eng.lsm.lv/article/society/defence/09.12.2025-latvian-defence-ministry-details-its-2026-spending-plans.a625508/", title: "Latvian Defence Ministry details its 2026 spending plans", publisher: "LSM (Latvian public broadcaster)", date: 2025-12-09, tier: 3}
+        - {url: "https://www.fpri.org/article/2025/06/latvias-renewed-conscription-turns-two/", title: "Latvia's renewed conscription turns two", publisher: "FPRI", date: 2025-06, tier: 2}
+        - {url: "https://www.baltictimes.com/construction_of_bunkers_and_other_fortifications_along_baltic_defense_line_to_be_gradual_-_defense_ministry/", title: "Construction of bunkers and other fortifications along Baltic Defense Line to be gradual - Defense Ministry", publisher: "The Baltic Times", date: 2026-01, tier: 3}
+    - rank: 3
+      text: "Russia must not win in Ukraine, and the Russian threat must be contained for a generation: military aid of 0.25% of GDP a year (almost EUR 1bn since 2022), co-leadership with the UK of the Drone Capability Coalition, and the use of frozen Russian assets for Ukraine."
+      confidence: A
+      sources:
+        - {url: "https://www.baltictimes.com/latvia_s_practical_support_to_ukraine_since_the_start_of_war_reaches_almost_eur_1_billion_-_report/", title: "Latvia's practical support to Ukraine since the start of war reaches almost EUR 1 billion - report", publisher: "The Baltic Times", date: 2026-01, tier: 3}
+        - {url: "https://www.mod.gov.lv/en/drone-coalition", title: "Drone Coalition", publisher: "Ministry of Defence of Latvia", date: 2025, tier: 1}
+        - {url: "https://vdd.gov.lv/en/news/press-releases/vdd-publishes-its-annual-report", title: "VDD publishes its Annual Report on the identified threats and implemented countermeasures", publisher: "State Security Service of Latvia (VDD)", date: 2026-02, tier: 1}
+    - rank: 4
+      text: "Cut the physical and economic ties to Russia and Belarus: no Russian gas since 2023, desynchronisation from the Russian grid in February 2025, imports from Russia down 68% in 2025 (EUR 125.6m), a ban on a widening list of Russian and Belarusian goods from 1 September 2026, and a shut Silene crossing with Belarus."
+      confidence: A
+      sources:
+        - {url: "https://stat.gov.lv/en/statistics-themes/trade-and-services/foreign-trade-goods/press-releases/26797-foreign-trade-latvia", title: "Value of exported goods rose by 3.7% in 2025", publisher: "Central Statistical Bureau of Latvia", date: 2026-02-19, tier: 1}
+        - {url: "https://www.osw.waw.pl/en/publikacje/osw-commentary/2025-04-15/baltic-de-risking-baltic-states-sever-energy-ties-russia", title: "Baltic de-risking: the Baltic states sever energy ties with Russia", publisher: "OSW", date: 2025-04-15, tier: 2}
+        - {url: "https://www.mfa.gov.lv/en/article/cabinet-ministers-approves-regulations-banning-import-industrial-goods-russia-and-belarus", title: "Cabinet of Ministers approves regulations banning import of industrial goods from Russia and Belarus", publisher: "Ministry of Foreign Affairs of Latvia", date: 2026, tier: 1}
+    - rank: 5
+      text: "Close the gap between a state of 1.9 million people and the cost of its security by using the EU and the Nordic-Baltic neighbours as force multipliers: SAFE defence loans (EUR 3.49bn requested and approved), Rail Baltica as a military-mobility corridor, joint procurement and a Baltic Regional Military Mobility Area."
+      confidence: B
+      sources:
+        - {url: "https://data.consilium.europa.eu/doc/document/ST-10130-2026-ADD-1/en/pdf", title: "Council document ST 10130/2026 ADD 1 (SAFE implementing decision, Latvia)", publisher: "Council of the European Union", date: 2026, tier: 1}
+        - {url: "https://www.intellinews.com/eu-auditors-say-23-8bn-rail-baltica-project-will-miss-2030-deadline-final-completion-date-uncertain-421392/", title: "EU auditors say EUR 23.8bn Rail Baltica project will miss 2030 deadline, final completion date uncertain", publisher: "bne IntelliNews", date: 2026-01, tier: 3}
+        - {url: "https://kaitseministeerium.ee/sites/default/files/3b_mc_joint_communique_27jan.pdf", title: "Joint communique of the Baltic Defence Ministerial Committee (Tallinn, 29-30 January 2026)", publisher: "Ministry of Defence of Estonia", date: 2026-01, tier: 1}
+    - rank: 6
+      text: "Keep the state cohesive and governable under pressure: integrate (or filter) the Russian-speaking minority through state-language exams, finish the Belarus border barrier, and hold a government together after the May 2026 collapse; the 3 October 2026 election returned Prime Minister Kulbergs' United List first with about 35% and 41-42 of 100 seats."
+      confidence: B
+      sources:
+        - {url: "https://www.saeima.lv/en/news/saeima-news/33685-state-language-exam-requirement-applied-to-wider-circle-of-russian-citizens", title: "State language exam requirement applied to wider circle of Russian citizens", publisher: "Saeima of Latvia", date: 2024-06-20, tier: 1}
+        - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2026-06-02/latvia-andris-kulbergs-caretaker-government", title: "Latvia: Andris Kulbergs' caretaker government", publisher: "OSW", date: 2026-06-02, tier: 2}
+        - {url: "https://www.thestar.com.my/news/world/2026/10/04/latvian-pm-on-track-to-lead-pro-ukraine-coalition-after-election-win", title: "Latvian PM on track to lead pro-Ukraine coalition after election win", publisher: "Reuters (via The Star)", date: 2026-10-04, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "Maximum alignment with the Western institutions that guarantee it: NATO (member since 2004), the EU and the euro, plus the Baltic trio (Baltic defence ministerial committee, chaired by Latvia in 2026), the Nordic-Baltic Eight and the UK-led Joint Expeditionary Force. Against Russia, it downgraded relations to charge d'affaires level in February 2023, expelled diplomats in 2024 and had the Saeima declare Russia a state sponsor of terrorism on 11 August 2022."
+      confidence: A
+      sources:
+        - {url: "https://www.mfa.gov.lv/en/article/latvia-lowers-level-diplomatic-relations-russian-federation", title: "Latvia lowers the level of diplomatic relations with the Russian Federation", publisher: "Ministry of Foreign Affairs of Latvia", date: 2023-01, tier: 1}
+        - {url: "https://saeima.lv/en/news/saeima-news/31309-saeima-adopts-statement-declaring-russia-a-state-sponsor-of-terrorism", title: "Saeima adopts statement declaring Russia a state sponsor of terrorism", publisher: "Saeima of Latvia", date: 2022-08-11, tier: 1}
+        - {url: "https://kaitseministeerium.ee/sites/default/files/3b_mc_joint_communique_27jan.pdf", title: "Joint communique of the Baltic Defence Ministerial Committee (Tallinn, January 2026)", publisher: "Ministry of Defence of Estonia", date: 2026-01, tier: 1}
+    - domain: diplomatic
+      text: "Niche leadership on Ukraine that makes a small state visible in Washington, London and Brussels: the Drone Capability Coalition (with the UK, set up 14 Feb 2024; 12,000 Latvian-made drones to Ukraine under it in 2025), the push to use the immobilised Russian central bank assets, and the Drone Summit in Riga on 27 May 2026."
+      confidence: B
+      sources:
+        - {url: "https://www.mod.gov.lv/en/drone-coalition", title: "Drone Coalition", publisher: "Ministry of Defence of Latvia", date: 2025, tier: 1}
+        - {url: "https://www.pravda.com.ua/eng/news/2025/11/27/8009212", title: "Latvia set to allocate EUR 15m for Drone Capability Coalition in 2026", publisher: "Ukrainska Pravda", date: 2025-11-27, tier: 3}
+    - domain: informational
+      text: "Counter-intelligence and public exposure: the State Security Service (VDD) publishes the Russian and Belarusian threat in detail (annual report of February 2026 names Russian services the main threat, with Belarusian and Chinese services also flagged), prosecutes sabotage cells recruited from ex-convicts and the drug-dependent, and screens Russian citizens' residence through the language exam."
+      confidence: B
+      sources:
+        - {url: "https://vdd.gov.lv/en/news/press-releases/vdd-publishes-its-annual-report", title: "VDD publishes its Annual Report on the identified threats and implemented countermeasures", publisher: "State Security Service of Latvia (VDD)", date: 2026-02, tier: 1}
+        - {url: "https://euromaidanpress.com/2025/10/28/latvia-says-it-caught-russian-linked-arsonists-scouting-targets-filming-sensitive-facilities-planning-more-fires/", title: "Latvia says it caught Russian-linked arsonists scouting targets, filming sensitive facilities, planning more fires", publisher: "Euromaidan Press", date: 2025-10-28, tier: 3}
+        - {url: "https://euromaidanpress.com/2026/02/10/former-convicts-and-drug-addicts-security-chief-reveals-russias-recruitment-method-for-sabotage-in-latvia/", title: "Former convicts and drug addicts: security chief reveals Russia's recruitment method for sabotage in Latvia", publisher: "Euromaidan Press", date: 2026-02-10, tier: 3}
+    - domain: military
+      text: "A conscript army plus a NATO brigade: 11-month national defence service for men aged 18-27 (women volunteer; 1,076 conscripts started by mid-2025), the Canadian-led brigade at Adazi with Danish, Swedish and other contingents, 173 km of fenced Belarus border (barrier finished 2024, sensors due end-2026), a Baltic Defence Line with EUR 303m over five years, HIMARS (from 2027), IRIS-T (from 2026) and EUR 50m for drones in 2026."
+      confidence: B
+      sources:
+        - {url: "https://www.fpri.org/article/2025/06/latvias-renewed-conscription-turns-two/", title: "Latvia's renewed conscription turns two", publisher: "FPRI", date: 2025-06, tier: 2}
+        - {url: "https://www.mod.gov.lv/en/nato/nato-capabilities/nato-efp-battle-group", title: "NATO Multinational Brigade in Latvia", publisher: "Ministry of Defence of Latvia", date: 2026, tier: 1}
+        - {url: "https://eng.lsm.lv/article/society/defence/09.12.2025-latvian-defence-ministry-details-its-2026-spending-plans.a625508/", title: "Latvian Defence Ministry details its 2026 spending plans", publisher: "LSM (Latvian public broadcaster)", date: 2025-12-09, tier: 3}
+        - {url: "https://pism.pl/publications/belarus-applies-increased-migration-pressure-on-latvia", title: "Belarus applies increased migration pressure on Latvia", publisher: "PISM", date: 2026-07, tier: 2}
+    - domain: economic
+      text: "Economic decoupling as security policy: Russian gas banned since 2023; imports from Russia down 68.2% in 2025 to EUR 125.6m (0.5% of imports) and from Russia and Belarus combined from EUR 2.13bn in 2022 to EUR 193m in 2025; import bans on agricultural goods (2024) and industrial goods (1 Sep 2026); desynchronisation from BRELL on 8-9 Feb 2025 (EUR 1.6bn, 75% EU-funded); the 2018 shell-company ban that ended the non-resident banking model."
+      confidence: A
+      sources:
+        - {url: "https://stat.gov.lv/en/statistics-themes/trade-and-services/foreign-trade-goods/press-releases/26797-foreign-trade-latvia", title: "Value of exported goods rose by 3.7% in 2025", publisher: "Central Statistical Bureau of Latvia", date: 2026-02-19, tier: 1}
+        - {url: "https://www.globalsecurity.org/wmd/library/news/russia/2026/08/russia-260804-latvia-mfa01.htm", title: "Cabinet approves national position on expanding sanctions and tariffs against Russia and Belarus (4 Aug 2026)", publisher: "Ministry of Foreign Affairs of Latvia (via GlobalSecurity)", date: 2026-08-04, tier: 1}
+        - {url: "https://www.hhs.se/en/about-us/news/site-publications/2025/baltic-states-energy-independence/", title: "Baltic states cut energy ties with Russia, but new risks emerge", publisher: "Stockholm School of Economics (SITE)", date: 2025, tier: 2}
+
+  constraints:
+    - text: "Size: 1.9 million people, about 200 border-guard posts unfilled on a 173 km Belarus border and a Russian border besides, and an army that depends on allied battalions for a first defence; the Canadian-led brigade is the only large permanent allied unit and the US rotational presence is in review."
+      confidence: B
+      sources:
+        - {url: "https://www.euronews.com/my-europe/2026/08/21/we-are-guarding-germans-belgians-latvia-stops-28-migrants-from-belarus-after-tunnel-discov", title: "'We are guarding Germans, Belgians': Latvia stops 28 migrants from Belarus after tunnel discovery", publisher: "Euronews", date: 2026-08-21, tier: 3}
+        - {url: "https://euromaidanpress.com/2026/06/03/lithuania-faces-first-us-troop-gap-since-2020-as-pentagon-reviews-european-posture/", title: "Lithuania faces first US troop gap since 2020 as Pentagon reviews European posture", publisher: "Euromaidan Press", date: 2026-06-03, tier: 3}
+    - text: "Dependence on a United States whose commitment is now a matter of debate: Washington warned Nordic and Baltic states of delays to approved weapons orders, Trump has threatened to leave NATO, and the Pentagon's 2026 posture review left Lithuania and Estonia with rotation gaps (Latvia's HIMARS arrive from 2027 and depend on US delivery)."
+      confidence: B
+      sources:
+        - {url: "https://www.euronews.com/my-europe/2026/04/23/latvian-defence-minister-has-no-doubt-us-would-aid-nato-allies-if-needed", title: "Latvian defence minister has no doubt US would aid NATO allies if needed", publisher: "Euronews", date: 2026-04-23, tier: 3}
+        - {url: "https://euromaidanpress.com/2026/07/06/us-soldiers-left-for-a-summer-rotation-estonia-doesnt-know-how-many-are-coming-back-or-when/", title: "US soldiers left for a summer rotation. Estonia doesn't know how many are coming back, or when", publisher: "Euromaidan Press", date: 2026-07-06, tier: 3}
+    - text: "Fiscal room: defence at 4.91% of GDP is financed under the EU's national escape clause, with the Commission projecting a deficit of 3.3% of GDP in 2026 and 4.3% in 2027, while the Defence Ministry says it needs a further EUR 92m next year and Rail Baltica carries a Latvian funding gap of about EUR 4.4bn."
+      confidence: B
+      sources:
+        - {url: "https://eng.lsm.lv/article/society/defence/23.03.2026-ministry-latvia-will-need-extra-92-million-euros-for-defence-next-year.a639992/", title: "Ministry: Latvia will need extra 92 million euros for defence next year", publisher: "LSM (Latvian public broadcaster)", date: 2026-03-23, tier: 3}
+        - {url: "https://www.intellinews.com/baltic-states-face-10bn-funding-gap-for-rail-baltica-451484/", title: "Baltic states face EUR 10bn funding gap for Rail Baltica", publisher: "bne IntelliNews", date: 2026-06, tier: 3}
+    - text: "A fragile and fragmented politics: governments rarely last a term (the Silina coalition collapsed on 14 May 2026 after the Rezekne drone incident, a caretaker cabinet under Kulbergs served until the election), turnout was 51.8% on 3 October 2026, and the second and third parties are Latvia First (13.1%) and the pro-Russian Sovereign Power (11.7%)."
+      confidence: B
+      sources:
+        - {url: "https://saeima.lv/en/news/saeima-news/35891-saeima-approves-the-cabinet-formed-by-andris-kulbergs", title: "Saeima approves the Cabinet formed by Andris Kulbergs", publisher: "Saeima of Latvia", date: 2026-05-28, tier: 1}
+        - {url: "https://www.thestar.com.my/news/world/2026/10/04/latvian-pm-on-track-to-lead-pro-ukraine-coalition-after-election-win", title: "Latvian PM on track to lead pro-Ukraine coalition after election win", publisher: "Reuters (via The Star)", date: 2026-10-04, tier: 3}
+        - {url: "https://abcnews.com/International/wireStory/pro-ukraine-governing-coalition-wins-35-latvian-election-136984034", title: "Pro-Ukraine governing coalition wins 35% in Latvian election", publisher: "AP (via ABC News)", date: 2026-10-04, tier: 3}
+    - text: "Demography and geography: about 37% of residents are not ethnic Latvians and are mostly Russian-speaking (census 2021), 9% of residents were non-citizens in 2024, and Russian and Belarusian territory lies on the east and south; Russia can reach Latvia with jamming, drones and sabotage without crossing a border."
+      confidence: B
+      sources:
+        - {url: "https://collections.fes.de/publikationen/download/ftpack/plain/1885844", title: "Latvia country study (Friedrich-Ebert-Stiftung)", publisher: "Friedrich-Ebert-Stiftung", date: 2024, tier: 2}
+        - {url: "https://www.lrt.lt/en/news-in-english/19/2862230/gps-jamming-incidents-reported-by-pilots-continue-in-lithuania-regulator-says", title: "GPS jamming incidents reported by pilots continue in Lithuania, regulator says", publisher: "LRT", date: 2026-03-09, tier: 3}
+    - text: "Energy exposure after the break with Russia: no LNG terminal of its own (gas comes through Lithuania's Klaipeda), the Incukalns store was at 10.5 TWh on 12 January 2026, 4.7 TWh below the year before, and the Baltic grid is now a European island link exposed to subsea cable attacks."
+      confidence: B
+      sources:
+        - {url: "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2775120-finnish-and-baltic-gas-demand-declines-in-2025", title: "Finnish and Baltic gas demand declines in 2025", publisher: "Argus Media", date: 2026-01, tier: 3}
+        - {url: "https://www.conexus.lv/uploads/filedir/Komercdala/Prezentacijas/Market_presentation_Aug-27-2026.pdf", title: "Market presentation, 27 August 2026", publisher: "Conexus Baltic Grid", date: 2026-08-27, tier: 1}
+
+  paradoxes:
+    - text: "The border that was sealed became a transit lane under siege. The Belarus barrier was finished in 2024 and Silene is closed, yet attempts rose to about 10,000 in the first eight months of 2026 (12,046 in all of 2025) and moved underground: two tunnels in August 2026. Latvia is not a destination, so it spends its scarce guards stopping people bound for Lithuania and Germany, and Minsk, which gains from the pressure, loses nothing by it."
+      confidence: B
+      sources:
+        - {url: "https://www.euronews.com/my-europe/2026/08/21/we-are-guarding-germans-belgians-latvia-stops-28-migrants-from-belarus-after-tunnel-discov", title: "'We are guarding Germans, Belgians': Latvia stops 28 migrants from Belarus after tunnel discovery", publisher: "Euronews", date: 2026-08-21, tier: 3}
+        - {url: "https://pism.pl/publications/belarus-applies-increased-migration-pressure-on-latvia", title: "Belarus applies increased migration pressure on Latvia", publisher: "PISM", date: 2026-07, tier: 2}
+    - text: "Backing Ukraine brought the war's debris to Latvian soil. On 7 May 2026 Ukrainian drones, diverted by Russian electronic warfare, hit an oil depot at Rezekne; the Defence Minister who had delivered the 4.9%-of-GDP budget was forced to resign on 10 May by the Prime Minister herself, and the government fell on 14 May. The support that makes Latvia safe by making Russia lose created the political exposure of the air-defence gap."
+      confidence: B
+      sources:
+        - {url: "https://www.euronews.com/my-europe/2026/05/11/latvian-defence-minister-resigns-following-recent-drone-incursions-that-hit-oil-facilities", title: "Latvian defence minister resigns following recent drone incursions that hit oil facilities", publisher: "Euronews", date: 2026-05-11, tier: 3}
+        - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2026-06-02/latvia-andris-kulbergs-caretaker-government", title: "Latvia: Andris Kulbergs' caretaker government", publisher: "OSW", date: 2026-06-02, tier: 2}
+    - text: "Screening Russian citizens by language protects the state and feeds the grievance it is meant to starve. The exam rule (extended on 20 June 2024 to about 5,000 permanent residents under 75) removes people Moscow could instrumentalise, but 61% failed the first sitting in 2023, the measure confirms Russian state narratives of discrimination, and a campaign courting the Russian-speaking minority took 13.1% (Latvia First) and 11.7% (Sovereign Power) in October 2026. The link between the rule and the vote is our inference."
+      confidence: C
+      sources:
+        - {url: "https://www.saeima.lv/en/news/saeima-news/33685-state-language-exam-requirement-applied-to-wider-circle-of-russian-citizens", title: "State language exam requirement applied to wider circle of Russian citizens", publisher: "Saeima of Latvia", date: 2024-06-20, tier: 1}
+        - {url: "https://news.err.ee/1609090079/thousands-of-russian-citizens-in-latvia-set-to-lose-their-residence-permits", title: "Thousands of Russian citizens in Latvia set to lose their residence permits", publisher: "ERR News", date: 2023-09-05, tier: 3}
+        - {url: "https://www.thestar.com.my/news/world/2026/10/04/latvian-pm-on-track-to-lead-pro-ukraine-coalition-after-election-win", title: "Latvian PM on track to lead pro-Ukraine coalition after election win", publisher: "Reuters (via The Star)", date: 2026-10-04, tier: 3}
+    - text: "Buying self-reliance abroad. The defence build-up is financed by an EU escape clause that pushes the deficit to 4.3% of GDP in 2027 and spent on systems made in Germany (IRIS-T, EUR 600m with Estonia) and the United States (six HIMARS, from 2027) whose delivery slots depend on those suppliers' own rearmament; Washington has already warned Nordic and Baltic buyers of delays."
+      confidence: B
+      sources:
+        - {url: "https://www.mod.gov.lv/en/news/latvia-and-german-company-diehl-defence-sign-purchase-order-procurement-iris-t-medium-range", title: "Latvia and German company Diehl Defence sign purchase order for procurement of IRIS-T medium-range air defence", publisher: "Ministry of Defence of Latvia", date: 2023-11, tier: 1}
+        - {url: "https://www.baltictimes.com/latvia_signs_eur_164_million_contract_on_the_purchase_of_himars_systems", title: "Latvia signs EUR 164 million contract on the purchase of HIMARS systems", publisher: "The Baltic Times", date: 2023, tier: 3}
+        - {url: "https://www.euronews.com/my-europe/2026/04/23/latvian-defence-minister-has-no-doubt-us-would-aid-nato-allies-if-needed", title: "Latvian defence minister has no doubt US would aid NATO allies if needed", publisher: "Euronews", date: 2026-04-23, tier: 3}
+    - text: "Demanding a ban on maritime services for the shadow fleet while its ships are refuelled from Latvian bunkering. Riga asked the EU in February 2026 to ban maritime services for Russian vessels and joined a 14-nation statement treating false-flag tankers as stateless, yet customs officials say Latvian-linked bunkering at sea is not prohibited; our reading is that the 2018 clean-up of banks ended the non-resident money business but left a maritime service niche that Russia's sanctions-evading trade still uses."
+      confidence: C
+      sources:
+        - {url: "https://militarnyi.com/en/news/european-states-claim-control-over-russia-s-shadow-fleet-in-the-baltic-sea/", title: "European states claim control over Russia's shadow fleet in the Baltic Sea", publisher: "Militarnyi", date: 2026-01, tier: 4}
+        - {url: "https://odessa-journal.com/latvian-companies-continue-servicing-russias-shadow-fleet-despite-sanctions", title: "Latvian companies continue servicing Russia's shadow fleet despite sanctions", publisher: "Odessa Journal", date: 2026, tier: 4}
+        - {url: "https://www.fincen.gov/news/news-releases/fincen-names-ablv-bank-latvia-institution-primary-money-laundering-concern-and", title: "FinCEN names ABLV Bank of Latvia an institution of primary money laundering concern and proposes Section 311 special measure", publisher: "FinCEN (US Treasury)", date: 2018-02-13, tier: 1}
+    - text: "Cutting the cable to Russia exposed the cable to the sea. Leaving BRELL (8-9 February 2025, EUR 1.6bn) removed Russian leverage over the Baltic grid, but the new links run under a Baltic Sea where the Vezhen (January 2025, Sweden-Latvia cable) and the Eagle S (December 2024, Estlink 2) were seized over damaged cables, and the same desynchronisation limited short-term electricity trade."
+      confidence: B
+      sources:
+        - {url: "https://www.hhs.se/en/about-us/news/site-publications/2025/baltic-states-energy-independence/", title: "Baltic states cut energy ties with Russia, but new risks emerge", publisher: "Stockholm School of Economics (SITE)", date: 2025, tier: 2}
+        - {url: "https://www.govinfosecurity.com/swedish-authorities-seize-vessel-in-cable-sabotage-probe-a-27388", title: "Swedish authorities seize vessel in cable sabotage probe", publisher: "GovInfoSecurity", date: 2025-01, tier: 3}
+
+  reading: |
+    Latvia is the textbook case of Luttwak's weak-state strategy: a country of 1.9
+    million with a long border and a large Russian-speaking population cannot win
+    an attritional contest with Russia, so it plays the paradoxical game of making
+    itself too costly to attack and too connected to be left alone. Every pillar
+    borrows weight from outside: the Canadian-led brigade and Article 5 for
+    deterrence, EU money and the escape clause for the budget, German and American
+    factories for the kit, Lithuania's terminal for the gas. The strategy is
+    consistent but its cost is dependence on partners whose own commitment is
+    wavering (US rotation gaps, weapons delays, the Pentagon posture review) and on
+    an internal politics that has shown it can fall to a single drone: the May 2026
+    crisis, the 52% turnout and 25% of the vote for two populist parties, one
+    openly pro-Russian, are the soft flank. Russia is graded adversary because the
+    Latvian state itself names it the existential threat and a sponsor of terrorism,
+    not because Riga seeks its regime's end; Belarus is a rival whose pressure is
+    cheap to apply and costly to stop. Two signals that are not rows: the
+    Silina government fell over an air-defence failure, not over foreign policy
+    (Kulbergs, who took over, promised to hold defence at 5% of GDP and keep a hard
+    line on Moscow), and part of the Russian-speaking population is still outside
+    the citizenry (non-citizens were 9% of residents in 2024), so the election
+    measures only part of the minority's weight.

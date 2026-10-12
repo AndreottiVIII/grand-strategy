@@ -1,14 +1,471 @@
 id: EST
 name: Estonia
+short: Estonia
 type: state
-iso2: ee
-wikipedia: https://en.wikipedia.org/wiki/Estonia
+seat: Tallinn
 coords:
 - 24.75
 - 59.44
-seat: Tallinn
+iso2: ee
+wikipedia: https://en.wikipedia.org/wiki/Estonia
 regions:
-- world
-card: stub
-tier: minor
+- central-north-europe
+card: full
+tier: protagonist
+last_verified: '2026-10-12'
 dataset: wikidata
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: 'Make an attack on Estonia unthinkable and, if it comes, survivable: defence spending at 5.43% of GDP in 2026, a forward defence on the Russian border (Baltic Defence Line, 1st Brigade headquarters moved to Johvi 50 km from the border, a 1,000-troop base planned in Narva) and a deep-strike arsenal (HIMARS and Chunmoo launchers).'
+    confidence: A
+    sources:
+    - url: https://www.globalsecurity.org/military/library/news/2026/02/mil-260210-estonia-mod01.htm
+      title: Estonia's defence spending in 2026 will be EUR 2.4 billion, 5.43% of GDP
+      publisher: Ministry of Defence of Estonia (via GlobalSecurity)
+      date: '2026-02-10'
+      tier: 1
+    - url: https://meduza.io/en/news/2026/10/05/estonia-moves-troops-closer-to-russian-border-under-active-defense-program
+      title: Estonia moves troops closer to Russian border under 'active defense' program (citing the Financial Times)
+      publisher: Meduza
+      date: '2026-10-05'
+      tier: 3
+    - url: https://www.kaitseinvesteeringud.ee/en/estonia-procures-hundreds-of-bunkers-for-the-baltic-defence-line/
+      title: Estonia procures hundreds of bunkers for the Baltic Defence Line
+      publisher: Estonian Centre for Defence Investments
+      date: 2026-02
+      tier: 1
+    - url: https://www.kaitseinvesteeringud.ee/en/estonia-to-purchase-at-least-six-south-korean-made-chunmoo-multiple-rocket-launchers/
+      title: Estonia to purchase at least six South Korean-made Chunmoo multiple rocket launchers
+      publisher: Estonian Centre for Defence Investments
+      date: 2025-12
+      tier: 1
+  - rank: 2
+    text: 'Keep allied forces and the US guarantee physically in Estonia: the UK-led NATO battlegroup at Tapa (UK reinforcement brigade promised for 2027), the rotational US presence, and a European hedge (Nordic-Baltic, Polish, German and Korean suppliers) against an American drawdown.'
+    confidence: B
+    sources:
+    - url: https://kaitseministeerium.ee/en/news/united-kingdom-increase-military-presence-estonia
+      title: United Kingdom to increase military presence in Estonia
+      publisher: Ministry of Defence of Estonia
+      date: '2026'
+      tier: 1
+    - url: https://wtop.com/europe/2026/05/natos-top-officer-doesnt-expect-more-american-drawdowns-beyond-the-5000-troops-trump-announced/
+      title: NATO's top officer doesn't expect more American drawdowns beyond the 5,000 troops Trump announced
+      publisher: AP (via WTOP)
+      date: '2026-05-19'
+      tier: 3
+    - url: https://news.err.ee/1609609775/minister-talk-about-us-troop-withdrawal-from-estonia-is-speculation
+      title: 'Minister: Talk about US troop withdrawal from Estonia is ''speculation'''
+      publisher: ERR News
+      date: 2025-01
+      tier: 3
+    - url: https://www.eurointegration.com.ua/rus/news/2026/05/22/7238137/
+      title: Estonia says it is better prepared for Russian aggression than NATO as a whole (Pevkur to Politico)
+      publisher: Evropeiska Pravda
+      date: '2026-05-22'
+      tier: 3
+  - rank: 3
+    text: 'Ensure Russia loses in Ukraine and pays for it: aid fixed at 0.25% of GDP a year in the 2024 bilateral security agreement (0.28% planned for 2026, 0.35% in 2025), confiscation of frozen Russian assets, joint defence-industrial production with Kyiv, and no deal over Ukraine''s head.'
+    confidence: A
+    sources:
+    - url: https://kaitseministeerium.ee/en/news/estonias-military-aid-ukraine-reach-least-028-gdp-2026
+      title: Estonia's military aid to Ukraine to reach at least 0.28% of GDP in 2026
+      publisher: Ministry of Defence of Estonia
+      date: 2026-08
+      tier: 1
+    - url: https://valitsus.ee/en/news/kallas-and-zelenskyy-signed-agreement-security-cooperation-and-long-term-support
+      title: Kallas and Zelenskyy signed an agreement on security cooperation and long-term support
+      publisher: Government of Estonia
+      date: '2024-06-27'
+      tier: 1
+    - url: https://vm.ee/en/news/tsahkna-eu-loan-will-help-cover-ukraines-emergency-needs-and-strengthen-its-position
+      title: 'Tsahkna: EU loan will help cover Ukraine''s emergency needs and strengthen its position'
+      publisher: Ministry of Foreign Affairs of Estonia
+      date: 2025-12
+      tier: 1
+    - url: https://valitsus.ee/en/news/kristen-michal-drone-agreement-ukraine-benefits-both-estonias-defence-industry-and-defence
+      title: 'Kristen Michal: Drone agreement with Ukraine benefits both Estonia''s defence industry and defence capabilities'
+      publisher: Government of Estonia
+      date: 2026-07
+      tier: 1
+  - rank: 4
+    text: 'Cut every strategic dependence on Russia and harden the infrastructure that replaces it: Baltic exit from the Russian grid (February 2025), a ban on Russian gas from 2026, protection of Estlink and the Gulf of Finland cables, Rail Baltica toward 2030.'
+    confidence: B
+    sources:
+    - url: https://www.osw.waw.pl/en/publikacje/osw-commentary/2025-04-15/baltic-de-risking-baltic-states-sever-energy-ties-russia
+      title: 'Baltic de-risking: the Baltic states sever energy ties with Russia'
+      publisher: OSW
+      date: '2025-04-15'
+      tier: 2
+    - url: https://elering.ee/en/node/3792
+      title: Baltic TSOs have sent a notice on decoupling from the Russia-controlled electricity system in February 2025
+      publisher: Elering
+      date: '2024'
+      tier: 1
+    - url: https://en.apa.az/europe/estonia-to-ban-russian-natural-gas-imports-from-2026-478153
+      title: Estonia to ban Russian natural gas imports from 2026
+      publisher: APA
+      date: 2025-09
+      tier: 3
+    - url: https://news.err.ee/1609770327/ministry-rail-baltica-to-be-finished-in-2030-but-project-scope-slashed
+      title: 'Ministry: Rail Baltica to be finished in 2030 but project scope slashed'
+      publisher: ERR News
+      date: '2025'
+      tier: 3
+  - rank: 5
+    text: 'Hold the home front against Russian leverage on the Russian-speaking minority: constitutional removal of local voting rights from Russian and Belarusian citizens (March 2025), a church law forcing the Orthodox Church to cut its administrative tie to the Moscow Patriarchate (Supreme Court upheld, June 2026), closed or restricted border crossings.'
+    confidence: B
+    sources:
+    - url: https://constitutionnet.org/news/estonia-amends-constitution-revoke-voting-rights-citizens-russia-and-belarus
+      title: Estonia amends constitution to revoke voting rights for citizens of Russia and Belarus
+      publisher: ConstitutionNet (International IDEA)
+      date: 2025-03
+      tier: 2
+    - url: https://www.jurist.org/news/2026/06/estonia-supreme-court-upholds-law-restricting-domestic-ties-to-foreign-religious-organizations/
+      title: Estonia Supreme Court upholds law restricting domestic ties to foreign religious organizations
+      publisher: JURIST
+      date: 2026-06
+      tier: 3
+    - url: https://news.err.ee/1610088079/estonia-moves-to-keep-russia-border-checkpoints-closed-overnight
+      title: Estonia moves to keep Russia border checkpoints closed overnight
+      publisher: ERR News
+      date: '2026'
+      tier: 3
+  - rank: 6
+    text: 'Turn a small state into an agenda-setter: put the eastern flank at the top of EU and NATO priorities (Kaja Kallas as EU High Representative; Michal''s line that Europe''s defence now begins on the EU''s eastern border), export a defence industry (EUR 1.4bn a year by 2030) and the digital-state and cyber brand (Locked Shields, CCDCOE).'
+    confidence: B
+    sources:
+    - url: https://news.err.ee/1609886845/eastern-flank-security-must-become-an-eu-priority-estonian-pm-says
+      title: Eastern flank security must become an EU priority, Estonian PM says
+      publisher: ERR News
+      date: '2026'
+      tier: 3
+    - url: https://www.kaitseministeerium.ee/en/news/pevkur-berlin-strong-interest-both-estonia-and-germany-defence-industry-cooperation
+      title: 'Pevkur in Berlin: strong interest from both Estonia and Germany in defence industry cooperation'
+      publisher: Ministry of Defence of Estonia
+      date: 2025-12
+      tier: 1
+    - url: https://www.ccdcoe.org/news/2026/locked-shields-2026-united-the-power-of-41-nations-to-defend-cyberspace
+      title: Locked Shields 2026 united the power of 41 nations to defend cyberspace
+      publisher: NATO Cooperative Cyber Defence Centre of Excellence
+      date: 2026-04
+      tier: 1
+    - url: https://news.err.ee/1609605251/kaja-kallas-agreements-cannot-be-made-over-the-heads-of-ukraine-europe
+      title: 'Kaja Kallas: Agreements cannot be made over the heads of Ukraine, Europe'
+      publisher: ERR News
+      date: 2025-02
+      tier: 3
+  means:
+  - domain: diplomatic
+    text: 'NATO and EU forums used as multipliers: the Article 4 request after the MiG-31 intrusion of 19 Sep 2025, the Kallas post in Brussels, the push for confiscation of Russian assets (the EU kept about EUR 210bn frozen in December 2025, but chose a EUR 90bn borrowed loan instead of the reparations loan Tallinn wanted), bilateral security agreement with Ukraine.'
+    confidence: A
+    sources:
+    - url: https://news.err.ee/1609806488/estonia-requests-nato-article-4-discussions-following-russian-airspace-violations
+      title: Estonia requests NATO Article 4 discussions following Russian airspace violations
+      publisher: ERR News
+      date: '2025-09-19'
+      tier: 3
+    - url: https://vm.ee/en/news/tsahkna-eu-decision-confirms-russia-will-pay-its-actions
+      title: 'Tsahkna: EU decision confirms that Russia will pay for its actions'
+      publisher: Ministry of Foreign Affairs of Estonia
+      date: 2025-12
+      tier: 1
+    - url: https://vm.ee/en/news/tsahkna-eu-loan-will-help-cover-ukraines-emergency-needs-and-strengthen-its-position
+      title: 'Tsahkna: EU loan will help cover Ukraine''s emergency needs and strengthen its position'
+      publisher: Ministry of Foreign Affairs of Estonia
+      date: 2025-12
+      tier: 1
+    - url: https://valitsus.ee/en/news/kallas-and-zelenskyy-signed-agreement-security-cooperation-and-long-term-support
+      title: Kallas and Zelenskyy signed an agreement on security cooperation and long-term support
+      publisher: Government of Estonia
+      date: '2024-06-27'
+      tier: 1
+  - domain: informational
+    text: 'Public attribution and a public intelligence cycle: yearly reports of the Foreign Intelligence Service, the Milrem arson blamed on Russian special services (29 Sep 2026) with the ambassador summoned, the Kapo expulsion of a Russian recruit (Feb 2026); the same reports calibrate the message that Russia ''has no intention'' of attacking in the coming year while treating it as the main threat.'
+    confidence: B
+    sources:
+    - url: https://www.valisluureamet.ee/doc/raport/2026-en.pdf
+      title: Estonian Foreign Intelligence Service public report 2026
+      publisher: Estonian Foreign Intelligence Service
+      date: 2026-02
+      tier: 1
+    - url: https://www.aljazeera.com/news/2026/9/29/estonia-says-russia-ordered-august-arson-attack-on-defence
+      title: Estonia accuses Russia of arson attack on defence firm supplying Ukraine
+      publisher: Al Jazeera
+      date: '2026-09-29'
+      tier: 3
+    - url: https://news.err.ee/1609939259/iss-expels-russian-citizen-it-says-planned-attack-on-estonia
+      title: ISS expels Russian citizen it says planned attack on Estonia
+      publisher: ERR News
+      date: 2026-02
+      tier: 3
+    - url: https://estonianworld.com/?p=85231
+      title: 'Foreign intelligence: Russia has no intention of attacking Estonia this year'
+      publisher: Estonian World
+      date: 2026-02
+      tier: 3
+  - domain: military
+    text: 'Forward defence and long reach: Baltic Defence Line (600 bunkers and about 40 km of obstacles planned by end-2027, joint procurement with Latvia), nine HIMARS and nine Chunmoo launchers contracted (about 300 km range), the 1st Brigade moved to Johvi, a UK-led battlegroup integrated in the Estonian brigade, an air-defence buy from Germany (IRIS-T, about EUR 400m) and a cyber-defence centre of excellence in Tallinn.'
+    confidence: B
+    sources:
+    - url: https://www.kaitseinvesteeringud.ee/en/estonia-procures-hundreds-of-bunkers-for-the-baltic-defence-line/
+      title: Estonia procures hundreds of bunkers for the Baltic Defence Line
+      publisher: Estonian Centre for Defence Investments
+      date: 2026-02
+      tier: 1
+    - url: https://meduza.io/en/news/2026/10/05/estonia-moves-troops-closer-to-russian-border-under-active-defense-program
+      title: Estonia moves troops closer to Russian border under 'active defense' program (citing the Financial Times)
+      publisher: Meduza
+      date: '2026-10-05'
+      tier: 3
+    - url: https://www.kaitseinvesteeringud.ee/en/estonia-to-purchase-at-least-six-south-korean-made-chunmoo-multiple-rocket-launchers/
+      title: Estonia to purchase at least six South Korean-made Chunmoo multiple rocket launchers
+      publisher: Estonian Centre for Defence Investments
+      date: 2025-12
+      tier: 1
+    - url: https://www.kaitseministeerium.ee/en/news/pevkur-germanys-role-regional-security-has-increased
+      title: 'Pevkur: Germany''s role in regional security has increased'
+      publisher: Ministry of Defence of Estonia
+      date: '2023-09-26'
+      tier: 1
+    - url: https://www.ccdcoe.org/news/2026/locked-shields-2026-united-the-power-of-41-nations-to-defend-cyberspace
+      title: Locked Shields 2026 united the power of 41 nations to defend cyberspace
+      publisher: NATO Cooperative Cyber Defence Centre of Excellence
+      date: 2026-04
+      tier: 1
+  - domain: economic
+    text: 'Defence budget and industry as policy: EUR 2.4bn in 2026 with a 4.5% of GDP deficit accepted to pay for it; 90% of Ukraine aid (EUR 110.7m in 2026) spent on orders from Estonian defence firms; export goal EUR 1.4bn by 2030; energy sanctions on Russia (gas ban from 2026) and grid integration with Finland and continental Europe.'
+    confidence: B
+    sources:
+    - url: https://www.globalsecurity.org/military/library/news/2026/02/mil-260210-estonia-mod01.htm
+      title: Estonia's defence spending in 2026 will be EUR 2.4 billion, 5.43% of GDP
+      publisher: Ministry of Defence of Estonia (via GlobalSecurity)
+      date: '2026-02-10'
+      tier: 1
+    - url: https://news.err.ee/1609810425/estonia-approves-budget-with-4-5-percent-of-gdp-deficit-for-2026
+      title: Estonia approves budget with 4.5 percent of GDP deficit for 2026
+      publisher: ERR News
+      date: 2025-09
+      tier: 3
+    - url: https://www.valitsus.ee/en/news/government-approved-2026-state-budget
+      title: Government approved the 2026 state budget
+      publisher: Government of Estonia
+      date: 2025-09
+      tier: 1
+    - url: https://www.kaitseministeerium.ee/en/news/pevkur-berlin-strong-interest-both-estonia-and-germany-defence-industry-cooperation
+      title: 'Pevkur in Berlin: strong interest from both Estonia and Germany in defence industry cooperation'
+      publisher: Ministry of Defence of Estonia
+      date: 2025-12
+      tier: 1
+  constraints:
+  - text: 'Size and distance: the main force sits in Tapa and Jõhvi within reach of Russian artillery and drones, and officials themselves rule out a Narva seizure but not provocations meant to test NATO''s Article 5; reinforcement depends on allied arrival time.'
+    confidence: B
+    sources:
+    - url: https://meduza.io/en/news/2026/10/05/estonia-moves-troops-closer-to-russian-border-under-active-defense-program
+      title: Estonia moves troops closer to Russian border under 'active defense' program (citing the Financial Times)
+      publisher: Meduza
+      date: '2026-10-05'
+      tier: 3
+    - url: https://defence24.com/defence-policy/is-narva-the-next-crimea
+      title: Is Narva the next Crimea?
+      publisher: Defence24
+      date: 2026-05
+      tier: 3
+  - text: 'The American variable: the Pentagon cancelled a brigade rotation to Poland from which some US troops for Estonia were to come (part of the 5,000-troop drawdown of May 2026); Estonian opinion doubts that Trump would rush to defend the Baltics, while Pevkur says he trusts Washington. Deterrence rests on a guarantor whose commitment is the open question.'
+    confidence: B
+    sources:
+    - url: https://wtop.com/europe/2026/05/natos-top-officer-doesnt-expect-more-american-drawdowns-beyond-the-5000-troops-trump-announced/
+      title: NATO's top officer doesn't expect more American drawdowns beyond the 5,000 troops Trump announced
+      publisher: AP (via WTOP)
+      date: '2026-05-19'
+      tier: 3
+    - url: https://nordot.app/1430170821889786233
+      title: '''He doesn''t give a s**t'' - In Estonia, trust in Trump''s US fades in face of Russian threat'
+      publisher: AP (via Nordot)
+      date: '2026'
+      tier: 3
+    - url: https://www.eurointegration.com.ua/rus/news/2026/05/22/7238137/
+      title: Estonia says it is better prepared for Russian aggression than NATO as a whole (Pevkur to Politico)
+      publisher: Evropeiska Pravda
+      date: '2026-05-22'
+      tier: 3
+  - text: 'Hybrid attacks stay below the Article 5 line and the law of the sea limits the answer: GPS jamming, airspace violations, cable cuts and sabotage draw Article 4 consultations and expulsions, but not a military response; the Helsinki court dismissed the Eagle S case for lack of jurisdiction in the EEZ (3 Oct 2025).'
+    confidence: B
+    sources:
+    - url: https://news.err.ee/1609806488/estonia-requests-nato-article-4-discussions-following-russian-airspace-violations
+      title: Estonia requests NATO Article 4 discussions following Russian airspace violations
+      publisher: ERR News
+      date: '2025-09-19'
+      tier: 3
+    - url: https://kyivindependent.com/finland-court-drops-case-against-russian-shadow-fleet-tanker-crew/
+      title: Finland court drops case against Russian shadow fleet tanker crew
+      publisher: Kyiv Independent
+      date: '2025-10-03'
+      tier: 3
+    - url: https://news.err.ee/1609759581/damage-from-russia-s-gps-jamming-amounts-to-over-500-000-estonia-says
+      title: Damage from Russia's GPS jamming amounts to over EUR 500,000, Estonia says
+      publisher: ERR News
+      date: 2025-07
+      tier: 3
+  - text: 'Money and politics: a defence budget of 5.43% of GDP with a 4.5% deficit while the Reform-Eesti 200 coalition polled 12% (record low, May 2026) with a parliamentary election due in 2027; opposition parties (Isamaa, Centre, SDE, EKRE) all poll above Reform.'
+    confidence: B
+    sources:
+    - url: https://www.globalsecurity.org/military/library/news/2026/02/mil-260210-estonia-mod01.htm
+      title: Estonia's defence spending in 2026 will be EUR 2.4 billion, 5.43% of GDP
+      publisher: Ministry of Defence of Estonia (via GlobalSecurity)
+      date: '2026-02-10'
+      tier: 1
+    - url: https://news.err.ee/1609810425/estonia-approves-budget-with-4-5-percent-of-gdp-deficit-for-2026
+      title: Estonia approves budget with 4.5 percent of GDP deficit for 2026
+      publisher: ERR News
+      date: 2025-09
+      tier: 3
+    - url: https://news.err.ee/1610031535/ratings-reform-eesti-200-coalition-rating-falls-to-all-time-low
+      title: 'Ratings: Reform-Eesti 200 coalition rating falls to all-time low'
+      publisher: ERR News
+      date: 2026-05
+      tier: 3
+  - text: 'Fragile links to the rest of Europe: electricity depends on two undersea cables to Finland (Estlink 2 was out for more than seven months after 25 Dec 2024) and new interconnectors will take at least ten years; Rail Baltica is short of money (about EUR 1.2bn in Estonia, finish only by 2030 with a reduced scope).'
+    confidence: B
+    sources:
+    - url: https://news.err.ee/1609568441/search-for-estlink-2-repair-ship-continues
+      title: Search for Estlink 2 repair ship continues
+      publisher: ERR News
+      date: 2025-01
+      tier: 3
+    - url: https://news.err.ee/1609880665/new-electricity-connections-between-estonia-and-finland-latvia-will-take-at-least-10-years
+      title: New electricity connections between Estonia and Finland, Latvia will take at least 10 years
+      publisher: ERR News
+      date: '2025'
+      tier: 3
+    - url: https://eng.lsm.lv/article/economy/transport/25.02.2026-estonian-minister-we-have-an-agreement-with-latvia-that-rail-baltica-will-be-built-by-2030.a636346/
+      title: 'Estonian minister: we have an agreement with Latvia that Rail Baltica will be built by 2030'
+      publisher: LSM (Latvian public broadcaster)
+      date: '2026-02-25'
+      tier: 3
+    - url: https://news.err.ee/1609770327/ministry-rail-baltica-to-be-finished-in-2030-but-project-scope-slashed
+      title: 'Ministry: Rail Baltica to be finished in 2030 but project scope slashed'
+      publisher: ERR News
+      date: '2025'
+      tier: 3
+  - text: 'Rule-of-law and rights limits at home: President Karis twice declined to promulgate the church law and sent it to the Supreme Court, which upheld it by 11 votes to 6 only with a narrow reading; the voting-rights amendment passed 93 to 7 but is criticised on democratic grounds and the Church has gone to the European Court of Human Rights.'
+    confidence: B
+    sources:
+    - url: https://www.jurist.org/news/2026/06/estonia-supreme-court-upholds-law-restricting-domestic-ties-to-foreign-religious-organizations/
+      title: Estonia Supreme Court upholds law restricting domestic ties to foreign religious organizations
+      publisher: JURIST
+      date: 2026-06
+      tier: 3
+    - url: https://constitutionnet.org/news/estonia-amends-constitution-revoke-voting-rights-citizens-russia-and-belarus
+      title: Estonia amends constitution to revoke voting rights for citizens of Russia and Belarus
+      publisher: ConstitutionNet (International IDEA)
+      date: 2025-03
+      tier: 2
+    - url: https://orthochristian.com/180724.html
+      title: Estonian Church and Pukhtitsa Monastery take anti-Church law to European Court of Human Rights
+      publisher: OrthoChristian (Church-aligned outlet, statement of the Church)
+      date: '2026-10-09'
+      tier: 4
+  paradoxes:
+  - text: Forward defence moves the force toward the enemy. The 1st Brigade headquarters now sits 50 km from the border and a base for 1,000 troops is being built in Narva, to 'keep the war away from Estonian territory'; the same moves put the main force within Russian reach and are exactly the target a provocation-to-test-Article-5 would choose.
+    confidence: B
+    sources:
+    - url: https://meduza.io/en/news/2026/10/05/estonia-moves-troops-closer-to-russian-border-under-active-defense-program
+      title: Estonia moves troops closer to Russian border under 'active defense' program (citing the Financial Times)
+      publisher: Meduza
+      date: '2026-10-05'
+      tier: 3
+    - url: https://defence24.com/defence-policy/is-narva-the-next-crimea
+      title: Is Narva the next Crimea?
+      publisher: Defence24
+      date: 2026-05
+      tier: 3
+  - text: Enforcing the sanctions regime exposes the limits of the allied answer. Stopping the shadow-fleet tanker Jaguar (14 May 2025) brought a Russian Su-35 into NATO airspace, and the Eagle S case was thrown out in Helsinki for lack of jurisdiction; the more Tallinn acts at sea, the more visible it becomes that neither the law nor NATO has a ready response below the threshold of war.
+    confidence: B
+    sources:
+    - url: https://kyivindependent.com/russian-jet-violated-nato-territory-after-estonia-tried-to-detain-shadow-fleet-tanker/
+      title: Russian jet violated NATO territory after Estonia tried to detain shadow fleet tanker
+      publisher: Kyiv Independent
+      date: 2025-05
+      tier: 3
+    - url: https://novayagazeta.eu/en/articles/2025/05/15/estonia-says-russia-sent-fighter-jet-to-escort-its-shadow-fleet-tanker-in-baltic-sea-en-news
+      title: Estonia says Russia sent fighter jet to escort its 'shadow fleet' tanker in Baltic Sea
+      publisher: Novaya Gazeta Europe
+      date: '2025-05-15'
+      tier: 3
+    - url: https://kyivindependent.com/finland-court-drops-case-against-russian-shadow-fleet-tanker-crew/
+      title: Finland court drops case against Russian shadow fleet tanker crew
+      publisher: Kyiv Independent
+      date: '2025-10-03'
+      tier: 3
+  - text: 'Leaving the Russian grid traded one dependence for another. The Baltic desynchronisation (9 Feb 2025) ended Moscow''s hold over the Baltic grid, but the electricity Estonia now relies on arrives through a few cables in the Gulf of Finland, which Russia''s shadow fleet can reach: Estlink 2 was cut on 25 Dec 2024, six weeks before the exit, and stayed out for more than seven months, and a Helsinki-Tallinn data cable was cut again on 31 Dec 2025.'
+    confidence: B
+    sources:
+    - url: https://www.osw.waw.pl/en/publikacje/osw-commentary/2025-04-15/baltic-de-risking-baltic-states-sever-energy-ties-russia
+      title: 'Baltic de-risking: the Baltic states sever energy ties with Russia'
+      publisher: OSW
+      date: '2025-04-15'
+      tier: 2
+    - url: https://www.hhs.se/en/about-us/news/site-publications/2025/baltic-states-energy-independence/
+      title: Baltic states cut energy ties with Russia, but new risks emerge
+      publisher: Stockholm School of Economics in Riga
+      date: '2025'
+      tier: 2
+    - url: https://news.err.ee/1609568441/search-for-estlink-2-repair-ship-continues
+      title: Search for Estlink 2 repair ship continues
+      publisher: ERR News
+      date: 2025-01
+      tier: 3
+    - url: https://kyivindependent.com/finland-court-drops-case-against-russian-shadow-fleet-tanker-crew/
+      title: Finland court drops case against Russian shadow fleet tanker crew
+      publisher: Kyiv Independent
+      date: '2025-10-03'
+      tier: 3
+    - url: https://www.bluewin.ch/en/news/international/submarine-cable-damaged-finland-detains-ship-3030897.html
+      title: 'Submarine cable damaged: Finland detains ship'
+      publisher: blue News (agency report)
+      date: '2025-12-31'
+      tier: 3
+  - text: Protecting the state from Russian influence feeds the narrative it fears. Removing local voting rights from Russian citizens and stateless 'grey passport' holders and forcing the Church to cut its ties to Moscow were meant to close levers for Russian influence; Russian media reframe them as persecution of Orthodox believers, a list led by Mihhail Stalnuhhin, expelled from the Centre Party, won the most seats in Narva in 2025, and the Church is at the European Court of Human Rights.
+    confidence: B
+    sources:
+    - url: https://news.err.ee/1609645295/gallery-riigikogu-voting-rights-removal-decision-gets-standing-ovation
+      title: 'Gallery: Riigikogu voting rights removal decision gets standing ovation'
+      publisher: ERR News
+      date: '2025-03-26'
+      tier: 3
+    - url: https://news.err.ee/1609834311/mihhail-stalnuhhin-s-electoral-list-wins-most-seats-in-narva
+      title: Mihhail Stalnuhhin's electoral list wins most seats in Narva
+      publisher: ERR News
+      date: 2025-10
+      tier: 3
+    - url: https://www.propastop.org/?p=28064
+      title: Russian media frame the Supreme Court ruling on the church law as persecution (15 Jun 2026)
+      publisher: Propastop
+      date: '2026-06-15'
+      tier: 3
+    - url: https://orthochristian.com/180724.html
+      title: Estonian Church and Pukhtitsa Monastery take anti-Church law to European Court of Human Rights
+      publisher: OrthoChristian (Church-aligned outlet, statement of the Church)
+      date: '2026-10-09'
+      tier: 4
+  - text: Being the loudest voice for Ukraine makes Europe's role harder to secure. Kallas and Tsahkna insist that nothing is decided about Ukraine without Ukraine and Europe, and Tallinn pledges 0.25% of GDP a year to Kyiv; but the guarantor it cannot do without is the one running the peace track, and an open argument with Washington is the risk Estonia carries for Europe.
+    confidence: C
+    sources:
+    - url: https://news.err.ee/1609605251/kaja-kallas-agreements-cannot-be-made-over-the-heads-of-ukraine-europe
+      title: 'Kaja Kallas: Agreements cannot be made over the heads of Ukraine, Europe'
+      publisher: ERR News
+      date: 2025-02
+      tier: 3
+    - url: https://valitsus.ee/en/news/kallas-and-zelenskyy-signed-agreement-security-cooperation-and-long-term-support
+      title: Kallas and Zelenskyy signed an agreement on security cooperation and long-term support
+      publisher: Government of Estonia
+      date: '2024-06-27'
+      tier: 1
+    - url: https://nordot.app/1430170821889786233
+      title: '''He doesn''t give a s**t'' - In Estonia, trust in Trump''s US fades in face of Russian threat'
+      publisher: AP (via Nordot)
+      date: '2026'
+      tier: 3
+  reading: 'Estonia runs the grand strategy of a front-line state that has decided to spend its way to being un-attackable rather than hope for a guarantor: 5.43% of GDP, a fortified border, a deep-strike arsenal and a dense net of partners (UK, Finland, Poland, Germany, Korea) around an American umbrella it publicly trusts and privately hedges. The Luttwak pattern is that each hardening has a cost that returns on the same front: the forward posture raises exposure, enforcement at sea shows the limits of the law, grid independence concentrates risk in cables, and the defence of the nation-state against Russian leverage on the minority hands Moscow a grievance narrative. Russia is graded a rival, not an adversary: Estonia seeks deterrence, a Russian defeat in Ukraine and a Russia that pays, not the end of the Russian state, and keeps an embassy and a border regime open. The Kremlin''s line that Russia ''poses no threat'' to Estonia and the Estonian intelligence judgement that Moscow has no
+    intention of attacking in the coming year are signals, not rows: both sides are reading the other''s limits. The open question for 2027 is the American presence after the end-2026 rotation and an election that a weak coalition may lose.'
