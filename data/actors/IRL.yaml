@@ -8,7 +8,73 @@ coords:
 - 53.35
 seat: Dublin
 regions:
-- world
-card: stub
+- western-south-europe
+card: full
 tier: minor
 dataset: wikidata
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Use the EU Council presidency of July-December 2026 to set the Union's agenda on competitiveness, values and security, and to broker EU decisions on Russia (Irish officials brokered the compromise that opened the 21st sanctions package on 23 July 2026)."
+      confidence: B
+      sources:
+        - {url: "https://irish-presidency.consilium.europa.eu/en/news/government-publishes-policy-programme-for-the-irish-presidency-of-the-council-of-the-eu/", title: "Government publishes Policy Programme for the Irish Presidency of the Council of the EU", publisher: "Irish Presidency of the Council of the EU", date: 2026-06-10, tier: 1}
+        - {url: "https://brusselssignal.eu/2026/07/ireland-floats-smaller-and-more-frequent-eu-sanctions-on-russia/", title: "Ireland floats smaller and more frequent EU sanctions on Russia", publisher: "Brussels Signal", date: 2026-07, tier: 3}
+    - rank: 2
+      text: "Keep the Northern Ireland settlement stable with London: the Good Friday Agreement, the Windsor Framework, the UK-EU SPS reset that would remove routine agri-food checks on the Irish Sea, and the September 2025 legacy framework that replaces the 2023 Legacy Act."
+      confidence: B
+      sources:
+        - {url: "https://www.gov.uk/government/news/uk-and-irish-governments-announce-legacy-framework-to-enable-truth-for-families-of-the-troubles", title: "UK and Irish governments announce legacy framework to enable truth for families of the Troubles", publisher: "GOV.UK", date: 2025-09-19, tier: 1}
+        - {url: "https://www.irishnews.com/news/politics/broad-welcome-for-breakthrough-eu-uk-reset-deal-OS5NQ7JX7JFZPF4FJYE6VP7MNQ/", title: "Broad welcome for breakthrough EU-UK reset deal", publisher: "The Irish News", date: 2025-05-19, tier: 3}
+    - rank: 3
+      text: "Keep the US investment base and the low-tax model that depends on it (pharma and tech multinationals) while refusing alignment with Washington on Gaza and on the use of Shannon Airport."
+      confidence: C
+      sources:
+        - {url: "https://fidelity.com/news/article/default/202504030200RTRSNEWSCOMBINED_L5N3QE1G0_1", title: "Small-town Ireland nervous as Trump seeks to lure pharma investment to US", publisher: "Reuters (via Fidelity)", date: 2025-04-03, tier: 3}
+        - {url: "https://www.echolive.ie/nationalnews/arid-41885839.html", title: "Number of US troops passing through Shannon Airport plunges by 42% in 2026", publisher: "Echo Live", date: 2026-07, tier: 3}
+
+  means:
+    - domain: legal
+      text: "The Israeli Settlements (Prohibition of Importation of Goods) Act 2026 bans imports of goods from Israeli settlements. The President signed it on 23 July 2026; services were left out because the government said a services ban had to be legally watertight."
+      confidence: B
+      sources:
+        - {url: "https://president.ie/en/media-library/news-releases/president-connolly-signs-the-israeli-settlements-in-the-occupied-palestinian-territory-prohibition-of-importation-of-goods-bill-2026", title: "President Connolly signs the Israeli Settlements in the Occupied Palestinian Territory (Prohibition of Importation of Goods) Bill 2026", publisher: "President of Ireland", date: 2026-07-23, tier: 1}
+        - {url: "https://www.irishtimes.com/politics/2026/07/23/governments-occupied-territories-bill-signed-into-law-by-president/", title: "Government's Occupied Territories Bill signed into law by President", publisher: "The Irish Times", date: 2026-07-23, tier: 3}
+    - domain: economic
+      text: "Ukraine support: a EUR 125m bilateral package for 2026 (EUR 100m for non-lethal military equipment, EUR 25m for energy and critical infrastructure), announced on 23 July 2026. Non-lethal military aid is the line that keeps the neutrality position intact."
+      confidence: C
+      sources:
+        - {url: "https://kyivindependent.com/ireland-pledges-125-million-euros-for-ukraine-as-martin-says-alumina-probe-found-no-definitive-weapons-link/", title: "Ireland pledges 125 million euros for Ukraine as Martin says alumina probe found no definitive weapons link", publisher: "Kyiv Independent", date: 2026-07-23, tier: 3}
+    - domain: diplomatic
+      text: "Partnership for Peace with NATO rather than membership: joint training and peacekeeping with the alliance without a defence commitment. The Defence Forces budget is set to rise from EUR 1.1bn to EUR 1.5bn by 2028."
+      confidence: C
+      sources:
+        - {url: "https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/as-europes-neutral-states-shift-closer-to-nato-ireland-approaches-a-turning-point-for-its-security/", title: "As Europe's neutral states shift closer to NATO, Ireland approaches a turning point for its security", publisher: "Atlantic Council", date: 2025, tier: 2}
+
+  constraints:
+    - text: "Neutrality and the triple lock: sending more than 12 Defence Forces personnel abroad needs a Cabinet decision, a Dail vote and a UN mandate. The Defence (Amendment) Bill 2026 would drop the UN mandate and raise the no-vote limit from 12 to 50, but it was deferred until after the summer recess."
+      confidence: B
+      sources:
+        - {url: "https://www.irishtimes.com/politics/2026/06/24/martin-tells-fianna-fail-meeting-triple-lock-bill-will-be-deferred-until-autumn/", title: "Martin tells Fianna Fáil meeting triple-lock Bill will be deferred until autumn", publisher: "The Irish Times", date: 2026-06-24, tier: 3}
+        - {url: "https://www.irishtimes.com/politics/2026/08/09/too-much-heat-not-enough-light-in-debate-on-ending-triple-lock-says-taoiseach/", title: "'Too much heat, not enough light' in debate on ending triple lock, says Taoiseach", publisher: "The Irish Times", date: 2026-08-09, tier: 3}
+    - text: "Defence capacity is thin: about 75% of international data cables pass through or near Irish waters, yet Dublin has only eight patrol ships to guard them, so monitoring depends partly on partner navies and air patrols."
+      confidence: C
+      sources:
+        - {url: "https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/as-europes-neutral-states-shift-closer-to-nato-ireland-approaches-a-turning-point-for-its-security/", title: "As Europe's neutral states shift closer to NATO, Ireland approaches a turning point for its security", publisher: "Atlantic Council", date: 2025, tier: 2}
+    - text: "The US tariff threat hits the export base: pharmaceuticals were EUR 58bn of EUR 73bn of Irish goods exports to the United States in 2024, and the 2025 tariff threat put about 75,000 pharma jobs at risk."
+      confidence: C
+      sources:
+        - {url: "https://fidelity.com/news/article/default/202504030200RTRSNEWSCOMBINED_L5N3QE1G0_1", title: "Small-town Ireland nervous as Trump seeks to lure pharma investment to US", publisher: "Reuters (via Fidelity)", date: 2025-04-03, tier: 3}
+        - {url: "https://www.fortune.com/europe/2025/06/23/ireland-sees-thousands-of-jobs-at-risk-us-pharma-tariffs-apple-pfizer-donald-trump", title: "Ireland sees thousands of jobs at risk from US pharma tariffs", publisher: "Fortune", date: 2025-06-23, tier: 3}
+
+  paradoxes:
+    - text: "Neutrality is meant to keep Ireland out of other states' wars, yet its cable monitoring rests partly on foreign navies and air forces, and its Israel policy (settlement goods ban, ICJ intervention) cost it Israel's embassy in Dublin. The more it asserts independence, the more it depends on partners it criticises."
+      confidence: C
+      sources:
+        - {url: "https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/as-europes-neutral-states-shift-closer-to-nato-ireland-approaches-a-turning-point-for-its-security/", title: "As Europe's neutral states shift closer to NATO, Ireland approaches a turning point for its security", publisher: "Atlantic Council", date: 2025, tier: 2}
+        - {url: "https://www.newarab.com/news/israel-not-welcomed-here-ireland-hits-back-over-embassy-row", title: "'Israel not welcomed here': Ireland hits back over embassy row", publisher: "The New Arab", date: 2024-12-15, tier: 3}
+
+  reading: |
+    Ireland is a small EU member outside NATO, with a neutral military tradition, a Partnership for Peace relationship, and an economy built on US multinationals. Its strategy uses the EU as its anchor and the 2026 Council presidency as its lever, keeps the UK relationship stable through the Northern Ireland framework, and takes a visible line on Gaza that has cost it an embassy relationship with Israel. Its thin defence means the Russia question is handled mainly through EU sanctions and partner monitoring of undersea cables.
