@@ -81,14 +81,32 @@
     .forEach(a => grpData.appendChild(new Option(a.name, a.id)));
   povSel.appendChild(grpData);
   povSel.onchange = () => { if (povSel.value) setPov(povSel.value); else goHome(); };
-  function goHome(keepLens) { if (!keepLens) { homeLens = null; orgSel.value = ""; issueSel.value = ""; } pov = null; mapMode = "world"; povSel.value = ""; window.scrollTo(0, 0); renderLegend(); setView("map"); }
-  function setPov(id) {
-    pov = id; povSel.value = id; homeLens = null; orgSel.value = ""; issueSel.value = "";
-    document.getElementById("home-menus").style.display = "none";
-    lens = hasStances(id) ? "posture" : hasRecog(id) ? "recognition" : hasVotes(id) ? "votes" : "clubs";
-    mapMode = hasStances(id) ? "near" : "world";
-    renderLegend(); setView("map");
+  // every screen is a URL (#/view/SRB/posture, #/dossier/SRB, #/organisation/org-eu ...) so the browser's back and forward work
+  function navigate(h) { if (location.hash === h) apply(h); else location.hash = h; }
+  window.addEventListener("hashchange", () => apply(location.hash));
+  function apply(h) {
+    const [kind, id, extra] = h.replace(/^#\/?/, "").split("/").map(decodeURIComponent);
+    const clear = () => { homeLens = null; orgSel.value = ""; issueSel.value = ""; pov = null; povSel.value = ""; };
+    if (kind === "view" && actors[id]) {
+      pov = id; povSel.value = id; homeLens = null; orgSel.value = ""; issueSel.value = "";
+      lens = ["posture", "recognition", "votes", "clubs"].includes(extra) ? extra : hasStances(id) ? "posture" : hasRecog(id) ? "recognition" : hasVotes(id) ? "votes" : "clubs";
+      mapMode = hasStances(id) ? "near" : "world";
+      renderLegend(); setView("map");
+    } else if (kind === "dossier" && actors[id]) {
+      renderDossier(id);
+    } else if (kind === "organisation" && actors[id]) {
+      clear(); homeLens = { kind: "org", id }; orgSel.value = id; mapMode = "world"; renderLegend(); setView("map");
+    } else if (kind === "issue" && ISSUES[id]) {
+      clear(); homeLens = { kind: "issue", id }; issueSel.value = id; mapMode = "world"; renderLegend(); setView("map");
+    } else if (kind === "organisations") setView("orgs");
+    else if (kind === "issues") setView("issues");
+    else if (kind === "luttwak") setView("luttwak");
+    else { clear(); mapMode = "world"; renderLegend(); setView("map"); }
+    window.scrollTo(0, 0);
   }
+  function goHome() { navigate("#/"); }
+  function setPov(id) { navigate(`#/view/${id}`); }
+  function showDossier(id) { navigate(`#/dossier/${id}`); }
 
   const orgSel = document.getElementById("orgsel"), issueSel = document.getElementById("issuesel");
   // official member counts, so the menu says when a list is short (Wikidata coverage is uneven)
@@ -99,10 +117,11 @@
     .sort((x, y) => (y.ok - x.ok) || (y.n - x.n));
   orgs.forEach(o => { const opt = new Option(`${o.a.name} (${o.n}${o.exp && o.n < o.exp ? ` of ${o.exp}` : ""})`, o.a.id); if (!o.ok) { opt.disabled = true; opt.text += " - list incomplete"; } orgSel.add(opt); });
   Object.entries(ISSUES).forEach(([k, v]) => issueSel.add(new Option(v.label, k)));
-  orgSel.onchange = () => { issueSel.value = ""; homeLens = orgSel.value ? { kind: "org", id: orgSel.value } : null; goHome(true); };
-  issueSel.onchange = () => { orgSel.value = ""; homeLens = issueSel.value ? { kind: "issue", id: issueSel.value } : null; goHome(true); };
-  document.querySelectorAll(".tab").forEach(b => b.onclick = () => setView(b.dataset.view));
-  document.querySelectorAll("#topnav a").forEach(a => a.onclick = ev => { ev.preventDefault(); const pg = a.dataset.page; if (pg === "map") goHome(); else setView(pg); });
+  orgSel.onchange = () => { orgSel.value ? showOrg(orgSel.value) : goHome(); };
+  issueSel.onchange = () => { issueSel.value ? showIssue(issueSel.value) : goHome(); };
+  document.querySelectorAll(".tab").forEach(b => b.onclick = () => b.dataset.view === "dossier" ? showDossier(pov || fullActors[0].id) : (pov ? setPov(pov) : goHome()));
+  const PAGE_HASH = { map: "#/", orgs: "#/organisations", issues: "#/issues", luttwak: "#/luttwak" };
+  document.querySelectorAll("#topnav a").forEach(a => { a.href = PAGE_HASH[a.dataset.page]; a.onclick = ev => { ev.preventDefault(); navigate(PAGE_HASH[a.dataset.page]); }; });
   document.getElementById("home").onclick = ev => { ev.preventDefault(); goHome(); };
   function setView(v, render = true) {
     view = v;
@@ -117,7 +136,7 @@
     if (v === "luttwak") renderLuttwakPage();
     if (!render) return;
     if (v === "map") drawMap();
-    if (v === "dossier") showDossier(pov || fullActors[0].id);
+    if (v === "dossier") renderDossier(pov || fullActors[0].id);
   }
 
   const stanceOf = id => pov ? (data.stances[pov] || []).find(s => s.toward === id) : undefined;
@@ -213,11 +232,22 @@
       defs.append("pattern").attr("id", "s-" + g).attr("width", 4).attr("height", 4).attr("patternUnits", "userSpaceOnUse")
         .append("circle").attr("cx", 2).attr("cy", 2).attr("r", r).attr("fill", color);
     });
-    // home: every country wears its flag of today
-    if (!pov && !homeLens) world.features.forEach(f => {
+    // home: every country wears its flag of today, Boetti-style - one flag per piece of land (the mainland,
+    // Alaska, each island), each centred on its own piece, at a resolution that survives the zoom
+    const flagHome = !pov && !homeLens;
+    const pieces = [];
+    if (flagHome) world.features.forEach(f => {
       if (!iso2[f.id]) return;
-      defs.append("pattern").attr("id", "flag-" + f.id).attr("width", 1).attr("height", 1).attr("patternContentUnits", "objectBoundingBox")
-        .append("image").attr("href", `https://flagcdn.com/w320/${iso2[f.id]}.png`).attr("width", 1).attr("height", 1).attr("preserveAspectRatio", "xMidYMid slice");
+      const polys = f.geometry.type === "MultiPolygon" ? f.geometry.coordinates : [f.geometry.coordinates];
+      polys.forEach((coords, i) => {
+        const piece = { type: "Feature", id: f.id, i, properties: f.properties, geometry: { type: "Polygon", coordinates: coords } };
+        const [[x0, y0], [x1, y1]] = path.bounds(piece);
+        if (!isFinite(x0)) return;
+        const w = Math.max(x1 - x0, (y1 - y0) * 1.5), px = w < 30 ? 160 : w < 90 ? 320 : w < 220 ? 640 : 1280;
+        defs.append("pattern").attr("id", `flag-${f.id}-${i}`).attr("width", 1).attr("height", 1).attr("patternContentUnits", "objectBoundingBox")
+          .append("image").attr("href", `https://flagcdn.com/w${px}/${iso2[f.id]}.png`).attr("width", 1).attr("height", 1).attr("preserveAspectRatio", "xMidYMid slice");
+        pieces.push(piece);
+      });
     });
     Object.entries(VFRAC).forEach(([c, [frac, ink]]) => {
       const r = Math.sqrt(16 * frac / Math.PI);
@@ -242,14 +272,17 @@
       g.selectAll(".seats rect").attr("transform", a => { const [x, y] = proj(a.coords); return `translate(${x},${y}) scale(${1 / k}) translate(${-x},${-y})`; });
     }
 
-    svg.append("rect").attr("width", width).attr("height", height).attr("fill", css("--paper"));
+    svg.append("rect").attr("width", width).attr("height", height).attr("fill", flagHome ? css("--sea") : css("--paper"));
     const g = svg.append("g");
 
     const countries = g.append("g");
+    // the flag pieces go under the country outlines, which stay transparent on top so hover and click still work
+    countries.selectAll("path.flag").data(pieces).join("path").attr("class", "flag")
+      .attr("d", path).attr("fill", p => `url(#flag-${p.id}-${p.i})`).attr("pointer-events", "none");
     // base: every country in the land tint
     countries.selectAll("path.c").data(world.features).join("path").attr("class", "c")
-      .attr("d", path).attr("fill", f => !pov && !homeLens && iso2[f.id] ? `url(#flag-${f.id})` : land)
-      .attr("stroke", css("--coast")).attr("stroke-width", .5).attr("stroke-linejoin", "round")
+      .attr("d", path).attr("fill", f => flagHome ? (iso2[f.id] ? "transparent" : land) : land)
+      .attr("stroke", flagHome ? css("--sea-ink") : css("--coast")).attr("stroke-width", .5).attr("stroke-linejoin", "round")
       .style("cursor", f => actors[f.id] ? "pointer" : "default")
       .on("mousemove", (ev, f) => { tipFor(f.id, f.properties.name, ev); lightCard(f.id); })
       .on("mouseleave", () => { hideTip(); lightCard(null); })
@@ -343,7 +376,7 @@
       : `<button class="frame-btn is-on" data-mode="world">The world of today</button>`);
     ctl.selectAll("button[data-home]").on("click", () => goHome());
     ctl.selectAll("button[data-mode]").on("click", ev => { mapMode = ev.currentTarget.dataset.mode; frame(mapMode); });
-    ctl.selectAll("button[data-lens]").on("click", ev => { lens = ev.currentTarget.dataset.lens; renderLegend(); drawMap(); });
+    ctl.selectAll("button[data-lens]").on("click", ev => navigate(`#/view/${pov}/${ev.currentTarget.dataset.lens}`));
     frame(mapMode);
     rescale(d3.zoomTransform(svg.node()).k || 1);
     renderRelPanel();
@@ -392,8 +425,8 @@
   }
 
   // ---------- pages: organisations, issues, Luttwak
-  function showOrg(id) { homeLens = { kind: "org", id }; orgSel.value = id; issueSel.value = ""; goHome(true); }
-  function showIssue(id) { homeLens = { kind: "issue", id }; issueSel.value = id; orgSel.value = ""; goHome(true); }
+  function showOrg(id) { navigate(`#/organisation/${id}`); }
+  function showIssue(id) { navigate(`#/issue/${id}`); }
   function renderOrgsPage() {
     const el = document.getElementById("page-orgs");
     el.innerHTML = `<h2>Organisations</h2><p class="lede">Who belongs to what. Memberships come from each organisation's official member list, with Wikidata as the index; where a list is still short the count says so. Pick one to see its members on the map.</p>
@@ -422,41 +455,18 @@
     el.dataset.done = "1";
     el.innerHTML = `
       <h2>Luttwak, the lamp</h2>
-      <p class="lede">This atlas reads the world through Edward N. Luttwak's idea of grand strategy. His grid forces the questions that a map of flags leaves out: what does each actor want, with what means, against which constraints, and where do its own moves turn against it. Everything on these pages - the cards, the postures, the bonds, the paradoxes - descends from the ideas set out below.</p>
-
-      <h3>Who he is</h3>
-      <p>Edward Nicolae Luttwak was born on 4 November 1942 in Arad, in Romanian Transylvania, into a Jewish family that left for Italy after the war; he grew up in Palermo and Milan, was schooled in England, and took his first degree in economics at the London School of Economics in 1964. His doctorate came later, from Johns Hopkins in 1975, with the thesis that became <i>The Grand Strategy of the Roman Empire</i>. By then he had already written the book that made his name at twenty-six, <i>Coup d'État: A Practical Handbook</i> (1968), a cool manual of how governments are seized, and the <i>Dictionary of Modern War</i> (1971).</p>
-      <p>From the 1970s he worked in Washington as a consultant to the Office of the Secretary of Defense, the National Security Council and the State Department, and for the armed forces of several allied countries, while holding the chair of strategy at the Center for Strategic and International Studies. He has never been a professor by trade: he is a practitioner who writes, with a taste for the unexpected argument and for the primary source in its own language. He reads several, including the Latin and Greek of his two imperial histories. Outside strategy he has run a cattle ranch in Bolivia and written on economics (<i>The Endangered American Dream</i>, 1993; <i>Turbo-Capitalism</i>, 1999). The books that matter here are <i>Strategy: The Logic of War and Peace</i> (1987, revised 2001), the Roman (1976) and Byzantine (2009) grand strategies, <i>The Grand Strategy of the Soviet Union</i> (1983) and <i>The Rise of China vs. the Logic of Strategy</i> (2012).</p>
-
+      <p class="lede">This atlas reads the world through Edward N. Luttwak's idea of grand strategy. Not because he is always right, but because his grid forces the questions that a map of flags leaves out: what does each actor want, with what, against what, and where do its own moves turn against it.</p>
       <h3>The paradoxical logic</h3>
-      <p>The heart of <i>Strategy</i> is a single observation. In ordinary life, linear logic rules: the shorter road is better, the stronger tool works best, more of a good thing is better. In any contest between conscious adversaries that logic fails, because the other side thinks and reacts. The bad road may be the good road precisely because it is unguarded. The weapon that works invites the countermeasure that makes it useless. Surprise is possible only by accepting costs that would be absurd against an inert obstacle - moving at night, through mud, with tired troops - and that is why it works. The Roman adage <i>si vis pacem, para bellum</i> is not a slogan but a statement of the logic: to obtain peace one prepares its opposite.</p>
-      <p>The same logic has a temporal form, the <b>culminating point</b>. Every success contains the seed of its reversal: the advancing army lengthens its supply lines and shortens the enemy's; the victorious power frightens the neutrals into a coalition; the sanction that bites teaches the target to do without. Pushed past the culminating point, victory turns into defeat without any mistake having been made. That is why each card in this atlas ends with <b>paradoxes</b>: the places where an actor's instruments undermine its own goals. Serbia's veto on Kosovo needs Moscow and Beijing, and Moscow and Beijing close the road to Brussels. Kosovo's proofs of statehood in the north cost it the patrons who could confer statehood. Croatia's deterrence is the arms race it denies.</p>
-
-      <h3>The levels, and their harmony</h3>
-      <p>Luttwak's second structure is vertical. Conflict runs on levels that interact but do not add up: the <b>technical</b> (a weapon against a weapon), the <b>tactical</b> (units in combat), the <b>operational</b> (the scheme of a campaign), the <b>theatre</b> (a whole front, with its geography) and, above them all, <b>grand strategy</b>, where military force meets diplomacy, economics, alliances, intelligence and persuasion, and where a state's entire external conduct can be read as one design. Success at one level can be undone at a higher one: a brilliant tactical victory that provokes a wider war, a superior technology that loses the theatre because allies defect. Strategy works when the levels are in harmony; most strategic failures are disharmonies between them. The atlas lives on the top level only. It does not model battles; it models what actors want, the four domains of means (diplomatic, informational, military, economic), what constrains them, and how they see each other.</p>
-
-      <h3>Attrition and manoeuvre</h3>
-      <p>Across all the levels Luttwak distinguishes two styles. <b>Attrition</b> wears the adversary down by superior resources applied head-on; it is reliable, slow, expensive, and needs no understanding of the enemy. <b>Relational manoeuvre</b> aims at the adversary's specific weaknesses - his doctrine, his habits, his seams - and can win cheaply, but it fails badly when the reading of the enemy is wrong. Great powers rich in resources drift toward attrition; small or poor actors must manoeuvre. In the atlas this is why the cards of small states (Kosovo, Montenegro, Albania) read as bets on usefulness and alignment, and why the paradoxes of the great powers are about the coalitions their weight provokes.</p>
-
-      <h3>Rome and Byzantium</h3>
-      <p>Luttwak's two histories are the long-run demonstration of the method. <i>The Grand Strategy of the Roman Empire</i> (1976) reads four centuries of frontier policy as three successive systems: the hegemonic empire of the Julio-Claudians, which ruled through client kings and a mobile army that rarely needed to fight; the preclusive frontier of the Antonines, with its fortified lines and legions spread thin along them; and the defence in depth of the late empire, which conceded ground and held strongpoints behind it. The point is that the same empire, with roughly the same forces, chose different ways of converting force into security as its enemies changed. <i>The Grand Strategy of the Byzantine Empire</i> (2009) describes how the eastern half survived a further thousand years with far less: by avoiding decisive battle, buying and dividing enemies, using intelligence, religion and ceremony as instruments, fighting to exhaust rather than annihilate, and treating every enemy as a possible future ally. Ancient historians have debated how deliberate these designs were; what the atlas takes from them is the habit of reading a whole external policy as one system, dated and revisable.</p>
-
-      <h3>Geo-economics and post-heroic war</h3>
-      <p>Two shorter essays extend the logic beyond war. "From Geopolitics to Geo-Economics" (1990) argued that with the superpower rivalry fading, states would pursue adversarial aims through economic means - subsidies, trade rules, control of technology - with the grammar of commerce but the logic of conflict. That is the logic of the <b>dependency</b> layer in this atlas: gas contracts, pipelines, loans, arms, remittances, read as instruments rather than as markets. "Toward Post-Heroic Warfare" (1995) observed that advanced democracies with small families will not accept casualties, so their wars become distant, aerial, delegated. "Give War a Chance" (1999) drew the harder conclusion that outside intervention which freezes a war before either side is exhausted often prolongs the conflict it means to stop: a thesis still argued over, and one that explains why "frozen" disputes are so prominent on these maps.</p>
-
-      <h3>China and great-state autism</h3>
-      <p><i>The Rise of China vs. the Logic of Strategy</i> (2012) applies the paradoxical logic to the present. A power that grows in economic and military strength at once, Luttwak argues, triggers the reactions of everyone around it; its rise is self-limiting unless it deliberately slows one of the two. He coins <b>great-state autism</b> for the inward-looking condition of very large states - he applies it to China, Russia and the United States alike - which are so absorbed by their own scale and domestic noise that they cannot perceive how their actions look to others, and are then surprised by the coalitions they produce. On the posture maps that is the pattern to look for: the actor whose "partners" are quietly hedging.</p>
-
+      <p>Luttwak's central claim (<i>Strategy: The Logic of War and Peace</i>, 1987) is that in any contest between adversaries the ordinary, linear logic of everyday life stops working. The worse road may be the better one precisely because it is unexpected; the weapon that works is the one the enemy adapts to, so it stops working; a victory pressed too far becomes a defeat, because it summons the coalition that undoes it. Strategy is paradoxical because the other side reacts. Every card in this atlas therefore ends with <b>paradoxes</b>: the places where an actor's own instruments undermine its own goals. Serbia's veto on Kosovo needs Moscow and Beijing, and Moscow and Beijing close the road to Brussels. Kosovo's proofs of statehood in the north cost it the patrons who could confer statehood.</p>
+      <h3>The levels</h3>
+      <p>Luttwak stacks conflict in levels that interact but do not sum: the technical, the tactical, the operational, the theatre strategy, and above them all <b>grand strategy</b>, where military force meets diplomacy, economics, alliances and persuasion, and where a state's whole external conduct can be read as one design. This atlas lives on the top level only. It does not model battles or armies; it models what states and state-like actors want, the means they use across the four domains (diplomatic, informational, military, economic), what constrains them, and how they see each other.</p>
       <h3>From the lamp to the data</h3>
       <p>Each actor with a full card carries: <b>objectives</b>, ranked; <b>means</b> by domain; <b>constraints</b>; <b>paradoxes</b>; and a short <b>reading</b>, the only free prose. Every claim has a source with its tier (official document, research, quality press, other) and a confidence grade: <b>A</b> an official document or two independent sources, <b>B</b> one good source, <b>C</b> press or our own inference, always shown.</p>
-
       <h3>Posture and bond</h3>
-      <p>How one actor sees another is recorded on two axes. The <b>posture</b> is what the relationship is today, on a closed scale: own territory, claimed but not controlled, ally, reluctant ally, partner, reluctant partner, neutral, rival, adversary. "Adversary" is reserved for mortal enemies, where the other's existence or regime is the problem (Iran and Israel); nearly all bad relationships are rivalries, and co-members of an alliance with open friction are reluctant allies, not rivals. A posture is never our opinion: it needs a source that uses that reading, and it follows the structural position, not the rhetoric of a joint communiqué. The <b>bond</b> is the structure under the posture, what would survive a change of government: kin (shared identity), affinity, none, or grievance (an open historical wound). Two actors can both be "partner" and mean opposite things: for Serbia, Russia is a partner of kin growing colder; the United States a partner with a grievance growing warmer. On the map the posture is the colour and the bond a band inside the border.</p>
-
-      <h3>What the atlas is</h3>
-      <p>A situation map: a dated, sourced, revisable statement of where everyone stands, built region by region, with the datasets (UN votes, memberships, recognitions) as the floor and researched cards as the reading. Not a forecast, not a verdict. Where a card says less than you expected, it is because the sources did not hold.</p>
-      <p class="fine">Edward N. Luttwak: <i>Coup d'État: A Practical Handbook</i> (1968); <i>The Grand Strategy of the Roman Empire</i> (1976); <i>The Grand Strategy of the Soviet Union</i> (1983); <i>Strategy: The Logic of War and Peace</i> (1987, rev. 2001); "From Geopolitics to Geo-Economics", <i>The National Interest</i> (1990); "Toward Post-Heroic Warfare", <i>Foreign Affairs</i> (1995); "Give War a Chance", <i>Foreign Affairs</i> (1999); <i>The Grand Strategy of the Byzantine Empire</i> (2009); <i>The Rise of China vs. the Logic of Strategy</i> (2012).</p>
-`;
+      <p>How one actor sees another is recorded on two axes. The <b>posture</b> is what the relationship is today, on a closed scale: own territory, claimed but not controlled, ally, reluctant ally, partner, reluctant partner, neutral, rival, adversary. "Adversary" is reserved for mortal enemies, where the other's existence or regime is the problem (Iran and Israel); nearly all bad relationships are rivalries. A posture is never our opinion: it needs a source that uses that reading, and it follows the structural position, not the rhetoric of a joint communiqué. The <b>bond</b> is the structure under the posture, what would survive a change of government: kin (shared identity), affinity, none, or grievance (an open historical wound). Two actors can both be "partner" and mean opposite things: for Serbia, Russia is a partner of kin growing colder; the United States a partner with a grievance growing warmer. On the map the posture is the colour and the bond a band inside the border.</p>
+      <h3>What the atlas is not</h3>
+      <p>It is not a forecast and not a verdict. It is a situation map: a dated, sourced, revisable statement of where everyone stands, built region by region, with the datasets (UN votes, memberships, recognitions) as the floor and researched cards as the reading. Luttwak also wrote the histories of Roman and Byzantine grand strategy and a study of China's "great-state autism"; historians have contested the Roman case, and the same scepticism is owed here. Where a card says less than you expected, it is because the sources did not hold.</p>
+      <p class="fine">Edward N. Luttwak, <i>Strategy: The Logic of War and Peace</i> (1987, rev. 2001); <i>The Grand Strategy of the Roman Empire</i> (1976); <i>The Grand Strategy of the Byzantine Empire</i> (2009); <i>The Rise of China vs. the Logic of Strategy</i> (2012).</p>`;
   }
 
   function tipFor(id, fallbackName, ev) {
@@ -516,7 +526,7 @@
   const notesHtml = () => notes.length ? `<h3>Sources</h3><ol class="fn-list">` + notes.map(s =>
     `<li><span class="t">T${s.tier}</span><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a> · ${esc(s.publisher)} · ${esc(s.date)}</li>`).join("") + `</ol>` : "";
 
-  function showDossier(id) {
+  function renderDossier(id) {
     const a = actors[id];
     const el = document.getElementById("dossier");
     setView("dossier", false);
@@ -593,7 +603,6 @@
       (!out.length && !inn.length ? `<p class="empty">No relation rows yet.</p>` : "");
   }
 
-  function renderAll() { renderLegend(); if (view === "map") drawMap(); else showDossier(pov || fullActors[0].id); }
   window.addEventListener("resize", () => { if (view === "map") drawMap(); });
-  renderAll();
+  apply(location.hash);
 })();

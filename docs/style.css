@@ -12,6 +12,8 @@
   --ink-3: #8b91a8;
   --rule: #c9cddb;
   --coast: #1b2a5c;
+  --sea: #2b5fb3;         /* the flag map's sea, after Boetti */
+  --sea-ink: #10285e;
   --grat: #d8dbe6;
   --accent: #e3452f;
   --l-objective: #e3452f;
@@ -46,6 +48,7 @@ a { color: var(--ink-b); }
 .top {
   display: flex; justify-content: space-between; align-items: flex-end; gap: 16px;
   padding: 18px 22px 12px; border-bottom: 3px solid var(--ink-a);
+  position: sticky; top: 0; z-index: 5; background: var(--paper);
 }
 .topnav { display: flex; gap: 0; border: 1.5px solid var(--ink-a); margin-left: 24px; align-self: center; }
 .topnav a { font-family: "Archivo Narrow", sans-serif; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; font-weight: 600; color: var(--ink-a); text-decoration: none; padding: 7px 14px; }
