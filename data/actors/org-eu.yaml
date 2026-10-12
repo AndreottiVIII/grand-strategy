@@ -2,9 +2,932 @@ id: org-eu
 name: European Union
 short: EU
 type: org
-coords: [4.35, 50.85]
+coords:
+- 4.35
+- 50.85
 iso2: eu
 wikipedia: https://en.wikipedia.org/wiki/European_Union
 seat: Brussels
-regions: ['europe']
-card: stub
+regions:
+- western-south-europe
+card: full
+tier: protagonist
+last_verified: 2026-10-12
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: 'Stop Russia winning in Ukraine and make Europe safe from it: 21 sanctions packages (the 21st on 23 Jul 2026, 218 listings), about EUR 210bn of Russian central-bank assets immobilised indefinitely
+      (Dec 2025), a EUR 90bn Ukraine loan for 2026-27, a legal ban on Russian gas (LNG from 1 Jan 2027, pipeline gas by 30 Sep 2027) and, as the European Council wrote in June 2026, a response to Russian
+      drones, sabotage and threats against EU diplomats. The stated aim is a ceasefire on Ukraine''s terms, compensation and accountability - not the end of the Russian state.'
+    confidence: A
+    sources:
+    - url: https://www.eeas.europa.eu/delegations/belarus/european-council-conclusions-ukraine-and-european-defence-and-security-brussels-18%E2%80%9319-june-2026_en
+      title: European Council conclusions on Ukraine and on European defence and security, Brussels 18-19 June 2026
+      publisher: European Council (via EEAS)
+      date: 2026-06-19
+      tier: 1
+    - url: https://en.interfax.com.ua/news/general/1187583.html
+      title: '48 individuals and 170 entities: EU gives final approval to 21st sanctions package against Russia'
+      publisher: Interfax-Ukraine
+      date: &id001 2026-07-23
+      tier: 3
+    - url: https://www.ukrinform.net/rubric-economy/4068890-eu-backs-indefinite-freeze-of-russian-assets.html
+      title: EU backs indefinite freeze of Russian assets
+      publisher: Ukrinform
+      date: 2025-12
+      tier: 3
+    - url: https://www.enca.com/business/eu-agrees-90-bn-euro-loan-ukraine-without-russian-assets-0
+      title: EU agrees 90-bn-euro loan for Ukraine, but without Russian assets
+      publisher: eNCA (AFP)
+      date: &id003 2025-12-19
+      tier: 3
+    - url: https://www.ukrinform.net/rubric-economy/4084369-eu-approves-phased-ban-on-russian-gas-imports-by-2027.html
+      title: EU approves phased ban on Russian gas imports by 2027
+      publisher: Ukrinform
+      date: &id013 2026-01-26
+      tier: 3
+    - url: https://www.baltictimes.com/kaja_kallas__europe_must_restore_its_capacity_to_act
+      title: 'Kaja Kallas: Europe must restore its capacity to act (Munich Security Conference)'
+      publisher: The Baltic Times
+      date: 2026-02
+      tier: 3
+  - rank: 2
+    text: 'Become able to defend itself without waiting for Washington: Readiness 2030 (defence ready within five years), SAFE (EUR 150bn of loans, taken up by 19 states, Poland EUR 43.7bn, Romania EUR
+      16.7bn, France about EUR 15bn), the drone defence initiative and Eastern Flank Watch, defence-industrial preference (''buy European''), and a NATO that Rutte and von der Leyen now say must ''become
+      more European''. The goal is a European pillar inside NATO, not a replacement for it.'
+    confidence: A
+    sources:
+    - url: https://www.ksat.com/news/world/2025/10/16/the-eu-unveils-a-plan-to-be-ready-within-5-years-to-fend-off-any-russian-attack/
+      title: The EU unveils a plan to be ready within 5 years to fend off any Russian attack
+      publisher: AP (via KSAT)
+      date: 2025-10-16
+      tier: 3
+    - url: https://defence-industry-space.ec.europa.eu/eu-defence-industry/safe-security-action-europe_en
+      title: SAFE - Security Action for Europe (EUR 150bn of defence loans)
+      publisher: European Commission (DG DEFIS)
+      date: '2026'
+      tier: 1
+    - url: https://bbc.bm/?p=23494
+      title: EU's EUR 150bn defence loans fully taken up by 19 member states, Poland biggest
+      publisher: Reuters (via BBC Bermuda)
+      date: 2026-08-17
+      tier: 3
+    - url: https://euro-sd.com/2026/03/articles/exclusive/49854/europes-drone-wall-ready-eddi-go/
+      title: 'Europe''s drone wall: ready, EDDI, go'
+      publisher: European Security & Defence
+      date: 2026-03
+      tier: 3
+    - url: https://de.euronews.com/my-europe/2026/07/07/von-der-leyen-und-rutte-nato-muss-europaischer-werden
+      title: 'Von der Leyen and Rutte: NATO must become more European'
+      publisher: Euronews
+      date: 2026-07-07
+      tier: 3
+      title_original: 'Von der Leyen und Rutte: NATO muss europaeischer werden'
+      lang: de
+    - url: https://pism.pl/publications/the-ankara-summit-a-step-towards-the-europeanisation-of-nato
+      title: The Ankara Summit - a step towards the Europeanisation of NATO
+      publisher: PISM (Polish Institute of International Affairs)
+      date: 2026-07
+      tier: 2
+  - rank: 3
+    text: 'Restore growth and weight: implement the Draghi agenda (Savings and Investments Union, a 28th corporate regime ''EU Inc.'', simplification, the digital euro) and raise the euro''s international
+      role. Implementation is partial (about 30% of recommendations by June 2026 on one count) and the 2028-34 budget fight (Commission EUR 1,763bn against six frugal states asking for cuts of several hundred
+      billion) decides how much of it is funded.'
+    confidence: B
+    sources:
+    - url: https://commission.europa.eu/topics/competitiveness/draghi-report/one-year-after_en
+      title: 'The Draghi report: one year after'
+      publisher: European Commission
+      date: 2025-09
+      tier: 1
+    - url: https://institutmontaigne.org/ressources/pdfs/publications/executive-summary-implementing-the-draghi-report-the-moment-of-truth.pdf
+      title: 'Implementing the Draghi report: the moment of truth (executive summary)'
+      publisher: Institut Montaigne
+      date: 2026-06
+      tier: 2
+    - url: https://www.bundesbank.de/en/press/speeches/acting-together-for-a-sovereign-and-competitive-europe-1003212
+      title: 'Joachim Nagel: Acting together for a sovereign and competitive Europe (SIU, 28th regime, digital euro)'
+      publisher: Deutsche Bundesbank
+      date: 2026-08
+      tier: 1
+    - url: https://www.ecb.europa.eu/press/other-publications/ire/html/index.en.html
+      title: 'The international role of the euro (2026 report: moderate growth in 2025, fragmentation rising)'
+      publisher: European Central Bank
+      date: 2026-06
+      tier: 1
+    - url: https://www.europeanmovement.ie/the-2028-2034-mff-negotiations-state-of-play/
+      title: 'The 2028-2034 MFF negotiations: state of play'
+      publisher: European Movement Ireland
+      date: '2026'
+      tier: 3
+    - url: https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768.pdf
+      title: Statement of Denmark, Germany, the Netherlands, Austria, Finland and Sweden on the Multiannual Financial Framework 2028-2034
+      publisher: German Federal Government
+      date: &id002 2026-08-27
+      tier: 1
+  - rank: 4
+    text: 'Diversify trade away from dependence on one market or one supplier: EU-Mercosur (signed 17 Jan 2026, interim trade agreement applied provisionally since 1 May 2026), the EU-India FTA (concluded
+      27 Jan 2026, signature and ratification pending), a Gulf bloc deal, Canada and Japan partnerships, a managed truce with Washington (Turnberry, 15% ceiling) and a managed de-risking of China (EV duties
+      and price undertakings, rare-earth licence channels).'
+    confidence: B
+    sources:
+    - url: https://www.whitecase.com/insight-alert/eu-provisionally-apply-eu-mercosur-interim-trade-agreement-pending-cjeu-opinion
+      title: EU to provisionally apply EU-Mercosur Interim Trade Agreement pending CJEU opinion
+      publisher: White & Case
+      date: 2026-02
+      tier: 3
+    - url: https://www.asil.org/insights/volume/30/issue/5
+      title: 'The Haunted EU-Mercosur Agreement: recent developments (ASIL Insights 30(5))'
+      publisher: American Society of International Law
+      date: '2026'
+      tier: 2
+    - url: https://www.sullcrom.com/insights/memo/2026/January/EU-Strikes-Major-Trade-Deals-Mercosur-India
+      title: EU strikes major trade deals with Mercosur and India
+      publisher: Sullivan & Cromwell
+      date: 2026-01
+      tier: 3
+    - url: https://www.hsfkramer.com/notes/crt/2026-01/the-european-union-india-free-trade-agreement-who-will-be-liberalised-and-when
+      title: 'The European Union-India free trade agreement: who will be liberalised and when'
+      publisher: Herbert Smith Freehills Kramer
+      date: 2026-01
+      tier: 3
+    - url: https://www.kitco.com/news/off-the-wire/2026-06-15/eu-vote-us-trade-deal-set-bring-tariff-peace-how-long
+      title: EU vote on US trade deal is set to bring tariff peace, but for how long?
+      publisher: Reuters (via Kitco)
+      date: &id009 2026-06-15
+      tier: 3
+    - url: https://www.lovguiden.dk/en/det-offentlige/europa-kommissionen-press-corner/2026-10-09-eu-og-kina-aftaler-hybridbiler-sjaeldne-jordarter-og-eksportkontrol
+      title: EU and China agree on hybrid vehicles, rare earths and export controls (Commission press release, 2nd trade meeting, Beijing 8-9 Oct 2026)
+      publisher: European Commission press corner (via Lovguiden)
+      date: &id019 2026-10-09
+      tier: 3
+    - url: https://cms.law/en/int/legal-updates/electric-vehicles-from-china-the-eu-s-anti-subsidy-duties-and-the-emerging-pathway-for-price-undertakings
+      title: 'Electric vehicles from China: the EU''s anti-subsidy duties and the emerging pathway for price undertakings'
+      publisher: CMS
+      date: 2026-01
+      tier: 3
+  - rank: 5
+    text: 'Enlarge - and fix the institutions so that enlargement does not paralyse them: Ukraine and Moldova opened their first clusters on 15 Jun 2026 and Hungary lifted its veto on Ukraine''s clusters
+      2 and 3 on 7 Oct 2026; Montenegro has 18 of 33 chapters closed and a 2028-29 target, Albania aims for 2030; Georgia is frozen, Serbia on hold after the Mladic funeral, North Macedonia blocked by the
+      Bulgarian dispute. Enlargement is the Union''s main instrument of foreign policy and its most visible stress test.'
+    confidence: A
+    sources:
+    - url: https://www.euronews.com/2026/10/07/hungary-set-to-lift-veto-on-ukraines-eu-membership-talks
+      title: Hungary set to lift veto on Ukraine's EU membership talks
+      publisher: Euronews
+      date: 2026-10-07
+      tier: 3
+    - url: https://www.eurointegration.com.ua/eng/news/2026/09/29/7246508/
+      title: EU to try to overcome Hungary's veto on negotiating clusters 2 and 3 for Ukraine on Tuesday
+      publisher: European Pravda
+      date: 2026-09-29
+      tier: 3
+    - url: https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1905950
+      title: 2025 Commission report on Montenegro - European Parliament resolution (adopted 17 Jun 2026)
+      publisher: European Parliament
+      date: 2026-06-17
+      tier: 1
+    - url: https://europeanwesternbalkans.com/2026/07/14/montenegro-closes-two-more-chapters-with-eu-reaches-18-out-of-33/
+      title: Montenegro closes two more chapters with EU, reaches 18 out of 33
+      publisher: European Western Balkans
+      date: 2026-07-14
+      tier: 3
+    - url: https://wtop.com/europe/2026/06/balkan-leaders-attend-eu-summit-in-montenegro-as-enlargement-gains-urgency/
+      title: Balkan leaders attend EU summit in Montenegro as enlargement gains urgency
+      publisher: AP via WTOP
+      date: 2026-06-05
+      tier: 3
+    - url: https://www.gov.me/en/article/ibrahimovic-in-washington-strong-montenegro-us-partnership-reaffirmed
+      title: 'Ibrahimovic in Washington: strong Montenegro-US partnership reaffirmed'
+      publisher: Government of Montenegro
+      date: 2026-02-05
+      tier: 1
+    - url: https://www.reuters.com/world/europe/moldovan-president-says-moldova-applies-eu-membership-2022-03-03/
+      title: With war on its doorstep, Moldova applies for EU membership
+      publisher: Reuters
+      date: 2022-03-03
+      tier: 3
+    - url: https://www.consilium.europa.eu/en/press/press-releases/2024/06/25/eu-opens-accession-negotiations-with-moldova/
+      title: EU opens accession negotiations with Moldova
+      publisher: Council of the European Union
+      date: 2024-06-25
+      tier: 1
+    - url: https://www.osw.waw.pl/en/publikacje/analyses/2026-06-16/ukraine-and-moldova-launch-eu-accession-negotiations
+      title: Ukraine and Moldova launch EU accession negotiations
+      publisher: OSW (Centre for Eastern Studies)
+      date: 2026-06-16
+      tier: 2
+    - url: https://www.euronews.com/2024/10/21/moldova-eu-vote-too-close-to-call-as-president-sandu-claims-moscow-meddled
+      title: Moldova EU vote too close to call as President Sandu claims Moscow meddled
+      publisher: Euronews
+      date: 2024-10-21
+      tier: 3
+    - url: https://eeas.europa.eu/delegations/georgia/2025-communication-eu-enlargement-policy-extract-about-georgia_en
+      title: 2025 Communication on EU Enlargement Policy (extract about Georgia)
+      publisher: European Commission / EEAS
+      date: 2025-11-05
+      tier: 1
+    - url: https://oc-media.org/eu-issues-2025-enlargement-report-says-georgia-is-a-candidate-country-in-name-only
+      title: EU issues 2025 enlargement report, says Georgia is a candidate country in name only
+      publisher: OC Media
+      date: 2025-11-04
+      tier: 3
+    - url: https://www.euronews.com/my-europe/2026/09/08/eu-institution-leaders-blast-serbia-over-shocking-ratko-mladics-funeral
+      title: EU institution leaders blast Serbia over 'shocking' Ratko Mladić's funeral
+      publisher: Euronews
+      date: &id016 2026-09-08
+      tier: 3
+    - url: https://enlargement-infohub.eu/wp-content/uploads/2025/11/north-macedonia-report-2025.pdf
+      title: 'North Macedonia 2025 Report (SWD(2025) 753): no attempts to adopt the constitutional changes of the Council Conclusions of 18 July 2022'
+      publisher: European Commission
+      date: &id014 2025-11-04
+      tier: 1
+    - url: https://www.eunews.it/en/?p=466721
+      title: 'Von der Leyen in Skopje: a first step next week to break the deadlock'
+      publisher: Eunews
+      date: &id015 2026-10-02
+      tier: 3
+  - rank: 6
+    text: 'Deliver the internal agenda that holds the Union together politically: the Migration and Asylum Pact (fully applicable 12 Jun 2026, safe-countries list adopted Feb 2026), the legally binding
+      2040 climate target (-90% net, ETS2 postponed to 2028) and the single market. Both files cost votes at home - governments in Prague and Bratislava reject relocation and the Green Deal - so they are
+      also a test of whether the centre can still legislate.'
+    confidence: B
+    sources:
+    - url: https://www.wam.ae/en/article/c0o6x9v-pact-migration-and-asylum-enters-into-force
+      title: EU Pact on Migration and Asylum enters into force tomorrow
+      publisher: WAM (UAE news agency)
+      date: 2026-06-11
+      tier: 3
+    - url: https://dip.euaa.europa.eu/node/13657
+      title: Czechia - new legislation comes into force as of 12 June 2026 to implement the Pact
+      publisher: European Union Agency for Asylum
+      date: &id006 2026-06-12
+      tier: 1
+    - url: https://www.europarl.europa.eu/news/en/press-room/20260205IPR33620/eu-climate-law-a-2040-emissions-reduction-target-of-90-for-the-eu
+      title: 'EU climate law: a 2040 emissions reduction target of 90% for the EU'
+      publisher: European Parliament
+      date: &id021 2026-02-05
+      tier: 1
+    - url: https://icapcarbonaction.com/en/news/eu-reaches-agreement-2040-climate-target-postpones-ets-2-one-year
+      title: EU reaches agreement on 2040 climate target, postpones ETS2 by one year (Council adoption 5 Mar 2026)
+      publisher: ICAP
+      date: 2026-03-10
+      tier: 2
+    - url: https://www.newstream.cz/politika/babisova-vlada-vyhlasila-valku-green-dealu-eu-se-obava-dalsiho-rebela
+      title: Babiš's government has declared war on the Green Deal; the EU fears another rebel
+      publisher: Newstream.cz
+      date: 2025-12
+      tier: 3
+      title_original: Babišova vláda vyhlásila válku Green Dealu, EU se obává dalšího rebela
+      lang: cs
+  means:
+  - domain: diplomatic
+    text: 'Convening and legitimacy rather than command: the European Council under Costa (summits, the Ankara and Tivat formats, the first EU-GCC and EU-Armenia summits), Kallas''s External Action Service,
+      and security-and-defence partnerships with Moldova (the first ever), Norway, Canada and Japan. In Ukraine diplomacy the Union is a payer kept near the table, not a party: leaders could not agree on
+      an envoy to Moscow in June 2026.'
+    confidence: B
+    sources:
+    - url: https://www.fm.gov.om/en/17675/
+      title: Joint statement from the first GCC-EU summit (Brussels, 16 Oct 2024)
+      publisher: Ministry of Foreign Affairs of Oman
+      date: 2024-10-16
+      tier: 1
+    - url: https://www.eunews.it/en/2026/05/11/ukraine-the-eu-is-considering-its-representative-for-the-distant-negotiations-with-moscow-kallas-puts-herself-forward/
+      title: 'Ukraine: the EU is considering its representative for the distant negotiations with Moscow, Kallas puts herself forward'
+      publisher: Eunews
+      date: &id007 2026-05-11
+      tier: 3
+    - url: https://www.pravda.com.ua/eng/news/2026/06/19/8040066/
+      title: EU Council president explains to EU leaders why he reopened contact with Moscow
+      publisher: European Pravda
+      date: &id008 2026-06-19
+      tier: 3
+    - url: https://euneighbourseast.eu/news/latest-news/moldova-becomes-first-country-to-sign-security-and-defence-partnership-with-eu/
+      title: Moldova becomes first country to sign security and defence partnership with EU
+      publisher: EU NEIGHBOURS east (EU-funded)
+      date: 2024-05-21
+      tier: 2
+    - url: https://www.politico.eu/article/moldova-security-defense-pact-eu-security-cooperation-josep-borrell-border-management-cybersecurity-disinformation/
+      title: Moldova signs security and defense pact with EU
+      publisher: Politico Europe
+      date: 2024-05-21
+      tier: 3
+    - url: https://wtop.com/europe/2026/06/balkan-leaders-attend-eu-summit-in-montenegro-as-enlargement-gains-urgency/
+      title: Balkan leaders attend EU summit in Montenegro as enlargement gains urgency
+      publisher: AP via WTOP
+      date: 2026-06-05
+      tier: 3
+  - domain: diplomatic
+    text: 'Enlargement and association as a standing offer: candidate status, cluster openings, Growth Plan money paid against reform steps (Moldova EUR 157m on 5 Oct 2026, Montenegro EUR 383.5m envelope,
+      Bosnia EUR 976.6m at risk), visa liberalisation and suspension (Georgia, 6 Mar 2026).'
+    confidence: A
+    sources:
+    - url: https://lovguiden.dk/en/det-offentlige/raadet-for-den-europaeiske-union/2026-10-05-eu-udbetaler-157-mio-euro-til-moldova-efter-18-gennemfoerte-reformer
+      title: EU pays out EUR 157 million to Moldova after 18 completed reforms
+      publisher: Lovguiden (summary of Council of the EU release)
+      date: 2026-10-05
+      tier: 3
+    - url: https://www.cde.ual.es/en/la-comision-aporta-189-millones-de-euros-adicionales-en-el-marco-del-mecanismo-de-reforma-y-crecimiento-para-moldavia
+      title: Commission provides EUR 189 million in additional funds under the Reform and Growth Facility for Moldova
+      publisher: Centro de Documentacion Europea, Universidad de Almeria (Commission release)
+      date: 2026-03
+      tier: 3
+    - url: https://gov.me/en/article/press-release-from-the-72nd-cabinet-session
+      title: 'Press release from the 72nd cabinet session (Reform and Growth Facility: EUR 383.5m)'
+      publisher: Government of Montenegro
+      date: '2024'
+      tier: 1
+    - url: https://mina.news/article/montenegro-receives-additional-€44-million-under-eu-growth-plan
+      title: Montenegro receives additional EUR 44 million under EU Growth Plan
+      publisher: MINA news agency
+      date: 2026-05
+      tier: 3
+    - url: https://europeanwesternbalkans.com/2026/10/08/bih-risks-losing-373-9-million-euros-from-the-growth-plan/
+      title: BiH risks losing EUR 373.9 million from the Growth Plan
+      publisher: European Western Balkans
+      date: 2026-10-08
+      tier: 3
+    - url: https://www.euronews.com/2024/12/20/brussels-moves-to-suspend-visa-free-travel-for-georgian-diplomats-as-protests-continue
+      title: Brussels moves to suspend visa-free travel for Georgian diplomats as protests continue
+      publisher: Euronews
+      date: 2024-12-20
+      tier: 3
+    - url: https://home-affairs.ec.europa.eu/8th-report-under-visa-suspension-mechanism_en
+      title: Eighth report under the visa suspension mechanism
+      publisher: European Commission
+      date: 2025-12-19
+      tier: 1
+    - url: https://ec.europa.eu/commission/presscorner/detail/en/ip_26_564
+      title: Commission suspends visa-free travel for Georgian diplomatic, service and official passport holders
+      publisher: European Commission
+      date: 2026-03-06
+      tier: 1
+  - domain: informational
+    text: 'Regulatory power as influence: the Digital Services Act (first fine, EUR 120m on X, 5 Dec 2025; TikTok proceedings over Romania''s election), the Brussels effect on standards, and the Commission''s
+      monopoly of trade policy. The same instruments are what Washington attacks.'
+    confidence: B
+    sources:
+    - url: https://www.irishtimes.com/business/2025/12/05/eu-fines-elon-musks-x-120mn-for-transparency-violations/
+      title: EU fines Elon Musk's X EUR 120m for transparency violations
+      publisher: The Irish Times
+      date: &id017 2025-12-05
+      tier: 3
+    - url: https://www.axios.com/2025/12/05/x-elon-musk-european-commission-fine
+      title: Trump allies back Elon Musk's X after Europe hits it with $140M fine
+      publisher: Axios
+      date: &id018 2025-12-05
+      tier: 3
+    - url: https://digital-strategy.ec.europa.eu/en/news/commission-opens-formal-proceedings-against-tiktok-election-risks-under-digital-services-act
+      title: Commission opens formal proceedings against TikTok on election risks under the Digital Services Act
+      publisher: European Commission
+      date: 2024-12-17
+      tier: 1
+    - url: https://dsa-observatory.eu/?p=1986
+      title: 'TikTok and the Romanian elections: a stress test for DSA enforcement'
+      publisher: DSA Observatory
+      date: '2025'
+      tier: 2
+  - domain: military
+    text: 'Little hard power of its own, much borrowed: EUFOR Althea in Bosnia (about 1,000 troops, mandate to 31 Oct 2026), the civilian mission EUMA in Armenia (about 225, to Feb 2027), Operation Aspides
+      in the Red Sea (extended to Feb 2027), the European Peace Facility (Moldova EUR 317m, Armenia EUR 30m) and the drone-defence and Eastern Flank Watch programmes; the real military instrument is the
+      sum of national armies and NATO.'
+    confidence: B
+    sources:
+    - url: https://www.slobodnaevropa.org/a/rumunija-rezervni-sastav-eufor-althea-bih/33348106.html
+      title: Romania sends EUFOR Althea reserve force to Bosnia
+      publisher: RFE/RL
+      date: 2025-03
+      tier: 3
+    - url: https://militarnyi.com/en/news/eufor-reinforces-troops-in-bosnia-and-herzegovina/
+      title: EUFOR reinforces troops in Bosnia and Herzegovina
+      publisher: Militarnyi
+      date: 2025-03
+      tier: 4
+    - url: https://n1info.ba/english/news/eu-spec-rep-welcomes-eufor-reserve-forces/
+      title: EU Special Representative welcomes EUFOR reserve forces
+      publisher: N1 BiH
+      date: 2025-03
+      tier: 3
+    - url: https://www.eeas.europa.eu/delegations/armenia/armenia-council-extends-mandate-eu-civilian-mission-two-years_en
+      title: 'Armenia: Council extends the mandate of the EU civilian mission for two years'
+      publisher: European External Action Service
+      date: 2025-01-30
+      tier: 1
+    - url: https://oc-media.org/eu-approves-extension-of-armenia-monitoring-mission-until-2027
+      title: EU approves extension of Armenia monitoring mission until 2027
+      publisher: OC Media
+      date: 2025-01-30
+      tier: 3
+    - url: https://www.balcanicaucaso.org/en/cp_article/eu-armenia-ever-closer/
+      title: EU-Armenia, ever closer
+      publisher: OBC Transeuropa
+      date: 2026-05
+      tier: 3
+    - url: https://eu4moldova.eu/en/european-peace-facility-council-adopts-assistance-measure-to-support-the-republic-of-moldovas-air-defence-capabilities/
+      title: 'European Peace Facility: Council adopts assistance measure to support the Republic of Moldova''s air defence capabilities'
+      publisher: Council of the EU (via EU4Moldova)
+      date: 2026-07
+      tier: 1
+    - url: https://www.internazionale.it/ultime-notizie-reuters/2026/07/13/eu-pledges-120-million-to-help-moldova-s-air-defence-system
+      title: EU pledges 120 million euros to help Moldova's air defence system
+      publisher: Reuters (via Internazionale)
+      date: 2026-07-13
+      tier: 3
+    - url: https://jamaica-gleaner.com/article/world-news/20260529/eu-seeks-more-vessels-secure-hormuz-navigation
+      title: EU seeks more vessels to secure Hormuz navigation (Aspides extended to Feb 2027; 8.5% of EU LNG and 40% of jet fuel and diesel pass the strait)
+      publisher: The Gleaner (Jamaica, wire report)
+      date: &id004 2026-05-29
+      tier: 3
+    - url: https://euro-sd.com/2026/03/articles/exclusive/49854/europes-drone-wall-ready-eddi-go/
+      title: 'Europe''s drone wall: ready, EDDI, go'
+      publisher: European Security & Defence
+      date: 2026-03
+      tier: 3
+  - domain: economic
+    text: 'Money, access and rules: sanctions (21 Russia packages, Belarus regime to Feb 2027), immobilised central-bank assets, EU-budget borrowing (EUR 90bn), SAFE loans, the market itself (countervailing
+      duties on Chinese EVs since Oct 2024, EUR 93bn of suspended counter-tariffs on the US, the unused Anti-Coercion Instrument), macro-financial assistance (Egypt up to EUR 5bn) and conditionality on
+      cohesion funds (Hungary EUR 4.2bn proposed for release on 23 Sep 2026).'
+    confidence: A
+    sources:
+    - url: https://en.interfax.com.ua/news/general/1187583.html
+      title: '48 individuals and 170 entities: EU gives final approval to 21st sanctions package against Russia'
+      publisher: Interfax-Ukraine
+      date: *id001
+      tier: 3
+    - url: https://www.ukrinform.net/rubric-economy/4068890-eu-backs-indefinite-freeze-of-russian-assets.html
+      title: EU backs indefinite freeze of Russian assets
+      publisher: Ukrinform
+      date: 2025-12
+      tier: 3
+    - url: https://www.euronews.com/business/2026/01/17/eu-vows-coordinated-response-to-trumps-tariffs-threat-over-greenland-sale
+      title: EU vows coordinated response to Trump's tariffs threat over Greenland sale
+      publisher: Euronews
+      date: 2026-01-17
+      tier: 3
+    - url: https://cms.law/en/int/legal-updates/electric-vehicles-from-china-the-eu-s-anti-subsidy-duties-and-the-emerging-pathway-for-price-undertakings
+      title: 'Electric vehicles from China: the EU''s anti-subsidy duties and the emerging pathway for price undertakings'
+      publisher: CMS
+      date: 2026-01
+      tier: 3
+    - url: https://eur-lex.europa.eu/eli/dec/2024/1144/oj
+      title: Decision (EU) 2024/1144 providing macro-financial assistance to Egypt (ceiling EUR 5bn in two operations)
+      publisher: EUR-Lex (Official Journal of the EU)
+      date: '2024'
+      tier: 1
+    - url: https://euronews.com/2026/09/23/von-der-leyen-says-hungary-strengthened-rule-of-law-unlocks-42bn-in-eu-funding
+      title: Von der Leyen says Hungary strengthened rule of law, unlocks EUR 4.2bn in EU funding
+      publisher: Euronews
+      date: 2026-09-23
+      tier: 3
+    - url: https://www.eeas.europa.eu/delegations/japan/belarus-eu-adopts-5th-package-sanctions-over-continued-human-rights-abuses-and_en
+      title: 'Belarus: EU adopts 5th package of sanctions over continued human rights abuses and the instrumentalisation of migrants'
+      publisher: European External Action Service
+      date: 2021-12-02
+      tier: 1
+    - url: https://euneighbourseast.eu/news/latest-news/belarus-eu-prolongs-restrictive-measures-for-another-year/
+      title: 'Belarus: EU prolongs restrictive measures for another year'
+      publisher: EU Neighbours East
+      date: 2026-02-26
+      tier: 1
+    - url: https://mfa.lt/en/news/928/european-union-extends-sanctions-against-belarus:45631
+      title: European Union extends sanctions against Belarus
+      publisher: Ministry of Foreign Affairs of Lithuania
+      date: 2026-02
+      tier: 1
+  constraints:
+  - text: 'Unanimity: sanctions, foreign policy, the budget and every enlargement step need 27 votes. Hungary delayed the 20th package until April 2026 and blocked Ukraine''s clusters until 7 Oct; Slovakia
+      blocked the 18th package six times; Czechia, Hungary and Slovakia opted out of the EUR 90bn loan guarantees (Article 20 TEU) and Bulgaria''s Radev cabinet uses the veto on listings. The April 2026
+      change of government in Budapest eased, not removed, the constraint.'
+    confidence: A
+    sources:
+    - url: https://kyivindependent.com/eus-powerful-signal-to-russia-stalls/
+      title: EU fails to send Russia 'powerful signal' as Hungary blocks 20th sanctions package
+      publisher: Kyiv Independent
+      date: 2026-02-23
+      tier: 3
+    - url: https://malta.representation.ec.europa.eu/news/eu-adopts-20th-package-sanctions-against-russia-2026-04-23_en
+      title: EU adopts 20th package of sanctions against Russia
+      publisher: European Commission Representation in Malta
+      date: 2026-04-23
+      tier: 1
+    - url: https://www.pravda.com.ua/eng/news/2025/07/10/7521158
+      title: 'Fico: Slovakia will not support 18th package of sanctions against Russia without compensation for gas transit loss'
+      publisher: Ukrainska Pravda
+      date: 2025-07-10
+      tier: 3
+    - url: https://www.kyivindependent.com/slovakia-agrees-to-approve-eus-18th-sanctions-package-against-russia-fico-says
+      title: Slovakia agrees to approve EU's 18th sanctions package against Russia, Fico says
+      publisher: Kyiv Independent
+      date: 2025-07-17
+      tier: 3
+    - url: https://www.intellinews.com/slovakia-seeks-eu-guarantees-on-russian-gas-phase-out-ahead-of-sanctions-deal-390731
+      title: Slovakia seeks EU guarantees on Russian gas phase-out ahead of sanctions deal
+      publisher: bne IntelliNews
+      date: 2025-07
+      tier: 3
+    - url: https://www.pravda.com.ua/eng/news/2025/12/19/8012550
+      title: 'EUR 90bn for Ukraine: EU summit approves exemption for Hungary, Slovakia and Czechia'
+      publisher: Ukrainska Pravda
+      date: &id005 2025-12-19
+      tier: 3
+    - url: https://www.osw.waw.pl/en/publikacja/33685/pdf
+      title: EU summit decision on financing Ukraine and the Czech, Slovak and Hungarian opt-out (enhanced cooperation, Article 20 TEU)
+      publisher: OSW
+      date: 2025-12
+      tier: 2
+    - url: https://www.aljazeera.com/economy/2025/12/31/bulgaria-set-to-adopt-the-euro-why-is-this-causing-controversy
+      title: Bulgaria set to adopt the euro - why is this causing controversy?
+      publisher: Al Jazeera
+      date: 2025-12-31
+      tier: 3
+    - url: https://www.bta.bg/en/news/bulgaria/1036434-bulgaria-marks-one-year-as-full-schengen-member
+      title: Bulgaria Marks One Year as Full Schengen Member
+      publisher: BTA
+      date: 2026-01
+      tier: 3
+    - url: https://euromaidanpress.com/2026/07/14/two-months-in-office-three-blows-to-ukraine-bulgarias-premier-stacks-coalition-of-the-willing-exit-on-aid-freeze-and-sanctions-blocks/
+      title: 'Two months in office, three blows to Ukraine: Bulgaria''s premier stacks Coalition of the Willing exit on aid freeze and sanctions blocks'
+      publisher: Euromaidan Press
+      date: 2026-07-14
+      tier: 3
+    - url: https://www.osw.waw.pl/en/publikacje/analyses/2026-04-13/elections-hungary-triumph-peter-magyar
+      title: 'Elections in Hungary: the triumph of Peter Magyar'
+      publisher: OSW
+      date: 2026-04-13
+      tier: 2
+    - url: https://euronews.com/2026/09/23/von-der-leyen-says-hungary-strengthened-rule-of-law-unlocks-42bn-in-eu-funding
+      title: Von der Leyen says Hungary strengthened rule of law, unlocks EUR 4.2bn in EU funding
+      publisher: Euronews
+      date: 2026-09-23
+      tier: 3
+    - url: https://www.consilium.europa.eu/it/meetings/gac/2026/10/13/
+      title: General Affairs Council, 13 October 2026 (rule of law in Hungary, Article 7 TEU update)
+      publisher: Council of the European Union
+      date: 2026-10-13
+      tier: 1
+    - url: https://telex.hu/english/2026/02/02/hungary-challenges-eu-ban-on-russian-gas-at-eu-court-of-justice
+      title: Hungary challenges EU ban on Russian gas at EU Court of Justice
+      publisher: Telex
+      date: 2026-02-02
+      tier: 3
+  - text: 'The security guarantee is American: Article 42(7) TEU is a political clause, NATO is the operative guarantee, and Washington is signalling a smaller footprint (troop-reduction review announced
+      June 2026; Trump ''mused'' about cutting a third). European rearmament still buys US kit, and NATO''s 5% target (3.5% core) is set in Washington''s terms.'
+    confidence: B
+    sources:
+    - url: https://pism.pl/publications/the-ankara-summit-a-step-towards-the-europeanisation-of-nato
+      title: The Ankara Summit - a step towards the Europeanisation of NATO
+      publisher: PISM (Polish Institute of International Affairs)
+      date: 2026-07
+      tier: 2
+    - url: https://kvia.com/politics/cnn-us-politics/2026/07/06/trump-mused-about-cutting-troops-in-europe-by-a-third-to-send-a-message-to-nato/
+      title: Trump mused about cutting troops in Europe by a third to send a message to NATO
+      publisher: CNN (via KVIA)
+      date: 2026-07-06
+      tier: 3
+    - url: https://epthinktank.eu/2023/02/09/the-third-joint-eu-nato-declaration/
+      title: The third joint EU-NATO declaration
+      publisher: European Parliamentary Research Service
+      date: 2023-02-09
+      tier: 1
+    - url: https://www.internazionale.it/ultime-notizie-reuters/2026/04/16/eu-and-nato-to-work-to-strengthen-relationship-von-der-leyen-says
+      title: EU and NATO to work to strengthen relationship, von der Leyen says
+      publisher: Reuters (via Internazionale)
+      date: 2026-04-16
+      tier: 3
+  - text: 'Money: the 2028-34 budget is a zero-sum quarrel (Commission EUR 1,763bn; Cyprus box EUR 1,730bn; Germany, Netherlands, Austria, Denmark, Finland and Sweden ask for cuts of several hundred billion;
+      Poland and the south want cohesion and farm money). The Union has no tax of its own and its borrowing, as in the EUR 90bn loan, is fought over each time; Belgium refused the legal risk of the Euroclear
+      assets.'
+    confidence: A
+    sources:
+    - url: https://www.europeanmovement.ie/the-2028-2034-mff-negotiations-state-of-play/
+      title: 'The 2028-2034 MFF negotiations: state of play'
+      publisher: European Movement Ireland
+      date: '2026'
+      tier: 3
+    - url: https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768.pdf
+      title: Statement of Denmark, Germany, the Netherlands, Austria, Finland and Sweden on the Multiannual Financial Framework 2028-2034
+      publisher: German Federal Government
+      date: *id002
+      tier: 1
+    - url: https://www.intellinews.com/six-net-contributors-demand-hundreds-of-billions-off-the-eu-s-next-budget-464258
+      title: Six net contributors demand hundreds of billions off the EU's next budget
+      publisher: bne IntelliNews
+      date: 2026-08
+      tier: 3
+    - url: https://www.enca.com/business/eu-agrees-90-bn-euro-loan-ukraine-without-russian-assets-0
+      title: EU agrees 90-bn-euro loan for Ukraine, but without Russian assets
+      publisher: eNCA (AFP)
+      date: *id003
+      tier: 3
+    - url: https://informat.ro/en/eu/irish-presidency-eu-budget-negotiation-framework-nextgenerationeu-142469
+      title: Irish presidency presents EU budget negotiation framework (NextGenerationEU)
+      publisher: Informat.ro
+      date: 2026-10
+      tier: 3
+  - text: 'Energy and critical inputs still come from others: Norway 30.9% of EU gas imports in 2025, the United States 26.2% (57.9% of LNG, heading to two-thirds), Russia 12.5% until the ban bites; 8.5%
+      of EU LNG and 40% of jet fuel and diesel transit Hormuz; rare-earth magnets depend on Chinese licences (about 2,000 priority applications sent by EU firms in October 2025, just over half processed).'
+    confidence: A
+    sources:
+    - url: https://www.rigzone.com/news/lng_made_up_45_percent_of_eu_gas_imports_in_2025-07-jul-2026-184076-article/
+      title: 'LNG made up 45 percent of EU gas imports in 2025 (Commission: Russia 12.5%, US 26.2%, Norway 30.9% of total; US 57.9% of LNG)'
+      publisher: Rigzone
+      date: &id010 2026-07-07
+      tier: 3
+    - url: https://www.euronews.com/business/2026/05/13/two-thirds-of-europes-lng-imports-to-come-from-the-us-amid-increased-reliance
+      title: Two-thirds of Europe's LNG imports to come from the US amid increased reliance
+      publisher: Euronews
+      date: &id011 2026-05-13
+      tier: 3
+    - url: https://consilium.europa.eu/en/infographics/where-does-the-eu-s-gas-come-from
+      title: Where does the EU's gas come from?
+      publisher: Council of the EU
+      date: '2026'
+      tier: 1
+    - url: https://jamaica-gleaner.com/article/world-news/20260529/eu-seeks-more-vessels-secure-hormuz-navigation
+      title: EU seeks more vessels to secure Hormuz navigation (Aspides extended to Feb 2027; 8.5% of EU LNG and 40% of jet fuel and diesel pass the strait)
+      publisher: The Gleaner (Jamaica, wire report)
+      date: *id004
+      tier: 3
+    - url: https://newsletter.mw.creamermedia.com/article/eu-trade-chief-to-meet-chinas-wang-to-discuss-rare-earths-2025-10-22
+      title: EU trade chief to meet China's Wang to discuss rare earths
+      publisher: Reuters (via Creamer Media)
+      date: &id020 2025-10-22
+      tier: 3
+  - text: 'Politics at home: Eurosceptic or sovereigntist governments in Prague and Bratislava, a Parliament that referred Mercosur to the Court (334-324, Jan 2026), Poland''s suit against provisional application
+      (C-460/26 R), farmers, and an Icelandic referendum (29 Aug 2026, 52.8% no) as a reminder that enlargement is not a one-way street.'
+    confidence: B
+    sources:
+    - url: https://www.thepoultrysite.com/news/2026/01/eu-lawmakers-send-mercosur-trade-deal-to-top-court
+      title: EU lawmakers send Mercosur trade deal to top court
+      publisher: The Poultry Site (wire)
+      date: 2026-01
+      tier: 3
+    - url: https://curia.europa.eu/site/jcms/p1_1000088177/en/order-case-c-460/26-r-poland-v-council
+      title: 'Order: Case C-460/26 R Poland v Council (interim measures against provisional application of the EU-Mercosur interim trade agreement)'
+      publisher: Court of Justice of the European Union
+      date: 2026-09-29
+      tier: 1
+    - url: https://www.pravda.com.ua/eng/news/2025/12/19/8012550
+      title: 'EUR 90bn for Ukraine: EU summit approves exemption for Hungary, Slovakia and Czechia'
+      publisher: Ukrainska Pravda
+      date: *id005
+      tier: 3
+    - url: https://dip.euaa.europa.eu/node/13657
+      title: Czechia - new legislation comes into force as of 12 June 2026 to implement the Pact
+      publisher: European Union Agency for Asylum
+      date: *id006
+      tier: 1
+    - url: https://www.intellinews.com/president-says-czechia-should-adopt-euro-if-it-helps-the-economy-446096/
+      title: President says Czechia should adopt euro if it helps the economy
+      publisher: bne IntelliNews
+      date: 2026-06-01
+      tier: 3
+    - url: https://www.newstream.cz/politika/babisova-vlada-vyhlasila-valku-green-dealu-eu-se-obava-dalsiho-rebela
+      title: Babiš's government has declared war on the Green Deal; the EU fears another rebel
+      publisher: Newstream.cz
+      date: 2025-12
+      tier: 3
+      title_original: Babišova vláda vyhlásila válku Green Dealu, EU se obává dalšího rebela
+      lang: cs
+    - url: https://aa.com.tr/en/europe/eu-launches-infringement-procedure-against-slovakia-over-constitutional-amendment/3750268
+      title: EU launches infringement procedure against Slovakia over constitutional amendment
+      publisher: Anadolu Agency
+      date: 2025-11-21
+      tier: 3
+    - url: https://www.pravda.com.ua/eng/news/2026/04/29/8032397/
+      title: European Parliament supports financial restrictions for Slovakia over actions of PM Fico's government
+      publisher: Ukrainska Pravda
+      date: 2026-04-29
+      tier: 3
+    - url: https://www.tasr.sk/tasr-clanok/TASR:2026042800000228
+      title: Slovakia Files Lawsuit with Court of Justice of EU over Russian Gas Import Ban
+      publisher: TASR (Slovak public agency)
+      date: &id012 2026-04-28
+      tier: 3
+    - url: https://www.osw.waw.pl/en/publikacja/33685/pdf
+      title: EU summit decision on financing Ukraine and the Czech, Slovak and Hungarian opt-out (enhanced cooperation, Article 20 TEU)
+      publisher: OSW
+      date: 2025-12
+      tier: 2
+    - url: https://www.euronews.com/2026/08/30/iceland-votes-no-to-further-eu-accession-talks-in-tight-result
+      title: Iceland votes no to further EU accession talks in tight result
+      publisher: Euronews
+      date: 2026-08-30
+      tier: 3
+    - url: https://www.aljazeera.com/amp/news/2026/8/30/iceland-rejects-eu-membership-plan-in-referendum
+      title: Iceland rejects EU membership plan in referendum
+      publisher: Al Jazeera
+      date: 2026-08-30
+      tier: 3
+  - text: 'No single voice or command: the President of the Commission, the President of the European Council and the High Representative overlap; leaders in June 2026 could not agree on who would speak
+      to Moscow, and the Council President''s own office reopened contacts with the Kremlin that several leaders criticised. The Union cannot negotiate peace, it can only finance and sanction.'
+    confidence: B
+    sources:
+    - url: https://www.eunews.it/en/2026/05/11/ukraine-the-eu-is-considering-its-representative-for-the-distant-negotiations-with-moscow-kallas-puts-herself-forward/
+      title: 'Ukraine: the EU is considering its representative for the distant negotiations with Moscow, Kallas puts herself forward'
+      publisher: Eunews
+      date: *id007
+      tier: 3
+    - url: https://www.pravda.com.ua/eng/news/2026/06/19/8040066/
+      title: EU Council president explains to EU leaders why he reopened contact with Moscow
+      publisher: European Pravda
+      date: *id008
+      tier: 3
+  paradoxes:
+  - text: 'Strategic autonomy built on American dependence: the Union can afford to rearm, to sanction Russia and to keep the Ukraine war financed only because the US guarantee and US LNG are still there.
+      It bought tariff peace at Turnberry (15% ceiling, preferences cut first, Parliament''s sunrise clause and suspension right added later) and is shifting from Russian to American gas just as Washington
+      questions the guarantee - the more it gives to keep the umbrella open, the more it needs one.'
+    confidence: B
+    sources:
+    - url: https://www.axios.com/2025/07/27/trump-eu-trade-deal-tariffs
+      title: U.S. reaches trade agreement with Europe with 15% tariff
+      publisher: Axios
+      date: 2025-07-27
+      tier: 3
+    - url: https://www.kitco.com/news/off-the-wire/2026-06-15/eu-vote-us-trade-deal-set-bring-tariff-peace-how-long
+      title: EU vote on US trade deal is set to bring tariff peace, but for how long?
+      publisher: Reuters (via Kitco)
+      date: *id009
+      tier: 3
+    - url: https://www.wam.ae/en/article/c0r63g0-european-parliament-approves-eu-us-trade-deal
+      title: European Parliament approves EU-US trade deal (440-151-50; Commission may suspend if the US breaches steel and aluminium terms)
+      publisher: WAM (UAE news agency)
+      date: 2026-06-16
+      tier: 3
+    - url: https://www.rigzone.com/news/lng_made_up_45_percent_of_eu_gas_imports_in_2025-07-jul-2026-184076-article/
+      title: 'LNG made up 45 percent of EU gas imports in 2025 (Commission: Russia 12.5%, US 26.2%, Norway 30.9% of total; US 57.9% of LNG)'
+      publisher: Rigzone
+      date: *id010
+      tier: 3
+    - url: https://www.euronews.com/business/2026/05/13/two-thirds-of-europes-lng-imports-to-come-from-the-us-amid-increased-reliance
+      title: Two-thirds of Europe's LNG imports to come from the US amid increased reliance
+      publisher: Euronews
+      date: *id011
+      tier: 3
+    - url: https://pism.pl/publications/the-ankara-summit-a-step-towards-the-europeanisation-of-nato
+      title: The Ankara Summit - a step towards the Europeanisation of NATO
+      publisher: PISM (Polish Institute of International Affairs)
+      date: 2026-07
+      tier: 2
+  - text: 'The Union''s rule of consent is also its exposure: unanimity makes every package, every cluster and every budget line hostage to the smallest spoiler, so the centre has learned to route around
+      it (enhanced cooperation for the EUR 90bn loan, Article 122 for the assets, trade-policy bases for the gas ban). Each workaround is legally contestable - Hungary and Slovakia sued at the Court over
+      the gas phase-out - and so trades a political veto for a judicial one.'
+    confidence: B
+    sources:
+    - url: https://www.enca.com/business/eu-agrees-90-bn-euro-loan-ukraine-without-russian-assets-0
+      title: EU agrees 90-bn-euro loan for Ukraine, but without Russian assets
+      publisher: eNCA (AFP)
+      date: *id003
+      tier: 3
+    - url: https://euromaidanpress.com/2025/12/12/eu-freezes-russian-assets-indefinitely/
+      title: EU freezes Russian assets indefinitely
+      publisher: Euromaidan Press
+      date: 2025-12-12
+      tier: 3
+    - url: https://telex.hu/english/2026/02/02/hungary-challenges-eu-ban-on-russian-gas-at-eu-court-of-justice
+      title: Hungary challenges EU ban on Russian gas at EU Court of Justice
+      publisher: Telex
+      date: 2026-02-02
+      tier: 3
+    - url: https://www.tasr.sk/tasr-clanok/TASR:2026042800000228
+      title: Slovakia Files Lawsuit with Court of Justice of EU over Russian Gas Import Ban
+      publisher: TASR (Slovak public agency)
+      date: *id012
+      tier: 3
+    - url: https://www.upstreamonline.com/energy-security/eu-signs-off-on-russian-gas-ban/2-1-1934031
+      title: EU signs off on Russian gas ban
+      publisher: Upstream
+      date: '2026'
+      tier: 3
+  - text: 'Sanctions that cost the sanctioner: ending Russian gas by 2027 (and Russian LNG from 1 Jan 2027) moves dependence to US LNG and to Gulf supply that passes through Hormuz, which the Iran war (since
+      late February 2026) has closed or disrupted; the immobilised EUR 210bn is its best lever on Moscow but sits in one Belgian depository and cannot be used without Belgian risk, so Ukraine is financed
+      by EU borrowing that only Russian reparations will repay.'
+    confidence: B
+    sources:
+    - url: https://www.ukrinform.net/rubric-economy/4084369-eu-approves-phased-ban-on-russian-gas-imports-by-2027.html
+      title: EU approves phased ban on Russian gas imports by 2027
+      publisher: Ukrinform
+      date: *id013
+      tier: 3
+    - url: https://www.euronews.com/business/2026/05/13/two-thirds-of-europes-lng-imports-to-come-from-the-us-amid-increased-reliance
+      title: Two-thirds of Europe's LNG imports to come from the US amid increased reliance
+      publisher: Euronews
+      date: *id011
+      tier: 3
+    - url: https://aa.com.tr/en/europe/eu-s-kallas-warns-of-dangerous-precedence-as-hormuz-remains-blocked-2-months-into-iran-war/3920061
+      title: EU's Kallas warns of 'dangerous precedent' as Hormuz remains blocked two months into Iran war
+      publisher: Anadolu Agency
+      date: 2026-04
+      tier: 3
+    - url: https://jamaica-gleaner.com/article/world-news/20260529/eu-seeks-more-vessels-secure-hormuz-navigation
+      title: EU seeks more vessels to secure Hormuz navigation (Aspides extended to Feb 2027; 8.5% of EU LNG and 40% of jet fuel and diesel pass the strait)
+      publisher: The Gleaner (Jamaica, wire report)
+      date: *id004
+      tier: 3
+    - url: https://www.ukrinform.net/rubric-economy/4068890-eu-backs-indefinite-freeze-of-russian-assets.html
+      title: EU backs indefinite freeze of Russian assets
+      publisher: Ukrinform
+      date: 2025-12
+      tier: 3
+    - url: https://moderndiplomacy.eu/2026/08/27/frozen-russian-assets-take-two-what-europes-revived-e210-billion-plan-means-for-ukraine-belgium-and-the-euro/
+      title: 'Frozen Russian Assets, Take Two: what Europe''s revived EUR 210 billion plan means for Ukraine, Belgium and the euro'
+      publisher: Modern Diplomacy
+      date: 2026-08-27
+      tier: 3
+  - text: 'Enlargement is the Union''s best foreign policy and its largest threat to decision-making: nine candidates would roughly double the number of vetoes, and each step already needs unanimity. Freezing
+      the files because the institutions are not ready (North Macedonia, Georgia, Serbia) pushes candidates toward Moscow and Beijing - the outcome enlargement was supposed to prevent - while rapid accession
+      of a war-torn Ukraine is rejected by Hungary, Poland''s farmers and others.'
+    confidence: B
+    sources:
+    - url: https://enlargement-infohub.eu/wp-content/uploads/2025/11/north-macedonia-report-2025.pdf
+      title: 'North Macedonia 2025 Report (SWD(2025) 753): no attempts to adopt the constitutional changes of the Council Conclusions of 18 July 2022'
+      publisher: European Commission
+      date: *id014
+      tier: 1
+    - url: https://www.eunews.it/en/?p=466721
+      title: 'Von der Leyen in Skopje: a first step next week to break the deadlock'
+      publisher: Eunews
+      date: *id015
+      tier: 3
+    - url: https://eeas.europa.eu/delegations/georgia/2025-communication-eu-enlargement-policy-extract-about-georgia_en
+      title: 2025 Communication on EU Enlargement Policy (extract about Georgia)
+      publisher: European Commission / EEAS
+      date: 2025-11-05
+      tier: 1
+    - url: https://oc-media.org/eu-issues-2025-enlargement-report-says-georgia-is-a-candidate-country-in-name-only
+      title: EU issues 2025 enlargement report, says Georgia is a candidate country in name only
+      publisher: OC Media
+      date: 2025-11-04
+      tier: 3
+    - url: https://www.euronews.com/my-europe/2026/09/08/eu-institution-leaders-blast-serbia-over-shocking-ratko-mladics-funeral
+      title: EU institution leaders blast Serbia over 'shocking' Ratko Mladić's funeral
+      publisher: Euronews
+      date: *id016
+      tier: 3
+    - url: https://www.euronews.com/2026/10/07/hungary-set-to-lift-veto-on-ukraines-eu-membership-talks
+      title: Hungary set to lift veto on Ukraine's EU membership talks
+      publisher: Euronews
+      date: 2026-10-07
+      tier: 3
+    - url: https://www.eurointegration.com.ua/eng/news/2026/09/29/7246508/
+      title: EU to try to overcome Hungary's veto on negotiating clusters 2 and 3 for Ukraine on Tuesday
+      publisher: European Pravda
+      date: 2026-09-29
+      tier: 3
+  - text: 'Regulation as foreign policy provokes the guarantor: the DSA fine on X (EUR 120m) was met by Rubio and Vance as censorship, by the US Justice Department joining X''s court challenge and by Lutnick
+      tying steel tariffs to digital rules. The Union''s strongest autonomous instrument is the one on which the US is least willing to bargain, and it can least afford a fight with the country it depends
+      on for defence.'
+    confidence: B
+    sources:
+    - url: https://www.irishtimes.com/business/2025/12/05/eu-fines-elon-musks-x-120mn-for-transparency-violations/
+      title: EU fines Elon Musk's X EUR 120m for transparency violations
+      publisher: The Irish Times
+      date: *id017
+      tier: 3
+    - url: https://www.axios.com/2025/12/05/x-elon-musk-european-commission-fine
+      title: Trump allies back Elon Musk's X after Europe hits it with $140M fine
+      publisher: Axios
+      date: *id018
+      tier: 3
+    - url: https://euperspectives.eu/2026/05/trump-violates-us-eu-trade-deal/
+      title: Trump violates US-EU trade deal
+      publisher: EU Perspectives
+      date: 2026-05
+      tier: 3
+  - text: 'De-risking China requires China: the 2040 target (-90%) and the EV transition depend on Chinese batteries and magnets, so the Union that fines Chinese EV makers (7.8-35.3% duties) now accepts
+      minimum-price undertakings that, Bruegel warns, raise European prices and margins, and negotiates rare-earth fast channels in return for trade concessions (8-9 Oct 2026). Protection of the green industry
+      and the green target pull in opposite directions.'
+    confidence: B
+    sources:
+    - url: https://cms.law/en/int/legal-updates/electric-vehicles-from-china-the-eu-s-anti-subsidy-duties-and-the-emerging-pathway-for-price-undertakings
+      title: 'Electric vehicles from China: the EU''s anti-subsidy duties and the emerging pathway for price undertakings'
+      publisher: CMS
+      date: 2026-01
+      tier: 3
+    - url: https://www.bruegel.org/first-glance/scant-benefits-significant-risks-price-undertakings-chinese-electric-vehicles-entering
+      title: 'Scant benefits, significant risks: price undertakings for Chinese electric vehicles'
+      publisher: Bruegel
+      date: '2026'
+      tier: 2
+    - url: https://www.lovguiden.dk/en/det-offentlige/europa-kommissionen-press-corner/2026-10-09-eu-og-kina-aftaler-hybridbiler-sjaeldne-jordarter-og-eksportkontrol
+      title: EU and China agree on hybrid vehicles, rare earths and export controls (Commission press release, 2nd trade meeting, Beijing 8-9 Oct 2026)
+      publisher: European Commission press corner (via Lovguiden)
+      date: *id019
+      tier: 3
+    - url: https://newsletter.mw.creamermedia.com/article/eu-trade-chief-to-meet-chinas-wang-to-discuss-rare-earths-2025-10-22
+      title: EU trade chief to meet China's Wang to discuss rare earths
+      publisher: Reuters (via Creamer Media)
+      date: *id020
+      tier: 3
+    - url: https://www.europarl.europa.eu/news/en/press-room/20260205IPR33620/eu-climate-law-a-2040-emissions-reduction-target-of-90-for-the-eu
+      title: 'EU climate law: a 2040 emissions reduction target of 90% for the EU'
+      publisher: European Parliament
+      date: *id021
+      tier: 1
+  reading: 'The Union acts as a grand strategist only by accident. It has no army, no single voice and no budget that anyone loves; what it has is a market, a rulebook, a currency and the right to say yes
+    or no to its neighbours. Read through Luttwak, that is a strategy of the second level: it exports order by attraction (enlargement, association, Growth Plan money, visa-free travel) and by exclusion
+    (sanctions, frozen assets, trade defence), and it moves only when 27 governments consent. In 2026 the logic of consent has hardened into a posture: Russia is the declared threat, the United States has
+    become a ''necessary partner'' that cannot be left and cannot be trusted, China is a rival managed through quotas and licences, and the neighbourhood is a queue. The paradoxes all come from the same
+    root - the Union is strongest where its rules are least contested and most exposed where it needs speed. It has just shown it can finance a war (EUR 90bn), outlast a spoiler (Orban''s defeat on 12 Apr
+    2026) and ban a fuel (Russian gas), and it still cannot appoint an envoy, use the assets it froze or guarantee its own borders without Washington. The reading for the next year is whether the Ankara-era
+    bargain - a more European NATO, a Union that pays - turns into capacity, or whether the 2028-34 budget, the Turnberry steel clause and the Hungarian reversal are only a pause.'

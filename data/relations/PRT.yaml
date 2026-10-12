@@ -1,0 +1,500 @@
+from: PRT
+relations:
+  # ---------- objective ----------
+  - to: org-eu
+    layer: objective
+    type: influence_goal
+    summary: "Lisbon wants the 2028-34 EU budget to keep cohesion as a principle: Montenegro said in Apr 2026 Portugal could oppose a budget that 'disrespects' it, and in June that Brussels had accepted an extra EUR 1.6bn mainly for cohesion; the government also warns that the merit-based Competitiveness Fund could cost Portuguese applicants money. A Portuguese former PM, Antonio Costa, chairs the European Council since Dec 2024."
+    since: 2026-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.theportugalnews.com/br/noticias/2026-04-25/primeiro-ministro-de-portugal-pode-se-opor-ao-proximo-orcamento-da-uniao-europeia/1012932", title: "Portugal's PM may oppose the next EU budget", publisher: "The Portugal News", date: 2026-04-25, tier: 3}
+      - {url: "https://portugal.gov.pt/en/gc25/communication/news/cohesion-at-the-centre-of-negotiations-for-the-upcoming-european-union-multiannual-budget", title: "Cohesion at the centre of negotiations for the upcoming EU multiannual budget", publisher: "Government of Portugal", date: 2026, tier: 1}
+      - {url: "https://www.consilium.europa.eu/european-council/president/", title: "President of the European Council", publisher: "Council of the EU", date: 2026, tier: 1}
+  - to: org-mercosur
+    layer: objective
+    type: influence_goal
+    summary: "Portugal champions the EU-Mercosur agreement (Council approval 9 Jan 2026, signature in Asuncion 17 Jan; Montenegro: 'essential step' for EU strategic autonomy, the agriculture minister cites wine, olive oil and cheese) and in Apr 2026, beside Lula, said it is committed to 'deepening' it. Portugal and Spain sit on the same side against the French-led opposition."
+    since: 2026-01-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://rr.pt/noticia/economia/2026/01/09/mercosul-montenegro-diz-que-acordo-comercial-reforca-autonomia-estrategica-da-ue/454684/", title: "Mercosur: Montenegro says trade deal strengthens EU strategic autonomy", title_original: "Mercosul. Montenegro diz que acordo comercial reforca autonomia estrategica da UE", lang: pt, publisher: "Renascenca", date: 2026-01-09, tier: 3}
+      - {url: "https://agenciabrasil.ebc.com.br/politica/noticia/2026-01/brasil-e-portugal-querem-acelerar-acordo-mercosul-uniao-europeia", title: "Brazil and Portugal want to speed up the Mercosur-EU agreement", title_original: "Brasil e Portugal querem acelerar acordo Mercosul-Uniao Europeia", lang: pt, publisher: "Agencia Brasil", date: 2026-01, tier: 3}
+      - {url: "https://istoedinheiro.com.br/portugal-esta-empenhado-no-aprofundamento-do-acordo-mercosul-ue-diz-primeiro-ministro", title: "Portugal is committed to deepening the Mercosur-EU agreement, says prime minister", title_original: "Portugal esta empenhado no aprofundamento do acordo Mercosul-UE, diz primeiro-ministro", lang: pt, publisher: "Isto E Dinheiro", date: 2026-04-21, tier: 3}
+  - to: org-un
+    layer: objective
+    type: membership_goal
+    summary: "Portugal won a non-permanent Security Council seat for 2027-28 on 3 Jun 2026 (134 votes; Austria 131; Germany 104 and lost), with Angola's declared backing from 2024; the term starts 1 Jan 2027."
+    since: 2026-06-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://passblue.com/2026/06/03/five-new-countries-elected-to-the-un-security-councils-2027-28-term/", title: "Five new countries elected to the UN Security Council's 2027-28 term", publisher: "PassBlue", date: 2026-06-03, tier: 3}
+      - {url: "https://www.securitycouncilreport.org/atf/cf/%7B65BFCF9B-6D27-4E9C-8CD3-CF6E4FF96FF9%7D/security_council_elections_2026.pdf", title: "Security Council elections 2026", publisher: "Security Council Report", date: 2026, tier: 2}
+  - to: org-cplp
+    layer: objective
+    type: influence_goal
+    summary: "Portugal, with Brazil and Timor-Leste, opposes Equatorial Guinea's bid for the 2027-29 CPLP presidency (backed by the PALOP countries; Brazil says the impasse remains in Aug 2026); President Marcelo had already skipped the July 2025 Bissau summit over it. Guinea-Bissau stays suspended."
+    since: 2025-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.verangola.net/va/en/082026/Politics/49857/Brazil-says-the-impasse-remains-over-which-country-will-assume-the-presidency-of-the-CPLP.htm", title: "Brazil says the impasse remains over which country will assume the presidency of the CPLP", publisher: "Ver Angola", date: 2026-08, tier: 3}
+      - {url: "https://observador.pt/2025/07/18/presidente-da-republica-recusa-participar-na-conferencia-da-cplp-marcelo-nao-quer-guine-equatorial-a-frente-da-organizacao/", title: "President refuses to attend CPLP conference: Marcelo does not want Equatorial Guinea to lead the organisation", title_original: "Presidente da Republica recusa participar na conferencia da CPLP: Marcelo nao quer Guine Equatorial a frente da organizacao", lang: pt, publisher: "Observador", date: 2025-07-18, tier: 3}
+  - to: GNB
+    layer: objective
+    type: influence_goal
+    summary: "Lisbon wants constitutional order and the electoral process restored after the 26 Nov 2025 coup, and the release of detainees; it works 'discreetly' with Angola and Brazil, and the junta replied in March 2026 that Portugal has no legitimacy to set norms."
+    since: 2025-11-26
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://observador.pt/2025/12/16/guine-bissau-governo-portugues-transmitiu-necessidade-de-libertacao-dos-presos/", title: "Guinea-Bissau: Portuguese government conveyed the need to free the prisoners", title_original: "Guine-Bissau: Governo portugues transmitiu necessidade de libertacao dos presos", lang: pt, publisher: "Observador", date: 2025-12-16, tier: 3}
+      - {url: "https://www.plataformamedia.com/en/2026/03/24/guinea-bissau-military-cnt-rejects-portugal-corridor-diplomacy-paulo-rangel/", title: "Military rulers in Guinea-Bissau reject Portugal's 'hostile corridor diplomacy'", publisher: "Plataforma Media", date: 2026-03-24, tier: 3}
+  - to: FRA
+    layer: objective
+    type: influence_goal
+    summary: "Portugal and Spain asked France in 2025 for 'specific deadlines and binding commitments' on electricity interconnection corridors, calling the Iberian peninsula an energy island with about 3% interconnection against the EU's 15% target for 2030; the Bay of Biscay link (due 2028) is the answer."
+    since: 2025-05
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://en.ara.cat/economy/spain-and-portugal-pressure-france-to-speed-up-electrical-interconnections_1_5404653.amp.html", title: "Spain and Portugal pressure France to speed up electrical interconnections", publisher: "Ara", date: 2025-05, tier: 3}
+      - {url: "https://www.eib.org/en/press/all/2025-241-eib-supports-with-eur1-6-bn-the-strategic-bay-of-biscay-electricity-interconnection-between-spain-and-france", title: "EIB supports with EUR 1.6bn the strategic Bay of Biscay electricity interconnection between Spain and France", publisher: "European Investment Bank", date: 2025-06-16, tier: 1}
+  # ---------- alignment ----------
+  - to: USA
+    layer: alignment
+    type: treaty
+    summary: "US use of Lajes air base (Terceira, Azores; 65th Air Base Wing) rests on a decades-old bilateral defence cooperation treaty: peacetime use needs no authorisation, hostilities need Portugal's approval. Rangel (Feb 2026) said the surge in US flights was covered by it; he rules out revising it, although President Seguro said as a candidate it should be revised 'in the light of the new geopolitics'."
+    since: 1995
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.al-monitor.com/originals/2026/02/us-aircraft-activity-azores-base-covered-bilateral-treaty-portugal-says", title: "US aircraft activity at Azores base covered by bilateral treaty, Portugal says", publisher: "Reuters (via Al-Monitor)", date: 2026-02, tier: 3}
+      - {url: "https://observador.pt/especiais/seguro-critico-da-administracao-trump-marca-posicao-com-10-de-junho-a-poucos-quilometros-das-lajes/", title: "Seguro, critical of the Trump administration, makes a point with 10 June a few kilometres from Lajes", title_original: "Seguro, critico da administracao Trump, marca posicao com 10 de Junho a poucos quilometros das Lajes", lang: pt, publisher: "Observador", date: 2026-04-29, tier: 3}
+  - to: UKR
+    layer: alignment
+    type: treaty
+    summary: "Bilateral security cooperation agreement signed in Lisbon on 28 May 2024 by Montenegro and Zelensky (Ukraine's 12th): at least EUR 126m of military aid for 2024, roles in the F-16 coalition and the maritime capability coalition, ammunition procurement, demining, defence industry and intelligence cooperation, support for sanctions on Russia. Not a defence guarantee."
+    since: 2024-05-28
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.president.gov.ua/en/news/ukrayina-uklala-dvostoronnyu-bezpekovu-ugodu-z-portugaliyeyu-91193", title: "Ukraine concluded a bilateral security agreement with Portugal", publisher: "Office of the President of Ukraine", date: 2024-05-28, tier: 1}
+      - {url: "https://www.ukrinform.net/rubric-polytics/3868913-ukraine-portugal-sign-bilateral-security-agreement.html", title: "Ukraine, Portugal sign bilateral security agreement", publisher: "Ukrinform", date: 2024-05-28, tier: 3}
+  - to: CHN
+    layer: alignment
+    type: treaty
+    summary: "Belt and Road memorandum signed in Dec 2018 during Xi's visit (Portugal agreed to 'promote' the initiative, short of the 'jointly construct' language of other signatories); Reuters notes Portugal is the only western European country still signed up. 2025 was the 20th anniversary of the comprehensive strategic partnership."
+    since: 2018-12-05
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.yahoo.com/news/china-willing-build-stable-fruitful-071922250.html", title: "China seeks stronger ties with Europe, it says in meeting with Portugal's foreign minister", publisher: "Reuters (via Yahoo)", date: 2025-03, tier: 3}
+      - {url: "https://business-standard.com/article/pti-stories/xi-arrives-in-portugal-to-boost-trade-ties-118120500061_1.html", title: "Xi arrives in Portugal to boost trade ties", publisher: "Business Standard (PTI)", date: 2018-12-05, tier: 3}
+  # ---------- dependency ----------
+  - to: ESP
+    layer: dependency
+    type: trade_share
+    summary: "Spain is Portugal's first export market: 30.2% of goods exports by the Banco de Portugal measure (Jun 2026 bulletin), 25.4% in Q1 2025 by INE; Spain was the largest negative contribution to Portugal's export-share loss in 2025."
+    value: 0.302
+    unit: share_of_goods_exports_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://econews.pt/2026/06/16/portugal-lost-export-share-in-most-markets-in-2025/", title: "Portugal lost export share in most markets in 2025", publisher: "Econews (Banco de Portugal bulletin)", date: 2026-06-16, tier: 3}
+      - {url: "https://www.portugalglobal.pt/pt/noticias/2025/maio/exportacoes-portuguesas-de-bens-crescem-7-7", title: "Portuguese goods exports grow 7.7% (INE, Q1 2025: Spain 25.4%)", title_original: "Exportacoes portuguesas de bens crescem 7,7%", lang: pt, publisher: "Portugal Global (AICEP)", date: 2025-05, tier: 3}
+  - to: DEU
+    layer: dependency
+    type: trade_share
+    summary: "Germany is the second export market: 13.9% of Portuguese goods exports in 2025 (+1.7 points, exports +14.5%), the main driver of export growth."
+    value: 0.139
+    unit: share_of_goods_exports_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.essential-business.pt/2026/02/09/exports-up-0-5-in-2025-but-plummet-by-13-4-to-us/", title: "Exports up 0.5% in 2025 but plummet by 13.4% to US", publisher: "Essential Business (INE data)", date: 2026-02-09, tier: 3}
+  - to: USA
+    layer: dependency
+    type: trade_share
+    summary: "The US took 6.2% of Portuguese goods exports in Q1 2025 (INE), the first market outside Europe; sales to the US fell 13.4% in 2025 after Trump's tariffs. Montenegro welcomed the EU-US deal (15% tariff on most goods) for 'predictability and stability' while the business association AEP called it far from desirable."
+    value: 0.062
+    unit: share_of_goods_exports_q1_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.essential-business.pt/2026/02/09/exports-up-0-5-in-2025-but-plummet-by-13-4-to-us/", title: "Exports up 0.5% in 2025 but plummet by 13.4% to US", publisher: "Essential Business (INE data)", date: 2026-02-09, tier: 3}
+      - {url: "https://stg.portugalresident.com/pm-welcomes-us-eu-trade-deal-saying-it-brings-predictability-stability/", title: "PM welcomes US-EU trade deal, saying it brings predictability, stability", publisher: "Portugal Resident", date: 2025-07, tier: 3}
+  - to: USA
+    layer: dependency
+    type: military_presence
+    summary: "Lajes hosts the 65th Air Base Wing of the USAF; since the Iran war began Portugal approved 76 US landings and 25 overflights (to 7 Apr 2026) on the condition of no strikes on civilian infrastructure, and refused some landings. Rangel called the US use 'minimal'."
+    value: 76
+    unit: us_landings_authorised_at_lajes_to_2026-04-07
+    since: 2026-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.al-monitor.com/originals/2026/04/portugal-says-us-uses-azores-base-condition-no-civilian-infrastructure-targeted", title: "Portugal says US uses Azores base on condition no civilian infrastructure targeted", publisher: "Reuters (via Al-Monitor)", date: 2026-04-07, tier: 3}
+      - {url: "https://observador.pt/2026/04/30/rangel-acredita-que-eua-nao-tem-motivos-para-considerar-portugal-um-aliado-pouco-fiavel-na-nato/", title: "Rangel believes the US has no reason to consider Portugal an unreliable NATO ally", title_original: "Rangel acredita que EUA nao tem motivos para considerar Portugal um aliado pouco fiavel na NATO", lang: pt, publisher: "Observador", date: 2026-04-30, tier: 3}
+  - to: USA
+    layer: dependency
+    type: arms_supply
+    summary: "Portugal's combat aircraft are US F-16s nearing end of life. Defence minister Melo signalled in March 2025 that F-35s were unlikely because of US unpredictability (some outlets overstated it as a ruling-out); on 29 May 2026 he said the replacement process 'has not yet started', named Lockheed Martin, Saab and an Airbus-led Eurofighter as the contenders, and left open whether it enters the military programming law; the SAFE loans do not cover it. No order has been placed - the 2026 decision the brief anticipated was not found."
+    value: 0
+    unit: f35_orders_placed
+    since: 2025-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://theaviationist.com/2025/03/13/portugal-f-35-plans/", title: "Portugal drops plans for F-35 citing U.S. political uncertainty", publisher: "The Aviationist", date: 2025-03-13, tier: 3}
+      - {url: "https://euro-sd.com/2025/03/major-news/43120/portugal-opts-out-of-f-35-buy/", title: "Portugal opts out of F-35 buy", publisher: "European Security & Defence", date: 2025-03, tier: 3}
+      - {url: "https://observador.pt/2026/05/29/substituicao-dos-f-16-melo-rejeita-especulacoes-e-avisa-que-processo-ainda-nao-comecou/", title: "F-16 replacement: Melo rejects speculation and warns the process has not started", title_original: "Substituicao dos F-16: Melo rejeita especulacoes e avisa que processo ainda nao comecou", lang: pt, publisher: "Observador", date: 2026-05-29, tier: 3}
+  - to: NGA
+    layer: dependency
+    type: energy_import
+    summary: "About 95% of Portugal's gas arrives at the Sines LNG terminal. In 2024 Nigeria supplied 51% of LNG deliveries and the US about 40%; in 2025 Nigeria accounted for 50% of Sines discharges, the US 43% and Russia 7% (ERSE report, counted in operations not volume)."
+    value: 0.51
+    unit: share_of_lng_deliveries_2024
+    since: 2024
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.gasprocessingnews.com/news/2025/01/portugal-to-import-more-us-nigerian-lng-aims-to-end-russian-supply/", title: "Portugal to import more US, Nigerian LNG, aims to end Russian supply", publisher: "Reuters (via Gas Processing News)", date: 2025-01, tier: 3}
+      - {url: "https://www.rtp.pt/noticias/economia/sines-recebeu-95-do-gas-que-entrou-em-portugal-e-tres-navios-russos-em-2025_n1764920", title: "Sines received 95% of the gas that entered Portugal and three Russian ships in 2025", title_original: "Sines recebeu 95% do gas que entrou em Portugal e tres navios russos em 2025", lang: pt, publisher: "RTP (ERSE report)", date: 2026, tier: 3}
+  - to: RUS
+    layer: dependency
+    type: energy_import
+    summary: "Russian LNG was about 4.4% of Portuguese LNG imports in 2024 and 7% of Sines discharges in 2025 (three Russian cargoes); the environment minister says Portugal is 'practically independent' of Russian gas and wants to cut the rest."
+    value: 0.044
+    unit: share_of_lng_deliveries_2024
+    since: 2024
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.gasprocessingnews.com/news/2025/01/portugal-to-import-more-us-nigerian-lng-aims-to-end-russian-supply/", title: "Portugal to import more US, Nigerian LNG, aims to end Russian supply", publisher: "Reuters (via Gas Processing News)", date: 2025-01, tier: 3}
+      - {url: "https://www.rtp.pt/noticias/economia/sines-recebeu-95-do-gas-que-entrou-em-portugal-e-tres-navios-russos-em-2025_n1764920", title: "Sines received 95% of the gas that entered Portugal and three Russian ships in 2025", title_original: "Sines recebeu 95% do gas que entrou em Portugal e tres navios russos em 2025", lang: pt, publisher: "RTP (ERSE report)", date: 2026, tier: 3}
+  - to: org-eu
+    layer: dependency
+    type: investment
+    summary: "Recovery and Resilience Plan: EUR 22.2bn (EUR 16.3bn grants, EUR 5.9bn loans), revised in late 2025 to about EUR 21.9bn and concentrated on measures finishable by 31 Aug 2026; the minister said on 28 Jul 2026 that 283 of 379 milestones were met and the rest would be. The 2028-34 cohesion allocation is not yet set."
+    value: 16.3
+    unit: eur_bn_recovery_grants
+    since: 2021
+    until: 2026-08-31
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/governo-preve-execucao-integral-do-prr-ate-31-de-agosto", title: "Government expects full execution of the PRR by 31 August", title_original: "Governo preve execucao integral do PRR ate 31 de agosto", lang: pt, publisher: "Government of Portugal", date: 2026-07-28, tier: 1}
+      - {url: "https://econews.pt/?p=44589", title: "European Commission calls for quicker implementation of RRP measures in Portugal", publisher: "Econews", date: 2025, tier: 3}
+  - to: FRA
+    layer: dependency
+    type: remittances
+    summary: "Emigrant remittances reached a record EUR 4,387.7m in 2025 (Banco de Portugal); France overtook Switzerland as the largest source with EUR 1,211.5m (Switzerland EUR 1,122.9m)."
+    value: 1211.5
+    unit: eur_million_emigrant_remittances_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.dnoticias.pt/2026/2/23/482430-remessas-dos-emigrantes-subiram-214-em-2025-para-4387-milhoes-de-euros/", title: "Emigrant remittances rose 2.14% in 2025 to EUR 4,387 million", title_original: "Remessas dos emigrantes subiram 2,14% em 2025 para 4.387 milhoes de euros", lang: pt, publisher: "DNoticias (Lusa, Banco de Portugal data)", date: 2026-02-23, tier: 3}
+  - to: BRA
+    layer: dependency
+    type: remittances
+    summary: "Brazil is the largest foreign nationality in Portugal for the sixth year (AIMA 2025: 493,622 residents, 31.1% of 1,585,854 foreigners; 115,709 new permits in 2025; Brasilia counted 513,000 in 2023 and Montenegro cites at least 550,000). Brazilians sent EUR 341.4m home in 2025 (-6.8%). 5,386 Brazilians were notified to leave in 2025 after refused applications."
+    value: 341.4
+    unit: eur_million_remitted_by_brazilians_in_portugal_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://dnbrasil.dn.pt/brasileiros-receberam-115709-novas-autorizaes-de-residncia-em-portugal-em-2025", title: "Brazilians received 115,709 new residence permits in Portugal in 2025", title_original: "Brasileiros receberam 115.709 novas autorizacoes de residencia em Portugal em 2025", lang: pt, publisher: "DN Brasil (AIMA report)", date: 2026-09, tier: 3}
+      - {url: "https://www.dnoticias.pt/2026/2/23/482430-remessas-dos-emigrantes-subiram-214-em-2025-para-4387-milhoes-de-euros/", title: "Emigrant remittances rose 2.14% in 2025 to EUR 4,387 million", title_original: "Remessas dos emigrantes subiram 2,14% em 2025 para 4.387 milhoes de euros", lang: pt, publisher: "DNoticias (Lusa, Banco de Portugal data)", date: 2026-02-23, tier: 3}
+  - to: AGO
+    layer: dependency
+    type: trade_share
+    summary: "Portuguese goods exports to Angola were EUR 1,090.8m in 2025 against imports of EUR 233.6m (surplus EUR 857.2m); Angola slid from fifth to seventh destination, the number of exporters fell from 4,225 (2021) to 3,512, and 200 firms make 72% of sales."
+    value: 1090.8
+    unit: eur_million_goods_exports_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://observador.pt/2026/07/18/angola-perdeu-713-exportadores-portugueses-desde-2021/", title: "Angola has lost 713 Portuguese exporters since 2021", title_original: "Angola perdeu 713 exportadores portugueses desde 2021", lang: pt, publisher: "Observador", date: 2026-07-18, tier: 3}
+      - {url: "https://www.verangola.net/va/en/072026/Trade/49516/Angola-has-lost-713-Portuguese-exporters-since-2021.htm", title: "Angola has lost 713 Portuguese exporters since 2021", publisher: "Ver Angola", date: 2026-07, tier: 3}
+  - to: AGO
+    layer: dependency
+    type: debt
+    summary: "Portuguese-financed credit line to Angola raised to EUR 3.25bn (+62% on the initial amount), announced by Montenegro in Luanda in Nov 2025; 23 new cooperation instruments signed since July 2024 and about 250 Portuguese companies operate permanently in Angola."
+    value: 3250
+    unit: eur_million_credit_line
+    since: 2025-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/primeiro-ministro-em-luanda-para-reforcar-cooperacao-bilateral-e-participar-na-cimeira-ueafrica", title: "Prime Minister in Luanda to reinforce bilateral cooperation and attend the EU-Africa summit", title_original: "Primeiro-Ministro em Luanda para reforcar cooperacao bilateral e participar na Cimeira UE-Africa", lang: pt, publisher: "Government of Portugal", date: 2025-11, tier: 1}
+  - to: MOZ
+    layer: dependency
+    type: military_presence
+    summary: "Portugal leads the EU mission EUTM-MOZ (trained more than 1,700 commandos and marines, now 11 quick-reaction companies in Cabo Delgado) and its successor EUMAM-MOZ (assistance since Sept 2024; more than 70 programmes for about 2,000 personnel); at the 6th Luso-Mozambican summit in Porto in 2026 Montenegro and Chapo asked to extend it to 2028."
+    value: 2000
+    unit: mozambican_personnel_in_eumam_moz_programmes
+    since: 2021
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://360mozambique.com/development/mozambican-and-portuguese-governments-request-renewal-of-eu-military-mission-until-2028/", title: "Mozambican and Portuguese governments request renewal of EU military mission until 2028", publisher: "360 Mozambique", date: 2026, tier: 3}
+      - {url: "https://clubofmozambique.com/news/mozambique-mep-backs-two-year-extension-for-eu-military-training-mission/", title: "Mozambique: MEP backs two-year extension for EU military training mission", publisher: "Club of Mozambique", date: 2026, tier: 3}
+  - to: CHN
+    layer: dependency
+    type: investment
+    summary: "Chinese direct investment in Portugal reached a record EUR 3.96bn in 2024 (the Chinese ambassador cites USD 4.46bn, +9.3%); holders include China Three Gorges (about 21% of EDP), State Grid (25% of REN) and Fosun (Fidelidade). Figures differ by source and year."
+    value: 3.96
+    unit: eur_bn_chinese_fdi_2024
+    since: 2011
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.sabado.pt/dinheiro/amp/montenegro-defende-na-china-que-portugal-e-um-pais-confiavel-e-confiante-para-investimentos", title: "Montenegro defends in China that Portugal is a reliable country for investment", title_original: "Montenegro defende na China que Portugal e um pais confiavel e confiante para investimentos", lang: pt, publisher: "Sabado", date: 2025-09, tier: 3}
+      - {url: "https://www.gcs.gov.mo/detail/en/M25FEIJfaV", title: "Chinese ambassador interview: Chinese investment in Portugal and 20 years of strategic partnership", publisher: "Macao SAR Government Information Bureau", date: 2025, tier: 1}
+  # ---------- action ----------
+  - to: ESP
+    layer: action
+    type: incident
+    summary: "The 28 Apr 2025 blackout hit the whole Iberian peninsula; ENTSO-E's final report (Mar 2026) found a voltage-surge chain with several causes, including conventional plants not controlling voltage as expected. Portugal indicated the problem began in Spain, Spain pointed to a break with France; Montenegro said there was no indication of a cyberattack, and both asked the EU and France to speed interconnections. (Mirror of the ESP card's row.)"
+    since: 2025-04-28
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/03/20/iberian-blackout-was-caused-by-multiple-factors-report-says", title: "Iberian blackout was caused by multiple factors, report says", publisher: "Reuters (via Internazionale)", date: 2026-03-20, tier: 3}
+      - {url: "https://www.thelocal.es/20260320/how-the-perfect-storm-caused-spains-blackout", title: "How the perfect storm caused Spain's blackout", publisher: "The Local Spain", date: 2026-03-20, tier: 3}
+      - {url: "https://en.ara.cat/economy/spain-and-portugal-pressure-france-to-speed-up-electrical-interconnections_1_5404653.amp.html", title: "Spain and Portugal pressure France to speed up electrical interconnections", publisher: "Ara", date: 2025-05, tier: 3}
+  - to: ESP
+    layer: action
+    type: agreement
+    summary: "Iberian summit in Huelva (36th, 2026): Montenegro said all conditions are in place to complete the Lisbon-Madrid high-speed link by 2034 if technical validation holds, and admitted that timetables set at past summits are not always met; the 35th summit (Faro, Oct 2024) called energy interconnections 'fundamental'."
+    since: 2026-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.theportugalnews.com/news/2026-03-10/portugal-confirms-high-speed-rail-link-between-lisbon-and-madrid/987820", title: "Portugal confirms high-speed rail link between Lisbon and Madrid", publisher: "The Portugal News", date: 2026-03-10, tier: 3}
+      - {url: "https://www.lamoncloa.gob.es/lang/en/presidente/news/Paginas/2024/20241023-spanish-portuguese-summit.aspx", title: "The President of the Government of Spain takes part in the XXXV Spanish-Portuguese Summit", publisher: "Government of Spain (La Moncloa)", date: 2024-10-23, tier: 1}
+  - to: org-nato
+    layer: action
+    type: agreement
+    summary: "At the Hague summit (June 2025) Portugal signed up to the 5% of GDP target by 2035 (3.5% core, 1.5% related) after announcing 2% for 2025, four years ahead of its earlier plan; Montenegro: 'small annual increases', no fixed ceilings. Analysts call the 5% a political and not binding commitment."
+    since: 2025-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.bairdmaritime.com/security/naval/portugal-aims-to-reach-natos-defence-spending-goal-without-harming-finances", title: "Portugal aims to reach NATO's defence spending goal without harming finances", publisher: "Reuters (via Baird Maritime)", date: 2025-06, tier: 3}
+      - {url: "https://observador.pt/2025/06/23/nato-especialistas-apontam-dificuldade-de-portugal-atingir-5-do-pib-e-possivel-contabilidade-criativa/", title: "NATO: experts point to Portugal's difficulty reaching 5% of GDP and possible creative accounting", title_original: "NATO: especialistas apontam dificuldade de Portugal atingir 5% do PIB e possivel contabilidade criativa", lang: pt, publisher: "Observador", date: 2025-06-23, tier: 3}
+  - to: UKR
+    layer: action
+    type: agreement
+    summary: "The cabinet approved on 11-12 June 2026 expenditure of up to about EUR 130.4m for Ukraine, allowing lethal and non-lethal equipment, under NATO commitments and the 2024 security agreement; Montenegro confirmed continued military, financial, humanitarian and diplomatic support in Kyiv in Dec 2025. A Ukrainian regional agency counts about EUR 226m of Portuguese military aid in 2025 (tier 4 source, not used here)."
+    since: 2026-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.sabado.pt/dinheiro/amp/governo-aprova-ate-130-4-milhoes-para-apoio-a-kiev", title: "Government approves up to EUR 130.4 million for support to Kyiv", title_original: "Governo aprova ate 130,4 milhoes para apoio a Kiev", lang: pt, publisher: "Sabado", date: 2026-06, tier: 3}
+  - to: RUS
+    layer: action
+    type: expulsion
+    summary: "Portugal declared ten Russian embassy staff persona non grata on 5 Apr 2022 for actions it said ran against national security, and gave them about two weeks to leave."
+    since: 2022-04-05
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.tbsnews.net/world/portugal-expel-ten-russian-diplomats-foreign-ministry-398090", title: "Portugal to expel ten Russian diplomats - foreign ministry", publisher: "Reuters (via TBS News)", date: 2022-04-05, tier: 3}
+  - to: RUS
+    layer: action
+    type: incident
+    summary: "Moscow ended a bilateral military cooperation agreement at the end of 2025 citing Portuguese 'hostile actions'; on 31 Aug 2026 the Russian embassy told CNN Portugal that Portugal is one of the most hostile countries in Europe. Separately the Navy shadows Russian research and cargo ships through the Azores and Madeira waters (one linked by the navy chief to cable measuring); the Atlantic cable concern led the US ambassador to ask Lisbon for guarantees in April 2026 (single secondary source)."
+    since: 2025-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://24noticias.sapo.pt/atualidade/artigos/russia-coloca-portugal-entre-os-paises-mais-hostis-da-europa", title: "Russia places Portugal among the most hostile countries in Europe", title_original: "Russia coloca Portugal entre os paises mais hostis da Europa", lang: pt, publisher: "CNN Portugal / 24noticias", date: 2026-08-31, tier: 3}
+      - {url: "https://stg.portugalresident.com/?p=332510", title: "Russia spies on underwater cabling; has Portugal on its radar", publisher: "Portugal Resident", date: 2024, tier: 3}
+      - {url: "https://defence24.com/geopolitics/russian-drones-on-the-portuguese-coast", title: "Russian drones on the Portuguese coast", publisher: "Defence24", date: 2026-04, tier: 3}
+  - to: USA
+    layer: action
+    type: incident
+    summary: "Iran war, 2026: Portugal allowed US use of Lajes for defensive and proportionate action (Montenegro to parliament, March; unlike Spain, which refused), announced each authorisation, refused some landings, and said it 'did not support, subscribe to or take part' in the operation. Rangel (29 Apr) rejected 'unconditional' support, called Trump's NATO accusations 'unjust' and condemned Trump's remarks about Iranian civilisation; President Seguro put the 10 Jun national day on Terceira near Lajes and welcomed the 15 Jun US-Iran framework deal."
+    since: 2026-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.globalbankingandfinance.com/portuguese-leader-contrast-spain-defends-decision-let-us-use/", title: "Portuguese leader, in contrast with Spain, defends decision to let US use air base", publisher: "Reuters (via Global Banking & Finance)", date: 2026-03, tier: 3}
+      - {url: "https://observador.pt/2026/04/30/rangel-acredita-que-eua-nao-tem-motivos-para-considerar-portugal-um-aliado-pouco-fiavel-na-nato/", title: "Rangel believes the US has no reason to consider Portugal an unreliable NATO ally", title_original: "Rangel acredita que EUA nao tem motivos para considerar Portugal um aliado pouco fiavel na NATO", lang: pt, publisher: "Observador", date: 2026-04-30, tier: 3}
+      - {url: "https://rr.pt/noticia/mundo/2026/06/15/irao-governo-e-presidente-da-republica-saudam-acordo-entre-teerao-e-eua/474387/", title: "Iran: government and president welcome Tehran-US agreement", title_original: "Irao: Governo e Presidente da Republica saudam acordo entre Teerao e EUA", lang: pt, publisher: "Renascenca", date: 2026-06-15, tier: 3}
+  - to: BRA
+    layer: action
+    type: visit
+    summary: "Lula's one-day visit to Lisbon on 21 Apr 2026 (last leg of a Europe tour after Spain and Germany): talks with Montenegro at Sao Bento and Seguro at Belem, Embraer and aeronautics, science and technology, regularisation of more than 235,000 Brazilian migrants; Lula called Portugal Brazil's gateway to Europe; Chega held a protest against him. Nationality-law changes (10 years to citizenship) were on the agenda."
+    since: 2026-04-21
+    until: 2026-04-21
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.rtp.pt/noticias/pais/lula-termina-visita-muito-boa-a-portugal_e1735652", title: "Lula ends 'very good' visit to Portugal", title_original: "Lula termina visita 'muito boa' a Portugal", lang: pt, publisher: "RTP", date: 2026-04-21, tier: 3}
+      - {url: "https://www.portaltela.com/noticias/internacional/2026/04/21/lula-aponta-portugal-como-porta-de-entrada-de-interesses-empresariais-brasileiros/", title: "Lula points to Portugal as the gateway for Brazilian business interests", title_original: "Lula aponta Portugal como porta de entrada de interesses empresariais brasileiros", lang: pt, publisher: "Portal Tela", date: 2026-04-21, tier: 3}
+  - to: BRA
+    layer: action
+    type: agreement
+    summary: "Foreigners and nationality laws that tighten the status of Brazilians and other migrants: foreigners law passed with Chega votes (Sep 2025: family reunification after two years, job-search visas for the highly skilled), nationality law approved 28 Oct 2025 (10 years of residence), four of seven contested provisions struck down by the Constitutional Court (Dec 2025), revised decree approved after a PSD-Chega deal. CPLP/EU nationals are reported at 7 years in one source. Final promulgation not confirmed in this pass."
+    since: 2025-09-30
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://euronews.com/my-europe/2025/09/30/portugals-parliament-approves-amended-foreigners-law-with-far-right-support", title: "Portugal's parliament approves amended foreigners law with far-right support", publisher: "Euronews", date: 2025-09-30, tier: 3}
+      - {url: "https://www.essential-business.pt/2025/10/29/portugals-new-nationality-law-approved/", title: "Portugal's new nationality law approved", publisher: "Essential Business", date: 2025-10-29, tier: 3}
+      - {url: "https://www.essential-business.pt/2025/12/17/constitutional-court-says-parts-of-portugals-new-nationality-law-unconstitutional/", title: "Constitutional Court says parts of Portugal's new Nationality Law unconstitutional", publisher: "Essential Business", date: 2025-12-17, tier: 3}
+      - {url: "https://www.imidaily.com/europe/portugal-approves-nationality-law-decree-after-psd-chega-deal-no-transitional-protections/", title: "Portugal approves nationality law decree after PSD-Chega deal, no transitional protections", publisher: "IMI Daily", date: 2026-04, tier: 3}
+  - to: AGO
+    layer: action
+    type: visit
+    summary: "Montenegro made his first official visit to Angola in July 2024 (meeting Lourenco, business forum) and returned to Luanda in Nov 2025 before the EU-African Union summit; Lourenco had invited him in April 2024 and pledged Angola's support for Portugal's Security Council bid."
+    since: 2024-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/primeiro-ministro-em-luanda-para-reforcar-cooperacao-bilateral-e-participar-na-cimeira-ueafrica", title: "Prime Minister in Luanda to reinforce bilateral cooperation and attend the EU-Africa summit", title_original: "Primeiro-Ministro em Luanda para reforcar cooperacao bilateral e participar na Cimeira UE-Africa", lang: pt, publisher: "Government of Portugal", date: 2025-11, tier: 1}
+      - {url: "https://www.dn.pt/joao-lourenco-convida-montenegro-para-visita-oficial-a-angola", title: "Joao Lourenco invites Montenegro for an official visit to Angola", title_original: "Joao Lourenco convida Montenegro para visita oficial a Angola", lang: pt, publisher: "Diario de Noticias", date: 2024-04, tier: 3}
+  - to: GNB
+    layer: action
+    type: sanction
+    summary: "After the 26 Nov 2025 coup Portugal suspended military assistance to Guinea-Bissau while keeping health and education cooperation, and backed the CPLP's suspension of Bissau (extraordinary summit, high-level mission led by Timor-Leste's president); no EU or Portuguese sanctions on individuals were reported."
+    since: 2025-11-27
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://secretariadoexecutivo.cplp.org/media/3a5faosq/comunicado-gb-cplp-27-11-2025_final.pdf", title: "CPLP communique on Guinea-Bissau, 27 Nov 2025", publisher: "CPLP Executive Secretariat", date: 2025-11-27, tier: 1}
+      - {url: "https://observador.pt/2025/12/16/guine-bissau-governo-portugues-transmitiu-necessidade-de-libertacao-dos-presos/", title: "Guinea-Bissau: Portuguese government conveyed the need to free the prisoners", title_original: "Guine-Bissau: Governo portugues transmitiu necessidade de libertacao dos presos", lang: pt, publisher: "Observador", date: 2025-12-16, tier: 3}
+  - to: STP
+    layer: action
+    type: visit
+    summary: "Montenegro attended President Carlos Vila Nova's swearing-in in Sao Tome on 3 Sep 2026 and said Portugal and Sao Tome and Principe are preparing a bilateral summit on cooperation (education, health, energy) and Portuguese investment."
+    since: 2026-09-03
+    until: 2026-09-03
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://portugal.gov.pt/en/gc25/communication/news/portugal-and-sao-tome-and-principe-prepare-new-impetus-for-bilateral-cooperation", title: "Portugal and Sao Tome and Principe prepare new impetus for bilateral cooperation", publisher: "Government of Portugal", date: 2026-09, tier: 1}
+  - to: TLS
+    layer: action
+    type: agreement
+    summary: "Four-year cooperation framework worth EUR 75m for Timor-Leste (EUR 5m more than the previous one), centred on education and the teaching of Portuguese, announced by Montenegro ahead of a planned visit in June 2025; Timor-Leste's president led the CPLP mission after the Bissau coup and holds the CPLP presidency."
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://thenews.co.pt/montenegro-anuncia-apoio-de-75-milhoes-de-euros-para-timor-leste-e-visita-ao-pais-em-junho-de-2025", title: "Montenegro announces EUR 75 million support for Timor-Leste", title_original: "Montenegro anuncia apoio de 75 milhoes de euros para Timor-Leste", lang: pt, publisher: "The News", date: 2025, tier: 3}
+      - {url: "https://www.verangola.net/va/en/122025/Politics/47141/CPLP-suspends-Guinea-Bissau-and-elects-Timor-Leste-for-temporary-presidency.htm", title: "CPLP suspends Guinea-Bissau and elects Timor-Leste for temporary presidency", publisher: "Ver Angola", date: 2025-12, tier: 3}
+  - to: CPV
+    layer: action
+    type: visit
+    summary: "Montenegro's first trip outside Europe as prime minister was to Cabo Verde in April 2024, urging Portuguese investors to use the country's diversification strategy (renewable-energy centre, technology park in Praia). Cabo Verde is a founding partner of the AIR Centre. No 2026 follow-up was found."
+    since: 2024-04
+    until: 2024-04
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.dnoticias.pt/2024/4/20/402459-montenegro-quer-mais-investimento-portugues-em-cabo-verde/", title: "Montenegro wants more Portuguese investment in Cabo Verde", title_original: "Montenegro quer mais investimento portugues em Cabo Verde", lang: pt, publisher: "DNoticias", date: 2024-04-20, tier: 3}
+      - {url: "https://www.fct.pt/en/media/noticias/air-centre-is-formally-founded-today/", title: "AIR Centre is formally founded today", publisher: "Fundacao para a Ciencia e a Tecnologia", date: 2017-11, tier: 1}
+  - to: CHN
+    layer: action
+    type: visit
+    summary: "Rangel in Beijing in March 2025 (first high-level Portuguese visit in over five years; Wang Yi: China will work with Portugal on China-Europe relations), Montenegro in China in Sept 2025 ('a reliable and confident country for investment'), Xi congratulated Seguro on 9 Mar 2026, and Rangel met Wang Yi in New York on 27 May 2026 (China invited Portugal to co-host the China-Portuguese-speaking countries forum via Macau). Portugal abstained on the EU tariffs on Chinese EVs."
+    since: 2025-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.yahoo.com/news/china-willing-build-stable-fruitful-071922250.html", title: "China seeks stronger ties with Europe, it says in meeting with Portugal's foreign minister", publisher: "Reuters (via Yahoo)", date: 2025-03, tier: 3}
+      - {url: "https://www.mfa.gov.cn/eng/gjhdq_665435/3265_665445/3351_664720/3353_664724/202605/t20260530_11921770.html", title: "Wang Yi meets Portuguese Foreign Minister Rangel (Chinese readout, statement only)", publisher: "Ministry of Foreign Affairs of China", date: 2026-05-30, tier: 1}
+      - {url: "https://rr.pt/noticia/politica/2026/03/09/xi-jinping-felicita-antonio-jose-seguro-e-destaca-relacao-com-portugal/462303/", title: "Xi Jinping congratulates Antonio Jose Seguro and highlights relationship with Portugal", title_original: "Xi Jinping felicita Antonio Jose Seguro e destaca relacao com Portugal", lang: pt, publisher: "Renascenca", date: 2026-03-09, tier: 3}
+  - to: MAR
+    layer: action
+    type: agreement
+    summary: "Portugal, Spain and Morocco are the joint hosts of the 2030 World Cup (Uruguay, Argentina and Paraguay host opening matches); in 2026 Spain and Morocco dispute the final (Madrid/Barcelona versus Morocco's planned 115,000-seat Hassan II stadium), FIFA says it will decide 'in due course'; Portugal stays out of the quarrel."
+    since: 2023
+    until: 2030-07
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.soccerway.com/news/soccer-world-championship-morocco-and-spain-divided-over-who-should-host-2030-world-cup-final/Yur2FgfK", title: "Morocco and Spain divided over who should host 2030 World Cup final", publisher: "Soccerway", date: 2026-09, tier: 3}
+      - {url: "https://m.naharnet.com/stories/en/317979-spain-to-host-2030-world-cup-final", title: "Spain to host 2030 World Cup final", publisher: "Naharnet", date: 2026-09, tier: 3}
+  - to: ISR
+    layer: action
+    type: sanction
+    summary: "Portugal halted arms exports to Israel in April 2024 (as Rangel recalled when announcing recognition of Palestine on 21 Sep 2025); it voted for Palestine's full UN membership on 10 May 2024. The recognition itself is in the recognition dataset."
+    since: 2024-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.al-monitor.com/originals/2025/09/portugal-formally-recognises-palestinian-state-minister-says", title: "Portugal formally recognises Palestinian state, minister says", publisher: "Reuters (via Al-Monitor)", date: 2025-09-21, tier: 3}
+      - {url: "https://portugal.gov.pt/en/gc25/communication/news/portugal-formally-recognises-the-palestinian-state", title: "Portugal formally recognises the Palestinian State", publisher: "Government of Portugal", date: 2025-09-21, tier: 1}
+  - to: VEN
+    layer: action
+    type: incident
+    summary: "After the US strikes and capture of President Maduro on 3 Jan 2026, Lisbon called for lower tensions and respect for international law and put the safety of the Portuguese community first (about 220,000 registered with consulates in Nov 2025, community sources estimate 1.2m with descendants, over 80% from Madeira); TAP flights were halted; Delcy Rodriguez leads the interim government in mid-2026."
+    since: 2026-01-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://stg.portugalresident.com/portugal-calls-for-reduction-in-tensions-respect-for-international-law-in-venezuela/", title: "Portugal calls for reduction in tensions, respect for international law in Venezuela", publisher: "Portugal Resident", date: 2026-01, tier: 3}
+      - {url: "https://www.theportugalnews.com/news/2026-01-03/no-portuguese-affected-in-venezuela/939603", title: "No Portuguese affected in Venezuela", publisher: "The Portugal News", date: 2026-01-03, tier: 3}
+      - {url: "https://www.timesofmadeira.com/black-gold-black-friday-how-venezuelans-returned-to-madeira", title: "Black gold, Black Friday: how Venezuelans returned to Madeira", publisher: "Times of Madeira", date: 2026, tier: 3}
+  - to: org-un
+    layer: action
+    type: visit
+    summary: "Rangel announced the formal recognition of the State of Palestine at Portugal's mission to the UN in New York on 21 Sep 2025, as the 13th EU member state, only 'together with a group' of Western states and after consulting the president and parliamentary parties."
+    since: 2025-09-21
+    until: 2025-09-21
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://portugal.gov.pt/en/gc25/communication/news/portugal-formally-recognises-the-palestinian-state", title: "Portugal formally recognises the Palestinian State", publisher: "Government of Portugal", date: 2025-09-21, tier: 1}
+      - {url: "https://www.al-monitor.com/originals/2025/09/portugal-formally-recognises-palestinian-state-minister-says", title: "Portugal formally recognises Palestinian state, minister says", publisher: "Reuters (via Al-Monitor)", date: 2025-09-21, tier: 3}
