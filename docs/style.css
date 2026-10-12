@@ -9,26 +9,26 @@
   --sea-ink: #10285e;
   --coast: #6f93b0;
   --grat: #15324a;
-  --ink: #cfeaff;
-  --ink-2: #7fb3dd;
-  --ink-3: #3f6a8f;
+  --ink: #d8eeff;
+  --ink-2: #93c3e8;
+  --ink-3: #4f7ea6;
   --rule: #1f4a6e;
   --accent: #4fb3ff;
   --hot: #ff5a4a;
   --c-pov: #e6f6ff;
-  --c-ally: #39ff6a;
-  --c-reluctant_ally: #ffa33a;
+  --c-ally: #5fcf72;
+  --c-reluctant_ally: #d9973a;
   --c-partner: #3fa9ff;
-  --c-reluctant_partner: #b4f5a6;
+  --c-reluctant_partner: #a9d9a0;
   --c-rival: #ff6a5a;
   --c-adversary: #ff2a1a;
   --c-claimed: #ff6a5a;
   --c-neutral: #3f6a8f;
-  --ink-a: #3fa9ff; --ink-b: #ff5a4a; --ink-c: #39ff6a;     /* kept for the few places that still name the old inks */
+  --ink-a: #3fa9ff; --ink-b: #ff5a4a; --ink-c: #5fcf72;     /* kept for the few places that still name the old inks */
   --l-objective: #ff5a4a;
   --l-alignment: #3fa9ff;
-  --l-dependency: #b4f5a6;
-  --l-action: #ffa33a;
+  --l-dependency: #a9d9a0;
+  --l-action: #d9973a;
   --font-ui: "Share Tech Mono", "IBM Plex Mono", monospace;
   --font-display: "VT323", "Share Tech Mono", monospace;
   --font-text: "IBM Plex Mono", "Share Tech Mono", monospace;
@@ -38,7 +38,7 @@
 html, body { margin: 0; height: 100%; }
 body {
   background: var(--paper); color: var(--ink);
-  font-family: var(--font-text); font-size: 13.5px; line-height: 1.55;
+  font-family: var(--font-text); font-size: 14px; line-height: 1.55; font-weight: 500; text-shadow: 0 0 .5px currentColor;
 }
 body::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 50; background: repeating-linear-gradient(0deg, rgba(0,0,0,.22) 0 1px, transparent 1px 3px); }
 a { color: var(--accent); }
@@ -81,7 +81,7 @@ select:focus { outline: none; box-shadow: 0 0 8px var(--accent); }
 .legend { padding: 0; margin-top: 4px; }
 .legend h3 { font-size: 12px; text-transform: uppercase; letter-spacing: .1em; color: var(--accent); margin: 10px 0 4px; font-weight: 400; }
 .legend h3:first-child { margin-top: 0; }
-.legend .row { display: flex; align-items: center; gap: 8px; padding: 1px 0; font-size: 12px; color: var(--ink-2); line-height: 1.4; text-transform: uppercase; letter-spacing: .04em; }
+.legend .row { display: flex; align-items: center; gap: 8px; padding: 1px 0; font-size: 12.5px; color: var(--ink-2); line-height: 1.4; text-transform: uppercase; letter-spacing: .04em; }
 .legend .sw { width: 26px; height: 12px; flex: none; border: 1px solid var(--ink-3); background-color: transparent; }
 .fine { font-size: 11px; color: var(--ink-3); margin-top: 12px; line-height: 1.45; }
 .fine b { color: var(--ink-2); font-weight: 400; }
@@ -92,10 +92,8 @@ select:focus { outline: none; box-shadow: 0 0 8px var(--accent); }
 .stage { position: relative; }
 .view { display: none; }
 .view.is-on { display: block; }
-.map-wrap { height: calc(100vh - 150px); min-height: 420px; border-bottom: 1px solid var(--rule); }
+.map-wrap { height: calc(100vh - 120px); min-height: 420px; border-bottom: 1px solid var(--rule); }
 svg#map { width: 100%; height: 100%; display: block; background: var(--paper); }
-.map-note { padding: 6px 20px 10px; color: var(--ink-3); font-size: 12px; font-family: var(--font-ui); letter-spacing: .03em; }
-.map-note b { color: var(--ink-2); font-weight: 400; }
 .frame-ctl { display: flex; align-items: center; gap: 14px; }
 .frame-gap { width: 10px; }
 .frame-btn { font-family: var(--font-ui); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; padding: 2px 0; background: transparent; color: var(--accent); border: 0; cursor: pointer; }
@@ -120,7 +118,7 @@ svg#map { width: 100%; height: 100%; display: block; background: var(--paper); }
 .relpanel h3 span { color: var(--ink-3); margin-left: 8px; }
 .ledger { display: grid; grid-template-columns: minmax(300px, 2fr) 3fr; gap: 28px; }
 .ledger > div { min-width: 0; }
-.ledger table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.ledger table { width: 100%; border-collapse: collapse; font-size: 13px; }
 .ledger th { text-align: left; font-weight: 400; color: var(--ink-3); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; padding: 2px 8px 4px 0; border-bottom: 1px solid var(--rule); }
 .ledger td { padding: 3px 8px 3px 0; border-bottom: 1px dotted var(--rule); vertical-align: top; color: var(--ink-2); }
 .ledger tr.cp { cursor: pointer; }
@@ -132,6 +130,11 @@ svg#map { width: 100%; height: 100%; display: block; background: var(--paper); }
 .ledger td.who { text-transform: uppercase; letter-spacing: .06em; color: var(--ink); }
 .ledger td.t { color: var(--ink-3); text-transform: uppercase; letter-spacing: .04em; }
 .ledger .tr { color: var(--ink-3); }
+.ledger .fv { cursor: pointer; border-bottom: 1px dotted var(--ink-3); }
+.ledger .fv:hover { color: var(--ink); text-shadow: 0 0 5px var(--accent); }
+.ledger .fv.is-on { color: var(--c-reluctant_ally); border-bottom-color: var(--c-reluctant_ally); }
+.ledger .chips { margin-left: 12px; font-size: 11px; }
+.ledger .chips .fv { margin-right: 8px; cursor: pointer; }
 .ledger .more { color: var(--ink-3); font-size: 11px; padding-top: 6px; letter-spacing: .06em; text-transform: uppercase; }
 
 /* ---------- pages */
@@ -141,6 +144,10 @@ svg#map { width: 100%; height: 100%; display: block; background: var(--paper); }
 .page.prose p { max-width: 760px; font-size: 13.5px; line-height: 1.65; color: var(--ink-2); }
 .page.prose b { color: var(--ink); font-weight: 400; }
 .page.prose i { color: var(--ink); }
+.page.prose .portrait { float: right; width: 240px; margin: 0 0 16px 28px; }
+.page.prose .portrait img { width: 100%; display: block; border: 1px solid var(--accent); box-shadow: 0 0 12px var(--accent); filter: grayscale(.2) contrast(1.05); }
+.page.prose .portrait figcaption { font-family: var(--font-ui); font-size: 11px; color: var(--ink-3); margin-top: 6px; line-height: 1.4; }
+.page.prose .honour { color: var(--ink); border-left: 1px solid var(--c-reluctant_ally); padding: 4px 14px; max-width: 720px; }
 .page.prose h3 { font-family: var(--font-ui); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; margin: 26px 0 6px; color: var(--accent); font-weight: 400; }
 .page.prose h3::before { content: "> "; }
 .cardgrid { display: block; border-top: 1px solid var(--rule); }

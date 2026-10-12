@@ -366,19 +366,6 @@
     renderRelPanel();
     svg.selectAll(".frame-btn[data-mode]").classed("is-on", function () { return this.dataset.mode === mapMode; });
 
-    document.getElementById("map-note").innerHTML = pov && lens === "clubs"
-      ? `<b>${actors[pov].name}</b> lit in white; every other country lit in blue by how many of ${actors[pov].name}'s organisations it also belongs to (memberships from Wikidata, official member lists as source). Hover for the list.`
-      : pov && lens === "recognition"
-      ? `<b>${actors[pov].name}</b> lit in white; green = recognises, red = does not, orange = recognised and then withdrew. From Wikipedia's recognition tables, each row with its own citation where one exists.`
-      : pov && lens === "votes"
-      ? `<b>${actors[pov].name}</b> lit in white; every other member lit by how often it voted the same way in the General Assembly (${unga.span || ""}, recorded votes only, pairs with at least 20 common votes). Blue = votes together, red = votes apart. Hover for the figure; click for the dossier.`
-      : pov
-      ? `<b>${actors[pov].name}</b> lit in white. The outline and the light inside a country are the posture: green allies, orange reluctant allies, blue partners, pale green reluctant partners, red the hostile side (adversaries lit solid); dashed and hatched = claimed, not controlled. A band inside a border is the standing bond: blue = kin, red = grievance. Hover for the reading; click a country or seat for its dossier; scroll to zoom. The relations are listed below the map.`
-      : homeLens && homeLens.kind === "org"
-      ? `Members of <b>${esc(actors[homeLens.id].name)}</b> lit in green. Sources: the organisation's official member list; Wikidata as index. Click a country for its own point of view.`
-      : homeLens
-      ? `<b>${esc(ISSUES[homeLens.id].label)}</b>. ${ISSUES[homeLens.id].kind === "recognition" ? "From Wikipedia's recognition tables, each row with its own citation where one exists." : "UN General Assembly recorded vote, from the UN Digital Library."} Click a country for its own point of view.`
-      : `Borders and flags of today. Click <b>${fullActors.map(a => a.name).join("</b>, <b>")}</b> to see the world as it sees it. Flags by flagcdn.`;
   }
 
   // ---------- relations ledger under the map: counterparts on the left, the latest traffic on the right
@@ -386,32 +373,50 @@
   function lightCard(id) {
     document.querySelectorAll(".ledger tr.cp").forEach(c => c.classList.toggle("is-lit", c.dataset.id === id));
   }
+  // filters on the ledger: click a posture, trend, bond or type to keep only that; click again to clear
+  let ledgerFilter = {};
   function renderRelPanel() {
     const el = document.getElementById("relpanel");
-    if (!pov) { el.innerHTML = ""; return; }
+    if (!pov) { el.innerHTML = ""; ledgerFilter = {}; return; }
     const rows = data.relations.filter(r => r.from === pov && r.dataset !== "unga-votes");
     const byTo = d3.group(rows, r => r.to);
-    const counterparts = [...new Set([...byTo.keys(), ...(data.stances[pov] || []).map(s => s.toward)])]
+    const F = ledgerFilter;
+    let counterparts = [...new Set([...byTo.keys(), ...(data.stances[pov] || []).map(s => s.toward)])]
       .map(id => ({ id, rows: byTo.get(id) || [], st: stanceOf(id) }))
       .sort((x, y) => y.rows.length - x.rows.length || x.id.localeCompare(y.id));
-    const latest = [...rows].sort((x, y) => String(y.since).localeCompare(String(x.since))).slice(0, 18);
+    const total = counterparts.length;
+    counterparts = counterparts.filter(c => (!F.grade || (c.st && c.st.grade === F.grade)) && (!F.trend || (c.st && c.st.trend === F.trend)) && (!F.bond || (c.st && c.st.bond === F.bond)));
+    const keep = new Set(counterparts.map(c => c.id));
+    let traffic = [...rows].sort((x, y) => String(y.since).localeCompare(String(x.since)));
+    const filtered = F.grade || F.trend || F.bond || F.type;
+    if (filtered) traffic = traffic.filter(r => keep.has(r.to) && (!F.type || r.type === F.type));
+    const latest = filtered ? traffic : traffic.slice(0, 18);
     const glyph = st => st ? `<i style="border-color:${gradeBorder(st.grade)};background:${gradeSwatch(st.grade)}"></i>` : `<i style="border-color:var(--ink-3)"></i>`;
+    const fv = (k, v, label) => `<span class="fv ${F[k] === v ? "is-on" : ""}" data-k="${k}" data-v="${esc(v)}">${label}</span>`;
+    const chips = Object.entries(F).map(([k, v]) => `<span class="fv is-on" data-k="${k}" data-v="${esc(v)}">${esc(String(v).replace(/_/g, " "))} ×</span>`).join(" ");
     el.innerHTML = `<div class="ledger">
-      <div><h3>Counterparts of ${esc(actors[pov].name)} <span>${counterparts.length}</span></h3>
+      <div><h3>Counterparts of ${esc(actors[pov].name)} <span>${counterparts.length}${counterparts.length < total ? " of " + total : ""}</span>${chips ? `<span class="chips">${chips}</span>` : ""}</h3>
         <table><thead><tr><th>Actor</th><th>Posture</th><th>Trend</th><th>Bond</th><th style="text-align:right">Rows</th></tr></thead><tbody>` +
         counterparts.map(c => `<tr class="cp" data-id="${c.id}"><td class="name">${glyph(c.st)}${esc(actors[c.id].short || actors[c.id].name)}</td>
-          <td>${c.st ? c.st.grade.replace(/_/g, " ") : "<span class='tr'>-</span>"}</td>
-          <td class="tr">${c.st ? TREND_SIGN[c.st.trend] + " " + TREND[c.st.trend] : ""}</td>
-          <td class="tr">${c.st ? BOND_LABEL[c.st.bond].split(" - ")[0].toLowerCase() : ""}</td>
+          <td>${c.st ? fv("grade", c.st.grade, c.st.grade.replace(/_/g, " ")) : "<span class='tr'>-</span>"}</td>
+          <td class="tr">${c.st ? fv("trend", c.st.trend, TREND_SIGN[c.st.trend] + " " + TREND[c.st.trend]) : ""}</td>
+          <td class="tr">${c.st ? fv("bond", c.st.bond, BOND_LABEL[c.st.bond].split(" - ")[0].toLowerCase()) : ""}</td>
           <td class="n">${c.rows.length || "-"}</td></tr>`).join("") +
         `</tbody></table></div>
-      <div><h3>Latest traffic <span>${rows.length} rows, newest first</span></h3>
+      <div><h3>${filtered ? "Matching traffic" : "Latest traffic"} <span>${filtered ? latest.length + " of " + rows.length + " rows" : rows.length + " rows, newest first"}</span></h3>
         <table><thead><tr><th>Date</th><th>Toward</th><th>Type</th><th>Entry</th></tr></thead><tbody>` +
-        latest.map(r => `<tr class="cp" data-id="${r.to}"><td class="d">${esc(r.since)}</td><td class="who">${esc(actors[r.to].short || actors[r.to].name)}</td><td class="t">${esc(r.type.replace(/_/g, " "))}</td><td>${esc(r.summary)}</td></tr>`).join("") +
-        `</tbody></table>${rows.length > latest.length ? `<div class="more">+ ${rows.length - latest.length} older rows in the dossier</div>` : ""}</div>
+        latest.map(r => `<tr class="cp" data-id="${r.to}"><td class="d">${esc(r.since)}</td><td class="who">${esc(actors[r.to].short || actors[r.to].name)}</td><td class="t">${fv("type", r.type, r.type.replace(/_/g, " "))}</td><td>${esc(r.summary)}</td></tr>`).join("") +
+        `</tbody></table>${!filtered && rows.length > latest.length ? `<div class="more">+ ${rows.length - latest.length} older rows in the dossier</div>` : ""}</div>
     </div>`;
     el.querySelectorAll("tr.cp").forEach(c => { c.onclick = () => showDossier(c.dataset.id); c.onmouseenter = () => lightCard(c.dataset.id); c.onmouseleave = () => lightCard(null); });
+    el.querySelectorAll(".fv").forEach(f => f.onclick = ev => {
+      ev.stopPropagation();
+      const { k, v } = f.dataset;
+      if (ledgerFilter[k] === v) delete ledgerFilter[k]; else ledgerFilter[k] = v;
+      const y = window.scrollY; renderRelPanel(); window.scrollTo(0, y);
+    });
   }
+
   // ---------- pages: organisations, issues, Luttwak
   function showOrg(id) { navigate(`#/organisation/${id}`); }
   function showIssue(id) { navigate(`#/issue/${id}`); }
@@ -443,6 +448,8 @@
     el.dataset.done = "1";
     el.innerHTML = `
       <h2>Luttwak, the lamp</h2>
+      <figure class="portrait"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Edward_Luttwak_in_2026.jpg/480px-Edward_Luttwak_in_2026.jpg" alt="Edward N. Luttwak in 2026"><figcaption>Edward N. Luttwak, 2026. Photo Elekes Andor, CC BY 4.0, Wikimedia Commons.</figcaption></figure>
+      <p class="honour">This site is built in honour of Edward N. Luttwak. It is not his work and he has not seen it; it is an attempt to look at the whole world, every state at once, with the lamp he built.</p>
       <p class="lede">This atlas reads the world through Edward N. Luttwak's idea of grand strategy. Not because he is always right, but because his grid forces the questions that a map of flags leaves out: what does each actor want, with what, against what, and where do its own moves turn against it.</p>
       <h3>The paradoxical logic</h3>
       <p>Luttwak's central claim (<i>Strategy: The Logic of War and Peace</i>, 1987) is that in any contest between adversaries the ordinary, linear logic of everyday life stops working. The worse road may be the better one precisely because it is unexpected; the weapon that works is the one the enemy adapts to, so it stops working; a victory pressed too far becomes a defeat, because it summons the coalition that undoes it. Strategy is paradoxical because the other side reacts. Every card in this atlas therefore ends with <b>paradoxes</b>: the places where an actor's own instruments undermine its own goals. Serbia's veto on Kosovo needs Moscow and Beijing, and Moscow and Beijing close the road to Brussels. Kosovo's proofs of statehood in the north cost it the patrons who could confer statehood.</p>
@@ -453,8 +460,19 @@
       <h3>Posture and bond</h3>
       <p>How one actor sees another is recorded on two axes. The <b>posture</b> is what the relationship is today, on a closed scale: own territory, claimed but not controlled, ally, reluctant ally, partner, reluctant partner, neutral, rival, adversary. "Adversary" is reserved for mortal enemies, where the other's existence or regime is the problem (Iran and Israel); nearly all bad relationships are rivalries. A posture is never our opinion: it needs a source that uses that reading, and it follows the structural position, not the rhetoric of a joint communiqué. The <b>bond</b> is the structure under the posture, what would survive a change of government: kin (shared identity), affinity, none, or grievance (an open historical wound). Two actors can both be "partner" and mean opposite things: for Serbia, Russia is a partner of kin growing colder; the United States a partner with a grievance growing warmer. On the map the posture is the colour and the bond a band inside the border.</p>
       <h3>What the atlas is not</h3>
-      <p>It is not a forecast and not a verdict. It is a situation map: a dated, sourced, revisable statement of where everyone stands, built region by region, with the datasets (UN votes, memberships, recognitions) as the floor and researched cards as the reading. Luttwak also wrote the histories of Roman and Byzantine grand strategy and a study of China's "great-state autism"; historians have contested the Roman case, and the same scepticism is owed here. Where a card says less than you expected, it is because the sources did not hold.</p>
-      <p class="fine">Edward N. Luttwak, <i>Strategy: The Logic of War and Peace</i> (1987, rev. 2001); <i>The Grand Strategy of the Roman Empire</i> (1976); <i>The Grand Strategy of the Byzantine Empire</i> (2009); <i>The Rise of China vs. the Logic of Strategy</i> (2012).</p>`;
+      <p>It is not a forecast and not a verdict. It is a situation map: a dated, sourced, revisable statement of where everyone stands, built region by region, with the datasets (UN votes, memberships, recognitions) as the floor and researched cards as the reading. Where a card says less than you expected, it is because the sources did not hold.</p>
+
+      <h3>The man</h3>
+      <p>Edward Nicolae Luttwak was born on 4 November 1942 in Arad, in Romanian Transylvania, into a Jewish family that left for Italy after the war. He grew up in Palermo and Milan, was schooled in England, and took his first degree in economics at the London School of Economics in 1964; his doctorate came from Johns Hopkins in 1975, with the thesis that became <i>The Grand Strategy of the Roman Empire</i>. By then he had already written, at twenty-six, the book that made his name: <i>Coup d'État: A Practical Handbook</i> (1968), a cool manual of how governments are seized, followed by the <i>Dictionary of Modern War</i> (1971).</p>
+      <p>From the 1970s he worked in Washington as a consultant to the Office of the Secretary of Defense, the National Security Council and the State Department, and for the armed forces of several allied countries, while holding the chair of strategy at the Center for Strategic and International Studies. He has never been a professor by trade: he is a practitioner who writes, with a taste for the unexpected argument and for the primary source in its own language. He reads several, including the Latin and Greek of his two imperial histories. He has also run a cattle ranch in Bolivia and written on economics (<i>The Endangered American Dream</i>, 1993; <i>Turbo-Capitalism</i>, 1999). He lives in Chevy Chase, Maryland, and still writes and advises, in English and Italian, on the wars of the day.</p>
+
+      <h3>The work</h3>
+      <p><b>Strategy: The Logic of War and Peace</b> (1987, revised 2001) is the centre. In ordinary life linear logic rules: the shorter road is better, the stronger tool works best, more of a good thing is better. In any contest between conscious adversaries that logic fails, because the other side thinks and reacts. The bad road may be the good road because it is unguarded; the weapon that works invites the countermeasure that makes it useless; surprise is bought only with costs that would be absurd against an inert obstacle. The same logic has a temporal form, the <b>culminating point</b>: every success contains the seed of its reversal, the advancing army lengthens its own supply lines, the victorious power frightens the neutrals into a coalition, the sanction that bites teaches the target to do without. Pushed past that point, victory turns into defeat without any mistake having been made.</p>
+      <p>The book's second structure is vertical. Conflict runs on <b>levels</b> that interact but do not add up: technical, tactical, operational, theatre, and above them all grand strategy, where force meets diplomacy, economics, alliances, intelligence and persuasion. Success at one level can be undone at a higher one; strategy works when the levels are in harmony. Across all of them Luttwak distinguishes two styles: <b>attrition</b>, which wears the adversary down by superior resources and needs no understanding of him, and <b>relational manoeuvre</b>, which aims at his specific weaknesses and can win cheaply but fails badly when the reading is wrong. Great powers drift toward attrition; small states must manoeuvre. That is why, in this atlas, the cards of small states read as bets on usefulness and alignment, and the paradoxes of the great powers are about the coalitions their weight provokes.</p>
+      <p><b>The Grand Strategy of the Roman Empire</b> (1976) reads four centuries of frontier policy as three successive systems: the hegemonic empire of the Julio-Claudians, ruling through client kings and a mobile army that rarely needed to fight; the preclusive frontier of the Antonines, with its fortified lines and legions spread along them; and the defence in depth of the late empire, which conceded ground and held strongpoints behind it. The same empire, with roughly the same forces, chose different ways of converting force into security as its enemies changed. <b>The Grand Strategy of the Byzantine Empire</b> (2009) describes how the eastern half survived a further thousand years with far less: by avoiding decisive battle, buying and dividing enemies, using intelligence, religion and ceremony as instruments, fighting to exhaust rather than annihilate, and treating every enemy as a possible future ally. <b>The Grand Strategy of the Soviet Union</b> (1983) applied the same reading to a living adversary.</p>
+      <p>Two essays carried the logic beyond war. <b>"From Geopolitics to Geo-Economics"</b> (1990) argued that with the superpower rivalry fading, states would pursue adversarial aims through economic means, subsidies, trade rules, control of technology, with the grammar of commerce but the logic of conflict: that is the logic of the dependency layer in this atlas, where gas contracts, pipelines, loans, arms and remittances are read as instruments rather than markets. <b>"Toward Post-Heroic Warfare"</b> (1995) observed that advanced societies with small families will not accept casualties, so their wars become distant, aerial, delegated. <b>"Give War a Chance"</b> (1999) drew the harder conclusion that an outside intervention which freezes a war before either side is exhausted often prolongs the conflict it means to stop, which is why "frozen" disputes are so prominent on these maps.</p>
+      <p><b>The Rise of China vs. the Logic of Strategy</b> (2012) applies the paradoxical logic to the present. A power that grows in economic and military strength at once triggers the reactions of everyone around it; its rise is self-limiting unless it deliberately slows one of the two. Luttwak coins <b>great-state autism</b> for the inward-looking condition of very large states, China, Russia and the United States alike, so absorbed by their own scale and domestic noise that they cannot perceive how their actions look to others, and are then surprised by the coalitions they produce. On the posture maps that is the pattern to look for: the actor whose "partners" are quietly hedging.</p>
+      <p class="fine">Edward N. Luttwak: <i>Coup d'État: A Practical Handbook</i> (1968); <i>The Grand Strategy of the Roman Empire</i> (1976); <i>The Grand Strategy of the Soviet Union</i> (1983); <i>Strategy: The Logic of War and Peace</i> (1987, rev. 2001); "From Geopolitics to Geo-Economics", <i>The National Interest</i> (1990); "Toward Post-Heroic Warfare", <i>Foreign Affairs</i> (1995); "Give War a Chance", <i>Foreign Affairs</i> (1999); <i>The Grand Strategy of the Byzantine Empire</i> (2009); <i>The Rise of China vs. the Logic of Strategy</i> (2012).</p>`;
   }
 
   function tipFor(id, fallbackName, ev) {
