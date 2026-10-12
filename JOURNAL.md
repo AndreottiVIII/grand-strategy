@@ -1,5 +1,21 @@
 # Journal
 
+## 2026-10-12 · The P5 go to Fable; the run stops after Europe
+
+Davide read the Sonnet card of the United Kingdom and rejected it ("sbagliatissima": the
+bases lent against Iran and the scale of arms to Ukraine make Russia and Iran more than
+rivals in his reading, and the card did not carry that weight). Decision: the five
+permanent members of the UN Security Council (USA, China, Russia, United Kingdom, France)
+are written by Fable at the end of the run; the Sonnet cards of GBR (276k) and FRA (213k)
+stay online as placeholders and are requeued (`model: fable`, region great-powers). On the
+grades: "adversary" stays reserved for mortal enemies, "rival" is right for most pairs,
+including Russia for the UK and the Baltics; but the grade is what Davide checks first on
+the map, so a protagonist's hostile side must be visible and argued. Two interruptions at
+16:03 killed the Spain and Netherlands agents mid-write; relaunched from the files on disk
+with Davide's go-ahead. After Europe the run pauses: Davide wants two changes to the page
+first. Italy reviewed (291k; UKR partner -> ally for consistency), Republika Srpska
+reviewed (251k). 35 cards reviewed, 6.67M tokens.
+
 ## 2026-10-12 · Central and northern Europe complete (17 cards) and the "adversary" line held
 
 Costs: POL 276k, HUN ~250k (resumed), CZE, SVK, DEU 278k, AUT, CHE, SWE, FIN, NOR 237k,
