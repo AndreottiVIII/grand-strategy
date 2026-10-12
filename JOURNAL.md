@@ -3,6 +3,12 @@
 Decision log, newest first. The path matters more than the destination: record why,
 not only what. Dead ends are entries too.
 
+## 2026-10-12 · What "adversary" means
+
+Davide, for the future: adversary = mortal enemies, Iran and Israel. Everything short
+of that is rival. Written into the grade table in ONTOLOGY.md with reference cases;
+Serbia keeps no adversary today, which the data already showed.
+
 ## 2026-10-12 · Third ink
 
 Ally and reluctant ally at 72% and 45% navy looked the same in the legend. Four

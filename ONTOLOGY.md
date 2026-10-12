@@ -82,10 +82,15 @@ Grades (nine, agreed):
 | `partner` | transactional cooperation, no alignment |
 | `reluctant_partner` | cooperates out of necessity while resisting alignment (Serbia toward the EU) |
 | `neutral` | no significant posture |
-| `rival` | competing interests, below hostility |
-| `adversary` | open hostility or declared threat |
+| `rival` | competing interests, friction, even arms races - but no will to destroy (Serbia toward Croatia, the US toward China) |
+| `adversary` | mortal enemy: the other side's existence or regime is the problem (Iran and Israel, Ukraine toward Russia, Armenia and Azerbaijan until 2023). Rare by design |
 
 Actors not listed default to `neutral` on the map, drawn in grey.
+
+Hostility has two grades and the gap between them is deliberate: `rival` covers almost all
+bad relationships; `adversary` is reserved for enemies in the mortal sense, where a
+declared aim is the other's defeat or disappearance. Serbia in 2026 has rivals and no
+adversary; Israel and Iran are the reference case (Davide, 2026-10-12).
 
 **A grade is never our own judgement.** Every stance must cite at least one source
 that uses that reading (an analysis calling the relationship "reluctant", a treaty for
