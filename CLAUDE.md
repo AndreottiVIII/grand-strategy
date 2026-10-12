@@ -16,7 +16,9 @@ more than finishing. Decisions and dead ends go in `JOURNAL.md`, newest first.
 
 ## Status
 
-Phase 0: no site yet. Decisions taken on 2026-10-12 (see JOURNAL.md):
+Pilot demo built on 2026-10-12: one full card (Serbia) with 18 stances and 43 relations,
+20 stub actors, site live from `docs/`. Next: Davide judges the form, then scalability
+(more Balkan cards) or changes to the ontology. Decisions taken on 2026-10-12:
 
 - **Pilot region: Western Balkans** (Serbia, Kosovo, Bosnia-Herzegovina, Montenegro,
   Albania, North Macedonia) plus the outside powers acting there (Russia, EU, USA,
@@ -63,11 +65,32 @@ Phase 0: no site yet. Decisions taken on 2026-10-12 (see JOURNAL.md):
 ## Layout
 
 - `JOURNAL.md`: decision log, newest first. Every session that changes a decision adds an entry.
-- `docs/ONTOLOGY.md`: the data model (what an actor, a relation, a source, a confidence grade is). The single most important file; change it only with a journal entry.
-- `data/`: actor files and relation tables (not created yet; format chosen in ONTOLOGY.md).
-- `site/`: static site for GitHub Pages (not created yet).
+- `ONTOLOGY.md`: the data model (actor, stance, relation, source, confidence grade, and
+  the lessons from the pilot). The single most important file; change it only with a
+  journal entry.
+- `data/actors/<id>.yaml`, `data/stances/<id>.yaml`, `data/relations/<from>.yaml`: the
+  truth. One file per actor; stubs (`card: stub`) are nodes without a card.
+- `tools/build.py`: validates `data/` and compiles it to `docs/data.json`. Refuses to
+  write on any error (missing source, unknown id, grade or type outside the vocabulary).
+- `docs/`: the static site served by GitHub Pages (`index.html`, `app.js`, `style.css`,
+  `world.geojson` from Natural Earth 110m with Kosovo as `XKX`, and the compiled
+  `data.json`). D3 7.9 from cdnjs is the only dependency. Three views: map from the
+  point-of-view actor, relation graph, dossier.
 
 ## Commands
 
-None yet. The site will be static HTML/JS served from `site/`; build and validation
-commands will be added here once the data format is fixed.
+```bash
+python tools/build.py        # validate data/ and write docs/data.json; exit 1 on errors
+```
+
+Preview: the `grand-strategy` entry in `ClaudeTower/.claude/launch.json` serves
+`docs/` on port 8765. Always rebuild before committing: `docs/data.json` is committed
+because GitHub Pages serves it as-is.
+
+## Adding or updating an actor
+
+1. Research with sources first; never write a row you cannot cite.
+2. Create or edit the three files for the actor (stub counterparts if they do not exist).
+3. `python tools/build.py`; fix every error it names.
+4. Add a JOURNAL entry if a decision or a vocabulary changed; update `last_verified`.
+5. Commit and push; Pages redeploys from `docs/` on `main`.

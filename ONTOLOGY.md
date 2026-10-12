@@ -1,7 +1,8 @@
-# Ontology (draft 1, 2026-10-12)
+# Ontology (draft 2, 2026-10-12)
 
 What the data is made of. Change this only with a JOURNAL entry. `?` marks the points
-still open; everything else was agreed with Davide on 2026-10-12.
+still open; everything else was agreed with Davide on 2026-10-12. Draft 2 adds what
+the Serbia pilot taught (see "Lessons from the pilot" at the end).
 
 ## Design constraints
 
@@ -16,11 +17,13 @@ still open; everything else was agreed with Davide on 2026-10-12.
 One file: `data/actors/<id>.yaml`.
 
 ```yaml
-id: SRB                     # ISO 3166-1 alpha-3 for states; org-nato, nsa-houthis, inst-gazprom for the rest
+id: SRB                     # ISO 3166-1 alpha-3 for states (XKX Kosovo); org-nato, nsa-houthis, inst-gazprom, sub-rs for the rest
 name: Serbia
-type: state                 # state | org | armed-non-state | state-instrument
+type: state                 # state | org | armed-non-state | state-instrument | sub-state
 seat: Belgrade
 regions: [western-balkans]  # an actor can be in several (Turkey: balkans, middle-east, caucasus)
+card: full                  # full = has a grand-strategy card; stub = exists only as a node others relate to
+last_verified: 2026-10-12   # full cards only
 recognition:                # only where it matters (Kosovo, Taiwan, Palestine, SADR...)
   note: ...
   source: ...
@@ -51,6 +54,7 @@ actor: SRB
 stances:
   - toward: XKX
     grade: claimed_territory
+    trend: stable             # warming | stable | cooling - the direction, since two "partners" can be moving opposite ways
     since: 2008-02-17
     last_verified: 2026-10-12
     confidence: A
@@ -142,6 +146,27 @@ Staleness: a row whose `last_verified` is older than 12 months is flagged on the
 
 ## Build
 
-`data/` is the truth. A script compiles it into one `site/data.json` and validates:
-ids exist, every row has a source, grades and types are in the vocabulary, dates parse.
-The site never reads YAML directly.
+`data/` is the truth. `tools/build.py` compiles it into `docs/data.json` and validates:
+ids exist, every row has a source, grades and types are in the vocabulary, dates parse,
+dependency rows carry a value and a unit. The site never reads YAML directly.
+
+## Lessons from the pilot (Serbia, 2026-10-12)
+
+1. **Sub-state entities are actors.** Republika Srpska is neither a state nor an
+   organisation but it signs agreements and receives patronage. Type `sub-state`,
+   id prefix `sub-`, with a `parent` field.
+2. **Stances carry a `trend`.** Russia and the United States were both "partner" for
+   Serbia in 2026 and moving in opposite directions. Without the trend the map lies.
+3. **Figures conflict.** Russian gas was "about 75%" (Energy Community) or "around 90%"
+   (press) of Serbian consumption. Rule: the most recent figure with an official basis
+   wins and the discrepancy is written in the row's `note`.
+4. **Contested counts are two claims, not a number.** Kosovo's recognitions are 84 for
+   Belgrade and about 120 for Pristina. A row may carry a `claims` list (`by`, `text`,
+   `source`) instead of pretending to know.
+5. **State media are tier 1 for what the government says, tier 4 for facts.** Tanjug,
+   Xinhua and the like are cited as "(state agency, official statement)" and only for
+   the statement itself.
+6. **Non-events are signals, not rows.** Vučić skipping the 2026 Moscow parade matters,
+   but there is no row type for an absence. It goes in the card's `reading`.
+7. **Stubs.** An actor can exist as a stub (id, name, type, seat, regions) so that
+   others can relate to it before it has a card. The site shows stubs greyed.

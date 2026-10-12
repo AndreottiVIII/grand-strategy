@@ -1,0 +1,715 @@
+from: SRB
+relations:
+  # ---------- objective ----------
+  - to: XKX
+    layer: objective
+    type: territorial_claim
+    summary: Serbia does not recognise Kosovo and treats it as its province under UNSCR 1244.
+    since: 2008-02-17
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://www.srbija.gov.rs/kosovo-metohija/en/43159
+        title: Decision on the annulment of the illegitimate acts on the declaration of unilateral independence
+        publisher: Government of Serbia
+        date: 2008-02
+        tier: 1
+  - to: XKX
+    layer: objective
+    type: recognition_denied
+    summary: Belgrade campaigns for derecognitions and against Kosovo's membership of international organisations; the Council of Europe bid remains blocked. Recognition tallies are contested (Belgrade 84, Pristina around 120).
+    since: 2017
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    claims:
+      - by: SRB
+        text: 27 states have withdrawn recognition
+        source: https://kossev.info/en/vucic-otkrio-imena-zemalja-koje-su-povukle-priznanje-kosova/
+      - by: XKX
+        text: about 20 recognitions reconfirmed and 4 new (Osmani, Jan 2026)
+        source: https://english.gazetatema.net/kosovo-region/president-osmani-says-kosovo-has-restored-20-recognitions-i343710
+    sources:
+      - url: https://pace.coe.int/fr/files/36120/pdf
+        title: PACE amendment deploring that Serbia still opposes Kosovo's accession
+        publisher: Parliamentary Assembly of the Council of Europe
+        date: 2026-06
+        tier: 1
+      - url: https://d4d-ks.org/?p=17730
+        title: Kosovo's recognitions and derecognitions - what the numbers say
+        publisher: D4D Institute
+        date: 2025
+        tier: 2
+  - to: org-eu
+    layer: objective
+    type: membership_goal
+    summary: EU membership declared a 'strategic goal' while refusing sanctions alignment; eight member states blocked Cluster 3 in July 2026 and the Commission put the push 'on hold' after the Mladić funeral.
+    since: 2012-03-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - url: https://www.tanjug.rs/english/politics/257129/vucic-serbia-is-on-eu-path-that-is-our-strategic-goal/vest
+        title: "Vučić: Serbia is on EU path, that is our strategic goal"
+        publisher: Tanjug (state agency, official statement)
+        date: 2026-06-05
+        tier: 1
+      - url: https://europeanwesternbalkans.com/2026/07/08/eight-eu-member-states-oppose-opening-of-claster-3-for-serbia/
+        title: Eight EU member states oppose opening of Cluster 3 for Serbia
+        publisher: European Western Balkans
+        date: 2026-07-08
+        tier: 3
+  - to: sub-rs
+    layer: objective
+    type: influence_goal
+    summary: Keep Republika Srpska under Belgrade's patronage through the special parallel relations, refusing to accept the Bosnian court's verdict against Dodik.
+    since: 2006-09-26
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - url: https://www.arabnews.com/node/2610396/amp
+        title: Serbia refuses to accept Bosnian court verdict on Dodik
+        publisher: AFP via Arab News
+        date: 2025-08-02
+        tier: 3
+  - to: MNE
+    layer: objective
+    type: influence_goal
+    summary: Press Podgorica for a dual-citizenship agreement that would add Serbian-citizen voters, and keep the Serbian Orthodox Church as an instrument of influence.
+    since: 2020
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - url: https://rs.boell.org/en/2026/05/25/izmedu-frustracije-i-negacije-srbija-i-nezavisnost-crne-gore-dvadeset-godina-posle
+        title: Between frustration and denial - Serbia and Montenegrin independence twenty years on
+        publisher: Heinrich-Böll-Stiftung Belgrade
+        date: 2026-05-28
+        tier: 2
+
+  # ---------- alignment ----------
+  - to: RUS
+    layer: alignment
+    type: treaty
+    summary: Declaration on Strategic Partnership signed in Sochi on 24 May 2013.
+    since: 2013-05-24
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://mfa.gov.rs/en/foreign-policy/bilateral-cooperation/russia
+        title: Bilateral cooperation - Russia
+        publisher: Ministry of Foreign Affairs of Serbia
+        date: 2025
+        tier: 1
+  - to: org-eu
+    layer: alignment
+    type: candidate
+    summary: Candidate since March 2012, negotiations since January 2014; 22 of 35 chapters opened, 2 provisionally closed; no cluster opened since December 2021.
+    since: 2012-03-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://data.consilium.europa.eu/doc/document/ST-14908-2025-INIT/en/pdf
+        title: Serbia 2025 Report, SWD(2025) 755
+        publisher: European Commission
+        date: 2025-11-04
+        tier: 1
+  - to: org-nato
+    layer: alignment
+    type: membership
+    summary: Partnership for Peace member since December 2006 with an Individual Partnership Action Plan, under declared military neutrality.
+    since: 2006-12-14
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://mfa.gov.rs/en/foreign-policy/security-policy/partnership-peace
+        title: Partnership for Peace
+        publisher: Ministry of Foreign Affairs of Serbia
+        date: 2025
+        tier: 1
+  - to: CHN
+    layer: alignment
+    type: treaty
+    summary: Free trade agreement signed 17 Oct 2023, in force 1 Jul 2024 (60% of tariff lines at zero immediately, 90% within 5-10 years); joint declaration on a 'community with a shared future' (May 2024).
+    since: 2024-07-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://www.wipo.int/wipolex/en/treaties/details/20075
+        title: Free Trade Agreement between Serbia and China
+        publisher: WIPO Lex
+        date: 2024
+        tier: 1
+      - url: https://www.tanjug.rs/english/economy/97399/mali-fta-with-china-has-entered-into-force/amp
+        title: "Mali: FTA with China has entered into force"
+        publisher: Tanjug (state agency, official statement)
+        date: 2024-07-01
+        tier: 1
+  - to: HUN
+    layer: alignment
+    type: treaty
+    summary: Strategic partnership treaty (8 Sep 2021), Strategic Cooperation Council and defence cooperation agreement (Palić, 20 Jun 2023), implementing defence agreement (1 Apr 2025).
+    since: 2021-09-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://mfa.gov.rs/en/foreign-policy/bilateral-cooperation/hungary
+        title: Bilateral cooperation - Hungary
+        publisher: Ministry of Foreign Affairs of Serbia
+        date: 2025
+        tier: 1
+      - url: https://www.srbija.gov.rs/vest/en/208530/serbia-hungary-sign-several-agreements-aimed-at-strengthening-cooperation.php
+        title: Serbia, Hungary sign several agreements aimed at strengthening cooperation
+        publisher: Government of Serbia
+        date: 2023-06-20
+        tier: 1
+  - to: USA
+    layer: alignment
+    type: treaty
+    summary: Bilateral Strategic Dialogue launched in Washington on 17 Jul 2026 (energy, security, technology).
+    since: 2026-07-17
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://mfa.rs/en/press-service/statements/djuric-launch-strategic-dialogue-represents-substantive-breakthrough-serbia-u-s-relations
+        title: "Đurić: launch of strategic dialogue represents substantive breakthrough in Serbia-US relations"
+        publisher: Ministry of Foreign Affairs of Serbia
+        date: 2026-07
+        tier: 1
+  - to: XKX
+    layer: alignment
+    type: non_recognition
+    summary: Brussels 'Agreement on the path to normalisation' (27 Feb 2023) and Ohrid implementation annex (18 Mar 2023) accepted but unimplemented - no Association of Serb Municipalities, continued lobbying against Kosovo's memberships.
+    since: 2023-03-18
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://www.securitycouncilreport.org/monthly-forecast/2026-10/kosovo-17.php
+        title: Kosovo - October 2026 monthly forecast
+        publisher: Security Council Report
+        date: 2026-10
+        tier: 2
+      - url: https://www.europarl.europa.eu/RegData/etudes/BRIE/2025/779231/EPRS_BRI(2025)779231_EN.pdf
+        title: Serbia-Kosovo dialogue - state of play
+        publisher: European Parliamentary Research Service
+        date: 2025
+        tier: 2
+
+  # ---------- dependency ----------
+  - to: RUS
+    layer: dependency
+    type: energy_import
+    summary: Russian gas covers about 75% of Serbia's consumption (over 90% a year earlier) at EUR 318 per 1,000 m3; no multi-year contract since May 2025, quarterly extensions, the latest to 31 Dec 2026.
+    value: 0.75
+    unit: share_of_gas_consumption
+    since: 2022-05
+    until: 2026-12-31
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Figures conflict: Energy Community ~75% (2025) vs press 'around 90%'. Most recent figure with an official basis kept."
+    sources:
+      - url: https://www.connaissancedesenergies.org/afp/la-serbie-obtient-une-prolongation-de-trois-mois-de-son-accord-gazier-avec-la-russie-260930
+        title: Serbia obtains a three-month extension of its gas agreement with Russia (Energy Community figure)
+        publisher: AFP
+        date: 2026-09-30
+        tier: 3
+      - url: https://n1info.rs/english/news/srbijagas-ceo-bajatovic-gas-supply-deal-with-russia-extended-through-end-of-year/
+        title: "Srbijagas CEO Bajatović: gas supply deal with Russia extended through end of year"
+        publisher: N1
+        date: 2026-09-30
+        tier: 3
+  - to: AZE
+    layer: dependency
+    type: energy_import
+    summary: Azerbaijani gas via the Bulgaria-Serbia interconnector - about 300 million m3 delivered Jan 2024-Oct 2025 against a contract of up to 400 million m3 a year.
+    value: 0.3
+    unit: bcm_cumulative_2024_2025
+    since: 2024-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - url: https://en.apa.az/finance/azerbaijan-exports-300-million-cubic-meters-of-gas-to-serbia-since-january-481653
+        title: Azerbaijan exports 300 million cubic meters of gas to Serbia since January
+        publisher: APA
+        date: 2025-10-23
+        tier: 3
+  - to: RUS
+    layer: dependency
+    type: investment
+    summary: NIS, the only refiner (Pančevo, about 80% of fuel), is 56.15% owned by Gazprom Neft and Gazprom; under US sanctions since 9 Oct 2025, sale to MOL pending, OFAC licences to 30 Oct 2026.
+    value: 0.5615
+    unit: share_of_nis_equity
+    since: 2008-12-24
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://www.osw.waw.pl/en/publikacje/analyses/2025-10-21/us-sanctions-against-serbian-oil-company-nis
+        title: US sanctions against Serbian oil company NIS
+        publisher: OSW
+        date: 2025-10-21
+        tier: 2
+      - url: https://interfax.com/newsroom/top-stories/119354/
+        title: OFAC extends NIS licences to 30 October 2026
+        publisher: Interfax
+        date: 2026-10-01
+        tier: 3
+  - to: HRV
+    layer: dependency
+    type: energy_import
+    summary: All imported crude reaches Pančevo through Croatia's JANAF pipeline, the sole route; NIS is about 30% of JANAF's revenue.
+    value: 1.0
+    unit: share_of_crude_import_route
+    since: 1979
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - url: https://interfax.com/newsroom/top-stories/115626/
+        title: JANAF resumes crude deliveries to NIS after OFAC licence
+        publisher: Interfax
+        date: 2026-01-15
+        tier: 3
+  - to: org-eu
+    layer: dependency
+    type: trade_share
+    summary: EU-27 took 62.3% of Serbia's exports and supplied 55.0% of imports in 2025 - 58.2% of total trade (EUR 74.9bn).
+    value: 0.582
+    unit: share_of_total_trade_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://publikacije.stat.gov.rs/G2026/pdfE/G20261190.pdf
+        title: External trade, December 2025 - final data (ST13-G No. 190)
+        publisher: Statistical Office of the Republic of Serbia
+        date: 2026-07-15
+        tier: 1
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    summary: China was the largest single source of imports in 2025 (15.4%, EUR 6.4bn, +25%) and took 5.7% of exports.
+    value: 0.154
+    unit: share_of_imports_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://publikacije.stat.gov.rs/G2026/pdfE/G20261190.pdf
+        title: External trade, December 2025 - final data
+        publisher: Statistical Office of the Republic of Serbia
+        date: 2026-07-15
+        tier: 1
+  - to: RUS
+    layer: dependency
+    type: trade_share
+    summary: Russia took 2.3% of exports and supplied 3.0% of imports in 2025 (exports -15%).
+    value: 0.03
+    unit: share_of_imports_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://publikacije.stat.gov.rs/G2026/pdfE/G20261190.pdf
+        title: External trade, December 2025 - final data
+        publisher: Statistical Office of the Republic of Serbia
+        date: 2026-07-15
+        tier: 1
+  - to: org-eu
+    layer: dependency
+    type: investment
+    summary: EU sources accounted for 67.6% of FDI inflows in Jan-Nov 2025 (net FDI EUR 1.94bn, -53% y/y after a record EUR 5.1bn in 2024).
+    value: 0.676
+    unit: share_of_fdi_inflows_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - url: https://www.intellinews.com/serbia-net-fdi-falls-53-y-y-in-january-november-2025-420546/
+        title: Serbia net FDI falls 53% y/y in January-November 2025 (NBS data)
+        publisher: bne IntelliNews
+        date: 2026-01
+        tier: 3
+  - to: CHN
+    layer: dependency
+    type: debt
+    summary: Export-Import Bank of China held EUR 2.8bn of central government debt at end-2025, about 7.1% of the stock (general government debt 44.8% of GDP).
+    value: 0.071
+    unit: share_of_central_government_debt
+    since: 2025-12-31
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://javnidug.gov.rs/static/uploads/Mesecni%20izvestaj%20Uprave%20za%20javni%20dug%20-%20ENG%20December%202025%20-%20preliminary.pdf
+        title: Public Debt Administration monthly report, December 2025 (preliminary)
+        publisher: Ministry of Finance of Serbia
+        date: 2026-01
+        tier: 1
+  - to: CHN
+    layer: dependency
+    type: arms_supply
+    summary: China supplied 61% of Serbia's arms imports in 2021-2025 (France 12%, Russia 7%); Serbia is China's second-largest arms client after Pakistan.
+    value: 0.61
+    unit: share_of_arms_imports_2021_2025
+    since: 2021
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://www.sipri.org/sites/default/files/2026-03/fs_2603_at_2025.pdf
+        title: Trends in International Arms Transfers, 2025
+        publisher: SIPRI
+        date: 2026-03-09
+        tier: 1
+  - to: FRA
+    layer: dependency
+    type: arms_supply
+    summary: 12 Rafale F4 for EUR 2.7bn, contract signed 29 Aug 2024, delivery by 2029; France 12% of arms imports 2021-2025.
+    value: 2.7
+    unit: eur_bn_contract
+    since: 2024-08-29
+    until: 2029
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://www.sipri.org/sites/default/files/2026-03/fs_2603_at_2025.pdf
+        title: Trends in International Arms Transfers, 2025
+        publisher: SIPRI
+        date: 2026-03-09
+        tier: 1
+      - url: https://defensenews.com/global/europe/2024/08/30/serbia-to-buy-12-rafale-fighter-jets-in-nod-to-european-industry
+        title: Serbia to buy 12 Rafale fighter jets in nod to European industry
+        publisher: Defense News
+        date: 2024-08-30
+        tier: 3
+  - to: DEU
+    layer: dependency
+    type: remittances
+    summary: Germany is the largest origin of remittances (24.6% of EUR 4.34bn, Jan-Oct 2025); remittances were 6.4% of GDP in 2024. Germany also took 15.4% of exports in 2025.
+    value: 0.246
+    unit: share_of_remittances_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - url: https://biznis.rs/vesti/srbija/povecan-priliv-doznaka-u-2025-poslato-434-milijarde-evra/
+        title: Remittance inflows up in 2025 - EUR 4.34bn sent (NBS data)
+        publisher: Biznis.rs
+        date: 2025-12-29
+        tier: 3
+      - url: https://publikacije.stat.gov.rs/G2026/pdfE/G20261190.pdf
+        title: External trade, December 2025 - final data
+        publisher: Statistical Office of the Republic of Serbia
+        date: 2026-07-15
+        tier: 1
+  - to: org-nato
+    layer: dependency
+    type: military_presence
+    summary: KFOR - 4,739 troops from 31 nations in Kosovo (June 2026), Italy 984, USA 590, Türkiye 420, Hungary 410; reduction toward 3,000-3,500 announced 12 Jun 2026.
+    value: 4739
+    unit: troops_2026_06
+    since: 1999-06-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://www.nato.int/content/dam/nato/webready/documents/factsheets/kfor/KFOR-Placemat.pdf
+        title: KFOR Placemat, June 2026
+        publisher: NATO
+        date: 2026-06
+        tier: 1
+
+  # ---------- action ----------
+  - to: UKR
+    layer: action
+    type: un_vote
+    summary: Voted YES on A/RES/ES-11/1 condemning the aggression against Ukraine (141-5-35).
+    since: 2022-03-02
+    until: 2022-03-02
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://digitallibrary.un.org/record/3965290
+        title: A/RES/ES-11/1 Aggression against Ukraine - voting record
+        publisher: United Nations
+        date: 2022-03-02
+        tier: 1
+  - to: UKR
+    layer: action
+    type: un_vote
+    summary: Voted YES on the European text A/RES/ES-11/7 on the third anniversary of the war, then had the vote changed to ABSTAIN after Vučić called it 'a mistake' and the Kremlin accepted his apology.
+    since: 2025-02-24
+    until: 2025-03-13
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://digitallibrary.un.org/record/4076672
+        title: A/RES/ES-11/7 - voting record
+        publisher: United Nations
+        date: 2025-02-24
+        tier: 1
+      - url: https://www.tanjug.rs/english/politics/147346/djuric-serbia-has-changed-its-vote-on-ukraine-resolution-to-abstained/vest
+        title: "Đurić: Serbia has changed its vote on Ukraine resolution to abstained"
+        publisher: Tanjug (state agency, official statement)
+        date: 2025-03-13
+        tier: 1
+      - url: https://www.intellinews.com/serbian-president-says-he-backed-un-resolution-on-ukraine-by-mistake-368928
+        title: Serbian president says he backed UN resolution on Ukraine by mistake
+        publisher: bne IntelliNews
+        date: 2025-02-25
+        tier: 3
+  - to: UKR
+    layer: action
+    type: un_vote
+    summary: ABSTAINED on 'Support for lasting peace in Ukraine' (107-12-51), the only Western Balkan state to do so.
+    since: 2026-02-24
+    until: 2026-02-24
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - url: https://europeanwesternbalkans.com/2026/02/25/serbia-abstains-again-from-voting-on-the-resolution-on-ukraine/
+        title: Serbia abstains again from voting on the resolution on Ukraine
+        publisher: European Western Balkans
+        date: 2026-02-25
+        tier: 3
+  - to: BIH
+    layer: action
+    type: un_vote
+    summary: Voted NO on A/RES/78/282 establishing the Srebrenica genocide remembrance day (84-19-68) after a lobbying campaign; Vučić called the 68 abstentions a 'moral victory'.
+    since: 2024-05-23
+    until: 2024-05-23
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://www.osw.waw.pl/en/publikacje/analyses/2024-06-12/srebrenica-resolution-slim-chances-reconciliation
+        title: The Srebrenica resolution - slim chances of reconciliation
+        publisher: OSW
+        date: 2024-06-12
+        tier: 2
+      - url: https://www.jurist.org/news/2024/05/un-general-assembly-designate-july-11-as-international-day-of-reflection-and-commemoration-of-srebrenica-genocide
+        title: UN General Assembly designates July 11 as day of commemoration of Srebrenica genocide
+        publisher: JURIST
+        date: 2024-05-23
+        tier: 2
+  - to: RUS
+    layer: action
+    type: sanction
+    summary: Serbia has not aligned with EU restrictive measures against Russia; in January 2026 it was the only Western Balkan candidate not aligning with new EU decisions on Ukraine, Russia and Venezuela.
+    since: 2022-02-24
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://data.consilium.europa.eu/doc/document/ST-14908-2025-INIT/en/pdf
+        title: Serbia 2025 Report
+        publisher: European Commission
+        date: 2025-11-04
+        tier: 1
+      - url: https://n1info.rs/english/news/serbia-fails-to-align-with-new-eu-foreign-policy-decisions-on-ukraine-russia-and-venezuela/
+        title: Serbia fails to align with new EU foreign policy decisions on Ukraine, Russia and Venezuela
+        publisher: N1
+        date: 2026-01
+        tier: 3
+  - to: RUS
+    layer: action
+    type: visit
+    summary: Vučić attended the Victory Day parade in Moscow and met Putin despite EU warnings.
+    since: 2025-05-09
+    until: 2025-05-09
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://betabriefing.com/news/politics/31057-vucic-at-military-parade-in-moscow-despite-warnings-from-the-eu
+        title: Vučić at military parade in Moscow despite warnings from the EU
+        publisher: Beta
+        date: 2025-05-09
+        tier: 3
+  - to: UKR
+    layer: action
+    type: visit
+    summary: Vučić's first-ever visit to Ukraine, Ukraine-South East Europe summit in Odesa.
+    since: 2025-06-11
+    until: 2025-06-11
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://euronews.com/my-europe/2025/06/11/serbias-president-visits-ukraine-for-the-first-time-in-eu-realignment-signal
+        title: Serbia's president visits Ukraine for the first time in EU realignment signal
+        publisher: Euronews
+        date: 2025-06-11
+        tier: 3
+  - to: CHN
+    layer: action
+    type: visit
+    summary: Vučić in Beijing for the 3 September parade, with Fico the only Western leaders; met Putin (2 Sep, gas and NIS) and Xi.
+    since: 2025-09-02
+    until: 2025-09-04
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://betabriefing.com/news/politics/32274-ushakov-putin-and-vucic-to-discuss-russian-serbian-cooperation-during-meeting-in-china
+        title: "Ushakov: Putin and Vučić to discuss Russian-Serbian cooperation during meeting in China"
+        publisher: Beta
+        date: 2025-09-02
+        tier: 3
+  - to: USA
+    layer: action
+    type: visit
+    summary: First Vučić-Rubio meeting on the margins of UNGA; launch of the bilateral strategic dialogue, US participation in EXPO 2027.
+    since: 2025-09-23
+    until: 2025-09-23
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://rs.usembassy.gov/secretary-rubio-and-president-vucic-meet-on-the-margins-of-unga/
+        title: Secretary Rubio and President Vučić meet on the margins of UNGA
+        publisher: US Embassy in Serbia
+        date: 2025-09-23
+        tier: 1
+  - to: RUS
+    layer: action
+    type: agreement
+    summary: Hour-long Vučić-Putin call on gas, NIS and Ukraine; gas deal extended to 31 Dec 2026 at EUR 318 per 1,000 m3; Vučić announced his resignation the next day.
+    since: 2026-09-26
+    until: 2026-09-26
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - url: https://www.kosovo-online.com/en/news/politics/vucic-speaks-putin-phone-important-conversation-serbias-future-26-9-2026
+        title: Vučić speaks to Putin by phone - 'important conversation for Serbia's future'
+        publisher: Kosovo Online
+        date: 2026-09-26
+        tier: 3
+      - url: https://n1info.rs/english/news/srbijagas-ceo-bajatovic-gas-supply-deal-with-russia-extended-through-end-of-year/
+        title: "Srbijagas CEO Bajatović: gas supply deal with Russia extended through end of year"
+        publisher: N1
+        date: 2026-09-30
+        tier: 3
+  - to: org-nato
+    layer: action
+    type: exercise
+    summary: First-ever NATO-Serbia exercise (NSE26) on Serbian soil, about 600 troops from Serbia, Italy, Romania and Türkiye, led by JFC Naples.
+    since: 2026-05-12
+    until: 2026-05-23
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://jfcnaples.nato.int/newsroom/news/news-archive/2026/jfc-naples-participates-in-natoserbia-exercise-2026
+        title: JFC Naples participates in NATO-Serbia Exercise 2026
+        publisher: NATO JFC Naples
+        date: 2026-05
+        tier: 1
+  - to: USA
+    layer: action
+    type: exercise
+    summary: Platinum Wolf 25 at Bujanovac with USEUCOM, 700+ troops from 12 nations - the one exercise exempt from Serbia's 2022 moratorium on joint exercises.
+    since: 2025-06-12
+    until: 2025-06-27
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://rs.usembassy.gov/platinum-wolf-25-highlights-u-s-serbia-military-cooperation/
+        title: Platinum Wolf 25 highlights US-Serbia military cooperation
+        publisher: US Embassy in Serbia
+        date: 2025-06
+        tier: 1
+  - to: CHN
+    layer: action
+    type: exercise
+    summary: First Serbia-China joint exercise ('Peace Defenders 2025'), special forces, Hebei province.
+    since: 2025-07-15
+    until: 2025-07-31
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - url: https://www.rferl.org/a/serbia-china-military-exercises-eu-alarm-russia/33476628.html
+        title: Serbia-China military exercises alarm the EU
+        publisher: RFE/RL
+        date: 2025-07-17
+        tier: 3
+  - to: HRV
+    layer: action
+    type: expulsion
+    summary: Croatian diplomat Hrvoje Šnajder declared persona non grata for espionage; Zagreb reciprocated.
+    since: 2023-11-20
+    until: 2023-11-20
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://mfa.gov.rs/en/press-service/news/mfa-croatian-diplomat-declared-persona-non-grata
+        title: Croatian diplomat declared persona non grata
+        publisher: Ministry of Foreign Affairs of Serbia
+        date: 2023-11-20
+        tier: 1
+  - to: HRV
+    layer: action
+    type: incident
+    summary: After the Croatia-Albania-Kosovo defence declaration (Tirana, 18 Mar 2025) Vučić denounced an 'arms race' and Serbia recalled its ambassador from Zagreb.
+    since: 2025-03-20
+    until: 2025-03-20
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - url: https://n1info.rs/english/news/belgrade-recalls-ambassador-from-zagreb/
+        title: Belgrade recalls ambassador from Zagreb
+        publisher: N1
+        date: 2025-03
+        tier: 3
+  - to: XKX
+    layer: action
+    type: incident
+    summary: Banjska attack - a group led by Milan Radoičić killed a Kosovo police sergeant; Serbia declared a day of mourning and denied state involvement; a Pristina court handed down life sentences in April 2026, called 'politically motivated' by Belgrade.
+    since: 2023-09-24
+    until: 2026-04-24
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - url: https://www.rferl.org/a/kosovo-court-life-sentences-deadly-attack-banjska-serbia/33741781.html
+        title: Kosovo court hands life sentences over deadly Banjska attack
+        publisher: RFE/RL
+        date: 2026-04-24
+        tier: 3
+  - to: org-eu
+    layer: action
+    type: incident
+    summary: Ratko Mladić buried in Belgrade with an army honour guard, five ministers and the Russian ambassador present; the EU cancelled Commissioner Kos's visit and called the funeral 'shocking'.
+    since: 2026-09-07
+    until: 2026-09-07
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - url: https://www.euronews.com/my-europe/2026/09/08/eu-institution-leaders-blast-serbia-over-shocking-ratko-mladics-funeral
+        title: EU institution leaders blast Serbia over 'shocking' Ratko Mladić's funeral
+        publisher: Euronews
+        date: 2026-09-08
+        tier: 3
+  - to: TUR
+    layer: action
+    type: agreement
+    summary: Erdoğan hosts Vučić in Ankara - joint declaration on foreign policy, trade, defence industry and energy; USD 5bn trade target.
+    since: 2026-02-13
+    until: 2026-02-13
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - url: https://turkishminute.com/2026/02/13/erdogan-hosts-vucic-in-ankara-pledges-closer-turkey-serbia-ties/
+        title: Erdoğan hosts Vučić in Ankara, pledges closer Turkey-Serbia ties
+        publisher: Turkish Minute
+        date: 2026-02-13
+        tier: 3

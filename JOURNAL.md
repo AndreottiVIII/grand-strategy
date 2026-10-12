@@ -3,6 +3,40 @@
 Decision log, newest first. The path matters more than the destination: record why,
 not only what. Dead ends are entries too.
 
+## 2026-10-12 · Serbia pilot and first demo
+
+Davide: "I like it, but I want to *see* it. Let's do the demo all the way, then reason
+about scalability."
+
+**Done.** Four parallel researches on Serbia (card, stances, dependencies, actions;
+about 270 sources opened). Data written as `data/actors/SRB.yaml` (6 objectives, 7
+means, 6 constraints, 7 paradoxes, reading), `data/stances/SRB.yaml` (18 stances, each
+with a source that uses the grade), `data/relations/SRB.yaml` (43 rows). 20 stub
+actors as nodes. `tools/build.py` validates and compiles. Site in `docs/` with map
+(point-of-view colouring, hatched claimed territory, "Neighbourhood/World" framing),
+force graph (arcs by layer), dossier (card, stance table, relations with sources and
+confidence badges). Public repo `AndreottiVIII/grand-strategy`, GitHub Pages from `docs/`.
+
+**Ontology draft 2** records seven lessons the pilot forced: sub-state actors, stance
+`trend`, conflicting-figure rule, contested counts as `claims`, state media as tier 1
+only for statements, non-events in `reading`, stubs. See ONTOLOGY.md.
+
+**Left out for lack of a source that holds.** The "betray the soul of our people"
+sanctions quote (only Pravda); Serbia's Sept 2025 vote on the Palestine declaration
+(inferred, not read). Bosnia-state stance is recorded as `rival` at confidence C and
+marked provisional: no source uses a scale word.
+
+**Open after the demo**
+
+- Is one card enough to judge the form? Probably not: the graph is a star until a
+  second card arrives. Kosovo or Croatia next would make the first real intersection.
+- Map framing: "Neighbourhood" fits all stance countries, so the UAE and Azerbaijan
+  stretch it. Maybe frame on the actor's regions instead.
+- The dossier is 12,000px tall for one actor. Collapsible sections or a layer filter
+  will be needed at scale.
+- Source URLs were opened by research agents, not by Davide; a spot check of a dozen
+  would be the honest next step before showing anyone.
+
 ## 2026-10-12 · Ontology draft 1
 
 Draft 0 read in full in chat and argued point by point.
