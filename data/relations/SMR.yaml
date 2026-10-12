@@ -1,0 +1,98 @@
+from: SMR
+relations:
+  # ---------- objective ----------
+  - to: org-eu
+    layer: objective
+    type: influence_goal
+    summary: San Marino seeks single-market and financial-sector access through the EU Association Agreement, not full membership, after the 2010-2013 membership campaign and referendum push.
+    since: '2010-01-01'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: B
+    sources:
+      - {url: 'https://www.eeas.europa.eu/delegations/un-rome/towards-association-agreement-san-marino-and-andorra_en', title: 'Towards the Association Agreement with San Marino and Andorra', publisher: 'EU Delegation to the UN Rome (EEAS)', date: '2026', tier: 1}
+      - {url: 'https://en.wikipedia.org/wiki/San_Marino%E2%80%93European_Union_relations', title: 'San Marino-European Union relations (pointer for the 2010-2013 referendum history)', publisher: 'Wikipedia (index)', date: '2026-10-12', tier: 4}
+  # ---------- alignment ----------
+  - to: ITA
+    layer: alignment
+    type: treaty
+    summary: 1939 Convention of Friendship and Good Neighbourhood, still the framework of bilateral relations with Italy. No defence or security clause was found in the sources we could read.
+    since: '1939-09-30'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: B
+    sources:
+      - {url: 'https://prefettura.interno.gov.it/sites/default/files/16/2024-06/convenzione_italia-san_marino_1939_-dati-.pdf', title: 'Convention Italy-San Marino 1939 (data sheet)', publisher: 'Italian Interior Ministry, Prefettura', date: '2024-06', tier: 1}
+  - to: org-eu
+    layer: alignment
+    type: treaty
+    summary: Customs union with the EEC (the EU) in force since 1991; agricultural produce included since 2002.
+    since: '1991-12-16'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: A
+    sources:
+      - {url: 'http://ec.europa.eu/taxation_customs/customs/customs_duties/rules_origin/customs_unions/article_412_en.htm', title: 'Customs unions: San Marino', publisher: 'European Commission', date: '1991-12-16', tier: 1}
+  - to: org-eu
+    layer: alignment
+    type: treaty
+    summary: Monetary agreement under which San Marino uses the euro as its sole currency and may mint a limited number of coins; the earlier Sammarinese lira was set at par with the Italian lira.
+    since: '2002-01-01'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: B
+    sources:
+      - {url: 'http://www.consilium.europa.eu/uedocs/cms_data/docs/pressdata/EN/foraff/118458.pdf', title: 'EU-San Marino monetary agreement (Council document, cited by Wikipedia, not reopened)', publisher: 'Council of the European Union', date: '2001', tier: 1}
+  # ---------- action ----------
+  - to: org-eu
+    layer: action
+    type: agreement
+    summary: Council authorised negotiations on an agreement removing border controls with the Schengen Area on 30 May 2024; the Commission proposed in September 2026 to sign the border-control agreements (both cited by Wikipedia, not reopened).
+    since: '2024-05-30'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202401733', title: 'Council decision on negotiations for a border-control agreement with San Marino (cited by Wikipedia)', publisher: 'EUR-Lex', date: '2024-05-30', tier: 1}
+      - {url: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM:2026:442:FIN', title: 'COM(2026) 442: proposal to sign the border-control agreements (cited by Wikipedia)', publisher: 'European Commission (EUR-Lex)', date: '2026-09', tier: 1}
+  - to: org-eu
+    layer: action
+    type: agreement
+    summary: Commission concluded negotiations on the Association Agreement with Andorra and San Marino in December 2023 and proposed signature in April 2024.
+    since: '2023-12-01'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: A
+    sources:
+      - {url: 'https://ec.europa.eu/commission/presscorner/detail/en/ip_23_6522', title: 'Commission concludes negotiations on Association Agreements with Andorra and San Marino', publisher: 'European Commission', date: '2023-12', tier: 1}
+  - to: org-eu
+    layer: action
+    type: agreement
+    summary: Council authorised signature and provisional application of the Association Agreement on 16 July 2026; signing is scheduled for 19 October 2026 in Brussels; Council conclusion still needs European Parliament consent.
+    since: '2026-07-16'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: A
+    sources:
+      - {url: 'https://www.esteri.it/en/sala_stampa/archivionotizie/comunicati/2026/07/accordo-di-associazione-ue-san-marino-litalia-accoglie-con-favore-il-via-libera-del-consiglio-dellunione-europea/', title: 'EU Association Agreement: Italy welcomes the Council green light', publisher: 'Italian Ministry of Foreign Affairs', date: '2026-07-16', tier: 1}
+      - {url: 'https://www.eeas.europa.eu/delegations/un-rome/towards-association-agreement-san-marino-and-andorra_en', title: 'Towards the Association Agreement with San Marino and Andorra', publisher: 'EU Delegation to the UN Rome (EEAS)', date: '2026', tier: 1}
+  - to: RUS
+    layer: action
+    type: sanction
+    summary: Applies EU-aligned sanctions against Russia after the 2022 invasion of Ukraine, including dual-use export controls; the Grand and General Council authorised the government to set the methods.
+    since: '2022-02-24'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: 'https://www.consigliograndeegenerale.sm/on-line/documento17141365.html', title: 'Grand and General Council documentation on sanctions against Russia (title and date to verify)', publisher: 'Grand and General Council of San Marino', date: '2023-03', tier: 1}
+  - to: UKR
+    layer: action
+    type: agreement
+    summary: Council directed the government to help Ukrainians seeking refuge and to coordinate humanitarian corridors with EU states. No amount of aid was found in the sources.
+    since: '2022-03-01'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: 'https://www.consigliograndeegenerale.sm/on-line/home/documento17130843.html', title: 'Grand and General Council documentation on refugees and humanitarian corridors (date to verify)', publisher: 'Grand and General Council of San Marino', date: '2022', tier: 1}

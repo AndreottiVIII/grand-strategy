@@ -8,7 +8,74 @@ coords:
 - 43.73
 seat: Monaco
 regions:
-- world
-card: stub
+- western-south-europe
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-12
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep French protection of its independence and defence: the 2002 treaty (in force 1 Dec 2005) makes France responsible for Monaco's independence, sovereignty and territorial integrity, and Monaco's sovereign action must accord with French fundamental interests."
+      confidence: B
+      sources:
+        - {url: "https://axl.cefan.ulaval.ca/europe/france-monaco-traite-2002.htm", title: "Franco-Monegasque treaty of 24 October 2002", publisher: "CEFAN, Universite Laval", date: "2002-10-24", tier: 2}
+        - {url: "https://www.elysee.fr/emmanuel-macron/2025/06/08/communique-conjoint-a-loccasion-de-la-visite-detat-du-president-de-la-republique-en-principaute-de-monaco", title: "Joint communique on the state visit to the Principality of Monaco (7-8 June 2025)", publisher: "Elysee", date: "2025-06-08", tier: 1}
+    - rank: 2
+      text: "Exit the FATF grey list and protect the banking and wealth-management franchise that depends on it. Monaco was added on 28 Jun 2024 over laundering of proceeds of overseas fraud and too few asset seizures; the June 2026 removal target was missed and the October 2026 plenary (26-30 Oct) is the next decision point."
+      confidence: B
+      sources:
+        - {url: "https://www.scb.gov.bs/wp-content/uploads/2024/07/Financial-Action-Task-Force-Public-Statement-on-list-of-Jurisdictions-under-Increased-Monitoring-28-June-2024.pdf", title: "FATF Public Statement on list of Jurisdictions under Increased Monitoring, 28 June 2024", publisher: "FATF (copy hosted by The Bahamas Securities Commission)", date: "2024-06-28", tier: 1}
+        - {url: "https://www.wealthbriefing.com/html/article.php/fatf-may-remove-monaco-from-%22grey-list%22--report-", title: "FATF may remove Monaco from grey list - report", publisher: "WealthBriefing", date: "2026-09-16", tier: 3}
+    - rank: 3
+      text: "Keep the EU at the distance its residence rules require: the Principality will not accept the free-movement terms of an Association Agreement that would change the living, working and housing conditions of its nationals and residents. Talks begun in 2015 were suspended in September 2023 and have not resumed."
+      confidence: B
+      sources:
+        - {url: "https://www.hellomonaco.com/news/latest-news/brussels-monaco-and-the-eu-suspend-negotiations-for-an-association-agreement/", title: "Brussels: Monaco and the EU suspend negotiations for an Association Agreement", publisher: "HelloMonaco", date: "2023-09-14", tier: 3}
+        - {url: "https://www.monaco-tribune.com/2023/09/les-negociations-entre-monaco-et-lunion-europeenne-sont-suspendues/", title: "Negotiations between Monaco and the EU are suspended", title_original: "Les negociations entre Monaco et l'Union europeenne sont suspendues", lang: fr, publisher: "Monaco Tribune", date: "2023-09", tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "Ocean diplomacy as the soft instrument: the first French state visit to Monaco since 1984 (7-8 June 2025) produced a joint ocean declaration, days before the UN Ocean Conference in Nice that France and Costa Rica co-hosted. Monaco's own role at Nice is not confirmed by the sources read."
+      confidence: B
+      sources:
+        - {url: "https://www.elysee.fr/emmanuel-macron/2025/06/08/communique-conjoint-a-loccasion-de-la-visite-detat-du-president-de-la-republique-en-principaute-de-monaco", title: "Joint communique on the state visit to the Principality of Monaco (7-8 June 2025)", publisher: "Elysee", date: "2025-06-08", tier: 1}
+        - {url: "https://atlantic-maritime-strategy.ec.europa.eu/en/news-and-events/events/2025-un-ocean-conference", title: "2025 UN Ocean Conference (Nice, 9-13 June 2025; co-hosted by France and Costa Rica)", publisher: "European Commission, Atlantic Maritime Strategy", date: "2025-06", tier: 1}
+    - domain: economic
+      text: "Anti-money-laundering reform under FATF and MONEYVAL monitoring as the price of the banking franchise. A joint FATF-MONEYVAL review of June 2025 found the Principality had largely addressed its action-plan items within the set timelines: a positive step, short of clearance."
+      confidence: B
+      sources:
+        - {url: "https://www.hellomonaco.com/news/latest-news/monaco-advances-in-measured-steps-toward-fatf-grey-list-removal-following-positive-review/", title: "Monaco Advances in Measured Steps Toward FATF Grey List Removal Following Positive Review", publisher: "HelloMonaco", date: "2025-06", tier: 3}
+        - {url: "https://www.wealthbriefing.com/html/article.php/fatf-may-remove-monaco-from-%22grey-list%22--report-", title: "FATF may remove Monaco from grey list - report", publisher: "WealthBriefing", date: "2026-09-16", tier: 3}
+    - domain: informational
+      text: "Humanitarian and cultural gestures toward Ukraine in 2022: the Prince's offer to welcome refugees, a government coordination unit for their intake, and the cancelled 2022 Monte-Carlo Gala. No Ukraine-specific measure surfaced for 2025-26."
+      confidence: B
+      sources:
+        - {url: "https://www.monaco-tribune.com/en/2022/03/prince-albert-ii-wishes-to-welcome-ukrainian-refugees-to-the-principality/", title: "Prince Albert II wishes to welcome Ukrainian refugees to the Principality", publisher: "Monaco Tribune", date: "2022-03", tier: 3}
+        - {url: "https://www.monaco-tribune.com/en/2022/08/war-in-ukraine-there-will-be-no-monte-carlo-gala-this-year/", title: "War in Ukraine: there will be no Monte-Carlo Gala this year", publisher: "Monaco Tribune", date: "2022-08", tier: 3}
+
+  constraints:
+    - text: "Defence is French by treaty: France can station forces on Monegasque territory at the Prince's request or with his agreement (Article 4), and the Principality cannot defend itself. The treaty ties its external acts to French interests in politics, economy, security and defence."
+      confidence: B
+      sources:
+        - {url: "https://axl.cefan.ulaval.ca/europe/france-monaco-traite-2002.htm", title: "Franco-Monegasque treaty of 24 October 2002", publisher: "CEFAN, Universite Laval", date: "2002-10-24", tier: 2}
+        - {url: "https://www.elysee.fr/emmanuel-macron/2025/06/08/communique-conjoint-a-loccasion-de-la-visite-detat-du-president-de-la-republique-en-principaute-de-monaco", title: "Joint communique on the state visit to the Principality of Monaco (7-8 June 2025)", publisher: "Elysee", date: "2025-06-08", tier: 1}
+    - text: "The EU route costs legal sovereignty: the legal study commissioned by the government (Cabinet Gide) warned that an Association Agreement would bring at least a partial loss of legal sovereignty, and the EU mandate could not meet the residents' conditions."
+      confidence: B
+      sources:
+        - {url: "https://www.monaco-tribune.com/2023/09/les-negociations-entre-monaco-et-lunion-europeenne-sont-suspendues/", title: "Negotiations between Monaco and the EU are suspended", title_original: "Les negociations entre Monaco et l'Union europeenne sont suspendues", lang: fr, publisher: "Monaco Tribune", date: "2023-09", tier: 3}
+        - {url: "https://www.hellomonaco.com/news/latest-news/brussels-monaco-and-the-eu-suspend-negotiations-for-an-association-agreement/", title: "Brussels: Monaco and the EU suspend negotiations for an Association Agreement", publisher: "HelloMonaco", date: "2023-09-14", tier: 3}
+    - text: "Grey listing keeps the financial centre under supervision until the action plan is accepted. It does not by itself require enhanced due diligence or the rejection of customers, but it makes every banking relationship a risk-based review until the exit."
+      confidence: B
+      sources:
+        - {url: "https://www.scb.gov.bs/wp-content/uploads/2024/07/Financial-Action-Task-Force-Public-Statement-on-list-of-Jurisdictions-under-Increased-Monitoring-28-June-2024.pdf", title: "FATF Public Statement on list of Jurisdictions under Increased Monitoring, 28 June 2024", publisher: "FATF (copy hosted by The Bahamas Securities Commission)", date: "2024-06-28", tier: 1}
+        - {url: "https://www.hellomonaco.com/news/latest-news/monaco-advances-in-measured-steps-toward-fatf-grey-list-removal-following-positive-review/", title: "Monaco Advances in Measured Steps Toward FATF Grey List Removal Following Positive Review", publisher: "HelloMonaco", date: "2025-06", tier: 3}
+
+  paradoxes:
+    - text: "Protecting residents from EU free-movement terms keeps the residence and banking model that the EU and FATF want to supervise. The sovereignty Monaco wins in Brussels is the same one that its anti-money-laundering file must show it has used responsibly."
+      confidence: C
+      sources:
+        - {url: "https://www.hellomonaco.com/news/latest-news/brussels-monaco-and-the-eu-suspend-negotiations-for-an-association-agreement/", title: "Brussels: Monaco and the EU suspend negotiations for an Association Agreement", publisher: "HelloMonaco", date: "2023-09-14", tier: 3}
+        - {url: "https://www.wealthbriefing.com/html/article.php/fatf-may-remove-monaco-from-%22grey-list%22--report-", title: "FATF may remove Monaco from grey list - report", publisher: "WealthBriefing", date: "2026-09-16", tier: 3}
+
+  reading: |
+    Monaco is a sovereign city-state whose security is French by treaty and whose wealth rests on a banking and residence model that both the EU and the FATF want to supervise more closely. Its strategy is defensive and rule-bound: keep the French guarantee, refuse the EU terms that would open its residence rules, and pay the reputational cost of the grey list with reforms and checkpoints. Ocean diplomacy and the Prince's humanitarian gestures are the soft instruments it can afford, not substitutes for protection.

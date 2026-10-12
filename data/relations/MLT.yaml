@@ -1,0 +1,134 @@
+from: MLT
+relations:
+  - to: LBY
+    layer: objective
+    type: territorial_claim
+    summary: Malta contests Tripoli's unilateral claim to lodge its maritime outer limits with the UN and wants the maritime border settled by negotiation; talks were agreed in Valletta in September 2025 (the year is inferred from the article).
+    since: '2025-09-10'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: B
+    sources:
+      - {url: "https://northafricapost.com/?p=90492", title: "Libya and Malta to open talks on maritime borders, migration, regional stability", publisher: "North Africa Post", date: 2025-09-10, tier: 3}
+
+  - to: org-osce
+    layer: objective
+    type: influence_goal
+    summary: Malta chaired the OSCE in 2024 as an eleventh-hour compromise after Estonia's planned chairmanship was vetoed by Russia and Belarus; its programme put Ukraine at the top and pressed for an end to Russia's war. The chair passed to Finland (2025) and Switzerland (2026).
+    since: '2024-01-01'
+    until: '2024-12-31'
+    last_verified: '2026-10-12'
+    confidence: A
+    sources:
+      - {url: "https://osce.org/chairpersonship/561403", title: "Malta takes over OSCE Chair", publisher: "OSCE", date: 2024-01-01, tier: 1}
+      - {url: "https://news.err.ee/1609183132/malta-confirmed-as-osce-chair-nation-for-2024", title: "Malta confirmed as OSCE chair nation for 2024 [undated]", publisher: "ERR", date: 2026-10-12, tier: 3}
+
+  - to: LBY
+    layer: alignment
+    type: treaty
+    summary: Memorandum of understanding on migration signed by Abela and the Government of National Accord leader in 2020; two coordination centres, one in Tripoli and one in Valletta, funded by Malta and limited to support and coordination. Three-year term; renewal not found in the sources.
+    since: '2020-06'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: A
+    sources:
+      - {url: "https://www.statewatch.org/news/2020/jun/malta-libya-mou-immigration.pdf", title: "Malta-Libya memorandum of understanding on migration (2020)", publisher: "Statewatch", date: 2020, tier: 1}
+
+  - to: ITA
+    layer: dependency
+    type: energy_import
+    summary: Malta partly relies on electricity imported from Italy; a second 200 MW cable parallel to the Ragusa interconnector was targeted for completion in 2025. No completion was confirmed in the sources.
+    value: 200
+    unit: mw_second_interconnector_planned
+    since: '2025'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://trade.gov/country-commercial-guides/malta-energy", title: "Malta Country Commercial Guide - energy [undated]", publisher: "US International Trade Administration", date: 2026-10-12, tier: 1}
+
+  - to: ITA
+    layer: dependency
+    type: energy_import
+    summary: Melita TransGas plans a 159 km gas pipeline from Delimara to Gela (Sicily), hydrogen-ready, with an initial flow from Italy to Malta of up to 1.2 bcm a year; it is to replace the LNG floating unit at Delimara. Still at tender and not built, per the sources; the cost is quoted at USD 400m (trade.gov) or EUR 350-400m (other sources).
+    value: 1.2
+    unit: bcm_per_year_planned_initial_flow
+    since: '2020'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://offshore-energy.biz/?p=534791", title: "Malta launches tenders for pipeline to Italy in push to end gas isolation [undated]", publisher: "Offshore Energy", date: 2026-10-12, tier: 3}
+      - {url: "https://www.pipeline-journal.net/news/new-malta-sicily-pipeline-project-moves-ahead", title: "New Malta Sicily pipeline project moves ahead [undated]", publisher: "Pipeline Journal", date: 2026-10-12, tier: 3}
+
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    summary: China exported USD 2.90bn of goods to Malta in 2025 (down 28.6%) and imported USD 0.52bn (up 8.3%); total trade fell 24.7% from USD 4.54bn in 2024 to USD 3.42bn in 2025. The Chinese figures are the Chinese side's; Maltese data may differ.
+    value: 2.90
+    unit: usd_bn_china_exports_to_malta_2025
+    since: '2025-01-01'
+    until: '2025-12-31'
+    last_verified: '2026-10-12'
+    confidence: B
+    sources:
+      - {url: "https://www.fmprc.gov.cn/mfa_eng/gjhdq_665435/3265_665445/3331_664660/", title: "China-Malta bilateral relations (Chinese Ministry of Foreign Affairs)", publisher: "Chinese Ministry of Foreign Affairs", date: 2026, tier: 1}
+
+  - to: CHN
+    layer: action
+    type: visit
+    summary: Deputy Prime Minister and Foreign Minister Ian Borg visited China in July 2025; in January 2026 Beijing said it wanted deeper cooperation with Malta on shipping and port logistics and "strategic alignment". China Merchants Port Holdings holds a stake in Malta Freeport.
+    since: '2025-07'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: B
+    sources:
+      - {url: "https://www.fmprc.gov.cn/mfa_eng/gjhdq_665435/3265_665445/3331_664660/", title: "China-Malta bilateral relations (Chinese Ministry of Foreign Affairs)", publisher: "Chinese Ministry of Foreign Affairs", date: 2026, tier: 1}
+      - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/01/22/china-seeks-deeper-maritime-ties-with-malta-in-central-mediterranean", title: "China seeks deeper maritime ties with Malta in Central Mediterranean", publisher: "Reuters (via Internazionale)", date: 2026-01-22, tier: 3}
+
+  - to: org-eu
+    layer: action
+    type: incident
+    summary: The Court of Justice of the EU ruled on 29 April 2025 (Commission v Malta, C-181/23) that the investor citizenship scheme commercialised the grant of Union citizenship and breached EU law; Malta said it would respect the ruling and study how to align its framework with it. The Commission can seek fines if Malta does not comply.
+    since: '2025-04-29'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: A
+    sources:
+      - {url: "https://www.lawsociety.ie/gazette/top-stories/2025/april/maltas-golden-passport-breaches-eu-law/", title: "Malta's golden passport breaches EU law", publisher: "Law Society Gazette (Ireland)", date: 2025-04-29, tier: 3}
+      - {url: "https://www.occrp.org/en/news/eu-court-rules-maltas-golden-passport-program-is-illegal", title: "EU court rules Malta's golden passport program is illegal", publisher: "OCCRP", date: 2025-04, tier: 3}
+
+  - to: RUS
+    layer: action
+    type: incident
+    summary: Greek-owned Malta-flagged tankers were sold to a Hanoi-based buyer for carrying sanctioned Russian crude and moved to the Panama register, which does not apply sanctions on Russian oil; Malta-flagged ships were also found at Novorossiysk.
+    since: '2025-02-07'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: B
+    sources:
+      - {url: "https://theshiftnews.com/2025/02/07/tankers-abandon-malta-register-to-join-russian-fleet-busting-oil-sanctions/", title: "Tankers abandon Malta register to join Russian fleet busting oil sanctions", publisher: "The Shift", date: 2025-02-07, tier: 3}
+
+  - to: RUS
+    layer: action
+    type: sanction
+    summary: Malta backs EU sanctions against shadow-fleet tankers carrying Russian oil, after first worrying about the effect on its maritime sector; Deputy PM Ian Borg says Malta has widened monitoring of vessel histories, cargoes and ownership and set up a Global Centre for Maritime Sanctions Monitoring. Both reports are undated; the since date is the date this card first recorded them.
+    since: '2026-10-12'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://maltatoday.com.mt/news/national/123636/malta_supports_sanctions_against_shadow_tankers_moving_russian_oil", title: "Malta supports sanctions against 'shadow' tankers moving Russian oil [undated]", publisher: "MaltaToday", date: 2026-10-12, tier: 3}
+      - {url: "https://www.italpress.com/malta-urges-tighter-action-on-russias-shadow-fleet/", title: "Malta urges tighter action on Russia's shadow fleet [undated]", publisher: "Italpress", date: 2026-10-12, tier: 3}
+
+  - to: UKR
+    layer: action
+    type: visit
+    summary: Malta hosted, in October 2023, the national-security-advisers' meeting on Ukraine's peace formula (about 65 countries, Russia absent). Malta gives non-lethal aid through the European Peace Facility and says it supports Ukraine within its constitutional neutrality. No 2025 peace summit hosted by Malta was found in the sources.
+    since: '2023-10-28'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: B
+    sources:
+      - {url: "https://www.malaymail.com/news/world/2023/10/28/ukraine-holds-peace-formula-talks-in-malta-russia-absent/98931", title: "Ukraine holds peace formula talks in Malta, Russia absent", publisher: "Malay Mail (AFP)", date: 2023-10-28, tier: 3}
+      - {url: "https://www.italpress.com/?p=595717", title: "Malta, Abela reaffirms Malta's solidarity with Ukraine [undated]", publisher: "Italpress", date: 2026-10-12, tier: 3}

@@ -1488,3 +1488,33 @@ relations:
     tier: 1
   to: XKX
   mirrored_from: XKX
+- layer: alignment
+  type: treaty
+  summary: 'Customs union with the EU since 1 July 1991 (exchange of letters of 28 June 1990): Andorra is treated as an EU state for trade in manufactured goods, not for agricultural produce.'
+  since: 1991-07-01
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:21990A1231(02)
+    title: Agreement in the form of an exchange of letters between the EEC and the Principality of Andorra (customs union)
+    publisher: EUR-Lex (Official Journal)
+    date: 1990-06-28
+    tier: 1
+  to: AND
+  mirrored_from: AND
+- layer: alignment
+  type: treaty
+  summary: Customs union with the EEC (the EU) in force since 1991; agricultural produce included since 2002.
+  since: '1991-12-16'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: http://ec.europa.eu/taxation_customs/customs/customs_duties/rules_origin/customs_unions/article_412_en.htm
+    title: 'Customs unions: San Marino'
+    publisher: European Commission
+    date: '1991-12-16'
+    tier: 1
+  to: SMR
+  mirrored_from: SMR

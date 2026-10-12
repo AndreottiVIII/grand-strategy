@@ -1,0 +1,112 @@
+from: MCO
+relations:
+  # ---------- objectives ----------
+  - to: FRA
+    layer: alignment
+    type: treaty
+    summary: Franco-Monegasque treaty of 24 Oct 2002 (in force 1 Dec 2005) - France ensures the defence of Monaco's independence and sovereignty and guarantees its territorial integrity; Monaco's action must accord with French fundamental interests.
+    since: '2005-12-01'
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://axl.cefan.ulaval.ca/europe/france-monaco-traite-2002.htm", title: "Franco-Monegasque treaty of 24 October 2002", publisher: "CEFAN, Universite Laval", date: "2002-10-24", tier: 2}
+      - {url: "https://www.elysee.fr/emmanuel-macron/2025/06/08/communique-conjoint-a-loccasion-de-la-visite-detat-du-president-de-la-republique-en-principaute-de-monaco", title: "Joint communique on the state visit to the Principality of Monaco (7-8 June 2025)", publisher: "Elysee", date: "2025-06-08", tier: 1}
+  - to: FRA
+    layer: alignment
+    type: security_guarantee
+    summary: Article 4 of the 2002 treaty lets French forces enter and stay on Monegasque territory at the Prince's request or with his agreement, for the security of both states.
+    since: '2005-12-01'
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://axl.cefan.ulaval.ca/europe/france-monaco-traite-2002.htm", title: "Franco-Monegasque treaty of 24 October 2002", publisher: "CEFAN, Universite Laval", date: "2002-10-24", tier: 2}
+  - to: org-eu
+    layer: objective
+    type: regime_goal
+    summary: Keep the residence and work model out of the EU four-freedoms mandate - the red lines protecting nationals' and residents' living, working and housing conditions. Talks on an Association Agreement (begun 2015) were suspended in September 2023.
+    since: '2023-09-14'
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.hellomonaco.com/news/latest-news/brussels-monaco-and-the-eu-suspend-negotiations-for-an-association-agreement/", title: "Brussels: Monaco and the EU suspend negotiations for an Association Agreement", publisher: "HelloMonaco", date: "2023-09-14", tier: 3}
+      - {url: "https://www.monaco-tribune.com/2023/09/les-negociations-entre-monaco-et-lunion-europeenne-sont-suspendues/", title: "Negotiations between Monaco and the EU are suspended", title_original: "Les negociations entre Monaco et l'Union europeenne sont suspendues", lang: fr, publisher: "Monaco Tribune", date: "2023-09", tier: 3}
+  - to: org-fatf
+    layer: objective
+    type: influence_goal
+    summary: Exit the FATF grey list (listed 28 Jun 2024) to keep the banking and wealth-management franchise. The June 2026 removal target was missed; reports point to a decision at the October 2026 plenary, not yet taken.
+    since: '2024-06-28'
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.wealthbriefing.com/html/article.php/fatf-may-remove-monaco-from-%22grey-list%22--report-", title: "FATF may remove Monaco from grey list - report", publisher: "WealthBriefing", date: "2026-09-16", tier: 3}
+      - {url: "https://www.hellomonaco.com/news/latest-news/monaco-advances-in-measured-steps-toward-fatf-grey-list-removal-following-positive-review/", title: "Monaco Advances in Measured Steps Toward FATF Grey List Removal Following Positive Review", publisher: "HelloMonaco", date: "2025-06", tier: 3}
+
+  # ---------- dependencies ----------
+  - to: ITA
+    layer: dependency
+    type: trade_share
+    value: 0.2
+    unit: share_of_monegasque_trade
+    summary: "Italy is Monaco's leading customer and supplier, with more than a fifth of Monegasque trade (the value 0.2 is a floor, as the source says more than a fifth)."
+    since: '2025'
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://monacolife.net/interview-ambassador-manuela-ruosi-on-strengthening-monaco-italy-relations-and-the-italian-community", title: "Interview: Ambassador Manuela Ruosi on strengthening Monaco-Italy relations and the Italian community", publisher: "Monaco Life", date: "2025", tier: 3}
+
+  # ---------- dated actions 2022-2026 ----------
+  - to: RUS
+    layer: action
+    type: sanction
+    summary: After the invasion of Ukraine Monaco follows the EU list and freezes assets of certain Russians; the number of Monegasque-targeted nationals is kept confidential and seizures were under consideration.
+    since: '2022-03'
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.monaco-tribune.com/en/2022/03/ukraine-pierre-dartout-confirms-assets-frozen-for-some-russian-nationals/", title: "Ukraine: Pierre Dartout confirms assets frozen for some Russian nationals", publisher: "Monaco Tribune", date: "2022-03", tier: 3}
+  - to: org-eu
+    layer: action
+    type: agreement
+    summary: Monaco and the Commission suspend the Association Agreement negotiations (14 Sep 2023 per most reports; a 2026 Council document corrects an earlier 17 Sep reference). Both sides agree the mandate cannot meet the residents' conditions.
+    since: '2023-09-14'
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.hellomonaco.com/news/latest-news/brussels-monaco-and-the-eu-suspend-negotiations-for-an-association-agreement/", title: "Brussels: Monaco and the EU suspend negotiations for an Association Agreement", publisher: "HelloMonaco", date: "2023-09-14", tier: 3}
+  - to: org-fatf
+    layer: action
+    type: incident
+    summary: FATF adds Monaco (and Venezuela) to the grey list on 28 Jun 2024 for weak action against laundering of overseas-fraud proceeds and too few asset seizures; a June 2025 joint FATF-MONEYVAL review found progress.
+    since: '2024-06-28'
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.scb.gov.bs/wp-content/uploads/2024/07/Financial-Action-Task-Force-Public-Statement-on-list-of-Jurisdictions-under-Increased-Monitoring-28-June-2024.pdf", title: "FATF Public Statement on list of Jurisdictions under Increased Monitoring, 28 June 2024", publisher: "FATF (copy hosted by The Bahamas Securities Commission)", date: "2024-06-28", tier: 1}
+  - to: FRA
+    layer: action
+    type: visit
+    summary: State visit of President Macron to Monaco on 7-8 Jun 2025, the first French state visit since 1984; the two states adopt a joint declaration on the ocean and reaffirm the community of destiny.
+    since: '2025-06-08'
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.elysee.fr/emmanuel-macron/2025/06/08/communique-conjoint-a-loccasion-de-la-visite-detat-du-president-de-la-republique-en-principaute-de-monaco", title: "Joint communique on the state visit to the Principality of Monaco (7-8 June 2025)", publisher: "Elysee", date: "2025-06-08", tier: 1}
+  - to: ITA
+    layer: action
+    type: visit
+    summary: Italian Foreign Minister Antonio Tajani visits Monaco in February 2025; the two ministers welcome the excellent bilateral relations and the size of the Italian community.
+    since: '2025-02'
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.gouv.mc/en/news/visit-from-mr-antonio-tajani-vice-president-of-the-council-of-ministers-and-italy-s-minister-of-foreign-affairs-and-international-cooperation", title: "Visit from Antonio Tajani, Vice-President of the Council of Ministers and Italy's Minister of Foreign Affairs", publisher: "Government of Monaco", date: "2025-02", tier: 1}

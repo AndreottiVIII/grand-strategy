@@ -8,7 +8,77 @@ coords:
 - 35.9
 seat: Valletta
 regions:
-- world
-card: stub
+- western-south-europe
+card: full
 tier: minor
 dataset: wikidata
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the maritime economy running - the ship register (the largest register in the EU, about sixth worldwide by its own count) and the gaming sector (EUR 1.42bn of gross value added in 2025, 6.3% of the economy) - while EU sanctions and citizenship rules tighten around both."
+      confidence: B
+      sources:
+        - {url: "https://sigma.world/news/malta-gaming-sector-1-42bn-6-3-economy/", title: "Malta gaming sector EUR 1.42bn, 6.3% of the economy (MGA 2025 annual report)", publisher: "SiGMA", date: 2026, tier: 3}
+        - {url: "https://kpmg.com/mt/en/industries/shipping-and-yachting/vessel-registration-in-malta.html", title: "Vessel registration in Malta [undated]", publisher: "KPMG Malta", date: 2026-10-12, tier: 3}
+    - rank: 2
+      text: "Keep constitutional neutrality while taking EU money: no foreign military bases, non-lethal contributions only to the European Peace Facility, and no borrowing to buy weapons of war, even inside the EU defence package."
+      confidence: A
+      sources:
+        - {url: "https://www.maltatoday.com.mt/news/national/134302/neutrality_explained_breaking_down_the_constitution_in_bitesize_pieces", title: "Neutrality explained: breaking down the Constitution in bite-size pieces [undated]", publisher: "MaltaToday", date: 2026-10-12, tier: 3}
+        - {url: "https://www.maltatoday.com.mt/news/national/137882/abela_malta_supports_eu_military_readiness_but_without_compromising_neutrality_", title: "Abela: Malta supports EU military readiness but without compromising neutrality [undated]", publisher: "MaltaToday", date: 2026-10-12, tier: 3}
+        - {url: "https://maltatoday.com.mt/news/national/128266/neutrality_adequately_safeguarded_state_advocate_tells_government_on_eu_defence_conclusions", title: "Neutrality 'adequately safeguarded', State Advocate tells government on EU defence conclusions [undated]", publisher: "MaltaToday", date: 2026-10-12, tier: 3}
+    - rank: 3
+      text: "Manage the Libyan file by negotiation: the maritime border (talks agreed in Valletta in September 2025) and irregular migration (the 2020 coordination memorandum), without conceding Tripoli's unilateral claim to its outer limits."
+      confidence: B
+      sources:
+        - {url: "https://northafricapost.com/?p=90492", title: "Libya and Malta to open talks on maritime borders, migration, regional stability", publisher: "North Africa Post", date: 2025-09-10, tier: 3}
+        - {url: "https://www.statewatch.org/news/2020/jun/malta-libya-mou-immigration.pdf", title: "Malta-Libya memorandum of understanding on migration (2020)", publisher: "Statewatch", date: 2020, tier: 1}
+
+  means:
+    - domain: diplomatic
+      text: "Chaired the OSCE in 2024 as a late compromise candidate, after Estonia's accession was vetoed by Russia and Belarus; offers to host warring parties (Abela at the UN General Assembly, 2025). The office gives Malta a seat at tables where its size would otherwise exclude it."
+      confidence: B
+      sources:
+        - {url: "https://osce.org/chairpersonship/561403", title: "Malta takes over OSCE Chair", publisher: "OSCE", date: 2024-01-01, tier: 1}
+        - {url: "https://news.err.ee/1609183132/malta-confirmed-as-osce-chair-nation-for-2024", title: "Malta confirmed as OSCE chair nation for 2024 [undated]", publisher: "ERR", date: 2026-10-12, tier: 3}
+        - {url: "https://www.italpress.com/?p=583469", title: "Malta offers to host warring parties for peace talks", publisher: "Italpress", date: 2025, tier: 3}
+    - domain: economic
+      text: "The ship register and the gaming licences are exported services, not production: Malta sells a flag and a licence. Chinese capital holds a stake in Malta Freeport, the transhipment port, held by China Merchants Port Holdings."
+      confidence: B
+      sources:
+        - {url: "https://www.bairdmaritime.com/amp/story/shipping/ports/china-looks-to-expand-influence-in-maltas-shipping-sector", title: "China looks to expand influence in Malta's shipping sector [undated]", publisher: "Baird Maritime", date: 2026-10-12, tier: 3}
+        - {url: "https://sigma.world/news/malta-gaming-sector-1-42bn-6-3-economy/", title: "Malta gaming sector EUR 1.42bn, 6.3% of the economy (MGA 2025 annual report)", publisher: "SiGMA", date: 2026, tier: 3}
+    - domain: military
+      text: "No armed forces of consequence. Malta's security rests on neutrality, on EU and Commonwealth partnerships (UK bilateral framework on defence and migration, 2023), and on non-lethal support to Ukraine through the European Peace Facility."
+      confidence: C
+      sources:
+        - {url: "https://www.reuters.com/world/europe/britain-malta-sign-deal-covering-defence-migration-2023-02-10/", title: "Britain, Malta sign deal covering defence, migration", publisher: "Reuters", date: 2023-02-10, tier: 3}
+        - {url: "https://www.maltatoday.com.mt/news/national/137882/abela_malta_supports_eu_military_readiness_but_without_compromising_neutrality_", title: "Abela: Malta supports EU military readiness but without compromising neutrality [undated]", publisher: "MaltaToday", date: 2026-10-12, tier: 3}
+
+  constraints:
+    - confidence: A
+      text: "The Constitution forbids foreign military bases on Maltese territory and makes neutrality a condition of any defence cooperation; a SOFA with the United States would need a two-thirds parliamentary majority."
+      sources:
+        - {url: "https://www.maltatoday.com.mt/news/national/134302/neutrality_explained_breaking_down_the_constitution_in_bitesize_pieces", title: "Neutrality explained: breaking down the Constitution in bite-size pieces [undated]", publisher: "MaltaToday", date: 2026-10-12, tier: 3}
+        - {url: "https://www.lovinmalta.com/news/ominous-fleet-of-american-aircraft-arrives-in-malta-raising-questions-over-major-us-presence/", title: "Ominous fleet of American aircraft arrives in Malta raising questions over major US presence [undated]", publisher: "Lovin Malta", date: 2026-10-12, tier: 4}
+    - confidence: B
+      text: "Energy: no gas pipeline yet. LNG via a floating unit at Delimara under a contract that ran to 2026, and partial reliance on electricity from Italy; the pipeline to Gela and a second cable were still planned."
+      sources:
+        - {url: "https://www.maltatoday.com.mt/news/national/118066/watch_lng_supply_secured_until_2026_energy_minister_says", title: "LNG supply secured until 2026, Energy Minister says", publisher: "MaltaToday", date: 2022, tier: 3}
+        - {url: "https://trade.gov/country-commercial-guides/malta-energy", title: "Malta Country Commercial Guide - energy [undated]", publisher: "US International Trade Administration", date: 2026-10-12, tier: 1}
+    - confidence: A
+      text: "EU law now binds citizenship and sanctions. The CJEU ruled on 29 April 2025 (Commission v Malta, C-181/23) that the investor citizenship scheme commercialises Union citizenship and breaches EU law; the Commission can seek fines if it is not brought into line."
+      sources:
+        - {url: "https://www.lawsociety.ie/gazette/top-stories/2025/april/maltas-golden-passport-breaches-eu-law/", title: "Malta's golden passport breaches EU law", publisher: "Law Society Gazette (Ireland)", date: 2025-04-29, tier: 3}
+        - {url: "https://www.occrp.org/en/news/eu-court-rules-maltas-golden-passport-program-is-illegal", title: "EU court rules Malta's golden passport program is illegal", publisher: "OCCRP", date: 2025-04, tier: 3}
+
+  paradoxes:
+    - confidence: C
+      text: "The register and the gaming licences that make Malta rich also carry the risks the EU now forces it to police: Malta-flagged tankers sold to a buyer in Hanoi and moved to the Panama register to carry sanctioned Russian crude, which damages Malta's reputation as a flag state."
+      sources:
+        - {url: "https://theshiftnews.com/2025/02/07/tankers-abandon-malta-register-to-join-russian-fleet-busting-oil-sanctions/", title: "Tankers abandon Malta register to join Russian fleet busting oil sanctions", publisher: "The Shift", date: 2025-02-07, tier: 3}
+
+  reading: |
+    Malta sells a flag, a licence and a harbour, and its grand strategy is to keep the EU's structure around those sales while refusing to be a military ally. Neutrality makes it useful as a host of talks and a Chair of the OSCE, and gives it a reason to stay out of the EU defence money; the Libyan maritime file and the Italian energy link matter more to it than any great power. The 2025 CJEU ruling on citizenship and the shadow-fleet reputation problem show the price of selling instruments of the state. Malta recognised Palestine on 22 September 2025 (recorded in the recognition dataset, not repeated here), a stance that sits with the EU line rather than against it.

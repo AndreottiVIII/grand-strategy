@@ -8,7 +8,125 @@ coords:
 - 43.93
 seat: San Marino
 regions:
-- world
-card: stub
+- western-south-europe
+card: full
 tier: minor
+last_verified: '2026-10-12'
 dataset: wikidata
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: Keep formal independence inside Italy's embrace. The 1939 Convention of Friendship and Good Neighbourhood, the EEC customs union of 1991 and the euro monetary agreement tie the state to Italy
+      and the EU; survival as a sovereign micro-state depends on that framework holding.
+    confidence: B
+    sources:
+    - url: https://prefettura.interno.gov.it/sites/default/files/16/2024-06/convenzione_italia-san_marino_1939_-dati-.pdf
+      title: Convention Italy-San Marino 1939 (data sheet)
+      publisher: Italian Interior Ministry, Prefettura
+      date: 2024-06
+      tier: 1
+    - url: https://www.esteri.it/en/sala_stampa/archivionotizie/comunicati/2026/07/accordo-di-associazione-ue-san-marino-litalia-accoglie-con-favore-il-via-libera-del-consiglio-dellunione-europea/
+      title: 'EU Association Agreement: Italy welcomes the Council green light'
+      publisher: Italian Ministry of Foreign Affairs
+      date: '2026-07-16'
+      tier: 1
+  - rank: 2
+    text: Secure access to the EU single market and its financial sector through the Association Agreement, without full EU membership. Negotiations concluded December 2023; the Council authorised signature
+      on 16 July 2026; signing is scheduled for 19 October 2026 in Brussels and the Council conclusion still needs European Parliament consent.
+    confidence: A
+    sources:
+    - url: https://ec.europa.eu/commission/presscorner/detail/en/ip_23_6522
+      title: Commission concludes negotiations on Association Agreements with Andorra and San Marino
+      publisher: European Commission
+      date: 2023-12
+      tier: 1
+    - url: https://www.eeas.europa.eu/delegations/un-rome/towards-association-agreement-san-marino-and-andorra_en
+      title: Towards the Association Agreement with San Marino and Andorra
+      publisher: EU Delegation to the UN Rome (EEAS)
+      date: '2026'
+      tier: 1
+  - rank: 3
+    text: 'Keep the financial centre viable under EU and Italian pressure: finish the banking reform the IMF has recognised as under way, win the dialogue with the ECB and Bank of Italy the Association
+      Agreement requires, and attract qualified investors to a sector still short of capital and efficiency.'
+    confidence: B
+    sources:
+    - url: https://www.imf.org/en/News/Articles/2025/09/26/cs-092625-san-marino-staff-concluding-statement-of-the-2025-article-iv-mission
+      title: 'San Marino: Staff Concluding Statement of the 2025 Article IV Mission'
+      publisher: IMF
+      date: '2025-09-26'
+      tier: 1
+  means:
+  - domain: diplomatic
+    text: Diplomacy through the Captains Regent, two joint heads of state with a reciprocal veto and no executive power, who represent the country and guarantee the constitutional order (Wikipedia Captains
+      Regent, tier 4 pointer).
+    confidence: C
+    sources:
+    - url: https://en.wikipedia.org/wiki/Captains_Regent
+      title: Captains Regent
+      publisher: Wikipedia
+      date: '2026'
+      tier: 4
+  - domain: economic
+    text: 'Economic instruments that are not sovereign tools: the 1991 customs union with the EEC and the euro arrangement with Italian and EU monetary rules. They give access to the single market and cost
+      the state its own currency and trade policy.'
+    confidence: C
+    sources:
+    - &id001
+      url: https://www.eeas.europa.eu/delegations/un-rome/towards-association-agreement-san-marino-and-andorra_en
+      title: Towards the Association Agreement with San Marino and Andorra
+      publisher: EU Delegation to the UN Rome (EEAS)
+      date: '2026'
+      tier: 1
+  - domain: economic
+    text: A banking and financial sector that is the main source of revenue and the main point of pressure. The IMF finds the reforms of recent years have cut legacy vulnerabilities but profitability remains
+      below regional peers.
+    confidence: C
+    sources:
+    - url: https://www.imf.org/en/news/articles/2024/12/09/pr24456-san-marino-imf-executive-board-concludes-2024-article-iv-consult
+      title: IMF Executive Board concludes 2024 Article IV consultation with San Marino
+      publisher: IMF
+      date: '2024-12-09'
+      tier: 1
+  constraints:
+  - text: 'Geography: San Marino is entirely surrounded by Italy and has no coastline, so Italy is the route for trade, transport and people (Wikipedia Italy-San Marino relations, tier 4).'
+    confidence: C
+    sources:
+    - url: https://en.wikipedia.org/wiki/Italy%E2%80%93San_Marino_relations
+      title: Italy-San Marino relations
+      publisher: Wikipedia
+      date: '2026'
+      tier: 4
+  - text: 'Scale and capacity: the Commission already judged in 2013 that EU membership was not adapted to states this small, and Norway questioned their administrative capacity for EEA membership (Wikipedia
+      EU relations, tier 4 pointer).'
+    confidence: C
+    sources:
+    - url: https://en.wikipedia.org/wiki/San_Marino%E2%80%93European_Union_relations
+      title: San Marino-European Union relations
+      publisher: Wikipedia
+      date: '2026'
+      tier: 4
+  - text: 'Ratification: the Association Agreement has mixed competences, so it needs the European Parliament and the national parliaments as well as the Grand and General Council, and the timetable depends
+      on them.'
+    confidence: C
+    sources:
+    - *id001
+  paradoxes:
+  - text: The financial centre that earned the state its revenue is also what Italy and the EU target. The Association Agreement opens the financial sector only in phases and only after an assessment of
+      the regulatory and supervisory framework, so the reforms needed to keep the sector are the ones that limit the secrecy it has traded on.
+    sources:
+    - url: https://www.eeas.europa.eu/delegations/un-rome/towards-association-agreement-san-marino-and-andorra_en
+      title: Towards the Association Agreement with San Marino and Andorra
+      publisher: EU Delegation to the UN Rome (EEAS)
+      date: '2026'
+      tier: 1
+    - url: https://www.imf.org/en/news/articles/2024/12/09/pr24456-san-marino-imf-executive-board-concludes-2024-article-iv-consult
+      title: IMF Executive Board concludes 2024 Article IV consultation with San Marino
+      publisher: IMF
+      date: '2024-12-09'
+      tier: 1
+    confidence: C
+  reading: 'San Marino has no currency of its own and no independent trade policy, since the euro and the customs union bind it to Italian and EU rules. Its grand strategy is to keep the Italian and EU
+    frameworks that guarantee its existence while turning its financial sector from a source of distinction into a regulated market. The Captains Regent speak for the state and the Secretariat carries the
+    work. Its most important move, the Association Agreement, has been concluded but is not yet signed or ratified, so the reading of the 2026 steps stays provisional.
+
+    '

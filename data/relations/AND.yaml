@@ -1,0 +1,142 @@
+from: AND
+relations:
+  # ---------- objective ----------
+  - to: org-eu
+    layer: objective
+    type: influence_goal
+    summary: Conclude the Association Agreement, which would give Andorra single-market access (goods, services and the financial sector) without EU membership. The Council authorised signing on 16 July 2026; signing is expected in late September 2026, after which the European Parliament must consent and a referendum is planned.
+    since: 2015-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.eunews.it/en/2026/07/16/andorra-and-san-marino-move-closer-the-eu-council-signs-the-association-agreement/", title: "Andorra and San Marino move closer to the EU: Council signs the association agreement", publisher: "EUNEWS", date: 2026-07-16, tier: 3}
+      - {url: "https://ec.europa.eu/commission/presscorner/detail/en/IP_24_2286", title: "Commission proposes Association Agreement with Andorra and San Marino to the Council", publisher: "European Commission", date: 2024-04-26, tier: 1}
+      - {url: "https://www.eltriangle.eu/es/2024/11/16/andorra-hara-un-referendum-sobre-el-texto-del-acuerdo-de-asociacion-con-la-ue/", title: "Andorra will hold a referendum on the text of the EU association agreement", publisher: "El Triangle", date: 2024-11-16, tier: 3}
+  - to: USA
+    layer: objective
+    type: influence_goal
+    summary: Keep correspondent banking and regulatory access to the United States for the banks. Inferred from the 2015 FinCEN action against Banca Privada d'Andorra, which alleged that hundreds of millions of dollars had passed through four US banks; no government statement of this goal was found.
+    since: 2015-03-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.occrp.org/en/news/andorra-authorities-take-over-bank-in-money-laundering-storm", title: "Andorra: authorities take over bank in money laundering storm", publisher: "OCCRP", date: 2015-03, tier: 3}
+      - {url: "https://www.legaltoday.com/rincon-de-reuters/andorra-interviene-banca-privada-de-andorra-por-denuncias-de-eeuu-2015-03-11/", title: "Andorra interviene Banca Privada de Andorra por denuncias de EEUU (Reuters, in Spanish)", publisher: "Reuters via Legal Today", date: 2015-03-11, tier: 3, title_original: "Andorra interviene Banca Privada de Andorra por denuncias de EEUU", lang: es}
+
+  # ---------- alignment ----------
+  - to: org-eu
+    layer: alignment
+    type: treaty
+    summary: "Customs union with the EU since 1 July 1991 (exchange of letters of 28 June 1990): Andorra is treated as an EU state for trade in manufactured goods, not for agricultural produce."
+    since: 1991-07-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:21990A1231(02)", title: "Agreement in the form of an exchange of letters between the EEC and the Principality of Andorra (customs union)", publisher: "EUR-Lex (Official Journal)", date: 1990-06-28, tier: 1}
+  - to: org-eu
+    layer: alignment
+    type: treaty
+    summary: Monetary agreement that lets Andorra use the euro as its official currency and issue its own euro coins; signed 2011, in force since 2012.
+    since: 2012-01-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011A1217(01)-20260324", title: "Monetary Agreement between the European Union and the Principality of Andorra", publisher: "EUR-Lex", date: 2011-12-17, tier: 1}
+  - to: FRA
+    layer: alignment
+    type: treaty
+    summary: Treaty of Good Neighbourliness, Friendship and Cooperation (1993) signed with France and Spain together. France and Spain undertake to respect Andorra's sovereignty, independence and territorial integrity; France is the second co-prince under the constitution.
+    since: 1993-06-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    note: "One treaty with two parties (France and Spain); the row is written from Andorra's side toward France and names Spain in the summary."
+    sources:
+      - {url: "https://www.boe.es/eli/es/ai/1993/06/03/(1)", title: "Treaty of Good Neighbourliness, Friendship and Cooperation between the Kingdom of Spain, the French Republic and the Principality of Andorra", publisher: "Boletin Oficial del Estado", date: 1993, tier: 1}
+      - {url: "https://www.consellgeneral.ad/fitxers/documents/constitucio/const-en", title: "Constitution of the Principality of Andorra", publisher: "General Council of Andorra", date: 1993, tier: 1}
+
+  # ---------- dependency ----------
+  - to: ESP
+    layer: dependency
+    type: trade_share
+    summary: Spain supplies about 58 percent of Andorran imports, the dominant supplier, with imports at a record EUR 1,997m in 2025.
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    value: 0.58
+    unit: share_of_imports
+    note: "Share 58 percent (EUR 1,158m) from Andorran statistics as reported in the press. A separate goods-imports figure of EUR 1,994m for 2025 is reported, a difference of scope; the 58 percent is unaffected. Spain's share fell 1.1 points from 59.1 percent in 2024."
+    sources:
+      - {url: "https://www.alto.ad/business/andorra-s-imports-hit-record-1-997m-in-2025-260222", title: "Andorra's imports hit record EUR 1,997m in 2025 (Spain 58 percent, from Andorran statistics)", publisher: "Alto Andorra (citing the Institut d'Estadistica d'Andorra)", date: 2026-02-22, tier: 3}
+  - to: FRA
+    layer: dependency
+    type: trade_share
+    summary: France supplies about 9.9 percent of Andorran imports (EUR 198m in 2025), the second supplier, and its share has fallen steadily since the 1990s.
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    value: 0.099
+    unit: share_of_imports
+    note: "France's share was 10.8 percent in 2023 and 9.9 in 2025. Reasons given in the press: Spain's integration into the European market and winter closures of French roads."
+    sources:
+      - {url: "https://www.alto.ad/business/andorra-s-imports-hit-record-1-997m-in-2025-260222", title: "Andorra's imports hit record EUR 1,997m in 2025 (Spain 58 percent, from Andorran statistics)", publisher: "Alto Andorra (citing the Institut d'Estadistica d'Andorra)", date: 2026-02-22, tier: 3}
+
+  # ---------- action ----------
+  - to: RUS
+    layer: action
+    type: sanction
+    summary: Andorra joins the EU sanctions against Russia by government decree, after first drafting a legal basis because its law then allowed freezing assets only under a court order or on money-laundering grounds.
+    since: 2022
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.elperiodic.ad/documents/revistes/periodicnews_03_03-1.pdf", title: "El Periodic (English edition), account of Andorra joining the 2022 sanctions", publisher: "El Periodic d'Andorra", date: 2022, tier: 3}
+  - to: RUS
+    layer: action
+    type: sanction
+    summary: Decree of 22 May 2026 incorporates the EU 19th and 20th sanctions packages; the annexes list 2,469 persons and 1,636 entities, and extend to payment systems, cryptoassets, special economic zones and LNG services.
+    since: 2026-05-22
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.alto.ad/politics/andorra-eu-russia-sanctions-ukraine-war-260522", title: "Andorra approves EU's 19th and 20th sanctions packages against Russia", publisher: "Alto Andorra", date: 2026-05-22, tier: 3}
+      - {url: "https://www.alto.ad/politics/2026/05/andorra-eu-russia-sanctions-ukraine-war", title: "Andorra approves EU's latest sanctions expanding Russia blacklist to 2,469 individuals", publisher: "Alto Andorra", date: 2026-05, tier: 3}
+  - to: UKR
+    layer: action
+    type: agreement
+    summary: Voluntary contribution of EUR 10,000 to the Council of Europe Action Plan for Ukraine (Resilience, Recovery and Reconstruction 2023-2026), agreement signed 10 June 2025. No direct grant to the Ukrainian government was found in the sources read.
+    since: 2025-06-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.coe.int/en/web/programmes/-/andorra-funds-council-of-europe-action-plan-for-ukraine", title: "Andorra funds Council of Europe Action Plan for Ukraine", publisher: "Council of Europe", date: 2025-06-10, tier: 1}
+  - to: org-eu
+    layer: action
+    type: agreement
+    summary: Council authorises the signing of the Association Agreement with Andorra and San Marino (16 July 2026); signing is expected in late September 2026, and the European Parliament must then consent.
+    since: 2026-07-16
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.eunews.it/en/2026/07/16/andorra-and-san-marino-move-closer-the-eu-council-signs-the-association-agreement/", title: "Andorra and San Marino move closer to the EU: Council signs the association agreement", publisher: "EUNEWS", date: 2026-07-16, tier: 3}
+  - to: org-eu
+    layer: action
+    type: agreement
+    summary: Commission proposes to the Council the signing and provisional application of the separate agreement on border controls with Andorra (no checks between Andorra and the Schengen area), the product of the negotiation mandate of 30 May 2024.
+    since: 2026-09-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026PC0445&qid=1785109850759", title: "Proposal for a Council Decision on the signing and provisional application of the Agreement between the European Union and Andorra on border controls", publisher: "EUR-Lex", date: 2026-09-07, tier: 1}
+      - {url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202401693", title: "Council Decision (EU) 2024/1693 of 30 May 2024 authorising the opening of negotiations for an agreement between the EU and Andorra on border controls", publisher: "EUR-Lex", date: 2024-05-30, tier: 1}
