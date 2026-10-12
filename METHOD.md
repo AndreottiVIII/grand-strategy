@@ -51,6 +51,15 @@ East, then the great powers, then the rest. Davide decides when a region is done
 Target cost: protagonist ~150k tokens, secondary ~70k, minor ~30k. Measured on Kosovo
 before being believed.
 
+## Wikipedia and Wikidata: where we stand (2026-10-12)
+
+Done, zero tokens: Wikidata states and memberships; Wikipedia recognition tables for
+Kosovo, Palestine, Taiwan (fact + underlying citation). Not yet used: the thousands of
+"X–Y relations" pages. Plan: a script lists, for every actor, its bilateral pages with
+size and link (a salience index of pairs, and the reading list for the agent), then the
+economical model extracts dated facts with their citations. Wikidata still to mine:
+diplomatic relations (P530), territorial claims (P1336), heads of government.
+
 ## Sources in other languages
 
 Yes. An official document in Serbian outranks an English article summarising it. The

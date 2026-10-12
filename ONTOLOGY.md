@@ -116,6 +116,12 @@ mean opposite things. `bond` records the standing tie, which changes over decade
 | `affinity` | sympathy without kinship | Hungary, China |
 | `none` | pure interest, nothing underneath | UAE, Azerbaijan |
 | `grievance` | an open historical wound | United States and NATO (1999), Croatia, Kosovo |
+| `unknown` | not assessed; allowed only on dataset-derived stances | treaty allies generated from alliance memberships |
+
+**Dataset-derived stances.** The build generates `ally` stances between co-members of a
+defence alliance (NATO Art. 5, CSTO Art. 4, EU Art. 42(7)), confidence A, bond
+`unknown`, flagged `dataset`. They are the floor, not the reading: a hand-written
+stance for the same pair always replaces them. No other grade is ever derived.
 
 Posture and bond are independent: Russia is partner + kin (cooling), the United
 States partner + grievance (warming), Montenegro rival + kin. On the map the posture
@@ -206,6 +212,21 @@ dependency rows carry a value and a unit. The site never reads YAML directly.
    but there is no row type for an absence. It goes in the card's `reading`.
 7. **Stubs.** An actor can exist as a stub (id, name, type, seat, coords, regions) so
    that others can relate to it before it has a card. The site shows stubs greyed.
+
+## Dataset layers (2026-10-12)
+
+Some evidence covers every actor at once and enters without an agent:
+
+| dataset | script | produces |
+|---|---|---|
+| Wikidata states | `tools/datasets/wikidata.py` | one stub per sovereign state (flag code, seat, coords, Wikipedia) |
+| Wikidata memberships | same | `membership` rows toward 22 organisations, citing the official member list |
+| UNGA recorded votes | `tools/datasets/unga_page.js` run in the browser pane | `un_vote` rows for the landmark resolutions in `unga-landmarks.yaml`; a 193x193 voting-affinity matrix |
+| Wikipedia recognition | `tools/datasets/recognition.py` | `recognition` / `non_recognition` rows toward Kosovo, Palestine, Taiwan, with the citation under each Wikipedia row as the source |
+| derived allies | `tools/build.py` | `ally` stances between alliance co-members |
+
+Rule for Wikipedia: it is the index, never the source of record. A fact is taken with
+the citation under it; where Wikipedia is the only source the row says so (tier 4).
 
 ## Lessons from the first review (Davide, 2026-10-12, same day)
 

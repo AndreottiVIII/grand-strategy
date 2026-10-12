@@ -3,6 +3,18 @@
 Decision log, newest first. The path matters more than the destination: record why,
 not only what. Dead ends are entries too.
 
+## 2026-10-12 · World-scale test, second pass
+
+- 2025 votes in (downloaded from the browser pane with Davide's permission): 322
+  recorded votes 2024-26. 2023 harvested, 2022 in progress.
+- Recognition pass from Wikipedia: Kosovo 110 (8 withdrawn), Palestine 157, Taiwan 11
+  + Holy See; 576 rows; the Kosovo rows carry 109 original citations. Wikipedia's
+  three-letter templates are IOC codes, not ISO - mapped.
+- Derived stances: 1,103 `ally` between NATO, CSTO and EU co-members, bond `unknown`,
+  dataset-flagged, replaced by any hand-written stance. The posture lens now lights up
+  for about 60 countries with treaty allies in green and nothing else: the floor.
+- 220 actors, 1,121 stances, 2,849 relations. Still zero research tokens.
+
 ## 2026-10-12 · World-scale test with datasets only
 
 Davide: "start from Wikipedia, UN in parallel, and let's see how much of the world we

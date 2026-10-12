@@ -24,7 +24,7 @@ GRADES = [
     "reluctant_partner", "neutral", "rival", "adversary",
 ]
 TRENDS = {"warming", "stable", "cooling"}
-BONDS = {"kin", "affinity", "none", "grievance"}
+BONDS = {"kin", "affinity", "none", "grievance", "unknown"}   # unknown only on dataset-derived stances
 FRIENDLY = {"ally", "reluctant_ally", "partner"}
 HOSTILE = {"adversary", "claimed_territory"}
 BINDING = {"treaty", "membership", "security_guarantee"}
@@ -280,6 +280,34 @@ def main():
     for r in unga_rows:
         r["stale"] = False
     rows.extend(unga_rows)
+
+    # --- derived stances: co-members of a defence alliance are treaty allies (dataset, bond unknown)
+    ALLIANCES = {
+        "org-nato": ("NATO", "Article 5 of the North Atlantic Treaty", "https://www.nato.int/cps/en/natohq/official_texts_17120.htm"),
+        "org-csto": ("CSTO", "Article 4 of the Collective Security Treaty", "https://en.odkb-csto.org/documents/documents/dogovor_o_kollektivnoy_bezopasnosti/"),
+        "org-eu": ("EU", "Article 42(7) TEU (mutual assistance)", "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12016M042"),
+    }
+    members_of = {}
+    for rel in rows:
+        if rel["layer"] == "alignment" and rel["type"] == "membership" and rel["to"] in ALLIANCES:
+            members_of.setdefault(rel["to"], set()).add(rel["from"])
+    derived = 0
+    for org, (name, article, url) in ALLIANCES.items():
+        for a in members_of.get(org, ()):
+            existing = {st["toward"] for st in (stances.get(a) or {}).get("stances", [])}
+            for b in members_of[org]:
+                if a == b or b in existing:
+                    continue
+                st = {"toward": b, "grade": "ally", "trend": "stable", "bond": "unknown", "since": None, "last_verified": today.isoformat(),
+                      "confidence": "A", "dataset": "wikidata-memberships",
+                      "note": f"Treaty ally: both members of {name} ({article}). Posture and bond not assessed; this is the floor, not the reading.",
+                      "sources": [{"url": url, "title": article, "publisher": name, "date": today.isoformat(), "tier": 1, "dataset": "wikidata-memberships"}],
+                      "stale": False}
+                stances.setdefault(a, {"actor": a, "stances": []})["stances"].append(st)
+                existing.add(b)
+                derived += 1
+    if derived:
+        warnings.append(f"{derived} ally stances derived from alliance memberships (NATO, CSTO, EU)")
 
     # --- structural checks (ONTOLOGY.md: the grade follows the structural position)
     grade = {(a, st["toward"]): st["grade"] for a, s in stances.items() for st in s.get("stances") or []}

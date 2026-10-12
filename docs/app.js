@@ -14,7 +14,7 @@
     reluctant_ally: "Reluctant ally", partner: "Partner", reluctant_partner: "Reluctant partner",
     neutral: "Neutral / no stance", rival: "Rival", adversary: "Adversary",
   };
-  const BOND_LABEL = { kin: "Kin - shared identity", affinity: "Affinity", none: "No standing tie", grievance: "Grievance - open wound" };
+  const BOND_LABEL = { kin: "Kin - shared identity", affinity: "Affinity", none: "No standing tie", grievance: "Grievance - open wound", unknown: "Bond not assessed" };
   const LAYER_LABEL = { objective: "Objectives", alignment: "Alignments", dependency: "Dependencies", action: "Actions" };
   const TREND = { warming: "warming", stable: "stable", cooling: "cooling" };
   const TREND_SIGN = { warming: "↗", stable: "→", cooling: "↘" };
@@ -45,8 +45,8 @@
   const grpFull = document.createElement("optgroup"); grpFull.label = "With a grand-strategy card";
   fullActors.forEach(a => grpFull.appendChild(new Option(`The world as ${a.name} sees it`, a.id)));
   povSel.appendChild(grpFull);
-  const grpData = document.createElement("optgroup"); grpData.label = "Data only (UN votes, memberships)";
-  data.actors.filter(a => a.card !== "full" && hasVotes(a.id)).sort((x, y) => x.name.localeCompare(y.name))
+  const grpData = document.createElement("optgroup"); grpData.label = "Data only (UN votes, memberships, treaty allies)";
+  data.actors.filter(a => a.card !== "full" && (hasVotes(a.id) || hasStances(a.id))).sort((x, y) => x.name.localeCompare(y.name))
     .forEach(a => grpData.appendChild(new Option(a.name, a.id)));
   povSel.appendChild(grpData);
   povSel.onchange = () => { if (povSel.value) setPov(povSel.value); else goHome(); };
@@ -176,7 +176,7 @@
       .style("cursor", f => actors[f.id] ? "pointer" : "default")
       .on("mousemove", (ev, f) => { tipFor(f.id, f.properties.name, ev); lightCard(f.id); })
       .on("mouseleave", () => { hideTip(); lightCard(null); })
-      .on("click", (ev, f) => { if (!actors[f.id]) return; if (!pov && (actors[f.id].card === "full" || hasVotes(f.id))) setPov(f.id); else showDossier(f.id); });
+      .on("click", (ev, f) => { if (!actors[f.id]) return; if (!pov && (actors[f.id].card === "full" || hasVotes(f.id) || hasStances(f.id))) setPov(f.id); else showDossier(f.id); });
     // posture screens over the stanced countries
     const aff = pov && lens === "votes" ? (unga.affinity[pov] || {}) : null;
     const screened = !pov ? [] : lens === "votes" ? world.features.filter(f => f.id === pov || aff[f.id] != null) : world.features.filter(f => f.id === pov || stanceOf(f.id));
