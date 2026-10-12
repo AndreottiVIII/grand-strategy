@@ -61,14 +61,14 @@
   const gradeOf = id => id === pov ? "own_territory" : (stanceOf(id) ? stanceOf(id).grade : "neutral");
 
   // CSS renderings of the same screens, for the legend and the dossier table
-  const FRAC = { ally: .72, reluctant_ally: .45, partner: .26, reluctant_partner: .12, rival: .3, adversary: .72 };
+  const FRAC = { ally: .85, reluctant_ally: .3, partner: .5, reluctant_partner: .15, rival: .25, adversary: .8 };
+  const INK = { ally: "var(--ink-c)", reluctant_ally: "var(--ink-c)", partner: "var(--ink-a)", reluctant_partner: "var(--ink-a)", rival: "var(--ink-b)", adversary: "var(--ink-b)" };
   function gradeSwatch(g) {
     if (g === "own_territory") return "var(--ink-a)";
     if (g === "claimed_territory") return "repeating-linear-gradient(45deg, var(--ink-b) 0 1.6px, transparent 1.6px 5px)";
     if (g === "neutral") return "var(--land)";
-    const ink = ["rival", "adversary"].includes(g) ? "var(--ink-b)" : "var(--ink-a)";
     const r = Math.sqrt(16 * FRAC[g] / Math.PI);
-    return `radial-gradient(${ink} ${r.toFixed(2)}px, transparent ${(r + .15).toFixed(2)}px) 0 0 / 4px 4px`;
+    return `radial-gradient(${INK[g]} ${r.toFixed(2)}px, transparent ${(r + .15).toFixed(2)}px) 0 0 / 4px 4px`;
   }
   function renderLegend() {
     const el = document.getElementById("legend");
@@ -100,9 +100,9 @@
     const ink = css("--ink-a"), sea = css("--paper"), land = css("--land");
 
     const defs = svg.append("defs");
-    const inkA = css("--ink-a"), inkB = css("--ink-b");
-    // posture = dot screen of one ink, denser is stronger. radius from the covered fraction on a 4-unit grid
-    const SCREEN = { ally: [inkA, .72], reluctant_ally: [inkA, .45], partner: [inkA, .26], reluctant_partner: [inkA, .12], rival: [inkB, .3], adversary: [inkB, .72] };
+    const inkA = css("--ink-a"), inkB = css("--ink-b"), inkC = css("--ink-c");
+    // posture = dot screen, one ink per side (green allies, navy partners, vermilion hostile), denser is stronger
+    const SCREEN = { ally: [inkC, .85], reluctant_ally: [inkC, .3], partner: [inkA, .5], reluctant_partner: [inkA, .15], rival: [inkB, .25], adversary: [inkB, .8] };
     Object.entries(SCREEN).forEach(([g, [color, frac]]) => {
       const r = Math.sqrt(16 * frac / Math.PI);
       defs.append("pattern").attr("id", "s-" + g).attr("width", 4).attr("height", 4).attr("patternUnits", "userSpaceOnUse")
@@ -169,7 +169,7 @@
     const nonState = data.actors.filter(a => !feature[a.id] && (a.id === pov || stanceOf(a.id)));
     seats.selectAll("rect").data(nonState).join("rect")
       .attr("x", a => proj(a.coords)[0] - 4).attr("y", a => proj(a.coords)[1] - 4).attr("width", 8).attr("height", 8)
-      .attr("fill", a => ["rival", "adversary", "claimed_territory"].includes(gradeOf(a.id)) ? inkB : gradeOf(a.id) === "neutral" ? land : inkA).attr("stroke", ink).attr("stroke-width", .8)
+      .attr("fill", a => { const g = gradeOf(a.id); return ["rival", "adversary", "claimed_territory"].includes(g) ? inkB : ["ally", "reluctant_ally"].includes(g) ? inkC : g === "neutral" ? land : inkA; }).attr("stroke", ink).attr("stroke-width", .8)
       .style("cursor", "pointer")
       .on("mousemove", (ev, a) => tipFor(a.id, a.name, ev)).on("mouseleave", hideTip).on("click", (ev, a) => showDossier(a.id));
 
@@ -220,7 +220,7 @@
     drawArrows();
 
     document.getElementById("map-note").innerHTML =
-      `<b>${actors[pov].name}</b> in solid navy. Dots are the posture, denser is stronger: navy for the friendly side, vermilion for the hostile; hatched = claimed, not controlled. A heavy outline is the bond: navy = kin, vermilion = grievance. Arrows run from ${actors[pov].name}'s seat to the counterpart, one per layer; several rows between the same pair share an arrow. Hover for the rows; click a country or seat for its dossier; scroll to zoom.`;
+      `<b>${actors[pov].name}</b> in solid navy. Dots are the posture, denser is stronger: green for allies, navy for partners, vermilion for the hostile side; hatched = claimed, not controlled. A heavy outline is the bond: navy = kin, vermilion = grievance. Arrows run from ${actors[pov].name}'s seat to the counterpart, one per layer; several rows between the same pair share an arrow. Hover for the rows; click a country or seat for its dossier; scroll to zoom.`;
   }
 
   function drawArrows() {

@@ -3,6 +3,14 @@
 Decision log, newest first. The path matters more than the destination: record why,
 not only what. Dead ends are entries too.
 
+## 2026-10-12 · Third ink
+
+Ally and reluctant ally at 72% and 45% navy looked the same in the legend. Four
+fixes compared (wider steps; lines for "reluctant"; a third ink). Davide chose the
+third ink: **green for allies, navy for partners, vermilion for the hostile side**,
+density still the strength within each. Traffic-light reading at a glance; the
+one-ink-per-side rule becomes one-ink-per-family. No fourth colour.
+
 ## 2026-10-12 · Second review: "not the Claude yellow everywhere"
 
 Davide on the paper-and-ink map: the cream palette is the default aesthetic, not an

@@ -1,10 +1,11 @@
-/* Grand Strategy - two-ink print: navy and vermilion on cold white. Posture = dot screen, bond = line screen underneath. */
+/* Grand Strategy - three-ink print on cold white: green for allies, navy for partners, vermilion for the hostile side. Posture = dot screen, denser is stronger. */
 :root {
   --paper: #f8f7f3;
   --paper-2: #f1f0ea;
   --land: #ebecf1;
   --ink-a: #1b2a5c;       /* navy */
   --ink-b: #e3452f;       /* vermilion */
+  --ink-c: #1f7a4d;       /* green: allies */
   --ink-ab: #4a1d4e;      /* overprint */
   --ink: #1b2a5c;
   --ink-2: #4a5478;
@@ -21,14 +22,14 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --paper: #12162a; --paper-2: #171c33; --land: #1c2240;
-    --ink-a: #b9c4f2; --ink-b: #ff6a4a; --ink-ab: #d9a0c8;
+    --ink-a: #b9c4f2; --ink-b: #ff6a4a; --ink-c: #5fbf8a; --ink-ab: #d9a0c8;
     --ink: #e6e9f5; --ink-2: #aeb6d6; --ink-3: #6f789c; --rule: #2c3357; --coast: #b9c4f2; --grat: #262c4a;
     --l-alignment: #b9c4f2; --l-dependency: #b9c4f2; --l-objective: #ff6a4a; --l-action: #ff6a4a;
   }
 }
 :root[data-theme="dark"] {
   --paper: #12162a; --paper-2: #171c33; --land: #1c2240;
-  --ink-a: #b9c4f2; --ink-b: #ff6a4a; --ink-ab: #d9a0c8;
+  --ink-a: #b9c4f2; --ink-b: #ff6a4a; --ink-c: #5fbf8a; --ink-ab: #d9a0c8;
   --ink: #e6e9f5; --ink-2: #aeb6d6; --ink-3: #6f789c; --rule: #2c3357; --coast: #b9c4f2; --grat: #262c4a;
   --l-alignment: #b9c4f2; --l-dependency: #b9c4f2; --l-objective: #ff6a4a; --l-action: #ff6a4a;
 }
