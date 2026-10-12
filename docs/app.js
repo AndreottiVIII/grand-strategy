@@ -109,11 +109,19 @@
   orgSel.onchange = () => { issueSel.value = ""; homeLens = orgSel.value ? { kind: "org", id: orgSel.value } : null; goHome(true); };
   issueSel.onchange = () => { orgSel.value = ""; homeLens = issueSel.value ? { kind: "issue", id: issueSel.value } : null; goHome(true); };
   document.querySelectorAll(".tab").forEach(b => b.onclick = () => setView(b.dataset.view));
+  document.querySelectorAll("#topnav a").forEach(a => a.onclick = ev => { ev.preventDefault(); const pg = a.dataset.page; if (pg === "map") goHome(); else setView(pg); });
   document.getElementById("home").onclick = ev => { ev.preventDefault(); goHome(); };
   function setView(v, render = true) {
     view = v;
     document.querySelectorAll(".tab").forEach(b => b.classList.toggle("is-on", b.dataset.view === v));
+    document.querySelectorAll("#topnav a").forEach(a => a.classList.toggle("is-on", a.dataset.page === v || (a.dataset.page === "map" && (v === "map" || v === "dossier"))));
     document.querySelectorAll(".view").forEach(s => s.classList.toggle("is-on", s.id === "view-" + v));
+    const isPage = ["orgs", "issues", "luttwak"].includes(v);
+    document.querySelector(".side").style.display = isPage ? "none" : "";
+    document.querySelector(".frame").classList.toggle("is-page", isPage);
+    if (v === "orgs") renderOrgsPage();
+    if (v === "issues") renderIssuesPage();
+    if (v === "luttwak") renderLuttwakPage();
     if (!render) return;
     if (v === "map") drawMap();
     if (v === "dossier") showDossier(pov || fullActors[0].id);
@@ -388,6 +396,50 @@
         </div>`;
       }).join("") + `</div>`;
     el.querySelectorAll(".relcard").forEach(c => c.onclick = () => showDossier(c.dataset.id));
+  }
+
+  // ---------- pages: organisations, issues, Luttwak
+  function showOrg(id) { homeLens = { kind: "org", id }; orgSel.value = id; issueSel.value = ""; goHome(true); }
+  function showIssue(id) { homeLens = { kind: "issue", id }; issueSel.value = id; orgSel.value = ""; goHome(true); }
+  function renderOrgsPage() {
+    const el = document.getElementById("page-orgs");
+    el.innerHTML = `<h2>Organisations</h2><p class="lede">Who belongs to what. Memberships come from each organisation's official member list, with Wikidata as the index; where a list is still short the count says so. Pick one to see its members on the map.</p>
+      <div class="cardgrid">` + orgs.map(o => `<div class="orgcard ${o.ok ? "" : "is-weak"}" data-id="${o.a.id}">
+        ${o.a.flag ? `<img class="orgflag" src="${esc(o.a.flag)}" alt="">` : ""}<b>${esc(o.a.name)}</b>
+        <span class="n">${o.n} member${o.n === 1 ? "" : "s"}${o.exp && o.n < o.exp ? ` of ${o.exp}` : ""}${o.ok ? "" : " - list incomplete"}</span>
+        <span class="who">${Object.keys(membersOf[o.a.id]).slice(0, 8).map(id => actors[id] ? esc(actors[id].short || actors[id].name) : id).join(" · ")}${o.n > 8 ? " · ..." : ""}</span>
+      </div>`).join("") + `</div>`;
+    el.querySelectorAll(".orgcard").forEach(c => c.onclick = () => showOrg(c.dataset.id));
+  }
+  function renderIssuesPage() {
+    const el = document.getElementById("page-issues");
+    el.innerHTML = `<h2>Issues</h2><p class="lede">The questions that split the world today, as they can be read from the datasets: recognition tables and General Assembly votes. Pick one to see who stands where.</p>
+      <div class="cardgrid">` + Object.entries(ISSUES).map(([k, v]) => {
+        const r = v.kind === "vote" ? (unga.resolutions[v.symbol] || {}) : null;
+        const cnt = v.kind === "recognition" ? Object.values(recog[v.target] || {}).reduce((m, x) => (m[x] = (m[x] || 0) + 1, m), {}) : null;
+        return `<div class="orgcard" data-id="${k}"><b>${esc(v.label.split(" - ")[0])}</b><span class="n">${esc(v.label.split(" - ")[1] || "")}</span>
+          <span class="who">${v.kind === "recognition" ? `${cnt.yes || 0} recognise · ${cnt.no || 0} do not · ${cnt.withdrew || 0} withdrew` : `${esc(r.label || "")} · ${esc(r.date || "")} · ${esc(r.tally || "")}`}</span></div>`;
+      }).join("") + `</div>`;
+    el.querySelectorAll(".orgcard").forEach(c => c.onclick = () => showIssue(c.dataset.id));
+  }
+  function renderLuttwakPage() {
+    const el = document.getElementById("page-luttwak");
+    if (el.dataset.done) return;
+    el.dataset.done = "1";
+    el.innerHTML = `
+      <h2>Luttwak, the lamp</h2>
+      <p class="lede">This atlas reads the world through Edward N. Luttwak's idea of grand strategy. Not because he is always right, but because his grid forces the questions that a map of flags leaves out: what does each actor want, with what, against what, and where do its own moves turn against it.</p>
+      <h3>The paradoxical logic</h3>
+      <p>Luttwak's central claim (<i>Strategy: The Logic of War and Peace</i>, 1987) is that in any contest between adversaries the ordinary, linear logic of everyday life stops working. The worse road may be the better one precisely because it is unexpected; the weapon that works is the one the enemy adapts to, so it stops working; a victory pressed too far becomes a defeat, because it summons the coalition that undoes it. Strategy is paradoxical because the other side reacts. Every card in this atlas therefore ends with <b>paradoxes</b>: the places where an actor's own instruments undermine its own goals. Serbia's veto on Kosovo needs Moscow and Beijing, and Moscow and Beijing close the road to Brussels. Kosovo's proofs of statehood in the north cost it the patrons who could confer statehood.</p>
+      <h3>The levels</h3>
+      <p>Luttwak stacks conflict in levels that interact but do not sum: the technical, the tactical, the operational, the theatre strategy, and above them all <b>grand strategy</b>, where military force meets diplomacy, economics, alliances and persuasion, and where a state's whole external conduct can be read as one design. This atlas lives on the top level only. It does not model battles or armies; it models what states and state-like actors want, the means they use across the four domains (diplomatic, informational, military, economic), what constrains them, and how they see each other.</p>
+      <h3>From the lamp to the data</h3>
+      <p>Each actor with a full card carries: <b>objectives</b>, ranked; <b>means</b> by domain; <b>constraints</b>; <b>paradoxes</b>; and a short <b>reading</b>, the only free prose. Every claim has a source with its tier (official document, research, quality press, other) and a confidence grade: <b>A</b> an official document or two independent sources, <b>B</b> one good source, <b>C</b> press or our own inference, always shown.</p>
+      <h3>Posture and bond</h3>
+      <p>How one actor sees another is recorded on two axes. The <b>posture</b> is what the relationship is today, on a closed scale: own territory, claimed but not controlled, ally, reluctant ally, partner, reluctant partner, neutral, rival, adversary. "Adversary" is reserved for mortal enemies, where the other's existence or regime is the problem (Iran and Israel); nearly all bad relationships are rivalries. A posture is never our opinion: it needs a source that uses that reading, and it follows the structural position, not the rhetoric of a joint communiqué. The <b>bond</b> is the structure under the posture, what would survive a change of government: kin (shared identity), affinity, none, or grievance (an open historical wound). Two actors can both be "partner" and mean opposite things: for Serbia, Russia is a partner of kin growing colder; the United States a partner with a grievance growing warmer. On the map the posture is the colour and the bond a band inside the border.</p>
+      <h3>What the atlas is not</h3>
+      <p>It is not a forecast and not a verdict. It is a situation map: a dated, sourced, revisable statement of where everyone stands, built region by region, with the datasets (UN votes, memberships, recognitions) as the floor and researched cards as the reading. Luttwak also wrote the histories of Roman and Byzantine grand strategy and a study of China's "great-state autism"; historians have contested the Roman case, and the same scepticism is owed here. Where a card says less than you expected, it is because the sources did not hold.</p>
+      <p class="fine">Edward N. Luttwak, <i>Strategy: The Logic of War and Peace</i> (1987, rev. 2001); <i>The Grand Strategy of the Roman Empire</i> (1976); <i>The Grand Strategy of the Byzantine Empire</i> (2009); <i>The Rise of China vs. the Logic of Strategy</i> (2012).</p>`;
   }
 
   function tipFor(id, fallbackName, ev) {
