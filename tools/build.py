@@ -312,10 +312,13 @@ def main():
     # and B has no stance toward A, B gets the reciprocal with the same sources, one confidence grade lower,
     # flagged `reciprocal`, so the map never shows an alliance from one side only. Rivalries are never mirrored.
     lower = {"A": "B", "B": "C", "C": "C"}
+    # Davide, 2026-10-12: every grade gets its provisional reciprocal, not only ally; territorial grades map to rival/none
+    RECIP = {"ally": "ally", "reluctant_ally": "reluctant_ally", "partner": "partner", "reluctant_partner": "reluctant_partner",
+             "neutral": "neutral", "rival": "rival", "adversary": "adversary", "claimed_territory": "rival"}
     recip = 0
     for a, s in list(stances.items()):
         for st in s.get("stances", []):
-            if st.get("grade") != "ally" or st.get("dataset"):
+            if st.get("dataset") or st.get("grade") not in RECIP:
                 continue
             b = st["toward"]
             if b not in actors:
@@ -324,15 +327,15 @@ def main():
             if a in existing:
                 continue
             stances.setdefault(b, {"actor": b, "stances": []})["stances"].append({
-                "toward": a, "grade": "ally", "trend": st.get("trend", "stable"), "bond": st.get("bond", "unknown"),
+                "toward": a, "grade": RECIP[st["grade"]], "trend": st.get("trend", "stable"), "bond": st.get("bond", "unknown"),
                 "since": st.get("since"), "last_verified": st.get("last_verified"), "confidence": lower.get(st.get("confidence", "C"), "C"),
                 "dataset": "reciprocal", "stale": st.get("stale", False),
-                "note": f"Reciprocal of {actors[a]['name']}'s ally stance toward {actors[b]['name']}, not yet written from this side; same evidence. ",
+                "note": f"Reciprocal of {actors[a]['name']}'s '{st['grade']}' stance toward {actors[b]['name']}, provisional and not yet written from this side; same evidence. ",
                 "sources": st.get("sources", [])})
             recip += 1
-            warn(f"{b} -> {a}: reciprocal ally stance added from {a}'s card; write {b}'s own side in the reverse pass")
+            warn(f"{b} -> {a}: reciprocal '{RECIP[st['grade']]}' stance added from {a}'s card; write {b}'s own side in the reverse pass")
     if recip:
-        warnings.append(f"{recip} reciprocal ally stances added")
+        warnings.append(f"{recip} reciprocal stances added")
 
     # --- structural checks (ONTOLOGY.md: the grade follows the structural position)
     grade = {(a, st["toward"]): st["grade"] for a, s in stances.items() for st in s.get("stances") or []}
