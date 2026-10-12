@@ -3,6 +3,24 @@
 Decision log, newest first. The path matters more than the destination: record why,
 not only what. Dead ends are entries too.
 
+## 2026-10-12 · Kosovo: the economical pipeline, measured
+
+One agent on the economical model, a fixed reading list, YAML written directly, build
+made to pass, then review by the best model. **235,000 tokens** of research (Serbia:
+650,000 across four prose reports, rewritten by hand) plus about 20,000 of review.
+38 web calls. Output: full card (6 objectives, 6 means, 6 constraints, 7 paradoxes,
+reading), 16 stances, 38 relation rows with numbers. Review changes: the Board of
+Peace charter retyped from treaty to agreement; the structural check now counts only
+security ties (not free-trade agreements); duplicate XKS stub removed. Grades kept as
+the agent set them, with their confidence C where no Kosovar source uses the word:
+Serbia rival (grievance), Albania ally (kin), United States ally (cooling), EU partner
+(warming), NATO ally (cooling), Russia and China rival, Spain rival (structural).
+
+Estimate from here: a protagonist card at ~250k tokens with the economical model, so
+the five remaining Balkan actors cost about 1.2M; the 75 protagonists about 19M, the
+rest of the world far less. Launched: Croatia, Bosnia, Montenegro, Albania, North
+Macedonia in parallel.
+
 ## 2026-10-12 · Davide catches a wrong map
 
 Serbia's posture map showed the whole of NATO and the EU in green. Two causes, both

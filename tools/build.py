@@ -311,8 +311,14 @@ def main():
     # --- structural checks (ONTOLOGY.md: the grade follows the structural position)
     grade = {(a, st["toward"]): st["grade"] for a, s in stances.items() for st in s.get("stances") or []}
     allies = {}
+    SECURITY = re.compile(r"defen[cs]e|military|security|alliance|mutual assistance|article 5", re.I)
     for rel in rows:
-        if rel["layer"] == "alignment" and rel["type"] in BINDING:
+        if rel["layer"] != "alignment":
+            continue
+        binding = (rel["type"] == "security_guarantee"
+                   or (rel["type"] == "membership" and rel["to"] in ("org-nato", "org-csto", "org-eu"))
+                   or (rel["type"] == "treaty" and SECURITY.search(rel.get("summary", ""))))
+        if binding:   # trade agreements and cooperation memoranda do not make allies
             allies.setdefault(rel["from"], set()).add(rel["to"])
             allies.setdefault(rel["to"], set()).add(rel["from"])
     for (a, b), g in grade.items():

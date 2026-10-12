@@ -1,0 +1,452 @@
+from: XKX
+relations:
+  # ---------- objective ----------
+  - to: SRB
+    layer: objective
+    type: recognition_sought
+    summary: Pristina seeks Serbia's recognition, or at least de facto acceptance of Kosovo's statehood, as the end of the EU-facilitated normalisation; Vucic says recognition 'will not happen'. Recognition tallies are contested.
+    since: 2008-02-17
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    claims:
+      - by: XKX
+        text: about 120 states recognise Kosovo, about 20 recognitions reconfirmed and 4 new (Osmani, Jan 2026)
+        source: https://english.gazetatema.net/kosovo-region/president-osmani-says-kosovo-has-restored-20-recognitions-i343710
+      - by: SRB
+        text: 28 states have withdrawn recognition
+        source: https://kossev.info/en/vucic-otkrio-imena-zemalja-koje-su-povukle-priznanje-kosova/
+    sources:
+      - {url: "https://www.tanjug.rs/english/politics/189590/vucic-no-one-should-hope-for-recognition-of-kosovo-by-serbia-that-will-not-happen/amp", title: "Vucic: no one should hope for recognition of Kosovo by Serbia, that will not happen", publisher: "Tanjug (state agency, official statement)", date: 2025-09-04, tier: 1}
+      - {url: "https://www.securitycouncilreport.org/monthly-forecast/2026-10/kosovo-17.php", title: "Kosovo - October 2026 monthly forecast", publisher: "Security Council Report", date: 2026-10, tier: 2}
+  - to: org-un
+    layer: objective
+    type: recognition_sought
+    summary: Kosovo is not a member of the United Nations; a seat is blocked in the Security Council by Russia and China, which do not recognise it and back Serbia's territorial integrity. 110 UN members are cited by Wikipedia's index; Pristina counts about 120.
+    since: 2008-02-17
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.securitycouncilreport.org/monthly-forecast/2026-10/kosovo-17.php", title: "Kosovo - October 2026 monthly forecast (Council dynamics)", publisher: "Security Council Report", date: 2026-10, tier: 2}
+  - to: org-eu
+    layer: objective
+    type: membership_goal
+    summary: Membership application filed 15 Dec 2022; the European Parliament (17 Jun 2026) asks the Council to move toward candidate status once the criteria are met. Five EU members do not recognise Kosovo.
+    since: 2022-12-15
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1905961", title: "2025 Commission report on Kosovo - European Parliament resolution (procedure 2025/2252(INI))", publisher: "European Parliament", date: 2026-06-17, tier: 1}
+      - {url: "https://europeanwesternbalkans.com/?p=42737", title: "Spain's impact on Kosovo's accession process into the EU", publisher: "European Western Balkans", date: 2025, tier: 3}
+  - to: org-nato
+    layer: objective
+    type: membership_goal
+    summary: Parliament called on the government to start NATO accession on 3 Mar 2022; the working group seeks Partnership for Peace first. Four NATO members do not recognise Kosovo.
+    since: 2022-03-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://prishtinainsight.com/kosovo-sets-up-working-group-to-push-nato-membership/", title: "Kosovo sets up working group to push NATO membership", publisher: "Prishtina Insight / BIRN", date: 2022, tier: 3}
+      - {url: "https://europeanwesternbalkans.com/2022/03/22/ukrainian-crisis-has-revived-kosovos-long-standing-aspirations-for-nato-membership/", title: "Ukrainian crisis has revived Kosovo's long-standing aspirations for NATO membership", publisher: "European Western Balkans", date: 2022-03-22, tier: 3}
+  - to: org-coe
+    layer: objective
+    type: membership_goal
+    summary: Application filed 12 May 2022; PACE gave a positive opinion (Opinion 302, April 2024) but the Committee of Ministers has not admitted Kosovo, with Serbia opposing despite Article 4 of the Ohrid annex; in June 2026 PACE was again asked to deplore Serbia's opposition.
+    since: 2022-05-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://pace.coe.int/fr/files/36120/pdf", title: "PACE amendment deploring that Serbia still opposes Kosovo's accession", publisher: "Parliamentary Assembly of the Council of Europe", date: 2026-06, tier: 1}
+      - {url: "https://www.rferl.org/amp/wider-europe-briefing-jozwiak-kosovo-council-europe-russia-sanctions-ukraine/32905823.html", title: "Wider Europe briefing - Kosovo could finally get into the Council of Europe", publisher: "RFE/RL", date: 2024, tier: 3}
+  - to: ESP
+    layer: objective
+    type: recognition_sought
+    summary: Spain, one of five EU non-recognisers, repeats that it does not recognise Kosovo while backing the EU dialogue; its position is read as tied to Catalonia and the Basque Country.
+    since: 2008-02-17
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://europeanwesternbalkans.com/?p=42737", title: "Spain's impact on Kosovo's accession process into the EU", publisher: "European Western Balkans", date: 2025, tier: 3}
+      - {url: "https://n1info.rs/english/news/spanish-ambassador-we-do-not-recognize-kosovo-s-independence/", title: "Spanish ambassador: we do not recognize Kosovo's independence", publisher: "N1", date: 2023, tier: 3}
+
+  # ---------- alignment ----------
+  - to: SRB
+    layer: alignment
+    type: treaty
+    summary: Brussels Agreement on the path to normalisation (27 Feb 2023) and Ohrid implementation annex (18 Mar 2023). Kosovo has not formed the Community of Serb-majority Municipalities or sent its statute to the Constitutional Court; Serbia has not honoured Article 4 (no objection to Kosovo's memberships). Kallas on 22 Sep 2026 reaffirmed both as binding.
+    since: 2023-03-18
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.securitycouncilreport.org/monthly-forecast/2026-10/kosovo-17.php", title: "Kosovo - October 2026 monthly forecast", publisher: "Security Council Report", date: 2026-10, tier: 2}
+      - {url: "https://ngoaktiv.org/en/news/the-ngo-aktiv-report-the-ohrid-agreement-and-regional-integration/", title: "The NGO Aktiv report - the Ohrid Agreement and regional integration", publisher: "NGO Aktiv", date: 2025, tier: 3}
+  - to: ALB
+    layer: alignment
+    type: treaty
+    summary: Trilateral declaration on military cooperation with Albania and Croatia (Tirana, 18 Mar 2025); 13 agreements and declarations signed by the two governments on 6 Jul 2023. A declaration of intent, not an alliance treaty.
+    since: 2025-03-18
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://europeanwesternbalkans.com/2025/03/24/what-is-the-aim-of-the-declaration-on-military-cooperation-between-croatia-albania-and-kosovo/", title: "A Front against Serbia?", publisher: "European Western Balkans", date: 2025-03-24, tier: 3}
+      - {url: "https://www.tiranatimes.com/albania-croatia-and-kosovo-sign-defense-agreement-a-new-military-alliance-in-the-balkans", title: "Albania, Croatia and Kosovo sign defense agreement - a new military alliance in the Balkans", publisher: "Tirana Times", date: 2025-03, tier: 3}
+  - to: HRV
+    layer: alignment
+    type: treaty
+    summary: Co-signatory of the 18 Mar 2025 trilateral declaration on military cooperation (Tirana); Bulgaria was invited to join. Serbia called it an 'arms race'.
+    since: 2025-03-18
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://euronews.com/my-europe/2025/03/25/what-will-a-new-defence-agreement-in-southeastern-europe-mean-for-the-region", title: "What will a new defence agreement in southeastern Europe mean for the region", publisher: "Euronews", date: 2025-03-25, tier: 3}
+      - {url: "https://a2news.com/english/rajoni-bota/ballkani/vucic-shqiperia-dhe-kroacia-kane-hapur-gare-armatimi-pas-me-i1143248", title: "Vucic: Albania and Croatia have started an arms race after the memorandum with Kosovo", publisher: "A2 News", date: 2025-03-19, tier: 3}
+  - to: org-eu
+    layer: alignment
+    type: treaty
+    summary: Stabilisation and Association Agreement in force since April 2016; visa-free travel to the Schengen area since 1 Jan 2024; voluntary alignment with CFSP including restrictive measures on Russia and Belarus. Not a candidate.
+    since: 2016-04-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1905961", title: "2025 Commission report on Kosovo - European Parliament resolution (procedure 2025/2252(INI))", publisher: "European Parliament", date: 2026-06-17, tier: 1}
+      - {url: "https://www.consilium.europa.eu/en/policies/enlargement/kosovo/", title: "Kosovo - EU relations", publisher: "Council of the European Union", date: 2024, tier: 1}
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "Charter of Trump's Board of Peace signed as a founding member at Davos on 22 Jan 2026 (Osmani); the charter does not oblige members to send troops. Earlier: Washington Agreement on economic normalisation with Serbia (4 Sep 2020, with an exchange of recognition with Israel)."
+    since: 2026-01-22
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://n1info.rs/english/news/kosovo-invited-to-join-trumps-board-of-peace/", title: "Kosovo invited to join Trump's Board of Peace", publisher: "N1", date: 2026-01, tier: 3}
+      - {url: "https://www.koha.net/en/arberi/kosova-nenshkruan-pjesemarrjen-ne-bordin-e-paqes-te-trumpit", title: "Kosovo signs participation in Trump's Board of Peace", publisher: "Koha", date: 2026-01, tier: 3}
+  - to: TUR
+    layer: alignment
+    type: treaty
+    summary: Free trade agreement signed 27 Sep 2013, in force since 1 Sep 2019; in April 2026 Kurti and Trade Minister Bolat discussed extending it to services (IT, logistics, finance).
+    since: 2019-09-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://kryeministri.rks-gov.net/en/?p=201201", title: "Prime Minister Kurti received the Minister of Trade of the Republic of Turkey, Bolat", publisher: "Office of the Prime Minister of Kosovo", date: 2026-04, tier: 1}
+
+  # ---------- dependency ----------
+  - to: org-nato
+    layer: dependency
+    type: military_presence
+    summary: KFOR numbered 4,739 troops from 31 nations in June 2026; NATO announced on 12 Jun a gradual reduction toward 3,000-3,500 over the next year, reversible. KFOR is the actual shield and controls Kosovo's airspace under UNSCR 1244.
+    value: 4739
+    unit: kfor_troops_june_2026
+    since: 1999-06-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.nato.int/content/dam/nato/webready/documents/factsheets/kfor/KFOR-Placemat.pdf", title: "KFOR Placemat, June 2026", publisher: "NATO", date: 2026-06, tier: 1}
+      - {url: "https://www.euronews.com/my-europe/2026/06/12/nato-to-cut-troop-numbers-in-kosovo-amid-improved-security-situation", title: "NATO to cut troop numbers in Kosovo amid improved security situation", publisher: "Euronews", date: 2026-06-12, tier: 3}
+  - to: USA
+    layer: dependency
+    type: military_presence
+    summary: Just under 600 US troops in KFOR (April 2026 figures); a US EUCOM official said Washington would adjust its contribution after the NATO review.
+    value: 590
+    unit: us_troops_in_kfor_2026
+    since: 1999-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Figures differ: 'just under 600' (Reuters via Arab News, April figures) and 'about 590' (press). The lower round figure is kept."
+    sources:
+      - {url: "https://www.arabnews.pk/node/2646889/world", title: "NATO to cut Kosovo peacekeeper numbers", publisher: "Arab News / Reuters", date: 2026-06-12, tier: 3}
+      - {url: "https://english.gazetatema.net/kosovo-region/us-may-cut-troops-in-kosovo-peacekeeping-mission-i345843", title: "US may cut troops in Kosovo peacekeeping mission", publisher: "Gazeta Tema", date: 2026-06, tier: 3}
+  - to: USA
+    layer: dependency
+    type: arms_supply
+    summary: 246 Javelin FGM-148F missiles with tracking equipment approved by DSCA on 11 Jan 2024 (about EUR 69m, USD 75m), the core of the Kosovo Security Force's anti-armour capability.
+    value: 246
+    unit: javelin_missiles
+    since: 2024-01-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.euronews.com/2024/01/17/kosovo-to-receive-weapons-from-the-us-as-part-of-military-development-plan", title: "Kosovo to receive weapons from the US as part of military development plan", publisher: "Euronews", date: 2024-01-17, tier: 3}
+  - to: DEU
+    layer: dependency
+    type: remittances
+    summary: The diaspora (nearly 600,000 people in Germany; Germany and Switzerland together supply about three quarters of remittances) sent EUR 1.35bn in 2024 (13% of GDP by OECD) and EUR 1.4bn in 2025.
+    value: 0.13
+    unit: share_of_gdp_all_remittances_2024
+    since: 2024
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Figures conflict: 13% of GDP (OECD) against 17.3% (World Bank series on StatisticsOfTheWorld). The OECD figure is kept because it comes with the euro amount; the value is total remittances, not the German share."
+    sources:
+      - {url: "https://www.oecd.org/en/publications/sme-policy-index-for-western-balkans-and-turkiye-2026-economy-profile-for-kosovo_5737889a-en/full-report/kosovo-sme-sector-overview_9d53e176.html", title: "SME Policy Index 2026 - economy profile for Kosovo", publisher: "OECD", date: 2026, tier: 1}
+      - {url: "https://www.institutigap.org/news/3612", title: "Remittances in Kosovo in 2025", publisher: "Institute GAP", date: 2026, tier: 2}
+      - {url: "https://www.auswaertiges-amt.de/en/aussenpolitik/kosovo-228088", title: "Kosovo - bilateral relations", publisher: "Federal Foreign Office of Germany", date: 2026-04-08, tier: 1}
+  - to: DEU
+    layer: dependency
+    type: investment
+    summary: Germany is Kosovo's largest investor and largest bilateral donor, with over EUR 660m in technical and financial cooperation since 1999; the German KFOR contingent is among the Bundeswehr's largest foreign deployments.
+    value: 660
+    unit: eur_millions_cooperation_since_1999
+    since: 1999
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.auswaertiges-amt.de/en/aussenpolitik/kosovo-228088", title: "Kosovo - bilateral relations", publisher: "Federal Foreign Office of Germany", date: 2026-04-08, tier: 1}
+  - to: DEU
+    layer: dependency
+    type: trade_share
+    summary: Germany supplied 14.0% of Kosovo's imports in August 2025, 15.7% in October and 14.6% in November, the largest single source, and takes 10.7% of exports (November 2025).
+    value: 0.14
+    unit: share_of_imports_aug_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "Monthly Kosovo Agency of Statistics releases as relayed by press; the Federal Foreign Office calls Germany Kosovo's second most important trading partner. No full-year 2025 country breakdown was reached."
+    sources:
+      - {url: "https://www.kossev.info/en/izvoz-na-kosovu-opada-uvoz-raste-kosovo-online-najnovije-vesti/", title: "Exports in Kosovo fall while imports rise", publisher: "KoSSev (citing Kosovo Agency of Statistics)", date: 2025, tier: 3}
+      - {url: "https://www.auswaertiges-amt.de/en/aussenpolitik/kosovo-228088", title: "Kosovo - bilateral relations", publisher: "Federal Foreign Office of Germany", date: 2026-04-08, tier: 1}
+  - to: org-eu
+    layer: dependency
+    type: trade_share
+    summary: EU countries account for about 43% of Kosovo's imports and 32% of its exports (Kosovo Customs, as cited by the US Commercial Service); exports to the EU were 34.2% of the total in 2025.
+    value: 0.43
+    unit: share_of_imports
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Year not stated by the source; February 2025 monthly data gave 44.2% of imports and about 36.5% of exports. The two should be read as a range."
+    sources:
+      - {url: "https://www.trade.gov/country-commercial-guides/Kosovo-market-overview", title: "Kosovo country commercial guide - market overview", publisher: "US Department of Commerce", date: 2025, tier: 1}
+  - to: org-eu
+    layer: dependency
+    type: investment
+    summary: Following the lifting of the 2023 measures, the EU programmes EUR 216m of assistance, of which EUR 205m to be released early in 2026; the Growth Plan funds depend on 13 reforms due by end-June 2026.
+    value: 216
+    unit: eur_millions_assistance_programmed_2026
+    since: 2025-12-17
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://europeanwesternbalkans.com/2025/12/18/the-eu-is-lifting-all-punitive-measures/", title: "The EU is lifting all punitive measures", publisher: "European Western Balkans", date: 2025-12-18, tier: 3}
+      - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2026-04-30/kosovo-dissolution-parliament", title: "Kosovo - dissolution of parliament", publisher: "OSW", date: 2026-04-30, tier: 2}
+  - to: TUR
+    layer: dependency
+    type: trade_share
+    summary: Bilateral trade of about USD 750m, which Erdogan wants above USD 1bn; Kurti's office cites about USD 1bn. Defence industry cooperation is a stated priority.
+    value: 750
+    unit: usd_millions_bilateral_trade
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Figures differ between the Turkish presidency (about USD 750m) and Kurti's office (about USD 1bn); the lower, earlier figure is kept."
+    sources:
+      - {url: "https://www.dailysabah.com/politics/diplomacy/turkiye-ready-to-support-serbia-kosovo-dialogue-process-erdogan", title: "Turkiye ready to support Serbia-Kosovo dialogue process, Erdogan", publisher: "Daily Sabah", date: 2025, tier: 3}
+      - {url: "https://kryeministri.rks-gov.net/en/?p=201201", title: "Prime Minister Kurti received the Minister of Trade of the Republic of Turkey, Bolat", publisher: "Office of the Prime Minister of Kosovo", date: 2026-04, tier: 1}
+  - to: SRB
+    layer: dependency
+    type: trade_share
+    summary: Serbia supplied 3.0% of Kosovo's imports and took 7.7% of its exports in August 2025; Serbian exports to Kosovo fell from about EUR 240m to EUR 75m in June-December 2023 under the Kosovar ban.
+    value: 0.03
+    unit: share_of_imports_aug_2025
+    since: 2023-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "A single month's data (Kosovo Agency of Statistics via press) and a ban partly lifted in October 2024; the 2026 situation is unverified."
+    sources:
+      - {url: "https://www.kossev.info/en/izvoz-na-kosovu-opada-uvoz-raste-kosovo-online-najnovije-vesti/", title: "Exports in Kosovo fall while imports rise", publisher: "KoSSev (citing Kosovo Agency of Statistics)", date: 2025, tier: 3}
+      - {url: "https://europeanwesternbalkans.com/2024/10/08/kosovo-lifts-import-ban-on-serbian-goods-at-merdare-border-crossing/", title: "Kosovo lifts import ban on Serbian goods at Merdare border crossing", publisher: "European Western Balkans", date: 2024-10-08, tier: 3}
+
+  # ---------- action ----------
+  - to: org-eu
+    layer: action
+    type: sanction
+    summary: Measures imposed on Kosovo by the EU in June 2023 over tensions in the northern municipalities (funds suspended, high-level contacts frozen). The EU announced the lifting on 17 Dec 2025 and the Commission confirmed on 17 Mar 2026 that all had been lifted and all frozen assistance released.
+    since: 2023-06
+    until: 2026-03-17
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://europeanwesternbalkans.com/2026/03/18/kosovo-leaders-welcome-lifting-of-all-eu-punitive-measures/", title: "Kosovo leaders welcome lifting of all EU punitive measures", publisher: "European Western Balkans", date: 2026-03-18, tier: 3}
+      - {url: "https://europeanwesternbalkans.com/2025/12/18/the-eu-is-lifting-all-punitive-measures/", title: "The EU is lifting all punitive measures", publisher: "European Western Balkans", date: 2025-12-18, tier: 3}
+  - to: SRB
+    layer: action
+    type: incident
+    summary: "Banjska attack (24 Sep 2023): armed Serbs killed police sergeant Afrim Bunjaku; three gunmen died. Milan Radoicic, who admitted organising it, lives in Serbia."
+    since: 2023-09-24
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.aljazeera.com/amp/news/2026/4/24/kosovo-court-jails-three-serb-separatists-over-2023-banjska-attack", title: "Kosovo court jails three Serb separatists over 2023 Banjska attack", publisher: "Al Jazeera", date: 2026-04-24, tier: 3}
+      - {url: "https://apnews.com/article/kosovo-verdict-banjska-sentence-e15e97be6eb75a00d29403d4e86dafd2", title: "Kosovo court sentences 3 ethnic Serbs to life, 30 years in prison over 2023 clash", publisher: "AP News", date: 2026-04-24, tier: 3}
+  - to: SRB
+    layer: action
+    type: incident
+    summary: Pristina Basic Court sentenced Blagoje Spasojevic and Vladimir Tolic to life and Dusan Maksimovic to 30 years for Banjska (24 Apr 2026, first instance); the court refused a trial in absentia for Radoicic and 40 others. Serbia called the verdict 'draconian' and 'politically motivated'.
+    since: 2026-04-24
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.rferl.org/a/kosovo-court-life-sentences-deadly-attack-banjska-serbia/33741781.html", title: "Kosovo court hands life sentences over deadly Banjska attack", publisher: "RFE/RL", date: 2026-04-24, tier: 3}
+      - {url: "https://europeanwesternbalkans.com/2026/04/24/spasojevic-and-tolic-sentenced-to-life-imprisonment-for-banjska-case-by-the-basic-court-in-pristina/", title: "A first-instance verdict", publisher: "European Western Balkans", date: 2026-04-24, tier: 3}
+  - to: SRB
+    layer: action
+    type: sanction
+    summary: Ban on Serbian goods introduced in mid-2023; on 7 Oct 2024 eased at the Merdare crossing under inspection, with other crossings staying closed until scanners are installed. EU and US welcomed the decision.
+    since: 2023-06
+    until: 2024-10-07
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://europeanwesternbalkans.com/2024/10/08/kosovo-lifts-import-ban-on-serbian-goods-at-merdare-border-crossing/", title: "Kosovo lifts import ban on Serbian goods at Merdare border crossing", publisher: "European Western Balkans", date: 2024-10-08, tier: 3}
+      - {url: "https://n1info.rs/english/news/eu-us-welcome-kosovo-s-decision-to-lift-ban-on-serbian-imports/", title: "EU, US welcome Kosovo's decision to lift ban on Serbian imports", publisher: "N1", date: 2024-10, tier: 3}
+  - to: SRB
+    layer: action
+    type: incident
+    summary: In the 12 Oct 2025 local elections the Serb List won all four northern municipalities (Zvecan, Leposavic, Zubin Potok, North Mitrovica) and returned to the institutions after 928 days; its vote share fell by 11.4 points on average.
+    since: 2025-10-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://kossev.info/en/latest-news-serb-list-returns-to-power-in-north-kosovo-after-928-days-outside-institutions/", title: "Serb List returns to power in north Kosovo after 928 days outside institutions", publisher: "KoSSev", date: 2025-11, tier: 3}
+      - {url: "https://kossev.info/kosovo-latest-news-serb-list-dominates-local-elections-but-sees-decline-in-support480058-2/", title: "Serb List dominates local elections but sees decline in support", publisher: "KoSSev", date: 2025-10, tier: 3}
+  - to: SRB
+    layer: action
+    type: incident
+    summary: Kosovo police arrested seven directors of Serbia-run institutions in Gracanica (19 May 2026) and took control of four Serbia-operated railway stations in the north (28 May 2026); in July-September 2026 the judicial councils dismissed 7 prosecutors and 18 judges who sought to return after the 2022 Serb walk-out.
+    since: 2026-05-19
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.securitycouncilreport.org/monthly-forecast/2026-10/kosovo-17.php", title: "Kosovo - October 2026 monthly forecast", publisher: "Security Council Report", date: 2026-10, tier: 2}
+  - to: org-nato
+    layer: action
+    type: incident
+    summary: NATO announced on 12 Jun 2026 a gradual KFOR reduction toward 3,000-3,500 troops (back to 2023 levels), reversible and coordinated with troop rotations; KFOR will keep supporting the EU-led dialogue.
+    since: 2026-06-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.euronews.com/my-europe/2026/06/12/nato-to-cut-troop-numbers-in-kosovo-amid-improved-security-situation", title: "NATO to cut troop numbers in Kosovo amid improved security situation", publisher: "Euronews", date: 2026-06-12, tier: 3}
+      - {url: "https://www.nato.int/content/dam/nato/webready/documents/factsheets/kfor/KFOR-Placemat.pdf", title: "KFOR Placemat, June 2026", publisher: "NATO", date: 2026-06, tier: 1}
+  - to: RUS
+    layer: action
+    type: sanction
+    summary: Kosovo imposed its own sanctions on Russia in 2022 (asset freezes, access to markets) and has since aligned with EU packages on Russia and Belarus; Kurti said it had applied 13 packages. Kosovo is not a UN member and takes no UN votes.
+    since: 2022-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://kossev.info/en/kosovska-vlada-uvela-sankcije-rusiji/", title: "Kosovo government introduced sanctions on Russia", publisher: "KoSSev", date: 2022, tier: 3}
+      - {url: "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1905961", title: "2025 Commission report on Kosovo - European Parliament resolution", publisher: "European Parliament", date: 2026-06-17, tier: 1}
+  - to: UKR
+    layer: action
+    type: agreement
+    summary: Kosovo announced its first military aid to Ukraine on 20 Mar 2024 (armoured vehicles, trucks and mortar rounds), despite Ukraine not recognising Kosovo; it has also trained Ukrainian deminers.
+    since: 2024-03-20
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://euromaidanpress.com/2024/03/20/kosovo-announces-its-first-ever-military-aid-packages-for-ukraine/", title: "Kosovo announces its first-ever military aid packages for Ukraine", publisher: "Euromaidan Press", date: 2024-03-20, tier: 3}
+  - to: USA
+    layer: action
+    type: agreement
+    summary: Kosovo's parliament approved on 30 Mar 2026 sending troops to the International Stabilisation Force in Gaza under Trump's Board of Peace (pledge announced in February); the contribution is to be negotiated and approved case by case.
+    since: 2026-03-30
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.reuters.com/world/asia-pacific/kosovo-approves-troops-gaza-under-us-backed-scheme-2026-03-30/", title: "Kosovo approves troops to Gaza under US-backed scheme", publisher: "Reuters", date: 2026-03-30, tier: 3}
+      - {url: "https://kossev.info/en/kosovo-se-obavezalo-da-posalje-pripadnike-kbs-a-u-gazu/", title: "Kosovo has committed to send Kosovo Security Force members to Gaza", publisher: "KoSSev", date: 2026-02, tier: 3}
+  - to: TUR
+    layer: action
+    type: agreement
+    summary: Kosovo announced in July 2023 the purchase of Turkish Bayraktar TB2 drones; KFOR said the purchase conflicted with its authority over Kosovo's airspace. Turkey has supported the KSF transformation since 2018 (equipment, training, an ammunition agreement).
+    since: 2023-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.rferl.org/a/kosovo-buys-turkish-bayraktar-drones/32505916.html", title: "Kosovo buys Turkish Bayraktar drones", publisher: "RFE/RL", date: 2023-07, tier: 3}
+      - {url: "https://www.kosovo-online.com/en/news/analysis/turkish-arming-kosovo-continuation-military-cooperation-or-ankaras-support-kurti", title: "Turkish arming of Kosovo: continuation of military cooperation or Ankara's support for Kurti?", publisher: "Kosovo Online", date: 2026, tier: 3}
+  - to: TUR
+    layer: action
+    type: visit
+    summary: Erdogan received Kurti in a closed-door meeting at the UN General Assembly sidelines in New York on 21 Sep 2026, covering bilateral ties and the region.
+    since: 2026-09-21
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://en.yenisafak.com/turkiye/erdogan-meets-kosovar-pm-kurti-at-un-sidelines-3723535", title: "Turkiye's President meets Kosovar premier at UN sidelines", publisher: "Yeni Safak", date: 2026-09-21, tier: 3}
+  - to: DEU
+    layer: action
+    type: visit
+    summary: German Foreign Minister Wadephul visited Pristina on 18 Nov 2025 (Osmani, Kurti, the German KFOR contingent), and met Kurti again in Munich on 14 Feb 2026.
+    since: 2025-11-18
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://kryeministri.rks-gov.net/en/?p=188032", title: "Prime Minister Kurti met with the Minister of Foreign Affairs of Germany, Wadephul", publisher: "Office of the Prime Minister of Kosovo", date: 2025-11-18, tier: 1}
+      - {url: "https://kryeministri.rks-gov.net/en/?p=196146", title: "Prime Minister Kurti met with the Minister for Foreign Affairs of Germany, Johann Wadephul", publisher: "Office of the Prime Minister of Kosovo", date: 2026-02-14, tier: 1}
+  - to: ALB
+    layer: action
+    type: visit
+    summary: Albanian Prime Minister Rama visited Pristina on 16 Feb 2026 for the first meeting of the new Kurti government; a joint session of the two cabinets, last held in June 2022, is expected but undated.
+    since: 2026-02-16
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://kryeministri.rks-gov.net/en/news/kryeministri-kurti-mirepriti-kryeministrin-e-shqiperise-edi-rama/", title: "Prime Minister Kurti welcomes Albanian Prime Minister Edi Rama", publisher: "Office of the Prime Minister of Kosovo", date: 2026-02-16, tier: 1}
+  - to: GBR
+    layer: action
+    type: visit
+    summary: Kurti met Jonathan Powell, the UK Prime Minister's National Security Adviser, at Davos in January 2026; the UK ambassador met him again in February after the new government formed.
+    since: 2026-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://kryeministri.rks-gov.net/en/?p=193023", title: "Prime Minister Kurti met Jonathan Powell, National Security Advisor to the Prime Minister of the United Kingdom", publisher: "Office of the Prime Minister of Kosovo", date: 2026-01, tier: 1}
+      - {url: "https://kryeministri.rks-gov.net/en/?p=196853", title: "Prime Minister Kurti receives the Ambassador of the United Kingdom to Kosovo, Jonathan Hargreaves", publisher: "Office of the Prime Minister of Kosovo", date: 2026-02, tier: 1}
+  - to: org-eu
+    layer: action
+    type: incident
+    summary: The Specialist Chambers in The Hague sentenced ex-president Hashim Thaci to 25 years (16 Sep 2026); on 6 Oct 2026 parliament passed, under street protest, a law curbing the court's powers, awaiting the new president's signature.
+    since: 2026-09-16
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.reuters.com/world/kosovo-ex-president-thaci-faces-war-crimes-verdict-hague-2026-09-16/", title: "Former Kosovo president Thaci sentenced to 25 years for war crimes", publisher: "Reuters", date: 2026-09-16, tier: 3}
+      - {url: "https://www.euronews.com/2026/10/08/kosovo-lawmakers-elect-justina-pula-as-the-countrys-new-president-in-late-night-vote-to-av", title: "Kosovo lawmakers elect Justina Pula as the country's new president in late-night vote", publisher: "Euronews", date: 2026-10-08, tier: 3}

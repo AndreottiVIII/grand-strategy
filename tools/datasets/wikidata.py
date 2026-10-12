@@ -114,6 +114,8 @@ def main():
         iso3 = val(b, "iso3")
         if not iso3:
             continue
+        if iso3 == "XKS":           # Wikidata's code for Kosovo; the atlas and Natural Earth use XKX
+            iso3 = "XKX"
         st = states.setdefault(iso3, {"q": q, "name": val(b, "sLabel"), "iso3": iso3, "iso2": (val(b, "iso2") or "").lower(),
                                        "capital": val(b, "capitalLabel"), "coords": None, "wikipedia": val(b, "article")})
         c = val(b, "coord")
@@ -135,6 +137,8 @@ def main():
     members = []
     for b in rows:
         iso3 = val(b, "iso3")
+        if iso3 == "XKS":
+            iso3 = "XKX"
         org = q_by_org[val(b, "org").rsplit("/", 1)[1]]
         if not iso3 or val(b, "end"):
             continue
