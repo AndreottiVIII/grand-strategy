@@ -1,0 +1,809 @@
+from: MNE
+relations:
+- to: org-eu
+  layer: objective
+  type: membership_goal
+  summary: 'Accession by 2028: all 33 chapters to be closed by end-2026 and ratification in 2027-28 (Spajic; Milatovic at Tivat: ''realistic and achievable''). 18 of 33 chapters were provisionally closed by 14 Jul 2026; Commissioner Kos says 2028 or 2029 with ratification speed decisive.'
+  since: '2008-12-15'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  note: The Wikipedia index shows 20 of 33 closed after an accession conference scheduled for 12 Oct 2026 (chapters 18 and 19), not confirmed; 18 is the last count with a tier-3 source. Application date from the Wikipedia index.
+  sources:
+  - url: https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1905950
+    title: 2025 Commission report on Montenegro - European Parliament resolution (adopted 17 Jun 2026)
+    publisher: European Parliament
+    date: '2026-06-17'
+    tier: 1
+  - url: https://europeanwesternbalkans.com/2026/07/14/montenegro-closes-two-more-chapters-with-eu-reaches-18-out-of-33/
+    title: Montenegro closes two more chapters with EU, reaches 18 out of 33
+    publisher: European Western Balkans
+    date: '2026-07-14'
+    tier: 3
+  - url: https://wtop.com/europe/2026/06/balkan-leaders-attend-eu-summit-in-montenegro-as-enlargement-gains-urgency/
+    title: Balkan leaders attend EU summit in Montenegro as enlargement gains urgency
+    publisher: AP via WTOP
+    date: '2026-06-05'
+    tier: 3
+  - url: https://www.gov.me/en/article/ibrahimovic-in-washington-strong-montenegro-us-partnership-reaffirmed
+    title: 'Ibrahimovic in Washington: strong Montenegro-US partnership reaffirmed'
+    publisher: Government of Montenegro
+    date: '2026-02-05'
+    tier: 1
+- to: SRB
+  layer: objective
+  type: recognition_sought
+  summary: 'Podgorica asks Belgrade to treat the 2006 independence as settled and its identity as a civic state: its Foreign Ministry (14-15 May 2026) said Montenegro ''neither seceded from Serbia nor was ever part of it''. Serbia recognised Montenegro in June 2006; the quarrel is about legitimacy and framing, not legal status. Mirror of the SRB-to-MNE influence_goal row (dual citizenship, the Serbian Orthodox Church).'
+  since: '2026-05-14'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  note: Not a recognition in the legal sense; 'recognition_sought' is the closest vocabulary type for a demand that the 2006 referendum be accepted without the 'secession' framing.
+  sources:
+  - url: https://europeanwesternbalkans.com/2026/05/15/tensions-between-belgrade-and-podgorica-flare-over-the-20th-anniversary-of-montenegros-independence-restoration/
+    title: Tensions between Belgrade and Podgorica flare over the 20th anniversary of Montenegro's independence restoration
+    publisher: European Western Balkans
+    date: '2026-05-15'
+    tier: 3
+  - url: https://n1info.rs/english/news/eualive-serbia-montenegro-tensions-flare-over-20th-independence-anniversary/
+    title: 'EUalive: Serbia-Montenegro tensions flare over 20th independence anniversary'
+    publisher: N1
+    date: 2026-05
+    tier: 3
+  - url: https://rs.boell.org/en/2026/05/25/izmedu-frustracije-i-negacije-srbija-i-nezavisnost-crne-gore-dvadeset-godina-posle
+    title: Between frustration and denial - Serbia and Montenegrin independence twenty years on
+    publisher: Heinrich-Böll-Stiftung Belgrade
+    date: '2026-05-28'
+    tier: 2
+- to: org-eu
+  layer: alignment
+  type: candidate
+  summary: Candidate for EU membership; negotiations under way with all 33 chapters open and 18 provisionally closed by 14 Jul 2026; the European Parliament (17 Jun 2026) calls Montenegro the most advanced candidate and welcomes its full alignment with CFSP.
+  since: '2010-12-17'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1905950
+    title: 2025 Commission report on Montenegro - European Parliament resolution (adopted 17 Jun 2026)
+    publisher: European Parliament
+    date: '2026-06-17'
+    tier: 1
+  - url: https://europeanwesternbalkans.com/2026/07/14/montenegro-closes-two-more-chapters-with-eu-reaches-18-out-of-33/
+    title: Montenegro closes two more chapters with EU, reaches 18 out of 33
+    publisher: European Western Balkans
+    date: '2026-07-14'
+    tier: 3
+  - url: https://en.wikipedia.org/wiki/Accession_of_Montenegro_to_the_European_Union
+    title: Accession of Montenegro to the European Union (index only)
+    publisher: Wikipedia
+    date: '2026-10-12'
+    tier: 4
+- to: org-nato
+  layer: alignment
+  type: security_guarantee
+  summary: Article 5 guarantee as a NATO member since 5 June 2017; Montenegro spends above 2% of GDP (2.05% in 2025, 2.2-2.3% projected for 2026) and says it is committed to collective defence. The membership row itself comes from the Wikidata dataset.
+  since: '2017-06-05'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://www.gov.me/en/article/montenegro-committed-to-strengthening-collective-defence-modernising-defence-capabilities
+    title: Montenegro committed to strengthening collective defence, modernising defence capabilities
+    publisher: Government of Montenegro
+    date: '2026'
+    tier: 1
+  - url: https://mina.news/article/krapovic-montenegro-continues-to-contribute-to-nato-security
+    title: 'Krapovic: Montenegro continues to contribute to NATO security'
+    publisher: MINA news agency
+    date: 2026-07
+    tier: 3
+  - url: https://militaeraktuell.at/en/5-percent-montenegro-gradually-increases-its-defense-budget/
+    title: '5 percent: Montenegro gradually increases its defense budget'
+    publisher: Militaeraktuell
+    date: '2026'
+    tier: 3
+- to: SRB
+  layer: alignment
+  type: treaty
+  summary: Fundamental Agreement between the Government of Montenegro and the Serbian Orthodox Church, signed in Podgorica by Patriarch Porfirije and PM Abazovic on 3 Aug 2022; the church is headquartered in Belgrade, so the treaty sits in the Serbian sphere of influence. No state-to-state dual-citizenship agreement exists.
+  since: '2022-08-03'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  note: Signed with a church, not with the Serbian state; recorded toward SRB because the Serbian Orthodox Church is the instrument the SRB card attributes to Belgrade's influence_goal.
+  sources:
+  - url: https://www.gov.me/en/article/montenegro-and-serbian-orthodox-church-sign-fundamental-agreement
+    title: Montenegro and Serbian Orthodox Church sign Fundamental Agreement
+    publisher: Government of Montenegro
+    date: '2022-08-03'
+    tier: 1
+  - url: https://europeanwesternbalkans.com/?p=46403
+    title: Montenegro signs the agreement with the Serbian Orthodox Church
+    publisher: European Western Balkans
+    date: 2022-08
+    tier: 3
+  - url: https://atlanticinitiative.org/wp-content/uploads/2023/02/SPC-WEB.pdf
+    title: Study on the Serbian Orthodox Church (as cited in the Serbia card research)
+    publisher: Atlantic Initiative
+    date: 2023-02
+    tier: 2
+- to: SRB
+  layer: dependency
+  type: trade_share
+  summary: 'Serbia was the largest source of Montenegro''s goods imports in 2025: EUR 777.8m of EUR 4,456.2m (preliminary Monstat data).'
+  since: '2025'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 0.17
+  unit: share_of_goods_imports_2025
+  note: Derived by us from Monstat's preliminary country figures (777.8 / 4,456.2 = 17.5%).
+  sources:
+  - url: https://www.monstat.org/uploads/files/spoljna%20trgovina/2025/12/External%20trade%20in%20goods%20jan-december%202025.pdf
+    title: External trade in goods, January-December 2025 (preliminary)
+    publisher: Monstat
+    date: 2026-01
+    tier: 1
+- to: SRB
+  layer: dependency
+  type: trade_share
+  summary: 'Serbia was the largest export market for Montenegro''s goods in 2025: EUR 153.3m of EUR 572.3m (preliminary Monstat data).'
+  since: '2025'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 0.27
+  unit: share_of_goods_exports_2025
+  note: Derived by us from Monstat's preliminary country figures (153.3 / 572.3 = 26.8%).
+  sources:
+  - url: https://www.monstat.org/uploads/files/spoljna%20trgovina/2025/12/External%20trade%20in%20goods%20jan-december%202025.pdf
+    title: External trade in goods, January-December 2025 (preliminary)
+    publisher: Monstat
+    date: 2026-01
+    tier: 1
+- to: SRB
+  layer: dependency
+  type: trade_share
+  summary: Serbian tourists produced 23.4% of foreign overnights in Montenegro in 2025, the largest market ahead of Russia (16.4%) and Bosnia (8.1%).
+  since: '2025'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  value: 0.234
+  unit: share_of_foreign_overnights_2025
+  sources:
+  - url: https://monstat.org/eng/novosti.php?id=4312
+    title: Tourist arrivals and overnights in Montenegro, 2025
+    publisher: Monstat
+    date: '2026-03-05'
+    tier: 1
+- to: SRB
+  layer: dependency
+  type: investment
+  summary: Serbia was the largest source of FDI in January-October 2025 (EUR 112.05m), just ahead of Turkey (EUR 110.88m).
+  since: '2025'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  value: 112.05
+  unit: eur_millions_fdi_jan_oct_2025
+  note: Secondary relay (Italian Trade Agency quoting eKapija of preliminary central bank data); not checked against the central bank's own table.
+  sources:
+  - url: https://www.ice.it/it/news/notizie-dal-mondo/290585
+    title: 'Montenegro: foreign direct investment January-October 2025 (from eKapija)'
+    publisher: ICE - Italian Trade Agency
+    date: 2025-12
+    tier: 2
+- to: RUS
+  layer: dependency
+  type: trade_share
+  summary: Russians produced 16.4% of foreign overnights in Montenegro in 2025 (22.1% of foreign overnights in individual accommodation); Russian citizens owned about 19,000 properties in 2022 (Land Registry data cited by RFE/RL).
+  since: '2025'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  value: 0.164
+  unit: share_of_foreign_overnights_2025
+  note: The 19,000-property figure is 2022 data and ownership is often through relatives or companies; RFE/RL found that of 34 Russians first reported as having frozen property only one was on an EU sanctions list.
+  sources:
+  - url: https://monstat.org/eng/novosti.php?id=4312
+    title: Tourist arrivals and overnights in Montenegro, 2025
+    publisher: Monstat
+    date: '2026-03-05'
+    tier: 1
+  - url: https://www.rferl.org/a/montenegro-sanctions-blacklisted-russians-frozen-assets/32680495.html
+    title: 'Montenegro sanctions: blacklisted Russians, frozen assets'
+    publisher: RFE/RL
+    date: 2023-11
+    tier: 3
+- to: CHN
+  layer: dependency
+  type: debt
+  summary: Exim Bank of China loan of USD 944m (October 2014, 2% fixed) for the Smokovac-Matesevo section of the Bar-Boljare motorway; USD 721.3m outstanding after repayments as of January 2023, and a hedge signed on 17 Jan 2023 cut the rate to 0.98%. Montenegro later exited the hedge when the dollar strengthened (about USD 64m gain). The 41 km opened in July 2022.
+  since: 2014-10
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 721.28
+  unit: usd_millions_outstanding_jan_2023
+  note: Latest balance found is January 2023; the current balance and the Chinese share of public debt were not found in 2025-26 sources. Gross public debt was 58.59% of GDP in September 2025 (central bank).
+  sources:
+  - url: https://seenews.com/news/montenegro-signs-hedging-deal-for-chinese-motorway-loan-845946
+    title: Montenegro signs hedging deal for Chinese motorway loan
+    publisher: SeeNews
+    date: 2023-01
+    tier: 3
+  - url: https://www.rferl.org/amp/montenegro-exits-deal-chinese-highway-loan/32469505.html
+    title: Montenegro exits deal that hedged mammoth Chinese highway loan
+    publisher: RFE/RL
+    date: '2023'
+    tier: 3
+  - url: https://china.aiddata.org/projects/42330
+    title: 'Project 42330: Bar-Boljare motorway, Smokovac-Matesevo section (Exim Bank of China)'
+    publisher: AidData
+    date: 2014-10
+    tier: 2
+  - url: https://intellinews.com/montenegro-asks-eu-for-help-to-repay-chinese-motorway-loan-206733/
+    title: Montenegro asks EU for help to repay Chinese motorway loan
+    publisher: bne IntelliNews
+    date: 2021-04
+    tier: 3
+- to: CHN
+  layer: dependency
+  type: trade_share
+  summary: 'China was Montenegro''s second-largest source of goods imports in 2025: EUR 549.3m of EUR 4,456.2m (preliminary Monstat data).'
+  since: '2025'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 0.12
+  unit: share_of_goods_imports_2025
+  note: Derived by us (549.3 / 4,456.2 = 12.3%).
+  sources:
+  - url: https://www.monstat.org/uploads/files/spoljna%20trgovina/2025/12/External%20trade%20in%20goods%20jan-december%202025.pdf
+    title: External trade in goods, January-December 2025 (preliminary)
+    publisher: Monstat
+    date: 2026-01
+    tier: 1
+- to: DEU
+  layer: dependency
+  type: trade_share
+  summary: 'Germany was the third-largest source of Montenegro''s goods imports in 2025: EUR 452.8m of EUR 4,456.2m (preliminary Monstat data).'
+  since: '2025'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 0.1
+  unit: share_of_goods_imports_2025
+  note: Derived by us (452.8 / 4,456.2 = 10.2%).
+  sources:
+  - url: https://www.monstat.org/uploads/files/spoljna%20trgovina/2025/12/External%20trade%20in%20goods%20jan-december%202025.pdf
+    title: External trade in goods, January-December 2025 (preliminary)
+    publisher: Monstat
+    date: 2026-01
+    tier: 1
+- to: TUR
+  layer: dependency
+  type: investment
+  summary: Turkey was the second-largest source of FDI in January-October 2025 (EUR 110.88m); Erdogan describes a large Turkish investment presence and plans to widen it.
+  since: '2025'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  value: 110.88
+  unit: eur_millions_fdi_jan_oct_2025
+  note: Secondary relay of preliminary central bank data; see the Serbia investment row.
+  sources:
+  - url: https://www.ice.it/it/news/notizie-dal-mondo/290585
+    title: 'Montenegro: foreign direct investment January-October 2025 (from eKapija)'
+    publisher: ICE - Italian Trade Agency
+    date: 2025-12
+    tier: 2
+  - url: https://www.gov.me/en/article/spajic-and-erdogan-discuss-stronger-cooperation-between-montenegro-and-turkiye-high-level-cooperation-council-to-be-established
+    title: Spajic and Erdogan discuss stronger cooperation; High-Level Cooperation Council to be established
+    publisher: Government of Montenegro
+    date: '2026-07-09'
+    tier: 1
+- to: ARE
+  layer: dependency
+  type: investment
+  summary: 'The Velika Plaza project in Ulcinj: about 12 km of beach and a larger tourism and real-estate development planned for a 99-year lease to a company linked to Mohamed Alabbar (Eagle Hills), under the 2025 UAE agreement.'
+  since: '2025-04-23'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 12
+  unit: km_beach_planned_for_99_year_lease
+  note: No euro investment figure was published in the sources found; the km figure is the project's footprint, not an amount.
+  sources:
+  - url: https://www.euronews.com/2025/04/17/montenegros-iconic-beach-deal-with-uae-firm-sparks-public-outcry
+    title: Montenegro's iconic beach deal with UAE firm sparks public outcry
+    publisher: Euronews
+    date: '2025-04-17'
+    tier: 3
+  - url: https://betabriefing.com/news/region/30903-montenegrin-parliament-adopts-controversial-agreements-with-uae
+    title: Montenegrin Parliament adopts controversial agreements with UAE
+    publisher: Beta Briefing
+    date: '2025-04-23'
+    tier: 3
+  - url: https://www.balcanicaucaso.org/en/cp_article/montenegro-united-arab-emirates-agreements-transparency-concerns-and-environmental-risks/
+    title: 'Montenegro-United Arab Emirates agreements: transparency concerns and environmental risks'
+    publisher: OBC Transeuropa
+    date: '2025'
+    tier: 3
+  - url: https://a2news.com/english/rajoni-bota/ballkani/ulqini-nuk-eshte-ne-shitje-presidenti-i-malit-te-zi-rrezon--i1146737
+    title: 'Ulcinj is not for sale: the President of Montenegro overturns the law that gives the beach to the Arabs'
+    publisher: A2 News
+    date: 2025-04
+    tier: 3
+- to: org-eu
+  layer: dependency
+  type: investment
+  summary: 'EU Reform and Growth Facility envelope of EUR 383.5m for 2024-27 (about EUR 110m in grants and EUR 273m in loans), released in tranches tied to reform milestones: EUR 10.2m in 2025, EUR 44.2m in May 2026 (cumulative EUR 89.3m); a further EUR 97.3m expected in October 2026.'
+  since: '2025-07-30'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 383.5
+  unit: eur_millions_growth_plan_envelope_2024_2027
+  note: The October 2026 tranche is the minister's expectation (10 Jul 2026), not a Commission decision.
+  sources:
+  - url: https://gov.me/en/article/press-release-from-the-72nd-cabinet-session
+    title: 'Press release from the 72nd cabinet session (Reform and Growth Facility: EUR 383.5m)'
+    publisher: Government of Montenegro
+    date: '2024'
+    tier: 1
+  - url: https://mina.news/article/montenegro-receives-additional-€44-million-under-eu-growth-plan
+    title: Montenegro receives additional EUR 44 million under EU Growth Plan
+    publisher: MINA news agency
+    date: 2026-05
+    tier: 3
+- to: SRB
+  layer: action
+  type: incident
+  summary: 'Public clash over the 20th anniversary of independence: on 14 May 2026 Vucic declined an invitation and called the event a celebration of ''secession from my Serbia''; Montenegro''s Foreign Ministry answered that Montenegro ''neither seceded nor was ever part of Serbia''; Serbia''s ministry accused it of manufacturing a pretext for attacking Vucic. The main celebration took place on 21 May in Podgorica.'
+  since: '2026-05-14'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://europeanwesternbalkans.com/2026/05/15/tensions-between-belgrade-and-podgorica-flare-over-the-20th-anniversary-of-montenegros-independence-restoration/
+    title: Tensions between Belgrade and Podgorica flare over the 20th anniversary of Montenegro's independence restoration
+    publisher: European Western Balkans
+    date: '2026-05-15'
+    tier: 3
+  - url: https://n1info.rs/english/news/eualive-serbia-montenegro-tensions-flare-over-20th-independence-anniversary/
+    title: 'EUalive: Serbia-Montenegro tensions flare over 20th independence anniversary'
+    publisher: N1
+    date: 2026-05
+    tier: 3
+- to: SRB
+  layer: action
+  type: incident
+  summary: 'Tivat, early June 2026: Montenegro''s police and the National Security Agency banned 87 men who flew in from Belgrade on a charter ahead of the 5 Jun EU-Western Balkans summit, citing security risks and calling it ''hybrid activity''; Vucic said they were activists and that only five had criminal records. Accounts differ on who chartered the flight and on the men''s citizenship.'
+  since: 2026-06
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  note: The Serbia card's research dates the incident to the summit day (5 Jun 2026); the exact date of the entry ban is not confirmed in the sources found, so the month is used.
+  sources:
+  - url: https://mina.news/article/police-ban-87-serbian-nationals-from-entering-montenegro-due-to-security-risk
+    title: Police ban 87 Serbian nationals from entering Montenegro due to security risk
+    publisher: MINA news agency
+    date: 2026-06
+    tier: 3
+  - url: https://n1info.rs/english/news/vucic-serbian-nationals-deported-from-montenegro-are-activists-not-criminals/
+    title: 'Vucic: Serbian nationals deported from Montenegro are activists, not criminals'
+    publisher: N1
+    date: 2026-06
+    tier: 3
+- to: SRB
+  layer: action
+  type: incident
+  summary: 'Dual citizenship stays an open Serbian demand: the SRB card records Belgrade pressing for an agreement that would add Serbian-citizen voters (Boll 2026; Veridica 2025), no agreement exists, and in July 2026 Parliament was handling five citizenship and register drafts that the interior minister described as technical alignment for EU Chapter 23.'
+  since: '2020'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  note: Mirror of the SRB-to-MNE influence_goal row (same Boll source); no 2025-26 source gives the status of bilateral talks.
+  sources:
+  - url: https://www.veridica.ro/en/opinions/montenegros-eu-membership-is-in-sight-but-proserbians-might-still-derail-it
+    title: Montenegro's EU membership is in sight, but (pro)Serbians might still derail it
+    publisher: Veridica
+    date: '2025'
+    tier: 4
+  - url: https://rs.boell.org/en/2026/05/25/izmedu-frustracije-i-negacije-srbija-i-nezavisnost-crne-gore-dvadeset-godina-posle
+    title: Between frustration and denial - Serbia and Montenegrin independence twenty years on
+    publisher: Heinrich-Böll-Stiftung Belgrade
+    date: '2026-05-28'
+    tier: 2
+  - url: https://mina.news/article/saranovic-mup-makes-radical-shift-in-citizenship-policy
+    title: 'Saranovic: MUP makes radical shift in citizenship policy'
+    publisher: MINA news agency
+    date: 2026-07
+    tier: 3
+- to: HRV
+  layer: action
+  type: incident
+  summary: 'Jasenovac resolution of Montenegro''s Parliament (41 votes, sponsored by Mandic, July 2024) and Croatia''s response: persona non grata for Speaker Mandic, MP Knezevic and Deputy PM Becic, and a reworded European Council text cut at Croatia''s suggestion.'
+  since: '2024-07-25'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://www.aljazeera.com/news/2024/7/25/croatia-bars-3-montenegro-officials-in-diplomatic-row-over-wwii-death-camp
+    title: Croatia bans 3 Montenegro officials in diplomatic row over WWII death camp
+    publisher: Al Jazeera
+    date: '2024-07-25'
+    tier: 3
+  - url: https://n1info.rs/english/news/croatia-declares-three-montenegrin-politicians-personae-non-gratae/
+    title: Croatia declares three Montenegrin politicians personae non gratae
+    publisher: N1
+    date: 2024-07
+    tier: 3
+- to: HRV
+  layer: action
+  type: incident
+  summary: 'Croatia blocks the closing of Chapter 31 (since December 2024) and, in September 2026, Chapter 14 and others; the intergovernmental conference planned for 22 Sep 2026 was called off. Zagreb''s 22 Jul 2026 list: camp-survivor compensation, 14 missing persons, war-crimes prosecutions, property claims, the ship Jadran, a maritime-border deal, and renaming a swimming pool. Montenegro''s ministry denies the process is halted.'
+  since: 2024-12
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://brusselssignal.eu/2026/09/croatias-wartime-grievances-threaten-montenegros-eu-accession-timetable/
+    title: Croatia's wartime grievances threaten Montenegro's EU accession timetable
+    publisher: Brussels Signal
+    date: 2026-09
+    tier: 3
+  - url: https://n1info.hr/english/news/croatia-blocks-closing-of-one-policy-chapter-in-montenegros-eu-accession-talks
+    title: Croatia blocks closing of one policy chapter in Montenegro's EU accession talks
+    publisher: N1 Croatia
+    date: 2024-12
+    tier: 3
+  - url: https://mina.news/article/ibrahimovic-no-deadlock-in-negotiations-with-croatia
+    title: 'Ibrahimovic: no deadlock in negotiations with Croatia'
+    publisher: MINA news agency
+    date: '2026-06-23'
+    tier: 3
+- to: HRV
+  layer: action
+  type: incident
+  summary: Speaker Mandic sent condolences on the death of Ratko Mladic (27 Aug 2026); Croatia's foreign ministry called it 'unacceptable' and reminded Podgorica that good neighbourly relations bear on accession; the opposition DPS filed a dismissal motion with 35 signatures that failed to open for lack of a quorum on 24 Sep 2026.
+  since: '2026-08-27'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://glashrvatske.hrt.hr/en/foreign/mfea-mandic-s-condolences-on-the-death-of-ratko-mladic-unacceptable-12881090
+    title: 'MFEA: Mandic''s condolences on the death of Ratko Mladic unacceptable'
+    publisher: Croatian Radio Television (HRT)
+    date: 2026-08
+    tier: 3
+  - url: https://europeanwesternbalkans.com/2026/09/24/montenegro-assembly-fails-to-debate-mandics-dismissal/
+    title: Ruling parties withheld the quorum - Montenegro Assembly fails to debate Mandic's dismissal
+    publisher: European Western Balkans
+    date: '2026-09-24'
+    tier: 3
+- to: org-eu
+  layer: action
+  type: agreement
+  summary: Chapters 8 (competition policy) and 29 (customs union) provisionally closed at the accession conference of 14 Jul 2026, bringing the total to 18 of 33; chapters 2 and 28 were closed on 15 Jun 2026, and accession conferences were held on 16 Dec 2025, 26 Jan and 17 Mar 2026 (Chapter 21).
+  since: '2026-07-14'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://europeanwesternbalkans.com/2026/07/14/montenegro-closes-two-more-chapters-with-eu-reaches-18-out-of-33/
+    title: Montenegro closes two more chapters with EU, reaches 18 out of 33
+    publisher: European Western Balkans
+    date: '2026-07-14'
+    tier: 3
+  - url: https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1905950
+    title: 2025 Commission report on Montenegro - European Parliament resolution (adopted 17 Jun 2026)
+    publisher: European Parliament
+    date: '2026-06-17'
+    tier: 1
+- to: org-eu
+  layer: action
+  type: visit
+  summary: EU-Western Balkans summit in Tivat on 5 June 2026 with Macron, Merz and von der Leyen; von der Leyen said accession was 'within reach' and President Milatovic called 2028 'realistic and achievable'.
+  since: '2026-06-05'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://wtop.com/europe/2026/06/balkan-leaders-attend-eu-summit-in-montenegro-as-enlargement-gains-urgency/
+    title: Balkan leaders attend EU summit in Montenegro as enlargement gains urgency
+    publisher: AP via WTOP
+    date: '2026-06-05'
+    tier: 3
+- to: org-eu
+  layer: action
+  type: incident
+  summary: Montenegro asked the EU for help to repay the first instalment of the Chinese motorway loan in April 2021; the Commission replied that the EU does not repay third-country debts.
+  since: 2021-04
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://intellinews.com/montenegro-asks-eu-for-help-to-repay-chinese-motorway-loan-206733/
+    title: Montenegro asks EU for help to repay Chinese motorway loan
+    publisher: bne IntelliNews
+    date: 2021-04
+    tier: 3
+- to: RUS
+  layer: action
+  type: sanction
+  summary: Montenegro joined the EU sanctions on Russia in March 2022 and implements them (airspace and airport bans, transactions with the Russian central bank); the European Parliament (June 2026) welcomes its full CFSP alignment. In November 2025 PM Spajic pledged to tighten visa rules for Russians to the EU standard.
+  since: 2022-03
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://n1info.rs/english/news/montenegro-government-imposes-sanctions-on-russia/
+    title: Montenegro government imposes sanctions on Russia
+    publisher: N1
+    date: 2022-03
+    tier: 3
+  - url: https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1905950
+    title: 2025 Commission report on Montenegro - European Parliament resolution (adopted 17 Jun 2026)
+    publisher: European Parliament
+    date: '2026-06-17'
+    tier: 1
+  - url: https://www.euronews.com/my-europe/2025/11/20/montenegro-pm-vows-visa-restrictions-on-russian-travellers
+    title: Montenegro PM vows visa restrictions on Russian travellers
+    publisher: Euronews
+    date: '2025-11-20'
+    tier: 3
+- to: RUS
+  layer: action
+  type: expulsion
+  summary: Six Russian embassy diplomats declared persona non grata on 29 Sep 2022 during an espionage inquiry; Russia suspended its consular section in Podgorica from 30 Sep 2022.
+  since: '2022-09-29'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://rferl.org/a/montenegro-six-russian-diplomats-expelled-espionage/32059029.html
+    title: Montenegro expels six Russian diplomats over alleged espionage
+    publisher: RFE/RL
+    date: '2022-09-29'
+    tier: 3
+  - url: https://n1info.rs/english/news/consular-section-of-russian-embassy-in-montenegro-suspends-work/
+    title: Consular section of Russian embassy in Montenegro suspends work
+    publisher: N1
+    date: '2022-09-30'
+    tier: 3
+- to: RUS
+  layer: action
+  type: expulsion
+  summary: Police and the National Security Agency arrested and expelled the founder of the Russian Rybar network, Mikhail Zvinchuk (EU-sanctioned), his wife and three associates on 9 Oct 2026 for 'direct threats to national and internal security'; Rybar says it was filming at Cetinje Monastery; PM Spajic linked the case to hybrid-warfare warnings.
+  since: '2026-10-09'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  note: Claims by Pobjeda that Zvinchuk is a GRU colonel and by Baza of a criminal case are unverified and not used.
+  sources:
+  - url: https://www.occrp.org/en/news/montenegro-arrests-then-expels-russian-rybar-network-leader-associates
+    title: Montenegro arrests then expels Russian Rybar network leader, associates
+    publisher: OCCRP
+    date: '2026-10-09'
+    tier: 3
+  - url: https://www.pravda.com.ua/eng/news/2026/10/09/8057251/
+    title: Montenegro to deport Rybar propaganda network founder and four other Russians
+    publisher: Ukrainska Pravda
+    date: '2026-10-09'
+    tier: 3
+- to: RUS
+  layer: action
+  type: incident
+  summary: 'The October 2016 coup plot: the High Court convicted 13 in May 2019, including two Russian GRU officers in absentia; the Appeals Court annulled the verdict in Feb 2021; the retrial acquitted all, including Mandic and Knezevic, on 12 Jul 2024. Moscow has always denied involvement.'
+  since: '2016-10-16'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  note: Prosecutors could appeal the 2024 acquittal; no later decision was found.
+  sources:
+  - url: https://www.aljazeera.com/news/europe/2019/05/russian-spies-guilty-montenegro-coup-attempt-190509134918749.html
+    title: Russian spies found guilty of Montenegro coup attempt
+    publisher: Al Jazeera
+    date: '2019-05-09'
+    tier: 3
+  - url: https://www.aljazeera.com/news/2021/2/5/montenegro-overturns-coup-verdict-for-2-russians-11-others
+    title: Montenegro overturns coup verdict for 2 Russians, 11 others
+    publisher: Al Jazeera
+    date: '2021-02-05'
+    tier: 3
+  - url: https://ansa.it/nuova_europa/en/news/countries/montenegro/2024/07/12/montenegro-court-acquits-politicians-over-coup-plot_4fcc1ed1-e91d-4b5c-9b13-10bd05a2c84d.html
+    title: Montenegro court acquits politicians over coup plot
+    publisher: ANSA
+    date: '2024-07-12'
+    tier: 3
+- to: ARE
+  layer: action
+  type: agreement
+  summary: Parliament ratified the UAE economic cooperation and tourism and real-estate agreements on 23 Apr 2025 under urgent procedure; President Milatovic signed the first and returned the second (29 Apr 2025) citing constitutional problems and the suspension of domestic procurement and state-property rules; Parliament re-adopted it and it entered into force in June 2025; the Commission raised concern about the procurement exemption (May 2025).
+  since: '2025-04-23'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://betabriefing.com/news/region/30903-montenegrin-parliament-adopts-controversial-agreements-with-uae
+    title: Montenegrin Parliament adopts controversial agreements with UAE
+    publisher: Beta Briefing
+    date: '2025-04-23'
+    tier: 3
+  - url: https://mina.news/article/milatovic-returns-law-confirming-agreement-with-uae-for-reconsideration
+    title: Milatovic returns law confirming agreement with UAE for reconsideration
+    publisher: MINA news agency
+    date: '2025-04-29'
+    tier: 3
+  - url: https://europeanwesternbalkans.com/2025/05/09/european-commission-raises-concern-over-montenegro-uae-agreement/
+    title: European Commission raises concern over Montenegro-UAE Agreement
+    publisher: European Western Balkans
+    date: '2025-05-09'
+    tier: 3
+  - url: https://www.intellinews.com/watchdog-warns-montenegro-s-uae-development-deal-puts-eu-accession-at-risk-383453
+    title: Watchdog warns Montenegro's UAE development deal puts EU accession at risk
+    publisher: bne IntelliNews
+    date: '2025'
+    tier: 3
+- to: ARE
+  layer: action
+  type: incident
+  summary: Constitutional Court judges voted on the tourism and real-estate agreement in March 2026; MINA reports that the vote largely confirmed the objections raised by the President. No final ruling was found in the sources reached.
+  since: 2026-03
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  sources:
+  - url: https://mina.news/article/only-a-matter-of-time-before-the-constitutional-court-strikes-down-the-uae-agreement
+    title: Only a matter of time before the Constitutional Court strikes down the UAE agreement
+    publisher: MINA news agency
+    date: 2026-03
+    tier: 3
+- to: TUR
+  layer: action
+  type: visit
+  summary: 'Erdogan received PM Spajic in Ankara on 9 Jul 2026 (NATO summit week): agreement to set up a High-Level Cooperation Council, an invitation to Erdogan to visit Montenegro accepted, cooperation in trade, tourism, the defence industry and security.'
+  since: '2026-07-09'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://www.gov.me/en/article/spajic-and-erdogan-discuss-stronger-cooperation-between-montenegro-and-turkiye-high-level-cooperation-council-to-be-established
+    title: Spajic and Erdogan discuss stronger cooperation; High-Level Cooperation Council to be established
+    publisher: Government of Montenegro
+    date: '2026-07-09'
+    tier: 1
+  - url: https://en.yenisafak.com/turkiye/erdogan-hosts-montenegro-pm-spajic-for-talks-in-ankara-3720625
+    title: Erdogan hosts Montenegro PM Spajic for talks in Ankara
+    publisher: Yeni Safak
+    date: '2026-07-09'
+    tier: 3
+- to: USA
+  layer: action
+  type: visit
+  summary: 'Deputy PM and Foreign Minister Ibrahimovic in Washington on 5 Feb 2026: meetings with Representatives Titus and McBride and with Deputy Assistant Secretary Lawton on the 120th anniversary of diplomatic relations; the US called a ''strategic partner, friend and ally''; Congress''s Western Balkans Democracy and Prosperity Act welcomed.'
+  since: '2026-02-05'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://www.gov.me/en/article/ibrahimovic-in-washington-strong-montenegro-us-partnership-reaffirmed
+    title: 'Ibrahimovic in Washington: strong Montenegro-US partnership reaffirmed'
+    publisher: Government of Montenegro
+    date: '2026-02-05'
+    tier: 1
+- to: DEU
+  layer: action
+  type: visit
+  summary: 'Chancellor Merz met PM Spajic in London on 23 Oct 2025: ''continue at the same pace'', full German support, and Montenegro''s 2026 chairmanship of the Berlin Process; Spajic presented the plan to close all chapters by end-2026.'
+  since: '2025-10-23'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://www.gov.me/en/article/chancellor-merz-to-pm-spajic-continue-at-the-same-pace-full-support-from-germany
+    title: 'Chancellor Merz to PM Spajic: continue at the same pace - full support from Germany'
+    publisher: Government of Montenegro
+    date: '2025-10-23'
+    tier: 1
+- to: org-nato
+  layer: action
+  type: agreement
+  summary: Defence Minister Krapovic told the North Atlantic Council in summer 2026 that Montenegro will have troops in NATO's multinational battlegroups in Latvia and Bulgaria and keep forces in Kosovo and Iraq, and allocates over 2% of GDP to defence.
+  since: 2026-06
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://mina.news/article/krapovic-montenegro-continues-to-contribute-to-nato-security
+    title: 'Krapovic: Montenegro continues to contribute to NATO security'
+    publisher: MINA news agency
+    date: 2026-07
+    tier: 3
+  - url: https://www.gov.me/en/article/montenegro-committed-to-strengthening-collective-defence-modernising-defence-capabilities
+    title: Montenegro committed to strengthening collective defence, modernising defence capabilities
+    publisher: Government of Montenegro
+    date: '2026'
+    tier: 1
+- to: XKX
+  layer: action
+  type: agreement
+  summary: 'Montenegro supported Kosovo''s Council of Europe membership in the Committee of Ministers (Djukanovic, 2022; Abazovic, 2023: ''not directed against Serbia''); its ambassador met PM Kurti in February 2026. The recognition row itself comes from the Wikipedia recognition dataset.'
+  since: '2022'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://kossev.info/en/djukanovic-podrzavamo-zahtev-kosova-za-clanstvo-u-se/
+    title: 'Djukanovic: we support Kosovo''s request for Council of Europe membership'
+    publisher: KoSSev
+    date: '2022'
+    tier: 3
+  - url: https://kossev.info/en/abazovic-odluka-o-podrsci-ulasku-kosova-u-savet-evrope-nije-usmerena-protiv-srbije/
+    title: 'Abazovic: the decision to support Kosovo''s entry into the Council of Europe is not directed against Serbia'
+    publisher: KoSSev
+    date: '2023'
+    tier: 3
+  - url: https://kryeministri.rks-gov.net/en/?p=197048
+    title: Prime Minister Kurti met with the Ambassador of Montenegro to Kosovo, Bernard Cobaj
+    publisher: Office of the Prime Minister of Kosovo
+    date: 2026-02
+    tier: 1
+- to: ALB
+  layer: action
+  type: incident
+  summary: In late August 2026 PM Spajic said the planned closing of EU chapters would coincide with coordinated hybrid activity by at least two regional states; Montenegrin media read it as Albania and Serbia, Albania's foreign minister denied any part ('a friendly NATO ally') and Montenegro told Rama that Albania was not meant. Vucic said he was sure Croatia was one of them.
+  since: 2026-08
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  note: Spajic has not named the two countries; the identification of Albania, Serbia or Croatia is press interpretation.
+  sources:
+  - url: https://english.gazetatema.net/politics/montenegro-says-albania-not-part-of-destabilisation-claims-i346921
+    title: Montenegro says Albania not part of destabilisation claims
+    publisher: Gazeta Tema
+    date: 2026-08
+    tier: 3
+  - url: https://europeanwesternbalkans.com/2026/08/31/albania-denies-involvement-in-montenegro-destabilisation-claims-vucic-points-to-croatia/
+    title: Albania denies involvement in Montenegro destabilisation claims, Vucic points to Croatia
+    publisher: European Western Balkans
+    date: '2026-08-31'
+    tier: 3
+- to: BIH
+  layer: action
+  type: incident
+  summary: Bosnia and Herzegovina protested to Montenegro in February 2024 over Republika Srpska insignia displayed at a meeting between Speaker Mandic and Milorad Dodik; the Montenegrin Foreign Ministry said it was not responsible for the visit. In May 2024 Spajic's government declined to co-sponsor the UN Srebrenica resolution and proposed amendments instead.
+  since: 2024-02
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  note: Montenegro's exact vote in the UN General Assembly on 23 May 2024 was not confirmed.
+  sources:
+  - url: https://n1info.ba/english/news/montenegro-foreign-ministry-distances-itself-from-oversight-during-dodik-visit
+    title: Montenegro Foreign Ministry distances itself from oversight during Dodik visit
+    publisher: N1 BiH
+    date: 2024-02
+    tier: 3
+  - url: https://www.osw.waw.pl/en/publikacje/analyses/2024-06-12/srebrenica-resolution-slim-chances-reconciliation
+    title: Srebrenica resolution - slim chances for reconciliation
+    publisher: OSW Centre for Eastern Studies
+    date: '2024-06-12'
+    tier: 2
+- to: sub-rs
+  layer: action
+  type: incident
+  summary: Speaker Mandic's meeting with Republika Srpska's President Dodik (reported February 2024) displayed RS rather than Bosnian insignia; Bosnia's Foreign Ministry sent a protest note and Podgorica's ministry distanced itself from the visit's arrangements.
+  since: 2024-02
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  sources:
+  - url: https://n1info.ba/english/news/montenegro-foreign-ministry-distances-itself-from-oversight-during-dodik-visit
+    title: Montenegro Foreign Ministry distances itself from oversight during Dodik visit
+    publisher: N1 BiH
+    date: 2024-02
+    tier: 3

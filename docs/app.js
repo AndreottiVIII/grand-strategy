@@ -59,14 +59,7 @@
   let homeLens = null;                               // { kind: "org", id } | { kind: "issue", id }
   const membersOf = {};                              // org -> { actor: since }
   data.relations.forEach(r => { if (r.type === "membership") (membersOf[r.to] = membersOf[r.to] || {})[r.from] = r.since; });
-  const ISSUES = {
-    TWN: { label: "Taiwan - who recognises the Republic of China", kind: "recognition", target: "TWN" },
-    PSE: { label: "Palestine - who recognises the State of Palestine", kind: "recognition", target: "PSE" },
-    XKX: { label: "Kosovo - who recognises it", kind: "recognition", target: "XKX" },
-    UKR: { label: "Ukraine - the last General Assembly vote on the war", kind: "vote", symbol: "A/RES/ES-11/10" },
-    SREB: { label: "Srebrenica - the 2024 genocide remembrance vote", kind: "vote", symbol: "A/RES/78/282" },
-    GAZA: { label: "Gaza - the 2024 vote to end Israel's presence in the territories", kind: "vote", symbol: "A/RES/ES-10/24" },
-  };
+  const ISSUES = Object.fromEntries((data.issues || []).map(i => [i.id, { label: `${i.title} - ${i.subtitle}`, title: i.title, subtitle: i.subtitle, kind: i.kind, target: i.target, symbol: i.symbol, why: i.why, added: i.added }]));
   const voteOn = (symbol, id) => { const l = (unga.landmarks[id] || []).find(x => x.symbol === symbol); return l ? l.vote : null; };
   const VOTE_CLS = { Y: "yes", N: "no", A: "abst" };
   const VOTE_LBL = { yes: "Voted in favour", no: "Voted against", abst: "Abstained" };
@@ -413,12 +406,13 @@
   }
   function renderIssuesPage() {
     const el = document.getElementById("page-issues");
-    el.innerHTML = `<h2>Issues</h2><p class="lede">The questions that split the world today, as they can be read from the datasets: recognition tables and General Assembly votes. Pick one to see who stands where.</p>
+    el.innerHTML = `<h2>Issues</h2><p class="lede">The questions that split the world today, as the atlas can show them: recognition tables and General Assembly votes for now, the cards' disputes as they are written. The list grows as the cards do; each entry carries the date it was added. Pick one to see who stands where.</p>
       <div class="cardgrid">` + Object.entries(ISSUES).map(([k, v]) => {
         const r = v.kind === "vote" ? (unga.resolutions[v.symbol] || {}) : null;
         const cnt = v.kind === "recognition" ? Object.values(recog[v.target] || {}).reduce((m, x) => (m[x] = (m[x] || 0) + 1, m), {}) : null;
-        return `<div class="orgcard" data-id="${k}"><b>${esc(v.label.split(" - ")[0])}</b><span class="n">${esc(v.label.split(" - ")[1] || "")}</span>
-          <span class="who">${v.kind === "recognition" ? `${cnt.yes || 0} recognise · ${cnt.no || 0} do not · ${cnt.withdrew || 0} withdrew` : `${esc(r.label || "")} · ${esc(r.date || "")} · ${esc(r.tally || "")}`}</span></div>`;
+        return `<div class="orgcard" data-id="${k}"><b>${esc(v.title)}</b><span class="n">${esc(v.subtitle || "")}</span>
+          <span class="who">${v.kind === "recognition" ? `${cnt.yes || 0} recognise · ${cnt.no || 0} do not · ${cnt.withdrew || 0} withdrew` : `${esc(r.label || "")} · ${esc(r.date || "")} · ${esc(r.tally || "")}`}</span>
+          ${v.why ? `<span class="why">${esc(v.why)}</span>` : ""}<span class="added">added ${esc(v.added || "")}</span></div>`;
       }).join("") + `</div>`;
     el.querySelectorAll(".orgcard").forEach(c => c.onclick = () => showIssue(c.dataset.id));
   }

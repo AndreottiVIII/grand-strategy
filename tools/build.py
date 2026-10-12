@@ -346,6 +346,7 @@ def main():
         "stances": {k: v["stances"] for k, v in stances.items()},
         "relations": rows,
         "unga": unga,
+        "issues": (yaml.safe_load((DATA / "issues.yaml").open(encoding="utf-8")) or {}).get("issues", []) if (DATA / "issues.yaml").exists() else [],
     }
     OUT.write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":"), default=str), encoding="utf-8")
     # cache-busting: rewrite ?v= stamps in docs/index.html so GitHub Pages visitors get the new files

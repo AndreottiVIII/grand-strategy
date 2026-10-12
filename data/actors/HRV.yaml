@@ -1,9 +1,195 @@
 id: HRV
 name: Croatia
+short: Croatia
 type: state
 coords: [15.98, 45.81]
 iso2: hr
 wikipedia: https://en.wikipedia.org/wiki/Croatia
 seat: Zagreb
-regions: ['western-balkans']
-card: stub
+regions: ['western-balkans', 'europe']
+card: full
+tier: protagonist
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Deter Serbia from inside NATO and the EU, and build the national hardware to do it: the 2.08% of GDP spent on defence in 2025 is to pass 2.5% in 2027, with 12 used Rafale F3-R already delivered, 44 Leopard 2A8 tanks ordered in December 2025 (deliveries 2028-30) and about EUR 700m of new purchases announced on 4 September 2026 (18 South Korean Chunmoo launchers). Zagreb denies an arms race but reads Serbian rearmament (Chinese CM-400AKG missiles confirmed in March 2026) as a risk to report to the Alliance."
+      confidence: B
+      sources:
+        - {url: "https://vlada.gov.hr/croatia-contributes-significantly-to-collective-security-we-have-exceeded-the-2-percent-of-gdp-allocation-for-defense/45899", title: "Croatia contributes significantly to collective security: we have exceeded the 2 percent of GDP allocation for defence", publisher: "Government of Croatia", date: 2026-01-12, tier: 1}
+        - {url: "https://www.morh.hr/en/deputy-prime-minister-and-defence-minister-ivan-anusic-signs-contracts-in-berlin-for-the-delivery-of-44-leopard-2a8-tanks/", title: "Deputy Prime Minister and Defence Minister Ivan Anusic signs contracts in Berlin for the delivery of 44 Leopard 2A8 tanks", publisher: "Ministry of Defence of Croatia", date: 2025-12-10, tier: 1}
+        - {url: "https://glashrvatske.hrt.hr/en/politics/government-plans-to-invest-almost-700-million-in-the-croatian-armed-forces-12891400", title: "Government plans to invest almost 700 million in the Croatian armed forces", publisher: "HRT (Croatian public broadcaster)", date: 2026-09-04, tier: 3}
+        - {url: "https://n1info.rs/english/news/croatias-plenkovic-alerts-nato-to-serbias-acquisition-of-chinese-hypersonic-missiles/", title: "Croatia's Plenkovic alerts NATO to Serbia's acquisition of Chinese hypersonic missiles", publisher: "N1", date: 2026-03, tier: 3}
+    - rank: 2
+      text: "Sit in the core of the EU and sell it as the national project: the euro and Schengen on 1 January 2023 (internal land-border checks ended), a EUR 1.7bn allocation under the EU's SAFE defence loans, 66% of goods exports and 77% of goods imports with EU partners; Plenkovic also asks Washington for support for OECD accession."
+      confidence: A
+      sources:
+        - {url: "https://n1info.hr/english/news/croatia-set-to-join-both-euro-zone-and-schengen-travel-area-on-january-1-2023", title: "Croatia set to join both euro zone and Schengen travel area on January 1, 2023", publisher: "N1 Croatia", date: 2022-12, tier: 3}
+        - {url: "https://english.ahram.org.eg/News/483498.aspx", title: "Croatia officially adopts euro, enters borderless Schengen zone", publisher: "Ahram Online / AFP", date: 2023-01-01, tier: 3}
+        - {url: "https://podaci.dzs.hr/media/q3spz1yd/vt-2026-1-2-foreign-trade-in-goods-of-the-republic-of-croatia-2025.pdf", title: "Foreign trade in goods of the Republic of Croatia, 2025 (final data, VT-2026-1-2)", publisher: "Croatian Bureau of Statistics (DZS)", date: 2026-05-29, tier: 1}
+        - {url: "https://vlada.gov.hr/croatia-contributes-significantly-to-collective-security-we-have-exceeded-the-2-percent-of-gdp-allocation-for-defense/45899", title: "Croatia contributes significantly to collective security (SAFE loans of EUR 1.7bn)", publisher: "Government of Croatia", date: 2026-01-12, tier: 1}
+        - {url: "https://www.tportal.hr/vijesti/clanak/plenkovic-u-dubrovniku-ugostio-trumpove-ljude-pojasnili-smo-im-vaznost-janaf-a-20250907", title: "Plenkovic hosted Trump's people in Dubrovnik: we explained to them the importance of JANAF (OECD accession, double-taxation treaty)", title_original: "Plenkovic u Dubrovniku ugostio Trumpove ljude: pojasnili smo im vaznost JANAF-a", lang: hr, publisher: "tportal.hr", date: 2025-09-07, tier: 3}
+    - rank: 3
+      text: "Become the energy hub of south-eastern and central Europe, with Washington's backing: the Krk LNG terminal (booked in full to 2036; physical regasification maximum raised from 3.9 to 6.1 bcm a year in 2026), the JANAF oil pipeline (non-Russian crude for MOL and, under US licence, for Serbia's NIS) and the Southern Interconnection into Bosnia. The US deal signed at Dubrovnik on 29 April 2026 puts the hub into the American gas-supply chain."
+      confidence: B
+      sources:
+        - {url: "https://www.euronews.com/my-europe/2026/04/30/croatia-signs-us-backed-deal-to-expand-balkan-gas-infrastructure-amid-eu-climate-concerns", title: "Croatia signs US-backed deal to expand Balkan gas infrastructure amid EU climate concerns", publisher: "Euronews", date: 2026-04-30, tier: 3}
+        - {url: "https://www.connaissancedesenergies.org/afp/washington-joue-la-diplomatie-du-gaz-dans-les-balkans-260731", title: "Washington plays gas diplomacy in the Balkans: a Croatian terminal saturated until the next decade", title_original: "Washington joue la diplomatie du gaz dans les Balkans", lang: fr, publisher: "Connaissance des energies / AFP", date: 2026-07-31, tier: 3}
+        - {url: "https://n1info.rs/english/news/croatias-janaf-granted-extension-of-ofac-license-for-continued-cooperation-with-nis/", title: "Croatia's JANAF granted extension of OFAC license for continued cooperation with NIS", publisher: "N1", date: 2026-10-01, tier: 3}
+        - {url: "https://hydrocarbonprocessing.com/news/2026/02/croatia-assessing-legality-of-importing-russian-oil-eu-says/", title: "Croatia assessing legality of importing Russian oil, EU says (non-Russian crude for MOL via JANAF)", publisher: "Hydrocarbon Processing", date: 2026-02, tier: 3}
+    - rank: 4
+      text: "Keep the Croats of Bosnia and Herzegovina politically whole inside a state that survives: equal standing for the Croat constituent people (the 2022 election-law changes imposed by the High Representative, lobbied by Zagreb; the HDZ BiH's Darijana Filipovic winning the Croat presidency seat in the 4 October 2026 election on preliminary results), BiH on the EU and NATO path, and the gas pipeline into Herzegovina. Zagreb backs Bosnia's territorial integrity."
+      confidence: B
+      sources:
+        - {url: "https://n1info.ba/english/news/plenkovic-says-croatia-lobbied-for-high-rep-to-impose-bih-election-law-changes/", title: "Plenkovic says Croatia lobbied for High Rep to impose BiH election law changes", publisher: "N1 BiH", date: 2022-06, tier: 3}
+        - {url: "https://glashrvatske.hrt.hr/en/foreign/plenkovic-expects-the-outvoting-of-croats-in-bih-will-not-be-repeated-in-elections-12886878", title: "Plenkovic expects the outvoting of Croats in BiH will not be repeated in elections", publisher: "HRT (Croatian public broadcaster)", date: 2026-09, tier: 3}
+        - {url: "https://brusselssignal.eu/2026/10/nationalist-parties-tighten-grip-on-bosnia-as-dodik-claims-victory-off-the-ballot/", title: "Nationalist parties tighten grip on Bosnia as Dodik claims victory off the ballot", publisher: "Brussels Signal", date: 2026-10, tier: 3}
+        - {url: "https://n1info.ba/english/news/croatias-plenkovic-dodiks-secessionist-threats-nothing-new/", title: "Croatia's Plenkovic: Dodik's secessionist threats nothing new", publisher: "N1 BiH", date: 2023-12, tier: 3}
+    - rank: 5
+      text: "Make Serbia's road to the EU conditional on the war legacy and contest Belgrade's memory politics: 1,725 people still missing from the 1991-95 war, no cooperation on Serbian archives, Jasenovac and Vukovar as moral ground, and no stage in Croatia for Aleksandar Vucic. Plenkovic's government keeps the tone cold but denies any military alliance against Serbia; President Milanovic cancelled the Brdo-Brijuni summit rather than receive Vucic."
+      confidence: B
+      sources:
+        - {url: "https://n1info.rs/english/news/croatian-minister-search-for-missing-a-priority-despite-lack-of-cooperation-from-serbia/", title: "Croatian minister: Search for missing a priority despite lack of cooperation from Serbia", publisher: "N1", date: 2026, tier: 3}
+        - {url: "https://europeanwesternbalkans.com/2026/03/31/milanovic-cancels-brdo-brijuni-summit-citing-impossibility-of-vucics-visit-to-croatia/", title: "Milanovic cancels Brdo-Brijuni summit citing impossibility of Vucic's visit to Croatia", publisher: "European Western Balkans", date: 2026-03-31, tier: 3}
+        - {url: "https://www.hscentre.org/?p=11078", title: "Understanding the Serbo-Croat 'arms race'", publisher: "Human Security Centre", date: 2024-12-14, tier: 2}
+    - rank: 6
+      text: "Protect an economy that lives on one season and on imported labour: 21.8m tourist arrivals and a record 110.1m overnight stays in 2025, a population of about 3.88m held up only by foreign workers (56,665 arrivals against 37,485 departures in 2025, of whom 70.3% of immigrants were foreign nationals), and a goods trade that covers only 56% of imports."
+      confidence: B
+      sources:
+        - {url: "https://www.croatiaweek.com/croatia-tourism-2025-record-110-million-overnight-stays/", title: "Croatia tourism 2025: record 110 million overnight stays", publisher: "Croatia Week", date: 2026-01, tier: 3}
+        - {url: "https://podaci.dzs.hr/2026/en/121584", title: "Migration of population of the Republic of Croatia, 2025 (first release)", publisher: "Croatian Bureau of Statistics (DZS)", date: 2026-07, tier: 1}
+        - {url: "https://podaci.dzs.hr/media/q3spz1yd/vt-2026-1-2-foreign-trade-in-goods-of-the-republic-of-croatia-2025.pdf", title: "Foreign trade in goods of the Republic of Croatia, 2025 (final data)", publisher: "Croatian Bureau of Statistics (DZS)", date: 2026-05-29, tier: 1}
+
+  means:
+    - domain: diplomatic
+      text: "EU and NATO seats used as leverage over neighbours: the line that Serbia cannot close its accession without resolving missing persons (Veterans' Minister Medved), the July 2024 declaration of three Montenegrin officials as persona non grata over the Jasenovac resolution, Council of Ministers lobbying for the Bosnian election law, and the March 2025 defence declaration with Albania and Kosovo that tells Belgrade 'the time of asking permission is over'."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2024/7/25/croatia-bars-3-montenegro-officials-in-diplomatic-row-over-wwii-death-camp", title: "Croatia bans 3 Montenegro officials in diplomatic row over WWII death camp", publisher: "Al Jazeera", date: 2024-07-25, tier: 3}
+        - {url: "https://n1info.rs/english/news/croatian-minister-search-for-missing-a-priority-despite-lack-of-cooperation-from-serbia/", title: "Croatian minister: Search for missing a priority despite lack of cooperation from Serbia", publisher: "N1", date: 2026, tier: 3}
+        - {url: "https://europeanwesternbalkans.com/2025/03/24/what-is-the-aim-of-the-declaration-on-military-cooperation-between-croatia-albania-and-kosovo/", title: "A Front against Serbia?", publisher: "European Western Balkans", date: 2025-03-24, tier: 3}
+    - domain: military
+      text: "A rapid, Western-sourced rearmament funded in part by the EU: 12 used Rafale F3-R (about EUR 1.14bn, last delivered in 2025), 44 Leopard 2A8 for EUR 1.48bn (EUR 1.14bn of it from SAFE loans, EUR 144.8m credited by Berlin for tanks and fighting vehicles Croatia handed over for Ukraine), and from September 2026 18 Chunmoo launchers with a range above 300 km."
+      confidence: B
+      sources:
+        - {url: "https://www.defensenews.com/global/europe/2025/12/11/croatia-buys-german-leopard-tanks-using-eu-loans/", title: "Croatia buys German Leopard tanks using EU loans", publisher: "Defense News", date: 2025-12-11, tier: 3}
+        - {url: "https://glashrvatske.hrt.hr/en/politics/government-plans-to-invest-almost-700-million-in-the-croatian-armed-forces-12891400", title: "Government plans to invest almost 700 million in the Croatian armed forces", publisher: "HRT (Croatian public broadcaster)", date: 2026-09-04, tier: 3}
+        - {url: "https://www.euronews.com/2025/12/12/croatia-purchases-german-made-leopards-after-donating-tanks-to-ukraine", title: "Croatia purchases German-made Leopards after donating tanks to Ukraine", publisher: "Euronews", date: 2025-12-12, tier: 3}
+    - domain: economic
+      text: "Control of the Adriatic gateway: Krk LNG (booked in full to 2036, with Hungarian companies among its customers), the Adria pipeline run by JANAF (sole crude route of Serbia's refinery, and non-Russian supply for MOL in Hungary and Slovakia), and a US-built Southern Interconnection into Bosnia (about EUR 1.5bn, signed at Dubrovnik in April 2026)."
+      confidence: B
+      sources:
+        - {url: "https://www.connaissancedesenergies.org/afp/washington-joue-la-diplomatie-du-gaz-dans-les-balkans-260731", title: "Washington plays gas diplomacy in the Balkans (Krk terminal saturated to 2036)", title_original: "Washington joue la diplomatie du gaz dans les Balkans", lang: fr, publisher: "Connaissance des energies / AFP", date: 2026-07-31, tier: 3}
+        - {url: "https://hydrocarbonprocessing.com/news/2026/02/croatia-assessing-legality-of-importing-russian-oil-eu-says/", title: "Croatia assessing legality of importing Russian oil, EU says", publisher: "Hydrocarbon Processing", date: 2026-02, tier: 3}
+        - {url: "https://n1info.ba/english/news/bosnias-presidency-approves-southern-interconnection-gas-pipeline-agreement/", title: "Bosnia's Presidency approves Southern Interconnection gas pipeline agreement", publisher: "N1 BiH", date: 2026, tier: 3}
+    - domain: informational
+      text: "The memory register: Vukovar, the missing, Jasenovac as a contested site (Croatia insists any Serbian visit be official and reciprocal) and the rebuttal of Belgrade's 'greatest threat' framing - Plenkovic's line is that Croatia 'does not interfere in Serbia's internal affairs and does not form a military alliance against it'."
+      confidence: B
+      sources:
+        - {url: "https://n1info.rs/english/news/croatias-plenkovic-says-he-allayed-serbias-fears-over-croatia-albania-kosovo-cooperation/", title: "Croatia's Plenkovic says he allayed Serbia's fears over Croatia-Albania-Kosovo cooperation", publisher: "N1", date: 2026-02-19, tier: 3}
+        - {url: "https://glashrvatske.hrt.hr/en/foreign/milanovic-vucic-put-me-in-an-impossible-position-12668134", title: "Milanovic: Vucic put me in an impossible position", publisher: "HRT (Croatian public broadcaster)", date: 2026-04, tier: 3}
+        - {url: "https://n1info.rs/english/news/croatian-ambassador-we-did-not-ban-vucics-visit-to-jasenovac/", title: "Croatian ambassador: We did not ban Vucic's visit to Jasenovac", publisher: "N1", date: 2022, tier: 3}
+    - domain: economic
+      text: "EU money and the euro as shock absorbers: Schengen/euro membership since 2023, SAFE loans (EUR 1.7bn), EU-promoted infrastructure such as the Pelješac bridge (built by the Chinese state firm CRBC, tendered in 2018), and an open tourism economy (21.8m arrivals in 2025)."
+      confidence: B
+      sources:
+        - {url: "https://www.intellinews.com/croatia-picks-chinese-consortium-to-build-controversial-peljesac-bridge-135127", title: "Croatia picks Chinese consortium to build controversial Peljesac bridge", publisher: "bne IntelliNews", date: 2018-01, tier: 3}
+        - {url: "https://vlada.gov.hr/plenkovic-li-say-peljesac-bridge-symbolises-croatia-china-eu-cooperation/25722", title: "Plenkovic, Li say Peljesac bridge symbolises Croatia-China-EU cooperation", publisher: "Government of Croatia", date: 2019-04, tier: 1}
+        - {url: "https://www.croatiaweek.com/croatia-tourism-2025-record-110-million-overnight-stays/", title: "Croatia tourism 2025: record 110 million overnight stays", publisher: "Croatia Week", date: 2026-01, tier: 3}
+
+  constraints:
+    - text: "A small, ageing population that cannot staff its own economy: about 3.88m people at end-2025, net migration of +19,180 only because 70.3% of arrivals were foreigners (17.0% of arrivals came from Germany, 11.1% each from Bosnia and Nepal), while 54.2% of emigrants were aged 20-39. A national-conservative coalition partner holds the Ministry of Demography and Emigration."
+      confidence: A
+      sources:
+        - {url: "https://podaci.dzs.hr/2026/en/121584", title: "Migration of population of the Republic of Croatia, 2025 (first release)", publisher: "Croatian Bureau of Statistics (DZS)", date: 2026-07, tier: 1}
+        - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2024-05-21/croatia-plenkovics-third-government-and-a-turn-to-right", title: "Croatia: Plenkovic's third government and a turn to the right", publisher: "OSW", date: 2024-05-21, tier: 2}
+    - text: "Two voices in foreign policy. Milanovic was re-elected on 12 January 2025 with 74.9% over the HDZ's Dragan Primorac and holds the constitutional say over deployments abroad: in 2024 he refused to authorise participation in NATO's NSATU mission for Ukraine and the government's bid to join the EU training mission fell four votes short of two-thirds; in 2026 he cancelled the Brdo-Brijuni summit against the government's lower profile."
+      confidence: A
+      sources:
+        - {url: "https://glashrvatske.hrt.hr/en/politics/incumbent-president-wins-run-off-in-a-landslide-11956371", title: "Incumbent president wins run-off in a landslide", publisher: "HRT (Croatian public broadcaster)", date: 2025-01-12, tier: 3}
+        - {url: "https://n1info.hr/english/news/pm-calls-the-presidents-refusal-to-authorise-croatias-participation-in-nsatu-manipulation", title: "PM calls the president's refusal to authorise Croatia's participation in NSATU 'manipulation'", publisher: "N1 Croatia", date: 2024-10, tier: 3}
+        - {url: "https://www.richmond-news.com/politics/croatia-rejects-joining-in-eus-ukraine-training-mission-6258903", title: "Croatia rejects joining in EU's Ukraine training mission", publisher: "AP via Richmond News", date: 2024-11, tier: 3}
+    - text: "Security is collective and financed by others: the Leopard order leans on EU SAFE loans (EUR 1.14bn of EUR 1.48bn), the JANAF lever over Serbia works only with US OFAC licences (the latest extended to 30 October 2026), and the US also supplies 67% of Croatia's LNG imports. Zagreb's best cards are held in Washington and Brussels."
+      confidence: B
+      sources:
+        - {url: "https://www.defensenews.com/global/europe/2025/12/11/croatia-buys-german-leopard-tanks-using-eu-loans/", title: "Croatia buys German Leopard tanks using EU loans", publisher: "Defense News", date: 2025-12-11, tier: 3}
+        - {url: "https://n1info.rs/english/news/croatias-janaf-granted-extension-of-ofac-license-for-continued-cooperation-with-nis/", title: "Croatia's JANAF granted extension of OFAC license for continued cooperation with NIS", publisher: "N1", date: 2026-10-01, tier: 3}
+        - {url: "https://www.euronews.com/my-europe/2026/04/30/croatia-signs-us-backed-deal-to-expand-balkan-gas-infrastructure-amid-eu-climate-concerns", title: "Croatia signs US-backed deal to expand Balkan gas infrastructure", publisher: "Euronews", date: 2026-04-30, tier: 3}
+    - text: "EU law and climate rules bind the energy-hub strategy: Brussels examined whether Croatia could lawfully take Russian crude at its port (February 2026) and critics, including EU officials, say the US-backed gas deal could clash with market rules and complicate Bosnia's accession; MOL has reported JANAF to the Commission's competition authority for abuse of dominance (4 March 2026)."
+      confidence: B
+      sources:
+        - {url: "https://hydrocarbonprocessing.com/news/2026/02/croatia-assessing-legality-of-importing-russian-oil-eu-says/", title: "Croatia assessing legality of importing Russian oil, EU says", publisher: "Hydrocarbon Processing", date: 2026-02, tier: 3}
+        - {url: "https://pgjonline.com/news/2026/march/druzhba-outage-spurs-eu-complaint-over-russian-crude-transit-via-croatia-pipeline", title: "Druzhba outage spurs EU complaint over Russian crude transit via Croatia pipeline", publisher: "Pipeline & Gas Journal", date: 2026-03, tier: 3}
+        - {url: "https://www.euronews.com/my-europe/2026/04/30/croatia-signs-us-backed-deal-to-expand-balkan-gas-infrastructure-amid-eu-climate-concerns", title: "Croatia signs US-backed deal to expand Balkan gas infrastructure", publisher: "Euronews", date: 2026-04-30, tier: 3}
+    - text: "Border and sea questions parked, not solved: the 2017 Piran Bay arbitration award gave Slovenia most of the bay and a junction to the high seas, Croatia calls the process contaminated and the Sabor rejected it, and the two governments agreed in 2023 to keep the dispute out of daily politics; the Adriatic exclusive economic zones with Italy were completed only on 3 January 2026."
+      confidence: A
+      sources:
+        - {url: "https://english.sta.si/2404120/slovenia-gets-bulk-of-piran-bay-junction-access-to-high-seas", title: "Slovenia gets bulk of Piran Bay, 'junction' access to high seas", publisher: "Slovenian Press Agency (STA)", date: 2017-06-29, tier: 3}
+        - {url: "https://vlada.gov.hr/traditionally-good-and-friendly-relations-between-croatia-and-slovenia-the-border-dispute-takes-time-to-resolve/42330", title: "Traditionally good and friendly relations between Croatia and Slovenia, the border dispute takes time to resolve", publisher: "Government of Croatia", date: 2023-07-14, tier: 1}
+        - {url: "https://mvep.gov.hr/croatia-welcomes-the-establishment-of-italy-s-eez-in-the-adriatic/276707", title: "Croatia welcomes the establishment of Italy's EEZ in the Adriatic", publisher: "Ministry of Foreign and European Affairs of Croatia", date: 2026-01-07, tier: 1}
+    - text: "A trade structure that leaves Croatia exposed: goods exports cover only about 56% of imports (deficit about EUR 20bn in 2025), Germany, Italy and Slovenia each supply 12-15% of imports, Hungary supplies 7.1% (EUR 3.2bn), and Bosnia is the largest non-EU market at 10.8% of exports."
+      confidence: A
+      sources:
+        - {url: "https://podaci.dzs.hr/media/q3spz1yd/vt-2026-1-2-foreign-trade-in-goods-of-the-republic-of-croatia-2025.pdf", title: "Foreign trade in goods of the Republic of Croatia, 2025 (final data, tables by country)", publisher: "Croatian Bureau of Statistics (DZS)", date: 2026-05-29, tier: 1}
+
+  paradoxes:
+    - text: "The deterrence it builds is the arms race it denies. Rafale, Leopard, Chunmoo and the Tirana declaration are meant to make Serbia think twice, and Belgrade answers by displaying Chinese CM-400AKG missiles and calling the declaration 'the greatest threat to Serbia'; Zagreb then writes to NATO about Serbia's new weapons while Plenkovic says Serbia could not use them against its neighbours and Milanovic says Croatia must buy what its neighbours already have. Analysts (Human Security Centre) judge the war risk 'very low' but the tension real - each side's purchase confirms the other's story."
+      confidence: B
+      sources:
+        - {url: "https://www.hscentre.org/?p=11078", title: "Understanding the Serbo-Croat 'arms race'", publisher: "Human Security Centre", date: 2024-12-14, tier: 2}
+        - {url: "https://www.croatiaweek.com/croatia-nato-serbia-chinese-cm400-missile/", title: "Croatia informs NATO of Serbia's Chinese CM-400AKG missile", publisher: "Croatia Week", date: 2026-03-14, tier: 3}
+        - {url: "https://glashrvatske.hrt.hr/en/politics/milanovic-responds-to-vucic-over-serbia-s-military-build-up-during-montenegro-visit-12808310", title: "Milanovic responds to Vucic over Serbia's military build-up during Montenegro visit", publisher: "HRT (Croatian public broadcaster)", date: 2026-07, tier: 3}
+        - {url: "https://euronews.com/my-europe/2025/07/31/is-a-military-parade-in-zagreb-the-reflection-of-a-new-arms-race-in-the-balkans", title: "Is a military parade in Zagreb the reflection of a new arms race in the Balkans?", publisher: "Euronews", date: 2025-07-31, tier: 3}
+    - text: "The pipeline is a lever that Croatia does not hold. JANAF is the only crude route into Serbia and NIS is about 30% of its revenue, so closing it would hurt Serbia but also JANAF; when US sanctions on NIS took effect in October 2025 the flow stopped by American decision, and every restart since (January 2026 to 30 October 2026) rests on an OFAC licence. Croatia's leverage over Belgrade is borrowed from Washington and expires with the licence."
+      confidence: B
+      sources:
+        - {url: "https://interfax.com/newsroom/top-stories/115626/", title: "JANAF resumes crude deliveries to NIS after OFAC licence", publisher: "Interfax", date: 2026-01-15, tier: 3}
+        - {url: "https://n1info.rs/english/news/croatias-janaf-granted-extension-of-ofac-license-for-continued-cooperation-with-nis/", title: "Croatia's JANAF granted extension of OFAC license for continued cooperation with NIS", publisher: "N1", date: 2026-10-01, tier: 3}
+    - text: "Blocking Belgrade's visit gives Belgrade the pulpit. Milanovic cancelled the Brdo-Brijuni summit - the regional forum Croatia co-chaired - because Vucic could not be received, and Vucic answered that laying flowers at Jasenovac mattered more to him than the summit; Croatia lost its own platform and Belgrade kept the memorial narrative, while Podgorica's Jasenovac resolution (2024) cost three Montenegrin officials their entry and Milanovic was in Cetinje by July 2026 seeking 'normal interlocutors'."
+      confidence: B
+      sources:
+        - {url: "https://europeanwesternbalkans.com/2026/03/31/milanovic-cancels-brdo-brijuni-summit-citing-impossibility-of-vucics-visit-to-croatia/", title: "Milanovic cancels Brdo-Brijuni summit citing impossibility of Vucic's visit to Croatia", publisher: "European Western Balkans", date: 2026-03-31, tier: 3}
+        - {url: "https://dnevnik.hr/vijesti/svijet/vucic-od-procesa-brdo-brijuni-vaznije-mi-je-posjetiti-jasenovac---972002.html", title: "Vucic: visiting Jasenovac is more important to me than the Brdo-Brijuni Process", title_original: "Vucic: Od procesa Brdo-Brijuni vaznije mi je posjetiti Jasenovac", lang: hr, publisher: "Dnevnik.hr", date: 2026-03, tier: 3}
+        - {url: "https://mina.news/article/pirc-musar-and-milanovic-to-attend-milatovics-statehood-day-reception", title: "Pirc Musar and Milanovic to attend Milatovic's Statehood Day reception", publisher: "MINA news", date: 2026-07, tier: 3}
+    - text: "Protecting Croats in Bosnia depends on the principle that props up Dodik. Zagreb argues for equality of three constituent peoples and lobbied for the 2022 imposed election-law changes, but a settlement built on ethnic parity is also what lets Republika Srpska veto the state; Plenkovic waves off Dodik's secession threats as 'nothing new' and the HDZ BiH's win of the Croat seat in October 2026 on a record-low turnout shows how thin the consent is."
+      confidence: C
+      sources:
+        - {url: "https://n1info.ba/english/news/croatias-plenkovic-dodiks-secessionist-threats-nothing-new/", title: "Croatia's Plenkovic: Dodik's secessionist threats nothing new", publisher: "N1 BiH", date: 2023-12, tier: 3}
+        - {url: "https://n1info.ba/english/news/plenkovic-says-croatia-lobbied-for-high-rep-to-impose-bih-election-law-changes/", title: "Plenkovic says Croatia lobbied for High Rep to impose BiH election law changes", publisher: "N1 BiH", date: 2022-06, tier: 3}
+        - {url: "https://brusselssignal.eu/2026/10/nationalist-parties-tighten-grip-on-bosnia-as-dodik-claims-victory-off-the-ballot/", title: "Nationalist parties tighten grip on Bosnia as Dodik claims victory off the ballot", publisher: "Brussels Signal", date: 2026-10, tier: 3}
+    - text: "Sanctions discipline costs it its closest oil partner. Zagreb refused in February 2026 to pass Russian Druzhba crude through JANAF to Hungary and Slovakia, with EU backing; MOL, co-owner of INA and JANAF's customer, answered by reporting JANAF to the Commission, and the INA-MOL stake dispute that 'constrains relations' is now being reopened only because Orban lost the April 2026 election and Magyar offered a 'new chapter' on 31 August."
+      confidence: B
+      sources:
+        - {url: "https://hydrocarbonprocessing.com/news/2026/02/croatia-assessing-legality-of-importing-russian-oil-eu-says/", title: "Croatia assessing legality of importing Russian oil, EU says", publisher: "Hydrocarbon Processing", date: 2026-02, tier: 3}
+        - {url: "https://pgjonline.com/news/2026/march/druzhba-outage-spurs-eu-complaint-over-russian-crude-transit-via-croatia-pipeline", title: "Druzhba outage spurs EU complaint over Russian crude transit via Croatia pipeline", publisher: "Pipeline & Gas Journal", date: 2026-03, tier: 3}
+        - {url: "https://glashrvatske.hrt.hr/en/foreign/magyar-we-are-ready-to-discuss-ina-and-open-a-new-chapter-with-croatia-12885342", title: "Magyar: we are ready to discuss INA and open a new chapter with Croatia", publisher: "HRT (Croatian public broadcaster)", date: 2026-08-31, tier: 3}
+    - text: "Whole-hearted on Ukraine in government, blocked in the presidency. The government has sent over EUR 300m of military aid since 2022 (Rutte, January 2026), swapped M-84 tanks for a German-funded Leopard order; Milanovic, who wants humanitarian aid only, vetoed Croatian officers for NATO's NSATU in 2024 and the government's EU training mission lost its two-thirds vote. Croatia buys the Western alignment abroad and cannot deploy it at home."
+      confidence: B
+      sources:
+        - {url: "https://vlada.gov.hr/croatia-contributes-significantly-to-collective-security-we-have-exceeded-the-2-percent-of-gdp-allocation-for-defense/45899", title: "Croatia contributes significantly to collective security (Rutte: over EUR 300m in military assistance to Ukraine since 2022)", publisher: "Government of Croatia", date: 2026-01-12, tier: 1}
+        - {url: "https://n1info.hr/english/news/pm-calls-the-presidents-refusal-to-authorise-croatias-participation-in-nsatu-manipulation", title: "PM calls the president's refusal to authorise Croatia's participation in NSATU 'manipulation'", publisher: "N1 Croatia", date: 2024-10, tier: 3}
+        - {url: "https://www.richmond-news.com/politics/croatia-rejects-joining-in-eus-ukraine-training-mission-6258903", title: "Croatia rejects joining in EU's Ukraine training mission", publisher: "AP via Richmond News", date: 2024-11, tier: 3}
+
+  reading: |
+    Croatia plays the strategy of a small state that has solved its existential
+    question - NATO and the EU - and is now spending the dividend. Its first
+    objective is no longer to be admitted but to make Serbia's rearmament and
+    its own memory politics the neighbour's problem: it deters from inside the
+    Alliance, speaks to Belgrade in the voice of a member state (conditionality
+    on the missing, a reported weapons purchase, a defence declaration with
+    Tirana and Pristina) and keeps the instruments that are not its own - the
+    US licence on JANAF, EU loans for tanks, the High Representative in
+    Sarajevo - within reach. The Luttwakian pattern is that every lever is
+    borrowed and every success invites the response it was meant to prevent:
+    deterrence feeds Serbian rearmament, a refusal to receive Vucic hands him
+    the memorial stage, discipline on Russian oil prices out a Hungarian
+    partner it needs for INA. Domestically the strategy has two authors:
+    Plenkovic, EU-centred, tied to a Homeland Movement coalition, and
+    Milanovic, re-elected with 74.9%, who vetoes deployments and cancels
+    summits; Belgrade reads the harder voice. Two signals that are not
+    rows: Orban's fall in April 2026 has changed the weather with Hungary
+    overnight, and Serbia's snap election of 25 October 2026 may reset a tone
+    that Zagreb has so far refused to reset. Bosnia, where Zagreb's kin are
+    a constituent people dependent on imposed rules, is the arena in which
+    its soft power is thinnest.

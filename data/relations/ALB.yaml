@@ -1,0 +1,403 @@
+from: ALB
+relations:
+  # ---------- objective ----------
+  - to: org-eu
+    layer: objective
+    type: membership_goal
+    summary: "All negotiating clusters opened by 2025 and the first three chapters (25, 26, 30) provisionally closed on 14 Jul 2026; the government aims to finish talks by end-2027 and join by 2030, which Commissioner Kos calls realistic if rule-of-law standards hold."
+    since: 2014
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://europeanwesternbalkans.com/2026/07/15/albania-closes-its-first-three-negotiating-chapters/", title: "Albania closes its first three negotiating chapters", publisher: "European Western Balkans", date: 2026-07-15, tier: 3}
+      - {url: "https://www.aa.com.tr/en/europe/european-parliament-assesses-eu-accession-progress-of-five-western-balkan-countries/3970017", title: "European Parliament assesses EU accession progress of five Western Balkan countries", publisher: "Anadolu Agency", date: 2026-06, tier: 3}
+      - {url: "https://www.consilium.europa.eu/en/policies/albania/", title: "Albania - EU relations", publisher: "Council of the European Union", date: 2026, tier: 1}
+  - to: SRB
+    layer: objective
+    type: influence_goal
+    summary: "Rama and Vucic jointly ask for Serbia's and Albania's phased entry into the single market and Schengen without a vote, a commissioner or MEPs (FAZ, Feb 2026); the Commission and member states rejected the formula. For Tirana it is a way to get benefits of the Union ahead of full membership and to keep Serbia in the same lane."
+    since: 2026-02-28
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.euronews.com/2026/03/11/serbia-and-albania-issue-joint-text-on-eu-accession-without-veto", title: "Serbia and Albania issue joint text on EU accession without veto", publisher: "Euronews", date: 2026-03-11, tier: 3}
+      - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2026-04-30/rule-law-concerns-albania-obstacle-to-eu-accession", title: "Rule-of-law concerns - an obstacle to Albania's EU accession", publisher: "OSW Centre for Eastern Studies", date: 2026-04-30, tier: 2}
+  - to: GRC
+    layer: objective
+    type: territorial_claim
+    summary: "The Ionian maritime boundary is unresolved. The 2009 delimitation deal was annulled by Albania's Constitutional Court (2010); in Oct 2020 Dendias and Rama agreed to go to the ICJ, but no joint text exists and Greek diplomatic sources say delimitation is no longer an immediate priority (May 2026), contradicting Rama's claim at Delphi."
+    since: 2010
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.tiranatimes.com/?p=157258", title: "Frozen Courtesies: Albania-Greece relations between rhetoric and reality", publisher: "Tirana Times", date: 2026-05-02, tier: 3}
+      - {url: "https://www.tovima.gr/2020/10/20/international/greece-abania-to-refer-eez-delimitation-to-the-internationaol-court-of-justice/amp/", title: "Greece, Albania to refer EEZ delimitation to the International Court of Justice", publisher: "To Vima", date: 2020-10-20, tier: 3}
+  - to: USA
+    layer: objective
+    type: influence_goal
+    summary: "Tirana seeks a personal channel to the Trump administration - the Board of Peace founding seat without the USD 1bn fee (parliament voted 110 of 140 on 22 Jan 2026), Rama in Washington for the 19 Feb inaugural meeting, and the Kushner family's resort concession - against thin economic ties (10% tariff, exports to the US down about 30% in April 2025)."
+    since: 2026-01-22
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/01/22/albania-bulgaria-to-join-trump-s-board-of-peace", title: "Albania, Bulgaria to join Trump's 'Board of Peace'", publisher: "Reuters (via Internazionale)", date: 2026-01-22, tier: 3}
+      - {url: "https://europeanwesternbalkans.com/2026/01/22/albania-and-kosovo-to-join-trumps-board-of-peace/", title: "An initiative by the American President", publisher: "European Western Balkans", date: 2026-01-22, tier: 3}
+
+  # ---------- alignment ----------
+  - to: org-eu
+    layer: alignment
+    type: candidate
+    summary: "Candidate country with all clusters open and three chapters provisionally closed (14 Jul 2026); in the Commission's Nov 2025 package Albania was expected to conclude negotiations by end-2027 and the 2025 report found good progress on migration but widespread corruption."
+    since: 2014
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.consilium.europa.eu/en/policies/albania/", title: "Albania - EU relations", publisher: "Council of the European Union", date: 2026, tier: 1}
+      - {url: "https://europeanwesternbalkans.com/2025/11/05/key-findings-on-albania/", title: "Key findings of the 2025 European Commission report on Albania", publisher: "European Western Balkans", date: 2025-11-05, tier: 3}
+  - to: XKX
+    layer: alignment
+    type: treaty
+    summary: "Mirrored from XKX's row. Trilateral declaration on military cooperation with Kosovo and Croatia (Tirana, 18 Mar 2025), on training, education and exercises; a declaration of intent, not an alliance treaty. 13 agreements were signed by the two governments on 6 Jul 2023."
+    since: 2025-03-18
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://europeanwesternbalkans.com/2025/03/24/what-is-the-aim-of-the-declaration-on-military-cooperation-between-croatia-albania-and-kosovo/", title: "A Front against Serbia?", publisher: "European Western Balkans", date: 2025-03-24, tier: 3}
+      - {url: "https://www.tiranatimes.com/albania-croatia-and-kosovo-sign-defense-agreement-a-new-military-alliance-in-the-balkans", title: "Albania, Croatia and Kosovo sign defense agreement - a new military alliance in the Balkans", publisher: "Tirana Times", date: 2025-03, tier: 3}
+  - to: HRV
+    layer: alignment
+    type: treaty
+    summary: "Mirrored from XKX's row. Co-signatory of the 18 Mar 2025 trilateral declaration (Tirana); Bulgaria was invited to join. Serbia called it an 'arms race'."
+    since: 2025-03-18
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://euronews.com/my-europe/2025/03/25/what-will-a-new-defence-agreement-in-southeastern-europe-mean-for-the-region", title: "What will a new defence agreement in southeastern Europe mean for the region", publisher: "Euronews", date: 2025-03-25, tier: 3}
+      - {url: "https://a2news.com/english/rajoni-bota/ballkani/vucic-shqiperia-dhe-kroacia-kane-hapur-gare-armatimi-pas-me-i1143248", title: "Vucic: Albania and Croatia have started an arms race after the memorandum with Kosovo", publisher: "A2 News", date: 2025-03-19, tier: 3}
+  - to: ITA
+    layer: alignment
+    type: treaty
+    summary: "First Italy-Albania intergovernmental summit (Rome, Villa Doria Pamphilj, 13 Nov 2025): more than a dozen accords on health, energy, environment, defence industry, education, innovation, diaspora and migration; a business forum planned for the first half of 2026."
+    since: 2025-11-13
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.agi.it/politica/news/2025-11-13/italia-albania-vertice-intergovernativo-meloni-34168543/amp/", title: "Italy-Albania intergovernmental summit: a historic day for bilateral relations", publisher: "AGI", date: 2025-11-13, tier: 3}
+      - {url: "https://kryeministria.al/en/?p=52481", title: "Rama-Meloni intergovernmental summit, Rome", publisher: "Office of the Prime Minister of Albania", date: 2025-11-13, tier: 1}
+  - to: GRC
+    layer: alignment
+    type: treaty
+    summary: "The 1996 Treaty of Friendship, Cooperation, Good Neighbourliness and Security remains the highest bilateral instrument; Greece's 'law of war' with Albania is formally still in place."
+    since: 1996
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.tiranatimes.com/?p=157258", title: "Frozen Courtesies: Albania-Greece relations between rhetoric and reality", publisher: "Tirana Times", date: 2026-05-02, tier: 3}
+  - to: TUR
+    layer: alignment
+    type: treaty
+    summary: "Military cooperation agreement of 29 Jul 1992 and a joint declaration on a strategic partnership signed during Erdogan's visit to Tirana on 10 Oct 2024, with Turkish equipment and training for the Albanian armed forces."
+    since: 2024-10-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://arab.news/mr6r3", title: "Erdogan inaugurates mosque in Albania, pledges military drones as he begins Balkan tour", publisher: "Arab News", date: 2024-10-10, tier: 3}
+      - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Albania", title: "Foreign relations of Albania (1992 military cooperation agreement)", publisher: "Wikipedia (index)", date: 2026-10-12, tier: 4}
+  - to: CHN
+    layer: alignment
+    type: treaty
+    summary: "Mutual visa exemption agreement signed in Tirana in January 2023 for ordinary passports of both countries (stay of up to 90 days according to later visa guidance; early reports gave 3 months)."
+    since: 2023-01-16
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Reports differ on the permitted stay (90 days or 180 days); the shorter, later figure is quoted."
+    sources:
+      - {url: "https://english.www.gov.cn/news/internationalexchanges/202301/17/content_WS63c5e41fc6d0a757729e58c7.html", title: "China, Albania sign mutual visa exemption agreement", publisher: "Government of China (official statement)", date: 2023-01-17, tier: 1}
+
+  # ---------- dependency ----------
+  - to: ITA
+    layer: dependency
+    type: trade_share
+    summary: "Italy is Albania's main trade partner for both exports and imports; exports to Italy were ALL 145bn of ALL 346bn in 2025 (down 10.4%), about 42%. Italy accounted for 25.7% of total trade in Jan-Jul 2025."
+    value: 0.42
+    unit: share_of_exports_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "INSTAT gives the two ALL totals; the 42% is our division. A different measure, Italy's share of total trade (Jan-Jul 2025, INSTAT), was 25.7%."
+    sources:
+      - {url: "https://www.instat.gov.al/media/ojph5m2i/tregtia-e-jashtme-2025-anglisht.pdf", title: "Foreign trade 2025", publisher: "INSTAT", date: 2026, tier: 1}
+      - {url: "https://www.instat.gov.al/media/rpzhxk4m/tj-korrik-2025-ang.pdf", title: "Foreign trade in goods, July 2025", publisher: "INSTAT", date: 2025-07, tier: 1}
+  - to: org-eu
+    layer: dependency
+    type: trade_share
+    summary: "Exports to EU countries were 72.5% of Albania's total in 2025 (total exports ALL 346bn, down 6.1% on 2024)."
+    value: 0.725
+    unit: share_of_exports_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.instat.gov.al/media/ojph5m2i/tregtia-e-jashtme-2025-anglisht.pdf", title: "Foreign trade 2025", publisher: "INSTAT", date: 2026, tier: 1}
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    summary: "China was the second trade partner, 10.1% of total trade in Jan-Jul 2025 (11.4% in Jan-Jun), with imports from China up 21.8% over the same months."
+    value: 0.101
+    unit: share_of_total_trade_jan_jul_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.instat.gov.al/media/rpzhxk4m/tj-korrik-2025-ang.pdf", title: "Foreign trade in goods, July 2025", publisher: "INSTAT", date: 2025-07, tier: 1}
+  - to: org-nato
+    layer: dependency
+    type: military_presence
+    summary: "NATO financed about EUR 50m of work on the Kucova tactical air base, reopened on 4 Mar 2024 as the alliance's first base in the Western Balkans; Rama said it would host Black Hawk helicopters and Turkish drones."
+    value: 50
+    unit: eur_millions_nato_funding_kucova_upgrade
+    since: 2024-03-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.rferl.org/amp/nato-albania-air-base/32847320.html", title: "New NATO base opens in Albania at former Soviet-era 'Stalin City' air field", publisher: "RFE/RL", date: 2024-03-04, tier: 3}
+      - {url: "https://www.euronews.com/2024/03/04/albania-sets-up-first-nato-base-in-western-balkans", title: "Albania sets up first NATO base in Western Balkans", publisher: "Euronews", date: 2024-03-04, tier: 3}
+  - to: USA
+    layer: dependency
+    type: investment
+    summary: "The Sazan island and Zvernec resort led by Affinity Partners (Jared Kushner) is estimated at USD 1.6bn (EUR 1.4bn in other reports), with 1,500+ residences, a marina and hotels; it was given preliminary approval in 2026 and is under SPAK investigation over the 2024 change of the protected area's status."
+    value: 1.6
+    unit: usd_billions_estimated_sazan_zvernec_project
+    since: 2026
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "Costs differ between outlets (USD 1.6bn or EUR 1.4bn); the larger figure is kept. The project's status after June 2026 is uncertain: an Albanian environment minister reportedly told the Commission works were suspended pending an impact assessment, while Rama said the project would go ahead."
+    sources:
+      - {url: "https://www.aljazeera.com/news/2026/6/5/why-the-kushners-plan-to-build-an-albanian-resort-has-sparked-protests", title: "Kushner Island? Why a planned resort has provoked protests in Albania", publisher: "Al Jazeera", date: 2026-06-05, tier: 3}
+      - {url: "https://europeanwesternbalkans.com/2026/06/02/spak-probes-resort-project-linked-to-jared-kushner-citizens-protests-intensify/", title: "SPAK probes resort project linked to Jared Kushner, citizens' protests intensify", publisher: "European Western Balkans", date: 2026-06-02, tier: 3}
+      - {url: "https://www.intellinews.com/albania-suspends-kushner-luxury-island-resort-after-eu-warning-447429/", title: "Albania suspends Kushner luxury island resort after EU warning", publisher: "bne IntelliNews", date: 2026, tier: 3}
+  - to: ARE
+    layer: dependency
+    type: investment
+    summary: "Eagle Hills (Abu Dhabi) signed a EUR 2bn marina and port transformation at Durres in January 2023 (state stake 33%, about 450 hectares); trade press reported 20 months later that the marina project still had no developer."
+    value: 2000
+    unit: eur_millions_announced_durres_eagle_hills
+    since: 2023-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "An announced figure for a scheme whose financing close and construction start were not found; scope grew between reports."
+    sources:
+      - {url: "https://seenews.com/news/albania-uae-based-eagle-hills-in-2-bln-euro-deal-for-durres-port-expansion-813015", title: "Albania, UAE-based Eagle Hills in EUR 2bn deal for Durres port expansion", publisher: "SeeNews", date: 2023-01, tier: 3}
+      - {url: "https://www.portseurope.com/after-20-months-the-new-durres-marina-project-has-no-developer/", title: "After 20 months the new Durres marina project has no developer", publisher: "Ports Europe", date: 2024, tier: 3}
+  - to: ITA
+    layer: dependency
+    type: investment
+    summary: "Meloni counts 3,000 Italian companies operating in Albania (13 Nov 2025); Italy is second to the Netherlands in the stock of foreign investment and a leading source of tourists (over 1.2 million visitors in 2025)."
+    value: 3000
+    unit: italian_companies_in_albania_2025
+    since: 2025-11-13
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "The number is a prime-minister statement at a summit, not an official count; the ranking of investors by stock comes from the Albania Investment Council."
+    sources:
+      - {url: "https://www.italpress.com/meloni-3-mila-imprese-italiane-in-albania-business-forum-nel-2026/", title: "Meloni: 3,000 Italian firms in Albania, business forum in 2026", title_original: "Meloni: 3 mila imprese italiane in Albania, business forum nel 2026", lang: it, publisher: "Italpress", date: 2025-11-13, tier: 3}
+      - {url: "https://www.investment.com.al/wp-content/uploads/2026/05/Albania-Investment-Council_Economic-Outlook-2025.pdf", title: "Economic Outlook 2025", publisher: "Albania Investment Council", date: 2026-05, tier: 1}
+
+  # ---------- action ----------
+  - to: ITA
+    layer: action
+    type: agreement
+    summary: "Protocol (Nov 2023) for Italian-run migrant centres at Shengjin and Gjader, converted in March 2025 into repatriation centres (about 620 detainees by mid-June 2026). Advocate General Emiliou (23 Apr 2026) found it compatible with EU law with safeguards; Advocate General Medina (June 2026) stressed that EU guarantees apply to detention outside the EU; the CJEU has not ruled."
+    since: 2023-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.eunews.it/en/2026/04/23/advocate-general-says-italy-albania-migrant-protocol-is-lawful-in-principle/", title: "Advocate General says Italy-Albania migrant protocol is lawful in principle", publisher: "Eunews", date: 2026-04-23, tier: 3}
+      - {url: "https://lovguiden.dk/en/det-offentlige/eu-domstolen/2026-06-11-eu-asylregler-gaelder-ved-detention-i-albanien-vurderer-generaladvokat", title: "EU asylum rules apply to detention in Albania, Advocate General assesses", publisher: "Lovguiden", date: 2026-06-11, tier: 3}
+      - {url: "https://gr.boell.org/en/2025/09/10/fast-track-asylum-return-hubs-italy-albania-deal-trial", title: "From fast-track asylum to return hubs. The Italy-Albania deal on trial", publisher: "Heinrich Boell Foundation", date: 2025-09-10, tier: 2}
+  - to: ITA
+    layer: action
+    type: incident
+    summary: "A delegation of MEPs said on 29 Jun 2026 that it was blocked from fully inspecting the Italian-run detention centre at Gjader; the International Rescue Committee reported detainees' untreated mental-health problems and isolation."
+    since: 2026-06-29
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.euronews.com/my-europe/2026/06/29/eu-lawmakers-say-they-were-blocked-from-fully-inspecting-italys-migrant-detention-centre-i", title: "EU lawmakers say they were blocked from fully inspecting Italy's migrant detention centre in Albania", publisher: "Euronews", date: 2026-06-29, tier: 3}
+  - to: XKX
+    layer: action
+    type: visit
+    summary: "Mirrored from XKX's row. Rama visited Pristina on 16 Feb 2026 for the first meeting with the new Kurti government; a joint session of the two cabinets, last held in June 2022, is expected but undated. Rama cancelled the 2023 joint meeting over its format."
+    since: 2026-02-16
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://kryeministri.rks-gov.net/en/news/kryeministri-kurti-mirepriti-kryeministrin-e-shqiperise-edi-rama/", title: "Prime Minister Kurti welcomes Albanian Prime Minister Edi Rama", publisher: "Office of the Prime Minister of Kosovo", date: 2026-02-16, tier: 1}
+      - {url: "https://n1info.rs/english/news/rama-meeting-of-albania-kosovo-governments-canceled/", title: "Rama: meeting of Albania, Kosovo governments canceled", publisher: "N1", date: 2023, tier: 3}
+  - to: SRB
+    layer: action
+    type: incident
+    summary: "Mirrored from SRB's stance. Vucic said on 19 Mar 2025 that Albania and Croatia had started an arms race by signing the memorandum with Kosovo and that Serbia would defend itself; at Munich (Feb 2026) he called the Croatia-Albania-Kosovo cooperation the greatest threat to Serbia, and in April 2026 he announced a rearmament programme."
+    since: 2025-03-19
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://a2news.com/english/rajoni-bota/ballkani/vucic-shqiperia-dhe-kroacia-kane-hapur-gare-armatimi-pas-me-i1143248", title: "Vucic: Albania and Croatia have started an arms race after the memorandum with Kosovo", publisher: "A2 News", date: 2025-03-19, tier: 3}
+      - {url: "https://n1info.rs/english/news/croatias-plenkovic-says-he-allayed-serbias-fears-over-croatia-albania-kosovo-cooperation/", title: "Croatia's Plenkovic says he allayed Serbia's fears over Croatia-Albania-Kosovo cooperation", publisher: "N1", date: 2026-02-19, tier: 3}
+      - {url: "https://www.intellinews.com/serbia-boosts-military-capabilities-in-response-to-regional-defence-pact-387221/", title: "Serbia boosts military capabilities in response to regional defence pact", publisher: "bne IntelliNews", date: 2025, tier: 3}
+  - to: SRB
+    layer: action
+    type: agreement
+    summary: "Joint Vucic-Rama text in the Frankfurter Allgemeine Zeitung (around 28 Feb 2026) proposing phased EU integration into the single market and Schengen without veto; Serbia's EU ambassador backed it in March, the Commission and member states did not."
+    since: 2026-02-28
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Euronews reported the text on 11 Mar 2026; the FAZ date of 28 Feb comes from Serbian and Albanian summaries."
+    sources:
+      - {url: "https://www.euronews.com/2026/03/11/serbia-and-albania-issue-joint-text-on-eu-accession-without-veto", title: "Serbia and Albania issue joint text on EU accession without veto", publisher: "Euronews", date: 2026-03-11, tier: 3}
+      - {url: "https://www.tanjug.rs/english/politics/240559/apostolovic-vucic-rama-proposal-should-be-backed-by-eu-koss-position-unfair/vest", title: "Apostolovic: Vucic-Rama proposal should be backed by EU, Kos's position unfair", publisher: "Tanjug (state agency, official statement)", date: 2026-03-26, tier: 1}
+  - to: GRC
+    layer: action
+    type: incident
+    summary: "An Albanian anti-corruption court convicted Fredi Beleri, the Greek-minority mayor-elect of Himara held on remand, of vote-buying (two-year sentence, March 2024); Athens called the trial unfair and Mitsotakis tied Albania's EU progress to the case in Oct 2023."
+    since: 2024-03-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://en.protothema.gr/2024/03/06/greek-albanian-relations-frozen-after-the-mock-trial-and-the-decision-on-beleri/", title: "Greek-Albanian relations frozen after the 'mock trial' and the decision on Beleri", publisher: "Protothema", date: 2024-03-06, tier: 3}
+      - {url: "https://www.tovima.com/politics/mitsotakis-greek-albanian-relations-negatively-affected-by-beleri-case/amp/", title: "Mitsotakis: Greek-Albanian relations negatively affected by Beleri case", publisher: "To Vima", date: 2024, tier: 3}
+  - to: GRC
+    layer: action
+    type: visit
+    summary: "Rama and Mitsotakis met at the Delphi Economic Forum in 2026; Rama spoke of a new strategic partnership document within the year, and the Albanian and Greek foreign ministers met on the sidelines (energy, infrastructure, tourism). The Delphi Declaration 2026 backs faster accession for the candidates."
+    since: 2026-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.tiranatimes.com/?p=157258", title: "Frozen Courtesies: Albania-Greece relations between rhetoric and reality", publisher: "Tirana Times", date: 2026-05-02, tier: 3}
+      - {url: "https://ambasadat.gov.al/greece/en/?p=3947", title: "Foreign Minister Hoxha meets Greek Foreign Minister Gerapetritis at the Delphi Forum", publisher: "Albanian Embassy in Athens (Ministry for Europe and Foreign Affairs)", date: 2026, tier: 1}
+  - to: TUR
+    layer: action
+    type: visit
+    summary: "Erdogan visited Tirana on 10 Oct 2024: opened the Namazgah mosque (Diyanet, about EUR 30m), announced drones and equipment for the Albanian forces, and signed a strategic-partnership declaration; he called Israel's war on Gaza a 'genocide' while Rama rejected Hamas."
+    since: 2024-10-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://abcnews.go.com/International/wireStory/turkeys-erdogan-inaugurates-turkish-funded-mosque-albanias-capital-114685341", title: "Turkey's Erdogan inaugurates a Turkish-funded mosque in Albania's capital", publisher: "AP via ABC News", date: 2024-10-10, tier: 3}
+      - {url: "https://arab.news/mr6r3", title: "Erdogan inaugurates mosque in Albania, pledges military drones as he begins Balkan tour", publisher: "Arab News", date: 2024-10-10, tier: 3}
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "Albania's parliament approved on 22 Jan 2026 (110 of 140) joining Trump's Board of Peace as a founding state without a financial contribution; Rama said he would attend the inaugural meeting in Washington on 19 Feb 2026 and argued the board could help the UN act."
+    since: 2026-01-22
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/01/22/albania-bulgaria-to-join-trump-s-board-of-peace", title: "Albania, Bulgaria to join Trump's 'Board of Peace'", publisher: "Reuters (via Internazionale)", date: 2026-01-22, tier: 3}
+      - {url: "https://aa.com.tr/en/europe/albanian-premier-says-board-of-peace-could-shake-un-into-action/3835334", title: "Albanian premier says Board of Peace could shake UN into action", publisher: "Anadolu Agency", date: 2026-02, tier: 3}
+  - to: USA
+    layer: action
+    type: incident
+    summary: "Protests against the Kushner-linked Sazan/Zvernec resort began in late May 2026 and spread to Tirana, Kosovo and the diaspora; SPAK opened an investigation into the 2024 change of the protected area's status; private guards injured protesters and two security firms lost their licences. Rama said exploratory works were paused but the project would go on."
+    since: 2026-05
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://europeanwesternbalkans.com/2026/06/02/spak-probes-resort-project-linked-to-jared-kushner-citizens-protests-intensify/", title: "SPAK probes resort project linked to Jared Kushner, citizens' protests intensify", publisher: "European Western Balkans", date: 2026-06-02, tier: 3}
+      - {url: "https://www.aljazeera.com/amp/news/2026/6/4/thousands-protest-kushner-linked-coastal-resort-project-in-albania", title: "Thousands protest Kushner-linked coastal resort project in Albania", publisher: "Al Jazeera", date: 2026-06-04, tier: 3}
+      - {url: "https://www.npr.org/2026/06/16/g-s1-128162/albania-resort-protests-kushner-trump", title: "In Albania, anger grows against the government for supporting a Kushner-linked luxury resort", publisher: "NPR", date: 2026-06-16, tier: 3}
+  - to: GBR
+    layer: action
+    type: agreement
+    summary: "UK-Albania communique of December 2022 on speeding returns; over 1,000 Albanians returned and small-boat arrivals from Albania fell by more than 90% in 2023 (95% by May 2025). Starmer visited Tirana in May 2025 and ruled out sending failed asylum seekers to Albania; Rama called the Italy arrangement a 'one-off'."
+    since: 2022-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.gov.uk/government/news/milestone-reached-in-uk-albania-agreement-on-illegal-migration", title: "Milestone reached in UK-Albania agreement on illegal migration", publisher: "UK Government (Home Office)", date: 2023, tier: 1}
+      - {url: "https://euronews.com/2025/05/15/uk-in-talks-with-multiple-countries-over-asylum-seeker-return-hubs-pm-starmer-reveals", title: "UK in talks with multiple countries over asylum-seeker return hubs, PM Starmer reveals", publisher: "Euronews", date: 2025-05-15, tier: 3}
+  - to: org-nato
+    layer: action
+    type: incident
+    summary: "A draft of the Ankara summit declaration (30 Jun 2026 reporting) dropped the 2025 Hague line naming Albania as host of the next meeting after Turkey in 2026; Albania's government said 'drafts are drafts' and promised 2.6% of GDP on defence in 2026, having been below 2% in 2025."
+    since: 2026-06-30
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.al-monitor.com/originals/2026/06/next-nato-summit-albania-doubt-amid-us-reluctance-and-low-defence-spending", title: "Next NATO summit in Albania in doubt amid US reluctance and low defence spending", publisher: "Al-Monitor / Reuters", date: 2026-06-30, tier: 3}
+  - to: org-eu
+    layer: action
+    type: incident
+    summary: "Nine member states blocked delivery of the Interim Benchmark Assessment Report on judicial-independence grounds in 2026 before it was adopted; SPAK accused former minister Belinda Balluku of about EUR 251m of losses in road tenders, the governing party refused to lift her immunity, and Rama dismissed her after a Constitutional Court ruling."
+    since: 2026
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2026-04-30/rule-law-concerns-albania-obstacle-to-eu-accession", title: "Rule-of-law concerns - an obstacle to Albania's EU accession", publisher: "OSW Centre for Eastern Studies", date: 2026-04-30, tier: 2}
+      - {url: "https://europeanwesternbalkans.com/2026/07/15/albania-closes-its-first-three-negotiating-chapters/", title: "Albania closes its first three negotiating chapters", publisher: "European Western Balkans", date: 2026-07-15, tier: 3}
+  - to: RUS
+    layer: action
+    type: sanction
+    summary: "Albania has applied the EU's Russia sanctions since 2014 (decision 597/2025 lists over 2,500 entries), denied entry to 207 Russian nationals between 2022 and April 2026 and blocks RT and Sputnik; as of April 2026 no assets of sanctioned Russians had been identified."
+    since: 2014
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.reporter.al/en/2026/07/13/albanias-record-on-sanctions-against-moscow/", title: "Albania's record on sanctions against Moscow", publisher: "Reporter.al / BIRN Albania", date: 2026-07-13, tier: 3}
+  - to: IRN
+    layer: action
+    type: expulsion
+    summary: "Albania cut diplomatic relations with Iran on 7 Sep 2022 after cyberattacks on its government systems that Tirana and the Middle East Institute attribute to Iran's wish to punish the hosting of the MEK. In 2026 the US embassy warned of Iran-linked threats (1 Apr) and Tirana called the warning speculative."
+    since: 2022-09-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://mei.edu/publication/irans-balkan-front-roots-and-consequences-iranian-cyberattacks-against-albania/", title: "Iran's Balkan front: roots and consequences of Iranian cyberattacks against Albania", publisher: "Middle East Institute", date: 2023, tier: 2}
+      - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Albania", title: "Foreign relations of Albania (Iran: relations suspended 7 Sep 2022)", publisher: "Wikipedia (index)", date: 2026-10-12, tier: 4}
+      - {url: "https://www.intellinews.com/albania-on-alert-after-us-warning-of-potential-iran-linked-threats-435448/", title: "Albania on alert after US warning of potential Iran-linked threats", publisher: "bne IntelliNews", date: 2026-04, tier: 3}
+  - to: IRN
+    layer: action
+    type: incident
+    summary: "Albanian police raided the MEK camp Ashraf-3 near Tirana on 20 Jun 2023 and seized about 150 devices on a judicial order over breaches of the settlement agreement; casualty accounts conflict (the MEK-linked NCRI reported one death, Albanian officials 15 police and 21 MEK injured) and Tehran's claim that the devices went to Iran was denied."
+    since: 2023-06-20
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Casualty figures differ by side; none is adopted."
+    sources:
+      - {url: "https://iranwire.com:443/en/news/117740-albanian-police-raid-iranian-dissidents-camp-seize-computer-devices/", title: "Albanian police raid Iranian dissidents' camp, seize computer devices", publisher: "IranWire", date: 2023-06-20, tier: 3}
+      - {url: "https://iranintl.com/en/202307078478", title: "Albania denies Tehran's claim about transfer of MEK devices to Iran", publisher: "Iran International", date: 2023-07-07, tier: 3}

@@ -3,6 +3,28 @@
 Decision log, newest first. The path matters more than the destination: record why,
 not only what. Dead ends are entries too.
 
+## 2026-10-12 · The Western Balkans, built and measured
+
+Five cards in parallel on the economical model, each one agent, each with the reuse
+rule sent mid-run: Croatia 275k tokens, Montenegro 270k, Albania 252k, North Macedonia
+252k, Bosnia 251k. With Kosovo (235k) the six Balkan protagonists cost **1.54M tokens
+of research** against Serbia's 650k alone under the old flow; per card about 255k,
+plus roughly 10-15k of review each. Reuse worked: every agent mirrored Serbia's and
+Kosovo's rows with the same URLs (Croatia reused the JANAF, expulsion and recall rows;
+Albania the Tirana declaration from Kosovo; Montenegro the Böll essay and the census).
+
+Review changes, one rule for all: co-members of NATO or the EU with visible friction
+are `reluctant_ally`, never `rival` (North Macedonia toward Bulgaria and Greece,
+Albania toward Greece, Montenegro toward Croatia); the EU is a `partner` for every
+candidate, `ally` only for members (Montenegro); Bosnia's grade toward Republika Srpska
+is `rival` - the entity is the state's own territory, the actor graded is its
+leadership. Everything else kept as the agents set it, confidence C where no source on
+that side uses the word.
+
+The region now has seven full cards, every pair drawn from both sides. Estimate for the
+world: a protagonist at ~260k, a secondary at ~120k, a minor at ~40k; 75 protagonists
+~20M, 50 secondaries ~6M, 90 minors ~3.6M: about 30M tokens of research, over months.
+
 ## 2026-10-12 · Kosovo: the economical pipeline, measured
 
 One agent on the economical model, a fixed reading list, YAML written directly, build

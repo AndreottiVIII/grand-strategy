@@ -1,0 +1,421 @@
+from: BIH
+relations:
+  # ---------- objective ----------
+  - to: org-eu
+    layer: objective
+    type: membership_goal
+    summary: Candidate status in Dec 2022 and a Council decision to open negotiations in Mar 2024, but no intergovernmental conference yet, no chief negotiator named and the negotiating framework waiting for the Courts of BiH and HJPC laws; EUR 976.6m of the Growth Plan is still available, EUR 373.9m will be lost after 31 Dec 2026.
+    since: 2022-12-15
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.eeas.europa.eu/delegations/bosnia-and-herzegovina/two-years-green-light-accession-negotiations-%E2%80%93-there-still-political-will-bosnia-and-herzegovina_en", title: "Two years since the green light for accession negotiations - is there still political will in Bosnia and Herzegovina?", publisher: "EU Delegation to Bosnia and Herzegovina (EEAS)", date: 2026, tier: 1}
+      - {url: "https://europeanwesternbalkans.com/2026/10/08/bih-risks-losing-373-9-million-euros-from-the-growth-plan/", title: "BiH risks losing EUR 373.9 million from the Growth Plan", publisher: "European Western Balkans", date: 2026-10-08, tier: 3}
+  - to: org-nato
+    layer: objective
+    type: membership_goal
+    summary: Invited into a Membership Action Plan in 2010 that was never activated because Republika Srpska refuses to register defence property as state property; a new Individually Tailored Partnership Programme was agreed on 23 Oct 2025.
+    since: 2010
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "Wikipedia index for the 2025 programme; no 2026 source on movement found. Tier 4 is a pointer; the AP piece supports the MAP and the property condition."
+    sources:
+      - {url: "https://www.foxnews.com/world/nato-chief-says-bosnia-set-for-new-move-on-membership-path", title: "NATO chief says Bosnia set for new move on membership path", publisher: "AP via Fox News", date: 2018-12-04, tier: 3}
+      - {url: "https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina%E2%80%93NATO_relations", title: "Bosnia and Herzegovina-NATO relations (index)", publisher: "Wikipedia (index)", date: 2026-10-12, tier: 4}
+  - to: sub-rs
+    layer: objective
+    type: territorial_claim
+    summary: The state asserts sovereignty, territorial integrity and the writ of state justice over the whole of its territory, Republika Srpska included; the Security Council reaffirmed this in a presidential statement on 29 Dec 2025. The RS leadership wants competences (army, border police, intelligence, fiscal system) returned to the entity.
+    since: 1995-12-14
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.securitycouncilreport.org/monthly-forecast/2026-05/bosnia-and-herzegovina-15.php", title: "Bosnia and Herzegovina - May 2026 monthly forecast", publisher: "Security Council Report", date: 2026-05, tier: 2}
+      - {url: "https://europeanwesternbalkans.com/2026/05/13/schmidt-warns-of-bosnias-silent-deconstruction/", title: "Schmidt warns of Bosnia's 'silent deconstruction'", publisher: "European Western Balkans", date: 2026-05-13, tier: 3}
+  - to: SRB
+    layer: objective
+    type: recognition_sought
+    summary: Sarajevo seeks recognition of the Srebrenica genocide and an end to its denial and to the glorification of convicted commanders; Serbia voted NO on A/RES/78/282 (84-19-68) and held Mladic's funeral in Belgrade on 7 Sep 2026. Mirrors Serbia's un_vote row toward BIH.
+    since: 2024-05-23
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2024-06-12/srebrenica-resolution-slim-chances-reconciliation", title: "The Srebrenica resolution - slim chances of reconciliation", publisher: "OSW", date: 2024-06-12, tier: 2}
+      - {url: "https://www.jurist.org/news/2024/05/un-general-assembly-designate-july-11-as-international-day-of-reflection-and-commemoration-of-srebrenica-genocide", title: "UN General Assembly designates July 11 as day of commemoration of Srebrenica genocide", publisher: "JURIST", date: 2024-05-23, tier: 2}
+      - {url: "https://n1info.ba/english/news/becirovic-on-the-resolution-on-srebrenica-a-great-diplomatic-battle-is-ongoing", title: "Becirovic on the resolution on Srebrenica: a great diplomatic battle is ongoing", publisher: "N1 BiH", date: 2024-05, tier: 3}
+
+  # ---------- alignment ----------
+  - to: SRB
+    layer: alignment
+    type: treaty
+    summary: The Dayton Peace Agreement (1995) is the constitutional frame in which Bosnia and Serbia are both bound; Serbia declares 'full respect for the 1995 Dayton accords' while refusing to accept the Bosnian court's verdict on Dodik and keeping its 2006 special parallel relations with Republika Srpska. Mirrors Serbia's rows toward BIH and sub-rs.
+    since: 1995-12-14
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.arabnews.com/node/2610396/amp", title: "Serbia refuses to accept Bosnian court verdict on Dodik", publisher: "AFP via Arab News", date: 2025-08-02, tier: 3}
+      - {url: "https://www.srbija.gov.rs/vest/en/26992/serbia-republika-srpska-sign-agreement-on-establishing-special-parallel-relations.php", title: "Serbia, Republika Srpska sign agreement on establishing special parallel relations", publisher: "Government of Serbia", date: 2006-09-26, tier: 1}
+  - to: org-eu
+    layer: alignment
+    type: candidate
+    summary: EU candidate since Dec 2022; the European Council opened the way to negotiations in Mar 2024, and the EU confirmed the membership perspective at the June 2026 EU-Western Balkans summit, conditional on concrete reform progress.
+    since: 2022-12-15
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.eeas.europa.eu/delegations/bosnia-and-herzegovina/two-years-green-light-accession-negotiations-%E2%80%93-there-still-political-will-bosnia-and-herzegovina_en", title: "Two years since the green light for accession negotiations - is there still political will in Bosnia and Herzegovina?", publisher: "EU Delegation to Bosnia and Herzegovina (EEAS)", date: 2026, tier: 1}
+
+  # ---------- dependency ----------
+  - to: org-eu
+    layer: dependency
+    type: trade_share
+    summary: The EU took EUR 6.34bn (KM 12.405bn) of Bosnia's exports in 2025, about 73% of the KM 16.974bn total, and supplied KM 17.405bn of imports; the overall goods deficit was KM 12.98bn (exports 56.7% of imports).
+    value: 0.73
+    unit: share_of_exports_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "The 73% is our calculation from the Agency for Statistics totals as reported by N1 and FENA; FENA's headline gives 'more than two thirds'; FTC BiH estimated 70% for the first half."
+    sources:
+      - {url: "https://n1info.ba/english/news/bosnia-records-1298-billion-marks-foreign-trade-deficit-in-2025/", title: "Bosnia records 12.98 billion marks foreign trade deficit in 2025", publisher: "N1 BiH (citing Agency for Statistics)", date: 2026, tier: 3}
+      - {url: "https://fena.ba/article/1653942/more-than-two-thirds-of-bih-exports-go-to-the-eu", title: "More than two thirds of BiH exports go to the EU", publisher: "FENA", date: 2025-11-26, tier: 3}
+  - to: org-eu
+    layer: dependency
+    type: investment
+    summary: Growth Plan (Reform and Growth Instrument) money still available up to EUR 976.6m, already cut by 10% in 2025; EUR 373.9m is lost for good if the first 50 reform steps are not done by 31 Dec 2026. The Courts of BiH law and the HJPC law are the blocked reforms.
+    value: 976.6
+    unit: eur_millions_growth_plan_available_2026
+    since: 2024
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://europeanwesternbalkans.com/2026/10/08/bih-risks-losing-373-9-million-euros-from-the-growth-plan/", title: "BiH risks losing EUR 373.9 million from the Growth Plan", publisher: "European Western Balkans", date: 2026-10-08, tier: 3}
+  - to: org-eu
+    layer: dependency
+    type: military_presence
+    summary: EUFOR Althea, an EU-led force under a Chapter VII Security Council mandate, with 24 contributing nations; the 2025 reserve forces (a Czech company, Romanian troops and Italian helicopters) added about 300 in March 2025. Mandate expires 31 Oct 2026.
+    value: 1000
+    unit: eufor_troops_approx_2025
+    since: 2004
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "Figures conflict: RFE/RL says about 1,000 soldiers from 24 countries; Militarnyi (March 2025) says about 1,500; an older N1 piece says 600. No official EUFOR strength figure was reached; the figure given by RFE/RL is kept."
+    sources:
+      - {url: "https://www.slobodnaevropa.org/a/rumunija-rezervni-sastav-eufor-althea-bih/33348106.html", title: "Romania sends EUFOR Althea reserve force to Bosnia", publisher: "RFE/RL", date: 2025-03, tier: 3}
+      - {url: "https://militarnyi.com/en/news/eufor-reinforces-troops-in-bosnia-and-herzegovina/", title: "EUFOR reinforces troops in Bosnia and Herzegovina", publisher: "Militarnyi", date: 2025-03, tier: 4}
+      - {url: "https://n1info.ba/english/news/eu-spec-rep-welcomes-eufor-reserve-forces/", title: "EU Special Representative welcomes EUFOR reserve forces", publisher: "N1 BiH", date: 2025-03, tier: 3}
+  - to: DEU
+    layer: dependency
+    type: military_presence
+    summary: The Bundestag approved on 11 Jun 2026 continued German participation in EUFOR Althea with up to 50 soldiers (training, advice, liaison and observation teams in Vlasenica and Capljina).
+    value: 50
+    unit: german_troops_authorised_eufor_2026
+    since: 2026-06-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.bundestag.de/ausschuesse/verteidigung/eufor-althea-1075806", title: "EUFOR Althea - Defence Committee", publisher: "German Bundestag", date: 2026-06-11, tier: 1}
+  - to: RUS
+    layer: dependency
+    type: energy_import
+    summary: Bosnia takes all its natural gas from Russia, delivered through Serbia via TurkStream and a single 1979 pipeline (up to about 8% of its energy use). The Southern Interconnection with Croatia is the planned alternative; the US State Department warned Sarajevo in June 2026 against delay after RS officials met Gazprom.
+    value: 1.0
+    unit: share_of_gas_imports
+    since: 1990
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "One press source for the 100% (relayed by Gazeta Tema); the 8% of total energy use is an older figure. No official 2025 gas-balance figure was reached."
+    sources:
+      - {url: "https://english.gazetatema.net/kosovo-region/us-warns-bosnia-over-russian-gas-ties-i345743", title: "US warns Bosnia over Russian gas ties", publisher: "Gazeta Tema", date: 2026-06, tier: 3}
+      - {url: "https://pgjonline.com/news/2025/november/us-backed-pipeline-plan-aims-to-supply-bosnia-with-lng-reduce-russian-gas-reliance", title: "US-backed pipeline plan aims to supply Bosnia with LNG, reduce Russian gas reliance", publisher: "Pipeline & Gas Journal", date: 2025-11, tier: 3}
+  - to: SRB
+    layer: dependency
+    type: trade_share
+    summary: Serbia is Bosnia's third export market (about KM 900m, EUR 460m, in H1 2025) and the third trade partner (about 10.8% of 2025 total trade by FIPA's reading); Russian gas also reaches Bosnia only across Serbian territory.
+    value: 900
+    unit: exports_bam_millions_h1_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Export destinations are the H1 2025 figures reported by N1 from the Agency for Statistics; the 10.77% share of total 2025 trade comes from a FIPA table relayed in search, not read directly."
+    sources:
+      - {url: "https://n1info.ba/english/news/bosnia-sees-modest-foreign-trade-growth-in-first-half-of-2025/", title: "Bosnia sees modest foreign trade growth in first half of 2025", publisher: "N1 BiH (citing Agency for Statistics)", date: 2025, tier: 3}
+  - to: HRV
+    layer: dependency
+    type: trade_share
+    summary: Croatia is Bosnia's first export market in H1 2025 (about KM 1.3bn, EUR 664m) and its second trade partner overall; it is also the sea outlet and the planned gas route.
+    value: 1300
+    unit: exports_bam_millions_h1_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://n1info.ba/english/news/bosnia-sees-modest-foreign-trade-growth-in-first-half-of-2025/", title: "Bosnia sees modest foreign trade growth in first half of 2025", publisher: "N1 BiH (citing Agency for Statistics)", date: 2025, tier: 3}
+  - to: DEU
+    layer: dependency
+    type: trade_share
+    summary: Germany took about KM 1.28bn (EUR 654m) of Bosnia's exports in H1 2025, second only to Croatia, and is the first trade partner overall (about 12.5% of 2025 total trade by FIPA's reading).
+    value: 1280
+    unit: exports_bam_millions_h1_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://n1info.ba/english/news/bosnia-sees-modest-foreign-trade-growth-in-first-half-of-2025/", title: "Bosnia sees modest foreign trade growth in first half of 2025", publisher: "N1 BiH (citing Agency for Statistics)", date: 2025, tier: 3}
+  - to: DEU
+    layer: dependency
+    type: remittances
+    summary: Personal transfers from abroad reached a record KM 4.46bn in 2025 (current transfers KM 5.92bn), up about KM 290m on 2024; Germany is the main destination of Bosnian emigrants. The World Bank series put remittances at 10.55% of GDP in 2024.
+    value: 4.46
+    unit: bam_billions_personal_transfers_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "The value is the total of personal transfers from all countries, not Germany's share; no breakdown by origin was found. The 10.55% of GDP (World Bank, 2024) comes from a tier-4 relay."
+    sources:
+      - {url: "https://cbbh.ba/press/ShowNews/1771", title: "Record inflow of current transfers in 2025", publisher: "Central Bank of Bosnia and Herzegovina", date: 2026, tier: 1}
+      - {url: "https://www.theglobaleconomy.com/Bosnia-and-Herzegovina/remittances_percent_GDP/", title: "Bosnia and Herzegovina: remittances, percent of GDP", publisher: "TheGlobalEconomy.com (World Bank series)", date: 2024, tier: 4}
+  - to: CHN
+    layer: dependency
+    type: investment
+    summary: Bosnian lawmakers approved a USD 1.04bn loan from a Beijing lender in March 2019 for Tuzla Block 7; the project is troubled. Earlier Chinese-built plants include Stanari (2016) and Gacko (EUR 818m); China is the largest Asian partner but a small direct investor.
+    value: 1040
+    unit: usd_millions_tuzla_block7_loan_approved_2019
+    since: 2019-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "Other sources show different amounts for the Tuzla loan; check the parliamentary document before relying on the figure."
+    sources:
+      - {url: "https://ecfr.eu/bosnia-and-herzegovina/", title: "Bosnia and Herzegovina - China Global Policy Tracker", publisher: "ECFR", date: 2024, tier: 2}
+      - {url: "https://chinaobservers.eu/chinas-multi-vector-engagement-in-bosnia-and-herzegovina/", title: "China's multi-vector engagement in Bosnia and Herzegovina", publisher: "China Observers in Central and Eastern Europe", date: 2025, tier: 2}
+  - to: SAU
+    layer: dependency
+    type: investment
+    summary: Saudi Arabia has invested about EUR 201.1m in Bosnia (13th among foreign investors, about 2%), half of it in real estate, then banking and tourism; Bosna Bank International in Sarajevo is the main holding.
+    value: 201.1
+    unit: eur_millions_cumulative_fdi_may_2025
+    since: 2025-05
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "FIPA figure as relayed by a search summary; the exact FIPA page for the number was not read."
+    sources:
+      - {url: "https://fipa.vijeceministara.gov.ba/en/portal/post/a-delegation-of-businesspeople-from-the-kingdom-of-saudi-arabia-visited-fipa-638834744980000000", title: "A delegation of businesspeople from the Kingdom of Saudi Arabia visited FIPA", publisher: "Foreign Investment Promotion Agency of BiH", date: 2025, tier: 1}
+
+  # ---------- action ----------
+  - to: sub-rs
+    layer: action
+    type: incident
+    summary: The State Court sentenced Milorad Dodik to one year and a six-year ban for defying the High Representative (26 Feb 2025); the next day the RS National Assembly banned state judicial and police institutions from operating in the entity (the OHR said it hinted at de facto secession). The Constitutional Court suspended the laws on 7 Mar 2025 and annulled them in May; an appeals court upheld the verdict on 1 Aug 2025.
+    since: 2025-02-26
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.securitycouncilreport.org/monthly-forecast/2026-05/bosnia-and-herzegovina-15.php", title: "Bosnia and Herzegovina - May 2026 monthly forecast", publisher: "Security Council Report", date: 2026-05, tier: 2}
+      - {url: "https://www.washingtontimes.com/news/2025/mar/7/bosnias-top-court-temporarily-suspending-separatist-laws-adopted/", title: "Bosnia's top court temporarily suspending separatist laws adopted by Bosnian Serbs", publisher: "AP via Washington Times", date: 2025-03-07, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2025/8/1/bosnia-appeals-court-upholds-bosnian-serb-leaders-sentence", title: "Bosnia appeals court upholds Bosnian Serb leader's sentence", publisher: "Al Jazeera", date: 2025-08-01, tier: 3}
+  - to: sub-rs
+    layer: action
+    type: incident
+    summary: The Central Election Commission stripped Dodik of the RS presidency in Aug 2025 after the final verdict; the Constitutional Court rejected his appeal in Nov 2025. On 18 Oct 2025 the RS Assembly installed Ana Trisic-Babic as acting president and repealed the laws the Constitutional Court had annulled.
+    since: 2025-08-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/8/6/separatist-bosnian-serb-leader-dodik-sacked-from-office-by-bosnia-officials", title: "Separatist Bosnian Serb leader Dodik removed from office", publisher: "Al Jazeera", date: 2025-08-06, tier: 3}
+      - {url: "https://n1info.ba/english/news/bih-constitutional-court-rejects-dodiks-appeal-confirms-loss-of-rs-presidency-mandate", title: "BiH Constitutional Court rejects Dodik's appeal, confirms loss of RS presidency mandate", publisher: "N1 BiH", date: 2025-11, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2025/10/18/bosnias-republika-srpska-installs-temporary-president-as-dodik-steps-aside", title: "Bosnia's Republika Srpska installs temporary president as Dodik steps aside", publisher: "Al Jazeera", date: 2025-10-18, tier: 3}
+  - to: sub-rs
+    layer: action
+    type: incident
+    summary: Early RS presidential election on 23 Nov 2025 won narrowly by Sinisa Karan (SNSD); the CEC annulled 136 polling stations on 24 Dec 2025 and in the rerun of 8 Feb 2026 Karan again beat Branko Blanusa. Dodik, on 6 Feb 2026 in Washington with Trisic-Babic and Cvijanovic, asked for US support to define RS status.
+    since: 2025-11-23
+    until: 2026-02-08
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.securitycouncilreport.org/monthly-forecast/2026-05/bosnia-and-herzegovina-15.php", title: "Bosnia and Herzegovina - May 2026 monthly forecast", publisher: "Security Council Report", date: 2026-05, tier: 2}
+      - {url: "https://fena.ba/article/1665134/konakovic-dodik-sought-lobbying-in-the-u-s-for-rs-independence-and-the-abolition-of-ohr", title: "Konakovic: Dodik sought lobbying in the U.S. for RS independence and the abolition of OHR", publisher: "FENA", date: 2026-02-10, tier: 3}
+  - to: sub-rs
+    layer: action
+    type: incident
+    summary: In the general elections of 4 Oct 2026 SNSD kept the entity (Savo Minic elected RS president, about 202,000 votes to 161,000), Zeljka Cvijanovic (SNSD) won a second term in the Presidency with about 55%, and overall turnout fell to about 42%, a record low. Dodik, barred from office, declared victory 'at all levels' and said he would not change course.
+    since: 2026-10-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Preliminary results; the CEC had not certified the final count when checked."
+    sources:
+      - {url: "https://balkaninsight.com/2026/10/05/bosnian-election-sees-record-low-turnout-dodik-triumphant-presidency-reshaped/bi/", title: "Bosnian election sees record low turnout, Dodik triumphant, Presidency reshaped", publisher: "Balkan Insight (BIRN)", date: 2026-10-05, tier: 3}
+      - {url: "https://europeanwesternbalkans.com/2026/10/05/what-are-the-preliminary-results-of-bihs-general-elections/", title: "What are the preliminary results of BiH's general elections?", publisher: "European Western Balkans", date: 2026-10-05, tier: 3}
+  - to: USA
+    layer: action
+    type: sanction
+    summary: The US Treasury (OFAC) removed sanctions on Dodik on 29 Oct 2025 (four associates on 17 Oct) - 48 persons and entities in all, including Cvijanovic and RS Speaker Stevandic - after a Western Balkans policy review; Washington called it a 'responsive measure' to the RS repeal of its laws. A bipartisan group in Congress asked on 27 Mar 2026 for the sanctions to be reimposed.
+    since: 2025-10-29
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://n1info.ba/english/news/us-treasury-lifts-sanctions-on-milorad-dodik-and-other-republika-srpska-officials", title: "US Treasury lifts sanctions on Milorad Dodik and other Republika Srpska officials", publisher: "N1 BiH", date: 2025-10-29, tier: 3}
+      - {url: "https://www.occrp.org/en/news/us-lifts-sanctions-against-pro-russian-bosnian-serb-leader", title: "US lifts sanctions against pro-Russian Bosnian Serb leader", publisher: "OCCRP", date: 2025-10-29, tier: 3}
+      - {url: "https://www.securitycouncilreport.org/monthly-forecast/2026-05/bosnia-and-herzegovina-15.php", title: "Bosnia and Herzegovina - May 2026 monthly forecast", publisher: "Security Council Report", date: 2026-05, tier: 2}
+  - to: USA
+    layer: action
+    type: incident
+    summary: "High Representative Christian Schmidt announced his resignation on 10 May 2026 and told the Security Council on 12 May that Bosnia is at a crossroads between stability and stagnation; Reuters reported 'enormous' US pressure. The Peace Implementation Council failed on 4 June (US: Zanardi Landi; France, UK, Germany: Troccaz) and on 14 July to agree a successor; Louis J. Crishock, a US diplomat and Principal Deputy, has been Acting High Representative since 1 Jul 2026."
+    since: 2026-05-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "No later source on the appointment was found; the OHR's current status after mid-July 2026 is a gap."
+    sources:
+      - {url: "https://n1info.ba/english/news/high-representative-christian-schmidt-to-step-down-after-nearly-five-years/", title: "High Representative Christian Schmidt to step down after nearly five years", publisher: "N1 BiH", date: 2026-05-10, tier: 3}
+      - {url: "https://uk.marketscreener.com/news/bosnia-seeks-new-peace-envoy-after-sudden-schmidt-exit-ce7f5ddfdf81fe21", title: "Bosnia seeks new peace envoy after sudden Schmidt exit", publisher: "Reuters (via MarketScreener)", date: 2026-06, tier: 3}
+      - {url: "https://www.ohr.int/acting-high-representative-louis-j-crishock-assumes-office/", title: "Acting High Representative Louis J. Crishock assumes office", publisher: "Office of the High Representative", date: 2026-07-01, tier: 1}
+      - {url: "https://europeanwesternbalkans.com/2026/07/14/still-no-agreement-on-the-new-high-representative-for-bosnia-and-herzegovina/", title: "Still no agreement on the new High Representative for Bosnia and Herzegovina", publisher: "European Western Balkans", date: 2026-07-14, tier: 3}
+  - to: org-un
+    layer: action
+    type: un_vote
+    summary: The Security Council reauthorised EUFOR Althea for 12 months on 31 Oct 2025 by 15-0-0 (Resolution 2795), and adopted a presidential statement on 29 Dec 2025 reaffirming Bosnia's sovereignty and territorial integrity. The authorisation expires on 31 Oct 2026; the October 2026 programme pairs the semi-annual debate with the renewal. Russia and China do not recognise Schmidt and call for the OHR's closure.
+    since: 2025-10-31
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://unscr.com/en/resolutions/2795/", title: "Resolution 2795 (2025) - EUFOR Althea reauthorisation", publisher: "UNSCR.com (UN document mirror)", date: 2025-10-31, tier: 3}
+      - {url: "https://www.securitycouncilreport.org/monthly-forecast/2026-05/bosnia-and-herzegovina-15.php", title: "Bosnia and Herzegovina - May 2026 monthly forecast", publisher: "Security Council Report", date: 2026-05, tier: 2}
+      - {url: "https://www.securitycouncilreport.org/atf/cf/%7B65BFCF9B-6D27-4E9C-8CD3-CF6E4FF96FF9%7D/2026_10_forecast.pdf", title: "October 2026 monthly forecast (overview)", publisher: "Security Council Report", date: 2026-10, tier: 2}
+  - to: SRB
+    layer: action
+    type: expulsion
+    summary: On 8 Sep 2026, the day after Mladic's funeral in Belgrade, Foreign Minister Konakovic gave Serbia's military attache and an intelligence adviser 48 hours to leave Sarajevo, withdrew most staff from the Belgrade embassy (the ambassador and consul stay, the Presidency decides on them), moved work to the Zagreb and Podgorica embassies and suspended Bosnia's signature of the Western Balkans good-neighbourly memorandum due in Montenegro on 1 Oct. Serbia's foreign minister called it hypocrisy; Vucic said Serbia would not react to 'hysterical reactions'.
+    since: 2026-09-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/09/08/bosnia-expels-two-serbian-embassy-diplomats-in-protest-over-mladic-funeral", title: "Bosnia expels two Serbian embassy diplomats in protest over Mladic funeral", publisher: "Reuters (via Internazionale)", date: 2026-09-08, tier: 3}
+      - {url: "https://n1info.rs/english/news/bosnia-foreign-minister-announces-withdrawal-of-staff-from-belgrade-over-mladic-funeral-and-official-honors/", title: "Bosnia Foreign Minister announces withdrawal of staff from Belgrade over Mladic funeral and official honors", publisher: "N1", date: 2026-09-08, tier: 3}
+      - {url: "https://vreme.com/en/vesti/odjeci-sahrana-ratko-mladic-srbija-nece-histericno-reagovati-vucic/", title: "Aftermath of Mladic's funeral: Serbia will not react hysterically, Vucic", publisher: "Vreme", date: 2026-09, tier: 3}
+  - to: SRB
+    layer: action
+    type: un_vote
+    summary: A/RES/78/282 (23 May 2024), which makes 11 July the International Day of Reflection and Commemoration of the 1995 Srebrenica genocide, passed 84-19-68; Serbia, Russia, China and Hungary were among the 19 NO votes after a Vucic-Dodik lobbying campaign, while Sarajevo's Presidency led the diplomatic effort for it. Mirrors Serbia's un_vote row toward BIH.
+    since: 2024-05-23
+    until: 2024-05-23
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2024-06-12/srebrenica-resolution-slim-chances-reconciliation", title: "The Srebrenica resolution - slim chances of reconciliation", publisher: "OSW", date: 2024-06-12, tier: 2}
+      - {url: "https://www.jurist.org/news/2024/05/un-general-assembly-designate-july-11-as-international-day-of-reflection-and-commemoration-of-srebrenica-genocide", title: "UN General Assembly designates July 11 as day of commemoration of Srebrenica genocide", publisher: "JURIST", date: 2024-05-23, tier: 2}
+      - {url: "https://www.click2houston.com/news/world/2024/05/23/un-will-vote-on-commemorating-the-1995-srebrenica-genocide-annually-which-serbs-vehemently-oppose/", title: "UN will vote on commemorating the 1995 Srebrenica genocide annually, which Serbs vehemently oppose", publisher: "AP via Click2Houston", date: 2024-05-23, tier: 3}
+  - to: RUS
+    layer: action
+    type: visit
+    summary: A Republika Srpska delegation - Dodik, president Karan, Speaker Stevandic, later premier Minic - went to Moscow for Victory Day on 9 May 2026 and met Putin; Dodik called the relationship strategic and said RS prevents Bosnia from imposing sanctions on Russia. An entity delegation, not a state one; the state-level foreign ministry plays no part.
+    since: 2026-05-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Dodik's claims about blocking sanctions are his own assertions and are not verified. Most coverage is from RS-friendly Serbian media; the independent account of the Kremlin meeting is missing."
+    sources:
+      - {url: "https://europeanwesternbalkans.com/2026/05/08/delegation-from-republika-srpska-to-meet-putin-on-9-may/", title: "Delegation from Republika Srpska to meet Putin on 9 May", publisher: "European Western Balkans", date: 2026-05-08, tier: 3}
+      - {url: "https://n1info.rs/region/dodik-za-sutra-najavio-vise-susreta-s-putinom-u-moskvi/", title: "Dodik announced several meetings with Putin in Moscow tomorrow", title_original: "Dodik za sutra najavio više susreta s Putinom u Moskvi", lang: sr, publisher: "N1", date: 2026-05-08, tier: 3}
+  - to: HUN
+    layer: action
+    type: visit
+    summary: Orban hosted Dodik in Budapest despite the Bosnian arrest warrant (2025), saying Hungary does not recognise the Bosnian court ruling, and on 26 Nov 2025 received him with the new RS president-elect Karan. Hungary's Eximbank lent the entity HUF 45bn in 2022. Orban lost the 12 Apr 2026 election to Peter Magyar's Tisza.
+    since: 2025-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://n1info.ba/english/news/orban-hosts-dodik-despite-arrest-warrant-and-conviction-in-bosnia/", title: "Orban hosts Dodik despite arrest warrant and conviction in Bosnia", publisher: "N1 BiH", date: 2025, tier: 3}
+      - {url: "https://telex.hu/english/2025/11/26/dodik-brings-confidant-new-rs-president-elect-karan-to-meet-with-orban", title: "Dodik brings confidant, new RS president-elect Karan to meeting with Orban", publisher: "Telex", date: 2025-11-26, tier: 3}
+      - {url: "https://telex.hu/english/2022/12/20/hungarian-bank-to-support-putin-friendly-bosnian-serb-entity-with-45-billion-forint-loan", title: "Hungarian bank to support Putin-friendly Bosnian Serb entity with 45-billion forint loan", publisher: "Telex", date: 2022-12-20, tier: 3}
+  - to: DEU
+    layer: action
+    type: sanction
+    summary: Germany banned three leading Republika Srpska figures from entry on 3 Apr 2025, and with Austria banned Dodik and two aides in May 2025, announced in Sarajevo by the German Minister of State for Europe and Austria's foreign minister; Berlin supported the High Representative's decisions.
+    since: 2025-04-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://n1info.ba/english/news/germany-expresses-support-for-high-reps-decision-regarding-dodiks-party/", title: "Germany expresses support for High Rep's decision regarding Dodik's party", publisher: "N1 BiH", date: 2025-04, tier: 3}
+      - {url: "https://www.g4media.ro/germania-si-austria-interzic-liderului-sarbilor-bosniaci-dodik-intrarea-pe-teritoriul-lor-si-sustin-aderarea-bosniei-la-ue.html", title: "Germany and Austria ban Bosnian Serb leader Dodik from entering their territory and support Bosnia's EU accession", title_original: "Germania si Austria interzic liderului sarbilor bosniaci Dodik intrarea pe teritoriul lor si sustin aderarea Bosniei la UE", lang: ro, publisher: "G4Media", date: 2025-05, tier: 3}
+  - to: DEU
+    layer: action
+    type: visit
+    summary: German Foreign Minister Johann Wadephul met the High Representative in Sarajevo on 16 Nov 2025 and said there is no progress without meeting EU requirements.
+    since: 2025-11-16
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://fena.ba/article/1652420/wadephul-in-sarajevo-no-progress-without-meeting-eu-requirements", title: "Wadephul in Sarajevo: no progress without meeting EU requirements", publisher: "FENA", date: 2025-11-16, tier: 3}
+  - to: TUR
+    layer: action
+    type: visit
+    summary: Presidency member Denis Becirovic was received by Erdogan in Istanbul on 14 Mar 2025, on an emergency trip to discuss the Dodik crisis, with Foreign Minister Fidan present; he met the Turkish ambassador again on 24 Feb 2026.
+    since: 2025-03-14
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://fena.ba/article/1618819/becirovic-and-erdogan-meet-in-istanbul-to-discuss-the-situation-in-bosnia-and-herzegovina", title: "Becirovic and Erdogan meet in Istanbul to discuss the situation in Bosnia and Herzegovina", publisher: "FENA", date: 2025-03-14, tier: 3}
+      - {url: "https://www.iletisim.gov.tr/english/haberler/detay/president-erdogan-receives-bosnia-and-herzegovina-presidential-council-member-beirovi", title: "President Erdogan receives Bosnia and Herzegovina Presidential Council Member Becirovic", publisher: "Presidency of the Republic of Turkiye, Communications Directorate", date: 2025-03-14, tier: 1}
+  - to: MNE
+    layer: action
+    type: visit
+    summary: Council of Ministers chair Borjana Krisko met Montenegrin PM Milojko Spajic on 8-9 Jun 2026 and the two confirmed 'extremely good' relations and cooperation on energy, infrastructure (including the Foca-Hum road loan) and the EU path.
+    since: 2026-06-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://fena.ba/article/1682942/kristo-spajic-strengthening-bih-montenegro-cooperation-and-a-shared-focus-on-the-path-to-the-eu", title: "Kristo, Spajic: strengthening BiH-Montenegro cooperation and a shared focus on the path to the EU", publisher: "FENA", date: 2026-06-09, tier: 3}
+      - {url: "https://vijeceministara.gov.ba/en/portal/post/chairwoman-kristo-in-bilateral-meeting-with-president-of-government-of-montenegro-milojko-spajic-1783494378273", title: "Chairwoman Kristo in bilateral meeting with President of the Government of Montenegro Milojko Spajic", publisher: "Council of Ministers of Bosnia and Herzegovina", date: 2026-06, tier: 1}
+  - to: HRV
+    layer: action
+    type: agreement
+    summary: The Federation parliament passed the Southern Interconnection law in Jan 2025 (gas link from Zagvozd to Travnik and Mostar, fed by the Krk LNG terminal); the interstate agreement with Croatia, needed from the Council of Ministers and the Presidency, was still unsigned in Feb 2026 after a dispute over BH-Gas versus a new operator; Federation energy minister Lakic said it must be finished by end-2027, when the EU ban on Russian gas takes effect.
+    since: 2025-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Planned signing in Dubrovnik in April 2026 was reported; no confirmation that it happened was found."
+    sources:
+      - {url: "https://n1info.ba/english/news/fbih-house-of-peoples-approves-southern-gas-interconnection-law/", title: "FBiH House of Peoples approves Southern Gas Interconnection law", publisher: "N1 BiH", date: 2025-01, tier: 3}
+      - {url: "https://n1info.ba/english/news/croatia-bosnia-expect-to-sign-southern-interconnection-agreement-soon/", title: "Croatia, Bosnia expect to sign Southern Interconnection agreement soon", publisher: "N1 BiH", date: 2026-02, tier: 3}
+  - to: org-eu
+    layer: action
+    type: agreement
+    summary: "The EU and Bosnia signed a Frontex status agreement in June 2025 permitting joint operations along Bosnia's borders; Frontex launched a joint operation in Nov 2025. Detections on the Western Balkans route fell 42% in 2025 (Frontex: 21,520 to 12,525); Bosnia registered about 14,000 new arrivals."
+    since: 2025-06-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Frontex and UNHCR count differently (Frontex 12,525; UNHCR about 9,350); the Council of Europe factsheet gives about 13,987 registered arrivals in Bosnia for 2025."
+    sources:
+      - {url: "https://home-affairs.ec.europa.eu/news/eu-strengthens-cooperation-migration-and-border-management-bosnia-and-herzegovina-2025-06-11_en", title: "EU strengthens cooperation on migration and border management with Bosnia and Herzegovina", publisher: "European Commission, DG Home", date: 2025-06-11, tier: 1}
+      - {url: "https://frontex.europa.eu/what-we-do/monitoring-and-risk-analysis/migratory-routes/migratory-routes/", title: "Migratory routes - Western Balkans", publisher: "Frontex", date: 2026, tier: 1}
