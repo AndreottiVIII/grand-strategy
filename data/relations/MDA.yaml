@@ -1,0 +1,661 @@
+from: MDA
+relations:
+- to: org-eu
+  layer: objective
+  type: membership_goal
+  summary: Moldova applied on 3 Mar 2022, became a candidate on 23 Jun 2022, opened negotiations on 25 Jun 2024 and opened cluster one (Fundamentals) on 15 Jun 2026; PAS aims to conclude by 2028 and join by 2030. The Oct 2024 referendum (50.3% yes, turnout over 50%) wrote the goal into the constitution.
+  since: '2022-03-03'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://www.reuters.com/world/europe/moldovan-president-says-moldova-applies-eu-membership-2022-03-03/
+    title: With war on its doorstep, Moldova applies for EU membership
+    publisher: Reuters
+    date: '2022-03-03'
+    tier: 3
+  - url: https://www.consilium.europa.eu/en/press/press-releases/2024/06/25/eu-opens-accession-negotiations-with-moldova/
+    title: EU opens accession negotiations with Moldova
+    publisher: Council of the European Union
+    date: '2024-06-25'
+    tier: 1
+  - url: https://www.osw.waw.pl/en/publikacje/analyses/2026-06-16/ukraine-and-moldova-launch-eu-accession-negotiations
+    title: Ukraine and Moldova launch EU accession negotiations
+    publisher: OSW (Centre for Eastern Studies)
+    date: '2026-06-16'
+    tier: 2
+  - url: https://www.euronews.com/2024/10/21/moldova-eu-vote-too-close-to-call-as-president-sandu-claims-moscow-meddled
+    title: Moldova EU vote too close to call as President Sandu claims Moscow meddled
+    publisher: Euronews
+    date: '2024-10-21'
+    tier: 3
+- to: sub-transnistria
+  layer: objective
+  type: territorial_claim
+  summary: 'Chișinău claims the left bank (about 11% of its territory) and has a reintegration policy: peaceful, no special status, demilitarisation, an international civilian mission replacing the peacekeeping format, a 1+1 negotiating track and gradual extension of Moldovan fiscal, customs and trade law. There is no mechanism for the withdrawal of Russian troops; Sandu would prefer to join the EU ''in a single step'' with the region and accepts joining without it if Russian forces block reintegration.'
+  since: '1990-09-02'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://carnegieendowment.org/russia-eurasia/politika/2026/03/moldova-transnistria-new-plan
+    title: Moldova's new plan for Transnistria (Vladimir Solovyov)
+    publisher: Carnegie Russia Eurasia (Politika)
+    date: '2026-03-31'
+    tier: 2
+  - url: https://carnegieendowment.org/russia-eurasia/politika/2025/10/moldova-transnistria-crisis?lang=en
+    title: Transnistria's energy crisis (Moldova-Transnistria crisis)
+    publisher: Carnegie Russia Eurasia (Politika)
+    date: 2025-10
+    tier: 2
+  - url: https://www.osw.waw.pl/en/publikacje/analyses/2026-06-16/ukraine-and-moldova-launch-eu-accession-negotiations
+    title: Ukraine and Moldova launch EU accession negotiations
+    publisher: OSW (Centre for Eastern Studies)
+    date: '2026-06-16'
+    tier: 2
+- to: RUS
+  layer: objective
+  type: influence_goal
+  summary: 'Moldova''s aim toward Russia is to end its leverage: withdrawal of the Russian military from Transnistria, an end to subversion, and exit from Russian-led structures (CIS by April 2027). The 2023 strategy calls the troops ''illegally stationed''; in June 2026 Sandu proposed that a Ukraine settlement include their withdrawal, which Foreign Minister Popsoi opposes as it would give Moscow a veto over the EU path.'
+  since: '2023-10-11'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://jamestown.org/?p=97153
+    title: Moldova's National Security Strategy designates Russia as existential threat, Europe as destination (Part Two)
+    publisher: Jamestown Foundation, Eurasia Daily Monitor
+    date: '2023-10-16'
+    tier: 2
+  - url: https://razomua.media/en/news/politika/moldova-poperedzhaye-yakshcho-prydnistrovya-uviyde-v-myrnyy-dohovir-mizh-ukrayinoyu-ta-rf-perehovory-zabuksuyut
+    title: 'Moldova warns: if Transnistria enters into peace deal between Ukraine and Russia, negotiations will stall'
+    publisher: Razom
+    date: '2026'
+    tier: 3
+  - url: https://carnegieendowment.org/russia-eurasia/politika/2026/03/moldova-transnistria-new-plan
+    title: Moldova's new plan for Transnistria (Vladimir Solovyov)
+    publisher: Carnegie Russia Eurasia (Politika)
+    date: '2026-03-31'
+    tier: 2
+- to: org-eu
+  layer: alignment
+  type: candidate
+  summary: Candidate for membership since 23 Jun 2022; negotiations opened 25 Jun 2024; first cluster opened 15 Jun 2026; cluster six (external relations) agreed by member states on 10 Jul 2026, with four clusters still waiting in July.
+  since: '2022-06-23'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://www.euronews.com/my-europe/2022/06/23/approved-eu-countries-endorse-ukraine-and-moldova-as-official-candidates-to-join-bloc
+    title: Approved! EU countries endorse Ukraine and Moldova as official candidates to join bloc
+    publisher: Euronews
+    date: '2022-06-23'
+    tier: 3
+  - url: https://www.consilium.europa.eu/en/press/press-releases/2024/06/25/eu-opens-accession-negotiations-with-moldova/
+    title: EU opens accession negotiations with Moldova
+    publisher: Council of the European Union
+    date: '2024-06-25'
+    tier: 1
+  - url: https://www.osw.waw.pl/en/publikacje/analyses/2026-06-16/ukraine-and-moldova-launch-eu-accession-negotiations
+    title: Ukraine and Moldova launch EU accession negotiations
+    publisher: OSW (Centre for Eastern Studies)
+    date: '2026-06-16'
+    tier: 2
+  - url: https://euronews.com/my-europe/2026/07/10/eu-agrees-to-open-a-new-accession-cluster-with-ukraine-and-moldova
+    title: EU agrees to open a new accession cluster with Ukraine and Moldova
+    publisher: Euronews
+    date: '2026-07-10'
+    tier: 3
+- to: org-eu
+  layer: alignment
+  type: treaty
+  summary: 'Security and Defence Partnership, the first the Union has signed with any country (21 May 2024): cyber, hybrid threats, disinformation, training, and eligibility for EU defence procurement instruments.'
+  since: '2024-05-21'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://euneighbourseast.eu/news/latest-news/moldova-becomes-first-country-to-sign-security-and-defence-partnership-with-eu/
+    title: Moldova becomes first country to sign security and defence partnership with EU
+    publisher: EU NEIGHBOURS east (EU-funded)
+    date: '2024-05-21'
+    tier: 2
+  - url: https://www.politico.eu/article/moldova-security-defense-pact-eu-security-cooperation-josep-borrell-border-management-cybersecurity-disinformation/
+    title: Moldova signs security and defense pact with EU
+    publisher: Politico Europe
+    date: '2024-05-21'
+    tier: 3
+- to: org-nato
+  layer: alignment
+  type: treaty
+  summary: Partnership for Peace partner since 16 Mar 1994 with a cooperation programme (no Article 5 and no membership bid); the 2023 strategy names NATO as a partner for strengthening the army while neutrality stays in the constitution.
+  since: '1994-03-16'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.nato.int/issues/nato-moldova/index.html
+    title: Relations with the Republic of Moldova
+    publisher: NATO
+    date: '2025'
+    tier: 1
+  - url: https://jamestown.org/?p=97153
+    title: Moldova's National Security Strategy designates Russia as existential threat, Europe as destination (Part Two)
+    publisher: Jamestown Foundation, Eurasia Daily Monitor
+    date: '2023-10-16'
+    tier: 2
+  - url: https://www.politico.eu/article/maia-sandu-moldova-nato-alliance-joining-ukraine-war-russia-invasion/
+    title: Time to join NATO? Moldova eyes joining 'a larger alliance'
+    publisher: Politico Europe
+    date: '2023-01-20'
+    tier: 3
+- to: org-eu
+  layer: dependency
+  type: trade_share
+  summary: The EU took 64.2% of Moldova's goods exports in January-June 2026 (EUR 1.06bn, up 12.7%); Romania alone about 27%. Imports far exceed exports (goods trade deficit about EUR 1.6bn in Q1 2026).
+  since: 2026-01
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 0.642
+  unit: share_of_goods_exports_h1_2026
+  sources:
+  - url: https://euneighbourseast.eu/news/latest-news/eu-remains-primary-trading-partner-of-moldova-in-the-first-six-months-of-2026/
+    title: EU remains primary trading partner of Moldova in the first six months of 2026
+    publisher: EU NEIGHBOURS east (EU-funded)
+    date: 2026-07
+    tier: 2
+  - url: https://moldpres.md/eng/economy/moldova-s-economy-recovers-after-multiple-shocks-imf-forecasts-2-3-per-cent-growth-in-2026
+    title: Moldova's economy recovers after multiple shocks; IMF forecasts 2.3 per cent growth in 2026
+    publisher: Moldpres (state agency, citing IMF)
+    date: 2026-04
+    tier: 1
+- to: org-eu
+  layer: dependency
+  type: investment
+  summary: EU member states accounted for over 72% of foreign direct investment in 2024 (about USD 3.5bn).
+  since: '2024'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  value: 0.72
+  unit: share_of_foreign_investment_2024
+  sources:
+  - url: https://logos-pres.md/en/news/more-than-72-of-foreign-investments-in-moldova-come-from-the-eu/
+    title: Over 72% of foreign investment in Moldova comes from the EU
+    publisher: Logos Press
+    date: '2025'
+    tier: 3
+- to: org-eu
+  layer: dependency
+  type: debt
+  summary: 'Reform and Growth Facility of up to EUR 1.9bn for 2025-27 (EUR 385m grants, EUR 1.5bn concessional loans), paid twice a year against reform steps: EUR 189m in March 2026 and EUR 157m after 18 reforms on 5 Oct 2026; about EUR 661m cumulative.'
+  since: '2025'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 1500000000
+  unit: EUR_concessional_loans_growth_plan_2025_2027
+  note: Tranche counts differ between the March (Commission) and October (Council) descriptions; the loan ceiling is the figure reported for the 2025-27 plan.
+  sources:
+  - url: https://lovguiden.dk/en/det-offentlige/raadet-for-den-europaeiske-union/2026-10-05-eu-udbetaler-157-mio-euro-til-moldova-efter-18-gennemfoerte-reformer
+    title: EU pays out EUR 157 million to Moldova after 18 completed reforms
+    publisher: Lovguiden (summary of Council of the EU release)
+    date: '2026-10-05'
+    tier: 3
+  - url: https://www.cde.ual.es/en/la-comision-aporta-189-millones-de-euros-adicionales-en-el-marco-del-mecanismo-de-reforma-y-crecimiento-para-moldavia
+    title: Commission provides EUR 189 million in additional funds under the Reform and Growth Facility for Moldova
+    publisher: Centro de Documentacion Europea, Universidad de Almeria (Commission release)
+    date: 2026-03
+    tier: 3
+- to: org-eu
+  layer: dependency
+  type: arms_supply
+  summary: European Peace Facility assistance to Moldova totals EUR 317m through 2026, including EUR 120m for a mid-range air-defence system adopted by the Council on 13 Jul 2026 after Russian drones crossed Moldovan airspace.
+  since: '2021'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  value: 317000000
+  unit: EUR_european_peace_facility_total_to_2026
+  sources:
+  - url: https://eu4moldova.eu/en/european-peace-facility-council-adopts-assistance-measure-to-support-the-republic-of-moldovas-air-defence-capabilities/
+    title: 'European Peace Facility: Council adopts assistance measure to support the Republic of Moldova''s air defence capabilities'
+    publisher: Council of the EU (via EU4Moldova)
+    date: 2026-07
+    tier: 1
+  - url: https://www.internazionale.it/ultime-notizie-reuters/2026/07/13/eu-pledges-120-million-to-help-moldova-s-air-defence-system
+    title: EU pledges 120 million euros to help Moldova's air defence system
+    publisher: Reuters (via Internazionale)
+    date: '2026-07-13'
+    tier: 3
+- to: org-eu
+  layer: dependency
+  type: remittances
+  summary: Personal remittances were 10.5% of GDP in 2024 (14.0% in 2022, 12.0% in 2023) and about USD 1.9bn in 2025, flat in dollars; the Commission's autumn 2025 forecast notes that flows from Russia keep falling while EU-origin flows grow.
+  since: '2024'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 0.105
+  unit: share_of_gdp_all_sources_2024
+  note: The share is for all sources; the row is filed under the EU as the largest and growing source. A World Bank brief cited by InfoMarket gives 11.8% for 2023 against 12.0% in the WDI series.
+  sources:
+  - url: https://statisticsoftheworld.com/country/moldova/remittances-received
+    title: 'Moldova: personal remittances received (World Bank WDI series)'
+    publisher: Statistics of the World (World Bank data)
+    date: '2025'
+    tier: 3
+  - url: https://www.theglobaleconomy.com/Moldova/Remittances/
+    title: 'Moldova: remittances (World Bank series)'
+    publisher: TheGlobalEconomy.com
+    date: '2025'
+    tier: 3
+- to: RUS
+  layer: dependency
+  type: military_presence
+  summary: About 1,500 soldiers of the Operational Group of Russian Forces stay in Transnistria (a 1999 pledge to withdraw was never carried out), guarding the Cobasna ammunition depot; Transnistria's security services are commanded by FSB officers. Estimates range from about 1,000 to 1,600.
+  since: '1992-07-21'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  value: 1500
+  unit: russian_troops_in_transnistria
+  note: 'Estimates differ by source: ''more than 1,000'' (Politico), about 1,500 (Reuters, Carnegie, OSW), ''at least 1,600'' (press). The 1,500 figure used by two tier-2 sources is kept.'
+  sources:
+  - url: https://carnegieendowment.org/russia-eurasia/politika/2025/10/moldova-transnistria-crisis?lang=en
+    title: Transnistria's energy crisis (Moldova-Transnistria crisis)
+    publisher: Carnegie Russia Eurasia (Politika)
+    date: 2025-10
+    tier: 2
+  - url: https://www.osw.waw.pl/en/publikacje/analyses/2026-06-16/ukraine-and-moldova-launch-eu-accession-negotiations
+    title: Ukraine and Moldova launch EU accession negotiations
+    publisher: OSW (Centre for Eastern Studies)
+    date: '2026-06-16'
+    tier: 2
+- to: sub-transnistria
+  layer: dependency
+  type: energy_export
+  summary: 'Moldovagaz is the legal gas supplier to the left bank until 31 Dec 2026: in winter the region needs up to 3.7 million cubic metres a day and received about 3 million in late 2025, less than 1.5 million in early October 2025. Hungary''s MET Group buys the gas, payments pass through Dubai-registered intermediaries that have changed at least three times, and Russia finances it on credit.'
+  since: '2025-01-01'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 3.0
+  unit: million_m3_per_day_late_2025
+  note: Carnegie records under 1.5 mcm/day in the first half of October 2025, before full supply was restored on 17 Oct 2025; Novaya Gazeta gives about 3 mcm/day for the winter.
+  sources:
+  - url: https://carnegieendowment.org/russia-eurasia/politika/2025/10/moldova-transnistria-crisis?lang=en
+    title: Transnistria's energy crisis (Moldova-Transnistria crisis)
+    publisher: Carnegie Russia Eurasia (Politika)
+    date: 2025-10
+    tier: 2
+  - url: https://novayagazeta.eu/en/articles/2025/12/24/on-borrowed-time-en
+    title: On borrowed time (Transnistria after the gas cutoff)
+    publisher: Novaya Gazeta Europe
+    date: '2025-12-24'
+    tier: 3
+  - url: https://logos-pres.md/en/news/moldovagaz-will-supply-gas-to-transnistria-by-the-end-of-the-year/
+    title: Moldovagaz to supply gas to Transnistria through end of 2026
+    publisher: Logos Press
+    date: '2026'
+    tier: 3
+- to: sub-transnistria
+  layer: dependency
+  type: energy_import
+  summary: Until 2024 the Cuciurgan plant (Inter RAO-owned, in Transnistria) produced the larger part of Moldova's electricity, and the existing connection to Romania still runs through Transnistrian territory; Moldova stopped buying its power in January 2025 and the Vulcănești-Chișinău 400 kV line (cost about EUR 27m, due end-2025) that would bypass it was still unfinished in June 2026.
+  since: '2024'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  value: 0.7
+  unit: approx_share_of_electricity_from_cuciurgan_2024
+  note: Radio Moldova (Dec 2024) says 60-80%; the IEŚ (May 2024) says 'almost entirely' but its shares do not add up; 0.7 is the midpoint of the 60-80% range and is our inference.
+  sources:
+  - url: https://radiomoldova.md/p/44695
+    title: 'Moldova''s energy crossroads: balancing dependence and diversification'
+    publisher: Radio Moldova (public broadcaster)
+    date: '2024-12-16'
+    tier: 3
+  - url: https://ies.lublin.pl/en/comments/moldova-potential-problems-with-electricity-availability-in-2025/
+    title: 'Moldova: potential problems with electricity availability in 2025'
+    publisher: Institute of Central Europe (IEŚ)
+    date: '2024-05-16'
+    tier: 2
+  - url: https://logos-pres.md/?p=89714
+    title: Vulcanesti-Chisinau power line faces further delays
+    publisher: Logos Press
+    date: 2026-06
+    tier: 3
+- to: ROU
+  layer: dependency
+  type: energy_import
+  summary: 'Romania is the gateway for diversified energy: the Iași-Ungheni gas pipeline (43 km, up to 1.5 bcm/year, inaugurated 2020) and 110 kV electricity links; a 400 kV Bălți-Suceava line is planned in the National Development Plan, and import capacity is limited until the high-voltage links are built. Press reports say Romania became the main source of Moldovan electricity imports in 2025 (not verified at source).'
+  since: 2020-08
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  value: 1.5
+  unit: bcm_per_year_iasi_ungheni_pipeline_capacity
+  sources:
+  - url: https://www.naturalgasworld.com/iasi-ungheni-gas-interconnector
+    title: Iasi-Ungheni gas interconnector
+    publisher: Natural Gas World
+    date: 2020-08
+    tier: 3
+  - url: https://radiomoldova.md/p/44695
+    title: 'Moldova''s energy crossroads: balancing dependence and diversification'
+    publisher: Radio Moldova (public broadcaster)
+    date: '2024-12-16'
+    tier: 3
+- to: inst-gazprom
+  layer: dependency
+  type: energy_import
+  summary: Moldova stopped buying gas from Gazprom in late 2023 (energy minister, 2 Oct 2023) and Gazprom halted all supply on 1 Jan 2025 when Ukrainian transit ended, citing Moldovagaz's debt. Chișinău-controlled Moldova now buys European gas; Russian gas reaches Transnistria only through intermediaries.
+  since: '2023-10-02'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 0.0
+  unit: share_of_moldova_gas_imports_from_gazprom_2025
+  sources:
+  - url: https://www.reuters.com/business/energy/moldova-will-no-longer-buy-gas-russias-gazprom-energy-minister-2023-10-02/
+    title: Moldova will no longer buy gas from Russia's Gazprom - energy minister
+    publisher: Reuters
+    date: '2023-10-02'
+    tier: 3
+  - url: https://www.pism.pl/publications/the-moldovan-gas-crisis-causes-and-consequences
+    title: 'The Moldovan gas crisis: causes and consequences (Gazprom claim of USD 709m; 2023 audit at USD 8.6m)'
+    publisher: PISM
+    date: '2025'
+    tier: 2
+  - url: https://carnegieendowment.org/russia-eurasia/politika/2025/10/moldova-transnistria-crisis?lang=en
+    title: Transnistria's energy crisis (Moldova-Transnistria crisis)
+    publisher: Carnegie Russia Eurasia (Politika)
+    date: 2025-10
+    tier: 2
+- to: inst-gazprom
+  layer: dependency
+  type: debt
+  summary: Gazprom claims Moldovagaz owes USD 709m (USD 433m principal and USD 276m penalties, accumulated since the 1990s); a Sept 2023 audit commissioned by Chișinău puts it at USD 8.6m. Gazprom holds 50% plus one share of Moldovagaz, Transnistria 13%.
+  since: 2022-10
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 709000000
+  unit: USD_debt_claimed_by_gazprom
+  claims:
+  - by: inst-gazprom
+    text: USD 709m owed by Moldovagaz
+    source: https://www.pism.pl/publications/the-moldovan-gas-crisis-causes-and-consequences
+  - by: MDA
+    text: USD 8.6m, per the Sept 2023 independent audit
+    source: https://www.pism.pl/publications/the-moldovan-gas-crisis-causes-and-consequences
+  sources:
+  - url: https://www.pism.pl/publications/the-moldovan-gas-crisis-causes-and-consequences
+    title: 'The Moldovan gas crisis: causes and consequences (Gazprom claim of USD 709m; 2023 audit at USD 8.6m)'
+    publisher: PISM
+    date: '2025'
+    tier: 2
+  - url: https://www.reuters.com/business/energy/moldova-will-no-longer-buy-gas-russias-gazprom-energy-minister-2023-10-02/
+    title: Moldova will no longer buy gas from Russia's Gazprom - energy minister
+    publisher: Reuters
+    date: '2023-10-02'
+    tier: 3
+- to: RUS
+  layer: action
+  type: expulsion
+  summary: Moldova expelled 45 Russian embassy and diplomatic staff on 27 Jul 2023 over alleged attempts to destabilise the country, after cutting the cap on Russian diplomats in Chișinău.
+  since: '2023-07-27'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.bbc.co.uk/news/world-europe-66320894
+    title: Moldova expels 45 Russian diplomatic staff in spy row
+    publisher: BBC News
+    date: '2023-07-27'
+    tier: 3
+- to: RUS
+  layer: action
+  type: incident
+  summary: A drone exploded near Crocmaz (Ștefan Vodă) on 9 Aug 2026 and a jet-powered Geran-3 crossed the south on the night of 10 Aug; on 11 Aug the foreign ministry recalled the ambassador from Moscow for consultations. Russia's embassy said Chișinău was seeking pretexts to scale back ties but that Russia remained open to dialogue. Sandu counted 39 airspace violations in 2026 against 17 in 2025 (press summary, not verified at source); on 24 Sep at least four drones entered and northern airspace was closed.
+  since: '2026-08-09'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  note: The 39-versus-17 airspace count comes from press reporting of Sandu's statement and was not seen at the primary source.
+  sources:
+  - url: https://militarnyi.com/en/news/drone-enters-moldova-following-moldova-s-decision-to-recall-ambassador-from-russia/
+    title: Drone enters Moldova following Moldova's decision to recall ambassador from Russia
+    publisher: Militarnyi
+    date: '2026-08-11'
+    tier: 3
+  - url: https://tass.com/politics/2171505/amp
+    title: Moldovan authorities seek pretext to scale back ties with Russia - embassy
+    publisher: TASS (state agency, official statement)
+    date: '2026-08-11'
+    tier: 1
+  - url: https://www.eurointegration.com.ua/eng/news/2026/08/20/7243814/
+    title: Moldova reports Shahed drone entered its airspace during Russian attack on Ukraine
+    publisher: European Pravda
+    date: '2026-08-20'
+    tier: 3
+- to: RUS
+  layer: action
+  type: incident
+  summary: Before the 28 Sep 2025 election Sandu said the Kremlin had spent hundreds of millions of euros to buy votes and plan unrest; on 22 Sep authorities detained 74 people over alleged training abroad to stage mass unrest; election-day incidents included over 1,000 cyberattacks in the year and bomb threats at polling stations abroad. International IDEA says Russia 'intervened heavily but unsuccessfully' by funding anti-PAS parties and paying protesters.
+  since: '2025-09-22'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://nikvesti.com/en/news/politics/309349-russia-moldova-springboard-attack-odesa-sandu
+    title: Sandu warns of the threat of using Moldova as a springboard to attack Odesa region
+    publisher: NikVesti
+    date: '2025-09-23'
+    tier: 3
+  - url: https://thepublicsradio.org/npr/moldovas-pro-eu-party-wins-clear-parliamentary-majority-defeating-pro-russian-groups/
+    title: Moldova's pro-EU party wins clear parliamentary majority, defeating pro-Russian groups
+    publisher: NPR (via The Public's Radio)
+    date: '2025-09-29'
+    tier: 3
+  - url: https://www.idea.int/democracytracker/report/republic-moldova/september-2025
+    title: 'Democracy Tracker: Republic of Moldova, September 2025'
+    publisher: International IDEA
+    date: 2025-09
+    tier: 2
+- to: RUS
+  layer: action
+  type: incident
+  summary: 'The 20 Oct 2024 referendum and first round were run against a vote-buying scheme: authorities said exiled oligarch Ilan Shor''s network paid EUR 15m to 130,000 people (about 10% of the active electorate), part of it carried in cash from Moscow; Shor was sentenced in absentia to 15 years in 2023 and lives in Russia, which refuses extradition.'
+  since: '2024-10-03'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://kyivindependent.com/moldova-uncovers-15-million-russian-backed-plot-to-influence-upcoming-elections-with-bribes-and-disinformation/
+    title: Moldova uncovers $15 million Russian-backed plot to influence upcoming elections with bribes and disinformation
+    publisher: Kyiv Independent
+    date: '2024-10-03'
+    tier: 3
+  - url: https://www.euronews.com/2024/10/21/moldova-eu-vote-too-close-to-call-as-president-sandu-claims-moscow-meddled
+    title: Moldova EU vote too close to call as President Sandu claims Moscow meddled
+    publisher: Euronews
+    date: '2024-10-21'
+    tier: 3
+- to: org-cis
+  layer: action
+  type: agreement
+  summary: Moldova's parliament voted 60 of 101 on 2 Apr 2026 to denounce the 1991 CIS founding agreement and 1993 charter; Sandu promulgated the law on 6 Apr; the exit takes effect on 8 Apr 2027. Moldova has left 71 of 283 CIS agreements and remains in some economic ones.
+  since: '2026-04-06'
+  until: '2027-04-08'
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://aa.com.tr/en/eurasia/moldova-officially-withdraws-from-founding-treaties-of-commonwealth-of-independent-states/3898839
+    title: Moldova officially withdraws from founding treaties of Commonwealth of Independent States
+    publisher: Anadolu Agency
+    date: 2026-04
+    tier: 3
+  - url: https://24.kg/english/368743_Parliament_of_Moldova_approves_countrys_withdrawal_from_CIS/amp/
+    title: Parliament of Moldova approves country's withdrawal from CIS
+    publisher: 24.kg
+    date: '2026-04-02'
+    tier: 3
+- to: ROU
+  layer: action
+  type: visit
+  summary: Romania's president Nicușor Dan attended the Independence Day parade in Chișinău on 27 Aug 2026 and the first presidential-level trilateral with Sandu and Zelensky (energy, infrastructure, EU integration, 'the Odesa Triangle'); on 1 Mar 2025 Prime Minister Bolojan had visited and promised to keep capping the price of Romanian power sold to Moldova.
+  since: '2026-08-27'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://moldpres.md/eng/politics/live-presidents-of-moldova-romania-ukraine-hold-a-joint-press-conference-in-chisinau
+    title: 'LIVE: Presidents of Moldova, Romania, Ukraine hold a joint press conference in Chisinau'
+    publisher: Moldpres (state agency, official statement)
+    date: '2026-08-27'
+    tier: 1
+  - url: https://spotmedia.ro/stiri/eveniment/nicusor-dan-dupa-reuniunea-trilaterala-de-la-chisinau-romania-sustine-ucraina-si-parcursul-european-al-republicii-moldova
+    title: 'Nicusor Dan after the Chisinau trilateral: Romania backs Ukraine and the European path of Moldova'
+    publisher: Spotmedia
+    date: '2026-08-27'
+    tier: 3
+    title_original: 'Nicusor Dan, dupa reuniunea trilaterala de la Chisinau: Romania sustine Ucraina si parcursul european al Republicii Moldova'
+    lang: ro
+  - url: https://www.antena3.ro/politica/romania-va-plafona-pretul-la-energia-electrica-cumparata-de-republica-moldova-a-dat-asigurari-ilie-bolojan-737873.html
+    title: Romania will cap the price of electricity bought by the Republic of Moldova, Ilie Bolojan assured
+    publisher: Antena 3
+    date: '2025-03-01'
+    tier: 3
+    title_original: Romania va plafona pretul la energia electrica cumparata de Republica Moldova, a dat asigurari Ilie Bolojan
+    lang: ro
+- to: UKR
+  layer: action
+  type: visit
+  summary: Zelensky came to Chișinău for the trilateral of 27 Aug 2026 with Sandu and Dan; the three leaders reaffirmed that regional security depends on their solidarity against threats from Russia.
+  since: '2026-08-27'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://moldpres.md/eng/politics/live-presidents-of-moldova-romania-ukraine-hold-a-joint-press-conference-in-chisinau
+    title: 'LIVE: Presidents of Moldova, Romania, Ukraine hold a joint press conference in Chisinau'
+    publisher: Moldpres (state agency, official statement)
+    date: '2026-08-27'
+    tier: 1
+  - url: https://spotmedia.ro/stiri/eveniment/nicusor-dan-dupa-reuniunea-trilaterala-de-la-chisinau-romania-sustine-ucraina-si-parcursul-european-al-republicii-moldova
+    title: 'Nicusor Dan after the Chisinau trilateral: Romania backs Ukraine and the European path of Moldova'
+    publisher: Spotmedia
+    date: '2026-08-27'
+    tier: 3
+    title_original: 'Nicusor Dan, dupa reuniunea trilaterala de la Chisinau: Romania sustine Ucraina si parcursul european al Republicii Moldova'
+    lang: ro
+- to: org-eu
+  layer: action
+  type: agreement
+  summary: On 13 Jul 2026 the Council adopted a EUR 120m European Peace Facility assistance measure for a mid-range air-defence system for Moldova's armed forces, after Russian drone incursions; it complements earlier air-surveillance and air-defence measures.
+  since: '2026-07-13'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://eu4moldova.eu/en/european-peace-facility-council-adopts-assistance-measure-to-support-the-republic-of-moldovas-air-defence-capabilities/
+    title: 'European Peace Facility: Council adopts assistance measure to support the Republic of Moldova''s air defence capabilities'
+    publisher: Council of the EU (via EU4Moldova)
+    date: 2026-07
+    tier: 1
+  - url: https://www.internazionale.it/ultime-notizie-reuters/2026/07/13/eu-pledges-120-million-to-help-moldova-s-air-defence-system
+    title: EU pledges 120 million euros to help Moldova's air defence system
+    publisher: Reuters (via Internazionale)
+    date: '2026-07-13'
+    tier: 3
+- to: HUN
+  layer: action
+  type: incident
+  summary: Hungary's veto kept Moldova's first accession cluster closed for almost two years; the new Hungarian government lifted it in early June 2026 after a minority-rights deal with Kyiv, but on 17 Jul it cleared only a cluster three letter to Moldova and resists opening all remaining clusters at once.
+  since: 2026-06
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.osw.waw.pl/en/publikacje/analyses/2026-06-16/ukraine-and-moldova-launch-eu-accession-negotiations
+    title: Ukraine and Moldova launch EU accession negotiations
+    publisher: OSW (Centre for Eastern Studies)
+    date: '2026-06-16'
+    tier: 2
+  - url: https://euronews.com/my-europe/2026/07/10/eu-agrees-to-open-a-new-accession-cluster-with-ukraine-and-moldova
+    title: EU agrees to open a new accession cluster with Ukraine and Moldova
+    publisher: Euronews
+    date: '2026-07-10'
+    tier: 3
+  - url: https://www.pravda.com.ua/eng/news/2026/07/17/8044621/
+    title: Hungary blocks opening of new EU accession negotiating clusters for Ukraine and Moldova
+    publisher: Ukrainska Pravda
+    date: '2026-07-17'
+    tier: 3
+- to: sub-gagauzia
+  layer: action
+  type: incident
+  summary: The Chișinău court convicted Gagauzia's governor Evghenia Gutsul on 5 Aug 2025 and sentenced her to seven years (prosecutors had asked nine) for channelling Russian money to the banned Shor party in 2019-22 and receiving MDL 42.5m (about USD 2.5m) from an organised criminal group; she denies the charges and calls them political.
+  since: '2025-08-05'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://news.liga.net/en/politics/news/in-moldova-the-pro-russian-head-of-gagauzia-received-a-seven-year-prison-sentence
+    title: In Moldova, the pro-Russian head of Gagauzia received a seven-year prison sentence
+    publisher: Liga.net
+    date: '2025-08-05'
+    tier: 3
+  - url: https://www.idea.int/democracytracker/report/republic-moldova/august-2025
+    title: 'Democracy Tracker: Republic of Moldova, August 2025'
+    publisher: International IDEA
+    date: 2025-08
+    tier: 2
+- to: sub-gagauzia
+  layer: action
+  type: incident
+  summary: A Constitutional Court ruling on 9 Jul 2026 curtailed Gagauz powers; the People's Assembly declared the Bashkan post vacant on 17 Aug 2026 and the Central Electoral Commission set an election for 15 Nov 2026 alongside People's Assembly polls, with a Romanian-language requirement the opposition will contest.
+  since: '2026-07-09'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://logos-pres.md/en/news/the-peoples-assembly-of-gagauzia-has-declared-the-office-of-bascan-vacant/
+    title: Gagauzia Assembly declares governor's post vacant
+    publisher: Logos Press
+    date: 2026-08
+    tier: 3
+  - url: https://moldpres.md/eng/politics/moldovan-central-electoral-commission-sets-date-for-elections-of-governor-of-gagauzia-ballot-to-take-place-on-november-15-on-same-day-as-elections-for-people-s-assembly
+    title: 'Moldovan Central Electoral Commission sets date for elections of governor of Gagauzia: ballot on November 15'
+    publisher: Moldpres (state agency, official statement)
+    date: 2026-08
+    tier: 1
+- to: USA
+  layer: action
+  type: agreement
+  summary: In early February 2026 Congress approved, and Trump signed in the 2026 budget, USD 36.5m for Moldova's security sector; US senators visiting Chișinău said the administration and the opposition both want Moldova supported. In 2025 the aid freeze had cancelled a USD 6m grant and suspended four energy projects worth over USD 200m.
+  since: 2026-02
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  sources:
+  - url: https://romania.europalibera.org/a/republica-moldova-sprijin-american/33681557.html
+    title: 'US senators in Chisinau: both the Trump administration and the opposition believe Moldova must be supported'
+    publisher: Radio Free Europe Romania
+    date: 2026-02
+    tier: 3
+    title_original: 'Senatori americani la Chisinau: Si Administratia Trump, si opozitia cred ca Republica Moldova trebuie sprijinita'
+    lang: ro
+  - url: https://ipn.md/en/us-state-department-confirms-cancellation-of-6-million-grant-for-moldova/
+    title: US State Department confirms cancellation of $6 million grant for Moldova
+    publisher: IPN
+    date: '2025'
+    tier: 3
+  - url: https://www.old.ipn.md/en/we-continue-discussions-with-the-us-to-keep-funding-7965_1112444.html
+    title: We continue discussions with the US to keep funding, Maia Sandu
+    publisher: IPN
+    date: '2025'
+    tier: 3
