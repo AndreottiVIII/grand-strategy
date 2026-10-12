@@ -3,6 +3,16 @@
 Decision log, newest first. The path matters more than the destination: record why,
 not only what. Dead ends are entries too.
 
+## 2026-10-12 · The world run starts
+
+Davide: no months. Models: Fable for USA, China, Russia (last, to reuse everything);
+Sonnet for ~93 states, organisations and non-state actors; Haiku for ~109 minor
+states. Six agents always running; `data/queue.yaml` is the truth (`tools/queue.py
+status`), the site stamp shows "N of 205 cards", `tools/briefs/<ID>.md` carry the
+brief per actor, `tools/review.py` the review helpers. Stop launching at 80% of the
+weekly usage (47% when the run started, 13 cards reviewed, 1.4M tokens). Reverse
+mirroring pass after each region (BACKLOG.md): Ukraine lacks North Korea's troops.
+
 ## 2026-10-12 · The Western Balkans, built and measured
 
 Five cards in parallel on the economical model, each one agent, each with the reuse

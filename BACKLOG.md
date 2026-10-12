@@ -1,5 +1,14 @@
 # Backlog
 
+## Fixes to run at the end of the world pass
+- 2026-10-12 · **Reverse mirroring pass.** Agents mirror what others hold INTO their own card,
+  never back. So a later card can hold a fact the earlier one lacks: North Korea sent
+  troops to fight Ukraine (Kursk, 2024-25) and Ukraine's card has no PRK stance or row.
+  After each region (and at the very end) run a pass: for every actor, list the rows and
+  stances other cards hold toward it that have no counterpart, and add the counterpart
+  with the same sources. Known cases: UKR ← PRK troops; UKR ← IRN drones; UKR ← CHN
+  dual-use trade.
+
 Ideas and deferred steps, with the date they were parked. Davide: "keep them in mind,
 like every improving idea that comes to you".
 

@@ -60,6 +60,10 @@ Pilot demo built on 2026-10-12: one full card (Serbia) with 18 stances and 43 re
 - **Never type a Wikidata id, ISO code or count from memory.** Resolve ids by name
   through the search API and check the label (`data/datasets/wikidata/org-ids.json`);
   Davide caught a map coloured by wrong ids on day one.
+- **Usage ceiling (Davide, 2026-10-12): check the weekly plan usage before every agent
+  launch (`get_usage`); at 80% of the weekly limit launch nothing more, let the running
+  agents finish, keep the queue in `data/queue.yaml` and resume after the reset.** Keep
+  six agents running otherwise; models per `data/queue.yaml` (fable / sonnet / haiku).
 - **Reuse before researching.** Whatever another card already holds about an actor
   (rows, stances, sources) is the starting evidence for that actor's own card: same
   links, mirrored rows. Davide's rule; see METHOD.md step 2.
