@@ -7,8 +7,72 @@ coords:
 - 9.52
 - 47.14
 seat: Vaduz
-regions:
-- world
-card: stub
+regions: [central-north-europe]
+card: full
 tier: minor
+last_verified: 2026-10-12
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the customs union and the monetary and diplomatic arrangements with Switzerland: the customs union has run since 1924, the franc has been the currency since 1920, and Switzerland represents Liechtenstein abroad unless it chooses otherwise. Without the Swiss tie the state has no army, no foreign service of its own and no market of its own."
+      confidence: A
+      sources:
+        - {url: "https://historisches-lexikon.li/Zollanschlussvertrag", title: "Zollanschlussvertrag (customs union treaty)", publisher: "Historisches Lexikon des Fürstentums Liechtenstein (Marxer)", date: 2011-12-31, tier: 2}
+        - {url: "http://www.wto.org/english/tratop_e/tpr_e/tp150_e.htm", title: "Switzerland and Liechtenstein (trade policy review)", publisher: "WTO", date: 2000-12-06, tier: 1}
+        - {url: "http://www.eda.admin.ch/eda/en/home/topics/fl.html", title: "Principality of Liechtenstein", publisher: "Swiss Federal Department of Foreign Affairs (EDA)", date: 2026-10-12, tier: 1}
+    - rank: 2
+      text: "Keep full access to the EU single market and to the Schengen area without being an EU member. The EEA has applied since 1 May 1995 and Schengen since December 2011 as an associate member. The EU is not a partner of choice here but the source of most of the rules the state must adopt."
+      confidence: A
+      sources:
+        - {url: "https://www.llv.li/en/national-administration/office-for-foreign-affairs/topics/european-policy", title: "European policy (Office for Foreign Affairs)", publisher: "Government of Liechtenstein", date: 2026-10-12, tier: 1}
+        - {url: "https://www.eeas.europa.eu/node/410172_az", title: "The European Union and the Principality of Liechtenstein", publisher: "European External Action Service", date: 2026-10-12, tier: 1}
+    - rank: 3
+      text: "Keep the financial centre's access to US capital markets while meeting US tax-information and sanctions demands. The 2014 FATCA agreement was signed in Vaduz to protect that access, and in 2025 US pressure pushed fiduciaries to drop Russian-linked trusts."
+      confidence: B
+      sources:
+        - {url: "https://www.brecorder.com/news/175953", title: "Liechtenstein signs FATCA agreement with the United States (Prime Minister Hasler on access to US capital markets)", publisher: "Business Recorder", date: 2014-05-16, tier: 3}
+        - {url: "https://chambers.com/articles/from-sanctuaries-to-stasis", title: "From sanctuaries to stasis", publisher: "Chambers", date: 2026-10-12, tier: 3}
+  means:
+    - domain: economic
+      text: "The financial centre: a fiduciary and trust sector that manages wealth across borders. In 2025 the sector shrank under US secondary-sanctions pressure, and the state now looks to centralise supervision of trusts it cannot close."
+      confidence: B
+      sources:
+        - {url: "https://chambers.com/articles/from-sanctuaries-to-stasis", title: "From sanctuaries to stasis", publisher: "Chambers", date: 2026-10-12, tier: 3}
+    - domain: diplomatic
+      text: "Multilateral presence far above its size: UN, Council of Europe, OSCE, WTO and ICC membership, plus voluntary contributions to Council of Europe action plans, including CHF 115,000 for Ukraine's recovery plan (signed 13 Nov 2025)."
+      confidence: B
+      sources:
+        - {url: "https://www.coe.int/en/web/programmes/-/liechtenstein-funds-council-of-europe-action-plans-and-projects-1", title: "Liechtenstein funds Council of Europe action plans and projects", publisher: "Council of Europe", date: 2025-11-13, tier: 1}
+    - domain: military
+      text: "No army. Policing is done by the national Security Corps, which trains mostly in Switzerland and Austria. Security is delegated in practice to its neighbours, with no air-policing agreement of its own."
+      confidence: C
+      sources:
+        - {url: "https://www.statewatch.org/statewatch-database/liechtenstein-police-security-agencies", title: "Liechtenstein: police and security agencies", publisher: "Statewatch", date: 2026-10-12, tier: 3}
+  constraints:
+    - text: "No army, and Switzerland says it would not defend Liechtenstein directly because that would break Swiss neutrality (Federal Council, reaffirmed February 2025). The state cannot back its foreign policy with force."
+      confidence: C
+      sources:
+        - {url: "https://www.vaterland.li/liechtenstein/politik/bundesrat-bestaetigt-schweiz-wuerde-liechtenstein-nicht-verteidigen-art-590902", title: "Federal Council confirms: Switzerland would not defend Liechtenstein", title_original: "Bundesrat bestätigt: Schweiz würde Liechtenstein nicht verteidigen", lang: de, publisher: "Liechtensteiner Vaterland", date: 2025-02-21, tier: 3}
+    - text: "Monetary and customs dependence on Switzerland: the Swiss franc is the currency and Swiss customs law applies at the border. Liechtenstein cannot set its own tariffs or monetary policy, and its trade statistics leave Switzerland out."
+      confidence: A
+      sources:
+        - {url: "http://www.wto.org/english/tratop_e/tpr_e/tp150_e.htm", title: "Switzerland and Liechtenstein (trade policy review)", publisher: "WTO", date: 2000-12-06, tier: 1}
+        - {url: "https://www.statistikportal.li/de/publikation/warenhandel-2024/2024/17/v-1/p31677/pdf", title: "Foreign trade 2024 (Office for Statistics, excluding Switzerland)", publisher: "Amt für Statistik Liechtenstein", date: 2025, tier: 1}
+    - text: "Small size and exposure to US secondary sanctions. The trust sector depends on being acceptable to US banks and regulators, so US pressure on Russian clients translates directly into a fiduciary shutdown inside the country."
+      confidence: C
+      sources:
+        - {url: "https://chambers.com/articles/from-sanctuaries-to-stasis", title: "From sanctuaries to stasis", publisher: "Chambers", date: 2026-10-12, tier: 3}
+  paradoxes:
+    - text: "The clean-up that keeps the state in US good standing leaves Russian-linked trusts without managers, so the assets sit frozen instead of being administered. The financial centre earns from the same assets it is now forced to isolate."
+      confidence: C
+      sources:
+        - {url: "https://chambers.com/articles/from-sanctuaries-to-stasis", title: "From sanctuaries to stasis", publisher: "Chambers", date: 2026-10-12, tier: 3}
+  reading: |
+    Liechtenstein has no army and no market of its own, so its strategy is to rent out
+    its legal and financial order and to borrow its security and currency from Switzerland
+    and its market access from the EU through the EEA. The vulnerable point is the financial
+    centre, which must stay acceptable to Washington at the price of shrinking itself: in 2025
+    US pressure pushed fiduciaries out of Russian-linked trusts. Ukraine support, in money and in
+    Council of Europe programmes, is how it shows a Western profile without military weight.
