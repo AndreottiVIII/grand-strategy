@@ -1,0 +1,103 @@
+from: ISL
+relations:
+- to: org-eu
+  layer: objective
+  type: membership_goal
+  summary: "Accession talks were not restarted. On 29 August 2026 the 'no' camp won 52.8% against 47.2% (turnout 82.5%) in a referendum on resuming talks; the Frostadóttir government set membership aside until 2028 and left any formal withdrawal of the 2009 application to parliament. Iceland stays in the EEA and Schengen. Fisheries and agriculture remain the sticking points, as the enlargement commissioner noted."
+  since: 2009-07-16
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - {url: "https://www.euronews.com/2026/08/30/iceland-votes-no-to-further-eu-accession-talks-in-tight-result", title: "Iceland votes no to further EU accession talks in tight result", publisher: "Euronews", date: 2026-08-30, tier: 3}
+  - {url: "https://www.aljazeera.com/amp/news/2026/8/30/iceland-rejects-eu-membership-plan-in-referendum", title: "Iceland rejects EU membership plan in referendum", publisher: "Al Jazeera", date: 2026-08-30, tier: 3}
+- to: USA
+  layer: alignment
+  type: security_guarantee
+  summary: "Under the 1951 defence arrangement the United States guarantees Iceland's defence, which has no army. US forces rotate at Keflavík year-round, and allied aircraft and anti-submarine patrols now operate from the same base; a NATO commander said in August 2026 that troops will not be permanently based there."
+  since: '1951'
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - {url: "https://www.arctictoday.com/nato-commander-argues-for-permanent-allied-military-presence-in-iceland/", title: "NATO commander argues for permanent allied military presence in Iceland", publisher: "Arctic Today", date: 2026-08, tier: 3}
+  - {url: "https://www.inquirer.com/news/nation-world/trump-post-map-iceland-greenland-canada-mexico-us-flag-ambassador-summoned-prime-minister-nato-eu-20260908.html", title: "Iceland summons US ambassador after Trump posts map showing island under American flag", publisher: "The Inquirer (wire report)", date: 2026-09-08, tier: 3}
+- to: USA
+  layer: dependency
+  type: trade_share
+  summary: "Iceland's exports to the United States were 85.5 billion ISK (FOB) in 2025, down about 10% on 2024, on lower marine-product and manufacturing exports. The figure is the 2025 external-trade release of Statistics Iceland."
+  value: 85.5
+  unit: billion_ISK_FOB_2025
+  since: '2025'
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - {url: "https://statice.is/publications/news-archive/external-trade/trade-in-goods-2025/", title: "External trade: trade in goods 2025 (news release)", publisher: "Statistics Iceland", date: 2026-05-19, tier: 1}
+- to: USA
+  layer: dependency
+  type: military_presence
+  summary: "US forces are present at Keflavík on a rotational, year-round basis. The number of personnel was not found in the sources used here, so the value is not quantified; a NATO commander said in August 2026 that US anti-submarine aircraft already operate from the base almost continuously."
+  value: rotational_year_round
+  unit: not_quantified
+  since: '1951'
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - {url: "https://www.arctictoday.com/nato-commander-argues-for-permanent-allied-military-presence-in-iceland/", title: "NATO commander argues for permanent allied military presence in Iceland", publisher: "Arctic Today", date: 2026-08, tier: 3}
+- to: USA
+  layer: action
+  type: incident
+  summary: "On 7 September 2026 Foreign Minister Þorgerður Katrín Gunnarsdóttir summoned US Ambassador Billy Long after Trump posted a map showing Iceland, Greenland, Canada and Mexico under the US flag; Prime Minister Frostadóttir called it 'an insult to Icelanders, Canadians and Greenlanders'. In January 2026 at Davos, Trump had named Iceland four times when speaking about Greenland."
+  since: '2026-09-07'
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - {url: "https://www.inquirer.com/news/nation-world/trump-post-map-iceland-greenland-canada-mexico-us-flag-ambassador-summoned-prime-minister-nato-eu-20260908.html", title: "Iceland summons US ambassador after Trump posts map showing island under American flag", publisher: "The Inquirer (wire report)", date: 2026-09-08, tier: 3}
+  - {url: "https://www.cp24.com/news/world/2026/09/08/iceland-calls-trump-post-wholly-inappropriate-summons-us-ambassador/", title: "Iceland calls Trump post wholly inappropriate, summons US ambassador", publisher: "CP24 (Canadian Press)", date: 2026-09-08, tier: 3}
+  - {url: "https://www.ewn.co.za/2026/01/22/in-davos-speech-trump-repeatedly-refers-to-greenland-as-iceland", title: "In Davos speech, Trump repeatedly refers to Greenland as 'Iceland'", publisher: "EWN (Davos report)", date: 2026-01-22, tier: 3}
+- to: RUS
+  layer: action
+  type: sanction
+  summary: "Iceland aligns itself completely with EU sanctions on Russia over the invasion of Ukraine, and suspended its embassy operations in Moscow on 1 August 2023. The sanctions date from the 2022 response; the government's Ukraine page is undated."
+  since: '2022'
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - {url: "https://government.is/topics/foreign-affairs/war-in-ukraine", title: "War in Ukraine - Iceland's response", publisher: "Government of Iceland", date: 2026, tier: 1}
+  - {url: "https://www.government.is/diplomatic-missions/embassy-article/2023/06/09/Iceland-suspends-embassy-operations-in-Moscow/", title: "Iceland suspends embassy operations in Moscow", publisher: "Government of Iceland", date: 2023-06-09, tier: 1}
+- to: NOR
+  layer: action
+  type: agreement
+  summary: "Iceland joined the 2026 Northeast Atlantic mackerel quota deal with Norway, the UK and the Faroe Islands (agreed 15 December 2025). Total catch is 299,010 tonnes, 48% below the previous year and above the ICES advice; Iceland's net share is 10.5% after bilateral transfers, against the 16.5% it set unilaterally for 2025. The EU, Greenland and Russia are outside the deal."
+  since: '2025-12-15'
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - {url: "https://www.regjeringen.no/contentassets/35559f3f433247278903d438f9e0427a/agreed-record-of-fisheries-consultations-between-the-faroe-islands-and-iceland-on-the-management-of-mackerel-in-the-north-east-atlantic-15.12.2025.pdf", title: "Agreed record of fisheries consultations between the Faroe Islands and Iceland on mackerel (15.12.2025)", publisher: "Government of Norway", date: 2025-12-15, tier: 1}
+  - {url: "https://www.seafoodsource.com/news/supply-trade/four-northeast-atlantic-coastal-parties-agree-on-2026-mackerel-quotas-shares-eu-left-out-again", title: "Four Northeast Atlantic coastal parties agree on 2026 mackerel quotas, shares; EU left out again", publisher: "SeafoodSource", date: 2025-12, tier: 3}
+- to: GBR
+  layer: action
+  type: visit
+  summary: "In July 2026 Foreign Minister Gunnarsdóttir and the UK Defence Secretary met aboard HMS Prince of Wales in the North Atlantic to discuss cooperation in the Joint Expeditionary Force and growing bilateral defence ties, ahead of the NATO summit in Ankara. Exercise Lion Protector, a JEF activity around Iceland, is scheduled for September 2026."
+  since: '2026-07'
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - {url: "https://www.stjornarradid.is/frettir/grein/cooperation-on-security-and-defence-in-the-north-atlantic-and-the-arctic", title: "Cooperation on security and defence in the North Atlantic and the Arctic", publisher: "Government of Iceland", date: 2026-07-06, tier: 1}
+- to: org-nato
+  layer: action
+  type: exercise
+  summary: "Iceland intends to contribute to NATO Forward Land Forces Finland, which stood up on 6 June 2026 and was expanded at the Ankara summit (7-8 July 2026); Denmark, Iceland, Italy, Norway and the UK also intend to contribute. Mirrored from the Finland card: same sources, same facts."
+  since: '2026-07'
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - {url: "https://valtioneuvosto.fi/en/-/236553176/nato-forward-land-forces-finland-to-start-operations-on-6-june", title: "NATO Forward Land Forces Finland to start operations on 6 June", publisher: "Finnish Government / Ministry of Defence", date: 2026-06, tier: 1}
+  - {url: "https://www.janes.com/defence-intelligence-insights/defence-news/defence/nato-summit-2026-france-to-contribute-troops-to-forward-land-forces-finland", title: "NATO Summit 2026: France to contribute troops to Forward Land Forces Finland", publisher: "Janes", date: 2026-07, tier: 2}

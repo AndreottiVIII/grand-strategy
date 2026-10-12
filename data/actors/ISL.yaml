@@ -8,7 +8,64 @@ coords:
 - 64.15
 seat: Reykjavík
 regions:
-- world
-card: stub
+- central-north-europe
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-12
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the US security guarantee and allied air and surveillance presence at Keflavík while Washington's Greenland talk and map posts raise pressure. Iceland has no army, so its air policing and North Atlantic surveillance depend on NATO and US assets."
+      confidence: B
+      sources:
+        - {url: "https://www.inquirer.com/news/nation-world/trump-post-map-iceland-greenland-canada-mexico-us-flag-ambassador-summoned-prime-minister-nato-eu-20260908.html", title: "Iceland summons US ambassador after Trump posts map showing island under American flag", publisher: "The Inquirer (wire report)", date: 2026-09-08, tier: 3}
+        - {url: "https://www.arctictoday.com/nato-commander-argues-for-permanent-allied-military-presence-in-iceland/", title: "NATO commander argues for permanent allied military presence in Iceland", publisher: "Arctic Today", date: 2026-08, tier: 3}
+    - rank: 2
+      text: "Keep EEA and Schengen access without EU membership. Accession talks were not restarted: the 'no' camp won 52.8% on 29 August 2026, and the Frostadóttir government set membership aside until 2028, because fisheries remain the sticking point."
+      confidence: B
+      sources:
+        - {url: "https://www.euronews.com/2026/08/30/iceland-votes-no-to-further-eu-accession-talks-in-tight-result", title: "Iceland votes no to further EU accession talks in tight result", publisher: "Euronews", date: 2026-08-30, tier: 3}
+        - {url: "https://www.aljazeera.com/amp/news/2026/8/30/iceland-rejects-eu-membership-plan-in-referendum", title: "Iceland rejects EU membership plan in referendum", publisher: "Al Jazeera", date: 2026-08-30, tier: 3}
+    - rank: 3
+      text: "Hold the fisheries and the North Atlantic: keep a share of the mackerel stock in the four-party deal with Norway, the UK and the Faroe Islands, and watch the subsea cables and suspected shadow-fleet vessels around its exclusive economic zone."
+      confidence: B
+      sources:
+        - {url: "https://www.regjeringen.no/contentassets/35559f3f433247278903d438f9e0427a/agreed-record-of-fisheries-consultations-between-the-faroe-islands-and-iceland-on-the-management-of-mackerel-in-the-north-east-atlantic-15.12.2025.pdf", title: "Agreed record of fisheries consultations between the Faroe Islands and Iceland on mackerel (15.12.2025)", publisher: "Government of Norway", date: 2025-12-15, tier: 1}
+        - {url: "https://www.seafoodsource.com/news/supply-trade/four-northeast-atlantic-coastal-parties-agree-on-2026-mackerel-quotas-shares-eu-left-out-again", title: "Four Northeast Atlantic coastal parties agree on 2026 mackerel quotas, shares; EU left out again", publisher: "SeafoodSource", date: 2025-12, tier: 3}
+        - {url: "https://icelandmonitor.mbl.is/news/news/2025/03/06/an_unknown_ship_seen_sailing_near_the_country", title: "An unknown ship seen sailing near the country", publisher: "Iceland Monitor (mbl.is)", date: 2025-03-06, tier: 3}
+  means:
+    - text: "Diplomatic voice in Nordic and Atlantic frameworks: a NORDEFCO partner (ministerial in Trondheim, 6 May 2026), a Joint Expeditionary Force participant with the UK, and host of the Keflavík Control and Reporting Centre that manages Iceland's airspace."
+      confidence: B
+      sources:
+        - {url: "https://www.stjornarradid.is/frettir/grein/joint-statement-nordic-defence-cooperation/", title: "Joint statement on Nordic defence cooperation (NORDEFCO ministerial, Trondelag)", publisher: "Government of Iceland", date: 2026-05-06, tier: 1}
+        - {url: "https://www.stjornarradid.is/frettir/grein/cooperation-on-security-and-defence-in-the-north-atlantic-and-the-arctic", title: "Cooperation on security and defence in the North Atlantic and the Arctic", publisher: "Government of Iceland", date: 2026-07-06, tier: 1}
+    - text: "Host-nation support and fishing: facilities for allied rotations at Keflavík, and a 2026 mackerel share of 10.5% net after bilateral transfers, down from the 16.5% it set unilaterally for 2025."
+      confidence: B
+      sources:
+        - {url: "https://www.stjornarradid.is/frettir/grein/cooperation-on-security-and-defence-in-the-north-atlantic-and-the-arctic", title: "Cooperation on security and defence in the North Atlantic and the Arctic", publisher: "Government of Iceland", date: 2026-07-06, tier: 1}
+        - {url: "https://www.seafoodsource.com/news/supply-trade/four-northeast-atlantic-coastal-parties-agree-on-2026-mackerel-quotas-shares-eu-left-out-again", title: "Four Northeast Atlantic coastal parties agree on 2026 mackerel quotas, shares; EU left out again", publisher: "SeafoodSource", date: 2025-12, tier: 3}
+    - text: "Money for Ukraine and sanctions alignment: ISK 1 billion to NATO's PURL initiative and ISK 300 million to NSATU (February 2026), and full alignment with EU sanctions on Russia."
+      confidence: C
+      sources:
+        - {url: "https://government.is/topics/foreign-affairs/war-in-ukraine", title: "War in Ukraine - Iceland's response", publisher: "Government of Iceland", date: 2026, tier: 1}
+  constraints:
+    - text: "No army since independence in 1944: defence and air policing are provided by the United States and NATO partners, so Iceland cannot refuse the rotations it hosts."
+      confidence: B
+      sources:
+        - {url: "https://www.inquirer.com/news/nation-world/trump-post-map-iceland-greenland-canada-mexico-us-flag-ambassador-summoned-prime-minister-nato-eu-20260908.html", title: "Iceland summons US ambassador after Trump posts map showing island under American flag", publisher: "The Inquirer (wire report)", date: 2026-09-08, tier: 3}
+    - text: "Fisheries cap any EU route: the Commission's enlargement commissioner says Iceland's fisheries and agriculture specificities need careful consideration, and voters rejected restarting talks by a narrow margin."
+      confidence: B
+      sources:
+        - {url: "https://www.euronews.com/2026/08/30/iceland-votes-no-to-further-eu-accession-talks-in-tight-result", title: "Iceland votes no to further EU accession talks in tight result", publisher: "Euronews", date: 2026-08-30, tier: 3}
+    - text: "Narrow export base: exports to the United States were 85.5 billion ISK (FOB) in 2025, down about 10% on lower marine-product and manufacturing exports, so a rupture with Washington would hit trade quickly."
+      confidence: A
+      sources:
+        - {url: "https://statice.is/publications/news-archive/external-trade/trade-in-goods-2025/", title: "External trade: trade in goods 2025 (news release)", publisher: "Statistics Iceland", date: 2026-05-19, tier: 1}
+  paradoxes:
+    - confidence: B
+      text: "Pressure from Washington pushes Reykjavík toward Europe (47.2% voted to restart EU talks), yet the EU route needs the fisheries concession that a majority of voters refused, so the security guarantee has no European replacement."
+      sources:
+        - {url: "https://www.euronews.com/2026/08/30/iceland-votes-no-to-further-eu-accession-talks-in-tight-result", title: "Iceland votes no to further EU accession talks in tight result", publisher: "Euronews", date: 2026-08-30, tier: 3}
+        - {url: "https://www.inquirer.com/news/nation-world/trump-post-map-iceland-greenland-canada-mexico-us-flag-ambassador-summoned-prime-minister-nato-eu-20260908.html", title: "Iceland summons US ambassador after Trump posts map showing island under American flag", publisher: "The Inquirer (wire report)", date: 2026-09-08, tier: 3}
+  reading: |
+    Iceland is a NATO state with no army whose security rests on Washington, and in 2026 that dependence became a source of friction: after Trump's Davos gaffe and the September map post, Reykjavík summoned the US ambassador but did not change course. Its answer to the EU question is the same caution: Icelanders voted on 29 August 2026 not to restart accession talks, and the government set membership aside until 2028 while keeping the EEA. The Arctic role grows through NATO and the UK-led Joint Expeditionary Force rather than through forces of its own. Open gaps: the outcome of the US force-posture review and the size of the US presence at Keflavík were not found.
