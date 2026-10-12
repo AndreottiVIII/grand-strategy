@@ -136,7 +136,6 @@
 
     svg.append("rect").attr("width", width).attr("height", height).attr("fill", css("--paper"));
     const g = svg.append("g");
-    g.append("path").datum(d3.geoGraticule10()).attr("d", path).attr("fill", "none").attr("stroke", css("--grat")).attr("stroke-width", .4);
 
     const countries = g.append("g");
     // base: every country in the land tint
