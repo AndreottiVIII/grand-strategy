@@ -1,14 +1,199 @@
 id: GBR
 name: United Kingdom
+short: United Kingdom
 type: state
+coords: [-0.13, 51.51]
 iso2: gb
 wikipedia: https://en.wikipedia.org/wiki/United_Kingdom
-coords:
-- -0.13
-- 51.51
 seat: London
-regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+regions: ['western-south-europe']
+card: full
+tier: protagonist
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Deter Russia and keep the Euro-Atlantic order whole, on a 'NATO first' footing: lead inside the alliance (the Tapa battlegroup in Estonia, the nuclear role), co-lead the Coalition of the Willing with France so that a post-ceasefire force for Ukraine exists as a plan and, if a ceasefire comes, as troops. The Strategic Defence Review of June 2025 made this the organising principle of British defence."
+      confidence: A
+      sources:
+        - {url: "https://www.gov.uk/government/publications/the-strategic-defence-review-2025-making-britain-safer-secure-at-home-strong-abroad", title: "The Strategic Defence Review 2025 - Making Britain Safer: secure at home, strong abroad", publisher: "UK Government (Ministry of Defence)", date: 2025-06-02, tier: 1}
+        - {url: "https://kaitseministeerium.ee/en/news/united-kingdom-increase-military-presence-estonia", title: "United Kingdom to increase military presence in Estonia", publisher: "Ministry of Defence of Estonia", date: 2026, tier: 1}
+        - {url: "https://augengeradeaus.net/wp-content/uploads/2026/01/20260106_Paris_Declaration_Ukraine.pdf", title: "Paris Declaration - Robust security guarantees for a solid and lasting peace in Ukraine (text)", publisher: "Coalition of the Willing leaders (text hosted by Augen geradeaus)", date: 2026-01-06, tier: 1}
+        - {url: "https://worldview.ranenetwork.com/content/situational-report/2026-07-13/europe-ukraine-coalition-of-the-willing-meets-in-paris-set-to-declare-postwar-force-ready", title: "Europe-Ukraine Coalition of the Willing meets in Paris, set to declare postwar force ready", publisher: "Worldview / RANE", date: 2026-07-13, tier: 3}
+    - rank: 2
+      text: "Keep Washington close and engaged, and insure against it at the same time: trade carve-outs and tech and nuclear-energy deals bought with a state visit, intelligence and Trident ties that cannot be replaced, and a European backstop (France, Germany, Poland, the Nordics) built in parallel. The 'special relationship' is the asset the whole strategy is priced on."
+      confidence: B
+      sources:
+        - {url: "https://abc7.com/post/trump-leave-windsor-castle-meet-british-prime-minister-keir-starmer-day-2-uk-state-visit/17840760/", title: "Trump and Starmer sign US-UK tech deal on AI, nuclear power", publisher: "ABC News / AP", date: 2025-09-18, tier: 3}
+        - {url: "https://www.everycrsreport.com/files/2026-07-24_IF11123_62c11cd73023f40a41495a64f697aa567ddf76de.html", title: "U.S.-UK Trade Relations: Background and Selected Issues", publisher: "Congressional Research Service", date: 2026-07-24, tier: 1}
+        - {url: "https://euronews.com/2026/09/22/burnham-touts-good-connection-with-trump-as-pair-meet-for-first-time-in-new-york", title: "Burnham touts 'good connection' with Trump as pair meet for first time in New York", publisher: "Euronews", date: 2026-09-22, tier: 3}
+    - rank: 3
+      text: "Growth through trade: the EU reset (security and defence partnership, a sanitary and phytosanitary area, Erasmus+ from 2027, a youth scheme and carbon-market linkage under negotiation) and a fan of agreements elsewhere (India in force on 15 July 2026, the Gulf Cooperation Council concluded on 20 May 2026). Prime Minister Burnham has said 'all options' on the EU are on the table, a step beyond the 2025 reset."
+      confidence: B
+      sources:
+        - {url: "https://www.gov.uk/government/publications/ukeu-summit-key-documentation/uk-eu-summit-common-understanding-html", title: "UK-EU summit - Common Understanding (key documentation)", publisher: "UK Government", date: 2025-05-19, tier: 1}
+        - {url: "https://brusselstimes.com/eu-affairs/1885311/uk-to-officially-rejoin-erasmus-programme-in-latest-brexit-reset-tbtb/", title: "UK to officially rejoin Erasmus programme in latest Brexit reset", publisher: "Brussels Times", date: 2025-12, tier: 3}
+        - {url: "https://www.hlc.com/en/publications/uk-and-india-free-trade-agreement-enters-into-force", title: "UK and India free trade agreement enters into force", publisher: "Herbert Smith / HLC", date: 2026-07, tier: 3}
+        - {url: "https://www.fm.gov.om/en/46237/", title: "GCC and UK sign joint statement concluding free trade negotiations", publisher: "Ministry of Foreign Affairs of Oman", date: 2026-05-20, tier: 1}
+        - {url: "https://www.cityam.com/?p=2461817", title: "Burnham on Brexit: 'Customs union, single market - or we could go all the way'", publisher: "City AM", date: 2026-08, tier: 3}
+    - rank: 4
+      text: "Rebuild mass and industry behind the deterrent: defence spending of 2.5% of GDP by 2027, 3% in the next Parliament and the NATO 3.5% (plus 1.5%) by 2035, up to 12 SSN-AUKUS submarines, F-35A for the nuclear role, the GCAP fighter with Japan and Italy, Type 26 frigates for Norway, and drones for Ukraine and for the Royal Navy."
+      confidence: A
+      sources:
+        - {url: "https://www.gov.uk/government/publications/the-strategic-defence-review-2025-making-britain-safer-secure-at-home-strong-abroad", title: "The Strategic Defence Review 2025", publisher: "UK Government (Ministry of Defence)", date: 2025-06-02, tier: 1}
+        - {url: "https://ukdefencejournal.org.uk/defence-investment-plan-to-be-published-before-nato-summit/", title: "Defence Investment Plan to be published before NATO summit", publisher: "UK Defence Journal", date: 2026, tier: 3}
+        - {url: "https://theaviationist.com/2026/07/03/gcap-fighter-project-contract-edgewing/", title: "GCAP Fighter Project Advances with GBP 4.6 Billion Contract Award to Edgewing", publisher: "The Aviationist", date: 2026-07-03, tier: 3}
+        - {url: "https://www.gov.uk/government/news/uk-and-norway-to-operate-together-to-counter-russian-undersea-threat-through-major-new-defence-agreement", title: "UK and Norway to operate together to counter Russian undersea threat through major new defence agreement", publisher: "UK Government", date: 2025-12-04, tier: 1}
+    - rank: 5
+      text: "Hold the territorial and constitutional settlement while trading its edges: Gibraltar (the EU-UK treaty signed 14 July 2026 removed the land border fence without prejudice to sovereignty), the Falklands (sovereignty 'not up for negotiation'), the Chagos/Diego Garcia base (treaty signed 2025, ratification stalled for lack of US consent), Northern Ireland under the Windsor Framework, and the Union itself (SNP re-elected in Scotland in May 2026)."
+      confidence: B
+      sources:
+        - {url: "https://www.euronews.com/2026/07/15/gibraltar-enters-schengen-as-border-fence-comes-down-under-eu-uk-treaty", title: "Gibraltar enters Schengen as border fence comes down under EU-UK treaty", publisher: "Euronews", date: 2026-07-15, tier: 3}
+        - {url: "https://batimes.com.ar/news/argentina/uk-denies-mileis-claim-over-lifting-of-argentina-arms-sales.phtml", title: "UK denies Milei's claim over lifting of Argentina arms sales", publisher: "Buenos Aires Times", date: 2026-04, tier: 3}
+        - {url: "https://www.e-ir.info/2026/02/02/opinion-will-the-chagos-deal-survive/", title: "Opinion - Will the Chagos Deal Survive?", publisher: "E-International Relations", date: 2026-02-02, tier: 3}
+        - {url: "https://www.irishnews.com/news/politics/broad-welcome-for-breakthrough-eu-uk-reset-deal-OS5NQ7JX7JFZPF4FJYE6VP7MNQ/", title: "Broad welcome for breakthrough EU-UK reset deal", publisher: "The Irish News", date: 2025-05-19, tier: 3}
+    - rank: 6
+      text: "Defuse the domestic anger that Reform UK feeds on - small-boat migration above all - and shut the door on hostile-state activity at home (Russian sabotage and espionage, Chinese espionage, Iranian plots). Both are now foreign-policy files: the Channel is managed with France, Germany, Albania and China, and hybrid threats with Poland and the Nordics."
+      confidence: B
+      sources:
+        - {url: "https://euronews.com/2026/09/30/uk-ends-one-in-one-out-migrant-returns-deal-with-france", title: "UK ends 'one in, one out' migrant returns deal with France", publisher: "Euronews", date: 2026-09-30, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2025/7/9/uk-court-convicts-3-men-of-arson-in-attack-linked-to-russias-wagner-group", title: "UK court convicts 3 men of arson in attack linked to Russia's Wagner Group", publisher: "Al Jazeera", date: 2025-07-09, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "A web of bilateral treaties around the EU's centre: Lancaster House and the Northwood Declaration with France (10 July 2025, nuclear policy coordinated under national control), the Kensington Treaty with Germany (17 July 2025), a defence and security treaty with Poland (signed 27 May 2026), the 100-Year Partnership with Ukraine (16 January 2025), the Lunna House agreement with Norway (4 December 2025) and the Geelong Treaty with Australia (26 July 2025). Together with the Joint Expeditionary Force and the Coalition of the Willing they make London the organiser of the 'coalition' layer of European security."
+      confidence: A
+      sources:
+        - {url: "https://www.gov.uk/government/news/northwood-declaration-10-july-2025-uk-france-joint-nuclear-statement", title: "Northwood Declaration, 10 July 2025: UK-France joint nuclear statement", publisher: "UK Government", date: 2025-07-10, tier: 1}
+        - {url: "https://www.yahoo.com/news/merz-visits-uk-europe-closes-220311721.html", title: "UK and Germany hail wide-ranging treaty, deepening ties in face of threats", publisher: "Reuters via Yahoo News", date: 2025-07-17, tier: 3}
+        - {url: "https://notesfrompoland.com/2026/05/27/poland-and-uk-sign-treaty-deepening-defence-and-security-ties/", title: "Poland and UK sign treaty deepening defence and security ties", publisher: "Notes from Poland", date: 2026-05-27, tier: 3}
+        - {url: "https://www.gov.uk/government/news/uk-and-ukraine-sign-landmark-100-year-partnership-to-deepen-security-ties-and-strengthen-partnership-for-future-generations", title: "UK and Ukraine sign landmark 100-year partnership", publisher: "UK Government", date: 2025-01-16, tier: 1}
+        - {url: "https://www.globalgovernmentforum.com/uk-and-australia-sign-50-year-aukus-defence-partnership-treaty/", title: "UK and Australia sign 50-year AUKUS defence partnership treaty", publisher: "Global Government Forum", date: 2025-07-26, tier: 3}
+    - domain: diplomatic
+      text: "The E3 hold on Iran: with France and Germany the UK triggered the UN 'snapback' on 28 August 2025 and UN sanctions returned on 27-28 September; in 2026 it pairs a legal reading of the war (no British role in the first US strikes, bases opened only for 'specific and limited defensive purposes') with a push for a US-Iran ceasefire and free passage through Hormuz."
+      confidence: B
+      sources:
+        - {url: "https://exportcompliancedaily.com/news/2025/09/30/UN-Imposes-Snapback-Sanctions-Against-Iran-2509290051", title: "UN Imposes Snapback Sanctions Against Iran", publisher: "Export Compliance Daily", date: 2025-09-30, tier: 3}
+        - {url: "https://www.jewishnews.co.uk/trump-says-uk-relationship-not-what-it-was-after-starmer-blocks-us-use-of-british-bases-for-iran-strikes/amp/", title: "Trump says UK relationship 'not what it was' after Starmer blocks US use of British bases for Iran strikes", publisher: "Jewish News", date: 2026-03, tier: 3}
+        - {url: "https://www.ajbell.co.uk/news/articles/uk-welcomes-us-iran-ceasefire-amid-efforts-reopen-strait-hormuz", title: "UK welcomes US-Iran ceasefire amid efforts to reopen Strait of Hormuz", publisher: "AJ Bell / Reuters", date: 2026-04, tier: 3}
+    - domain: informational
+      text: "Public attribution as a weapon: the June 2026 sanctions package named a GRU front, Neptune, and shadow-fleet and procurement networks; courts have convicted a Russian-run Bulgarian spy ring (sentences May 2025) and the Wagner-organised arson of a Ukraine-bound warehouse in London (convictions July 2025). The Foreign Office's line on China pairs engagement with public statements on Hong Kong (Jimmy Lai, 20 years)."
+      confidence: B
+      sources:
+        - {url: "https://sanctionsnews.bakermckenzie.com/uk-expands-russia-sanctions-to-further-target-shadow-fleet-military-procurement-and-financial-networks/", title: "UK expands Russia sanctions to further target shadow fleet, military procurement and financial networks", publisher: "Baker McKenzie Sanctions News", date: 2026-06, tier: 3}
+        - {url: "https://therecord.media/bulgarian-members-russian-spy-ring-sentenced-uk", title: "Russia's 'outsourced' Bulgarian spy ring sentenced to more than 50 years in UK", publisher: "The Record", date: 2025-05, tier: 3}
+        - {url: "https://www.coastfm.co.uk/news/world/briton-jimmy-lai-sentenced-to-20-years", title: "Briton Jimmy Lai sentenced to 20 years", publisher: "Coast FM / PA", date: 2026-02, tier: 3}
+    - domain: military
+      text: "Forward presence and the nuclear role: the Tapa battlegroup in Estonia since 2017 (over 1,000 troops, 4th Brigade to train there in 2027), Typhoons and F-35s on NATO air policing, the Trident submarines and a planned F-35A dual-capable fleet, and in 2026 the first boarding of a sanctioned shadow-fleet tanker in the Channel (14 June), minehunters and HMS Dragon for a Hormuz mission and counter-drone batteries sent to Kuwait and Bahrain."
+      confidence: B
+      sources:
+        - {url: "https://kaitseministeerium.ee/en/international-cooperation-and-allied-relations/allied-forces-estonia/uk-led-nato-battlegroup", title: "NATO Allied battlegroup in Estonia", publisher: "Ministry of Defence of Estonia", date: 2026, tier: 1}
+        - {url: "https://www.aljazeera.com/amp/news/2026/6/16/uk-seizes-russian-shadow-fleet-tanker-what-that-means", title: "UK seizes Russian 'shadow fleet' tanker - what that means", publisher: "Al Jazeera", date: 2026-06-16, tier: 3}
+        - {url: "https://www.portsmouth.co.uk/news/defence/royal-navy-pre-deployed-autonomous-minehunters-strait-of-hormuz-defence-minister-luke-pollard-6569721", title: "Royal Navy has pre-deployed autonomous minehunters to Strait of Hormuz, says defence minister Luke Pollard", publisher: "The News (Portsmouth)", date: 2026-05, tier: 3}
+        - {url: "https://www.al-monitor.com/originals/2026/03/uk-looks-provide-more-support-gulf-allies-amid-iranian-attacks", title: "UK looks to provide more support to Gulf allies amid Iranian attacks", publisher: "Al-Monitor / Reuters", date: 2026-03-18, tier: 3}
+    - domain: economic
+      text: "Sanctions and market access as levers: more than 500 shadow-fleet vessels designated (Ministry of Defence count, June 2026), a US Economic Prosperity Deal of May 2025 with sector carve-outs, a Tech Prosperity Deal (September 2025) and about GBP 150bn of US investment pledges, gas from Norway (27 bcm in 2025), and the UK-India (in force 15 July 2026) and UK-GCC (concluded 20 May 2026) agreements."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/amp/news/2026/6/16/uk-seizes-russian-shadow-fleet-tanker-what-that-means", title: "UK seizes Russian 'shadow fleet' tanker - what that means", publisher: "Al Jazeera", date: 2026-06-16, tier: 3}
+        - {url: "https://www.everycrsreport.com/files/2026-07-24_IF11123_62c11cd73023f40a41495a64f697aa567ddf76de.html", title: "U.S.-UK Trade Relations: Background and Selected Issues", publisher: "Congressional Research Service", date: 2026-07-24, tier: 1}
+        - {url: "https://pgjonline.com/news/2026/january/norway-pipeline-gas-exports-slip-23-in-2025-set-to-hold-steady", title: "Norway pipeline gas exports slip 2.3% in 2025, set to hold steady", publisher: "Pipeline & Gas Journal", date: 2026-01, tier: 3}
+        - {url: "https://www.asm.org.uk/en/news-updates/customs-industry/uk-india-free-trade-agreement-now-in-force/", title: "UK-India Free Trade Agreement now in force", publisher: "ASM (UK customs industry)", date: 2026-07-15, tier: 3}
+
+  constraints:
+    - text: "The money does not match the mission. The Defence Investment Plan projects 2.7% of GDP on defence by 2029-30 (2.68% in Healey's resignation letter) against a NATO path to 3.5% by 2035; a funding gap of about GBP 4.7bn over five years remains, and the Defence Secretary Streeting refuses to promise 3% by 2030 without a funding plan."
+      confidence: B
+      sources:
+        - {url: "https://www.al-monitor.com/originals/2026/07/ex-nato-chief-says-uk-may-get-frosty-ankara-welcome-absence-35-plan", title: "Ex-NATO chief says UK may get frosty Ankara welcome over absence of 3.5% plan", publisher: "Al-Monitor", date: 2026-07, tier: 3}
+        - {url: "https://www.expressandstar.com/uk-news/uk-would-pay-heavy-price-for-promising-3-defence-goal-without-plan-streeting-8829753", title: "UK would pay heavy price for promising 3% defence goal without plan - Streeting", publisher: "Express & Star / PA", date: 2026-07, tier: 3}
+        - {url: "https://londonlovesbusiness.com/burnham-faces-defence-funding-test-as-streeting-warns-he-could-quit/", title: "Burnham faces defence funding test as Streeting warns he could quit", publisher: "London Loves Business", date: 2026-07, tier: 3}
+    - text: "Dependence on the United States for the hardest things: Trident missiles (a shared US-made pool, with US support for navigation and maintenance), the F-35A that will carry US-owned B61-12 bombs, the intelligence relationship and, through AUKUS, the submarine programme. A dependence that cannot be traded away makes every disagreement with Washington costly."
+      confidence: B
+      sources:
+        - {url: "https://www.chathamhouse.org/2025/06/uk-purchase-f35as-increases-reliance-us-systems-limited-benefits", title: "The UK purchase of F-35As increases reliance on US systems - with limited benefits", publisher: "Chatham House", date: 2025-06, tier: 2}
+        - {url: "https://armscontrolcenter.org/a-truly-dependent-independent-deterrent/", title: "A truly dependent independent deterrent", publisher: "Center for Arms Control and Non-Proliferation", date: 2025, tier: 3}
+        - {url: "https://www.bairdmaritime.com/security/naval/naval-submersibles/pentagons-aukus-review-finds-opportunities-to-put-deal-on-strongest-possible-footing-us-official-says", title: "Pentagon's AUKUS review finds opportunities to put deal on 'strongest possible footing', US official says", publisher: "Baird Maritime", date: 2025-12, tier: 3}
+    - text: "A fragile centre in London: Labour lost heavily in the May 2026 local and devolved elections (Reform won more than 1,400 English council seats; Plaid Cymru first and Reform second in Wales; SNP re-elected in Scotland), Keir Starmer resigned on 22 June after the least popular premiership on record, and Andy Burnham took office on 20 July. Polls in late September had Labour and Reform level (YouGov 24-25%, Survation Labour ahead) - the 'Burnham bounce' is real but not firm."
+      confidence: A
+      sources:
+        - {url: "https://www.morningstar.co.uk/uk/news/AN_1778223114340238800/starmer-under-pressure-as-labour-suffers-uk-local-election-losses.aspx", title: "Starmer under pressure as Labour suffers UK local election losses", publisher: "Morningstar / Reuters", date: 2026-05, tier: 3}
+        - {url: "https://www.cnn.com/2026/06/22/world/live-news/keir-starmer-uk-pm", title: "June 22, 2026: Keir Starmer resignation, UK to get sixth PM in seven years", publisher: "CNN", date: 2026-06-22, tier: 3}
+        - {url: "https://yougov.com/en-gb/articles/55640-voting-intention-27-28-september-2026-ref-25-lab-24-con-19-ld-12-grn-11", title: "Westminster voting intention, 27-28 September 2026", publisher: "YouGov", date: 2026-09-29, tier: 2}
+        - {url: "https://www.aljazeera.com/news/2026/9/30/burnham-bounce-why-labours-rising-again-reforms-slipping", title: "The Burnham bounce: is Labour gaining ground against Farage's Reform?", publisher: "Al Jazeera", date: 2026-09-30, tier: 3}
+    - text: "Thin hulls and readiness: Iran's drone strike on RAF Akrotiri in March 2026 and HMS Dragon's late departure exposed how few ships and air-defence assets are available; the Royal Navy withdrew its last mine-countermeasures vessel from the Gulf in early 2026 and depends on uncrewed systems for Hormuz."
+      confidence: B
+      sources:
+        - {url: "https://www.yahoo.com/news/articles/uk-says-not-war-iranian-125413343.html", title: "UK says it is not at war after Iranian drone strikes RAF Akrotiri base in Cyprus", publisher: "Reuters via Yahoo News", date: 2026-03, tier: 3}
+        - {url: "https://www.aa.com.tr/en/world/uks-royal-navy-set-to-lead-coalition-to-reopen-strait-of-hormuz-report/3877806", title: "UK's Royal Navy set to lead coalition to reopen Strait of Hormuz - report", publisher: "Anadolu Agency", date: 2026-03, tier: 3}
+    - text: "The EU is open but not generous: the reset of May 2025 left the youth scheme and the SPS text unfinished, the second summit planned for 22 July 2026 was postponed after Starmer's fall (a new date is sought for November or year-end), the UK is still outside the SAFE defence-loan scheme beyond third-country terms (up to 35% UK content), and Brussels warns that a customs union means full alignment."
+      confidence: B
+      sources:
+        - {url: "https://www.parallelparliament.co.uk/lord/baroness-anderson-of-stoke-on-trent/debate/2026-02-26/lords/lords-chamber/resetting-the-uk-eu-relationship-european-affairs-committee-report", title: "Resetting the UK-EU Relationship (European Affairs Committee Report) - Lords debate", publisher: "House of Lords (Hansard)", date: 2026-02-26, tier: 1}
+        - {url: "https://carbon-pulse.com/545043/", title: "UK-EU summit 'could be' held in November, says British PM", publisher: "Carbon Pulse", date: 2026-08, tier: 3}
+        - {url: "https://www.lbc.co.uk/article/burnham-hints-rejoining-eu-5HjdhnL_2/", title: "Burnham hints at rejoining EU", publisher: "LBC", date: 2026-08, tier: 3}
+    - text: "Law and legitimacy bind the use of force: the British government refused US use of its bases for the first strikes on Iran on legal grounds, paused Caribbean intelligence sharing over the US boat strikes, and cannot ratify the Chagos treaty because of a Parliament that ran out of time and a US administration that has not consented."
+      confidence: B
+      sources:
+        - {url: "https://news.liga.net/en/amp/world/news/the-times-britain-bans-the-us-from-using-its-bases-for-strikes-on-iran", title: "The Times: Britain bans the US from using its bases for strikes on Iran", publisher: "Liga.net citing The Times", date: 2026-03, tier: 3}
+        - {url: "https://krdo.com/news/2025/11/11/exclusive-uk-suspends-some-intelligence-sharing-with-us-over-boat-strike-concerns-in-major-break/", title: "Exclusive: UK suspends some intelligence sharing with US over boat strike concerns in major break", publisher: "CNN via KRDO", date: 2025-11-11, tier: 3}
+        - {url: "https://www.chathamhouse.org/2026/01/uk-ratification-chagos-archipelago-treaty-will-not-violate-international-law", title: "UK ratification of the Chagos Archipelago treaty will not violate international law", publisher: "Chatham House", date: 2026-01, tier: 2}
+
+  paradoxes:
+    - text: "The country that organises Europe's 'coalition' layer cannot fund the force it organises. The UK leads the Coalition of the Willing, the JEF and the Estonia battlegroup, and signed treaties with France, Germany and Poland, but its own spending path (2.7% of GDP by 2029-30) is below the Hague pledge, a Defence Secretary resigned in June over exactly this, and the prime minister who inherited the problem will not date the 3%. Leadership by treaties is paid for in promises."
+      confidence: B
+      sources:
+        - {url: "https://www.al-monitor.com/originals/2026/07/ex-nato-chief-says-uk-may-get-frosty-ankara-welcome-absence-35-plan", title: "Ex-NATO chief says UK may get frosty Ankara welcome over absence of 3.5% plan", publisher: "Al-Monitor", date: 2026-07, tier: 3}
+        - {url: "https://ground.news/article/burnham-and-streeting-reject-healeys-3-defence-spending-demand", title: "Burnham and Streeting reject Healey's 3% defence spending demand", publisher: "Ground News", date: 2026-07, tier: 3}
+    - text: "Courting Trump to keep the American umbrella, then losing his goodwill by obeying the law. The state visit, the Tech Prosperity Deal and GBP 150bn of pledges (September 2025) were the price of protection, but the March 2026 refusal of bases for the first strikes on Iran - taken on legal advice to protect British standing and forces - brought Trump's 'the relationship is obviously not what it was', talk of a Pentagon review of the Falklands position, and a US that withholds consent on Chagos. Doing what the alliance's own rules require costs the alliance."
+      confidence: B
+      sources:
+        - {url: "https://www.jewishnews.co.uk/trump-says-uk-relationship-not-what-it-was-after-starmer-blocks-us-use-of-british-bases-for-iran-strikes/amp/", title: "Trump says UK relationship 'not what it was' after Starmer blocks US use of British bases for Iran strikes", publisher: "Jewish News", date: 2026-03, tier: 3}
+        - {url: "https://batimes.com.ar/news/argentina/uk-denies-mileis-claim-over-lifting-of-argentina-arms-sales.phtml", title: "UK denies Milei's claim over lifting of Argentina arms sales (leaked Pentagon email on Falklands)", publisher: "Buenos Aires Times", date: 2026-04-14, tier: 3}
+        - {url: "https://aa.com.tr/en/world/uk-delays-debate-on-chagos-deal-after-trump-backlash-reports/3809359", title: "UK delays debate on Chagos deal after Trump backlash", publisher: "Anadolu Agency", date: 2026, tier: 3}
+    - text: "The Chagos treaty was meant to secure Diego Garcia and ended by making it contestable. Ceding sovereignty to Mauritius for a 99-year lease was London's way of protecting the base from adverse legal rulings; instead the US president called it 'an act of great stupidity', the Bill ran out of time in the Lords and the government has said it cannot satisfy the condition of US consent. The base was used for US operations against Iran in March 2026 under the old arrangement."
+      confidence: B
+      sources:
+        - {url: "https://www.e-ir.info/2026/02/02/opinion-will-the-chagos-deal-survive/", title: "Opinion - Will the Chagos Deal Survive?", publisher: "E-International Relations", date: 2026-02-02, tier: 3}
+        - {url: "https://www.chathamhouse.org/2026/01/uk-ratification-chagos-archipelago-treaty-will-not-violate-international-law", title: "UK ratification of the Chagos Archipelago treaty will not violate international law", publisher: "Chatham House", date: 2026-01, tier: 2}
+    - text: "Engaging China for growth bought neither security nor sales. The government approved the Royal Mint Court embassy (20 January 2026) just before Starmer's Beijing visit (visa-free entry, whisky tariff cut to 5%), after a China spying case collapsed in 2025 because no official would say China was a threat; Jimmy Lai, a British citizen, was sentenced to 20 years and Jaguar Land Rover's China sales fell 25.8% in 2025 and are still falling in 2026. Each concession to the trade case weakens the security case at home and with Washington."
+      confidence: B
+      sources:
+        - {url: "https://www.lbc.co.uk/news/uk/chinas-embassy-london-plans-approved/", title: "China's embassy in London plans approved", publisher: "LBC", date: 2026-01-20, tier: 3}
+        - {url: "https://www.upi.com/Top_News/World-News/2026/01/29/britain-hail-relationship-reset/4071769678792/", title: "Britain hails relationship reset with China", publisher: "UPI", date: 2026-01-29, tier: 3}
+        - {url: "https://www.pbs.org/newshour/world/uk-prosecutor-says-spying-case-collapsed-because-government-wouldnt-call-china-a-threat", title: "UK prosecutor says spying case collapsed because government wouldn't call China a threat", publisher: "AP via PBS NewsHour", date: 2025-10-08, tier: 3}
+        - {url: "https://chinaevhome.com/2026/09/07/jlr-china-rules-out-local-restructuring-as-global-job-cuts-loom-1/", title: "JLR China rules out local restructuring as global job cuts loom", publisher: "ChinaEVHome", date: 2026-09-07, tier: 4}
+    - text: "A border that France polices and Reform punishes. The 'one in, one out' returns deal (August 2025 - 30 September 2026) was the government's answer to the Channel, but it returned about 1,100 people against almost 28,000 arrivals by small boat, cost about GBP 56,000 per return and was ended because France wants a European arrangement instead. At the same time London signed the Northwood nuclear declaration with the same Paris and still depends on it for the border: the relationship is deepest on the hardest subject and shallowest on the one that decides British elections."
+      confidence: B
+      sources:
+        - {url: "https://euronews.com/2026/09/30/uk-ends-one-in-one-out-migrant-returns-deal-with-france", title: "UK ends 'one in, one out' migrant returns deal with France", publisher: "Euronews", date: 2026-09-30, tier: 3}
+        - {url: "https://www.gov.uk/government/news/northwood-declaration-10-july-2025-uk-france-joint-nuclear-statement", title: "Northwood Declaration, 10 July 2025", publisher: "UK Government", date: 2025-07-10, tier: 1}
+    - text: "A Europe reset that Brexit voters cannot see. The government draws closer to the EU (SPS area, Erasmus+, Gibraltar in Schengen, Burnham's 'all options') to raise growth, but Labour's manifesto ruled out the single market and customs union, and Reform led or tied the polls throughout 2026. Each step toward Brussels is visible to the voter as a concession and invisible as a gain until the SPS text takes effect (alignment planned for mid-2027)."
+      confidence: C
+      sources:
+        - {url: "https://www.lbc.co.uk/article/burnham-hints-rejoining-eu-5HjdhnL_2/", title: "Burnham hints at rejoining EU", publisher: "LBC", date: 2026-08, tier: 3}
+        - {url: "https://yougov.com/en-gb/articles/55640-voting-intention-27-28-september-2026-ref-25-lab-24-con-19-ld-12-grn-11", title: "Westminster voting intention, 27-28 September 2026", publisher: "YouGov", date: 2026-09-29, tier: 2}
+
+  reading: |
+    The United Kingdom runs the grand strategy of a power that has lost the
+    weight to act alone and the habit of not acting, and has decided to make
+    itself the organiser of the coalitions in which others' weight is added to its
+    own: the Coalition of the Willing for Ukraine with France, the JEF in the
+    north, bilateral treaties with Berlin, Warsaw, Paris, Oslo and Canberra, and
+    a nuclear role it now coordinates with Paris while it rents the delivery
+    system from Washington. Luttwak's reversal is everywhere. The more the UK
+    organises, the more it needs the American umbrella it is trying to insure
+    against; the more it obeys international law toward Washington (Iran bases,
+    Caribbean intelligence) the less Washington obliges it (Chagos, the Falklands
+    hints, tariffs); the more it engages China and the EU for growth, the more the
+    security and political price rises at home. Underneath is a politics
+    that has not found its centre: 2026 saw the May rout, Starmer's fall on
+    22 June and Burnham's arrival on 20 July with a poll bounce that Reform nearly
+    erased in a week. Three signals that are not rows: the postponement of the
+    July UK-EU summit until Brussels knew who would be in Downing Street; the
+    Healey resignation that turned the 3% question into a government-wide problem;
+    and Washington's 'neutrality' statement on the Falklands only after a leaked
+    Pentagon email suggested otherwise. For the next review: whether a UK-EU summit
+    in November-December fixes the SPS and youth texts, whether the Autumn Budget
+    funds the Defence Investment Plan, and whether Burnham's 'all options' survives
+    contact with a Reform lead.
