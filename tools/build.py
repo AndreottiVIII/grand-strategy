@@ -349,6 +349,15 @@ def main():
         "issues": (yaml.safe_load((DATA / "issues.yaml").open(encoding="utf-8")) or {}).get("issues", []) if (DATA / "issues.yaml").exists() else [],
     }
     OUT.write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":"), default=str), encoding="utf-8")
+    # one self-contained bundle per actor, so any future front end can read a state without the whole atlas
+    bundles = ROOT / "docs" / "actors"
+    bundles.mkdir(exist_ok=True)
+    for aid, a in actors.items():
+        b = {"actor": a, "stances": out["stances"].get(aid, []),
+             "stances_toward": [dict(st, actor=k) for k, v in out["stances"].items() for st in v if st["toward"] == aid],
+             "relations_from": [r for r in rows if r["from"] == aid], "relations_to": [r for r in rows if r["to"] == aid],
+             "unga": {"affinity": unga["affinity"].get(aid), "landmarks": unga["landmarks"].get(aid)}, "generated": today.isoformat()}
+        (bundles / f"{aid}.json").write_text(json.dumps(b, ensure_ascii=False, separators=(",", ":"), default=str), encoding="utf-8")
     # cache-busting: rewrite ?v= stamps in docs/index.html so GitHub Pages visitors get the new files
     idx = ROOT / "docs" / "index.html"
     stamp = __import__("datetime").datetime.now().strftime("%Y%m%d%H%M")

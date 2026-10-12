@@ -88,7 +88,9 @@ Pilot demo built on 2026-10-12: one full card (Serbia) with 18 stances and 43 re
   journal entry.
 - `data/actors/<id>.yaml`, `data/stances/<id>.yaml`, `data/relations/<from>.yaml`: the
   truth. One file per actor; stubs (`card: stub`) are nodes without a card.
-- `tools/build.py`: validates `data/` and compiles it to `docs/data.json`. Refuses to
+- `tools/build.py`: validates `data/` and compiles it to `docs/data.json` and to one
+  bundle per actor in `docs/actors/<id>.json` (card, stances both ways, relations both
+  ways, votes): any future front end can read a state on its own. Refuses to
   write on any error (missing source, unknown id, grade or type outside the vocabulary).
 - `docs/`: the static site served by GitHub Pages (`index.html`, `app.js`, `style.css`,
   `world.geojson` from Natural Earth 110m with Kosovo as `XKX`, and the compiled
