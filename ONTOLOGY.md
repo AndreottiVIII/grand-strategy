@@ -118,6 +118,12 @@ mean opposite things. `bond` records the standing tie, which changes over decade
 | `grievance` | an open historical wound | United States and NATO (1999), Croatia, Kosovo |
 | `unknown` | not assessed; allowed only on dataset-derived stances | treaty allies generated from alliance memberships |
 
+**Reciprocal allies (Davide, 2026-10-12).** An alliance is mutual: if A's hand-written
+stance grades B `ally` and B holds no stance toward A, the build adds B → A `ally` with
+A's sources, the same bond, one confidence grade lower, flagged `reciprocal`, and warns
+so that B's own side gets written in the reverse pass. Rivalries and partnerships are
+never mirrored: they can be asymmetric.
+
 **Dataset-derived stances.** The build generates `ally` stances between co-members of a
 defence alliance (NATO Art. 5, CSTO Art. 4, EU Art. 42(7)), confidence A, bond
 `unknown`, flagged `dataset`. They are the floor, not the reading: a hand-written

@@ -308,6 +308,32 @@ def main():
     if derived:
         warnings.append(f"{derived} ally stances derived from alliance memberships (NATO, CSTO, EU)")
 
+    # --- reciprocal allies (Davide, 2026-10-12): an alliance is mutual. If A's hand-written stance grades B `ally`
+    # and B has no stance toward A, B gets the reciprocal with the same sources, one confidence grade lower,
+    # flagged `reciprocal`, so the map never shows an alliance from one side only. Rivalries are never mirrored.
+    lower = {"A": "B", "B": "C", "C": "C"}
+    recip = 0
+    for a, s in list(stances.items()):
+        for st in s.get("stances", []):
+            if st.get("grade") != "ally" or st.get("dataset"):
+                continue
+            b = st["toward"]
+            if b not in actors:
+                continue
+            existing = {x["toward"] for x in (stances.get(b) or {}).get("stances", [])}
+            if a in existing:
+                continue
+            stances.setdefault(b, {"actor": b, "stances": []})["stances"].append({
+                "toward": a, "grade": "ally", "trend": st.get("trend", "stable"), "bond": st.get("bond", "unknown"),
+                "since": st.get("since"), "last_verified": st.get("last_verified"), "confidence": lower.get(st.get("confidence", "C"), "C"),
+                "dataset": "reciprocal", "stale": st.get("stale", False),
+                "note": f"Reciprocal of {actors[a]['name']}'s ally stance toward {actors[b]['name']}, not yet written from this side; same evidence. ",
+                "sources": st.get("sources", [])})
+            recip += 1
+            warn(f"{b} -> {a}: reciprocal ally stance added from {a}'s card; write {b}'s own side in the reverse pass")
+    if recip:
+        warnings.append(f"{recip} reciprocal ally stances added")
+
     # --- structural checks (ONTOLOGY.md: the grade follows the structural position)
     grade = {(a, st["toward"]): st["grade"] for a, s in stances.items() for st in s.get("stances") or []}
     allies = {}
