@@ -1,0 +1,746 @@
+from: SWE
+relations:
+- to: RUS
+  layer: objective
+  type: influence_goal
+  summary: 'Sweden''s declared aim is deterrence and denial: Russia must not win in Ukraine and must not gain a foothold in the Baltic; the military intelligence service calls Russia the main military threat to Sweden and NATO and the defence minister calls for Europe to move to a ''war footing''.'
+  since: 2022-02-24
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.thedefensepost.com/2026/02/17/russia-hybrid-threats-sweden/
+    title: 'Russia increasing hybrid threats around Sweden: Swedish military intelligence'
+    publisher: The Defense Post (AFP)
+    date: '2026-02-17'
+    tier: 3
+  - url: https://www.pravda.com.ua/eng/news/2025/10/19/8003420
+    title: Europe must switch to war mode to deter Russia - Swedish defence minister
+    publisher: Ukrainska Pravda
+    date: '2025-10-19'
+    tier: 3
+- to: UKR
+  layer: objective
+  type: influence_goal
+  summary: Sweden aims to keep Ukraine funded and armed, to contribute to its reconstruction and reforms and to prepare its future EU and NATO membership; the 2024 agreement lists air defence, armour, artillery, maritime security, drones and the prospect of Gripens.
+  since: 2024-05-31
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - &id001
+    url: https://government.se/press-releases/2024/05/sweden-enters-into-security-cooperation-agreement-with-ukraine/
+    title: Sweden enters into security cooperation agreement with Ukraine
+    publisher: Government Offices of Sweden
+    date: '2024-05-31'
+    tier: 1
+  - &id002
+    url: https://president.gov.ua/en/news/ukrayina-ta-shveciya-pidpisali-bezpekovu-ugodu-91233
+    title: Ukraine and Sweden signed a security agreement
+    publisher: Office of the President of Ukraine
+    date: '2024-05-31'
+    tier: 1
+  - &id006
+    url: https://www.government.se/government-policy/swedens-support-to-ukraine/military-support-to-ukraine/
+    title: Military support to Ukraine (22 support packages; about SEK 128 billion)
+    publisher: Government Offices of Sweden
+    date: '2026-05-28'
+    tier: 1
+- to: org-eu
+  layer: objective
+  type: influence_goal
+  summary: Sweden leads the six-state demand to cut the Commission's EUR 1.76 trillion 2028-34 proposal by 'several hundred billion euros', rules out new common borrowing, and says it will not accept a 'violent increase'; the 15-16 October 2026 European Council is the test.
+  since: 2025-07-01
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - &id011
+    url: https://www.intellinews.com/six-net-contributors-demand-hundreds-of-billions-off-the-eu-s-next-budget-464258
+    title: Six net contributors demand hundreds of billions off the EU's next budget
+    publisher: bne IntelliNews
+    date: '2026-09-29'
+    tier: 3
+  - &id015
+    url: https://svt.se/nyheter/utrikes/ingen-viker-i-eu-strid-sverige-ingen-bankomat
+    title: 'Nobody yields in EU budget fight: Sweden ''no cash machine'''
+    publisher: SVT
+    date: 2026-06
+    tier: 3
+    title_original: 'Ingen viker i EU-strid: Sverige ingen bankomat'
+    lang: sv
+- to: org-nato
+  layer: objective
+  type: influence_goal
+  summary: 'Sweden seeks the weight of a framework nation inside NATO: the allied battlegroup in Finnish Lapland (19th Arctic Mechanised Brigade, expandable to 4,000-5,000), a Joint Logistics Support Group headquarters in Enkoping by 2027, Swedish officers in the Baltic naval headquarters which is to move to Sweden around 2032.'
+  since: 2025-08-01
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - &id004
+    url: https://www.osw.waw.pl/en/publikacje/analyses/2025-10-07/natos-northern-flank-allied-forces-and-structures-nordic-countries
+    title: 'NATO''s northern flank: allied forces and structures in the Nordic countries'
+    publisher: OSW
+    date: '2025-10-07'
+    tier: 2
+- to: USA
+  layer: objective
+  type: influence_goal
+  summary: 'Sweden wants a US presence kept in Europe''s security through the DCA while also building a European and Nordic pillar; Kristersson on Greenland: ''We won''t let ourselves be intimidated'' and called it a European question.'
+  since: 2023-12-05
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - &id003
+    url: https://www.government.se/government-policy/military-defence/defence-cooperation-agreement-with-the-united-states/
+    title: Defence Cooperation Agreement with the United States
+    publisher: Government Offices of Sweden
+    date: '2024'
+    tier: 1
+  - &id010
+    url: https://ruralradio.com/krvn/abc_news/trump-announces-tariffs-on-nato-allies-for-opposing-us-control-of-greenland-abcid918184d3/
+    title: Trump announces tariffs on NATO allies for opposing US control of Greenland
+    publisher: ABC News
+    date: '2026-01-17'
+    tier: 3
+- to: UKR
+  layer: alignment
+  type: treaty
+  summary: 'Agreement on security cooperation signed 31 May 2024 at the Nordic-Ukrainian summit in Stockholm; ten years, with SEK 75 billion of military support for 2024-26 and a pledge to raise it. (Not a 100-year agreement: that format belongs to the UK.)'
+  since: 2024-05-31
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - *id001
+  - *id002
+  - url: https://www.government.se/press-releases/2024/05/sek-75-billion-in-military-support-to-ukraine/
+    title: SEK 75 billion in military support to Ukraine
+    publisher: Government Offices of Sweden
+    date: 2024-05
+    tier: 1
+- to: USA
+  layer: alignment
+  type: treaty
+  summary: Defence Cooperation Agreement signed 5 Dec 2023 by Jonson and Austin; Riksdag approved 18 June 2024 (266-37); in force August 2024. US forces get unimpeded access to 17 agreed facilities and areas, pre-positioning and first jurisdiction over their personnel; the government says no nuclear weapons will be stored.
+  since: 2023-12-05
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - *id003
+  - url: https://www.riksdagen.se/en/news/articles/2024/jun/18/the-riksdag-votes-in-favour-of-defence-agreement_cms2fa8b58c-5dc6-455f-b909-95d1d9477599en/
+    title: The Riksdag votes in favour of defence agreement with the USA (266-37)
+    publisher: Riksdag
+    date: '2024-06-18'
+    tier: 1
+  - &id005
+    url: https://sverigesradio.se/artikel/sweden-and-the-us-sign-historic-defence-deal
+    title: Sweden and the US sign historic defence deal
+    publisher: Sveriges Radio
+    date: '2023-12-05'
+    tier: 3
+- to: POL
+  layer: alignment
+  type: treaty
+  summary: Renewed Strategic Partnership signed at Harpsund on 28 Nov 2024, followed by the Baltic Sea Pact launched at the first intergovernmental consultations in Gdynia on 29 June 2026; the joint statement names Russia the main long-term threat.
+  since: 2024-11-28
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - &id007
+    url: https://www.government.se/contentassets/4716f1e1f2854550848317209cfcb434/2026-06-29-joint-statement-on-the-baltic-sea-pact.pdf
+    title: Joint statement on the Baltic Sea Pact (Sweden-Poland)
+    publisher: Government Offices of Sweden
+    date: '2026-06-29'
+    tier: 1
+  - url: https://government.se/statements/2026/02/joint-statement-by-prime-minister-ulf-kristersson-and-prime-minister-donald-tusk-of-the-republic-of-poland/
+    title: Joint statement by Prime Minister Ulf Kristersson and Prime Minister Donald Tusk
+    publisher: Government Offices of Sweden
+    date: 2026-02
+    tier: 1
+  - url: https://www.gov.pl/web/national-defence/poland-and-sweden-will-develop-military-capabilities-together-to-strengthen-security-on-the-baltic-sea
+    title: Poland and Sweden will develop military capabilities together to strengthen security on the Baltic Sea
+    publisher: Polish Ministry of National Defence
+    date: 2026-03
+    tier: 1
+- to: FIN
+  layer: alignment
+  type: treaty
+  summary: Bilateral defence cooperation covering joint operational planning and the joint use of civil and military resources in different scenarios, on which Sweden's August 2026 deployment to Finland rests.
+  since: 2022-05-18
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://government.se/government-policy/defence-cooperation-between-sweden-and-finland/aims-of-the-cooperation/
+    title: 'Defence cooperation between Sweden and Finland: aims of the cooperation'
+    publisher: Government Offices of Sweden
+    date: '2025'
+    tier: 1
+  - &id008
+    url: https://www.aa.com.tr/en/europe/finland-sweden-step-up-defense-cooperation-to-counter-drone-threats/4040153
+    title: Finland, Sweden step up defense cooperation to counter drone threats
+    publisher: Anadolu Agency
+    date: '2026-08-28'
+    tier: 3
+- to: NOR
+  layer: alignment
+  type: treaty
+  summary: 'NORDEFCO partner: ministerial in Trondelag on 6 May 2026 under Norway''s chair, on moving allied reinforcements, air-domain integration and counter-drone work; the Nordic states aim for an integrated northern pillar inside NATO (Nordic Air Power concept, 250 combat aircraft).'
+  since: '2009'
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.stjornarradid.is/frettir/grein/joint-statement-nordic-defence-cooperation/
+    title: Joint statement on Nordic defence cooperation (NORDEFCO ministerial, Trondelag)
+    publisher: Government of Iceland
+    date: '2026-05-06'
+    tier: 1
+  - url: https://www.fmn.dk/en/topics/international-cooperation/nordefco/
+    title: NORDEFCO
+    publisher: Danish Ministry of Defence
+    date: '2026'
+    tier: 1
+  - *id004
+- to: USA
+  layer: dependency
+  type: military_presence
+  summary: 17 agreed facilities and areas in Sweden (four in the north; five air bases or airports, one harbour) are open to US forces under the DCA; Jonson said not all will be used.
+  since: 2024-08-01
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  value: 17
+  unit: agreed_facilities_and_areas
+  sources:
+  - *id003
+  - *id005
+- to: USA
+  layer: dependency
+  type: trade_share
+  summary: The United States takes about 9% of Swedish goods exports (MNI reading of Swedish trade data to mid-2025); vehicles are among the main items. The 15% US tariff on EU goods applies from August 2025.
+  since: 2025-08-01
+  until: null
+  last_verified: 2026-10-12
+  confidence: C
+  value: 0.09
+  unit: share_of_goods_exports
+  note: Single secondary source; Statistics Sweden country table not reachable from this session.
+  sources:
+  - url: https://www.mnimarkets.com/articles/sharp-fall-in-swedish-vehicle-exports-to-us-before-eu-us-trade-deal-1758870108920
+    title: 'Sweden: sharp fall in Swedish vehicle exports to US before EU-US trade deal (US about 9% of exports)'
+    publisher: MNI Markets
+    date: 2025-09
+    tier: 3
+  - &id013
+    url: https://www.business-sweden.com/insights/articles/what-does-the-us-eu-trade-deal-mean-for-swedish-companies/
+    title: What does the US-EU trade deal mean for Swedish companies?
+    publisher: Business Sweden (government agency)
+    date: 2025-08
+    tier: 1
+- to: UKR
+  layer: dependency
+  type: arms_supply
+  summary: 'Sweden is a supplier, not a dependant: about SEK 128 billion of military support to Ukraine in 22 packages (government page). The 21st package (19 Feb 2026) alone is about SEK 12.9 billion and the press release totals about SEK 103 billion at that date; the most recent official figure is recorded here.'
+  since: 2022-03-01
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  value: 128
+  unit: SEK_billion_cumulative_military_support
+  note: 'Discrepancy: SEK 103 bn (21st-package press release, 19 Feb 2026) vs SEK 128 bn (government support page); the page''s figure is the latest official and is used.'
+  sources:
+  - *id006
+  - url: https://www.government.se/press-releases/2026/02/new-large-support-package-to-ukraine-focused-on-air-defence/
+    title: New large support package to Ukraine focused on air defence (21st package, about SEK 12.9 billion; total about SEK 103 billion)
+    publisher: Government Offices of Sweden
+    date: '2026-02-19'
+    tier: 1
+  - url: https://euromaidanpress.com/2026/02/19/drones-long-range-missiles-artillery-ammo-sweden-reloads-ukraines-battlefield-punch-with-1-42b-aid-package/
+    title: 'Drones, long-range missiles, artillery ammo: Sweden reloads Ukraine''s battlefield punch with $1.42B aid package'
+    publisher: Euromaidan Press
+    date: '2026-02-19'
+    tier: 3
+- to: COL
+  layer: dependency
+  type: arms_supply
+  summary: Saab signed on 14-15 Nov 2025 a EUR 3.1 billion contract for 15 Gripen E and 2 Gripen F, deliveries 2026-2032 with two offset agreements; the government calls it one of Sweden's largest export deals; the Swedish bid beat a US-backed F-16 offer.
+  since: 2025-11-14
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  value: 3.1
+  unit: EUR_billion_contract_value
+  sources:
+  - url: https://www.saab.com/newsroom/press-releases/2025/saab-signs-contract-for-gripen-ef-with-colombia
+    title: Saab signs contract for Gripen E/F with Colombia
+    publisher: Saab
+    date: '2025-11-15'
+    tier: 1
+  - url: https://www.government.se/press-releases/2025/11/colombia-acquires-jas-gripen-in-major-export-deal/
+    title: Colombia acquires JAS Gripen in major export deal
+    publisher: Government Offices of Sweden
+    date: 2025-11
+    tier: 1
+- to: POL
+  layer: dependency
+  type: arms_supply
+  summary: Poland signed with Saab on 29 June 2026 for three A26 submarines, about SEK 47 billion (about USD 4.8 billion), final deliveries expected 2038.
+  since: 2026-06-29
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  value: 47
+  unit: SEK_billion_contract_value
+  sources:
+  - url: https://www.janes.com/defence-intelligence-insights/defence-news/industry/poland-and-sweden-sign-agreement-for-saab-a26-submarines-announce-baltic-sea-pact
+    title: Poland and Sweden sign agreement for Saab A26 submarines, announce Baltic Sea Pact
+    publisher: Janes
+    date: '2026-06-29'
+    tier: 3
+  - url: https://nordot.app/1444431793607672238
+    title: Poland signs $4.8 billion submarine deal with Sweden's Saab, deepens Baltic Sea defense cooperation
+    publisher: AP via Nordot
+    date: '2026-06-29'
+    tier: 3
+  - *id007
+- to: FIN
+  layer: dependency
+  type: military_presence
+  summary: Sweden is framework nation of the allied Forward Land Forces in Finnish Lapland (Rovaniemi, Sodankyla), centred on the 19th Arctic Mechanised Brigade, expandable to 4,000-5,000 troops; in August 2026 Gripens and a corvette were also sent at Helsinki's request.
+  since: 2025-06-01
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  value: 5000
+  unit: troops_upper_bound_of_expandable_force
+  sources:
+  - *id004
+  - *id008
+- to: CHN
+  layer: dependency
+  type: investment
+  summary: Geely holds about 78.9% of Volvo Cars (Feb 2025); in August 2026 Geely said Volvo's European plants will build Geely-group premium cars from 2028.
+  since: '2010'
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  value: 0.789
+  unit: share_of_volvo_cars_capital_and_votes
+  sources:
+  - url: https://www.nordiskbil.com/geely-raises-stake-to-nearly-80-in-volvo-cars/
+    title: Geely raises stake to nearly 80% in Volvo Cars
+    publisher: Nordisk Bil
+    date: 2025-02
+    tier: 3
+  - url: https://carnewschina.com/2026/08/17/geely-to-produce-its-luxury-cars-at-volvo-european-plants-in-2028-new-chairman-shared/
+    title: Geely to produce its luxury cars at Volvo European plants in 2028, new chairman shares
+    publisher: CarNewsChina
+    date: '2026-08-17'
+    tier: 3
+- to: org-nato
+  layer: action
+  type: agreement
+  summary: Sweden deposited its instrument of accession in Washington on 7 March 2024 and became the 32nd member; the flag was raised at NATO headquarters on 11 March. Turkey ratified on 23 Jan 2024 and Hungary completed ratification on 5-7 March 2024.
+  since: 2024-03-07
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.nato.int/en/news-and-events/articles/news/2024/03/07/sweden-officially-joins-nato
+    title: Sweden officially joins NATO
+    publisher: NATO
+    date: '2024-03-07'
+    tier: 1
+  - url: https://kyivindependent.com/sweden-officially-joins-nato/
+    title: Sweden officially joins NATO
+    publisher: Kyiv Independent
+    date: '2024-03-07'
+    tier: 3
+- to: TUR
+  layer: action
+  type: agreement
+  summary: 'Trilateral memorandum of June 2022 with Finland and Turkey: Sweden toughened its terror law (in force 1 July 2022) and committed to address Turkish deportation and extradition requests; Ankara called the changes insufficient and held the accession until January 2024.'
+  since: 2022-06-28
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://sverigesradio.se/artikel/sweden-turkey-agreement-shows-swedish-foreign-policy-more-and-more-interest-based
+    title: Sweden-Turkey agreement shows Swedish foreign policy 'more and more interest-based'
+    publisher: Sveriges Radio
+    date: '2022-06-29'
+    tier: 3
+  - url: https://tass.com/world/1472935/amp
+    title: Sweden to toughen its anti-terrorism law under deal with Turkey - statement
+    publisher: TASS (state agency, reporting an official statement)
+    date: '2022-06-30'
+    tier: 3
+- to: TUR
+  layer: action
+  type: agreement
+  summary: Turkey's parliament ratified Sweden's NATO accession protocol on 23 Jan 2024 by 287 votes to 55 after a 20-month delay; Erdogan signed it that week and the US approved the F-16 sale days later (Hungary was then the last holdout). Mirrored from the Turkey card.
+  since: 2024-01-23
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.diplomatie.gouv.fr/en/french-foreign-policy/security-disarmament-and-non-proliferation/news/2024/article/nato-turkey-s-parliament-votes-to-authorize-the-ratification-of-sweden-s
+    title: NATO - Turkey's Parliament votes to authorize the ratification of Sweden's accession protocol (23 January 2024)
+    publisher: French Ministry for Europe and Foreign Affairs
+    date: '2024-01-23'
+    tier: 1
+  - url: https://www.aljazeera.com/amp/news/2024/1/23/turkeys-parliament-set-to-vote-on-swedens-nato-bid-this-week-reports
+    title: Turkey's parliament approves Sweden's NATO bid
+    publisher: Al Jazeera
+    date: '2024-01-23'
+    tier: 3
+- to: HUN
+  layer: action
+  type: agreement
+  summary: On 23 Feb 2024 the two prime ministers concluded a defence-industry agreement for four additional Gripen; Hungary's parliament approved Sweden's accession days later and the president signed on 5 March 2024.
+  since: 2024-02-23
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://tvpworld.com/76088048/hungary-buys-swedish-fighter-jets-gears-up-to-greenlight-stockholms-nato-bid
+    title: Hungary buys Swedish fighter jets, gears up to greenlight Stockholm's NATO bid
+    publisher: TVP World
+    date: '2024-02-23'
+    tier: 3
+  - url: https://proof.csmonitor.com/World/Europe/2024/0223/With-fighter-jets-in-hand-Hungary-ready-to-approve-Sweden-s-NATO-bid
+    title: With fighter jets in hand, Hungary ready to approve Sweden's NATO bid
+    publisher: Christian Science Monitor
+    date: '2024-02-23'
+    tier: 3
+- to: UKR
+  layer: action
+  type: agreement
+  summary: 'Letter of intent of 22 Oct 2025 for up to 150 Gripen E; Kristersson said it was not an immediate supply. Not a contract: the money (EUR 2.5 billion from an EU loan for the first new batch) and the Saab contract are still to be concluded.'
+  since: 2025-10-22
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://euronews.com/2025/10/22/ukraine-and-sweden-sign-a-long-term-deal-for-up-to-150-gripen-fighter-jets-for-kyiv
+    title: Ukraine and Sweden sign a long-term deal for up to 150 Gripen fighter jets for Kyiv
+    publisher: Euronews
+    date: '2025-10-22'
+    tier: 3
+  - &id009
+    url: https://thedefensepost.com/2026/05/29/ukraine-sweden-gripen-fighter-deal/
+    title: Ukraine-Sweden Gripen fighter deal (16 donated, up to 20 new, 22nd package SEK 25.2 billion)
+    publisher: The Defense Post
+    date: '2026-05-29'
+    tier: 3
+- to: UKR
+  layer: action
+  type: agreement
+  summary: On 28 May 2026 (22nd package, SEK 25.2 billion) Sweden announced the transfer of 16 older Gripen to Ukraine, delivery in early 2027, and the plan to sell up to 20 new E/F with deliveries from about 2030; Sweden will seek a replacement for the donated capability.
+  since: 2026-05-28
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - *id009
+  - url: https://www.eurointegration.com.ua/eng/news/2026/05/28/7238505/
+    title: Sweden to donate 16 Gripen fighter jets to Ukraine, with 20 more to be purchased
+    publisher: European Pravda
+    date: '2026-05-28'
+    tier: 3
+  - *id006
+- to: RUS
+  layer: action
+  type: incident
+  summary: On 18 June 2024 a Russian Su-24 entered Swedish airspace near Gotland and was escorted out by two Gripens; Russia's ambassador was summoned.
+  since: 2024-06-18
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://rferl.org/amp/russia-sweden-airspace-violation/32998249.html
+    title: Sweden summons Russian envoy over alleged airspace violation
+    publisher: RFE/RL
+    date: '2024-06-18'
+    tier: 3
+- to: RUS
+  layer: action
+  type: incident
+  summary: In February 2026 Swedish forces jammed a drone heading for the French carrier Charles de Gaulle in Malmo; the Armed Forces later confirmed it was Russian and linked it to a Russian military vessel in the Oresund.
+  since: 2026-02-28
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://kyivindependent.com/russian-drone-intercepted-en-route-to-french-aircraft-carrier-sweden-says/
+    title: Russian drone intercepted en route to French aircraft carrier, Sweden says
+    publisher: Kyiv Independent
+    date: 2026-02
+    tier: 3
+  - url: https://www.malaymail.com/news/world/2026/02/28/france-slams-ridiculous-provocation-as-sweden-confirms-russian-drone-buzzed-french-aircraft-carrier/210722
+    title: Sweden confirms Russian drone buzzed French aircraft carrier
+    publisher: Malay Mail (AFP)
+    date: '2026-02-28'
+    tier: 3
+- to: RUS
+  layer: action
+  type: incident
+  summary: 'Subsea cable sabotage in the Baltic: Swedish authorities seized the Vezhen in January 2025 over damage to the Sweden-Latvia cable, and in later cases the shadow fleet is suspected; attribution to Russia is unproven and the security police chief warns against jumping to it.'
+  since: 2025-01-01
+  until: null
+  last_verified: 2026-10-12
+  confidence: C
+  sources:
+  - url: https://www.govinfosecurity.com/swedish-authorities-seize-vessel-in-cable-sabotage-probe-a-27388
+    title: Swedish authorities seize vessel in cable sabotage probe
+    publisher: GovInfoSecurity
+    date: 2025-01
+    tier: 3
+  - &id014
+    url: https://www.thedefensepost.com/2026/03/18/mideast-war-threat-israel-us/
+    title: 'Mideast war ups threat to Israeli, US interests: Swedish intelligence (Sapo annual assessment)'
+    publisher: The Defense Post
+    date: '2026-03-18'
+    tier: 3
+- to: RUS
+  layer: action
+  type: incident
+  summary: The Swedish Coast Guard boarded the sanctioned tanker Flora 1 on 3 April 2026 (12 km oil slick east of Gotland) and the falsely flagged Jin Hui on 3 May 2026; the Prime Minister said the ship was on EU, UK and Ukrainian sanctions lists and Russia's ambassador disputed it.
+  since: 2026-04-03
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://euromaidanpress.com/?p=399727
+    title: Sweden finds a 12 km oil slick east of Gotland and boards sanctioned shadow fleet tanker
+    publisher: Euromaidan Press
+    date: 2026-04
+    tier: 3
+  - url: https://maritime-executive.com/article/sweden-boards-and-detains-falsely-flagged-tanker-off-trelleborg
+    title: Sweden boards and detains falsely flagged tanker off Trelleborg
+    publisher: The Maritime Executive
+    date: 2026-05
+    tier: 3
+  - url: https://abcnews.com/International/wireStory/sweden-detains-sanctioned-oil-tanker-believed-linked-russias-132709350
+    title: Sweden detains sanctioned oil tanker believed to be linked to Russia's shadow fleet
+    publisher: AP via ABC News
+    date: '2026'
+    tier: 3
+- to: RUS
+  layer: action
+  type: sanction
+  summary: Ordinance 2025:608 (in force 1 July 2025) obliges the Coast Guard and the Maritime Administration to collect insurance information from foreign ships in Swedish waters, with criteria that fit shadow-fleet tankers and vessels bound to or from Russian ports.
+  since: 2025-07-01
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.kustbevakningen.se/en/mission/to-detect-and-respond2/requesting-information-on-insurance/
+    title: Requesting information on insurance (Ordinance 2025:608)
+    publisher: Swedish Coast Guard
+    date: '2025-07-01'
+    tier: 1
+- to: POL
+  layer: action
+  type: agreement
+  summary: The government decided on 30 Sep 2026 to contribute Gripen aircraft to NATO's enhanced air policing in Poland from October, protecting the logistics hub that supplies Ukraine, and an air-defence unit for a NATO operation in Poland on 6 Oct; the second Swedish contribution after 2025.
+  since: 2026-09-30
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.internazionale.it/ultime-notizie-reuters/2026/09/30/sweden-contributes-fighter-jets-to-nato-mission-in-poland-again
+    title: Sweden contributes fighter jets to NATO mission in Poland again
+    publisher: Reuters via Internazionale
+    date: '2026-09-30'
+    tier: 3
+  - url: https://www.regeringen.se/pressmeddelanden/
+    title: Press releases, 30 Sep - 9 Oct 2026 (Gripen to NATO operation in Poland; security briefing; Steadfast Noon)
+    publisher: Government Offices of Sweden
+    date: '2026-10-09'
+    tier: 1
+- to: DNK
+  layer: action
+  type: agreement
+  summary: Denmark and Sweden signed a joint CV90 procurement in December 2024 (about USD 2.5 billion, over 200 vehicles); in 2025 Finland, Norway, Lithuania, Estonia and the Netherlands joined the exploration of a wider CV90 group, with BAE expecting a record order in 2026.
+  since: 2024-12-01
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://breakingdefense.com/tag/sweden
+    title: Denmark and Sweden sign $2.5 billion CV90 IFV joint procurement for over 200 vehicles
+    publisher: Breaking Defense
+    date: 2024-12
+    tier: 3
+  - url: https://breakingdefense.com/2024/10/exclusive-4-nordic-nations-in-talks-for-joint-procurement-of-infantry-fighting-vehicles/
+    title: 'Exclusive: 4 Nordic nations in talks for joint procurement of infantry fighting vehicles'
+    publisher: Breaking Defense
+    date: 2024-10
+    tier: 3
+  - url: https://www.defensenews.com/global/europe/2025/09/12/bae-braces-for-biggest-ever-order-of-cv90-combat-vehicle-in-2026/
+    title: BAE braces for biggest-ever order of CV90 combat vehicle in 2026
+    publisher: Defense News
+    date: '2025-09-12'
+    tier: 3
+- to: DNK
+  layer: action
+  type: exercise
+  summary: In January 2026 Sweden, with France, Norway, Finland, Germany and the Netherlands, sent a small military contingent to Greenland at Denmark's request; Trump announced 10% tariffs on the eight countries (to 25% on 1 June) which he withdrew on 21 Jan after a 'framework' with NATO's Rutte.
+  since: 2026-01-17
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - *id010
+  - &id012
+    url: https://www.axios.com/2026/01/21/trump-drops-greenland-tariff-invasion-threats
+    title: Trump backs off Greenland tariff threat based on new 'solution'
+    publisher: Axios
+    date: '2026-01-21'
+    tier: 3
+- to: DEU
+  layer: action
+  type: agreement
+  summary: Sweden seconds officers to Commander Task Force Baltic (set up in Rostock, Oct 2024, runs Baltic Sentry), whose headquarters is scheduled to move to Sweden around 2032; on 28 Sep 2026 Kristersson co-signed with the German leader the six-state letter on the EU budget.
+  since: 2024-10-01
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - *id004
+  - *id011
+- to: USA
+  layer: action
+  type: incident
+  summary: On 17 Jan 2026 Trump announced 10% tariffs (25% from 1 June) on Sweden and seven other NATO allies over Greenland deployments; Kristersson rejected the pressure; on 21 Jan Trump dropped the measure citing a framework deal with NATO.
+  since: 2026-01-17
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - *id010
+  - *id012
+- to: USA
+  layer: action
+  type: agreement
+  summary: The EU-US trade deal of 27-28 July 2025 set a 15% US tariff on most EU goods, including Swedish exports; the trade minister called it the least bad option and Swedish agencies expected some firms to stop trading with the US.
+  since: 2025-07-27
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.sverigesradio.se/artikel/tariffs-the-eu-and-the-united-states-cut-trade-deal
+    title: 'Tariffs: The EU and the United States cut trade deal'
+    publisher: Sveriges Radio
+    date: '2025-07-28'
+    tier: 3
+  - *id013
+- to: CHN
+  layer: action
+  type: sanction
+  summary: PTS excluded Huawei and ZTE from the 5G auction (Oct 2020); the Stockholm administrative court upheld the ban on 23 June 2021 and operators had to remove existing equipment by 1 Jan 2025.
+  since: 2020-10-01
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.thelocal.se/20210623/swedish-huawei-ban-is-legal-court-rules
+    title: Swedish Huawei ban is legal, court rules
+    publisher: The Local Sweden
+    date: '2021-06-23'
+    tier: 3
+  - url: https://www.jurist.org/news/2021/06/sweden-court-upholds-5g-sales-ban-against-chinese-telecom-giant-huawei
+    title: Sweden court upholds 5G sales ban against Chinese telecom giant Huawei
+    publisher: JURIST
+    date: 2021-06
+    tier: 3
+- to: CHN
+  layer: action
+  type: visit
+  summary: Wang Yi visited Stockholm in July 2026 and met Kristersson and Foreign Minister Malmer Stenergard; the Chinese readout says one-China is unchanged and asks for fair treatment of Chinese companies.
+  since: 2026-07-06
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.mfa.gov.cn/eng/wjbzhd/202607/t20260706_11976067.html
+    title: Wang Yi meets Swedish Prime Minister and Foreign Minister in Stockholm (readout)
+    publisher: Ministry of Foreign Affairs of the PRC (official statement)
+    date: '2026-07-06'
+    tier: 1
+  - url: https://scandasia.com/sweden-sets-sharper-china-and-asean-focus-in-2026-foreign-policy-statement/
+    title: Sweden sets sharper China and ASEAN focus in 2026 foreign policy statement
+    publisher: ScandAsia
+    date: 2026-02
+    tier: 3
+- to: CHN
+  layer: action
+  type: expulsion
+  summary: Sweden deported a Chinese journalist with a lifetime ban on return in April 2024 after the security police told the court he posed a serious threat to national security.
+  since: 2024-04-08
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.thelocal.com/20240408/sweden-deports-chinese-journalist-with-lifetime-ban-on-returning
+    title: Sweden deports Chinese journalist with lifetime ban on returning
+    publisher: The Local
+    date: '2024-04-08'
+    tier: 3
+- to: ISR
+  layer: action
+  type: sanction
+  summary: On 31 July 2025 Kristersson demanded that the EU freeze the trade part of the Association Agreement with Israel and Sweden backed EU sanctions on extremist ministers and settlers; in the 2026 campaign four of seven responding parties back suspension and the opposition bloc backs restoring UNRWA funding.
+  since: 2025-07-31
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.thelocal.se/20250731/sweden-calls-on-eu-to-suspend-trade-pact-with-israel-pm
+    title: 'Sweden calls on EU to suspend trade pact with Israel: PM'
+    publisher: The Local Sweden
+    date: '2025-07-31'
+    tier: 3
+  - url: https://english.ahram.org.eg/News/550537.aspx
+    title: Sweden urges EU to suspend trade deal with Israel over Gaza war
+    publisher: Ahram Online
+    date: '2025-07-31'
+    tier: 3
+  - url: https://www.hrw.org/news/2026/09/02/sweden-most-parties-back-stronger-action-on-israel
+    title: 'Sweden: most parties back stronger action on Israel'
+    publisher: Human Rights Watch
+    date: '2026-09-02'
+    tier: 2
+- to: IRN
+  layer: action
+  type: incident
+  summary: The security police's March 2026 assessment says Iran may use Swedish criminal gangs for violence against Jewish, Israeli, US targets and regime opponents; Iran denies it; the Iran war raised the threat level.
+  since: 2026-03-18
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - *id014
+  - url: https://www.algemeiner.com/2026/03/18/iran-war-increases-threat-sweden-security-service-says/
+    title: Iran war increases threat to Sweden, security service says
+    publisher: Algemeiner
+    date: '2026-03-18'
+    tier: 3
+- to: org-eu
+  layer: action
+  type: agreement
+  summary: On 28 Sep 2026 Kristersson signed with the leaders of Germany, Austria, Denmark, the Netherlands and Finland a letter asking the Irish presidency to cut the 2028-34 budget by several hundred billion euros; a new compromise is due before the 15-16 October summit.
+  since: 2026-09-28
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - *id011
+  - *id015

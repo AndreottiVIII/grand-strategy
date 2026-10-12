@@ -1,14 +1,198 @@
 id: SVK
 name: Slovakia
+short: Slovakia
 type: state
 iso2: sk
 wikipedia: https://en.wikipedia.org/wiki/Slovakia
-coords:
-- 17.11
-- 48.15
+coords: [17.11, 48.15]
 seat: Bratislava
-regions:
-- world
-card: stub
-tier: minor
+regions: ['central-north-europe']
+card: full
+tier: protagonist
+last_verified: 2026-10-12
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep Fico's Smer-led coalition in power through the 2027 election: the junior partners (Hlas, the Slovak National Party) are quarrelling, the Slovak National Party voted with the opposition on 29 Sep 2026 to dismiss the environment minister, and Fico has said an early election could come as soon as January. Every foreign-policy move (Moscow, Beijing, the Ukraine veto) is read first as domestic politics."
+      confidence: B
+      sources:
+        - {url: "https://www.usnews.com/news/world/articles/2026-09-25/slovak-pm-fico-says-government-may-lose-majority-over-spat-in-coalition-partner", title: "Slovak PM Fico says government may lose majority over spat in coalition partner", publisher: "Reuters via US News", date: 2026-09-25, tier: 3}
+        - {url: "https://www.usnews.com/news/world/articles/2026-09-29/slovak-coalition-frays-with-ministers-removal-early-election-mooted", title: "Slovak coalition frays with minister's removal, early election mooted", publisher: "Reuters via US News", date: 2026-09-29, tier: 3}
+        - {url: "https://bne.eu/progressive-slovakia-maintains-lead-as-fico-pushes-to-keep-his-coalition-together-366896", title: "Progressive Slovakia maintains lead as Fico pushes to keep his coalition together", publisher: "bne IntelliNews", date: 2025, tier: 3}
+    - rank: 2
+      text: "Keep Russian energy flowing at a price Slovakia calls bearable and slow or reverse the EU phase-out: the SPP-Gazprom contract to 2034, Druzhba crude for the Slovnaft refinery, and the January 2026 regulation (LNG banned by end-2026, pipeline gas by 30 Sep 2027), which Bratislava challenged at the EU Court of Justice on 24 Apr 2026."
+      confidence: A
+      sources:
+        - {url: "https://www.tasr.sk/tasr-clanok/TASR:2026042800000228", title: "Slovakia Files Lawsuit with Court of Justice of EU over Russian Gas Import Ban", publisher: "TASR (Slovak public agency)", date: 2026-04-28, tier: 3}
+        - {url: "https://biz.liga.net/en/energy/news/slovakia-to-challenge-eu-plan-to-phase-out-russian-gas-in-court", title: "Slovakia to challenge EU plan to phase out Russian gas in court", publisher: "Liga.net", date: 2026-04, tier: 3}
+        - {url: "https://www.intellinews.com/slovakia-seeks-eu-guarantees-on-russian-gas-phase-out-ahead-of-sanctions-deal-390731", title: "Slovakia seeks EU guarantees on Russian gas phase-out ahead of sanctions deal", publisher: "bne IntelliNews", date: 2025-07, tier: 3}
+    - rank: 3
+      text: "A 'sovereign foreign policy' that keeps Slovakia out of the Ukraine war and its financing while remaining in the EU and NATO: no state military aid, no troops and no share of EU loan guarantees (Bratislava Castle meeting of 10 Jan 2026), opposition to Ukraine's fast-tracked accession ('Ukraine cannot overtake Montenegro'), and on 18 Sep 2026 a refusal to be 'part of any military conflict because of some Article 5'."
+      confidence: A
+      sources:
+        - {url: "https://euromaidanpress.com/2026/01/12/slovakias-pro-russian-leadership-halts-all-military-aid-to-ukraine-including-weapons-and-eu-loans/", title: "Slovakia's pro-Russian leadership halts all military aid to Ukraine, including weapons and EU loans", publisher: "Euromaidan Press", date: 2026-01-12, tier: 3}
+        - {url: "https://www.pravda.com.ua/eng/news/2026/09/18/8054000/", title: "Slovakia's Fico says he will do everything to keep country out of war if NATO Article 5 invoked", publisher: "Ukrainska Pravda", date: 2026-09-18, tier: 3}
+        - {url: "https://unn.ua/en/news/cannot-overtake-montenegro-fico-opposed-accelerating-ukraines-accession-to-the-eu", title: "Cannot overtake Montenegro: Fico opposed accelerating Ukraine's accession to the EU", publisher: "UNN", date: 2026, tier: 3}
+    - rank: 4
+      text: "Protect EU money and euro-area standing while resisting EU conditionality: the Commission has weighed freezing part of EUR 12.8bn of cohesion funds, the Parliament asked it on 29 Apr 2026 (418 votes) to use the conditionality mechanism for the first time, and the country has been in an excessive-deficit procedure since 26 Jul 2024; a EUR 2.7bn consolidation package passed in September 2025."
+      confidence: B
+      sources:
+        - {url: "https://www.pravda.com.ua/eng/news/2026/04/29/8032397/", title: "European Parliament supports financial restrictions for Slovakia over actions of PM Fico's government", publisher: "Ukrainska Pravda", date: 2026-04-29, tier: 3}
+        - {url: "https://www.consilium.europa.eu/en/policies/excessive-deficit-procedure/", title: "Excessive deficit procedure", publisher: "Council of the EU", date: 2026, tier: 1}
+        - {url: "https://bnnbloomberg.ca/business/international/2024/09/08/eu-weighs-blocking-slovakia-funds-over-democratic-backsliding", title: "EU weighs blocking Slovakia funds over democratic backsliding", publisher: "Bloomberg via BNN", date: 2024-09-08, tier: 3}
+    - rank: 5
+      text: "Defend the export model and diversify its patrons: Germany-linked car plants, a EUR 2.4-2.5bn arms-export industry (2025), Chinese capital (Gotion battery plant, a strategic partnership signed 1 Nov 2024) and American technology (a 1,200 MW Westinghouse unit at Bohunice, intergovernmental agreement of 16 Jan 2026)."
+      confidence: B
+      sources:
+        - {url: "https://www.czdefence.com/article/exports-of-weapons-and-ammunition-from-slovakia-continued-to-grow-in-2025-surpassing-the-two-billion-euro-mark-for-the-first-time-in-history", title: "Exports of weapons and ammunition from Slovakia continued to grow in 2025, surpassing the two billion euro mark for the first time", publisher: "CZ Defence", date: 2026, tier: 3}
+        - {url: "https://www.vlada.gov.sk/tlacove-spravy/robert-fico-navsteva-ciny-je-cestou-roka-2024-1", title: "Robert Fico: the visit to China is the trip of the year 2024", title_original: "Robert Fico: návšteva Číny je cestou roka 2024", lang: sk, publisher: "Government Office of the Slovak Republic", date: 2024-11, tier: 1}
+        - {url: "https://www.energy.gov/node/4855805", title: "U.S. Energy Secretary and Slovakia's Prime Minister sign agreement to advance U.S.-Slovakia civil nuclear program", publisher: "US Department of Energy", date: 2026-01-16, tier: 1}
+    - rank: 6
+      text: "Look after the minimum security of a landlocked state at the lowest price: about 2% of GDP for defence in 2026 (EUR 2.88bn) rather than NATO's 5% by 2035, bought mostly as American and Israeli hardware (14 F-16 Block 70, Barak MX air defence, used Black Hawks)."
+      confidence: B
+      sources:
+        - {url: "https://www.tasr.sk/tasr-clanok/TASR:2025102100000312", title: "Budget26: 2 Percent of GDP, or More than EUR 2.88 billion, to Go to Defence", publisher: "TASR (Slovak public agency)", date: 2025-10-21, tier: 3}
+        - {url: "https://www.intellinews.com/comment-fico-hints-slovakia-won-t-spend-5-gdp-on-nato-defence-under-his-watch-387572/", title: "COMMENT: Fico hints Slovakia won't spend 5% GDP on NATO defence under his watch", publisher: "bne IntelliNews", date: 2025-06, tier: 3}
+        - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2026-01-21/fico-trump-meeting-slovakia-turns-to-us-nuclear-technologies", title: "Fico-Trump meeting: Slovakia turns to US nuclear technologies", publisher: "OSW", date: 2026-01-21, tier: 2}
+
+  means:
+    - domain: diplomatic
+      text: "The veto turned into a bargaining chip. In July 2025 Slovakia blocked the EU's 18th sanctions package six times until the Commission gave written assurances on gas prices and supply after 2027; in Feb-Apr 2026 it tied the 20th package, Ukraine's loan and accession talks to the restart of Druzhba oil. Unanimity gives a state of 5.4 million this leverage, and Fico said openly he links 'the two issues'."
+      confidence: A
+      sources:
+        - {url: "https://www.pravda.com.ua/eng/news/2025/07/10/7521158", title: "Fico: Slovakia will not support 18th package of sanctions against Russia without compensation for gas transit loss", publisher: "Ukrainska Pravda", date: 2025-07-10, tier: 3}
+        - {url: "https://www.kyivindependent.com/slovakia-agrees-to-approve-eus-18th-sanctions-package-against-russia-fico-says", title: "Slovakia agrees to approve EU's 18th sanctions package against Russia, Fico says", publisher: "Kyiv Independent", date: 2025-07-17, tier: 3}
+        - {url: "https://interfax.com/newsroom/top-stories/117273/", title: "Fico: Slovakia lifts veto on 20th package only when Druzhba supply resumes", publisher: "Interfax", date: 2026-04-22, tier: 3}
+    - domain: diplomatic
+      text: "Leader-level tours that no other EU government makes: Moscow on 22 Dec 2024 (gas), Moscow on 9 May 2025 (Victory Day parade), Beijing on 2-4 Sep 2025 (Putin, then Xi, the only EU leader at the parade) and Moscow again on 9 May 2026 (a short meeting with Putin, carrying a message from Zelensky). Plus convening roles: chair of the Slavkov format with Austria and Czechia, and the Visegrad presidency from 1 Jul 2026."
+      confidence: A
+      sources:
+        - {url: "https://www.euronews.com/my-europe/2024/12/22/slovakias-prime-minister-has-controversial-talks-with-putin-in-moscow", title: "Slovakia's prime minister has controversial talks with Putin in Moscow", publisher: "Euronews", date: 2024-12-22, tier: 3}
+        - {url: "https://www.pravda.com.ua/eng/news/2025/09/02/7528957/", title: "Slovak PM meets with Putin in Beijing", publisher: "Ukrainska Pravda", date: 2025-09-02, tier: 3}
+        - {url: "https://www.teraz.sk/najnovsie/fico-odovzdal-putinovi-odkaz-od-zelensk/961631-clanok.html", title: "Fico passed Zelensky's message to Putin", title_original: "Fico odovzdal Putinovi odkaz od Zelenského", lang: sk, publisher: "TASR / Teraz.sk", date: 2026-05-09, tier: 3}
+        - {url: "https://pism.pl/publications/v4-a-stronger-europe-slovakias-presidency-of-the-visegrad-group", title: "V4 a Stronger Europe: Slovakia's presidency of the Visegrad Group", publisher: "PISM", date: 2026-07, tier: 2}
+    - domain: diplomatic
+      text: "Courts and constitution as shields: the September 2025 amendment (90 of 150 votes) puts 'national identity' and 'cultural and ethical questions' above EU law, a lawsuit at the CJEU against the gas phase-out, an opt-out from the EU's EUR 90bn Ukraine loan under Article 20 TEU (December 2025), and a president (Pellegrini, elected April 2024) whom OSW expected to be no institutional counterweight to the cabinet."
+      confidence: A
+      sources:
+        - {url: "https://aa.com.tr/en/europe/eu-launches-infringement-procedure-against-slovakia-over-constitutional-amendment/3750268", title: "EU launches infringement procedure against Slovakia over constitutional amendment", publisher: "Anadolu Agency", date: 2025-11-21, tier: 3}
+        - {url: "https://www.osw.waw.pl/en/publikacja/33685/pdf", title: "EU summit decision on financing Ukraine and the Czech, Slovak and Hungarian opt-out (enhanced cooperation, Article 20 TEU)", publisher: "OSW", date: 2025-12, tier: 2}
+        - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2024-04-08/pellegrini-becomes-slovakias-new-president-consolidation-ruling-camp", title: "Pellegrini becomes Slovakia's new president: consolidation of the ruling camp", publisher: "OSW", date: 2024-04-08, tier: 2}
+    - domain: informational
+      text: "Domestic narrative control: Fico's own video posts on Facebook as the first account of every summit and Moscow trip (the Druzhba line that 'the pipeline was never damaged'), the 'NGOs ruling this country' frame behind the April 2025 law that labels donor-funded NGOs, and the claim that opposition rallies are a coup plot."
+      confidence: B
+      sources:
+        - {url: "https://www.euronews.com/2025/04/04/thousands-of-slovaks-protest-against-russian-style-law-targeting-ngos", title: "Thousands of Slovaks protest against 'Russian-style' law targeting NGOs", publisher: "Euronews", date: 2025-04-04, tier: 3}
+        - {url: "https://www.ibanet.org/Rule-of-law-Slovakias-NGO-law-is-latest-curb-on-civic-life", title: "Rule of law: Slovakia's NGO law is latest curb on civic life", publisher: "International Bar Association", date: 2025, tier: 3}
+        - {url: "https://oenergetice.cz/en/oil/slovakia-reports-oil-returning-via-druzhba-fico-speaks-of-geopolitical-game", title: "Slovakia reports oil returning via Druzhba, Fico speaks of geopolitical game", publisher: "oEnergetice", date: 2026-04, tier: 3}
+    - domain: military
+      text: "Small forces, American and Israeli kit, a loud arms industry: 14 F-16 Block 70 (USD 1.6bn contract of 2018; ten delivered by December 2025), EUR 560m Barak MX air defence (December 2024), Black Hawks, a 2026 defence budget of 2.02% of GDP. The industry (ZVS/MSM, Konstrukta, CSG-linked firms) exported EUR 2.4-2.5bn of arms in 2025, mostly artillery ammunition for the Ukrainian market via third countries, with the state as half-owner of ZVS."
+      confidence: B
+      sources:
+        - {url: "https://militaeraktuell.at/en/already-ten-f-16-c-d-block-70-in-slovakia/", title: "Already ten F-16 C/D Block 70 in Slovakia", publisher: "Militaer Aktuell", date: 2025-12, tier: 3}
+        - {url: "https://www.mod.gov.il/en/press-releases/press-room/israel-mod-seals-560-million-euro-agreement-barak-mx-integrated-air-defense-system-produced-by-iai-sold-to-slovakia-in-landmark-agreement", title: "Israel MOD seals EUR 560 million agreement: Barak MX integrated air defense system produced by IAI sold to Slovakia", publisher: "Israel Ministry of Defense", date: 2024-12, tier: 1}
+        - {url: "https://cepa.org/article/adapt-to-survive-slovakias-arms-industry-faces-new-reality/", title: "Adapt to survive: Slovakia's arms industry faces new reality", publisher: "CEPA", date: 2024, tier: 2}
+    - domain: economic
+      text: "Energy as lever and as hostage: a long-term SPP-Gazprom contract to 2034, TurkStream gas via Hungary since 1 Feb 2025 (about 1.7 bcm in January-August 2025), the Druzhba line for Slovnaft, and the use of emergency electricity exports to Ukraine as a counter-pressure (halted in February 2026, Fico said until oil resumed, which it did on 23 Apr). Beyond Russia: Gotion (about EUR 1.2-1.4bn, Surany) and the Westinghouse reactor plan."
+      confidence: B
+      sources:
+        - {url: "https://www.tasr.sk/tasr-clanok/TASR:2025020600000181", title: "Slovakia Importing Russian Gas Via TurkStream as of February", publisher: "TASR (Slovak public agency)", date: 2025-02-06, tier: 3}
+        - {url: "https://www.pravda.com.ua/eng/news/2025/09/02/7529018/", title: "Slovakia increases Russian gas imports to normalise relations with Moscow", publisher: "Reuters via Ukrainska Pravda", date: 2025-09-02, tier: 3}
+        - {url: "https://www.yahoo.com/news/articles/slovakia-halts-electricity-ukraine-amid-175833104.html", title: "Slovakia halts electricity for Ukraine amid Russian oil row", publisher: "Yahoo News", date: 2026-02, tier: 3}
+
+  constraints:
+    - text: "The EU's purse and rulebook: cohesion funds (EUR 12.8bn weighed for freezing in 2024), recovery grants (EUR 2.7bn at risk), the excessive-deficit procedure (4.9% deficit in 2023, still about 5% of GDP in 2025), and a Parliament that has twice asked the Commission to apply conditionality. A budget under consolidation leaves no room for a fight with Brussels that it can lose."
+      confidence: B
+      sources:
+        - {url: "https://www.consilium.europa.eu/en/policies/excessive-deficit-procedure/", title: "Excessive deficit procedure", publisher: "Council of the EU", date: 2026, tier: 1}
+        - {url: "https://www.pravda.com.ua/eng/news/2026/04/29/8032397/", title: "European Parliament supports financial restrictions for Slovakia over actions of PM Fico's government", publisher: "Ukrainska Pravda", date: 2026-04-29, tier: 3}
+        - {url: "https://bnnbloomberg.ca/business/international/2024/09/08/eu-weighs-blocking-slovakia-funds-over-democratic-backsliding", title: "EU weighs blocking Slovakia funds over democratic backsliding", publisher: "Bloomberg via BNN", date: 2024-09-08, tier: 3}
+        - {url: "https://tasr.sk/tasr-clanok/TASR:2025030900000230", title: "Premier: Consolidation Should Reach As Much As EUR 2.4 billion in 2026", publisher: "TASR (Slovak public agency)", date: 2025-03-09, tier: 3}
+    - text: "An economy that is a German supply chain: exports of EUR 110.9bn in 2025, a car industry (Volkswagen, Kia, Stellantis, Jaguar Land Rover) at the centre of exports, 62% of electricity from nuclear plants run with Russian-designed reactors. A break with Berlin or with the single market is not an option, and Merz's public rebuke of the May 2026 Moscow trip shows the price of tone."
+      confidence: B
+      sources:
+        - {url: "https://www.tasr.sk/tasr-clanok/TASR:2026031100000175", title: "Stats: Slovakia Posted Trade-balance Surplus of EUR 2.8 billion Last Year", publisher: "TASR (Slovak public agency, Statistical Office data)", date: 2026-03-11, tier: 3}
+        - {url: "https://www.brusselstimes.com/news/2122553/german-chancellor-merz-criticises-slovakian-presence-in-moscow", title: "German Chancellor Merz criticises Slovakian presence in Moscow", publisher: "Brussels Times", date: 2026-05-09, tier: 3}
+        - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2026-01-21/fico-trump-meeting-slovakia-turns-to-us-nuclear-technologies", title: "Fico-Trump meeting: Slovakia turns to US nuclear technologies", publisher: "OSW", date: 2026-01-21, tier: 2}
+    - text: "Geography: a landlocked state with one oil artery (Druzhba, through Ukraine), one gas route (TurkStream via Hungary, too small to carry full demand) and one non-Russian alternative (the Adria pipeline through Croatia, which refused in February 2026 to carry Russian crude and became a rival of MOL and Slovnaft). The Ukrainian transit of Russian gas ended on 1 Jan 2025 and costs the state up to EUR 500m a year."
+      confidence: A
+      sources:
+        - {url: "https://pgjonline.com/news/2026/march/druzhba-outage-spurs-eu-complaint-over-russian-crude-transit-via-croatia-pipeline", title: "Druzhba outage spurs EU complaint over Russian crude transit via Croatia pipeline", publisher: "Pipeline & Gas Journal", date: 2026-03, tier: 3}
+        - {url: "https://pism.pl/publications/slovakia-remains-dependent-on-russian-energy", title: "Slovakia remains dependent on Russian energy", publisher: "PISM", date: 2025, tier: 2}
+        - {url: "https://spectator.sme.sk/business/c/slovakia-s-bet-on-russian-gas-via-turkey-hits-a-wall", title: "Slovakia's bet on Russian gas via Turkey hits a wall", publisher: "The Slovak Spectator", date: 2025-06-12, tier: 3}
+    - text: "A divided society and a narrow majority: protests with tens of thousands (organisers claimed 60,000 in Bratislava in early 2025) since the December 2024 Moscow trip and the April 2025 NGO law, an opposition (Progressive Slovakia) that led polls in 2025, a coalition of 78 deputies that needed 12 opposition votes to pass the 2025 amendment, and the memory of the 15 May 2024 shooting of Fico (Juraj Cintula, 21 years, final on 29 Apr 2026) that hardens the government's reading of its critics."
+      confidence: B
+      sources:
+        - {url: "https://www.yahoo.com/news/tens-thousands-rally-slovakia-against-211421381.html", title: "Tens of thousands rally in Slovakia against PM's Russia policies", publisher: "Yahoo News (wire)", date: 2025-02, tier: 3}
+        - {url: "https://english.adnkronos.com/2025/09/26/slovakia-amends-constitution-limits-lgbt-rights/", title: "Slovakia amends Constitution, limits LGBT rights", publisher: "Adnkronos", date: 2025-09-26, tier: 3}
+        - {url: "https://newsnow.tasr.sk/supreme-court-confirms-21-year-prison-sentence-for-cintula-who-shot-pm-fico/", title: "Supreme Court Confirms 21-Year Prison Sentence for Cintula, Who Shot PM Fico", publisher: "TASR (Slovak public agency)", date: 2026-04-29, tier: 3}
+    - text: "NATO and EU membership as a cage it chose: the defence budget, air defence and F-16s are inside the alliance's system, the cabinet cannot leave the sanctions consensus (it can only delay it), and the neighbours it would need as partners (Poland, Czechia, Hungary under Magyar) now pull toward Ukraine or toward Brussels rather than toward Bratislava."
+      confidence: B
+      sources:
+        - {url: "https://pism.pl/publications/v4-a-stronger-europe-slovakias-presidency-of-the-visegrad-group", title: "V4 a Stronger Europe: Slovakia's presidency of the Visegrad Group", publisher: "PISM", date: 2026-07, tier: 2}
+        - {url: "https://www.arabnews.pk/node/2648345", title: "Leaders of four Central European countries meet in Hungary to reboot regional group", publisher: "Arab News (AP)", date: 2026-06-23, tier: 3}
+        - {url: "https://polskieradio.pl/395/7784/Artykul/3688203,polands-parliament-speaker-visits-bratislava-but-declines-to-meet-fico", title: "Poland's parliament speaker visits Bratislava but declines to meet Fico", publisher: "Polskie Radio", date: 2026-05, tier: 3}
+
+  paradoxes:
+    - text: "The veto buys concessions and spends the goodwill that would pay for them. The July 2025 gas guarantees and the April 2026 release of the 20th package prove the lever works, yet each use hardens the Parliament (418 votes for conditionality) and the neighbours, and after Orban's defeat in April 2026 Bratislava has lost the Hungarian half of the axis that made a veto plausible."
+      confidence: B
+      sources:
+        - {url: "https://www.pravda.com.ua/eng/news/2026/04/29/8032397/", title: "European Parliament supports financial restrictions for Slovakia over actions of PM Fico's government", publisher: "Ukrainska Pravda", date: 2026-04-29, tier: 3}
+        - {url: "https://visegradinsight.eu/revival-of-visegrad-group-babis-tusk-epc-yerevan/", title: "V4 revival: Babis, Fico and Tusk call Magyar their d'Artagnan", publisher: "Visegrad Insight", date: 2026-05, tier: 2}
+        - {url: "https://www.kyivindependent.com/slovakia-agrees-to-approve-eus-18th-sanctions-package-against-russia-fico-says", title: "Slovakia agrees to approve EU's 18th sanctions package against Russia, Fico says", publisher: "Kyiv Independent", date: 2025-07-17, tier: 3}
+    - text: "Fighting for Russian energy while the route to it runs through the country it antagonises. Druzhba and the old gas contract both depended on Ukrainian territory; by threatening Kyiv's accession and cutting its emergency electricity in February 2026, Fico used his goods against the state whose goodwill he needs to recover the oil, and Slovnaft had in any case moved almost entirely to non-Russian crude through Adria."
+      confidence: B
+      sources:
+        - {url: "https://oenergetice.cz/en/oil/slovakia-reports-oil-returning-via-druzhba-fico-speaks-of-geopolitical-game", title: "Slovakia reports oil returning via Druzhba, Fico speaks of geopolitical game", publisher: "oEnergetice", date: 2026-04, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/4/29/ukraine-targets-druzhba-pipeline-to-sever-russian-oil-influence-in-eu", title: "Ukraine targets Druzhba pipeline to sever Russian oil, influence in EU", publisher: "Al Jazeera", date: 2026-04-29, tier: 3}
+        - {url: "https://pgjonline.com/news/2026/april/no-deal-on-adria-oil-pipeline-tests-as-slovakia-seeks-alternative-to-druzhba", title: "No deal on Adria oil pipeline tests as Slovakia seeks alternative to Druzhba", publisher: "Pipeline & Gas Journal", date: 2026-04, tier: 3}
+    - text: "Anti-Western rhetoric, American integration. Fico's party attacked the US and NATO in opposition, yet the same government buys 14 F-16s, signed a Westinghouse nuclear framework on 16 Jan 2026 and met Trump at Mar-a-Lago two days later; OSW's reading is that these concrete steps tie Slovakia ever closer to Washington while the Moscow visits serve the domestic audience."
+      confidence: B
+      sources:
+        - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2026-01-21/fico-trump-meeting-slovakia-turns-to-us-nuclear-technologies", title: "Fico-Trump meeting: Slovakia turns to US nuclear technologies", publisher: "OSW", date: 2026-01-21, tier: 2}
+        - {url: "https://www.intellinews.com/fico-visits-trump-in-mar-a-lago-slovakia-signs-nuclear-deal-with-us-420759/", title: "Fico visits Trump in Mar-a-Lago, Slovakia signs nuclear deal with US", publisher: "bne IntelliNews", date: 2026-01, tier: 3}
+    - text: "Sovereignty over EU law, paid in EU law. The September 2025 amendment declares national identity and cultural-ethical matters beyond the reach of EU courts; the Commission opened infringement proceedings on 21 Nov 2025 for breaching the primacy of EU law, and Fico said there would be 'no change' - while the same state needs the single market and cohesion money that the primacy principle underwrites."
+      confidence: A
+      sources:
+        - {url: "https://aa.com.tr/en/europe/eu-launches-infringement-procedure-against-slovakia-over-constitutional-amendment/3750268", title: "EU launches infringement procedure against Slovakia over constitutional amendment", publisher: "Anadolu Agency", date: 2025-11-21, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2025/9/26/slovak-constitutional-change-promotes-anti-lgbtq-national-identity", title: "Slovak constitutional change promotes anti-LGBTQ 'national identity'", publisher: "Al Jazeera", date: 2025-09-26, tier: 3}
+    - text: "Against the war, and profiting from it. The government refuses state weapons, loan guarantees and troops for Ukraine, yet the arms industry in which the Defence Ministry is a half-owner of ZVS exported EUR 2.4-2.5bn in 2025, with heavy artillery ammunition intended for Ukraine at 83% of the 2024 total, and the state decides the export permits; a ceasefire would be the end of a boom."
+      confidence: B
+      sources:
+        - {url: "https://www.czdefence.com/article/exports-of-weapons-and-ammunition-from-slovakia-continued-to-grow-in-2025-surpassing-the-two-billion-euro-mark-for-the-first-time-in-history", title: "Exports of weapons and ammunition from Slovakia continued to grow in 2025", publisher: "CZ Defence", date: 2026, tier: 3}
+        - {url: "https://spectator.sme.sk/politics-and-society/c/news-digest-when-it-comes-to-rearmament-slovak-gvt-says-one-thing-and-does-another", title: "News digest: when it comes to rearmament, Slovak government says one thing and does another", publisher: "The Slovak Spectator", date: 2025-04-30, tier: 3}
+    - text: "The self-appointed bridge that nobody crosses. Fico carried Zelensky's offer to meet Putin 'in any format' to Moscow on 9 May 2026 and was told to phone; Merz said he regretted the trip and Berlin then said no official visit to Bratislava was planned, contradicting Fico's 29 May date; Poland's Sejm speaker visited Bratislava and refused to meet him. Standing between Moscow and Brussels has cost him the access that would let him mediate."
+      confidence: B
+      sources:
+        - {url: "https://www.teraz.sk/najnovsie/fico-odovzdal-putinovi-odkaz-od-zelensk/961631-clanok.html", title: "Fico passed Zelensky's message to Putin", title_original: "Fico odovzdal Putinovi odkaz od Zelenského", lang: sk, publisher: "TASR / Teraz.sk", date: 2026-05-09, tier: 3}
+        - {url: "https://www.tasr.sk/tasr-clanok/TASR:2026051400000480", title: "German Chancellor Merz Has Not Planned Slovakia Visit, Berlin Says", publisher: "TASR (Slovak public agency)", date: 2026-05-14, tier: 3}
+        - {url: "https://polskieradio.pl/395/7784/Artykul/3688203,polands-parliament-speaker-visits-bratislava-but-declines-to-meet-fico", title: "Poland's parliament speaker visits Bratislava but declines to meet Fico", publisher: "Polskie Radio", date: 2026-05, tier: 3}
+
+  reading: |
+    Slovakia is the case of a small, trade-dependent member state that uses
+    the rules of the club it belongs to as its main instrument against the
+    club. Fico has no army to speak of, no oil, and an export economy
+    wired into German supply chains; what he has is unanimity. The 2023-26
+    pattern is therefore linkage: a veto (the 18th and 20th sanctions
+    packages, Ukraine's loan, the accession clusters) is held until a
+    concrete good is released - gas guarantees, Druzhba oil, a hearing. That
+    is Luttwak's paradoxical logic in a small space: the weaker the state,
+    the more it relies on the one resource, procedure, that its partners
+    cannot take away without breaking their own rules. But the lever
+    consumes itself. Hungary under Orban was the other half of the veto
+    axis; after Magyar's win in April 2026 Bratislava is alone, the
+    Parliament has asked for conditionality, and the Visegrad revival is
+    being run by Tusk, Babis and Magyar, not by Fico. Two signals that are
+    not rows: Fico took the Moscow trip again in May 2026 after having
+    been shot in 2024 and after a year of mass protest, which shows that
+    the trips are a message to a domestic electorate and not a
+    diplomatic programme (OSW and others make this reading of the
+    American hardware too); and on 18 Sep 2026 he said he would not
+    be 'part of any military conflict because of Article 5' - a statement
+    that, if believed, hollows out the alliance whose F-16s he is flying.
+    The coalition crisis of September 2026 may end the story before the
+    2027 election: the structural question is whether his successor,
+    whoever it is, will inherit a state that has learned to veto or one
+    that has learned to be vetoed.

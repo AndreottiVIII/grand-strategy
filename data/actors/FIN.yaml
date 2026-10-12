@@ -1,14 +1,192 @@
 id: FIN
 name: Finland
+short: Finland
 type: state
 iso2: fi
 wikipedia: https://en.wikipedia.org/wiki/Finland
-coords:
-- 24.94
-- 60.17
+coords: [24.94, 60.17]
 seat: Helsinki
-regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+regions: ['central-north-europe']
+card: full
+tier: protagonist
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Deter a Russian attack and be able to repel one: the Government Defence Report (19 Dec 2024) treats Russia as a long-term threat to Europe and Finland that will outlast the war in Ukraine, and a June 2026 parliamentary working group repeated it. Money follows: defence spending 2.5% of GDP in 2025, 3.2% planned by 2030 (3% by 2029 was the April 2025 pledge), and an estimated 2.4% of GDP in defence- and security-related spending in 2026 against NATO's 1.5% target."
+      confidence: A
+      sources:
+        - {url: "https://valtioneuvosto.fi/en/-/236553176/government-defence-report-outlines-development-of-finland-s-defence-as-part-of-nato", title: "Government Defence Report outlines development of Finland's defence as part of NATO", publisher: "Finnish Government / Ministry of Defence", date: 2024-12-19, tier: 1}
+        - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/04/23/finland-to-spend-3-2-of-gdp-on-defence-by-2030-despite-austerity", title: "Finland to spend 3.2% of GDP on defence by 2030 despite austerity", publisher: "Reuters (via Internazionale)", date: 2026-04-23, tier: 3}
+        - {url: "https://www.aa.com.tr/en/europe/finnish-parliamentary-group-calls-for-defense-spending-hike-in-face-of-russian-threat/3954295", title: "Finnish parliamentary group calls for defense spending hike in face of Russian threat", publisher: "Anadolu Agency", date: 2026-06, tier: 3}
+    - rank: 2
+      text: "Make the Atlantic guarantee physical on the northern flank: NATO membership since 4 April 2023 (the longest land border Russia shares with an EU or NATO state, about 1,340 km), the 15-site US Defence Cooperation Agreement (in force 1 Sep 2024), the NATO land command in Mikkeli (operational 1 Sep 2025), Forward Land Forces Finland (stood up 6 Jun 2026) and 64 F-35A (first two landed at Rovaniemi on 18 Sep 2026)."
+      confidence: A
+      sources:
+        - {url: "https://valtioneuvosto.fi/en/-/finland-joins-nato-on-4-april", title: "Finland joins NATO on 4 April", publisher: "Finnish Government", date: 2023-04-04, tier: 1}
+        - {url: "https://um.fi/defence-cooperation-agreement-with-the-united-states-dca-", title: "Defence Cooperation Agreement with the United States (DCA)", publisher: "Ministry for Foreign Affairs of Finland", date: 2024-09-01, tier: 1}
+        - {url: "https://valtioneuvosto.fi/en/-/236553176/nato-forward-land-forces-finland-to-start-operations-on-6-june", title: "NATO Forward Land Forces Finland to start operations on 6 June", publisher: "Finnish Government / Ministry of Defence", date: 2026-06, tier: 1}
+        - {url: "https://theaviationist.com/2026/09/19/finlands-f-35s-home/", title: "Finland's F-35s are home", publisher: "The Aviationist", date: 2026-09-19, tier: 3}
+    - rank: 3
+      text: "Keep Ukraine standing and make Russia fail: defence materiel worth about EUR 3.6bn in 34 packages (the 34th, EUR 290m, on 15 Sep 2026), the ten-year security cooperation agreement of 3 Apr 2024, use of immobilised Russian assets for a loan to Kyiv (Orpo-Kristersson letter), and a readiness to join a post-ceasefire multinational force in some form (not in combat)."
+      confidence: A
+      sources:
+        - {url: "https://www.presidentti.fi/en/agreement-on-security-cooperation-and-long-term-support-between-the-republic-of-finland-and-ukraine", title: "Agreement on security cooperation and long-term support between the Republic of Finland and Ukraine", publisher: "Office of the President of Finland", date: 2024-04-03, tier: 1}
+        - {url: "https://unn.ua/en/news/finland-has-delivered-its-34th-military-aid-package-to-ukraine-worth-euro290-million", title: "Finland has delivered its 34th military aid package to Ukraine worth EUR 290 million", publisher: "UNN", date: 2026-09-15, tier: 3}
+        - {url: "https://valtioneuvosto.fi/en/-/prime-ministers-orpo-and-kristersson-in-joint-letter-financing-for-ukraine-must-be-secured-quickly", title: "Prime Ministers Orpo and Kristersson in joint letter: Financing for Ukraine must be secured quickly", publisher: "Finnish Government", date: 2025-12, tier: 1}
+        - {url: "https://www.presidentti.fi/en/president-stubb-in-paris-europe-is-committed-to-continue-providing-financial-military-and-political-support-for-ukraine/", title: "President Stubb in Paris: Europe is committed to continue providing financial, military and political support for Ukraine", publisher: "Office of the President of Finland", date: 2026-01-06, tier: 1}
+    - rank: 4
+      text: "Protect the Gulf of Finland and the Baltic seabed: cables and pipelines to Estonia and Sweden were cut or damaged in October 2023 (Balticconnector), December 2024 (Estlink 2, the Eagle S case) and on 31 Dec 2025 (the Fitburg). Finland seizes ships, prosecutes, and asks NATO for presence, but has not yet obtained a conviction."
+      confidence: B
+      sources:
+        - {url: "https://maritime-executive.com/article/helsinki-court-dismisses-charges-in-case-of-cable-damage-by-tanker-eagle-s", title: "Helsinki court dismisses charges in case of cable damage by tanker Eagle S", publisher: "The Maritime Executive", date: 2025-10-03, tier: 3}
+        - {url: "https://www.nbcnews.com/world/europe/finland-seizes-ship-sailing-russia-suspected-cable-sabotage-rcna251698", title: "Finland seizes ship sailing from Russia after suspected cable sabotage", publisher: "NBC News", date: 2025-12-31, tier: 3}
+        - {url: "https://news.err.ee/1609474090/estonia-finland-sign-memorandum-to-heighten-undersea-energy-links-protection", title: "Estonia, Finland sign memorandum to heighten undersea energy links protection", publisher: "ERR News", date: 2024-09, tier: 3}
+    - rank: 5
+      text: "Keep the EU strong on security but cheap and without common debt: Finland has been a net contributor since 2001, rejects a 2028-34 budget near EUR 2 trillion and any common-debt instrument, wants strict conditionality, and sits in the net-contributor bloc (with Germany, Denmark, the Netherlands, Austria, Sweden) that asked in August 2026 for several hundred billion euros off the proposal."
+      confidence: B
+      sources:
+        - {url: "https://valtioneuvosto.fi/en/-/ministerial-committee-on-eu-affairs-outlines-finland-s-positions-for-negotiations-on-multiannual-financial-framework", title: "Ministerial Committee on EU Affairs outlines Finland's positions for negotiations on the multiannual financial framework", publisher: "Finnish Government", date: 2025, tier: 1}
+        - {url: "https://www.intellinews.com/six-net-contributors-demand-hundreds-of-billions-off-the-eu-s-next-budget-464258", title: "Six net contributors demand hundreds of billions off the EU's next budget", publisher: "bne IntelliNews", date: 2026-08, tier: 3}
+    - rank: 6
+      text: "Turn a small economy's niches into access in Washington and Berlin: Arctic icebreaker know-how (the 9 Oct 2025 Stubb-Trump memorandum for up to 11 Arctic Security Cutters, about USD 6.1bn; Rauma Marine Constructions contract for two ships on 30 Dec 2025), plus Patria, Nokia and ICEYE as suppliers to German defence."
+      confidence: B
+      sources:
+        - {url: "https://maritime-executive.com/article/u-s-and-finland-reach-6-billion-deal-to-build-11-icebreakers", title: "U.S. and Finland reach $6 billion deal to build up to 11 icebreakers", publisher: "The Maritime Executive", date: 2025-10-09, tier: 3}
+        - {url: "https://gcaptain.com/finlands-rmc-to-build-two-icebreakers-for-the-us-coast-guard/", title: "Finland's RMC to build two icebreakers for the US Coast Guard", publisher: "gCaptain", date: 2025-12-30, tier: 3}
+        - {url: "https://www.presidentti.fi/en/german-federal-president-to-pay-working-visit-to-finland/", title: "German Federal President to pay working visit to Finland (Steinmeier, 7 May 2026)", publisher: "Office of the President of Finland", date: 2026-05, tier: 1}
+
+  means:
+    - domain: diplomatic
+      text: "The presidential channel to Trump: Stubb's golf and Mar-a-Lago diplomacy, the White House meeting of 9 Oct 2025 with Orpo present, and a stated aim of passing European messages to Washington. It gave Finland the icebreaker contract and a hearing on Ukraine and the Arctic, and it is the main instrument for keeping the US engaged in Europe."
+      confidence: B
+      sources:
+        - {url: "https://www.foxnews.com/politics/fairways-friendship-6-billion-deal-how-finlands-president-found-partner-trump", title: "Fairways and friendship: the $6 billion deal - how Finland's president found a partner in Trump", publisher: "Fox News", date: 2025-10, tier: 3}
+        - {url: "https://www.highnorthnews.com/en/finlands-stubb-meet-trump-washington-dc-push-icebreaker-deal-coast-guard", title: "Finland's Stubb to meet Trump in Washington DC to push icebreaker deal for Coast Guard", publisher: "High North News", date: 2025-10, tier: 3}
+    - domain: diplomatic
+      text: "Nordic-Baltic and northern-flank groupings: the revised NORDEFCO memorandum of 6 May 2025, a Nordic combined air-operations concept (around 250 combat aircraft, a combined air operations centre at Bodo), Sweden as framework nation for Forward Land Forces Finland, the UK-led Joint Expeditionary Force, Finnish leadership of the land domain of the Eastern Flank Watch initiative."
+      confidence: B
+      sources:
+        - {url: "https://www.globalsecurity.org/military/library/news/2025/05/mil-250509-finmod01.htm", title: "Minister of Defence Antti Hakkanen: The revised NORDEFCO Memorandum of Understanding will strengthen Nordic defence", publisher: "Ministry of Defence of Finland (via GlobalSecurity)", date: 2025-05-09, tier: 1}
+        - {url: "https://www.twz.com/nordic-air-defense-pact-combines-forces-of-hundreds-of-fighter-aircraft", title: "Nordic air defense pact combines forces of hundreds of fighter aircraft", publisher: "The War Zone", date: 2023-03, tier: 3}
+        - {url: "https://www.kaitseministeerium.ee/en/news/minister-pevkur-helsinki-it-estonias-interests-strengthen-defence-cooperation-finland", title: "Minister Pevkur in Helsinki: It is in Estonia's interests to strengthen defence cooperation with Finland", publisher: "Ministry of Defence of Estonia", date: 2026-04, tier: 1}
+    - domain: military
+      text: "Hardware and basing: 64 F-35A Block 4 (contract about EUR 8.3bn, December 2021, initial operational capability planned early 2028), David's Sling air defence (about EUR 316m), US access to 15 sites under the DCA, and withdrawal from the Ottawa Convention effective 10 Jan 2026 to allow anti-personnel mines to return to the arsenal."
+      confidence: A
+      sources:
+        - {url: "https://www.globalsecurity.org/military/library/news/2021/12/mil-211210-lockheed-martin01.htm", title: "Finland selects F-35 Lightning II as its next fighter", publisher: "Lockheed Martin (via GlobalSecurity)", date: 2021-12-10, tier: 3}
+        - {url: "https://www.army-technology.com/news/finland-reaches-major-defence-contract-with-israel-for-davids-sling-air-defence-system/", title: "Finland reaches major defence contract with Israel for David's Sling air defence system", publisher: "Army Technology", date: 2023, tier: 3}
+        - {url: "https://valtioneuvosto.fi/en/-/236553176/finland-s-withdrawal-from-ottawa-convention-to-take-effect", title: "Finland's withdrawal from Ottawa Convention to take effect", publisher: "Finnish Government", date: 2026-01-10, tier: 1}
+        - {url: "https://news.usni.org/2023/12/21/new-pact-gives-u-s-military-access-to-15-bases-in-finland", title: "New pact gives U.S. military access to 15 bases in Finland", publisher: "USNI News", date: 2023-12-21, tier: 3}
+    - domain: military
+      text: "The closed eastern border: all land crossings shut since December 2023 (the government on 4 Jun 2026 kept them closed 'until further notice', with asylum applications centralised), plus a border fence of about 200 km on selected stretches of the 1,340 km frontier. Instrumentalised migration has stopped for now."
+      confidence: A
+      sources:
+        - {url: "https://valtioneuvosto.fi/en/-/1410869/finland-s-eastern-border-to-remain-closed-until-further-notice-2", title: "Finland's eastern border to remain closed until further notice", publisher: "Finnish Government", date: 2026-06-04, tier: 1}
+        - {url: "https://www.euronews.com/2022/11/19/finland-to-start-building-200km-long-border-fence-with-russia-next-year", title: "Finland to start building 200km-long border fence with Russia next year", publisher: "Euronews", date: 2022-11-19, tier: 3}
+    - domain: economic
+      text: "Sanctions and decoupling from Russia: electricity imports ended in May 2022 and gas on 21 May 2022 (floating LNG terminal at Inkoo since 2023), rail trade throttled after the border closure and Russian tariff rises of July 2026. Finland also uses its seat in the EU to push for use of immobilised Russian assets."
+      confidence: B
+      sources:
+        - {url: "https://news.err.ee/1608604693/russia-shuts-of-natural-gas-supply-to-finland", title: "Russia shuts off natural gas supply to Finland", publisher: "ERR News", date: 2022-05-21, tier: 3}
+        - {url: "https://yle.fi/news/3-12446050", title: "Fingrid: Russian electricity imports to Finland cut to zero", publisher: "Yle", date: 2022-05-14, tier: 3}
+        - {url: "https://yle.fi/a/74-20234361", title: "Russia's higher rail freight tariffs on Finland-bound fertiliser", publisher: "Yle", date: 2026-07, tier: 3}
+    - domain: informational
+      text: "Open threat assessment and public resilience: Supo's annual overview names Russia the main threat and warns that Russian influencing will grow after the war; Finland's public line is calibrated (Valtonen, April 2025: Russia is not regarded as an enemy, but its actions and breaches of international law are opposed) while Stubb tells Finns to 'mentally prepare' for an eventual thaw."
+      confidence: B
+      sources:
+        - {url: "https://yle.fi/a/74-20147334", title: "Supo: Russia remains top of Finland's security threat concerns", publisher: "Yle", date: 2025-03, tier: 3}
+        - {url: "https://www.pravda.com.ua/eng/news/2025/04/06/7506260/", title: "Now is not time to call Putin, Finnish foreign minister says", publisher: "Ukrainska Pravda", date: 2025-04-06, tier: 3}
+        - {url: "https://www.themoscowtimes.com/2026/08/06/finland-should-mentally-prepare-to-restore-ties-with-russia-president-stubb-says", title: "Finland should 'mentally prepare' to restore ties with Russia, President Stubb says (remarks of 31 Mar 2025)", publisher: "The Moscow Times", date: 2025-04-01, tier: 3}
+
+  constraints:
+    - text: "Geography: the longest EU/NATO land border with Russia, and a southern coast on a gulf where Russian-linked shipping passes freely. Reinforcement is partly offshore - the Forward Land Forces battlegroup (about 600 Swedish soldiers, expandable to 1,200) is based at Boden in Sweden and rotates into Finland, it is not stationed there."
+      confidence: A
+      sources:
+        - {url: "https://fiia.fi/en/publication/natos-forward-land-forces-in-finland", title: "NATO's Forward Land Forces in Finland: defending the northeastern frontline", publisher: "Finnish Institute of International Affairs (FIIA)", date: 2025, tier: 2}
+        - {url: "https://valtioneuvosto.fi/en/-/236553176/nato-forward-land-forces-finland-to-start-operations-on-6-june", title: "NATO Forward Land Forces Finland to start operations on 6 June", publisher: "Finnish Government / Ministry of Defence", date: 2026-06, tier: 1}
+    - text: "Public finances: the general government deficit was 4.4% of GDP in 2024 and 4.3% in 2025; the Orpo coalition (National Coalition, Finns Party, Christian Democrats, Swedish People's Party; 108 of 200 seats) is cutting EUR 6bn over the term while raising defence spending, which is why the 2030 target is 3.2% and not more."
+      confidence: B
+      sources:
+        - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/04/23/finland-to-spend-3-2-of-gdp-on-defence-by-2030-despite-austerity", title: "Finland to spend 3.2% of GDP on defence by 2030 despite austerity", publisher: "Reuters (via Internazionale)", date: 2026-04-23, tier: 3}
+        - {url: "https://news.err.ee/1609009232/four-party-coalition-deal-struck-in-finland", title: "Four-party coalition deal struck in Finland", publisher: "ERR News", date: 2023-06, tier: 3}
+    - text: "Dependence on a patron it cannot discipline: the F-35, the DCA, the Arctic cutter contract and the Atlantic guarantee all run through Washington, which in January 2026 threatened an extra 10% tariff on Finland and seven other countries over Greenland and already charges 15% on EU goods. Stubb called the Greenland crisis the hardest for Finland, since it opposes a close ally on sovereignty and territorial integrity."
+      confidence: B
+      sources:
+        - {url: "https://yle.fi/a/74-20205400", title: "Stubb: Greenland is the hardest issue for Finland", publisher: "Yle", date: 2026-01, tier: 3}
+        - {url: "https://www.ukrinform.net/rubric-polytics/4081553-leaders-of-finland-norway-respond-to-us-tariff-threats.html", title: "Leaders of Finland, Norway respond to US tariff threats", publisher: "Ukrinform", date: 2026-01, tier: 3}
+    - text: "Law at sea: UNCLOS limits what a coastal state can do in its exclusive economic zone. The Helsinki District Court threw out the Eagle S case on 3 Oct 2025 for lack of jurisdiction (EEZ, not territorial waters); the Court of Appeal revived it in 2026, but the crew has left Finland and the Supreme Court may still intervene. Deterring cable sabotage by prosecution is slow and uncertain."
+      confidence: B
+      sources:
+        - {url: "https://maritime-executive.com/article/helsinki-court-dismisses-charges-in-case-of-cable-damage-by-tanker-eagle-s", title: "Helsinki court dismisses charges in case of cable damage by tanker Eagle S", publisher: "The Maritime Executive", date: 2025-10-03, tier: 3}
+        - {url: "https://maritime-executive.com/article/tanker-anchor-dragging-case-reopened-by-helsinki-appeals-court", title: "Tanker anchor dragging case reopened by Helsinki appeals court", publisher: "The Maritime Executive", date: 2026-09-08, tier: 3}
+    - text: "Coalition politics: the Finns Party and the Christian Democrats block recognition of Palestine that President Stubb says he would sign, and have criticised the 2025 vote declaring settlements illegal; the 2027 election is the next test. Foreign policy is shared between a president who speaks and a government that pays."
+      confidence: B
+      sources:
+        - {url: "https://www.helsinkitimes.fi/finland/finland-news/politics/27538-valtonen-says-finnish-stance-on-palestine-remains-unchanged.html", title: "Valtonen says Finnish stance on Palestine remains unchanged", publisher: "Helsinki Times", date: 2025, tier: 3}
+        - {url: "https://www.timesofisrael.com/finland-joins-declaration-on-2-state-solution-weighs-recognizing-palestinian-state/", title: "Finland joins declaration on two-state solution, weighs recognizing Palestinian state", publisher: "The Times of Israel", date: 2025, tier: 3}
+    - text: "The north is also a domestic frontier: five of the 15 DCA sites are in Lapland and the first F-35s are based at the Lapland Air Wing in Rovaniemi, while the Sami Truth and Reconciliation Commission delivered its 700-page report with 68 proposals on 4 Dec 2025 and Orpo said a state apology should follow. Defending the Arctic cannot be done against the Sami homeland (our inference from the two facts)."
+      confidence: C
+      sources:
+        - {url: "https://valtioneuvosto.fi/en/-/sami-truth-and-reconciliation-commission-to-submit-final-report", title: "Sami Truth and Reconciliation Commission to submit final report", publisher: "Finnish Government", date: 2025-12-04, tier: 1}
+        - {url: "https://www.rcinet.ca/eye-on-the-arctic/?p=201255", title: "Finland's Truth and Reconciliation Commission makes 70 recommendations", publisher: "Eye on the Arctic (RCI)", date: 2025-12, tier: 3}
+        - {url: "https://en.highnorthnews.com/politics/new-defense-agreement-gives-us-access-to-several-military-areas-in-finnish-lapland/130765", title: "New defense agreement gives US access to several military areas in Finnish Lapland", publisher: "High North News", date: 2023-12, tier: 3}
+
+  paradoxes:
+    - text: "The shut border protects and isolates in the same stroke. Closing every crossing ended the instrumentalised migration Helsinki calls a Russian hybrid attack, but it also ended contact: on 1 Jul 2026 Russia closed five of its rail crossings with Finland (leaving only Vainikkala) and sent the formal notice on 9 July, while Stubb says Finns must prepare mentally for an eventual thaw. Finland's best card for a future bargain, the border, is the one it has locked."
+      confidence: B
+      sources:
+        - {url: "https://valtioneuvosto.fi/en/-/1410869/finland-s-eastern-border-to-remain-closed-until-further-notice-2", title: "Finland's eastern border to remain closed until further notice", publisher: "Finnish Government", date: 2026-06-04, tier: 1}
+        - {url: "https://www.arctictoday.com/russia-urgently-suspends-railway-border-crossings-with-europe/", title: "Russia urgently suspends railway border crossings with Europe", publisher: "Arctic Today / Barents Observer", date: 2026-07, tier: 3}
+        - {url: "https://www.themoscowtimes.com/2026/07/01/russia-closes-railway-border-crossings-with-finland-and-baltic-neighbors-a93136", title: "Russia closes railway border crossings with Finland and Baltic neighbors", publisher: "The Moscow Times", date: 2026-07-01, tier: 3}
+    - text: "Joining NATO ended Finland's exposure and created a front. Peskov says Finland and Sweden 'reduced relations to zero' by bringing NATO infrastructure to their soil, and Ukrainian drones, diverted by Russian GNSS jamming in the eastern Gulf of Finland, crossed into Finnish airspace in spring 2026, forcing the army to close airspace and sea lanes three times in a month. The alliance that guarantees Finland also ties it to the spillover of someone else's war."
+      confidence: B
+      sources:
+        - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/09/09/finland-says-gnss-jamming-wind-caused-ukrainian-drones-to-enter-its-airspace-in-spring", title: "Finland says GNSS jamming, wind caused Ukrainian drones to enter its airspace in spring", publisher: "Reuters (via Internazionale)", date: 2026-09-09, tier: 3}
+        - {url: "https://www.arctictoday.com/finland-closes-airspace-restricts-maritime-traffic-near-russia-over-drone-risk/", title: "Finland closes airspace, restricts maritime traffic near Russia over drone risk", publisher: "Arctic Today", date: 2026-07, tier: 3}
+        - {url: "https://www.themoscowtimes.com/2026/08/06/finland-should-mentally-prepare-to-restore-ties-with-russia-president-stubb-says", title: "Finland should 'mentally prepare' to restore ties with Russia (Peskov reply of 1 Apr 2025)", publisher: "The Moscow Times", date: 2025-04-01, tier: 3}
+    - text: "The Trump channel buys access and exposes Finland to the man it courts. Stubb's rapport produced the icebreaker memorandum and the Washington hearing, yet in January 2026 Trump put Finland on the list of eight countries facing an extra tariff over Greenland, and Stubb named that crisis the hardest for Finland. The more Finland bets on one American president, the more it must defend Denmark against him."
+      confidence: B
+      sources:
+        - {url: "https://www.ukrinform.net/rubric-polytics/4081553-leaders-of-finland-norway-respond-to-us-tariff-threats.html", title: "Leaders of Finland, Norway respond to US tariff threats", publisher: "Ukrinform", date: 2026-01, tier: 3}
+        - {url: "https://www.yahoo.com/news/articles/finland-president-says-not-over-232804153.html", title: "Finland's president says 'it's not over yet' after Greenland de-escalation", publisher: "Yahoo News / Reuters", date: 2026-01, tier: 3}
+        - {url: "https://yle.fi/a/74-20205400", title: "Stubb: Greenland is the hardest issue for Finland", publisher: "Yle", date: 2026-01, tier: 3}
+    - text: "A rules-based order defended with tools the rules do not give. Finland seized the Eagle S (Dec 2024) and the Fitburg (31 Dec 2025) to deter cable sabotage, but the district court ruled it had no jurisdiction in the EEZ and ordered the state to pay the crew's costs; the Fitburg was released after investigation. Each seizure tests the law of the sea that Finland needs to stay intact."
+      confidence: B
+      sources:
+        - {url: "https://maritime-executive.com/article/helsinki-court-dismisses-charges-in-case-of-cable-damage-by-tanker-eagle-s", title: "Helsinki court dismisses charges in case of cable damage by tanker Eagle S", publisher: "The Maritime Executive", date: 2025-10-03, tier: 3}
+        - {url: "https://www.hellenicshippingnews.com/cargo-vessel-suspected-of-damaging-undersea-cable-allowed-to-leave-finland/", title: "Cargo vessel suspected of damaging undersea cable allowed to leave Finland", publisher: "Hellenic Shipping News", date: 2026-01, tier: 3}
+    - text: "Arming against Russia with Israeli weapons while voting against Israeli policy. Over 40% of additional Finnish defence procurement after 2022 came from Israel (David's Sling, Gabriel 5, Spike), the defence memorandum with Israel was extended for ten years, and Defence Minister Hakkanen said in September 2026 that long-term cooperation must continue; yet Finland voted in 2025 that settlements are illegal, Stubb called the occupation unlawful at the UN, and the foreign minister opened the door to suspending the trade part of the EU-Israel agreement."
+      confidence: B
+      sources:
+        - {url: "https://www.forumarmstrade.org/blog/finland", title: "Finland - Forum on the Arms Trade", publisher: "Forum on the Arms Trade", date: 2024, tier: 3}
+        - {url: "https://www.uniindia.com/world/defence-israel-finland-weapons-sale/195759", title: "Finland must maintain long-term defence cooperation with Israel, says Defence Minister", publisher: "UNI", date: 2026-09, tier: 3}
+        - {url: "https://www.anews.com.tr/europe/2025/09/24/finland-says-israel-must-end-its-occupation-of-palestinian-territories/amp", title: "Finland says Israel must end its occupation of Palestinian territories", publisher: "Anadolu / A News", date: 2025-09-24, tier: 3}
+    - text: "A hawk on Ukraine that refuses the instruments that finance it. Finland urges Brussels to use immobilised Russian assets and to fund Kyiv at once, but as a net contributor it rejects any 2028-34 budget with common debt and wants the headline figure cut by hundreds of billions; the burden it asks Europe to carry has to come from somewhere other than the pocket it guards."
+      confidence: B
+      sources:
+        - {url: "https://valtioneuvosto.fi/en/-/prime-ministers-orpo-and-kristersson-in-joint-letter-financing-for-ukraine-must-be-secured-quickly", title: "Prime Ministers Orpo and Kristersson in joint letter: Financing for Ukraine must be secured quickly", publisher: "Finnish Government", date: 2025-12, tier: 1}
+        - {url: "https://valtioneuvosto.fi/en/-/ministerial-committee-on-eu-affairs-outlines-finland-s-positions-for-negotiations-on-multiannual-financial-framework", title: "Ministerial Committee on EU Affairs outlines Finland's positions for negotiations on the multiannual financial framework", publisher: "Finnish Government", date: 2025, tier: 1}
+
+  reading: |
+    Finland runs the strategy of a frontline state that has finally been given the
+    alliance it avoided for seventy years, and now has to make it real before the
+    patron's attention drifts. The aim is not to defeat Russia but to be an
+    unprofitable target: a large reserve army, American aircraft and basing,
+    Swedish and Nordic depth, a sealed border, and a loud insistence that Ukraine
+    must not lose. The grade for Russia is therefore rival, not adversary - the
+    government says it is not an enemy, aims at weakening Russian capacity through
+    sanctions and deterrence, and keeps the door open to dialogue after a ceasefire
+    - but the structure under it (Winter War memory, hybrid pressure, the longest
+    border) is hostile. The Luttwak pattern is that every layer of security adds
+    a new exposure: NATO membership brought instrumentalised migration, drones and
+    GNSS jamming; the Trump channel brought the Greenland tariff threat; the
+    border closure brought a Russian reply and an end to contact; the shadow-fleet
+    seizures ran into the law of the sea. Two signals that are not rows: Stubb's
+    habit of speaking both to Trump (golf, icebreakers) and of preparing Finns for
+    a post-war thaw with Russia, and the quiet extension of the defence memorandum
+    with Israel in the same years in which the president publicly condemned the
+    occupation. The open questions for 2027 are the election, whether the 3.2%
+    path survives the deficit, and whether the Eagle S case ends in a conviction
+    or in the Supreme Court.

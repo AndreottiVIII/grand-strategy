@@ -1,0 +1,520 @@
+from: FIN
+relations:
+  # ---------- objective ----------
+  - to: RUS
+    layer: objective
+    type: influence_goal
+    summary: "Finland's declared strategy toward Russia is to support Ukraine, weaken Russian capacity through sanctions and strengthen its own defence; the foreign minister says Russia is not regarded as an enemy but its violations of international law are opposed. Normalisation is ruled out until Russia rejoins the treaty system."
+    since: 2022-02-24
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.pravda.com.ua/eng/news/2025/04/06/7506260/", title: "Now is not time to call Putin, Finnish foreign minister says", publisher: "Ukrainska Pravda", date: 2025-04-06, tier: 3}
+      - {url: "https://valtioneuvosto.fi/en/-/236553176/government-defence-report-outlines-development-of-finland-s-defence-as-part-of-nato", title: "Government Defence Report outlines development of Finland's defence as part of NATO", publisher: "Finnish Government / Ministry of Defence", date: 2024-12-19, tier: 1}
+  - to: UKR
+    layer: objective
+    type: influence_goal
+    summary: "Finland wants Ukraine to survive and to receive binding security guarantees after a ceasefire; Stubb said in Paris (6 Jan 2026) that Finland would take part in a multinational force 'in one form or another', with no combat role, and that the US commitment was the key outcome."
+    since: 2022-02-24
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.presidentti.fi/en/president-stubb-in-paris-europe-is-committed-to-continue-providing-financial-military-and-political-support-for-ukraine/", title: "President Stubb in Paris: Europe is committed to continue providing financial, military and political support for Ukraine", publisher: "Office of the President of Finland", date: 2026-01-06, tier: 1}
+      - {url: "https://kyivindependent.com/ukraine-security-guarantees-will-require-readiness-to-fight-russia-finlands-stubb-says/", title: "Ukraine security guarantees will require readiness to fight Russia, Finland's Stubb says", publisher: "Kyiv Independent", date: 2025-09, tier: 3}
+  - to: org-eu
+    layer: objective
+    type: influence_goal
+    summary: "Finland wants a 2028-34 EU budget well below the Commission's near EUR 2 trillion proposal, without common debt, with strict conditionality; as a net contributor since 2001 it joined Germany, Denmark, the Netherlands, Austria and Sweden in August 2026 in asking for cuts of several hundred billion euros."
+    since: 2025-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://valtioneuvosto.fi/en/-/ministerial-committee-on-eu-affairs-outlines-finland-s-positions-for-negotiations-on-multiannual-financial-framework", title: "Ministerial Committee on EU Affairs outlines Finland's positions for negotiations on the multiannual financial framework", publisher: "Finnish Government", date: 2025, tier: 1}
+      - {url: "https://www.intellinews.com/six-net-contributors-demand-hundreds-of-billions-off-the-eu-s-next-budget-464258", title: "Six net contributors demand hundreds of billions off the EU's next budget", publisher: "bne IntelliNews", date: 2026-08, tier: 3}
+  - to: USA
+    layer: objective
+    type: influence_goal
+    summary: "Keep the United States engaged in European and Arctic security. Stubb uses the personal channel to Trump (Mar-a-Lago, the White House meeting of 9 Oct 2025) to press for pressure on Russia and a stronger Arctic security role for NATO, and was pleased at Davos in January 2026 that Trump ruled out force over Greenland."
+    since: 2024-03-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://thesun.my/news/world-news/news-world-news-finland-s-stubb-urges-trump-to-pressure-russia-over-ukraine-war-ee14767300/", title: "Finland's Stubb urges Trump to pressure Russia over Ukraine war", publisher: "Reuters (via The Sun Malaysia)", date: 2025, tier: 3}
+      - {url: "https://www.yahoo.com/news/articles/finland-president-says-not-over-232804153.html", title: "Finland's president says 'it's not over yet' after Greenland de-escalation", publisher: "Yahoo News / Reuters", date: 2026-01, tier: 3}
+
+  # ---------- alignment ----------
+  - to: USA
+    layer: alignment
+    type: treaty
+    summary: "Defence Cooperation Agreement signed in Washington on 18 Dec 2023; unanimous parliamentary approval on 1 Jul 2024; in force 1 Sep 2024. US forces get access to 15 Finnish sites (five in Lapland, including Rovaniemi air base) on a rotational basis, with no permanent bases and no nuclear weapons."
+    since: 2023-12-18
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://um.fi/defence-cooperation-agreement-with-the-united-states-dca-", title: "Defence Cooperation Agreement with the United States (DCA)", publisher: "Ministry for Foreign Affairs of Finland", date: 2024-09-01, tier: 1}
+      - {url: "https://news.usni.org/2023/12/21/new-pact-gives-u-s-military-access-to-15-bases-in-finland", title: "New pact gives U.S. military access to 15 bases in Finland", publisher: "USNI News", date: 2023-12-21, tier: 3}
+      - {url: "https://yle.fi/a/74-20097167", title: "Parliament set to ratify Defence Cooperation Agreement with US", publisher: "Yle", date: 2024-07, tier: 3}
+  - to: UKR
+    layer: alignment
+    type: treaty
+    summary: "Agreement on security cooperation and long-term support signed 3 Apr 2024 for ten years: Finland continues defence aid (ammunition, other materiel) and political support; there is no mutual-defence clause."
+    since: 2024-04-03
+    until: 2034-04-03
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.presidentti.fi/en/agreement-on-security-cooperation-and-long-term-support-between-the-republic-of-finland-and-ukraine", title: "Agreement on security cooperation and long-term support between the Republic of Finland and Ukraine", publisher: "Office of the President of Finland", date: 2024-04-03, tier: 1}
+      - {url: "https://euromaidanpress.com/2024/04/03/ukraine-finland-sign-security-cooperation-agreement/", title: "Ukraine, Finland sign security cooperation agreement", publisher: "Euromaidan Press", date: 2024-04-03, tier: 3}
+  - to: GBR
+    layer: alignment
+    type: security_guarantee
+    summary: "UK-Finland statement of 11 May 2022: if either suffers a disaster or an attack, the other will assist on request; the text covers conventional, hybrid and cyber threats and deeper intelligence sharing and exercises. Both are also in the Joint Expeditionary Force."
+    since: 2022-05-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.gov.uk/government/publications/united-kingdom-finland-statement-11-may-2022/united-kingdom-finland-statement", title: "United Kingdom - Finland statement, 11 May 2022", publisher: "UK Government", date: 2022-05-11, tier: 1}
+      - {url: "https://www.army-technology.com/news/uk-security-pacts-sweden-finland/", title: "UK security pacts with Sweden and Finland", publisher: "Army Technology", date: 2022-05, tier: 3}
+  - to: SWE
+    layer: alignment
+    type: treaty
+    summary: "Revised NORDEFCO memorandum of understanding of 6 May 2025, the first since both joined NATO, for faster common defence, cross-border military movement and military security of supply; Nordic air forces plan jointly (about 250 combat aircraft). Finland and Sweden also share the framework for NATO Forward Land Forces Finland."
+    since: 2025-05-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.globalsecurity.org/military/library/news/2025/05/mil-250509-finmod01.htm", title: "Minister of Defence Antti Hakkanen: The revised NORDEFCO Memorandum of Understanding will strengthen Nordic defence", publisher: "Ministry of Defence of Finland (via GlobalSecurity)", date: 2025-05-09, tier: 1}
+      - {url: "https://www.fmn.dk/en/topics/international-cooperation/nordefco/", title: "NORDEFCO", publisher: "Ministry of Defence of Denmark", date: 2025, tier: 1}
+  - to: EST
+    layer: alignment
+    type: treaty
+    summary: "Bilateral defence cooperation framework agreement and a September 2024 memorandum to better protect the undersea gas and electricity links between the two countries; Estonia guards Estlink 1 with a naval vessel after the Estlink 2 cut."
+    since: 2024-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://news.err.ee/1609474090/estonia-finland-sign-memorandum-to-heighten-undersea-energy-links-protection", title: "Estonia, Finland sign memorandum to heighten undersea energy links protection", publisher: "ERR News", date: 2024-09, tier: 3}
+      - {url: "https://news.err.ee/120399/estonia-finland-sign-bilateral-defense-cooperation-framework-agreement", title: "Estonia, Finland sign bilateral defense cooperation framework agreement", publisher: "ERR News", date: 2020, tier: 3}
+  - to: ISR
+    layer: alignment
+    type: treaty
+    summary: "Defence cooperation memorandum with Israel extended for ten years (to 2034); the Ministry of Defence did not announce it and Yle revealed it. It supports the David's Sling purchase and other Israeli deliveries."
+    since: 2024
+    until: 2034
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.i24news.tv/en/news/international/europe/artc-finland-quietly-locks-in-a-decade-of-defense-cooperation-with-israel", title: "Finland quietly locks in a decade of defense cooperation with Israel", publisher: "i24NEWS (citing Yle)", date: 2025, tier: 3}
+
+  # ---------- dependency ----------
+  - to: USA
+    layer: dependency
+    type: arms_supply
+    summary: "64 F-35A Block 4 fighters under a contract worth about EUR 8.3bn (December 2021). The first aircraft rolled out at Fort Worth on 16 Dec 2025; JF-510 and JF-512 landed at Rovaniemi on 18 Sep 2026; initial operational capability is planned for early 2028 and full capability in late 2030. Patria assembles forward fuselage sections in Finland."
+    value: 8.3
+    unit: eur_bn_f35_contract_64_aircraft
+    since: 2021-12-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "One 2025 report gives 66 aircraft; every other source says 64 and that figure is kept."
+    sources:
+      - {url: "https://www.globalsecurity.org/military/library/news/2021/12/mil-211210-lockheed-martin01.htm", title: "Finland selects F-35 Lightning II as its next fighter", publisher: "Lockheed Martin (via GlobalSecurity)", date: 2021-12-10, tier: 3}
+      - {url: "https://theaviationist.com/2026/09/19/finlands-f-35s-home/", title: "Finland's F-35s are home", publisher: "The Aviationist", date: 2026-09-19, tier: 3}
+      - {url: "https://euro-sd.com/2025/12/major-news/48266/first-finnish-f-35a-rolled-out/", title: "First Finnish F-35A rolled out", publisher: "European Security & Defence", date: 2025-12, tier: 3}
+  - to: USA
+    layer: dependency
+    type: military_presence
+    summary: "US forces have unimpeded access to 15 agreed sites under the DCA (air bases, naval bases, garrisons, training and storage areas, Border Guard barracks); five are in Lapland. No permanent bases are planned."
+    value: 15
+    unit: dca_sites_open_to_us_forces
+    since: 2024-09-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://um.fi/defence-cooperation-agreement-with-the-united-states-dca-", title: "Defence Cooperation Agreement with the United States (DCA)", publisher: "Ministry for Foreign Affairs of Finland", date: 2024-09-01, tier: 1}
+      - {url: "https://en.highnorthnews.com/politics/new-defense-agreement-gives-us-access-to-several-military-areas-in-finnish-lapland/130765", title: "New defense agreement gives US access to several military areas in Finnish Lapland", publisher: "High North News", date: 2023-12, tier: 3}
+  - to: USA
+    layer: dependency
+    type: trade_share
+    summary: "The United States is Finland's second-largest export market (10.4% of goods exports in 2025 by one compilation, after Sweden at 11.3-11.5%); US tariffs of 15% on EU goods apply since August 2025."
+    value: 0.104
+    unit: share_of_goods_exports_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Finnish Customs data reported by Bernama/Xinhua rank the US second after Sweden but give no US percentage; 10.4% comes from a secondary compilation and may differ slightly from the official figure."
+    sources:
+      - {url: "https://bernama.com/en/news.php?id=2520995", title: "Finland's exports in 2025 (Finnish Customs data)", publisher: "Bernama", date: 2026, tier: 3}
+      - {url: "https://www.ukrinform.net/rubric-polytics/4081553-leaders-of-finland-norway-respond-to-us-tariff-threats.html", title: "Leaders of Finland, Norway respond to US tariff threats (15% US tariff on EU imports)", publisher: "Ukrinform", date: 2026-01, tier: 3}
+  - to: SWE
+    layer: dependency
+    type: military_presence
+    summary: "Sweden is framework nation for NATO Forward Land Forces Finland: a battlegroup of about 600 soldiers based at Boden that rotates into Finland and can grow to 1,200 or to brigade size. Since 28 Aug 2026 Swedish Gripens and a corvette also help police Finnish airspace and sea under Finnish command, until at least the end of 2026."
+    value: 600
+    unit: swedish_troops_flf_finland_2026
+    since: 2026-06-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://valtioneuvosto.fi/en/-/236553176/nato-forward-land-forces-finland-to-start-operations-on-6-june", title: "NATO Forward Land Forces Finland to start operations on 6 June", publisher: "Finnish Government / Ministry of Defence", date: 2026-06, tier: 1}
+      - {url: "https://www.thestar.com.my/news/world/2026/08/28/sweden-to-deploy-fighter-jets-war-ships-to-finland", title: "Sweden to deploy fighter jets, war ships to Finland", publisher: "Reuters (via The Star)", date: 2026-08-28, tier: 3}
+  - to: SWE
+    layer: dependency
+    type: trade_share
+    summary: "Sweden is Finland's largest export destination (11.5% of goods exports in 2025 per Finnish Customs data) and its second-largest source of imports (11.6%)."
+    value: 0.115
+    unit: share_of_goods_exports_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://bernama.com/en/news.php?id=2520995", title: "Finland's exports in 2025 (Finnish Customs data)", publisher: "Bernama", date: 2026, tier: 3}
+  - to: DEU
+    layer: dependency
+    type: trade_share
+    summary: "Germany is Finland's largest source of imports (13.8% of goods imports in 2025) and the third export market (about 9.8%)."
+    value: 0.138
+    unit: share_of_goods_imports_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://bernama.com/en/news.php?id=2520995", title: "Finland's exports in 2025 (Finnish Customs data)", publisher: "Bernama", date: 2026, tier: 3}
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    summary: "China is Finland's third-largest import source (9.4% of goods imports in 2025) but takes only 4.5% of exports, the smallest share since 2009; pulp is a third of the exports and Finland's largest goods trade deficit is with China."
+    value: 0.094
+    unit: share_of_goods_imports_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://bernama.com/en/news.php?id=2520995", title: "Finland's exports in 2025 (Finnish Customs data)", publisher: "Bernama", date: 2026, tier: 3}
+  - to: RUS
+    layer: dependency
+    type: energy_import
+    summary: "Russian natural gas stopped on 21 May 2022 when Gasum refused to pay in roubles; before the cutoff Russia covered about 70% of Gasum's requirements. Finland replaced it with the Balticconnector and a floating LNG terminal at Inkoo (operating since 2023), which proved its worth when the Balticconnector was cut in October 2023."
+    value: 0.7
+    unit: share_of_gasum_gas_supply_before_cutoff_2022
+    since: 2022-05-21
+    until: 2022-05-21
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://news.err.ee/1608604693/russia-shuts-of-natural-gas-supply-to-finland", title: "Russia shuts off natural gas supply to Finland", publisher: "ERR News", date: 2022-05-21, tier: 3}
+      - {url: "https://pgjonline.com/news/2023/october/finlands-new-lng-terminals-can-compensate-for-balticconnector-pipeline-loss", title: "Finland's new LNG terminals can compensate for Balticconnector pipeline loss", publisher: "Pipeline & Gas Journal", date: 2023-10, tier: 3}
+  - to: RUS
+    layer: dependency
+    type: energy_import
+    summary: "Russian electricity, about a tenth of Finnish consumption, was cut to zero in May 2022 (Fingrid curbed capacity from 1.3 GW to 900 MW in April; the supplier RAO Nordic stopped on 14 May). Olkiluoto 3 (1.6 GW, test production March 2022) replaced a large share of the imports."
+    value: 0.1
+    unit: share_of_electricity_consumption_before_cutoff_2022
+    since: 2022-05-14
+    until: 2022-05-14
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://yle.fi/news/3-12446050", title: "Fingrid: Russian electricity imports to Finland cut to zero", publisher: "Yle", date: 2022-05-14, tier: 3}
+      - {url: "https://brusselstimes.com/224902/russia-cuts-off-finlands-electricity-exports-ahead-of-nato-bid-announcement", title: "Russia cuts off Finland's electricity exports ahead of NATO bid announcement", publisher: "Brussels Times", date: 2022-05-14, tier: 3}
+      - {url: "https://www.nucnet.org/news/electricity-production-begins-at-first-new-european-nuclear-reactor-in-15-years-3-1-2022", title: "Electricity production begins at first new European nuclear reactor in 15 years", publisher: "NucNet", date: 2022-03-01, tier: 3}
+  - to: RUS
+    layer: dependency
+    type: trade_share
+    summary: "Russian fertiliser, which came by rail through Vainikkala after the border closure, covered 10-15% of the Finnish market; Russian rail tariffs rose eightfold on 1 Jul 2026, making rail imports unviable. The emergency supply agency says supply for the growing season is secured."
+    value: 0.15
+    unit: upper_bound_of_10_to_15_pct_share_of_finnish_fertiliser_market
+    since: 2022
+    until: 2026-07-01
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://yle.fi/a/74-20234361", title: "Russia's higher rail freight tariffs on Finland-bound fertiliser", publisher: "Yle", date: 2026-07, tier: 3}
+      - {url: "https://www.huoltovarmuuskeskus.fi/en/a/russias-higher-rail-freight-tariffs-have-no-significant-impact-on-finlands-security-of-supply", title: "Russia's higher rail freight tariffs have no significant impact on Finland's security of supply", publisher: "National Emergency Supply Agency", date: 2026-07, tier: 1}
+  - to: UKR
+    layer: dependency
+    type: arms_supply
+    summary: "Finland is a supplier, not a recipient: 34 packages of defence materiel worth about EUR 3.6bn by 15 Sep 2026 (the 31st, EUR 98m, on 16 Jan 2026; the 33rd, EUR 128m, on 29 May; the 34th, EUR 290m, on 15 Sep, partly bought from Finnish industry) plus a contribution to NATO's PURL list."
+    value: 3.6
+    unit: eur_bn_cumulative_defence_materiel_to_ukraine
+    since: 2022-02-24
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Cumulative total was EUR 3.1bn in January 2026, 3.4bn in May and about 3.6bn after the 34th package; the latest is kept."
+    sources:
+      - {url: "https://unn.ua/en/news/finland-has-delivered-its-34th-military-aid-package-to-ukraine-worth-euro290-million", title: "Finland has delivered its 34th military aid package to Ukraine worth EUR 290 million", publisher: "UNN", date: 2026-09-15, tier: 3}
+      - {url: "https://www.eurointegration.com.ua/eng/news/2026/01/16/7229223/", title: "Finland to provide 31st military aid package for Ukraine worth EUR 98mn", publisher: "Eurointegration / Ukrainska Pravda", date: 2026-01-16, tier: 3}
+  - to: ISR
+    layer: dependency
+    type: arms_supply
+    summary: "David's Sling long-range air defence (procurement agreement about EUR 316m, approved by the US in February 2023, co-produced by Rafael and Raytheon) replaces an air-defence capability that had been retired; the defence minister argued that cancelling would mean contractual penalties and a restart. Forum on the Arms Trade says over 40% of additional Finnish procurement after 2022 came from Israel."
+    value: 316
+    unit: eur_m_david_s_sling_contract
+    since: 2023-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Values vary between EUR 316m and 317m across outlets; the Israeli Ministry of Defense figure of about EUR 316m is used."
+    sources:
+      - {url: "https://www.army-technology.com/news/finland-reaches-major-defence-contract-with-israel-for-davids-sling-air-defence-system/", title: "Finland reaches major defence contract with Israel for David's Sling air defence system", publisher: "Army Technology", date: 2023, tier: 3}
+      - {url: "https://mod.gov.il/en/press-releases/press-room/united-states-government-approves-the-procurement-of-the-israeli-davids-sling-weapon-system-to-finland", title: "United States Government approves the procurement of the Israeli David's Sling weapon system to Finland", publisher: "Israel Ministry of Defense", date: 2023-02, tier: 1}
+      - {url: "https://www.forumarmstrade.org/blog/finland", title: "Finland - Forum on the Arms Trade", publisher: "Forum on the Arms Trade", date: 2024, tier: 3}
+  - to: org-nato
+    layer: dependency
+    type: military_presence
+    summary: "NATO's Multi-Corps Land Component Command in Mikkeli, co-located with the Finnish Army Command, became operational on 1 Sep 2025 with 10 staff and a plan for about 50 in peacetime; in a crisis it commands allied land operations in the area, under Joint Force Command Norfolk."
+    value: 10
+    unit: nato_staff_at_mikkeli_land_command_sep_2025
+    since: 2025-09-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.yahoo.com/news/articles/nato-launches-command-finland-near-080428297.html", title: "NATO launches new command in Finland near Russian border", publisher: "Yahoo News / AP", date: 2025-09-01, tier: 3}
+      - {url: "https://en.apa.az/europe/natos-multi-corps-land-command-begins-operations-in-finland-476497", title: "NATO's Multi-Corps Land Command begins operations in Finland", publisher: "APA", date: 2025-09, tier: 3}
+
+  # ---------- action ----------
+  - to: RUS
+    layer: action
+    type: incident
+    summary: "Finland closed its whole eastern border from 30 Nov 2023 after asylum seekers without documents were funnelled to the crossings (the government blamed Russia and called it a hybrid attack after NATO accession). On 4 Jun 2026 it decided to keep all crossings closed until further notice, with asylum applications centralised; the government sees a likely renewal of instrumentalised migration if they reopened."
+    since: 2023-11-30
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://valtioneuvosto.fi/en/-/1410869/finland-s-eastern-border-to-remain-closed-until-further-notice-2", title: "Finland's eastern border to remain closed until further notice", publisher: "Finnish Government", date: 2026-06-04, tier: 1}
+      - {url: "https://news.err.ee/1609178656/finland-to-close-its-entire-eastern-border-from-thursday", title: "Finland to close its entire eastern border from Thursday", publisher: "ERR News", date: 2023-11-28, tier: 3}
+  - to: RUS
+    layer: action
+    type: incident
+    summary: "Russia closed seven rail border crossings with Finland, Estonia and Latvia from 1 Jul 2026, five of them on the Finnish border (Vartius-Lytta, Niirala-Vartsila, Imatra-Svetogorsk and others), leaving only Vainikkala freight. Moscow gave no reason; Finland learned from the media and received the formal note on 9 Jul and judged the effect small."
+    since: 2026-07-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.themoscowtimes.com/2026/07/01/russia-closes-railway-border-crossings-with-finland-and-baltic-neighbors-a93136", title: "Russia closes railway border crossings with Finland and Baltic neighbors", publisher: "The Moscow Times", date: 2026-07-01, tier: 3}
+      - {url: "https://yle.fi/a/74-20234243", title: "Russia suspends traffic at rail crossings on the Finnish border", publisher: "Yle", date: 2026-07, tier: 3}
+      - {url: "https://www.arctictoday.com/russia-urgently-suspends-railway-border-crossings-with-europe/", title: "Russia urgently suspends railway border crossings with Europe", publisher: "Arctic Today / Barents Observer", date: 2026-07, tier: 3}
+  - to: RUS
+    layer: action
+    type: incident
+    summary: "On 25 Dec 2024 the tanker Eagle S, linked to Russia's shadow fleet, dragged its anchor about 90 km and damaged Estlink 2 and four telecom cables; Finland seized it. The district court dismissed the case on 3 Oct 2025 (no jurisdiction in the EEZ); the Helsinki Court of Appeal reversed in 2026 and sent it back. Estlink 2 returned to commercial use in June 2025."
+    since: 2024-12-25
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://maritime-executive.com/article/helsinki-court-dismisses-charges-in-case-of-cable-damage-by-tanker-eagle-s", title: "Helsinki court dismisses charges in case of cable damage by tanker Eagle S", publisher: "The Maritime Executive", date: 2025-10-03, tier: 3}
+      - {url: "https://maritime-executive.com/article/tanker-anchor-dragging-case-reopened-by-helsinki-appeals-court", title: "Tanker anchor dragging case reopened by Helsinki appeals court", publisher: "The Maritime Executive", date: 2026-09-08, tier: 3}
+      - {url: "https://www.fingrid.fi/en/news/news/2025/estlink-2-electricity-transmission-link-returns-to-commercial-use/", title: "Estlink 2 electricity transmission link returns to commercial use", publisher: "Fingrid", date: 2025-06, tier: 1}
+  - to: RUS
+    layer: action
+    type: incident
+    summary: "On 31 Dec 2025 the cargo ship Fitburg (St Vincent and the Grenadines flag, sailing from St Petersburg, 14 crew from Russia, Georgia, Azerbaijan and Kazakhstan) was seized after damaging an Elisa data cable in Estonia's EEZ and an Arelion cable; services were rerouted. The seizure was lifted in January 2026 after Finnish and Estonian investigators finished; one crew member was remanded."
+    since: 2025-12-31
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "The ship is not Russian-flagged; the row records the port of departure and the crew, not a state attribution."
+    sources:
+      - {url: "https://www.nbcnews.com/world/europe/finland-seizes-ship-sailing-russia-suspected-cable-sabotage-rcna251698", title: "Finland seizes ship sailing from Russia after suspected cable sabotage", publisher: "NBC News", date: 2025-12-31, tier: 3}
+      - {url: "https://www.hellenicshippingnews.com/cargo-vessel-suspected-of-damaging-undersea-cable-allowed-to-leave-finland/", title: "Cargo vessel suspected of damaging undersea cable allowed to leave Finland", publisher: "Hellenic Shipping News", date: 2026-01, tier: 3}
+  - to: RUS
+    layer: action
+    type: incident
+    summary: "Strong GNSS jamming in the eastern Gulf of Finland, tied by Western officials to Russia, diverted Ukrainian military drones into Finnish airspace in March-April 2026 (one downed north of Kouvola). In September 2026 police and border guards found the four drones were thrown off course by jamming and wind and were not aimed at Finland; prosecutors closed the cases. The defence forces closed airspace and sea lanes three times in a month in mid-2026."
+    since: 2026-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/09/09/finland-says-gnss-jamming-wind-caused-ukrainian-drones-to-enter-its-airspace-in-spring", title: "Finland says GNSS jamming, wind caused Ukrainian drones to enter its airspace in spring", publisher: "Reuters (via Internazionale)", date: 2026-09-09, tier: 3}
+      - {url: "https://www.arctictoday.com/finland-closes-airspace-restricts-maritime-traffic-near-russia-over-drone-risk/", title: "Finland closes airspace, restricts maritime traffic near Russia over drone risk", publisher: "Arctic Today", date: 2026-07, tier: 3}
+      - {url: "https://euronews.com/2026/01/22/risk-of-drones-drifting-into-finlands-airspace-growing-intelligence-chief-says", title: "Risk of drones drifting into Finland's airspace growing, intelligence chief says", publisher: "Euronews", date: 2026-01-22, tier: 3}
+  - to: RUS
+    layer: action
+    type: agreement
+    summary: "Stubb on 31 Mar 2025 in London said Finns must 'mentally prepare' for relations with Russia to recover at some point, conditional on Russia ending the war; the Kremlin replied on 1 Apr that Putin is open to mutually beneficial and respectful ties if Helsinki wants them, while Peskov said Finland and Sweden had 'reduced relations to zero' by bringing NATO infrastructure to their territory."
+    since: 2025-03-31
+    until: 2025-04-01
+    last_verified: 2026-10-12
+    confidence: B
+    note: "The Moscow Times URL carries 2026-08-06 but the article reports the remarks of 31 Mar and 1 Apr 2025."
+    sources:
+      - {url: "https://www.themoscowtimes.com/2026/08/06/finland-should-mentally-prepare-to-restore-ties-with-russia-president-stubb-says", title: "Finland should 'mentally prepare' to restore ties with Russia, President Stubb says", publisher: "The Moscow Times", date: 2025-04-01, tier: 3}
+  - to: CHN
+    layer: action
+    type: incident
+    summary: "The Hong Kong-flagged container ship Newnew Polar Bear dragged its anchor on 8 Oct 2023 and damaged the Balticconnector gas pipeline and telecom cables between Finland and Estonia. Finnish police identified the anchor; China called it a storm accident; the captain pleaded not guilty to criminal damage in a Hong Kong court (February 2026). Investigators have not said whether it was deliberate."
+    since: 2023-10-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://news.err.ee/1609422658/china-admits-container-ship-newnew-polar-bear-damaged-undersea-gas-pipeline", title: "China admits container ship Newnew Polar Bear damaged undersea gas pipeline", publisher: "ERR News", date: 2024, tier: 3}
+      - {url: "https://www.scmp.com/news/article/3343169/captain-pleads-not-guilty-damaging-baltic-sea-gas-pipeline-hong-kong-court", title: "Captain pleads not guilty to damaging Baltic Sea gas pipeline in Hong Kong court", publisher: "South China Morning Post", date: 2026-02, tier: 3}
+  - to: CHN
+    layer: action
+    type: visit
+    summary: "Chinese foreign minister Wang Yi, on a Nordic tour, met Stubb in Turku on 5 Jul 2026 and Valtonen in Helsinki; both sides pledged more high-level contact, with Stubb citing the green economy and AI. Stubb had paid a state visit to China in October 2024 that produced a leaner 2025-29 action plan."
+    since: 2026-07-05
+    until: 2026-07-05
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://english.henan.gov.cn/2026/07-06/3372840.html", title: "China, Finland agree to strengthen cooperation, jointly address challenges", publisher: "Xinhua / Henan government (state media, official statement)", date: 2026-07-06, tier: 1}
+      - {url: "https://thediplomat.com/2024/11/finlands-tightrope-diplomacy-stubbs-china-visit-navigates-new-security-and-trade-realities", title: "Finland's tightrope diplomacy: Stubb's China visit navigates new security and trade realities", publisher: "The Diplomat", date: 2024-11, tier: 3}
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "On 9 Oct 2025 Trump and Stubb signed a memorandum, with Orpo present, for up to 11 Arctic Security Cutters (about USD 6.1bn; the first four in Finland, the rest in the US) under a national-security waiver; on 30 Dec 2025 Rauma Marine Constructions signed a contract for two of them, delivery in 2028."
+    since: 2025-10-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    note: "Reports differ on the split of Finnish-built ships (two at Rauma, two at Helsinki Shipyard per media reports), the total value (USD 6.1bn or more than EUR 5bn) and the number built in the US; the White House figure is used."
+    sources:
+      - {url: "https://maritime-executive.com/article/u-s-and-finland-reach-6-billion-deal-to-build-11-icebreakers", title: "U.S. and Finland reach $6 billion deal to build up to 11 icebreakers", publisher: "The Maritime Executive", date: 2025-10-09, tier: 3}
+      - {url: "https://gcaptain.com/finlands-rmc-to-build-two-icebreakers-for-the-us-coast-guard/", title: "Finland's RMC to build two icebreakers for the US Coast Guard", publisher: "gCaptain", date: 2025-12-30, tier: 3}
+      - {url: "https://breakingdefense.com/2025/07/whats-the-signal-one-year-since-ice-pact-the-agreements-future-remains-unclear/", title: "What's the signal one year since ICE Pact: the agreement's future remains unclear", publisher: "Breaking Defense", date: 2025-07, tier: 3}
+  - to: USA
+    layer: action
+    type: incident
+    summary: "In January 2026 Trump announced an additional 10% tariff from 1 February on Finland and seven other European countries over their support for Greenland and Denmark, rising to 25% on 1 June if no deal on Greenland. Stubb called tariff threats unacceptable and Greenland the hardest issue for Finland; after Trump's Davos speech (no force, more Arctic security) he said it was 'not over yet'."
+    since: 2026-01
+    until: 2026-01
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.ukrinform.net/rubric-polytics/4081553-leaders-of-finland-norway-respond-to-us-tariff-threats.html", title: "Leaders of Finland, Norway respond to US tariff threats", publisher: "Ukrinform", date: 2026-01, tier: 3}
+      - {url: "https://www.yahoo.com/news/articles/finland-president-says-not-over-232804153.html", title: "Finland's president says 'it's not over yet' after Greenland de-escalation", publisher: "Yahoo News / Reuters", date: 2026-01, tier: 3}
+      - {url: "https://yle.fi/a/74-20205400", title: "Stubb: Greenland is the hardest issue for Finland", publisher: "Yle", date: 2026-01, tier: 3}
+  - to: DNK
+    layer: action
+    type: incident
+    summary: "Finland sided with Denmark in the January 2026 Greenland crisis: Stubb set out three scenarios (off-ramp via NATO Arctic security, tariff war, military intervention), and Finnish officers studied how Finland could add to Arctic defence; no new troops were planned."
+    since: 2026-01
+    until: 2026-01
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://news.liga.net/en/world/news/stubb-named-three-possible-scenarios-for-greenland-one-of-them-is-a-military-takeover", title: "Stubb named three possible scenarios for Greenland. One of them is a military takeover", publisher: "Liga.net", date: 2026-01, tier: 3}
+      - {url: "https://yle.fi/a/74-20205400", title: "Stubb: Greenland is the hardest issue for Finland", publisher: "Yle", date: 2026-01, tier: 3}
+  - to: UKR
+    layer: action
+    type: agreement
+    summary: "34th defence materiel package approved on 15 Sep 2026, EUR 290 million and the second-largest to date, mixing stock transfers with products from Finnish industry; Ukrainian and Finnish firms will develop drones, unmanned maritime systems and ground robots. Cumulative support about EUR 3.6bn."
+    since: 2026-09-15
+    until: 2026-09-15
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://unn.ua/en/news/finland-has-delivered-its-34th-military-aid-package-to-ukraine-worth-euro290-million", title: "Finland has delivered its 34th military aid package to Ukraine worth EUR 290 million", publisher: "UNN", date: 2026-09-15, tier: 3}
+      - {url: "https://united24media.com/war-in-ukraine/finland-expands-military-support-to-ukraine-with-new-eur290-million-assistance-22575", title: "Finland expands military support to Ukraine with new EUR 290 million assistance", publisher: "United24 Media", date: 2026-09, tier: 3}
+  - to: org-eu
+    layer: action
+    type: agreement
+    summary: "In December 2025 Finland joined Sweden, Poland, the Baltic states and Ireland in a letter urging EU leaders to agree the loan to Ukraine backed by immobilised Russian assets; Orpo told Belgian PM De Wever the legal risk must be shared and that Finland is ready to carry its part. The outcome of the loan is not confirmed in the sources found."
+    since: 2025-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://valtioneuvosto.fi/en/-/prime-ministers-orpo-and-kristersson-in-joint-letter-financing-for-ukraine-must-be-secured-quickly", title: "Prime Ministers Orpo and Kristersson in joint letter: Financing for Ukraine must be secured quickly", publisher: "Finnish Government", date: 2025-12, tier: 1}
+      - {url: "https://valtioneuvosto.fi/en/-/prime-minister-orpo-speaks-with-belgian-prime-minister-bart-de-wever", title: "Prime Minister Orpo speaks with Belgian Prime Minister Bart de Wever", publisher: "Finnish Government", date: 2025, tier: 1}
+  - to: org-nato
+    layer: action
+    type: exercise
+    summary: "NATO Forward Land Forces Finland stood up on 6 Jun 2026 with a Swedish-led battlegroup at Boden and a multinational staff element in Rovaniemi; Allied forces rotate into Finland by exercise and need. At the Ankara summit (7-8 Jul 2026) France, Sweden and Finland announced that French ground forces will join; Denmark, Iceland, Italy, Norway and the UK also intend to contribute."
+    since: 2026-06-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://valtioneuvosto.fi/en/-/236553176/nato-forward-land-forces-finland-to-start-operations-on-6-june", title: "NATO Forward Land Forces Finland to start operations on 6 June", publisher: "Finnish Government / Ministry of Defence", date: 2026-06, tier: 1}
+      - {url: "https://www.janes.com/defence-intelligence-insights/defence-news/defence/nato-summit-2026-france-to-contribute-troops-to-forward-land-forces-finland", title: "NATO Summit 2026: France to contribute troops to Forward Land Forces Finland", publisher: "Janes", date: 2026-07, tier: 2}
+  - to: SWE
+    layer: action
+    type: agreement
+    summary: "On 28 Aug 2026 Finland announced that Swedish Gripens and a corvette will help police Finnish airspace and the coast until at least the end of 2026, under Finnish command and law, to free Finnish assets for intercepts after the drone incursions; Swedish defence minister Jonson said ground-based anti-drone systems could follow in the autumn."
+    since: 2026-08-28
+    until: 2026-12-31
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.thestar.com.my/news/world/2026/08/28/sweden-to-deploy-fighter-jets-war-ships-to-finland", title: "Sweden to deploy fighter jets, war ships to Finland", publisher: "Reuters (via The Star)", date: 2026-08-28, tier: 3}
+      - {url: "https://www.aa.com.tr/en/europe/finland-sweden-step-up-defense-cooperation-to-counter-drone-threats/4040153", title: "Finland, Sweden step up defense cooperation to counter drone threats", publisher: "Anadolu Agency", date: 2026-08, tier: 3}
+  - to: DEU
+    layer: action
+    type: visit
+    summary: "German President Steinmeier visited Helsinki on 7 May 2026 on Stubb's invitation (Ukraine, comprehensive security, defence-industrial cooperation, transatlantic relations); Stubb said Patria, Nokia and ICEYE are helping to build German defence capability. Merz met Stubb at Kultaranta on 27 May 2025."
+    since: 2026-05-07
+    until: 2026-05-07
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.presidentti.fi/en/german-federal-president-to-pay-working-visit-to-finland/", title: "German Federal President to pay working visit to Finland", publisher: "Office of the President of Finland", date: 2026-05, tier: 1}
+      - {url: "https://www.presidentti.fi/en/president-stubb-meets-chancellor-merz/", title: "President Stubb meets Chancellor Merz", publisher: "Office of the President of Finland", date: 2025-05-27, tier: 1}
+  - to: PSE
+    layer: action
+    type: visit
+    summary: "At the UN General Assembly in September 2025 Stubb met President Abbas, said Israel has no right to violate international law in Palestine and that the 1967 occupation must end, and said he would accept recognition of Palestine immediately if the government proposed it; the government has not proposed it because the Finns Party and the Christian Democrats object. Finland had joined a declaration on a two-state solution."
+    since: 2025-09
+    until: 2025-09
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.anews.com.tr/europe/2025/09/24/finland-says-israel-must-end-its-occupation-of-palestinian-territories/amp", title: "Finland says Israel must end its occupation of Palestinian territories", publisher: "Anadolu / A News", date: 2025-09-24, tier: 3}
+      - {url: "https://president.ps/Eng/NewsPage/490539", title: "President Abbas meets with Finnish President in New York", publisher: "Office of the President of Palestine", date: 2025-09, tier: 1}
+      - {url: "https://www.timesofisrael.com/finland-joins-declaration-on-2-state-solution-weighs-recognizing-palestinian-state/", title: "Finland joins declaration on two-state solution, weighs recognizing Palestinian state", publisher: "The Times of Israel", date: 2025, tier: 3}
+  - to: EST
+    layer: action
+    type: visit
+    summary: "Estonian defence minister Pevkur met Defence Minister Hakkanen in Helsinki in April 2026 on Baltic Sea security and the Ankara summit; Pevkur praised Finland for leading the land domain of Eastern Flank Watch (with Lithuania, Latvia, Poland and Sweden) and for its part in the Estonia-Luxembourg IT coalition for Ukraine."
+    since: 2026-04
+    until: 2026-04
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.kaitseministeerium.ee/en/news/minister-pevkur-helsinki-it-estonias-interests-strengthen-defence-cooperation-finland", title: "Minister Pevkur in Helsinki: It is in Estonia's interests to strengthen defence cooperation with Finland", publisher: "Ministry of Defence of Estonia", date: 2026-04, tier: 1}
+  - to: org-un
+    layer: action
+    type: agreement
+    summary: "Withdrawal from the Ottawa Convention on anti-personnel mines: instrument deposited 10 Jul 2025, effective 10 Jan 2026, citing the deteriorated security environment after Russia's full-scale invasion; Finland says it will respect other humanitarian law and has begun planning to reintroduce mines. Poland and the Baltic states left the treaty in the same wave."
+    since: 2025-07-10
+    until: 2026-01-10
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://valtioneuvosto.fi/en/-/236553176/finland-s-withdrawal-from-ottawa-convention-to-take-effect", title: "Finland's withdrawal from Ottawa Convention to take effect", publisher: "Finnish Government", date: 2026-01-10, tier: 1}
+      - {url: "https://www.globalsecurity.org/military/library/news/2025/07/mil-250710-finmfa01.htm", title: "Finland presented the instrument of withdrawal from the Ottawa Anti-Personnel Landmines Convention", publisher: "Ministry for Foreign Affairs of Finland (via GlobalSecurity)", date: 2025-07-10, tier: 1}
+  - to: org-nato
+    layer: action
+    type: agreement
+    summary: "Defence spending path: 2.5% of GDP in 2025; April 2025 pledge of at least 3% by 2029; April 2026 plan for 3.2% by 2030 on the way to the NATO target of 3.5% core spending by 2035; defence- and security-related spending estimated at 2.4% of GDP in 2026 against a 1.5% target. A June 2026 parliamentary working group urged doubling the budget from EUR 7.7bn to above EUR 14bn by 2029."
+    since: 2025-04-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/04/23/finland-to-spend-3-2-of-gdp-on-defence-by-2030-despite-austerity", title: "Finland to spend 3.2% of GDP on defence by 2030 despite austerity", publisher: "Reuters (via Internazionale)", date: 2026-04-23, tier: 3}
+      - {url: "https://www.globalsecurity.org/military/library/news/2025/04/mil-250401-finmod01.htm", title: "Finland to raise defence spending to at least three percent of GDP", publisher: "Ministry of Defence of Finland (via GlobalSecurity)", date: 2025-04-01, tier: 1}
+      - {url: "https://valtioneuvosto.fi/en/-/236553176/minister-of-defence-antti-hakkanen-finland-will-exceed-nato-s-1.5-target-for-defence-and-security-related-spending-in-2026", title: "Minister of Defence Antti Hakkanen: Finland will exceed NATO's 1.5% target for defence and security-related spending in 2026", publisher: "Finnish Government / Ministry of Defence", date: 2026, tier: 1}
