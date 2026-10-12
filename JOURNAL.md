@@ -1,5 +1,20 @@
 # Journal
 
+## 2026-10-12 · Central and northern Europe complete (17 cards) and the "adversary" line held
+
+Costs: POL 276k, HUN ~250k (resumed), CZE, SVK, DEU 278k, AUT, CHE, SWE, FIN, NOR 237k,
+DNK 243k, EST 219k, LVA 264k, LTU 226k, SVN 156k (Sonnet with the minor brief), ISL 162k and
+LIE 174k (first Haiku cards: 14-15 web calls each, cheaper but not by much, because the
+template and the mirror reading cost the same). Running total 5.64M for 33 reviewed cards.
+
+Review decisions: the Baltic agents all graded Russia "adversary" (Saeima and Seimas
+"terrorist state" resolutions). Regraded to rival in LVA and LTU, consistent with EST, POL
+and FIN: adversary stays reserved for actors seeking each other's destruction; the Baltic
+aim is deterrence and a Russian defeat in Ukraine. The ontology text already says so; the
+briefs now say it too (brief_template.md, point 1). Denmark created two sub-state
+stubs (Greenland, Faroe) as own_territory with bond kin. Estonia graded China rival with
+confidence C from the EU triple formula; kept, flagged for the end-of-region pass.
+
 Decision log, newest first. The path matters more than the destination: record why,
 not only what. Dead ends are entries too.
 
