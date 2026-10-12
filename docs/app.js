@@ -42,6 +42,20 @@
   const hasStances = id => !!(data.stances[id] && data.stances[id].length);
   const hasVotes = id => !!unga.affinity[id];
   const VOTE_CLASSES = [[.9, "v90"], [.8, "v80"], [.7, "v70"], [.6, "v60"], [0, "vlow"]];
+  const clubs = {};                                   // actor -> Set of organisations it belongs to
+  const recog = {};                                   // target -> { actor: "yes" | "no" | "withdrew" }
+  data.relations.forEach(r => {
+    if (r.type === "membership") (clubs[r.from] = clubs[r.from] || new Set()).add(r.to);
+    if (r.type === "recognition") (recog[r.to] = recog[r.to] || {})[r.from] = "yes";
+    if (r.type === "non_recognition") (recog[r.to] = recog[r.to] || {})[r.from] = /^Withdrew/.test(r.summary || "") ? "withdrew" : "no";
+  });
+  const hasClubs = id => !!(clubs[id] && clubs[id].size);
+  const hasRecog = id => !!recog[id];
+  const sharedClubs = (a, b) => clubs[a] && clubs[b] ? [...clubs[a]].filter(o => o !== "org-un" && clubs[b].has(o)) : [];   // everyone is in the UN
+  const CLUB_CLASSES = [[6, "c6"], [4, "c4"], [2, "c2"], [1, "c1"]];
+  const clubClass = n => { const c = CLUB_CLASSES.find(([t]) => n >= t); return c ? c[1] : null; };
+  const CLUB_LABEL = { c6: "6 or more organisations in common", c4: "4-5", c2: "2-3", c1: "1" };
+  const REC_LABEL = { yes: "Recognises", withdrew: "Recognised, then withdrew", no: "Does not recognise" };
   const voteClass = x => x == null ? null : VOTE_CLASSES.find(([t]) => x >= t)[1];
   const VOTE_LABEL = { v90: "Votes together 90% or more", v80: "80-89%", v70: "70-79%", v60: "60-69%", vlow: "Under 60%" };
 
@@ -55,14 +69,14 @@
   fullActors.forEach(a => grpFull.appendChild(new Option(`The world as ${a.name} sees it`, a.id)));
   povSel.appendChild(grpFull);
   const grpData = document.createElement("optgroup"); grpData.label = "Data only (UN votes, memberships, treaty allies)";
-  data.actors.filter(a => a.card !== "full" && (hasVotes(a.id) || hasStances(a.id))).sort((x, y) => x.name.localeCompare(y.name))
+  data.actors.filter(a => a.card !== "full" && (hasVotes(a.id) || hasStances(a.id) || hasClubs(a.id) || hasRecog(a.id))).sort((x, y) => x.name.localeCompare(y.name))
     .forEach(a => grpData.appendChild(new Option(a.name, a.id)));
   povSel.appendChild(grpData);
   povSel.onchange = () => { if (povSel.value) setPov(povSel.value); else goHome(); };
   function goHome() { pov = null; mapMode = "world"; povSel.value = ""; window.scrollTo(0, 0); renderLegend(); setView("map"); }
   function setPov(id) {
     pov = id; povSel.value = id;
-    lens = hasStances(id) ? "posture" : "votes";
+    lens = hasStances(id) ? "posture" : hasRecog(id) ? "recognition" : hasVotes(id) ? "votes" : "clubs";
     mapMode = hasStances(id) ? "near" : "world";
     renderLegend(); setView("map");
   }
@@ -91,7 +105,9 @@
     const r = Math.sqrt(16 * FRAC[g] / Math.PI);
     return `radial-gradient(${INK[g]} ${r.toFixed(2)}px, transparent ${(r + .15).toFixed(2)}px) 0 0 / 4px 4px`;
   }
-  const VFRAC = { v90: [.85, "a"], v80: [.5, "a"], v70: [.26, "a"], v60: [.12, "a"], vlow: [.3, "b"] };
+  const VFRAC = { v90: [.85, "a"], v80: [.5, "a"], v70: [.26, "a"], v60: [.12, "a"], vlow: [.3, "b"],
+                  c6: [.85, "a"], c4: [.5, "a"], c2: [.26, "a"], c1: [.12, "a"],
+                  yes: [.85, "c"], withdrew: [.8, "b"], no: [.3, "b"] };
   function voteSwatch(c) {
     const [f, ink] = VFRAC[c];
     const r = Math.sqrt(16 * f / Math.PI);
@@ -101,6 +117,18 @@
     const el = document.getElementById("legend");
     if (!pov) {
       el.innerHTML = `<h3>The world of today</h3><div class="row">Borders and flags as of ${data.generated}. Click a country that has a card to see the world as it sees it; ${fullActors.length} card${fullActors.length > 1 ? "s" : ""} so far: ${fullActors.map(a => a.name).join(", ")}.</div>`;
+      return;
+    }
+    if (lens === "clubs") {
+      el.innerHTML = `<h3>Organisations shared with ${actors[pov].name}</h3><div class="row" style="color:var(--ink-3)">Of ${[...clubs[pov]].filter(o => o !== "org-un").length} memberships besides the UN (NATO, EU, BRICS, OPEC...)</div>` +
+        ["c6", "c4", "c2", "c1"].map(c => `<div class="row"><span class="sw" style="background:${voteSwatch(c)} var(--land)"></span>${CLUB_LABEL[c]}</div>`).join("") +
+        `<div class="row"><span class="sw"></span>None in common</div>`;
+      return;
+    }
+    if (lens === "recognition") {
+      el.innerHTML = `<h3>Who recognises ${actors[pov].name}</h3>` +
+        ["yes", "withdrew", "no"].map(c => `<div class="row"><span class="sw" style="background:${voteSwatch(c)} var(--land)"></span>${REC_LABEL[c]}</div>`).join("") +
+        `<div class="row"><span class="sw"></span>Not a UN member / no data</div>`;
       return;
     }
     if (lens === "votes") {
@@ -154,7 +182,7 @@
     Object.entries(VFRAC).forEach(([c, [frac, ink]]) => {
       const r = Math.sqrt(16 * frac / Math.PI);
       defs.append("pattern").attr("id", "s-" + c).attr("width", 4).attr("height", 4).attr("patternUnits", "userSpaceOnUse")
-        .append("circle").attr("cx", 2).attr("cy", 2).attr("r", r).attr("fill", ink === "a" ? inkA : inkB);
+        .append("circle").attr("cx", 2).attr("cy", 2).attr("r", r).attr("fill", ink === "a" ? inkA : ink === "c" ? inkC : inkB);
     });
     // claimed, not controlled: vermilion hatch
     const hatch = defs.append("pattern").attr("id", "hatch").attr("width", 5).attr("height", 5).attr("patternUnits", "userSpaceOnUse").attr("patternTransform", "rotate(45)");
@@ -185,21 +213,23 @@
       .style("cursor", f => actors[f.id] ? "pointer" : "default")
       .on("mousemove", (ev, f) => { tipFor(f.id, f.properties.name, ev); lightCard(f.id); })
       .on("mouseleave", () => { hideTip(); lightCard(null); })
-      .on("click", (ev, f) => { if (!actors[f.id]) return; if (!pov && (actors[f.id].card === "full" || hasVotes(f.id) || hasStances(f.id))) setPov(f.id); else showDossier(f.id); });
+      .on("click", (ev, f) => { if (!actors[f.id]) return; if (!pov && (actors[f.id].card === "full" || hasVotes(f.id) || hasStances(f.id) || hasClubs(f.id) || hasRecog(f.id))) setPov(f.id); else showDossier(f.id); });
     // posture screens over the stanced countries
     const aff = pov && lens === "votes" ? (unga.affinity[pov] || {}) : null;
-    const screened = !pov ? [] : lens === "votes" ? world.features.filter(f => f.id === pov || aff[f.id] != null) : world.features.filter(f => f.id === pov || stanceOf(f.id));
+    const rec = pov && lens === "recognition" ? (recog[pov] || {}) : null;
+    const lensClass = id => lens === "votes" ? voteClass(aff[id]) : lens === "clubs" ? clubClass(sharedClubs(pov, id).length) : lens === "recognition" ? rec[id] : null;
+    const screened = !pov ? [] : lens === "posture" ? world.features.filter(f => f.id === pov || stanceOf(f.id)) : world.features.filter(f => f.id === pov || lensClass(f.id));
     countries.selectAll("path.p").data(screened).join("path").attr("class", "p")
       .attr("d", path).attr("pointer-events", "none")
       .attr("fill", f => {
         if (f.id === pov) return inkA;
-        if (lens === "votes") return `url(#s-${voteClass(aff[f.id])})`;
+        if (lens !== "posture") return `url(#s-${lensClass(f.id)})`;
         const gr = stanceOf(f.id).grade;
         return gr === "claimed_territory" ? "url(#hatch)" : gr === "neutral" ? "none" : `url(#s-${gr})`;
       });
     // bond: a band inside the border in the bond's ink - navy for kin, vermilion for grievance, none otherwise.
     // each band is clipped to its own country so it never paints the neighbour
-    const bonded = lens === "votes" ? [] : world.features.filter(f => stanceOf(f.id) && ["kin", "grievance"].includes(stanceOf(f.id).bond));
+    const bonded = lens !== "posture" ? [] : world.features.filter(f => stanceOf(f.id) && ["kin", "grievance"].includes(stanceOf(f.id).bond));
     bonded.forEach(f => defs.append("clipPath").attr("id", "clip-" + f.id).append("path").attr("d", path(f)));
     countries.selectAll("path.bond").data(bonded).join("path").attr("class", "bond")
       .attr("d", path).attr("fill", "none").attr("pointer-events", "none").attr("stroke-linejoin", "round")
@@ -216,7 +246,7 @@
       .on("mousemove", (ev, a) => { tipFor(a.id, a.name, ev); lightCard(a.id); }).on("mouseleave", () => { hideTip(); lightCard(null); }).on("click", (ev, a) => showDossier(a.id));
 
     // labels: condensed capitals for every actor with a stance
-    const labelled = !pov ? [] : lens === "votes" ? data.actors.filter(a => a.id === pov) : data.actors.filter(a => a.id === pov || stanceOf(a.id));
+    const labelled = !pov ? [] : lens !== "posture" ? data.actors.filter(a => a.id === pov) : data.actors.filter(a => a.id === pov || stanceOf(a.id));
     const stacked = {}; // non-state actors sharing a seat (EU and NATO in Brussels) stack their labels
     const labels = g.append("g").attr("class", "labels").attr("pointer-events", "none");
     labels.selectAll("text").data(labelled).join("text")
@@ -254,12 +284,14 @@
       svg.selectAll(".frame-btn").classed("is-on", function () { return this.dataset.mode === mode; });
     }
     const ctl = svg.append("foreignObject").attr("x", 12).attr("y", 12).attr("width", 240).attr("height", 40);
-    ctl.attr("width", 420);
+    ctl.attr("width", 560);
     ctl.append("xhtml:div").attr("class", "frame-ctl").html(pov
       ? `<button class="frame-btn" data-mode="near">Neighbourhood</button><button class="frame-btn" data-mode="world">World</button>` +
         `<span class="frame-gap"></span>` +
         (hasStances(pov) ? `<button class="frame-btn lens ${lens === "posture" ? "is-on" : ""}" data-lens="posture">Posture</button>` : "") +
-        (hasVotes(pov) ? `<button class="frame-btn lens ${lens === "votes" ? "is-on" : ""}" data-lens="votes">UN votes</button>` : "")
+        (hasRecog(pov) ? `<button class="frame-btn lens ${lens === "recognition" ? "is-on" : ""}" data-lens="recognition">Recognition</button>` : "") +
+        (hasVotes(pov) ? `<button class="frame-btn lens ${lens === "votes" ? "is-on" : ""}" data-lens="votes">UN votes</button>` : "") +
+        (hasClubs(pov) ? `<button class="frame-btn lens ${lens === "clubs" ? "is-on" : ""}" data-lens="clubs">Clubs</button>` : "")
       : `<button class="frame-btn is-on" data-mode="world">The world of today</button>`);
     ctl.selectAll("button[data-mode]").on("click", ev => { mapMode = ev.currentTarget.dataset.mode; frame(mapMode); });
     ctl.selectAll("button[data-lens]").on("click", ev => { lens = ev.currentTarget.dataset.lens; renderLegend(); drawMap(); });
@@ -268,7 +300,11 @@
     renderRelPanel();
     svg.selectAll(".frame-btn[data-mode]").classed("is-on", function () { return this.dataset.mode === mapMode; });
 
-    document.getElementById("map-note").innerHTML = pov && lens === "votes"
+    document.getElementById("map-note").innerHTML = pov && lens === "clubs"
+      ? `<b>${actors[pov].name}</b> in solid navy; every other country screened by how many of ${actors[pov].name}'s organisations it also belongs to (memberships from Wikidata, official member lists as source). Hover for the list.`
+      : pov && lens === "recognition"
+      ? `<b>${actors[pov].name}</b> in solid navy; green = recognises, vermilion = does not, dense vermilion = recognised and then withdrew. From Wikipedia's recognition tables, each row with its own citation where one exists.`
+      : pov && lens === "votes"
       ? `<b>${actors[pov].name}</b> in solid navy; every other member screened by how often it voted the same way in the General Assembly (${unga.span || ""}, recorded votes only, pairs with at least 20 common votes). Navy = votes together, vermilion = votes apart. Hover for the figure; click for the dossier.`
       : pov
       ? `<b>${actors[pov].name}</b> in solid navy. Dots are the posture, denser is stronger: green for allies, navy for partners, vermilion for the hostile side; hatched = claimed, not controlled. A band inside a border is the standing bond: navy = kin, vermilion = grievance. Hover for the reading; click a country or seat for its dossier; scroll to zoom. The relations are listed below the map.`
@@ -305,7 +341,28 @@
   function tipFor(id, fallbackName, ev) {
     const a = actors[id], name = a ? a.name : fallbackName;
     if (id === pov) return showTip(`<b>${esc(name)}</b><span class="k">Point of view</span>`, ev);
-    if (!pov) return showTip(`<b>${esc(name)}</b><span class="k">${a && a.card === "full" ? "Has a card - click to see the world as it sees it" : a && hasVotes(a.id) ? "Data only - click to see who votes with it at the UN" : a ? "Actor without data yet" : "Not an actor yet"}</span>`, ev);
+    if (!pov) return showTip(`<b>${esc(name)}</b><span class="k">${a && a.card === "full" ? "Has a card - click to see the world as it sees it" : a && (hasVotes(a.id) || hasClubs(a.id) || hasRecog(a.id)) ? "Data only - click to see the world from its seat" : a ? "Actor without data yet" : "Not an actor yet"}</span>`, ev);
+    if (lens === "clubs") {
+      el.innerHTML = `<h3>Organisations shared with ${actors[pov].name}</h3><div class="row" style="color:var(--ink-3)">Of ${[...clubs[pov]].filter(o => o !== "org-un").length} memberships besides the UN (NATO, EU, BRICS, OPEC...)</div>` +
+        ["c6", "c4", "c2", "c1"].map(c => `<div class="row"><span class="sw" style="background:${voteSwatch(c)} var(--land)"></span>${CLUB_LABEL[c]}</div>`).join("") +
+        `<div class="row"><span class="sw"></span>None in common</div>`;
+      return;
+    }
+    if (lens === "recognition") {
+      el.innerHTML = `<h3>Who recognises ${actors[pov].name}</h3>` +
+        ["yes", "withdrew", "no"].map(c => `<div class="row"><span class="sw" style="background:${voteSwatch(c)} var(--land)"></span>${REC_LABEL[c]}</div>`).join("") +
+        `<div class="row"><span class="sw"></span>Not a UN member / no data</div>`;
+      return;
+    }
+    if (lens === "clubs") {
+      const sh = sharedClubs(pov, id);
+      return showTip(`<b>${esc(name)}</b>${sh.length ? `${sh.length} in common: ${sh.map(o => esc(actors[o] ? actors[o].name : o)).join(", ")}` : "No organisation in common"}`, ev);
+    }
+    if (lens === "recognition") {
+      const r = (recog[pov] || {})[id];
+      const row = data.relations.find(x => x.to === pov && x.from === id && (x.type === "recognition" || x.type === "non_recognition"));
+      return showTip(`<b>${esc(name)}</b>${r ? REC_LABEL[r] : "No data"}${row ? `<br><span class="k">${esc(row.summary)}</span>` : ""}`, ev);
+    }
     if (lens === "votes") {
       const x = (unga.affinity[pov] || {})[id];
       return showTip(`<b>${esc(name)}</b>${x == null ? "Fewer than 20 common recorded votes" : `Voted with ${esc(actors[pov].name)} in ${Math.round(x * 100)}% of common recorded votes`}${stanceOf(id) ? `<br><span class="k">Posture: ${GRADE_LABEL[stanceOf(id).grade]}</span>` : ""}`, ev);

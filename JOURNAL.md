@@ -3,6 +3,21 @@
 Decision log, newest first. The path matters more than the destination: record why,
 not only what. Dead ends are entries too.
 
+## 2026-10-12 · Populating the map with the datasets
+
+Davide: "start populating the map with all this, then we'll see what's missing" - and
+"I like the UN votes one, keep it as it is". Two lenses added beside Posture and UN
+votes, the votes lens untouched: **Recognition** (for Kosovo, Palestine, Taiwan: green
+recognises, vermilion does not, dense vermilion withdrew) and **Clubs** (how many of the
+point of view's organisations, UN excluded, each country shares). Any country with any
+data is now a point of view from the home map.
+
+What the datasets cannot give, by design: `rival` and `adversary` (never derived),
+posture for countries outside an alliance, bonds. What they give poorly: Wikidata
+memberships are thin for some states (Serbia: UN, OSCE missing, Council of Europe not
+in the list); organisations have no seat coordinates; non-state actors do not exist
+yet; the dependency layer (trade, arms, energy) has no dataset yet.
+
 ## 2026-10-12 · World-scale test, second pass
 
 - 2025 votes in (downloaded from the browser pane with Davide's permission): 322
