@@ -21,6 +21,10 @@ GRADES = [
     "reluctant_partner", "neutral", "rival", "adversary",
 ]
 TRENDS = {"warming", "stable", "cooling"}
+BONDS = {"kin", "affinity", "none", "grievance"}
+FRIENDLY = {"ally", "reluctant_ally", "partner"}
+HOSTILE = {"adversary", "claimed_territory"}
+BINDING = {"treaty", "membership", "security_guarantee"}
 CONFIDENCE = {"A", "B", "C"}
 TYPES = {
     "objective": {"territorial_claim", "recognition_sought", "recognition_denied",
@@ -103,9 +107,12 @@ def main():
         w = f"actors/{fid}"
         if a.get("id") != fid:
             err(f"{w}: id '{a.get('id')}' does not match file name")
-        for k in ("name", "type", "seat", "regions", "card"):
+        for k in ("name", "type", "seat", "coords", "regions", "card"):
             if k not in a:
                 err(f"{w}: missing {k}")
+        c = a.get("coords")
+        if not (isinstance(c, list) and len(c) == 2 and -180 <= c[0] <= 180 and -90 <= c[1] <= 90):
+            err(f"{w}: coords must be [lon, lat]")
         if a.get("type") not in ACTOR_TYPES:
             err(f"{w}: unknown type '{a.get('type')}'")
         if a.get("card") not in ("full", "stub"):
@@ -140,6 +147,8 @@ def main():
                 err(f"{ww}: unknown grade '{st.get('grade')}'")
             if st.get("trend") not in TRENDS:
                 err(f"{ww}: trend must be warming, stable or cooling")
+            if st.get("bond") not in BONDS:
+                err(f"{ww}: bond must be kin, affinity, none or grievance")
             check_date(st.get("since"), f"{ww} since")
             check_date(st.get("last_verified"), f"{ww} last_verified")
             check_claim(st, ww)
@@ -175,6 +184,22 @@ def main():
     for fid in actors:
         if actors[fid].get("card") == "full" and fid not in stances:
             warn(f"{fid}: full card but no stances file")
+
+    # --- structural checks (ONTOLOGY.md: the grade follows the structural position)
+    grade = {(a, st["toward"]): st["grade"] for a, s in stances.items() for st in s.get("stances") or []}
+    allies = {}
+    for rel in rows:
+        if rel["layer"] == "alignment" and rel["type"] in BINDING:
+            allies.setdefault(rel["from"], set()).add(rel["to"])
+            allies.setdefault(rel["to"], set()).add(rel["from"])
+    for (a, b), g in grade.items():
+        if g in FRIENDLY:
+            for c in allies.get(b, ()):
+                if grade.get((a, c)) in HOSTILE:
+                    warn(f"{a} grades {b} '{g}' but {b} is bound by treaty to {c}, which {a} grades "
+                         f"'{grade[(a, c)]}' - partner of an adversary's ally; justify in the note")
+            if grade.get((b, a)) in HOSTILE:
+                warn(f"{a} grades {b} '{g}' while {b} grades {a} '{grade[(b, a)]}' - asymmetric pair")
 
     for m in warnings:
         print("WARN ", m)

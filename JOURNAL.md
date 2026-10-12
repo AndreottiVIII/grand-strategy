@@ -3,6 +3,44 @@
 Decision log, newest first. The path matters more than the destination: record why,
 not only what. Dead ends are entries too.
 
+## 2026-10-12 · First review: seven objections, two model changes
+
+Davide saw the demo and listed seven things. Two of them were about the model, not
+the screen, and those are the ones that count.
+
+**Model**
+
+1. *"How can Russia and the US both be 'partner'? Serbia's tie with Russia is cultural;
+   if the model doesn't see it, change the model."* It did not see it: one axis
+   (posture today). Added `bond` to stances: kin / affinity / none / grievance. Russia
+   is now partner + kin + cooling; the US partner + grievance + warming. Bonds are
+   evidenced like grades (polls on the 1999 bombing, the Montenegro census).
+2. *"Albania partner? Albania and Kosovo are the same thing. Understand what 'partner'
+   is and who is the partner of an adversary."* The rule "a source must use the word"
+   let Vučić's Open Balkan rhetoric set the grade. New rule in ONTOLOGY.md: the grade
+   follows the structural position, rhetoric goes in the note; `tools/build.py` now
+   warns on "partner of an adversary's ally" and on asymmetric pairs. Albania
+   regraded `rival` (motherland of Kosovo; signatory of the 2025 Tirana defence
+   declaration Belgrade calls its "greatest threat"), cooperation noted.
+
+**Screen**
+
+3. Map "anonymous": rebuilt as a 1970s situation map - paper grain, ink coastlines,
+   dashed graticule, hatching for claimed territory, dot and cross screens for bond,
+   condensed capitals, a stamp-like legend. Screens, arrowheads and type stay at
+   screen size under zoom; small countries get their label only when wide enough.
+4. Colour scale: rivals and adversaries in red, allies in blue, partners blue-grey,
+   neutral paper, own territory solid ink.
+5. Actor list removed from the sidebar.
+6. Graph dropped. Relations are arrows on the map from the point-of-view seat to the
+   counterpart, one style per layer, with toggles; several rows share an arrow and
+   list in the tooltip. A circular board can come later at scale.
+7. Links out of the card: footnote numbers in the text, sources as endnotes with hover.
+
+**Still open.** Labels for Kosovo and Montenegro only appear on zoom; a leader-line
+scheme would fix it. `claims` on contested counts render as tier-4 footnotes, which
+is a hack. The structural warnings cannot fire until counterparts have alignment rows.
+
 ## 2026-10-12 · Serbia pilot and first demo
 
 Davide: "I like it, but I want to *see* it. Let's do the demo all the way, then reason

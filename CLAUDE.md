@@ -35,6 +35,11 @@ Pilot demo built on 2026-10-12: one full card (Serbia) with 18 stances and 43 re
 - **Evidence**: every relation carries a source, a date, `since`, `last_verified` and a
   confidence grade. No unsourced lines, even for the obvious. Stance grades on the map
   ("reluctant ally") are never our judgement: they need a source using that reading.
+  But the grade follows the structural position, never diplomatic rhetoric (the
+  Albania lesson: motherland of Kosovo cannot be "partner" because Vučić says so).
+- **Stances have two axes**: posture today (`grade`, with `trend`) and the standing
+  `bond` (kin / affinity / none / grievance). Russia and the US are both "partner"
+  and opposite cases; the bond is what tells them apart.
 - **No dispute objects**: disputes exist because of grand strategies, so they are
   described through the actors' objectives and stances, never as files of their own.
 - **Time**: a snapshot of today. History emerges from git; do not model the past.
@@ -74,8 +79,10 @@ Pilot demo built on 2026-10-12: one full card (Serbia) with 18 stances and 43 re
   write on any error (missing source, unknown id, grade or type outside the vocabulary).
 - `docs/`: the static site served by GitHub Pages (`index.html`, `app.js`, `style.css`,
   `world.geojson` from Natural Earth 110m with Kosovo as `XKX`, and the compiled
-  `data.json`). D3 7.9 from cdnjs is the only dependency. Three views: map from the
-  point-of-view actor, relation graph, dossier.
+  `data.json`). D3 7.9 from cdnjs is the only dependency. Two views: the situation
+  map from the point-of-view actor (posture = colour, bond = screen, relations =
+  arrows by layer) and the dossier with footnoted sources. The look is a 1970s
+  situation map (paper, ink, screens, condensed capitals): keep it that way.
 
 ## Commands
 

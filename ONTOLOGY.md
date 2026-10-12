@@ -21,6 +21,7 @@ id: SRB                     # ISO 3166-1 alpha-3 for states (XKX Kosovo); org-na
 name: Serbia
 type: state                 # state | org | armed-non-state | state-instrument | sub-state
 seat: Belgrade
+coords: [20.46, 44.82]      # seat as [lon, lat]; where the map draws arrows from and to
 regions: [western-balkans]  # an actor can be in several (Turkey: balkans, middle-east, caucasus)
 card: full                  # full = has a grand-strategy card; stub = exists only as a node others relate to
 last_verified: 2026-10-12   # full cards only
@@ -55,6 +56,7 @@ stances:
   - toward: XKX
     grade: claimed_territory
     trend: stable             # warming | stable | cooling - the direction, since two "partners" can be moving opposite ways
+    bond: grievance           # kin | affinity | none | grievance - the structure under the posture (see below)
     since: 2008-02-17
     last_verified: 2026-10-12
     confidence: A
@@ -87,6 +89,29 @@ Actors not listed default to `neutral` on the map, drawn in grey.
 that uses that reading (an analysis calling the relationship "reluctant", a treaty for
 "ally", a government statement for "adversary"). If no source says it, the stance is
 not recorded and the gap goes in JOURNAL.md. This is slower; it was chosen knowingly.
+
+**But the grade follows the structural position, not the rhetoric.** A government
+calling a neighbour "a reliable partner" is a tier-1 source for the statement, not for
+the grade. If B is the kin or treaty ally of someone A treats as claimed territory or
+adversary, A's grade of B cannot be better than `rival` unless a source explains why
+(the Serbia-Albania mistake of draft 2: Tirana is Pristina's motherland and signed the
+2025 defence pact Belgrade calls its "greatest threat", yet Open Balkan rhetoric had
+it graded "partner"). The build script warns on "partner of an adversary's ally" and on
+asymmetric pairs (A: partner, B: adversary); each warning needs an answer in the note.
+
+**Bond: the structure under the posture.** Two actors can both be "partner" today and
+mean opposite things. `bond` records the standing tie, which changes over decades:
+
+| bond | meaning | Serbia examples |
+|---|---|---|
+| `kin` | shared identity - faith, language, history | Russia, Montenegro, Republika Srpska |
+| `affinity` | sympathy without kinship | Hungary, China |
+| `none` | pure interest, nothing underneath | UAE, Azerbaijan |
+| `grievance` | an open historical wound | United States and NATO (1999), Croatia, Kosovo |
+
+Posture and bond are independent: Russia is partner + kin (cooling), the United
+States partner + grievance (warming), Montenegro rival + kin. On the map the posture
+is the colour and the bond a screen over it (dots for kin, crosses for grievance).
 
 ## Relation
 
@@ -168,5 +193,15 @@ dependency rows carry a value and a unit. The site never reads YAML directly.
    the statement itself.
 6. **Non-events are signals, not rows.** Vučić skipping the 2026 Moscow parade matters,
    but there is no row type for an absence. It goes in the card's `reading`.
-7. **Stubs.** An actor can exist as a stub (id, name, type, seat, regions) so that
-   others can relate to it before it has a card. The site shows stubs greyed.
+7. **Stubs.** An actor can exist as a stub (id, name, type, seat, coords, regions) so
+   that others can relate to it before it has a card. The site shows stubs greyed.
+
+## Lessons from the first review (Davide, 2026-10-12, same day)
+
+8. **One axis is not enough.** "Partner" hid that Russia and the United States are
+   opposite cases. Hence `bond`.
+9. **Rhetoric is not structure.** Hence the Albania rule above and the build warnings.
+10. **The graph drawn in a void says nothing.** Relations are drawn on the map as
+    arrows between seats, by layer, with toggles. A circular board may come later at scale.
+11. **The map must have a character**: a 1970s situation map, paper and ink, screens
+    and hatching, condensed capitals. Not a dashboard.
