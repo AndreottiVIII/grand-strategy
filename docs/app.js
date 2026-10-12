@@ -448,7 +448,7 @@
     el.dataset.done = "1";
     el.innerHTML = `
       <h2>Luttwak, the lamp</h2>
-      <figure class="portrait"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Edward_Luttwak_in_2026.jpg/480px-Edward_Luttwak_in_2026.jpg" alt="Edward N. Luttwak in 2026"><figcaption>Edward N. Luttwak, 2026. Photo Elekes Andor, CC BY 4.0, Wikimedia Commons.</figcaption></figure>
+      <figure class="portrait"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Edward_Luttwak_in_2026.jpg/500px-Edward_Luttwak_in_2026.jpg" alt="Edward N. Luttwak in 2026"><figcaption>Edward N. Luttwak, 2026. Photo Elekes Andor, CC BY 4.0, Wikimedia Commons.</figcaption></figure>
       <p class="honour">This site is built in honour of Edward N. Luttwak. It is not his work and he has not seen it; it is an attempt to look at the whole world, every state at once, with the lamp he built.</p>
       <p class="lede">This atlas reads the world through Edward N. Luttwak's idea of grand strategy. Not because he is always right, but because his grid forces the questions that a map of flags leaves out: what does each actor want, with what, against what, and where do its own moves turn against it.</p>
       <h3>The paradoxical logic</h3>

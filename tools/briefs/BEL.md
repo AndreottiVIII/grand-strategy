@@ -13,7 +13,7 @@ You are writing the grand-strategy card of **Belgium** (actor id `BEL`, region `
 - Wikipedia "Foreign relations of Belgium" and "Belgium" as the index: take facts WITH the citation under them and cite that, never Wikipedia itself. Use the MediaWiki API (`https://en.wikipedia.org/w/api.php?action=parse&page=...&prop=wikitext&format=json`) or the plain page text, never full HTML.
 - The government's foreign ministry site and official statements (tier 1); the national statistics office, central bank, World Bank, IMF, SIPRI for numbers (tier 1).
 - Reuters, AP, Al Jazeera, Euronews, BBC and the region's quality press (tier 3); Crisis Group, Carnegie, ECFR, Chatham House, CSIS, IISS, ISPI, OSW (tier 2). Sources in other languages are welcome with `title` in English and `title_original`.
-- Cover 2022-2026 with emphasis on 2025-2026: the actor's main disputes and claims, its patrons and clients, alliances and their frictions, sanctions, the Ukraine and Gaza positions, the dependencies that bind it (energy, trade, arms, debt, remittances, foreign troops), the dated events that defined it. Its neighbours in the queue: FRA, ITA, GBR, ESP, NLD, GRC, CYP, PRT, IRL, LUX, MLT, AND.
+- Cover 2022-2026 with emphasis on 2025-2026: the actor's main disputes and claims, its patrons and clients, alliances and their frictions, sanctions, the Ukraine and Gaza positions, the dependencies that bind it (energy, trade, arms, debt, remittances, foreign troops), the dated events that defined it. Its neighbours in the queue: ITA, ESP, NLD, GRC, CYP, PRT, IRL, LUX, MLT, AND, MCO, SMR.
 
 ## Write (protagonist tier, `tier: protagonist`)
 English, YAML, every claim with sources (url, title, publisher, date, tier); confidence A/B/C; dates YYYY-MM-DD / YYYY-MM / YYYY.
