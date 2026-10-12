@@ -22,6 +22,8 @@ name: Serbia
 type: state                 # state | org | armed-non-state | state-instrument | sub-state
 seat: Belgrade
 coords: [20.46, 44.82]      # seat as [lon, lat]; where the map draws arrows from and to
+iso2: rs                    # flag via flagcdn.com; non-states use `flag: flags/<file>.svg` in docs/flags instead
+wikipedia: https://en.wikipedia.org/wiki/Serbia   # every actor links to English Wikipedia
 regions: [western-balkans]  # an actor can be in several (Turkey: balkans, middle-east, caucasus)
 card: full                  # full = has a grand-strategy card; stub = exists only as a node others relate to
 last_verified: 2026-10-12   # full cards only
