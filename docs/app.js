@@ -3,7 +3,7 @@
    screen, relations as arrows by layer) and the dossier with footnoted sources. */
 (async function () {
   const [data, world] = await Promise.all([
-    fetch("data.json").then(r => r.json()),
+    fetch("data.json" + (document.querySelector('script[src^="app.js"]').src.split("?")[1] ? "?" + document.querySelector('script[src^="app.js"]').src.split("?")[1] : "")).then(r => r.json()),
     fetch("world.geojson").then(r => r.json()),
   ]);
 

@@ -218,6 +218,11 @@ def main():
         "relations": rows,
     }
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1, default=str), encoding="utf-8")
+    # cache-busting: rewrite ?v= stamps in docs/index.html so GitHub Pages visitors get the new files
+    idx = ROOT / "docs" / "index.html"
+    stamp = __import__("datetime").datetime.now().strftime("%Y%m%d%H%M")
+    html = re.sub(r'((?:style\.css|app\.js))(\?v=\d+)?', lambda m: f"{m.group(1)}?v={stamp}", idx.read_text(encoding="utf-8"))
+    idx.write_text(html, encoding="utf-8")
     full = sum(1 for a in actors.values() if a.get("card") == "full")
     print(f"OK  {len(actors)} actors ({full} full), "
           f"{sum(len(v) for v in out['stances'].values())} stances, {len(rows)} relations, "
