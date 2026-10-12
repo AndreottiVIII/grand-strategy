@@ -1,5 +1,6 @@
 id: CHE
 name: Switzerland
+short: Switzerland
 type: state
 iso2: ch
 wikipedia: https://en.wikipedia.org/wiki/Switzerland
@@ -7,8 +8,81 @@ coords:
 - 7.45
 - 46.95
 seat: Bern
-regions:
-- world
-card: stub
+regions: [central-north-europe]
+card: full
 tier: minor
+last_verified: 2026-10-12
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep access to the EU single market (about 60% of Swiss trade) without joining the EU: the Bilaterals III package (18 agreements, 94 EU legal acts, signed 2 Mar 2026) is the instrument, and it still has to pass parliament and, after that, a referendum that the SVP is organising against."
+      confidence: B
+      sources:
+        - {url: "https://www.bluewin.ch/en/news/after-a-lengthy-debate-the-council-of-states-clearly-endorses-the-eu-treaty-package-li.3616988", title: "After a lengthy debate, the Council of States clearly endorses the EU treaty package", publisher: "blue News", date: 2026-09-28, tier: 3}
+        - {url: "https://www.europa.eda.admin.ch/dam/en/sd-web/kOBCs4U3rxx7/20260209%20Folien%20Wirtschaftsbeziehungen%202026%20EN.pdf", title: "Economic relations Switzerland-EU 2026 (slides)", publisher: "Federal Department of Foreign Affairs (EDA)", date: 2026-02-09, tier: 1}
+        - {url: "https://www.bluewin.ch/en/news/switzerland/supporters-of-bilateral-agreements-iii-are-currently-in-the-lead-3282769.html", title: "Supporters of Bilateral Agreements III are currently in the lead", publisher: "blue News", date: 2026-06-16, tier: 3}
+    - rank: 2
+      text: "Remain a neutral go-between and host (Geneva, protecting-power mandates, good offices on Ukraine and Iran) while aligning with EU sanctions on Russia. Voters confirmed this line on 27 Sep 2026, rejecting the neutrality initiative by about 70%."
+      confidence: B
+      sources:
+        - {url: "https://aljazeera.com/news/2026/9/27/swiss-voters-set-to-reject-tighter-neutrality-rules-in-referendum", title: "Swiss voters reject tighter neutrality rules in referendum", publisher: "Al Jazeera", date: 2026-09-27, tier: 3}
+        - {url: "https://www.admin.ch/en/neutrality-initiative", title: "Neutrality initiative", publisher: "Swiss Federal Administration", date: 2026, tier: 1}
+        - {url: "https://www.al-monitor.com/originals/2026/02/swiss-say-oman-host-us-iran-talks-geneva-next-week", title: "Swiss say Oman to host US-Iran talks in Geneva next week", publisher: "Al-Monitor", date: 2026-02, tier: 3}
+    - rank: 3
+      text: "Rebuild a credible defence without an alliance: more money for the army (the defence minister, Martin Pfister, argues for about CHF 31bn of extra needs from 2028), and Western kit (F-35, Patriot) bought outside any treaty guarantee."
+      confidence: B
+      sources:
+        - {url: "https://www.blick.ch/politik/verteidigungsminister-informiert-mit-welchem-geld-will-pfister-die-armee-aufruesten-id21640269.html", title: "Defence minister explains how he wants to pay to rearm the army", title_original: "Verteidigungsminister informiert: Mit welchem Geld will Pfister die Armee aufrüsten?", lang: de, publisher: "Blick", date: 2026, tier: 3}
+        - {url: "https://www.defensenews.com/global/europe/2026/03/06/patriot-production-delays-prompt-switzerland-to-seek-european-air-defense-fallback", title: "Patriot production delays prompt Switzerland to seek European air defense fallback", publisher: "Defense News", date: 2026-03-06, tier: 3}
+        - {url: "https://www.bluewin.ch/en/news/switzerland/the-council-of-states-allocates-34-billion-swiss-francs-to-the-swiss-armed-forces-li.3283212", title: "The Council of States allocates 3.4 billion Swiss francs to the Swiss armed forces", publisher: "blue News", date: 2026-06, tier: 3}
+  means:
+    - domain: diplomatic
+      text: "Good offices and hosting: Geneva as venue for US-Iran and US-Ukraine-Russia contacts in 2026, protecting-power mandates, the Bürgenstock summit of June 2024, and the OSCE chairmanship in 2026."
+      confidence: B
+      sources:
+        - {url: "https://www.eda.admin.ch/en/switzerland-is-committed-to-peace-in-ukraine", title: "Switzerland is committed to peace in Ukraine", publisher: "Federal Department of Foreign Affairs (EDA)", date: 2026, tier: 1}
+        - {url: "https://www.bluewin.ch/en/news/cassis-switzerland-wants-to-revive-peace-talks-li.3597835", title: "Cassis: Switzerland wants to revive peace talks", publisher: "blue News", date: 2026, tier: 3}
+        - {url: "https://newsletters.genevasolutions.news/daily-brief/switzerland-back-on-peace-map", title: "Switzerland back on the peace map", publisher: "Geneva Solutions", date: 2026, tier: 3}
+    - domain: economic
+      text: "Market-access diplomacy by treaty: Bilaterals III with the EU, a 15% tariff framework with the US backed by a USD 200bn investment pledge to 2028, and an upgraded free-trade agreement with China (concluded 20 Aug 2026, 99.8% of Swiss exports duty-free)."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/economy/2025/11/14/us-to-slash-tariffs-on-switzerland-to-15-from-crippling-39", title: "US to slash tariffs on Switzerland to 15% from crippling 39%", publisher: "Al Jazeera", date: 2025-11-14, tier: 3}
+        - {url: "https://www.seco.admin.ch/en/newnsb/aGSlWc_NOHlHRbL77edlo", title: "China and Switzerland conclude negotiations to optimise the free trade agreement", publisher: "State Secretariat for Economic Affairs (SECO)", date: 2026-08-20, tier: 1}
+    - domain: military
+      text: "Compulsory male service, a militia army of about CHF 7.5bn (about 1.0% of GDP in 2025) and a planned purchase of about 30 F-35A; cooperation with NATO in peacetime stays legal after the neutrality vote."
+      confidence: B
+      sources:
+        - {url: "https://www.letemps.ch/suisse/la-suisse-pourrait-reduire-sa-commande-de-f-35-a-30-avions-pour-respecter-le-budget", title: "Switzerland could cut its F-35 order to 30 aircraft to respect the budget", title_original: "La Suisse pourrait réduire sa commande de F-35 à 30 avions pour respecter le budget", lang: fr, publisher: "Le Temps", date: 2026-01, tier: 3}
+        - {url: "https://en.wikipedia.org/wiki/Swiss_Armed_Forces", title: "Swiss Armed Forces (index; budget and conscription)", publisher: "Wikipedia (index)", date: 2026-10-12, tier: 4}
+  constraints:
+    - text: "Direct democracy: every major turn (EU package, neutrality, army funding by VAT) can be stopped at the ballot. The SVP population-cap initiative failed in June 2026 and the neutrality initiative failed on 27 Sep 2026, but the SVP now turns to the EU package, with a final parliamentary decision not before 2027."
+      confidence: B
+      sources:
+        - {url: "https://www.bluewin.ch/en/news/switzerland/supporters-of-bilateral-agreements-iii-are-currently-in-the-lead-3282769.html", title: "Supporters of Bilateral Agreements III are currently in the lead", publisher: "blue News", date: 2026-06-16, tier: 3}
+        - {url: "https://aljazeera.com/news/2026/9/27/swiss-voters-set-to-reject-tighter-neutrality-rules-in-referendum", title: "Swiss voters reject tighter neutrality rules in referendum", publisher: "Al Jazeera", date: 2026-09-27, tier: 3}
+    - text: "Dependence on the US and the EU for markets and kit: US tariffs fell on Switzerland as a whole (39% from 1 Aug 2025, cut to a 15% framework in Nov 2025, then upended by the Supreme Court's IEEPA ruling of 20 Feb 2026), the Patriot delivery is delayed four to five years and the F-35 order is shrinking."
+      confidence: B
+      sources:
+        - {url: "https://www.s-ge.com/export/en/article/aktuell/2026-e-usa-ct10-importzoelle-supreme-court", title: "US import duties after the Supreme Court ruling", publisher: "Switzerland Global Enterprise", date: 2026, tier: 1}
+        - {url: "https://news.bloomberglaw.com/international-trade/switzerland-pledges-further-steps-as-us-trade-talks-continue", title: "Switzerland Pledges Further Steps as US Trade Talks Continue", publisher: "Bloomberg", date: 2026-06-30, tier: 3}
+        - {url: "https://breakingdefense.com/2026/04/switzerland-considers-complete-termination-of-us-patriot-order-vows-to-extend-payment-freeze/", title: "Switzerland considers complete termination of US Patriot order, vows to extend payment freeze", publisher: "Breaking Defense", date: 2026-04, tier: 3}
+    - text: "The financial centre is a national-security exposure after Credit Suisse: the upper house on 23 Sep 2026 backed a rule forcing UBS to back its foreign subsidiaries with 90% domestic CET1 capital (about USD 16bn extra, per the central bank), against UBS's lobbying for less; a final decision is not expected before the end of 2026."
+      confidence: B
+      sources:
+        - {url: "https://www.ubs.com/global/en/investor-relations/press-releases/overview-news-display-ndp/en-20260923-banking-regulation.html", title: "UBS statement on decision by Swiss Parliament's upper house on banking regulation", publisher: "UBS (company statement)", date: 2026-09-23, tier: 1}
+        - {url: "https://www.swissinfo.ch/eng/snb-welcomes-90%25-ubs-capital-plan-adopted-by-upper-house/92112444", title: "SNB welcomes 90% UBS capital plan adopted by upper house", publisher: "swissinfo.ch", date: 2026-09, tier: 3}
+  paradoxes:
+    - text: "Neutrality is meant to protect Swiss autonomy, but a neutral army armed with American systems makes Bern hostage to Washington's production and politics: the Patriot payment freeze and the F-35 cut are the price, and in March 2026 the Federal Council had to cite neutrality to stop licensing arms exports to the very supplier it depends on."
+      confidence: B
+      sources:
+        - {url: "https://www.bluewin.ch/en/news/switzerland/federal-council-restricts-arms-exports-to-the-usa-li.3153182", title: "Federal Council restricts arms exports to the USA", publisher: "blue News", date: 2026-03-20, tier: 3}
+        - {url: "https://www.defensenews.com/global/europe/2026/03/06/patriot-production-delays-prompt-switzerland-to-seek-european-air-defense-fallback", title: "Patriot production delays prompt Switzerland to seek European air defense fallback", publisher: "Defense News", date: 2026-03-06, tier: 3}
+    - text: "The bilateral path exists to avoid EU membership, yet Bilaterals III pulls Switzerland into dynamic adoption of EU law, the very loss of sovereignty the SVP campaigns against: a sovereignty-saving device that supplies the opposition's best argument."
+      confidence: B
+      sources:
+        - {url: "https://www.bluewin.ch/en/news/after-a-lengthy-debate-the-council-of-states-clearly-endorses-the-eu-treaty-package-li.3616988", title: "After a lengthy debate, the Council of States clearly endorses the EU treaty package", publisher: "blue News", date: 2026-09-28, tier: 3}
+  reading: |
+    Switzerland holds its position by being useful to everyone: venue, protecting power and financial centre to the West, tariff-deal partner to Washington, free-trade partner to Beijing. The 2026 votes (population cap and neutrality both rejected, EU package advancing) show a public that wants to keep both its market access and its neutral label, which is why Bern aligns with EU sanctions while insisting it is not aligned. The unresolved tests are the referendum on the EU package, the US tariff regime and the Patriot/F-35 dependency.

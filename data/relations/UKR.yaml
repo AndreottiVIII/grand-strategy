@@ -1,438 +1,810 @@
 from: UKR
 relations:
-  # ---------- objective ----------
-  - to: sub-crimea
-    layer: objective
-    type: territorial_claim
-    summary: "Ukraine claims Crimea, occupied and annexed by Russia in 2014, as its territory; the General Assembly rejected the annexations by 143-5-35 on 12 Oct 2022 and DeepState counts the peninsula as 100% occupied at the start of 2026."
-    since: 2014-03
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://digitallibrary.un.org/record/3990400", title: "A/RES/ES-11/4 Territorial integrity of Ukraine - voting record", publisher: "United Nations", date: 2022-10-12, tier: 1}
-      - {url: "https://euromaidanpress.com/?p=384242", title: "Russia occupied 0.72% of Ukraine's territory in 2025, DeepState reports", publisher: "Euromaidan Press", date: 2026-01-02, tier: 3}
-  - to: sub-occupied-ukraine
-    layer: objective
-    type: territorial_claim
-    summary: "Ukraine claims Luhansk, Donetsk, Zaporizhzhia and Kherson, proclaimed annexed by Russia on 30 Sep 2022; DeepState puts the occupied shares at 99.6%, 78%, 75% and 72% at the start of 2026. The Kremlin demands that Ukraine also withdraw from the part of Donetsk it holds."
-    since: 2022-09-30
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://digitallibrary.un.org/record/3990400", title: "A/RES/ES-11/4 Territorial integrity of Ukraine - voting record", publisher: "United Nations", date: 2022-10-12, tier: 1}
-      - {url: "https://euromaidanpress.com/?p=384242", title: "Russia occupied 0.72% of Ukraine's territory in 2025, DeepState reports", publisher: "Euromaidan Press", date: 2026-01-02, tier: 3}
-      - {url: "https://rubryka.com/en/2026/01/23/vyvedennya-ukrayinskyh-vijsk/", title: "Russia demands Ukrainian troop withdrawal from Donbas ahead of Abu Dhabi negotiations", publisher: "Rubryka", date: 2026-01-23, tier: 3}
-  - to: RUS
-    layer: objective
-    type: recognition_denied
-    summary: "Kyiv refuses to recognise the annexations or to withdraw from the Donbas it still holds; the Kremlin says trilateral talks are pointless until it does. The 24 Feb 2026 General Assembly text (107-12-51) reaffirms territorial integrity and calls for an immediate, full and unconditional ceasefire."
-    since: 2022-09-30
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.ukrinform.net/rubric-polytics/4120909-kremlin-suspends-trilateral-peace-talks-until-afu-withdraws-from-donbas.html", title: "Kremlin suspends trilateral peace talks until AFU withdraws from Donbas", publisher: "Ukrinform", date: 2026, tier: 3}
-      - {url: "https://digitallibrary.un.org/record/4103179", title: "A/RES/ES-11/10 Support for lasting peace in Ukraine - voting record", publisher: "United Nations", date: 2026-02-24, tier: 1}
-      - {url: "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-february-19-2026", title: "Russian Offensive Campaign Assessment, February 19, 2026", publisher: "Institute for the Study of War / Critical Threats", date: 2026-02-19, tier: 2}
-  - to: org-eu
-    layer: objective
-    type: membership_goal
-    summary: "Ukraine seeks full EU membership; the fundamentals cluster opened on 15 Jun 2026 and external relations on 14 Jul 2026, clusters 2 and 3 were released by Hungary on 7 Oct 2026 pending a minority-rights law, and Brussels aims to open all clusters by year-end while rejecting a fast-track."
-    since: 2022-02-28
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.euronews.com/2026/10/07/hungary-set-to-lift-veto-on-ukraines-eu-membership-talks", title: "Hungary set to lift veto on Ukraine's EU membership talks", publisher: "Euronews", date: 2026-10-07, tier: 3}
-      - {url: "https://www.eurointegration.com.ua/eng/news/2026/09/29/7246508/", title: "EU to try to overcome Hungary's veto on negotiating clusters 2 and 3 for Ukraine on Tuesday", publisher: "European Pravda", date: 2026-09-29, tier: 3}
-  - to: org-nato
-    layer: objective
-    type: membership_goal
-    summary: "NATO membership remains Ukraine's declared aim; the 2024 Washington declaration calls the path irreversible but extends no invitation 'until Allies agree and conditions are met'."
-    since: 2008-04-03
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.nato.int/cps/en/natohq/official_texts_227678.htm", title: "Washington Summit Declaration, para. 16", publisher: "NATO", date: 2024-07-10, tier: 1}
-      - {url: "https://euromaidanpress.com/2026/07/03/ukraine-wants-the-ankara-summit-to-name-it-a-nato-security-contributor-not-just-an-aid-recipient/", title: "Ukraine wants the Ankara summit to name it a NATO security contributor - not just an aid recipient", publisher: "Euromaidan Press", date: 2026-07-03, tier: 3}
-  - to: USA
-    layer: objective
-    type: influence_goal
-    summary: "Kyiv works to keep Washington engaged and to turn its interest in minerals, drones and a Patriot production licence into a US-backed guarantee; its delegation (Budanov, Umerov, Kyslytsia, Arakhamia) met Witkoff and Kushner in Miami on 9-10 Oct 2026 with European representatives present."
-    since: 2025-02
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://unn.ua/en/news/budanov-umerov-and-arakhamia-arrived-in-the-us-whats-on-the-agenda", title: "Budanov, Umerov and Arakhamia arrived in the US: what is on the agenda", publisher: "UNN", date: 2026-10-09, tier: 3}
-      - {url: "https://tass.com/world/2199585", title: "Witkoff and Kushner to meet Ukrainian delegation in Miami (Reuters report)", publisher: "TASS", date: 2026-10, tier: 3}
-      - {url: "https://www.intellinews.com/trump-offers-ukraine-patriot-production-licence-in-major-policy-about-face-453534/", title: "Trump offers Ukraine Patriot production licence in major policy about-face", publisher: "bne IntelliNews", date: 2026-07, tier: 3}
-
-  # ---------- alignment ----------
-  - to: org-eu
-    layer: alignment
-    type: candidate
-    summary: "EU candidate country since the European Council of 23 June 2022, which granted candidate status to Ukraine and Moldova."
-    since: 2022-06-23
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.eeas.europa.eu/delegations/moldova/european-council-conclusions-membership-applications-ukraine-republic-moldova-and-georgia-23-june_en", title: "European Council conclusions on the membership applications of Ukraine, Moldova and Georgia", publisher: "European Council / EEAS", date: 2022-06-23, tier: 1}
-      - {url: "https://euneighbourseast.eu/news/latest-news/european-council-ukraine-and-moldova-granted-eu-candidate-status/", title: "European Council: Ukraine and Moldova granted EU candidate status", publisher: "EU NeighboursEast", date: 2022-06-23, tier: 1}
-  - to: GBR
-    layer: alignment
-    type: security_guarantee
-    summary: "The Paris Declaration of 6 Jan 2026 and the UK-France declaration commit London to join a multinational force in Ukraine after the fighting; the guarantee takes effect only once a ceasefire enters into force."
-    since: 2026-01-06
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://augengeradeaus.net/wp-content/uploads/2026/01/20260106_Paris_Declaration_Ukraine.pdf", title: "Paris Declaration - Robust security guarantees for a solid and lasting peace in Ukraine (text)", publisher: "Coalition of the Willing leaders (text hosted by Augen geradeaus)", date: 2026-01-06, tier: 1}
-      - {url: "https://www.foxnews.com/world/uk-france-strike-new-ukraine-security-pact-us-takes-lead-ceasefire-enforcement.print", title: "UK and France strike new Ukraine security pact; US takes lead on ceasefire enforcement", publisher: "Fox News", date: 2026-01-06, tier: 3}
-  - to: FRA
-    layer: alignment
-    type: security_guarantee
-    summary: "Host and co-leader of the Paris Declaration of 6 Jan 2026; France pledged, with the UK, to contribute to the post-ceasefire multinational force. Conditional on a ceasefire Moscow has not accepted."
-    since: 2026-01-06
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://augengeradeaus.net/wp-content/uploads/2026/01/20260106_Paris_Declaration_Ukraine.pdf", title: "Paris Declaration - Robust security guarantees for a solid and lasting peace in Ukraine (text)", publisher: "Coalition of the Willing leaders (text hosted by Augen geradeaus)", date: 2026-01-06, tier: 1}
-      - {url: "https://razomua.media/en/news/politika/koalitsiya-pohodyla-harantiyi-dlya-ukrayiny-bez-pidpysu-rosiyi-i-bez-chitkoyi-daty-nabrannya-chynnosti", title: "Coalition agreed on guarantees for Ukraine - without Russia's signature and without a clear entry-into-force date", publisher: "Razom", date: 2026-01, tier: 3}
-  - to: USA
-    layer: alignment
-    type: security_guarantee
-    summary: "For the first time the US backed the coalition's guarantees in Paris (6 Jan 2026): it would lead a ceasefire monitoring and verification mechanism (drones, sensors, satellites, no US troops) but gave no Article 5-style commitment. The mechanism is conditional on a ceasefire."
-    since: 2026-01-06
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://euromaidanpress.com/2026/01/06/paris-declaration-signed/", title: "Paris Declaration: Ukraine, US, allies sign most comprehensive security deal yet", publisher: "Euromaidan Press", date: 2026-01-06, tier: 3}
-      - {url: "https://www.eurointegration.com.ua/eng/news/2026/01/6/7228498/", title: "Media reveal security guarantees of Coalition of the Willing prepared for Ukraine", publisher: "European Pravda", date: 2026-01-06, tier: 3}
-  - to: USA
-    layer: alignment
-    type: treaty
-    summary: "The April 2025 US-Ukraine minerals agreement created the Reconstruction Investment Fund (USD 150m initial capital, USD 75m from each side), which opened its project portal in 2026 and received over 60 proposals in its first month."
-    since: 2025-04-30
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.kmu.gov.ua/en/news/amerykansko-ukrainskyi-investytsiinyi-fond-vidbudovy-za-misiats-otrymav-ponad-60-proektnykh-propozytsii-premier-ministr", title: "U.S.-Ukraine Reconstruction Investment Fund receives over 60 project proposals in its first month", publisher: "Cabinet of Ministers of Ukraine", date: 2026-01, tier: 1}
-      - {url: "https://www.ukrainianworldcongress.org/ukraine-and-us-sign-long-awaited-minerals-deal/", title: "Ukraine and US sign long-awaited minerals deal", publisher: "Ukrainian World Congress", date: 2025-04, tier: 3}
-  - to: TUR
-    layer: alignment
-    type: treaty
-    summary: "Free-trade agreement signed in Kyiv on 3 Feb 2022 during Erdogan's visit, after negotiations dragging since 2007; in Sep 2026 the two presidents set a target of USD 10bn of trade, from about USD 1bn."
-    since: 2022-02-03
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://kyivindependent.com/erdogan-visits-kyiv-signs-long-anticipated-free-trade-agreement/", title: "Erdogan visits Kyiv, signs long-anticipated free trade agreement", publisher: "Kyiv Independent", date: 2022-02-03, tier: 3}
-      - {url: "https://aa.com.tr/en/eurasia/zelenskyy-says-ukraine-very-open-to-turkiye-hosting-trilateral-peace-talks/4067073", title: "Zelenskyy says Ukraine 'very open' to Turkiye hosting trilateral peace talks", publisher: "Anadolu Agency", date: 2026-09, tier: 3}
-  - to: CHN
-    layer: alignment
-    type: treaty
-    summary: "China-Ukraine strategic partnership (established 2011, 15th anniversary in 2026), reaffirmed by Wang Yi and Sybiha at Munich on 13 Feb 2026; China is Ukraine's largest trading partner and source of imports."
-    since: 2011
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.mfa.gov.cn/eng/wjbzhd/202602/t20260215_11860282.html", title: "Wang Yi meets Ukrainian Foreign Minister Andrii Sybiha (Munich, 13 Feb 2026)", publisher: "Ministry of Foreign Affairs of the PRC", date: 2026-02-15, tier: 1}
-      - {url: "https://www.caixinglobal.com/2026-02-14/china-pledges-energy-aid-to-ukraine-as-top-diplomats-meet-in-munich-102414717.html", title: "China pledges energy aid to Ukraine as top diplomats meet in Munich", publisher: "Caixin", date: 2026-02-14, tier: 3}
-
-  # ---------- dependency ----------
-  - to: org-eu
-    layer: dependency
-    type: debt
-    summary: "EUR 90bn Ukraine Support Loan for 2026-27 (EUR 60bn defence, EUR 30bn budget) funded by joint EU borrowing; Czechia, Hungary and Slovakia opted out; Ukraine repays only if Russia pays reparations. It covers two-thirds of needs; the Commission approved EUR 6.1bn of defence procurement under it on 24 Aug 2026."
-    value: 90
-    unit: EUR_billion_2026-2027
-    since: 2025-12
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.pravda.com.ua/eng/news/2026/09/01/8051344/", title: "EU points out that EUR 90bn loan will cover only two-thirds of Ukraine's needs", publisher: "European Pravda", date: 2026-09-01, tier: 3}
-      - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/04/21/eu-expects-first-loan-tranche-to-ukraine-end-may-early-june-dombrovskis", title: "EU expects first loan tranche to Ukraine end-May/early June - Dombrovskis", publisher: "Reuters via Internazionale", date: 2026-04-21, tier: 3}
-      - {url: "https://finance.liga.net/en/ekonomika/novosti/european-parliament-approves-90b-eu-support-loan-to-ukraine-for-2026-2027", title: "European Parliament approves EUR 90B EU support loan to Ukraine for 2026-2027", publisher: "Liga", date: 2026-02-11, tier: 3}
-  - to: USA
-    layer: dependency
-    type: arms_supply
-    summary: "US-made weapons bought by allies through NATO's PURL mechanism reached USD 6.7bn in a year (Ukraine's Defence Ministry); about 95% of Patriot interceptors arrive this way. Direct US funding stopped in early 2025; European donors spent EUR 3bn on US arms in Jan-Jun 2026."
-    value: 6.7
-    unit: USD_billion_PURL_contributions
-    since: 2025-07
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.kmu.gov.ua/en/news/rik-purl-maizhe-7-mlrd-dlia-postavok-krytychnoho-ozbroiennia-dlia-ukrainy", title: "A year of PURL: nearly USD 7 billion for deliveries of critical weapons to Ukraine", publisher: "Cabinet of Ministers of Ukraine", date: 2026-07, tier: 1}
-      - {url: "https://nachrichten.idw-online.de/2026/08/13/ukraine-support-tracker-europe-leads-on-aid-us-weapons-remain-key", title: "Ukraine Support Tracker: Europe leads on aid - US weapons remain key", publisher: "Kiel Institute for the World Economy (via idw)", date: 2026-08-13, tier: 2}
-  - to: USA
-    layer: dependency
-    type: investment
-    summary: "The Reconstruction Investment Fund signed its first critical-minerals deal (about USD 30m with BGV Group) in Oct 2026, with four other projects approved; the portfolio is about USD 70m against USD 150m initial capital."
-    value: 70
-    unit: USD_million_fund_portfolio
-    since: 2026-10
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.pravda.com.ua/eng/news/2026/10/03/8056248/", title: "US-Ukraine fund signs first critical minerals deal worth US$30 million", publisher: "Ukrainska Pravda", date: 2026-10-03, tier: 3}
-      - {url: "https://www.kitco.com/news/off-the-wire/2026-10-05/us-ukrainian-investment-fund-seals-first-critical-minerals-deal", title: "US-Ukrainian investment fund seals first critical minerals deal", publisher: "Reuters via Kitco", date: 2026-10-05, tier: 3}
-  - to: GBR
-    layer: dependency
-    type: arms_supply
-    summary: "The UK allocated at least 120,000 drones in 2026, the largest single drone allocation announced so far, and USD 205m to PURL."
-    value: 120000
-    unit: drones_allocated_2026
-    since: 2026
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://nachrichten.idw-online.de/2026/08/13/ukraine-support-tracker-europe-leads-on-aid-us-weapons-remain-key", title: "Ukraine Support Tracker: Europe leads on aid - US weapons remain key", publisher: "Kiel Institute for the World Economy (via idw)", date: 2026-08-13, tier: 2}
-      - {url: "https://euromaidanpress.com/2026/02/11/britain-joins-purl-205-million-for-us-made-weapons-as-nato-aims-to-raise-15-billion-for-ukraine-in-2026/", title: "Britain joins PURL: USD 205 million for US-made weapons", publisher: "Euromaidan Press", date: 2026-02-11, tier: 3}
-  - to: RUS
-    layer: dependency
-    type: energy_export
-    summary: "The Gazprom-Naftogaz transit contract of 2019 expired on 1 Jan 2025 and Russian gas stopped crossing Ukraine (about 14.3 bcm in 2024), ending the income and the leverage; Slovakia and Moldova (Transnistria) were the affected customers."
-    value: 14.3
-    unit: bcm_transit_2024
-    since: 2019-12
-    until: 2025-01-01
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://interfax.com/newsroom/top-stories/108961/", title: "Gazprom: transit of Russian gas via Ukraine stopped on 1 January 2025", publisher: "Interfax", date: 2025-01-09, tier: 3}
-      - {url: "https://www.bruegel.org/analysis/end-russian-gas-transit-ukraine-and-options-eu", title: "The end of Russian gas transit via Ukraine and options for the EU", publisher: "Bruegel", date: 2025-01, tier: 2}
-      - {url: "https://auroraer.com/?p=36996", title: "End of Russian gas transit via Ukraine (14.3 bcm in 2024)", publisher: "Aurora Energy Research", date: 2025, tier: 3}
-  - to: RUS
-    layer: dependency
-    type: military_presence
-    summary: "Russian forces occupy about 19.25% of Ukraine (116,165 sq km at the start of 2026, DeepState) and took 4,336 sq km in 2025, almost double 2023 and 2024 together."
-    value: 19.25
-    unit: percent_of_territory_occupied
-    since: 2014-03
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://euromaidanpress.com/?p=384242", title: "Russia occupied 0.72% of Ukraine's territory in 2025, DeepState reports", publisher: "Euromaidan Press", date: 2026-01-02, tier: 3}
-      - {url: "https://www.pravda.com.ua/eng/news/2026/01/01/8014292/", title: "Russia occupied more than 4,000 sq km of Ukrainian territory in 2025", publisher: "Ukrainska Pravda", date: 2026-01-01, tier: 3}
-  - to: SRB
-    layer: dependency
-    type: arms_supply
-    summary: "Serbian ammunition reached Ukraine through intermediaries, estimated by the FT at around EUR 800m since 2022; Vucic said on 23 Jun 2025 that Serbia had halted exports after Russian accusations. (Mirrored from Serbia's card.)"
-    value: 800
-    unit: EUR_million_ammunition_since_2022
-    since: 2022
-    until: 2025-06-23
-    last_verified: 2026-10-12
-    confidence: C
-    sources:
-      - {url: "https://www.rferl.org/a/serbia-arms-exports-ukraine-russia-vucic/33453578.html", title: "Serbia halts arms exports after Russia accuses it of arming Ukraine", publisher: "RFE/RL", date: 2025-06-26, tier: 3}
-      - {url: "https://www.aljazeera.com/news/2025/5/30/serbia-probes-arms-to-ukraine-after-russia-alleges-stab-in-the-back", title: "Serbia probes arms to Ukraine after Russia alleges 'stab in the back'", publisher: "Al Jazeera", date: 2025-05-30, tier: 3}
-
-  # ---------- action ----------
-  - to: HUN
-    layer: action
-    type: agreement
-    summary: "Hungary and Ukraine announced a 'comprehensive agreement' on the rights of about 100,000 ethnic Hungarians in Transcarpathia (Magyar, Oct 2026); Budapest lifted its veto on clusters 2 and 3 on 7 Oct on condition that the Rada pass a minority-education law, registered on 1 Oct. Hungary still opposes a fast-track."
-    since: 2026-10-01
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.euronews.com/2026/10/07/hungary-set-to-lift-veto-on-ukraines-eu-membership-talks", title: "Hungary set to lift veto on Ukraine's EU membership talks", publisher: "Euronews", date: 2026-10-07, tier: 3}
-      - {url: "https://www.pravda.com.ua/eng/news/2026/10/02/8056094/", title: "Hungary boasts of agreement with Ukraine: achieving what Viktor Orban failed to do in 10 years", publisher: "Ukrainska Pravda", date: 2026-10-02, tier: 3}
-      - {url: "https://osw.waw.pl/en/publikacje/analyses/2026-06-09/hungarian-ukrainian-agreement-rights-national-minorities-ukraine", title: "Hungarian-Ukrainian agreement on the rights of national minorities in Ukraine", publisher: "OSW", date: 2026-06-09, tier: 2}
-  - to: SVK
-    layer: action
-    type: incident
-    summary: "After the Druzhba pipeline went offline in late January 2026, Fico halted emergency electricity to Ukraine and threatened to veto the 20th sanctions package; on 22 Apr he said he would lift the veto only when oil flowed again and would no longer object to the EUR 90bn loan."
-    since: 2026-02
-    until: 2026-04-22
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.pravda.com.ua/eng/news/2026/03/29/8027690", title: "Slovak PM threatens to block EU's 20th Russia sanctions package amid Druzhba pipeline dispute", publisher: "Ukrainska Pravda", date: 2026-03-29, tier: 3}
-      - {url: "https://interfax.com/newsroom/top-stories/117273/", title: "Fico: Slovakia lifts veto on 20th package only when Druzhba supply resumes", publisher: "Interfax", date: 2026-04-22, tier: 3}
-      - {url: "https://www.aljazeera.com/news/2026/4/29/ukraine-targets-druzhba-pipeline-to-sever-russian-oil-influence-in-eu", title: "Ukraine targets Druzhba pipeline to sever Russian oil, influence in EU", publisher: "Al Jazeera", date: 2026-04-29, tier: 3}
-  - to: POL
-    layer: action
-    type: incident
-    summary: "In May-June 2026 President Nawrocki stripped Zelensky of the Order of the White Eagle over Kyiv's naming of an army unit after the UPA; Zelensky skipped the Ukraine Reconstruction Conference in Gdansk on 25 Jun. Tusk called the quarrel a gift to Putin."
-    since: 2026-05
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/06/25/analysis-poland-and-ukraine-s-difficult-history-creates-political-minefield-for-tusk", title: "Analysis: Poland and Ukraine's difficult history creates political minefield for Tusk", publisher: "Reuters via Internazionale", date: 2026-06-25, tier: 3}
-      - {url: "https://www.eurointegration.com.ua/eng/news/2026/06/22/7240153/", title: "How to save relations with Poland and what Zelenskyy's visit to Gdansk has to do with it", publisher: "European Pravda", date: 2026-06-22, tier: 3}
-  - to: POL
-    layer: action
-    type: agreement
-    summary: "Poland and Ukraine agreed in January 2025 to resume exhumations of Polish victims of the Volhynia massacres after Kyiv lifted its moratorium; work began at Puzniki, where at least 42 victims were found."
-    since: 2025-01
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.euronews.com/my-europe/2025/01/11/poland-and-ukraine-agree-to-exhume-ww2-volhynia-massacre-victims", title: "Poland and Ukraine agree to exhume WW2 Volhynia massacre victims", publisher: "Euronews", date: 2025-01-11, tier: 3}
-  - to: TUR
-    layer: action
-    type: visit
-    summary: "Zelensky attended the NATO summit in Ankara on 7-8 Jul 2026, where allies pledged EUR 70bn for Ukraine in 2026 and at least as much in 2027, and met Erdogan again in New York in Sep 2026 (maritime security, a Black Sea truce, trade target of USD 10bn)."
-    since: 2026-07-07
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.eurointegration.com.ua/eng/news/2026/07/7/7241099/", title: "Zelenskyy arrives at NATO summit in Ankara", publisher: "European Pravda", date: 2026-07-07, tier: 3}
-      - {url: "https://aa.com.tr/en/eurasia/zelenskyy-says-ukraine-very-open-to-turkiye-hosting-trilateral-peace-talks/4067073", title: "Zelenskyy says Ukraine 'very open' to Turkiye hosting trilateral peace talks", publisher: "Anadolu Agency", date: 2026-09, tier: 3}
-  - to: org-nato
-    layer: action
-    type: agreement
-    summary: "The Ankara summit declaration (8 Jul 2026) reaffirmed support for Ukraine's territorial integrity and pledged EUR 70bn for 2026 and at least the same in 2027; Kyiv says it was recognised as a contributor to Euro-Atlantic security. Trump announced the Patriot production licence at the summit."
-    since: 2026-07-08
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://english.enabbaladi.net/archives/2026/07/ankara-summit-sets-nato-priorities-backs-ukraine/", title: "Ankara Summit Sets NATO Priorities, Backs Ukraine", publisher: "Enab Baladi", date: 2026-07, tier: 3}
-      - {url: "https://euromaidanpress.com/2026/07/03/ukraine-wants-the-ankara-summit-to-name-it-a-nato-security-contributor-not-just-an-aid-recipient/", title: "Ukraine wants the Ankara summit to name it a NATO security contributor - not just an aid recipient", publisher: "Euromaidan Press", date: 2026-07-03, tier: 3}
-      - {url: "https://www.intellinews.com/trump-offers-ukraine-patriot-production-licence-in-major-policy-about-face-453534/", title: "Trump offers Ukraine Patriot production licence in major policy about-face", publisher: "bne IntelliNews", date: 2026-07, tier: 3}
-  - to: USA
-    layer: action
-    type: visit
-    summary: "Zelensky met Trump at the White House on 28 Jul 2026 to discuss Patriot licences and the revival of the diplomatic process; the White House called it positive and productive."
-    since: 2026-07-28
-    until: 2026-07-28
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.local10.com/news/world/2026/07/28/zelenskyy-has-a-good-meeting-with-trump-at-the-white-house-as-he-seeks-more-cooperation-with-us/", title: "Zelenskyy has a 'good meeting' with Trump at the White House as he seeks more cooperation with US", publisher: "AP via Local 10", date: 2026-07-28, tier: 3}
-  - to: USA
-    layer: action
-    type: visit
-    summary: "Trilateral talks with Russia and the US opened in Abu Dhabi on 23 Jan 2026 and continued in Geneva; they stalled in March when the Iran war absorbed Washington, and the Kremlin demanded the Donbas withdrawal before further rounds. Kyiv's delegation went to Miami on 9-10 Oct 2026 for talks with Witkoff and Kushner."
-    since: 2026-01-23
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://rubryka.com/en/2026/01/23/vyvedennya-ukrayinskyh-vijsk/", title: "Russia demands Ukrainian troop withdrawal from Donbas ahead of Abu Dhabi negotiations", publisher: "Rubryka", date: 2026-01-23, tier: 3}
-      - {url: "https://euromaidanpress.com/2026/03/18/zelenskyy-says-iran-war-is-delaying-ukraine-peace-talks-and-depleting-missile-stocks/", title: "Zelenskyy says Iran war is delaying Ukraine peace talks and depleting missile stocks", publisher: "Euromaidan Press", date: 2026-03-18, tier: 3}
-      - {url: "https://en.lb.ua/news/2026/09/04/40996_after_geneva_talks_russia.html", title: "After Geneva talks, Russia proposes that Ukraine's delegation travel to Moscow", publisher: "LB.ua", date: 2026-09-04, tier: 3}
-      - {url: "https://unn.ua/en/news/budanov-umerov-and-arakhamia-arrived-in-the-us-whats-on-the-agenda", title: "Budanov, Umerov and Arakhamia arrived in the US: what is on the agenda", publisher: "UNN", date: 2026-10-09, tier: 3}
-  - to: CHN
-    layer: action
-    type: visit
-    summary: "Sybiha and Wang Yi met at the Munich Security Conference on 13 Feb 2026; China pledged a new package of humanitarian energy aid and Kyiv raised Russian strikes that damaged Chinese businesses in Ukraine."
-    since: 2026-02-13
-    until: 2026-02-13
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.mfa.gov.cn/eng/wjbzhd/202602/t20260215_11860282.html", title: "Wang Yi meets Ukrainian Foreign Minister Andrii Sybiha (Munich, 13 Feb 2026)", publisher: "Ministry of Foreign Affairs of the PRC", date: 2026-02-15, tier: 1}
-      - {url: "https://www.caixinglobal.com/2026-02-14/china-pledges-energy-aid-to-ukraine-as-top-diplomats-meet-in-munich-102414717.html", title: "China pledges energy aid to Ukraine as top diplomats meet in Munich", publisher: "Caixin", date: 2026-02-14, tier: 3}
-  - to: BLR
-    layer: action
-    type: incident
-    summary: "In June 2026 Zelensky demanded that Lukashenko shut down relay stations used for drone attacks on Ukraine and threatened to hit radar stations in Belarus; the equipment stopped working from 22 Jun and Lukashenko said Belarus would not send troops. Prisoner exchanges still pass through Belarus."
-    since: 2026-06-19
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.themoscowtimes.com/2026/06/26/lukashenko-heads-to-russia-for-putin-meeting-amid-rising-tensions-with-ukraine-a93110/pdf", title: "Lukashenko heads to Russia for Putin meeting amid rising tensions with Ukraine", publisher: "The Moscow Times", date: 2026-06-26, tier: 3}
-      - {url: "https://news.liga.net/en/war/news/if-the-price-is-right-diplomat-assesses-the-likelihood-of-official-contacts-between-kyiv-and-lukashenko", title: "'If the price is right.' Diplomat assesses the likelihood of official contacts between Kyiv and Lukashenko", publisher: "LIGA.net", date: 2026-06, tier: 3}
-      - {url: "https://www.themoscowtimes.com/2026/10/02/lukashenko-vows-belarus-full-support-for-putin-on-ukraine-a93858", title: "Lukashenko vows Belarus' full support for Putin on Ukraine", publisher: "The Moscow Times", date: 2026-10-02, tier: 3}
-  - to: sub-transnistria
-    layer: action
-    type: agreement
-    summary: "After Russian gas transit stopped on 1 Jan 2025 and Tiraspol lost its supply, Zelensky offered Ukrainian coal for the Cuciurgan power station, even free of charge; Sandu said it was up to the Tiraspol regime to accept."
-    since: 2025-01-25
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.euronews.com/my-europe/2025/01/26/kyiv-says-it-can-supply-moldova-with-coal-as-gas-transit-agreement-with-russia-ends", title: "Kyiv says it can supply Moldova with coal as gas transit agreement with Russia ends", publisher: "Euronews", date: 2025-01-26, tier: 3}
-      - {url: "https://www.kyivpost.com/post/46053", title: "Zelensky offers Ukrainian coal to ease energy crisis in Transnistria", publisher: "Kyiv Post", date: 2025-01, tier: 3}
-  - to: MDA
-    layer: action
-    type: agreement
-    summary: "Ukraine and Moldova opened their first accession cluster (fundamentals) together on 15 Jun 2026; in June the EU set the stage to decouple Moldova's track from Ukraine's."
-    since: 2026-06-15
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.euronews.com/2026/06/22/eu-sets-stage-for-decoupling-moldovas-accession-bid-from-ukraines", title: "EU sets stage for decoupling Moldova's accession bid from Ukraine's", publisher: "Euronews", date: 2026-06-22, tier: 3}
-      - {url: "https://www.eurointegration.com.ua/eng/news/2026/09/29/7246508/", title: "EU to try to overcome Hungary's veto on negotiating clusters 2 and 3 for Ukraine on Tuesday", publisher: "European Pravda", date: 2026-09-29, tier: 3}
-  - to: HRV
-    layer: action
-    type: agreement
-    summary: "Croatia has sent over EUR 300m of military assistance since 2022 (NATO Secretary General, Jan 2026); 30 M-84A4 tanks and 30 M-80 vehicles went through Germany against a EUR 144.8m credit. President Milanovic refuses to authorise officers for NATO's NSATU and the Sabor did not approve the EU training mission. (Mirrored from Croatia's card.)"
-    since: 2022-02-24
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://vlada.gov.hr/croatia-contributes-significantly-to-collective-security-we-have-exceeded-the-2-percent-of-gdp-allocation-for-defense/45899", title: "Croatia contributes significantly to collective security (Rutte: over EUR 300m of military assistance to Ukraine since 2022)", publisher: "Government of Croatia", date: 2026-01-12, tier: 1}
-      - {url: "https://www.defensenews.com/global/europe/2025/12/11/croatia-buys-german-leopard-tanks-using-eu-loans/", title: "Croatia buys German Leopard tanks using EU loans", publisher: "Defense News", date: 2025-12-11, tier: 3}
-  - to: MKD
-    layer: action
-    type: agreement
-    summary: "North Macedonia and Ukraine have agreements on trade, investment protection, culture, education, tourism, transport and military cooperation; Skopje has given humanitarian and military aid since 2022 but abstained on the EU-backed UNGA text in Feb 2025. (Mirrored from North Macedonia's card.)"
-    since: 2022-02-24
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://enlargement-infohub.eu/wp-content/uploads/2025/11/north-macedonia-report-2025.pdf", title: "North Macedonia 2025 Report (regional relations: Ukraine)", publisher: "European Commission", date: 2025-11-04, tier: 1}
-      - {url: "https://dia.dp.gov.ua/en/north-macedonia-and-ukraine-during-wartime-support-and-solidarity/", title: "North Macedonia and Ukraine during wartime: support and solidarity", publisher: "Dnipropetrovsk Regional State Administration (Ukraine)", date: 2025, tier: 1}
-  - to: XKX
-    layer: action
-    type: agreement
-    summary: "Kosovo announced its first military aid to Ukraine on 20 Mar 2024 (armoured vehicles, trucks, mortar rounds) and trained Ukrainian deminers, although Ukraine does not recognise Kosovo. (Mirrored from Kosovo's card.)"
-    since: 2024-03-20
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://euromaidanpress.com/2024/03/20/kosovo-announces-its-first-ever-military-aid-packages-for-ukraine/", title: "Kosovo announces its first-ever military aid packages for Ukraine", publisher: "Euromaidan Press", date: 2024-03-20, tier: 3}
-  - to: SRB
-    layer: action
-    type: visit
-    summary: "Vucic made his first visit to Ukraine on 11 Jun 2025, at the Ukraine-South East Europe summit in Odesa; Serbia abstained on the 24 Feb 2026 General Assembly text and has not joined EU sanctions on Russia. (Mirrored from Serbia's card.)"
-    since: 2025-06-11
-    until: 2025-06-11
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://euronews.com/my-europe/2025/06/11/serbias-president-visits-ukraine-for-the-first-time-in-eu-realignment-signal", title: "Serbia's president visits Ukraine for the first time in EU realignment signal", publisher: "Euronews", date: 2025-06-11, tier: 3}
-      - {url: "https://europeanwesternbalkans.com/2026/02/25/serbia-abstains-again-from-voting-on-the-resolution-on-ukraine/", title: "Serbia abstains again from voting on the resolution on Ukraine", publisher: "European Western Balkans", date: 2026-02-25, tier: 3}
-  - to: org-eu
-    layer: action
-    type: agreement
-    summary: "Under the EUR 90bn loan the Commission approved EUR 6.1bn of defence procurement on 24 Aug 2026; the EU expects to disburse about EUR 20bn by end-2026. Disbursement was blocked until Hungary's change of government and the 23 Apr 2026 allocation agreement."
-    since: 2026-04-23
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.baltictimes.com/tsahkna__agreement_reached_on_allocating__90_billion_to_ukraine/", title: "Tsahkna: Agreement reached on allocating EUR 90 billion to Ukraine", publisher: "Baltic Times", date: 2026-04, tier: 3}
-      - {url: "https://www.pravda.com.ua/eng/news/2026/09/01/8051344/", title: "EU points out that EUR 90bn loan will cover only two-thirds of Ukraine's needs", publisher: "European Pravda", date: 2026-09-01, tier: 3}
+- to: sub-crimea
+  layer: objective
+  type: territorial_claim
+  summary: Ukraine claims Crimea, occupied and annexed by Russia in 2014, as its territory; the General Assembly rejected the annexations by 143-5-35 on 12 Oct 2022 and DeepState counts the peninsula as
+    100% occupied at the start of 2026.
+  since: 2014-03
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://digitallibrary.un.org/record/3990400
+    title: A/RES/ES-11/4 Territorial integrity of Ukraine - voting record
+    publisher: United Nations
+    date: 2022-10-12
+    tier: 1
+  - url: https://euromaidanpress.com/?p=384242
+    title: Russia occupied 0.72% of Ukraine's territory in 2025, DeepState reports
+    publisher: Euromaidan Press
+    date: 2026-01-02
+    tier: 3
+- to: sub-occupied-ukraine
+  layer: objective
+  type: territorial_claim
+  summary: Ukraine claims Luhansk, Donetsk, Zaporizhzhia and Kherson, proclaimed annexed by Russia on 30 Sep 2022; DeepState puts the occupied shares at 99.6%, 78%, 75% and 72% at the start of 2026. The
+    Kremlin demands that Ukraine also withdraw from the part of Donetsk it holds.
+  since: 2022-09-30
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://digitallibrary.un.org/record/3990400
+    title: A/RES/ES-11/4 Territorial integrity of Ukraine - voting record
+    publisher: United Nations
+    date: 2022-10-12
+    tier: 1
+  - url: https://euromaidanpress.com/?p=384242
+    title: Russia occupied 0.72% of Ukraine's territory in 2025, DeepState reports
+    publisher: Euromaidan Press
+    date: 2026-01-02
+    tier: 3
+  - url: https://rubryka.com/en/2026/01/23/vyvedennya-ukrayinskyh-vijsk/
+    title: Russia demands Ukrainian troop withdrawal from Donbas ahead of Abu Dhabi negotiations
+    publisher: Rubryka
+    date: 2026-01-23
+    tier: 3
+- to: RUS
+  layer: objective
+  type: recognition_denied
+  summary: Kyiv refuses to recognise the annexations or to withdraw from the Donbas it still holds; the Kremlin says trilateral talks are pointless until it does. The 24 Feb 2026 General Assembly text (107-12-51)
+    reaffirms territorial integrity and calls for an immediate, full and unconditional ceasefire.
+  since: 2022-09-30
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.ukrinform.net/rubric-polytics/4120909-kremlin-suspends-trilateral-peace-talks-until-afu-withdraws-from-donbas.html
+    title: Kremlin suspends trilateral peace talks until AFU withdraws from Donbas
+    publisher: Ukrinform
+    date: 2026
+    tier: 3
+  - url: https://digitallibrary.un.org/record/4103179
+    title: A/RES/ES-11/10 Support for lasting peace in Ukraine - voting record
+    publisher: United Nations
+    date: 2026-02-24
+    tier: 1
+  - url: https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-february-19-2026
+    title: Russian Offensive Campaign Assessment, February 19, 2026
+    publisher: Institute for the Study of War / Critical Threats
+    date: 2026-02-19
+    tier: 2
+- to: org-eu
+  layer: objective
+  type: membership_goal
+  summary: Ukraine seeks full EU membership; the fundamentals cluster opened on 15 Jun 2026 and external relations on 14 Jul 2026, clusters 2 and 3 were released by Hungary on 7 Oct 2026 pending a minority-rights
+    law, and Brussels aims to open all clusters by year-end while rejecting a fast-track.
+  since: 2022-02-28
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.euronews.com/2026/10/07/hungary-set-to-lift-veto-on-ukraines-eu-membership-talks
+    title: Hungary set to lift veto on Ukraine's EU membership talks
+    publisher: Euronews
+    date: 2026-10-07
+    tier: 3
+  - url: https://www.eurointegration.com.ua/eng/news/2026/09/29/7246508/
+    title: EU to try to overcome Hungary's veto on negotiating clusters 2 and 3 for Ukraine on Tuesday
+    publisher: European Pravda
+    date: 2026-09-29
+    tier: 3
+- to: org-nato
+  layer: objective
+  type: membership_goal
+  summary: NATO membership remains Ukraine's declared aim; the 2024 Washington declaration calls the path irreversible but extends no invitation 'until Allies agree and conditions are met'.
+  since: 2008-04-03
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.nato.int/cps/en/natohq/official_texts_227678.htm
+    title: Washington Summit Declaration, para. 16
+    publisher: NATO
+    date: 2024-07-10
+    tier: 1
+  - url: https://euromaidanpress.com/2026/07/03/ukraine-wants-the-ankara-summit-to-name-it-a-nato-security-contributor-not-just-an-aid-recipient/
+    title: Ukraine wants the Ankara summit to name it a NATO security contributor - not just an aid recipient
+    publisher: Euromaidan Press
+    date: 2026-07-03
+    tier: 3
+- to: USA
+  layer: objective
+  type: influence_goal
+  summary: Kyiv works to keep Washington engaged and to turn its interest in minerals, drones and a Patriot production licence into a US-backed guarantee; its delegation (Budanov, Umerov, Kyslytsia, Arakhamia)
+    met Witkoff and Kushner in Miami on 9-10 Oct 2026 with European representatives present.
+  since: 2025-02
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://unn.ua/en/news/budanov-umerov-and-arakhamia-arrived-in-the-us-whats-on-the-agenda
+    title: 'Budanov, Umerov and Arakhamia arrived in the US: what is on the agenda'
+    publisher: UNN
+    date: 2026-10-09
+    tier: 3
+  - url: https://tass.com/world/2199585
+    title: Witkoff and Kushner to meet Ukrainian delegation in Miami (Reuters report)
+    publisher: TASS
+    date: 2026-10
+    tier: 3
+  - url: https://www.intellinews.com/trump-offers-ukraine-patriot-production-licence-in-major-policy-about-face-453534/
+    title: Trump offers Ukraine Patriot production licence in major policy about-face
+    publisher: bne IntelliNews
+    date: 2026-07
+    tier: 3
+- to: org-eu
+  layer: alignment
+  type: candidate
+  summary: EU candidate country since the European Council of 23 June 2022, which granted candidate status to Ukraine and Moldova.
+  since: 2022-06-23
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.eeas.europa.eu/delegations/moldova/european-council-conclusions-membership-applications-ukraine-republic-moldova-and-georgia-23-june_en
+    title: European Council conclusions on the membership applications of Ukraine, Moldova and Georgia
+    publisher: European Council / EEAS
+    date: 2022-06-23
+    tier: 1
+  - url: https://euneighbourseast.eu/news/latest-news/european-council-ukraine-and-moldova-granted-eu-candidate-status/
+    title: 'European Council: Ukraine and Moldova granted EU candidate status'
+    publisher: EU NeighboursEast
+    date: 2022-06-23
+    tier: 1
+- to: GBR
+  layer: alignment
+  type: security_guarantee
+  summary: The Paris Declaration of 6 Jan 2026 and the UK-France declaration commit London to join a multinational force in Ukraine after the fighting; the guarantee takes effect only once a ceasefire enters
+    into force.
+  since: 2026-01-06
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://augengeradeaus.net/wp-content/uploads/2026/01/20260106_Paris_Declaration_Ukraine.pdf
+    title: Paris Declaration - Robust security guarantees for a solid and lasting peace in Ukraine (text)
+    publisher: Coalition of the Willing leaders (text hosted by Augen geradeaus)
+    date: 2026-01-06
+    tier: 1
+  - url: https://www.foxnews.com/world/uk-france-strike-new-ukraine-security-pact-us-takes-lead-ceasefire-enforcement.print
+    title: UK and France strike new Ukraine security pact; US takes lead on ceasefire enforcement
+    publisher: Fox News
+    date: 2026-01-06
+    tier: 3
+- to: FRA
+  layer: alignment
+  type: security_guarantee
+  summary: Host and co-leader of the Paris Declaration of 6 Jan 2026; France pledged, with the UK, to contribute to the post-ceasefire multinational force. Conditional on a ceasefire Moscow has not accepted.
+  since: 2026-01-06
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://augengeradeaus.net/wp-content/uploads/2026/01/20260106_Paris_Declaration_Ukraine.pdf
+    title: Paris Declaration - Robust security guarantees for a solid and lasting peace in Ukraine (text)
+    publisher: Coalition of the Willing leaders (text hosted by Augen geradeaus)
+    date: 2026-01-06
+    tier: 1
+  - url: https://razomua.media/en/news/politika/koalitsiya-pohodyla-harantiyi-dlya-ukrayiny-bez-pidpysu-rosiyi-i-bez-chitkoyi-daty-nabrannya-chynnosti
+    title: Coalition agreed on guarantees for Ukraine - without Russia's signature and without a clear entry-into-force date
+    publisher: Razom
+    date: 2026-01
+    tier: 3
+- to: USA
+  layer: alignment
+  type: security_guarantee
+  summary: 'For the first time the US backed the coalition''s guarantees in Paris (6 Jan 2026): it would lead a ceasefire monitoring and verification mechanism (drones, sensors, satellites, no US troops)
+    but gave no Article 5-style commitment. The mechanism is conditional on a ceasefire.'
+  since: 2026-01-06
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://euromaidanpress.com/2026/01/06/paris-declaration-signed/
+    title: 'Paris Declaration: Ukraine, US, allies sign most comprehensive security deal yet'
+    publisher: Euromaidan Press
+    date: 2026-01-06
+    tier: 3
+  - url: https://www.eurointegration.com.ua/eng/news/2026/01/6/7228498/
+    title: Media reveal security guarantees of Coalition of the Willing prepared for Ukraine
+    publisher: European Pravda
+    date: 2026-01-06
+    tier: 3
+- to: USA
+  layer: alignment
+  type: treaty
+  summary: The April 2025 US-Ukraine minerals agreement created the Reconstruction Investment Fund (USD 150m initial capital, USD 75m from each side), which opened its project portal in 2026 and received
+    over 60 proposals in its first month.
+  since: 2025-04-30
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.kmu.gov.ua/en/news/amerykansko-ukrainskyi-investytsiinyi-fond-vidbudovy-za-misiats-otrymav-ponad-60-proektnykh-propozytsii-premier-ministr
+    title: U.S.-Ukraine Reconstruction Investment Fund receives over 60 project proposals in its first month
+    publisher: Cabinet of Ministers of Ukraine
+    date: 2026-01
+    tier: 1
+  - url: https://www.ukrainianworldcongress.org/ukraine-and-us-sign-long-awaited-minerals-deal/
+    title: Ukraine and US sign long-awaited minerals deal
+    publisher: Ukrainian World Congress
+    date: 2025-04
+    tier: 3
+- to: TUR
+  layer: alignment
+  type: treaty
+  summary: Free-trade agreement signed in Kyiv on 3 Feb 2022 during Erdogan's visit, after negotiations dragging since 2007; in Sep 2026 the two presidents set a target of USD 10bn of trade, from about
+    USD 1bn.
+  since: 2022-02-03
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://kyivindependent.com/erdogan-visits-kyiv-signs-long-anticipated-free-trade-agreement/
+    title: Erdogan visits Kyiv, signs long-anticipated free trade agreement
+    publisher: Kyiv Independent
+    date: 2022-02-03
+    tier: 3
+  - url: https://aa.com.tr/en/eurasia/zelenskyy-says-ukraine-very-open-to-turkiye-hosting-trilateral-peace-talks/4067073
+    title: Zelenskyy says Ukraine 'very open' to Turkiye hosting trilateral peace talks
+    publisher: Anadolu Agency
+    date: 2026-09
+    tier: 3
+- to: CHN
+  layer: alignment
+  type: treaty
+  summary: China-Ukraine strategic partnership (established 2011, 15th anniversary in 2026), reaffirmed by Wang Yi and Sybiha at Munich on 13 Feb 2026; China is Ukraine's largest trading partner and source
+    of imports.
+  since: 2011
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.mfa.gov.cn/eng/wjbzhd/202602/t20260215_11860282.html
+    title: Wang Yi meets Ukrainian Foreign Minister Andrii Sybiha (Munich, 13 Feb 2026)
+    publisher: Ministry of Foreign Affairs of the PRC
+    date: 2026-02-15
+    tier: 1
+  - url: https://www.caixinglobal.com/2026-02-14/china-pledges-energy-aid-to-ukraine-as-top-diplomats-meet-in-munich-102414717.html
+    title: China pledges energy aid to Ukraine as top diplomats meet in Munich
+    publisher: Caixin
+    date: 2026-02-14
+    tier: 3
+- to: org-eu
+  layer: dependency
+  type: debt
+  summary: EUR 90bn Ukraine Support Loan for 2026-27 (EUR 60bn defence, EUR 30bn budget) funded by joint EU borrowing; Czechia, Hungary and Slovakia opted out; Ukraine repays only if Russia pays reparations.
+    It covers two-thirds of needs; the Commission approved EUR 6.1bn of defence procurement under it on 24 Aug 2026.
+  value: 90
+  unit: EUR_billion_2026-2027
+  since: 2025-12
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.pravda.com.ua/eng/news/2026/09/01/8051344/
+    title: EU points out that EUR 90bn loan will cover only two-thirds of Ukraine's needs
+    publisher: European Pravda
+    date: 2026-09-01
+    tier: 3
+  - url: https://www.internazionale.it/ultime-notizie-reuters/2026/04/21/eu-expects-first-loan-tranche-to-ukraine-end-may-early-june-dombrovskis
+    title: EU expects first loan tranche to Ukraine end-May/early June - Dombrovskis
+    publisher: Reuters via Internazionale
+    date: 2026-04-21
+    tier: 3
+  - url: https://finance.liga.net/en/ekonomika/novosti/european-parliament-approves-90b-eu-support-loan-to-ukraine-for-2026-2027
+    title: European Parliament approves EUR 90B EU support loan to Ukraine for 2026-2027
+    publisher: Liga
+    date: 2026-02-11
+    tier: 3
+- to: USA
+  layer: dependency
+  type: arms_supply
+  summary: US-made weapons bought by allies through NATO's PURL mechanism reached USD 6.7bn in a year (Ukraine's Defence Ministry); about 95% of Patriot interceptors arrive this way. Direct US funding stopped
+    in early 2025; European donors spent EUR 3bn on US arms in Jan-Jun 2026.
+  value: 6.7
+  unit: USD_billion_PURL_contributions
+  since: 2025-07
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.kmu.gov.ua/en/news/rik-purl-maizhe-7-mlrd-dlia-postavok-krytychnoho-ozbroiennia-dlia-ukrainy
+    title: 'A year of PURL: nearly USD 7 billion for deliveries of critical weapons to Ukraine'
+    publisher: Cabinet of Ministers of Ukraine
+    date: 2026-07
+    tier: 1
+  - url: https://nachrichten.idw-online.de/2026/08/13/ukraine-support-tracker-europe-leads-on-aid-us-weapons-remain-key
+    title: 'Ukraine Support Tracker: Europe leads on aid - US weapons remain key'
+    publisher: Kiel Institute for the World Economy (via idw)
+    date: 2026-08-13
+    tier: 2
+- to: USA
+  layer: dependency
+  type: investment
+  summary: The Reconstruction Investment Fund signed its first critical-minerals deal (about USD 30m with BGV Group) in Oct 2026, with four other projects approved; the portfolio is about USD 70m against
+    USD 150m initial capital.
+  value: 70
+  unit: USD_million_fund_portfolio
+  since: 2026-10
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.pravda.com.ua/eng/news/2026/10/03/8056248/
+    title: US-Ukraine fund signs first critical minerals deal worth US$30 million
+    publisher: Ukrainska Pravda
+    date: 2026-10-03
+    tier: 3
+  - url: https://www.kitco.com/news/off-the-wire/2026-10-05/us-ukrainian-investment-fund-seals-first-critical-minerals-deal
+    title: US-Ukrainian investment fund seals first critical minerals deal
+    publisher: Reuters via Kitco
+    date: 2026-10-05
+    tier: 3
+- to: GBR
+  layer: dependency
+  type: arms_supply
+  summary: The UK allocated at least 120,000 drones in 2026, the largest single drone allocation announced so far, and USD 205m to PURL.
+  value: 120000
+  unit: drones_allocated_2026
+  since: 2026
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://nachrichten.idw-online.de/2026/08/13/ukraine-support-tracker-europe-leads-on-aid-us-weapons-remain-key
+    title: 'Ukraine Support Tracker: Europe leads on aid - US weapons remain key'
+    publisher: Kiel Institute for the World Economy (via idw)
+    date: 2026-08-13
+    tier: 2
+  - url: https://euromaidanpress.com/2026/02/11/britain-joins-purl-205-million-for-us-made-weapons-as-nato-aims-to-raise-15-billion-for-ukraine-in-2026/
+    title: 'Britain joins PURL: USD 205 million for US-made weapons'
+    publisher: Euromaidan Press
+    date: 2026-02-11
+    tier: 3
+- to: RUS
+  layer: dependency
+  type: energy_export
+  summary: The Gazprom-Naftogaz transit contract of 2019 expired on 1 Jan 2025 and Russian gas stopped crossing Ukraine (about 14.3 bcm in 2024), ending the income and the leverage; Slovakia and Moldova
+    (Transnistria) were the affected customers.
+  value: 14.3
+  unit: bcm_transit_2024
+  since: 2019-12
+  until: 2025-01-01
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://interfax.com/newsroom/top-stories/108961/
+    title: 'Gazprom: transit of Russian gas via Ukraine stopped on 1 January 2025'
+    publisher: Interfax
+    date: 2025-01-09
+    tier: 3
+  - url: https://www.bruegel.org/analysis/end-russian-gas-transit-ukraine-and-options-eu
+    title: The end of Russian gas transit via Ukraine and options for the EU
+    publisher: Bruegel
+    date: 2025-01
+    tier: 2
+  - url: https://auroraer.com/?p=36996
+    title: End of Russian gas transit via Ukraine (14.3 bcm in 2024)
+    publisher: Aurora Energy Research
+    date: 2025
+    tier: 3
+- to: RUS
+  layer: dependency
+  type: military_presence
+  summary: Russian forces occupy about 19.25% of Ukraine (116,165 sq km at the start of 2026, DeepState) and took 4,336 sq km in 2025, almost double 2023 and 2024 together.
+  value: 19.25
+  unit: percent_of_territory_occupied
+  since: 2014-03
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://euromaidanpress.com/?p=384242
+    title: Russia occupied 0.72% of Ukraine's territory in 2025, DeepState reports
+    publisher: Euromaidan Press
+    date: 2026-01-02
+    tier: 3
+  - url: https://www.pravda.com.ua/eng/news/2026/01/01/8014292/
+    title: Russia occupied more than 4,000 sq km of Ukrainian territory in 2025
+    publisher: Ukrainska Pravda
+    date: 2026-01-01
+    tier: 3
+- to: SRB
+  layer: dependency
+  type: arms_supply
+  summary: Serbian ammunition reached Ukraine through intermediaries, estimated by the FT at around EUR 800m since 2022; Vucic said on 23 Jun 2025 that Serbia had halted exports after Russian accusations.
+    (Mirrored from Serbia's card.)
+  value: 800
+  unit: EUR_million_ammunition_since_2022
+  since: 2022
+  until: 2025-06-23
+  last_verified: 2026-10-12
+  confidence: C
+  sources:
+  - url: https://www.rferl.org/a/serbia-arms-exports-ukraine-russia-vucic/33453578.html
+    title: Serbia halts arms exports after Russia accuses it of arming Ukraine
+    publisher: RFE/RL
+    date: 2025-06-26
+    tier: 3
+  - url: https://www.aljazeera.com/news/2025/5/30/serbia-probes-arms-to-ukraine-after-russia-alleges-stab-in-the-back
+    title: Serbia probes arms to Ukraine after Russia alleges 'stab in the back'
+    publisher: Al Jazeera
+    date: 2025-05-30
+    tier: 3
+- to: HUN
+  layer: action
+  type: agreement
+  summary: Hungary and Ukraine announced a 'comprehensive agreement' on the rights of about 100,000 ethnic Hungarians in Transcarpathia (Magyar, Oct 2026); Budapest lifted its veto on clusters 2 and 3 on
+    7 Oct on condition that the Rada pass a minority-education law, registered on 1 Oct. Hungary still opposes a fast-track.
+  since: 2026-10-01
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.euronews.com/2026/10/07/hungary-set-to-lift-veto-on-ukraines-eu-membership-talks
+    title: Hungary set to lift veto on Ukraine's EU membership talks
+    publisher: Euronews
+    date: 2026-10-07
+    tier: 3
+  - url: https://www.pravda.com.ua/eng/news/2026/10/02/8056094/
+    title: 'Hungary boasts of agreement with Ukraine: achieving what Viktor Orban failed to do in 10 years'
+    publisher: Ukrainska Pravda
+    date: 2026-10-02
+    tier: 3
+  - url: https://osw.waw.pl/en/publikacje/analyses/2026-06-09/hungarian-ukrainian-agreement-rights-national-minorities-ukraine
+    title: Hungarian-Ukrainian agreement on the rights of national minorities in Ukraine
+    publisher: OSW
+    date: 2026-06-09
+    tier: 2
+- to: SVK
+  layer: action
+  type: incident
+  summary: After the Druzhba pipeline went offline in late January 2026, Fico halted emergency electricity to Ukraine and threatened to veto the 20th sanctions package; on 22 Apr he said he would lift the
+    veto only when oil flowed again and would no longer object to the EUR 90bn loan.
+  since: 2026-02
+  until: 2026-04-22
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.pravda.com.ua/eng/news/2026/03/29/8027690
+    title: Slovak PM threatens to block EU's 20th Russia sanctions package amid Druzhba pipeline dispute
+    publisher: Ukrainska Pravda
+    date: 2026-03-29
+    tier: 3
+  - url: https://interfax.com/newsroom/top-stories/117273/
+    title: 'Fico: Slovakia lifts veto on 20th package only when Druzhba supply resumes'
+    publisher: Interfax
+    date: 2026-04-22
+    tier: 3
+  - url: https://www.aljazeera.com/news/2026/4/29/ukraine-targets-druzhba-pipeline-to-sever-russian-oil-influence-in-eu
+    title: Ukraine targets Druzhba pipeline to sever Russian oil, influence in EU
+    publisher: Al Jazeera
+    date: 2026-04-29
+    tier: 3
+- to: POL
+  layer: action
+  type: incident
+  summary: In May-June 2026 President Nawrocki stripped Zelensky of the Order of the White Eagle over Kyiv's naming of an army unit after the UPA; Zelensky skipped the Ukraine Reconstruction Conference
+    in Gdansk on 25 Jun. Tusk called the quarrel a gift to Putin.
+  since: 2026-05
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.internazionale.it/ultime-notizie-reuters/2026/06/25/analysis-poland-and-ukraine-s-difficult-history-creates-political-minefield-for-tusk
+    title: 'Analysis: Poland and Ukraine''s difficult history creates political minefield for Tusk'
+    publisher: Reuters via Internazionale
+    date: 2026-06-25
+    tier: 3
+  - url: https://www.eurointegration.com.ua/eng/news/2026/06/22/7240153/
+    title: How to save relations with Poland and what Zelenskyy's visit to Gdansk has to do with it
+    publisher: European Pravda
+    date: 2026-06-22
+    tier: 3
+- to: POL
+  layer: action
+  type: agreement
+  summary: Poland and Ukraine agreed in January 2025 to resume exhumations of Polish victims of the Volhynia massacres after Kyiv lifted its moratorium; work began at Puzniki, where at least 42 victims
+    were found.
+  since: 2025-01
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.euronews.com/my-europe/2025/01/11/poland-and-ukraine-agree-to-exhume-ww2-volhynia-massacre-victims
+    title: Poland and Ukraine agree to exhume WW2 Volhynia massacre victims
+    publisher: Euronews
+    date: 2025-01-11
+    tier: 3
+- to: TUR
+  layer: action
+  type: visit
+  summary: Zelensky attended the NATO summit in Ankara on 7-8 Jul 2026, where allies pledged EUR 70bn for Ukraine in 2026 and at least as much in 2027, and met Erdogan again in New York in Sep 2026 (maritime
+    security, a Black Sea truce, trade target of USD 10bn).
+  since: 2026-07-07
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.eurointegration.com.ua/eng/news/2026/07/7/7241099/
+    title: Zelenskyy arrives at NATO summit in Ankara
+    publisher: European Pravda
+    date: 2026-07-07
+    tier: 3
+  - url: https://aa.com.tr/en/eurasia/zelenskyy-says-ukraine-very-open-to-turkiye-hosting-trilateral-peace-talks/4067073
+    title: Zelenskyy says Ukraine 'very open' to Turkiye hosting trilateral peace talks
+    publisher: Anadolu Agency
+    date: 2026-09
+    tier: 3
+- to: org-nato
+  layer: action
+  type: agreement
+  summary: The Ankara summit declaration (8 Jul 2026) reaffirmed support for Ukraine's territorial integrity and pledged EUR 70bn for 2026 and at least the same in 2027; Kyiv says it was recognised as a
+    contributor to Euro-Atlantic security. Trump announced the Patriot production licence at the summit.
+  since: 2026-07-08
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://english.enabbaladi.net/archives/2026/07/ankara-summit-sets-nato-priorities-backs-ukraine/
+    title: Ankara Summit Sets NATO Priorities, Backs Ukraine
+    publisher: Enab Baladi
+    date: 2026-07
+    tier: 3
+  - url: https://euromaidanpress.com/2026/07/03/ukraine-wants-the-ankara-summit-to-name-it-a-nato-security-contributor-not-just-an-aid-recipient/
+    title: Ukraine wants the Ankara summit to name it a NATO security contributor - not just an aid recipient
+    publisher: Euromaidan Press
+    date: 2026-07-03
+    tier: 3
+  - url: https://www.intellinews.com/trump-offers-ukraine-patriot-production-licence-in-major-policy-about-face-453534/
+    title: Trump offers Ukraine Patriot production licence in major policy about-face
+    publisher: bne IntelliNews
+    date: 2026-07
+    tier: 3
+- to: USA
+  layer: action
+  type: visit
+  summary: Zelensky met Trump at the White House on 28 Jul 2026 to discuss Patriot licences and the revival of the diplomatic process; the White House called it positive and productive.
+  since: 2026-07-28
+  until: 2026-07-28
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.local10.com/news/world/2026/07/28/zelenskyy-has-a-good-meeting-with-trump-at-the-white-house-as-he-seeks-more-cooperation-with-us/
+    title: Zelenskyy has a 'good meeting' with Trump at the White House as he seeks more cooperation with US
+    publisher: AP via Local 10
+    date: 2026-07-28
+    tier: 3
+- to: USA
+  layer: action
+  type: visit
+  summary: Trilateral talks with Russia and the US opened in Abu Dhabi on 23 Jan 2026 and continued in Geneva; they stalled in March when the Iran war absorbed Washington, and the Kremlin demanded the Donbas
+    withdrawal before further rounds. Kyiv's delegation went to Miami on 9-10 Oct 2026 for talks with Witkoff and Kushner.
+  since: 2026-01-23
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://rubryka.com/en/2026/01/23/vyvedennya-ukrayinskyh-vijsk/
+    title: Russia demands Ukrainian troop withdrawal from Donbas ahead of Abu Dhabi negotiations
+    publisher: Rubryka
+    date: 2026-01-23
+    tier: 3
+  - url: https://euromaidanpress.com/2026/03/18/zelenskyy-says-iran-war-is-delaying-ukraine-peace-talks-and-depleting-missile-stocks/
+    title: Zelenskyy says Iran war is delaying Ukraine peace talks and depleting missile stocks
+    publisher: Euromaidan Press
+    date: 2026-03-18
+    tier: 3
+  - url: https://en.lb.ua/news/2026/09/04/40996_after_geneva_talks_russia.html
+    title: After Geneva talks, Russia proposes that Ukraine's delegation travel to Moscow
+    publisher: LB.ua
+    date: 2026-09-04
+    tier: 3
+  - url: https://unn.ua/en/news/budanov-umerov-and-arakhamia-arrived-in-the-us-whats-on-the-agenda
+    title: 'Budanov, Umerov and Arakhamia arrived in the US: what is on the agenda'
+    publisher: UNN
+    date: 2026-10-09
+    tier: 3
+- to: CHN
+  layer: action
+  type: visit
+  summary: Sybiha and Wang Yi met at the Munich Security Conference on 13 Feb 2026; China pledged a new package of humanitarian energy aid and Kyiv raised Russian strikes that damaged Chinese businesses
+    in Ukraine.
+  since: 2026-02-13
+  until: 2026-02-13
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.mfa.gov.cn/eng/wjbzhd/202602/t20260215_11860282.html
+    title: Wang Yi meets Ukrainian Foreign Minister Andrii Sybiha (Munich, 13 Feb 2026)
+    publisher: Ministry of Foreign Affairs of the PRC
+    date: 2026-02-15
+    tier: 1
+  - url: https://www.caixinglobal.com/2026-02-14/china-pledges-energy-aid-to-ukraine-as-top-diplomats-meet-in-munich-102414717.html
+    title: China pledges energy aid to Ukraine as top diplomats meet in Munich
+    publisher: Caixin
+    date: 2026-02-14
+    tier: 3
+- to: BLR
+  layer: action
+  type: incident
+  summary: In June 2026 Zelensky demanded that Lukashenko shut down relay stations used for drone attacks on Ukraine and threatened to hit radar stations in Belarus; the equipment stopped working from 22
+    Jun and Lukashenko said Belarus would not send troops. Prisoner exchanges still pass through Belarus.
+  since: 2026-06-19
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.themoscowtimes.com/2026/06/26/lukashenko-heads-to-russia-for-putin-meeting-amid-rising-tensions-with-ukraine-a93110/pdf
+    title: Lukashenko heads to Russia for Putin meeting amid rising tensions with Ukraine
+    publisher: The Moscow Times
+    date: 2026-06-26
+    tier: 3
+  - url: https://news.liga.net/en/war/news/if-the-price-is-right-diplomat-assesses-the-likelihood-of-official-contacts-between-kyiv-and-lukashenko
+    title: '''If the price is right.'' Diplomat assesses the likelihood of official contacts between Kyiv and Lukashenko'
+    publisher: LIGA.net
+    date: 2026-06
+    tier: 3
+  - url: https://www.themoscowtimes.com/2026/10/02/lukashenko-vows-belarus-full-support-for-putin-on-ukraine-a93858
+    title: Lukashenko vows Belarus' full support for Putin on Ukraine
+    publisher: The Moscow Times
+    date: 2026-10-02
+    tier: 3
+- to: sub-transnistria
+  layer: action
+  type: agreement
+  summary: After Russian gas transit stopped on 1 Jan 2025 and Tiraspol lost its supply, Zelensky offered Ukrainian coal for the Cuciurgan power station, even free of charge; Sandu said it was up to the
+    Tiraspol regime to accept.
+  since: 2025-01-25
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.euronews.com/my-europe/2025/01/26/kyiv-says-it-can-supply-moldova-with-coal-as-gas-transit-agreement-with-russia-ends
+    title: Kyiv says it can supply Moldova with coal as gas transit agreement with Russia ends
+    publisher: Euronews
+    date: 2025-01-26
+    tier: 3
+  - url: https://www.kyivpost.com/post/46053
+    title: Zelensky offers Ukrainian coal to ease energy crisis in Transnistria
+    publisher: Kyiv Post
+    date: 2025-01
+    tier: 3
+- to: MDA
+  layer: action
+  type: agreement
+  summary: Ukraine and Moldova opened their first accession cluster (fundamentals) together on 15 Jun 2026; in June the EU set the stage to decouple Moldova's track from Ukraine's.
+  since: 2026-06-15
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.euronews.com/2026/06/22/eu-sets-stage-for-decoupling-moldovas-accession-bid-from-ukraines
+    title: EU sets stage for decoupling Moldova's accession bid from Ukraine's
+    publisher: Euronews
+    date: 2026-06-22
+    tier: 3
+  - url: https://www.eurointegration.com.ua/eng/news/2026/09/29/7246508/
+    title: EU to try to overcome Hungary's veto on negotiating clusters 2 and 3 for Ukraine on Tuesday
+    publisher: European Pravda
+    date: 2026-09-29
+    tier: 3
+- to: HRV
+  layer: action
+  type: agreement
+  summary: Croatia has sent over EUR 300m of military assistance since 2022 (NATO Secretary General, Jan 2026); 30 M-84A4 tanks and 30 M-80 vehicles went through Germany against a EUR 144.8m credit. President
+    Milanovic refuses to authorise officers for NATO's NSATU and the Sabor did not approve the EU training mission. (Mirrored from Croatia's card.)
+  since: 2022-02-24
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://vlada.gov.hr/croatia-contributes-significantly-to-collective-security-we-have-exceeded-the-2-percent-of-gdp-allocation-for-defense/45899
+    title: 'Croatia contributes significantly to collective security (Rutte: over EUR 300m of military assistance to Ukraine since 2022)'
+    publisher: Government of Croatia
+    date: 2026-01-12
+    tier: 1
+  - url: https://www.defensenews.com/global/europe/2025/12/11/croatia-buys-german-leopard-tanks-using-eu-loans/
+    title: Croatia buys German Leopard tanks using EU loans
+    publisher: Defense News
+    date: 2025-12-11
+    tier: 3
+- to: MKD
+  layer: action
+  type: agreement
+  summary: North Macedonia and Ukraine have agreements on trade, investment protection, culture, education, tourism, transport and military cooperation; Skopje has given humanitarian and military aid since
+    2022 but abstained on the EU-backed UNGA text in Feb 2025. (Mirrored from North Macedonia's card.)
+  since: 2022-02-24
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://enlargement-infohub.eu/wp-content/uploads/2025/11/north-macedonia-report-2025.pdf
+    title: 'North Macedonia 2025 Report (regional relations: Ukraine)'
+    publisher: European Commission
+    date: 2025-11-04
+    tier: 1
+  - url: https://dia.dp.gov.ua/en/north-macedonia-and-ukraine-during-wartime-support-and-solidarity/
+    title: 'North Macedonia and Ukraine during wartime: support and solidarity'
+    publisher: Dnipropetrovsk Regional State Administration (Ukraine)
+    date: 2025
+    tier: 1
+- to: XKX
+  layer: action
+  type: agreement
+  summary: Kosovo announced its first military aid to Ukraine on 20 Mar 2024 (armoured vehicles, trucks, mortar rounds) and trained Ukrainian deminers, although Ukraine does not recognise Kosovo. (Mirrored
+    from Kosovo's card.)
+  since: 2024-03-20
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://euromaidanpress.com/2024/03/20/kosovo-announces-its-first-ever-military-aid-packages-for-ukraine/
+    title: Kosovo announces its first-ever military aid packages for Ukraine
+    publisher: Euromaidan Press
+    date: 2024-03-20
+    tier: 3
+- to: SRB
+  layer: action
+  type: visit
+  summary: Vucic made his first visit to Ukraine on 11 Jun 2025, at the Ukraine-South East Europe summit in Odesa; Serbia abstained on the 24 Feb 2026 General Assembly text and has not joined EU sanctions
+    on Russia. (Mirrored from Serbia's card.)
+  since: 2025-06-11
+  until: 2025-06-11
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://euronews.com/my-europe/2025/06/11/serbias-president-visits-ukraine-for-the-first-time-in-eu-realignment-signal
+    title: Serbia's president visits Ukraine for the first time in EU realignment signal
+    publisher: Euronews
+    date: 2025-06-11
+    tier: 3
+  - url: https://europeanwesternbalkans.com/2026/02/25/serbia-abstains-again-from-voting-on-the-resolution-on-ukraine/
+    title: Serbia abstains again from voting on the resolution on Ukraine
+    publisher: European Western Balkans
+    date: 2026-02-25
+    tier: 3
+- to: org-eu
+  layer: action
+  type: agreement
+  summary: Under the EUR 90bn loan the Commission approved EUR 6.1bn of defence procurement on 24 Aug 2026; the EU expects to disburse about EUR 20bn by end-2026. Disbursement was blocked until Hungary's
+    change of government and the 23 Apr 2026 allocation agreement.
+  since: 2026-04-23
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.baltictimes.com/tsahkna__agreement_reached_on_allocating__90_billion_to_ukraine/
+    title: 'Tsahkna: Agreement reached on allocating EUR 90 billion to Ukraine'
+    publisher: Baltic Times
+    date: 2026-04
+    tier: 3
+  - url: https://www.pravda.com.ua/eng/news/2026/09/01/8051344/
+    title: EU points out that EUR 90bn loan will cover only two-thirds of Ukraine's needs
+    publisher: European Pravda
+    date: 2026-09-01
+    tier: 3
+- layer: alignment
+  type: treaty
+  summary: Strategic partnership declaration signed in Bucharest on 12 Mar 2026 by Dan and Zelensky, with framework agreements on energy cooperation and a joint statement on producing Ukrainian defence
+    systems, including drones, in Romania; it follows the 1997 Basic Political Treaty.
+  since: 2026-03-12
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://www.romania-insider.com/romania-ukraine-strategic-partnership-march-2026
+    title: Romania, Ukraine sign strategic partnership declaration during Zelensky's visit to Bucharest
+    publisher: Romania Insider
+    date: 2026-03-12
+    tier: 3
+  - url: https://www.internazionale.it/ultime-notizie-reuters/2026/03/12/romania-signs-deal-with-ukraine-on-joint-defence-production-including-drones
+    title: Romania signs deal with Ukraine on joint defence production including drones
+    publisher: Reuters via Internazionale
+    date: 2026-03-12
+    tier: 3
+  to: ROU
+  mirrored_from: ROU

@@ -1,0 +1,221 @@
+from: CHE
+relations:
+  # ---------- objective ----------
+  - to: org-eu
+    layer: objective
+    type: influence_goal
+    summary: "Bern wants the market access and cooperation of the Bilaterals III package without membership or loss of the vote at home; the Council of States approved it 29 to 15 on 28 Sep 2026 (all seven SVP members against), and the SVP, after losing its population-cap initiative in June 2026, now concentrates on defeating it."
+    since: 2024-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.bluewin.ch/en/news/after-a-lengthy-debate-the-council-of-states-clearly-endorses-the-eu-treaty-package-li.3616988", title: "After a lengthy debate, the Council of States clearly endorses the EU treaty package", publisher: "blue News", date: 2026-09-28, tier: 3}
+      - {url: "https://www.bluewin.ch/en/news/switzerland/supporters-of-bilateral-agreements-iii-are-currently-in-the-lead-3282769.html", title: "Supporters of Bilateral Agreements III are currently in the lead", publisher: "blue News", date: 2026-06-16, tier: 3}
+  - to: UKR
+    layer: objective
+    type: influence_goal
+    summary: "Switzerland seeks the role of venue and facilitator of a Ukraine settlement: it hosted the Bürgenstock summit in June 2024, and in 2026 the foreign minister opened US-Ukraine-Russia talks in Geneva; no Federal Council decision on a new peace conference had been taken in the source's date."
+    since: 2024-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.eda.admin.ch/en/switzerland-is-committed-to-peace-in-ukraine", title: "Switzerland is committed to peace in Ukraine", publisher: "Federal Department of Foreign Affairs (EDA)", date: 2026, tier: 1}
+      - {url: "https://www.bluewin.ch/en/news/cassis-switzerland-wants-to-revive-peace-talks-li.3597835", title: "Cassis: Switzerland wants to revive peace talks", publisher: "blue News", date: 2026, tier: 3}
+  - to: org-nato
+    layer: objective
+    type: influence_goal
+    summary: "Bern wants to keep its freedom to cooperate with NATO and other defence partners in peacetime without joining; on 27 Sep 2026 about 70% of voters rejected the neutrality initiative that would have barred cooperation with military alliances (except under attack) and limited sanctions to UN Security Council mandates."
+    since: 2026-09-27
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://aljazeera.com/news/2026/9/27/swiss-voters-set-to-reject-tighter-neutrality-rules-in-referendum", title: "Swiss voters reject tighter neutrality rules in referendum", publisher: "Al Jazeera", date: 2026-09-27, tier: 3}
+      - {url: "https://www.admin.ch/en/neutrality-initiative", title: "Neutrality initiative", publisher: "Swiss Federal Administration", date: 2026, tier: 1}
+  # ---------- alignment ----------
+  - to: org-eu
+    layer: alignment
+    type: treaty
+    summary: "Bilaterals III: 18 agreements and protocols, 94 EU legal acts and two joint declarations, negotiated from March to December 2024 and mostly signed in Brussels on 2 Mar 2026 by President Parmelin and Commission President von der Leyen; not yet ratified."
+    since: 2026-03-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.bluewin.ch/en/news/after-a-lengthy-debate-the-council-of-states-clearly-endorses-the-eu-treaty-package-li.3616988", title: "After a lengthy debate, the Council of States clearly endorses the EU treaty package", publisher: "blue News", date: 2026-09-28, tier: 3}
+      - {url: "https://www.thelocal.ch/20260112/why-2026-will-be-a-crucial-year-for-the-swiss-eu-relations", title: "Why 2026 will be a crucial year for Swiss-EU relations", publisher: "The Local Switzerland", date: 2026-01-12, tier: 3}
+  # ---------- dependency ----------
+  - to: org-eu
+    layer: dependency
+    type: trade_share
+    summary: "The EU is Switzerland's first trading partner: about CHF 302bn of trade in 2024, roughly 60% of the total (Swiss and neighbouring customs data); the EU takes 52.8% of chemical-pharma exports."
+    value: 0.6
+    unit: share_of_total_trade_2024
+    since: 2024
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.europa.eda.admin.ch/dam/en/sd-web/kOBCs4U3rxx7/20260209%20Folien%20Wirtschaftsbeziehungen%202026%20EN.pdf", title: "Economic relations Switzerland-EU 2026 (slides)", publisher: "Federal Department of Foreign Affairs (EDA)", date: 2026-02-09, tier: 1}
+      - {url: "https://scienceindustries.ch/_file/39189/20260129-mm-aussenhandel-2025-e.pdf", title: "Foreign trade 2025: chemical and pharmaceutical industries remain the backbone", publisher: "scienceindustries", date: 2026-01-29, tier: 2}
+  - to: USA
+    layer: dependency
+    type: trade_share
+    summary: "The US is the second export market after the EU: CHF 36.7bn of chemical-pharma exports alone in 2025. Under the 39% tariff of 1 Aug 2025 total Swiss exports to the US fell 14% in the three months to September 2025; the Nov 2025 framework cut the rate to 15% and covers about 40% of exports."
+    value: 36.7
+    unit: chf_billions_chem_pharma_exports_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "The figure is the pharma-chemical sector, not total goods exports; no all-sector US share was found."
+    sources:
+      - {url: "https://scienceindustries.ch/_file/39189/20260129-mm-aussenhandel-2025-e.pdf", title: "Foreign trade 2025: chemical and pharmaceutical industries remain the backbone", publisher: "scienceindustries", date: 2026-01-29, tier: 2}
+      - {url: "https://www.aljazeera.com/economy/2025/11/14/us-to-slash-tariffs-on-switzerland-to-15-from-crippling-39", title: "US to slash tariffs on Switzerland to 15% from crippling 39%", publisher: "Al Jazeera", date: 2025-11-14, tier: 3}
+  - to: USA
+    layer: dependency
+    type: arms_supply
+    summary: "Fighters and air defence come from the US. The F-35A order is being cut from 36 toward about 30 to fit the CHF 6bn ceiling approved by voters; the Patriot order (2019, about CHF 2bn) will arrive four to five years late, payments are frozen until the US names firm dates, and Bern has been told to study a second, preferably European, long-range system."
+    value: 30
+    unit: f35_jets_planned_after_cut_from_36
+    since: 2022
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.letemps.ch/suisse/la-suisse-pourrait-reduire-sa-commande-de-f-35-a-30-avions-pour-respecter-le-budget", title: "Switzerland could cut its F-35 order to 30 aircraft to respect the budget", title_original: "La Suisse pourrait réduire sa commande de F-35 à 30 avions pour respecter le budget", lang: fr, publisher: "Le Temps", date: 2026-01, tier: 3}
+      - {url: "https://www.defensenews.com/global/europe/2026/03/06/patriot-production-delays-prompt-switzerland-to-seek-european-air-defense-fallback", title: "Patriot production delays prompt Switzerland to seek European air defense fallback", publisher: "Defense News", date: 2026-03-06, tier: 3}
+      - {url: "https://breakingdefense.com/2026/04/switzerland-considers-complete-termination-of-us-patriot-order-vows-to-extend-payment-freeze/", title: "Switzerland considers complete termination of US Patriot order, vows to extend payment freeze", publisher: "Breaking Defense", date: 2026-04, tier: 3}
+  - to: XKX
+    layer: dependency
+    type: remittances
+    summary: "Mirror of Kosovo's side: the diaspora in Switzerland was the second source of Kosovo's remittances after Germany (17.6% of the total in H1 2023, 17.9% to September 2023 per central-bank data as relayed by the press); Kosovo's total was EUR 1.35bn in 2024 and EUR 1.4bn in 2025. The dependency is Kosovo's; it is shown from the host side."
+    value: 0.176
+    unit: share_of_kosovo_remittances_h1_2023
+    since: 2023
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "No 2025 country split was found (gap); the 2023 share is the latest. Not yet written on Kosovo's own file, which carries only the Germany row."
+    sources:
+      - {url: "https://www.kossev.info/en/za-sest-meseci-dijaspora-na-kosovo-poslala-635-miliona-evra/", title: "In six months the diaspora sent EUR 635 million to Kosovo", publisher: "KoSSev", date: 2023, tier: 3}
+      - {url: "https://www.oecd.org/en/publications/sme-policy-index-for-western-balkans-and-turkiye-2026-economy-profile-for-kosovo_5737889a-en/full-report/kosovo-sme-sector-overview_9d53e176.html", title: "SME Policy Index 2026 - economy profile for Kosovo", publisher: "OECD", date: 2026, tier: 1}
+      - {url: "https://www.institutigap.org/news/3612", title: "Remittances in Kosovo in 2025", publisher: "Institute GAP", date: 2026, tier: 2}
+  - to: SRB
+    layer: dependency
+    type: remittances
+    summary: "Mirror of Serbia's side: Switzerland was the second origin of remittances to Serbia in Jan-Oct 2025, with 11.7% of EUR 4.34bn, behind Germany (24.6%)."
+    value: 0.117
+    unit: share_of_serbian_remittances_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Reused from the Serbian card's research (National Bank of Serbia data as relayed by the press); the dependency is Serbia's, shown from the host side."
+    sources:
+      - {url: "https://biznis.rs/vesti/srbija/povecan-priliv-doznaka-u-2025-poslato-434-milijarde-evra/", title: "Remittance inflows up in 2025 - EUR 4.34bn sent (NBS data)", publisher: "Biznis.rs", date: 2025-12-29, tier: 3}
+  # ---------- action ----------
+  - to: org-eu
+    layer: action
+    type: agreement
+    summary: "Council of States voted 29 to 15 to take up Bilaterals III on 28 Sep 2026; contested points are the referendum rule (simple or cantonal majority), wage protection, immigration, dynamic adoption of EU law, state aid and research. Final parliamentary decision not before 2027; Leewas poll (Jun 2026): 46% for, 40% against."
+    since: 2026-09-28
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.bluewin.ch/en/news/after-a-lengthy-debate-the-council-of-states-clearly-endorses-the-eu-treaty-package-li.3616988", title: "After a lengthy debate, the Council of States clearly endorses the EU treaty package", publisher: "blue News", date: 2026-09-28, tier: 3}
+      - {url: "https://www.bluewin.ch/en/news/switzerland/supporters-of-bilateral-agreements-iii-are-currently-in-the-lead-3282769.html", title: "Supporters of Bilateral Agreements III are currently in the lead", publisher: "blue News", date: 2026-06-16, tier: 3}
+  - to: RUS
+    layer: action
+    type: sanction
+    summary: "On 19 Aug 2026 the Federal Council adopted the measures of the EU's 20th package (energy, trade, finance; first use of the anti-circumvention tool; ban on Russian crypto platforms), in force 20 Aug; earlier, on 22 May 2026, it listed 115 persons and entities and 46 vessels. About 2,790 persons and entities are under asset freezes."
+    since: 2022-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://cms.law/en/che/legal-updates/switzerland-s-adopts-the-20th-sanction-package-against-russia", title: "Switzerland adopts the 20th sanction package against Russia", publisher: "CMS", date: 2026-08, tier: 3}
+      - {url: "https://sanctionsnews.bakermckenzie.com/swiss-government-partially-implements-the-20th-eu-sanctions-package/", title: "Swiss government partially implements the 20th EU sanctions package", publisher: "Baker McKenzie Sanctions News", date: 2026-08, tier: 3}
+  - to: RUS
+    layer: action
+    type: sanction
+    summary: "Frozen Russian assets in Switzerland: about CHF 7.4bn of listed private persons and companies and CHF 7.45bn of the Russian central bank, roughly CHF 15bn in all (SECO report to March 2025)."
+    since: 2022-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Latest SECO figures found date from 2025; the 2026 listings may have raised the private total."
+    sources:
+      - {url: "https://www.bluewin.ch/en/news/switzerland-freezes-russian-assets-worth-15-billion-li.2633158", title: "Switzerland freezes Russian assets worth 15 billion", publisher: "blue News", date: 2025, tier: 3}
+      - {url: "https://www.seco.admin.ch/en/newnsb/Byvj7-WGL93MiOgIL-f2p", title: "SECO sanctions news (Russia/Ukraine measures)", publisher: "State Secretariat for Economic Affairs (SECO)", date: 2026, tier: 1}
+  - to: UKR
+    layer: action
+    type: incident
+    summary: "Direct arms supply and re-export of Swiss-origin weapons stay barred by the War Material Act and neutrality (Berset, Mar 2023); the National Council voted 98 to 96 for re-export conditional on a UN Security Council finding that Russia's war is illegal, and a committee bill to allow indirect exports is before parliament (status not confirmed)."
+    since: 2023-03-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.news24.com/news24/World/News/it-is-not-possible-to-export-weapons-to-ukraine-says-swiss-president-berset-citing-neutrality-20230308", title: "It is not possible to export weapons to Ukraine, says Swiss president Berset, citing neutrality", publisher: "News24", date: 2023-03-08, tier: 3}
+      - {url: "https://news.online.ua/en/switzerland-wants-to-allow-indirect-arms-exports-to-ukraine-880480/", title: "Swiss parliament seeks to allow indirect arms exports to Ukraine", publisher: "online.ua", date: 2024, tier: 3}
+  - to: IRN
+    layer: action
+    type: agreement
+    summary: "Switzerland hosted indirect US-Iran nuclear talks in Geneva in February 2026 (Oman mediating, Bern as host and facilitator) and acts as protecting power for both countries."
+    since: 2026-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.al-monitor.com/originals/2026/02/swiss-say-oman-host-us-iran-talks-geneva-next-week", title: "Swiss say Oman to host US-Iran talks in Geneva next week", publisher: "Al-Monitor", date: 2026-02, tier: 3}
+      - {url: "https://www.newarab.com/news/swiss-say-oman-host-us-iran-talks-geneva-next-week", title: "Swiss say Oman to host US-Iran talks in Geneva next week", publisher: "The New Arab", date: 2026-02, tier: 3}
+  - to: USA
+    layer: action
+    type: sanction
+    summary: "On 20 Mar 2026 the Federal Council stopped granting new arms-export licences to the US for as long as the Iran war lasts (citing neutrality and the War Material Act); existing licences stay valid and are reviewed by a group of experts."
+    since: 2026-03-20
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Status after April 2026 not confirmed."
+    sources:
+      - {url: "https://www.bluewin.ch/en/news/switzerland/federal-council-restricts-arms-exports-to-the-usa-li.3153182", title: "Federal Council restricts arms exports to the USA", publisher: "blue News", date: 2026-03-20, tier: 3}
+      - {url: "https://www.newsonair.gov.in/switzerland-suspends-approvals-for-weapons-exports-to-us-citing-its-neutrality-amid-ongoing-israeli-us-war-with-iran", title: "Switzerland suspends approvals for weapons exports to US citing its neutrality", publisher: "All India Radio News", date: 2026-03, tier: 3}
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "Framework trade agreement of 14 Nov 2025 cut the US tariff on Swiss goods from 39% to 15% in return for a Swiss corporate pledge of USD 200bn of US investment to the end of 2028; the Supreme Court's IEEPA ruling of 20 Feb 2026 removed the legal basis of the cap and, as of 30 Jun 2026, no final deal was signed."
+    since: 2025-11-14
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/economy/2025/11/14/us-to-slash-tariffs-on-switzerland-to-15-from-crippling-39", title: "US to slash tariffs on Switzerland to 15% from crippling 39%", publisher: "Al Jazeera", date: 2025-11-14, tier: 3}
+      - {url: "https://www.s-ge.com/export/en/article/aktuell/2026-e-usa-ct10-importzoelle-supreme-court", title: "US import duties after the Supreme Court ruling", publisher: "Switzerland Global Enterprise", date: 2026, tier: 1}
+      - {url: "https://news.bloomberglaw.com/international-trade/switzerland-pledges-further-steps-as-us-trade-talks-continue", title: "Switzerland Pledges Further Steps as US Trade Talks Continue", publisher: "Bloomberg", date: 2026-06-30, tier: 3}
+  - to: CHN
+    layer: action
+    type: agreement
+    summary: "Parmelin and Commerce Minister Wang Wentao announced in Bern on 20 Aug 2026 the end of negotiations to upgrade the free-trade agreement (five rounds from Sep 2024): 99.8% of Swiss exports duty-free, investor access; signature awaits domestic procedures."
+    since: 2026-08-20
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.seco.admin.ch/en/newnsb/aGSlWc_NOHlHRbL77edlo", title: "China and Switzerland conclude negotiations to optimise the free trade agreement", publisher: "State Secretariat for Economic Affairs (SECO)", date: 2026-08-20, tier: 1}
+      - {url: "https://www.caixinglobal.com/2026-08-25/china-and-switzerland-conclude-upgraded-free-trade-deal-102477733.html", title: "China and Switzerland conclude upgraded free trade deal", publisher: "Caixin", date: 2026-08-25, tier: 3}
+  - to: ISR
+    layer: action
+    type: sanction
+    summary: "No definitive war-material exports to Israel have been approved for years and no new licences were issued after the US-Israeli strikes on Iran began on 28 Feb 2026; dual-use and specific military goods worth over CHF 24m were nonetheless exported after 7 Oct 2023, which the economics secretariat calls lawful and critics contest."
+    since: 2023-10-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.bluewin.ch/en/news/international/arms-exports-to-israel-also-approved-during-the-war-li.3192234", title: "Arms exports to Israel also approved during the war", publisher: "blue News", date: 2026, tier: 3}
+      - {url: "https://www.srf.ch/news/dialog/ruestungsindustrie-schweizer-firmen-lieferten-militaerisch-nutzbare-gueter-nach-israel", title: "Swiss firms delivered militarily usable goods to Israel", title_original: "Rüstungsindustrie: Schweizer Firmen lieferten militärisch nutzbare Güter nach Israel", lang: de, publisher: "SRF", date: 2026, tier: 3}
