@@ -1,0 +1,433 @@
+from: ESP
+relations:
+  # ---------- objective ----------
+  - to: MAR
+    layer: objective
+    type: influence_goal
+    summary: "Madrid wants Morocco cooperative on migration, security and trade and quiet on Ceuta and Melilla; it backs the Moroccan autonomy plan for Western Sahara as the price (joint declaration of 7 Apr 2022; welcomed UNSCR 2797 on 4 Dec 2025). After the July 2026 Ceuta crossing it refuses any dialogue on sovereignty."
+    since: 2022-04-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://diplomatie.ma/en/moroccan-sahara-spain-welcomes-adoption-resolution-2797-which-emphasizes-genuine-autonomy-under-moroccan-sovereignty-most-feasible-solution", title: "Moroccan Sahara - Spain welcomes adoption of Resolution 2797 (as reported by Morocco's foreign ministry)", publisher: "Morocco Ministry of Foreign Affairs (official statement)", date: 2025-12-04, tier: 1}
+      - {url: "https://www.moroccoworldnews.com/2026/09/339312/spain-rules-out-dialogue-with-morocco-over-ceuta-and-melilla/", title: "Spain rules out dialogue with Morocco over Ceuta and Melilla", publisher: "Morocco World News", date: 2026-09-22, tier: 3}
+  - to: GBR
+    layer: objective
+    type: territorial_claim
+    summary: "Spain keeps its claim to sovereignty over Gibraltar; Albares said the July 2026 EU-UK treaty does not change it 'in the slightest'. The treaty removed the land-border fence and checks while the claim stays open."
+    since: 1713
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://aljazeera.com/news/2026/7/15/gibraltar-border-controls-lifted-is-it-part-of-schengen-the-uk-or-both", title: "Gibraltar border controls lifted: is it part of Schengen, the UK - or both?", publisher: "Al Jazeera", date: 2026-07-15, tier: 3}
+      - {url: "https://www.euronews.com/2026/07/15/gibraltar-enters-schengen-as-border-fence-comes-down-under-eu-uk-treaty", title: "Gibraltar enters Schengen as border fence comes down under EU-UK treaty", publisher: "Euronews", date: 2026-07-15, tier: 3}
+  - to: XKX
+    layer: objective
+    type: recognition_denied
+    summary: "Spain, one of five EU non-recognisers, keeps withholding recognition of Kosovo while backing the EU dialogue; its position is read as tied to Catalonia and the Basque Country. Mirrors the Kosovo card's row on Spain, with the same sources."
+    since: 2008-02-17
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://europeanwesternbalkans.com/?p=42737", title: "Spain's impact on Kosovo's accession process into the EU", publisher: "European Western Balkans", date: 2025, tier: 3}
+      - {url: "https://n1info.rs/english/news/spanish-ambassador-we-do-not-recognize-kosovo-s-independence/", title: "Spanish ambassador: we do not recognize Kosovo's independence", publisher: "N1", date: 2023, tier: 3}
+  - to: org-eu
+    layer: objective
+    type: influence_goal
+    summary: "Madrid pushes the EU to apply the EU-Mercosur agreement at once, even provisionally while the Court of Justice reviews it (Sanchez, Jan-Feb 2026), and to fund the interconnections that end the Iberian energy island."
+    since: 2026-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://es.ara.cat/economia/comercio/espana-apuesta-aplicacion-inmediata-acuerdo-mercosur_1_5625951.html", title: "Spain bets on immediate application of the Mercosur agreement", title_original: "Espana apuesta por la aplicacion inmediata del acuerdo con Mercosur", lang: es, publisher: "Ara", date: 2026-01, tier: 3}
+      - {url: "https://www.bolsamania.com/noticias/empresas/economia--sanchez-insta-a-los-agricultores-a-creer-en-el-acuerdo-ue-mercosur-porque-lo-ve-extraordinario-para-espana--21663056.html", title: "Sanchez urges farmers to believe in the EU-Mercosur agreement, which he sees as extraordinary for Spain", title_original: "Sanchez insta a los agricultores a creer en el acuerdo UE-Mercosur porque lo ve extraordinario para Espana", lang: es, publisher: "Bolsamania", date: 2026-02, tier: 3}
+  - to: VEN
+    layer: objective
+    type: influence_goal
+    summary: "After the US capture of Maduro (3 Jan 2026) Madrid seeks a working channel with Delcy Rodriguez - freedom for Spanish prisoners, lifting her individual EU sanctions (proposal of 23 Feb 2026), an invitation to the Ibero-American summit in Madrid on 4-5 Nov 2026 - while keeping the opposition leader Edmundo Gonzalez under asylum."
+    since: 2026-01-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://es.euronews.com/2026/04/29/albares-espana-invitara-delcy-rodriguez-cumbre-iberoamericana-madrid", title: "Albares: Spain will invite Delcy Rodriguez to the Ibero-American summit in Madrid", title_original: "Albares: Espana invitara a Delcy Rodriguez a la Cumbre Iberoamericana de Madrid", lang: es, publisher: "Euronews", date: 2026-04-29, tier: 3}
+      - {url: "https://theobjective.com/espana/politica/2026-01-16/sanchez-ue-sanciones-delcy-madrid/", title: "Sanchez to take to the EU the lifting of sanctions on Delcy for Madrid", title_original: "Sanchez llevara a la UE levantar las sanciones a Delcy para Madrid", lang: es, publisher: "The Objective", date: 2026-01-16, tier: 3}
+
+  # ---------- alignment ----------
+  - to: USA
+    layer: alignment
+    type: treaty
+    summary: "Joint-use arrangement for the US bases at Rota and Moron, in use since 1953 and under Spanish sovereignty; Spain's authorisation is required for operations outside the agreement or the UN Charter, which is why it could refuse the Iran war in March 2026. NATO membership (dataset) is the wider frame."
+    since: 1953
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2026/3/2/spain-refuses-to-let-us-use-bases-for-iran-attacks", title: "Spain refuses to let US use bases for Iran attacks", publisher: "Al Jazeera", date: 2026-03-02, tier: 3}
+      - {url: "https://en.ara.cat/politics/spain-rejects-lending-aid-to-the-for-the-war-against-iran-it-will-not-use-the-bases-of-rota-and-moron_1_5665735.html", title: "Spain refuses to provide aid to the US in the war against Iran: it will not use the Rota and Moron bases", publisher: "Ara", date: 2026-03, tier: 3}
+  - to: MAR
+    layer: alignment
+    type: treaty
+    summary: "Joint declaration of 7 Apr 2022 between Sanchez and King Mohammed VI opening a 'new stage' (cooperation on migration in the Mediterranean and Atlantic, autonomy plan as the 'most serious, realistic and credible basis'); the 13th High-Level Meeting took place in Madrid on 4 Dec 2025."
+    since: 2022-04-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://en.ara.cat/politics/spain-sides-with-morocco-and-supports-its-proposal-for-autonomy-for-western-sahara_1_4310485.html", title: "Spain sides with Morocco and supports its proposal for autonomy for Western Sahara", publisher: "Ara", date: 2022-03-18, tier: 3}
+      - {url: "https://www.atalayar.com/en/articulo/politics/spain-reiterates-its-support-for-morocco-over-western-sahara-and-highlights-the-reforms-undertaken-by-king-mohammed-vi/20251206111248221238.html", title: "Spain reiterates its support for Morocco over Western Sahara and highlights the reforms undertaken by King Mohammed VI", publisher: "Atalayar", date: 2025-12-06, tier: 3}
+  - to: DZA
+    layer: alignment
+    type: treaty
+    summary: "The 2002 Treaty of Friendship, Good-Neighbourliness and Cooperation, suspended by Algeria in June 2022 after the Sahara turn, was reactivated in March 2026 (Tebboune, after talks with Albares); an 8th High-Level Meeting is planned for October 2026."
+    since: 2002-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.dzair-tube.dz/en/president-tebboune-announces-reactivation-of-algeria-spain-treaty-of-friendship-and-good-neighborliness", title: "President Tebboune announces reactivation of Algeria-Spain treaty of friendship and good-neighborliness", publisher: "Dzair Tube (Algerian state-affiliated, official statement)", date: 2026-03-27, tier: 1}
+      - {url: "https://www.africanews.com/amp/2026/07/20/spain-algeria-seek-fresh-start-as-sanchez-visits-algiers/", title: "Spain, Algeria seek fresh start as Sanchez visits Algiers", publisher: "Africanews", date: 2026-07-20, tier: 3}
+  - to: UKR
+    layer: alignment
+    type: treaty
+    summary: "Bilateral security agreement signed in Madrid on 27 May 2024 for ten years (military aid, training, defence-industry and intelligence cooperation; EUR 1bn in 2024). Not ratified by Congress and not a defence guarantee; in Jan 2026 Sanchez said troops could join a post-ceasefire mission only after a ceasefire and a vote."
+    since: 2024-05-27
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/amp/news/2024/5/27/spain-pledges-1-billion-euros-of-military-aid-to-ukraine-in-2024", title: "Spain pledges 1 billion euros of military aid to Ukraine in 2024", publisher: "Al Jazeera", date: 2024-05-27, tier: 3}
+      - {url: "https://en.ara.cat/politics/sanchez-opens-the-door-to-sending-spanish-troops-to-ukraine-peacekeeping-mission_1_5610395.html", title: "Sanchez opens the door to sending Spanish troops to Ukraine peacekeeping mission", publisher: "Ara", date: 2026-01, tier: 3}
+  - to: GBR
+    layer: alignment
+    type: treaty
+    summary: "EU-UK agreement on Gibraltar signed in Brussels on 14 Jul 2026 by Albares, Sefcovic, Doughty and Picardo, in provisional effect from 15 Jul: the fence and routine passport and customs checks at the land border end, joint checks at the airport and port, a 15% transaction tax in Gibraltar; the European Parliament must still consent. Spain's sovereignty claim is reserved. GBR has no relations file in the atlas yet, so this is not mirrored."
+    since: 2026-07-14
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://aljazeera.com/news/2026/7/15/gibraltar-border-controls-lifted-is-it-part-of-schengen-the-uk-or-both", title: "Gibraltar border controls lifted: is it part of Schengen, the UK - or both?", publisher: "Al Jazeera", date: 2026-07-15, tier: 3}
+      - {url: "https://en.politis.com.cy/news/world/1019174/eu-uk-sign-gibraltar-deal-after-four-years-of-talks", title: "EU, UK sign Gibraltar deal after four years of talks", publisher: "Politis", date: 2026-07-14, tier: 3}
+
+  # ---------- dependency ----------
+  - to: DZA
+    layer: dependency
+    type: energy_import
+    summary: "Algeria supplied 34.5% of the natural gas that reached Spain in 2025 (128,504 GWh) and 29.2% in early 2026, mostly through Medgaz; Medgaz flow capacity rose from 28 to 32 million cubic metres a day after the thaw. In May 2022 flows fell by about 25% after the Sahara turn."
+    value: 0.345
+    unit: share_of_gas_imports_2025
+    since: 2022
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Medgaz capacity figures (28 to 32 mcm/d) come from an Algerian-sourced article; the shares come from the Spanish regulator's numbers as reported by Ara. Sanchez said in Algiers that Algeria is Spain's largest gas supplier this year."
+    sources:
+      - {url: "https://en.ara.cat/economy/spain-strengthens-itself-with-gas-from-algeria-in-the-midst-of-war-in-the-middle-east_1_5691272.html", title: "Spain strengthens itself with gas from Algeria in the midst of war in the Middle East", publisher: "Ara", date: 2026-03, tier: 3}
+      - {url: "https://www.moroccoworldnews.com/2022/05/46396/algeria-reduces-gas-supply-to-spain-by-25/", title: "Algeria reduces gas supply to Spain by 25%", publisher: "Morocco World News", date: 2022-05, tier: 3}
+  - to: MAR
+    layer: dependency
+    type: energy_export
+    summary: "Since 2022 the Maghreb-Europe pipeline runs in reverse: Morocco buys LNG, regasifies it at Spanish terminals and pipes it home, making it the second-largest customer of Spanish gas re-exports after France; flows fell by nearly a third from 15 Aug 2026 without an announced reason."
+    value: 2
+    unit: rank_among_customers_of_spanish_gas_reexports_2024
+    since: 2022
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.moroccoworldnews.com/2024/06/363377/morocco-emerges-as-major-buyer-of-gas-from-spain-two-years-after-reopening-pipeline", title: "Morocco emerges as major buyer of gas from Spain two years after reopening pipeline", publisher: "Morocco World News", date: 2024-06, tier: 3}
+      - {url: "https://www.moroccoworldnews.com/2026/08/335911/gas-flows-from-spain-to-morocco-fall-nearly-a-third-since-last-week/", title: "Gas flows from Spain to Morocco fall nearly a third since last week", publisher: "Morocco World News", date: 2026-08, tier: 3}
+  - to: MAR
+    layer: dependency
+    type: trade_share
+    summary: "Bilateral trade of EUR 21bn in 2025 according to Albares (Feb 2026); Morocco is the main partner for Spanish migration control and customs crossings at Ceuta and Melilla, whose commercial reopening began in Jan 2025."
+    value: 21
+    unit: eur_bn_bilateral_trade_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.moroccoworldnews.com/2026/02/278106/albares-describes-morocco-spain-ties-as-most-powerful-following-bourita-meeting/", title: "Albares describes Morocco-Spain ties as most powerful following Bourita meeting", publisher: "Morocco World News", date: 2026-02, tier: 3}
+      - {url: "https://www.atalayar.com/en/articulo/politics/morocco-and-spain-finalise-the-opening-of-customs-in-ceuta-and-melilla/20250103111416209544.html", title: "Morocco and Spain finalise the opening of customs in Ceuta and Melilla", publisher: "Atalayar", date: 2025-01-03, tier: 3}
+  - to: UKR
+    layer: dependency
+    type: arms_supply
+    summary: "Spain supplies Ukraine with military aid under the 2024 agreement - EUR 1bn pledged for 2024 and a further EUR 5bn over 2024-2027 under the European Peace Facility's Ukraine Assistance Fund as reported at signing."
+    value: 1
+    unit: eur_bn_military_aid_pledged_2024
+    since: 2024-05-27
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/amp/news/2024/5/27/spain-pledges-1-billion-euros-of-military-aid-to-ukraine-in-2024", title: "Spain pledges 1 billion euros of military aid to Ukraine in 2024", publisher: "Al Jazeera", date: 2024-05-27, tier: 3}
+  - to: TUR
+    layer: dependency
+    type: arms_supply
+    summary: "Spain became the first export customer of the Turkish Hurjet jet trainer: contract of 28 Dec 2025 for 30 aircraft (options for 15 more), deliveries from 2028, to replace the SF-5M; value reported between EUR 1.56bn (Janes, budget documents) and EUR 2.6bn (Turkish figures). A NATO co-member buying from a partner outside the EU."
+    value: 30
+    unit: hurjet_trainers_ordered_2025
+    since: 2025-12-28
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Contract value conflicts: about EUR 2.4bn (press), EUR 2.6bn (Turkish officials), EUR 1.56bn (Spanish budget document via Janes); the aircraft count is the stable figure."
+    sources:
+      - {url: "https://theaviationist.com/2025/12/30/spain-signs-contract-for-30-hurjets/", title: "Spain signs contract for 30 Hurjets", publisher: "The Aviationist", date: 2025-12-30, tier: 3}
+      - {url: "https://www.janes.com/osint-insights/defence-news/defence/spain-awards-hurjet-procurement-contract", title: "Spain awards Hurjet procurement contract", publisher: "Janes", date: 2025-12, tier: 2}
+  - to: CUB
+    layer: dependency
+    type: investment
+    summary: "Spanish hotel chains run Cuba's tourism sector; Melia (34 hotels) announced in July 2026 it would cease operations amid US sanctions and the fuel squeeze, and Iberostar had already stopped managing hotels. Albares says Spain does not accept military intervention in Latin America and that Cuba should decide its future. Single outlet for the Melia exit."
+    value: 34
+    unit: melia_hotels_in_cuba_2026
+    since: 2026-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://diplomatictimes.net/2026/07/21/spanish-melia-to-cease-operations-in-cuba/", title: "Spanish Melia to cease operations in Cuba", publisher: "Diplomatic Times", date: 2026-07-21, tier: 4}
+      - {url: "https://easternherald.com/2026/06/02/spain-rejects-us-military-intervention-cuba-albares-latin-america/", title: "Spain rejects US military intervention in Cuba - Albares", publisher: "Eastern Herald", date: 2026-06-02, tier: 4}
+
+  # ---------- action ----------
+  - to: USA
+    layer: action
+    type: incident
+    summary: "Spain refused the US the use of Rota and Moron (and, on 30 Mar, its airspace) for the US-Israeli war on Iran that began on 28 Feb 2026; Albares and Robles said the bases would not serve operations outside the agreement or the UN Charter and the US moved 15 aircraft, including tankers, out of the bases. Sanchez repeated the refusal in Congress and at the UN on 23 Sep 2026."
+    since: 2026-03-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.aljazeera.com/news/2026/3/2/spain-refuses-to-let-us-use-bases-for-iran-attacks", title: "Spain refuses to let US use bases for Iran attacks", publisher: "Al Jazeera", date: 2026-03-02, tier: 3}
+      - {url: "https://theaviationist.com/2026/03/30/spain-continues-to-deny-airspace-operation-epic-fury/", title: "Spain continues to deny airspace for Operation Epic Fury", publisher: "The Aviationist", date: 2026-03-30, tier: 3}
+      - {url: "https://www.rtve.es/noticias/20260924/asamblea-general-onu-pedro-sanchez-discurso-cronica/17237882.shtml", title: "UN General Assembly: Pedro Sanchez's speech, chronicle", title_original: "Asamblea General de la ONU: el discurso de Pedro Sanchez, cronica", lang: es, publisher: "RTVE", date: 2026-09-24, tier: 3}
+  - to: USA
+    layer: action
+    type: incident
+    summary: "Trump threatened on 3 Mar 2026 to cut off all trade with Spain over the bases and defence spending (Bessent told to prepare USTR and Commerce action); no measure followed, the EU negotiates trade for all members, and on 8 Jul 2026 Trump said Spain had agreed to pay more, which Madrid denies. An earlier threat of tariffs and of expulsion from NATO came in Oct 2025."
+    since: 2025-10-15
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.usnews.com/news/world/articles/2026-03-03/trump-says-us-will-cut-all-trade-with-spain-over-military-bases-defence-spending", title: "Trump says US will cut all trade with Spain over military bases, defence spending", publisher: "US News (agency copy)", date: 2026-03-03, tier: 3}
+      - {url: "https://news.bgov.com/international-trade/trump-says-spain-agreed-to-pay-more-after-trade-embargo-threat", title: "Trump says Spain agreed to pay more after trade embargo threat", publisher: "Bloomberg Government", date: 2026-07-08, tier: 3}
+      - {url: "https://www.thelocal.es/20251015/trump-says-spain-should-be-punished-in-second-threat-over-nato-spend", title: "Trump says Spain should be punished in second threat over NATO spend", publisher: "The Local Spain", date: 2025-10-15, tier: 3}
+  - to: USA
+    layer: action
+    type: incident
+    summary: "Sanchez announced on 23 Jan 2026 that Spain would not take part in Trump's Board of Peace for Gaza, in contrast with Kosovo, which signed as a founding member."
+    since: 2026-01-23
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.elobservador.com.uy/espana/actualidad/pedro-sanchez-afirma-que-espana-no-participara-la-junta-paz-gaza-propuesta-trump-n6032030", title: "Pedro Sanchez says Spain will not take part in the Gaza Board of Peace proposed by Trump", title_original: "Pedro Sanchez afirma que Espana no participara en la Junta de Paz para Gaza propuesta por Trump", lang: es, publisher: "El Observador", date: 2026-01-23, tier: 3}
+  - to: USA
+    layer: action
+    type: incident
+    summary: "The chairs of the US Senate and House intelligence committees (Cotton, Crawford) wrote to the Director of National Intelligence in July 2025 asking for a review of intelligence sharing with Spain after the Interior Ministry's EUR 12.3m Huawei contracts for storing court-ordered wiretaps; Madrid says the contract meets the national security framework. Whether sharing was actually cut is not confirmed."
+    since: 2025-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://securityaffairs.com/179884/intelligence/spain-awarded-e12-3-million-in-contracts-to-huawei.html", title: "Spain awarded EUR 12.3 million in contracts to Huawei", publisher: "Security Affairs", date: 2025-07, tier: 4}
+      - {url: "https://www.telecoms.com/public-policy/eu-sits-on-the-fence-over-spanish-huawei-awkwardness", title: "EU sits on the fence over Spanish Huawei awkwardness", publisher: "Telecoms.com", date: 2025-07, tier: 3}
+  - to: org-nato
+    layer: action
+    type: agreement
+    summary: "Spain signed the Hague declaration (June 2025) but says it needs only about 2.1% of GDP, not 3.5% core plus 1.5% related by 2035, and published a Rutte letter to claim flexibility (NATO diplomats dispute it). At Ankara (7-8 Jul 2026) it again refused the 5% target; the government says defence spending rose to EUR 35.4bn in 2026 with EUR 8.45bn added in June."
+    since: 2025-06-25
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.lamoncloa.gob.es/lang/en/presidente/news/Paginas/2026/20260708-nato-turkiye-summit.aspx", title: "NATO Summit (Ankara)", publisher: "Moncloa - Presidency of the Government of Spain", date: 2026-07-08, tier: 1}
+      - {url: "https://www.aa.com.tr/en/europe/spain-stands-firm-against-natos-proposed-5-defense-spending-target/3987930", title: "Spain stands firm against NATO's proposed 5% defense spending target", publisher: "Anadolu Agency", date: 2026-07, tier: 3}
+      - {url: "https://thecorner.eu/news-spain/government-approved-an-additional-e6-287-billion-in-defense-spending-hours-before-the-nato-summit/126724/", title: "Government approved an additional EUR 6.287 billion in defense spending hours before the NATO summit", publisher: "The Corner", date: 2026-07, tier: 3}
+  - to: ISR
+    layer: action
+    type: sanction
+    summary: "Decree of 9 Sep 2025 and law ratified by Congress on 8 Oct 2025 (178-169) banning all arms and dual-use exports to and imports from Israel, fuel-carrying ships and arms-carrying aircraft from ports and airspace, and advertising of settlement products; the preamble calls Israel's response in Gaza an indiscriminate attack that experts call genocide."
+    since: 2025-09-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/9/8/spain-imposes-total-arms-embargo-on-israel-to-stop-genocide-in", title: "Spain PM Sanchez imposes arms embargo on Israel to stop Gaza genocide", publisher: "Al Jazeera", date: 2025-09-08, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2025/10/8/spains-parliament-formally-approves-israel-arms-embargo", title: "Spain's parliament formally approves Israel arms embargo", publisher: "Al Jazeera", date: 2025-10-08, tier: 3}
+  - to: ISR
+    layer: action
+    type: sanction
+    summary: "Entry bans in both directions in September 2025: Spain barred Ben-Gvir and Smotrich; Israel barred Deputy PM Yolanda Diaz and minister Sira Rego and cut official contact with them. Sa'ar called Spain's measures antisemitic and a distraction from corruption scandals; Madrid called the accusation false."
+    since: 2025-09-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.jns.org/saar-slaps-sanctions-on-two-anti-israel-spanish-ministers/", title: "Sa'ar slaps sanctions on two anti-Israel Spanish ministers", publisher: "JNS", date: 2025-09-08, tier: 3}
+      - {url: "https://www.jns.org/spain-bars-smotrich-ben-gvir-from-entry-amid-escalating-diplomatic-row", title: "Spain bars Smotrich, Ben-Gvir from entry amid escalating diplomatic row", publisher: "JNS", date: 2025-09, tier: 3}
+  - to: ISR
+    layer: action
+    type: expulsion
+    summary: "Ambassador Ana Maria Salomon, recalled in Sep 2025, was formally removed after a Council of Ministers decision on 10 Mar 2026; the embassy in Tel Aviv is run by a charge d'affaires, matching Israel's earlier downgrade of its Madrid mission after the 2024 recognition of Palestine."
+    since: 2026-03-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://euronews.com/2026/03/11/spain-formally-dismisses-ambassador-to-israel-amid-tensions-with-tel-aviv", title: "Spain formally dismisses ambassador to Israel amid tensions with Tel Aviv", publisher: "Euronews", date: 2026-03-11, tier: 3}
+      - {url: "https://english.adnkronos.com/2026/03/11/spain-withdraws-ambassador-in-israel-and-reduces-level-of-relations/", title: "Spain withdraws ambassador in Israel and reduces level of relations", publisher: "Adnkronos", date: 2026-03-11, tier: 3}
+  - to: MAR
+    layer: action
+    type: incident
+    summary: "Ceuta crossing of 29-31 Jul 2026 - about 49,000 entries by the Spanish count (60,000 per Ceuta's mayor), more than 100 deaths reported, most people returned to Morocco within days. Sanchez called it an attack on territorial integrity but did not blame Rabat; Morocco denies orchestrating it and says smuggling networks used a misread Spanish Supreme Court ruling of 29 Jun on summary returns. Figures are provisional and conflict across outlets."
+    since: 2026-07-30
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Counts conflict: 49,000 (government), 60,000 (Ceuta's mayor), about 80,000 (Wikipedia lead); deaths 72 to 141 across dates. Wikipedia is used only as an index here; the primary reporting cited is CNN, NPR and Al Jazeera."
+    sources:
+      - {url: "https://www.cnn.com/2026/08/01/europe/spain-morocco-migrants-intl", title: "The Supreme Court ruling at the center of Spain's Ceuta migrant crisis", publisher: "CNN", date: 2026-08-01, tier: 3}
+      - {url: "https://www.npr.org/2026/08/16/nx-s1-5927053/what-happened-in-ceuta", title: "What really happened in Ceuta? Why we may never find out", publisher: "NPR", date: 2026-08-16, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2026/8/12/morocco-says-working-to-prevent-potential-new-ceuta-crossings-surge", title: "Morocco says working to prevent potential new Ceuta crossings surge", publisher: "Al Jazeera", date: 2026-08-12, tier: 3}
+  - to: MAR
+    layer: action
+    type: incident
+    summary: "In August 2026 Moroccan ministers (Justice Minister Ouahbi, Endowments Minister Toufiq) restated Morocco's rights over Ceuta and Melilla; Spain summoned the Moroccan ambassador (a charge d'affaires attended), and Albares said on 22 Sep that sovereignty is not negotiable and 'shared sovereignty' is absurd, while speaking to Bourita daily."
+    since: 2026-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.moroccoworldnews.com/2026/09/339312/spain-rules-out-dialogue-with-morocco-over-ceuta-and-melilla/", title: "Spain rules out dialogue with Morocco over Ceuta and Melilla", publisher: "Morocco World News", date: 2026-09-22, tier: 3}
+      - {url: "https://www.moroccoworldnews.com/2026/09/337522/albares-warns-moroccan-ceuta-melilla-claims-could-strain-spain-morocco-ties/", title: "Albares warns Moroccan Ceuta, Melilla claims could strain Spain-Morocco ties", publisher: "Morocco World News", date: 2026-09, tier: 3}
+  - to: DZA
+    layer: action
+    type: visit
+    summary: "Sanchez visited Algiers on 20 Jul 2026 with the heads of Naturgy, Repsol, Enagas and Moeve and met Tebboune on energy, investment, migration and Western Sahara - the first visit by a Spanish prime minister since the 2022 break; no agreements reported signed, preparing an 8th High-Level Meeting in October 2026. Spain did not change its Sahara position."
+    since: 2026-07-20
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.africanews.com/amp/2026/07/20/spain-algeria-seek-fresh-start-as-sanchez-visits-algiers/", title: "Spain, Algeria seek fresh start as Sanchez visits Algiers", publisher: "Africanews", date: 2026-07-20, tier: 3}
+      - {url: "https://www.aa.com.tr/en/middle-east/spanish-prime-minister-visits-algeria-for-talks-to-deepen-bilateral-ties/4003822", title: "Spanish prime minister visits Algeria for talks to deepen bilateral ties", publisher: "Anadolu Agency", date: 2026-07-20, tier: 3}
+  - to: CHN
+    layer: action
+    type: visit
+    summary: "Sanchez's fourth visit to China in four years, 11-15 Apr 2026 (Xi Jinping, Li Qiang, Zhao Leji): 19 bilateral agreements, a new strategic dialogue, a call for an EU-China relationship based on partnership; earlier visit on 11 Apr 2025, marking 20 years of the comprehensive strategic partnership."
+    since: 2026-04-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.euronews.com/my-europe/2026/04/14/spain-strengthens-ties-with-china-as-sanchez-backs-beijings-middle-east-role", title: "Spain strengthens ties with China as Sanchez backs Beijing's Middle East role", publisher: "Euronews", date: 2026-04-14, tier: 3}
+      - {url: "https://www.lamoncloa.gob.es/lang/en/presidente/news/Paginas/2025/20250411-trip-to-china.aspx", title: "The President of the Government of Spain's trip to Beijing", publisher: "Moncloa - Presidency of the Government of Spain", date: 2025-04-11, tier: 1}
+  - to: RUS
+    layer: action
+    type: expulsion
+    summary: "Spain expelled 25 Russian diplomats and embassy staff in April 2022 after Bucha, citing a threat to national security; it applies every EU sanctions package since (20th on 23 Apr 2026, 21st on 23 Jul 2026). No 2025-26 espionage case was found in the sources consulted."
+    since: 2022-04-05
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://rubryka.com/en/?p=389595", title: "Spain plans to send off 25 Russian diplomats after the atrocities in Bucha", publisher: "Rubryka", date: 2022-04, tier: 3}
+      - {url: "https://www.exteriores.gob.es/en/Comunicacion/NotasPrensa/Paginas/2026_NOTAS_P/Albares-defiende-en-Bruselas-el-nuevo-paquete-de-sanciones-a-Rusia-en-visperas-del-cuarto-aniversario-de-la-guerra.aspx", title: "Albares defends in Brussels the new sanctions package on Russia on the eve of the fourth anniversary of the war", publisher: "Spanish Ministry of Foreign Affairs (official statement)", date: 2026-02, tier: 1}
+  - to: VEN
+    layer: action
+    type: incident
+    summary: "Spain granted asylum to the opposition candidate Edmundo Gonzalez, who left Caracas for Madrid in Sept 2024 after taking refuge in the Spanish embassy; Sanchez received him at Moncloa days after his arrival and called it a 'gesture of humanity'."
+    since: 2024-09-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.jurist.org/news/2024/09/venezuela-opposition-leader-edmundo-gonzalez-arrives-in-spain-after-securing-safe-passage/", title: "Venezuela opposition leader Edmundo Gonzalez arrives in Spain after securing safe passage", publisher: "JURIST", date: 2024-09, tier: 3}
+      - {url: "https://abcnews.go.com/International/wireStory/spanish-prime-minister-meets-exiled-venezuelan-opposition-leader-113616074", title: "Spanish prime minister meets with exiled Venezuelan opposition leader Gonzalez", publisher: "ABC News (AP)", date: 2024-09-12, tier: 3}
+  - to: ARG
+    layer: action
+    type: incident
+    summary: "After Milei called Sanchez's wife 'corrupt' at a Vox event in Madrid (May 2024), Spain announced on 21 May 2024 that its ambassador in Buenos Aires would be withdrawn 'definitively' and demanded an apology; Milei refused and did not reciprocate. Current ambassadorial status not confirmed."
+    since: 2024-05-21
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.laprensa.hn/mundo/milei-califica-disparate-retiro-embajadora-espana-NP19436092", title: "Milei calls Spain's withdrawal of its ambassador 'nonsense'", title_original: "Milei califica de disparate el retiro de la embajadora de Espana", lang: es, publisher: "La Prensa (Honduras)", date: 2024-05, tier: 3}
+      - {url: "https://www.ultimahora.com/la-tension-entre-argentina-y-espana-una-escalada-de-la-antidiplomacia-de-milei", title: "The tension between Argentina and Spain: an escalation of Milei's anti-diplomacy", title_original: "La tension entre Argentina y Espana: una escalada de la antidiplomacia de Milei", lang: es, publisher: "Ultima Hora", date: 2024-05-21, tier: 3}
+  - to: MEX
+    layer: action
+    type: visit
+    summary: "King Felipe VI acknowledged 'much abuse' during the conquest of the Americas (Madrid, Mar 2026), Sheinbaum welcomed it, and the King visited her in Mexico City in June 2026 on the way to the World Cup; it ends the rift opened by AMLO's 2019 demand for an apology and the 2024 inauguration snub."
+    since: 2026-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.thelocal.es/20260318/mexican-president-hails-spanish-kings-acknowledgement-of-abuses-during-conquest", title: "Mexican president hails Spanish King's acknowledgement of abuses during conquest", publisher: "The Local Spain", date: 2026-03-18, tier: 3}
+      - {url: "https://www.nst.com.my/amp/sports/football/2026/06/1473427/mexicos-sheinbaum-and-spanish-king-use-world-cup-to-mend-diplomatic", title: "Mexico's Sheinbaum and Spanish king use World Cup to mend diplomatic rift", publisher: "New Straits Times", date: 2026-06, tier: 3}
+  - to: MRT
+    layer: action
+    type: agreement
+    summary: "Joint declaration and circular-migration memorandum signed by Sanchez and Ghazouani in Nouakchott on 27-28 Aug 2024 (one-year pilot of labour migration, security cooperation against smuggling); in 2024 Sanchez and von der Leyen had announced EUR 210m for Mauritania. Follow-up in 2025 not confirmed."
+    since: 2024-08-27
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.euronews.com/2024/08/28/spain-and-mauritania-sign-an-agreement-to-regulate-migration", title: "Spain and Mauritania sign an agreement to regulate migration", publisher: "Euronews", date: 2024-08-28, tier: 3}
+      - {url: "https://www.thelocal.es/20240828/mauritania-and-spain-pledge-cooperation-on-migration", title: "Mauritania and Spain pledge cooperation on migration", publisher: "The Local Spain", date: 2024-08-28, tier: 3}
+  - to: ITA
+    layer: action
+    type: incident
+    summary: "After the Ceuta crossing Italy suspended Schengen free-movement arrangements with Spain for August 2026 (announced 30 Jul, approved 31 Jul by the Interior Ministry; targeted checks on non-EU travellers); Albares summoned the Italian ambassador and Sanchez answered on X that solidarity is optional only for those who ignore treaties and data. Brussels rejected the wider demand to strip Spain of Schengen status."
+    since: 2026-07-30
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://euronews.com/my-europe/2026/07/31/italy-suspends-schengen-with-spain-over-ceuta-migrant-crisis-shuts-air-and-sea-borders", title: "Italy suspends Schengen with Spain over Ceuta migrant crisis, shuts air and sea borders", publisher: "Euronews", date: 2026-07-31, tier: 3}
+      - {url: "https://www.wantedinrome.com/news/italy-suspends-schengen-travel-with-spain-over-ceuta-migrant-crisis.html", title: "Italy has suspended Schengen travel pact with Spain over the Ceuta migrant crisis", publisher: "Wanted in Rome", date: 2026-07-31, tier: 3}
+  - to: FRA
+    layer: action
+    type: agreement
+    summary: "Bay of Biscay electricity interconnection (Inelfe, joint venture of Red Electrica and RTE): 400 km, 300 km of it submarine, due 2028, doubling exchange capacity to 5,000 MW; the EIB lent EUR 1.6bn on top of a EUR 578m EU grant (16 Jun 2025). The Iberian peninsula has about 3% of electricity connected to neighbours against the EU's 15% target for 2030."
+    since: 2025-06-16
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.eib.org/en/press/all/2025-241-eib-supports-with-eur1-6-bn-the-strategic-bay-of-biscay-electricity-interconnection-between-spain-and-france", title: "EIB supports with EUR 1.6bn the strategic Bay of Biscay electricity interconnection between Spain and France", publisher: "European Investment Bank", date: 2025-06-16, tier: 1}
+      - {url: "https://www.ree.es/en/press-office/news/press-release/2025/06/el-bei-apoya-con-1600-millones-euros-interconexion-espana-francia-golfo-bizkaia", title: "EIB supports with EUR 1.6bn the strategic Bay of Biscay electricity interconnection between Spain and France", publisher: "Red Electrica", date: 2025-06, tier: 1}
+  - to: PRT
+    layer: action
+    type: incident
+    summary: "The 28 Apr 2025 blackout hit the whole Iberian peninsula; ENTSO-E's final report (Mar 2026) found a voltage-surge chain with several causes, including conventional plants not controlling voltage as expected. Spain and Portugal asked the EU to speed interconnections with France afterward."
+    since: 2025-04-28
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/03/20/iberian-blackout-was-caused-by-multiple-factors-report-says", title: "Iberian blackout was caused by multiple factors, report says", publisher: "Reuters (via Internazionale)", date: 2026-03-20, tier: 3}
+      - {url: "https://www.thelocal.es/20260320/how-the-perfect-storm-caused-spains-blackout", title: "How the perfect storm caused Spain's blackout", publisher: "The Local Spain", date: 2026-03-20, tier: 3}
+  - to: DEU
+    layer: action
+    type: incident
+    summary: "The three-nation FCAS fighter programme (France, Germany, Spain) reportedly collapsed in June 2026 over the Dassault-Airbus dispute; Indra fell about 4% and Spain, with the smallest industrial share, is left looking for another route (an Indra-Airbus alliance for a new fighter is mentioned). Berlin's Merz said in March 2026 that tariffs with the US are negotiated 'only together', with 'no way to treat Spain particularly badly'."
+    since: 2026-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://es.ara.cat/economia/industria/afecta-espana-ruptura-francia-alemania-avion-combate-europeo_1_5767559.html", title: "How the Franco-German split on the European fighter affects Spain", title_original: "Como afecta a Espana la ruptura entre Francia y Alemania por el avion de combate europeo", lang: es, publisher: "Ara", date: 2026-06, tier: 3}
+      - {url: "https://www.r4.com/articulos-y-analisis/valores/indra-cancelacion-del-programa-fcas", title: "Indra and the cancellation of the FCAS programme", title_original: "Indra y la cancelacion del programa FCAS", lang: es, publisher: "Renta 4", date: 2026-06-10, tier: 3}

@@ -23,7 +23,7 @@ REGIONS = {
     "western-balkans": ["SRB", "XKX", "HRV", "BIH", "MNE", "ALB", "MKD", "sub-rs"],
     "east-europe-black-sea": ["UKR", "MDA", "BLR", "GEO", "ARM", "AZE", "ROU", "BGR", "TUR"],
     "central-north-europe": ["POL", "HUN", "CZE", "SVK", "SVN", "DEU", "AUT", "CHE", "SWE", "FIN", "NOR", "DNK", "EST", "LVA", "LTU", "ISL", "LIE"],
-    "western-south-europe": ["FRA", "ITA", "GBR", "ESP", "NLD", "BEL", "GRC", "CYP", "PRT", "IRL", "LUX", "MLT", "AND", "MCO", "SMR", "VAT", "org-eu", "org-nato"],
+    "western-south-europe": ["ITA", "ESP", "NLD", "BEL", "GRC", "CYP", "PRT", "IRL", "LUX", "MLT", "AND", "MCO", "SMR", "VAT", "org-eu", "org-nato"],
     "middle-east": ["ISR", "IRN", "SAU", "ARE", "QAT", "EGY", "IRQ", "SYR", "LBN", "JOR", "YEM", "PSE", "KWT", "OMN", "BHR", "nsa-houthis", "nsa-hezbollah", "nsa-hamas", "nsa-sdf"],
     "south-central-asia": ["IND", "PAK", "AFG", "BGD", "LKA", "NPL", "BTN", "MDV", "KAZ", "UZB", "TKM", "KGZ", "TJK", "MNG"],
     "east-asia": ["JPN", "KOR", "PRK", "TWN"],
@@ -35,13 +35,13 @@ REGIONS = {
     "north-america": ["CAN", "MEX"],
     "central-america-caribbean": ["CUB", "GTM", "HND", "SLV", "NIC", "CRI", "PAN", "DOM", "HTI", "JAM", "TTO", "BHS", "BRB", "BLZ", "ATG", "DMA", "GRD", "KNA", "LCA", "VCT"],
     "south-america": ["BRA", "VEN", "ARG", "COL", "CHL", "PER", "ECU", "BOL", "PRY", "URY", "GUY", "SUR"],
-    "great-powers": ["USA", "CHN", "RUS"],
+    "great-powers": ["USA", "CHN", "RUS", "GBR", "FRA"],   # the UN Security Council P5, all written by Fable last (Davide, 2026-10-12)
 }
 SONNET = set("""UKR MDA BLR GEO ARM AZE ROU BGR TUR POL HUN CZE SVK DEU AUT SWE FIN NOR DNK EST LVA LTU FRA ITA GBR ESP NLD BEL GRC CYP
 PRT org-eu org-nato ISR IRN SAU ARE QAT EGY IRQ SYR LBN JOR YEM PSE KWT OMN nsa-houthis nsa-hezbollah nsa-hamas nsa-sdf
 IND PAK AFG BGD KAZ UZB JPN KOR PRK TWN IDN VNM PHL THA MYS MMR AUS DZA MAR LBY SDN nsa-rsf ETH KEN SOM RWA COD ZAF NGA MLI
 NER BFA TCD CAN MEX CUB BRA VEN ARG COL CHL sub-rs""".split())
-FABLE = {"USA", "CHN", "RUS"}
+FABLE = {"USA", "CHN", "RUS", "GBR", "FRA"}
 DONE = {"SRB", "XKX", "HRV", "BIH", "MNE", "ALB", "MKD"}
 
 
