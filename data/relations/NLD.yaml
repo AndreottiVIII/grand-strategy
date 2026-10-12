@@ -1,0 +1,462 @@
+from: NLD
+relations:
+  # ---------- objective ----------
+  - to: USA
+    layer: objective
+    type: influence_goal
+    summary: "The Hague wants the United States kept inside European security while a European pillar is built around it: the Jetten coalition agreement calls NATO the cornerstone, the US the power with which the Netherlands shares most interests, and a stronger European pillar within NATO its main security goal (with a European buying mechanism and an opening to French-led talks on nuclear deterrence)."
+    since: 2026-02-23
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.atlanticcouncil.org/dispatches/what-rob-jettens-new-minority-government-means-for-dutch-and-european-defense/", title: "What Rob Jetten's new minority government means for Dutch and European defense", publisher: "Atlantic Council", date: 2026-03-13, tier: 2}
+      - {url: "https://www.government.nl/latest/news/2025/06/13/the-netherlands-supports-nato-5-target", title: "The Netherlands supports NATO 5% target", publisher: "Government of the Netherlands", date: 2025-06-13, tier: 1}
+  - to: org-nato
+    layer: objective
+    type: influence_goal
+    summary: "Rearm from about 2.6% of GDP (NATO estimate for 2025) to the 3.5% core-defence target of the Hague declaration by 2035, with a coalition plan to buy 40% of equipment jointly with European partners and 50% from Dutch or European industry; a Dutchman, Mark Rutte, is Secretary General."
+    since: 2025-06-25
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://nltimes.nl/2026/03/26/dutch-defense-spending-surges-past-nato-targets-alliance-sets-sights-higher", title: "Dutch defense spending surges past NATO targets, alliance sets sights higher", publisher: "NL Times", date: 2026-03-26, tier: 3}
+      - {url: "https://www.atlanticcouncil.org/dispatches/what-rob-jettens-new-minority-government-means-for-dutch-and-european-defense/", title: "What Rob Jetten's new minority government means for Dutch and European defense", publisher: "Atlantic Council", date: 2026-03-13, tier: 2}
+  - to: UKR
+    layer: objective
+    type: influence_goal
+    summary: "Keep Ukraine in the fight and make Russia pay: about EUR 9.1bn spent on military aid and EUR 11.6bn earmarked (Dutch figures, July 2026), EUR 1bn into the PURL scheme to buy US weapons, a place in the ten-nation air-defence initiative; on 7 Jul 2026 the defence minister said that for new Patriot missiles 'we are at our limit'."
+    since: 2022-02-24
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.eurointegration.com.ua/eng/news/2026/07/7/7241103/index.amp", title: "Netherlands says it has exhausted its capacity to provide military aid to Ukraine", publisher: "Evropeiska Pravda", date: 2026-07-07, tier: 3}
+      - {url: "https://nltimes.nl/2026/07/14/netherlands-start-military-exercises-ukraine-help-design-new-air-defense-system", title: "Netherlands to join military exercises with Ukraine, help design new air defense system", publisher: "NL Times", date: 2026-07-14, tier: 3}
+  - to: RUS
+    layer: objective
+    type: influence_goal
+    summary: "The Hague seeks to hold Russia legally and financially responsible rather than to change its regime: for MH17 (196 Dutch nationals killed on 17 Jul 2014) it won findings of state responsibility at the ICAO Council (12 May 2025) and the European Court of Human Rights (9 Jul 2025), and it enforces sanctions at the port of Rotterdam."
+    since: 2014-07-17
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.government.nl/topics/mh17-incident/achieving-justice/state-responsibility", title: "Russia responsible for downing of Flight MH17 (ICAO Council decision)", publisher: "Government of the Netherlands", date: 2025-05-12, tier: 1}
+      - {url: "https://www.government.nl/latest/news/2025/07/09/european-court-of-human-rights-russia-responsible-for-downing-of-flight-mh17", title: "European Court of Human Rights: Russia responsible for downing of flight MH17", publisher: "Government of the Netherlands", date: 2025-07-09, tier: 1}
+  - to: CHN
+    layer: objective
+    type: influence_goal
+    summary: "Protect the trade-and-technology economy and manage economic security (Nexperia, ASML) without losing China as a trading partner: after the Nexperia row the two governments seek a 'pragmatic reset' (foreign ministers' call of 13 Mar 2026, a ministerial trade mission in July 2026) while The Hague follows US pressure on chip-equipment controls."
+    since: 2025-11-19
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.dutchnews.nl/2026/07/minister-sjoerdsma-leads-china-trade-mission-amid-tensions/", title: "Minister Sjoerdsma leads China trade mission amid tensions", publisher: "DutchNews.nl", date: 2026-07-29, tier: 3}
+      - {url: "https://www.scmp.com/news/china/diplomacy/article/3347424/china-and-netherlands-seek-pragmatic-reset-nexperia-row-rolls", title: "China and the Netherlands seek 'pragmatic' reset as Nexperia row rolls on", publisher: "South China Morning Post", date: 2026, tier: 3}
+  - to: ISR
+    layer: objective
+    type: influence_goal
+    summary: "Change Israeli policy through conditionality, not rupture: the Jetten coalition keeps sanctions on the Netanyahu government until 'meaningful steps', the Dutch pushed with Sweden for EU suspension of the trade part of the Association Agreement (Aug 2025), and the settlement-goods ban (in force 22 Sep 2026) is presented as compliance with international law 'not directed at Israel'."
+    since: 2025-07-28
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.jns.org/new-dutch-coalition-shifts-away-from-israel", title: "New Dutch coalition shifts away from Israel", publisher: "JNS", date: 2026-02-08, tier: 3}
+      - {url: "https://www.dutchnews.nl/2026/09/israel-strips-dutch-diplomats-status-over-settlement-goods-ban/", title: "Israel strips Dutch diplomats' status over settlement goods ban", publisher: "DutchNews.nl", date: 2026-09, tier: 3}
+  - to: PSE
+    layer: objective
+    type: influence_goal
+    summary: "The coalition commits to 'an independent, democratic and viable Palestinian state alongside a secure Israel', restores UNRWA cooperation and wants an international coalition to rebuild Gaza; the Netherlands does not recognise the State of Palestine (Veldkamp, Aug 2025: not planned 'at this time'; no change found under Jetten)."
+    since: 2026-02-23
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.jns.org/new-dutch-coalition-shifts-away-from-israel", title: "New Dutch coalition shifts away from Israel", publisher: "JNS", date: 2026-02-08, tier: 3}
+      - {url: "https://app.al-monitor.com/originals/2025/08/netherlands-rules-out-recognising-palestinian-state-now", title: "Netherlands rules out recognising Palestinian state now", publisher: "Al-Monitor", date: 2025-08, tier: 3}
+  - to: org-eu
+    layer: objective
+    type: influence_goal
+    summary: "Stay a frugal member: with Germany, Austria, Denmark, Finland and Sweden the Netherlands asked on 28 Sep 2026 for cuts of several hundred billion euros in the 2028-34 EU budget; no eurobonds but support for defence instruments (SAFE, a Defence Fund); in Sept 2024 it asked for an asylum opt-out, which the Commission said needs a treaty change."
+    since: 2025-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.intellinews.com/six-net-contributors-demand-hundreds-of-billions-off-the-eu-s-next-budget-464258", title: "Six net contributors demand hundreds of billions off the EU's next budget", publisher: "bne IntelliNews", date: 2026-09-29, tier: 3}
+      - {url: "https://ecre.org/netherlands-government-announces-strictest-asylum-policy-ever-and-requests-opt-out-from-eu-migration-pact", title: "Netherlands: government announces strictest asylum policy ever and requests opt-out from EU migration pact", publisher: "ECRE", date: 2024-09, tier: 3}
+  - to: sub-curacao
+    layer: objective
+    type: territorial_claim
+    summary: "The Kingdom holds and defends its Caribbean parts: foreign policy and defence are Kingdom affairs. In the 2025-26 Venezuela crisis the Dutch armed forces chief said a US carrier lay under 100 km from Curaçao and that the build-up far exceeds counter-drug needs; the government kept the Kingdom out of the US operation and denied the use of Curaçao."
+    since: 2010-10-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.government.nl/themes/government-and-democracy/caribbean-parts-of-the-kingdom/responsibilities-of-the-netherlands-aruba-curacao-and-st-maarten", title: "Responsibilities of the Netherlands, Aruba, Curaçao and St Maarten", publisher: "Government of the Netherlands", date: 2025, tier: 1}
+      - {url: "https://www.curacaochronicle.com/post/main/dutch-armed-forces-chief-concerns-about-curacao-are-justified-amid-rising-usvenezuela-tensions", title: "Dutch armed forces chief: concerns about Curaçao are justified amid rising US-Venezuela tensions", publisher: "Curaçao Chronicle", date: 2025, tier: 3}
+
+  # ---------- alignment ----------
+  - to: sub-aruba
+    layer: alignment
+    type: membership
+    summary: "Aruba is a constituent country of the Kingdom with separate status (status aparte) since 1 Jan 1986; foreign relations and defence are Kingdom affairs under the Charter."
+    since: 1986-01-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.government.nl/themes/government-and-democracy/caribbean-parts-of-the-kingdom/responsibilities-of-the-netherlands-aruba-curacao-and-st-maarten", title: "Responsibilities of the Netherlands, Aruba, Curaçao and St Maarten", publisher: "Government of the Netherlands", date: 2025, tier: 1}
+      - {url: "https://www.royal-house.nl/topics/legislation/charter-for-the-kingdom-of-the-netherlands", title: "Charter for the Kingdom of the Netherlands", publisher: "Royal House of the Netherlands", date: 2025, tier: 1}
+  - to: sub-curacao
+    layer: alignment
+    type: membership
+    summary: "Curaçao became a constituent country of the Kingdom on 10 Oct 2010 with the dissolution of the Netherlands Antilles; foreign relations and defence are Kingdom affairs."
+    since: 2010-10-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.government.nl/themes/government-and-democracy/caribbean-parts-of-the-kingdom/responsibilities-of-the-netherlands-aruba-curacao-and-st-maarten", title: "Responsibilities of the Netherlands, Aruba, Curaçao and St Maarten", publisher: "Government of the Netherlands", date: 2025, tier: 1}
+      - {url: "https://www.royal-house.nl/topics/legislation/charter-for-the-kingdom-of-the-netherlands", title: "Charter for the Kingdom of the Netherlands", publisher: "Royal House of the Netherlands", date: 2025, tier: 1}
+  - to: sub-sint-maarten
+    layer: alignment
+    type: membership
+    summary: "Sint Maarten became a constituent country of the Kingdom on 10 Oct 2010 (shared island with French Saint-Martin); foreign relations and defence are Kingdom affairs, and the Kingdom Acts of the Charter let The Hague legislate for it."
+    since: 2010-10-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.government.nl/themes/government-and-democracy/caribbean-parts-of-the-kingdom/responsibilities-of-the-netherlands-aruba-curacao-and-st-maarten", title: "Responsibilities of the Netherlands, Aruba, Curaçao and St Maarten", publisher: "Government of the Netherlands", date: 2025, tier: 1}
+      - {url: "https://www.royal-house.nl/topics/legislation/charter-for-the-kingdom-of-the-netherlands", title: "Charter for the Kingdom of the Netherlands", publisher: "Royal House of the Netherlands", date: 2025, tier: 1}
+  - to: DEU
+    layer: alignment
+    type: treaty
+    summary: "The 1 German-Netherlands Corps (Münster, since 1995) and the integration of all three Dutch combat brigades into German divisions - 11 Airmobile (2014), 43 Mechanised (2016), 13 Light into the 10th Panzer Division on 30 Mar 2023. Merz said in March 2026 that the German armed forces are not so closely interlocked with any other country; Jetten visited the Corps on 25 Sep 2026."
+    since: 1995-08-30
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://english.defensie.nl/latest/news/2023/03/30/13-light-armoured-brigade-completes-integration-between-dutch-combat-brigades-and-german-divisions", title: "13 Light Armoured Brigade completes integration between Dutch combat brigades and German divisions", publisher: "Ministry of Defence of the Netherlands", date: 2023-03-30, tier: 1}
+      - {url: "https://www.bundesregierung.de/breg-de/aktuelles/pressekonferenz-kanzler-merz-ministerpraesident-jetten-2411744", title: "Press conference of Chancellor Merz and Prime Minister Jetten", title_original: "Pressekonferenz von Kanzler Merz und dem niederländischen Ministerpräsidenten Jetten", lang: de, publisher: "Federal Government of Germany", date: 2026-03, tier: 1}
+      - {url: "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/25/mp-jetten-aanwezig-bij-1-german-netherlands-corps-in-munster", title: "Prime Minister Jetten attends 1 German-Netherlands Corps in Münster", title_original: "MP Jetten aanwezig bij 1 German-Netherlands Corps in Münster", lang: nl, publisher: "Government of the Netherlands", date: 2026-09-25, tier: 1}
+  - to: BEL
+    layer: alignment
+    type: treaty
+    summary: "BeNeSam: the two navies' operational staffs have been merged under Admiral Benelux in Den Helder since 1996, six Dutch and six Belgian replacement mine-countermeasure vessels are being built together (due by 2030), and Damen and FN Herstal signed a maritime defence memorandum in March 2026; the Netherlands holds the Benelux presidency in 2026."
+    since: 1996
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/BeNeSam", title: "BeNeSam", publisher: "Wikipedia (index)", date: 2026, tier: 4}
+      - {url: "https://esut.de/2026/03/meldungen/69005/damen-und-fn-herstal-kooperieren-bei-maritimen-verteidigungsloesungen/", title: "Damen and FN Herstal cooperate on maritime defence solutions", title_original: "Damen und FN Herstal kooperieren bei maritimen Verteidigungslösungen", lang: de, publisher: "ESUT", date: 2026-03, tier: 3}
+      - {url: "https://www.benelux.int/nl/publication/prioriteiten-nederlandse-voorzitterschap-in-2026/", title: "Priorities of the Dutch Benelux presidency in 2026", title_original: "Prioriteiten Nederlandse voorzitterschap in 2026", lang: nl, publisher: "Benelux Union", date: 2026, tier: 1}
+  - to: GBR
+    layer: alignment
+    type: treaty
+    summary: "On 7 Jul 2026, at the NATO summit in Ankara, Starmer and Jetten signed a maritime partnership worth about GBP 2.4bn: four amphibious ships each, built in UK yards to a Dutch design, plus unmanned systems and undersea-infrastructure protection; it builds on the UK-Netherlands Amphibious Force (1973 memorandum)."
+    since: 2026-07-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.gov.uk/government/news/new-uk-netherlands-maritime-partnership-set-to-strengthen-nato-and-back-uk-shipbuilding", title: "New UK-Netherlands maritime partnership set to strengthen NATO and back UK shipbuilding", publisher: "UK Government", date: 2026-07-07, tier: 1}
+      - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/07/07/uk-and-the-netherlands-sign-new-3-2-billion-maritime-partnership", title: "UK and the Netherlands sign new USD 3.2 billion maritime partnership", publisher: "Reuters via Internazionale", date: 2026-07-07, tier: 3}
+  - to: UKR
+    layer: alignment
+    type: treaty
+    summary: "Ten-year bilateral security agreement of 2024 (long-term military, financial and political support), the Dutch basis for the F-16 donation and the drone and air-defence projects; there is no defence guarantee."
+    since: 2024
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://euromaidanpress.com/2025/05/13/ukraine-isnt-in-nato-but-the-netherlands-keeps-sending-f-16s-and-billions-in-military-aid/", title: "Ukraine isn't in NATO but the Netherlands keeps sending F-16s and billions in military aid", publisher: "Euromaidan Press", date: 2025-05-13, tier: 3}
+      - {url: "https://www.eurointegration.com.ua/eng/news/2026/07/7/7241103/index.amp", title: "Netherlands says it has exhausted its capacity to provide military aid to Ukraine", publisher: "Evropeiska Pravda", date: 2026-07-07, tier: 3}
+
+  # ---------- dependency ----------
+  - to: USA
+    layer: dependency
+    type: energy_import
+    value: 0.24
+    unit: "share_of_energy_imports_2025"
+    summary: "The United States supplied about 24% of Dutch energy imports in 2025, up from 3% in 2015 (CBS, provisional; mostly LNG and crude oil); DutchNews put US LNG at 27% of Dutch gas imports in April 2025 (year of the data not stated). Total dependence on foreign energy rose from 70% (2015) to 77% (2025)."
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.cbs.nl/en-gb/news/2026/27/netherlands-relies-the-most-on-the-us-to-meet-energy-needs", title: "Netherlands relies the most on the US to meet energy needs", publisher: "Statistics Netherlands (CBS)", date: 2026, tier: 1}
+      - {url: "https://dutchnews.nl/2025/04/dutch-agree-deal-to-ramp-up-north-sea-natural-gas-production", title: "Dutch agree deal to ramp up North Sea natural gas production", publisher: "DutchNews.nl", date: 2025-04, tier: 3}
+  - to: NOR
+    layer: dependency
+    type: energy_import
+    value: 0.14
+    unit: "share_of_gas_imports_2025_press"
+    summary: "Norway supplied about 14% of Dutch gas imports (DutchNews, April 2025; a tier-4 consumer site gives 7%, so the figure is unsettled). Pipeline gas from Norway replaced Groningen, whose production ended in October 2023 and which the Senate closed for good by law in April 2024 (shutdown by 1 Oct 2024)."
+    since: 2024-10-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://dutchnews.nl/2025/04/dutch-agree-deal-to-ramp-up-north-sea-natural-gas-production", title: "Dutch agree deal to ramp up North Sea natural gas production", publisher: "DutchNews.nl", date: 2025-04, tier: 3}
+      - {url: "https://pgjonline.com/news/2024/april/dutch-senate-approves-law-to-permanently-close-shell-exxon-operated-groningen-gas-field", title: "Dutch Senate approves law to permanently close Shell, Exxon-operated Groningen gas field", publisher: "Pipeline & Gas Journal", date: 2024-04, tier: 3}
+      - {url: "https://www.gaslicht.com/energie-informatie/waar-komt-ons-gas-vandaan", title: "Where does our gas come from?", title_original: "Waar komt ons gas vandaan?", lang: nl, publisher: "Gaslicht.com (citing CBS)", date: 2025, tier: 4}
+  - to: RUS
+    layer: dependency
+    type: energy_import
+    value: 0.03
+    unit: "share_of_energy_imports_2025"
+    summary: "Russia's share of Dutch energy imports fell from 21% in 2021 to 3% in 2025 (CBS); the EU ban on Russian gas (new contracts from 18 Mar 2026, complete by end-2027) is in line with Dutch policy."
+    since: 2022-02-24
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.cbs.nl/en-gb/news/2026/27/netherlands-relies-the-most-on-the-us-to-meet-energy-needs", title: "Netherlands relies the most on the US to meet energy needs", publisher: "Statistics Netherlands (CBS)", date: 2026, tier: 1}
+      - {url: "https://www.consilium.europa.eu/en/infographics/eu-gas-supply/", title: "EU gas supply", publisher: "Council of the EU", date: 2026, tier: 1}
+  - to: DEU
+    layer: dependency
+    type: trade_share
+    value: 0.22
+    unit: "share_of_goods_exports_2025"
+    summary: "Germany is the first destination of Dutch goods, about 22% of exports of EUR 655bn in 2025 (CBS)."
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://longreads.cbs.nl/dutch-trade-in-facts-and-figures-2025/international-trade-in-goods/", title: "Dutch trade in facts and figures 2025 - international trade in goods", publisher: "Statistics Netherlands (CBS)", date: 2025, tier: 1}
+  - to: DEU
+    layer: dependency
+    type: military_presence
+    value: 3
+    unit: "dutch_combat_brigades_integrated_in_german_divisions"
+    summary: "All three Dutch combat brigades (11 Airmobile, 43 Mechanised, 13 Light) are attached to German divisions, so that Dutch land power depends on German readiness and procurement."
+    since: 2014
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://english.defensie.nl/latest/news/2023/03/30/13-light-armoured-brigade-completes-integration-between-dutch-combat-brigades-and-german-divisions", title: "13 Light Armoured Brigade completes integration between Dutch combat brigades and German divisions", publisher: "Ministry of Defence of the Netherlands", date: 2023-03-30, tier: 1}
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    value: 23.8
+    unit: "EUR_bn_goods_exports_to_China_2024"
+    summary: "Dutch goods exports to China rose 7% in 2024 to EUR 23.8bn (CBS); imports from China are far larger (EUR 104bn in 2023 by CBS's count, which includes goods merely passing through Rotterdam, down almost 17% on 2022)."
+    since: 2024
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.cbs.nl/en-gb/news/2025/08/dutch-exports-to-china-up-again-while-germany-s-have-fallen", title: "Dutch exports to China up again while Germany's have fallen", publisher: "Statistics Netherlands (CBS)", date: 2025-08, tier: 1}
+      - {url: "https://www.dutchnews.nl/2024/05/dutch-imports-from-china-fall-17-in-one-year/", title: "Dutch imports from China fall 17% in one year", publisher: "DutchNews.nl", date: 2024-05, tier: 3}
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    value: 0.33
+    unit: "share_of_ASML_sales_to_China_2025_guided_to_0.20_in_2026"
+    summary: "China took about a third of ASML's sales in 2025, a share the company guided down to about 20% in 2026 after export licences for advanced DUV machines (2023) and servicing (2024) and with a US MATCH Act proposal that would extend controls."
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.caixinglobal.com/2026-01-29/asml-expects-china-revenue-drop-following-backlog-fueled-surge-102409285.html", title: "ASML expects China revenue drop following backlog-fueled surge", publisher: "Caixin", date: 2026-01-29, tier: 3}
+      - {url: "https://www.trendforce.com/news/2026/08/25/news-u-s-may-push-near-total-asml-china-ban-on-duv-sales-and-servicing-amid-chinas-domestic-lithography-push/", title: "U.S. may push near-total ASML China ban on DUV sales and servicing", publisher: "TrendForce", date: 2026-08-25, tier: 3}
+  - to: UKR
+    layer: dependency
+    type: arms_supply
+    value: 24
+    unit: "F-16_aircraft_donated_and_delivered"
+    summary: "The Netherlands completed the donation of 24 F-16s in three stages (October 2024, February 2025, final batch from Volkel on 26 May 2025), with pilot training, spares and munitions; with Belgium, Denmark and Norway the coalition pledged up to 65. Other Dutch aid: EUR 400m for drones (Oct 2024), EUR 1bn into PURL; EUR 9.1bn spent in all by July 2026."
+    since: 2024-10
+    until: 2025-05-26
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://euromaidanpress.com/2025/05/26/netherlands-sends-last-batch-of-f-16s-to-protect-ukraine-amid-intensified-russian-attacks/", title: "Netherlands sends last batch of F-16s to protect Ukraine amid intensified Russian attacks", publisher: "Euromaidan Press", date: 2025-05-26, tier: 3}
+      - {url: "https://www.eurointegration.com.ua/eng/news/2026/07/7/7241103/index.amp", title: "Netherlands says it has exhausted its capacity to provide military aid to Ukraine", publisher: "Evropeiska Pravda", date: 2026-07-07, tier: 3}
+      - {url: "https://nos.nl/artikel/2539854-nederland-trekt-400-miljoen-uit-voor-de-ontwikkeling-van-drones-voor-oekraine", title: "The Netherlands sets aside EUR 400 million to develop drones for Ukraine", title_original: "Nederland trekt 400 miljoen uit voor de ontwikkeling van drones voor Oekraïne", lang: nl, publisher: "NOS", date: 2024-10-06, tier: 3}
+
+  # ---------- action ----------
+  - to: CHN
+    layer: action
+    type: incident
+    summary: "On 12 Oct 2025 the Dutch government took control of the Chinese-owned chipmaker Nexperia under the Goods Availability Act; Beijing banned exports of Nexperia China's chips and European carmakers warned they were days from halting lines."
+    since: 2025-10-12
+    until: 2025-10-12
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.reuters.com/world/china/dutch-government-intervenes-chinese-owned-computer-chip-firm-nexperia-2025-10-12/", title: "Dutch government intervenes at Chinese-owned chipmaker Nexperia", publisher: "Reuters", date: 2025-10-12, tier: 3}
+      - {url: "https://www.theguardian.com/business/2025/oct/29/europe-carmakers-china-computer-chip", title: "EU carmakers 'days away' from halting work as chip war with China escalates", publisher: "The Guardian", date: 2025-10-29, tier: 3}
+  - to: CHN
+    layer: action
+    type: incident
+    summary: "The Nexperia aftermath: China granted case-by-case exemptions to its export ban from 1 and 9 Nov 2025 after the Trump-Xi meeting of 30 Oct; The Hague suspended its order on 19 Nov 2025; the dispute went on - Nexperia China said in Aug 2026 it no longer needs Europe and a Chinese court froze Nexperia BV's stakes in four China units (31 Aug 2026)."
+    since: 2025-11-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.freemalaysiatoday.com/category/business/2025/11/01/china-to-exempt-some-nexperia-chips-from-export-ban", title: "China to exempt some Nexperia chips from export ban", publisher: "Free Malaysia Today (wire)", date: 2025-11-01, tier: 3}
+      - {url: "https://www.theguardian.com/business/2025/nov/19/netherlands-suspends-seizure-china-chipmaker-nexperia", title: "Netherlands suspends state seizure of Chinese chipmaker Nexperia", publisher: "The Guardian", date: 2025-11-19, tier: 3}
+      - {url: "https://www.reuters.com/world/asia-pacific/chinese-court-freezes-dutch-chipmaker-nexperia-bvs-stakes-four-china-units-2026-08-31/", title: "Chinese court freezes Dutch chipmaker Nexperia BV's stakes in four China units", publisher: "Reuters", date: 2026-08-31, tier: 3}
+  - to: CHN
+    layer: action
+    type: visit
+    summary: "The 'pragmatic reset': foreign minister Berendsen and Wang Yi spoke by phone on 13 Mar 2026 (the first contact since Nexperia; China calls it one of the most important bilateral relationships), and minister Sjoerdsma led the first ministerial trade mission since 2018 in July 2026."
+    since: 2026-03-13
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.mfa.gov.cn/mfa_eng/wjbzhd/202603/t20260315_11875064.html", title: "Wang Yi speaks with Dutch Foreign Minister Berendsen by phone (official readout)", publisher: "Ministry of Foreign Affairs of the PRC", date: 2026-03-15, tier: 1}
+      - {url: "https://www.dutchnews.nl/2026/07/minister-sjoerdsma-leads-china-trade-mission-amid-tensions/", title: "Minister Sjoerdsma leads China trade mission amid tensions", publisher: "DutchNews.nl", date: 2026-07-29, tier: 3}
+  - to: CHN
+    layer: action
+    type: sanction
+    summary: "Dutch export controls on ASML: licences required for advanced DUV lithography machines (2023) and for servicing (2024), cutting China out of the most advanced equipment under American pressure."
+    since: 2023-09-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.scmp.com/tech/tech-war/article/3278535/china-hit-hard-new-dutch-export-controls-asml-chip-making-equipment", title: "China hit hard by new Dutch export controls on ASML chip-making equipment", publisher: "South China Morning Post", date: 2024-09, tier: 3}
+      - {url: "https://www.caixinglobal.com/2026-01-29/asml-expects-china-revenue-drop-following-backlog-fueled-surge-102409285.html", title: "ASML expects China revenue drop following backlog-fueled surge", publisher: "Caixin", date: 2026-01-29, tier: 3}
+  - to: RUS
+    layer: action
+    type: incident
+    summary: "The ICAO Council found Russia responsible under the Chicago Convention for the downing of MH17 on 12 May 2025, on a complaint by Australia and the Netherlands."
+    since: 2025-05-12
+    until: 2025-05-12
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.government.nl/topics/mh17-incident/achieving-justice/state-responsibility", title: "Russia responsible for downing of Flight MH17 (ICAO Council decision)", publisher: "Government of the Netherlands", date: 2025-05-12, tier: 1}
+  - to: RUS
+    layer: action
+    type: incident
+    summary: "On 9 Jul 2025 the European Court of Human Rights ruled that Russia is responsible for the downing of MH17 and for failing to investigate, in cases brought by Ukraine and the Netherlands; Moscow rejects the judgments."
+    since: 2025-07-09
+    until: 2025-07-09
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.government.nl/latest/news/2025/07/09/european-court-of-human-rights-russia-responsible-for-downing-of-flight-mh17", title: "European Court of Human Rights: Russia responsible for downing of flight MH17", publisher: "Government of the Netherlands", date: 2025-07-09, tier: 1}
+  - to: RUS
+    layer: action
+    type: sanction
+    summary: "Rotterdam's harbour master screens ships for sanctions, and the government is drafting laws to act against shadow-fleet tankers and Russian espionage ships in the exclusive economic zone (bills due before summer 2026); Zelensky welcomed the work in March 2026."
+    since: 2026-01-31
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://nltimes.nl/2026/01/31/dutch-govt-working-laws-russian-fleet-espionage-ships", title: "Dutch government working on laws against Russian fleet espionage ships", publisher: "NL Times", date: 2026-01-31, tier: 3}
+      - {url: "https://www.pravda.com.ua/eng/news/2026/03/08/8024489", title: "Zelenskyy: Netherlands developing measures against Russia's shadow fleet", publisher: "Ukrainska Pravda", date: 2026-03-08, tier: 3}
+  - to: UKR
+    layer: action
+    type: exercise
+    summary: "In July 2026 the Netherlands announced joint military exercises with Ukraine and a role in designing a new air-defence system, with EUR 500m more for drones and air defence (June 2026); the defence minister said on 7 Jul that for new Patriot missiles the Netherlands is at its limit."
+    since: 2026-07-14
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://nltimes.nl/2026/07/14/netherlands-start-military-exercises-ukraine-help-design-new-air-defense-system", title: "Netherlands to join military exercises with Ukraine, help design new air defense system", publisher: "NL Times", date: 2026-07-14, tier: 3}
+      - {url: "https://www.eurointegration.com.ua/eng/news/2026/07/7/7241103/index.amp", title: "Netherlands says it has exhausted its capacity to provide military aid to Ukraine", publisher: "Evropeiska Pravda", date: 2026-07-07, tier: 3}
+  - to: ISR
+    layer: action
+    type: sanction
+    summary: "On 28 Jul 2025 the Netherlands declared the Israeli ministers Ben-Gvir and Smotrich persona non grata over their statements on Gaza and the West Bank."
+    since: 2025-07-28
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://english.adnkronos.com/2025/07/29/netherlands-bans-entry-to-israeli-ministers-smotrich-and-ben-gvir/", title: "Netherlands bans entry to Israeli ministers Smotrich and Ben-Gvir", publisher: "Adnkronos", date: 2025-07-29, tier: 3}
+  - to: ISR
+    layer: action
+    type: incident
+    summary: "Foreign minister Veldkamp resigned on 22 Aug 2025 because the cabinet would not agree to further sanctions on Israel; his party NSC left the Schoof government, which showed that Israel policy can break a Dutch cabinet."
+    since: 2025-08-22
+    until: 2025-08-22
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.theguardian.com/world/2025/aug/23/netherlands-foreign-minister-sanctions-israel-gaza", title: "Dutch foreign minister quits over failure to secure sanctions against Israel", publisher: "The Guardian", date: 2025-08-23, tier: 3}
+  - to: ISR
+    layer: action
+    type: sanction
+    summary: "A ban on goods from Israeli settlements entered into force on 22 Sep 2026; on 27 Sep Israel withdrew the status of the Dutch diplomats in Ramallah in retaliation, after having removed Dutch staff from the Gaza coordination centre in August. The Hague says the ban is not directed at Israel."
+    since: 2026-09-22
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.dutchnews.nl/2026/09/israel-strips-dutch-diplomats-status-over-settlement-goods-ban/", title: "Israel strips Dutch diplomats' status over settlement goods ban", publisher: "DutchNews.nl", date: 2026-09, tier: 3}
+      - {url: "https://www.algemeiner.com/2026/09/28/israel-orders-dutch-diplomats-ramallah-return-credentials-retaliation-settlement-trade-ban/", title: "Israel orders Dutch diplomats in Ramallah to return credentials in retaliation for settlements trade ban", publisher: "The Algemeiner", date: 2026-09-28, tier: 3}
+  - to: USA
+    layer: action
+    type: incident
+    summary: "In January 2026 Trump announced tariffs on the eight countries (the Netherlands among them) that sent troops to Greenland; the Dutch caretaker foreign minister called it 'blackmail' and Trump withdrew the threat on 21 Jan after a 'framework' with Rutte."
+    since: 2026-01-17
+    until: 2026-01-21
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.dutchnews.nl/2026/01/trumps-greenland-tariffs-are-blackmail-says-dutch-minister/", title: "Trump's Greenland tariffs are 'blackmail', says Dutch minister", publisher: "DutchNews.nl", date: 2026-01, tier: 3}
+      - {url: "https://www.axios.com/2026/01/21/trump-drops-greenland-tariff-invasion-threats", title: "Trump backs off Greenland tariff threat based on new 'solution'", publisher: "Axios", date: 2026-01-21, tier: 3}
+  - to: USA
+    layer: action
+    type: incident
+    summary: "After the US operation in Venezuela of 3 Jan 2026 the Netherlands said it had refused all involvement, denied the use of Curaçao and halted joint counter-drug operations with the US; it had stayed out of the US build-up from August 2025."
+    since: 2026-01-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.occrp.org/en/news/netherlands-refused-all-involvement-in-us-operations-against-venezuela-minister", title: "Netherlands refused all involvement in US operations against Venezuela: minister", publisher: "OCCRP", date: 2026-01-09, tier: 3}
+  - to: DNK
+    layer: action
+    type: exercise
+    summary: "In January 2026 the Netherlands, with Sweden, France, Norway, Finland and Germany, sent a small military contingent to Greenland at Denmark's request; Trump threatened tariffs on the eight countries and withdrew them on 21 Jan."
+    since: 2026-01-14
+    until: 2026-01-21
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://ruralradio.com/krvn/abc_news/trump-announces-tariffs-on-nato-allies-for-opposing-us-control-of-greenland-abcid918184d3/", title: "Trump announces tariffs on NATO allies for opposing US control of Greenland", publisher: "ABC News", date: 2026-01-17, tier: 3}
+      - {url: "https://www.axios.com/2026/01/21/trump-drops-greenland-tariff-invasion-threats", title: "Trump backs off Greenland tariff threat based on new 'solution'", publisher: "Axios", date: 2026-01-21, tier: 3}
+  - to: org-eu
+    layer: action
+    type: agreement
+    summary: "On 28 Sep 2026 the Netherlands signed with the leaders of Germany, Austria, Denmark, Finland and Sweden a letter asking the Irish presidency to cut the 2028-34 EU budget by several hundred billion euros."
+    since: 2026-09-28
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.intellinews.com/six-net-contributors-demand-hundreds-of-billions-off-the-eu-s-next-budget-464258", title: "Six net contributors demand hundreds of billions off the EU's next budget", publisher: "bne IntelliNews", date: 2026-09-29, tier: 3}
+  - to: org-nato
+    layer: action
+    type: agreement
+    summary: "The Netherlands hosted the NATO summit at The Hague on 24-25 June 2025, Mark Rutte's first as Secretary General, where allies agreed to spend 5% of GDP by 2035 (3.5% core defence)."
+    since: 2025-06-25
+    until: 2025-06-25
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://europeanwesternbalkans.com/2025/06/25/nato-leaders-agree-to-increase-defence-spending-to-5-of-gdp-at-the-hague-summit/", title: "NATO leaders agree to increase defence spending to 5% of GDP at the Hague summit", publisher: "European Western Balkans", date: 2025-06-25, tier: 3}
+      - {url: "https://www.government.nl/latest/news/2025/06/13/the-netherlands-supports-nato-5-target", title: "The Netherlands supports NATO 5% target", publisher: "Government of the Netherlands", date: 2025-06-13, tier: 1}
