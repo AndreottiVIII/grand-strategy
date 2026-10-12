@@ -3,6 +3,27 @@
 Decision log, newest first. The path matters more than the destination: record why,
 not only what. Dead ends are entries too.
 
+## 2026-10-12 · Before scaling: how to pay for the world
+
+Davide: research burns a sea of tokens and we must do the whole world - how do we
+optimise? Serbia cost ~650k tokens of research. Decisions (now in METHOD.md):
+
+1. Quality is the constraint, not cost. Three tiers of card: protagonist (~60-75),
+   secondary, minor; Davide corrects the proposed protagonist list.
+2. Region by region, Western Balkans complete first, every Balkan actor with a full card.
+3. Datasets (UN votes, trade, arms, remittances, debt, memberships, troops) enter on
+   their own as tier 1 for every actor, flagged `dataset`.
+4. One research agent per actor, fixed regional brief, writes YAML directly; no prose
+   reports rewritten by hand.
+5. Economical model for the draft; the best model's review of objectives, paradoxes,
+   reading and grades is **mandatory** ("ma poi ricordati di farlo").
+6. Sources in any language, with original title and translation.
+7. Minor cards: three objectives, 4-6 stances, dataset rows, a paradox if obvious.
+8. Review: best model always, Davide at his choosing; site public with "in
+   construction".
+
+Next: Kosovo as the cost test of the new pipeline; UN votes as the first dataset script.
+
 ## 2026-10-12 · Home: the world of today, in flags
 
 Davide, with Boetti's *Mappa* as the reference: the home must be a base map of the

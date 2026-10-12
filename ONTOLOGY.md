@@ -26,6 +26,7 @@ iso2: rs                    # flag via flagcdn.com; non-states use `flag: flags/
 wikipedia: https://en.wikipedia.org/wiki/Serbia   # every actor links to English Wikipedia
 regions: [western-balkans]  # an actor can be in several (Turkey: balkans, middle-east, caucasus)
 card: full                  # full = has a grand-strategy card; stub = exists only as a node others relate to
+tier: protagonist           # protagonist | secondary | minor - how deep the card goes (METHOD.md)
 last_verified: 2026-10-12   # full cards only
 recognition:                # only where it matters (Kosovo, Taiwan, Palestine, SADR...)
   note: ...
@@ -137,10 +138,13 @@ relations:
     confidence: A
     sources:
       - url: ...
-        title: ...
+        title: ...              # English; for a source in another language this is the translation
+        title_original: ...     # optional, the title as published
+        lang: sr                # optional, ISO 639-1, when not English
         publisher: ...
         date: ...
         tier: 1
+        dataset: unga-votes     # optional: rows imported by tools/datasets/ name their script here
 ```
 
 Type vocabulary (?: to grow with the pilot, but never freely):

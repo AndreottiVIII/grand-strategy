@@ -57,6 +57,13 @@ Pilot demo built on 2026-10-12: one full card (Serbia) with 18 stances and 43 re
 
 ## Working rules
 
+- **Method is in METHOD.md** (tiers, region-by-region order, pipeline, protagonist
+  list). Read it before researching any actor. Datasets before agents; one agent per
+  actor writing YAML directly; economical model for the draft, then the best model
+  rereads objectives, paradoxes, reading and stance grades. **That review is
+  mandatory, not optional** - Davide asked that it never be skipped. Record tokens
+  spent per actor in JOURNAL.md.
+
 - Data lives in plain files (one file per actor, relations as rows with one schema),
   separate from the site code. The site renders data; it never embeds facts.
 - Before writing a relation, find the source. If none is found, write nothing and log
