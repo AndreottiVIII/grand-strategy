@@ -142,65 +142,52 @@
   const stanceOf = id => pov ? (data.stances[pov] || []).find(s => s.toward === id) : undefined;
   const gradeOf = id => id === pov ? "own_territory" : (stanceOf(id) ? stanceOf(id).grade : "neutral");
 
-  // CSS renderings of the same screens, for the legend and the dossier table
-  const FRAC = { ally: .85, reluctant_ally: .3, partner: .5, reluctant_partner: .15, rival: .25, adversary: .8 };
-  const INK = { ally: "var(--ink-c)", reluctant_ally: "var(--ink-c)", partner: "var(--ink-a)", reluctant_partner: "var(--ink-a)", rival: "var(--ink-b)", adversary: "var(--ink-b)" };
+  // the vector display: a posture is a colour, drawn as the outline of the country and a faint light inside it
+  // (how much light = how strong the posture; adversaries are lit solid). Same colours in the legend and the tables.
+  const LIGHT = { own_territory: .22, ally: .3, reluctant_ally: .22, partner: .26, reluctant_partner: .18, rival: .2, adversary: .55, claimed_territory: .1 };
+  const COLOR = g => css("--c-" + (g === "own_territory" ? "pov" : g === "claimed_territory" ? "claimed" : g));
+  const alpha = (hex, a) => hex + Math.round(a * 255).toString(16).padStart(2, "0");
   function gradeSwatch(g) {
-    if (g === "own_territory") return "var(--ink-a)";
-    if (g === "claimed_territory") return "repeating-linear-gradient(45deg, var(--ink-b) 0 1.6px, transparent 1.6px 5px)";
-    if (g === "neutral") return "var(--land)";
-    const r = Math.sqrt(16 * FRAC[g] / Math.PI);
-    return `radial-gradient(${INK[g]} ${r.toFixed(2)}px, transparent ${(r + .15).toFixed(2)}px) 0 0 / 4px 4px`;
+    if (g === "neutral") return "transparent";
+    if (g === "claimed_territory") return `repeating-linear-gradient(45deg, ${COLOR(g)} 0 1.4px, transparent 1.4px 5px)`;
+    return alpha(COLOR(g), LIGHT[g]);
   }
-  const VFRAC = { v90: [.85, "a"], v80: [.5, "a"], v70: [.26, "a"], v60: [.12, "a"], vlow: [.3, "b"],
-                  c6: [.85, "a"], c4: [.5, "a"], c2: [.26, "a"], c1: [.12, "a"],
-                  yes: [.85, "c"], withdrew: [.8, "b"], no: [.3, "b"], abst: [.26, "a"], member: [.85, "c"] };
-  function voteSwatch(c) {
-    const [f, ink] = VFRAC[c];
-    const r = Math.sqrt(16 * f / Math.PI);
-    return `radial-gradient(var(--ink-${ink}) ${r.toFixed(2)}px, transparent ${(r + .15).toFixed(2)}px) 0 0 / 4px 4px`;
-  }
+  const gradeBorder = g => g === "neutral" ? "var(--ink-3)" : COLOR(g);
+  // the other lenses borrow the posture colours: blue for "with", red for "apart", green for yes, orange for withdrew
+  const VCLASS = { v90: ["partner", .5], v80: ["partner", .35], v70: ["partner", .24], v60: ["partner", .14], vlow: ["rival", .3],
+                   c6: ["partner", .5], c4: ["partner", .35], c2: ["partner", .22], c1: ["partner", .12],
+                   yes: ["ally", .35], withdrew: ["reluctant_ally", .35], no: ["rival", .3], abst: ["partner", .2], member: ["ally", .35] };
+  const voteSwatch = c => alpha(COLOR(VCLASS[c][0]), VCLASS[c][1]);
+  const voteBorder = c => COLOR(VCLASS[c][0]);
   function renderLegend() {
     const el = document.getElementById("legend");
     if (!pov && homeLens && homeLens.kind === "org") {
       const o = actors[homeLens.id], n = Object.keys(membersOf[homeLens.id]).length;
-      el.innerHTML = `<h3>${esc(o.name)}</h3><div class="row"><span class="sw" style="background:${voteSwatch("member")} var(--land)"></span>Member (${n})</div><div class="row"><span class="sw"></span>Not a member</div><div class="row" style="color:var(--ink-3)">Memberships from the official list and Wikidata; some lists are hand-checked.</div>`;
+      el.innerHTML = `<h3>${esc(o.name)}</h3><div class="row"><span class="sw" style="background:${voteSwatch("member")};border-color:${voteBorder("member")}"></span>Member (${n})</div><div class="row"><span class="sw"></span>Not a member</div><div class="row" style="color:var(--ink-3)">Memberships from the official list and Wikidata; some lists are hand-checked.</div>`;
       return;
     }
     if (!pov && homeLens && homeLens.kind === "issue") {
       const iss = ISSUES[homeLens.id];
       el.innerHTML = `<h3>${esc(iss.label)}</h3>` + (iss.kind === "recognition"
-        ? ["yes", "withdrew", "no"].map(c => `<div class="row"><span class="sw" style="background:${voteSwatch(c)} var(--land)"></span>${REC_LABEL[c]}</div>`).join("") + `<div class="row"><span class="sw"></span>No data</div>`
-        : ["yes", "abst", "no"].map(c => `<div class="row"><span class="sw" style="background:${voteSwatch(c)} var(--land)"></span>${VOTE_LBL[c]}</div>`).join("") + `<div class="row"><span class="sw"></span>Did not vote</div><div class="row" style="color:var(--ink-3)">${esc((unga.resolutions[iss.symbol] || {}).label || "")}, ${esc((unga.resolutions[iss.symbol] || {}).date || "")}, ${esc((unga.resolutions[iss.symbol] || {}).tally || "")}</div>`);
+        ? ["yes", "withdrew", "no"].map(c => `<div class="row"><span class="sw" style="background:${voteSwatch(c)};border-color:${voteBorder(c)}"></span>${REC_LABEL[c]}</div>`).join("") + `<div class="row"><span class="sw"></span>No data</div>`
+        : ["yes", "abst", "no"].map(c => `<div class="row"><span class="sw" style="background:${voteSwatch(c)};border-color:${voteBorder(c)}"></span>${VOTE_LBL[c]}</div>`).join("") + `<div class="row"><span class="sw"></span>Did not vote</div><div class="row" style="color:var(--ink-3)">${esc((unga.resolutions[iss.symbol] || {}).label || "")}, ${esc((unga.resolutions[iss.symbol] || {}).date || "")}, ${esc((unga.resolutions[iss.symbol] || {}).tally || "")}</div>`);
       return;
     }
     if (!pov) {
       el.innerHTML = `<h3>The world of today</h3><div class="row">Borders and flags as of ${data.generated}. Click a country that has a card to see the world as it sees it; ${fullActors.length} card${fullActors.length > 1 ? "s" : ""} so far: ${fullActors.map(a => a.name).join(", ")}.</div>`;
       return;
     }
-    if (lens === "clubs") {
-      el.innerHTML = `<h3>Organisations shared with ${actors[pov].name}</h3><div class="row" style="color:var(--ink-3)">Of ${[...clubs[pov]].filter(o => o !== "org-un").length} memberships besides the UN (NATO, EU, BRICS, OPEC...)</div>` +
-        ["c6", "c4", "c2", "c1"].map(c => `<div class="row"><span class="sw" style="background:${voteSwatch(c)} var(--land)"></span>${CLUB_LABEL[c]}</div>`).join("") +
-        `<div class="row"><span class="sw"></span>None in common</div>`;
-      return;
-    }
-    if (lens === "recognition") {
-      el.innerHTML = `<h3>Who recognises ${actors[pov].name}</h3>` +
-        ["yes", "withdrew", "no"].map(c => `<div class="row"><span class="sw" style="background:${voteSwatch(c)} var(--land)"></span>${REC_LABEL[c]}</div>`).join("") +
-        `<div class="row"><span class="sw"></span>Not a UN member / no data</div>`;
-      return;
-    }
     if (lens === "votes") {
       el.innerHTML = `<h3>Votes with ${actors[pov].name}</h3><div class="row" style="color:var(--ink-3)">UN General Assembly, recorded votes ${unga.span || ""}</div>` +
-        ["v90", "v80", "v70", "v60", "vlow"].map(c => `<div class="row"><span class="sw" style="background:${voteSwatch(c)} var(--land)"></span>${VOTE_LABEL[c]}</div>`).join("") +
+        ["v90", "v80", "v70", "v60", "vlow"].map(c => `<div class="row"><span class="sw" style="background:${voteSwatch(c)};border-color:${voteBorder(c)}"></span>${VOTE_LABEL[c]}</div>`).join("") +
         `<div class="row"><span class="sw"></span>Fewer than 20 common votes</div>`;
       return;
     }
     el.innerHTML = `<h3>Posture of ${actors[pov].name}</h3>` +
-      data.grades.map(g => `<div class="row"><span class="sw" style="background:${gradeSwatch(g)} var(--land)"></span>${GRADE_LABEL[g]}</div>`).join("") +
+      data.grades.map(g => `<div class="row"><span class="sw" style="background:${gradeSwatch(g)};border-color:${gradeBorder(g)};${g === "claimed_territory" ? "border-style:dashed" : ""}"></span>${GRADE_LABEL[g]}</div>`).join("") +
       `<h3>Bond</h3>
-       <div class="row"><span class="sw" style="box-shadow:inset 0 0 0 2.5px var(--ink-a)"></span>Kin - shared identity</div>
-       <div class="row"><span class="sw" style="box-shadow:inset 0 0 0 2.5px var(--ink-b)"></span>Grievance - open wound</div>
+       <div class="row"><span class="sw" style="box-shadow:inset 0 0 0 3px var(--c-partner)"></span>Kin - shared identity</div>
+       <div class="row"><span class="sw" style="box-shadow:inset 0 0 0 3px var(--c-rival)"></span>Grievance - open wound</div>
        <div class="row"><span class="sw"></span>Affinity or no standing tie</div>`;
   }
 
@@ -224,20 +211,12 @@
     const ink = css("--ink-a"), sea = css("--paper"), land = css("--land");
 
     const defs = svg.append("defs");
-    const inkA = css("--ink-a"), inkB = css("--ink-b"), inkC = css("--ink-c");
-    // posture = dot screen, one ink per side (green allies, navy partners, vermilion hostile), denser is stronger
-    const SCREEN = { ally: [inkC, .85], reluctant_ally: [inkC, .3], partner: [inkA, .5], reluctant_partner: [inkA, .15], rival: [inkB, .25], adversary: [inkB, .8] };
-    Object.entries(SCREEN).forEach(([g, [color, frac]]) => {
-      const r = Math.sqrt(16 * frac / Math.PI);
-      defs.append("pattern").attr("id", "s-" + g).attr("width", 4).attr("height", 4).attr("patternUnits", "userSpaceOnUse")
-        .append("circle").attr("cx", 2).attr("cy", 2).attr("r", r).attr("fill", color);
-    });
     // home: every country wears its flag of today, Boetti-style - one flag per piece of land (the mainland,
     // Alaska, each island), each centred on its own piece, at a resolution that survives the zoom
     const flagHome = !pov && !homeLens;
     const pieces = [];
     if (flagHome) world.features.forEach(f => {
-      if (!iso2[f.id]) return;
+      if (!iso2[f.id] || f.id === "ATA") return;
       const polys = f.geometry.type === "MultiPolygon" ? f.geometry.coordinates : [f.geometry.coordinates];
       polys.forEach((coords, i) => {
         const piece = { type: "Feature", id: f.id, i, properties: f.properties, geometry: { type: "Polygon", coordinates: coords } };
@@ -249,45 +228,15 @@
         pieces.push(piece);
       });
     });
-    Object.entries(VFRAC).forEach(([c, [frac, ink]]) => {
-      const r = Math.sqrt(16 * frac / Math.PI);
-      defs.append("pattern").attr("id", "s-" + c).attr("width", 4).attr("height", 4).attr("patternUnits", "userSpaceOnUse")
-        .append("circle").attr("cx", 2).attr("cy", 2).attr("r", r).attr("fill", ink === "a" ? inkA : ink === "c" ? inkC : inkB);
-    });
-    // claimed, not controlled: vermilion hatch
+    // the phosphor glow behind every lit outline
+    const glow = defs.append("filter").attr("id", "glow").attr("x", "-20%").attr("y", "-20%").attr("width", "140%").attr("height", "140%");
+    glow.append("feGaussianBlur").attr("stdDeviation", 1.6).attr("result", "b");
+    const mg = glow.append("feMerge"); mg.append("feMergeNode").attr("in", "b"); mg.append("feMergeNode").attr("in", "SourceGraphic");
+    // claimed, not controlled: red hatch under a dashed outline
     const hatch = defs.append("pattern").attr("id", "hatch").attr("width", 5).attr("height", 5).attr("patternUnits", "userSpaceOnUse").attr("patternTransform", "rotate(45)");
-    hatch.append("rect").attr("width", 1.8).attr("height", 5).attr("fill", inkB);
-    // keep screens, arrowheads, dashes and type at screen size whatever the zoom
-    function rescale(k) {
-      defs.selectAll("pattern").filter(function () { return !this.id.startsWith("flag-"); }).attr("patternTransform", function () { return (this.id === "hatch" ? "rotate(45) " : "") + `scale(${1 / k})`; });
-      g.selectAll("path.c").attr("stroke-width", .5 / k);
-      g.selectAll("path.bond").attr("stroke-width", 3.6 / k);
-      // a label shows only when its country is wide enough on screen to carry it (the point of view always does)
-      g.selectAll(".labels text").attr("font-size", 9.5 / k).attr("stroke-width", 2.2 / k)
-        .attr("opacity", a => {
-          if (a.id === pov || !feature[a.id]) return 1;
-          const [[x0], [x1]] = path.bounds(feature[a.id]);
-          return (x1 - x0) * k >= (a.short || a.name).length * 5.2 ? 1 : 0;
-        });
-      g.selectAll(".seats rect").attr("transform", a => { const [x, y] = proj(a.coords); return `translate(${x},${y}) scale(${1 / k}) translate(${-x},${-y})`; });
-    }
+    hatch.append("rect").attr("width", 1.6).attr("height", 5).attr("fill", COLOR("claimed_territory")).attr("fill-opacity", .6);
 
-    svg.append("rect").attr("width", width).attr("height", height).attr("fill", flagHome ? css("--sea") : css("--paper"));
-    const g = svg.append("g");
-
-    const countries = g.append("g");
-    // the flag pieces go under the country outlines, which stay transparent on top so hover and click still work
-    countries.selectAll("path.flag").data(pieces).join("path").attr("class", "flag")
-      .attr("d", path).attr("fill", p => `url(#flag-${p.id}-${p.i})`).attr("pointer-events", "none");
-    // base: every country in the land tint
-    countries.selectAll("path.c").data(world.features).join("path").attr("class", "c")
-      .attr("d", path).attr("fill", f => flagHome ? (iso2[f.id] ? "transparent" : land) : land)
-      .attr("stroke", flagHome ? css("--sea-ink") : css("--coast")).attr("stroke-width", .5).attr("stroke-linejoin", "round")
-      .style("cursor", f => actors[f.id] ? "pointer" : "default")
-      .on("mousemove", (ev, f) => { tipFor(f.id, f.properties.name, ev); lightCard(f.id); })
-      .on("mouseleave", () => { hideTip(); lightCard(null); })
-      .on("click", (ev, f) => { if (!actors[f.id]) return; if (!pov && (actors[f.id].card === "full" || hasVotes(f.id) || hasStances(f.id) || hasClubs(f.id) || hasRecog(f.id))) setPov(f.id); else showDossier(f.id); });
-    // posture screens over the stanced countries
+    // what lights a country up, by lens
     const aff = pov && lens === "votes" ? (unga.affinity[pov] || {}) : null;
     const rec = pov && lens === "recognition" ? (recog[pov] || {}) : null;
     const homeClass = id => {
@@ -298,35 +247,71 @@
       const v = voteOn(iss.symbol, id); return v ? VOTE_CLS[v] : null;
     };
     const lensClass = id => !pov ? homeClass(id) : lens === "votes" ? voteClass(aff[id]) : lens === "clubs" ? clubClass(sharedClubs(pov, id).length) : lens === "recognition" ? rec[id] : null;
-    const screened = !pov ? (homeLens ? world.features.filter(f => lensClass(f.id)) : []) : lens === "posture" ? world.features.filter(f => f.id === pov || stanceOf(f.id)) : world.features.filter(f => f.id === pov || lensClass(f.id));
+    const posture = lens === "posture" && pov;
+    const gradeAt = f => f.id === pov ? "own_territory" : stanceOf(f.id).grade;
+    const litColor = f => posture ? COLOR(gradeAt(f)) : f.id === pov ? COLOR("own_territory") : COLOR(VCLASS[lensClass(f.id)][0]);
+    const litLight = f => posture ? (LIGHT[gradeAt(f)] || 0) : f.id === pov ? LIGHT.own_territory : VCLASS[lensClass(f.id)][1];
+    const litWidth = f => f.id === pov ? 2.2 : .9 + litLight(f) * 1.8;
+    const isClaimed = f => posture && f.id !== pov && stanceOf(f.id).grade === "claimed_territory";
+    const screened = !pov ? (homeLens ? world.features.filter(f => lensClass(f.id)) : []) : posture ? world.features.filter(f => f.id === pov || stanceOf(f.id)) : world.features.filter(f => f.id === pov || lensClass(f.id));
+
+    // keep line weights, dashes and type at screen size whatever the zoom
+    function rescale(k) {
+      defs.select("#hatch").attr("patternTransform", `rotate(45) scale(${1 / k})`);
+      g.selectAll("path.c").attr("stroke-width", .55 / k);
+      g.selectAll("path.grat").attr("stroke-width", .5 / k).attr("stroke-dasharray", `${2 / k} ${3 / k}`);
+      g.selectAll("path.p").attr("stroke-width", f => litWidth(f) / k).attr("stroke-dasharray", f => isClaimed(f) ? `${3 / k} ${2 / k}` : null);
+      g.selectAll("path.bond").attr("stroke-width", 3.4 / k);
+      // a label shows only when its country is wide enough on screen to carry it (the point of view always does)
+      g.selectAll(".labels text").attr("font-size", 10 / k).attr("stroke-width", 3 / k)
+        .attr("opacity", a => {
+          if (a.id === pov || !feature[a.id]) return 1;
+          const [[x0], [x1]] = path.bounds(feature[a.id]);
+          return (x1 - x0) * k >= (a.short || a.name).length * 5.6 ? 1 : 0;
+        });
+      g.selectAll(".seats rect").attr("transform", a => { const [x, y] = proj(a.coords); return `translate(${x},${y}) scale(${1 / k}) translate(${-x},${-y})`; });
+    }
+
+    svg.append("rect").attr("width", width).attr("height", height).attr("fill", flagHome ? css("--sea") : css("--paper"));
+    const g = svg.append("g");
+
+    const countries = g.append("g");
+    if (!flagHome) countries.append("path").attr("class", "grat").attr("d", path(d3.geoGraticule10())).attr("fill", "none").attr("stroke", css("--grat")).attr("pointer-events", "none");
+    // the flag pieces go under the country outlines, which stay transparent on top so hover and click still work
+    countries.selectAll("path.flag").data(pieces).join("path").attr("class", "flag")
+      .attr("d", path).attr("fill", p => `url(#flag-${p.id}-${p.i})`).attr("pointer-events", "none");
+    // base: every country as a faint outline on black (or its flag at home)
+    countries.selectAll("path.c").data(world.features.filter(f => !(flagHome && f.id === "ATA"))).join("path").attr("class", "c")
+      .attr("d", path).attr("fill", f => flagHome && iso2[f.id] ? "transparent" : land)
+      .attr("stroke", flagHome ? css("--sea-ink") : css("--coast")).attr("stroke-opacity", flagHome ? 1 : .75).attr("stroke-width", .55).attr("stroke-linejoin", "round")
+      .style("cursor", f => actors[f.id] ? "pointer" : "default")
+      .on("mousemove", (ev, f) => { tipFor(f.id, f.properties.name, ev); lightCard(f.id); })
+      .on("mouseleave", () => { hideTip(); lightCard(null); })
+      .on("click", (ev, f) => { if (!actors[f.id]) return; if (!pov && (actors[f.id].card === "full" || hasVotes(f.id) || hasStances(f.id) || hasClubs(f.id) || hasRecog(f.id))) setPov(f.id); else showDossier(f.id); });
+    // lit countries: outline in the posture's colour, the same light inside, phosphor glow
     countries.selectAll("path.p").data(screened).join("path").attr("class", "p")
-      .attr("d", path).attr("pointer-events", "none")
-      .attr("fill", f => {
-        if (f.id === pov) return inkA;
-        if (!pov || lens !== "posture") return `url(#s-${lensClass(f.id)})`;
-        const gr = stanceOf(f.id).grade;
-        return gr === "claimed_territory" ? "url(#hatch)" : gr === "neutral" ? "none" : `url(#s-${gr})`;
-      });
-    // bond: a band inside the border in the bond's ink - navy for kin, vermilion for grievance, none otherwise.
-    // each band is clipped to its own country so it never paints the neighbour
-    const bonded = lens !== "posture" ? [] : world.features.filter(f => stanceOf(f.id) && ["kin", "grievance"].includes(stanceOf(f.id).bond));
+      .attr("d", path).attr("pointer-events", "none").attr("stroke-linejoin", "round")
+      .attr("fill", f => isClaimed(f) ? "url(#hatch)" : litColor(f)).attr("fill-opacity", f => isClaimed(f) ? 1 : litLight(f))
+      .attr("stroke", litColor).attr("stroke-width", litWidth).attr("filter", "url(#glow)");
+    // bond: a band inside the border - blue for kin, red for grievance, none otherwise; clipped to its own country
+    const bonded = !posture ? [] : world.features.filter(f => stanceOf(f.id) && ["kin", "grievance"].includes(stanceOf(f.id).bond));
     bonded.forEach(f => defs.append("clipPath").attr("id", "clip-" + f.id).append("path").attr("d", path(f)));
     countries.selectAll("path.bond").data(bonded).join("path").attr("class", "bond")
       .attr("d", path).attr("fill", "none").attr("pointer-events", "none").attr("stroke-linejoin", "round")
       .attr("clip-path", f => `url(#clip-${f.id})`)
-      .attr("stroke", f => stanceOf(f.id).bond === "kin" ? inkA : inkB).attr("stroke-width", 3.6);
+      .attr("stroke", f => stanceOf(f.id).bond === "kin" ? COLOR("partner") : COLOR("rival")).attr("stroke-opacity", .8).attr("stroke-width", 3.4);
 
     // non-state actors and seats
     const seats = g.append("g").attr("class", "seats");
-    const nonState = pov && lens === "posture" ? data.actors.filter(a => !feature[a.id] && (a.id === pov || stanceOf(a.id))) : [];
+    const nonState = posture ? data.actors.filter(a => !feature[a.id] && (a.id === pov || stanceOf(a.id))) : [];
     seats.selectAll("rect").data(nonState).join("rect")
       .attr("x", a => proj(a.coords)[0] - 4).attr("y", a => proj(a.coords)[1] - 4).attr("width", 8).attr("height", 8)
-      .attr("fill", a => { const g = gradeOf(a.id); return ["rival", "adversary", "claimed_territory"].includes(g) ? inkB : ["ally", "reluctant_ally"].includes(g) ? inkC : g === "neutral" ? land : inkA; }).attr("stroke", ink).attr("stroke-width", .8)
+      .attr("fill", a => COLOR(gradeOf(a.id))).attr("fill-opacity", a => LIGHT[gradeOf(a.id)] || 0).attr("stroke", a => COLOR(gradeOf(a.id))).attr("stroke-width", 1).attr("filter", "url(#glow)")
       .style("cursor", "pointer")
       .on("mousemove", (ev, a) => { tipFor(a.id, a.name, ev); lightCard(a.id); }).on("mouseleave", () => { hideTip(); lightCard(null); }).on("click", (ev, a) => showDossier(a.id));
 
-    // labels: condensed capitals for every actor with a stance
-    const labelled = !pov ? [] : lens !== "posture" ? data.actors.filter(a => a.id === pov) : data.actors.filter(a => a.id === pov || stanceOf(a.id));
+    // labels: display capitals for every lit actor
+    const labelled = !pov ? [] : !posture ? data.actors.filter(a => a.id === pov) : data.actors.filter(a => a.id === pov || stanceOf(a.id));
     const stacked = {}; // non-state actors sharing a seat (EU and NATO in Brussels) stack their labels
     const labels = g.append("g").attr("class", "labels").attr("pointer-events", "none");
     labels.selectAll("text").data(labelled).join("text")
@@ -337,11 +322,10 @@
         return proj(a.coords)[1] + 3 + stacked[key] * 3;
       })
       .attr("text-anchor", "middle").attr("dominant-baseline", "middle")
-      .attr("font-family", "Archivo Narrow, Arial Narrow, sans-serif").attr("font-weight", 700)
-      .attr("letter-spacing", ".1em").attr("fill", a => a.id === pov ? css("--paper") : ink)
-      .attr("paint-order", "stroke").attr("stroke", a => a.id === pov ? inkA : sea).attr("stroke-opacity", .9)
+      .attr("font-family", css("--font-ui")).attr("letter-spacing", ".12em")
+      .attr("fill", a => a.id === pov ? COLOR("own_territory") : feature[a.id] && stanceOf(a.id) ? COLOR(stanceOf(a.id).grade === "neutral" ? "neutral" : stanceOf(a.id).grade) : css("--ink"))
+      .attr("paint-order", "stroke").attr("stroke", css("--paper")).attr("stroke-opacity", .9)
       .text(a => (a.short || a.name).toUpperCase());
-
     mapState = { svg, g, proj, path, width, height, labels };
 
     // framing: the whole world, or a neighbourhood around the point of view
@@ -383,47 +367,51 @@
     svg.selectAll(".frame-btn[data-mode]").classed("is-on", function () { return this.dataset.mode === mapMode; });
 
     document.getElementById("map-note").innerHTML = pov && lens === "clubs"
-      ? `<b>${actors[pov].name}</b> in solid navy; every other country screened by how many of ${actors[pov].name}'s organisations it also belongs to (memberships from Wikidata, official member lists as source). Hover for the list.`
+      ? `<b>${actors[pov].name}</b> lit in white; every other country lit in blue by how many of ${actors[pov].name}'s organisations it also belongs to (memberships from Wikidata, official member lists as source). Hover for the list.`
       : pov && lens === "recognition"
-      ? `<b>${actors[pov].name}</b> in solid navy; green = recognises, vermilion = does not, dense vermilion = recognised and then withdrew. From Wikipedia's recognition tables, each row with its own citation where one exists.`
+      ? `<b>${actors[pov].name}</b> lit in white; green = recognises, red = does not, orange = recognised and then withdrew. From Wikipedia's recognition tables, each row with its own citation where one exists.`
       : pov && lens === "votes"
-      ? `<b>${actors[pov].name}</b> in solid navy; every other member screened by how often it voted the same way in the General Assembly (${unga.span || ""}, recorded votes only, pairs with at least 20 common votes). Navy = votes together, vermilion = votes apart. Hover for the figure; click for the dossier.`
+      ? `<b>${actors[pov].name}</b> lit in white; every other member lit by how often it voted the same way in the General Assembly (${unga.span || ""}, recorded votes only, pairs with at least 20 common votes). Blue = votes together, red = votes apart. Hover for the figure; click for the dossier.`
       : pov
-      ? `<b>${actors[pov].name}</b> in solid navy. Dots are the posture, denser is stronger: green for allies, navy for partners, vermilion for the hostile side; hatched = claimed, not controlled. A band inside a border is the standing bond: navy = kin, vermilion = grievance. Hover for the reading; click a country or seat for its dossier; scroll to zoom. The relations are listed below the map.`
+      ? `<b>${actors[pov].name}</b> lit in white. The outline and the light inside a country are the posture: green allies, orange reluctant allies, blue partners, pale green reluctant partners, red the hostile side (adversaries lit solid); dashed and hatched = claimed, not controlled. A band inside a border is the standing bond: blue = kin, red = grievance. Hover for the reading; click a country or seat for its dossier; scroll to zoom. The relations are listed below the map.`
       : homeLens && homeLens.kind === "org"
-      ? `Members of <b>${esc(actors[homeLens.id].name)}</b> in green. Sources: the organisation's official member list; Wikidata as index. Click a country for its own point of view.`
+      ? `Members of <b>${esc(actors[homeLens.id].name)}</b> lit in green. Sources: the organisation's official member list; Wikidata as index. Click a country for its own point of view.`
       : homeLens
       ? `<b>${esc(ISSUES[homeLens.id].label)}</b>. ${ISSUES[homeLens.id].kind === "recognition" ? "From Wikipedia's recognition tables, each row with its own citation where one exists." : "UN General Assembly recorded vote, from the UN Digital Library."} Click a country for its own point of view.`
       : `Borders and flags of today. Click <b>${fullActors.map(a => a.name).join("</b>, <b>")}</b> to see the world as it sees it. Flags by flagcdn.`;
   }
 
-  // ---------- relations panel under the map: one card per counterpart, ordered by how much is going on
+  // ---------- relations ledger under the map: counterparts on the left, the latest traffic on the right
   const flagOf = a => a.flag ? a.flag : a.iso2 ? `https://flagcdn.com/w80/${a.iso2}.png` : null;
   function lightCard(id) {
-    document.querySelectorAll(".relcard").forEach(c => c.classList.toggle("is-lit", c.dataset.id === id));
+    document.querySelectorAll(".ledger tr.cp").forEach(c => c.classList.toggle("is-lit", c.dataset.id === id));
   }
   function renderRelPanel() {
     const el = document.getElementById("relpanel");
     if (!pov) { el.innerHTML = ""; return; }
-    const byTo = d3.group(data.relations.filter(r => r.from === pov), r => r.to);
+    const rows = data.relations.filter(r => r.from === pov && r.dataset !== "unga-votes");
+    const byTo = d3.group(rows, r => r.to);
     const counterparts = [...new Set([...byTo.keys(), ...(data.stances[pov] || []).map(s => s.toward)])]
       .map(id => ({ id, rows: byTo.get(id) || [], st: stanceOf(id) }))
       .sort((x, y) => y.rows.length - x.rows.length || x.id.localeCompare(y.id));
-    el.innerHTML = `<h3>Relations of ${esc(actors[pov].name)} <span>${data.relations.filter(r => r.from === pov).length} rows · ${counterparts.length} counterparts</span></h3>` +
-      `<div class="relgrid">` + counterparts.map(c => {
-        const a = actors[c.id], flag = flagOf(a);
-        const counts = data.layers.map(l => [l, c.rows.filter(r => r.layer === l).length]).filter(([, n]) => n);
-        const latest = [...c.rows].sort((x, y) => String(y.since).localeCompare(String(x.since)))[0];
-        return `<div class="relcard" data-id="${c.id}">
-          <div class="rc-head">${flag ? `<img src="${esc(flag)}" alt="">` : `<span class="rc-noflag"></span>`}<b>${esc(a.name)}</b></div>
-          <div class="rc-posture">${c.st ? `<span class="sw" style="background:${gradeSwatch(c.st.grade)} var(--land)"></span>${GRADE_LABEL[c.st.grade]} · ${TREND_SIGN[c.st.trend]} · ${BOND_LABEL[c.st.bond].split(" - ")[0].toLowerCase()}` : "no stance recorded"}</div>
-          <div class="rc-counts">${counts.length ? counts.map(([l, n]) => `<span style="border-color:${layerColor(l)}">${n} ${LAYER_LABEL[l].toLowerCase()}</span>`).join("") : `<span class="rc-none">no rows yet</span>`}</div>
-          ${latest ? `<div class="rc-latest"><i>${esc(latest.since)}</i> ${esc(latest.summary)}</div>` : ""}
-        </div>`;
-      }).join("") + `</div>`;
-    el.querySelectorAll(".relcard").forEach(c => c.onclick = () => showDossier(c.dataset.id));
+    const latest = [...rows].sort((x, y) => String(y.since).localeCompare(String(x.since))).slice(0, 18);
+    const glyph = st => st ? `<i style="border-color:${gradeBorder(st.grade)};background:${gradeSwatch(st.grade)}"></i>` : `<i style="border-color:var(--ink-3)"></i>`;
+    el.innerHTML = `<div class="ledger">
+      <div><h3>Counterparts of ${esc(actors[pov].name)} <span>${counterparts.length}</span></h3>
+        <table><thead><tr><th>Actor</th><th>Posture</th><th>Trend</th><th>Bond</th><th style="text-align:right">Rows</th></tr></thead><tbody>` +
+        counterparts.map(c => `<tr class="cp" data-id="${c.id}"><td class="name">${glyph(c.st)}${esc(actors[c.id].short || actors[c.id].name)}</td>
+          <td>${c.st ? c.st.grade.replace(/_/g, " ") : "<span class='tr'>-</span>"}</td>
+          <td class="tr">${c.st ? TREND_SIGN[c.st.trend] + " " + TREND[c.st.trend] : ""}</td>
+          <td class="tr">${c.st ? BOND_LABEL[c.st.bond].split(" - ")[0].toLowerCase() : ""}</td>
+          <td class="n">${c.rows.length || "-"}</td></tr>`).join("") +
+        `</tbody></table></div>
+      <div><h3>Latest traffic <span>${rows.length} rows, newest first</span></h3>
+        <table><thead><tr><th>Date</th><th>Toward</th><th>Type</th><th>Entry</th></tr></thead><tbody>` +
+        latest.map(r => `<tr class="cp" data-id="${r.to}"><td class="d">${esc(r.since)}</td><td class="who">${esc(actors[r.to].short || actors[r.to].name)}</td><td class="t">${esc(r.type.replace(/_/g, " "))}</td><td>${esc(r.summary)}</td></tr>`).join("") +
+        `</tbody></table>${rows.length > latest.length ? `<div class="more">+ ${rows.length - latest.length} older rows in the dossier</div>` : ""}</div>
+    </div>`;
+    el.querySelectorAll("tr.cp").forEach(c => { c.onclick = () => showDossier(c.dataset.id); c.onmouseenter = () => lightCard(c.dataset.id); c.onmouseleave = () => lightCard(null); });
   }
-
   // ---------- pages: organisations, issues, Luttwak
   function showOrg(id) { navigate(`#/organisation/${id}`); }
   function showIssue(id) { navigate(`#/issue/${id}`); }
@@ -431,7 +419,7 @@
     const el = document.getElementById("page-orgs");
     el.innerHTML = `<h2>Organisations</h2><p class="lede">Who belongs to what. Memberships come from each organisation's official member list, with Wikidata as the index; where a list is still short the count says so. Pick one to see its members on the map.</p>
       <div class="cardgrid">` + orgs.map(o => `<div class="orgcard ${o.ok ? "" : "is-weak"}" data-id="${o.a.id}">
-        ${o.a.flag ? `<img class="orgflag" src="${esc(o.a.flag)}" alt="">` : ""}<b>${esc(o.a.name)}</b>
+        ${o.a.flag ? `<img class="orgflag" src="${esc(o.a.flag)}" alt="">` : "<span></span>"}<b>${esc(o.a.name)}</b>
         <span class="n">${o.n} member${o.n === 1 ? "" : "s"}${o.exp && o.n < o.exp ? ` of ${o.exp}` : ""}${o.ok ? "" : " - list incomplete"}</span>
         <span class="who">${Object.keys(membersOf[o.a.id]).slice(0, 8).map(id => actors[id] ? esc(actors[id].short || actors[id].name) : id).join(" · ")}${o.n > 8 ? " · ..." : ""}</span>
       </div>`).join("") + `</div>`;
@@ -443,7 +431,7 @@
       <div class="cardgrid">` + Object.entries(ISSUES).map(([k, v]) => {
         const r = v.kind === "vote" ? (unga.resolutions[v.symbol] || {}) : null;
         const cnt = v.kind === "recognition" ? Object.values(recog[v.target] || {}).reduce((m, x) => (m[x] = (m[x] || 0) + 1, m), {}) : null;
-        return `<div class="orgcard" data-id="${k}"><b>${esc(v.title)}</b><span class="n">${esc(v.subtitle || "")}</span>
+        return `<div class="orgcard" data-id="${k}"><span></span><b>${esc(v.title)}</b><span class="n">${esc(v.subtitle || "")}</span>
           <span class="who">${v.kind === "recognition" ? `${cnt.yes || 0} recognise · ${cnt.no || 0} do not · ${cnt.withdrew || 0} withdrew` : `${esc(r.label || "")} · ${esc(r.date || "")} · ${esc(r.tally || "")}`}</span>
           ${v.why ? `<span class="why">${esc(v.why)}</span>` : ""}<span class="added">added ${esc(v.added || "")}</span></div>`;
       }).join("") + `</div>`;
@@ -554,7 +542,7 @@
         <h3>The world as ${esc(a.name)} sees it</h3>
         <table class="tbl"><thead><tr><th>Toward</th><th>Posture</th><th>Bond</th><th>Why this reading</th></tr></thead><tbody>
         ${(data.stances[id] || []).map(s => `<tr><td><b>${esc(actors[s.toward].name)}</b><br><span class="meta">since ${esc(s.since)}</span></td>
-          <td><span class="sw" style="background:${gradeSwatch(s.grade)} var(--land)"></span>${GRADE_LABEL[s.grade]}<br><span class="meta">${TREND_SIGN[s.trend]} ${TREND[s.trend]}${badge(s)}</span></td>
+          <td><span class="sw" style="background:${gradeSwatch(s.grade)};border-color:${gradeBorder(s.grade)}"></span>${GRADE_LABEL[s.grade]}<br><span class="meta">${TREND_SIGN[s.trend]} ${TREND[s.trend]}${badge(s)}</span></td>
           <td>${BOND_LABEL[s.bond]}</td>
           <td class="note">${esc(s.note || "")}${fn(s.sources)}</td></tr>`).join("")}
         </tbody></table>` + ungaHtml(id) + relationsHtml(id);
