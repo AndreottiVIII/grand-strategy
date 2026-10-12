@@ -69,7 +69,7 @@
 
   // ---------- chrome
   document.getElementById("meta").innerHTML =
-    `Situation map · pilot: Western Balkans<br>compiled ${data.generated} · ${fullActors.length} card${fullActors.length > 1 ? "s" : ""}, ${data.actors.length} actors<br>${Object.values(data.stances).flat().length} stances · ${data.relations.length} relations`;
+    `Situation map · in construction<br>compiled ${data.generated} · ${data.progress ? `${data.progress.cards} of ${data.progress.total} cards` : `${fullActors.length} cards`}, ${data.actors.length} actors<br>${Object.values(data.stances).flat().length} stances · ${data.relations.length} relations`;
 
   const povSel = document.getElementById("pov");
   povSel.add(new Option("The world of today", ""));

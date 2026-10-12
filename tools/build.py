@@ -346,6 +346,9 @@ def main():
         "stances": {k: v["stances"] for k, v in stances.items()},
         "relations": rows,
         "unga": unga,
+        "progress": (lambda q: {"cards": sum(1 for a in q if a["status"] in ("done", "reviewed")), "total": len(q),
+                                "running": [a["id"] for a in q if a["status"] == "running"]})(
+            (yaml.safe_load((DATA / "queue.yaml").open(encoding="utf-8")) or {}).get("actors", []) if (DATA / "queue.yaml").exists() else []),
         "issues": (yaml.safe_load((DATA / "issues.yaml").open(encoding="utf-8")) or {}).get("issues", []) if (DATA / "issues.yaml").exists() else [],
     }
     OUT.write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":"), default=str), encoding="utf-8")
