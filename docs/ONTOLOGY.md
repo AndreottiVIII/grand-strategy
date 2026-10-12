@@ -1,7 +1,7 @@
-# Ontology (draft 0, 2026-10-12)
+# Ontology (draft 1, 2026-10-12)
 
-What the data is made of. Change this only with a JOURNAL entry. Everything below is a
-proposal to be argued over; `?` marks the open points.
+What the data is made of. Change this only with a JOURNAL entry. `?` marks the points
+still open; everything else was agreed with Davide on 2026-10-12.
 
 ## Design constraints
 
@@ -63,7 +63,7 @@ stances:
     ...
 ```
 
-Grades (?: number and names to be argued):
+Grades (nine, agreed):
 
 | grade | meaning |
 |---|---|
@@ -72,11 +72,17 @@ Grades (?: number and names to be argued):
 | `ally` | treaty or stable de facto alignment |
 | `reluctant_ally` | aligned by necessity, with visible friction |
 | `partner` | transactional cooperation, no alignment |
+| `reluctant_partner` | cooperates out of necessity while resisting alignment (Serbia toward the EU) |
 | `neutral` | no significant posture |
 | `rival` | competing interests, below hostility |
 | `adversary` | open hostility or declared threat |
 
 Actors not listed default to `neutral` on the map, drawn in grey.
+
+**A grade is never our own judgement.** Every stance must cite at least one source
+that uses that reading (an analysis calling the relationship "reluctant", a treaty for
+"ally", a government statement for "adversary"). If no source says it, the stance is
+not recorded and the gap goes in JOURNAL.md. This is slower; it was chosen knowingly.
 
 ## Relation
 
@@ -110,12 +116,12 @@ Type vocabulary (?: to grow with the pilot, but never freely):
 
 Rows under `dependency` carry a `value` and `unit` (e.g. `value: 0.62, unit: share_of_gas_imports`).
 
-## Dispute (?)
+## Disputes are not objects
 
-Some things are many-sided and deserve their own object: the status of Kosovo, Bosnia's
-constitution, the Serbia–EU–Russia triangle. Proposal: `data/disputes/<slug>.yaml` with
-the actors involved, each one's position, and the relation rows that bear on it.
-Decision deferred until the pilot shows whether relation rows alone suffice.
+Decided: no dispute files. The focus is grand strategies; disputes exist *because of*
+them, so the status of Kosovo is fully described by the objectives and stances of the
+actors involved. The site may offer a view that gathers all rows mentioning an actor or
+territory, but that is presentation, not data.
 
 ## Evidence
 
@@ -125,7 +131,7 @@ Confidence:
 - **B**: one tier-1 or tier-2 source
 - **C**: tier-3 reporting, or an inference by us; shown with a visible mark on the site
 
-Source tiers (?):
+Source tiers (agreed; names grow as the pilot meets them):
 
 1. Official and statistical: governments, treaties, UN, EU, IMF, World Bank, Eurostat, SIPRI, UN Comtrade
 2. Established research: IISS, International Crisis Group, ECFR, CFR, Chatham House, Carnegie, RUSI, ISPI

@@ -31,7 +31,10 @@ Phase 0: no site yet. Decisions taken on 2026-10-12 (see JOURNAL.md):
   (energy, trade, debt, arms, remittances, with numbers), and recent dated actions
   (UN votes, sanctions, visits, exercises).
 - **Evidence**: every relation carries a source, a date, `since`, `last_verified` and a
-  confidence grade. No unsourced lines, even for the obvious.
+  confidence grade. No unsourced lines, even for the obvious. Stance grades on the map
+  ("reluctant ally") are never our judgement: they need a source using that reading.
+- **No dispute objects**: disputes exist because of grand strategies, so they are
+  described through the actors' objectives and stances, never as files of their own.
 - **Time**: a snapshot of today. History emerges from git; do not model the past.
 - **Theory**: every actor has a grand-strategy card in Luttwak's terms: objectives,
   means, constraints, allies, and the *paradoxes* (where a move turns against its

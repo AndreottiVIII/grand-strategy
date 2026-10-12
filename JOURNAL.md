@@ -3,6 +3,26 @@
 Decision log, newest first. The path matters more than the destination: record why,
 not only what. Dead ends are entries too.
 
+## 2026-10-12 · Ontology draft 1
+
+Draft 0 read in full in chat and argued point by point.
+
+**Decided**
+
+1. **No dispute objects.** Davide: the focus is grand strategies, not disputes; disputes
+   exist because of grand strategies. Kosovo's status lives in the objectives and
+   stances of the actors, not in a file of its own.
+2. **Stance grades need a source.** "Reluctant ally" is a judgement, so each grade on the
+   per-actor map must cite an analysis that uses that reading. Our own judgement is not
+   enough, even as grade C. Chosen over the faster option on purpose.
+3. **Nine grades**, adding `reluctant_partner` (Serbia toward the EU).
+4. Source tiers as proposed; stance grades and type vocabularies closed, growing only
+   with journal entries.
+
+**Still open**
+
+- Type vocabulary will meet reality with the first actor. Serbia proposed as first.
+
 ## 2026-10-12 · Founding decisions
 
 Session: "Grand Strategy" (Claude Code, Remote Control on).
@@ -34,7 +54,7 @@ purpose; the project exists to add the other n variables without losing the thre
 10. GitHub Pages, public from the start. Davide: "who looks at my GitHub? nobody".
 11. Name: decided later. Folder `grand-strategy`.
 
-**Open**
+**Open at the time** (all closed by the draft-1 entry above)
 
 - The ontology itself (docs/ONTOLOGY.md): first draft to be discussed next.
 - Alignment scale for the per-actor map: how many grades, and who decides "reluctant".
