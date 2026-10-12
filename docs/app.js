@@ -2,9 +2,11 @@
    Two views: the situation map from the point-of-view actor (posture as colour, bond as
    screen, relations as arrows by layer) and the dossier with footnoted sources. */
 (async function () {
-  const [data, world] = await Promise.all([
-    fetch("data.json" + (document.querySelector('script[src^="app.js"]').src.split("?")[1] ? "?" + document.querySelector('script[src^="app.js"]').src.split("?")[1] : "")).then(r => r.json()),
+  const stamp = document.querySelector('script[src^="app.js"]').src.split("?")[1];
+  const [data, world, iso2] = await Promise.all([
+    fetch("data.json" + (stamp ? "?" + stamp : "")).then(r => r.json()),
     fetch("world.geojson").then(r => r.json()),
+    fetch("iso2.json").then(r => r.json()),
   ]);
 
   const GRADE_LABEL = {
@@ -14,8 +16,6 @@
   };
   const BOND_LABEL = { kin: "Kin - shared identity", affinity: "Affinity", none: "No standing tie", grievance: "Grievance - open wound" };
   const LAYER_LABEL = { objective: "Objectives", alignment: "Alignments", dependency: "Dependencies", action: "Actions" };
-  const LAYER_DASH = { objective: "", alignment: "", dependency: "6 4", action: "1.5 3.5" };
-  const LAYER_W = { objective: 2.4, alignment: 1.3, dependency: 1.5, action: 1.6 };
   const TREND = { warming: "warming", stable: "stable", cooling: "cooling" };
   const TREND_SIGN = { warming: "↗", stable: "→", cooling: "↘" };
   const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
@@ -25,39 +25,33 @@
   const actors = Object.fromEntries(data.actors.map(a => [a.id, a]));
   const fullActors = data.actors.filter(a => a.card === "full");
   const feature = Object.fromEntries(world.features.map(f => [f.id, f]));
-  let pov = fullActors[0].id;
+  let pov = null;                 // null = home: the world of today, flags and borders
   let view = "map";
-  let mapMode = "near";
-  const layersOn = { objective: true, alignment: true, dependency: true, action: false };
+  let mapMode = "world";
 
   // ---------- chrome
   document.getElementById("meta").innerHTML =
     `Situation map · pilot: Western Balkans<br>compiled ${data.generated} · ${fullActors.length} card${fullActors.length > 1 ? "s" : ""}, ${data.actors.length} actors<br>${Object.values(data.stances).flat().length} stances · ${data.relations.length} relations`;
 
   const povSel = document.getElementById("pov");
+  povSel.add(new Option("The world of today", ""));
   fullActors.forEach(a => povSel.add(new Option(`The world as ${a.name} sees it`, a.id)));
-  povSel.onchange = () => { pov = povSel.value; renderAll(); };
+  povSel.onchange = () => { pov = povSel.value || null; mapMode = pov ? "near" : "world"; renderAll(); };
+  function goHome() { pov = null; mapMode = "world"; povSel.value = ""; window.scrollTo(0, 0); renderLegend(); setView("map"); }
+  function setPov(id) { pov = id; mapMode = "near"; povSel.value = id; renderLegend(); setView("map"); }
 
   document.querySelectorAll(".tab").forEach(b => b.onclick = () => setView(b.dataset.view));
-  document.getElementById("home").onclick = ev => { ev.preventDefault(); window.scrollTo(0, 0); setView("map"); };
+  document.getElementById("home").onclick = ev => { ev.preventDefault(); goHome(); };
   function setView(v, render = true) {
     view = v;
     document.querySelectorAll(".tab").forEach(b => b.classList.toggle("is-on", b.dataset.view === v));
     document.querySelectorAll(".view").forEach(s => s.classList.toggle("is-on", s.id === "view-" + v));
     if (!render) return;
     if (v === "map") drawMap();
-    if (v === "dossier") showDossier(pov);
+    if (v === "dossier") showDossier(pov || fullActors[0].id);
   }
 
-  const layersEl = document.getElementById("layers");
-  data.layers.forEach(l => {
-    const lab = document.createElement("label");
-    lab.innerHTML = `<input type="checkbox" ${layersOn[l] ? "checked" : ""}><span class="ln" style="border-color:${layerColor(l)};border-top-style:${l === "dependency" ? "dashed" : l === "action" ? "dotted" : "solid"}"></span>${LAYER_LABEL[l]}`;
-    lab.querySelector("input").onchange = e => { layersOn[l] = e.target.checked; if (view === "map") drawArrows(); };
-    layersEl.appendChild(lab);
-  });
-
-  const stanceOf = id => (data.stances[pov] || []).find(s => s.toward === id);
+  const stanceOf = id => pov ? (data.stances[pov] || []).find(s => s.toward === id) : undefined;
   const gradeOf = id => id === pov ? "own_territory" : (stanceOf(id) ? stanceOf(id).grade : "neutral");
 
   // CSS renderings of the same screens, for the legend and the dossier table
@@ -72,6 +66,10 @@
   }
   function renderLegend() {
     const el = document.getElementById("legend");
+    if (!pov) {
+      el.innerHTML = `<h3>The world of today</h3><div class="row">Borders and flags as of ${data.generated}. Click a country that has a card to see the world as it sees it; ${fullActors.length} card${fullActors.length > 1 ? "s" : ""} so far: ${fullActors.map(a => a.name).join(", ")}.</div>`;
+      return;
+    }
     el.innerHTML = `<h3>Posture of ${actors[pov].name}</h3>` +
       data.grades.map(g => `<div class="row"><span class="sw" style="background:${gradeSwatch(g)} var(--land)"></span>${GRADE_LABEL[g]}</div>`).join("") +
       `<h3>Bond</h3>
@@ -108,18 +106,18 @@
       defs.append("pattern").attr("id", "s-" + g).attr("width", 4).attr("height", 4).attr("patternUnits", "userSpaceOnUse")
         .append("circle").attr("cx", 2).attr("cy", 2).attr("r", r).attr("fill", color);
     });
+    // home: every country wears its flag of today
+    if (!pov) world.features.forEach(f => {
+      if (!iso2[f.id]) return;
+      defs.append("pattern").attr("id", "flag-" + f.id).attr("width", 1).attr("height", 1).attr("patternContentUnits", "objectBoundingBox")
+        .append("image").attr("href", `https://flagcdn.com/w320/${iso2[f.id]}.png`).attr("width", 1).attr("height", 1).attr("preserveAspectRatio", "xMidYMid slice");
+    });
     // claimed, not controlled: vermilion hatch
     const hatch = defs.append("pattern").attr("id", "hatch").attr("width", 5).attr("height", 5).attr("patternUnits", "userSpaceOnUse").attr("patternTransform", "rotate(45)");
     hatch.append("rect").attr("width", 1.8).attr("height", 5).attr("fill", inkB);
-    data.layers.forEach(l => {
-      defs.append("marker").attr("id", "arrow-" + l).attr("viewBox", "0 0 10 10").attr("refX", 9).attr("refY", 5)
-        .attr("markerUnits", "userSpaceOnUse").attr("markerWidth", 9).attr("markerHeight", 9).attr("orient", "auto-start-reverse")
-        .append("path").attr("d", "M0,0 L10,5 L0,10 L3,5 Z").attr("fill", layerColor(l));
-    });
     // keep screens, arrowheads, dashes and type at screen size whatever the zoom
     function rescale(k) {
-      defs.selectAll("pattern").attr("patternTransform", function () { return (this.id === "hatch" ? "rotate(45) " : "") + `scale(${1 / k})`; });
-      defs.selectAll("marker").attr("markerWidth", 9 / k).attr("markerHeight", 9 / k);
+      defs.selectAll("pattern").filter(function () { return !this.id.startsWith("flag-"); }).attr("patternTransform", function () { return (this.id === "hatch" ? "rotate(45) " : "") + `scale(${1 / k})`; });
       g.selectAll("path.c").attr("stroke-width", .5 / k);
       g.selectAll("path.bond").attr("stroke-width", 3.6 / k);
       // a label shows only when its country is wide enough on screen to carry it (the point of view always does)
@@ -130,8 +128,6 @@
           return (x1 - x0) * k >= (a.short || a.name).length * 5.2 ? 1 : 0;
         });
       g.selectAll(".seats rect").attr("transform", a => { const [x, y] = proj(a.coords); return `translate(${x},${y}) scale(${1 / k}) translate(${-x},${-y})`; });
-      g.selectAll(".arrows path").attr("stroke-width", function () { return +this.dataset.w / k; })
-        .attr("stroke-dasharray", function () { const d = this.dataset.dash; return d ? d.split(" ").map(v => v / k).join(" ") : null; });
     }
 
     svg.append("rect").attr("width", width).attr("height", height).attr("fill", css("--paper"));
@@ -140,14 +136,14 @@
     const countries = g.append("g");
     // base: every country in the land tint
     countries.selectAll("path.c").data(world.features).join("path").attr("class", "c")
-      .attr("d", path).attr("fill", land)
+      .attr("d", path).attr("fill", f => !pov && iso2[f.id] ? `url(#flag-${f.id})` : land)
       .attr("stroke", css("--coast")).attr("stroke-width", .5).attr("stroke-linejoin", "round")
       .style("cursor", f => actors[f.id] ? "pointer" : "default")
-      .on("mousemove", (ev, f) => tipFor(f.id, f.properties.name, ev))
-      .on("mouseleave", hideTip)
-      .on("click", (ev, f) => { if (actors[f.id]) showDossier(f.id); });
+      .on("mousemove", (ev, f) => { tipFor(f.id, f.properties.name, ev); lightCard(f.id); })
+      .on("mouseleave", () => { hideTip(); lightCard(null); })
+      .on("click", (ev, f) => { if (actors[f.id] && actors[f.id].card === "full") setPov(f.id); else if (actors[f.id]) showDossier(f.id); });
     // posture screens over the stanced countries
-    countries.selectAll("path.p").data(world.features.filter(f => f.id === pov || stanceOf(f.id))).join("path").attr("class", "p")
+    countries.selectAll("path.p").data(pov ? world.features.filter(f => f.id === pov || stanceOf(f.id)) : []).join("path").attr("class", "p")
       .attr("d", path).attr("pointer-events", "none")
       .attr("fill", f => {
         if (f.id === pov) return inkA;
@@ -165,15 +161,15 @@
 
     // non-state actors and seats
     const seats = g.append("g").attr("class", "seats");
-    const nonState = data.actors.filter(a => !feature[a.id] && (a.id === pov || stanceOf(a.id)));
+    const nonState = pov ? data.actors.filter(a => !feature[a.id] && (a.id === pov || stanceOf(a.id))) : [];
     seats.selectAll("rect").data(nonState).join("rect")
       .attr("x", a => proj(a.coords)[0] - 4).attr("y", a => proj(a.coords)[1] - 4).attr("width", 8).attr("height", 8)
       .attr("fill", a => { const g = gradeOf(a.id); return ["rival", "adversary", "claimed_territory"].includes(g) ? inkB : ["ally", "reluctant_ally"].includes(g) ? inkC : g === "neutral" ? land : inkA; }).attr("stroke", ink).attr("stroke-width", .8)
       .style("cursor", "pointer")
-      .on("mousemove", (ev, a) => tipFor(a.id, a.name, ev)).on("mouseleave", hideTip).on("click", (ev, a) => showDossier(a.id));
+      .on("mousemove", (ev, a) => { tipFor(a.id, a.name, ev); lightCard(a.id); }).on("mouseleave", () => { hideTip(); lightCard(null); }).on("click", (ev, a) => showDossier(a.id));
 
     // labels: condensed capitals for every actor with a stance
-    const labelled = data.actors.filter(a => a.id === pov || stanceOf(a.id));
+    const labelled = pov ? data.actors.filter(a => a.id === pov || stanceOf(a.id)) : [];
     const stacked = {}; // non-state actors sharing a seat (EU and NATO in Brussels) stack their labels
     const labels = g.append("g").attr("class", "labels").attr("pointer-events", "none");
     labels.selectAll("text").data(labelled).join("text")
@@ -189,8 +185,7 @@
       .attr("paint-order", "stroke").attr("stroke", a => a.id === pov ? inkA : sea).attr("stroke-opacity", .9)
       .text(a => (a.short || a.name).toUpperCase());
 
-    const arrows = g.append("g").attr("class", "arrows");
-    mapState = { svg, g, proj, path, width, height, arrows, labels };
+    mapState = { svg, g, proj, path, width, height, labels };
 
     // framing: the whole world, or a neighbourhood around the point of view
     const zoom = d3.zoom().scaleExtent([1, 14]).on("zoom", ev => {
@@ -201,7 +196,7 @@
     svg.call(zoom);
     function frame(mode) {
       let t = d3.zoomIdentity;
-      const home = feature[pov] ? path.bounds(feature[pov]) : null;
+      const home = pov && feature[pov] ? path.bounds(feature[pov]) : null;
       if (mode === "near" && home) {
         const [[x0, y0], [x1, y1]] = home;
         const span = Math.max(x1 - x0, y1 - y0) * 9;
@@ -212,47 +207,50 @@
       svg.selectAll(".frame-btn").classed("is-on", function () { return this.dataset.mode === mode; });
     }
     const ctl = svg.append("foreignObject").attr("x", 12).attr("y", 12).attr("width", 240).attr("height", 40);
-    ctl.append("xhtml:div").attr("class", "frame-ctl").html(
-      `<button class="frame-btn" data-mode="near">Neighbourhood</button><button class="frame-btn" data-mode="world">World</button>`);
+    ctl.append("xhtml:div").attr("class", "frame-ctl").html(pov
+      ? `<button class="frame-btn" data-mode="near">Neighbourhood</button><button class="frame-btn" data-mode="world">World</button>`
+      : `<button class="frame-btn is-on" data-mode="world">The world of today</button>`);
     ctl.selectAll("button").on("click", ev => { mapMode = ev.currentTarget.dataset.mode; frame(mapMode); });
     frame(mapMode);
-    drawArrows();
+    rescale(d3.zoomTransform(svg.node()).k || 1);
+    renderRelPanel();
 
-    document.getElementById("map-note").innerHTML =
-      `<b>${actors[pov].name}</b> in solid navy. Dots are the posture, denser is stronger: green for allies, navy for partners, vermilion for the hostile side; hatched = claimed, not controlled. A heavy outline is the bond: navy = kin, vermilion = grievance. Arrows run from ${actors[pov].name}'s seat to the counterpart, one per layer; several rows between the same pair share an arrow. Hover for the rows; click a country or seat for its dossier; scroll to zoom.`;
+    document.getElementById("map-note").innerHTML = pov
+      ? `<b>${actors[pov].name}</b> in solid navy. Dots are the posture, denser is stronger: green for allies, navy for partners, vermilion for the hostile side; hatched = claimed, not controlled. A band inside a border is the standing bond: navy = kin, vermilion = grievance. Hover for the reading; click a country or seat for its dossier; scroll to zoom. The relations are listed below the map.`
+      : `Borders and flags of today. Click <b>${fullActors.map(a => a.name).join("</b>, <b>")}</b> to see the world as it sees it. Flags by flagcdn.`;
   }
 
-  function drawArrows() {
-    if (!mapState) return;
-    const { proj, arrows } = mapState;
-    const from = proj(actors[pov].coords);
-    const groups = d3.group(data.relations.filter(r => r.from === pov && layersOn[r.layer]), r => r.to + "|" + r.layer);
-    const items = [...groups].map(([key, rows]) => ({ to: key.split("|")[0], layer: key.split("|")[1], rows }));
-    const k = d3.zoomTransform(mapState.svg.node()).k || 1;
-    arrows.selectAll("path").data(items, d => d.to + d.layer).join("path")
-      .attr("d", d => {
-        const to = proj(actors[d.to].coords);
-        const dx = to[0] - from[0], dy = to[1] - from[1], dist = Math.hypot(dx, dy) || 1;
-        const bend = (data.layers.indexOf(d.layer) - 1.5) * 0.12;
-        const mx = (from[0] + to[0]) / 2 - dy * bend, my = (from[1] + to[1]) / 2 + dx * bend;
-        const shrink = 6 / dist; // stop short of the seat
-        const ex = to[0] - dx * shrink, ey = to[1] - dy * shrink;
-        return `M${from[0]},${from[1]} Q${mx},${my} ${ex},${ey}`;
-      })
-      .attr("data-w", d => LAYER_W[d.layer]).attr("data-dash", d => LAYER_DASH[d.layer])
-      .attr("fill", "none").attr("stroke", d => layerColor(d.layer)).attr("stroke-linecap", "round")
-      .attr("marker-end", d => `url(#arrow-${d.layer})`).attr("opacity", .9)
-      .style("cursor", "pointer")
-      .on("mousemove", (ev, d) => showTip(`<b>${actors[pov].name} → ${actors[d.to].name}</b><span class="k">${LAYER_LABEL[d.layer]}</span><ul>` +
-        d.rows.map(r => `<li>${esc(r.type.replace(/_/g, " "))} · ${esc(r.since)}${r.value !== undefined ? ` · <b style="display:inline;text-transform:none;letter-spacing:0">${esc(r.value)} ${esc(String(r.unit).replace(/_/g, " "))}</b>` : ""} · ${r.confidence}<br>${esc(r.summary)}</li>`).join("") + `</ul>`, ev))
-      .on("mouseleave", hideTip)
-      .on("click", (ev, d) => showDossier(d.to));
-    mapState.rescale(k);
+  // ---------- relations panel under the map: one card per counterpart, ordered by how much is going on
+  const flagOf = a => a.flag ? a.flag : a.iso2 ? `https://flagcdn.com/w80/${a.iso2}.png` : null;
+  function lightCard(id) {
+    document.querySelectorAll(".relcard").forEach(c => c.classList.toggle("is-lit", c.dataset.id === id));
+  }
+  function renderRelPanel() {
+    const el = document.getElementById("relpanel");
+    if (!pov) { el.innerHTML = ""; return; }
+    const byTo = d3.group(data.relations.filter(r => r.from === pov), r => r.to);
+    const counterparts = [...new Set([...byTo.keys(), ...(data.stances[pov] || []).map(s => s.toward)])]
+      .map(id => ({ id, rows: byTo.get(id) || [], st: stanceOf(id) }))
+      .sort((x, y) => y.rows.length - x.rows.length || x.id.localeCompare(y.id));
+    el.innerHTML = `<h3>Relations of ${esc(actors[pov].name)} <span>${data.relations.filter(r => r.from === pov).length} rows · ${counterparts.length} counterparts</span></h3>` +
+      `<div class="relgrid">` + counterparts.map(c => {
+        const a = actors[c.id], flag = flagOf(a);
+        const counts = data.layers.map(l => [l, c.rows.filter(r => r.layer === l).length]).filter(([, n]) => n);
+        const latest = [...c.rows].sort((x, y) => String(y.since).localeCompare(String(x.since)))[0];
+        return `<div class="relcard" data-id="${c.id}">
+          <div class="rc-head">${flag ? `<img src="${esc(flag)}" alt="">` : `<span class="rc-noflag"></span>`}<b>${esc(a.name)}</b></div>
+          <div class="rc-posture">${c.st ? `<span class="sw" style="background:${gradeSwatch(c.st.grade)} var(--land)"></span>${GRADE_LABEL[c.st.grade]} · ${TREND_SIGN[c.st.trend]} · ${BOND_LABEL[c.st.bond].split(" - ")[0].toLowerCase()}` : "no stance recorded"}</div>
+          <div class="rc-counts">${counts.length ? counts.map(([l, n]) => `<span style="border-color:${layerColor(l)}">${n} ${LAYER_LABEL[l].toLowerCase()}</span>`).join("") : `<span class="rc-none">no rows yet</span>`}</div>
+          ${latest ? `<div class="rc-latest"><i>${esc(latest.since)}</i> ${esc(latest.summary)}</div>` : ""}
+        </div>`;
+      }).join("") + `</div>`;
+    el.querySelectorAll(".relcard").forEach(c => c.onclick = () => showDossier(c.dataset.id));
   }
 
   function tipFor(id, fallbackName, ev) {
     const a = actors[id], name = a ? a.name : fallbackName;
     if (id === pov) return showTip(`<b>${esc(name)}</b><span class="k">Point of view</span>`, ev);
+    if (!pov) return showTip(`<b>${esc(name)}</b><span class="k">${a && a.card === "full" ? "Has a card - click to see the world as it sees it" : a ? "Actor without a card yet - click for its stub" : "Not an actor yet"}</span>`, ev);
     const st = stanceOf(id);
     if (!st) return showTip(`<b>${esc(name)}</b><span class="k">No recorded stance${a ? "" : " · not an actor yet"}</span>`, ev);
     showTip(`<b>${esc(name)}</b>${GRADE_LABEL[st.grade]} · ${TREND_SIGN[st.trend]} ${TREND[st.trend]} · ${BOND_LABEL[st.bond].toLowerCase()} · confidence ${st.confidence}${st.stale ? " · stale" : ""}<br><span class="k">${esc(st.note || "")}</span>`, ev);
@@ -287,7 +285,7 @@
     if (a.card !== "full") {
       const st = stanceOf(id);
       html = head + `<p class="empty">Stub: this actor exists so that others can relate to it. No grand-strategy card yet.</p>` +
-        (st ? `<h3>As ${esc(actors[pov].name)} sees it</h3><p><b>${GRADE_LABEL[st.grade]}</b>, ${TREND[st.trend]}, ${BOND_LABEL[st.bond].toLowerCase()}${badge(st)}<br>${esc(st.note || "")}${fn(st.sources)}</p>` : "") +
+        (st && pov ? `<h3>As ${esc(actors[pov].name)} sees it</h3><p><b>${GRADE_LABEL[st.grade]}</b>, ${TREND[st.trend]}, ${BOND_LABEL[st.bond].toLowerCase()}${badge(st)}<br>${esc(st.note || "")}${fn(st.sources)}</p>` : "") +
         relationsHtml(id);
     } else {
       const gs = a.grand_strategy;
@@ -334,7 +332,7 @@
       (!out.length && !inn.length ? `<p class="empty">No relation rows yet.</p>` : "");
   }
 
-  function renderAll() { renderLegend(); if (view === "map") drawMap(); else showDossier(pov); }
+  function renderAll() { renderLegend(); if (view === "map") drawMap(); else showDossier(pov || fullActors[0].id); }
   window.addEventListener("resize", () => { if (view === "map") drawMap(); });
   renderAll();
 })();

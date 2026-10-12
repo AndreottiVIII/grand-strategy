@@ -7,7 +7,7 @@
 <meta name="description" content="A situation map of what the world's actors want and do, read through grand strategy. Every row sourced, dated and graded.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Narrow:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=202610121213">
+<link rel="stylesheet" href="style.css?v=202610121217">
 </head>
 <body>
 <header class="top">
@@ -28,9 +28,6 @@
       <button class="tab is-on" data-view="map" role="tab">Situation map</button>
       <button class="tab" data-view="dossier" role="tab">Dossier</button>
     </nav>
-    <div class="block" id="layers">
-      <div class="lbl">Relations drawn</div>
-    </div>
     <div class="legend" id="legend"></div>
     <p class="fine">Dots are the posture today, denser is stronger: green allies, navy partners, vermilion the hostile side. The band inside a border is the standing bond. <b>A</b> official document or two independent sources · <b>B</b> one tier-1/2 source · <b>C</b> press or inference. Rows unverified for over a year are marked <span class="stale">stale</span>.</p>
     <p class="fine"><a href="https://github.com/AndreottiVIII/grand-strategy">Data, method and history on GitHub</a></p>
@@ -40,6 +37,7 @@
     <section id="view-map" class="view is-on">
       <div class="map-wrap"><svg id="map"></svg></div>
       <div class="map-note" id="map-note"></div>
+      <section class="relpanel" id="relpanel"></section>
     </section>
     <section id="view-dossier" class="view">
       <article id="dossier" class="dossier"></article>
@@ -50,6 +48,6 @@
 <div id="tip" class="tip" hidden></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
-<script src="app.js?v=202610121213"></script>
+<script src="app.js?v=202610121217"></script>
 </body>
 </html>

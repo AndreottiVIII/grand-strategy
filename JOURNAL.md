@@ -3,6 +3,17 @@
 Decision log, newest first. The path matters more than the destination: record why,
 not only what. Dead ends are entries too.
 
+## 2026-10-12 · Home: the world of today, in flags
+
+Davide, with Boetti's *Mappa* as the reference: the home must be a base map of the
+world as it is today, borders and flags, and clicking a country turns it into that
+country's point of view with the posture colours. Done: 175 of 177 features wear
+their current flag (flagcdn, follows official changes; N. Cyprus and Somaliland stay
+neutral; Antarctica blank). The title always returns there. Relations are no longer
+arrows on the map ("I don't like them, rather in another area"): they are cards under
+the map, one per counterpart, ordered by how much is going on, lit by hovering the
+country. Graticule removed.
+
 ## 2026-10-12 · What "adversary" means
 
 Davide, for the future: adversary = mortal enemies, Iran and Israel. Everything short
