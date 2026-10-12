@@ -60,6 +60,9 @@ Pilot demo built on 2026-10-12: one full card (Serbia) with 18 stances and 43 re
 - **Never type a Wikidata id, ISO code or count from memory.** Resolve ids by name
   through the search API and check the label (`data/datasets/wikidata/org-ids.json`);
   Davide caught a map coloured by wrong ids on day one.
+- **Reuse before researching.** Whatever another card already holds about an actor
+  (rows, stances, sources) is the starting evidence for that actor's own card: same
+  links, mirrored rows. Davide's rule; see METHOD.md step 2.
 - **Method is in METHOD.md** (tiers, region-by-region order, pipeline, protagonist
   list). Read it before researching any actor. Datasets before agents; one agent per
   actor writing YAML directly; economical model for the draft, then the best model

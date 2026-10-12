@@ -30,9 +30,13 @@ East, then the great powers, then the rest. Davide decides when a region is done
    shares (Comtrade/WITS), arms transfers (SIPRI), remittances and debt (World Bank,
    IMF), memberships and treaties (official lists), foreign troops (NATO, UN). They
    enter on their own, no human reading, flagged `source: dataset` in the row.
-2. **Mirror what exists.** Every relation already written from another actor toward
-   this one is reused; a treaty is one row for both sides. Stances are never mirrored,
-   evidence is.
+2. **Mirror what exists - Davide's rule, 2026-10-12.** Before researching, grep the
+   actor's id across `data/stances/`, `data/relations/` and `research/`: every row,
+   stance and source another card holds about this actor is reused. "Serbia sees
+   Croatia as a rival, with these links" becomes the evidence base for Croatia's side of
+   the pair, with the same URLs, plus whatever the new side adds. A treaty is one row
+   for both sides. Stances are never copied (the grade is the other side's view),
+   evidence always is. This makes pairs consistent and saves most of the search cost.
 3. **One research agent, a fixed brief.** Per region a starting dossier is fixed
    (Commission or State Department country report, the Wikipedia "foreign relations"
    page as an index, 3-4 think-tank country pages, the national security strategy if
