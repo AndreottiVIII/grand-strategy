@@ -1,14 +1,177 @@
 id: BEL
 name: Belgium
+short: Belgium
 type: state
 iso2: be
 wikipedia: https://en.wikipedia.org/wiki/Belgium
-coords:
-- 4.35
-- 50.85
+coords: [4.35, 50.85]
 seat: Brussels
-regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+regions: ['western-south-europe']
+card: full
+tier: protagonist
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Stay inside the Western security order while rearming from the bottom of the NATO table: the Strategic Vision 2025 (approved 18 Jul 2025) sets the budget at 2% of GDP in 2025 (EUR 12.8bn, up from 1.29% in 2024), rising to EUR 21.3bn in 2034, 11 more F-35s (45 in all), NASAMS air defence and a third frigate. In July 2026 Francken committed to hold 2% until 2029 and to draw a roadmap to the NATO 3.5% core target, which he calls 'particularly difficult' in the current budget climate; the government also counts 'resilience' spending (railways, cyber) to claim a total of about 3.4%."
+      confidence: B
+      sources:
+        - {url: "https://www.defensenews.com/global/europe/2025/07/21/belgium-to-add-f-35s-spend-billions-on-anti-air-in-defense-catch-up/", title: "Belgium to add F-35s, spend billions on anti-air in defense catch-up", publisher: "Defense News", date: 2025-07-21, tier: 3}
+        - {url: "https://www.vrt.be/vrtnws/en/2026/07/08/belgium-to-keep-defence-spending-at-2-of-gdp-till-2029-commitm.consumer/", title: "Belgium to keep defence spending at 2% of GDP till 2029", publisher: "VRT NWS", date: 2026-07-08, tier: 3}
+        - {url: "https://www.brusselstimes.com/belgium/2105528/belgium-spends-nearly-3-5-on-defence-new-estimates-show/", title: "Belgium spends nearly 3.5% on defence, new estimates show", publisher: "The Brussels Times", date: 2026-04-30, tier: 3}
+    - rank: 2
+      text: "Never be left alone holding the legal and financial risk of the Russian central-bank assets: about EUR 185bn of the EUR 210bn immobilised in the EU sits at Euroclear in Brussels. De Wever blocked the Commission's EUR 140-210bn 'reparations loan' in Oct-Dec 2025 until risk was shared by all member states and Euroclear was guaranteed against having to repay Moscow. The summit of 18-19 Dec 2025 chose a EUR 90bn loan raised on EU borrowing instead, and the question of the assets stayed open."
+      confidence: A
+      sources:
+        - {url: "https://brusselstimes.com/belgium/1828583/de-wever-heads-into-tense-eu-talks-over-using-frozen-russian-assets", title: "De Wever heads into tense EU talks over using frozen Russian assets", publisher: "The Brussels Times", date: 2025-10, tier: 3}
+        - {url: "https://www.enca.com/business/eu-agrees-90-bn-euro-loan-ukraine-without-russian-assets-0", title: "EU agrees 90-bn-euro loan for Ukraine, but without Russian assets", publisher: "eNCA (AFP)", date: 2025-12-19, tier: 3}
+        - {url: "https://www.npr.org/2025/12/19/g-s1-102967/eu-leaders-agree-on-ukraine-loan", title: "EU leaders agree on $105bn Ukraine loan, but without relying on frozen Russian assets", publisher: "NPR", date: 2025-12-19, tier: 3}
+        - {url: "https://www.euronews.com/my-europe/2025/12/11/eu-triggers-emergency-clause-to-indefinitely-immobilise-russian-assets", title: "EU triggers emergency clause to indefinitely immobilise Russian assets", publisher: "Euronews", date: 2025-12-11, tier: 3}
+    - rank: 3
+      text: "Keep Ukraine fighting and Russia deterred at a price Belgium can carry: a ten-year bilateral security agreement (28 May 2024), military aid of at least about EUR 1bn a year announced by De Wever for the legislature, F-16s (seven promised for 2026, three of them to fly), PURL contributions, EUR 6.6bn of Euroclear windfall contributions passed on since Feb 2024, and a post-ceasefire offer of air, maritime and training capabilities to the Coalition of the Willing (6 Jan 2026) on condition that US leadership backs it."
+      confidence: B
+      sources:
+        - {url: "https://premier.decroo-i.archive.belgium.be/en/node/8865.html", title: "Press release: Belgium and Ukraine sign a bilateral security agreement", publisher: "Prime Minister's Office of Belgium (archive)", date: 2024-05-28, tier: 1}
+        - {url: "https://www.eurointegration.com.ua/eng/news/2026/06/18/7239907/", title: "Belgium to transfer seven F-16 fighter jets to Ukraine and preparing to hand over entire fleet", publisher: "Evropeiska Pravda", date: 2026-06-18, tier: 3}
+        - {url: "https://www.pravda.com.ua/eng/news/2026/01/07/8014967", title: "Belgium to provide air and maritime capabilities to support peace in Ukraine - Belgian PM", publisher: "Ukrainska Pravda", date: 2026-01-07, tier: 3}
+        - {url: "https://www.euroclear.com/newsandinsights/en/press/2026/mr-12-euroclear-delivers-q1-2026-results.html", title: "Results for the first quarter ending 31 March 2026", publisher: "Euroclear (company release)", date: 2026-05-08, tier: 1}
+    - rank: 4
+      text: "Defend a trading economy that lives on open ports and the single market: Antwerp-Bruges, Zeebrugge, the Liege air hub, pharmaceuticals (more than half of the EUR 27bn of goods sold to the US in 2024). The US 15% tariff already cut exports to the US by 12% in May-July 2025; De Wever asks Brussels for a firmer line on Chinese trade practices while Belgium keeps the Chinese logistics flows that pass through its ports."
+      confidence: B
+      sources:
+        - {url: "https://www.brusselstimes.com/belgium/1755184/cars-chemicals-and-diamonds-trump-us-tariffs-starting-to-bite-in-belgium/", title: "Cars, chemicals and diamonds: US tariffs begin to bite in Belgium", publisher: "The Brussels Times", date: 2025-09-22, tier: 3}
+        - {url: "https://www.belganewsagency.eu/de-wever-urges-eu-to-harden-stance-on-chinas-trade-practices", title: "De Wever urges EU to harden stance on China's trade practices", publisher: "Belga News Agency", date: 2025, tier: 3}
+    - rank: 5
+      text: "Stay heard in the Great Lakes, where Belgium is the former colonial power and, through Brussels, the diplomatic gateway to Europe: defend the territorial integrity of the DRC, lead the EU push to sanction Rwanda over the M23 (which cost it its ties with Kigali from March 2025 to September 2026), and renew development cooperation with Congo (about EUR 50m a year, 2023-27) and Burundi (EUR 75m, 2024-28)."
+      confidence: B
+      sources:
+        - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/09/22/belgium-rwanda-resume-diplomatic-relations-after-drc-conflict-dispute", title: "Belgium, Rwanda resume diplomatic relations after DRC conflict dispute", publisher: "Reuters via Internazionale", date: 2026-09-22, tier: 3}
+        - {url: "https://www.belganewsagency.eu/as-congo-peace-deadline-slips-prevot-pushes-for-african-role-on-visit-to-region", title: "As Congo peace deadline slips, Belgium's Prevot pushes for African role on visit to region", publisher: "Belga News Agency", date: 2025, tier: 3}
+        - {url: "https://www.belganewsagency.eu/new-cooperation-programme-set-up-with-burundi-for-first-time-since-2015", title: "Belgium renews development cooperation with Burundi", publisher: "Belga News Agency", date: 2023, tier: 3}
+    - rank: 6
+      text: "Keep the five-party Arizona coalition (N-VA, MR, Les Engagés, Vooruit, CD&V) together while closing a budget hole of about EUR 10bn: pension reform (bonus-malus) went through committee in April 2026, unions strike regularly, and Vooruit, CD&V and Les Engagés are the cautious voices on higher military spending. Foreign policy is run by a government that has to buy peace at home before it commits money abroad."
+      confidence: C
+      sources:
+        - {url: "https://www.lalibre.be/belgique/politique-belge/2026/04/28/la-reforme-des-pensions-approuvee-en-deuxieme-lecture-en-commission-JXZIG2POFNGNVEFGC5IK6I6MXY/", title: "Pension reform approved in second reading in committee", title_original: "La réforme des pensions approuvée en deuxième lecture en commission", lang: fr, publisher: "La Libre", date: 2026-04-28, tier: 3}
+        - {url: "https://www.brusselstimes.com/belgium/1723088/budgets-trade-and-gaza-what-are-belgiums-priorities-this-year/", title: "Budgets, security and a government crisis: what are Belgium's main political issues?", publisher: "The Brussels Times", date: 2026, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "The seat of the EU institutions and NATO headquarters, and a foreign minister (Prevot) who uses national packages to push the EU: on 2 Sep 2025 a 12-measure package on Israel (conditional recognition of Palestine, entry bans on two Israeli ministers and violent settlers, a settlement-goods import ban), with the settlement-goods ban approved by the cabinet in July 2026 after Prevot called the Commission's proposal a 'token gesture'; a Joint Declaration with Morocco (Brussels, 23 Oct 2025) backing the autonomy plan; mediation channels to Kigali through Qatar."
+      confidence: B
+      sources:
+        - {url: "https://diplomatie.belgium.be/sites/default/files/2025-09/20250902_KERN_Palestinian_sovereignty.pdf", title: "Cabinet decision on Palestinian sovereignty and measures on Israel", publisher: "FPS Foreign Affairs of Belgium", date: 2025-09-02, tier: 1}
+        - {url: "https://en.yenisafak.com/world/belgium-slams-eu-response-to-israeli-settlement-imports-as-a-token-gesture-3720785", title: "Belgium slams EU response to Israeli settlement imports as a 'token gesture'", publisher: "Yeni Safak", date: 2026-07, tier: 4}
+        - {url: "https://www.moroccoworldnews.com/2026/03/281270/belgium-reaffirms-firm-support-for-moroccos-sovereignty-over-western-sahara/", title: "Belgium reaffirms firm support for Morocco's autonomy plan", publisher: "Morocco World News", date: 2026-03-02, tier: 3}
+    - domain: military
+      text: "A small, high-end force being rebuilt: 26,200 troops at the start of 2025, 34,500 planned for 2034; F-35s (45 on order), NASAMS (a EUR 3.1bn deal with the Netherlands signed at the Ankara summit, July 2026), two ASW frigates with the Netherlands (BeNeSam), a MQ-9B drone; F-16s donated to Ukraine as the F-35s arrive; a medium brigade to be NATO-deployable by 2030."
+      confidence: B
+      sources:
+        - {url: "https://www.defensenews.com/global/europe/2025/07/21/belgium-to-add-f-35s-spend-billions-on-anti-air-in-defense-catch-up/", title: "Belgium to add F-35s, spend billions on anti-air in defense catch-up", publisher: "Defense News", date: 2025-07-21, tier: 3}
+        - {url: "https://www.vrt.be/vrtnws/en/2026/07/08/belgium-to-keep-defence-spending-at-2-of-gdp-till-2029-commitm.consumer/", title: "Belgium to keep defence spending at 2% of GDP till 2029", publisher: "VRT NWS", date: 2026-07-08, tier: 3}
+    - domain: economic
+      text: "Custody of the financial centre of gravity: Euroclear passes the windfall profit on the redeposited Russian cash (EUR 744m in Q1 2026; about EUR 6.6bn since Feb 2024) to the European Fund for Ukraine and pays Belgian tax on it; sanctions enforcement at the ports (Russian diamonds banned since Jan 2024, Russian LNG ban from 1 Jan 2027); trade missions headed by Queen Mathilde (Turkey, May 2026); development agencies (Enabel) as instruments in Congo and Burundi."
+      confidence: A
+      sources:
+        - {url: "https://www.euroclear.com/newsandinsights/en/press/2026/mr-12-euroclear-delivers-q1-2026-results.html", title: "Results for the first quarter ending 31 March 2026", publisher: "Euroclear (company release)", date: 2026-05-08, tier: 1}
+        - {url: "https://amsterdam-cg.mfa.gov.tr/Mission/ShowAnnouncement/417718", title: "No: 85, 9 May 2026, Regarding the Belgian Economic Mission Visit", publisher: "Ministry of Foreign Affairs of Turkiye", date: 2026-05-09, tier: 1}
+    - domain: informational
+      text: "A security service that names the threats in public: the State Security (VSSE) Intelligence Report 2025 (January 2026) puts Russia first, with a hybrid arsenal of influence and espionage, and treats China's economic espionage and transnational repression ('From Brussels to Beijing') as the second line; the prime minister uses open letters (to von der Leyen on Chinese trade and on the Russian assets) to set the EU agenda."
+      confidence: B
+      sources:
+        - {url: "https://vsse.be/nieuws/intelligence-report-2025-english", title: "Intelligence Report 2025", publisher: "State Security Service (VSSE)", date: 2026-01, tier: 1}
+        - {url: "https://www.belganewsagency.eu/de-wever-urges-eu-to-harden-stance-on-chinas-trade-practices", title: "De Wever urges EU to harden stance on China's trade practices", publisher: "Belga News Agency", date: 2025, tier: 3}
+
+  constraints:
+    - text: "The exposure it cannot hedge: Euroclear holds the assets, so any seizure by the EU lands first on Belgium (investment treaties with Russia, Moscow court judgments: the Bank of Russia won in the Moscow arbitration court on 15 May 2026 for about 18 trillion roubles and Euroclear lost its appeal on 16 Jul 2026, by Euroclear's own report). Russia's ambassador threatened 'severe retaliation' in Nov 2025."
+      confidence: B
+      sources:
+        - {url: "https://www.euroclear.com/newsandinsights/en/press/2026/mr-20-euroclear-h1-2026-results.html", title: "Results for the first half year ended 30 June 2026", publisher: "Euroclear (company release)", date: 2026-07-17, tier: 1}
+        - {url: "https://www.dhnet.be/actu/monde/2025/11/15/lambassadeur-de-russie-menace-la-belgique-de-mesures-de-retorsion-severes-dans-le-dossier-euroclear-UCG3ND37BRDXXOS4HPZMHDD3ME/", title: "Russian ambassador threatens Belgium with 'severe retaliatory measures' over Euroclear", title_original: "L'ambassadeur de Russie menace la Belgique de 'mesures de rétorsion sévères' dans le dossier Euroclear", lang: fr, publisher: "La DH", date: 2025-11-15, tier: 3}
+    - text: "Money and capacity: defence at 2% only to 2029, 3.5% 'particularly difficult'; a public deficit the prime minister called 'dramatic'; only 12 of 34 F-35s delivered by March 2026 (eight of them parked at Luke AFB in Arizona), so the F-16s cannot leave until replacements arrive and are retired by 2028."
+      confidence: B
+      sources:
+        - {url: "https://www.brusselstimes.com/belgium/2030318/how-much-of-belgian-military-capabilities-rely-on-us", title: "Is Belgium over-reliant on the US for its military capabilities?", publisher: "The Brussels Times", date: 2026-03-23, tier: 3}
+        - {url: "https://www.eurointegration.com.ua/eng/news/2026/06/18/7239907/", title: "Belgium to transfer seven F-16 fighter jets to Ukraine and preparing to hand over entire fleet", publisher: "Evropeiska Pravda", date: 2026-06-18, tier: 3}
+    - text: "Dependence on the US for the high end (F-35, nuclear sharing) and on American goodwill for trade: only about 7% of the 2026 defence budget is committed to US contracts, but it is the F-35 core; the US takes about 7.6% of Belgian goods exports, led by pharmaceuticals."
+      confidence: B
+      sources:
+        - {url: "https://www.brusselstimes.com/belgium/2030318/how-much-of-belgian-military-capabilities-rely-on-us", title: "Is Belgium over-reliant on the US for its military capabilities?", publisher: "The Brussels Times", date: 2026-03-23, tier: 3}
+        - {url: "https://www.brusselstimes.com/belgium/1755184/cars-chemicals-and-diamonds-trump-us-tariffs-starting-to-bite-in-belgium/", title: "Cars, chemicals and diamonds: US tariffs begin to bite in Belgium", publisher: "The Brussels Times", date: 2025-09-22, tier: 3}
+    - text: "A five-party, two-language coalition: any deployment, budget line or recognition needs consensus between a Flemish nationalist prime minister, Francophone liberals and centrists, and two Flemish parties of the centre and the left. Defence minister Francken is more forward-leaning than De Wever on troops for Ukraine; the Palestine recognition has waited a year on conditions."
+      confidence: C
+      sources:
+        - {url: "https://brusselstimes.com/belgium/1447496/sending-belgian-soldiers-to-ukraine-is-only-logical-says-defence-minister/", title: "Sending Belgian soldiers to Ukraine is 'only logical', says Defence Minister", publisher: "The Brussels Times", date: 2025, tier: 3}
+        - {url: "https://www.brusselstimes.com/1919855/forward-calls-on-prevot-to-trigger-recognition-of-palestine-tbtb", title: "Calls for Belgium to start recognition of Palestine process", publisher: "The Brussels Times", date: 2026-01, tier: 3}
+    - text: "Hybrid exposure of a host state: drones closed Brussels and Liege airports and flew over the Kleine-Brogel, Florennes and Schaffen air bases in Nov 2025 (Belgium did not attribute them publicly; security services suspected a state actor, probably Russia); the UK sent RAF counter-drone specialists. The VSSE names Russia and China as the main threats in the capital of the EU and NATO."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2025/11/9/uk-military-to-help-belgium-after-drone-sightings-near-airports", title: "UK military to help Belgium after drone sightings near airports", publisher: "Al Jazeera", date: 2025-11-09, tier: 3}
+        - {url: "https://www.belganewsagency.eu/belgian-security-services-suspect-russian-involvement-in-drone-incidents", title: "Belgian security services suspect Russian involvement in drone incidents", publisher: "Belga News Agency", date: 2025-11, tier: 3}
+        - {url: "https://vsse.be/nieuws/intelligence-report-2025-english", title: "Intelligence Report 2025", publisher: "State Security Service (VSSE)", date: 2026-01, tier: 1}
+    - text: "A colonial name that is both an asset and a handicap: Belgium is listened to in Kinshasa and Bujumbura, but Kigali reads its Great Lakes policy as 'neo-colonial', and the Lumumba case (a Brussels court sent Etienne Davignon to trial on 17 Mar 2026) keeps the past in the courtroom."
+      confidence: B
+      sources:
+        - {url: "https://www.the-star.co.ke/news/africa/2025-03-17-rwanda-severs-ties-with-belgium-over-neo-colonial-delusions", title: "Rwanda severs ties with Belgium over 'neo-colonial delusions'", publisher: "The Star (Kenya)", date: 2025-03-17, tier: 3}
+        - {url: "https://www.hrw.org/news/2026/03/18/landmark-trial-for-belgian-colonial-crimes-to-go-ahead", title: "Landmark trial for Belgian colonial crimes to go ahead", publisher: "Human Rights Watch", date: 2026-03-18, tier: 2}
+
+  paradoxes:
+    - text: "The veto that protected Belgium isolated it. By holding out against the reparations loan to avoid being left with Russia's claims, De Wever made Belgium the obstacle in the eyes of Berlin, Helsinki, Warsaw and the Baltics, while Moscow went on suing Euroclear and threatening Belgium anyway: the EU froze the assets indefinitely on 12 Dec 2025 by qualified majority (so no veto was left on the freezing), the loan went through as EU debt, and Russia's courts ruled against Euroclear in May and July 2026. Belgium bears the risk it refused to share and kept none of the thanks."
+      confidence: B
+      sources:
+        - {url: "https://www.euronews.com/my-europe/2025/12/11/eu-triggers-emergency-clause-to-indefinitely-immobilise-russian-assets", title: "EU triggers emergency clause to indefinitely immobilise Russian assets", publisher: "Euronews", date: 2025-12-11, tier: 3}
+        - {url: "https://www.pravda.com.ua/eng/news/2025/12/18/8012444", title: "Germany's Merz supports reparations loan for Ukraine as he sees no better option", publisher: "Ukrainska Pravda", date: 2025-12-18, tier: 3}
+        - {url: "https://www.euroclear.com/newsandinsights/en/press/2026/mr-20-euroclear-h1-2026-results.html", title: "Results for the first half year ended 30 June 2026", publisher: "Euroclear (company release)", date: 2026-07-17, tier: 1}
+    - text: "The jet that buys Washington's goodwill delays the aid to Ukraine. The F-35 order (45 jets, 11 added in 2025) is the price of staying close to the US and keeping NATO's nuclear sharing at home, but the F-16s promised to Kyiv can leave only when F-35s arrive: three years after joining the fighter-jet coalition, no Belgian aircraft had been delivered, and the 2024 pledge of 30 jets by 2028 has shrunk to seven in 2026."
+      confidence: B
+      sources:
+        - {url: "https://www.eurointegration.com.ua/eng/news/2026/06/18/7239907/", title: "Belgium to transfer seven F-16 fighter jets to Ukraine and preparing to hand over entire fleet", publisher: "Evropeiska Pravda", date: 2026-06-18, tier: 3}
+        - {url: "https://www.brusselstimes.com/belgium/2030318/how-much-of-belgian-military-capabilities-rely-on-us", title: "Is Belgium over-reliant on the US for its military capabilities?", publisher: "The Brussels Times", date: 2026-03-23, tier: 3}
+    - text: "Moral leadership on Congo cost the influence to use it. Belgium led the EU call for sanctions on Rwanda and suspended aid in early 2025; Kigali expelled its diplomats within 48 hours (March 2025) and the Washington and Doha processes went on with Qatar and the US as brokers, while Prevot warned that adding another agreement would not stop the bloodshed. Eighteen months later Belgium restores ties (22 Sep 2026) without having changed the facts in the Kivus, and with Qatar as the broker."
+      confidence: B
+      sources:
+        - {url: "https://www.the-star.co.ke/news/africa/2025-03-17-rwanda-severs-ties-with-belgium-over-neo-colonial-delusions", title: "Rwanda severs ties with Belgium over 'neo-colonial delusions'", publisher: "The Star (Kenya)", date: 2025-03-17, tier: 3}
+        - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/09/22/belgium-rwanda-resume-diplomatic-relations-after-drc-conflict-dispute", title: "Belgium, Rwanda resume diplomatic relations after DRC conflict dispute", publisher: "Reuters via Internazionale", date: 2026-09-22, tier: 3}
+    - text: "A sanctioning port that leaks. Antwerp is the capital of the diamond trade and Zeebrugge the Belgian gate for Russian LNG: the Russian diamond ban (2024) pushed dealers to Dubai rather than ending the trade, Zeebrugge was the top EU importer of Russian LNG cargoes in the first half of 2026 (Belgian imports reportedly fell to zero in August, ahead of the EU ban from 1 Jan 2027), and Russia's cash is both frozen in Brussels and replenished at Belgian quays."
+      confidence: C
+      sources:
+        - {url: "https://www.tradewindsnews.com/gas/eu-increased-russian-lng-imports-in-first-half-2026-ahead-of-incoming-ban/2-1-2015504", title: "EU increased Russian LNG imports in first-half 2026 ahead of incoming ban", publisher: "TradeWinds", date: 2026-07, tier: 3}
+        - {url: "https://kyivindependent.com/eu-imports-of-russian-lng-plummet-with-belgium-down-to-zero/", title: "EU imports of Russian LNG plummet with Belgium down to zero", publisher: "Kyiv Independent", date: 2026, tier: 3}
+        - {url: "https://www.miningweekly.com/article/russian-diamond-ban-creates-costly-delays-antwerp-diamond-dealers-say-2024-03-14", title: "Russian diamond ban creates costly delays, Antwerp diamond dealers say", publisher: "Mining Weekly", date: 2024-03-14, tier: 3}
+    - text: "A firmer line on China from the prime minister, a Chinese backbone in the ports. De Wever asks the Commission to harden its stance on Chinese trade practices, while COSCO runs the Zeebrugge container terminal, Alibaba's Cainiao has its European e-hub at Liege and some 400 Belgian companies have Chinese majority owners; Huawei is at the centre of the bribery probe that Belgian prosecutors opened on the European Parliament in March 2025."
+      confidence: B
+      sources:
+        - {url: "https://www.belganewsagency.eu/de-wever-urges-eu-to-harden-stance-on-chinas-trade-practices", title: "De Wever urges EU to harden stance on China's trade practices", publisher: "Belga News Agency", date: 2025, tier: 3}
+        - {url: "https://www.belganewsagency.eu/foreign-minister-heads-to-china-for-open-dialogue-including-on-sensitive-disagreements", title: "Foreign minister heads to China for 'open dialogue, including on sensitive disagreements'", publisher: "Belga News Agency", date: 2026, tier: 3}
+        - {url: "https://theloadstar.com/cosco-and-cainiao-link-up-in-zeebrugge-to-speed-e-commerce-delivery/", title: "Cosco and Cainiao link up in Zeebrugge to speed e-commerce delivery", publisher: "The Loadstar", date: 2024, tier: 3}
+        - {url: "https://www.enca.com/business/eu-parliament-roiled-graft-probe-linked-chinas-huawei-0", title: "EU parliament roiled by graft probe linked to China's Huawei", publisher: "eNCA (AFP)", date: 2025-03, tier: 3}
+    - text: "The conditional formula pleased no one. Belgium announced recognition of Palestine at the UN in September 2025 but tied the royal decree to the release of the last hostage and the exclusion of Hamas from government, which left the act in the hands of Hamas and Israel; a year later it had still not been signed, while the sanctions that were national and unconditional (entry bans, settlement-goods ban) took ten months to reach the cabinet. Belgium has the cost of the announcement without the credit of an act done."
+      confidence: C
+      sources:
+        - {url: "https://diplomatie.belgium.be/sites/default/files/2025-09/20250902_KERN_Palestinian_sovereignty.pdf", title: "Cabinet decision on Palestinian sovereignty and measures on Israel", publisher: "FPS Foreign Affairs of Belgium", date: 2025-09-02, tier: 1}
+        - {url: "https://www.vrt.be/vrtnws/en/2025/09/02/belgium-to-recognise-palestine-in-due-course/", title: "Belgium to recognise Palestine in due course", publisher: "VRT NWS", date: 2025-09-02, tier: 3}
+        - {url: "https://www.brusselstimes.com/1919855/forward-calls-on-prevot-to-trigger-recognition-of-palestine-tbtb", title: "Calls for Belgium to start recognition of Palestine process", publisher: "The Brussels Times", date: 2026-01, tier: 3}
+
+  reading: |
+    Belgium is a small power whose geography made it a host: the seat of the European
+    institutions and of NATO, the port of Antwerp, and the Euroclear depository that
+    keeps the greater part of Russia's frozen reserves. Its grand strategy is the
+    strategy of a host that must stay useful to everyone who matters and exposed to
+    none of them. That works while the host's guests agree; in 2025-26 they stopped
+    agreeing, and the host has been made to choose in public. The Euroclear file is the
+    clearest case in Luttwak's terms: a defensive refusal, motivated by fear of
+    liability, which gave Belgium the opposite of what it wanted (the loss of
+    influence among partners, a Russian pressure campaign that no EU decision
+    has lifted, and an indefinite freezing it can no longer veto).
+
+    The second thread is a late and under-funded rearmament. The F-35 decision, the
+    NASAMS purchase and the French nuclear-deterrence opening all point the same way,
+    but the 2% is a floor and the 3.5% an unfunded promise, and the F-35 delivery
+    schedule holds back the F-16s promised to Kyiv. The third is the empire's
+    afterimage: in Congo, Rwanda and Burundi Belgium speaks with moral authority and
+    little leverage, and each time it has used the one (sanctions, a public stance)
+    it has paid in the other. Non-events matter here: Belgium sent one officer, not
+    troops, to Greenland (January 2026) and did not join the eight NATO states hit by
+    Trump's tariff threat; it signed the New York Declaration on Palestine and has not
+    yet signed the decree.

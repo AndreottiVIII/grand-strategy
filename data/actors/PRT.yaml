@@ -1,14 +1,181 @@
 id: PRT
 name: Portugal
+short: Portugal
 type: state
+coords: [-9.14, 38.71]
 iso2: pt
 wikipedia: https://en.wikipedia.org/wiki/Portugal
-coords:
-- -9.14
-- 38.71
 seat: Lisbon
-regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+regions: ['western-south-europe']
+card: full
+tier: protagonist
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Stay inside the two Western anchors at once - the EU (money, market, voice) and NATO with the United States (hard security) - and avoid being forced to pick: Lisbon authorised US use of Lajes for the 2026 Iran war on conditions, said it 'did not take part', and told Washington that 'unconditional' support is a misplaced word."
+      confidence: B
+      sources:
+        - {url: "https://www.al-monitor.com/originals/2026/04/portugal-says-us-uses-azores-base-condition-no-civilian-infrastructure-targeted", title: "Portugal says US uses Azores base on condition no civilian infrastructure targeted", publisher: "Reuters (via Al-Monitor)", date: 2026-04-07, tier: 3}
+        - {url: "https://observador.pt/2026/04/30/rangel-acredita-que-eua-nao-tem-motivos-para-considerar-portugal-um-aliado-pouco-fiavel-na-nato/", title: "Rangel believes the US has no reason to consider Portugal an unreliable NATO ally", title_original: "Rangel acredita que EUA nao tem motivos para considerar Portugal um aliado pouco fiavel na NATO", lang: pt, publisher: "Observador", date: 2026-04-30, tier: 3}
+    - rank: 2
+      text: "Keep EU money and the single market flowing: finish the Recovery plan (PRR) by its 31 Aug 2026 deadline, protect cohesion funds in the 2028-34 budget (Montenegro has threatened to oppose a budget that disrespects cohesion) and open new markets, above all the EU-Mercosur agreement (approved 9 Jan 2026, signed 17 Jan)."
+      confidence: B
+      sources:
+        - {url: "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/governo-preve-execucao-integral-do-prr-ate-31-de-agosto", title: "Government expects full execution of the PRR by 31 August", title_original: "Governo preve execucao integral do PRR ate 31 de agosto", lang: pt, publisher: "Government of Portugal", date: 2026-07-28, tier: 1}
+        - {url: "https://www.theportugalnews.com/br/noticias/2026-04-25/primeiro-ministro-de-portugal-pode-se-opor-ao-proximo-orcamento-da-uniao-europeia/1012932", title: "Portugal's PM may oppose the next EU budget", publisher: "The Portugal News", date: 2026-04-25, tier: 3}
+        - {url: "https://rr.pt/noticia/economia/2026/01/09/mercosul-montenegro-diz-que-acordo-comercial-reforca-autonomia-estrategica-da-ue/454684/", title: "Mercosur: Montenegro says trade deal strengthens EU strategic autonomy", title_original: "Mercosul. Montenegro diz que acordo comercial reforca autonomia estrategica da UE", lang: pt, publisher: "Renascenca", date: 2026-01-09, tier: 3}
+    - rank: 3
+      text: "End the Iberian energy island: interconnections with France (Bay of Biscay link due 2028) and a joint push with Spain after the 28 Apr 2025 blackout; Lisbon-Madrid high-speed rail targeted for 2034."
+      confidence: B
+      sources:
+        - {url: "https://en.ara.cat/economy/spain-and-portugal-pressure-france-to-speed-up-electrical-interconnections_1_5404653.amp.html", title: "Spain and Portugal pressure France to speed up electrical interconnections", publisher: "Ara", date: 2025-05, tier: 3}
+        - {url: "https://www.eib.org/en/press/all/2025-241-eib-supports-with-eur1-6-bn-the-strategic-bay-of-biscay-electricity-interconnection-between-spain-and-france", title: "EIB supports with EUR 1.6bn the strategic Bay of Biscay electricity interconnection between Spain and France", publisher: "European Investment Bank", date: 2025-06-16, tier: 1}
+        - {url: "https://www.theportugalnews.com/news/2026-03-10/portugal-confirms-high-speed-rail-link-between-lisbon-and-madrid/987820", title: "Portugal confirms high-speed rail link between Lisbon and Madrid", publisher: "The Portugal News", date: 2026-03-10, tier: 3}
+    - rank: 4
+      text: "Use the Lusophone world as a multiplier - Brazil as business gateway, Angola and Mozambique as markets and security partners, the CPLP as a seat of influence - and keep it democratic enough to be worth leading (Guinea-Bissau suspended, Equatorial Guinea kept away from the 2027-29 presidency)."
+      confidence: B
+      sources:
+        - {url: "https://www.portaltela.com/noticias/internacional/2026/04/21/lula-aponta-portugal-como-porta-de-entrada-de-interesses-empresariais-brasileiros/", title: "Lula points to Portugal as the gateway for Brazilian business interests", title_original: "Lula aponta Portugal como porta de entrada de interesses empresariais brasileiros", lang: pt, publisher: "Portal Tela", date: 2026-04-21, tier: 3}
+        - {url: "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/primeiro-ministro-em-luanda-para-reforcar-cooperacao-bilateral-e-participar-na-cimeira-ueafrica", title: "Prime Minister in Luanda to reinforce bilateral cooperation and attend the EU-Africa summit", title_original: "Primeiro-Ministro em Luanda para reforcar cooperacao bilateral e participar na Cimeira UE-Africa", lang: pt, publisher: "Government of Portugal", date: 2025-11, tier: 1}
+        - {url: "https://www.verangola.net/va/en/082026/Politics/49857/Brazil-says-the-impasse-remains-over-which-country-will-assume-the-presidency-of-the-CPLP.htm", title: "Brazil says the impasse remains over which country will assume the presidency of the CPLP", publisher: "Ver Angola", date: 2026-08, tier: 3}
+    - rank: 5
+      text: "Rearm credibly at the lowest cost: the 2% of GDP reached in 2025 (four years ahead of the old plan), a stated path to 5% by 2035 under the Hague pledge, a replacement for the F-16s still undecided, and aid to Ukraine under the 2024 bilateral security agreement."
+      confidence: B
+      sources:
+        - {url: "https://www.bairdmaritime.com/security/naval/portugal-aims-to-reach-natos-defence-spending-goal-without-harming-finances", title: "Portugal aims to reach NATO's defence spending goal without harming finances", publisher: "Reuters (via Baird Maritime)", date: 2025-06, tier: 3}
+        - {url: "https://observador.pt/2025/06/23/nato-especialistas-apontam-dificuldade-de-portugal-atingir-5-do-pib-e-possivel-contabilidade-criativa/", title: "NATO: experts point to Portugal's difficulty reaching 5% of GDP and possible creative accounting", title_original: "NATO: especialistas apontam dificuldade de Portugal atingir 5% do PIB e possivel contabilidade criativa", lang: pt, publisher: "Observador", date: 2025-06-23, tier: 3}
+        - {url: "https://www.sabado.pt/dinheiro/amp/governo-aprova-ate-130-4-milhoes-para-apoio-a-kiev", title: "Government approves up to EUR 130.4 million for support to Kyiv", title_original: "Governo aprova ate 130,4 milhoes para apoio a Kiev", lang: pt, publisher: "Sabado", date: 2026-06, tier: 3}
+    - rank: 6
+      text: "Turn Atlantic geography into status: Lajes and the Azores as the price of US attention, the Santa Maria space hub (ESA, EUR 15m), the AIR Centre on Terceira, the Atlantic EEZ and its undersea cables - and the UN Security Council seat won on 3 Jun 2026 for 2027-28."
+      confidence: B
+      sources:
+        - {url: "https://passblue.com/2026/06/03/five-new-countries-elected-to-the-un-security-councils-2027-28-term/", title: "Five new countries elected to the UN Security Council's 2027-28 term", publisher: "PassBlue", date: 2026-06-03, tier: 3}
+        - {url: "https://portugal.gov.pt/en/gc25/communication/news/portugal-and-esa-invest-15-m-in-the-santa-maria-space-hub", title: "Portugal and ESA invest EUR 15m in the Santa Maria space hub", publisher: "Government of Portugal", date: 2025-11-27, tier: 1}
+        - {url: "https://www.fct.pt/en/media/noticias/air-centre-is-formally-founded-today/", title: "AIR Centre is formally founded today", publisher: "Fundacao para a Ciencia e a Tecnologia", date: 2017-11, tier: 1}
+
+  means:
+    - domain: diplomatic
+      text: "A Portuguese former prime minister, Antonio Costa, chairs the European Council since December 2024 (he spoke at the Mercosur signing in Asuncion); a UN Security Council seat for 2027-28 (134 votes, ahead of Germany); recognition of Palestine on 21 Sep 2025 only 'together with a group' of Western states; Iberian summits with Spain."
+      confidence: A
+      sources:
+        - {url: "https://www.consilium.europa.eu/european-council/president/", title: "President of the European Council", publisher: "Council of the EU", date: 2026, tier: 1}
+        - {url: "https://passblue.com/2026/06/03/five-new-countries-elected-to-the-un-security-councils-2027-28-term/", title: "Five new countries elected to the UN Security Council's 2027-28 term", publisher: "PassBlue", date: 2026-06-03, tier: 3}
+        - {url: "https://portugal.gov.pt/en/gc25/communication/news/portugal-formally-recognises-the-palestinian-state", title: "Portugal formally recognises the Palestinian State", publisher: "Government of Portugal", date: 2025-09-21, tier: 1}
+    - domain: diplomatic
+      text: "Lusophone convening power: the CPLP secretariat sits in Lisbon, and Portugal backed the CPLP reaction to the 26 Nov 2025 Guinea-Bissau coup (suspension, call to free detainees) and, with Brazil and Timor-Leste, resists Equatorial Guinea's bid for the 2027-29 presidency."
+      confidence: B
+      sources:
+        - {url: "https://secretariadoexecutivo.cplp.org/media/3a5faosq/comunicado-gb-cplp-27-11-2025_final.pdf", title: "CPLP communique on Guinea-Bissau, 27 Nov 2025", publisher: "CPLP Executive Secretariat", date: 2025-11-27, tier: 1}
+        - {url: "https://www.verangola.net/va/en/082026/Politics/49857/Brazil-says-the-impasse-remains-over-which-country-will-assume-the-presidency-of-the-CPLP.htm", title: "Brazil says the impasse remains over which country will assume the presidency of the CPLP", publisher: "Ver Angola", date: 2026-08, tier: 3}
+    - domain: military
+      text: "Basing and training rather than force: the Lajes air base (65th Air Base Wing, USAF) as access currency with Washington, Portuguese command of the EU mission in Mozambique (EUTM then EUMAM-MOZ, more than 70 programmes for about 2,000 troops), and Navy shadowing of Russian vessels in the Azores and Madeira waters."
+      confidence: B
+      sources:
+        - {url: "https://www.al-monitor.com/originals/2026/04/portugal-says-us-uses-azores-base-condition-no-civilian-infrastructure-targeted", title: "Portugal says US uses Azores base on condition no civilian infrastructure targeted", publisher: "Reuters (via Al-Monitor)", date: 2026-04-07, tier: 3}
+        - {url: "https://360mozambique.com/development/mozambican-and-portuguese-governments-request-renewal-of-eu-military-mission-until-2028/", title: "Mozambican and Portuguese governments request renewal of EU military mission until 2028", publisher: "360 Mozambique", date: 2026, tier: 3}
+        - {url: "https://stg.portugalresident.com/?p=346815", title: "Navy completes 90-hour mission trailing Russian 'spy ships'", publisher: "Portugal Resident", date: 2025, tier: 3}
+    - domain: military
+      text: "Defence money on a gradual path: 2% of GDP in 2025, 5% by 2035 'without straining finances' (Montenegro), at least EUR 126m of military aid to Ukraine pledged for 2024 and up to EUR 130.4m authorised for 2026."
+      confidence: B
+      sources:
+        - {url: "https://www.bairdmaritime.com/security/naval/portugal-aims-to-reach-natos-defence-spending-goal-without-harming-finances", title: "Portugal aims to reach NATO's defence spending goal without harming finances", publisher: "Reuters (via Baird Maritime)", date: 2025-06, tier: 3}
+        - {url: "https://www.ukrinform.net/rubric-polytics/3868913-ukraine-portugal-sign-bilateral-security-agreement.html", title: "Ukraine, Portugal sign bilateral security agreement", publisher: "Ukrinform", date: 2024-05-28, tier: 3}
+    - domain: economic
+      text: "Credit lines and trade promotion in the Lusophone markets (a EUR 3.25bn credit line to Angola, 23 new cooperation instruments signed since July 2024; EUR 75m four-year cooperation for Timor-Leste), open doors to Chinese capital (Montenegro in China, Sep 2025) and a record EUR 4.39bn of emigrant remittances in 2025."
+      confidence: B
+      sources:
+        - {url: "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/primeiro-ministro-em-luanda-para-reforcar-cooperacao-bilateral-e-participar-na-cimeira-ueafrica", title: "Prime Minister in Luanda to reinforce bilateral cooperation and attend the EU-Africa summit", title_original: "Primeiro-Ministro em Luanda para reforcar cooperacao bilateral e participar na Cimeira UE-Africa", lang: pt, publisher: "Government of Portugal", date: 2025-11, tier: 1}
+        - {url: "https://www.sabado.pt/dinheiro/amp/montenegro-defende-na-china-que-portugal-e-um-pais-confiavel-e-confiante-para-investimentos", title: "Montenegro defends in China that Portugal is a reliable country for investment", title_original: "Montenegro defende na China que Portugal e um pais confiavel e confiante para investimentos", lang: pt, publisher: "Sabado", date: 2025-09, tier: 3}
+        - {url: "https://www.dnoticias.pt/2026/2/23/482430-remessas-dos-emigrantes-subiram-214-em-2025-para-4387-milhoes-de-euros/", title: "Emigrant remittances rose 2.14% in 2025 to EUR 4,387 million", title_original: "Remessas dos emigrantes subiram 2,14% em 2025 para 4.387 milhoes de euros", lang: pt, publisher: "DNoticias (Lusa, Banco de Portugal data)", date: 2026-02-23, tier: 3}
+    - domain: informational
+      text: "Soft power in language and science: Portuguese-language teaching funded in Timor-Leste and Angola, the AIR Centre (Atlantic research network founded in 2017 with Brazil, Spain, Angola, Cape Verde and others), and a new Space Hub on Santa Maria."
+      confidence: B
+      sources:
+        - {url: "https://www.fct.pt/en/media/noticias/air-centre-is-formally-founded-today/", title: "AIR Centre is formally founded today", publisher: "Fundacao para a Ciencia e a Tecnologia", date: 2017-11, tier: 1}
+        - {url: "https://thenews.co.pt/montenegro-anuncia-apoio-de-75-milhoes-de-euros-para-timor-leste-e-visita-ao-pais-em-junho-de-2025", title: "Montenegro announces EUR 75 million support for Timor-Leste", title_original: "Montenegro anuncia apoio de 75 milhoes de euros para Timor-Leste", lang: pt, publisher: "The News", date: 2025, tier: 3}
+
+  constraints:
+    - text: "A weak domestic base for foreign policy: the AD won 91 of 230 seats in May 2025 and governs in minority; Chega (60 seats) is the second force and led or tied the polls in July 2026 (26.4% against 23.2% for the AD); the head of state, Antonio Jose Seguro (PS, elected 8 Feb 2026 with 66.7%), openly differs from the government on the US."
+      confidence: B
+      sources:
+        - {url: "https://www.idea.int/democracytracker/report/portugal/may-2025", title: "Portugal, May 2025 - democracy tracker", publisher: "International IDEA", date: 2025-05, tier: 2}
+        - {url: "https://rr.pt/noticia/politica/2026/07/24/ps-lidera-nova-sondagem-e-chega-ultrapassa-a-ad/479422/", title: "PS leads new poll and Chega overtakes the AD", title_original: "PS lidera nova sondagem e Chega ultrapassa a AD", lang: pt, publisher: "Renascenca", date: 2026-07-24, tier: 3}
+        - {url: "https://www.npr.org/2026/02/09/g-s1-109279/socialist-candidate-wins-over-populist-portugal", title: "Socialist candidate wins over populist in Portugal's presidential runoff", publisher: "NPR", date: 2026-02-09, tier: 3}
+    - text: "Small armed forces from a low spending base: among the NATO members with the lowest defence-to-GDP ratio until 2025, a 5% target that analysts call a political and not a binding commitment, and a F-16 replacement that the EU SAFE loans do not cover."
+      confidence: B
+      sources:
+        - {url: "https://observador.pt/2025/06/23/nato-especialistas-apontam-dificuldade-de-portugal-atingir-5-do-pib-e-possivel-contabilidade-criativa/", title: "NATO: experts point to Portugal's difficulty reaching 5% of GDP", title_original: "NATO: especialistas apontam dificuldade de Portugal atingir 5% do PIB e possivel contabilidade criativa", lang: pt, publisher: "Observador", date: 2025-06-23, tier: 3}
+        - {url: "https://observador.pt/2026/05/29/substituicao-dos-f-16-melo-rejeita-especulacoes-e-avisa-que-processo-ainda-nao-comecou/", title: "F-16 replacement: Melo rejects speculation and warns the process has not started", title_original: "Substituicao dos F-16: Melo rejeita especulacoes e avisa que processo ainda nao comecou", lang: pt, publisher: "Observador", date: 2026-05-29, tier: 3}
+    - text: "Dependence on Brussels money: the Recovery plan (EUR 22.2bn, 283 of 379 milestones met by 28 Jul 2026) ended its implementation window on 31 Aug, and the 2028-34 cohesion envelope is undecided while the proposed Competitiveness Fund shifts money to merit-based grants."
+      confidence: B
+      sources:
+        - {url: "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/governo-preve-execucao-integral-do-prr-ate-31-de-agosto", title: "Government expects full execution of the PRR by 31 August", title_original: "Governo preve execucao integral do PRR ate 31 de agosto", lang: pt, publisher: "Government of Portugal", date: 2026-07-28, tier: 1}
+        - {url: "https://portugal.gov.pt/en/gc25/communication/news/cohesion-at-the-centre-of-negotiations-for-the-upcoming-european-union-multiannual-budget", title: "Cohesion at the centre of negotiations for the upcoming EU multiannual budget", publisher: "Government of Portugal", date: 2026, tier: 1}
+    - text: "A market that is Spain and the EU: about 73% of goods exports go to the EU (Q1 2025), Spain alone takes 25-30%, and the US (6.2%) bought 13.4% less in 2025 under Trump's tariffs - Portugal cannot retaliate and welcomed the EU-US deal's 15% tariff as the least bad outcome."
+      confidence: B
+      sources:
+        - {url: "https://www.essential-business.pt/2026/02/09/exports-up-0-5-in-2025-but-plummet-by-13-4-to-us/", title: "Exports up 0.5% in 2025 but plummet by 13.4% to US", publisher: "Essential Business (INE data)", date: 2026-02-09, tier: 3}
+        - {url: "https://econews.pt/2026/06/16/portugal-lost-export-share-in-most-markets-in-2025/", title: "Portugal lost export share in most markets in 2025", publisher: "Econews (Banco de Portugal bulletin)", date: 2026-06-16, tier: 3}
+        - {url: "https://stg.portugalresident.com/pm-welcomes-us-eu-trade-deal-saying-it-brings-predictability-stability/", title: "PM welcomes US-EU trade deal, saying it brings predictability, stability", publisher: "Portugal Resident", date: 2025-07, tier: 3}
+    - text: "An energy system with one door: about 95% of Portugal's gas came through the Sines LNG terminal in 2025 (Nigeria 50% of discharges, the US 43%, Russia 7%) and only about 3% of Iberian electricity is interconnected with neighbours."
+      confidence: B
+      sources:
+        - {url: "https://www.rtp.pt/noticias/economia/sines-recebeu-95-do-gas-que-entrou-em-portugal-e-tres-navios-russos-em-2025_n1764920", title: "Sines received 95% of the gas that entered Portugal and three Russian ships in 2025", title_original: "Sines recebeu 95% do gas que entrou em Portugal e tres navios russos em 2025", lang: pt, publisher: "RTP (ERSE report)", date: 2026, tier: 3}
+        - {url: "https://en.ara.cat/economy/spain-and-portugal-pressure-france-to-speed-up-electrical-interconnections_1_5404653.amp.html", title: "Spain and Portugal pressure France to speed up electrical interconnections", publisher: "Ara", date: 2025-05, tier: 3}
+    - text: "The Constitutional Court as a veto on immigration policy: it struck down the first foreigners law (July 2025) and four of seven contested provisions of the nationality law (Dec 2025), keeping only the 10-year residency rule, so the PSD-Chega bargains cannot simply be enacted."
+      confidence: B
+      sources:
+        - {url: "https://www.essential-business.pt/2025/12/17/constitutional-court-says-parts-of-portugals-new-nationality-law-unconstitutional/", title: "Constitutional Court says parts of Portugal's new Nationality Law unconstitutional", publisher: "Essential Business", date: 2025-12-17, tier: 3}
+        - {url: "https://euronews.com/my-europe/2025/09/30/portugals-parliament-approves-amended-foreigners-law-with-far-right-support", title: "Portugal's parliament approves amended foreigners law with far-right support", publisher: "Euronews", date: 2025-09-30, tier: 3}
+
+  paradoxes:
+    - text: "The base that buys Washington's attention drags Portugal toward wars it says it is not in. Lisbon approved 76 US landings and 25 overflights at Lajes for the Iran war while saying it 'did not support, subscribe to or take part' in it; the president, meanwhile, wants the US defence cooperation agreement revised. Being useful without being committed satisfies neither a Trump list of 'good' allies nor the Portuguese left."
+      confidence: B
+      sources:
+        - {url: "https://www.al-monitor.com/originals/2026/04/portugal-says-us-uses-azores-base-condition-no-civilian-infrastructure-targeted", title: "Portugal says US uses Azores base on condition no civilian infrastructure targeted", publisher: "Reuters (via Al-Monitor)", date: 2026-04-07, tier: 3}
+        - {url: "https://observador.pt/especiais/seguro-critico-da-administracao-trump-marca-posicao-com-10-de-junho-a-poucos-quilometros-das-lajes/", title: "Seguro, critical of the Trump administration, makes a point with 10 June a few kilometres from Lajes", title_original: "Seguro, critico da administracao Trump, marca posicao com 10 de Junho a poucos quilometros das Lajes", lang: pt, publisher: "Observador", date: 2026-04-29, tier: 3}
+    - text: "Buying European to hedge Trump costs the goodwill and the money Portugal lacks. Melo said in March 2025 that US unpredictability made F-35s unlikely and European jets an option; by May 2026 he spoke of Lockheed, Saab and Airbus as contenders with the process not yet open, and the EU SAFE loans do not cover the purchase. The hedge is real in speech and unfunded in practice."
+      confidence: B
+      sources:
+        - {url: "https://theaviationist.com/2025/03/13/portugal-f-35-plans/", title: "Portugal drops plans for F-35 citing U.S. political uncertainty", publisher: "The Aviationist", date: 2025-03-13, tier: 3}
+        - {url: "https://observador.pt/2026/05/29/substituicao-dos-f-16-melo-rejeita-especulacoes-e-avisa-que-processo-ainda-nao-comecou/", title: "F-16 replacement: Melo rejects speculation and warns the process has not started", title_original: "Substituicao dos F-16: Melo rejeita especulacoes e avisa que processo ainda nao comecou", lang: pt, publisher: "Observador", date: 2026-05-29, tier: 3}
+    - text: "The economy needs the immigrants whom the politics rejects. Brazil is the largest foreign community (493,622 residents, 31% of foreigners) and Lisbon sells itself to Lula as Brazil's gateway to Europe, while the PSD passed foreigners and nationality laws with Chega's votes (10 years to citizenship) - feeding the party that polls first, and drawing a Chega protest against the Brazilian president's own visit."
+      confidence: B
+      sources:
+        - {url: "https://dnbrasil.dn.pt/brasileiros-receberam-115709-novas-autorizaes-de-residncia-em-portugal-em-2025", title: "Brazilians received 115,709 new residence permits in Portugal in 2025", title_original: "Brasileiros receberam 115.709 novas autorizacoes de residencia em Portugal em 2025", lang: pt, publisher: "DN Brasil (AIMA report)", date: 2026-09, tier: 3}
+        - {url: "https://www.essential-business.pt/2025/10/29/portugals-new-nationality-law-approved/", title: "Portugal's new nationality law approved", publisher: "Essential Business", date: 2025-10-29, tier: 3}
+        - {url: "https://www.rtp.pt/noticias/pais/lula-termina-visita-muito-boa-a-portugal_e1735652", title: "Lula ends 'very good' visit to Portugal", title_original: "Lula termina visita 'muito boa' a Portugal", lang: pt, publisher: "RTP", date: 2026-04-21, tier: 3}
+    - text: "Standing for Lusophone democracy costs it the Lusophone majority. Lisbon, Brazil and Timor-Leste refuse Equatorial Guinea the CPLP presidency and condemned the Guinea-Bissau coup; the junta answers that Portugal has no legitimacy to set norms, the PALOP countries side with Malabo and the 2027 summit has no host. The organisation Portugal wants to lead for its soft power is splitting along the line Portugal drew."
+      confidence: B
+      sources:
+        - {url: "https://www.plataformamedia.com/en/2026/03/24/guinea-bissau-military-cnt-rejects-portugal-corridor-diplomacy-paulo-rangel/", title: "Military rulers in Guinea-Bissau reject Portugal's 'hostile corridor diplomacy'", publisher: "Plataforma Media", date: 2026-03-24, tier: 3}
+        - {url: "https://www.verangola.net/va/en/082026/Politics/49857/Brazil-says-the-impasse-remains-over-which-country-will-assume-the-presidency-of-the-CPLP.htm", title: "Brazil says the impasse remains over which country will assume the presidency of the CPLP", publisher: "Ver Angola", date: 2026-08, tier: 3}
+    - text: "Pressing France for a grid link turned into a blame contest. After the 28 Apr 2025 blackout Lisbon said the failure began in Spain, Madrid blamed the break with France, and both asked Paris for binding dates; ENTSO-E's report (Mar 2026) found several causes, including generators not controlling voltage. Each accusation weakens the joint case for French interconnection money."
+      confidence: B
+      sources:
+        - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/03/20/iberian-blackout-was-caused-by-multiple-factors-report-says", title: "Iberian blackout was caused by multiple factors, report says", publisher: "Reuters (via Internazionale)", date: 2026-03-20, tier: 3}
+        - {url: "https://en.ara.cat/economy/spain-and-portugal-pressure-france-to-speed-up-electrical-interconnections_1_5404653.amp.html", title: "Spain and Portugal pressure France to speed up electrical interconnections", publisher: "Ara", date: 2025-05, tier: 3}
+    - text: "The only western European state still in the Belt and Road, courting Chinese capital in the grid (Three Gorges in EDP, State Grid in REN) just as Washington asks for guarantees on undersea cables and the EU makes investment screening mandatory by January 2028. The openness that brought capital after 2011 now costs standing with the ally whose base Portugal hosts."
+      confidence: C
+      sources:
+        - {url: "https://www.yahoo.com/news/china-willing-build-stable-fruitful-071922250.html", title: "China seeks stronger ties with Europe, it says in meeting with Portugal's foreign minister", publisher: "Reuters (via Yahoo)", date: 2025-03, tier: 3}
+        - {url: "https://econews.pt/?p=47667", title: "Portugal reviews foreign investment screening overhaul", publisher: "Econews", date: 2026-07, tier: 3}
+        - {url: "https://defence24.com/geopolitics/russian-drones-on-the-portuguese-coast", title: "Russian drones on the Portuguese coast", publisher: "Defence24", date: 2026-04, tier: 3}
+
+  reading: |
+    Portugal runs the strategy of a small Atlantic state that makes itself useful to
+    every large power around it and commits to none beyond what the treaties force.
+    Its anchors are three - the EU (money and a Portuguese chair of the European
+    Council), NATO and the United States (Lajes), and the Lusophone world (Brazil,
+    Angola, the CPLP) - and its method is conditionality: base access on conditions,
+    Palestine recognised only with a group, the F-35 kept open, Chinese capital welcomed
+    but not endorsed. This works while the anchors do not collide. In 2026 they began to:
+    the Iran war put Lajes between Washington and the Spanish line, the F-16 replacement
+    asks it to choose between Lockheed and a European hedge it cannot yet pay for, and
+    the CPLP is splitting over Equatorial Guinea. At home the cost shows in a minority
+    government, a president of the other party who speaks more sharply than the foreign
+    minister, and Chega, which polls first on the one issue (immigration) where the
+    Lusophone strategy and the electorate pull apart. Expect Lisbon to stay the quietest
+    reliable ally until Washington asks for something it cannot dress in conditions.
