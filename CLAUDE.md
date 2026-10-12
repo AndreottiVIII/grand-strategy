@@ -79,9 +79,11 @@ Pilot demo built on 2026-10-12: one full card (Serbia) with 18 stances and 43 re
   write on any error (missing source, unknown id, grade or type outside the vocabulary).
 - `docs/`: the static site served by GitHub Pages (`index.html`, `app.js`, `style.css`,
   `world.geojson` from Natural Earth 110m with Kosovo as `XKX`, and the compiled
-  `data.json`). D3 7.9 from cdnjs is the only dependency. Two views: the situation
-  map from the point-of-view actor (posture = colour, bond = screen, relations =
-  arrows by layer) and the dossier with footnoted sources. The look is a 1970s three-ink
+  `data.json`). D3 7.9 from cdnjs is the only dependency. The home is the world of
+  today, every country in its current flag (`iso2.json` maps Natural Earth ids to
+  flagcdn codes); clicking a country with a card turns the map into its point of view
+  (posture = dot screen, bond = band inside the border). Relations are cards under the
+  map, never arrows on it. The dossier has footnoted sources, flag and Wikipedia link. The look is a 1970s three-ink
   print on cold white (green allies, navy partners, vermilion the hostile side; dot
   screens for posture, denser is stronger; Archivo type): keep it that way, no fourth
   colour.
