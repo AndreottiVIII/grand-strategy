@@ -1,0 +1,356 @@
+id: SRB
+name: Serbia
+type: state
+seat: Belgrade
+regions: [western-balkans]
+card: full
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: Prevent Kosovo's consolidation as a state - no recognition, no membership of the UN or the Council of Europe.
+      confidence: A
+      sources:
+        - url: https://www.srbija.gov.rs/kosovo-metohija/en/42050
+          title: Resolution of the National Assembly on the protection of sovereignty, territorial integrity and constitutional order
+          publisher: Government of Serbia
+          date: 2007-12-26
+          tier: 1
+        - url: https://pace.coe.int/fr/files/36120/pdf
+          title: PACE amendment deploring that Serbia still opposes Kosovo's accession
+          publisher: Parliamentary Assembly of the Council of Europe
+          date: 2026-06
+          tier: 1
+        - url: https://www.tanjug.rs/english/politics/169201/vucic-we-adhere-to-un-charter-eu-admission-a-political-decision/amp
+          title: "Vučić: we adhere to UN Charter, EU admission a political decision"
+          publisher: Tanjug (state agency, official statement)
+          date: 2025-06-13
+          tier: 1
+    - rank: 2
+      text: Continuity of the Vučić/SNS regime. Vučić resigned the presidency on 27 Sep 2026 to head the list at the 25 Oct 2026 snap election as prime-minister candidate.
+      confidence: B
+      sources:
+        - url: https://www.france24.com/en/europe/20260927-serbian-president-aleksandar-vucic-resigns-expected-to-run-for-prime-minister
+          title: Serbian president Aleksandar Vučić resigns, expected to run for prime minister
+          publisher: France 24 / AP
+          date: 2026-09-27
+          tier: 3
+        - url: https://balkaninsight.com/2026/09/09/serbias-vucic-calls-early-parliamentary-elections-for-october-25/bi/
+          title: Serbia's Vučić calls early parliamentary elections for October 25
+          publisher: BIRN
+          date: 2026-09-09
+          tier: 3
+    - rank: 3
+      text: "Military neutrality: declared by parliament in 2007 and formalised in the 2019 Defence Strategy, with NATO Partnership for Peace as the 'optimum level' of cooperation."
+      confidence: A
+      sources:
+        - url: https://www.srbija.gov.rs/kosovo-metohija/en/42050
+          title: Resolution of the National Assembly (declares neutral status towards military alliances)
+          publisher: Government of Serbia
+          date: 2007-12-26
+          tier: 1
+        - url: https://www.mod.gov.rs/eng/14848/ministar-vulin-u-skupstini-predstavio-strategije-odbrane-i-nacionalne-bezbednosti-republike-srbije-14848
+          title: Minister Vulin presents the Defence and National Security Strategies in parliament
+          publisher: Ministry of Defence of Serbia
+          date: 2019
+          tier: 1
+    - rank: 4
+      text: EU accession on its own terms. Membership is called a 'strategic choice', while alignment with EU foreign-policy declarations was 60% in the first half of 2026 against 100% for the other Western Balkan candidates.
+      confidence: A
+      sources:
+        - url: https://data.consilium.europa.eu/doc/document/ST-14908-2025-INIT/en/pdf
+          title: Serbia 2025 Report, SWD(2025) 755
+          publisher: European Commission
+          date: 2025-11-04
+          tier: 1
+        - url: https://europeanwesternbalkans.com/2026/07/17/serbias-alignment-with-eu-foreign-policy-at-60-other-western-balkan-countries-at-100/
+          title: Serbia's alignment with EU foreign policy at 60%, other Western Balkan countries at 100%
+          publisher: European Western Balkans / ISAC Fund
+          date: 2026-07-17
+          tier: 3
+    - rank: 5
+      text: Patronage of Serbs beyond the border - Republika Srpska, northern Kosovo, Montenegro.
+      confidence: B
+      sources:
+        - url: https://www.slobodnaevropa.org/a/srbija-vucic-dodik/33499366.html
+          title: Vučić after Dodik's conviction - Belgrade will always be with our people and Republika Srpska
+          publisher: RFE/RL
+          date: 2025-02
+          tier: 3
+        - url: https://n1info.ba/english/news/vucic-dodik-question-bosnias-legitimacy-while-observing-serbia-statehood-day
+          title: Vučić, Dodik question Bosnia's legitimacy while observing Serbia Statehood Day
+          publisher: N1 BiH
+          date: 2025-02-14
+          tier: 3
+    - rank: 6
+      text: Growth through foreign investment from every side, with EXPO 2027 in Belgrade as the showcase ('Leap into the Future - Serbia 2027', EUR 17.8bn).
+      confidence: B
+      sources:
+        - url: https://seenews.com/news/serbia-to-invest-178-bln-euro-in-preparations-for-belgrade-expo-2027-846216
+          title: Serbia to invest 17.8 bln euro in preparations for Belgrade EXPO 2027
+          publisher: SeeNews
+          date: 2024-01
+          tier: 3
+
+  means:
+    - domain: diplomatic
+      text: Derecognition campaign against Kosovo (stated goal - push recognitions below 97 of 193 UN members) and lobbying against Kosovo's membership of international organisations, which the Commission reads as contrary to the Ohrid Agreement.
+      confidence: B
+      sources:
+        - url: https://prishtinainsight.com/serbian-president-claims-nine-more-kosovo-recognition-withdrawals/
+          title: Serbian president claims nine more Kosovo recognition withdrawals
+          publisher: Prishtina Insight / BIRN
+          date: 2022
+          tier: 3
+        - url: https://data.consilium.europa.eu/doc/document/ST-14908-2025-INIT/en/pdf
+          title: Serbia 2025 Report
+          publisher: European Commission
+          date: 2025-11-04
+          tier: 1
+    - domain: diplomatic
+      text: Russian and Chinese cover at the UN on Kosovo, obtained by withholding alignment with EU declarations critical of Moscow and Beijing.
+      confidence: B
+      sources:
+        - url: https://europeanwesternbalkans.com/2026/07/17/serbias-alignment-with-eu-foreign-policy-at-60-other-western-balkan-countries-at-100/
+          title: Serbia's alignment with EU foreign policy at 60%
+          publisher: European Western Balkans / ISAC Fund
+          date: 2026-07-17
+          tier: 3
+    - domain: diplomatic
+      text: "Multi-vector balancing: Moscow Victory Day parade (9 May 2025), Beijing parade (3 Sep 2025), 'community with a shared future' with China, China FTA in force since July 2024, EU critical raw materials MoU (July 2024), US strategic dialogue launched 17 July 2026."
+      confidence: A
+      sources:
+        - url: https://betabriefing.com/news/politics/31057-vucic-at-military-parade-in-moscow-despite-warnings-from-the-eu
+          title: Vučić at military parade in Moscow despite warnings from the EU
+          publisher: Beta
+          date: 2025-05-09
+          tier: 3
+        - url: https://mfa.rs/en/press-service/statements/djuric-launch-strategic-dialogue-represents-substantive-breakthrough-serbia-u-s-relations
+          title: "Đurić: launch of strategic dialogue represents substantive breakthrough in Serbia-US relations"
+          publisher: Ministry of Foreign Affairs of Serbia
+          date: 2026-07
+          tier: 1
+    - domain: military
+      text: "Rearmament from every supplier: 12 Rafale F4 for EUR 2.7bn (Aug 2024), Chinese FK-3 and HQ-17A air defence, defence budget +64.8% in 2025, 75-day conscription from March 2027."
+      confidence: A
+      sources:
+        - url: https://www.sipri.org/sites/default/files/2026-03/fs_2603_at_2025.pdf
+          title: Trends in International Arms Transfers, 2025
+          publisher: SIPRI
+          date: 2026-03-09
+          tier: 1
+        - url: https://defensenews.com/global/europe/2024/08/30/serbia-to-buy-12-rafale-fighter-jets-in-nod-to-european-industry
+          title: Serbia to buy 12 Rafale fighter jets in nod to European industry
+          publisher: Defense News
+          date: 2024-08-30
+          tier: 3
+        - url: https://vreme.com/en/?p=4863037
+          title: Defence budget line up 64.8% in 2025
+          publisher: Vreme
+          date: 2025
+          tier: 3
+    - domain: economic
+      text: Ammunition exports as a hedge - roughly EUR 800m reached Ukraine through third countries since 2022 (FT), a figure Vučić called 'in the right ballpark'; all exports halted on 23 June 2025 after Russian accusations.
+      confidence: B
+      sources:
+        - url: https://www.rferl.org/a/serbia-arms-exports-ukraine-russia-vucic/33453578.html
+          title: Serbia halts arms exports after Russia accuses it of arming Ukraine
+          publisher: RFE/RL
+          date: 2025-06-26
+          tier: 3
+    - domain: informational
+      text: "'Serbian world' narrative (Vulin) that Vučić disowns as doctrine; protests framed as a Western 'colour revolution', with public thanks to Russia's SVR for backing that claim; RT Balkan launched with official support."
+      confidence: B
+      sources:
+        - url: https://n1info.rs/english/news/vucic-thanks-russias-foreign-intelligence-agency-for-information/
+          title: Vučić thanks Russia's foreign intelligence agency for information
+          publisher: N1
+          date: 2025-09
+          tier: 3
+        - url: https://betabriefing.com/news/politics/34814-serbias-rsf-media-freedom-ranking-drops-to-104th-place
+          title: Serbia's RSF media freedom ranking drops to 104th place
+          publisher: Beta
+          date: 2026-04-30
+          tier: 3
+
+  constraints:
+    - text: "Energy: Russian gas covers about 75% of consumption (over 90% a year earlier) at EUR 318 per 1,000 m3 against roughly EUR 868 on the market, but with no multi-year contract since May 2025 - only quarterly extensions, the latest to 31 Dec 2026."
+      confidence: B
+      sources:
+        - url: https://n1info.rs/english/news/srbijagas-ceo-bajatovic-gas-supply-deal-with-russia-extended-through-end-of-year/
+          title: "Srbijagas CEO Bajatović: gas supply deal with Russia extended through end of year"
+          publisher: N1
+          date: 2026-09-30
+          tier: 3
+        - url: https://www.intellinews.com/serbia-secures-three-month-extension-of-russian-gas-deal-434444/
+          title: Serbia secures three-month extension of Russian gas deal
+          publisher: bne IntelliNews
+          date: 2026
+          tier: 3
+    - text: "Oil: NIS is 56.15% Russian-owned; US sanctions took effect on 9 Oct 2025, Croatia's JANAF pipeline (sole crude route) stopped deliveries and the Pančevo refinery (about 80% of fuel) shut on 2 Dec 2025, restarting on 16 Jan 2026 under a temporary licence. The sale of the Russian stake to Hungary's MOL is not closed; OFAC licences run to 30 Oct 2026."
+      confidence: B
+      sources:
+        - url: https://www.osw.waw.pl/en/publikacje/analyses/2025-10-21/us-sanctions-against-serbian-oil-company-nis
+          title: US sanctions against Serbian oil company NIS
+          publisher: OSW
+          date: 2025-10-21
+          tier: 2
+        - url: https://www.osw.waw.pl/en/publikacje/analyses/2026-01-23/mol-moves-towards-acquiring-russian-stakes-serbias-nis
+          title: MOL moves towards acquiring Russian stakes in Serbia's NIS
+          publisher: OSW
+          date: 2026-01-23
+          tier: 2
+        - url: https://interfax.com/newsroom/top-stories/119354/
+          title: OFAC extends NIS licences to 30 October 2026
+          publisher: Interfax
+          date: 2026-10-01
+          tier: 3
+    - text: "The EU is the dominant economic partner: 58.2% of total trade in 2025 and 67.6% of FDI inflows in Jan-Nov 2025. In May 2026 the EU withheld EUR 428m of Growth Plan funds; in July 2026 eight member states blocked the opening of negotiating Cluster 3."
+      confidence: A
+      sources:
+        - url: https://publikacije.stat.gov.rs/G2026/pdfE/G20261190.pdf
+          title: External trade, December 2025 - final data (ST13-G No. 190)
+          publisher: Statistical Office of the Republic of Serbia (RZS)
+          date: 2026-07-15
+          tier: 1
+        - url: https://www.intellinews.com/serbia-net-fdi-falls-53-y-y-in-january-november-2025-420546/
+          title: Serbia net FDI falls 53% y/y in January-November 2025 (NBS data)
+          publisher: bne IntelliNews
+          date: 2026-01
+          tier: 3
+        - url: https://europeanwesternbalkans.com/2026/07/08/eight-eu-member-states-oppose-opening-of-claster-3-for-serbia/
+          title: Eight EU member states oppose opening of Cluster 3 for Serbia
+          publisher: European Western Balkans
+          date: 2026-07-08
+          tier: 3
+    - text: "NATO presence in Kosovo: KFOR 4,739 troops from 31 nations (June 2026), with a gradual reduction toward 3,000-3,500 announced on 12 June 2026."
+      confidence: A
+      sources:
+        - url: https://www.nato.int/content/dam/nato/webready/documents/factsheets/kfor/KFOR-Placemat.pdf
+          title: KFOR Placemat, June 2026
+          publisher: NATO
+          date: 2026-06
+          tier: 1
+    - text: "Domestic legitimacy: the Novi Sad canopy collapse (1 Nov 2024, 16 dead) set off the largest protests in Serbian history; PM Vučević resigned on 28 Jan 2025; BiEPAG calls the protests 'the most serious challenge thus far to Vučić's government'."
+      confidence: B
+      sources:
+        - url: https://www.biepag.eu/publication/resetting-the-eus-approach-to-serbia
+          title: Resetting the EU's approach to Serbia
+          publisher: BiEPAG
+          date: 2025-12-17
+          tier: 2
+        - url: https://europeanwesternbalkans.com/2025/10/31/grief-anger-and-hope-events-that-shaped-serbia-in-a-year-of-mass-protests/
+          title: Grief, anger and hope - events that shaped Serbia in a year of mass protests
+          publisher: European Western Balkans
+          date: 2025-10-31
+          tier: 3
+    - text: "Demography: population down more than 660,000 between 2011 and 2025, with a net 11,000 emigrants a year."
+      confidence: B
+      sources:
+        - url: https://www.osw.waw.pl/en/publikacje/osw-commentary/2025-03-05/vanishing-balkans-regions-demographic-crisis
+          title: Vanishing Balkans - the region's demographic crisis
+          publisher: OSW
+          date: 2025-03-05
+          tier: 2
+        - url: https://www.bta.bg/en/news/945116-serbia-s-population-declines-by-660-000-people-between-2011-and-2025
+          title: Serbia's population declines by 660,000 people between 2011 and 2025
+          publisher: BTA
+          date: 2025
+          tier: 3
+
+  paradoxes:
+    - text: The veto on Kosovo requires Moscow and Beijing, and Moscow and Beijing close the road to Brussels. Belgrade withholds alignment to keep UN cover on Kosovo, while the Commission ties the pace of negotiations to normalisation with Kosovo.
+      confidence: B
+      sources:
+        - url: https://data.consilium.europa.eu/doc/document/ST-14908-2025-INIT/en/pdf
+          title: Serbia 2025 Report
+          publisher: European Commission
+          date: 2025-11-04
+          tier: 1
+        - url: https://europeanwesternbalkans.com/2026/07/17/serbias-alignment-with-eu-foreign-policy-at-60-other-western-balkan-countries-at-100/
+          title: Serbia's alignment with EU foreign policy at 60%
+          publisher: European Western Balkans / ISAC Fund
+          date: 2026-07-17
+          tier: 3
+    - text: Neutrality paid for and armed by the West. The flagship purchase is French, growth rests on 58% EU trade, and 'neutral' ammunition supplied Ukraine.
+      confidence: B
+      sources:
+        - url: https://www.rferl.org/a/serbia-arms-exports-ukraine-russia-vucic/33453578.html
+          title: Serbia halts arms exports after Russia accuses it of arming Ukraine
+          publisher: RFE/RL
+          date: 2025-06-26
+          tier: 3
+        - url: https://publikacije.stat.gov.rs/G2026/pdfE/G20261190.pdf
+          title: External trade, December 2025 - final data
+          publisher: RZS
+          date: 2026-07-15
+          tier: 1
+    - text: Hedging buys leverage but not trust. By December 2025 relations had cooled with nearly every key partner at once - the US (tariffs, NIS), Russia (gas, ammunition), the EU (protests, later Mladić's funeral); only China had not worsened. The Belgrade IIPE itself calls the 'four pillars' policy 'ad hoc, reactive alignment management' that is 'increasingly unsustainable'.
+      confidence: B
+      sources:
+        - url: https://eualive.net/hard-times-for-vucic/
+          title: Hard times for Vučić
+          publisher: Beta / EUalive
+          date: 2025-12-24
+          tier: 3
+        - url: https://doi.fil.bg.ac.rs/pdf/eb_book/2025/iipe_rsrfgnplcy/iipe_rsrfgnplcy-2025-ch1.pdf
+          title: Serbia's foreign policy - the four pillars reconsidered
+          publisher: Institute of International Politics and Economics, Belgrade
+          date: 2025
+          tier: 2
+    - text: The Russian energy bargain became a liability. Cheap oil-indexed gas and Russian ownership of NIS gave the 2022-23 price advantage, then shut the country's only refinery and forced Belgrade to push Russia out of NIS through Hungary's MOL.
+      confidence: B
+      sources:
+        - url: https://www.osw.waw.pl/en/publikacje/analyses/2026-01-23/mol-moves-towards-acquiring-russian-stakes-serbias-nis
+          title: MOL moves towards acquiring Russian stakes in Serbia's NIS
+          publisher: OSW
+          date: 2026-01-23
+          tier: 2
+    - text: Lithium cuts both ways. EU interest in Jadar 'weakens its ability to insist on reforms' (SWP), yet domestic protest forced Rio Tinto to put the project into care and maintenance in November 2025.
+      confidence: B
+      sources:
+        - url: https://www.swp-berlin.org/en/publication/the-eus-raw-materials-diplomacy-serbia-as-a-test-case
+          title: The EU's raw materials diplomacy - Serbia as a test case
+          publisher: SWP
+          date: 2025-03-12
+          tier: 2
+        - url: https://www.bloomberg.com/news/articles/2025-11-13/rio-tinto-mothballs-flagship-jadar-lithium-project-in-serbia
+          title: Rio Tinto mothballs flagship Jadar lithium project in Serbia
+          publisher: Bloomberg
+          date: 2025-11-13
+          tier: 3
+    - text: The 'colour revolution' narrative, a tool of domestic survival, is cited by the Commission as evidence against Serbia's 'strategic direction'.
+      confidence: A
+      sources:
+        - url: https://data.consilium.europa.eu/doc/document/ST-14908-2025-INIT/en/pdf
+          title: Serbia 2025 Report
+          publisher: European Commission
+          date: 2025-11-04
+          tier: 1
+    - text: Mladić buried with military honours (7 Sep 2026) for domestic consensus - the EU cancelled Commissioner Kos's visit, von der Leyen and Costa called it 'shocking', and the accession push went 'on hold'.
+      confidence: B
+      sources:
+        - url: https://www.euronews.com/my-europe/2026/09/08/eu-institution-leaders-blast-serbia-over-shocking-ratko-mladics-funeral
+          title: EU institution leaders blast Serbia over 'shocking' Ratko Mladić's funeral
+          publisher: Euronews
+          date: 2026-09-08
+          tier: 3
+        - url: https://europeanwesternbalkans.com/2026/09/07/convicted-war-criminal-ratko-mladic-buried-with-full-military-honors/
+          title: Convicted war criminal Ratko Mladić buried with full military honours
+          publisher: European Western Balkans
+          date: 2026-09-07
+          tier: 3
+
+  reading: |
+    Serbia runs a hedging strategy with one fixed point - Kosovo - and everything else
+    negotiable. In Luttwak's terms the paradox is structural: the instrument that
+    protects the fixed point (Russian and Chinese cover at the UN) is the one that
+    blocks the declared strategic goal (EU membership), and the "neutrality" that
+    justifies the hedge is financed by the side the hedge is meant to keep at a
+    distance. Through 2025-26 the hedge stopped paying: the US sanctioned NIS, Russia
+    refused a long-term gas contract and accused Belgrade over ammunition, the EU
+    froze funds and talks after the Mladić funeral. Two signals worth watching that
+    are not rows: Vučić did not attend the 2026 Moscow parade, and in May 2026 Serbia
+    held its first-ever exercise with NATO on its own soil. The 25 Oct 2026 election
+    decides whether the strategy has an author at all.
