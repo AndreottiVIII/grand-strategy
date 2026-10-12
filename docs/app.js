@@ -28,6 +28,13 @@
   let pov = null;                 // null = home: the world of today, flags and borders
   let view = "map";
   let mapMode = "world";
+  let lens = "posture";           // posture (stances) | votes (UN General Assembly affinity)
+  const unga = data.unga || { affinity: {}, landmarks: {}, members: [] };
+  const hasStances = id => !!(data.stances[id] && data.stances[id].length);
+  const hasVotes = id => !!unga.affinity[id];
+  const VOTE_CLASSES = [[.9, "v90"], [.8, "v80"], [.7, "v70"], [.6, "v60"], [0, "vlow"]];
+  const voteClass = x => x == null ? null : VOTE_CLASSES.find(([t]) => x >= t)[1];
+  const VOTE_LABEL = { v90: "Votes together 90% or more", v80: "80-89%", v70: "70-79%", v60: "60-69%", vlow: "Under 60%" };
 
   // ---------- chrome
   document.getElementById("meta").innerHTML =
@@ -35,10 +42,21 @@
 
   const povSel = document.getElementById("pov");
   povSel.add(new Option("The world of today", ""));
-  fullActors.forEach(a => povSel.add(new Option(`The world as ${a.name} sees it`, a.id)));
-  povSel.onchange = () => { pov = povSel.value || null; mapMode = pov ? "near" : "world"; renderAll(); };
+  const grpFull = document.createElement("optgroup"); grpFull.label = "With a grand-strategy card";
+  fullActors.forEach(a => grpFull.appendChild(new Option(`The world as ${a.name} sees it`, a.id)));
+  povSel.appendChild(grpFull);
+  const grpData = document.createElement("optgroup"); grpData.label = "Data only (UN votes, memberships)";
+  data.actors.filter(a => a.card !== "full" && hasVotes(a.id)).sort((x, y) => x.name.localeCompare(y.name))
+    .forEach(a => grpData.appendChild(new Option(a.name, a.id)));
+  povSel.appendChild(grpData);
+  povSel.onchange = () => { if (povSel.value) setPov(povSel.value); else goHome(); };
   function goHome() { pov = null; mapMode = "world"; povSel.value = ""; window.scrollTo(0, 0); renderLegend(); setView("map"); }
-  function setPov(id) { pov = id; mapMode = "near"; povSel.value = id; renderLegend(); setView("map"); }
+  function setPov(id) {
+    pov = id; povSel.value = id;
+    lens = hasStances(id) ? "posture" : "votes";
+    mapMode = hasStances(id) ? "near" : "world";
+    renderLegend(); setView("map");
+  }
 
   document.querySelectorAll(".tab").forEach(b => b.onclick = () => setView(b.dataset.view));
   document.getElementById("home").onclick = ev => { ev.preventDefault(); goHome(); };
@@ -64,10 +82,22 @@
     const r = Math.sqrt(16 * FRAC[g] / Math.PI);
     return `radial-gradient(${INK[g]} ${r.toFixed(2)}px, transparent ${(r + .15).toFixed(2)}px) 0 0 / 4px 4px`;
   }
+  const VFRAC = { v90: [.85, "a"], v80: [.5, "a"], v70: [.26, "a"], v60: [.12, "a"], vlow: [.3, "b"] };
+  function voteSwatch(c) {
+    const [f, ink] = VFRAC[c];
+    const r = Math.sqrt(16 * f / Math.PI);
+    return `radial-gradient(var(--ink-${ink}) ${r.toFixed(2)}px, transparent ${(r + .15).toFixed(2)}px) 0 0 / 4px 4px`;
+  }
   function renderLegend() {
     const el = document.getElementById("legend");
     if (!pov) {
       el.innerHTML = `<h3>The world of today</h3><div class="row">Borders and flags as of ${data.generated}. Click a country that has a card to see the world as it sees it; ${fullActors.length} card${fullActors.length > 1 ? "s" : ""} so far: ${fullActors.map(a => a.name).join(", ")}.</div>`;
+      return;
+    }
+    if (lens === "votes") {
+      el.innerHTML = `<h3>Votes with ${actors[pov].name}</h3><div class="row" style="color:var(--ink-3)">UN General Assembly, recorded votes ${unga.span || ""}</div>` +
+        ["v90", "v80", "v70", "v60", "vlow"].map(c => `<div class="row"><span class="sw" style="background:${voteSwatch(c)} var(--land)"></span>${VOTE_LABEL[c]}</div>`).join("") +
+        `<div class="row"><span class="sw"></span>Fewer than 20 common votes</div>`;
       return;
     }
     el.innerHTML = `<h3>Posture of ${actors[pov].name}</h3>` +
@@ -112,6 +142,11 @@
       defs.append("pattern").attr("id", "flag-" + f.id).attr("width", 1).attr("height", 1).attr("patternContentUnits", "objectBoundingBox")
         .append("image").attr("href", `https://flagcdn.com/w320/${iso2[f.id]}.png`).attr("width", 1).attr("height", 1).attr("preserveAspectRatio", "xMidYMid slice");
     });
+    Object.entries(VFRAC).forEach(([c, [frac, ink]]) => {
+      const r = Math.sqrt(16 * frac / Math.PI);
+      defs.append("pattern").attr("id", "s-" + c).attr("width", 4).attr("height", 4).attr("patternUnits", "userSpaceOnUse")
+        .append("circle").attr("cx", 2).attr("cy", 2).attr("r", r).attr("fill", ink === "a" ? inkA : inkB);
+    });
     // claimed, not controlled: vermilion hatch
     const hatch = defs.append("pattern").attr("id", "hatch").attr("width", 5).attr("height", 5).attr("patternUnits", "userSpaceOnUse").attr("patternTransform", "rotate(45)");
     hatch.append("rect").attr("width", 1.8).attr("height", 5).attr("fill", inkB);
@@ -141,18 +176,21 @@
       .style("cursor", f => actors[f.id] ? "pointer" : "default")
       .on("mousemove", (ev, f) => { tipFor(f.id, f.properties.name, ev); lightCard(f.id); })
       .on("mouseleave", () => { hideTip(); lightCard(null); })
-      .on("click", (ev, f) => { if (actors[f.id] && actors[f.id].card === "full") setPov(f.id); else if (actors[f.id]) showDossier(f.id); });
+      .on("click", (ev, f) => { if (!actors[f.id]) return; if (!pov && (actors[f.id].card === "full" || hasVotes(f.id))) setPov(f.id); else showDossier(f.id); });
     // posture screens over the stanced countries
-    countries.selectAll("path.p").data(pov ? world.features.filter(f => f.id === pov || stanceOf(f.id)) : []).join("path").attr("class", "p")
+    const aff = pov && lens === "votes" ? (unga.affinity[pov] || {}) : null;
+    const screened = !pov ? [] : lens === "votes" ? world.features.filter(f => f.id === pov || aff[f.id] != null) : world.features.filter(f => f.id === pov || stanceOf(f.id));
+    countries.selectAll("path.p").data(screened).join("path").attr("class", "p")
       .attr("d", path).attr("pointer-events", "none")
       .attr("fill", f => {
         if (f.id === pov) return inkA;
+        if (lens === "votes") return `url(#s-${voteClass(aff[f.id])})`;
         const gr = stanceOf(f.id).grade;
         return gr === "claimed_territory" ? "url(#hatch)" : gr === "neutral" ? "none" : `url(#s-${gr})`;
       });
     // bond: a band inside the border in the bond's ink - navy for kin, vermilion for grievance, none otherwise.
     // each band is clipped to its own country so it never paints the neighbour
-    const bonded = world.features.filter(f => stanceOf(f.id) && ["kin", "grievance"].includes(stanceOf(f.id).bond));
+    const bonded = lens === "votes" ? [] : world.features.filter(f => stanceOf(f.id) && ["kin", "grievance"].includes(stanceOf(f.id).bond));
     bonded.forEach(f => defs.append("clipPath").attr("id", "clip-" + f.id).append("path").attr("d", path(f)));
     countries.selectAll("path.bond").data(bonded).join("path").attr("class", "bond")
       .attr("d", path).attr("fill", "none").attr("pointer-events", "none").attr("stroke-linejoin", "round")
@@ -161,7 +199,7 @@
 
     // non-state actors and seats
     const seats = g.append("g").attr("class", "seats");
-    const nonState = pov ? data.actors.filter(a => !feature[a.id] && (a.id === pov || stanceOf(a.id))) : [];
+    const nonState = pov && lens === "posture" ? data.actors.filter(a => !feature[a.id] && (a.id === pov || stanceOf(a.id))) : [];
     seats.selectAll("rect").data(nonState).join("rect")
       .attr("x", a => proj(a.coords)[0] - 4).attr("y", a => proj(a.coords)[1] - 4).attr("width", 8).attr("height", 8)
       .attr("fill", a => { const g = gradeOf(a.id); return ["rival", "adversary", "claimed_territory"].includes(g) ? inkB : ["ally", "reluctant_ally"].includes(g) ? inkC : g === "neutral" ? land : inkA; }).attr("stroke", ink).attr("stroke-width", .8)
@@ -169,7 +207,7 @@
       .on("mousemove", (ev, a) => { tipFor(a.id, a.name, ev); lightCard(a.id); }).on("mouseleave", () => { hideTip(); lightCard(null); }).on("click", (ev, a) => showDossier(a.id));
 
     // labels: condensed capitals for every actor with a stance
-    const labelled = pov ? data.actors.filter(a => a.id === pov || stanceOf(a.id)) : [];
+    const labelled = !pov ? [] : lens === "votes" ? data.actors.filter(a => a.id === pov) : data.actors.filter(a => a.id === pov || stanceOf(a.id));
     const stacked = {}; // non-state actors sharing a seat (EU and NATO in Brussels) stack their labels
     const labels = g.append("g").attr("class", "labels").attr("pointer-events", "none");
     labels.selectAll("text").data(labelled).join("text")
@@ -207,15 +245,23 @@
       svg.selectAll(".frame-btn").classed("is-on", function () { return this.dataset.mode === mode; });
     }
     const ctl = svg.append("foreignObject").attr("x", 12).attr("y", 12).attr("width", 240).attr("height", 40);
+    ctl.attr("width", 420);
     ctl.append("xhtml:div").attr("class", "frame-ctl").html(pov
-      ? `<button class="frame-btn" data-mode="near">Neighbourhood</button><button class="frame-btn" data-mode="world">World</button>`
+      ? `<button class="frame-btn" data-mode="near">Neighbourhood</button><button class="frame-btn" data-mode="world">World</button>` +
+        `<span class="frame-gap"></span>` +
+        (hasStances(pov) ? `<button class="frame-btn lens ${lens === "posture" ? "is-on" : ""}" data-lens="posture">Posture</button>` : "") +
+        (hasVotes(pov) ? `<button class="frame-btn lens ${lens === "votes" ? "is-on" : ""}" data-lens="votes">UN votes</button>` : "")
       : `<button class="frame-btn is-on" data-mode="world">The world of today</button>`);
-    ctl.selectAll("button").on("click", ev => { mapMode = ev.currentTarget.dataset.mode; frame(mapMode); });
+    ctl.selectAll("button[data-mode]").on("click", ev => { mapMode = ev.currentTarget.dataset.mode; frame(mapMode); });
+    ctl.selectAll("button[data-lens]").on("click", ev => { lens = ev.currentTarget.dataset.lens; renderLegend(); drawMap(); });
     frame(mapMode);
     rescale(d3.zoomTransform(svg.node()).k || 1);
     renderRelPanel();
+    svg.selectAll(".frame-btn[data-mode]").classed("is-on", function () { return this.dataset.mode === mapMode; });
 
-    document.getElementById("map-note").innerHTML = pov
+    document.getElementById("map-note").innerHTML = pov && lens === "votes"
+      ? `<b>${actors[pov].name}</b> in solid navy; every other member screened by how often it voted the same way in the General Assembly (${unga.span || ""}, recorded votes only, pairs with at least 20 common votes). Navy = votes together, vermilion = votes apart. Hover for the figure; click for the dossier.`
+      : pov
       ? `<b>${actors[pov].name}</b> in solid navy. Dots are the posture, denser is stronger: green for allies, navy for partners, vermilion for the hostile side; hatched = claimed, not controlled. A band inside a border is the standing bond: navy = kin, vermilion = grievance. Hover for the reading; click a country or seat for its dossier; scroll to zoom. The relations are listed below the map.`
       : `Borders and flags of today. Click <b>${fullActors.map(a => a.name).join("</b>, <b>")}</b> to see the world as it sees it. Flags by flagcdn.`;
   }
@@ -250,7 +296,11 @@
   function tipFor(id, fallbackName, ev) {
     const a = actors[id], name = a ? a.name : fallbackName;
     if (id === pov) return showTip(`<b>${esc(name)}</b><span class="k">Point of view</span>`, ev);
-    if (!pov) return showTip(`<b>${esc(name)}</b><span class="k">${a && a.card === "full" ? "Has a card - click to see the world as it sees it" : a ? "Actor without a card yet - click for its stub" : "Not an actor yet"}</span>`, ev);
+    if (!pov) return showTip(`<b>${esc(name)}</b><span class="k">${a && a.card === "full" ? "Has a card - click to see the world as it sees it" : a && hasVotes(a.id) ? "Data only - click to see who votes with it at the UN" : a ? "Actor without data yet" : "Not an actor yet"}</span>`, ev);
+    if (lens === "votes") {
+      const x = (unga.affinity[pov] || {})[id];
+      return showTip(`<b>${esc(name)}</b>${x == null ? "Fewer than 20 common recorded votes" : `Voted with ${esc(actors[pov].name)} in ${Math.round(x * 100)}% of common recorded votes`}${stanceOf(id) ? `<br><span class="k">Posture: ${GRADE_LABEL[stanceOf(id).grade]}</span>` : ""}`, ev);
+    }
     const st = stanceOf(id);
     if (!st) return showTip(`<b>${esc(name)}</b><span class="k">No recorded stance${a ? "" : " · not an actor yet"}</span>`, ev);
     showTip(`<b>${esc(name)}</b>${GRADE_LABEL[st.grade]} · ${TREND_SIGN[st.trend]} ${TREND[st.trend]} · ${BOND_LABEL[st.bond].toLowerCase()} · confidence ${st.confidence}${st.stale ? " · stale" : ""}<br><span class="k">${esc(st.note || "")}</span>`, ev);
@@ -284,9 +334,9 @@
       `${a.wikipedia ? ` · <a href="${esc(a.wikipedia)}" target="_blank" rel="noopener">Wikipedia ↗</a>` : ""}</p></div></div>`;
     if (a.card !== "full") {
       const st = stanceOf(id);
-      html = head + `<p class="empty">Stub: this actor exists so that others can relate to it. No grand-strategy card yet.</p>` +
+      html = head + `<p class="empty">No grand-strategy card yet: what follows comes from datasets only (UN General Assembly votes, memberships from Wikidata).</p>` +
         (st && pov ? `<h3>As ${esc(actors[pov].name)} sees it</h3><p><b>${GRADE_LABEL[st.grade]}</b>, ${TREND[st.trend]}, ${BOND_LABEL[st.bond].toLowerCase()}${badge(st)}<br>${esc(st.note || "")}${fn(st.sources)}</p>` : "") +
-        relationsHtml(id);
+        ungaHtml(id) + relationsHtml(id);
     } else {
       const gs = a.grand_strategy;
       const byDomain = d3.group(gs.means, m => m.domain);
@@ -303,7 +353,7 @@
           <td><span class="sw" style="background:${gradeSwatch(s.grade)} var(--land)"></span>${GRADE_LABEL[s.grade]}<br><span class="meta">${TREND_SIGN[s.trend]} ${TREND[s.trend]}${badge(s)}</span></td>
           <td>${BOND_LABEL[s.bond]}</td>
           <td class="note">${esc(s.note || "")}${fn(s.sources)}</td></tr>`).join("")}
-        </tbody></table>` + relationsHtml(id);
+        </tbody></table>` + ungaHtml(id) + relationsHtml(id);
     }
     el.innerHTML = html + notesHtml();
     el.querySelectorAll("sup.fn").forEach(s => {
@@ -315,8 +365,25 @@
     window.scrollTo(0, 0);
   }
 
+  function ungaHtml(id) {
+    const aff = unga.affinity[id];
+    if (!aff) return "";
+    const pct = x => x == null ? "–" : Math.round(x * 100) + "%";
+    const sorted = Object.entries(aff).filter(([c]) => actors[c]).sort((x, y) => y[1] - x[1]);
+    const top = sorted.slice(0, 6), low = sorted.slice(-6).reverse();
+    const lms = unga.landmarks[id] || [];
+    const word = { Y: "YES", N: "NO", A: "abstained", "-": "did not vote" };
+    return `<h3>UN General Assembly, recorded votes ${esc(unga.span || "")}</h3>
+      <p>Votes together with <b>United States</b> ${pct(aff.USA)} · <b>Russia</b> ${pct(aff.RUS)} · <b>China</b> ${pct(aff.CHN)}.
+      Closest: ${top.map(([c, x]) => `${esc(actors[c].name)} ${pct(x)}`).join(", ")}. Furthest: ${low.map(([c, x]) => `${esc(actors[c].name)} ${pct(x)}`).join(", ")}.
+      <span class="meta">Share of recorded votes cast the same way, pairs with at least 20 common votes. Source: UN Digital Library voting records, harvested by tools/datasets.</span></p>` +
+      (lms.length ? `<table class="tbl"><thead><tr><th>Date</th><th>Resolution</th><th>${esc(a_name(id))}</th></tr></thead><tbody>` +
+        lms.map(l => `<tr><td>${esc(l.date)}</td><td><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.symbol)}</a> ${esc(l.label)}</td><td><b>${word[l.vote] || l.vote}</b></td></tr>`).join("") + `</tbody></table>` : "");
+  }
+  const a_name = id => actors[id].name;
+
   function relationsHtml(id) {
-    const out = data.relations.filter(r => r.from === id), inn = data.relations.filter(r => r.to === id);
+    const out = data.relations.filter(r => r.from === id && !(r.dataset === "unga-votes")), inn = data.relations.filter(r => r.to === id && !(r.dataset === "unga-votes"));
     const block = (rows, dir) => data.layers.map(l => {
       const rs = rows.filter(r => r.layer === l);
       if (!rs.length) return "";

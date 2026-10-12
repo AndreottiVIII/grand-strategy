@@ -14,6 +14,9 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 OUT = ROOT / "docs" / "data.json"
+UNGA = DATA / "datasets" / "unga"
+UNGA_SOURCE = "https://digitallibrary.un.org/record/{id}"
+AFFINITY_WITH = ["USA", "RUS", "CHN"]
 
 ACTOR_TYPES = {"state", "org", "armed-non-state", "state-instrument", "sub-state"}
 GRADES = [
@@ -96,6 +99,83 @@ def load_dir(sub):
     return out
 
 
+def load_unga():
+    """UN General Assembly recorded votes harvested from the UN Digital Library
+    (data/datasets/unga/<year>.json, see tools/datasets/README.md). Returns the vote
+    records with a per-country dict, plus the landmark list."""
+    records = []
+    for p in sorted(UNGA.glob("*.json")) if UNGA.exists() else []:
+        with p.open(encoding="utf-8") as f:
+            y = json.load(f)
+        for r in y["records"]:
+            if r["y"] + r["n"] + r["a"] == 0:
+                continue
+            r["votes"] = {c: v for c, v in zip(y["countries"], r["v"]) if v in ("Y", "N", "A")}
+            records.append(r)
+    lm = DATA / "datasets" / "unga-landmarks.yaml"
+    landmarks = yaml.safe_load(lm.open(encoding="utf-8"))["landmarks"] if lm.exists() else []
+    return records, landmarks
+
+
+def unga_rows_and_affinity(records, landmarks, actors):
+    """Landmark votes become action rows (type un_vote) for every actor that voted,
+    directed at the actors the resolution is about. Every recorded vote feeds the
+    affinity figures: share of votes cast the same way as each other member."""
+    by_symbol = {r["sym"]: r for r in records}
+    rows = []
+    word = {"Y": "YES", "N": "NO", "A": "ABSTAINED"}
+    for lm in landmarks:
+        r = by_symbol.get(lm["symbol"])
+        if not r:
+            warn(f"landmark {lm['symbol']} not in the UNGA dataset")
+            continue
+        for aid in actors:
+            v = r["votes"].get(aid)
+            if not v:
+                continue
+            for about in lm["about"]:
+                if about not in actors or about == aid:
+                    continue
+                rows.append({
+                    "from": aid, "to": about, "layer": "action", "type": "un_vote",
+                    "summary": f"Voted {word[v]} on {r['sym']} - {lm['label']} ({r['y']}-{r['n']}-{r['a']}).",
+                    "since": r["date"], "until": r["date"], "last_verified": r["date"],
+                    "confidence": "A", "symbol": r["sym"], "vote": v, "dataset": "unga-votes",
+                    "sources": [{"url": UNGA_SOURCE.format(id=r["id"]), "title": f"{r['sym']} voting record",
+                                 "publisher": "UN Digital Library", "date": r["date"], "tier": 1}],
+                })
+    # affinity matrix over every member that voted: share of identical votes, pairs with >= 20 common votes
+    members = sorted({c for r in records for c in r["votes"]})
+    idx = {c: i for i, c in enumerate(members)}
+    same = [[0] * len(members) for _ in members]
+    both = [[0] * len(members) for _ in members]
+    for r in records:
+        items = list(r["votes"].items())
+        for i in range(len(items)):
+            ci, vi = items[i]
+            for j in range(i + 1, len(items)):
+                cj, vj = items[j]
+                a, b = idx[ci], idx[cj]
+                both[a][b] += 1
+                if vi == vj:
+                    same[a][b] += 1
+    affinity = {}
+    for a, ca in enumerate(members):
+        row = {}
+        for b, cb in enumerate(members):
+            if a == b:
+                continue
+            x, y = (a, b) if a < b else (b, a)
+            if both[x][y] >= 20:
+                row[cb] = round(same[x][y] / both[x][y], 2)
+        affinity[ca] = row
+    span = (min(r["date"] for r in records)[:4] + "-" + max(r["date"] for r in records)[:4]) if records else None
+    landmark_votes = {aid: [{"symbol": lm["symbol"], "label": lm["label"], "date": by_symbol[lm["symbol"]]["date"],
+                             "vote": by_symbol[lm["symbol"]]["votes"].get(aid, "-"), "url": UNGA_SOURCE.format(id=by_symbol[lm["symbol"]]["id"])}
+                            for lm in landmarks if lm["symbol"] in by_symbol] for aid in actors if aid in idx}
+    return rows, {"span": span, "n_records": len(records), "members": members, "affinity": affinity, "landmarks": landmark_votes}
+
+
 def main():
     today = date.today()
     actors = load_dir("actors")
@@ -158,9 +238,15 @@ def main():
     rows = []
     for fid, r in relations.items():
         w = f"relations/{fid}"
-        if r.get("from") != fid or fid not in actors:
+        dataset_file = fid.startswith("_")
+        if not dataset_file and (r.get("from") != fid or fid not in actors):
             err(f"{w}: from '{r.get('from')}' unknown or mismatched")
         for i, rel in enumerate(r.get("relations") or []):
+            if dataset_file:
+                if rel.get("from") not in actors:
+                    warn(f"{w}[{i}]: from '{rel.get('from')}' has no actor file, row skipped")
+                    continue
+                fid = rel["from"]
             ww = f"{w}[{i}] -> {rel.get('to')} {rel.get('layer')}/{rel.get('type')}"
             if rel.get("to") not in actors:
                 err(f"{ww}: unknown actor")
@@ -171,7 +257,7 @@ def main():
                 err(f"{ww}: type not in the {layer} vocabulary")
             if not rel.get("summary"):
                 err(f"{ww}: missing summary")
-            check_date(rel.get("since"), f"{ww} since")
+            check_date(rel.get("since"), f"{ww} since", required=not rel.get("dataset"))  # datasets may not know the start
             check_date(rel.get("until"), f"{ww} until", required=False)
             check_date(rel.get("last_verified"), f"{ww} last_verified")
             if layer == "dependency" and ("value" not in rel or "unit" not in rel):
@@ -184,6 +270,16 @@ def main():
     for fid in actors:
         if actors[fid].get("card") == "full" and fid not in stances:
             warn(f"{fid}: full card but no stances file")
+
+    # --- datasets: UN General Assembly votes
+    records, landmarks = load_unga()
+    unga_rows, unga = unga_rows_and_affinity(records, landmarks, actors)
+    hand_symbols = {(r["from"], r["to"], sym) for r in rows if r["type"] == "un_vote"
+                    for sym in re.findall(r"A/RES/[A-Z0-9./-]+", r["summary"])}
+    unga_rows = [r for r in unga_rows if (r["from"], r["to"], r["symbol"]) not in hand_symbols]
+    for r in unga_rows:
+        r["stale"] = False
+    rows.extend(unga_rows)
 
     # --- structural checks (ONTOLOGY.md: the grade follows the structural position)
     grade = {(a, st["toward"]): st["grade"] for a, s in stances.items() for st in s.get("stances") or []}
@@ -216,8 +312,9 @@ def main():
         "actors": list(actors.values()),
         "stances": {k: v["stances"] for k, v in stances.items()},
         "relations": rows,
+        "unga": unga,
     }
-    OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1, default=str), encoding="utf-8")
+    OUT.write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":"), default=str), encoding="utf-8")
     # cache-busting: rewrite ?v= stamps in docs/index.html so GitHub Pages visitors get the new files
     idx = ROOT / "docs" / "index.html"
     stamp = __import__("datetime").datetime.now().strftime("%Y%m%d%H%M")
@@ -225,7 +322,8 @@ def main():
     idx.write_text(html, encoding="utf-8")
     full = sum(1 for a in actors.values() if a.get("card") == "full")
     print(f"OK  {len(actors)} actors ({full} full), "
-          f"{sum(len(v) for v in out['stances'].values())} stances, {len(rows)} relations, "
+          f"{sum(len(v) for v in out['stances'].values())} stances, {len(rows)} relations "
+          f"({len(unga_rows)} from UNGA votes, {unga['n_records']} recorded votes loaded), "
           f"{len(warnings)} warning(s) -> {OUT.relative_to(ROOT)}")
 
 

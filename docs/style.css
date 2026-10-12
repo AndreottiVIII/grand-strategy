@@ -86,7 +86,10 @@ select { width: 100%; padding: 7px 8px; font-size: 13px; background: var(--paper
 svg#map { width: 100%; height: 100%; display: block; background: var(--paper); }
 .map-note { padding: 6px 20px 12px; color: var(--ink-2); font-size: 12px; }
 .map-note b { color: var(--ink); }
-.frame-ctl { display: flex; }
+.frame-ctl { display: flex; align-items: center; }
+.frame-gap { width: 10px; }
+.frame-btn.lens { border-color: var(--ink-b); color: var(--ink-b); }
+.frame-btn.lens.is-on { background: var(--ink-b); color: var(--paper); }
 .frame-btn { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; padding: 4px 10px; background: var(--paper); color: var(--ink-a); border: 1.5px solid var(--ink-a); cursor: pointer; font-weight: 600; }
 .frame-btn + .frame-btn { border-left: 0; }
 .frame-btn.is-on { background: var(--ink-a); color: var(--paper); }

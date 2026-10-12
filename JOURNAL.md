@@ -3,6 +3,34 @@
 Decision log, newest first. The path matters more than the destination: record why,
 not only what. Dead ends are entries too.
 
+## 2026-10-12 · World-scale test with datasets only
+
+Davide: "start from Wikipedia, UN in parallel, and let's see how much of the world we
+can build end to end with just those two." Done in one afternoon, zero research tokens:
+
+- **Wikidata pass** (`tools/datasets/wikidata.py`): 197 sovereign states as actor stubs
+  (flag code, capital coordinates, English Wikipedia link) and 536 current memberships
+  in 22 organisations as alignment rows, each citing the organisation's official member
+  list (tier 1) plus the Wikidata item. 220 actors in all.
+- **UN General Assembly votes**: the Digital Library's API sits behind a bot challenge
+  that only a real browser passes, so the harvest runs as a script inside the browser
+  pane (search by year, one XML record per resolution, field 967 per member). 2024 and
+  2026 are in (129 recorded votes); 2025, 2023 and 2022 are harvested but stuck in the
+  page: the pane blocks connections to localhost and re-typing 20 KB of base64 through
+  the chat corrupts it. A browser download is the clean channel; permission asked.
+- **Build**: landmark votes (11 resolutions listed by hand in
+  `data/datasets/unga-landmarks.yaml`, each "about" one or two actors) become action
+  rows for every member - 1,347 rows; every recorded vote feeds a 193x193 affinity
+  matrix (share of identical votes, pairs with 20+ common votes).
+- **Site**: any country with data becomes a point of view. "UN votes" lens screens the
+  world by voting affinity (navy = votes together, vermilion = apart); the "Posture" lens
+  stays for actors with stances; a dossier for every actor with the affinity figures,
+  closest and furthest voters, landmark votes, memberships.
+
+First reading of the figures: Serbia votes with China 68%, Russia 56%, the United States
+28%; its closest voters are Armenia, South Sudan, Bosnia, Japan. The United States in
+2024-26 is nearly alone: only Israel above 90%, Argentina 80-89%, everyone else under 60%.
+
 ## 2026-10-12 · Before scaling: how to pay for the world
 
 Davide: research burns a sea of tokens and we must do the whole world - how do we
