@@ -1027,3 +1027,39 @@ relations:
     tier: 1
   to: AND
   mirrored_from: AND
+- layer: alignment
+  type: treaty
+  summary: Franco-Monegasque treaty of 24 Oct 2002 (in force 1 Dec 2005) - France ensures the defence of Monaco's independence and sovereignty and guarantees its territorial integrity; Monaco's action must
+    accord with French fundamental interests.
+  since: '2005-12-01'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://axl.cefan.ulaval.ca/europe/france-monaco-traite-2002.htm
+    title: Franco-Monegasque treaty of 24 October 2002
+    publisher: CEFAN, Universite Laval
+    date: '2002-10-24'
+    tier: 2
+  - url: https://www.elysee.fr/emmanuel-macron/2025/06/08/communique-conjoint-a-loccasion-de-la-visite-detat-du-president-de-la-republique-en-principaute-de-monaco
+    title: Joint communique on the state visit to the Principality of Monaco (7-8 June 2025)
+    publisher: Elysee
+    date: '2025-06-08'
+    tier: 1
+  to: MCO
+  mirrored_from: MCO
+- layer: alignment
+  type: security_guarantee
+  summary: Article 4 of the 2002 treaty lets French forces enter and stay on Monegasque territory at the Prince's request or with his agreement, for the security of both states.
+  since: '2005-12-01'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://axl.cefan.ulaval.ca/europe/france-monaco-traite-2002.htm
+    title: Franco-Monegasque treaty of 24 October 2002
+    publisher: CEFAN, Universite Laval
+    date: '2002-10-24'
+    tier: 2
+  to: MCO
+  mirrored_from: MCO
