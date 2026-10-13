@@ -1,5 +1,18 @@
 # Journal
 
+## 2026-10-13 · Seams, About and Colophon
+
+Davide's idea: show the actors pulled two ways (ally of two rivals), "friction" - named Seams
+after Luttwak's own word for where relational manoeuvre aims. First cut counted treaty
+co-membership as an alliance leg and produced 26 seams, twenty of them every NATO/EU member
+"pulled" between Cyprus and Turkey; Davide: a stretch, not real seams. Rule tightened: every
+leg a written reading (A or B), treaty floor never, reciprocals never. Five real seams on 75
+cards (Germany and Greece between Turkey and Israel, Greece between Cyprus and Turkey, Hungary
+between Croatia and Serbia, the United States between the UAE and Saudi Arabia). Organisations
+and Issues hidden from the top bar for now; About and a provisional Colophon added; the map
+outline for seams is built but switched off until Davide approves the look. Written into
+ONTOLOGY.md.
+
 ## 2026-10-13 · Paused at 75 cards; the rest of the world on Friday
 
 Stopped at Davide's request with 75 reviewed cards (Europe, the Middle East, South Asia

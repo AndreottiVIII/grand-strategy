@@ -244,3 +244,16 @@ the citation under it; where Wikipedia is the only source the row says so (tier 
     arrows between seats, by layer, with toggles. A circular board may come later at scale.
 11. **The map must have a character**: a 1970s situation map, paper and ink, screens
     and hatching, condensed capitals. Not a dashboard.
+
+## Seams (added 2026-10-13)
+
+A **seam** is an actor pulled two ways: Y is an ally (or reluctant ally) of both A and X while A
+and X are rivals or adversaries of each other. The word is Luttwak's: relational manoeuvre aims
+at the seams between an opponent and its allies. Seams are never written by hand; `tools/build.py`
+computes them and the site shows them (Seams page; a dashed outline on the map, when switched on).
+
+Rule, decided with Davide: **every leg must be a written reading** - a hand-written stance of
+confidence A or B, from either side of the leg. The treaty floor alone (NATO, EU, CSTO
+co-membership from the dataset) never makes a seam, or every NATO member would be "pulled"
+between Cyprus and Turkey; provisional reciprocals (`reciprocal_of`) never count either. The
+list therefore grows only as cards are written on both sides of a rivalry.
