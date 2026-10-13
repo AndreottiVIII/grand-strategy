@@ -1,14 +1,186 @@
 id: AFG
 name: Afghanistan
+short: Afghanistan
 type: state
 iso2: af
 wikipedia: https://en.wikipedia.org/wiki/Afghanistan
-coords:
-- 69.17
-- 34.53
-seat: Kabul
-regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+coords: [69.17, 34.53]
+seat: Kabul (government and cabinet); Kandahar (Hibatullah Akhundzada, the Emir, decides)
+regions: [south-central-asia]
+card: full
+tier: protagonist
+last_verified: 2026-10-12
+
+recognition:
+  note: "The Islamic Emirate under the Taliban has been formally recognised by one state, Russia (July 2025). Gulf, Central Asian and Turkish governments accept Taliban-appointed diplomats without recognition, and India upgraded its Kabul mission to an embassy in October 2025 without recognising the government. The UN General Assembly seat is still held by the credentials of the former republic's mission; the Credentials Committee has deferred the Taliban claim every year since 2021 and Zelin (August 2026) calls the seat 'the last gate' the government has not passed."
+  source: https://www.washingtoninstitute.org/policy-analysis/five-years-taliban-diplomacy-recognition-without-concessions
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Regime survival and the monopoly of power of the Emir's circle in Kandahar: no inclusive government, no concession on the social order (women, education, courts), and the defeat of armed rivals (the Islamic State in Khorasan, the National Resistance Front, the Afghanistan Freedom Front)."
+      confidence: B
+      sources:
+        - {url: "https://www.washingtoninstitute.org/policy-analysis/five-years-taliban-diplomacy-recognition-without-concessions", title: "Five Years of Taliban Diplomacy: Recognition Without Concessions", publisher: "Washington Institute for Near East Policy (Zelin)", date: 2026-08-18, tier: 2}
+        - {url: "https://www.euaa.europa.eu/country-guidance-afghanistan/22-resistance-groups-opposing-taliban", title: "Country guidance Afghanistan - resistance groups opposing the Taliban", publisher: "European Union Agency for Asylum", date: 2026-06, tier: 1}
+        - {url: "https://www.wam.ae/en/article/15nqydv-icc-issues-arrest-warrants-for-taliban-leaders", title: "ICC issues arrest warrants for Taliban leaders (Akhundzada and Haqqani, 8 Jul 2025)", publisher: "WAM (UAE state agency)", date: 2025-07-08, tier: 3}
+    - rank: 2
+      text: "Recognition and the UN seat without paying for them: normal relations with as many capitals as possible (Russia has recognised; China, Gulf, Central Asia and now India and the EU deal with it) while refusing the benchmarks the West attaches, above all on women. The pattern Zelin names is 'recognition without concessions'."
+      confidence: B
+      sources:
+        - {url: "https://www.washingtoninstitute.org/policy-analysis/five-years-taliban-diplomacy-recognition-without-concessions", title: "Five Years of Taliban Diplomacy: Recognition Without Concessions", publisher: "Washington Institute for Near East Policy (Zelin)", date: 2026-08-18, tier: 2}
+        - {url: "https://www.fox35orlando.com/news/russia-recognizes-taliban-government", title: "Russia becomes first nation to formally recognize Taliban-led government in Afghanistan", publisher: "AP, syndicated by Fox 35", date: 2025-07-03, tier: 3}
+    - rank: 3
+      text: "Make Pakistan stop coercing Kabul and stop being the only door: end the air and drone strikes (Kabul and Kandahar included), reopen the border and transit trade, while keeping the line that the Pakistani Taliban (TTP) are Pakistan's internal problem and not Afghanistan's to disarm."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/4/2/pakistan-afghanistan-hold-talks-in-china-to-end-months-of-conflict", title: "Pakistan, Afghanistan hold talks in China to end months of conflict", publisher: "Al Jazeera", date: 2026-04-02, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/9/25/pakistani-forces-kill-afghan-taliban-fighters-in-border-escalation", title: "Pakistani forces kill Afghan Taliban fighters in border escalation", publisher: "Al Jazeera", date: 2026-09-25, tier: 3}
+        - {url: "https://www.news4jax.com/news/world/2026/10/05/russia-hosts-consultations-on-afghanistan-including-with-a-taliban-delegation/", title: "Russia hosts a Taliban delegation, others for consultations on Afghanistan (Muttaqi condemns Pakistani strikes)", publisher: "Associated Press", date: 2026-10-05, tier: 3}
+    - rank: 4
+      text: "Turn geography into income: be the transit and resource state everyone needs (Trans-Afghan railway, TAPI gas, Central Asian rail, Mes Aynak copper, Saudi-contracted gas exploration) and move trade away from Pakistan toward Iran, Central Asia, Turkey and India."
+      confidence: B
+      sources:
+        - {url: "https://en.fergana.agency/news/139019", title: "Tashkent, Islamabad and Kabul sign agreement on feasibility study for Trans-Afghan railway (17 Jul 2025)", publisher: "Fergana Agency", date: 2025-07, tier: 3}
+        - {url: "https://pajhwok.com/2026/06/09/80km-tapi-pipe-laid-in-herat-momp/", title: "80km TAPI pipe laid in Herat - MoMP", publisher: "Pajhwok Afghan News (citing the Taliban Ministry of Mines and Petroleum)", date: 2026-06-09, tier: 4}
+        - {url: "https://www.fdd.org/analysis/2026/09/09/former-us-ambassador-khalilzad-visits-kabul-attends-taliban-oil-deal-signing/", title: "Former US ambassador Khalilzad visits Kabul, attends Taliban oil deal signing (Delta International, 7 Sep 2026)", publisher: "FDD Long War Journal", date: 2026-09-09, tier: 2}
+    - rank: 5
+      text: "Keep and sell the one service the Taliban offer against worse enemies: suppression of the Islamic State in Khorasan (and, for Beijing and Moscow, a promise that Afghan soil will not be used against neighbours), traded for money, recognition and arms maintenance."
+      confidence: B
+      sources:
+        - {url: "https://www.news4jax.com/news/world/2026/10/05/russia-hosts-consultations-on-afghanistan-including-with-a-taliban-delegation/", title: "Russia hosts a Taliban delegation, others for consultations on Afghanistan (Lavrov praises the anti-IS record)", publisher: "Associated Press", date: 2026-10-05, tier: 3}
+        - {url: "https://8am.media/eng/united-nations-the-threat-of-isis-k-and-the-ttp-in-afghanistan-remains/", title: "UN: the threat of ISIS-K and the TTP in Afghanistan remains (16th Monitoring Team report)", publisher: "8am Media", date: 2025-12, tier: 4}
+    - rank: 6
+      text: "Reach a deal with Washington: reopen the US embassy, unfreeze the central-bank reserves, win investment from American companies, while refusing to return Bagram or the rest of Washington's conditions."
+      confidence: B
+      sources:
+        - {url: "https://www.afintl.com/en/202608157657", title: "Taliban foreign minister calls for reopening of US embassy in Kabul", publisher: "Afghanistan International", date: 2026-08-15, tier: 4}
+        - {url: "https://www.globalsecurity.org/military/library/news/2026/09/mil-260910-rferl01.htm", title: "Washington distances itself from former envoy Khalilzad's Taliban meetings ahead of 9/11 anniversary", publisher: "RFE/RL (via GlobalSecurity)", date: 2026-09-10, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2025/9/21/afghan-taliban-rejects-trump-threats-over-taking-back-bagram-airbase", title: "Afghan Taliban rejects Trump threats over taking back Bagram airbase", publisher: "Al Jazeera", date: 2025-09-21, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "Multi-vector bilateralism run by Foreign Minister Muttaqi: every capital that will talk gets a visit or a diplomat (Moscow Format in October 2025 and again on 5 Oct 2026, New Delhi in October 2025, Brussels technical talks in June 2026), a chargé in New Delhi (January 2026), and acceptance of mediators in the Pakistan quarrel (Qatar, Turkey, Saudi Arabia, China). Consular access for deportation flights is itself a bargaining chip (Germany accepted more Taliban diplomats in June 2026)."
+      confidence: B
+      sources:
+        - {url: "https://www.washingtoninstitute.org/policy-analysis/five-years-taliban-diplomacy-recognition-without-concessions", title: "Five Years of Taliban Diplomacy: Recognition Without Concessions", publisher: "Washington Institute for Near East Policy (Zelin)", date: 2026-08-18, tier: 2}
+        - {url: "https://www.al-monitor.com/originals/2026/06/eu-hosts-taliban-officials-brussels-first-time", title: "EU hosts Taliban officials in Brussels for first time", publisher: "Al-Monitor", date: 2026-06, tier: 3}
+        - {url: "https://kabulnow.com/2026/06/germany-to-accept-six-more-taliban-diplomats-to-accelerate-afghan-deportations-report-says/", title: "Germany to accept six more Taliban diplomats to accelerate Afghan deportations, report says", publisher: "KabulNow", date: 2026-06, tier: 4}
+    - domain: informational
+      text: "A disciplined spokesman line (Mujahid, Fitrat, Balkhi): deny that any foreign militant group operates from Afghan soil ('Pakistan's domestic problem'), cite the 2020 Doha Agreement against Washington, rename battles on its own terms ('Radd al-Zulm'), reject the ICC outright, and market the security and anti-drug record to Moscow and Beijing. The UN Monitoring Team has called the denial 'not credible'."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2025/9/21/afghan-taliban-rejects-trump-threats-over-taking-back-bagram-airbase", title: "Afghan Taliban rejects Trump threats over taking back Bagram airbase", publisher: "Al Jazeera", date: 2025-09-21, tier: 3}
+        - {url: "https://www.orfonline.org/index.php/expert-speak/drifting-further-from-resolution-the-escalating-afghanistan-pakistan-crisis", title: "Drifting further from resolution: the escalating Afghanistan-Pakistan crisis", publisher: "Observer Research Foundation", date: 2026-03-25, tier: 2}
+        - {url: "https://8am.media/eng/united-nations-the-threat-of-isis-k-and-the-ttp-in-afghanistan-remains/", title: "UN: the threat of ISIS-K and the TTP in Afghanistan remains", publisher: "8am Media", date: 2025-12, tier: 4}
+    - domain: military
+      text: "A light, ideologically cohesive force with captured weapons and Soviet-era kit, now being sustained by Russia (military-technical agreement of 27 May 2026, mainly repair of Soviet and Russian equipment), drones and border artillery used against Pakistani posts, and a claim of missiles that could reach Pakistani cities. Crisis Group judges it badly outgunned by Pakistan."
+      confidence: B
+      sources:
+        - {url: "https://www.dawn.com/news/1965941/pakistan-worst-hit-by-taliban-takeover-of-kabul-international-crisis-group", title: "Pakistan worst-hit by Taliban takeover of Kabul: International Crisis Group", publisher: "Dawn (reporting Crisis Group)", date: 2026-01-09, tier: 3}
+        - {url: "https://www.kyivpost.com/amp/post/77010", title: "Kremlin deepens Taliban partnership with new military-technical agreement", publisher: "Kyiv Post", date: 2026-05, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/9/25/pakistani-forces-kill-afghan-taliban-fighters-in-border-escalation", title: "Pakistani forces kill Afghan Taliban fighters in border escalation", publisher: "Al Jazeera", date: 2026-09-25, tier: 3}
+    - domain: economic
+      text: "Transit and resource concessions as foreign policy: the Delta International gas exploration contract (25 years, USD 200m first phase, Kushk-Tirpul blocks), Chinese copper at Mes Aynak, UAE airport management, the Trans-Afghan railway, Kazakh and Uzbek rail, the TAPI leg in Herat; plus a poppy ban (poppy area 10,200 ha in 2025 against 232,000 ha in 2022) that earns goodwill and costs rural income."
+      confidence: B
+      sources:
+        - {url: "https://www.fdd.org/analysis/2026/09/09/former-us-ambassador-khalilzad-visits-kabul-attends-taliban-oil-deal-signing/", title: "Former US ambassador Khalilzad visits Kabul, attends Taliban oil deal signing", publisher: "FDD Long War Journal", date: 2026-09-09, tier: 2}
+        - {url: "https://www.rferl.org/amp/china-afghanistan-mes-aynak-copper-mining/33050447.html", title: "China breaks ground on massive Afghan copper mine after 16 years of delays", publisher: "RFE/RL", date: 2024-07, tier: 3}
+        - {url: "https://www.un-ilibrary.org/content/books/9789211576474c004", title: "Opium poppy cultivation and opium production in Afghanistan 2025", publisher: "UNODC", date: 2025-11, tier: 1}
+
+  constraints:
+    - text: "The social order is the price of the exclusion: the girls' and women's bans earned arrest warrants for the Emir and the chief justice from the ICC (8 Jul 2025), block the UN seat and US engagement, and give every Western partner a reason to keep contact 'technical'. Kandahar will not trade them, so legitimacy stays capped."
+      confidence: A
+      sources:
+        - {url: "https://www.wam.ae/en/article/15nqydv-icc-issues-arrest-warrants-for-taliban-leaders", title: "ICC issues arrest warrants for Taliban leaders", publisher: "WAM (UAE state agency)", date: 2025-07-08, tier: 3}
+        - {url: "https://www.washingtoninstitute.org/policy-analysis/five-years-taliban-diplomacy-recognition-without-concessions", title: "Five Years of Taliban Diplomacy: Recognition Without Concessions", publisher: "Washington Institute for Near East Policy (Zelin)", date: 2026-08-18, tier: 2}
+    - text: "A shrinking economy per head: real GDP up an estimated 4.8% in 2025 but per-capita output down 5.6% as about 3.7 million Afghans returned (from Iran and Pakistan); current account deficit 36.1% of GDP; inflation 7.6% by March 2026; the 2026 humanitarian appeal of USD 1.71bn only about a quarter funded; 21.9 million people in need. The United States ended its aid in 2025."
+      confidence: A
+      sources:
+        - {url: "https://www.worldbank.org/en/news/press-release/2026/05/26/afghanistan-s-economy-shows-resilience-but-living-standards-are-falling", title: "Afghanistan's economy shows resilience but living standards are falling", publisher: "World Bank", date: 2026-05-26, tier: 1}
+        - {url: "https://www.rescue.org/press-release/five-years-taliban-took-control-afghanistan-humanitarian-need-record-high-response", title: "Five years after the Taliban took control: humanitarian need at a record high", publisher: "International Rescue Committee", date: 2026-08-14, tier: 2}
+        - {url: "https://reliefweb.int/report/afghanistan/sigar-april-2025-quarterly-report-united-states-congress", title: "SIGAR April 2025 quarterly report to the United States Congress (all USAID programmes cut)", publisher: "SIGAR via ReliefWeb", date: 2025-04, tier: 1}
+    - text: "Pakistan has the stronger army, the air force and the keys to the sea: land crossings have been mostly shut since the October 2025 fighting, Pakistan struck Kabul and for the first time Kandahar in February 2026, and its position is that borders reopen only on 'decisive and verifiable action' against the TTP."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/2/27/afghanistans-taliban-says-open-to-talks-after-pakistan-bombs-major-cities", title: "Afghanistan's Taliban says open to talks after Pakistan bombs major cities", publisher: "Al Jazeera", date: 2026-02-27, tier: 3}
+        - {url: "https://english.aaj.tv/news/330472762/pakistan-ready-to-reopen-afghan-borders-if-kabul-tackles-terrorism", title: "Pakistan ready to reopen Afghan borders if Kabul tackles terrorism", publisher: "Aaj News", date: 2026-09-17, tier: 3}
+        - {url: "https://www.dawn.com/news/1965941/pakistan-worst-hit-by-taliban-takeover-of-kabul-international-crisis-group", title: "Pakistan worst-hit by Taliban takeover of Kabul: International Crisis Group", publisher: "Dawn (reporting Crisis Group)", date: 2026-01-09, tier: 3}
+    - text: "Landlocked and import-dependent: every route (Pakistan, Iran, Central Asia) belongs to someone with leverage. Iran is now the largest trading partner on Taliban figures (USD 3.6bn a year) and expels hundreds of thousands a year while holding back Helmand water."
+      confidence: C
+      sources:
+        - {url: "https://8am.media/eng/taliban-iran-largest-trading-partner/", title: "Taliban: Iran is Afghanistan's largest trading partner", publisher: "8am Media", date: 2026-08, tier: 4}
+        - {url: "https://pajhwok.com/2026/03/09/about-1300-trucks-cross-daily-as-afghanistan-iran-trade-remains-steady/", title: "About 1,300 trucks cross daily as Afghanistan-Iran trade remains steady", publisher: "Pajhwok Afghan News", date: 2026-03-09, tier: 4}
+    - text: "A growing armed opposition in the north-east: three anti-Taliban fronts (NRF, AFF, Sepahiyan-e Mihan) claimed at least 50 attacks in a month, a district centre (Yaftali Sufla) fell briefly in July 2026, and some leadership sits across the Tajik border. The EUAA still finds that no group holds territory."
+      confidence: B
+      sources:
+        - {url: "https://www.fdd.org/analysis/2026/07/31/anti-taliban-resistance-groups-increase-attacks-in-northeast-afghanistan-district-center-briefly-falls/", title: "Anti-Taliban resistance groups increase attacks in northeast Afghanistan, district centre briefly falls", publisher: "FDD Long War Journal", date: 2026-07-31, tier: 2}
+        - {url: "https://www.euaa.europa.eu/country-guidance-afghanistan/22-resistance-groups-opposing-taliban", title: "Country guidance Afghanistan - resistance groups opposing the Taliban", publisher: "European Union Agency for Asylum", date: 2026-06, tier: 1}
+    - text: "Terrorist-group baggage: UN monitors report that al-Qaida keeps a sustained presence, that the Taliban continue to support the TTP, and that ETIM fighters (Beijing's worry) are in the north; the harbouring is what every neighbour, patron and mediator asks Kabul to end."
+      confidence: B
+      sources:
+        - {url: "https://obor.chuhai.edu.hk/?p=5366", title: "The UN Thirty-eighth Report of the Analytical Support and Sanctions Monitoring Team (S/2026/651) on regional security", publisher: "Chuhai College OBOR Centre (summary of S/2026/651)", date: 2026, tier: 3}
+        - {url: "https://asianews.network/?p=294449", title: "Taliban support fuels deadlier terrorist attacks in Pakistan: UN report", publisher: "Asia News Network", date: 2026, tier: 3}
+
+  paradoxes:
+    - text: "Shelter for the TTP is the cost of ideological loyalty and the source of the threat. Keeping the Pakistani Taliban as brothers-in-arms avoids a split among Taliban commanders, but it turned Pakistan from patron into the Emirate's main military enemy: strikes on Kabul (Oct 2025), 'open war' (26-27 Feb 2026, Kandahar hit for the first time), a month of fighting, then renewed strikes in September 2026."
+      confidence: B
+      sources:
+        - {url: "https://www.dawn.com/news/1965941/pakistan-worst-hit-by-taliban-takeover-of-kabul-international-crisis-group", title: "Pakistan worst-hit by Taliban takeover of Kabul: International Crisis Group", publisher: "Dawn (reporting Crisis Group)", date: 2026-01-09, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/2/27/afghanistans-taliban-says-open-to-talks-after-pakistan-bombs-major-cities", title: "Afghanistan's Taliban says open to talks after Pakistan bombs major cities", publisher: "Al Jazeera", date: 2026-02-27, tier: 3}
+        - {url: "https://asianews.network/?p=294449", title: "Taliban support fuels deadlier terrorist attacks in Pakistan: UN report", publisher: "Asia News Network", date: 2026, tier: 3}
+    - text: "Winning the Islamist order wins no recognition. The ban on girls' secondary schooling and women's work holds the movement together around Kandahar, yet it is the single condition blocking the UN seat, American money and the full normalisation that India, China and the Gulf could otherwise give."
+      confidence: B
+      sources:
+        - {url: "https://www.washingtoninstitute.org/policy-analysis/five-years-taliban-diplomacy-recognition-without-concessions", title: "Five Years of Taliban Diplomacy: Recognition Without Concessions", publisher: "Washington Institute for Near East Policy (Zelin)", date: 2026-08-18, tier: 2}
+        - {url: "https://www.wam.ae/en/article/15nqydv-icc-issues-arrest-warrants-for-taliban-leaders", title: "ICC issues arrest warrants for Taliban leaders", publisher: "WAM (UAE state agency)", date: 2025-07-08, tier: 3}
+    - text: "Escaping Pakistan makes Kabul dependent on Iran and India, and India is the card that makes Pakistan hit harder. Iran is now the largest trade partner (USD 3.6bn) yet deported about 2 million Afghans in a year and withholds Helmand water; the embassy upgrade in Delhi and Pakistan's minister's line that Afghanistan is 'a colony of India' feed the Pakistani case for force."
+      confidence: C
+      sources:
+        - {url: "https://8am.media/eng/taliban-iran-largest-trading-partner/", title: "Taliban: Iran is Afghanistan's largest trading partner", publisher: "8am Media", date: 2026-08, tier: 4}
+        - {url: "https://www.thehitavada.com/Encyc/2025/10/11/jaishankar-muttaqi-hold-india-upgrades-tech-mission-in-kabul-to-embassy.html", title: "Jaishankar, Muttaqi hold talks; India upgrades technical mission in Kabul to embassy", publisher: "The Hitavada", date: 2025-10-11, tier: 3}
+        - {url: "https://www.businesstoday.in/amp/world/story/afghanistan-pakistan-conflict-khawaja-asif-threatens-open-war-against-taliban-over-130-afghan-fighters-killed-518254-2026-02-27", title: "Khawaja Asif threatens 'open war' against Taliban (calls Afghanistan a colony of India)", publisher: "Business Today", date: 2026-02-27, tier: 3}
+    - text: "The Qosh Tepa canal feeds Afghan farms with the water of the Amu Darya and sours the one northern neighbour that offers rail, power and trade. Kabul's water minister says no agreement binds its withdrawals; Uzbekistan signed a river-management framework with Balkh in May 2025 and now presses for urgent negotiations because the river's flow is falling."
+      confidence: B
+      sources:
+        - {url: "https://intellinews.com/taliban-commission-first-section-of-major-canal-that-could-threaten-water-sufficiency-of-central-asia-neighbours-296728", title: "Taliban commission first section of major canal that could threaten water sufficiency of Central Asia neighbours", publisher: "bne IntelliNews", date: 2023-10, tier: 3}
+        - {url: "https://www.afintl.com/en/202505012564", title: "Uzbekistan, Taliban sign agreement on water resources and economic cooperation", publisher: "Afghanistan International", date: 2025-05-01, tier: 4}
+        - {url: "https://www.isas.nus.edu.sg/papers/the-qosh-tepa-canal-source-of-possible-regional-tension/", title: "The Qosh Tepa canal: source of possible regional tension", publisher: "Institute of South Asian Studies, NUS", date: 2024, tier: 2}
+    - text: "Everyone is offered the one thing the others forbid. Russia gets 'no NATO infrastructure' and a military-technical agreement; Washington asks for Bagram and offers nothing; Riyadh signs gas while Saudi Arabia is bound to Pakistan by a defence pact; Beijing wants ETIM suppressed while Dushanbe alleges attacks from Afghan soil. Playing all sides keeps the Emirate alive but leaves it with no guarantor when Pakistan strikes."
+      confidence: C
+      sources:
+        - {url: "https://www.news4jax.com/news/world/2026/10/05/russia-hosts-consultations-on-afghanistan-including-with-a-taliban-delegation/", title: "Russia hosts a Taliban delegation, others for consultations on Afghanistan", publisher: "Associated Press", date: 2026-10-05, tier: 3}
+        - {url: "https://www.fdd.org/analysis/2026/09/09/former-us-ambassador-khalilzad-visits-kabul-attends-taliban-oil-deal-signing/", title: "Former US ambassador Khalilzad visits Kabul, attends Taliban oil deal signing", publisher: "FDD Long War Journal", date: 2026-09-09, tier: 2}
+        - {url: "https://organiser.org/2026/09/11/379898/world/after-makkah-defence-pact-saudi-signs-200m-energy-deal-with-taliban-leaving-pakistan-under-pressure/", title: "After Makkah defence pact, Saudi signs USD 200m energy deal with Taliban leaving Pakistan under pressure", publisher: "Organiser (Indian weekly)", date: 2026-09-11, tier: 4}
+    - text: "The exodus is both burden and bargaining chip. Iran, Pakistan and Germany push people back (about 3.7 million returns, per-capita GDP down 5.6%), yet the same deportation flights make Europe pay with consular legitimacy: Germany accepted more Taliban diplomats and the EU met a Taliban delegation in Brussels. The more the Emirate is hurt by returns, the more it can sell cooperation on them."
+      confidence: B
+      sources:
+        - {url: "https://www.worldbank.org/en/news/press-release/2026/05/26/afghanistan-s-economy-shows-resilience-but-living-standards-are-falling", title: "Afghanistan's economy shows resilience but living standards are falling", publisher: "World Bank", date: 2026-05-26, tier: 1}
+        - {url: "https://www.al-monitor.com/originals/2026/06/eu-hosts-taliban-officials-brussels-first-time", title: "EU hosts Taliban officials in Brussels for first time", publisher: "Al-Monitor", date: 2026-06, tier: 3}
+        - {url: "https://kabulnow.com/2026/06/germany-to-accept-six-more-taliban-diplomats-to-accelerate-afghan-deportations-report-says/", title: "Germany to accept six more Taliban diplomats to accelerate Afghan deportations, report says", publisher: "KabulNow", date: 2026-06, tier: 4}
+
+  reading: |
+    Afghanistan under the Taliban is the pariah that outlasts its isolators.
+    The Emirate has no allies, no UN seat and a ruling circle indicted by the
+    ICC, and yet by October 2026 it is courted by Moscow (recognition, a
+    military-technical agreement), Beijing, Delhi, Riyadh, Doha and even
+    Brussels and Berlin. Luttwak's lamp shows why: it is useful against worse
+    enemies (the Islamic State in Khorasan) and it holds what everybody needs
+    (transit, water, minerals, a land bridge between Central and South Asia),
+    so each power that would isolate it has a competing reason to deal with it.
+    The strategy is to sell access without surrendering the social order,
+    which is why Zelin calls it recognition without concessions.
+    The weakness is the relation that used to protect it. The Pakistani
+    patron became the main military enemy over the TTP, and the paradox is
+    Luttwakian in the pure sense: loyalty to the movement's sister
+    organisation costs the Emirate its border, its main port route and, in
+    February 2026, air raids on Kandahar itself. Kabul now builds a ring of
+    alternatives (Iran, Central Asia, India, the Gulf, Russia) but every
+    ring has a price: Iranian dependence and expulsions, a water quarrel with
+    Uzbekistan, a Tajik neighbour hosting the Panjshir resistance. Two signals
+    that are not rows: Khalilzad's presence at the Saudi gas signing on
+    7 Sep 2026, which the State Department disowned, and the Moscow Format of
+    5 Oct 2026, where Pakistani and Taliban envoys traded accusations in the
+    same room. The open question for the next year is whether the Gulf and
+    Chinese mediators can turn the strikes into a settlement on the TTP before
+    the Emirate's hold on the north-east frays.

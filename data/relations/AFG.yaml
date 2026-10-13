@@ -1,0 +1,437 @@
+from: AFG
+relations:
+  # ---------- objective ----------
+  - to: PAK
+    layer: objective
+    type: influence_goal
+    summary: "Kabul wants Pakistan to stop its air and drone strikes, reopen the border and transit trade, and accept that the Pakistani Taliban are Pakistan's internal problem; it says it is 'open to talks' and wants to discuss good neighbourliness, trade and security management. Islamabad's counter-demand is 'visible and verifiable' action against the TTP."
+    since: 2025-10-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2026/4/2/pakistan-afghanistan-hold-talks-in-china-to-end-months-of-conflict", title: "Pakistan, Afghanistan hold talks in China to end months of conflict", publisher: "Al Jazeera", date: 2026-04-02, tier: 3}
+      - {url: "https://english.aaj.tv/news/330472762/pakistan-ready-to-reopen-afghan-borders-if-kabul-tackles-terrorism", title: "Pakistan ready to reopen Afghan borders if Kabul tackles terrorism", publisher: "Aaj News", date: 2026-09-17, tier: 3}
+  - to: org-un
+    layer: objective
+    type: recognition_sought
+    summary: "The Emirate seeks the Afghan seat at the UN General Assembly; the Credentials Committee has deferred the claim every year since 2021 and Zelin reports a US 'silent hold'. The seat is still held by the credentials of the former republic's mission."
+    since: 2021-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.washingtoninstitute.org/policy-analysis/five-years-taliban-diplomacy-recognition-without-concessions", title: "Five Years of Taliban Diplomacy: Recognition Without Concessions", publisher: "Washington Institute for Near East Policy (Zelin)", date: 2026-08-18, tier: 2}
+      - {url: "https://www.app.com.pk/global/un-committee-defer-action-on-bid-by-taliban-myanmar-junta-to-appoint-envoys-to-world-body", title: "UN committee defers action on bid by Taliban, Myanmar junta to appoint envoys to world body", publisher: "Associated Press of Pakistan", date: 2021-12, tier: 3}
+  - to: USA
+    layer: objective
+    type: recognition_sought
+    summary: "Muttaqi told the New York Times in mid-August 2026 that Washington could reopen its Kabul embassy and invest in minerals, dams and roads; the State Department refused in writing and said investment would enable repression. Washington's own demands (Bagram, prisoners, the women's bans, counter-terrorism) are unmet."
+    since: 2026-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.afintl.com/en/202608157657", title: "Taliban foreign minister calls for reopening of US embassy in Kabul", publisher: "Afghanistan International", date: 2026-08-15, tier: 4}
+      - {url: "https://www.afintl.com/en/202608249699", title: "US embassy in Kabul could reopen if Taliban changes policies, says former envoy", publisher: "Afghanistan International", date: 2026-08-24, tier: 4}
+      - {url: "https://www.globalsecurity.org/military/library/news/2026/09/mil-260910-rferl01.htm", title: "Washington distances itself from former envoy Khalilzad's Taliban meetings ahead of 9/11 anniversary", publisher: "RFE/RL (via GlobalSecurity)", date: 2026-09-10, tier: 3}
+  - to: UZB
+    layer: objective
+    type: influence_goal
+    summary: "Kabul presses ahead with the Qosh Tepa canal (285 km planned; the first 108-km section commissioned) drawing on the Amu Darya, and its water minister says no agreement limits Afghan withdrawals. Tashkent signed a river-management framework with Balkh in May 2025 and seeks urgent water talks."
+    since: 2022-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://intellinews.com/taliban-commission-first-section-of-major-canal-that-could-threaten-water-sufficiency-of-central-asia-neighbours-296728", title: "Taliban commission first section of major canal that could threaten water sufficiency of Central Asia neighbours", publisher: "bne IntelliNews", date: 2023-10, tier: 3}
+      - {url: "https://www.afintl.com/en/202505012564", title: "Uzbekistan, Taliban sign agreement on water resources and economic cooperation", publisher: "Afghanistan International", date: 2025-05-01, tier: 4}
+      - {url: "https://www.isas.nus.edu.sg/papers/the-qosh-tepa-canal-source-of-possible-regional-tension/", title: "The Qosh Tepa canal: source of possible regional tension", publisher: "Institute of South Asian Studies, NUS", date: 2024, tier: 2}
+  - to: nsa-nrf
+    layer: objective
+    type: regime_goal
+    summary: "The Taliban seek to crush the National Resistance Front and its allied fronts, which in turn aim to end Taliban rule; the Emirate has lost one district centre briefly (Yaftali Sufla, July 2026) and the EUAA finds no armed group holding territory."
+    since: 2021-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.fdd.org/analysis/2026/07/31/anti-taliban-resistance-groups-increase-attacks-in-northeast-afghanistan-district-center-briefly-falls/", title: "Anti-Taliban resistance groups increase attacks in northeast Afghanistan, district centre briefly falls", publisher: "FDD Long War Journal", date: 2026-07-31, tier: 2}
+      - {url: "https://www.euaa.europa.eu/country-guidance-afghanistan/22-resistance-groups-opposing-taliban", title: "Country guidance Afghanistan - resistance groups opposing the Taliban", publisher: "European Union Agency for Asylum", date: 2026-06, tier: 1}
+
+  # ---------- alignment ----------
+  - to: UZB
+    layer: alignment
+    type: treaty
+    summary: "Trilateral framework agreement among Uzbekistan, Afghanistan and Pakistan (Kabul, 17 Jul 2025) to prepare a feasibility study for the Trans-Afghan railway (Termez - Naibabad - Logar - Kharlachi, about 760 km, estimated USD 4.8-5bn). Uzbekistan ratified in February 2026; the Afghan and Pakistani steps are unconfirmed, and the Afghan-Pakistani war puts the Pakistani leg in doubt."
+    since: 2025-07-17
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://en.fergana.agency/news/139019", title: "Tashkent, Islamabad and Kabul sign agreement on feasibility study for Trans-Afghan railway", publisher: "Fergana Agency", date: 2025-07, tier: 3}
+      - {url: "https://kun.uz/en/news/2026/02/10/uzbekistan-ratifies-feasibility-study-agreement-for-trans-afghan-railway", title: "Uzbekistan ratifies feasibility study agreement for Trans-Afghan railway", publisher: "Kun.uz", date: 2026-02-10, tier: 3}
+  - to: org-icc
+    layer: alignment
+    type: non_recognition
+    summary: "The Emirate rejects the ICC outright; after the Pre-Trial Chamber issued warrants for the Emir Hibatullah Akhundzada and chief justice Abdul Hakim Haqqani (8 Jul 2025, gender persecution), Mujahid said the Taliban do not recognise any international court nor consider themselves bound by it."
+    since: 2025-07-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.wam.ae/en/article/15nqydv-icc-issues-arrest-warrants-for-taliban-leaders", title: "ICC issues arrest warrants for Taliban leaders", publisher: "WAM (UAE state agency)", date: 2025-07-08, tier: 3}
+      - {url: "https://kabulnow.com/2025/07/icc-issues-arrest-warrants-for-taliban-leaders-over-gender-based-persecution-in-afghanistan/", title: "ICC issues arrest warrants for Taliban leaders over gender-based persecution in Afghanistan", publisher: "KabulNow", date: 2025-07, tier: 4}
+  - to: RUS
+    layer: alignment
+    type: treaty
+    summary: "Military-technical cooperation agreement signed 27 May 2026 by Defence Minister Mullah Yaqoob and Security Council Secretary Shoigu in Moscow. Kabulov called it a framework to repair and restore Soviet and Russian equipment; the text is unpublished and Yaqoob said it is not a defence pact. Not a security guarantee."
+    since: 2026-05-27
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.kyivpost.com/amp/post/77010", title: "Kremlin deepens Taliban partnership with new military-technical agreement", publisher: "Kyiv Post", date: 2026-05, tier: 3}
+      - {url: "https://kabulnow.com/2026/05/taliban-russia-sign-deal-expanding-military-and-technical-cooperation/", title: "Taliban, Russia sign deal expanding military and technical cooperation", publisher: "KabulNow", date: 2026-05, tier: 4}
+
+  # ---------- dependency ----------
+  - to: IRN
+    layer: dependency
+    type: trade_share
+    value: 3.6
+    unit: usd_bn_annual_bilateral_trade
+    summary: "Taliban commerce figures of August 2026 put annual trade with Iran at USD 3.6bn, making Iran the largest trading partner; a Taliban spokesman reported USD 1.6bn with Iran in six months of 2025 against USD 1.1bn with Pakistan. About 1,300 trucks cross Islam Qala daily (March 2026). Figures are Taliban-reported (an Iranian consul in Herat said about USD 4bn); the World Bank release gives no share."
+    since: 2025-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://8am.media/eng/taliban-iran-largest-trading-partner/", title: "Taliban: Iran is Afghanistan's largest trading partner", publisher: "8am Media", date: 2026-08, tier: 4}
+      - {url: "https://pajhwok.com/2026/03/09/about-1300-trucks-cross-daily-as-afghanistan-iran-trade-remains-steady/", title: "About 1,300 trucks cross daily as Afghanistan-Iran trade remains steady", publisher: "Pajhwok Afghan News", date: 2026-03-09, tier: 4}
+  - to: CHN
+    layer: dependency
+    type: investment
+    value: 3.0
+    unit: usd_bn_mes_aynak_concession_value
+    summary: "The 2008 China Metallurgical Group (MCC) 30-year concession for Mes Aynak copper, worth about USD 3bn, restarted with a road and a groundbreaking in July 2024 after a 16-year delay; in 2025 the mine was reported nearing readiness and changed to underground mining, with production expected around 2026. Beijing also saw a 2023 contract for Amu Darya oil (about USD 540m) cancelled by the Taliban in 2025."
+    since: 2008
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.rferl.org/amp/china-afghanistan-mes-aynak-copper-mining/33050447.html", title: "China breaks ground on massive Afghan copper mine after 16 years of delays", publisher: "RFE/RL", date: 2024-07, tier: 3}
+      - {url: "https://globalvoices.org/2025/08/07/copper-capital-and-consequences-chinas-mining-gamble-in-taliban-ruled-afghanistan/", title: "Copper, capital, and consequences: China's mining gamble in Taliban-ruled Afghanistan", publisher: "Global Voices", date: 2025-08-07, tier: 3}
+  - to: SAU
+    layer: dependency
+    type: investment
+    value: 0.2
+    unit: usd_bn_initial_investment_delta_contract
+    summary: "Delta International (Saudi) signed a 25-year oil and gas exploration contract with the Taliban Mines and Petroleum Ministry in Kabul on 7 Sep 2026 for the Kushk-Tirpul area (about 22,000 km2, Herat and Badghis, seven blocks), with USD 200m initially and an eight-year exploration phase; a Herat-Spin Boldak pipeline of about USD 10bn is under study. Earlier Taliban energy contracts (the Chinese Amu Darya deal) were cancelled."
+    since: 2026-09-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.fdd.org/analysis/2026/09/09/former-us-ambassador-khalilzad-visits-kabul-attends-taliban-oil-deal-signing/", title: "Former US ambassador Khalilzad visits Kabul, attends Taliban oil deal signing", publisher: "FDD Long War Journal", date: 2026-09-09, tier: 2}
+      - {url: "https://en.dailypakistan.com.pk/08-Sep-2026/what-is-zalmay-khalilzad-doing-in-kabul-as-afghan-taliban-seals-saudi-oil-deal", title: "What is Zalmay Khalilzad doing in Kabul as Afghan Taliban seals Saudi oil deal", publisher: "Daily Pakistan", date: 2026-09-08, tier: 4}
+  - to: TKM
+    layer: dependency
+    type: energy_import
+    value: 101
+    unit: km_tapi_pipeline_laid_in_herat_by_6_jul_2026
+    summary: "The Afghan leg of the Turkmenistan-Afghanistan-Pakistan-India (TAPI) gas pipeline has been under construction since September 2024; the Taliban Ministry of Mines and Petroleum reported 101 km of pipe laid in Herat province by 6 Jul 2026 (self-reported). Turkmen officials expect the 130-km Herat segment by end-2026; the pipeline is expected to reach Herat city early in 2027."
+    since: 2024-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://pajhwok.com/2026/06/09/80km-tapi-pipe-laid-in-herat-momp/", title: "80km TAPI pipe laid in Herat - MoMP", publisher: "Pajhwok Afghan News (citing the Taliban Ministry of Mines and Petroleum)", date: 2026-06-09, tier: 4}
+      - {url: "https://timesca.com/tapi-pipeline-herat-turkmenistan-afghanistan/", title: "TAPI pipeline in Herat: Turkmenistan-Afghanistan", publisher: "Times of Central Asia", date: 2026, tier: 3}
+  - to: KAZ
+    layer: dependency
+    type: investment
+    value: 0.5
+    unit: usd_bn_kazakh_railway_commitment_first_stage
+    summary: "Kazakhstan pledged at least USD 500m for the first stage of the Turgundi-Herat railway (about 120 km), planned for 2026-2027; a Kazakh deputy prime minister visited Kabul in June 2026. Astana has not formally recognised the Taliban government."
+    since: 2025-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://v1.afintl.com/en/202504211272", title: "Kazakhstan to invest USD 500 million in Afghan railway project, says Taliban", publisher: "Afghanistan International", date: 2025-04-21, tier: 4}
+      - {url: "https://en.orda.kz/kazakhstan-outlines-financing-plan-for-turgundiherat-railway-eyes-2026-start-8248", title: "Kazakhstan outlines financing plan for Turgundi-Herat railway, eyes 2026 start", publisher: "Orda.kz", date: 2025, tier: 3}
+  - to: ARE
+    layer: dependency
+    type: investment
+    value: 10
+    unit: usd_bn_investment_memorandum
+    summary: "Zelin records a USD 10bn UAE investment memorandum with the Taliban government; the UAE state-linked GAAC took airport ground services and security at Kabul, Kandahar and Herat in May 2022 under revenue sharing, and a UAE-backed firm (ADL Ulanish) is to do the Trans-Afghan railway feasibility work. Only the Zelin summary names the figure; no primary text found."
+    since: 2022-05
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.washingtoninstitute.org/policy-analysis/five-years-taliban-diplomacy-recognition-without-concessions", title: "Five Years of Taliban Diplomacy: Recognition Without Concessions", publisher: "Washington Institute for Near East Policy (Zelin)", date: 2026-08-18, tier: 2}
+      - {url: "https://triblive.com/news/world/taliban-say-deal-signed-with-uae-firm-to-manage-airports", title: "Taliban say deal signed with UAE firm to manage airports", publisher: "Associated Press via TribLive", date: 2022-05-24, tier: 3}
+  - to: USA
+    layer: dependency
+    type: investment
+    value: 765
+    unit: usd_m_us_humanitarian_aid_terminated_2025
+    summary: "The United States ended all USAID programmes in Afghanistan in 2025 after a January review (SIGAR: USD 765m humanitarian and about USD 1bn basic services cut, two small education programmes excepted); the State Department cited at least USD 11m in food aid siphoned to the Taliban. The Afghan economy lost its largest external grant donor."
+    since: 2025-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://reliefweb.int/report/afghanistan/sigar-april-2025-quarterly-report-united-states-congress", title: "SIGAR April 2025 quarterly report to the United States Congress", publisher: "SIGAR via ReliefWeb", date: 2025-04, tier: 1}
+      - {url: "https://www.rferl.org/amp/sigar-afghanistan-us-aid-reconstruction/33492067.html", title: "After key report on Afghanistan, State Department says Taliban was keeping aid", publisher: "RFE/RL", date: 2025-08, tier: 3}
+  - to: org-un
+    layer: dependency
+    type: investment
+    value: 1.71
+    unit: usd_bn_2026_humanitarian_appeal_about_a_quarter_funded
+    summary: "UN agencies run a USD 1.71bn humanitarian response for Afghanistan in 2026, only about a quarter funded by August (16% by end-May); 21.9 million people are in need and funding cuts closed over 100 child-malnutrition sites. The Emirate's survival of the aid collapse depends on UN delivery channels it also resists."
+    since: 2026-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.rescue.org/press-release/five-years-taliban-took-control-afghanistan-humanitarian-need-record-high-response", title: "Five years after the Taliban took control: humanitarian need at a record high", publisher: "International Rescue Committee", date: 2026-08-14, tier: 2}
+      - {url: "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/08/31/funding-cuts-force-closure-of-over-100-child-malnutrition-treatment-sites-in-afghanistan-un-official", title: "Funding cuts force closure of over 100 child malnutrition treatment sites in Afghanistan: UN official", publisher: "Xinhua via The Star", date: 2026-08-31, tier: 3}
+  - to: UZB
+    layer: dependency
+    type: trade_share
+    value: 1.7
+    unit: usd_bn_bilateral_trade_2025
+    summary: "Uzbek-Afghan trade reached almost USD 1.7bn in 2025 (USD 1.1bn in 2024), mostly Uzbek exports, with a goal of USD 5bn within five years; Uzbekistan extended the Hairatan-Mazar-e-Sharif railway operating contract in January 2026. Figures are from Afghan and Central Asian outlets and are not verified against Uzbek customs data."
+    since: 2024
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://timesca.com/uzbekistan-sees-opportunities-in-afghanistan/", title: "Uzbekistan sees opportunities in Afghanistan", publisher: "Times of Central Asia", date: 2026, tier: 3}
+      - {url: "https://timesca.com/uzbekistan-extends-agreement-on-hairaton-mazar-e-sharif-railway-with-afghanistan/", title: "Uzbekistan extends agreement on Hairatan-Mazar-e-Sharif railway with Afghanistan", publisher: "Times of Central Asia", date: 2026-01, tier: 3}
+
+  # ---------- action ----------
+  - to: PAK
+    layer: action
+    type: incident
+    summary: "First Pakistani air strike on Kabul on 9 Oct 2025 (aimed at TTP chief Noor Wali Mehsud) after a TTP attack on 8 Oct killed 11 Pakistani personnel; Afghan forces retaliated against Pakistani posts and more than 70 people died on both sides in a week of border war."
+    since: 2025-10-09
+    until: 2025-10-19
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.dawn.com/news/1965941/pakistan-worst-hit-by-taliban-takeover-of-kabul-international-crisis-group", title: "Pakistan worst-hit by Taliban takeover of Kabul: International Crisis Group", publisher: "Dawn (reporting Crisis Group)", date: 2026-01-09, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2026/2/27/afghanistans-taliban-says-open-to-talks-after-pakistan-bombs-major-cities", title: "Afghanistan's Taliban says open to talks after Pakistan bombs major cities", publisher: "Al Jazeera", date: 2026-02-27, tier: 3}
+  - to: PAK
+    layer: action
+    type: agreement
+    summary: "Doha ceasefire of 19 Oct 2025, mediated by Qatar and Turkey and signed by the two defence ministers; follow-up rounds in Istanbul in October-November 2025 ended without a 'workable solution' and Pakistan's defence minister said talks were over and threatened to 'obliterate' the Taliban government."
+    since: 2025-10-19
+    until: 2025-11
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://mofa.gov.qa/en/latest-articles/statements/pakistan-and-afghanistan-agree-to-an-immediate-ceasefire-during-a-round-of-negotiations-in-doha", title: "Pakistan and Afghanistan agree to an immediate ceasefire during a round of negotiations in Doha", publisher: "Ministry of Foreign Affairs of Qatar", date: 2025-10-19, tier: 1}
+      - {url: "https://www.khaleejtimes.com/world/asia/pakistan-threatens-to-obliterate-taliban-peace-talks-fail", title: "Pakistan threatens to obliterate Taliban as peace talks fail", publisher: "Khaleej Times", date: 2025-11, tier: 3}
+  - to: PAK
+    layer: action
+    type: incident
+    summary: "Pakistan's defence minister declared 'open war' on 26-27 Feb 2026 after strikes on Kabul, Kandahar and Paktia, Paktika, Khost and Laghman (the first on the Taliban's southern base since 2021); a month of fighting followed, UNAMA counted 76 civilians killed and 213 injured (16 Feb - 17 Mar), a Kabul rehabilitation centre strike killed 200-400 (disputed), and a truce was reached on 18 Mar 2026 through Saudi, Qatari and Turkish mediation."
+    since: 2026-02-26
+    until: 2026-03-18
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2026/2/27/afghanistans-taliban-says-open-to-talks-after-pakistan-bombs-major-cities", title: "Afghanistan's Taliban says open to talks after Pakistan bombs major cities", publisher: "Al Jazeera", date: 2026-02-27, tier: 3}
+      - {url: "https://www.orfonline.org/index.php/expert-speak/drifting-further-from-resolution-the-escalating-afghanistan-pakistan-crisis", title: "Drifting further from resolution: the escalating Afghanistan-Pakistan crisis", publisher: "Observer Research Foundation", date: 2026-03-25, tier: 2}
+  - to: PAK
+    layer: action
+    type: agreement
+    summary: "Working-level talks in Urumqi, China, in early April 2026 to secure a ceasefire and reopen crossings; China requested the talks and had sent a special envoy. Pakistan calls them working-level; Kabul sent a mid-level delegation. No settlement followed."
+    since: 2026-04-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2026/4/2/pakistan-afghanistan-hold-talks-in-china-to-end-months-of-conflict", title: "Pakistan, Afghanistan hold talks in China to end months of conflict", publisher: "Al Jazeera", date: 2026-04-02, tier: 3}
+  - to: PAK
+    layer: action
+    type: incident
+    summary: "Pakistani air and drone strikes on ten locations in Kandahar, Paktia and Khost on 24 Sep 2026 after alleged drone incursions on 23 Sep (Taliban deny launching them), followed by fighting at Gulistan on 25 Sep; Kabul promised an 'appropriate response'. Muttaqi and Pakistan's envoy traded accusations at the Moscow Format on 5 Oct, where the envoy said over 4,700 Pakistanis died in three years of terrorism linked to Afghanistan."
+    since: 2026-09-23
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2026/9/25/pakistani-forces-kill-afghan-taliban-fighters-in-border-escalation", title: "Pakistani forces kill Afghan Taliban fighters in border escalation", publisher: "Al Jazeera", date: 2026-09-25, tier: 3}
+      - {url: "https://www.news4jax.com/news/world/2026/10/05/russia-hosts-consultations-on-afghanistan-including-with-a-taliban-delegation/", title: "Russia hosts a Taliban delegation, others for consultations on Afghanistan", publisher: "Associated Press", date: 2026-10-05, tier: 3}
+  - to: PAK
+    layer: action
+    type: incident
+    summary: "Pakistan's mass return of Afghans (Prime Minister Sharif: over 2.4 million since November 2023; UN figures about 2.56 million, of which about 260,000 deported by immigration authorities) plus the border closures since the October 2025 fighting that cut Afghan transit trade. UNHCR objected to forced returns of registered refugees; an arrest deadline for undocumented Afghans expired on 10 Jul 2026 (single outlet)."
+    since: 2023-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://kabulnow.com/2026/06/pakistan-says-2-4-million-afghans-have-returned-since-2023-as-un-warns-of-reintegration-challenges/", title: "Pakistan says 2.4 million Afghans have returned since 2023 as UN warns of reintegration challenges", publisher: "KabulNow", date: 2026-06, tier: 4}
+      - {url: "https://data.unhcr.org/es/documents/details/122948", title: "Pakistan - voluntary repatriation of Afghan refugees as of 31 May 2026", publisher: "UNHCR", date: 2026-05-31, tier: 1}
+  - to: SAU
+    layer: action
+    type: agreement
+    summary: "Kabul sent a delegation to the Saudi-mediated Pakistan-Taliban talks in Riyadh on 3 Dec 2025 after the October border clashes, and Riyadh welcomed the Qatar-Turkey ceasefire; the session produced no movement on the TTP issue. Mirrors the row in SAU's card; sourcing is thin and later rounds are unverified."
+    since: 2025-12-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://asianews.network/islamabad-kabul-impasse-persists-in-riyadh", title: "Islamabad-Kabul impasse persists in Riyadh", publisher: "Asia News Network", date: 2025-12, tier: 3}
+  - to: QAT
+    layer: action
+    type: agreement
+    summary: "Qatar (with Turkey) brokered the 19 Oct 2025 Doha ceasefire between Kabul and Islamabad and joined the Saudi and Turkish request for the March 2026 Eid pause; Qatari mediation also freed detained Americans in 2025."
+    since: 2025-10-19
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://mofa.gov.qa/en/latest-articles/statements/pakistan-and-afghanistan-agree-to-an-immediate-ceasefire-during-a-round-of-negotiations-in-doha", title: "Pakistan and Afghanistan agree to an immediate ceasefire during a round of negotiations in Doha", publisher: "Ministry of Foreign Affairs of Qatar", date: 2025-10-19, tier: 1}
+      - {url: "https://kabulnow.com/2025/09/us-officials-hold-talks-with-taliban-over-americans-detained-in-afghanistan/", title: "US officials hold talks with Taliban over Americans detained in Afghanistan", publisher: "KabulNow", date: 2025-09, tier: 4}
+  - to: TUR
+    layer: action
+    type: agreement
+    summary: "Turkey co-mediated the Doha ceasefire and hosted the Istanbul rounds (25 Oct and November 2025) with Qatar, where talks stalled over the TTP; Erdogan and Fidan offered new mediation in the February 2026 fighting, but a promised Turkish delegation to Pakistan was delayed and the visit did not materialise. A Track 1.5 meeting in Istanbul in May 2026 is reported by an aid foundation only."
+    since: 2025-10-25
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.dawn.com/news/1959366/turkish-delegations-visit-delayed-due-to-afghan-talibans-lack-of-cooperation-fo", title: "Turkish delegation's visit delayed due to Afghan Taliban's lack of cooperation: FO", publisher: "Dawn", date: 2025-11, tier: 3}
+      - {url: "https://www.aol.com/articles/turkeys-erdogan-offers-try-revive-122611750.html", title: "Turkey's Erdogan offers to try to revive a truce as Pakistan-Afghan border clashes enter sixth day", publisher: "Associated Press via AOL", date: 2026-02, tier: 3}
+  - to: IND
+    layer: action
+    type: visit
+    summary: "Foreign Minister Muttaqi visited India on 9-16 Oct 2025 (the first visit by a top Taliban leader, under a UN travel waiver); Jaishankar announced the upgrade of India's Kabul technical mission to an embassy, effective 21 Oct 2025, and Muttaqi said Taliban diplomats would be allowed at the Afghan embassy in Delhi and that Afghan soil would not be used against India. India named a Taliban chargé in New Delhi in January 2026."
+    since: 2025-10-09
+    until: 2025-10-16
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.thehitavada.com/Encyc/2025/10/11/jaishankar-muttaqi-hold-india-upgrades-tech-mission-in-kabul-to-embassy.html", title: "Jaishankar, Muttaqi hold talks; India upgrades technical mission in Kabul to embassy", publisher: "The Hitavada", date: 2025-10-11, tier: 3}
+      - {url: "https://www.newsonair.gov.in/mea-confirms-restoration-of-indias-embassy-in-afghanistan-with-immediate-effect", title: "MEA confirms restoration of India's embassy in Afghanistan with immediate effect", publisher: "All India Radio (official MEA statement)", date: 2025-10-21, tier: 1}
+      - {url: "https://kabulnow.com/2026/01/taliban-diplomat-to-take-charge-of-afghanistan-embassy-in-new-delhi-indian-media-report/", title: "Taliban diplomat to take charge of Afghanistan embassy in New Delhi, Indian media report", publisher: "KabulNow", date: 2026-01, tier: 4}
+  - to: RUS
+    layer: action
+    type: visit
+    summary: "Muttaqi led the Taliban delegation to the Moscow Format consultations on 5 Oct 2026 (with envoys of China, India, Iran, Pakistan and four Central Asian states); Lavrov praised the anti-IS and anti-drug record, said any NATO infrastructure in Afghanistan is unacceptable and promised continued humanitarian aid; Kabulov offered mediation with Pakistan if both sides ask."
+    since: 2026-10-05
+    until: 2026-10-05
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.news4jax.com/news/world/2026/10/05/russia-hosts-consultations-on-afghanistan-including-with-a-taliban-delegation/", title: "Russia hosts a Taliban delegation, others for consultations on Afghanistan", publisher: "Associated Press", date: 2026-10-05, tier: 1}
+      - {url: "https://www.washingtoninstitute.org/policy-analysis/five-years-taliban-diplomacy-recognition-without-concessions", title: "Five Years of Taliban Diplomacy: Recognition Without Concessions", publisher: "Washington Institute for Near East Policy (Zelin)", date: 2026-08-18, tier: 2}
+  - to: CHN
+    layer: action
+    type: agreement
+    summary: "China, Afghanistan and Pakistan held an informal foreign ministers' meeting in Beijing on 21 May 2025 and a sixth trilateral dialogue in Kabul in August 2025, backing the extension of CPEC to Afghanistan and joint counter-terrorism; since the 2026 war China has acted as mediator (Wang Yi phoned Muttaqi on 13 Mar 2026; Urumqi talks in April)."
+    since: 2025-05-21
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.mfa.gov.cn//mfa_eng/wjbzhd/202505/t20250521_11629994.html", title: "Foreign Ministers of China, Afghanistan and Pakistan - informal trilateral meeting (21 May 2025)", publisher: "Ministry of Foreign Affairs of China", date: 2025-05-21, tier: 1}
+      - {url: "https://asianews.network/china-afghanistan-pakistan-vow-stronger-cooperation/", title: "China, Afghanistan, Pakistan vow stronger cooperation", publisher: "Asia News Network", date: 2025-08, tier: 3}
+  - to: TJK
+    layer: action
+    type: incident
+    summary: "Attacks from Afghan territory on the Tajik frontier killed three Chinese workers at a gold-mining camp (26 Nov 2025, firearms and a grenade-carrying drone) and two Chinese road workers in Darvaz (30 Nov); Dushanbe blamed criminal groups in Afghanistan, Kabul blamed an unnamed group and promised cooperation, in the highest-level Tajik-Afghan contact since 2021. Beijing told nationals to leave the border area."
+    since: 2025-11-26
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.rferl.org/amp/tajikistan-afghanistan-border-attack-chinese-nationals-death-gold-mining-taliban/33607228.html", title: "Three Chinese nationals killed in Afghan-Tajik border attack on gold mining camp", publisher: "RFE/RL", date: 2025-11, tier: 3}
+      - {url: "https://www.intellinews.com/pannier-who-s-killing-chinese-workers-on-the-afghan-tajik-frontier-414917/", title: "Pannier: Who's killing Chinese workers on the Afghan-Tajik frontier?", publisher: "bne IntelliNews", date: 2025-12, tier: 3}
+  - to: IRN
+    layer: action
+    type: incident
+    summary: "Iran's deportation drive after the 20 Mar 2025 expiry of census slips and the 6 Jul 2025 deadline: UNHCR/IOM count 1.19 million deportations (1.8 million returns) from January to 29 Nov 2025, with 373,000 deported in July alone; Iran's interior ministry said about 2 million had been deported since March 2025 (9 Aug 2026), and UNHCR counted 315,800 deportations in 2026 by 11 Jul. Separately, Iran says the Taliban released about 100 million m3 of Helmand water against 820 million m3 due under the 1973 treaty; the Taliban plead drought."
+    since: 2025-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.ecoi.net/en/file/local/2133670/Iran-Afghanistan%20Returns%20Emergency%20Response%2026%20-%203%20December%202025.pdf", title: "Iran Afghanistan returns emergency response, 26 Nov - 3 Dec 2025", publisher: "UNHCR / IOM via ecoi.net", date: 2025-12-03, tier: 1}
+      - {url: "https://data.unhcr.org/en/documents/download/122456", title: "Iran - Afghanistan returns emergency response (UNHCR/IOM update)", publisher: "UNHCR", date: 2026, tier: 1}
+      - {url: "https://kabulnow.com/2025/08/iran-accuses-taliban-of-failing-to-deliver-on-helmand-water-pact", title: "Iran accuses Taliban of failing to deliver on Helmand water pact", publisher: "KabulNow", date: 2025-08, tier: 4}
+  - to: USA
+    layer: action
+    type: incident
+    summary: "Trump's Truth Social demand of 20 Sep 2025 that Bagram air base be returned to the United States ('bad things' otherwise) was rejected on 21 Sep by Taliban officials citing the 2020 Doha Agreement and on 23 Sep by Mujahid ('never'); US officials privately told Reuters retaking it would need over 10,000 troops. Talks that month were limited to prisoners."
+    since: 2025-09-20
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/9/21/afghan-taliban-rejects-trump-threats-over-taking-back-bagram-airbase", title: "Afghan Taliban rejects Trump threats over taking back Bagram airbase", publisher: "Al Jazeera", date: 2025-09-21, tier: 3}
+      - {url: "https://english.alarabiya.net/News/world/2025/09/23/taliban-say-afghanistan-will-never-hand-over-bagram-despite-trump-threats", title: "Taliban say Afghanistan 'will never' hand over Bagram despite Trump threats", publisher: "Al Arabiya", date: 2025-09-23, tier: 3}
+  - to: USA
+    layer: action
+    type: visit
+    summary: "A US delegation led by hostage envoy Adam Boehler and former envoy Zalmay Khalilzad met Baradar and Muttaqi in Kabul in September 2025 on detained citizens; one American (Amir Amiri) was freed through Qatari mediation, the fifth released that year, while the case of Mahmood Habibi stayed unresolved. Zelin finds the channel 'episodic', freeing prisoners but yielding nothing durable."
+    since: 2025-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://kabulnow.com/2025/09/us-officials-hold-talks-with-taliban-over-americans-detained-in-afghanistan/", title: "US officials hold talks with Taliban over Americans detained in Afghanistan", publisher: "KabulNow", date: 2025-09, tier: 4}
+      - {url: "https://www.washingtoninstitute.org/policy-analysis/five-years-taliban-diplomacy-recognition-without-concessions", title: "Five Years of Taliban Diplomacy: Recognition Without Concessions", publisher: "Washington Institute for Near East Policy (Zelin)", date: 2026-08-18, tier: 2}
+  - to: org-eu
+    layer: action
+    type: agreement
+    summary: "The Commission and Sweden co-chaired a technical-level meeting with Taliban return-and-readmission officials in Brussels in June 2026, with 15 member states present, following contacts in Kabul in January; the Afghan side raised a consular presence in the EU and trust-building. The Commission says this is not recognition."
+    since: 2026-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.al-monitor.com/originals/2026/06/eu-hosts-taliban-officials-brussels-first-time", title: "EU hosts Taliban officials in Brussels for first time", publisher: "Al-Monitor", date: 2026-06, tier: 3}
+      - {url: "https://english.aaj.tv/news/amp/330460759", title: "EU hosts Taliban officials in Brussels for first time", publisher: "Aaj News", date: 2026-06, tier: 3}
+  - to: DEU
+    layer: action
+    type: agreement
+    summary: "Germany deports Afghans by charter and has agreed to accept Taliban consular staff in return: two representatives admitted in July 2025, a first direct flight to Kabul with 20 convicted Afghans in February 2026, six more Taliban diplomats agreed in Istanbul in June 2026, and flights widened in July-August 2026 to people without criminal records. A late-May 2026 flight was cancelled over a Foreign Office dispute. Berlin calls the contacts technical."
+    since: 2025-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.tribuneindia.com/news/world/germany-greenlights-taliban-consular-officials-to-support-afghan-deportations/amp", title: "Germany greenlights Taliban consular officials to support Afghan deportations", publisher: "Tribune India", date: 2025-07, tier: 3}
+      - {url: "https://kabulnow.com/2026/06/germany-to-accept-six-more-taliban-diplomats-to-accelerate-afghan-deportations-report-says/", title: "Germany to accept six more Taliban diplomats to accelerate Afghan deportations, report says", publisher: "KabulNow", date: 2026-06, tier: 4}
+      - {url: "https://kabulnow.com/2026/08/30-more-afghan-migrants-deported-from-germany-to-afghanistan/", title: "30 more Afghan migrants deported from Germany to Afghanistan", publisher: "KabulNow", date: 2026-08, tier: 4}
+  - to: nsa-isis
+    layer: action
+    type: incident
+    summary: "The UN Monitoring Team's 16th report (December 2025) says the Taliban have 'suppressed, although not eliminated' ISKP and describes it as the movement's main adversary; ISKP's capability was degraded by Taliban and Pakistani counter-terrorism. The 38th report (S/2026/651) notes the Islamic State at a lower ebb after leadership losses including its deputy leader's death in May 2026."
+    since: 2021-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://8am.media/eng/united-nations-the-threat-of-isis-k-and-the-ttp-in-afghanistan-remains/", title: "UN: the threat of ISIS-K and the TTP in Afghanistan remains", publisher: "8am Media", date: 2025-12, tier: 4}
+      - {url: "https://obor.chuhai.edu.hk/?p=5366", title: "The UN Thirty-eighth Report of the Analytical Support and Sanctions Monitoring Team (S/2026/651) on regional security", publisher: "Chuhai College OBOR Centre (summary of S/2026/651)", date: 2026, tier: 3}
+  - to: nsa-nrf
+    layer: action
+    type: incident
+    summary: "Anti-Taliban fronts claimed at least 50 attacks in the month to late August 2026, mostly in Badakhshan, Nuristan, Panjshir and the north-east; the Taliban lost a district centre (Yaftali Sufla) briefly in July, NRF commander Hasib Panjshiri was killed in August, and in September the NRF claimed two attacks in Badakhshan. Claims are self-reported and often unconfirmed."
+    since: 2026-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.fdd.org/analysis/2026/09/30/anti-taliban-resistance-claims-attacks-across-afghanistan-in-september/", title: "Anti-Taliban resistance claims attacks across Afghanistan in September", publisher: "FDD Long War Journal", date: 2026-09-30, tier: 2}
+      - {url: "https://kabulnow.com/2026/07/nrf-claims-deadly-attack-on-taliban-in-badakhshan-amid-intensified-resistance-activity/", title: "NRF claims deadly attack on Taliban in Badakhshan amid intensified resistance activity", publisher: "KabulNow", date: 2026-07, tier: 4}
