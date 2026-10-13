@@ -370,12 +370,13 @@ actors:
   model: sonnet
   tier: protagonist
 - id: ISR
-  status: running
+  status: pending
   tokens: 0
-  updated: 2026-10-13 09:00
+  updated: 2026-10-13 09:38
   region: middle-east
   model: sonnet
   tier: protagonist
+  note: Sonnet run of 2026-10-13 killed before writing anything; relaunch from scratch.
 - id: IRN
   status: reviewed
   tokens: 241832
@@ -440,19 +441,23 @@ actors:
   model: sonnet
   tier: protagonist
 - id: YEM
-  status: running
+  status: reviewed
   tokens: 0
-  updated: 2026-10-13 09:09
+  updated: 2026-10-13 09:38
   region: middle-east
   model: sonnet
   tier: protagonist
+  note: Agent killed at the build step on 2026-10-13; files were complete and valid,
+    reviewed from disk; tokens not recorded.
 - id: PSE
-  status: running
+  status: reviewed
   tokens: 0
-  updated: 2026-10-13 09:09
+  updated: 2026-10-13 09:38
   region: middle-east
   model: sonnet
   tier: protagonist
+  note: Agent killed at the build step on 2026-10-13; files were complete and valid,
+    reviewed from disk; tokens not recorded.
 - id: KWT
   status: reviewed
   tokens: 280190
@@ -1434,9 +1439,12 @@ actors:
   model: fable
   tier: protagonist
 - id: RUS
-  status: running
+  status: pending
   tokens: 0
-  updated: 2026-10-13 09:12
+  updated: 2026-10-13 09:38
   region: great-powers
   model: fable
   tier: protagonist
+  note: 'Fable run of 2026-10-13 killed mid-write: actor card complete on disk, stances
+    cut at ~71 KB, no relations file. Part two: resume from the files on disk, do
+    not redo the research.'
