@@ -519,7 +519,7 @@ def main():
     # A/B stances. Alarms: allies cooling (the culminating point of an alliance), rivals warming.
     # weight of a movement: a relationship that moves with an ally or an adversary weighs far more
     # than one that moves with a partner or a neutral (Davide, 2026-10-13)
-    WEIGHT = {"ally": 4, "adversary": 4, "reluctant_ally": 3, "rival": 3, "partner": 2, "reluctant_partner": 1, "neutral": 1, "claimed_territory": 3, "own_territory": 0}
+    WEIGHT = {"ally": 8, "adversary": 8, "reluctant_ally": 4, "rival": 4, "partner": 2, "reluctant_partner": 1, "neutral": 1, "claimed_territory": 4, "own_territory": 0}   # each step doubles
     per = {}
     allies_cooling, rivals_warming = [], []
     for (a, x), st in handst.items():

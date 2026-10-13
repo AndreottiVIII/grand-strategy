@@ -294,8 +294,11 @@ by `tools/build.py` (`gatherings`, `convergences`); Gatherings page and the doss
 ## Currents (added 2026-10-13)
 
 Luttwak's culminating point: the trends are the first derivative of the postures. Per actor,
-over hand-written A/B stances: **drift** = (warming - cooling) / n, **turbulence** =
-(warming + cooling) / n. Alarms: allies (ally, reluctant ally) cooling = the culminating point of
+over hand-written A/B stances, each weighted by its grade on a doubling scale (ally and adversary
+8, reluctant ally and rival 4, partner 2, reluctant partner and neutral 1; Davide: a movement with
+an ally or an adversary must weigh much more than one with a partner): **drift** = (weighted
+warming - weighted cooling) / weight of all, **turbulence** = (weighted warming + weighted
+cooling) / weight of all. Alarms: allies (ally, reluctant ally) cooling = the culminating point of
 an alliance; rivals (rival, adversary) warming = detente. Each build writes a snapshot of every
 grade and trend to `data/snapshots/<date>.json` and reports what changed since the previous one.
 On the map (posture lens) warming outlines breathe, cooling ones flicker. Computed by
