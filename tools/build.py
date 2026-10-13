@@ -428,9 +428,33 @@ def main():
                 seams.append({"a": a, "x": x, "y": y, "ax": g, "ay": gay, "xy": gxy})
     seams.sort(key=lambda s: (s["y"], s["a"], s["x"]))
 
+    # --- clients (Luttwak's client system): for every pair with both sides written (A or B), the
+    # lean is how many steps higher A grades X than X grades A; only pairs where at least one side is
+    # an alliance count, and the higher-grading side is the client, the other the patron.
+    SCALE = {"ally": 4, "reluctant_ally": 3, "partner": 2, "reluctant_partner": 1, "neutral": 0, "rival": -1, "adversary": -2}
+    handst = {}
+    for a, v in stances.items():
+        for st in v["stances"]:
+            if st.get("dataset") or st.get("reciprocal_of") or st.get("confidence") not in ("A", "B") or st["grade"] not in SCALE:
+                continue
+            handst[(a, st["toward"])] = st
+    first = lambda t: re.split(r"(?<=[.;])\s", str(t or ""), 1)[0][:220]
+    clients = []
+    for (a, x), st in handst.items():
+        back = handst.get((x, a))
+        if not back:
+            continue
+        lean = SCALE[st["grade"]] - SCALE[back["grade"]]
+        if lean <= 0 or max(SCALE[st["grade"]], SCALE[back["grade"]]) < 3:
+            continue
+        clients.append({"client": a, "patron": x, "lean": lean, "cg": st["grade"], "pg": back["grade"], "cb": st.get("bond"), "pb": back.get("bond"),
+                        "cnote": first(st.get("note")), "pnote": first(back.get("note"))})
+    clients.sort(key=lambda c: (-c["lean"], c["patron"], c["client"]))
+
     out = {
         "generated": today.isoformat(),
         "seams": seams,
+        "clients": clients,
         "grades": GRADES,
         "layers": list(TYPES.keys()),
         "actors": list(actors.values()),

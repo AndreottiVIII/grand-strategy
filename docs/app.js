@@ -102,6 +102,7 @@
     else if (kind === "issues") setView("issues");
     else if (kind === "luttwak") setView("luttwak");
     else if (kind === "seams") setView("seams");
+    else if (kind === "clients") setView("clients");
     else if (kind === "about") setView("about");
     else if (kind === "colophon") { setView("about"); const c = document.getElementById("colophon"); if (c) c.scrollIntoView(); return; }
     else { clear(); mapMode = "world"; renderLegend(); setView("map"); }
@@ -123,7 +124,7 @@
   orgSel.onchange = () => { orgSel.value ? showOrg(orgSel.value) : goHome(); };
   issueSel.onchange = () => { issueSel.value ? showIssue(issueSel.value) : goHome(); };
   document.querySelectorAll(".tab").forEach(b => b.onclick = () => b.dataset.view === "dossier" ? showDossier(pov || fullActors[0].id) : (pov ? setPov(pov) : goHome()));
-  const PAGE_HASH = { map: "#/", orgs: "#/organisations", issues: "#/issues", luttwak: "#/luttwak", seams: "#/seams", about: "#/about", colophon: "#/colophon" };
+  const PAGE_HASH = { map: "#/", orgs: "#/organisations", issues: "#/issues", luttwak: "#/luttwak", seams: "#/seams", clients: "#/clients", about: "#/about", colophon: "#/colophon" };
   document.querySelectorAll("#topnav a").forEach(a => { a.href = PAGE_HASH[a.dataset.page]; a.onclick = ev => { ev.preventDefault(); navigate(PAGE_HASH[a.dataset.page]); }; });
   document.getElementById("home").onclick = ev => { ev.preventDefault(); goHome(); };
   function setView(v, render = true) {
@@ -131,13 +132,14 @@
     document.querySelectorAll(".tab").forEach(b => b.classList.toggle("is-on", b.dataset.view === v));
     document.querySelectorAll("#topnav a").forEach(a => a.classList.toggle("is-on", a.dataset.page === v || (a.dataset.page === "map" && (v === "map" || v === "dossier"))));
     document.querySelectorAll(".view").forEach(s => s.classList.toggle("is-on", s.id === "view-" + v));
-    const isPage = ["orgs", "issues", "luttwak", "seams", "about"].includes(v);
+    const isPage = ["orgs", "issues", "luttwak", "seams", "clients", "about"].includes(v);
     document.querySelector(".side").style.display = isPage ? "none" : "";
     document.querySelector(".frame").classList.toggle("is-page", isPage);
     if (v === "orgs") renderOrgsPage();
     if (v === "issues") renderIssuesPage();
     if (v === "luttwak") renderLuttwakPage();
     if (v === "seams") renderSeamsPage();
+    if (v === "clients") renderClientsPage();
     if (v === "about") renderAboutPage();
     if (!render) return;
     if (v === "map") drawMap();
@@ -407,11 +409,12 @@
     const chips = Object.entries(F).map(([k, v]) => `<span class="fv is-on" data-k="${k}" data-v="${esc(v)}">${esc(String(v).replace(/_/g, " "))} ×</span>`).join(" ");
     el.innerHTML = `<div class="ledger">
       <div><h3>Counterparts of ${esc(actors[pov].name)} <span>${counterparts.length}${counterparts.length < total ? " of " + total : ""}</span>${chips ? `<span class="chips">${chips}</span>` : ""}</h3>
-        <table><thead><tr><th>Actor</th><th>Posture</th><th>Trend</th><th>Bond</th><th style="text-align:right">Rows</th></tr></thead><tbody>` +
+        <table><thead><tr><th>Actor</th><th>Posture</th><th>Trend</th><th>Bond</th><th title="lean: who leans on whom">Lean</th><th style="text-align:right">Rows</th></tr></thead><tbody>` +
         counterparts.map(c => `<tr class="cp" data-id="${c.id}"><td class="name">${glyph(c.st)}${esc(actors[c.id].short || actors[c.id].name)}</td>
           <td>${c.st ? fv("grade", c.st.grade, c.st.grade.replace(/_/g, " ")) : "<span class='tr'>-</span>"}</td>
           <td class="tr">${c.st ? fv("trend", c.st.trend, TREND_SIGN[c.st.trend] + " " + TREND[c.st.trend]) : ""}</td>
           <td class="tr">${c.st ? fv("bond", c.st.bond, BOND_LABEL[c.st.bond].split(" - ")[0].toLowerCase()) : ""}</td>
+          <td class="tr lean-c" title="${(l => l == null ? "both sides not written" : l > 0 ? nameOf(c.id) + " leans on " + nameOf(pov) : nameOf(pov) + " leans on " + nameOf(c.id))(leanOf(pov, c.id))}">${(l => l == null ? "·" : l > 0 ? "↑" + l : "↓" + (-l))(leanOf(pov, c.id))}</td>
           <td class="n">${c.rows.length || "-"}</td></tr>`).join("") +
         `</tbody></table></div>
       <div><h3>${filtered ? "Matching traffic" : "Latest traffic"} <span>${filtered ? latest.length + " of " + rows.length + " rows" : rows.length + " rows, newest first"}</span></h3>
@@ -503,6 +506,25 @@
     el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
   }
 
+  // ---------- clients: Luttwak's client system - A grades X higher than X grades A, so A leans on X
+  // (computed by the build from hand-written stances of confidence A or B, both sides written)
+  const CLIENTS = data.clients || [];
+  const leanOf = (a, x) => { const c = CLIENTS.find(c => (c.client === a && c.patron === x) || (c.client === x && c.patron === a)); return c ? (c.client === a ? -c.lean : c.lean) : null; };
+  const LOYAL = { kin: "loyal", affinity: "loyal", none: "bought", grievance: "bought", unknown: "" };
+  function renderClientsPage() {
+    const el = document.getElementById("page-clients");
+    const byP = d3.group(CLIENTS, c => c.patron);
+    const patrons = [...byP.entries()].sort((p, q) => q[1].length - p[1].length || d3.sum(q[1], c => c.lean) - d3.sum(p[1], c => c.lean));
+    el.innerHTML = `<h2>Clients</h2><p class="lede">A client is an actor that leans on another more than it is leaned on: it grades the other higher than the other grades it. Luttwak's name for the arrangement is the client system of the early Roman empire, where the patron buys security cheaply because the client's loyalty exceeds the patron's commitment. The lean is the gap in steps between the two readings (ally, reluctant ally, partner, reluctant partner, neutral, rival, adversary). ${CLIENTS.length} pairs so far; only pairs with both sides written at confidence A or B count, and only where at least one side is an alliance. Loyal clients are bound by kin or affinity; bought ones by nothing, or by a grievance.</p>
+      <h3 class="sec">Patrons</h3><div class="patrons">` + (patrons.length ? patrons.map(([p, list]) => `<div class="patron"><a href="#/view/${p}">${nameOf(p)}</a> <span>${list.length} client${list.length > 1 ? "s" : ""}</span><div class="who">${list.map(c => `<a href="#/view/${c.client}">${nameOf(c.client)}</a> <i>+${c.lean}</i>`).join(" · ")}</div></div>`).join("") : `<p class="empty">No pair with both sides written yet.</p>`) + `</div>
+      <h3 class="sec">Who leans on whom</h3><table class="ledger-t"><thead><tr><th>Client</th><th>Lean</th><th>Patron</th><th>Client's reading</th><th>Patron's reading</th><th>Client</th></tr></thead><tbody>` +
+      CLIENTS.map(c => `<tr><td class="name"><a href="#/view/${c.client}">${nameOf(c.client)}</a></td><td class="lean">+${c.lean}</td><td class="name"><a href="#/view/${c.patron}">${nameOf(c.patron)}</a></td>
+        <td><i style="color:${gradeBorder(c.cg)}">${c.cg.replace("_", " ")}</i> · ${esc(c.cb || "")}<div class="why">${esc(c.cnote)}</div></td>
+        <td><i style="color:${gradeBorder(c.pg)}">${c.pg.replace("_", " ")}</i> · ${esc(c.pb || "")}<div class="why">${esc(c.pnote)}</div></td>
+        <td class="kind">${LOYAL[c.cb] || ""}</td></tr>`).join("") + `</tbody></table>`;
+    el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
+  }
+
   function renderAboutPage() {
     const el = document.getElementById("page-about");
     if (el.dataset.done) return;
@@ -518,6 +540,8 @@
       <p>Under the postures sit the relation rows, in four layers: <b>objectives</b> (what an actor wants from another), <b>alignments</b> (treaties, memberships, recognitions), <b>dependencies</b> (energy, trade, debt, arms, remittances, with numbers) and <b>actions</b> (dated events: votes, sanctions, visits, exercises). The datasets are the floor: memberships from Wikidata and official lists, recognition tables from Wikipedia with their citations, every recorded vote of the UN General Assembly since 2022 from the UN Digital Library. The cards are the reading on top of that floor.</p>
       <h3>Seams</h3>
       <p>A <b>seam</b> is an actor pulled two ways: an ally of two actors that are rivals or adversaries of each other. Greece between Israel and Turkey, the United States between Saudi Arabia and the Emirates, Italy between Hungary and Ukraine. The word is Luttwak's. In <i>Strategy</i> he describes <b>relational manoeuvre</b> as the style that aims not at the enemy's strength but at his specific weaknesses, his doctrine, his habits and the <i>seams</i> between him and his allies, where a small force can obtain a large effect. The Byzantine book shows the same idea at the scale of an empire that survived a thousand years by dividing its enemies rather than destroying them. The Seams page lists every such triangle the atlas can see; the map marks them for the actor you are looking at. They are computed from hand-written postures of confidence A or B only.</p>
+      <h3>Clients</h3>
+      <p>A <b>client</b> is an actor that leans on another more than it is leaned on: it grades the other higher than the other grades it. Luttwak's name for the arrangement is the <b>client system</b> of the early Roman empire, described in <i>The Grand Strategy of the Roman Empire</i>: the hegemonic empire of the Julio-Claudians ruled through client kings whose loyalty exceeded Rome's commitment to them, which is why it was cheap. The Clients page measures the <b>lean</b> of every pair the atlas has read from both sides, in steps on the posture scale; the higher-grading side is the client, the other the patron. A client bound by kin or affinity is loyal; one bound by nothing, or by a grievance, is bought, and holds as long as the patron pays. The tepid ally, graded "ally" by its patron and answering "partner", is the costly kind, the one Rome subsidised. In the ledger under the map the lean column shows, for each counterpart, who leans on whom.</p>
       <h3>How it is made</h3>
       <p>The data lives in plain files, one per actor, separate from the site, and is versioned in the open: the whole history of every grade is in the repository. Cards are researched and drafted by language-model agents working from a shared brief and the atlas's own rules, then reread by a stronger model that checks objectives, paradoxes and every posture grade against the sources and against the neighbouring cards; the owner samples the result. A new card's grades retroact on the cards already written as provisional reciprocals, flagged as such until written from the other side. Nothing is embedded in the site: it renders the data as it stands on the day of the last build, and the stamp in the top bar says which day that was.</p>
       <h3>What it is not</h3>

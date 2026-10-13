@@ -224,3 +224,23 @@ sup.fn-sep { font-size: 10px; color: var(--ink-3); }
 .seam i.h { color: var(--c-rival); margin: 0 6px; }
 .seam .both { color: var(--ink-3); margin-left: 10px; }
 .seam .both i.al { color: var(--c-ally); }
+
+/* ---------- clients page */
+.page h3.sec { font-family: var(--font-ui); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; margin: 22px 0 8px; color: var(--accent); font-weight: 400; }
+.page h3.sec::before { content: "> "; }
+.patrons { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 8px 24px; }
+.patron { border-top: 1px solid var(--rule); padding: 6px 0 8px; font-family: var(--font-ui); font-size: 12.5px; }
+.patron > a { color: var(--c-seam); text-decoration: none; text-transform: uppercase; letter-spacing: .1em; font-size: 14px; text-shadow: 0 0 6px var(--c-seam); }
+.patron > span { color: var(--ink-3); font-size: 11px; margin-left: 8px; }
+.patron .who { color: var(--ink-2); margin-top: 3px; }
+.patron .who a { color: var(--ink); text-decoration: none; text-transform: uppercase; letter-spacing: .06em; }
+.patron .who i { font-style: normal; color: var(--c-ally); }
+.ledger-t { width: 100%; border-collapse: collapse; font-family: var(--font-ui); font-size: 12.5px; }
+.ledger-t th { text-align: left; font-weight: 400; color: var(--ink-3); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; padding: 2px 10px 4px 0; border-bottom: 1px solid var(--rule); }
+.ledger-t td { padding: 5px 10px 5px 0; border-bottom: 1px dotted var(--rule); vertical-align: top; color: var(--ink-2); }
+.ledger-t td.name a { color: var(--ink); text-decoration: none; text-transform: uppercase; letter-spacing: .06em; white-space: nowrap; }
+.ledger-t td.lean { color: var(--c-ally); white-space: nowrap; }
+.ledger-t td i { font-style: normal; }
+.ledger-t td .why { color: var(--ink-3); font-family: var(--font-text); font-size: 12px; margin-top: 2px; max-width: 420px; }
+.ledger-t td.kind { color: var(--ink-3); text-transform: uppercase; letter-spacing: .06em; }
+.ledger td.lean-c { color: var(--c-ally); white-space: nowrap; cursor: help; }

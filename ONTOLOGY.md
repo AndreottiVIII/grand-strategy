@@ -257,3 +257,14 @@ confidence A or B, from either side of the leg. The treaty floor alone (NATO, EU
 co-membership from the dataset) never makes a seam, or every NATO member would be "pulled"
 between Cyprus and Turkey; provisional reciprocals (`reciprocal_of`) never count either. The
 list therefore grows only as cards are written on both sides of a rivalry.
+
+## Clients (added 2026-10-13)
+
+Luttwak's client system (the hegemonic early Roman empire: client kings more loyal to Rome than
+Rome was committed to them). For every pair read from both sides (hand-written stances of
+confidence A or B, no dataset, no reciprocals) the **lean** is the gap in steps between A's grade
+of X and X's grade of A on the scale ally 4, reluctant ally 3, partner 2, reluctant partner 1,
+neutral 0, rival -1, adversary -2. Pairs count only when at least one side is an alliance. The
+higher-grading side is the client, the other the patron; a client bound by kin or affinity is
+loyal, one bound by nothing or by a grievance is bought. Computed by `tools/build.py`
+(`clients`), shown on the Clients page and as the lean column of the ledger.
