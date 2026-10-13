@@ -1,0 +1,439 @@
+from: OMN
+relations:
+  # ---------- objective ----------
+  - to: IRN
+    layer: objective
+    type: influence_goal
+    summary: "Muscat seeks a joint Omani-Iranian mechanism for the Strait of Hormuz in place of unilateral Iranian management or a US-led coalition - the southern lane through Omani waters kept open, Iranian approval only for ships entering Iranian waters, no transit fees. The 17 Jun 2026 US-Iran memorandum endorsed a 60-day Iranian-Omani mechanism; the Omani proposal broke down in July and Tehran announced an 'understanding' with Muscat on 17 Aug."
+    since: 2026-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.thenationalnews.com/news/gulf/2026/08/21/us-oman-ties-face-strain-as-muscat-walks-tightrope-between-washington-and-tehran/", title: "US-Oman ties face strain as Muscat walks tightrope between Washington and Tehran", publisher: "The National", date: 2026-08-21, tier: 3}
+      - {url: "https://www.iranintl.com/en/202607147249", title: "Iran risks its most valuable Arab partner over Hormuz", publisher: "Iran International", date: 2026-07-14, tier: 3}
+      - {url: "https://arabcenterdc.org/resource/oman-and-the-iran-war-neutrality-under-strain/", title: "Oman and the Iran War: Neutrality Under Strain", publisher: "Arab Center Washington DC", date: 2026-05-28, tier: 2}
+  - to: USA
+    layer: objective
+    type: influence_goal
+    summary: "Oman wants to remain the channel between Washington and Tehran and to keep US security cover without becoming a launch pad - it hosted the 2025 rounds and the 6 Feb 2026 talks in Muscat (and Geneva on 26 Feb), and its foreign minister visited Washington on 27 Feb, the day before the US-Israeli strikes. Washington now sees Oman as too close to Iran."
+    since: 2025-04-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://agsi.org/?p=35658", title: "Iran War Tests Oman's Foreign Policy", publisher: "Arab Gulf States Institute in Washington", date: 2026-03-13, tier: 2}
+      - {url: "https://www.aljazeera.com/amp/news/liveblog/2026/2/6/us-iran-talks-live-critical-negotiations-set-to-begin-in-oman", title: "US-Iran talks live: critical negotiations set to begin in Oman", publisher: "Al Jazeera", date: 2026-02-06, tier: 3}
+      - {url: "https://www.al-monitor.com/originals/2026/02/swiss-say-oman-host-us-iran-talks-geneva-next-week", title: "Swiss say Oman to host US-Iran talks in Geneva next week", publisher: "Al-Monitor", date: 2026-02, tier: 3}
+  - to: ARE
+    layer: objective
+    type: influence_goal
+    summary: "Oman seeks to keep the borderlands of Musandam and Mahra out of Emirati influence - a royal decree of Nov 2018 barred non-Omanis from owning land and property in strategic border areas (owners to sell by Nov 2020), after repeated Emirati purchases; Oman licensed its own operator for the ports of Khasab and Shinas. ISPI reads the UAE-Oman rivalry as benefiting Tehran."
+    since: 2018-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.ispionline.it/en/publication/strategic-borderlands-uae-oman-rivalry-benefits-tehran-23347", title: "Strategic Borderlands: The UAE-Oman Rivalry Benefits Tehran", publisher: "ISPI", date: 2019-06-21, tier: 2}
+      - {url: "https://www.amnesty.org/en/documents/mde20/9127/2018/en/", title: "Amnesty International on the Shuhuh tribe detentions in Musandam (read through Wikipedia's citation, not opened)", publisher: "Amnesty International", date: 2018, tier: 2}
+  - to: YEM
+    layer: objective
+    type: influence_goal
+    summary: "Oman wants a negotiated end to the Yemeni war and a stable southern flank - it stayed out of the Saudi-led coalition, hosts the Houthi negotiator in Muscat and on 23 Jul 2026 said it was coordinating with Saudi Arabia, the Yemeni parties and the UN envoy to resume talks. The Mahra governorate on the 294 km border is where Saudi, Emirati and Omani influence meet."
+    since: 2015-03-26
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.nampa.org/text/22974087", title: "Oman says working on resuming Yemen talks after Houthis hit Saudi ship (AFP; read as a search summary, page not opened)", publisher: "AFP via NAMPA", date: 2026-07-23, tier: 3}
+      - {url: "https://www.ispionline.it/en/publication/strategic-borderlands-uae-oman-rivalry-benefits-tehran-23347", title: "Strategic Borderlands: The UAE-Oman Rivalry Benefits Tehran (Mahra)", publisher: "ISPI", date: 2019-06-21, tier: 2}
+
+  # ---------- alignment ----------
+  - to: USA
+    layer: alignment
+    type: treaty
+    summary: "A 1980 agreement gives US forces access to Omani military facilities (prepositioned equipment on Masirah) and a 2019 Strategic Framework Agreement gave the US Navy formal access to Duqm and Salalah. No mutual-defence commitment."
+    since: 1980
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://arabcenterdc.org/resource/oman-and-the-iran-war-neutrality-under-strain/", title: "Oman and the Iran War: Neutrality Under Strain (1980 and 2019 agreements)", publisher: "Arab Center Washington DC", date: 2026-05-28, tier: 2}
+      - {url: "https://www.iranintl.com/en/202607147249", title: "Iran risks its most valuable Arab partner over Hormuz", publisher: "Iran International", date: 2026-07-14, tier: 3}
+  - to: GBR
+    layer: alignment
+    type: treaty
+    summary: "A Joint Defence Agreement signed on 21 Feb 2019, the Comprehensive Agreement on Enduring Friendship (22 May 2019) and the executive order of a Mutual Defence Agreement signed at Sandhurst on 28 May 2022. The UK Joint Training Area and a Royal Navy facility at Duqm give Britain a standing presence."
+    since: 2019-02-21
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.gov.uk/government/news/oman-uk-and-oman-sign-comprehensive-agreement", title: "UK and Oman sign Comprehensive Agreement (alongside the Joint Defence Agreement of 21 Feb 2019)", publisher: "UK Foreign and Commonwealth Office", date: 2019-05-23, tier: 1}
+      - {url: "https://timesofoman.com/article/117249-oman-uk-sign-mutual-defence-agreement", title: "Oman, UK sign mutual defence agreement", publisher: "Times of Oman", date: 2022-05-28, tier: 3}
+  - to: IND
+    layer: alignment
+    type: treaty
+    summary: "Comprehensive Economic Partnership Agreement signed in Muscat on 18 Dec 2025 (Goyal and Al Yousef); Oman gives duty-free access on 98.08% of its tariff lines. A 2018 memorandum lets the Indian Navy and Air Force use Duqm; a dedicated Indian naval zone followed in January 2024."
+    since: 2025-12-18
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.reuters.com/world/india/oman-india-sign-comprehensive-economic-partnership-agreement-omans-state-news-2025-12-18/", title: "Oman, India sign Comprehensive Economic Partnership Agreement (read through Wikipedia's citation, not opened)", publisher: "Reuters", date: 2025-12-18, tier: 3}
+      - {url: "https://www.ispionline.it/en/publication/omans-sultan-goes-to-the-uae-why-it-matters-also-to-the-us-and-china-171721", title: "Oman's Sultan Goes to the UAE: Why it Matters Also to the US and China", publisher: "ISPI", date: 2024-04-24, tier: 2}
+  - to: ISR
+    layer: alignment
+    type: non_recognition
+    summary: "Oman has not recognised Israel nor opened an embassy, unlike the UAE and Bahrain; it ties normalisation to Palestinian rights (FM Albusaidi, June 2021) and the Consultative Assembly voted in Dec 2022 to widen restrictions on contacts with Israelis. Informal contacts continue."
+    since: 2020-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://arabcenterdc.org/resource/walking-a-tightrope-oman-and-normalization-with-israel/", title: "Walking a Tightrope: Oman and Normalization with Israel", publisher: "Arab Center Washington DC", date: 2023-03-07, tier: 2}
+      - {url: "https://www.newarab.com/news/oman-parliament-votes-expand-israel-boycott-law", title: "Oman parliament votes to expand Israel boycott law (read through Wikipedia's citation, not opened)", publisher: "The New Arab", date: 2022, tier: 3}
+
+  # ---------- dependency ----------
+  - to: CHN
+    layer: dependency
+    type: energy_export
+    summary: "China takes about 90% of Oman's oil exports (ISPI, 2024). Wikipedia's index gives China as 42.9% of Oman's total exports - a different base (all goods, year unstated); the figure with a tier-2 source is kept. China also invests in the Duqm special economic zone and in the Sohar free zone (a USD 1bn battery-anode plant began in May 2026)."
+    value: 0.9
+    unit: share_of_oil_exports_2024
+    since: 2024
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.ispionline.it/en/publication/omans-sultan-goes-to-the-uae-why-it-matters-also-to-the-us-and-china-171721", title: "Oman's Sultan Goes to the UAE: Why it Matters Also to the US and China", publisher: "ISPI", date: 2024-04-24, tier: 2}
+      - {url: "https://en.wikipedia.org/wiki/Economy_of_Oman", title: "Economy of Oman (42.9% of exports; Sohar plant - index only)", publisher: "Wikipedia (index)", date: 2026-10-12, tier: 4}
+  - to: ARE
+    layer: dependency
+    type: trade_share
+    summary: "Bilateral non-oil trade exceeded USD 15bn in 2024 (Bank Muscat, as reported by Al-Monitor). The UAE is Oman's largest import partner at 25.1% per Wikipedia's index."
+    value: 15
+    unit: usd_billions_bilateral_non_oil_trade_2024
+    since: 2024
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.al-monitor.com/originals/2026/08/sultan-oman-meets-uaes-mbz-iran-hormuz-talks-advance", title: "Sultan of Oman meets UAE's MBZ as Iran Hormuz talks advance", publisher: "Al-Monitor", date: 2026-08-17, tier: 3}
+  - to: ARE
+    layer: dependency
+    type: investment
+    summary: "Agreements worth about USD 35bn on renewable energy, technology, education and rail were signed during Sultan Haitham's April 2024 visit; the centrepiece is Hafeet Rail, a USD 3bn Etihad Rail joint venture (2022) linking Sohar with Abu Dhabi, now with Mubadala and Asyad as shareholders."
+    value: 35
+    unit: usd_billions_agreements_signed_apr_2024
+    since: 2024-04-22
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.ispionline.it/en/publication/omans-sultan-goes-to-the-uae-why-it-matters-also-to-the-us-and-china-171721", title: "Oman's Sultan Goes to the UAE: Why it Matters Also to the US and China", publisher: "ISPI", date: 2024-04-24, tier: 2}
+  - to: IND
+    layer: dependency
+    type: trade_share
+    summary: "In 2024-25 India imported USD 6.5bn of goods from Oman and exported USD 4.06bn to it. Over 500,000 Indians live in Oman, the largest expatriate community (older Indian government figure, via Wikipedia's index)."
+    value: 6.5
+    unit: usd_billions_indian_imports_from_oman_2024_25
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.thehindu.com/business/Economy/india-oman-free-trade-agreement/article70411281.ece", title: "India-Oman free trade agreement (read through Wikipedia's citation, not opened)", publisher: "The Hindu", date: 2025-12-18, tier: 3}
+  - to: IRN
+    layer: dependency
+    type: trade_share
+    summary: "Iran pledged in September 2025 to double bilateral trade with Oman to USD 5bn; Iran is upgrading southern ports such as Jask as a hub for trade with the Gulf and Oman. A 2014 deal for 10 bcm of Iranian gas a year to Oman through a subsea pipeline was never finalised."
+    value: 5
+    unit: usd_billions_trade_target_2025
+    since: 2025-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://arabcenterdc.org/resource/oman-and-the-iran-war-neutrality-under-strain/", title: "Oman and the Iran War: Neutrality Under Strain (Sep 2025 pledge)", publisher: "Arab Center Washington DC", date: 2026-05-28, tier: 2}
+      - {url: "https://www.reuters.com/article/us-iran-oman-gas-idUSBREA2B24K20140312", title: "Iran, Oman agree gas deal (read through Wikipedia's citation, not opened)", publisher: "Reuters", date: 2014-03-12, tier: 3}
+  - to: USA
+    layer: dependency
+    type: military_presence
+    summary: "The US Navy has formal access to two Omani ports, Duqm and Salalah (2019), outside the Strait of Hormuz, where a US destroyer called before the 2026 war; Duqm can host carriers and receives refuelling and maintenance. The IRGC claimed a strike on logistics and carrier-refuelling facilities at Duqm on 12 Jul 2026."
+    value: 2
+    unit: us_navy_access_ports_duqm_salalah
+    since: 2019-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.iranintl.com/en/202607147249", title: "Iran risks its most valuable Arab partner over Hormuz", publisher: "Iran International", date: 2026-07-14, tier: 3}
+      - {url: "https://arabcenterdc.org/resource/oman-and-the-iran-war-neutrality-under-strain/", title: "Oman and the Iran War: Neutrality Under Strain", publisher: "Arab Center Washington DC", date: 2026-05-28, tier: 2}
+  - to: GBR
+    layer: dependency
+    type: military_presence
+    summary: "A 2016 agreement worth USD 110m provides a British naval base near Duqm; Britain also runs a Joint Training Area and exercises (Saif Sareea) with Oman."
+    value: 110
+    unit: usd_millions_duqm_naval_base_agreement_2016
+    since: 2016
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://arabcenterdc.org/resource/oman-and-the-iran-war-neutrality-under-strain/", title: "Oman and the Iran War: Neutrality Under Strain (2016 USD 110m naval base agreement)", publisher: "Arab Center Washington DC", date: 2026-05-28, tier: 2}
+  - to: IND
+    layer: dependency
+    type: military_presence
+    summary: "India secured access to Duqm for its navy and air force in Feb 2018 and a dedicated zone for its navy at Duqm port in January 2024; ISPI reads it as a way for Oman to reassure the US while deepening ties with India."
+    value: 1
+    unit: dedicated_indian_naval_zone_duqm_2024
+    since: 2024-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.ispionline.it/en/publication/omans-sultan-goes-to-the-uae-why-it-matters-also-to-the-us-and-china-171721", title: "Oman's Sultan Goes to the UAE: Why it Matters Also to the US and China", publisher: "ISPI", date: 2024-04-24, tier: 2}
+      - {url: "http://indianexpress.com/article/india/india-gets-access-to-strategic-oman-port-for-military-use-chabahar-gwadar-in-sight-5061573/", title: "India gets access to strategic Oman port for military use (read through Wikipedia's citation, not opened)", publisher: "The Indian Express", date: 2018-02, tier: 3}
+  - to: QAT
+    layer: dependency
+    type: trade_share
+    summary: "During the 2017 boycott of Qatar, Salalah and Sohar became the route for Qatar's imports; trade rose about 2,000% from June to September 2017 to USD 702m in transactions. Oman stayed officially uninvolved in the dispute."
+    value: 702
+    unit: usd_millions_qatar_oman_transactions_sep_2017
+    since: 2017-06
+    until: 2021-01
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.economist.com/middle-east-and-africa/2017/09/02/oman-is-benefiting-from-the-standoff-over-qatar-for-now", title: "Oman is benefiting from the standoff over Qatar, for now (read through Wikipedia's citation, not opened)", publisher: "The Economist", date: 2017-09-02, tier: 3}
+      - {url: "https://www.alaraby.co.uk/english/news/2017/9/10/oman-sees-trade-boost-following-qatar-blockade", title: "Oman sees trade boost following Qatar blockade (read through Wikipedia's citation, not opened)", publisher: "Al-Araby Al-Jadeed", date: 2017-09-10, tier: 3}
+  - to: TUR
+    layer: dependency
+    type: energy_export
+    summary: "A 10-year LNG contract (2024) has Oman supplying BOTAS with 1 million tonnes a year from 2025 (Wikipedia's index; no primary source opened)."
+    value: 1
+    unit: million_tonnes_lng_per_year_from_2025
+    since: 2025
+    until: 2035
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Oman%E2%80%93Turkey_relations", title: "Oman-Turkey relations (BOTAS LNG deal - index only)", publisher: "Wikipedia (index)", date: 2026-10-12, tier: 4}
+  - to: org-gcc
+    layer: dependency
+    type: trade_share
+    summary: "With Hormuz traffic collapsed after 28 Feb 2026, Omani ports handled 117% more exports from other GCC states than before - Sohar, Salalah and Duqm as the bypass of the Strait."
+    value: 1.17
+    unit: increase_in_gcc_exports_handled_by_omani_ports_since_feb_2026
+    since: 2026-02-28
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://arabcenterdc.org/resource/oman-and-the-iran-war-neutrality-under-strain/", title: "Oman and the Iran War: Neutrality Under Strain", publisher: "Arab Center Washington DC", date: 2026-05-28, tier: 2}
+
+  # ---------- action ----------
+  - to: IRN
+    layer: action
+    type: visit
+    summary: "Oman hosted the indirect US-Iran talks as mediator - Muscat 12 Apr 2025, Rome 19 Apr, further rounds in May 2025 (a sixth, scheduled in Oman for 15 Jun, was suspended by the Israeli strikes), Muscat on 6 Feb 2026 (Witkoff, Kushner and CENTCOM chief Cooper facing Araghchi, relaying through Albusaidi) and Geneva on 26 Feb. Araghchi was received in Muscat again in late April and on 23 Jun 2026."
+    since: 2025-04-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/amp/news/liveblog/2026/2/6/us-iran-talks-live-critical-negotiations-set-to-begin-in-oman", title: "US-Iran talks live: critical negotiations set to begin in Oman", publisher: "Al Jazeera", date: 2026-02-06, tier: 3}
+      - {url: "https://agsi.org/?p=35658", title: "Iran War Tests Oman's Foreign Policy", publisher: "Arab Gulf States Institute in Washington", date: 2026-03-13, tier: 2}
+      - {url: "https://arabcenterdc.org/resource/oman-and-the-iran-war-neutrality-under-strain/", title: "Oman and the Iran War: Neutrality Under Strain", publisher: "Arab Center Washington DC", date: 2026-05-28, tier: 2}
+  - to: IRN
+    layer: action
+    type: agreement
+    summary: "On 17 Aug 2026 Iran's foreign ministry said Tehran and Muscat had reached an understanding on a map of a Hormuz transit route and were finalising a joint statement, as the 17 Jun memorandum expired; Trump threatened Oman again the same day. The document is not published; Oman's foreign minister said on 20 Aug that Oman rejects escalation."
+    since: 2026-08-17
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.thenationalnews.com/news/gulf/2026/08/21/us-oman-ties-face-strain-as-muscat-walks-tightrope-between-washington-and-tehran/", title: "US-Oman ties face strain as Muscat walks tightrope between Washington and Tehran", publisher: "The National", date: 2026-08-21, tier: 3}
+      - {url: "https://www.al-monitor.com/originals/2026/08/sultan-oman-meets-uaes-mbz-iran-hormuz-talks-advance", title: "Sultan of Oman meets UAE's MBZ as Iran Hormuz talks advance", publisher: "Al-Monitor", date: 2026-08-17, tier: 3}
+  - to: IRN
+    layer: action
+    type: incident
+    summary: "Iranian drones hit Omani soil during the war - Duqm port (1 and 3 Mar 2026), Salalah fuel tanks (3 and 11 Mar), a tanker off Muscat (2 Mar), Sohar (13 Mar, two expatriate workers killed) - and on 12 Jul the IRGC claimed a 'heavy and surprise attack' on Duqm logistics. Araghchi called the March strikes 'not our choice'; in July Oman called them 'irresponsible acts' and summoned Iran's ambassador."
+    since: 2026-03-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://agsi.org/?p=35658", title: "Iran War Tests Oman's Foreign Policy", publisher: "Arab Gulf States Institute in Washington", date: 2026-03-13, tier: 2}
+      - {url: "https://www.iranintl.com/en/202607147249", title: "Iran risks its most valuable Arab partner over Hormuz", publisher: "Iran International", date: 2026-07-14, tier: 3}
+      - {url: "https://www.aljazeera.com/video/newsfeed/2026/3/11/oil-facilities-in-omans-salalah-port-ablaze-after-drone-strikes", title: "Oil facilities in Oman's Salalah port ablaze after drone strikes (read through Wikipedia's citation, not opened)", publisher: "Al Jazeera", date: 2026-03-11, tier: 3}
+  - to: USA
+    layer: action
+    type: incident
+    summary: "Trump said on 27 May 2026 that Oman would 'behave just like everybody else, or we will have to blow them up' over the idea of Iranian-Omani control of Hormuz, and threatened again in the week of 17 Aug to bomb Oman if it 'gets in the way'. Albusaidi had written on 18 Mar that the US 'lost control of its own foreign policy'. The Omani government did not answer publicly."
+    since: 2026-05-27
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.thenationalnews.com/news/gulf/2026/08/21/us-oman-ties-face-strain-as-muscat-walks-tightrope-between-washington-and-tehran/", title: "US-Oman ties face strain as Muscat walks tightrope between Washington and Tehran", publisher: "The National", date: 2026-08-21, tier: 3}
+      - {url: "https://arabcenterdc.org/resource/oman-and-the-iran-war-neutrality-under-strain/", title: "Oman and the Iran War: Neutrality Under Strain", publisher: "Arab Center Washington DC", date: 2026-05-28, tier: 2}
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "The 14-point US-Iran memorandum of 17 Jun 2026 (Islamabad) endorsed a 60-day Iranian-Omani mechanism for the Strait and a window for a longer nuclear agreement; Trump agreed in a signed document that Oman would 'conduct dialogue' with Iran on the strait's administration. US and Iran read the clause oppositely and the memorandum lapsed in August."
+    since: 2026-06-17
+    until: 2026-08-17
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.thenationalnews.com/news/gulf/2026/08/21/us-oman-ties-face-strain-as-muscat-walks-tightrope-between-washington-and-tehran/", title: "US-Oman ties face strain as Muscat walks tightrope between Washington and Tehran", publisher: "The National", date: 2026-08-21, tier: 3}
+  - to: nsa-houthis
+    layer: action
+    type: agreement
+    summary: "Oman brokered the US-Houthi ceasefire of 6 May 2025 (the Houthis would stop targeting US ships; they kept striking Israel and commercial shipping into September 2025). The GCC Supreme Council in Manama commended Oman for it and for securing the release of detained crew; Oman flew the 11 Eternity C crew from Sanaa to Muscat."
+    since: 2025-05-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.omanobserver.om/article/1182510/oman/oman-strengthens-role-as-regional-peace-broker", title: "Oman strengthens role as regional peace broker", publisher: "Oman Observer", date: 2026-01-10, tier: 3}
+      - {url: "https://en.wikipedia.org/wiki/Operation_Rough_Rider", title: "Operation Rough Rider (6 May 2025 ceasefire - index only)", publisher: "Wikipedia (index)", date: 2026-10-12, tier: 4}
+  - to: nsa-houthis
+    layer: action
+    type: visit
+    summary: "In mid-September 2026 US officials met Houthi representatives at the US embassy in Muscat, with Omani help according to two of five sources, days after the Houthis seized a stretch of Yemen's Red Sea coast; the Houthis reportedly said they would not attack US ships. The State Department did not confirm."
+    since: 2026-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.uniindia.com/world/us-houthi-oman-meeting/182334", title: "US officials met Houthi representatives at the US embassy in Muscat (report attributed to Times of Israel)", publisher: "UNI India", date: 2026-09-16, tier: 3}
+  - to: YEM
+    layer: action
+    type: agreement
+    summary: "Negotiations hosted in Muscat produced an agreement to exchange prisoners, with Saudi Arabia, the UN envoy Hans Grundberg's office and the ICRC; Grundberg thanked Oman (reported 10 Jan 2026)."
+    since: 2025-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.omanobserver.om/article/1182510/oman/oman-strengthens-role-as-regional-peace-broker", title: "Oman strengthens role as regional peace broker", publisher: "Oman Observer", date: 2026-01-10, tier: 3}
+  - to: SAU
+    layer: action
+    type: agreement
+    summary: "In September 2023 Houthi envoys went to Riyadh for ceasefire talks with Saudi officials with Omani mediators involved; Oman has since coordinated with Riyadh on the Yemen file (prisoner exchange, Jan 2026; the call to resume talks after the 22 Jul 2026 Houthi strike on a Saudi ship)."
+    since: 2023-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.reuters.com/world/middle-east/houthi-officials-arrive-riyadh-ceasefire-talks-with-saudi-officials-sources-2023-09-14/", title: "Houthi envoys heading to Riyadh for ceasefire talks with Saudis (read through Wikipedia's citation, not opened)", publisher: "Reuters", date: 2023-09-14, tier: 3}
+      - {url: "https://www.nampa.org/text/22974087", title: "Oman says working on resuming Yemen talks after Houthis hit Saudi ship (AFP; read as a search summary, page not opened)", publisher: "AFP via NAMPA", date: 2026-07-23, tier: 3}
+  - to: ISR
+    layer: action
+    type: visit
+    summary: "Prime Minister Netanyahu made a surprise visit to Sultan Qaboos in Muscat in October 2018, undisclosed until he returned (the first by an Israeli leader since Peres in 1996); Oman's foreign minister called Israel an 'accepted Middle East state'. In February 2023 Oman's civil aviation authority allowed Israeli civilian aircraft to overfly Oman."
+    since: 2018-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://arabcenterdc.org/resource/walking-a-tightrope-oman-and-normalization-with-israel/", title: "Walking a Tightrope: Oman and Normalization with Israel", publisher: "Arab Center Washington DC", date: 2023-03-07, tier: 2}
+  - to: org-gcc
+    layer: action
+    type: incident
+    summary: "Oman sent no official to the GCC leaders' meeting in Jeddah on 28 Apr 2026 convened to respond to Iranian missile and drone attacks on Gulf states (Gulf News: 'unclear who would represent Oman')."
+    since: 2026-04-28
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://arabcenterdc.org/resource/oman-and-the-iran-war-neutrality-under-strain/", title: "Oman and the Iran War: Neutrality Under Strain", publisher: "Arab Center Washington DC", date: 2026-05-28, tier: 2}
+      - {url: "https://gulfnews.com/amp/story/world%2Fgulf%2Fgcc-leaders-meet-in-jeddah-to-discuss-iran-war-and-regional-security-1.500522013", title: "GCC leaders meet in Jeddah to discuss Iran war and regional security", publisher: "Gulf News", date: 2026-04-28, tier: 3}
+  - to: ARE
+    layer: action
+    type: incident
+    summary: "In April 2019 an Omani court sentenced five Emiratis and one Omani to prison for espionage (a 2011 Emirati-linked spy network had already been uncovered; Kuwait mediated); Oman's foreign minister said such incidents 'happen between neighbours'."
+    since: 2019-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.ispionline.it/en/publication/strategic-borderlands-uae-oman-rivalry-benefits-tehran-23347", title: "Strategic Borderlands: The UAE-Oman Rivalry Benefits Tehran", publisher: "ISPI", date: 2019-06-21, tier: 2}
+      - {url: "https://www.middleeastmonitor.com/20190320-oman-fm-says-espionage-common-between-neighbours/", title: "Oman FM says espionage common between neighbours (read through Wikipedia's citation, not opened)", publisher: "Middle East Monitor", date: 2019-03-20, tier: 3}
+  - to: ARE
+    layer: action
+    type: visit
+    summary: "Sultan Haitham met President Mohamed bin Zayed in Abu Dhabi on 17 Aug 2026 (with Deputy PM Shihab bin Tariq) to discuss economic and development cooperation, after his first UAE visit as sultan on 22 Apr 2024."
+    since: 2026-08-17
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.al-monitor.com/originals/2026/08/sultan-oman-meets-uaes-mbz-iran-hormuz-talks-advance", title: "Sultan of Oman meets UAE's MBZ as Iran Hormuz talks advance", publisher: "Al-Monitor", date: 2026-08-17, tier: 3}
+      - {url: "https://www.ispionline.it/en/publication/omans-sultan-goes-to-the-uae-why-it-matters-also-to-the-us-and-china-171721", title: "Oman's Sultan Goes to the UAE: Why it Matters Also to the US and China", publisher: "ISPI", date: 2024-04-24, tier: 2}
+  - to: GBR
+    layer: action
+    type: visit
+    summary: "Prime Minister Starmer received Sultan Haitham at Downing Street on 2 Jul 2026, thanked him for the mediation behind the US-Iran deal and discussed restoring freedom of navigation in Hormuz."
+    since: 2026-07-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.gov.uk/government/news/pm-meeting-with-his-majesty-sultan-haitham-bin-tarik-al-said-of-oman-2-july-2026", title: "PM meeting with His Majesty Sultan Haitham bin Tarik Al Said of Oman", publisher: "UK Prime Minister's Office", date: 2026-07-02, tier: 1}
+  - to: GBR
+    layer: action
+    type: agreement
+    summary: "The UK-GCC free trade negotiations, including Oman, concluded on 20 May 2026 with a joint statement published by Oman's foreign ministry (mirrors the GCC row in the UK and EU files)."
+    since: 2026-05-20
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.fm.gov.om/en/46237/", title: "GCC and UK sign joint statement concluding free trade negotiations", publisher: "Ministry of Foreign Affairs of Oman", date: 2026-05-20, tier: 1}
+      - {url: "https://news.bloomberglaw.com/international-trade/uk-and-gulf-states-hail-trade-deal-after-four-years-of-talks", title: "UK and Gulf States Hail Trade Deal After Four Years of Talks", publisher: "Bloomberg Law", date: 2026-05, tier: 3}
+  - to: IND
+    layer: action
+    type: visit
+    summary: "Prime Minister Modi made an official visit to Oman in December 2025, marking 70 years of diplomatic relations, in which the CEPA was signed."
+    since: 2025-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.omanobserver.om/article/1182510/oman/oman-strengthens-role-as-regional-peace-broker", title: "Oman strengthens role as regional peace broker", publisher: "Oman Observer", date: 2026-01-10, tier: 3}
+  - to: TUR
+    layer: action
+    type: visit
+    summary: "Sultan Haitham visited Ankara on 28 Nov 2024; in January 2026 the two countries agreed on mutual visa exemptions."
+    since: 2024-11-28
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Oman%E2%80%93Turkey_relations", title: "Oman-Turkey relations (Ankara visit - index only)", publisher: "Wikipedia (index)", date: 2026-10-12, tier: 4}
+      - {url: "https://www.omanobserver.om/article/1182510/oman/oman-strengthens-role-as-regional-peace-broker", title: "Oman strengthens role as regional peace broker (visa exemption)", publisher: "Oman Observer", date: 2026-01-10, tier: 3}
+  - to: SYR
+    layer: action
+    type: visit
+    summary: "After Assad's fall, Oman's ambassador-at-large Abdulaziz Al Hinai met Ahmed al-Sharaa in Damascus in January 2025 and conveyed the sultan's greetings; Oman had returned its ambassador to Damascus in Oct 2020 and received Assad in 2023."
+    since: 2025-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.omanobserver.om/article/1164680/oman/hms-greetings-conveyed-to-syrian-leadership", title: "HM's greetings conveyed to Syrian leadership", publisher: "Oman Observer", date: 2025-01-11, tier: 3}
+  - to: RUS
+    layer: action
+    type: agreement
+    summary: "Oman joined Saudi Arabia, Russia, Iraq, Kuwait, Kazakhstan and Algeria in the 4 Oct 2026 OPEC+ statement reaffirming commitment to market stability - the only structured link with Moscow in this pass."
+    since: 2026-10-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://opec.org/pr-detail/1891616-4-october-2026.html", title: "Saudi Arabia, Russia, Iraq, Kuwait, Kazakhstan, Algeria, and Oman reaffirm commitment to market stability", publisher: "OPEC Secretariat", date: 2026-10-04, tier: 1}
