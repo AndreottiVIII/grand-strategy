@@ -396,16 +396,12 @@ def main():
     # --- seams (Luttwak: the seam between an adversary and its allies is where relational manoeuvre
     # aims): A hostile to X while A and X are both allies of Y, so Y is pulled two ways. Only from
     # hand-written stances of confidence A or B; provisional reciprocals and dataset stances never count.
-    # hostility must be hand-written (A or B); an alliance may also be the treaty floor from the
-    # membership dataset (NATO, EU, CSTO), which is a fact, not a reading
+    # every leg must be a written reading (A or B): the treaty floor alone never makes a seam, or
+    # every NATO member would be "pulled" between Cyprus and Turkey (Davide, 2026-10-13)
     hand = {}
     for a, v in stances.items():
         for st in v["stances"]:
-            if st.get("reciprocal_of") or st.get("confidence") not in ("A", "B"):
-                continue
-            if st.get("dataset") and st.get("dataset") != "wikidata-memberships":
-                continue
-            if st.get("dataset") and st["grade"] != "ally":
+            if st.get("dataset") or st.get("reciprocal_of") or st.get("confidence") not in ("A", "B"):
                 continue
             hand[(a, st["toward"])] = st["grade"]
     SEAM_HOSTILE, SEAM_ALLIED = {"rival", "adversary"}, {"ally", "reluctant_ally"}
