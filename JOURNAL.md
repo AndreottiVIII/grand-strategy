@@ -1,5 +1,21 @@
 # Journal
 
+## 2026-10-13 · Europe complete: 50 cards, 9.78M tokens, run paused
+
+Western and southern Europe closed overnight: ITA 292k, ESP 73k (resumed from disk), NLD
+165k (resumed), BEL 224k, GRC 267k, CYP 234k, PRT 247k, org-eu 335k, org-nato 300k with
+Sonnet; IRL 208k, LUX 175k, MLT 184k, AND 204k, MCO 164k, SMR 141k, VAT 191k with Haiku.
+Haiku cards cost 140-210k, not half a Sonnet card: the brief and the reading of the
+neighbours' cards cost the same whatever writes. Weekly usage at 63% after four regions;
+the run is paused at Davide's request (graphic trials first), with the Middle East next.
+Review regrades: LUX-USA partner -> reluctant_ally (NATO co-members), MCO-RUS partner ->
+neutral, PRT-UKR and NLD-UKR partner -> ally, ESP-ARG rival -> reluctant_partner,
+FRA-ISR rival -> reluctant_partner, ITA-UKR partner -> ally. San Marino's means and
+constraints came back as bare strings and were turned into sourced claims by hand.
+Site: the NORAD vector skin (WarGames) replaced the three-ink print, the home is the
+Boetti flag map, every screen has a URL, the relations are a ledger with click filters,
+Luttwak's page carries his portrait and a life-and-work section.
+
 ## 2026-10-12 · The P5 go to Fable; the run stops after Europe
 
 Davide read the Sonnet card of the United Kingdom and rejected it ("sbagliatissima": the
