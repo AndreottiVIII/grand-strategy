@@ -579,26 +579,29 @@ def main():
             pairs = [(p, q) for i, p in enumerate(members) for q in members[i + 1:]]
             if not pairs:
                 continue
-            heat = {"hostility": 0, "seams": 0, "faults": 0, "claims": 0, "movement": 0}
+            heat = {"hostility": 0, "seams": 0, "faults": 0, "claims": 0, "movement": 0, "friction": 0}
             top = []
             for (a, x), st in handst.items():
                 if a not in mset or x not in mset:
                     continue
                 g, tr = st["grade"], st.get("trend")
                 w = 0
+                # Davide, 2026-10-13: adversaries very high, rivals high, reluctant postures low
                 if g == "adversary":
-                    heat["hostility"] += 8; w += 8
+                    heat["hostility"] += 16; w += 16
                 elif g == "rival":
-                    heat["hostility"] += 4; w += 4
+                    heat["hostility"] += 6; w += 6
                 elif g == "claimed_territory":
-                    heat["claims"] += 4; w += 4
+                    heat["claims"] += 6; w += 6
+                elif g in ("reluctant_ally", "reluctant_partner"):
+                    heat["friction"] += 1; w += 1
                 if (g in FAULT_ALLIED and tr == "cooling") or (g in FAULT_HOSTILE and tr == "warming"):
-                    heat["movement"] += 4; w += 4
+                    heat["movement"] += 3; w += 3
                 if w:
                     top.append({"a": a, "x": x, "grade": g, "trend": tr, "weight": w})
             for fp in feud_pairs:
                 if fp <= mset:
-                    heat["faults"] += 4
+                    heat["faults"] += 6
             for (ax, y) in seam_keys:
                 if ax <= mset and y in mset:
                     heat["seams"] += 4

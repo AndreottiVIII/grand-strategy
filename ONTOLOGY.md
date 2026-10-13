@@ -308,8 +308,9 @@ On the map (posture lens) warming outlines breathe, cooling ones flicker. Comput
 
 Luttwak's theatre level: hand-kept spaces (`data/theatres.yaml`, seventeen of them, an actor may
 sit in several, organisations never) where several actors' forces add up. **Heat** per theatre,
-over the pairs of its members, on the doubling scale: adversary 8, rival 4, claimed territory 4,
-a movement with stakes (ally cooling, rival warming) 4, each feud inside 4, each seam whose three
-actors are inside 4; sum divided by the number of possible pairs, then scaled so the hottest
+over the pairs of its members: adversary 16, rival 6, claimed territory 6, reluctant ally or
+reluctant partner 1, a movement with stakes (ally cooling, rival warming) 3, each feud inside 6,
+each seam whose three actors are inside 4 (Davide: adversaries very high, rivals high, reluctant
+postures low); sum divided by the number of possible pairs, then scaled so the hottest
 theatre reads 100. Hand-written A/B stances only. Computed by `tools/build.py` (`theatres`); the
 Theatres page has its own map, never the flag map.

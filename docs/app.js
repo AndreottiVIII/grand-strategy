@@ -615,16 +615,16 @@
   const THEATRES = data.theatres || [];
   function renderTheatresPage() {
     const el = document.getElementById("page-theatres");
-    const PART = { hostility: "hostility", seams: "seams", faults: "feuds", claims: "claims", movement: "movement" };
+    const PART = { hostility: "hostility", seams: "seams", faults: "feuds", claims: "claims", movement: "movement", friction: "friction" };
     el.innerHTML = `<h2>Theatres</h2><p class="lede">The level below grand strategy in Luttwak's ladder: the theatre, where geography and several actors' forces add up, and where the readings on these pages become acute. Seventeen theatres, kept by hand; an actor may sit in more than one. The heat of a theatre is computed from what the atlas has read between its members: declared hostility, seams, feuds, claimed territory and movements with stakes.</p>
-      <div class="tmap-wrap"><svg id="tmap"></svg></div>
+      <div class="tmap-wrap"><svg id="tmap"></svg><div class="tmap-note">scroll to zoom · drag to pan · click a theatre below to light it alone</div></div>
       <p class="how">Heat is the sum of the weights between the members of a theatre, divided by the number of possible pairs, so a small dense theatre is not outweighed by a large one; 100 is the hottest theatre today, the others are scaled to it. Theatres whose members have few cards yet read cold for lack of data, not for peace: the card count says how far each one is written.</p>
       <div class="theatres">` + THEATRES.map(t => `<div class="theatre" data-id="${t.id}"><h3>${esc(t.name)} <span>${t.index}</span></h3>
         <div class="hbar"><span style="width:${t.index}%"></span></div>
         <div class="parts">${Object.entries(t.parts).filter(([, v]) => v).map(([k, v]) => `<i>${PART[k]} ${v}</i>`).join(" · ") || "<i>nothing read yet</i>"} <em>· ${t.cards} of ${t.members.length} members with a card</em></div>
-        <div class="top">${t.top.map(r => `<a href="#/view/${r.a}">${nameOf(r.a)}</a> <b style="color:${gradeBorder(r.grade)}">${r.grade.replace("_", " ")}</b> <a href="#/view/${r.x}">${nameOf(r.x)}</a>${r.trend && r.trend !== "stable" ? ` <u>${TREND_SIGN[r.trend]} ${r.trend}</u>` : ""}`).join("<br>")}</div>
+        <table class="top">${t.top.map(r => `<tr><td><a href="#/view/${r.a}">${nameOf(r.a)}</a></td><td><b style="color:${gradeBorder(r.grade)}">${r.grade.replace("_", " ")}</b></td><td><a href="#/view/${r.x}">${nameOf(r.x)}</a></td><td><u>${r.trend && r.trend !== "stable" ? TREND_SIGN[r.trend] + " " + r.trend : ""}</u></td><td class="w">${r.weight}</td></tr>`).join("")}</table>
       </div>`).join("") + `</div>
-      <details class="method"><summary>How heat is computed</summary><p>For every pair of members of a theatre the build adds: adversary 8, rival 4, claimed territory 4, an ally cooling or a rival warming 4; for every feud inside the theatre 4; for every seam whose three actors are inside it 4. Only hand-written stances of confidence A or B count. The sum is divided by the number of possible pairs among the members, and the result is scaled so that the hottest theatre reads 100. The list of theatres and their members is kept by hand in data/theatres.yaml; organisations are never members. On the map each theatre's members are lit with its heat; click a theatre below to light it alone.</p></details>`;
+      <details class="method"><summary>How heat is computed</summary><p>For every pair of members of a theatre the build adds: adversary 16, rival 6, claimed territory 6, a reluctant ally or reluctant partner 1, an ally cooling or a rival warming 3; for every feud inside the theatre 6; for every seam whose three actors are inside it 4. Adversaries weigh very high, rivals high, reluctant postures low. Only hand-written stances of confidence A or B count. The sum is divided by the number of possible pairs among the members, and the result is scaled so that the hottest theatre reads 100. The list of theatres and their members is kept by hand in data/theatres.yaml; organisations are never members. On the map each theatre's members are lit with its heat; click a theatre below to light it alone.</p></details>`;
     drawTheatreMap();
     el.querySelectorAll(".theatre").forEach(d => d.onclick = ev => { if (ev.target.closest("a")) return; const on = d.classList.toggle("is-on"); el.querySelectorAll(".theatre").forEach(o => { if (o !== d) o.classList.remove("is-on"); }); drawTheatreMap(on ? d.dataset.id : null); });
     el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
@@ -643,15 +643,16 @@
     const mg = glow.append("feMerge"); mg.append("feMergeNode").attr("in", "b"); mg.append("feMergeNode").attr("in", "SourceGraphic");
     svg.append("rect").attr("width", width).attr("height", height).attr("fill", css("--paper"));
     const g = svg.append("g");
-    g.append("path").attr("d", path(d3.geoGraticule10())).attr("fill", "none").attr("stroke", css("--grat")).attr("stroke-width", .5).attr("stroke-dasharray", "2 3");
-    g.selectAll("path.c").data(world.features).join("path").attr("d", path).attr("fill", css("--land")).attr("stroke", css("--coast")).attr("stroke-opacity", .6).attr("stroke-width", .5);
+    svg.call(d3.zoom().scaleExtent([1, 8]).on("zoom", ev => { g.attr("transform", ev.transform); g.selectAll("text").attr("font-size", 10 / ev.transform.k).attr("stroke-width", 3 / ev.transform.k); g.selectAll("path").attr("stroke-width", function () { return (+this.dataset.sw || .5) / ev.transform.k; }); }));
+    g.append("path").attr("d", path(d3.geoGraticule10())).attr("fill", "none").attr("stroke", css("--grat")).attr("stroke-width", .5).attr("stroke-dasharray", "2 3").attr("data-sw", .5);
+    g.selectAll("path.c").data(world.features).join("path").attr("d", path).attr("fill", css("--land")).attr("stroke", css("--coast")).attr("stroke-opacity", .6).attr("stroke-width", .5).attr("data-sw", .5);
     const heatColor = d3.scaleLinear().domain([0, 50, 100]).range([css("--c-seam"), css("--c-reluctant_ally"), css("--c-adversary")]);
     const list = only ? THEATRES.filter(t => t.id === only) : THEATRES;
     // the hottest theatre is drawn last so it sits on top where theatres overlap
     [...list].sort((p, q) => p.index - q.index).forEach(t => {
       const feats = world.features.filter(f => t.members.includes(f.id));
       const col = heatColor(t.index), op = .12 + .5 * t.index / 100;
-      g.selectAll(null).data(feats).join("path").attr("d", path).attr("fill", col).attr("fill-opacity", op).attr("stroke", col).attr("stroke-width", .9).attr("stroke-opacity", .5 + .5 * t.index / 100).attr("filter", "url(#tglow)")
+      g.selectAll(null).data(feats).join("path").attr("d", path).attr("fill", col).attr("fill-opacity", op).attr("stroke", col).attr("stroke-width", .9).attr("data-sw", .9).attr("stroke-opacity", .5 + .5 * t.index / 100).attr("filter", "url(#tglow)")
         .append("title").text(`${t.name} · ${t.index}`);
       // label at the centroid of the members
       const cs = feats.map(f => path.centroid(f)).filter(c => isFinite(c[0]));
