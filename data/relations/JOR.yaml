@@ -1,0 +1,490 @@
+from: JOR
+relations:
+  # ---------- objective ----------
+  - to: ISR
+    layer: objective
+    type: influence_goal
+    summary: "Amman wants to stop Israeli annexation of the West Bank (Abdullah's 'red line'; the Jordan Valley and Area C are the cases that matter), block any transfer of Palestinians to Jordan and keep the Hashemite custodianship of the holy sites in Jerusalem. Contingency planning reportedly includes nullifying the treaty, closing the King Hussein Bridge, deploying troops to the border and asking Washington to threaten basing rights."
+    since: 2025-02-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://foreignpolicy.com/2026/08/31/jordan-israel-iran-west-bank-annexation-refugees-gaza/", title: "Jordan Sees Bigger Threat From Israel Than Iran", publisher: "Foreign Policy (Sean Yom)", date: 2026-08-31, tier: 3}
+      - {url: "https://www.jordannews.jo/Section-109/News/King-Urges-Global-Action-to-Halt-Israel-s-Dangerous-Course-57318", title: "King Urges Global Action to Halt Israel's Dangerous Course", publisher: "Jordan News", date: 2026-10-12, tier: 3}
+      - {url: "https://live.libnanews.com/event/ev-1779725050183-ffc3", title: "US and Israel 'actively working' to strip Jordan of Al-Aqsa custodianship, sources say (Middle East Eye)", publisher: "Libnanews (relaying Middle East Eye)", date: 2026-05-25, tier: 4}
+  - to: PSE
+    layer: objective
+    type: influence_goal
+    summary: "Jordan wants a two-state outcome with East Jerusalem as the Palestinian capital and refuses the transfer of Gazans or West Bankers into Jordan; the King repeated that position at the White House on 11 Feb 2025 while offering to treat 2,000 sick Gaza children. Jordan also trains Palestinian police (JIPTC) and endorsed UNSC resolution 2803 of 17 Nov 2025 but ruled out joining the International Stabilization Force."
+    since: 2025-02-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.ksat.com/news/politics/2025/02/11/trump-will-host-jordans-king-abdullah-ii-as-he-escalates-pressure-on-his-gaza-resettlement-plan/", title: "Trump will host Jordan's King Abdullah II as he escalates pressure on his Gaza resettlement plan", publisher: "Associated Press (via KSAT)", date: 2025-02-11, tier: 3}
+      - {url: "https://www.everycrsreport.com/files/2026-01-08_RL33546_d8d7b4a88456a9ca97bf4953209beb6489482040.html", title: "Jordan: Background and U.S. Relations (CRS RL33546, 8 Jan 2026)", publisher: "Congressional Research Service", date: 2026-01-08, tier: 1}
+  - to: SYR
+    layer: objective
+    type: influence_goal
+    summary: "Jordan wants a stable Syria under Damascus's control - the northern border turned from a smuggling front into a trade corridor (the Jaber crossing, the Yarmouk water), the return of refugees (about 173,000 returned between Dec 2024 and Nov 2025; about 345,000 remain registered in Oct 2026) and no Iran-backed or Israeli-held buffer in the south."
+    since: 2024-12-23
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.jordannews.jo/Section-29/Analysis/From-Hormuz-to-the-Yarmouk-The-King-s-Hidden-Message-at-the-UN-56731", title: "From Hormuz to the Yarmouk: The King's Hidden Message at the UN", publisher: "Jordan News (Zaidoon Alhadid)", date: 2026-09-30, tier: 3}
+      - {url: "https://www.everycrsreport.com/files/2026-01-08_RL33546_d8d7b4a88456a9ca97bf4953209beb6489482040.html", title: "Jordan: Background and U.S. Relations (CRS RL33546, 8 Jan 2026) - Syria section", publisher: "Congressional Research Service", date: 2026-01-08, tier: 1}
+      - {url: "https://www.jordannews.jo/Section-109/News/Funding-gap-threatens-aid-to-345-000-refugees-in-Jordan-57071", title: "Funding gap threatens aid to 345,000 refugees in Jordan", publisher: "Jordan News", date: 2026-10-07, tier: 3}
+  # ---------- alignment ----------
+  - to: ISR
+    layer: alignment
+    type: treaty
+    summary: "The 1994 peace treaty with Israel remains in force; CRS describes Jordan as at peace with Israel since 1994. Ambassadors have been absent since November 2023, the King calls annexation a red line and Jordanian planners reportedly weigh nullifying the treaty if it happens."
+    since: 1994-10-26
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.everycrsreport.com/files/2026-01-08_RL33546_d8d7b4a88456a9ca97bf4953209beb6489482040.html", title: "Jordan: Background and U.S. Relations (CRS RL33546, 8 Jan 2026)", publisher: "Congressional Research Service", date: 2026-01-08, tier: 1}
+      - {url: "https://foreignpolicy.com/2026/08/31/jordan-israel-iran-west-bank-annexation-refugees-gaza/", title: "Jordan Sees Bigger Threat From Israel Than Iran", publisher: "Foreign Policy (Sean Yom)", date: 2026-08-31, tier: 3}
+  - to: USA
+    layer: alignment
+    type: treaty
+    summary: "Defense Cooperation Agreement in force since 17 Mar 2021, formalising US access to Jordanian bases (Muwaffaq Salti at Azraq, where US aircraft have operated since at least 2016) and military cooperation. Not a mutual-defence treaty."
+    since: 2021-03-17
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.everycrsreport.com/files/2026-01-08_RL33546_d8d7b4a88456a9ca97bf4953209beb6489482040.html", title: "Jordan: Background and U.S. Relations (CRS RL33546, 8 Jan 2026)", publisher: "Congressional Research Service", date: 2026-01-08, tier: 1}
+  - to: USA
+    layer: alignment
+    type: treaty
+    summary: "Fourth memorandum of understanding on strategic partnership, signed 16 Sep 2022: the US administration undertakes to seek USD 1.45bn a year for FY2023-FY2029 (USD 10.15bn), subject to appropriations; about USD 610m a year is direct Treasury support and about USD 400m military aid. Congress has appropriated USD 1.5-1.65bn a year since FY2018 (USD 1.65bn for FY2025)."
+    since: 2022-09-16
+    until: 2029-09-30
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://jordantimes.com/news/local/jordan-us-sign-mou-strategic-partnership", title: "Jordan, US sign MoU on strategic partnership", publisher: "Jordan Times", date: 2022-09-16, tier: 3}
+      - {url: "https://www.everycrsreport.com/files/2026-01-08_RL33546_d8d7b4a88456a9ca97bf4953209beb6489482040.html", title: "Jordan: Background and U.S. Relations (CRS RL33546, 8 Jan 2026)", publisher: "Congressional Research Service", date: 2026-01-08, tier: 1}
+  - to: org-eu
+    layer: alignment
+    type: treaty
+    summary: "EU-Jordan Strategic and Comprehensive Partnership, joint declaration signed in Brussels on 29 Jan 2025 on the base of the 2002 association agreement, with a EUR 3bn package for 2025-27 (EUR 640m grants, EUR 1.4bn investments, EUR 1bn macro-financial assistance, per the Council) and five priority areas including security and defence and migration."
+    since: 2025-01-29
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://enlargement.ec.europa.eu/news/eu-and-jordan-launch-multi-billion-euro-partnership-tackle-shared-challenges-and-opportunities-2025-01-29_en", title: "EU and Jordan launch multi-billion euro partnership", publisher: "European Commission", date: 2025-01-29, tier: 1}
+      - {url: "https://www.consilium.europa.eu/en/policies/eu-jordan-relations", title: "EU-Jordan relations", publisher: "Council of the European Union", date: 2026-01-20, tier: 1}
+  - to: GBR
+    layer: alignment
+    type: treaty
+    summary: "UK-Jordan Association Agreement (signed 5 Nov 2019) in force since 1 May 2021, replacing the EU association terms after Brexit; two-way trade GBP 561m in 2020."
+    since: 2021-05-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.gov.uk/government/news/uk-and-jordan-trade-agreement-comes-into-effect", title: "UK and Jordan trade agreement comes into effect", publisher: "UK Government", date: 2021-05-01, tier: 1}
+  - to: CHN
+    layer: alignment
+    type: treaty
+    summary: "China-Jordan strategic partnership established in September 2015; diplomatic relations since 7 Apr 1977."
+    since: 2015-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.mfa.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/1206_677268/sbgx_677272/", title: "Bilateral relations: China-Jordan", title_original: "中约关系", lang: zh, publisher: "Ministry of Foreign Affairs of the PRC", date: 2026-07, tier: 1}
+  # ---------- dependency ----------
+  - to: ISR
+    layer: dependency
+    type: energy_import
+    summary: "Jordan's state utility NEPCO buys Israeli Leviathan gas under a 2016 contract worth about USD 10bn for 45 bcm over 15 years (flows since 1 Jan 2020); Amman says it saves about JD700m a year. Figures conflict on the state of the energy ties - Foreign Policy says energy and water deals were cancelled (the 2021 water-for-energy swap was), while Jordan News (Oct 2026) still describes coordination on gas; the commercial contract is taken as in force."
+    value: 45
+    unit: bcm_contracted_israeli_gas_over_15_years
+    since: 2020-01-01
+    until: 2035
+    last_verified: 2026-10-12
+    confidence: C
+    note: "Contract volume from the Wikipedia index citing Jordan Times and Bloomberg (2018); not re-verified against a 2026 supply figure. Israel is described in Jordan News as ready to cut gas, electricity and water."
+    sources:
+      - {url: "https://jordantimes.com/news/local/israeli-gas-jordan-expected-2020-%E2%80%93-official", title: "Israeli gas to Jordan expected in 2020 - official", publisher: "Jordan Times", date: 2018-07-05, tier: 3}
+      - {url: "https://www.jordannews.jo/Section-29/Analysis/Does-Jordan-really-oppose-Israel-56950", title: "Does Jordan really oppose Israel?", publisher: "Jordan News (Maher Abu Tair, Alghad)", date: 2026-10-05, tier: 3}
+      - {url: "https://foreignpolicy.com/2026/08/31/jordan-israel-iran-west-bank-annexation-refugees-gaza/", title: "Jordan Sees Bigger Threat From Israel Than Iran", publisher: "Foreign Policy (Sean Yom)", date: 2026-08-31, tier: 3}
+  - to: USA
+    layer: dependency
+    type: military_presence
+    summary: "Nearly 4,000 US troops were in Jordan in December 2024 (CRS), at about a dozen bases including Muwaffaq Salti and Prince Hassan; the 332nd Air Expeditionary Wing reportedly flies F-15E, F-16C and MQ-9 from Jordan. A 17 Jul 2026 Iranian strike on Muwaffaq Salti killed US service members."
+    value: 4000
+    unit: us_troops_dec_2024
+    since: 2016
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "CRS says 'nearly 4,000'; Foreign Policy says a dozen bases without a troop figure."
+    sources:
+      - {url: "https://www.everycrsreport.com/files/2026-01-08_RL33546_d8d7b4a88456a9ca97bf4953209beb6489482040.html", title: "Jordan: Background and U.S. Relations (CRS RL33546, 8 Jan 2026)", publisher: "Congressional Research Service", date: 2026-01-08, tier: 1}
+      - {url: "https://www.rferl.org/a/centcom-soldiers-killed-jordan-iran-missile-attack/33806519.html", title: "CENTCOM: two US soldiers killed, one missing after Iranian missile attack in Jordan", publisher: "RFE/RL", date: 2026-07-19, tier: 3}
+  - to: USA
+    layer: dependency
+    type: arms_supply
+    summary: "DSCA notified on 3 Feb 2022 a possible sale of F-16 Block 70 aircraft (12 F-16C and 4 F-16D), engines, radars and munitions valued at USD 4.21bn; Jordan announced in January 2023 that it would buy 12 Block 70 F-16s from Lockheed Martin. The counts differ (16 approved, 12 purchased) and the delivery status was not found."
+    value: 4.21
+    unit: usd_bn_dsca_notified_f16_block70_2022
+    since: 2022-02-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.janes.com/defence-news/news-detail/jordan-approved-for-further-f-16-purchase", title: "Jordan approved for further F-16 purchase", publisher: "Janes", date: 2022-02-07, tier: 3}
+      - {url: "https://www.thedefensepost.com/2023/01/23/jordan-purchase-fighter-lockheed", title: "Jordan OKs Purchase of 12 Block 70 F-16s From Lockheed Martin", publisher: "The Defense Post", date: 2023-01-23, tier: 3}
+  - to: org-imf
+    layer: dependency
+    type: debt
+    summary: "Extended Fund Facility (SDR 926.4m, about USD 1.2bn, approved 10 Jan 2024) and Resilience and Sustainability Facility (SDR 514.65m, about USD 744m, approved 25 Jun 2025); the fifth EFF and second RSF reviews were completed on 17 Jun 2026, releasing about USD 188m. The IMF said Jordan met all quantitative targets and kept macro stability despite regional war. Debt: about 83% of GDP (Foreign Policy) versus 'well over 100%' (CRS)."
+    value: 1.94
+    unit: usd_bn_imf_eff_plus_rsf_total_commitment
+    since: 2024-01-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "CRS reports 'USD 1.2bn (2024-2028)' and a new 'USD 700m' arrangement; the total of the two programmes (about USD 1.94bn) is our sum of the stated SDR amounts."
+    sources:
+      - {url: "https://www.jordannews.jo/Section-112/Economy/IMF-Transfers-188-Million-to-Jordan-Following-Completion-of-Two-Reviews-53742", title: "IMF Transfers $188 Million to Jordan Following Completion of Two Reviews", publisher: "Jordan News", date: 2026-06-17, tier: 3}
+      - {url: "https://www.arabnews.com/node/2647665/business-economy", title: "Jordan set to receive $188m IMF financing amid regional turmoil", publisher: "Arab News", date: 2026-06, tier: 3}
+      - {url: "https://www.everycrsreport.com/files/2026-01-08_RL33546_d8d7b4a88456a9ca97bf4953209beb6489482040.html", title: "Jordan: Background and U.S. Relations (CRS RL33546, 8 Jan 2026)", publisher: "Congressional Research Service", date: 2026-01-08, tier: 1}
+  - to: org-eu
+    layer: dependency
+    type: debt
+    summary: "EUR 1bn of macro-financial assistance within the EUR 3bn 2025-27 package; the Council adopted on 20 Jan 2026 a further EUR 500m of MFA as part of it. The EU is the main non-US source of budget support."
+    value: 1.0
+    unit: eur_bn_macro_financial_assistance_2025_2027
+    since: 2025-01-29
+    until: 2027-12-31
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Search summary of the Council page; whether the EUR 500m is within the EUR 1bn or additional was not settled."
+    sources:
+      - {url: "https://www.consilium.europa.eu/en/policies/eu-jordan-relations", title: "EU-Jordan relations", publisher: "Council of the European Union", date: 2026-01-20, tier: 1}
+      - {url: "https://enlargement.ec.europa.eu/news/eu-and-jordan-launch-multi-billion-euro-partnership-tackle-shared-challenges-and-opportunities-2025-01-29_en", title: "EU and Jordan launch multi-billion euro partnership", publisher: "European Commission", date: 2025-01-29, tier: 1}
+  - to: EGY
+    layer: dependency
+    type: energy_import
+    summary: "Electricity interconnection with Egypt in operation since 1999, capacity about 550 MW (Saudi 500 MW first phase, Iraq 150-200 MW and Syria links are planned or being rebuilt)."
+    value: 550
+    unit: mw_egypt_jordan_interconnection_capacity
+    since: 1999
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.jordannews.jo/Section-112/Economy/Regional-Power-Links-A-Strategic-Energy-Security-Option-57342", title: "Regional Power Links: A Strategic Energy Security Option", publisher: "Jordan News", date: 2026-10-13, tier: 3}
+  - to: QAT
+    layer: dependency
+    type: investment
+    summary: "Qatari investments in Jordan total about USD 4.5bn across banking, real estate, tourism, energy and industry, according to Jordan's investment minister, with a further USD 1.4bn of opportunities offered."
+    value: 4.5
+    unit: usd_bn_qatari_investment_stock_2024
+    since: 2024-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.qna.org.qa/en/News-Area/News/2024-01/31/0023-jordanian-minister-of-investment-qatari-investments-in-jordan-reach-$45-billion", title: "Jordanian Minister of Investment: Qatari investments in Jordan reach USD 4.5 billion", publisher: "Qatar News Agency", date: 2024-01-31, tier: 1}
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    summary: "Bilateral trade reached USD 6.72bn in 2025, Jordan mainly importing cars, textiles and electromechanical products and exporting potassium chloride, phosphate rock and chemicals."
+    value: 6.72
+    unit: usd_bn_bilateral_trade_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.mfa.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/1206_677268/sbgx_677272/", title: "Bilateral relations: China-Jordan", title_original: "中约关系", lang: zh, publisher: "Ministry of Foreign Affairs of the PRC", date: 2026-07, tier: 1}
+  - to: IRQ
+    layer: dependency
+    type: trade_share
+    summary: "Aqaba is the transit port for Iraq-bound cargo - about 37,000 TEU of Iraq-bound transit containers in January-July 2026, up about 930% on the same period of 2025 - but a truck round trip to Iraq takes ten days or more. Aqaba cargo throughput was up about 63% year on year to end-September 2026."
+    value: 37000
+    unit: teu_iraq_transit_containers_jan_jul_2026
+    since: 2026-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.jordannews.jo/Section-29/Analysis/Aqaba-Efficiency-That-Defies-Port-Pressure-57074", title: "Aqaba: Efficiency That Defies Port Pressure", publisher: "Jordan News (Salameh Al-Draawi)", date: 2026-10-07, tier: 3}
+  - to: DEU
+    layer: dependency
+    type: investment
+    summary: "Germany announced a EUR 35m grant for entrepreneurship and job creation in June 2025."
+    value: 35
+    unit: eur_m_german_grant_2025
+    since: 2025-06-19
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "http://jordantimes.com/news/local/germany-provides-35m-grant-to-boost-entrepreneurship-job-creation", title: "Germany provides EUR 35m grant to boost entrepreneurship, job creation", publisher: "Jordan Times", date: 2025-06-19, tier: 3}
+  # ---------- action ----------
+  - to: ISR
+    layer: action
+    type: expulsion
+    summary: "Jordan recalled its ambassador from Israel on 1 Nov 2023 over the Gaza war and later told Israel not to send its ambassador back; as of October 2026 Amman still refuses the Israeli ambassador's return (Israel reportedly offered water solutions in exchange) and will not send its own."
+    since: 2023-11-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2023/11/1/jordan-recalls-ambassador-to-israel-to-protest-gaza-catastrophe", title: "Jordan recalls ambassador to Israel to protest Gaza 'catastrophe'", publisher: "Al Jazeera", date: 2023-11-01, tier: 3}
+      - {url: "https://www.jordannews.jo/Section-29/Analysis/Does-Jordan-really-oppose-Israel-56950", title: "Does Jordan really oppose Israel?", publisher: "Jordan News (Maher Abu Tair, Alghad)", date: 2026-10-05, tier: 3}
+      - {url: "https://foreignpolicy.com/2026/08/31/jordan-israel-iran-west-bank-annexation-refugees-gaza/", title: "Jordan Sees Bigger Threat From Israel Than Iran", publisher: "Foreign Policy (Sean Yom)", date: 2026-08-31, tier: 3}
+  - to: ISR
+    layer: action
+    type: agreement
+    summary: "The UAE-brokered Israel-Jordan declaration of intent of 22 Nov 2021 (a UAE-built solar plant in Jordan selling power to Israel in exchange for Israeli desalinated water) was refused by Jordan on 16 Nov 2023 - Safadi said no Jordanian minister could sit beside an Israeli minister to sign it while Gaza was being bombed."
+    since: 2021-11-22
+    until: 2023-11-16
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2023/11/16/jordan-says-it-will-not-sign-energy-and-water-exchange-deal-with-israel", title: "Jordan says it won't sign energy and water exchange deal with Israel", publisher: "Al Jazeera", date: 2023-11-16, tier: 3}
+      - {url: "https://www.jpost.com/environment-and-climate-change/israel-jordan-sign-climate-cooperation-agreement-in-dubai-685680", title: "Israel, Jordan sign climate cooperation agreement in Dubai", publisher: "The Jerusalem Post", date: 2021-11-22, tier: 3}
+  - to: ISR
+    layer: action
+    type: incident
+    summary: "On 18 Sep 2025 a Jordanian driver delivering aid to Gaza shot and killed two Israeli military personnel at the Allenby (King Hussein) crossing before being killed (a similar attack killed three Israeli workers there in 2024); Israel closed the crossing, its chief of staff advised halting aid from Jordan until screening was revised, and Jordan opened an investigation. The crossing was reopened by December 2025."
+    since: 2025-09-18
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.newarab.com/news/two-israelis-killed-attack-jordan-border", title: "Two Israelis killed in attack at Jordan border", publisher: "The New Arab", date: 2025-09-18, tier: 3}
+      - {url: "https://www.timesofisrael.com/israel-said-to-quietly-return-body-of-jordanian-truck-driver-who-killed-2-idf-soldiers/", title: "Israel said to quietly return body of Jordanian truck driver who killed 2 IDF soldiers", publisher: "Times of Israel", date: 2025-09, tier: 3}
+      - {url: "https://www.everycrsreport.com/files/2026-01-08_RL33546_d8d7b4a88456a9ca97bf4953209beb6489482040.html", title: "Jordan: Background and U.S. Relations (CRS RL33546, 8 Jan 2026)", publisher: "Congressional Research Service", date: 2026-01-08, tier: 1}
+  - to: ISR
+    layer: action
+    type: agreement
+    summary: "Despite the political freeze, Jordan and Israel keep a working arrangement on the Gaza aid corridor and the bridges; humanitarian cargo continues to enter Gaza via Jordan and volumes were expected to rise after Israel reopened the Allenby crossing (December 2025), though Jordan reports more Israeli harassment at crossings. Security channels still function."
+    since: 2024-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.everycrsreport.com/files/2026-01-08_RL33546_d8d7b4a88456a9ca97bf4953209beb6489482040.html", title: "Jordan: Background and U.S. Relations (CRS RL33546, 8 Jan 2026)", publisher: "Congressional Research Service", date: 2026-01-08, tier: 1}
+      - {url: "https://www.jordannews.jo/Section-29/Analysis/Does-Jordan-really-oppose-Israel-56950", title: "Does Jordan really oppose Israel?", publisher: "Jordan News (Maher Abu Tair, Alghad)", date: 2026-10-05, tier: 3}
+  - to: USA
+    layer: action
+    type: visit
+    summary: "King Abdullah II met Trump at the White House on 11 Feb 2025; Trump pressed Jordan (and Egypt) to take in Palestinians from Gaza and had floated withholding aid; the King publicly reaffirmed Jordan's firm opposition to displacement and offered to take 2,000 sick Gaza children."
+    since: 2025-02-11
+    until: 2025-02-11
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.ksat.com/news/politics/2025/02/11/trump-will-host-jordans-king-abdullah-ii-as-he-escalates-pressure-on-his-gaza-resettlement-plan/", title: "Trump will host Jordan's King Abdullah II as he escalates pressure on his Gaza resettlement plan", publisher: "Associated Press (via KSAT)", date: 2025-02-11, tier: 3}
+      - {url: "https://www.newarab.com/news/trump-meets-jordans-king-abdullah-repeats-gaza-takeover-plan", title: "Trump meets Jordan's King Abdullah, repeats Gaza takeover plan", publisher: "The New Arab", date: 2025-02-11, tier: 3}
+  - to: SYR
+    layer: action
+    type: agreement
+    summary: "Jordan hosted the Jordan-Syria-US meeting on the Suwayda crisis (19 Jul 2025 and 12 Aug 2025, Safadi, al-Shaibani and envoy Barrack): a trilateral working group to support the ceasefire, a statement that Suwayda is an integral part of Syria, and a roadmap of 16 Sep 2025 (13 steps in one summary, six in Syria's account)."
+    since: 2025-07-19
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://aa.com.tr/en/middle-east/syria-jordan-us-agree-to-form-joint-working-group-to-support-ceasefire-in-suwayda/3657346", title: "Syria, Jordan, US agree to form joint working group to support ceasefire in Suwayda", publisher: "Anadolu Agency", date: 2025-08-12, tier: 3}
+      - {url: "https://www.peaceagreements.org/view/2871/", title: "Road map to end the crisis in Suwayda and stabilize southern Syria", publisher: "PA-X Peace Agreements Database (University of Edinburgh)", date: 2025-09-16, tier: 2}
+  - to: SYR
+    layer: action
+    type: incident
+    summary: "On 24 Dec 2025 Jordan's military struck weapons and drug smugglers in the northern border region (reports place the strikes in Suwayda governorate), saying it acted on precise intelligence and 'in coordination with regional partners'; Damascus did not comment."
+    since: 2025-12-24
+    until: 2025-12-24
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/12/25/jordan-strikes-drug-arms-smugglers-in-syria-border-region-reports", title: "Jordan strikes drug, arms smugglers in Syria border region: Reports", publisher: "Al Jazeera", date: 2025-12-25, tier: 3}
+  - to: IRN
+    layer: action
+    type: incident
+    summary: "Jordan's air defences and air force intercepted and shot down 7 missiles and 6 drones launched from Iran toward its territory, announced on 24 Jul 2026 (no casualties or damage); Saudi Arabia counted 204 Iranian missiles and drones on Jordan by March 2026 and on another count nearly 300 had struck Jordan by August 2026, mostly aimed at US bases, and Jordan also intercepted Iranian projectiles bound for Israel in April 2024, October 2024 and June 2025."
+    since: 2024-04-14
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.jordannews.jo/Section-109/News/Jordanian-Army-Downs-7-Missiles-6-Iranian-Drones-53452", title: "Jordanian Army Downs 7 Missiles, 6 Iranian Drones", publisher: "Jordan News", date: 2026-07-24, tier: 3}
+      - {url: "https://foreignpolicy.com/2026/08/31/jordan-israel-iran-west-bank-annexation-refugees-gaza/", title: "Jordan Sees Bigger Threat From Israel Than Iran", publisher: "Foreign Policy (Sean Yom)", date: 2026-08-31, tier: 3}
+      - {url: "https://www.everycrsreport.com/files/2026-01-08_RL33546_d8d7b4a88456a9ca97bf4953209beb6489482040.html", title: "Jordan: Background and U.S. Relations (CRS RL33546, 8 Jan 2026)", publisher: "Congressional Research Service", date: 2026-01-08, tier: 1}
+  - to: FRA
+    layer: action
+    type: visit
+    summary: "Macron hosted King Abdullah II and Lebanon's President Aoun in Paris in September 2026 on support for the Lebanese army and the post-UNIFIL period (mirrored from the FRA card's row toward Lebanon, same sources)."
+    since: 2026-09
+    until: 2026-09
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.euronews.com/2026/09/17/macron-to-host-king-abdullah-ii-and-lebanons-aoun-to-discuss-support-for-lebanese-armed-fo", title: "Macron to host King Abdullah II and Lebanon's Aoun to discuss support for Lebanese armed forces", publisher: "Euronews", date: 2026-09-17, tier: 3}
+      - {url: "https://www.al-monitor.com/originals/2026/09/why-france-pushing-keep-unifil-lebanon-beyond-2026", title: "Why France is pushing to keep UNIFIL in Lebanon beyond 2026", publisher: "Al-Monitor", date: 2026-09, tier: 3}
+  - to: RUS
+    layer: action
+    type: agreement
+    summary: "Jordan and Russia signed a visa-free travel agreement (30 days per visit, up to 90 days a year), signed by the two prime ministers, to boost tourism. Jordan has no larger Russia file in the sources read (gap)."
+    since: 2025-06-19
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.jordannews.jo/Section-114/All/To-boost-tourism-growth-Jordan-and-Russia-sign-visa-free-travel-agreement-42611", title: "To boost tourism growth, Jordan and Russia sign visa-free travel agreement", publisher: "Jordan News", date: 2025-06-19, tier: 3}
+  - to: IRQ
+    layer: action
+    type: agreement
+    summary: "Memorandum of understanding of 4 May 2023 for Iraqi crude supplies to Jordan, extended in July 2024 to June 2025, with renewal under discussion in June 2025."
+    since: 2023-05-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "http://jordantimes.com/news/local/jordan-iraq-extend-oil-supply-mou-until-june-2025", title: "Jordan, Iraq extend oil supply MoU until June 2025", publisher: "Jordan Times", date: 2024-07-21, tier: 3}
+      - {url: "http://jordantimes.com/news/local/jordan-iraq-in-positive-talks-to-extend-oil-import-agreement-ministry", title: "Jordan, Iraq in positive talks to extend oil import agreement - ministry", publisher: "Jordan Times", date: 2025-06-19, tier: 3}
+  - to: LBN
+    layer: action
+    type: agreement
+    summary: "Lebanon was due to sign 20 economic agreements and protocols with Jordan in January 2026."
+    since: 2026-01-13
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://today.lorientlejour.com/article/1491369/lebanon-to-sign-20-economic-agreements-and-protocols-with-jordan.html", title: "Lebanon to sign 20 economic agreements and protocols with Jordan", publisher: "L'Orient-Le Jour", date: 2026-01-13, tier: 3}
+  - to: TUR
+    layer: action
+    type: agreement
+    summary: "Amman hosted a four-way security cooperation meeting with Turkey, Syria and Iraq in March 2025."
+    since: 2025-03-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.reuters.com/world/middle-east/turkey-jordan-syria-iraq-discuss-security-cooperation-amman-turkish-source-says-2025-03-08/", title: "Turkey, Jordan, Syria, Iraq to discuss security cooperation in Amman, Turkish source says", publisher: "Reuters", date: 2025-03-08, tier: 3}
+  - to: SAU
+    layer: action
+    type: visit
+    summary: "On 12 Oct 2026 King Abdullah phoned Crown Prince Mohammed bin Salman to condemn the Houthi attacks on the Riyadh and Dammam airports (in which a Jordanian died) and back Saudi security measures; the foreign ministry reaffirmed 'full solidarity'."
+    since: 2026-10-12
+    until: 2026-10-12
+    last_verified: 2026-10-12
+    confidence: B
+    note: "A telephone call, filed under visit as the closest action type."
+    sources:
+      - {url: "https://www.jordannews.jo/Section-109/News/King-Offers-Condolences-to-Saudi-Crown-Prince-57325", title: "King Offers Condolences to Saudi Crown Prince", publisher: "Jordan News", date: 2026-10-12, tier: 3}
+      - {url: "https://www.jordannews.jo/Section-109/News/Jordan-Condemns-Houthi-Terrorist-Attacks-on-Saudi-Arabia-57315", title: "Jordan Condemns Houthi Terrorist Attacks on Saudi Arabia", publisher: "Jordan News (reporting a foreign ministry statement)", date: 2026-10-12, tier: 3}
+  - to: nsa-houthis
+    layer: action
+    type: incident
+    summary: "Houthi missile and drone attacks on Saudi airports (Riyadh and Dammam, 11-12 Oct 2026) killed a Jordanian resident and injured Jordanians; Jordan's foreign ministry condemned them as terrorist attacks and a blatant violation of international law."
+    since: 2026-10-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.jordannews.jo/Section-109/News/Jordan-Condemns-Houthi-Terrorist-Attacks-on-Saudi-Arabia-57315", title: "Jordan Condemns Houthi Terrorist Attacks on Saudi Arabia", publisher: "Jordan News (reporting a foreign ministry statement)", date: 2026-10-12, tier: 3}
+      - {url: "https://www.jordannews.jo/Section-109/News/King-Offers-Condolences-to-Saudi-Crown-Prince-57325", title: "King Offers Condolences to Saudi Crown Prince", publisher: "Jordan News", date: 2026-10-12, tier: 3}
+  - to: EGY
+    layer: action
+    type: visit
+    summary: "King Abdullah and Sisi met in Cairo on 1 Feb 2026: full implementation of the Gaza ceasefire plan, rejection of any displacement of Palestinians (Egypt from Sinai, Jordan from the West Bank) and condemnation of Israeli violations in the West Bank (mirrored from the EGY card, same sources)."
+    since: 2026-02-01
+    until: 2026-02-01
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://kingabdullah.jo/en/node/59033", title: "King, Egypt president reaffirm shared position in rejecting displacement of Palestinians", publisher: "Royal Hashemite Court", date: 2026-02-01, tier: 1}
+      - {url: "https://www.africanews.com/amp/2026/02/02/leaders-of-egypt-and-jordan-reiterate-opposition-to-gaza-displacement-as-rafah-crossing-re/", title: "Sisi, King Abdullah reject Gaza displacement plans", publisher: "Africanews", date: 2026-02-02, tier: 3}
+  - to: IRQ
+    layer: action
+    type: agreement
+    summary: "In March 2026 Jordan joined the Gulf states in calling on Baghdad to stop militia attacks launched from Iraqi territory (six-state statement of 26 Mar 2026); the Basra-Haditha pipeline is planned to reach Aqaba and Iraq gave the go-ahead in April 2026 for a Basra oil pipeline under a deal with China (mirrored from the IRQ card, same sources)."
+    since: 2026-03-26
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.theguardian.com/world/2026/mar/28/gulf-countries-threat-iran-backed-militias-proxies-war-us-israel-middle-east", title: "Gulf countries warn of rising threat from Iran-backed militias and proxies", publisher: "The Guardian", date: 2026-03-28, tier: 3}
+      - {url: "https://english.aawsat.com/node/5255360", title: "Six Arab Nations Issue Statement Condemning Attacks by Iran-aligned Iraqi Factions", publisher: "Asharq Al-Awsat", date: 2026-03-26, tier: 3}
+      - {url: "https://www.agbi.com/oil-and-gas/2026/04/iraq-gives-go-ahead-for-basra-oil-pipeline-under-deal-with-china/", title: "Iraq gives go-ahead for Basra oil pipeline under deal with China", publisher: "AGBI", date: 2026-04, tier: 3}
+  - to: SAU
+    layer: action
+    type: visit
+    summary: "Trilateral meeting in Jeddah on 20 Mar 2026 of Mohammed bin Salman, King Abdullah II and Emir Tamim to deepen security ties during the Iran war; Saudi Arabia condemned the Iranian attacks on Jordan (204 missiles and drones) and reaffirmed solidarity. No joint air-defence arrangement was confirmed (mirrored from the SAU card, same sources)."
+    since: 2026-03-20
+    until: 2026-03-20
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.al-monitor.com/originals/2026/03/saudi-arabia-jordan-qatar-deepen-security-ties-amid-iran-war-what-know", title: "Saudi Arabia, Jordan, Qatar deepen security ties amid Iran war: what to know", publisher: "Al-Monitor", date: 2026-03, tier: 3}
+      - {url: "https://english.aawsat.com/node/5316371", title: "Saudi Arabia Condemns Continued Iranian Attacks on Jordan", publisher: "Asharq Al-Awsat", date: 2026-03, tier: 3}
+  - to: SYR
+    layer: action
+    type: agreement
+    summary: "Second session of the Jordan-Syria Higher Coordination Council in Amman on 12 Apr 2026 signed 10 MoUs and a cooperation agreement and agreed a joint roadmap on Suwayda and the south; border-security, anti-smuggling and counter-drug committees date from 2025; a third session is set for Damascus in October 2026 (mirrored from the SYR card, same sources)."
+    since: 2025-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.petra.gov.jo/en/news/fm%C2%A0syrian-counterpart%C2%A0chair-jordan-syria-higher-coordination-councils-2nd-session", title: "FM, Syrian counterpart chair Jordan-Syria Higher Coordination Council's second session", publisher: "Petra (Jordan News Agency, official)", date: 2026-04-12, tier: 1}
+      - {url: "https://english.enabbaladi.net/archives/2026/04/syria-and-jordan-sign-deals-under-security-pressure/", title: "Syria and Jordan sign deals under security pressure", publisher: "Enab Baladi", date: 2026-04, tier: 3}
+  - to: KWT
+    layer: dependency
+    type: investment
+    summary: "The Kuwait Fund for Arab Economic Development signed two loan and grant agreements worth USD 89m with Jordan in September 2020 for education, infrastructure and economic reforms (mirrored from the KWT card, same source)."
+    value: 89
+    unit: usd_million_kuwait_fund_agreements_2020
+    since: 2020-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "http://www.jordantimes.com/news/local/jordan-kuwait-fund-sign-loan-grant-agreements", title: "Jordan, Kuwait fund sign loan, grant agreements", publisher: "Jordan Times", date: 2020-09-23, tier: 3}
+  - to: KWT
+    layer: action
+    type: agreement
+    summary: "Jordan's foreign minister and Kuwait's held a call on 16 Mar 2026 in which both condemned Iranian attacks on Arab states; Jordan backed Kuwait's maritime sovereignty in February 2026 (mirrored from the KWT card, same sources)."
+    since: 2026-03-16
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.jordannews.jo/Section-109/News/Safadi-and-Kuwaiti-Counterpart-Renew-Condemnation-of-Iranian-Attacks-on-Arab-States-49779", title: "Safadi and Kuwaiti Counterpart Renew Condemnation of Iranian Attacks on Arab States", publisher: "Jordan News", date: 2026-03-16, tier: 3}
+      - {url: "https://www.arabnews.pk/node/2634099/middle-east", title: "Riyadh leads Arab support for Kuwait amid Iraq maritime dispute", publisher: "Arab News", date: 2026-02-23, tier: 3}
+  - to: org-imf
+    layer: action
+    type: agreement
+    summary: "The IMF Executive Board completed the fifth review of the EFF and the second review of the RSF on 17 Jun 2026, releasing about USD 188m (USD 134m EFF, USD 54m RSF) after Jordan met all quantitative targets; Jordan took part in the IMF and World Bank meetings in Bangkok in October 2026."
+    since: 2026-06-17
+    until: 2026-06-17
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.jordannews.jo/Section-112/Economy/IMF-Transfers-188-Million-to-Jordan-Following-Completion-of-Two-Reviews-53742", title: "IMF Transfers $188 Million to Jordan Following Completion of Two Reviews", publisher: "Jordan News", date: 2026-06-17, tier: 3}
+      - {url: "https://www.arabnews.com/node/2647665/business-economy", title: "Jordan set to receive $188m IMF financing amid regional turmoil", publisher: "Arab News", date: 2026-06, tier: 3}
+  - to: PSE
+    layer: action
+    type: agreement
+    summary: "Humanitarian cargo to Gaza runs through Jordan under the Jordan Hashemite Charity Organisation and the army (convoys and airdrops, including the UK-backed airdrops of 2024); UNSC resolution 2803 of 17 Nov 2025 was endorsed by Jordan, which declined to send troops to the International Stabilization Force."
+    since: 2024-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.everycrsreport.com/files/2026-01-08_RL33546_d8d7b4a88456a9ca97bf4953209beb6489482040.html", title: "Jordan: Background and U.S. Relations (CRS RL33546, 8 Jan 2026)", publisher: "Congressional Research Service", date: 2026-01-08, tier: 1}
+      - {url: "https://www.jpost.com/middle-east/uk-jordan-form-alliance-over-war-in-gaza-to-protect-amman-796466", title: "UK, Jordan form alliance over war in Gaza to protect Amman", publisher: "The Jerusalem Post", date: 2024-04-11, tier: 3}
