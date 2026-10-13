@@ -244,7 +244,23 @@ sup.fn-sep { font-size: 10px; color: var(--ink-3); }
 .ledger-t td .why { color: var(--ink-3); font-family: var(--font-text); font-size: 12px; margin-top: 2px; max-width: 420px; }
 .ledger-t td.kind { color: var(--ink-3); text-transform: uppercase; letter-spacing: .06em; }
 .ledger td.lean-c { color: var(--c-ally); white-space: nowrap; cursor: help; }
-.page .method { border-left: 1px solid var(--rule); padding: 2px 16px 6px; margin: 6px 0 18px; max-width: 800px; }
-.page .method h3.sec { margin-top: 8px; }
+.page details.method { border-top: 1px solid var(--rule); padding: 8px 0 4px; margin: 28px 0 0; max-width: 800px; }
+.page details.method summary { font-family: var(--font-ui); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); cursor: pointer; list-style: none; }
+.page details.method summary::before { content: "> "; }
+.page details.method[open] summary { color: var(--accent); }
 .page .method p { font-size: 13px; color: var(--ink-2); margin: 6px 0; line-height: 1.55; }
 .page .method b { color: var(--ink); font-weight: 400; }
+
+/* ---------- faults page */
+.carriers { font-family: var(--font-ui); font-size: 13px; color: var(--ink-2); line-height: 1.9; }
+.carriers a { color: var(--ink); text-decoration: none; text-transform: uppercase; letter-spacing: .06em; }
+.carriers i { font-style: normal; color: var(--c-seam); }
+.ledger-t tr.mutual td.name a { text-shadow: 0 0 6px var(--accent); }
+.ledger-t td.tend.healing { color: var(--c-ally); }
+.ledger-t td.tend.tearing, .ledger-t td.tend.deepening { color: var(--c-rival); }
+.ledger-t td.empty { padding: 10px 0; }
+.ledger td.fault-c { text-transform: uppercase; letter-spacing: .06em; font-size: 11px; }
+.ledger td.fault-c.feud { color: var(--c-rival); }
+.ledger td.fault-c.byzantine { color: var(--c-seam); }
+.ledger td.fault-c.strained { color: var(--ink-3); }
+.legend .fault-hint { color: var(--ink-3); font-size: 11px; text-transform: none; letter-spacing: 0; margin-top: 4px; }

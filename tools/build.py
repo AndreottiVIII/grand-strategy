@@ -451,10 +451,28 @@ def main():
                         "cnote": first(st.get("note")), "pnote": first(back.get("note"))})
     clients.sort(key=lambda c: (-c["lean"], c["patron"], c["client"]))
 
+    # --- faults (Luttwak's levels: the bond is the deep level, the posture the surface; where they
+    # contradict each other the relationship rests on a fault). feud = kin + hostile; byzantine =
+    # grievance + allied; strained = kin + reluctant (a warning, not a fault). Hand-written A/B only.
+    FAULT_HOSTILE, FAULT_ALLIED = {"rival", "adversary"}, {"ally", "reluctant_ally"}
+    faults = []
+    for (a, x), st in handst.items():
+        g, b = st["grade"], st.get("bond")
+        kind = "feud" if b == "kin" and g in FAULT_HOSTILE else "byzantine" if b == "grievance" and g in FAULT_ALLIED else "strained" if b == "kin" and g in ("reluctant_ally", "reluctant_partner") else None
+        if kind:
+            faults.append({"a": a, "x": x, "kind": kind, "grade": g, "bond": b, "trend": st.get("trend"), "note": first(st.get("note"))})
+    seen_pairs = {}
+    for f in faults:
+        seen_pairs.setdefault((frozenset((f["a"], f["x"])), f["kind"]), []).append(f)
+    for f in faults:
+        f["mutual"] = len(seen_pairs[(frozenset((f["a"], f["x"])), f["kind"])]) > 1
+    faults.sort(key=lambda f: (f["kind"], not f["mutual"], f["a"], f["x"]))
+
     out = {
         "generated": today.isoformat(),
         "seams": seams,
         "clients": clients,
+        "faults": faults,
         "grades": GRADES,
         "layers": list(TYPES.keys()),
         "actors": list(actors.values()),

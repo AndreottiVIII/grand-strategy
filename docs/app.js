@@ -103,6 +103,7 @@
     else if (kind === "luttwak") setView("luttwak");
     else if (kind === "seams") setView("seams");
     else if (kind === "clients") setView("clients");
+    else if (kind === "faults") setView("faults");
     else if (kind === "about") setView("about");
     else if (kind === "colophon") { setView("about"); const c = document.getElementById("colophon"); if (c) c.scrollIntoView(); return; }
     else { clear(); mapMode = "world"; renderLegend(); setView("map"); }
@@ -124,7 +125,7 @@
   orgSel.onchange = () => { orgSel.value ? showOrg(orgSel.value) : goHome(); };
   issueSel.onchange = () => { issueSel.value ? showIssue(issueSel.value) : goHome(); };
   document.querySelectorAll(".tab").forEach(b => b.onclick = () => b.dataset.view === "dossier" ? showDossier(pov || fullActors[0].id) : (pov ? setPov(pov) : goHome()));
-  const PAGE_HASH = { map: "#/", orgs: "#/organisations", issues: "#/issues", luttwak: "#/luttwak", seams: "#/seams", clients: "#/clients", about: "#/about", colophon: "#/colophon" };
+  const PAGE_HASH = { map: "#/", orgs: "#/organisations", issues: "#/issues", luttwak: "#/luttwak", seams: "#/seams", clients: "#/clients", faults: "#/faults", about: "#/about", colophon: "#/colophon" };
   document.querySelectorAll("#topnav a").forEach(a => { a.href = PAGE_HASH[a.dataset.page]; a.onclick = ev => { ev.preventDefault(); navigate(PAGE_HASH[a.dataset.page]); }; });
   document.getElementById("home").onclick = ev => { ev.preventDefault(); goHome(); };
   function setView(v, render = true) {
@@ -132,7 +133,7 @@
     document.querySelectorAll(".tab").forEach(b => b.classList.toggle("is-on", b.dataset.view === v));
     document.querySelectorAll("#topnav a").forEach(a => a.classList.toggle("is-on", a.dataset.page === v || (a.dataset.page === "map" && (v === "map" || v === "dossier"))));
     document.querySelectorAll(".view").forEach(s => s.classList.toggle("is-on", s.id === "view-" + v));
-    const isPage = ["orgs", "issues", "luttwak", "seams", "clients", "about"].includes(v);
+    const isPage = ["orgs", "issues", "luttwak", "seams", "clients", "faults", "about"].includes(v);
     document.querySelector(".side").style.display = isPage ? "none" : "";
     document.querySelector(".frame").classList.toggle("is-page", isPage);
     if (v === "orgs") renderOrgsPage();
@@ -140,6 +141,7 @@
     if (v === "luttwak") renderLuttwakPage();
     if (v === "seams") renderSeamsPage();
     if (v === "clients") renderClientsPage();
+    if (v === "faults") renderFaultsPage();
     if (v === "about") renderAboutPage();
     if (!render) return;
     if (v === "map") drawMap();
@@ -195,7 +197,8 @@
       `<h3>Bond</h3>
        <div class="row"><span class="sw" style="box-shadow:inset 0 0 0 3px var(--c-partner)"></span>Kin - shared identity</div>
        <div class="row"><span class="sw" style="box-shadow:inset 0 0 0 3px var(--c-rival)"></span>Grievance - open wound</div>
-       <div class="row"><span class="sw"></span>Affinity or no standing tie</div>` +
+       <div class="row"><span class="sw"></span>Affinity or no standing tie</div>
+       <div class="row fault-hint">A band that contradicts its outline is a fault: kin inside red = feud, grievance inside green = Byzantine alliance.</div>` +
       (SEAMS_ON_MAP && seamsAround(pov).length ? `<h3>Seams</h3><div class="row"><span class="sw" style="border:1.5px dashed var(--c-seam)"></span>Pulled between ${actors[pov].short || actors[pov].name} and a rival (${new Set(seamsAround(pov).map(s => s.y)).size})</div>` : "");
   }
 
@@ -409,12 +412,13 @@
     const chips = Object.entries(F).map(([k, v]) => `<span class="fv is-on" data-k="${k}" data-v="${esc(v)}">${esc(String(v).replace(/_/g, " "))} ×</span>`).join(" ");
     el.innerHTML = `<div class="ledger">
       <div><h3>Counterparts of ${esc(actors[pov].name)} <span>${counterparts.length}${counterparts.length < total ? " of " + total : ""}</span>${chips ? `<span class="chips">${chips}</span>` : ""}</h3>
-        <table><thead><tr><th>Actor</th><th>Posture</th><th>Trend</th><th>Bond</th><th title="lean: who leans on whom">Lean</th><th style="text-align:right">Rows</th></tr></thead><tbody>` +
+        <table><thead><tr><th>Actor</th><th>Posture</th><th>Trend</th><th>Bond</th><th title="lean: who leans on whom">Lean</th><th>Fault</th><th style="text-align:right">Rows</th></tr></thead><tbody>` +
         counterparts.map(c => `<tr class="cp" data-id="${c.id}"><td class="name">${glyph(c.st)}${esc(actors[c.id].short || actors[c.id].name)}</td>
           <td>${c.st ? fv("grade", c.st.grade, c.st.grade.replace(/_/g, " ")) : "<span class='tr'>-</span>"}</td>
           <td class="tr">${c.st ? fv("trend", c.st.trend, TREND_SIGN[c.st.trend] + " " + TREND[c.st.trend]) : ""}</td>
           <td class="tr">${c.st ? fv("bond", c.st.bond, BOND_LABEL[c.st.bond].split(" - ")[0].toLowerCase()) : ""}</td>
           <td class="tr lean-c" title="${(l => l == null ? "both sides not written" : l > 0 ? nameOf(c.id) + " leans on " + nameOf(pov) : nameOf(pov) + " leans on " + nameOf(c.id))(leanOf(pov, c.id))}">${(l => l == null ? "·" : l > 0 ? "↑" + l : "↓" + (-l))(leanOf(pov, c.id))}</td>
+          <td class="tr fault-c ${faultOf(pov, c.id) || ""}">${faultOf(pov, c.id) || ""}</td>
           <td class="n">${c.rows.length || "-"}</td></tr>`).join("") +
         `</tbody></table></div>
       <div><h3>${filtered ? "Matching traffic" : "Latest traffic"} <span>${filtered ? latest.length + " of " + rows.length + " rows" : rows.length + " rows, newest first"}</span></h3>
@@ -500,9 +504,10 @@
     const el = document.getElementById("page-seams");
     const byY = d3.group(SEAMS, s => s.y);
     const order = [...byY.entries()].sort((p, q) => q[1].length - p[1].length || actors[p[0]].name.localeCompare(actors[q[0]].name));
-    el.innerHTML = `<h2>Seams</h2><p class="lede">A seam is an actor pulled two ways: it is an ally of two actors that are rivals or adversaries of each other. In Luttwak's grammar the seam between an opponent and its allies is where relational manoeuvre aims, and where an alliance is tested first. ${SEAMS.length} seams across ${order.length} actors, from the cards written so far. Every leg of a seam is a written reading of confidence A or B: a treaty membership alone never counts (or every NATO member would be pulled between Cyprus and Turkey), and provisional reciprocals never count.</p>
+    el.innerHTML = `<h2>Seams</h2><p class="lede">A seam is an actor pulled two ways: it is an ally of two actors that are rivals or adversaries of each other. In Luttwak's grammar the seam between an opponent and its allies is where relational manoeuvre aims, and where an alliance is tested first.</p>
       <div class="seams">` + order.map(([y, list]) => `<div class="seam-block"><h3><a href="#/view/${y}">${nameOf(y)}</a> <span>pulled ${list.length} way${list.length > 1 ? "s" : ""}</span></h3>` +
-        list.map(s => `<div class="seam"><a href="#/view/${s.a}">${nameOf(s.a)}</a> <i class="h">${s.ax}</i> <a href="#/view/${s.x}">${nameOf(s.x)}</a><span class="both">both <i class="al">${s.ay === s.xy ? s.ay.replace("_", " ") : s.ay.replace("_", " ") + " / " + s.xy.replace("_", " ")}</i> of ${nameOf(y)}</span></div>`).join("") + `</div>`).join("") + `</div>`;
+        list.map(s => `<div class="seam"><a href="#/view/${s.a}">${nameOf(s.a)}</a> <i class="h">${s.ax}</i> <a href="#/view/${s.x}">${nameOf(s.x)}</a><span class="both">both <i class="al">${s.ay === s.xy ? s.ay.replace("_", " ") : s.ay.replace("_", " ") + " / " + s.xy.replace("_", " ")}</i> of ${nameOf(y)}</span></div>`).join("") + `</div>`).join("") + `</div>
+      <details class="method"><summary>How seams are found</summary><p>A seam needs three legs: A hostile to X (rival or adversary), A allied to Y, X allied to Y (ally or reluctant ally). Every leg must be a written reading of confidence A or B, from either side of the leg. A treaty membership alone never counts, or every NATO member would be pulled between Cyprus and Turkey; provisional reciprocals never count. ${SEAMS.length} seams across ${order.length} actors so far, from ${fullActors.length} cards; the list grows by itself as cards are written on both sides of a rivalry.</p></details>`;
     el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
   }
 
@@ -516,16 +521,38 @@
     const byP = d3.group(CLIENTS, c => c.patron);
     const patrons = [...byP.entries()].sort((p, q) => q[1].length - p[1].length || d3.sum(q[1], c => c.lean) - d3.sum(p[1], c => c.lean));
     el.innerHTML = `<h2>Clients</h2><p class="lede">A client is an actor that leans on another more than it is leaned on: it grades the other higher than the other grades it. Luttwak's name for the arrangement is the client system of the early Roman empire, where the patron buys security cheaply because the client's loyalty exceeds the patron's commitment.</p>
-      <div class="method"><h3 class="sec">How the lean is computed</h3>
-      <p>Every posture is a step on one scale: <b>ally 4</b> · <b>reluctant ally 3</b> · <b>partner 2</b> · <b>reluctant partner 1</b> · <b>neutral 0</b> · <b>rival −1</b> · <b>adversary −2</b>. For a pair A and X the lean of A on X is <b>step(A's grade of X) − step(X's grade of A)</b>. If Serbia grades Hungary "ally" (4) and Hungary grades Serbia "partner" (2), Serbia leans on Hungary by 2: Serbia is the client, Hungary the patron. A lean of 1 is a tilt; 2 or more is a client in the full sense.</p>
-      <p>Three conditions, all of them in the build: both readings must be hand-written at confidence A or B (provisional reciprocals and treaty-floor stances never count, so a pair appears only when both cards exist); at least one side must be an alliance (ally or reluctant ally), because a lean between two partners is a mood, not a client system; and the lean must be positive, so each pair appears once, from the client's side. The last column reads the client's bond: <b>loyal</b> if kin or affinity, <b>bought</b> if none or grievance, since a bought client holds only while the patron pays.</p>
-      <p>${CLIENTS.length} pair${CLIENTS.length === 1 ? "" : "s"} so far, from ${fullActors.length} cards. The list grows by itself as cards are written on both sides of an alliance.</p></div>
       <h3 class="sec">Patrons</h3><div class="patrons">` + (patrons.length ? patrons.map(([p, list]) => `<div class="patron"><a href="#/view/${p}">${nameOf(p)}</a> <span>${list.length} client${list.length > 1 ? "s" : ""}</span><div class="who">${list.map(c => `<a href="#/view/${c.client}">${nameOf(c.client)}</a> <i>+${c.lean}</i>`).join(" · ")}</div></div>`).join("") : `<p class="empty">No pair with both sides written yet.</p>`) + `</div>
       <h3 class="sec">Who leans on whom</h3><table class="ledger-t"><thead><tr><th>Client</th><th>Lean</th><th>Patron</th><th>Client's reading</th><th>Patron's reading</th><th>Client</th></tr></thead><tbody>` +
       CLIENTS.map(c => `<tr><td class="name"><a href="#/view/${c.client}">${nameOf(c.client)}</a></td><td class="lean">+${c.lean}</td><td class="name"><a href="#/view/${c.patron}">${nameOf(c.patron)}</a></td>
         <td><i style="color:${gradeBorder(c.cg)}">${c.cg.replace("_", " ")}</i> · ${esc(c.cb || "")}<div class="why">${esc(c.cnote)}</div></td>
         <td><i style="color:${gradeBorder(c.pg)}">${c.pg.replace("_", " ")}</i> · ${esc(c.pb || "")}<div class="why">${esc(c.pnote)}</div></td>
-        <td class="kind">${LOYAL[c.cb] || ""}</td></tr>`).join("") + `</tbody></table>`;
+        <td class="kind">${LOYAL[c.cb] || ""}</td></tr>`).join("") + `</tbody></table>
+      <details class="method"><summary>How the lean is computed</summary>
+      <p>Every posture is a step on one scale: <b>ally 4</b> · <b>reluctant ally 3</b> · <b>partner 2</b> · <b>reluctant partner 1</b> · <b>neutral 0</b> · <b>rival −1</b> · <b>adversary −2</b>. For a pair A and X the lean of A on X is <b>step(A's grade of X) − step(X's grade of A)</b>. If Serbia grades Hungary "ally" (4) and Hungary grades Serbia "partner" (2), Serbia leans on Hungary by 2: Serbia is the client, Hungary the patron. A lean of 1 is a tilt; 2 or more is a client in the full sense.</p>
+      <p>Three conditions, all of them in the build: both readings must be hand-written at confidence A or B (provisional reciprocals and treaty-floor stances never count, so a pair appears only when both cards exist); at least one side must be an alliance (ally or reluctant ally), because a lean between two partners is a mood, not a client system; and the lean must be positive, so each pair appears once, from the client's side. The last column reads the client's bond: <b>loyal</b> if kin or affinity, <b>bought</b> if none or grievance, since a bought client holds only while the patron pays.</p>
+      <p>${CLIENTS.length} pair${CLIENTS.length === 1 ? "" : "s"} so far, from ${fullActors.length} cards. The list grows by itself as cards are written on both sides of an alliance.</p></details>
+`;
+    el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
+  }
+
+  // ---------- faults: the bond (deep level) contradicts the posture (surface). feud = kin + hostile,
+  // byzantine = grievance + allied, strained = kin + reluctant (a warning, shown in the ledger only)
+  const FAULTS = data.faults || [];
+  const faultOf = (a, x) => { const f = FAULTS.find(f => f.a === a && f.x === x); return f ? f.kind : null; };
+  const TEND = { feud: { warming: "healing", cooling: "deepening", stable: "stable" }, byzantine: { warming: "healing", cooling: "tearing", stable: "stable" } };
+  function renderFaultsPage() {
+    const el = document.getElementById("page-faults");
+    const shown = FAULTS.filter(f => f.kind !== "strained");
+    const load = {};
+    shown.forEach(f => { load[f.a] = (load[f.a] || 0) + (f.mutual ? 2 : 1); load[f.x] = (load[f.x] || 0) + (f.mutual ? 2 : 1); });
+    const carriers = Object.entries(load).sort((p, q) => q[1] - p[1] || actors[p[0]].name.localeCompare(actors[q[0]].name)).slice(0, 16);
+    const row = f => `<tr class="${f.mutual ? "mutual" : ""}"><td class="name"><a href="#/view/${f.a}">${nameOf(f.a)}</a></td><td><i style="color:${gradeBorder(f.grade)}">${f.grade.replace("_", " ")}</i></td><td class="name"><a href="#/view/${f.x}">${nameOf(f.x)}</a></td><td class="tr">${f.mutual ? "mutual" : "one-sided"}</td><td class="tend ${TEND[f.kind][f.trend] || ""}">${TREND_SIGN[f.trend] || ""} ${TEND[f.kind][f.trend] || f.trend}</td><td><div class="why">${esc(f.note)}</div></td></tr>`;
+    const table = (kind, head) => `<h3 class="sec">${head}</h3><table class="ledger-t"><thead><tr><th>Actor</th><th>Posture</th><th>Toward</th><th>Direction</th><th>Tendency</th><th>Reading</th></tr></thead><tbody>${shown.filter(f => f.kind === kind).map(row).join("") || `<tr><td colspan="6" class="empty">None written yet.</td></tr>`}</tbody></table>`;
+    el.innerHTML = `<h2>Faults</h2><p class="lede">A fault is a relationship whose deep level contradicts its surface: the bond says one thing, the posture another. Luttwak's rule is that strategy works only when its levels are in harmony; a relationship resting on a fault is the one that breaks first. Two kinds matter. A <b>feud</b> is kin graded rival or adversary, the quarrel inside the family, the most intense because closeness multiplies the points of contact. A <b>Byzantine alliance</b> is an open wound graded ally: the Byzantine maxim that every enemy is a possible ally, and the alliance that holds over the wound because it must.</p>
+      <h3 class="sec">Who lives on faults</h3><div class="carriers">${carriers.map(([id, n]) => `<a href="#/view/${id}">${nameOf(id)}</a> <i>${n}</i>`).join(" · ") || `<span class="empty">none yet</span>`}</div>
+      ${table("feud", "Feuds · kin, hostile")}
+      ${table("byzantine", "Byzantine alliances · grievance, allied")}
+      <details class="method"><summary>How faults are found</summary><p>Each stance carries a posture (today) and a bond (what would survive a change of government). A <b>feud</b> is bond kin with posture rival or adversary; a <b>Byzantine alliance</b> is bond grievance with posture ally or reluctant ally. A fault written by both sides of a pair is <b>mutual</b> and weighs double in the count above; written by one side only, it says who feels it. The tendency reads the trend against the kind: a warming feud is <b>healing</b>, a cooling one <b>deepening</b>; a cooling Byzantine alliance is <b>tearing</b>. Only hand-written stances of confidence A or B count. Kin graded reluctant ally or reluctant partner is not a fault but a warning, <b>strained</b>, shown only in the ledger under the map. ${shown.length} faults so far, from ${fullActors.length} cards.</p></details>`;
     el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
   }
 
@@ -546,6 +573,8 @@
       <p>A <b>seam</b> is an actor pulled two ways: an ally of two actors that are rivals or adversaries of each other. Greece between Israel and Turkey, the United States between Saudi Arabia and the Emirates, Italy between Hungary and Ukraine. The word is Luttwak's. In <i>Strategy</i> he describes <b>relational manoeuvre</b> as the style that aims not at the enemy's strength but at his specific weaknesses, his doctrine, his habits and the <i>seams</i> between him and his allies, where a small force can obtain a large effect. The Byzantine book shows the same idea at the scale of an empire that survived a thousand years by dividing its enemies rather than destroying them. The Seams page lists every such triangle the atlas can see; the map marks them for the actor you are looking at. They are computed from hand-written postures of confidence A or B only.</p>
       <h3>Clients</h3>
       <p>A <b>client</b> is an actor that leans on another more than it is leaned on: it grades the other higher than the other grades it. Luttwak's name for the arrangement is the <b>client system</b> of the early Roman empire, described in <i>The Grand Strategy of the Roman Empire</i>: the hegemonic empire of the Julio-Claudians ruled through client kings whose loyalty exceeded Rome's commitment to them, which is why it was cheap. The Clients page measures the <b>lean</b> of every pair the atlas has read from both sides, in steps on the posture scale; the higher-grading side is the client, the other the patron. A client bound by kin or affinity is loyal; one bound by nothing, or by a grievance, is bought, and holds as long as the patron pays. The tepid ally, graded "ally" by its patron and answering "partner", is the costly kind, the one Rome subsidised. In the ledger under the map the lean column shows, for each counterpart, who leans on whom.</p>
+      <h3>Faults</h3>
+      <p>A <b>fault</b> is a relationship whose deep level contradicts its surface. The frame is Luttwak's structure of <b>levels</b>: in <i>Strategy</i> success at one level can be undone at a higher one, and a strategy works only when its levels are in harmony. Here the levels are two: the bond, which would survive a change of government, and the posture of today. Two contradictions matter. The <b>feud</b> is kin graded rival or adversary, the quarrel inside the family, which Luttwak counts as the most intense of rivalries because closeness multiplies the points of contact. The <b>Byzantine alliance</b> is a grievance graded ally: the maxim from <i>The Grand Strategy of the Byzantine Empire</i> that every enemy is a possible ally, and the alliance that holds over an open wound because it must. The Faults page lists both, says whether each is felt by one side or both, and reads its trend as healing or tearing; on the map a fault shows as a bond band that contradicts the colour of its outline.</p>
       <h3>How it is made</h3>
       <p>The data lives in plain files, one per actor, separate from the site, and is versioned in the open: the whole history of every grade is in the repository. Cards are researched and drafted by language-model agents working from a shared brief and the atlas's own rules, then reread by a stronger model that checks objectives, paradoxes and every posture grade against the sources and against the neighbouring cards; the owner samples the result. A new card's grades retroact on the cards already written as provisional reciprocals, flagged as such until written from the other side. Nothing is embedded in the site: it renders the data as it stands on the day of the last build, and the stamp in the top bar says which day that was.</p>
       <h3>What it is not</h3>

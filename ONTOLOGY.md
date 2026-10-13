@@ -268,3 +268,14 @@ neutral 0, rival -1, adversary -2. Pairs count only when at least one side is an
 higher-grading side is the client, the other the patron; a client bound by kin or affinity is
 loyal, one bound by nothing or by a grievance is bought. Computed by `tools/build.py`
 (`clients`), shown on the Clients page and as the lean column of the ledger.
+
+## Faults (added 2026-10-13)
+
+Luttwak's levels: the bond is the deep level, the posture the surface; a relationship whose two
+levels contradict each other rests on a fault. **Feud** = bond kin with posture rival or adversary.
+**Byzantine alliance** = bond grievance with posture ally or reluctant ally. **Strained** = bond kin
+with a reluctant posture: a warning, not a fault, shown only in the ledger. A fault written by both
+sides is mutual and weighs double. Trend read against the kind: a warming feud is healing, a
+cooling Byzantine alliance is tearing. Hand-written A/B stances only. Computed by `tools/build.py`
+(`faults`), shown on the Faults page, in the ledger's fault column and, on the map, as a bond band
+that contradicts the colour of its outline.
