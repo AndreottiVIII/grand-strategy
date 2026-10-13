@@ -1,0 +1,117 @@
+from: BTN
+relations:
+  # ---------- objective ----------
+  - to: CHN
+    layer: objective
+    type: territorial_claim
+    summary: "Settle the undelineated northern boundary through the three-step roadmap (MoU of 14 Oct 2021) on Bhutan's terms; 24 rounds of talks since 1984; a joint technical demarcation team was set up at the 13th Expert Group Meeting in Beijing (Aug 2023). The largest map discrepancies lie in the northwest and along the Chumbi salient (Wikipedia index)."
+    since: 2021-10-14
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://frontierindia.com/china-and-bhutan-sign-mou-to-speed-up-boundary-talks-both-sides-dispute-295-square-miles-of-land/", title: "China and Bhutan sign MoU to speed up boundary talks, both sides dispute 295 square miles of land", publisher: "Frontier India", date: 2021-10, tier: 3}
+      - {url: "https://www.borderlens.com/2023/08/26/china-bhutan-accelerate-efforts-to-resolve-boundary-dispute-through-three-step-roadmap/", title: "China, Bhutan accelerate efforts to resolve boundary dispute through three-step roadmap", publisher: "BorderLens", date: 2023-08-26, tier: 3}
+      - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Bhutan", title: "Foreign relations of Bhutan (index only, citations not followed)", publisher: "Wikipedia", date: 2026-10-12, tier: 4}
+
+  # ---------- alignment ----------
+  - to: IND
+    layer: alignment
+    type: treaty
+    summary: "Indo-Bhutan Friendship Treaty, signed 8 Feb 2007 and in force 2 Mar 2007. It replaces the 1949 treaty, drops the clause that Bhutan follow India's advice on external relations, and binds each side not to let its territory be used against the other's security. Article 3 keeps free trade between the two territories."
+    since: 2007-03-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.mea.gov.in/Images/pdf/india-bhutan-treaty-07.pdf", title: "Indo-Bhutan Friendship Treaty (2007)", publisher: "Ministry of External Affairs, India", date: 2007-02-08, tier: 1}
+
+  # ---------- dependency ----------
+  - to: IND
+    layer: dependency
+    type: energy_export
+    value: 0.63
+    unit: share_of_export_revenue
+    summary: "Hydropower is about 63% of Bhutan's export revenue, sold mainly to India. The Embassy in New Delhi says nearly two-thirds. Figures conflict; the IDSA count is used because it is the one stated as a share of export revenue."
+    since: 2025-04-16
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Embassy figure is nearly two-thirds (same order of magnitude). A forex-earnings figure of about 31% also circulates; it is not comparable and is not used."
+    sources:
+      - {url: "https://idsa.in/wp-content/uploads/2025/04/Commentary-Ms-Ishaani-Singh-16-April-2025.pdf", title: "IDSA commentary on India-Bhutan hydropower (16 April 2025)", publisher: "Institute for Defence Studies and Analyses", date: 2025-04-16, tier: 2}
+
+  - to: IND
+    layer: dependency
+    type: energy_export
+    value: 1020
+    unit: MW_installed_capacity
+    summary: "Punatsangchhu-II (1,020 MW) was completed in 2025 after its final unit was synchronised with the grid; the MEA says the project raises Bhutan's generation capacity by about 40%. Later reporting says its output already includes exports to India. Punatsangchhu-I (1,200 MW) restarted in April 2026 after a halt since 2019, with surplus power to be sold to India at a price fixed at commissioning."
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://gulfnews.com/business/energy/1020-mw-punatsangchuu-ii-hydroelectric-project-to-enhance-bhutan-s-power-generation-capacity-by-40-mea-1.500342629", title: "1,020-MW Punatsangchuu-II hydro project to enhance Bhutan's power generation capacity by 40%: MEA", publisher: "Gulf News (quoting MEA)", date: 2025, tier: 3}
+      - {url: "https://www.etvbharat.com/en/business/work-resumes-on-bhutan-punatsangchhu-i-hydropower-project-enn26041104148", title: "Work resumes on Bhutan's Punatsangchhu-I hydropower project after 7-year halt", publisher: "ETV Bharat", date: 2026-04, tier: 3}
+
+  - to: USA
+    layer: dependency
+    type: trade_share
+    value: 0.1
+    unit: percent_of_gdp_exports
+    summary: "Exports to the US are about 0.1% of Bhutan's GDP (ADB economist, Thimphu). The US was Bhutan's sixth-largest export market in 2024 (Nu 368 million, about 80% ferrosilicon). The 10% baseline US tariff of 2025 was judged to have minimal impact."
+    since: 2024
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "Share from an ADB economist quoted in the press, not from national accounts. The Nu 368 million export value and the sixth-place ranking are as cited in the same press article (Bhutan Trade Statistics 2024), not checked against the statistics themselves."
+    sources:
+      - {url: "https://thebhutanese.bt/trump-slaps-10-tariff-on-bhutanese-exports-to-usa/", title: "Trump slaps 10% tariff on Bhutanese exports to USA", publisher: "The Bhutanese", date: 2025, tier: 3}
+
+  # ---------- action ----------
+  - to: CHN
+    layer: action
+    type: agreement
+    summary: "13th Expert Group Meeting in Beijing (21-24 Aug 2023) - both sides agreed to put the three-step roadmap into effect simultaneously and expedited, and set up a joint technical team to demarcate the boundary. The roadmap's steps were not published."
+    since: 2023-08-24
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.borderlens.com/2023/08/26/china-bhutan-accelerate-efforts-to-resolve-boundary-dispute-through-three-step-roadmap/", title: "China, Bhutan accelerate efforts to resolve boundary dispute through three-step roadmap", publisher: "BorderLens", date: 2023-08-26, tier: 3}
+
+  - to: IND
+    layer: action
+    type: agreement
+    summary: "During Prime Minister Modi's state visit to Bhutan, India announced INR 10,000 crore of development support for the 13th Five Year Plan (2024-29): INR 7,000 crore for project-tied assistance, INR 1,000 crore for high-impact community projects, INR 1,500 crore for the Economic Stimulus Programme and INR 500 crore as untied programme grant."
+    since: 2024-03
+    until: 2029
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.indembthimphu.gov.in/listview/NDM4", title: "Development Plan Assistance (Embassy of India, Thimphu)", publisher: "Embassy of India, Thimphu", date: 2024-03, tier: 1}
+
+  - to: JPN
+    layer: action
+    type: agreement
+    summary: "JICA and the Royal Government of Bhutan signed a JPY 243 million (Nu 143 million) grant agreement for higher-education scholarships, mainly for civil servants (Japanese Development Scholarship programme)."
+    since: 2025-07-17
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://thebhutanese.bt/coinciding-with-the-60th-anniversary-of-the-jocv-program-jica-and-bhutan-sign-nu-143-million-grant-agreement/", title: "Coinciding with the 60th anniversary of the JOCV program, JICA and Bhutan sign Nu 143 million grant agreement", publisher: "The Bhutanese", date: 2025-07, tier: 3}
+
+  - to: IND
+    layer: action
+    type: agreement
+    summary: "India approved the first two cross-border rail projects with Bhutan (September 2025): the Kokrajhar-Gelephu line, linking Assam to the Gelephu Mindfulness City, and the Banarhat-Samtse line. The MoU was signed during Modi's 2024 visit; Modi laid foundation stones for the rail network in March 2026. Cost and length are reported differently by different sources."
+    since: 2025-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Cost figures conflict (Tribune: INR 3,456 crore for the Kokrajhar-Gelephu line; Scroll: INR 4,033 crore for both lines). Length also differs by source (58 to 90 km). Recorded here without a number."
+    sources:
+      - {url: "https://www.tribuneindia.com/news/world/india-bhutan-approve-first-rail-link-projects-to-boost-connectivity-and-trade", title: "India, Bhutan approve first rail link projects to boost connectivity and trade", publisher: "Tribune India", date: 2025-09, tier: 3}
+      - {url: "https://www.borderlens.com/2026/03/29/rail-link-to-mindfulness-city-bhutans-gelephu-vision-draws-closer-to-india/", title: "Rail link to Mindfulness City: Bhutan's Gelephu vision draws closer to India", publisher: "BorderLens", date: 2026-03-29, tier: 3}

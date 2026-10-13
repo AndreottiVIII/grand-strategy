@@ -1,14 +1,105 @@
 id: BTN
 name: Bhutan
+short: Bhutan
 type: state
 iso2: bt
 wikipedia: https://en.wikipedia.org/wiki/Bhutan
-coords:
-- 89.63
-- 27.47
+coords: [89.63, 27.47]
 seat: Thimphu
-regions:
-- world
-card: stub
+regions: ['south-central-asia']
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the sovereignty India's 2007 treaty guarantees while letting India carry security and the large infrastructure. The revised treaty dropped the 1949 clause that made Bhutan follow India's advice on external relations, but Thimphu still builds its foreign policy around Delhi, and India intervened in Doklam in 2017 at Bhutan's request."
+      confidence: A
+      sources:
+        - {url: "https://www.mea.gov.in/Images/pdf/india-bhutan-treaty-07.pdf", title: "Indo-Bhutan Friendship Treaty (2007)", publisher: "Ministry of External Affairs, India", date: 2007-02-08, tier: 1}
+        - {url: "https://www.aljazeera.com/news/2017/8/28/india-and-china-agree-on-doklam-troop-disengagement", title: "India and China agree on Doklam troop disengagement", publisher: "Al Jazeera", date: 2017-08-28, tier: 3}
+    - rank: 2
+      text: "Settle the undelineated northern boundary with China on the three-step roadmap without giving ground: MoU of 14 Oct 2021, 24 rounds of talks since 1984, and the joint demarcation team set up at the 13th Expert Group Meeting in Beijing (Aug 2023). China meanwhile built villages in the disputed north and west."
+      confidence: B
+      sources:
+        - {url: "https://frontierindia.com/china-and-bhutan-sign-mou-to-speed-up-boundary-talks-both-sides-dispute-295-square-miles-of-land/", title: "China and Bhutan sign MoU to speed up boundary talks, both sides dispute 295 square miles of land", publisher: "Frontier India", date: 2021-10, tier: 3}
+        - {url: "https://www.borderlens.com/2023/08/26/china-bhutan-accelerate-efforts-to-resolve-boundary-dispute-through-three-step-roadmap/", title: "China, Bhutan accelerate efforts to resolve boundary dispute through three-step roadmap", publisher: "BorderLens", date: 2023-08-26, tier: 3}
+        - {url: "https://deccanchronicle.com/amp/world/satellite-images-reveal-china-building-villages-in-bhutan-1847754", title: "Satellite images reveal China building villages in Bhutan", publisher: "Deccan Chronicle", date: 2024-12, tier: 3}
+    - rank: 3
+      text: "Turn hydropower and the Gelephu project into the economic base: Punatsangchhu-II (1,020 MW) completed in 2025, Punatsangchhu-I restarted in April 2026 after a seven-year halt, and the Gelephu Mindfulness City with a rail link to Assam's Kokrajhar approved in September 2025 and under construction from 2026."
+      confidence: B
+      sources:
+        - {url: "https://www.tribuneindia.com/news/world/india-bhutan-approve-first-rail-link-projects-to-boost-connectivity-and-trade", title: "India, Bhutan approve first rail link projects to boost connectivity and trade", publisher: "Tribune India", date: 2025-09, tier: 3}
+        - {url: "https://www.borderlens.com/2026/03/29/rail-link-to-mindfulness-city-bhutans-gelephu-vision-draws-closer-to-india/", title: "Rail link to Mindfulness City: Bhutan's Gelephu vision draws closer to India", publisher: "BorderLens", date: 2026-03-29, tier: 3}
+        - {url: "https://gulfnews.com/business/energy/1020-mw-punatsangchuu-ii-hydroelectric-project-to-enhance-bhutan-s-power-generation-capacity-by-40-mea-1.500342629", title: "1,020-MW Punatsangchuu-II hydro project to enhance Bhutan's power generation capacity by 40%: MEA", publisher: "Gulf News (quoting MEA)", date: 2025, tier: 3}
+        - {url: "https://www.etvbharat.com/en/business/work-resumes-on-bhutan-punatsangchhu-i-hydropower-project-enn26041104148", title: "Work resumes on Bhutan's Punatsangchhu-I hydropower project after 7-year halt", publisher: "ETV Bharat", date: 2026-04, tier: 3}
+
+  means:
+    - domain: economic
+      text: "Hydropower sold mainly to India is the export base: by the IDSA count, hydropower is about 63% of Bhutan's export revenue (the Embassy in New Delhi says nearly two-thirds), making the grid the one large lever Thimphu controls."
+      confidence: B
+      sources:
+        - {url: "https://idsa.in/wp-content/uploads/2025/04/Commentary-Ms-Ishaani-Singh-16-April-2025.pdf", title: "IDSA commentary on India-Bhutan hydropower (16 April 2025)", publisher: "Institute for Defence Studies and Analyses", date: 2025-04-16, tier: 2}
+    - domain: informational
+      text: "Gross National Happiness and carbon negativity as the external brand: the constitution (Article 5) requires at least 60% forest cover, and Bhutan presents itself as carbon negative and GNH as a development model. The carbon accounts conflict (Daily Bhutan: about 2.2 Mt CO2 emitted a year against trees absorbing more than three times that; Carbon Credits: about 9 Mt sequestered against 2 Mt generated in 2020), so this is a government claim, not a measured balance."
+      confidence: C
+      sources:
+        - {url: "https://www.dailybhutan.com/print/not-only-is-bhutan-carbon-negative-bhutan-is-leading-the-world-s-fight-against-climate-change", title: "Not only is Bhutan carbon negative, Bhutan is leading the world's fight against climate change", publisher: "Daily Bhutan", date: 2025, tier: 3}
+        - {url: "https://carboncredits.com/how-the-first-carbon-negative-nation-of-bhutan-did-it", title: "How the first carbon negative nation of Bhutan did it", publisher: "Carbon Credits", date: 2025, tier: 4}
+    - domain: diplomatic
+      text: "A deliberately thin diplomatic network: relations with 62 of the 192 other UN members and with none of the five permanent Security Council members; Bhutan has embassies in only six countries, and only Bangladesh, India and Kuwait have embassies in Thimphu."
+      confidence: C
+      sources:
+        - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Bhutan", title: "Foreign relations of Bhutan (index only, citations not followed)", publisher: "Wikipedia", date: 2026-10-12, tier: 4}
+
+  constraints:
+    - text: "The currency and the market are Indian: the ngultrum is fixed at par with the Indian rupee, and the Royal Monetary Authority warns of external imbalances with India that press on the peg."
+      confidence: C
+      sources:
+        - {url: "https://www.centralbanking.com/central-banking/official-record/2188199/bhutanese-central-bank-warns-external-imbalances", title: "Bhutanese central bank warns of external imbalances", publisher: "Central Banking", date: 2025, tier: 3}
+    - text: "Aid is large and tied to Delhi: India committed INR 10,000 crore for the 13th Five Year Plan (2024-29), of which INR 7,000 crore is project-tied; Indian grants fund over 30% of the 2026-27 capital budget. Japan adds scholarship and equipment grants and the EU smaller grants and loans."
+      confidence: B
+      sources:
+        - {url: "https://www.indembthimphu.gov.in/listview/NDM4", title: "Development Plan Assistance (Embassy of India, Thimphu)", publisher: "Embassy of India, Thimphu", date: 2024-03, tier: 1}
+        - {url: "https://thebhutanese.bt/coinciding-with-the-60th-anniversary-of-the-jocv-program-jica-and-bhutan-sign-nu-143-million-grant-agreement/", title: "Coinciding with the 60th anniversary of the JOCV program, JICA and Bhutan sign Nu 143 million grant agreement", publisher: "The Bhutanese", date: 2025-07, tier: 3}
+    - text: "Its own people are leaving: monthly departures from Paro airport rose from under 500 before COVID to over 5,000 in early 2023; Bhutanese migrants in Australia doubled from 12,424 (2020) to 25,363 (2024). The World Bank (2024 household survey) finds migrants educated, aspiring migrants younger, and unemployment at 6% in 2022."
+      confidence: B
+      sources:
+        - {url: "https://www.worldbank.org/en/news/press-release/2025/10/01/reforms-can-help-bhutan-benefit-from-sustainable-migration-world-bank", title: "Reforms can help Bhutan benefit from sustainable migration", publisher: "World Bank", date: 2025-10-01, tier: 1}
+        - {url: "https://asianews.network/bhutans-emigration-dilemma-will-they-ever-return/", title: "Bhutan's emigration dilemma: Will they ever return?", publisher: "Asia News Network", date: 2025, tier: 3}
+    - text: "Boundary and security are settled elsewhere: no diplomatic relations with China, an undelineated border, and the 2017 Doklam standoff settled by a troop disengagement (28 Aug 2017) that left the road question unresolved in the official statements; Thimphu keeps a disciplined silence on the Chinese villages."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2017/8/28/india-and-china-agree-on-doklam-troop-disengagement", title: "India and China agree on Doklam troop disengagement", publisher: "Al Jazeera", date: 2017-08-28, tier: 3}
+        - {url: "https://turquoiseroof.org/download/forceful-diplomacy-china-cross-border-villages-in-bhutan/?wpdmdl=934", title: "Forceful diplomacy: China's cross-border villages in Bhutan", publisher: "Turquoise Roof (Robert Barnett)", date: 2024-10, tier: 3}
+
+  paradoxes:
+    - text: "The state trains the people it then loses: scholarships (Japan's JDS and others) and the civil service produce graduates, and education is the main reason aspiring migrants give (64%). The human capital Bhutan spends on becomes its export."
+      confidence: B
+      sources:
+        - {url: "https://thebhutanese.bt/coinciding-with-the-60th-anniversary-of-the-jocv-program-jica-and-bhutan-sign-nu-143-million-grant-agreement/", title: "Coinciding with the 60th anniversary of the JOCV program, JICA and Bhutan sign Nu 143 million grant agreement", publisher: "The Bhutanese", date: 2025-07, tier: 3}
+        - {url: "https://www.worldbank.org/en/news/press-release/2025/10/01/reforms-can-help-bhutan-benefit-from-sustainable-migration-world-bank", title: "Reforms can help Bhutan benefit from sustainable migration", publisher: "World Bank", date: 2025-10-01, tier: 1}
+    - text: "Hydropower gives Bhutan its export revenue and its carbon-negative brand, but the revenue runs through one grid. The more power the Punatsangchhu projects send to India, the more the state's solvency depends on a neighbour, while the Bangladesh power deal (via India) waits for Delhi's consent."
+      confidence: B
+      sources:
+        - {url: "https://idsa.in/wp-content/uploads/2025/04/Commentary-Ms-Ishaani-Singh-16-April-2025.pdf", title: "IDSA commentary on India-Bhutan hydropower (16 April 2025)", publisher: "Institute for Defence Studies and Analyses", date: 2025-04-16, tier: 2}
+        - {url: "https://thebhutanese.bt/awaiting-indias-nod-for-bangladesh-investment-in-1024-mw-dorjilung-project-in-bhutan/", title: "Awaiting India's nod for Bangladesh investment in 1,024 MW Dorjilung project in Bhutan", publisher: "The Bhutanese", date: 2024, tier: 3}
+
+  reading: |
+    Bhutan runs the strategy of a small state that has bought its security by
+    tying it to one neighbour and then spent the proceeds on its own autonomy:
+    the 2007 treaty removed the clause that made Thimphu take India's advice, but
+    the hydropower grid, the rupee peg and the Indian grants keep the arrangement
+    close to the old one. Its three open fronts are China (no relations, an
+    undelineated border, Doklam in 2017, villages since 2016 that Thimphu does not
+    contest in public), the outside world (a deliberately thin network, a
+    carbon-negative and GNH brand used as the voice in the UN and elsewhere) and its
+    own population, which is leaving for Australia and beyond. The 2024 election
+    returned Tshering Tobgay (PDP, 30 of 47 seats according to one report) as prime
+    minister from late January 2024. The Gelephu Mindfulness City, with its
+    Indian-funded rail link, is the bet: if it works, Bhutan gets a second economic
+    base besides hydropower and a new reason for young people to stay. If it does
+    not, it is one more Indian-built asset. Gaps not covered in this card: Ukraine and
+    Gaza positions, Thailand and Singapore, the Gulf, and the US 2025 contacts beyond
+    the 10% tariff.
