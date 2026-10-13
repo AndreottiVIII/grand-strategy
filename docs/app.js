@@ -103,7 +103,7 @@
     else if (kind === "luttwak") setView("luttwak");
     else if (kind === "seams") setView("seams");
     else if (kind === "about") setView("about");
-    else if (kind === "colophon") setView("colophon");
+    else if (kind === "colophon") { setView("about"); const c = document.getElementById("colophon"); if (c) c.scrollIntoView(); return; }
     else { clear(); mapMode = "world"; renderLegend(); setView("map"); }
     window.scrollTo(0, 0);
   }
@@ -131,7 +131,7 @@
     document.querySelectorAll(".tab").forEach(b => b.classList.toggle("is-on", b.dataset.view === v));
     document.querySelectorAll("#topnav a").forEach(a => a.classList.toggle("is-on", a.dataset.page === v || (a.dataset.page === "map" && (v === "map" || v === "dossier"))));
     document.querySelectorAll(".view").forEach(s => s.classList.toggle("is-on", s.id === "view-" + v));
-    const isPage = ["orgs", "issues", "luttwak", "seams", "about", "colophon"].includes(v);
+    const isPage = ["orgs", "issues", "luttwak", "seams", "about"].includes(v);
     document.querySelector(".side").style.display = isPage ? "none" : "";
     document.querySelector(".frame").classList.toggle("is-page", isPage);
     if (v === "orgs") renderOrgsPage();
@@ -139,7 +139,6 @@
     if (v === "luttwak") renderLuttwakPage();
     if (v === "seams") renderSeamsPage();
     if (v === "about") renderAboutPage();
-    if (v === "colophon") renderColophonPage();
     if (!render) return;
     if (v === "map") drawMap();
     if (v === "dossier") renderDossier(pov || fullActors[0].id);
@@ -522,15 +521,9 @@
       <h3>How it is made</h3>
       <p>The data lives in plain files, one per actor, separate from the site, and is versioned in the open: the whole history of every grade is in the repository. Cards are researched and drafted by language-model agents working from a shared brief and the atlas's own rules, then reread by a stronger model that checks objectives, paradoxes and every posture grade against the sources and against the neighbouring cards; the owner samples the result. A new card's grades retroact on the cards already written as provisional reciprocals, flagged as such until written from the other side. Nothing is embedded in the site: it renders the data as it stands on the day of the last build, and the stamp in the top bar says which day that was.</p>
       <h3>What it is not</h3>
-      <p>It is not a forecast and not a verdict. Where a card says less than you expected, it is because the sources did not hold. Where a posture surprises you, open the dossier: the note under each grade says why it was read that way, and the footnote says who said so.</p>`;
-  }
+      <p>It is not a forecast and not a verdict. Where a card says less than you expected, it is because the sources did not hold. Where a posture surprises you, open the dossier: the note under each grade says why it was read that way, and the footnote says who said so.</p>
 
-  function renderColophonPage() {
-    const el = document.getElementById("page-colophon");
-    if (el.dataset.done) return;
-    el.dataset.done = "1";
-    el.innerHTML = `
-      <h2>Colophon</h2>
+      <h2 id="colophon" style="margin-top:40px">Colophon</h2>
       <p class="lede">Provisional. The final text is being written.</p>
       <h3>Who</h3>
       <p><b>Grand Strategy</b> is conceived, directed and edited by <b>Davide Caniatti</b>. Research, drafting and code are produced with Claude (Anthropic) under his direction; every grade on the site has been read by a person or is marked as provisional. Started on 12 October 2026.</p>
