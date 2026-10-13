@@ -393,8 +393,48 @@ def main():
         print(f"\n{len(errors)} error(s). Nothing written.")
         sys.exit(1)
 
+    # --- seams (Luttwak: the seam between an adversary and its allies is where relational manoeuvre
+    # aims): A hostile to X while A and X are both allies of Y, so Y is pulled two ways. Only from
+    # hand-written stances of confidence A or B; provisional reciprocals and dataset stances never count.
+    # hostility must be hand-written (A or B); an alliance may also be the treaty floor from the
+    # membership dataset (NATO, EU, CSTO), which is a fact, not a reading
+    hand = {}
+    for a, v in stances.items():
+        for st in v["stances"]:
+            if st.get("reciprocal_of") or st.get("confidence") not in ("A", "B"):
+                continue
+            if st.get("dataset") and st.get("dataset") != "wikidata-memberships":
+                continue
+            if st.get("dataset") and st["grade"] != "ally":
+                continue
+            hand[(a, st["toward"])] = st["grade"]
+    SEAM_HOSTILE, SEAM_ALLIED = {"rival", "adversary"}, {"ally", "reluctant_ally"}
+    seams, seen = [], set()
+    # an alliance leg counts if either side declares it (A says Y is its ally, or Y says A is)
+    def allied(p, q):
+        for g in (hand.get((p, q)), hand.get((q, p))):
+            if g in SEAM_ALLIED:
+                return g
+        return None
+    ids = {k[0] for k in hand} | {k[1] for k in hand}
+    for (a, x), g in hand.items():
+        if g not in SEAM_HOSTILE:
+            continue
+        for y in ids:
+            if y in (a, x):
+                continue
+            gay, gxy = allied(a, y), allied(x, y)
+            if gay and gxy:
+                key = (frozenset((a, x)), y)
+                if key in seen:
+                    continue
+                seen.add(key)
+                seams.append({"a": a, "x": x, "y": y, "ax": g, "ay": gay, "xy": gxy})
+    seams.sort(key=lambda s: (s["y"], s["a"], s["x"]))
+
     out = {
         "generated": today.isoformat(),
+        "seams": seams,
         "grades": GRADES,
         "layers": list(TYPES.keys()),
         "actors": list(actors.values()),

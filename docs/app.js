@@ -101,6 +101,9 @@
     } else if (kind === "organisations") setView("orgs");
     else if (kind === "issues") setView("issues");
     else if (kind === "luttwak") setView("luttwak");
+    else if (kind === "seams") setView("seams");
+    else if (kind === "about") setView("about");
+    else if (kind === "colophon") setView("colophon");
     else { clear(); mapMode = "world"; renderLegend(); setView("map"); }
     window.scrollTo(0, 0);
   }
@@ -120,7 +123,7 @@
   orgSel.onchange = () => { orgSel.value ? showOrg(orgSel.value) : goHome(); };
   issueSel.onchange = () => { issueSel.value ? showIssue(issueSel.value) : goHome(); };
   document.querySelectorAll(".tab").forEach(b => b.onclick = () => b.dataset.view === "dossier" ? showDossier(pov || fullActors[0].id) : (pov ? setPov(pov) : goHome()));
-  const PAGE_HASH = { map: "#/", orgs: "#/organisations", issues: "#/issues", luttwak: "#/luttwak" };
+  const PAGE_HASH = { map: "#/", orgs: "#/organisations", issues: "#/issues", luttwak: "#/luttwak", seams: "#/seams", about: "#/about", colophon: "#/colophon" };
   document.querySelectorAll("#topnav a").forEach(a => { a.href = PAGE_HASH[a.dataset.page]; a.onclick = ev => { ev.preventDefault(); navigate(PAGE_HASH[a.dataset.page]); }; });
   document.getElementById("home").onclick = ev => { ev.preventDefault(); goHome(); };
   function setView(v, render = true) {
@@ -128,12 +131,15 @@
     document.querySelectorAll(".tab").forEach(b => b.classList.toggle("is-on", b.dataset.view === v));
     document.querySelectorAll("#topnav a").forEach(a => a.classList.toggle("is-on", a.dataset.page === v || (a.dataset.page === "map" && (v === "map" || v === "dossier"))));
     document.querySelectorAll(".view").forEach(s => s.classList.toggle("is-on", s.id === "view-" + v));
-    const isPage = ["orgs", "issues", "luttwak"].includes(v);
+    const isPage = ["orgs", "issues", "luttwak", "seams", "about", "colophon"].includes(v);
     document.querySelector(".side").style.display = isPage ? "none" : "";
     document.querySelector(".frame").classList.toggle("is-page", isPage);
     if (v === "orgs") renderOrgsPage();
     if (v === "issues") renderIssuesPage();
     if (v === "luttwak") renderLuttwakPage();
+    if (v === "seams") renderSeamsPage();
+    if (v === "about") renderAboutPage();
+    if (v === "colophon") renderColophonPage();
     if (!render) return;
     if (v === "map") drawMap();
     if (v === "dossier") renderDossier(pov || fullActors[0].id);
@@ -188,7 +194,8 @@
       `<h3>Bond</h3>
        <div class="row"><span class="sw" style="box-shadow:inset 0 0 0 3px var(--c-partner)"></span>Kin - shared identity</div>
        <div class="row"><span class="sw" style="box-shadow:inset 0 0 0 3px var(--c-rival)"></span>Grievance - open wound</div>
-       <div class="row"><span class="sw"></span>Affinity or no standing tie</div>`;
+       <div class="row"><span class="sw"></span>Affinity or no standing tie</div>` +
+      (SEAMS_ON_MAP && seamsAround(pov).length ? `<h3>Seams</h3><div class="row"><span class="sw" style="border:1.5px dashed var(--c-seam)"></span>Pulled between ${actors[pov].short || actors[pov].name} and a rival (${new Set(seamsAround(pov).map(s => s.y)).size})</div>` : "");
   }
 
   // ---------- tooltip
@@ -262,6 +269,7 @@
       g.selectAll("path.grat").attr("stroke-width", .5 / k).attr("stroke-dasharray", `${2 / k} ${3 / k}`);
       g.selectAll("path.p").attr("stroke-width", f => litWidth(f) / k).attr("stroke-dasharray", f => isClaimed(f) ? `${3 / k} ${2 / k}` : null);
       g.selectAll("path.bond").attr("stroke-width", 3.4 / k);
+      g.selectAll("path.seam").attr("stroke-width", 1.6 / k).attr("stroke-dasharray", `${4 / k} ${3 / k}`);
       // a label shows only when its country is wide enough on screen to carry it (the point of view always does)
       g.selectAll(".labels text").attr("font-size", 10 / k).attr("stroke-width", 3 / k)
         .attr("opacity", a => {
@@ -293,6 +301,10 @@
       .attr("d", path).attr("pointer-events", "none").attr("stroke-linejoin", "round")
       .attr("fill", f => isClaimed(f) ? "url(#hatch)" : litColor(f)).attr("fill-opacity", f => isClaimed(f) ? 1 : litLight(f))
       .attr("stroke", litColor).attr("stroke-width", litWidth).attr("filter", "url(#glow)");
+    // seams: the actors pulled between the point of view and one of its rivals get a dashed outline in the seam colour
+    const seamIds = SEAMS_ON_MAP && posture ? new Set(seamsAround(pov).map(s => s.y)) : new Set();
+    countries.selectAll("path.seam").data(world.features.filter(f => seamIds.has(f.id))).join("path").attr("class", "seam")
+      .attr("d", path).attr("fill", "none").attr("pointer-events", "none").attr("stroke", css("--c-seam")).attr("stroke-width", 1.6).attr("stroke-dasharray", "4 3").attr("filter", "url(#glow)");
     // bond: a band inside the border - blue for kin, red for grievance, none otherwise; clipped to its own country
     const bonded = !posture ? [] : world.features.filter(f => stanceOf(f.id) && ["kin", "grievance"].includes(stanceOf(f.id).bond));
     bonded.forEach(f => defs.append("clipPath").attr("id", "clip-" + f.id).append("path").attr("d", path(f)));
@@ -473,6 +485,61 @@
       <p>Two essays carried the logic beyond war. <b>"From Geopolitics to Geo-Economics"</b> (1990) argued that with the superpower rivalry fading, states would pursue adversarial aims through economic means, subsidies, trade rules, control of technology, with the grammar of commerce but the logic of conflict: that is the logic of the dependency layer in this atlas, where gas contracts, pipelines, loans, arms and remittances are read as instruments rather than markets. <b>"Toward Post-Heroic Warfare"</b> (1995) observed that advanced societies with small families will not accept casualties, so their wars become distant, aerial, delegated. <b>"Give War a Chance"</b> (1999) drew the harder conclusion that an outside intervention which freezes a war before either side is exhausted often prolongs the conflict it means to stop, which is why "frozen" disputes are so prominent on these maps.</p>
       <p><b>The Rise of China vs. the Logic of Strategy</b> (2012) applies the paradoxical logic to the present. A power that grows in economic and military strength at once triggers the reactions of everyone around it; its rise is self-limiting unless it deliberately slows one of the two. Luttwak coins <b>great-state autism</b> for the inward-looking condition of very large states, China, Russia and the United States alike, so absorbed by their own scale and domestic noise that they cannot perceive how their actions look to others, and are then surprised by the coalitions they produce. On the posture maps that is the pattern to look for: the actor whose "partners" are quietly hedging.</p>
       <p class="fine">Edward N. Luttwak: <i>Coup d'État: A Practical Handbook</i> (1968); <i>The Grand Strategy of the Roman Empire</i> (1976); <i>The Grand Strategy of the Soviet Union</i> (1983); <i>Strategy: The Logic of War and Peace</i> (1987, rev. 2001); "From Geopolitics to Geo-Economics", <i>The National Interest</i> (1990); "Toward Post-Heroic Warfare", <i>Foreign Affairs</i> (1995); "Give War a Chance", <i>Foreign Affairs</i> (1999); <i>The Grand Strategy of the Byzantine Empire</i> (2009); <i>The Rise of China vs. the Logic of Strategy</i> (2012).</p>`;
+  }
+
+  // ---------- seams: A hostile to X while both are allies of Y - Y is pulled two ways (computed by the build
+  // from hand-written stances of confidence A or B only; provisional reciprocals never count)
+  const SEAMS = data.seams || [];
+  const seamsOf = id => SEAMS.filter(s => s.y === id);
+  const seamsAround = id => SEAMS.filter(s => s.a === id || s.x === id);   // the seams this actor pulls on
+  const SEAMS_ON_MAP = false;   // the dashed seam outline on the map: on once Davide approves the look
+  const nameOf = id => esc(actors[id] ? (actors[id].short || actors[id].name) : id);
+  function renderSeamsPage() {
+    const el = document.getElementById("page-seams");
+    const byY = d3.group(SEAMS, s => s.y);
+    const order = [...byY.entries()].sort((p, q) => q[1].length - p[1].length || actors[p[0]].name.localeCompare(actors[q[0]].name));
+    el.innerHTML = `<h2>Seams</h2><p class="lede">A seam is an actor pulled two ways: it is an ally of two actors that are rivals or adversaries of each other. In Luttwak's grammar the seam between an opponent and its allies is where relational manoeuvre aims, and where an alliance is tested first. ${SEAMS.length} seams across ${order.length} actors, from the cards written so far; only hand-written postures of confidence A or B count, never the provisional reciprocals.</p>
+      <div class="seams">` + order.map(([y, list]) => `<div class="seam-block"><h3><a href="#/view/${y}">${nameOf(y)}</a> <span>pulled ${list.length} way${list.length > 1 ? "s" : ""}</span></h3>` +
+        list.map(s => `<div class="seam"><a href="#/view/${s.a}">${nameOf(s.a)}</a> <i class="h">${s.ax}</i> <a href="#/view/${s.x}">${nameOf(s.x)}</a><span class="both">both <i class="al">${s.ay === s.xy ? s.ay.replace("_", " ") : s.ay.replace("_", " ") + " / " + s.xy.replace("_", " ")}</i> of ${nameOf(y)}</span></div>`).join("") + `</div>`).join("") + `</div>`;
+    el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
+  }
+
+  function renderAboutPage() {
+    const el = document.getElementById("page-about");
+    if (el.dataset.done) return;
+    el.dataset.done = "1";
+    el.innerHTML = `
+      <h2>About</h2>
+      <p class="lede">Grand Strategy is a situation map of the world: for every state and state-like actor, what it wants, with what means, against which constraints, and how it sees everyone else. The reading grid is Edward N. Luttwak's idea of grand strategy, and the site is built in his honour.</p>
+      <h3>What a card holds</h3>
+      <p>Each actor with a full card carries its <b>objectives</b> ranked, its <b>means</b> by domain (diplomatic, informational, military, economic), its <b>constraints</b>, its <b>paradoxes</b> (the places where its own moves turn against it) and a short <b>reading</b>. Every claim has a source with a tier (official document, research, quality press, other) and a confidence grade: <b>A</b> an official document or two independent sources, <b>B</b> one good source, <b>C</b> press or our own inference, always shown.</p>
+      <h3>Posture and bond</h3>
+      <p>How one actor sees another is recorded on two axes. The <b>posture</b> is the relationship today, on a closed scale: own territory, claimed but not controlled, ally, reluctant ally, partner, reluctant partner, neutral, rival, adversary. "Adversary" is kept for mortal enemies, where the other's existence or regime is the problem; nearly all bad relationships are rivalries. The grade follows the structural position, never the rhetoric of a communiqué: two members of the same alliance with open friction are reluctant allies, not rivals. The <b>bond</b> is what lies under the posture and would survive a change of government: kin, affinity, none, or grievance. On the map the posture is the colour of the outline and of the light inside a country; the bond is a band inside the border.</p>
+      <h3>Relations</h3>
+      <p>Under the postures sit the relation rows, in four layers: <b>objectives</b> (what an actor wants from another), <b>alignments</b> (treaties, memberships, recognitions), <b>dependencies</b> (energy, trade, debt, arms, remittances, with numbers) and <b>actions</b> (dated events: votes, sanctions, visits, exercises). The datasets are the floor: memberships from Wikidata and official lists, recognition tables from Wikipedia with their citations, every recorded vote of the UN General Assembly since 2022 from the UN Digital Library. The cards are the reading on top of that floor.</p>
+      <h3>Seams</h3>
+      <p>A <b>seam</b> is an actor pulled two ways: an ally of two actors that are rivals or adversaries of each other. Greece between Israel and Turkey, the United States between Saudi Arabia and the Emirates, Italy between Hungary and Ukraine. The word is Luttwak's. In <i>Strategy</i> he describes <b>relational manoeuvre</b> as the style that aims not at the enemy's strength but at his specific weaknesses, his doctrine, his habits and the <i>seams</i> between him and his allies, where a small force can obtain a large effect. The Byzantine book shows the same idea at the scale of an empire that survived a thousand years by dividing its enemies rather than destroying them. The Seams page lists every such triangle the atlas can see; the map marks them for the actor you are looking at. They are computed from hand-written postures of confidence A or B only.</p>
+      <h3>How it is made</h3>
+      <p>The data lives in plain files, one per actor, separate from the site, and is versioned in the open: the whole history of every grade is in the repository. Cards are researched and drafted by language-model agents working from a shared brief and the atlas's own rules, then reread by a stronger model that checks objectives, paradoxes and every posture grade against the sources and against the neighbouring cards; the owner samples the result. A new card's grades retroact on the cards already written as provisional reciprocals, flagged as such until written from the other side. Nothing is embedded in the site: it renders the data as it stands on the day of the last build, and the stamp in the top bar says which day that was.</p>
+      <h3>What it is not</h3>
+      <p>It is not a forecast and not a verdict. Where a card says less than you expected, it is because the sources did not hold. Where a posture surprises you, open the dossier: the note under each grade says why it was read that way, and the footnote says who said so.</p>`;
+  }
+
+  function renderColophonPage() {
+    const el = document.getElementById("page-colophon");
+    if (el.dataset.done) return;
+    el.dataset.done = "1";
+    el.innerHTML = `
+      <h2>Colophon</h2>
+      <p class="lede">Provisional. The final text is being written.</p>
+      <h3>Who</h3>
+      <p><b>Grand Strategy</b> is conceived, directed and edited by <b>Davide Caniatti</b>. Research, drafting and code are produced with Claude (Anthropic) under his direction; every grade on the site has been read by a person or is marked as provisional. Started on 12 October 2026.</p>
+      <h3>Data and sources</h3>
+      <p>Borders from Natural Earth (110m), with Kosovo added. Flags by flagcdn.com. Memberships from Wikidata and the organisations' official lists; recognition tables from Wikipedia with their citations; UN General Assembly recorded votes from the UN Digital Library. Each card cites its own sources in the dossier footnotes. Data, method, decision log and code are public on GitHub: <a href="https://github.com/AndreottiVIII/grand-strategy" target="_blank" rel="noopener">AndreottiVIII/grand-strategy</a>.</p>
+      <h3>Type and look</h3>
+      <p>VT323, Share Tech Mono and IBM Plex Mono via Google Fonts. The display is modelled on the vector screens of the NORAD command centre as shown in <i>WarGames</i> (1983); the home map after Alighiero Boetti's <i>Mappa</i>. Portrait of Edward N. Luttwak by Elekes Andor, 2026, CC BY 4.0, Wikimedia Commons. Maps drawn with D3.</p>
+      <h3>Contact</h3>
+      <p>To be added.</p>`;
   }
 
   function tipFor(id, fallbackName, ev) {
