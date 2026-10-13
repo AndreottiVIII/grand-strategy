@@ -1,5 +1,18 @@
 # Journal
 
+## 2026-10-13 · Five readings on top of the data: Seams, Clients, Faults, Gatherings, Currents, and Theatres
+
+Built one at a time with Davide, each proposed, shown, corrected, then written into ONTOLOGY.md.
+All computed by the build from hand-written stances of confidence A or B (reciprocals and dataset
+stances never count, except that treaty alliances count for a gathering's maturity): seams (an ally
+of two rivals), clients (the lean between two readings of the same pair, Luttwak's client system),
+faults (bond against posture: feuds and Byzantine alliances), gatherings (the counter-coalition an
+actor summons, with maturity), currents (trends weighted on a doubling scale, drift and turbulence,
+alarms, snapshots since the last build; warming outlines breathe and cooling ones flicker on the
+map), theatres (seventeen hand-kept theatres with a heat; adversaries very high, rivals high,
+reluctant low; their own map, filled by heat, names on click). Organisations and Issues hidden
+from the menu; About (with the Colophon) added; the nav restyled. Next ideas in BACKLOG.
+
 ## 2026-10-13 · Seams, About and Colophon
 
 Davide's idea: show the actors pulled two ways (ally of two rivals), "friction" - named Seams

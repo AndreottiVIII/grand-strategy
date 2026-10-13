@@ -13,6 +13,16 @@ Ideas and deferred steps, with the date they were parked. Davide: "keep them in 
 like every improving idea that comes to you".
 
 - 2026-10-13 · **Thin minor cards to thicken later**: Bahrain has no stance toward Saudi Arabia (its patron since 2011) or the UK base; the Haiku budget ran out. Revisit with the Gulf reverse pass.
+- 2026-10-13 · **Great-state autism index** (Luttwak on China): per big actor, the share of counterparts
+  that grade it hostile or cooling while it grades them partner or ally. Zero research; best once
+  USA, CHN, RUS are written.
+- 2026-10-13 · **Byzantine index** (attrition vs relational manoeuvre): per actor, the mix of instruments
+  in its relation rows - military actions against agreements, money and dependencies created.
+- 2026-10-13 · **Paradox taxonomy**: classify every card's paradoxes by type (the patron that costs, the
+  deterrence that provokes, the sanction that hits the sanctioner, enlargement that paralyses, the
+  victory that summons the coalition) with one reading agent; count which recur where.
+- 2026-10-13 · **Seams on the map**: dashed outline built, switched off (`SEAMS_ON_MAP`) until Davide approves.
+- 2026-10-13 · **Colophon contact**: still "to be added".
 - 2026-10-13 · **An `aid` dependency type**: grants and development aid have no type in the relation vocabulary, so Bhutan, Nepal and others record them as `agreement` actions. Decide with a JOURNAL entry and an ONTOLOGY change.
 - 2026-10-12 · **Territorial claims from Wikidata** (P1336 "territory claimed by"): hatched
   "claimed" territories for every claimant (Taiwan for China, Crimea, Kashmir, Golan,
