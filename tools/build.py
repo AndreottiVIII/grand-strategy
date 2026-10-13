@@ -564,8 +564,57 @@ def main():
                     changes["trends"].append({"a": a, "x": x, "from": pt, "to": t})
     (SNAP / f"{today.isoformat()}.json").write_text(json.dumps(snap_now, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
+    # --- theatres (Luttwak's theatre level): hand-kept spaces where several actors' forces add up
+    # (data/theatres.yaml). Heat per theatre, over the pairs of members, on the doubling scale:
+    # hostility (rival 4, adversary 8), seams touching the theatre 4, feuds 4, claimed territory 4,
+    # movements with stakes (ally cooling, rival warming) 4; divided by the number of possible pairs.
+    theatres = []
+    tpath = DATA / "theatres.yaml"
+    if tpath.exists():
+        seam_keys = {(frozenset((sm["a"], sm["x"])), sm["y"]) for sm in seams}
+        feud_pairs = {frozenset((f["a"], f["x"])) for f in faults if f["kind"] == "feud"}
+        for t in (yaml.safe_load(tpath.open(encoding="utf-8")) or {}).get("theatres", []):
+            members = [m for m in t["members"] if m in actors and not is_org(m)]
+            mset = set(members)
+            pairs = [(p, q) for i, p in enumerate(members) for q in members[i + 1:]]
+            if not pairs:
+                continue
+            heat = {"hostility": 0, "seams": 0, "faults": 0, "claims": 0, "movement": 0}
+            top = []
+            for (a, x), st in handst.items():
+                if a not in mset or x not in mset:
+                    continue
+                g, tr = st["grade"], st.get("trend")
+                w = 0
+                if g == "adversary":
+                    heat["hostility"] += 8; w += 8
+                elif g == "rival":
+                    heat["hostility"] += 4; w += 4
+                elif g == "claimed_territory":
+                    heat["claims"] += 4; w += 4
+                if (g in FAULT_ALLIED and tr == "cooling") or (g in FAULT_HOSTILE and tr == "warming"):
+                    heat["movement"] += 4; w += 4
+                if w:
+                    top.append({"a": a, "x": x, "grade": g, "trend": tr, "weight": w})
+            for fp in feud_pairs:
+                if fp <= mset:
+                    heat["faults"] += 4
+            for (ax, y) in seam_keys:
+                if ax <= mset and y in mset:
+                    heat["seams"] += 4
+            total = sum(heat.values())
+            top.sort(key=lambda r: (-r["weight"], r["a"], r["x"]))
+            written = sum(1 for m in members if (actors[m].get("card") == "full"))
+            theatres.append({"id": t["id"], "name": t["name"], "members": members, "cards": written, "pairs": len(pairs),
+                             "heat": round(total / len(pairs), 2), "parts": heat, "top": top[:6]})
+        theatres.sort(key=lambda t: -t["heat"])
+        mx = max((t["heat"] for t in theatres), default=0) or 1
+        for t in theatres:
+            t["index"] = round(100 * t["heat"] / mx)
+
     out = {
         "generated": today.isoformat(),
+        "theatres": theatres,
         "seams": seams,
         "clients": clients,
         "faults": faults,

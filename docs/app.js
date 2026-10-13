@@ -106,6 +106,7 @@
     else if (kind === "faults") setView("faults");
     else if (kind === "gatherings") setView("gatherings");
     else if (kind === "currents") setView("currents");
+    else if (kind === "theatres") setView("theatres");
     else if (kind === "about") setView("about");
     else if (kind === "colophon") { setView("about"); const c = document.getElementById("colophon"); if (c) c.scrollIntoView(); return; }
     else { clear(); mapMode = "world"; renderLegend(); setView("map"); }
@@ -127,7 +128,7 @@
   orgSel.onchange = () => { orgSel.value ? showOrg(orgSel.value) : goHome(); };
   issueSel.onchange = () => { issueSel.value ? showIssue(issueSel.value) : goHome(); };
   document.querySelectorAll(".tab").forEach(b => b.onclick = () => b.dataset.view === "dossier" ? showDossier(pov || fullActors[0].id) : (pov ? setPov(pov) : goHome()));
-  const PAGE_HASH = { map: "#/", orgs: "#/organisations", issues: "#/issues", luttwak: "#/luttwak", seams: "#/seams", clients: "#/clients", faults: "#/faults", gatherings: "#/gatherings", currents: "#/currents", about: "#/about", colophon: "#/colophon" };
+  const PAGE_HASH = { map: "#/", orgs: "#/organisations", issues: "#/issues", luttwak: "#/luttwak", seams: "#/seams", clients: "#/clients", faults: "#/faults", gatherings: "#/gatherings", currents: "#/currents", theatres: "#/theatres", about: "#/about", colophon: "#/colophon" };
   document.querySelectorAll("#topnav a").forEach(a => { a.href = PAGE_HASH[a.dataset.page]; a.onclick = ev => { ev.preventDefault(); navigate(PAGE_HASH[a.dataset.page]); }; });
   document.getElementById("home").onclick = ev => { ev.preventDefault(); goHome(); };
   function setView(v, render = true) {
@@ -135,7 +136,7 @@
     document.querySelectorAll(".tab").forEach(b => b.classList.toggle("is-on", b.dataset.view === v));
     document.querySelectorAll("#topnav a").forEach(a => a.classList.toggle("is-on", a.dataset.page === v || (a.dataset.page === "map" && (v === "map" || v === "dossier"))));
     document.querySelectorAll(".view").forEach(s => s.classList.toggle("is-on", s.id === "view-" + v));
-    const isPage = ["orgs", "issues", "luttwak", "seams", "clients", "faults", "gatherings", "currents", "about"].includes(v);
+    const isPage = ["orgs", "issues", "luttwak", "seams", "clients", "faults", "gatherings", "currents", "theatres", "about"].includes(v);
     document.querySelector(".side").style.display = isPage ? "none" : "";
     document.querySelector(".frame").classList.toggle("is-page", isPage);
     if (v === "orgs") renderOrgsPage();
@@ -146,6 +147,7 @@
     if (v === "faults") renderFaultsPage();
     if (v === "gatherings") renderGatheringsPage();
     if (v === "currents") renderCurrentsPage();
+    if (v === "theatres") renderTheatresPage();
     if (v === "about") renderAboutPage();
     if (!render) return;
     if (v === "map") drawMap();
@@ -609,6 +611,55 @@
     el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
   }
 
+  // ---------- theatres: hand-kept spaces where several actors' forces add up, with a heat computed by the build
+  const THEATRES = data.theatres || [];
+  function renderTheatresPage() {
+    const el = document.getElementById("page-theatres");
+    const PART = { hostility: "hostility", seams: "seams", faults: "feuds", claims: "claims", movement: "movement" };
+    el.innerHTML = `<h2>Theatres</h2><p class="lede">The level below grand strategy in Luttwak's ladder: the theatre, where geography and several actors' forces add up, and where the readings on these pages become acute. Seventeen theatres, kept by hand; an actor may sit in more than one. The heat of a theatre is computed from what the atlas has read between its members: declared hostility, seams, feuds, claimed territory and movements with stakes.</p>
+      <div class="tmap-wrap"><svg id="tmap"></svg></div>
+      <p class="how">Heat is the sum of the weights between the members of a theatre, divided by the number of possible pairs, so a small dense theatre is not outweighed by a large one; 100 is the hottest theatre today, the others are scaled to it. Theatres whose members have few cards yet read cold for lack of data, not for peace: the card count says how far each one is written.</p>
+      <div class="theatres">` + THEATRES.map(t => `<div class="theatre" data-id="${t.id}"><h3>${esc(t.name)} <span>${t.index}</span></h3>
+        <div class="hbar"><span style="width:${t.index}%"></span></div>
+        <div class="parts">${Object.entries(t.parts).filter(([, v]) => v).map(([k, v]) => `<i>${PART[k]} ${v}</i>`).join(" · ") || "<i>nothing read yet</i>"} <em>· ${t.cards} of ${t.members.length} members with a card</em></div>
+        <div class="top">${t.top.map(r => `<a href="#/view/${r.a}">${nameOf(r.a)}</a> <b style="color:${gradeBorder(r.grade)}">${r.grade.replace("_", " ")}</b> <a href="#/view/${r.x}">${nameOf(r.x)}</a>${r.trend && r.trend !== "stable" ? ` <u>${TREND_SIGN[r.trend]} ${r.trend}</u>` : ""}`).join("<br>")}</div>
+      </div>`).join("") + `</div>
+      <details class="method"><summary>How heat is computed</summary><p>For every pair of members of a theatre the build adds: adversary 8, rival 4, claimed territory 4, an ally cooling or a rival warming 4; for every feud inside the theatre 4; for every seam whose three actors are inside it 4. Only hand-written stances of confidence A or B count. The sum is divided by the number of possible pairs among the members, and the result is scaled so that the hottest theatre reads 100. The list of theatres and their members is kept by hand in data/theatres.yaml; organisations are never members. On the map each theatre's members are lit with its heat; click a theatre below to light it alone.</p></details>`;
+    drawTheatreMap();
+    el.querySelectorAll(".theatre").forEach(d => d.onclick = ev => { if (ev.target.closest("a")) return; const on = d.classList.toggle("is-on"); el.querySelectorAll(".theatre").forEach(o => { if (o !== d) o.classList.remove("is-on"); }); drawTheatreMap(on ? d.dataset.id : null); });
+    el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
+  }
+  function drawTheatreMap(only) {
+    const svg = d3.select("#tmap");
+    svg.selectAll("*").remove();
+    const { width, height } = svg.node().getBoundingClientRect();
+    const proj = d3.geoNaturalEarth1().fitExtent([[6, 6], [width - 6, height - 6]], world);
+    const path = d3.geoPath(proj);
+    const defs = svg.append("defs");
+    const glow = defs.append("filter").attr("id", "tglow").attr("x", "-20%").attr("y", "-20%").attr("width", "140%").attr("height", "140%");
+    glow.append("feGaussianBlur").attr("stdDeviation", 2.2).attr("result", "b");
+    const mg = glow.append("feMerge"); mg.append("feMergeNode").attr("in", "b"); mg.append("feMergeNode").attr("in", "SourceGraphic");
+    svg.append("rect").attr("width", width).attr("height", height).attr("fill", css("--paper"));
+    const g = svg.append("g");
+    g.append("path").attr("d", path(d3.geoGraticule10())).attr("fill", "none").attr("stroke", css("--grat")).attr("stroke-width", .5).attr("stroke-dasharray", "2 3");
+    g.selectAll("path.c").data(world.features).join("path").attr("d", path).attr("fill", css("--land")).attr("stroke", css("--coast")).attr("stroke-opacity", .6).attr("stroke-width", .5);
+    const heatColor = d3.scaleLinear().domain([0, 50, 100]).range([css("--c-seam"), css("--c-reluctant_ally"), css("--c-adversary")]);
+    const list = only ? THEATRES.filter(t => t.id === only) : THEATRES;
+    // the hottest theatre is drawn last so it sits on top where theatres overlap
+    [...list].sort((p, q) => p.index - q.index).forEach(t => {
+      const feats = world.features.filter(f => t.members.includes(f.id));
+      const col = heatColor(t.index), op = .12 + .5 * t.index / 100;
+      g.selectAll(null).data(feats).join("path").attr("d", path).attr("fill", col).attr("fill-opacity", op).attr("stroke", col).attr("stroke-width", .9).attr("stroke-opacity", .5 + .5 * t.index / 100).attr("filter", "url(#tglow)")
+        .append("title").text(`${t.name} · ${t.index}`);
+      // label at the centroid of the members
+      const cs = feats.map(f => path.centroid(f)).filter(c => isFinite(c[0]));
+      if (cs.length) {
+        const cx = d3.mean(cs, c => c[0]), cy = d3.mean(cs, c => c[1]);
+        g.append("text").attr("x", cx).attr("y", cy).attr("text-anchor", "middle").attr("font-family", css("--font-ui")).attr("font-size", 10).attr("letter-spacing", ".12em").attr("fill", col).attr("paint-order", "stroke").attr("stroke", css("--paper")).attr("stroke-width", 3).text(`${t.name.toUpperCase()} ${t.index}`);
+      }
+    });
+  }
+
   function renderAboutPage() {
     const el = document.getElementById("page-about");
     if (el.dataset.done) return;
@@ -632,6 +683,8 @@
       <p>A <b>gathering</b> is the coalition that an actor's weight summons. The frame is <i>The Rise of China vs. the Logic of Strategy</i>: a power that grows or presses provokes, by the logic of strategy alone, the convergence of everyone it threatens, whether or not they speak to each other, and the great state, absorbed in its own scale, is the last to see it. Byzantium made a method of the same law from the other side, recruiting the enemies of its enemies. The Gatherings page lists, for every actor with at least three declared rivals, who has gathered against it, and measures how far the gathering has become a coalition: formed when most of its members are already allied with each other, waiting when they are not, which is the coalition the logic is still summoning. In each actor's dossier the <b>convergences</b> are the other side of the same reading: the actors that share one of its rivals and are not yet its allies, the tables it has not sat at.</p>
       <h3>Currents</h3>
       <p>Every posture carries a <b>trend</b>, warming, stable or cooling, and the trends are the first derivative of the map: not where the relationships stand but where they are going. The frame is Luttwak's <b>culminating point</b>, the moment at which a success begins to produce its own reversal. The Currents page reads the trends two ways. The alarms: allies that are cooling, which is the culminating point of an alliance, the protection that has begun to cost, and rivals that are warming, the rivalry past its useful peak. And two measures per actor: <b>drift</b>, which way its world is going, and <b>turbulence</b>, how much of it is moving. Each build keeps a snapshot of every grade, so the page can also say what changed since the last one. On the map, in the posture lens, a warming relationship pulses and a cooling one flickers, like phosphor brightening or dying.</p>
+      <h3>Theatres</h3>
+      <p>Below grand strategy in Luttwak's ladder of levels sits the <b>theatre</b>, where geography and several actors' forces add up and where strategy is actually conducted. The atlas keeps a hand list of seventeen theatres, from the Western Balkans to the Southern Cone, and computes for each a <b>heat</b> from what it has read between the members: declared hostility, seams, feuds, claimed territory and movements with stakes, divided by the number of possible pairs so that a small dense theatre is not outweighed by a large one. The Theatres page has its own map, lit by heat, and the list of what makes each theatre hot. A theatre whose members have few cards reads cold for lack of data, not for peace.</p>
       <h3>How it is made</h3>
       <p>The data lives in plain files, one per actor, separate from the site, and is versioned in the open: the whole history of every grade is in the repository. Cards are researched and drafted by language-model agents working from a shared brief and the atlas's own rules, then reread by a stronger model that checks objectives, paradoxes and every posture grade against the sources and against the neighbouring cards; the owner samples the result. A new card's grades retroact on the cards already written as provisional reciprocals, flagged as such until written from the other side. Nothing is embedded in the site: it renders the data as it stands on the day of the last build, and the stamp in the top bar says which day that was.</p>
       <h3>What it is not</h3>
