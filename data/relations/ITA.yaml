@@ -1025,3 +1025,24 @@ relations:
     tier: 1
   to: SMR
   mirrored_from: SMR
+- layer: alignment
+  type: treaty
+  summary: Lateran Treaty (signed 11 Feb 1929, ratified 7 Jun 1929) created Vatican City under the Holy See's sovereignty; the 1984 revised concordat (signed 18 Feb 1984) replaced it on the points that
+    mattered. Diplomatic relations with Italy date from 1929.
+  since: 1929-02-11
+  until: null
+  last_verified: '2026-10-13'
+  confidence: B
+  sources:
+  - url: https://www.vatican.va/roman_curia/secretariat_state/documents/rc_seg-st_20010123_holy-see-relations_en.html
+    title: Bilateral relations of the Holy See (list of states with relations)
+    publisher: Holy See Secretariat of State
+    date: 2026-10-12
+    tier: 1
+  - url: https://en.wikipedia.org/wiki/Lateran_Treaty
+    title: Lateran Treaty (index only, dates to be verified against the Gazzetta Ufficiale)
+    publisher: Wikipedia
+    date: 2026-10-12
+    tier: 4
+  to: VAT
+  mirrored_from: VAT

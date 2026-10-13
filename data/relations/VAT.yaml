@@ -1,0 +1,152 @@
+from: VAT
+relations:
+  # ---------- objective ----------
+  - to: CHN
+    layer: objective
+    type: influence_goal
+    summary: Keep a channel to Chinese Catholics and a say in bishop appointments through the 2018 provisional agreement, renewed on 22 Oct 2024 for four years (to 22 Oct 2028). The agreement text is unpublished.
+    since: 2018-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.ansa.it/english/news/vatican/2024/10/22/holy-see-renews-china-bishops-deal-dialogue-continues_60018a78-8e89-4fde-8742-134ae718fc0a.html", title: "Holy See renews China bishops deal, dialogue continues", publisher: "ANSA", date: 2024-10-22, tier: 3}
+      - {url: "https://fides.org/en/news/75559", title: "The Agreement between China and the Holy See has been renewed for four years. This is good news", publisher: "Fides", date: 2024-10-22, tier: 2}
+  - to: RUS
+    layer: objective
+    type: influence_goal
+    summary: Offer the Vatican as the venue for Russia-Ukraine talks and press for a ceasefire. Moscow has not accepted the venue (as of Jul 2025 reporting); no later talks are sourced.
+    since: 2025-05-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.euronews.com/2025/07/09/zelenkskyy-and-pope-leo-xiv-suggest-vatican-as-venue-for-ukraine-peace-talks", title: "Zelenskyy and Pope Leo XIV suggest Vatican as venue for Ukraine peace talks", publisher: "Euronews", date: 2025-07-09, tier: 3}
+      - {url: "https://www.ncronline.org/vatican/ukraines-zelenskyy-meets-pope-leo-xiv-both-propose-vatican-site-peace-talks", title: "Ukraine's Zelenskyy meets Pope Leo XIV; both propose Vatican site for peace talks", publisher: "National Catholic Reporter", date: 2025-07-09, tier: 3}
+
+  # ---------- alignment ----------
+  - to: ITA
+    layer: alignment
+    type: treaty
+    summary: Lateran Treaty (signed 11 Feb 1929, ratified 7 Jun 1929) created Vatican City under the Holy See's sovereignty; the 1984 revised concordat (signed 18 Feb 1984) replaced it on the points that mattered. Diplomatic relations with Italy date from 1929.
+    since: 1929-02-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.vatican.va/roman_curia/secretariat_state/documents/rc_seg-st_20010123_holy-see-relations_en.html", title: "Bilateral relations of the Holy See (list of states with relations)", publisher: "Holy See Secretariat of State", date: 2026-10-12, tier: 1}
+      - {url: "https://en.wikipedia.org/wiki/Lateran_Treaty", title: "Lateran Treaty (index only, dates to be verified against the Gazzetta Ufficiale)", publisher: "Wikipedia", date: 2026-10-12, tier: 4}
+  - to: PSE
+    layer: alignment
+    type: recognition
+    summary: Holy See and the State of Palestine established formal diplomatic relations in 2015 through a Comprehensive Agreement. Not in the recognition dataset (its Palestine list omits VAT); written here by hand, to be reconciled.
+    since: 2015-06-26
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.vatican.va/roman_curia/secretariat_state/documents/rc_seg-st_20010123_holy-see-relations_en.html", title: "Bilateral relations of the Holy See (lists Palestine 2015)", publisher: "Holy See Secretariat of State", date: 2026-10-12, tier: 1}
+      - {url: "https://mfa.gov.il/MFA/PressRoom/2015/Pages/Israeli-response-to-Vatican-recognition-of-PA-as-a-state-26-Jun-2015.aspx", title: "Israeli response to Vatican recognition of the PA as a state (URL as cited in Wikipedia, not fetched)", publisher: "Israel Ministry of Foreign Affairs", date: 2015-06-26, tier: 1}
+  - to: TWN
+    layer: alignment
+    type: recognition
+    summary: Holy See maintains diplomatic relations with the Republic of China (Taiwan), the only European state to do so per Wikipedia (index); the mission moved to Taipei in 1951. Not in the recognition dataset (its Taiwan list does include VAT, with no date or source); written here by hand.
+    since: 1951
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.vatican.va/roman_curia/secretariat_state/documents/rc_seg-st_20010123_holy-see-relations_en.html", title: "Bilateral relations of the Holy See (diplomatic relations also with the Republic of China)", publisher: "Holy See Secretariat of State", date: 2026-10-12, tier: 1}
+      - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Vatican_City", title: "Foreign relations of Vatican City (index only)", publisher: "Wikipedia", date: 2026-10-12, tier: 4}
+
+  # ---------- dependency ----------
+  - to: CHE
+    layer: dependency
+    type: military_presence
+    summary: The Swiss Guard (135 men, recruited in Switzerland) is the Holy See's guard force; brought back to full strength in 2024 with 34 new recruits. Not an army, but the physical security of the Holy See depends on Swiss recruitment.
+    value: 135
+    unit: guards
+    since: 2024-04-30
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.ansa.it/english/news/vatican/2024/04/30/34-new-swiss-guards-to-bring-army-back-up-to-full-complement_2dac7f97-0ab5-454e-b1c3-952a70b59b11.html", title: "34 new Swiss Guards to bring army back up to full complement", publisher: "ANSA", date: 2024-04-30, tier: 3}
+
+  # ---------- action ----------
+  - to: TUR
+    layer: action
+    type: visit
+    summary: Pope Leo XIV's first foreign trip, to Turkey on 27-30 Nov 2025, with a joint pilgrimage to Nicaea (İznik) with Patriarch Bartholomew for the 1,700th anniversary of the council, then Istanbul.
+    since: 2025-11-27
+    until: 2025-11-30
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.asianews.it/en/middle-east/lebanon/leo-xiv-to-visit-turkey-and-lebanon-on-his-first-apostolic-trip", title: "Leo XIV to visit Turkey and Lebanon on his first apostolic trip", publisher: "AsiaNews", date: 2025-10-07, tier: 3}
+      - {url: "https://www.americamagazine.org/news/2025/10/27/pope-leo-nicaea-turkey-lebanon/", title: "Pope Leo Nicaea Turkey Lebanon", publisher: "America Magazine", date: 2025-10-27, tier: 3}
+  - to: LBN
+    layer: action
+    type: visit
+    summary: Visit to Lebanon, 30 Nov-2 Dec 2025, at the invitation of President Joseph Aoun, with meetings at Baabda, a call for peace and political unity amid Israeli strikes and the Hezbollah disarmament dispute.
+    since: 2025-11-30
+    until: 2025-12-02
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://today.lorientlejour.com/article/1480108/the-holy-see-confirms-dates-of-pope-leo-xivs-visit-to-lebanon.html", title: "The Holy See confirms dates of Pope Leo XIV's visit to Lebanon", publisher: "L'Orient-Le Jour", date: 2025-11, tier: 3}
+      - {url: "https://www.newarab.com/news/pope-leo-xiv-begins-lebanon-visit-meetings-baabda-palace", title: "Pope Leo XIV begins Lebanon visit with meetings at Baabda Palace", publisher: "The New Arab", date: 2025-11-30, tier: 3}
+  - to: CHN
+    layer: action
+    type: agreement
+    summary: Renewal of the provisional agreement on bishops for four years on 22 Oct 2024, after the Holy See acknowledged China's unilateral appointments in Shanghai and the Jiangxi diocese.
+    since: 2024-10-22
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.ansa.it/english/news/vatican/2024/10/22/holy-see-renews-china-bishops-deal-dialogue-continues_60018a78-8e89-4fde-8742-134ae718fc0a.html", title: "Holy See renews China bishops deal, dialogue continues", publisher: "ANSA", date: 2024-10-22, tier: 3}
+      - {url: "https://fides.org/en/news/75559", title: "The Agreement between China and the Holy See has been renewed for four years. This is good news", publisher: "Fides", date: 2024-10-22, tier: 2}
+  - to: UKR
+    layer: action
+    type: visit
+    summary: Zelenskyy met Leo XIV at Castel Gandolfo on 9 Jul 2025, thanked the Vatican for the return of children taken to Russia, and both proposed the Vatican as the venue for peace talks.
+    since: 2025-07-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.euronews.com/2025/07/09/zelenkskyy-and-pope-leo-xiv-suggest-vatican-as-venue-for-ukraine-peace-talks", title: "Zelenskyy and Pope Leo XIV suggest Vatican as venue for Ukraine peace talks", publisher: "Euronews", date: 2025-07-09, tier: 3}
+      - {url: "https://www.ncronline.org/vatican/ukraines-zelenskyy-meets-pope-leo-xiv-both-propose-vatican-site-peace-talks", title: "Ukraine's Zelenskyy meets Pope Leo XIV; both propose Vatican site for peace talks", publisher: "National Catholic Reporter", date: 2025-07-09, tier: 3}
+  - to: ISR
+    layer: action
+    type: incident
+    summary: Strike on the Holy Family parish in Gaza City on 17 Jul 2025 (Gaza's only Catholic parish, sheltering 600+ people; Israel says a tank shell fired in error). The Holy See called for a ceasefire; Leo XIV told Netanyahu so in a call on 18 Jul 2025.
+    since: 2025-07-17
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.catholicworldreport.com/2025/07/20/pope-leo-xiv-prays-by-name-for-gaza-parish-strike-victims-renews-plea-for-ceasefire/", title: "Pope Leo XIV prays by name for Gaza parish strike victims, renews plea for ceasefire", publisher: "Catholic World Report", date: 2025-07-20, tier: 3}
+      - {url: "https://www.jns.org/israel-news/pope-leo-urges-ceasefire-in-gaza-during-call-with-netanyahu", title: "Pope Leo urges ceasefire in Gaza during call with Netanyahu", publisher: "JNS", date: 2025-07-18, tier: 3}
+  - to: NIC
+    layer: action
+    type: incident
+    summary: Nicaragua expelled the nuncio (Mar 2022); the Holy See closed its Managua embassy (Mar 2023) after Nicaragua moved to end relations; the bishops' conference president was expelled (Nov 2024) and received by Leo XIV in exile (Aug 2025).
+    since: 2022-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.pbs.org/newshour/world/vatican-closes-embassy-in-nicaragua-in-response-to-crackdown-on-catholic-church", title: "Vatican closes embassy in Nicaragua in response to crackdown on Catholic Church", publisher: "PBS NewsHour (AP)", date: 2023-03-18, tier: 3}
+      - {url: "https://www.catholicworldreport.com/2025/08/25/pope-leo-xiv-receives-exiled-president-of-nicaraguan-bishops-conference/", title: "Pope Leo XIV receives exiled president of Nicaraguan bishops' conference", publisher: "Catholic World Report", date: 2025-08-25, tier: 3}
+  - to: VEN
+    layer: action
+    type: visit
+    summary: Opposition leader Maria Corina Machado met Leo XIV on 12 Jan 2026 and asked for help freeing political prisoners; the Vatican disclosed little of the audience.
+    since: 2026-01-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://euronews.com/2026/01/12/machado-seeks-pope-leo-xivs-support-for-venezuelas-transition-at-vatican-meeting", title: "Machado seeks Pope Leo XIV's support for Venezuela's transition at Vatican meeting", publisher: "Euronews", date: 2026-01-12, tier: 3}

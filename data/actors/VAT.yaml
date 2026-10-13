@@ -16,62 +16,75 @@ dataset: wikidata
 
 grand_strategy:
   objectives:
-  - text: "Keep the Holy See's diplomatic network and its standing as a sovereign subject: relations with 184 states, a 2015 agreement with the State of Palestine, and sovereignty over the enclave under the 1929 Lateran Treaty."
+  - confidence: B
+    text: "Keep the Holy See's diplomatic network and its standing as a sovereign subject: relations with 184 states, a 2015 agreement with the State of Palestine, and sovereignty over the enclave under the 1929 Lateran Treaty."
     rank: 1
     sources:
     - {url: "https://www.vatican.va/roman_curia/secretariat_state/documents/rc_seg-st_20010123_holy-see-relations_en.html", title: "Bilateral relations of the Holy See (list of states with relations)", publisher: "Holy See Secretariat of State", date: 2026-10-12, tier: 1}
     - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Vatican_City", title: "Foreign relations of Vatican City (index only)", publisher: "Wikipedia", date: 2026-10-12, tier: 4}
-  - text: "Keep the Church present and free where it is restricted: the 2018 provisional agreement with China on bishops (renewed on 22 Oct 2024 for four years), the expulsion of the nuncio and the closure of the embassy in Nicaragua, and the Christian communities of Lebanon."
+  - confidence: B
+    text: "Keep the Church present and free where it is restricted: the 2018 provisional agreement with China on bishops (renewed on 22 Oct 2024 for four years), the expulsion of the nuncio and the closure of the embassy in Nicaragua, and the Christian communities of Lebanon."
     rank: 2
     sources:
     - {url: "https://www.ansa.it/english/news/vatican/2024/10/22/holy-see-renews-china-bishops-deal-dialogue-continues_60018a78-8e89-4fde-8742-134ae718fc0a.html", title: "Holy See renews China bishops deal, dialogue continues", publisher: "ANSA", date: 2024-10-22, tier: 3}
     - {url: "https://www.pbs.org/newshour/world/vatican-closes-embassy-in-nicaragua-in-response-to-crackdown-on-catholic-church", title: "Vatican closes embassy in Nicaragua in response to crackdown on Catholic Church", publisher: "PBS NewsHour (AP)", date: 2023-03-18, tier: 3}
-  - text: "Ceasefires and a seat in the wars of Ukraine and Gaza, through papal appeals, envoys and offers to host Russia-Ukraine talks, without any power to impose them."
+  - confidence: C
+    text: "Ceasefires and a seat in the wars of Ukraine and Gaza, through papal appeals, envoys and offers to host Russia-Ukraine talks, without any power to impose them."
     rank: 3
     sources:
     - {url: "https://www.euronews.com/2025/07/09/zelenkskyy-and-pope-leo-xiv-suggest-vatican-as-venue-for-ukraine-peace-talks", title: "Zelenskyy and Pope Leo XIV suggest Vatican as venue for Ukraine peace talks", publisher: "Euronews", date: 2025-07-09, tier: 3}
     - {url: "https://www.catholicworldreport.com/2025/07/20/pope-leo-xiv-prays-by-name-for-gaza-parish-strike-victims-renews-plea-for-ceasefire/", title: "Pope Leo XIV prays by name for Gaza parish strike victims, renews plea for ceasefire", publisher: "Catholic World Report", date: 2025-07-20, tier: 3}
 
   means:
-  - text: "Diplomacy through nunciatures and the Secretariat of State under Cardinal Pietro Parolin: 184 states with relations, and the Holy See's accreditation to the UN system."
+  - confidence: B
+    text: "Diplomacy through nunciatures and the Secretariat of State under Cardinal Pietro Parolin: 184 states with relations, and the Holy See's accreditation to the UN system."
     sources:
     - {url: "https://www.vatican.va/roman_curia/secretariat_state/documents/rc_seg-st_20010123_holy-see-relations_en.html", title: "Bilateral relations of the Holy See (list of states with relations)", publisher: "Holy See Secretariat of State", date: 2026-10-12, tier: 1}
-  - text: "Moral authority of the pope: his first trip as Leo XIV to Turkey (27-30 Nov 2025, Nicaea anniversary with Patriarch Bartholomew) and Lebanon (30 Nov-2 Dec 2025); an Africa tour announced for April 2026; public appeals on Gaza, Ukraine and US migration."
+  - confidence: C
+    text: "Moral authority of the pope: his first trip as Leo XIV to Turkey (27-30 Nov 2025, Nicaea anniversary with Patriarch Bartholomew) and Lebanon (30 Nov-2 Dec 2025); an Africa tour announced for April 2026; public appeals on Gaza, Ukraine and US migration."
     sources:
     - {url: "https://www.asianews.it/en/middle-east/lebanon/leo-xiv-to-visit-turkey-and-lebanon-on-his-first-apostolic-trip", title: "Leo XIV to visit Turkey and Lebanon on his first apostolic trip", publisher: "AsiaNews", date: 2025-10-07, tier: 3}
     - {url: "https://www.americamagazine.org/news/2025/10/27/pope-leo-nicaea-turkey-lebanon/", title: "Pope Leo Nicaea Turkey Lebanon", publisher: "America Magazine", date: 2025-10-27, tier: 3}
     - {url: "https://www.graphic.com.gh/international/international-news/pope-leo-heads-to-africa-on-ambitious-tour-to-urge-help-for-continent.html", title: "Pope Leo XIV heads to Africa on ambitious tour to urge help for continent", publisher: "Graphic Online", date: 2026-04, tier: 3}
-  - text: "Quiet channels and envoys: Cardinal Matteo Zuppi's mission on the Ukrainian children, and Vatican-linked talks that preceded the release of 51 prisoners in Cuba (March 2026)."
+  - confidence: C
+    text: "Quiet channels and envoys: Cardinal Matteo Zuppi's mission on the Ukrainian children, and Vatican-linked talks that preceded the release of 51 prisoners in Cuba (March 2026)."
     sources:
     - {url: "https://www.euronews.com/2025/07/09/zelenkskyy-and-pope-leo-xiv-suggest-vatican-as-venue-for-ukraine-peace-talks", title: "Zelenskyy and Pope Leo XIV suggest Vatican as venue for Ukraine peace talks", publisher: "Euronews", date: 2025-07-09, tier: 3}
     - {url: "https://www.aleteia.org/2026/03/14/vatican-mediation-leads-to-cuba-prisoner-release/", title: "Vatican mediation leads to Cuba prisoner release", publisher: "Aleteia", date: 2026-03-14, tier: 3}
-  - text: "Church networks and donations: Peter's Pence raised EUR 57.6 million income in 2025 and funds a share of the papal budget; the wider Church (dioceses, Caritas) carries the humanitarian work."
+  - confidence: C
+    text: "Church networks and donations: Peter's Pence raised EUR 57.6 million income in 2025 and funds a share of the papal budget; the wider Church (dioceses, Caritas) carries the humanitarian work."
     sources:
     - {url: "https://www.pillarcatholic.com/p/costs-down-but-no-leo-bounce-peters", title: "Costs down but no Leo bounce: Peter's Pence sees fall in revenue and expenses", publisher: "The Pillar", date: 2026, tier: 3}
 
   constraints:
-  - text: "No army and no alliance: the enclave's security rests on Italian cooperation and on the Swiss Guard, 135 men recruited in Switzerland, which was brought back to full strength in 2024 with 34 new recruits."
+  - confidence: C
+    text: "No army and no alliance: the enclave's security rests on Italian cooperation and on the Swiss Guard, 135 men recruited in Switzerland, which was brought back to full strength in 2024 with 34 new recruits."
     sources:
     - {url: "https://www.ansa.it/english/news/vatican/2024/04/30/34-new-swiss-guards-to-bring-army-back-up-to-full-complement_2dac7f97-0ab5-454e-b1c3-952a70b59b11.html", title: "34 new Swiss Guards to bring army back up to full complement", publisher: "ANSA", date: 2024-04-30, tier: 3}
-  - text: "Structural budget deficit of about EUR 50-60 million a year (AP, June 2025), covered in part by Peter's Pence, which spent EUR 59.8 million in 2025 against EUR 57.6 million of income."
+  - confidence: C
+    text: "Structural budget deficit of about EUR 50-60 million a year (AP, June 2025), covered in part by Peter's Pence, which spent EUR 59.8 million in 2025 against EUR 57.6 million of income."
     sources:
     - {url: "https://www.ksat.com/news/2025/06/29/pope-leo-xiv-marks-feast-day-as-vatican-launches-campaign-to-help-erase-its-57-68-million-deficit/", title: "Pope Leo XIV marks feast day as Vatican launches campaign to help erase its $57-68 million deficit", publisher: "AP via KSAT", date: 2025-06-29, tier: 3}
     - {url: "https://www.pillarcatholic.com/p/costs-down-but-no-leo-bounce-peters", title: "Costs down but no Leo bounce: Peter's Pence sees fall in revenue and expenses", publisher: "The Pillar", date: 2026, tier: 3}
-  - text: "Cannot enforce its agreements: the China deal's text is unpublished, and Beijing has appointed bishops without Rome's agreement (Shanghai, the Jiangxi diocese), which the Holy See has acknowledged."
+  - confidence: B
+    text: "Cannot enforce its agreements: the China deal's text is unpublished, and Beijing has appointed bishops without Rome's agreement (Shanghai, the Jiangxi diocese), which the Holy See has acknowledged."
     sources:
     - {url: "https://www.ansa.it/english/news/vatican/2024/10/22/holy-see-renews-china-bishops-deal-dialogue-continues_60018a78-8e89-4fde-8742-134ae718fc0a.html", title: "Holy See renews China bishops deal, dialogue continues", publisher: "ANSA", date: 2024-10-22, tier: 3}
     - {url: "https://fides.org/en/news/75559", title: "The Agreement between China and the Holy See has been renewed for four years. This is good news", publisher: "Fides", date: 2024-10-22, tier: 2}
-  - text: "Its strongest partner is cooling: Leo XIV backed the US bishops against Trump's migration crackdown in Nov 2025, and Vance called the Vatican's immigration views troubling."
+  - confidence: C
+    text: "Its strongest partner is cooling: Leo XIV backed the US bishops against Trump's migration crackdown in Nov 2025, and Vance called the Vatican's immigration views troubling."
     sources:
     - {url: "https://abc7ny.com/post/pope-leo-xiv-strongly-backs-us-bishops-blasting-president-donald-trump-immigration-crackdown-urges-humane-treatment/18175005/", title: "Pope strongly backs US bishops in blasting Trump immigration crackdown, urges humane treatment", publisher: "ABC7 (AP)", date: 2025-11, tier: 3}
     - {url: "https://nation.africa/kenya/news/world/us-vp-vance-says-the-vatican-s-views-on-immigration-are-troubling--5466176", title: "US VP Vance says the Vatican's views on immigration are troubling", publisher: "Nation Africa", date: 2025, tier: 3}
 
   paradoxes:
-  - text: "The China deal buys a foothold for Chinese Catholics at the price of accepting bishops Beijing names alone; each renewal (2018, 2020, 2022, 2024) keeps the channel open while the practice drifts away from the text."
+  - confidence: B
+    text: "The China deal buys a foothold for Chinese Catholics at the price of accepting bishops Beijing names alone; each renewal (2018, 2020, 2022, 2024) keeps the channel open while the practice drifts away from the text."
     sources:
     - {url: "https://fides.org/en/news/75559", title: "The Agreement between China and the Holy See has been renewed for four years. This is good news", publisher: "Fides", date: 2024-10-22, tier: 2}
     - {url: "https://www.ansa.it/english/news/vatican/2024/10/22/holy-see-renews-china-bishops-deal-dialogue-continues_60018a78-8e89-4fde-8742-134ae718fc0a.html", title: "Holy See renews China bishops deal, dialogue continues", publisher: "ANSA", date: 2024-10-22, tier: 3}
-  - text: "Defending migrants and every state's right to control its borders at once: backing the US bishops protects the Church's voice in America, but it feeds the Vance-Trump line that the Vatican is wrong on immigration."
+  - confidence: C
+    text: "Defending migrants and every state's right to control its borders at once: backing the US bishops protects the Church's voice in America, but it feeds the Vance-Trump line that the Vatican is wrong on immigration."
     sources:
     - {url: "https://abc7ny.com/post/pope-leo-xiv-strongly-backs-us-bishops-blasting-president-donald-trump-immigration-crackdown-urges-humane-treatment/18175005/", title: "Pope strongly backs US bishops in blasting Trump immigration crackdown, urges humane treatment", publisher: "ABC7 (AP)", date: 2025-11, tier: 3}
     - {url: "https://nation.africa/kenya/news/world/us-vp-vance-says-the-vatican-s-views-on-immigration-are-troubling--5466176", title: "US VP Vance says the Vatican's views on immigration are troubling", publisher: "Nation Africa", date: 2025, tier: 3}
