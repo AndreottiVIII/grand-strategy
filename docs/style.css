@@ -286,3 +286,24 @@ sup.fn-sep { font-size: 10px; color: var(--ink-3); }
 .dossier .conv a { color: var(--ink); text-decoration: none; text-transform: uppercase; letter-spacing: .06em; font-family: var(--font-ui); }
 .gathering .mat .pairs { color: var(--ink-3); }
 .gathering .mat em { margin-left: 0; }
+
+/* ---------- currents page */
+.drift { font-family: var(--font-ui); font-size: 12.5px; }
+.drow { display: grid; grid-template-columns: 170px 220px 1fr; gap: 12px; align-items: center; padding: 3px 0; border-bottom: 1px dotted var(--rule); color: var(--ink-2); }
+.drow a { color: var(--ink); text-decoration: none; text-transform: uppercase; letter-spacing: .06em; }
+.dbar { display: inline-block; width: 220px; text-align: center; letter-spacing: .02em; }
+.dbar .cool { color: var(--c-rival); display: inline-block; width: 100px; text-align: right; }
+.dbar .warm { color: var(--c-ally); display: inline-block; width: 100px; text-align: left; }
+.dbar .mid { color: var(--ink-3); margin: 0 3px; }
+.drow .num { color: var(--ink); }
+.drow .num .k { color: var(--ink-3); margin-left: 8px; }
+.changes { font-family: var(--font-ui); font-size: 12.5px; color: var(--ink-2); }
+.changes div { padding: 2px 0; border-bottom: 1px dotted var(--rule); }
+.changes a { color: var(--ink); text-decoration: none; text-transform: uppercase; letter-spacing: .06em; }
+.changes i { font-style: normal; }
+
+/* ---------- the pulse: warming outlines breathe, cooling ones flicker like dying phosphor */
+@keyframes breathe { 0%, 100% { stroke-opacity: .55; } 50% { stroke-opacity: 1; } }
+@keyframes flicker { 0%, 84%, 100% { stroke-opacity: 1; } 86% { stroke-opacity: .15; } 88% { stroke-opacity: 1; } 91% { stroke-opacity: .3; } 93% { stroke-opacity: 1; } }
+svg#map path.p.warming { animation: breathe 2.8s ease-in-out infinite; }
+svg#map path.p.cooling { animation: flicker 3.6s linear infinite; }

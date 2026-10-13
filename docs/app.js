@@ -105,6 +105,7 @@
     else if (kind === "clients") setView("clients");
     else if (kind === "faults") setView("faults");
     else if (kind === "gatherings") setView("gatherings");
+    else if (kind === "currents") setView("currents");
     else if (kind === "about") setView("about");
     else if (kind === "colophon") { setView("about"); const c = document.getElementById("colophon"); if (c) c.scrollIntoView(); return; }
     else { clear(); mapMode = "world"; renderLegend(); setView("map"); }
@@ -126,7 +127,7 @@
   orgSel.onchange = () => { orgSel.value ? showOrg(orgSel.value) : goHome(); };
   issueSel.onchange = () => { issueSel.value ? showIssue(issueSel.value) : goHome(); };
   document.querySelectorAll(".tab").forEach(b => b.onclick = () => b.dataset.view === "dossier" ? showDossier(pov || fullActors[0].id) : (pov ? setPov(pov) : goHome()));
-  const PAGE_HASH = { map: "#/", orgs: "#/organisations", issues: "#/issues", luttwak: "#/luttwak", seams: "#/seams", clients: "#/clients", faults: "#/faults", gatherings: "#/gatherings", about: "#/about", colophon: "#/colophon" };
+  const PAGE_HASH = { map: "#/", orgs: "#/organisations", issues: "#/issues", luttwak: "#/luttwak", seams: "#/seams", clients: "#/clients", faults: "#/faults", gatherings: "#/gatherings", currents: "#/currents", about: "#/about", colophon: "#/colophon" };
   document.querySelectorAll("#topnav a").forEach(a => { a.href = PAGE_HASH[a.dataset.page]; a.onclick = ev => { ev.preventDefault(); navigate(PAGE_HASH[a.dataset.page]); }; });
   document.getElementById("home").onclick = ev => { ev.preventDefault(); goHome(); };
   function setView(v, render = true) {
@@ -134,7 +135,7 @@
     document.querySelectorAll(".tab").forEach(b => b.classList.toggle("is-on", b.dataset.view === v));
     document.querySelectorAll("#topnav a").forEach(a => a.classList.toggle("is-on", a.dataset.page === v || (a.dataset.page === "map" && (v === "map" || v === "dossier"))));
     document.querySelectorAll(".view").forEach(s => s.classList.toggle("is-on", s.id === "view-" + v));
-    const isPage = ["orgs", "issues", "luttwak", "seams", "clients", "faults", "gatherings", "about"].includes(v);
+    const isPage = ["orgs", "issues", "luttwak", "seams", "clients", "faults", "gatherings", "currents", "about"].includes(v);
     document.querySelector(".side").style.display = isPage ? "none" : "";
     document.querySelector(".frame").classList.toggle("is-page", isPage);
     if (v === "orgs") renderOrgsPage();
@@ -144,6 +145,7 @@
     if (v === "clients") renderClientsPage();
     if (v === "faults") renderFaultsPage();
     if (v === "gatherings") renderGatheringsPage();
+    if (v === "currents") renderCurrentsPage();
     if (v === "about") renderAboutPage();
     if (!render) return;
     if (v === "map") drawMap();
@@ -306,7 +308,8 @@
     countries.selectAll("path.p").data(screened).join("path").attr("class", "p")
       .attr("d", path).attr("pointer-events", "none").attr("stroke-linejoin", "round")
       .attr("fill", f => isClaimed(f) ? "url(#hatch)" : litColor(f)).attr("fill-opacity", f => isClaimed(f) ? 1 : litLight(f))
-      .attr("stroke", litColor).attr("stroke-width", litWidth).attr("filter", "url(#glow)");
+      .attr("stroke", litColor).attr("stroke-width", litWidth).attr("filter", "url(#glow)")
+      .attr("class", f => "p" + (PULSE_ON_MAP && posture && f.id !== pov && stanceOf(f.id) ? { warming: " warming", cooling: " cooling" }[stanceOf(f.id).trend] || "" : ""));
     // seams: the actors pulled between the point of view and one of its rivals get a dashed outline in the seam colour
     const seamIds = SEAMS_ON_MAP && posture ? new Set(seamsAround(pov).map(s => s.y)) : new Set();
     countries.selectAll("path.seam").data(world.features.filter(f => seamIds.has(f.id))).join("path").attr("class", "seam")
@@ -581,6 +584,27 @@
     el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
   }
 
+  // ---------- currents: the trends as the first derivative of the postures (Luttwak's culminating point)
+  const CURRENTS = data.currents || [];
+  const ALARMS = data.alarms || { allies_cooling: [], rivals_warming: [] };
+  const CHANGES = data.changes || { since: null, grades: [], trends: [] };
+  const PULSE_ON_MAP = true;
+  function renderCurrentsPage() {
+    const el = document.getElementById("page-currents");
+    const alarmRows = list => list.length ? list.map(r => `<tr><td class="name"><a href="#/view/${r.a}">${nameOf(r.a)}</a></td><td><i style="color:${gradeBorder(r.grade)}">${r.grade.replace("_", " ")}</i> · ${esc(r.bond || "")}</td><td class="name"><a href="#/view/${r.x}">${nameOf(r.x)}</a></td><td><div class="why">${esc(r.note)}</div></td></tr>`).join("") : `<tr><td colspan="4" class="empty">None written yet.</td></tr>`;
+    const driftBar = c => { const w = Math.round(c.warming / c.n * 10), k = Math.round(c.cooling / c.n * 10); return `<span class="dbar"><span class="cool">${"▮".repeat(k)}</span><span class="mid">|</span><span class="warm">${"▮".repeat(w)}</span></span>`; };
+    const byTurb = [...CURRENTS].filter(c => c.n >= 6).sort((p, q) => q.turbulence - p.turbulence || p.id.localeCompare(q.id)).slice(0, 12);
+    const drift = CURRENTS.filter(c => c.n >= 6);
+    el.innerHTML = `<h2>Currents</h2><p class="lede">Where the world is moving. Every posture carries a trend, warming, stable or cooling, and the trends are the first derivative of the map: not where the relationships stand but where they are going. Luttwak's frame is the <b>culminating point</b>: every success carries the seed of its own reversal, and the moment a relationship turns is the moment that matters. An ally that cools is the culminating point of an alliance, the protection that has begun to cost; a rival that warms is a rivalry past its useful peak, turning into détente.</p>
+      <h3 class="sec">Culminating points · allies cooling</h3><table class="ledger-t"><thead><tr><th>Actor</th><th>Reads</th><th>Toward</th><th>Why</th></tr></thead><tbody>${alarmRows(ALARMS.allies_cooling)}</tbody></table>
+      <h3 class="sec">Détentes · rivals warming</h3><table class="ledger-t"><thead><tr><th>Actor</th><th>Reads</th><th>Toward</th><th>Why</th></tr></thead><tbody>${alarmRows(ALARMS.rivals_warming)}</tbody></table>
+      <h3 class="sec">Drift · where each actor is going</h3><div class="drift">${drift.map(c => `<div class="drow"><a href="#/view/${c.id}">${nameOf(c.id)}</a>${driftBar(c)}<span class="num">${c.drift > 0 ? "+" : ""}${c.drift.toFixed(2)} <span class="k">${c.warming} warming · ${c.cooling} cooling · ${c.n} read</span></span></div>`).join("")}</div>
+      <h3 class="sec">Turbulence · who is moving most</h3><div class="carriers">${byTurb.map(c => `<a href="#/view/${c.id}">${nameOf(c.id)}</a> <i>${Math.round(c.turbulence * 100)}%</i>`).join(" · ")}</div>
+      ${CHANGES.since ? `<h3 class="sec">Since ${esc(CHANGES.since)}</h3>${CHANGES.grades.length || CHANGES.trends.length ? `<div class="changes">${CHANGES.grades.map(c => `<div><a href="#/view/${c.a}">${nameOf(c.a)}</a> → <a href="#/view/${c.x}">${nameOf(c.x)}</a>: <i style="color:${gradeBorder(c.from)}">${c.from.replace("_", " ")}</i> became <i style="color:${gradeBorder(c.to)}">${c.to.replace("_", " ")}</i></div>`).join("")}${CHANGES.trends.map(c => `<div><a href="#/view/${c.a}">${nameOf(c.a)}</a> → <a href="#/view/${c.x}">${nameOf(c.x)}</a>: ${c.from} became ${c.to}</div>`).join("")}</div>` : `<p class="empty">No grade or trend changed since the last build.</p>`}` : ""}
+      <details class="method"><summary>How currents are computed</summary><p>Only hand-written stances of confidence A or B count. For each actor, <b>drift</b> is (warming − cooling) divided by the number of its written stances: +1 would be an actor whose every relationship is warming, −1 one whose every relationship is cooling. <b>Turbulence</b> is (warming + cooling) divided by the same number: how much of the actor's world is moving, whichever way. Actors with fewer than six written stances are left out of the two rankings. The two alarm lists are read straight from the stances: allies and reluctant allies with a cooling trend, rivals and adversaries with a warming trend. Each build also keeps a snapshot of every grade and trend in data/snapshots; the "since" section compares today's build with the previous snapshot. On the map, in the posture lens, a warming relationship pulses and a cooling one flickers.</p></details>`;
+    el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
+  }
+
   function renderAboutPage() {
     const el = document.getElementById("page-about");
     if (el.dataset.done) return;
@@ -602,6 +626,8 @@
       <p>A <b>fault</b> is a relationship whose deep level contradicts its surface. The frame is Luttwak's structure of <b>levels</b>: in <i>Strategy</i> success at one level can be undone at a higher one, and a strategy works only when its levels are in harmony. Here the levels are two: the bond, which would survive a change of government, and the posture of today. Two contradictions matter. The <b>feud</b> is kin graded rival or adversary, the quarrel inside the family, which Luttwak counts as the most intense of rivalries because closeness multiplies the points of contact. The <b>Byzantine alliance</b> is a grievance graded ally: the maxim from <i>The Grand Strategy of the Byzantine Empire</i> that every enemy is a possible ally, and the alliance that holds over an open wound because it must. The Faults page lists both, says whether each is felt by one side or both, and reads its trend as healing or tearing; on the map a fault shows as a bond band that contradicts the colour of its outline.</p>
       <h3>Gatherings</h3>
       <p>A <b>gathering</b> is the coalition that an actor's weight summons. The frame is <i>The Rise of China vs. the Logic of Strategy</i>: a power that grows or presses provokes, by the logic of strategy alone, the convergence of everyone it threatens, whether or not they speak to each other, and the great state, absorbed in its own scale, is the last to see it. Byzantium made a method of the same law from the other side, recruiting the enemies of its enemies. The Gatherings page lists, for every actor with at least three declared rivals, who has gathered against it, and measures how far the gathering has become a coalition: formed when most of its members are already allied with each other, waiting when they are not, which is the coalition the logic is still summoning. In each actor's dossier the <b>convergences</b> are the other side of the same reading: the actors that share one of its rivals and are not yet its allies, the tables it has not sat at.</p>
+      <h3>Currents</h3>
+      <p>Every posture carries a <b>trend</b>, warming, stable or cooling, and the trends are the first derivative of the map: not where the relationships stand but where they are going. The frame is Luttwak's <b>culminating point</b>, the moment at which a success begins to produce its own reversal. The Currents page reads the trends two ways. The alarms: allies that are cooling, which is the culminating point of an alliance, the protection that has begun to cost, and rivals that are warming, the rivalry past its useful peak. And two measures per actor: <b>drift</b>, which way its world is going, and <b>turbulence</b>, how much of it is moving. Each build keeps a snapshot of every grade, so the page can also say what changed since the last one. On the map, in the posture lens, a warming relationship pulses and a cooling one flickers, like phosphor brightening or dying.</p>
       <h3>How it is made</h3>
       <p>The data lives in plain files, one per actor, separate from the site, and is versioned in the open: the whole history of every grade is in the repository. Cards are researched and drafted by language-model agents working from a shared brief and the atlas's own rules, then reread by a stronger model that checks objectives, paradoxes and every posture grade against the sources and against the neighbouring cards; the owner samples the result. A new card's grades retroact on the cards already written as provisional reciprocals, flagged as such until written from the other side. Nothing is embedded in the site: it renders the data as it stands on the day of the last build, and the stamp in the top bar says which day that was.</p>
       <h3>What it is not</h3>

@@ -290,3 +290,13 @@ CSTO): here, unlike seams, the question is whether the coalition exists. formed 
 >= 25%, waiting below; a member is enlisted if allied with at least half of the others. The
 **convergences** of A are the actors that share one of A's rivals and are not A's allies. Computed
 by `tools/build.py` (`gatherings`, `convergences`); Gatherings page and the dossier.
+
+## Currents (added 2026-10-13)
+
+Luttwak's culminating point: the trends are the first derivative of the postures. Per actor,
+over hand-written A/B stances: **drift** = (warming - cooling) / n, **turbulence** =
+(warming + cooling) / n. Alarms: allies (ally, reluctant ally) cooling = the culminating point of
+an alliance; rivals (rival, adversary) warming = detente. Each build writes a snapshot of every
+grade and trend to `data/snapshots/<date>.json` and reports what changed since the previous one.
+On the map (posture lens) warming outlines breathe, cooling ones flicker. Computed by
+`tools/build.py` (`currents`, `alarms`, `changes`); Currents page.

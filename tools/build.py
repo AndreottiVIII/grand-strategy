@@ -514,6 +514,46 @@ def main():
         if out_:
             convergences[a] = [{"id": b, "shared": sorted(v)} for b, v in sorted(out_.items(), key=lambda kv: (-len(kv[1]), kv[0]))]
 
+    # --- currents (Luttwak's culminating point): the trends are the first derivative of the postures.
+    # Per actor: drift = (warming - cooling) / n, turbulence = (warming + cooling) / n, over hand-written
+    # A/B stances. Alarms: allies cooling (the culminating point of an alliance), rivals warming.
+    per = {}
+    allies_cooling, rivals_warming = [], []
+    for (a, x), st in handst.items():
+        c = per.setdefault(a, {"warming": 0, "cooling": 0, "stable": 0})
+        c[st.get("trend") or "stable"] = c.get(st.get("trend") or "stable", 0) + 1
+        if st["grade"] in FAULT_ALLIED and st.get("trend") == "cooling":
+            allies_cooling.append({"a": a, "x": x, "grade": st["grade"], "bond": st.get("bond"), "note": first(st.get("note"))})
+        if st["grade"] in FAULT_HOSTILE and st.get("trend") == "warming":
+            rivals_warming.append({"a": a, "x": x, "grade": st["grade"], "bond": st.get("bond"), "note": first(st.get("note"))})
+    currents = []
+    for a, c in per.items():
+        n = c["warming"] + c["cooling"] + c["stable"]
+        if n:
+            currents.append({"id": a, "n": n, "warming": c["warming"], "cooling": c["cooling"], "drift": round((c["warming"] - c["cooling"]) / n, 2), "turbulence": round((c["warming"] + c["cooling"]) / n, 2)})
+    currents.sort(key=lambda c: (-c["drift"], c["id"]))
+    allies_cooling.sort(key=lambda r: (r["a"], r["x"]))
+    rivals_warming.sort(key=lambda r: (r["a"], r["x"]))
+    # snapshots: the grades of today, kept so the next build can say what changed since
+    SNAP = DATA / "snapshots"
+    SNAP.mkdir(exist_ok=True)
+    snap_now = {f"{a}>{x}": [st["grade"], st.get("trend") or "stable"] for (a, x), st in handst.items()}
+    previous = sorted(SNAP.glob("*.json"))
+    changes = {"since": None, "grades": [], "trends": []}
+    if previous:
+        prev_path = previous[-1]
+        prev = json.loads(prev_path.read_text(encoding="utf-8"))
+        changes["since"] = prev_path.stem
+        for k, (g, t) in snap_now.items():
+            a, x = k.split(">")
+            if k in prev:
+                pg, pt = prev[k]
+                if pg != g:
+                    changes["grades"].append({"a": a, "x": x, "from": pg, "to": g})
+                elif pt != t:
+                    changes["trends"].append({"a": a, "x": x, "from": pt, "to": t})
+    (SNAP / f"{today.isoformat()}.json").write_text(json.dumps(snap_now, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+
     out = {
         "generated": today.isoformat(),
         "seams": seams,
@@ -521,6 +561,9 @@ def main():
         "faults": faults,
         "gatherings": gatherings,
         "convergences": convergences,
+        "currents": currents,
+        "alarms": {"allies_cooling": allies_cooling, "rivals_warming": rivals_warming},
+        "changes": changes,
         "grades": GRADES,
         "layers": list(TYPES.keys()),
         "actors": list(actors.values()),
