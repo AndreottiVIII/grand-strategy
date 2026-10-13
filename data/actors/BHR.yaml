@@ -8,7 +8,70 @@ coords:
 - 26.22
 seat: Manama
 regions:
-- world
-card: stub
+- middle-east
+card: full
 tier: minor
+last_verified: 2026-10-12
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep Iranian strikes and Iran-linked networks away from its territory. Iran hit Bahrain directly in February-March 2026, and Bahrain has jailed people for collaborating with Iran's Revolutionary Guards."
+      confidence: C
+      sources:
+        - {url: "https://cnn.com/world/live-news/israel-iran-attack-02-28-26-hnk-intl", title: "Iran's IRGC targeted four US bases in the Middle East, Iranian media reports", publisher: "CNN (live blog, citing Iranian media)", date: 2026-02-28, tier: 3}
+        - {url: "https://emirates247.com/world/bahrain-intercepts-70-ballistic-missiles-59-iranian-drones-2026-03-03-1.744427", title: "Bahrain intercepts 70 ballistic missiles, 59 Iranian drones", publisher: "WAM via Emirates24|7 (state agency, official statement)", date: 2026-03-03, tier: 1}
+        - {url: "https://www.reuters.com/world/bahrain-court-jails-nine-life-collaborating-with-irans-revolutionary-guards-2026-05-24/", title: "Bahrain court jails nine for life for collaborating with Iran's Revolutionary Guards", publisher: "Reuters", date: 2026-05-24, tier: 3}
+    - rank: 2
+      text: "Keep the US security umbrella: the US-Bahrain security integration agreement, the Fifth Fleet headquarters on its soil, and the British decision to join the agreement in December 2024."
+      confidence: B
+      sources:
+        - {url: "https://www.gov.uk/government/news/uk-joins-us-bahrain-agreement-to-build-security-across-the-middle-east", title: "UK joins US-Bahrain agreement to build security across the Middle East", publisher: "UK Foreign, Commonwealth and Development Office", date: 2024-12-06, tier: 1}
+        - {url: "https://cnn.com/world/live-news/israel-iran-attack-02-28-26-hnk-intl", title: "Iran's IRGC targeted four US bases in the Middle East, Iranian media reports", publisher: "CNN (live blog, citing Iranian media)", date: 2026-02-28, tier: 3}
+    - rank: 3
+      text: "Use its seat on the UN Security Council for 2026-27, elected on 3 June 2025, to add weight beyond its size."
+      confidence: B
+      sources:
+        - {url: "https://webtv.un.org/en/asset/k10/k10aruvxoh", title: "General Assembly: 73rd Plenary meeting, 79th session, Election of non-permanent members of the Security Council", publisher: "United Nations (UN Web TV)", date: 2025-06-03, tier: 1}
+
+  means:
+    - text: "Security integration with the United States: the US-Bahrain agreement (joined by the UK in 2024) and the Fifth Fleet headquarters, which reports say was hit in February 2026."
+      confidence: B
+      sources:
+        - {url: "https://www.gov.uk/government/news/uk-joins-us-bahrain-agreement-to-build-security-across-the-middle-east", title: "UK joins US-Bahrain agreement to build security across the Middle East", publisher: "UK Foreign, Commonwealth and Development Office", date: 2024-12-06, tier: 1}
+        - {url: "https://cnn.com/world/live-news/israel-iran-attack-02-28-26-hnk-intl", title: "Iran's IRGC targeted four US bases in the Middle East, Iranian media reports", publisher: "CNN (live blog, citing Iranian media)", date: 2026-02-28, tier: 3}
+    - text: "Air and missile defence: Bahrain says it intercepted 70 ballistic missiles and 59 drones by 3 March 2026."
+      confidence: B
+      sources:
+        - {url: "https://emirates247.com/world/bahrain-intercepts-70-ballistic-missiles-59-iranian-drones-2026-03-03-1.744427", title: "Bahrain intercepts 70 ballistic missiles, 59 Iranian drones", publisher: "WAM via Emirates24|7 (state agency, official statement)", date: 2026-03-03, tier: 1}
+    - text: "Diplomacy with Israel and the Gulf: diplomatic relations with Israel since the joint communique of 18 October 2020 (Abraham Accords), and restored ties with Qatar in 2023."
+      confidence: B
+      sources:
+        - {url: "https://www.bna.bh/en/BahrainIsraelsignhistoricJointCommuniqueontheEstablishmentofDiplomaticPeacefulandFriendlyRelations.aspx?cms=q8FmFJgiscL2fwIzON1%2BDkw6yYauU2jBB8j1QMKQ9jQ%3D", title: "Bahrain, Israel sign historic Joint Communique on the Establishment of Diplomatic, Peaceful and Friendly Relations", publisher: "Bahrain News Agency (state agency, official statement)", date: 2020-10-18, tier: 1}
+        - {url: "https://www.state.gov/bahrain-and-qatar-restore-diplomatic-ties/", title: "Bahrain and Qatar Restore Diplomatic Ties", publisher: "U.S. Department of State", date: 2023-04, tier: 1}
+
+  constraints:
+    - text: "It cannot balance Iran alone: its deterrence rests on the US pact and the Fifth Fleet, so Iran's strikes target the security it has bought."
+      confidence: C
+      sources:
+        - {url: "https://www.gov.uk/government/news/uk-joins-us-bahrain-agreement-to-build-security-across-the-middle-east", title: "UK joins US-Bahrain agreement to build security across the Middle East", publisher: "UK Foreign, Commonwealth and Development Office", date: 2024-12-06, tier: 1}
+    - text: "Domestic cohesion: the 2016 stripping of citizenship from the Shia cleric Isa Qassim and the 2019 sentences for an 'Iran-backed' group show that the Iran question is also a question about its own Shia population."
+      confidence: C
+      sources:
+        - {url: "https://www.bbc.co.uk/news/world-middle-east-36578000", title: "Bahrain revokes top Shia cleric Isa Qassim's citizenship", publisher: "BBC News", date: 2016-06-20, tier: 3}
+        - {url: "https://en.radiofarda.com/a/bahrain-jails-169-for-founding-iran-linked-terror-group-/29884855.html", title: "Bahrain Jails 169 For Founding 'Iran-Linked Terror Group'", publisher: "RFE/RL", date: 2019-04-16, tier: 3}
+    - text: "The Israel tie stays formal: the envoy returned home in November 2023 over Gaza, and Israel said the ties remained stable."
+      confidence: C
+      sources:
+        - {url: "https://www.reuters.com/world/middle-east/bahrain-parliament-says-envoy-israel-returned-home-israel-says-ties-stable-2023-11-02/", title: "Bahrain parliament says envoy to Israel returned home, Israel says ties stable", publisher: "Reuters", date: 2023-11-02, tier: 3}
+
+  paradoxes:
+    - text: "Hosting the Fifth Fleet and the US pact buys security but makes Bahrain a target: the same tie that protects it is the reason Iran's strikes reach it."
+      confidence: C
+      sources:
+        - {url: "https://cnn.com/world/live-news/israel-iran-attack-02-28-26-hnk-intl", title: "Iran's IRGC targeted four US bases in the Middle East, Iranian media reports", publisher: "CNN (live blog, citing Iranian media)", date: 2026-02-28, tier: 3}
+        - {url: "https://www.gov.uk/government/news/uk-joins-us-bahrain-agreement-to-build-security-across-the-middle-east", title: "UK joins US-Bahrain agreement to build security across the Middle East", publisher: "UK Foreign, Commonwealth and Development Office", date: 2024-12-06, tier: 1}
+
+  reading: |
+    Bahrain's card rests on a US security umbrella and a formal opening to Israel, and Iran is the structural rival: the 2016 rupture was followed by direct strikes on Bahrain in 2026. Its diplomatic hedges are the 2020 Israel tie and a UN Security Council seat for 2026-27. This card is minor and thin: Saudi Arabia, the Houthis, the Qatar blockade and the 2011 deployment, the 2024-25 Iran talks, the June 2025 war and the British base are not written because no source was found for them in this session.
