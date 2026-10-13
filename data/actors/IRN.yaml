@@ -1,14 +1,183 @@
 id: IRN
 name: Iran
+short: Iran
 type: state
+coords: [51.39, 35.69]
 iso2: ir
 wikipedia: https://en.wikipedia.org/wiki/Iran
-coords:
-- 51.39
-- 35.69
 seat: Tehran
-regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+regions: ['middle-east']
+card: full
+tier: protagonist
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Survive as the Islamic Republic after decapitation: keep the system standing after the killing of Ali Khamenei on 28 Feb 2026, install a successor (Mojtaba Khamenei, named by the Assembly of Experts on 8 Mar, never seen in public since) and hold the street after the January 2026 massacre. In practice power sits with an informal committee of IRGC commanders and a few politicians, with parliament speaker Ghalibaf as the public face."
+      confidence: B
+      sources:
+        - {url: "https://www.al-monitor.com/originals/2026/02/daughter-and-grandchild-irans-khamenei-killed-us-israeli-strikes-state-media-says", title: "Daughter and grandchild of Iran's Khamenei killed in US-Israeli strikes, state media says", publisher: "Al-Monitor", date: 2026-03-01, tier: 3}
+        - {url: "https://www.intellinews.com/update-mojtaba-khamenei-chosen-as-new-supreme-leader-430169/", title: "UPDATE: Mojtaba Khamenei chosen as new supreme leader", publisher: "bne IntelliNews", date: 2026-03-08, tier: 3}
+        - {url: "https://www.al-monitor.com/originals/2026/04/ghalibaf-ambitious-public-face-post-ali-khamenei-iran", title: "Ghalibaf: Iran's ambitious 'public face' emerging in post-Khamenei power shift", publisher: "Al-Monitor", date: 2026-04-17, tier: 3}
+        - {url: "https://al-monitor.com/originals/2026/07/mojtaba-khamenei-absence-signals-shifting-role-iran-leader", title: "Mojtaba Khamenei's absence signals shifting role of Iran's leader", publisher: "Al-Monitor", date: 2026-07, tier: 3}
+    - rank: 2
+      text: "End the US-Israeli war on terms that lift the American naval blockade (in force since 13 Apr, reinstated in July), the oil sanctions and the freeze on Iranian assets, while keeping the Strait of Hormuz as its only lever. Tehran's proposal at the UN General Assembly in late September (Hormuz reopens seven days after a general ceasefire, nuclear talks follow) builds on the Islamabad Memorandum of 17 June; Trump rejected it and Pezeshkian calls negotiations with Washington 'futile'."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/10/7/us-sets-new-demands-for-iran-deal-what-are-they", title: "US sets new demands for Iran deal: what are they?", publisher: "Al Jazeera", date: 2026-10-07, tier: 3}
+        - {url: "https://www.csis.org/analysis/united-states-and-iran-announce-deal-end-war-state-play", title: "The United States and Iran announce a deal to end the war: state of play", publisher: "CSIS", date: 2026-06, tier: 2}
+        - {url: "https://www.malaymail.com/news/world/2026/03/13/iran-supreme-leader-says-vengeance-is-priority-until-fully-achieved/212433", title: "Iran supreme leader says vengeance is priority 'until fully achieved' (message read on state TV, 12 Mar)", publisher: "Malay Mail / Reuters", date: 2026-03-13, tier: 3}
+    - rank: 3
+      text: "Keep the nuclear option as a hedge: preserve the right to enrich and the roughly 440.9 kg of 60% uranium (most of it believed buried at Isfahan, unverified since June 2025) and refuse the verification that would turn it into a bargaining chip, while a bill in the Majlis (introduced 28 Mar 2026, still pending in late September) would take Iran out of the NPT. Pezeshkian's government resists the exit."
+      confidence: B
+      sources:
+        - {url: "https://www.wsls.com/news/politics/2026/04/29/irans-highly-enriched-uranium-likely-is-at-the-isfahan-site-the-un-nuclear-chief-tells-the-ap/", title: "Iran's highly enriched uranium likely is at the Isfahan site, the UN nuclear chief tells the AP", publisher: "Associated Press (via WSLS)", date: 2026-04-29, tier: 3}
+        - {url: "https://www.armscontrol.org/node/15299", title: "Iran threatens to withdraw from the NPT", publisher: "Arms Control Association", date: 2026, tier: 2}
+        - {url: "https://www.tehrantimes.com/news/525010/Iranian-lawmakers-push-bill-to-exit-NPT", title: "Iranian lawmakers push bill to exit NPT", publisher: "Tehran Times (state-aligned daily, statement of lawmakers)", date: 2026, tier: 1}
+    - rank: 4
+      text: "Drive the American military out of the Gulf and make its hosts pay: 'all US bases in the region must close', the new leader said on 12 Mar, and Iran fired more than 6,700 missiles and drones at the six GCC states between 28 Feb and 17 May. The aim is to turn the Gulf monarchies from basing hosts into lobbyists for a ceasefire."
+      confidence: B
+      sources:
+        - {url: "https://www.timesofisrael.com/irans-new-supreme-leader-issues-defiant-first-statement-without-appearing/", title: "Iran's new supreme leader issues defiant first statement, without appearing", publisher: "The Times of Israel", date: 2026-03-12, tier: 3}
+        - {url: "https://www.everycrsreport.com/files/2026-06-03_R48971_0ef11e7717f94482f81c35cdf07bad07f0ea04f8.html", title: "The Arab Gulf States, the Iran Conflict, and U.S. Relations: In Brief (CRS R48971)", publisher: "Congressional Research Service", date: 2026-06-03, tier: 1}
+    - rank: 5
+      text: "Keep what is left of the 'axis of resistance' alive as forward defence: Hezbollah (fighting Israel again since 2 Mar), Iraq's Tehran-aligned militias, and above all the Houthis, who in 3-11 September took the Red Sea coast up to the Bab al-Mandab with Iranian arms and advice (per Reuters). Hamas is a weaker, separate file."
+      confidence: B
+      sources:
+        - {url: "https://thesoufancenter.org/intelbrief-2026-april-3/", title: "Iran taps its Axis of Resistance for reinforcement (IntelBrief)", publisher: "The Soufan Center", date: 2026-04-03, tier: 2}
+        - {url: "https://www.kurdistan24.net/en/story/938700", title: "Iranian support helped Houthis seize key Red Sea positions, Reuters reports", publisher: "Kurdistan24 (summarising Reuters)", date: 2026-09, tier: 3}
+        - {url: "https://www.inss.org.il/?p=127848", title: "The plan to disarm Iraq's militias: internal division and Iran's efforts to block it", publisher: "INSS", date: 2026-09-02, tier: 2}
+    - rank: 6
+      text: "Stay inside the Russian-Chinese camp as an economic and diplomatic lifeline: China takes more than 80% of the crude Iran can still ship, the 25-year cooperation agreement (2021) and the Russian strategic partnership treaty (17 Jan 2025) are the legal frame, and SCO (2023) and BRICS (2024) membership the club. The partners supply oil money, intelligence and UN cover, not troops."
+      confidence: B
+      sources:
+        - {url: "https://www.globalsecurity.org/wmd/library/news/iran/2025/09/iran-250902-irna04.htm", title: "Pezeshkian, Xi pledge to fully implement the 25-year comprehensive cooperation agreement (IRNA)", publisher: "IRNA via GlobalSecurity", date: 2025-09-02, tier: 1}
+        - {url: "https://www.rferl.org/amp/iran-russia-putin-pezeshkian-treaty-ukraine-shahed-drones/33278795.html", title: "Amid biting sanctions, Russia and Iran sign pact to deepen ties", publisher: "RFE/RL", date: 2025-01-17, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/10/8/putin-pledges-russias-support-to-end-us-led-war-on-iran", title: "Putin pledges Russia's support to end US-led war on Iran", publisher: "Al Jazeera", date: 2026-10-08, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "A mediator ring Tehran chooses itself: Oman (hosted the indirect talks in Muscat on 6 Feb 2026), Pakistan (brokered the 8 Apr ceasefire, hosted the Islamabad talks led by Ghalibaf and Araghchi on 11-12 Apr, and the 17 Jun memorandum) and Qatar (co-mediator since August), plus Swiss good offices; at the UN it relies on Russian and Chinese cover and argues the snapback is void."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/amp/news/liveblog/2026/2/6/us-iran-talks-live-critical-negotiations-set-to-begin-in-oman", title: "US-Iran talks live: critical negotiations set to begin in Oman", publisher: "Al Jazeera", date: 2026-02-06, tier: 3}
+        - {url: "https://www.aljazeera.com/amp/news/2026/4/10/pakistan-sets-modest-goal-for-us-iran-summit-a-deal-to-keep-talks-going", title: "Pakistan sets modest goal for US-Iran summit: a deal to keep talks going", publisher: "Al Jazeera", date: 2026-04-10, tier: 3}
+        - {url: "https://www.khaleejtimes.com/world/gulf/qatar-efforts-ongoing-iran-us-diplomatic-solution", title: "Mediator Qatar says efforts 'ongoing' for Iran-US diplomatic solution", publisher: "Khaleej Times", date: 2026-08-04, tier: 3}
+        - {url: "https://opiniojuris.org/2026/02/24/un-sanctions-on-iran-back-in-force-or-gone-for-good/", title: "UN sanctions on Iran: back in force or gone for good?", publisher: "Opinio Juris", date: 2026-02-24, tier: 2}
+    - domain: informational
+      text: "Statements of defiance read on state television in the name of an unseen leader (the 12 Mar message: vengeance 'until fully achieved', compensation or seizure of enemy property), denial of attributed attacks (Nakhchivan, Turkey) and a blackout on the home front: the internet was cut from 8 Jan to 26 May according to the protest record."
+      confidence: B
+      sources:
+        - {url: "https://www.malaymail.com/news/world/2026/03/13/iran-supreme-leader-says-vengeance-is-priority-until-fully-achieved/212433", title: "Iran supreme leader says vengeance is priority 'until fully achieved'", publisher: "Malay Mail / Reuters", date: 2026-03-13, tier: 3}
+        - {url: "https://www.itv.com/news/2026-01-27/more-than-6000-killed-during-irans-crackdown-as-currency-falls-to-record-low", title: "Dozens of children among 6,000 killed during Iran's crackdown as currency falls to record low", publisher: "ITV News", date: 2026-01-27, tier: 3}
+    - domain: military
+      text: "Missile and drone saturation of Israel, US bases and Gulf infrastructure (Ras Laffan, Habshan, Sitra, desalination plants, the US embassy in Riyadh), closure and 'sovereignty' claims over Hormuz, mine-laying and attacks on shipping, and delegated pressure through Iraqi militias, Hezbollah (Iranian personnel reportedly on the Ali Taher ridge) and the Houthis. Air defence and the air force are largely gone: two Su-24 sorties toward Qatar were shot down on 2 Mar."
+      confidence: B
+      sources:
+        - {url: "https://www.everycrsreport.com/files/2026-06-03_R48971_0ef11e7717f94482f81c35cdf07bad07f0ea04f8.html", title: "The Arab Gulf States, the Iran Conflict, and U.S. Relations: In Brief (CRS R48971)", publisher: "Congressional Research Service", date: 2026-06-03, tier: 1}
+        - {url: "https://www.semafor.com/article/03/05/2026/qatar-makes-first-aerial-combat-kill", title: "Qatar makes first aerial combat kill", publisher: "Semafor", date: 2026-03-05, tier: 3}
+        - {url: "https://thesoufancenter.org/intelbrief-2026-april-3/", title: "Iran taps its Axis of Resistance for reinforcement (IntelBrief)", publisher: "The Soufan Center", date: 2026-04-03, tier: 2}
+    - domain: economic
+      text: "Selective passage through Hormuz as a currency (Indian LPG tankers on 12 Mar, Chinese-linked tankers under special arrangements), crude sold to Chinese teapot refiners at a discount, gas and electricity to Iraq and Armenia, and a cash lifeline from Dubai's re-export trade until the UAE suspended all dealings on 18-19 Aug."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/3/14/two-indian-ships-cross-strait-of-hormuz-as-iran-says-it-allowed-passage", title: "Two Indian ships cross Strait of Hormuz as Iran says it allowed passage", publisher: "Al Jazeera", date: 2026-03-14, tier: 3}
+        - {url: "https://aljazeera.com/news/2026/4/3/how-chinas-teapot-refineries-are-cushioning-it-from-iran-war-oil-crisis", title: "How China's 'teapot' refineries are cushioning it from Iran war oil crisis", publisher: "Al Jazeera", date: 2026-04-03, tier: 3}
+        - {url: "https://qna.org.qa/en/News-Area/News/2026-8/18/uae-says-all-financial-transactions-trade-exchange-with-iran-is-suspended", title: "UAE says all financial transactions, trade exchange with Iran is suspended", publisher: "Qatar News Agency", date: 2026-08-18, tier: 3}
+
+  constraints:
+    - text: "The blockade has cut the state's hard-currency income to near zero: the US naval blockade (13 Apr, reinstated in July) took Iranian crude shipments to near-zero, GDP fell 10.1% year on year in the first Persian quarter (late March to late June), and the informal rial reached about 2.25 million per dollar in early September against 1.5 million in January. Inflation estimates run from 40% to 70%."
+      confidence: B
+      sources:
+        - {url: "https://en.protothema.gr/2026/09/21/war-and-sanctions-are-crippling-irans-economy-with-gdp-plunging-10-1/", title: "War and sanctions are crippling Iran's economy with GDP plunging 10.1%", publisher: "Protothema (English)", date: 2026-09-21, tier: 3}
+        - {url: "https://cryptobriefing.com/iranian-rial-record-low-dollar/", title: "Iranian rial falls to record low of 2.25 million against US dollar", publisher: "Crypto Briefing", date: 2026-09, tier: 4}
+        - {url: "https://www.itv.com/news/2026-01-27/more-than-6000-killed-during-irans-crackdown-as-currency-falls-to-record-low", title: "Dozens of children among 6,000 killed during Iran's crackdown as currency falls to record low", publisher: "ITV News", date: 2026-01-27, tier: 3}
+    - text: "A broken legitimacy: the protests that began on 28 Dec 2025 over the collapsing rial ended in a crackdown that HRANA counts at more than 6,000 dead and 40,000-50,000 arrested (the government admits 3,117 dead), and since March executions have climbed (532 verified by 31 Aug, 31 of them protesters; 854 by HRANA's count to July). The regime asks for national unity in wartime from a population it shot at in January."
+      confidence: B
+      sources:
+        - {url: "https://www.itv.com/news/2026-01-27/more-than-6000-killed-during-irans-crackdown-as-currency-falls-to-record-low", title: "Dozens of children among 6,000 killed during Iran's crackdown as currency falls to record low", publisher: "ITV News", date: 2026-01-27, tier: 3}
+        - {url: "https://iranhr.net/en/print/5/9018/", title: "82 executions, including 6 women, recorded in August; at least 532 hanged in Iran in 2026", publisher: "Iran Human Rights (IHRNGO)", date: 2026-09, tier: 3}
+        - {url: "https://hengaw.net/en/reports-and-statistics-1/2026/05/article-4-1", title: "Hengaw raises alarm over record rise in executions of political prisoners across Iran", publisher: "Hengaw", date: 2026-05, tier: 3}
+    - text: "No allies who will fight: the Russian treaty contains no mutual-defence clause (only a pledge not to help an aggressor), Moscow offers mediation and intelligence, and Beijing asks Iran to reopen Hormuz and criticises its strikes on Gulf states. Iran fights alone in the air."
+      confidence: A
+      sources:
+        - {url: "https://www.rferl.org/amp/iran-russia-putin-pezeshkian-treaty-ukraine-shahed-drones/33278795.html", title: "Amid biting sanctions, Russia and Iran sign pact to deepen ties", publisher: "RFE/RL", date: 2025-01-17, tier: 3}
+        - {url: "https://www.aljazeera.com/amp/news/2026/5/6/irans-araghchi-holds-talks-with-chinas-wang-yi-in-beijing", title: "China calls for end to Iran war and Hormuz to reopen during Araghchi visit", publisher: "Al Jazeera", date: 2026-05-06, tier: 3}
+    - text: "Blindness and legal exposure on the nuclear file: the IAEA has had no access to the bombed sites since June 2025 and says it can neither confirm nor rule out that the 440.9 kg of 60% uranium are where its seals were left; UN sanctions were reimposed by the E3 snapback on 27-28 Sep 2025 (Russia, China and Iran call it null and void)."
+      confidence: B
+      sources:
+        - {url: "https://www.wsls.com/news/politics/2026/04/29/irans-highly-enriched-uranium-likely-is-at-the-isfahan-site-the-un-nuclear-chief-tells-the-ap/", title: "Iran's highly enriched uranium likely is at the Isfahan site, the UN nuclear chief tells the AP", publisher: "Associated Press (via WSLS)", date: 2026-04-29, tier: 3}
+        - {url: "https://exportcompliancedaily.com/news/2025/09/30/UN-Imposes-Snapback-Sanctions-Against-Iran-2509290051", title: "UN imposes snapback sanctions against Iran", publisher: "Export Compliance Daily", date: 2025-09-30, tier: 3}
+        - {url: "https://opiniojuris.org/2026/02/24/un-sanctions-on-iran-back-in-force-or-gone-for-good/", title: "UN sanctions on Iran: back in force or gone for good?", publisher: "Opinio Juris", date: 2026-02-24, tier: 2}
+    - text: "A decapitated and invisible command: Khamenei and Larijani (17 Mar) are dead, the successor has not appeared in public and is reported injured, decisions pass through an informal IRGC-led committee, and Washington says it is 'not totally clear how their country makes decisions'. This slows concessions and makes any promise hard to verify."
+      confidence: B
+      sources:
+        - {url: "https://www.businesstoday.in/amp/world/story/no-public-appearance-yet-doubts-grow-over-irans-supreme-leader-mojtaba-khamenei-who-is-really-running-iran-521739-2026-03-22", title: "No public appearance yet: doubts grow over Iran's supreme leader Mojtaba Khamenei; who is really running Iran?", publisher: "Business Today", date: 2026-03-22, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/10/7/us-sets-new-demands-for-iran-deal-what-are-they", title: "US sets new demands for Iran deal: what are they?", publisher: "Al Jazeera", date: 2026-10-07, tier: 3}
+    - text: "A hostile neighbourhood: the Gulf monarchies (the UAE above all) were struck for months and now cut trade or shoot back; Syria's new government expelled Iran's militias and keeps the embassy shut; Azerbaijan pulled diplomats after the Nakhchivan drones; even Turkey had missiles intercepted over its soil."
+      confidence: B
+      sources:
+        - {url: "https://www.everycrsreport.com/files/2026-06-03_R48971_0ef11e7717f94482f81c35cdf07bad07f0ea04f8.html", title: "The Arab Gulf States, the Iran Conflict, and U.S. Relations: In Brief (CRS R48971)", publisher: "Congressional Research Service", date: 2026-06-03, tier: 1}
+        - {url: "https://www.chathamhouse.org/2026/04/syrian-president-al-sharaa-iran-war-syria-will-remain-outside-conflict", title: "Syrian President al-Sharaa on Iran war: 'Syria will remain outside this conflict'", publisher: "Chatham House", date: 2026-04, tier: 2}
+        - {url: "https://jamestown.substack.com/p/irans-drone-attacks-strain-tensions", title: "Iran's drone attacks strain tensions between Baku and Tehran", publisher: "Jamestown Foundation", date: 2026-03-12, tier: 2}
+
+  paradoxes:
+    - text: "Hormuz and the Gulf strikes were meant to raise the price of the war for Washington; they turned Riyadh, Abu Dhabi and Doha, the neighbours Tehran had courted since the 2023 Beijing deal, into victims who shoot down its aircraft (Qatar), expel its attachés, cut every commercial link (UAE, 18-19 Aug) and lobby Washington. The lever that works against the US works against Iran's own economic hinterland."
+      confidence: B
+      sources:
+        - {url: "https://www.everycrsreport.com/files/2026-06-03_R48971_0ef11e7717f94482f81c35cdf07bad07f0ea04f8.html", title: "The Arab Gulf States, the Iran Conflict, and U.S. Relations: In Brief (CRS R48971)", publisher: "Congressional Research Service", date: 2026-06-03, tier: 1}
+        - {url: "https://qna.org.qa/en/News-Area/News/2026-8/18/uae-says-all-financial-transactions-trade-exchange-with-iran-is-suspended", title: "UAE says all financial transactions, trade exchange with Iran is suspended", publisher: "Qatar News Agency", date: 2026-08-18, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/3/18/qatar-says-iran-missile-attack-sparks-fire-causes-damage-at-gas-facility", title: "Qatar says Iran attack caused significant damage at Ras Laffan gas facility", publisher: "Al Jazeera", date: 2026-03-18, tier: 3}
+    - text: "Nuclear ambiguity as insurance produced the very attack it was meant to prevent. Stockpiling 440.9 kg of 60% uranium and ending IAEA monitoring gave the E3 their snapback case (28 Aug 2025) and Israel and the US their case for striking in June 2025 and again in February 2026; and the NPT-exit bill, sold as deterrence, would remove the last legal ground on which Russia and China defend Iran at the UN."
+      confidence: B
+      sources:
+        - {url: "https://exportcompliancedaily.com/news/2025/09/30/UN-Imposes-Snapback-Sanctions-Against-Iran-2509290051", title: "UN imposes snapback sanctions against Iran", publisher: "Export Compliance Daily", date: 2025-09-30, tier: 3}
+        - {url: "https://www.armscontrol.org/node/15299", title: "Iran threatens to withdraw from the NPT", publisher: "Arms Control Association", date: 2026, tier: 2}
+        - {url: "https://www.wsls.com/news/politics/2026/04/29/irans-highly-enriched-uranium-likely-is-at-the-isfahan-site-the-un-nuclear-chief-tells-the-ap/", title: "Iran's highly enriched uranium likely is at the Isfahan site, the UN nuclear chief tells the AP", publisher: "Associated Press (via WSLS)", date: 2026-04-29, tier: 3}
+    - text: "The 'axis' that was built to keep wars away from Iranian soil drew them onto its partners. Hezbollah's entry on 2 Mar brought an Israeli ground campaign to the Litani and about 4,000 dead in Lebanon; Iraqi militias' attacks brought US strikes and a Baghdad disarmament deadline (30 Sep); the Houthi coastal offensive risks Saudi retaliation. Each client now needs Iran's regime to survive more than Iran's regime can defend it."
+      confidence: B
+      sources:
+        - {url: "https://thesoufancenter.org/intelbrief-2026-april-3/", title: "Iran taps its Axis of Resistance for reinforcement (IntelBrief)", publisher: "The Soufan Center", date: 2026-04-03, tier: 2}
+        - {url: "https://www.inss.org.il/?p=127848", title: "The plan to disarm Iraq's militias: internal division and Iran's efforts to block it", publisher: "INSS", date: 2026-09-02, tier: 2}
+        - {url: "https://www.thenationalnews.com/news/mena/2026/09/14/shadow-man-irgc-flight-and-a-secret-meeting-irans-hand-in-houthi-offensive-revealed/", title: "Shadow man, IRGC flight and a secret meeting: Iran's hand in Houthi offensive revealed", publisher: "The National", date: 2026-09-14, tier: 3}
+    - text: "The drones that bought Moscow's goodwill now run without Tehran. Iran supplied the Shahed-136 designs and about 600 kits to Alabuga; Russia now mass-produces them as the Geran and, per Ukrainian reporting, re-exports improved models, while its treaty with Iran stops short of defence. Iran keeps Russia's diplomatic gratitude but not its leverage."
+      confidence: C
+      sources:
+        - {url: "https://isis-online.org/isis-reports/detail/alabugas-shahed-136-geran-2-warheads-a-dangerous-escalation/", title: "Alabuga's Shahed-136 (Geran-2) warheads: a dangerous escalation", publisher: "Institute for Science and International Security", date: 2024-05-09, tier: 2}
+        - {url: "https://www.kyivpost.com/amp/post/75806", title: "Russia expands Alabuga drone factory by 340 hectares and begins re-exporting to Iran", publisher: "Kyiv Post", date: 2026, tier: 4}
+        - {url: "https://www.rferl.org/amp/iran-russia-putin-pezeshkian-treaty-ukraine-shahed-drones/33278795.html", title: "Amid biting sanctions, Russia and Iran sign pact to deepen ties", publisher: "RFE/RL", date: 2025-01-17, tier: 3}
+    - text: "Repression is the regime's insurance and its erosion. The January 2026 killing of thousands and the wartime executions keep the street quiet, but they hand the IRGC the state and leave Mojtaba Khamenei with no clerical authority of his own; every security gain moves power from the Islamic Republic's institutions to the Guards, the one actor Washington and Israel are targeting."
+      confidence: C
+      sources:
+        - {url: "https://www.itv.com/news/2026-01-27/more-than-6000-killed-during-irans-crackdown-as-currency-falls-to-record-low", title: "Dozens of children among 6,000 killed during Iran's crackdown as currency falls to record low", publisher: "ITV News", date: 2026-01-27, tier: 3}
+        - {url: "https://iranhr.net/en/print/5/9018/", title: "82 executions, including 6 women, recorded in August; at least 532 hanged in Iran in 2026", publisher: "Iran Human Rights (IHRNGO)", date: 2026-09, tier: 3}
+        - {url: "https://al-monitor.com/originals/2026/07/mojtaba-khamenei-absence-signals-shifting-role-iran-leader", title: "Mojtaba Khamenei's absence signals shifting role of Iran's leader", publisher: "Al-Monitor", date: 2026-07, tier: 3}
+    - text: "Talks buy time for the enemy; refusing them leaves the blockade. Pezeshkian says the US attacked Iran three times after talks (the atlas reads them as June 2025, February 2026 and July 2026, after the memorandum), so Tehran bargains in public while distrusting every sequence; Washington, for its part, doubts that anyone in Tehran can bind the state. The mutual mistrust is what keeps the Hormuz and blockade stalemate alive."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/10/7/us-sets-new-demands-for-iran-deal-what-are-they", title: "US sets new demands for Iran deal: what are they?", publisher: "Al Jazeera", date: 2026-10-07, tier: 3}
+        - {url: "https://www.al-monitor.com/originals/2026/02/swiss-say-oman-host-us-iran-talks-geneva-next-week", title: "Swiss say Oman to host US-Iran talks in Geneva next week", publisher: "Al-Monitor", date: 2026-02, tier: 3}
+
+  reading: |
+    Iran in October 2026 runs the strategy of a regime that has lost the war it
+    prepared for and cannot afford to concede it. Between June 2025 and February
+    2026 its three layers of security collapsed one after another: the nuclear
+    sites, the proxy belt (Assad gone in December 2024, Hezbollah gutted) and
+    finally the leadership itself, when the US-Israeli campaign killed Ali Khamenei
+    and then Larijani. What is left is a system run by the Revolutionary Guards
+    behind an unseen successor, with the economy at near-zero oil income, a
+    population it shot at in January, and one lever: the Strait of Hormuz and the
+    ability to hit Gulf infrastructure. Luttwak's logic shows in how that lever
+    works against its owner: each use of it hardens an adversary (the UAE,
+    Qatar, Saudi Arabia) that Tehran needs as a neighbour, and each hedge it
+    builds (enriched uranium, the NPT-exit bill) justifies the next strike. The
+    great powers it counted on (Russia, China) offer words, oil purchases and
+    mediation, not defence, and both want Hormuz open more than they want Iran
+    to win. Two signals that are not rows: Mojtaba Khamenei has not been seen in
+    public since his appointment, and the Majlis has not yet voted on leaving the
+    NPT: the one move Tehran has not made is the one that would end the ambiguity.
+    The cards that matter are Washington's (whether it still wants regime change,
+    as Netanyahu does, or a deal on enrichment, as Vance's 7 October language on a
+    'meaningful reduction' suggests) and Beijing's (whether it will trade its
+    oil dependence for pressure on Tehran).

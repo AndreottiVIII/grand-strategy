@@ -1,0 +1,952 @@
+from: IRN
+relations:
+- to: ISR
+  layer: action
+  type: incident
+  summary: 'Twelve-day war: Israel struck Iranian nuclear and military sites from 13 Jun 2025 and Iran answered with missile barrages on Israeli cities (a strike on Beersheba killed four on 24 Jun, hours
+    into the ceasefire the US announced on 23 Jun). Casualty figures differ by source (Israel: 32 civilians and 1 soldier killed; Iran: about 1,060; HRANA: about 1,190) and none is adopted.'
+  since: '2025-06-13'
+  until: '2025-06-24'
+  last_verified: '2026-10-12'
+  confidence: B
+  note: Casualty counts differ by side; the Wikipedia index is cited for the ranges only (tier 4).
+  sources:
+  - &id001
+    url: https://www.fdd.org/analysis/op-eds/2025/06/24/israel-and-iran-trade-strikes-ceasefire-goes-into-effect-june-24-updates/
+    title: Israel and Iran trade strikes as ceasefire goes into effect (24 June updates)
+    publisher: FDD's Long War Journal
+    date: '2025-06-24'
+    tier: 2
+  - url: https://en.wikipedia.org/wiki/Twelve-Day_War
+    title: Twelve-Day War (13-24 June 2025; casualty figures vary by source)
+    publisher: Wikipedia (index)
+    date: '2026-10-12'
+    tier: 4
+- to: ISR
+  layer: action
+  type: incident
+  summary: From 28 Feb 2026 Iran answered the US-Israeli strikes (which killed Ali Khamenei) with missile and drone fire on Israeli cities and US bases ('True Promise IV'); Israel reports 31 civilians and
+    40 soldiers killed. Hezbollah joined on 2 Mar. The new leader's message of 12 Mar promised vengeance 'until fully achieved'. Ceasefires of April and June collapsed; the war was ongoing in October.
+  since: '2026-02-28'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  note: Israeli casualty figures are Israel's own, relayed by the Wikipedia index; Iranian figures differ.
+  sources:
+  - &id002
+    url: https://www.al-monitor.com/originals/2026/03/analysis-netanyahus-war-alliance-trump-faces-test-iran-crisis-widens
+    title: Netanyahu's war alliance with Trump faces test as Iran crisis widens (Reuters, 4 Mar)
+    publisher: Reuters (via Al-Monitor)
+    date: '2026-03-04'
+    tier: 3
+  - url: https://www.malaymail.com/news/world/2026/03/13/iran-supreme-leader-says-vengeance-is-priority-until-fully-achieved/212433
+    title: Iran supreme leader says vengeance is priority 'until fully achieved' (message read on state TV, 12 Mar)
+    publisher: Malay Mail / Reuters
+    date: '2026-03-13'
+    tier: 3
+  - &id004
+    url: https://en.wikipedia.org/wiki/2026_Iran_war
+    title: 2026 Iran war (timeline and casualty figures)
+    publisher: Wikipedia (index)
+    date: '2026-10-12'
+    tier: 4
+  - &id003
+    url: https://www.al-monitor.com/originals/2026/02/daughter-and-grandchild-irans-khamenei-killed-us-israeli-strikes-state-media-says
+    title: Daughter and grandchild of Iran's Khamenei killed in US-Israeli strikes, state media says
+    publisher: Al-Monitor
+    date: '2026-03-01'
+    tier: 3
+- to: ISR
+  layer: objective
+  type: influence_goal
+  summary: 'Tehran''s UN General Assembly proposal of late September makes an end to fighting on all fronts, Israel''s offensive in Lebanon included, a condition of reopening Hormuz seven days after a ceasefire:
+    Iran wants Israel''s campaign against its allies tied to any US deal.'
+  since: 2026-09
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - &id005
+    url: https://www.aljazeera.com/news/2026/10/7/us-sets-new-demands-for-iran-deal-what-are-they
+    title: 'US sets new demands for Iran deal: what are they?'
+    publisher: Al Jazeera
+    date: '2026-10-07'
+    tier: 3
+- to: USA
+  layer: action
+  type: incident
+  summary: 'Operation Midnight Hammer: on 22 Jun 2025 US aircraft struck Fordow, Natanz and Isfahan; on 23 Jun Iran fired missiles at Al Udeid Air Base in Qatar (reported as six missiles) before the ceasefire
+    of 24 Jun. Trump floated regime change after the strikes.'
+  since: '2025-06-22'
+  until: '2025-06-24'
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.reuters.com/world/middle-east/axios-iran-launches-six-missiles-toward-us-bases-qatar-2025-06-23/
+    title: 'Axios: Iran launches six missiles toward US bases in Qatar'
+    publisher: Reuters
+    date: '2025-06-23'
+    tier: 3
+  - url: https://www.jta.org/2025/06/23/united-states/miga-trump-floats-possibility-of-regime-change-in-iran-following-us-strikes
+    title: Trump floats possibility of regime change in Iran following US strikes
+    publisher: JTA
+    date: '2025-06-23'
+    tier: 3
+  - *id001
+- to: USA
+  layer: action
+  type: incident
+  summary: 'Operation Epic Fury: from 28 Feb 2026 the US and Israel struck Iranian leadership, nuclear, missile and naval targets and killed Ali Khamenei; Iran hit US bases and the six GCC states (more
+    than 6,700 missiles and drones by 17 May). A US naval blockade of Iranian ports began 13 Apr; Pentagon cost estimate USD 43.6 bn by September.'
+  since: '2026-02-28'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  note: Cost estimate relayed by the Wikipedia index (tier 4); US casualties not recorded.
+  sources:
+  - *id002
+  - *id003
+  - &id008
+    url: https://www.everycrsreport.com/files/2026-06-03_R48971_0ef11e7717f94482f81c35cdf07bad07f0ea04f8.html
+    title: 'The Arab Gulf States, the Iran Conflict, and U.S. Relations: In Brief (CRS R48971)'
+    publisher: Congressional Research Service
+    date: '2026-06-03'
+    tier: 1
+  - *id004
+- to: USA
+  layer: action
+  type: agreement
+  summary: 'Memorandum of 17 Jun 2026, brokered by Pakistan and signed by Trump and Pezeshkian: end of military operations, reciprocal commitments, talks on a broader deal within 60 days and a lifting of
+    maritime restrictions. Iran declared on 15 Jul that it no longer felt bound by parts of it after the US resumed strikes (8 Jul) and the blockade (13 Jul).'
+  since: '2026-06-17'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://gulfnews.com/world/mena/tehran-declares-it-will-halt-obligations-under-mou-as-us-resumes-strikes-and-naval-blockade-1.500608174
+    title: Tehran declares it will halt obligations under MoU as US resumes strikes, naval blockade
+    publisher: Gulf News
+    date: '2026-07-15'
+    tier: 3
+  - &id006
+    url: https://www.csis.org/analysis/united-states-and-iran-announce-deal-end-war-state-play
+    title: 'The United States and Iran announce a deal to end the war: state of play'
+    publisher: CSIS
+    date: 2026-06
+    tier: 2
+- to: USA
+  layer: objective
+  type: influence_goal
+  summary: 'Tehran wants the blockade, the oil sanctions and the freeze on assets lifted and keeps Hormuz as its lever: the late-September proposal reopens the strait seven days after a general ceasefire,
+    with nuclear talks to follow. Washington (Vance, 7 Oct) wants a ''meaningful'' cut in enrichment and says it cannot tell how Tehran decides; Trump rejected the proposal and Pezeshkian calls negotiations
+    ''futile''.'
+  since: 2026-09
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - *id005
+  - *id006
+- to: RUS
+  layer: alignment
+  type: treaty
+  summary: 'Comprehensive Strategic Partnership treaty signed by Putin and Pezeshkian in Moscow on 17 Jan 2025: 20-year framework with no mutual-defence clause, only a pledge not to help an aggressor against
+    the other party.'
+  since: '2025-01-17'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://www.rferl.org/amp/iran-russia-putin-pezeshkian-treaty-ukraine-shahed-drones/33278795.html
+    title: Amid biting sanctions, Russia and Iran sign pact to deepen ties
+    publisher: RFE/RL
+    date: '2025-01-17'
+    tier: 3
+- to: RUS
+  layer: dependency
+  type: arms_supply
+  summary: Western intelligence assessed that during the spring ceasefire Russia resupplied Iran with missiles to about three-quarters of its pre-war stock, after US officials said Moscow gave real-time
+    targeting intelligence on US forces in March; Putin says only that Russia supplies 'necessary equipment' (1 Sep). The reverse flow, Shahed-136 designs and kits for the Alabuga factory, ran from 2022
+    to 2024 and is now Russian-made.
+  since: 2026-03
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  value: 0.75
+  unit: share_of_prewar_missile_stock_rebuilt_with_russian_help_(western_intelligence_estimate)
+  note: A single Bloomberg-reported intelligence estimate; Russia and Iran do not confirm it. Su-35 deliveries are rumoured since 2024 but unconfirmed in the sources read.
+  sources:
+  - url: https://bloomberg.com/news/articles/2026-06-12/iran-likely-added-russian-made-missiles-as-it-rebuilt-arsenal
+    title: Iran likely added Russian-made missiles as it rebuilt arsenal
+    publisher: Bloomberg
+    date: '2026-06-12'
+    tier: 3
+  - url: https://www.cnn.com/2026/03/06/politics/russia-aiding-iran-targeting
+    title: Russia is aiding Iran's war effort by providing intel on US military targets, sources say
+    publisher: CNN
+    date: '2026-03-06'
+    tier: 3
+  - &id007
+    url: https://news.wjct.org/2026-09-02/putin-signals-support-for-iran-in-ongoing-war-with-the-u-s
+    title: Putin signals support for Iran in ongoing war with the U.S. (Bishkek, 1 Sep)
+    publisher: NPR (via WJCT)
+    date: '2026-09-02'
+    tier: 3
+  - url: https://isis-online.org/isis-reports/detail/alabugas-shahed-136-geran-2-warheads-a-dangerous-escalation/
+    title: 'Alabuga''s Shahed-136 (Geran-2) warheads: a dangerous escalation'
+    publisher: Institute for Science and International Security
+    date: '2024-05-09'
+    tier: 2
+- to: RUS
+  layer: action
+  type: visit
+  summary: 'Putin and Pezeshkian met in Bishkek on 1 Sep 2026 (Putin: Russia supplies ''necessary equipment'') and in Turkmenistan on 8 Oct before a CIS summit, a day after a call: Putin said Moscow would
+    ''do everything'' to end the war and offered to mediate.'
+  since: '2026-09-01'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - *id007
+  - url: https://www.aljazeera.com/news/2026/10/8/putin-pledges-russias-support-to-end-us-led-war-on-iran
+    title: Putin pledges Russia's support to end US-led war on Iran
+    publisher: Al Jazeera
+    date: '2026-10-08'
+    tier: 3
+- to: CHN
+  layer: dependency
+  type: energy_export
+  summary: China took more than 80% of the crude Iran shipped in 2025 (Kpler), mostly through Shandong teapot refiners. Under the US blockade the Chinese intake fell to 785,000 b/d in June 2026 and about
+    534,000 b/d in August, against 1.4 million b/d in 2025.
+  since: '2025'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 0.8
+  unit: share_of_iranian_crude_exports_2025_(Kpler)
+  sources:
+  - url: https://www.internazionale.it/ultime-notizie-reuters/2026/08/21/iranian-oil-offers-to-chinese-buyers-fall-as-us-blockade-bites-sources-say
+    title: Iranian oil offers to Chinese buyers fall as US blockade bites, sources say (Kpler volumes)
+    publisher: Reuters (via Internazionale)
+    date: '2026-08-21'
+    tier: 3
+  - url: https://aljazeera.com/news/2026/4/3/how-chinas-teapot-refineries-are-cushioning-it-from-iran-war-oil-crisis
+    title: How China's 'teapot' refineries are cushioning it from Iran war oil crisis
+    publisher: Al Jazeera
+    date: '2026-04-03'
+    tier: 3
+- to: CHN
+  layer: alignment
+  type: treaty
+  summary: '25-year comprehensive cooperation agreement (2021): Xi and Pezeshkian pledged on 2 Sep 2025 to implement it fully. No military clause.'
+  since: 2021-03
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://www.globalsecurity.org/wmd/library/news/iran/2025/09/iran-250902-irna04.htm
+    title: Pezeshkian, Xi pledge to fully implement the 25-year comprehensive cooperation agreement (IRNA)
+    publisher: IRNA via GlobalSecurity (state agency, official statement)
+    date: '2025-09-02'
+    tier: 1
+- to: CHN
+  layer: action
+  type: visit
+  summary: 'Araghchi met Wang Yi in Beijing on 6 May 2026: China called for an end to the war and the reopening of Hormuz, and criticised Iranian strikes on Gulf states.'
+  since: '2026-05-06'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/amp/news/2026/5/6/irans-araghchi-holds-talks-with-chinas-wang-yi-in-beijing
+    title: China calls for end to Iran war and Hormuz to reopen during Araghchi visit
+    publisher: Al Jazeera
+    date: '2026-05-06'
+    tier: 3
+- to: SAU
+  layer: action
+  type: incident
+  summary: From 28 Feb 2026 Iranian missiles and drones hit Saudi targets (Riyadh, Ras Tanura, Yanbu, Prince Sultan Air Base); Riyadh expelled Iran's military attache and four staff on 21 Mar but kept relations;
+    the Gulf-Iran Hormuz talks were postponed in September. The Beijing-brokered normalisation of March 2023 is the frame this overturned.
+  since: '2026-02-28'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/amp/news/2026/3/21/saudi-arabia-expels-iran-military-attache-and-four-team-members
+    title: Saudi Arabia expels Iran military attache, four embassy staff
+    publisher: Al Jazeera
+    date: '2026-03-21'
+    tier: 3
+  - url: https://www.yahoo.com/news/articles/exclusive-saudi-told-iran-not-205559698.html
+    title: Exclusive-Saudi has told Iran not to attack it, warns of possible retaliation, sources say
+    publisher: Reuters (via Yahoo)
+    date: 2026-03
+    tier: 3
+  - url: https://www.npr.org/2026/09/14/nx-s1-5968072/talks-between-iran-and-gulf-states-to-discuss-strait-of-hormuz-postponed
+    title: Talks between Iran and Gulf states to discuss Strait of Hormuz postponed
+    publisher: NPR
+    date: '2026-09-14'
+    tier: 3
+  - url: https://en.wikipedia.org/wiki/China%E2%80%93Iran_relations
+    title: China-Iran relations (Saudi-Iran deal brokered by China, 10 Mar 2023)
+    publisher: Wikipedia (index)
+    date: '2026-10-12'
+    tier: 4
+- to: ARE
+  layer: action
+  type: incident
+  summary: The UAE absorbed about half of Iran's fire at the GCC (roughly 3,000 of 6,700+ missiles and drones by 17 May, one drone hitting a generator outside the Barakah plant perimeter on 17 May; the
+    Habshan gas plant damaged twice). On 18-19 Aug Abu Dhabi suspended all financial transactions and trade with Iran.
+  since: '2026-02-28'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  note: The 3,000 figure is the CRS's 'nearly half' of the total, an inference, not a count.
+  sources:
+  - *id008
+  - url: https://qna.org.qa/en/News-Area/News/2026-8/18/uae-says-all-financial-transactions-trade-exchange-with-iran-is-suspended
+    title: UAE says all financial transactions, trade exchange with Iran is suspended
+    publisher: Qatar News Agency
+    date: '2026-08-18'
+    tier: 3
+  - url: https://english.ahram.org.eg/News/574884.aspx
+    title: UAE halts all trade, financial dealings with Iran
+    publisher: Ahram Online
+    date: '2026-08-19'
+    tier: 3
+  - url: https://www.wam.ae/en/article/c0551n8-uae-air-defence-systems-successfully-engage-uavs
+    title: UAE air defence systems successfully engage UAVs launched from Iran (running tally of interceptions)
+    publisher: WAM (UAE state agency, official statement)
+    date: 2026-05
+    tier: 1
+- to: QAT
+  layer: action
+  type: incident
+  summary: Iran struck the Ras Laffan LNG complex in March 2026 (about 17% of Qatar's LNG export capacity lost, force majeure from 4 Mar); Qatari fighters shot down two Iranian Su-24s heading for Qatar
+    on 2 Mar. Qatar remains a co-mediator between Washington and Tehran (Aug 2026).
+  since: '2026-03-02'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/news/2026/3/18/qatar-says-iran-missile-attack-sparks-fire-causes-damage-at-gas-facility
+    title: Qatar says Iran attack caused significant damage at Ras Laffan gas facility
+    publisher: Al Jazeera
+    date: '2026-03-18'
+    tier: 3
+  - url: https://www.semafor.com/article/03/05/2026/qatar-makes-first-aerial-combat-kill
+    title: Qatar makes first aerial combat kill
+    publisher: Semafor
+    date: '2026-03-05'
+    tier: 3
+  - *id008
+  - url: https://www.khaleejtimes.com/world/gulf/qatar-efforts-ongoing-iran-us-diplomatic-solution
+    title: Mediator Qatar says efforts 'ongoing' for Iran-US diplomatic solution
+    publisher: Khaleej Times
+    date: '2026-08-04'
+    tier: 3
+- to: OMN
+  layer: action
+  type: agreement
+  summary: Oman hosted the indirect US-Iran nuclear talks in Muscat on 6 Feb 2026 and offered the Geneva venue that followed; it favours engagement and was threatened by Trump in late May over Hormuz tolls.
+  since: '2026-02-06'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/amp/news/liveblog/2026/2/6/us-iran-talks-live-critical-negotiations-set-to-begin-in-oman
+    title: 'US-Iran talks live: critical negotiations set to begin in Oman'
+    publisher: Al Jazeera
+    date: '2026-02-06'
+    tier: 3
+  - &id014
+    url: https://www.al-monitor.com/originals/2026/02/swiss-say-oman-host-us-iran-talks-geneva-next-week
+    title: Swiss say Oman to host US-Iran talks in Geneva next week
+    publisher: Al-Monitor
+    date: 2026-02
+    tier: 3
+  - *id008
+- to: BHR
+  layer: action
+  type: incident
+  summary: Iranian strikes damaged the Sitra refinery (force majeure from 9 Mar) and the Aluminium Bahrain plant and, on 17 May, desalination plants; Manama prosecutes citizens for supporting Iran.
+  since: '2026-03-09'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - *id008
+  - url: https://emirates247.com/world/bahrain-intercepts-70-ballistic-missiles-59-iranian-drones-2026-03-03-1.744427
+    title: Bahrain intercepts 70 ballistic missiles, 59 Iranian drones
+    publisher: WAM via Emirates24|7 (state agency, official statement)
+    date: '2026-03-03'
+    tier: 1
+  - url: https://www.reuters.com/world/bahrain-court-jails-nine-life-collaborating-with-irans-revolutionary-guards-2026-05-24/
+    title: Bahrain court jails nine for life for collaborating with Iran's Revolutionary Guards
+    publisher: Reuters
+    date: '2026-05-24'
+    tier: 3
+- to: IRQ
+  layer: objective
+  type: influence_goal
+  summary: 'Iran works to keep its aligned militias armed inside Iraq: Baghdad''s plan to disarm them (PM al-Zaidi: complete by 30 Jun 2027 after a 90-day halt to attacks; the militias ask for end-2027)
+    is met by internal division and Iranian efforts to block it. The groups have struck Kuwait, Jordan, Saudi pipelines and the US embassy in Baghdad.'
+  since: '2026-09-02'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.inss.org.il/?p=127848
+    title: 'The plan to disarm Iraq''s militias: internal division and Iran''s efforts to block it'
+    publisher: INSS
+    date: '2026-09-02'
+    tier: 2
+  - url: https://www.arabnews.pk/middle-east/iraq-sets-2027-deadline-to-disarm-iran-backed-militias-3001956
+    title: Iraq sets 2027 deadline to disarm Iran-backed militias
+    publisher: Arab News
+    date: '2026-09-22'
+    tier: 3
+- to: LBN
+  layer: action
+  type: expulsion
+  summary: Lebanon barred Iranian flights from Beirut (Feb 2025), banned IRGC activity (5 Mar 2026) and on 24 Mar 2026 withdrew the Iranian ambassador's accreditation and ordered him out; Iran said he would
+    stay. Beirut stressed it was not severing relations.
+  since: '2026-03-24'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.newarab.com/news/lebanon-withdraws-iran-envoys-accreditation-orders-leave
+    title: Lebanon withdraws Iran envoy's accreditation, orders him to leave
+    publisher: The New Arab
+    date: '2026-03-24'
+    tier: 3
+  - url: https://www.pbs.org/newshour/world/iran-says-its-ambassador-wont-leave-beirut-despite-lebanon-ordering-his-expulsion
+    title: Iran says its ambassador won't leave Beirut despite Lebanon ordering his expulsion
+    publisher: PBS NewsHour
+    date: 2026-03
+    tier: 3
+  - url: https://www.iranintl.com/en/202603199101
+    title: Lebanon says it will work to end Iranian influence
+    publisher: Iran International (tier 4 pointer, flagged)
+    date: '2026-03-19'
+    tier: 4
+- to: nsa-houthis
+  layer: objective
+  type: influence_goal
+  summary: Per Reuters, Revolutionary Guard officers directed the Houthi offensive on Yemen's Tihama coast (from about 3 Sep 2026, Mocha taken around 10 Sep) to open a Bab al-Mandab front against the US
+    and to press Saudi Arabia, with arms, money and senior personnel promised; Iran denies directing it.
+  since: '2026-09-03'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - &id009
+    url: https://www.bairdmaritime.com/security/feature-iran-directed-houthi-advance-along-red-sea-coast-to-pressure-us
+    title: FEATURE | Iran directed Houthi advance along Red Sea coast to pressure US (Reuters report)
+    publisher: Baird Maritime (Reuters feature)
+    date: 2026-09
+    tier: 3
+  - &id010
+    url: https://www.thenationalnews.com/news/mena/2026/09/14/shadow-man-irgc-flight-and-a-secret-meeting-irans-hand-in-houthi-offensive-revealed/
+    title: 'Shadow man, IRGC flight and a secret meeting: Iran''s hand in Houthi offensive revealed'
+    publisher: The National
+    date: '2026-09-14'
+    tier: 3
+  - &id011
+    url: https://www.kurdistan24.net/en/story/938700
+    title: Iranian support helped Houthis seize key Red Sea positions, Reuters reports
+    publisher: Kurdistan24 (summarising Reuters)
+    date: 2026-09
+    tier: 3
+- to: nsa-houthis
+  layer: action
+  type: incident
+  summary: 'The Houthis took the Red Sea port of Mocha and moved on the Bab al-Mandab (islands: accounts differ between Mayyun, Perim and the Hanish group).'
+  since: '2026-09-10'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  note: Island lists conflict between reports; none adopted.
+  sources:
+  - *id009
+  - *id010
+  - *id011
+- to: nsa-hezbollah
+  layer: dependency
+  type: investment
+  summary: Iran transferred USD 1 billion to Hezbollah in the first ten months of 2025 (US Treasury) and, per two Reuters sources, USD 200 million in September 2026 for displaced Lebanese; Washington disputes
+    the 2026 transfer. Hezbollah joined the war on 2 Mar 2026.
+  since: '2025'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 1000
+  unit: usd_million_transferred_jan_oct_2025_(US_Treasury)
+  note: The 2026 figure (USD 200 million) is sourced to two anonymous people and denied by the State Department.
+  sources:
+  - &id012
+    url: https://www.al-monitor.com/originals/2026/10/exclusive-lebanons-hezbollah-gets-200-million-iran-help-displaced-sources-say
+    title: 'Exclusive: Lebanon''s Hezbollah gets $200 million from Iran for displaced, sources say (Reuters, 7 Oct)'
+    publisher: Reuters (via Al-Monitor)
+    date: '2026-10-08'
+    tier: 3
+  - &id013
+    url: https://thesoufancenter.org/intelbrief-2026-april-3/
+    title: Iran taps its Axis of Resistance for reinforcement (IntelBrief)
+    publisher: The Soufan Center
+    date: '2026-04-03'
+    tier: 2
+- to: nsa-hezbollah
+  layer: action
+  type: incident
+  summary: Hezbollah opened fire on Israel on 2 Mar 2026 two days after Khamenei's killing; Israel then occupied parts of south Lebanon.
+  since: '2026-03-02'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - *id004
+  - *id012
+  - *id013
+- to: PAK
+  layer: action
+  type: agreement
+  summary: Pakistan brokered the ceasefire of 8 Apr 2026, hosted the Islamabad talks (11-12 Apr, Ghalibaf and Araghchi for Iran) and mediated the memorandum of 17 Jun.
+  since: '2026-04-08'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/amp/news/2026/4/10/pakistan-sets-modest-goal-for-us-iran-summit-a-deal-to-keep-talks-going
+    title: 'Pakistan sets modest goal for US-Iran summit: a deal to keep talks going'
+    publisher: Al Jazeera
+    date: '2026-04-10'
+    tier: 3
+  - url: https://gulfnews.com/world/mena/tehran-declares-it-will-halt-obligations-under-mou-as-us-resumes-strikes-and-naval-blockade-1.500608174
+    title: Tehran declares it will halt obligations under MoU as US resumes strikes, naval blockade (Pakistan brokered the MoU)
+    publisher: Gulf News
+    date: '2026-07-15'
+    tier: 3
+- to: PAK
+  layer: action
+  type: incident
+  summary: Iran struck a Jaysh al-Adl base in Pakistani Balochistan on 16 Jan 2024; Pakistan answered with strikes in Sistan-Baluchestan on 18 Jan and recalled its ambassador, then both agreed to cooperate
+    against the Baloch insurgency; Pakistan approved the Iran-Pakistan gas pipeline in Feb 2024.
+  since: '2024-01-16'
+  until: 2024-02
+  last_verified: '2026-10-12'
+  confidence: C
+  note: Only the Wikipedia index is in hand (tier 4); to be re-sourced from Reuters or Dawn.
+  sources:
+  - url: https://en.wikipedia.org/wiki/Iran%E2%80%93Pakistan_relations
+    title: Iran-Pakistan relations (strikes of 16-18 Jan 2024; gas pipeline approval Feb 2024)
+    publisher: Wikipedia (index)
+    date: '2026-10-12'
+    tier: 4
+- to: AFG
+  layer: action
+  type: expulsion
+  summary: Iran expelled about 1.1 million undocumented Afghans in 2025 (about 600,000 in June alone, after the twelve-day war and a deadline of 6 Jul), with espionage allegations as the stated reason;
+    the Taliban asked for 'patience'. Araghchi had visited Kabul in Jan 2025. The Helmand water dispute (deadly border clash, May 2023) is unsolved.
+  since: 2025-06
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/news/2025/7/6/iran-tells-millions-of-afghans-to-leave-or-face-arrest-on-day-of-deadline
+    title: Iran tells millions of Afghans to leave or face arrest on day of deadline
+    publisher: Al Jazeera
+    date: '2025-07-06'
+    tier: 3
+  - url: https://www.aa.com.tr/en/asia-pacific/afghanistan-asks-iran-for-patience-on-returning-refugees/3627604
+    title: Afghanistan asks Iran for 'patience' on returning refugees
+    publisher: Anadolu Agency
+    date: '2025-07-14'
+    tier: 3
+  - url: https://apnews.com/article/afghanistan-taliban-iran-aragchi-142911c8fe2bd3a6c9cfa054b487a97c
+    title: Iran's foreign minister meets the Taliban in the first visit to Kabul in 8 years
+    publisher: Associated Press
+    date: '2025-01-26'
+    tier: 3
+  - url: https://www.tehrantimes.com/news/484920/Iran-calls-Taliban-s-declaration-on-Helman-River-contradictory
+    title: Iran calls Taliban's declaration on Helmand River 'contradictory and incorrect'
+    publisher: Tehran Times (state-aligned daily, official statement)
+    date: '2023-05-20'
+    tier: 1
+- to: IND
+  layer: action
+  type: agreement
+  summary: India and Iran negotiated in April 2026 an interim mechanism for Chabahar (an Iranian port authority manages it, with a guarantee that India's operating rights return once sanctions lift) as
+    the US waiver was due to expire on 26 Apr; Indian reports of a full exit in January were denied.
+  since: '2026-04-26'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://m.economictimes.com/news/india/india-in-talks-with-iran-to-safeguard-chabahar-port-as-us-sanctions-waiver-set-to-expire-explores-interim-mechanism-to-retain-control/articleshow/130519483.cms
+    title: India in talks with Iran to safeguard Chabahar port as US sanctions waiver set to expire, explores interim mechanism to retain control
+    publisher: The Economic Times
+    date: '2026-04-26'
+    tier: 3
+  - url: https://www.dawn.com/news/1967325
+    title: India liquidates Chabahar stakes over Trump's tariff threat
+    publisher: Dawn
+    date: '2026-01-16'
+    tier: 3
+  - url: https://tribune.com.pk/story/2587506/india-denies-reports-of-exit-from-chabahar-port-amid-us-sanctions
+    title: India denies reports of exit from Chabahar port amid US sanctions
+    publisher: The Express Tribune
+    date: '2026-01-16'
+    tier: 3
+- to: TUR
+  layer: action
+  type: incident
+  summary: During the 2026 war three Iranian missiles entered Turkish airspace and were intercepted by NATO air defences (NATO said Turkey was the target, Iran denied it). Erdogan offered in July to help
+    demine Hormuz and urged Trump in August to keep talking.
+  since: 2026-03
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://arabcenterdc.org/resource/turkey-and-the-war-on-iran-between-opportunity-and-catastrophe/
+    title: 'Turkey and the war on Iran: between opportunity and catastrophe'
+    publisher: Arab Center Washington DC
+    date: '2026-03-18'
+    tier: 2
+  - url: https://english.alarabiya.net/News/middle-east/2026/07/08/turkey-ready-to-help-demine-strait-of-hormuz-erdogan-
+    title: 'Turkey ready to help demine Strait of Hormuz: Erdogan'
+    publisher: Al Arabiya
+    date: '2026-07-08'
+    tier: 3
+  - url: https://www.al-monitor.com/originals/2026/08/erdogan-urges-trump-pursue-talks-iran-offers-support
+    title: Erdogan urges Trump to pursue talks with Iran, offers support
+    publisher: Al-Monitor / Reuters
+    date: '2026-08-18'
+    tier: 3
+- to: AZE
+  layer: action
+  type: incident
+  summary: Four drones launched from Iranian territory hit Nakhchivan, including the airport, on 5 Mar 2026; Iran denied responsibility and promised an inquiry. Baku withdrew diplomats on 6 Mar, yet Aliyev
+    and Pezeshkian met in Bishkek on 31 Aug and an Iranian military delegation visited ADEX in Baku on 30 Sep.
+  since: '2026-03-05'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://jamestown.substack.com/p/irans-drone-attacks-strain-tensions
+    title: Iran's Drone Attacks Strain Tensions between Baku and Tehran
+    publisher: Jamestown Foundation
+    date: '2026-03-12'
+    tier: 2
+  - url: https://www.dailysabah.com/world/iran-denies-role-in-drone-attack-on-azerbaijans-nakhchivan/news
+    title: Iran denies role in drone attack on Azerbaijan's Nakhchivan
+    publisher: Daily Sabah
+    date: 2026-03
+    tier: 3
+  - url: https://en.apa.az/foreign-policy/masoud-pezeshkian-iran-interested-in-expanding-relations-with-azerbaijan-in-all-areas-522286
+    title: 'Masoud Pezeshkian: Iran interested in expanding relations with Azerbaijan in all areas'
+    publisher: APA
+    date: '2026-08-31'
+    tier: 3
+  - url: https://www.trend.az/azerbaijan/society/4229772.html
+    title: Azerbaijan, Iran discuss military co-op and regional developments
+    publisher: Trend
+    date: '2026-09-30'
+    tier: 3
+- to: ARM
+  layer: dependency
+  type: energy_export
+  summary: 'The 2004 gas-for-electricity swap, extended to 2030 (Aug 2023): Iranian gas flows by the Tabriz-Meghri pipeline against Armenian electricity; July 2026 roadmap on grid integration and Meghri
+    hydropower.'
+  since: '2004'
+  until: '2030'
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 2030
+  unit: swap_agreement_end_year
+  note: No volume read; the value is the year the extended agreement runs to.
+  sources:
+  - url: https://arka.am/en/news/technology/armenia-and-iran-discuss-construction-of-overhead-power-line-and-gas-for-electricity-exchange
+    title: Armenia and Iran discuss construction of overhead power line and gas for electricity exchange
+    publisher: ARKA
+    date: '2026'
+    tier: 3
+  - url: https://armenpress.am/en/article/1256695/amp
+    title: Armenia, Iran have capacity to expand gas-for-electricity swap programme, Khudatyan says
+    publisher: Armenpress
+    date: '2026'
+    tier: 3
+  - url: https://tass.com/economy/2137475/amp
+    title: 'FACTBOX: What is known about Russian gas supplies to Armenia (Iranian swap since 2004)'
+    publisher: TASS (state agency, official statements)
+    date: 2026-05
+    tier: 1
+- to: ARM
+  layer: action
+  type: visit
+  summary: Foreign minister Mirzoyan visited Tehran on 5-6 Oct 2026 (met Pezeshkian and Ghalibaf; a strategic cooperation agreement said to be near; Iran 'satisfied' with TRIPP); the Iranian-built Kajaran-Agarak
+    road and the Meghri-Nordooz bridge are the physical links.
+  since: '2026-10-05'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://jam-news.net/news-in-azerbaijan-armenia-georgia-5-9-october-2026/
+    title: News in Azerbaijan, Armenia, Georgia, 5-9 October 2026 (Mirzoyan in Tehran)
+    publisher: JAMnews
+    date: '2026-10-09'
+    tier: 3
+- to: SYR
+  layer: action
+  type: incident
+  summary: On 8 Dec 2024, as rebels took Damascus, the Iranian embassy was ransacked and diplomats and Quds Force commanders fled; relations are frozen, the new government bans Iranian goods and citizens,
+    works to cut Iran-linked smuggling to Hezbollah and plans to seek USD 300 billion in compensation.
+  since: '2024-12-08'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://apnews.com/article/iran-mideast-proxy-forces-syria-analysis-c853bf613a6d6af7f6aa99b2e60984f8
+    title: 'Analysis: Collapse of Syria''s Assad is a blow to Iran''s ''Axis of Resistance'''
+    publisher: Associated Press
+    date: '2024-12-08'
+    tier: 3
+  - url: https://www.france24.com/en/middle-east/20241209-iran-position-unprecedented-weakness-after-fall-of-assad-syria-proxies-hezbollah-middle-east
+    title: Iran in a 'position of unprecedented weakness' after the fall of Assad in Syria
+    publisher: France 24
+    date: '2024-12-09'
+    tier: 3
+  - url: https://www.middleeastmonitor.com/20241226-new-syria-government-to-demand-300-billion-in-compensation-from-iran-over-war-damage/
+    title: New Syria government to demand $300 billion in compensation from Iran over war damage
+    publisher: Middle East Monitor
+    date: '2024-12-26'
+    tier: 3
+  - url: https://www.washingtonpost.com/world/2025/04/12/syria-iran-hezbollah-weapons-smuggling/
+    title: Washington Post report on Syria, Iran and Hezbollah weapons smuggling (12 Apr 2025)
+    publisher: The Washington Post
+    date: '2025-04-12'
+    tier: 3
+- to: EGY
+  layer: action
+  type: visit
+  summary: Araghchi met Sisi in Cairo on 2 Jun 2025, the second visit after Oct 2024; in 2026 Egypt worked behind Pakistan as a secondary mediator.
+  since: '2025-06-02'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.arabnews.com/node/2575630/middle-east
+    title: Egypt's El-Sisi meets with Iran's foreign minister
+    publisher: Arab News
+    date: '2025-06-02'
+    tier: 3
+  - url: https://carnegieendowment.org/middle-east/diwan/2026/04/egypt-discrete-role-in-the-ceasefire-with-iran
+    title: Egypt's discreet role in the ceasefire with Iran
+    publisher: Carnegie Middle East Center
+    date: 2026-04
+    tier: 2
+  - url: https://www.chathamhouse.org/2026/05/why-egypt-helping-end-iran-war
+    title: Why Egypt is helping to end the Iran war
+    publisher: Chatham House
+    date: '2026-05-19'
+    tier: 2
+- to: VEN
+  layer: alignment
+  type: treaty
+  summary: 20-year cooperation plan signed in Tehran by Maduro and Raisi on 11 Jun 2022 (oil, petrochemicals, defence). After the US captured Maduro on 3 Jan 2026 Washington demanded Caracas cut ties with
+    Iran; on 29 Jul 2026 Venezuela summoned Iran's ambassador.
+  since: '2022-06-11'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.reuters.com/world/iran-venezuela-sign-20-year-cooperation-plan-state-tv-2022-06-11/
+    title: Under U.S. sanctions, Iran and Venezuela sign 20-year cooperation plan
+    publisher: Reuters
+    date: '2022-06-11'
+    tier: 3
+  - url: https://www.iranintl.com/en/202601043611
+    title: Iran says it backs Maduro government after US operation
+    publisher: Iran International (tier 4 pointer, flagged)
+    date: '2026-01-04'
+    tier: 4
+  - url: https://www.cnn.com/2026/01/07/politics/venezuela-trump-oil-demands
+    title: 'US demands on Venezuela after the Maduro operation: cut ties with adversaries including Iran (CNN, 7 Jan 2026)'
+    publisher: CNN
+    date: '2026-01-07'
+    tier: 3
+  - url: https://www.iranintl.com/en/202607293514
+    title: Venezuela summons Iranian envoy over 'inappropriate' remarks
+    publisher: Iran International (tier 4 pointer, flagged)
+    date: '2026-07-29'
+    tier: 4
+- to: CHE
+  layer: action
+  type: agreement
+  summary: Switzerland hosted the indirect US-Iran nuclear talks in Geneva in February 2026 (Oman mediating) and acts as protecting power for both countries.
+  since: 2026-02
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - *id014
+  - url: https://www.newarab.com/news/swiss-say-oman-host-us-iran-talks-geneva-next-week
+    title: Swiss say Oman to host US-Iran talks in Geneva next week
+    publisher: The New Arab
+    date: 2026-02
+    tier: 3
+- to: ALB
+  layer: action
+  type: incident
+  summary: Cyberattacks on Albanian government systems in 2022, attributed to Iran's wish to punish Tirana for hosting the MEK, led Albania to cut relations on 7 Sep 2022; in April 2026 the US warned of
+    Iran-linked threats.
+  since: '2022-09-07'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://mei.edu/publication/irans-balkan-front-roots-and-consequences-iranian-cyberattacks-against-albania/
+    title: 'Iran''s Balkan front: roots and consequences of Iranian cyberattacks against Albania'
+    publisher: Middle East Institute
+    date: '2023'
+    tier: 2
+  - url: https://www.intellinews.com/albania-on-alert-after-us-warning-of-potential-iran-linked-threats-435448/
+    title: Albania on alert after US warning of potential Iran-linked threats
+    publisher: bne IntelliNews
+    date: 2026-04
+    tier: 3
+- to: SWE
+  layer: action
+  type: incident
+  summary: Swedish security police assess that Iran uses criminal gangs as proxies for violence against Jewish, Israeli and US targets and regime opponents (Iran denies); the 2026 war raised the threat
+    level.
+  since: '2026-03-18'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.thedefensepost.com/2026/03/18/mideast-war-threat-israel-us/
+    title: 'Mideast war ups threat to Israeli, US interests: Swedish intelligence (Sapo annual assessment)'
+    publisher: The Defense Post
+    date: '2026-03-18'
+    tier: 3
+  - url: https://www.algemeiner.com/2026/03/18/iran-war-increases-threat-sweden-security-service-says/
+    title: Iran war increases threat to Sweden, security service says
+    publisher: Algemeiner
+    date: '2026-03-18'
+    tier: 3
+- to: GBR
+  layer: action
+  type: incident
+  summary: An Iranian-made drone hit the runway of RAF Akrotiri in Cyprus in early March 2026 (no injuries); the UK, which with France and Germany triggered the snapback on 28 Aug 2025, says it is not at
+    war and welcomed the April ceasefire.
+  since: 2026-03
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.yahoo.com/news/articles/uk-says-not-war-iranian-125413343.html
+    title: UK says it is not at war after Iranian drone strikes RAF Akrotiri base in Cyprus
+    publisher: Reuters (via Yahoo News)
+    date: 2026-03
+    tier: 3
+  - url: https://www.ajbell.co.uk/news/articles/uk-welcomes-us-iran-ceasefire-amid-efforts-reopen-strait-hormuz
+    title: UK welcomes US-Iran ceasefire amid efforts to reopen Strait of Hormuz
+    publisher: AJ Bell / Reuters
+    date: 2026-04
+    tier: 3
+  - url: https://en.majalla.com/node/327115/politics/european-countries-trigger-%E2%80%98snapback%E2%80%99-iran-sanctions
+    title: European countries trigger the 'snapback' of Iran sanctions
+    publisher: Al Majalla
+    date: 2025-08
+    tier: 3
+- to: org-nato
+  layer: action
+  type: incident
+  summary: In June 2026 Iran accused NATO of complicity in the US operation, naming Romania and Italy after Rutte said US flights for Epic Fury used allied bases; the Ankara summit declaration (para 5)
+    says Iran 'must never have a nuclear weapon'.
+  since: '2026-06-24'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.bursa.ro/iranul-acuza-nato-de-complicitate-romania-si-italia-numite-explicit-de-rutte-drept-tari-participante-la-operatiunea-8222epic-fury-05993950
+    title: Iran accuses NATO of complicity; Romania and Italy named by Rutte as participants in Operation Epic Fury
+    publisher: Bursa (citing AFP)
+    date: '2026-06-25'
+    tier: 3
+  - url: https://www.stripes.com/theaters/europe/2026-05-04/rutte-nato-trump-germany-21570969.html
+    title: 'Rutte: NATO leaders heard Trump''s complaints ''loud and clear'' (bases used for Iran operations)'
+    publisher: Stars and Stripes
+    date: '2026-05-04'
+    tier: 3
+  - url: https://foreignpolicy.com/2026/07/08/nato-ankara-summit-declaration-full-text-trump-ukraine-russia/
+    title: The Ankara Summit Declaration (para 5, Iran)
+    publisher: Foreign Policy
+    date: '2026-07-08'
+    tier: 3
+- to: org-un
+  layer: objective
+  type: influence_goal
+  summary: 'Nuclear file: Iran keeps its claimed right to enrich and its roughly 440.9 kg of 60% uranium (believed at Isfahan, unverified), the IAEA has had no access to the bombed sites since June 2025
+    and withdrew inspectors after the February 2026 attacks, a bill to leave the NPT is pending in the Majlis, and Iran, Russia and China call the E3 snapback of UN sanctions (27-28 Sep 2025) void. The
+    IAEA is a UN-system agency with no actor of its own.'
+  since: 2025-06
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  note: The 440.9 kg figure is the IAEA's last verified count of Feb-Jun 2025; the stock has not been inspected since.
+  sources:
+  - url: https://www.wsls.com/news/politics/2026/04/29/irans-highly-enriched-uranium-likely-is-at-the-isfahan-site-the-un-nuclear-chief-tells-the-ap/
+    title: Iran's highly enriched uranium likely is at the Isfahan site, the UN nuclear chief tells the AP
+    publisher: Associated Press (via WSLS)
+    date: '2026-04-29'
+    tier: 3
+  - url: https://www.armscontrol.org/node/15299
+    title: Iran threatens to withdraw from the NPT
+    publisher: Arms Control Association
+    date: '2026'
+    tier: 2
+  - url: https://www.tehrantimes.com/news/525010/Iranian-lawmakers-push-bill-to-exit-NPT
+    title: Iranian lawmakers push bill to exit NPT
+    publisher: Tehran Times (state-aligned daily, statement of lawmakers)
+    date: '2026'
+    tier: 1
+  - url: https://www.business-standard.com/world-news/iaea-chief-signals-that-inspectors-will-visit-iran-s-nuclear-sites-126062400281_1.html
+    title: IAEA chief signals that inspectors will visit Iran's nuclear sites
+    publisher: Business Standard
+    date: '2026-06-24'
+    tier: 3
+  - url: https://opiniojuris.org/2026/02/24/un-sanctions-on-iran-back-in-force-or-gone-for-good/
+    title: 'UN sanctions on Iran: back in force or gone for good?'
+    publisher: Opinio Juris
+    date: '2026-02-24'
+    tier: 2
+  - url: https://en.wikipedia.org/wiki/Iran_and_weapons_of_mass_destruction
+    title: Iran and weapons of mass destruction (IAEA non-compliance finding 12 Jun 2025; Iran, Russia and China declare snapback void 18 Oct 2025)
+    publisher: Wikipedia (index)
+    date: '2026-10-12'
+    tier: 4
+- layer: alignment
+  type: treaty
+  summary: Joint Trilateral Statement signed in Beijing on 10 Mar 2023 by Saudi Arabia, Iran and China restoring diplomatic relations after seven years, with respect for sovereignty and non-interference.
+    Still formally in force - Riyadh expelled Iran's military attache and four staff on 21 Mar 2026 but did not break relations - while Iranian strikes on the kingdom since 28 Feb 2026 empty it of content.
+  since: 2023-03-10
+  until: null
+  last_verified: '2026-10-13'
+  confidence: A
+  sources:
+  - url: https://www.fmprc.gov.cn/eng/gjhdq_665435/2675_665437/2878_663746/2879_663748/202303/t20230311_11039241.html
+    title: Joint Trilateral Statement by the People's Republic of China, the Kingdom of Saudi Arabia, and the Islamic Republic of Iran
+    publisher: Ministry of Foreign Affairs of China
+    date: 2023-03-11
+    tier: 1
+  - url: https://www.aljazeera.com/amp/news/2026/3/21/saudi-arabia-expels-iran-military-attache-and-four-team-members
+    title: Saudi Arabia expels Iran military attache, four embassy staff
+    publisher: Al Jazeera
+    date: 2026-03-21
+    tier: 3
+  to: SAU
+  mirrored_from: SAU
