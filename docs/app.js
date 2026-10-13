@@ -617,19 +617,18 @@
     const el = document.getElementById("page-theatres");
     const PART = { hostility: "hostility", seams: "seams", faults: "feuds", claims: "claims", movement: "movement", friction: "friction" };
     el.innerHTML = `<h2>Theatres</h2><p class="lede">The level below grand strategy in Luttwak's ladder: the theatre, where geography and several actors' forces add up, and where the readings on these pages become acute. Seventeen theatres, kept by hand; an actor may sit in more than one. The heat of a theatre is computed from what the atlas has read between its members: declared hostility, seams, feuds, claimed territory and movements with stakes.</p>
-      <div class="tmap-wrap"><svg id="tmap"></svg><div class="tmap-note">scroll to zoom · drag to pan · click a country or a theatre below to name it</div></div>
+      <div class="tmap-wrap"><svg id="tmap"></svg><div class="tmap-note">scroll to zoom · drag to pan · click a country to name its theatre, click again to return</div></div>
       <p class="how">Heat is the sum of the weights between the members of a theatre, divided by the number of possible pairs, so a small dense theatre is not outweighed by a large one; 100 is the hottest theatre today, the others are scaled to it. Theatres whose members have few cards yet read cold for lack of data, not for peace: the card count says how far each one is written.</p>
       <div class="theatres">` + THEATRES.map(t => `<div class="theatre" data-id="${t.id}"><h3>${esc(t.name)} <span>${t.index}</span></h3>
         <div class="hbar"><span style="width:${t.index}%"></span></div>
         <div class="parts">${Object.entries(t.parts).filter(([, v]) => v).map(([k, v]) => `<i>${PART[k]} ${v}</i>`).join(" · ") || "<i>nothing read yet</i>"} <em>· ${t.cards} of ${t.members.length} members with a card</em></div>
         <table class="top">${t.top.map(r => `<tr><td><a href="#/view/${r.a}">${nameOf(r.a)}</a></td><td><b style="color:${gradeBorder(r.grade)}">${r.grade.replace("_", " ")}</b></td><td><a href="#/view/${r.x}">${nameOf(r.x)}</a></td><td><u>${r.trend && r.trend !== "stable" ? TREND_SIGN[r.trend] + " " + r.trend : ""}</u></td><td class="w">${r.weight}</td></tr>`).join("")}</table>
       </div>`).join("") + `</div>
-      <details class="method"><summary>How heat is computed</summary><p>For every pair of members of a theatre the build adds: adversary 16, rival 6, claimed territory 6, a reluctant ally or reluctant partner 1, an ally cooling or a rival warming 3; for every feud inside the theatre 6; for every seam whose three actors are inside it 4. Adversaries weigh very high, rivals high, reluctant postures low. Only hand-written stances of confidence A or B count. The sum is divided by the number of possible pairs among the members, and the result is scaled so that the hottest theatre reads 100. The list of theatres and their members is kept by hand in data/theatres.yaml; organisations are never members. On the map the members of every theatre are lit with its heat, the hottest on top; click a country to see the theatre it sits in (click again to cycle through its theatres), or click a theatre below to light it alone.</p></details>`;
+      <details class="method"><summary>How heat is computed</summary><p>For every pair of members of a theatre the build adds: adversary 16, rival 6, claimed territory 6, a reluctant ally or reluctant partner 1, an ally cooling or a rival warming 3; for every feud inside the theatre 6; for every seam whose three actors are inside it 4. Adversaries weigh very high, rivals high, reluctant postures low. Only hand-written stances of confidence A or B count. The sum is divided by the number of possible pairs among the members, and the result is scaled so that the hottest theatre reads 100. The list of theatres and their members is kept by hand in data/theatres.yaml; organisations are never members. On the map the members of every theatre are lit with its heat, the hottest on top; click a country to see the hottest theatre it sits in, click the lit theatre again to return to the world, or click a theatre below to light it alone.</p></details>`;
     drawTheatreMap();
     el.querySelectorAll(".theatre").forEach(d => d.onclick = ev => { if (ev.target.closest("a")) return; const on = d.classList.toggle("is-on"); el.querySelectorAll(".theatre").forEach(o => { if (o !== d) o.classList.remove("is-on"); }); drawTheatreMap(on ? d.dataset.id : null); });
     el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
   }
-  let theatreCycle = {};   // country id -> index of the theatre shown last, to cycle through the theatres it sits in
   function drawTheatreMap(only) {
     const svg = d3.select("#tmap");
     svg.selectAll("*").remove();
@@ -664,13 +663,13 @@
         .attr("fill", col).attr("fill-opacity", light(t.index)).attr("stroke", col).attr("stroke-width", .8).attr("data-sw", .8).attr("stroke-opacity", .35 + .65 * t.index / 100).attr("filter", "url(#tglow)")
         .style("cursor", "pointer")
         .on("click", (ev, f) => {
-          // a country may sit in several theatres: the first click shows the hottest, the next ones cycle
-          const ts = inTheatres(f.id); if (!ts.length) return;
-          const i = (theatreCycle[f.id] = ((theatreCycle[f.id] ?? -1) + 1) % ts.length);
-          const d = document.querySelector(`.theatre[data-id="${ts[i].id}"]`);
+          // clicking a lit theatre again returns to the world; otherwise a country shows the hottest theatre it sits in
           document.querySelectorAll(".theatre").forEach(o => o.classList.remove("is-on"));
+          if (chosen) { drawTheatreMap(null); return; }
+          const ts = inTheatres(f.id); if (!ts.length) return;
+          const d = document.querySelector(`.theatre[data-id="${ts[0].id}"]`);
           if (d) d.classList.add("is-on");
-          drawTheatreMap(ts[i].id);
+          drawTheatreMap(ts[0].id);
         })
         .append("title").text(f => inTheatres(f.id).map(t => `${t.name} · ${t.index}`).join("\n"));
     });
