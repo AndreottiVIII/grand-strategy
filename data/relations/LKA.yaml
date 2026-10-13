@@ -1,0 +1,143 @@
+from: LKA
+relations:
+  # ---------- objective ----------
+  - to: org-imf
+    layer: objective
+    type: influence_goal
+    summary: "Keeps the 48-month Extended Fund Facility on track as the anchor for other lenders. The Executive Board completed the combined 5th and 6th reviews in late May 2026 (dated here as the since date)."
+    since: 2026-05-27
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.cbsl.gov.lk/sites/default/files/cbslweb_documents/press/pr/press_20260528_imf_executive_board_completes_the_combined_5th_and_6th_reviews_under_eff_with_srilanka_e.pdf", title: "IMF Executive Board completes the combined 5th and 6th reviews under EFF with Sri Lanka", publisher: "Central Bank of Sri Lanka", date: 2026-05-28, tier: 1}
+      - {url: "https://www.imf.org/en/news/articles/2026/04/09/pr26113-sri-lanka-imf-staff-reaches-sla-combined-fifth-and-sixth-reviews-under-eff-arrangement", title: "Sri Lanka: IMF staff reaches SLA on combined fifth and sixth reviews under EFF arrangement", publisher: "IMF", date: 2026-04-09, tier: 1}
+
+  - to: IND
+    layer: objective
+    type: influence_goal
+    summary: "Seeks Indian investment, energy and defence cooperation while refusing to let Sri Lankan territory be used against India. The neutral line is a bid to avoid a choice between India and China."
+    since: 2024-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://foreignpolicy.com/2024/12/18/india-sri-lanka-dissanayake-visit-modi-partnership-china/", title: "South Asia Brief (Dissanayake's first trip as president went to India)", publisher: "Foreign Policy", date: 2024-12-18, tier: 3}
+      - {url: "https://adaderana.lk/news/107157/pm-modis-visit-india-and-sri-lanka-sign-several-mous", title: "PM Modi's visit: India and Sri Lanka sign several MoUs", publisher: "Ada Derana", date: 2025-04, tier: 3}
+
+  # ---------- dependency ----------
+  - to: ARE
+    layer: dependency
+    type: remittances
+    value: 8.08
+    unit: usd_bn_worker_remittances_2025
+    summary: "Worker remittances reached a record US$8.08bn in 2025, up from about US$6.6bn in 2024. Addressed to the UAE as a placeholder for the Gulf; the Gulf states (UAE, Kuwait, Saudi Arabia, Qatar) supply most of it, but the share is disputed (about 40% for those four in one estimate, about 80% for the whole region in another)."
+    since: 2025-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.ft.lk/ft_view__editorial/Rise-in-workers-remittances/58-791224", title: "Rise in workers' remittances", publisher: "Daily FT", date: 2026-01, tier: 3}
+      - {url: "https://www.adaderana.lk/news/112327/sri-lanka-records-usd-511b-remittances-in-first-8-months-of-2025", title: "Sri Lanka records USD 5.11B remittances in first 8 months of 2025", publisher: "Ada Derana", date: 2025-10, tier: 3}
+
+  - to: CHN
+    layer: dependency
+    type: debt
+    value: 6
+    unit: usd_bn_owed_to_china
+    summary: "Sri Lanka owes China roughly US$6bn in some reports and US$8bn in others, including the loans for Hambantota and other infrastructure. The figures are not reconciled; the lower one is recorded and the gap is noted here rather than resolved."
+    since: 2017-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://gulfnews.com/business/sri-lanka-hands-over-debt-laden-port-to-chinese-owner-1.2137935", title: "Sri Lanka hands over debt-laden port to Chinese owner", publisher: "Gulf News", date: 2017-12, tier: 3}
+
+  - to: org-imf
+    layer: dependency
+    type: debt
+    value: 2.4
+    unit: usd_bn_eff_disbursed_cumulative
+    summary: "Total IMF disbursements under the EFF reached about US$2.4bn (SDR 1.778bn) after the combined 5th and 6th reviews. The seventh review is based on end-June 2026 targets; the eighth, the last scheduled, is available from 1 March 2027."
+    since: 2026-05-27
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.cbsl.gov.lk/sites/default/files/cbslweb_documents/press/pr/press_20260528_imf_executive_board_completes_the_combined_5th_and_6th_reviews_under_eff_with_srilanka_e.pdf", title: "IMF Executive Board completes the combined 5th and 6th reviews under EFF with Sri Lanka", publisher: "Central Bank of Sri Lanka", date: 2026-05-28, tier: 1}
+      - {url: "https://www.adaderana.lk/news/123033/imf-executive-board-completes-sri-lankas-combined-fifth-and-sixth-reviews", title: "IMF Executive Board completes Sri Lanka's combined Fifth and Sixth Reviews", publisher: "Ada Derana", date: 2026-05, tier: 3}
+
+  - to: org-eu
+    layer: dependency
+    type: trade_share
+    value: 2.6
+    unit: eur_bn_eu_imports_from_lka_2024
+    summary: "EU imports from Sri Lanka fell from EUR 3.2bn in 2022 to EUR 2.6bn in 2024, an average fall of 8.4% a year, as summarised in the EU GSP+ staff assessment. The figure was read in the press summary, not checked line by line in the document."
+    since: 2022
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://data.consilium.europa.eu/doc/document/ST-12037-2026-ADD-9/en/pdf", title: "EU GSP+ assessment of Sri Lanka, 2023-2025 (staff document)", publisher: "Council of the EU", date: 2026-07, tier: 1}
+
+  # ---------- action ----------
+  - to: IND
+    layer: action
+    type: agreement
+    summary: "Modi visits Sri Lanka (4-5 April 2025). Seven MoUs: a five-year defence umbrella arrangement (exercises, maritime surveillance, defence industry), a grid interconnection agreement for power trade, a trilateral Trincomalee energy hub with the UAE, and the groundbreaking of the 120 MW Sampur solar plant. Colombo repeated that its territory will not be used against India."
+    since: 2025-04-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://adaderana.lk/news/107157/pm-modis-visit-india-and-sri-lanka-sign-several-mous", title: "PM Modi's visit: India and Sri Lanka sign several MoUs", publisher: "Ada Derana", date: 2025-04, tier: 3}
+      - {url: "https://www.isas.nus.edu.sg/wp-content/uploads/2025/04/ISAS-Brief-1228HK-HS.pdf", title: "ISAS Brief - Indian Prime Minister visits Sri Lanka, reinforcing strategic ties", publisher: "ISAS, National University of Singapore", date: 2025-04, tier: 2}
+      - {url: "https://arab.news/pfqgz", title: "Sri Lanka, India forge defense, energy ties during Modi's visit", publisher: "Arab News", date: 2025-04, tier: 3}
+
+  - to: CHN
+    layer: action
+    type: agreement
+    summary: "Sri Lanka and China's Sinopec agree (January 2025) to fast-track a 200,000 barrels-a-day refinery at Hambantota, then valued at US$3.7bn (one analysis says US$3.2bn). Work was expected to start in 2025; no start was confirmed in the reporting found."
+    since: 2025-01-22
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://gulftoday.ae/business/2025/01/22/sri-lanka-and-china-agree-to-fast-track-37-billion-refinery", title: "Sri Lanka and China agree to fast track $3.7 billion refinery", publisher: "Gulf Today", date: 2025-01-22, tier: 3}
+      - {url: "https://inspectioneering.com/news/2025-09-16/11753/sri-lanka-expects-sinopec-to-start-37b-refinery-this-year", title: "Sri Lanka expects Sinopec to start $3.7B refinery this year", publisher: "Inspectioneering", date: 2025-09-16, tier: 3}
+
+  - to: GBR
+    layer: action
+    type: un_vote
+    summary: "UK-led Human Rights Council resolution A/HRC/60/L.1/Rev.1 (sponsors include the UK, Canada, Malawi, Montenegro, North Macedonia) renews the OHCHR accountability project for two years. It was adopted without a vote in October 2025; Colombo rejected it."
+    since: 2025-10-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.mfa.gov.lk/en/statement-hrc-6th-october-2025", title: "Statement at the Human Rights Council, 6 October 2025", publisher: "Ministry of Foreign Affairs of Sri Lanka", date: 2025-10-06, tier: 1}
+      - {url: "https://www.tamilguardian.com/node/953790", title: "UN resolution passes, extending Sri Lanka accountability project for two more years", publisher: "Tamil Guardian", date: 2025-10, tier: 3}
+      - {url: "https://www.dailymirror.lk/print/news/SL-rejects-UNHRC-resolution-calls-external-evidence-mechanism-unprecedented-expansion-of-mandate/239-321666", title: "SL rejects UNHRC resolution, calls external evidence mechanism unprecedented expansion of mandate", publisher: "Daily Mirror", date: 2025-10, tier: 3}
+
+  - to: IND
+    layer: action
+    type: incident
+    summary: "Palk Strait arrests continue. The Sri Lankan navy reported 515 Indian fishermen arrested and 66 trawlers seized in 2024 by early December; Tamil Nadu's chief minister gave 530 and 71 for 2024. The counts differ by source."
+    since: 2024-01-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.tribuneindia.com/news/editor-picks/palk-strait-row-indian-fishermen-in-troubled-waters-141-in-sl-custody", title: "Palk Strait row: Indian fishermen in troubled waters", publisher: "The Tribune", date: 2025, tier: 3}
+
+  - to: MDV
+    layer: action
+    type: visit
+    summary: "Dissanayake's state visit to Malé (28-30 July 2025), his first to the Maldives as president, marking 60 years of relations (since 26 July 1965). Bilateral talks, several MoUs and a business forum."
+    since: 2025-07-28
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://mfa.gov.lk/en/2025/07/25", title: "President Anura Kumara Dissanayake to undertake a state visit to Maldives", publisher: "Ministry of Foreign Affairs of Sri Lanka", date: 2025-07-25, tier: 1}
+      - {url: "https://english.newsfirst.lk/2025/07/25/president-anura-kumara-dissanayake-to-undertake-a-state-visit-to-maldives", title: "President Anura Kumara Dissanayake to undertake a state visit to Maldives", publisher: "Newsfirst", date: 2025-07-25, tier: 3}

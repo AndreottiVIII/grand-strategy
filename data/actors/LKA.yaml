@@ -1,14 +1,83 @@
 id: LKA
 name: Sri Lanka
+short: Sri Lanka
 type: state
 iso2: lk
 wikipedia: https://en.wikipedia.org/wiki/Sri_Lanka
-coords:
-- 79.92
-- 6.9
+coords: [79.92, 6.9]
 seat: Sri Jayawardenepura Kotte
-regions:
-- world
-card: stub
+regions: ['south-central-asia']
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the IMF Extended Fund Facility on track, because it is the anchor that keeps other lenders lending. The Executive Board completed the combined 5th and 6th reviews in late May 2026, releasing about US$695m and lifting total disbursements to about US$2.4bn. The IMF noted two continuous criteria were not observed (no new external payment arrears, no new or tighter import restrictions)."
+      confidence: A
+      sources:
+        - {url: "https://www.cbsl.gov.lk/sites/default/files/cbslweb_documents/press/pr/press_20260528_imf_executive_board_completes_the_combined_5th_and_6th_reviews_under_eff_with_srilanka_e.pdf", title: "IMF Executive Board completes the combined 5th and 6th reviews under EFF with Sri Lanka", publisher: "Central Bank of Sri Lanka", date: 2026-05-28, tier: 1}
+        - {url: "https://www.imf.org/en/news/articles/2026/04/09/pr26113-sri-lanka-imf-staff-reaches-sla-combined-fifth-and-sixth-reviews-under-eff-arrangement", title: "Sri Lanka: IMF staff reaches SLA on combined fifth and sixth reviews under EFF arrangement", publisher: "IMF", date: 2026-04-09, tier: 1}
+    - rank: 2
+      text: "Balance India and China without choosing between them: draw Indian energy, defence and grid investment into the north and east, while keeping the Chinese port, refinery and loan commitments already signed. The government calls the line neutral. Its 2024 manifesto pledged not to take the side of either."
+      confidence: B
+      sources:
+        - {url: "https://foreignpolicy.com/2024/12/18/india-sri-lanka-dissanayake-visit-modi-partnership-china/", title: "South Asia Brief (Dissanayake's first trip as president went to India)", publisher: "Foreign Policy", date: 2024-12-18, tier: 3}
+        - {url: "https://www.aspistrategist.org.au/dissanayakes-difficult-path-to-take-sri-lanka-back-to-non-alignment/", title: "Dissanayake's difficult path to take Sri Lanka back to non-alignment", publisher: "ASPI Strategist", date: 2024, tier: 2}
+        - {url: "https://adaderana.lk/news/107157/pm-modis-visit-india-and-sri-lanka-sign-several-mous", title: "PM Modi's visit: India and Sri Lanka sign several MoUs", publisher: "Ada Derana", date: 2025-04, tier: 3}
+    - rank: 3
+      text: "Keep EU trade preferences (GSP+) and limit the cost of UN Human Rights Council accountability, which Colombo rejects as an unprecedented expansion of the Council's mandate. Preferences matter to exporters, and the EU link is conditional on human rights and on replacing the Prevention of Terrorism Act."
+      confidence: B
+      sources:
+        - {url: "https://www.mfa.gov.lk/en/statement-hrc-6th-october-2025", title: "Statement at the Human Rights Council, 6 October 2025", publisher: "Ministry of Foreign Affairs of Sri Lanka", date: 2025-10-06, tier: 1}
+        - {url: "https://data.consilium.europa.eu/doc/document/ST-12037-2026-ADD-9/en/pdf", title: "EU GSP+ assessment of Sri Lanka, 2023-2025 (staff document)", publisher: "Council of the EU", date: 2026-07, tier: 1}
+        - {url: "https://www.tamilguardian.com/node/953790", title: "UN resolution passes, extending Sri Lanka accountability project for two more years", publisher: "Tamil Guardian", date: 2025-10, tier: 3}
+
+  means:
+    - domain: economic
+      text: "Worker remittances: a record US$8.08bn in 2025, up from about US$6.6bn in 2024. The Gulf states supply most of it, though the share is disputed (about 40% for four Gulf states in one estimate, about 80% for the whole region in another). The total is a Central Bank figure as reported by the press."
+      confidence: B
+      sources:
+        - {url: "https://www.ft.lk/ft_view__editorial/Rise-in-workers-remittances/58-791224", title: "Rise in workers' remittances", publisher: "Daily FT", date: 2026-01, tier: 3}
+        - {url: "https://www.adaderana.lk/news/112327/sri-lanka-records-usd-511b-remittances-in-first-8-months-of-2025", title: "Sri Lanka records USD 5.11B remittances in first 8 months of 2025", publisher: "Ada Derana", date: 2025-10, tier: 3}
+    - domain: economic
+      text: "Ports and energy as bargaining chips: a Colombo West container terminal for Adani (after it withdrew a US DFC loan request), the Hambantota port under a 99-year lease to a Chinese state firm (2017), a US$3.7bn Sinopec refinery approved for Hambantota, and the trilateral Trincomalee energy hub with the UAE and India."
+      confidence: B
+      sources:
+        - {url: "https://www.bairdmaritime.com/shipping/ports/adanis-colombo-container-terminal-to-double-capacity-ahead-of-schedule-despite-foregoing-us-funding", title: "Adani's Colombo container terminal to double capacity ahead of schedule, despite foregoing US funding", publisher: "Baird Maritime", date: 2025, tier: 3}
+        - {url: "https://www.thedailystar.net/business/sri-lanka-signs-11b-china-port-deal-1440868", title: "Sri Lanka signs $1.1b China port deal", publisher: "The Daily Star", date: 2017-07, tier: 3}
+        - {url: "https://www.bairdmaritime.com/shipping/ports/sri-lanka-to-fast-track-37b-refinery-with-chinas-sinopec", title: "Sri Lanka to fast track $3.7b refinery with China's Sinopec", publisher: "Baird Maritime", date: 2025-01, tier: 3}
+    - domain: diplomatic
+      text: "Neutrality as a diplomatic instrument: Colombo says Sri Lankan territory will not be used in ways detrimental to India, and says it will not take sides between India and China. That keeps both capitals engaged and both lenders open, but it is a pledge that other actors test rather than a treaty."
+      confidence: B
+      sources:
+        - {url: "https://foreignpolicy.com/2024/12/18/india-sri-lanka-dissanayake-visit-modi-partnership-china/", title: "South Asia Brief (Dissanayake's first trip as president went to India)", publisher: "Foreign Policy", date: 2024-12-18, tier: 3}
+        - {url: "https://www.aspistrategist.org.au/dissanayakes-difficult-path-to-take-sri-lanka-back-to-non-alignment/", title: "Dissanayake's difficult path to take Sri Lanka back to non-alignment", publisher: "ASPI Strategist", date: 2024, tier: 2}
+
+  constraints:
+    - text: "Debt and IMF conditions: fuel and electricity must be priced at cost recovery, and the programme bars new external payment arrears and new or tighter import restrictions. The IMF records both continuous criteria as not observed in the latest review, and lists the Middle East war and Cyclone Ditwah as downside risks."
+      confidence: A
+      sources:
+        - {url: "https://www.cbsl.gov.lk/sites/default/files/cbslweb_documents/press/pr/press_20260528_imf_executive_board_completes_the_combined_5th_and_6th_reviews_under_eff_with_srilanka_e.pdf", title: "IMF Executive Board completes the combined 5th and 6th reviews under EFF with Sri Lanka", publisher: "Central Bank of Sri Lanka", date: 2026-05-28, tier: 1}
+    - text: "India's leverage over security and the Tamil question: Indian fishermen arrested in the Palk Strait (the navy counted 515 arrests and 66 trawlers seized in 2024 by early December) keep Tamil Nadu pressing Delhi, and Tamil groups call the 2025 HRC text too soft. Colombo cannot move far toward China without a cost in New Delhi."
+      confidence: B
+      sources:
+        - {url: "https://www.tribuneindia.com/news/editor-picks/palk-strait-row-indian-fishermen-in-troubled-waters-141-in-sl-custody", title: "Palk Strait row: Indian fishermen in troubled waters", publisher: "The Tribune", date: 2025, tier: 3}
+        - {url: "https://www.tamilguardian.com/node/953790", title: "UN resolution passes, extending Sri Lanka accountability project for two more years", publisher: "Tamil Guardian", date: 2025-10, tier: 3}
+    - text: "EU market access is conditional: GSP+ depends on the 27 conventions and on the PTA replacement, and the EU reviews Sri Lanka for the period after 2027 under new criteria. EU imports from Sri Lanka fell from EUR 3.2bn in 2022 to EUR 2.6bn in 2024."
+      confidence: B
+      sources:
+        - {url: "https://data.consilium.europa.eu/doc/document/ST-12037-2026-ADD-9/en/pdf", title: "EU GSP+ assessment of Sri Lanka, 2023-2025 (staff document)", publisher: "Council of the EU", date: 2026-07, tier: 1}
+        - {url: "https://www.tamilguardian.com/node/952896", title: "Sri Lanka faces scrutiny as EU GSP+ monitoring mission reviews human rights commitments", publisher: "Tamil Guardian", date: 2025, tier: 3}
+
+  paradoxes:
+    - text: "Balancing makes each giant a fear of the other: the Trincomalee energy hub and the India defence umbrella were read by analysts as a counter to China's Hambantota refinery deal, which pulls Colombo closer into the rivalry its neutral line is meant to avoid."
+      confidence: C
+      sources:
+        - {url: "https://arab.news/pfqgz", title: "Sri Lanka, India forge defense, energy ties during Modi's visit", publisher: "Arab News", date: 2025-04, tier: 3}
+        - {url: "https://www.bairdmaritime.com/shipping/ports/sri-lanka-to-fast-track-37b-refinery-with-chinas-sinopec", title: "Sri Lanka to fast track $3.7b refinery with China's Sinopec", publisher: "Baird Maritime", date: 2025-01, tier: 3}
+
+  reading: |
+    Sri Lanka is a small island on the Indian Ocean sea lanes, and its foreign policy is driven first by money: the IMF programme, creditors, Gulf remittances and fuel imports. The Dissanayake government (NPP, in office since September 2024) tries to turn that position into several deals at once. India gets energy, defence and the grid; China keeps Hambantota and the refinery it has already signed for; the EU and the US keep trade preference and tariff relief in play.
+    The line it calls neutral is a constraint as much as an instrument. It keeps every lender open, and it is what a debt setback, a fishermen's dispute, a Tamil vote in Geneva or a Gulf oil shock would test first.
