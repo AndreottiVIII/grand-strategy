@@ -1,0 +1,879 @@
+actor: ARE
+stances:
+- toward: USA
+  grade: ally
+  trend: warming
+  bond: none
+  since: 2025-05-15
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'Stable de facto alignment, not a treaty: the US Air Force has flown from Al Dhafra since 2002, Trump''s Abu Dhabi stop of 15 May 2025 produced the AI framework and the USD 1.4tn pledge, the UAE
+    took the largest share of Iranian fire in the 2026 war on the US-Israeli side, and Washington answered by easing chip and arms exports (July 2026) and promising a ''commitment'' to UAE security (Rubio,
+    24 Jun 2026). Graded ally on the ONTOLOGY rule (stable de facto alignment); the missing treaty is written into the card as a constraint, and the same Rubio statement is the only formal assurance. Not
+    partner, because the UAE fought alongside and hosts US forces; not reluctant_ally, because no source shows Abu Dhabi resisting the alignment (the friction is about being left exposed, not about the
+    tie). Bond none: interest.'
+  sources:
+  - url: https://www.khaleejtimes.com/uae/rubio-us-iran-deal-sheikh-mohamed-commitment-uae-security
+    title: Rubio discusses US-Iran deal with Sheikh Mohamed, vows 'commitment' to UAE security
+    publisher: Khaleej Times
+    date: 2026-06-24
+    tier: 3
+  - url: https://www.whitehouse.gov/fact-sheets/2025/05/fact-sheet-president-donald-j-trump-secures-200-billion-in-new-u-s-uae-deals-and-accelerates-previously-committed-1-4-trillion-uae-investment
+    title: 'Fact sheet: President Trump secures USD 200 billion in new US-UAE deals and accelerates previously committed USD 1.4 trillion UAE investment'
+    publisher: The White House
+    date: 2025-05-15
+    tier: 1
+  - url: https://www.datacenterdynamics.com/en/news/us-govt-eases-ai-chip-export-controls-on-uae-following-countrys-support-in-iran-war/
+    title: US govt eases AI chip export controls on UAE following country's support in Iran war
+    publisher: DatacenterDynamics
+    date: 2026-07
+    tier: 3
+  - url: https://www.everycrsreport.com/files/2026-06-03_R48971_0ef11e7717f94482f81c35cdf07bad07f0ea04f8.html
+    title: 'The Arab Gulf States, the Iran Conflict, and U.S. Relations: In Brief'
+    publisher: Congressional Research Service
+    date: 2026-06-03
+    tier: 1
+- toward: ISR
+  grade: partner
+  trend: stable
+  bond: none
+  since: 2020-09-15
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'Normalised by the Abraham Accords (2020); the relationship survived Gaza on Emirati terms: Abu Dhabi summoned Israel''s deputy ambassador over the Doha strike (Sept 2025), called West Bank annexation
+    a ''red line'' that would end regional integration (Gargash and Nusseibeh, 3 Sep 2025; Gargash again in Oct 2025) but never suspended the Accords, which Gargash calls strategic. The 2026 war pushed
+    the two closer in practice (Israeli Iron Dome and troops in the UAE, per Axios; Netanyahu received in Abu Dhabi on 27 Sep 2026) while the annexation line stays unresolved. Partner, not ally: no defence
+    treaty and a public redline on Palestine. Trend stable: security warming and political cooling cancel out. Bond none.'
+  sources:
+  - url: https://www.axios.com/2025/09/03/israel-annex-west-bank-uae-trump-abraham-accords
+    title: UAE warns White House that Israeli annexations could unravel Abraham Accords
+    publisher: Axios
+    date: 2025-09-03
+    tier: 3
+  - url: https://www.khaleejtimes.com/uae/uae-commitment-to-palestinian-state
+    title: Top UAE adviser reaffirms commitment to Palestinian state, says any annexation would be 'red line'
+    publisher: Khaleej Times
+    date: 2025-10
+    tier: 3
+  - url: https://www.newarab.com/news/uae-summons-israel-envoy-over-cowardly-qatar-attack
+    title: UAE summons Israel envoy over 'cowardly' Qatar attack
+    publisher: The New Arab
+    date: 2025-09
+    tier: 3
+  - url: https://www.aljazeera.com/news/2026/9/28/uae-confirms-netanyahu-visit-to-abu-dhabi
+    title: UAE confirms Netanyahu visit to Abu Dhabi
+    publisher: Al Jazeera
+    date: 2026-09-28
+    tier: 3
+  - url: https://www.axios.com/2026/04/26/israel-iron-dome-uae
+    title: 'Scoop: Israel sent ''Iron Dome'' system and troops to UAE during Iran war'
+    publisher: Axios
+    date: 2026-04-26
+    tier: 3
+- toward: IRN
+  grade: rival
+  trend: cooling
+  bond: grievance
+  since: 2026-02-28
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'The brief expected reluctant_partner (trade hub, pre-war), and that was true until 2026. Since 28 Feb 2026 Iran has fired about 2,800 missiles and drones at the UAE (WAM tally, 15 dead by 10 May);
+    the WSJ reports secret Emirati strikes on Iran (not confirmed by Abu Dhabi); on 19 Aug 2026 the foreign ministry halted all trade, commercial exchanges and financial transactions with Iran ''until further
+    notice'' (the UAE supplied 30.6% of Iran''s merchandise imports, USD 21bn in 2024, per WTO data cited by MEF). The CRS calls Abu Dhabi''s posture ''defiant and forceful'' against Tehran. Rival and not
+    adversary: Abu Dhabi''s stated aims are deterrence, de-escalation and the islands by negotiation or the ICJ, never the end of the Iranian state. Bond grievance: the 1971 seizure of the islands and the
+    2026 attacks. See the claimed_territory stance on sub-gulf-islands.'
+  sources:
+  - url: https://english.ahram.org.eg/News/574884.aspx
+    title: UAE halts all trade, financial dealings with Iran
+    publisher: Ahram Online
+    date: 2026-08-19
+    tier: 3
+  - url: https://www.wam.ae/en/article/c0551n8-uae-air-defence-systems-successfully-engage-uavs
+    title: UAE air defence systems successfully engage UAVs launched from Iran (running tally of interceptions)
+    publisher: WAM (UAE state agency, official statement)
+    date: 2026-05
+    tier: 1
+  - url: https://www.everycrsreport.com/files/2026-06-03_R48971_0ef11e7717f94482f81c35cdf07bad07f0ea04f8.html
+    title: 'The Arab Gulf States, the Iran Conflict, and U.S. Relations: In Brief'
+    publisher: Congressional Research Service
+    date: 2026-06-03
+    tier: 1
+  - url: https://www.reuters.com/world/middle-east/uae-has-been-secretly-carrying-out-attacks-iran-wsj-reports-2026-05-11/
+    title: UAE has been secretly carrying out attacks on Iran, WSJ reports
+    publisher: Reuters
+    date: 2026-05-11
+    tier: 3
+  - url: https://www.meforum.org/mef-observer/is-the-united-arab-emirates-iran-trade-freeze-economic-shock-or-strategic-pivot
+    title: Is the United Arab Emirates' Iran trade freeze economic shock or strategic pivot?
+    publisher: Middle East Forum
+    date: 2026-08
+    tier: 3
+- toward: sub-gulf-islands
+  grade: claimed_territory
+  trend: stable
+  bond: grievance
+  since: 1971-11-30
+  last_verified: 2026-10-12
+  confidence: B
+  note: Abu Musa and the Greater and Lesser Tunb, occupied by Iran on 30 Nov 1971 (the eve of the federation) and claimed by the UAE ever since; Gargash restated the claim on 4 Oct 2026 and Iran's deputy
+    foreign minister answered in late September that the islands are 'integral parts of Iran'. Abu Dhabi asks for talks or the ICJ, not force; the Gulf States Newsletter asked in March 2026 whether war
+    could change that. Claimed, not controlled.
+  sources:
+  - url: https://www.khaleejtimes.com/uae/dr-anwar-gargash-replies-comments-by-khamenei-adviser-3-islands-occupied-by-iran
+    title: Gargash asserts UAE's right in 3 islands, replies to comments by Khamenei's adviser
+    publisher: Khaleej Times
+    date: 2026-10-04
+    tier: 3
+  - url: https://www.iranintl.com/en/202609292299
+    title: 'Iran deputy foreign minister: Abu Musa and the Tunbs are integral parts of Iran'
+    publisher: Iran International
+    date: 2026-09-29
+    tier: 3
+  - url: https://www.gsn-online.com/news-centre/article/could-uae-use-cover-war-retake-gulf-islands-iran
+    title: Could the UAE use the cover of war to retake the Gulf islands from Iran?
+    publisher: Gulf States Newsletter
+    date: 2026-03
+    tier: 2
+- toward: SAU
+  grade: rival
+  trend: warming
+  bond: kin
+  since: 2025-12-30
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'Mirrors how the Saudi side reads it: opposite camps in Yemen (Saudi strike on an Emirati shipment at Mukalla, 30 Dec 2025; UAE out of Yemen; STC dissolved), in Sudan, on the Horn and in OPEC (exit
+    effective 1 May 2026), with Riyadh publicly alleging Emirati aircraft in Ethiopia, Libya and Somalia. Both are GCC members, but the competition is structural, hence rival and not reluctant_ally. Abu
+    Dhabi''s own line is ''restraint over escalation''. Trend warming: Sheikh Mansour in Riyadh on 29 Sep 2026, Dh107bn of H1 2026 non-oil trade, and the Houthi attacks on Saudi Arabia that the UAE condemns
+    in the strongest terms give both a shared enemy. A further thaw would move the grade to reluctant_ally. Bond kin: ruling families and tribes of the Gulf (our reading).'
+  sources:
+  - url: https://www.kunc.org/2026-01-17/a-saudi-uae-rift-is-turning-two-close-allies-into-regional-rivals
+    title: A Saudi-UAE rift is turning two close allies into regional rivals
+    publisher: NPR (via KUNC)
+    date: 2026-01-17
+    tier: 3
+  - url: https://agsi.org/analysis/the-saudi-uae-rift-taking-the-measure-of-the-gulf-that-separates-and-unites-them/
+    title: 'The Saudi-UAE rift: taking the measure of the gulf that separates and unites them'
+    publisher: Arab Gulf States Institute in Washington
+    date: 2026
+    tier: 2
+  - url: https://www.csmonitor.com/layout/set/amphtml/World/Middle-East/2026/0114/Saudi-Arabia-UAE-diplomatic-rift
+    title: Saudi Arabia-UAE diplomatic rift
+    publisher: Christian Science Monitor
+    date: 2026-01-14
+    tier: 3
+  - url: https://www.thenationalnews.com/news/uae/2026/09/29/sheikh-mansour-bin-zayed-to-visit-saudi-arabia-on-tuesday/
+    title: Sheikh Mansour bin Zayed to visit Saudi Arabia on Tuesday
+    publisher: The National (Abu Dhabi, state-aligned)
+    date: 2026-09-29
+    tier: 3
+- toward: QAT
+  grade: reluctant_partner
+  trend: stable
+  bond: kin
+  since: 2021-01-05
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'Reconciled at Al-Ula on 5 Jan 2021 after the 2017-21 boycott; the text of the declaration was never published, and the underlying disputes (political Islam, Turkey, Libya, the Horn, media) remain.
+    The 2026 war exposed the gap: the CRS and MP-IDSA read the UAE as the harder line toward Iran (some reports say Emirati and Saudi pressure on Washington to extend the war, unverified) and Qatar as the
+    mediator that kept its channel to Tehran. They cooperate, resist each other''s alignment: reluctant_partner. Bond kin: Gulf Arab neighbours (our reading).'
+  sources:
+  - url: https://sanctionsnews.bakermckenzie.com/gcc-and-egypt-sign-the-al-ula-declaration-ending-the-qatar-boycott
+    title: GCC and Egypt sign the Al-Ula Declaration ending the Qatar boycott
+    publisher: Baker McKenzie
+    date: 2021-01
+    tier: 3
+  - url: https://www.everycrsreport.com/files/2026-06-03_R48971_0ef11e7717f94482f81c35cdf07bad07f0ea04f8.html
+    title: 'The Arab Gulf States, the Iran Conflict, and U.S. Relations: In Brief'
+    publisher: Congressional Research Service
+    date: 2026-06-03
+    tier: 1
+  - url: https://idsa.in/wp-content/uploads/2026/06/Issue-Brief-Dr-Prasanta-Kumar-Pradhan-11-June-2026.pdf
+    title: Issue brief on the Gulf states after the Iran war
+    publisher: MP-IDSA
+    date: 2026-06-11
+    tier: 2
+- toward: org-gcc
+  grade: reluctant_ally
+  trend: stable
+  bond: kin
+  since: 1981-05-25
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'A founding member and the state hit hardest in 2026, so the GCC is the only collective shield it has (condemnation of Iran in unison, Jeddah summit of April 2026, the Doha pledge of September 2025
+    to ''activate the mechanisms of joint defense''), but the bloc is fraying: Qatar''s mediation, Saudi competition, no common command. Aligned by necessity with visible friction: reluctant_ally. Bond
+    kin.'
+  sources:
+  - url: https://www.denvergazette.com/2025/09/15/summit-leads-to-little-action-after-israeli-strike-on-hamas-in-doha/
+    title: Summit leads to little action after Israeli strike on Hamas in Doha
+    publisher: AP (via Denver Gazette)
+    date: 2025-09-15
+    tier: 3
+  - url: https://gulfnews.com/amp/story/world%2Fgulf%2Fgcc-leaders-meet-in-jeddah-to-discuss-iran-war-and-regional-security-1.500522013
+    title: GCC leaders meet in Jeddah to discuss Iran war and regional security
+    publisher: Gulf News
+    date: 2026-04
+    tier: 3
+  - url: https://ibanet.org/The-Gulfs-recalibration
+    title: The Gulf's recalibration
+    publisher: International Bar Association
+    date: 2026
+    tier: 3
+- toward: org-opec
+  grade: rival
+  trend: stable
+  bond: none
+  since: 2026-05-01
+  last_verified: 2026-10-12
+  confidence: C
+  note: 'The UAE left OPEC and OPEC+ on 1 May 2026 to sell the quota-free capacity it built; Stratfor reads the exit as further reducing the cartel''s relevance. It now competes with the bloc Riyadh leads,
+    without any aim of ending it: rival. No source uses the grade word (confidence C). The dataset row of OPEC membership still stands and ended on that date.'
+  sources:
+  - url: https://www.khaleejtimes.com/uae-announces-decision-to-withdraw-from-opec-opec-from-may-1
+    title: UAE announces decision to withdraw from OPEC, OPEC+ from May 1
+    publisher: Khaleej Times
+    date: 2026-04-28
+    tier: 3
+  - url: https://worldview.ranenetwork.com/content/analysis/2026-04-28/the-uae-s-exit-from-opec-further-diminishes-the-oil-cartel-s-relevance
+    title: The UAE's exit from OPEC further diminishes the oil cartel's relevance
+    publisher: RANE / Stratfor
+    date: 2026-04-28
+    tier: 2
+- toward: YEM
+  grade: rival
+  trend: cooling
+  bond: none
+  since: 2025-12-30
+  last_verified: 2026-10-12
+  confidence: C
+  note: Toward the Presidential Leadership Council government, which ordered all UAE forces out within 24 hours on 30 Dec 2025 and cancelled the defence pact, after which the UAE announced a 'voluntary'
+    withdrawal. The Saudi-backed government now holds the south; the UAE harbours the STC leader, whom Riyadh calls a fugitive. Rival because the two sides are in open conflict of interests without a will
+    to destroy; the grade is our reading of the reported actions (confidence C). The UAE's former clients are in the nsa-stc stance.
+  sources:
+  - url: https://www.bostonglobe.com/2025/12/30/world/saudi-uae-yemen-rift
+    title: UAE withdraws troops from Yemen after Saudi airstrike
+    publisher: Boston Globe (AP)
+    date: 2025-12-30
+    tier: 3
+  - url: https://www.pbs.org/newshour/world/saudi-arabia-alleges-uae-smuggled-yemen-separatist-leader-out-of-the-country
+    title: Saudi Arabia alleges UAE smuggled wanted Yemen separatist leader out of the country
+    publisher: AP (via PBS NewsHour)
+    date: 2026-01-09
+    tier: 3
+  - url: https://www.stimson.org/2026/saudi-arabia-takes-full-control-of-yemens-south/
+    title: Saudi Arabia takes full control of Yemen's south
+    publisher: Stimson Center
+    date: 2026
+    tier: 2
+- toward: nsa-stc
+  grade: partner
+  trend: cooling
+  bond: affinity
+  since: 2015
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'The Southern Transitional Council was the UAE''s main Yemeni client from 2017; it announced its own dissolution on 9 Jan 2026 a day after its leader fled to the UAE, and the dissolution is contested
+    by its spokesman and by crowds in Aden. Kept as partner (the leader is in Abu Dhabi), cooling because the instrument is broken and Saudi Arabia holds the south. Bond affinity: a patron-client tie built
+    on a shared enemy, Islah and the Houthis (our reading).'
+  sources:
+  - url: https://wbhm.org/npr-story/yemens-southern-transitional-council-says-it-will-dissolve-after-its-head-fled-to-uae
+    title: Yemen's Southern Transitional Council says it will dissolve after its head fled to UAE
+    publisher: NPR (via WBHM)
+    date: 2026-01-09
+    tier: 3
+  - url: https://www.pbs.org/newshour/world/saudi-arabia-alleges-uae-smuggled-yemen-separatist-leader-out-of-the-country
+    title: Saudi Arabia alleges UAE smuggled wanted Yemen separatist leader out of the country
+    publisher: AP (via PBS NewsHour)
+    date: 2026-01-09
+    tier: 3
+- toward: nsa-houthis
+  grade: rival
+  trend: stable
+  bond: grievance
+  since: 2015-03-26
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'The UAE foreign ministry calls them a ''terrorist militia'' and condemns each of their strikes on Saudi Arabia (14 Jul, 8 Aug, 8 Sep, 17 Sep, 1 Oct 2026) and on Red Sea shipping, while no 2026
+    Houthi attack on Emirati territory is documented in the sources reached, and the UAE has left the Yemeni field. Rival and not adversary: the aim is containment of an Iranian proxy, not its destruction.
+    Bond grievance: eight years on opposite sides of the coalition war.'
+  sources:
+  - url: https://www.mofa.gov.ae/en/MediaHub/News/2026/9/8/UAE-Saudi-Civilian
+    title: UAE strongly condemns attacks by Houthi terrorist group on Saudi civilian and economic facilities and vessels
+    publisher: UAE Ministry of Foreign Affairs
+    date: 2026-09-08
+    tier: 1
+  - url: https://time.com/article/2026/10/08/saudi-arabia-yemen-houthi-rebels-airport-attacks-war/
+    title: Houthi Attacks on Saudi Airports Kill 3 Amid Escalating War in Yemen
+    publisher: Time
+    date: 2026-10-08
+    tier: 3
+  - url: https://www.khaleejtimes.com/uae/uae-condemns-houthi-attack-power-station-madinah
+    title: UAE strongly condemns Houthi attack on power distribution station in Madinah
+    publisher: Khaleej Times
+    date: 2026-10-01
+    tier: 3
+- toward: SDN
+  grade: rival
+  trend: cooling
+  bond: none
+  since: 2025-05-06
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'The army government of Burhan cut diplomatic relations on 6 May 2025, declared the UAE a ''state of aggression'', and in May 2026 accused Abu Dhabi of drones launched at Khartoum from Bahir Dar
+    in Ethiopia. Abu Dhabi does not recognise the Port Sudan authority, denies arming the RSF (the ICJ dismissed Sudan''s case on 5 May 2025 only because of the UAE''s reservation to Article IX of the Genocide
+    Convention) and sits in the Quad that Burhan calls biased. Rival, not adversary: the UAE does not seek the end of the Sudanese state. Bond none.'
+  sources:
+  - url: https://www.newarab.com/news/sudan-government-declares-uae-aggressor-state-cuts-ties
+    title: Sudan government declares UAE 'aggressor state', cuts ties
+    publisher: The New Arab
+    date: 2025-05-06
+    tier: 3
+  - url: https://www.ewn.co.za/2025/05/06/sudan-cuts-ties-with-uae-accused-of-backing-paramilitaries
+    title: Sudan cuts ties with UAE, accused of backing paramilitaries
+    publisher: AFP (via EWN)
+    date: 2025-05-06
+    tier: 3
+  - url: https://allafrica.com/stories/202605060016.html
+    title: 'Sudan: ''Drones that targeted Khartoum were Emirati, launched from Bahir Dar, Ethiopia'' - Sudanese Armed Forces'
+    publisher: AllAfrica
+    date: 2026-05-06
+    tier: 3
+  - url: https://www.citinewsroom.com/2025/05/icj-dismisses-sudans-genocide-case-against-uae-over-alleged-darfur-interference/
+    title: ICJ dismisses Sudan's genocide case against UAE over alleged Darfur interference
+    publisher: Citi Newsroom
+    date: 2025-05-05
+    tier: 3
+- toward: nsa-rsf
+  grade: partner
+  trend: stable
+  bond: none
+  since: 2023
+  last_verified: 2026-10-12
+  confidence: C
+  note: 'The patron relation that Abu Dhabi denies: UN experts and a Le Monde investigation describe Emirati supply by air through Chad and eastern Libya (RFI: about 600 flights to Koufra in 2025), Reuters
+    describes the Kufra airstrip as the RSF''s conduit, and the foreign ministry calls the claims ''baseless''. Graded partner (transactional, no alignment, no declared support) with confidence C because
+    the deniable nature of the tie leaves only reporting; the Egyptian and Saudi side reads it as an Emirati client. Bond none: gold, ports and an anti-Islamist calculation, not identity.'
+  sources:
+  - url: https://www.newarab.com/news/uae-accused-covert-arms-routes-sudans-rsf-0
+    title: 'UAE accused of using covert arms routes to Sudan''s RSF (Le Monde investigation; RFI: about 600 flights to Koufra in 2025)'
+    publisher: The New Arab
+    date: 2026-03-23
+    tier: 3
+  - url: https://www.newarab.com/news/uae-flights-flood-airstrip-un-says-supplies-weapons-sudan
+    title: UAE flights flood airstrip, UN says supplies weapons to Sudan rebels
+    publisher: The New Arab
+    date: 2025
+    tier: 3
+  - url: https://www.libya-analysis.com/blogs/reuters-how-a-remote-airstrip-in-libya-reshaped-sudans-civil-war
+    title: 'Reuters: ''How a remote airstrip in Libya reshaped Sudan''s civil war'''
+    publisher: Libya Analysis (summarising Reuters)
+    date: 2025-12-22
+    tier: 3
+  - url: https://www.khaleejtimes.com/uae/sudan-icj-case-ruling
+    title: UAE welcomes ICJ ruling dismissing Sudan's case (UAE foreign ministry statement)
+    publisher: Khaleej Times
+    date: 2025-05-05
+    tier: 3
+- toward: LBY
+  grade: partner
+  trend: stable
+  bond: none
+  since: 2014
+  last_verified: 2026-10-12
+  confidence: C
+  note: 'Libya here is the east: Khalifa Haftar and his family are the UAE''s partners, and Kufra is the logistics hub that links the Emirates to the RSF; Saudi Arabia and Egypt pressed Haftar to restrict
+    it (Kufra airport shut for a month from 19 Jan 2026, probably under their pressure) and The Sentry says Haftar forces supply fuel to the RSF on the UAE''s behalf. There is no actor for Haftar''s camp,
+    so the stance sits on the state; the Tripoli government is not graded. Partner with confidence C: reporting only, the UAE denies arms flows.'
+  sources:
+  - url: https://libyasecuritymonitor.com/kufra-airport-shut-for-one-month-likely-due-to-saudi-and-egyptian-pressure/
+    title: Kufra Airport shut for one month likely due to Saudi and Egyptian pressure
+    publisher: Libya Security Monitor
+    date: 2026-01
+    tier: 3
+  - url: https://www.newarab.com/news/libya-haftar-forces-supply-fuel-rsf-behalf-uae
+    title: 'Libya: Haftar forces supply fuel to Sudan''s Rapid Support Forces on behalf of UAE, report'
+    publisher: The New Arab (citing The Sentry)
+    date: 2025
+    tier: 3
+  - url: https://www.libya-analysis.com/blogs/reuters-how-a-remote-airstrip-in-libya-reshaped-sudans-civil-war
+    title: 'Reuters: ''How a remote airstrip in Libya reshaped Sudan''s civil war'''
+    publisher: Libya Analysis (summarising Reuters)
+    date: 2025-12-22
+    tier: 3
+- toward: SOM
+  grade: rival
+  trend: cooling
+  bond: none
+  since: 2026-01-12
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'Mogadishu annulled every agreement with the UAE (ports, security, defence) and banned its military aircraft on 12 Jan 2026 after the flight of an STC leader through Berbera. Abu Dhabi''s counter-bet
+    is the periphery: Somaliland (Berbera) and Puntland (Bosaso). Rival, not adversary: friction over sovereignty and the federal state, no aim to destroy. Bond none.'
+  sources:
+  - url: https://www.aljazeera.com/news/2026/01/12/somalia-cancels-all-agreements-with-uae-over-alleged-sovereignty-violations
+    title: Somalia cancels all agreements with UAE over alleged sovereignty violations
+    publisher: Al Jazeera
+    date: 2026-01-12
+    tier: 3
+  - url: https://www.theeastafrican.co.ke/tea/news/east-africa/why-somalia-is-cancelling-uae-port-deals-5324586
+    title: Why Somalia is cancelling UAE port deals
+    publisher: The EastAfrican
+    date: 2026-01
+    tier: 3
+- toward: sub-somaliland
+  grade: partner
+  trend: stable
+  bond: none
+  since: 2017
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'DP World runs Berbera port and the UAE got a 25-year lease for a base and the airport in 2017 (Crisis Group, 2018). Israel recognised Somaliland on 26 Dec 2025 and is reported to want a facility
+    at Berbera, which Mogadishu rejects; the UAE signed neither the Arab-Islamic statement against the recognition nor any statement for it. Partner: transactional lease and port deal, no alignment on status.
+    Bond none.'
+  sources:
+  - url: https://www.crisisgroup.org/sites/default/files/260-somalia-and-the-gulf-crisis_0.pdf
+    title: Somalia and the Gulf crisis
+    publisher: International Crisis Group
+    date: 2018-06
+    tier: 2
+  - url: https://www.aljazeera.com/amp/news/2026/10/3/somalia-wont-accept-israeli-presence-under-any-circumstances-president
+    title: 'Somalia won''t accept Israeli presence ''under any circumstances'': President'
+    publisher: Al Jazeera
+    date: 2026-10-03
+    tier: 3
+  - url: https://allafrica.com/stories/202512270037.html
+    title: 'Somalia: Israel recognises Somaliland as independent state'
+    publisher: AllAfrica
+    date: 2025-12-27
+    tier: 3
+- toward: ETH
+  grade: partner
+  trend: stable
+  bond: none
+  since: 2018
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'Abiy Ahmed in Abu Dhabi on 12 Mar 2026, a day after a tripartite meeting with the presidents of Djibouti and Somalia; Emirati finance and infrastructure backing is long-standing. Sudan accuses
+    Ethiopia of hosting Emirati drones at Bahir Dar (May 2026) and Riyadh named Ethiopia among the places where Emirati aircraft operate (Jan 2026); both allegations are denied. Partner: transactional and
+    deep, not aligned in treaty. Cost: Egypt, the UAE''s biggest creditor, is Addis Ababa''s rival over the GERD.'
+  sources:
+  - url: https://www.geeska.com/en/abiy-lands-abu-dhabi-and-timing-says-everything
+    title: Abiy lands in Abu Dhabi and timing says everything
+    publisher: Geeska Afrika
+    date: 2026-03
+    tier: 3
+  - url: https://www.geeska.com/en/sudan-accuses-ethiopia-uae-drone-attacks
+    title: Sudan accuses Ethiopia, UAE of drone attacks on Khartoum
+    publisher: Geeska Afrika
+    date: 2026-05
+    tier: 3
+  - url: https://www.pbs.org/newshour/world/saudi-arabia-alleges-uae-smuggled-yemen-separatist-leader-out-of-the-country
+    title: Saudi Arabia alleges UAE smuggled wanted Yemen separatist leader out of the country
+    publisher: AP (via PBS NewsHour)
+    date: 2026-01-09
+    tier: 3
+- toward: ERI
+  grade: partner
+  trend: cooling
+  bond: none
+  since: 2015-09
+  last_verified: 2026-10-12
+  confidence: C
+  note: Assab was the UAE's base for the Yemen war (port and airstrip from September 2015); satellite images analysed by the AP showed the UAE dismantling it after it left the Yemeni front (2021). No 2026
+    evidence of any presence or agreement was found; the stance records the tie as a lapsed lease. Cooling, confidence C.
+  sources:
+  - url: https://www.voanews.com/a/africa_uae-dismantles-eritrea-base-it-pulls-back-after-yemen-war/6202212.html
+    title: UAE dismantles Eritrea base as it pulls back after Yemen war
+    publisher: VOA (AP)
+    date: 2021-02
+    tier: 3
+- toward: TCD
+  grade: partner
+  trend: stable
+  bond: none
+  since: 2023-07
+  last_verified: 2026-10-12
+  confidence: C
+  note: 'Chad is the western door to Darfur: the UAE built a field hospital at Amdjarass (July 2023, ''humanitarian'' in the official account), increased military support and aid to N''Djamena in 2024,
+    and the New York Times describes the hospital as a transit point for RSF wounded and weapons (denied). Partner, confidence C.'
+  sources:
+  - url: https://guardian.ng/apo-press-releases/united-arab-emirates-opens-field-hospital-in-chad-to-support-sudanese-refugees/
+    title: United Arab Emirates opens field hospital in Chad to support Sudanese refugees
+    publisher: APO (UAE government release, via Guardian Nigeria)
+    date: 2023-07
+    tier: 1
+  - url: https://adf-magazine.com/2024/02/uae-increases-military-support-aid-to-chad-amid-sahel-strife/
+    title: UAE increases military support, aid to Chad amid Sahel strife
+    publisher: ADF Magazine
+    date: 2024-02
+    tier: 3
+- toward: EGY
+  grade: partner
+  trend: stable
+  bond: none
+  since: 2024-02
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'Egypt''s largest foreign investor and the creditor of the Ras El Hekma deal (USD 35bn, Feb 2024), whose Rafale F3R fighters were stationed in the UAE against Iranian drones (announced 8 May 2026).
+    Friction is open: Cairo backs the Sudanese army and has pressed Haftar to cut the supply line, and Emirati voices (Gargash) criticised Cairo''s neutrality on Iran. Partner and not ally; the foreign
+    ministers'' call of Aug 2026 keeps the tone warm. Same sources as the Egyptian card.'
+  sources:
+  - url: https://www.bnnbloomberg.ca/egypt-clinches-biggest-deal-ever-with-uae-investing-35-billion-1.2038554
+    title: Egypt clinches biggest deal ever with UAE investing $35 billion
+    publisher: Bloomberg (via BNN)
+    date: 2024-02-23
+    tier: 3
+  - url: https://egyptianstreets.com/2026/05/08/egypt-sends-fighter-jets-to-the-uae-to-defend-against-iranian-attacks/
+    title: Egypt sends fighter jets to the UAE to defend against Iranian attacks
+    publisher: Egyptian Streets
+    date: 2026-05-08
+    tier: 3
+  - url: https://www.rusi.org/news-and-comment/in-the-news/egypt-deploys-jets-uae-iran-war-strains-arab-alliances
+    title: Egypt deploys jets to UAE as Iran war strains Arab alliances
+    publisher: RUSI (reprinted from the Financial Times)
+    date: 2026-05
+    tier: 2
+  - url: https://english.ahram.org.eg/News/574588.aspx
+    title: Egypt FM Abdelatty discusses Sudan, regional tensions with Sudanese, Emirati counterparts
+    publisher: Ahram Online
+    date: 2026-08
+    tier: 3
+- toward: SYR
+  grade: partner
+  trend: warming
+  bond: none
+  since: 2025-07-13
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'The UAE moved more slowly than Saudi Arabia and Qatar toward Sharaa''s government but accelerated after the Iran war began: DP World''s USD 800m, 30-year concession at Tartus (signed 13 Jul 2025),
+    non-oil trade of USD 1.4bn in 2025 (+132%), a framework agreement with Eagle Hills for housing and tourism projects worth about USD 20bn (one roundup says USD 50bn; Al-Monitor and Semafor say 20). Partner
+    on money and a shared dislike of Iran, no alignment. Warming.'
+  sources:
+  - url: https://www.aljazeera.com/economy/2025/7/13/syria-signs-800m-tartus-port-deal-with-uae-firm-dp-world
+    title: Syria signs $800m Tartus port deal with UAE firm DP World
+    publisher: Al Jazeera
+    date: 2025-07-13
+    tier: 3
+  - url: https://www.al-monitor.com/originals/2026/05/uae-sees-rapidly-growing-trade-syria-ties-warm
+    title: UAE sees rapidly growing trade with Syria as ties warm (Reuters)
+    publisher: Al-Monitor / Reuters
+    date: 2026-05-12
+    tier: 3
+  - url: https://www.al-monitor.com/originals/2026/10/uae-syria-move-ahead-20-billion-real-estate-mega-developments
+    title: UAE, Syria move ahead with $20 billion real estate mega-developments
+    publisher: Al-Monitor
+    date: 2026-10
+    tier: 3
+- toward: TUR
+  grade: partner
+  trend: stable
+  bond: none
+  since: 2022-02-14
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'The 2013-21 rivalry (Muslim Brotherhood, Libya, Qatar) ended with Erdogan''s visit to Abu Dhabi in Feb 2022 and the July 2023 package of USD 50.7bn of agreements; a defence-industry committee (Tawazun-SSB)
+    and an Erdogan-Mohamed bin Zayed call in Sept 2026 on Iran-US mediation and defence cooperation. Warming from 2021, now settled. Partner: Turkey is in the Saudi-Pakistan defence pact of Aug 2026 (Makkah
+    Joint Defense Agreement, per the Turkish file), from which Abu Dhabi is absent. Bond none.'
+  sources:
+  - url: https://www.mofa.gov.ae/en/MediaHub/News/2023/7/19/19-7-2023-UAE-ministry-of-investment
+    title: UAE Ministry of Investment announces agreements worth over $50 billion in Republic of Turkiye
+    publisher: UAE Ministry of Foreign Affairs
+    date: 2023-07-19
+    tier: 1
+  - url: https://www.bloomberg.com/news/articles/2022-02-14/erdogan-visits-uae-as-trade-and-political-ties-deepen
+    title: UAE, Turkey seek deeper trade ties as Erdogan visits
+    publisher: Bloomberg
+    date: 2022-02-14
+    tier: 3
+  - url: https://report.az/en/region/erdogan-discusses-iran-us-tensions-with-uae-president
+    title: Erdogan discusses Iran-US tensions with UAE president
+    publisher: Report.az
+    date: 2026-09
+    tier: 3
+- toward: PAK
+  grade: partner
+  trend: cooling
+  bond: none
+  since: 2025-09
+  last_verified: 2026-10-12
+  confidence: C
+  note: 'Pakistan tilted to Riyadh with the Sept 2025 defence pact and then the Mecca pact with Turkey (Aug 2026); analysts describe Islamabad as reassuring Abu Dhabi, which reportedly resents the move
+    (a former Emirati adviser''s barbed tweet), while Pakistan repaid USD 3.5bn to the UAE in April 2026 and the army calls the relations ''close and brotherly''. Partner with a cooling trend: still large
+    labour, finance and military ties, but the UAE is no longer Pakistan''s first Gulf address. Confidence C.'
+  sources:
+  - url: https://www.newarab.com/analysis/balancing-act-how-pakistan-navigating-saudi-uae-rift
+    title: 'Balancing act: how Pakistan is navigating the Saudi-UAE rift'
+    publisher: The New Arab
+    date: 2026
+    tier: 3
+  - url: https://www.intellinews.com/saudi-arabia-s-new-nato-style-pact-with-turkey-and-pakistan-is-tested-within-48-hours-459966/
+    title: Saudi Arabia's new NATO-style pact with Turkey and Pakistan is tested within 48 hours
+    publisher: bne IntelliNews
+    date: 2026-08
+    tier: 3
+  - url: https://www.arabnews.com/node/2652936/pakistan
+    title: Pakistan reaffirms commitment to Saudi defense pact amid regional tensions
+    publisher: Arab News
+    date: 2026
+    tier: 3
+- toward: RUS
+  grade: partner
+  trend: stable
+  bond: none
+  since: 2022-03
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'Dubai is the main non-Western hub for Russian capital, gold, traders and oil after 2022 (The New Arab, Al Jazeera, Soufan Center); Mohamed bin Zayed was received by Putin on 29 Jan 2026 and bilateral
+    trade reached USD 9.5bn in 2024, with Manturov claiming a record of USD 14bn; the US sanctioned Lukoil''s Dubai trader Litasco Middle East (Oct 2025). Yet the UAE hosts the Russia-Ukraine prisoner exchanges
+    (26 mediations, 7,997 captives by 19 Aug 2026) and the trilateral US-Russia-Ukraine talks (Jan-Feb 2026), which only a partner trusted by both can do. Partner, not ally: Moscow is not a patron, the
+    UAE has not joined the sanctions on Russia and is a US ally. Bond none.'
+  sources:
+  - url: https://newarab.com/analysis/how-uae-became-russias-safe-haven-evading-sanctions
+    title: How the UAE became Russia's safe haven for evading sanctions
+    publisher: The New Arab
+    date: 2023
+    tier: 3
+  - url: https://www.wam.ae/en/article/bygety8-uae-president-begin-official-visit-russia
+    title: UAE President to begin official visit to Russia tomorrow
+    publisher: WAM (UAE state agency, official statement)
+    date: 2026-01-28
+    tier: 1
+  - url: https://timesofoman.com/article/167701-putin-calls-uae-a-key-trade-partner-in-arab-world-during-kremlin-talk
+    title: Putin calls UAE a 'key trade partner in Arab world' during Kremlin talk
+    publisher: Times of Oman
+    date: 2026-01
+    tier: 3
+  - url: https://thenationalnews.com/news/uae/2026/08/19/russia-and-ukraine-exchange-206-prisoners-after-uae-mediation
+    title: Russia and Ukraine exchange 206 prisoners after UAE mediation (total 7,997)
+    publisher: The National (Abu Dhabi, state-aligned)
+    date: 2026-08-19
+    tier: 3
+- toward: CHN
+  grade: partner
+  trend: stable
+  bond: none
+  since: 2018-07
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'A ''comprehensive strategic partnership'' (Wang Yi, 23-25 Jun 2026), non-oil trade of USD 111.5bn in 2025, COSCO''s 35-year terminal at Khalifa Port (2018) and a place in BRICS. The hedge is kept
+    shallow because the AI strategy depends on US chips (US security conditions on G42''s Chinese links). Partner: transactional, no alignment. Bond none.'
+  sources:
+  - url: https://www.fmprc.gov.cn/eng/wjbzhd/202606/t20260625_11951976.html
+    title: Wang Yi meets UAE Supreme National Security Council secretary-general
+    publisher: Ministry of Foreign Affairs of China
+    date: 2026-06-25
+    tier: 1
+  - url: https://enterpriseam.com/uae/2026/04/16/uae-china-reaffirm-diplomatic-ties-ramp-up-investments-amid-geopolitical-tensions/
+    title: UAE, China reaffirm diplomatic ties, ramp up investments amid geopolitical tensions
+    publisher: Enterprise
+    date: 2026-04-16
+    tier: 3
+  - url: https://www.arabnews.pk/node/1418636
+    title: China flags up UAE as Silk Road mega-hub with $300m port deal
+    publisher: Arab News
+    date: 2018-12
+    tier: 3
+- toward: IND
+  grade: partner
+  trend: warming
+  bond: none
+  since: 2022-05-01
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'CEPA in force since May 2022; trade of USD 83.6bn in 2024 (ORF) against a joint target of USD 200bn; the IMEC corridor framework agreement signed in Feb-Mar 2024; a letter of intent for a strategic
+    defence partnership during Mohamed bin Zayed''s visit in Jan 2026; USD 5bn of Emirati investment announced in May 2026. Partner: the UAE''s largest Asian customer and an Indian diaspora of millions;
+    no treaty alliance. Bond none.'
+  sources:
+  - url: https://www.orfonline.org/expert-speak/cepa-and-the-imec-future-proofing-india-uae-economic-ties
+    title: 'CEPA and the IMEC: future-proofing India-UAE economic ties'
+    publisher: Observer Research Foundation
+    date: 2025
+    tier: 2
+  - url: https://indbiz.gov.in/india-uae-deepen-ties-focus-on-energy-trade-connectivity/
+    title: India-UAE deepen ties, focus on energy, trade, connectivity
+    publisher: Indbiz (Government of India)
+    date: 2026-01
+    tier: 1
+  - url: https://www.middleeastbriefing.com/news/?p=6363
+    title: 'UAE commits US$5 billion to India: what the Modi visit means for investment and trade'
+    publisher: Middle East Briefing
+    date: 2026-05
+    tier: 3
+- toward: FRA
+  grade: ally
+  trend: stable
+  bond: none
+  since: 1995-01
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'A defence pact since 1995, renewed in 2008, with the French base Camp de la Paix opened in Abu Dhabi on 26 May 2009 (France''s first base outside Africa; 400-500 personnel at the start), a defence
+    pact renewed in May 2026 after the Rafale controversy, and French Rafales flying over Emirati bases in the 2026 war. A treaty with a base: ally. Friction (price and delivery of the Rafales) is minor.
+    Bond none.'
+  sources:
+  - url: https://dawn.com/news/285044
+    title: France to set up military base in UAE
+    publisher: Dawn (AFP)
+    date: 2008-01
+    tier: 3
+  - url: https://www.al-monitor.com/originals/2026/05/uae-france-renew-defense-pact-after-rafale-jets-controversy
+    title: UAE, France renew defense pact after Rafale jets controversy
+    publisher: Al-Monitor
+    date: 2026-05
+    tier: 3
+- toward: GBR
+  grade: partner
+  trend: stable
+  bond: none
+  since: 2026-05-20
+  last_verified: 2026-10-12
+  confidence: C
+  note: 'The UAE has no bilateral British treaty in the sources reached; the tie runs through the UK-GCC free trade agreement, whose negotiations concluded on 20 May 2026 (UK-GCC trade GBP 53bn in 2025),
+    and the long-standing finance and education links. The Typhoon deal of 2015 collapsed and no 2026 defence agreement was found. Partner, confidence C: the evidence is GCC-wide, not UAE-specific.'
+  sources:
+  - url: https://www.whitecase.com/insight-alert/gulf-co-operation-council-and-united-kingdom-conclude-fta-negotiations
+    title: Gulf Co-operation Council and the United Kingdom conclude FTA negotiations
+    publisher: White & Case
+    date: 2026-05
+    tier: 3
+  - url: https://egic.info/egic-strategic-foresight-unit-early-warning-brief-may-2026/
+    title: EGIC Strategic Foresight Unit early warning brief, May 2026 (UK-GCC FTA signed 20 May)
+    publisher: EGIC (Emirates-based think tank)
+    date: 2026-05
+    tier: 2
+- toward: org-eu
+  grade: partner
+  trend: warming
+  bond: none
+  since: 2024-10-16
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'A non-member and a customer: the first EU-GCC summit (Brussels, 16 Oct 2024) promised a free trade agreement; in 2026 the EU opened bilateral partnership talks with the UAE and Qatar and planned
+    an EU-GCC meeting in Riyadh for the autumn. Partner, not alliance: the EU is a trading and finance partner, and the UAE keeps its security with Washington and Paris. Bond none.'
+  sources:
+  - url: https://www.fm.gov.om/en/17675/
+    title: Joint statement from the first GCC-EU summit (Brussels, 16 Oct 2024)
+    publisher: Ministry of Foreign Affairs of Oman
+    date: 2024-10-16
+    tier: 1
+  - url: https://euronews.com/my-europe/2026/02/07/eu-courts-gulf-countries-for-free-trade-deal-as-brussels-seeks-to-counter-tariffs
+    title: EU courts Gulf countries for free trade deal as Brussels seeks to counter tariffs
+    publisher: Euronews
+    date: 2026-02-07
+    tier: 3
+  - url: https://egic.info/egic-strategic-foresight-unit-early-warning-brief-may-2026/
+    title: EGIC Strategic Foresight Unit early warning brief, May 2026
+    publisher: EGIC (Emirates-based think tank)
+    date: 2026-05
+    tier: 2
+- toward: AZE
+  grade: partner
+  trend: warming
+  bond: none
+  since: 2025-07-09
+  last_verified: 2026-10-12
+  confidence: B
+  note: 'The UAE-Azerbaijan CEPA (18 chapters) was signed on 9-10 Jul 2025 and has entered into force; bilateral trade of USD 2.24bn in 2024 (+36.2%). Abu Dhabi also hosts Aliyev-Pashinyan meetings, the
+    latest on 4 Feb 2026. Partner: trade and convening, no alignment. Bond none.'
+  sources:
+  - url: https://www.al-monitor.com/originals/2025/07/uae-azerbaijan-sign-trade-deal-officials-meet-abu-dhabi-armenia-peace-talks
+    title: UAE, Azerbaijan sign trade deal as officials meet in Abu Dhabi for Armenia peace talks
+    publisher: Al-Monitor
+    date: 2025-07
+    tier: 3
+  - url: https://www.mofa.gov.ae/en/Missions/Baku/UAE-Relationships
+    title: UAE relationships (Embassy in Baku)
+    publisher: UAE Ministry of Foreign Affairs
+    date: 2025
+    tier: 1
+- toward: ARM
+  grade: partner
+  trend: stable
+  bond: none
+  since: 2026-02-06
+  last_verified: 2026-10-12
+  confidence: B
+  note: Pashinyan was received by Mohamed bin Zayed on 5 Feb 2026, and an agreement on trade in services and investment was signed on 6 Feb 2026; bilateral trade fell about 60% in 2025 to USD 2.13bn (Armenian
+    statistics). Partner, tied to the same convening role as Azerbaijan; no alignment. Bond none.
+  sources:
+  - url: https://www.wam.ae/en/article/byl6asp-uae-president-and-armenian-prime-minister-review
+    title: UAE President and Armenian Prime Minister review bilateral ties
+    publisher: WAM (UAE state agency, official statement)
+    date: 2026-02-05
+    tier: 1
+  - url: https://arka.am/en/news/economy/armenia-and-the-uae-sign-agreement-on-trade-in-services-and-investment/
+    title: Armenia and the UAE sign agreement on trade in services and investment
+    publisher: Arka News Agency
+    date: 2026-02-06
+    tier: 3
+- toward: ALB
+  grade: partner
+  trend: stable
+  bond: none
+  since: 2023-01
+  last_verified: '2026-10-13'
+  confidence: C
+  reciprocal_of: ALB
+  note: Provisional reciprocal of Albania's 'partner' stance toward United Arab Emirates, written on 2026-10-13 by tools/reciprocate.py from the same evidence; to be rewritten from United Arab Emirates's
+    side.
+  sources:
+  - url: https://seenews.com/news/albania-uae-based-eagle-hills-in-2-bln-euro-deal-for-durres-port-expansion-813015
+    title: Albania, UAE-based Eagle Hills in EUR 2bn deal for Durres port expansion
+    publisher: SeeNews
+    date: 2023-01
+    tier: 3
+  - url: https://www.portseurope.com/after-20-months-the-new-durres-marina-project-has-no-developer/
+    title: After 20 months the new Durres marina project has no developer
+    publisher: Ports Europe
+    date: 2024
+    tier: 3
+- toward: MNE
+  grade: partner
+  trend: stable
+  bond: none
+  since: '2025-04-23'
+  last_verified: '2026-10-13'
+  confidence: C
+  reciprocal_of: MNE
+  note: Provisional reciprocal of Montenegro's 'partner' stance toward United Arab Emirates, written on 2026-10-13 by tools/reciprocate.py from the same evidence; to be rewritten from United Arab Emirates's
+    side.
+  sources:
+  - url: https://betabriefing.com/news/region/30903-montenegrin-parliament-adopts-controversial-agreements-with-uae
+    title: Montenegrin Parliament adopts controversial agreements with UAE
+    publisher: Beta Briefing
+    date: '2025-04-23'
+    tier: 3
+  - url: https://mina.news/article/milatovic-returns-law-confirming-agreement-with-uae-for-reconsideration
+    title: Milatovic returns law confirming agreement with UAE for reconsideration
+    publisher: MINA news agency
+    date: '2025-04-29'
+    tier: 3
+  - url: https://europeanwesternbalkans.com/2025/05/09/european-commission-raises-concern-over-montenegro-uae-agreement/
+    title: European Commission raises concern over Montenegro-UAE Agreement
+    publisher: European Western Balkans
+    date: '2025-05-09'
+    tier: 3
+  - url: https://www.intellinews.com/watchdog-warns-montenegro-s-uae-development-deal-puts-eu-accession-at-risk-383453
+    title: Watchdog warns Montenegro's UAE development deal puts EU accession at risk
+    publisher: bne IntelliNews
+    date: '2025'
+    tier: 3
+  - url: https://mina.news/article/only-a-matter-of-time-before-the-constitutional-court-strikes-down-the-uae-agreement
+    title: Only a matter of time before the Constitutional Court strikes down the UAE agreement
+    publisher: MINA news agency
+    date: 2026-03
+    tier: 3
+- toward: SRB
+  grade: partner
+  trend: stable
+  bond: none
+  since: 2013
+  last_verified: '2026-10-13'
+  confidence: B
+  reciprocal_of: SRB
+  note: Provisional reciprocal of Serbia's 'partner' stance toward United Arab Emirates, written on 2026-10-13 by tools/reciprocate.py from the same evidence; to be rewritten from United Arab Emirates's
+    side.
+  sources:
+  - url: https://www.mohamedbinzayed.ae/en/latest-news-listing/2025/07/UAE-Serbian-Presidents-discuss-strengthening-comprehensive-strategic-partnership-in-Belgrade
+    title: UAE, Serbian presidents discuss strengthening comprehensive strategic partnership in Belgrade
+    publisher: Office of the President of the UAE (WAM)
+    date: 2025-07-17
+    tier: 1

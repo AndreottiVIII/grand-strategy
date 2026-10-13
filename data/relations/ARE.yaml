@@ -1,0 +1,578 @@
+from: ARE
+relations:
+  # ---------- objective ----------
+  - to: sub-gulf-islands
+    layer: objective
+    type: territorial_claim
+    summary: "The UAE claims Abu Musa and the Greater and Lesser Tunb, occupied by Iran on 30 Nov 1971; Gargash restated the claim on 4 Oct 2026 and asks for negotiation or the ICJ, never force. Iran's deputy foreign minister replied in late September that the islands are 'integral parts of Iran'."
+    since: 1971-11-30
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.khaleejtimes.com/uae/dr-anwar-gargash-replies-comments-by-khamenei-adviser-3-islands-occupied-by-iran", title: "Gargash asserts UAE's right in 3 islands, replies to comments by Khamenei's adviser", publisher: "Khaleej Times", date: 2026-10-04, tier: 3}
+      - {url: "https://www.iranintl.com/en/202609292299", title: "Iran deputy foreign minister: Abu Musa and the Tunbs are integral parts of Iran", publisher: "Iran International", date: 2026-09-29, tier: 3}
+      - {url: "https://www.gsn-online.com/news-centre/article/could-uae-use-cover-war-retake-gulf-islands-iran", title: "Could the UAE use the cover of war to retake the Gulf islands from Iran?", publisher: "Gulf States Newsletter", date: 2026-03, tier: 2}
+  - to: nsa-rsf
+    layer: objective
+    type: influence_goal
+    summary: "Abu Dhabi is reported to back the Rapid Support Forces in Sudan to keep Islamists out of power and to secure gold and Red Sea access; the foreign ministry calls the allegations 'baseless' and welcomed the ICJ dismissal of Sudan's case (5 May 2025, on the UAE's reservation to Article IX of the Genocide Convention, not on the merits)."
+    since: 2023
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.newarab.com/news/uae-accused-covert-arms-routes-sudans-rsf-0", title: "UAE accused of using covert arms routes to Sudan's RSF (Le Monde investigation; RFI: about 600 flights to Koufra in 2025)", publisher: "The New Arab", date: 2026-03-23, tier: 3}
+      - {url: "https://www.khaleejtimes.com/uae/sudan-icj-case-ruling", title: "UAE welcomes ICJ ruling dismissing Sudan's case (UAE foreign ministry statement)", publisher: "Khaleej Times", date: 2025-05-05, tier: 3}
+      - {url: "https://www.citinewsroom.com/2025/05/icj-dismisses-sudans-genocide-case-against-uae-over-alleged-darfur-interference/", title: "ICJ dismisses Sudan's genocide case against UAE over alleged Darfur interference", publisher: "Citi Newsroom", date: 2025-05-05, tier: 3}
+  - to: LBY
+    layer: objective
+    type: influence_goal
+    summary: "Eastern Libya under Haftar is the UAE's client and logistics hub (Kufra airstrip, about 600 flights in 2025 per RFI); Saudi Arabia and Egypt pressed to curb it, and Kufra airport closed for a month from 19 Jan 2026."
+    since: 2014
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://libyasecuritymonitor.com/kufra-airport-shut-for-one-month-likely-due-to-saudi-and-egyptian-pressure/", title: "Kufra Airport shut for one month likely due to Saudi and Egyptian pressure", publisher: "Libya Security Monitor", date: 2026-01, tier: 3}
+      - {url: "https://www.libya-analysis.com/blogs/reuters-how-a-remote-airstrip-in-libya-reshaped-sudans-civil-war", title: "Reuters: 'How a remote airstrip in Libya reshaped Sudan's civil war'", publisher: "Libya Analysis (summarising Reuters)", date: 2025-12-22, tier: 3}
+  - to: nsa-stc
+    layer: objective
+    type: influence_goal
+    summary: "The UAE built the Southern Transitional Council as its Yemeni client to hold Aden, Mukalla and the south; the STC announced its dissolution on 9 Jan 2026 (contested) a day after its leader fled to the UAE, and the UAE withdrew its forces on 30 Dec 2025 after a Saudi strike on an Emirati shipment at Mukalla."
+    since: 2017
+    until: 2026-01-09
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://wbhm.org/npr-story/yemens-southern-transitional-council-says-it-will-dissolve-after-its-head-fled-to-uae", title: "Yemen's Southern Transitional Council says it will dissolve after its head fled to UAE", publisher: "NPR (via WBHM)", date: 2026-01-09, tier: 3}
+      - {url: "https://www.bostonglobe.com/2025/12/30/world/saudi-uae-yemen-rift", title: "UAE withdraws troops from Yemen after Saudi airstrike", publisher: "Boston Globe (AP)", date: 2025-12-30, tier: 3}
+  - to: sub-somaliland
+    layer: objective
+    type: influence_goal
+    summary: "Berbera is the Horn anchor: DP World operates the port and the UAE holds a 25-year lease for a base and the airport (2017); the corridor serves Ethiopian trade and the Red Sea. Somalia cancelled all its own agreements with the UAE on 12 Jan 2026."
+    since: 2017
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.crisisgroup.org/sites/default/files/260-somalia-and-the-gulf-crisis_0.pdf", title: "Somalia and the Gulf crisis", publisher: "International Crisis Group", date: 2018-06, tier: 2}
+      - {url: "https://www.theeastafrican.co.ke/tea/news/east-africa/why-somalia-is-cancelling-uae-port-deals-5324586", title: "Why Somalia is cancelling UAE port deals", publisher: "The EastAfrican", date: 2026-01, tier: 3}
+  # ---------- alignment ----------
+  - to: USA
+    layer: alignment
+    type: security_guarantee
+    summary: "No treaty: Secretary of State Rubio told Mohamed bin Zayed on 24 Jun 2026 of the US 'commitment' to UAE security; US forces fly from Al Dhafra and the US eased chip and military-equipment exports in July 2026. The guarantee is a statement of policy, not a treaty obligation."
+    since: 2026-06-24
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.khaleejtimes.com/uae/rubio-us-iran-deal-sheikh-mohamed-commitment-uae-security", title: "Rubio discusses US-Iran deal with Sheikh Mohamed, vows 'commitment' to UAE security", publisher: "Khaleej Times", date: 2026-06-24, tier: 3}
+      - {url: "https://www.arabnews.pk/node/2648315", title: "Rubio commits to UAE security, discusses Iran-US deal with Emirati leader", publisher: "Arab News Pakistan", date: 2026-06-24, tier: 3}
+      - {url: "https://www.al-monitor.com/originals/2026/07/us-makes-it-easier-export-nvidia-ai-chips-and-military-equipment-uae", title: "US makes it easier to export Nvidia AI chips and military equipment to UAE", publisher: "Al-Monitor", date: 2026-07, tier: 3}
+  - to: ISR
+    layer: alignment
+    type: treaty
+    summary: "The Abraham Accords (15 Sep 2020) normalised relations with full diplomatic ties; the UAE keeps them in force despite Gaza and the Doha strike, and calls annexation of the West Bank a 'red line' for regional integration."
+    since: 2020-09-15
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.axios.com/2025/09/03/israel-annex-west-bank-uae-trump-abraham-accords", title: "UAE warns White House that Israeli annexations could unravel Abraham Accords", publisher: "Axios", date: 2025-09-03, tier: 3}
+      - {url: "https://www.khaleejtimes.com/uae/uae-commitment-to-palestinian-state", title: "Top UAE adviser reaffirms commitment to Palestinian state, says any annexation would be 'red line'", publisher: "Khaleej Times", date: 2025-10, tier: 3}
+  - to: FRA
+    layer: alignment
+    type: treaty
+    summary: "Defence agreements of 1995 and 2008 with the French base Camp de la Paix in Abu Dhabi (opened 26 May 2009; 400-500 French personnel planned); the pact was renewed in May 2026 after the Rafale controversy."
+    since: 1995-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://dawn.com/news/285044", title: "France to set up military base in UAE", publisher: "Dawn (AFP)", date: 2008-01, tier: 3}
+      - {url: "https://www.al-monitor.com/originals/2026/05/uae-france-renew-defense-pact-after-rafale-jets-controversy", title: "UAE, France renew defense pact after Rafale jets controversy", publisher: "Al-Monitor", date: 2026-05, tier: 3}
+  - to: IND
+    layer: alignment
+    type: treaty
+    summary: "The Comprehensive Economic Partnership Agreement in force since May 2022, with the IMEC inter-governmental framework agreement signed in Feb-Mar 2024 and a strategic defence letter of intent in Jan 2026."
+    since: 2022-05-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.orfonline.org/expert-speak/cepa-and-the-imec-future-proofing-india-uae-economic-ties", title: "CEPA and the IMEC: future-proofing India-UAE economic ties", publisher: "Observer Research Foundation", date: 2025, tier: 2}
+      - {url: "https://indbiz.gov.in/india-uae-deepen-ties-focus-on-energy-trade-connectivity/", title: "India-UAE deepen ties, focus on energy, trade, connectivity", publisher: "Indbiz (Government of India)", date: 2026-01, tier: 1}
+  - to: SRB
+    layer: alignment
+    type: treaty
+    summary: "A comprehensive strategic partnership (since 2013) and a comprehensive economic partnership agreement; the UAE President and Vucic reviewed it in Belgrade on 17 Jul 2025; a EUR 1bn soft loan from 2022."
+    since: 2013
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.mohamedbinzayed.ae/en/latest-news-listing/2025/07/UAE-Serbian-Presidents-discuss-strengthening-comprehensive-strategic-partnership-in-Belgrade", title: "UAE, Serbian presidents discuss strengthening comprehensive strategic partnership in Belgrade", publisher: "Office of the President of the UAE (WAM)", date: 2025-07-17, tier: 1}
+  # ---------- dependency ----------
+  - to: USA
+    layer: dependency
+    type: investment
+    summary: "The UAE pledged a ten-year USD 1.4tn investment framework in the United States (March 2025, after Sheikh Tahnoon's Oval Office meeting), restated in the White House fact sheet of 15 May 2025 with USD 200bn of new commercial deals; the figure is a White House characterisation and part of it is undisclosed."
+    value: 1400
+    unit: usd_bn_pledged_over_10_years
+    since: 2025-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "A pledge, not disbursed capital; no independent audit of how much is firm."
+    sources:
+      - {url: "https://www.whitehouse.gov/fact-sheets/2025/05/fact-sheet-president-donald-j-trump-secures-200-billion-in-new-u-s-uae-deals-and-accelerates-previously-committed-1-4-trillion-uae-investment", title: "Fact sheet: President Trump secures USD 200 billion in new US-UAE deals and accelerates previously committed USD 1.4 trillion UAE investment", publisher: "The White House", date: 2025-05-15, tier: 1}
+      - {url: "https://www.al-monitor.com/originals/2025/05/trump-caps-gulf-tour-abu-dhabi-dizzying-investment-pledges", title: "Trump caps Gulf tour in Abu Dhabi with dizzying investment pledges", publisher: "Al-Monitor", date: 2025-05-15, tier: 3}
+  - to: USA
+    layer: dependency
+    type: arms_supply
+    summary: "The May 2025 AI framework: up to 500,000 Nvidia chips a year, a 5 GW UAE-US AI campus and Stargate UAE (first 200 MW), under US security conditions; the US eased AI-chip and military-equipment exports in July 2026, tying it to the UAE's role in the Iran war."
+    value: 500000
+    unit: nvidia_chips_per_year_framework
+    since: 2025-05-15
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "The chip figure comes from a preliminary agreement reported by Reuters; US officials were still setting the export conditions in mid-2025."
+    sources:
+      - {url: "https://www.datacenterdynamics.com/en/news/us-govt-eases-ai-chip-export-controls-on-uae-following-countrys-support-in-iran-war/", title: "US govt eases AI chip export controls on UAE following country's support in Iran war", publisher: "DatacenterDynamics", date: 2026-07, tier: 3}
+      - {url: "https://www.nst.com.my/amp/business/economy/2025/05/1216879/trump-announces-us200bil-deals-during-uae-visit-ai-agreement-signed", title: "Trump announces US$200bil in deals during UAE visit, AI agreement signed", publisher: "New Straits Times (Reuters)", date: 2025-05-15, tier: 3}
+  - to: USA
+    layer: dependency
+    type: military_presence
+    summary: "The US Air Force 380th Air Expeditionary Wing has operated from Al Dhafra Air Base since January 2002; the UAE has no formal US base but hosts US forces there (estimates of 2,000 to 5,000 troops). In January 2026 it said it would not allow its territory to be used for attacks on Iran; the war of 28 Feb 2026 broke that line."
+    value: 2000
+    unit: us_troops_at_al_dhafra_low_estimate
+    since: 2002-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "Estimates differ: about 2,000 (AP analysis) to about 5,000. The low estimate is recorded."
+    sources:
+      - {url: "https://www.theweek.in/news/middle-east/2025/06/22/us-military-bases-in-middle-east-explained-what-you-need-to-know-about-uae-s-key-al-dhafra-air-base-amidst-iran-war-tensions.amp.html", title: "US military bases in Middle East: what you need to know about UAE's key Al Dhafra Air Base", publisher: "The Week", date: 2025-06-22, tier: 3}
+      - {url: "https://arabcenterdc.org/resource/uae-restricts-us-military-strikes-from-its-territory/", title: "UAE restricts US military strikes from its territory", publisher: "Arab Center Washington DC", date: 2024, tier: 2}
+  - to: FRA
+    layer: dependency
+    type: military_presence
+    summary: "Camp de la Paix: an air force base, an army training camp and a naval site in Abu Dhabi, the first French base outside Africa, financed by the UAE for infrastructure; French Rafales also protect Emirati bases from Iranian drones in 2026."
+    value: 500
+    unit: french_personnel_planned_2008_upper
+    since: 2009-05-26
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "The 400-500 figure is the 2008 plan; no current headcount was found."
+    sources:
+      - {url: "https://dawn.com/news/285044", title: "France to set up military base in UAE", publisher: "Dawn (AFP)", date: 2008-01, tier: 3}
+      - {url: "https://www.al-monitor.com/originals/2026/05/uae-france-renew-defense-pact-after-rafale-jets-controversy", title: "UAE, France renew defense pact after Rafale jets controversy", publisher: "Al-Monitor", date: 2026-05, tier: 3}
+  - to: IRN
+    layer: dependency
+    type: trade_share
+    summary: "Before the 2026 war the UAE supplied 30.6% of Iran's merchandise imports (USD 21bn in 2024; Iranian exports to the UAE USD 7.16bn); Jebel Ali and the free zones were Iran's trading and payment hub. All trade was halted on 19 Aug 2026."
+    value: 0.306
+    unit: share_of_iran_merchandise_imports_from_uae_2024
+    since: 2024
+    until: 2026-08-19
+    last_verified: 2026-10-12
+    confidence: B
+    note: "WTO data cited by the Middle East Forum; the figure reflects Iran's exposure, not the Emirati loss, which is a small share of non-oil trade."
+    sources:
+      - {url: "https://www.meforum.org/mef-observer/is-the-united-arab-emirates-iran-trade-freeze-economic-shock-or-strategic-pivot", title: "Is the United Arab Emirates' Iran trade freeze economic shock or strategic pivot?", publisher: "Middle East Forum", date: 2026-08, tier: 3}
+      - {url: "https://www.meed.com/uae-cuts-trade-and-financial-links-with-iran", title: "UAE cuts trade and financial links with Iran", publisher: "MEED", date: 2026-08, tier: 3}
+  - to: RUS
+    layer: dependency
+    type: trade_share
+    summary: "Bilateral trade reached USD 9.5bn in 2024 (UAE official figures via Arabian Business); Russian First Deputy PM Manturov claims a record USD 14bn. Putin calls the UAE a key trade partner in the Arab world; an EAEU-UAE economic partnership agreement is expected."
+    value: 9.5
+    unit: usd_bn_bilateral_trade_2024
+    since: 2024
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "Two figures: USD 9.5bn (2024, official) and a Russian claim of USD 14bn (period not stated); the official one is recorded."
+    sources:
+      - {url: "https://www.arabianbusiness.com/politics-economics/uae-president-to-visit-russia-for-talks-with-putin-on-economic-ties-and-regional-issues", title: "UAE president to visit Russia for talks with Putin on economic ties and regional issues", publisher: "Arabian Business", date: 2026-01, tier: 3}
+      - {url: "https://timesofoman.com/article/167701-putin-calls-uae-a-key-trade-partner-in-arab-world-during-kremlin-talk", title: "Putin calls UAE a 'key trade partner in Arab world' during Kremlin talk", publisher: "Times of Oman", date: 2026-01, tier: 3}
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    summary: "UAE-China non-oil trade reached USD 111.5bn in 2025 (Enterprise); COSCO operates a 35-year terminal at Khalifa Port (signed 2015, opened Dec 2018)."
+    value: 111.5
+    unit: usd_bn_non_oil_trade_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://enterpriseam.com/uae/2026/04/16/uae-china-reaffirm-diplomatic-ties-ramp-up-investments-amid-geopolitical-tensions/", title: "UAE, China reaffirm diplomatic ties, ramp up investments amid geopolitical tensions", publisher: "Enterprise", date: 2026-04-16, tier: 3}
+      - {url: "https://www.arabnews.pk/node/1418636", title: "China flags up UAE as Silk Road mega-hub with $300m port deal", publisher: "Arab News", date: 2018-12, tier: 3}
+  - to: IND
+    layer: dependency
+    type: trade_share
+    summary: "India-UAE trade reached USD 83.64bn in 2024 (+16.4%, ORF) under CEPA, with a stated target of USD 200bn; energy dominates the mix. USD 5bn of Emirati investment in India was announced in May 2026."
+    value: 83.64
+    unit: usd_bn_bilateral_trade_2024
+    since: 2024
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Some sites claim USD 100bn; ORF's series is recorded."
+    sources:
+      - {url: "https://www.orfonline.org/expert-speak/cepa-and-the-imec-future-proofing-india-uae-economic-ties", title: "CEPA and the IMEC: future-proofing India-UAE economic ties", publisher: "Observer Research Foundation", date: 2025, tier: 2}
+      - {url: "https://www.middleeastbriefing.com/news/?p=6363", title: "UAE commits US$5 billion to India: what the Modi visit means for investment and trade", publisher: "Middle East Briefing", date: 2026-05, tier: 3}
+  - to: SAU
+    layer: dependency
+    type: trade_share
+    summary: "UAE-Saudi non-oil trade was Dh107.1bn in the first half of 2026, up 17.6% (WAM), even as the two compete in Yemen, Sudan and the Horn."
+    value: 107.1
+    unit: aed_bn_non_oil_trade_h1_2026
+    since: 2026-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.khaleejtimes.com/gulf/uae-leaders-congratulate-saudi-arabia-king-crown-prince-national-day", title: "UAE leaders congratulate Saudi Arabia King, Crown Prince on 96th National Day (UAE-Saudi non-oil trade Dh107.1bn in H1 2026, per WAM)", publisher: "Khaleej Times", date: 2026-09-23, tier: 3}
+  - to: EGY
+    layer: dependency
+    type: investment
+    summary: "The ADQ-led Ras El Hekma deal of Feb 2024 (USD 35bn, of which USD 24bn for the development rights and USD 11bn of deposits converted; Egypt keeps 35%), the UAE's largest single investment abroad and the cash that restarted Egypt's IMF programme."
+    value: 35
+    unit: usd_bn_ras_el_hekma_2024
+    since: 2024-02-23
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.bnnbloomberg.ca/egypt-clinches-biggest-deal-ever-with-uae-investing-35-billion-1.2038554", title: "Egypt clinches biggest deal ever with UAE investing $35 billion", publisher: "Bloomberg (via BNN)", date: 2024-02-23, tier: 3}
+      - {url: "https://www.saudigulfprojects.com/2024/02/uaes-adq-led-consortium-to-invest-35-billion-in-egypt/", title: "UAE's ADQ-led consortium to invest USD 35 billion in Egypt", publisher: "Saudi Gulf Projects", date: 2024-02, tier: 4}
+  - to: TUR
+    layer: dependency
+    type: investment
+    summary: "UAE institutions signed agreements and MoUs valued at USD 50.7bn with Turkey during Erdogan's visit to Abu Dhabi in July 2023 (energy, finance, defence, space), on top of a March 2023 free trade agreement and a USD 5bn currency swap; no 2026 figure on implementation was found."
+    value: 50.7
+    unit: usd_bn_agreements_signed_july_2023
+    since: 2023-07-19
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.mofa.gov.ae/en/MediaHub/News/2023/7/19/19-7-2023-UAE-ministry-of-investment", title: "UAE Ministry of Investment announces agreements worth over $50 billion in Republic of Türkiye", publisher: "UAE Ministry of Foreign Affairs", date: 2023-07-19, tier: 1}
+      - {url: "https://www.al-monitor.com/originals/2023/07/turkeys-erdogan-uae-meet-mbz-thaw-investments-grow", title: "Turkey, UAE ink $50 billion in trade deals during Erdogan visit", publisher: "Al-Monitor", date: 2023-07, tier: 3}
+  - to: SYR
+    layer: dependency
+    type: investment
+    summary: "DP World's 30-year concession at the port of Tartus with USD 800m of investment (signed 13 Jul 2025) and a framework agreement with Eagle Hills for about USD 20bn of housing and tourism projects in Damascus and Latakia; non-oil trade reached a record USD 1.4bn in 2025."
+    value: 800
+    unit: usd_m_dp_world_tartus_concession
+    since: 2025-07-13
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/economy/2025/7/13/syria-signs-800m-tartus-port-deal-with-uae-firm-dp-world", title: "Syria signs $800m Tartus port deal with UAE firm DP World", publisher: "Al Jazeera", date: 2025-07-13, tier: 3}
+      - {url: "https://www.al-monitor.com/originals/2026/10/uae-syria-move-ahead-20-billion-real-estate-mega-developments", title: "UAE, Syria move ahead with $20 billion real estate mega-developments", publisher: "Al-Monitor", date: 2026-10, tier: 3}
+  - to: ALB
+    layer: dependency
+    type: investment
+    summary: "Eagle Hills (Abu Dhabi) signed a EUR 2bn marina and port transformation at Durres in January 2023 (state stake 33%, about 450 hectares); trade press reported 20 months later that the marina project still had no developer."
+    value: 2000
+    unit: eur_millions_announced_durres_eagle_hills
+    since: 2023-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "An announced figure for a scheme whose financing close and construction start were not found."
+    sources:
+      - {url: "https://seenews.com/news/albania-uae-based-eagle-hills-in-2-bln-euro-deal-for-durres-port-expansion-813015", title: "Albania, UAE-based Eagle Hills in EUR 2bn deal for Durres port expansion", publisher: "SeeNews", date: 2023-01, tier: 3}
+      - {url: "https://www.portseurope.com/after-20-months-the-new-durres-marina-project-has-no-developer/", title: "After 20 months the new Durres marina project has no developer", publisher: "Ports Europe", date: 2024, tier: 3}
+  - to: MNE
+    layer: dependency
+    type: investment
+    summary: "The Velika Plaza project in Ulcinj: about 12 km of beach and a larger tourism and real-estate development planned for a 99-year lease to a company linked to Mohamed Alabbar (Eagle Hills), under the 2025 UAE agreement."
+    value: 12
+    unit: km_beach_planned_for_99_year_lease
+    since: 2025-04-23
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "No euro figure was published in the sources found; the km figure is the project's footprint."
+    sources:
+      - {url: "https://www.euronews.com/2025/04/17/montenegros-iconic-beach-deal-with-uae-firm-sparks-public-outcry", title: "Montenegro's iconic beach deal with UAE firm sparks public outcry", publisher: "Euronews", date: 2025-04-17, tier: 3}
+      - {url: "https://betabriefing.com/news/region/30903-montenegrin-parliament-adopts-controversial-agreements-with-uae", title: "Montenegrin Parliament adopts controversial agreements with UAE", publisher: "Beta Briefing", date: 2025-04-23, tier: 3}
+  - to: nsa-rsf
+    layer: dependency
+    type: arms_supply
+    summary: "Reported Emirati supply of the RSF by air: RFI counted about 600 flights to the Kufra airstrip in 2025 (Le Monde investigation), UN experts describe weapons flights, and Reuters describes Kufra as the RSF's conduit; the UAE denies supplying arms."
+    value: 600
+    unit: flights_to_kufra_airstrip_2025_rfi
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "A count of flights, not of weapons; attribution rests on press investigations and UN experts, and is denied by Abu Dhabi."
+    sources:
+      - {url: "https://www.newarab.com/news/uae-accused-covert-arms-routes-sudans-rsf-0", title: "UAE accused of using covert arms routes to Sudan's RSF (Le Monde investigation; RFI: about 600 flights to Koufra in 2025)", publisher: "The New Arab", date: 2026-03-23, tier: 3}
+      - {url: "https://www.newarab.com/news/uae-flights-flood-airstrip-un-says-supplies-weapons-sudan", title: "UAE flights flood airstrip, UN says supplies weapons to Sudan rebels", publisher: "The New Arab", date: 2025, tier: 3}
+  - to: sub-somaliland
+    layer: dependency
+    type: military_presence
+    summary: "In 2017 Somaliland granted the UAE a 25-year lease to build a military base and use Berbera airport; DP World runs the port. Israel is reported (unconfirmed) to want a similar facility there after recognising Somaliland on 26 Dec 2025."
+    value: 25
+    unit: years_lease_berbera_base_and_airport
+    since: 2017
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.crisisgroup.org/sites/default/files/260-somalia-and-the-gulf-crisis_0.pdf", title: "Somalia and the Gulf crisis", publisher: "International Crisis Group", date: 2018-06, tier: 2}
+      - {url: "https://www.aljazeera.com/amp/news/2026/10/3/somalia-wont-accept-israeli-presence-under-any-circumstances-president", title: "Somalia won't accept Israeli presence 'under any circumstances': President", publisher: "Al Jazeera", date: 2026-10-03, tier: 3}
+  - to: PAK
+    layer: dependency
+    type: debt
+    summary: "Pakistan completed a USD 3.5bn repayment to the UAE in April 2026 as part of its external debt obligations; analysts link the timing to the Saudi-Pakistan defence tilt."
+    value: 3.5
+    unit: usd_bn_repaid_april_2026
+    since: 2026-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "Single secondary account; the motive is analysts' reading."
+    sources:
+      - {url: "https://www.newarab.com/analysis/balancing-act-how-pakistan-navigating-saudi-uae-rift", title: "Balancing act: how Pakistan is navigating the Saudi-UAE rift", publisher: "The New Arab", date: 2026, tier: 3}
+  # ---------- action ----------
+  - to: USA
+    layer: action
+    type: visit
+    summary: "Trump closed his Gulf tour in Abu Dhabi on 15 May 2025: USD 200bn of commercial deals, the US-UAE AI Acceleration Partnership, a 5 GW AI campus announced, and the restated USD 1.4tn pledge."
+    since: 2025-05-15
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.whitehouse.gov/fact-sheets/2025/05/fact-sheet-president-donald-j-trump-secures-200-billion-in-new-u-s-uae-deals-and-accelerates-previously-committed-1-4-trillion-uae-investment", title: "Fact sheet: President Trump secures USD 200 billion in new US-UAE deals and accelerates previously committed USD 1.4 trillion UAE investment", publisher: "The White House", date: 2025-05-15, tier: 1}
+      - {url: "https://www.al-monitor.com/originals/2025/05/trump-caps-gulf-tour-abu-dhabi-dizzying-investment-pledges", title: "Trump caps Gulf tour in Abu Dhabi with dizzying investment pledges", publisher: "Al-Monitor", date: 2025-05-15, tier: 3}
+  - to: ISR
+    layer: action
+    type: incident
+    summary: "On 3 Sep 2025 Gargash and Nusseibeh declared that Israeli annexation of the West Bank would be a 'red line' that would end regional integration and undermine the Abraham Accords; Gargash repeated it in October 2025. The UAE did not say what it would do."
+    since: 2025-09-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.axios.com/2025/09/03/israel-annex-west-bank-uae-trump-abraham-accords", title: "UAE warns White House that Israeli annexations could unravel Abraham Accords", publisher: "Axios", date: 2025-09-03, tier: 3}
+      - {url: "https://euronews.com/2025/09/04/uae-warns-israeli-annexation-of-west-bank-would-signal-end-of-regional-integration", title: "UAE warns Israeli annexation of West Bank would signal end of regional integration", publisher: "Euronews", date: 2025-09-04, tier: 3}
+  - to: ISR
+    layer: action
+    type: incident
+    summary: "The UAE summoned Israel's deputy ambassador on 12 Sep 2025 after the Israeli strike on Hamas leaders in Doha (9 Sep) and called it 'cowardly'; no sanction followed."
+    since: 2025-09-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.newarab.com/news/uae-summons-israel-envoy-over-cowardly-qatar-attack", title: "UAE summons Israel envoy over 'cowardly' Qatar attack", publisher: "The New Arab", date: 2025-09, tier: 3}
+      - {url: "https://www.denvergazette.com/2025/09/15/summit-leads-to-little-action-after-israeli-strike-on-hamas-in-doha/", title: "Summit leads to little action after Israeli strike on Hamas in Doha", publisher: "AP (via Denver Gazette)", date: 2025-09-15, tier: 3}
+  - to: ISR
+    layer: action
+    type: visit
+    summary: "Netanyahu visited Abu Dhabi on 27 Sep 2026, confirmed by the UAE; Axios reported earlier that Israel sent an Iron Dome battery with troops to the UAE during the Iran war (April 2026)."
+    since: 2026-09-27
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2026/9/28/uae-confirms-netanyahu-visit-to-abu-dhabi", title: "UAE confirms Netanyahu visit to Abu Dhabi", publisher: "Al Jazeera", date: 2026-09-28, tier: 3}
+      - {url: "https://www.axios.com/2026/04/26/israel-iron-dome-uae", title: "Scoop: Israel sent 'Iron Dome' system and troops to UAE during Iran war", publisher: "Axios", date: 2026-04-26, tier: 3}
+  - to: IRN
+    layer: action
+    type: sanction
+    summary: "On 19 Aug 2026 the UAE foreign ministry halted all trade, commercial exchanges and financial transactions with Iran 'until further notice', after ballistic missiles it attributed to Iran and attacks on Emirati tankers; Iran denied launching the missile."
+    since: 2026-08-19
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://english.ahram.org.eg/News/574884.aspx", title: "UAE halts all trade, financial dealings with Iran", publisher: "Ahram Online", date: 2026-08-19, tier: 3}
+      - {url: "https://www.meed.com/uae-cuts-trade-and-financial-links-with-iran", title: "UAE cuts trade and financial links with Iran", publisher: "MEED", date: 2026-08, tier: 3}
+  - to: IRN
+    layer: action
+    type: incident
+    summary: "From 28 Feb 2026 Iran fired about 2,800 missiles and drones at the UAE (551 ballistic missiles, 2,265 drones and 29 cruise missiles by 10 May; 15 dead); the WSJ reports secret Emirati strikes on Iran, including the Lavan refinery, in April 2026, which Abu Dhabi has not confirmed."
+    since: 2026-02-28
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.wam.ae/en/article/c0551n8-uae-air-defence-systems-successfully-engage-uavs", title: "UAE air defence systems successfully engage UAVs launched from Iran (running tally of interceptions)", publisher: "WAM (UAE state agency, official statement)", date: 2026-05, tier: 1}
+      - {url: "https://www.reuters.com/world/middle-east/uae-has-been-secretly-carrying-out-attacks-iran-wsj-reports-2026-05-11/", title: "UAE has been secretly carrying out attacks on Iran, WSJ reports", publisher: "Reuters", date: 2026-05-11, tier: 3}
+  - to: SAU
+    layer: action
+    type: incident
+    summary: "On 30 Dec 2025 a Saudi-led coalition strike hit an Emirati shipment at Mukalla (the UAE says vehicles, Riyadh says arms for the STC); the Yemeni presidential council ordered UAE forces out and the UAE announced its withdrawal the same day."
+    since: 2025-12-30
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.bostonglobe.com/2025/12/30/world/saudi-uae-yemen-rift", title: "UAE withdraws troops from Yemen after Saudi airstrike", publisher: "Boston Globe (AP)", date: 2025-12-30, tier: 3}
+      - {url: "https://www.kunc.org/2026-01-17/a-saudi-uae-rift-is-turning-two-close-allies-into-regional-rivals", title: "A Saudi-UAE rift is turning two close allies into regional rivals", publisher: "NPR (via KUNC)", date: 2026-01-17, tier: 3}
+  - to: SAU
+    layer: action
+    type: visit
+    summary: "Sheikh Mansour bin Zayed visited Saudi Arabia on 29 Sep 2026, after the July-September exchanges of messages; the UAE foreign ministry condemns each Houthi strike on Saudi territory (statement of 8 Sep 2026)."
+    since: 2026-09-29
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.thenationalnews.com/news/uae/2026/09/29/sheikh-mansour-bin-zayed-to-visit-saudi-arabia-on-tuesday/", title: "Sheikh Mansour bin Zayed to visit Saudi Arabia on Tuesday", publisher: "The National (Abu Dhabi, state-aligned)", date: 2026-09-29, tier: 3}
+      - {url: "https://www.mofa.gov.ae/en/MediaHub/News/2026/9/8/UAE-Saudi-Civilian", title: "UAE strongly condemns attacks by Houthi terrorist group on Saudi civilian and economic facilities and vessels", publisher: "UAE Ministry of Foreign Affairs", date: 2026-09-08, tier: 1}
+  - to: org-opec
+    layer: action
+    type: incident
+    summary: "The UAE announced on 28 Apr 2026 that it would leave OPEC and OPEC+ with effect from 1 May 2026, to produce at its built capacity; the dataset row for membership is open-ended and ended on that date."
+    since: 2026-04-28
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.khaleejtimes.com/uae-announces-decision-to-withdraw-from-opec-opec-from-may-1", title: "UAE announces decision to withdraw from OPEC, OPEC+ from May 1", publisher: "Khaleej Times", date: 2026-04-28, tier: 3}
+      - {url: "https://worldview.ranenetwork.com/content/analysis/2026-04-28/the-uae-s-exit-from-opec-further-diminishes-the-oil-cartel-s-relevance", title: "The UAE's exit from OPEC further diminishes the oil cartel's relevance", publisher: "RANE / Stratfor", date: 2026-04-28, tier: 2}
+  - to: QAT
+    layer: action
+    type: agreement
+    summary: "The Al-Ula Declaration of 5 Jan 2021 ended the 2017-21 boycott of Qatar; the text was never published."
+    since: 2021-01-05
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://sanctionsnews.bakermckenzie.com/gcc-and-egypt-sign-the-al-ula-declaration-ending-the-qatar-boycott", title: "GCC and Egypt sign the Al-Ula Declaration ending the Qatar boycott", publisher: "Baker McKenzie", date: 2021-01, tier: 3}
+  - to: SDN
+    layer: action
+    type: incident
+    summary: "Sudan's army government cut diplomatic relations with the UAE on 6 May 2025, declared it a 'state of aggression' and withdrew its ambassador; the UAE said it did not recognise the decision of the Port Sudan authority. The ICJ had dismissed Sudan's case against the UAE the day before."
+    since: 2025-05-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.newarab.com/news/sudan-government-declares-uae-aggressor-state-cuts-ties", title: "Sudan government declares UAE 'aggressor state', cuts ties", publisher: "The New Arab", date: 2025-05-06, tier: 3}
+      - {url: "https://www.ewn.co.za/2025/05/06/sudan-cuts-ties-with-uae-accused-of-backing-paramilitaries", title: "Sudan cuts ties with UAE, accused of backing paramilitaries", publisher: "AFP (via EWN)", date: 2025-05-06, tier: 3}
+  - to: SOM
+    layer: action
+    type: incident
+    summary: "On 12 Jan 2026 Somalia annulled every agreement with the UAE (ports, security, defence) and banned its military aircraft, after alleged sovereignty violations including the flight of an STC leader through Berbera."
+    since: 2026-01-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2026/01/12/somalia-cancels-all-agreements-with-uae-over-alleged-sovereignty-violations", title: "Somalia cancels all agreements with UAE over alleged sovereignty violations", publisher: "Al Jazeera", date: 2026-01-12, tier: 3}
+      - {url: "https://www.theeastafrican.co.ke/tea/news/east-africa/why-somalia-is-cancelling-uae-port-deals-5324586", title: "Why Somalia is cancelling UAE port deals", publisher: "The EastAfrican", date: 2026-01, tier: 3}
+  - to: ETH
+    layer: action
+    type: visit
+    summary: "Abiy Ahmed arrived in Abu Dhabi on 12 Mar 2026 on a working visit, a day after a tripartite meeting with the presidents of Djibouti and Somalia; Sudan accuses Ethiopia and the UAE of drone attacks on Khartoum launched from Bahir Dar (May 2026), which both deny."
+    since: 2026-03-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.geeska.com/en/abiy-lands-abu-dhabi-and-timing-says-everything", title: "Abiy lands in Abu Dhabi and timing says everything", publisher: "Geeska Afrika", date: 2026-03, tier: 3}
+      - {url: "https://www.geeska.com/en/sudan-accuses-ethiopia-uae-drone-attacks", title: "Sudan accuses Ethiopia, UAE of drone attacks on Khartoum", publisher: "Geeska Afrika", date: 2026-05, tier: 3}
+  - to: RUS
+    layer: action
+    type: visit
+    summary: "Mohamed bin Zayed made an official visit to Russia on 29 Jan 2026 and was received by Putin; the agenda was trade, investment and energy, plus regional issues."
+    since: 2026-01-29
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.wam.ae/en/article/bygety8-uae-president-begin-official-visit-russia", title: "UAE President to begin official visit to Russia tomorrow", publisher: "WAM (UAE state agency, official statement)", date: 2026-01-28, tier: 1}
+      - {url: "https://timesofoman.com/article/167701-putin-calls-uae-a-key-trade-partner-in-arab-world-during-kremlin-talk", title: "Putin calls UAE a 'key trade partner in Arab world' during Kremlin talk", publisher: "Times of Oman", date: 2026-01, tier: 3}
+  - to: UKR
+    layer: action
+    type: agreement
+    summary: "Abu Dhabi mediated 26 Russia-Ukraine prisoner exchanges (7,997 captives by 19 Aug 2026) and hosted the trilateral US-Russia-Ukraine talks that opened on 23 Jan 2026 (second round 4 Feb), which stalled in March when the Iran war absorbed Washington."
+    since: 2026-01-23
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://thenationalnews.com/news/uae/2026/08/19/russia-and-ukraine-exchange-206-prisoners-after-uae-mediation", title: "Russia and Ukraine exchange 206 prisoners after UAE mediation (total 7,997)", publisher: "The National (Abu Dhabi, state-aligned)", date: 2026-08-19, tier: 3}
+      - {url: "https://www.mofa.gov.ae/en/mediahub/news/2026/2/4/uae-tripartite-talks", title: "UAE hosts second round of trilateral talks in Abu Dhabi", publisher: "UAE Ministry of Foreign Affairs", date: 2026-02-04, tier: 1}
+      - {url: "https://rubryka.com/en/2026/01/23/vyvedennya-ukrayinskyh-vijsk/", title: "Russia demands Ukrainian troop withdrawal from Donbas ahead of Abu Dhabi negotiations", publisher: "Rubryka", date: 2026-01-23, tier: 3}
+  - to: CHN
+    layer: action
+    type: visit
+    summary: "Wang Yi received the UAE Supreme National Security Council secretary-general in Beijing on 23-25 Jun 2026 and described the two countries as comprehensive strategic partners; Khaled bin Mohamed bin Zayed was in Beijing in April 2026."
+    since: 2026-06-25
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.fmprc.gov.cn/eng/wjbzhd/202606/t20260625_11951976.html", title: "Wang Yi meets UAE Supreme National Security Council secretary-general", publisher: "Ministry of Foreign Affairs of China", date: 2026-06-25, tier: 1}
+      - {url: "https://enterpriseam.com/uae/2026/04/16/uae-china-reaffirm-diplomatic-ties-ramp-up-investments-amid-geopolitical-tensions/", title: "UAE, China reaffirm diplomatic ties, ramp up investments amid geopolitical tensions", publisher: "Enterprise", date: 2026-04-16, tier: 3}
+  - to: AZE
+    layer: action
+    type: agreement
+    summary: "The UAE-Azerbaijan CEPA (18 chapters) was signed in Abu Dhabi on 9-10 Jul 2025 and has entered into force; bilateral trade was USD 2.24bn in 2024 (+36.2%)."
+    since: 2025-07-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.al-monitor.com/originals/2025/07/uae-azerbaijan-sign-trade-deal-officials-meet-abu-dhabi-armenia-peace-talks", title: "UAE, Azerbaijan sign trade deal as officials meet in Abu Dhabi for Armenia peace talks", publisher: "Al-Monitor", date: 2025-07, tier: 3}
+      - {url: "https://www.mofa.gov.ae/en/Missions/Baku/UAE-Relationships", title: "UAE relationships (Embassy in Baku)", publisher: "UAE Ministry of Foreign Affairs", date: 2025, tier: 1}
+  - to: ARM
+    layer: action
+    type: agreement
+    summary: "Abu Dhabi hosted the Pashinyan-Aliyev meeting of 4 Feb 2026; on 5-6 Feb the UAE President received Pashinyan and the two countries signed an agreement on trade in services and investment. Armenia-UAE trade fell about 60% in 2025 to USD 2.13bn."
+    since: 2026-02-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.wam.ae/en/article/byl6asp-uae-president-and-armenian-prime-minister-review", title: "UAE President and Armenian Prime Minister review bilateral ties", publisher: "WAM (UAE state agency, official statement)", date: 2026-02-05, tier: 1}
+      - {url: "https://arka.am/en/news/economy/armenia-and-the-uae-sign-agreement-on-trade-in-services-and-investment/", title: "Armenia and the UAE sign agreement on trade in services and investment", publisher: "Arka News Agency", date: 2026-02-06, tier: 3}
+  - to: GBR
+    layer: action
+    type: agreement
+    summary: "UK-GCC free trade agreement negotiations concluded on 20 May 2026 (UK-GCC trade GBP 53bn in 2025); legal scrubbing and ratification pending. Not a UAE-only deal."
+    since: 2026-05-20
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.whitecase.com/insight-alert/gulf-co-operation-council-and-united-kingdom-conclude-fta-negotiations", title: "Gulf Co-operation Council and the United Kingdom conclude FTA negotiations", publisher: "White & Case", date: 2026-05, tier: 3}
+  - to: org-eu
+    layer: action
+    type: agreement
+    summary: "After the first EU-GCC summit (16 Oct 2024) the EU opened bilateral partnership agreement talks with the UAE and Qatar in 2026; an EU-GCC meeting in Riyadh was planned for the autumn."
+    since: 2026-02-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://euronews.com/my-europe/2026/02/07/eu-courts-gulf-countries-for-free-trade-deal-as-brussels-seeks-to-counter-tariffs", title: "EU courts Gulf countries for free trade deal as Brussels seeks to counter tariffs", publisher: "Euronews", date: 2026-02-07, tier: 3}
+      - {url: "https://egic.info/egic-strategic-foresight-unit-early-warning-brief-may-2026/", title: "EGIC Strategic Foresight Unit early warning brief, May 2026", publisher: "EGIC (Emirates-based think tank)", date: 2026-05, tier: 2}
+  - to: MNE
+    layer: action
+    type: agreement
+    summary: "Montenegro's Parliament ratified the UAE economic cooperation and tourism and real-estate agreements on 23 Apr 2025 under urgent procedure; the President returned the second one citing constitutional problems, Parliament re-adopted it, and the Commission raised concern about the procurement exemption."
+    since: 2025-04-23
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://betabriefing.com/news/region/30903-montenegrin-parliament-adopts-controversial-agreements-with-uae", title: "Montenegrin Parliament adopts controversial agreements with UAE", publisher: "Beta Briefing", date: 2025-04-23, tier: 3}
+      - {url: "https://europeanwesternbalkans.com/2025/05/09/european-commission-raises-concern-over-montenegro-uae-agreement/", title: "European Commission raises concern over Montenegro-UAE Agreement", publisher: "European Western Balkans", date: 2025-05-09, tier: 3}
