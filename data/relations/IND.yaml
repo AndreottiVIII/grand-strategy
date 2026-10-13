@@ -1,0 +1,1089 @@
+from: IND
+relations:
+- to: PAK
+  layer: objective
+  type: territorial_claim
+  summary: India claims all of Jammu and Kashmir, including the Pakistan-held part (PoK); after Operation Sindoor it says talks with Pakistan are limited to terrorism and PoK, and rejects third-party mediation
+    (Kashmir is bilateral).
+  since: '1947'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - &id001
+    url: https://www.outlookindia.com/international/what-indias-post-op-sindoor-strategy-means-for-pakistan
+    title: Operation Sindoor has shifted India's Pakistan policy towards a stronger emphasis on deterrence
+    publisher: Outlook India
+    date: '2026'
+    tier: 3
+  - &id004
+    url: https://thewire.in/diplomacy/india-silent-on-trumps-offer-to-work-together-on-solution-concerning-kashmir-pak-appreciates-move
+    title: India silent on Trump's offer to work together on a Kashmir solution; Pakistan appreciates it
+    publisher: The Wire
+    date: 2025-05
+    tier: 3
+- to: PAK
+  layer: objective
+  type: influence_goal
+  summary: 'Coercive deterrence of cross-border terrorism: India treats a major attack as an act of war, draws no line between terrorists and their sponsors, and says ''if Pakistan fires, we fire'' (sources
+    briefing the press, May 2025); it does not seek the end of the Pakistani state - the ceasefire was accepted at DGMO level on 10 May 2025.'
+  since: 2025-05
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - *id001
+  - &id002
+    url: https://www.indembassyhanoi.gov.in/page/press-briefing-by-india-s-foreign-secretary-accompanied-by-military-officers-in-new-delhi-on-operation-sindoor-on-7-may-2025/
+    title: Press briefing by India's Foreign Secretary accompanied by military officers on Operation Sindoor, 7 May 2025
+    publisher: Ministry of External Affairs of India (transcript on Indian Embassy Hanoi)
+    date: '2025-05-07'
+    tier: 1
+  - &id003
+    url: https://www.yahoo.com/news/india-pakistan-agree-ceasefire-days-131636668.html
+    title: India and Pakistan agree to a ceasefire after days of military escalations
+    publisher: AP (via Yahoo News)
+    date: '2025-05-10'
+    tier: 3
+- to: PAK
+  layer: action
+  type: incident
+  summary: 'Pahalgam attack, 22 Apr 2025: 26 civilians killed (one a Nepali national), the largest civilian toll in India since Mumbai 2008; The Resistance Front claimed it, which India calls a front of
+    the UN-listed Lashkar-e-Taiba.'
+  since: '2025-04-22'
+  until: '2025-04-22'
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - *id002
+  - *id003
+- to: PAK
+  layer: action
+  type: incident
+  summary: 'Operation Sindoor, 7-10 May 2025: strikes on nine ''terrorist sites'' between 01:05 and 01:30 on 7 May, then four days of missile, drone and artillery exchanges against military installations
+    on both sides; India describes Pahalgam as ''the first escalation''.'
+  since: '2025-05-07'
+  until: '2025-05-10'
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - *id002
+  - *id003
+- to: PAK
+  layer: action
+  type: agreement
+  summary: Ceasefire of 10 May 2025 agreed between the two DGMOs; India says it was bilateral and refuses mediation, while Washington says it brokered it and promised talks 'at a neutral site'. The broader
+    talks have not been held.
+  since: '2025-05-10'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - *id003
+  - *id004
+- to: PAK
+  layer: alignment
+  type: treaty
+  summary: The 1960 Indus Waters Treaty has been 'in abeyance' since 23 Apr 2025 (Cabinet Committee on Security, the day after Pahalgam); the MEA repeated on 3 Jul 2026 that it stays suspended 'until Pakistan
+    credibly and irrevocably abjures its support for cross-border terrorism' and India rejects the Court of Arbitration's parallel proceedings.
+  since: '2025-04-23'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.deccanchronicle.com/amp/nation/indus-treaty-frozen-till-terror-ends-india-1968226
+    title: 'Indus Treaty frozen till terror ends: India'
+    publisher: Deccan Chronicle
+    date: '2026-07-03'
+    tier: 3
+  - url: https://www.isas.nus.edu.sg/papers/the-indus-waters-treaty-india-pakistan-tensions-persist/
+    title: 'The Indus Waters Treaty: India-Pakistan tensions persist'
+    publisher: Institute of South Asian Studies, NUS
+    date: '2026'
+    tier: 2
+- to: CHN
+  layer: objective
+  type: territorial_claim
+  summary: India holds that Aksai Chin and the whole of Arunachal Pradesh are Indian; the 3,500 km boundary is undemarcated and both sides keep heavy deployments. The Oct 2024 accord covers only Depsang
+    and Demchok patrolling; the moratoria on patrolling at Galwan, Pangong and Gogra-Hot Springs stay.
+  since: '1962'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - &id005
+    url: https://www.deccanherald.com/amp/story/india%2Fmodi-xi-endorse-patrolling-agreement-instruct-resumption-of-special-representatives-dialogue-3245309
+    title: Modi, Xi endorse patrolling agreement, instruct resumption of Special Representatives dialogue
+    publisher: Deccan Herald
+    date: '2024-10-23'
+    tier: 3
+  - &id006
+    url: https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/12/modi-and-xi-039expressed-commitment039-to-resolving-the-border-issue-india
+    title: 'Modi and Xi ''expressed commitment'' to resolving the border issue: India'
+    publisher: The Star (Malaysia)
+    date: '2026-09-12'
+    tier: 3
+- to: CHN
+  layer: action
+  type: agreement
+  summary: 21 Oct 2024 patrolling arrangement for Depsang and Demchok, welcomed by Modi and Xi at Kazan on 23 Oct 2024 (first formal bilateral in five years; Special Representatives to resume); it ended
+    the 2020 standoff without prejudice to either side's claim.
+  since: '2024-10-21'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - *id005
+  - url: https://www.aljazeera.com/news/2024/10/23/chinas-xi-and-indias-modi-meet-following-military-pact-on-disputed-border
+    title: China's Xi and India's Modi meet following military pact on disputed border
+    publisher: Al Jazeera
+    date: '2024-10-23'
+    tier: 3
+- to: CHN
+  layer: action
+  type: visit
+  summary: 'Modi in Tianjin (SCO), 31 Aug 2025: Modi and Xi agree ''partners, not rivals'', announce the resumption of direct flights; Modi invites Xi to the 2026 BRICS summit. Direct passenger flights
+    restarted from late Oct 2025 (IndiGo Kolkata-Guangzhou from 26 Oct).'
+  since: '2025-08-31'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.ft.lk/front-page/China-and-India-pledge-to-be-partners-not-rivals/44-781061
+    title: China and India pledge to be 'partners not rivals'
+    publisher: Daily FT (Sri Lanka)
+    date: '2025-09-01'
+    tier: 3
+  - url: https://subsites.chinadaily.com.cn/npc/2025-09/01/c_1120998.htm
+    title: Xi, Modi agree China, India are partners instead of rivals
+    publisher: China Daily (state media, official statement)
+    date: '2025-09-01'
+    tier: 1
+  - url: https://www.businesstoday.in/amp/india/story/india-china-to-resume-direct-passenger-flights-by-late-october-496592-2025-10-02
+    title: India, China to resume direct passenger flights by late October
+    publisher: Business Today
+    date: '2025-10-02'
+    tier: 3
+  - url: https://fortune.com/2025/10/03/india-china-start-direct-flights-this-month/
+    title: India and China start direct flights this month
+    publisher: Fortune
+    date: '2025-10-03'
+    tier: 3
+- to: CHN
+  layer: action
+  type: visit
+  summary: Xi in New Delhi for the BRICS summit (12-13 Sep 2026), his first visit to India since 2019; the 50-minute bilateral on 12 Sep produced a joint commitment to a 'fair, reasonable and mutually acceptable'
+    boundary settlement and agreed to address the trade imbalance, supply chains and market access; described by both as a reset, not a breakthrough.
+  since: '2026-09-12'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - *id006
+  - url: https://www.newstribune.com/news/2026/sep/13/xi-resets-ties-with-modi-on-first-visit-to-india/
+    title: Xi resets ties with Modi on first visit to India
+    publisher: News Tribune
+    date: '2026-09-13'
+    tier: 3
+  - &id013
+    url: https://www.theweek.in/news/india/2026/09/10/brics-summit-modi-xi-meeting.amp.html
+    title: Modi, Xi to hold bilateral meeting on day 1 of BRICS Summit
+    publisher: The Week
+    date: '2026-09-10'
+    tier: 3
+- to: CHN
+  layer: dependency
+  type: trade_share
+  summary: China is India's top trading partner, with USD 131.6bn of imports and USD 19.5bn of exports in FY2025-26, a record deficit of USD 112bn (USD 99.2bn the year before); China supplied nearly 30%
+    of India's fertilisers and in 2025 curbed rare-earth magnets and specialty fertilisers before easing after Wang Yi's August 2025 visit.
+  since: 2025-04
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://en.channeliam.com/2026/04/16/china-india-top-trading-partner-fy26/
+    title: China is India's top trading partner in FY26
+    publisher: Channel IAM
+    date: '2026-04-16'
+    tier: 3
+  - *id006
+  - url: https://www.outlookbusiness.com/economy-and-policy/indias-trade-deficit-with-china-hits-record-992bn-manufacturing-gaps-to-blame
+    title: 'India''s trade deficit with China hits record $99.2bn: manufacturing gaps to blame?'
+    publisher: Outlook Business
+    date: '2025'
+    tier: 3
+  - url: https://www.tribuneindia.com/news/india/china-to-resume-fertiliser-rare-earth-supplies-to-india
+    title: China to resume fertiliser, rare earth supplies to India
+    publisher: The Tribune
+    date: 2025-08
+    tier: 3
+  value: 112
+  unit: usd_bn_goods_deficit_fy2025_26
+- to: CHN
+  layer: action
+  type: incident
+  summary: 'Lt Gen Rahul Singh (Deputy Chief of Army Staff, 4 Jul 2025): during Operation Sindoor India faced ''one border, three adversaries'' - Pakistan with live inputs from China and drones from Turkey;
+    81% of Pakistan''s hardware is Chinese. Beijing later confirmed on-site technical support to Pakistan. A serving general''s claim, not independently verified.'
+  since: '2025-07-04'
+  until: '2025-07-04'
+  last_verified: '2026-10-12'
+  confidence: C
+  sources:
+  - url: https://thewire.in/security/five-key-revelations-lt-gen-rahul-singh-operation-sindoor
+    title: Five key revelations by Lt Gen Rahul Singh on Operation Sindoor
+    publisher: The Wire
+    date: 2025-07
+    tier: 3
+  - url: https://www.deccanherald.com/india/after-confirming-support-to-pakistan-during-op-sindoor-beijing-now-vows-to-expand-security-cooperation-with-islamabad-4016031
+    title: After confirming support to Pakistan during Op Sindoor, Beijing now vows to expand security cooperation with Islamabad
+    publisher: Deccan Herald
+    date: '2026'
+    tier: 3
+- to: USA
+  layer: dependency
+  type: trade_share
+  summary: 'US tariff on Indian goods: 50% from Aug 2025 (25% reciprocal plus 25% for Russian oil), cut to 18% on 2 Feb 2026 when the Russia penalty was rescinded; the IEEPA tariffs were then struck down
+    by the Supreme Court (20 Feb 2026) and replaced by a global Section 122 tariff of 10% (15% announced) for 150 days. The India-specific rate has no legal force today and the first-phase trade agreement
+    is unsigned.'
+  since: 2025-08
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - &id007
+    url: https://www.aljazeera.com/economy/2026/2/2/trump-to-slash-us-tariffs-on-india-from-50-percent-to-18-percent
+    title: Trump cuts India tariffs to 18% as Modi agrees to stop buying Russian oil
+    publisher: Al Jazeera
+    date: '2026-02-02'
+    tier: 3
+  - url: https://www.bloomberg.com/news/articles/2026-02-06/trump-removes-india-s-25-russia-related-tariff-after-deal
+    title: Trump removes India's 25% Russia-related tariff after deal
+    publisher: Bloomberg
+    date: '2026-02-06'
+    tier: 3
+  - url: https://www.theweek.in/news/biz-tech/2026/02/21/trump-imposes-10percent-global-tariff-after-supreme-court-setback-india-deal-unaffected.amp.html
+    title: Trump imposes 10% global tariff after Supreme Court setback; India deal unaffected
+    publisher: The Week
+    date: '2026-02-21'
+    tier: 3
+  - &id008
+    url: https://www.etvbharat.com/en/business/piyush-goyal-and-us-trade-representative-greer-begin-talks-on-trade-pact-enn26062301929
+    title: Goyal and US Trade Representative Greer begin talks in Delhi on phase one of the trade pact
+    publisher: ETV Bharat
+    date: '2026-06-23'
+    tier: 3
+  value: 50
+  unit: pct_us_tariff_on_indian_goods_aug2025_to_feb2026
+- to: USA
+  layer: action
+  type: agreement
+  summary: 'Framework for a first-phase bilateral trade agreement announced 2-7 Feb 2026 after a Trump-Modi call: India to restrict Russian oil, lower barriers and buy more US energy, technology and farm
+    goods (Trump claims USD 500bn, which Modi did not repeat). Goyal on 2 Jun 2026: ''99 percent'' settled; Greer in Delhi 23 Jun; still unsigned.'
+  since: '2026-02-02'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - *id007
+  - url: https://newsonair.gov.in/india-and-us-have-finalised-most-elements-of-first-phase-of-bilateral-trade-agreement-says-commerce-and-industry-minister-piyush-goyal/
+    title: India and US have finalised most elements of first phase of bilateral trade agreement, says Commerce Minister Goyal
+    publisher: All India Radio (state broadcaster, official statement)
+    date: '2026-06-02'
+    tier: 1
+  - *id008
+- to: USA
+  layer: action
+  type: agreement
+  summary: Framework for the US-India Major Defence Partnership (10 years), signed by Rajnath Singh and Pete Hegseth in Kuala Lumpur on 31 Oct 2025 as the successor to the 2015 framework.
+  since: '2025-10-31'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://www.newsonair.gov.in/defence-minister-rajnath-singh-meets-us-secretary-of-war-pete-hegseth-in-kuala-lumpur
+    title: India-US seal landmark 10-year defence framework in Kuala Lumpur
+    publisher: All India Radio (state broadcaster, official statement)
+    date: '2025-10-31'
+    tier: 1
+  - url: https://www.tribuneindia.com/news/india/india-us-ink-defence-framework-pact
+    title: India, US ink defence framework pact
+    publisher: The Tribune
+    date: '2025-10-31'
+    tier: 3
+- to: USA
+  layer: action
+  type: incident
+  summary: 'H-1B proclamation of 19 Sep 2025 (USD 100,000 fee for new petitions; one-time, not retroactive): Indians were 283,397 of 2024 approvals (71%); the MEA warned of ''humanitarian consequences''
+    for families and Nasscom of disruption to onsite projects.'
+  since: '2025-09-19'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://fortune.com/2025/09/22/india-government-responds-trump-h1b-visa-fees-100k-increase
+    title: India's government responds to Trump's $100,000 H-1B visa fee
+    publisher: Fortune
+    date: '2025-09-22'
+    tier: 3
+- to: USA
+  layer: action
+  type: incident
+  summary: 'Sanctions act passed by the US House on 17 Sep 2026 (262-159 after 86-11 in the Senate): authorises tariffs of up to 100% on the biggest buyers of Russian oil and gas; the MEA ''noted the passage''
+    and said it will ''take all necessary measures to protect its trade and economic interests''. Awaits presidential signature; not confirmed as law.'
+  since: '2026-09-17'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://dailypioneer.com/news/india-mea-statement-sanctioning-russia-iran-act-energy-security
+    title: India reacts to US sanctions bill, says it will safeguard trade and economic interests
+    publisher: Daily Pioneer
+    date: '2026-09-17'
+    tier: 3
+  - url: https://www.aljazeera.com/news/2026/7/31/how-us-senate-russia-sanctions-could-spell-100-tariffs-for-india-china/
+    title: How US Senate Russia sanctions could spell 100% tariffs for India, China
+    publisher: Al Jazeera
+    date: '2026-07-31'
+    tier: 3
+- to: USA
+  layer: action
+  type: visit
+  summary: India hosted the Quad foreign ministers (Rubio, Wong, Motegi) in New Delhi on 26 May 2026 after a ten-month gap; the Quad leaders' summit that India was to host (planned for 2025) has no date.
+  since: '2026-05-26'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - &id009
+    url: https://www.mea.gov.in/Portal/ForeignRelation/Quad_2026.pdf
+    title: Quad 2026 (fact sheet)
+    publisher: Ministry of External Affairs of India
+    date: 2026-07
+    tier: 1
+  - url: https://newsonair.gov.in/quad-foreign-ministers-meeting-to-be-held-in-new-delhi-today/
+    title: Quad Foreign Ministers' Meeting to be held in New Delhi today
+    publisher: All India Radio (state broadcaster, official statement)
+    date: '2026-05-26'
+    tier: 1
+  - url: https://www.theweek.in/wire-updates/national/2025/12/05/del151-lsq-quad-trump.html
+    title: Dates, agenda, deliverables of next Quad summit yet to be finalised, government tells Lok Sabha
+    publisher: The Week (PTI)
+    date: '2025-12-05'
+    tier: 3
+- to: org-quad
+  layer: alignment
+  type: membership
+  summary: Founding member of the Quad (with the US, Japan and Australia); the MEA lists six leaders' summits and eleven foreign-ministers' meetings to date, the latest in New Delhi on 26 May 2026.
+  since: '2017'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - *id009
+- to: RUS
+  layer: dependency
+  type: energy_import
+  summary: 'Russian crude: 1.74 million b/d in Sept 2026 (Kpler; Iraq 0.58, Saudi 0.57), a record 2.8 million b/d in July 2026 (CREA) as the Gulf war closed other routes; in Feb 2026 India had pledged to
+    restrict purchases and Russia was down to about 1.2 million b/d in January. Figures differ by provider (Vortexa 1.56).'
+  since: '2022'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://knnindia.co.in/news/newsdetails/sectors/exportimports/indias-crude-imports-rise-13-in-september-as-russian-supply-remains-dominant
+    title: India's crude imports rise 13% in September as Russian supply remains dominant (Kpler data)
+    publisher: KNN India
+    date: 2026-10
+    tier: 3
+  - url: https://swarajyamag.com/news-brief/indian-refiners-cut-russian-crude-imports-to-175-million-barrels-daily-amid-tightening-supplies-and-china-rivalry
+    title: Indian refiners cut Russian crude imports to 1.75 million barrels daily
+    publisher: Swarajya
+    date: 2026-09
+    tier: 3
+  - url: https://indiaseatradenews.com/indias-russian-crude-imports-hit-record-2-8-million-bpd-in-july/
+    title: India's Russian crude imports hit record 2.8 million bpd in July (CREA data)
+    publisher: India Sea Trade News
+    date: 2026-08
+    tier: 3
+  - *id007
+  value: 1.74
+  unit: million_barrels_per_day_sept_2026_kpler
+- to: RUS
+  layer: dependency
+  type: arms_supply
+  summary: 'S-400 air defence: five units ordered, three delivered, two due in 2026-27; Su-57 offered with technology sharing, which Delhi has not accepted. Source is a single outlet.'
+  since: '2018'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  sources:
+  - url: https://harici.com.tr/en/upcoming-modi-putin-summit-indias-primary-objective-is-expanding-its-s-400-fleet/
+    title: 'Upcoming Modi-Putin summit: India''s primary objective is expanding its S-400 fleet'
+    publisher: Harici
+    date: 2026-09
+    tier: 3
+  - url: https://swarajyamag.com/news-brief/pm-modi-putin-talks-on-11-september-trade-and-su-57-fighter-deal-in-focus-report
+    title: 'PM Modi-Putin talks on 11 September: trade and Su-57 fighter deal in focus'
+    publisher: Swarajya
+    date: 2026-09
+    tier: 3
+  value: 5
+  unit: s400_units_ordered_three_delivered
+- to: RUS
+  layer: action
+  type: visit
+  summary: 'Putin''s state visit to Delhi, 4-5 Dec 2025 (23rd annual summit, first since 2021): uninterrupted fuel supplies reaffirmed and a trade target of USD 100bn by 2030 (bilateral trade USD 63.6bn
+    in 2024).'
+  since: '2025-12-04'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://indbiz.gov.in/?p=37328
+    title: Putin arrives in Delhi for two-day India-Russia summit marking 25 years of strategic partnership
+    publisher: Indbiz (Ministry of External Affairs portal)
+    date: '2025-12-04'
+    tier: 1
+  - url: https://vifindia.org/category-articles/19678
+    title: 'President Vladimir Putin''s visit to India: key takeaways'
+    publisher: Vivekananda International Foundation
+    date: 2025-12
+    tier: 2
+- to: RUS
+  layer: action
+  type: visit
+  summary: 'Modi-Putin bilateral on the BRICS sidelines in New Delhi, 11 Sep 2026 (second meeting in under two weeks after SCO Bishkek on 31 Aug): defence, energy, space, skills; both visited INNOPROM India;
+    Modi accepted the invitation to the 24th annual summit in Russia. No agreements announced.'
+  since: '2026-09-11'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://newsonair.gov.in/pm-modi-and-russian-president-putin-discuss-issues-of-mutual-interest-during-bilateral-talks/
+    title: PM Modi and Russian President Putin discuss issues of mutual interest during bilateral talks
+    publisher: All India Radio (state broadcaster, official statement)
+    date: '2026-09-11'
+    tier: 1
+  - url: https://swarajyamag.com/news-brief/modi-putin-hold-talks-on-brics-sidelines-in-delhi-pm-accepts-invitation-for-annual-summit-in-russia
+    title: Modi, Putin hold talks on BRICS sidelines in Delhi; PM accepts invitation for annual summit in Russia
+    publisher: Swarajya
+    date: '2026-09-11'
+    tier: 3
+- to: org-eu
+  layer: action
+  type: agreement
+  summary: FTA negotiations concluded at the EU-India summit, New Delhi, 27 Jan 2026 (EU removes tariffs on 99.5% of Indian goods, India covers 97.5% of trade value; farm goods excluded); text published
+    in late February; signature and EU ratification still to come, entry into force expected in 2027.
+  since: 2026-01-27
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.sullcrom.com/insights/memo/2026/January/EU-Strikes-Major-Trade-Deals-Mercosur-India
+    title: EU strikes major trade deals with Mercosur and India
+    publisher: Sullivan & Cromwell
+    date: 2026-01
+    tier: 3
+  - url: https://www.hsfkramer.com/notes/crt/2026-01/the-european-union-india-free-trade-agreement-who-will-be-liberalised-and-when
+    title: 'The European Union-India free trade agreement: who will be liberalised and when'
+    publisher: Herbert Smith Freehills Kramer
+    date: 2026-01
+    tier: 3
+  - url: https://www.orfonline.org/expert-speak/the-india-eu-fta-from-political-agreement-to-ratification-and-coming-into-force
+    title: 'The India-EU FTA: from political agreement to ratification and coming into force'
+    publisher: Observer Research Foundation
+    date: '2026'
+    tier: 2
+- to: GBR
+  layer: alignment
+  type: treaty
+  summary: UK-India Comprehensive Economic and Trade Agreement, signed July 2025, in force from 15 Jul 2026 after a steel-safeguard dispute; India cuts or removes tariffs on about 90% of tariff lines, the
+    UK removes tariffs on 99% of Indian goods; no investment chapter.
+  since: 2025-07
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://www.hlc.com/en/publications/uk-and-india-free-trade-agreement-enters-into-force
+    title: UK and India free trade agreement enters into force
+    publisher: Herbert Smith / HLC
+    date: 2026-07
+    tier: 3
+  - url: https://www.asm.org.uk/en/news-updates/customs-industry/uk-india-free-trade-agreement-now-in-force/
+    title: UK-India Free Trade Agreement now in force
+    publisher: ASM (UK customs industry)
+    date: 2026-07-15
+    tier: 3
+- to: FRA
+  layer: dependency
+  type: arms_supply
+  summary: '114 Rafale: Indian Defence Acquisition Council granted acceptance of necessity on 12 Feb 2026, France submitted its formal offer on 6 Aug 2026, signature targeted by March 2027. Not signed;
+    price figures are media estimates.'
+  since: '2026-02-12'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  value: 114
+  unit: rafale_aircraft_approved_in_principle_not_signed
+  sources:
+  - url: https://www.capitalfm.co.ke/news/2026/05/india-moves-closer-to-historic-38-billion-rafale-fighter-jet-deal-with-france/
+    title: India moves closer to historic USD 38 billion Rafale fighter jet deal with France
+    publisher: Capital FM
+    date: 2026-05
+    tier: 3
+  - url: https://www.optionfinance.fr/info-financiere-en-continu/d/2026-06-03-dassault-aviation-vers-une-signature-imminente-du-contrat-de-114-rafale-avec-linde.html
+    title: 'Dassault Aviation: signature of the 114-Rafale contract with India seen as imminent'
+    publisher: Option Finance
+    date: '2026-06-03'
+    tier: 3
+    lang: fr
+    title_original: 'Dassault Aviation : vers une signature imminente du contrat de 114 Rafale avec l''Inde'
+- to: DEU
+  layer: dependency
+  type: arms_supply
+  summary: 'Project 75I: six German-designed AIP submarines built by Mazagon Dock with TKMS (about INR 700bn / USD 7.3bn); contract talks since Sept 2025, awaiting Cabinet Committee on Security approval;
+    not signed.'
+  since: 2025-09
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  sources:
+  - url: https://www.boerse-express.com/news/articles/tkms-aktie-5-milliarden-u-boot-deal-rueckt-naeher-918640
+    title: 'TKMS: Der 5-Milliarden-U-Boot-Deal rückt näher'
+    publisher: Boerse Express
+    date: '2026'
+    tier: 3
+  - url: https://www.marinetechnologynews.com/news/germany-lobbies-india-submarine-516767
+    title: Germany lobbies India on submarine deal
+    publisher: Marine Technology News
+    date: 2026-02
+    tier: 3
+  value: 6
+  unit: submarines_planned_not_signed
+- to: ITA
+  layer: action
+  type: agreement
+  summary: Special Strategic Partnership declared by Modi and Meloni in May 2026 with a Joint Strategic Action Plan 2025-29; IMEC (MoU of 9 Sep 2023, India-Saudi Arabia-UAE-EU-France-Germany-Italy-US) is
+    the shared project and is stalled on the ground by the 2026 Gulf war.
+  since: '2026-05-20'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.businesstoday.in/amp/india/story/melodi-reunites-pm-modi-meloni-announce-india-italy-special-strategic-partnership-532372-2026-05-20
+    title: Modi and Meloni announce India-Italy Special Strategic Partnership
+    publisher: Business Today
+    date: '2026-05-20'
+    tier: 3
+  - url: https://www.outlookbusiness.com/economy-and-policy/melodi-imec-20bn-targethow-italy-became-one-of-indias-most-important-european-partners
+    title: 'Melodi, IMEC, $20bn target: how Italy became one of India''s most important European partners'
+    publisher: Outlook Business
+    date: 2026-05
+    tier: 3
+  - url: https://enterpriseam.com/mena-india/2026/03/02/war-hits-the-gcc-with-knock-down-effect-for-the-india-trade-corridor/
+    title: War hits the GCC with knock-down effect for the India trade corridor
+    publisher: Enterprise
+    date: '2026-03-02'
+    tier: 3
+- to: CAN
+  layer: action
+  type: agreement
+  summary: 'Carney''s state visit (March 2026): 10-year Cameco uranium supply deal (reported about USD 1.9bn; earlier reports C$2.8bn) and the launch of CEPA talks, targeted for end-2026.'
+  since: 2026-03
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  sources:
+  - url: https://www.aol.com/articles/canada-carney-signs-uranium-deal-101114003.html
+    title: Canada's Carney signs uranium deal with Modi during historic India visit
+    publisher: AOL
+    date: 2026-03
+    tier: 3
+  - url: https://www.businesstoday.in/amp/india/story/canadian-pm-in-india-mark-carney-holds-talk-with-s-jaishankar-to-meet-pm-soon-trade-uranium-deal-on-agenda-518716-2026-03-02
+    title: 'Canadian PM in India: Carney holds talks with Jaishankar; trade, uranium deal on agenda'
+    publisher: Business Today
+    date: '2026-03-02'
+    tier: 3
+- to: JPN
+  layer: dependency
+  type: investment
+  summary: JPY 10 trillion of Japanese investment in India over ten years reiterated at the 16th annual summit (early July 2026), alongside the first defence co-development agreement (UNICORN naval antenna),
+    a 2+2 before year-end and critical-minerals cooperation.
+  since: '2025'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.businesstoday.in/amp/india/story/modi-calls-takaichi-his-younger-sister-japan-pm-responds-we-are-on-the-same-page-and-540560-2026-07-02
+    title: Modi calls Takaichi his 'younger sister'; Japan PM responds
+    publisher: Business Today
+    date: '2026-07-02'
+    tier: 3
+  - url: https://telanganatoday.com/india-japan-sign-first-defence-co-development-pact-as-pm-modi-japan-pm-takaichi-unveil-strategic-initiatives
+    title: India, Japan sign first defence co-development pact as Modi, Takaichi unveil strategic initiatives
+    publisher: Telangana Today
+    date: 2026-07
+    tier: 3
+  - url: https://newsarenaindia.com/nation/big-brother-modi-takaichi-seal-first-defence-energy-pacts/81429
+    title: Modi and Takaichi seal first defence and energy pacts
+    publisher: News Arena India
+    date: 2026-07
+    tier: 3
+  value: 10
+  unit: jpy_trillion_ten_year_pledge
+- to: AUS
+  layer: action
+  type: agreement
+  summary: 'Third annual summit, Melbourne, July 2026: push for the Comprehensive Economic Cooperation Agreement and an investment treaty, Critical Minerals Corridor, Defence Innovation Corridor, Maritime
+    Security Collaboration Roadmap and a nuclear agreement opening uranium supply.'
+  since: '2026-07-09'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://www.pmindia.gov.in/en/news_updates/pm-meets-with-the-prime-minister-of-australia-at-the-3rd-india-australia-annual-summit/
+    title: PM meets with the Prime Minister of Australia at the 3rd India-Australia Annual Summit
+    publisher: Prime Minister's Office of India
+    date: '2026-07-09'
+    tier: 1
+  - url: https://www.outlookbusiness.com/news/modi-visits-australia-as-trade-deficit-halves-under-ecta
+    title: Modi visits Australia as trade deficit halves under ECTA
+    publisher: Outlook Business
+    date: 2026-07
+    tier: 3
+- to: IDN
+  layer: dependency
+  type: arms_supply
+  summary: BrahMos contract with Indonesia reportedly signed on 7 Jul 2026 in Jakarta during Modi's visit (unofficial value USD 630m; an earlier defence-sources estimate was USD 450m); neither side has
+    confirmed the figures.
+  since: '2026-07-07'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  sources:
+  - url: https://ianslive.in/pm-modi-to-meet-indonesian-prez-prabowo-subianto-today-talks-to-focus-on-defence-maritime-cooperation--20260707064129
+    title: PM Modi to meet Indonesian President Prabowo Subianto today; talks to focus on defence, maritime cooperation
+    publisher: IANS
+    date: '2026-07-07'
+    tier: 3
+  - &id011
+    url: https://www.business-standard.com/india-news/which-southeast-asian-nations-are-buying-indian-missiles-126070700548_1.html
+    title: Which Southeast Asian nations are buying Indian missiles
+    publisher: Business Standard
+    date: '2026-07-07'
+    tier: 3
+  - &id010
+    url: https://swarajyamag.com/amp/story/defence/india-expands-defence-exports-in-southeast-asia-with-brahmos-missile-deal-signed-with-vietnam-talks-with-indonesia-in-final-stages
+    title: 'India expands defence exports in Southeast Asia: BrahMos deal signed with Vietnam, talks with Indonesia in final stages'
+    publisher: Swarajya
+    date: '2026-05-30'
+    tier: 3
+  value: 630
+  unit: usd_million_unofficial_unconfirmed
+- to: VNM
+  layer: dependency
+  type: arms_supply
+  summary: BrahMos contract signed and disclosed by the Defence Secretary at the Shangri-La Dialogue on 30 May 2026 (reported about USD 630m or INR 6,000 crore incl. training; not published).
+  since: '2026-05-30'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  sources:
+  - *id010
+  - url: https://www.drishtiias.com/daily-updates/daily-news-analysis/india-signs-brahmos-missile-deal-with-vietnam/print_manually
+    title: India signs BrahMos missile deal with Vietnam
+    publisher: Drishti IAS
+    date: '2026-06-05'
+    tier: 3
+  value: 630
+  unit: usd_million_reported_unconfirmed
+- to: PHL
+  layer: dependency
+  type: arms_supply
+  summary: 'First export customer of BrahMos: a 2022 contract of about USD 375m for three shore-based anti-ship batteries, first delivery in April 2024.'
+  since: '2022'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - *id011
+  value: 375
+  unit: usd_million_2022_contract
+- to: ISR
+  layer: action
+  type: visit
+  summary: 'Modi in Israel, late Feb 2026 (Knesset address; defence, agriculture, cyber): FTA talks on a fast track (goods trade USD 3.62bn in 2024-25), Adani runs Haifa port; two days later the US and
+    Israel struck Iran.'
+  since: '2026-02-25'
+  until: '2026-02-26'
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.ewn.co.za/2026/02/25/indias-modi-heads-to-israel-to-strengthen-cooperation
+    title: India's Modi heads to Israel to 'strengthen cooperation'
+    publisher: Eyewitness News (AFP)
+    date: '2026-02-25'
+    tier: 3
+  - url: https://www.malaymail.com/news/world/2026/02/25/modi-flies-to-israel-to-deepen-defence-and-trade-ties-stirring-criticism-at-home/210385
+    title: Modi flies to Israel to deepen defence and trade ties, stirring criticism at home
+    publisher: Malay Mail
+    date: '2026-02-25'
+    tier: 3
+- to: ARE
+  layer: dependency
+  type: trade_share
+  summary: 'Bilateral trade USD 80.5bn in April-January of FY2024-25 under the CEPA in force since 1 May 2022 (Indian figure for the year: about USD 100bn); UAE is also India''s top Gulf source of remittances
+    (19.2% of the total in FY2023-24).'
+  since: 2022-05
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.business-standard.com/industry/news/india-uae-trade-grows-21-35-to-80-51-billion-during-apr-jan-in-fy25-125021801145_1.html
+    title: India-UAE trade grows 21.35% to $80.51 billion during Apr-Jan FY25
+    publisher: Business Standard
+    date: '2025-02-18'
+    tier: 3
+  - &id012
+    url: https://english.punjabkesari.com/business/indias-remittances-strong-amid-west-asia-conflict-but-govt-support-needed-to-reintegrate-returning-workers-domestically-morgan-stanley/
+    title: 'India''s remittances strong amid West Asia conflict but government support needed to reintegrate returning workers: Morgan Stanley'
+    publisher: Punjab Kesari
+    date: '2026'
+    tier: 3
+  value: 80.51
+  unit: usd_bn_bilateral_trade_apr_jan_fy2024_25
+- to: SAU
+  layer: dependency
+  type: trade_share
+  summary: Bilateral trade of USD 41.88bn in FY2024-25, Indian imports USD 30.12bn (crude, LPG, fertilisers); Strategic Partnership Council met in Jeddah in April 2025. No sourced reading on the 2026 Hormuz
+    effect.
+  since: 2024-04
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.mea.gov.in/Portal/ForeignRelation/India-KSA-26.pdf
+    title: India-Saudi Arabia bilateral relations brief
+    publisher: Ministry of External Affairs of India
+    date: 2026
+    tier: 1
+  - url: https://enterpriseam.com/ksa/2025/04/24/saudi-arabia-and-india-to-strengthen-cooperation-on-oil-promote-bilateral-trade/
+    title: Saudi Arabia and India to strengthen cooperation on oil, promote bilateral trade
+    publisher: Enterprise
+    date: 2025-04-24
+    tier: 3
+  value: 41.88
+  unit: usd_bn_bilateral_trade_fy2024_25
+- to: org-gcc
+  layer: dependency
+  type: remittances
+  summary: About 9 million Indians work in the Gulf; GCC states supplied 38% of India's remittances in FY2023-24 (47% in 2016-17); India's Chief Economic Advisor warned in 2026 of losses of up to USD 10bn
+    from the Gulf war, while the RBI judged inflows resilient.
+  since: '2016'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - *id012
+  - url: https://english.punjabkesari.com/business/gulf-risks-may-hit-india-remittances-cea/
+    title: 'Gulf risks may hit India remittances: CEA Nageswaran'
+    publisher: Punjab Kesari
+    date: '2026'
+    tier: 3
+  value: 38
+  unit: pct_of_india_remittances_fy2023_24
+- to: IRN
+  layer: action
+  type: incident
+  summary: '28 Feb 2026: on the US-Israeli strikes on Iran the MEA urged restraint, de-escalation and respect for sovereignty without naming either side; Operation Urja Suraksha (from 23 Mar 2026) escorts
+    Indian-flagged tankers through Hormuz with five to seven warships, with Iran letting ''friendly nations'' pass; India is 80-88% dependent on imported oil.'
+  since: '2026-02-28'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.etvbharat.com/en/bharat/india-calls-for-immediate-de-escalation-in-middle-east-urges-respect-for-sovereignty-enn26022805616
+    title: India calls for immediate de-escalation in Middle East, urges respect for sovereignty
+    publisher: ETV Bharat
+    date: '2026-02-28'
+    tier: 3
+  - url: https://www.khaleejtimes.com/world/asia/how-an-indian-lpg-tanker-escaped-hormuz-via-an-unusual-route-2
+    title: How an Indian LPG tanker escaped Hormuz via an unusual route
+    publisher: Khaleej Times
+    date: '2026'
+    tier: 3
+  - url: https://www.marineinsight.com/indian-navy-escorts-two-more-tankers-through-hormuz-amidst-cheer-from-crew/
+    title: Indian Navy escorts two more tankers through Hormuz
+    publisher: Marine Insight
+    date: '2026'
+    tier: 3
+  - url: https://enterpriseam.com/mena-india/2026/05/01/indias-finance-ministry-flags-major-downside-risks-to-gdp-and-inflation-as-gulf-war-disrupts-trade-and-supply/
+    title: India's finance ministry flags major downside risks to GDP and inflation as Gulf war disrupts trade and supply
+    publisher: Enterprise
+    date: '2026-05-01'
+    tier: 3
+- to: IRN
+  layer: action
+  type: incident
+  summary: 'Chabahar: US sanctions waiver for India''s port operations expired on 26 Apr 2026 (it had been issued 28 Oct 2025); the MEA said on 17 Jul 2026 the terminal was undamaged and that talks on the
+    way forward continue with ''relevant stakeholders''.'
+  since: '2025-10-28'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.maritimegateway.com/india-secures-us-sanctions-waiver-for-chabahar-port-operations-till-april-2026-amid-tariff-tensions
+    title: India secures US sanctions waiver for Chabahar port operations till April 2026 amid tariff tensions
+    publisher: Maritime Gateway
+    date: 2025-10
+    tier: 3
+  - url: https://www.newkerala.com/news/a/chabahar-terminal-did-not-face-any-damage-during-653.htm
+    title: 'Chabahar terminal did not face any damage: MEA (IANS)'
+    publisher: New Kerala (IANS)
+    date: '2026-07-17'
+    tier: 3
+- to: AFG
+  layer: action
+  type: visit
+  summary: Taliban Foreign Minister Muttaqi in New Delhi, 9-16 Oct 2025 (first Taliban minister visit; UN travel exemption); on 21 Oct India upgraded its Kabul technical mission to an embassy without recognising
+    the Taliban government; Kabul named a chargé d'affaires to Delhi in Jan 2026.
+  since: '2025-10-09'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://www.etvbharat.com/en/!bharat/eam-jaishankar-during-meeting-with-afghanistan-foreign-minister-amir-khan-muttaq-enn25101002227
+    title: '''Your visit marks an important step in advancing our ties'': EAM Jaishankar to Afghan foreign minister'
+    publisher: ETV Bharat
+    date: '2025-10-10'
+    tier: 3
+  - url: https://www.dawn.com/news/1950392/india-restores-embassy-in-afghanistan-as-ties-improve
+    title: India restores embassy in Afghanistan as ties improve
+    publisher: Dawn
+    date: '2025-10-21'
+    tier: 3
+  - url: https://www.afintl.com/en/202510213179
+    title: India upgrades Kabul mission to full embassy status
+    publisher: Afghanistan International
+    date: '2025-10-21'
+    tier: 3
+- to: BGD
+  layer: action
+  type: incident
+  summary: Sheikh Hasina has been in India since Aug 2024; Dhaka's extradition request (Dec 2024; death sentence in absentia Nov 2025) is 'under examination'; her virtual press conference from Delhi on
+    5 Aug 2026 stalled Tarique Rahman's visit and India's BRICS invitation of him as 'BIMSTEC chairman' caused offence.
+  since: 2024-08
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://aljazeera.com/news/2026/8/25/hasina-spat-stalls-bangladesh-india-reset-what-would-break-the-deadlock
+    title: 'Hasina spat stalls Bangladesh-India reset: what would break the deadlock?'
+    publisher: Al Jazeera
+    date: '2026-08-25'
+    tier: 3
+  - url: https://www.khaleejtimes.com/asia/bangladesh-pm-tarique-rahman-reset-india-ties
+    title: Bangladesh PM seeks 'conducive environment' to reset ties with India
+    publisher: Khaleej Times
+    date: 2026-08
+    tier: 3
+  - url: https://www.etvbharat.com/en/international/between-a-reset-and-a-reckoning-why-tarique-rahmans-india-visit-is-still-uncertain-enn26081604629
+    title: 'Between a reset and a reckoning: why Tarique Rahman''s India visit is still uncertain'
+    publisher: ETV Bharat
+    date: '2026-08-16'
+    tier: 3
+- to: LKA
+  layer: action
+  type: agreement
+  summary: First-ever India-Sri Lanka defence cooperation MoU signed in Colombo on 5 Apr 2025, with a trilateral with the UAE for a Trincomalee energy hub and a grid interconnection (seven MoUs).
+  since: '2025-04-05'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://scroll.in/latest/1081031/india-and-sri-lanka-sign-pact-on-defence-co-operation
+    title: India and Sri Lanka sign pact on defence co-operation
+    publisher: Scroll.in
+    date: '2025-04-05'
+    tier: 3
+  - url: https://adaderana.lk/news/107157/pm-modis-visit-india-and-sri-lanka-sign-several-mous
+    title: 'PM Modi''s visit: India and Sri Lanka sign several MoUs'
+    publisher: Ada Derana
+    date: '2025-04-05'
+    tier: 3
+- to: NPL
+  layer: objective
+  type: territorial_claim
+  summary: India holds Kalapani, Lipulekh and Limpiyadhura under the 1815 Sugauli treaty; Nepal's 2020 map claims them; in April 2026 the Balen Shah government reasserted its claim when India announced
+    the Kailash Mansarovar Yatra via Lipulekh.
+  since: '1962'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://stratnewsglobal.com/nepal/india-didnt-see-this-nepal-coming/
+    title: India didn't see this Nepal coming
+    publisher: StratNews Global
+    date: '2026'
+    tier: 3
+  - url: https://english.ratopati.com/story/61466/the-path-to-resolving-the-lipulekh-dispute-diplomacy-or-conference
+    title: Nepal and India clash over Lipulekh amid new government formation
+    publisher: Ratopati
+    date: 2026-04
+    tier: 3
+- to: BTN
+  layer: dependency
+  type: investment
+  summary: INR 4,000 crore (about USD 455m) line of credit for energy projects announced on 11 Nov 2025 with the inauguration of the 1,020 MW Punatsangchhu-II plant; the Kokrajhar-Gelephu rail line (about
+    69 km, about INR 3,500 crore) is a Special Railway Project.
+  since: '2025-11-11'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.tribuneindia.com/news/world/pm-modi-bhutan-king-inaugurate-punatsangchhu-ii-hydropower-project-marking-new-milestone-in-bilateral-energy-partnership/amp
+    title: PM Modi, Bhutan King inaugurate Punatsangchhu-II hydropower project
+    publisher: The Tribune
+    date: '2025-11-11'
+    tier: 3
+  - url: https://www.business-standard.com/external-affairs-defence-security/news/india-bhutan-pm-promises-timely-completion-of-rail-links-125111101895_1.html
+    title: 'India-Bhutan: PM promises timely completion of rail links'
+    publisher: Business Standard
+    date: '2025-11-11'
+    tier: 3
+  value: 4000
+  unit: inr_crore_line_of_credit
+- to: MDV
+  layer: dependency
+  type: debt
+  summary: INR 30bn currency-swap drawdown in April 2026 after the USD 400m swap of Oct 2024 expired on 23 Apr 2026 (USD 760m of swaps in 2024); a first rupee line of credit of INR 4,850 crore in July 2025.
+  since: 2024-10
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://atolltimes.mv/post/business/15693
+    title: India extends INR 30 billion currency swap drawdown to the Maldives
+    publisher: Atoll Times
+    date: 2026-04
+    tier: 3
+  - url: https://m.thewire.in/article/diplomacy/india-steps-in-with-760-million-currency-swap-to-ease-maldives-economic-woes-as-relations-thaw/amp
+    title: India steps in with $760 million currency swap to ease Maldives' economic woes as relations thaw
+    publisher: The Wire
+    date: 2024-10
+    tier: 3
+  value: 30
+  unit: inr_billion_swap_drawdown_apr_2026
+- to: ARM
+  layer: dependency
+  type: arms_supply
+  summary: India supplies Pinaka rockets, Konkurs missiles, mortars, MArG and ATAGS howitzers, Akash air defence and anti-drone systems; India's Ministry of Defence confirmed USD 600m paid by the start
+    of FY2024-25, experts estimate USD 1-2bn of contracts. Armenia is among the top three destinations of Indian defence exports.
+  value: 600
+  unit: usd_million_paid_by_fy2024_25
+  since: 2022-11
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://euro-sd.com/2025/05/articles/44516/diversifying-armenias-defence-shifting-alliances-and-military-modernisation/
+    title: 'Diversifying Armenia''s defence: shifting alliances and military modernisation'
+    publisher: European Security & Defence
+    date: 2025-05
+    tier: 3
+  - url: https://idsa.in/?p=84335
+    title: 'The India-Armenia defence partnership: strategic drivers'
+    publisher: Manohar Parrikar IDSA
+    date: 2024
+    tier: 2
+- to: EGY
+  layer: action
+  type: visit
+  summary: Sisi and Modi met on the BRICS sidelines in New Delhi in Sept 2026 (a USD 12bn trade target); strategic partnership since 2023.
+  since: 2026-09
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://english.ahram.org.eg/News/576566.aspx
+    title: El-Sisi, Modi discuss USD 12 bln trade target, deeper Egypt-India ties on BRICS sidelines
+    publisher: Ahram Online
+    date: 2026-09
+    tier: 3
+- to: org-un
+  layer: objective
+  type: membership_goal
+  summary: Permanent Security Council seat through the G4 and the intergovernmental negotiations; on 13 Jul 2026 Jaishankar launched the 'SHANTI' campaign for a non-permanent seat in 2028-29 (election June
+    2027, a contest with Tajikistan in the Asia-Pacific group).
+  since: '2026-07-13'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://swarajyamag.com/news-brief/s-jaishankar-to-kick-off-indias-unsc-bid-meet-guterres-in-new-york-on-13-july
+    title: S Jaishankar to kick off India's UNSC bid, meet Guterres in New York on 13 July
+    publisher: Swarajya
+    date: 2026-07
+    tier: 3
+  - url: https://dailypioneer.com/news/indias-long-road-to-a-permanent-unsc-seat
+    title: India's long road to a permanent UNSC seat
+    publisher: Daily Pioneer
+    date: '2026'
+    tier: 3
+- to: org-brics
+  layer: action
+  type: agreement
+  summary: India chairs BRICS in 2026 and hosted the 18th leaders' summit at Bharat Mandapam on 12-13 Sep 2026, with Xi, Putin and Pezeshkian present against the Iran war.
+  since: '2026-09-12'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - *id013
+  - url: https://www.outlookindia.com/national/brics-summit-2026-live-updates-delhi-pm-modi-xi-jinping-vladimir-putin-latest-news
+    title: 'BRICS Summit 2026 live: Modi-Xi meeting, Putin in Delhi as Iran war tests BRICS unity'
+    publisher: Outlook India
+    date: '2026-09-12'
+    tier: 3
+- layer: alignment
+  type: treaty
+  summary: The Comprehensive Economic Partnership Agreement in force since May 2022, with the IMEC inter-governmental framework agreement signed in Feb-Mar 2024 and a strategic defence letter of intent
+    in Jan 2026.
+  since: 2022-05-01
+  until: null
+  last_verified: '2026-10-13'
+  confidence: B
+  sources:
+  - url: https://www.orfonline.org/expert-speak/cepa-and-the-imec-future-proofing-india-uae-economic-ties
+    title: 'CEPA and the IMEC: future-proofing India-UAE economic ties'
+    publisher: Observer Research Foundation
+    date: 2025
+    tier: 2
+  - url: https://indbiz.gov.in/india-uae-deepen-ties-focus-on-energy-trade-connectivity/
+    title: India-UAE deepen ties, focus on energy, trade, connectivity
+    publisher: Indbiz (Government of India)
+    date: 2026-01
+    tier: 1
+  to: ARE
+  mirrored_from: ARE
+- layer: alignment
+  type: treaty
+  summary: Comprehensive Economic Partnership Agreement signed in Muscat on 18 Dec 2025 (Goyal and Al Yousef); Oman gives duty-free access on 98.08% of its tariff lines. A 2018 memorandum lets the Indian
+    Navy and Air Force use Duqm; a dedicated Indian naval zone followed in January 2024.
+  since: 2025-12-18
+  until: null
+  last_verified: '2026-10-13'
+  confidence: B
+  sources:
+  - url: https://www.reuters.com/world/india/oman-india-sign-comprehensive-economic-partnership-agreement-omans-state-news-2025-12-18/
+    title: Oman, India sign Comprehensive Economic Partnership Agreement (read through Wikipedia's citation, not opened)
+    publisher: Reuters
+    date: 2025-12-18
+    tier: 3
+  - url: https://www.ispionline.it/en/publication/omans-sultan-goes-to-the-uae-why-it-matters-also-to-the-us-and-china-171721
+    title: 'Oman''s Sultan Goes to the UAE: Why it Matters Also to the US and China'
+    publisher: ISPI
+    date: 2024-04-24
+    tier: 2
+  to: OMN
+  mirrored_from: OMN
