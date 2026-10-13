@@ -1,14 +1,732 @@
 id: QAT
 name: Qatar
+short: Qatar
 type: state
-iso2: qa
-wikipedia: https://en.wikipedia.org/wiki/Qatar
 coords:
 - 51.53
 - 25.29
+iso2: qa
+wikipedia: https://en.wikipedia.org/wiki/Qatar
 seat: Doha
 regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+- middle-east
+card: full
+tier: protagonist
+last_verified: '2026-10-12'
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: 'Make an attack on Qatar too costly to repeat: a US guarantee in writing (Executive Order 14353 of 29 Sep 2025 treats any armed attack on Qatar''s territory, sovereignty or critical infrastructure as a threat to US peace and security), the major non-NATO ally status of 2022, Al Udeid, Turkish troops at Tariq bin Ziyad, Patriot and counter-drone purchases and, since the Iran war, a declared aim of Gulf ''self-sufficiency in security''. Regime survival and sovereignty come before every other aim after the Israeli strike on Doha (9 Sep 2025) and Iran''s attacks (June 2025, 28 Feb 2026 onwards).'
+    confidence: A
+    sources:
+    - url: https://www.whitehouse.gov/presidential-actions/2025/09/assuring-the-security-of-the-state-of-qatar
+      title: Executive Order 14353 - Assuring the Security of the State of Qatar
+      publisher: The White House
+      date: '2025-09-29'
+      tier: 1
+    - url: https://www.govinfo.gov/content/pkg/FR-2025-10-06/pdf/2025-19483.pdf
+      title: Executive Order 14353 of September 29, 2025 (Federal Register, 90 FR 48143)
+      publisher: Federal Register / GovInfo
+      date: '2025-10-06'
+      tier: 1
+    - url: https://www.aljazeera.com/news/2022/3/10/us-officially-designates-qatar-as-a-major-non-nato-ally
+      title: US officially designates Qatar as a major non-NATO ally
+      publisher: Al Jazeera
+      date: '2022-03-10'
+      tier: 3
+    - url: https://www.aljazeera.com/news/2025/9/10/netanyahu-vows-to-target-opponents-abroad-after-strike-in-qatar
+      title: Netanyahu pledges to target opponents abroad after strike in Qatar
+      publisher: Al Jazeera
+      date: '2025-09-10'
+      tier: 3
+    - url: https://www.aljazeera.com/news/2026/2/28/missile-debris-injures-eight-in-qatar-after-iran-launches-barrage
+      title: Missile debris injures 16 in Qatar after Iran launches barrage
+      publisher: Al Jazeera
+      date: '2026-02-28'
+      tier: 3
+    - url: https://www.euronews.com/2026/09/08/qatar-and-uae-say-gulf-cannot-rely-on-us-alone-for-regions-security
+      title: Qatar and UAE say Gulf cannot rely on US alone for region's security
+      publisher: Euronews
+      date: '2026-09-08'
+      tier: 3
+    - url: https://www.everycrsreport.com/files/2026-06-03_R48971_0ef11e7717f94482f81c35cdf07bad07f0ea04f8.html
+      title: 'The Arab Gulf States, the Iran Conflict, and U.S. Relations: In Brief (CRS R48971)'
+      publisher: Congressional Research Service
+      date: '2026-06-03'
+      tier: 1
+  - rank: 2
+    text: 'Keep the gas franchise intact and growing: the North Field is the state''s only large revenue source and the basis of its rent-for-influence model. Ras Laffan lost about 17% of LNG export capacity for 3-5 years (Iranian strike, March 2026), force majeure has been extended to October, and the 27-year Sinopec contract, the German and Italian contracts and the North Field East expansion are the commitments Doha must still honour. It negotiates regulation too: the CSDDD climate-transition-plan duty was dropped after Doha''s threat to divert LNG.'
+    confidence: A
+    sources:
+    - url: https://www.thenationalnews.com/business/energy/2026/04/09/months-expected-until-qatars-ras-laffan-lng-site-resumes-full-operations/
+      title: Qatar's Ras Laffan LNG site may not be fully back online for months
+      publisher: The National
+      date: '2026-04-09'
+      tier: 3
+    - url: https://www.spglobal.com/energy/en/news-research/latest-news/electric-power/031926-qatarenergy-expects-3-5-years-to-repair-lng-facilities-after-strikes
+      title: QatarEnergy expects 3-5 years to repair LNG facilities after strikes
+      publisher: S&P Global Commodity Insights
+      date: '2026-03-19'
+      tier: 3
+    - url: https://thenationalnews.com/business/energy/2026/09/28/qatar-extends-lng-force-majeure-as-hormuz-disruption-threatens-winter-supply
+      title: Qatar extends LNG force majeure as Hormuz disruption threatens winter supply
+      publisher: The National
+      date: '2026-09-28'
+      tier: 3
+    - url: https://www.gulf-times.com/article/650396/business/qatarenergy-sinopec-sign-27-year-4-million-tons-per-annum-lng-supply-agreement
+      title: QatarEnergy, Sinopec sign 27-year, 4 million tons per annum LNG supply agreement
+      publisher: Gulf Times
+      date: '2022-11-21'
+      tier: 3
+    - url: https://www.agbi.com/oil-and-gas/2025/10/qatar-says-eu-law-may-stop-lng-supply-to-europe/
+      title: Qatar says EU law may stop LNG supply to Europe
+      publisher: AGBI (FT interview)
+      date: 2025-10
+      tier: 3
+    - url: https://www.business-humanrights.org/en/latest-news/csddd-omnibus/
+      title: CSDDD omnibus (timeline of the Omnibus I outcome)
+      publisher: Business & Human Rights Resource Centre
+      date: 2026-03
+      tier: 2
+  - rank: 3
+    text: 'Be the indispensable mediator: the foreign ministry spokesman calls mediation ''an identity issue for us, a national pride''; the portfolio runs from Gaza (Oct 2025 ceasefire, 31 Jul 2026 disarmament deal) and Afghanistan (US-Taliban, Pakistan-Taliban Oct 2025) to Iran-US (backing Pakistan''s lead after refusing to lead in March 2026), Rwanda-DRC (Doha Framework, 15 Nov 2025) and Ukrainian children. The prime minister said on 30 Sep 2026 that mediation is embedded in state institutions and Doha will stay active.'
+    confidence: A
+    sources:
+    - url: https://www.csmonitor.com/World/Middle-East/2026/0518/qatar-diplomacy-mediation-iran-war-lng
+      title: 'Tested by Iran war, Qatar is still faithful to its core mission: Mediation'
+      publisher: The Christian Science Monitor
+      date: '2026-05-18'
+      tier: 3
+    - url: https://www.qatar-tribune.com/article/199041/front/us-qatar-egypt-turkiye-sign-historic-gaza-deal
+      title: US, Qatar, Egypt, Turkiye sign historic Gaza deal
+      publisher: Qatar Tribune
+      date: '2025-10-14'
+      tier: 3
+    - url: https://qna.org.qa/en/News-Area/News/2026-7/31/us-president-announces-agreement-to-establish-peace-in-gaza-thanks-qatar-and-mediators
+      title: US president announces agreement to establish peace in Gaza, thanks Qatar and mediators
+      publisher: Qatar News Agency (official statement)
+      date: '2026-07-31'
+      tier: 1
+    - url: https://www.newarab.com/news/pakistan-afghanistan-agree-immediate-ceasefire-qatar-talks?amp=1
+      title: Pakistan, Afghanistan agree to immediate ceasefire in Qatar talks
+      publisher: The New Arab
+      date: '2025-10-19'
+      tier: 3
+    - url: https://qna.org.qa/en/News-Area/News/2026-10/6/foreign-ministry-mediation-efforts-between-washington-and-tehran-continue
+      title: 'Foreign Ministry: mediation efforts between Washington and Tehran continue'
+      publisher: Qatar News Agency (official statement)
+      date: '2026-10-06'
+      tier: 1
+    - url: https://thepeninsulaqatar.com/article/30/09/2026/pm-qatar-determined-to-remain-active-in-mediation
+      title: 'PM: Qatar determined to remain active in mediation'
+      publisher: The Peninsula (Qatar)
+      date: '2026-09-30'
+      tier: 3
+    - url: https://ewn.co.za/2025/11/15/m23-dr-congo-ink-fresh-roadmap-to-peace-in-doha
+      title: M23, DR Congo ink fresh roadmap to peace in Doha
+      publisher: Eyewitness News (AFP)
+      date: '2025-11-15'
+      tier: 3
+    - url: https://www.themoscowtimes.com/2026/07/22/moscow-returns-8-ukrainian-children-with-qatari-mediation
+      title: Moscow returns 8 Ukrainian children with Qatari mediation
+      publisher: The Moscow Times
+      date: '2026-07-22'
+      tier: 3
+  - rank: 4
+    text: 'Autonomy within the Gulf: never again be subordinated to Riyadh or Abu Dhabi, as in the 2017-21 blockade (13 demands, including the closure of Al Jazeera and curbs on ties with Iran). Al-Ula (5 Jan 2021) ended it; Qatar keeps its own channels to Hamas, Iran and Turkey, its own US guarantee, its OPEC exit (Jan 2019) and a Turkish base.'
+    confidence: A
+    sources:
+    - url: https://www.reuters.com/article/us-gulf-qatar-demands-idUSKBN19E0BB
+      title: 'Arab states issue ultimatum to Qatar: close Jazeera, curb ties with Iran'
+      publisher: Reuters
+      date: '2017-06-23'
+      tier: 3
+    - url: https://naharnet.com/stories/en/107012-naharnet-saudi-arabia-qatar-leaders-meet-for-reconciliation-after-kuwaiti-mediation
+      title: Saudi Arabia, Qatar leaders meet for reconciliation after Kuwaiti mediation
+      publisher: Naharnet
+      date: '2021-01-05'
+      tier: 3
+    - url: https://agsiw.org/qatars-regional-relations-and-foreign-policy-after-al-ula/
+      title: Qatar's regional relations and foreign policy after Al-Ula
+      publisher: Arab Gulf States Institute in Washington
+      date: '2021'
+      tier: 2
+    - url: https://www.aljazeera.com/news/2018/12/qatar-withdraw-opec-january-2019-181203061900372.html
+      title: Qatar to withdraw from OPEC in January 2019
+      publisher: Al Jazeera
+      date: '2018-12-03'
+      tier: 3
+    - url: https://aa.com.tr/en/middle-east/turkiye-qatar-sign-joint-declaration-agreements-on-defense-trade-strategic-cooperation/3723687
+      title: Turkiye, Qatar sign joint declaration, agreements on defense, trade, strategic cooperation
+      publisher: Anadolu Agency (state agency, official statement)
+      date: 2025-10
+      tier: 3
+  - rank: 5
+    text: 'Use the gas surplus to buy a stake in other states'' stability: Qatari Diar''s USD 29.7bn Alam El Roum project in Egypt, the UK pledge of GBP 10bn, funding for Syria''s gas and salaries, aid to Sudan and Ukraine; and use soft power (Al Jazeera, the 2022 World Cup) to give a small state a voice louder than its army.'
+    confidence: B
+    sources:
+    - url: https://gulfnews.com/world/gulf/qatar/qatari-firm-to-invest-29-7-billion-in-egypt-coastal-development-2-1.500336491
+      title: Qatari firm to invest $29.7 billion in Egypt coastal development
+      publisher: Gulf News
+      date: 2025-11
+      tier: 3
+    - url: https://www.gov.uk/government/news/pm-hails-10-billion-qatari-vote-of-confidence-in-the-uk
+      title: PM hails 10 billion Qatari vote of confidence in the UK
+      publisher: UK Government (GOV.UK)
+      date: 2022-05
+      tier: 1
+    - url: https://cdn.naharnet.com/stories/en/311628-qatar-to-send-natural-gas-to-syria-to-help-address-severe-electricity-shortages
+      title: Qatar to send natural gas to Syria to help address severe electricity shortages
+      publisher: Naharnet (AP)
+      date: 2025-03
+      tier: 3
+    - url: https://www.reuters.com/world/middle-east/qatari-financing-syrian-salaries-gets-us-go-ahead-sources-say-2025-05-07/
+      title: Qatari financing of Syrian salaries gets US go-ahead, sources say
+      publisher: Reuters
+      date: '2025-05-07'
+      tier: 3
+    - url: https://dohanews.co/qatar-pledges-50-million-in-humanitarian-response-to-sudan/
+      title: Qatar pledges $50 million in humanitarian response to Sudan
+      publisher: Doha News
+      date: 2023-06
+      tier: 3
+    - url: https://www.reuters.com/world/middle-east/qatar-provide-ukraine-with-100-mln-humanitarian-aid-kyiv-2023-07-28/
+      title: Qatar to provide Ukraine with $100 mln humanitarian aid - Kyiv
+      publisher: Reuters
+      date: '2023-07-28'
+      tier: 3
+    - url: https://www.newarab.com/news/no-qatar-has-not-spent-220-billion-world-cup-stadiums
+      title: No, Qatar has not spent $220 billion on World Cup stadiums
+      publisher: The New Arab
+      date: '2022-11-04'
+      tier: 3
+  - rank: 6
+    text: 'Keep markets and the customer base: Europe (12-14% of LNG), Asia (about 80% of Qatari LNG goes there; China, South Korea, India, Pakistan), against the US push of its own LNG and the buyers'' hedging after the Hormuz closure. US LNG was about 62% of Italy''s LNG mix in H1 2026.'
+    confidence: B
+    sources:
+    - url: https://www.thenationalnews.com/business/energy/2026/04/09/months-expected-until-qatars-ras-laffan-lng-site-resumes-full-operations/
+      title: Qatar's Ras Laffan LNG site may not be fully back online for months
+      publisher: The National
+      date: '2026-04-09'
+      tier: 3
+    - url: https://www.agbi.com/oil-and-gas/2025/10/qatar-says-eu-law-may-stop-lng-supply-to-europe/
+      title: Qatar says EU law may stop LNG supply to Europe
+      publisher: AGBI (FT interview)
+      date: 2025-10
+      tier: 3
+    - url: https://fintech.global/2026/08/13/prometeia-data-shows-italys-gas-risk-hasnt-gone-away/
+      title: Prometeia data shows Italy's gas risk hasn't gone away
+      publisher: Fintech Global (Prometeia data)
+      date: '2026-08-13'
+      tier: 3
+    - url: https://www.intellinews.com/italy-s-edison-expects-two-thirds-of-lng-supply-from-qatar-to-be-delivered-shortly-after-any-peace-deal-441981/
+      title: Italy's Edison expects two-thirds of LNG supply from Qatar to be delivered shortly after any peace deal
+      publisher: bne IntelliNews
+      date: '2026'
+      tier: 3
+  means:
+  - domain: diplomatic
+    text: 'Mediation as statecraft: the hosting of Hamas''s political office, the Taliban''s office, the Doha process for DRC-M23, the Moscow-embassy channel for Ukrainian children, the Doha venue for Pakistan-Taliban and Iran-US contacts; quick convening of Arab and Islamic summits after attacks (15 Sep 2025). The mediation produces a seat at every table but also exposure.'
+    confidence: A
+    sources:
+    - url: https://www.csmonitor.com/World/Middle-East/2026/0518/qatar-diplomacy-mediation-iran-war-lng
+      title: 'Tested by Iran war, Qatar is still faithful to its core mission: Mediation'
+      publisher: The Christian Science Monitor
+      date: '2026-05-18'
+      tier: 3
+    - url: https://www.qatar-tribune.com/article/199041/front/us-qatar-egypt-turkiye-sign-historic-gaza-deal
+      title: US, Qatar, Egypt, Turkiye sign historic Gaza deal
+      publisher: Qatar Tribune
+      date: '2025-10-14'
+      tier: 3
+    - url: https://www.newarab.com/news/pakistan-afghanistan-agree-immediate-ceasefire-qatar-talks?amp=1
+      title: Pakistan, Afghanistan agree to immediate ceasefire in Qatar talks
+      publisher: The New Arab
+      date: '2025-10-19'
+      tier: 3
+    - url: https://ewn.co.za/2025/11/15/m23-dr-congo-ink-fresh-roadmap-to-peace-in-doha
+      title: M23, DR Congo ink fresh roadmap to peace in Doha
+      publisher: Eyewitness News (AFP)
+      date: '2025-11-15'
+      tier: 3
+    - url: https://www.themoscowtimes.com/2026/07/22/moscow-returns-8-ukrainian-children-with-qatari-mediation
+      title: Moscow returns 8 Ukrainian children with Qatari mediation
+      publisher: The Moscow Times
+      date: '2026-07-22'
+      tier: 3
+    - url: https://gulfnews.com/world/gulf/qatar/qatar-hosts-arab-islamic-summit-after-israeli-strike-on-hamas-leaders-in-doha-1.500268766
+      title: Qatar hosts Arab-Islamic summit after Israeli strike on Hamas leaders in Doha
+      publisher: Gulf News
+      date: '2025-09-15'
+      tier: 3
+    - url: https://www.shafaq.com/en/World/Hamas-reassures-no-plans-to-close-our-headquarters-in-Qatar
+      title: 'Hamas reassures: no plans to close our headquarters in Qatar'
+      publisher: Shafaq News
+      date: '2024-04-29'
+      tier: 3
+  - domain: diplomatic
+    text: 'A security tie portfolio rather than a single alliance: the US (EO 14353, MNNA, Al Udeid), Turkey (2014 agreement, base, annual Supreme Strategic Committee), Pakistan and Ukraine (defence cooperation signed March 2026), and a push for a stronger GCC.'
+    confidence: B
+    sources:
+    - url: https://www.whitehouse.gov/presidential-actions/2025/09/assuring-the-security-of-the-state-of-qatar
+      title: Executive Order 14353 - Assuring the Security of the State of Qatar
+      publisher: The White House
+      date: '2025-09-29'
+      tier: 1
+    - url: https://aa.com.tr/en/middle-east/turkiye-qatar-sign-joint-declaration-agreements-on-defense-trade-strategic-cooperation/3723687
+      title: Turkiye, Qatar sign joint declaration, agreements on defense, trade, strategic cooperation
+      publisher: Anadolu Agency (state agency, official statement)
+      date: 2025-10
+      tier: 3
+    - url: https://www.csmonitor.com/World/Middle-East/2026/0518/qatar-diplomacy-mediation-iran-war-lng
+      title: 'Tested by Iran war, Qatar is still faithful to its core mission: Mediation'
+      publisher: The Christian Science Monitor
+      date: '2026-05-18'
+      tier: 3
+    - url: https://www.everycrsreport.com/files/2026-06-03_R48971_0ef11e7717f94482f81c35cdf07bad07f0ea04f8.html
+      title: 'The Arab Gulf States, the Iran Conflict, and U.S. Relations: In Brief (CRS R48971)'
+      publisher: Congressional Research Service
+      date: '2026-06-03'
+      tier: 1
+    - url: https://www.euronews.com/2026/09/08/qatar-and-uae-say-gulf-cannot-rely-on-us-alone-for-regions-security
+      title: Qatar and UAE say Gulf cannot rely on US alone for region's security
+      publisher: Euronews
+      date: '2026-09-08'
+      tier: 3
+  - domain: informational
+    text: Al Jazeera, headquartered in Doha, has been an issue in every Gulf quarrel (the 2017 ultimatum demanded its closure), and the foreign ministry's weekly briefings and Qatar News Agency carry the official line on mediation and on the attacks.
+    confidence: B
+    sources:
+    - url: https://www.reuters.com/article/us-gulf-qatar-demands-idUSKBN19E0BB
+      title: 'Arab states issue ultimatum to Qatar: close Jazeera, curb ties with Iran'
+      publisher: Reuters
+      date: '2017-06-23'
+      tier: 3
+    - url: https://qna.org.qa/en/News-Area/News/2026-10/6/foreign-ministry-mediation-efforts-between-washington-and-tehran-continue
+      title: 'Foreign Ministry: mediation efforts between Washington and Tehran continue'
+      publisher: Qatar News Agency (official statement)
+      date: '2026-10-06'
+      tier: 1
+    - url: https://www.khaleejtimes.com/world/gulf/qatar-efforts-ongoing-iran-us-diplomatic-solution
+      title: Mediator Qatar says efforts 'ongoing' for Iran-US diplomatic solution
+      publisher: Khaleej Times
+      date: '2026-08-04'
+      tier: 3
+  - domain: informational
+    text: 'Narrative of the aggrieved sovereign: after the Israeli strike the prime minister called Netanyahu ''a narcissist'' and said he must be brought to justice, and Doha pressed the Arab-Islamic summit to urge a review of Israel''s UN membership; a year on it blames Israel for delays in the Gaza plan.'
+    confidence: B
+    sources:
+    - url: https://www.khaleejtimes.com/world/gulf/qatar-pm-on-israel-strikes-netanyahu
+      title: 'Watch: Qatar PM calls Netanyahu ''narcissist'' after Doha strikes in CNN interview'
+      publisher: Khaleej Times
+      date: 2025-09
+      tier: 3
+    - url: https://gulfnews.com/world/gulf/qatar/qatar-hosts-arab-islamic-summit-after-israeli-strike-on-hamas-leaders-in-doha-1.500268766
+      title: Qatar hosts Arab-Islamic summit after Israeli strike on Hamas leaders in Doha
+      publisher: Gulf News
+      date: '2025-09-15'
+      tier: 3
+    - url: https://app.al-monitor.com/originals/2025/09/arab-islamic-leaders-urge-review-israel-ties-emergency-summit-after-doha-strikes
+      title: Arab, Islamic leaders urge 'review' of Israel ties at emergency summit after Doha strikes
+      publisher: Al-Monitor
+      date: '2025-09-15'
+      tier: 3
+    - url: https://www.omanobserver.om/article/1193975/world/region/qatar-blames-israel-for-delayed-gaza-peace-plan
+      title: Qatar blames Israel for delayed Gaza peace plan
+      publisher: Oman Observer
+      date: '2026-08-04'
+      tier: 3
+  - domain: military
+    text: 'Air defence that works: Qatar''s armed forces intercepted the missiles of 23 Jun 2025 and the second wave of 28 Feb 2026, and shot down two Iranian Su-24 sorties on 2 Mar 2026 (the first Qatari aerial combat kill); it has bought Patriots, APKWS, the Raytheon FS-LIDS counter-drone system and F-15s, and trains pilots at Mountain Home AFB.'
+    confidence: B
+    sources:
+    - url: https://www.aljazeera.com/news/2026/2/28/missile-debris-injures-eight-in-qatar-after-iran-launches-barrage
+      title: Missile debris injures 16 in Qatar after Iran launches barrage
+      publisher: Al Jazeera
+      date: '2026-02-28'
+      tier: 3
+    - url: https://www.semafor.com/article/03/05/2026/qatar-makes-first-aerial-combat-kill
+      title: Qatar makes first aerial combat kill
+      publisher: Semafor
+      date: '2026-03-05'
+      tier: 3
+    - url: https://www.everycrsreport.com/files/2026-06-03_R48971_0ef11e7717f94482f81c35cdf07bad07f0ea04f8.html
+      title: 'The Arab Gulf States, the Iran Conflict, and U.S. Relations: In Brief (CRS R48971)'
+      publisher: Congressional Research Service
+      date: '2026-06-03'
+      tier: 1
+    - url: https://www.overtdefense.com/2025/05/15/united-states-announces-3-billion-in-arms-sales-to-qatar-during-trump-visit
+      title: United States announces $3 billion in arms sales to Qatar during Trump visit
+      publisher: Overt Defense
+      date: '2025-05-15'
+      tier: 3
+    - url: https://www.kivitv.com/news/local-news/in-your-neighborhood/mountain-home/qatari-air-force-facility-coming-to-mountain-home-hegseth-announces
+      title: Qatari Air Force facility coming to Mountain Home, Hegseth announces
+      publisher: KIVI-TV (Boise)
+      date: 2025-10
+      tier: 3
+  - domain: military
+    text: 'Hosting forces it does not command: Al Udeid with about 10,000 US personnel, and a Turkish force at Tariq bin Ziyad.'
+    confidence: B
+    sources:
+    - url: https://www.pbs.org/newshour/world/what-to-know-about-the-u-s-military-base-that-iran-attacked-in-qatar
+      title: What to know about the U.S. military base that Iran attacked in Qatar
+      publisher: PBS NewsHour
+      date: '2025-06-24'
+      tier: 3
+    - url: https://www.newarab.com/news/look-al-udeid-air-base-us-military-site-iran-attacked
+      title: A look at Al Udeid Air Base, the US military site that Iran attacked
+      publisher: The New Arab
+      date: '2025-06-24'
+      tier: 3
+    - url: https://naharnet.com/stories/en/252480-reports-turkey-rejects-unrealistic-demands-to-shut-qatar-base
+      title: 'Reports: Turkey rejects ''unrealistic'' demands to shut Qatar base'
+      publisher: Naharnet
+      date: '2018'
+      tier: 3
+    - url: https://thedefensepost.com/2018/10/30/turkey-cavusoglu-rejects-demands-close-qatar-base/
+      title: Turkey's Cavusoglu rejects demands to close Qatar military base
+      publisher: The Defense Post
+      date: '2018-10-30'
+      tier: 3
+  - domain: economic
+    text: 'LNG contracts as diplomacy: a 27-year, 4 mtpa Sinopec deal (Nov 2022), German and Italian supply, and the threat to divert volumes from the EU over the CSDDD, which worked (the climate-transition-plan duty was dropped in Dec 2025-Feb 2026).'
+    confidence: B
+    sources:
+    - url: https://www.gulf-times.com/article/650396/business/qatarenergy-sinopec-sign-27-year-4-million-tons-per-annum-lng-supply-agreement
+      title: QatarEnergy, Sinopec sign 27-year, 4 million tons per annum LNG supply agreement
+      publisher: Gulf Times
+      date: '2022-11-21'
+      tier: 3
+    - url: https://www.aljazeera.com/news/2022/11/29/qatarenergy-conocophillips-sign-lng-deal-for-germany
+      title: QatarEnergy, ConocoPhillips sign LNG deal for Germany
+      publisher: Al Jazeera
+      date: '2022-11-29'
+      tier: 3
+    - url: https://www.agbi.com/oil-and-gas/2025/10/qatar-says-eu-law-may-stop-lng-supply-to-europe/
+      title: Qatar says EU law may stop LNG supply to Europe
+      publisher: AGBI (FT interview)
+      date: 2025-10
+      tier: 3
+    - url: https://www.business-humanrights.org/en/latest-news/csddd-omnibus/
+      title: CSDDD omnibus (timeline of the Omnibus I outcome)
+      publisher: Business & Human Rights Resource Centre
+      date: 2026-03
+      tier: 2
+  - domain: economic
+    text: 'The sovereign wealth fund and Qatari Diar as strategic investors: Alam El Roum in Egypt (USD 29.7bn), the GBP 10bn UK pledge, USD 38bn of intended burden-sharing at Al Udeid, and the 747 gifted to the US President (first flown as Air Force One in July 2026).'
+    confidence: B
+    sources:
+    - url: https://gulfnews.com/world/gulf/qatar/qatari-firm-to-invest-29-7-billion-in-egypt-coastal-development-2-1.500336491
+      title: Qatari firm to invest $29.7 billion in Egypt coastal development
+      publisher: Gulf News
+      date: 2025-11
+      tier: 3
+    - url: https://www.gov.uk/government/news/pm-hails-10-billion-qatari-vote-of-confidence-in-the-uk
+      title: PM hails 10 billion Qatari vote of confidence in the UK
+      publisher: UK Government (GOV.UK)
+      date: 2022-05
+      tier: 1
+    - url: https://www.overtdefense.com/2025/05/15/united-states-announces-3-billion-in-arms-sales-to-qatar-during-trump-visit
+      title: United States announces $3 billion in arms sales to Qatar during Trump visit
+      publisher: Overt Defense
+      date: '2025-05-15'
+      tier: 3
+    - url: https://www.boisestatepublicradio.org/2026-07-02/trump-takes-first-flight-on-new-air-force-one-gifted-by-the-qatari-government
+      title: Trump takes first flight on new Air Force One gifted by the Qatari government
+      publisher: Boise State Public Radio (NPR affiliate)
+      date: '2026-07-02'
+      tier: 3
+  - domain: economic
+    text: 'Humanitarian and reconstruction money as an entry ticket: gas to Syria through Jordan (2 million m3/day, March 2025), salary financing, USD 100m to Ukraine, USD 50m to Sudan, and the Qatar Fund for Development in the Doha-run processes.'
+    confidence: B
+    sources:
+    - url: https://cdn.naharnet.com/stories/en/311628-qatar-to-send-natural-gas-to-syria-to-help-address-severe-electricity-shortages
+      title: Qatar to send natural gas to Syria to help address severe electricity shortages
+      publisher: Naharnet (AP)
+      date: 2025-03
+      tier: 3
+    - url: https://www.reuters.com/world/middle-east/qatari-financing-syrian-salaries-gets-us-go-ahead-sources-say-2025-05-07/
+      title: Qatari financing of Syrian salaries gets US go-ahead, sources say
+      publisher: Reuters
+      date: '2025-05-07'
+      tier: 3
+    - url: https://www.reuters.com/world/middle-east/qatar-provide-ukraine-with-100-mln-humanitarian-aid-kyiv-2023-07-28/
+      title: Qatar to provide Ukraine with $100 mln humanitarian aid - Kyiv
+      publisher: Reuters
+      date: '2023-07-28'
+      tier: 3
+    - url: https://dohanews.co/qatar-pledges-50-million-in-humanitarian-response-to-sudan/
+      title: Qatar pledges $50 million in humanitarian response to Sudan
+      publisher: Doha News
+      date: 2023-06
+      tier: 3
+  constraints:
+  - text: 'Geography: about 93% of Qatari LNG exits through the Strait of Hormuz, controlled in practice by Iran since the war began on 28 Feb 2026; Qatari tankers cross only with Iranian clearance (two aborted a crossing on 8 Apr for lack of it), force majeure has been extended into October, and an Iranian missile hit a Qatari LNG tanker on 7-8 Jul.'
+    confidence: A
+    sources:
+    - url: https://www.everycrsreport.com/files/2026-06-03_R48971_0ef11e7717f94482f81c35cdf07bad07f0ea04f8.html
+      title: 'The Arab Gulf States, the Iran Conflict, and U.S. Relations: In Brief (CRS R48971)'
+      publisher: Congressional Research Service
+      date: '2026-06-03'
+      tier: 1
+    - url: https://thenationalnews.com/business/energy/2026/09/28/qatar-extends-lng-force-majeure-as-hormuz-disruption-threatens-winter-supply
+      title: Qatar extends LNG force majeure as Hormuz disruption threatens winter supply
+      publisher: The National
+      date: '2026-09-28'
+      tier: 3
+    - url: https://www.thenationalnews.com/news/gulf/2026/07/08/shipping-attacks-put-qatars-role-as-us-iran-mediator-under-strain/
+      title: Shipping attacks put Qatar's role as US-Iran mediator under strain
+      publisher: The National
+      date: '2026-07-08'
+      tier: 3
+    - url: https://www.thenationalnews.com/business/energy/2026/04/09/months-expected-until-qatars-ras-laffan-lng-site-resumes-full-operations/
+      title: Qatar's Ras Laffan LNG site may not be fully back online for months
+      publisher: The National
+      date: '2026-04-09'
+      tier: 3
+  - text: 'Scale and a single export: the state''s wealth is gas, and the Iran war cut it: the World Bank projects GDP to contract 5.7% in 2026 (CSM, May), with ammonia, helium and urea output also damaged, while 66 missiles on 28 Feb alone showed how quickly the defence budget is tested.'
+    confidence: B
+    sources:
+    - url: https://www.aljazeera.com/news/2026/2/28/missile-debris-injures-eight-in-qatar-after-iran-launches-barrage
+      title: Missile debris injures 16 in Qatar after Iran launches barrage
+      publisher: Al Jazeera
+      date: '2026-02-28'
+      tier: 3
+    - url: https://www.csmonitor.com/World/Middle-East/2026/0518/qatar-diplomacy-mediation-iran-war-lng
+      title: 'Tested by Iran war, Qatar is still faithful to its core mission: Mediation'
+      publisher: The Christian Science Monitor
+      date: '2026-05-18'
+      tier: 3
+  - text: 'The shield is not a treaty: EO 14353 is an executive order with no enforceable rights, subject to appropriations and to the President''s discretion, issued after the US failed to stop the strike of 9 Sep 2025; Doha itself says the alliance is ''important but insufficient''.'
+    confidence: A
+    sources:
+    - url: https://www.whitehouse.gov/presidential-actions/2025/09/assuring-the-security-of-the-state-of-qatar
+      title: Executive Order 14353 - Assuring the Security of the State of Qatar
+      publisher: The White House
+      date: '2025-09-29'
+      tier: 1
+    - url: https://www.aljazeera.com/amp/news/2025/10/1/new-trump-executive-order-guarantees-qatar-security-after-israeli-attack
+      title: New Trump executive order guarantees Qatar security after Israeli attack
+      publisher: Al Jazeera
+      date: '2025-10-01'
+      tier: 3
+    - url: https://www.euronews.com/2026/09/08/qatar-and-uae-say-gulf-cannot-rely-on-us-alone-for-regions-security
+      title: Qatar and UAE say Gulf cannot rely on US alone for region's security
+      publisher: Euronews
+      date: '2026-09-08'
+      tier: 3
+  - text: 'Iran is next door and shares the North Field: the war made it a target and a necessary interlocutor at once; Hormuz access and the field mean Doha cannot sever the tie, which limits how hard it can respond (attaches expelled, no break of relations).'
+    confidence: B
+    sources:
+    - url: https://www.reuters.com/article/us-northfield-qatar-idUSTRE66P1VV20100726
+      title: 'Factbox: Qatar, Iran share world''s biggest gas field'
+      publisher: Reuters
+      date: '2010-07-26'
+      tier: 3
+    - url: https://en.annahar.com/en/region/gcc/289439/qatar-expels-iranian-diplomats-following-missile-attacks-on-ras-laffan
+      title: Qatar expels Iranian diplomats following missile attacks on Ras Laffan
+      publisher: An-Nahar
+      date: '2026-03-19'
+      tier: 3
+    - url: https://aljazeera.com/news/2026/8/27/iran-qatar-hold-hormuz-talks-amid-intl-hopes-dialogue-with-us-will-resume
+      title: Iran, Qatar hold Hormuz talks amid international hopes dialogue with US will resume
+      publisher: Al Jazeera
+      date: '2026-08-27'
+      tier: 3
+    - url: https://www.thenationalnews.com/news/gulf/2026/07/08/shipping-attacks-put-qatars-role-as-us-iran-mediator-under-strain/
+      title: Shipping attacks put Qatar's role as US-Iran mediator under strain
+      publisher: The National
+      date: '2026-07-08'
+      tier: 3
+  - text: 'Reputation: the mediator-bias charge (Hamas, the Taliban) and Qatargate keep Washington, Brussels and Tel Aviv suspicious; a September 2026 FDD report argues that the costs of Qatari mediation can exceed the gains, and Israelis distrust Qatari and Turkish involvement in Gaza.'
+    confidence: B
+    sources:
+    - url: https://www.brusselstimes.com/brussels/1743245/belgian-court-to-investigate-legality-of-qatargate-probe-in-december-tbbt/
+      title: Belgian court to investigate legality of Qatargate probe in December
+      publisher: The Brussels Times
+      date: '2026'
+      tier: 3
+    - url: https://cyprus-mail.com/2026/09/17/greek-parliament-lifts-immunity-of-ex-commissioner-amid-qatargate-probe
+      title: Greek parliament lifts immunity of ex-commissioner amid Qatargate probe
+      publisher: Cyprus Mail
+      date: '2026-09-17'
+      tier: 3
+    - url: https://www.jns.org/analysis/gaza-board-of-peace-influenced-by-qatar-and-turkey
+      title: Gaza Board of Peace 'influenced by Qatar and Turkey'
+      publisher: JNS
+      date: '2026'
+      tier: 3
+    - url: https://www.fdd.org/analysis/2026/09/22/qatars-mediation-record-successes-failures-and-costs/
+      title: 'Qatar''s Mediation Record: Successes, Failures, and Costs'
+      publisher: Foundation for Defense of Democracies
+      date: '2026-09-22'
+      tier: 2
+  - text: 'A divided GCC: Saudi Arabia and the UAE are rival poles, the UAE is aligned with Israel in a way Qatar is not, and the council''s wartime response differed by state (CRS); Qatar cannot count on a collective Gulf response.'
+    confidence: B
+    sources:
+    - url: https://www.everycrsreport.com/files/2026-06-03_R48971_0ef11e7717f94482f81c35cdf07bad07f0ea04f8.html
+      title: 'The Arab Gulf States, the Iran Conflict, and U.S. Relations: In Brief (CRS R48971)'
+      publisher: Congressional Research Service
+      date: '2026-06-03'
+      tier: 1
+    - url: https://www.euronews.com/2026/09/08/qatar-and-uae-say-gulf-cannot-rely-on-us-alone-for-regions-security
+      title: Qatar and UAE say Gulf cannot rely on US alone for region's security
+      publisher: Euronews
+      date: '2026-09-08'
+      tier: 3
+    - url: https://www.euronews.com/2026/07/12/iran-launches-attacks-on-qatar-uae-bahrain-kuwait-following-us-strikes
+      title: Iran launches major attacks on Gulf states as chaos reigns over Hormuz
+      publisher: Euronews
+      date: '2026-07-12'
+      tier: 3
+  paradoxes:
+  - text: 'The mediation that was meant to protect the state exposed it: hosting Hamas and negotiating hostages for Washington''s sake made Doha a place where Hamas leaders could be struck, and the 9 Sep 2025 strike came while the Hamas delegation was discussing a US proposal in Doha. The price of neutrality was a bombing by a US ally.'
+    confidence: B
+    sources:
+    - url: https://www.newarab.com/news/israeli-military-claims-strike-hamas-leaders-qatar
+      title: Israeli military claims strike on Hamas leaders in Qatar as explosions rock Doha
+      publisher: The New Arab
+      date: '2025-09-09'
+      tier: 3
+    - url: https://www.aljazeera.com/news/2025/9/10/netanyahu-vows-to-target-opponents-abroad-after-strike-in-qatar
+      title: Netanyahu pledges to target opponents abroad after strike in Qatar
+      publisher: Al Jazeera
+      date: '2025-09-10'
+      tier: 3
+    - url: https://www.khaleejtimes.com/world/mena/gaza-war-hamas-leaders-qatar-netanyahu
+      title: 'Getting rid of Hamas chiefs in Qatar removes ''main obstacle'' to Gaza deal: Netanyahu'
+      publisher: Khaleej Times
+      date: 2025-09
+      tier: 3
+    - url: https://www.newarab.com/news/qatar-keep-efforts-broker-gaza-truce-despite-israel-attack
+      title: Qatar's Emir says to keep efforts to broker Gaza ceasefire despite Israel attack
+      publisher: The New Arab
+      date: 2025-09
+      tier: 3
+  - text: 'Buying American protection made Qatar a target of America''s enemies: Al Udeid is why Iran fired at Qatar in June 2025 (and Iran says its attacks from 28 Feb 2026 target US interests, which Doha denies), while the same base did not stop an Israeli attack, so the shield attracted fire without preventing it.'
+    confidence: B
+    sources:
+    - url: https://www.pbs.org/newshour/world/what-to-know-about-the-u-s-military-base-that-iran-attacked-in-qatar
+      title: What to know about the U.S. military base that Iran attacked in Qatar
+      publisher: PBS NewsHour
+      date: '2025-06-24'
+      tier: 3
+    - url: https://www.aljazeera.com/news/2026/2/28/missile-debris-injures-eight-in-qatar-after-iran-launches-barrage
+      title: Missile debris injures 16 in Qatar after Iran launches barrage
+      publisher: Al Jazeera
+      date: '2026-02-28'
+      tier: 3
+    - url: https://www.everycrsreport.com/files/2026-06-03_R48971_0ef11e7717f94482f81c35cdf07bad07f0ea04f8.html
+      title: 'The Arab Gulf States, the Iran Conflict, and U.S. Relations: In Brief (CRS R48971)'
+      publisher: Congressional Research Service
+      date: '2026-06-03'
+      tier: 1
+    - url: https://www.aljazeera.com/news/2025/9/10/netanyahu-vows-to-target-opponents-abroad-after-strike-in-qatar
+      title: Netanyahu pledges to target opponents abroad after strike in Qatar
+      publisher: Al Jazeera
+      date: '2025-09-10'
+      tier: 3
+  - text: 'The insurance with Iran turned into the injury: Qatar cultivated Tehran for decades and shares the world''s largest gas field with it, yet Iran struck Ras Laffan and a Qatari tanker, so the neighbour Doha courted took out 17% of its LNG capacity for years.'
+    confidence: B
+    sources:
+    - url: https://www.reuters.com/article/us-northfield-qatar-idUSTRE66P1VV20100726
+      title: 'Factbox: Qatar, Iran share world''s biggest gas field'
+      publisher: Reuters
+      date: '2010-07-26'
+      tier: 3
+    - url: https://www.aljazeera.com/news/2026/3/18/qatar-says-iran-missile-attack-sparks-fire-causes-damage-at-gas-facility
+      title: Qatar says Iran attack caused significant damage at Ras Laffan gas facility
+      publisher: Al Jazeera
+      date: '2026-03-18'
+      tier: 3
+    - url: https://www.spglobal.com/energy/en/news-research/latest-news/electric-power/031926-qatarenergy-expects-3-5-years-to-repair-lng-facilities-after-strikes
+      title: QatarEnergy expects 3-5 years to repair LNG facilities after strikes
+      publisher: S&P Global Commodity Insights
+      date: '2026-03-19'
+      tier: 3
+    - url: https://www.thenationalnews.com/news/gulf/2026/07/08/shipping-attacks-put-qatars-role-as-us-iran-mediator-under-strain/
+      title: Shipping attacks put Qatar's role as US-Iran mediator under strain
+      publisher: The National
+      date: '2026-07-08'
+      tier: 3
+  - text: 'Using the supply threat worked and hurt: the CSDDD threat (May and Oct 2025) won the removal of the climate-transition-plan duty, but the Hormuz closure then did what no regulation could, forcing European and Asian buyers toward US LNG (US LNG reached about 62% of Italy''s LNG mix in H1 2026) and exposing the single-exit weakness the threat had hidden.'
+    confidence: B
+    sources:
+    - url: https://www.agbi.com/oil-and-gas/2025/10/qatar-says-eu-law-may-stop-lng-supply-to-europe/
+      title: Qatar says EU law may stop LNG supply to Europe
+      publisher: AGBI (FT interview)
+      date: 2025-10
+      tier: 3
+    - url: https://www.business-humanrights.org/en/latest-news/csddd-omnibus/
+      title: CSDDD omnibus (timeline of the Omnibus I outcome)
+      publisher: Business & Human Rights Resource Centre
+      date: 2026-03
+      tier: 2
+    - url: https://fintech.global/2026/08/13/prometeia-data-shows-italys-gas-risk-hasnt-gone-away/
+      title: Prometeia data shows Italy's gas risk hasn't gone away
+      publisher: Fintech Global (Prometeia data)
+      date: '2026-08-13'
+      tier: 3
+    - url: https://www.intellinews.com/italy-s-edison-expects-two-thirds-of-lng-supply-from-qatar-to-be-delivered-shortly-after-any-peace-deal-441981/
+      title: Italy's Edison expects two-thirds of LNG supply from Qatar to be delivered shortly after any peace deal
+      publisher: bne IntelliNews
+      date: '2026'
+      tier: 3
+  - text: 'Influence bought with money produced a scandal: the lobbying and investment that gave Qatar standing in Brussels (Qatargate, Dec 2022) became an investigation that is still active in 2026 and weakens its case in the EU even as the EU opens partnership talks.'
+    confidence: B
+    sources:
+    - url: https://www.brusselstimes.com/brussels/1743245/belgian-court-to-investigate-legality-of-qatargate-probe-in-december-tbbt/
+      title: Belgian court to investigate legality of Qatargate probe in December
+      publisher: The Brussels Times
+      date: '2026'
+      tier: 3
+    - url: https://cyprus-mail.com/2026/09/17/greek-parliament-lifts-immunity-of-ex-commissioner-amid-qatargate-probe
+      title: Greek parliament lifts immunity of ex-commissioner amid Qatargate probe
+      publisher: Cyprus Mail
+      date: '2026-09-17'
+      tier: 3
+    - url: https://euronews.com/my-europe/2026/04/16/gulf-chief-calls-for-upgrade-in-diplomatic-relation-with-the-eu-in-aftermath-of-iran-war
+      title: Gulf chief calls for upgrade in diplomatic relations with the EU in aftermath of Iran war
+      publisher: Euronews
+      date: '2026-04-16'
+      tier: 3
+  - text: 'Ties with everyone mean allies of no one: because Doha talks to Hamas, the Taliban, Iran, Russia and Israel, it is trusted by each as a channel and by none as an ally, so when attacked it got an Arab-Islamic summit that urged a ''review'' of Israel''s UN membership but, per the AP, agreed to little action.'
+    confidence: C
+    sources:
+    - url: https://app.al-monitor.com/originals/2025/09/arab-islamic-leaders-urge-review-israel-ties-emergency-summit-after-doha-strikes
+      title: Arab, Islamic leaders urge 'review' of Israel ties at emergency summit after Doha strikes
+      publisher: Al-Monitor
+      date: '2025-09-15'
+      tier: 3
+    - url: https://gulfnews.com/world/gulf/qatar/qatar-hosts-arab-islamic-summit-after-israeli-strike-on-hamas-leaders-in-doha-1.500268766
+      title: Qatar hosts Arab-Islamic summit after Israeli strike on Hamas leaders in Doha
+      publisher: Gulf News
+      date: '2025-09-15'
+      tier: 3
+    - url: https://www.denvergazette.com/2025/09/15/summit-leads-to-little-action-after-israeli-strike-on-hamas-in-doha/
+      title: Summit leads to little action after Israeli strike on Hamas in Doha
+      publisher: Associated Press (via Denver Gazette)
+      date: '2025-09-15'
+      tier: 3
+  reading: |
+    Qatar runs the strategy of a rich micro-state that has no army to match its
+    neighbours and therefore sells services in exchange for protection: gas to the
+    world, mediation to the great powers, money to the weak, and a base to
+    Washington. The strategy worked for thirty years because the bill was paid in
+    influence rather than force; since June 2025 the bill has come due. Israel
+    struck its capital with the United States on notice, Iran fired at it three
+    times and took out a sixth of its LNG capacity, and Hormuz showed that the whole
+    franchise exits through a single strait that the aggressor controls. The reply
+    is a reconstruction of deterrence: a written US guarantee (EO 14353, a
+    presidential order rather than a treaty), a Turkish tie, air defence that has
+    now shot down aircraft, and a vocabulary of Gulf self-sufficiency that Doha
+    shares with Abu Dhabi. Luttwak's pattern is the paradoxical one: each asset that
+    buys security (Al Udeid, Hamas as interlocutor, Iran as neighbour, LNG as
+    leverage) is the one that draws the fire. Two signals that are not rows: Qatar
+    refused in March 2026 to lead US-Iran mediation so that attacking it would not
+    earn Tehran better terms, and returned to the table by August; and Doha is
+    spending its mediation capital on the places where it still has leverage
+    (Gaza, DRC, Ukraine's children, Afghanistan) while the Iranian file belongs to
+    Pakistan. The next test is whether the written guarantee holds and whether
+    Hormuz reopens before buyers decide that Qatar is a risk to be hedged.
