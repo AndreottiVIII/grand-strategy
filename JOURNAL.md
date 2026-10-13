@@ -1,5 +1,16 @@
 # Journal
 
+## 2026-10-13 · Paused at 75 cards; the rest of the world on Friday
+
+Stopped at Davide's request with 75 reviewed cards (Europe, the Middle East, South Asia
+except the Maldives and Central Asia), 15.35M tokens, weekly usage near the ceiling. Resume
+on Friday 2026-10-17 after the weekly reset: Russia part two from data/partial/ (the Fable
+card and 71 KB of stances survive; relations never written), Israel from scratch, then the
+Maldives, Central Asia, East Asia and onward in queue order, six agents at a time. To fix
+first: a SAU->IRN row typed as a treaty (the 2023 Beijing agreement), the thin Bahrain card,
+and the "aid" type question in BACKLOG. Davide's rules: no new launches after the stop;
+interruptions kill the agents, so write, don't reject.
+
 ## 2026-10-13 · Middle East burst, then a stop to put things in order
 
 Morning: Davide asked to use the 5-hour window to the full before its reset, so up to twenty
