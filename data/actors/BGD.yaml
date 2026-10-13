@@ -1,14 +1,190 @@
 id: BGD
 name: Bangladesh
+short: Bangladesh
 type: state
+coords: [90.39, 23.73]
 iso2: bd
 wikipedia: https://en.wikipedia.org/wiki/Bangladesh
-coords:
-- 90.39
-- 23.73
 seat: Dhaka
-regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+regions: ['south-central-asia']
+card: full
+tier: protagonist
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Consolidate the post-uprising order: an elected BNP government with a two-thirds majority (212 of 297 declared seats on 12 Feb 2026, Jamaat's alliance 77, turnout 59.88%), the July Charter reforms approved by referendum the same day (about 68% yes), the Awami League kept out of politics (activities banned under the Anti-Terrorism Act on 10 May 2025, registration suspended 12 May) and Sheikh Hasina brought to justice (death sentence in absentia, 17 Nov 2025)."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/2/13/bangladesh-election-results-2026-who-won-who-lost-whats-next", title: "Bangladesh election results 2026: Who won, who lost, what's next?", publisher: "Al Jazeera", date: 2026-02-13, tier: 3}
+        - {url: "https://www.dhakatribune.com/bangladesh/election/403268/yes-wins-in-referendum-on-july-charter", title: "Yes wins in referendum on July Charter", publisher: "Dhaka Tribune", date: 2026-02, tier: 3}
+        - {url: "https://www.theweek.in/wire-updates/international/2025/05/13/fgn86-bangla-ld-awami-ban.html", title: "Bangladesh officially bans Hasina-led Awami League under revised anti-terror law", publisher: "The Week / PTI", date: 2025-05-13, tier: 3}
+        - {url: "https://www.dtnext.in/news/world/bangladeshs-interim-government-urges-india-to-extradite-sheikh-hasina-her-aide-853474", title: "Bangladesh's interim government urges India to extradite Sheikh Hasina, her aide", publisher: "DT Next", date: 2025-11-17, tier: 3}
+    - rank: 2
+      text: "Keep the garment-export economy alive through graduation from least-developed-country status on 24 Nov 2026: EU duty-free access holds to 2029 and then depends on GSP+ or a free-trade agreement; the US tariff was cut to 19% in the 9 Feb 2026 reciprocal deal; an IMF programme (about USD 3.64bn disbursed) is being replaced by a new USD 4.5-5bn package."
+      confidence: B
+      sources:
+        - {url: "https://www.tbsnews.net/economy/dhaka-urges-eu-relax-new-gsp-criteria-984746", title: "Dhaka urges EU to relax new GSP criteria", publisher: "The Business Standard", date: 2025, tier: 3}
+        - {url: "https://www.thedailystar.net/top-news/news/ldc-graduation-economic-cliff-3978086", title: "LDC graduation: economic cliff", publisher: "The Daily Star", date: 2025, tier: 3}
+        - {url: "https://wionews.com/world/bangladesh-secures-trade-deal-with-us-tariff-reduced-to-19-with-some-key-exemptions-1770687911243", title: "Bangladesh secures trade deal with US, tariff reduced to 19% with some key exemptions", publisher: "WION", date: 2026-02-09, tier: 3}
+        - {url: "https://www.dhakatribune.com/business/413341/bangladesh-seeks-new-5bn-imf-credit-amid-rising", title: "Bangladesh seeks new $5bn IMF credit amid rising debt pressure", publisher: "Dhaka Tribune", date: 2026-06-22, tier: 3}
+    - rank: 3
+      text: "Reset the relationship with India on terms of equality - the Ganges Water Treaty (expires December 2026), the unsigned Teesta accord, the end of border killings, the lifting of the May-June 2025 Indian import restrictions, visas, Hasina's extradition - without losing Indian electricity, diesel, fertiliser and transit on which the economy runs. Dhaka's line is 'Bangladesh First', based on sovereign equality."
+      confidence: B
+      sources:
+        - {url: "https://aljazeera.com/features/2026/8/23/pm-tarique-rahmans-trip-stalled-what-it-means-for-bangladesh-india-ties", title: "PM Tarique Rahman's trip stalled: what it means for Bangladesh-India ties", publisher: "Al Jazeera", date: 2026-08-23, tier: 3}
+        - {url: "https://asianews.network/dhaka-delhi-talk-supplies-of-diesel-and-fertiliser/", title: "Dhaka, Delhi talk supplies of diesel and fertiliser", publisher: "Asia News Network", date: 2026-04, tier: 3}
+        - {url: "https://www.worldpoliticsreview.com/?p=411387", title: "Fresh Off a Big Election Win, Bangladesh's Rahman Aims for a Foreign Policy Reset", publisher: "World Politics Review", date: 2026-02-17, tier: 3}
+    - rank: 4
+      text: "Diversify patrons so that no single power can set the terms: Chinese finance and arms (Teesta, Mongla, Anwara, J-10CE), a Pakistani opening, Turkish defence industry, Japanese ports, American market access, Gulf and Malaysian labour markets. The post-2024 reading of the Hasina years is that India held 'a blank cheque' in Dhaka; the aim is to end that without handing it to Beijing."
+      confidence: B
+      sources:
+        - {url: "https://asiatimes.com/2026/06/everything-bangladeshs-rahman-hopes-to-get-from-china/", title: "Everything Bangladesh's Rahman hopes to get from China", publisher: "Asia Times", date: 2026-06-20, tier: 3}
+        - {url: "https://aljazeera.com/features/2026/8/23/pm-tarique-rahmans-trip-stalled-what-it-means-for-bangladesh-india-ties", title: "PM Tarique Rahman's trip stalled: what it means for Bangladesh-India ties", publisher: "Al Jazeera", date: 2026-08-23, tier: 3}
+        - {url: "https://www.arabnews.com/node/2629566/world", title: "Bangladesh takes 'balanced approach' with Pakistan as talks of defense deal emerge", publisher: "Arab News", date: 2026-01, tier: 3}
+    - rank: 5
+      text: "Move the Rohingya burden: about 1.2 million refugees in Cox's Bazar (nine years after 2017), repatriation stalled (Myanmar verified 308,797 of 828,824 names in August 2026), the UN appeal shrinking from USD 934m to USD 710.5m. Rahman's five-point plan was put to the UN on 23 Sep 2026: voluntary-return roadmap, end of violence in Rakhine, predictable funding, accountability, regional action against trafficking and scam networks."
+      confidence: B
+      sources:
+        - {url: "https://asianews.network/?p=304250", title: "Can Bangladesh PM Tarique Rahman's plan break the Rohingya repatriation deadlock?", publisher: "Asia News Network", date: 2026-09-29, tier: 3}
+        - {url: "https://www.crisisgroup.org/asia-pacific/south-asia/bangladesh", title: "Bangladesh - country page", publisher: "International Crisis Group", date: 2026, tier: 2}
+    - rank: 6
+      text: "Make the country a connector of the Bay of Bengal rather than a cul-de-sac: BIMSTEC chair since 4 Apr 2025, Matarbari deep-sea port with Japan, Mongla and Chattogram with China, Nepali hydropower (40 MW) and Bhutanese hydro over Indian grid, and labour markets abroad that already send USD 35.6bn a year in remittances."
+      confidence: B
+      sources:
+        - {url: "https://www.tbsnews.net/node/1106521", title: "Bimstec sidelines: Yunus, Modi first-ever in-person meeting set for 4 April", publisher: "The Business Standard", date: 2025-04, tier: 3}
+        - {url: "https://asianews.network/?p=298820", title: "Bangladesh remittances hit $35.59 billion in FY2025-26 as Saudi, UK inflows surge: Minister", publisher: "Asia News Network", date: 2026-07, tier: 3}
+        - {url: "https://www.dhakatribune.com/bangladesh/foreign-affairs/412654/nepal-to-start-exporting-electricity-to-bangladesh", title: "Nepal to start exporting electricity to Bangladesh", publisher: "Dhaka Tribune", date: 2026, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "'Bangladesh First' equidistance: Rahman's first trip abroad was Malaysia (22 Jun 2026) then China (Dalian, Beijing, 23-26 Jun), India's invitation was declined on 10 Sep 2026 when it came through the BIMSTEC chair, and Dhaka holds the Hasina extradition file as its main card with New Delhi. The BIMSTEC chair (to 2027) and the UN Rohingya side event of 23 Sep 2026 give it a regional and a multilateral stage."
+      confidence: B
+      sources:
+        - {url: "https://www.tbsnews.net/foreign-policy/pm-urges-malayasia-open-labour-market-soon-recruit-more-bangladeshi-workers-1469051", title: "PM urges Malaysia to open labour market soon, recruit more Bangladeshi workers", publisher: "The Business Standard", date: 2026-06-22, tier: 3}
+        - {url: "https://thefinancialexpress.com.bd/national/pm-tarique-wont-attend-brics-summit-in-india-state-minister", title: "PM Tarique won't attend BRICS summit in India: state minister", publisher: "The Financial Express (Bangladesh)", date: 2026-09, tier: 3}
+        - {url: "https://asianews.network/?p=304250", title: "Can Bangladesh PM Tarique Rahman's plan break the Rohingya repatriation deadlock?", publisher: "Asia News Network", date: 2026-09-29, tier: 3}
+    - domain: informational
+      text: "Narrative control over the uprising and the trial: the death sentence on Hasina is presented as justice for the July 2024 killings, Indian claims of 2,900 attacks on minorities are called 'inaccurate, exaggerated or motivated' (28 Dec 2025), and border killings by India's BSF are pressed in the press and by rights groups (ASK, Odhikar) as a sovereignty issue."
+      confidence: B
+      sources:
+        - {url: "https://scroll.in/latest/1089632/inaccurate-exaggerated-dhaka-rejects-indias-remarks-on-killing-of-hindu-man-in-bangladesh", title: "'Inaccurate, exaggerated': Dhaka rejects India's remarks on killing of Hindu man in Bangladesh", publisher: "Scroll.in", date: 2025-12-28, tier: 3}
+        - {url: "https://www.thedailystar.net/opinion/editorial/news/bsfs-border-killings-must-be-challenged-3950651", title: "BSF's border killings must be challenged", publisher: "The Daily Star", date: 2025, tier: 3}
+    - domain: military
+      text: "Arms diversification, not alliance: 20 Chinese J-10CE fighters (about USD 2.2bn, committee formed April 2026), JF-17 talks with Pakistan (16-24 aircraft reported, 'rudimentary' per the Bangladeshi military), Turkish T129 helicopters and Hisar-O+ air defence (reported USD 600m), a CETC drone facility in Dhaka (Jan 2026) and the Chinese-built Pekua submarine base - while still running the Bongosagar exercise with the Indian Navy and accepting US help to modernise (ambassador Christensen, Feb 2026)."
+      confidence: C
+      sources:
+        - {url: "https://asiatimes.com/2026/06/everything-bangladeshs-rahman-hopes-to-get-from-china/", title: "Everything Bangladesh's Rahman hopes to get from China", publisher: "Asia Times", date: 2026-06-20, tier: 3}
+        - {url: "https://thedefensepost.com/2026/01/09/pakistan-bangladesh-jf-17", title: "Pakistan eyes JF-17 Thunder fighter jet sales to Bangladesh as ties warm", publisher: "The Defense Post", date: 2026-01-09, tier: 3}
+        - {url: "https://asiatimes.com/2026/01/nothing-for-india-to-fear-in-bangladesh-turkey-arms-deals/", title: "Nothing for India to fear in Bangladesh-Turkey arms deals", publisher: "Asia Times", date: 2026-01, tier: 3}
+        - {url: "https://www.worldpoliticsreview.com/?p=411387", title: "Fresh Off a Big Election Win, Bangladesh's Rahman Aims for a Foreign Policy Reset", publisher: "World Politics Review", date: 2026-02-17, tier: 3}
+    - domain: economic
+      text: "The export machine and the diaspora are the currency: garments earned USD 38.7bn of USD 48.0bn merchandise exports in FY2025-26, remittances reached a record USD 35.59bn (Saudi Arabia 5.85, UK 5.07, UAE 4.58, Malaysia 3.40, US 3.01), and purchase pledges to Washington (wheat, soy, LNG, 14 Boeing aircraft for USD 3.7bn) were traded for tariff relief."
+      confidence: B
+      sources:
+        - {url: "https://unb.com.bd/category/Business/june-exports-surge-by-2591-fy26-earnings-hold-steady-at-48-billion-epb/189694", title: "June exports surge by 25.91% - FY26 earnings hold steady at $48 billion: EPB", publisher: "UNB", date: 2026-07, tier: 3}
+        - {url: "https://asianews.network/?p=298820", title: "Bangladesh remittances hit $35.59 billion in FY2025-26 as Saudi, UK inflows surge: Minister", publisher: "Asia News Network", date: 2026-07, tier: 3}
+        - {url: "https://en.prothomalo.com/amp/story/bangladesh/nuwolumaxm", title: "US-Bangladesh trade deal", publisher: "Prothom Alo", date: 2026-02, tier: 3}
+
+  constraints:
+    - text: "Geography: India surrounds the country on three sides along a 4,096 km border (about 3,271 km fenced), controls the upstream of the Ganges and Teesta and the grid and pipelines through which Bangladesh buys power (India's share in the power mix hit a record 15.6% in 2025; Adani's Godda plant alone supplied 8.2%), diesel, fertiliser and the transit to Nepal and Bhutan. The 22 km Siliguri Corridor makes every Chinese project in the north a security issue for Delhi."
+      confidence: B
+      sources:
+        - {url: "https://finance.yahoo.com/news/indias-adani-boosts-electricity-supply-092904845.html", title: "India's Adani boosts electricity supply to Bangladesh despite souring diplomatic ties", publisher: "Reuters via Yahoo Finance", date: 2026-01, tier: 3}
+        - {url: "https://www.thedailystar.net/opinion/editorial/news/bsfs-border-killings-must-be-challenged-3950651", title: "BSF's border killings must be challenged", publisher: "The Daily Star", date: 2025, tier: 3}
+        - {url: "https://www.worldpoliticsreview.com/?p=411387", title: "Fresh Off a Big Election Win, Bangladesh's Rahman Aims for a Foreign Policy Reset", publisher: "World Politics Review", date: 2026-02-17, tier: 3}
+    - text: "A one-sector economy: garments are more than 80% of merchandise exports (USD 38.7bn in FY26, down 1.64%), about half of them to the EU, a fifth to the US; preferential access ends with LDC graduation on 24 Nov 2026 (EU transition to 2029, then GSP+ with tougher labour and origin rules), and the US tariff rests on an executive deal whose legal base, IEEPA, the Supreme Court annulled on 20 Feb 2026."
+      confidence: B
+      sources:
+        - {url: "https://unb.com.bd/category/Business/june-exports-surge-by-2591-fy26-earnings-hold-steady-at-48-billion-epb/189694", title: "June exports surge by 25.91% - FY26 earnings hold steady at $48 billion: EPB", publisher: "UNB", date: 2026-07, tier: 3}
+        - {url: "https://www.tbsnews.net/analysis/us-supreme-court-ruling-trump-tariffs-eases-uncertainty-bangladesh-rmg-sector-1367331", title: "US Supreme Court ruling on Trump tariffs eases uncertainty for Bangladesh RMG sector", publisher: "The Business Standard", date: 2026-02, tier: 3}
+        - {url: "https://www.ice.it/it/news/notizie-dal-mondo/307441", title: "Bangladesh: LDC graduation and EU access (trade agency note)", publisher: "ICE - Italian Trade Agency", date: 2026-08, tier: 1}
+    - text: "Fragile external accounts: gross reserves about USD 27.3bn (USD 22.2bn on the IMF definition) in June 2026, a cap of USD 8.44bn on new external borrowing in FY2026, the IMF withholding a tranche of about USD 1.3bn in April 2026 over revenue, exchange-rate and banking reforms, and a new three-year package being negotiated."
+      confidence: B
+      sources:
+        - {url: "https://www.dhakatribune.com/business/413341/bangladesh-seeks-new-5bn-imf-credit-amid-rising", title: "Bangladesh seeks new $5bn IMF credit amid rising debt pressure", publisher: "Dhaka Tribune", date: 2026-06-22, tier: 3}
+        - {url: "https://newsonair.gov.in/bangladesh-imf-withholds-loan-tranches-over-reform-failures-fresh-deal-proposed/", title: "Bangladesh: IMF withholds loan tranches over reform failures, fresh deal proposed", publisher: "All India Radio", date: 2026-04-17, tier: 3}
+        - {url: "https://www.imf.org/en/News/Articles/2025/06/23/pr-25213-bangladesh-imf-concludes-combined-3rd-and-4th-reviews-under-the-ecf-eff-and-rsf", title: "IMF concludes combined 3rd and 4th reviews under the ECF/EFF and RSF", publisher: "IMF", date: 2025-06-23, tier: 1}
+    - text: "The Rohingya: 1.2 million refugees who cannot be returned without Myanmar's junta and the Arakan Army, which holds the whole 271 km Myanmar side of the border since December 2024; Min Aung Hlaing ties return to a rollback of international legal cases, and donor money is falling. Dhaka has to refuse a 'humanitarian corridor' (Yunus, June 2025) that would make it party to the Rakhine war."
+      confidence: B
+      sources:
+        - {url: "https://asianews.network/?p=304250", title: "Can Bangladesh PM Tarique Rahman's plan break the Rohingya repatriation deadlock?", publisher: "Asia News Network", date: 2026-09-29, tier: 3}
+        - {url: "https://kathmandupost.com/columns/2025/06/05/rakhine-humanitarian-corridor-controversy", title: "Rakhine humanitarian corridor controversy", publisher: "The Kathmandu Post", date: 2025-06-05, tier: 3}
+        - {url: "https://asianews.network/?p=180129", title: "Tension, fear in Teknaf as Myanmar's Arakan Army claims taking control of border with Bangladesh", publisher: "Asia News Network", date: 2024-12, tier: 3}
+    - text: "Climate: the World Bank projects 13.3 million internal climate migrants and the loss of a third of agricultural GDP by 2050, with cyclone damage near USD 1bn a year; the rivers that bring this water arrive from India, which turns a physical vulnerability into a diplomatic one."
+      confidence: B
+      sources:
+        - {url: "https://en.prothomalo.com/environment/tbfsc61eo1", title: "Bangladesh incurs loss of $1b every year: WB", publisher: "Prothom Alo (World Bank CCDR)", date: 2022-10, tier: 3}
+        - {url: "https://mail.thefinancialexpress.com.bd/economy/bangladesh-could-lose-a-third-of-agricultural-gdp-due-to-climate-effects-by-2050-wb-1667205225", title: "Bangladesh could lose a third of agricultural GDP due to climate effects by 2050: WB", publisher: "The Financial Express (Bangladesh)", date: 2022-10, tier: 3}
+    - text: "Domestic legitimacy: an election without the Awami League (the party of the previous 15 years, banned), a Jamaat-led opposition of 77 seats that favours Pakistan and 'vigilance' toward the BNP, a July Charter whose 48 constitutional amendments not all parties accepted, and an Indian narrative of minority persecution that the government has to answer."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/2/13/bangladesh-election-results-2026-who-won-who-lost-whats-next", title: "Bangladesh election results 2026: Who won, who lost, what's next?", publisher: "Al Jazeera", date: 2026-02-13, tier: 3}
+        - {url: "https://www.worldpoliticsreview.com/?p=411387", title: "Fresh Off a Big Election Win, Bangladesh's Rahman Aims for a Foreign Policy Reset", publisher: "World Politics Review", date: 2026-02-17, tier: 3}
+
+  paradoxes:
+    - text: "The extradition demand is the lever that blocks the reset it is meant to win. Dhaka's central ask of India is Hasina; India answers that the request is 'under examination' (17 Apr, 17 Jul, 12 Aug 2026), the extradition treaty has a political-offence exception, and her virtual press conference of 5 Aug 2026 ('I will return') led Dhaka to stall Rahman's first visit. The Ganges treaty that lapses in December and the Teesta accord wait for that visit."
+      confidence: B
+      sources:
+        - {url: "https://aljazeera.com/features/2026/8/23/pm-tarique-rahmans-trip-stalled-what-it-means-for-bangladesh-india-ties", title: "PM Tarique Rahman's trip stalled: what it means for Bangladesh-India ties", publisher: "Al Jazeera", date: 2026-08-23, tier: 3}
+        - {url: "https://www.dhakatribune.com/bangladesh/foreign-affairs/415397/india-reviewing-dhaka-s-extradition-request-for", title: "India reviewing Dhaka's extradition request for Hasina", publisher: "Dhaka Tribune", date: 2026-07-17, tier: 3}
+        - {url: "https://thefinancialexpress.com.bd/national/indian-envoy-trivedi-says-teesta-ganges-issues-can-be-resolved-through-mutual-understanding", title: "Indian envoy Trivedi says Teesta, Ganges issues can be resolved through mutual understanding", publisher: "The Financial Express (Bangladesh)", date: 2026, tier: 3}
+    - text: "Courting China to gain leverage over India triggers the Indian leverage that hurts most. After Yunus's Beijing visit (27-29 Mar 2025) and his remarks on the north-east, India withdrew transhipment rights (9 Apr 2025), restricted garment and food imports to two seaports (17 May) and barred jute and woven fabric by land (June) - about USD 770m of trade - while Dhaka's Teesta, Mongla and J-10CE files keep the Siliguri fear alive."
+      confidence: B
+      sources:
+        - {url: "https://www.outlookbusiness.com/economy-and-policy/india-bars-bangladesh-jute-fabric-imports-via-land-borders-amid-strained-ties", title: "India bars Bangladesh jute, fabric imports via land borders amid strained ties", publisher: "Outlook Business", date: 2025-06, tier: 3}
+        - {url: "https://www.tribuneindia.com/news/business/india-bans-certain-jute-imports-from-bangladesh-by-land", title: "India bans certain jute imports from Bangladesh by land", publisher: "The Tribune (India)", date: 2025-06, tier: 3}
+        - {url: "https://www.deccanherald.com/amp/story/world%2Fyunus-invites-china-to-take-part-in-river-conservation-project-close-to-indias-chickens-neck-corridor-3468159", title: "Yunus invites China to take part in river conservation project close to India's Chicken's Neck corridor", publisher: "Deccan Herald", date: 2025-03, tier: 3}
+    - text: "The US trade deal buys tariff relief with commitments that collide with the other bet. The 9 Feb 2026 agreement (19% tariff, about USD 3.5bn of farm purchases, USD 15bn of energy over 15 years, 14 Boeing aircraft) limits purchases from countries the US sees as threats and Trump's 18 Feb letter pressed Dhaka for defence accords (GSOMIA, ACSA), while the same government finalises 20 Chinese J-10CE jets; and the 19% rate itself rested on IEEPA, struck down on 20 Feb 2026, so Dhaka paid in advance for a tariff that no longer had a legal base."
+      confidence: B
+      sources:
+        - {url: "https://asiatimes.com/2026/06/everything-bangladeshs-rahman-hopes-to-get-from-china/", title: "Everything Bangladesh's Rahman hopes to get from China", publisher: "Asia Times", date: 2026-06-20, tier: 3}
+        - {url: "https://wionews.com/world/bangladesh-secures-trade-deal-with-us-tariff-reduced-to-19-with-some-key-exemptions-1770687911243", title: "Bangladesh secures trade deal with US, tariff reduced to 19% with some key exemptions", publisher: "WION", date: 2026-02-09, tier: 3}
+        - {url: "https://www.tbsnews.net/analysis/us-supreme-court-ruling-trump-tariffs-eases-uncertainty-bangladesh-rmg-sector-1367331", title: "US Supreme Court ruling on Trump tariffs eases uncertainty for Bangladesh RMG sector", publisher: "The Business Standard", date: 2026-02, tier: 3}
+    - text: "Graduation is a success that removes the privilege behind it. LDC exit on 24 Nov 2026 certifies the economy the garment preferences built, and at the same moment the EU duty-free window shortens to 2029 and the GSP+ replacement demands value addition and labour and human-rights compliance that the interim period's reform record has not yet shown. Dhaka asked for a three-year delay while the exit date still stands."
+      confidence: B
+      sources:
+        - {url: "https://www.thedailystar.net/top-news/news/ldc-graduation-economic-cliff-3978086", title: "LDC graduation: economic cliff", publisher: "The Daily Star", date: 2025, tier: 3}
+        - {url: "https://www.ice.it/it/news/notizie-dal-mondo/307441", title: "Bangladesh: LDC graduation and EU access (trade agency note)", publisher: "ICE - Italian Trade Agency", date: 2026-08, tier: 1}
+    - text: "Engaging the Arakan Army to send the Rohingya home legitimises the force that now holds the border and has been accused of forced recruitment and discrimination against the same people. Dhaka refused a UN 'humanitarian corridor' in 2025 so as not to become party to the Rakhine war, then turned in 2026 to dialogue with both Naypyidaw and the Arakan Army, and the junta answers that return needs security in Rakhine and the end of international cases."
+      confidence: B
+      sources:
+        - {url: "https://www.orfonline.org/expert-speak/repatriation-in-limbo-bangladesh-and-the-future-of-the-rohingya", title: "Repatriation in limbo: Bangladesh and the future of the Rohingya", publisher: "ORF (Indian think tank - Indian view)", date: 2026, tier: 2}
+        - {url: "https://asianews.network/?p=304250", title: "Can Bangladesh PM Tarique Rahman's plan break the Rohingya repatriation deadlock?", publisher: "Asia News Network", date: 2026-09-29, tier: 3}
+        - {url: "https://www.theweek.in/wire-updates/international/2025/05/21/fes28-bangla-myanmar.html", title: "B'desh says no talks on providing 'humanitarian corridor' to Myanmar's rebel-held region", publisher: "The Week / PTI", date: 2025-05-21, tier: 3}
+    - text: "Energy independence that runs through someone else's wires and loans. Rooppur (USD 12.65bn, Russian loan, grid connection targeted end-2026 against earlier forecasts of 2027, repayment pushed back to 2028-29) and imported Nepali hydro (40 MW, through an Indian line, a 20 MW increase held up by India's grid regulator) are meant to reduce dependence on gas and India, but both depend on Moscow's credit and Delhi's transmission."
+      confidence: C
+      sources:
+        - {url: "https://atommedia.online/en/press-releases/aleksey-likhachev-provel-vstrechu-s-premer-ministrom-bangladesh-tarikom-rakhmanom/", title: "Rosatom CEO meets Bangladesh PM Tarique Rahman as Rooppur NPP targets 2026 grid connection (state company, official statement)", publisher: "Rosatom (via Atommedia)", date: 2026, tier: 1}
+        - {url: "https://thefinancialexpress.com.bd/trade/bangladesh-unlikely-to-get-electricity-from-rooppur-power-plant-before-2026", title: "Bangladesh unlikely to get electricity from Rooppur power plant before 2026", publisher: "The Financial Express (Bangladesh)", date: 2025, tier: 3}
+        - {url: "https://asianews.network/?p=280604", title: "Nepal to export 40MW power to Bangladesh", publisher: "Asia News Network", date: 2025, tier: 3}
+
+  reading: |
+    Bangladesh is a state between two giants that, for fifteen years, exported its
+    dependence on one of them and has since 2024 been testing the other. Under
+    Hasina, security, the border, the water and the grid were handed to India in
+    exchange for regime protection - 'a blank cheque', as a Dhaka academic put it -
+    and the cost came due in the uprising of July-August 2024, when the same India
+    that had underwritten the government became the place where it fled. What
+    Dhaka has done since is textbook Luttwak at the level of grand strategy: it
+    converts its single point of leverage, Hasina's person, into a diplomatic
+    claim, and it widens its menu (Beijing for money and fighters, Islamabad for
+    a signal, Ankara and Tokyo for industry, Washington for the market) so that
+    India no longer sets the price. But each widening is paid in the currency India
+    controls - the Ganges in December, the Teesta, diesel, the 4,096 km border,
+    the land ports - and India has shown it will use it (April-June 2025). The
+    BNP government of February 2026 has so far kept both doors ajar: a reset of
+    tone with Delhi, a four-day state visit to Beijing, and a trade deal with
+    Washington that the Supreme Court unmade within eleven days. The year-end
+    tests are concrete and dated: the Ganges Water Treaty lapses in December, LDC
+    graduation takes effect on 24 November, Rooppur is meant to reach the grid, and
+    the first Rahman visit to India (set aside around the BRICS summit in New Delhi
+    in September) has not happened. Two signals that are not rows: Dhaka declined
+    India's BRICS invitation on the ground of how it was extended (through the
+    BIMSTEC chair), and India's high commissioner has said he expects the water
+    and trade questions to move 'once the prime minister visits'. The risk is
+    that a state which wants to be nobody's client ends up as the disputed ground
+    between three clients' views of it - India's fear of a China-Pakistan-
+    Bangladesh convergence at the Siliguri Corridor, China's wish for Mongla and
+    Teesta, America's wish to see Dhaka not buy arms from Beijing.

@@ -1,14 +1,586 @@
 id: PSE
 name: Palestine
+short: Palestine
 type: state
 iso2: ps
 wikipedia: https://en.wikipedia.org/wiki/Palestine
 coords:
 - 35.23
 - 31.78
-seat: East Jerusalem
+seat: East Jerusalem (government in Ramallah)
 regions:
-- world
-card: stub
-tier: minor
+- middle-east
+card: full
+tier: protagonist
 dataset: wikidata
+last_verified: '2026-10-12'
+recognition:
+  note: 157 UN members recognise the State of Palestine in the atlas dataset (Wikipedia list, 23 Sep 2025), after the May 2024 trio (Ireland, Norway, Spain) and the September 2025 wave
+    (UK, Canada, Australia, Portugal, France and others at the UN summit). Israel and the United States do not; Palestine is a non-member observer state of the UN since 2012. This card
+    describes the State of Palestine / PLO / Palestinian Authority under Abbas in Ramallah; Hamas in Gaza is a separate actor (nsa-hamas).
+  source: https://www.cnn.com/2025/09/21/world/palestinian-state-uk-canada-australia-intl
+grand_strategy:
+  objectives:
+  - rank: 1
+    confidence: B
+    text: 'Survive as the PLO/Palestinian Authority in the West Bank: keep salaries paid, the security forces and ministries standing and the claim to be the sole legitimate representative
+      alive while Israel withholds the money, builds settlements and, on the reading of UN and Polish analysts, works to dismantle the PA.'
+    sources:
+    - url: https://unsco.unmissions.org/sites/default/files/2026-08/security_council_briefing_-_11_august_2026_west_bank.pdf
+      title: Security Council briefing on the situation in the occupied West Bank (R. Alakbarov, UN Deputy Special Coordinator)
+      publisher: UN Office of the Special Coordinator for the Middle East Peace Process
+      date: '2026-08-11'
+      tier: 1
+    - url: https://pism.pl/webroot/upload/files/Biuletyn/PISM%20Bulletin%20no%2060%20(2692)%201%20September%202026.pdf
+      title: The risk of escalation in the West Bank (PISM Bulletin no. 60)
+      publisher: Polish Institute of International Affairs (PISM)
+      date: '2026-09-01'
+      tier: 2
+    - url: https://arabcenterdc.org/resource/running-on-empty-the-deepening-fiscal-crisis-of-the-palestinian-authority/
+      title: 'Running on Empty: The Deepening Financial Crisis of the Palestinian Authority (M. Samhouri)'
+      publisher: Arab Center Washington DC
+      date: '2026-02-12'
+      tier: 2
+  - rank: 2
+    confidence: B
+    text: 'Return to Gaza on the PA''s terms: be the authority to which Hamas hands over (one law, one legitimate armed force, ''Gaza is an integral part of our state'') and a seat in
+      the Trump-plan machinery (Board of Peace, technocratic committee, stabilisation force) that so far leaves Palestinians without representation.'
+    sources:
+    - url: https://www.aljazeera.com/news/2026/9/24/israels-policies-threaten-very-existence-of-palestinians-abbas-tells-un
+      title: Israel's policies threaten 'very existence' of Palestinians, Abbas tells UN
+      publisher: Al Jazeera
+      date: '2026-09-24'
+      tier: 3
+    - url: https://www.aljazeera.com/news/2026/9/16/egypts-el-sisi-rejects-displacement-of-palestinians-from-gaza
+      title: Egypt's el-Sisi rejects displacement of Palestinians from Gaza
+      publisher: Al Jazeera
+      date: '2026-09-16'
+      tier: 3
+    - url: https://www.timesofisrael.com/liveblog_entry/pa-welcomes-us-led-statement-asserting-that-trumps-gaza-plan-offers-pathway-to-palestinian-statehood/
+      title: PA welcomes US-led statement asserting that Trump's Gaza plan offers pathway to Palestinian statehood
+      publisher: The Times of Israel
+      date: '2025-11-14'
+      tier: 3
+    - url: https://arabcenterdc.org/resource/hamas-dissolves-its-government-in-gaza-but-the-board-of-peace-remains-the-problem/
+      title: Hamas Dissolves its Government in Gaza, but the Board of Peace Remains the Problem (D. El Kurd)
+      publisher: Arab Center Washington DC
+      date: '2026-07-15'
+      tier: 2
+    - url: https://www.aa.com.tr/en/middle-east/board-of-peace-envoy-says-gaza-governing-body-dissolution-highlights-need-to-finalize-roadmap-talks/3987407
+      title: Board of Peace envoy says Gaza governing body dissolution highlights need to finalize roadmap talks
+      publisher: Anadolu Agency
+      date: '2026-07-06'
+      tier: 3
+  - rank: 3
+    confidence: B
+    text: 'Turn recognition into statehood: the two-state track on the 1967 lines with East Jerusalem as capital, banked in the New York Declaration (142-10-12, 12 Sep 2025), the September
+      2025 recognition wave and the ''pathway to statehood'' language of Resolution 2803, and full UN membership as the horizon.'
+    sources:
+    - url: https://news.un.org/en/story/2025/09/1165835
+      title: General Assembly endorses New York Declaration on two-State solution (142 in favour, 10 against, 12 abstentions)
+      publisher: UN News
+      date: '2025-09-12'
+      tier: 1
+    - url: https://www.cnn.com/2025/09/21/world/palestinian-state-uk-canada-australia-intl
+      title: Britain, Canada and Australia formally recognize a Palestinian state
+      publisher: CNN
+      date: '2025-09-21'
+      tier: 3
+    - url: https://www.timesofisrael.com/liveblog_entry/pa-welcomes-us-led-statement-asserting-that-trumps-gaza-plan-offers-pathway-to-palestinian-statehood/
+      title: PA welcomes US-led statement asserting that Trump's Gaza plan offers pathway to Palestinian statehood
+      publisher: The Times of Israel
+      date: '2025-11-14'
+      tier: 3
+    - url: https://unsco.unmissions.org/sites/default/files/2026-08/security_council_briefing_-_11_august_2026_west_bank.pdf
+      title: Security Council briefing on the situation in the occupied West Bank (R. Alakbarov, UN Deputy Special Coordinator)
+      publisher: UN Office of the Special Coordinator for the Middle East Peace Process
+      date: '2026-08-11'
+      tier: 1
+  - rank: 4
+    confidence: B
+    text: 'Keep the money flowing: unblock the clearance revenues (about two-thirds of PA revenue, some USD 6bn withheld by the PA''s count), keep the correspondent-bank waiver, and
+      mobilise donors - the EU''s EUR 1.6bn 2025-27 programme, the Emergency Coalition of September 2025, Norwegian and Saudi money.'
+    sources:
+    - url: https://arabcenterdc.org/resource/running-on-empty-the-deepening-fiscal-crisis-of-the-palestinian-authority/
+      title: 'Running on Empty: The Deepening Financial Crisis of the Palestinian Authority (M. Samhouri)'
+      publisher: Arab Center Washington DC
+      date: '2026-02-12'
+      tier: 2
+    - url: https://unsco.unmissions.org/sites/default/files/2026-08/security_council_briefing_-_11_august_2026_west_bank.pdf
+      title: Security Council briefing on the situation in the occupied West Bank (R. Alakbarov, UN Deputy Special Coordinator)
+      publisher: UN Office of the Special Coordinator for the Middle East Peace Process
+      date: '2026-08-11'
+      tier: 1
+    - url: https://north-africa-middle-east-gulf.ec.europa.eu/countries/palestine_en
+      title: 'European Union and Palestine (country page: funding, PEGASE, latest statements)'
+      publisher: European Commission (Middle East, North Africa and the Gulf)
+      date: '2026-10-12'
+      tier: 1
+    - url: https://www.aa.com.tr/en/europe/eu-convenes-1st-palestine-donor-group-meeting-vows-support-for-stronger-palestinian-governance/3749588
+      title: EU convenes 1st Palestine Donor Group meeting, vows support for stronger Palestinian governance
+      publisher: Anadolu Agency
+      date: '2025-11-20'
+      tier: 3
+  - rank: 5
+    confidence: B
+    text: 'Manage legitimacy and succession: reform enough to satisfy donors (technocratic cabinet, judicial independence, elections), keep Fatah together under Vice-President Hussein
+      al-Sheikh and keep Hamas and the Dahlan camp from forming an opposition bloc - while postponing the vote (legislative elections moved on 10 Oct 2026 from 28 Nov 2026 to 11 Sep
+      2027).'
+    sources:
+    - url: https://www.aljazeera.com/news/2026/10/10/abbas-postpones-palestinian-legislative-elections-to-september-2027
+      title: Abbas postpones Palestinian legislative elections to September 2027
+      publisher: Al Jazeera
+      date: '2026-10-10'
+      tier: 3
+    - url: https://www.dohainstitute.org/en/PoliticalStudies/Pages/palestinian-elections-background-and-implications.aspx
+      title: 'Palestinian Elections Loom: Drivers, Context and Timing'
+      publisher: Arab Center for Research and Policy Studies (Doha Institute)
+      date: '2026-08-05'
+      tier: 2
+    - url: https://www.aljazeera.com/news/2026/8/25/fatah-dahlan-bloc-hold-reconciliation-talks-ahead-of-palestinian-elections
+      title: Fatah meets Palestinian breakaway faction in effort to head off rivals
+      publisher: Al Jazeera
+      date: '2026-08-25'
+      tier: 3
+    - url: https://geneva-accord.org/wp-content/uploads/2026/08/PSR-findings_-Palestinian-Public-Opinion-August-2026.pdf
+      title: Palestinian Public Opinion Poll No. 97 (fieldwork 5-8 Aug 2026)
+      publisher: Palestinian Center for Policy and Survey Research (copy hosted by the Geneva Initiative)
+      date: '2026-08-12'
+      tier: 2
+  - rank: 6
+    confidence: A
+    text: 'Use law as the weapon of the weak: the ICJ advisory opinion of 19 July 2024 (occupation unlawful), Palestine''s intervention in South Africa v. Israel, the ICC (Palestine
+      a state party since 1 April 2015) and the defence of UNRWA and the refugee file.'
+    sources:
+    - url: https://www.icj-cij.org/node/204176
+      title: Summary of the Advisory Opinion of 19 July 2024 (Legal Consequences of Israel's policies and practices in the Occupied Palestinian Territory)
+      publisher: International Court of Justice
+      date: '2024-07-19'
+      tier: 1
+    - url: https://www.icj-cij.org/case/192
+      title: 'South Africa v. Israel: Application of the Genocide Convention in the Gaza Strip (case page)'
+      publisher: International Court of Justice
+      date: '2026-09-22'
+      tier: 1
+    - url: https://www.icc-cpi.int/palestine
+      title: Situation in the State of Palestine (case page)
+      publisher: International Criminal Court
+      date: '2025-02-26'
+      tier: 1
+  means:
+  - domain: diplomatic
+    confidence: A
+    text: 'Recognition and UN diplomacy: the France-Saudi New York conference and Declaration, the September 2025 wave (157 recognitions), A/RES/81/1 (17 Sep 2026, 152-3-4) letting Abbas
+      speak by video after a second US visa ban, and a standing Arab-Muslim front (Egypt, Jordan, Saudi Arabia, Qatar, Turkey, the UAE) that signed the 14 Nov 2025 statement which the
+      PA welcomed as a pathway to statehood.'
+    sources:
+    - url: https://news.un.org/en/story/2025/09/1165835
+      title: General Assembly endorses New York Declaration on two-State solution (142 in favour, 10 against, 12 abstentions)
+      publisher: UN News
+      date: '2025-09-12'
+      tier: 1
+    - url: https://en.yenisafak.com/world/un-backs-abbas-video-speech-after-us-visa-denial-3723357
+      title: UN backs Abbas video speech after US visa denial
+      publisher: Yeni Safak
+      date: '2026-09-18'
+      tier: 3
+    - url: https://www.cnn.com/2025/09/21/world/palestinian-state-uk-canada-australia-intl
+      title: Britain, Canada and Australia formally recognize a Palestinian state
+      publisher: CNN
+      date: '2025-09-21'
+      tier: 3
+    - url: https://www.timesofisrael.com/liveblog_entry/pa-welcomes-us-led-statement-asserting-that-trumps-gaza-plan-offers-pathway-to-palestinian-statehood/
+      title: PA welcomes US-led statement asserting that Trump's Gaza plan offers pathway to Palestinian statehood
+      publisher: The Times of Israel
+      date: '2025-11-14'
+      tier: 3
+  - domain: diplomatic
+    confidence: A
+    text: 'Lawfare: ICJ advisory opinion (19 Jul 2024), declaration of intervention in South Africa v. Israel (3 Jun 2024), accession to the Rome Statute - the very steps the US State
+      Department cites for its visa bans and Israel for its financial deductions.'
+    sources:
+    - url: https://www.icj-cij.org/node/204176
+      title: Summary of the Advisory Opinion of 19 July 2024 (Legal Consequences of Israel's policies and practices in the Occupied Palestinian Territory)
+      publisher: International Court of Justice
+      date: '2024-07-19'
+      tier: 1
+    - url: https://www.icj-cij.org/case/192
+      title: 'South Africa v. Israel: Application of the Genocide Convention in the Gaza Strip (case page)'
+      publisher: International Court of Justice
+      date: '2026-09-22'
+      tier: 1
+    - url: https://www.icc-cpi.int/palestine
+      title: Situation in the State of Palestine (case page)
+      publisher: International Criminal Court
+      date: '2025-02-26'
+      tier: 1
+    - url: https://www.aljazeera.com/news/2026/9/17/us-extends-visa-ban-on-palestinian-officials-before-un-general-assembly
+      title: US extends visa ban on Palestinian officials before UN General Assembly
+      publisher: Al Jazeera
+      date: '2026-09-17'
+      tier: 3
+  - domain: informational
+    confidence: B
+    text: 'The victim-of-occupation narrative at the UN and in Western capitals (Abbas to the General Assembly on 24 Sep 2026: Israeli policies threaten Palestinians'' ''very existence''),
+      fed by UN data on settler violence and displacement, which Ramallah quotes more than it produces.'
+    sources:
+    - url: https://www.aljazeera.com/news/2026/9/24/israels-policies-threaten-very-existence-of-palestinians-abbas-tells-un
+      title: Israel's policies threaten 'very existence' of Palestinians, Abbas tells UN
+      publisher: Al Jazeera
+      date: '2026-09-24'
+      tier: 3
+    - url: https://unsco.unmissions.org/sites/default/files/2026-08/security_council_briefing_-_11_august_2026_west_bank.pdf
+      title: Security Council briefing on the situation in the occupied West Bank (R. Alakbarov, UN Deputy Special Coordinator)
+      publisher: UN Office of the Special Coordinator for the Middle East Peace Process
+      date: '2026-08-11'
+      tier: 1
+  - domain: military
+    confidence: C
+    text: 'No military instrument in the strategic sense: the PA''s security forces exist inside the Oslo framework, rely on coordination with Israel and on training from the UK (a British
+      support team in Ramallah until Israel ordered it closed in September 2026), the US and Egypt, and cannot intervene against Israeli citizens in Areas A and B; Fatah has also handed
+      over camp weapons to the Lebanese state (2025).'
+    sources:
+    - url: https://www.aljazeera.com/news/2026/9/9/how-has-israel-hit-back-against-sanctions-by-the-uk-others
+      title: How has Israel hit back against sanctions by the UK and others?
+      publisher: Al Jazeera
+      date: '2026-09-09'
+      tier: 3
+    - url: https://pism.pl/webroot/upload/files/Biuletyn/PISM%20Bulletin%20no%2060%20(2692)%201%20September%202026.pdf
+      title: The risk of escalation in the West Bank (PISM Bulletin no. 60)
+      publisher: Polish Institute of International Affairs (PISM)
+      date: '2026-09-01'
+      tier: 2
+    - url: https://www.nbcnews.com/world/lebanon/lebanon-disarmament-palestinian-factions-refugee-camps-rcna226350
+      title: Lebanon says it is beginning disarmament of Palestinian factions in refugee camps
+      publisher: NBC News
+      date: 2025-08
+      tier: 3
+    - url: https://www.newarab.com/news/fatah-hands-over-heavy-weapons-lebanese-army-ain-al-hilweh
+      title: Fatah hands over last heavy weapons to Lebanese army in Ain al-Hilweh
+      publisher: The New Arab
+      date: 2025-12
+      tier: 3
+  - domain: economic
+    confidence: A
+    text: 'Donor mobilisation: the EU''s PEGASE channel (EUR 3.7bn since 2008, more than EUR 88m pledged in 2025), the EUR 1.6bn 2025-27 programme, the Emergency Coalition of 12 donors
+      (26 Sep 2025), the Norway-chaired donor group (NOK 100m in April 2026), Saudi Arabia''s USD 1bn pledge at the Board of Peace (19 Feb 2026); in return it offers a reform calendar.'
+    sources:
+    - url: https://www.aa.com.tr/en/europe/eu-convenes-1st-palestine-donor-group-meeting-vows-support-for-stronger-palestinian-governance/3749588
+      title: EU convenes 1st Palestine Donor Group meeting, vows support for stronger Palestinian governance
+      publisher: Anadolu Agency
+      date: '2025-11-20'
+      tier: 3
+    - url: https://north-africa-middle-east-gulf.ec.europa.eu/countries/palestine_en
+      title: 'European Union and Palestine (country page: funding, PEGASE, latest statements)'
+      publisher: European Commission (Middle East, North Africa and the Gulf)
+      date: '2026-10-12'
+      tier: 1
+    - url: https://arabcenterdc.org/resource/running-on-empty-the-deepening-fiscal-crisis-of-the-palestinian-authority/
+      title: 'Running on Empty: The Deepening Financial Crisis of the Palestinian Authority (M. Samhouri)'
+      publisher: Arab Center Washington DC
+      date: '2026-02-12'
+      tier: 2
+    - url: https://www.regjeringen.no/en/whats-new/norway-provides-nok-100-million-in-budget-support-to-palestine/id3156671/
+      title: Norway provides NOK 100 million in budget support to Palestine
+      publisher: Norwegian Government
+      date: 2026-04
+      tier: 1
+    - url: https://english.alarabiya.net/News/saudi-arabia/2026/02/19/saudi-arabia-pledges-1-billion-to-support-palestinians-during-board-of-peace-meeting
+      title: Saudi Arabia pledges $1 billion to support Palestinians during Board of Peace meeting
+      publisher: Al Arabiya
+      date: '2026-02-19'
+      tier: 3
+  constraints:
+  - confidence: A
+    text: 'Israel holds the money, the borders and the banks: clearance revenues are about two-thirds of PA revenue, transfers have been fully suspended since May 2025 (USD 6bn withheld
+      by the PA''s count, USD 4.5bn by an independent estimate for end-2025), April 2026 saw ILS 590m of ILS 740m deducted for utility debts, Smotrich controls the indemnity waiver for
+      Israeli-Palestinian banking (Israeli correspondent banks planned to stop shekel processing on 1 Sep 2026; the waiver was extended to year-end) and 200,000 work permits were cancelled
+      (about USD 4bn a year, a quarter of GDP). Public debt reached USD 14.6bn (106% of 2024 GDP).'
+    sources:
+    - url: https://arabcenterdc.org/resource/running-on-empty-the-deepening-fiscal-crisis-of-the-palestinian-authority/
+      title: 'Running on Empty: The Deepening Financial Crisis of the Palestinian Authority (M. Samhouri)'
+      publisher: Arab Center Washington DC
+      date: '2026-02-12'
+      tier: 2
+    - url: https://aa.com.tr/en/middle-east/israel-withholds-palestinian-clearance-funds-again-deducts-200-million/3919451
+      title: Israel withholds Palestinian clearance funds again, deducts $200 million
+      publisher: Anadolu Agency
+      date: '2026-04-27'
+      tier: 3
+    - url: https://unsco.unmissions.org/sites/default/files/2026-08/security_council_briefing_-_11_august_2026_west_bank.pdf
+      title: Security Council briefing on the situation in the occupied West Bank (R. Alakbarov, UN Deputy Special Coordinator)
+      publisher: UN Office of the Special Coordinator for the Middle East Peace Process
+      date: '2026-08-11'
+      tier: 1
+    - url: https://pism.pl/webroot/upload/files/Biuletyn/PISM%20Bulletin%20no%2060%20(2692)%201%20September%202026.pdf
+      title: The risk of escalation in the West Bank (PISM Bulletin no. 60)
+      publisher: Polish Institute of International Affairs (PISM)
+      date: '2026-09-01'
+      tier: 2
+  - confidence: A
+    text: 'A fragmented territory it cannot defend: in 2026 to 10 August the UN counts 76 Palestinians killed in the West Bank and about 1,430 settler incidents; 12,360 settlement units
+      advanced, USD 431m for 34 new settlements, the first seizure of Area A land for settlement infrastructure; Gaza is outside its control and about 60-70% of the Strip is held by
+      Israel behind the ''Yellow Line''.'
+    sources:
+    - url: https://unsco.unmissions.org/sites/default/files/2026-08/security_council_briefing_-_11_august_2026_west_bank.pdf
+      title: Security Council briefing on the situation in the occupied West Bank (R. Alakbarov, UN Deputy Special Coordinator)
+      publisher: UN Office of the Special Coordinator for the Middle East Peace Process
+      date: '2026-08-11'
+      tier: 1
+    - url: https://pism.pl/webroot/upload/files/Biuletyn/PISM%20Bulletin%20no%2060%20(2692)%201%20September%202026.pdf
+      title: The risk of escalation in the West Bank (PISM Bulletin no. 60)
+      publisher: Polish Institute of International Affairs (PISM)
+      date: '2026-09-01'
+      tier: 2
+    - url: https://www.aljazeera.com/news/2026/9/29/nothing-is-justifying-this-qatari-pm-slams-atrocities-in-gaza
+      title: '''Nothing is justifying this'': Qatar''s PM slams atrocities in Gaza'
+      publisher: Al Jazeera
+      date: '2026-09-29'
+      tier: 3
+    - url: https://www.aljazeera.com/news/2026/9/16/egypts-el-sisi-rejects-displacement-of-palestinians-from-gaza
+      title: Egypt's el-Sisi rejects displacement of Palestinians from Gaza
+      publisher: Al Jazeera
+      date: '2026-09-16'
+      tier: 3
+  - confidence: B
+    text: 'Washington is hostile and holds the pen: the US denied Abbas and about 80 officials visas in August 2025 and again in September 2026 (citing the failure to reform, unilateral
+      recognition, recourse to international courts and payments to prisoners'' families), the Board of Peace has no Palestinian member, and Resolution 2803 ties the PA''s role to completing
+      reform.'
+    sources:
+    - url: https://www.aljazeera.com/news/2025/8/29/us-denies-visas-for-palestinian-officials-ahead-of-un-assembly
+      title: US denies visas for Palestinian officials ahead of UN assembly
+      publisher: Al Jazeera
+      date: '2025-08-29'
+      tier: 3
+    - url: https://www.aljazeera.com/news/2026/9/17/us-extends-visa-ban-on-palestinian-officials-before-un-general-assembly
+      title: US extends visa ban on Palestinian officials before UN General Assembly
+      publisher: Al Jazeera
+      date: '2026-09-17'
+      tier: 3
+    - url: https://arabcenterdc.org/resource/hamas-dissolves-its-government-in-gaza-but-the-board-of-peace-remains-the-problem/
+      title: Hamas Dissolves its Government in Gaza, but the Board of Peace Remains the Problem (D. El Kurd)
+      publisher: Arab Center Washington DC
+      date: '2026-07-15'
+      tier: 2
+    - url: https://www.dohainstitute.org/en/PoliticalStudies/Pages/palestinian-elections-background-and-implications.aspx
+      title: 'Palestinian Elections Loom: Drivers, Context and Timing'
+      publisher: Arab Center for Research and Policy Studies (Doha Institute)
+      date: '2026-08-05'
+      tier: 2
+  - confidence: B
+    text: 'A legitimacy deficit at home: Abbas, 90, rules by decree since 2009; in the PSR poll of 5-8 Aug 2026, 79% want him to resign, 83% see corruption in PA institutions and 65%
+      call the PA a burden; Marwan Barghouti would beat him 54% to 14%; the vice-president is seen as unpopular and close to Israel.'
+    sources:
+    - url: https://geneva-accord.org/wp-content/uploads/2026/08/PSR-findings_-Palestinian-Public-Opinion-August-2026.pdf
+      title: Palestinian Public Opinion Poll No. 97 (fieldwork 5-8 Aug 2026)
+      publisher: Palestinian Center for Policy and Survey Research (copy hosted by the Geneva Initiative)
+      date: '2026-08-12'
+      tier: 2
+    - url: https://www.aljazeera.com/news/2026/10/10/abbas-postpones-palestinian-legislative-elections-to-september-2027
+      title: Abbas postpones Palestinian legislative elections to September 2027
+      publisher: Al Jazeera
+      date: '2026-10-10'
+      tier: 3
+    - url: https://www.timesofisrael.com/unpopular-on-the-street-abbas-pick-for-potential-successor-may-not-be-heir-apparent/
+      title: Unpopular on the street, Abbas pick for potential successor may not be heir apparent
+      publisher: The Times of Israel
+      date: '2025-05-02'
+      tier: 3
+  - confidence: B
+    text: 'Rivals who can organise against it: Hamas (24% support, still holding the guns in Gaza and refusing disarmament before Israeli withdrawal, as 72% of the public also do) and
+      Mohammed Dahlan''s Democratic Reform bloc (based in the UAE), which the PA fears may join a joint list for the legislative elections.'
+    sources:
+    - url: https://geneva-accord.org/wp-content/uploads/2026/08/PSR-findings_-Palestinian-Public-Opinion-August-2026.pdf
+      title: Palestinian Public Opinion Poll No. 97 (fieldwork 5-8 Aug 2026)
+      publisher: Palestinian Center for Policy and Survey Research (copy hosted by the Geneva Initiative)
+      date: '2026-08-12'
+      tier: 2
+    - url: https://www.aljazeera.com/news/2026/8/25/fatah-dahlan-bloc-hold-reconciliation-talks-ahead-of-palestinian-elections
+      title: Fatah meets Palestinian breakaway faction in effort to head off rivals
+      publisher: Al Jazeera
+      date: '2026-08-25'
+      tier: 3
+    - url: https://www.aljazeera.com/news/2026/8/26/israel-hamas-truce-failure-point-of-no-return-envoy-warns
+      title: Israel-Hamas truce failure 'point of no return', envoy warns
+      publisher: Al Jazeera
+      date: '2026-08-26'
+      tier: 3
+  - confidence: B
+    text: 'Donor fatigue and conditionality: Arab League pledges (USD 100m a month) have not fully materialised, the EU ties EUR 400m of urgent support to reform, and the postponement
+      of the elections threatens the PA''s credibility with the donors that finance it.'
+    sources:
+    - url: https://arabcenterdc.org/resource/running-on-empty-the-deepening-fiscal-crisis-of-the-palestinian-authority/
+      title: 'Running on Empty: The Deepening Financial Crisis of the Palestinian Authority (M. Samhouri)'
+      publisher: Arab Center Washington DC
+      date: '2026-02-12'
+      tier: 2
+    - url: https://www.dohainstitute.org/en/PoliticalStudies/Pages/palestinian-elections-background-and-implications.aspx
+      title: 'Palestinian Elections Loom: Drivers, Context and Timing'
+      publisher: Arab Center for Research and Policy Studies (Doha Institute)
+      date: '2026-08-05'
+      tier: 2
+    - url: https://www.aljazeera.com/news/2026/10/10/abbas-postpones-palestinian-legislative-elections-to-september-2027
+      title: Abbas postpones Palestinian legislative elections to September 2027
+      publisher: Al Jazeera
+      date: '2026-10-10'
+      tier: 3
+  paradoxes:
+  - confidence: B
+    text: Security coordination buys the PA its survival and spends its legitimacy. Coordination with Israel has continued through earlier announced suspensions and is part of what keeps
+      the PA useful to Israel - and it is the charge Hamas uses to call PA forces a 'farce' working for the occupier, while 65% of Palestinians already call the PA a burden. The more
+      it protects the institution, the less the institution is worth to those it governs; and it does not stop Israel's finance minister from strangling it.
+    sources:
+    - url: https://arabcenterdc.org/resource/ending-palestinian-israeli-coordination-is-hard-to-do/
+      title: Ending Palestinian-Israeli Coordination Is Hard to Do (J. Kuttab)
+      publisher: Arab Center Washington DC
+      date: '2020-12-15'
+      tier: 2
+    - url: https://www.alquds.com/en/posts/243954
+      title: Hamas accuses PA security forces of continuing 'farce of security coordination' (Hamas statement)
+      publisher: Al-Quds (Palestinian daily)
+      date: '2026-06-11'
+      tier: 4
+    - url: https://geneva-accord.org/wp-content/uploads/2026/08/PSR-findings_-Palestinian-Public-Opinion-August-2026.pdf
+      title: Palestinian Public Opinion Poll No. 97 (fieldwork 5-8 Aug 2026)
+      publisher: Palestinian Center for Policy and Survey Research (copy hosted by the Geneva Initiative)
+      date: '2026-08-12'
+      tier: 2
+    - url: https://aa.com.tr/en/middle-east/israel-withholds-palestinian-clearance-funds-again-deducts-200-million/3919451
+      title: Israel withholds Palestinian clearance funds again, deducts $200 million
+      publisher: Anadolu Agency
+      date: '2026-04-27'
+      tier: 3
+  - confidence: B
+    text: 'Every diplomatic win is paid for in cash. Recognition by 157 states, the ICJ opinion and the ICC route are met by US visa bans and by Smotrich''s deductions, which his office
+      describes as a protest against the PA''s steps in international institutions: the PA gains standing abroad in exact proportion to the revenue and access it loses at home.'
+    sources:
+    - url: https://aa.com.tr/en/middle-east/israel-withholds-palestinian-clearance-funds-again-deducts-200-million/3919451
+      title: Israel withholds Palestinian clearance funds again, deducts $200 million
+      publisher: Anadolu Agency
+      date: '2026-04-27'
+      tier: 3
+    - url: https://www.aljazeera.com/news/2026/9/17/us-extends-visa-ban-on-palestinian-officials-before-un-general-assembly
+      title: US extends visa ban on Palestinian officials before UN General Assembly
+      publisher: Al Jazeera
+      date: '2026-09-17'
+      tier: 3
+    - url: https://www.icj-cij.org/node/204176
+      title: Summary of the Advisory Opinion of 19 July 2024 (Legal Consequences of Israel's policies and practices in the Occupied Palestinian Territory)
+      publisher: International Court of Justice
+      date: '2024-07-19'
+      tier: 1
+    - url: https://news.un.org/en/story/2025/09/1165835
+      title: General Assembly endorses New York Declaration on two-State solution (142 in favour, 10 against, 12 abstentions)
+      publisher: UN News
+      date: '2025-09-12'
+      tier: 1
+  - confidence: B
+    text: Postponing the vote protects Fatah and weakens the reform case. Abbas told the UN on 24 Sep that legislative elections on 28 Nov were on; on 10 Oct the PLO executive moved
+      them to 11 Sep 2027, citing Israeli restrictions. The reform programme (elections within a year of the war, technocratic cabinet) is the condition on which the EU's EUR 400m and
+      the PA's place in Gaza depend, so the move that shields the leadership from an opposition bloc undermines the only argument the donors accept for keeping it.
+    sources:
+    - url: https://www.aljazeera.com/news/2026/9/24/israels-policies-threaten-very-existence-of-palestinians-abbas-tells-un
+      title: Israel's policies threaten 'very existence' of Palestinians, Abbas tells UN
+      publisher: Al Jazeera
+      date: '2026-09-24'
+      tier: 3
+    - url: https://www.aljazeera.com/news/2026/10/10/abbas-postpones-palestinian-legislative-elections-to-september-2027
+      title: Abbas postpones Palestinian legislative elections to September 2027
+      publisher: Al Jazeera
+      date: '2026-10-10'
+      tier: 3
+    - url: https://www.dohainstitute.org/en/PoliticalStudies/Pages/palestinian-elections-background-and-implications.aspx
+      title: 'Palestinian Elections Loom: Drivers, Context and Timing'
+      publisher: Arab Center for Research and Policy Studies (Doha Institute)
+      date: '2026-08-05'
+      tier: 2
+  - confidence: B
+    text: Endorsing the Trump plan sidelines the endorser. The PA welcomed Resolution 2803 and the US-led statement of 14 Nov 2025 and said it was ready to take 'full responsibilities'
+      in Gaza, yet the Board of Peace and the technocratic committee (15 unelected members, chaired by Ali Shaath, sitting in Cairo) have no PA seat, Israel blocks the committee's entry,
+      and UNRWA, which the PA defends, is told its 'days are over'. Legitimising the structure that replaces it is the price of staying in the picture.
+    sources:
+    - url: https://www.timesofisrael.com/liveblog_entry/pa-welcomes-us-led-statement-asserting-that-trumps-gaza-plan-offers-pathway-to-palestinian-statehood/
+      title: PA welcomes US-led statement asserting that Trump's Gaza plan offers pathway to Palestinian statehood
+      publisher: The Times of Israel
+      date: '2025-11-14'
+      tier: 3
+    - url: https://news.un.org/en/story/2025/11/1166391
+      title: UN Security Council authorizes temporary international force for Gaza
+      publisher: UN News
+      date: '2025-11-17'
+      tier: 1
+    - url: https://arabcenterdc.org/resource/hamas-dissolves-its-government-in-gaza-but-the-board-of-peace-remains-the-problem/
+      title: Hamas Dissolves its Government in Gaza, but the Board of Peace Remains the Problem (D. El Kurd)
+      publisher: Arab Center Washington DC
+      date: '2026-07-15'
+      tier: 2
+    - url: https://www.aa.com.tr/en/middle-east/board-of-peace-envoy-says-gaza-governing-body-dissolution-highlights-need-to-finalize-roadmap-talks/3987407
+      title: Board of Peace envoy says Gaza governing body dissolution highlights need to finalize roadmap talks
+      publisher: Anadolu Agency
+      date: '2026-07-06'
+      tier: 3
+    - url: https://www.aljazeera.com/news/2026/9/26/hamas-slams-board-of-peace-for-refusal-to-work-with-unrwa-in-gaza
+      title: Hamas slams Board of Peace for refusal to work with UNRWA in Gaza
+      publisher: Al Jazeera
+      date: '2026-09-26'
+      tier: 3
+  - confidence: C
+    text: The succession designed for continuity is the one that costs most legitimacy. Naming Hussein al-Sheikh vice-president (26 Apr 2025), a man the street sees as unpopular and
+      close to Israel, and talks with Dahlan to head off an opposition bloc, secure the Fatah machine; they also confirm for the public (Barghouti preferred as successor by 39%, al-Sheikh
+      not among the four names the poll reports) that the PA is a closed circle.
+    sources:
+    - url: https://apnews.com/article/abbas-vice-president-palestinians-dbf76332c0ae895145c51e99345837a6
+      title: Palestinian President Mahmoud Abbas has appointed a new deputy in a major step in succession planning
+      publisher: Associated Press
+      date: '2025-04-26'
+      tier: 3
+    - url: https://www.timesofisrael.com/unpopular-on-the-street-abbas-pick-for-potential-successor-may-not-be-heir-apparent/
+      title: Unpopular on the street, Abbas pick for potential successor may not be heir apparent
+      publisher: The Times of Israel
+      date: '2025-05-02'
+      tier: 3
+    - url: https://geneva-accord.org/wp-content/uploads/2026/08/PSR-findings_-Palestinian-Public-Opinion-August-2026.pdf
+      title: Palestinian Public Opinion Poll No. 97 (fieldwork 5-8 Aug 2026)
+      publisher: Palestinian Center for Policy and Survey Research (copy hosted by the Geneva Initiative)
+      date: '2026-08-12'
+      tier: 2
+    - url: https://www.aljazeera.com/news/2026/8/25/fatah-dahlan-bloc-hold-reconciliation-talks-ahead-of-palestinian-elections
+      title: Fatah meets Palestinian breakaway faction in effort to head off rivals
+      publisher: Al Jazeera
+      date: '2026-08-25'
+      tier: 3
+  - confidence: C
+    text: Fighting Hamas and needing it. The PA wants Hamas out of governance and disarmed (the condition in the New York Declaration and the Trump plan), but its own return to Gaza
+      runs through Hamas's consent (the November 2025 deal on a committee headed by a PA nominee, the July 2026 dissolution of Hamas's Gaza government, the 30 Jul acceptance of the Mladenov
+      roadmap), a process in which the PA is a spectator. The 2024 Beijing Declaration, which promised a unity government, produced nothing.
+    sources:
+    - url: https://www.timesofisrael.com/liveblog_entry/abbass-deputy-we-agreed-with-hamas-that-committee-to-administer-gaza-will-be-headed-by-pa-minister/
+      title: 'Abbas''s deputy: We agreed with Hamas that committee to administer Gaza will be headed by PA minister'
+      publisher: The Times of Israel
+      date: '2025-11-09'
+      tier: 3
+    - url: https://arabcenterdc.org/resource/hamas-dissolves-its-government-in-gaza-but-the-board-of-peace-remains-the-problem/
+      title: Hamas Dissolves its Government in Gaza, but the Board of Peace Remains the Problem (D. El Kurd)
+      publisher: Arab Center Washington DC
+      date: '2026-07-15'
+      tier: 2
+    - url: https://www.aljazeera.com/news/2026/8/26/israel-hamas-truce-failure-point-of-no-return-envoy-warns
+      title: Israel-Hamas truce failure 'point of no return', envoy warns
+      publisher: Al Jazeera
+      date: '2026-08-26'
+      tier: 3
+    - url: https://www.reuters.com/world/hamas-fatah-meet-with-media-china-after-reconciliation-talks-2024-07-23
+      title: China brokers Palestinian unity deal, but doubts persist
+      publisher: Reuters
+      date: '2024-07-23'
+      tier: 3
+  reading: |-
+    The State of Palestine is a state whose government cannot protect its people, finance itself or even hold an election, and it knows it: its grand strategy is the strategy of staying in
+    the picture. Everything Ramallah does is a bet that the Palestinian question will be settled by others and that whoever is still standing, with a flag, a seat at the UN and a legal
+    personality, will be handed what is left. That produces the Luttwak pattern in its sharpest form: the means that keep the Authority alive (coordination with Israel, endorsement of the
+    Trump plan, reform pledges to donors, a managed succession) are the same that drain its credibility with Palestinians, while the means that raise its standing abroad (157 recognitions, the
+    ICJ opinion, the ICC) are punished with the loss of money and travel. In 2025-26 the pressure came from three sides at once: Israel's fiscal strangulation and settlement drive (UN: 'the PA
+    is at the brink of collapse'), a US-designed Gaza order that includes technocrats but not the Authority, and Hamas, which is losing public support (24%) but not its arms. The Western wave of
+    recognition in September 2025 and the settlement-goods bans of 2026 are real, but they give the Authority diplomatic oxygen, not territory or revenue. Two signals that are not rows: Abbas telling
+    the UN on 24 Sep 2026 that elections were on and postponing them sixteen days later, and the US ban that again kept him out of New York. With Israeli elections on 27 Oct 2026, the PA's real
+    question is whether a new government in Jerusalem would unfreeze the clearance revenues or whether the money, not the flag, decides its survival.
