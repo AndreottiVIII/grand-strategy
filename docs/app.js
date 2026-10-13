@@ -632,7 +632,9 @@
   function drawTheatreMap(only) {
     const svg = d3.select("#tmap");
     svg.selectAll("*").remove();
-    const { width, height } = svg.node().getBoundingClientRect();
+    // a fixed drawing frame, so the map does not depend on the layout at the moment it is drawn
+    const width = 1100, height = 520;
+    svg.attr("viewBox", `0 0 ${width} ${height}`).attr("preserveAspectRatio", "xMidYMid meet");
     const proj = d3.geoNaturalEarth1().fitExtent([[6, 6], [width - 6, height - 6]], world);
     const path = d3.geoPath(proj);
     const defs = svg.append("defs");
