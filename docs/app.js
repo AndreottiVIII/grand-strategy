@@ -104,6 +104,7 @@
     else if (kind === "seams") setView("seams");
     else if (kind === "clients") setView("clients");
     else if (kind === "faults") setView("faults");
+    else if (kind === "gatherings") setView("gatherings");
     else if (kind === "about") setView("about");
     else if (kind === "colophon") { setView("about"); const c = document.getElementById("colophon"); if (c) c.scrollIntoView(); return; }
     else { clear(); mapMode = "world"; renderLegend(); setView("map"); }
@@ -125,7 +126,7 @@
   orgSel.onchange = () => { orgSel.value ? showOrg(orgSel.value) : goHome(); };
   issueSel.onchange = () => { issueSel.value ? showIssue(issueSel.value) : goHome(); };
   document.querySelectorAll(".tab").forEach(b => b.onclick = () => b.dataset.view === "dossier" ? showDossier(pov || fullActors[0].id) : (pov ? setPov(pov) : goHome()));
-  const PAGE_HASH = { map: "#/", orgs: "#/organisations", issues: "#/issues", luttwak: "#/luttwak", seams: "#/seams", clients: "#/clients", faults: "#/faults", about: "#/about", colophon: "#/colophon" };
+  const PAGE_HASH = { map: "#/", orgs: "#/organisations", issues: "#/issues", luttwak: "#/luttwak", seams: "#/seams", clients: "#/clients", faults: "#/faults", gatherings: "#/gatherings", about: "#/about", colophon: "#/colophon" };
   document.querySelectorAll("#topnav a").forEach(a => { a.href = PAGE_HASH[a.dataset.page]; a.onclick = ev => { ev.preventDefault(); navigate(PAGE_HASH[a.dataset.page]); }; });
   document.getElementById("home").onclick = ev => { ev.preventDefault(); goHome(); };
   function setView(v, render = true) {
@@ -133,7 +134,7 @@
     document.querySelectorAll(".tab").forEach(b => b.classList.toggle("is-on", b.dataset.view === v));
     document.querySelectorAll("#topnav a").forEach(a => a.classList.toggle("is-on", a.dataset.page === v || (a.dataset.page === "map" && (v === "map" || v === "dossier"))));
     document.querySelectorAll(".view").forEach(s => s.classList.toggle("is-on", s.id === "view-" + v));
-    const isPage = ["orgs", "issues", "luttwak", "seams", "clients", "faults", "about"].includes(v);
+    const isPage = ["orgs", "issues", "luttwak", "seams", "clients", "faults", "gatherings", "about"].includes(v);
     document.querySelector(".side").style.display = isPage ? "none" : "";
     document.querySelector(".frame").classList.toggle("is-page", isPage);
     if (v === "orgs") renderOrgsPage();
@@ -142,6 +143,7 @@
     if (v === "seams") renderSeamsPage();
     if (v === "clients") renderClientsPage();
     if (v === "faults") renderFaultsPage();
+    if (v === "gatherings") renderGatheringsPage();
     if (v === "about") renderAboutPage();
     if (!render) return;
     if (v === "map") drawMap();
@@ -559,6 +561,26 @@
     el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
   }
 
+  // ---------- gatherings: the counter-coalition an actor's weight summons (Luttwak on China), and how far it has formed
+  const GATHERINGS = data.gatherings || [];
+  const CONV = data.convergences || {};
+  const STATE_LINE = { formed: "the counter-coalition has arrived", forming: "the coalition is taking shape", waiting: "summoned by the logic of strategy, not yet signed" };
+  const bar = m => { const n = Math.round(m * 10); return `<span class="bar">${"▮".repeat(n)}${"▯".repeat(10 - n)}</span> ${Math.round(m * 100)}% formed`; };
+  function renderGatheringsPage() {
+    const el = document.getElementById("page-gatherings");
+    el.innerHTML = `<h2>Gatherings</h2><p class="lede">A gathering is the coalition that an actor's weight summons. Luttwak's argument in <i>The Rise of China vs. the Logic of Strategy</i> is that a power which grows or presses provokes, by the logic of strategy alone, the convergence of everyone it threatens, whether or not they speak to each other, and that the great state is the last to see it. The page asks, for every actor with at least three declared rivals, who has gathered against it and how far the gathering has become a coalition.</p>
+      <div class="gatherings">` + GATHERINGS.map(g => {
+        const enl = g.members.filter(m => m.enlisted), wait = g.members.filter(m => !m.enlisted);
+        const who = list => list.map(m => `<a href="#/view/${m.id}">${nameOf(m.id)}</a><i class="${m.grade}">${m.grade === "adversary" ? " adv" : ""}</i>`).join(" · ");
+        return `<div class="gathering ${g.state}"><h3>The gathering against <a href="#/view/${g.x}">${nameOf(g.x)}</a> <span>${g.n} actors</span></h3>
+          <div class="mat">${bar(g.maturity)} <em>${g.state}: ${STATE_LINE[g.state]}</em></div>
+          ${enl.length ? `<div class="roll"><b>enlisted</b> ${who(enl)}</div>` : ""}
+          ${wait.length ? `<div class="roll"><b>waiting</b> ${who(wait)}</div>` : ""}</div>`;
+      }).join("") + `</div>
+      <details class="method"><summary>How gatherings are counted</summary><p>The gathering against X is every state or armed actor that grades X rival or adversary in a hand-written stance of confidence A or B; organisations are left out, since they would double their members. Maturity is the share of pairs within the gathering that are already allied, by a written reading on either side or by a defence treaty in the datasets (NATO, EU, CSTO): unlike seams, the question here is whether the coalition exists, not who feels it. A member is <b>enlisted</b> if it is allied with at least half of the others, <b>waiting</b> otherwise. Formed is 60% or more, forming 25% or more, waiting below. "adv" marks a member that grades X adversary rather than rival. ${GATHERINGS.length} gatherings so far, from ${fullActors.length} cards.</p></details>`;
+    el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
+  }
+
   function renderAboutPage() {
     const el = document.getElementById("page-about");
     if (el.dataset.done) return;
@@ -578,6 +600,8 @@
       <p>A <b>client</b> is an actor that leans on another more than it is leaned on: it grades the other higher than the other grades it. Luttwak's name for the arrangement is the <b>client system</b> of the early Roman empire, described in <i>The Grand Strategy of the Roman Empire</i>: the hegemonic empire of the Julio-Claudians ruled through client kings whose loyalty exceeded Rome's commitment to them, which is why it was cheap. The Clients page measures the <b>lean</b> of every pair the atlas has read from both sides, in steps on the posture scale; the higher-grading side is the client, the other the patron. A client bound by kin or affinity is loyal; one bound by nothing, or by a grievance, is bought, and holds as long as the patron pays. The tepid ally, graded "ally" by its patron and answering "partner", is the costly kind, the one Rome subsidised. In the ledger under the map the lean column shows, for each counterpart, who leans on whom.</p>
       <h3>Faults</h3>
       <p>A <b>fault</b> is a relationship whose deep level contradicts its surface. The frame is Luttwak's structure of <b>levels</b>: in <i>Strategy</i> success at one level can be undone at a higher one, and a strategy works only when its levels are in harmony. Here the levels are two: the bond, which would survive a change of government, and the posture of today. Two contradictions matter. The <b>feud</b> is kin graded rival or adversary, the quarrel inside the family, which Luttwak counts as the most intense of rivalries because closeness multiplies the points of contact. The <b>Byzantine alliance</b> is a grievance graded ally: the maxim from <i>The Grand Strategy of the Byzantine Empire</i> that every enemy is a possible ally, and the alliance that holds over an open wound because it must. The Faults page lists both, says whether each is felt by one side or both, and reads its trend as healing or tearing; on the map a fault shows as a bond band that contradicts the colour of its outline.</p>
+      <h3>Gatherings</h3>
+      <p>A <b>gathering</b> is the coalition that an actor's weight summons. The frame is <i>The Rise of China vs. the Logic of Strategy</i>: a power that grows or presses provokes, by the logic of strategy alone, the convergence of everyone it threatens, whether or not they speak to each other, and the great state, absorbed in its own scale, is the last to see it. Byzantium made a method of the same law from the other side, recruiting the enemies of its enemies. The Gatherings page lists, for every actor with at least three declared rivals, who has gathered against it, and measures how far the gathering has become a coalition: formed when most of its members are already allied with each other, waiting when they are not, which is the coalition the logic is still summoning. In each actor's dossier the <b>convergences</b> are the other side of the same reading: the actors that share one of its rivals and are not yet its allies, the tables it has not sat at.</p>
       <h3>How it is made</h3>
       <p>The data lives in plain files, one per actor, separate from the site, and is versioned in the open: the whole history of every grade is in the repository. Cards are researched and drafted by language-model agents working from a shared brief and the atlas's own rules, then reread by a stronger model that checks objectives, paradoxes and every posture grade against the sources and against the neighbouring cards; the owner samples the result. A new card's grades retroact on the cards already written as provisional reciprocals, flagged as such until written from the other side. Nothing is embedded in the site: it renders the data as it stands on the day of the last build, and the stamp in the top bar says which day that was.</p>
       <h3>What it is not</h3>
@@ -677,6 +701,7 @@
         <h4>Constraints</h4>${claimList(gs.constraints, false)}
         <h4>Paradoxes</h4>${claimList(gs.paradoxes, true)}
         <h4>Reading</h4><p class="reading">${esc(gs.reading)}</p>
+        ${CONV[id] ? `<h3>Convergences</h3><p class="conv">Actors that share one of ${esc(a.short || a.name)}'s rivals and are not its allies, the tables it has not sat at: ${CONV[id].map(c => `<a href="#/view/${c.id}">${nameOf(c.id)}</a> <span class="meta">(against ${c.shared.map(nameOf).join(", ")})</span>`).join(" · ")}.</p>` : ""}
         <h3>The world as ${esc(a.name)} sees it</h3>
         <table class="tbl"><thead><tr><th>Toward</th><th>Posture</th><th>Bond</th><th>Why this reading</th></tr></thead><tbody>
         ${(data.stances[id] || []).map(s => `<tr><td><b>${esc(actors[s.toward].name)}</b><br><span class="meta">since ${esc(s.since)}</span></td>
@@ -686,6 +711,7 @@
         </tbody></table>` + ungaHtml(id) + relationsHtml(id);
     }
     el.innerHTML = html + notesHtml();
+    el.querySelectorAll(".conv a[href^='#/']").forEach(x => x.onclick = ev => { ev.preventDefault(); navigate(x.getAttribute("href")); });
     el.querySelectorAll("sup.fn").forEach(s => {
       const n = notes[+s.dataset.n];
       s.onmousemove = ev => showTip(`<b>Source ${+s.dataset.n + 1} · tier ${n.tier}</b>${esc(n.title)}<br><span class="k">${esc(n.publisher)} · ${esc(n.date)}</span>`, ev);

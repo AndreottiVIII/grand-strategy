@@ -279,3 +279,14 @@ sides is mutual and weighs double. Trend read against the kind: a warming feud i
 cooling Byzantine alliance is tearing. Hand-written A/B stances only. Computed by `tools/build.py`
 (`faults`), shown on the Faults page, in the ledger's fault column and, on the map, as a bond band
 that contradicts the colour of its outline.
+
+## Gatherings (added 2026-10-13)
+
+Luttwak, *The Rise of China vs. the Logic of Strategy*: the counter-coalition an actor's weight
+summons. For every X, the gathering is every state or armed actor that grades X rival or adversary
+(hand-written, A or B; organisations left out, only those who move). **Maturity** = share of pairs
+within the gathering already allied, by a written reading on either side or by treaty (NATO, EU,
+CSTO): here, unlike seams, the question is whether the coalition exists. formed >= 60%, forming
+>= 25%, waiting below; a member is enlisted if allied with at least half of the others. The
+**convergences** of A are the actors that share one of A's rivals and are not A's allies. Computed
+by `tools/build.py` (`gatherings`, `convergences`); Gatherings page and the dossier.

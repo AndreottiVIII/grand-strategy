@@ -468,11 +468,59 @@ def main():
         f["mutual"] = len(seen_pairs[(frozenset((f["a"], f["x"])), f["kind"])]) > 1
     faults.sort(key=lambda f: (f["kind"], not f["mutual"], f["a"], f["x"]))
 
+    # --- gatherings (Luttwak, The Rise of China vs. the Logic of Strategy): the counter-coalition that
+    # an actor's weight summons. For every X, the actors that grade it hostile (hand-written A/B,
+    # organisations left out: only those who move); maturity = share of pairs among them already
+    # allied, by a written reading or by treaty (here the question is whether the coalition exists).
+    treaty = set()
+    for a, v in stances.items():
+        for st in v["stances"]:
+            if st.get("dataset") == "wikidata-memberships" and st["grade"] == "ally":
+                treaty.add((a, st["toward"]))
+    def is_org(i):
+        return (actors.get(i) or {}).get("type") == "org"
+    def allied_any(p, q):
+        return handst.get((p, q), {}).get("grade") in FAULT_ALLIED or handst.get((q, p), {}).get("grade") in FAULT_ALLIED or (p, q) in treaty or (q, p) in treaty
+    hostile_to = {}
+    for (a, x), st in handst.items():
+        if st["grade"] in FAULT_HOSTILE and not is_org(a) and not is_org(x):
+            hostile_to.setdefault(x, {})[a] = st["grade"]
+    gatherings = []
+    for x, members in hostile_to.items():
+        ids = sorted(members)
+        if len(ids) < 3:
+            continue
+        pairs = [(p, q) for i, p in enumerate(ids) for q in ids[i + 1:]]
+        allied_pairs = sum(1 for p, q in pairs if allied_any(p, q))
+        maturity = allied_pairs / len(pairs)
+        rows_ = []
+        for m in ids:
+            n_allied = sum(1 for o in ids if o != m and allied_any(m, o))
+            rows_.append({"id": m, "grade": members[m], "allies_in": n_allied, "enlisted": n_allied >= (len(ids) - 1) / 2})
+        gatherings.append({"x": x, "n": len(ids), "maturity": round(maturity, 2), "allied_pairs": allied_pairs, "pairs": len(pairs),
+                           "state": "formed" if maturity >= 0.6 else "forming" if maturity >= 0.25 else "waiting", "members": rows_})
+    gatherings.sort(key=lambda g: (-g["n"], -g["maturity"], g["x"]))
+    # convergences, per actor: who shares one of its rivals and is not its ally (the table it has not sat at)
+    convergences = {}
+    for a in {k[0] for k in handst}:
+        if is_org(a):
+            continue
+        rivals = {x for (p, x), st in handst.items() if p == a and st["grade"] in FAULT_HOSTILE and not is_org(x)}
+        out_ = {}
+        for x in rivals:
+            for b in hostile_to.get(x, {}):
+                if b != a and not allied_any(a, b):
+                    out_.setdefault(b, []).append(x)
+        if out_:
+            convergences[a] = [{"id": b, "shared": sorted(v)} for b, v in sorted(out_.items(), key=lambda kv: (-len(kv[1]), kv[0]))]
+
     out = {
         "generated": today.isoformat(),
         "seams": seams,
         "clients": clients,
         "faults": faults,
+        "gatherings": gatherings,
+        "convergences": convergences,
         "grades": GRADES,
         "layers": list(TYPES.keys()),
         "actors": list(actors.values()),

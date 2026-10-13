@@ -266,3 +266,20 @@ sup.fn-sep { font-size: 10px; color: var(--ink-3); }
 .legend .fault-hint { color: var(--ink-3); font-size: 11px; text-transform: none; letter-spacing: 0; margin-top: 4px; }
 .patron .who i.feud { color: var(--c-rival); }
 .patron .who i.byzantine { color: var(--c-seam); }
+
+/* ---------- gatherings page */
+.gatherings { display: grid; grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); gap: 10px 32px; }
+.gathering { border-top: 1px solid var(--rule); padding: 10px 0 12px; font-family: var(--font-ui); font-size: 12.5px; }
+.gathering h3 { font-size: 14px; letter-spacing: .1em; text-transform: uppercase; margin: 0 0 6px; font-weight: 400; color: var(--ink); }
+.gathering h3 a { color: var(--c-rival); text-decoration: none; text-shadow: 0 0 6px var(--c-rival); }
+.gathering h3 span { color: var(--ink-3); font-size: 11px; margin-left: 8px; }
+.gathering .mat { color: var(--ink-2); margin-bottom: 6px; }
+.gathering .mat .bar { color: var(--c-seam); letter-spacing: .05em; }
+.gathering .mat em { font-style: normal; color: var(--ink-3); margin-left: 8px; }
+.gathering.formed .mat em { color: var(--c-ally); }
+.gathering .roll { color: var(--ink-2); margin: 3px 0; line-height: 1.7; }
+.gathering .roll b { font-weight: 400; color: var(--ink-3); text-transform: uppercase; letter-spacing: .1em; font-size: 11px; margin-right: 8px; }
+.gathering .roll a { color: var(--ink); text-decoration: none; text-transform: uppercase; letter-spacing: .06em; }
+.gathering .roll i { font-style: normal; color: var(--c-adversary); font-size: 10px; }
+.dossier .conv { color: var(--ink-2); }
+.dossier .conv a { color: var(--ink); text-decoration: none; text-transform: uppercase; letter-spacing: .06em; font-family: var(--font-ui); }
