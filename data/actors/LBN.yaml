@@ -1,14 +1,160 @@
 id: LBN
 name: Lebanon
+short: Lebanon
 type: state
 iso2: lb
 wikipedia: https://en.wikipedia.org/wiki/Lebanon
-coords:
-- 35.51
-- 33.89
+coords: [35.51, 33.89]
 seat: Beirut
-regions:
-- world
-card: stub
-tier: minor
+regions: [middle-east]
+card: full
+tier: protagonist
+last_verified: 2026-10-12
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Restore the state's monopoly on arms without a civil war: the cabinet's decision of 5-7 August 2025 to disarm Hezbollah and every other armed group (first by end-2025), the army's 'phase one' south of the Litani declared complete on 8 January 2026, the ban on Hezbollah's military activity of 2 March 2026, and the disarmament of the Palestinian camps agreed with Abbas. President Aoun calls disarmament non-negotiable but wants it done by dialogue and in sequence with Israel's withdrawal."
+      confidence: B
+      sources:
+        - {url: "https://www.africanews.com/amp/2025/08/06/lebanon-asks-army-to-disarm-defiant-hezbollah/", title: "Lebanon asks army to disarm defiant Hezbollah", publisher: "Africanews", date: 2025-08-06, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/1/8/lebanons-army-says-phase-one-of-hezbollah-disarmament-in-south-completed", title: "Lebanon army says phase one of disarming non-state groups in south complete", publisher: "Al Jazeera", date: 2026-01-08, tier: 3}
+        - {url: "https://cdn.naharnet.com/stories/en/318707-cabinet-bans-hezbollah-military-activities-demands-group-to-hand-over-arms", title: "Cabinet bans Hezbollah military activities, demands group to hand over arms", publisher: "Naharnet", date: 2026-03-02, tier: 3}
+        - {url: "https://tribune.com.pk/story/2619640/lebanese-president-sets-3-conditions-for-hezbollah-disarmament-including-israeli-withdrawal", title: "Lebanese president sets 3 conditions for Hezbollah disarmament, including Israeli withdrawal", publisher: "Express Tribune (Anadolu)", date: 2026-07-22, tier: 3}
+    - rank: 2
+      text: "End the Israeli occupation and the war by negotiation, short of normalisation: withdrawal from the roughly 65 towns and villages Israeli forces hold since the March 2026 ground campaign and from the five border hills held since 2024, through the US-brokered talks that produced the 26 June 2026 framework. Aoun and Salam speak of 'peace' as a security or non-aggression arrangement; normalisation, they say, comes only after the Israeli-Palestinian question is settled (Arab Peace Initiative)."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/6/27/what-is-the-framework-agreement-signed-by-israel-and-lebanon", title: "What is the framework agreement signed by Israel and Lebanon?", publisher: "Al Jazeera", date: 2026-06-27, tier: 3}
+        - {url: "https://www.longwarjournal.org/archives/2026/07/analysis-the-israel-lebanon-framework-agreement-explained.php", title: "Analysis: The Israel-Lebanon framework agreement explained", publisher: "FDD's Long War Journal", date: 2026-07, tier: 3}
+        - {url: "https://naharnet.com/stories/en/316760-abdelatty-says-egypt-won-t-spare-any-effort-to-prevent-lebanon-escalation", title: "Abdelatty says Egypt 'won't spare any effort' to prevent Lebanon escalation (Aoun's initiative on the five hills)", publisher: "Naharnet", date: 2025-11-26, tier: 3}
+        - {url: "https://www.thenationalnews.com/news/mena/2026/10/08/eu-to-establish-training-and-support-mission-for-lebanese-army/", title: "EU to establish training and support mission for Lebanese army (Israel holds about 65 towns and villages)", publisher: "The National", date: 2026-10-08, tier: 3}
+    - rank: 3
+      text: "Rebuild a bankrupt state: a new IMF programme (bank resolution law passed in August 2026, the 'financial gap' law and a 2027 budget still missing), recovery money for two wars (World Bank: USD 11bn of needs after 2024; Finance Minister Jaber: damage of up to USD 20bn from the 2026 war) and a return to growth after the World Bank's forecast contraction of 6.4% in 2026."
+      confidence: B
+      sources:
+        - {url: "https://www.thestar.com.my/news/world/2026/09/28/lebanon-hopes-for-new-staff-level-agreement-with-imf", title: "Lebanon hopes for new staff-level agreement with IMF", publisher: "Reuters (via The Star)", date: 2026-09-28, tier: 3}
+        - {url: "https://www.thenationalnews.com/business/economy/2026/10/01/imf-lebanon-bank-resolution-law/", title: "IMF and Lebanon's bank resolution law", publisher: "The National", date: 2026-10-01, tier: 3}
+        - {url: "https://www.worldbank.org/en/country/lebanon/overview", title: "Lebanon overview", publisher: "World Bank", date: 2026-08, tier: 1}
+        - {url: "https://www.al-monitor.com/originals/2026/07/lebanons-latest-damage-estimate-outlines-reconstruction-challenge", title: "Lebanon's latest damage estimate outlines reconstruction challenge", publisher: "Al-Monitor", date: 2026-07, tier: 3}
+    - rank: 4
+      text: "Keep Arab, Western and UN backing flowing after UNIFIL: the force's mandate ends on 31 December 2026 (Security Council resolution 2790, adopted unanimously on 28 August 2025) with withdrawal during 2027, so Beirut wants an EU training mission, a French-Italian post-UNIFIL coalition and a donor base (US, Saudi Arabia, Qatar, EU) for an army that cannot otherwise hold the south."
+      confidence: B
+      sources:
+        - {url: "https://today.lorientlejour.com/article/1475344/un-security-council-renews-lebanon-peacekeeping-mission-until-end-2026.html", title: "UN Security Council renews Lebanon peacekeeping mission until end 2026", publisher: "L'Orient Today", date: 2025-08-28, tier: 3}
+        - {url: "https://www.thenationalnews.com/news/mena/2026/10/08/eu-to-establish-training-and-support-mission-for-lebanese-army/", title: "EU to establish training and support mission for Lebanese army", publisher: "The National", date: 2026-10-08, tier: 3}
+        - {url: "https://www.al-monitor.com/originals/2026/09/why-france-pushing-keep-unifil-lebanon-beyond-2026", title: "Why France is pushing to keep UNIFIL in Lebanon beyond 2026", publisher: "Al-Monitor", date: 2026-09, tier: 3}
+    - rank: 5
+      text: "Take Lebanon out of Iran's orbit and normalise the Syrian border: the ban on IRGC activity (5 March 2026), the expulsion of the Iranian ambassador (24 March), the earlier flight ban (February 2025); with Damascus, the demarcation committees, refugee returns and the transfer of Syrian detainees. Foreign Minister Raggi: the government is working to 'free Lebanon from Iranian influence'."
+      confidence: B
+      sources:
+        - {url: "https://www.iranintl.com/en/202603199101", title: "Lebanon says it will work to end Iranian influence", publisher: "Iran International", date: 2026-03-19, tier: 3}
+        - {url: "https://www.newarab.com/news/lebanon-withdraws-iran-envoys-accreditation-orders-leave", title: "Lebanon withdraws Iran envoy's accreditation, orders him to leave", publisher: "The New Arab", date: 2026-03-24, tier: 3}
+        - {url: "https://www.arabnews.com/node/2615542/amp", title: "Syria and Lebanon agree to expand coordination on refugee returns, border demarcation", publisher: "Arab News", date: 2025-09-16, tier: 3}
+    - rank: 6
+      text: "Turn the sea into a source of income and borders: the 26 November 2025 maritime boundary agreement with Cyprus (signed, not ratified), a Block 8 seismic survey with TotalEnergies, Eni and QatarEnergy (contract for three years, drilling decision afterwards), and Egyptian gas for electricity. Hydrocarbons are a long bet; none of it pays before the army and the IMF are sorted."
+      confidence: C
+      sources:
+        - {url: "https://www.iene.eu/energy-news/cyprus-and-lebanon-sign-strategic-maritime-boundary-agreement-after-two-decades-p8150.html", title: "Cyprus and Lebanon sign strategic maritime boundary agreement after two decades", publisher: "IENE", date: 2025-11, tier: 3}
+        - {url: "https://www.lbcgroup.tv/news/lebanon-news/898606/lbci-lebanon-articles/en", title: "Lebanon to sign Block 8 seismic survey deal, consortium may decide on drilling after surveys", publisher: "LBCI", date: 2026-01, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "Direct, US-hosted talks with Israel (a first since decades: ambassadors Moawad and Leiter in Washington on 14 April 2026, rounds in May, June and Rome in July and August, next round planned for October), carried by President Aoun and ambassador-level officials while Aoun declines to speak with Netanyahu; the 26 June framework gives Beirut a US-facilitated Military Coordination Group and a written sequence for Israeli withdrawal. Alongside, the Arab and Western support group (US, Saudi Arabia, France, Egypt, Qatar) and the September 2026 Paris meeting on support for the army (Macron, Aoun and King Abdullah II)."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/4/16/trump-says-israel-and-lebanon-agree-to-temporary-ceasefire", title: "Trump says Israel and Lebanon agree to temporary ceasefire", publisher: "Al Jazeera", date: 2026-04-16, tier: 3}
+        - {url: "https://www.al-monitor.com/originals/2026/06/israel-lebanon-framework-agreement-sets-process-disarm-hezbollah-rubio-says", title: "Israel-Lebanon framework agreement sets process to disarm Hezbollah, Rubio says", publisher: "Al-Monitor", date: 2026-06-26, tier: 3}
+        - {url: "https://www.euronews.com/2026/09/17/macron-to-host-king-abdullah-ii-and-lebanons-aoun-to-discuss-support-for-lebanese-armed-fo", title: "Macron to host King Abdullah II and Lebanon's Aoun to discuss support for Lebanese armed forces", publisher: "Euronews", date: 2026-09-17, tier: 3}
+    - domain: informational
+      text: "A sovereignty narrative: the state's monopoly on arms, 'peace' but not 'normalisation', Hezbollah's weapons as the cause of the war and not its answer (the cabinet's March 2026 ban, Salam's statement). It competes with Hezbollah's counter-narrative that the talks 'achieved nothing' and allowed Israeli attacks to continue, and with Berri's Amal, which intends to block the framework's security measures."
+      confidence: B
+      sources:
+        - {url: "https://www.al-monitor.com/originals/2026/03/lebanese-state-bans-hezbollah-military-activities", title: "Lebanese state bans Hezbollah military activities", publisher: "Al-Monitor", date: 2026-03-02, tier: 3}
+        - {url: "https://www.longwarjournal.org/archives/2026/07/analysis-the-israel-lebanon-framework-agreement-explained.php", title: "Analysis: The Israel-Lebanon framework agreement explained", publisher: "FDD's Long War Journal", date: 2026-07, tier: 3}
+    - domain: military
+      text: "The Lebanese Armed Forces as the only instrument: phase one south of the Litani (declared done 8 January 2026, excluding the five points Israel holds), pilot-zone deployments under the framework (the first zone announced on 20 July 2026, three towns Israel had not occupied), and the Palestinian camp handovers (Fatah, from August 2025). The army is underfunded and cannot be used against Hezbollah by force."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/1/8/lebanons-army-says-phase-one-of-hezbollah-disarmament-in-south-completed", title: "Lebanon army says phase one of disarming non-state groups in south complete", publisher: "Al Jazeera", date: 2026-01-08, tier: 3}
+        - {url: "https://www.aljazeera.com/amp/news/2026/7/21/lebanons-joseph-aoun-to-meet-trump-what-to-expect", title: "Lebanon's Joseph Aoun to meet Trump: what to expect", publisher: "Al Jazeera", date: 2026-07-21, tier: 3}
+        - {url: "https://www.newarab.com/news/fatah-hands-over-heavy-weapons-lebanese-army-ain-al-hilweh", title: "Fatah hands over last heavy weapons to Lebanese army in Ain al-Hilweh", publisher: "The New Arab", date: 2025-12, tier: 3}
+    - domain: economic
+      text: "Donor money as leverage: EU Peace Facility EUR 100m for the army (4 June 2026, EUR 182m in total) on top of a EUR 1bn EU package for 2024-27, Qatar's USD 60m army salary grant and USD 434m for energy, US security assistance (USD 117m announced in January 2025; USD 100m humanitarian with the framework), and the World Bank's emergency project. Each is conditioned in practice on the arms file."
+      confidence: B
+      sources:
+        - {url: "https://www.eunews.it/en/2026/06/04/lebanon-eu-grants-e100-million-to-the-beirut-army-to-curb-the-power-of-non-state-groups-such-as-hezbollah/", title: "Lebanon: EU grants EUR 100 million to the Beirut army to curb the power of non-state groups such as Hezbollah", publisher: "Eunews", date: 2026-06-04, tier: 3}
+        - {url: "https://gdnonline.com/Details/1374452/Qatar-provides-%24434-million-financial-aid-to-Lebanon", title: "Qatar provides $434 million financial aid to Lebanon", publisher: "Gulf Daily News", date: 2026-01, tier: 3}
+        - {url: "https://today.lorientlejour.com/article/1444065/washington-promises-additional-117-million-dollars-to-the-lebanese-armed-forces.html", title: "Washington promises additional 117 million dollars to the Lebanese Armed Forces", publisher: "L'Orient Today", date: 2025-01, tier: 3}
+
+  constraints:
+    - text: "An army that cannot disarm Hezbollah by force: underfunded, dependent on donors, and facing a Hezbollah MP's warning that enforcement would mean 'civil war'. Phase one missed its end-2025 deadline; phase two north of the Litani depends on a party that says it will not disarm while Israel stays."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/6/27/what-is-the-framework-agreement-signed-by-israel-and-lebanon", title: "What is the framework agreement signed by Israel and Lebanon?", publisher: "Al Jazeera", date: 2026-06-27, tier: 3}
+        - {url: "https://www.thenationalnews.com/news/mena/2026/10/08/eu-to-establish-training-and-support-mission-for-lebanese-army/", title: "EU to establish training and support mission for Lebanese army", publisher: "The National", date: 2026-10-08, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/1/8/lebanons-army-says-phase-one-of-hezbollah-disarmament-in-south-completed", title: "Lebanon army says phase one of disarming non-state groups in south complete", publisher: "Al Jazeera", date: 2026-01-08, tier: 3}
+    - text: "Israel's sequencing and its own aims: withdrawal is conditioned on verified disarmament; Netanyahu says Israeli forces stay while Hezbollah is armed, Smotrich 'possibly beyond', Katz that the Shia villages on the contact line 'had to disappear'. Israel holds an estimated 570-600 sq km, evacuation orders cover about 2,000 sq km, and over 1.2 million people are displaced."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/6/27/what-is-the-framework-agreement-signed-by-israel-and-lebanon", title: "What is the framework agreement signed by Israel and Lebanon?", publisher: "Al Jazeera", date: 2026-06-27, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/6/15/netanyahu-says-israel-wont-leave-occupied-land-in-lebanon", title: "Netanyahu says Israel won't leave occupied land in Lebanon", publisher: "Al Jazeera", date: 2026-06-15, tier: 3}
+        - {url: "https://www.reuters.com/world/middle-east/how-israel-has-emptied-southern-lebanon-far-beyond-front-lines-2026-05-28/", title: "How Israel has emptied southern Lebanon far beyond front lines", publisher: "Reuters", date: 2026-05-28, tier: 3}
+    - text: "A confessional system that gives the Shia duopoly a veto: Hezbollah and Amal hold ministers (they walked out in August 2025 and one Hezbollah minister approved the March 2026 ban), Speaker Berri runs parliament, which extended its own term to May 2028 by 76 votes to 41 on 9 March 2026 (the Constitutional Council upheld it on 7 April). The state cannot decide against the Shia community and keep the system."
+      confidence: B
+      sources:
+        - {url: "https://carnegieendowment.org/middle-east/diwan/2026/03/lebanons-parliament-extends-its-term-under-fire", title: "Lebanon's parliament extends its term under fire", publisher: "Carnegie Middle East Center", date: 2026-03, tier: 2}
+        - {url: "https://www.al-monitor.com/originals/2026/03/lebanese-state-bans-hezbollah-military-activities", title: "Lebanese state bans Hezbollah military activities", publisher: "Al-Monitor", date: 2026-03-02, tier: 3}
+        - {url: "https://www.intellinews.com/hezbollah-rejects-lebanon-government-decision-on-weapons-monopoly-394953", title: "Hezbollah rejects Lebanon government decision on weapons monopoly", publisher: "bne IntelliNews", date: 2025-08, tier: 3}
+    - text: "A bankrupt, dollar-starved economy: financial-sector losses put at about USD 70bn (2022 estimate, likely higher), the IMF's staff-level agreement still blocked on the gap law, the 2027 budget and a VAT rise, the pound having lost 98% of its value, and the World Bank forecasting a 6.4% contraction in 2026 after 4.2% growth in 2025; the World Bank puts the economic cost of the conflict at USD 14bn and reconstruction needs at USD 11bn."
+      confidence: B
+      sources:
+        - {url: "https://www.thestar.com.my/news/world/2026/09/28/lebanon-hopes-for-new-staff-level-agreement-with-imf", title: "Lebanon hopes for new staff-level agreement with IMF", publisher: "Reuters (via The Star)", date: 2026-09-28, tier: 3}
+        - {url: "https://www.worldbank.org/en/country/lebanon/overview", title: "Lebanon overview", publisher: "World Bank", date: 2026-08, tier: 1}
+        - {url: "https://www.thenationalnews.com/business/economy/2026/10/01/imf-lebanon-bank-resolution-law/", title: "IMF and Lebanon's bank resolution law", publisher: "The National", date: 2026-10-01, tier: 3}
+    - text: "Conditional patrons: Riyadh waits for 'actions' on disarmament before re-engaging with money, the US ties its army aid to performance (the framework says 'performance-based'), and the EU frames its aid as a way to weaken Hezbollah. Support is real but it can be withdrawn, and the UN force that stood in the south goes at the end of 2026."
+      confidence: B
+      sources:
+        - {url: "https://today.lorientlejour.com/article/1467696/disarming-hezbollah-riyadh-awaits-aoun-and-salams-actions-before-re-engaging-with-lebanon.html", title: "Disarming Hezbollah: Riyadh awaits Aoun and Salam's actions before re-engaging with Lebanon", publisher: "L'Orient Today", date: "2025", tier: 3}
+        - {url: "https://www.longwarjournal.org/archives/2026/07/analysis-the-israel-lebanon-framework-agreement-explained.php", title: "Analysis: The Israel-Lebanon framework agreement explained", publisher: "FDD's Long War Journal", date: 2026-07, tier: 3}
+        - {url: "https://www.eunews.it/en/2026/06/04/lebanon-eu-grants-e100-million-to-the-beirut-army-to-curb-the-power-of-non-state-groups-such-as-hezbollah/", title: "Lebanon: EU grants EUR 100 million to the Beirut army to curb the power of non-state groups such as Hezbollah", publisher: "Eunews", date: 2026-06-04, tier: 3}
+    - text: "A public that does not follow its negotiators: polling cited by Long War Journal puts support for normalisation with Israel at roughly 30%, Hezbollah and Amal reject the framework, and the Shia population (the bulk of the 1.2 million displaced) is asked to accept disarmament while Israeli forces remain and reconstruction money is conditional."
+      confidence: C
+      sources:
+        - {url: "https://www.longwarjournal.org/archives/2026/07/analysis-the-israel-lebanon-framework-agreement-explained.php", title: "Analysis: The Israel-Lebanon framework agreement explained", publisher: "FDD's Long War Journal", date: 2026-07, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/6/27/what-is-the-framework-agreement-signed-by-israel-and-lebanon", title: "What is the framework agreement signed by Israel and Lebanon?", publisher: "Al Jazeera", date: 2026-06-27, tier: 3}
+
+  paradoxes:
+    - text: "Banning Hezbollah's armed activity on the day Hezbollah opened fire did not stop the war it was meant to keep out. The cabinet outlawed the group's military action on 2 March 2026, hours after Hezbollah fired for Iran; Israel answered with the Litani ground campaign, more than 4,300 dead and over a million displaced. A decision the state could not enforce taught Israel that the state is not the owner of the front, and it handed Israeli ministers an argument to stay until Hezbollah is disarmed - the disarmament that the occupation makes harder."
+      confidence: B
+      sources:
+        - {url: "https://cdn.naharnet.com/stories/en/318707-cabinet-bans-hezbollah-military-activities-demands-group-to-hand-over-arms", title: "Cabinet bans Hezbollah military activities, demands group to hand over arms", publisher: "Naharnet", date: 2026-03-02, tier: 3}
+        - {url: "https://www.thenationalnews.com/news/mena/2026/10/08/eu-to-establish-training-and-support-mission-for-lebanese-army/", title: "EU to establish training and support mission for Lebanese army", publisher: "The National", date: 2026-10-08, tier: 3}
+    - text: "The sequence is circular. The framework makes Israeli withdrawal depend on verified disarmament; Hezbollah says it keeps its arms while Israeli troops hold Lebanese land; every Israeli strike under the truce strengthens that argument inside the Shia community and weakens the state that is asking for patience. The first pilot zone covers three towns Israel never occupied, so the one visible success moves no Israeli soldier."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/amp/news/2026/7/21/lebanons-joseph-aoun-to-meet-trump-what-to-expect", title: "Lebanon's Joseph Aoun to meet Trump: what to expect", publisher: "Al Jazeera", date: 2026-07-21, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/6/27/what-is-the-framework-agreement-signed-by-israel-and-lebanon", title: "What is the framework agreement signed by Israel and Lebanon?", publisher: "Al Jazeera", date: 2026-06-27, tier: 3}
+    - text: "The army needs the donors' money to disarm, and the donors release it only against disarmament. Saudi Arabia, the United States and the EU all describe their aid as tied to progress, yet an army that is underfunded and short of units cannot show progress without the aid. The state is asked to prove capacity first and is given capacity second."
+      confidence: B
+      sources:
+        - {url: "https://today.lorientlejour.com/article/1467696/disarming-hezbollah-riyadh-awaits-aoun-and-salams-actions-before-re-engaging-with-lebanon.html", title: "Disarming Hezbollah: Riyadh awaits Aoun and Salam's actions before re-engaging with Lebanon", publisher: "L'Orient Today", date: "2025", tier: 3}
+        - {url: "https://www.thenationalnews.com/news/mena/2026/10/08/eu-to-establish-training-and-support-mission-for-lebanese-army/", title: "EU to establish training and support mission for Lebanese army", publisher: "The National", date: 2026-10-08, tier: 3}
+    - text: "UNIFIL leaves because Washington and Israel wanted it gone, but Lebanon needs somebody in the south once it leaves. The UN force was ended at the American-Israeli insistence in August 2025 and the Europeans now scramble for a replacement that is 'not a UNIFIL replacement' (Kallas); the more Lebanon relies on a US-run Military Coordination Group instead of a UN mandate, the more its southern border becomes an American-Israeli arrangement."
+      confidence: B
+      sources:
+        - {url: "https://today.lorientlejour.com/article/1475344/un-security-council-renews-lebanon-peacekeeping-mission-until-end-2026.html", title: "UN Security Council renews Lebanon peacekeeping mission until end 2026", publisher: "L'Orient Today", date: 2025-08-28, tier: 3}
+        - {url: "https://www.thenationalnews.com/news/mena/2026/10/08/eu-to-establish-training-and-support-mission-for-lebanese-army/", title: "EU to establish training and support mission for Lebanese army", publisher: "The National", date: 2026-10-08, tier: 3}
+    - text: "Cutting Iran off removes Hezbollah's patron and also its paymaster for the community the state needs to win. The IRGC ban and the expulsion of the ambassador were meant to remove the outside hand; but Hezbollah's reconstruction and displacement money has come from Tehran (reported USD 200m, disputed by Washington), while the Gulf and Western money is conditioned on the very disarmament. The Shia displaced look to Hezbollah for payment and to the state for an invoice."
+      confidence: C
+      sources:
+        - {url: "https://www.newarab.com/news/lebanon-withdraws-iran-envoys-accreditation-orders-leave", title: "Lebanon withdraws Iran envoy's accreditation, orders him to leave", publisher: "The New Arab", date: 2026-03-24, tier: 3}
+        - {url: "https://www.terrorism-info.org.il/en/spotlight-on-terrorism-hezbollah-and-lebanon-august-31-september-7-2026/", title: "Spotlight on Terrorism: Hezbollah and Lebanon (31 August - 7 September 2026)", publisher: "Meir Amit Intelligence and Terrorism Information Center", date: 2026-09, tier: 4}
+    - text: "Postponing the elections to hold the cabinet together spends the legitimacy the cabinet needs for its hardest decisions. Parliament gave itself two more years (to May 2028) on 9 March 2026 so that a government at war would not face voters; the Lebanese Forces, Kataeb and the Free Patriotic Movement called it illegal, and the assembly that must back the monopoly on arms is one that no voter has chosen since 2022."
+      confidence: B
+      sources:
+        - {url: "https://carnegieendowment.org/middle-east/diwan/2026/03/lebanons-parliament-extends-its-term-under-fire", title: "Lebanon's parliament extends its term under fire", publisher: "Carnegie Middle East Center", date: 2026-03, tier: 2}
+
+  reading: |
+    Lebanon's grand strategy since Aoun's election (9 January 2025) and Salam's government (February 2025) is the strategy of a state trying to become the owner of its own war and peace. The aim is simple to state: one army, one decision on war, Israel out, money in. The means are borrowed: American brokerage, Saudi and Qatari money, European training, Egyptian ideas, a UN mandate that is ending. The 2026 war showed the gap between the declared monopoly and the actual one: Hezbollah fired on 2 March in spite of the cabinet's own ban, and the state paid in dead, displaced and territory. Beirut's answer is not to fight Hezbollah (the army will not, and the state would not survive it) but to move the country's major patrons into a sequence in which Israeli withdrawal, army deployment and donor money arrive together. That is why it signed a framework with a state it does not recognise and why it avoids the word normalisation. It is a strategy of patience and bargaining from weakness, and its test is the pilot zones: if Israel does not withdraw from a place the army has actually cleared, the Shia community will keep its arms for good and the state's whole case will fall. Syria and the Gulf matter because they take the land and sea borders and the money out of Iran's hands; Russia, China and Turkey are marginal. This card is dated 12 October 2026, before the next round of Israel-Lebanon military talks planned for 20-21 October and the EU's formal decision on the army mission.
