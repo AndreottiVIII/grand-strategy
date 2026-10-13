@@ -1,0 +1,161 @@
+from: NPL
+relations:
+  # ---------- objective ----------
+  - to: IND
+    layer: objective
+    type: territorial_claim
+    summary: Nepal claims Lipulekh, Kalapani and Limpiyadhura under the 1816 Sugauli treaty and writes them into its official map (May 2020); India calls the map an 'unjustified cartographic assertion' and says the claim is 'neither justified nor based on historical facts'. Indian troops have been in the Kalapani area since 1962.
+    since: 2020-05-20
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.theweek.in/news/india/2020/05/20/india-reacts-sharply-to-nepal-releasing-new-map.amp.html", title: "India reacts sharply to Nepal releasing new map", publisher: "The Week", date: 2020-05-20, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2020/05/nepal-map-heightens-land-dispute-india-200520175945554.html", title: "New Nepal map heightens land dispute with India", publisher: "Al Jazeera", date: 2020-05-20, tier: 3}
+      - {url: "https://www.tribuneindia.com/news/world/nepal-objects-agreement-of-india-china-to-open-trade-route-via-lipulekh-asserting-its-claim/amp", title: "Nepal objects to India-China agreement to open trade route via Lipulekh, asserting its claim", publisher: "The Tribune", date: 2025-08-20, tier: 3}
+
+  - to: CHN
+    layer: objective
+    type: influence_goal
+    summary: Kathmandu wants Chinese finance for roads, a cross-border railway and an industrial park through the Belt and Road framework; Nepal accepts grant-funded projects only, while China prefers loans.
+    since: 2024-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://sv7.thediplomat.com/2025/06/why-are-bri-projects-in-nepal-stalled", title: "Why are BRI projects in Nepal stalled?", publisher: "The Diplomat", date: 2025-06, tier: 3}
+      - {url: "https://kathmandupost.com/national/2024/05/13/7-years-on-nepal-and-china-still-at-odds-over-bri-execution", title: "7 years on, Nepal and China still at odds over Belt and Road Initiative execution", publisher: "Kathmandu Post", date: 2024-05-13, tier: 3}
+
+  # ---------- alignment ----------
+  - to: IND
+    layer: alignment
+    type: treaty
+    summary: 'Treaty of Peace and Friendship (1950): the basis of the relationship, with the open border and the special trade and transit arrangements; the Kalapani and Susta border disputes sit outside it.'
+    since: '1950'
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.mea.gov.in/bilateral-documents?dtl/6295/Treaty+of+Peace+and+Friendship", title: "Treaty of Peace and Friendship (India-Nepal), Bilateral Documents", publisher: "Ministry of External Affairs, India", date: 1950, tier: 1}
+
+  - to: GBR
+    layer: alignment
+    type: treaty
+    summary: 'Tripartite Agreement (1947) between Nepal, India and the UK: Gurkha regiments and recruitment for the Indian and British armies, with pension rights. Nepal''s government argues that India''s Agnipath scheme (2022) falls outside it, and Indian Army recruitment in Nepal has been suspended since.'
+    since: '1947'
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://thehimalayantimes.com/opinion/editorial-respect-1947-treaty", title: "It would be in the best interest of the three countries if they respect the 1947 Tripartite Agreement", publisher: "The Himalayan Times", date: 2025, tier: 3}
+      - {url: "https://theprint.in/defence/indian-army-gorkha-regiment-nepal-agniveer/2753625/", title: "Indian Army Gorkha regiment, Nepal, Agniveer", publisher: "ThePrint", date: 2025, tier: 3}
+
+  # ---------- dependency ----------
+  - to: IND
+    layer: dependency
+    type: energy_export
+    summary: 'Hydropower sold to India: 1,011 MW approved for export after a 200 MW addition in July 2026 (valid to 31 October 2026); a January 2024 agreement covers up to 10,000 MW over ten years, which requires new inter-state lines. Nepal earned Rs 17.47bn from exports to India in FY2024/25 and Rs 29.32bn in the last year reported.'
+    value: 1011
+    unit: MW_approved_export
+    since: 2021-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: 'Figures conflict in form, not in direction: approvals (MW) and earnings (Rs) measure different things. Most recent figure with an official basis (the approval) kept as the value. Dry-season flows run the other way: Nepal imports from India from October to May.'
+    sources:
+      - {url: "https://diplomatnepal.com/news/india-to-buy-additional-200-mw-electricity-from-nepal/", title: "India to buy additional 200 MW electricity from Nepal", publisher: "Diplomat Nepal", date: 2026-07-18, tier: 3}
+      - {url: "https://ekantipur.com/business/2026/07/24/en/earned-rs-2932-billion-from-electricity-exports-in-1-year-45-12.html", title: "From electricity importer to exporter in just 4 years: Nepal earned Rs 29.32 billion last year", publisher: "Kathmandu Post / Ekantipur", date: 2026-07-24, tier: 3}
+
+  - to: ARE
+    layer: dependency
+    type: remittances
+    summary: The Gulf is the main destination of Nepali migrant workers; the UAE alone had over 86,000 labour approvals in the first six months of FY2024/25, with Saudi Arabia, Qatar and Kuwait behind it. Remittances are about a quarter of GDP (World Bank, 2023) and rise to about a third in the government's FY2025/26 estimate.
+    value: 86000
+    unit: labour_approvals_uae_first_6m_fy2024_25
+    since: 2024-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: 'The sources use different periods and definitions (approvals are not workers abroad). Value is a single destination figure to show the scale; the World Bank series (about 26% of GDP in 2024) is the official basis for the total. Confidence C because the destination figure comes from a tier-3 summary of ministry data.'
+    sources:
+      - {url: "https://www.sharesansar.com/newsdetail/foreign-employment-nepalis-now-looking-beyond-mid-east-and-malaysia", title: "Foreign Employment: Nepalis now looking beyond Mid-east and Malaysia", publisher: "Sharesansar", date: 2025, tier: 3}
+      - {url: "https://www.worldbank.org/en/country/nepal/publication/unlocking-nepal-s-growth-potential", title: "Unlocking Nepal's growth potential", publisher: "World Bank", date: 2025-03-20, tier: 1}
+
+  - to: USA
+    layer: dependency
+    type: investment
+    summary: 'MCC Nepal Compact: USD 500m for a 315 km, 400kV transmission line and road upgrades (about USD 550m with a later USD 50m; Nepal adds USD 197m). Payments were halted from February 2025 and restored after a State Department review in July 2025, with an extension of up to one year under discussion (the original deadline was August 2028).'
+    value: 500
+    unit: usd_million_mcc_grant
+    since: 2025-02-14
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: 'Since is the date of the payment freeze, the first dated fact in these sources; the compact signing date is not in them. Totals vary by source (USD 697m and 747m are package figures). Extension status not confirmed as of October 2026.'
+    sources:
+      - {url: "https://kathmandupost.com/national/2025/02/20/mcc-funds-freeze-sparks-fears-of-project-delays", title: "MCC funds freeze sparks fears of project delays", publisher: "Kathmandu Post", date: 2025-02-20, tier: 3}
+      - {url: "https://kathmandupost.com/national/2025/07/26/us-pulls-mcc-nepal-compact-back-from-the-brink", title: "US pulls MCC Nepal compact back from the brink", publisher: "Kathmandu Post", date: 2025-07-26, tier: 3}
+
+  # ---------- action ----------
+  - to: CHN
+    layer: action
+    type: agreement
+    summary: Belt and Road cooperation framework signed during PM Oli's visit to China (December 2024), with ten projects to be expedited (road and tunnel works, a cross-border railway, a university, a museum, an industrial park); by mid-2025 little progress had been made.
+    since: 2024-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://sv7.thediplomat.com/2025/06/why-are-bri-projects-in-nepal-stalled", title: "Why are BRI projects in Nepal stalled?", publisher: "The Diplomat", date: 2025-06, tier: 3}
+
+  - to: IND
+    layer: action
+    type: agreement
+    summary: 'Second hydropower agreement with India (January 2024): up to 10,000 MW over ten years. Planned in an August 2024 roadmap by PM Oli.'
+    since: 2024-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.b360nepal.com/detail/23256/pm-oli-announces-roadmap-to-export-10000mw-of-electricity-to-india-2024-Aug-23-152700", title: "PM Oli announces roadmap to export 10,000 MW of electricity to India", publisher: "B360 Nepal", date: 2024-08-23, tier: 3}
+
+  - to: IND
+    layer: action
+    type: incident
+    summary: Nepal's foreign ministry objects (20 August 2025) to the India-China agreement to reopen trade through the Lipulekh Pass, restating its claim; India rejects the objection the same month. Trade through the pass began in August 2026 with formal protest by Kathmandu on 3 May 2026.
+    since: 2025-08-20
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: 'Date of the reopening differs by source (August 2026 in The Star, June 2026 in some Indian reports); the row uses the protest date and the source that gives the trade start.'
+    sources:
+      - {url: "https://www.tribuneindia.com/news/world/nepal-objects-agreement-of-india-china-to-open-trade-route-via-lipulekh-asserting-its-claim/amp", title: "Nepal objects to India-China agreement to open trade route via Lipulekh, asserting its claim", publisher: "The Tribune", date: 2025-08-20, tier: 3}
+      - {url: "https://scroll.in/latest/1085742/scroll_in", title: "India rejects Nepal's objection to resumption of border trade with China through Lipulekh Pass", publisher: "Scroll.in", date: 2025-08, tier: 3}
+      - {url: "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/08/06/india-china-begin-trade-through-lipulekh-pass-despite-nepals-territorial-objections", title: "India, China begin trade through Lipulekh Pass despite Nepal's territorial objections", publisher: "The Star (Asia News Network)", date: 2026-08-06, tier: 3}
+
+  - to: USA
+    layer: action
+    type: incident
+    summary: 'US aid to Nepal frozen after the 20 January 2025 executive order: MCC payments halted (email of 14 February 2025); up to 34 USAID projects reported as terminated; restored after the State Department review in July 2025.'
+    since: 2025-02-14
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: 'The USAID termination figure (USD 329m) is a tier-3 report and was not independently verified; it is not used as a value.'
+    sources:
+      - {url: "https://kathmandupost.com/national/2025/02/20/mcc-funds-freeze-sparks-fears-of-project-delays", title: "MCC funds freeze sparks fears of project delays", publisher: "Kathmandu Post", date: 2025-02-20, tier: 3}
+      - {url: "https://asianews.network/?p=193149", title: "In Nepal, US pulls the plug on aid projects worth $329 million", publisher: "Asia News Network", date: 2025-02, tier: 3}
+      - {url: "https://kathmandupost.com/national/2025/07/26/us-pulls-mcc-nepal-compact-back-from-the-brink", title: "US pulls MCC Nepal compact back from the brink", publisher: "Kathmandu Post", date: 2025-07-26, tier: 3}
+
+  - to: RUS
+    layer: action
+    type: incident
+    summary: Nepali citizens serve in Russia's army against Ukraine. In September 2025 PM Oli raised the issue with Putin on the sidelines of the SCO summit in Tianjin, with no concrete agreement; in August 2026 Nepal said six of its citizens had been killed and one captured. Kathmandu's response has been diplomatic requests and a ban on labour migration to Russia and Ukraine.
+    since: 2025-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: 'Recruitment numbers conflict: official Nepali figures are far below CNN''s estimate of about 15,000 (not used as a value). The six-killed figure matches Nepal''s December 2023 statement (Moscow Times notes this) and needs checking.'
+    sources:
+      - {url: "https://www.tribuneindia.com/news/world/nepal-raises-issue-of-its-citizens-in-russian-army-with-putin-fails-to-reach-concrete-agreement/amp", title: "Nepal raises issue of its citizens in Russian army with Putin, fails to reach concrete agreement", publisher: "The Tribune", date: 2025-09, tier: 3}
+      - {url: "https://www.themoscowtimes.com/2026/08/06/six-nepalis-killed-fighting-for-russia-one-captured-in-ukraine", title: "Six Nepalis killed fighting for Russia, one captured in Ukraine", publisher: "The Moscow Times", date: 2026-08-06, tier: 3}

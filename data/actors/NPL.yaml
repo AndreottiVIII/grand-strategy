@@ -1,14 +1,96 @@
 id: NPL
 name: Nepal
+short: Nepal
 type: state
+coords: [85.32, 27.71]
 iso2: np
 wikipedia: https://en.wikipedia.org/wiki/Nepal
-coords:
-- 85.32
-- 27.71
 seat: Kathmandu
-regions:
-- world
-card: stub
+regions: ['south-central-asia']
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Turn hydropower into the main export and revenue line, with India as the buyer: 1,011 MW approved for export to India in July 2026, a 10,000 MW agreement over ten years, and a government roadmap of about 15,000 MW exported to India and Bangladesh by FY2034/35."
+      confidence: B
+      sources:
+        - {url: "https://diplomatnepal.com/news/india-to-buy-additional-200-mw-electricity-from-nepal/", title: "India to buy additional 200 MW electricity from Nepal", publisher: "Diplomat Nepal", date: 2026-07-18, tier: 3}
+        - {url: "https://www.b360nepal.com/detail/23256/pm-oli-announces-roadmap-to-export-10000mw-of-electricity-to-india-2024-Aug-23-152700", title: "PM Oli announces roadmap to export 10,000 MW of electricity to India", publisher: "Baburam Bhattarai / B360 Nepal", date: 2024-08-23, tier: 3}
+        - {url: "https://ekantipur.com/business/2026/07/24/en/earned-rs-2932-billion-from-electricity-exports-in-1-year-45-12.html", title: "From electricity importer to exporter in just 4 years: Nepal earned Rs 29.32 billion last year", publisher: "Kathmandu Post / Ekantipur", date: 2026-07-24, tier: 3}
+    - rank: 2
+      text: "Hold the Lipulekh, Kalapani and Limpiyadhura claims: the 2020 official map that Parliament endorsed, and protests against the India-China trade route through Lipulekh (August 2025, and again in 2026). India rejects the claims as 'unjustified cartographic assertion'."
+      confidence: A
+      sources:
+        - {url: "https://www.theweek.in/news/india/2020/05/20/india-reacts-sharply-to-nepal-releasing-new-map.amp.html", title: "India reacts sharply to Nepal releasing new map", publisher: "The Week", date: 2020-05-20, tier: 3}
+        - {url: "https://www.tribuneindia.com/news/world/nepal-objects-agreement-of-india-china-to-open-trade-route-via-lipulekh-asserting-its-claim/amp", title: "Nepal objects to India-China agreement to open trade route via Lipulekh, asserting its claim", publisher: "The Tribune", date: 2025-08-20, tier: 3}
+        - {url: "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/08/06/india-china-begin-trade-through-lipulekh-pass-despite-nepals-territorial-objections", title: "India, China begin trade through Lipulekh Pass despite Nepal's territorial objections", publisher: "The Star (Asia News Network)", date: 2026-08-06, tier: 3}
+    - rank: 3
+      text: "Finance the infrastructure it lacks without debt it cannot carry: Chinese money under the BRI (ten projects to be expedited after the December 2024 framework) and the US MCC compact (USD 500m for a 400kV transmission line and roads), both on grant terms that Beijing and Washington have each tested."
+      confidence: B
+      sources:
+        - {url: "https://sv7.thediplomat.com/2025/06/why-are-bri-projects-in-nepal-stalled", title: "Why are BRI projects in Nepal stalled?", publisher: "The Diplomat", date: 2025-06, tier: 3}
+        - {url: "https://kathmandupost.com/national/2025/02/20/mcc-funds-freeze-sparks-fears-of-project-delays", title: "MCC funds freeze sparks fears of project delays", publisher: "Kathmandu Post", date: 2025-02-20, tier: 3}
+        - {url: "https://kathmandupost.com/national/2025/07/26/us-pulls-mcc-nepal-compact-back-from-the-brink", title: "US pulls MCC Nepal compact back from the brink", publisher: "Kathmandu Post", date: 2025-07-26, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "Multi-alignment rather than a single patron: deals and visits with India, China, the US, the EU and the UK, with a stated aim of 'strategic autonomy'. Balendra Shah's government followed a June 2026 foreign-minister visit to Delhi that reaffirmed cooperation while Lipulekh stayed contested."
+      confidence: B
+      sources:
+        - {url: "https://chinaglobalsouth.com/analysis/nepal-election-india-china-balance-2026/", title: "Post-uprising polls won't shake Nepal's delicate India-China balance", publisher: "China Global South", date: 2026-03, tier: 3}
+        - {url: "https://www.arabnews.com/node/2634589/world", title: "Post-uprising polls won't shake Nepal's delicate India-China balance", publisher: "Arab News", date: 2026-03, tier: 3}
+    - domain: economic
+      text: "Export earnings from water and labour: electricity sold to India (Rs 29.32bn in the last fiscal year, per the Kathmandu Post) and migrant workers in the Gulf, Malaysia, Japan and South Korea, whose remittances the World Bank puts at about a quarter of GDP."
+      confidence: B
+      sources:
+        - {url: "https://ekantipur.com/business/2026/07/24/en/earned-rs-2932-billion-from-electricity-exports-in-1-year-45-12.html", title: "From electricity importer to exporter in just 4 years: Nepal earned Rs 29.32 billion last year", publisher: "Kathmandu Post / Ekantipur", date: 2026-07-24, tier: 3}
+        - {url: "https://www.worldbank.org/en/country/nepal/publication/unlocking-nepal-s-growth-potential", title: "Unlocking Nepal's growth potential", publisher: "World Bank", date: 2025-03-20, tier: 1}
+        - {url: "https://www.sharesansar.com/newsdetail/foreign-employment-nepalis-now-looking-beyond-mid-east-and-malaysia", title: "Foreign Employment: Nepalis now looking beyond Mid-east and Malaysia", publisher: "Sharesansar", date: 2025, tier: 3}
+    - domain: military
+      text: "Gurkha recruitment as leverage: Nepali soldiers serve in the Indian and British armies under the 1947 tripartite agreement; Kathmandu asked India to postpone recruitment rallies after Agnipath (2022), which it argues falls outside that treaty, and it asks Russia to stop recruiting its citizens."
+      confidence: B
+      sources:
+        - {url: "https://theprint.in/defence/indian-army-gorkha-regiment-nepal-agniveer/2753625/", title: "Indian Army Gorkha regiment, Nepal, Agniveer", publisher: "ThePrint", date: 2025, tier: 3}
+        - {url: "https://nepal.newschecker.co/en/english/why-has-nepal-suspended-the-recruitment-of-gorkhas-under-indias-agnipath-scheme", title: "Why has Nepal suspended the recruitment of Gorkhas under India's Agnipath scheme", publisher: "Newschecker Nepal", date: 2025, tier: 3}
+        - {url: "https://www.ukrinform.net/amp/rubric-ato/3796030-nepal-calls-on-russia-to-stop-recruiting-its-citizens-for-war.html", title: "Nepal calls on Russia to stop recruiting its citizens for war", publisher: "Ukrinform", date: 2025, tier: 3}
+
+  constraints:
+    - text: "Geography and India's grid: landlocked between India and China, Nepal's trade, fuel and power run through India, and transmission lines, not generation, cap the export volumes (India's approval is 1,011 MW; Bangladesh's deal is 40 MW a year, its 20 MW expansion held back by India's transmission limits)."
+      confidence: A
+      sources:
+        - {url: "https://diplomatnepal.com/news/india-to-buy-additional-200-mw-electricity-from-nepal/", title: "India to buy additional 200 MW electricity from Nepal", publisher: "Diplomat Nepal", date: 2026-07-18, tier: 3}
+        - {url: "https://asianews.network/nepal-to-export-40mw-power-to-bangladesh/", title: "Nepal to export 40MW power to Bangladesh", publisher: "Asia News Network", date: 2024-10, tier: 3}
+    - text: "Tibet and the northern border: China presses Kathmandu to restrict Tibetan refugees and their passage to India; the policy is reported, but the sources are undated or advocacy pieces, so the point is tier 4 and the confidence is low."
+      confidence: C
+      sources:
+        - {url: "https://www.asianews.it/en/east-asia/china/nepalese-government-no-more-refugees-from-tibet", title: "Nepalese government: No more refugees from Tibet", publisher: "AsiaNews", date: 2025, tier: 4}
+        - {url: "https://tsamtruk.com/2025/11/18/ten-years-on-speaking-for-tibetan-refugees-in-nepal-at-the-united-nations-in-geneva/", title: "Ten Years On: Speaking for Tibetan Refugees in Nepal at the United Nations in Geneva", publisher: "Tsamtruk (advocacy)", date: 2025-11-18, tier: 4}
+    - text: "Fragile growth: remittances are about a quarter of GDP (the Gulf takes most workers), the 2015 earthquake needed donor pledges of around USD 3bn led by India and China, and floods on the Trishuli River have delayed the MCC transmission project."
+      confidence: B
+      sources:
+        - {url: "https://www.worldbank.org/en/country/nepal/publication/unlocking-nepal-s-growth-potential", title: "Unlocking Nepal's growth potential", publisher: "World Bank", date: 2025-03-20, tier: 1}
+        - {url: "https://dialogue.earth/en/uncategorized/8024-india-and-china-lead-list-of-earthquake-aid-donors-to-nepal/", title: "India and China lead list of earthquake aid donors to Nepal", publisher: "China Dialogue", date: 2015-06, tier: 3}
+        - {url: "https://kathmandupost.com/national/2025/07/26/us-pulls-mcc-nepal-compact-back-from-the-brink", title: "US pulls MCC Nepal compact back from the brink", publisher: "Kathmandu Post", date: 2025-07-26, tier: 3}
+
+    - text: "Domestic legitimacy after the uprising: the Gen Z protests of September 2025 (social-media ban, parliament set on fire, 76-77 killed) brought down Oli; the interim government under Sushila Karki ran to the 5 March 2026 election, won by the RSP (182 of 275 seats) under Balendra Shah, sworn in on 27 March 2026. A government in its first year, with a new mandate and no coalition history, has little room to trade away claims or to take on new loans (inference: confidence B on the facts, the consequence is our reading)."
+      confidence: B
+      sources:
+        - {url: "https://www.channel4.com/news/nepal-pm-quits-after-deadly-gen-z-corruption-and-social-media-ban-protests", title: "Nepal PM quits after deadly Gen Z corruption and social media ban protests", publisher: "Channel 4 News", date: 2025-09-09, tier: 3}
+        - {url: "https://www.adaderana.lk/news/112325/nepal-parliament-breached-building-set-on-fire-by-gen-z-protesters", title: "Nepal Parliament breached, building set on fire by Gen Z protesters", publisher: "Ada Derana", date: 2025-09-09, tier: 3}
+        - {url: "https://chinaglobalsouth.com/analysis/nepal-election-india-china-balance-2026/", title: "Post-uprising polls won't shake Nepal's delicate India-China balance", publisher: "China Global South", date: 2026-03, tier: 3}
+        - {url: "https://www.scmp.com/news/asia/south-asia/article/3348119/balendra-shah-sworn-nepals-prime-minister", title: "Balendra Shah sworn in as Nepal's prime minister", publisher: "South China Morning Post", date: 2026-03-27, tier: 3}
+        - {url: "https://citizen.digital/article/ex-rapper-balendra-shah-sworn-in-as-nepal-prime-minister-after-sweeping-election-win-n379783", title: "Ex-rapper Balendra Shah sworn in as Nepal prime minister after sweeping election win", publisher: "Citizen Digital", date: 2026-03-27, tier: 3}
+        - {url: "https://en.wikipedia.org/wiki/Karki_interim_cabinet", title: "Karki interim cabinet (Wikipedia; pointer only, not verified against a primary source)", publisher: "Wikipedia", date: 2026-03, tier: 4}
+
+  paradoxes:
+    - text: "Its own claims raise the cost of the power trade it needs: the Lipulekh and Kalapani map gives India a reason to resist, while India is the only buyer large enough to make the hydropower roadmap work."
+      confidence: B
+      sources:
+        - {url: "https://www.tribuneindia.com/news/world/nepal-objects-agreement-of-india-china-to-open-trade-route-via-lipulekh-asserting-its-claim/amp", title: "Nepal objects to India-China agreement to open trade route via Lipulekh, asserting its claim", publisher: "The Tribune", date: 2025-08-20, tier: 3}
+        - {url: "https://diplomatnepal.com/news/india-to-buy-additional-200-mw-electricity-from-nepal/", title: "India to buy additional 200 MW electricity from Nepal", publisher: "Diplomat Nepal", date: 2026-07-18, tier: 3}
+
+  reading: |
+    Nepal is a landlocked hedger between India and China, and its grand strategy has been to get paid for its water and its people while keeping its border claims alive. The September 2025 Gen Z uprising, which brought down Oli and put Sushila Karki in charge of a six-month interim, ended with the March 2026 election, won outright by the Rastriya Swatantra Party (182 of 275 seats) and its prime minister Balendra Shah. The new government has to show that the India-China balance survives its own warmer reset with Delhi and the Lipulekh friction, and that the power and labour economy can carry the state through the next earthquake or flood.
