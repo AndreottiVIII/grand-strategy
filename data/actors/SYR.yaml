@@ -1,14 +1,173 @@
 id: SYR
 name: Syria
+short: Syria
 type: state
 iso2: sy
 wikipedia: https://en.wikipedia.org/wiki/Syria
-coords:
-- 36.29
-- 33.51
+coords: [36.29, 33.51]
 seat: Damascus
-regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+regions: [middle-east]
+card: full
+tier: protagonist
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Monopolise force over the whole territory: fold the SDF and the Autonomous Administration into the army (the SDF announced its dissolution on 25 Aug 2026, self-reported), bring Suwayda (the last area outside Damascus's control) and the coast under the state, and absorb the former rebel factions into one army."
+      confidence: B
+      sources:
+        - {url: "https://aljazeera.com/news/2026/8/25/kurdish-led-forces-in-syria-dissolve-after-merging-with-the-army", title: "Kurdish-led SDF announces dissolution after merging with Syria's military", publisher: "Al Jazeera", date: 2026-08-25, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/1/9/aleppo-clashes-highlight-challenge-of-sdf-integration-for-syria", title: "Clashes in Aleppo highlight challenge of SDF integration for Syria", publisher: "Al Jazeera", date: 2026-01-09, tier: 3}
+        - {url: "https://english.aawsat.com/arab-world/5327141-condemnation-sweida-hijri-followers-rally-israel-oct-7-anniversary", title: "Condemnation in Sweida as Hijri followers rally for Israel on Oct. 7 anniversary", publisher: "Asharq Al-Awsat", date: 2026-10, tier: 3}
+    - rank: 2
+      text: "Win international legitimacy and shed the terrorist past: UN delisting of al-Sharaa and his interior minister (resolution 2799, 6 Nov 2025), the US sanctions programme terminated by executive order (30 Jun 2025) and the Caesar Act repealed in the FY2026 NDAA (December 2025), EU economic sanctions lifted (May 2025), a White House visit (10 Nov 2025)."
+      confidence: A
+      sources:
+        - {url: "https://www.asil.org/ILIB/un-security-council-removes-syrian-officials-sanctions-list", title: "UN Security Council removes Syrian officials from sanctions list", publisher: "American Society of International Law (International Legal Materials brief)", date: 2025-11, tier: 2}
+        - {url: "https://www.cbsnews.com/amp/news/trump-executive-order-syria-sanctions", title: "Trump signs executive order eliminating Syria sanctions program", publisher: "CBS News", date: 2025-06-30, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2025/12/11/us-congress-advances-bill-to-nix-caesar-act-sanctions-on-syria", title: "US Congress advances bill to nix Caesar Act sanctions on Syria", publisher: "Al Jazeera", date: 2025-12-11, tier: 3}
+        - {url: "https://north-africa-middle-east-gulf.ec.europa.eu/news/syria-council-statement-lifting-eu-economic-sanctions-2025-05-21_en", title: "Syria - Council statement on lifting EU economic sanctions", publisher: "European Union (EEAS/Council)", date: 2025-05-21, tier: 1}
+    - rank: 3
+      text: "Finance reconstruction without a new patron-dependence: the World Bank puts the physical reconstruction bill at USD 216bn (baseline), against an economy of roughly a tenth of that; Damascus claims USD 28bn of foreign investment in 2026 and courts Gulf, Turkish and Western capital (ports, power, telecom, property)."
+      confidence: B
+      sources:
+        - {url: "https://qna.org.qa/en/News-Area/News/2025-10/21/world-bank-estimates-syria-reconstruction-cost-at-usd-216-billion", title: "World Bank estimates Syria reconstruction cost at USD 216 billion", publisher: "Qatar News Agency (World Bank report)", date: 2025-10-21, tier: 3}
+        - {url: "https://www.khaleejtimes.com/uae/ahmed-al-sharaa-highlights-uae-investment-syria", title: "Al Sharaa highlights UAE investment in Syria, says stability is shared regional interest", publisher: "Khaleej Times", date: 2026-09-15, tier: 3}
+        - {url: "https://www.newarab.com/news/saudi-arabia-set-announce-major-new-syria-investments", title: "Saudi Arabia set to announce major new Syria investments, Syrian official says", publisher: "The New Arab", date: 2026-02, tier: 3}
+    - rank: 4
+      text: "Push Israel back to the 1974 lines and sign a security arrangement that keeps the Golan claim alive and does not restrict Syria's right to rebuild its army or choose its alliances; in the meantime avoid war with a stronger neighbour."
+      confidence: B
+      sources:
+        - {url: "https://www.khaleejtimes.com/mena/syria-israel-us-mediated-talks-tensions-strikes-territory", title: "Syria, Israel hold US-mediated talks to ease tensions, state news agency says", publisher: "Khaleej Times", date: 2026-08-23, tier: 3}
+        - {url: "https://english.aawsat.com/arab-world/5300382-sharaa-syria-seeks-security-deal-israel-participation-several-countries", title: "Sharaa: Syria seeks security deal with Israel with participation of several countries", publisher: "Asharq Al-Awsat", date: 2026-07-26, tier: 3}
+    - rank: 5
+      text: "Hold a multi-patron balance: Turkey for the army and the north, the Gulf for money, Washington for legitimacy and sanctions relief, Moscow kept at a distance (Hmeimim and the Tartus berth converted into joint training centres, memorandum of 9 Aug 2026), Europe for markets and a partnership agreement."
+      confidence: B
+      sources:
+        - {url: "https://wtop.com/world/2026/08/syria-agrees-deal-with-russia-over-future-use-of-2-key-mediterranean-bases/", title: "Syria agrees deal with Russia over future use of 2 key Mediterranean bases", publisher: "Associated Press (via WTOP)", date: 2026-08-09, tier: 3}
+        - {url: "https://english.enabbaladi.net/archives/2026/09/damascus-seeks-new-partnership-deal-with-eu/", title: "Damascus seeks new partnership deal with EU", publisher: "Enab Baladi", date: 2026-09, tier: 3}
+        - {url: "https://english.enabbaladi.net/archives/2025/08/syria-turkey-military-agreement-a-new-approach-constrained-by-limits/", title: "Syria-Turkey military agreement: a new approach constrained by limits", publisher: "Enab Baladi", date: 2025-08, tier: 3}
+    - rank: 6
+      text: "Make Syria useful rather than a threat: joined the counter-ISIS coalition (10 Nov 2025), took over the ISIS prisons, seizes Hezbollah-bound arms on the Lebanese and Iraqi borders, and pitches itself as a transit corridor (Gulf gas via Jordan, Azerbaijani gas via Turkey, Iraqi oil via Baniyas)."
+      confidence: B
+      sources:
+        - {url: "https://www.al-monitor.com/originals/2025/11/syria-joins-alliance-against-islamic-state-after-white-house-talks", title: "Syria joins alliance against Islamic State after White House talks", publisher: "Al-Monitor", date: 2025-11-10, tier: 3}
+        - {url: "https://www.al-monitor.com/originals/2026/07/syria-seizes-arms-shipment-iraq-border-destined-hezbollah", title: "Syria seizes arms shipment on Iraq border destined for Hezbollah", publisher: "Al-Monitor", date: 2026-07-16, tier: 3}
+        - {url: "https://english.enabbaladi.net/archives/2025/11/iraq-and-syria-agree-to-assess-the-kirkuk-baniyas-pipeline/", title: "Iraq and Syria agree to assess the Kirkuk-Baniyas pipeline", publisher: "Enab Baladi", date: 2025-11, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "Leader-level multi-alignment: Trump in Riyadh (May 2025) and the White House (10 Nov 2025), Macron in Paris (7 May 2025), Putin in Moscow twice (Oct 2025, 28 Jan 2026), Merz in Berlin and Starmer in London (March 2026), Gulf capitals, and a Kallas visit to Damascus (29 Sep 2026). Foreign Minister Shaibani works the Israeli, EU and Chinese files."
+      confidence: B
+      sources:
+        - {url: "https://www.axios.com/2025/11/10/trump-holds-first-ever-white-house-meeting-with-syrian-leader", title: "Trump holds first-ever White House meeting with Syrian leader", publisher: "Axios", date: 2025-11-10, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/1/28/syrias-al-sharaa-discusses-fate-of-russian-military-bases-with-putin", title: "Al-Sharaa meets Putin as Russia seeks to secure military bases in Syria", publisher: "Al Jazeera", date: 2026-01-28, tier: 3}
+        - {url: "https://www.newarab.com/news/sharaa-meets-starmer-first-uk-visit-syria-bolsters-ties", title: "Sharaa meets Starmer in first UK visit as Syria seeks stronger European ties", publisher: "The New Arab", date: 2026-03-31, tier: 3}
+    - domain: informational
+      text: "Self-presentation as a counter-terror partner and a stabiliser rather than a security threat (al-Sharaa to Fox News: Syria should be seen as a geopolitical ally); national fact-finding committee and public trials (from 17 Nov 2025) to answer the accusations over the March 2025 coastal killings; SANA as the channel for all positions."
+      confidence: B
+      sources:
+        - {url: "https://www.dawn.com/news/1954489/syria-joins-alliance-against-is-after-white-house-talks", title: "Syria joins alliance against IS after White House talks", publisher: "Dawn (AFP)", date: 2025-11-11, tier: 3}
+        - {url: "https://english.enabbaladi.net/archives/2025/11/fact-finding-committee-announces-start-of-trials-for-suspects-in-syrias-coastal-region-violence", title: "Fact-finding committee announces start of trials for suspects in Syria's coastal-region violence", publisher: "Enab Baladi", date: 2025-11, tier: 3}
+    - domain: military
+      text: "A new army built by absorption, not conquest: ex-rebel factions, six thousand registered SDF fighters by July 2026 (government source, unconfirmed officially), Turkish training under the 13 Aug 2025 agreement, hand-over of the Tanf base (Feb 2026) and the al-Hol camp, and thousands of troops moved to the Lebanese border in March 2026."
+      confidence: B
+      sources:
+        - {url: "https://english.enabbaladi.net/archives/2026/07/government-source-6000-sdf-members-join-syrian-army/", title: "Government source: 6,000 SDF members join Syrian army", publisher: "Enab Baladi", date: 2026-07-02, tier: 3}
+        - {url: "https://www.longwarjournal.org/archives/2026/02/syrian-government-and-sdf-continue-transition-us-strikes-islamic-state-and-withdraws-from-tanf.php", title: "Syrian government and SDF continue transition, US strikes Islamic State and withdraws from Tanf", publisher: "FDD's Long War Journal", date: 2026-02-18, tier: 2}
+        - {url: "https://www.thenationalnews.com/news/mena/2026/03/03/syria/", title: "Syrian forces sent to face Kurdish-led militias have moved to the border with Lebanon", publisher: "The National (AFP)", date: 2026-03-03, tier: 3}
+    - domain: economic
+      text: "Concessions and corridors paid for by others: DP World's 30-year Tartus concession (USD 800m pledged), AD Ports' 20% of the Latakia container terminal, Eagle Hills' USD 20bn property plans, Qatari-funded gas via Jordan and via Turkey, Saudi telecom and airline deals, Saudi and Qatari payment of Syria's World Bank arrears (USD 15.5m, 2025) that reopened multilateral lending."
+      confidence: B
+      sources:
+        - {url: "https://semafor.com/article/07/16/2026/uae-developer-alabbar-to-invest-20b-in-syria-developments", title: "UAE developer Alabbar to invest USD 20bn in Syria developments", publisher: "Semafor", date: 2026-07-16, tier: 3}
+        - {url: "https://www.yahoo.com/news/world-bank-says-saudi-arabia-150723715.html", title: "World Bank says Saudi Arabia and Qatar have paid off Syria's outstanding debt", publisher: "Associated Press (via Yahoo News)", date: 2025-05, tier: 3}
+        - {url: "https://www.semafor.com/article/08/04/2025/qatar-boost-power-generation-in-syria-with-azeri-gas", title: "Qatar to boost power generation in Syria with Azeri gas", publisher: "Semafor", date: 2025-08-04, tier: 3}
+
+  constraints:
+    - text: "A ruined economy: the World Bank counts USD 108bn of direct physical damage and USD 216bn (range 140-345bn) to rebuild, about ten times the 2024 economy; aid cuts and a low power supply (gas deliveries add only a few hours a day) leave the state dependent on pledges, many of them unconfirmed MoUs."
+      confidence: B
+      sources:
+        - {url: "https://english.enabbaladi.net/archives/2025/10/world-bank-rebuilding-syria-will-cost-216-billion", title: "World Bank: Rebuilding Syria will cost USD 216 billion", publisher: "Enab Baladi", date: 2025-10, tier: 3}
+        - {url: "https://www.yahoo.com/news/articles/qatar-boosts-power-generation-syria-123301237.html", title: "Qatar boosts power generation in Syria with Azeri gas", publisher: "Semafor (via Yahoo News)", date: 2025-08, tier: 3}
+    - text: "Israel holds a security zone in the south (nine bases and outposts from Mount Hermon to Daraa and Quneitra per ACLED, June 2026; 84 ground incursions in May 2026 alone) and its defence minister says the troops stay 'for an unlimited period'; Syria has no air defence to contest it and the 1974 line is unenforced."
+      confidence: B
+      sources:
+        - {url: "https://acleddata.com/expert-comment/israel-redrawing-syrian-border-under-guise-security", title: "Israel redrawing the Syrian border under the guise of security", publisher: "ACLED", date: 2026-06, tier: 2}
+        - {url: "https://www.arabnews.pk/node/2652395/middle-east", title: "Syria president says his country seeks security deal with Israel", publisher: "Arab News", date: 2026-07-26, tier: 3}
+    - text: "Unfinished minority files: the March 2025 coastal killings (about 1,400 dead per the UN Commission of Inquiry, which found probable war crimes by government-linked forces and by Assad loyalists), Suwayda outside state control since the July 2025 Druze-Bedouin-government clashes (a National Guard under Sheikh Hijri, fighting again on 31 Aug 2026), and a Kurdish integration still more declared than tested."
+      confidence: A
+      sources:
+        - {url: "https://www.ecoi.net/en/file/local/2132228/a-hrc-59-crp4-en.pdf", title: "Report of the Independent International Commission of Inquiry on the Syrian Arab Republic (A/HRC/59/CRP.4), March 2025 coastal violence", publisher: "United Nations Human Rights Council", date: 2025-08, tier: 1}
+        - {url: "https://www.euaa.europa.eu/syria-security-situation/2133-security-trends", title: "Syria security situation - security trends", publisher: "European Union Agency for Asylum", date: 2026, tier: 1}
+    - text: "A thin counter-terror capacity and a US exit: US forces left Tanf (11 Feb 2026) and reportedly Shaddadi, about 1,000 remain, and more than 5,700 ISIS detainees were moved to Iraq (21 Jan - 12 Feb 2026) because the camps could not be held; analysts doubt Damascus can fill the gap. A US soldier-and-interpreter killing at Palmyra (13 Dec 2025) shows the exposure."
+      confidence: B
+      sources:
+        - {url: "https://www.longwarjournal.org/archives/2026/02/syrian-government-and-sdf-continue-transition-us-strikes-islamic-state-and-withdraws-from-tanf.php", title: "Syrian government and SDF continue transition, US strikes Islamic State and withdraws from Tanf", publisher: "FDD's Long War Journal", date: 2026-02-18, tier: 2}
+        - {url: "https://365.military.com/daily-news/2026/01/21/us-military-transfers-150-islamic-state-group-detainees-syria-iraq.html", title: "US military transfers 150 Islamic State group detainees from Syria to Iraq", publisher: "Military.com", date: 2026-01-21, tier: 3}
+    - text: "Sanctions relief is conditional on conduct: the Caesar repeal carries a review every 180 days for four years (counter-ISIS, minority rights) and allows targeted sanctions if Damascus 'is off track'; the EU keeps Assad-related and security listings; Egypt rejected a Syrian ambassador in June 2026 and Iraq's Shia factions blocked al-Sharaa from the 2025 Baghdad Arab League summit."
+      confidence: B
+      sources:
+        - {url: "https://www.newarab.com/news/us-senate-repeals-caesar-act-amid-intensified-fight-syria", title: "US Senate repeals Caesar Act amid intensified fight against IS in Syria", publisher: "The New Arab", date: 2025-12, tier: 3}
+        - {url: "https://www.al-monitor.com/originals/2026/06/egypt-rejects-syrian-ambassador-ties-strain-under-sharaa", title: "Egypt rejects Syrian ambassador as ties strain under Sharaa", publisher: "Al-Monitor", date: 2026-06, tier: 3}
+        - {url: "https://shafaq.com/en/Iraq/Foreign-Minister-to-represent-Syria-as-al-Sharaa-skips-Baghdad-Summit", title: "Foreign minister to represent Syria as al-Sharaa skips Baghdad summit", publisher: "Shafaq News", date: 2025-05, tier: 3}
+    - text: "Refugee and foreign-fighter pressure from outside: Germany's chancellor said 80% of the 900,000 Syrians in Germany should return within three years (March 2026), which Damascus says it cannot absorb, and China presses to remove about 20,000 Uyghurs it fears (and Damascus has pledged that no group will threaten Chinese interests)."
+      confidence: B
+      sources:
+        - {url: "https://en.ara.cat/international/germany-says-it-will-return-80-of-syrian-refugees-in-the-next-three-years_1_5694364.html", title: "Germany says it will return 80% of Syrian refugees in the next three years", publisher: "Ara", date: 2026-03, tier: 3}
+        - {url: "https://www.npr.org/2026/05/25/nx-s1-5553312/how-uyghurs-from-china-helped-syrian-rebels-overthrow-bashar-al-assad", title: "How Uyghurs from China helped Syrian rebels overthrow Bashar al-Assad", publisher: "NPR", date: 2026-05-25, tier: 3}
+
+  paradoxes:
+    - text: "Turkish protection against Israel draws the Israeli fire it is meant to deter. Ankara's training, air-defence and base plans are the reason Damascus feels able to resist Israeli demands, yet Israel struck the runway of Abu al-Duhur eight times on 18 Aug 2026 precisely because Syria was about to host Turkish troops ('we will not tolerate a Turkish military foothold moving south'); Damascus then cut contact with Israel before returning to the talks on 23 Aug."
+      confidence: B
+      sources:
+        - {url: "https://www.thenationalnews.com/news/mena/2026/08/19/us-working-on-deconfliction-mechanism-between-turkey-syria-and-israel-says-barrack/", title: "US working on deconfliction mechanism between Turkey, Syria and Israel, says Barrack", publisher: "The National", date: 2026-08-19, tier: 3}
+        - {url: "https://www.khaleejtimes.com/mena/syria-israel-us-mediated-talks-tensions-strikes-territory", title: "Syria, Israel hold US-mediated talks to ease tensions, state news agency says", publisher: "Khaleej Times", date: 2026-08-23, tier: 3}
+    - text: "Winning the east removed the buffer that held the Islamic State. Taking over the SDF's territory, camps and prisons in January 2026 gave Damascus unity on paper, but the US then left Tanf and Shaddadi and moved the detainees to Iraq, so the state that wanted to show itself as an indispensable counter-ISIS partner now carries the weight of the fight with a young army and fewer American eyes."
+      confidence: B
+      sources:
+        - {url: "https://www.longwarjournal.org/archives/2026/02/syrian-government-and-sdf-continue-transition-us-strikes-islamic-state-and-withdraws-from-tanf.php", title: "Syrian government and SDF continue transition, US strikes Islamic State and withdraws from Tanf", publisher: "FDD's Long War Journal", date: 2026-02-18, tier: 2}
+        - {url: "https://www.newstalkzb.co.nz/news/world/us-and-allies-launch-large-scale-syria-strikes-on-is-after-palmyra-deaths/", title: "US and allies launch large-scale Syria strikes on IS after Palmyra deaths", publisher: "NewstalkZB (AFP)", date: 2026-01, tier: 3}
+    - text: "Using force to unify the state produces the violence that Western money and Israel's pretext depend on. The coastal killings of March 2025 and the Suwayda clashes of July 2025 each came out of an attempt to extend control, and each handed critics a condition (the 180-day Caesar review, the UN inquiry) and handed Israel a protector's role over the Druze; Sweida's Hijri now rallies for Israel."
+      confidence: B
+      sources:
+        - {url: "https://www.jurist.org/news/2025/08/un-syria-commission-urges-accountability-for-coastal-violence-affecting-minority-communities/", title: "UN Syria Commission urges accountability for coastal violence affecting minority communities", publisher: "Jurist", date: 2025-08, tier: 3}
+        - {url: "https://english.aawsat.com/arab-world/5327141-condemnation-sweida-hijri-followers-rally-israel-oct-7-anniversary", title: "Condemnation in Sweida as Hijri followers rally for Israel on Oct. 7 anniversary", publisher: "Asharq Al-Awsat", date: 2026-10, tier: 3}
+    - text: "Closing the door on Moscow weakens the one great power that could police the south. The 9 Aug 2026 memorandum turns Hmeimim and the Tartus berth into joint training centres and wins Western favour, but a Syrian source said before the January 2026 Moscow talks that al-Sharaa might ask for Russian military police as a guarantor against Israeli encroachment (reported, not confirmed), and the exiled Assad is still in Russia. Distancing Russia raises Syria's exposure to the Israel and Turkey pair it has to balance."
+      confidence: C
+      sources:
+        - {url: "https://wtop.com/world/2026/08/syria-agrees-deal-with-russia-over-future-use-of-2-key-mediterranean-bases/", title: "Syria agrees deal with Russia over future use of 2 key Mediterranean bases", publisher: "Associated Press (via WTOP)", date: 2026-08-09, tier: 3}
+        - {url: "https://www.yahoo.com/news/articles/syrian-president-putin-talks-request-184310268.html", title: "Syrian president to use Putin talks to request extradition of deposed president Assad, sources say", publisher: "Yahoo News", date: 2026-01, tier: 3}
+    - text: "The same army cannot face every front. The brigades sent against the Kurdish militias in January 2026 were moved to the Lebanese border in March, when the Iran war began; Trump's idea that Syria 'finish the job' against Hezbollah was disowned by al-Sharaa, who needs the border quiet to sell Syria as a corridor but would lose his Western credit if Hezbollah's supply line reopened."
+      confidence: B
+      sources:
+        - {url: "https://www.thenationalnews.com/news/mena/2026/03/03/syria/", title: "Syrian forces sent to face Kurdish-led militias have moved to the border with Lebanon", publisher: "The National (AFP)", date: 2026-03-03, tier: 3}
+        - {url: "https://www.thenationalnews.com/news/mena/2026/06/24/syria-lebanon-hezbollah/", title: "No new Syrian troop build-up at border as Al Shara weighs Lebanon dilemma", publisher: "The National", date: 2026-06-24, tier: 3}
+    - text: "Dependence is the price of the independence on offer: every patron funds a different Syria. Qatar pays for gas to run the grid, Saudi Arabia and the UAE for ports and telecoms, Turkey for the army, Washington for the sanctions waiver, Brussels and Berlin ask for refugee return in exchange for the partnership deal. Diversifying the patrons protects al-Sharaa from any one of them and leaves him answerable to all of them at once (Damascus told Israel it will not accept limits on its alliances; the commitments already made are the limits)."
+      confidence: C
+      sources:
+        - {url: "https://english.enabbaladi.net/archives/2026/09/damascus-seeks-new-partnership-deal-with-eu/", title: "Damascus seeks new partnership deal with EU", publisher: "Enab Baladi", date: 2026-09, tier: 3}
+        - {url: "https://pgjonline.com/news/2025/march/qatar-to-supply-gas-to-syria-through-jordan-with-us-approval-sources-say", title: "Qatar to provide gas to Syria via Jordan with a U.S. nod, sources say", publisher: "Reuters (via PGJ Online)", date: 2025-03, tier: 3}
+        - {url: "https://www.khaleejtimes.com/mena/syria-israel-us-mediated-talks-tensions-strikes-territory", title: "Syria, Israel hold US-mediated talks to ease tensions, state news agency says", publisher: "Khaleej Times", date: 2026-08-23, tier: 3}
+
+  reading: |
+    Syria under Ahmed al-Sharaa runs the grand strategy of a victorious insurgency
+    that has to become a state before its patrons lose patience. The rank order of the
+    objectives is the order of the dangers: first the monopoly of force (the SDF
+    deal, Suwayda, the coast), then legitimacy (delistings, sanctions relief, Caesar
+    repeal), then money. The method is multi-alignment at the leader level, with no
+    patron allowed to own the state: Turkey for the army, the Gulf for the cash,
+    Washington for the permission to trade, Russia kept only as a training partner,
+    Iran expelled. The Luttwak pattern is that each move that builds the state
+    also invites an outsider into it: the Turkish umbrella draws the Israeli strike,
+    the conquest of the east takes away the American cover, the pressure on
+    minorities supplies the conditions that Western money carries. Signals that are
+    not rows: the Syrian army's deployment to the Lebanese border in March 2026,
+    al-Sharaa's refusal to attend the 2025 Baghdad summit, and Egypt's refusal of a
+    Syrian ambassador. Open question for the next review: whether the 25 Aug SDF
+    dissolution survives its first test in Hasakah and Kobani, and whether an
+    Israeli security agreement is signed or the south settles into a frozen
+    occupation. Not read in this pass: Crisis Group and Carnegie analyses of 2026
+    (the search budget ran out), so grades on Israel, Russia and China rest on press
+    and official statements.

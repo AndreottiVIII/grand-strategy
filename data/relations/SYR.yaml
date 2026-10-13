@@ -1,0 +1,484 @@
+from: SYR
+relations:
+  # ---------- objective ----------
+  - to: nsa-sdf
+    layer: objective
+    type: influence_goal
+    summary: "Damascus aims to end the SDF and the Autonomous Administration as autonomous armed and civil structures and fold them into the Defence and Interior ministries; Mazloum Abdi announced the dissolution at the presidential palace on 25 Aug 2026 (self-reported), while Kurdish-language education and decentralisation remain promised, not delivered. Mirrors Turkey's row toward the SDF (same Long War Journal source)."
+    since: 2025-03-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://aljazeera.com/news/2026/8/25/kurdish-led-forces-in-syria-dissolve-after-merging-with-the-army", title: "Kurdish-led SDF announces dissolution after merging with Syria's military", publisher: "Al Jazeera", date: 2026-08-25, tier: 3}
+      - {url: "https://www.longwarjournal.org/archives/2025/10/sdf-moves-forward-with-integration-into-new-syrian-security-forces.php", title: "SDF moves forward with integration into new Syrian security forces", publisher: "FDD's Long War Journal", date: 2025-10-17, tier: 2}
+  - to: ISR
+    layer: objective
+    type: territorial_claim
+    summary: "Syria holds that the Golan is occupied Syrian land and demands, as its immediate priorities, an Israeli withdrawal to the positions held before 8 Dec 2024 and the restoration of the 1974 disengagement agreement, while saying it will not accept limits on rebuilding its army or choosing its alliances."
+    since: 2024-12-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.khaleejtimes.com/mena/syria-israel-us-mediated-talks-tensions-strikes-territory", title: "Syria, Israel hold US-mediated talks to ease tensions, state news agency says", publisher: "Khaleej Times", date: 2026-08-23, tier: 3}
+      - {url: "https://english.aawsat.com/arab-world/5300382-sharaa-syria-seeks-security-deal-israel-participation-several-countries", title: "Sharaa: Syria seeks security deal with Israel with participation of several countries", publisher: "Asharq Al-Awsat", date: 2026-07-26, tier: 3}
+  - to: RUS
+    layer: objective
+    type: influence_goal
+    summary: "Damascus wants Russia's wheat, compensation and reconstruction help and the extradition of Bashar al-Assad, who lives in Russia; the Kremlin has not answered the extradition request. A source said before the 28 Jan 2026 Moscow talks that al-Sharaa might also ask for Russian military police as a guarantor against Israel (reported, not confirmed)."
+    since: 2025-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.yahoo.com/news/articles/syrian-president-putin-talks-request-184310268.html", title: "Syrian president to use Putin talks to request extradition of deposed president Assad, sources say", publisher: "Yahoo News", date: 2026-01, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2026/1/28/syrias-al-sharaa-discusses-fate-of-russian-military-bases-with-putin", title: "Al-Sharaa meets Putin as Russia seeks to secure military bases in Syria", publisher: "Al Jazeera", date: 2026-01-28, tier: 3}
+  - to: IRN
+    layer: objective
+    type: influence_goal
+    summary: "Damascus's aim is to keep Iran and its networks out of Syria (the former patron has no embassy-level relations; Araghchi said in May 2025 that there were no relations and no rush); Tehran's Fars News alleged in March 2026 'unusual activity' by foreign advisers in Damascus."
+    since: 2024-12-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://iranwire.com/en/news/141412-no-rush-to-restore-relations-with-syria-irans-foreign-minister-says/", title: "No rush to restore relations with Syria, Iran's foreign minister says", publisher: "IranWire", date: 2025, tier: 3}
+      - {url: "https://english.enabbaladi.net/archives/2026/03/on-the-front-lines-why-is-tehran-threatening-damascus/", title: "On the front lines: why is Tehran threatening Damascus?", publisher: "Enab Baladi", date: 2026-03, tier: 3}
+  - to: DEU
+    layer: objective
+    type: influence_goal
+    summary: "Berlin wants a large and fast return of Syrian refugees (Merz, March 2026, 80% of over 900,000 within three years) and has resumed deportations of convicted criminals; Damascus asks for time, saying a rapid return would worsen the humanitarian situation. 3,678 Syrians returned voluntarily from Germany in 2025."
+    since: 2025-05
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://en.ara.cat/international/germany-says-it-will-return-80-of-syrian-refugees-in-the-next-three-years_1_5694364.html", title: "Germany says it will return 80% of Syrian refugees in the next three years", publisher: "Ara", date: 2026-03, tier: 3}
+      - {url: "https://migrando.de/en/news/general/abschiebungen-syrien-regierung-bittet-um-zeit/", title: "Deportations: Syrian government asks for time", publisher: "Migrando", date: 2026, tier: 4}
+      - {url: "https://www.bluewin.ch/en/news/international/eu-commissioner-backs-voluntary-return-to-syria-3074783.html", title: "EU Commissioner backs voluntary return to Syria", publisher: "Bluewin", date: 2026-01, tier: 3}
+
+  # ---------- action: visits, agreements, sanctions, incidents ----------
+  - to: TUR
+    layer: action
+    type: agreement
+    summary: "The two defence ministries signed a military training and consultancy agreement on 13 Aug 2025 (training, demining, cyber, logistics, intelligence exchange); a broader defence pact and Turkish air bases (T4/Tiyas, air defence) were reported but are not confirmed by either government. Mirrors Turkey's row toward Syria, same Enab Baladi source."
+    since: 2025-08-13
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://english.enabbaladi.net/archives/2025/08/syria-turkey-military-agreement-a-new-approach-constrained-by-limits/", title: "Syria-Turkey military agreement: a new approach constrained by limits", publisher: "Enab Baladi", date: 2025-08, tier: 3}
+      - {url: "https://www.yahoo.com/news/turkey-backing-syrias-military-no-110452050.html", title: "Turkey backing Syria's military and has no immediate withdrawal plans, defense minister says", publisher: "Yahoo News / Reuters", date: 2025, tier: 3}
+  - to: nsa-sdf
+    layer: action
+    type: agreement
+    summary: "After the Aleppo fighting of early January 2026 (at least 22 killed), the government and the SDF signed a ceasefire and integration deal around 18-30 Jan 2026 - SDF pull-back east of the Euphrates, Raqqa and Deir ez-Zor to the state, border crossings and oil and gas fields to the government, three SDF brigades in Hasakah and one for Kobani; Turkey welcomed it and urged transparent implementation. Analysts called the text 'more like an advanced MoU'."
+    since: 2026-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.pukmedia.com/EN/Details/80217", title: "Syria and SDF sign ceasefire and integration agreement", publisher: "PUKmedia", date: 2026-01, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2026/1/9/aleppo-clashes-highlight-challenge-of-sdf-integration-for-syria", title: "Clashes in Aleppo highlight challenge of SDF integration for Syria", publisher: "Al Jazeera", date: 2026-01-09, tier: 3}
+      - {url: "https://pukmedia.com/EN/Details/80404", title: "Türkiye welcomes Damascus-SDF integration deal, urges transparent implementation", publisher: "PUKmedia", date: 2026-02, tier: 3}
+  - to: ISR
+    layer: action
+    type: incident
+    summary: "Israel carried out eight air strikes on the runway of the Abu al-Duhur airfield in Idlib on 18 Aug 2026, saying Syria was about to let Turkish troops deploy there; Turkey called the claim 'frivolous'; US envoy Barrack called the strikes 'unnecessary' and said a Turkey-Syria-Israel deconfliction mechanism was being worked on. Damascus cut contact with Israel until 23 Aug. Mirrors Turkey's row toward Israel (same sources)."
+    since: 2026-08-18
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.thenationalnews.com/news/mena/2026/08/19/us-working-on-deconfliction-mechanism-between-turkey-syria-and-israel-says-barrack/", title: "US working on deconfliction mechanism between Turkey, Syria and Israel, says Barrack", publisher: "The National", date: 2026-08-19, tier: 3}
+      - {url: "https://www.al-monitor.com/originals/2026/08/turkey-rejects-israeli-claims-after-strike-syria-air-base", title: "Turkey rejects Israeli claims after strike on Syria air base", publisher: "Al-Monitor", date: 2026-08, tier: 3}
+      - {url: "https://english.aawsat.com/arab-world/5308616-t%C3%BCrkiye-rejects-israeli-claims-after-strike-syria-air-base", title: "Türkiye rejects Israeli claims after strike on Syria air base", publisher: "Asharq Al-Awsat", date: 2026-08, tier: 3}
+  - to: ISR
+    layer: action
+    type: agreement
+    summary: "US-mediated security talks (Paris, July-August 2025 and January 2026, where Shaibani later said the sides agreed on paper to almost everything, including security zones in the south and a UN-only buffer; Jordan, 23 Aug 2026). No security or de-escalation agreement has been signed; Damascus doubts Israel would implement one."
+    since: 2025-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.khaleejtimes.com/mena/syria-israel-us-mediated-talks-tensions-strikes-territory", title: "Syria, Israel hold US-mediated talks to ease tensions, state news agency says", publisher: "Khaleej Times", date: 2026-08-23, tier: 3}
+      - {url: "https://english.enabbaladi.net/archives/2026/01/syria-and-israel-agree-to-speed-up-security-agreement-talks/", title: "Syria and Israel agree to speed up security agreement talks", publisher: "Enab Baladi", date: 2026-01, tier: 3}
+      - {url: "https://www.longwarjournal.org/archives/2025/09/israel-and-syria-close-to-a-security-agreement.php", title: "Israel and Syria close to a security agreement", publisher: "FDD's Long War Journal", date: 2025-09, tier: 2}
+  - to: SAU
+    layer: action
+    type: visit
+    summary: "Al-Sharaa met Mohammed bin Salman in Riyadh on 6 Oct 2026; Reuters reported Damascus weighing military help for Saudi Arabia against the Houthis, which Syria's presidency denies Riyadh requested. Mirrors the Saudi row's source."
+    since: 2026-10-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.thestar.com.my/news/world/2026/10/08/syria-weighs-military-aid-for-saudi-arabia-amid-yemen-war-sources-say", title: "Syria weighs military aid for Saudi Arabia amid Yemen war, sources say", publisher: "The Star (Reuters)", date: 2026-10-08, tier: 3}
+  - to: EGY
+    layer: action
+    type: visit
+    summary: "Sisi and al-Sharaa met on 5 Mar 2025; Shaibani was received in Cairo on 3 May 2026; Al-Monitor reports Egypt rejected a Syrian ambassador in June 2026. Mirrors the Egyptian stance's sources."
+    since: 2025-03-05
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://egyptianstreets.com/2025/03/05/egypt-syria-seek-stronger-ties-in-first-meeting-between-el-sisi-and-al-sharaa/", title: "Egypt, Syria seek stronger ties in first meeting between El-Sisi and Al-Sharaa", publisher: "Egyptian Streets", date: 2025-03-05, tier: 3}
+      - {url: "https://www.al-monitor.com/originals/2026/06/egypt-rejects-syrian-ambassador-ties-strain-under-sharaa", title: "Egypt rejects Syrian ambassador as ties strain under Sharaa", publisher: "Al-Monitor", date: 2026-06, tier: 3}
+  - to: CYP
+    layer: action
+    type: visit
+    summary: "Al-Sharaa attended the Nicosia informal European Council with Middle East and Gulf partners on 24 Apr 2026 (Cyprus's president said efforts were made to keep him out); Cyprus's foreign minister had met him in Damascus in February 2025. Mirrors Cyprus's row, same links."
+    since: 2026-04-24
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://en.politis.com.cy/globe/globe-our-neighbourhood/1000494/eu-leaders-wrap-up-expanded-talks-with-middle-east-and-gulf-partners", title: "EU leaders wrap up expanded talks with Middle East and Gulf partners", publisher: "Politis", date: 2026-04-24, tier: 3}
+      - {url: "https://www.enabbaladi.net/740275/وفد-قبرصي-يلتقي-الشرع-في-دمشق/", title: "A Cypriot delegation meets al-Sharaa in Damascus", title_original: "وفد قبرصي يلتقي الشرع في دمشق", lang: ar, publisher: "Enab Baladi", date: 2025-02, tier: 3}
+  - to: JOR
+    layer: action
+    type: agreement
+    summary: "Second session of the Jordan-Syria Higher Coordination Council in Amman on 12 Apr 2026 signed 10 MoUs and a cooperation agreement and agreed a joint roadmap on Suwayda and the south; border security, anti-smuggling and counter-drug committees date from 2025; a third session is set for Damascus in October 2026."
+    since: 2025-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.petra.gov.jo/en/news/fm%C2%A0syrian-counterpart%C2%A0chair-jordan-syria-higher-coordination-councils-2nd-session", title: "FM, Syrian counterpart chair Jordan-Syria Higher Coordination Council's second session", publisher: "Petra (Jordan News Agency)", date: 2026-04-12, tier: 1}
+      - {url: "https://english.enabbaladi.net/archives/2026/04/syria-and-jordan-sign-deals-under-security-pressure/", title: "Syria and Jordan sign deals under security pressure", publisher: "Enab Baladi", date: 2026-04, tier: 3}
+  - to: LBN
+    layer: action
+    type: agreement
+    summary: "A Saudi-brokered security arrangement on border demarcation and smuggling was signed in Jeddah in March 2025; Sharaa and Aoun agreed to deepen cooperation in Doha (2025). The land border is still not demarcated, and Damascus objects to two clauses of the judicial agreement to transfer over 1,300 Syrian detainees from Lebanese prisons."
+    since: 2025-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.arabnews.com/node/2615542/amp", title: "Syria and Lebanon agree to expand coordination on refugee returns, border demarcation", publisher: "Arab News", date: 2025, tier: 3}
+      - {url: "https://english.enabbaladi.net/archives/2025/12/lebanon-calls-to-activate-a-judicial-agreement-with-syria-to-transfer-detainees/", title: "Lebanon calls to activate a judicial agreement with Syria to transfer detainees", publisher: "Enab Baladi", date: 2025-12, tier: 3}
+  - to: nsa-hezbollah
+    layer: action
+    type: incident
+    summary: "Syria announced the seizure of a shipment of missiles, anti-tank weapons and drones hidden in a tanker at the Tanf crossing on the Iraqi border and bound for Hezbollah (16 Jul 2026); Hezbollah called the accusation fabricated, Iraq opened an inquiry. Earlier seizures and two smuggling tunnels were announced in March 2026 and three suspected members of a Hezbollah cell were arrested in early October 2026."
+    since: 2026-07-16
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.al-monitor.com/originals/2026/07/syria-seizes-arms-shipment-iraq-border-destined-hezbollah", title: "Syria seizes arms shipment on Iraq border destined for Hezbollah", publisher: "Al-Monitor", date: 2026-07-16, tier: 3}
+      - {url: "https://naharnet.com/stories/en/321292-syria-says-seized-hezbollah-bound-arms-on-iraq-border", title: "Syria says seized Hezbollah-bound arms on Iraq border", publisher: "Naharnet", date: 2026-07, tier: 3}
+      - {url: "https://www.thenationalnews.com/news/mena/2026/10/01/lebanese-army-seizes-250kg-of-explosives-smuggled-from-syria/", title: "Lebanese army seizes 250kg of explosives smuggled from Syria", publisher: "The National", date: 2026-10-01, tier: 3}
+  - to: IRQ
+    layer: action
+    type: agreement
+    summary: "Baghdad and Damascus agreed in November 2025 to commission a technical assessment of the Kirkuk-Baniyas pipeline (joint committee and international consultant); Iraq already exports limited oil volumes through Baniyas; the Kurdistan Region's president invited al-Sharaa to Baghdad and Erbil on 3 Aug 2026."
+    since: 2025-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://english.enabbaladi.net/archives/2025/11/iraq-and-syria-agree-to-assess-the-kirkuk-baniyas-pipeline/", title: "Iraq and Syria agree to assess the Kirkuk-Baniyas pipeline", publisher: "Enab Baladi", date: 2025-11, tier: 3}
+      - {url: "https://shafaq.com/en/Kurdistan/Nechirvan-Barzani-invites-Syrian-president-to-visit-Iraq", title: "Nechirvan Barzani invites Syrian president to visit Iraq", publisher: "Shafaq News", date: 2026-08-03, tier: 3}
+  - to: RUS
+    layer: action
+    type: visit
+    summary: "Al-Sharaa visited Putin in Moscow twice - October 2025 (first official visit) and 28 Jan 2026 - and pledged to honour past deals; Russia reportedly left Qamishli airport that week, leaving Hmeimim and Tartus as its only military outposts outside the former Soviet Union."
+    since: 2025-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2026/1/28/syrias-al-sharaa-discusses-fate-of-russian-military-bases-with-putin", title: "Al-Sharaa meets Putin as Russia seeks to secure military bases in Syria", publisher: "Al Jazeera", date: 2026-01-28, tier: 3}
+      - {url: "https://www.yahoo.com/news/articles/putin-welcomes-syrian-president-moscow-173926500.html", title: "Putin welcomes Syrian president to Moscow despite sheltering al-Assad", publisher: "Yahoo News", date: 2025-10, tier: 3}
+  - to: RUS
+    layer: action
+    type: agreement
+    summary: "On 9 Aug 2026 Syria's foreign ministry announced a memorandum under which Damascus takes over the Hmeimim air base and the commercial berth at Tartus and the military facilities become joint training and qualification centres, to be completed within three months; Moscow had not commented at the time of the AP report."
+    since: 2026-08-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://wtop.com/world/2026/08/syria-agrees-deal-with-russia-over-future-use-of-2-key-mediterranean-bases/", title: "Syria agrees deal with Russia over future use of 2 key Mediterranean bases", publisher: "Associated Press (via WTOP)", date: 2026-08-09, tier: 3}
+      - {url: "https://www.al-monitor.com/originals/2026/08/syria-says-reached-deal-moscow-fate-russian-bases", title: "Syria says reached deal with Moscow on fate of Russian bases", publisher: "Al-Monitor", date: 2026-08, tier: 3}
+  - to: USA
+    layer: action
+    type: sanction
+    summary: "Trump announced the lifting of Syria sanctions in Riyadh in May 2025 and signed the executive order terminating the sanctions programme on 30 Jun 2025 (national emergency of 2004 ended, five orders revoked; sanctions kept on Assad, his associates, ISIS and Iran's proxies); the State Department issued a 180-day Caesar waiver."
+    since: 2025-06-30
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.cbsnews.com/amp/news/trump-executive-order-syria-sanctions", title: "Trump signs executive order eliminating Syria sanctions program", publisher: "CBS News", date: 2025-06-30, tier: 3}
+      - {url: "https://www.wam.ae/en/article/15n9t3v-trump-signs-executive-order-ending-syria-sanctions", title: "Trump signs executive order ending Syria sanctions programme", publisher: "WAM (state agency, reporting the White House order)", date: 2025-06-30, tier: 3}
+  - to: USA
+    layer: action
+    type: sanction
+    summary: "Congress repealed the Caesar Act in the FY2026 NDAA (House 312-112, Senate 77-20; signed December 2025); the repeal is unconditional but requires a review every 180 days for four years (counter-ISIS, minority rights) and allows targeted sanctions if Damascus is off track."
+    since: 2025-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/12/11/us-congress-advances-bill-to-nix-caesar-act-sanctions-on-syria", title: "US Congress advances bill to nix Caesar Act sanctions on Syria", publisher: "Al Jazeera", date: 2025-12-11, tier: 3}
+      - {url: "https://www.foreign.senate.gov/press/dem/release/icymi-shaheen-secures-repeal-of-caesar-act-sanctions-on-syria-in-annual-defense-bill", title: "ICYMI: Shaheen secures repeal of Caesar Act sanctions on Syria in annual defense bill", publisher: "US Senate Committee on Foreign Relations", date: 2025-12, tier: 1}
+      - {url: "https://www.newarab.com/news/us-senate-repeals-caesar-act-amid-intensified-fight-syria", title: "US Senate repeals Caesar Act amid intensified fight against IS in Syria", publisher: "The New Arab", date: 2025-12, tier: 3}
+  - to: USA
+    layer: action
+    type: visit
+    summary: "Al-Sharaa was received at the White House on 10 Nov 2025, the first Syrian leader there since independence in 1946; Syria joined the global coalition against ISIS as its 90th member and Syria's embassy in Washington was to reopen."
+    since: 2025-11-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.axios.com/2025/11/10/trump-holds-first-ever-white-house-meeting-with-syrian-leader", title: "Trump holds first-ever White House meeting with Syrian leader", publisher: "Axios", date: 2025-11-10, tier: 3}
+      - {url: "https://www.al-monitor.com/originals/2025/11/syria-joins-alliance-against-islamic-state-after-white-house-talks", title: "Syria joins alliance against Islamic State after White House talks", publisher: "Al-Monitor", date: 2025-11-10, tier: 3}
+      - {url: "https://www.dawn.com/news/1954489/syria-joins-alliance-against-is-after-white-house-talks", title: "Syria joins alliance against IS after White House talks", publisher: "Dawn (AFP)", date: 2025-11-11, tier: 3}
+  - to: org-un
+    layer: action
+    type: sanction
+    summary: "UN Security Council resolution 2799 (6 Nov 2025) removed Ahmed al-Sharaa and Interior Minister Anas Khattab from the ISIL (Da'esh) and Al-Qaida sanctions list by 14 votes to none, with China abstaining; the Council reaffirmed Syria's sovereignty and territorial integrity."
+    since: 2025-11-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.asil.org/ILIB/un-security-council-removes-syrian-officials-sanctions-list", title: "UN Security Council removes Syrian officials from sanctions list", publisher: "American Society of International Law (International Legal Materials brief)", date: 2025-11, tier: 2}
+      - {url: "https://www.jurist.org/news/2025/11/un-security-council-adopts-resolution-removing-syria-transitional-president-from-sanctions-measures/", title: "UN Security Council adopts resolution removing Syria transitional president from sanctions measures", publisher: "Jurist", date: 2025-11, tier: 3}
+  - to: org-un
+    layer: action
+    type: incident
+    summary: "The UN Commission of Inquiry found that the March 2025 wave of violence on the coast (about 1,400 killed, mostly Alawite men) may constitute war crimes, with perpetrators among government forces and associated individuals and among Assad loyalists; Syria's own fact-finding committee (July 2025) did not find the violations systematic, and public trials of suspects began on 17 Nov 2025."
+    since: 2025-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.ecoi.net/en/file/local/2132228/a-hrc-59-crp4-en.pdf", title: "Report of the Independent International Commission of Inquiry on the Syrian Arab Republic (A/HRC/59/CRP.4)", publisher: "United Nations Human Rights Council", date: 2025-08, tier: 1}
+      - {url: "https://english.enabbaladi.net/archives/2025/11/fact-finding-committee-announces-start-of-trials-for-suspects-in-syrias-coastal-region-violence", title: "Fact-finding committee announces start of trials for suspects in Syria's coastal-region violence", publisher: "Enab Baladi", date: 2025-11, tier: 3}
+  - to: org-eu
+    layer: action
+    type: sanction
+    summary: "The Council announced on 20 May 2025 the lifting of EU economic sanctions on Syria (legal acts 27-28 May): all sectoral measures removed except those tied to the Assad regime and security, and 24 entities (including the Central Bank of Syria) delisted; the approach was called gradual and reversible."
+    since: 2025-05-20
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://north-africa-middle-east-gulf.ec.europa.eu/news/syria-council-statement-lifting-eu-economic-sanctions-2025-05-21_en", title: "Syria - Council statement on lifting EU economic sanctions", publisher: "European Union (EEAS/Council)", date: 2025-05-21, tier: 1}
+      - {url: "https://north-africa-middle-east-gulf.ec.europa.eu/news/syria-eu-adopts-legal-acts-lift-economic-sanctions-syria-enacting-recent-political-agreement-2025-05-28_en", title: "Syria - EU adopts legal acts to lift economic sanctions on Syria", publisher: "European Commission", date: 2025-05-28, tier: 1}
+  - to: org-eu
+    layer: action
+    type: visit
+    summary: "High Representative Kallas and Foreign Minister Shaibani co-chaired the first high-level political dialogue in Brussels (May 2026); Kallas visited Damascus on 29 Sep 2026, when Shaibani asked to replace the 1977 cooperation agreement (the Commission proposed its full resumption in April 2026) with a partnership agreement, a scoping paper being due by end of Q1 2027, and to lift the remaining sanctions on state institutions."
+    since: 2026-05
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://english.enabbaladi.net/archives/2026/09/damascus-seeks-new-partnership-deal-with-eu/", title: "Damascus seeks new partnership deal with EU", publisher: "Enab Baladi", date: 2026-09, tier: 3}
+      - {url: "https://en.yenisafak.com/world/syria-and-eu-deepen-talks-as-kallas-visits-damascus-3723875", title: "Syria and EU deepen talks as Kallas visits Damascus", publisher: "Yeni Safak", date: 2026-09, tier: 3}
+      - {url: "https://s.thepeninsula.qa/article/20/04/2026/eu-proposes-full-resumption-of-syria-cooperation-accord", title: "EU proposes full resumption of Syria cooperation accord", publisher: "The Peninsula", date: 2026-04-20, tier: 3}
+  - to: DEU
+    layer: action
+    type: visit
+    summary: "Al-Sharaa met Chancellor Merz in Berlin in March 2026 (reconstruction, migration, economic cooperation) on the first leg of a European tour that ended at Downing Street on 31 Mar."
+    since: 2026-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://en.ara.cat/international/germany-says-it-will-return-80-of-syrian-refugees-in-the-next-three-years_1_5694364.html", title: "Germany says it will return 80% of Syrian refugees in the next three years", publisher: "Ara", date: 2026-03, tier: 3}
+      - {url: "https://www.newarab.com/news/sharaa-meets-starmer-first-uk-visit-syria-bolsters-ties", title: "Sharaa meets Starmer in first UK visit as Syria seeks stronger European ties", publisher: "The New Arab", date: 2026-03-31, tier: 3}
+  - to: FRA
+    layer: action
+    type: visit
+    summary: "Macron received al-Sharaa at the Elysee on 7 May 2025, his first visit to Europe as interim president, and backed a free, stable and sovereign Syria; a Macron visit to Damascus was reported in July 2026 but not confirmed."
+    since: 2025-05-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/video/newsfeed/2025/5/7/macron-welcomes-syrias-al-sharaa-in-paris", title: "Macron welcomes Syria's al-Sharaa in Paris", publisher: "Al Jazeera", date: 2025-05-07, tier: 3}
+      - {url: "https://www.thenationalnews.com/news/mena/2026/07/05/emmanuel-macron-set-to-visit-damascus-to-boost-ties-with-syria/", title: "Emmanuel Macron set to visit Damascus to boost ties with Syria", publisher: "The National", date: 2026-07-05, tier: 3}
+  - to: GBR
+    layer: action
+    type: visit
+    summary: "Al-Sharaa made his first visit to the United Kingdom on 31 Mar 2026 (Starmer at Downing Street, King Charles at Buckingham Palace); migration, border security, anti-smuggling and the Hormuz crisis were on the agenda. The UK de-proscribed HTS in October 2025 and re-established relations in July 2025."
+    since: 2026-03-31
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.newarab.com/news/sharaa-meets-starmer-first-uk-visit-syria-bolsters-ties", title: "Sharaa meets Starmer in first UK visit as Syria seeks stronger European ties", publisher: "The New Arab", date: 2026-03-31, tier: 3}
+      - {url: "https://www.al-monitor.com/originals/2026/04/uk-visit-syrias-sharaa-doubles-down-western-ties-amid-iran-war-refugee-pressures", title: "In UK visit, Syria's Sharaa doubles down on Western ties amid Iran war, refugee pressures", publisher: "Al-Monitor", date: 2026-04, tier: 3}
+  - to: CHN
+    layer: action
+    type: visit
+    summary: "Foreign Minister Shaibani met Wang Yi in Beijing in November 2025 (counter-terror and security cooperation; China willing to consider support for reconstruction; Syria's pledge that no entity will use its territory against China's interests; Beijing asked for support on Taiwan); no meeting with Xi. China had abstained on UNSC resolution 2799 days earlier."
+    since: 2025-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://aa.com.tr/en/asia-pacific/syria-china-pledge-closer-collaboration-on-security-counter-terrorism/3746134", title: "Syria, China pledge closer collaboration on security, counter-terrorism", publisher: "Anadolu Agency", date: 2025-11, tier: 3}
+      - {url: "https://english.enabbaladi.net/archives/2025/11/al-shibani-in-china-talks-on-economic-cooperation-and-counterterrorism/", title: "Al-Shibani in China, talks on economic cooperation and counterterrorism", publisher: "Enab Baladi", date: 2025-11, tier: 3}
+  - to: org-arab-league
+    layer: action
+    type: visit
+    summary: "Al-Sharaa attended the emergency Arab League summit in Cairo in March 2025 (first Arab League meeting as president) but stayed away from the Baghdad summit of 17 May 2025 under pressure from Iran-aligned Iraqi factions, sending Foreign Minister Shaibani. Syria's membership was restored in 2023 (dataset row)."
+    since: 2025-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://themedialine.org/mideast-daily-news/syrias-new-president-to-attend-emergency-arab-league-summit-in-cairo", title: "Syria's new president to attend emergency Arab League summit in Cairo", publisher: "The Media Line", date: 2025-03, tier: 3}
+      - {url: "https://shafaq.com/en/Iraq/Foreign-Minister-to-represent-Syria-as-al-Sharaa-skips-Baghdad-Summit", title: "Foreign minister to represent Syria as al-Sharaa skips Baghdad summit", publisher: "Shafaq News", date: 2025-05, tier: 3}
+  - to: nsa-isis
+    layer: action
+    type: incident
+    summary: "US forces moved more than 5,700 ISIS detainees from Syria to Iraq between 21 Jan and 12 Feb 2026 after government forces took over the al-Hol camp; the Syrian government took over the Tanf base from the US on 11 Feb 2026."
+    since: 2026-01-21
+    until: 2026-02-12
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://365.military.com/daily-news/2026/01/21/us-military-transfers-150-islamic-state-group-detainees-syria-iraq.html", title: "US military transfers 150 Islamic State group detainees from Syria to Iraq", publisher: "Military.com", date: 2026-01-21, tier: 3}
+      - {url: "https://www.longwarjournal.org/archives/2026/02/syrian-government-and-sdf-continue-transition-us-strikes-islamic-state-and-withdraws-from-tanf.php", title: "Syrian government and SDF continue transition, US strikes Islamic State and withdraws from Tanf", publisher: "FDD's Long War Journal", date: 2026-02-18, tier: 2}
+  - to: nsa-isis
+    layer: action
+    type: incident
+    summary: "A gunman killed two US soldiers and a US civilian interpreter at Palmyra on 13 Dec 2025 (Washington called him an ISIS militant; Syria's interior ministry said he was a security-force member due to be dismissed for extremism); US-led Operation Hawkeye Strike followed on 10 Jan 2026."
+    since: 2025-12-13
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.newstalkzb.co.nz/news/world/us-and-allies-launch-large-scale-syria-strikes-on-is-after-palmyra-deaths/", title: "US and allies launch large-scale Syria strikes on IS after Palmyra deaths", publisher: "NewstalkZB (AFP)", date: 2026-01, tier: 3}
+      - {url: "https://www.etvbharat.com/amp/en/international/us-announces-large-scale-strikes-against-isis-in-syria-enn26011100628", title: "US announces large-scale strikes against ISIS in Syria", publisher: "ETV Bharat", date: 2026-01-11, tier: 3}
+
+  # ---------- dependency ----------
+  - to: TUR
+    layer: dependency
+    type: military_presence
+    summary: "Turkish forces remain in northern Syria with parliamentary approval renewed in October 2025 (three years); the Turkish defence minister said there is no immediate withdrawal plan and Ankara acknowledged in February 2026 its support for the offensive against the SDF. Mirrors Turkey's row (same Yahoo/Reuters link)."
+    value: 3
+    unit: years_of_turkish_deployment_mandate_from_oct_2025
+    since: 2024-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.yahoo.com/news/turkey-backing-syrias-military-no-110452050.html", title: "Turkey backing Syria's military and has no immediate withdrawal plans, defense minister says", publisher: "Yahoo News / Reuters", date: 2025, tier: 3}
+      - {url: "https://www.euaa.europa.eu/syria-security-situation/2133-security-trends", title: "Syria security situation - security trends", publisher: "European Union Agency for Asylum", date: 2026, tier: 1}
+  - to: TUR
+    layer: dependency
+    type: energy_import
+    summary: "Turkey began pumping Azerbaijani gas to Syria through Kilis in August 2025, funded by Qatar - up to 2 bcm a year in the first phase, enough for about 1,200 MW - to run plants around Aleppo and Homs."
+    value: 2
+    unit: bcm_per_year_first_phase
+    since: 2025-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.newarab.com/news/turkey-supplying-azerbaijani-gas-boost-syrias-power-output", title: "Turkey starts supplying Azerbaijani gas to boost Syria's power output", publisher: "The New Arab", date: 2025-08, tier: 3}
+      - {url: "https://www.semafor.com/article/08/04/2025/qatar-boost-power-generation-in-syria-with-azeri-gas", title: "Qatar to boost power generation in Syria with Azeri gas", publisher: "Semafor", date: 2025-08-04, tier: 3}
+  - to: ISR
+    layer: dependency
+    type: military_presence
+    summary: "Israeli forces hold a security zone in southern Syria - nine bases and outposts from Mount Hermon to Daraa and Quneitra (ACLED, June 2026), 84 ground incursions in May 2026 alone - and Defence Minister Katz said in June 2026 that the troops stay for an unlimited period."
+    value: 9
+    unit: israeli_bases_and_outposts_june_2026
+    since: 2024-12-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://acleddata.com/expert-comment/israel-redrawing-syrian-border-under-guise-security", title: "Israel redrawing the Syrian border under the guise of security", publisher: "ACLED", date: 2026-06, tier: 2}
+      - {url: "https://shafaq.com/en/Middle-East/Israeli-forces-entrench-in-southern-Syria-expand-Tel-al-Ahmar-base", title: "Israeli forces entrench in southern Syria, expand Tel al-Ahmar base", publisher: "Shafaq News", date: 2026, tier: 3}
+  - to: SAU
+    layer: dependency
+    type: investment
+    summary: "Saudi Arabia is the largest Gulf sponsor - a USD 6.4bn package in 2025, then multibillion agreements in Damascus on 7 Feb 2026 (a USD 1bn telecom network, a joint low-cost airline, a northern airport); Sharaa claims USD 28bn of foreign investment in 2026 overall. Many MoUs are unconfirmed. Mirrors the Saudi row's sources."
+    value: 6.4
+    unit: usd_bn_saudi_package_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.newarab.com/news/saudi-arabia-set-announce-major-new-syria-investments", title: "Saudi Arabia set to announce major new Syria investments, Syrian official says", publisher: "The New Arab", date: 2026-02, tier: 3}
+      - {url: "https://wionews.com/world/saudi-arabia-announces-1-billion-deal-to-rebuild-syria-s-communications-network-1770472436599", title: "Saudi Arabia announces $1 billion deal to rebuild Syria's communications network", publisher: "WION", date: 2026-02-07, tier: 3}
+  - to: SAU
+    layer: dependency
+    type: debt
+    summary: "Saudi Arabia and Qatar jointly paid Syria's arrears to the World Bank (USD 15.5m), announced at the April 2025 Spring Meetings and confirmed by the Bank; the clearance reopened World Bank engagement after more than 14 years."
+    value: 15.5
+    unit: usd_million_world_bank_arrears_paid_with_qatar
+    since: 2025-04
+    until: 2025-05
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://english.ahram.org.eg/News/545280.aspx", title: "Saudi Arabia and Qatar to settle Syria's World Bank debt", publisher: "Ahram Online (AFP)", date: 2025-04-27, tier: 3}
+      - {url: "https://www.yahoo.com/news/world-bank-says-saudi-arabia-150723715.html", title: "World Bank says Saudi Arabia and Qatar have paid off Syria's outstanding debt", publisher: "Associated Press (via Yahoo News)", date: 2025-05, tier: 3}
+  - to: QAT
+    layer: dependency
+    type: energy_import
+    summary: "Qatar's development fund grants Jordan the money to supply Syria with gas through the Arab Gas Pipeline from Aqaba to the Deir Ali plant south of Damascus (about 2 million cubic metres a day, up to 400 MW, 2-4 more hours of power a day), agreed in March 2025 with US approval."
+    value: 2
+    unit: million_cubic_metres_per_day
+    since: 2025-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://pgjonline.com/news/2025/march/qatar-to-supply-gas-to-syria-through-jordan-with-us-approval-sources-say", title: "Qatar to provide gas to Syria via Jordan with a U.S. nod, sources say", publisher: "Reuters (via PGJ Online)", date: 2025-03, tier: 3}
+      - {url: "https://english.ahram.org.eg/News/542007.aspx", title: "Qatar to send natural gas to Syria to boost its meager electricity supply", publisher: "Ahram Online (AP)", date: 2025-03, tier: 3}
+  - to: ARE
+    layer: dependency
+    type: investment
+    summary: "DP World holds a 30-year concession for the Port of Tartus (USD 800m pledged, July-August 2026) and Abu Dhabi's AD Ports bought 20% of the Latakia container terminal (with CMA CGM) for USD 22m; Eagle Hills plans housing and tourism projects of at least USD 20bn (reports range from USD 18bn to 50bn) in Damascus and Latakia."
+    value: 800
+    unit: usd_million_dp_world_tartus_pledged
+    since: 2026-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.khaleejtimes.com/uae/ahmed-al-sharaa-highlights-uae-investment-syria", title: "Al Sharaa highlights UAE investment in Syria, says stability is shared regional interest", publisher: "Khaleej Times", date: 2026-09-15, tier: 3}
+      - {url: "https://indiaseatradenews.com/800-million-tartus-port-pact-signed/", title: "USD 800 million Tartus port pact signed", publisher: "India Sea Trade News", date: 2026-08-02, tier: 4}
+      - {url: "https://semafor.com/article/07/16/2026/uae-developer-alabbar-to-invest-20b-in-syria-developments", title: "UAE developer Alabbar to invest USD 20bn in Syria developments", publisher: "Semafor", date: 2026-07-16, tier: 3}
+  - to: RUS
+    layer: dependency
+    type: military_presence
+    summary: "Russia keeps two military sites in Syria - Hmeimim air base and Tartus - which under the 9 Aug 2026 memorandum are to become joint training centres within three months; most Russian troops left after Assad's fall and Russia left Qamishli airport in January 2026."
+    value: 2
+    unit: russian_military_sites_aug_2026
+    since: 2015
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://wtop.com/world/2026/08/syria-agrees-deal-with-russia-over-future-use-of-2-key-mediterranean-bases/", title: "Syria agrees deal with Russia over future use of 2 key Mediterranean bases", publisher: "Associated Press (via WTOP)", date: 2026-08-09, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2026/1/28/syrias-al-sharaa-discusses-fate-of-russian-military-bases-with-putin", title: "Al-Sharaa meets Putin as Russia seeks to secure military bases in Syria", publisher: "Al Jazeera", date: 2026-01-28, tier: 3}
+  - to: USA
+    layer: dependency
+    type: military_presence
+    summary: "About 1,000 US troops remained in Syria in February 2026 after the withdrawal from Tanf (11 Feb) and reported departure from Shaddadi; CENTCOM keeps striking ISIS from outside."
+    value: 1000
+    unit: us_troops_in_syria_feb_2026
+    since: 2015
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://news.bgov.com/bloomberg-government-news/us-military-hits-islamic-state-targets-in-syria-over-past-week", title: "US military hits Islamic State targets in Syria over past week", publisher: "Bloomberg Government", date: 2026-02, tier: 3}
+      - {url: "https://www.longwarjournal.org/archives/2026/02/syrian-government-and-sdf-continue-transition-us-strikes-islamic-state-and-withdraws-from-tanf.php", title: "Syrian government and SDF continue transition, US strikes Islamic State and withdraws from Tanf", publisher: "FDD's Long War Journal", date: 2026-02-18, tier: 2}
