@@ -565,15 +565,15 @@
   const GATHERINGS = data.gatherings || [];
   const CONV = data.convergences || {};
   const STATE_LINE = { formed: "the counter-coalition has arrived", forming: "the coalition is taking shape", waiting: "summoned by the logic of strategy, not yet signed" };
-  const bar = m => { const n = Math.round(m * 10); return `<span class="bar">${"▮".repeat(n)}${"▯".repeat(10 - n)}</span> ${Math.round(m * 100)}% formed`; };
+  const bar = g => { const n = Math.round(g.maturity * 10); return `<span class="bar">${"▮".repeat(n)}${"▯".repeat(10 - n)}</span> ${Math.round(g.maturity * 100)}% formed <span class="pairs">· ${g.allied_pairs} of the ${g.pairs} pairs inside the gathering are already allies</span>`; };
   function renderGatheringsPage() {
     const el = document.getElementById("page-gatherings");
-    el.innerHTML = `<h2>Gatherings</h2><p class="lede">A gathering is the coalition that an actor's weight summons. Luttwak's argument in <i>The Rise of China vs. the Logic of Strategy</i> is that a power which grows or presses provokes, by the logic of strategy alone, the convergence of everyone it threatens, whether or not they speak to each other, and that the great state is the last to see it. The page asks, for every actor with at least three declared rivals, who has gathered against it and how far the gathering has become a coalition.</p>
+    el.innerHTML = `<h2>Gatherings</h2><p class="lede">A gathering is the coalition that an actor's weight summons. Luttwak's argument in <i>The Rise of China vs. the Logic of Strategy</i> is that a power which grows or presses provokes, by the logic of strategy alone, the convergence of everyone it threatens, whether or not they speak to each other, and that the great state is the last to see it. The page asks, for every actor with at least three declared rivals, who has gathered against it and how far the gathering has become a coalition. <b>Formed</b> measures that: take every pair of actors inside the gathering and count how many are already allies of each other; 100% is a gathering where everyone is allied with everyone, a coalition in being; 0% is a crowd of actors that share an enemy and nothing else.</p>
       <div class="gatherings">` + GATHERINGS.map(g => {
         const enl = g.members.filter(m => m.enlisted), wait = g.members.filter(m => !m.enlisted);
         const who = list => list.map(m => `<a href="#/view/${m.id}">${nameOf(m.id)}</a><i class="${m.grade}">${m.grade === "adversary" ? " adv" : ""}</i>`).join(" · ");
         return `<div class="gathering ${g.state}"><h3>The gathering against <a href="#/view/${g.x}">${nameOf(g.x)}</a> <span>${g.n} actors</span></h3>
-          <div class="mat">${bar(g.maturity)} <em>${g.state}: ${STATE_LINE[g.state]}</em></div>
+          <div class="mat">${bar(g)}<br><em>${g.state}: ${STATE_LINE[g.state]}</em></div>
           ${enl.length ? `<div class="roll"><b>enlisted</b> ${who(enl)}</div>` : ""}
           ${wait.length ? `<div class="roll"><b>waiting</b> ${who(wait)}</div>` : ""}</div>`;
       }).join("") + `</div>
