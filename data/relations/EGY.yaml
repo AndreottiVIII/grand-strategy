@@ -1,0 +1,1006 @@
+from: EGY
+relations:
+- to: ISR
+  layer: alignment
+  type: treaty
+  summary: The 1979 peace treaty (with the military annex limiting forces in Sinai) remains in force and security and intelligence cooperation continues, although Sisi has called Israel an enemy (Sept 2025)
+    and Jerusalem calls the Sinai deployments a breach of the annex.
+  since: '1979-03-26'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - &id002
+    url: https://www.atlanticcouncil.org/blogs/menasource/amid-gaza-cease-fire-hope-where-does-the-egypt-israel-relationship-stand/
+    title: Amid Gaza cease-fire hope, where does the Egypt-Israel relationship stand?
+    publisher: Atlantic Council
+    date: 2025-10
+    tier: 2
+  - url: https://foreignpolicy.com/2025/02/27/israels-peace-with-egypt-is-starting-to-crack/
+    title: Israel's peace with Egypt is starting to crack
+    publisher: Foreign Policy
+    date: '2025-02-27'
+    tier: 3
+  - &id001
+    url: https://thearabweekly.com/egypt-defends-sinai-troop-presence-rejects-israeli-claims-treaty-breach
+    title: Egypt defends Sinai troop presence, rejects Israeli claims of treaty breach
+    publisher: The Arab Weekly
+    date: '2025'
+    tier: 3
+- to: ISR
+  layer: objective
+  type: influence_goal
+  summary: Egypt wants Israel out of the Philadelphi corridor and the Rafah crossing and refuses any displacement of Palestinians into Sinai, which Foreign Minister Abdelatty calls a red line; Egypt asks
+    for the full withdrawal rather than partial ones and fears that a temporary Israeli presence becomes permanent.
+  since: 2024-05
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - &id006
+    url: https://english.ahram.org.eg/News/575233.aspx
+    title: 'Palestinians displacement to Sinai is ''red line'' for Egypt: FM Abdelatty'
+    publisher: Ahram Online
+    date: 2026-08
+    tier: 3
+  - url: https://www.inss.org.il/social_media/egypts-perspective-on-the-israeli-military-presence-in-the-philadelphi-corridor/
+    title: Egypt's perspective on the Israeli military presence in the Philadelphi Corridor
+    publisher: INSS
+    date: '2024'
+    tier: 2
+  - &id003
+    url: https://www.al-monitor.com/originals/2026/02/factbox-what-know-about-gazas-rafah-border-crossing
+    title: 'Factbox: What to know about Gaza''s Rafah border crossing'
+    publisher: Al-Monitor (Reuters)
+    date: 2026-02
+    tier: 3
+- to: ISR
+  layer: dependency
+  type: energy_import
+  summary: Egypt imports Israeli pipeline gas under contracts that include a USD 35bn deal signed in Aug 2025; Netanyahu froze it in Sept 2025 over the Sinai buildup and later approved it. Leviathan was
+    shut in June 2025 and again from 2 Mar 2026 (production resumed 2 Apr), forcing Cairo into rationing and spot LNG. Value is the contract size, not annual flow.
+  since: '2025-09-07'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 35
+  unit: usd_bn_leviathan_gas_export_contract
+  sources:
+  - url: https://enterpriseam.com/egypt/2025/09/07/israel-halts-its-usd-35-bn-gas-export-agreement-with-egypt-as-egyptian-israeli-relations-grow-tense/
+    title: Israel halts its USD 35 bn gas export agreement with Egypt as Egyptian-Israeli relations grow tense
+    publisher: Enterprise
+    date: '2025-09-07'
+    tier: 3
+  - url: https://worldoil.com/news/2026/3/2/israel-halts-leviathan-karish-gas-fields-after-iran-strikes/
+    title: Israel halts Leviathan, Karish gas fields after Iran strikes
+    publisher: World Oil
+    date: '2026-03-02'
+    tier: 3
+- to: ISR
+  layer: action
+  type: incident
+  summary: Israel accuses Egypt of breaching the treaty's military annex with Sinai deployments (reported up to 40,000 troops, contested) and live-fire drills (Apr 2026); Egypt rejects the claim and calls
+    the forces counter-terrorism within treaty limits.
+  since: '2025'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - *id001
+  - url: https://www.aljazeera.com/news/2026/4/28/is-egypt-threatening-israel-through-its-military-exercises-on-the-border
+    title: Is Egypt threatening Israel through its military exercises on the border?
+    publisher: Al Jazeera
+    date: '2026-04-28'
+    tier: 3
+  - *id002
+- to: ISR
+  layer: action
+  type: incident
+  summary: Israel partially reopened the Rafah crossing on 1-2 Feb 2026 after nearly a year of closure, with Israeli security control on the Gaza side and EU and Palestinian Authority monitoring; Egypt
+    keeps demanding the full reopening and an Israeli withdrawal.
+  since: 2026-02
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - *id003
+  - url: https://www.al-monitor.com/originals/2026/01/israel-partially-reopen-gazas-rafah-crossing-sunday
+    title: Israel to partially reopen Gaza's Rafah crossing on Sunday
+    publisher: Al-Monitor
+    date: 2026-01
+    tier: 3
+- to: PSE
+  layer: action
+  type: agreement
+  summary: Cairo Arab summit of 4 Mar 2025 adopted Egypt's Gaza reconstruction plan (about USD 53bn over five years, a technocratic committee) against Trump's 'Riviera' proposal; the Arab League endorsed
+    it.
+  since: '2025-03-04'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - &id004
+    url: https://www.diplomatie.gouv.fr/en/presse-et-ressources/decouvrir-et-informer/actualites/israel-territoires-palestiniens-plan-pour-la-reconstruction-de-gaza-adopte-par-la-ligue-arabe
+    title: Israel/Palestinian Territories - Gaza reconstruction plan adopted by the Arab League
+    publisher: French Ministry for Europe and Foreign Affairs
+    date: 2025-03
+    tier: 1
+  - &id007
+    url: https://egyptianstreets.com/2025/03/04/egypts-gaza-reconstruction-plan-approved-by-arab-leaders/
+    title: Egypt's Gaza reconstruction plan approved by Arab leaders
+    publisher: Egyptian Streets
+    date: '2025-03-04'
+    tier: 3
+- to: PSE
+  layer: action
+  type: visit
+  summary: Sharm el-Sheikh summit of 13 Oct 2025 on Gaza, co-chaired by Sisi and Trump with a signing document; Egypt hosts Palestinian talks, trains police and takes a seat on the Board of Peace (accepted
+    21 Jan 2026).
+  since: '2025-10-13'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - &id008
+    url: https://today.lorientlejour.com/article/1481117/key-takeaways-from-the-sharm-al-sheikh-summit-on-gaza.html
+    title: Key takeaways from the Sharm al-Sheikh summit on Gaza
+    publisher: L'Orient-Le Jour
+    date: '2025-10-13'
+    tier: 3
+  - &id005
+    url: https://www.al-monitor.com/originals/2026/01/egypts-sisi-meet-trump-sidelines-davos-presidency-says
+    title: Egypt's Sisi to meet Trump on Davos sidelines, presidency says
+    publisher: Al-Monitor (Reuters)
+    date: '2026-01-20'
+    tier: 3
+- to: PSE
+  layer: objective
+  type: influence_goal
+  summary: Egypt wants to decide who governs Gaza (a technocratic committee, a 10,000-strong Palestinian force trained in Egypt, intelligence chief Hassan Rashad on the executive board) so that Hamas does
+    not return to power and Gaza stays on its side of the Sinai border.
+  since: 2025-03
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - *id004
+  - *id005
+  - *id006
+- to: USA
+  layer: dependency
+  type: arms_supply
+  summary: The United States has given Egypt about USD 1.3bn a year of military financing for nearly four decades, without treaty or basing pact; Foreign Policy asks whether it buys any leverage as Egypt
+    flies Chinese jets and weighs the J-10C and J-35.
+  since: '1987'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 1.3
+  unit: usd_bn_per_year_us_military_financing
+  sources:
+  - &id015
+    url: https://foreignpolicy.com/2026/05/20/egypt-military-aid-congress/
+    title: Egypt military aid and Congress
+    publisher: Foreign Policy
+    date: '2026-05-20'
+    tier: 3
+- to: USA
+  layer: action
+  type: visit
+  summary: Sisi met Trump at Davos on 21 Jan 2026 (Egypt accepted a seat on the Board of Peace the same day; Trump offered to restart GERD mediation) and received CIA director Ratcliffe on 20 Sep 2026 as
+    Cairo relays between Washington and Tehran.
+  since: '2026-01-21'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - *id005
+  - url: https://www.thenationalnews.com/news/mena/2026/09/20/el-sisi-meets-cia-director-as-cairo-seeks-to-narrow-gap-between-us-and-iran/
+    title: El-Sisi meets CIA director as Cairo seeks to narrow gap between US and Iran
+    publisher: The National
+    date: '2026-09-20'
+    tier: 3
+- to: USA
+  layer: action
+  type: incident
+  summary: Egypt rejected Trump's Gaza 'Riviera' plan (displacement of Palestinians) in Feb-Mar 2025 and answered with the Arab plan adopted in Cairo on 4 Mar 2025.
+  since: '2025-03-04'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - *id007
+  - *id004
+- to: SAU
+  layer: alignment
+  type: treaty
+  summary: 2016 maritime boundary agreement transferring Tiran and Sanafir to Saudi sovereignty, approved by the Egyptian parliament (14 Jun 2017) and ratified by Sisi (24 Jun 2017) after court challenges;
+    Israeli consent (needed for the treaty annex) is reported variously as 2017 or 2022.
+  since: '2017-06-24'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/news/2017/6/24/sisi-ratifies-deal-transferring-islands-to-saudi-arabia
+    title: Sisi ratifies deal transferring islands to Saudi Arabia
+    publisher: Al Jazeera
+    date: '2017-06-24'
+    tier: 3
+- to: SAU
+  layer: action
+  type: visit
+  summary: 'Sisi received Mohammed bin Salman in Cairo on 15 Sep 2026: Saudi and Gulf security as part of Egypt''s national security, shared Red Sea line against the Houthis; in Jan 2026 the two called
+    their views on Yemen and Sudan ''identical''. Egypt is not in the Makkah pact (Saudi Arabia, Turkey, Pakistan).'
+  since: '2026-09-15'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.thenationalnews.com/news/mena/2026/09/15/saudi-arabia-and-egypt-press-for-red-sea-security-as-crown-prince-visits-cairo/
+    title: Saudi Arabia and Egypt press for Red Sea security as crown prince visits Cairo
+    publisher: The National
+    date: '2026-09-15'
+    tier: 3
+  - url: https://www.aljazeera.com/news/2026/1/5/egypt-says-it-shares-identical-views-with-saudi-arabia-on-yemen-sudan
+    title: Egypt says it shares 'identical' views with Saudi Arabia on Yemen, Sudan
+    publisher: Al Jazeera
+    date: '2026-01-05'
+    tier: 3
+  - url: https://aljazeera.com/news/2026/8/9/which-other-countries-could-join-the-turkiye-saudi-pakistan-defence-pact
+    title: Which other countries could join the Turkiye-Saudi-Pakistan defence pact?
+    publisher: Al Jazeera
+    date: '2026-08-09'
+    tier: 3
+- to: ARE
+  layer: dependency
+  type: investment
+  summary: ADQ-led USD 35bn Ras El Hekma deal of Feb 2024 (USD 24bn for development rights, USD 11bn of deposits converted; Egypt keeps 35%), the largest foreign investment in Egypt's history; it cleared
+    the way for the IMF programme. The UAE is Egypt's largest foreign investor.
+  since: 2024-02
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 35
+  unit: usd_bn_ras_el_hekma
+  sources:
+  - url: https://www.newarab.com/news/ras-al-hekma-egypt-signs-huge-35-billion-deal-uae
+    title: Hoping to ease currency crisis, Egypt signs USD 35 billion deal with UAE for Ras al-Hekma
+    publisher: The New Arab
+    date: 2024-02
+    tier: 3
+  - url: https://www.saudigulfprojects.com/2024/02/uaes-adq-led-consortium-to-invest-35-billion-in-egypt/
+    title: UAE's ADQ-led consortium to invest USD 35 billion in Egypt
+    publisher: Saudi Gulf Projects
+    date: 2024-02
+    tier: 4
+- to: ARE
+  layer: action
+  type: incident
+  summary: Egypt sent Rafale F3R fighters to the UAE against Iranian drones (announced 8 May 2026 during an unannounced visit by Sisi), while keeping a formally neutral line in the Iran war that Emirati
+    voices criticised.
+  since: '2026-05-08'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://egyptianstreets.com/2026/05/08/egypt-sends-fighter-jets-to-the-uae-to-defend-against-iranian-attacks/
+    title: Egypt sends fighter jets to the UAE to defend against Iranian attacks
+    publisher: Egyptian Streets
+    date: '2026-05-08'
+    tier: 3
+  - url: https://www.rusi.org/news-and-comment/in-the-news/egypt-deploys-jets-uae-iran-war-strains-arab-alliances
+    title: Egypt deploys jets to UAE as Iran war strains Arab alliances
+    publisher: RUSI (reprinted from the Financial Times)
+    date: 2026-05
+    tier: 2
+- to: QAT
+  layer: dependency
+  type: investment
+  summary: Qatari Diar's USD 29.7bn Alam El Roum project (signed Nov 2025, USD 3.5bn in direct cash) and a USD 7.5bn package agreed in Apr 2025; a comprehensive economic partnership is under negotiation
+    (Oct 2026).
+  since: 2025-04
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 29.7
+  unit: usd_bn_alam_el_roum
+  sources:
+  - url: https://www.meed.com/qatari-diar-unveils-30bn-egypt-project-masterplan
+    title: Qatari Diar unveils USD 30bn Egypt project masterplan
+    publisher: MEED
+    date: '2026'
+    tier: 3
+  - url: https://english.ahram.org.eg/News/575289.aspx
+    title: From rapprochement to partnership
+    publisher: Ahram Online
+    date: '2026'
+    tier: 3
+- to: QAT
+  layer: action
+  type: agreement
+  summary: Egypt and Qatar act as co-mediators on Gaza (joint call for the next steps of the truce, Dec 2025) and both signed the Sharm el-Sheikh document of Oct 2025.
+  since: '2025-12-06'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://ewn.co.za/2025/12/06/mediators-qatar-egypt-call-for-next-steps-in-gaza-truce
+    title: Mediators Qatar, Egypt call for next steps in Gaza truce
+    publisher: EWN (AFP)
+    date: '2025-12-06'
+    tier: 3
+  - *id008
+- to: TUR
+  layer: action
+  type: visit
+  summary: 'Erdogan in Cairo on 4 Feb 2026, the first visit since 2012, for the second High-Level Strategic Cooperation Council: agreements, a USD 15bn trade goal for 2028; letters of intent on defence-industry
+    cooperation on 13 Jul 2026.'
+  since: '2026-02-04'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.egypttoday.com/Article/1/144879/El-Sisi-Erdogan-sign-agreements-at-joint-strategic-cooperation-council
+    title: El-Sisi, Erdogan sign agreements at joint strategic cooperation council meeting
+    publisher: Egypt Today
+    date: '2026-02-04'
+    tier: 3
+  - &id009
+    url: https://www.al-monitor.com/originals/2026/07/turkey-egypt-expand-military-ties-cooperation-frameworks-what-know
+    title: 'Turkey, Egypt expand military ties: cooperation frameworks, what to know'
+    publisher: Al-Monitor
+    date: 2026-07
+    tier: 3
+- to: TUR
+  layer: action
+  type: exercise
+  summary: First joint Egypt-Turkey naval exercise in 13 years (Sept 2025); the two still differ over Libya and over the Eastern Mediterranean east of the 28th meridian.
+  since: 2025-09
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - *id009
+- to: SDN
+  layer: objective
+  type: influence_goal
+  summary: Egypt backs the Sudanese army under Burhan (received in Cairo Apr 2025 and at El Alamein on 4 Oct 2026) and Sudan's unity and sovereignty, to keep an RSF-run or partitioned Sudan off its southern
+    border; it carries about 852,000 registered Sudanese refugees (UNHCR, 30 Jun 2026).
+  since: 2023-04
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - &id012
+    url: https://www.thenationalnews.com/news/mena/2026/10/04/egypt-hosts-four-way-summit-as-tensions-with-ethiopia-escalate/
+    title: Egypt hosts four-way summit as tensions with Ethiopia escalate
+    publisher: The National
+    date: '2026-10-04'
+    tier: 3
+  - url: https://www.al-monitor.com/originals/2025/04/egypts-sisi-hosts-burhan-eyes-reconstruction-sudan-what-know
+    title: Egypt's Sisi hosts Burhan, eyes reconstruction in Sudan - what to know
+    publisher: Al-Monitor
+    date: 2025-04
+    tier: 3
+  - &id010
+    url: https://hornreview.org/2026/01/16/from-covert-alignment-to-strategic-encirclement-the-fracturing-arab-consensus-on-sudan/
+    title: 'From covert alignment to strategic encirclement: the fracturing Arab consensus on Sudan'
+    publisher: Horn Review
+    date: '2026-01-16'
+    tier: 3
+  - url: https://www.unhcr.org/eg/refugee-context-egypt
+    title: Refugee context in Egypt
+    publisher: UNHCR
+    date: '2026-06-30'
+    tier: 1
+- to: nsa-rsf
+  layer: objective
+  type: influence_goal
+  summary: Egypt works to cut the RSF's supply line through eastern Libya (Kufra) and, by reports, struck RSF-linked convoys on 9 Jan 2026 (not officially confirmed); it sits in the Quad with the RSF's
+    alleged patron, the UAE.
+  since: 2026-01
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  sources:
+  - *id010
+  - &id013
+    url: https://libyasecuritymonitor.com/saddam-haftar-discusses-military-cooperation-with-egyptian-officials-in-cairo/
+    title: Saddam Haftar discusses military cooperation with Egyptian officials in Cairo
+    publisher: Libya Security Monitor
+    date: 2026-01
+    tier: 3
+- to: ETH
+  layer: objective
+  type: influence_goal
+  summary: Egypt wants a binding framework on filling and operating the GERD (inaugurated Sept 2025) and against three further Blue Nile dams announced in Mar 2026; Sisi promised a 'firm and decisive response'
+    to new construction (Dec 2025) and Cairo says it seeks dialogue, not confrontation.
+  since: '2011'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - &id011
+    url: https://www.thenationalnews.com/news/mena/2026/10/02/egypt-ethiopia-nile-dam-latest/
+    title: Egypt Ethiopia Nile dam latest
+    publisher: The National
+    date: '2026-10-02'
+    tier: 3
+  - url: https://hornreview.org/2026/02/19/containment-or-co-development-navigating-egypts-strategic-encirclement-of-ethiopia/
+    title: 'Containment or co-development: navigating Egypt''s strategic encirclement of Ethiopia'
+    publisher: Horn Review
+    date: '2026-02-19'
+    tier: 3
+  - *id005
+- to: ETH
+  layer: action
+  type: expulsion
+  summary: On 1 Oct 2026 Ethiopia expelled an Egyptian diplomat on the day it accused Egypt, Eritrea and Sudan of backing the TPLF; Egypt expelled an Ethiopian counsellor in return and denies any role.
+  since: '2026-10-01'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - *id011
+  - url: https://www.timeslive.co.za/news/africa/2026-10-01-ethiopia-shuts-embassy-in-eritrea-expels-10-envoys/
+    title: Ethiopia shuts embassy in Eritrea, expels 10 envoys
+    publisher: TimesLIVE (Reuters)
+    date: '2026-10-01'
+    tier: 3
+- to: SOM
+  layer: alignment
+  type: treaty
+  summary: Defence cooperation pact of Aug 2024 between Egypt and Somalia, which Ethiopia reads as encirclement.
+  since: 2024-08
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://fides.org/en/news/75346-AFRICA_SOMALIA_Egypt_and_Somalia_s_military_agreement_alarms_Ethiopia
+    title: Egypt and Somalia's military agreement alarms Ethiopia
+    publisher: Agenzia Fides
+    date: 2024-08
+    tier: 3
+  - *id012
+- to: SOM
+  layer: dependency
+  type: military_presence
+  summary: The African Union allocated 1,091 Egyptian troops to AUSSOM (against Ethiopia's 2,500); the deployment is delayed by funding and logistics as of 1 Sep 2026.
+  since: 2026-09
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 1091
+  unit: troops_allocated_aussom
+  sources:
+  - url: https://www.dawan.africa/news/somalia-says-funding-hurdles-delay-egyptian-troops-deployment-to-aussom
+    title: Somalia says funding hurdles delay Egyptian troops deployment to AUSSOM
+    publisher: Dawan Africa
+    date: '2026-09-01'
+    tier: 3
+- to: ERI
+  layer: action
+  type: visit
+  summary: Asmara trilateral of Oct 2024 (Egypt, Eritrea, Somalia) and the El Alamein quadrilateral of 4 Oct 2026 (Egypt, Eritrea, Somalia, Sudan); Ethiopia and Eritrea severed relations on 1-2 Oct 2026.
+    Analysts read the ring as containment of Ethiopia.
+  since: 2024-10
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://allafrica.com/stories/202410110085.html
+    title: Egypt, Eritrea provide all forms of support to Somalia following summit meeting
+    publisher: allAfrica
+    date: '2024-10-11'
+    tier: 3
+  - *id012
+  - url: https://hornreview.org/2026/04/22/as-ethiopia-doubles-down-on-the-nile-egypt-deepens-its-eritrea-alignment/
+    title: As Ethiopia doubles down on the Nile, Egypt deepens its Eritrea alignment
+    publisher: Horn Review
+    date: '2026-04-22'
+    tier: 3
+- to: DJI
+  layer: action
+  type: visit
+  summary: 'Sisi in Djibouti in Apr 2025: rejection of threats to Red Sea navigation, the Red Sea and Gulf of Aden littoral states'' ''exclusive responsibility'' for its security, a joint business council
+    and a Bank of Egypt branch; Sisi congratulated Guelleh on re-election on 19 Apr 2026.'
+  since: 2025-04
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.egypttoday.com/Article/1/139755/President-Sisi-Djiboutian-counterpart-reject-threats-to-security-freedom-of
+    title: President Sisi, Djiboutian counterpart reject threats to security, freedom of navigation in Red Sea
+    publisher: Egypt Today
+    date: 2025-04
+    tier: 3
+- to: LBY
+  layer: objective
+  type: influence_goal
+  summary: Egypt keeps the east under Haftar as a buffer (Sisi received the Haftars in Dec 2025; Saddam Haftar in Cairo in Jan and Jun 2026; LNA officers at Egypt's military academy) while hedging toward
+    Tripoli; it presses Haftar to cut the RSF supply line.
+  since: 2025-12
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - *id013
+  - url: https://fr.allafrica.com/stories/202601030068.html
+    title: Eastern Libya - facing Egypt, Marshal Haftar looks for new allies
+    publisher: allAfrica
+    date: '2026-01-03'
+    tier: 3
+    title_original: 'Libye de l''Est : face à l''Egypte, le maréchal Haftar cherche de nouveaux alliés'
+    lang: fr
+- to: SYR
+  layer: action
+  type: visit
+  summary: Sisi met al-Sharaa on 5 Mar 2025; Foreign Minister Shaibani was received in Cairo on 3 May 2026; Al-Monitor reports Egypt rejected a Syrian ambassador in June 2026 and commentators tie the reserve
+    to al-Sharaa's Islamist past.
+  since: '2025-03-05'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  sources:
+  - url: https://egyptianstreets.com/2025/03/05/egypt-syria-seek-stronger-ties-in-first-meeting-between-el-sisi-and-al-sharaa/
+    title: Egypt, Syria seek stronger ties in first meeting between El-Sisi and Al-Sharaa
+    publisher: Egyptian Streets
+    date: '2025-03-05'
+    tier: 3
+  - url: https://www.newarab.com/news/does-shaibanis-cairo-visit-signal-thaw-egypt-syria-ties
+    title: Does Shaibani's Cairo visit signal a real thaw in Egypt-Syria ties?
+    publisher: The New Arab
+    date: 2026-05
+    tier: 3
+- to: IRN
+  layer: action
+  type: visit
+  summary: Araghchi in Cairo on 2 Jun 2025 (after Oct 2024 and Pezeshkian's Dec 2024 visit); ambassadors still not exchanged. In the 2026 war Egypt stayed formally neutral and worked as secondary mediator
+    behind Pakistan.
+  since: '2025-06-02'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.arabnews.com/node/2575630/middle-east
+    title: Egypt's El-Sisi meets with Iran's foreign minister
+    publisher: Arab News
+    date: '2025-06-02'
+    tier: 3
+  - &id014
+    url: https://carnegieendowment.org/middle-east/diwan/2026/04/egypt-discrete-role-in-the-ceasefire-with-iran
+    title: Egypt's discreet role in the ceasefire with Iran
+    publisher: Carnegie Middle East Center
+    date: 2026-04
+    tier: 2
+- to: IRN
+  layer: objective
+  type: influence_goal
+  summary: Cairo wants the Iran war ended without an Iranian regime collapse that would tip the balance to Israel, and to avoid Iranian control of the Red Sea shore (Chatham House).
+  since: 2026-03
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.chathamhouse.org/2026/05/why-egypt-helping-end-iran-war
+    title: Why Egypt is helping to end the Iran war
+    publisher: Chatham House
+    date: '2026-05-19'
+    tier: 2
+  - *id014
+- to: RUS
+  layer: dependency
+  type: investment
+  summary: Rosatom is building the four-unit El Dabaa nuclear plant (first unit due on the grid in 2028; two more reactors under study).
+  since: '2015'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 4
+  unit: reactor_units_el_dabaa
+  sources:
+  - url: https://www.powermag.com/el-dabaa-first-of-several-nuclear-reactors-for-egypt/
+    title: El Dabaa - first of several nuclear reactors for Egypt
+    publisher: POWER Magazine
+    date: '2026'
+    tier: 3
+  - url: https://english.ahram.org.eg/News/574567.aspx
+    title: Egypt plans to expand El-Dabaa nuclear plant with 2 additional reactors
+    publisher: Ahram Online
+    date: '2026'
+    tier: 3
+- to: RUS
+  layer: dependency
+  type: trade_share
+  summary: 'Russia is Egypt''s leading wheat supplier: 5.28 million tonnes between July 2025 and January 2026 (USDA-based forecast; secondary source).'
+  since: 2025-07
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  value: 5.28
+  unit: million_tonnes_wheat_jul2025_jan2026
+  sources:
+  - url: https://cropgpt.ai/russia-set-to-remain-egypts-top-wheat-supplier-despite-2026-27-dip
+    title: Russia set to remain Egypt's top wheat supplier despite 2026/27 dip
+    publisher: CropGPT (USDA-based forecast)
+    date: 2026-03
+    tier: 4
+- to: CHN
+  layer: dependency
+  type: investment
+  summary: China-Egypt TEDA zone in the Suez Canal Economic Zone (about 200 companies, USD 4bn invested); a third phase was agreed by Sisi and Xi on 1-2 Sep 2026 in Xi's first Egypt visit in a decade.
+  since: '2026-09-02'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 4
+  unit: usd_bn_teda_suez_zone_invested
+  sources:
+  - url: https://english.ahram.org.eg/News/575857.aspx
+    title: 'Factbox: Key outcomes of Chinese President Xi Jinping visit to Egypt'
+    publisher: Ahram Online
+    date: '2026-09-02'
+    tier: 3
+  - url: https://www.al-monitor.com/originals/2026/09/china-expands-egypt-investments-first-xi-visit-decade
+    title: China expands Egypt investments in first Xi visit in a decade
+    publisher: Al-Monitor
+    date: 2026-09
+    tier: 3
+- to: CHN
+  layer: action
+  type: exercise
+  summary: First Egypt-China joint air drill, 'Eagles of Civilization 2025' (Apr 2025), with J-10C fighters; reports of J-10C and J-35 purchases are unconfirmed and a Foreign Policy essay says they could
+    test Washington's leverage.
+  since: 2025-04
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.thenationalnews.com/news/mena/2026/09/02/guide-to-chinese-military-hardware-on-show-in-egypt-during-president-xis-visit/
+    title: Guide to Chinese military hardware on show in Egypt during President Xi's visit
+    publisher: The National
+    date: '2026-09-02'
+    tier: 3
+  - *id015
+- to: org-eu
+  layer: alignment
+  type: treaty
+  summary: Strategic and comprehensive partnership of Mar 2024 with a EUR 7.4bn package (macro-financial assistance up to EUR 5bn, EUR 1.8bn investments, EUR 600m grants including EUR 200m for migration);
+    Egypt is on the EU list of safe countries of origin.
+  since: 2024-03
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - &id016
+    url: https://www.consilium.europa.eu/en/infographics/eu-egypt-relations-facts-and-figures/
+    title: 'EU-Egypt relations: facts and figures'
+    publisher: Council of the EU
+    date: '2026'
+    tier: 1
+  - &id017
+    url: https://eur-lex.europa.eu/eli/dec/2024/1144/oj
+    title: Decision (EU) 2024/1144 providing macro-financial assistance to Egypt (ceiling EUR 5bn in two operations)
+    publisher: EUR-Lex (Official Journal of the EU)
+    date: '2024'
+    tier: 1
+  - url: https://www.eeas.europa.eu/egypt/european-union-and-egypt_en
+    title: The European Union and Egypt
+    publisher: EEAS
+    date: '2026'
+    tier: 1
+- to: org-eu
+  layer: dependency
+  type: debt
+  summary: Macro-financial assistance ceiling of EUR 5bn in two operations (EUR 1bn short-term disbursed Dec 2024; EUR 4bn medium-term, first EUR 1bn disbursed Jan 2026), tied to reforms.
+  since: '2024'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  value: 5
+  unit: eur_bn_macro_financial_assistance_ceiling_2024_27
+  sources:
+  - *id016
+  - *id017
+- to: GRC
+  layer: alignment
+  type: treaty
+  summary: Partial EEZ delimitation of 2020; no full delimitation exists. Egypt sent a note verbale on 8 Jul 2025 against Greece's April 2025 maritime spatial plan, and a Greece-Egypt-Cyprus trilateral
+    met at El Alamein on 8 Sep 2026.
+  since: 2020-08
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://en.protothema.gr/2026/09/08/mitsotakis-from-egypt-stability-does-not-mean-concession-or-tolerance-of-faits-accomplis-greece-threatens-no-one/
+    title: 'Mitsotakis from Egypt: stability does not mean concession or tolerance of faits accomplis; Greece threatens no one'
+    publisher: Protothema
+    date: '2026-09-08'
+    tier: 3
+  - url: https://en.protothema.gr/2026/09/08/live-statements-by-mitsotakis-and-sisi-following-their-meeting-in-egypt-and-the-trilateral-meeting-with-cyprus/
+    title: 'Live: statements by Mitsotakis and Sisi following their meeting in Egypt and the trilateral meeting with Cyprus'
+    publisher: Protothema
+    date: '2026-09-08'
+    tier: 3
+  - url: https://www.tovima.com/politics/mitsotakis-in-egypt-the-issues-on-the-table/amp/
+    title: 'Mitsotakis in Egypt: the issues on the table'
+    publisher: To Vima
+    date: 2026-09
+    tier: 3
+  - url: https://greekcitytimes.com/2025/08/07/tensions-surface-as-egypt-protests-greek-maritime-map/
+    title: Tensions surface as Egypt protests Greek maritime map
+    publisher: Greek City Times
+    date: '2025-08-07'
+    tier: 3
+- to: CYP
+  layer: action
+  type: agreement
+  summary: 'Framework agreement of 30 Mar 2026 in Cairo: Egypt to buy all of Aphrodite on a reported 15-year contract and to liquefy Cronos at Damietta, Cyprus paying the USD 2bn pipeline cost.'
+  since: '2026-03-30'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://cna.org.cy/en/article/10069400/cyprus-egypt-sign-agreement-on-development-of-cypriot-offshore-gas-fields
+    title: Cyprus, Egypt sign agreement on development of Cypriot offshore gas fields
+    publisher: Cyprus News Agency
+    date: '2026-03-30'
+    tier: 1
+  - &id018
+    url: https://www.iene.eu/energy-news/cyprus-and-egypt-sign-gas-framework-deal-covering-kronos-and-aphrodite-fields-p8397.html
+    title: Cyprus and Egypt sign gas framework deal covering Kronos and Aphrodite fields
+    publisher: IENE
+    date: 2026-03
+    tier: 3
+- to: CYP
+  layer: dependency
+  type: energy_import
+  summary: Egypt would buy all of Aphrodite (3.7 tcf) and process Cronos at Zohr and Damietta; first Cronos gas to Egypt around 2027-28, Aphrodite around 2031 (sources differ on timing).
+  since: '2026-03-30'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 3.7
+  unit: tcf_aphrodite_reserves_planned_for_egypt
+  sources:
+  - url: https://proof.csmonitor.com/World/Europe/2026/0809/cyprus-natural-gas-europe
+    title: Cyprus natural gas will help supply Europe by first half of 2028, official says
+    publisher: Christian Science Monitor (AP)
+    date: '2026-08-09'
+    tier: 3
+  - url: https://www.bairdmaritime.com/offshore/transport/cyprus-egypt-boost-eastern-mediterranean-energy-cooperation-with-lng-deals
+    title: Cyprus, Egypt boost eastern Mediterranean energy cooperation with LNG deals
+    publisher: Baird Maritime
+    date: '2026'
+    tier: 3
+  - *id018
+- to: ITA
+  layer: dependency
+  type: investment
+  summary: Eni, operator of the Zohr field, pledged about USD 8bn more over five years (Sisi-Descalzi, 26 Nov 2025; restated 25 Aug 2026); Egypt's presidency credits Eni with about 40% of national gas output.
+  since: '2025-11-26'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 8
+  unit: usd_bn_eni_pledge_five_years_2025
+  sources:
+  - url: https://www.bairdmaritime.com/shipping/tankers/gas/italys-eni-commits-8b-to-boost-egypt-gas-production
+    title: Italy's Eni commits USD 8bn to boost Egypt gas production
+    publisher: Baird Maritime (Reuters)
+    date: '2025-11-26'
+    tier: 3
+  - url: https://www.euronews.com/2026/08/25/eni-boosts-gas-in-egypt-85-billion-investment-230-new-wells
+    title: 'Eni boosts gas in Egypt: USD 8.5 billion investment, 230 new wells'
+    publisher: Euronews
+    date: '2026-08-25'
+    tier: 3
+- to: ITA
+  layer: action
+  type: incident
+  summary: On 28 Sep 2026 a Rome court sentenced three Egyptian security officials in absentia to 10 years for the abduction of Giulio Regeni (not for his death) and acquitted one; Egypt rejects the trial's
+    legitimacy. Meloni was in Cairo on 17 Mar 2024.
+  since: '2026-09-28'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://www.ajc.com/news/2026/09/rome-court-sentences-3-egyptian-security-officials-to-10-years-over-giulio-regenis-abduction/
+    title: Rome court sentences 3 Egyptian security officials to 10 years over Giulio Regeni's abduction
+    publisher: AP via The Atlanta Journal-Constitution
+    date: '2026-09-28'
+    tier: 3
+  - url: https://www.governo.it/en/node/25266
+    title: Strengthening of EU-Egypt strategic partnership and implementation of Mattei Plan - President Meloni in Cairo
+    publisher: Italian Government
+    date: '2024-03-17'
+    tier: 1
+- to: FRA
+  layer: dependency
+  type: arms_supply
+  summary: Rafale since the 2015 order and a 30-aircraft follow-on in 2021; a reported request of 2 Sep 2026 for 24 more would take the fleet to 78 (Dassault declined to comment).
+  since: '2015'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 78
+  unit: rafale_target_fleet
+  sources:
+  - url: https://www.edrmagazine.eu/eias-2026-egypts-rafale-numbers-set-to-increase
+    title: EIAS 2026 - Egypt's Rafale numbers set to increase
+    publisher: European Defence Review
+    date: '2026'
+    tier: 3
+- to: DEU
+  layer: dependency
+  type: arms_supply
+  summary: Germany supplied four Type 209 submarines (the fourth handed over by TKMS) and is building four MEKO A-200 frigates for the Egyptian navy under a Sept 2018 contract (three in Germany, one in
+    Alexandria).
+  since: 2018-09
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 4
+  unit: type_209_submarines_delivered
+  sources:
+  - url: https://www.bairdmaritime.com/security/naval/naval-submersibles/german-yard-hands-over-egyptian-navys-fourth-type-209-submarine
+    title: German yard hands over Egyptian Navy's fourth Type 209 submarine
+    publisher: Baird Maritime
+    date: '2025'
+    tier: 3
+  - url: https://www.shipandoffshore.net/news/shipbuilding/detail/news/tkms-hands-over-first-of-four-egyptian-frigates.html
+    title: TKMS hands over first of four Egyptian frigates
+    publisher: Ship & Offshore
+    date: '2024'
+    tier: 3
+- to: GBR
+  layer: action
+  type: agreement
+  summary: The UK and Egypt committed in July 2025 to a Strategic Partnership and a joint investment conference; a Starmer visit to launch the upgraded framework was announced for July 2026 (not confirmed
+    by our sources).
+  since: '2025-07-22'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.gov.uk/government/news/uk-egypt-strategic-partnership-22-july-2025
+    title: UK-Egypt Strategic Partnership
+    publisher: UK Government
+    date: '2025-07-22'
+    tier: 1
+- to: IND
+  layer: action
+  type: visit
+  summary: Sisi and Modi met on the BRICS sidelines in New Delhi in Sept 2026 (a USD 12bn trade target); strategic partnership since 2023.
+  since: 2026-09
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - &id019
+    url: https://english.ahram.org.eg/News/576566.aspx
+    title: El-Sisi, Modi discuss USD 12 bln trade target, deeper Egypt-India ties on BRICS sidelines
+    publisher: Ahram Online
+    date: 2026-09
+    tier: 3
+- to: IND
+  layer: dependency
+  type: trade_share
+  summary: Bilateral trade of USD 6.5bn in FY 2025-26 against a target of USD 12bn within five years.
+  since: 2025-04
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 6.5
+  unit: usd_bn_bilateral_trade_fy2025_26
+  sources:
+  - url: https://www.eoicairo.gov.in/page/india-egypt-relations/
+    title: India-Egypt Relations
+    publisher: Embassy of India in Cairo
+    date: '2026'
+    tier: 1
+  - *id019
+- to: JOR
+  layer: action
+  type: visit
+  summary: 'Sisi and King Abdullah met in Cairo on 1 Feb 2026: full implementation of the Gaza ceasefire plan, rejection of any displacement of Palestinians, and condemnation of Israeli violations in the
+    West Bank.'
+  since: '2026-02-01'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://kingabdullah.jo/en/node/59033
+    title: King, Egypt president reaffirm shared position in rejecting displacement of Palestinians
+    publisher: Royal Hashemite Court of Jordan
+    date: '2026-02-01'
+    tier: 1
+  - url: https://www.africanews.com/amp/2026/02/02/leaders-of-egypt-and-jordan-reiterate-opposition-to-gaza-displacement-as-rafah-crossing-re/
+    title: Sisi, King Abdullah reject Gaza displacement plans
+    publisher: Africanews
+    date: '2026-02-02'
+    tier: 3
+- to: org-arab-league
+  layer: objective
+  type: influence_goal
+  summary: 'Egypt hosts the Arab League in Cairo and nominates its secretary-general: Nabil Fahmy took office on 1 Jul 2026, and the March 2025 Cairo summit used the League to legitimise Egypt''s Gaza plan.'
+  since: '2026-07-01'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://english.ahram.org.eg/News/572052.aspx
+    title: Nabil Fahmy assumes duties as Arab League Secretary-General
+    publisher: Ahram Online
+    date: '2026-07-01'
+    tier: 3
+  - url: https://egyptianstreets.com/2026/03/29/nabil-fahmy-named-next-secretary-general-of-the-arab-league/
+    title: Nabil Fahmy named next secretary general of the Arab League
+    publisher: Egyptian Streets
+    date: '2026-03-29'
+    tier: 3
+  - *id004
+- to: org-imf
+  layer: dependency
+  type: debt
+  summary: IMF programme of USD 8bn (EFF) extended to Dec 2026; the seventh review completed in Jul 2026, releasing about USD 1.7bn. Egypt's external debt was USD 164.8bn at end-June 2026.
+  since: '2022'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  value: 8
+  unit: usd_bn_imf_eff_programme
+  sources:
+  - url: https://english.ahram.org.eg/News/573797.aspx
+    title: IMF board approves Egypt's EFF 7th, RSF 2nd reviews, unlocks over USD 1.7 bln in fresh financing
+    publisher: Ahram Online
+    date: 2026-07
+    tier: 3
+  - url: https://english.ahram.org.eg/News/563007.aspx
+    title: IMF approves USD 2.27 bln for Egypt, extends USD 8bn programme to end-2026
+    publisher: Ahram Online
+    date: 2026-02
+    tier: 3
+- to: nsa-houthis
+  layer: dependency
+  type: trade_share
+  summary: Suez Canal revenue was USD 4.6bn in FY 2025/26 (down from USD 10.2bn in 2023) after Houthi attacks; the IMF estimated the 2024 loss at about USD 6bn while Al Jazeera cites about USD 7bn. In Sept
+    2026 the Houthis took the Yemeni Red Sea coast and Mayyun island, putting the recovery at risk.
+  since: '2023'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 4.6
+  unit: usd_bn_suez_canal_revenue_fy2025_26
+  sources:
+  - url: https://english.ahram.org.eg/News/571808.aspx
+    title: 'Suez Canal revenue rises 23% to USD 4.6 billion in FY 2025/26: Chairman'
+    publisher: Ahram Online
+    date: 2026-06
+    tier: 3
+  - url: https://www.atlanticcouncil.org/blogs/menasource/houthi-attacks-egypt-red-sea-economy/
+    title: Houthi attacks on ships in the Red Sea add to Egypt's economic troubles
+    publisher: Atlantic Council
+    date: '2024'
+    tier: 2
+  - &id020
+    url: https://aljazeera.com/economy/2026/9/13/red-sea-nations-watch-as-houthis-seize-bab-al-mandeb-strait
+    title: Red Sea nations watch as Houthis seize Bab al-Mandeb strait
+    publisher: Al Jazeera
+    date: '2026-09-13'
+    tier: 3
+- to: nsa-houthis
+  layer: action
+  type: incident
+  summary: Egypt and Saudi Arabia demand an open Red Sea (Sept 2026) and Egypt backs the Saudi measures; Cairo has not fought the Houthis.
+  since: 2026-09
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.al-monitor.com/originals/2026/09/saudi-egypt-demand-open-red-sea-riyadh-vows-response-houthi-attacks
+    title: Saudi, Egypt demand open Red Sea, Riyadh vows response to Houthi attacks
+    publisher: Al-Monitor
+    date: 2026-09
+    tier: 3
+  - *id020
