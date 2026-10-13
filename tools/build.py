@@ -517,11 +517,19 @@ def main():
     # --- currents (Luttwak's culminating point): the trends are the first derivative of the postures.
     # Per actor: drift = (warming - cooling) / n, turbulence = (warming + cooling) / n, over hand-written
     # A/B stances. Alarms: allies cooling (the culminating point of an alliance), rivals warming.
+    # weight of a movement: a relationship that moves with an ally or an adversary weighs far more
+    # than one that moves with a partner or a neutral (Davide, 2026-10-13)
+    WEIGHT = {"ally": 4, "adversary": 4, "reluctant_ally": 3, "rival": 3, "partner": 2, "reluctant_partner": 1, "neutral": 1, "claimed_territory": 3, "own_territory": 0}
     per = {}
     allies_cooling, rivals_warming = [], []
     for (a, x), st in handst.items():
-        c = per.setdefault(a, {"warming": 0, "cooling": 0, "stable": 0})
-        c[st.get("trend") or "stable"] = c.get(st.get("trend") or "stable", 0) + 1
+        c = per.setdefault(a, {"warming": 0, "cooling": 0, "stable": 0, "w_warming": 0, "w_cooling": 0, "w_all": 0})
+        t = st.get("trend") or "stable"
+        c[t] = c.get(t, 0) + 1
+        w = WEIGHT.get(st["grade"], 1)
+        c["w_all"] += w
+        if t in ("warming", "cooling"):
+            c["w_" + t] += w
         if st["grade"] in FAULT_ALLIED and st.get("trend") == "cooling":
             allies_cooling.append({"a": a, "x": x, "grade": st["grade"], "bond": st.get("bond"), "note": first(st.get("note"))})
         if st["grade"] in FAULT_HOSTILE and st.get("trend") == "warming":
@@ -529,8 +537,10 @@ def main():
     currents = []
     for a, c in per.items():
         n = c["warming"] + c["cooling"] + c["stable"]
-        if n:
-            currents.append({"id": a, "n": n, "warming": c["warming"], "cooling": c["cooling"], "drift": round((c["warming"] - c["cooling"]) / n, 2), "turbulence": round((c["warming"] + c["cooling"]) / n, 2)})
+        if n and c["w_all"]:
+            currents.append({"id": a, "n": n, "warming": c["warming"], "cooling": c["cooling"],
+                             "drift": round((c["w_warming"] - c["w_cooling"]) / c["w_all"], 2), "turbulence": round((c["w_warming"] + c["w_cooling"]) / c["w_all"], 2),
+                             "w_warming": c["w_warming"], "w_cooling": c["w_cooling"], "w_all": c["w_all"]})
     currents.sort(key=lambda c: (-c["drift"], c["id"]))
     allies_cooling.sort(key=lambda r: (r["a"], r["x"]))
     rivals_warming.sort(key=lambda r: (r["a"], r["x"]))
