@@ -1,0 +1,414 @@
+from: KWT
+relations:
+  # ---------- objective ----------
+  - to: IRQ
+    layer: objective
+    type: territorial_claim
+    summary: Kuwait holds that the Khor Abdullah median line fixed by UNSC Resolution 833 (1993) and the shoals of Fasht al-Qaid and Fasht al-Aij are Kuwaiti and were never in dispute; it summoned Iraq's chargé on 21 Feb 2026 over the coordinates Iraq filed at the UN in January-February 2026. Iraq says the filing follows international law.
+    since: 1993
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.arabnews.pk/node/2634099/middle-east", title: "Riyadh leads Arab support for Kuwait amid Iraq maritime dispute", publisher: "Arab News", date: 2026-02-23, tier: 3}
+      - {url: "https://middle-east-online.com/en/kuwait-protests-iraq%E2%80%99s-new-maritime-maps-fresh-border-row", title: "Kuwait protests Iraq's new maritime maps in fresh border row", publisher: "Middle East Online", date: 2026-02-26, tier: 3}
+  - to: IRN
+    layer: objective
+    type: territorial_claim
+    summary: Kuwait and Saudi Arabia assert that they alone hold full sovereign rights over the Durra gas field (Iran's Arash; about 220 bcm) in the divided Neutral Zone and call on Iran to negotiate the maritime boundary; Iran claims a share and called the March 2022 Saudi-Kuwaiti development deal illegal. Kuwait's oil minister said on 27 Jul 2023 that drilling would not wait for an Iranian agreement.
+    since: 2022-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2023/8/4/what-is-the-kuwaiti-iranian-dispute-over-the-dorra-arash-gas", title: "What is the Kuwaiti-Iranian dispute over the Dorra/Arash gas field?", publisher: "Al Jazeera", date: 2023-08-04, tier: 3}
+      - {url: "https://www.reuters.com/world/middle-east/iran-says-durra-gas-field-is-joint-iran-kuwait-saudi-field-2022-03-26/", title: "Iran says Saudi-Kuwaiti deal on Durra gas development 'illegal'", publisher: "Reuters", date: 2022-03-26, tier: 3}
+      - {url: "https://www.newarab.com/news/iran-retreats-claims-over-joint-durra-gas-field", title: "Iranian officials retreat from claims over joint gas field with Kuwait and Saudi Arabia", publisher: "The New Arab", date: 2023-07-17, tier: 3}
+  - to: org-gcc
+    layer: objective
+    type: influence_goal
+    summary: Kuwait frames its security as collective - on 9 Mar 2026 the Emir said the security of the GCC states is indivisible - and on 12 Oct 2026 the Foreign Ministry said Saudi security is part of Kuwait's and the GCC's; it seeks to turn national grievances (Iran's attacks, Iraq's maritime filing) into Gulf positions.
+    since: 2026-03-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.lbcgroup.tv/news/middleeastnews/912635/lbci-lebanon-articles/en", title: "Kuwait's Emir: we are facing an attack from a neighbouring country despite not allowing use of our land (Reuters)", publisher: "LBCI (citing Reuters)", date: 2026-03-09, tier: 3}
+      - {url: "https://www.arabtimesonline.com/news/kuwait-condemns-houthi-attacks-on-riyadh-and-dammam-airports-backs-saudi-measures/", title: "Kuwait Condemns Houthi Attacks on Riyadh and Dammam Airports, Backs Saudi Measures", publisher: "Arab Times", date: 2026-10-12, tier: 3}
+  # ---------- alignment ----------
+  - to: ISR
+    layer: alignment
+    type: non_recognition
+    summary: Kuwait has no relations with Israel and does not recognise it; entry is refused to holders of Israeli passports or Israeli stamps and Israeli goods are boycotted (Wikipedia index). The foreign minister restated on 29 Oct 2023 that Kuwait will not normalise unless a Palestinian state is established in line with international resolutions. Last statement verified in this pass is from October 2023.
+    since: 1967
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://english.news.cn/20231030/356095ef623a4271b1ae29dcf3d7b067/c.html", title: "Kuwait not to normalize ties with Israel unless Palestinian issue solved: FM", publisher: "Xinhua (reporting an official statement)", date: 2023-10-30, tier: 3}
+      - {url: "https://themedialine.org/headlines/kuwait-stands-firm-no-israel-ties-without-palestinian-statehood/", title: "Kuwait Stands Firm: No Israel Ties Without Palestinian Statehood", publisher: "The Media Line", date: 2023-10-30, tier: 3}
+      - {url: "https://en.wikipedia.org/wiki/Kuwait%E2%80%93Israel_relations", title: "Kuwait-Israel relations (index: entry ban, boycott)", publisher: "Wikipedia (index)", date: 2026-09-16, tier: 4}
+  - to: USA
+    layer: alignment
+    type: security_guarantee
+    summary: Kuwait has been a major non-NATO ally of the United States since 2004 and AGSI describes Washington as its primary security guarantor, but no mutual-defence treaty text was verified in this pass; the relation is a de facto guarantee backed by a standing US ground presence.
+    since: 1991-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "http://www.globalsecurity.org/military/library/news/2004/01/mil-040115-usia03.htm", title: "U.S. Designates Kuwait a Major Non-NATO Ally of U.S.", publisher: "U.S. Information Agency (text republished by GlobalSecurity.org)", date: 2004-01, tier: 1}
+      - {url: "https://agsi.org/analysis/kuwaits-defense-diversification-through-pakistan/", title: "Kuwait's Defense Diversification Through Pakistan", publisher: "Arab Gulf States Institute in Washington", date: 2026-09-02, tier: 2}
+  - to: SAU
+    layer: alignment
+    type: security_guarantee
+    summary: On 12 Oct 2026 Kuwait declared 'absolute solidarity' with Saudi Arabia after Houthi strikes on Riyadh and Dammam airports, said Saudi security is part of its own and the GCC's, and backed the Kingdom's measures - a declaratory commitment, not a bilateral treaty.
+    since: 2026-10-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.arabtimesonline.com/news/kuwait-condemns-houthi-attacks-on-riyadh-and-dammam-airports-backs-saudi-measures/", title: "Kuwait Condemns Houthi Attacks on Riyadh and Dammam Airports, Backs Saudi Measures", publisher: "Arab Times", date: 2026-10-12, tier: 3}
+  - to: SAU
+    layer: alignment
+    type: treaty
+    summary: Kuwait and Saudi Arabia partitioned the old Neutral Zone (Uqair Convention of 1922) and share its marine resources equally, which is why Saudi Arabia is a co-party to the Durra claim; a submerged area next to the zone was cited by Riyadh against Iraq's maritime filing in Feb 2026.
+    since: 1922
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2023/8/4/what-is-the-kuwaiti-iranian-dispute-over-the-dorra-arash-gas", title: "What is the Kuwaiti-Iranian dispute over the Dorra/Arash gas field?", publisher: "Al Jazeera", date: 2023-08-04, tier: 3}
+      - {url: "https://www.arabnews.pk/node/2634099/middle-east", title: "Riyadh leads Arab support for Kuwait amid Iraq maritime dispute", publisher: "Arab News", date: 2026-02-23, tier: 3}
+  - to: PAK
+    layer: alignment
+    type: treaty
+    summary: Defence Cooperation Agreement signed in Kuwait on 11 Jun 2023 and ratified by Kuwait in late July 2026 (training, exercises, logistics, intelligence); it creates no obligation on Pakistan to defend Kuwait or deploy forces.
+    since: 2023-06-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://agsi.org/analysis/kuwaits-defense-diversification-through-pakistan/", title: "Kuwait's Defense Diversification Through Pakistan", publisher: "Arab Gulf States Institute in Washington", date: 2026-09-02, tier: 2}
+  - to: CHN
+    layer: alignment
+    type: treaty
+    summary: Kuwait and China signed a strategic partnership in July 2018 (defence-industry cooperation and Chinese investment in Kuwait's energy sector), and Kuwait is a Belt and Road partner through the Mubarak Al-Kabeer port and Silk City.
+    since: 2018-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://gbtimes.com/china-and-kuwait-agree-to-establish-strategic-partnership", title: "China and Kuwait agree to establish strategic partnership", publisher: "GBTimes", date: 2018-07-10, tier: 3}
+      - {url: "https://www.al-monitor.com/originals/2021/04/kuwait-and-china-seek-diversifying-economy-belt-and-road-initiative", title: "Kuwait and China seek diversifying economy via Belt and Road Initiative", publisher: "Al-Monitor", date: 2021-04-13, tier: 3}
+  - to: org-eu
+    layer: alignment
+    type: treaty
+    summary: Kuwait is a party, through the GCC, to the first EU-GCC summit declaration of 16 Oct 2024 ('strategic partnership for peace and prosperity', a pledge to pursue a free-trade agreement); no Kuwait-specific EU instrument was found in this pass.
+    since: 2024-10-16
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.fm.gov.om/en/17675/", title: "Joint statement from the first GCC-EU summit (Brussels, 16 Oct 2024)", publisher: "Ministry of Foreign Affairs of Oman", date: 2024-10-16, tier: 1}
+      - {url: "https://www.arabnews.pk/node/2575720", title: "First GCC-EU summit agrees to lead on economics, energy and geopolitics", publisher: "Arab News", date: 2024-10-16, tier: 3}
+  # ---------- dependency ----------
+  - to: USA
+    layer: dependency
+    type: military_presence
+    summary: Kuwait hosts what the Wikipedia index calls the largest US military presence in the Middle East (Camp Arifjan, Camp Buehring, Ali Al Salem Air Base, Camp Patriot, Port Shuaiba); the figure of over 14,000 personnel is given as 'reportedly' and is not confirmed in this pass.
+    since: 1991-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    value: 14000
+    unit: us_military_personnel_reported
+    sources:
+      - {url: "https://www.reuters.com/article/us-iraq-security-usa-presence-factbox-idUSKBN1Z72GF", title: "Factbox: U.S. forces in Gulf region and Iraq", publisher: "Reuters", date: 2020-01-08, tier: 3}
+      - {url: "https://en.wikipedia.org/wiki/Kuwait", title: "Kuwait (index: 'over 14,000 US military personnel')", publisher: "Wikipedia (index)", date: 2026-10-12, tier: 4}
+  - to: IRQ
+    layer: dependency
+    type: debt
+    summary: Iraq made its final war-reparation payment to Kuwait on 13 Jan 2022, ending a UN Compensation Commission claim of USD 52.4bn arising from the 1990 invasion; the UN declared Iraq to have fully paid.
+    since: 1991
+    until: 2022-01-13
+    last_verified: 2026-10-12
+    confidence: A
+    value: 52.4
+    unit: usd_billion_reparations_paid
+    sources:
+      - {url: "https://news.un.org/en/story/2022/02/1111632", title: "Iraq makes final reparation payment to Kuwait for 1990 invasion", publisher: "UN News", date: 2022-02, tier: 1}
+      - {url: "https://www.aa.com.tr/en/middle-east/iraq-says-paid-50-bln-in-war-reparations-to-kuwait/2161854", title: "Iraq says paid $50 bln in war reparations to Kuwait", publisher: "Anadolu Agency", date: 2021-05-09, tier: 3}
+  - to: CHN
+    layer: dependency
+    type: investment
+    summary: China builds the Mubarak Al-Kabeer port on Bubiyan Island (first phase of four berths completed in April 2021) and is a Belt and Road partner in the Silk City plan, estimated by the Hong Kong Trade Development Council at USD 130bn. The value is the plan's headline estimate, not Chinese money committed. The port was a target of Iranian strikes in 2026.
+    since: 2019
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    value: 130
+    unit: usd_billion_silk_city_plan_estimate
+    sources:
+      - {url: "https://beltandroad.hktdc.com/en/insights/phase-one-kuwaits-bri-backed-us130-billion-silk-city-opens", title: "Phase One of Kuwait's BRI-Backed US$130 Billion Silk City Opens", publisher: "Hong Kong Trade Development Council", date: 2019-06-10, tier: 3}
+      - {url: "https://www.porttechnology.org/news/china_and_kuwait_to_build_new_port/", title: "China and Kuwait to Build New Port", publisher: "Port Technology", date: 2019-02-21, tier: 3}
+      - {url: "https://agsi.org/analysis/kuwaits-defense-diversification-through-pakistan/", title: "Kuwait's Defense Diversification Through Pakistan (Mubarak Al-Kabeer port among 2026 targets)", publisher: "Arab Gulf States Institute in Washington", date: 2026-09-02, tier: 2}
+  - to: QAT
+    layer: dependency
+    type: energy_import
+    summary: Qatar supplies Kuwait with up to 3 million tonnes of LNG a year under a 15-year sale and purchase agreement signed in 2020.
+    since: 2020
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    value: 3
+    unit: million_tonnes_lng_per_year
+    sources:
+      - {url: "https://www.reuters.com/article/us-kuwait-qatar-lng-statement/qatar-to-supply-kuwait-with-3-million-tonnes-of-lng-a-year-idUSKBN1Z407L", title: "Qatar to supply Kuwait with 3 million tonnes of LNG a year", publisher: "Reuters", date: 2020, tier: 3}
+  - to: IND
+    layer: dependency
+    type: remittances
+    summary: India supplies the largest foreign community in Kuwait, 1,000,726 residents or 21% of the population at the end of 2023 (the remittance flow itself was not sourced in this pass; the value is headcount).
+    since: 2023-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    value: 1000726
+    unit: indian_residents_in_kuwait
+    sources:
+      - {url: "https://kuwaittimes.com/article/11439/kuwait/expats-still-make-up-two-thirds-of-population-as-some-communities-grow/", title: "Expats still make up two thirds of population as some communities grow", publisher: "Kuwait Times", date: 2024-02-22, tier: 3}
+  - to: EGY
+    layer: dependency
+    type: remittances
+    summary: Egypt supplies the second-largest foreign community in Kuwait, 644,442 residents or 13% of the population at the end of 2023 (value is headcount, not remittance volume).
+    since: 2023-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    value: 644442
+    unit: egyptian_residents_in_kuwait
+    sources:
+      - {url: "https://kuwaittimes.com/article/11439/kuwait/expats-still-make-up-two-thirds-of-population-as-some-communities-grow/", title: "Expats still make up two thirds of population as some communities grow", publisher: "Kuwait Times", date: 2024-02-22, tier: 3}
+  - to: PHL
+    layer: dependency
+    type: remittances
+    summary: The Philippines supplies 267,259 residents in Kuwait (5% of the population at the end of 2023), most of them domestic workers; the Philippines banned deployment in February 2018 and lifted the ban after a May 2018 agreement on workers' rights (value is headcount).
+    since: 2023-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    value: 267259
+    unit: filipino_residents_in_kuwait
+    sources:
+      - {url: "https://kuwaittimes.com/article/11439/kuwait/expats-still-make-up-two-thirds-of-population-as-some-communities-grow/", title: "Expats still make up two thirds of population as some communities grow", publisher: "Kuwait Times", date: 2024-02-22, tier: 3}
+      - {url: "http://www.sunstar.com.ph/manila/local-news/2018/02/14/kuwait-calms-philippines-after-dead-worker-found-freezer-588911", title: "Kuwait calms Philippines after dead worker found in freezer", publisher: "SunStar Manila", date: 2018-02-14, tier: 3}
+  - to: JOR
+    layer: dependency
+    type: investment
+    summary: The Kuwait Fund for Arab Economic Development (founded 1961, the first aid agency created by a developing country) signed two loan and grant agreements worth USD 89m with Jordan in September 2020 for education, infrastructure and economic reforms.
+    since: 2020-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    value: 89
+    unit: usd_million_kuwait_fund_agreements_2020
+    sources:
+      - {url: "http://www.jordantimes.com/news/local/jordan-kuwait-fund-sign-loan-grant-agreements", title: "Jordan, Kuwait fund sign loan, grant agreements", publisher: "The Jordan Times", date: 2020-09-23, tier: 3}
+  - to: PSE
+    layer: dependency
+    type: investment
+    summary: Kuwait gave USD 2 million to UNRWA in October 2023 for Palestine refugees, an example of the aid channel (the Kuwait Fund and UN agencies); the total of Kuwaiti aid to Palestinians was not sourced in this pass.
+    since: 2023-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    value: 2
+    unit: usd_million_unrwa_contribution_2023
+    sources:
+      - {url: "https://www.unrwa.org/newsroom/news-releases/unrwa-welcomes-us-2-million-contribution-kuwait", title: "UNRWA welcomes US$ 2 million contribution from Kuwait", publisher: "UNRWA", date: 2023-10, tier: 1}
+  - to: RUS
+    layer: action
+    type: agreement
+    summary: Kuwait and Russia are among the seven OPEC+ core members that on 4 Oct 2026 agreed to keep output at the September level for November under the Declaration of Cooperation; Kuwait's own crude output was 580,000 b/d in May 2026 and about 1.97 mb/d in July after Hormuz disruption.
+    since: 2016-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://opec.org/pr-detail/1891616-4-october-2026.html", title: "Saudi Arabia, Russia, Iraq, Kuwait, Kazakhstan, Algeria, and Oman reaffirm commitment to market stability", publisher: "OPEC Secretariat", date: 2026-10-04, tier: 1}
+      - {url: "https://agsi.org/analysis/kuwait-gets-some-good-news-amid-tough-times/", title: "Kuwait Gets Some Good News Amid Tough Times", publisher: "Arab Gulf States Institute in Washington", date: 2026-08-17, tier: 2}
+  - to: GBR
+    layer: dependency
+    type: military_presence
+    summary: The UK sent a Rapid Sentry air-defence battery to Kuwait during the 2026 Iran war (one battery, per the reporting under the UK's own card).
+    since: 2026-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    value: 1
+    unit: rapid_sentry_batteries_deployed
+    sources:
+      - {url: "https://www.al-monitor.com/originals/2026/03/uk-looks-provide-more-support-gulf-allies-amid-iranian-attacks", title: "UK looks to provide more support to Gulf allies amid Iranian attacks", publisher: "Al-Monitor / Reuters", date: 2026-03-18, tier: 3}
+  # ---------- action ----------
+  - to: IRN
+    layer: action
+    type: incident
+    summary: Iran began striking Kuwait on 28 Feb 2026 and AGSI counts hundreds of missiles and drones since, against Kuwait International Airport, the Mina al-Ahmadi refinery, power and desalination plants, the Shuwaikh and Mubarak Al-Kabeer ports and US bases; Kuwaiti dead number 4 servicemen and 8 civilians in the Wikipedia tally. Strikes continued after the 7-8 Apr ceasefire (28 drones dealt with on 8 Apr).
+    since: 2026-02-28
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://agsi.org/analysis/kuwaits-defense-diversification-through-pakistan/", title: "Kuwait's Defense Diversification Through Pakistan", publisher: "Arab Gulf States Institute in Washington", date: 2026-09-02, tier: 2}
+      - {url: "https://www.aljazeera.com/news/2026/4/8/uae-kuwait-bahrain-report-attacks-despite-iran-us-ceasefire", title: "UAE, Kuwait, Bahrain report attacks despite Iran-US ceasefire", publisher: "Al Jazeera", date: 2026-04-08, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2026/3/20/kuwait-oil-refinery-hit-again-as-iran-targets-gulf-energy-infrastructure", title: "Kuwait oil refinery hit again as Iran targets Gulf energy infrastructure", publisher: "Al Jazeera", date: 2026-03-20, tier: 3}
+  - to: IRN
+    layer: action
+    type: incident
+    summary: On 3 Jun 2026 an Iranian drone heavily damaged the passenger building of Kuwait International Airport hours after Iran fired missiles at Kuwait and Bahrain; the airport had reopened only the previous Monday and commercial flights were suspended again.
+    since: 2026-06-03
+    until: 2026-06-03
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.euronews.com/2026/06/03/iranian-drone-attack-causes-heavy-damage-to-kuwait-airport-as-us-and-iran-trade-strikes", title: "Iranian drone attack causes heavy damage to Kuwait airport as US and Iran trade strikes", publisher: "Euronews", date: 2026-06-03, tier: 3}
+  - to: IRN
+    layer: action
+    type: incident
+    summary: On 1 May 2026 six IRGC men landed on Bubiyan Island, where China is helping to build a port; Kuwaiti forces exchanged fire, one soldier was wounded and four IRGC men were captured. Kuwait accused Iran on 12 May; Araghchi said the boat had entered Kuwaiti waters by a navigation fault and that Iran reserved the right to respond.
+    since: 2026-05-01
+    until: 2026-05-13
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.nytimes.com/2026/05/12/world/middleeast/kuwait-iran-bubiyan-island.html", title: "Kuwait Accuses Iran of Trying to Infiltrate Its Territory", publisher: "The New York Times", date: 2026-05-12, tier: 3}
+      - {url: "https://www.washingtonpost.com/world/2026/05/12/iran-us-israel-uae-iron-dome/b4f79bfc-4dd9-11f1-97e7-22c6c29ff0d8_story.html", title: "Kuwait says Iran attacked an island where China is helping to build a port", publisher: "The Washington Post (AP)", date: 2026-05-12, tier: 3}
+      - {url: "https://www.ndtv.com/world-news/reserve-right-to-respond-abbas-araghchi-accuses-kuwait-of-attacking-iranian-boat-11491601", title: "'Reserve Right To Respond': Araghchi Accuses Kuwait Of Attacking Iranian Boat", publisher: "NDTV", date: 2026-05-13, tier: 3}
+  - to: USA
+    layer: action
+    type: incident
+    summary: On 1 Mar 2026 an Iranian strike on a makeshift operations centre at Port Shuaiba killed six US soldiers and wounded dozens, the deadliest on US forces in the war; on 2 Mar a Kuwaiti F/A-18 mistakenly shot down three US F-15Es (the crews survived) and on 9 Mar the Emir said Kuwait had not allowed the use of its land, airspace or waters for any military action against Iran.
+    since: 2026-03-01
+    until: 2026-03-09
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.euronews.com/2026/06/03/iranian-drone-attack-causes-heavy-damage-to-kuwait-airport-as-us-and-iran-trade-strikes", title: "Iranian drone attack causes heavy damage to Kuwait airport as US and Iran trade strikes (confirms the Port Shuaiba toll)", publisher: "Euronews", date: 2026-06-03, tier: 3}
+      - {url: "https://wsj.com/politics/national-security/kuwaiti-jet-fighter-mistakenly-downed-u-s-f-15s-initial-reports-say-4ab64e56", title: "Exclusive: Kuwaiti Jet Fighter Mistakenly Downed U.S. F-15s, Initial Reports Say", publisher: "The Wall Street Journal", date: 2026-03-04, tier: 3}
+      - {url: "https://www.lbcgroup.tv/news/middleeastnews/912635/lbci-lebanon-articles/en", title: "Kuwait's Emir: we are facing an attack from a neighbouring country despite not allowing use of our land (Reuters)", publisher: "LBCI (citing Reuters)", date: 2026-03-09, tier: 3}
+  - to: IRQ
+    layer: action
+    type: incident
+    summary: Kuwait summoned Iraq's chargé d'affaires on 21 Feb 2026 over maritime coordinates Iraq had lodged at the UN in January-February; Saudi Arabia, Qatar, the UAE, Bahrain, Oman, Egypt, Jordan and the GCC Secretary-General backed Kuwait and the GCC asked Iraq to withdraw the filing.
+    since: 2026-02-21
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.arabnews.pk/node/2634099/middle-east", title: "Riyadh leads Arab support for Kuwait amid Iraq maritime dispute", publisher: "Arab News", date: 2026-02-23, tier: 3}
+  - to: IRQ
+    layer: action
+    type: incident
+    summary: Iraq's Federal Supreme Court annulled on 4 Sep 2023 the 2013 law ratifying the Khor Abdullah navigation agreement (no two-thirds majority); the president's and the prime minister's appeals were postponed on 22 Apr and 30 Apr 2025 to mid-June 2025 and the outcome is not known to this pass. A GCC-US statement of 20 Sep 2023 called for completing the maritime demarcation.
+    since: 2023-09-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.newarab.com/news/iraqs-top-court-delays-ruling-key-maritime-pact-kuwait", title: "Iraq's top court delays ruling on revoked Khor Abdullah maritime pact with Kuwait", publisher: "The New Arab", date: 2025-05-01, tier: 3}
+      - {url: "https://www.reuters.com/world/middle-east/gcc-countries-us-call-completion-demarcation-kuwaiti-iraqi-maritime-borders-2023-09-20/", title: "GCC countries, US call for demarcation of Kuwaiti-Iraqi maritime borders", publisher: "Reuters", date: 2023-09-20, tier: 3}
+  - to: IRQ
+    layer: action
+    type: incident
+    summary: Kuwait struck Iran-backed Iraqi militias from its territory in April 2026, according to the Wall Street Journal (Iraqi officials reported at least two rocket attacks from Kuwaiti territory); on 26 Mar six Arab states including Kuwait condemned attacks by Iran and its allied Iraqi armed groups.
+    since: 2026-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.wsj.com/livecoverage/iran-us-china-news-2026/card/saudi-arabia-kuwait-hit-iran-backed-militias-in-iraq-s3jBPjJvIo6hqBSa7wXx", title: "Saudi Arabia, Kuwait Hit Iran-Backed Militias in Iraq", publisher: "The Wall Street Journal", date: 2026-05, tier: 3}
+      - {url: "https://english.aawsat.com/node/5255360", title: "Six Arab Nations Issue Statement Condemning Attacks by Iran-aligned Iraqi Factions", publisher: "Asharq Al-Awsat", date: 2026-03-26, tier: 3}
+  - to: org-opec
+    layer: action
+    type: agreement
+    summary: On 4 Oct 2026 Kuwait, Saudi Arabia, Russia, Iraq, Kazakhstan, Algeria and Oman agreed virtually to keep output at the September level for November and reaffirmed conformity with the Declaration of Cooperation; the next meeting is 1 Nov 2026.
+    since: 2026-10-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://opec.org/pr-detail/1891616-4-october-2026.html", title: "Saudi Arabia, Russia, Iraq, Kuwait, Kazakhstan, Algeria, and Oman reaffirm commitment to market stability", publisher: "OPEC Secretariat", date: 2026-10-04, tier: 1}
+  - to: GBR
+    layer: action
+    type: exercise
+    summary: The Kuwaiti-British Desert Warrior 8 exercise was launched in January 2025.
+    since: 2025-01-28
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://kuwaittimes.com/article/24021/kuwait/other-news/kuwaiti-british-desert-warrior-8-exercise-launched/", title: "Kuwaiti-British Desert Warrior 8 exercise launched", publisher: "Kuwait Times", date: 2025-01-28, tier: 3}
+  - to: IND
+    layer: action
+    type: visit
+    summary: The inaugural India-Kuwait Joint Defence Committee meeting was held in New Delhi on 28 Aug 2026 (headline of the Indian government release; the content was not read in this pass).
+    since: 2026-08-28
+    until: 2026-08-28
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2304285&reg=48&lang=1", title: "Inaugural India-Kuwait Joint Defence Committee Meeting Held in New Delhi", publisher: "Press Information Bureau, Government of India", date: 2026-08-28, tier: 1}
+  - to: SAU
+    layer: action
+    type: agreement
+    summary: Kuwait and Saudi Arabia agreed in March 2022 to develop the Durra gas field jointly; the Kuwaiti Municipal Council approved in May 2026 a route corridor for a high-speed rail link to Riyadh, building on the national railway project revamped in 2025.
+    since: 2022-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2023/8/4/what-is-the-kuwaiti-iranian-dispute-over-the-dorra-arash-gas", title: "What is the Kuwaiti-Iranian dispute over the Dorra/Arash gas field?", publisher: "Al Jazeera", date: 2023-08-04, tier: 3}
+      - {url: "https://agsi.org/analysis/kuwait-gets-some-good-news-amid-tough-times/", title: "Kuwait Gets Some Good News Amid Tough Times", publisher: "Arab Gulf States Institute in Washington", date: 2026-08-17, tier: 2}
+  - to: QAT
+    layer: action
+    type: visit
+    summary: Emir Mishal made his first official visit as ruler to Doha on 20 Feb 2024 (talks with Sheikh Tamim); Kuwait was the chief mediator of the 2017 Qatar crisis.
+    since: 2024-02-20
+    until: 2024-02-20
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://dohanews.co/kuwaits-amir-in-qatar-on-first-official-visit-since-becoming-leader/", title: "Kuwait's Amir in Qatar on first official visit since becoming leader", publisher: "Doha News", date: 2024-02-20, tier: 3}
+      - {url: "http://www.al-monitor.com/pulse/originals/2017/06/gcc-qatar-crisis-kuwait-role-mediator-iran.html", title: "Stakes high for Kuwait as mediator in Qatar crisis", publisher: "Al-Monitor", date: 2017-06-27, tier: 3}
+  - to: TUR
+    layer: action
+    type: agreement
+    summary: Turkey and Kuwait signed a joint defence plan for 2019 in October 2018, a military cooperation agreement; no 2025-26 bilateral step was found.
+    since: 2018-10-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.dailysabah.com/diplomacy/2018/10/12/turkey-kuwait-sign-military-cooperation-agreement-for-2019", title: "Turkey, Kuwait sign military cooperation agreement for 2019", publisher: "Daily Sabah", date: 2018-10-12, tier: 3}
+  - to: JOR
+    layer: action
+    type: agreement
+    summary: Jordan's foreign minister and Kuwait's held a call on 16 Mar 2026 in which both condemned Iranian attacks on Arab states; Jordan backed Kuwait's maritime sovereignty in Feb 2026.
+    since: 2026-03-16
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.jordannews.jo/Section-109/News/Safadi-and-Kuwaiti-Counterpart-Renew-Condemnation-of-Iranian-Attacks-on-Arab-States-49779", title: "Safadi and Kuwaiti Counterpart Renew Condemnation of Iranian Attacks on Arab States", publisher: "Jordan News", date: 2026-03-16, tier: 3}
+      - {url: "https://www.arabnews.pk/node/2634099/middle-east", title: "Riyadh leads Arab support for Kuwait amid Iraq maritime dispute", publisher: "Arab News", date: 2026-02-23, tier: 3}
+  - to: PHL
+    layer: action
+    type: agreement
+    summary: After the Philippines banned deployment of workers to Kuwait in Feb 2018, the two governments signed an agreement on migrant workers' rights in May 2018 and the ban was lifted (Wikipedia index; the agreement text was not read).
+    since: 2018-05
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "http://www.sunstar.com.ph/manila/local-news/2018/02/14/kuwait-calms-philippines-after-dead-worker-found-freezer-588911", title: "Kuwait calms Philippines after dead worker found in freezer", publisher: "SunStar Manila", date: 2018-02-14, tier: 3}
+      - {url: "https://en.wikipedia.org/wiki/Kuwait%E2%80%93Philippines_relations", title: "Kuwait-Philippines relations (index: May 2018 agreement)", publisher: "Wikipedia (index)", date: 2026-10-12, tier: 4}

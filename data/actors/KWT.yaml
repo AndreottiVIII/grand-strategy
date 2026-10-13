@@ -1,14 +1,174 @@
 id: KWT
 name: Kuwait
+short: Kuwait
 type: state
 iso2: kw
 wikipedia: https://en.wikipedia.org/wiki/Kuwait
-coords:
-- 47.98
-- 29.38
+coords: [47.98, 29.38]
 seat: Kuwait City
-regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+regions: ['middle-east']
+card: full
+tier: protagonist
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the ruling family in control and the succession orderly by governing without the National Assembly: the Emir dissolved parliament on 15 Feb 2024, suspended it and seven articles of the 1962 constitution on 10 May 2024 for up to four years (a restoration window to May 2028), and the Emir and the government now exercise legislative power by decree. The citizenship campaign (a December 2024 law allowing revocation for 'moral turpitude' or acts threatening state security; about 42,000 revoked in six months by March 2025, at least 50,000 by December 2025 on Middle East Eye's count, campaigners say up to 200,000) is part of the same project: narrowing the body of citizens who share the welfare state."
+      confidence: B
+      sources:
+        - {url: "https://constitutionnet.org/news/kuwaits-monarch-dissolves-parliament-and-suspends-constitutional-provisions", title: "Kuwait's monarch dissolves parliament and suspends constitutional provisions", publisher: "ConstitutionNet (International IDEA)", date: 2024-05-13, tier: 2}
+        - {url: "https://www.fpri.org/article/2025/11/debt-decree-and-development-kuwaits-unnoticed-transitions/", title: "Debt, Decree and Development: Kuwait's Unnoticed Transitions", publisher: "Foreign Policy Research Institute", date: 2025-11, tier: 2}
+        - {url: "https://www.france24.com/en/middle-east/20250315-an-authoritarian-shift-in-kuwait-stripps-42-000-citizens-of-their-nationality", title: "'Stateless overnight': Authoritarian crackdown strips 42,000 Kuwaitis of nationality", publisher: "France 24", date: 2025-03-15, tier: 3}
+        - {url: "https://www.middleeasteye.net/news/kuwait-citizenship-crackdown-widows-stateless-critics-exile", title: "Kuwait citizenship crackdown leaves widows stateless and critics in exile", publisher: "Middle East Eye", date: 2025-12-11, tier: 3}
+    - rank: 2
+      text: "Defend the territory and the infrastructure against Iran and Iraq. Since 28 Feb 2026 Kuwait has been struck by hundreds of Iranian missiles and drones (airport, Mina al-Ahmadi refinery, power and desalination plants, ports, US bases); on 9 Mar 2026 the Emir called it an unprovoked attack by a neighbouring Muslim state, said Kuwait had allowed no use of its land, airspace or waters against it and asserted the right of proportionate self-defence. On the other flank Iraq filed new maritime coordinates at the UN in January-February 2026 that Kuwait and the Gulf states reject."
+      confidence: B
+      sources:
+        - {url: "https://www.lbcgroup.tv/news/middleeastnews/912635/lbci-lebanon-articles/en", title: "Kuwait's Emir: we are facing an attack from a neighbouring country despite not allowing use of our land (Reuters)", publisher: "LBCI (citing Reuters)", date: 2026-03-09, tier: 3}
+        - {url: "https://agsi.org/analysis/kuwaits-defense-diversification-through-pakistan/", title: "Kuwait's Defense Diversification Through Pakistan", publisher: "Arab Gulf States Institute in Washington", date: 2026-09-02, tier: 2}
+        - {url: "https://www.arabnews.pk/node/2634099/middle-east", title: "Riyadh leads Arab support for Kuwait amid Iraq maritime dispute", publisher: "Arab News", date: 2026-02-23, tier: 3}
+    - rank: 3
+      text: "Keep the United States as the guarantor of last resort while building a second layer of security partners: the Pakistan defence cooperation agreement (signed 11 Jun 2023, ratified late July 2026) is explicitly a framework with no obligation to defend Kuwait, a Joint Defence Committee with India held its inaugural meeting in August 2026, and the UK sent a Rapid Sentry air-defence battery in the 2026 war. AGSI: officials know no other power can replace Washington."
+      confidence: B
+      sources:
+        - {url: "https://agsi.org/analysis/kuwaits-defense-diversification-through-pakistan/", title: "Kuwait's Defense Diversification Through Pakistan", publisher: "Arab Gulf States Institute in Washington", date: 2026-09-02, tier: 2}
+        - {url: "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2304285&reg=48&lang=1", title: "Inaugural India-Kuwait Joint Defence Committee Meeting Held in New Delhi", publisher: "Press Information Bureau, Government of India", date: 2026-08-28, tier: 1}
+        - {url: "https://www.al-monitor.com/originals/2026/03/uk-looks-provide-more-support-gulf-allies-amid-iranian-attacks", title: "UK looks to provide more support to Gulf allies amid Iranian attacks", publisher: "Al-Monitor / Reuters", date: 2026-03-18, tier: 3}
+    - rank: 4
+      text: "Keep the oil state solvent and diversify it: oil is about 90% of government revenue and nearly all crude, products and condensate leave through Hormuz; output fell to 580,000 b/d in May 2026 and recovered to about 1.97 mb/d in July. The tools are the March 2025 debt law (KD30bn, about USD 97bn, bonds up to fifty years), the revised Vision 2035 (a northern Gulf gateway around Mubarak Al-Kabeer port and Silk City), foreign capital (a USD 16bn KKR-Kuwait Oil Company deal in July 2026) and the Kuwait Investment Authority (assets estimated at USD 1 trillion). The IMF expects a 0.6% contraction in 2026."
+      confidence: B
+      sources:
+        - {url: "https://agsi.org/analysis/kuwait-gets-some-good-news-amid-tough-times/", title: "Kuwait Gets Some Good News Amid Tough Times", publisher: "Arab Gulf States Institute in Washington", date: 2026-08-17, tier: 2}
+        - {url: "https://www.fpri.org/article/2025/11/debt-decree-and-development-kuwaits-unnoticed-transitions/", title: "Debt, Decree and Development: Kuwait's Unnoticed Transitions", publisher: "Foreign Policy Research Institute", date: 2025-11, tier: 2}
+        - {url: "https://agsi.org/analysis/gulf-oil-exporters-to-build-storage-in-asia/", title: "Gulf Oil Exporters to Build Storage in Asia", publisher: "Arab Gulf States Institute in Washington", date: 2026-09-30, tier: 2}
+    - rank: 5
+      text: "Hold the maritime north and the shared resource zone: the Khor Abdullah median line under UNSC Resolution 833, the Fasht al-Qaid and Fasht al-Aij shoals, Bubiyan Island and the Chinese-built Mubarak Al-Kabeer port against Iraq, and, with Saudi Arabia, exclusive rights to the Durra gas field in the divided Neutral Zone against Iran's Arash claim (Kuwait's oil minister said in July 2023 that drilling would proceed without waiting for an Iranian agreement)."
+      confidence: B
+      sources:
+        - {url: "https://www.arabnews.pk/node/2634099/middle-east", title: "Riyadh leads Arab support for Kuwait amid Iraq maritime dispute", publisher: "Arab News", date: 2026-02-23, tier: 3}
+        - {url: "https://www.newarab.com/news/iraqs-top-court-delays-ruling-key-maritime-pact-kuwait", title: "Iraq's top court delays ruling on revoked Khor Abdullah maritime pact with Kuwait", publisher: "The New Arab", date: 2025-05-01, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2023/8/4/what-is-the-kuwaiti-iranian-dispute-over-the-dorra-arash-gas", title: "What is the Kuwaiti-Iranian dispute over the Dorra/Arash gas field?", publisher: "Al Jazeera", date: 2023-08-04, tier: 3}
+    - rank: 6
+      text: "Keep the Arab-cause credentials that legitimise the dynasty and are the cheapest source of soft power: no normalisation with Israel until a Palestinian state exists (the foreign minister, 29-30 Oct 2023), development finance through the Kuwait Fund (founded 1961, the first aid agency created by a developing country), and the habit of mediating inside the GCC (chief mediator of the 2017 Qatar crisis)."
+      confidence: B
+      sources:
+        - {url: "https://english.news.cn/20231030/356095ef623a4271b1ae29dcf3d7b067/c.html", title: "Kuwait not to normalize ties with Israel unless Palestinian issue solved: FM", publisher: "Xinhua (reporting an official statement)", date: 2023-10-30, tier: 3}
+        - {url: "https://themedialine.org/headlines/kuwait-stands-firm-no-israel-ties-without-palestinian-statehood/", title: "Kuwait Stands Firm: No Israel Ties Without Palestinian Statehood", publisher: "The Media Line", date: 2023-10-30, tier: 3}
+        - {url: "http://www.al-monitor.com/pulse/originals/2017/06/gcc-qatar-crisis-kuwait-role-mediator-iran.html", title: "Stakes high for Kuwait as mediator in Qatar crisis", publisher: "Al-Monitor", date: 2017-06-27, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "Gulf solidarity as the first reflex: summoning Iraq's chargé over the maritime submission (21 Feb 2026) and collecting statements from Riyadh, Doha, Abu Dhabi, Manama, Muscat, Amman and the GCC Secretary-General; on 12 Oct 2026 the Foreign Ministry declared Saudi security part of Kuwait's own and the GCC's after Houthi strikes on Riyadh and Dammam airports. The Emir's formula, 'GCC security is indivisible', is used to turn a national grievance into a collective one."
+      confidence: B
+      sources:
+        - {url: "https://www.arabnews.pk/node/2634099/middle-east", title: "Riyadh leads Arab support for Kuwait amid Iraq maritime dispute", publisher: "Arab News", date: 2026-02-23, tier: 3}
+        - {url: "https://www.arabtimesonline.com/news/kuwait-condemns-houthi-attacks-on-riyadh-and-dammam-airports-backs-saudi-measures/", title: "Kuwait Condemns Houthi Attacks on Riyadh and Dammam Airports, Backs Saudi Measures", publisher: "Arab Times", date: 2026-10-12, tier: 3}
+        - {url: "https://www.lbcgroup.tv/news/middleeastnews/912635/lbci-lebanon-articles/en", title: "Kuwait's Emir: we are facing an attack from a neighbouring country despite not allowing use of our land (Reuters)", publisher: "LBCI (citing Reuters)", date: 2026-03-09, tier: 3}
+    - domain: military
+      text: "Air and missile defence on its own soil (28 drones dealt with on 8 Apr 2026 alone; 26 aerial threats intercepted on 29 Mar), the National Guard, and a host-nation role for roughly the largest US ground presence in the region (Camp Arifjan, Camp Buehring, Ali Al Salem, Port Shuaiba; the Wikipedia index says over 14,000 personnel, which we mark as unconfirmed). Kuwait also reportedly struck Iran-backed Iraqi militias from its territory in April 2026 and captured four IRGC men on Bubiyan on 1 May 2026."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/4/8/uae-kuwait-bahrain-report-attacks-despite-iran-us-ceasefire", title: "UAE, Kuwait, Bahrain report attacks despite Iran-US ceasefire", publisher: "Al Jazeera", date: 2026-04-08, tier: 3}
+        - {url: "https://www.arabtimesonline.com/news/kuwait-intercepts-26-aerial-threats-10-soldiers-injured-in-camp-strike/", title: "Kuwait Intercepts 26 Aerial Threats; 10 Soldiers Injured in Camp Strike", publisher: "Arab Times", date: 2026-03-29, tier: 3}
+        - {url: "https://www.nytimes.com/2026/05/12/world/middleeast/kuwait-iran-bubiyan-island.html", title: "Kuwait Accuses Iran of Trying to Infiltrate Its Territory", publisher: "The New York Times", date: 2026-05-12, tier: 3}
+        - {url: "https://www.wsj.com/livecoverage/iran-us-china-news-2026/card/saudi-arabia-kuwait-hit-iran-backed-militias-in-iraq-s3jBPjJvIo6hqBSa7wXx", title: "Saudi Arabia, Kuwait Hit Iran-Backed Militias in Iraq", publisher: "The Wall Street Journal", date: 2026-05, tier: 3}
+    - domain: economic
+      text: "Sovereign money and borrowing: the Kuwait Investment Authority (a USD 4.5bn syndicated loan in August 2026), a USD 6bn bond in July 2026 with strong demand, the KD30bn borrowing ceiling set by decree in March 2025, and the Kuwait Fund (grants and loans, for example USD 89m to Jordan in 2020). Storage in Asia is the hedge against Hormuz: Kuwait Petroleum Corporation holds up to 3.1m barrels at Kiire (Japan) and 4m at Ulsan (South Korea) against exports of about 1.4 mb/d to Asia in 2025."
+      confidence: B
+      sources:
+        - {url: "https://agsi.org/analysis/kuwait-gets-some-good-news-amid-tough-times/", title: "Kuwait Gets Some Good News Amid Tough Times", publisher: "Arab Gulf States Institute in Washington", date: 2026-08-17, tier: 2}
+        - {url: "https://agsi.org/analysis/gulf-oil-exporters-to-build-storage-in-asia/", title: "Gulf Oil Exporters to Build Storage in Asia", publisher: "Arab Gulf States Institute in Washington", date: 2026-09-30, tier: 2}
+        - {url: "http://www.jordantimes.com/news/local/jordan-kuwait-fund-sign-loan-grant-agreements", title: "Jordan, Kuwait fund sign loan, grant agreements", publisher: "The Jordan Times", date: 2020-09-23, tier: 3}
+    - domain: informational
+      text: "The state defines the story at home: the interior minister, who chairs the committee that reviews nationality cases, told Alrai TV in March 2025 that Kuwait had been 'hijacked' by other nationalities, names of the stripped are published weekly (the government stopped regular announcements of totals in September 2025), and the war is told through KUNA and the defence and interior ministries' communiques on interceptions and damage."
+      confidence: B
+      sources:
+        - {url: "https://www.france24.com/en/middle-east/20250315-an-authoritarian-shift-in-kuwait-stripps-42-000-citizens-of-their-nationality", title: "'Stateless overnight': Authoritarian crackdown strips 42,000 Kuwaitis of nationality", publisher: "France 24", date: 2025-03-15, tier: 3}
+        - {url: "https://www.middleeasteye.net/news/kuwait-citizenship-crackdown-widows-stateless-critics-exile", title: "Kuwait citizenship crackdown leaves widows stateless and critics in exile", publisher: "Middle East Eye", date: 2025-12-11, tier: 3}
+
+  constraints:
+    - text: "Geography: Hormuz is the only outlet for nearly all of Kuwait's oil, storage is limited, the northern end of the Gulf is shared with Iraq and Iran, and the bypass options (an expanded Saudi pipeline, routes through Syria and Lebanon) are costly, slow or politically unrealistic (energy cooperation with Iraq)."
+      confidence: B
+      sources:
+        - {url: "https://agsi.org/analysis/kuwait-gets-some-good-news-amid-tough-times/", title: "Kuwait Gets Some Good News Amid Tough Times", publisher: "Arab Gulf States Institute in Washington", date: 2026-08-17, tier: 2}
+    - text: "Demography: Kuwaitis are 31.7% of about 4.82 million residents (end of 2023); India supplies 21% of residents, Egypt 13%, Bangladesh 6%, the Philippines 5%. The state depends on foreign labour it cannot replace and on governments (Manila, Delhi, Cairo) that protest when it is mistreated."
+      confidence: A
+      sources:
+        - {url: "https://kuwaittimes.com/article/11439/kuwait/expats-still-make-up-two-thirds-of-population-as-some-communities-grow/", title: "Expats still make up two thirds of population as some communities grow", publisher: "Kuwait Times", date: 2024-02-22, tier: 3}
+    - text: "Revenue: oil is about 90% of government revenue before investment income; the IMF expects the economy to contract 0.6% in 2026 and the government has increased borrowing and told ministries to cut spending."
+      confidence: B
+      sources:
+        - {url: "https://agsi.org/analysis/kuwait-gets-some-good-news-amid-tough-times/", title: "Kuwait Gets Some Good News Amid Tough Times", publisher: "Arab Gulf States Institute in Washington", date: 2026-08-17, tier: 2}
+    - text: "Security is borrowed: Kuwait has neither the weight to deter Iran nor the depth to defend its infrastructure (the 1 Mar 2026 strike at Port Shuaiba killed six US soldiers; friendly fire downed three US F-15Es on 2 Mar), and the Pakistani and Indian arrangements add no guarantee."
+      confidence: B
+      sources:
+        - {url: "https://www.euronews.com/2026/06/03/iranian-drone-attack-causes-heavy-damage-to-kuwait-airport-as-us-and-iran-trade-strikes", title: "Iranian drone attack causes heavy damage to Kuwait airport as US and Iran trade strikes", publisher: "Euronews", date: 2026-06-03, tier: 3}
+        - {url: "https://wsj.com/politics/national-security/kuwaiti-jet-fighter-mistakenly-downed-u-s-f-15s-initial-reports-say-4ab64e56", title: "Exclusive: Kuwaiti Jet Fighter Mistakenly Downed U.S. F-15s, Initial Reports Say", publisher: "The Wall Street Journal", date: 2026-03-04, tier: 3}
+        - {url: "https://agsi.org/analysis/kuwaits-defense-diversification-through-pakistan/", title: "Kuwait's Defense Diversification Through Pakistan", publisher: "Arab Gulf States Institute in Washington", date: 2026-09-02, tier: 2}
+    - text: "A suspended assembly is a political-risk discount: the Emir bypassed a parliament that had blocked the debt law, but AGSI expects the assembly to return as a factor in economic policy, and the constitutional review committee promised for November 2024 had not been formed a year later."
+      confidence: B
+      sources:
+        - {url: "https://agsi.org/analysis/kuwait-gets-some-good-news-amid-tough-times/", title: "Kuwait Gets Some Good News Amid Tough Times", publisher: "Arab Gulf States Institute in Washington", date: 2026-08-17, tier: 2}
+        - {url: "https://www.fpri.org/article/2025/11/debt-decree-and-development-kuwaits-unnoticed-transitions/", title: "Debt, Decree and Development: Kuwait's Unnoticed Transitions", publisher: "Foreign Policy Research Institute", date: 2025-11, tier: 2}
+    - text: "The Gulf is split and Kuwait cannot pick a side: the Makkah Joint Defense Agreement (Saudi Arabia, Pakistan, Turkey, 7 Aug 2026) does not include Kuwait, the Saudi-UAE rift divides the GCC, and Kuwait's neighbours disagree on Iran, so its only constant is collective statements."
+      confidence: C
+      sources:
+        - {url: "https://agsi.org/analysis/kuwaits-defense-diversification-through-pakistan/", title: "Kuwait's Defense Diversification Through Pakistan", publisher: "Arab Gulf States Institute in Washington", date: 2026-09-02, tier: 2}
+        - {url: "https://agsi.org/analysis/the-saudi-uae-rift-taking-the-measure-of-the-gulf-that-separates-and-unites-them/", title: "The Saudi-UAE rift: taking the measure of the Gulf that separates and unites them", publisher: "Arab Gulf States Institute in Washington", date: 2026, tier: 2}
+
+  paradoxes:
+    - text: "Hosting the largest US force in the region buys the only credible guarantee and makes Kuwait the target. The Emir says Kuwait allowed no one to use its land, airspace or waters against Iran, yet US bases are what Iran hit first (Camp Buehring on 1 Mar, Port Shuaiba, Ali Al Salem), and the guarantor could not stop the strikes: AGSI frames the question as a US that liberated Kuwait and now struggles to protect it."
+      confidence: B
+      sources:
+        - {url: "https://www.lbcgroup.tv/news/middleeastnews/912635/lbci-lebanon-articles/en", title: "Kuwait's Emir: we are facing an attack from a neighbouring country despite not allowing use of our land (Reuters)", publisher: "LBCI (citing Reuters)", date: 2026-03-09, tier: 3}
+        - {url: "https://www.euronews.com/2026/06/03/iranian-drone-attack-causes-heavy-damage-to-kuwait-airport-as-us-and-iran-trade-strikes", title: "Iranian drone attack causes heavy damage to Kuwait airport as US and Iran trade strikes", publisher: "Euronews", date: 2026-06-03, tier: 3}
+        - {url: "https://agsi.org/engagement/the-wall-street-journal-amb-douglas-a-silliman-is-quoted-in-a-story-covering-the-defense-relationship-between-the-united-states-and-kuwait-in-light-of-recent-iranian-attacks-on-kuwait/", title: "The Wall Street Journal: Amb. Douglas A. Silliman quoted on the US-Kuwait defense relationship after Iranian attacks", publisher: "Arab Gulf States Institute in Washington", date: 2026-07-30, tier: 2}
+    - text: "Suspending parliament cleared the road to the money and removed the buffer that made policy safe. The 2025 debt law (KD30bn, fifty-year bonds) and the July 2026 KKR deal came only after the Assembly could no longer block them, but a regime that governs by decree has no institution to absorb a bad war or a bad succession, and the investors who fund the plan price that risk."
+      confidence: B
+      sources:
+        - {url: "https://www.fpri.org/article/2025/11/debt-decree-and-development-kuwaits-unnoticed-transitions/", title: "Debt, Decree and Development: Kuwait's Unnoticed Transitions", publisher: "Foreign Policy Research Institute", date: 2025-11, tier: 2}
+        - {url: "https://agsi.org/analysis/kuwait-gets-some-good-news-amid-tough-times/", title: "Kuwait Gets Some Good News Amid Tough Times", publisher: "Arab Gulf States Institute in Washington", date: 2026-08-17, tier: 2}
+    - text: "Cutting the citizen rolls to protect the welfare budget creates a stateless class abroad and a diplomatic cost at home. About two-thirds of those affected are said to be divorced and widowed naturalised women (Article 9 of the constitution, which protected them, is among the suspended articles); Saudi Arabia refused to take up an individual case and the UK Foreign Office is collecting information on British-origin Kuwaitis, while a policy sold as savings turns a labour-importing state into one that manufactures stateless residents."
+      confidence: B
+      sources:
+        - {url: "https://www.middleeasteye.net/news/kuwait-citizenship-crackdown-widows-stateless-critics-exile", title: "Kuwait citizenship crackdown leaves widows stateless and critics in exile", publisher: "Middle East Eye", date: 2025-12-11, tier: 2}
+        - {url: "https://www.france24.com/en/middle-east/20250315-an-authoritarian-shift-in-kuwait-stripps-42-000-citizens-of-their-nationality", title: "'Stateless overnight': Authoritarian crackdown strips 42,000 Kuwaitis of nationality", publisher: "France 24", date: 2025-03-15, tier: 3}
+    - text: "The northern gateway strategy is hostage to the neighbours it is meant to serve. Mubarak Al-Kabeer port on Bubiyan and Silk City were designed to make Kuwait a logistics hub for Iraq and the Gulf, but Iraq protests the port and its new maritime map, Iran's IRGC raided Bubiyan on 1 May 2026 where China is building the port, and the port itself was among the targets of Iranian strikes; AGSI notes the gateway goal is hard while Iran is seen as a security threat."
+      confidence: B
+      sources:
+        - {url: "https://agsi.org/analysis/kuwait-gets-some-good-news-amid-tough-times/", title: "Kuwait Gets Some Good News Amid Tough Times", publisher: "Arab Gulf States Institute in Washington", date: 2026-08-17, tier: 2}
+        - {url: "https://agsi.org/analysis/kuwaits-defense-diversification-through-pakistan/", title: "Kuwait's Defense Diversification Through Pakistan", publisher: "Arab Gulf States Institute in Washington", date: 2026-09-02, tier: 2}
+        - {url: "https://www.washingtonpost.com/world/2026/05/12/iran-us-israel-uae-iron-dome/b4f79bfc-4dd9-11f1-97e7-22c6c29ff0d8_story.html", title: "Kuwait says Iran attacked an island where China is helping to build a port", publisher: "The Washington Post (AP)", date: 2026-05-12, tier: 3}
+    - text: "Diversifying security partners dilutes none of the dependence on Washington and adds partners who will not fight. Pakistan's pact obliges it to nothing in an attack and Pakistan mediates with Tehran, India's committee is a framework, and the UK battery is a loan; Kuwait gains political cover and intelligence ties but its real exposure to Hormuz and Iranian drones is unchanged."
+      confidence: B
+      sources:
+        - {url: "https://agsi.org/analysis/kuwaits-defense-diversification-through-pakistan/", title: "Kuwait's Defense Diversification Through Pakistan", publisher: "Arab Gulf States Institute in Washington", date: 2026-09-02, tier: 2}
+    - text: "Standing on a non-normalisation principle that is the cheapest to hold in the Gulf leaves Kuwait without the channels that the Israeli-aligned air-defence cooperation of its neighbours may provide, while the war against Iran is fought partly by Israel. Kuwait's line is that normalisation waits for a Palestinian state; the cost is paid in the one domain, air defence, where it is weakest. (Our reading: no source makes this link.)"
+      confidence: C
+      sources:
+        - {url: "https://english.news.cn/20231030/356095ef623a4271b1ae29dcf3d7b067/c.html", title: "Kuwait not to normalize ties with Israel unless Palestinian issue solved: FM", publisher: "Xinhua (reporting an official statement)", date: 2023-10-30, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/3/20/kuwait-oil-refinery-hit-again-as-iran-targets-gulf-energy-infrastructure", title: "Kuwait oil refinery hit again as Iran targets Gulf energy infrastructure (response to an Israeli strike on South Pars)", publisher: "Al Jazeera", date: 2026-03-20, tier: 3}
+
+  reading: |
+    Kuwait is a small rich state whose strategy has been, since 1961, to buy
+    protection with money and mediation and to keep every neighbour a little in debt
+    to it. 2024-2026 broke the model on two fronts at once. At home the Emir ended
+    the one thing that distinguished Kuwait in the Gulf, an elected assembly with
+    real vetoes: he governs by decree, passed the debt law that the Assembly had
+    blocked, and used the nationality law as a welfare and political instrument. Abroad
+    the 2026 war with Iran turned the host of the largest US ground presence in the
+    region into the Gulf state that is struck most often: the guarantor from 1991
+    could not stop Iranian drones, and the 'we allowed no use of our land' line is
+    as much a plea to Tehran as a statement of fact. The paradox that runs
+    through the card is that every protection Kuwait buys has a price in exposure:
+    the US bases invite attack, the Chinese-built port on Bubiyan invites Iraqi and
+    Iranian pressure, the decree rule that unlocked the money costs it the
+    institutions that absorb shocks, and the extra partners (Pakistan, India, the UK)
+    add cover, not guarantees. Two signals that are not rows: the Emir's description
+    of Iran as a 'friend' even while it attacks, which keeps a way back open, and the
+    absence of any Kuwaiti step toward Israel when its neighbours debate it.
+    Questions for the next pass: the outcome of Iraq's Federal Supreme Court on the
+    Khor Abdullah appeal (hearings were postponed to mid-June 2025), Kuwait's own
+    reaction to the June 2025 Israel-Iran war, the current status of the Durra
+    negotiations, and the Kuwait-China oil trade, which this pass could not source.
