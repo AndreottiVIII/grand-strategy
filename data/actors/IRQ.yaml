@@ -1,14 +1,185 @@
 id: IRQ
 name: Iraq
+short: Iraq
 type: state
+coords: [44.37, 33.32]
 iso2: iq
 wikipedia: https://en.wikipedia.org/wiki/Iraq
-coords:
-- 44.37
-- 33.32
 seat: Baghdad
-regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+regions: [middle-east]
+card: full
+tier: protagonist
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Make the state the only armed actor: bring the Popular Mobilization Forces and the Iran-aligned factions under the Commander-in-Chief by 30 June 2027 (individual fighters join the PMF, groups that keep their names after the deadline are 'outlaws'), complete the end of foreign troops, and hold 'exclusive authority over decisions of war and peace'. Prime Minister Ali al-Zaidi, 40, was chosen by the Coordination Framework after Washington vetoed Nouri al-Maliki, and won a vote of confidence on 14 May 2026 for 14 of 23 ministers."
+      confidence: B
+      sources:
+        - {url: "https://www.iraqinews.com/iraq/pm-al-zaidi-declares-full-sovereignty-coalition-withdrawal-arms-roadmap-2026/", title: "PM Al-Zaidi declares full sovereignty as coalition exits, sets 2027 arms deadline", publisher: "Iraqi News", date: 2026-10-01, tier: 3}
+        - {url: "https://www.ynetnews.com/article/byrzhykqfl", title: "Iraq PM gives Iran-backed militias until June 2027 to disarm and disband (reporting al-Zaidi to The New York Times)", publisher: "Ynet", date: 2026-09, tier: 3}
+        - {url: "https://www.arabnews.com/node/2643609/middle-east", title: "Iraq PM vows monopoly on arms as parliament approves government", publisher: "Arab News", date: 2026-05-14, tier: 3}
+        - {url: "https://www.longwarjournal.org/archives/2026/10/us-flag-trampling-militia-disarmament-dispute-mark-iraqs-post-us-withdrawal-era.php", title: "US flag trampling, militia disarmament dispute mark Iraq's post-US withdrawal era", publisher: "FDD's Long War Journal", date: 2026-10, tier: 2}
+    - rank: 2
+      text: "Stay out of the US-Israeli war on Iran and keep both patrons: Baghdad said on 11 March that it would not let any party use its territory as a base against Iran, and al-Zaidi's line is 'balanced foreign relations'. The aim is that neither Washington nor Tehran treats Iraq as the other's platform, because Iraq has no air defence of its own and has been hit by all sides."
+      confidence: B
+      sources:
+        - {url: "https://www.middleeastmonitor.com/20260311-iraq-says-will-not-allow-any-party-to-use-its-territory-as-base-for-attacks-on-iran/", title: "Iraq says will not allow any party to use its territory as base for attacks on Iran", publisher: "Middle East Monitor", date: 2026-03-11, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/9/29/iraq-begins-high-stakes-security-balancing-act-as-us-troops-withdraw", title: "Iraq begins high-stakes security balancing act as US troops withdraw", publisher: "Al Jazeera", date: 2026-09-29, tier: 3}
+        - {url: "https://www.newarab.com/analysis/us-withdrawing-iraq-who-could-fill-void", title: "The US is withdrawing from Iraq. Who could fill the void? (W. Rodgers, Chatham House)", publisher: "The New Arab", date: 2026-10-08, tier: 3}
+    - rank: 3
+      text: "Restore oil income, about 90% of budget revenue, by getting crude out without the Strait of Hormuz: the Kirkuk-Ceyhan pipeline to Turkey (the one route that kept flowing), the Basra-Haditha pipeline to be built by Chinese firms and extended toward Turkey, Syria and Jordan, and gasoline imports through the Syrian port of Baniyas. Exports fell from about 3.47 million b/d in January 2026 to about 530,000 b/d in May-June; al-Zaidi puts the losses at about USD 60bn."
+      confidence: B
+      sources:
+        - {url: "https://www.hellenicshippingnews.com/iraqs-oil-exports-dip-to-500000-bpd-in-may-june/", title: "Iraq's oil exports dip to 500,000 bpd in May-June (Zawya Projects, citing oil ministry and SOMO)", publisher: "Hellenic Shipping News", date: 2026-07-30, tier: 3}
+        - {url: "https://www.ynetnews.com/article/byrzhykqfl", title: "Iraq PM gives Iran-backed militias until June 2027 to disarm and disband (reporting al-Zaidi to The New York Times)", publisher: "Ynet", date: 2026-09, tier: 3}
+        - {url: "https://www.agbi.com/oil-and-gas/2026/04/iraq-gives-go-ahead-for-basra-oil-pipeline-under-deal-with-china/", title: "Iraq gives go-ahead for Basra oil pipeline under deal with China", publisher: "AGBI", date: 2026-04, tier: 3}
+        - {url: "https://apnews.com/article/syria-oil-iraq-baniyas-hormuz-2be4e63dc6f59c0e2b338c1a1cf425ca", title: "Iraq begins importing gasoline via Syrian port to bypass the closed Strait of Hormuz", publisher: "AP", date: 2026-09-29, tier: 3}
+    - rank: 4
+      text: "Keep the lights on and cut the dependence on Iranian gas: imported gas carried up to 40% of generating capacity at peak, Iran stopped the flow on 18 March 2026 after the strikes on South Pars, and supply (about 29 GW against a normal demand near 40 GW and a summer peak of 55 GW) is the main trigger of street protest. The remedies are electricity bought from Turkey and the Kurdistan Region since late May, the TotalEnergies gas, solar and water project (GGIP) and domestic gas."
+      confidence: B
+      sources:
+        - {url: "https://www.arabnews.com/node/2646442/middle-east", title: "How decades of instability, dependence on Iranian gas hollowed out Iraq's power sector", publisher: "Arab News", date: 2026-06-08, tier: 3}
+        - {url: "https://www.mees.com/2026/1/23/news-in-brief/totals-iraq-solar-phase-one-installation-complete/78642350-f880-11f0-a2e6-a52dcf060f4c", title: "Total's Iraq solar phase one installation complete", publisher: "MEES", date: 2026-01-23, tier: 3}
+        - {url: "https://www.atlanticcouncil.org/blogs/menasource/washington-halted-the-iraq-iran-electricity-waiver-here-is-how-its-perceived-by-washington-and-baghdad/", title: "Washington halted the Iraq-Iran electricity waiver. Here is how it's perceived by Washington and Baghdad", publisher: "Atlantic Council", date: 2025-04-03, tier: 2}
+    - rank: 5
+      text: "Settle what neighbours hold of Iraq's sovereignty: foreign bases (Turkey agreed on 24 September 2026 to hand over Bashiqa gradually), the Khor Abdullah waterway and the maritime line beyond marker 162 with Kuwait (new coordinates filed with the UN on 19 January and 9 February 2026; a joint working group agreed on 25 September), and water with Turkey through the mechanism that pays Turkish firms from oil sales."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/9/24/turkiye-agrees-to-gradual-handover-of-bashiqa-base-to-iraq", title: "Turkiye agrees to gradual handover of Bashiqa base to Iraq", publisher: "Al Jazeera (Reuters)", date: 2026-09-24, tier: 3}
+        - {url: "https://shafaq.com/en/Iraq/Baghdad-Kuwait-set-30-day-roadmap-for-outstanding-issues", title: "Baghdad, Kuwait set 30-day roadmap for outstanding issues", publisher: "Shafaq News", date: 2026-09-25, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/2/23/gcc-states-back-kuwait-maritime-sovereignty-after-iraq-draws-new-boundaries", title: "Gulf countries back Kuwait's sovereignty after Iraq draws new boundaries", publisher: "Al Jazeera", date: 2026-02-23, tier: 3}
+        - {url: "https://english.aawsat.com/node/5301168", title: "Iraqi-Turkish coordination on energy, water corridors as Al-Zaidi visits Ankara", publisher: "Asharq Al-Awsat", date: 2026-07, tier: 3}
+    - rank: 6
+      text: "Fold the Kurdistan Region back under federal terms while keeping its oil flowing: exports resumed on 27 September 2025 after two and a half years, but now all sales go through the federal marketing company SOMO; a Baghdad-Erbil deal of 17 March 2026 aimed at up to 450,000 b/d including 250,000 b/d from Kirkuk. The Peshmerga redeployment in the disputed territories and the budget transfers remain the levers."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2025/9/27/iraq-resumes-kurdish-oil-exports-to-turkiye-after-two-and-a-half-year-halt", title: "Iraq resumes Kurdish oil exports to Turkiye after two-and-a-half-year halt", publisher: "Al Jazeera", date: 2025-09-27, tier: 3}
+        - {url: "https://www.american.edu/sis/research/initiatives/global-kurdish/The-Squeeze-on-Erbil.cfm", title: "The Squeeze on Erbil (Y. Saeed, from the Arab Gulf States Institute in Washington)", publisher: "American University Global Kurdish Initiative / AGSIW", date: 2026, tier: 2}
+        - {url: "https://www.thenationalnews.com/business/energy/2026/03/18/iraq-to-resume-oil-exports-via-turkeys-ceyhan-port-amid-regional-tensions/", title: "Iraq resumes crude oil exports to Turkey's Ceyhan port through pipeline", publisher: "The National", date: 2026-03-18, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "Venue and go-between without a bloc: the Arab League summit hosted in Baghdad on 17 May 2025 (Syria's al-Sharaa withdrew after the invitation split Iraqi opinion), al-Zaidi's first foreign trip to the White House on 13-14 July 2026, a meeting with Kuwait's crown prince at the UN on 25 September 2026, and attendance at the Sharm el-Sheikh Gaza summit in October 2025."
+      confidence: B
+      sources:
+        - {url: "https://apnews.com/article/syria-iraq-arab-summit-ahamd-alsharaa-will-not-attend-b196f2fff1f2df07da139633bff1b5ca", title: "Syrian president will not attend Arab summit in Baghdad after invitation triggers divisions", publisher: "AP", date: 2025-05-13, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/7/14/trump-meets-with-iraq-prime-minister-at-white-house-vows-a-lot-of-deals", title: "Trump meets Iraq PM at White House, promises 'a lot of deals'", publisher: "Al Jazeera", date: 2026-07-14, tier: 3}
+        - {url: "https://shafaq.com/en/Iraq/Baghdad-Kuwait-set-30-day-roadmap-for-outstanding-issues", title: "Baghdad, Kuwait set 30-day roadmap for outstanding issues", publisher: "Shafaq News", date: 2026-09-25, tier: 3}
+    - domain: informational
+      text: "Sovereignty as the story: a four-day 'Sovereignty Day' holiday from 30 September 2026 with parades in Baghdad and Najaf, and the line that the end of the coalition 'does not mean the end of the partnership'. It lets the government claim the withdrawal as its own achievement while the militias claim it as theirs."
+      confidence: B
+      sources:
+        - {url: "https://www.thenationalnews.com/news/mena/2026/09/30/iraq-hails-us-led-coalition-withdrawal-as-milestone-while-militias-claim-victory/", title: "Iraq hails 'important milestone' and militias claim victory as US withdraws", publisher: "The National", date: 2026-09-30, tier: 3}
+        - {url: "https://www.aljazeera.com/video/newsfeed/2026/9/30/iraq-celebrates-national-sovereignty-day-as-us-troops-withdraw", title: "Iraq celebrates National Sovereignty Day as US troops withdraw", publisher: "Al Jazeera", date: 2026-09-30, tier: 3}
+    - domain: military
+      text: "Absorb rather than fight the factions: Saraya al-Salam dissolved on 27 May 2026, Asaib Ahl al-Haq and Kataib Imam Ali announced a handover of heavy weapons on 2 June, five factions accept state control by early October; a national air-defence procurement programme; checkpoints around Baghdad against drone launches. The PMF stays a statutory state force; the law to settle its place is still to be passed."
+      confidence: B
+      sources:
+        - {url: "https://apnews.com/article/iraq-iran-us-shiite-militia-asaib-ahl-alhaq-0f1747e05dc1384ab988da4d8eb74008", title: "Powerful Iran-backed militias in Iraq say they will start handing in weapons to authorities", publisher: "AP", date: 2026-06-02, tier: 3}
+        - {url: "https://www.longwarjournal.org/archives/2026/10/us-flag-trampling-militia-disarmament-dispute-mark-iraqs-post-us-withdrawal-era.php", title: "US flag trampling, militia disarmament dispute mark Iraq's post-US withdrawal era", publisher: "FDD's Long War Journal", date: 2026-10, tier: 2}
+        - {url: "https://www.aljazeera.com/news/2026/3/23/iraq-pulled-into-iran-war-as-us-targets-iran-aligned-groups", title: "Iraq pulled into Iran war as US targets Iran-aligned groups", publisher: "Al Jazeera", date: 2026-03-23, tier: 3}
+    - domain: economic
+      text: "Oil as the contract currency: oil-for-projects with China (a USD 4.56bn Basra-Haditha pipeline approved in January 2025), a USD 27bn headline package with TotalEnergies, Chevron in exclusive talks for the 460,000 b/d West Qurna-2 field taken over from Lukoil, and water projects built by Turkish firms and paid from oil sales. Each partner is paid in access to the same barrels."
+      confidence: B
+      sources:
+        - {url: "https://www.pipeline-journal.net/news/iraq-approves-456-billion-oil-pipeline-project", title: "Iraq approves $4.56 billion oil pipeline project", publisher: "Pipeline Technology Journal", date: 2025-01-02, tier: 3}
+        - {url: "https://gulfnews.com/business/energy/iraq-totalenergies-sign-27-billion-oil-gas-renewables-deal-1.96881354", title: "Iraq, TotalEnergies sign $27 billion oil, gas, renewables deal", publisher: "Gulf News", date: 2023-04, tier: 3}
+        - {url: "https://worldoil.com/news/2026/2/23/iraq-shifts-west-qurna-2-operatorship-from-lukoil-to-basra-oil/", title: "Iraq shifts West Qurna 2 operatorship from Lukoil to Basra Oil", publisher: "World Oil", date: 2026-02-23, tier: 3}
+        - {url: "https://english.aawsat.com/node/5301168", title: "Iraqi-Turkish coordination on energy, water corridors as Al-Zaidi visits Ankara", publisher: "Asharq Al-Awsat", date: 2026-07, tier: 3}
+
+  constraints:
+    - text: "One product, one chokepoint: crude is about 90% of budget revenue and its southern export (about 3.47 million b/d in January 2026) ran through Hormuz, closed since the war began on 28 February. Export revenue in May-June was about USD 2.33bn against about USD 6.5bn in January alone; the oil ministry declared force majeure on foreign-operated fields in March; al-Zaidi says Iran refuses to let Iraqi tankers through."
+      confidence: B
+      sources:
+        - {url: "https://www.hellenicshippingnews.com/iraqs-oil-exports-dip-to-500000-bpd-in-may-june/", title: "Iraq's oil exports dip to 500,000 bpd in May-June", publisher: "Hellenic Shipping News", date: 2026-07-30, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/3/23/iraq-pulled-into-iran-war-as-us-targets-iran-aligned-groups", title: "Iraq pulled into Iran war as US targets Iran-aligned groups", publisher: "Al Jazeera", date: 2026-03-23, tier: 3}
+        - {url: "https://www.ynetnews.com/article/byrzhykqfl", title: "Iraq PM gives Iran-backed militias until June 2027 to disarm and disband", publisher: "Ynet", date: 2026-09, tier: 3}
+    - text: "Armed factions that are also parties: the Coordination Framework that chose the prime minister includes the political arms of the factions he must disarm. Kataib Hezbollah and Harakat Hezbollah al-Nujaba say they will not disarm until foreign troops leave and the umbrella Islamic Resistance in Iraq rejects any timeline; a senior Iraqi security official told the NYT the plan is unlikely to work without a US-Iran peace agreement. Parties linked to Iran-backed groups won more than 50 of 329 seats in November 2025."
+      confidence: B
+      sources:
+        - {url: "https://carnegieendowment.org/middle-east/diwan/2025/12/toward-a-new-compromise-in-iraq", title: "Toward a New Compromise in Iraq? (W. van Wilgenburg)", publisher: "Carnegie Middle East Center", date: 2025-12-09, tier: 2}
+        - {url: "https://www.thenationalnews.com/news/mena/2026/09/30/iraq-hails-us-led-coalition-withdrawal-as-milestone-while-militias-claim-victory/", title: "Iraq hails 'important milestone' and militias claim victory as US withdraws", publisher: "The National", date: 2026-09-30, tier: 3}
+        - {url: "https://www.ynetnews.com/article/byrzhykqfl", title: "Iraq PM gives Iran-backed militias until June 2027 to disarm and disband", publisher: "Ynet", date: 2026-09, tier: 3}
+    - text: "A grid that cannot carry the summer: the Iranian gas supply stopped on 18 March (about 3.1 GW lost), the US ended in 2025 the waiver that let Iraq pay for Iranian electricity, and protests over blackouts have spread through the central and southern provinces. The government's legitimacy depends on power supplied by the country it is asked to restrain."
+      confidence: B
+      sources:
+        - {url: "https://www.arabnews.com/node/2646442/middle-east", title: "How decades of instability, dependence on Iranian gas hollowed out Iraq's power sector", publisher: "Arab News", date: 2026-06-08, tier: 3}
+        - {url: "https://www.atlanticcouncil.org/blogs/menasource/washington-halted-the-iraq-iran-electricity-waiver-here-is-how-its-perceived-by-washington-and-baghdad/", title: "Washington halted the Iraq-Iran electricity waiver", publisher: "Atlantic Council", date: 2025-04-03, tier: 2}
+    - text: "No shield of its own and no shield left: after the last coalition troops left on 30 September 2026 the US reportedly removed its Patriot and C-RAM systems from Erbil, Iraq has no substantial air defence, and Iran, the US, Israel and Saudi Arabia have all struck targets on Iraqi soil in 2026. Crisis Group's Lahib Higel urges Washington not to push al-Zaidi into a confrontation with pro-Iran groups that he is unlikely to win."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/9/29/iraq-begins-high-stakes-security-balancing-act-as-us-troops-withdraw", title: "Iraq begins high-stakes security balancing act as US troops withdraw", publisher: "Al Jazeera", date: 2026-09-29, tier: 3}
+        - {url: "https://www.newarab.com/analysis/us-withdrawing-iraq-who-could-fill-void", title: "The US is withdrawing from Iraq. Who could fill the void?", publisher: "The New Arab", date: 2026-10-08, tier: 3}
+    - text: "American financial and political leverage: Treasury designated seven Iran-backed militia commanders on 20 April 2026, Washington vetoed Maliki as prime minister in January, imposed a 12.5% tariff on 24 July and controls the dollar shipments and sanctions exemptions (such as the exemption for Iranian flights to Najaf) on which the state's payments depend."
+      confidence: B
+      sources:
+        - {url: "https://www.fdd.org/analysis/2026/01/28/trump-calls-for-iraq-to-reject-maliki-as-prime-minister-maliki-denounces-us-interference/", title: "Trump calls for Iraq to reject Maliki as prime minister; Maliki denounces US interference", publisher: "FDD's Long War Journal", date: 2026-01-28, tier: 2}
+        - {url: "https://www.longwarjournal.org/archives/2026/10/us-flag-trampling-militia-disarmament-dispute-mark-iraqs-post-us-withdrawal-era.php", title: "US flag trampling, militia disarmament dispute mark Iraq's post-US withdrawal era", publisher: "FDD's Long War Journal", date: 2026-10, tier: 2}
+        - {url: "https://thenewregion.com/posts/6634", title: "Iraq announces 'understanding' with US on dollar shipments", publisher: "The New Region", date: 2026-09-26, tier: 3}
+    - text: "A divided and partial state: the November 2025 election gave Sudani's list a plurality of 46 of 329 seats, but government formation took until 14 May 2026 and produced a cabinet with 14 of 23 ministers confirmed; the Sadrists boycotted the vote, and the Kurdistan Region keeps its own armed forces, oil contracts and foreign contacts."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2025/11/12/iraqi-pm-al-sudanis-coalition-comes-first-in-parliamentary-election", title: "Iraqis vote in general election in rare moment of calm", publisher: "Al Jazeera", date: 2025-11-13, tier: 3}
+        - {url: "https://carnegieendowment.org/middle-east/diwan/2025/12/toward-a-new-compromise-in-iraq", title: "Toward a New Compromise in Iraq? (W. van Wilgenburg)", publisher: "Carnegie Middle East Center", date: 2025-12-09, tier: 2}
+        - {url: "https://www.arabnews.com/node/2643609/middle-east", title: "Iraq PM vows monopoly on arms as parliament approves government", publisher: "Arab News", date: 2026-05-14, tier: 3}
+
+  paradoxes:
+    - text: "The withdrawal Baghdad negotiated gave the militias their argument and removed the pressure on them. Kataib Hezbollah and Nujaba said they would not disarm until foreign troops left; they claimed victory on 30 September, Ashab al-Kahf threatened 'a military response' to any foreign presence, and the disarmament date slid from 30 September 2026 to 30 June 2027. At the same moment the US reportedly took Patriot and C-RAM batteries out of Erbil."
+      confidence: B
+      sources:
+        - {url: "https://www.thenationalnews.com/news/mena/2026/09/30/iraq-hails-us-led-coalition-withdrawal-as-milestone-while-militias-claim-victory/", title: "Iraq hails 'important milestone' and militias claim victory as US withdraws", publisher: "The National", date: 2026-09-30, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/9/29/iraq-begins-high-stakes-security-balancing-act-as-us-troops-withdraw", title: "Iraq begins high-stakes security balancing act as US troops withdraw", publisher: "Al Jazeera", date: 2026-09-29, tier: 3}
+    - text: "A state that pays the PMF is bombed for what the PMF does. The PMF is a legal part of the armed forces and receives state funds, so the US-Saudi strikes of 29 July 2026 (at least 20 killed), answering more than 30 drone attacks on Saudi oil sites in 72 hours, fell on state units; Baghdad protested the strikes while the Gulf demanded it stop the launches, and on 10-11 September a drone attack from Maysan shut the Saudi East-West pipeline, after which Iraq dismissed the local military commander."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/7/29/saudi-arabia-us-carry-out-strikes-on-iran-backed-groups-in-iraq", title: "Iraqi armed groups condemn 'dangerous escalation' after US-Saudi strikes", publisher: "Al Jazeera", date: 2026-07-29, tier: 3}
+        - {url: "https://aa.com.tr/en/middle-east/iraqi-premier-orders-emergency-security-meeting-after-saudi-us-airstrikes/4012165", title: "Iraqi premier orders emergency security meeting after Saudi-US airstrikes", publisher: "Anadolu Agency", date: 2026-07-29, tier: 3}
+        - {url: "https://www.bbc.com/news/articles/c62m933465eo", title: "Saudi Arabia says it temporarily shuttered vital oil pipeline due to attacks", publisher: "BBC", date: 2026-09-11, tier: 3}
+    - text: "Neutrality did not keep the war out. Baghdad and Erbil declared neutrality and refused their soil as a base against Iran, yet Iran-aligned groups fired more than 600 times at US sites, the US struck the PMF, Israel reportedly kept covert outposts in the western desert, and Iran and its affiliates hit the Kurdistan Region with nearly 1,000 missiles and drones."
+      confidence: B
+      sources:
+        - {url: "https://www.rudaw.net/english/categories/kurdistan/1078636", title: "Kurdistan attacked with nearly 1,000 missiles, drones during Iran war: Rudaw data", publisher: "Rudaw", date: 2026-08-02, tier: 3}
+        - {url: "https://aje.news/xex3gi?update=4581314", title: "Israel's military operated second covert site in Iraq: NYT", publisher: "Al Jazeera", date: 2026-05-18, tier: 3}
+        - {url: "https://www.arabnews.com/node/2643609/middle-east", title: "Iraq PM vows monopoly on arms as parliament approves government (more than 600 attacks on US facilities before the ceasefire)", publisher: "Arab News", date: 2026-05-14, tier: 3}
+        - {url: "https://ctc.westpoint.edu/standing-with-iran-the-integrated-combat-performance-of-iraqi-militias-during-operation-epic-fury/", title: "Standing with Iran: The Integrated Combat Performance of Iraqi Militias During Operation Epic Fury", publisher: "CTC Sentinel (West Point)", date: 2026, tier: 2}
+    - text: "Every route round Hormuz runs through a neighbour Iraq has not fully settled with. Ceyhan depends on Ankara and a 1973 agreement renewed a year at a time, and on Erbil; the Baniyas imports and the planned pipeline extension depend on Damascus, a government many Iraqi Shia leaders refuse to normalise with; the water mechanism ties Turkish projects to Iraqi oil revenue. Each new transit state gains leverage over Baghdad."
+      confidence: C
+      sources:
+        - {url: "https://www.hellenicshippingnews.com/iraqs-oil-exports-dip-to-500000-bpd-in-may-june/", title: "Iraq's oil exports dip to 500,000 bpd in May-June", publisher: "Hellenic Shipping News", date: 2026-07-30, tier: 3}
+        - {url: "https://apnews.com/article/syria-oil-iraq-baniyas-hormuz-2be4e63dc6f59c0e2b338c1a1cf425ca", title: "Iraq begins importing gasoline via Syrian port to bypass the closed Strait of Hormuz", publisher: "AP", date: 2026-09-29, tier: 3}
+        - {url: "https://english.aawsat.com/node/5301168", title: "Iraqi-Turkish coordination on energy, water corridors as Al-Zaidi visits Ankara", publisher: "Asharq Al-Awsat", date: 2026-07, tier: 3}
+    - text: "Asserting the Khor Abdullah claim cost the Gulf goodwill that Iraq needed in the same year. Baghdad filed new maritime coordinates at the UN in January and February 2026, the GCC and Saudi Arabia backed Kuwait, and within weeks the war made Gulf tolerance of militia launches from Iraqi soil the issue Baghdad could least afford to lose; rockets and a stormed Kuwaiti consulate in Basra followed in April."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/2/23/gcc-states-back-kuwait-maritime-sovereignty-after-iraq-draws-new-boundaries", title: "Gulf countries back Kuwait's sovereignty after Iraq draws new boundaries", publisher: "Al Jazeera", date: 2026-02-23, tier: 3}
+        - {url: "https://www.reuters.com/world/middle-east/least-three-killed-after-rockets-launched-kuwait-hit-house-near-iraqs-basra-2026-04-07/", title: "Protesters break into Kuwaiti consulate in Iraq's Basra after rocket attack kills three", publisher: "Reuters", date: 2026-04-07, tier: 3}
+    - text: "The prime minister must disarm the people who made him. Al-Zaidi is a political newcomer picked by the Coordination Framework after Trump vetoed Maliki, so his authority comes from the Shia parties whose fighters are the target and from Washington's tolerance; each concession to one side (the dollar and sanctions exemptions from the US, the 2027 timetable for the factions) weakens his standing with the other."
+      confidence: C
+      sources:
+        - {url: "https://www.fdd.org/analysis/2026/01/28/trump-calls-for-iraq-to-reject-maliki-as-prime-minister-maliki-denounces-us-interference/", title: "Trump calls for Iraq to reject Maliki as prime minister", publisher: "FDD's Long War Journal", date: 2026-01-28, tier: 2}
+        - {url: "https://www.newarab.com/analysis/us-withdrawing-iraq-who-could-fill-void", title: "The US is withdrawing from Iraq. Who could fill the void?", publisher: "The New Arab", date: 2026-10-08, tier: 3}
+        - {url: "https://www.arabnews.com/node/2643609/middle-east", title: "Iraq PM vows monopoly on arms as parliament approves government", publisher: "Arab News", date: 2026-05-14, tier: 3}
+
+  reading: |
+    Iraq in October 2026 is a state whose grand strategy is to be nobody's
+    battlefield and nobody's client while owning too little force and selling
+    one product through one closed strait. Its means are access and contracts
+    (oil for Chinese pipelines, French gas, American majors, Turkish water
+    works) and its currency is the promise that every patron will be paid
+    from the same barrels. The Luttwakian pattern is that each safeguard
+    creates the next exposure: ending the coalition earns sovereignty and
+    removes the pressure that held the factions; the PMF is state-funded and
+    so brings foreign strikes on the state; the escape from Hormuz runs
+    through Turkey, Syria and Kurdistan; the Khor Abdullah claim spent Gulf
+    goodwill just before the Gulf was needed. The balance with Iran is
+    structural, not chosen: Iranian gas and the Shia parties tie Baghdad to
+    Tehran even as the war cut the gas and Iranian drones hit Erbil. Signals
+    that are not rows: the militias' 'victory' on 30 September is a
+    statement, not yet an attack; Maliki was stopped by a public American
+    warning, not by a parliamentary vote; and the date that matters, 30 June
+    2027, belongs to a government that has filled only part of its cabinet.
+    Open gaps in this pass: Jordan and Egypt (the triangle), the Gulf grid,
+    Saudi Arar and the electricity link, Russian arms, the EU, Germany,
+    water with Iran and the Shatt al-Arab.

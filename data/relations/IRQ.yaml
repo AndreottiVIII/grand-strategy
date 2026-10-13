@@ -1,0 +1,495 @@
+from: IRQ
+relations:
+  # ---------- objective ----------
+  - to: KWT
+    layer: objective
+    type: territorial_claim
+    summary: "Iraq filed updated maritime coordinates and an explanatory map with the UN on 19 Jan and 9 Feb 2026 (superseding its 2011 and 2021 filings) that cover the area beyond border marker 162 in Khor Abdullah; Kuwait summoned Iraq's chargé d'affaires on 22 Feb and the GCC and Saudi Arabia backed Kuwait. Iraq's Federal Supreme Court ruled in 2023 that the law ratifying the 2012 Khor Abdullah agreement is unconstitutional, while Kuwait says the pact still binds under international law."
+    since: 2026-01-19
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2026/2/23/gcc-states-back-kuwait-maritime-sovereignty-after-iraq-draws-new-boundaries", title: "Gulf countries back Kuwait's sovereignty after Iraq draws new boundaries", publisher: "Al Jazeera", date: 2026-02-23, tier: 3}
+      - {url: "https://www.gsn-online.com/news-centre/article/baghdad-reignites-maritime-border-dispute-kuwait", title: "Baghdad reignites maritime border dispute with Kuwait", publisher: "GSN", date: 2026-02, tier: 3}
+      - {url: "https://shafaq.com/en/Iraq/Baghdad-Kuwait-set-30-day-roadmap-for-outstanding-issues", title: "Baghdad, Kuwait set 30-day roadmap for outstanding issues", publisher: "Shafaq News", date: 2026-09-25, tier: 3}
+  - to: sub-krg
+    layer: objective
+    type: influence_goal
+    summary: "Baghdad wants the Kurdistan Region's oil to flow only through the federal marketing company SOMO and its budget transfers, Peshmerga and the disputed territories under federal terms; exports via Ceyhan resumed on 27 Sep 2025 on those terms after two and a half years, and the Baghdad-Erbil deal of 17 Mar 2026 aims at up to 450,000 b/d including 250,000 b/d from Kirkuk."
+    since: 2023-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/9/27/iraq-resumes-kurdish-oil-exports-to-turkiye-after-two-and-a-half-year-halt", title: "Iraq resumes Kurdish oil exports to Turkiye after two-and-a-half-year halt", publisher: "Al Jazeera", date: 2025-09-27, tier: 3}
+      - {url: "https://www.american.edu/sis/research/initiatives/global-kurdish/The-Squeeze-on-Erbil.cfm", title: "The Squeeze on Erbil (Y. Saeed, from the Arab Gulf States Institute in Washington)", publisher: "American University Global Kurdish Initiative / AGSIW", date: 2026, tier: 2}
+  - to: TUR
+    layer: objective
+    type: influence_goal
+    summary: "Prime Minister al-Zaidi is seeking the withdrawal of Turkish forces from northern Iraq, while Ankara links its departure to the removal of Kurdish armed groups; Turkey agreed on 24 Sep 2026 to hand over the Bashiqa base gradually."
+    since: 2026-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.ynetnews.com/article/byrzhykqfl", title: "Iraq PM gives Iran-backed militias until June 2027 to disarm and disband (reporting al-Zaidi to The New York Times)", publisher: "Ynet", date: 2026-09, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2026/9/24/turkiye-agrees-to-gradual-handover-of-bashiqa-base-to-iraq", title: "Turkiye agrees to gradual handover of Bashiqa base to Iraq", publisher: "Al Jazeera (Reuters)", date: 2026-09-24, tier: 3}
+  - to: USA
+    layer: objective
+    type: influence_goal
+    summary: "Al-Zaidi told the nation on 12 Aug that from 1 Oct Iraq would be 'free from any foreign military presence and no weapons outside the control of the state'; the stated aim is to turn the US relation from military into economic, development and training cooperation, with the state holding exclusive authority over war and peace."
+    since: 2024-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.thenationalnews.com/news/us/2026/08/12/iraq-and-us-reach-final-agreement-on-anti-isis-coalition-withdrawal-zaidi-says/", title: "Iraq and US reach final agreement on anti-ISIS coalition withdrawal, Al Zaidi says", publisher: "The National", date: 2026-08-12, tier: 3}
+      - {url: "https://www.iraqinews.com/iraq/pm-al-zaidi-declares-full-sovereignty-coalition-withdrawal-arms-roadmap-2026/", title: "PM Al-Zaidi declares full sovereignty as coalition exits, sets 2027 arms deadline", publisher: "Iraqi News", date: 2026-10-01, tier: 3}
+
+  # ---------- alignment ----------
+  - to: USA
+    layer: alignment
+    type: treaty
+    summary: "The 2008 Strategic Framework Agreement is the legal base of the relation; the two countries are reverting to it as the coalition mission ends, with cooperation in training, intelligence sharing and capacity building rather than combat operations."
+    since: 2008-11-17
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2026/9/29/iraq-begins-high-stakes-security-balancing-act-as-us-troops-withdraw", title: "Iraq begins high-stakes security balancing act as US troops withdraw", publisher: "Al Jazeera", date: 2026-09-29, tier: 3}
+      - {url: "https://www.thenationalnews.com/news/mena/2026/09/30/iraq-hails-us-led-coalition-withdrawal-as-milestone-while-militias-claim-victory/", title: "Iraq hails 'important milestone' and militias claim victory as US withdraws", publisher: "The National", date: 2026-09-30, tier: 3}
+  - to: CHN
+    layer: alignment
+    type: treaty
+    summary: "The 2019 oil-for-projects framework agreement between Baghdad and Beijing funds Chinese-built infrastructure from oil sales; the USD 4.56bn Basra-Haditha pipeline was approved under it in January 2025 and given a government go-ahead in April 2026."
+    since: 2019
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.agbi.com/oil-and-gas/2026/04/iraq-gives-go-ahead-for-basra-oil-pipeline-under-deal-with-china/", title: "Iraq gives go-ahead for Basra oil pipeline under deal with China", publisher: "AGBI", date: 2026-04, tier: 3}
+      - {url: "https://www.pipeline-journal.net/news/iraq-approves-456-billion-oil-pipeline-project", title: "Iraq approves $4.56 billion oil pipeline project", publisher: "Pipeline Technology Journal", date: 2025-01-02, tier: 3}
+  - to: TUR
+    layer: alignment
+    type: treaty
+    summary: "The 1973 Kirkuk-Ceyhan pipeline agreement, which carries Iraq's only export route that kept flowing through the Hormuz closure, was extended by one year (agreement reported on 1 Aug 2026 for exports through Ceyhan); the water-for-projects mechanism of 2 Nov 2025 was ratified by Iraq's parliament on 25 Jul 2026."
+    since: 1973
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://english.aawsat.com/node/5301168", title: "Iraqi-Turkish coordination on energy, water corridors as Al-Zaidi visits Ankara", publisher: "Asharq Al-Awsat", date: 2026-07, tier: 3}
+      - {url: "https://asharqbusiness.com/power/142716/%D9%88%D8%B2%D9%8A%D8%B1-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%81%D9%8A-%D8%AA%D8%B1%D9%83%D9%8A%D8%A7-%D9%84%D8%A5%D8%A8%D8%B1%D8%A7%D9%85-%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D8%AA%D8%B5%D8%AF%D9%8A%D8%B1-%D8%A7%D9%84%D8%AE%D8%A7%D9%85/", title: "Iraq and Turkey sign a one-year agreement to export oil through Ceyhan", title_original: "العراق وتركيا يوقعان اتفاقاً لمدة عام لتصدير النفط عبر جيهان", lang: ar, publisher: "Asharq Business", date: 2026-08-01, tier: 3}
+
+  # ---------- dependency ----------
+  - to: IRN
+    layer: dependency
+    type: energy_import
+    value: 0.4
+    unit: share_of_peak_generating_capacity_supported_by_imported_gas
+    summary: "Imported gas, mostly Iranian, supports up to 40% of Iraq's generating capacity at peak (about 50 mcm/d before the war); Iran halted the flow on 18 Mar 2026 after the strikes on South Pars, taking about 3.1 GW offline, and flows had not resumed by June. The US ended in 2025 the waiver that let Iraq pay for Iranian electricity. Iraq has bought electricity from Turkey and the Kurdistan Region since late May 2026."
+    since: 2026-03-18
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Figures differ; Arab News (June 2026) gives 40% of capacity at peak, Shafaq (Dec 2024) 30-40% of energy needs and the Rudaw account dates the suspension from 24 Jan; the most recent official-basis figure is used."
+    sources:
+      - {url: "https://www.arabnews.com/node/2646442/middle-east", title: "How decades of instability, dependence on Iranian gas hollowed out Iraq's power sector", publisher: "Arab News", date: 2026-06-08, tier: 3}
+      - {url: "https://www.atlanticcouncil.org/blogs/menasource/washington-halted-the-iraq-iran-electricity-waiver-here-is-how-its-perceived-by-washington-and-baghdad/", title: "Washington halted the Iraq-Iran electricity waiver. Here is how it's perceived by Washington and Baghdad", publisher: "Atlantic Council", date: 2025-04-03, tier: 2}
+  - to: TUR
+    layer: dependency
+    type: energy_export
+    value: 10
+    unit: million_barrels_via_Kirkuk-Ceyhan_May-June_2026
+    summary: "Of about 32 million barrels exported in May-June 2026 (average about 530,000 b/d, against 3.47 million b/d in January), about 20 million went through Basra and over 10 million through the Kirkuk-Ceyhan pipeline into Turkey; the North Oil Company produces about 390,000 b/d, of which 170,000-180,000 b/d is exported via Ceyhan."
+    since: 2026-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.hellenicshippingnews.com/iraqs-oil-exports-dip-to-500000-bpd-in-may-june/", title: "Iraq's oil exports dip to 500,000 bpd in May-June (Zawya Projects, citing oil ministry and SOMO)", publisher: "Hellenic Shipping News", date: 2026-07-30, tier: 3}
+      - {url: "https://www.thenationalnews.com/business/energy/2026/03/18/iraq-to-resume-oil-exports-via-turkeys-ceyhan-port-amid-regional-tensions/", title: "Iraq resumes crude oil exports to Turkey's Ceyhan port through pipeline", publisher: "The National", date: 2026-03-18, tier: 3}
+  - to: FRA
+    layer: dependency
+    type: investment
+    value: 27
+    unit: usd_bn_headline_package
+    summary: "TotalEnergies' Gas Growth Integrated Project is a USD 27bn headline package of four oil, gas and renewables projects signed in 2023 (about USD 10bn for the integrated gas, solar and water project itself); consortium TotalEnergies 45%, Basra Oil Company 30%, QatarEnergy 25%; the first phase of the 1 GW solar plant was installed by Jan 2026 and the seawater supply and Ratawi contracts were awarded in Sep 2025."
+    since: 2023-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://gulfnews.com/business/energy/iraq-totalenergies-sign-27-billion-oil-gas-renewables-deal-1.96881354", title: "Iraq, TotalEnergies sign $27 billion oil, gas, renewables deal", publisher: "Gulf News", date: 2023-04, tier: 3}
+      - {url: "https://www.mees.com/2026/1/23/news-in-brief/totals-iraq-solar-phase-one-installation-complete/78642350-f880-11f0-a2e6-a52dcf060f4c", title: "Total's Iraq solar phase one installation complete", publisher: "MEES", date: 2026-01-23, tier: 3}
+      - {url: "https://solarquarter.com/2025/09/17/totalenergies-launches-final-phase-of-iraqs-multi-energy-ggip-including-solar-power-expansion/amp/", title: "TotalEnergies launches final phase of Iraq's multi-energy GGIP, including solar power expansion", publisher: "SolarQuarter", date: 2025-09-17, tier: 3}
+  - to: QAT
+    layer: dependency
+    type: investment
+    value: 25
+    unit: percent_stake_in_GGIP
+    summary: "QatarEnergy holds 25% of the TotalEnergies-led Gas Growth Integrated Project in Basra (and a share of its solar plant) alongside TotalEnergies 45% and Basra Oil Company 30%."
+    since: 2023-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://gulfnews.com/business/energy/iraq-totalenergies-sign-27-billion-oil-gas-renewables-deal-1.96881354", title: "Iraq, TotalEnergies sign $27 billion oil, gas, renewables deal", publisher: "Gulf News", date: 2023-04, tier: 3}
+      - {url: "https://solarquarter.com/2025/09/17/totalenergies-launches-final-phase-of-iraqs-multi-energy-ggip-including-solar-power-expansion/amp/", title: "TotalEnergies launches final phase of Iraq's multi-energy GGIP, including solar power expansion", publisher: "SolarQuarter", date: 2025-09-17, tier: 3}
+  - to: RUS
+    layer: dependency
+    type: investment
+    value: 460000
+    unit: barrels_per_day_West_Qurna-2
+    summary: "Lukoil's 75% stake in West Qurna-2 (about 460,000 b/d, roughly 10% of Iraqi output) was its largest foreign holding; after US sanctions Lukoil declared force majeure in Nov 2025 and Iraq's cabinet approved on 23 Feb 2026 the transfer of operations to the Basra Oil Company as an 'amicable settlement'. Chevron signed for exclusive negotiation of a takeover for one year, subject to US Treasury and Iraqi approval; ExxonMobil also talked to the oil ministry."
+    since: 2025-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://worldoil.com/news/2026/2/23/iraq-shifts-west-qurna-2-operatorship-from-lukoil-to-basra-oil/", title: "Iraq shifts West Qurna 2 operatorship from Lukoil to Basra Oil", publisher: "World Oil", date: 2026-02-23, tier: 3}
+      - {url: "https://news.bloomberglaw.com/esg/chevron-signs-initial-deals-for-lukoil-run-field-in-iraq-1", title: "Chevron Edges Rivals in Bid to Take Over Lukoil's Iraq Oil Field", publisher: "Bloomberg Law", date: 2026, tier: 3}
+  - to: CHN
+    layer: dependency
+    type: investment
+    value: 4.56
+    unit: usd_bn_Basra-Haditha_pipeline
+    summary: "A USD 4.56bn Basra-Haditha crude pipeline to be built by Chinese firms under the 2019 framework, planned to extend toward Turkey, the Syrian port of Baniyas and Aqaba in Jordan as a Hormuz bypass; approved in Jan 2025 and given a government go-ahead in Apr 2026."
+    since: 2025-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.pipeline-journal.net/news/iraq-approves-456-billion-oil-pipeline-project", title: "Iraq approves $4.56 billion oil pipeline project", publisher: "Pipeline Technology Journal", date: 2025-01-02, tier: 3}
+      - {url: "https://www.agbi.com/oil-and-gas/2026/04/iraq-gives-go-ahead-for-basra-oil-pipeline-under-deal-with-china/", title: "Iraq gives go-ahead for Basra oil pipeline under deal with China", publisher: "AGBI", date: 2026-04, tier: 3}
+
+  # ---------- action ----------
+  - to: USA
+    layer: action
+    type: visit
+    summary: "Prime Minister al-Zaidi's first foreign trip was to the White House on 13-14 Jul 2026, where Trump promised 'a lot of deals' and the two sides reaffirmed that all remaining US forces would leave by 30 Sep."
+    since: 2026-07-14
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.aljazeera.com/news/2026/7/14/trump-meets-with-iraq-prime-minister-at-white-house-vows-a-lot-of-deals", title: "Trump meets Iraq PM at White House, promises 'a lot of deals'", publisher: "Al Jazeera", date: 2026-07-14, tier: 3}
+      - {url: "https://apnews.com/article/iraq-trump-islamic-state-group-military-45e64c99d07939951c86308f95dd02ef", title: "US military will be out of Iraq by end of September, Iraqi prime minister and Pentagon say", publisher: "AP", date: 2026-07-14, tier: 3}
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "US forces handed over Ain al-Asad (completed 20 Jan 2026, after leaving federal Iraq on 18-19 Jan), the last forces left the Kurdistan Region on 30 Sep 2026 and the Combined Joint Task Force-Operation Inherent Resolve formally ended after 12 years; a small contingent remains to protect diplomats, and Iraq announced a final agreement with CENTCOM on 12 Aug."
+    since: 2024-09
+    until: 2026-09-30
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.militarytimes.com/news/pentagon-congress/2026/01/20/us-completes-withdrawal-from-al-asad-airbase-iraq-says/", title: "US completes withdrawal from al-Asad airbase, Iraq says", publisher: "Military Times", date: 2026-01-20, tier: 3}
+      - {url: "https://www.thenationalnews.com/news/mena/2026/09/30/iraq-hails-us-led-coalition-withdrawal-as-milestone-while-militias-claim-victory/", title: "Iraq hails 'important milestone' and militias claim victory as US withdraws", publisher: "The National", date: 2026-09-30, tier: 3}
+      - {url: "https://www.bbc.com/news/articles/c65ym1dyn92mo", title: "Last UK and US troops leave Iraq as anti-Islamic State mission ends", publisher: "BBC", date: 2026-09-30, tier: 3}
+  - to: USA
+    layer: action
+    type: incident
+    summary: "After the Coordination Framework nominated Nouri al-Maliki in late Jan 2026, Trump said the US would no longer help Iraq if he were chosen and Maliki denounced 'blatant US interference'; the Framework settled on Ali al-Zaidi, nominated on 27 Apr and confirmed on 14 May."
+    since: 2026-01-28
+    until: 2026-05-14
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.fdd.org/analysis/2026/01/28/trump-calls-for-iraq-to-reject-maliki-as-prime-minister-maliki-denounces-us-interference/", title: "Trump calls for Iraq to reject Maliki as prime minister; Maliki denounces US interference", publisher: "FDD's Long War Journal", date: 2026-01-28, tier: 2}
+      - {url: "https://www.intellinews.com/iraq-s-al-maliki-rejects-us-interference-after-trump-warning-422716/", title: "Iraq's al-Maliki rejects US 'interference' after Trump warning", publisher: "bne IntelliNews", date: 2026-01, tier: 3}
+      - {url: "https://www.arabnews.com/node/2643609/middle-east", title: "Iraq PM vows monopoly on arms as parliament approves government", publisher: "Arab News", date: 2026-05-14, tier: 3}
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "Iraq announced on 26 Sep 2026 an 'understanding' with the US on dollar shipments, and on 2 Oct obtained a US exemption letting Iranian airlines other than Mahan Air run 40 daily flights to Najaf after Treasury sanctions on Iran-linked aviation entities had led Baghdad, Najaf, Erbil and Sulaymaniyah airports to suspend Iranian flights on 25 Sep."
+    since: 2026-09-26
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://thenewregion.com/posts/6634", title: "Iraq announces 'understanding' with US on dollar shipments", publisher: "The New Region", date: 2026-09-26, tier: 3}
+      - {url: "https://en.964media.com/53364/", title: "US exemption clears 40 daily Iranian flights at Najaf, excluding Mahan", publisher: "+964", date: 2026-10-02, tier: 3}
+      - {url: "https://hawarnews.com/en/iranian-flights-suspended-at-baghdad-najaf-erbil-sulaymaniyah-airports", title: "Iranian flights suspended at Baghdad, Najaf, Erbil, Sulaymaniyah airports", publisher: "Hawar News Agency", date: 2026-09-25, tier: 4}
+  - to: USA
+    layer: action
+    type: sanction
+    summary: "The US Treasury designated seven Iran-backed Iraqi militia commanders as terrorists on 20 Apr 2026; the State Department's Rewards for Justice offered USD 10m in May for Akram al-Kaabi, secretary-general of Harakat Hezbollah al-Nujaba; many PMF factions are US-designated terrorist organisations. A 12.5% US tariff on Iraqi goods followed on 24 Jul."
+    since: 2026-04-20
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.longwarjournal.org/archives/2026/10/us-flag-trampling-militia-disarmament-dispute-mark-iraqs-post-us-withdrawal-era.php", title: "US flag trampling, militia disarmament dispute mark Iraq's post-US withdrawal era", publisher: "FDD's Long War Journal", date: 2026-10, tier: 2}
+      - {url: "https://www.bbc.com/news/articles/cvgj61j6l08o", title: "US hits dozens of countries with new wave of tariffs", publisher: "BBC News", date: 2026-07-24, tier: 3}
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "Chevron signed initial agreements for exclusive talks on taking over the West Qurna-2 field from Lukoil, dependent on US Treasury and Iraqi approvals; US firms also signed deals with Baghdad in July 2026 reported at close to USD 60bn, partly for oil routes that avoid the Gulf (the figure rests on one low-tier report)."
+    since: 2026-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://news.bloomberglaw.com/esg/chevron-signs-initial-deals-for-lukoil-run-field-in-iraq-1", title: "Chevron Edges Rivals in Bid to Take Over Lukoil's Iraq Oil Field", publisher: "Bloomberg Law", date: 2026, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2026/7/14/trump-meets-with-iraq-prime-minister-at-white-house-vows-a-lot-of-deals", title: "Trump meets Iraq PM at White House, promises 'a lot of deals'", publisher: "Al Jazeera", date: 2026-07-14, tier: 3}
+  - to: IRN
+    layer: action
+    type: incident
+    summary: "Iran and Iran-aligned forces struck the Kurdistan Region from 28 Feb 2026 (196 attacks in the first nine days, 162 of them in Erbil governorate, targeting Iranian Kurdish opposition headquarters, the US consulate, the airport and oil fields; nearly 1,000 missiles and drones over the war) and drones reportedly hit the Kurdistan prime minister's office on 17 Aug; Iran called that a 'false flag'."
+    since: 2026-02-28
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.rudaw.net/english/categories/kurdistan/1078636", title: "Kurdistan attacked with nearly 1,000 missiles, drones during Iran war: Rudaw data", publisher: "Rudaw", date: 2026-08-02, tier: 3}
+      - {url: "https://www.american.edu/sis/research/initiatives/global-kurdish/The-Squeeze-on-Erbil.cfm", title: "The Squeeze on Erbil (Y. Saeed, from the Arab Gulf States Institute in Washington)", publisher: "American University Global Kurdish Initiative / AGSIW", date: 2026, tier: 2}
+      - {url: "https://www.timesofisrael.com/liveblog_entry/iranian-drones-said-to-attack-kurdish-prime-ministers-office-in-iraq/", title: "Iranian drones said to attack Kurdish prime minister's office in Iraq", publisher: "The Times of Israel (Reuters)", date: 2026-08-17, tier: 3}
+  - to: IRN
+    layer: action
+    type: incident
+    summary: "Prime Minister al-Zaidi says Iran has refused to let Iraqi tankers through the Strait of Hormuz, and puts Iraq's war losses at about USD 60bn and the fall in monthly export revenue at about 60%."
+    since: 2026-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.ynetnews.com/article/byrzhykqfl", title: "Iraq PM gives Iran-backed militias until June 2027 to disarm and disband (reporting al-Zaidi to The New York Times)", publisher: "Ynet", date: 2026-09, tier: 3}
+  - to: IRN
+    layer: action
+    type: incident
+    summary: "Iraqi factions are integrated with the Revolutionary Guards: a West Point CTC study counts unprecedented integration between the IRGC and hundreds of Iraqi collaborators across at least 36 major PMF units during the 2026 war; Iran-aligned groups fired more than 600 times at US facilities in Iraq before the ceasefire."
+    since: 2026-02-28
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://ctc.westpoint.edu/standing-with-iran-the-integrated-combat-performance-of-iraqi-militias-during-operation-epic-fury/", title: "Standing with Iran: The Integrated Combat Performance of Iraqi Militias During Operation Epic Fury", publisher: "CTC Sentinel (West Point)", date: 2026, tier: 2}
+      - {url: "https://www.arabnews.com/node/2643609/middle-east", title: "Iraq PM vows monopoly on arms as parliament approves government (more than 600 attacks on US facilities before the ceasefire)", publisher: "Arab News", date: 2026-05-14, tier: 3}
+  - to: SAU
+    layer: action
+    type: incident
+    summary: "On 28-29 Jul 2026 Saudi and US aircraft struck Popular Mobilization Forces sites in seven provinces after more than 30 drone attacks in 72 hours on Saudi Eastern Province oil sites and US forces (the PMF reports at least 20 dead); the first confirmed Saudi strike in Iraq. The Iraqi national security council condemned the strikes and the prime minister held an emergency session."
+    since: 2026-07-29
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2026/7/29/saudi-arabia-us-carry-out-strikes-on-iran-backed-groups-in-iraq", title: "Iraqi armed groups condemn 'dangerous escalation' after US-Saudi strikes", publisher: "Al Jazeera", date: 2026-07-29, tier: 3}
+      - {url: "https://aa.com.tr/en/middle-east/iraqi-premier-orders-emergency-security-meeting-after-saudi-us-airstrikes/4012165", title: "Iraqi premier orders emergency security meeting after Saudi-US airstrikes", publisher: "Anadolu Agency", date: 2026-07-29, tier: 3}
+      - {url: "https://shafaq.com/en/Middle-East/GCC-backs-Saudi-Arabia-after-deadly-strikes-in-Iraq", title: "GCC backs Saudi Arabia after deadly strikes in Iraq", publisher: "Shafaq News", date: 2026-07-29, tier: 3}
+  - to: SAU
+    layer: action
+    type: incident
+    summary: "On 10-11 Sep 2026 a drone attack launched from Maysan Governorate led Saudi Arabia to shut its East-West crude pipeline temporarily, and Iraq dismissed the local military commander; a Washington Institute analysis attributes the attack to PMF factions and says it suspended Red Sea exports of up to 4-5 million b/d."
+    since: 2026-09-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.bbc.com/news/articles/c62m933465eo", title: "Saudi Arabia says it temporarily shuttered vital oil pipeline due to attacks", publisher: "BBC", date: 2026-09-11, tier: 3}
+      - {url: "https://www.washingtoninstitute.org/pdf/view/19947/en", title: "Iraq's Militia Balancing Act Gets Trickier Amid Deadlines and Saudi Attacks", publisher: "The Washington Institute", date: 2026-09-18, tier: 2}
+  - to: KWT
+    layer: action
+    type: incident
+    summary: "On 7 Apr 2026 rockets launched from Kuwait hit a house near Basra, killing three, and protesters stormed and vandalised the Kuwaiti consulate in Basra."
+    since: 2026-04-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.reuters.com/world/middle-east/least-three-killed-after-rockets-launched-kuwait-hit-house-near-iraqs-basra-2026-04-07/", title: "Protesters break into Kuwaiti consulate in Iraq's Basra after rocket attack kills three", publisher: "Reuters", date: 2026-04-07, tier: 3}
+  - to: KWT
+    layer: action
+    type: agreement
+    summary: "Al-Zaidi and Kuwait's crown prince Sheikh Sabah Khaled met at the UN General Assembly and agreed on 25 Sep 2026 to a joint working group that will deliver a roadmap in 30 days on Khor Abdullah navigation, the maritime border beyond marker 162 and other outstanding issues."
+    since: 2026-09-25
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://shafaq.com/en/Iraq/Baghdad-Kuwait-set-30-day-roadmap-for-outstanding-issues", title: "Baghdad, Kuwait set 30-day roadmap for outstanding issues", publisher: "Shafaq News", date: 2026-09-25, tier: 3}
+  - to: SYR
+    layer: action
+    type: agreement
+    summary: "The Rabia border crossing reopened on 20 Apr 2026 for the first time since 2011, and from 29 Sep 2026 Iraq imports gasoline through the Syrian port of Baniyas to bypass the closed Strait of Hormuz."
+    since: 2026-04-20
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://apnews.com/article/iraq-syria-border-crossing-4fa0f36b5cd3ffe82bb17d992f1c07bb", title: "A long-shuttered Iraq-Syria border crossing reopens for the first time in more than a decade", publisher: "AP", date: 2026-04-21, tier: 3}
+      - {url: "https://apnews.com/article/syria-oil-iraq-baniyas-hormuz-2be4e63dc6f59c0e2b338c1a1cf425ca", title: "Iraq begins importing gasoline via Syrian port to bypass the closed Strait of Hormuz", publisher: "AP", date: 2026-09-29, tier: 3}
+  - to: SYR
+    layer: action
+    type: agreement
+    summary: "Iraq is taking in thousands of ISIS detainees transferred from Syrian prisons and camps; a US Central Command operation launched on 21 Jan 2026 covered the transfer of up to 7,000 detainees, and Iraq's Justice Ministry warned on 15 Mar that strikes near Baghdad airport threatened al-Karkh prison, which holds ISIS detainees."
+    since: 2026-01-21
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.dw.com/en/us-begins-transfer-of-is-fighters-from-syria-to-iraq/a-75598783", title: "US begins transfer of IS fighters from Syria to Iraq", publisher: "Deutsche Welle", date: 2026-01-21, tier: 3}
+      - {url: "https://www.thenationalnews.com/news/us/2026/08/12/iraq-and-us-reach-final-agreement-on-anti-isis-coalition-withdrawal-zaidi-says/", title: "Iraq and US reach final agreement on anti-ISIS coalition withdrawal, Al Zaidi says", publisher: "The National", date: 2026-08-12, tier: 3}
+      - {url: "https://thenewregion.com/posts/4853", title: "Strikes near Baghdad airport threaten high-security prison: Ministry", publisher: "The New Region", date: 2026-03-15, tier: 3}
+  - to: SYR
+    layer: action
+    type: incident
+    summary: "Syria's president al-Sharaa withdrew from the Arab League summit hosted in Baghdad on 17 May 2025 after his invitation split Iraqi opinion over his past ties to al-Qaeda; foreign minister al-Shaibani had visited Baghdad on 14 Mar 2025 and intelligence chief al-Shatri met al-Sharaa in Damascus on 26 Dec 2024."
+    since: 2025-05-13
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://apnews.com/article/syria-iraq-arab-summit-ahamd-alsharaa-will-not-attend-b196f2fff1f2df07da139633bff1b5ca", title: "Syrian president will not attend Arab summit in Baghdad after invitation triggers divisions", publisher: "AP", date: 2025-05-13, tier: 3}
+      - {url: "https://english.aawsat.com/arab-world/5095578-iraq-makes-first-official-contact-new-syrian-administration", title: "Iraq makes first official contact with new Syrian administration", publisher: "Asharq Al-Awsat", date: 2024-12-26, tier: 3}
+  - to: TUR
+    layer: action
+    type: agreement
+    summary: "Prime Minister al-Zaidi's visit to Ankara in late Jul 2026 produced contracts to start the Development Road (energy, transport, education, water), a water 'mechanism document' (signed 2 Nov 2025, ratified by Iraq's parliament on 25 Jul 2026 for implementation from 1 Sep; Turkish firms build water projects financed from Iraqi oil sales) and a one-year extension of the 1973 Kirkuk-Ceyhan pipeline agreement. Mirrors the row in Turkey's file."
+    since: 2026-07-29
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://english.aawsat.com/node/5301168", title: "Iraqi-Turkish coordination on energy, water corridors as Al-Zaidi visits Ankara", publisher: "Asharq Al-Awsat", date: 2026-07, tier: 3}
+      - {url: "https://www.iraq-businessnews.com/2026/07/29/iraq-and-turkey-agree-to-launch-development-road-project/", title: "Iraq and Turkey agree to launch Development Road project", publisher: "Iraq Business News", date: 2026-07-29, tier: 3}
+  - to: TUR
+    layer: action
+    type: agreement
+    summary: "Turkey agreed on 24 Sep 2026 to hand over the Bashiqa base gradually to Iraq; Baghdad also began buying electricity from Turkey and the Kurdistan Region in late May 2026 to offset the loss of Iranian gas."
+    since: 2026-09-24
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2026/9/24/turkiye-agrees-to-gradual-handover-of-bashiqa-base-to-iraq", title: "Turkiye agrees to gradual handover of Bashiqa base to Iraq", publisher: "Al Jazeera (Reuters)", date: 2026-09-24, tier: 3}
+      - {url: "https://www.arabnews.com/node/2646442/middle-east", title: "How decades of instability, dependence on Iranian gas hollowed out Iraq's power sector", publisher: "Arab News", date: 2026-06-08, tier: 3}
+  - to: ISR
+    layer: action
+    type: incident
+    summary: "The New York Times reported on 18 May 2026 that Israel's military operated a second covert site in Iraq's western desert (earlier outposts were also reported); a shepherd and a soldier were killed near al-Nukhaib. Iraqi militias cite alleged Israeli operations from Iraqi territory as a reason to keep their weapons."
+    since: 2026-05-18
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://aje.news/xex3gi?update=4581314", title: "Israel's military operated second covert site in Iraq: NYT", publisher: "Al Jazeera", date: 2026-05-18, tier: 3}
+      - {url: "https://www.ynetnews.com/article/byrzhykqfl", title: "Iraq PM gives Iran-backed militias until June 2027 to disarm and disband (reporting al-Zaidi to The New York Times)", publisher: "Ynet", date: 2026-09, tier: 3}
+  - to: sub-krg
+    layer: action
+    type: agreement
+    summary: "A Baghdad-Erbil agreement with Turkey of 17-18 Mar 2026 resumed Kirkuk-Ceyhan exports after the Iran war suspended them, aiming at up to 450,000 b/d including 250,000 b/d from Kirkuk; the oil minister said in April that about 200,000 b/d were flowing."
+    since: 2026-03-17
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.american.edu/sis/research/initiatives/global-kurdish/The-Squeeze-on-Erbil.cfm", title: "The Squeeze on Erbil (Y. Saeed, from the Arab Gulf States Institute in Washington)", publisher: "American University Global Kurdish Initiative / AGSIW", date: 2026, tier: 2}
+      - {url: "https://www.thenationalnews.com/business/energy/2026/03/18/iraq-to-resume-oil-exports-via-turkeys-ceyhan-port-amid-regional-tensions/", title: "Iraq resumes crude oil exports to Turkey's Ceyhan port through pipeline", publisher: "The National", date: 2026-03-18, tier: 3}
+  - to: nsa-pkk
+    layer: action
+    type: incident
+    summary: "The PKK said on 16 Nov 2025 it had withdrawn from the Zap region on the Turkish border, as part of the dissolution process; an unidentified drone had killed a PKK member and injured another in Sulaymaniyah Governorate on 19 Jul 2025."
+    since: 2025-11-16
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.france24.com/en/live-news/20251117-kurdish-pkk-militants-say-have-left-key-area-in-north-iraq", title: "Kurdish PKK militants say have left key area in north Iraq", publisher: "France 24", date: 2025-11-17, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2025/7/19/unidentified-drone-kills-pkk-member-injures-another-in-iraq", title: "Unidentified drone kills PKK member, injures another in northern Iraq", publisher: "Al Jazeera", date: 2025-07-19, tier: 3}
+  - to: nsa-isis
+    layer: action
+    type: incident
+    summary: "ISIS has been more active in Kirkuk and the disputed areas, including a deadly attack on a police unit in late Sep or early Oct 2026, as the last coalition troops left."
+    since: 2026-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.newarab.com/analysis/us-withdrawing-iraq-who-could-fill-void", title: "The US is withdrawing from Iraq. Who could fill the void? (W. Rodgers, Chatham House)", publisher: "The New Arab", date: 2026-10-08, tier: 3}
+  - to: nsa-hezbollah
+    layer: action
+    type: sanction
+    summary: "On 17 Nov 2025 the government designated Lebanon's Hezbollah as a terrorist organisation in an official gazette, and retracted the decision on 4 Dec 2025 calling it an error."
+    since: 2025-11-17
+    until: 2025-12-04
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://apnews.com/article/iraq-government-lebanon-hezbollah-yemen-houthis-d58389bf49876f07927ed1916ce3cc41", title: "Iraq retracts a terror designation it imposed on Lebanon's Hezbollah and Yemen's Houthis", publisher: "AP", date: 2025-12-05, tier: 3}
+      - {url: "https://carnegieendowment.org/middle-east/diwan/2025/12/toward-a-new-compromise-in-iraq", title: "Toward a New Compromise in Iraq? (W. van Wilgenburg)", publisher: "Carnegie Middle East Center", date: 2025-12-09, tier: 2}
+  - to: nsa-houthis
+    layer: action
+    type: sanction
+    summary: "On 17 Nov 2025 the government designated the Houthi movement as a terrorist organisation in an official gazette, and retracted the decision on 4 Dec 2025 calling it an error, after Iran-aligned factions objected."
+    since: 2025-11-17
+    until: 2025-12-04
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://apnews.com/article/iraq-government-lebanon-hezbollah-yemen-houthis-d58389bf49876f07927ed1916ce3cc41", title: "Iraq retracts a terror designation it imposed on Lebanon's Hezbollah and Yemen's Houthis", publisher: "AP", date: 2025-12-05, tier: 3}
+      - {url: "https://carnegieendowment.org/middle-east/diwan/2025/12/toward-a-new-compromise-in-iraq", title: "Toward a New Compromise in Iraq? (W. van Wilgenburg)", publisher: "Carnegie Middle East Center", date: 2025-12-09, tier: 2}
+  - to: LBN
+    layer: action
+    type: visit
+    summary: "Lebanese President Joseph Aoun led an official delegation to Baghdad on 1 Jun 2025."
+    since: 2025-06-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://web.archive.org/web/20250530221040/https://www.alaraby.co.uk/politics/%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3-%D8%A7%D9%84%D9%84%D8%A8%D9%86%D8%A7%D9%86%D9%8A-%D9%8A%D8%B2%D9%88%D8%B1-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D8%A7%D9%84%D8%A3%D8%AD%D8%AF", title: "The Lebanese president visits Baghdad on Sunday", title_original: "الرئيس اللبناني يزور بغداد الأحد", lang: ar, publisher: "Al-Araby Al-Jadeed (archived)", date: 2025-05-30, tier: 3}
+  - to: JOR
+    layer: action
+    type: visit
+    summary: "Iraq, Jordan, Syria and Turkey held a quadrilateral security meeting in Amman on 8 Mar 2025 on cooperation against terrorism and organised crime; in Mar 2026 Jordan and the Gulf states called on Baghdad to stop militia attacks launched from Iraqi territory."
+    since: 2025-03-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.reuters.com/world/middle-east/turkey-jordan-syria-iraq-discuss-security-cooperation-amman-turkish-source-says-2025-03-08/", title: "Turkey, Jordan, Syria, Iraq discuss security cooperation in Amman, Turkish source says", publisher: "Reuters", date: 2025-03-08, tier: 3}
+      - {url: "https://www.theguardian.com/world/2026/mar/28/gulf-countries-threat-iran-backed-militias-proxies-war-us-israel-middle-east", title: "Gulf countries warn of rising threat from Iran-backed militias and proxies", publisher: "The Guardian", date: 2026-03-28, tier: 3}
+  - to: EGY
+    layer: action
+    type: visit
+    summary: "Prime Minister Mohammed Shia al-Sudani attended the Gaza peace summit in Sharm el-Sheikh, Egypt, on 13 Oct 2025."
+    since: 2025-10-13
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.iraqinews.com/iraq/iraq-to-participate-in-sharm-el-sheikh-summit-on-gaza-crisis/", title: "Iraq to participate in Sharm el-Sheikh summit on Gaza crisis", publisher: "Iraqi News", date: 2025-10-13, tier: 3}
+  - to: FRA
+    layer: action
+    type: incident
+    summary: "A French soldier was killed and six injured in a drone attack on the French base at Mala Qara in Erbil governorate on 12 Mar 2026."
+    since: 2026-03-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.france24.com/en/middle-east/20260313-unacceptable-drone-strike-kills-french-soldier-in-iraq-kurdistan-region", title: "'Unacceptable': Drone strike kills French soldier in Iraq's Kurdistan region", publisher: "France 24", date: 2026-03-13, tier: 3}
+  - to: GBR
+    layer: action
+    type: incident
+    summary: "A British and a US soldier died in a training accident at an airbase in Erbil on 30 May 2026; the last UK troops left Iraq with the US on 30 Sep 2026 as the anti-ISIS mission ended."
+    since: 2026-05-30
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://apnews.com/article/us-british-troop-deaths-iraq-7f0f62910c6a18f664d4fc5299e4bd4a", title: "A US soldier and a British soldier die during training in Iraq", publisher: "AP", date: 2026-05-30, tier: 3}
+      - {url: "https://www.bbc.com/news/articles/c65ym1dyn92mo", title: "Last UK and US troops leave Iraq as anti-Islamic State mission ends", publisher: "BBC", date: 2026-09-30, tier: 3}
+  - to: org-opec
+    layer: action
+    type: agreement
+    summary: "Iraq, with Saudi Arabia, Russia, Kuwait, Kazakhstan, Algeria and Oman, reaffirmed its commitment to market stability in an OPEC Secretariat statement of 4 Oct 2026."
+    since: 2026-10-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://opec.org/pr-detail/1891616-4-october-2026.html", title: "Saudi Arabia, Russia, Iraq, Kuwait, Kazakhstan, Algeria, and Oman reaffirm commitment to market stability", publisher: "OPEC Secretariat", date: 2026-10-04, tier: 1}
