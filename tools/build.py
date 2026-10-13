@@ -91,11 +91,37 @@ def stale(last_verified, today):
     return (today - date(*parts)).days > STALE_DAYS
 
 
+def running_actors():
+    """Actors an agent is writing right now (data/queue.yaml): with --skip-running their
+    half-written stance and relation files are left out and their card is published as a stub,
+    so the site can be rebuilt while the world run is in progress."""
+    if "--skip-running" not in sys.argv:
+        return set()
+    q = DATA / "queue.yaml"
+    if not q.exists():
+        return set()
+    acts = (yaml.safe_load(q.open(encoding="utf-8")) or {}).get("actors", [])
+    return {a["id"] for a in acts if a.get("status") == "running"}
+
+
 def load_dir(sub):
     out = {}
+    skip = running_actors()
     for p in sorted((DATA / sub).glob("*.yaml")):
-        with p.open(encoding="utf-8") as f:
-            out[p.stem] = yaml.safe_load(f)
+        if p.stem in skip and sub in ("stances", "relations"):
+            print(f"SKIP  {sub}/{p.name} (agent running)", file=sys.stderr)
+            continue
+        try:
+            with p.open(encoding="utf-8") as f:
+                out[p.stem] = yaml.safe_load(f)
+        except yaml.YAMLError:
+            if p.stem in skip:
+                print(f"SKIP  {sub}/{p.name} (half-written)", file=sys.stderr)
+                continue
+            raise
+        if sub == "actors" and p.stem in skip and out[p.stem] and out[p.stem].get("card") == "full":
+            out[p.stem]["card"] = "stub"
+            out[p.stem].pop("grand_strategy", None)
     return out
 
 
