@@ -1,0 +1,368 @@
+from: nsa-houthis
+relations:
+  # ---------- objective ----------
+  - to: YEM
+    layer: objective
+    type: regime_goal
+    summary: "The Houthis rule Sanaa as Yemen's authority since September 2014 and press to take the rest - the Red Sea coast (done 3-11 September 2026), Taiz and Marib with its oil and gas; the government answers with Operation Dawn (4 October 2026) and a stated aim of retaking Sanaa. Each seeks the other's end."
+    since: 2014-09-21
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/28470", title: "Yemen's War Resumes, But the Endgame Remains Uncertain", publisher: "Sana'a Center for Strategic Studies", date: 2026-10-06, tier: 2}
+      - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/28317", title: "The Houthis Seize Yemen's West Coast: Reactions from Experts", publisher: "Sana'a Center for Strategic Studies", date: 2026-09-15, tier: 2}
+      - {url: "https://www.longwarjournal.org/archives/2026/09/houthis-take-yemens-red-sea-coast-and-key-bab-al-mandeb-islands.php", title: "Houthis take Yemen's Red Sea coast and key Bab al Mandeb islands", publisher: "FDD's Long War Journal", date: 2026-09-14, tier: 3}
+  - to: SAU
+    layer: objective
+    type: influence_goal
+    summary: "The Houthis want Riyadh to end the 'siege' of northern Yemen (airspace, ports, banking), to pay salaries from oil and gas revenue and to return to the 2023 roadmap; Sana'a Center experts read the July 2026 attacks as a bid to close that deal before a US-Iran settlement, with attacks 'calibrated to avoid full war'. Riyadh resists because it would entrench the group."
+    since: 2023
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/28199", title: "Yemen's Return to War: What is the Endgame? Reactions from Sana'a Center experts", publisher: "Sana'a Center for Strategic Studies", date: 2026-08-24, tier: 2}
+      - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/28342", title: "The Perennial Problem of the Houthis", publisher: "Sana'a Center for Strategic Studies", date: 2026-09-16, tier: 2}
+      - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/27981", title: "The Attack on Sana'a Airport: Reaction from Sana'a Center Experts", publisher: "Sana'a Center for Strategic Studies", date: 2026-07-15, tier: 2}
+  - to: SAU
+    layer: objective
+    type: recognition_sought
+    summary: "The Houthis seek to pressure Yemen's neighbours into tacit recognition of their rule; the Sana'a Center urges Riyadh not to grant them legitimacy or tacit recognition. Their government is not recognised by the UN, which deals with Aden."
+    since: 2022-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://sanaacenter.org/the-yemen-review/jul-sept-2026/28493", title: "A Defining Moment for Yemen (editorial, The Yemen Review July-September 2026)", publisher: "Sana'a Center for Strategic Studies", date: 2026-10-11, tier: 2}
+  - to: ISR
+    layer: objective
+    type: influence_goal
+    summary: "The Houthi declared aim against Israel is to force an end to the Gaza war through a 'blockade' of Israeli navigation and strikes on Israel; in the November 2025 letter of chief of staff al-Madani to the Qassam Brigades they undertook to resume operations 'deep inside Israel' and the ban on Israeli navigation if Israel resumes the war. They also threatened any Israeli base in Somaliland after Israel's recognition of it."
+    since: 2023-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.nbcnews.com/world/middle-east/yemens-houthi-rebels-signal-stopped-attacks-israel-red-sea-shipping-rcna243165", title: "Yemen's Houthi rebels signal that they've stopped attacks on Israel and Red Sea shipping", publisher: "NBC News (AP)", date: 2025-11-11, tier: 3}
+      - {url: "https://sanaacenter.org/the-yemen-review/oct-dec-2025/26133", title: "The Yemen Review, October-December 2025 (Somaliland)", publisher: "Sana'a Center for Strategic Studies", date: 2026-01, tier: 2}
+  - to: nsa-hamas
+    layer: objective
+    type: influence_goal
+    summary: "The Houthis present the Red Sea campaign of November 2023 - October 2025 as support for Gaza and Hamas; the Gaza ceasefire of 10 October 2025 stopped their attacks on Israel and shipping, and the Qassam Brigades received their conditional pledge to resume."
+    since: 2023-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.nbcnews.com/world/middle-east/yemens-houthi-rebels-signal-stopped-attacks-israel-red-sea-shipping-rcna243165", title: "Yemen's Houthi rebels signal that they've stopped attacks on Israel and Red Sea shipping", publisher: "NBC News (AP)", date: 2025-11-11, tier: 3}
+      - {url: "https://sanaacenter.org/the-yemen-review/oct-dec-2025/26133", title: "The Yemen Review, October-December 2025", publisher: "Sana'a Center for Strategic Studies", date: 2026-01, tier: 2}
+  - to: IRN
+    layer: objective
+    type: influence_goal
+    summary: "The Houthis seek a larger, more independent role in the axis - the 'Hezbollah-like' position, possibly its new centre of gravity after the killings of Nasrallah and Khamenei - while keeping Iranian arms and cover; sources stress the Houthi decisions are their own and that Iran may trade them away in a deal with Washington."
+    since: 2026-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/26607", title: "The Iran War is a Defining Moment for the Future of the Houthis", publisher: "Sana'a Center for Strategic Studies", date: 2026-03-11, tier: 2}
+      - {url: "https://www.thenationalnews.com/news/mena/2026/08/10/houthis-seek-hezbollah-like-role-with-plan-to-escalate-yemen-conflict-in-support-of-iran/", title: "Houthis seek Hezbollah-like role with plan to escalate Yemen conflict in support of Iran", publisher: "The National", date: 2026-08-10, tier: 3}
+  # ---------- alignment ----------
+  # No treaty, membership or security guarantee binds the Houthis: the UN recognises the government in Aden, and the alignments with Iran, Hezbollah and Hamas are de facto (see stances).
+  # ---------- dependency ----------
+  - to: IRN
+    layer: dependency
+    type: energy_import
+    value: 2.0
+    unit: usd_bn_per_year_alleged_illicit_oil_sales_us_treasury_jan_2026
+    summary: "The US Treasury alleged in January 2026 that the Houthis earn more than USD 2bn a year from illicit oil sales and that Iran supplies the oil, including free monthly shipments, through Iranian-owned or affiliated companies in Dubai; the Houthis deny using Iranian fuel to finance operations. Proceeds reportedly move through crypto transactions and local exchange houses. Interruptions to Iranian oil shipments are cited by the Sana'a Center as a source of strain in 2026."
+    since: 2024
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "Allegation by a US authority, denied by the group; figure is revenue from sales, not volume of imports."
+    sources:
+      - {url: "https://www.aljazeera.com/economy/2026/9/14/inside-the-houthis-expanding-war-economy-in-yemen", title: "Inside the Houthis' expanding war economy in Yemen", publisher: "Al Jazeera", date: 2026-09-14, tier: 3}
+      - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/28342", title: "The Perennial Problem of the Houthis", publisher: "Sana'a Center for Strategic Studies", date: 2026-09-16, tier: 2}
+  - to: IRN
+    layer: dependency
+    type: arms_supply
+    value: 1
+    unit: intercepted_shipment_djibouti_to_al_salif_27_jun_2025
+    summary: "Iran has supplied the Houthis with missiles, drones, warheads, anti-ship and air-defence components, radar-ship targeting support and training (a captured Iranian vessel in January 2024; a shipment from Djibouti to Al-Salif intercepted by the National Resistance Forces on 27 June 2025); the Sana'a Center expects more missiles, drones, naval mines and ISR from Tehran after the 2026 war. Iran officially denies arming them."
+    since: 2009
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "No public figure for the total flow; the unit records the one documented interception of 2025 as an example."
+    sources:
+      - {url: "https://www.fdd.org/analysis/2025/07/22/post-12-day-war-iran-continues-to-invest-in-the-houthis/", title: "Post-12-Day War, Iran Continues To Invest in the Houthis", publisher: "FDD", date: 2025-07-22, tier: 2}
+      - {url: "https://www.cfr.org/in-brief/irans-support-houthis-what-know", title: "Iran's Support of the Houthis: What to Know", publisher: "Council on Foreign Relations", date: 2025-01, tier: 2}
+      - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/27637", title: "Why the US Failed to Defeat Iran and What it Means for the Axis of Resistance", publisher: "Sana'a Center for Strategic Studies", date: 2026-06-20, tier: 2}
+  - to: IRN
+    layer: dependency
+    type: military_presence
+    value: 1
+    unit: quds_force_commander_reported_in_sanaa_us_reward_15m_usd
+    summary: "Abdul Reza Shahlai ('Hajj Yusef'), an IRGC Quds Force commander for whom the US offers up to USD 15m, is reported by Yemeni security sources to be in Sanaa and directly involved, with other IRGC operatives and 'experts' who arrived on Mahan Air flights from Tehran (3 July 2026); the Yemeni government and Reuters say the September 2026 coastal advance had direct IRGC guidance, and a Tehran source speaks of 'a joint operations room'. Not confirmed by Tehran or Sanaa."
+    since: 2026-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.thenationalnews.com/news/mena/2026/09/14/shadow-man-irgc-flight-and-a-secret-meeting-irans-hand-in-houthi-offensive-revealed/", title: "Shadow man, IRGC flight and a secret meeting: Iran's hand in Houthi offensive revealed", publisher: "The National", date: 2026-09-14, tier: 3}
+      - {url: "https://www.kurdistan24.net/en/story/938700", title: "Iranian support helped Houthis seize key Red Sea positions, Reuters reports", publisher: "Kurdistan24 (summarising Reuters)", date: 2026-09, tier: 3}
+      - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/27981", title: "The Attack on Sana'a Airport: Reaction from Sana'a Center Experts", publisher: "Sana'a Center for Strategic Studies", date: 2026-07-15, tier: 2}
+  - to: nsa-hezbollah
+    layer: dependency
+    type: military_presence
+    value: 1
+    unit: reported_training_and_command_assistance_not_quantified
+    summary: "Hezbollah trained and assisted the Houthis for years, and Reuters reported in January 2024 that Iranian and Hezbollah commanders helped direct Houthi attacks; in 2026 the Houthis are reported to be training allied militants across the region, from Sudan to Iraq, as Hezbollah weakens."
+    since: 2015
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "Unquantified; value 1 only marks presence."
+    sources:
+      - {url: "https://www.thenationalnews.com/news/mena/2026/08/10/houthis-seek-hezbollah-like-role-with-plan-to-escalate-yemen-conflict-in-support-of-iran/", title: "Houthis seek Hezbollah-like role with plan to escalate Yemen conflict in support of Iran", publisher: "The National", date: 2026-08-10, tier: 3}
+      - {url: "https://www.reuters.com/world/middle-east/iranian-hezbollah-commanders-help-direct-houthi-attacks-yemen-sources-say-2024-01-20/", title: "Exclusive: Iranian and Hezbollah commanders help direct Houthi attacks in Yemen, sources say", publisher: "Reuters", date: 2024-01-20, tier: 3}
+  - to: CHN
+    layer: dependency
+    type: arms_supply
+    value: 0.5
+    unit: lower_bound_share_of_houthi_weapons_from_chinese_companies_expert_estimate
+    summary: "Nadia Al-Dawsari (Middle East Institute) told a House Foreign Affairs subcommittee on 1 September 2026 that most weapons reaching the Houthis come from Chinese companies; this is commercial supply of components, not a state transfer, and the share is an expert's characterisation, not a count. The Security Council arms embargo (renewed 13 November 2025) covers the group."
+    since: 2024
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "'Most' read as more than half; the value is a lower bound and an expert judgement."
+    sources:
+      - {url: "https://www.thenationalnews.com/news/us/2026/09/01/us-must-support-yemeni-government-and-regional-allies-to-counter-houthis-experts-say/", title: "US must support Yemeni government and regional allies to counter Houthis, experts say", publisher: "The National", date: 2026-09-01, tier: 3}
+      - {url: "https://sanaacenter.org/the-yemen-review/oct-dec-2025/26133", title: "The Yemen Review, October-December 2025 (UNSC renewal of the arms embargo)", publisher: "Sana'a Center for Strategic Studies", date: 2026-01, tier: 2}
+  # ---------- action ----------
+  - to: ISR
+    layer: action
+    type: incident
+    summary: "Missile and drone attacks on Israel from October 2023, a drone on Tel Aviv in July 2024, suspension after the Gaza ceasefire of 10 October 2025 (no claimed attacks since then until the Iran war), and two claimed missile-and-drone attacks on 28 March 2026, one month into the US-Israeli war on Iran; Israel intercepts the vast majority."
+    since: 2023-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/26703", title: "The Houthis Strike Israel, Join the Regional Fray", publisher: "Sana'a Center for Strategic Studies", date: 2026-03-31, tier: 2}
+      - {url: "https://www.nbcnews.com/world/middle-east/yemens-houthi-rebels-signal-stopped-attacks-israel-red-sea-shipping-rcna243165", title: "Yemen's Houthi rebels signal that they've stopped attacks on Israel and Red Sea shipping", publisher: "NBC News (AP)", date: 2025-11-11, tier: 3}
+      - {url: "https://www.reuters.com/world/middle-east/israeli-military-says-tel-aviv-blast-apparently-caused-by-drone-2024-07-19/", title: "Tel Aviv hit by drone attack claimed by Iranian-backed Houthis", publisher: "Reuters", date: 2024-07-19, tier: 3}
+  - to: ISR
+    layer: action
+    type: incident
+    summary: "Israel's 28 August 2025 strike on a Sanaa apartment killed the Houthi prime minister Ahmed al-Rahawi (successor Mohammed Miftah, 30 August) and, in the Sana'a Center count, about a dozen cabinet members and officials; Israel had destroyed the ports of Hudaydah and Al-Salif and fuel stocks earlier in 2025, and the Houthis announced chief of staff al-Ghamari's death on 16 October 2025."
+    since: 2025-08-28
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    note: "Israeli action against the Houthis, recorded here because it shaped the movement's leadership and posture."
+    sources:
+      - {url: "https://www.cnn.com/2025/08/30/middleeast/yemen-houthis-prime-minister-israel-intl", title: "Yemen's Houthis say prime minister of rebel-controlled government killed in Israeli airstrike", publisher: "CNN", date: 2025-08-30, tier: 3}
+      - {url: "https://www.reuters.com/world/middle-east/prime-minister-yemens-houthi-government-killed-israeli-strike-2025-08-30/", title: "Prime minister of Yemen's Houthi government killed in Israeli strike", publisher: "Reuters", date: 2025-08-30, tier: 3}
+      - {url: "https://sanaacenter.org/the-yemen-review/oct-dec-2025/26133", title: "The Yemen Review, October-December 2025", publisher: "Sana'a Center for Strategic Studies", date: 2026-01, tier: 2}
+  - to: USA
+    layer: action
+    type: incident
+    summary: "Operation Rough Rider (15 March - 6 May 2025, over 1,000 targets; Pentagon later counted 153 Yemeni civilians killed): the Houthis shot down seven MQ-9 drones and two Super Hornets were lost from USS Truman; the campaign did not decisively weaken them and they attacked two commercial vessels within two months of the ceasefire. The US designated Ansar Allah a Foreign Terrorist Organization in 2025."
+    since: 2025-03-15
+    until: 2025-05-06
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.longwarjournal.org/archives/2026/09/houthis-take-yemens-red-sea-coast-and-key-bab-al-mandeb-islands.php", title: "Houthis take Yemen's Red Sea coast and key Bab al Mandeb islands", publisher: "FDD's Long War Journal", date: 2026-09-14, tier: 3}
+      - {url: "https://edition.cnn.com/2025/04/25/politics/houthis-target-drones-hampering-trump-mission/index.html", title: "Houthis' successful targeting of US drones is hampering Trump's mission to kill group's senior leadership", publisher: "CNN", date: 2025-04-25, tier: 3}
+      - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/28199", title: "Yemen's Return to War: What is the Endgame? (Pentagon review of 153 civilian deaths)", publisher: "Sana'a Center for Strategic Studies", date: 2026-08-24, tier: 2}
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "Oman-brokered ceasefire of 6 May 2025: Trump halted the bombing and the Houthis stopped targeting US ships; they said it did not cover attacks on Israel. It has prevented US strikes on Sanaa since; in September 2026 Trump said the Houthis asked the US not to target them, and Washington declined a Saudi request for air strikes (10 September) while sharing intelligence."
+    since: 2025-05-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/5/6/trump-says-bombing-of-yemen-to-stop-as-oman-confirms-us-houthi-ceasefire", title: "Trump says bombing of Yemen to stop as Oman confirms US-Houthi ceasefire", publisher: "Al Jazeera", date: 2025-05-06, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2025/5/7/yemens-houthis-say-attacks-on-israel-not-in-ceasefire-deal-in-any-way", title: "Yemen's Houthis say attacks on Israel not in US ceasefire deal in 'any way'", publisher: "Al Jazeera", date: 2025-05-07, tier: 3}
+      - {url: "https://www.longwarjournal.org/archives/2026/09/houthis-take-yemens-red-sea-coast-and-key-bab-al-mandeb-islands.php", title: "Houthis take Yemen's Red Sea coast and key Bab al Mandeb islands", publisher: "FDD's Long War Journal", date: 2026-09-14, tier: 3}
+  - to: OMN
+    layer: action
+    type: agreement
+    summary: "Oman is the mediator and window: it announced and brokered the US-Houthi ceasefire of 6 May 2025, is not a member of the Saudi-led coalition, and keeps a channel that the Houthis use with Washington."
+    since: 2025-05-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/5/6/trump-says-bombing-of-yemen-to-stop-as-oman-confirms-us-houthi-ceasefire", title: "Trump says bombing of Yemen to stop as Oman confirms US-Houthi ceasefire", publisher: "Al Jazeera", date: 2025-05-06, tier: 3}
+      - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/28289", title: "Who Will Shape the New Order in the Red Sea?", publisher: "Sana'a Center for Strategic Studies", date: 2026-09-09, tier: 2}
+  - to: SAU
+    layer: action
+    type: agreement
+    summary: "The UN-brokered truce of April 2022 and the informal Saudi-Houthi understanding that followed (no cross-border Houthi attacks until July 2026), with roadmap talks launched in December 2023; it was broken by the Houthi missiles on Abha after the 13 July 2026 strike on Sanaa airport."
+    since: 2022-04
+    until: 2026-07-13
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/28199", title: "Yemen's Return to War: What is the Endgame? Reactions from Sana'a Center experts", publisher: "Sana'a Center for Strategic Studies", date: 2026-08-24, tier: 2}
+      - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/27981", title: "The Attack on Sana'a Airport: Reaction from Sana'a Center Experts", publisher: "Sana'a Center for Strategic Studies", date: 2026-07-15, tier: 2}
+      - {url: "https://www.thestar.com.my/news/world/2026/07/20/yemen039s-houthis-declare-naval-blockade-against-saudi-arabia---statement", title: "Yemen's Houthis declare naval blockade against Saudi Arabia (statement)", publisher: "The Star (Reuters)", date: 2026-07-20, tier: 3}
+  - to: SAU
+    layer: action
+    type: incident
+    summary: "Naval blockade of Saudi Arabia declared on 20 July 2026 (Saudi shipping and ships that load or discharge Saudi oil in the Red Sea, Bab al-Mandab and Gulf of Aden); tankers Encelia and Layla attacked, Jazan refinery hit on 25 July, a tanker off Yanbu on 24 August; Aramco rerouted crude through Sidi Kerir and insurance rates for the southern Red Sea doubled."
+    since: 2026-07-20
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.thestar.com.my/news/world/2026/07/20/yemen039s-houthis-declare-naval-blockade-against-saudi-arabia---statement", title: "Yemen's Houthis declare naval blockade against Saudi Arabia (statement)", publisher: "The Star (Reuters)", date: 2026-07-20, tier: 3}
+      - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/28037", title: "The Houthis are Setting a Dangerous Precedent", publisher: "Sana'a Center for Strategic Studies", date: 2026-07-27, tier: 2}
+      - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/28289", title: "Who Will Shape the New Order in the Red Sea?", publisher: "Sana'a Center for Strategic Studies", date: 2026-09-09, tier: 2}
+  - to: SAU
+    layer: action
+    type: incident
+    summary: "Missile and drone strikes on Saudi airports - Abha (July), then Jazan, Najran and, on 10 October 2026, King Khalid airport in Riyadh (13 dead, over 300 wounded; the airport closed to 17 October), with King Fahd airport in Dammam hit on 11 October; the Saudi-led coalition says it destroyed a missile aimed at Riyadh on 12 October."
+    since: 2026-07-13
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.thenationalnews.com/news/mena/2026/10/12/fighting-intensifies-in-yemen-as-houthis-fire-on-saudi-arabia/", title: "Fighting intensifies in Yemen as Houthis fire on Saudi Arabia", publisher: "The National", date: 2026-10-12, tier: 3}
+      - {url: "https://www.cnn.com/2026/10/10/middleeast/riyadh-airport-saudi-houthis-intl", title: "Saudi Arabia intercepts three missiles as capital's international airport remains closed after deadly Houthi attacks", publisher: "CNN", date: 2026-10-10, tier: 3}
+      - {url: "https://time.com/article/2026/10/08/saudi-arabia-yemen-houthi-rebels-airport-attacks-war/", title: "Houthi Attacks on Saudi Airports Kill 3 Amid Escalating War in Yemen", publisher: "Time", date: 2026-10-08, tier: 3}
+  - to: YEM
+    layer: action
+    type: incident
+    summary: "West coast offensive - missile, drone and boat attacks from 9 August 2026, ground operations from 3 September; Mocha taken 10 September, then Dhubab, Mayyun (Perim), the Hanish islands and the rest of the Red Sea coast by 11 September; 332 Houthi dead confirmed by funeral notices at 13 September (the NRF claims over 1,000); over 200,000 displaced in the latest wave."
+    since: 2026-08-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.longwarjournal.org/archives/2026/09/houthis-take-yemens-red-sea-coast-and-key-bab-al-mandeb-islands.php", title: "Houthis take Yemen's Red Sea coast and key Bab al Mandeb islands", publisher: "FDD's Long War Journal", date: 2026-09-14, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2026/9/15/can-the-houthis-hold-on-to-yemens-strategic-western-coast", title: "Can the Houthis hold on to Yemen's strategic western coast?", publisher: "Al Jazeera", date: 2026-09-15, tier: 3}
+      - {url: "https://sanaacenter.org/the-yemen-review/jul-sept-2026/28493", title: "A Defining Moment for Yemen (editorial, The Yemen Review July-September 2026)", publisher: "Sana'a Center for Strategic Studies", date: 2026-10-11, tier: 2}
+  - to: YEM
+    layer: action
+    type: agreement
+    summary: "Prisoner-exchange deal signed on 14 May 2026 with the government - the Houthis to release 580 prisoners (including seven Saudis and 20 Sudanese) for 1,100 Houthi-affiliated detainees; the implementation date of 10 July passed and the swap is postponed indefinitely."
+    since: 2026-05-14
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://sanaacenter.org/the-yemen-review/april-june-2026/28062", title: "The Yemen Review, April-June 2026 (prisoner exchange of 14 May 2026)", publisher: "Sana'a Center for Strategic Studies", date: 2026-07-31, tier: 2}
+  - to: EGY
+    layer: action
+    type: incident
+    summary: "The Red Sea campaign of 2023-2025 cut Suez traffic (about 31 transits a day by May 2026 against 75 before the war) and about USD 7bn (about 60%) of canal revenue in 2023-24; shipping lines began returning in January 2026, and the September 2026 Houthi seizure of the Bab al-Mandab shore puts it at risk again. Iran reportedly mediated a preliminary understanding that the Houthis would not target northbound traffic towards Suez."
+    since: 2023-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://aljazeera.com/economy/2026/9/13/red-sea-nations-watch-as-houthis-seize-bab-al-mandeb-strait", title: "Red Sea nations watch as Houthis seize Bab al-Mandeb strait", publisher: "Al Jazeera", date: 2026-09-13, tier: 3}
+      - {url: "https://www.washingtonpost.com/world/2026/01/21/suez-canal-shipping-houthis-attacks/", title: "How Egypt is reviving the Suez Canal after maritime attacks sank traffic", publisher: "The Washington Post", date: 2026-01-21, tier: 3}
+      - {url: "https://www.thenationalnews.com/news/mena/2026/09/14/shadow-man-irgc-flight-and-a-secret-meeting-irans-hand-in-houthi-offensive-revealed/", title: "Shadow man, IRGC flight and a secret meeting: Iran's hand in Houthi offensive revealed", publisher: "The National", date: 2026-09-14, tier: 3}
+  - to: org-eu
+    layer: action
+    type: incident
+    summary: "The Red Sea campaign (it sank four ships and killed at least nine mariners by late 2025) is what the EU's Operation Aspides, launched on 19 February 2024, was set up to counter; it secured the passage of over 1,320 commercial vessels by November 2025. The Houthis released the crew of the Galaxy Leader in January 2025 and of the Eternity C in December 2025."
+    since: 2024-02-19
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://sanaacenter.org/the-yemen-review/oct-dec-2025/26133", title: "The Yemen Review, October-December 2025 (Aspides, Eternity C crew)", publisher: "Sana'a Center for Strategic Studies", date: 2026-01, tier: 2}
+      - {url: "https://www.nbcnews.com/world/middle-east/yemens-houthi-rebels-signal-stopped-attacks-israel-red-sea-shipping-rcna243165", title: "Yemen's Houthi rebels signal that they've stopped attacks on Israel and Red Sea shipping", publisher: "NBC News (AP)", date: 2025-11-11, tier: 3}
+  - to: GBR
+    layer: action
+    type: incident
+    summary: "The United Kingdom joined the US and Israel in strikes on Houthi targets (2024; the Sana'a Center also lists British strikes among those that did not stop Houthi capabilities) and, with the US, politically backs Saudi Arabia's shift to confrontation in October 2026."
+    since: 2024-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/28289", title: "Who Will Shape the New Order in the Red Sea?", publisher: "Sana'a Center for Strategic Studies", date: 2026-09-09, tier: 2}
+      - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/28470", title: "Yemen's War Resumes, But the Endgame Remains Uncertain", publisher: "Sana'a Center for Strategic Studies", date: 2026-10-06, tier: 2}
+  - to: org-un
+    layer: action
+    type: incident
+    summary: "Detention of UN and aid staff - at least 69 UN staff (all Yemenis) held at 4 January 2026, with waves on 6 June 2024 (at least 13), 23-25 January 2025 (at least 8) and 31 August 2025 (at least 19), a WFP employee dead in custody on 11 February 2025, and trials before the Specialized Criminal Court; the UN suspended its work in Saada governorate."
+    since: 2024-06-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.hrw.org/news/2026/01/08/houthi-detentions-halting-aid-in-crisis-hit-yemen", title: "Houthi detentions halting aid in crisis-hit Yemen", publisher: "Human Rights Watch", date: 2026-01-08, tier: 2}
+      - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/28342", title: "The Perennial Problem of the Houthis", publisher: "Sana'a Center for Strategic Studies", date: 2026-09-16, tier: 2}
+  - to: RUS
+    layer: action
+    type: agreement
+    summary: "In 2026 the Houthis told China and Russia that their ships would not be targeted in the Red Sea (Bloomberg, cited by the Sana'a Center); no arms deal with Russia is confirmed in the sources read."
+    since: 2026
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://news.bloomberglaw.com/international-trade/yemens-houthis-tell-china-russia-their-ships-wont-be-targeted", title: "Yemen's Houthis tell China, Russia their ships won't be targeted", publisher: "Bloomberg Law", date: 2026, tier: 3}
+      - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/28289", title: "Who Will Shape the New Order in the Red Sea?", publisher: "Sana'a Center for Strategic Studies", date: 2026-09-09, tier: 2}
+  - to: CHN
+    layer: action
+    type: agreement
+    summary: "Reuters reported on 28 July 2026 that China is in touch with the Houthis to allow Chinese ships to sail through the Red Sea; the Houthis' Hudaydah coordination centre (1 August) denied plans to charge ship fees and asked firms not to pay anyone else for passage."
+    since: 2026-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.reuters.com/world/china/china-touch-with-yemens-houthis-allow-ships-sail-through-red-sea-sources-say-2026-07-28/", title: "China in touch with Yemen's Houthis to allow ships to sail through Red Sea, sources say", publisher: "Reuters (cited by the Sana'a Center)", date: 2026-07-28, tier: 3}
+      - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/28289", title: "Who Will Shape the New Order in the Red Sea?", publisher: "Sana'a Center for Strategic Studies", date: 2026-09-09, tier: 2}
+      - {url: "https://www.saba.ye/en/news3754303.htm", title: "Statement of the Hudaydah coordination centre on navigation, 1 Aug 2026 (as cited by the Sana'a Center)", publisher: "Saba (Sanaa), official statement", date: 2026-08-01, tier: 1}
+  - to: IRQ
+    layer: action
+    type: incident
+    summary: "Iran-aligned Iraqi militias attacked Saudi Arabia, shutting the East-West oil pipeline on 10 September 2026 (an Iraqi militant source called it a 'gesture of support' for the Houthis; Trump said Iran was probably responsible); the Houthis have a growing presence in Iraq and train allied militants. The ties are with the militias, not the Iraqi state, which is under US pressure to disarm them."
+    since: 2026-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.thenationalnews.com/news/mena/2026/09/14/shadow-man-irgc-flight-and-a-secret-meeting-irans-hand-in-houthi-offensive-revealed/", title: "Shadow man, IRGC flight and a secret meeting: Iran's hand in Houthi offensive revealed", publisher: "The National", date: 2026-09-14, tier: 3}
+      - {url: "https://www.thenationalnews.com/news/mena/2026/08/10/houthis-seek-hezbollah-like-role-with-plan-to-escalate-yemen-conflict-in-support-of-iran/", title: "Houthis seek Hezbollah-like role with plan to escalate Yemen conflict in support of Iran", publisher: "The National", date: 2026-08-10, tier: 3}
+      - {url: "https://www.longwarjournal.org/archives/2026/09/houthis-take-yemens-red-sea-coast-and-key-bab-al-mandeb-islands.php", title: "Houthis take Yemen's Red Sea coast and key Bab al Mandeb islands", publisher: "FDD's Long War Journal", date: 2026-09-14, tier: 3}
+  - to: SOM
+    layer: action
+    type: agreement
+    summary: "Expansion into the Horn of Africa - Sana'a Center analysts report Houthi ties with al-Shabaab and other armed groups (a Horn Review piece of 8 October 2026 describes a growing relationship and an emerging security architecture in the Gulf of Aden) and Thomas Juneau lists cooperation with al-Shabaab among the Houthi expansions; Mayyun island is about 20 km from the African shore. Ties are with the armed group, not with the Somali government."
+    since: 2026
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "Only headline-level and analyst sources; no operational detail. Eritrea and Djibouti: no source read, gap."
+    sources:
+      - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/27637", title: "Why the US Failed to Defeat Iran and What it Means for the Axis of Resistance", publisher: "Sana'a Center for Strategic Studies", date: 2026-06-20, tier: 2}
+      - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/28317", title: "The Houthis Seize Yemen's West Coast: Reactions from Experts", publisher: "Sana'a Center for Strategic Studies", date: 2026-09-15, tier: 2}
+      - {url: "https://hornreview.org/2026/08/31/the-geopolitics-of-legitimacy-and-saudis-recalibration-in-sudan-and-the-red-sea-area/", title: "The Horn Review, Houthi-al-Shabaab headline of 8 October 2026 (page teaser)", publisher: "The Horn Review", date: 2026-10-08, tier: 4}
+  - to: ARE
+    layer: action
+    type: incident
+    summary: "The UAE ended its counterterrorism mission in Yemen on 30 December 2025 and its direct military involvement; Abu Dhabi condemned the Houthi naval blockade of Saudi Arabia (July 2026) and calls for collective Gulf defence after the Riyadh airport attack, but is not in the Saudi-led naval coalition."
+    since: 2025-12-30
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/28342", title: "The Perennial Problem of the Houthis", publisher: "Sana'a Center for Strategic Studies", date: 2026-09-16, tier: 2}
+      - {url: "https://www.khaleejtimes.com/uae/uae-condemns-houthi-naval-blockade-threats-saudi-arabia", title: "UAE strongly condemns Houthi naval blockade threats against Saudi Arabia", publisher: "Khaleej Times", date: 2026-07-20, tier: 3}
+      - {url: "https://www.thenationalnews.com/news/mena/2026/10/12/fighting-intensifies-in-yemen-as-houthis-fire-on-saudi-arabia/", title: "Fighting intensifies in Yemen as Houthis fire on Saudi Arabia", publisher: "The National", date: 2026-10-12, tier: 3}
