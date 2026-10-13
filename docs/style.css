@@ -58,7 +58,7 @@ a { color: var(--accent); }
 .top h1 a:hover span { text-decoration: underline; text-underline-offset: 6px; }
 .top h1 span { color: var(--hot); text-shadow: 0 0 8px var(--hot); }
 .top .tag { margin: 2px 0 0; color: var(--accent); font-family: var(--font-ui); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
-.topnav { display: flex; gap: 22px; align-self: flex-end; counter-reset: nav; flex-wrap: wrap; }
+.topnav { display: flex; gap: 22px; align-self: center; counter-reset: nav; flex-wrap: wrap; margin-left: 10px; }
 .topnav a { display: flex; flex-direction: column; align-items: flex-start; font-family: var(--font-ui); font-size: 12.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); text-decoration: none; counter-increment: nav; line-height: 1.25; padding-bottom: 3px; border-bottom: 1px solid transparent; white-space: nowrap; }
 .topnav a::before { content: "0" counter(nav); color: var(--ink-3); font-size: 11px; letter-spacing: .08em; }
 .topnav a.is-on { color: var(--ink); text-shadow: 0 0 6px var(--accent); border-bottom-color: var(--ink); }
