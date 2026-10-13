@@ -1,5 +1,19 @@
 # Journal
 
+## 2026-10-13 · Middle East burst, then a stop to put things in order
+
+Morning: Davide asked to use the 5-hour window to the full before its reset, so up to twenty
+agents ran at once (the system's cap) on the Middle East, South Asia and Russia (the first
+Fable card). Two interruptions killed twelve freshly launched agents; some of their
+half-written files were picked up by the relaunched agents (EGY, SAU, ARE, IRN), which saved
+tokens. The shared web-search budget ran out with twenty agents in parallel: several cards
+closed on fetches and Wikipedia citations rather than searches, and say so in their gaps.
+Lesson: twenty in parallel is fast but thins the sourcing; six is the working number.
+Then Davide: finish the running ones and stop, "mettiamo ordine" before more cards. The
+2026 events the agents found (the US-Israeli war on Iran from 28 Feb 2026, Hormuz closed,
+Iranian strikes on the Gulf states, the Makkah pact, the Houthi blockade of Saudi Arabia)
+make Iran-Israel and Iran-USA the first real "adversary" pairs in the atlas.
+
 ## 2026-10-13 · Europe complete: 50 cards, 9.78M tokens, run paused
 
 Western and southern Europe closed overnight: ITA 292k, ESP 73k (resumed from disk), NLD
