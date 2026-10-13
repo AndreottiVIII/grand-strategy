@@ -1,14 +1,192 @@
 id: PAK
 name: Pakistan
+short: Pakistan
 type: state
 iso2: pk
 wikipedia: https://en.wikipedia.org/wiki/Pakistan
-coords:
-- 73.04
-- 33.7
+coords: [73.04, 33.7]
 seat: Islamabad
-regions:
-- world
-card: stub
-tier: minor
+regions: [south-central-asia]
+card: full
+tier: protagonist
+last_verified: 2026-10-12
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Deter India and keep Kashmir and the Indus waters alive as live claims: preserve a credible nuclear and conventional balance against a much larger neighbour, hold the line that any diversion of the Indus system is 'an act of war' (Sharif at the UN, September 2026) and restore the Indus Waters Treaty India put 'in abeyance' on 23 Apr 2025."
+      confidence: B
+      sources:
+        - {url: "https://www.jurist.org/news/2026/09/pakistan-pm-warns-diversion-of-indus-water-constitutes-an-act-of-war/", title: "Pakistan PM warns diversion of Indus water constitutes an 'act of war'", publisher: "JURIST", date: 2026-09, tier: 3}
+        - {url: "https://www.outlookindia.com/international/shehbaz-sharif-at-unga-act-of-war-warning-over-indus-waters-kashmir-jugular-vein", title: "'Kashmir is Pakistan's jugular vein': Shehbaz Sharif warns Indus water diversion 'act of war'", publisher: "Outlook India", date: 2026-09-26, tier: 3}
+        - {url: "https://www.everycrsreport.com/reports/IF13000.html", title: "India-Pakistan Conflict in Spring 2025 (CRS Insight)", publisher: "Congressional Research Service", date: 2025-05-13, tier: 1}
+    - rank: 2
+      text: "Crush the internal insurgencies and force the Afghan Taliban to stop sheltering them: the TTP in Khyber Pakhtunkhwa and the Baloch separatists (BLA and others) killed more than 600 soldiers and police in 2025, and Islamabad's line is 'visible and verifiable action' by Kabul, enforced by air strikes."
+      confidence: A
+      sources:
+        - {url: "https://www.dawn.com/news/1965941/pakistan-worst-hit-by-taliban-takeover-of-kabul-international-crisis-group", title: "Pakistan worst-hit by Taliban takeover of Kabul: International Crisis Group", publisher: "Dawn (reporting a Crisis Group report)", date: 2026-01-09, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/4/2/pakistan-afghanistan-hold-talks-in-china-to-end-months-of-conflict", title: "Pakistan, Afghanistan hold talks in China to end months of conflict", publisher: "Al Jazeera", date: 2026-04-02, tier: 3}
+        - {url: "https://minutemirror.com.pk/kohat-mosque-attack-kunar-strikes-escalate-pakistan-afghan-tensions-633298/", title: "Kohat mosque attack, Kunar strikes escalate Pakistan-Afghan tensions", publisher: "Minute Mirror", date: 2026-09, tier: 3}
+    - rank: 3
+      text: "Keep the state financed: an IMF programme (staff-level agreement on the fourth review of the EFF on 7 Oct 2026), rolled-over Chinese, Saudi and Emirati deposits, record remittances (USD 41.6bn in FY2025-26) and EU GSP+ access, after the near-default of 2022-23 and the 2025 floods."
+      confidence: A
+      sources:
+        - {url: "https://propakistani.pk/2026/10/08/imf-reaches-staff-level-agreement-with-pakistan-on-4th-eff-review-unlocking-1-2-billion-loan/", title: "IMF reaches staff-level agreement with Pakistan on 4th EFF review, unlocking USD 1.2 billion", publisher: "ProPakistani", date: 2026-10-08, tier: 3}
+        - {url: "https://www.app.com.pk/?p=1242474", title: "Workers' remittances soar to US$ 41.6 billion during FY26, depicting 8.6% growth", publisher: "Associated Press of Pakistan (State Bank of Pakistan data)", date: 2026-07, tier: 1}
+        - {url: "https://propakistani.pk/2026/09/07/eu-warns-pakistan-gsp-benefits-cannot-be-taken-for-granted/", title: "EU warns Pakistan GSP+ benefits cannot be taken for granted", publisher: "ProPakistani", date: 2026-09-07, tier: 3}
+    - rank: 4
+      text: "Hedge by stacking patrons instead of choosing one: China (arms, CPEC 2.0, diplomatic cover), Saudi Arabia and Turkey (the Strategic Mutual Defence Agreement of 17 Sep 2025 and the Makkah pact of 7 Aug 2026), and a warming United States (Munir-Trump lunch of June 2025, minerals and crypto offers, the Board of Peace seat, the US-Iran mediation), so that no single patron can dictate terms."
+      confidence: B
+      sources:
+        - {url: "https://www.dawn.com/news/2023386", title: "'Big, bold and important first step': Trump welcomes defence pact between Pakistan, Saudi Arabia and Turkiye", publisher: "Dawn (AFP)", date: 2026-08-17, tier: 3}
+        - {url: "https://www.scmp.com/week-asia/politics/article/3363383/how-saudi-arabia-turkey-pakistan-defence-pact-acts-insurance-over-us-disengagement", title: "How the Saudi Arabia-Turkey-Pakistan defence pact acts as insurance over US disengagement", publisher: "South China Morning Post", date: 2026-08, tier: 3}
+        - {url: "https://www.dawn.com/news/1918382/coas-munir-stresses-potential-for-broader-multidimensional-ties-with-us-built-on-mutual-respect", title: "COAS Munir stresses potential for 'broader, multidimensional' ties with US built on mutual respect", publisher: "Dawn", date: 2025-06-20, tier: 3}
+    - rank: 5
+      text: "Entrench the army's guardianship of the state inside the constitution: the 26th and 27th amendments (Nov 2025) created a Chief of Defence Forces post held by the army chief, gave Field Marshal Asim Munir a five-year term, command of the nuclear Strategic Plans Division and lifelong immunity, while Imran Khan stays in prison."
+      confidence: B
+      sources:
+        - {url: "https://www.chathamhouse.org/2025/12/pakistans-27th-constitutional-amendment-moves-it-one-step-closer-authoritarian-rule", title: "Pakistan's 27th constitutional amendment moves it one step closer to authoritarian rule", publisher: "Chatham House", date: 2025-12, tier: 2}
+        - {url: "https://tribune.com.pk/story/2580638/field-marshal-asim-munir-formally-appointed-first-cdf", title: "Field Marshal Asim Munir formally appointed first CDF", publisher: "The Express Tribune", date: 2025-12, tier: 3}
+        - {url: "https://www.aljazeera.com/amp/news/2026/8/20/pakistans-ex-pm-imran-khan-transferred-from-jail-to-hospital", title: "Pakistan's ex-PM Imran Khan transferred from jail to hospital", publisher: "Al Jazeera", date: 2026-08-20, tier: 3}
+    - rank: 6
+      text: "Convert geography into connectivity and rent: Gwadar and CPEC 2.0, the Uzbekistan-Afghanistan-Pakistan railway, Gulf and Central Asian trade routes, and a reset with Dhaka after Hasina, to break the encirclement of an India-friendly Kabul and a hostile Delhi."
+      confidence: C
+      sources:
+        - {url: "https://worldview.ranenetwork.com/content/situational-report/2026-05-26/china-pakistan-governments-seek-to-upgrade-cpec-gwadar-port", title: "China, Pakistan governments seek to upgrade CPEC, Gwadar port", publisher: "Rane Worldview", date: 2026-05-26, tier: 3}
+        - {url: "https://aa.com.tr/en/asia-pacific/pakistan-afghanistan-uzbekistan-sign-railway-framework-pact/3634073", title: "Pakistan, Afghanistan, Uzbekistan sign railway framework pact", publisher: "Anadolu Agency", date: 2025-07-17, tier: 3}
+        - {url: "https://www.thenews.pk/print/1396048-dhaka-karachi-direct-flights-resume-after-14-year-hiatus", title: "Dhaka-Karachi direct flights resume after 14-year hiatus", publisher: "The News International", date: 2026-01-29, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "Mediation as currency: Munir, Sharif and Dar brokered the April 2026 US-Iran ceasefire, hosted the Islamabad Talks (11-12 April, Vice President Vance) and the Islamabad Memorandum of 17 June 2026, and Pakistan joined Trump's Board of Peace in January 2026. A UN Security Council seat (2025-26) and the defence pacts with Riyadh and Ankara widen the audience."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/8/24/pakistans-army-chief-munir-returns-to-iran-can-he-break-us-war-deadlock", title: "Pakistan's army chief back in Iran: can he break the deadlock?", publisher: "Al Jazeera", date: 2026-08-24, tier: 3}
+        - {url: "https://www.al-monitor.com/originals/2026/01/pakistan-join-trumps-board-peace-gaza-says-foreign-office", title: "Pakistan to join Trump's 'Board of Peace' on Gaza, says foreign office", publisher: "Al-Monitor", date: 2026-01, tier: 3}
+        - {url: "https://www.gov.uk/government/news/pm-call-with-prime-minister-sharif-of-pakistan-10-april-2026", title: "PM call with Prime Minister Sharif of Pakistan: 10 April 2026", publisher: "UK Government", date: 2026-04-10, tier: 1}
+    - domain: informational
+      text: "A victory narrative for the May 2025 war ('Marka-i-Haq'): the claim, never independently confirmed, that J-10C fighters shot down five to seven Indian aircraft including Rafales, repeated by the defence minister and ISPR, and a standing frame of India as the sponsor of the TTP and the BLA ('Indian proxies')."
+      confidence: B
+      sources:
+        - {url: "https://www.aol.com/pakistan-shot-down-indias-cutting-100610775.html", title: "How Pakistan shot down India's cutting-edge fighter using Chinese gear", publisher: "Reuters (via AOL)", date: 2025-08-02, tier: 3}
+        - {url: "https://www.outlookindia.com/amp/story/national/indo-pak-tensions-mea-firmly-rejects-pak-accusation-of-indias-role-in-balochistan-bus-blast", title: "MEA firmly rejects Pak accusation of India's role in Balochistan bus blast", publisher: "Outlook India", date: 2026-05, tier: 3}
+    - domain: military
+      text: "Nuclear deterrent under the new Chief of Defence Forces (who commands the Strategic Plans Division), a conventional rocket arm (Army Rocket Force Command announced 13 Aug 2025; Fatah-IV 750 km tests on 30 Sep 2025 and 14 May 2026), Chinese platforms (J-10C with PL-15) and troops lent to partners: about 8,000 troops, a JF-17 squadron and an HQ-9 battery in Saudi Arabia."
+      confidence: B
+      sources:
+        - {url: "https://www.janes.com/osint-insights/defence-news/defence/update-pakistan-establishes-rocket-force-unveils-new-missile", title: "Pakistan establishes Rocket Force, unveils new missile", publisher: "Janes", date: 2025-08, tier: 2}
+        - {url: "https://www.theweek.in/news/defence/2026/05/14/pakistans-strike-power-continues-to-grow-with-another-precision-missile-army-rocket-force-command-tests-fatah-iv.amp.html", title: "Pakistan's strike power continues to grow: Army Rocket Force Command tests Fatah-IV", publisher: "The Week", date: 2026-05-14, tier: 3}
+        - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/05/18/exclusive-pakistan-deploys-jet-squadron-thousands-of-troops-to-saudi-arabia-during-iran-war", title: "Exclusive-Pakistan deploys jet squadron, thousands of troops to Saudi Arabia during Iran war", publisher: "Reuters (via Internazionale)", date: 2026-05-18, tier: 3}
+    - domain: military
+      text: "Coercive force against Afghanistan: air strikes in Nangarhar, Paktika and Khost (21 Feb 2026), then strikes on Kabul and Kandahar and the declaration of 'open war' on 27 Feb 2026 (Operation Ghazab lil-Haq), repeated after the Kohat attack of 18 Sep 2026; accompanied by a deportation drive that sent back over 2.4 million Afghans by June 2026."
+      confidence: B
+      sources:
+        - {url: "https://www.france24.com/en/asia-pacific/20260227-pakistan-strikes-kabul-declares-open-war-afghanistan-after-border-clashes", title: "UN chief calls for immediate ceasefire after Pakistan declares 'open war' on Afghanistan", publisher: "France 24", date: 2026-02-27, tier: 3}
+        - {url: "https://kabulnow.com/2026/06/pakistan-says-2-4-million-afghans-have-returned-since-2023-as-un-warns-of-reintegration-challenges/", title: "Pakistan says 2.4 million Afghans have returned since 2023 as UN warns of reintegration challenges", publisher: "KabulNow", date: 2026-06, tier: 3}
+    - domain: economic
+      text: "Offering resources and routes in exchange for protection: critical minerals and crypto joint ventures pitched to Washington (copper, gold, lithium, antimony), the CPEC 2.0 agreement of May 2026 with Beijing, Russian Pakistan Steel Mills protocols, JF-17 exports (Azerbaijan, up to USD 4.6bn announced) and a diaspora whose remittances (USD 41.6bn in FY26) cover the trade gap."
+      confidence: B
+      sources:
+        - {url: "https://www.mining.com/pakistan-dangles-rare-earths-to-woo-trump-avoid-tariffs/", title: "Pakistan dangles rare earths to woo Trump, avoid tariffs", publisher: "Mining.com", date: 2025, tier: 3}
+        - {url: "https://thedefensepost.com/2025/06/09/azerbaijan-jf17-pakistan/", title: "Azerbaijan Orders More JF-17 Fighters From Pakistan", publisher: "The Defense Post", date: 2025-06-09, tier: 3}
+        - {url: "https://www.arabnews.pk/node/2644469", title: "Pakistan vows 'highest level of security' for Chinese nationals as both nations mark 75 years of ties", publisher: "Arab News Pakistan", date: 2026-05, tier: 3}
+
+  constraints:
+    - text: "A fragile balance sheet: external debt near USD 130bn, with debt service absorbing about 40% of exports (World Bank), gross reserves of about USD 21.5bn, inflation of 10.3% in September 2026, and the 2025 floods (1,037 dead; Rs822bn of losses) on top. Every foreign policy choice is made under an IMF programme and with deposit rollovers that can lapse (the Saudi USD 3bn rollover was unconfirmed in July 2026)."
+      confidence: B
+      sources:
+        - {url: "https://profit.pakistantoday.com.pk/?p=220112", title: "Pakistan's external debt nears $130bn as 40% of exports go to debt servicing: World Bank", publisher: "Profit (Pakistan Today)", date: 2025-12, tier: 3}
+        - {url: "https://gulfnews.com/business/economy/imf-clears-121b-for-pakistan-after-fourth-loan-review-1.500702624", title: "IMF clears $1.21b for Pakistan after fourth loan review", publisher: "Gulf News", date: 2026-10, tier: 3}
+        - {url: "https://www.dawn.com/news/2007153/economic-survey-2025-26-2025-floods-hit-agriculture-hardest-with-rs430bn-losses", title: "Economic Survey 2025-26: 2025 floods hit agriculture hardest with Rs430bn losses", publisher: "Dawn", date: 2026-06, tier: 3}
+        - {url: "https://profit.pakistantoday.com.pk/2026/07/17/saudi-dollar3-billion-deposit-rollover-remains-unconfirmed-as-finance-minister-says-matter-is-all-good", title: "Saudi USD 3 billion deposit rollover remains unconfirmed as finance minister says matter is 'all good'", publisher: "Profit (Pakistan Today)", date: 2026-07-17, tier: 3}
+    - text: "A two-front security problem it cannot close: a larger, nuclear-armed India to the east that holds the Indus headworks (upstream of Punjab and Sindh), and a Taliban-ruled Afghanistan plus the TTP to the west, with Balochistan inside. Crisis Group warns another major attack could undermine the calm with both Kabul and Delhi."
+      confidence: B
+      sources:
+        - {url: "https://www.dawn.com/news/1965941/pakistan-worst-hit-by-taliban-takeover-of-kabul-international-crisis-group", title: "Pakistan worst-hit by Taliban takeover of Kabul: International Crisis Group", publisher: "Dawn (reporting a Crisis Group report)", date: 2026-01-09, tier: 3}
+        - {url: "https://southasianvoices.org/geo-m-pk-r-water-security-cbm-05-04-2026/", title: "Indus Autumn", publisher: "South Asian Voices (Stimson Center)", date: 2026-04, tier: 2}
+    - text: "Dependence on China for hardware and money: about 80% of arms imports in 2021-25 (SIPRI), the largest bilateral creditor (23% of public external debt), and Rs560bn (about USD 2bn) owed to Chinese power producers. Beijing's price is the safety of its nationals, whose repeated killing (about 20 dead since 2021) strains the relationship."
+      confidence: B
+      sources:
+        - {url: "https://deccanchronicle.com/world/neighbours/pakistan-tops-chinese-arms-imports-takes-61-report-1942526", title: "Pakistan tops Chinese arms imports, takes 61%: report", publisher: "Deccan Chronicle (SIPRI data)", date: 2026-03, tier: 3}
+        - {url: "https://propakistani.pk/2026/05/18/govt-unable-to-fully-unlock-rs-1-2-trillion-circular-debt-facility/amp/", title: "Govt unable to fully unlock Rs1.2 trillion circular debt facility", publisher: "ProPakistani", date: 2026-05-18, tier: 3}
+        - {url: "https://www.thecitizen.co.tz/tanzania/news/international/pakistan-s-security-challenges-strain-relations-with-beijing-4729322", title: "Pakistan's security challenges strain relations with Beijing", publisher: "The Citizen (AFP)", date: 2026, tier: 3}
+    - text: "Energy and shipping exposed to the Gulf: more than 22% of imports are energy and nearly 20% of imports pass through the Strait of Hormuz, so the US-Iran war it mediates raises its own fuel bill (fuel prices +20% on 6 March 2026) and threatens the Gulf remittances (Saudi Arabia USD 9.78bn, the UAE USD 8.81bn in FY26) that sustain it."
+      confidence: B
+      sources:
+        - {url: "https://pide.org.pk/research/the-middle-east-crisis-impact-on-pakistans-trade/", title: "The Middle East crisis: impact on Pakistan's trade", publisher: "Pakistan Institute of Development Economics", date: 2026, tier: 2}
+        - {url: "https://www.pakistantoday.com.pk/2026/03/20/strait-of-hormuz-disruption-could-hit-pakistans-economy-hard-study-warns", title: "Strait of Hormuz disruption could hit Pakistan's economy hard, study warns", publisher: "Pakistan Today", date: 2026-03-20, tier: 3}
+        - {url: "https://www.arabnews.com/node/2650204/pakistan", title: "Saudi Arabia remains Pakistan's top remittance source as FY26 inflows rise to record $41.6 billion", publisher: "Arab News", date: 2026-07, tier: 3}
+    - text: "A narrow domestic base for the hybrid order: Imran Khan and PTI are excluded but not defeated (Khan jailed since August 2023, sentenced again in December 2025, Supreme Court ordering hospital treatment in August 2026), and Chatham House reads the 27th amendment as formalising army rule. Legitimacy rests on external recognition, not on a settled civil-military bargain."
+      confidence: B
+      sources:
+        - {url: "https://www.chathamhouse.org/2025/12/pakistans-27th-constitutional-amendment-moves-it-one-step-closer-authoritarian-rule", title: "Pakistan's 27th constitutional amendment moves it one step closer to authoritarian rule", publisher: "Chatham House", date: 2025-12, tier: 2}
+        - {url: "https://asianews.network/?p=295192", title: "Pakistan apex court orders ex-PM Khan's transfer to private hospital, allows weekly family meetings amid health fears", publisher: "Asia News Network", date: 2026-08-18, tier: 3}
+    - text: "Patron obligations that cut across each other: the Saudi-Turkish pact obliges troops while Pakistan is also the US-Iran go-between and shares a long border with Iran; the Board of Peace seat and Trump's call to join the Abraham Accords (May 2026) collide with a public that rejects recognising Israel."
+      confidence: B
+      sources:
+        - {url: "https://www.arabnews.pk/node/2644957/pakistan", title: "Pakistan rules out joining Abraham Accords after Trump call for wider Arab-Israel deal", publisher: "Arab News Pakistan", date: 2026-05, tier: 3}
+        - {url: "https://www.csmonitor.com/World/Asia-South-Central/2026/0127/pakistan-board-of-peace-gaza", title: "For Pakistanis united on Gaza, joining Trump's Board of Peace feels like betrayal", publisher: "Christian Science Monitor", date: 2026-01-27, tier: 3}
+
+  paradoxes:
+    - text: "The army that guarantees the state hollows out the civilian state it needs. The 27th amendment secures Munir as Chief of Defence Forces (five years, command of the nuclear arm, lifelong immunity, removable only by a two-thirds vote) just when the IMF, the EU's GSP+ review (the EU takes about 28% of exports; the Commission's assessment of 16 Jul 2026 and the EU ambassador's September warning say access is not assured) and Western partners judge Pakistan on institutions and rule of law. The more power is concentrated in one man, the more the foreign money that pays for the army depends on his personal standing."
+      confidence: B
+      sources:
+        - {url: "https://www.chathamhouse.org/2025/12/pakistans-27th-constitutional-amendment-moves-it-one-step-closer-authoritarian-rule", title: "Pakistan's 27th constitutional amendment moves it one step closer to authoritarian rule", publisher: "Chatham House", date: 2025-12, tier: 2}
+        - {url: "https://propakistani.pk/2026/09/07/eu-warns-pakistan-gsp-benefits-cannot-be-taken-for-granted/", title: "EU warns Pakistan GSP+ benefits cannot be taken for granted", publisher: "ProPakistani", date: 2026-09-07, tier: 3}
+    - text: "A won air battle that lost the water. The May 2025 clash showcased Chinese fighters and gave Pakistan a victory narrative and a seat at Trump's table, but the Indian answer to Pahalgam that outlasted the ceasefire was not military: the Indus Waters Treaty has stayed in abeyance for 17 months, Delhi says it stays so until Pakistan 'credibly and irrevocably' abjures terrorism, and Pakistan has only threats ('act of war') to answer a lever it cannot match. Tactical success moved the dispute onto the terrain where India is stronger."
+      confidence: B
+      sources:
+        - {url: "https://www.aol.com/pakistan-shot-down-indias-cutting-100610775.html", title: "How Pakistan shot down India's cutting-edge fighter using Chinese gear", publisher: "Reuters (via AOL)", date: 2025-08-02, tier: 3}
+        - {url: "https://www.jurist.org/news/2026/09/pakistan-pm-warns-diversion-of-indus-water-constitutes-an-act-of-war/", title: "Pakistan PM warns diversion of Indus water constitutes an 'act of war'", publisher: "JURIST", date: 2026-09, tier: 3}
+        - {url: "https://southasianvoices.org/geo-m-pk-r-water-security-cbm-05-04-2026/", title: "Indus Autumn", publisher: "South Asian Voices (Stimson Center)", date: 2026-04, tier: 2}
+    - text: "Strategic depth turned into strategic exposure. Pakistan backed the Taliban to gain depth against India; the Taliban now shelter the TTP, deal with Delhi and face Pakistani bombers. Islamabad's answer (air strikes on Kabul, 'open war', the expulsion of 2.4 million Afghans) deepens the hostility of the government it needs to deny the TTP a base, and pushes Kabul toward India."
+      confidence: B
+      sources:
+        - {url: "https://www.dawn.com/news/1965941/pakistan-worst-hit-by-taliban-takeover-of-kabul-international-crisis-group", title: "Pakistan worst-hit by Taliban takeover of Kabul: International Crisis Group", publisher: "Dawn (reporting a Crisis Group report)", date: 2026-01-09, tier: 3}
+        - {url: "https://mei.edu/ar/publication/pakistan-afghanistan-tensions-drifting-into-a-dangerous-escalation-cycle/", title: "Pakistan-Afghanistan tensions: drifting into a dangerous escalation cycle", publisher: "Middle East Institute", date: 2026, tier: 2}
+        - {url: "https://kabulnow.com/2026/06/pakistan-says-2-4-million-afghans-have-returned-since-2023-as-un-warns-of-reintegration-challenges/", title: "Pakistan says 2.4 million Afghans have returned since 2023 as UN warns of reintegration challenges", publisher: "KabulNow", date: 2026-06, tier: 3}
+    - text: "Four patrons, four prices. Each patron buys a different Pakistan: Beijing wants its workers protected and its debts honoured, Riyadh and Ankara want troops and a nuclear shadow, Washington wants minerals, Gaza and an Iran deal, and the Gulf wants labour. The mediator's neutrality that Washington and Tehran prize is compromised by the defence pact with Riyadh (Al Jazeera lists balancing mediation with the Saudi commitment as a difficulty), and the pact in turn is a bet on a US that may disengage. Every patron strengthened is a margin of freedom spent with another."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/8/24/pakistans-army-chief-munir-returns-to-iran-can-he-break-us-war-deadlock", title: "Pakistan's army chief back in Iran: can he break the deadlock?", publisher: "Al Jazeera", date: 2026-08-24, tier: 3}
+        - {url: "https://www.scmp.com/week-asia/politics/article/3363383/how-saudi-arabia-turkey-pakistan-defence-pact-acts-insurance-over-us-disengagement", title: "How the Saudi Arabia-Turkey-Pakistan defence pact acts as insurance over US disengagement", publisher: "South China Morning Post", date: 2026-08, tier: 3}
+    - text: "CPEC creates the enemy it must defend against. Gwadar and the Chinese projects in Balochistan are the BLA's best argument, so the more China invests the more Chinese nationals are targeted (about 20 dead in 14 attacks since 2021), the more the army diverts to securing them, and the more Beijing's patience becomes the main risk to the 'iron brother'; at the same time Chinese power producers' unpaid dues (Rs560bn) feed the power-sector circular debt that the IMF programme is trying to cap."
+      confidence: B
+      sources:
+        - {url: "https://www.arabnews.pk/node/2644469", title: "Pakistan vows 'highest level of security' for Chinese nationals as both nations mark 75 years of ties", publisher: "Arab News Pakistan", date: 2026-05, tier: 3}
+        - {url: "https://propakistani.pk/2026/05/18/govt-unable-to-fully-unlock-rs-1-2-trillion-circular-debt-facility/amp/", title: "Govt unable to fully unlock Rs1.2 trillion circular debt facility", publisher: "ProPakistani", date: 2026-05-18, tier: 3}
+        - {url: "https://www.thecitizen.co.tz/tanzania/news/international/pakistan-s-security-challenges-strain-relations-with-beijing-4729322", title: "Pakistan's security challenges strain relations with Beijing", publisher: "The Citizen (AFP)", date: 2026, tier: 3}
+        - {url: "https://www.pukmedia.com/EN/Details/80358", title: "Pakistan says 92 militants killed following attacks in Balochistan", publisher: "PUKmedia", date: 2026-02, tier: 3}
+    - text: "Mediation earns favour but the war it mediates costs Pakistan more than almost anyone. Munir's shuttle between Washington and Tehran won the Trump warmth that cut the tariff to 19% and a place at the Board of Peace, yet the Hormuz closure hits an economy that imports energy through the strait and lives on Gulf remittances, and the talks stalled after the 60-day Islamabad Memorandum lapsed in mid-August 2026."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/8/24/pakistans-army-chief-munir-returns-to-iran-can-he-break-us-war-deadlock", title: "Pakistan's army chief back in Iran: can he break the deadlock?", publisher: "Al Jazeera", date: 2026-08-24, tier: 3}
+        - {url: "https://pide.org.pk/research/the-middle-east-crisis-impact-on-pakistans-trade/", title: "The Middle East crisis: impact on Pakistan's trade", publisher: "Pakistan Institute of Development Economics", date: 2026, tier: 2}
+
+  reading: |
+    Pakistan plays the oldest game of the weaker state beside a stronger neighbour
+    and plays it harder than anyone: it does not try to match India, it tries to
+    make India's every move expensive by multiplying the relationships that stand
+    behind it. In Luttwak's terms this is relational manoeuvre, not attrition. China
+    supplies the hardware, Saudi Arabia and Turkey the pacts and the money, the
+    United States the late-arriving cover, and the nuclear deterrent the floor under
+    all of it. Since May 2025 the manoeuvre has paid unusually well: a field marshal
+    sits at the head of the armed forces, Washington and Tehran both use his
+    channel, and a treaty with Riyadh turned a decades-old Saudi-Pakistani tie of manpower
+    for money into a defence guarantee. The paradoxes come from the same source. The army's
+    political control is its own great strategic liability: it gives the state one
+    decisive voice for a crisis, but it ties the access to Western money, the EU
+    market and the IMF to the standing of one man and one institution, and it keeps
+    the civilian economy it must lean on in permanent emergency. The second
+    paradox is geographic: the victory of May 2025 was real in the air, but India
+    answered with the river, and a weaker state has no good reply to a lever it
+    cannot touch. Third, the western front turned the old strategy upside down: the
+    Taliban it once nursed as depth are now its most dangerous neighbour, and each
+    blow it lands in Kabul makes the TTP's sanctuary safer. Pakistan's four patrons
+    are also four creditors of influence, and the Saudi-Turkish pact, signed while
+    it brokers peace for Iran, is the first sign that they can be played against
+    each other as easily as it plays them. The thing to watch is not the next
+    crisis with India but whether the three constraints (the budget, the
+    Afghan border, the water) tighten at the same time while one man holds every
+    lever.

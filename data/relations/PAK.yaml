@@ -1,0 +1,500 @@
+from: PAK
+relations:
+  # ---------- objective ----------
+  - to: IND
+    layer: objective
+    type: territorial_claim
+    summary: "Pakistan treats Jammu and Kashmir as unfinished business of partition ('Kashmir is Pakistan's jugular vein', Sharif at the UN General Assembly, Sept 2026) and wants the dispute settled under the UN resolutions; India rejects any third-party role and says talks and terror cannot go together."
+    since: 1947-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.outlookindia.com/international/shehbaz-sharif-at-unga-act-of-war-warning-over-indus-waters-kashmir-jugular-vein", title: "'Kashmir is Pakistan's jugular vein': Shehbaz Sharif warns Indus water diversion 'act of war'", publisher: "Outlook India", date: 2026-09-26, tier: 3}
+      - {url: "https://icpsnet.org/comments/the-stalled-path-to-india-pakistan-reconciliation", title: "The Deep Freeze: the stalled path to India-Pakistan reconciliation", publisher: "ICPS", date: 2026-05, tier: 3}
+  - to: IND
+    layer: objective
+    type: influence_goal
+    summary: "Pakistan wants India to restore the Indus Waters Treaty and warns that any diversion of its share is an act of war; it calls the abeyance an existential threat and says the treaty has no exit clause. India says it stays suspended until Pakistan credibly and irrevocably abjures cross-border terrorism."
+    since: 2025-04-23
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - &s_jurist {url: "https://www.jurist.org/news/2026/09/pakistan-pm-warns-diversion-of-indus-water-constitutes-an-act-of-war/", title: "Pakistan PM warns diversion of Indus water constitutes an 'act of war'", publisher: "JURIST", date: 2026-09, tier: 3}
+      - &s_aj_dialogue {url: "https://www.aljazeera.com/news/2026/5/23/are-india-and-pakistan-quietly-preparing-to-restart-dialogue", title: "Are India and Pakistan quietly preparing to restart dialogue?", publisher: "Al Jazeera", date: 2026-05-23, tier: 3}
+      - {url: "https://www.etvbharat.com/en/!bharat/india-says-water-treaty-suspended-until-pakistan-ends-cross-border-terrorism-enn25051506244", title: "India says water treaty suspended until Pakistan ends cross-border terrorism", publisher: "ETV Bharat", date: 2025-05-15, tier: 3}
+  - to: AFG
+    layer: objective
+    type: influence_goal
+    summary: "Pakistan demands 'visible and verifiable action' by the Taliban against the TTP and other militants using Afghan soil, and enforces the demand with air strikes; Kabul calls the TTP Pakistan's internal problem. Crisis Group lists the Pakistan-Taliban relationship among its ten conflicts to watch in 2026."
+    since: 2022
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - &s_dawn_icg {url: "https://www.dawn.com/news/1965941/pakistan-worst-hit-by-taliban-takeover-of-kabul-international-crisis-group", title: "Pakistan worst-hit by Taliban takeover of Kabul: International Crisis Group", publisher: "Dawn (reporting a Crisis Group report)", date: 2026-01-09, tier: 3}
+      - &s_aj_urumqi {url: "https://www.aljazeera.com/news/2026/4/2/pakistan-afghanistan-hold-talks-in-china-to-end-months-of-conflict", title: "Pakistan, Afghanistan hold talks in China to end months of conflict", publisher: "Al Jazeera", date: 2026-04-02, tier: 3}
+  - to: USA
+    layer: objective
+    type: influence_goal
+    summary: "Islamabad is converting the mediator role (US-Iran), the Board of Peace seat and offers of critical minerals and crypto joint ventures into US patronage and tariff relief, while keeping China as its arms supplier."
+    since: 2025-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - &s_dawn_munir_us {url: "https://www.dawn.com/news/1918382/coas-munir-stresses-potential-for-broader-multidimensional-ties-with-us-built-on-mutual-respect", title: "COAS Munir stresses potential for 'broader, multidimensional' ties with US built on mutual respect", publisher: "Dawn", date: 2025-06-20, tier: 3}
+      - {url: "https://www.mining.com/pakistan-dangles-rare-earths-to-woo-trump-avoid-tariffs/", title: "Pakistan dangles rare earths to woo Trump, avoid tariffs", publisher: "Mining.com", date: 2025, tier: 3}
+  # ---------- alignment ----------
+  - to: SAU
+    layer: alignment
+    type: security_guarantee
+    summary: "Strategic Mutual Defence Agreement signed in Riyadh on 17 Sep 2025 by Shehbaz Sharif and Mohammed bin Salman - aggression against either is aggression against both. The text is confidential; a Pakistani government source told Reuters it allows up to 80,000 troops. It does not explicitly address Pakistan's nuclear arsenal. Mirrors Saudi Arabia's own row."
+    since: 2025-09-17
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.pukmedia.com/EN/Details/79119", title: "Saudi Arabia and Pakistan Sign Mutual Defence Pact (Reuters reprint)", publisher: "PUKmedia (Reuters copy)", date: 2025-09-17, tier: 3}
+      - &s_reuters_troops {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/05/18/exclusive-pakistan-deploys-jet-squadron-thousands-of-troops-to-saudi-arabia-during-iran-war", title: "Exclusive-Pakistan deploys jet squadron, thousands of troops to Saudi Arabia during Iran war", publisher: "Reuters (via Internazionale)", date: 2026-05-18, tier: 3}
+      - &s_dawn_makkah {url: "https://www.dawn.com/news/2023386", title: "'Big, bold and important first step': Trump welcomes defence pact between Pakistan, Saudi Arabia and Turkiye", publisher: "Dawn (AFP)", date: 2026-08-17, tier: 3}
+  - to: TUR
+    layer: alignment
+    type: security_guarantee
+    summary: "Makkah Joint Defense Agreement signed on 7 Aug 2026 by Turkiye, Saudi Arabia and Pakistan - an armed attack on any one shall be regarded as an attack against them all; officials say it is a deterrent and not a military coalition, with joint exercises and defence-industry cooperation planned. Mirrors Turkey's own row."
+    since: 2026-08-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - *s_dawn_makkah
+      - {url: "https://www.al-monitor.com/originals/2026/08/turkey-lays-out-plans-defence-pact-pakistan-and-saudi-arabia", title: "Turkey lays out plans for defence pact with Pakistan and Saudi Arabia", publisher: "Al-Monitor", date: 2026-08, tier: 3}
+  - to: IND
+    layer: alignment
+    type: treaty
+    summary: "The Indus Waters Treaty of 1960 (World Bank-brokered, no exit clause) allocates the western rivers to Pakistan; India put it in abeyance on 23 Apr 2025, the first suspension in 65 years, and in July 2026 restated that it stays suspended. Pakistan calls the treaty valid, binding and fully operative, and cites the Court of Arbitration and UN experts; India rejects the Court's rulings."
+    since: 1960-09-19
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - *s_jurist
+      - {url: "https://www.deccanchronicle.com/amp/nation/indus-treaty-frozen-till-terror-ends-india-1968226", title: "Indus Treaty frozen till terror ends: India", publisher: "Deccan Chronicle", date: 2026-07, tier: 3}
+      - {url: "https://southasianvoices.org/geo-m-pk-r-water-security-cbm-05-04-2026/", title: "Indus Autumn", publisher: "South Asian Voices (Stimson Center)", date: 2026-04, tier: 2}
+  - to: ISR
+    layer: alignment
+    type: non_recognition
+    summary: "Pakistan has not recognised Israel since 1948. Foreign Minister Dar said in 2026 there is no change in the policy until a Palestinian state is accepted; in May 2026 Defence Minister Asif rejected Trump's call to join the Abraham Accords as clashing with Pakistan's fundamental ideologies."
+    since: 1948
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.arabnews.pk/node/2644957/pakistan", title: "Pakistan rules out joining Abraham Accords after Trump call for wider Arab-Israel deal", publisher: "Arab News Pakistan", date: 2026-05, tier: 3}
+      - {url: "https://en.dailypakistan.com.pk/30-May-2026/pakistan-clears-air-on-joining-abraham-accords-as-trumps-suggestion-sparks-buzz", title: "Pakistan clears air on joining Abraham Accords as Trump's suggestion sparks buzz", publisher: "Daily Pakistan", date: 2026-05-30, tier: 3}
+  # ---------- dependency ----------
+  - to: SAU
+    layer: dependency
+    type: remittances
+    summary: "Saudi Arabia was the first source of workers' remittances in FY2025-26 with USD 9.78bn, about 23.5% of the record USD 41.6bn total; the UAE sent 8.81bn, the UK 6.33bn and the United States 3.62bn. Saudi inflows reached USD 873m in August 2026 alone."
+    value: 9.78
+    unit: usd_bn_remittances_from_saudi_arabia_fy2025_26
+    since: 2025-07
+    until: 2026-06
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - &s_remit {url: "https://www.arabnews.com/node/2650204/pakistan", title: "Saudi Arabia remains Pakistan's top remittance source as FY26 inflows rise to record $41.6 billion", publisher: "Arab News", date: 2026-07, tier: 3}
+      - {url: "https://www.app.com.pk/?p=1242474", title: "Workers' remittances soar to US$ 41.6 billion during FY26, depicting 8.6% growth", publisher: "Associated Press of Pakistan (State Bank of Pakistan data)", date: 2026-07, tier: 1}
+  - to: SAU
+    layer: dependency
+    type: debt
+    summary: "Saudi Arabia holds a USD 3bn deposit with the State Bank of Pakistan, extended in April 2026 for three months; in July 2026 the finance ministry said only 'we are all good' and neither ministry nor central bank had confirmed the rollover. Saudi Arabia, China and the UAE had committed to keep deposits of USD 12.5bn under the IMF programme."
+    value: 3
+    unit: usd_bn_saudi_deposit_at_sbp
+    since: 2024
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://profit.pakistantoday.com.pk/2026/07/17/saudi-dollar3-billion-deposit-rollover-remains-unconfirmed-as-finance-minister-says-matter-is-all-good", title: "Saudi USD 3 billion deposit rollover remains unconfirmed as finance minister says matter is 'all good'", publisher: "Profit (Pakistan Today)", date: 2026-07-17, tier: 3}
+  - to: SAU
+    layer: dependency
+    type: military_presence
+    summary: "About 8,000 Pakistani troops, a JF-17 squadron and a Chinese-made HQ-9 battery were reported at King Abdulaziz Air Base by May 2026 under the defence agreement, paid in full by Riyadh. Mirrors Saudi Arabia's own row."
+    value: 8000
+    unit: pakistani_troops_in_saudi_arabia_may_2026
+    since: 2026-05
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - *s_reuters_troops
+  - to: ARE
+    layer: dependency
+    type: remittances
+    summary: "The UAE is the second source of workers' remittances after Saudi Arabia (USD 8.81bn in FY2025-26); about 1.5 million Pakistanis live there."
+    value: 8.81
+    unit: usd_bn_remittances_from_uae_fy2025_26
+    since: 2025-07
+    until: 2026-06
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - *s_remit
+  - to: ARE
+    layer: dependency
+    type: debt
+    summary: "The UAE rolled over a USD 2bn deposit for two months in February 2026 at 6.5%, running to 17 Apr 2026, ahead of the IMF review; reporting says the UAE later withdrew part of its support and Saudi Arabia filled the gap."
+    value: 2
+    unit: usd_bn_uae_deposit_at_sbp
+    since: 2026-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://propakistani.pk/2026/02/13/uae-rolls-over-2-billion-loan-to-pakistan-for-another-2-months/amp/", title: "UAE rolls over $2 billion loan to Pakistan for another 2 months", publisher: "ProPakistani", date: 2026-02-13, tier: 3}
+  - to: GBR
+    layer: dependency
+    type: remittances
+    summary: "The United Kingdom is the third source of remittances (USD 6.33bn in FY2025-26, behind Saudi Arabia and the UAE and ahead of the United States)."
+    value: 6.33
+    unit: usd_bn_remittances_from_uk_fy2025_26
+    since: 2025-07
+    until: 2026-06
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - *s_remit
+  - to: USA
+    layer: dependency
+    type: trade_share
+    summary: "The United States is Pakistan's largest single export market, nearly USD 6bn of USD 32bn of exports in the last full year; a 19% tariff (29% was threatened) was announced on 31 Jul 2025 and a reciprocal-trade round ran in Washington on 9-10 Jul 2026 with no confirmed signed text."
+    value: 6
+    unit: usd_bn_exports_to_us_last_full_year_of_32_bn_total
+    since: 2025-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.mining.com/pakistan-dangles-rare-earths-to-woo-trump-avoid-tariffs/", title: "Pakistan dangles rare earths to woo Trump, avoid tariffs", publisher: "Mining.com", date: 2025, tier: 3}
+      - {url: "https://tribune.com.pk/story/2617790/pakistan-us-trade-talks-advance-fo", title: "Pakistan, US trade talks advance: FO", publisher: "The Express Tribune", date: 2026-07-12, tier: 3}
+  - to: org-eu
+    layer: dependency
+    type: trade_share
+    summary: "The EU takes about 28% of Pakistan's exports, nearly 90% of them under GSP+ preferences (EUR 732m of tariff exemptions in 2024); textiles are 70-76% of exports to the EU. APTMA says losing GSP+ would cost more than Rs1 trillion a year. Industry shares for EU preference use range from 78% to over 85%."
+    value: 0.28
+    unit: share_of_pakistan_exports_going_to_eu
+    since: 2014
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://propakistani.pk/2026/09/07/eu-warns-pakistan-gsp-benefits-cannot-be-taken-for-granted/", title: "EU warns Pakistan GSP+ benefits cannot be taken for granted", publisher: "ProPakistani", date: 2026-09-07, tier: 3}
+      - {url: "https://propakistani.pk/2026/09/19/eu-sets-conditions-for-pakistans-gsp-renewal/", title: "EU sets conditions for Pakistan's GSP renewal", publisher: "ProPakistani", date: 2026-09-19, tier: 3}
+  - to: CHN
+    layer: dependency
+    type: arms_supply
+    summary: "China supplied about 80% of Pakistan's arms imports in 2021-25 (73% in 2016-20; 81% in 2020-24 in the previous SIPRI cut) and Pakistan was China's largest arms client; Pakistan's imports rose 66% between the two periods. The J-10C with PL-15 was used against India in May 2025."
+    value: 0.80
+    unit: share_of_arms_imports_2021_25
+    since: 2015
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://deccanchronicle.com/world/neighbours/pakistan-tops-chinese-arms-imports-takes-61-report-1942526", title: "Pakistan tops Chinese arms imports, takes 61%: report", publisher: "Deccan Chronicle (SIPRI data)", date: 2026-03, tier: 3}
+      - {url: "https://scmp.com/news/china/military/article/3302515/china-supplied-81-pakistans-arms-imports-past-5-years-sipri-says", title: "China supplied 81% of Pakistan's arms imports in past 5 years, SIPRI says", publisher: "South China Morning Post", date: 2025-03, tier: 3}
+      - {url: "https://www.aol.com/pakistan-shot-down-indias-cutting-100610775.html", title: "How Pakistan shot down India's cutting-edge fighter using Chinese gear", publisher: "Reuters (via AOL)", date: 2025-08-02, tier: 3}
+  - to: CHN
+    layer: dependency
+    type: debt
+    summary: "China is the largest bilateral creditor with 23% of Pakistan's public external debt (about USD 29-30bn) in the World Bank's 2025 debt report; Beijing agreed in 2025 to reschedule USD 1.8bn for two years, about half of what was requested. Chinese power producers are owed about Rs560bn (about USD 2bn) and resist the revised settlement terms (May 2026)."
+    value: 0.23
+    unit: share_of_public_external_debt_owed_to_china
+    since: 2015
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://profit.pakistantoday.com.pk/?p=220112", title: "Pakistan's external debt nears $130bn as 40% of exports go to debt servicing: World Bank", publisher: "Profit (Pakistan Today)", date: 2025-12, tier: 3}
+      - {url: "https://propakistani.pk/2026/05/18/govt-unable-to-fully-unlock-rs-1-2-trillion-circular-debt-facility/amp/", title: "Govt unable to fully unlock Rs1.2 trillion circular debt facility", publisher: "ProPakistani", date: 2026-05-18, tier: 3}
+  - to: org-imf
+    layer: dependency
+    type: debt
+    summary: "Staff-level agreement on the fourth review of the Extended Fund Facility on 7 Oct 2026 unlocks about USD 1.21bn (Board approval pending); the third review was completed on 8 May 2026 with about USD 1.3bn received. Gross reserves are about USD 21.5bn, inflation 10.3% in September, growth 3.6% in FY26."
+    value: 1.21
+    unit: usd_bn_fourth_review_tranche_staff_level_agreement_2026_10
+    since: 2024
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://propakistani.pk/2026/10/08/imf-reaches-staff-level-agreement-with-pakistan-on-4th-eff-review-unlocking-1-2-billion-loan/", title: "IMF reaches staff-level agreement with Pakistan on 4th EFF review, unlocking USD 1.2 billion", publisher: "ProPakistani", date: 2026-10-08, tier: 3}
+      - {url: "https://gulfnews.com/business/economy/imf-clears-121b-for-pakistan-after-fourth-loan-review-1.500702624", title: "IMF clears $1.21b for Pakistan after fourth loan review", publisher: "Gulf News", date: 2026-10, tier: 3}
+  - to: AZE
+    layer: dependency
+    type: arms_supply
+    summary: "Pakistan announced in June 2025 a sale of up to 40 JF-17C Thunder fighters to Azerbaijan worth up to USD 4.6bn (the package structure is not confirmed; an earlier 2024 order covered 16 aircraft); JF-17s flew over Baku in the 8 Nov 2025 parade. Mirrors Azerbaijan's own row."
+    value: 4.6
+    unit: usd_billion_announced_jf17_package_upper_bound
+    since: 2024-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://thedefensepost.com/2025/06/09/azerbaijan-jf17-pakistan/", title: "Azerbaijan Orders More JF-17 Fighters From Pakistan", publisher: "The Defense Post", date: 2025-06-09, tier: 3}
+      - {url: "https://propakistani.pk/2025/11/12/another-country-inducts-pakistans-jf-17-thunder-fighter-jets/amp/", title: "Another country inducts Pakistan's JF-17 Thunder fighter jets", publisher: "ProPakistani", date: 2025-11-12, tier: 4}
+  - to: IRN
+    layer: dependency
+    type: energy_import
+    summary: "The Iran-Pakistan gas pipeline is built on the Iranian side only; Pakistan has not built its section, a Paris arbitration tribunal is hearing the dispute and a high-powered committee was formed in August 2026 to weigh penalties against energy needs. No gas flows; talk of revival depends on US sanctions relief."
+    value: 0
+    unit: bcm_per_year_flowing_pipeline_unbuilt_on_pakistan_side
+    since: 2009
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://asianews.network/pakistani-government-forms-high-powered-body-to-break-deadlock-over-iran-pakistan-gas-pipeline-amid-penalty-threats/", title: "Pakistani government forms body to break deadlock over Iran-Pakistan gas pipeline amid penalty threats", publisher: "Asia News Network", date: 2026-08, tier: 3}
+      - {url: "https://arynews.tv/pakistan-iran-gas-pipeline-revival-on-the-cards", title: "Pakistan-Iran gas pipeline revival on the cards?", publisher: "ARY News", date: 2026-06, tier: 3}
+  - to: IRN
+    layer: dependency
+    type: energy_import
+    summary: "Hormuz exposure: more than 22% of Pakistan's imports are energy and nearly 20% of its imports are routed through the Strait, which Iran keeps shut; fuel prices were raised 20% on 6 Mar 2026 and PIDE models inflation of 8.8% to above 12% under mild to severe shocks."
+    value: 0.20
+    unit: share_of_pakistan_imports_routed_through_hormuz
+    since: 2026-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://pide.org.pk/research/the-middle-east-crisis-impact-on-pakistans-trade/", title: "The Middle East crisis: impact on Pakistan's trade", publisher: "Pakistan Institute of Development Economics", date: 2026, tier: 2}
+      - {url: "https://www.pakistantoday.com.pk/2026/03/20/strait-of-hormuz-disruption-could-hit-pakistans-economy-hard-study-warns", title: "Strait of Hormuz disruption could hit Pakistan's economy hard, study warns", publisher: "Pakistan Today", date: 2026-03-20, tier: 3}
+  # ---------- action ----------
+  - to: IND
+    layer: action
+    type: incident
+    summary: "Between 7 and 10 May 2025, after India struck nine sites in Pakistan and Pakistan-administered Kashmir in response to the Pahalgam attack of 22 Apr (26 killed), the two fought air, drone and artillery battles; Pakistan claims J-10C fighters shot down five to seven Indian aircraft (India has not acknowledged losses; Reuters cited US officials on at least one Rafale). A ceasefire took effect on 10 May, announced by Trump and agreed between the military hotlines."
+    since: 2025-05-07
+    until: 2025-05-10
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.everycrsreport.com/reports/IF13000.html", title: "India-Pakistan Conflict in Spring 2025 (CRS Insight)", publisher: "Congressional Research Service", date: 2025-05-13, tier: 1}
+      - {url: "https://www.aol.com/pakistan-shot-down-indias-cutting-100610775.html", title: "How Pakistan shot down India's cutting-edge fighter using Chinese gear", publisher: "Reuters (via AOL)", date: 2025-08-02, tier: 3}
+      - *s_dawn_munir_us
+  - to: IND
+    layer: action
+    type: sanction
+    summary: "After India's measures of 23 Apr 2025 Pakistan answered by closing its airspace to Indian aircraft, expelling Indian military liaisons, suspending trade and other bilateral accords and declaring that any diversion of its water would be an act of war."
+    since: 2025-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - *s_jurist
+      - {url: "https://www.everycrsreport.com/reports/IF13000.html", title: "India-Pakistan Conflict in Spring 2025 (CRS Insight)", publisher: "Congressional Research Service", date: 2025-05-13, tier: 1}
+  - to: IND
+    layer: action
+    type: exercise
+    summary: "The Army Rocket Force Command, announced on 13 Aug 2025, carried out training launches of the Fatah-IV (750 km, 30 Sep 2025 and 14 May 2026) and the Fatah-II (400 km, 28 Apr 2026), its first since the May 2025 war; the missiles are conventional, and defence minister Asif said in May 2026 Pakistan would respond more forcefully to any future Indian action."
+    since: 2025-08-13
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.janes.com/osint-insights/defence-news/defence/update-pakistan-establishes-rocket-force-unveils-new-missile", title: "Pakistan establishes Rocket Force, unveils new missile", publisher: "Janes", date: 2025-08, tier: 2}
+      - {url: "https://www.theweek.in/news/defence/2026/05/14/pakistans-strike-power-continues-to-grow-with-another-precision-missile-army-rocket-force-command-tests-fatah-iv.amp.html", title: "Pakistan's strike power continues to grow: Army Rocket Force Command tests Fatah-IV", publisher: "The Week", date: 2026-05-14, tier: 3}
+      - {url: "https://quwa.org/pakistan-missile-news/pakistan-test-fires-fatah-ii-missile-what-the-arfc-training-launch-means-04-29-2026/", title: "Pakistan test-fires Fatah-II: what the ARFC training launch means", publisher: "Quwa", date: 2026-04-29, tier: 3}
+  - to: AFG
+    layer: action
+    type: incident
+    summary: "After the TTP ambush of 8 Oct 2025 (11 soldiers killed) Pakistan struck Kabul for the first time and fought Afghan forces on the border; strikes resumed on 21 Feb 2026 and on 27 Feb Defence Minister Asif declared 'open war' (Operation Ghazab lil-Haq) with strikes on Kabul, Kandahar and the border provinces. Eid truces (19-24 Mar, 25-29 May) did not end it; fighting flared again after the Kohat attack of 18 Sep 2026. Casualty counts are contested (UNAMA: 358 Afghan civilians killed in the first weeks)."
+    since: 2025-10-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - *s_dawn_icg
+      - {url: "https://www.france24.com/en/asia-pacific/20260227-pakistan-strikes-kabul-declares-open-war-afghanistan-after-border-clashes", title: "UN chief calls for immediate ceasefire after Pakistan declares 'open war' on Afghanistan", publisher: "France 24", date: 2026-02-27, tier: 3}
+      - {url: "https://en.wikipedia.org/wiki/2026_Pakistani_airstrikes_in_Afghanistan", title: "2026 Pakistani airstrikes in Afghanistan (timeline of ceasefires and fighting)", publisher: "Wikipedia (index)", date: 2026-10-12, tier: 4}
+  - to: AFG
+    layer: action
+    type: agreement
+    summary: "A ceasefire after the October 2025 border war was agreed in Doha on 19 Oct 2025 (Qatari and Turkish mediation) and a verification mechanism followed at Istanbul talks of 25-30 Oct; Pakistan then demanded written Taliban commitments on the TTP, which Kabul refused. After the February 2026 war working-level talks were held in Urumqi, China, on 2 Apr 2026; no agreement was reported."
+    since: 2025-10-19
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.nhpr.org/2025-10-31/pakistan-and-afghanistan-agree-to-maintain-a-ceasefire-for-now-heres-what-to-know", title: "Pakistan and Afghanistan agree to maintain a ceasefire for now: here's what to know", publisher: "NPR", date: 2025-10-31, tier: 3}
+      - *s_aj_urumqi
+  - to: AFG
+    layer: action
+    type: expulsion
+    summary: "Pakistan's Illegal Foreigners Repatriation Plan has sent back more than 2.4 million Afghans since 2023 by the government's count (about 2.56 million by a UN-based count, about 260,000 of them formally deported); UNHCR counts 370,100 returns in 2026 up to 9 May and about 1 million in 2025, and a 10 Jul 2026 deadline started nationwide arrests of undocumented Afghans. The UN Committee against Torture ruled in May 2026 that the policy is refoulement; Pakistan denies it."
+    since: 2023-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://kabulnow.com/2026/06/pakistan-says-2-4-million-afghans-have-returned-since-2023-as-un-warns-of-reintegration-challenges/", title: "Pakistan says 2.4 million Afghans have returned since 2023 as UN warns of reintegration challenges", publisher: "KabulNow", date: 2026-06, tier: 3}
+      - {url: "https://data.unhcr.org/es/documents/details/122948", title: "Pakistan: Voluntary Repatriation of Afghan Refugees as of 31 May 2026", publisher: "UNHCR", date: 2026-05-31, tier: 1}
+  - to: UZB
+    layer: action
+    type: agreement
+    summary: "Pakistan, Afghanistan and Uzbekistan signed a framework agreement in Kabul on 17 Jul 2025 for a joint feasibility study of the Uzbekistan-Afghanistan-Pakistan railway (about 573 km, up to 20 million tonnes of freight a year), witnessed by Dar, Muttaqi and Saidov."
+    since: 2025-07-17
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://aa.com.tr/en/asia-pacific/pakistan-afghanistan-uzbekistan-sign-railway-framework-pact/3634073", title: "Pakistan, Afghanistan, Uzbekistan sign railway framework pact", publisher: "Anadolu Agency", date: 2025-07-17, tier: 3}
+      - {url: "https://asiatimes.com/2025/07/trans-afghan-peace-train-pact-puts-trade-over-turmoil/", title: "Trans-Afghan 'peace train' pact puts trade over turmoil", publisher: "Asia Times", date: 2025-07, tier: 3}
+  - to: QAT
+    layer: action
+    type: agreement
+    summary: "Qatar and Turkiye mediated the Pakistan-Taliban ceasefire of 19 Oct 2025 in Doha; in March 2026 Saudi Arabia, Qatar and Turkiye requested the Eid al-Fitr pause in the war."
+    since: 2025-10-19
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.nhpr.org/2025-10-31/pakistan-and-afghanistan-agree-to-maintain-a-ceasefire-for-now-heres-what-to-know", title: "Pakistan and Afghanistan agree to maintain a ceasefire for now: here's what to know", publisher: "NPR", date: 2025-10-31, tier: 3}
+      - *s_aj_urumqi
+  - to: IRN
+    layer: action
+    type: agreement
+    summary: "Pakistan brokered the 8 Apr 2026 US-Iran ceasefire, hosted the Islamabad Talks (11-12 April, with US Vice President Vance and Iranian negotiators, the first direct talks in more than four decades) and the Islamabad Memorandum of Understanding signed on 17 Jun 2026 by Pakistan, Iran and the United States, with a 60-day window that lapsed in mid-August without extension; Munir visited Tehran in April, May and August."
+    since: 2026-04-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2026/8/24/pakistans-army-chief-munir-returns-to-iran-can-he-break-us-war-deadlock", title: "Pakistan's army chief back in Iran: can he break the deadlock?", publisher: "Al Jazeera", date: 2026-08-24, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2026/6/15/how-pakistan-mediated-a-us-iran-agreement-after-more-than-100-days-of-war", title: "How Pakistan mediated a US-Iran agreement after more than 100 days of war", publisher: "Al Jazeera", date: 2026-06-15, tier: 3}
+  - to: IRN
+    layer: action
+    type: incident
+    summary: "On 16-18 Jan 2024 Iran struck Jaish al-Adl bases in Pakistani Balochistan and Pakistan struck targets inside Iran two days later, the first such exchange between the two states; both then de-escalated and resumed joint action against Baloch militants."
+    since: 2024-01-16
+    until: 2024-01-18
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Iran%E2%80%93Pakistan_border_skirmishes", title: "Iran-Pakistan border skirmishes", publisher: "Wikipedia (index)", date: 2026-10-12, tier: 4}
+      - {url: "https://english.madhyamam.com/opinion/editorial/worrying-iran-pakistan-conflict-1248527", title: "Worrying Iran-Pakistan conflict", publisher: "Madhyamam", date: 2024-01, tier: 4}
+  - to: USA
+    layer: action
+    type: visit
+    summary: "Field Marshal Munir lunched with Trump at the White House in June 2025, the first serving army chief to meet a sitting US president face to face during a five-day visit; in September 2025 Sharif and Munir were received in the Oval Office, and Vice President Vance led the US side at the Islamabad Talks with Iran on 11-12 Apr 2026."
+    since: 2025-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - *s_dawn_munir_us
+      - {url: "https://gulfnews.com/world/americas/trump-hosts-pakistan-pm-army-chief-amid-warming-us-pakistan-ties-1.500284137", title: "Trump hosts Pakistan PM, army chief amid warming US-Pakistan ties", publisher: "Gulf News", date: 2025-09, tier: 3}
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "Trade deal announced on 31 Jul 2025 setting a 19% tariff on Pakistani goods (29% was threatened), with energy and oil-reserve cooperation mentioned by Trump; Pakistan joined Trump's Board of Peace in January 2026 (Sharif signed the charter) and a new Agreement on Reciprocal Trade round was held in Washington on 9-10 Jul 2026 with no confirmed signed text."
+    since: 2025-07-31
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://tribune.com.pk/story/2617790/pakistan-us-trade-talks-advance-fo", title: "Pakistan, US trade talks advance: FO", publisher: "The Express Tribune", date: 2026-07-12, tier: 3}
+      - {url: "https://www.al-monitor.com/originals/2026/01/pakistan-join-trumps-board-peace-gaza-says-foreign-office", title: "Pakistan to join Trump's 'Board of Peace' on Gaza, says foreign office", publisher: "Al-Monitor", date: 2026-01, tier: 3}
+      - {url: "https://www.thenews.pk/print/1394645-pakistan-signs-trump-led-board-of-peace-charter", title: "Pakistan signs Trump-led Board of Peace charter", publisher: "The News International", date: 2026-01, tier: 3}
+  - to: CHN
+    layer: action
+    type: agreement
+    summary: "During Sharif's visit of 23-26 May 2026, marking 75 years of ties, the two governments issued a joint statement on high-quality development of CPEC 2.0 (Karakoram Highway upgrade, Gwadar port expansion, industry, agriculture, clean energy) and Pakistan pledged targeted measures for the safety of Chinese workers."
+    since: 2026-05-26
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://worldview.ranenetwork.com/content/situational-report/2026-05-26/china-pakistan-governments-seek-to-upgrade-cpec-gwadar-port", title: "China, Pakistan governments seek to upgrade CPEC, Gwadar port", publisher: "Rane Worldview", date: 2026-05-26, tier: 3}
+      - {url: "https://www.arabnews.pk/node/2644469", title: "Pakistan vows 'highest level of security' for Chinese nationals as both nations mark 75 years of ties", publisher: "Arab News Pakistan", date: 2026-05, tier: 3}
+  - to: CHN
+    layer: action
+    type: incident
+    summary: "At least 20 Chinese nationals have died and 34 been injured in 14 targeted attacks since 2021, mostly from Balochistan (including the March 2024 convoy bombing that killed five engineers and the October 2024 Karachi airport attack claimed by the BLA); Beijing presses Islamabad on security as CPEC 2.0 expands."
+    since: 2021
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.thecitizen.co.tz/tanzania/news/international/pakistan-s-security-challenges-strain-relations-with-beijing-4729322", title: "Pakistan's security challenges strain relations with Beijing", publisher: "The Citizen (AFP)", date: 2026, tier: 3}
+      - {url: "https://www.arabnews.pk/node/2644469", title: "Pakistan vows 'highest level of security' for Chinese nationals as both nations mark 75 years of ties", publisher: "Arab News Pakistan", date: 2026-05, tier: 3}
+  - to: RUS
+    layer: action
+    type: agreement
+    summary: "Pakistan and Russia signed protocols on reviving Pakistan Steel Mills on 10 Jul 2025 (Moscow) and 26 Nov 2025; Russia proposed a blast-furnace option at about USD 1.91bn or an electric-arc plant at about USD 1.05bn, construction targeted from 2027 once an EPC contract is signed, and in August 2026 the government dropped liquidation of the mill. Sharif met Putin at the SCO summit in Beijing in September 2025."
+    since: 2025-07-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://profit.pakistantoday.com.pk/?p=221197", title: "Pakistan, Russia sign second protocol to revive Pakistan Steel Mills", publisher: "Profit (Pakistan Today)", date: 2025-11-26, tier: 3}
+      - {url: "https://propakistani.pk/2026/01/23/pakistan-and-russia-set-timeline-to-rebuild-pakistan-steel-mills/amp/", title: "Pakistan and Russia set timeline to rebuild Pakistan Steel Mills", publisher: "ProPakistani", date: 2026-01-23, tier: 3}
+      - {url: "https://www.siasat.com/pakistan-respects-russias-relations-with-india-sharif-tells-putin-3266761/", title: "Pakistan respects Russia's relations with India, Sharif tells Putin", publisher: "Siasat Daily", date: 2025-09, tier: 3}
+  - to: BGD
+    layer: action
+    type: agreement
+    summary: "Direct Dhaka-Karachi flights resumed on 29 Jan 2026 after 14 years (Biman Bangladesh Airlines), Islamabad invited Prime Minister Tarique Rahman to visit after the February 2026 election, and the two prime ministers met in New York in September 2026; JF-17 sale talks held under the interim government have no confirmed contract."
+    since: 2026-01-29
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.thenews.pk/print/1396048-dhaka-karachi-direct-flights-resume-after-14-year-hiatus", title: "Dhaka-Karachi direct flights resume after 14-year hiatus", publisher: "The News International", date: 2026-01-29, tier: 3}
+      - {url: "https://bdnews24.com/bangladesh/h543edlgzp", title: "Bangladesh and Pakistan prime ministers meet in New York", publisher: "bdnews24.com", date: 2026-09-25, tier: 3}
+  - to: GBR
+    layer: action
+    type: visit
+    summary: "Starmer phoned Sharif on 10 Apr 2026 to thank Pakistan for facilitating the US-Iran ceasefire and the Islamabad Talks; the UK National Security Adviser Jonathan Powell met Sharif in Islamabad on 20 May 2026 on security, trade, investment and development."
+    since: 2026-04-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.gov.uk/government/news/pm-call-with-prime-minister-sharif-of-pakistan-10-april-2026", title: "PM call with Prime Minister Sharif of Pakistan: 10 April 2026", publisher: "UK Government", date: 2026-04-10, tier: 1}
+      - {url: "https://www.radio.gov.pk/20-05-2026/pm-reiterates-resolve-to-further-strengthening-pak-uk-ties", title: "PM reiterates resolve to further strengthening Pak-UK ties", publisher: "Radio Pakistan (state broadcaster, official statement)", date: 2026-05-20, tier: 1}
+  - to: nsa-ttp
+    layer: action
+    type: incident
+    summary: "After the TTP ambush of 8 Oct 2025 that killed 11 Pakistani military personnel Pakistan carried out cross-border air strikes, including its first on Kabul, reportedly aimed at TTP chief Noor Wali Mehsud; militants killed more than 600 Pakistani soldiers and police in 2025."
+    since: 2025-10-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - *s_dawn_icg
+      - {url: "https://minutemirror.com.pk/kohat-mosque-attack-kunar-strikes-escalate-pakistan-afghan-tensions-633298/", title: "Kohat mosque attack, Kunar strikes escalate Pakistan-Afghan tensions", publisher: "Minute Mirror", date: 2026-09, tier: 3}
+  - to: nsa-bla
+    layer: action
+    type: incident
+    summary: "On 31 Jan 2026 the BLA launched coordinated attacks on Quetta, Mastung, Gwadar, Pasni and Turbat; Pakistan said 92 militants were killed against 15 security personnel and 18 civilians dead; the BLA's vehicle bombing of a train carrying security families in Quetta on 24 May 2026 killed at least 47."
+    since: 2026-01-31
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.pukmedia.com/EN/Details/80358", title: "Pakistan says 92 militants killed following attacks in Balochistan", publisher: "PUKmedia", date: 2026-02, tier: 3}
+      - {url: "https://pajhwok.com/2026/01/31/militants-launch-coordinated-attacks-across-balochistan/", title: "Militants launch coordinated attacks across Balochistan", publisher: "Pajhwok Afghan News", date: 2026-01-31, tier: 3}
+      - {url: "https://en.wikipedia.org/wiki/2026_Quetta_train_bombing", title: "2026 Quetta train bombing", publisher: "Wikipedia (index)", date: 2026-10-12, tier: 4}
+  - to: org-un
+    layer: action
+    type: un_vote
+    summary: "As a member of the Security Council in 2025-26 Pakistan abstained, with Somalia, on Resolution 2815 renewing UNFICYP until 31 Jan 2027 (13-0-2) on 30 Jan 2026."
+    since: 2026-01-30
+    until: 2026-01-30
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://press.un.org/en/2026/sc16286.doc.htm", title: "Security Council extends UNFICYP mandate to 31 January 2027 (Resolution 2815, 13-0-2)", publisher: "United Nations", date: 2026-01-30, tier: 1}
