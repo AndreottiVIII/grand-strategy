@@ -1,14 +1,175 @@
 id: PRK
 name: North Korea
 type: state
+coords: [125.75, 39.02]
 iso2: kp
 wikipedia: https://en.wikipedia.org/wiki/North_Korea
-coords:
-- 125.75
-- 39.02
 seat: Pyongyang
-regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+regions: [east-asia]
+card: full
+tier: protagonist
+last_verified: 2026-10-14
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Regime survival under a nuclear deterrent that is declared irreversible, and recognition of the country as a nuclear-weapon state. Kim told the Supreme People's Assembly on 21 Sep 2025 that there can 'never, under any circumstances' be denuclearisation; the Ninth Party Congress (February 2026) wrote the status into party policy and the nuclear command into the 2026 constitution; on 13 Jun 2026 Pyongyang called the arsenal 'irreversibly finalized'."
+      confidence: A
+      sources:
+        - {url: "https://www.pbs.org/newshour/world/north-korean-leader-recalls-good-personal-memories-of-trump-urges-u-s-to-drop-denuclearization-demands", title: "North Korean leader recalls good personal memories of Trump, urges U.S. to drop denuclearization demands", publisher: "PBS NewsHour / AP", date: 2025-09-22, tier: 3}
+        - {url: "https://keia.org/analysis/kim-jong-un-builds-a-wall-with-south-korea-at-party-congress/", title: "Kim Jong Un Builds a Wall With South Korea at Party Congress", publisher: "Korea Economic Institute of America", date: 2026-02-27, tier: 2}
+        - {url: "https://www.armscontrol.org/node/15391", title: "North Korea Unveils New Enrichment Facility", publisher: "Arms Control Association", date: 2026-06, tier: 2}
+        - {url: "https://www.koreaherald.com/article/10732099", title: "N. Korea removes 'unification' reference from constitution", publisher: "The Korea Herald / Yonhap", date: 2026-05-06, tier: 3}
+    - rank: 2
+      text: "Turn military usefulness into money, food, fuel and technology: troops, shells and missiles for Russia's war, and keep China's trade lifeline open at the same time. Russia is now the second patron, the one that pays; China remains the one that feeds the economy (98% of official trade in 2024)."
+      confidence: B
+      sources:
+        - {url: "https://www.bloomberg.com/graphics/2026-north-korea-windfall/", title: "North Korea's windfall (about USD 14bn from Russia 2022-25; 16,000-22,000 troops)", publisher: "Bloomberg", date: 2026-08-07, tier: 3}
+        - {url: "https://www.cfr.org/article/how-north-korea-has-bolstered-russias-war-ukraine", title: "How North Korea Has Bolstered Russia's War in Ukraine", publisher: "Council on Foreign Relations", date: 2025-11, tier: 2}
+        - {url: "https://keia.org/analysis/arms-sales-to-russia-and-trade-with-china-drive-north-koreas-economic-recovery/", title: "Arms Sales to Russia and Trade With China Drive North Korea's Economic Recovery", publisher: "Korea Economic Institute of America (Randall S. Jones)", date: 2026-09-02, tier: 2}
+    - rank: 3
+      text: "Close the Korean question on Pyongyang's terms: no reunification, no dialogue, South Korea a separate 'most hostile' state. The doctrine announced in December 2023 and January 2024 is now in the constitution (March 2026, territory defined as bordering South Korea, all unification wording removed) and on the ground (roads and rails cut, fences, mines and a cleared strip along the line)."
+      confidence: A
+      sources:
+        - {url: "https://www.koreaherald.com/article/10732099", title: "N. Korea removes 'unification' reference from constitution", publisher: "The Korea Herald / Yonhap", date: 2026-05-06, tier: 3}
+        - {url: "https://keia.org/analysis/kim-jong-un-builds-a-wall-with-south-korea-at-party-congress/", title: "Kim Jong Un Builds a Wall With South Korea at Party Congress", publisher: "Korea Economic Institute of America", date: 2026-02-27, tier: 2}
+        - {url: "https://www.koreatimes.co.kr/southkorea/defense/20261003/cover-story-north-koreas-border-fortification-raises-questions-over-dmz-buffer-role", title: "North Korea's border fortification raises questions over DMZ buffer role", publisher: "The Korea Times", date: 2026-10-03, tier: 3}
+    - rank: 4
+      text: "Rebuild the civilian economy outside Pyongyang while keeping the party's control: the 2026-2030 five-year plan (manufacturing, power, the '20x10' regional factories and hospitals). The Bank of Korea counts 3.5% growth in 2025, the third year above 3%, with output above its 2017 (pre-sanctions) level."
+      confidence: B
+      sources:
+        - {url: "https://www.koreatimes.co.kr/amp/foreignaffairs/northkorea/20260731/n-korean-economy-grows-over-3-for-3rd-consecutive-year-in-2025-bok", title: "N. Korean economy grows over 3% for 3rd consecutive year in 2025: BOK", publisher: "The Korea Times", date: 2026-07-31, tier: 3}
+        - {url: "https://www.38north.org/2026/08/from-recovery-to-development-north-koreas-new-five-year-economic-plan/", title: "From Recovery to Development: North Korea's New Five-Year Economic Plan", publisher: "38 North (Stimson Center)", date: 2026-08, tier: 2}
+    - rank: 5
+      text: "Hand the dynasty on: South Korea's intelligence service said on 12 Feb 2026 that Kim Ju Ae had entered a 'successor-designation stage' (a year earlier: 'successor training'); she was at his side in Beijing in September 2025. No formal title has been reported."
+      confidence: C
+      sources:
+        - {url: "https://www.michiganpublic.org/2026-02-12/kim-jong-uns-daughter-close-to-being-designated-future-leader-says-spy-agency", title: "Kim Jong Un's daughter close to being designated future leader, says spy agency", publisher: "NPR / Michigan Public", date: 2026-02-12, tier: 3}
+        - {url: "https://www.khan.co.kr/en/article/202602121841007", title: "NIS on Kim Ju Ae's successor-designation stage", publisher: "The Kyunghyang Shinmun", date: 2026-02-12, tier: 3}
+    - rank: 6
+      text: "Keep both patrons competing for it and avoid the single-patron trap: stage the September 2025 Beijing parade with Xi and Putin, receive Vietnam's and Laos's leaders in October 2025, and receive Xi in Pyongyang (8-9 Jun 2026) after Beijing had cooled in 2024."
+      confidence: B
+      sources:
+        - {url: "https://www.local10.com/news/world/2025/09/03/putin-meets-north-koreas-kim-in-beijing", title: "Putin meets North Korea's Kim in Beijing", publisher: "AP", date: 2025-09-03, tier: 3}
+        - {url: "https://www.aljazeera.com/amp/news/2026/6/8/chinas-xi-jinping-arrives-in-north-korea-on-rare-state-visit", title: "China's Xi Jinping arrives in North Korea on rare state visit", publisher: "Al Jazeera", date: 2026-06-08, tier: 3}
+        - {url: "https://www.caixinglobal.com/2026-06-08/xi-kim-pledge-closer-china-north-korea-ties-during-pyongyang-meeting-102452248.html", title: "Xi, Kim pledge closer China-North Korea ties during Pyongyang meeting", publisher: "Caixin Global", date: 2026-06-08, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "A mutual-assistance treaty with Russia (19 Jun 2024, ratified 6 Nov 2024) used in earnest, a summit with Putin and one with Xi in Beijing on 3-4 Sep 2025, Xi's state visit in June 2026, and a wide guest list for the party's 80th anniversary (Vietnam's To Lam, Laos's Thongloun, Chinese and Russian envoys). Toward Washington: conditional openness (Kim 'still has a good memory' of Trump, talks if denuclearisation is dropped); toward Seoul: refusal of all contact."
+      confidence: A
+      sources:
+        - {url: "https://apnews.com/article/vladimir-putin-kim-jong-un-russia-north-korea-summit-ukraine-a6b8d2c12de7ee2ab6716d4747c9850e", title: "Russia and North Korea sign partnership deal that appears to be the strongest since the Cold War", publisher: "Associated Press", date: 2024-06-19, tier: 3}
+        - {url: "https://www.local10.com/news/world/2025/09/03/putin-meets-north-koreas-kim-in-beijing", title: "Putin meets North Korea's Kim in Beijing", publisher: "AP", date: 2025-09-03, tier: 3}
+        - {url: "https://www.koreatimes.co.kr/amp/foreignaffairs/northkorea/20251008/n-koreas-kim-holds-talks-with-lao-president-in-pyongyang-kcna", title: "N. Korea's Kim holds talks with Lao president in Pyongyang: KCNA", publisher: "The Korea Times", date: 2025-10-08, tier: 3}
+    - domain: informational
+      text: "State media as the instrument of doctrine: the SPA speech of September 2025, the Party Congress report, the constitutional text; and staging, such as the confirmation of the Kursk deployment on 28 Apr 2025 with the soldiers called 'heroes', and a unit carrying North Korean and Russian flags at the February 2026 parade. KCNA is cited here only for what Pyongyang says."
+      confidence: B
+      sources:
+        - {url: "https://www.nbcnews.com/world/asia/north-korea-confirms-sent-troops-russia-calling-heroes-rcna203245", title: "North Korea confirms it sent troops to Russia, calling them heroes", publisher: "NBC News", date: 2025-04-28, tier: 3}
+        - {url: "https://keia.org/analysis/kim-jong-un-builds-a-wall-with-south-korea-at-party-congress/", title: "Kim Jong Un Builds a Wall With South Korea at Party Congress", publisher: "Korea Economic Institute of America", date: 2026-02-27, tier: 2}
+    - domain: military
+      text: "The arsenal as the product and the shield: about 60 warheads on a March 2026 estimate (Trump says 57), a new enrichment plant shown to the world on 3 Jun 2026 (third disclosed site), the solid-fuel Hwasong-20 ICBM shown at the 10 Oct 2025 parade after a last engine test on 8 Sep 2025 (no flight test reported), 'nuclear trigger' command structure, and a steady 2026 tempo of short-range tests (11 suspected ballistic launches by August). In Russia: the Kursk expeditionary force (about 11,000 at the start of 2026) and a missile unit in Voronezh."
+      confidence: B
+      sources:
+        - {url: "https://www.armscontrol.org/node/15391", title: "North Korea Unveils New Enrichment Facility", publisher: "Arms Control Association", date: 2026-06, tier: 2}
+        - {url: "https://www.koreatimes.co.kr/amp/foreignaffairs/northkorea/20251012/n-korea-unveils-new-hwasong-20-icbm-signaling-multi-warhead-ambitions", title: "N. Korea unveils new Hwasong-20 ICBM, signaling multi-warhead ambitions", publisher: "The Korea Times", date: 2025-10-12, tier: 3}
+        - {url: "https://www.yahoo.com/news/articles/nearly-11-000-north-korean-124958616.html", title: "Nearly 11,000 North Korean troops stationed in Russia's Kursk Oblast at start of 2026", publisher: "Yonhap (via Yahoo)", date: 2026-01, tier: 3}
+        - {url: "https://www.taiwanplus.com/news/world-news/asia-pacific/260812010/north-korea-launches-11th-suspected-ballistic-missile-of-2026", title: "North Korea launches 11th suspected ballistic missile of 2026", publisher: "Taiwan Plus", date: 2026-08, tier: 3}
+    - domain: economic
+      text: "Four earners outside normal trade: arms and troops for Russia (USD 10-14bn in cash, oil, food and technology on Bloomberg's count), cryptocurrency theft (at least USD 2.02bn in 2025, of which the Bybit heist of 21 Feb 2025, about USD 1.5bn, attributed by the FBI to the Lazarus/TraderTraitor cluster), workers abroad (MSMT: up to USD 800m a year; up to 25,000 in Russia's drone industry) and IT workers posing as freelancers (about USD 800m in 2024 on Treasury's count). Plus the legal base: China, USD 2.7bn of two-way trade in 2025."
+      confidence: B
+      sources:
+        - {url: "https://www.chainalysis.com/blog/crypto-hacking-stolen-funds-2026/", title: "2025 crypto theft: North Korean hackers stole at least USD 2.02bn", publisher: "Chainalysis", date: 2025-12-18, tier: 3}
+        - {url: "https://bleepingcomputer.com/news/security/fbi-confirms-lazarus-hackers-were-behind-15b-bybit-crypto-heist", title: "FBI confirms Lazarus hackers were behind USD 1.5B Bybit crypto heist", publisher: "BleepingComputer", date: 2025-02, tier: 3}
+        - {url: "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/17/russia-taps-north-korean-workers-to-make-drones-under-fake-visas", title: "Russia taps North Korean workers to make drones under fake visas", publisher: "The Star (Malaysia)", date: 2026-09-17, tier: 3}
+        - {url: "https://www.globalsecurity.org/wmd/library/news/dprk/2026/dprk-260312-treasury01.htm", title: "Treasury sanctions DPRK IT worker networks (12 Mar 2026)", publisher: "US Department of the Treasury (via GlobalSecurity)", date: 2026-03-12, tier: 1}
+        - {url: "https://www.businessday.co.za/world/asia/2026-01-20-chinas-2025-trade-with-north-korea-rebounds-to-pre-covid-levels/", title: "China's 2025 trade with North Korea rebounds to pre-Covid levels", publisher: "Reuters (via BusinessDay)", date: 2026-01-20, tier: 3}
+
+  constraints:
+    - text: "One trading partner. China accounted for 98% of official trade in 2024 and USD 2.7bn in 2025 (up 25%), and no other partner can replace it. Beijing used the dependence in 2024 (trade fell 5%, high-level contact thinned while Pyongyang turned to Moscow) and reasserted itself with the June 2026 state visit."
+      confidence: A
+      sources:
+        - {url: "https://keia.org/analysis/arms-sales-to-russia-and-trade-with-china-drive-north-koreas-economic-recovery/", title: "Arms Sales to Russia and Trade With China Drive North Korea's Economic Recovery", publisher: "Korea Economic Institute of America", date: 2026-09-02, tier: 2}
+        - {url: "https://www.businessday.co.za/world/asia/2026-01-20-chinas-2025-trade-with-north-korea-rebounds-to-pre-covid-levels/", title: "China's 2025 trade with North Korea rebounds to pre-Covid levels", publisher: "Reuters (via BusinessDay)", date: 2026-01-20, tier: 3}
+        - {url: "https://www.aljazeera.com/amp/news/2026/6/8/chinas-xi-jinping-arrives-in-north-korea-on-rare-state-visit", title: "China's Xi Jinping arrives in North Korea on rare state visit", publisher: "Al Jazeera", date: 2026-06-08, tier: 3}
+    - text: "The Russian windfall is tied to the war. The payments, the oil above the UN cap, the technology and the market for shells all depend on Russia still needing them; the troops pay in blood (Seoul counted about 4,700 casualties by April 2025, Kyiv more than 7,000 in 2024-25), and the deployment is Moscow's to extend or stop."
+      confidence: B
+      sources:
+        - {url: "https://www.arabnews.com/node/2598962/world", title: "About 4,700 North Korean soldiers have been killed or wounded fighting for Russia, South Korea says", publisher: "Arab News / AP", date: 2025-04-30, tier: 3}
+        - {url: "https://kyivindependent.com/north-korean-troops-took-over-7-000-casualties-in-russias-kursk-oblast-hur-claims/", title: "Ukraine reveals new figures for North Korean troop losses in Russia's Kursk Oblast", publisher: "The Kyiv Independent", date: 2025, tier: 3}
+        - {url: "https://www.bloomberg.com/graphics/2026-north-korea-windfall/", title: "North Korea's windfall", publisher: "Bloomberg", date: 2026-08-07, tier: 3}
+    - text: "A weak domestic base behind the headline growth. The won has lost about three-quarters of its value against the dollar since May 2024 and rice prices rose 5.2 times between May 2024 and May 2026; exports of USD 4.7bn in 2025 are under 0.1% of South Korea's, and the country's income is under 2% of the South's."
+      confidence: B
+      sources:
+        - {url: "https://keia.org/analysis/arms-sales-to-russia-and-trade-with-china-drive-north-koreas-economic-recovery/", title: "Arms Sales to Russia and Trade With China Drive North Korea's Economic Recovery", publisher: "Korea Economic Institute of America", date: 2026-09-02, tier: 2}
+    - text: "The sanctions regime is weakened but not gone. The Security Council resolutions stay in force; Russia's veto of 28 Mar 2024 (China abstaining) ended the UN Panel of Experts, but eleven states set up the Multilateral Sanctions Monitoring Team in October 2024, which has reported on Russia-DPRK arms transfers (May 2025) and cyber links (October 2025), and the US keeps designating IT-worker and laundering networks (12 Mar 2026)."
+      confidence: A
+      sources:
+        - {url: "https://www.armscontrol.org/act/2024-05/news/russia-ends-north-korean-sanctions-panel", title: "Russia Ends North Korean Sanctions Panel", publisher: "Arms Control Association", date: 2024-05, tier: 2}
+        - {url: "https://www.mofa.go.jp/press/release/pressite_000001_01321.html", title: "Release of the First Report of the Multilateral Sanctions Monitoring Team (MSMT)", publisher: "Ministry of Foreign Affairs of Japan", date: 2025-05-29, tier: 1}
+        - {url: "https://www.globalsecurity.org/wmd/library/news/dprk/2026/dprk-260312-treasury01.htm", title: "Treasury sanctions DPRK IT worker networks (12 Mar 2026)", publisher: "US Department of the Treasury (via GlobalSecurity)", date: 2026-03-12, tier: 1}
+    - text: "Nobody recognises the nuclear status. Washington's reply to the June 2026 enrichment plant was 'deeply troubling' and a restatement of 'complete denuclearization'; the US-South Korea Nuclear Consultative Group met for the sixth time on 11 Jun 2026; Seoul and Tokyo have built deterrence around the arsenal (Freedom Edge, Japan's lead in the sanctions monitoring team)."
+      confidence: B
+      sources:
+        - {url: "https://www.armscontrol.org/node/15391", title: "North Korea Unveils New Enrichment Facility", publisher: "Arms Control Association", date: 2026-06, tier: 2}
+    - text: "A succession with no adult heir: the designated successor is about 13 and has no reported title, so the system depends on Kim's own health and on a Party Congress that replaced more than 40% of senior officials and promoted his sister Kim Yo Jong to head the Central Committee's general affairs."
+      confidence: C
+      sources:
+        - {url: "https://www.michiganpublic.org/2026-02-12/kim-jong-uns-daughter-close-to-being-designated-future-leader-says-spy-agency", title: "Kim Jong Un's daughter close to being designated future leader, says spy agency", publisher: "NPR / Michigan Public", date: 2026-02-12, tier: 3}
+
+  paradoxes:
+    - text: "Selling usefulness to Russia raises North Korea's price and ties its fortune to a war it does not control. The treaty, the troops and the shell trade bought food, oil, cash and technology and ended the diplomatic quarantine, but every item on the receipt falls due only while Moscow needs them; a ceasefire in Ukraine ends the windfall while leaving the troops' losses, the sanctions and the dependence on China intact."
+      confidence: B
+      sources:
+        - {url: "https://www.bloomberg.com/graphics/2026-north-korea-windfall/", title: "North Korea's windfall", publisher: "Bloomberg", date: 2026-08-07, tier: 3}
+        - {url: "https://www.cfr.org/article/how-north-korea-has-bolstered-russias-war-ukraine", title: "How North Korea Has Bolstered Russia's War in Ukraine", publisher: "Council on Foreign Relations", date: 2025-11, tier: 2}
+    - text: "Leaning on Russia to dilute China's weight made China court it back. The 2024 distance from Beijing (trade down 5%) ended in the September 2025 parade, a record 2025 trade year and Xi's visit in June 2026, whose stated aim, per analysts, is to keep Pyongyang from drifting toward Moscow: the Russian card bought Kim a competition between patrons, but also a Chinese attempt to re-establish itself as 'the principal actor' in the North."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/amp/news/2026/6/8/chinas-xi-jinping-arrives-in-north-korea-on-rare-state-visit", title: "China's Xi Jinping arrives in North Korea on rare state visit", publisher: "Al Jazeera", date: 2026-06-08, tier: 3}
+        - {url: "https://www.businessday.co.za/world/asia/2026-01-20-chinas-2025-trade-with-north-korea-rebounds-to-pre-covid-levels/", title: "China's 2025 trade with North Korea rebounds to pre-Covid levels", publisher: "Reuters (via BusinessDay)", date: 2026-01-20, tier: 3}
+    - text: "A deterrent declared irreversible leaves nothing to trade. Washington is told that talks are possible only if it accepts the arsenal, so the sole thing sanctions relief could buy, the arsenal's reduction, is withdrawn from the table; meanwhile each new disclosure (Hwasong-20, the June 2026 enrichment plant) strengthens the Seoul-Washington-Tokyo deterrence that the weapon was supposed to make unnecessary."
+      confidence: B
+      sources:
+        - {url: "https://www.pbs.org/newshour/world/north-korean-leader-recalls-good-personal-memories-of-trump-urges-u-s-to-drop-denuclearization-demands", title: "North Korean leader recalls good personal memories of Trump, urges U.S. to drop denuclearization demands", publisher: "PBS NewsHour / AP", date: 2025-09-22, tier: 3}
+        - {url: "https://www.armscontrol.org/node/15391", title: "North Korea Unveils New Enrichment Facility", publisher: "Arms Control Association", date: 2026-06, tier: 2}
+    - text: "Cutting Korea in two removes the argument that justified the northern state. A regime founded on the claim to be the true Korea now writes 'South Korea' into its constitution as a neighbouring state, and Seoul's unification ministry has answered with a 'peaceful two-state' policy (white paper of May 2026) that accepts the division without paying for it; the fortified line itself produces incidents (mines on 21 Sep 2026, some 30 line crossings in September on Seoul's count)."
+      confidence: B
+      sources:
+        - {url: "https://www.koreaherald.com/article/10732099", title: "N. Korea removes 'unification' reference from constitution", publisher: "The Korea Herald / Yonhap", date: 2026-05-06, tier: 3}
+        - {url: "https://www.koreatimes.co.kr/amp/foreignaffairs/northkorea/20260518/unification-white-paper-pivots-to-peaceful-two-state-coexistence-with-n-korea", title: "Unification white paper pivots to peaceful 'two-state' coexistence with N. Korea", publisher: "The Korea Times", date: 2026-05-18, tier: 3}
+        - {url: "https://www.euronews.com/2026/09/30/north-korea-slams-souths-claim-it-was-behind-dmz-mine-blasts-calling-it-a-farce", title: "North Korea slams South's claim it was behind DMZ mine blasts, calling it a farce", publisher: "Euronews", date: 2026-09-30, tier: 3}
+    - text: "Killing the UN panel created a stronger monitor. Russia's veto of March 2024 freed Pyongyang from a body that needed Chinese and Russian consent, but the eleven states that built the Multilateral Sanctions Monitoring Team in response answer to no veto, name the Russia-DPRK arms trade and the cyber networks, and feed Treasury's designations."
+      confidence: B
+      sources:
+        - {url: "https://www.armscontrol.org/act/2024-05/news/russia-ends-north-korean-sanctions-panel", title: "Russia Ends North Korean Sanctions Panel", publisher: "Arms Control Association", date: 2024-05, tier: 2}
+        - {url: "https://www.mofa.go.jp/press/release/pressite_000001_01321.html", title: "Release of the First Report of the Multilateral Sanctions Monitoring Team (MSMT)", publisher: "Ministry of Foreign Affairs of Japan", date: 2025-05-29, tier: 1}
+    - text: "The money that keeps the state alive is the money that most exposes it. Crypto theft (USD 2.02bn in 2025), workers on student visas and IT freelancers are sanctions-evasion by design, so the more they yield, the more the US, Japan, South Korea and the monitoring team concentrate on them; Treasury's 12 Mar 2026 designations reached facilitators in Vietnam, Laos and Spain, countries Pyongyang courts."
+      confidence: B
+      sources:
+        - {url: "https://www.chainalysis.com/blog/crypto-hacking-stolen-funds-2026/", title: "2025 crypto theft: North Korean hackers stole at least USD 2.02bn", publisher: "Chainalysis", date: 2025-12-18, tier: 3}
+        - {url: "https://www.globalsecurity.org/wmd/library/news/dprk/2026/dprk-260312-treasury01.htm", title: "Treasury sanctions DPRK IT worker networks (12 Mar 2026)", publisher: "US Department of the Treasury (via GlobalSecurity)", date: 2026-03-12, tier: 1}
+
+  reading: |
+    North Korea is Luttwak's small adversary that became useful to a great power and
+    sold its usefulness dear. For thirty years its strategy was survival by
+    nuisance: weapons as the one asset a poor, sanctioned state could produce. The
+    war in Ukraine gave that asset a buyer. Since the treaty of June 2024 Kim has
+    turned shells, missiles, labour and an expeditionary force into cash, fuel,
+    food and technology, escaped the diplomatic quarantine, and made both Moscow
+    and Beijing court him. He has also removed the questions that used to bind
+    him: the UN panel is gone, denuclearisation is struck from every agenda,
+    reunification is struck from the constitution, and the Party Congress of
+    February 2026 wrote the status into policy. Pyongyang no longer asks to be
+    admitted to the order; it asks that the arsenal be accepted as a fact. The
+    paradoxes are all of one kind. Each success rests on a patron's need, not on
+    a strength of Pyongyang's own: the Russian income ends with the war, the
+    Chinese trade ends when Beijing chooses, the nuclear status leaves nothing to
+    bargain with, and the sanctions workaround turns the cyber and labour
+    earners into the targets of a coalition that no veto can dissolve. Two
+    signals that are not rows: the Ninth Congress's work report did not mention
+    Russia or China, and Kim has not met a US president since 2019 while Trump
+    keeps saying he will. The open question for 2027 is whether the same hand can
+    manage the end of the Russian war, a Trump offer that asks for the arsenal,
+    and a thirteen-year-old heir.

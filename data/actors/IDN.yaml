@@ -1,14 +1,173 @@
 id: IDN
 name: Indonesia
+short: Indonesia
 type: state
 iso2: id
 wikipedia: https://en.wikipedia.org/wiki/Indonesia
-coords:
-- 106.83
-- -6.18
+coords: [106.83, -6.18]
 seat: Jakarta
-regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+regions: ['southeast-asia-oceania']
+card: full
+tier: protagonist
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Strategic autonomy by belonging to everything: keep the 'free and active' (bebas-aktif) doctrine but exercise it as simultaneous engagement with rival powers - BRICS full member since 6 Jan 2025, a US trade agreement (19 Feb 2026) and a US Major Defense Cooperation Partnership (13 Apr 2026), a Russian oil deal (13 Apr 2026), an Australian security treaty (6 Feb 2026) - with no military bloc."
+      confidence: B
+      sources:
+        - {url: "https://rsis.edu.sg/rsis-publication/idss/ip26068-indonesias-heavy-strategic-hedging-amid-a-polarised-world/", title: "Indonesia's heavy strategic hedging amid a polarised world", publisher: "RSIS (S. Rajaratnam School of International Studies)", date: 2026-05, tier: 2}
+        - {url: "https://www.lowyinstitute.org/the-interpreter/indonesia-can-t-keep-rowing-between-reefs", title: "Indonesia can't keep rowing between reefs", publisher: "Lowy Institute, The Interpreter", date: 2026-04-17, tier: 2}
+        - {url: "https://rsis.edu.sg/wp-content/uploads/2025/12/PR_An-Analysis-of-Indonesias-Foreign-Policy-under-Prabowo-Managing-Great-Power-Relations.pdf", title: "An analysis of Indonesia's foreign policy under Prabowo: managing great power relations", publisher: "RSIS", date: 2025-12, tier: 2}
+    - rank: 2
+      text: "Pay for a domestic programme through foreign capital and market access: the free-meals programme (about 62 million beneficiaries by April 2026), downstreaming and the sovereign fund Danantara need export markets and investors, hence the trade deals with the United States and the EU, the Chinese investment pacts and the OECD (accession roadmap since 2024) and CPTPP (preparatory talks since 26 Jun 2026, target 2027) applications."
+      confidence: B
+      sources:
+        - {url: "https://setkab.go.id/en/indonesia-us-sign-reciprocal-trade-agreement-to-deepen-economic-cooperation/", title: "Indonesia, US sign reciprocal trade agreement to deepen economic cooperation", publisher: "Cabinet Secretariat of the Republic of Indonesia", date: 2026-02-20, tier: 1}
+        - {url: "https://www.eeas.europa.eu/delegations/indonesia/ieucepa-pressrelease_en", title: "EU and Indonesia conclude negotiations on IEU CEPA", publisher: "European External Action Service", date: 2025-09-23, tier: 1}
+        - {url: "https://en.antaranews.com/news/421439/indonesia-moves-closer-to-cptpp-membership-with-accession-talks", title: "Indonesia moves closer to CPTPP membership with accession talks", publisher: "Antara", date: 2026-07, tier: 3}
+        - {url: "https://setkab.go.id/yz7g", title: "MBG programme reaches more than 60 million beneficiaries", publisher: "Cabinet Secretariat of the Republic of Indonesia", date: 2026, tier: 1}
+    - rank: 3
+      text: "Hold the archipelago's waters and the eastern edge: reject the nine-dash line while avoiding a break with Beijing (Natuna), settle boundaries with neighbours (EEZ treaty with Vietnam, joint development of the Ambalat block with Malaysia) and keep Papua off any outside agenda."
+      confidence: B
+      sources:
+        - {url: "https://www.thejakartapost.com/world/2024/11/14/president-prabowo-says-he-will-safeguard-sovereignty-in-south-china-sea", title: "President Prabowo says he will safeguard sovereignty in South China Sea", publisher: "The Jakarta Post", date: 2024-11-14, tier: 3}
+        - {url: "https://www.thejakartapost.com/world/2025/03/11/indonesia-and-vietnam-agree-to-upgrade-strategic-ties", title: "Indonesia and Vietnam agree to upgrade strategic ties", publisher: "The Jakarta Post", date: 2025-03-11, tier: 3}
+        - {url: "https://www.internationalaffairs.org.au/australianoutlook/indonesia-australia-security-architecture-must-include-papua-considerations/", title: "Indonesia-Australia security architecture must include Papua considerations", publisher: "Australian Outlook (AIIA)", date: 2025, tier: 2}
+    - rank: 4
+      text: "Rebuild the armed forces from every supplier at once: 42 Rafale (2022), 48 KAAN agreed with Turkey (July 2025), 42 Chinese J-10 announced (October 2025, unconfirmed), BrahMos from India, KF-21 from South Korea, Japanese frigates under discussion - arms diversity as the material form of the hedge."
+      confidence: B
+      sources:
+        - {url: "https://www.asianmilitaryreview.com/2025/07/indonesia-keeps-options-open-with-bewildering-fighter-smorgasbord-foc/", title: "Indonesia keeps options open with bewildering fighter smorgasbord", publisher: "Asian Military Review", date: 2025-07, tier: 3}
+        - {url: "https://defensenews.com/global/mideast-africa/2025/07/28/turkey-indonesia-sign-multibillion-dollar-warplane-frigate-deals", title: "Turkey, Indonesia sign multibillion-dollar warplane, frigate deals", publisher: "Defense News", date: 2025-07-28, tier: 3}
+        - {url: "https://theaviationist.com/2025/10/17/indonesia-j-10c-fighter-jet/", title: "Indonesia confirms plan to buy Chinese J-10C fighters", publisher: "The Aviationist", date: 2025-10-17, tier: 3}
+    - rank: 5
+      text: "Moral weight in the Muslim and Global South world: a two-state solution at the UN (23 Sep 2025), a conditional readiness to recognise Israel once Israel recognises Palestine, an offer of troops for a Gaza stabilisation force (up to 8,000 pledged on 19 Feb 2026, then put on hold) and a mediation offer in the Iran war."
+      confidence: B
+      sources:
+        - {url: "https://setkab.go.id/en/asserting-commitment-to-two-state-solution-president-prabowo-calls-to-end-catastrophes-in-gaza/", title: "Asserting commitment to two-state solution, President Prabowo calls to end catastrophes in Gaza", publisher: "Cabinet Secretariat of the Republic of Indonesia", date: 2025-09-23, tier: 1}
+        - {url: "https://www.pbs.org/newshour/politics/indonesia-prepares-up-to-8000-troops-in-first-firm-commitment-to-gaza-peacekeeping-force", title: "Indonesia prepares up to 8,000 troops in first firm commitment to Gaza peacekeeping force", publisher: "PBS NewsHour", date: 2026-02, tier: 3}
+        - {url: "https://theonlinecitizen.com/2026/03/02/indonesia-offers-to-mediate-as-us-iran-conflict-escalates", title: "Indonesia offers to mediate as US-Iran conflict escalates", publisher: "The Online Citizen", date: 2026-03-02, tier: 4}
+    - rank: 6
+      text: "Turn the resource base into leverage and energy security: the nickel ore export ban (2020) and ore quotas to force processing at home, and oil and LPG from whoever sells (Russia 150 million barrels agreed in principle in April 2026) because a fifth to a quarter of crude imports transits Hormuz."
+      confidence: B
+      sources:
+        - {url: "https://chinaglobalsouth.com/analysis/chinese-investors-indonesia-nickel-tensions/", title: "Indonesia's nickel ambitions collide with Chinese investors' expectations", publisher: "China Global South Project", date: 2026, tier: 3}
+        - {url: "https://www.thejakartapost.com/business/2026/04/24/indonesia-says-russia-will-supply-150-million-barrels-of-oil.html", title: "Indonesia says Russia will supply 150 million barrels of oil", publisher: "The Jakarta Post", date: 2026-04-24, tier: 3}
+        - {url: "https://www.thejakartapost.com/world/2026/04/12/president-prabowo-to-meet-putin-in-russia-for-oil-talks.html", title: "President Prabowo to meet Putin in Russia for oil talks", publisher: "The Jakarta Post", date: 2026-04-12, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "Personal, presidential diplomacy: Prabowo met Putin (Moscow, 13 Apr 2026), signed the US trade deal with Trump in Washington (19 Feb 2026), signed the Australian treaty in Jakarta (6 Feb 2026) and receives Xi's, Modi's and Macron's envoys in turn; analysts contrast it with Jokowi's reliance on the foreign minister. Memberships are stacked - ASEAN, G20, OIC, BRICS (6 Jan 2025), the Board of Peace (Feb 2026), OECD and CPTPP applications."
+      confidence: B
+      sources:
+        - {url: "https://www.lowyinstitute.org/the-interpreter/indonesia-can-t-keep-rowing-between-reefs", title: "Indonesia can't keep rowing between reefs", publisher: "Lowy Institute, The Interpreter", date: 2026-04-17, tier: 2}
+        - {url: "https://www.pm.gov.au/media/australia-and-indonesia-sign-historic-security-treaty", title: "Australia and Indonesia sign historic security treaty", publisher: "Prime Minister of Australia", date: 2026-02, tier: 1}
+        - {url: "https://indonesiabusinesspost.com/3746/geopolitics/indonesia-gets-full-membership-status-of-brics", title: "Indonesia gets full membership status of BRICS", publisher: "Indonesia Business Post", date: 2025-01-07, tier: 4}
+    - domain: diplomatic
+      text: "ASEAN as the instrument of regional order: Prabowo signed Timor-Leste's admission declaration (26 Oct 2025, the first enlargement in 25 years) and Jakarta uses the association to frame every bilateral deal as regional, while the Philippines holds the 2026 chair and pushes a South China Sea code."
+      confidence: B
+      sources:
+        - {url: "https://en.antaranews.com/news/388041/prabowo-signs-declaration-on-timor-lestes-admission-to-asean", title: "Prabowo signs declaration on Timor-Leste's admission to ASEAN", publisher: "Antara", date: 2025-10-26, tier: 3}
+        - {url: "https://www.malaymail.com/news/malaysia/2025/10/26/timor-leste-joins-asean-as-11th-member-marking-blocs-first-expansion-in-25-years/195933", title: "Timor-Leste joins ASEAN as 11th member, marking bloc's first expansion in 25 years", publisher: "Malay Mail", date: 2025-10-26, tier: 3}
+    - domain: informational
+      text: "A narrative of 'a friend to all' and of principled Palestine advocacy: the 23 Sep 2025 UN speech (offering recognition of Israel only after Palestinian statehood, peacekeepers under a UN mandate), the foreign ministry's repeated line that 'free and active' policy is intact after each Western or Russian deal (for example after the US defence partnership), and the denial of a Russian base in Papua."
+      confidence: B
+      sources:
+        - {url: "https://www.thejakartapost.com/opinion/2025/09/26/prabowos-un-showtime", title: "Prabowo's UN showtime", publisher: "The Jakarta Post", date: 2025-09-26, tier: 3}
+        - {url: "https://www.aljazeera.com/amp/news/2026/4/14/us-indonesia-sign-major-defence-cooperation-agreement", title: "Indonesia, US sign 'major' defence cooperation agreement", publisher: "Al Jazeera", date: 2026-04-14, tier: 3}
+        - {url: "https://indonesiabusinesspost.com/4119/geopolitics/indonesia-stands-by-free-and-active-policy-amid-false-claims-of-russian-military-base", title: "Indonesia stands by free and active policy amid false claims of Russian military base", publisher: "Indonesia Business Post", date: 2025-04, tier: 4}
+    - domain: military
+      text: "Exercises with all sides and a wider role for the armed forces: Super Garuda Shield 2026 (31 Aug - 11 Sep, 4,743 personnel from 21 countries per Jakarta), the 2024 defence agreement and 2026 treaty with Australia, the 2024-ratified defence agreement with Papua New Guinea; at home the March 2025 TNI law lets active officers hold posts in more civilian bodies and soldiers work on the free-meals programme."
+      confidence: B
+      sources:
+        - {url: "https://en.antaranews.com/news/429176/super-garuda-shield-2026-involves-4743-personnel-from-21-countries", title: "Super Garuda Shield 2026 involves 4,743 personnel from 21 countries", publisher: "Antara", date: 2026-08, tier: 3}
+        - {url: "https://www.arabnews.com/node/2594064/world", title: "Indonesia lawmakers to pass bill allowing more military in government", publisher: "Arab News / Reuters", date: 2025-03, tier: 3}
+        - {url: "https://islandsbusiness.com/news-break/png-indonesia-ratify-defence-deal-to-expand-security-cooperation/", title: "PNG, Indonesia ratify defence deal to expand security cooperation", publisher: "Islands Business", date: 2024-02, tier: 3}
+    - domain: economic
+      text: "Market access traded for purchase pledges (US: 19% tariff, zero tariffs on 99% of US goods, 11 company deals worth USD 38.4bn; EU CEPA concluded with a palm-oil protocol), plus resource nationalism: the nickel ore export ban and 2026 quota cut to 260-270 million wet tonnes, Danantara as the state investment vehicle (MoU with China Investment Corporation, May 2025)."
+      confidence: B
+      sources:
+        - {url: "https://setkab.go.id/en/indonesia-us-sign-reciprocal-trade-agreement-to-deepen-economic-cooperation/", title: "Indonesia, US sign reciprocal trade agreement to deepen economic cooperation", publisher: "Cabinet Secretariat of the Republic of Indonesia", date: 2026-02-20, tier: 1}
+        - {url: "https://www.eeas.europa.eu/delegations/indonesia/ieucepa-pressrelease_en", title: "EU and Indonesia conclude negotiations on IEU CEPA", publisher: "European External Action Service", date: 2025-09-23, tier: 1}
+        - {url: "https://www.danantaraindonesia.co.id/media-center/press-releases/danantara-indonesia-and-china-investment-corporation-launch-strategic-investment-partnership-to-drive-asean-china-growth", title: "Danantara Indonesia and China Investment Corporation launch strategic investment partnership", publisher: "Danantara Indonesia", date: 2025-05, tier: 1}
+        - {url: "https://skillings.net/nickel-market-outlook-2026-indonesia-ore-quotas-tighten-as-el-nino-risks-mount", title: "Nickel market outlook 2026: Indonesia ore quotas tighten as El Nino risks mount", publisher: "Skillings Mining Review", date: 2026, tier: 4}
+
+  constraints:
+    - text: "Fiscal ceiling: the legal 3% deficit cap is under pressure from oil prices while the free-meals programme (IDR 268 trillion core plus IDR 67 trillion add-on in 2026, only 22% spent by end-April) is cut and re-cut; there is no money left for all the arms ordered or for the capital city."
+      confidence: B
+      sources:
+        - {url: "https://www.idnfinancials.com/news/63952/pemerintah-akan-pangkas-dana-mbg-rp67-triliun", title: "Government to cut IDR 67 trillion from free nutritious meals programme", publisher: "IDN Financials", date: 2026, tier: 4}
+        - {url: "https://indonesiabusinesspost.com/6332/markets-and-finance/prabowo-stands-firm-on-free-meals-program-amid-fiscal-pressures", title: "Prabowo stands firm on free meals program amid fiscal pressures", publisher: "Indonesia Business Post", date: 2026, tier: 4}
+        - {url: "https://www.thejakartapost.com/opinion/2026/08/13/whoosh-debt-is-not-gone-only-moved-around", title: "Whoosh debt is not gone, only moved around", publisher: "The Jakarta Post", date: 2026-08-13, tier: 3}
+    - text: "Energy: Indonesia is a net energy importer; 20-25% of crude imports come from the Middle East via Hormuz, which the Iran war closed in effect - the reason for the Moscow trip. The Lowy analysis calls the autonomy 'thinner than it looks'."
+      confidence: B
+      sources:
+        - {url: "https://www.lowyinstitute.org/the-interpreter/indonesia-can-t-keep-rowing-between-reefs", title: "Indonesia can't keep rowing between reefs", publisher: "Lowy Institute, The Interpreter", date: 2026-04-17, tier: 2}
+        - {url: "https://www.thejakartapost.com/world/2026/04/12/president-prabowo-to-meet-putin-in-russia-for-oil-talks.html", title: "President Prabowo to meet Putin in Russia for oil talks", publisher: "The Jakarta Post", date: 2026-04-12, tier: 3}
+    - text: "China is too big to refuse: bilateral trade USD 167.4bn in 2025 (Chinese customs), China the first export destination (23.8% of exports, Jan-Nov 2025), the builder of the nickel smelters and of the Jakarta-Bandung high-speed rail whose debt was restructured over 80 years in August 2026."
+      confidence: B
+      sources:
+        - {url: "https://chinaglobalsouth.com/2026/01/08/china-indonesia-trade-surplus-2025/", title: "China tops Indonesia trade in 2025", publisher: "China Global South Project", date: 2026-01-08, tier: 3}
+        - {url: "https://kalsel.antaranews.com/amp/berita/498724/china-remains-indonesias-top-export-destination-in-jan-nov-2025", title: "China remains Indonesia's top export destination in Jan-Nov 2025", publisher: "Antara (citing BPS)", date: 2026-01, tier: 3}
+        - {url: "https://www.idnfinancials.com/news/68564/whoosh-debt-restructured-over-80-years-instalments-at-idr-1-trillion", title: "Whoosh debt restructured over 80 years, instalments at IDR 1 trillion", publisher: "IDN Financials", date: 2026-08, tier: 4}
+    - text: "Domestic legitimacy: the August 2025 riots (lawmakers' housing allowance, a motorcyclist killed by a police vehicle on 28 Aug, regional parliament burned in Makassar) were fed by the military's widening civilian role, and the Indonesian Ulema Council demanded exit from the Board of Peace (1 Mar 2026) - the street limits how far Prabowo can lean toward Washington or Israel."
+      confidence: B
+      sources:
+        - {url: "https://www.iris-france.org/en/indonesia-anatomy-of-a-crisis/", title: "Indonesia: anatomy of a crisis", publisher: "IRIS", date: 2025-09, tier: 2}
+        - {url: "https://asianews.network/indonesian-president-prabowo-calls-for-calm-revokes-lawmakers-perks-after-protests-escalate-into-looting", title: "Indonesian President Prabowo calls for calm, revokes lawmakers' perks after protests escalate into looting", publisher: "Asia News Network", date: 2025-09, tier: 3}
+        - {url: "https://www.scmp.com/news/asia/southeast-asia/article/3346646/indonesias-prabowo-surprised-iran-war-says-us-bombing-wont-spark-regime-change", title: "Indonesia's Prabowo surprised by Iran war, says US bombing won't spark regime change", publisher: "South China Morning Post", date: 2026-03, tier: 3}
+    - text: "Nusantara, the capital, as an unfinished constraint: the authority's budget fell from IDR 43.4 trillion (2024) to 6.3 trillion (2026), only 800 of 6,600 hectares of the core area were developed, and the move date is slipping to 2028 - Jakarta stays the seat of every decision."
+      confidence: B
+      sources:
+        - {url: "https://www.enca.com/lifestyle/indonesias-delayed-new-capital-risks-white-elephant-status", title: "Indonesia's delayed new capital risks 'white elephant' status", publisher: "AFP via eNCA", date: 2025-09, tier: 3}
+        - {url: "https://rsis.edu.sg/rsis-publication/idss/ip25032-moving-forward-with-nusantara-indonesias-new-capital-amid-economic-constraints/", title: "Moving forward with Nusantara: Indonesia's new capital amid economic constraints", publisher: "RSIS", date: 2025-03-17, tier: 2}
+        - {url: "https://asianews.network/?p=251207", title: "Indonesia President Prabowo makes first presidential visit to future capital Nusantara", publisher: "Asia News Network", date: 2026-01, tier: 3}
+    - text: "The archipelago itself: thousands of islands and the straits of Malacca, Sunda and Lombok make it everyone's sea lane and give the navy and coast guard too much water to police; the Chinese coast guard enters the North Natuna EEZ and Jakarta answers with patrols and statements, not force."
+      confidence: C
+      sources:
+        - {url: "https://abcnews.go.com/International/wireStory/indonesia-coast-guard-drove-away-chinese-ship-interrupted-survey-115095298", title: "Indonesia says its coast guard drove away Chinese ship that interrupted survey in disputed sea", publisher: "AP via ABC News", date: 2024-10, tier: 3}
+        - {url: "https://maritime-executive.com/article/indonesian-coast-guard-drives-out-chinese-cutter-shadowing-seismic-ship", title: "Indonesian Coast Guard 'drives out' Chinese vessel shadowing seismic ship", publisher: "The Maritime Executive", date: 2024-10, tier: 3}
+
+  paradoxes:
+    - text: "Joining BRICS to gain room against Washington cost room in Washington. Admission on 6 Jan 2025 brought Trump's threat of an extra BRICS tariff (the Jakarta Post counted a possible 52% total), after which Jakarta paid for its way back with a tariff-free market for 99% of US goods, a transshipment penalty aimed at Chinese goods, acceptance of US vehicle and drug standards and purchase pledges (USD 15bn of energy, 50 Boeing jets, in July 2025)."
+      confidence: B
+      sources:
+        - {url: "https://www.thejakartapost.com/opinion/2025/07/11/prabowos-diplomatic-temptation.html", title: "Prabowo's diplomatic temptation", publisher: "The Jakarta Post", date: 2025-07-11, tier: 3}
+        - {url: "https://www.yahoo.com/news/factbox-agreements-between-us-indonesian-071446282.html", title: "Factbox: agreements between US, Indonesian firms in leadup to trade deal", publisher: "Reuters via Yahoo News", date: 2025-07, tier: 3}
+        - {url: "https://www.nst.com.my/amp/business/economy/2026/02/1381467/indonesia-secures-19pct-tariff-us-reciprocal-trade-deal-watch", title: "Indonesia secures 19pct tariff in US reciprocal trade deal", publisher: "New Straits Times", date: 2026-02, tier: 3}
+    - text: "Offering China 'joint development' to avoid a Natuna clash legitimised the claim it was meant to blunt. The 9 Nov 2024 joint statement spoke of 'overlapping claims', a phrase Jakarta has never accepted; parliament forced the foreign minister to deny recognition of the nine-dash line on 3 Dec 2024, and the formula weakens the UNCLOS argument that is Indonesia's only legal shield."
+      confidence: B
+      sources:
+        - {url: "https://eastasiaforum.org/2025/05/31/prabowos-flawed-logic-on-the-natuna-joint-development-proposal/", title: "Prabowo's flawed logic on the Natuna joint development proposal", publisher: "East Asia Forum", date: 2025-05-31, tier: 2}
+        - {url: "https://asiatimes.com/2024/11/did-prabowo-just-yield-to-china-in-the-north-natuna-sea/", title: "Did Prabowo just yield to China in the North Natuna Sea?", publisher: "Asia Times", date: 2024-11, tier: 3}
+        - {url: "https://publish.pearlsandirritations.com/president-prabowos-plan-for-joint-development-with-china-hits-a-snag/", title: "President Prabowo's plan for joint development with China hits a snag", publisher: "Pearls and Irritations", date: 2024-12, tier: 4}
+    - text: "The nickel ban built a Chinese-owned industry, not an Indonesian one. Forcing processing onshore drew Chinese capital into Morowali; when Jakarta then cut ore quotas (Weda Bay reportedly from 42 to 12 million tonnes) the Chinese chamber of commerce wrote an open letter to Prabowo (May 2026) - the leverage over the miners is real, but so is the dependence on the smelters' owners, and a glut of semi-processed product."
+      confidence: C
+      sources:
+        - {url: "https://chinaglobalsouth.com/analysis/chinese-investors-indonesia-nickel-tensions/", title: "Indonesia's nickel ambitions collide with Chinese investors' expectations", publisher: "China Global South Project", date: 2026, tier: 3}
+        - {url: "https://eastasiaforum.org/2024/09/14/smelters-squeeze-indonesias-nickel-ore-supply/", title: "Smelters squeeze Indonesia's nickel ore supply", publisher: "East Asia Forum", date: 2024-09-14, tier: 2}
+    - text: "Arming from everyone buys no deterrent. Rafale, KAAN, J-10, KF-21, BrahMos and Japanese hulls cannot all be paid for under a 3% deficit cap (Jakarta cut its KF-21 share from KRW 1.7 trillion to 600 billion), cannot be made to work together, and each supplier becomes a lever; meanwhile each Western purchase is paired with a Chinese or Russian counterweight, which is the hedge turning into incoherence in the eyes of the suppliers."
+      confidence: B
+      sources:
+        - {url: "https://www.asianmilitaryreview.com/2025/07/indonesia-keeps-options-open-with-bewildering-fighter-smorgasbord-foc/", title: "Indonesia keeps options open with bewildering fighter smorgasbord", publisher: "Asian Military Review", date: 2025-07, tier: 3}
+        - {url: "https://thedefensepost.com/2026/04/08/south-korea-kf21-indonesia/amp/", title: "South Korea, Indonesia reaffirm KF-21 cooperation", publisher: "The Defense Post", date: 2026-04-08, tier: 3}
+        - {url: "https://rsis.edu.sg/rsis-publication/idss/ip26068-indonesias-heavy-strategic-hedging-amid-a-polarised-world/", title: "Indonesia's heavy strategic hedging amid a polarised world", publisher: "RSIS", date: 2026-05, tier: 2}
+    - text: "A peacekeeping offer to buy standing in Washington and the Muslim world ended by satisfying neither. Prabowo went from 20,000 troops (UN, Sept 2025) to up to 8,000 (Board of Peace, 19 Feb 2026) with a deputy-commander post, then froze the deployment on 17 Mar 2026 after the US-Israeli war on Iran, under pressure from the Ulema Council; Jakarta stays on a board whose conditions (Hamas not disarmed, consent of Palestinians and Muslim states) make deployment impossible."
+      confidence: B
+      sources:
+        - {url: "https://www.pbs.org/newshour/politics/indonesia-prepares-up-to-8000-troops-in-first-firm-commitment-to-gaza-peacekeeping-force", title: "Indonesia prepares up to 8,000 troops in first firm commitment to Gaza peacekeeping force", publisher: "PBS NewsHour", date: 2026-02, tier: 3}
+        - {url: "https://investortrust.id/international/97772/prabowo-freezes-gaza-peacekeeping-force-amid-escalating-middle-east-tensions", title: "Prabowo freezes Gaza peacekeeping force amid escalating Middle East tensions", publisher: "Investortrust", date: 2026-03, tier: 4}
+        - {url: "https://www.al-monitor.com/originals/2026/03/discussions-board-peace-hold-due-iran-war-indonesia-says", title: "Discussions with Board of Peace 'on hold' due to Iran war, Indonesia says", publisher: "Al-Monitor", date: 2026-03, tier: 3}
+    - text: "The soldier in the ministry weakens the democracy that is Indonesia's passport. The March 2025 TNI law and the police law let officers hold civilian posts, soldiers run kitchens for the free-meals programme, and the August 2025 protests named this 'dwifungsi' creep among their causes - the instability and the New-Order memory the investors and the Western partners read when they price the country."
+      confidence: B
+      sources:
+        - {url: "https://www.arabnews.com/node/2594064/world", title: "Indonesia lawmakers to pass bill allowing more military in government", publisher: "Arab News / Reuters", date: 2025-03, tier: 3}
+        - {url: "https://www.iris-france.org/en/indonesia-anatomy-of-a-crisis/", title: "Indonesia: anatomy of a crisis", publisher: "IRIS", date: 2025-09, tier: 2}
+        - {url: "https://www.intellinews.com/indonesia-s-august-protests-and-what-lies-behind-them-398632/", title: "Indonesia's August protests and what lies behind them", publisher: "bne IntelliNews", date: 2025-09, tier: 3}
+
+  reading: |
+    Indonesia under Prabowo is the textbook hedger that has chosen to hedge at scale: it has not left the free-and-active line, it has made the line wide enough to hold a BRICS seat, a US defence partnership, a Russian oil contract, an Australian security treaty and Chinese jets at the same time. In Luttwak's terms this is relational manoeuvre rather than alliance: no seam is exploited, because Jakarta sits on all of them, and the point is to make itself too useful to be pushed to either side. The method works while the great powers are in low-grade competition and the bills fall due in different currencies; the Lowy analysis dates its limit to April 2026, when the Iran war closed Hormuz and made energy, not doctrine, decide the week.
+    The paradoxes are the price of belonging everywhere. Each club costs standing in another: BRICS cost a tariff threat in Washington, the Natuna formula cost the legal case against Beijing, the Board of Peace cost the street at home, the nickel ban cost leverage over its own smelters. The material limits are older than Prabowo: a 3% deficit cap that cannot carry free meals, a capital city and an arsenal at once; a net energy importer; a navy for an archipelago of thousands of islands. The archipelago is Indonesia's strength (everyone needs its straits) and its weakness (no one can be kept out of them).
+    The grades here follow structure, not courtesy. Almost every great-power relation is partner, because Indonesia treats all of them as purchasable, and the bonds say what the partnerships are worth: Saudi Arabia, Palestine and Malaysia are kin, Turkey and Papua New Guinea affinity, the others bought. Whether this is strategy or drift is the open question in the literature; this card records the structure (low confidence on trend after April 2026, since the Gaza deployment, the overflight request and the J-10 contract are all unresolved as of 12 Oct 2026).

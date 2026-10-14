@@ -1,0 +1,453 @@
+from: TWN
+relations:
+  # ---------- objective ----------
+  - to: CHN
+    layer: objective
+    type: recognition_sought
+    summary: Taipei seeks acceptance of its separate existence as the Republic of China (Taiwan) and talks with Beijing 'on an equal and dignified' footing; Lai (1 Jan 2026) says the two sides are not subordinate to each other. Beijing's Taiwan Affairs Office called the speech full of lies. The ROC constitution's claim over the mainland is dormant and no territorial_claim row is written from Taipei's side.
+    since: 2024-05-20
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.thejakartapost.com/world/2026/01/01/taiwan-vows-to-defend-sovereignty-after-chinas-military-drill.html", title: "Taiwan vows to defend sovereignty after China's military drill", publisher: "The Jakarta Post (AFP)", date: 2026-01-01, tier: 3}
+  - to: org-un
+    layer: objective
+    type: membership_goal
+    summary: Taiwan holds no UN seat and seeks 'meaningful participation' in UN-system bodies; the European Parliament recommendations of May, July and October 2026 back that participation and reject China's attempts to restrict it.
+    since: 2024-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://focustaiwan.tw/politics/202610080010", title: "European Parliament EU-China recommendation backs Taiwan's participation in international bodies (Focus Taiwan report; title descriptive)", publisher: "Focus Taiwan (CNA)", date: 2026-10-08, tier: 3}
+      - {url: "https://www.taiwannews.com.tw/en/news/6381070", title: "Germany, Australia reaffirm Taiwan Strait peace", publisher: "Taiwan News", date: 2026-06-11, tier: 3}
+  - to: USA
+    layer: objective
+    type: influence_goal
+    summary: Taipei seeks to keep Washington committed by making the commitment worth keeping - arms purchases, a USD 250bn investment pledge plus USD 250bn of credit guarantees for a 15% tariff (Jan 2026), a further USD 20bn announced in Sep 2026 - while Trump says he is 'not looking to have somebody go independent'.
+    since: 2025-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.hawaiinewsnow.com/2026/01/16/us-taiwan-sign-250b-trade-deal-cutting-tariffs-taiwanese-goods", title: "US and Taiwan sign $250B trade deal, cutting tariffs on Taiwanese goods", publisher: "AP via Hawaii News Now", date: 2026-01-16, tier: 3}
+      - {url: "https://www.pbs.org/newshour/world/trump-weighs-taiwan-arms-package-after-summit-aimed-at-steadying-us-china-ties", title: "Trump weighs Taiwan arms package after summit aimed at steadying US-China ties", publisher: "AP via PBS NewsHour", date: 2026-05-15, tier: 3}
+  - to: HND
+    layer: objective
+    type: recognition_sought
+    summary: Taipei wants Honduras back (lost 26 Mar 2023). President Asfura campaigned on restoring ties and has ordered a review of the Castro-era China agreements; Vice Foreign Minister Chen said in June 2026 that Taipei wants relations restored as soon as possible. No decision found by October 2026.
+    since: 2026-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.bloomberg.com/news/articles/2026-05-07/honduras-reviews-china-ties-amid-push-to-court-us-investment", title: "Honduras Reviews China Deals, Mulls Restoring Taiwan Ties", publisher: "Bloomberg", date: 2026-05-07, tier: 3}
+      - {url: "https://www.tunota.com/economia/taiwan-busca-restablecer-cuanto-antes-amistad-cooperacion-con-honduras-2026-06-23", title: "Taiwan seeks to restore friendship and cooperation with Honduras as soon as possible", title_original: "Taiwán busca restablecer cuanto antes amistad y cooperación con Honduras", lang: es, publisher: "Tunota", date: 2026-06-23, tier: 3}
+
+  # ---------- alignment ----------
+  - to: USA
+    layer: alignment
+    type: security_guarantee
+    summary: No treaty and no explicit guarantee. The Taiwan Relations Act (1979) is the legal floor for arms sales and for US capacity to resist coercion; whether the US would intervene stays ambiguous, and Trump has said he does not need 'a war that's 9,500 miles away' and treats the pending arms package as a bargaining chip. Rubio says US policy is 'unchanged'.
+    since: 1979-04-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.pbs.org/newshour/world/trump-weighs-taiwan-arms-package-after-summit-aimed-at-steadying-us-china-ties", title: "Trump weighs Taiwan arms package after summit aimed at steadying US-China ties", publisher: "AP via PBS NewsHour", date: 2026-05-15, tier: 3}
+      - {url: "https://www.brookings.edu/articles/what-did-the-trump-xi-summit-actually-accomplish/", title: "What did the Trump-Xi summit actually accomplish?", publisher: "Brookings", date: 2026-09, tier: 2}
+
+  # ---------- dependency ----------
+  - to: USA
+    layer: dependency
+    type: arms_supply
+    summary: US arms notified to Congress in Dec 2025 - a record USD 11.1bn package; a further USD 14bn package was approved by lawmakers in Jan 2026 but Trump has not sent it ('in abeyance'). The Legislative Yuan funded part of both through the special budget (NT$780bn, passed 8 May 2026, tied to US letters of offer).
+    since: 2025-12-17
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    value: 11.1
+    unit: usd_bn_arms_package_notified_2025-12
+    sources:
+      - {url: "https://www.npr.org/2025/12/18/nx-s1-5648080/us-arms-sales-taiwan-10-billion", title: "US announces massive package of arms sales to Taiwan valued at more than $10 billion", publisher: "NPR", date: 2025-12-18, tier: 3}
+      - {url: "https://www.pbs.org/newshour/world/trump-weighs-taiwan-arms-package-after-summit-aimed-at-steadying-us-china-ties", title: "Trump weighs Taiwan arms package after summit aimed at steadying US-China ties", publisher: "AP via PBS NewsHour", date: 2026-05-15, tier: 3}
+      - {url: "https://www.taiwanplus.com/news/taiwan-news/military/260511002/defense-budget-compromise-cuts-spark-protest-and-security-concerns", title: "Defense Budget Compromise: Cuts Spark Protest and Security Concerns", publisher: "TaiwanPlus", date: 2026-05-11, tier: 3}
+  - to: USA
+    layer: dependency
+    type: trade_share
+    summary: The US overtook China and Hong Kong as Taiwan's first export market in 2025 on AI-server shipments; in Feb 2025 US shipments were USD 11.77bn, 28.5% of exports. Analysts warn the shift rides one product cycle.
+    since: 2025-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    value: 28.5
+    unit: share_of_exports_feb_2025
+    sources:
+      - {url: "https://www.tribuneindia.com/news/world/taiwan-breaks-free-from-china-dependence-as-us-becomes-top-export-market", title: "Taiwan breaks free from China dependence as US becomes top export market", publisher: "The Tribune (India)", date: 2025, tier: 3}
+      - {url: "https://timesofoman.com/article/159899-united-states-surpasses-china-to-become-taiwan-s-top-export-destination", title: "United States surpasses China to become Taiwan's top export destination", publisher: "Times of Oman", date: 2025, tier: 3}
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    summary: China and Hong Kong, once Taiwan's first export market, fell behind the US in 2025: in the record month of May 2025 they took USD 14.06bn against USD 15.52bn for the US.
+    since: 2025-05
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    value: 14.06
+    unit: usd_bn_exports_to_china_hk_may_2025
+    sources:
+      - {url: "https://timesofoman.com/article/159899-united-states-surpasses-china-to-become-taiwan-s-top-export-destination", title: "United States surpasses China to become Taiwan's top export destination", publisher: "Times of Oman", date: 2025, tier: 3}
+      - {url: "https://www.tribuneindia.com/news/world/taiwan-breaks-free-from-china-dependence-as-us-becomes-top-export-market", title: "Taiwan breaks free from China dependence as US becomes top export market", publisher: "The Tribune (India)", date: 2025, tier: 3}
+  - to: USA
+    layer: dependency
+    type: investment
+    summary: TSMC's own plan for the United States stands at USD 165bn (an ongoing USD 65bn in Phoenix plus three fabs, two packaging plants and an R&D centre); Lutnick wants 40% of Taiwan's chip chain moved to the US, which Vice Premier Cheng Li-chiun called 'impossible' (Taipei says capacity at home keeps growing).
+    since: 2025-03-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    value: 165
+    unit: usd_bn_tsmc_planned_us_investment
+    sources:
+      - {url: "https://pr.tsmc.com/english/news/3210", title: "TSMC Intends to Expand Its Investment in the United States to US$165 Billion to Power the Future of AI", publisher: "TSMC", date: 2025-03-03, tier: 1}
+      - {url: "https://finance.yahoo.com/news/taiwan-says-40-shift-chip-024347895.html", title: "Taiwan says 40% shift of chip capacity to US is 'impossible'", publisher: "Yahoo Finance (AFP)", date: 2026-01, tier: 3}
+      - {url: "https://www.taiwanplus.com/news/taiwan-news/taiwan-us-relations/260903023/lutnick-taiwan-to-bring-40percentage-of-semiconductor-production-to-us", title: "Lutnick: Taiwan to bring 40% of semiconductor production to US", publisher: "TaiwanPlus", date: 2026-09-03, tier: 3}
+  - to: QAT
+    layer: dependency
+    type: energy_import
+    summary: Qatar supplies about a third of Taiwan's LNG; Taiwan imports about 97% of its energy and holds about 10-11 days of gas. Taipei has sought extra LNG from Australia and the US while the Strait of Hormuz was closed in 2026 (Iran war).
+    since: 2026-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    value: 0.33
+    unit: share_of_lng_imports
+    sources:
+      - {url: "https://www.aspistrategist.org.au/taiwan-lacks-clarity-on-energy-security/", title: "Taiwan worsens its vulnerability to a Chinese energy blockade", publisher: "The Strategist (ASPI)", date: 2025, tier: 2}
+      - {url: "https://www.spglobal.com/commodity-insights/en/news-research/latest-news/lng/053024-taiwan-vulnerable-to-lng-supply-risks-in-the-event-of-a-maritime-blockade", title: "Taiwan vulnerable to LNG supply risks in the event of a maritime blockade", publisher: "S&P Global Commodity Insights", date: 2024-05-30, tier: 3}
+  - to: LTU
+    layer: dependency
+    type: trade_share
+    summary: Mirror of the Lithuanian file. Bilateral trade grew from EUR 111m (2021) to EUR 191m (2025); lasers, semiconductors, fintech, biotech, drones and defence are the cooperation lines.
+    since: 2021-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    value: 191
+    unit: eur_m_bilateral_trade_2025
+    sources:
+      - {url: "https://www.lrt.lt/en/news-in-english/19/2849005/taiwanese-investment-in-lithuania-growing-but-remains-modest", title: "Taiwanese investment in Lithuania growing but remains modest", publisher: "LRT", date: 2026-02-25, tier: 3}
+  - to: LTU
+    layer: dependency
+    type: investment
+    summary: Mirror of the Lithuanian file. Taiwanese direct investment in Lithuania rose from EUR 0.53m (2021) to EUR 7.21m (2024); the largest single investment under the CEE fund is USD 10m in TransferGo, and the USD 200m fund pledged in 2022 has not materialised at that scale.
+    since: 2021-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    value: 7.21
+    unit: eur_m_taiwanese_fdi_2024
+    sources:
+      - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2026-02-27/lithuania-towards-normalisation-relations-china", title: "Lithuania towards normalisation of relations with China", publisher: "OSW", date: 2026-02-27, tier: 2}
+      - {url: "https://www.lrt.lt/en/news-in-english/19/2849005/taiwanese-investment-in-lithuania-growing-but-remains-modest", title: "Taiwanese investment in Lithuania growing but remains modest", publisher: "LRT", date: 2026-02-25, tier: 3}
+  - to: IND
+    layer: dependency
+    type: investment
+    summary: About 250 Taiwanese firms have invested some USD 4bn in India (Foxconn, Delta, Wistron, Pegatron among them) and a Powerchip-Tata chip plant is planned in Gujarat; Taipei has told New Delhi it is time to open free-trade talks. India keeps trade offices only.
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    value: 4
+    unit: usd_bn_taiwanese_investment_in_india
+    sources:
+      - {url: "https://trilegal.com/Trilegal-IBA2025-Toronto/images/Country-Dossier-Taiwan-2025.pdf", title: "Country Dossier: Taiwan 2025", publisher: "Trilegal (IBA 2025)", date: 2025, tier: 3}
+      - {url: "https://www.outlookbusiness.com/news/taiwan-has-enormous-appetite-to-expand-ties-with-india-taiwanese-foreign-minister-wu-news-298591", title: "Taiwan has 'enormous appetite' to expand ties with India: Taiwanese Foreign Minister Wu", publisher: "Outlook Business", date: 2024, tier: 3}
+
+  # ---------- action ----------
+  - to: CHN
+    layer: action
+    type: exercise
+    summary: Strait Thunder-2025A (1-2 Apr 2025), after Joint Sword in May and October 2024; the PLA rehearsed identification, interception, joint blockade and precision strikes on simulated ports and energy facilities in the middle and southern strait. Taiwan's defence ministry counted at least 76 aircraft (37 across the median line) and 15 warships on the day.
+    since: 2025-04-01
+    until: 2025-04-02
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://globaltaiwan.org/2025/04/the-plas-strait-thunder-exercise/", title: "The PLA's Strait Thunder exercise", publisher: "Global Taiwan Institute", date: 2025-04, tier: 2}
+      - {url: "https://www.scmp.com/news/china/military/article/3304822/beijing-continues-military-drills-taiwan-strait-second-day", title: "Beijing continues military drills in Taiwan Strait for a second day", publisher: "South China Morning Post", date: 2025-04-02, tier: 3}
+  - to: CHN
+    layer: action
+    type: exercise
+    summary: Justice Mission-2025 (29-31 Dec 2025): navy, air force, rocket force, army and coast guard in several sectors around Taiwan, the closest live fire so far (some of 27 rockets landed inside the 24-nautical-mile zone) and the first use of a Type 075 amphibious ship; ended 31 Dec. Triggers cited: the USD 11.1bn arms package and Takaichi's Taiwan remarks. Concern from the EU, UK, Germany, France, Japan and Australia.
+    since: 2025-12-29
+    until: 2025-12-31
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://news.usni.org/2025/12/31/china-wraps-justice-mission-taiwan-blockade-drills", title: "China Wraps 'Justice Mission' Taiwan Blockade Drills", publisher: "USNI News", date: 2025-12-31, tier: 3}
+      - {url: "https://tsm.schar.gmu.edu/?p=832", title: "Taiwan Security Monitor: Justice Mission-2025 round of joint exercises", publisher: "Taiwan Security Monitor (George Mason University)", date: 2025-12, tier: 2}
+      - {url: "https://www.thejakartapost.com/world/2026/01/01/taiwan-vows-to-defend-sovereignty-after-chinas-military-drill.html", title: "Taiwan vows to defend sovereignty after China's military drill", publisher: "The Jakarta Post (AFP)", date: 2026-01-01, tier: 3}
+  - to: CHN
+    layer: action
+    type: sanction
+    summary: Beijing's legal punishment of 'Taiwan independence': guidelines of 21 Jun 2024 that threaten penalties up to death, a named list from Aug 2024 (including Vice President Hsiao, Defence Minister Koo, NSC head Wu) and a new round on 7 Jan 2026 - 14 'diehards' and 12 accomplices in all - barred from the mainland, Hong Kong and Macau. Enforcement outside China is not possible; the effect is signalling and travel/business bans.
+    since: 2024-06-21
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://tsm.schar.gmu.edu/?p=869", title: "Taiwan Security Monitor: Beijing adds names to the 'Taiwan independence diehard' list (7 Jan 2026)", publisher: "Taiwan Security Monitor (George Mason University)", date: 2026-01, tier: 2}
+      - {url: "https://asianews.network/china-sanctions-diehard-taiwan-independence-separatists", title: "China sanctions 'diehard Taiwan independence' separatists", publisher: "Asia News Network", date: 2026-01, tier: 3}
+  - to: CHN
+    layer: action
+    type: incident
+    summary: Xi Jinping received KMT chairwoman Cheng Li-wun in Beijing on 10 Apr 2026, the first meeting between the sitting heads of the CCP and KMT in almost a decade, ahead of the Trump summit; Beijing refuses to deal with the DPP government. The KMT opposes independence and says both sides belong to one China, 'interpreted differently'.
+    since: 2026-04-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.hppr.org/npr-news/2026-04-10/chinas-xi-meets-taiwan-opposition-leader-ahead-of-key-summit-with-trump", title: "China's Xi meets Taiwan opposition leader ahead of key summit with Trump", publisher: "NPR (AP)", date: 2026-04-10, tier: 3}
+  - to: CHN
+    layer: action
+    type: incident
+    summary: Grey-zone pressure continues beneath the named exercises. A Chinese-flagged work barge is suspected of damaging a subsea cable off Dongyin (Matsu) in Mar-Apr 2026 and 11 crew were detained; at least 11 cable-damage cases around Taiwan since 2023 per a US Senate record, which Beijing calls common accidents. Taiwan's defence ministry still logs PLA ships, aircraft and official ships daily (3 aircraft, 5-6 warships and 4 official ships on 28-29 Sep 2026), though air sorties in the zone from 1 Jan to 9 Aug 2026 were about 1,200 against 2,501 a year earlier.
+    since: 2026-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.taiwanplus.com/news/taiwan-news/taiwan-china-relations/260402001/taiwan-coast-guard-probes-suspected-undersea-cable-sabotage", title: "Taiwan Coast Guard Probes Suspected Undersea Cable Sabotage", publisher: "TaiwanPlus", date: 2026-04-02, tier: 3}
+      - {url: "https://www.mnd.gov.tw/en/news/plaact/87692", title: "PLA activities in the waters and airspace around Taiwan", publisher: "Ministry of National Defense, Republic of China", date: 2026-09, tier: 1}
+      - {url: "https://www.globalmilitary.net/news/pla-air-activity-around-taiwan-halved-in-2026/", title: "PLA Air Activity Around Taiwan Halved in 2026, but Its Warships Never Left", publisher: "Global Military", date: 2026-08, tier: 4}
+  - to: USA
+    layer: action
+    type: agreement
+    summary: AIT and TECRO signed a trade and investment agreement in mid-January 2026: the US country-specific tariff on Taiwan fell from 20% to 15% (from an initial 32%); Taiwanese firms pledged new direct investment of at least USD 250bn in chips, energy and AI plus at least USD 250bn of credit guarantees; chipmakers investing in the US get favourable tariff treatment. Beijing called it 'economic plunder'. In Sep 2026 Taiwan's economy minister announced a further USD 20bn.
+    since: 2026-01-15
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.hawaiinewsnow.com/2026/01/16/us-taiwan-sign-250b-trade-deal-cutting-tariffs-taiwanese-goods", title: "US and Taiwan sign $250B trade deal, cutting tariffs on Taiwanese goods", publisher: "AP via Hawaii News Now", date: 2026-01-16, tier: 3}
+      - {url: "https://www.koreajoongangdaily.com/world/us-taiwan-deal-features-15-percent-reciprocal-tariff-direct-taiwan-investments-totaling-250b/12348356", title: "U.S.-Taiwan deal features 15 percent 'reciprocal' tariff, direct Taiwan investments totaling $250B", publisher: "Korea JoongAng Daily", date: 2026-01, tier: 3}
+      - {url: "https://www.taiwanplus.com/news/taiwan-news/taiwan-us-relations/260903023/lutnick-taiwan-to-bring-40percentage-of-semiconductor-production-to-us", title: "Lutnick: Taiwan to bring 40% of semiconductor production to US", publisher: "TaiwanPlus", date: 2026-09-03, tier: 3}
+  - to: USA
+    layer: action
+    type: incident
+    summary: After the Beijing summit (14-16 May 2026) Trump called the USD 14bn arms package 'a very good negotiating chip' and held it 'in abeyance', said he was 'not looking to have somebody go independent', and treated the 1982 Six Assurances as a thing of 'a long way' back. Xi's state visit to Washington (23-25 Sep 2026) produced a Chinese readout that he urged the US to oppose Taiwan independence and a White House fact sheet that does not mention Taiwan. The two sides extended the trade truce.
+    since: 2026-05-15
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.pbs.org/newshour/world/trump-weighs-taiwan-arms-package-after-summit-aimed-at-steadying-us-china-ties", title: "Trump weighs Taiwan arms package after summit aimed at steadying US-China ties", publisher: "AP via PBS NewsHour", date: 2026-05-15, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2026/9/24/trump-xi-summit-four-key-takeaways-from-the-washington-dc-meeting", title: "Trump-Xi summit: four key takeaways from the Washington, DC meeting", publisher: "Al Jazeera", date: 2026-09-24, tier: 3}
+      - {url: "https://www.cnbc.com/2026/09/25/trump-xi-summit-takeaways.html", title: "Trump, Xi wrap state visit centered on spectacle over substance. Here are the top takeaways", publisher: "CNBC", date: 2026-09-25, tier: 3}
+      - {url: "https://www.brookings.edu/articles/what-did-the-trump-xi-summit-actually-accomplish/", title: "What did the Trump-Xi summit actually accomplish?", publisher: "Brookings", date: 2026-09, tier: 2}
+  - to: USA
+    layer: action
+    type: incident
+    summary: Transit stops. In July 2025 the Financial Times reported that the administration blocked Lai's New York stopover on a planned August trip to Paraguay, Guatemala and Belize; Taipei and the State Department denied that any trip was planned or cancelled, and Stimson's reading is that only the New York stop was rejected while lower-profile transits stayed open. Taiwan's foreign minister later said there are no obstacles to a transit for a Latin American trip, undated.
+    since: 2025-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/7/29/us-stopover-by-taiwans-president-cancelled-trump-mulls-china-trip-report", title: "US stopover by Taiwan's president cancelled; Trump mulls China trip: report", publisher: "Al Jazeera", date: 2025-07-29, tier: 3}
+      - {url: "https://www.stimson.org/?p=128712", title: "Analysis of Lai's US stopover row and the April 2026 Eswatini trip cancellation (Stimson Center; title descriptive)", publisher: "Stimson Center", date: 2026, tier: 2}
+  - to: JPN
+    layer: action
+    type: incident
+    summary: On 7 Nov 2025 Prime Minister Takaichi told the Diet that a Chinese naval blockade or use of force around Taiwan could be a 'survival-threatening situation' for Japan; China demanded a retraction and answered with a seafood ban, travel advice, dual-use export bans on 20 Japanese firms (Feb 2026) and a refused Li Qiang meeting. Takaichi did not retract. Japan then set fiscal 2030 (March 2031) for surface-to-air missiles on Yonaguni, 110 km from Taiwan.
+    since: 2025-11-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.nbcnews.com/world/asia/japan-china-exchange-barbs-sanae-takaichi-remarks-taiwan-rcna243396", title: "Japan and China exchange barbs after PM Takaichi's remarks over Taiwan", publisher: "NBC News", date: 2025-11, tier: 3}
+      - {url: "https://jamestown.org/takaichi-and-japan-resist-chinese-pressure/", title: "Takaichi and Japan resist Chinese pressure", publisher: "Jamestown Foundation", date: 2026, tier: 2}
+      - {url: "https://www.intellinews.com/japan-targets-2031-missile-deployment-near-taiwan-428011/", title: "Japan targets 2031 missile deployment near Taiwan", publisher: "bne IntelliNews", date: 2026-02, tier: 3}
+  - to: PHL
+    layer: action
+    type: exercise
+    summary: In Feb 2026 Philippine, US and Japanese aircraft drilled over the Bashi Channel, the first multilateral maritime cooperative activity beyond the South China Sea; Taiwan did not take part. A single Washington Post account (relayed by Taiwan News) says Philippine and Taiwanese coast guards have patrolled the channel and Taiwan sent observers to Kamandag 2025; unconfirmed.
+    since: 2026-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.arabnews.com/node/2634927/world", title: "Philippines, US, Japanese planes drill over Bashi Channel", publisher: "Arab News", date: 2026-02, tier: 3}
+      - {url: "https://www.lowyinstitute.org/the-interpreter/manila-s-lonely-island-centre-taiwan-contingency-planning", title: "Manila's lonely island at the centre of Taiwan contingency planning", publisher: "Lowy Institute", date: 2025, tier: 2}
+  - to: KOR
+    layer: action
+    type: incident
+    summary: President Lee Jae-myung visited Beijing in Jan 2026 and said before the trip that Seoul's respect for One China had not changed; Seoul did not join the international condemnation of the Dec 2025 drills.
+    since: 2026-01-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.koreatimes.co.kr/amp/foreignaffairs/20260103/lee-says-no-change-in-s-koreas-position-to-respect-one-china-policy", title: "Lee says no change in S. Korea's position to respect 'one-China' policy", publisher: "The Korea Times", date: 2026-01-03, tier: 3}
+      - {url: "https://www.clickorlando.com/news/world/2026/01/04/south-korean-president-visits-china-following-beijings-rising-tensions-with-japan-over-taiwan/", title: "South Korean president visits China following Beijing's rising tensions with Japan over Taiwan", publisher: "AP via ClickOrlando", date: 2026-01-04, tier: 3}
+  - to: CZE
+    layer: action
+    type: incident
+    summary: Mirror of the Czech file. In April 2026 Babis refused a government aircraft for Senate President Vystrcil's planned trip to Taiwan, calling it part of a 'pragmatic' foreign policy that would not hurt business with China; Czech-Taiwan institutional links (direct flights from 2023, a CzechInvest office in Taipei from 2024) remain.
+    since: 2026-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://sinopsis.cz/?p=11651", title: "Czech-Taiwan relations under Babis: the shift is real, but shallow", publisher: "Sinopsis (Martin Hala)", date: 2026-05-26, tier: 2}
+      - {url: "https://www.expats.cz/czech-news/article/czech-government-denies-senate-speaker-plane-for-taiwan-trip", title: "Has Czechia's Taiwan policy lost its wings? Plane row signals new approach to China", publisher: "Expats.cz", date: 2026-04, tier: 3}
+  - to: LTU
+    layer: action
+    type: incident
+    summary: Mirror of the Lithuanian file. The Taiwanese Representative Office in Vilnius keeps its 2021 name while Lithuania's government and president dispute whether it should become the 'Taipei' office; Taiwan said in Feb 2026 there were no talks on a rename, and a coalition partner argued in June 2026 for changing it within two months after notifying the US.
+    since: 2026-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.lrt.lt/en/news-in-english/19/2835246/taiwan-says-no-talks-with-lithuania-on-renaming-representative-office-amid-china-tensions", title: "Taiwan says no talks with Lithuania on renaming representative office amid China tensions", publisher: "LRT", date: 2026-02-10, tier: 3}
+      - {url: "https://www.lrt.lt/en/news-in-english/19/2976157/lithuanian-coalition-partner-backs-renaming-taiwan-office-to-mend-ties-with-beijing", title: "Lithuanian coalition partner backs renaming Taiwan office to mend ties with Beijing", publisher: "LRT", date: 2026-06-30, tier: 3}
+  - to: EST
+    layer: action
+    type: agreement
+    summary: Mirror of the Estonian file. On 2 Nov 2023 the Estonian cabinet revised its China policy and allowed a non-diplomatic Taiwanese representative office under the name 'Taipei'; Tsahkna said Estonia still follows the One China policy and Beijing warned against it.
+    since: 2023-11-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://ny1.com/nyc/all-boroughs/ap-top-news/2023/11/04/estonia-will-allow-taiwan-to-establish-a-nondiplomatic-representative-office-in-a-policy-revision", title: "Estonia will allow Taiwan to establish a nondiplomatic representative office in a policy revision", publisher: "AP (via NY1)", date: 2023-11-04, tier: 3}
+      - {url: "https://news.err.ee/1609153714/estonia-permits-taiwan-to-open-representative-office-in-tallinn", title: "Estonia permits Taiwan to open representative office in Tallinn", publisher: "ERR News", date: 2023-11, tier: 3}
+  - to: LVA
+    layer: action
+    type: agreement
+    summary: Mirror of the Latvian file. No diplomatic relations, but the Taipei Mission in Riga has operated since 1992 (moved to Ausekla iela in 2021) and 18 of 100 deputies sit in the Latvia-Taiwan friendship group; in Aug 2025 Taiwan's deputy speaker suggested Latvia open an office in Taiwan, a proposal only.
+    since: 1992-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.roc-taiwan.org/lv_en/post/17.html", title: "About the Mission (Taipei Mission in the Republic of Latvia)", publisher: "Ministry of Foreign Affairs of the Republic of China (Taiwan)", date: 2026, tier: 1}
+      - {url: "https://www.taiwannews.com.tw/en/news/6178044", title: "Taiwan deputy legislative speaker calls for closer ties with Latvia", publisher: "Taiwan News", date: 2025-08, tier: 3}
+  - to: POL
+    layer: action
+    type: agreement
+    summary: No diplomatic relations; Poland follows One China but keeps a Polish Office in Taipei (renamed 2018) and hosts the Taipei Representative Office, a Poland-Taiwan parliamentary group exists in both legislatures, and Taiwan is Poland's seventh trading partner in Asia. Taiwan's foreign minister has announced a Taiwan Language Center for Warsaw (date not found). No 2026 government statement from Warsaw was found.
+    since: 1995
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://pism.pl/publications/what-is-the-present-and-future-of-polands-cooperation-with-taiwan", title: "What is the Present and Future of Poland's Cooperation with Taiwan?", publisher: "Polish Institute of International Affairs (PISM)", date: 2023-08, tier: 2}
+  - to: org-eu
+    layer: action
+    type: incident
+    summary: European Parliament, 7 Jul 2026: recommendation on East Asia (542-37-79) naming Taiwan 44 times, calling it a key democratic partner, rejecting coercive changes to the status quo and asking for a Taiwan-EU cooperation framework on chips, AI and energy. On 7 Oct 2026 the EU-China recommendation rejected Beijing's limits on Taiwan's participation in international bodies and said the EU has never endorsed the PRC's One China principle. Non-binding.
+    since: 2026-07-07
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://focustaiwan.tw/politics/202607100008", title: "European Parliament recommendation on East Asia names Taiwan 44 times (Focus Taiwan report; title descriptive)", publisher: "Focus Taiwan (CNA)", date: 2026-07-10, tier: 3}
+      - {url: "https://focustaiwan.tw/politics/202610080010", title: "European Parliament EU-China recommendation backs Taiwan's participation in international bodies (Focus Taiwan report; title descriptive)", publisher: "Focus Taiwan (CNA)", date: 2026-10-08, tier: 3}
+  - to: DEU
+    layer: action
+    type: incident
+    summary: Australia-Germany 2+2 in Berlin on 8 Jun 2026: both governments opposed any unilateral change to the status quo by force or coercion, called for dialogue and backed Taiwan's meaningful participation in international organisations; Taiwan's foreign ministry called it the third such German-Australian statement of the year.
+    since: 2026-06-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.taiwannews.com.tw/en/news/6381070", title: "Germany, Australia reaffirm Taiwan Strait peace", publisher: "Taiwan News", date: 2026-06-11, tier: 3}
+  - to: AUS
+    layer: action
+    type: incident
+    summary: Same 8 Jun 2026 joint statement with Germany; Albanese and New Zealand's Luxon issued a separate statement stressing peace and stability in the strait.
+    since: 2026-06-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.taiwannews.com.tw/en/news/6381070", title: "Germany, Australia reaffirm Taiwan Strait peace", publisher: "Taiwan News", date: 2026-06-11, tier: 3}
+  - to: PRY
+    layer: action
+    type: visit
+    summary: President Santiago Peña made a four-day state visit to Taipei from 7 May 2026 (his fourth trip to the island), received by Lai with a military welcome; they signed agreements including an MoU on an AI computing centre, a day after Beijing urged Paraguay to 'make the right choice'.
+    since: 2026-05-07
+    until: 2026-05-10
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://abcnews.com/International/wireStory/paraguay-taiwan-reaffirm-ties-after-china-sought-lure-132772079", title: "Paraguay and Taiwan reaffirm ties after China sought to lure away another Taipei ally", publisher: "AP via ABC News", date: 2026-05, tier: 3}
+      - {url: "https://www.arabnews.pk/node/2642768", title: "Taiwan welcomes Paraguay leader as China applies diplomatic pressure", publisher: "Arab News (AP)", date: 2026-05, tier: 3}
+  - to: GTM
+    layer: action
+    type: visit
+    summary: President Bernardo Arevalo made his first state visit to Taipei in June 2025, received with full military honours in the year marking 90 years of ties; documents on investment and supply chains, semiconductor cooperation and political consultation were to be signed.
+    since: 2025-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://stratnewsglobal.com/world-news/guatemala-reaffirms-ties-with-taiwan-during-arevalos-first-visit/", title: "Guatemala reaffirms ties with Taiwan during Arevalo's first visit", publisher: "StratNews Global", date: 2025-06, tier: 3}
+      - {url: "https://www.globalsecurity.org/wmd/library/news/taiwan/2025/taiwan-250605-cna02.htm", title: "INTERVIEW/Taiwan trip to bring relations to next level: Guatemalan president", publisher: "CNA via GlobalSecurity.org", date: 2025-06-05, tier: 3}
+  - to: SWZ
+    layer: action
+    type: incident
+    summary: Lai's planned April 2026 visit to Eswatini was cancelled when Seychelles, Madagascar and Mauritius revoked overflight approval for his aircraft; the Presidential Office says China pressed them. It had not been rescheduled months later.
+    since: 2026-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.stimson.org/?p=128712", title: "Analysis of Lai's US stopover row and the April 2026 Eswatini trip cancellation (Stimson Center; title descriptive)", publisher: "Stimson Center", date: 2026, tier: 2}
+      - {url: "https://www.khan.co.kr/en/article/202604221137027", title: "Taiwan's Lai cancels Eswatini trip after overflight permissions revoked (Kyunghyang report; title descriptive)", publisher: "The Kyunghyang Shinmun", date: 2026-04-22, tier: 3}
+  - to: PLW
+    layer: action
+    type: agreement
+    summary: On 2 Sep 2026 Taiwan's foreign minister signed a joint statement with the leaders of Palau, the Marshall Islands and Tuvalu, the three Pacific states that still recognise Taipei, pledging closer cooperation.
+    since: 2026-09-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://focustaiwan.tw/politics/202609030022", title: "Taiwan's foreign minister signs joint statement with Palau, Marshall Islands and Tuvalu leaders (Focus Taiwan report; title descriptive)", publisher: "Focus Taiwan (CNA)", date: 2026-09-03, tier: 3}
+  - to: org-pif
+    layer: action
+    type: expulsion
+    summary: At the 2025 Pacific Islands Forum in Honiara the Solomon Islands prime minister, Beijing's closest security partner in the region, announced that the Forum would exclude all partners, China and Taiwan alike; the Taiwan question is described as splintering the Forum. Palau hosted the 2026 meeting, where Taiwan's foreign minister reaffirmed ties.
+    since: 2025-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.business-standard.com/world-news/taiwan-s-pacific-influence-dwindles-as-china-gains-ground-in-island-nations-125090800161_1.html", title: "Taiwan's Pacific influence dwindles as China gains ground in island nations", publisher: "Business Standard", date: 2025-09-08, tier: 3}
+  - to: NRU
+    layer: action
+    type: incident
+    summary: Nauru severed diplomatic relations with Taipei on 15 Jan 2024, two days after the Taiwan election, leaving Taipei with three Pacific allies (from six in 2019).
+    since: 2024-01-15
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.business-standard.com/world-news/taiwan-s-pacific-influence-dwindles-as-china-gains-ground-in-island-nations-125090800161_1.html", title: "Taiwan's Pacific influence dwindles as China gains ground in island nations", publisher: "Business Standard", date: 2025-09-08, tier: 3}
+  - to: RUS
+    layer: action
+    type: sanction
+    summary: Taiwan joined the sanctions on Russia in Feb 2022, banned chip sales to Russia and Belarus (77 items added to the export-ban list) and sanctioned about 1,900 entities; in Jan 2026, after Zelensky said Taiwan was a source of components for Russian missiles, Lai promised tighter control of third-country transhipment.
+    since: 2022-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://babel.ua/en/news/102230-taiwan-expands-sanctions-against-russia-and-bans-the-supply-of-goods-that-can-become-components-of-weapons", title: "Taiwan expands sanctions against Russia and bans the supply of goods that can become components of weapons", publisher: "Babel", date: 2024, tier: 3}
+      - {url: "https://news.liga.net/en/amp/politics/news/taiwan-is-ready-to-tighten-sanctions-after-zelenskys-words-about-supplying-missile-parts-to-russia", title: "Taiwan is ready to tighten sanctions after Zelensky's words about supplying missile parts to Russia", publisher: "LIGA.net", date: 2026-01, tier: 3}

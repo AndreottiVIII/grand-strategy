@@ -1,0 +1,359 @@
+from: PRK
+relations:
+  # ---------- objective ----------
+  - to: USA
+    layer: objective
+    type: recognition_sought
+    summary: "Pyongyang seeks acceptance of its nuclear-weapon status and an end to 'hostile policy' as the price of talks; Kim told the SPA on 21 Sep 2025 there can never be denuclearisation, and the Ninth Congress (Feb 2026) repeated that the two could 'get along' if Washington accepts the arsenal. Trump says he will meet Kim in 2026; Kim Yo Jong denies any contact."
+    since: 2022-09-08
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.pbs.org/newshour/world/north-korean-leader-recalls-good-personal-memories-of-trump-urges-u-s-to-drop-denuclearization-demands", title: "North Korean leader recalls good personal memories of Trump, urges U.S. to drop denuclearization demands", publisher: "PBS NewsHour / AP", date: 2025-09-22, tier: 3}
+      - {url: "https://keia.org/analysis/kim-jong-un-builds-a-wall-with-south-korea-at-party-congress/", title: "Kim Jong Un Builds a Wall With South Korea at Party Congress", publisher: "Korea Economic Institute of America", date: 2026-02-27, tier: 2}
+      - {url: "https://fox11online.com/news/nation-world/trump-says-he-plans-to-meet-with-kim-jong-un-at-some-point-in-2026-later-this-year-north-korea-north-korean-leader-57-very-powerful-nuclear-weapons-war-conflict-iran-president-donald-trump", title: "Trump eyes meeting with Kim Jong Un, says Kim will be 'fine' with a 'smart president'", publisher: "TNND / AP", date: 2026-08-19, tier: 3}
+
+  # ---------- alignment ----------
+  - to: RUS
+    layer: alignment
+    type: treaty
+    summary: "Comprehensive Strategic Partnership Treaty signed by Putin and Kim in Pyongyang on 19 Jun 2024 and ratified by the Federation Council on 6 Nov 2024; each side gives military and other assistance 'without delay' if the other is attacked, the clause invoked for the Korean troops in Kursk. Mirrored from Russia's row (same links)."
+    since: 2024-06-19
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://interfax.com/newsroom/top-stories/107423/", title: "Federation Council ratifies Russian-N. Korean Treaty of Strategic Partnership", publisher: "Interfax", date: 2024-11-06, tier: 3}
+      - {url: "https://apnews.com/article/vladimir-putin-kim-jong-un-russia-north-korea-summit-ukraine-a6b8d2c12de7ee2ab6716d4747c9850e", title: "Russia and North Korea sign partnership deal that appears to be the strongest since the Cold War", publisher: "Associated Press", date: 2024-06-19, tier: 3}
+      - {url: "https://www.politico.eu/article/kremlin-claims-complete-liberation-kursk-admits-north-korea-assistance-ukraine-war/", title: "Russia claims complete 'liberation' of Kursk, admits North Korea assistance", publisher: "Politico Europe", date: 2025-04-26, tier: 3}
+  - to: CHN
+    layer: alignment
+    type: treaty
+    summary: "Treaty of Friendship, Cooperation and Mutual Assistance of 1961 (China's only formal treaty ally); Xi noted its 65th anniversary during his state visit to Pyongyang on 8-9 Jun 2026 and laid out a four-point framework for strategic and economic ties."
+    since: 1961-07-11
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.caixinglobal.com/2026-06-08/xi-kim-pledge-closer-china-north-korea-ties-during-pyongyang-meeting-102452248.html", title: "Xi, Kim pledge closer China-North Korea ties during Pyongyang meeting", publisher: "Caixin Global", date: 2026-06-08, tier: 3}
+      - {url: "https://www.aljazeera.com/amp/news/2026/6/8/chinas-xi-jinping-arrives-in-north-korea-on-rare-state-visit", title: "China's Xi Jinping arrives in North Korea on rare state visit", publisher: "Al Jazeera", date: 2026-06-08, tier: 3}
+
+  # ---------- dependency ----------
+  - to: RUS
+    layer: dependency
+    type: military_presence
+    summary: "North Korean troops on Russian soil, the price of the treaty. 10,000-12,000 in Kursk from late 2024 (confirmed by Pyongyang on 28 Apr 2025), nearly 11,000 at the start of 2026 on Seoul's intelligence count, a KN-23/KN-24 missile unit in Voronezh (Aug 2026) and Russian plans for 30,000 more (Zelensky, Jul 2026). Casualties: about 4,700 by Apr 2025 (Seoul), more than 7,000 in 2024-25 (Ukrainian intelligence). Bloomberg's estimate is 16,000-22,000. The Seoul figure of early 2026 is used; discrepancy noted."
+    since: 2024-10
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    value: 11000
+    unit: north_korean_troops_in_kursk_start_2026
+    sources:
+      - {url: "https://www.yahoo.com/news/articles/nearly-11-000-north-korean-124958616.html", title: "Nearly 11,000 North Korean troops stationed in Russia's Kursk Oblast at start of 2026", publisher: "Yonhap (via Yahoo)", date: 2026-01, tier: 3}
+      - {url: "https://www.arabnews.com/node/2598962/world", title: "About 4,700 North Korean soldiers have been killed or wounded fighting for Russia, South Korea says", publisher: "Arab News / AP", date: 2025-04-30, tier: 3}
+      - {url: "https://rubryka.com/en/2026/07/26/30-tysyach-soldativ-kndr/", title: "Russia plans to deploy another 30,000 North Korean troops - Zelensky", publisher: "Rubryka", date: 2026-07-26, tier: 3}
+      - {url: "https://www.bloomberg.com/graphics/2026-north-korea-windfall/", title: "North Korea's windfall (16,000-22,000 troops; about USD 14bn from Russia 2022-25)", publisher: "Bloomberg", date: 2026-08-07, tier: 3}
+  - to: RUS
+    layer: dependency
+    type: arms_supply
+    summary: "North Korea is the shell and missile supplier of Russia's attrition war - about 12 million artillery rounds by mid-2025 on CFR's count, KN-23 ballistic missiles used on Ukraine since 2024 - in exchange for USD 10-14bn in cash, oil, food and technology (Bloomberg). Mirrored from Russia's row (same links); the MSMT's first report (29 May 2025) documented the arms transfers."
+    since: 2023-09
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    value: 12
+    unit: million_artillery_rounds_supplied_by_mid_2025
+    sources:
+      - {url: "https://www.cfr.org/article/how-north-korea-has-bolstered-russias-war-ukraine", title: "How North Korea Has Bolstered Russia's War in Ukraine", publisher: "Council on Foreign Relations", date: 2025-11, tier: 2}
+      - {url: "https://www.bloomberg.com/graphics/2026-north-korea-windfall/", title: "North Korea's windfall", publisher: "Bloomberg", date: 2026-08-07, tier: 3}
+      - {url: "https://www.mofa.go.jp/press/release/pressite_000001_01321.html", title: "Release of the First Report of the Multilateral Sanctions Monitoring Team (MSMT)", publisher: "Ministry of Foreign Affairs of Japan", date: 2025-05-29, tier: 1}
+  - to: RUS
+    layer: dependency
+    type: energy_import
+    summary: "Russian refined oil above the UN cap of 500,000 barrels a year - the White House said in May 2024 that Russia shipped more than 165,000 barrels in March 2024 alone and could sustain the pace; an open-source count of tanker visits to Vostochny put 2024 flows above one million barrels. The cap is the Security Council's, not Russia's: a payment in kind for shells."
+    since: 2024-03
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    value: 165000
+    unit: barrels_refined_petroleum_march_2024
+    note: "The one-million-barrel figure is an NK News report citing the Open Source Centre (tier 3), not the White House; the lower, official figure is used."
+    sources:
+      - {url: "https://www.wsls.com/news/politics/2024/05/02/russia-is-violating-un-limits-on-petroleum-shipments-to-north-korea-the-white-house-says/", title: "Russia is violating UN limits on petroleum shipments to North Korea, the White House says", publisher: "AP", date: 2024-05-02, tier: 3}
+      - {url: "https://nknews.org/2024/11/north-korean-tankers-transport-over-one-million-barrels-of-oil-from-russia/", title: "North Korean tankers transport over one million barrels of oil from Russia", publisher: "NK News", date: 2024-11, tier: 3}
+  - to: RUS
+    layer: dependency
+    type: remittances
+    summary: "Workers abroad, mostly in Russia - the MSMT (Sept 2026) estimates up to 25,000 North Koreans working in Russia's drone industry (Alabuga) on student visas, 8,000 sent in 2024, and up to USD 800m a year earned for the regime from workers abroad; China is the larger destination with an estimated 20,000-70,000."
+    since: 2024
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    value: 800
+    unit: usd_million_earned_by_workers_abroad_per_year_msmt
+    note: "The USD 800m is the MSMT's total for workers in all destinations; the 25,000 figure is an estimate of those in Russian drone production, versus 12,000 planned by end-2025 on Ukrainian intelligence."
+    sources:
+      - {url: "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/17/russia-taps-north-korean-workers-to-make-drones-under-fake-visas", title: "Russia taps North Korean workers to make drones under fake visas", publisher: "The Star (Malaysia)", date: 2026-09-17, tier: 3}
+      - {url: "https://pravda.com.ua/eng/news/2026/09/17/8053849", title: "Up to 25,000 North Koreans work in Russian drone production", publisher: "Ukrainska Pravda", date: 2026-09-17, tier: 3}
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    summary: "China took 98% of North Korea's official trade in 2024; two-way trade was USD 2.73bn in 2025 (up 25%, close to the 2019 level of 2.79bn) after a 5% fall in 2024 (USD 2.18bn), and kept rising in 2026 (Jan-Feb up 22%; USD 1.28bn in the first five months). Top flows: Chinese hair and wool for wig-making, North Korean wigs (USD 190.6m)."
+    since: 2024
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    value: 0.98
+    unit: share_of_official_trade_2024
+    note: "The 2022 Al Jazeera estimate was 95%; KEIA's 98% for 2024 is the most recent official-basis figure. Chinese customs data."
+    sources:
+      - {url: "https://keia.org/analysis/arms-sales-to-russia-and-trade-with-china-drive-north-koreas-economic-recovery/", title: "Arms Sales to Russia and Trade With China Drive North Korea's Economic Recovery", publisher: "Korea Economic Institute of America", date: 2026-09-02, tier: 2}
+      - {url: "https://www.businessday.co.za/world/asia/2026-01-20-chinas-2025-trade-with-north-korea-rebounds-to-pre-covid-levels/", title: "China's 2025 trade with North Korea rebounds to pre-Covid levels", publisher: "Reuters (via BusinessDay)", date: 2026-01-20, tier: 3}
+
+  # ---------- action ----------
+  - to: RUS
+    layer: action
+    type: visit
+    summary: "Kim and Putin held bilateral talks at the Diaoyutai guest house in Beijing on 3 Sep 2025 after the parade; Putin praised the 'heroism' of the Korean soldiers in Kursk and invited Kim to Russia; Kim called helping Russia a fraternal duty."
+    since: 2025-09-03
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.local10.com/news/world/2025/09/03/putin-meets-north-koreas-kim-in-beijing", title: "Putin meets North Korea's Kim in Beijing", publisher: "AP", date: 2025-09-03, tier: 3}
+  - to: RUS
+    layer: action
+    type: agreement
+    summary: "The first road bridge over the Tumen between Russia and North Korea opened in Sept 2026 - the physical sign of a tie that went from the June 2024 treaty to the Kursk force, a missile unit in Voronezh and about USD 14bn in Russian payments. Mirrored from Russia's row (same links)."
+    since: 2026-09-07
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.reuters.com/world/asia-pacific/north-korea-russia-open-their-first-road-bridge-symbol-expanding-ties-tass-2026-09-07/", title: "North Korea, Russia open their first road bridge, symbol of expanding ties", publisher: "Reuters", date: 2026-09-07, tier: 3}
+      - {url: "https://www.bloomberg.com/graphics/2026-north-korea-windfall/", title: "North Korea's windfall", publisher: "Bloomberg", date: 2026-08-07, tier: 3}
+  - to: CHN
+    layer: action
+    type: visit
+    summary: "Kim attended Beijing's parade for the 80th anniversary of the end of the Second World War on 3 Sep 2025 with Xi and Putin (his first multilateral event in 14 years in power, his daughter beside him) and held his sixth summit with Xi on 4 Sep, where Xi pledged support for a development path 'suited to its national conditions'."
+    since: 2025-09-03
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.local10.com/news/world/2025/09/03/putin-meets-north-koreas-kim-in-beijing", title: "Putin meets North Korea's Kim in Beijing", publisher: "AP", date: 2025-09-03, tier: 3}
+      - {url: "https://table.media/en/china/news/xi-meets-kim-advancing-friendly-relations", title: "Xi meets Kim: 'Advancing friendly relations'", publisher: "Table.Media", date: 2025-09-04, tier: 3}
+  - to: CHN
+    layer: action
+    type: visit
+    summary: "Xi made a two-day state visit to Pyongyang on 8-9 Jun 2026, his first in seven years, welcomed with a 21-gun salute; Kim called ties North Korea's 'top strategic priority'. Analysts read the trip as Beijing reasserting itself against Moscow's growing weight (rice, fertiliser, tourism and joint projects were the expected incentives)."
+    since: 2026-06-08
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/amp/news/2026/6/8/chinas-xi-jinping-arrives-in-north-korea-on-rare-state-visit", title: "China's Xi Jinping arrives in North Korea on rare state visit", publisher: "Al Jazeera", date: 2026-06-08, tier: 3}
+      - {url: "https://www.caixinglobal.com/2026-06-08/xi-kim-pledge-closer-china-north-korea-ties-during-pyongyang-meeting-102452248.html", title: "Xi, Kim pledge closer China-North Korea ties during Pyongyang meeting", publisher: "Caixin Global", date: 2026-06-08, tier: 3}
+  - to: USA
+    layer: action
+    type: incident
+    summary: "The Trump channel. Kim said on 21 Sep 2025 he had a 'good memory' of Trump; no meeting took place around APEC at Gyeongju in October 2025; Trump said on 19 Aug 2026 that he expects to meet Kim in 2026 and that Kim has '57' nuclear weapons, while Kim Yo Jong denied any communications as Ulchi Freedom Shield drills were scaled back."
+    since: 2025-09-21
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.pbs.org/newshour/world/north-korean-leader-recalls-good-personal-memories-of-trump-urges-u-s-to-drop-denuclearization-demands", title: "North Korean leader recalls good personal memories of Trump, urges U.S. to drop denuclearization demands", publisher: "PBS NewsHour / AP", date: 2025-09-22, tier: 3}
+      - {url: "https://fox11online.com/news/nation-world/trump-says-he-plans-to-meet-with-kim-jong-un-at-some-point-in-2026-later-this-year-north-korea-north-korean-leader-57-very-powerful-nuclear-weapons-war-conflict-iran-president-donald-trump", title: "Trump eyes meeting with Kim Jong Un, says Kim will be 'fine' with a 'smart president'", publisher: "TNND / AP", date: 2026-08-19, tier: 3}
+  - to: USA
+    layer: action
+    type: sanction
+    summary: "US sanctions on North Korea - OFAC designated six individuals and two entities on 12 Mar 2026 over the IT-worker schemes that brought in nearly USD 800m in 2024 (facilitators in the DPRK, Vietnam, Laos and Spain), building on actions of November 2025 against laundering bankers. Recorded from the receiving side; the imposing side's row belongs to the US card."
+    since: 2026-03-12
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://www.globalsecurity.org/wmd/library/news/dprk/2026/dprk-260312-treasury01.htm", title: "Treasury sanctions DPRK IT worker networks (12 Mar 2026)", publisher: "US Department of the Treasury (via GlobalSecurity)", date: 2026-03-12, tier: 1}
+      - {url: "https://www.nknews.org/2025/11/us-blacklists-north-korean-bankers-accused-of-laundering-cybercrime-funds/", title: "US blacklists North Korean bankers accused of laundering cybercrime funds", publisher: "NK News", date: 2025-11, tier: 3}
+  - to: USA
+    layer: action
+    type: incident
+    summary: "The Hwasong-20 solid-fuel ICBM was shown at the parade of 10 Oct 2025 (ninth and last engine test on 8 Sep 2025, thrust 1,971 kN); no flight test had been reported by October 2026."
+    since: 2025-10-10
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.koreatimes.co.kr/amp/foreignaffairs/northkorea/20251012/n-korea-unveils-new-hwasong-20-icbm-signaling-multi-warhead-ambitions", title: "N. Korea unveils new Hwasong-20 ICBM, signaling multi-warhead ambitions", publisher: "The Korea Times", date: 2025-10-12, tier: 3}
+      - {url: "https://www.nbcnews.com/world/north-korea/north-korea-long-range-missile-military-parade-rcna237012", title: "North Korea displays new long-range missile at a military parade celebrating Kim Jong Un", publisher: "NBC News", date: 2025-10, tier: 3}
+  - to: USA
+    layer: action
+    type: incident
+    summary: "Kim visited a new uranium-enrichment plant on 3 Jun 2026 (the third site disclosed), saying weapons-grade capacity has 'more than doubled' in five years; the IAEA said the building matches what it tracked at Yongbyon since December 2024, and Washington called it 'deeply troubling' and restated 'complete denuclearization'. A March 2026 estimate puts the arsenal at about 60 warheads."
+    since: 2026-06-03
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.armscontrol.org/node/15391", title: "North Korea Unveils New Enrichment Facility", publisher: "Arms Control Association", date: 2026-06, tier: 2}
+      - {url: "https://www.wlrn.org/npr-breaking-news/2026-06-04/north-korea-unveils-a-new-plant-to-produce-fuel-for-nuclear-weapons", title: "North Korea unveils a new plant to produce fuel for nuclear weapons", publisher: "NPR", date: 2026-06-04, tier: 3}
+  - to: USA
+    layer: action
+    type: incident
+    summary: "The Bybit heist - the FBI attributed to North Korea the theft of about USD 1.5bn in virtual assets on 21 Feb 2025 (TraderTraitor / Lazarus cluster). Chainalysis counts at least USD 2.02bn stolen by North Korean hackers in 2025, up 51% on 2024, out of about USD 3.4bn stolen industry-wide."
+    since: 2025-02-21
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    value: 2.02
+    unit: usd_bn_crypto_stolen_2025
+    sources:
+      - {url: "https://bleepingcomputer.com/news/security/fbi-confirms-lazarus-hackers-were-behind-15b-bybit-crypto-heist", title: "FBI confirms Lazarus hackers were behind USD 1.5B Bybit crypto heist", publisher: "BleepingComputer", date: 2025-02, tier: 3}
+      - {url: "https://www.chainalysis.com/blog/crypto-hacking-stolen-funds-2026/", title: "2025 crypto theft: North Korean hackers stole at least USD 2.02bn", publisher: "Chainalysis", date: 2025-12-18, tier: 3}
+  - to: KOR
+    layer: action
+    type: incident
+    summary: "Constitution revised in March 2026 to define the territory as the land bordering China and Russia to the north and South Korea to the south and to remove all references to reunification; the president of the State Affairs Commission takes command of nuclear forces. Follows Kim's December 2023 - January 2024 declaration of South Korea as the 'primary foe and invariable principal enemy'. The Ninth Congress (Feb 2026) called South Korea the 'most hostile' state and ruled out all dealings."
+    since: 2026-03
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    note: "The adoption date is reported variously (March 2026 per Yonhap; one analysis points to the October 2024 SPA session); the Yonhap/Korea Herald date of May 2026 reporting is used."
+    sources:
+      - {url: "https://www.koreaherald.com/article/10732099", title: "N. Korea removes 'unification' reference from constitution", publisher: "The Korea Herald / Yonhap", date: 2026-05-06, tier: 3}
+      - {url: "https://keia.org/analysis/kim-jong-un-builds-a-wall-with-south-korea-at-party-congress/", title: "Kim Jong Un Builds a Wall With South Korea at Party Congress", publisher: "Korea Economic Institute of America", date: 2026-02-27, tier: 2}
+  - to: KOR
+    layer: action
+    type: incident
+    summary: "Border severance and fortification since 2024: roads and rails cut, barbed-wire fences within 80 metres of the line, mines cleared and laid 5-10 metres from it, about 5,000 troops mobilised in the first half of 2026 (about 1,000 a year earlier); Seoul expects completion around 2028 and says only about 250 of the 1,292 line markers remain. Seoul says the work violates the 1953 armistice; the UN Command takes a more cautious line."
+    since: 2024-10
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.koreatimes.co.kr/southkorea/defense/20261003/cover-story-north-koreas-border-fortification-raises-questions-over-dmz-buffer-role", title: "North Korea's border fortification raises questions over DMZ buffer role", publisher: "The Korea Times", date: 2026-10-03, tier: 3}
+      - {url: "https://asianews.network/?p=282327", title: "Seoul says North Korean border fortification violates 1953 armistice", publisher: "Asia News Network", date: 2026, tier: 3}
+  - to: KOR
+    layer: action
+    type: incident
+    summary: "Two mines detonated along the line on 21 Sep 2026; Seoul's defence minister said they were deliberately planted by the North, and Kim Yo Jong called the assessment a 'conspiratorial farce', threatening retaliation if the South fires on troops doing the work. Seoul counts about 30 crossings of the line in September."
+    since: 2026-09-21
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.euronews.com/2026/09/30/north-korea-slams-souths-claim-it-was-behind-dmz-mine-blasts-calling-it-a-farce", title: "North Korea slams South's claim it was behind DMZ mine blasts, calling it a farce", publisher: "Euronews", date: 2026-09-30, tier: 3}
+      - {url: "https://www.koreatimes.co.kr/southkorea/defense/20261003/cover-story-north-koreas-border-fortification-raises-questions-over-dmz-buffer-role", title: "North Korea's border fortification raises questions over DMZ buffer role", publisher: "The Korea Times", date: 2026-10-03, tier: 3}
+  - to: JPN
+    layer: action
+    type: incident
+    summary: "Missile tests into the Sea of Japan - the first ballistic launch of 2026 on 4 Jan, ten rounds from the KN-25 launcher on 14 Mar, launches on 12 Aug (about 700 km, outside Japan's EEZ) and 20 Sep 2026; the 11th suspected ballistic launch of the year came in August. Japan's prime minister Takaichi seeks a summit on the abduction issue; Pyongyang has not publicly replied."
+    since: 2026-01-04
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://thedefensepost.com/2026/01/04/north-korea-missile-test-2026/", title: "North Korea Fires Ballistic Missiles in First Test of 2026", publisher: "The Defense Post", date: 2026-01-04, tier: 3}
+      - {url: "https://news.usni.org/2026/03/16/north-korea-fires-10-missiles-over-sea-of-japan-in-latest-multiple-rocket-launcher-system-test", title: "North Korea fires 10 missiles over Sea of Japan in latest multiple rocket launcher system test", publisher: "USNI News", date: 2026-03-16, tier: 3}
+      - {url: "https://www.nknews.org/2026/06/takaichi-seeks-courageous-summit-with-kim-jong-un-to-resolve-abduction-issue/", title: "Takaichi seeks 'courageous' summit with Kim Jong Un to resolve abduction issue", publisher: "NK News", date: 2026-06, tier: 3}
+  - to: UKR
+    layer: action
+    type: incident
+    summary: "The Kursk deployment against Ukrainian forces - from late 2024 Korean troops fought in Russia's Kursk region; Pyongyang confirmed it on 28 Apr 2025 and called the soldiers heroes; Seoul counted about 4,700 killed or wounded by April 2025, Ukrainian intelligence more than 7,000 in 2024-25 (not independently verified). KN-23 missiles from North Korea have been used on Ukraine."
+    since: 2024-10
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.nbcnews.com/world/asia/north-korea-confirms-sent-troops-russia-calling-heroes-rcna203245", title: "North Korea confirms it sent troops to Russia, calling them heroes", publisher: "NBC News", date: 2025-04-28, tier: 3}
+      - {url: "https://www.arabnews.com/node/2598962/world", title: "About 4,700 North Korean soldiers have been killed or wounded fighting for Russia, South Korea says", publisher: "Arab News / AP", date: 2025-04-30, tier: 3}
+      - {url: "https://kyivindependent.com/north-korean-troops-took-over-7-000-casualties-in-russias-kursk-oblast-hur-claims/", title: "Ukraine reveals new figures for North Korean troop losses in Russia's Kursk Oblast", publisher: "The Kyiv Independent", date: 2025, tier: 3}
+  - to: IRN
+    layer: action
+    type: visit
+    summary: "Iran named a new ambassador to Pyongyang in January 2026 after a five-year vacancy; Pyongyang had condemned the US strikes on Iran's nuclear sites of June 2025. Mirrored from Iran's card (same links); no arms transfer documented in the period."
+    since: 2026-01
+    until: null
+    last_verified: 2026-10-14
+    confidence: C
+    sources:
+      - {url: "https://www.nknews.org/2026/01/new-iranian-ambassador-to-north-korea-assumes-post-after-5-year-vacancy/", title: "New Iranian ambassador to North Korea assumes post after 5-year vacancy", publisher: "NK News", date: 2026-01, tier: 3}
+      - {url: "https://www.reuters.com/world/americas/world-leaders-react-us-attack-iran-2025-06-22/", title: "World reaction to US attacks on Iranian nuclear sites", publisher: "Reuters", date: 2025-06-22, tier: 3}
+  - to: SYR
+    layer: action
+    type: incident
+    summary: "Loss of the Syrian partner - Assad fell in December 2024; on 10 Apr 2025 the new government and South Korea agreed to establish diplomatic relations and open embassies; North Korean state media stopped mentioning Syria."
+    since: 2024-12-08
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://english.alarabiya.net/News/middle-east/2025/04/11/south-korea-establishes-diplomatic-ties-with-syria-a-north-korea-ally", title: "South Korea establishes diplomatic ties with Syria, a North Korea ally", publisher: "Al Arabiya", date: 2025-04-11, tier: 3}
+      - {url: "https://english.enabbaladi.net/archives/2025/04/seoul-gains-ally-damascus-seeks-support/", title: "Seoul gains ally, Damascus seeks support", publisher: "Enab Baladi", date: 2025-04, tier: 3}
+  - to: VNM
+    layer: action
+    type: visit
+    summary: "To Lam, general secretary of the Vietnamese Communist Party, made a state visit to Pyongyang on 9-11 Oct 2025 for the party's 80th anniversary, the first leader-level visit since 2007; agreed to deepen exchanges and coordinate at the UN and ASEAN Regional Forum."
+    since: 2025-10-09
+    until: 2025-10-11
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://english.vtv.vn/news/vietnamese-party-general-secretary-to-pay-state-visit-to-dprk-20251007094032806.htm", title: "Vietnamese Party General Secretary to pay state visit to DPRK", publisher: "VTV (Vietnam state broadcaster, official statement)", date: 2025-10-07, tier: 1}
+      - {url: "https://worldview.ranenetwork.com/content/analysis/2025-10-15/vietnam-s-lam-extends-diplomatic-balancing-act-with-rare-north-korea-visit", title: "Vietnam's Lam extends diplomatic balancing act with rare North Korea visit", publisher: "RANE / Stratfor", date: 2025-10-15, tier: 2}
+  - to: LAO
+    layer: action
+    type: visit
+    summary: "President Thongloun Sisoulith made a state visit to Pyongyang on 7-8 Oct 2025 for the party's 80th anniversary and the 60th anniversary of the 1965 Kaysone-Kim Il Sung summit; the first trip since 2011."
+    since: 2025-10-07
+    until: 2025-10-08
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.koreatimes.co.kr/amp/foreignaffairs/northkorea/20251008/n-koreas-kim-holds-talks-with-lao-president-in-pyongyang-kcna", title: "N. Korea's Kim holds talks with Lao president in Pyongyang: KCNA", publisher: "The Korea Times", date: 2025-10-08, tier: 3}
+      - {url: "https://kpl.gov.la/En/detail.aspx?id=94960", title: "President Thongloun Sisoulith leads high-level delegation to DPRK to strengthen bilateral ties", publisher: "KPL (Lao state news agency, official statement)", date: 2025-10, tier: 1}
+  - to: MNG
+    layer: action
+    type: visit
+    summary: "Foreign Minister Ri Yong Ho visited Ulaanbaatar in December 2024 to review plans for the 70th anniversary of relations; a vice foreign minister had led the first delegation in five years in March 2024. No 2026 contact was verified."
+    since: 2024-12
+    until: null
+    last_verified: 2026-10-14
+    confidence: C
+    sources:
+      - {url: "https://nknews.org/2024/03/north-korean-delegation-visits-mongolia-for-first-time-in-five-years", title: "North Korean delegation visits Mongolia for first time in five years", publisher: "NK News", date: 2024-03, tier: 3}
+  - to: BLR
+    layer: action
+    type: visit
+    summary: "A North Korean economic delegation left Pyongyang on 29 May 2026 for Belarus and Russia (Belagro-2026 in Minsk, 2-6 Jun). Mirrored from Belarus's row (same link)."
+    since: 2026-05-29
+    until: null
+    last_verified: 2026-10-14
+    confidence: C
+    sources:
+      - {url: "https://isans.org/analysis/belarus-review/belarus-review-by-isans-june-1-2026.html", title: "Belarus Review by iSANS - June 1, 2026 (DPRK delegation to Belagro-2026)", publisher: "iSANS", date: 2026-06-01, tier: 2}
+  - to: org-nato
+    layer: action
+    type: incident
+    summary: "North Korea, with China, criticised NATO after the Ankara summit of July 2026 (the Alliance's Indo-Pacific partners met on 7 Jul). Mirrored from the NATO card's link; no further detail on the statement was read."
+    since: 2026-07
+    until: null
+    last_verified: 2026-10-14
+    confidence: C
+    sources:
+      - {url: "https://www.turkiyetoday.com/world/north-korea-china-criticize-nato-after-ankara-summit-3223670", title: "North Korea, China criticize NATO after Ankara summit", publisher: "Turkiye Today", date: 2026-07, tier: 3}
+  - to: org-un
+    layer: action
+    type: incident
+    summary: "The UN Panel of Experts monitoring the sanctions ended after Russia vetoed its renewal on 28 Mar 2024 (China abstaining; the other 13 voted in favour); the sanctions themselves remain in force. Eleven states answered by creating the Multilateral Sanctions Monitoring Team in October 2024, whose first report (29 May 2025) covered Russia-DPRK arms transfers and troops, and whose second (Oct 2025) covered cyber links."
+    since: 2024-03-28
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://www.armscontrol.org/act/2024-05/news/russia-ends-north-korean-sanctions-panel", title: "Russia Ends North Korean Sanctions Panel", publisher: "Arms Control Association", date: 2024-05, tier: 2}
+      - {url: "https://www.csis.org/analysis/russias-veto-dismembering-un-sanctions-regime-north-korea", title: "Russia's Veto: Dismembering the UN Sanctions Regime on North Korea", publisher: "CSIS", date: 2024-03, tier: 2}
+      - {url: "https://www.mofa.go.jp/press/release/pressite_000001_01321.html", title: "Release of the First Report of the Multilateral Sanctions Monitoring Team (MSMT)", publisher: "Ministry of Foreign Affairs of Japan", date: 2025-05-29, tier: 1}

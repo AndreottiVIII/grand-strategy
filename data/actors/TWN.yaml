@@ -1,14 +1,183 @@
 id: TWN
 name: Taiwan
+short: Taiwan
 type: state
 iso2: tw
 wikipedia: https://en.wikipedia.org/wiki/Taiwan
 coords:
-- 121.56
-- 25.04
+  - 121.56
+  - 25.04
 seat: Taipei
-regions:
-- world
-card: stub
-tier: minor
+regions: ['east-asia']
+card: full
+tier: protagonist
+last_verified: 2026-10-12
 dataset: wikidata
+
+recognition:
+  note: "The Republic of China (Taiwan) is recognised by 12 states (the recognition dataset holds 11; the Holy See is written by hand in the Vatican's own file): Paraguay, Guatemala, Belize, Haiti, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines, the Marshall Islands, Palau, Tuvalu, Eswatini and the Holy See. It lost Honduras (March 2023) and Nauru (January 2024) to Beijing. It holds no UN seat; Beijing treats it as a province and the great majority of states, including the United States, Japan and the EU members, keep unofficial ties under their own One China formulas."
+  source: https://abcnews.com/International/wireStory/paraguay-taiwan-reaffirm-ties-after-china-sought-lure-132772079
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Stay a self-governing democracy and make an attack or blockade too costly to try: hold the status quo (Lai: the Republic of China and the People's Republic are not subordinate to each other), offer talks to Beijing only on 'an equal and dignified' footing, and build the deterrent - a defence budget of 3.32% of GDP in 2026 and a pledge of 5% by 2030."
+      confidence: B
+      sources:
+        - {url: "https://www.thejakartapost.com/world/2026/01/01/taiwan-vows-to-defend-sovereignty-after-chinas-military-drill.html", title: "Taiwan vows to defend sovereignty after China's military drill (Lai's New Year address)", publisher: "The Jakarta Post (AFP)", date: 2026-01-01, tier: 3}
+        - {url: "https://www.hppr.org/npr-news/2026-01-22/the-taiwanese-presidents-proposal-to-hike-defense-spending-faces-gridlock-at-home", title: "The Taiwanese president's proposal to hike defense spending faces gridlock at home", publisher: "NPR", date: 2026-01-22, tier: 3}
+        - {url: "https://www.taiwanplus.com/news/taiwan-news/military/260821014/taiwan-proposes-record-annual-defense-budget-with-legislative-challenges-ahead", title: "Taiwan proposes record annual defense budget with legislative challenges ahead", publisher: "TaiwanPlus", date: 2026-08-21, tier: 3}
+    - rank: 2
+      text: "Keep the United States committed and make that commitment cost Washington more to drop than to keep: arms (a record USD 11.1bn package notified in December 2025, a further USD 14bn awaiting Trump's signature), a USD 250bn investment pledge plus USD 250bn of credit guarantees in exchange for a 15% tariff, and the Taiwan Relations Act as the legal floor."
+      confidence: B
+      sources:
+        - {url: "https://www.pbs.org/newshour/world/trump-weighs-taiwan-arms-package-after-summit-aimed-at-steadying-us-china-ties", title: "Trump weighs Taiwan arms package after summit aimed at steadying US-China ties", publisher: "AP via PBS NewsHour", date: 2026-05-15, tier: 3}
+        - {url: "https://www.hawaiinewsnow.com/2026/01/16/us-taiwan-sign-250b-trade-deal-cutting-tariffs-taiwanese-goods", title: "US and Taiwan sign $250B trade deal, cutting tariffs on Taiwanese goods", publisher: "AP via Hawaii News Now", date: 2026-01-16, tier: 3}
+        - {url: "https://www.npr.org/2025/12/18/nx-s1-5648080/us-arms-sales-taiwan-10-billion", title: "US announces massive package of arms sales to Taiwan valued at more than $10 billion", publisher: "NPR", date: 2025-12-18, tier: 3}
+    - rank: 3
+      text: "Stay indispensable: keep the leading edge of semiconductors and AI servers on the island while exporting enough of it (TSMC's USD 165bn plan for Arizona) to buy goodwill. Taipei calls Lutnick's target of moving 40% of the chip supply chain to the United States 'impossible' and insists capacity at home keeps growing."
+      confidence: B
+      sources:
+        - {url: "https://pr.tsmc.com/english/news/3210", title: "TSMC Intends to Expand Its Investment in the United States to US$165 Billion to Power the Future of AI", publisher: "TSMC", date: 2025-03-03, tier: 1}
+        - {url: "https://finance.yahoo.com/news/taiwan-says-40-shift-chip-024347895.html", title: "Taiwan says 40% shift of chip capacity to US is 'impossible'", publisher: "Yahoo Finance (AFP)", date: 2026-01, tier: 3}
+        - {url: "https://www.taiwanplus.com/news/taiwan-news/taiwan-us-relations/260903023/lutnick-taiwan-to-bring-40percentage-of-semiconductor-production-to-us", title: "Lutnick: Taiwan to bring 40% of semiconductor production to US", publisher: "TaiwanPlus", date: 2026-09-03, tier: 3}
+    - rank: 4
+      text: "Widen the circle of states that treat Taiwan as a partner: hold the 12 diplomatic allies, win Honduras back (the Asfura government is reviewing the China deals of 2023), and push 'meaningful participation' in international bodies through the European, Japanese, German and Australian statements of 2026."
+      confidence: B
+      sources:
+        - {url: "https://www.bloomberg.com/news/articles/2026-05-07/honduras-reviews-china-ties-amid-push-to-court-us-investment", title: "Honduras Reviews China Deals, Mulls Restoring Taiwan Ties", publisher: "Bloomberg", date: 2026-05-07, tier: 3}
+        - {url: "https://www.taiwannews.com.tw/en/news/6381070", title: "Germany, Australia reaffirm Taiwan Strait peace", publisher: "Taiwan News", date: 2026-06-11, tier: 3}
+        - {url: "https://abcnews.com/International/wireStory/paraguay-taiwan-reaffirm-ties-after-china-sought-lure-132772079", title: "Paraguay and Taiwan reaffirm ties after China sought to lure away another Taipei ally", publisher: "AP via ABC News", date: 2026-05, tier: 3}
+    - rank: 5
+      text: "Reduce the economic hostage that China holds: the United States overtook China and Hong Kong as the first export market in 2025 (AI servers), the New Southbound and India channels widen, and LNG is being bought from the US and Australia to dilute Qatar - while the AI-export boom makes the economy narrower, not broader."
+      confidence: B
+      sources:
+        - {url: "https://www.tribuneindia.com/news/world/taiwan-breaks-free-from-china-dependence-as-us-becomes-top-export-market", title: "Taiwan breaks free from China dependence as US becomes top export market", publisher: "The Tribune (India)", date: 2025, tier: 3}
+        - {url: "https://timesofoman.com/article/159899-united-states-surpasses-china-to-become-taiwan-s-top-export-destination", title: "United States surpasses China to become Taiwan's top export destination", publisher: "Times of Oman", date: 2025, tier: 3}
+    - rank: 6
+      text: "Hold the home front together: divided government (a KMT-TPP majority against a DPP president) has to be managed well enough to fund the defence, keep the grid up and drill the civilian population - the 2025 recall votes, the 2026 budget fight and the May 2026 impeachment attempt are the tests of that."
+      confidence: A
+      sources:
+        - {url: "https://www.anews.com.tr/asia/2026/05/19/impeachment-motion-against-taiwanese-leader-lai-fails/amp", title: "Impeachment motion against Taiwanese leader Lai fails", publisher: "Anadolu (Anews)", date: 2026-05-19, tier: 3}
+        - {url: "https://www.csmonitor.com/World/Asia-Pacific/2025/0726/Taiwan-recall-vote-defeated-preserving-China-friendly-lawmakers-seats", title: "Taiwan recall vote defeated, preserving China-friendly lawmakers' seats", publisher: "The Christian Science Monitor", date: 2025-07-26, tier: 3}
+        - {url: "https://taiwaninsight.org/2025/08/14/democratic-lessons-from-taiwans-mass-recall-movement/", title: "Democratic lessons from Taiwan's mass recall movement", publisher: "Taiwan Insight (University of Nottingham)", date: 2025-08-14, tier: 2}
+
+  means:
+    - domain: diplomatic
+      text: "Recognition and partnership diplomacy at small scale: state visits (President Peña in Taipei, 7-10 May 2026), a joint statement with Palau, the Marshall Islands and Tuvalu (2 Sep 2026), unofficial offices in the Baltics and Central Europe, and a harvest of like-minded statements from Berlin, Canberra and Strasbourg. Trips abroad are the weak point: Lai's April 2026 flight to Eswatini was cancelled when Seychelles, Madagascar and Mauritius revoked overflight."
+      confidence: B
+      sources:
+        - {url: "https://abcnews.com/International/wireStory/paraguay-taiwan-reaffirm-ties-after-china-sought-lure-132772079", title: "Paraguay and Taiwan reaffirm ties after China sought to lure away another Taipei ally", publisher: "AP via ABC News", date: 2026-05, tier: 3}
+        - {url: "https://focustaiwan.tw/politics/202609030022", title: "Taiwan's foreign minister signs joint statement with Palau, Marshall Islands and Tuvalu leaders (Focus Taiwan report; title descriptive)", publisher: "Focus Taiwan (CNA)", date: 2026-09-03, tier: 3}
+        - {url: "https://www.taiwannews.com.tw/en/news/6381070", title: "Germany, Australia reaffirm Taiwan Strait peace", publisher: "Taiwan News", date: 2026-06-11, tier: 3}
+    - domain: informational
+      text: "Naming the threat in law and in speech: Lai's 17 measures of 13 March 2025 declared China a 'foreign hostile force' under the Anti-Infiltration Act and restored military courts for espionage; the New Year 2026 address answered the December drills with a call for talks on equal footing; the Mainland Affairs Council answers each Beijing list or rule. The aim is to keep the democratic story, not the sovereignty claim, in front of Western audiences."
+      confidence: B
+      sources:
+        - {url: "https://www.taiwannews.com.tw/en/news/6058791", title: "Lai unveils 17 national security measures, calls China a 'foreign hostile force' (Taiwan News report; title descriptive)", publisher: "Taiwan News", date: 2025-03-13, tier: 3}
+        - {url: "https://www.pekingnology.com/p/tensions-over-taiwan", title: "Tensions over Taiwan", publisher: "Pekingnology", date: 2025-03, tier: 3}
+    - domain: military
+      text: "A defence budget of NT$949.5bn in 2026 (3.32% of GDP on the NATO-style count), a 2027 proposal of NT$1.1225tn (3.01% on the new GDP base) and a special budget passed on 8 May 2026 at NT$780bn instead of NT$1.25tn (T-Dome and drones left out). Hardware is American (a record USD 11.1bn notified in December 2025). Han Kuang 2026 began on 5 August and ran ten days, paired with civil air-raid and urban-resilience drills."
+      confidence: B
+      sources:
+        - {url: "https://www.taiwanplus.com/news/taiwan-news/military/260511002/defense-budget-compromise-cuts-spark-protest-and-security-concerns", title: "Defense Budget Compromise: Cuts Spark Protest and Security Concerns", publisher: "TaiwanPlus", date: 2026-05-11, tier: 3}
+        - {url: "https://janes.com/defence-intelligence-insights/defence-news/industry/taiwan-proposes-usd35-billion-defence-budget-for-2027", title: "Taiwan proposes USD35 billion defence budget for 2027", publisher: "Janes", date: 2026-08, tier: 2}
+        - {url: "https://www.canberratimes.com.au/story/9325545/taiwan-kicks-off-annual-drills-as-china-pressure-grows/", title: "Taiwan kicks off annual drills as China pressure grows", publisher: "Canberra Times (AFP)", date: 2026-08-05, tier: 3}
+    - domain: economic
+      text: "Chips as currency: Taiwanese firms pledged at least USD 250bn of direct US investment plus USD 250bn of credit guarantees for a cut in the US tariff from 20% to 15% (January 2026) and added USD 20bn in September; TSMC's own plan for the US is USD 165bn."
+      confidence: B
+      sources:
+        - {url: "https://www.koreajoongangdaily.com/world/us-taiwan-deal-features-15-percent-reciprocal-tariff-direct-taiwan-investments-totaling-250b/12348356", title: "U.S.-Taiwan deal features 15 percent 'reciprocal' tariff, direct Taiwan investments totaling $250B", publisher: "Korea JoongAng Daily", date: 2026-01, tier: 3}
+        - {url: "https://www.taiwanplus.com/news/taiwan-news/taiwan-us-relations/260903023/lutnick-taiwan-to-bring-40percentage-of-semiconductor-production-to-us", title: "Lutnick: Taiwan to bring 40% of semiconductor production to US", publisher: "TaiwanPlus", date: 2026-09-03, tier: 3}
+        - {url: "https://pr.tsmc.com/english/news/3210", title: "TSMC Intends to Expand Its Investment in the United States to US$165 Billion to Power the Future of AI", publisher: "TSMC", date: 2025-03-03, tier: 1}
+
+  constraints:
+    - text: "Divided government. The KMT and TPP hold the legislature (62 of 113 seats with two independents): they blocked the special defence budget at least eight times from 2 Dec 2025, cut it from NT$1.25tn to NT$780bn on 8 May 2026 without T-Dome and drones, tied the rest to US letters of offer, and tried the first impeachment of a president in Taiwan's history (56-50 for, 76 needed, 19 May 2026)."
+      confidence: B
+      sources:
+        - {url: "https://www.hppr.org/npr-news/2026-01-22/the-taiwanese-presidents-proposal-to-hike-defense-spending-faces-gridlock-at-home", title: "The Taiwanese president's proposal to hike defense spending faces gridlock at home", publisher: "NPR", date: 2026-01-22, tier: 3}
+        - {url: "https://www.taiwanplus.com/news/taiwan-news/military/260511002/defense-budget-compromise-cuts-spark-protest-and-security-concerns", title: "Defense Budget Compromise: Cuts Spark Protest and Security Concerns", publisher: "TaiwanPlus", date: 2026-05-11, tier: 3}
+        - {url: "https://eastasiaforum.org/2026/06/25/taiwans-defence-deadlock-is-weakening-deterrence", title: "Taiwan's defence deadlock is weakening deterrence", publisher: "East Asia Forum", date: 2026-06-25, tier: 2}
+        - {url: "https://www.anews.com.tr/asia/2026/05/19/impeachment-motion-against-taiwanese-leader-lai-fails/amp", title: "Impeachment motion against Taiwanese leader Lai fails", publisher: "Anadolu (Anews)", date: 2026-05-19, tier: 3}
+    - text: "A guarantor that treats the guarantee as a bargaining chip. Trump put the USD 14bn package 'in abeyance' after the Beijing summit (14-16 May 2026), called it 'a very good negotiating chip', said he is 'not looking to have somebody go independent', and hosted Xi in Washington on 23-25 September, where Beijing said Xi asked the US to oppose independence and the White House fact sheet did not mention Taiwan."
+      confidence: B
+      sources:
+        - {url: "https://www.pbs.org/newshour/world/trump-weighs-taiwan-arms-package-after-summit-aimed-at-steadying-us-china-ties", title: "Trump weighs Taiwan arms package after summit aimed at steadying US-China ties", publisher: "AP via PBS NewsHour", date: 2026-05-15, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/9/24/trump-xi-summit-four-key-takeaways-from-the-washington-dc-meeting", title: "Trump-Xi summit: four key takeaways from the Washington, DC meeting", publisher: "Al Jazeera", date: 2026-09-24, tier: 3}
+        - {url: "https://www.brookings.edu/articles/what-did-the-trump-xi-summit-actually-accomplish/", title: "What did the Trump-Xi summit actually accomplish?", publisher: "Brookings", date: 2026-09, tier: 2}
+    - text: "Energy that a blockade would cut first: about 97% of energy is imported, gas storage covers 10-11 days, Qatar supplies about a third of LNG, and the last nuclear reactor closed in May 2025. The 23 Aug 2025 referendum to keep Maanshan running won 74% of ballots but failed the 25%-of-electorate threshold (turnout 29.53%)."
+      confidence: B
+      sources:
+        - {url: "https://www.aspistrategist.org.au/taiwan-lacks-clarity-on-energy-security/", title: "Taiwan worsens its vulnerability to a Chinese energy blockade", publisher: "The Strategist (ASPI)", date: 2025, tier: 2}
+        - {url: "https://www.intellinews.com/taiwan-s-vote-to-switch-on-nuclear-power-falls-short-397621", title: "Taiwan's vote to switch on nuclear power falls short", publisher: "bne IntelliNews", date: 2025-08-24, tier: 3}
+        - {url: "https://eastasiaforum.org/2025/09/25/taiwans-nuclear-phase-out-faces-public-opinion-shift/", title: "Taiwan's nuclear phase-out faces public opinion shift", publisher: "East Asia Forum", date: 2025-09-25, tier: 2}
+    - text: "Diplomatic isolation and reach: 12 allies, three of them Pacific islands; Honduras (2023) and Nauru (2024) lost; the Pacific Islands Forum in Honiara (2025) excluded all dialogue partners including Taiwan; allies can be flown to only if third countries allow overflight."
+      confidence: B
+      sources:
+        - {url: "https://www.business-standard.com/world-news/taiwan-s-pacific-influence-dwindles-as-china-gains-ground-in-island-nations-125090800161_1.html", title: "Taiwan's Pacific influence dwindles as China gains ground in island nations", publisher: "Business Standard", date: 2025-09-08, tier: 3}
+        - {url: "https://abcnews.com/International/wireStory/paraguay-taiwan-reaffirm-ties-after-china-sought-lure-132772079", title: "Paraguay and Taiwan reaffirm ties after China sought to lure away another Taipei ally", publisher: "AP via ABC News", date: 2026-05, tier: 3}
+    - text: "The PLA rehearses the siege at the edge of Taiwan's waters: Strait Thunder-2025A (1-2 Apr 2025) and Justice Mission-2025 (29-31 Dec 2025, the closest live fire so far, with blockade of ports and energy targets) after Joint Sword in May and October 2024. In 2026 air activity fell by about half (1,200 aircraft in the zone from 1 Jan to 9 Aug against 2,501) while naval and coast guard presence stayed constant."
+      confidence: B
+      sources:
+        - {url: "https://news.usni.org/2025/12/31/china-wraps-justice-mission-taiwan-blockade-drills", title: "China Wraps 'Justice Mission' Taiwan Blockade Drills", publisher: "USNI News", date: 2025-12-31, tier: 3}
+        - {url: "https://globaltaiwan.org/2025/04/the-plas-strait-thunder-exercise/", title: "The PLA's Strait Thunder exercise", publisher: "Global Taiwan Institute", date: 2025-04, tier: 2}
+        - {url: "https://www.globalmilitary.net/news/pla-air-activity-around-taiwan-halved-in-2026/", title: "PLA Air Activity Around Taiwan Halved in 2026, but Its Warships Never Left", publisher: "Global Military", date: 2026-08, tier: 4}
+    - text: "Economic concentration: the AI-server boom that put the US ahead of China as export market makes growth a bet on one product cycle, while Washington asks for 40% of the chip chain and a 100% tariff threatens firms that do not build in the US."
+      confidence: C
+      sources:
+        - {url: "https://www.tribuneindia.com/news/world/taiwan-breaks-free-from-china-dependence-as-us-becomes-top-export-market", title: "Taiwan breaks free from China dependence as US becomes top export market (analyst caution on AI-server concentration)", publisher: "The Tribune (India)", date: 2025, tier: 3}
+        - {url: "https://www.taiwanplus.com/news/taiwan-news/taiwan-us-relations/260903023/lutnick-taiwan-to-bring-40percentage-of-semiconductor-production-to-us", title: "Lutnick: Taiwan to bring 40% of semiconductor production to US", publisher: "TaiwanPlus", date: 2026-09-03, tier: 3}
+
+  paradoxes:
+    - text: "The silicon shield is spent in order to be kept. Taipei pays for American attention with chips and factories (TSMC's USD 165bn, USD 250bn of pledges), but each fab built in Arizona weakens the argument that Washington must protect the island because it cannot do without it; Lutnick's own line is that the shield works because 'we need their silicon so badly', and his goal is to need it less."
+      confidence: B
+      sources:
+        - {url: "https://www.taiwanplus.com/news/taiwan-news/taiwan-us-relations/260903023/lutnick-taiwan-to-bring-40percentage-of-semiconductor-production-to-us", title: "Lutnick: Taiwan to bring 40% of semiconductor production to US", publisher: "TaiwanPlus", date: 2026-09-03, tier: 3}
+        - {url: "https://finance.yahoo.com/news/taiwan-says-40-shift-chip-024347895.html", title: "Taiwan says 40% shift of chip capacity to US is 'impossible'", publisher: "Yahoo Finance (AFP)", date: 2026-01, tier: 3}
+    - text: "The more Taiwan buys, the more the weapons are a chip for others to trade. The legislature has appropriated money for a USD 11bn and a USD 14bn US package, and Trump then calls the second 'a very good negotiating chip' with Xi and holds it 'in abeyance': the commitment Taipei funds becomes the item Washington can concede."
+      confidence: B
+      sources:
+        - {url: "https://thenextweb.com/news/trump-xi-summit-taiwan-arms-deal-beijing", title: "Trump calls Taiwan arms deal a 'negotiating chip' after three days with Xi in Beijing", publisher: "The Next Web", date: 2026-05-17, tier: 4}
+        - {url: "https://www.pbs.org/newshour/world/trump-weighs-taiwan-arms-package-after-summit-aimed-at-steadying-us-china-ties", title: "Trump weighs Taiwan arms package after summit aimed at steadying US-China ties", publisher: "AP via PBS NewsHour", date: 2026-05-15, tier: 3}
+    - text: "Deterrence invites the punishment it is meant to prevent. Each tightening of Taiwan's line (the 'foreign hostile force' measures, the record arms package, the 5% pledge) is cited by Beijing as proof of 'independence by military means' and followed by exercises: Justice Mission-2025 came two weeks after the December arms notification."
+      confidence: B
+      sources:
+        - {url: "https://news.usni.org/2025/12/31/china-wraps-justice-mission-taiwan-blockade-drills", title: "China Wraps 'Justice Mission' Taiwan Blockade Drills", publisher: "USNI News", date: 2025-12-31, tier: 3}
+        - {url: "https://asianews.network/china-criticises-taiwan-authorities-over-defence-spending-increase/", title: "China criticises Taiwan authorities over defence spending increase", publisher: "Asia News Network", date: 2026-10, tier: 3}
+    - text: "Winning the vote and losing the budget. The 2025 recalls (31 legislators, all survived) and the 2026 impeachment (failed 56-50) left the KMT-TPP majority stronger and the president weaker; the bloc then cut the defence budget while KMT chairwoman Cheng Li-wun visited Xi on 10 April 2026, which put a Beijing channel to the opposition ahead of a Taipei channel to the White House."
+      confidence: B
+      sources:
+        - {url: "https://www.hppr.org/npr-news/2026-04-10/chinas-xi-meets-taiwan-opposition-leader-ahead-of-key-summit-with-trump", title: "China's Xi meets Taiwan opposition leader ahead of key summit with Trump", publisher: "NPR (AP)", date: 2026-04-10, tier: 3}
+        - {url: "https://europeanvalues.cz/en/a-cheaper-shield-a-deeper-split-taiwans-defense-budget-debate-tests-the-kmt/", title: "A Cheaper Shield, A Deeper Split: Taiwan's Defense Budget Debate Tests the KMT", publisher: "European Values Center for Security Policy", date: 2026, tier: 2}
+    - text: "Diversifying from China concentrates on America. The US passed China as the first export market in 2025 and Taiwan has signed a tariff deal, an investment pledge and a guarantee scheme with Washington; the dependency that Beijing could squeeze moves to the one that Washington can renegotiate every summit."
+      confidence: C
+      sources:
+        - {url: "https://timesofoman.com/article/159899-united-states-surpasses-china-to-become-taiwan-s-top-export-destination", title: "United States surpasses China to become Taiwan's top export destination", publisher: "Times of Oman", date: 2025, tier: 3}
+        - {url: "https://www.hawaiinewsnow.com/2026/01/16/us-taiwan-sign-250b-trade-deal-cutting-tariffs-taiwanese-goods", title: "US and Taiwan sign $250B trade deal, cutting tariffs on Taiwanese goods", publisher: "AP via Hawaii News Now", date: 2026-01-16, tier: 3}
+    - text: "Clean power policy as a blockade target. Phasing out nuclear (the last reactor closed in May 2025) left an island that runs on imported LNG with about 11 days of gas; the referendum to restart Maanshan failed on the threshold, so the energy base is the softest point of a state whose strategy depends on lasting out a siege."
+      confidence: B
+      sources:
+        - {url: "https://www.aspistrategist.org.au/taiwan-lacks-clarity-on-energy-security/", title: "Taiwan worsens its vulnerability to a Chinese energy blockade", publisher: "The Strategist (ASPI)", date: 2025, tier: 2}
+        - {url: "https://www.intellinews.com/taiwan-s-vote-to-switch-on-nuclear-power-falls-short-397621", title: "Taiwan's vote to switch on nuclear power falls short", publisher: "bne IntelliNews", date: 2025-08-24, tier: 3}
+
+  reading: |
+    Taiwan is Luttwak's textbook case of a state whose survival rests on two
+    things it does not control: being indispensable and a guarantor's ambiguity.
+    The first is real (the leading edge of chips and AI servers) but is traded
+    away piece by piece to secure the second, and the second is now openly priced:
+    the Trump administration holds a USD 14bn arms package as a negotiating chip,
+    says it does not want anyone to 'go independent', and sat down with Xi twice
+    in 2026 without a word on Taiwan in the White House fact sheet. Beijing, for
+    its part, has moved from the exercise to the rehearsal of a blockade (Joint
+    Sword 2024, Strait Thunder 2025A, Justice Mission 2025), and from the
+    president to the institutions: legal punishment of 'diehards', a channel to
+    the KMT, and cable and coast-guard pressure in the grey zone. The grade toward
+    China is therefore rival and not adversary only because Taipei's declared aim
+    is to be left as it is, not to end the Chinese state, while Beijing's aim is
+    the end of Taiwan's separateness: the pair is asymmetric on purpose. The home
+    front is the third hinge: a president whose party lost the legislature, saw
+    the recalls fail and the budget cut, and whose own parliament now steers part
+    of the defence plan. Signals that are not rows: no PLA mega-exercise has
+    followed the Washington summit, air activity is half of 2025 while ships
+    stay, and Honduras has not decided. The question for 2027 is whether chips
+    remain a shield or become only a price.

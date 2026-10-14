@@ -1,14 +1,603 @@
 id: JPN
 name: Japan
+short: Japan
 type: state
-iso2: jp
-wikipedia: https://en.wikipedia.org/wiki/Japan
+seat: Tokyo
 coords:
 - 139.69
 - 35.69
-seat: Tokyo
+iso2: jp
+wikipedia: https://en.wikipedia.org/wiki/Japan
 regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+- east-asia
+card: full
+tier: protagonist
+last_verified: '2026-10-12'
+grand_strategy:
+  objectives:
+  - rank: 1
+    confidence: B
+    text: Deter, and if deterrence fails defeat, a Chinese use of force around Japan, above all in a Taiwan contingency. Takaichi told the Diet on 7 Nov 2025 that a Chinese blockade or an operation against US forces could
+      be a 'survival-threatening situation' permitting collective self-defence, and refused to retract it; Tokyo has since fixed a date (March 2031) for surface-to-air missiles on Yonaguni, 110 km from Taiwan, and the 2026
+      Defense White Paper calls China the 'greatest strategic challenge'.
+    sources:
+    - url: https://www.pbs.org/newshour/world/japan-and-china-trade-barbs-after-pm-takaichi-says-an-attack-on-taiwan-would-be-an-existential-threat
+      title: Japan and China trade barbs after PM Takaichi says an attack on Taiwan would be an existential threat
+      publisher: PBS NewsHour (AP)
+      date: '2025-11-11'
+      tier: 3
+    - url: https://www.aljazeera.com/news/2026/2/25/japan-to-install-missiles-near-taiwan-are-china-tensions-set-to-spike
+      title: 'Japan to install missiles near Taiwan: are China tensions set to spike?'
+      publisher: Al Jazeera
+      date: '2026-02-25'
+      tier: 3
+    - url: https://idsa.in/?p=99444
+      title: Assessing Japan's 2026 Defence White Paper
+      publisher: IDSA (India)
+      date: 2026-08
+      tier: 2
+    - url: https://cigs.canon/en/article/20211214_6436.html
+      title: 'Abe: a Taiwan contingency is a Japanese contingency (reposting the Japan Times, 2 Dec 2021)'
+      publisher: Canon Institute for Global Studies
+      date: '2021-12-14'
+      tier: 2
+  - rank: 2
+    confidence: B
+    text: 'Keep the United States bound to Japan''s defence and to the Indo-Pacific: the 1960 treaty (Article 5 covers the Senkakus), the ''New Golden Age'' documents of 28 Oct 2025, a USD 550bn investment pledge through January
+      2029 as the price of tariffs and goodwill, a place in Golden Dome, and acceptance of the Henoko replacement base after the LDP-backed Koja won Okinawa on 13 Sep 2026.'
+    sources:
+    - url: https://www.mofa.go.jp/na/na1/us/pageite_000001_01338.html
+      title: Japan-United States of America Relations (signed documents of 28 Oct 2025)
+      publisher: Ministry of Foreign Affairs of Japan
+      date: '2025-10-28'
+      tier: 1
+    - url: https://asianews.network/japan-u-s-defence-chiefs-agree-to-reinforce-alliance-protection-of-senkaku-islands-reaffirmed/
+      title: Japan, U.S. defence chiefs agree to reinforce alliance; protection of Senkaku Islands reaffirmed
+      publisher: Asia News Network
+      date: 2025-02
+      tier: 3
+    - url: https://www.nippon.com/en/news/yjj2026022100456
+      title: Japan to Keep Investment Pledge to U.S. after Tariff Ruling
+      publisher: Jiji Press via nippon.com
+      date: '2026-02-21'
+      tier: 3
+    - url: https://www.malaymail.com/amp/news/world/2026/03/13/japan-set-to-join-us-golden-dome-defence-system-report-says/212456
+      title: Japan set to join US Golden Dome defence system, report says
+      publisher: Malay Mail
+      date: '2026-03-13'
+      tier: 3
+    - url: https://www.nippon.com/en/news/yjj2026091400124/
+      title: Candidate Tolerant of Futenma Transfer Wins Okinawa Governor Poll
+      publisher: Jiji Press via nippon.com
+      date: '2026-09-14'
+      tier: 3
+  - rank: 3
+    confidence: B
+    text: 'Rebuild military and legal capacity: 2% of GDP reached early (FY2025 supplementary budget), the three security documents rewritten by end-2026 with a 3.5% figure on the table, a review of the non-nuclear principles
+      and of nuclear-powered submarines, and a constitutional amendment to name the Self-Defense Forces in Article 9.'
+    sources:
+    - url: https://english.adnkronos.com/2026/02/19/takaichi-set-to-bolster-security-policy-under-2nd-cabinet/
+      title: Takaichi Set to Bolster Security Policy under 2nd Cabinet
+      publisher: Jiji Press via Adnkronos
+      date: '2026-02-19'
+      tier: 3
+    - url: https://www.tribuneindia.com/news/world/japan-considers-broadening-defense-related-spending-amid-us-pressure-to-include-space-and-infrastructure/amp
+      title: Japan considers broadening defense-related spending amid US pressure to include space and infrastructure
+      publisher: Tribune India (citing Asahi)
+      date: '2026'
+      tier: 3
+    - url: https://www.nippon.com/en/news/yjj2026042700901/
+      title: Japan Begins Debates on Revision of 3 Key Security Documents
+      publisher: Jiji Press via nippon.com
+      date: '2026-04-27'
+      tier: 3
+    - url: https://www.upi.com/Top_News/World-News/2026/06/08/japan-reviewing-security-documents-defense-spending-non-nuclear-principles/2931780961223/
+      title: Japan reviewing security documents, defense spending, non-nuclear principles
+      publisher: UPI
+      date: '2026-06-08'
+      tier: 3
+    - url: https://www.koreatimes.co.kr/amp/foreignaffairs/20260209/takaichis-landslide-win-revives-japans-constitutional-revision-debate
+      title: Takaichi's landslide win revives Japan's constitutional revision debate
+      publisher: The Korea Times
+      date: '2026-02-09'
+      tier: 3
+  - rank: 4
+    confidence: B
+    text: 'Secure what an island economy cannot make: energy (94% of crude from the Middle East in 2025, 93% of it through Hormuz, shut in March 2026) and critical minerals (63% of rare-earth imports from China in 2024). The
+      answer is stockpiles, US crude, bypass pipelines funded through JOGMEC, and the US-Japan critical-minerals framework.'
+    sources:
+    - url: https://www.meti.go.jp/english/press/2026/0324_001.html
+      title: Release of national oil stockpiles (24 Mar 2026)
+      publisher: METI
+      date: '2026-03-24'
+      tier: 1
+    - url: https://www.hellenicshippingnews.com/japan-pm-says-no-immediate-need-for-extra-energy-conservation-amid-middle-east-conflict/
+      title: Japan PM says no immediate need for extra energy conservation amid Middle East conflict
+      publisher: Hellenic Shipping News
+      date: 2026-05
+      tier: 3
+    - url: https://arynews.tv/japan-to-diversify-crude-supplies-back-pipelines-that-bypass-hormuz
+      title: Japan to diversify crude supplies, back pipelines that bypass Hormuz
+      publisher: ARY News
+      date: 2026-06
+      tier: 3
+    - url: https://kvia.com/news/business-technology/cnn-business-consumer/2026/01/06/china-bans-certain-rare-earths-and-other-exports-to-japan-for-military-purposes-over-takaichis-comments/
+      title: China bans certain rare earths and other exports to Japan for military purposes over Takaichi's comments
+      publisher: CNN Business (via KVIA)
+      date: '2026-01-06'
+      tier: 3
+    - url: https://www.foxbusiness.com/politics/trump-meets-japans-first-female-leader-signs-rare-earth-critical-minerals-supply
+      title: Trump meets Japan's first female leader, signs rare earth, critical minerals supply
+      publisher: Fox Business
+      date: '2025-10-28'
+      tier: 3
+  - rank: 5
+    confidence: B
+    text: 'Thicken the circle of partners round China so that no single capital carries the weight: the Philippines (reciprocal access in force 11 Sep 2025), Australia (Mogami frigates, April 2026), India (first defence co-development
+      pact, July 2026), the UK and Italy (GCAP), the EU, Central Asia, ASEAN and the CPTPP, and a Free and Open Indo-Pacific ''evolved'' towards economic security (Hanoi, 2 May 2026).'
+    sources:
+    - url: https://www.philstar.com/headlines/2025/09/11/2471973/philippines-japan-defense-agreement-enters-force-today/amp/
+      title: Philippines-Japan defense agreement enters into force today
+      publisher: The Philippine Star
+      date: '2025-09-11'
+      tier: 3
+    - url: https://wtop.com/australia/2026/04/australia-and-japan-seal-6-5b-warship-deal-with-3-mogami-frigates-ordered-first/
+      title: Australia and Japan seal $6.5B warship deal with 3 Mogami frigates ordered first
+      publisher: WTOP (AP)
+      date: 2026-04
+      tier: 3
+    - url: https://telanganatoday.com/india-japan-sign-first-defence-co-development-pact-as-pm-modi-japan-pm-takaichi-unveil-strategic-initiatives
+      title: India, Japan sign first defence co-development pact as Modi, Takaichi unveil strategic initiatives
+      publisher: Telangana Today
+      date: 2026-07
+      tier: 3
+    - url: https://theaviationist.com/2026/07/03/gcap-fighter-project-contract-edgewing/
+      title: GCAP Fighter Project Advances with GBP 4.6 Billion Contract Award to Edgewing
+      publisher: The Aviationist
+      date: '2026-07-03'
+      tier: 3
+    - url: https://www.cp24.com/news/world/2026/05/02/in-vietnam-japan-pm-vows-more-effort-to-keep-asia-free-and-open/
+      title: In Vietnam, Japan PM vows more effort to keep Asia 'free and open'
+      publisher: CP24 (AP)
+      date: '2026-05-02'
+      tier: 3
+    - url: https://www.cas.go.jp/jp/tpp/tppinfo/2026/pdf/20260626_cptpp_seimei_en.pdf
+      title: CPTPP Joint Ministerial Statement on Expansion, Implementation and Cooperation (26 June 2026)
+      publisher: Cabinet Secretariat of Japan
+      date: '2026-06-26'
+      tier: 1
+  - rank: 6
+    confidence: B
+    text: 'Close the residues of 1945 on Japan''s terms: the abductee issue through a summit with Kim Jong Un (Takaichi asked Trump on 6 Oct 2026 to broker one), the four Northern Territories in Russian hands, and a Korea
+      kept calm by shuttle diplomacy while Takeshima stays Japanese territory in Tokyo''s text.'
+    sources:
+    - url: https://www.nippon.com/en/news/yjj2026100600673/
+      title: Takaichi Asks Trump to Broker Japan-N. Korea Summit
+      publisher: Jiji Press via nippon.com
+      date: '2026-10-06'
+      tier: 3
+    - url: https://euromaidanpress.com/2026/08/14/japan-weighs-sanctions-after-putins-first-visit-to-disputed-kuril-islands/
+      title: Japan weighs sanctions after Putin's first visit to disputed Kuril Islands
+      publisher: Euromaidan Press
+      date: '2026-08-14'
+      tier: 3
+    - url: https://www.lowyinstitute.org/the-interpreter/japan-korea-relations-sanae-s-puzzling-provocation
+      title: 'Japan-Korea relations: Sanae''s puzzling provocation'
+      publisher: Lowy Institute The Interpreter
+      date: 2025-12
+      tier: 2
+    - url: https://japan.kantei.go.jp/105/actions/202605/19korea.html
+      title: Visit to the Republic of Korea
+      publisher: Prime Minister's Office of Japan
+      date: '2026-05-19'
+      tier: 1
+  means:
+  - domain: diplomatic
+    confidence: B
+    text: 'Summitry as the main instrument: Trump in Tokyo (27-28 Oct 2025) and at the White House (19 Mar 2026), Xi at Gyeongju (31 Oct 2025, before the crisis), Lee in Nara and Takaichi in Andong, the first Central Asia
+      + Japan summit (Dec 2025), Vietnam (May 2026) and Merz due in late October 2026. The line to Beijing is ''calm and appropriate'' response, open to talks at every level, no retraction.'
+    sources:
+    - url: https://www.mofa.go.jp/na/na1/us/pageite_000001_01338.html
+      title: Japan-United States of America Relations (signed documents of 28 Oct 2025)
+      publisher: Ministry of Foreign Affairs of Japan
+      date: '2025-10-28'
+      tier: 1
+    - url: https://japan.kantei.go.jp/105/actions/202603/19usa_1.html
+      title: 'Visit to the United States: Day 1'
+      publisher: Prime Minister's Office of Japan
+      date: '2026-03-19'
+      tier: 1
+    - url: https://japan.kantei.go.jp/105/actions/202605/19korea.html
+      title: Visit to the Republic of Korea
+      publisher: Prime Minister's Office of Japan
+      date: '2026-05-19'
+      tier: 1
+    - url: https://fledu.uz/language/en/the-first-central-asia-japan-summit-was-held/
+      title: The first 'Central Asia + Japan' summit was held
+      publisher: Fledu (Uzbek state education portal, official statement)
+      date: 2025-12
+      tier: 1
+    - url: https://english.adnkronos.com/2026/07/14/exclusive-germanys-merz-to-pay-1st-visit-to-japan-in-late-oct/
+      title: 'EXCLUSIVE: Germany''s Merz to pay 1st visit to Japan in late Oct.'
+      publisher: Jiji Press via Adnkronos
+      date: '2026-07-14'
+      tier: 3
+    - url: https://www.nippon.com/en/news/yjj2026010200126/
+      title: Japan to Seek Thaw with China as Key Diplomatic Theme in 2026
+      publisher: Jiji Press via nippon.com
+      date: '2026-01-02'
+      tier: 3
+  - domain: informational
+    confidence: B
+    text: 'Naming threats in official text: the 2026 Defense White Paper (4 Aug) keeps China as the ''unprecedented and greatest strategic challenge'' and warns that Ukraine-type aggression could occur in East Asia; a February
+      2026 speech on Chinese ''coercion''. Beijing answered with a formal protest.'
+    sources:
+    - url: https://idsa.in/?p=99444
+      title: Assessing Japan's 2026 Defence White Paper
+      publisher: IDSA (India)
+      date: 2026-08
+      tier: 2
+    - url: https://defensenews.com/global/asia-pacific/2026/08/10/japans-2026-defense-white-paper-highlights-new-era-of-crisis-in-indo-pacific
+      title: Japan's 2026 defense white paper highlights new era of crisis in Indo-Pacific
+      publisher: Defense News
+      date: '2026-08-10'
+      tier: 3
+    - url: https://chinaglobalsouth.com/2026/02/20/japan-pm-sanae-takaichi-china-coercion-defense-overhaul/
+      title: Japan PM Takaichi warns of China 'coercion', vows security overhaul
+      publisher: China-Global South Project
+      date: '2026-02-20'
+      tier: 3
+  - domain: military
+    confidence: B
+    text: Southwest-islands build-up (Yonaguni missiles by March 2031), the Joint Operations Command (24 Mar 2025) paired with the upgrade of US Forces Japan to a joint force headquarters, counterstrike and missile production,
+      Official Security Assistance (radar to Mongolia, boats, radars and TC-90 trainers to the Philippines) and defence exports (Mogami frigates to Australia, GCAP with the UK and Italy).
+    sources:
+    - url: https://www.intellinews.com/japan-targets-2031-missile-deployment-near-taiwan-428011/
+      title: Japan targets 2031 missile deployment near Taiwan
+      publisher: bne IntelliNews
+      date: 2026-02
+      tier: 3
+    - url: https://www.army.mil/article/284294/
+      title: Defense secretary announces US Forces Japan's upgrade to joint force command
+      publisher: US Army / DoD
+      date: '2025-03-30'
+      tier: 1
+    - url: https://www.philstar.com/business/2026/08/01/2546156/japan-hails-senate-honoring70th-year-friendship
+      title: Japan hails Senate honoring 70th year of friendship (ACSA, OSA transfers)
+      publisher: The Philippine Star
+      date: '2026-08-01'
+      tier: 3
+    - url: https://akipress.com/news:821872:Japan_to_allocate_$3_7_million_grant_aid_for_infrastructure_to_Mongolia
+      title: Japan to allocate $3.7 million grant aid for infrastructure to Mongolia
+      publisher: AKIpress
+      date: '2025-03-05'
+      tier: 3
+    - url: https://wtop.com/australia/2026/04/australia-and-japan-seal-6-5b-warship-deal-with-3-mogami-frigates-ordered-first/
+      title: Australia and Japan seal $6.5B warship deal with 3 Mogami frigates ordered first
+      publisher: WTOP (AP)
+      date: 2026-04
+      tier: 3
+    - url: https://theaviationist.com/2026/07/03/gcap-fighter-project-contract-edgewing/
+      title: GCAP Fighter Project Advances with GBP 4.6 Billion Contract Award to Edgewing
+      publisher: The Aviationist
+      date: '2026-07-03'
+      tier: 3
+  - domain: economic
+    confidence: B
+    text: 'Capital as currency: USD 550bn for US industry (36bn first tranche, about 73bn second tranche in March 2026), JPY 10 trillion over ten years for India, ODA and loans from Matarbari to Tashkent, plus economic-security
+      tools: oil stockpile releases, subsidies and bypass pipelines.'
+    sources:
+    - url: https://www.nippon.com/en/news/yjj2026031800954
+      title: Japan's 2nd-Round Funding for U.S. Projects to Total 10 T. Yen
+      publisher: Jiji Press via nippon.com
+      date: '2026-03-18'
+      tier: 3
+    - url: https://www.nippon.com/en/in-depth/d01223/
+      title: 'Takaichi''s summit success: March meeting with Trump ends ''without incident'''
+      publisher: nippon.com
+      date: 2026-03
+      tier: 3
+    - url: https://www.businesstoday.in/amp/india/story/modi-calls-takaichi-his-younger-sister-japan-pm-responds-we-are-on-the-same-page-and-540560-2026-07-02
+      title: Modi calls Takaichi his 'younger sister'; Japan PM responds
+      publisher: Business Today
+      date: '2026-07-02'
+      tier: 3
+    - url: https://www.ide.go.jp/Japanese/Publish/Reports/AjikenPolicyBrief/225.html
+      title: Matarbari deep sea port and Japan's BIG-B (policy brief)
+      publisher: IDE-JETRO
+      date: '2025'
+      tier: 2
+    - url: https://fledu.uz/language/en/the-first-central-asia-japan-summit-was-held/
+      title: The first 'Central Asia + Japan' summit was held
+      publisher: Fledu (Uzbek state education portal, official statement)
+      date: 2025-12
+      tier: 1
+    - url: https://www.meti.go.jp/english/press/2026/0324_001.html
+      title: Release of national oil stockpiles (24 Mar 2026)
+      publisher: METI
+      date: '2026-03-24'
+      tier: 1
+  constraints:
+  - confidence: B
+    text: The constitution and the arithmetic. Article 9 is unamended; revision needs two-thirds of each chamber and a referendum. The LDP alone holds 316 of 465 lower-house seats after the 8 Feb 2026 election, but the upper
+      house is short, Ishin (a partner that stayed outside the cabinet until its first minister on 17 Sep 2026) wants more than the SDF clause, and large demonstrations took place on Constitution Memorial Day for the pacifist
+      text. Takaichi has set the start of revision about a year ahead.
+    sources:
+    - url: https://www.nippon.com/en/japan-data/h02703/a-landslide-for-takaichi%E2%80%99s-ldp-house-of-representatives-election-results.html
+      title: 'A landslide for Takaichi''s LDP: House of Representatives election results'
+      publisher: nippon.com
+      date: 2026-02
+      tier: 3
+    - url: https://www.koreatimes.co.kr/amp/foreignaffairs/20260209/takaichis-landslide-win-revives-japans-constitutional-revision-debate
+      title: Takaichi's landslide win revives Japan's constitutional revision debate
+      publisher: The Korea Times
+      date: '2026-02-09'
+      tier: 3
+    - url: https://csmonitor.com/World/Asia-Pacific/2026/0424/Japan-Takaichi-pacifist-constitution-reform
+      title: As Japan shifts away from postwar pacifism, Takaichi eyes constitutional reform
+      publisher: Christian Science Monitor
+      date: '2026-04-24'
+      tier: 3
+    - url: https://www.thestandard.com.hk/world-news/article/324259/More-than-80pc-in-Japan-back-enshrining-Self-Defense-Forces-in-constitution-Kyodo-poll
+      title: 'More than 80pc in Japan back enshrining Self Defense Forces in constitution: Kyodo poll'
+      publisher: The Standard (Kyodo)
+      date: 2026-05
+      tier: 3
+    - url: https://crawford.anu.edu.au/ajrc/news/takaichis-japan-enters-era-fragile-coalitions-0
+      title: Takaichi's Japan enters an era of fragile coalitions
+      publisher: ANU Australia-Japan Research Centre
+      date: 2025-10
+      tier: 2
+    - url: https://www.nippon.com/en/japan-data/h02906/takaichi-opts-for-stability-in-first-cabinet-reshuffle.html
+      title: Takaichi opts for stability in first cabinet reshuffle
+      publisher: nippon.com
+      date: 2026-09
+      tier: 3
+  - confidence: B
+    text: 'Demography: 671,236 births in 2025 (record low, tenth year running, fertility 1.14) and a census population of about 123 million, down 2.5% in five years, faster than official forecasts. Fewer recruits and taxpayers,
+      more pensioners, for every yen of defence.'
+    sources:
+    - url: https://www.nippon.com/en/news/yjj2026060300610/
+      title: Japan 2025 Births Hit Record Low of 671,000
+      publisher: Jiji Press via nippon.com
+      date: '2026-06-03'
+      tier: 3
+    - url: https://www.freemalaysiatoday.com/category/world/2026/05/29/japans-population-sees-record-5-year-drop
+      title: Japan's population sees record 5-year drop
+      publisher: Free Malaysia Today (AFP)
+      date: '2026-05-29'
+      tier: 3
+  - confidence: B
+    text: Debt, yen and rates. Gross government debt near 230% of GDP; the Bank of Japan raised its rate to 1% on 16 Jun 2026 (highest since 1995) with the yen at about 160 per dollar after Finance Ministry intervention in
+      April and May. A 3.5% defence target would take spending above JPY 20 trillion a year.
+    sources:
+    - url: https://www.lpl.com/research/blog/japanese-stimulus-tests-yields-and-the-yen.html
+      title: Japanese stimulus tests yields and the yen
+      publisher: LPL Research
+      date: '2025'
+      tier: 2
+    - url: https://abcnews.com/Business/wireStory/bank-japan-raises-key-interest-rate-decade-high-133911615
+      title: Bank of Japan raises its key interest rate to a three-decade high of 1%, citing inflation
+      publisher: AP via ABC News
+      date: '2026-06-16'
+      tier: 3
+    - url: https://www.commbank.com.au/articles/newsroom/2026/06/bank-of-japan-lifts-rates-three-decade-high.html
+      title: Bank of Japan lifts rates to three-decade high
+      publisher: Commonwealth Bank of Australia
+      date: 2026-06
+      tier: 3
+    - url: https://www.tribuneindia.com/news/world/japan-considers-broadening-defense-related-spending-amid-us-pressure-to-include-space-and-infrastructure/amp
+      title: Japan considers broadening defense-related spending amid US pressure to include space and infrastructure
+      publisher: Tribune India (citing Asahi)
+      date: '2026'
+      tier: 3
+  - confidence: B
+    text: 'Energy and minerals with no home supply: Hormuz was effectively closed to crude tankers from March 2026, Middle East imports fell 67% in April (lowest since 1979), and Japan''s combined state and private stock release,
+      inside an IEA-coordinated 412 million barrels, was likely its largest ever; Sakhalin-2 LNG (about 9% of LNG imports, long-term contracts to 2028-2033) makes a full break with Russia costly.'
+    sources:
+    - url: https://www.meti.go.jp/english/press/2026/0324_001.html
+      title: Release of national oil stockpiles (24 Mar 2026)
+      publisher: METI
+      date: '2026-03-24'
+      tier: 1
+    - url: https://tankterminals.com/news/japan-taps-emergency-oil-reserves/
+      title: Japan taps emergency oil reserves
+      publisher: Tank Terminals
+      date: 2026-03
+      tier: 3
+    - url: https://moderndiplomacy.eu/2026/08/15/putin-kuril-islands-japan-russian-energy-dilemma/
+      title: Putin's Kuril Islands visit exposes Japan's Russian energy dilemma
+      publisher: Modern Diplomacy
+      date: '2026-08-15'
+      tier: 3
+  - confidence: B
+    text: 'Exposure to China: 23.6% of 2025 imports, 63% of rare-earth imports, a travel advisory against Japan still in force, and a Beijing that tightened dual-use export controls on 6 Jan 2026 and listed 20 Japanese entities
+      on 24 Feb 2026 (Mitsubishi Heavy and Kawasaki Heavy aerospace units among them), with 20 more on a watch list.'
+    sources:
+    - url: https://ttd.wto.org/en/profiles/japan
+      title: 'Tariff and trade data profile: Japan (2025 imports by origin)'
+      publisher: WTO
+      date: '2026'
+      tier: 1
+    - url: https://kvia.com/news/business-technology/cnn-business-consumer/2026/01/06/china-bans-certain-rare-earths-and-other-exports-to-japan-for-military-purposes-over-takaichis-comments/
+      title: China bans certain rare earths and other exports to Japan for military purposes over Takaichi's comments
+      publisher: CNN Business (via KVIA)
+      date: '2026-01-06'
+      tier: 3
+    - url: https://www.nippon.com/en/news/yjj2026022400573
+      title: China Bans Export of Dual-Use Goods to Japanese Firms
+      publisher: Jiji Press via nippon.com
+      date: '2026-02-24'
+      tier: 3
+    - url: https://scmp.com/news/china/diplomacy/article/3367497/japanese-delegations-flock-china-thaw-hinges-takaichi-mending-ties
+      title: Japanese delegations flock to China but thaw hinges on Takaichi mending ties
+      publisher: South China Morning Post
+      date: 2026-09
+      tier: 3
+  - confidence: B
+    text: 'A transactional patron: the Supreme Court struck down the IEEPA tariffs on 20 Feb 2026 yet Tokyo keeps its pledge; Washington pushes for 3.5% of GDP (5% with related costs) and a bigger host-nation-support bill
+      before the current agreement expires in March 2027; Trump praised Japan on Hormuz while adding ''unlike NATO''.'
+    sources:
+    - url: https://www.nippon.com/en/news/yjj2026022100456
+      title: Japan to Keep Investment Pledge to U.S. after Tariff Ruling
+      publisher: Jiji Press via nippon.com
+      date: '2026-02-21'
+      tier: 3
+    - url: https://www.tribuneindia.com/news/world/japan-considers-broadening-defense-related-spending-amid-us-pressure-to-include-space-and-infrastructure/amp
+      title: Japan considers broadening defense-related spending amid US pressure to include space and infrastructure
+      publisher: Tribune India (citing Asahi)
+      date: '2026'
+      tier: 3
+    - url: https://english.adnkronos.com/2026/08/05/exclusive-japan-u-s-begin-working-level-talks-on-host-nation-support/
+      title: 'EXCLUSIVE: Japan, U.S. begin working-level talks on host nation support'
+      publisher: Jiji Press via Adnkronos
+      date: '2026-08-05'
+      tier: 3
+    - url: https://www.nippon.com/en/in-depth/d01223/
+      title: 'Takaichi''s summit success: March meeting with Trump ends ''without incident'''
+      publisher: nippon.com
+      date: 2026-03
+      tier: 3
+  paradoxes:
+  - confidence: B
+    text: Naming the contingency summoned the coalition it was meant to deter. For decades Tokyo kept ambiguity on Taiwan; on 7 Nov 2025 Takaichi spoke it aloud and Beijing answered with a travel advisory (14 Nov), a re-imposed
+      seafood ban (19 Nov) and a dual-use export ban (6 Jan 2026) - and China and Russia issued a joint statement against Japanese 'militarism' (Dec 2025). The retaliation struck exactly the dependencies (rare earths, Chinese
+      demand) that the declaration had not first reduced.
+    sources:
+    - url: https://www.pbs.org/newshour/world/japan-and-china-trade-barbs-after-pm-takaichi-says-an-attack-on-taiwan-would-be-an-existential-threat
+      title: Japan and China trade barbs after PM Takaichi says an attack on Taiwan would be an existential threat
+      publisher: PBS NewsHour (AP)
+      date: '2025-11-11'
+      tier: 3
+    - url: https://www.koreajoongangdaily.com/world/japan-protests-chinas-travel-advisory-over-taiwan-remarks/12272875
+      title: Japan protests China's travel advisory over Taiwan remarks
+      publisher: Korea JoongAng Daily
+      date: '2025-11-14'
+      tier: 3
+    - url: https://www.undercurrentnews.com/2025/11/19/china-reinstates-japanese-seafood-ban-days-after-first-scallop-shipment/
+      title: China reinstates Japanese seafood ban days after first scallop shipment
+      publisher: Undercurrent News
+      date: '2025-11-19'
+      tier: 3
+    - url: https://www.caixinglobal.com/2026-01-07/china-bans-exports-of-dual-use-items-to-japan-following-taiwan-remarks-102401228.html
+      title: China bans exports of dual-use items to Japan following Taiwan remarks
+      publisher: Caixin
+      date: '2026-01-07'
+      tier: 3
+    - url: https://www.scmp.com/news/china/diplomacy/article/3335058/wwii-allies-china-russia-take-united-stand-against-japanese-militarism
+      title: China, Russia united against 'Japanese militarism' as Wang Yi, Shoigu meet
+      publisher: South China Morning Post
+      date: '2025-12-03'
+      tier: 3
+  - confidence: B
+    text: Rearming on credit feeds the weakness that rearming is meant to cure. The 2% target was reached with a supplementary budget; a 3.5% target would exceed JPY 20 trillion a year; the Bank of Japan has had to raise rates
+      to 1% with the yen near 160 and long-bond yields climbing. A power that borrows 230% of GDP buys deterrence with the currency its enemies can pressure.
+    sources:
+    - url: https://english.adnkronos.com/2026/02/19/takaichi-set-to-bolster-security-policy-under-2nd-cabinet/
+      title: Takaichi Set to Bolster Security Policy under 2nd Cabinet
+      publisher: Jiji Press via Adnkronos
+      date: '2026-02-19'
+      tier: 3
+    - url: https://www.tribuneindia.com/news/world/japan-considers-broadening-defense-related-spending-amid-us-pressure-to-include-space-and-infrastructure/amp
+      title: Japan considers broadening defense-related spending amid US pressure to include space and infrastructure
+      publisher: Tribune India (citing Asahi)
+      date: '2026'
+      tier: 3
+    - url: https://abcnews.com/Business/wireStory/bank-japan-raises-key-interest-rate-decade-high-133911615
+      title: Bank of Japan raises its key interest rate to a three-decade high of 1%, citing inflation
+      publisher: AP via ABC News
+      date: '2026-06-16'
+      tier: 3
+    - url: https://www.lpl.com/research/blog/japanese-stimulus-tests-yields-and-the-yen.html
+      title: Japanese stimulus tests yields and the yen
+      publisher: LPL Research
+      date: '2025'
+      tier: 2
+  - confidence: B
+    text: Paying the patron in capital protects the alliance and weakens the base that the alliance defends. The USD 550bn pledge (36bn plus about 73bn already allocated) goes into US reactors, gas plants and diamonds while
+      Japan's own oil, minerals and demography need investment; and when the Supreme Court removed the legal basis of the 15% tariff Tokyo still did not reopen the deal, because the purchase was the alliance, not the tariff.
+    sources:
+    - url: https://www.nippon.com/en/news/yjj2026022100456
+      title: Japan to Keep Investment Pledge to U.S. after Tariff Ruling
+      publisher: Jiji Press via nippon.com
+      date: '2026-02-21'
+      tier: 3
+    - url: https://www.nippon.com/en/news/yjj2026031800954
+      title: Japan's 2nd-Round Funding for U.S. Projects to Total 10 T. Yen
+      publisher: Jiji Press via nippon.com
+      date: '2026-03-18'
+      tier: 3
+    - url: https://stratnewsglobal.com/indo-pacific/japan/japan-wont-renegotiate-550-bln-investment-deal-with-u-s-says-pm-takaichi/
+      title: Japan won't renegotiate $550 bln investment deal with U.S., says PM Takaichi
+      publisher: StratNews Global
+      date: 2025-12
+      tier: 3
+    - url: https://www.foxbusiness.com/politics/trump-meets-japans-first-female-leader-signs-rare-earth-critical-minerals-supply
+      title: Trump meets Japan's first female leader, signs rare earth, critical minerals supply
+      publisher: Fox Business
+      date: '2025-10-28'
+      tier: 3
+  - confidence: B
+    text: Partner-building towards Seoul and Manila sits beside a history text that Seoul can read as provocation. Takaichi restated in Dec 2025 that Takeshima is Japanese territory and has resisted acknowledging wartime aggression,
+      yet Japan needs Korea in the trilateral and as a supplier-partner in the energy crisis; the calm is Lee Jae-myung's two-track choice, revocable, not a settled bond.
+    sources:
+    - url: https://www.lowyinstitute.org/the-interpreter/japan-korea-relations-sanae-s-puzzling-provocation
+      title: 'Japan-Korea relations: Sanae''s puzzling provocation'
+      publisher: Lowy Institute The Interpreter
+      date: 2025-12
+      tier: 2
+    - url: https://asianews.network/south-korea-president-lee-japan-pm-takaichi-hold-1st-talks-keep-shuttle-diplomacy-on-track/
+      title: South Korea President Lee, Japan PM Takaichi hold 1st talks, keep shuttle diplomacy on track
+      publisher: Asia News Network (Yonhap)
+      date: '2025-10-30'
+      tier: 3
+    - url: https://www.koreatimes.co.kr/foreignaffairs/20260519/korea-japan-agree-to-strengthen-oil-lng-cooperation-against-energy-crisis
+      title: Korea, Japan agree to strengthen oil, LNG cooperation against energy crisis
+      publisher: The Korea Times
+      date: '2026-05-19'
+      tier: 3
+  - confidence: B
+    text: Pressure on Russia is limited by the stakes it keeps. Takaichi called Putin's visit to Iturup (Aug 2026) 'absolutely unacceptable' and weighs an additional package, yet Mitsui (12.5%) and Mitsubishi (10%) stay in
+      Sakhalin-2 because leaving would hand them to Chinese firms, and with Hormuz shut Sakhalin Blend became more valuable, not less.
+    sources:
+    - url: https://euromaidanpress.com/2026/08/14/japan-weighs-sanctions-after-putins-first-visit-to-disputed-kuril-islands/
+      title: Japan weighs sanctions after Putin's first visit to disputed Kuril Islands
+      publisher: Euromaidan Press
+      date: '2026-08-14'
+      tier: 3
+    - url: https://moderndiplomacy.eu/2026/08/15/putin-kuril-islands-japan-russian-energy-dilemma/
+      title: Putin's Kuril Islands visit exposes Japan's Russian energy dilemma
+      publisher: Modern Diplomacy
+      date: '2026-08-15'
+      tier: 3
+    - url: https://mainichi.jp/english/articles/20220811/p2g/00m/0bu/010000c
+      title: New industry minister vows to secure stable energy supply in Japan (Sakhalin-2 interests kept)
+      publisher: Mainichi Daily News
+      date: '2022-08-11'
+      tier: 3
+  - confidence: C
+    text: Fortifying the islands nearest Taiwan makes them the first target of the war they are meant to deter. Yonaguni's missile unit and the Okinawa settlement strengthen the tripwire, but a base 110 km from the Taiwanese
+      coast is also the object that Beijing's own white-paper protests and daily Coast Guard presence (357 days in 2025 at the Senkakus) are organised around.
+    sources:
+    - url: https://www.aljazeera.com/news/2026/2/25/japan-to-install-missiles-near-taiwan-are-china-tensions-set-to-spike
+      title: 'Japan to install missiles near Taiwan: are China tensions set to spike?'
+      publisher: Al Jazeera
+      date: '2026-02-25'
+      tier: 3
+    - url: https://www.al-monitor.com/originals/2026/01/chinas-coast-guard-organized-134-patrols-around-senkaku-islands-past-five-years
+      title: China's coast guard organized 134 patrols around Senkaku Islands in past five years
+      publisher: Al-Monitor
+      date: 2026-01
+      tier: 3
+    - url: https://www.stripes.com/branches/marine_corps/2026-09-14/okinawa-governor-futenma-relocation-22847547.html
+      title: Okinawa governor election and Futenma relocation
+      publisher: Stars and Stripes
+      date: '2026-09-14'
+      tier: 3
+  reading: 'Japan is the case of a power that rearmed by naming its contingency, and then met the coalition the naming provoked. Luttwak''s logic of strategy says that what is declared is not what is deterred: Takaichi''s
+    sentence of 7 November 2025 turned a quiet ambiguity into a position, and a position can be answered. Beijing answered on every lever that Japan had left exposed (tourists, seafood, rare earths, dual-use exports), recruited
+    Moscow in a single sentence about ''militarism'', and then waited; eleven months later the retraction it demands has not come and neither has the thaw (Wang Yi to Iwaya, 28 September 2026). Tokyo''s compensation is the
+    oldest one in its strategy, the American alliance, now bought with USD 550bn and paid in installments, and a ring of lesser partnerships (Manila, Canberra, New Delhi, London and Rome, Seoul) that each add a little weight
+    and none a guarantee. The constraint that matters is not Article 9, which the February 2026 landslide has put in play, but arithmetic: a shrinking population, a debt of 230% of GDP, a yen at 160, and a Strait of Hormuz
+    that closed in March. The grand strategy therefore has the shape of a lever with a short arm: the deterrent is credible, the base that pays for it is not yet. The test of the next twelve months is whether the rewritten
+    security documents (due by the end of 2026) and a possible Xi-Takaichi meeting at the APEC summit in Shenzhen (18-19 November) can turn the naming into a negotiated line before the bill comes due.'

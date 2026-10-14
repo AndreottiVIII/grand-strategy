@@ -1,14 +1,185 @@
 id: KOR
 name: South Korea
+short: South Korea
 type: state
 iso2: kr
 wikipedia: https://en.wikipedia.org/wiki/South_Korea
-coords:
-- 126.99
-- 37.56
+coords: [126.99, 37.56]
 seat: Seoul
-regions:
-- world
-card: stub
-tier: minor
+regions: ['east-asia']
+card: full
+tier: protagonist
+last_verified: 2026-10-12
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the peninsula at peace and the North deterred while lowering the temperature: peaceful coexistence, no unification by absorption, no hostile acts, a formal end to the Korean War through talks of the parties involved, and nuclear restraint as the longer aim. Pyongyang has answered none of it since Kim defined the two Koreas as 'hostile states' in December 2023."
+      confidence: B
+      sources:
+        - {url: "https://pism.pl/publications/lee-jae-myungs-inter-korean-policy", title: "Lee Jae-myung's Inter-Korean Policy", publisher: "PISM", date: 2026, tier: 2}
+        - {url: "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/08/16/lee-proposes-talks-with-north-to-formally-end-korean-war", title: "Lee proposes talks with North to formally end Korean War", publisher: "The Star (wire report)", date: 2026-08-16, tier: 3}
+        - {url: "https://www.koreatimes.co.kr/southkorea/defense/20261003/north-koreas-border-fortification-raises-questions-over-dmz-buffer-role", title: "North Korea's border fortification raises questions over DMZ buffer role", publisher: "The Korea Times", date: 2026-10-03, tier: 3}
+    - rank: 2
+      text: "Keep the American guarantee credible at the lowest price while buying autonomy inside it: the 28,500-strong US presence and extended deterrence, the transfer of wartime operational control, a nuclear-powered submarine fleet and the right to enrich uranium and reprocess spent fuel."
+      confidence: B
+      sources:
+        - {url: "https://www.koreatimes.co.kr/amp/southkorea/defense/20260609/s-korea-us-align-on-nuclear-submarines-as-seoul-steps-up-peninsula-defense", title: "S. Korea, US align on nuclear submarines as Seoul steps up peninsula defense", publisher: "The Korea Times", date: 2026-06-09, tier: 3}
+        - {url: "https://www.koreajoongangdaily.com/korea/korea-united-states-continue-security-talks-as-uranium-enrichment-rights-take-center-stage/12516633", title: "Korea, United States continue security talks as uranium enrichment rights take center stage", publisher: "Korea JoongAng Daily", date: 2026, tier: 3}
+        - {url: "https://koreapro.org/2025/12/trump-signs-annual-defense-bill-codifying-usfk-troop-floor-through-2026/", title: "Trump signs annual defense bill codifying USFK troop floor through 2026", publisher: "Korea Pro", date: 2025-12, tier: 3}
+    - rank: 3
+      text: "Shield an export economy (exports USD 709.7bn in 2025, chips now about 41% of the total) from American tariff leverage and Chinese retaliation at once: buy the 15% US tariff ceiling with a USD 350bn investment pledge, restore the China relationship, and widen to ASEAN, India and the Gulf."
+      confidence: A
+      sources:
+        - {url: "https://www.wam.ae/en/article/17017m4-koreas-exports-hit-all-time-high-us7097-billion", title: "Korea's exports hit all-time high of US$709.7 billion in 2025", publisher: "WAM (Yonhap-based, ministry data)", date: 2026-01, tier: 3}
+        - {url: "https://www.malaymail.com/news/money/2026/03/12/south-korea-passes-bill-for-us350b-investment-deal-with-washington-to-ease-tariffs/212388", title: "South Korea passes bill for US$350b investment deal with Washington to ease tariffs", publisher: "Malay Mail (wire report)", date: 2026-03-12, tier: 3}
+        - {url: "https://www.nst.com.my/amp/business/corporate/2026/09/1526828/south-korea-exports-surpass-full-year-record-hit-us7094bil", title: "South Korea exports surpass full-year record, hit US$709.4bil", publisher: "New Straits Times (Reuters report)", date: 2026-09, tier: 3}
+    - rank: 4
+      text: "Turn arms, nuclear plants and shipyards into strategic assets: Poland (K2, K9, FA-50), the Czech Dukovany reactors, Romania, Estonia, Croatia, the Gulf air-defence sales and the Philippines, with the US shipbuilding partnership (MASGA) as the link to Washington."
+      confidence: B
+      sources:
+        - {url: "https://www.defensenews.com/global/europe/2025/08/01/poland-doubles-down-on-south-korean-tanks-with-65-billion-deal/", title: "Poland doubles down on South Korean tanks with $6.5 billion deal", publisher: "Defense News", date: 2025-08-01, tier: 3}
+        - {url: "https://world-nuclear-news.org/articles/czech-supreme-court-lifts-ban-on-signing-dukovany-contract", title: "Czech-KHNP Dukovany contract signed after court lifts injunction", publisher: "World Nuclear News", date: 2025-06-04, tier: 3}
+        - {url: "https://www.kas.de/en/country-reports/detail/-/content/vertiefung-der-partnerschaft-beim-11-eu-korea-gipfeltreffen", title: "Deepening the partnership at the 11th EU-Korea summit", publisher: "Konrad Adenauer Foundation", date: 2026-06, tier: 2}
+    - rank: 5
+      text: "Normalise the relation with China without leaving the American camp: a 'full restoration' of ties in 2026, an end to the unofficial hallyu ban and to the Yellow Sea structures, while refusing to take sides in the China-Japan quarrel over Taiwan."
+      confidence: B
+      sources:
+        - {url: "https://www.nbcnews.com/world/asia/south-koreas-lee-beijing-says-seeks-full-restoration-china-ties-2026-rcna252498", title: "South Korea's Lee, in Beijing, says he seeks full restoration of China ties in 2026", publisher: "NBC News (Reuters/AP)", date: 2026-01-05, tier: 3}
+        - {url: "https://www.koreatimes.co.kr/amp/foreignaffairs/20251203/lee-says-korea-could-play-mediating-role-where-possible-in-china-japan-dispute", title: "Lee says Korea could play mediating role, where possible, in China-Japan dispute", publisher: "The Korea Times", date: 2025-12-03, tier: 3}
+    - rank: 6
+      text: "Close the martial-law chapter and rebuild democratic legitimacy: Yoon Suk Yeol sentenced to life for insurrection (19 Feb 2026, appeal under way), the Democratic Party's win in the June 2026 local elections, and a president whose approval has fallen to 37%."
+      confidence: A
+      sources:
+        - {url: "https://cyprus-mail.com/2026/02/19/s-koreas-ex-president-yoon-jailed-for-life-over-insurrection", title: "S Korea's ex-president Yoon jailed for life over insurrection", publisher: "Cyprus Mail (wire report)", date: 2026-02-19, tier: 3}
+        - {url: "https://en.fnnews.com/news/202606251424474152", title: "Yoon appeal trial resumes after motion to disqualify the bench is rejected", publisher: "Financial News (Korea)", date: 2026-06-25, tier: 3}
+        - {url: "https://www.koreatimes.co.kr/southkorea/politics/20261009/lees-approval-rating-remains-at-37-poll", title: "Lee's approval rating remains at 37%: poll", publisher: "The Korea Times", date: 2026-10-09, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "Shuttle diplomacy and hedged summitry: hometown summits with Japan's Takaichi (Nara, 13-14 Jan 2026; Andong, 19-20 May 2026), a Beijing state visit (4-7 Jan 2026) and Wang Yi in Seoul (19-20 Aug), the NATO Ankara summit (7 Jul 2026), the first Central Asia-Korea summit (Sep 2026), state visits to the Philippines (Mar), India and Vietnam (Apr), and an EU summit (10 Jun). The proposal of talks to end the Korean War (15 Aug, repeated at the UN on 22 Sep) is the peninsula card."
+      confidence: B
+      sources:
+        - {url: "https://www.koreajoongangdaily.com/korea/lee-takaichi-to-hold-summit-in-nara-on-economy-ai-regional-issues/12203965", title: "Lee, Takaichi to hold summit in Nara on economy, AI, regional issues", publisher: "Korea JoongAng Daily", date: 2026-01, tier: 3}
+        - {url: "https://www.koreajoongangdaily.com/korea/takaichi-to-visit-lees-hometown-of-andong-next-week-for-talks/12583107", title: "Takaichi to visit Lee's hometown of Andong next week for talks", publisher: "Korea JoongAng Daily", date: 2026-05, tier: 3}
+        - {url: "https://chinaglobalsouth.com/2026/08/19/china-south-korea-relations-wang-yi-seoul/", title: "China's Wang Yi in South Korea for talks amid Trump push to revive North Korea diplomacy", publisher: "China-Global South Project", date: 2026-08-19, tier: 3}
+        - {url: "https://www.cna.org/analyses/2026/08/natos-ankara-summit-the-indo-pacific-dimensions", title: "NATO's Ankara summit: the Indo-Pacific dimensions", publisher: "CNA", date: 2026-08, tier: 2}
+        - {url: "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/08/16/lee-proposes-talks-with-north-to-formally-end-korean-war", title: "Lee proposes talks with North to formally end Korean War", publisher: "The Star (wire report)", date: 2026-08-16, tier: 3}
+    - domain: informational
+      text: "Self-restraint as signal: the border loudspeakers silenced on 11 Jun 2025 and dismantled in August, a ban on leaflets and balloons, official regret to Pyongyang for civilian drone flights (Feb 2026), the 'respect the North's system, no absorption' formula of the Unification Ministry, and a Freedom Shield 2026 with less than half the field exercises of 2025."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2025/8/4/south-korea-dismantles-border-loudspeakers-to-ease-tensions-with-n-korea", title: "South Korea dismantles border loudspeakers to ease tensions with N Korea", publisher: "Al Jazeera", date: 2025-08-04, tier: 3}
+        - {url: "https://www.arabnews.com/node/2633462/world", title: "South Korea says civilians sent drones to North Korea four times, harming ties", publisher: "Arab News (wire report)", date: 2026-02, tier: 3}
+        - {url: "https://asianews.network/uphold-deterrent-the-korea-herald/", title: "Uphold deterrent (editorial on scaled-back Freedom Shield 2026)", publisher: "The Korea Herald via Asia News Network", date: 2026, tier: 3}
+    - domain: military
+      text: "A conventional deterrent bought at home and a nuclear one rented from Washington: 28,500 US troops (a statutory floor in the FY2026 NDAA), combined command with US wartime control, a defence minister's roadmap (26 May 2026) for a domestically built nuclear-powered submarine in the mid-2030s, rules of engagement of warning shots for each MDL crossing, and a pledge to buy USD 25bn of US weapons."
+      confidence: B
+      sources:
+        - {url: "https://www.koreajoongangdaily.com/korea/us-senate-passes-defense-bill-to-maintain-usfk-troop-levels-at-28500-minimum/12137029", title: "U.S. Senate passes defense bill to maintain USFK troop levels at 28,500 minimum", publisher: "Korea JoongAng Daily", date: 2025-12, tier: 3}
+        - {url: "https://asianews.network/south-korea-us-begin-nuclear-talks-on-seouls-submarine-fuel-cycle-bids/", title: "South Korea, US begin nuclear talks on Seoul's submarine, fuel-cycle bids", publisher: "The Korea Herald via Asia News Network", date: 2026-06, tier: 3}
+        - {url: "https://www.koreajoongangdaily.com/korea/border-tension-grows-as-north-korean-soldiers-cross-mdl-south-shoots-warning-shots/12848746", title: "Border tension grows as North Korean soldiers cross MDL, South shoots warning shots", publisher: "Korea JoongAng Daily", date: 2026-09, tier: 3}
+        - {url: "https://www.thestandard.com.hk/finance/article/316821/US-South-Korea-release-details-of-deal-including-Korean-investment-in-shipbuilding", title: "US, South Korea release details of deal including Korean investment in shipbuilding", publisher: "The Standard (wire report)", date: 2025-11-14, tier: 3}
+    - domain: economic
+      text: "Capital and industry as currency: the USD 350bn Korea-US Strategic Investment Corp (launched June 2026; first projects announced 30 Sep: a Texas gas plant of USD 22.3bn, a nuclear framework of up to USD 120bn, Alaska LNG pending), the semiconductor boom (USD 173.4bn of chips in 2025, 41% of exports in January-August 2026), arms and reactor exports, and energy diversification away from the Gulf after the Hormuz disruption."
+      confidence: B
+      sources:
+        - {url: "https://capital.com/en-eu/news/texas-gas-plant-set-as-korea-s-first-u-s-investment-project", title: "Texas gas plant set as Korea's first U.S. investment project", publisher: "Capital.com", date: 2026-09-30, tier: 3}
+        - {url: "https://www.thestandard.com.hk/world/article/335028/South-Korea-launches-company-to-manage-350-billion-US-investment-pledge", title: "South Korea launches company to manage 350 billion US investment pledge", publisher: "The Standard (wire report)", date: 2026-06, tier: 3}
+        - {url: "https://www.nst.com.my/amp/business/corporate/2026/09/1526828/south-korea-exports-surpass-full-year-record-hit-us7094bil", title: "South Korea exports surpass full-year record, hit US$709.4bil", publisher: "New Straits Times (Reuters report)", date: 2026-09, tier: 3}
+        - {url: "https://view.asiae.co.kr/en/article/2026053118501800583", title: "The war reshapes Korea's crude oil imports: Middle Eastern share drops, U.S. share rises", publisher: "Asia Business Daily", date: 2026-05-31, tier: 3}
+
+  constraints:
+    - text: "The guarantor sets the terms. Wartime operational control is still American, the troop floor holds only by an NDAA clause that the Pentagon can lift after 60 days with a report, and the US pushes 'strategic flexibility' (forces able to act against China) as part of 'alliance modernisation'. USFK Patriot assets were moved to the Middle East in early 2026 over Seoul's objections."
+      confidence: B
+      sources:
+        - {url: "https://koreapro.org/2025/12/trump-signs-annual-defense-bill-codifying-usfk-troop-floor-through-2026/", title: "Trump signs annual defense bill codifying USFK troop floor through 2026", publisher: "Korea Pro", date: 2025-12, tier: 3}
+        - {url: "https://keia.org/the-peninsula/south-korea-redefines-alliance-burden-sharing-after-trumps-asia-visit/", title: "South Korea redefines alliance burden sharing after Trump's Asia visit", publisher: "Korea Economic Institute of America", date: 2025-11, tier: 2}
+        - {url: "https://asianews.network/?p=261311", title: "Speculation grows over possible US Forces Korea redeployment to Middle East", publisher: "The Korea Herald via Asia News Network", date: 2026-03, tier: 3}
+    - text: "Tariff leverage that does not expire: a 15% ceiling in exchange for USD 350bn, with Trump threatening 25% again in January 2026 and before the first investment projects in September, and Washington asking for projects above the agreed total."
+      confidence: B
+      sources:
+        - {url: "https://www.malaymail.com/news/money/2026/03/12/south-korea-passes-bill-for-us350b-investment-deal-with-washington-to-ease-tariffs/212388", title: "South Korea passes bill for US$350b investment deal with Washington to ease tariffs", publisher: "Malay Mail (wire report)", date: 2026-03-12, tier: 3}
+        - {url: "https://capital.com/en-eu/news/texas-gas-plant-set-as-korea-s-first-u-s-investment-project", title: "Texas gas plant set as Korea's first U.S. investment project", publisher: "Capital.com", date: 2026-09-30, tier: 3}
+    - text: "China can hurt in return, and has shown how: the post-THAAD hallyu restrictions still stand unofficially (concerts barred), Beijing sanctioned five US units of Hanwha Ocean on 14 Oct 2025 for helping US shipbuilding, and China remains the largest single export market (USD 130.8bn in 2025)."
+      confidence: B
+      sources:
+        - {url: "https://www.koreatimes.co.kr/amp/entertainment/k-pop/20260106/hopes-for-easing-hallyu-ban-remain-muted-after-seoul-beijing-talks", title: "Hopes for easing hallyu ban remain muted after Seoul-Beijing talks", publisher: "The Korea Times", date: 2026-01-06, tier: 3}
+        - {url: "https://www.freightwaves.com/news/new-china-sanctions-on-south-korean-company-aiding-u-s-shipbuilding", title: "New China sanctions on South Korean company aiding U.S. shipbuilding", publisher: "FreightWaves", date: 2025-10, tier: 3}
+        - {url: "https://www.wam.ae/en/article/17017m4-koreas-exports-hit-all-time-high-us7097-billion", title: "Korea's exports hit all-time high of US$709.7 billion in 2025", publisher: "WAM (Yonhap-based, ministry data)", date: 2026-01, tier: 3}
+    - text: "An adversary that has stopped talking: Pyongyang rejects every offer, wrote 'hostile states' into its practice (Ninth Party Congress, February 2026; revised constitution, March 2026), and is fortifying the line itself - mines laid south of the border a year ago, about 20 MDL crossings in August and 30 in September 2026, a mine blast on 21 Sep that hurt three South Korean soldiers."
+      confidence: B
+      sources:
+        - {url: "https://38north.org/2026/05/paving-the-way-for-hostile-coexistence-what-north-koreas-constitutional-revisions-mean-for-inter-korean-ties/", title: "Paving the way for hostile coexistence? What North Korea's constitutional revisions mean for inter-Korean ties", publisher: "38 North", date: 2026-05, tier: 2}
+        - {url: "https://www.nkinsider.org/party-congress-reaffirms-rejection-of-reunification-south-korea-is-now-an-enemy/", title: "Party Congress reaffirms rejection of reunification, South Korea is now an 'enemy'", publisher: "NK Insider", date: 2026-02, tier: 3}
+        - {url: "https://asianews.network/?p=305774", title: "North Korea placed mines south of the border over a year ago, US-led UN Command and Seoul find", publisher: "Asia News Network", date: 2026-10, tier: 3}
+    - text: "Energy and a shrinking base. About 61% of crude imports depended on the Strait of Hormuz when the Iran war closed it in spring 2026 (110 million barrels bought elsewhere for April-May); and a fertility rate of 0.80 in 2025 (births 254,300, deaths 363,400, natural decline 108,900) will shrink the conscript pool and the tax base for the very defence bill Washington wants raised."
+      confidence: B
+      sources:
+        - {url: "https://www.koreajoongangdaily.com/business/korea-weighs-upping-crude-imports-from-us-and-australia-as-iran-blocks-strait-of-hormuz/12555195", title: "Korea weighs upping crude imports from U.S. and Australia as Iran blocks Strait of Hormuz", publisher: "Korea JoongAng Daily", date: 2026-03, tier: 3}
+        - {url: "https://www.hellenicshippingnews.com/south-korean-govt-secures-110-mil-barrels-of-crude-for-april-may-amid-hormuz-disruptions/", title: "South Korean govt secures 110 mil barrels of crude for April, May amid Hormuz disruptions", publisher: "Hellenic Shipping News", date: 2026-03, tier: 3}
+        - {url: "https://koreatimes.co.kr/southkorea/society/20260826/koreas-births-rise-67-to-254300-in-2025", title: "Korea's births rise 6.7% to 254,300 in 2025", publisher: "The Korea Times", date: 2026-08-26, tier: 3}
+    - text: "A divided home front and legal brakes: approval 35-37% in October 2026 with the Democratic Party at its lowest since taking office, the opposition holding Seoul after the June local elections, a statutory ban on lethal aid to countries at war, and a 123 Agreement that bars Washington-origin material from military use."
+      confidence: B
+      sources:
+        - {url: "https://www.koreatimes.co.kr/southkorea/politics/20261009/lees-approval-rating-remains-at-37-poll", title: "Lee's approval rating remains at 37%: poll", publisher: "The Korea Times", date: 2026-10-09, tier: 3}
+        - {url: "https://thesun.my/news/world-news/asia/lees-party-wins-local-polls-but-loses-seoul-mayoral-race/", title: "Lee's party wins local polls but loses Seoul mayoral race", publisher: "The Sun Malaysia (AP report)", date: 2026-06, tier: 3}
+        - {url: "https://www.koreajoongangdaily.com/korea/12762285", title: "Lee offers $100 million for Ukraine reconstruction in first official summit with Zelensky at NATO", publisher: "Korea JoongAng Daily", date: 2026-07-08, tier: 3}
+
+  paradoxes:
+    - text: "The ally that pays for its own guarantor weakens what it buys. Seoul pledged USD 350bn of investment, USD 25bn of US arms and USD 33bn of support for US forces to keep tariffs at 15% and the troops in place; each payment turns the guarantee into a priced service, and the nuclear-submarine and enrichment quest is a hedge that tells Washington (and Pyongyang) that Seoul does not fully trust the product."
+      confidence: B
+      sources:
+        - {url: "https://www.thestandard.com.hk/finance/article/316821/US-South-Korea-release-details-of-deal-including-Korean-investment-in-shipbuilding", title: "US, South Korea release details of deal including Korean investment in shipbuilding", publisher: "The Standard (wire report)", date: 2025-11-14, tier: 3}
+        - {url: "https://keia.org/the-peninsula/south-korea-redefines-alliance-burden-sharing-after-trumps-asia-visit/", title: "South Korea redefines alliance burden sharing after Trump's Asia visit", publisher: "Korea Economic Institute of America", date: 2025-11, tier: 2}
+        - {url: "https://www.koreatimes.co.kr/amp/southkorea/defense/20260609/s-korea-us-align-on-nuclear-submarines-as-seoul-steps-up-peninsula-defense", title: "S. Korea, US align on nuclear submarines as Seoul steps up peninsula defense", publisher: "The Korea Times", date: 2026-06-09, tier: 3}
+    - text: "Reassuring the North loosens the deterrent that restrains it. Seoul cut its own 2026 field exercises to 22 from 51, Trump then ordered Ulchi Freedom Shield ended a week early to court Kim - and Pyongyang answered by fortifying the line and crossing it. The more Seoul disarms the rhetoric, the more Washington can bargain over its head: columnists expect Kim to prefer talks with the US to talks with the South."
+      confidence: B
+      sources:
+        - {url: "https://asianews.network/uphold-deterrent-the-korea-herald/", title: "Uphold deterrent (editorial on scaled-back Freedom Shield 2026)", publisher: "The Korea Herald via Asia News Network", date: 2026, tier: 3}
+        - {url: "https://thepulseofnh.com/?p=220557", title: "US-South Korea military drills to end early after Trump order, Seoul says", publisher: "Associated Press (syndicated)", date: 2026-08, tier: 3}
+        - {url: "https://koreatimes.co.kr/opinion/20260820/nk-peace", title: "Opinion: what peace with North Korea could look like (column on Kim preferring talks with Washington)", publisher: "The Korea Times", date: 2026-08-20, tier: 3}
+    - text: "The best arms market is made by the war that arms the enemy. Poland, Romania and the Baltic buyers are rearming because of Russia's war on Ukraine (Poland took 47% of its imports from Korea in 2021-25), while that same war produced the Russia-North Korea alliance, 11,000-14,000 North Korean troops in Russia and the technology payments that threaten Seoul. Meanwhile Seoul's ban on lethal aid keeps it out of the war that feeds its order books, and its dispute with Kyiv over the North Korean prisoners (Oct 2026) has now cost goodwill on both sides."
+      confidence: B
+      sources:
+        - {url: "https://notesfrompoland.com/2026/03/09/poland-natos-biggest-arms-importer-over-last-five-years/", title: "Poland NATO's biggest arms importer over last five years", publisher: "Notes from Poland (SIPRI data)", date: 2026-03-09, tier: 3}
+        - {url: "https://www.cfr.org/article/how-north-korea-has-bolstered-russias-war-ukraine", title: "How North Korea has bolstered Russia's war in Ukraine", publisher: "Council on Foreign Relations", date: 2025-11, tier: 2}
+        - {url: "https://kyivindependent.com/south-korean-president-warns-of-additional-measures-if-ukraine-doesnt-apologize-for-pow-dispute/", title: "South Korean president warns of additional measures if Ukraine doesn't apologize for POW dispute", publisher: "Kyiv Independent", date: 2026-10-02, tier: 3}
+    - text: "Indispensability invites coercion. Chips rose from 21% of exports (2024) to about 41% (January-August 2026), which gives Seoul leverage over Washington and Beijing and also concentrates the risk: the more memory chips the world needs from Korea, the more Washington asks for onshoring and tariff-for-investment swaps, and the more Beijing punishes the shipyards that serve American strategy."
+      confidence: B
+      sources:
+        - {url: "https://www.nst.com.my/amp/business/corporate/2026/09/1526828/south-korea-exports-surpass-full-year-record-hit-us7094bil", title: "South Korea exports surpass full-year record, hit US$709.4bil", publisher: "New Straits Times (Reuters report)", date: 2026-09, tier: 3}
+        - {url: "https://www.koreaherald.com/article/10657692", title: "Seoul invokes 'no less favorable' clause to secure Taiwan-level tariff treatment for chips", publisher: "The Korea Herald", date: 2025, tier: 3}
+        - {url: "https://www.freightwaves.com/news/new-china-sanctions-on-south-korean-company-aiding-u-s-shipbuilding", title: "New China sanctions on South Korean company aiding U.S. shipbuilding", publisher: "FreightWaves", date: 2025-10, tier: 3}
+    - text: "Balancing needs an equidistance the alliance does not allow. Lee says he will not take sides in the China-Japan quarrel over Taiwan and Wang Yi told Seoul on 19-20 Aug 2026 to show 'genuine strategic autonomy'; but Washington's 'strategic flexibility' for USFK and the shipbuilding partnership (MASGA) tie Korean industry to the very rivalry Seoul wants to stay out of, and Beijing has already priced that choice."
+      confidence: B
+      sources:
+        - {url: "https://www.koreatimes.co.kr/amp/foreignaffairs/20251203/lee-says-korea-could-play-mediating-role-where-possible-in-china-japan-dispute", title: "Lee says Korea could play mediating role, where possible, in China-Japan dispute", publisher: "The Korea Times", date: 2025-12-03, tier: 3}
+        - {url: "https://chinaglobalsouth.com/2026/08/19/china-south-korea-relations-wang-yi-seoul/", title: "China's Wang Yi in South Korea for talks amid Trump push to revive North Korea diplomacy", publisher: "China-Global South Project", date: 2026-08-19, tier: 3}
+        - {url: "https://keia.org/the-peninsula/south-korea-redefines-alliance-burden-sharing-after-trumps-asia-visit/", title: "South Korea redefines alliance burden sharing after Trump's Asia visit", publisher: "Korea Economic Institute of America", date: 2025-11, tier: 2}
+
+  reading: |
+    South Korea is a middle power that has turned itself into something every
+    great power needs - memory chips, shipyards, reactors, howitzers - and has
+    then discovered that being needed is not the same as being secure. Luttwak's
+    reading is of an alliance that pays for its own guarantor: the 1953 treaty
+    and 28,500 soldiers remain the fact on which everything rests, but since
+    2025 the guarantor sets a price in tariffs, investment pledges, weapons
+    purchases and support payments, cuts the allied exercises on its own
+    initiative to court the adversary, and moves air-defence batteries to another
+    theatre. Seoul answers with the only strategic move open to a rich dependent:
+    make itself more useful (MASGA, the USD 350bn fund) and more autonomous
+    (nuclear submarines, enrichment, wartime control) at once, which are
+    contradictory signals to a guarantor. On the other front stands a deterrence
+    facing an adversary that has stopped talking: Pyongyang has replaced hostility
+    to be negotiated with a border to be built, with Russian money and combat
+    experience behind it, and Lee's outreach - loudspeakers off, regret for drones,
+    a proposal to end the war - meets a wall of mines and silence. The restoration
+    of ties with China and Japan in 2026 is the third leg: a hedge, not an
+    alignment, and the one that Beijing's own Wang Yi describes as 'strategic
+    autonomy'. Signals that do not fit a row: Putin's January 2026 wish to
+    'restore ties' and Seoul's ambassador at Vladivostok, while the Hyundai
+    option on its St Petersburg plant lapsed; and the disclosure of two North
+    Korean prisoners transferred from Ukraine, which turned Kyiv from a cause into
+    a quarrel in September-October 2026.
