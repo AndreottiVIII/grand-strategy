@@ -4,7 +4,7 @@
 (async function () {
   const stamp = document.querySelector('script[src^="app.js"]').src.split("?")[1];
   const [data, world, iso2] = await Promise.all([
-    fetch("data.json" + (stamp ? "?" + stamp : "")).then(r => r.json()),
+    fetch("data.json?t=" + Date.now()).then(r => r.json()),   // always fresh, even when a cached index.html is served
     fetch("world.geojson").then(r => r.json()),
     fetch("iso2.json").then(r => r.json()),
   ]);
