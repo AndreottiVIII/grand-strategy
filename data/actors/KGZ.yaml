@@ -8,7 +8,75 @@ coords:
 - 42.87
 seat: Bishkek
 regions:
-- world
-card: stub
+- south-central-asia
+card: full
 tier: minor
 dataset: wikidata
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep Sadyr Japarov in power through the presidential election of 27 January 2027. His former partner Kamchybek Tashiev was sacked on 10 February 2026 and convicted in July 2026 of plotting to seize power by force. In February 2026 the Constitutional Court ruled that Japarov's current mandate counts as his first term, so he can run again."
+      confidence: A
+      sources:
+        - {url: "https://www.rferl.org/amp/kyrgyzstan-japarov-tashiev-president-political-second-term/32802961.html", title: "Kyrgyz Leader Eyeing A Second Term With The Political Landscape Transformed", publisher: "RFE/RL", date: 2026-08, tier: 3}
+        - {url: "https://en.fergana.agency/news/145799/", title: "Kyrgyz Constitutional Court Sets Date for Next Presidential Election", publisher: "Fergana News Agency", date: 2026-02, tier: 3}
+        - {url: "https://www.intellinews.com/kyrgyzstan-s-japarov-to-run-for-re-election-claims-original-plan-was-to-stand-aside-for-coup-plot-convict-tashiyev-461360/", title: "Kyrgyzstan's Japarov to run for re-election, claims original plan was to stand aside for coup plot convict Tashiyev", publisher: "bne IntelliNews", date: 2026-08, tier: 3}
+    - rank: 2
+      text: "Keep the Russian security umbrella and the labour market open at the same time: CSTO membership with the Kant air base near Bishkek, and the wages of migrants who work mostly in Russia. Bishkek wants the protection without Moscow's political control."
+      confidence: B
+      sources:
+        - {url: "https://24.kg/english/361852_Expansion_of_Kant_airbase_not_required_Russian_Ambassador_says", title: "Expansion of Kant airbase not required, Russian Ambassador says", publisher: "24.kg", date: 2026, tier: 3}
+        - {url: "https://malaymail.com/news/life/2025/06/26/migrant-funded-dreams-how-kyrgyzstan-is-growing-on-foreign-wages/181784", title: "Migrant-funded dreams: how Kyrgyzstan is growing on foreign wages", publisher: "Malay Mail", date: 2025-06-26, tier: 3}
+    - rank: 3
+      text: "Turn its position between China, Uzbekistan and Kazakhstan into income: the China-Kyrgyzstan-Uzbekistan railway, the Kambarata-1 hydropower project, and the Kumtor gold mine, now under full state control."
+      confidence: B
+      sources:
+        - {url: "https://english.www.gov.cn/news/202412/27/content_WS676eabb1c6d0868f4e8ee51f.html", title: "China-Kyrgyzstan-Uzbekistan railway ceremonial start", publisher: "Chinese government (official statement)", date: 2024-12-27, tier: 1}
+        - {url: "https://www.worldbank.org/en/programs/kambarata-1-hpp", title: "Kambarata-1 hydropower project", publisher: "World Bank", date: 2025, tier: 1}
+        - {url: "https://www.mining.com/centerra-gold-hands-kumtor-mine-to-kyrgyzstan-ending-dispute/", title: "Centerra Gold hands Kumtor mine to Kyrgyzstan, ending dispute", publisher: "Mining.com", date: 2022-04, tier: 3}
+  means:
+    - domain: diplomatic
+      text: "Multi-vector diplomacy: CSTO and EAEU membership with Russia, the railway and Chinese financing, Turkic bodies with Turkey, and a Washington channel (C5+1 summit, November 2025) that Bishkek presents as trade, fintech and visas rather than minerals. Military: the CSTO framework: Russian forces at the Kant air base, which Moscow says is enough for the southern flank with no expansion needed; Russian personnel took part in the Rubezh-2025 exercise. Turkish drones (TB2 bought in 2021, more ordered after the 2022 clashes with Tajikistan) add a second air arm."
+      confidence: B
+      sources:
+        - {url: "https://24.kg/english/361852_Expansion_of_Kant_airbase_not_required_Russian_Ambassador_says", title: "Expansion of Kant airbase not required, Russian Ambassador says", publisher: "24.kg", date: 2026, tier: 3}
+        - {url: "https://kun.uz/en/news/2021/11/08/kyrgyzstan-purchases-turkish-drones", title: "Kyrgyzstan purchases Turkish drones", publisher: "Kun.uz", date: 2021-11-08, tier: 3}
+        - {url: "https://www.mfa.gov.tr/relations-between-turkey-and-kyrgyzstan.en.mfa", title: "Relations between Turkey and Kyrgyzstan", publisher: "Turkish Ministry of Foreign Affairs", date: 2025, tier: 1}
+        - {url: "https://www.trend.az/casia/kyrgyzstan/4219123.html", title: "Kyrgyzstan, US discuss expanding trade, economic and investment cooperation", publisher: "Trend", date: 2026-08, tier: 3}
+    - domain: informational
+      text: "Control of the press: Kloop, whose liquidation a court ordered in February 2024 (it kept working under another entity), had its current and former staff detained in May 2025 in the so-called Kempir-Abad case. Two former employees were jailed for five years in September 2025. Critics call the charges baseless; the government says closing Kloop does not jeopardise press freedom."
+      confidence: B
+      sources:
+        - {url: "https://www.occrp.org/en/news/kloops-ex-employees-convicted-in-kyrgyz-media-crackdown", title: "Kloop's Ex-Employees Convicted in Kyrgyz Media Crackdown", publisher: "OCCRP", date: 2025-09, tier: 3}
+        - {url: "https://www.amnesty.org/en/latest/news/2025/05/kyrgyzstan-detention-of-kloop-media-staff-intensifies-crackdown-on-independent-journalism/", title: "Kyrgyzstan: Detention of Kloop media staff intensifies crackdown on independent journalism", publisher: "Amnesty International", date: 2025-05, tier: 2}
+        - {url: "https://www.occrp.org/en/news/kyrgyzstan-president-closing-kloop-does-not-jeopardize-press-freedom", title: "Kyrgyzstan President: Closing Kloop does not Jeopardize Press Freedom", publisher: "OCCRP", date: 2025, tier: 3}
+    - domain: economic
+      text: "Gold: the Kumtor mine, the largest in Central Asia, came under state control in May 2021 and passed to 100 per cent Kyrgyz ownership in April 2022 through a settlement with Centerra. It is the country's main private employer and taxpayer."
+      confidence: B
+      sources:
+        - {url: "https://www.mining.com/centerra-gold-hands-kumtor-mine-to-kyrgyzstan-ending-dispute/", title: "Centerra Gold hands Kumtor mine to Kyrgyzstan, ending dispute", publisher: "Mining.com", date: 2022-04, tier: 3}
+  constraints:
+    - text: "Russia is the labour market and the money. Remittances were about a quarter of GDP in 2024 (24 to 25 per cent in reporting citing the World Bank), and Russia supplied 94 per cent of inflows in January-May 2025. Russian rules since 2024 (90-day stays, fingerprinting, expulsion of about 157,000 irregular migrants in 2024) cut the official count of Kyrgyz workers from about 650,000 to about 350,000, though unofficial estimates are higher."
+      confidence: B
+      sources:
+        - {url: "https://timesca.com/russias-crackdown-forces-central-asia-to-rethink-labor-migration/", title: "Russia's crackdown forces Central Asia to rethink labor migration", publisher: "Times of Central Asia", date: 2025, tier: 3}
+        - {url: "https://malaymail.com/news/life/2025/06/26/migrant-funded-dreams-how-kyrgyzstan-is-growing-on-foreign-wages/181784", title: "Migrant-funded dreams: how Kyrgyzstan is growing on foreign wages", publisher: "Malay Mail", date: 2025-06-26, tier: 3}
+    - text: "A small economy with Kremlin dependence: the economy depends on Russia directly and through Kazakhstan, which limits what Bishkek can refuse in Moscow. The CSTO and the Kant base are the security side of the same dependence."
+      confidence: C
+      sources:
+        - {url: "https://timesca.com/russias-crackdown-forces-central-asia-to-rethink-labor-migration/", title: "Russia's crackdown forces Central Asia to rethink labor migration", publisher: "Times of Central Asia", date: 2025, tier: 3}
+        - {url: "https://en.odkb-csto.org/structure/", title: "CSTO structure: member states", publisher: "Collective Security Treaty Organization", date: 2026-10, tier: 1}
+    - text: "Water and the joint dam: Kambarata-1 (1,860 MW) is a joint venture with Kazakhstan and Uzbekistan (Kyrgyzstan 34 per cent, 33 each for the others). The intergovernmental agreement was still being prepared in 2025-26 and the cost is disputed ($4.2bn to $5bn), so the water lever is not yet in Bishkek's hands."
+      confidence: B
+      sources:
+        - {url: "https://www.worldbank.org/en/programs/kambarata-1-hpp", title: "Kambarata-1 hydropower project", publisher: "World Bank", date: 2025, tier: 1}
+        - {url: "https://global-gateway-forum.ec.europa.eu/news/global-gateway-forum-eu-expands-investments-hydropower-drive-central-asias-energy-transformation-2025-10-10_en", title: "Global Gateway Forum: EU expands investments in hydropower to drive Central Asia's energy transformation", publisher: "European Commission", date: 2025-10-10, tier: 1}
+  paradoxes:
+    - text: "The EU's anti-circumvention tool was used against Kyrgyzstan for the first time in April 2026, against re-exports to Russia. The trade that brings Bishkek income is the same trade that now draws European sanctions."
+      confidence: B
+      sources:
+        - {url: "https://malta.representation.ec.europa.eu/news/eu-adopts-20th-package-sanctions-against-russia-2026-04-23_en", title: "EU adopts 20th package of sanctions against Russia", publisher: "European Commission Representation in Malta", date: 2026-04-23, tier: 1}
+  reading: |
+    Kyrgyzstan is a small, landlocked state whose regime has concentrated power around Japarov since he sacked Tashiev in February 2026, ahead of a presidential election on 27 January 2027, after a 2025 crackdown on the independent press. Its security and its labour market both run through Russia (CSTO, Kant, remittances), while China (railway and financing), Uzbekistan and Tajikistan (border treaties of 2023 and 2025) and the United States (trade and visas) offer room to balance. Its levers are gold, transit and water; its binding constraint is Moscow.

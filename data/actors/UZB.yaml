@@ -1,14 +1,196 @@
 id: UZB
 name: Uzbekistan
+short: Uzbekistan
 type: state
 iso2: uz
 wikipedia: https://en.wikipedia.org/wiki/Uzbekistan
-coords:
-- 69.28
-- 41.31
+coords: [69.28, 41.31]
 seat: Tashkent
-regions:
-- world
-card: stub
-tier: minor
+regions: ['south-central-asia']
+card: full
+tier: protagonist
+last_verified: 2026-10-12
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the regime and the succession safe: President Mirziyoyev's 2023 constitution reset his term count and lengthened the presidency to seven years (90.2% 'yes' on 84.5% turnout on 30 Apr 2023), so he can rule through the 2030s, perhaps to 2040. Opening to the world since 2016 is the means; political control is the end."
+      confidence: A
+      sources:
+        - {url: "https://constitutionnet.org/news/uzbekistan-passes-comprehensive-constitutional-reform-including-extension-presidential-term", title: "Uzbekistan passes comprehensive constitutional reform including extension of presidential term", publisher: "ConstitutionNet (International IDEA)", date: 2023-05, tier: 2}
+        - {url: "https://meduza.io/en/news/2023/05/01/uzbekistan-s-president-wins-referendum-vote-on-extending-powers", title: "Uzbekistan's president wins referendum vote on extending powers", publisher: "Meduza", date: 2023-05-01, tier: 3}
+    - rank: 2
+      text: "Turn a double-landlocked position into transit value: be the crossing point of the China-Kyrgyzstan-Uzbekistan railway (construction started end-2024, 17% done in August 2026), the Trans-Afghan railway to Pakistan (framework agreement 17 Jul 2025), the Middle Corridor and the Iran-India route via Chabahar. A state that cannot reach the sea makes itself the thing others must cross."
+      confidence: B
+      sources:
+        - {url: "https://carnegieendowment.org/research/2026/05/continental-asia-and-the-rise-of-portfolio-politics", title: "Continental Asia and the Rise of Portfolio Politics", publisher: "Carnegie Endowment for International Peace", date: 2026-05, tier: 2}
+        - {url: "https://kun.uz/en/news/2026/07/13/china-kyrgyzstan-uzbekistan-railway-project-enters-active-construction-phase-a7f659", title: "China-Kyrgyzstan-Uzbekistan railway project enters active construction phase", publisher: "Kun.uz", date: 2026-07-13, tier: 3}
+        - {url: "https://en.fergana.agency/news/139019", title: "Tashkent, Islamabad and Kabul sign agreement on feasibility study for Trans-Afghan railway", publisher: "Fergana Agency", date: 2025-07, tier: 3}
+    - rank: 3
+      text: "Keep every great power a partner and none a master (multi-vector policy inherited from Karimov): observer, not member, of the Eurasian Economic Union (December 2020); no CSTO; a BRICS partner from 2025 and an SCO member while courting Washington (C5+1, 6 Nov 2025) and Brussels (EPCA, October 2025); neutrality on Ukraine."
+      confidence: B
+      sources:
+        - {url: "https://carnegieendowment.org/emissary/2026/09/sco-china-russia-central-asia-performance-art-collaboration", title: "Is the Shanghai Cooperation Organisation Performance Art or Meaningful Collaboration?", publisher: "Carnegie Endowment for International Peace", date: 2026-09, tier: 2}
+        - {url: "https://kun.uz/en/news/2020/12/11/uzbekistan-becomes-observer-state-in-eaeu", title: "Uzbekistan becomes observer state in EAEU", publisher: "Kun.uz", date: 2020-12-11, tier: 3}
+        - {url: "https://kun.uz/en/news/2024/06/06/putin-thanks-uzbekistan-for-neutrality-on-ukraine", title: "Putin thanks Uzbekistan for neutrality on Ukraine", publisher: "Kun.uz", date: 2024-06-06, tier: 3}
+    - rank: 4
+      text: "Secure water and power: downstream on the Amu Darya (Afghanistan's Qosh Tepa canal, 285 km, completion foreseen for 2028), net gas importer since 2023 after output fell from 61.6 bcm (2018) to 44.6 bcm (2024), so Tashkent buys Russian and Turkmen gas, Tajik hydropower (Rogun, 20-year contract), Russian nuclear (first concrete 24 Mar 2026) and builds Gulf-financed solar and wind."
+      confidence: B
+      sources:
+        - {url: "https://timesca.com/afghanistan-advances-qosh-tepa-canal-while-urging-regional-water-cooperation/", title: "Afghanistan advances Qosh Tepa canal while urging regional water cooperation", publisher: "Times of Central Asia", date: 2026-04, tier: 3}
+        - {url: "https://timesca.com/gas-crunch-in-uzbekistan-industry-falters-as-demand-surges/", title: "Gas crunch in Uzbekistan: industry falters as demand surges", publisher: "Times of Central Asia", date: 2025, tier: 3}
+        - {url: "https://kun.uz/en/news/2026/03/24/construction-of-small-capacity-nuclear-power-units-begins-in-jizzakh", title: "Construction of small-capacity nuclear power units begins in Jizzakh", publisher: "Kun.uz", date: 2026-03-24, tier: 3}
+        - {url: "https://www.kun.uz/en/news/2025/07/17/rogun-hydropower-plant-to-supply-electricity-to-uzbekistan-during-peak-demand", title: "Rogun hydropower plant to supply electricity to Uzbekistan during peak demand", publisher: "Kun.uz", date: 2025-07-17, tier: 3}
+    - rank: 5
+      text: "Make Tashkent the organiser of a self-managed Central Asia: end the quarrels with neighbours, settle borders (Kyrgyz-Tajik treaty 13 Mar 2025 after Uzbek mediation, tripoint treaty at Khujand 31 Mar 2025), sign Treaties on Allied Relations with Kazakhstan (2022), Tajikistan (2024) and Kyrgyzstan (2026), and host the leaders' format that now includes Azerbaijan."
+      confidence: B
+      sources:
+        - {url: "https://www.kas.de/en/web/auslandsinformationen/artikel/detail/-/content/zentralasien-zwischen-russland-china-und-dem-westen", title: "Central Asia between Russia, China and the West", publisher: "Konrad-Adenauer-Stiftung", date: 2025, tier: 2}
+        - {url: "https://caspianpolicy.org/research/security/ferghana-valley-takes-a-step-toward-stability-as-central-asian-neighbors-settle-border-dispute", title: "Ferghana Valley takes a step toward stability as Central Asian neighbors settle border dispute", publisher: "Caspian Policy Center", date: 2025, tier: 2}
+        - {url: "https://gov.uz/en/mfa/news/view/201348", title: "President Shavkat Mirziyoyev concludes state visit to Kyrgyzstan", publisher: "Ministry of Foreign Affairs of Uzbekistan (official statement)", date: 2026-08-01, tier: 1}
+    - rank: 6
+      text: "Convert the demographic weight into growth and jobs: 38.2 million people on 1 Jan 2026 (census of Jan-Feb 2026 counted 39.0 million), a median age near 27 and about 1.34 million workers on Russian patents; WTO accession targeted for 2026, Gulf, Korean and Japanese capital, and a reserve pile of USD 70-77bn in 2026 (mostly gold) to cushion the shift away from remittances (USD 18.9bn in 2025, about 14% of GDP in 2024)."
+      confidence: B
+      sources:
+        - {url: "https://stat.uz/en/press-center/news-of-committee/68572-zbekiston-a-olisining-arijb-56-foizi-me-natga-lajo-atli-4", title: "Permanent population and age structure on 1 January 2026", publisher: "National Statistics Committee of Uzbekistan", date: 2026, tier: 1}
+        - {url: "https://kun.uz/en/news/2026/03/17/remittances-to-uzbekistan-exceed-189-billion-tripling-in-five-years", title: "Remittances to Uzbekistan exceed $18.9 billion, tripling in five years", publisher: "Kun.uz (Central Bank data)", date: 2026-03-17, tier: 3}
+        - {url: "https://kun.uz/en/news/2026/03/24/economic-growth-and-foreign-markets-why-uzbekistan-is-accelerating-wto-accession", title: "Economic growth and foreign markets: why Uzbekistan is accelerating WTO accession", publisher: "Kun.uz", date: 2026-03-24, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "Treaties on Allied Relations (not defence pacts) with the three Turkic and Tajik neighbours - Kazakhstan (signed 22 Dec 2022), Tajikistan (18 Apr 2024), Kyrgyzstan (state visit 30 Jul - 1 Aug 2026) - plus a share of mediation: the Kyrgyz-Tajik border settlement of 2025 is credited to Tashkent's mediation."
+      confidence: B
+      sources:
+        - {url: "https://www.interfax.com/newsroom/top-stories/86407/", title: "Kazakhstan and Uzbekistan sign Treaty on Allied Relations", publisher: "Interfax", date: 2022-12-22, tier: 3}
+        - {url: "https://timesca.com/tajikistan-and-uzbekistan-sign-allied-relations-treaty/", title: "Tajikistan and Uzbekistan sign allied relations treaty", publisher: "Times of Central Asia", date: 2024-04, tier: 3}
+        - {url: "https://gov.uz/en/mfa/news/view/201348", title: "President Shavkat Mirziyoyev concludes state visit to Kyrgyzstan", publisher: "Ministry of Foreign Affairs of Uzbekistan (official statement)", date: 2026-08-01, tier: 1}
+        - {url: "https://www.kas.de/en/web/auslandsinformationen/artikel/detail/-/content/zentralasien-zwischen-russland-china-und-dem-westen", title: "Central Asia between Russia, China and the West", publisher: "Konrad-Adenauer-Stiftung", date: 2025, tier: 2}
+    - domain: diplomatic
+      text: "Neutrality as currency: Tashkent recognises Ukraine's territorial integrity and not the Donetsk and Luhansk 'republics', abstained on the March 2022 General Assembly resolution, and is thanked by Putin for a 'clearly neutral' line (June 2024) while it signs deals with Moscow, Brussels and Washington. The state-media line is a policy of 'near and distant countries, the East and the West'."
+      confidence: B
+      sources:
+        - {url: "https://kun.uz/en/news/2024/06/06/putin-thanks-uzbekistan-for-neutrality-on-ukraine", title: "Putin thanks Uzbekistan for neutrality on Ukraine", publisher: "Kun.uz", date: 2024-06-06, tier: 3}
+        - {url: "https://caspianpolicy.org/research/security-and-politics-program-spp/the-caspian-regions-reactions-to-the-current-russo-ukrainian-war-uzbekistan", title: "The Caspian region's reactions to the current Russo-Ukrainian war: Uzbekistan", publisher: "Caspian Policy Center", date: 2022, tier: 2}
+        - {url: "https://caspianpost.com/uzbekistan/uzbekistan-s-foreign-policy-outlook-for-2025-2026", title: "Uzbekistan's foreign policy outlook for 2025-2026", publisher: "Caspian Post", date: 2025, tier: 3}
+    - domain: military
+      text: "No CSTO membership and no foreign base reported: Russian equipment and drills (resumed after a twelve-year break in 2016-21), a defence co-production track with India agreed in August 2026, Hard power is small by design; the leverage is transit and a 38-million market."
+      confidence: C
+      sources:
+        - {url: "https://dergipark.org.tr/en/download/article-file/2224459", title: "Uzbekistan's foreign policy under Mirziyoyev: change or continuity?", publisher: "Academic journal (DergiPark)", date: 2021, tier: 4}
+        - {url: "https://www.business-standard.com/politics/india-uzbekistan-trade-defence-ties-hit-high-spots-with-16-key-outcomes-126083000829_1.html", title: "India-Uzbekistan trade, defence ties hit high spots with 16 key outcomes", publisher: "Business Standard", date: 2026-08-30, tier: 3}
+    - domain: economic
+      text: "Gold, gas and rail as instruments: gold holdings valued at USD 67.7bn pushed reserves to USD 77.1bn on 1 Mar 2026 (reserves up USD 25.1bn in 2025), and the central bank has been withholding gold from export (gold share of exports 12.3% in Jan-Aug 2026 against 35.2% a year earlier); gas is imported from Russia (6.48 bcm in 2025) and Turkmenistan; the rail corridors are sold to China, Pakistan and Afghanistan alike."
+      confidence: B
+      sources:
+        - {url: "https://kun.uz/en/news/2026/03/09/uzbekistans-international-reserves-hit-record-77-billion", title: "Uzbekistan's international reserves hit record $77 billion", publisher: "Kun.uz (Central Bank data)", date: 2026-03-09, tier: 3}
+        - {url: "https://kun.uz/en/news/2026/10/02/uzbekistan-records-no-gold-exports-in-august-as-sales-fall-sharply", title: "Uzbekistan records no gold exports in August as sales fall sharply", publisher: "Kun.uz", date: 2026-10-02, tier: 3}
+        - {url: "https://timesca.com/russian-gas-exports-to-uzbekistan-rise-as-domestic-production-continues-to-fall/", title: "Russian gas exports to Uzbekistan rise as domestic production continues to fall", publisher: "Times of Central Asia (Gazprom annual report)", date: 2026-06-09, tier: 3}
+    - domain: economic
+      text: "Courting capital from every direction: the Gulf (Saudi-linked projects with 56 joint projects worth USD 27.2bn per Tashkent; a UAE portfolio of about 100 projects above USD 20bn), Korea (more than 700 firms, USD 8bn+ cumulative), Japan (ODA and loans above USD 3.7bn), the US (Boeing, a critical-minerals Joint Investment Framework of February 2026) and the EU (Global Gateway)."
+      confidence: B
+      sources:
+        - {url: "https://daryo.uz/en/2025/10/17/saudi-arabia-channels-900mn-into-uzbekistan-since-start-of-2025/", title: "Saudi Arabia channels $900mn into Uzbekistan since start of 2025", publisher: "Daryo", date: 2025-10-17, tier: 3}
+        - {url: "https://dunyo.info/en/news/v-abu-dabi-obsuzhdeny-perspektivy-rasshireniya-investicionnogo", title: "Uzbekistan and UAE discuss prospects for expanding investment cooperation in Abu Dhabi", publisher: "Dunyo (state information agency, official statement)", date: 2026-10, tier: 1}
+        - {url: "https://www.trend.az/casia/uzbekistan/4224925.html", title: "Over 700 companies with South Korean capital operate in Uzbekistan", publisher: "Trend", date: 2026-09, tier: 3}
+        - {url: "https://www.metaltechnews.com/story/2026/02/25/tech-metals/us-uzbekistan-forge-critical-minerals-pact/2655.html", title: "US, Uzbekistan forge critical minerals pact", publisher: "Metal Tech News", date: 2026-02-25, tier: 3}
+    - domain: informational
+      text: "A branded 'New Uzbekistan' reform story delivered through the presidency's press service and the state information agencies, aimed at investors and at Western audiences; the 2023 constitution presents itself as a 'social state' with habeas corpus and a constitutional ban on capital punishment, while the political system stays presidential."
+      confidence: C
+      sources:
+        - {url: "https://constitutionnet.org/news/uzbekistan-passes-comprehensive-constitutional-reform-including-extension-presidential-term", title: "Uzbekistan passes comprehensive constitutional reform including extension of presidential term", publisher: "ConstitutionNet (International IDEA)", date: 2023-05, tier: 2}
+        - {url: "https://caspianpost.com/uzbekistan/uzbekistan-s-foreign-policy-outlook-for-2025-2026", title: "Uzbekistan's foreign policy outlook for 2025-2026", publisher: "Caspian Post", date: 2025, tier: 3}
+
+  constraints:
+    - text: "Double-landlocked: every export crosses at least two borders, and its portfolio of corridors (Russia, China, Afghanistan-Pakistan, Iran, the Caucasus) exists because none of them is enough. Carnegie reads the partner list as the answer to geography."
+      confidence: B
+      sources:
+        - {url: "https://carnegieendowment.org/research/2026/05/continental-asia-and-the-rise-of-portfolio-politics", title: "Continental Asia and the Rise of Portfolio Politics", publisher: "Carnegie Endowment for International Peace", date: 2026-05, tier: 2}
+    - text: "Downstream on a river it does not control: the Qosh Tepa canal is expected to divert an estimated 20-30% of the Amu Darya once finished (2028), there is no water treaty, and with no Central Asian state recognising the Taliban a legal water-use agreement is not currently possible. Tashkent's water minister has said it will not go to war over it."
+      confidence: B
+      sources:
+        - {url: "https://timesca.com/afghanistans-qosh-tepa-canal-sparks-water-security-concerns-in-central-asia/", title: "Afghanistan's Qosh Tepa canal sparks water security concerns in Central Asia", publisher: "Times of Central Asia", date: 2026, tier: 3}
+        - {url: "https://www.isas.nus.edu.sg/papers/the-qosh-tepa-canal-source-of-possible-regional-tension/", title: "The Qosh Tepa canal: source of possible regional tension", publisher: "Institute of South Asian Studies, NUS", date: 2024, tier: 2}
+    - text: "The labour-for-remittances bargain with Russia: USD 18.9bn of remittances in 2025 (about 78% from Russia; 72.4% in Q1 2026), 14.4% of GDP in 2024, 1.34 million Uzbeks working in Russia on patents in Q1 2026, and Russia's 2025 registry of 'controlled persons', deportations without court review and multi-year entry bans, plus recruitment of Uzbek citizens for the war."
+      confidence: B
+      sources:
+        - {url: "https://kun.uz/en/news/2026/07/02/remittances-to-uzbekistan-hit-38-billion-in-q1-as-geographic-reliance-shifts-away-from-russia-f4edf2", title: "Remittances to Uzbekistan hit $3.8 billion in Q1 as geographic reliance shifts away from Russia", publisher: "Kun.uz (Central Bank data)", date: 2026-07-02, tier: 3}
+        - {url: "https://kun.uz/en/news/2026/03/17/remittances-to-uzbekistan-exceed-189-billion-tripling-in-five-years", title: "Remittances to Uzbekistan exceed $18.9 billion, tripling in five years", publisher: "Kun.uz (Central Bank data)", date: 2026-03-17, tier: 3}
+        - {url: "https://eurasianet.org/uzbekistan-takes-a-diplomatic-jab-at-the-kremlin-over-the-harsh-treatment-of-migrants-in-russia", title: "Uzbekistan takes a diplomatic jab at the Kremlin over the harsh treatment of migrants in Russia", publisher: "Eurasianet", date: 2025-06, tier: 3}
+    - text: "A shrinking energy base: domestic gas output fell 15% year on year in Jan-Mar 2026 (9.6 bcm against 11.3 bcm), the country has been a net importer since 2023, Gazprom's route through Kazakhstan hit its maximum technical capacity in Q4 2025, and Russia supplies more than a quarter of its gasoline just as Russian refineries fail."
+      confidence: B
+      sources:
+        - {url: "https://timesca.com/russian-gas-exports-to-uzbekistan-rise-as-domestic-production-continues-to-fall/", title: "Russian gas exports to Uzbekistan rise as domestic production continues to fall", publisher: "Times of Central Asia", date: 2026-06-09, tier: 3}
+        - {url: "https://carnegieendowment.org/russia-eurasia/politika/2026/07/central-asia-fuel-crisis", title: "Russia Is Exporting Its Fuel Crisis to Central Asia", publisher: "Carnegie Endowment for International Peace", date: 2026-07, tier: 2}
+    - text: "China's weight: it overtook Russia as first trading partner in 2023 and in Q1 2026 Uzbekistan imported about USD 4.0bn from China against USD 0.64bn of exports; the railway is built by China Railways, financing is shared with international lenders, and Beijing and Tashkent target USD 30bn of trade."
+      confidence: B
+      sources:
+        - {url: "https://yep.uz/?p=68667", title: "China strengthens its lead as deficit widens: what Uzbekistan's foreign trade reveals in the first half of 2026", publisher: "Yep.uz", date: 2026, tier: 3}
+        - {url: "https://www.kas.de/en/web/auslandsinformationen/artikel/detail/-/content/zentralasien-zwischen-russland-china-und-dem-westen", title: "Central Asia between Russia, China and the West", publisher: "Konrad-Adenauer-Stiftung", date: 2025, tier: 2}
+    - text: "Political limits on Western embrace: a presidency reset by a plebiscite limits how far Western partners can embrace it, the Jackson-Vanik amendment still limits US trade (bills S.3103 and H.R.5917 pending, administration supportive), and WTO accession slipped past the March 2026 target while a BRICS partner status adds friction with Washington."
+      confidence: B
+      sources:
+        - {url: "https://astanatimes.com/2025/11/us-congress-moves-to-repeal-jackson-vanik-expand-trade-with-central-asia/", title: "US Congress moves to repeal Jackson-Vanik, expand trade with Central Asia", publisher: "Astana Times", date: 2025-11, tier: 3}
+        - {url: "https://www.bennet.senate.gov/?p=17991", title: "Bennet joins bipartisan legislation to repeal outdated Jackson-Vanik trade restrictions on Central Asia", publisher: "US Senate (Senator Bennet, press release)", date: 2026-07-29, tier: 1}
+        - {url: "https://kun.uz/en/news/2024/12/30/uzbekistan-to-join-brics-as-partner-state-in-2025-whats-at-stake", title: "Uzbekistan to join BRICS as partner state in 2025: what's at stake?", publisher: "Kun.uz", date: 2024-12-30, tier: 3}
+
+  paradoxes:
+    - text: "It diversifies power supply into the hands of its biggest supplier. To replace falling domestic gas it imports Russian gas (6.48 bcm in 2025, a route at its technical maximum) and it builds its first nuclear plant with Rosatom (two VVER-1000 and two RITM-200N units on the Jizzakh site, first concrete March 2026) - so the move that cures energy scarcity deepens the dependence on the one partner whose hold it has been loosening."
+      confidence: B
+      sources:
+        - {url: "https://timesca.com/russian-gas-exports-to-uzbekistan-rise-as-domestic-production-continues-to-fall/", title: "Russian gas exports to Uzbekistan rise as domestic production continues to fall", publisher: "Times of Central Asia", date: 2026-06-09, tier: 3}
+        - {url: "https://kun.uz/en/news/2026/03/24/construction-of-small-capacity-nuclear-power-units-begins-in-jizzakh", title: "Construction of small-capacity nuclear power units begins in Jizzakh", publisher: "Kun.uz", date: 2026-03-24, tier: 3}
+        - {url: "https://carnegieendowment.org/russia-eurasia/politika/2026/07/central-asia-fuel-crisis", title: "Russia Is Exporting Its Fuel Crisis to Central Asia", publisher: "Carnegie Endowment for International Peace", date: 2026-07, tier: 2}
+    - text: "The railway that frees it from Russia chains it to China. The China-Kyrgyzstan-Uzbekistan line cuts the route through Russian territory and makes Tashkent a hub, but it is built by a Chinese contractor, sits under a trade pattern in which Uzbekistan buys USD 4.0bn and sells USD 0.64bn in a quarter, and gives Beijing the corridor Moscow used to hold. Diversification from a patron is also dependence on the next."
+      confidence: B
+      sources:
+        - {url: "https://kun.uz/en/news/2026/07/13/china-kyrgyzstan-uzbekistan-railway-project-enters-active-construction-phase-a7f659", title: "China-Kyrgyzstan-Uzbekistan railway project enters active construction phase", publisher: "Kun.uz", date: 2026-07-13, tier: 3}
+        - {url: "https://yep.uz/?p=68667", title: "China strengthens its lead as deficit widens: what Uzbekistan's foreign trade reveals in the first half of 2026", publisher: "Yep.uz", date: 2026, tier: 3}
+        - {url: "https://eurasianet.org/china-expands-its-presence-in-uzbekistan", title: "China expands its presence in Uzbekistan", publisher: "Eurasianet", date: 2026, tier: 3}
+    - text: "Engaging the Taliban to make Afghanistan a corridor strengthens the upstream neighbour that is draining its river. Termez and the Hairatan line carry USD 1.7bn of trade and the railway to Pakistan, yet the more Tashkent treats Kabul as a normal partner without recognition, the less a binding water treaty is legally possible and the more Kabul can finish Qosh Tepa on its own timetable."
+      confidence: B
+      sources:
+        - {url: "https://timesca.com/uzbekistan-sees-opportunities-in-afghanistan/", title: "Uzbekistan sees opportunities in Afghanistan", publisher: "Times of Central Asia", date: 2026, tier: 3}
+        - {url: "https://timesca.com/afghanistans-qosh-tepa-canal-sparks-water-security-concerns-in-central-asia/", title: "Afghanistan's Qosh Tepa canal sparks water security concerns in Central Asia", publisher: "Times of Central Asia", date: 2026, tier: 3}
+        - {url: "https://www.isas.nus.edu.sg/papers/the-qosh-tepa-canal-source-of-possible-regional-tension/", title: "The Qosh Tepa canal: source of possible regional tension", publisher: "Institute of South Asian Studies, NUS", date: 2024, tier: 2}
+    - text: "Remittances finance the opening and hand Moscow the lever. Migrant transfers tripled to USD 18.9bn in five years and pay for the imports that make the Chinese trade deficit bearable, but 72-78% of them come from Russia, which since 2025 has made the status of Uzbek workers harder (registry, deportation without court review, entry bans). Tashkent can protest ('absolutely incompatible with friendly relations', June 2025) but cannot retaliate without hurting its own households."
+      confidence: B
+      sources:
+        - {url: "https://kun.uz/en/news/2026/07/02/remittances-to-uzbekistan-hit-38-billion-in-q1-as-geographic-reliance-shifts-away-from-russia-f4edf2", title: "Remittances to Uzbekistan hit $3.8 billion in Q1 as geographic reliance shifts away from Russia", publisher: "Kun.uz (Central Bank data)", date: 2026-07-02, tier: 3}
+        - {url: "https://eurasianet.org/uzbekistan-takes-a-diplomatic-jab-at-the-kremlin-over-the-harsh-treatment-of-migrants-in-russia", title: "Uzbekistan takes a diplomatic jab at the Kremlin over the harsh treatment of migrants in Russia", publisher: "Eurasianet", date: 2025-06, tier: 3}
+    - text: "Gold makes it rich and short of dollars. The gold price lifted reserves to a record USD 77.1bn in March 2026, but the central bank kept the metal at home: no gold exports at all in August, gold only 12.3% of exports in Jan-Aug 2026 (35.2% a year earlier), and total exports in Jan-May 2026 down 15.5% - the security of a reserve costs the hard-currency flow that paid for imports."
+      confidence: B
+      sources:
+        - {url: "https://kun.uz/en/news/2026/03/09/uzbekistans-international-reserves-hit-record-77-billion", title: "Uzbekistan's international reserves hit record $77 billion", publisher: "Kun.uz (Central Bank data)", date: 2026-03-09, tier: 3}
+        - {url: "https://kun.uz/en/news/2026/10/02/uzbekistan-records-no-gold-exports-in-august-as-sales-fall-sharply", title: "Uzbekistan records no gold exports in August as sales fall sharply", publisher: "Kun.uz", date: 2026-10-02, tier: 3}
+        - {url: "https://kun.uz/en/news/2026/07/02/gold-export-slump-drives-uzbekistans-overall-exports-lower-c0016f", title: "Gold export slump drives Uzbekistan's overall exports lower", publisher: "Kun.uz", date: 2026-07-02, tier: 3}
+    - text: "Everyone's partner, everyone's claim. Each patron announces more than Tashkent confirms (Trump's USD 35bn in three years and USD 100bn in a decade after 6 Nov 2025, with no Uzbek confirmation of the totals), and the memberships that please one (BRICS partner, SCO, observer in the EAEU) are reported by analysts as slowing the ones that please another (WTO accession missed the March 2026 target, Jackson-Vanik unrepealed). Equidistance works only while no capital forces a ranking."
+      confidence: C
+      sources:
+        - {url: "https://www.globalsecurity.org/military/library/news/2025/11/mil-251107-rferl01.htm", title: "Trump hosts Central Asian leaders (RFE/RL, 7 Nov 2025)", publisher: "RFE/RL (via GlobalSecurity)", date: 2025-11-07, tier: 3}
+        - {url: "https://kun.uz/en/news/2024/12/30/uzbekistan-to-join-brics-as-partner-state-in-2025-whats-at-stake", title: "Uzbekistan to join BRICS as partner state in 2025: what's at stake?", publisher: "Kun.uz", date: 2024-12-30, tier: 3}
+        - {url: "https://kun.uz/en/news/2026/03/24/economic-growth-and-foreign-markets-why-uzbekistan-is-accelerating-wto-accession", title: "Economic growth and foreign markets: why Uzbekistan is accelerating WTO accession", publisher: "Kun.uz", date: 2026-03-24, tier: 3}
+
+  reading: |
+    Uzbekistan is the one state in the region whose strategy is a strategy of
+    position: doubly landlocked, the most populous in Central Asia and the youngest
+    of the big populations (a median age near 27), it has turned its geography
+    from a prison into a toll. Luttwak's logic runs the other way from the
+    great powers' - the weak do not win by force but by being the crossing that
+    several strong actors each need and none can take. Since 2016 Mirziyoyev
+    has traded the Karimov-era isolation for a portfolio of partners (Carnegie's
+    word for it): rail to China, rail to Pakistan through Afghanistan, Rosatom and
+    Gazprom for power, Gulf money for solar, Washington and Brussels for minerals
+    and legitimacy, Seoul and Tokyo for factories, Delhi for the Indian Ocean route
+    and a Treaty on Allied Relations with each Turkic neighbour that is not an
+    alliance in the military sense. The 2023 constitution is the domestic hinge:
+    the opening abroad is the means by which a reset presidency keeps its
+    stability. The paradoxes all take the same shape - each exit from one
+    dependence is an entry into another: Russian power for Russian gas, Chinese rail
+    for Chinese goods, the Taliban corridor for the Taliban's canal, remittances for
+    Russia's lever. The gold reserve is the one buffer that belongs to Tashkent
+    alone, and the central bank's decision to keep it at home tells how it
+    reads the risk. Watch two signals that are not rows: the 17% of the Chinese
+    railway built by August 2026 (the first real test of whether the toll works) and
+    the 29-30 Oct Ankara summit of the Turkic states after Mirziyoyev's trip to
+    Ashgabat for the CIS summit (7-9 Oct, outcomes unconfirmed).

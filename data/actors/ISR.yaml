@@ -1,9 +1,602 @@
 id: ISR
 name: Israel
+short: Israel
 type: state
-coords: [35.22, 31.77]
+coords:
+- 35.22
+- 31.77
 iso2: il
 wikipedia: https://en.wikipedia.org/wiki/Israel
 seat: Jerusalem
-regions: ['middle-east']
-card: stub
+regions:
+- middle-east
+card: full
+tier: protagonist
+last_verified: '2026-10-12'
+recognition:
+  note: 'Jerusalem as seat is contested: Israel treats the whole city as its capital, while most states keep their embassies in Tel Aviv (the United States, Paraguay, Guatemala and Kosovo
+    have moved theirs; Argentina has announced the move and postponed it). The State of Palestine claims East Jerusalem as its capital.'
+  source: https://www.aljazeera.com/news/2025/6/12/milei-says-argentina-to-move-embassy-from-tel-aviv-to-jerusalem-in-2026
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: 'Remove the Iranian regime''s nuclear, missile and proxy threat for good: finish the war begun on 28 Feb 2026 with Iran unable to rebuild, and keep Israel free to act whatever
+      Washington signs. Netanyahu''s declared aim is to create the conditions for Iranians to topple the regime; Washington''s own demands are narrower (Vance asks for a ''meaningful''
+      cut in 60% enrichment).'
+    confidence: B
+    sources:
+    - url: https://www.aljazeera.com/video/newsfeed/2026/2/28/netanyahu-says-us-and-israel-attacked-iran-to-remove-existential-threat
+      title: Netanyahu says US and Israel attacked Iran to remove 'existential threat'
+      publisher: Al Jazeera
+      date: '2026-02-28'
+      tier: 3
+    - url: https://tps.co.il/articles/netanyahu-says-goal-of-attack-on-iran-is-regime-change/
+      title: Netanyahu says goal of attack on Iran is regime change
+      publisher: TPS (Tazpit Press Service)
+      date: 2026-03
+      tier: 3
+    - &id008
+      url: https://www.aljazeera.com/news/2026/10/7/us-sets-new-demands-for-iran-deal-what-are-they
+      title: 'US sets new demands for Iran deal: what are they?'
+      publisher: Al Jazeera
+      date: '2026-10-07'
+      tier: 3
+    - &id011
+      url: https://wjla.com/news/nation-world/trump-iran-agreement-exposes-tensions-with-netanyahu-over-lebanon-nuclear-concerns-prime-minister-president-nuclear-hezbollah
+      title: Trump Iran agreement exposes tensions with Netanyahu over Lebanon, nuclear concerns
+      publisher: WJLA (The National News Desk)
+      date: '2026-06-16'
+      tier: 3
+  - rank: 2
+    text: 'Destroy Hamas and Hezbollah as armed forces and hold security belts until they are disarmed: about 60% of the Gaza Strip behind the Yellow Line (the plan allowed 50%), about
+      65 villages in south Lebanon, nine posts in southern Syria. No Hamas or Palestinian Authority role in Gaza, and disarmament ''from heavy weapons down to the rifles'' before phase
+      two.'
+    confidence: B
+    sources:
+    - &id009
+      url: https://www.aljazeera.com/news/2026/10/10/what-has-trumps-board-of-peace-achieved-in-a-year-since-gaza
+      title: What has Trump's Board of Peace achieved in a year since Gaza 'ceasefire'?
+      publisher: Al Jazeera
+      date: '2026-10-10'
+      tier: 3
+    - &id010
+      url: https://wtop.com/world/2026/07/a-high-stakes-test-for-trumps-gaza-ceasefire-board-as-hamas-disarmament-looms/
+      title: A high-stakes test for Trump's Gaza ceasefire board as Hamas disarmament looms
+      publisher: Associated Press (via WTOP)
+      date: '2026-07-31'
+      tier: 3
+    - url: https://www.thenationalnews.com/news/mena/2026/10/08/eu-to-establish-training-and-support-mission-for-lebanese-army/
+      title: EU to establish training and support mission for Lebanese army
+      publisher: The National
+      date: '2026-10-08'
+      tier: 3
+    - url: https://acleddata.com/expert-comment/israel-redrawing-syrian-border-under-guise-security
+      title: Israel redrawing the Syrian border under the guise of security
+      publisher: ACLED
+      date: 2026-06
+      tier: 2
+    - url: https://www.aljazeera.com/news/2026/6/15/netanyahu-says-israel-wont-leave-occupied-land-in-lebanon
+      title: Netanyahu says Israel won't leave occupied land in Lebanon
+      publisher: Al Jazeera
+      date: '2026-06-15'
+      tier: 3
+  - rank: 3
+    text: 'Keep the United States as patron while changing the terms: the 2016 MOU ends in 2028 and formal talks on its successor opened on 5 Jun 2026, with Israel asking for a ''transition
+      from aid to a completely reciprocal partnership'' (joint R&D, co-production) and Netanyahu himself backing a phase-out of direct aid. Washington is the supplier of interceptors
+      and the party that decides the Iran deal.'
+    confidence: B
+    sources:
+    - &id003
+      url: https://www.everycrsreport.com/files/2026-06-04_IN12695_87f8e7141912b29328d8d245218578a04925aef5.html
+      title: 'Possible Changes in U.S. Military Aid to Israel: Considerations for Congress (CRS IN12695)'
+      publisher: Congressional Research Service
+      date: '2026-06-04'
+      tier: 1
+    - url: https://en.globes.co.il/en/article-1001547961
+      title: Israel delegation to leave for US amid concern about military aid
+      publisher: Globes
+      date: '2026'
+      tier: 3
+    - &id012
+      url: https://www.fdd.org/analysis/on-u-s-military-aid-phase-out-for-israel-go-smartly-not-quickly/
+      title: On U.S. military aid phase-out for Israel, go smartly, not quickly
+      publisher: Foundation for Defense of Democracies
+      date: '2026-06-09'
+      tier: 2
+    - &id004
+      url: https://www.timesofisrael.com/report-rubio-oked-25-8-billion-sale-of-interceptors-and-other-arms-to-israel-mideast-nations/
+      title: 'Report: Rubio okays $25.8 billion sale of interceptors and other arms to Israel, Mideast nations'
+      publisher: The Times of Israel
+      date: 2026-05
+      tier: 3
+  - rank: 4
+    text: Prevent a Palestinian state and entrench control of the West Bank by steps (E1 tenders, USD 431m for 34 settlements, the first Area A land seizure) while avoiding formal annexation,
+      which Washington and the Gulf oppose. Most contenders in the 27 Oct 2026 election reject a Palestinian state; only the Democrats back a form of two states.
+    confidence: B
+    sources:
+    - url: https://unsco.unmissions.org/sites/default/files/2026-08/security_council_briefing_-_11_august_2026_west_bank.pdf
+      title: Security Council briefing on the situation in the occupied West Bank (R. Alakbarov, UN Deputy Special Coordinator)
+      publisher: UN Office of the Special Coordinator for the Middle East Peace Process
+      date: '2026-08-11'
+      tier: 1
+    - url: https://pism.pl/webroot/upload/files/Biuletyn/PISM%20Bulletin%20no%2060%20(2692)%201%20September%202026.pdf
+      title: The risk of escalation in the West Bank (PISM Bulletin no. 60)
+      publisher: Polish Institute of International Affairs (PISM)
+      date: '2026-09-01'
+      tier: 2
+    - &id006
+      url: https://www.aljazeera.com/news/2026/10/12/if-netanyahu-goes-does-anything-really-change-for-palestinians
+      title: If Netanyahu goes, does anything really change for Palestinians?
+      publisher: Al Jazeera
+      date: '2026-10-12'
+      tier: 3
+  - rank: 5
+    text: 'Widen normalisation to turn military superiority into a regional order: the Abraham Accords (a first meeting since 7 Oct 2023 was held in New York in September 2026, with
+      Kazakhstan attending), recognition of Somaliland (26 Dec 2025), a security deal with Syria, a peace framework with Lebanon (26 Jun 2026) and, above all, Saudi Arabia, which CSIS
+      finds ''off the table'' for now.'
+    confidence: B
+    sources:
+    - &id001
+      url: https://armenpress.am/en/article/1261329
+      title: Abraham Accords countries hold first official meeting since Oct. 7 attacks (CBS News report)
+      publisher: Armenpress
+      date: '2026-09-25'
+      tier: 3
+    - url: https://www.adaderana.lk/news/116434/israel-becomes-first-country-to-formally-recognise-somaliland-as-independent-state
+      title: Israel becomes first country to formally recognise Somaliland as independent state
+      publisher: Ada Derana (wire)
+      date: '2025-12-26'
+      tier: 3
+    - url: https://www.aljazeera.com/news/2026/6/27/what-is-the-framework-agreement-signed-by-israel-and-lebanon
+      title: What is the framework agreement signed by Israel and Lebanon?
+      publisher: Al Jazeera
+      date: '2026-06-27'
+      tier: 3
+    - url: https://www.csis.org/analysis/how-iran-war-weighs-us-saudi-partnership-and-prospects-normalization-israel
+      title: How the Iran War Weighs on the U.S.-Saudi Partnership and Prospects for Normalization with Israel
+      publisher: CSIS
+      date: '2026-07-06'
+      tier: 2
+  - rank: 6
+    text: 'Build strategic depth beyond Washington through the arms industry and a chain of interest-based partners: record defence exports of USD 19.2bn in 2025 (Europe 36%), Greece''s
+      EUR 3bn air-defence deal, the Greece-Cyprus 3+1, Azerbaijan''s crude, India''s fast-track FTA, Morocco''s military work plan.'
+    confidence: B
+    sources:
+    - &id002
+      url: https://timesofisrael.com/israeli-arms-sales-break-record-for-5th-year-in-row-reaching-19-2-billion-in-2025
+      title: Israeli arms sales break record for 5th year in row, reaching $19.2 billion in 2025
+      publisher: The Times of Israel
+      date: 2026-06
+      tier: 3
+    - url: https://www.aljazeera.com/news/2026/8/31/greece-signs-3-5bn-air-defence-deal-with-israel
+      title: Greece signs $3.5bn air defence deal with Israel
+      publisher: Al Jazeera
+      date: '2026-08-31'
+      tier: 3
+    - url: https://www.rferl.org/a/azerbaijan-iran-azeris-israel-attacks-war-weapons/33449040.html
+      title: Israel's Barrage Of Iran Is Furious. Azerbaijan, To Iran's North, Is Treading Lightly.
+      publisher: RFE/RL
+      date: '2025-06-19'
+      tier: 3
+    - url: https://www.jns.org/israel-news/israel-morocco-deepen-2026-defense-ties
+      title: Israel, Morocco deepen 2026 defense ties
+      publisher: JNS
+      date: '2026'
+      tier: 3
+  means:
+  - domain: diplomatic
+    text: 'A personal channel to Trump and a joint war: the strikes of 28 Feb 2026 were fought together with the United States, and Israel keeps Washington as the mediator in every track
+      (Lebanon framework of 26 Jun 2026 signed at the State Department, US-mediated Syria talks, Board of Peace for Gaza). Alongside it, a coalition of friendly governments in Europe
+      that shield Israel in Brussels (Czechia, Slovakia, Austria, Slovenia since June 2026).'
+    confidence: B
+    sources:
+    - url: https://www.al-monitor.com/originals/2026/03/analysis-netanyahus-war-alliance-trump-faces-test-iran-crisis-widens
+      title: Netanyahu's war alliance with Trump faces test as Iran crisis widens (Reuters, 4 Mar)
+      publisher: Reuters (via Al-Monitor)
+      date: '2026-03-04'
+      tier: 3
+    - url: https://www.state.gov/releases/office-of-the-spokesperson/2026/06/trilateral-framework-between-the-united-states-of-america-the-state-of-israel-and-the-republic-of-lebanon/
+      title: Trilateral Framework Between the United States of America, the State of Israel, and the Republic of Lebanon
+      publisher: U.S. Department of State
+      date: '2026-06-26'
+      tier: 1
+    - url: https://www.arabnews.pk/node/2646850/world
+      title: Slovenia lifts entry ban on Israeli PM, arms embargo
+      publisher: Arab News / AFP
+      date: '2026-06-12'
+      tier: 3
+    - url: https://www.thenationalnews.com/news/europe/2026/09/01/eu-frustration-at-impasse-on-israeli-settler-trade-ban/
+      title: EU frustration at impasse on Israeli settler trade ban
+      publisher: The National
+      date: '2026-09-01'
+      tier: 3
+  - domain: diplomatic
+    text: 'Regional blocs built against Iran and Turkey: the Abraham Accords states (UAE, Bahrain, Morocco), the Greece-Cyprus-Israel 3+1 with a trilateral military work plan (22 Dec
+      2025), the Isaac Accords with Argentina (19 Apr 2026), and ties with Azerbaijan and India.'
+    confidence: B
+    sources:
+    - *id001
+    - url: https://origin01-en.protothema.gr/2025/12/22/joint-statements-by-mitsotakis-netanyahu-and-christodoulides-after-the-trilateral-in-israel
+      title: Joint statements by Mitsotakis, Netanyahu and Christodoulides after the trilateral in Israel
+      publisher: Protothema
+      date: '2025-12-22'
+      tier: 3
+    - url: https://www.algemeiner.com/2025/12/31/israel-greece-and-cyprus-in-search-of-new-synergies/
+      title: 'Israel, Greece, and Cyprus: In Search of New Synergies'
+      publisher: The Algemeiner
+      date: '2025-12-31'
+      tier: 3
+    - url: https://www.timesofisrael.com/liveblog_entry/netanyahu-milei-launch-isaac-accords-to-foster-cooperation-between-israel-and-western-hemisphere/
+      title: Netanyahu, Milei launch 'Isaac Accords' to foster cooperation between Israel and Western Hemisphere
+      publisher: The Times of Israel
+      date: '2026-04-19'
+      tier: 3
+  - domain: informational
+    text: 'Contest the legitimacy of the bodies that judge Israel and the governments that act on them: it challenges the ICC''s jurisdiction (the warrants for Netanyahu and Gallant
+      stand), objects to the ICJ''s jurisdiction in South Africa''s genocide case (counter-memorial of March 2026; reply due Nov 2027, rejoinder May 2029), and answers European measures
+      with counter-sanctions and charges of antisemitism (Spanish ministers barred, Dutch diplomats in Ramallah stripped of status).'
+    confidence: B
+    sources:
+    - url: https://www.jurist.org/news/?p=280110
+      title: ICC appeals court orders pretrial chamber to reconsider Israel's jurisdictional challenge
+      publisher: JURIST
+      date: 2025-04
+      tier: 3
+    - &id007
+      url: https://thesun.my/news/world-news/icc-appeals-chamber-rejects-bid-to-cancel-arrest-warrants-for-netanyahu-and-gallant-kc13999883/
+      title: ICC appeals chamber rejects bid to cancel arrest warrants for Netanyahu and Gallant
+      publisher: The Sun Malaysia (wire)
+      date: 2025-10
+      tier: 3
+    - url: https://ewn.co.za/2026/06/03/icj-sets-new-deadlines-for-sa-israel-genocide-case
+      title: ICJ sets new deadlines for SA-Israel genocide case
+      publisher: Eyewitness News
+      date: '2026-06-03'
+      tier: 3
+    - url: https://www.gov.za/news/media-statements/presidency-notes-icj-order-south-africa-and-israel-case-02-jun-2026
+      title: Presidency notes ICJ Order on South Africa and Israel case
+      publisher: Government of South Africa (Presidency)
+      date: '2026-06-02'
+      tier: 1
+    - url: https://www.jns.org/saar-slaps-sanctions-on-two-anti-israel-spanish-ministers/
+      title: Sa'ar slaps sanctions on two anti-Israel Spanish ministers
+      publisher: JNS
+      date: '2025-09-08'
+      tier: 3
+    - url: https://www.dutchnews.nl/2026/09/israel-strips-dutch-diplomats-status-over-settlement-goods-ban/
+      title: Israel strips Dutch diplomats' status over settlement goods ban
+      publisher: DutchNews.nl
+      date: 2026-09
+      tier: 3
+  - domain: military
+    text: 'Preventive and decapitating force across five fronts: the Twelve-Day War (13-24 Jun 2025), the war on Iran from 28 Feb 2026 (Khamenei killed), the killing of Nasrallah (27
+      Sep 2024) and of the Houthi prime minister (28 Aug 2025), the Doha strike (9 Sep 2025), the ground campaign to the Litani (from 16 Mar 2026) and the buffer zones in Gaza, Lebanon
+      and Syria. Interceptor stocks are the limit and the United States refills them.'
+    confidence: B
+    sources:
+    - url: https://www.fdd.org/analysis/op-eds/2025/06/24/israel-and-iran-trade-strikes-ceasefire-goes-into-effect-june-24-updates/
+      title: Israel and Iran trade strikes as ceasefire goes into effect (24 June updates)
+      publisher: FDD's Long War Journal
+      date: '2025-06-24'
+      tier: 2
+    - url: https://www.al-monitor.com/originals/2026/02/daughter-and-grandchild-irans-khamenei-killed-us-israeli-strikes-state-media-says
+      title: Daughter and grandchild of Iran's Khamenei killed in US-Israeli strikes, state media says
+      publisher: Al-Monitor
+      date: '2026-03-01'
+      tier: 3
+    - url: https://www.cnn.com/2025/08/30/middleeast/yemen-houthis-prime-minister-israel-intl
+      title: Yemen's Houthis say prime minister of rebel-controlled government killed in Israeli airstrike
+      publisher: CNN
+      date: '2025-08-30'
+      tier: 3
+    - url: https://www.newarab.com/news/israeli-military-claims-strike-hamas-leaders-qatar
+      title: Israeli military claims strike on Hamas leaders in Qatar as explosions rock Doha
+      publisher: The New Arab
+      date: '2025-09-09'
+      tier: 3
+    - &id005
+      url: https://www.al-monitor.com/originals/2026/03/questions-over-israels-interceptor-stockpiles-mideast-war-drags
+      title: Questions over Israel's interceptor stockpiles as Mideast war drags on
+      publisher: Al-Monitor
+      date: 2026-03
+      tier: 3
+  - domain: economic
+    text: 'Gas, defence exports and the tax register as levers: Leviathan gas to Egypt (a USD 35bn contract frozen in Sept 2025 and later approved) and Jordan (45 bcm over 15 years),
+      record arms sales (USD 19.2bn in 2025, more than half government to government), and Israel''s collection of the Palestinian Authority''s customs and VAT revenue, withheld in full
+      since May 2025.'
+    confidence: B
+    sources:
+    - url: https://enterpriseam.com/egypt/2025/09/07/israel-halts-its-usd-35-bn-gas-export-agreement-with-egypt-as-egyptian-israeli-relations-grow-tense/
+      title: Israel halts its USD 35 bn gas export agreement with Egypt as Egyptian-Israeli relations grow tense
+      publisher: Enterprise
+      date: '2025-09-07'
+      tier: 3
+    - url: https://www.jordannews.jo/Section-29/Analysis/Does-Jordan-really-oppose-Israel-56950
+      title: Does Jordan really oppose Israel?
+      publisher: Jordan News (Maher Abu Tair, Alghad)
+      date: '2026-10-05'
+      tier: 3
+    - *id002
+    - url: https://aa.com.tr/en/middle-east/israel-withholds-palestinian-clearance-funds-again-deducts-200-million/3919451
+      title: Israel withholds Palestinian clearance funds again, deducts $200 million
+      publisher: Anadolu Agency
+      date: '2026-04-27'
+      tier: 3
+  constraints:
+  - text: 'Dependence on the United States for the means of war: the US supplied 68% of Israel''s arms imports in 2021-25 (Germany 31%), the MOU worth USD 38bn expires in 2028, reports
+      of low interceptor stocks in the Iran war (the IDF denies a shortage) and Rubio''s emergency declaration for a USD 25.8bn interceptor and arms package for Israel and Gulf states
+      in May 2026. Israel cannot finish a war that Washington wants to end.'
+    confidence: B
+    sources:
+    - url: https://www.algemeiner.com/2026/03/11/israel-becomes-worlds-7th-largest-arms-exporter/
+      title: Israel Becomes World's 7th Largest Arms Exporter (SIPRI trends 2021-25)
+      publisher: The Algemeiner
+      date: '2026-03-11'
+      tier: 3
+    - *id003
+    - *id004
+    - *id005
+  - text: 'A war economy with a fiscal bill: debt-to-GDP 68.6% at end-2025 (about 60% before the war), a deficit near 5% of GDP, the Bank of Israel counting the cost of the regional
+      wars at NIS 405bn (over 17% of GDP) by April 2026, a 2026 defence budget topped up by about NIS 15bn.'
+    confidence: B
+    sources:
+    - url: https://en.globes.co.il/en/article-1001532908
+      title: Israel's debt-GDP ratio rose in 2025
+      publisher: Globes
+      date: '2026'
+      tier: 3
+    - url: https://en.globes.co.il/en/article-1001537625
+      title: How much is the war costing?
+      publisher: Globes
+      date: '2026'
+      tier: 3
+    - url: https://boi.org.il/en/communication-and-publications/press-releases/research-department-staff-forecast-july-2026/
+      title: Research Department staff forecast, July 2026
+      publisher: Bank of Israel
+      date: 2026-07
+      tier: 1
+  - text: 'Politics without a stable majority: the coalition fell apart over the Haredi draft exemption and the Knesset dissolved itself for an election on 27 Oct 2026; polls show neither
+      bloc near 61 (Channel 12: the opposition bloc 54, Netanyahu''s bloc 49 and 13 Arab-party seats), Netanyahu is on trial and has asked President Herzog for a pardon, and the army
+      chief called the draft bill ''inconceivable''.'
+    confidence: B
+    sources:
+    - url: https://www.jns.org/news/israel-news/knesset-votes-to-dissolve-formally-sets-oct-27-election-date
+      title: Knesset votes to dissolve, formally sets Oct. 27 election date
+      publisher: JNS
+      date: '2026'
+      tier: 3
+    - url: https://www.timesofisrael.com/as-coalition-collapses-around-him-netanyahu-revives-haredi-draft-exemption-bill/
+      title: As coalition collapses around him, Netanyahu revives Haredi draft exemption bill
+      publisher: The Times of Israel
+      date: '2026'
+      tier: 3
+    - *id006
+    - url: https://www.aljazeera.com/news/2026/4/26/former-israeli-pms-bennett-lapid-unite-to-challenge-netanyahu-in-elections
+      title: Former Israeli PMs Bennett, Lapid unite to challenge Netanyahu in elections
+      publisher: Al Jazeera
+      date: '2026-04-26'
+      tier: 3
+    - url: https://www.arabnews.com/node/2641344/amp
+      title: Israel's president says he wants a deal reached in Netanyahu case before pardon decision
+      publisher: Arab News
+      date: 2026-04
+      tier: 3
+  - text: 'Red lines of the partners it needs: the UAE says West Bank annexation would end regional integration, Jordan''s king calls it a red line (and planners reportedly weigh nullifying
+      the 1994 treaty), Egypt treats displacement into Sinai as a red line and Saudi Arabia ties any normalisation to a Palestinian state. Each constrains the West Bank policy.'
+    confidence: B
+    sources:
+    - url: https://www.axios.com/2025/09/03/israel-annex-west-bank-uae-trump-abraham-accords
+      title: UAE warns White House that Israeli annexations could unravel Abraham Accords
+      publisher: Axios
+      date: '2025-09-03'
+      tier: 3
+    - url: https://foreignpolicy.com/2026/08/31/jordan-israel-iran-west-bank-annexation-refugees-gaza/
+      title: Jordan Sees Bigger Threat From Israel Than Iran
+      publisher: Foreign Policy (Sean Yom)
+      date: '2026-08-31'
+      tier: 3
+    - url: https://english.ahram.org.eg/News/575233.aspx
+      title: 'Palestinians displacement to Sinai is ''red line'' for Egypt: FM Abdelatty'
+      publisher: Ahram Online
+      date: 2026-08
+      tier: 3
+    - url: https://www.csis.org/analysis/how-iran-war-weighs-us-saudi-partnership-and-prospects-normalization-israel
+      title: How the Iran War Weighs on the U.S.-Saudi Partnership and Prospects for Normalization with Israel
+      publisher: CSIS
+      date: '2026-07-06'
+      tier: 2
+  - text: 'Erosion in Europe and in law: no majority in the EU to suspend the Association Agreement, but the settlement-goods ban is law in Ireland and the Netherlands and in train in
+      Belgium, Spain has an arms embargo, high-level EU contact has stopped, the ICC warrant for Netanyahu stands and the ICJ case runs to 2029. Europe is 36% of defence exports and
+      32% of goods trade.'
+    confidence: B
+    sources:
+    - url: https://www.thenationalnews.com/news/europe/2026/07/17/no-apology-or-high-level-contact-as-eu-israel-ties-sour-over-bid-to-block-trade-with-settlements/
+      title: No apology or high-level contact as EU-Israel ties sour over bid to block trade with settlements
+      publisher: The National
+      date: '2026-07-17'
+      tier: 3
+    - url: https://president.ie/en/media-library/news-releases/president-connolly-signs-the-israeli-settlements-in-the-occupied-palestinian-territory-prohibition-of-importation-of-goods-bill-2026
+      title: President Connolly signs the Israeli Settlements in the Occupied Palestinian Territory (Prohibition of Importation of Goods) Bill 2026
+      publisher: President of Ireland
+      date: '2026-07-23'
+      tier: 1
+    - url: https://www.aljazeera.com/news/2025/10/8/spains-parliament-formally-approves-israel-arms-embargo
+      title: Spain's parliament formally approves Israel arms embargo
+      publisher: Al Jazeera
+      date: '2025-10-08'
+      tier: 3
+    - *id007
+    - *id002
+    - url: https://www.euronews.com/2025/06/24/as-review-finds-indications-of-gaza-human-rights-breach-how-close-are-eu-israel-trade-rela
+      title: As review finds indications of Gaza human rights breach, how close are EU-Israel trade relations?
+      publisher: Euronews
+      date: '2025-06-24'
+      tier: 3
+  - text: 'American public opinion has turned: Gallup (Feb 2026) found for the first time more Americans sympathising with Palestinians (41%) than with Israelis (36%), with Republicans
+      still 70% pro-Israel; the patron''s bipartisan consensus is the long-term asset on which the aid framework rests.'
+    confidence: B
+    sources:
+    - url: https://www.news4jax.com/news/politics/2026/02/27/a-new-gallup-poll-shows-how-americans-sympathies-have-shifted-in-the-israeli-palestinian-conflict/
+      title: A new Gallup poll shows how Americans' sympathies have shifted in the Israeli-Palestinian conflict
+      publisher: Associated Press (via News4Jax)
+      date: '2026-02-27'
+      tier: 3
+  paradoxes:
+  - text: 'Decapitation wins the battle and not the war. Killing Khamenei, Nasrallah, the Houthi prime minister and Hamas commanders removed the men and left the movements: Iran''s new
+      leader promised vengeance ''until fully achieved'', the war is in its eighth month, Hezbollah joined within days, and Tehran now makes an end to Israel''s Lebanon offensive a condition
+      of any deal with Washington. The tactical record is the reason there is no exit.'
+    confidence: B
+    sources:
+    - url: https://www.malaymail.com/news/world/2026/03/13/iran-supreme-leader-says-vengeance-is-priority-until-fully-achieved/212433
+      title: Iran supreme leader says vengeance is priority 'until fully achieved' (message read on state TV, 12 Mar)
+      publisher: Malay Mail / Reuters
+      date: '2026-03-13'
+      tier: 3
+    - *id008
+    - url: https://www.aljazeera.com/news/2026/3/2/lebanese-pm-nawaf-salam-announces-ban-on-hezbollah-military-activities
+      title: Lebanese PM bans Hezbollah's military activities after attack on Israel
+      publisher: Al Jazeera
+      date: '2026-03-02'
+      tier: 3
+  - text: Holding the ground blocks the diplomacy that would make the ground unnecessary. Israel holds about 60% of Gaza, 65 Lebanese villages and nine Syrian posts as security belts;
+      but the Gaza stabilisation force that should replace it cannot deploy (Indonesia put 8,000 troops on hold after 28 Feb), Hamas refuses to disarm while the occupation continues,
+      Hezbollah calls the Lebanon framework null and void, and the Egyptian and Jordanian treaty partners who would train the Gaza police are cooling.
+    confidence: B
+    sources:
+    - *id009
+    - *id010
+    - url: https://naharnet.com/stories/en/322141-qassem-again-rejects-lebanon-israel-deal-refuses-surrender
+      title: Qassem again rejects Lebanon-Israel deal, refuses 'surrender'
+      publisher: Naharnet
+      date: '2026-08-29'
+      tier: 3
+    - url: https://www.thenationalnews.com/news/mena/2026/10/08/eu-to-establish-training-and-support-mission-for-lebanese-army/
+      title: EU to establish training and support mission for Lebanese army
+      publisher: The National
+      date: '2026-10-08'
+      tier: 3
+  - text: De facto annexation costs the normalisation it is meant to crown. Each West Bank step (E1 tenders, Area A seizure) moves toward the red lines of Abu Dhabi and Amman and keeps
+      Saudi Arabia 'off the table', so the settlement drive that the right calls strategic depth removes the one prize (Riyadh) that would end Israel's regional isolation.
+    confidence: B
+    sources:
+    - url: https://www.axios.com/2025/09/03/israel-annex-west-bank-uae-trump-abraham-accords
+      title: UAE warns White House that Israeli annexations could unravel Abraham Accords
+      publisher: Axios
+      date: '2025-09-03'
+      tier: 3
+    - url: https://www.csis.org/analysis/how-iran-war-weighs-us-saudi-partnership-and-prospects-normalization-israel
+      title: How the Iran War Weighs on the U.S.-Saudi Partnership and Prospects for Normalization with Israel
+      publisher: CSIS
+      date: '2026-07-06'
+      tier: 2
+    - url: https://unsco.unmissions.org/sites/default/files/2026-08/security_council_briefing_-_11_august_2026_west_bank.pdf
+      title: Security Council briefing on the situation in the occupied West Bank (R. Alakbarov, UN Deputy Special Coordinator)
+      publisher: UN Office of the Special Coordinator for the Middle East Peace Process
+      date: '2026-08-11'
+      tier: 1
+  - text: The ally that fights beside Israel is also the one that can end its war. Joint action against Iran deepened Israel's dependence (interceptors, USD 25.8bn emergency sale) and
+      gave Trump the leverage to sign a memorandum with Tehran in June 2026 that Israeli ministers say does not bind Israel, to rebuke the Lebanon campaign publicly and to dictate Gaza's
+      phase two. Netanyahu's own proposal to phase out US aid frees Israel from the patron while narrowing the lever it has over Congress.
+    confidence: B
+    sources:
+    - *id011
+    - url: https://www.klcc.org/morning-edition/2026-05-25/why-israel-is-unhappy-with-the-latest-u-s-negotiations-with-iran
+      title: Why Israel is unhappy with the latest U.S. negotiations with Iran
+      publisher: NPR (via KLCC)
+      date: '2026-05-25'
+      tier: 3
+    - *id004
+    - *id003
+    - *id012
+  - text: 'Arms exports win clients and lose publics. Israeli weapons sell as never before (USD 19.2bn, Greece''s EUR 3bn) to governments whose electorates and parties are turning, so
+      the buyers are also the sanctioners: Europe is the largest market (36%) while high-level EU contact has stopped, Spain has an arms embargo and the Netherlands and Ireland ban settlement
+      goods; the relationship swings with each election (Slovenia lifted its embargo and entry bans in June 2026 under Janša).'
+    confidence: C
+    sources:
+    - *id002
+    - url: https://www.aljazeera.com/news/2026/8/31/greece-signs-3-5bn-air-defence-deal-with-israel
+      title: Greece signs $3.5bn air defence deal with Israel
+      publisher: Al Jazeera
+      date: '2026-08-31'
+      tier: 3
+    - url: https://www.arabnews.pk/node/2646850/world
+      title: Slovenia lifts entry ban on Israeli PM, arms embargo
+      publisher: Arab News / AFP
+      date: '2026-06-12'
+      tier: 3
+    - url: https://www.dutchnews.nl/2026/09/israel-strips-dutch-diplomats-status-over-settlement-goods-ban/
+      title: Israel strips Dutch diplomats' status over settlement goods ban
+      publisher: DutchNews.nl
+      date: 2026-09
+      tier: 3
+  - text: Striking the mediator it needs. The Doha strike of 9 Sep 2025 killed five Hamas members and a Qatari officer while the delegation weighed a US proposal; it ended with Netanyahu's
+      apology on 29 Sep, an executive order from Trump guaranteeing Qatar's security, an Arab-Islamic summit calling for review of Israel's ties, and a Qatar that kept mediating and
+      in August 2026 blamed Israel for obstructing the Gaza plan.
+    confidence: B
+    sources:
+    - url: https://www.axios.com/2025/09/29/israel-apologize-qatar-airstrike-netanyahu-trump
+      title: 'Scoop: Netanyahu apologizes to Qatar for violating sovereignty with airstrike'
+      publisher: Axios
+      date: '2025-09-29'
+      tier: 3
+    - url: https://www.whitehouse.gov/presidential-actions/2025/09/assuring-the-security-of-the-state-of-qatar
+      title: Executive Order 14353 - Assuring the Security of the State of Qatar
+      publisher: The White House
+      date: '2025-09-29'
+      tier: 1
+    - url: https://www.omanobserver.om/article/1193975/world/region/qatar-blames-israel-for-delayed-gaza-peace-plan
+      title: Qatar blames Israel for delayed Gaza peace plan
+      publisher: Oman Observer
+      date: '2026-08-04'
+      tier: 3
+    - url: https://app.al-monitor.com/originals/2025/09/arab-islamic-leaders-urge-review-israel-ties-emergency-summit-after-doha-strikes
+      title: Arab, Islamic leaders urge 'review' of Israel ties at emergency summit after Doha strikes
+      publisher: Al-Monitor
+      date: '2025-09-15'
+      tier: 3
+  - text: Blocking Turkey from the south strengthens the Turkish case against Israel. The strike on Abu al-Duhur (18 Aug 2026), justified by a feared Turkish deployment, drew Washington's
+      word 'unnecessary', pushed Damascus to cut contact for five days and made a Turkey-Syria-Israel deconfliction mechanism, run by the US, the price of the Syria track.
+    confidence: B
+    sources:
+    - url: https://www.thenationalnews.com/news/mena/2026/08/19/us-working-on-deconfliction-mechanism-between-turkey-syria-and-israel-says-barrack/
+      title: US working on deconfliction mechanism between Turkey, Syria and Israel, says Barrack
+      publisher: The National
+      date: '2026-08-19'
+      tier: 3
+    - url: https://www.al-monitor.com/originals/2026/08/turkey-rejects-israeli-claims-after-strike-syria-air-base
+      title: Turkey rejects Israeli claims after strike on Syria air base
+      publisher: Al-Monitor
+      date: 2026-08
+      tier: 3
+    - url: https://www.khaleejtimes.com/mena/syria-israel-us-mediated-talks-tensions-strikes-territory
+      title: Syria, Israel hold US-mediated talks to ease tensions, state news agency says
+      publisher: Khaleej Times
+      date: '2026-08-23'
+      tier: 3
+  reading: |-
+    Israel in October 2026 runs the strategy of a state that has won every
+    battle it chose since 7 October 2023 and cannot convert any of them into an end
+    state. Its method is preventive, decapitating force within a patron's shadow:
+    the Twelve-Day War, the killing of Nasrallah, the Doha strike and the war on
+    Iran from 28 February 2026 weakened Iran and its allies as an organised threat, and the
+    buffer zones in Gaza (about 60%), Lebanon (about 65 villages) and Syria (nine
+    posts) are meant to make that victory permanent. Luttwak's paradox is that each
+    instrument of success spoils its sequel: the decapitations leave movements with a
+    motive and no ceiling, the buffer zones prevent the stabilisation force, the
+    Lebanon-for-disarmament framework and the Syria talks that would let the army
+    leave, and the settlement drive moves toward the annexation red lines of the
+    Emirates, Jordan and Egypt and so away from the Saudi normalisation that would
+    end the isolation. The relation that governs all the others is the American one:
+    Israel needs Washington for interceptors and for the deal with
+    Iran, which Washington signed in June without Israel's consent, and it is
+    therefore trying to move from aid to 'reciprocal partnership' before the MOU
+    expires in 2028 while the American public drifts away. In Europe the two logics
+    meet: Israel sells the continent weapons at record levels (EUR 3bn from Greece
+    alone) while governments sanction the settlements, and the friendly bloc (Czechia,
+    Slovakia, Slovenia, Austria) shields it only as long as it keeps winning
+    elections. Two signals that are not rows: the election of 27 October, in which
+    the main contenders for prime minister reject a Palestinian state, so that the policy survives a
+    change of prime minister, and the Lebanon talks, in which the state of Lebanon
+    signed a document that Hezbollah, the party that actually holds the weapons,
+    rejects. Israel's real question for 2027 is whether any of its partners will
+    carry the burden of the 'day after' that it declines to carry itself.

@@ -1,0 +1,980 @@
+actor: ISR
+stances:
+- toward: USA
+  grade: ally
+  trend: stable
+  bond: affinity
+  since: '1948-05-14'
+  last_verified: '2026-10-12'
+  confidence: B
+  note: 'Ally by stable de facto alignment, not by treaty: the 2016 MOU (USD 38bn to 2028), 68% of Israel''s arms imports in 2021-25 (SIPRI), the war on Iran fought together from 28
+    Feb 2026 (''Netanyahu''s war alliance with Trump'', Reuters), and a USD 25.8bn emergency arms package in May 2026. Friction is real and public - Trump rebuked the Lebanon campaign
+    and signed an Iran memorandum in June that Israeli ministers say does not bind Israel; Gallup (Feb 2026) found more Americans sympathising with Palestinians than with Israelis; talks
+    on the MOU''s successor opened on 5 Jun 2026 with Netanyahu himself backing a phase-out of direct aid - but no Israeli source questions the commitment, so not `reluctant_ally`. Stable:
+    leader-level friction and a shrinking aid frame are offset by deeper military integration. Bond - affinity: shared politics and a large diaspora; no listed bond fits better. The
+    United States has no card of its own, so its grade of Israel is not yet written.'
+  sources:
+  - url: https://www.al-monitor.com/originals/2026/03/analysis-netanyahus-war-alliance-trump-faces-test-iran-crisis-widens
+    title: Netanyahu's war alliance with Trump faces test as Iran crisis widens (Reuters, 4 Mar)
+    publisher: Reuters (via Al-Monitor)
+    date: '2026-03-04'
+    tier: 3
+  - url: https://www.timesofisrael.com/report-rubio-oked-25-8-billion-sale-of-interceptors-and-other-arms-to-israel-mideast-nations/
+    title: 'Report: Rubio okays $25.8 billion sale of interceptors and other arms to Israel, Mideast nations'
+    publisher: The Times of Israel
+    date: 2026-05
+    tier: 3
+  - url: https://www.everycrsreport.com/files/2026-06-04_IN12695_87f8e7141912b29328d8d245218578a04925aef5.html
+    title: 'Possible Changes in U.S. Military Aid to Israel: Considerations for Congress (CRS IN12695)'
+    publisher: Congressional Research Service
+    date: '2026-06-04'
+    tier: 1
+  - url: https://wjla.com/news/nation-world/trump-iran-agreement-exposes-tensions-with-netanyahu-over-lebanon-nuclear-concerns-prime-minister-president-nuclear-hezbollah
+    title: Trump Iran agreement exposes tensions with Netanyahu over Lebanon, nuclear concerns
+    publisher: WJLA (The National News Desk)
+    date: '2026-06-16'
+    tier: 3
+  - url: https://www.news4jax.com/news/politics/2026/02/27/a-new-gallup-poll-shows-how-americans-sympathies-have-shifted-in-the-israeli-palestinian-conflict/
+    title: A new Gallup poll shows how Americans' sympathies have shifted in the Israeli-Palestinian conflict
+    publisher: Associated Press (via News4Jax)
+    date: '2026-02-27'
+    tier: 3
+  - &id003
+    url: https://www.algemeiner.com/2026/03/11/israel-becomes-worlds-7th-largest-arms-exporter/
+    title: Israel Becomes World's 7th Largest Arms Exporter (SIPRI trends 2021-25)
+    publisher: The Algemeiner
+    date: '2026-03-11'
+    tier: 3
+- toward: IRN
+  grade: adversary
+  trend: stable
+  bond: grievance
+  since: '1979'
+  last_verified: '2026-10-12'
+  confidence: B
+  note: 'Mortal enemies in the ontology''s reference sense, and mutual (mirror of Iran''s own reading). Israel''s declared aim on 28 Feb 2026 was to remove ''the existential threat posed
+    by the terrorist regime in Iran'' and to create the conditions for Iranians to topple it (Netanyahu, 28 Feb and 12 Mar); the strikes killed Ali Khamenei; Iran answers with missile
+    fire on Israeli cities and the pledge of vengeance ''until fully achieved''. Not a bargain between states: Tehran''s UN proposal of late September makes an end to Israel''s Lebanon
+    offensive a condition, and Washington''s own aim (a cut in enrichment, a deal) is narrower than Israel''s, so Israel stays the party that wants the regime changed. The war is in
+    its eighth month. Confidence B: Iran''s side of the aim is the weaker half of the proof (see Iran''s card). Bond - grievance.'
+  sources:
+  - url: https://www.aljazeera.com/video/newsfeed/2026/2/28/netanyahu-says-us-and-israel-attacked-iran-to-remove-existential-threat
+    title: Netanyahu says US and Israel attacked Iran to remove 'existential threat'
+    publisher: Al Jazeera
+    date: '2026-02-28'
+    tier: 3
+  - url: https://tps.co.il/articles/netanyahu-says-goal-of-attack-on-iran-is-regime-change/
+    title: Netanyahu says goal of attack on Iran is regime change
+    publisher: TPS (Tazpit Press Service)
+    date: 2026-03
+    tier: 3
+  - url: https://www.al-monitor.com/originals/2026/03/analysis-netanyahus-war-alliance-trump-faces-test-iran-crisis-widens
+    title: Netanyahu's war alliance with Trump faces test as Iran crisis widens (Reuters, 4 Mar)
+    publisher: Reuters (via Al-Monitor)
+    date: '2026-03-04'
+    tier: 3
+  - url: https://www.malaymail.com/news/world/2026/03/13/iran-supreme-leader-says-vengeance-is-priority-until-fully-achieved/212433
+    title: Iran supreme leader says vengeance is priority 'until fully achieved' (message read on state TV, 12 Mar)
+    publisher: Malay Mail / Reuters
+    date: '2026-03-13'
+    tier: 3
+  - url: https://www.aljazeera.com/news/2026/10/7/us-sets-new-demands-for-iran-deal-what-are-they
+    title: 'US sets new demands for Iran deal: what are they?'
+    publisher: Al Jazeera
+    date: '2026-10-07'
+    tier: 3
+- toward: nsa-hezbollah
+  grade: adversary
+  trend: stable
+  bond: grievance
+  since: '1982'
+  last_verified: '2026-10-12'
+  confidence: B
+  note: 'Mortal enemy on both sides (mirror of Hezbollah''s card). Israel''s declared aim is to destroy Hezbollah''s military capacity and it holds about 65 Lebanese villages ''for as
+    long as necessary'', until Hezbollah disarms; it killed Nasrallah (27 Sep 2024) and his next two successors and fought a ground campaign to the Litani from 16 Mar 2026. Hezbollah''s
+    manifestos (1985, 2009) call for the destruction of the Israeli state and it calls the 26 Jun 2026 framework null and void. The Lebanese state is graded separately (rival): the mortal
+    enemy in this triangle is the armed movement, not Beirut. Bond - grievance.'
+  sources:
+  - url: https://www.cfr.org/backgrounders/what-hezbollah
+    title: What Is Hezbollah?
+    publisher: Council on Foreign Relations
+    date: '2026-04-17'
+    tier: 2
+  - url: https://www.aljazeera.com/news/2026/6/27/israel-lebanon-deal-ties-ceasefire-to-hezbollah-disarmament-will-it-work
+    title: 'Israel-Lebanon deal ties ceasefire to Hezbollah disarmament: Will it work?'
+    publisher: Al Jazeera
+    date: '2026-06-27'
+    tier: 3
+  - url: https://www.aljazeera.com/news/2026/6/15/netanyahu-says-israel-wont-leave-occupied-land-in-lebanon
+    title: Netanyahu says Israel won't leave occupied land in Lebanon
+    publisher: Al Jazeera
+    date: '2026-06-15'
+    tier: 3
+  - url: https://apnews.com/article/lebanon-israel-hezbollah-airstrikes-28-september-2024-c4751957433ff944c4eb06027885a973
+    title: Hezbollah confirms its leader Hassan Nasrallah was killed in an Israeli airstrike
+    publisher: Associated Press
+    date: '2024-09-28'
+    tier: 3
+- toward: nsa-hamas
+  grade: adversary
+  trend: stable
+  bond: grievance
+  since: '1987'
+  last_verified: '2026-10-12'
+  confidence: B
+  note: 'Mortal enemy on both sides (mirror of Hamas''s card). Israel''s declared aim since 7 Oct 2023 is Hamas''s elimination: Netanyahu rejects any Hamas or Palestinian Authority role
+    in Gaza and demands disarmament down to some 60,000 rifles before phase two; Israel killed al-Beik on 29 Sep 2026 and struck the de facto chief on 2-3 Oct. The ceasefire of 10 Oct
+    2025 changed the structure less than the headlines: about 1,400-1,500 Palestinians killed in its first year, Israel holding about 60% of the Strip, a Hamas disarmament deal announced
+    on 30 Jul 2026 that Hamas accepts only as a ''full package'' and Israel has not endorsed. Hamas does not recognise Israel and describes a 1967-lines state as a stage. Bond - grievance.'
+  sources:
+  - url: https://www.aljazeera.com/news/2026/9/29/israeli-forces-kill-hamas-commander-izz-al-din-al-beik-in-gaza-attack
+    title: Israeli forces kill Hamas commander Izz al-Din al-Beik in Gaza attack
+    publisher: Al Jazeera
+    date: '2026-09-29'
+    tier: 3
+  - url: https://wtop.com/world/2026/07/a-high-stakes-test-for-trumps-gaza-ceasefire-board-as-hamas-disarmament-looms/
+    title: A high-stakes test for Trump's Gaza ceasefire board as Hamas disarmament looms
+    publisher: Associated Press (via WTOP)
+    date: '2026-07-31'
+    tier: 3
+  - url: https://www.aljazeera.com/news/2026/10/10/what-has-trumps-board-of-peace-achieved-in-a-year-since-gaza
+    title: What has Trump's Board of Peace achieved in a year since Gaza 'ceasefire'?
+    publisher: Al Jazeera
+    date: '2026-10-10'
+    tier: 3
+  - url: https://www.timesofisrael.com/hamas-leader-touts-ceasefire-as-a-defeat-for-israel-while-hailing-oct-7-atrocities/
+    title: Hamas leader touts ceasefire as a defeat for Israel, while hailing Oct. 7 atrocities
+    publisher: The Times of Israel
+    date: '2025-01-16'
+    tier: 3
+- toward: nsa-houthis
+  grade: adversary
+  trend: stable
+  bond: grievance
+  since: 2023-10
+  last_verified: '2026-10-12'
+  confidence: B
+  note: 'Mutual and declared: the Houthis blockaded Israeli navigation and fired missiles and drones at Israel from Oct 2023 (two claimed attacks on 28 Mar 2026), threatened any Israeli
+    base in Somaliland and promised in Nov 2025 to resume ''deep inside Israel'' if the Gaza war resumes; Israel destroyed Hudaydah''s port and killed the Houthi prime minister and about
+    a dozen ministers in Sanaa on 28 Aug 2025. Each aims at the other''s leadership. Tempered by the Houthis'' reach (Israel intercepts the vast majority) and by their pause since the
+    Gaza ceasefire; confidence B, as in the Houthis'' own card. Bond - grievance.'
+  sources:
+  - url: https://www.cnn.com/2025/08/30/middleeast/yemen-houthis-prime-minister-israel-intl
+    title: Yemen's Houthis say prime minister of rebel-controlled government killed in Israeli airstrike
+    publisher: CNN
+    date: '2025-08-30'
+    tier: 3
+  - url: https://www.nbcnews.com/world/middle-east/yemens-houthi-rebels-signal-stopped-attacks-israel-red-sea-shipping-rcna243165
+    title: Yemen's Houthi rebels signal that they've stopped attacks on Israel and Red Sea shipping
+    publisher: NBC News (AP)
+    date: '2025-11-11'
+    tier: 3
+  - url: https://sanaacenter.org/publications/perspectives-and-analyses/26703
+    title: The Houthis Strike Israel, Join the Regional Fray
+    publisher: Sana'a Center for Strategic Studies
+    date: '2026-03-31'
+    tier: 2
+- toward: PSE
+  grade: rival
+  trend: cooling
+  bond: grievance
+  since: '1993-09-13'
+  last_verified: '2026-10-12'
+  confidence: C
+  note: 'Argued: rival, not adversary, and Israel''s side is harsher in practice than Palestine''s. The Palestinian Authority still sits inside the Oslo security and customs architecture
+    that Israel runs (it collects, and since May 2025 withholds, the clearance revenue that is two-thirds of the PA''s budget), so Israel does not seek to destroy the PA the way it seeks
+    to destroy Hamas; but its government rejects a Palestinian state, the E1 tenders, USD 431m for 34 new settlements and the first Area A land seizure advance de facto annexation, and,
+    per PISM, a coalition aim is to block statehood and, if the far right wins, to dismantle the PA. The adversary on the Palestinian side is Hamas, graded separately. Cooling: the election
+    of 27 Oct 2026 offers no contender for prime minister who accepts a state. No source uses the word ''rival''; our reading of the structure (confidence C). Bond - grievance.'
+  sources:
+  - url: https://unsco.unmissions.org/sites/default/files/2026-08/security_council_briefing_-_11_august_2026_west_bank.pdf
+    title: Security Council briefing on the situation in the occupied West Bank (R. Alakbarov, UN Deputy Special Coordinator)
+    publisher: UN Office of the Special Coordinator for the Middle East Peace Process
+    date: '2026-08-11'
+    tier: 1
+  - url: https://pism.pl/webroot/upload/files/Biuletyn/PISM%20Bulletin%20no%2060%20(2692)%201%20September%202026.pdf
+    title: The risk of escalation in the West Bank (PISM Bulletin no. 60)
+    publisher: Polish Institute of International Affairs (PISM)
+    date: '2026-09-01'
+    tier: 2
+  - url: https://aa.com.tr/en/middle-east/israel-withholds-palestinian-clearance-funds-again-deducts-200-million/3919451
+    title: Israel withholds Palestinian clearance funds again, deducts $200 million
+    publisher: Anadolu Agency
+    date: '2026-04-27'
+    tier: 3
+  - url: https://www.aljazeera.com/news/2026/10/12/if-netanyahu-goes-does-anything-really-change-for-palestinians
+    title: If Netanyahu goes, does anything really change for Palestinians?
+    publisher: Al Jazeera
+    date: '2026-10-12'
+    tier: 3
+- toward: EGY
+  grade: reluctant_partner
+  trend: cooling
+  bond: grievance
+  since: '1979-03-26'
+  last_verified: '2026-10-12'
+  confidence: B
+  note: 'Treaty partner since 1979 with a wary structure, seen from Jerusalem: the peace treaty and security and intelligence cooperation continue and Leviathan gas flows under a USD
+    35bn contract (frozen by Netanyahu in Sept 2025 over the Sinai build-up, later approved); but Israel calls Egypt''s Sinai deployments (reported up to 40,000 troops, contested) and
+    the live-fire drills of April 2026 a breach of the treaty''s military annex and asked Washington to press Cairo, while Sisi called Israel ''the enemy'' after the Doha strike and
+    Cairo''s red line (no displacement into Sinai) is aimed at Israel. Not `rival`: the treaty, the gas and the Rafah arrangement bind both and neither seeks the other''s defeat. Our
+    reading of ''partner, cooling'' (confidence B, no source uses the label); mirrors Egypt''s own grade. Bond - grievance: four wars and the Gaza war on the border.'
+  sources:
+  - url: https://www.atlanticcouncil.org/blogs/menasource/amid-gaza-cease-fire-hope-where-does-the-egypt-israel-relationship-stand/
+    title: Amid Gaza cease-fire hope, where does the Egypt-Israel relationship stand?
+    publisher: Atlantic Council
+    date: 2025-10
+    tier: 2
+  - url: https://thearabweekly.com/egypt-defends-sinai-troop-presence-rejects-israeli-claims-treaty-breach
+    title: Egypt defends Sinai troop presence, rejects Israeli claims of treaty breach
+    publisher: The Arab Weekly
+    date: '2025'
+    tier: 3
+  - url: https://www.aljazeera.com/news/2026/4/28/is-egypt-threatening-israel-through-its-military-exercises-on-the-border
+    title: Is Egypt threatening Israel through its military exercises on the border?
+    publisher: Al Jazeera
+    date: '2026-04-28'
+    tier: 3
+  - url: https://enterpriseam.com/egypt/2025/09/07/israel-halts-its-usd-35-bn-gas-export-agreement-with-egypt-as-egyptian-israeli-relations-grow-tense/
+    title: Israel halts its USD 35 bn gas export agreement with Egypt as Egyptian-Israeli relations grow tense
+    publisher: Enterprise
+    date: '2025-09-07'
+    tier: 3
+- toward: JOR
+  grade: reluctant_partner
+  trend: cooling
+  bond: grievance
+  since: '1994-10-26'
+  last_verified: '2026-10-12'
+  confidence: B
+  note: 'Treaty partner at its lowest point since 1994, seen from Jerusalem: no ambassadors since Nov 2023 (Amman refuses the return of Israel''s; Israel reportedly offered water in
+    exchange), the 2021 energy-for-water swap refused, the King calling West Bank annexation a red line and Jordanian planners reportedly weighing nullification; a Jordanian driver killed
+    two Israeli soldiers at Allenby on 18 Sep 2025 and the crossing was shut. Cooperation continues where it is necessary: the 45 bcm Leviathan gas contract, the Gaza aid corridor, the
+    bridges and security channels. Not `rival` (the treaty and the shared air screen against Iran operate; Amman aims its criticism at the current government) and not `adversary`. Israel''s
+    grade mirrors Jordan''s own. Bond - grievance: the Palestinian question and the fear of an ''alternative homeland''.'
+  sources:
+  - url: https://foreignpolicy.com/2026/08/31/jordan-israel-iran-west-bank-annexation-refugees-gaza/
+    title: Jordan Sees Bigger Threat From Israel Than Iran
+    publisher: Foreign Policy (Sean Yom)
+    date: '2026-08-31'
+    tier: 3
+  - url: https://www.jordannews.jo/Section-29/Analysis/Does-Jordan-really-oppose-Israel-56950
+    title: Does Jordan really oppose Israel?
+    publisher: Jordan News (Maher Abu Tair, Alghad)
+    date: '2026-10-05'
+    tier: 3
+  - url: https://www.newarab.com/news/two-israelis-killed-attack-jordan-border
+    title: Two Israelis killed in attack at Jordan border
+    publisher: The New Arab
+    date: '2025-09-18'
+    tier: 3
+  - url: https://www.everycrsreport.com/files/2026-01-08_RL33546_d8d7b4a88456a9ca97bf4953209beb6489482040.html
+    title: 'Jordan: Background and U.S. Relations (CRS RL33546, 8 Jan 2026)'
+    publisher: Congressional Research Service
+    date: '2026-01-08'
+    tier: 1
+- toward: ARE
+  grade: partner
+  trend: warming
+  bond: none
+  since: '2020-09-15'
+  last_verified: '2026-10-12'
+  confidence: B
+  note: 'Normalised by the Abraham Accords and, from Israel''s side, the most useful Arab tie of 2026: Netanyahu was received in Abu Dhabi on 27 Sep 2026 and Israel sent an Iron Dome
+    battery and troops to the UAE during the Iran war (Axios). The Emirates keep a public red line (West Bank annexation would end regional integration; Gargash, Sept and Oct 2025) and
+    summoned Israel''s deputy ambassador over the Doha strike, which is why the Emirati card grades the trend stable; Israel''s own evidence is warming, since the security relationship
+    is deepening before an election. Partner, not ally: no defence treaty and an unresolved Palestine condition. Bond none: interest.'
+  sources:
+  - url: https://www.aljazeera.com/news/2026/9/28/uae-confirms-netanyahu-visit-to-abu-dhabi
+    title: UAE confirms Netanyahu visit to Abu Dhabi
+    publisher: Al Jazeera
+    date: '2026-09-28'
+    tier: 3
+  - url: https://www.axios.com/2026/04/26/israel-iron-dome-uae
+    title: 'Scoop: Israel sent ''Iron Dome'' system and troops to UAE during Iran war'
+    publisher: Axios
+    date: '2026-04-26'
+    tier: 3
+  - url: https://www.axios.com/2025/09/03/israel-annex-west-bank-uae-trump-abraham-accords
+    title: UAE warns White House that Israeli annexations could unravel Abraham Accords
+    publisher: Axios
+    date: '2025-09-03'
+    tier: 3
+  - &id001
+    url: https://armenpress.am/en/article/1261329
+    title: Abraham Accords countries hold first official meeting since Oct. 7 attacks (CBS News report)
+    publisher: Armenpress
+    date: '2026-09-25'
+    tier: 3
+- toward: BHR
+  grade: partner
+  trend: stable
+  bond: none
+  since: '2020-10-18'
+  last_verified: '2026-10-12'
+  confidence: B
+  note: Normalised by the 18 Oct 2020 joint communique; Bahrain's envoy went home in Nov 2023 over Gaza while Israel said ties stayed stable, and Bahrain attended the Abraham Accords
+    meeting of Sept 2026, the first since 7 Oct 2023. Formal and transactional, hence partner, stable. Bond none.
+  sources:
+  - url: https://www.bna.bh/en/BahrainIsraelsignhistoricJointCommuniqueontheEstablishmentofDiplomaticPeacefulandFriendlyRelations.aspx?cms=q8FmFJgiscL2fwIzON1%2BDkw6yYauU2jBB8j1QMKQ9jQ%3D
+    title: Bahrain, Israel sign historic Joint Communique on the Establishment of Diplomatic, Peaceful and Friendly Relations
+    publisher: Bahrain News Agency (state agency, official statement)
+    date: '2020-10-18'
+    tier: 1
+  - url: https://www.reuters.com/world/middle-east/bahrain-parliament-says-envoy-israel-returned-home-israel-says-ties-stable-2023-11-02/
+    title: Bahrain parliament says envoy to Israel returned home, Israel says ties stable
+    publisher: Reuters
+    date: '2023-11-02'
+    tier: 3
+  - *id001
+- toward: MAR
+  grade: partner
+  trend: warming
+  bond: none
+  since: 2020-12
+  last_verified: '2026-10-12'
+  confidence: B
+  note: 'Original Abraham Accords state with the deepest military content: a 2026 joint military work plan adopted at the third Joint Military Committee in Tel Aviv, Barak MX air defence
+    reported operational in January 2026, Israeli drones and artillery, a drone factory by BlueBird, and a shared Iran file (Rabat cut ties with Tehran in 2018 over the Polisario). Partner,
+    not ally: no treaty. Warming on arms and security; the Atlantic Council piece is from Jan 2025 and the 2026 war positions of Rabat were not found. Bond none: interest.'
+  sources:
+  - url: https://www.jns.org/israel-news/israel-morocco-deepen-2026-defense-ties
+    title: Israel, Morocco deepen 2026 defense ties
+    publisher: JNS
+    date: '2026'
+    tier: 3
+  - url: https://www.atlanticcouncil.org/blogs/menasource/how-gaza-war-brought-morocco-and-israel-closer/
+    title: How the Gaza war brought Morocco and Israel closer
+    publisher: Atlantic Council
+    date: '2025-01-21'
+    tier: 2
+  - *id001
+- toward: SAU
+  grade: neutral
+  trend: cooling
+  bond: none
+  since: 2024-02
+  last_verified: '2026-10-12'
+  confidence: C
+  note: 'Argued: Israel''s grade of Riyadh is not Riyadh''s grade of Israel (rival). Israel wants normalisation with Saudi Arabia as the capstone of its regional order and has no contest
+    with it on the ground, and quiet security contact is reported; but there are no relations, Riyadh insists on a Palestinian state on the 1967 lines first (repeated July 2025), and
+    CSIS (July 2026) finds the Iran war has made proximity to Israel costlier and normalisation ''off the table'' near term. So the posture is a refusal, not a rivalry: `neutral`, cooling
+    because the offer is retreating. The asymmetry with Saudi''s own `rival` is deliberate and the sources do not give Israel''s reading in so many words (confidence C). Bond none: interest.'
+  sources:
+  - url: https://www.csis.org/analysis/how-iran-war-weighs-us-saudi-partnership-and-prospects-normalization-israel
+    title: How the Iran War Weighs on the U.S.-Saudi Partnership and Prospects for Normalization with Israel
+    publisher: CSIS
+    date: '2026-07-06'
+    tier: 2
+  - url: https://www.middleeastmonitor.com/20250728-saudi-arabia-says-no-normalization-with-israel-without-establishing-palestinian-state/
+    title: Saudi Arabia says no normalization with Israel without establishing Palestinian state
+    publisher: Middle East Monitor
+    date: '2025-07-28'
+    tier: 3
+  - url: https://www.news4jax.com/news/world/2025/08/04/france-and-saudis-vow-to-keep-up-momentum-for-two-state-solution-to-israel-palestinian-conflict/
+    title: France and Saudis vow to keep up momentum for two-state solution to Israel-Palestinian conflict
+    publisher: AP
+    date: '2025-08-04'
+    tier: 3
+- toward: SYR
+  grade: rival
+  trend: cooling
+  bond: grievance
+  since: '2024-12-08'
+  last_verified: '2026-10-12'
+  confidence: B
+  note: 'Rival, not adversary, on both sides (mirror of Syria''s card). Israel took the buffer zone and Mount Hermon after Assad''s fall, keeps nine bases and outposts (ACLED, June 2026),
+    says through Defence Minister Katz that the troops stay for an unlimited period, and struck the Abu al-Duhur airfield on 18 Aug 2026 to stop a feared Turkish deployment; it also
+    negotiates, in US-mediated rounds (Paris, July-August 2025 and January 2026; Jordan, 23 Aug 2026), a security deal for a demilitarised south. No agreement is signed. It does not
+    seek the regime''s fall, and Damascus does not seek Israel''s defeat. Cooling because of the August strike and the stalled text. Bond - grievance: occupation, the Golan, Suwayda.'
+  sources:
+  - url: https://acleddata.com/expert-comment/israel-redrawing-syrian-border-under-guise-security
+    title: Israel redrawing the Syrian border under the guise of security
+    publisher: ACLED
+    date: 2026-06
+    tier: 2
+  - url: https://www.khaleejtimes.com/mena/syria-israel-us-mediated-talks-tensions-strikes-territory
+    title: Syria, Israel hold US-mediated talks to ease tensions, state news agency says
+    publisher: Khaleej Times
+    date: '2026-08-23'
+    tier: 3
+  - url: https://english.aawsat.com/arab-world/5300382-sharaa-syria-seeks-security-deal-israel-participation-several-countries
+    title: 'Sharaa: Syria seeks security deal with Israel with participation of several countries'
+    publisher: Asharq Al-Awsat
+    date: '2026-07-26'
+    tier: 3
+  - url: https://www.thenationalnews.com/news/mena/2026/08/19/us-working-on-deconfliction-mechanism-between-turkey-syria-and-israel-says-barrack/
+    title: US working on deconfliction mechanism between Turkey, Syria and Israel, says Barrack
+    publisher: The National
+    date: '2026-08-19'
+    tier: 3
+- toward: LBN
+  grade: rival
+  trend: stable
+  bond: grievance
+  since: '2024-11-27'
+  last_verified: '2026-10-12'
+  confidence: B
+  note: 'Rival, not adversary (mirror of Lebanon''s card, with Israel''s side added). Israel''s signature stands on the 26 Jun 2026 US-brokered framework (ambassador Leiter at the State
+    Department): a sequence in which the Lebanese army disarms non-state groups while Israel ''progressively redeploys'', a trilateral Military Coordination Group and a peace agreement
+    to be drafted; direct talks continue. At the same time Israel holds about 65 villages, keeps the right to strike ''at any time'' under the April truce and has killed more than 4,300
+    people in Lebanon since 2 Mar 2026. The enemy is Hezbollah (adversary); the Lebanese state is a counterparty under pressure. Stable: talks warm it, strikes and occupation cool it.
+    Bond - grievance.'
+  sources:
+  - url: https://www.state.gov/releases/office-of-the-spokesperson/2026/06/trilateral-framework-between-the-united-states-of-america-the-state-of-israel-and-the-republic-of-lebanon/
+    title: Trilateral Framework Between the United States of America, the State of Israel, and the Republic of Lebanon
+    publisher: U.S. Department of State
+    date: '2026-06-26'
+    tier: 1
+  - url: https://www.aljazeera.com/news/2026/6/27/what-is-the-framework-agreement-signed-by-israel-and-lebanon
+    title: What is the framework agreement signed by Israel and Lebanon?
+    publisher: Al Jazeera
+    date: '2026-06-27'
+    tier: 3
+  - url: https://www.longwarjournal.org/archives/2026/07/analysis-the-israel-lebanon-framework-agreement-explained.php
+    title: 'Analysis: The Israel-Lebanon framework agreement explained'
+    publisher: FDD's Long War Journal
+    date: 2026-07
+    tier: 3
+  - url: https://www.thenationalnews.com/news/mena/2026/10/08/eu-to-establish-training-and-support-mission-for-lebanese-army/
+    title: EU to establish training and support mission for Lebanese army
+    publisher: The National
+    date: '2026-10-08'
+    tier: 3
+- toward: TUR
+  grade: rival
+  trend: cooling
+  bond: grievance
+  since: 2024-05
+  last_verified: '2026-10-12'
+  confidence: B
+  note: 'Rival, not adversary (mirror of Turkey''s card). Ankara cut direct trade in May 2024 and on 29 Aug 2025 declared it total, closing ports and airspace to Israel and calling the
+    government ''state terror''; Israel answers that it ''will not tolerate a Turkish military foothold moving south'', vetoes Turkish troops in Gaza, and at the Greek-Cypriot summit
+    of 22 Dec 2025 said no one would restore ''their empire'' in the region. Neither seeks the other''s destruction: the US is building a Turkey-Syria-Israel deconfliction mechanism
+    after the Abu al-Duhur strike. The Syria collision risk keeps the trend at cooling. Bond - grievance.'
+  sources:
+  - url: https://www.aljazeera.com/news/2025/8/29/turkiye-closes-airspace-to-israel-entirely-cutting-ties-over-gaza-war
+    title: Türkiye closes airspace to Israel, bans Israeli ships from Turkish ports
+    publisher: Al Jazeera
+    date: '2025-08-29'
+    tier: 3
+  - url: https://www.thenationalnews.com/news/mena/2026/08/19/us-working-on-deconfliction-mechanism-between-turkey-syria-and-israel-says-barrack/
+    title: US working on deconfliction mechanism between Turkey, Syria and Israel, says Barrack
+    publisher: The National
+    date: '2026-08-19'
+    tier: 3
+  - url: https://www.al-monitor.com/originals/2026/08/turkey-rejects-israeli-claims-after-strike-syria-air-base
+    title: Turkey rejects Israeli claims after strike on Syria air base
+    publisher: Al-Monitor
+    date: 2026-08
+    tier: 3
+  - url: https://www.tovima.com/politics/netanyahu-at-trilateral-meeting-were-determined-to-defend-ourselves-vid/
+    title: 'Netanyahu at Trilateral Meeting: We''re Determined to Defend Ourselves'
+    publisher: To Vima
+    date: '2025-12-22'
+    tier: 3
+- toward: QAT
+  grade: rival
+  trend: stable
+  bond: grievance
+  since: '2025-09-09'
+  last_verified: '2026-10-12'
+  confidence: B
+  note: Rival, not adversary (mirror of Qatar's card). Israel struck a residential compound in Doha on 9 Sep 2025 while Hamas leaders discussed a US proposal, then Netanyahu apologised
+    on 29 Sep in a call arranged by Trump, who signed an executive order guaranteeing Qatar's security; Israel has no relations with Qatar and has rejected an earlier bid to restore
+    them, while Qatar remains the mediator Israel needs on the Gaza track (disarmament agreement of Jul 2026) and in August 2026 blamed Israel for obstructing implementation. Israel's
+    aim is to remove Hamas's leadership abroad, not to harm the Qatari state. Bond - grievance.
+  sources:
+  - url: https://www.newarab.com/news/israeli-military-claims-strike-hamas-leaders-qatar
+    title: Israeli military claims strike on Hamas leaders in Qatar as explosions rock Doha
+    publisher: The New Arab
+    date: '2025-09-09'
+    tier: 3
+  - url: https://www.axios.com/2025/09/29/israel-apologize-qatar-airstrike-netanyahu-trump
+    title: 'Scoop: Netanyahu apologizes to Qatar for violating sovereignty with airstrike'
+    publisher: Axios
+    date: '2025-09-29'
+    tier: 3
+  - url: https://www.whitehouse.gov/presidential-actions/2025/09/assuring-the-security-of-the-state-of-qatar
+    title: Executive Order 14353 - Assuring the Security of the State of Qatar
+    publisher: The White House
+    date: '2025-09-29'
+    tier: 1
+  - url: https://www.omanobserver.om/article/1193975/world/region/qatar-blames-israel-for-delayed-gaza-peace-plan
+    title: Qatar blames Israel for delayed Gaza peace plan
+    publisher: Oman Observer
+    date: '2026-08-04'
+    tier: 3
+- toward: GRC
+  grade: ally
+  trend: stable
+  bond: none
+  since: '1990'
+  last_verified: '2026-10-12'
+  confidence: B
+  note: 'Stable de facto alignment in defence and energy (mirror of Greece''s card): the trilateral military work plan with Cyprus signed after the Jerusalem summit of 22 Dec 2025, the
+    3+1 energy format, joint drills in 2026 and Greece''s largest-ever arms purchase from Israel (EUR 3bn ''Achilles Shield'', 31 Aug 2026, which Israel''s ministry called the largest
+    defence export deal in the history of the relationship). No treaty and public friction (Mitsotakis rebuked the Lebanon campaign on 9 Apr 2026 and has not recognised Palestine), but
+    the shared Turkey problem sets the structure. Build warnings that Greece is bound to Turkey in NATO and to Spain in the EU are answered by the case itself: the alignment is built
+    against Ankara, so the NATO tie to Turkey is the problem it answers and not a divided loyalty. Bond none: interest.'
+  sources:
+  - url: https://www.aljazeera.com/news/2026/8/31/greece-signs-3-5bn-air-defence-deal-with-israel
+    title: Greece signs $3.5bn air defence deal with Israel
+    publisher: Al Jazeera
+    date: '2026-08-31'
+    tier: 3
+  - url: https://www.algemeiner.com/2025/12/29/greece-israel-cyprus-step-up-joint-exercises-eastern-mediterranean/
+    title: Greece, Israel, Cyprus to step up joint exercises in Eastern Mediterranean
+    publisher: Algemeiner
+    date: '2025-12-29'
+    tier: 3
+  - &id002
+    url: https://origin01-en.protothema.gr/2025/12/22/joint-statements-by-mitsotakis-netanyahu-and-christodoulides-after-the-trilateral-in-israel
+    title: Joint statements by Mitsotakis, Netanyahu and Christodoulides after the trilateral in Israel
+    publisher: Protothema
+    date: '2025-12-22'
+    tier: 3
+  - url: https://www.algemeiner.com/2025/12/31/israel-greece-and-cyprus-in-search-of-new-synergies/
+    title: 'Israel, Greece, and Cyprus: In Search of New Synergies'
+    publisher: The Algemeiner
+    date: '2025-12-31'
+    tier: 3
+  - url: https://www.iefimerida.gr/english/friends-should-be-honest-greek-pm-rebukes-israel-over-lebanon-strikes-rejects-iran-shipping
+    title: '''Friends should be honest'': Greek PM rebukes Israel over Lebanon strikes, rejects Iran shipping tolls'
+    publisher: iefimerida
+    date: '2026-04-09'
+    tier: 3
+- toward: CYP
+  grade: partner
+  trend: stable
+  bond: none
+  since: '2010'
+  last_verified: '2026-10-12'
+  confidence: B
+  note: 'Graded partner rather than ally, although it sits in the 3+1: Cyprus signed the same trilateral military work plan (Dec 2025), buys three Israeli weapons systems for the National
+    Guard and received Herzog on 10 Sep 2026, but there is no joint procurement on Greece''s scale, the Aphrodite gas field (up to 10% claimed by Israel''s Yishai) is unsigned with talks
+    due the week of 12 Oct 2026, Israel boarded the Gaza flotilla off Cyprus on 18 May 2026 without telling Nicosia, and AKEL and the Peace Council attack the ties. Mirrors Cyprus''s
+    own grade (partner, stable). Bond none: interest.'
+  sources:
+  - url: https://cyprus-mail.com/2026/10/09/cyprus-and-israel-to-discuss-aphrodite-gas-reservoir-next-week
+    title: Cyprus and Israel to discuss Aphrodite gas reservoir next week
+    publisher: Cyprus Mail
+    date: '2026-10-09'
+    tier: 3
+  - url: https://cyprus-mail.com/2026/09/10/israeli-president-herzog-arrives-at-presidential-palace
+    title: Israeli president Herzog arrives at presidential palace
+    publisher: Cyprus Mail
+    date: '2026-09-10'
+    tier: 3
+  - url: https://www.adn.com/nation-world/2026/05/18/israeli-troops-intercept-flotilla-off-cyprus-as-it-tries-to-breach-gaza-blockade/
+    title: Israeli troops intercept flotilla off Cyprus as it tries to breach Gaza blockade
+    publisher: Associated Press
+    date: '2026-05-18'
+    tier: 3
+  - *id002
+- toward: IND
+  grade: partner
+  trend: warming
+  bond: none
+  since: '1992'
+  last_verified: '2026-10-12'
+  confidence: B
+  note: 'From Israel''s side, a defence and technology partner of the first order: India took 29% of Israeli arms exports in 2021-25 (SIPRI, via Globes), Modi addressed the Knesset in
+    late Feb 2026 two days before the strikes on Iran, FTA talks opened on a fast track and Adani runs Haifa port. India condemned neither side in the Iran war; the pair Israel-Iran
+    makes its double partnership the test of multi-alignment. Partner, not ally. Bond none: interest.'
+  sources:
+  - url: https://www.ewn.co.za/2026/02/25/indias-modi-heads-to-israel-to-strengthen-cooperation
+    title: India's Modi heads to Israel to 'strengthen cooperation'
+    publisher: Eyewitness News (AFP)
+    date: '2026-02-25'
+    tier: 3
+  - url: https://www.malaymail.com/news/world/2026/02/25/modi-flies-to-israel-to-deepen-defence-and-trade-ties-stirring-criticism-at-home/210385
+    title: Modi flies to Israel to deepen defence and trade ties, stirring criticism at home
+    publisher: Malay Mail
+    date: '2026-02-25'
+    tier: 3
+  - url: https://en.globes.co.il/en/article-1001537179
+    title: Israel overtakes UK in defense export rankings (SIPRI)
+    publisher: Globes
+    date: 2026-03
+    tier: 3
+- toward: org-eu
+  grade: partner
+  trend: cooling
+  bond: none
+  since: 2025-09
+  last_verified: '2026-10-12'
+  confidence: C
+  note: 'Mirror of the EU''s own reading, with Israel''s side added: the Association Agreement is in force and the EU is Israel''s first trading partner (about 32% of goods trade in
+    2024), but Israel rejects the Commission''s attempts since Sept 2025 to suspend trade provisions (about EUR 5.8bn of goods), sanction two ministers and settlers and, from July 2026,
+    ban trade with settlements, and high-level contact has stopped. No majority exists to downgrade (Kallas, 21 Apr 2026). No source supplies the grade (C). Bond none.'
+  sources:
+  - url: https://www.thenationalnews.com/news/europe/2026/07/17/no-apology-or-high-level-contact-as-eu-israel-ties-sour-over-bid-to-block-trade-with-settlements/
+    title: No apology or high-level contact as EU-Israel ties sour over bid to block trade with settlements
+    publisher: The National
+    date: '2026-07-17'
+    tier: 3
+  - url: https://www.aa.com.tr/en/europe/eu-says-no-support-among-members-for-proposals-to-suspend-association-agreement-with-israel/3913802
+    title: EU says no support among members for proposals to suspend Association Agreement with Israel
+    publisher: Anadolu Agency
+    date: 2026-04
+    tier: 3
+  - url: https://www.euronews.com/2025/06/24/as-review-finds-indications-of-gaza-human-rights-breach-how-close-are-eu-israel-trade-rela
+    title: As review finds indications of Gaza human rights breach, how close are EU-Israel trade relations?
+    publisher: Euronews
+    date: '2025-06-24'
+    tier: 3
+  - url: https://www.thenationalnews.com/news/europe/2026/09/01/eu-frustration-at-impasse-on-israeli-settler-trade-ban/
+    title: EU frustration at impasse on Israeli settler trade ban
+    publisher: The National
+    date: '2026-09-01'
+    tier: 3
+- toward: DEU
+  grade: ally
+  trend: cooling
+  bond: affinity
+  since: '1965-05-12'
+  last_verified: '2026-10-12'
+  confidence: B
+  note: 'Staatsraeson makes Israel''s security a German raison d''etat and Germany supplied 31% of Israel''s arms imports in 2021-25 (SIPRI, second after the US). Cooling: Merz suspended
+    exports usable in Gaza in Aug 2025 and lifted the curb from 24 Nov 2025, the Foreign Office called the Feb 2026 West Bank measures a step toward de facto annexation, and Berlin will
+    not say whether it would execute the ICC warrant. Not `reluctant_ally`: Germany questions conditions, not the commitment, and Berlin, with Hungary and Czechia, opposed the EU settlement-trade
+    ban that stalled in Sept 2026. Build warnings (Germany is in NATO with Turkey and in the EU with Spain, both graded rival) are answered by that structure. Mirrors Germany''s own
+    grade. Bond - affinity (rooted in the Holocaust).'
+  sources:
+  - url: https://defence24.com/geopolitics/revamped-staatsrason-merzs-germany-hardens-tone-on-israel
+    title: 'Revamped Staatsraison: Merz''s Germany hardens tone on Israel'
+    publisher: Defence24
+    date: '2026'
+    tier: 3
+  - url: https://www.aljazeera.com/news/2025/11/17/germany-lifts-curbs-on-arms-exports-to-israel-citing-gaza-ceasefire
+    title: Germany lifts curbs on arms exports to Israel, citing Gaza ceasefire
+    publisher: Al Jazeera
+    date: '2025-11-17'
+    tier: 3
+  - url: https://www.aljazeera.com/news/2025/2/24/merz-says-netanyahu-will-be-able-to-visit-germany-despite-icc-warrant
+    title: Merz says Netanyahu will be able to visit Germany despite ICC warrant
+    publisher: Al Jazeera
+    date: '2025-02-24'
+    tier: 3
+  - *id003
+  - url: https://www.thenationalnews.com/news/europe/2026/09/01/eu-frustration-at-impasse-on-israeli-settler-trade-ban/
+    title: EU frustration at impasse on Israeli settler trade ban
+    publisher: The National
+    date: '2026-09-01'
+    tier: 3
+- toward: FRA
+  grade: reluctant_partner
+  trend: cooling
+  bond: grievance
+  since: 2025-07
+  last_verified: '2026-10-12'
+  confidence: B
+  note: 'Mirror of France''s own reading. Open quarrel since summer 2025: France recognised Palestine on 22 Sep 2025, Netanyahu wrote that it ''adds fuel to the fire of antisemitism''
+    and the Elysee called the remarks ''vile''; Israel''s foreign minister said there was ''no room'' for a Macron visit while France persisted, and the two leaders spoke again only
+    in March 2026, about Lebanon. Diplomatic relations, intelligence and arms links continue, so reluctant partner and not rival. Bond - grievance (the recognition quarrel and Lebanon).'
+  sources:
+  - url: https://www.newarab.com/news/israel-fm-no-macron-visit-unless-palestine-recognition-dropped
+    title: Israel FM says no Macron visit unless France drops Palestinian state recognition
+    publisher: The New Arab
+    date: '2025'
+    tier: 3
+  - url: https://www.lemonde.fr/international/article/2025/09/22/le-discours-d-emmanuel-macron-sur-la-reconnaissance-de-l-etat-de-palestine-par-la-france_6642473_3210.html
+    title: Emmanuel Macron's speech on France's recognition of the State of Palestine
+    title_original: Le discours d'Emmanuel Macron sur la reconnaissance de l'Etat de Palestine par la France
+    lang: fr
+    publisher: Le Monde
+    date: '2025-09-22'
+    tier: 3
+  - url: https://www.al-monitor.com/index%2ephp/originals/2026/03/macron-urges-netanyahu-avoid-ground-offensive-lebanon
+    title: Macron urges Netanyahu to avoid ground offensive in Lebanon
+    publisher: Al-Monitor
+    date: 2026-03
+    tier: 3
+- toward: GBR
+  grade: partner
+  trend: cooling
+  bond: none
+  since: '2024-09-02'
+  last_verified: '2026-10-12'
+  confidence: B
+  note: 'Mirror of the UK''s own reading: about 30 arms-export licences suspended in Sept 2024, widened to more than 80 by 2026 under a ''double lock'', recognition of Palestine in Sept
+    2025 and an embassy for Palestine in Jan 2026; security and intelligence cooperation and trade continue, so partner, not rival. Bond none.'
+  sources:
+  - url: https://www.mta.org.uk/resources/uk-suspends-arms-export-licences-to-israel-over-international-humanitarian-law-concerns/
+    title: UK suspends arms export licences to Israel over international humanitarian law concerns
+    publisher: Manufacturers' Trade Association summary
+    date: 2024-09
+    tier: 3
+  - url: https://i24news.tv/en/news/international/europe/artc-uk-expands-israel-arms-export-ban-from-30-to-over-80-licences-report
+    title: UK expands Israel arms export ban from 30 to over 80 licences - report
+    publisher: i24NEWS
+    date: '2026'
+    tier: 3
+  - url: https://www.aljazeera.com/news/2026/9/9/how-has-israel-hit-back-against-sanctions-by-the-uk-others
+    title: How has Israel hit back against sanctions by the UK and others?
+    publisher: Al Jazeera
+    date: '2026-09-09'
+    tier: 3
+- toward: ESP
+  grade: rival
+  trend: cooling
+  bond: grievance
+  since: '2023-10-07'
+  last_verified: '2026-10-12'
+  confidence: B
+  note: 'Rival, mirror of Spain''s own reading with Israel''s acts added: Spain recognised Palestine (28 May 2024), enacted a full arms embargo (law ratified 8 Oct 2025, 178-169), barred
+    Ben-Gvir and Smotrich, and removed its ambassador for good on 10 Mar 2026; Israel barred Deputy PM Diaz and minister Rego (8 Sep 2025), called Spain''s measures antisemitic and a
+    distraction from corruption scandals, and downgraded the Madrid mission after the 2024 recognition. Not adversary: Spain''s aim is a change of policy and recognition for Palestine,
+    not the end of Israel. Bond - grievance.'
+  sources:
+  - url: https://www.aljazeera.com/news/2025/10/8/spains-parliament-formally-approves-israel-arms-embargo
+    title: Spain's parliament formally approves Israel arms embargo
+    publisher: Al Jazeera
+    date: '2025-10-08'
+    tier: 3
+  - url: https://euronews.com/2026/03/11/spain-formally-dismisses-ambassador-to-israel-amid-tensions-with-tel-aviv
+    title: Spain formally dismisses ambassador to Israel amid tensions with Tel Aviv
+    publisher: Euronews
+    date: '2026-03-11'
+    tier: 3
+  - url: https://www.jns.org/saar-slaps-sanctions-on-two-anti-israel-spanish-ministers/
+    title: Sa'ar slaps sanctions on two anti-Israel Spanish ministers
+    publisher: JNS
+    date: '2025-09-08'
+    tier: 3
+- toward: IRL
+  grade: rival
+  trend: cooling
+  bond: grievance
+  since: '2024-05-28'
+  last_verified: '2026-10-12'
+  confidence: C
+  note: 'Argued: Ireland grades Israel `reluctant_partner`, Israel''s reading is harder because it acted first. After Ireland''s recognition of Palestine (28 May 2024) and its ICJ intervention,
+    Foreign Minister Sa''ar announced on 15 Dec 2024 the closure of Israel''s embassy in Dublin, citing them (Taoiseach Harris: ''outright false''); the Occupied Territories law banning
+    settlement goods was signed on 23 Jul 2026. Not adversary: no aim against the Irish state. Our reading (confidence C). Bond - grievance.'
+  sources:
+  - url: https://www.newarab.com/news/israel-not-welcomed-here-ireland-hits-back-over-embassy-row
+    title: 'Israel not welcomed here: Ireland hits back over embassy row'
+    publisher: The New Arab
+    date: '2024-12-15'
+    tier: 3
+  - url: https://irishtimes-irishtimes-prod.cdn.arcpublishing.com/ireland/2024/12/15/why-israel-is-closing-its-embassy-in-ireland-and-what-will-happen-next
+    title: Why Israel is closing its embassy in Ireland and what will happen next
+    publisher: The Irish Times
+    date: '2024-12-15'
+    tier: 3
+  - url: https://president.ie/en/media-library/news-releases/president-connolly-signs-the-israeli-settlements-in-the-occupied-palestinian-territory-prohibition-of-importation-of-goods-bill-2026
+    title: President Connolly signs the Israeli Settlements in the Occupied Palestinian Territory (Prohibition of Importation of Goods) Bill 2026
+    publisher: President of Ireland
+    date: '2026-07-23'
+    tier: 1
+- toward: AZE
+  grade: partner
+  trend: stable
+  bond: none
+  since: '1992'
+  last_verified: '2026-10-12'
+  confidence: B
+  note: 'Mirror of Azerbaijan''s reading, from Israel''s side: Azerbaijan supplies more than half of Israel''s crude through the BTC pipeline and SOCAR holds 10% of the Tamar gas field,
+    while Israel supplied about 69% of Azerbaijan''s arms imports in 2016-2021 (SIPRI via RFE/RL). No treaty, no ideology and a cost in Tehran that Baku denies on the record, hence partner,
+    bond none.'
+  sources:
+  - url: https://www.rferl.org/a/azerbaijan-iran-azeris-israel-attacks-war-weapons/33449040.html
+    title: Israel's Barrage Of Iran Is Furious. Azerbaijan, To Iran's North, Is Treading Lightly.
+    publisher: RFE/RL
+    date: '2025-06-19'
+    tier: 3
+  - url: https://jam-news.net/in-shadow-of-the-gaza-war-peak-in-azerbaijan-israel-relations/
+    title: 'In shadow of Gaza war: peak in Azerbaijan-Israel relations'
+    publisher: JAMnews
+    date: '2024'
+    tier: 3
+  - url: https://oc-media.org/israel-sent-troops-to-azerbaijan-during-iran-war-sources-tell-cnn/
+    title: Israel sent troops to Azerbaijan during Iran War, sources tell CNN
+    publisher: OC Media
+    date: '2026'
+    tier: 3
+- toward: RUS
+  grade: rival
+  trend: cooling
+  bond: none
+  since: '2026-02-28'
+  last_verified: '2026-10-12'
+  confidence: C
+  note: 'Argued: not neutral, not adversary. Russia called the US-Israeli strikes of 28 Feb 2026 ''a preplanned and unprovoked act of armed aggression'' and blamed Washington and Tel
+    Aviv for the escalation, but gave Iran no material support (PRIO) and wants to protect its warming with Washington; Friction without a contest for survival: rival, cooling since
+    the Iran war. No source gives Israel''s grade; our reading (confidence C). Gap: no 2026 contact between Putin and Netanyahu was found. Bond none.'
+  sources:
+  - url: https://www.ksat.com/news/world/2026/02/28/russian-foreign-ministry-condemns-us-israel-strikes-on-iran-as-unprovoked-act-of-armed-aggression/
+    title: Russian Foreign Ministry condemns US-Israel strikes on Iran as 'unprovoked act of armed aggression'
+    publisher: Associated Press (via KSAT)
+    date: '2026-02-28'
+    tier: 3
+  - url: https://www.prio.org/comments/1865
+    title: Russia struggles to find a response to U.S.-Israel attack on Iran
+    publisher: Peace Research Institute Oslo (PRIO)
+    date: '2026'
+    tier: 2
+- toward: CHN
+  grade: partner
+  trend: stable
+  bond: none
+  since: '1992-01-24'
+  last_verified: '2026-10-12'
+  confidence: C
+  note: 'Transactional: China is Israel''s second-largest trading partner (USD 33bn in 2025 by the Chinese ambassador''s count, tier 4), and Beijing neither suspended joint projects
+    nor flights in the Iran war. But China opposes the strikes (Wang Yi to Sa''ar, 3 Mar 2026), keeps its Iran line, and Sa''ar pressed its Middle East envoy in Jan 2026 about Iran''s
+    re-arming. Partner, not rival. Our reading (confidence C); the volume figure is an interested one. Bond none.'
+  sources:
+  - url: https://www.mfa.gov.cn/eng/wjbzhd/202603/t20260304_11868246.html
+    title: 'Readout: Wang Yi''s phone call with Israeli Foreign Minister Gideon Sa''ar (3 March 2026)'
+    publisher: Ministry of Foreign Affairs of China
+    date: '2026-03-04'
+    tier: 1
+  - url: https://www.jns.org/israel-news/israel-fm-hosts-chinas-special-envoy-to-mideast
+    title: Israel FM hosts China's special envoy to Mideast
+    publisher: JNS
+    date: 2026-01
+    tier: 3
+  - url: https://scribe.disroot.org/post/7133043
+    title: 'China highlights new chapter with Israel at embassy celebration (Chinese ambassador: USD 33bn trade in 2025, second-largest partner)'
+    publisher: scribe.disroot.org (aggregator of an Israel Hayom report)
+    date: '2026'
+    tier: 4
+- toward: UKR
+  grade: neutral
+  trend: warming
+  bond: none
+  since: '2025'
+  last_verified: '2026-10-12'
+  confidence: C
+  note: 'No alignment and a cautious thaw: Sa''ar went to Kyiv in 2025 (a bilateral security dialogue and a small aid package), Netanyahu and Zelensky spoke briefly on 28 Jul 2026, their
+    first face-to-face contact since Sept 2023 and Netanyahu''s Independence Day letter of 24 Aug 2026 named Iran as a common threat; Il Foglio reads the summer contact as thin. Neutral
+    and warming; our reading (confidence C). Bond none.'
+  sources:
+  - url: https://www.president.gov.ua/en/news/prezident-zustrivsya-z-ministrom-zakordonnih-sprav-izrayilyu-99121
+    title: The President met with the Minister of Foreign Affairs of Israel
+    publisher: Office of the President of Ukraine
+    date: '2025'
+    tier: 1
+  - url: https://www.ilfoglio.it/en/world/2026/07/30/news/zelensky-is-tired-of-chasing-after-bibi-the-background-to-the-tense-conversation-between-the-two-in-washington--403575
+    title: 'Zelensky is tired of chasing after Bibi: the background to the tense conversation between the two in Washington'
+    publisher: Il Foglio
+    date: '2026-07-30'
+    tier: 3
+- toward: ARG
+  grade: partner
+  trend: warming
+  bond: affinity
+  since: 2023-12
+  last_verified: '2026-10-12'
+  confidence: B
+  note: 'The most pro-Israel government in the Americas: Milei addressed the Knesset in June 2025, visited Israel on 19-22 Apr 2026, launched the ''Isaac Accords'' with Netanyahu and
+    signed three memoranda on military and scientific cooperation; the Jerusalem embassy move announced for 2026 is still pending (halted in Jan 2026 over a Falklands drilling dispute
+    involving an Israeli firm; ''once conditions are met''). Partner, not ally: no treaty. Bond - affinity: Milei''s declared ideological and religious sympathy.'
+  sources:
+  - url: https://www.timesofisrael.com/liveblog_entry/netanyahu-milei-launch-isaac-accords-to-foster-cooperation-between-israel-and-western-hemisphere/
+    title: Netanyahu, Milei launch 'Isaac Accords' to foster cooperation between Israel and Western Hemisphere
+    publisher: The Times of Israel
+    date: '2026-04-19'
+    tier: 3
+  - url: https://www.timesofisrael.com/report-argentina-halts-jerusalem-embassy-move-over-falklands-drilling-dispute/
+    title: 'Report: Argentina halts Jerusalem embassy move over Falklands drilling dispute'
+    publisher: The Times of Israel
+    date: '2026-01-11'
+    tier: 3
+  - url: https://www.infobae.com/america/agencias/2026/04/19/milei-anuncia-que-la-primera-ruta-directa-israel-argentina-estara-operativa-en-noviembre/
+    title: Milei announces that the first direct Israel-Argentina route will be operating in November
+    title_original: Milei anuncia que la primera ruta directa Israel-Argentina estara operativa en noviembre
+    lang: es
+    publisher: Infobae
+    date: '2026-04-19'
+    tier: 3
+  - url: https://www.aljazeera.com/news/2025/6/12/milei-says-argentina-to-move-embassy-from-tel-aviv-to-jerusalem-in-2026
+    title: Milei says Argentina to move embassy from Tel Aviv to Jerusalem in 2026
+    publisher: Al Jazeera
+    date: '2025-06-12'
+    tier: 3
+- toward: sub-somaliland
+  grade: partner
+  trend: warming
+  bond: none
+  since: '2025-12-26'
+  last_verified: '2026-10-12'
+  confidence: B
+  note: 'Israel became the first UN member to recognise Somaliland (26 Dec 2025), a joint declaration tied to the Abraham Accords that Somaliland says it will join; Somalia calls it
+    unlawful, and the Houthis threaten any Israeli base there. A recognition by one state is a bet on a Red Sea foothold, not an alliance. Bond none: interest.'
+  sources:
+  - url: https://www.adaderana.lk/news/116434/israel-becomes-first-country-to-formally-recognise-somaliland-as-independent-state
+    title: Israel becomes first country to formally recognise Somaliland as independent state
+    publisher: Ada Derana (wire)
+    date: '2025-12-26'
+    tier: 3
+  - url: https://allafrica.com/stories/202512270037.html
+    title: 'Somalia: Israel Recognises Somaliland As Independent State'
+    publisher: AllAfrica
+    date: '2025-12-27'
+    tier: 3
+  - url: https://sanaacenter.org/the-yemen-review/oct-dec-2025/26133
+    title: The Yemen Review, October-December 2025 (Operation Lucky Drop, Hudaydah, Somaliland)
+    publisher: Sana'a Center for Strategic Studies
+    date: 2026-01
+    tier: 2
+- toward: org-icc
+  grade: rival
+  trend: stable
+  bond: grievance
+  since: '2024-11-21'
+  last_verified: '2026-10-12'
+  confidence: B
+  note: 'Israel rejects the Court''s jurisdiction: the warrants for Netanyahu and Gallant (21 Nov 2024) stand, the Appeals Chamber in April 2025 sent Israel''s jurisdictional challenge
+    back to the Pre-Trial Chamber without suspending them and in October 2025 rejected Israel''s bid to cancel them; Germany, Poland and Hungary (until its change of government) have
+    signalled that the warrant would not stop a visit. Rival, not adversary: Israel contests the body and does not seek its end. Bond - grievance.'
+  sources:
+  - url: https://www.jurist.org/news/?p=280110
+    title: ICC appeals court orders pretrial chamber to reconsider Israel's jurisdictional challenge
+    publisher: JURIST
+    date: 2025-04
+    tier: 3
+  - url: https://thesun.my/news/world-news/icc-appeals-chamber-rejects-bid-to-cancel-arrest-warrants-for-netanyahu-and-gallant-kc13999883/
+    title: ICC appeals chamber rejects bid to cancel arrest warrants for Netanyahu and Gallant
+    publisher: The Sun Malaysia (wire)
+    date: 2025-10
+    tier: 3
+  - url: https://www.aljazeera.com/news/2025/2/24/merz-says-netanyahu-will-be-able-to-visit-germany-despite-icc-warrant
+    title: Merz says Netanyahu will be able to visit Germany despite ICC warrant
+    publisher: Al Jazeera
+    date: '2025-02-24'
+    tier: 3
+  - url: https://telex.hu/english/2026/05/27/parliament-votes-to-revoke-hungary-s-withdrawal-from-icc
+    title: Parliament votes to revoke Hungary's withdrawal from ICC
+    publisher: Telex
+    date: '2026-05-27'
+    tier: 3
+- toward: org-icj
+  grade: reluctant_partner
+  trend: stable
+  bond: grievance
+  since: '2023-12-29'
+  last_verified: '2026-10-12'
+  confidence: C
+  note: 'Israel appears and pleads while contesting jurisdiction: its counter-memorial in South Africa''s genocide case was filed in March 2026 (after an extension) and objects to jurisdiction;
+    the Court on 21 May 2026 set South Africa''s reply for 22 Nov 2027 and Israel''s rejoinder for 22 May 2029, so the case runs past any government now in office; the 2024 provisional
+    orders remain. Cooperation out of necessity, resistance on substance: our reading (confidence C). Bond - grievance.'
+  sources:
+  - url: https://ewn.co.za/2026/06/03/icj-sets-new-deadlines-for-sa-israel-genocide-case
+    title: ICJ sets new deadlines for SA-Israel genocide case
+    publisher: Eyewitness News
+    date: '2026-06-03'
+    tier: 3
+  - url: https://www.gov.za/news/media-statements/presidency-notes-icj-order-south-africa-and-israel-case-02-jun-2026
+    title: Presidency notes ICJ Order on South Africa and Israel case
+    publisher: Government of South Africa (Presidency)
+    date: '2026-06-02'
+    tier: 1
+  - url: https://www.icj-cij.org/node/204176
+    title: Summary of the Advisory Opinion of 19 July 2024 (Legal Consequences of Israel's policies and practices in the Occupied Palestinian Territory)
+    publisher: International Court of Justice
+    date: '2024-07-19'
+    tier: 1

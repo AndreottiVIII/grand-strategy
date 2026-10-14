@@ -1,0 +1,116 @@
+from: KGZ
+relations:
+  # ---------- objective ----------
+  - to: USA
+    layer: objective
+    type: influence_goal
+    summary: Bishkek seeks US trade, fintech and visa ties; Japarov attended the Washington C5+1 summit (6 Nov 2025), and in August 2026 the sides discussed a second summit in 2027 and visa simplification. Bishkek's own list put investment, hydropower and digital finance ahead of minerals.
+    since: 2025-11-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://economist.kg/vlast/2025/11/07/sadyr-zhaparov-vstrietilsia-s-donaldom-trampom-i-sienatorami-ssha-chto-obsudili/", title: "Sadyr Japarov met Donald Trump and US senators - what was discussed", publisher: "Economist.kg", date: 2025-11-07, tier: 3}
+      - {url: "https://24.kg/english/344514__President_of_Kyrgyzstan_and_US_Special_Envoy_Sergio_Gor_hold_talks", title: "President of Kyrgyzstan and US Special Envoy Sergio Gor hold talks", publisher: "24.kg", date: 2026-08, tier: 3}
+      - {url: "https://timesca.com/rare-earth-diplomacy-critical-minerals-set-to-top-agenda-at-c51-summit/", title: "Rare earth diplomacy: critical minerals set to top agenda at C5+1 summit", publisher: "Times of Central Asia", date: 2025-11, tier: 3}
+
+  # ---------- alignment ----------
+  - to: RUS
+    layer: alignment
+    type: security_guarantee
+    summary: CSTO member; the Russian Kant air base near Bishkek operates under the CSTO framework and is part of the rapid reaction forces. In 2026 the Russian ambassador said its current parameters are enough for the southern flank, with no expansion needed; Russian personnel joined the Rubezh-2025 exercise.
+    since: 1992
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://en.odkb-csto.org/structure/", title: "CSTO structure - member states", publisher: "Collective Security Treaty Organization", date: 2026-10, tier: 1}
+      - {url: "https://24.kg/english/361852_Expansion_of_Kant_airbase_not_required_Russian_Ambassador_says", title: "Expansion of Kant airbase not required, Russian Ambassador says", publisher: "24.kg", date: 2026, tier: 3}
+
+  - to: AFG
+    layer: alignment
+    type: non_recognition
+    summary: Kyrgyzstan does not formally recognise the Taliban government, but removed the Taliban from its list of terrorist organisations on 6 Sept 2024 and keeps trade ties with them. The Kremlin said it understood the step.
+    since: 2024-09-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://8am.media/eng/kyrgyzstan-removes-taliban-from-terrorist-list-un-security-council-warns-afghanistan-remains-a-terrorism-hotspot/", title: "Kyrgyzstan removes Taliban from terrorist list", publisher: "8am.media", date: 2024-09, tier: 3}
+      - {url: "https://www.ecoi.net/de/dokument/2144737.html", title: "Country Report on Terrorism 2024 - Chapter 1 - Kyrgyz Republic (US State Department, mirror)", publisher: "US State Department via ecoi.net", date: 2025, tier: 1}
+
+  # ---------- dependency ----------
+  - to: RUS
+    layer: dependency
+    type: remittances
+    value: 0.24
+    unit: share_of_gdp
+    summary: Migrant remittances were about a quarter of GDP in 2024 (24 to 25 per cent in press citing the World Bank). Russia supplied 94 per cent of inflows in January-May 2025 (National Bank data). Official registered Kyrgyz workers in Russia fell from about 650,000 to about 350,000.
+    since: 2024
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://malaymail.com/news/life/2025/06/26/migrant-funded-dreams-how-kyrgyzstan-is-growing-on-foreign-wages/181784", title: "Migrant-funded dreams: how Kyrgyzstan is growing on foreign wages", publisher: "Malay Mail", date: 2025-06-26, tier: 3}
+      - {url: "https://timesca.com/russias-crackdown-forces-central-asia-to-rethink-labor-migration/", title: "Russia's crackdown forces Central Asia to rethink labor migration", publisher: "Times of Central Asia", date: 2025, tier: 3}
+
+  # ---------- action ----------
+  - to: TJK
+    layer: action
+    type: incident
+    summary: Border clashes of 2021 and 2022 left hundreds dead and thousands displaced; the crisis is the reason for the 2025 border treaty.
+    since: 2022-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://ucdp.uu.se/conflict/13324", title: "Kyrgyzstan - Tajikistan (UCDP conflict record)", publisher: "Uppsala Conflict Data Program", date: 2022-09, tier: 2}
+
+  - to: TJK
+    layer: action
+    type: agreement
+    summary: Bilateral border delimitation treaty signed by Japarov and Rahmon, settling the whole 984 km border. The French foreign ministry dates the signing 14 March; press and Interfax date it 13 March. Kyrgyz parliament ratified it on 25 March 2025.
+    since: 2025-03-13
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.diplomatie.gouv.fr/en/country-files/kyrgyzstan/events/article/kyrgyzstan-tajikistan-signing-of-a-border-delimitation-treaty-14-mar-2025", title: "Kyrgyzstan/Tajikistan - Signing of a border delimitation treaty (14 March 2025)", publisher: "French Ministry for Europe and Foreign Affairs", date: 2025-03-14, tier: 1}
+      - {url: "https://www.interfax.com/newsroom/top-stories/110332/", title: "Kyrgyzstan and Tajikistan sign border treaty", publisher: "Interfax", date: 2025-03-13, tier: 3}
+      - {url: "https://economist.kg/vlast/2025/03/25/kyrghyzstan-ratifitsiroval-doghovor-s-tadzhikistanom-o-ghosudarstviennoi-ghranitsie/", title: "Kyrgyzstan ratified the treaty with Tajikistan on the state border", publisher: "Economist.kg", date: 2025-03-25, tier: 3}
+
+  - to: CHN
+    layer: action
+    type: agreement
+    summary: Ceremonial start of the China-Kyrgyzstan-Uzbekistan railway at Tosh-Kutchu (Jalal-Abad), with Japarov present. China builds its section, Uzbekistan upgrades its own, and a Kyrgyz-Chinese-Uzbek joint venture finances and builds the Kyrgyz section, scheduled from July 2025 for six years. Cost estimates range from $4.7bn to $8bn.
+    since: 2024-12-27
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://english.www.gov.cn/news/202412/27/content_WS676eabb1c6d0868f4e8ee51f.html", title: "China-Kyrgyzstan-Uzbekistan railway ceremonial start", publisher: "Chinese government (official statement)", date: 2024-12-27, tier: 1}
+      - {url: "https://chinadailyhk.com/hk/article/601137", title: "China-Kyrgyzstan-Uzbekistan railway construction begins", publisher: "China Daily HK", date: 2024-12-27, tier: 3}
+
+  - to: USA
+    layer: action
+    type: visit
+    summary: Japarov attended the C5+1 summit with Trump at the White House (6 Nov 2025), where critical minerals were the stated theme of the summit; Bishkek's own agenda was investment, hydropower and digital finance.
+    since: 2025-11-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://economist.kg/vlast/2025/11/07/sadyr-zhaparov-vstrietilsia-s-donaldom-trampom-i-sienatorami-ssha-chto-obsudili/", title: "Sadyr Japarov met Donald Trump and US senators - what was discussed", publisher: "Economist.kg", date: 2025-11-07, tier: 3}
+      - {url: "https://timesca.com/rare-earth-diplomacy-critical-minerals-set-to-top-agenda-at-c51-summit/", title: "Rare earth diplomacy: critical minerals set to top agenda at C5+1 summit", publisher: "Times of Central Asia", date: 2025-11, tier: 3}
+
+  - to: org-eu
+    layer: action
+    type: sanction
+    summary: "20th package adopted on 23 Apr 2026, after the veto of Hungary fell with Orban's defeat: 46 more shadow-fleet tankers (632 in total), the first use of the anti-circumvention tool (against Kyrgyzstan), a legal basis for a future maritime-services ban on Russian oil, and a ban on services to Russian LNG tankers from 25 Apr. Mirrored from the EU row toward Russia in data/relations/org-eu.yaml."
+    since: 2026-04-23
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://malta.representation.ec.europa.eu/news/eu-adopts-20th-package-sanctions-against-russia-2026-04-23_en", title: "EU adopts 20th package of sanctions against Russia", publisher: "European Commission Representation in Malta", date: 2026-04-23, tier: 1}
+      - {url: "https://kyivindependent.com/eus-powerful-signal-to-russia-stalls/", title: "EU fails to send Russia 'powerful signal' as Hungary blocks 20th sanctions package", publisher: "Kyiv Independent", date: 2026-02-23, tier: 3}
