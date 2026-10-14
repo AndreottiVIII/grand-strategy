@@ -1,5 +1,6 @@
 id: TKM
 name: Turkmenistan
+short: Turkmenistan
 type: state
 iso2: tm
 wikipedia: https://en.wikipedia.org/wiki/Turkmenistan
@@ -8,7 +9,68 @@ coords:
 - 37.95
 seat: Ashgabat
 regions:
-- world
-card: stub
+- south-central-asia
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the permanent neutrality recognised by the United Nations in 1995 as the whole strategy: no bloc, no troops, no basing, so that every great power can deal with Ashgabat and none can make it take sides."
+      confidence: A
+      sources:
+        - {url: "https://digitallibrary.un.org/record/284240", title: "Permanent neutrality of Turkmenistan: resolution adopted by the General Assembly (A/RES/50/80 A)", publisher: "United Nations Digital Library", date: 1995-12-12, tier: 1}
+        - {url: "http://oilgas.gov.tm/index.php/en/posts/news/15565/serdar-berdimuhamedov-attended-the-central-asia-us-summit", title: "Serdar Berdimuhamedov attended the Central Asia + US summit", publisher: "Turkmen state media (official statement)", date: 2025-11, tier: 1}
+    - rank: 2
+      text: "Sell gas through several pipes at once so that no single buyer can cut the flow: China takes most of it, Iran and Turkey take a swap, Afghanistan is to take TAPI, and the EU is the hoped-for Trans-Caspian outlet."
+      confidence: B
+      sources:
+        - {url: "https://osw.waw.pl/en/publikacja/31766/pdf", title: "Centre for Eastern Studies analysis on Turkmen gas exports to China (more than 76% of gas exports)", publisher: "OSW (Centre for Eastern Studies)", date: 2023, tier: 2}
+        - {url: "https://www.spglobal.com/commodity-insights/en/news-research/latest-news/natural-gas/030325-turkey-begins-receiving-gas-from-turkmenistan-under-iran-swap-deal-minister", title: "Turkey begins receiving gas from Turkmenistan under Iran swap deal", publisher: "S&P Global Commodity Insights", date: 2025-03-03, tier: 3}
+        - {url: "https://timesca.com/tapi-pipeline-herat-turkmenistan-afghanistan/", title: "TAPI pipeline in Herat: Turkmenistan-Afghanistan", publisher: "Times of Central Asia", date: 2026, tier: 3}
+    - rank: 3
+      text: "Hand power from father to son without visible rupture: Serdar Berdimuhamedov has been president since 19 March 2022 while Gurbanguly Berdimuhamedov holds the title of National Leader and chairs the People's Council."
+      confidence: A
+      sources:
+        - {url: "https://www.oilgas.gov.tm/en/posts/news/6639/gurbanguly-berdimuhamedov-is-recognized-as-the-national-leader-of-the-turkmen-people", title: "Gurbanguly Berdimuhamedov is recognized as the national leader of the Turkmen people", publisher: "Turkmen state media (official statement)", date: 2023-01, tier: 1}
+        - {url: "https://en.wikipedia.org/wiki/Gurbanguly_Berdimuhamedow", title: "Gurbanguly Berdimuhamedow (pointer only: the dynastic reading is Wikipedia's, not yet corroborated)", publisher: "Wikipedia", date: 2026, tier: 4}
+
+  means:
+    - domain: diplomatic
+      text: "Multi-vector diplomacy as the neutrality in practice: the US-Central Asia (C5+1) summit in Washington in November 2025, observer status in the Organization of Turkic States since 2021, a sitting member of the UN, IMF, World Bank, ECO and OSCE, and an INOGATE partnership with the EU."
+      confidence: B
+      sources:
+        - {url: "http://oilgas.gov.tm/index.php/en/posts/news/15565/serdar-berdimuhamedov-attended-the-central-asia-us-summit", title: "Serdar Berdimuhamedov attended the Central Asia + US summit", publisher: "Turkmen state media (official statement)", date: 2025-11, tier: 1}
+        - {url: "https://www.mfa.gov.tr/turk-konseyi-en.en.mfa", title: "Organization of Turkic States: international organisation profile (observers)", publisher: "Turkish Ministry of Foreign Affairs", date: 2025, tier: 1}
+        - {url: "http://www.inogate.org/", title: "INOGATE energy cooperation programme", publisher: "INOGATE", date: 2015-02-21, tier: 1}
+    - domain: economic
+      text: "Gas as the only instrument of foreign policy: exports to China through the Central Asia-China pipeline are the main source of foreign exchange, and every other route (the Iran swap to Turkey, the TAPI line to Afghanistan, the Trans-Caspian pipeline) is a bid for a second buyer."
+      confidence: B
+      sources:
+        - {url: "https://osw.waw.pl/en/publikacja/31766/pdf", title: "Centre for Eastern Studies analysis on Turkmen gas exports to China", publisher: "OSW (Centre for Eastern Studies)", date: 2023, tier: 2}
+        - {url: "https://pgjonline.com/news/2026/april/turkmenistan-targets-76-bcm-gas-output-in-2026-as-exports-to-china-continue", title: "Turkmenistan targets 76 bcm gas output in 2026 as exports to China continue", publisher: "PGJ Online", date: 2026-04, tier: 3}
+
+  constraints:
+    - text: "Landlocked and boxed in: the Caspian legal status is unsettled, and Russia and Iran oppose the Trans-Caspian line on environmental and legal grounds, so the only route to Europe is blocked by two of its neighbours."
+      confidence: C
+      sources:
+        - {url: "https://www.iene.eu/energy-news/turkmen-gas-is-back-on-turkeys-agenda--p8481.html", title: "Turkmen gas is back on Turkey's agenda", publisher: "IENE", date: 2026-05, tier: 3}
+    - text: "One dominant buyer: China takes more than three-quarters of Turkmen gas exports, so the pipeline to China carries almost all the revenue; the Iran swap to Turkey was expected to reach only 1.3 bcm in 2025."
+      confidence: B
+      sources:
+        - {url: "https://osw.waw.pl/en/publikacja/31766/pdf", title: "Centre for Eastern Studies analysis on Turkmen gas exports to China", publisher: "OSW (Centre for Eastern Studies)", date: 2023, tier: 2}
+        - {url: "https://www.intellinews.com/turkey-confirms-it-expects-1-3-bcm-of-turkmen-gas-flows-by-end-2025-368749", title: "Turkey confirms it expects 1.3 bcm of Turkmen gas flows by end-2025", publisher: "bne IntelliNews", date: 2025, tier: 3}
+    - text: "Transit dependence: every second route passes through a state that Ashgabat cannot control (Iran for the swap to Turkey, Afghanistan for TAPI, whose Herat segment was 101 km laid by July 2026, self-reported)."
+      confidence: C
+      sources:
+        - {url: "https://pajhwok.com/2026/06/09/80km-tapi-pipe-laid-in-herat-momp/", title: "80km TAPI pipe laid in Herat - MoMP", publisher: "Pajhwok Afghan News (citing the Taliban Ministry of Mines and Petroleum)", date: 2026-06-09, tier: 4}
+
+  paradoxes:
+    - text: "The neutrality that keeps Ashgabat out of blocs also leaves it without a guarantor. The Trans-Caspian route to Europe needs the Caspian consensus that Russia and Iran withhold, and the Iran swap needs Iran's goodwill, so the policy that protects the regime also makes its export routes hostage to the very neighbours it refuses to join."
+      confidence: C
+      sources:
+        - {url: "https://www.iene.eu/energy-news/turkmen-gas-is-back-on-turkeys-agenda--p8481.html", title: "Turkmen gas is back on Turkey's agenda", publisher: "IENE", date: 2026-05, tier: 3}
+
+  reading: |
+    Turkmenistan runs the strategy of a state that has bought its safety with one rule, neutrality, and spends it on gas: every great power gets a stake in the pipeline, none gets a base. Two decades of this have made China the decisive partner and left the other routes as options rather than income. The dynastic handover of 2022 has not changed the rule, so the card reads the leadership as a continuity of the same strategy.

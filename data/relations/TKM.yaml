@@ -1,0 +1,120 @@
+from: TKM
+relations:
+  # ---------- objective ----------
+  - to: org-eu
+    layer: objective
+    type: influence_goal
+    summary: "A second outlet for gas: the EU wants the Trans-Caspian pipeline to carry Turkmen gas to Europe; the Commission reportedly got a mandate to negotiate a binding treaty among the EU, Azerbaijan and Turkmenistan (date of the mandate unclear, early 2026). Russia and Iran oppose the line; no treaty is signed as of May 2026."
+    since: 2026-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.iene.eu/energy-news/turkmen-gas-is-back-on-turkeys-agenda--p8481.html", title: "Turkmen gas is back on Turkey's agenda", publisher: "IENE", date: 2026-05, tier: 3}
+  - to: USA
+    layer: objective
+    type: influence_goal
+    summary: "Multi-vector diplomacy as the neutral state's way to widen its buyers and partners: Serdar Berdimuhamedov took Turkmenistan to the Central Asia plus US summit in Washington, where it signed statements of intent on economic cooperation and cultural heritage."
+    since: 2025-11-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "http://oilgas.gov.tm/index.php/en/posts/news/15565/serdar-berdimuhamedov-attended-the-central-asia-us-summit", title: "Serdar Berdimuhamedov attended the Central Asia + US summit", publisher: "Turkmen state media (official statement)", date: 2025-11, tier: 1}
+
+  # ---------- alignment ----------
+  - to: org-un
+    layer: alignment
+    type: recognition
+    summary: "Permanent neutrality recognised by the General Assembly: resolution 50/80 A, adopted without vote on 12 December 1995, recognises and calls on members to respect and support the status and Turkmenistan's territorial integrity; resolution 69/285 (2015) recalls it. The row records recognition of the status, not membership of a bloc."
+    since: 1995-12-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://digitallibrary.un.org/record/284240", title: "Permanent neutrality of Turkmenistan: resolution adopted by the General Assembly (A/RES/50/80 A)", publisher: "United Nations Digital Library", date: 1995-12-12, tier: 1}
+
+  # ---------- dependency ----------
+  - to: CHN
+    layer: dependency
+    type: energy_export
+    value: 0.75
+    unit: share_of_gas_exports
+    summary: "More than three-quarters of Turkmen gas exports go to China through the Central Asia-China pipeline (share as of the 2023 OSW analysis); China is also Turkmenistan's largest single source of foreign exchange (Wikipedia index, citing the same pipeline). Concentration is the constraint of the whole strategy."
+    since: 2023
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://osw.waw.pl/en/publikacja/31766/pdf", title: "Centre for Eastern Studies analysis on Turkmen gas exports to China", publisher: "OSW (Centre for Eastern Studies)", date: 2023, tier: 2}
+  - to: UZB
+    layer: dependency
+    type: energy_export
+    value: 2
+    unit: bcm_per_year
+    summary: "Turkmenistan supplies up to 2 bcm a year of gas to Uzbekistan under an agreement announced in August 2023; Price and actual volumes were not public."
+    since: 2023-08-25
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://beta.kun.uz/en/news/2023/08/25/turkmenistan-to-supply-up-to-2-billion-cubic-meters-of-gas-to-uzbekistan-per-year", title: "Turkmenistan to supply up to 2 billion cubic meters of gas to Uzbekistan per year", publisher: "Kun.uz", date: 2023-08-25, tier: 3}
+  - to: TUR
+    layer: dependency
+    type: energy_export
+    value: 1.3
+    unit: bcm_2025_expected_via_iran_swap
+    summary: "Gas reaches Turkey through a swap via Iran: Turkmen gas enters Iran and an equal volume of Iranian gas reaches Turkey. BOTAS expected 1.3 bcm by end-2025, the first flows began 1 March 2025; the swap is a barter, not a pipeline to Turkey."
+    since: 2025-03-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.spglobal.com/commodity-insights/en/news-research/latest-news/natural-gas/030325-turkey-begins-receiving-gas-from-turkmenistan-under-iran-swap-deal-minister", title: "Turkey begins receiving gas from Turkmenistan under Iran swap deal", publisher: "S&P Global Commodity Insights", date: 2025-03-03, tier: 3}
+      - {url: "https://www.intellinews.com/turkey-confirms-it-expects-1-3-bcm-of-turkmen-gas-flows-by-end-2025-368749", title: "Turkey confirms it expects 1.3 bcm of Turkmen gas flows by end-2025", publisher: "bne IntelliNews", date: 2025, tier: 3}
+  - to: AFG
+    layer: dependency
+    type: energy_export
+    value: 101
+    unit: km_tapi_pipeline_laid_in_herat_by_6_jul_2026
+    summary: "Mirror of the AFG row: the Afghan leg of TAPI, a gas pipeline to Pakistan and India, was under construction from September 2024; the Taliban Ministry of Mines and Petroleum reported 101 km of pipe laid in Herat by 6 July 2026 (self-reported). Turkmen officials expect the 130-km Herat segment by end-2026."
+    since: 2024-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://pajhwok.com/2026/06/09/80km-tapi-pipe-laid-in-herat-momp/", title: "80km TAPI pipe laid in Herat - MoMP", publisher: "Pajhwok Afghan News (citing the Taliban Ministry of Mines and Petroleum)", date: 2026-06-09, tier: 4}
+      - {url: "https://timesca.com/tapi-pipeline-herat-turkmenistan-afghanistan/", title: "TAPI pipeline in Herat: Turkmenistan-Afghanistan", publisher: "Times of Central Asia", date: 2026, tier: 3}
+
+  # ---------- action ----------
+  - to: TUR
+    layer: action
+    type: agreement
+    summary: "BOTAS and Turkmengaz signed the gas supply agreement on 10 February 2025; supplies by swap through Iran were set to start 1 March 2025, under a barter arrangement with an import licence to 2033."
+    since: 2025-02-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://daryo.uz/en/2025/02/12/turkiye-and-turkmenistan-seal-natural-gas-deal-to-boost-energy-cooperation-1209968/", title: "Türkiye and Turkmenistan seal natural gas deal to boost energy cooperation", publisher: "Daryo", date: 2025-02-12, tier: 3}
+      - {url: "https://www.spglobal.com/commodity-insights/en/news-research/latest-news/natural-gas/030325-turkey-begins-receiving-gas-from-turkmenistan-under-iran-swap-deal-minister", title: "Turkey begins receiving gas from Turkmenistan under Iran swap deal", publisher: "S&P Global Commodity Insights", date: 2025-03-03, tier: 3}
+  - to: USA
+    layer: action
+    type: visit
+    summary: "President Serdar Berdimuhamedov attended the Central Asia plus US summit in Washington, chaired by President Trump, on 6 November 2025 (dates vary by source), and met the US President separately."
+    since: 2025-11-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "http://oilgas.gov.tm/index.php/en/posts/news/15565/serdar-berdimuhamedov-attended-the-central-asia-us-summit", title: "Serdar Berdimuhamedov attended the Central Asia + US summit", publisher: "Turkmen state media (official statement)", date: 2025-11, tier: 1}
+  - to: KAZ
+    layer: action
+    type: agreement
+    summary: "Kazakhstan and Turkmenistan issued a joint statement affirming their strategic partnership and cooperation during the meeting of foreign ministers Nurtleu and Meredov in Ashgabat on 30 October 2023."
+    since: 2023-10-30
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://astanatimes.com/2023/10/kazakhstan-turkmenistan-affirm-commitment-to-strengthen-strategic-partnership/", title: "Kazakhstan, Turkmenistan Affirm Commitment to Strengthen Strategic Partnership", publisher: "Astana Times", date: 2023-10-31, tier: 3}
