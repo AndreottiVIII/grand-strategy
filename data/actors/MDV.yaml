@@ -8,7 +8,85 @@ coords:
 - 4.17
 seat: Malé
 regions:
-- world
-card: stub
+- south-central-asia
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep external debt serviced and refinanced without default. The USD 500m sukuk matured in April 2026 and was settled (about USD 525m with coupons, per one research brief), but the state still owes China and India and has little fiscal room."
+      confidence: B
+      sources:
+        - {url: "https://idsa.in/wp-content/uploads/2026/04/Issue-Brief-Dr-Gulbin-Sultana-22-April-2026.pdf", title: "Issue Brief (Dr Gulbin Sultana), Maldives sukuk repayment", publisher: "Manohar Parrikar IDSA", date: "2026-04-22", tier: 2}
+        - {url: "https://www.orfonline.org/research/cultivating-dependency-the-changing-nature-of-china-s-engagement-in-the-maldives", title: "Cultivating dependency: the changing nature of China's engagement in the Maldives", publisher: "Observer Research Foundation", date: "2025", tier: 2}
+    - rank: 2
+      text: "Keep tourism growing, the engine that pays the state: the ADB puts tourism at over 95% of services exports and close to 45% of government tax receipts (2024)."
+      confidence: B
+      sources:
+        - {url: "https://www.adb.org/sites/default/files/linked-documents/cps-mld-2027-2031-isga.pdf", title: "Maldives country partnership strategy 2027-2031", publisher: "Asian Development Bank", date: "2026", tier: 1}
+    - rank: 3
+      text: "Win adaptation finance for a low-lying state: easier climate money for small islands, a multi-dimensional vulnerability index, and the Loss and Damage Fund made operational, as Muizzu argued at the UN in September 2024."
+      confidence: B
+      sources:
+        - {url: "https://maldivesvoice.mv/1376", title: "President Dr Muizzu calls for urgent action on sea level rise at UN High-level meeting", publisher: "Maldives Voice (President's Office statement)", date: "2024-09", tier: 1}
+        - {url: "https://www.thedailystar.net/environment/climate-change/news/low-lying-maldives-seeks-easier-funding-battle-waves-3618401", title: "Low-lying Maldives seeks easier funding to battle waves", publisher: "The Daily Star", date: "2024-05", tier: 3}
+
+  means:
+    - domain: economic
+      text: "India: a USD 400m and INR 30bn currency swap (October 2024), a INR 4,850 crore credit line (about USD 565m) announced in Malé in July 2025, and swap drawdowns renewed in April 2026. India is the lender of last resort."
+      confidence: B
+      sources:
+        - {url: "https://atolltimes.mv/post/business/15693", title: "India extends INR 30 billion currency swap drawdown to the Maldives", publisher: "Atoll Times", date: "2026-04", tier: 3}
+        - {url: "https://www.aljazeera.com/news/2025/7/25/indias-modi-pledges-565m-to-maldives-to-boost-infrastructure", title: "India's Modi pledges $565m to Maldives to boost infrastructure", publisher: "Al Jazeera", date: "2025-07-25", tier: 3}
+        - {url: "https://m.thewire.in/article/diplomacy/india-steps-in-with-760-million-currency-swap-to-ease-maldives-economic-woes-as-relations-thaw/amp", title: "India steps in with $760 million currency swap to ease Maldives' economic woes as relations thaw", publisher: "The Wire", date: "2024-10", tier: 3}
+    - domain: economic
+      text: "China: a free trade agreement in force from 1 January 2025 (trade remains lopsided, Maldivian exports negligible), debt relief agreed in January 2024 and a bilateral arrangement finalised in October 2025 whose terms are not public."
+      confidence: B
+      sources:
+        - {url: "https://www.orfonline.org/research/cultivating-dependency-the-changing-nature-of-china-s-engagement-in-the-maldives", title: "Cultivating dependency: the changing nature of China's engagement in the Maldives", publisher: "Observer Research Foundation", date: "2025", tier: 2}
+    - domain: military
+      text: "Military: Turkish Bayraktar TB2 drones for maritime surveillance (three presented March 2024, the number disputed), and Indian defence platforms that replaced the Indian military personnel the government had asked to leave in 2024."
+      confidence: C
+      sources:
+        - {url: "https://www.defensenews.com/global/asia-pacific/2024/03/21/maldives-starts-flying-turkish-drones-for-maritime-surveillance/", title: "Maldives starts flying Turkish drones for maritime surveillance", publisher: "Defense News", date: "2024-03-21", tier: 3}
+        - {url: "https://www.deccanherald.com/amp/story/india%2Fmuizzu-agreed-to-let-india-deploy-defence-platforms-in-maldives-months-after-making-india-withdraw-troops-3223309", title: "Muizzu agreed to let India deploy defence platforms in Maldives months after making India withdraw troops", publisher: "Deccan Herald", date: "2024-10", tier: 3}
+    - domain: diplomatic
+      text: "Domestic power for the foreign line: the PNC alliance won a supermajority (70-71 of 93 seats, provisional counts) in the April 2024 parliamentary election, enough to amend the constitution without the opposition."
+      confidence: B
+      sources:
+        - {url: "https://edition.mv/news/32995", title: "Parliament Elections 2024: PNC wins supermajority with 70 seats", publisher: "Edition.mv", date: "2024-04-22", tier: 3}
+    - domain: diplomatic
+      text: "Solidarity with Palestine as a political instrument: entry ban on Israeli passport holders, announced June 2024 and enacted in 2025 in conditional form (dual nationals may enter on non-Israeli documents), justified by Israel's conduct in Gaza."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2024/6/2/maldives-bans-israeli-passport-holders-from-entering-the-country", title: "Maldives bans Israeli passport holders over war on Gaza", publisher: "Al Jazeera", date: "2024-06-02", tier: 3}
+        - {url: "https://www.jurist.org/news/2024/06/maldives-government-to-impose-entry-ban-on-israel-passports", title: "Maldives government to impose entry ban on Israel passports", publisher: "JURIST", date: "2024-06", tier: 3}
+        - {url: "https://fullfact.org/conflict/maldives-cut-ties-with-israel-missing-context/", title: "Maldives cut ties with Israel in 1974, not recently (fact check)", publisher: "Full Fact", date: "2026-03", tier: 3}
+
+  constraints:
+    - text: "Debt is the binding constraint. The sukuk was settled in April 2026 but the government has no fiscal room for a new shock and depends on Indian and Chinese lines to refinance."
+      confidence: B
+      sources:
+        - {url: "https://idsa.in/wp-content/uploads/2026/04/Issue-Brief-Dr-Gulbin-Sultana-22-April-2026.pdf", title: "Issue Brief (Dr Gulbin Sultana), Maldives sukuk repayment", publisher: "Manohar Parrikar IDSA", date: "2026-04-22", tier: 2}
+        - {url: "https://www.orfonline.org/research/cultivating-dependency-the-changing-nature-of-china-s-engagement-in-the-maldives", title: "Cultivating dependency: the changing nature of China's engagement in the Maldives", publisher: "Observer Research Foundation", date: "2025", tier: 2}
+    - text: "Tourism monoculture: tourism is over 95% of services exports and close to 45% of tax receipts, so closing the tourism door (for any reason) costs the state directly."
+      confidence: B
+      sources:
+        - {url: "https://www.adb.org/sites/default/files/linked-documents/cps-mld-2027-2031-isga.pdf", title: "Maldives country partnership strategy 2027-2031", publisher: "Asian Development Bank", date: "2026", tier: 1}
+    - text: "Physical exposure: islands about one metre above sea level. The President calls sea-level rise an existential threat and cannot adapt without outside finance."
+      confidence: B
+      sources:
+        - {url: "https://maldivesvoice.mv/1376", title: "President Dr Muizzu calls for urgent action on sea level rise at UN High-level meeting", publisher: "Maldives Voice (President's Office statement)", date: "2024-09", tier: 1}
+        - {url: "https://www.thedailystar.net/environment/climate-change/news/low-lying-maldives-seeks-easier-funding-battle-waves-3618401", title: "Low-lying Maldives seeks easier funding to battle waves", publisher: "The Daily Star", date: "2024-05", tier: 3}
+
+  paradoxes:
+    - text: "The India Out campaign of 2023-24 brought the Indian troops home, and within months India accepted civilian replacements and a currency swap. The campaign brought India back as lender of last resort, the very dependence it was meant to end."
+      sources:
+        - {url: "https://www.deccanherald.com/amp/story/india%2Fmuizzu-agreed-to-let-india-deploy-defence-platforms-in-maldives-months-after-making-india-withdraw-troops-3223309", title: "Muizzu agreed to let India deploy defence platforms in Maldives months after making India withdraw troops", publisher: "Deccan Herald", date: "2024-10", tier: 3}
+        - {url: "https://m.thewire.in/article/diplomacy/india-steps-in-with-760-million-currency-swap-to-ease-maldives-economic-woes-as-relations-thaw/amp", title: "India steps in with $760 million currency swap to ease Maldives' economic woes as relations thaw", publisher: "The Wire", date: "2024-10", tier: 3}
+      confidence: B
+
+  reading: |
+    Male buys time with money, not force. The India Out campaign of 2023-24 ended in a debt-driven repair with New Delhi, which now lends the currency reserves and the credit lines, while China stays the largest bilateral creditor and the source of defence assistance and a trade deal in force since 2025. Tourism is the economy that pays for both, which makes the state hostage to the arrivals it must keep open, and the sea that threatens it is the argument for every climate loan it asks for. Its line is to be useful to every big lender at once; its paradox is that the campaign against Indian presence brought India's money back in.

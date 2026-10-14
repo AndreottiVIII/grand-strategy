@@ -1,0 +1,139 @@
+from: MDV
+relations:
+  # ---------- objective ----------
+  - to: org-un
+    layer: objective
+    type: influence_goal
+    summary: "Push for adaptation finance for small islands at the UN: easier climate money, a multi-dimensional vulnerability index, and an operational Loss and Damage Fund (Muizzu, UN General Assembly, September 2024)."
+    since: 2024-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://maldivesvoice.mv/1376", title: "President Dr Muizzu calls for urgent action on sea level rise at UN High-level meeting", publisher: "Maldives Voice (President's Office statement)", date: 2024-09, tier: 1}
+      - {url: "https://www.thedailystar.net/environment/climate-change/news/low-lying-maldives-seeks-easier-funding-battle-waves-3618401", title: "Low-lying Maldives seeks easier funding to battle waves", publisher: "The Daily Star", date: 2024-05, tier: 3}
+
+  - to: CHN
+    layer: objective
+    type: influence_goal
+    summary: "Counterweight to Indian dependence: Muizzu seeks Chinese finance, trade access and defence assistance, with debt relief agreed in principle in January 2024 and finalised in October 2025."
+    since: 2024-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.orfonline.org/research/cultivating-dependency-the-changing-nature-of-china-s-engagement-in-the-maldives", title: "Cultivating dependency: the changing nature of China's engagement in the Maldives", publisher: "Observer Research Foundation", date: 2025, tier: 2}
+
+  # ---------- alignment ----------
+  - to: CHN
+    layer: alignment
+    type: treaty
+    summary: "Defence cooperation agreed in early 2024 after the state visit: free military assistance and training reported, possibly non-lethal equipment. The text was not published; the terms are from secondary reporting."
+    since: 2024-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.orfonline.org/research/cultivating-dependency-the-changing-nature-of-china-s-engagement-in-the-maldives", title: "Cultivating dependency: the changing nature of China's engagement in the Maldives", publisher: "Observer Research Foundation", date: 2025, tier: 2}
+      - {url: "https://en.wikipedia.org/wiki/China%E2%80%93Maldives_relations", title: "China-Maldives relations (index only; citations not checked)", publisher: "Wikipedia", date: 2026-10-12, tier: 4}
+
+  # ---------- dependency ----------
+  - to: CHN
+    layer: dependency
+    type: debt
+    summary: "China is the largest bilateral creditor. Loans and state guarantees under the 2013-2018 government were estimated at USD 1.4-3.1bn (ORF; the low end is used as the value). Relief agreed in January 2024, bilateral arrangement finalised in October 2025, terms not public."
+    value: 1.4
+    unit: usd_billion_loans_and_guarantees_2013_2018_low_estimate
+    since: 2013-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.orfonline.org/research/cultivating-dependency-the-changing-nature-of-china-s-engagement-in-the-maldives", title: "Cultivating dependency: the changing nature of China's engagement in the Maldives", publisher: "Observer Research Foundation", date: 2025, tier: 2}
+
+  - to: IND
+    layer: dependency
+    type: debt
+    summary: "India's currency swaps: USD 400m and INR 30bn (October 2024, USD 760m in total). The INR 30bn drawdown was renewed in April 2026 after the previous one expired on 23 April 2026. The Maldives repaid the USD 400m facility before drawing again. Mirror of India's row."
+    value: 30
+    unit: inr_billion_swap_drawdown_apr_2026
+    since: 2024-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://atolltimes.mv/post/business/15693", title: "India extends INR 30 billion currency swap drawdown to the Maldives", publisher: "Atoll Times", date: 2026-04, tier: 3}
+      - {url: "https://m.thewire.in/article/diplomacy/india-steps-in-with-760-million-currency-swap-to-ease-maldives-economic-woes-as-relations-thaw/amp", title: "India steps in with $760 million currency swap to ease Maldives' economic woes as relations thaw", publisher: "The Wire", date: 2024-10, tier: 3}
+
+  - to: IND
+    layer: dependency
+    type: debt
+    summary: "Indian credit line of INR 4,850 crore (about USD 565m) announced in Malé during Modi's visit for the 60th Independence Day, to fund infrastructure, security forces, health, housing and education. Free trade talks launched on the same visit."
+    value: 565
+    unit: usd_million_credit_line_jul_2025
+    since: 2025-07-25
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/7/25/indias-modi-pledges-565m-to-maldives-to-boost-infrastructure", title: "India's Modi pledges $565m to Maldives to boost infrastructure", publisher: "Al Jazeera", date: 2025-07-25, tier: 3}
+
+  - to: TUR
+    layer: dependency
+    type: arms_supply
+    summary: "Bayraktar TB2 drones for maritime surveillance of the EEZ, presented at Maafaru on 15 March 2024 (three airframes; press estimates up to six and about USD 37m, unconfirmed). Turkish training of Maldivian operators followed; a Doğan-class ship entered service in August 2025, reported."
+    value: 3
+    unit: tb2_drones_presented_2024_count_disputed
+    since: 2024-03-15
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.defensenews.com/global/asia-pacific/2024/03/21/maldives-starts-flying-turkish-drones-for-maritime-surveillance/", title: "Maldives starts flying Turkish drones for maritime surveillance", publisher: "Defense News", date: 2024-03-21, tier: 3}
+
+  # ---------- action ----------
+  - to: IND
+    layer: action
+    type: visit
+    summary: "Modi's visit to Malé, 25-26 July 2025, for the Maldives' 60th Independence Day: a USD 565m credit line, free trade talks launched and a bilateral investment agreement to be finalised."
+    since: 2025-07-25
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/7/25/indias-modi-pledges-565m-to-maldives-to-boost-infrastructure", title: "India's Modi pledges $565m to Maldives to boost infrastructure", publisher: "Al Jazeera", date: 2025-07-25, tier: 3}
+
+  - to: CHN
+    layer: action
+    type: agreement
+    summary: "China-Maldives free trade agreement (signed 2014, revived in 2024) enters into force on 1 January 2025. Trade remains lopsided: Maldivian exports to China are negligible against imports."
+    since: 2025-01-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.orfonline.org/research/cultivating-dependency-the-changing-nature-of-china-s-engagement-in-the-maldives", title: "Cultivating dependency: the changing nature of China's engagement in the Maldives", publisher: "Observer Research Foundation", date: 2025, tier: 2}
+
+  - to: ISR
+    layer: action
+    type: sanction
+    summary: "Entry ban on Israeli passport holders: announced by Muizzu on 2 June 2024 and tied to Gaza; enacted by parliament in April 2025 in conditional form (dual nationals may enter on non-Israeli documents). Israel's foreign ministry advised its citizens to avoid travel. Diplomatic relations have been suspended since 1974."
+    since: 2024-06-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2024/6/2/maldives-bans-israeli-passport-holders-from-entering-the-country", title: "Maldives bans Israeli passport holders over war on Gaza", publisher: "Al Jazeera", date: 2024-06-02, tier: 3}
+      - {url: "https://www.jurist.org/news/2024/06/maldives-government-to-impose-entry-ban-on-israel-passports", title: "Maldives government to impose entry ban on Israel passports", publisher: "JURIST", date: 2024-06, tier: 3}
+      - {url: "https://fullfact.org/conflict/maldives-cut-ties-with-israel-missing-context/", title: "Maldives cut ties with Israel in 1974, not recently (fact check)", publisher: "Full Fact", date: 2026-03, tier: 3}
+
+  - to: LKA
+    layer: action
+    type: visit
+    summary: "Sri Lankan President Dissanayake's state visit to Malé (28-30 July 2025), his first to the Maldives as president, marking 60 years of relations (since 26 July 1965). Mirror of Sri Lanka's row."
+    since: 2025-07-28
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://mfa.gov.lk/en/2025/07/25", title: "President Anura Kumara Dissanayake to undertake a state visit to Maldives", publisher: "Ministry of Foreign Affairs of Sri Lanka", date: 2025-07-25, tier: 1}
