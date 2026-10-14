@@ -1,0 +1,172 @@
+from: TJK
+relations:
+  # ---------- objective ----------
+  - to: AFG
+    layer: objective
+    type: regime_goal
+    summary: "Keep Afghan soil from serving the armed opposition on Tajikistan's frontier: the NRF (mostly ethnic Tajik, leadership reported in Tajikistan) and Jamaat Ansarullah operate in the north-east, and Dushanbe wants the Taliban to stop the harbouring and cross-border raids."
+    since: 2021-08-15
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.fdd.org/analysis/2026/07/31/anti-taliban-resistance-groups-increase-attacks-in-northeast-afghanistan-district-center-briefly-falls/", title: "Anti-Taliban resistance groups increase attacks in northeast Afghanistan, district centre briefly falls", publisher: "FDD Long War Journal", date: 2026-07-31, tier: 2}
+      - {url: "https://www.euaa.europa.eu/country-guidance-afghanistan/22-resistance-groups-opposing-taliban", title: "Country guidance Afghanistan - resistance groups opposing the Taliban", publisher: "European Union Agency for Asylum", date: 2026-06, tier: 1}
+      - {url: "https://www.rferl.org/amp/tajikistan-afghanistan-border-attack-chinese-nationals-death-gold-mining-taliban/33607228.html", title: "Three Chinese nationals killed in Afghan-Tajik border attack on gold mining camp", publisher: "RFE/RL", date: 2025-11, tier: 3}
+
+  - to: UZB
+    layer: objective
+    type: influence_goal
+    summary: "Use Rogun, the national hydropower project, to make the downstream states buyers of Tajik power and so to bind them: Uzbekistan signed a 20-year power framework; the planned dam height is 335 m (construction progress per Webuild reporting, not in a source held)."
+    since: 2018-03-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.kun.uz/en/news/2025/07/17/rogun-hydropower-plant-to-supply-electricity-to-uzbekistan-during-peak-demand", title: "Rogun hydropower plant to supply electricity to Uzbekistan during peak demand", publisher: "Kun.uz", date: 2025-07-17, tier: 3}
+      - {url: "https://timesca.com/tajikistan-and-uzbekistan-sign-allied-relations-treaty/", title: "Tajikistan and Uzbekistan sign allied relations treaty", publisher: "Times of Central Asia", date: 2024-04, tier: 3}
+
+  # ---------- alignment ----------
+  - to: UZB
+    layer: alignment
+    type: treaty
+    summary: "Treaty on Allied Relations (not a defence pact), signed in Dushanbe on 18 Apr 2024; a treaty is one row for both sides, and the Uzbek file carries the reciprocal when its card is written."
+    since: 2024-04-18
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://timesca.com/tajikistan-and-uzbekistan-sign-allied-relations-treaty/", title: "Tajikistan and Uzbekistan sign allied relations treaty", publisher: "Times of Central Asia", date: 2024-04, tier: 3}
+      - {url: "https://www.kas.de/en/web/auslandsinformationen/artikel/detail/-/content/zentralasien-zwischen-russland-china-und-dem-westen", title: "Central Asia between Russia, China and the West", publisher: "Konrad-Adenauer-Stiftung", date: 2025, tier: 2}
+
+  - to: KGZ
+    layer: alignment
+    type: treaty
+    summary: "Treaty on the Kyrgyz-Tajik State Border, signed in Bishkek on 13 Mar 2025 by Japarov and Rahmon; Kyrgyzstan ratified it in June-July 2025 and demarcation began in July 2025."
+    since: 2025-03-13
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.interfax.com/newsroom/top-stories/110332/", title: "Kyrgyzstan and Tajikistan sign border treaty", publisher: "Interfax", date: 2025-03-13, tier: 3}
+      - {url: "https://www.diplomatie.gouv.fr/en/country-files/kyrgyzstan/events/article/kyrgyzstan-tajikistan-signing-of-a-border-delimitation-treaty-14-mar-2025", title: "Kyrgyzstan/Tajikistan - Signing of a border delimitation treaty (14 March 2025)", publisher: "French Ministry for Europe and Foreign Affairs", date: 2025-03-14, tier: 1}
+      - {url: "https://ad.kun.uz/en/news/2025/07/19/kyrgyzstan-ratifies-treaty-on-tripoint-border-with-tajikistan-and-uzbekistan", title: "Kyrgyzstan ratifies treaty on tripoint border with Tajikistan and Uzbekistan", publisher: "Kun.uz", date: 2025-07-19, tier: 3}
+
+  - to: RUS
+    layer: alignment
+    type: treaty
+    summary: "Agreement on the 201st base, under which Russia keeps its base in Tajikistan until at least 2042, with possible five-year extensions; Russia provides military and technical assistance rather than rent (per the 2012 agreement and its 2013 ratification). The CSTO membership itself is a dataset row, not written here."
+    since: 2012-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://jamestown.org/?p=20852", title: "Russian military base in Tajikistan (Jamestown Foundation)", publisher: "Jamestown Foundation", date: 2012-10, tier: 2}
+      - {url: "https://www.globalsecurity.org/military/library/news/2012/09/mil-120922-rianovosti03.htm", title: "Russia, Tajikistan close to signing new military base deal", publisher: "RIA Novosti (via GlobalSecurity)", date: 2012-09-22, tier: 3}
+
+  # ---------- dependency ----------
+  - to: RUS
+    layer: dependency
+    type: remittances
+    value: 0.48
+    unit: share_of_gdp
+    summary: "Migrant remittances, about 48% of GDP in 2024 (World Bank series via Our World in Data; 45-49% across sources and years), overwhelmingly from Russia."
+    since: 2024
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Figures differ by source (Statista 45.4%, Our World in Data 48%, World Bank 47.9%); the World Bank value is taken. The share from Russia is not quantified in a source held; the flows are described as mostly from Russia in the same reporting."
+    sources:
+      - {url: "https://ourworldindata.org/data-insights/tajikistans-remittances-are-worth-nearly-half-the-countrys-gdp", title: "Tajikistan's remittances are worth nearly half the country's GDP", publisher: "Our World in Data (World Bank WDI)", date: 2026-05-19, tier: 3}
+
+  - to: RUS
+    layer: dependency
+    type: military_presence
+    value: 7000
+    unit: personnel
+    summary: "Russian 201st base, about 7,000 personnel (other reports 6,000-7,500) at three sites: Dushanbe, Qurghonteppa and Kulob. The largest Russian army base abroad, under a CSTO-linked lease."
+    since: 2004
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "Figures come from sources dated 2012-16 (Jamestown, RIA Novosti); no current troop count was found. Confidence C for the number, B for the base's existence and status."
+    sources:
+      - {url: "https://jamestown.org/?p=20852", title: "Russian military base in Tajikistan (Jamestown Foundation)", publisher: "Jamestown Foundation", date: 2012-10, tier: 2}
+      - {url: "https://www.globalsecurity.org/military/library/news/2012/09/mil-120922-rianovosti03.htm", title: "Russia, Tajikistan close to signing new military base deal", publisher: "RIA Novosti (via GlobalSecurity)", date: 2012-09-22, tier: 3}
+
+  - to: CHN
+    layer: dependency
+    type: debt
+    value: 700
+    unit: usd_million
+    summary: "Chinese loans outstanding of over USD 700m, the largest creditor's share of about USD 3.04bn in external debt at 1 Oct 2026 (Times of Central Asia; about 48% of external debt in April 2016)."
+    since: 2008
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "The drop from about half of external debt in 2016-17 to about a quarter in 2026 is not explained in the source; the share is our arithmetic on the source's two figures, not stated by it. Treat as provisional."
+    sources:
+      - {url: "https://timesca.com/tag/external-debt/", title: "Times of Central Asia: external debt coverage (Tajikistan, to 1 Oct 2026)", publisher: "The Times of Central Asia", date: 2026-10, tier: 3}
+
+  - to: UZB
+    layer: dependency
+    type: energy_export
+    value: 0.034
+    unit: usd_per_kwh
+    summary: "Rogun power for Uzbekistan under a 20-year intergovernmental agreement at USD 0.034/kWh, indexed 1% a year; seasonal supply (April-September) while the plant is unfinished, year-round later."
+    since: 2025-07-17
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "The price and term come from Fergana Agency (https://en.fergana.agency/news/139004/) and Eurasianet (https://eurasianet.org/uzbekistan-commits-to-buying-power-from-tajikistans-roghun-plant), whose dates were not verified; the Kun.uz row is the dated source. The volumes are still to be set in a separate power purchase agreement."
+    sources:
+      - {url: "https://www.kun.uz/en/news/2025/07/17/rogun-hydropower-plant-to-supply-electricity-to-uzbekistan-during-peak-demand", title: "Rogun hydropower plant to supply electricity to Uzbekistan during peak demand", publisher: "Kun.uz", date: 2025-07-17, tier: 3}
+
+  # ---------- action ----------
+  - to: RUS
+    layer: action
+    type: expulsion
+    summary: "After the Crocus City Hall attack (March 2024, claimed by ISIS-K, suspects Tajik citizens), Russian police ran raids and mass deportations of Central Asian migrants, mostly Tajik; Dushanbe protested the treatment of its citizens and told them to avoid travel to Russia unless necessary (April 2024)."
+    since: 2024-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.rferl.org/a/central-asians-wave-crackdown-russia/33508446.html", title: "Central Asians face a wave of crackdown in Russia after the Crocus attack", publisher: "RFE/RL", date: 2024, tier: 3}
+      - {url: "https://zona.media/news/2024/03/29/tjkstn", title: "Tajikistan detains nine people over suspected links to the Crocus attack (Reuters, in Russian)", title_original: "В Таджикистане задержали девять человек из-за подозрений в связи с участниками теракта в «Крокусе»", publisher: "Zona Media (Reuters)", date: 2024-03-29, tier: 3, lang: ru}
+
+  - to: AFG
+    layer: action
+    type: incident
+    summary: "Attacks from Afghan territory on the Tajik frontier killed three Chinese workers at a gold-mining camp (26 Nov 2025) and two Chinese road workers in Darvaz (30 Nov); Dushanbe blamed criminal groups in Afghanistan, and Kabul promised cooperation, in the highest-level contact since 2021. Mirror of the AFG row toward TJK."
+    since: 2025-11-26
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.rferl.org/amp/tajikistan-afghanistan-border-attack-chinese-nationals-death-gold-mining-taliban/33607228.html", title: "Three Chinese nationals killed in Afghan-Tajik border attack on gold mining camp", publisher: "RFE/RL", date: 2025-11, tier: 3}
+      - {url: "https://www.intellinews.com/pannier-who-s-killing-chinese-workers-on-the-afghan-tajik-frontier-414917/", title: "Pannier: Who's killing Chinese workers on the Afghan-Tajik frontier?", publisher: "bne IntelliNews", date: 2025-12, tier: 3}
+
+  - to: IRN
+    layer: action
+    type: agreement
+    summary: "Iran opened a drone production line in Dushanbe on 17 May 2022 (Ababil-2, the first Iranian drone factory abroad), built under a contract between the Tajik and Iranian defence ministries; the Tajik side wanted drones after Russia's invasion of Ukraine."
+    since: 2022-05-17
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Sources all date from May-June 2022; the plant's output and status since then are not in any source held."
+    sources:
+      - {url: "https://mei.edu/publication/irans-drone-factory-tajikistan", title: "Iran's drone factory in Tajikistan", publisher: "Middle East Institute", date: 2022-05, tier: 2}
+      - {url: "https://www.iranintl.com/en/202205175418", title: "Iran Opens Factory In Tajikistan To Build Drones", publisher: "Iran International", date: 2022-05-17, tier: 3}
+
+  - to: USA
+    layer: action
+    type: visit
+    summary: "Emomali Rahmon attended the Central Asia-United States (C5+1) leaders' summit at the White House on 6 Nov 2025, chaired by Trump, alongside the leaders of Kazakhstan, Kyrgyzstan, Turkmenistan and Uzbekistan."
+    since: 2025-11-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://president.uz/en/lists/view/8635", title: "President of Uzbekistan's statement on the C5+1 summit at the White House", publisher: "President of Uzbekistan (official statement)", date: 2025-11-06, tier: 1}

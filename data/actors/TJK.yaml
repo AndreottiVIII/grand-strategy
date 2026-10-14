@@ -8,7 +8,69 @@ coords:
 - 38.57
 seat: Dushanbe
 regions:
-- world
-card: stub
+- south-central-asia
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the Rahmon line and hand it to the family. Rustam Emomali, Dushanbe mayor since 2017 and Senate chairman since April 2020, is the constitutional successor if his father cannot serve; a 2025 personnel reshuffle is read as a glide path toward him. Rahmon, 73, has no successor outside the family."
+      confidence: B
+      sources:
+        - {url: "https://eurasianet.org/tajikistan-personnel-reshuffle-creates-glide-path-for-dynastic-transition-of-power", title: "Tajikistan personnel reshuffle creates glide path for dynastic transition of power", publisher: "Eurasianet", date: 2025, tier: 3}
+        - {url: "https://eurasianet.org/tajikistan-succession-process-near-close-as-presidents-son-named-senate-chair", title: "Tajikistan succession process near close as president's son named Senate chair", publisher: "Eurasianet", date: 2020-04, tier: 3}
+    - rank: 2
+      text: "Keep Afghan soil from serving the armed opposition. The NRF (mostly ethnic Tajik, leadership reported in Tajikistan) and Jamaat Ansarullah fight in the north-east of Afghanistan, and Dushanbe wants Kabul to stop the harbouring and cross-border raids that reach its own frontier."
+      confidence: B
+      sources:
+        - {url: "https://www.fdd.org/analysis/2026/07/31/anti-taliban-resistance-groups-increase-attacks-in-northeast-afghanistan-district-center-briefly-falls/", title: "Anti-Taliban resistance groups increase attacks in northeast Afghanistan, district centre briefly falls", publisher: "FDD Long War Journal", date: 2026-07-31, tier: 2}
+        - {url: "https://obor.chuhai.edu.hk/?p=5366", title: "The UN Thirty-eighth Report of the Analytical Support and Sanctions Monitoring Team (S/2026/651) on regional security", publisher: "Chuhai College OBOR Centre (summary of S/2026/651)", date: 2026, tier: 3}
+    - rank: 3
+      text: "Turn water and power into the national project and into leverage over the downstream states. Rogun, to be the world's tallest dam at 335 m, is the flagship; Uzbekistan has signed a 20-year power purchase framework for it."
+      confidence: B
+      sources:
+        - {url: "https://www.kun.uz/en/news/2025/07/17/rogun-hydropower-plant-to-supply-electricity-to-uzbekistan-during-peak-demand", title: "Rogun hydropower plant to supply electricity to Uzbekistan during peak demand", publisher: "Kun.uz", date: 2025-07-17, tier: 3}
+  means:
+    - domain: military
+      text: "Russia's 201st base, about 7,000 Russian troops in Dushanbe, Qurghonteppa and Kulob under a lease to at least 2042, plus a reported Chinese security installation at Shaimak in Gorno-Badakhshan that both governments deny. The base is the only large foreign garrison in the country; the Chinese post is reported, not confirmed."
+      confidence: C
+      sources:
+        - {url: "https://www.globalsecurity.org/military/library/news/2012/09/mil-120922-rianovosti03.htm", title: "Russia, Tajikistan close to signing new military base deal", publisher: "RIA Novosti (via GlobalSecurity)", date: 2012-09-22, tier: 3}
+        - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2019-02-27/chinas-military-presence-tajikistan", title: "China's military presence in Tajikistan", publisher: "OSW (Centre for Eastern Studies)", date: 2019-02-27, tier: 2}
+    - domain: economic
+      text: "Labour exports and hydropower. Remittances, about 48% of GDP in 2024 and mostly earned in Russia, keep the budget and households afloat; Rogun is the state's bid to sell power downstream, with Uzbekistan contracting 20 years at USD 0.034/kWh (the price per Fergana and Eurasianet reporting, not verified against the contract)."
+      confidence: B
+      sources:
+        - {url: "https://ourworldindata.org/data-insights/tajikistans-remittances-are-worth-nearly-half-the-countrys-gdp", title: "Tajikistan's remittances are worth nearly half the country's GDP", publisher: "Our World in Data (World Bank WDI)", date: 2026-05-19, tier: 3}
+        - {url: "https://www.kun.uz/en/news/2025/07/17/rogun-hydropower-plant-to-supply-electricity-to-uzbekistan-during-peak-demand", title: "Rogun hydropower plant to supply electricity to Uzbekistan during peak demand", publisher: "Kun.uz", date: 2025-07-17, tier: 3}
+    - domain: diplomatic
+      text: "Border settlement as a tool: a Treaty on Allied Relations with Uzbekistan (18 Apr 2024), and the Kyrgyz border treaty of 13 Mar 2025, which closes the most dangerous frontier in the region after the 2021-22 clashes."
+      confidence: B
+      sources:
+        - {url: "https://timesca.com/tajikistan-and-uzbekistan-sign-allied-relations-treaty/", title: "Tajikistan and Uzbekistan sign allied relations treaty", publisher: "Times of Central Asia", date: 2024-04, tier: 3}
+        - {url: "https://www.interfax.com/newsroom/top-stories/110332/", title: "Kyrgyzstan and Tajikistan sign border treaty", publisher: "Interfax", date: 2025-03-13, tier: 3}
+  constraints:
+    - text: "A labour market it does not control. Remittances are about 48% of GDP, most from Russia; after the Crocus attack of March 2024, Russian police raided Central Asian workers and deported Tajik citizens, which hits the money that keeps the state solvent."
+      confidence: B
+      sources:
+        - {url: "https://ourworldindata.org/data-insights/tajikistans-remittances-are-worth-nearly-half-the-countrys-gdp", title: "Tajikistan's remittances are worth nearly half the country's GDP", publisher: "Our World in Data (World Bank WDI)", date: 2026-05-19, tier: 3}
+        - {url: "https://www.rferl.org/a/central-asians-wave-crackdown-russia/33508446.html", title: "Central Asians face a wave of crackdown in Russia after the Crocus attack", publisher: "RFE/RL", date: 2024, tier: 3}
+    - text: "A frontier it cannot hold alone. The Afghan border saw the first direct firefight with the Taliban since 2021 (24 Aug 2025, Panj River), further clashes in October and December 2025, and an attack that killed Chinese workers on 26 Nov 2025. Dushanbe depends on Russian and Chinese help to police it."
+      confidence: B
+      sources:
+        - {url: "https://www.specialeurasia.com/2025/09/03/tajikistan-taliban-border-clash/", title: "The Tajikistan-Afghanistan border clash alarmed regional security", publisher: "Special Eurasia", date: 2025-09-03, tier: 3}
+        - {url: "https://www.rferl.org/amp/tajikistan-afghanistan-border-attack-chinese-nationals-death-gold-mining-taliban/33607228.html", title: "Three Chinese nationals killed in Afghan-Tajik border attack on gold mining camp", publisher: "RFE/RL", date: 2025-11, tier: 3}
+    - text: "Debt to its first creditor. China holds the largest share of external debt, over USD 700m of about USD 3.04bn at 1 Oct 2026 (Times of Central Asia; share in 2016 was about half). The Chinese loans are the reason Beijing has leverage in Dushanbe."
+      confidence: C
+      sources:
+        - {url: "https://timesca.com/tag/external-debt/", title: "Times of Central Asia: external debt coverage (Tajikistan, to 1 Oct 2026)", publisher: "The Times of Central Asia", date: 2026-10, tier: 3}
+  paradoxes:
+    - text: "Russia guards the regime and the border and also takes the wages that feed it. Its 201st base and CSTO membership keep Rahmon in power, while Russia's post-Crocus crackdown on migrants (raids, expulsions) cuts the remittances that carry the budget; the protector is also the squeeze."
+      confidence: B
+      sources:
+        - {url: "https://ourworldindata.org/data-insights/tajikistans-remittances-are-worth-nearly-half-the-countrys-gdp", title: "Tajikistan's remittances are worth nearly half the country's GDP", publisher: "Our World in Data (World Bank WDI)", date: 2026-05-19, tier: 3}
+        - {url: "https://zona.media/news/2024/03/29/tjkstn", title: "Tajikistan detains nine people over suspected links to the Crocus attack (Reuters, in Russian)", title_original: "В Таджикистане задержали девять человек из-за подозрений в связи с участниками теракта в «Крокусе»", publisher: "Zona Media (Reuters)", date: 2024-03-29, tier: 3, lang: ru}
+  reading: |
+    Tajikistan is a small, poor, landlocked state run as a family business and kept alive by the labour of its men in Russia. Its survival rests on three outside pillars: the Russian garrison and the CSTO, a Chinese creditor and security presence in the Pamirs, and the water and power it hopes to sell downstream. The Taliban are its only open enemy in the region, and the threat Dushanbe fears most - ISIS-K and Tajik jihadists - is also the one that Russia's crackdown on migrants made worse.
