@@ -1,0 +1,945 @@
+from: RUS
+relations:
+  # ---------- objective ----------
+  - to: UKR
+    layer: objective
+    type: regime_goal
+    summary: "Moscow's war aim is a Ukraine that is not a state in the Western sense: neutrality written into law, no NATO membership and no NATO-country troops, a capped army, official status for Russian and the Moscow Patriarchate, and a government Kyiv's voters have not chosen (ISW's reading of the Kremlin position, Feb 2026). The terms of 14 Jun 2024 have not moved; Ushakov called trilateral talks 'pointless' until Ukraine leaves the rest of Donetsk (2026)."
+    since: 2022-02-24
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://tass.com/politics/1803657", title: "Russia makes another real peace proposal to Kiev - Putin (address to the Foreign Ministry)", publisher: "TASS (state agency, official statement)", date: 2024-06-14, tier: 1}
+      - {url: "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-february-19-2026", title: "Russian Offensive Campaign Assessment, February 19, 2026", publisher: "Institute for the Study of War / Critical Threats", date: 2026-02-19, tier: 2}
+      - {url: "https://www.ukrinform.net/rubric-polytics/4120909-kremlin-suspends-trilateral-peace-talks-until-afu-withdraws-from-donbas.html", title: "Kremlin suspends trilateral peace talks until AFU withdraws from Donbas", publisher: "Ukrinform", date: 2026, tier: 3}
+  - to: sub-occupied-ukraine
+    layer: objective
+    type: territorial_claim
+    summary: "Donetsk, Luhansk, Zaporizhzhia and Kherson were proclaimed Russian on 30 Sep 2022 and are claimed in full; at the start of 2026 Russia held 99.6%, 78%, 75% and 72% of them. The unoccupied rest of Donetsk is the price of any settlement: the Kremlin demands a Ukrainian withdrawal first, and the 28-point draft of Nov 2025 wrote it in as a demilitarised zone recognised as de facto Russian."
+    since: 2022-09-30
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://www.reuters.com/world/europe/kremlin-sticks-demand-that-ukraine-cede-all-donbas-talks-tass-reports-2026-01-26/", title: "Kremlin sticks to demand that Ukraine cede all of Donbas in talks, TASS reports", publisher: "Reuters", date: 2026-01-26, tier: 3}
+      - {url: "https://www.cbsnews.com/news/trump-administration-proposed-28-point-russia-ukraine-peace-plan/", title: "Here's what's in the Trump administration's proposed 28-point Russia-Ukraine peace plan", publisher: "CBS News", date: 2025-11-21, tier: 3}
+      - {url: "https://euromaidanpress.com/?p=384242", title: "Russia occupied 0.72% of Ukraine's territory in 2025, DeepState reports", publisher: "Euromaidan Press", date: 2026-01-02, tier: 3}
+  - to: sub-crimea
+    layer: objective
+    type: territorial_claim
+    summary: "Crimea, annexed on 18 Mar 2014 and written into the constitution, is held in full; Moscow demands its recognition as Russian as a condition of peace. The General Assembly rejected the annexation by 143-5-35 (12 Oct 2022) and reaffirmed Ukraine's territorial integrity on 24 Feb 2026 (107-12-51)."
+    since: 2014-03-18
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://digitallibrary.un.org/record/3990400", title: "A/RES/ES-11/4 Territorial integrity of Ukraine: defending the principles of the Charter - voting record", publisher: "United Nations", date: 2022-10-12, tier: 1}
+      - {url: "https://digitallibrary.un.org/record/4103179", title: "A/RES/ES-11/10 Support for lasting peace in Ukraine - voting record", publisher: "United Nations", date: 2026-02-24, tier: 1}
+      - {url: "https://www.reuters.com/world/americas/how-much-territory-does-russia-control-ukraine-2025-08-14/", title: "How much territory does Russia control in Ukraine?", publisher: "Reuters", date: 2025-08-15, tier: 3}
+  - to: org-nato
+    layer: objective
+    type: influence_goal
+    summary: "Roll the Alliance back: the draft treaties of 17 Dec 2021 asked NATO to renounce enlargement and withdraw forces to the 1997 line; the 2026 version is no NATO membership for Ukraine and no troops from NATO countries on Ukrainian soil after a ceasefire (Putin, 27 Nov 2025), which rules out the Coalition of the Willing's reassurance force."
+    since: 2021-12-17
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://www.reuters.com/world/russia-unveils-security-guarantees-says-western-response-not-encouraging-2021-12-17/", title: "Russia demands NATO roll back from East Europe and stay out of Ukraine", publisher: "Reuters", date: 2021-12-17, tier: 3}
+      - {url: "https://www.theguardian.com/world/2025/nov/27/putin-insists-ukraine-surrender-territory-for-peace-deal-possible", title: "Putin insists Ukraine has to surrender territory for any deal to be possible (and a ban on Western troops)", publisher: "The Guardian", date: 2025-11-27, tier: 3}
+  - to: USA
+    layer: objective
+    type: influence_goal
+    summary: "Settle the war with Washington over Europe's head and get the sanctions lifted in the bargain: Riyadh (18 Feb 2025) opened a bilateral channel that excluded Kyiv and Brussels, the 28-point plan of Nov 2025 was drawn from a Russian paper handed to Witkoff by Dmitriev, and Re:Russia reads every round since as an attempt to exploit the rift between Europe and the United States."
+    since: 2025-02-18
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://apnews.com/article/russia-ukraine-war-riyadh-talks-trump-putin-rubio-0c3beebfef5839e9d509ff58239a6bc5", title: "Russia and the US agree to work towards improving ties and ending the Ukraine war in landmark talks", publisher: "Associated Press", date: 2025-02-18, tier: 3}
+      - {url: "https://www.reuters.com/world/europe/us-peace-plan-ukraine-drew-russian-document-sources-say-2025-11-26/", title: "Exclusive: US peace plan for Ukraine drew from Russian document, sources say", publisher: "Reuters", date: 2025-11-26, tier: 3}
+      - {url: "https://re-russia.org/en/analytics/0444/", title: "Putin and Trump back on the path to peace: will the Kremlin succeed once again in exploiting the rift between Europe and the United States?", publisher: "Re:Russia", date: 2026-07-07, tier: 2}
+  - to: org-eu
+    layer: objective
+    type: influence_goal
+    summary: "Keep the Union out of the settlement and get the sanctions and the reserves back: Lavrov ruled out any EU seat at Riyadh (Feb 2025), the Bank of Russia sues Euroclear for the EUR 185bn immobilised in Brussels, and Moscow answered Costa's channel of June 2026 without changing a term. The Union has no envoy Moscow must deal with."
+    since: 2022-03-05
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://apnews.com/article/russia-ukraine-war-us-saudi-talks-0c7f21c2125c97fd0a1f6459eebeb65b", title: "Top Russian and American officials will hold talks on ending the Ukraine war without Kyiv (Lavrov rules out EU participation)", publisher: "Associated Press", date: 2025-02-17, tier: 3}
+      - {url: "https://brusselstimes.com/news/1878250/russian-central-bank-files-lawsuit-against-euroclear/", title: "Russian central bank files lawsuit against Euroclear", publisher: "The Brussels Times", date: 2025-12, tier: 3}
+      - {url: "https://www.pravda.com.ua/eng/news/2026/06/19/8040066/", title: "EU Council president explains to EU leaders why he reopened contact with Moscow", publisher: "European Pravda", date: 2026-06-19, tier: 3}
+  - to: MDA
+    layer: objective
+    type: influence_goal
+    summary: "A compliant government in Chisinau and a Transnistria that stays Moscow's veto on the EU path: the Shor network's EUR 15m for 130,000 voters (Oct 2024), the 'hundreds of millions' of 2025 (International IDEA: Russia 'intervened heavily but unsuccessfully'), the 1,500 troops at Cobasna never withdrawn, and an embassy line that Moldova 'seeks pretexts' while Moscow stays 'open to dialogue'."
+    since: 2022-02-24
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.idea.int/democracytracker/report/republic-moldova/september-2025", title: "Democracy Tracker: Republic of Moldova, September 2025", publisher: "International IDEA", date: 2025-09, tier: 2}
+      - {url: "https://carnegieendowment.org/russia-eurasia/politika/2026/03/moldova-transnistria-new-plan", title: "Moldova's new plan for Transnistria", publisher: "Carnegie Russia Eurasia (Politika)", date: 2026-03-31, tier: 2}
+      - {url: "https://tass.com/politics/2171505/amp", title: "Moldovan authorities seek pretext to scale back ties with Russia - embassy", publisher: "TASS (state agency, official statement)", date: 2026-08-11, tier: 1}
+  - to: GEO
+    layer: objective
+    type: recognition_sought
+    summary: "Moscow's stated condition for political dialogue with Tbilisi is recognition of Abkhazia and South Ossetia (3 Dec 2025), whose garrisons hold about 20% of Georgia; it rewards the Georgian Dream government meanwhile with visas, flights, gas and oil, the drift Jamestown calls 'back into Russia's orbit'."
+    since: 2008-08-26
+    until: null
+    last_verified: 2026-10-14
+    confidence: C
+    sources:
+      - {url: "https://caliber.az/en/post/georgian-pm-rules-out-restoring-diplomatic-relations-with-russia", title: "Georgia draws red lines on Russia despite ongoing economic links (Moscow's 3 Dec 2025 line)", publisher: "Caliber.Az", date: 2026, tier: 4}
+      - {url: "https://jamestown.org/georgia-drifting-back-into-russias-orbit/", title: "Georgia Drifting Back Into Russia's Orbit", publisher: "Jamestown Foundation, Eurasia Daily Monitor", date: 2026-01-12, tier: 2}
+      - {url: "https://rusi.org/explore-our-research/publications/commentary/russias-silent-occupation-and-georgias-territorial-integrity", title: "Russia's 'Silent' Occupation and Georgia's Territorial Integrity", publisher: "RUSI", date: 2019-04-18, tier: 2}
+  - to: ARM
+    layer: objective
+    type: influence_goal
+    summary: "Keep Armenia out of the European Union and inside the EAEU: Moscow notified on 27 May 2026 that it may denounce the 2013 gas, oil-products and diamonds agreement if Armenia joins the EU, banned Armenian produce before the June 2026 election, and Medvedev warned of a 'second Ukraine' (5 Oct 2026); Carnegie reads Putin as treating Pashinyan 'as a partner, albeit a problematic one, not as an ally'."
+    since: 2024-02
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.interfax.com/newsroom/top-stories/117709/", title: "Russian Foreign Ministry on gas agreement denunciation (22 May 2026 digest)", publisher: "Interfax", date: 2026-05, tier: 3}
+      - {url: "https://carnegieendowment.org/russia-eurasia/politika/2026/06/russia-armenia-post-election", title: "Russia-Armenia after the election", publisher: "Carnegie Politika", date: 2026-06-11, tier: 2}
+      - {url: "https://jam-news.net/news-in-azerbaijan-armenia-georgia-5-9-october-2026/", title: "News in Azerbaijan, Armenia, Georgia, 5-9 October 2026 (Medvedev's 'second Ukraine')", publisher: "JAMnews", date: 2026-10-09, tier: 3}
+  - to: SYR
+    layer: objective
+    type: influence_goal
+    summary: "Keep Hmeimim and Tartus after Assad: Russia gambled on the new authorities from March 2025, received al-Sharaa twice (Oct 2025, 28 Jan 2026) and accepted a memorandum (9 Aug 2026) that turns the bases into joint training centres with civilian facilities handed to Syria - presence at the price of command."
+    since: 2024-12-08
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.reuters.com/world/russia-gambles-keep-military-bases-post-assad-syria-2025-03-02/", title: "Russia gambles to keep military bases in post-Assad Syria", publisher: "Reuters", date: 2025-03-02, tier: 3}
+      - {url: "https://wtop.com/world/2026/08/syria-agrees-deal-with-russia-over-future-use-of-2-key-mediterranean-bases/", title: "Syria agrees deal with Russia over future use of 2 key Mediterranean bases", publisher: "Associated Press (via WTOP)", date: 2026-08-09, tier: 3}
+  # ---------- alignment ----------
+  - to: BLR
+    layer: alignment
+    type: treaty
+    summary: "Treaty on security guarantees within the Union State, signed 6 Dec 2024 and ratified Feb-Mar 2025: ten years, mutual defence, Russian nuclear weapons usable against an aggressor, provision for Russian bases and troops, mutual support if either constitutional order is threatened. The tactical-weapons storage document of May 2023 and the Oreshnik on combat duty (Dec 2025) sit under it."
+    since: 2024-12-06
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://kyivindependent.com/belarus-weekly-belarus-russia-ratify-security-pact-expanding-nuclear-umbrella-military-integration/", title: "Belarus Weekly: Belarus, Russia ratify security pact, expanding nuclear umbrella, military integration", publisher: "Kyiv Independent", date: 2025-03, tier: 3}
+      - {url: "https://aa.com.tr/en/world/putin-signs-law-ratifying-security-guarantees-treaty-with-belarus/3496485", title: "Putin signs law ratifying security guarantees treaty with Belarus", publisher: "Anadolu Agency", date: 2025-02-28, tier: 3}
+      - {url: "https://www.politico.eu/article/russia-nuclear-capable-oreshnik-hypersonic-missile-combat-duty-belarus/", title: "Russia puts nuclear-capable Oreshnik missile on 'combat duty' in Belarus", publisher: "Politico Europe", date: 2025-12-31, tier: 3}
+  - to: BLR
+    layer: alignment
+    type: security_guarantee
+    summary: "The Russian nuclear umbrella over Belarus under the Dec 2024 treaty, with the Regional Group of Forces (Oct 2022) as the operational frame; the Nov 2024 doctrine names an attack on Belarus among the cases for a nuclear response. Custody of the weapons stays Russian."
+    since: 2024-12-06
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://kyivindependent.com/belarus-weekly-belarus-russia-ratify-security-pact-expanding-nuclear-umbrella-military-integration/", title: "Belarus Weekly: Belarus, Russia ratify security pact, expanding nuclear umbrella, military integration", publisher: "Kyiv Independent", date: 2025-03, tier: 3}
+      - {url: "https://www.newsonair.gov.in/russian-president-vladimir-putin-signs-decree-approving-russias-updated-nuclear-doctrine", title: "Russian President Vladimir Putin signs decree approving Russia's updated nuclear doctrine", publisher: "All India Radio", date: 2024-11-20, tier: 3}
+      - {url: "https://pism.pl/publications/belarus-announces-the-formation-of-a-regional-forces-group-with-russia", title: "Belarus announces the formation of a Regional Forces Group with Russia", publisher: "PISM", date: 2022-10, tier: 2}
+  - to: PRK
+    layer: alignment
+    type: treaty
+    summary: "Comprehensive Strategic Partnership Treaty signed by Putin and Kim in Pyongyang on 19 Jun 2024 and ratified by the Federation Council on 6 Nov 2024: each side gives military and other assistance 'without delay' if the other is attacked - the clause invoked for the Korean troops in Kursk. BACKLOG: Ukraine's card holds no row toward PRK; the alliance is written here from Moscow's side."
+    since: 2024-06-19
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://interfax.com/newsroom/top-stories/107423/", title: "Federation Council ratifies Russian-N. Korean Treaty of Strategic Partnership", publisher: "Interfax", date: 2024-11-06, tier: 3}
+      - {url: "https://apnews.com/article/vladimir-putin-kim-jong-un-russia-north-korea-summit-ukraine-a6b8d2c12de7ee2ab6716d4747c9850e", title: "Russia and North Korea sign partnership deal that appears to be the strongest since the Cold War", publisher: "Associated Press", date: 2024-06-19, tier: 3}
+      - {url: "https://www.politico.eu/article/kremlin-claims-complete-liberation-kursk-admits-north-korea-assistance-ukraine-war/", title: "Russia claims complete 'liberation' of Kursk, admits North Korea assistance", publisher: "Politico Europe", date: 2025-04-26, tier: 3}
+  - to: IRN
+    layer: alignment
+    type: treaty
+    summary: "Comprehensive Strategic Partnership treaty signed by Putin and Pezeshkian in Moscow on 17 Jan 2025: twenty years, no mutual-defence clause, only a pledge not to help an aggressor against the other; Moscow said in April 2025 it would send no military aid if the United States attacked, and sent intelligence instead in March 2026."
+    since: 2025-01-17
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://www.rferl.org/amp/iran-russia-putin-pezeshkian-treaty-ukraine-shahed-drones/33278795.html", title: "Amid biting sanctions, Russia and Iran sign pact to deepen ties", publisher: "RFE/RL", date: 2025-01-17, tier: 3}
+      - {url: "https://www.middleeasteye.net/news/iran-russia-inside-strategic-partnership-treaty", title: "Inside the strategic partnership treaty between Iran and Russia", publisher: "Middle East Eye", date: 2025-01-14, tier: 3}
+  - to: sub-south-ossetia
+    layer: alignment
+    type: treaty
+    summary: "Treaty on Alliance and Integration (18 Mar 2015) and the Treaty on the Deepening of Allied Interaction signed by Putin and Gagloev on 9 May 2026, ratified by federal law 136-FZ on 25 May 2026; Tbilisi calls it a further step to annexation."
+    since: 2015-03-18
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "http://publication.pravo.gov.ru/document/0001202605250004?index=2", title: "Federal Law No. 136-FZ ratifying the Treaty on the Deepening of Allied Interaction with South Ossetia", publisher: "Official Internet Portal of Legal Information (pravo.gov.ru)", date: 2026-05-25, tier: 1}
+      - {url: "https://jam-news.net/de-facto-annexation-russia-and-south-ossetia-sign-new-alliance-agreement/", title: "'De facto annexation': Russia and South Ossetia sign new alliance agreement", publisher: "JAMnews", date: 2026-05, tier: 3}
+      - {url: "https://news.yahoo.com/putin-signs-treaty-integrating-south-ossetia-russia-134209512.html", title: "Putin signs treaty integrating South Ossetia into Russia", publisher: "AP via Yahoo", date: 2015-03-18, tier: 3}
+  - to: sub-abkhazia
+    layer: alignment
+    type: recognition
+    summary: "Recognised by presidential decree No. 1260 on 26 Aug 2008 (South Ossetia by No. 1261 the same day); embassy-level relations and a joint military base followed. The recognition is the stated reason there is no Russian-Georgian political dialogue."
+    since: 2008-08-26
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://www.nytimes.com/2008/08/27/world/europe/27russia.html?hp", title: "Russia Backs Independence of Georgian Enclaves", publisher: "The New York Times", date: 2008-08-26, tier: 3}
+      - {url: "https://rusi.org/explore-our-research/publications/commentary/russias-silent-occupation-and-georgias-territorial-integrity", title: "Russia's 'Silent' Occupation and Georgia's Territorial Integrity", publisher: "RUSI", date: 2019-04-18, tier: 2}
+  - to: SRB
+    layer: alignment
+    type: treaty
+    summary: "Declaration on Strategic Partnership signed in Sochi on 24 May 2013, the only such text Russia has with a candidate for EU membership; Moscow holds Belgrade to the 2008 energy agreement that gave Gazprom NIS."
+    since: 2013-05-24
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://mfa.gov.rs/en/foreign-policy/bilateral-cooperation/russia", title: "Bilateral cooperation - Russia (Declaration on Strategic Partnership, 24 May 2013)", publisher: "Ministry of Foreign Affairs of Serbia", date: 2025, tier: 1}
+      - {url: "https://eualive.net/hard-times-for-vucic/", title: "Hard times for Vucic (Putin expects Belgrade to honour the 2008 agreement)", publisher: "EUalive / BETA", date: 2025-12-24, tier: 3}
+  - to: AFG
+    layer: alignment
+    type: recognition
+    summary: "Russia became the first state to recognise the Taliban government on 3 Jul 2025, after removing the movement from its list of banned organisations; Kabul was then given 'recognised member' status in the Moscow Format."
+    since: 2025-07-03
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://www.fox35orlando.com/news/russia-recognizes-taliban-government", title: "Russia becomes first nation to formally recognize Taliban-led government in Afghanistan", publisher: "AP, syndicated by Fox 35", date: 2025-07-03, tier: 3}
+      - {url: "https://www.washingtoninstitute.org/policy-analysis/five-years-taliban-diplomacy-recognition-without-concessions", title: "Five Years of Taliban Diplomacy: Recognition Without Concessions", publisher: "Washington Institute for Near East Policy", date: 2026-08-18, tier: 2}
+  - to: AFG
+    layer: alignment
+    type: treaty
+    summary: "Military-technical cooperation agreement signed in Moscow on 27 May 2026 by Shoigu and Defence Minister Mullah Yaqoob: a framework to repair and restore Soviet and Russian equipment, text unpublished, 'not a defence pact' by Yaqoob's account."
+    since: 2026-05-27
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.kyivpost.com/amp/post/77010", title: "Kremlin deepens Taliban partnership with new military-technical agreement", publisher: "Kyiv Post", date: 2026-05, tier: 3}
+      - {url: "https://kabulnow.com/2026/05/taliban-russia-sign-deal-expanding-military-and-technical-cooperation/", title: "Taliban, Russia sign deal expanding military and technical cooperation", publisher: "KabulNow", date: 2026-05, tier: 4}
+  - to: ARM
+    layer: alignment
+    type: security_guarantee
+    summary: "The guarantee to Armenia (CSTO Article 4, the 1997 treaty, the Gyumri base to 2044) is intact on paper and frozen in practice: Yerevan suspended its CSTO participation in Feb 2024, the bloc did not act in 2021-23, Lavrov said in June 2026 Armenia had not paid dues for two years, and Putin offered to withdraw from Gyumri 'even tomorrow' (Sept 2026)."
+    since: 1992
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://jam-news.net/armenias-participation-in-the-csto-is-frozen/", title: "'Belated response': Armenia freezes participation in Russia-led CSTO bloc", publisher: "JAMnews", date: 2024-02, tier: 3}
+      - {url: "https://meduza.io/en/news/2026/06/05/we-ll-decide-and-we-ll-leave-armenian-leader-says-of-russian-led-defense-bloc", title: "'We'll decide and we'll leave', Armenian leader says of Russian-led defense bloc", publisher: "Meduza", date: 2026-06-05, tier: 3}
+      - {url: "https://www.dailysabah.com/world/europe/armenia-would-not-oppose-closure-of-russian-base-pashinyan/amp", title: "Armenia would not oppose closure of Russian base: Pashinyan (Putin: ready to withdraw 'even tomorrow')", publisher: "Daily Sabah", date: 2026-09-17, tier: 3}
+  - to: USA
+    layer: alignment
+    type: treaty
+    summary: "New START, the last US-Russian arms-control treaty, expired on 5 Feb 2026 after Moscow's offer of one more year of observance went unanswered in Washington; Russia had already abandoned its INF moratorium on 4 Aug 2025. No limit on either arsenal remains."
+    since: 2011-02-05
+    until: 2026-02-05
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.rbc.ru/politics/05/02/2026/69831f4b9a7947014f5eef94", title: "What the expiry of the START Treaty means", title_original: "Что означает истечение срока Договора об СНВ", lang: ru, publisher: "RBC", date: 2026-02-05, tier: 3}
+      - {url: "https://nuclearnetwork.csis.org/what-trumps-submarine-threat-and-russias-inf-exit-really-mean/", title: "What Trump's Submarine Threat and Russia's INF Exit Really Mean", publisher: "CSIS Nuclear Network", date: 2025-08-13, tier: 2}
+  # ---------- dependency ----------
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    summary: "China is Russia's first trading partner by a distance: USD 234bn of bilateral trade in 2025, the first fall in five years, after 57% of Russian imports and 31% of exports went to or came from China in 2024; over a third of exports are settled in yuan and Chinese banks cut off sanctioned Russian lenders in 2024. Carnegie's word is 'yuanization': dependence without leverage."
+    since: 2022-02-24
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    value: 234
+    unit: usd_bn_bilateral_trade_2025
+    sources:
+      - {url: "https://www.reuters.com/world/china/chinas-2025-trade-with-russia-posts-first-decline-5-years-2026-01-14/", title: "China's 2025 trade with Russia posts first decline in 5 years", publisher: "Reuters", date: 2026-01-14, tier: 3}
+      - {url: "https://carnegieendowment.org/russia-eurasia/politika/2024/05/china-russia-yuan?lang=en", title: "What Are the Limits to Russia's 'Yuanization'?", publisher: "Carnegie Endowment for International Peace (Politika)", date: 2024-05-27, tier: 2}
+  - to: CHN
+    layer: dependency
+    type: energy_export
+    summary: "Gas to China runs through Power of Siberia 1 (38 bcm a year, to rise to 44 bcm); the 'legally binding memorandum' on Power of Siberia 2 and the Soyuz Vostok line through Mongolia signed by Gazprom and CNPC on 2 Sep 2025 carries no price, which Miller said would be below the European level and Beijing has not agreed. The lost European market has one replacement buyer, and it sets the terms."
+    since: 2019-12-02
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    value: 38
+    unit: bcm_per_year_power_of_siberia_1
+    sources:
+      - {url: "https://www.rferl.org/amp/putin-xi-mongolia-power-siberia-china-gas-energy/33519697.html", title: "China, Russia Sign Deal To Build New Siberian Gas Pipeline But Pricing Details Unclear", publisher: "RFE/RL", date: 2025-09-02, tier: 3}
+      - {url: "https://gasprocessingnews.com/news/2025/09/russia-signs-up-to-vast-new-china-pipeline-but-price-unclear/", title: "Russia signs up to vast new China pipeline but price unclear", publisher: "Reuters (via Gas Processing News)", date: 2025-09, tier: 3}
+  - to: IND
+    layer: dependency
+    type: energy_export
+    summary: "India is the outlet for Russian crude that Europe no longer takes: 1.74 million barrels a day in Sept 2026 (Kpler), a record 2.8 million in July 2026 when the Gulf war closed other routes, after the Rosneft-Lukoil sanctions of Oct 2025 had cut purchases and Delhi had pledged restraint in Feb 2026. Figures differ by provider (Vortexa 1.56)."
+    since: 2022-03
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    value: 1.74
+    unit: million_barrels_per_day_sept_2026_kpler
+    sources:
+      - {url: "https://knnindia.co.in/news/newsdetails/sectors/exportimports/indias-crude-imports-rise-13-in-september-as-russian-supply-remains-dominant", title: "India's crude imports rise 13% in September as Russian supply remains dominant (Kpler data)", publisher: "KNN India", date: 2026-10, tier: 3}
+      - {url: "https://www.reuters.com/business/energy/indian-refiners-review-russian-oil-contracts-after-us-sanctions-source-says-2025-10-23/", title: "India poised to sharply cut Russian oil imports after sanctions, sources say", publisher: "Reuters", date: 2025-10-23, tier: 3}
+  - to: TUR
+    layer: dependency
+    type: energy_export
+    summary: "Gazprom's contracts with Turkey for about 22 bcm a year through Blue Stream and TurkStream were extended by a year on 3 Dec 2025 despite US pressure; TurkStream is also the only pipeline left for Russian gas to Hungary, Slovakia, Serbia and Bosnia. Turkey cut Russian crude from 61% to 47.5% of its petroleum imports (Oct-Dec 2025) after Trump asked."
+    since: 2020-01-08
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    value: 22
+    unit: bcm_per_year_gazprom_contracts_extended_dec_2025
+    sources:
+      - {url: "https://www.iene.eu/energy-news/turkey-extends-russian-gas-imports-for-a-year-as-it-plans-us-investment-p8230.html", title: "Turkey extends Russian gas imports for a year as it plans US investment", publisher: "IENE (Reuters)", date: 2025-12-05, tier: 3}
+      - {url: "https://turkishminute.com/2026/02/16/turkey-cut-crude-oil-imports-from-russia-after-trumps-appeal-in-september/", title: "Turkey cut crude oil imports from Russia after Trump's appeal in September", publisher: "Turkish Minute", date: 2026-02-16, tier: 3}
+  - to: HUN
+    layer: dependency
+    type: energy_export
+    summary: "Hungary took about 93% of its crude from Russia in 2025 (61% in 2021) and roughly three quarters of its gas via TurkStream; Druzhba stopped on 27 Jan 2026 and restarted on 23 Apr below the old level, and the Magyar government promises an exit by 2035 while suing against the EU gas ban. Rosatom's Paks II and its EUR 10bn loan are under review."
+    since: 2021
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    value: 0.93
+    unit: share_of_hungarian_crude_imports_2025
+    sources:
+      - {url: "https://www.hellenicshippingnews.com/report-hungary-using-more-russian-oil-despite-eu-phase-out/", title: "Report: Hungary using more Russian oil, despite EU phase out", publisher: "Hellenic Shipping News (citing the Center for the Study of Democracy)", date: 2026, tier: 3}
+      - {url: "https://www.aljazeera.com/amp/news/2026/4/17/can-hungary-wean-itself-off-russian-energy-as-its-new-leader-has-promised", title: "Can Hungary wean itself off Russian energy, as its new leader has promised?", publisher: "Al Jazeera", date: 2026-04-17, tier: 3}
+  - to: SVK
+    layer: dependency
+    type: energy_export
+    summary: "Russian gas reaches Slovakia by TurkStream via Hungary since 1 Feb 2025 (about 1.7 bcm in Jan-Aug 2025 against demand of 4.5 bcm a year) under a Gazprom contract to 2034, and Druzhba crude for Slovnaft was interrupted from 27 Jan to 23 Apr 2026. Reuters read the 2025 increase as Fico's way to 'normalise relations with Moscow'."
+    since: 2025-02-01
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    value: 1.7
+    unit: bcm_russian_gas_via_hungary_jan_aug_2025
+    sources:
+      - {url: "https://www.pravda.com.ua/eng/news/2025/09/02/7529018/", title: "Slovakia increases Russian gas imports to normalise relations with Moscow", publisher: "Reuters via Ukrainska Pravda", date: 2025-09-02, tier: 3}
+      - {url: "https://oenergetice.cz/en/oil/slovakia-reports-oil-returning-via-druzhba-fico-speaks-of-geopolitical-game", title: "Slovakia reports oil returning via Druzhba, Fico speaks of geopolitical game", publisher: "oEnergetice", date: 2026-04, tier: 3}
+  - to: SRB
+    layer: dependency
+    type: energy_export
+    summary: "Russian gas covers about 75% of Serbian consumption at EUR 318 per 1,000 m3; Gazprom has refused a multi-year contract since May 2025 and grants quarterly extensions, the latest to 31 Dec 2026 after the Vucic-Putin call of 26 Sep 2026. Mirror of Belgrade's row; the figure is the Energy Community's (press said 90% a year earlier)."
+    since: 2022-05
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    value: 0.75
+    unit: share_of_serbian_gas_consumption
+    sources:
+      - {url: "https://www.connaissancedesenergies.org/afp/la-serbie-obtient-une-prolongation-de-trois-mois-de-son-accord-gazier-avec-la-russie-260930", title: "Serbia obtains a three-month extension of its gas agreement with Russia", publisher: "AFP", date: 2026-09-30, tier: 3}
+      - {url: "https://n1info.rs/english/news/srbijagas-ceo-bajatovic-gas-supply-deal-with-russia-extended-through-end-of-year/", title: "Srbijagas CEO Bajatovic: gas supply deal with Russia extended through end of year", publisher: "N1", date: 2026-09-30, tier: 3}
+  - to: SRB
+    layer: dependency
+    type: investment
+    summary: "Gazprom Neft and Gazprom own 56.15% of NIS, Serbia's only refiner (Pancevo, about 80% of fuel), under US sanctions since 9 Oct 2025; the sale to MOL is pending under OFAC licences to 30 Oct 2026. Moscow's largest asset in the Balkans is being sold under American pressure."
+    since: 2008-12-24
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    value: 0.5615
+    unit: share_of_nis_equity
+    sources:
+      - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2025-10-21/us-sanctions-against-serbian-oil-company-nis", title: "US sanctions against Serbian oil company NIS", publisher: "OSW", date: 2025-10-21, tier: 2}
+      - {url: "https://interfax.com/newsroom/top-stories/119354/", title: "OFAC extends NIS licences to 30 October 2026", publisher: "Interfax", date: 2026-10-01, tier: 3}
+  - to: ARM
+    layer: dependency
+    type: energy_export
+    summary: "Gazprom Armenia is the monopoly seller: 2.3 bcm in 2025 at a base price frozen to 2032 (USD 165, Putin gave 177.5 in April 2026), the lever behind the May 2026 threat to denounce the agreement if Armenia joins the EU; Metsamor runs on Rosatom fuel to 2031."
+    since: 2014
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    value: 2.3
+    unit: bcm_russian_gas_2025
+    sources:
+      - {url: "https://tass.com/economy/2137475/amp", title: "FACTBOX: What is known about Russian gas supplies to Armenia", publisher: "TASS (state agency, official statements)", date: 2026-05, tier: 1}
+      - {url: "https://icds.ee/en/armenia-after-the-election-diversification-without-decoupling-from-russia/", title: "Armenia after the election: diversification without decoupling from Russia", publisher: "ICDS", date: 2026-06-18, tier: 2}
+  - to: ARM
+    layer: dependency
+    type: military_presence
+    summary: "The 102nd base at Gyumri, about 3,000 troops under a 2010 agreement to 2044, plus border guards on the Turkish and Iranian frontiers (gone from Zvartnots since 31 Jul 2024); Putin said in Sept 2026 Russia could leave 'even tomorrow' and Pashinyan that Armenia would not object."
+    since: 1995
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    value: 3000
+    unit: russian_troops_102nd_base_gyumri
+    sources:
+      - {url: "https://www.dailysabah.com/world/europe/armenia-would-not-oppose-closure-of-russian-base-pashinyan/amp", title: "Armenia would not oppose closure of Russian base: Pashinyan", publisher: "Daily Sabah", date: 2026-09-17, tier: 3}
+      - {url: "https://eurasianet.org/russia-signs-base-lease-extension-with-armenia", title: "Russia signs base lease extension with Armenia", publisher: "Eurasianet", date: 2010, tier: 3}
+  - to: BLR
+    layer: dependency
+    type: military_presence
+    summary: "Russian troops in Belarus: up to 30,000 before Feb 2022 by NATO's count, about 2,000 in early 2025 by the Hajun monitors; the Dec 2024 treaty provides for bases and the Oreshnik battalion on combat duty since Dec 2025 answers to Russia's Strategic Missile Forces. No base agreement is public."
+    since: 2022-02
+    until: null
+    last_verified: 2026-10-14
+    confidence: C
+    value: 2000
+    unit: russian_troops_hajun_estimate_2025
+    sources:
+      - {url: "https://kyivindependent.com/belarus-weekly-belarus-russia-ratify-security-pact-expanding-nuclear-umbrella-military-integration/", title: "Belarus Weekly: Belarus, Russia ratify security pact, expanding nuclear umbrella, military integration", publisher: "Kyiv Independent", date: 2025-03, tier: 3}
+      - {url: "https://jamestown.org/belarus-liable-for-oreshnik-but-lacks-control/", title: "Belarus liable for Oreshnik but lacks control", publisher: "Jamestown Foundation", date: 2025-12, tier: 2}
+  - to: MDA
+    layer: dependency
+    type: military_presence
+    summary: "About 1,500 soldiers of the Operational Group of Russian Forces stay in Transnistria, guarding the Cobasna depot, under a 1999 withdrawal pledge never kept; the enclave's security services are run by FSB officers and it lives on the gas Moscow chooses to send."
+    since: 1992-07-21
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    value: 1500
+    unit: russian_troops_in_transnistria
+    sources:
+      - {url: "https://carnegieendowment.org/russia-eurasia/politika/2025/10/moldova-transnistria-crisis?lang=en", title: "Transnistria's energy crisis", publisher: "Carnegie Russia Eurasia (Politika)", date: 2025-10, tier: 2}
+      - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2026-06-16/ukraine-and-moldova-launch-eu-accession-negotiations", title: "Ukraine and Moldova launch EU accession negotiations", publisher: "OSW (Centre for Eastern Studies)", date: 2026-06-16, tier: 2}
+  - to: GEO
+    layer: dependency
+    type: military_presence
+    summary: "Russian forces garrison Abkhazia and South Ossetia, about 20% of Georgia's recognised territory, in breach of the 2008 ceasefire on RUSI's reading; borderisation continues and the May 2026 treaty with Tskhinvali deepens the integration."
+    since: 2008-08
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    value: 0.2
+    unit: share_of_georgian_territory_held
+    sources:
+      - {url: "https://rusi.org/explore-our-research/publications/commentary/russias-silent-occupation-and-georgias-territorial-integrity", title: "Russia's 'Silent' Occupation and Georgia's Territorial Integrity", publisher: "RUSI", date: 2019-04-18, tier: 2}
+      - {url: "https://oc-media.org/tbilisi-says-russia-advances-annexation-steps-in-georgia-after-new-south-ossetia-deal/", title: "Tbilisi says Russia advances annexation steps in Georgia after new South Ossetia deal", publisher: "OC Media", date: 2026-05, tier: 3}
+  - to: UKR
+    layer: dependency
+    type: military_presence
+    summary: "Russian forces occupy about 19.25% of Ukraine (116,165 sq km at the start of 2026, DeepState), having taken 4,336 sq km in 2025 - almost double 2023 and 2024 together - and all of Kursk oblast back by 26 Apr 2025."
+    since: 2014-03
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    value: 19.25
+    unit: percent_of_ukrainian_territory_occupied
+    sources:
+      - {url: "https://euromaidanpress.com/?p=384242", title: "Russia occupied 0.72% of Ukraine's territory in 2025, DeepState reports", publisher: "Euromaidan Press", date: 2026-01-02, tier: 3}
+      - {url: "https://www.pravda.com.ua/eng/news/2026/01/01/8014292/", title: "Russia occupied more than 4,000 sq km of Ukrainian territory in 2025", publisher: "Ukrainska Pravda", date: 2026-01-01, tier: 3}
+  - to: PRK
+    layer: dependency
+    type: military_presence
+    summary: "North Korean troops on Russian soil: 10,000-12,000 in Kursk from late 2024, admitted by Gerasimov on 26 Apr 2025; Ukrainian intelligence counts 11,000-14,000 in all by mid-2026, with Zelensky citing Russian plans for 30,000 more and a 90-man KN-23/KN-24 missile unit folded into the 112th brigade in Voronezh (Aug 2026). Bloomberg's estimate is 16,000-22,000; the lower, more recent official figure is used and the discrepancy noted."
+    since: 2024-10
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    value: 14000
+    unit: north_korean_troops_in_russia_upper_estimate_jul_2026
+    sources:
+      - {url: "https://rubryka.com/en/2026/07/26/30-tysyach-soldativ-kndr/", title: "Russia plans to deploy another 30,000 North Korean troops - Zelensky", publisher: "Rubryka", date: 2026-07-26, tier: 3}
+      - {url: "https://thedefensepost.com/2026/08/07/north-korean-russia-missiles/", title: "North Korean Unit in Western Russia Could Operate 120 Ballistic Missiles: Report", publisher: "The Defense Post", date: 2026-08-07, tier: 3}
+      - {url: "https://www.bloomberg.com/graphics/2026-north-korea-windfall/", title: "North Korea's windfall (16,000-22,000 troops; about USD 14bn from Russia 2022-25)", publisher: "Bloomberg", date: 2026-08-07, tier: 3}
+  - to: PRK
+    layer: dependency
+    type: arms_supply
+    summary: "Pyongyang is the shell and missile supplier of the attrition war: about 12 million artillery rounds by mid-2025 on CFR's count, KN-23 ballistic missiles used on Ukraine since 2024 and again from July 2026, in exchange for USD 10-14bn in cash, oil and technology (Bloomberg). The one ally Russia cannot do without is the one it pays."
+    since: 2023-09
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    value: 12
+    unit: million_artillery_rounds_supplied_by_mid_2025
+    sources:
+      - {url: "https://www.cfr.org/article/how-north-korea-has-bolstered-russias-war-ukraine", title: "How North Korea Has Bolstered Russia's War in Ukraine", publisher: "Council on Foreign Relations", date: 2025-11, tier: 2}
+      - {url: "https://www.bloomberg.com/graphics/2026-north-korea-windfall/", title: "North Korea's windfall", publisher: "Bloomberg", date: 2026-08-07, tier: 3}
+      - {url: "https://www.intellinews.com/russia-moves-north-korean-missile-unit-into-voronezh-region-ukraine-says-459470/", title: "Russia moves North Korean missile unit into Voronezh region, Ukraine says", publisher: "bne IntelliNews", date: 2026-08, tier: 3}
+  - to: IRN
+    layer: dependency
+    type: arms_supply
+    summary: "The drone war is Iranian by design: Shahed-136 kits and documentation from 2022 under the Nov 2022 licence became the Geran-2 line at Alabuga, now about 2,800 a month by Ukrainian intelligence (up to 5,000 by open-source estimates) and largely localised. The dependence has reversed since the 2026 war: Iran now takes Russian missiles and intelligence."
+    since: 2022-09
+    until: null
+    last_verified: 2026-10-14
+    confidence: C
+    value: 2800
+    unit: geran_2_drones_per_month_alabuga_2026_estimate
+    sources:
+      - {url: "https://militarnyi.com/en/news/russia-produces-about-2-800-geran-2-drones-per-month/", title: "Russia Produces About 2,800 Geran-2 Drones per Month", publisher: "Militarnyi", date: 2026, tier: 3}
+      - {url: "https://news.liga.net/en/politics/news/russia-can-produce-up-to-2700-shaheds-per-month---intelligence-official", title: "Russia can produce up to 2700 Shaheds per month - intelligence official", publisher: "LIGA.net", date: 2025, tier: 3}
+      - {url: "https://bloomberg.com/news/articles/2026-06-12/iran-likely-added-russian-made-missiles-as-it-rebuilt-arsenal", title: "Iran likely added Russian-made missiles as it rebuilt arsenal", publisher: "Bloomberg", date: 2026-06-12, tier: 3}
+  - to: BEL
+    layer: dependency
+    type: investment
+    summary: "About EUR 185bn of the Bank of Russia's EUR 210bn immobilised in the EU sits at Euroclear in Brussels, frozen indefinitely by qualified majority since 12 Dec 2025; the windfall profit goes to Ukraine and the reparations-loan plan, blocked by Belgium in Dec 2025, was revived in Aug 2026 without a decision. Figures differ by source (EUR 180-193bn)."
+    since: 2022-02-28
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    value: 185
+    unit: eur_bn_central_bank_assets_held_at_euroclear
+    sources:
+      - {url: "https://www.euronews.com/my-europe/2025/12/11/eu-triggers-emergency-clause-to-indefinitely-immobilise-russian-assets", title: "EU triggers emergency clause to indefinitely immobilise Russian assets", publisher: "Euronews", date: 2025-12-11, tier: 3}
+      - {url: "https://sieps.se/media/ndzouhj3/2025_19epa.pdf", title: "The EU's use of Article 122 to immobilise Russian central bank assets", publisher: "Swedish Institute for European Policy Studies (SIEPS)", date: 2025-12, tier: 2}
+      - {url: "https://www.euroclear.com/newsandinsights/en/press/2026/mr-20-euroclear-h1-2026-results.html", title: "Results for the first half year ended 30 June 2026", publisher: "Euroclear (company release)", date: 2026-07-17, tier: 1}
+  - to: org-eu
+    layer: dependency
+    type: energy_export
+    summary: "Russia still supplied 12.5% of EU gas imports in 2025 (36 bcm; about 40% by pipeline in 2021) and the Regulation of 26 Jan 2026 ends it - long-term LNG from 1 Jan 2027, pipeline gas by 30 Sep 2027; Hungary and Slovakia have sued. Oil is under a price cap lowered to USD 44.10 from 1 Feb 2026 and 632 shadow-fleet tankers are listed."
+    since: 2022
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    value: 0.125
+    unit: share_of_eu_gas_imports_2025
+    sources:
+      - {url: "https://www.rigzone.com/news/lng_made_up_45_percent_of_eu_gas_imports_in_2025-07-jul-2026-184076-article/", title: "LNG made up 45 percent of EU gas imports in 2025 (Commission: Russia 12.5%)", publisher: "Rigzone", date: 2026-07-07, tier: 3}
+      - {url: "https://www.ukrinform.net/rubric-economy/4084369-eu-approves-phased-ban-on-russian-gas-imports-by-2027.html", title: "EU approves phased ban on Russian gas imports by 2027", publisher: "Ukrinform", date: 2026-01-26, tier: 3}
+      - {url: "https://www.eurointegration.com.ua/eng/news/2026/01/15/7229107/", title: "EU lowers price cap for Russian oil to $44.1 from 1 February", publisher: "Evropeiska Pravda", date: 2026-01-15, tier: 3}
+  - to: DNK
+    layer: dependency
+    type: energy_export
+    summary: "About a third of Russia's seaborne oil leaves the Baltic through the Danish straits: 292 transits by sanctioned tankers were logged in 2025, Denmark inspects at Skagen since Feb 2025 and NATO's Baltic Sentry watches the lane. The shadow fleet (500-1,300 vessels by the various counts, 632 listed by the EU) is the artery, and Denmark holds the tourniquet."
+    since: 2022-12-05
+    until: null
+    last_verified: 2026-10-14
+    confidence: C
+    value: 0.33
+    unit: share_of_russian_seaborne_oil_through_danish_straits
+    sources:
+      - {url: "https://moderndiplomacy.eu/2026/08/11/why-the-shadow-fleets-baltic-reckoning-wont-look-like-the-mediterraneans/", title: "Why the shadow fleet's Baltic reckoning won't look like the Mediterranean's (292 transits in 2025)", publisher: "Modern Diplomacy", date: 2026-08-11, tier: 3}
+      - {url: "https://maritime-executive.com/index.php/article/denmark-targets-shadow-tankers-in-new-port-state-inspection-program", title: "Denmark targets shadow tankers in new port state inspection program", publisher: "The Maritime Executive", date: 2025-02, tier: 3}
+      - {url: "https://malta.representation.ec.europa.eu/news/eu-adopts-20th-package-sanctions-against-russia-2026-04-23_en", title: "EU adopts 20th package of sanctions against Russia (632 tankers listed)", publisher: "European Commission Representation in Malta", date: 2026-04-23, tier: 1}
+  - to: SYR
+    layer: dependency
+    type: military_presence
+    summary: "Two sites remain, Hmeimim and Tartus, after Qamishli was abandoned in Jan 2026; under the memorandum of 9 Aug 2026 they become joint training centres within three months and the civilian facilities pass to Syria. The only Russian military outposts outside the former Soviet Union, held at Damascus's consent."
+    since: 2015-09-30
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    value: 2
+    unit: russian_military_sites_in_syria_aug_2026
+    sources:
+      - {url: "https://wtop.com/world/2026/08/syria-agrees-deal-with-russia-over-future-use-of-2-key-mediterranean-bases/", title: "Syria agrees deal with Russia over future use of 2 key Mediterranean bases", publisher: "Associated Press (via WTOP)", date: 2026-08-09, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2026/1/28/syrias-al-sharaa-discusses-fate-of-russian-military-bases-with-putin", title: "Al-Sharaa meets Putin as Russia seeks to secure military bases in Syria", publisher: "Al Jazeera", date: 2026-01-28, tier: 3}
+  - to: MLI
+    layer: dependency
+    type: military_presence
+    summary: "Africa Corps, the Defence Ministry's successor to Wagner, keeps about 2,000 men in Mali since Wagner left on 6-7 Jun 2025; it abandoned Kidal under attack (Apr 2026), lost a helicopter to Tuareg fire (Jul 2026) and is accused by HRW of killing nine villagers (Aug 2026). Burkina Faso (about 300 at Loumbila) and Niger are the same deployment."
+    since: 2025-06-07
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    value: 2000
+    unit: africa_corps_personnel_in_mali_estimate
+    sources:
+      - {url: "https://dw.com/en/russias-wagner-group-leaves-mali-africa-corps-will-stay/a-72829045", title: "Russia's Wagner Group leaves Mali, Africa Corps will stay", publisher: "Deutsche Welle", date: 2025-06-07, tier: 3}
+      - {url: "https://www.bbc.com/news/articles/c3w3wyq4v14o", title: "Mali attacks: Russia's Africa Corps confirms withdrawal from Kidal", publisher: "BBC", date: 2026-04-27, tier: 3}
+      - {url: "https://www.hrw.org/news/2026/08/20/mali-russias-africa-corps-massacres-villagers", title: "Mali: Russia's 'Africa Corps' Massacres Villagers", publisher: "Human Rights Watch", date: 2026-08-20, tier: 2}
+  - to: ARE
+    layer: dependency
+    type: trade_share
+    summary: "Bilateral trade with the UAE reached USD 9.5bn in 2024 by UAE figures (Manturov claims a record 14bn); Dubai is the hub for Russian capital, gold and oil traders under sanctions, and the US sanctioned Lukoil's Dubai arm Litasco Middle East in Oct 2025."
+    since: 2022-03
+    until: null
+    last_verified: 2026-10-14
+    confidence: C
+    value: 9.5
+    unit: usd_bn_bilateral_trade_2024
+    sources:
+      - {url: "https://www.arabianbusiness.com/politics-economics/uae-president-to-visit-russia-for-talks-with-putin-on-economic-ties-and-regional-issues", title: "UAE president to visit Russia for talks with Putin on economic ties and regional issues", publisher: "Arabian Business", date: 2026-01, tier: 3}
+      - {url: "https://timesofoman.com/article/167701-putin-calls-uae-a-key-trade-partner-in-arab-world-during-kremlin-talk", title: "Putin calls UAE a 'key trade partner in Arab world' during Kremlin talk", publisher: "Times of Oman", date: 2026-01, tier: 3}
+  - to: EGY
+    layer: dependency
+    type: investment
+    summary: "Rosatom is building the four-unit El Dabaa plant, Russia's largest project in Africa, with the first unit due on the grid in 2028 and two more reactors under study; Russia is also Egypt's leading wheat supplier."
+    since: 2015-11-19
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    value: 4
+    unit: reactor_units_el_dabaa
+    sources:
+      - {url: "https://www.powermag.com/el-dabaa-first-of-several-nuclear-reactors-for-egypt/", title: "El Dabaa - first of several nuclear reactors for Egypt", publisher: "POWER Magazine", date: 2026, tier: 3}
+      - {url: "https://english.ahram.org.eg/News/574567.aspx", title: "Egypt plans to expand El-Dabaa nuclear plant with 2 additional reactors", publisher: "Ahram Online", date: 2026, tier: 3}
+  # ---------- action ----------
+  - to: UKR
+    layer: action
+    type: agreement
+    summary: "The first trilateral talks with Ukraine and the United States: Abu Dhabi on 23-24 Jan 2026 and 4-5 Feb, then rounds in Geneva; Ushakov declared a pause in April and called further rounds pointless until Ukraine leaves the rest of Donetsk, while Peskov in Sept 2026 'did not rule out' resuming the format after Witkoff and Kushner returned to Moscow. No round is scheduled."
+    since: 2026-01-23
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://meduza.io/en/news/2026/01/24/russia-and-ukraine-hold-first-joint-peace-talks-with-united-states", title: "Russia and Ukraine hold first joint peace talks with United States", publisher: "Meduza", date: 2026-01-24, tier: 3}
+      - {url: "https://www.ukrinform.net/rubric-polytics/4120909-kremlin-suspends-trilateral-peace-talks-until-afu-withdraws-from-donbas.html", title: "Kremlin suspends trilateral peace talks until AFU withdraws from Donbas", publisher: "Ukrinform", date: 2026, tier: 3}
+      - {url: "https://kyivindependent.com/kremlin-doesnt-rule-out-trilateral-talks-with-ukraine-us/", title: "Kremlin doesn't rule out restarting three-way peace talks with Ukraine, US", publisher: "Kyiv Independent", date: 2026-09, tier: 3}
+  - to: UKR
+    layer: action
+    type: incident
+    summary: "Russia fired an Oreshnik intermediate-range missile at Kyiv on the night of 23-24 May 2026 in one of the war's largest attacks on the capital, the third use after Dnipro (Nov 2024) and Lviv (Jan 2026); the winter campaign had already passed 10,000 drones and glide bombs a month (Jan 2026)."
+    since: 2026-05-23
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.reuters.com/world/europe/ukraines-capital-kyiv-hit-by-massive-missile-drone-attack-2026-05-23/", title: "Russia hits Ukraine with Oreshnik missile in one of war's biggest attacks on Kyiv", publisher: "Reuters", date: 2026-05-24, tier: 3}
+      - {url: "https://www.kyivpost.com/post/69203", title: "Next trilateral talks set for Feb. 4-5 in Abu Dhabi as Russia launches over 10,000 drones and bombs in January", publisher: "Kyiv Post", date: 2026-02-01, tier: 3}
+  - to: UKR
+    layer: action
+    type: incident
+    summary: "Kursk oblast recovered: Gerasimov reported the 'complete liberation' of the region to Putin on 26 Apr 2025 and acknowledged for the first time the part of North Korean troops; Pyongyang confirmed its deployment two days later."
+    since: 2025-04-26
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://www.politico.eu/article/kremlin-claims-complete-liberation-kursk-admits-north-korea-assistance-ukraine-war/", title: "Russia claims complete 'liberation' of Kursk, admits North Korea assistance", publisher: "Politico Europe", date: 2025-04-26, tier: 3}
+      - {url: "https://www.cfr.org/article/how-north-korea-has-bolstered-russias-war-ukraine", title: "How North Korea Has Bolstered Russia's War in Ukraine", publisher: "Council on Foreign Relations", date: 2025-11, tier: 2}
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "Riyadh, 18 Feb 2025: Lavrov and Rubio agreed to restore embassy staffing, appoint negotiating teams and 'lay the groundwork' for cooperation, without Kyiv or Brussels in the room, six days after Trump's first call to Putin."
+    since: 2025-02-18
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://apnews.com/article/russia-ukraine-war-riyadh-talks-trump-putin-rubio-0c3beebfef5839e9d509ff58239a6bc5", title: "Russia and the US agree to work towards improving ties and ending the Ukraine war in landmark talks", publisher: "Associated Press", date: 2025-02-18, tier: 3}
+      - {url: "https://edition.cnn.com/2025/02/12/politics/putin-trump-phone-call/index.html", title: "After Putin call, Trump says negotiations to end Ukraine war will start 'immediately'", publisher: "CNN", date: 2025-02-12, tier: 3}
+  - to: USA
+    layer: action
+    type: visit
+    summary: "Putin's first visit to the United States in a decade: the Anchorage summit of 15 Aug 2025, no agreement and no ceasefire, 'a proposal, not an agreement' in Rubio's later words; Ryabkov said in Oct 2025 the momentum was 'largely exhausted' and the Budapest follow-up was cancelled within five days. Witkoff and Kushner followed in the Kremlin on 2 Dec 2025 and envoys came again in Sept 2026."
+    since: 2025-08-15
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.npr.org/2025/08/16/nx-s1-5504196/trump-putin-summit-documents-left-behind", title: "Government papers found in an Alaskan hotel reveal new details of Trump-Putin summit", publisher: "National Public Radio", date: 2025-08-16, tier: 3}
+      - {url: "https://www.reuters.com/world/china/witkoff-kushner-meet-putin-moscow-discuss-an-end-ukraine-war-2025-12-02/", title: "Putin meets Witkoff and Kushner for over four hours to discuss Ukraine peace", publisher: "Reuters", date: 2025-12-02, tier: 3}
+      - {url: "https://www.state.gov/releases/office-of-the-spokesperson/2026/06/secretary-of-state-marco-rubio-remarks-to-press-12/", title: "Secretary of State Marco Rubio remarks to press (25 Jun 2026)", publisher: "US Department of State", date: 2026-06-25, tier: 1}
+  - to: USA
+    layer: action
+    type: incident
+    summary: "Putin signed the updated nuclear doctrine on 19 Nov 2024, days after Washington allowed Ukrainian strikes with ATACMS: an attack by a non-nuclear state backed by a nuclear power counts as a joint attack, and a conventional attack threatening sovereignty, including a mass drone or missile launch or an attack on Belarus, may draw a nuclear response. Peskov called it a reflection of 'the current situation'."
+    since: 2024-11-19
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://globalnews.ca/news/10876566/russia-nuclear-doctrine/amp", title: "Putin signs decree lowering the threshold for nuclear use", publisher: "Global News", date: 2024-11-19, tier: 3}
+      - {url: "https://www.newsonair.gov.in/russian-president-vladimir-putin-signs-decree-approving-russias-updated-nuclear-doctrine", title: "Russian President Vladimir Putin signs decree approving Russia's updated nuclear doctrine", publisher: "All India Radio", date: 2024-11-20, tier: 3}
+  - to: CHN
+    layer: action
+    type: agreement
+    summary: "The joint statement of 4 Feb 2022, twenty days before the invasion, declared a friendship with 'no limits' and 'no forbidden areas'; the Power of Siberia 2 memorandum of 2 Sep 2025 is its economic sequel, signed without a price. China has recognised none of the annexations, abstained at the UN and sells no declared weapons."
+    since: 2022-02-04
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://www.reuters.com/world/china/moscow-beijing-partnership-has-no-limits-2022-02-04/", title: "Moscow-Beijing partnership has 'no limits'", publisher: "Reuters", date: 2022-02-04, tier: 3}
+      - {url: "https://www.rferl.org/amp/putin-xi-mongolia-power-siberia-china-gas-energy/33519697.html", title: "China, Russia Sign Deal To Build New Siberian Gas Pipeline But Pricing Details Unclear", publisher: "RFE/RL", date: 2025-09-02, tier: 3}
+  - to: CHN
+    layer: action
+    type: visit
+    summary: "Putin stood beside Xi and Kim at the Beijing parade of 3 Sep 2025 after the SCO summit in Tianjin, and was back in Beijing on 16 May 2026 days after Trump; Xi had marched in Moscow on 9 May 2025. Wang Yi told Kallas in July 2025 that China cannot afford a Russian defeat."
+    since: 2025-09-03
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://www.reuters.com/business/aerospace-defense/chinas-xi-hosts-old-friend-putin-north-koreas-kim-challenge-west-2025-09-02/", title: "Xi hosts 'old friend' Putin, Kim ahead of military parade in challenge to West", publisher: "Reuters", date: 2025-09-02, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2026/5/19/putin-meets-xi-why-russia-and-china-need-each-other", title: "Putin meets Xi: why Russia and China need each other", publisher: "Al Jazeera", date: 2026-05-19, tier: 3}
+      - {url: "https://www.scmp.com/news/china/diplomacy/article/3316875/china-tells-eu-it-cannot-afford-russian-loss-ukraine-war-sources-say", title: "China tells EU it does not want to see Russia lose its war in Ukraine: sources", publisher: "South China Morning Post", date: 2025-07-04, tier: 3}
+  - to: PRK
+    layer: action
+    type: agreement
+    summary: "The first road bridge over the Tumen between Russia and North Korea opened in Sept 2026, the physical sign of a tie that went from the June 2024 treaty to troops in Kursk, a missile unit in Voronezh and about USD 14bn in Russian payments."
+    since: 2026-09-07
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.reuters.com/world/asia-pacific/north-korea-russia-open-their-first-road-bridge-symbol-expanding-ties-tass-2026-09-07/", title: "North Korea, Russia open their first road bridge, symbol of expanding ties", publisher: "Reuters", date: 2026-09-07, tier: 3}
+      - {url: "https://www.bloomberg.com/graphics/2026-north-korea-windfall/", title: "North Korea's windfall", publisher: "Bloomberg", date: 2026-08-07, tier: 3}
+  - to: IRN
+    layer: action
+    type: incident
+    summary: "After Khamenei was killed on 28 Feb 2026 Russia condemned the 'cynical murder' and, by US officials' account, passed Iran targeting intelligence and satellite imagery on US forces; on 20 Mar Putin offered to stop if Washington cut Ukraine off. In June 2025 the same partner had received condolences and a mediation offer, nothing more."
+    since: 2026-03-06
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.washingtonpost.com/national-security/2026/03/06/russia-iran-intelligence-us-targets/", title: "Russia is providing Iran intelligence to target U.S. forces, officials say", publisher: "The Washington Post", date: 2026-03-06, tier: 3}
+      - {url: "https://www.politico.eu/article/putin-offers-stop-intel-iran-condition-us-cuts-off-ukraine/", title: "Putin offers to stop sharing intel with Iran if US cuts off Ukraine", publisher: "Politico Europe", date: 2026-03-20, tier: 3}
+      - {url: "https://www.reuters.com/world/middle-east/putin-tells-iranian-foreign-minister-there-was-no-justification-us-attack-2025-06-23/", title: "Putin tells Iranian foreign minister there was no justification for US attack", publisher: "Reuters", date: 2025-06-23, tier: 3}
+  - to: org-nato
+    layer: action
+    type: expulsion
+    summary: "Russia suspended its mission to NATO from 1 Nov 2021 and closed the Alliance's offices in Moscow after NATO withdrew the accreditation of eight Russian officials; practical cooperation had been suspended by NATO since April 2014. No channel has been restored, though Peskov says Moscow is open to one 'when there is a chance for constructive engagement'."
+    since: 2021-11-01
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://military.com/daily-news/2021/10/18/russia-suspends-its-mission-nato-foreign-minister-says.html", title: "Russia suspends its mission to NATO, foreign minister says", publisher: "Military.com / AP", date: 2021-10-18, tier: 3}
+      - {url: "https://nato.int/content/dam/nato/legacy-wcm/media_pdf/2022/2/pdf/220214-factsheet_NATO-Russia_Relations_e.pdf", title: "NATO-Russia relations factsheet (February 2022)", publisher: "NATO", date: 2022-02-14, tier: 1}
+      - {url: "https://www.themoscowtimes.com/2026/07/07/kremlin-says-its-closely-following-nato-summit-a93182", title: "Kremlin says it is closely following NATO summit", publisher: "The Moscow Times", date: 2026-07-07, tier: 3}
+  - to: POL
+    layer: action
+    type: incident
+    summary: "About 19-23 Russian drones entered Polish airspace on 9-10 Sep 2025, some from Belarus, three or four shot down; Poland invoked Article 4 and NATO launched Eastern Sentry on 12 Sep. Moscow and Minsk said the drones strayed after jamming. The railway blast of Nov 2025 cost Russia its last consulate in Poland."
+    since: 2025-09-10
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://www.ktvh.com/world/europe/russian-drones-breach-nato-airspace-in-poland-prompting-alliance-response", title: "Russian drones breach NATO airspace in Poland, prompting alliance response", publisher: "AP", date: 2025-09-10, tier: 3}
+      - {url: "https://theaviationist.com/2025/09/13/nato-launches-operation-eastern-sentry/", title: "NATO launches Operation Eastern Sentry after drone incursions", publisher: "The Aviationist", date: 2025-09-13, tier: 3}
+      - {url: "https://babel.ua/en/news/123169-poland-closes-russian-consulate-in-gdansk-due-to-railway-sabotage", title: "Poland closes Russian consulate in Gdansk due to railway sabotage", publisher: "Babel", date: 2025-11, tier: 3}
+  - to: EST
+    layer: action
+    type: incident
+    summary: "Three armed MiG-31s flew over Vaindloo for about twelve minutes on 19 Sep 2025 with transponders off; Estonia requested Article 4, the North Atlantic Council condemned a 'pattern' on 23 Sep, and Moscow denied any violation. In Sept 2026 Tallinn attributed the August arson at Milrem Robotics to Russian services, which the Kremlin denied."
+    since: 2025-09-19
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://www.globalsecurity.org/military/library/news/2025/09/mil-250923-nato01.htm", title: "Statement by the North Atlantic Council on recent airspace violations by Russia (23 Sep 2025)", publisher: "NATO (via GlobalSecurity)", date: 2025-09-23, tier: 1}
+      - {url: "https://tass.com/politics/2019599/amp", title: "Kremlin has called Estonia's claims about Russian MiG-31s baseless", publisher: "TASS (state agency, official statement)", date: 2025-09, tier: 1}
+      - {url: "https://www.aljazeera.com/news/2026/9/29/estonia-says-russia-ordered-august-arson-attack-on-defence", title: "Estonia accuses Russia of arson attack on defence firm supplying Ukraine", publisher: "Al Jazeera", date: 2026-09-29, tier: 3}
+  - to: DEU
+    layer: action
+    type: incident
+    summary: "Sabotage below the threshold: more than 165 suspected incidents in Germany in 2026 on a BKA count reported by SZ, a Kazakh national arrested in Berlin for passing targets to Russian intelligence (Jul 2026), rail-arson plotters charged, and the August 2026 drone attack on Leipzig/Halle airport that Berlin blamed on Russia and Prague backed with its own findings."
+    since: 2025
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://news.liga.net/en/world/news/suddeutsche-zeitung-v-germanii-v-etom-godu-zafiksirovano-bolee-165-veroyatnyh-diversii", title: "SZ: More than 165 suspected acts of sabotage have been recorded in Germany this year", publisher: "LIGA.net (citing Suddeutsche Zeitung)", date: 2026, tier: 3}
+      - {url: "https://www.themoscowtimes.com/2026/07/22/germany-arrests-kazakh-man-accused-of-spying-for-russia", title: "Germany arrests Kazakh man accused of spying for Russia", publisher: "The Moscow Times", date: 2026-07-22, tier: 3}
+      - {url: "https://www.ceskenoviny.cz/index_view.php?id=2869629", title: "Macinka rejects Russian ambassador's explanation of Leipzig incidents", publisher: "Czech News Agency (CTK)", date: 2026-09-03, tier: 3}
+  - to: DNK
+    layer: action
+    type: incident
+    summary: "A Russian corvette off Gedser fired flares close to a Danish Air Force helicopter on 14 Sep 2026; Copenhagen summoned the ambassador and on 1 Oct Moscow summoned the Danish ambassador-designate, saying the helicopter had approached dangerously. The September 2025 airport drones that Frederiksen called a hybrid attack Moscow called 'staged'."
+    since: 2026-09-14
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://www.euronews.com/2026/09/15/russia-summoned-by-denmark-after-warship-fires-flares-at-helicopter", title: "Russia summoned by Denmark after warship fires flares at helicopter", publisher: "Euronews", date: 2026-09-15, tier: 3}
+      - {url: "https://www.pravda.com.ua/eng/news/2026/10/01/8055905/index.amp", title: "Russia summons Denmark's ambassador after Russian corvette fires flares at Danish helicopter", publisher: "Ukrainska Pravda", date: 2026-10-01, tier: 3}
+  - to: FIN
+    layer: action
+    type: incident
+    summary: "Russia closed seven rail crossings with Finland, Estonia and Latvia from 1 Jul 2026, five on the Finnish border, without explanation, after raising freight tariffs eightfold on 1 June; Finland's side has been shut since Nov 2023 over instrumentalised migration and stays closed 'until further notice' (4 Jun 2026)."
+    since: 2026-07-01
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.themoscowtimes.com/2026/07/01/russia-closes-railway-border-crossings-with-finland-and-baltic-neighbors-a93136", title: "Russia closes railway border crossings with Finland and Baltic neighbors", publisher: "The Moscow Times", date: 2026-07-01, tier: 3}
+      - {url: "https://valtioneuvosto.fi/en/-/1410869/finland-s-eastern-border-to-remain-closed-until-further-notice-2", title: "Finland's eastern border to remain closed until further notice", publisher: "Finnish Government", date: 2026-06-04, tier: 1}
+  - to: GBR
+    layer: action
+    type: expulsion
+    summary: "Russia expelled a British diplomat on spying allegations at the end of March 2026; London called the accusation baseless and revoked a Russian diplomat's accreditation on 29 Apr. Two months later Royal Marines boarded the sanctioned tanker Smyrtos in the Channel, the first UK-led boarding of its kind."
+    since: 2026-03-30
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.the-star.co.ke/news/world/2026-03-30-russia-expels-british-diplomat-over-spying-allegations", title: "Russia expels British diplomat over spying allegations", publisher: "The Star (Kenya) / wire", date: 2026-03-30, tier: 3}
+      - {url: "https://abcnews.com/International/wireStory/uk-expels-russian-diplomat-retaliation-moscows-recent-expulsion-132495759", title: "UK expels Russian diplomat in retaliation for Moscow's recent expulsion", publisher: "AP via ABC News", date: 2026-04-29, tier: 3}
+      - {url: "https://www.aljazeera.com/amp/news/2026/6/16/uk-seizes-russian-shadow-fleet-tanker-what-that-means", title: "UK seizes Russian 'shadow fleet' tanker - what that means", publisher: "Al Jazeera", date: 2026-06-16, tier: 3}
+  - to: ROU
+    layer: action
+    type: expulsion
+    summary: "Moscow closed Romania's consulate general in St Petersburg and expelled its consul on 25 Jun 2026 in reply to the closure of the Russian consulate in Constanta after the Galati drone strike; on 26-27 Aug it expelled a Romanian embassy employee after Bucharest had expelled a Russian one over three downed drones."
+    since: 2026-06-25
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://news.liga.net/en/politics/news/the-romanian-mission-will-no-longer-operate-in-one-of-russias-major-cities", title: "The Romanian mission will no longer operate in one of Russia's major cities", publisher: "Liga.net", date: 2026-06-25, tier: 3}
+      - {url: "https://www.eurointegration.com.ua/eng/news/2026/08/26/7244220/", title: "Russian Foreign Ministry summons Romanian representative", publisher: "Evropeiska Pravda", date: 2026-08-26, tier: 3}
+  - to: MDA
+    layer: action
+    type: incident
+    summary: "A drone exploded near Crocmaz on 9 Aug 2026 and a jet-powered Geran-3 crossed the south the next night; Chisinau recalled its ambassador on 11 Aug and the Russian embassy said Moldova 'seeks pretexts' while Moscow stays open to dialogue. Sandu counts 39 airspace violations in 2026 against 17 in 2025."
+    since: 2026-08-09
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://militarnyi.com/en/news/drone-enters-moldova-following-moldova-s-decision-to-recall-ambassador-from-russia/", title: "Drone enters Moldova following Moldova's decision to recall ambassador from Russia", publisher: "Militarnyi", date: 2026-08-11, tier: 3}
+      - {url: "https://tass.com/politics/2171505/amp", title: "Moldovan authorities seek pretext to scale back ties with Russia - embassy", publisher: "TASS (state agency, official statement)", date: 2026-08-11, tier: 1}
+  - to: BEL
+    layer: action
+    type: incident
+    summary: "The Bank of Russia sued Euroclear in the Moscow Arbitration Court on 12 Dec 2025 for about RUB 18 trillion, won on 15 May 2026 and saw Euroclear lose its appeal on 16 Jul; the depository says the court has no jurisdiction and the judgments are not recognised in the EU. The ambassador had threatened Belgium with 'severe retaliation' in Nov 2025."
+    since: 2025-12-12
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://www.euroclear.com/newsandinsights/en/press/2026/mr-20-euroclear-h1-2026-results.html", title: "Results for the first half year ended 30 June 2026", publisher: "Euroclear (company release)", date: 2026-07-17, tier: 1}
+      - {url: "https://brusselstimes.com/news/1878250/russian-central-bank-files-lawsuit-against-euroclear/", title: "Russian central bank files lawsuit against Euroclear", publisher: "The Brussels Times", date: 2025-12, tier: 3}
+  - to: org-eu
+    layer: action
+    type: sanction
+    summary: "Government order No. 430-r of 5 Mar 2022 lists the 'unfriendly states' - every EU member, the UK, the US, Japan, Switzerland and others - to which Russian debtors may pay in roubles and against which counter-sanctions, diplomatic staffing caps and asset rules apply; the list has grown since and is the legal frame of Moscow's answer to the 21 EU packages."
+    since: 2022-03-05
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "http://government.ru/docs/44745", title: "Measures to improve the resilience of the economy in the face of sanctions, No. 430-r (list of unfriendly states)", publisher: "Government of Russia", date: 2022-03-05, tier: 1}
+      - {url: "https://en.interfax.com.ua/news/general/1187583.html", title: "48 individuals and 170 entities: EU gives final approval to 21st sanctions package against Russia", publisher: "Interfax-Ukraine", date: 2026-07-23, tier: 3}
+  - to: AZE
+    layer: action
+    type: agreement
+    summary: "The foreign ministries of Russia and Azerbaijan announced on 15 Apr 2026 that all issues of the AZAL crash of 25 Dec 2024 (38 dead, hit by Russian air defence over Grozny) were settled, compensation included, and Baku dropped its demand for punishment; Putin had admitted the two missiles at Dushanbe on 9 Oct 2025 and Lavrov closed the file on 17 Jul 2026."
+    since: 2026-04-15
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://meduza.io/en/news/2026/04/15/russia-and-azerbaijan-say-they-have-settled-all-issues-related-to-the-2024-azal-plane-crash-including-compensation", title: "Russia and Azerbaijan say they have settled all issues related to the 2024 AZAL plane crash, including compensation", publisher: "Meduza", date: 2026-04-15, tier: 3}
+      - {url: "https://tass.com/politics/2161577/amp", title: "Russia, Azerbaijan settle all issues related to 2024 AZAL plane crash - Lavrov", publisher: "TASS (state agency, official statement)", date: 2026-07-17, tier: 1}
+  - to: ARM
+    layer: action
+    type: sanction
+    summary: "Before Armenia's June 2026 election Russia banned Armenian flowers, fruit, vegetables, alcohol and dairy and raised inspections; Pashinyan called it a breach of EAEU rules and the EU answered with duty exemptions. Moscow had also notified (27 May) that the gas agreement could be denounced if Armenia joined the EU."
+    since: 2026-03
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://carnegieendowment.org/russia-eurasia/politika/2026/06/russia-armenia-post-election", title: "Russia-Armenia after the election", publisher: "Carnegie Politika", date: 2026-06-11, tier: 2}
+      - {url: "https://icds.ee/en/armenia-after-the-election-diversification-without-decoupling-from-russia/", title: "Armenia after the election: diversification without decoupling from Russia", publisher: "ICDS", date: 2026-06-18, tier: 2}
+  - to: GEO
+    layer: action
+    type: agreement
+    summary: "Putin's decrees of 10 May 2023 lifted the 2019 flight ban and visa requirements for Georgians; the first flight landed in Tbilisi on 19 May amid protests and Western regret. Russian gas deliveries rose 40% in 2025 and Russia supplied 97% of Georgia's imported oil - the rewards of a government Moscow finds useful."
+    since: 2023-05-10
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://jam-news.net/direct-flights-from-russia-to-georgia/", title: "Putin cancels the visa policy for Georgian citizens and allows direct flights to Georgia", publisher: "JAMnews", date: 2023-05-10, tier: 3}
+      - {url: "https://jamestown.org/georgia-drifting-back-into-russias-orbit/", title: "Georgia Drifting Back Into Russia's Orbit", publisher: "Jamestown Foundation, Eurasia Daily Monitor", date: 2026-01-12, tier: 2}
+  - to: SYR
+    layer: action
+    type: agreement
+    summary: "Memorandum of 9 Aug 2026 announced by Damascus: Syria takes over Hmeimim's air base and the commercial berth at Tartus, the military facilities become joint training and qualification centres within three months. Al-Sharaa had been received in the Kremlin on 15 Oct 2025 and 28 Jan 2026 and asked, without answer, for Assad's extradition."
+    since: 2026-08-09
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://wtop.com/world/2026/08/syria-agrees-deal-with-russia-over-future-use-of-2-key-mediterranean-bases/", title: "Syria agrees deal with Russia over future use of 2 key Mediterranean bases", publisher: "Associated Press (via WTOP)", date: 2026-08-09, tier: 3}
+      - {url: "https://www.al-monitor.com/originals/2026/08/syria-says-reached-deal-moscow-fate-russian-bases", title: "Syria says reached deal with Moscow on fate of Russian bases", publisher: "Al-Monitor", date: 2026-08, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2026/1/28/syrias-al-sharaa-discusses-fate-of-russian-military-bases-with-putin", title: "Al-Sharaa meets Putin as Russia seeks to secure military bases in Syria", publisher: "Al Jazeera", date: 2026-01-28, tier: 3}
+  - to: NER
+    layer: action
+    type: incident
+    summary: "Africa Corps as the junta's guard: Moscow confirmed its forces helped repel an ISIL attack on Niamey airport (3 Feb 2026) and said it helped put down an attempted coup against the Niger junta (Aug 2026). The Defence Ministry's corps does what Wagner did, in the state's name."
+    since: 2026-02-03
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2026/2/3/moscow-confirms-russian-forces-helped-repel-isil-attack-on-niger-airport", title: "Moscow confirms Russian forces helped repel ISIL attack on Niger airport", publisher: "Al Jazeera", date: 2026-02-03, tier: 3}
+      - {url: "https://www.bbc.com/news/articles/c5ye8egg596o", title: "Niger attempted coup: Russia says it helped to repel attack", publisher: "BBC", date: 2026-08-30, tier: 3}
+  - to: SAU
+    layer: action
+    type: agreement
+    summary: "OPEC+: Russia and Saudi Arabia sit among the seven core producers that froze November output on 4 Oct 2026 (next meeting 1 Nov), the Dec 2016 partnership that still sets the floor under Russia's oil revenue; the kingdom also hosted the Riyadh round of 18 Feb 2025 that reopened the US channel."
+    since: 2016-12-10
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://opec.org/pr-detail/1891616-4-october-2026.html", title: "Saudi Arabia, Russia, Iraq, Kuwait, Kazakhstan, Algeria, and Oman reaffirm commitment to market stability", publisher: "OPEC Secretariat", date: 2026-10-04, tier: 1}
+      - {url: "https://apnews.com/article/russia-ukraine-war-riyadh-talks-trump-putin-rubio-0c3beebfef5839e9d509ff58239a6bc5", title: "Russia and the US agree to work towards improving ties and ending the Ukraine war in landmark talks (Riyadh)", publisher: "Associated Press", date: 2025-02-18, tier: 3}
+  - to: KAZ
+    layer: action
+    type: visit
+    summary: "Putin received Tokayev in Omsk on 25 Jul 2026 for talks on Ukraine, nuclear energy and the strategic partnership; speaking beside him, the Kazakh president called for the war to be frozen and ruled out mediating. About 80% of Kazakh oil exports still leave through the CPC terminal on Russian soil."
+    since: 2026-07-25
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://www.reuters.com/world/asia-pacific/speaking-alongside-putin-kazakh-president-calls-freeze-ukraine-war-2026-07-25/", title: "Speaking alongside Putin, Kazakh president calls for freeze of Ukraine war", publisher: "Reuters", date: 2026-07-25, tier: 3}
+      - {url: "https://www.gov.kz/memleket/entities/mfa-ljubljana/press/news/details/1264316", title: "Tokayev and Putin discuss Ukraine, nuclear energy and strategic partnership in Omsk", publisher: "Government of Kazakhstan", date: 2026-07-25, tier: 1}
+  - to: SRB
+    layer: action
+    type: agreement
+    summary: "Vucic and Putin spoke for an hour on 26 Sep 2026 about gas, NIS and Ukraine; the gas deal was extended to 31 Dec 2026 at EUR 318 and Vucic announced his resignation the next day. Vucic had marched at the 2025 parade and stayed away in 2026; Moscow halted Serbian ammunition exports in June 2025 by accusing Belgrade of arming Ukraine."
+    since: 2026-09-26
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.kosovo-online.com/en/news/politics/vucic-speaks-putin-phone-important-conversation-serbias-future-26-9-2026", title: "Vucic speaks to Putin by phone - 'important conversation for Serbia's future'", publisher: "Kosovo Online", date: 2026-09-26, tier: 3}
+      - {url: "https://www.rferl.org/a/serbia-arms-exports-ukraine-russia-vucic/33453578.html", title: "Serbia halts arms exports after Russia accuses it of arming Ukraine", publisher: "RFE/RL", date: 2025-06-26, tier: 3}
+      - {url: "https://betabriefing.com/news/politics/31057-vucic-at-military-parade-in-moscow-despite-warnings-from-the-eu", title: "Vucic at military parade in Moscow despite warnings from the EU", publisher: "Beta", date: 2025-05-09, tier: 3}
+  - to: SVK
+    layer: action
+    type: visit
+    summary: "Fico is the only EU head of government Putin receives: Moscow on 22 Dec 2024 (gas), the parade of 9 May 2025, Beijing on 2 Sep 2025, Moscow again on 9 May 2026 carrying Zelensky's readiness to meet 'in any format', which Putin answered with 'tell him to call'."
+    since: 2024-12-22
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://www.euronews.com/my-europe/2024/12/22/slovakias-prime-minister-has-controversial-talks-with-putin-in-moscow", title: "Slovakia's prime minister has controversial talks with Putin in Moscow", publisher: "Euronews", date: 2024-12-22, tier: 3}
+      - {url: "https://www.teraz.sk/najnovsie/fico-odovzdal-putinovi-odkaz-od-zelensk/961631-clanok.html", title: "Fico passed Zelensky's message to Putin", publisher: "TASR / Teraz.sk", date: 2026-05-09, tier: 3}
+  - to: NOR
+    layer: action
+    type: incident
+    summary: "A Norwegian court seized the Russian state research vessel Professor Molchanov at Barentsburg on 2 Sep 2026 to enforce Naftogaz's USD 4.22bn award; Putin called it 'state terrorism' and the foreign ministry summoned Ambassador Olufsen on 3 Sep. The Barents Sea quotas for 2026 were nonetheless agreed in Dec 2025 despite Norway's sanctions on Norebo and Murman Seafood."
+    since: 2026-09-02
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.wcax.com/2026/09/03/norway-seizes-russian-vessel-remote-arctic-drawing-putins-ire/", title: "Norway seizes a Russian vessel in remote Arctic, drawing Putin's ire", publisher: "Associated Press (via WCAX)", date: 2026-09-03, tier: 3}
+      - {url: "https://www.rcinet.ca/eye-on-the-arctic/2026/09/04/norways-ambassador-summoned-to-moscow-foreign-ministry-as-wave-of-propaganda-hits-the-headlines/", title: "Norway's ambassador summoned to Moscow foreign ministry as wave of propaganda hits the headlines", publisher: "Eye on the Arctic (Barents Observer)", date: 2026-09-04, tier: 3}
+      - {url: "https://www.seafoodsource.com/news/supply-trade/norway-russia-agree-on-barents-sea-quotas-for-2026-but-tensions-simmer-over-sanctioned-companies", title: "Norway, Russia agree on Barents Sea quotas for 2026 but tensions simmer over sanctioned companies", publisher: "SeafoodSource", date: 2025-12, tier: 3}
+  - to: BLR
+    layer: action
+    type: exercise
+    summary: "Zapad-2025, 12-16 Sep 2025 in Belarus: about 13,000 troops announced and then halved, nuclear-use planning and, by the Belarusian General Staff's account, Oreshnik deployment practice; Poland sealed the border for the duration. Two days earlier Russian drones had crossed Poland from Belarusian airspace."
+    since: 2025-09-12
+    until: null
+    last_verified: 2026-10-14
+    confidence: B
+    sources:
+      - {url: "https://www.news4jax.com/news/world/2025/09/12/russia-and-belarus-launch-military-exercise-that-fueled-western-concerns/", title: "Russia and Belarus launch military exercise that fueled Western concerns", publisher: "AP", date: 2025-09-12, tier: 3}
+      - {url: "https://euromaidanpress.com/2025/09/16/belarus-claims-it-practiced-deploying-oreshnik-during-zapad-2025/", title: "Belarus claims it practiced deploying Oreshnik during Zapad-2025", publisher: "Euromaidan Press", date: 2025-09-16, tier: 3}
+  - to: IND
+    layer: action
+    type: visit
+    summary: "Putin's state visit to Delhi on 4-5 Dec 2025 (the 23rd annual summit, the first since 2021): uninterrupted fuel supplies reaffirmed and a trade target of USD 100bn by 2030; Modi and Putin met again in Bishkek (31 Aug 2026) and New Delhi (11 Sep 2026), where the BRICS declaration dropped Ukraine and Modi accepted the invitation to the next summit in Russia."
+    since: 2025-12-04
+    until: null
+    last_verified: 2026-10-14
+    confidence: A
+    sources:
+      - {url: "https://indbiz.gov.in/?p=37328", title: "Putin arrives in Delhi for two-day India-Russia summit marking 25 years of strategic partnership", publisher: "Indbiz (Ministry of External Affairs portal)", date: 2025-12-04, tier: 1}
+      - {url: "https://newsonair.gov.in/pm-modi-and-russian-president-putin-discuss-issues-of-mutual-interest-during-bilateral-talks/", title: "PM Modi and Russian President Putin discuss issues of mutual interest during bilateral talks", publisher: "All India Radio (state broadcaster, official statement)", date: 2026-09-11, tier: 1}
+      - {url: "https://www.indiatoday.in/world/story/brics-summit-new-delhi-joint-declaration-makes-no-mention-of-ukraine-war-marks-shift-from-rio-2993451-2026-09-13", title: "BRICS joint declaration in New Delhi makes no mention of Ukraine war", publisher: "India Today", date: 2026-09-13, tier: 3}
