@@ -1,14 +1,170 @@
 id: PHL
 name: Philippines
+short: Philippines
 type: state
+coords: [120.98, 14.6]
 iso2: ph
 wikipedia: https://en.wikipedia.org/wiki/Philippines
-coords:
-- 120.98
-- 14.6
 seat: Manila
-regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+regions: [southeast-asia-oceania]
+card: full
+tier: protagonist
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Hold what it has in the West Philippine Sea without a war: the BRP Sierra Madre at Second Thomas Shoal (Ayungin), access to Scarborough (Bajo de Masinloc) and Sabina, and the exclusive economic zone that the 2016 arbitral award confirmed. The aim is to make every Chinese move a visible violation of law, so that a fait accompli (the September 2025 'nature reserve' at Scarborough, the May-June 2026 floating platform) costs Beijing more than it gains."
+      confidence: B
+      sources:
+        - {url: "https://pca-cpa.org/en/cases/7/", title: "The South China Sea Arbitration (Philippines v. China), Case 2013-19", publisher: "Permanent Court of Arbitration", date: 2016-07-12, tier: 1}
+        - {url: "https://bworldonline.com/?p=697924", title: "Manila rejects Beijing plan to set up nature reserve at Scarborough Shoal", publisher: "BusinessWorld", date: 2025-09, tier: 3}
+        - {url: "https://www.aljazeera.com/amp/news/2026/7/24/philippines-accuses-china-of-using-water-cannon-on-vessels-for-second-day", title: "Philippines accuses China of using water cannon on vessels for second day", publisher: "Al Jazeera", date: 2026-07-24, tier: 3}
+        - {url: "https://www.philstar.com/headlines/2026/06/17/2535894/mission-completed-chinese-floating-platform-gone-scarborough-shoal", title: "Mission completed: Chinese floating platform gone from Scarborough Shoal", publisher: "The Philippine Star", date: 2026-06-17, tier: 3}
+    - rank: 2
+      text: "Keep the American shield credible, explicit and physically present: the 1951 Mutual Defense Treaty read as covering Philippine coast-guard vessels anywhere in the South China Sea, nine EDCA sites, Task Force Philippines, and the Typhon and NMESIS missile batteries that have stayed on Philippine soil since 2024. Manila asks Washington for what the treaty text leaves undefined."
+      confidence: A
+      sources:
+        - {url: "https://avalon.law.yale.edu/20th_century/phil001.asp", title: "Mutual Defense Treaty between the Republic of the Philippines and the United States of America", publisher: "Avalon Project, Yale Law School (treaty text)", date: 1951-08-30, tier: 1}
+        - {url: "https://seapowermagazine.org/united-states-philippines-joint-statement-on-secretary-hegseths-inaugural-visit-to-the-philippines/?print=pdf", title: "United States-Philippines Joint Statement on Secretary Hegseth's Inaugural Visit to the Philippines", publisher: "US and Philippine defence departments (text via Sea Power magazine)", date: 2025-03-29, tier: 1}
+        - {url: "https://www.navalnews.com/naval-news/2026/05/u-s-missile-surge-reach-showcased-at-philippine-balikatan-drills/", title: "U.S. Missile Surge, Reach Showcased at Philippine Balikatan Drills", publisher: "Naval News", date: 2026-05, tier: 3}
+    - rank: 3
+      text: "Make the shield plural, so that no single patron or single American administration is all of it: reciprocal-access or visiting-forces treaties with the US (1998), Australia (2012), Japan (RAA in force 11 Sep 2025), New Zealand and Canada (signed 2025, ratified by the Senate 11 Aug 2026) and France (signed 26 Mar 2026, ratified 8 Oct 2026), a visiting-forces negotiation with the UK, and arms from South Korea and India."
+      confidence: B
+      sources:
+        - {url: "https://mb.com.ph/2026/08/12/dnd-hails-senate-ok-of-defense-pact-with-canada-new-zealand", title: "DND hails Senate OK of defense pact with Canada, New Zealand", publisher: "Manila Bulletin", date: 2026-08-12, tier: 3}
+        - {url: "https://www.philstar.com/region/2026/10/09/2561952/senate-ratifies-sovfa-france", title: "Senate ratifies SOVFA with France", publisher: "The Philippine Star", date: 2026-10-09, tier: 3}
+        - {url: "https://www.lowyinstitute.org/the-interpreter/new-zealand-latest-join-philippines-building-network-defence-partners-amid-south", title: "New Zealand the latest to join the Philippines' building network of defence partners", publisher: "Lowy Institute", date: 2025, tier: 2}
+        - {url: "https://news.usni.org/2025/08/12/new-philippine-japanese-defense-pact-to-go-into-effect-next-month", title: "New Philippine-Japanese defense pact to go into effect next month", publisher: "USNI News", date: 2025-08-12, tier: 3}
+    - rank: 4
+      text: "Use the 2026 ASEAN chairmanship to conclude a South China Sea Code of Conduct that is 'effective, substantive' and anchored in UNCLOS, and to keep ASEAN together (Myanmar's disputed elections, the Thai-Cambodian ceasefire). The summit is due in Manila on 16-18 Nov 2026; analysts at CSIS and Foreign Policy expect little more than symbolism."
+      confidence: B
+      sources:
+        - {url: "https://mb.com.ph/2026/07/23/lazaro-sees-political-will-to-conclude-south-china-sea-code-this-year", title: "Lazaro sees political will to conclude South China Sea code this year", publisher: "Manila Bulletin", date: 2026-07-23, tier: 3}
+        - {url: "https://www.csis.org/analysis/rhetoric-vs-reality-philippines-asean-and-south-china-sea", title: "Rhetoric vs. Reality: The Philippines, ASEAN, and the South China Sea", publisher: "CSIS (Asia Maritime Transparency Initiative)", date: 2025-11-07, tier: 2}
+        - {url: "https://foreignpolicy.com/2026/01/19/philippines-asean-southeast-asia-china-us-trump-tariffs-security-south-china-sea-myanmar/", title: "The Philippines Are in for a Turbulent 2026", publisher: "Foreign Policy", date: 2026-01-19, tier: 3}
+    - rank: 5
+      text: "Hold the government together through the Marcos-Duterte split: the Senate impeachment trial of Vice President Sara Duterte (second impeachment, House vote of 11 May 2026), the Duterte trial at the ICC (opens 30 Nov 2026), the flood-control corruption scandal, and the 2028 succession. The foreign-policy line toward China is at stake in all of them."
+      confidence: B
+      sources:
+        - {url: "https://www.icc-cpi.int/news/duterte-case-trial-open-30-november-2026", title: "Press Release: Duterte case trial to open on 30 November 2026", publisher: "International Criminal Court", date: 2026-05-27, tier: 1}
+        - {url: "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/24/sara-dutertes-presidential-bid-in-peril-after-key-senate-vote", title: "Sara Duterte's presidential bid in peril after key Senate vote", publisher: "The Star (wire report)", date: 2026-09-24, tier: 3}
+        - {url: "https://www.philstar.com/bansa/2026/07/20/2543286/sws-trust-president-marcos-drops-record-low-34-percent", title: "SWS: Trust in President Marcos drops to record-low 34 percent", publisher: "The Philippine Star", date: 2026-07-20, tier: 3}
+    - rank: 6
+      text: "Keep the economy, and the peace in the south, from becoming leverage against it: diversify markets (the EU free-trade talks, now in their sixth round), protect overseas workers (2.19 million, remittances of USD 35.6bn or 7.3% of GDP in 2025) and finish the Mindanao settlement, whose first parliamentary election was held on 14 Sep 2026."
+      confidence: B
+      sources:
+        - {url: "https://www.philstar.com/business/2026/02/17/2508451/remittances-reach-record-high-356-billion/amp/", title: "Remittances reach record high $35.6 billion", publisher: "The Philippine Star", date: 2026-02-17, tier: 3}
+        - {url: "https://eeas.europa.eu/delegations/philippines/sixth-round-negotiations-european-union-%E2%80%93-philippines-free-trade-agreement-eu-ph-fta_en", title: "Sixth round of negotiations for a European Union - Philippines Free Trade Agreement", publisher: "European External Action Service", date: 2026-05, tier: 1}
+        - {url: "https://www.khaleejtimes.com/world/asia/hung-parliament-philippines-barmm-elections-end-with-no-party-winning-majority", title: "Hung parliament: Philippines' BARMM elections end with no party winning majority", publisher: "Khaleej Times", date: 2026-09-16, tier: 3}
+
+  means:
+    - domain: informational
+      text: "'Assertive transparency' since February 2023: the Coast Guard (spokesman Jay Tarriela) and the National Task Force for the West Philippine Sea publish video and satellite imagery of nearly every incident, embed journalists on resupply missions and protest each act formally. The weapon is exposure, aimed at foreign audiences and at the domestic one; the National Security Council itself judged in 2024 that it raised awareness but did not change Chinese behaviour."
+      confidence: B
+      sources:
+        - {url: "https://www.rsis.edu.sg/media-highlight/idss/no-china-backlash-so-far-the-philippines-new-assertive-transparency-policy-in-the-south-china-sea/", title: "No China backlash, so far: the Philippines' new assertive transparency policy in the South China Sea", publisher: "RSIS (Nanyang Technological University)", date: 2023-12-11, tier: 2}
+        - {url: "https://www.philstar.com/headlines/2026/06/17/2535894/mission-completed-chinese-floating-platform-gone-scarborough-shoal", title: "Mission completed: Chinese floating platform gone from Scarborough Shoal", publisher: "The Philippine Star", date: 2026-06-17, tier: 3}
+    - domain: diplomatic
+      text: "Law and coalition: the 2016 award as the fixed reference (a joint statement by 14 countries marked its tenth anniversary in July 2026), formal protests alongside open channels (Lazaro met Wang Yi on 22 Jul 2026, the first foreign-minister bilateral in two years, after protesting the Ayungin baton incident), the ASEAN chair, and a ring of status-of-forces agreements."
+      confidence: B
+      sources:
+        - {url: "https://mindanews.com/top-stories/2026/07/philippines-and-13-other-countries-reaffirm-ruling-rejecting-chinas-claims-in-south-china-sea/", title: "Philippines and 13 other countries reaffirm ruling rejecting China's claims in South China Sea", publisher: "MindaNews", date: 2026-07, tier: 3}
+        - {url: "https://mb.com.ph/2026/07/22/philippines-can-protest-china-while-keeping-dialogue-openlazaro", title: "Philippines can protest China while keeping dialogue open - Lazaro", publisher: "Manila Bulletin", date: 2026-07-22, tier: 3}
+    - domain: military
+      text: "The Comprehensive Archipelagic Defense Concept and the Re-Horizon 3 modernisation (about PHP 2 trillion over ten years): coastal anti-ship missiles (three BrahMos batteries from India, USD 375m), FA-50 fighters (12 more ordered in June 2025), HD Hyundai frigates and offshore patrol vessels, Japanese radars and boats, and exercises that rise in scale (Balikatan 2026: 20 Apr-8 May, a Tomahawk fired from a Typhon at Tacloban; Alon 2025 with Australia: 3,600 personnel; Multilateral Maritime Cooperative Activities with Japan, the US and Australia)."
+      confidence: B
+      sources:
+        - {url: "https://newsinfo.inquirer.net/1895629/marcos-oks-militarys-p2-trillion-wish-list-for-weapons-equipment", title: "Marcos OKs military's P2-trillion wish list for weapons, equipment", publisher: "Philippine Daily Inquirer", date: 2024, tier: 3}
+        - {url: "https://www.navalnews.com/naval-news/2026/05/u-s-missile-surge-reach-showcased-at-philippine-balikatan-drills/", title: "U.S. Missile Surge, Reach Showcased at Philippine Balikatan Drills", publisher: "Naval News", date: 2026-05, tier: 3}
+        - {url: "https://news.usni.org/2025/08/19/philippines-australia-hold-largest-bilateral-military-drills-to-date-u-s-marines-to-join", title: "Philippines, Australia hold largest bilateral military drills to date; U.S. Marines to join", publisher: "USNI News", date: 2025-08-19, tier: 3}
+        - {url: "https://www.navalnews.com/naval-news/2025/12/hd-hhi-signs-contract-to-build-two-new-frigates-to-philippine-navy/", title: "HD HHI signs contract to build two new frigates for Philippine Navy", publisher: "Naval News", date: 2025-12, tier: 3}
+    - domain: economic
+      text: "Market opening as insurance: the July 2025 trade deal with Washington (19% tariff, zero tariff on US goods), the EU free-trade negotiation, a Vietnam partnership upgraded to 'enhanced strategic' in June 2026 (trade above USD 7bn), and the remittance river itself, which makes Manila a creditor of every labour market that employs Filipinos."
+      confidence: B
+      sources:
+        - {url: "https://www.supplychaindive.com/news/us-philippines-tariff-deal-trump-marcos/", title: "US-Philippines tariff deal, Trump and Marcos", publisher: "Supply Chain Dive", date: 2025-07, tier: 3}
+        - {url: "https://mofa.gov.vn/en/web/ministry-of-foreign-affairs/detail/chi-tiet/joint-statement-on-the-enhanced-strategic-partnership-between-the-republic-of-the-philippines-and-the-socialist-republic-of-viet-nam-59970-177.html", title: "Joint Statement on the Enhanced Strategic Partnership between the Philippines and Viet Nam", publisher: "Ministry of Foreign Affairs of Viet Nam", date: 2026-06, tier: 1}
+
+  constraints:
+    - text: "A capability gap that money has not closed. The Coast Guard and Navy face a Chinese coast guard of many times their number (12 Chinese coast-guard and three militia vessels at Scarborough on 24 Jul 2026), and a large share of the armed forces' modernisation budget has sat in 'unprogrammed appropriations' that depend on surplus revenue."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/amp/news/2026/7/24/philippines-accuses-china-of-using-water-cannon-on-vessels-for-second-day", title: "Philippines accuses China of using water cannon on vessels for second day", publisher: "Al Jazeera", date: 2026-07-24, tier: 3}
+        - {url: "https://tribune.net.ph/2025/07/07/modernizing-afp-with-hand-me-downs", title: "Modernizing AFP with hand-me-downs", publisher: "Daily Tribune", date: 2025-07-07, tier: 3}
+    - text: "The shield belongs to someone else. Washington's 2025 National Security Strategy omitted the Philippines and Trump seeks stable ties with Beijing, which Foreign Policy reads as a risk of emboldening China in the Philippine zone; at the same time the US took the 19% tariff of 2025 to 12.5% under Section 301 on 24 Jul 2026 (about 34% of Philippine exports to the US covered) over forced-labour import rules."
+      confidence: B
+      sources:
+        - {url: "https://foreignpolicy.com/2026/01/19/philippines-asean-southeast-asia-china-us-trump-tariffs-security-south-china-sea-myanmar/", title: "The Philippines Are in for a Turbulent 2026", publisher: "Foreign Policy", date: 2026-01-19, tier: 3}
+        - {url: "https://tribune.net.ph/2026/07/24/philippine-exports-hit-with-125-us-tariff", title: "Philippine exports hit with 12.5% US tariff", publisher: "Daily Tribune", date: 2026-07-24, tier: 3}
+    - text: "China is the first source of imports: 28.6% of Philippine imports in 2025 (USD 38.4bn, a bilateral deficit of USD 29bn) and 11% of exports. An economic counter-strike by Beijing would cost more than the Philippines could replace quickly."
+      confidence: B
+      sources:
+        - {url: "https://tribune.net.ph/2026/08/28/china-tops-imports-as-us-leads-exports", title: "China tops imports as US leads exports", publisher: "Daily Tribune (PSA data)", date: 2026-08-28, tier: 3}
+        - {url: "https://tribune.net.ph/2026/05/28/philippine-exports-surge-153-in-2025-psa", title: "Philippine exports surge 15.3% in 2025 - PSA", publisher: "Daily Tribune (PSA data)", date: 2026-05-28, tier: 3}
+    - text: "A weak president with a stronger rival. Marcos's trust fell to 28% (Pulse Asia, June 2026) or 34% (SWS, Q2 2026) while Sara Duterte holds 57-58%; the flood-control scandal reached his cousin and former House Speaker; Duterte-aligned candidates did well in the May 2025 Senate race. The vice president's father favoured accommodation with Beijing."
+      confidence: B
+      sources:
+        - {url: "https://www.philstar.com/bansa/2026/07/20/2543286/sws-trust-president-marcos-drops-record-low-34-percent", title: "SWS: Trust in President Marcos drops to record-low 34 percent", publisher: "The Philippine Star", date: 2026-07-20, tier: 3}
+        - {url: "https://www.internationalaffairs.org.au/australianoutlook/marcos-duterte-power-struggle-in-the-philippines-post-2025-mid-term-elections/", title: "Marcos-Duterte Power Struggle in the Philippines: Post 2025 Mid-Term Elections", publisher: "Australian Institute of International Affairs", date: 2025, tier: 2}
+        - {url: "https://www.philstar.com/headlines/2025/12/03/2491650/flood-control-scandal-backfires-marcos-ratings-hit-new-low/amp/", title: "Flood control scandal backfires as Marcos ratings hit new low", publisher: "The Philippine Star", date: 2025-12-03, tier: 3}
+    - text: "ASEAN consensus is thin. China has not agreed to join monthly Code of Conduct meetings, the draft lacks enforcement, and the July 2026 statement on the arbitral award was signed by 14 countries, none of them (on the report we read) another ASEAN member. Manila chairs a body that will not follow it all the way."
+      confidence: C
+      sources:
+        - {url: "https://www.csis.org/analysis/rhetoric-vs-reality-philippines-asean-and-south-china-sea", title: "Rhetoric vs. Reality: The Philippines, ASEAN, and the South China Sea", publisher: "CSIS (Asia Maritime Transparency Initiative)", date: 2025-11-07, tier: 2}
+        - {url: "https://mindanews.com/top-stories/2026/07/philippines-and-13-other-countries-reaffirm-ruling-rejecting-chinas-claims-in-south-china-sea/", title: "Philippines and 13 other countries reaffirm ruling rejecting China's claims in South China Sea", publisher: "MindaNews", date: 2026-07, tier: 3}
+    - text: "Workers abroad are both income and hostage. 2.19 million overseas workers (PSA, 2024) sent a record USD 35.6bn in 2025, 39.7% of it from the United States and 6.6% from Saudi Arabia; a US remittance tax, a Gulf crisis or a war over Taiwan, where many Filipinos work, would hit the budget of households and the room for manoeuvre of the state."
+      confidence: B
+      sources:
+        - {url: "https://www.philstar.com/business/2026/02/17/2508451/remittances-reach-record-high-356-billion/amp/", title: "Remittances reach record high $35.6 billion", publisher: "The Philippine Star", date: 2026-02-17, tier: 3}
+        - {url: "https://www.gmanetwork.com/news/pinoyabroad/dispatch/969755/ofws-grew-to-2-19m-in-2024-psa/story/", title: "OFWs grew to 2.19M in 2024 - PSA", publisher: "GMA News", date: 2025, tier: 3}
+
+  paradoxes:
+    - text: "The weapon of publicity undoes the secrecy a compromise needs. Manila announced a 'provisional arrangement' for Second Thomas Shoal in July 2024, Beijing described its terms in public (advance notice, inspection, no building materials), and in August 2026 the defence secretary said there was 'neither an agreement nor an understanding'. The arrangement has held for 13 resupply missions to March 2026, yet each side's account makes the other's version unacceptable at home."
+      confidence: B
+      sources:
+        - {url: "https://amti.csis.org/divergence-and-tacit-understanding-in-the-china-philippines-provisional-arrangement-at-second-thomas-shoal/", title: "Divergence and tacit understanding in the China-Philippines provisional arrangement at Second Thomas Shoal", publisher: "CSIS (Asia Maritime Transparency Initiative)", date: 2026-03-23, tier: 2}
+        - {url: "https://tribune.net.ph/2026/08/08/defense-chief-china-deal-does-not-exist", title: "Defense chief: China deal does not exist", publisher: "Daily Tribune", date: 2026-08-09, tier: 3}
+    - text: "The shield draws the thunderbolt. Typhon and NMESIS launchers on Luzon and in the Batanes, a Tomahawk fired from Tacloban in May 2026 and Marcos's own remark in August 2025 that the Philippines would be 'pulled into' any war over Taiwan make the islands a target and a theatre, exactly what the alliance is meant to avoid; the same Marcos still reaffirms the One China policy (Lazaro, 22 Jul 2026)."
+      confidence: B
+      sources:
+        - {url: "https://www.navalnews.com/naval-news/2026/05/u-s-missile-surge-reach-showcased-at-philippine-balikatan-drills/", title: "U.S. Missile Surge, Reach Showcased at Philippine Balikatan Drills", publisher: "Naval News", date: 2026-05, tier: 3}
+        - {url: "https://www.koreatimes.co.kr/amp/world/20250811/marcos-says-philippines-will-be-pulled-into-any-war-over-taiwan-despite-chinas-protest", title: "Marcos says Philippines will be pulled into any war over Taiwan, despite China's protest", publisher: "The Korea Times (AP-Yonhap)", date: 2025-08-11, tier: 3}
+        - {url: "https://mb.com.ph/2026/07/22/philippines-can-protest-china-while-keeping-dialogue-openlazaro", title: "Philippines can protest China while keeping dialogue open - Lazaro", publisher: "Manila Bulletin", date: 2026-07-22, tier: 3}
+    - text: "Chairing ASEAN to write a code with China while building coalitions against it. A Code of Conduct needs Beijing's signature, and Beijing is unlikely to give the chair a political victory; meanwhile Manila's bilateral pacts and its 14-country statement bypass the consensus on which ASEAN lives. The two shields, regional law and allied force, pull in opposite directions, and CSIS expects the allied one to carry the weight."
+      confidence: B
+      sources:
+        - {url: "https://www.csis.org/analysis/rhetoric-vs-reality-philippines-asean-and-south-china-sea", title: "Rhetoric vs. Reality: The Philippines, ASEAN, and the South China Sea", publisher: "CSIS (Asia Maritime Transparency Initiative)", date: 2025-11-07, tier: 2}
+        - {url: "https://foreignpolicy.com/2026/01/19/philippines-asean-southeast-asia-china-us-trump-tariffs-security-south-china-sea-myanmar/", title: "The Philippines Are in for a Turbulent 2026", publisher: "Foreign Policy", date: 2026-01-19, tier: 3}
+    - text: "Prosecuting the past strengthens the camp that would reverse the present. The arrest of Rodrigo Duterte for the ICC (March 2025) and the confirmation of charges (23 Apr 2026) delivered justice, but Duterte-aligned candidates did well in May 2025, his daughter leads the trust ratings at 57-58%, and the Senate verdict decides whether she can run in 2028. A foreign policy built on the 2016 award depends on a result in 2028 that the policy's own domestic costs make less likely."
+      confidence: B
+      sources:
+        - {url: "https://www.icc-cpi.int/news/icc-pre-trial-chamber-i-confirms-all-charges-against-rodrigo-roa-duterte-and-commits-him-trial", title: "ICC Pre-Trial Chamber I confirms all charges against Rodrigo Roa Duterte and commits him to trial", publisher: "International Criminal Court", date: 2026-04-23, tier: 1}
+        - {url: "https://usasean.org/article/2025-midterm-elections-senate-realignment-sets-stage-vp-impeachment-2028-presidential", title: "2025 midterm elections: Senate realignment sets stage for VP impeachment and 2028 presidential race", publisher: "US-ASEAN Business Council", date: 2025, tier: 2}
+        - {url: "https://www.philstar.com/bansa/2026/07/20/2543286/sws-trust-president-marcos-drops-record-low-34-percent", title: "SWS: Trust in President Marcos drops to record-low 34 percent", publisher: "The Philippine Star", date: 2026-07-20, tier: 3}
+    - text: "A country that exports its people has hostages in every theatre. Marcos gave 'the large number of Filipinos in Taiwan' as a reason the Philippines could not stay out of a Taiwan war, and in 2018 and 2023 the Kuwait labour disputes showed that diplomacy toward a host state is bargaining over workers' lives. The remittance base that stabilises the economy is also the lever any adversary or host state can pull."
+      confidence: C
+      sources:
+        - {url: "https://www.koreatimes.co.kr/amp/world/20250811/marcos-says-philippines-will-be-pulled-into-any-war-over-taiwan-despite-chinas-protest", title: "Marcos says Philippines will be pulled into any war over Taiwan, despite China's protest", publisher: "The Korea Times (AP-Yonhap)", date: 2025-08-11, tier: 3}
+        - {url: "http://www.sunstar.com.ph/manila/local-news/2018/02/14/kuwait-calms-philippines-after-dead-worker-found-freezer-588911", title: "Kuwait calms Philippines after dead worker found in freezer", publisher: "SunStar Manila", date: 2018-02-14, tier: 3}
+
+  reading: |
+    The Philippines is a small naval power in a contest it cannot win by force and has
+    chosen not to fight by force. Its answer is two instruments of the weak: exposure
+    as the weapon (every Chinese act is filmed, dated and protested, so the grey zone
+    that Beijing chose in order to stay below the level of war becomes a legal and
+    reputational ledger) and alliance as the shield (a treaty of 1951 read to cover
+    coast-guard ships, nine sites, missile batteries, and since 2025 a ring of
+    visiting-forces agreements that makes the shield plural). Luttwak's logic shows
+    in the price of each. Transparency cannot be switched off for a compromise, so the
+    2024 understanding at Second Thomas Shoal is disowned at home even as it holds;
+    and the shield turns the archipelago into a forward base whose missiles, Marcos
+    admits, would pull the country into a Taiwan war. The alliance is also a bet on
+    two presidents: Washington's (a 2025 strategy that forgot Manila, a tariff moved
+    to 12.5% over forced labour) and Manila's own, because the foreign policy
+    depends on a government whose trust rating is 28-34% against a vice president
+    at 57-58% whose family prefers accommodation with Beijing. Hence China is graded
+    rival, not adversary: no side seeks the other's end, Lazaro protests and talks in
+    the same week, and 28.6% of imports still come from China. Signals that are not
+    rows: the Philippines' own defence secretary denying an understanding the foreign
+    ministry announced; and a Code of Conduct that Manila chairs toward and doubts.
