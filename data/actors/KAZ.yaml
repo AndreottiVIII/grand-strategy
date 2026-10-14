@@ -1,14 +1,182 @@
 id: KAZ
 name: Kazakhstan
+short: Kazakhstan
 type: state
+coords: [71.43, 51.13]
 iso2: kz
 wikipedia: https://en.wikipedia.org/wiki/Kazakhstan
-coords:
-- 71.43
-- 51.13
 seat: Astana
-regions:
-- world
-card: stub
-tier: minor
+regions: ['south-central-asia']
+card: full
+tier: protagonist
+last_verified: 2026-10-12
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep sovereignty and territorial integrity without ever choosing a patron: the official 'multi-vector' line of 2020-2030 and Tokayev's practice of being received by Putin, Xi and Trump within weeks of one another (Washington 6 Nov 2025, Moscow 11-12 Nov 2025, Tianjin Sept 2025). Territorial integrity is the one principle Astana will not trade, which is why it refused to recognise the Donetsk and Luhansk 'republics' in Putin's presence."
+      confidence: B
+      sources:
+        - {url: "https://www.akorda.kz/en/legal_acts/decrees/on-the-concept-of-the-foreign-policy-of-the-republic-of-kazakhstan-for-2020-2030", title: "On the Concept of the Foreign Policy of the Republic of Kazakhstan for 2020-2030", publisher: "Presidential Administration of Kazakhstan (Akorda)", date: 2020, tier: 1}
+        - {url: "https://www.hudson.org/politics-government/kazakhstan-worlds-most-important-hedger-bets-stability-ken-moriyasu", title: "Kazakhstan, the world's most important hedger, bets on stability", publisher: "Hudson Institute", date: 2026, tier: 2}
+        - {url: "https://timesca.com/between-trump-and-putin-tokayev-emerges-as-a-regional-diplomatic-powerbroker/", title: "Between Trump and Putin, Tokayev emerges as a regional diplomatic powerbroker", publisher: "The Times of Central Asia", date: 2025-11-13, tier: 3}
+        - {url: "https://intellinews.com/face-to-face-with-putin-kazakhstan-s-president-refuses-to-recognise-ukraine-breakaway-republics-248002/", title: "Face to face with Putin, Kazakhstan's president refuses to recognise Ukraine breakaway republics", publisher: "bne IntelliNews", date: 2022-06-17, tier: 3}
+    - rank: 2
+      text: "Keep the oil flowing and find more than one way out for it. About 80% of crude exports leave through the Russian-controlled CPC pipeline to Novorossiysk (Russian companies hold 51% of the consortium); the answers are the China pipelines, the Trans-Caspian Middle Corridor (about 3 Mt in January-August 2026, +22%), and Kazakh crude to Germany by Druzhba and to Ust-Luga. Ukrainian drones on the CPC terminal (29 Nov 2025) and on KazMunayGas tankers (January 2026) cost the 2026 output target 2 Mt."
+      confidence: B
+      sources:
+        - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2026-02-04/ukrainian-attacks-cpc-oil-pipeline-outlook-kazakhstans-oil-sector", title: "Ukrainian attacks on the CPC oil pipeline and the outlook for Kazakhstan's oil sector", publisher: "OSW", date: 2026-02-04, tier: 2}
+        - {url: "https://pgjonline.com/news/2026/august/kazakhstan-cuts-2026-oil-production-goal-after-ukrainian-cpc-strikes", title: "Kazakhstan cuts 2026 oil production goal after Ukrainian CPC strikes", publisher: "Pipeline & Gas Journal", date: 2026-08, tier: 3}
+        - {url: "https://report.az/en/infrastructure/cargo-traffic-via-middle-corridor-exceeds-3-million-tons-in-8-months", title: "Cargo traffic via Middle Corridor exceeds 3 million tons in 8 months", publisher: "Report.az", date: 2026-09, tier: 3}
+    - rank: 3
+      text: "Manage the succession and the regime's legitimacy after January 2022: a new constitution approved on 15 Mar 2026 (87.15% yes, turnout 73.12%) in force from 1 Jul 2026, with a single-chamber Kurultai of 145 deputies, a restored vice-presidency and wider presidential appointment power, so that the multi-vector policy outlives Tokayev (term to 2029)."
+      confidence: B
+      sources:
+        - {url: "https://verfassungsblog.de/kazakhstan-constitution/", title: "Kazakhstan's new constitution", publisher: "Verfassungsblog", date: 2026-03-12, tier: 2}
+        - {url: "https://www.cevro.cz/en/caps/kazakhstan-adopts-new-constitution-after-march-2026-referendum", title: "Kazakhstan adopts new constitution after March 2026 referendum", publisher: "Cevro Institut", date: 2026-03, tier: 2}
+        - {url: "https://www.hudson.org/politics-government/kazakhstan-worlds-most-important-hedger-bets-stability-ken-moriyasu", title: "Kazakhstan, the world's most important hedger, bets on stability", publisher: "Hudson Institute", date: 2026, tier: 2}
+    - rank: 4
+      text: "Turn the subsoil into leverage: critical minerals and uranium (Kazatomprom produced about 25,800 tU in 2025, roughly a fifth of world primary output) sold to whoever pays and builds, with Washington (Cove tungsten, USD 1.1bn, 70% Cove), Brussels (raw-materials roadmap) and Beijing all invited in, and Chevron's Tengiz expansion (FGP completed 2025) as the anchor of US capital."
+      confidence: B
+      sources:
+        - {url: "https://www.world-nuclear-news.org/articles/cameco-kazatomprom-release-2025-figures", title: "Cameco, Kazatomprom release 2025 production figures", publisher: "World Nuclear News", date: 2026, tier: 3}
+        - {url: "https://eurasianet.org/american-mining-entity-touted-by-trump-seals-deal-with-kazakhstan", title: "American mining entity touted by Trump seals deal with Kazakhstan", publisher: "Eurasianet", date: 2026, tier: 3}
+        - {url: "https://www.sec.gov/Archives/edgar/data/93410/000009341026000078/cvx-20251231.htm", title: "Chevron Corp, Form 10-K for fiscal year 2025 (Tengizchevroil)", publisher: "US Securities and Exchange Commission", date: 2026, tier: 1}
+    - rank: 5
+      text: "Build a first nuclear plant to cover the baseload gap: a referendum on 6 Oct 2024 (71.12% yes, turnout about 63.7%) and an agreement signed with Rosatom on 28 May 2026 for a plant at Ulken on Lake Balkhash (Russia to finance 85%, commissioning around 2035-36), chosen over CNNC, EDF and KHNP."
+      confidence: B
+      sources:
+        - {url: "https://www.themoscowtimes.com/2026/05/28/russia-signs-agreement-to-build-first-nuclear-power-plant-in-kazakhstan-a92868", title: "Russia signs agreement to build first nuclear power plant in Kazakhstan", publisher: "The Moscow Times", date: 2026-05-28, tier: 3}
+        - {url: "https://world-nuclear-news.org/articles/kazakhstan-referendum-backs-new-nuclear-energy", title: "Kazakhstan referendum backs new nuclear energy", publisher: "World Nuclear News", date: 2024-10, tier: 3}
+    - rank: 6
+      text: "Be the convener of Central Asia and a useful neutral: C5+1 and China-Central Asia summits, the Aral and water agreements with Uzbekistan, Kyrgyzstan and Tajikistan, a railway to Herat, an offer to host Russia-Ukraine talks 'if both leaders agree' (Tokayev, 'not a mediator'), the Abraham Accords (6 Nov 2025) and a founding seat on Trump's Board of Peace (22 Jan 2026)."
+      confidence: B
+      sources:
+        - {url: "https://timesca.com/tokayev-in-moscow-balancing-friendship-and-strategy/", title: "Tokayev in Moscow: balancing friendship and strategy", publisher: "The Times of Central Asia", date: 2025-11-14, tier: 3}
+        - {url: "https://www.euronews.com/2026/01/22/kazakhstan-joins-donald-trumps-board-of-peace-as-one-of-19-founding-countries", title: "Kazakhstan joins Donald Trump's Board of Peace as one of 19 founding countries", publisher: "Euronews", date: 2026-01-22, tier: 3}
+        - {url: "https://www.intellinews.com/xi-signs-treaty-to-elevate-china-s-ties-with-central-asia-at-astana-summit-386537/", title: "Xi signs treaty to elevate China's ties with Central Asia at Astana summit", publisher: "bne IntelliNews", date: 2025-06-17, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "Summit stacking: the C5+1 in Washington (6 Nov 2025), a state visit to Moscow five days later where a declaration raised ties to 'comprehensive strategic partnership and alliance' (Lavrov absent from the talks), Xi in Astana (June 2025) and Shanghai (16 Jul 2026), Brussels (June 2026), Erdogan in Astana (14 May 2026). Each patron gets a document, none gets exclusivity; OSCE, SCO, OTS and OIC observers were invited to the March 2026 referendum."
+      confidence: B
+      sources:
+        - {url: "https://timesca.com/between-trump-and-putin-tokayev-emerges-as-a-regional-diplomatic-powerbroker/", title: "Between Trump and Putin, Tokayev emerges as a regional diplomatic powerbroker", publisher: "The Times of Central Asia", date: 2025-11-13, tier: 3}
+        - {url: "https://www.yahoo.com/news/articles/russia-kazakhstan-sign-strategic-partnership-declaration-182658867.html", title: "Russia, Kazakhstan sign strategic partnership declaration", publisher: "Yahoo News (wire)", date: 2025-11-12, tier: 3}
+        - {url: "https://www.mfa.gov.cn/eng/xw/zyxw/202607/t20260716_11984340.html", title: "Xi Jinping meets Tokayev in Shanghai", publisher: "Ministry of Foreign Affairs of China", date: 2026-07-16, tier: 1}
+    - domain: informational
+      text: "Principle as shield: territorial integrity invoked against the Donetsk and Luhansk 'republics' (17 Jun 2022, 'quasi-state formations', in Putin's presence), 'not a mediator' on Ukraine, a foreign ministry that calls the CPC terminal 'an exclusively civilian facility'; at home, a push of Kazakh over Russian in broadcasting (draft media law raising the state-language quota from 50% to 70%)."
+      confidence: B
+      sources:
+        - {url: "https://intellinews.com/face-to-face-with-putin-kazakhstan-s-president-refuses-to-recognise-ukraine-breakaway-republics-248002/", title: "Face to face with Putin, Kazakhstan's president refuses to recognise Ukraine breakaway republics", publisher: "bne IntelliNews", date: 2022-06-17, tier: 3}
+        - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2026-02-04/ukrainian-attacks-cpc-oil-pipeline-outlook-kazakhstans-oil-sector", title: "Ukrainian attacks on the CPC oil pipeline and the outlook for Kazakhstan's oil sector", publisher: "OSW", date: 2026-02-04, tier: 2}
+        - {url: "https://www.themoscowtimes.com/2026/10/07/kazakhstan-moves-to-promote-its-language-over-russian", title: "Kazakhstan moves to promote its language over Russian", publisher: "The Moscow Times (AFP)", date: 2023-10-06, tier: 3}
+    - domain: military
+      text: "Collective-security membership kept as insurance (CSTO, whose 2,500-strong force, about 2,000 of them Russian, secured Astana's strategic sites on 6-19 Jan 2022) while hardware diversifies: the Turkish ANKA drone, first ordered in 2021 and since May 2026 to be built in Kazakhstan by a Kazakhstan Engineering - Turkish Aerospace joint venture."
+      confidence: B
+      sources:
+        - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2022-01-10/kazakhstan-csto-intervenes-protests-pacified", title: "Kazakhstan: the CSTO intervenes, the protests pacified", publisher: "OSW", date: 2022-01-10, tier: 2}
+        - {url: "https://kun.uz/en/news/2026/05/15/kazakhstan-to-become-overseas-production-base-for-turkish-anka-drones", title: "Kazakhstan to become overseas production base for Turkish ANKA drones", publisher: "Kun.uz", date: 2026-05-15, tier: 3}
+        - {url: "https://www.defensenews.com/space/2022/10/20/turkey-kazakhstan-deepen-relations-in-space-tech-drone-production/", title: "Turkey, Kazakhstan deepen relations in space tech, drone production", publisher: "Defense News", date: 2022-10-20, tier: 3}
+    - domain: economic
+      text: "Contracts as currency: 29 agreements worth about USD 17bn signed with US firms in Washington (John Deere, Boeing, Cove tungsten), 50 Airbus aircraft for EUR 7.1bn and USD 12bn of agreements in Brussels, a Chinese trade of about USD 49bn and USD 30bn of Chinese investment, Rosatom for the plant. Transit is the other coin: Kazakh grain as the first cargo through Azerbaijan to Armenia, uranium and oil rerouted via the Trans-Caspian."
+      confidence: B
+      sources:
+        - {url: "https://www.intellinews.com/first-deals-struck-at-us-central-asia-summit-include-boeing-aircraft-mining-and-agricultural-machinery-agreements-410258/", title: "First deals struck at US-Central Asia summit include Boeing aircraft, mining and agricultural machinery agreements", publisher: "bne IntelliNews", date: 2025-11-06, tier: 3}
+        - {url: "https://oilprice.com/Energy/Energy-General/Kazakhstan-Lands-12-Billion-in-EU-Deals-to-Expand-Energy-and-Trade-Ties.amp.html", title: "Kazakhstan lands USD 12 billion in EU deals to expand energy and trade ties", publisher: "OilPrice.com", date: 2026-06-25, tier: 3}
+        - {url: "https://astanatimes.com/2025/10/kazakh-grain-becomes-first-transit-cargo-from-azerbaijan-to-armenia/", title: "Kazakh Grain Becomes First Transit Cargo from Azerbaijan to Armenia", publisher: "The Astana Times", date: 2025-10, tier: 3}
+
+  constraints:
+    - text: "The debt of January 2022. Tokayev asked the CSTO for troops on 5 Jan 2022 as protests turned deadly; Russian-led troops arrived the next day and left by 19 Jan. Analysts at the time read the intervention as strengthening Tokayev at home and Russia's leverage in the region, and Russian commentators have treated it since as a rescue Astana must repay; Tokayev himself rebuked 'discord' sown by Russian politicians in June 2022."
+      confidence: B
+      sources:
+        - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2022-01-10/kazakhstan-csto-intervenes-protests-pacified", title: "Kazakhstan: the CSTO intervenes, the protests pacified", publisher: "OSW", date: 2022-01-10, tier: 2}
+        - {url: "https://www.ui.se/forskning/centrum-for-osteuropastudier/sceeus-commentary/russias-csto-intervention-in-kazakhstan-motives-risks-and-consequences", title: "Russia's CSTO intervention in Kazakhstan: motives, risks and consequences", publisher: "Swedish Institute of International Affairs (UI)", date: 2022-01, tier: 2}
+        - {url: "https://www.themoscowtimes.com/2026/10/07/ukraine-war-strains-ties-between-kazakhstan-and-russia", title: "Ukraine war strains ties between Kazakhstan and Russia", publisher: "The Moscow Times (AFP)", date: 2022-06-24, tier: 3}
+    - text: "Export geography: about 80% of oil exports go by the CPC to Novorossiysk, 51% owned by Russian companies; the China pipelines carry only about 28% of the CPC's capacity; the Middle Corridor was designed for 6 Mt against 100 Mt+ on the Russian route; the Karachaganak gas is processed at Orenburg under a contract running to 2038 (up to 9 bcm a year). Moscow can squeeze (CPC stoppages in 2022, the reported halt of Druzhba transit to Germany from 1 May 2026) without a shot."
+      confidence: B
+      sources:
+        - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2026-02-04/ukrainian-attacks-cpc-oil-pipeline-outlook-kazakhstans-oil-sector", title: "Ukrainian attacks on the CPC oil pipeline and the outlook for Kazakhstan's oil sector", publisher: "OSW", date: 2026-02-04, tier: 2}
+        - {url: "https://en.fergana.agency/news/146599/", title: "Russia set to cut Kazakh oil flows to Germany via Druzhba pipeline", publisher: "Fergana Agency (citing Reuters)", date: 2026-04-22, tier: 3}
+        - {url: "https://dgap.org/system/files/article_pdfs/DGAP%20Policy%20Brief_No-12_May2025_EN_0.pdf", title: "DGAP Policy Brief No. 12: EU connectivity in Central Asia", publisher: "DGAP", date: 2025-05, tier: 2}
+    - text: "A neighbour that is also a minority: ethnic Russians are about 15% of the population and Russian remains widely spoken; Russian television figures attacked Astana's Ukraine line in 2022 and a Russian deputy hinted at the northern regions. Every language or identity measure is read in Moscow as a signal."
+      confidence: B
+      sources:
+        - {url: "https://www.themoscowtimes.com/2026/10/07/kazakhstan-moves-to-promote-its-language-over-russian", title: "Kazakhstan moves to promote its language over Russian", publisher: "The Moscow Times (AFP)", date: 2023-10-06, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2022/6/24/whats-behind-kazakhstan-not-recognizing-ukraines-separatists", title: "Ukraine war: Is Kazakhstan going cool on Russia?", publisher: "Al Jazeera", date: 2022-06-24, tier: 3}
+    - text: "Sanctions exposure inside a customs union. As an EAEU member Kazakhstan shares a border regime with Russia; EU listings reached Kazakh entities (Kazstanex and Metallstan in the 16th package, 2025) and US Treasury listed CBD-Technologies for drone components. Astana's line is that re-export of sanctioned goods is barred and, per its customs service, unproven; critics point to parallel imports and a draft enforcement procedure withdrawn from the legal base."
+      confidence: B
+      sources:
+        - {url: "https://riskadvisory.com/news/kazakhstan-is-vulnerable-to-secondary-sanctions/", title: "Kazakhstan is vulnerable to secondary sanctions", publisher: "Risk Advisory", date: 2024, tier: 3}
+        - {url: "https://en.orda.kz/companies-in-kazakhstan-and-kyrgyzstan-included-in-new-eu-sanctions-package-10997/", title: "Companies in Kazakhstan and Kyrgyzstan included in new EU sanctions package", publisher: "Orda.kz", date: 2025, tier: 3}
+        - {url: "https://en.orda.kz/will-kazakhstan-and-europe-fall-out-over-russia-8351/", title: "Will Kazakhstan and Europe fall out over Russia?", publisher: "Orda.kz", date: 2025, tier: 3}
+    - text: "China's weight and the Xinjiang silence. China is the first trading partner (about USD 49bn in 2025) and the source of about USD 30bn of investment; Astana says nothing about the treatment of ethnic Kazakhs in Xinjiang, a sensitive point for the public, in a society where sinophobic sentiment has been a recurring worry for the government."
+      confidence: C
+      sources:
+        - {url: "https://timesca.com/astana-grapples-with-growing-sinophobic-sentiment-in-kazakhstan", title: "Astana grapples with growing sinophobic sentiment in Kazakhstan", publisher: "The Times of Central Asia (from Eurasia Daily Monitor)", date: 2018, tier: 3}
+        - {url: "https://www.mfa.gov.cn/eng/xw/zyxw/202607/t20260716_11984340.html", title: "Xi Jinping meets Tokayev in Shanghai", publisher: "Ministry of Foreign Affairs of China", date: 2026-07-16, tier: 1}
+        - {url: "https://novastan.org/en/wp-json/wp/v2/posts/48108", title: "Kazakhstan-China ties deepen, Xinjiang's Kazakhs remain a sensitive subject (from Lossi 36)", publisher: "Novastan", date: 2025-10-20, tier: 3}
+    - text: "A legitimacy deficit at home: the January 2022 unrest left an official toll of 164 dead, the 2024 nuclear vote saw 25% turnout in Almaty amid detentions of activists, and the 2026 constitution widens presidential powers while narrowing protected speech. A government that must justify itself needs external patrons less hostile to its methods."
+      confidence: B
+      sources:
+        - {url: "https://www.globalsecurity.org/wmd/library/news/kazakh/2024/kazakh-241007-rferl01.htm", title: "Kazakhstan referendum on nuclear plant (RFE/RL)", publisher: "RFE/RL", date: 2024-10-07, tier: 3}
+        - {url: "https://verfassungsblog.de/kazakhstan-constitution/", title: "Kazakhstan's new constitution", publisher: "Verfassungsblog", date: 2026-03-12, tier: 2}
+
+  paradoxes:
+    - text: "The troops that saved the regime fixed the price of every later act of independence. Calling in the CSTO in January 2022 gave Tokayev control at home and Moscow a claim on him; since then each defiance (no recognition of the Donetsk and Luhansk 'republics', 'not a mediator' on Ukraine) has been followed by a gesture of allegiance, up to the 'alliance' declaration of 12 Nov 2025 and the Rosatom contract of 28 May 2026. Independence is bought in instalments of loyalty."
+      confidence: B
+      sources:
+        - {url: "https://www.ui.se/forskning/centrum-for-osteuropastudier/sceeus-commentary/russias-csto-intervention-in-kazakhstan-motives-risks-and-consequences", title: "Russia's CSTO intervention in Kazakhstan: motives, risks and consequences", publisher: "Swedish Institute of International Affairs (UI)", date: 2022-01, tier: 2}
+        - {url: "https://www.yahoo.com/news/articles/russia-kazakhstan-sign-strategic-partnership-declaration-182658867.html", title: "Russia, Kazakhstan sign strategic partnership declaration", publisher: "Yahoo News (wire)", date: 2025-11-12, tier: 3}
+        - {url: "https://www.themoscowtimes.com/2026/05/28/russia-signs-agreement-to-build-first-nuclear-power-plant-in-kazakhstan-a92868", title: "Russia signs agreement to build first nuclear power plant in Kazakhstan", publisher: "The Moscow Times", date: 2026-05-28, tier: 3}
+    - text: "Energy security through the one supplier it wanted to dilute. The nuclear plant is meant to cut the baseload gap, and the 2024 referendum was framed as the country's own decision; the winner is Rosatom (85% Russian financing, a 2035-36 horizon), beating the Chinese, French and Korean bids. Kazakhstan thereby adds the biggest single Russian tie of the decade to its pipeline and gas dependence on Moscow."
+      confidence: B
+      sources:
+        - {url: "https://www.themoscowtimes.com/2026/05/28/russia-signs-agreement-to-build-first-nuclear-power-plant-in-kazakhstan-a92868", title: "Russia signs agreement to build first nuclear power plant in Kazakhstan", publisher: "The Moscow Times", date: 2026-05-28, tier: 3}
+        - {url: "https://world-nuclear-news.org/articles/kazakhstan-referendum-backs-new-nuclear-energy", title: "Kazakhstan referendum backs new nuclear energy", publisher: "World Nuclear News", date: 2024-10, tier: 3}
+    - text: "The Western hedge is exposed to the war it avoids. Chevron, Exxon and others invest in the oil that leaves by a pipeline Russia controls and Ukraine now bombs: the drone strike of 29 Nov 2025 on the CPC terminal and the January 2026 attacks on KazMunayGas tankers produced Kazakhstan's first serious quarrel with Kyiv, a USD 1.5bn January loss and a cut in the 2026 oil target, because the multi-vector policy ships through a single bottleneck."
+      confidence: B
+      sources:
+        - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2026-02-04/ukrainian-attacks-cpc-oil-pipeline-outlook-kazakhstans-oil-sector", title: "Ukrainian attacks on the CPC oil pipeline and the outlook for Kazakhstan's oil sector", publisher: "OSW", date: 2026-02-04, tier: 2}
+        - {url: "https://pgjonline.com/news/2026/august/kazakhstan-cuts-2026-oil-production-goal-after-ukrainian-cpc-strikes", title: "Kazakhstan cuts 2026 oil production goal after Ukrainian CPC strikes", publisher: "Pipeline & Gas Journal", date: 2026-08, tier: 3}
+    - text: "The bypass cannot carry the traffic it exists to bypass. Astana champions the Middle Corridor and Azerbaijan, Georgia and the EU fund it, but its designed capacity is 6 Mt against more than 100 Mt on the Russian route and the China pipelines hold about 28% of the CPC's capacity; as long as that is true, every Western or Turkic route is a signal, not an exit, and Moscow knows which of the two moves the barrels."
+      confidence: B
+      sources:
+        - {url: "https://dgap.org/system/files/article_pdfs/DGAP%20Policy%20Brief_No-12_May2025_EN_0.pdf", title: "DGAP Policy Brief No. 12: EU connectivity in Central Asia", publisher: "DGAP", date: 2025-05, tier: 2}
+        - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2026-02-04/ukrainian-attacks-cpc-oil-pipeline-outlook-kazakhstans-oil-sector", title: "Ukrainian attacks on the CPC oil pipeline and the outlook for Kazakhstan's oil sector", publisher: "OSW", date: 2026-02-04, tier: 2}
+    - text: "Pledging compliance to the West from inside Russia's customs union. Tokayev promised Berlin (Sept 2023) that sanctioned goods would not reach Russia, yet EAEU membership removes the border checks that would prove it; each EU or US listing of a Kazakh firm then strengthens the argument for secondary measures the hedge was supposed to avoid."
+      confidence: B
+      sources:
+        - {url: "https://riskadvisory.com/news/kazakhstan-is-vulnerable-to-secondary-sanctions/", title: "Kazakhstan is vulnerable to secondary sanctions", publisher: "Risk Advisory", date: 2024, tier: 3}
+        - {url: "https://en.orda.kz/companies-in-kazakhstan-and-kyrgyzstan-included-in-new-eu-sanctions-package-10997/", title: "Companies in Kazakhstan and Kyrgyzstan included in new EU sanctions package", publisher: "Orda.kz", date: 2025, tier: 3}
+    - text: "Asserting a Kazakh identity strains the one tie it cannot cut. Raising the Kazakh quota in broadcasting from 50% to 70% and the 2022 non-recognition of the 'republics' answer a nationalist public, but they hand Russian commentators, who already hinted at the northern regions, their favourite grievance against the neighbour that holds 15% Russians and the pipelines."
+      confidence: C
+      sources:
+        - {url: "https://www.themoscowtimes.com/2026/10/07/kazakhstan-moves-to-promote-its-language-over-russian", title: "Kazakhstan moves to promote its language over Russian", publisher: "The Moscow Times (AFP)", date: 2023-10-06, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2022/6/24/whats-behind-kazakhstan-not-recognizing-ukraines-separatists", title: "Ukraine war: Is Kazakhstan going cool on Russia?", publisher: "Al Jazeera", date: 2022-06-24, tier: 3}
+
+  reading: |
+    Kazakhstan is the small-state manoeuvre between three great powers, played by a
+    state that is not small in size but is in leverage: its long northern border
+    and its pipelines belong to the neighbour it must not offend, its money
+    comes more and more from China and the West, and its security was lent to it by
+    Russia in January 2022. In Luttwak's terms Astana practises the weaker party's
+    relational manoeuvre: it never chooses, because each patron's offer is worth
+    more as long as the others are watching. The constraint that disciplines the
+    whole system is the 2022 debt, which is paid not in money but in language: an
+    'alliance' declaration (12 Nov 2025), a Russian reactor (28 May 2026), CSTO and
+    EAEU seats kept. Every clear no (the 'republics', the sanctions pledge, the
+    Kazakh language) is balanced by a visible yes. Since 2025 the structure has
+    thickened on all three sides at once, which is the best test of a hedge: Trump
+    received the five presidents and Kazakhstan joined the Abraham Accords and the
+    Board of Peace; Xi came to Astana and then received Tokayev in Shanghai
+    (16 Jul 2026); Putin returned the Moscow visit with a state visit to Astana
+    (27-29 May 2026). The weak point is not a patron but a place: the CPC terminal
+    at Novorossiysk, where Russian ownership, Western capital and Ukrainian drones
+    meet. Signals that are not rows: Lavrov did not attend the Moscow talks of
+    11-12 Nov 2025 (an unusual absence), and the Druzhba stoppage of Kazakh oil to
+    Germany reported for 1 May 2026 arrived while Rosatom's contract was being
+    finished. With the new constitution in force since 1 July 2026, the open question
+    is whether the system survives the man: a presidential succession in 2029 would
+    reopen the question of who owes what to whom.
