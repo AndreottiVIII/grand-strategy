@@ -854,7 +854,7 @@
         <div class="hd"><b>${dir === "out" ? "→ " + esc(actors[r.to].name) : "← " + esc(actors[r.from].name)}</b> · ${esc(r.type.replace(/_/g, " "))} · ${esc(r.since)}${r.until && r.until !== r.since ? " – " + esc(r.until) : ""}${badge(r)}</div>
         <div>${r.value !== undefined ? `<span class="val">${esc(r.value)} ${esc(String(r.unit).replace(/_/g, " "))}</span> · ` : ""}${esc(r.summary)}${fn(r.sources)}</div>
         ${r.note ? `<div class="note">${esc(r.note)}</div>` : ""}
-        ${r.claims ? `<div class="note">Contested: ` + r.claims.map(c => `<b>${esc(actors[c.by].name)}</b> says ${esc(c.text)}${fn([{ url: c.source, title: c.text, publisher: actors[c.by].name, date: "", tier: 4 }])}`).join("; ") + `</div>` : ""}
+        ${r.claims ? `<div class="note">Contested: ` + r.claims.map(c => { const who = actors[c.by] ? actors[c.by].name : String(c.by); return `<b>${esc(who)}</b> says ${esc(c.text)}${fn([{ url: c.source, title: c.text, publisher: who, date: "", tier: 4 }])}`; }).join("; ") + `</div>` : ""}
         </div>`).join("");
     }).join("");
     return (out.length ? `<h3>Relations from ${esc(actors[id].name)}</h3>` + block(out, "out") : "") +
