@@ -1,0 +1,176 @@
+from: MNG
+relations:
+  # ---------- objective ----------
+  - to: USA
+    layer: objective
+    type: influence_goal
+    summary: "Use the United States as a 'third neighbour' counterweight to Russia and China: PM Oyun-Erdene called the US an important strategic third neighbour in Washington (2 Aug 2023) and warned that a landlocked Mongolia would suffer if great-power rivalry became a new Cold War."
+    since: 2023-08-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.intellinews.com/we-re-landlocked-but-not-mindlocked-mongolian-pm-tells-us-on-visit-to-washington-dc-286910/", title: "We're 'landlocked but not mindlocked': Mongolian PM tells US on visit to Washington DC", publisher: "Intellinews", date: 2023-08, tier: 3}
+      - {url: "https://www.intellinews.com/us-discussed-creative-ways-to-help-get-rare-earths-out-of-mongolia-286890/", title: "US discussed 'creative ways' to help get rare earths out of Mongolia", publisher: "Intellinews", date: 2023-08, tier: 3}
+
+  - to: RUS
+    layer: objective
+    type: influence_goal
+    summary: "Keep the Russian fuel and the power supply and win a transit role for the Power of Siberia 2 route, without a second single supplier. The Sept 2025 memorandum envisages gas through Mongolia to China, but price is not agreed."
+    since: 2025-09-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.intellinews.com/russia-inks-power-of-siberia-2-pipeline-memorandum-with-china-and-mongolia-399295/", title: "Russia inks Power of Siberia 2 pipeline memorandum with China and Mongolia", publisher: "Intellinews", date: 2025-09, tier: 3}
+      - {url: "https://pgjonline.com/news/2025/september/moscow-beijing-agree-on-power-of-siberia-2-pipeline-without-price-deal", title: "Moscow, Beijing agree on Power of Siberia 2 pipeline without price deal", publisher: "PGJ Online", date: 2025-09, tier: 3}
+
+  # ---------- alignment ----------
+  - to: org-eu
+    layer: alignment
+    type: treaty
+    summary: "Partnership and Cooperation Agreement between the EU, its member states and Mongolia, signed 30 Apr 2013, in force 1 Nov 2017, replacing the 1993 trade and economic cooperation agreement. An EU Delegation in Ulaanbaatar opened on the same day."
+    since: 2017-11-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.eeas.europa.eu/node/34889_en", title: "EU and Mongolia Partnership and Cooperation Agreement (EEAS, archived page)", publisher: "European External Action Service", date: 2017-11-01, tier: 1}
+      - {url: "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1515795", title: "EU/Mongolia Partnership and Cooperation Framework Agreement", publisher: "European Parliament (OEIL)", date: 2017, tier: 1}
+
+  - to: org-icc
+    layer: alignment
+    type: membership
+    summary: "State Party to the Rome Statute of the International Criminal Court: bound to execute ICC warrants on its territory. The 2024 Putin visit is the test case (see the action rows). The accession year is from background knowledge, not from a fetched source: verify against the ICC state-party list before publication."
+    since: 2002
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.rferl.org/a/putin-mongolia-visit-icc-arrest-ukraine/33103686.html", title: "Putin arrives in Mongolia in defiance of ICC arrest warrant", publisher: "RFE/RL", date: 2024-09-03, tier: 3}
+      - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Mongolia", title: "Foreign relations of Mongolia (index only, citations not followed)", publisher: "Wikipedia", date: 2026-10-12, tier: 4}
+
+  # ---------- dependency ----------
+  - to: RUS
+    layer: dependency
+    type: energy_import
+    value: 0.95
+    unit: share_of_petroleum_product_imports
+    summary: "Russia supplies about 95% of Mongolia's petroleum products (ministry figure, end of 2025), against 96.8% in 2024 per the same ministry series. An intergovernmental agreement of 2024 provides for 1.8-1.9 Mt of products a year, and the 2026 shortages followed Ukrainian drone strikes on Russian refineries."
+    since: 2025-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Figures conflict slightly: a 2026 prime-minister statement is quoted at 97% of about 3 Mt, not verified here. The ministry 95% is used. The 2024 agreement volume is from a tier-4 commentary."
+    sources:
+      - {url: "https://tass.com/economy/2067141/amp", title: "Mongolia imports 95% of petroleum products from Russia as of end of 2025 - ministry", publisher: "TASS (state agency, ministry statement)", date: 2026, tier: 1}
+      - {url: "https://www.indrastra.com/2026/10/mongolias-fuel-crisis-when-third.html", title: "Mongolia's Fuel Crisis: When Third-Neighbor Diplomacy Meets Supply-Chain Reality", publisher: "Indrastra", date: 2026-10, tier: 4}
+
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    value: 0.912
+    unit: share_of_total_exports
+    summary: "China takes about 91% of Mongolia's exports: 91.9% in Jan-May 2025 and 91.2% in Jan-Sep 2025. Coal and copper ores are the two largest export lines."
+    since: 2025-01
+    until: 2025-09
+    last_verified: 2026-10-12
+    confidence: C
+    note: "Secondary summaries of customs and central-bank data; the NSO full-year release was not retrieved. A government framing of 90% also circulates. The 2026 share reported in a tradingeconomics item (94%) is not used: no primary source was fetched."
+    sources:
+      - {url: "https://www.wko.at/oe/aussenwirtschaft/mongolian-national-chamber-of-commerce-and-industry--ac-peki.pdf", title: "Mongolian National Chamber of Commerce and Industry (export breakdown 2025, provisional)", publisher: "Austrian WKO (Mongolian chamber document)", date: 2026, tier: 3}
+      - {url: "https://www.mysteel.net/news/5109865-mongolias-2025-coal-exports-top-annual-target-set-new-record-high", title: "Mongolia's 2025 coal exports top annual target, set new record high", publisher: "Mysteel (citing Customs General Administration)", date: 2026-01, tier: 3}
+
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    value: 90.02
+    unit: million_tonnes_coal_and_lignite_exports
+    summary: "Coal and lignite exports to China reached a record 90.02 Mt in 2025 (Mysteel recalculation 89.7 Mt), about 7.5% above 2024, per Mongolia's Customs General Administration. The new Ganqimaodu rail link is meant to lift coal exports to about 165 Mt a year."
+    since: 2025-01
+    until: 2025-12
+    last_verified: 2026-10-12
+    confidence: C
+    note: "Tier-3 customs data via Mysteel; the government target of 165 Mt is a government estimate for the rail link, not a forecast."
+    sources:
+      - {url: "https://www.mysteel.net/news/5109865-mongolias-2025-coal-exports-top-annual-target-set-new-record-high", title: "Mongolia's 2025 coal exports top annual target, set new record high", publisher: "Mysteel (citing Customs General Administration)", date: 2026-01, tier: 3}
+      - {url: "https://mongolia.gogo.mn/r/e67dy", title: "Mongolian government on the Gashuunsukhait-Ganqimaodu rail link", publisher: "Gogo Mongolia (quoting government)", date: 2025, tier: 4}
+
+  - to: CHN
+    layer: dependency
+    type: energy_import
+    value: 126
+    unit: USD_million_electricity_imports_2022
+    summary: "Electricity imports in 2022 were 178 million USD, of which 126 million from China and 51.8 million from Russia: China is the main supplier by value, Russia the faster-growing one. The series is the most recent found and is old."
+    since: 2022
+    until: 2022
+    last_verified: 2026-10-12
+    confidence: C
+    note: "2022 data from a tier-4 trade database. No newer electricity share was found. The 2025-26 grid contract with Russia is not sourced here."
+    sources:
+      - {url: "https://www.oec.world/profile/bilateral-product/electricity/reporter/mng", title: "Mongolia electricity imports by partner (OEC)", publisher: "Observatory of Economic Complexity", date: 2022, tier: 4}
+
+  # ---------- action ----------
+  - to: RUS
+    layer: action
+    type: visit
+    summary: "Putin visited Ulaanbaatar on 3 Sep 2024 at the invitation of President Khurelsukh, for the 85th anniversary of the Soviet-Mongolian victory over Japan, despite the ICC warrant of March 2023 (deportation of Ukrainian children). Mongolia did not arrest him; the EU said it did not comply with its Rome Statute duties."
+    since: 2024-09-03
+    until: 2024-09-03
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.rferl.org/a/putin-mongolia-visit-icc-arrest-ukraine/33103686.html", title: "Putin arrives in Mongolia in defiance of ICC arrest warrant", publisher: "RFE/RL", date: 2024-09-03, tier: 3}
+      - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Mongolia", title: "Foreign relations of Mongolia (index only, citations not followed; cites BBC and Politico)", publisher: "Wikipedia", date: 2026-10-12, tier: 4}
+
+  - to: RUS
+    layer: action
+    type: agreement
+    summary: "On 2 Sep 2025 Russia, China and Mongolia's leaders met in Beijing; Gazprom announced a legally binding memorandum on Power of Siberia 2 and the Soyuz-Vostok transit line through Mongolia: 50 bcm a year for 30 years, price not agreed. An earlier Gazprom-Mongolia memorandum of intent (August 2025) set up a company to study the pipeline. Beijing did not confirm at the time."
+    since: 2025-09-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "Reports disagree on the counterparty of the September memorandum (Mongolia as transit, or CNPC on the Chinese side); the row names both."
+    sources:
+      - {url: "https://www.intellinews.com/russia-inks-power-of-siberia-2-pipeline-memorandum-with-china-and-mongolia-399295/", title: "Russia inks Power of Siberia 2 pipeline memorandum with China and Mongolia", publisher: "Intellinews", date: 2025-09, tier: 3}
+      - {url: "https://naturalgasworld.com/gazprom-mongolia-agree-study-for-chinese-pipe-81395", title: "Gazprom, Mongolia agree study for Chinese pipeline", publisher: "Natural Gas World", date: 2025-08, tier: 3}
+      - {url: "https://novayagazeta.eu/amp/en/articles/2025/09/04/silence-from-beijing-as-russia-vaunts-power-of-siberia-2-gas-pipeline-deal-en-news", title: "Silence from Beijing as Russia vaunts Power of Siberia 2 gas pipeline deal", publisher: "Novaya Gazeta Europe", date: 2025-09-04, tier: 3}
+
+  - to: CHN
+    layer: action
+    type: agreement
+    summary: "Ganqimaodu-Gashuunsukhait cross-border railway agreement, signed by the Mongolian prime minister and China's premier and ratified on 14 Feb 2025. Construction began in May 2025 and track-laying on 1 Sep 2025 (33.5 km, dual gauge); completion targeted for 2027, an older report gave 2028."
+    since: 2025-02-14
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://en.sxcoal.com/news/detail/2094955611617955842", title: "Ganqimaodu-Gashuunsukhait cross-border railway enters track-laying stage", publisher: "SXcoal", date: 2025-09, tier: 3}
+      - {url: "https://mongolia.gogo.mn/r/e67dy", title: "Mongolian government on the Gashuunsukhait-Ganqimaodu rail link", publisher: "Gogo Mongolia (quoting government)", date: 2025, tier: 4}
+
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "Open Skies aviation agreement signed on 4 Aug 2023 with the US Transportation Secretary, two days after PM Oyun-Erdene's White House meeting with Vice President Harris. It lets the national carrier MIAT fly direct to a US airport once one is chosen."
+    since: 2023-08-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "No 2025 or 2026 US visit or follow-up was found in the sources; the relation's latest dated action is 2023."
+    sources:
+      - {url: "https://asiatimes.com/2023/08/us-mongolia-aviation-pact-hit-as-rare-earths-hedge/", title: "US-Mongolia aviation pact hit as rare earths hedge", publisher: "Asia Times", date: 2023-08, tier: 3}
+      - {url: "https://www.intellinews.com/we-re-landlocked-but-not-mindlocked-mongolian-pm-tells-us-on-visit-to-washington-dc-286910/", title: "We're 'landlocked but not mindlocked': Mongolian PM tells US on visit to Washington DC", publisher: "Intellinews", date: 2023-08, tier: 3}
+
+  - to: org-ots
+    layer: action
+    type: visit
+    summary: "Organization of Turkic States Secretary-General Kubanychbek Omuraliev paid his first visit to Mongolia in March 2025 at the invitation of Foreign Minister Battsetseg Batmunkh; he also met the secretary of the National Security Council. Mongolia is not an observer of the OTS, and no accession plan was found."
+    since: 2025-03
+    until: 2025-03
+    last_verified: 2026-10-12
+    confidence: B
+    note: "The OTS observer list (Hungary, Turkmenistan, TRNC, ECO) does not include Mongolia."
+    sources:
+      - {url: "https://turkicstates.org/en/news/secretary-general-of-the-ots-met-with-the-minister-of-foreign-affairs-of-mongolia", title: "Secretary General of the OTS met with the Minister of Foreign Affairs of Mongolia", publisher: "Organization of Turkic States", date: 2025-03, tier: 1}
+      - {url: "https://turkicstates.org/observers", title: "OTS observers", publisher: "Organization of Turkic States", date: 2026, tier: 1}
