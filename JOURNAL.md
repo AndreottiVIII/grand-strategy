@@ -1,5 +1,21 @@
 # Journal
 
+## 2026-10-14 · 91 cards: Russia, Israel, Central Asia, East Asia; stopped at 91% weekly, Fable at 97%
+
+Davide reopened the run in the morning ("fino al 95%", then 93%). Written: Russia (Fable, part
+two, stopped at 95% of the Fable window at the build step with a complete card on disk, reviewed
+from disk: Ukraine the only adversary in Europe, USA rival with a thaw, China partner, North Korea
+and Belarus allies), Israel (Iran, Hamas, Hezbollah, Houthis adversaries; USA ally; Palestine
+rival), Kazakhstan, Uzbekistan, Turkmenistan, Kyrgyzstan, Tajikistan, Maldives, Mongolia, Japan,
+South Korea, North Korea, Taiwan, Indonesia, Philippines, Vietnam. Regions complete: Balkans,
+all Europe, Middle East, South and Central Asia, East Asia. 18.84M tokens. Site fixes: data.json
+fetched with a time stamp (stale cached index no longer shows old cards); the dossier no longer
+crashes on a contested claim by an unknown actor id (Israel). Davide's remark on derived treaty
+allies (CSTO co-members painted green) is in BACKLOG. Stopped with Fable at 97%, since this
+session runs on Fable too; resume Friday after the reset with Southeast Asia and Oceania (THA,
+MYS, SGP, MMR, KHM, LAO, BRN, TLS, AUS, NZL, the Pacific), then Africa and the Americas, then USA
+and China with Fable, then UK and France rewritten.
+
 ## 2026-10-13 · Five readings on top of the data: Seams, Clients, Faults, Gatherings, Currents, and Theatres
 
 Built one at a time with Davide, each proposed, shown, corrected, then written into ONTOLOGY.md.
