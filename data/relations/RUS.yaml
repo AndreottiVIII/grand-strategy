@@ -2024,3 +2024,24 @@ relations:
     tier: 3
   to: RWA
   mirrored_from: RWA
+- layer: alignment
+  type: security_guarantee
+  summary: 'Africa Corps as the junta''s guard: Moscow confirmed its forces helped repel the ISIL attack on Niamey airport (3 February 2026) and helped put down an attempted coup (August 2026). No defence
+    treaty is named; the grade is partner with a de facto alignment. Mirror of the Russia card''s incident row, same sources.'
+  since: '2026-02-03'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/news/2026/2/3/moscow-confirms-russian-forces-helped-repel-isil-attack-on-niger-airport
+    title: Moscow confirms Russian forces helped repel ISIL attack on Niger airport
+    publisher: Al Jazeera
+    date: '2026-02-03'
+    tier: 3
+  - url: https://www.bbc.com/news/articles/c5ye8egg596o
+    title: 'Niger attempted coup: Russia says it helped to repel attack'
+    publisher: BBC
+    date: '2026-08-30'
+    tier: 3
+  to: NER
+  mirrored_from: NER

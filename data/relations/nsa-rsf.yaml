@@ -1,0 +1,174 @@
+from: nsa-rsf
+relations:
+- to: SDN
+  layer: objective
+  type: regime_goal
+  summary: 'Take the state in Khartoum: the RSF runs a parallel Government of Peace and Unity (charter in Nairobi Feb 2025, announced 15 Apr 2025, seat Nyala, Leadership Council 1 Jul 2025), and on 22 Sep 2026 Reuters reported Hemedti telling his troops that the time for fighting had come. Mirror of the SDN objective row toward the RSF, read from the other side.'
+  since: '2023-04-15'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/news/2025/4/15/sudan-paramilitary-declares-rival-government-two-years-into-civil-war
+    title: Sudan paramilitary declares rival government two years into civil war
+    publisher: Al Jazeera
+    date: '2025-04-15'
+    tier: 3
+  - url: https://www.al-monitor.com/originals/2026/09/us-ties-sudanese-army-leaders-un-visa-ceasefire-plan-sources-say
+    title: US ties Sudanese army leader's UN visa to ceasefire plan, sources say
+    publisher: Reuters (via Al-Monitor)
+    date: '2026-09-22'
+    tier: 3
+- to: SDN
+  layer: action
+  type: incident
+  summary: 'The RSF took El Fasher, the army''s last Darfur stronghold, after the army withdrew on 28 Oct 2025 (after the RSF took the 6th Infantry Division headquarters). Humanitarian workers and officials reported that more than 2,000 civilians were executed; satellite images later showed bodies buried and burned. Figures differ by source (ABC headline 2,000; the SDN row 2,500), and the RSF''s own account is not in the sources read.'
+  since: '2025-10-28'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: B
+  sources:
+  - url: https://www.abc.net.au/news/2025-10-29/sudanese-paramilitary-accused-of-killing-2-000-civilians/105945372
+    title: Sudan paramilitary group accused of killing 2,000 civilians in El-Fasher
+    publisher: ABC News (Australia)
+    date: '2025-10-28'
+    tier: 3
+  - url: https://www.theguardian.com/global-development/2025/dec/05/rsf-massacres-sudanese-city-el-fasher-slaughterhouse-satellite-images
+    title: RSF massacres left Sudanese city 'a slaughterhouse', satellite images show
+    publisher: The Guardian
+    date: '2025-12-05'
+    tier: 3
+- to: ARE
+  layer: dependency
+  type: arms_supply
+  summary: 'Emirati arms reach the RSF by air, reportedly through Kufra in eastern Libya and Amdjarass in Chad: RFI counted about 600 flights to Kufra in 2025 (Le Monde investigation), and UN experts describe weapons flights. Abu Dhabi denies supplying arms. A count of flights, not of weapons. Mirror of the ARE arms_supply row, same sources.'
+  since: '2025'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: C
+  value: 600
+  unit: flights_to_kufra_airstrip_2025_rfi
+  note: 'Attribution rests on press investigations and UN experts, and Abu Dhabi denies it. The figure is a count of flights; the cargo is not known.'
+  sources:
+  - url: https://www.newarab.com/news/uae-accused-covert-arms-routes-sudans-rsf-0
+    title: 'UAE accused of using covert arms routes to Sudan''s RSF (Le Monde investigation; RFI: about 600 flights to Koufra in 2025)'
+    publisher: The New Arab
+    date: '2026-03-23'
+    tier: 3
+  - url: https://www.newarab.com/news/uae-flights-flood-airstrip-un-says-supplies-weapons-sudan
+    title: UAE flights flood airstrip, UN says supplies weapons to Sudan rebels
+    publisher: The New Arab
+    date: '2025'
+    tier: 3
+- to: USA
+  layer: action
+  type: incident
+  summary: 'On 7 Jan 2025 the US determined that the RSF and allied militias committed genocide in Sudan and sanctioned Hemedti (State Department and Treasury: entry ban and assets frozen under Executive Order 14098). After the army rejected the US-backed Quad plan in Nov 2025, the RSF declared its own humanitarian truce, the 6 Nov 2025 pause that the SDN card reads as tactical. Sanctions and finding are the structural friction; the truce is the RSF''s answer in practice.'
+  since: '2025-01-07'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: B
+  sources:
+  - url: https://www.voanews.com/a/us-determines-sudan-s-rsf-committed-genocide-sanctions-leader/7927309.html
+    title: US determines Sudan's RSF committed genocide, sanctions leader
+    publisher: Voice of America
+    date: '2025-01-07'
+    tier: 3
+  - url: https://www.al-monitor.com/originals/2025/11/sudans-rsf-declares-truce-after-army-rejects-us-plan
+    title: Sudan's RSF declares truce after army rejects US plan
+    publisher: Al-Monitor
+    date: '2025-11'
+    tier: 3
+- to: KEN
+  layer: action
+  type: agreement
+  summary: 'Nairobi hosted talks between the RSF and allied groups, among them the SPLM-N of Abdelaziz al-Hilu, from 18 to 23 Feb 2025, which produced the political charter and transitional constitution of the parallel authority in RSF-held areas. Mirror of the KEN agreement row toward the RSF, same sources.'
+  since: '2025-02-18'
+  until: '2025-02-23'
+  last_verified: '2026-10-16'
+  confidence: B
+  sources:
+  - url: https://sudantribune.com/article297696/
+    title: Sudan recalls Kenya envoy, accuses Ruto of undermining ties
+    publisher: Sudan Tribune
+    date: '2025-02-21'
+    tier: 3
+  - url: https://www.bbc.com/news/articles/ckg815277g5o
+    title: Sudan bans all imports from Kenya after it hosted civil war rivals
+    publisher: BBC
+    date: '2025-03-14'
+    tier: 3
+- to: LBY
+  layer: action
+  type: incident
+  summary: 'Eastern Libya is a supply and training hub for the RSF: the UN Independent Fact-Finding Mission for the Sudan (reported 3 Sep 2026) names Benghazi, Kufra and Jufra, LNA units including the Subul al-Salam Battalion, RSF training courses of up to three months, and says RSF fighters trained in Libya took part in the Zamzam attack (Apr 2025) and the El Fasher assault (Oct 2025). Libya did not cooperate with the mission. Mirror of the LBY incident row, same sources.'
+  since: '2025-04'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: B
+  note: 'Reported through Libya Security Monitor and Reuters; the UN report itself was not read. The Tripoli government is not named as a participant.'
+  sources:
+  - url: https://libyasecuritymonitor.com/?p=9572
+    title: UN report mentions Libya as one of the transit and logistical hubs for Sudan's RSF rebels
+    publisher: Libya Security Monitor (reporting the UN Fact-Finding Mission for the Sudan)
+    date: '2026-09-03'
+    tier: 3
+  - url: https://www.libya-analysis.com/blogs/reuters-how-a-remote-airstrip-in-libya-reshaped-sudans-civil-war
+    title: 'Reuters: ''How a remote airstrip in Libya reshaped Sudan''s civil war'''
+    publisher: Libya Analysis (summarising Reuters)
+    date: '2025-12-22'
+    tier: 3
+  - url: https://libyasecuritymonitor.com/kufra-airport-shut-for-one-month-likely-due-to-saudi-and-egyptian-pressure/
+    title: Kufra Airport shut for one month likely due to Saudi and Egyptian pressure
+    publisher: Libya Security Monitor
+    date: '2026-01'
+    tier: 3
+- to: TCD
+  layer: action
+  type: incident
+  summary: 'Chad is the RSF''s western door, reportedly: Sudan accused N''Djamena of aiding the RSF and Chad expelled four Sudanese diplomats in Dec 2023; Chad closed its eastern border with Sudan on 23 Feb 2026 after fighting at al-Tina, citing incursions by Sudanese armed groups. Mirror of the SDN and TCD sources, read from the RSF side.'
+  since: '2023-12-16'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: B
+  note: 'The supply role of Chad rests on UN experts, Le Monde and Reuters reporting (the Amdjarass route); Sudan''s complaint is an accusation, and the Chadian state''s own account is not in the sources read.'
+  sources:
+  - url: https://sudantribune.com/article280415/
+    title: Sudan confirms receiving Chadian decision to expel four Sudanese diplomats
+    publisher: Sudan Tribune
+    date: '2023-12-16'
+    tier: 3
+  - url: https://sudantribune.com/article292971/
+    title: Sudan accuses Chad of aiding RSF in complaint to African Rights Commission
+    publisher: Sudan Tribune
+    date: '2024-11-06'
+    tier: 3
+  - url: https://www.bbc.com/news/articles/cm2x1n95z5vo
+    title: Chad shuts border with Sudan in bid to stop conflict spreading
+    publisher: BBC
+    date: '2026-02-23'
+    tier: 3
+- to: ETH
+  layer: action
+  type: incident
+  summary: 'Reuters reported on 10 Feb 2026 a secret camp in the Menge district of Benishangul-Gumuz, about 32 km from the Sudanese border, training thousands of RSF fighters with Emirati money (Reuters could not verify the UAE role). A Yale Humanitarian Research Lab report of April 2026 read satellite images of the Asosa base from Dec 2025 to Mar 2026 as consistent with military help to the RSF. Ethiopia denies hosting RSF camps. Mirror of the ETH incident row, same sources.'
+  since: '2026-02-10'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: B
+  sources:
+  - url: https://www.reuters.com/investigations/ethiopia-builds-secret-camp-train-sudan-rsf-fighters-sources-say-2026-02-10/
+    title: Ethiopia builds secret camp to train Sudan RSF fighters, sources say
+    publisher: Reuters
+    date: '2026-02-10'
+    tier: 3
+  - url: https://thedefensepost.com/2026/04/09/ethiopia-army-base-sudan-paramilitary/
+    title: Ethiopia army base used to support Sudan paramilitary (Yale Humanitarian Research Lab report)
+    publisher: The Defense Post
+    date: '2026-04-09'
+    tier: 3
+  - url: https://www.aljazeera.com/news/2026/5/6/sudan-blames-ethiopia-uae-for-recent-drone-attacks-what-we-know
+    title: 'Sudan blames Ethiopia, UAE for recent drone attacks: what we know'
+    publisher: Al Jazeera
+    date: '2026-05-06'
+    tier: 3
