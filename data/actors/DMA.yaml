@@ -9,6 +9,37 @@ coords:
 seat: Roseau
 regions:
 - world
-card: stub
+card: full
 tier: minor
+last_verified: 2026-10-16
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Keep the Beijing tie that replaced Taipei in 2004 and the aid that came with it. A joint communique was signed in Beijing on 23 March 2004; China then offered US$12 million: US$6 million of budget support for 2004 and US$1 million a year for six years. Reading from the Wikipedia index only: the aid terms are not checked against a Chinese or Dominican primary text."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Dominica", title: "Foreign relations of Dominica (wikitext, read through the Wikipedia API; pointer only)", publisher: "Wikipedia", date: 2026-10-16, tier: 4}
+  - rank: 2
+    text: "Keep the United Kingdom and the Commonwealth as the legal and trade anchor. Diplomatic relations date from 3 November 1978, and the agreements in force include the CARIFORUM-UK Economic Partnership Agreement, a Tax Information Exchange Agreement and an Investment Agreement; the UK high commission in Bridgetown covers Dominica."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Dominica", title: "Foreign relations of Dominica (wikitext, read through the Wikipedia API; pointer only)", publisher: "Wikipedia", date: 2026-10-16, tier: 4}
+  means:
+  - text: "Diplomatic recognition traded for development money. Dominica's ties with Beijing (2004) and Washington (diplomatic relations from 18 July 1979) are the channels through which aid and assistance arrive; the Wikipedia index gives no figure for the 2025-26 flows, so the economic side of the means (citizenship by investment, the geothermal project) has no source yet."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Dominica", title: "Foreign relations of Dominica (wikitext, read through the Wikipedia API; pointer only)", publisher: "Wikipedia", date: 2026-10-16, tier: 4}
+  constraints:
+  - text: "US assistance runs through other channels. Washington's aid to Dominica is mainly routed through the World Bank, the Caribbean Development Bank and the USAID office in Bridgetown, Barbados, so Dominica has no bilateral US aid line of its own to bargain with."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Dominica", title: "Foreign relations of Dominica (wikitext, read through the Wikipedia API; pointer only)", publisher: "Wikipedia", date: 2026-10-16, tier: 4}
+  paradoxes:
+  - text: "Dominica signed a Bilateral Immunity Agreement with the United States (Article 98 of the Rome Statute), shielding US personnel from the International Criminal Court, while its China tie was built on the 2004 switch. Each patron's terms pull against the other's, and the state carries both."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Dominica", title: "Foreign relations of Dominica (wikitext, read through the Wikipedia API; pointer only)", publisher: "Wikipedia", date: 2026-10-16, tier: 4}
+  reading: |
+    Dominica is a small state whose foreign policy is a set of separate deals rather than an alignment: Beijing bought recognition in 2004 with aid, Washington and London hold the older ties through assistance channels and treaties, and the Caribbean bodies (CARICOM and the OECS) are where it speaks as one of many. Its strategic weight is low, so its moves are chosen for what they bring in, and the card can say little about the economy (citizenship by investment, the geothermal project) or the hurricane constraint until those are sourced. The gaps are the point of this first pass: the 2025 US posture and the China debt are not yet read in a source that could support them.

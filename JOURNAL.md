@@ -1,5 +1,15 @@
 # Journal
 
+## 2026-10-16 · Antigua and Barbuda (ATG) card, Flash: nothing written, two web calls, gaps logged
+
+Two web calls: the Wikipedia API for "Foreign relations of Antigua and Barbuda" (wikitext: diplomatic relations dated 1 November 1981 with the United States and the United Kingdom, 1 January 1983 with China; the citations behind them, history.state.gov and the government's bilateral chronology, were not opened). No citizenship-by-investment, Chinese port or special economic zone, Barbuda land, hurricane or CARICOM posture in the wikitext. One search with the Reuters/AP domain filter: refused by the search tool (both domains are not accessible to our user agent), so no wire page was read and the second call went to that refusal.
+
+Written: nothing. ATG stays a stub (`card: stub`): no tier 1 to 3 source for a posture or objective was read, and the Wikipedia-only dates are tier 4 pointers. Mirror: `grep "toward: ATG" data/stances/*.yaml` returns none, so no card holds a stance toward ATG and nothing is mirrored. The dataset rows already in place (memberships of the Commonwealth, OAS, UN and WTO; recognition rows toward XKX, PSE and TWN) are untouched.
+
+Gaps (brief items with no source read): the United States (proximity, 2025 Caribbean posture, citizenship-by-investment pressure); China (the port, the special economic zone); the United Kingdom (Commonwealth ties, republic question); CARICOM and the OECS as seats; the citizenship-by-investment scheme and tourism as the economy (no figure read, so no dependency rows, since the layer needs a value and unit); the Barbuda land question and hurricanes. Next step: a sourced pass with a fresh web budget. Open the history.state.gov and government chronology pages directly; for the US and China legs find tier 1 to 3 sources other than Reuters and AP, which the tools cannot reach from here.
+
+Note: `data/queue.yaml` lists ATG as `running` (updated 2026-10-16 14:56). If another agent holds ATG, it should pick up these gaps.
+
 ## 2026-10-16 · Dominican Republic (DOM) minor card, Flash: thin, four web calls, gaps logged
 
 Four web calls: the Wikipedia API batched (Haiti-DR, DR-US, DR-China, Abinader; the first and third pages empty or missing, the US page gave only expat counts); a search for Reuters/AP on the border wall and deportations (the Reuters story of 6 April 2025 is read through the search summary only); a fetch of the Reuters syndication on Fidelity.com (returned navigation text, no article); a search on the Rubio visit of 6 February 2025 (summaries of Dominican Today, Caribbean Today, EFE via Primicias). No Reuters or AP page text was read.

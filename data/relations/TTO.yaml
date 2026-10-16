@@ -1,0 +1,26 @@
+from: TTO
+relations:
+  # ---------- action ----------
+  - to: USA
+    layer: action
+    type: visit
+    summary: "A US warship docked in Port of Spain in October 2025 (the USS Gravely, per the Venezuelan account) while Persad-Bissessar backed the US boat strikes. The visit is logged as a visit because the vocabulary has no port-call type; Caracas read it as hostile."
+    since: 2025-10
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/10/28/venezuela-suspends-trinidad-and-tobago-gas-accord-over-us-warship-visit", title: "Venezuela suspends Trinidad and Tobago gas accord over US warship visit", publisher: "Al Jazeera", date: 2025-10-28, tier: 3}
+      - {url: "https://guardian.co.tt/news/dragon-gas-collapses-diplomacy-frays-and-crises-converge-in-tt-6.2.2482112.88c352c1c1", title: "Dragon gas collapses, diplomacy frays and crises converge in T&T", publisher: "Trinidad Guardian", date: 2026, tier: 3}
+
+  - to: VEN
+    layer: action
+    type: incident
+    summary: "Venezuela suspended the gas accord with Trinidad and Tobago in October 2025 over the US warship visit, and declared Prime Minister Persad-Bissessar persona non grata. The Dragon field, shared by the two states, was the stake."
+    since: 2025-10
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/10/28/venezuela-suspends-trinidad-and-tobago-gas-accord-over-us-warship-visit", title: "Venezuela suspends Trinidad and Tobago gas accord over US warship visit", publisher: "Al Jazeera", date: 2025-10-28, tier: 3}
+      - {url: "https://pgjonline.com/news/2025/october/dragon-gas-project-in-jeopardy-as-venezuela-moves-to-halt-energy-agreements-with-trinidad", title: "Dragon gas project in jeopardy as Venezuela moves to halt energy agreements with Trinidad", publisher: "PGJ Online", date: 2025-10, tier: 3}

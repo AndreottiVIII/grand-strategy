@@ -1,0 +1,39 @@
+from: BRB
+relations:
+  # ---------- objective ----------
+  - to: org-imf
+    layer: objective
+    type: influence_goal
+    summary: "Barbados pushes the IMF and the World Bank to reform climate and debt lending through the Bridgetown Initiative, first set out in 2022: emergency liquidity against debt crises, about US$1 trillion more multilateral lending, and guarantees to draw private capital. The search summary records 'debt pause clauses' in some loans as an effect; some proposals remain contested. Version 3.0 was launched later at the SIDS conference in Antigua and Barbuda."
+    since: 2022
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://philstar.com/headlines/climate-and-environment/2023/04/07/2257368/climate-hit-island-pushes-to-reshape-world-bank-imf", title: "Climate-hit island pushes to reshape World Bank, IMF", publisher: "Philstar (syndicated wire)", date: 2023-04-07, tier: 3}
+      - {url: "https://dialogue.earth/en/climate-energy/367248-barbados-prime-minister-leads-push-to-transform-global-finance/", title: "Barbados prime minister leads push to transform global finance", publisher: "Dialogue Earth", date: 2023, tier: 3}
+
+  # ---------- alignment ----------
+  - to: org-commonwealth
+    layer: alignment
+    type: membership
+    summary: "Member of the Commonwealth of Nations, the link that outlasted the 2021 move to a republic. The since date is independence (1966, per Wikipedia); the membership date itself was not checked against a Commonwealth source."
+    since: 1966
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Barbados%E2%80%93United_Kingdom_relations", title: "Barbados-United Kingdom relations", publisher: "Wikipedia", date: "2026-10-16", tier: 4}
+
+  # ---------- action ----------
+  - to: USA
+    layer: action
+    type: incident
+    summary: "At the UN General Assembly in September 2025 Mottley voiced concern at the increased US naval deployment in the southern Caribbean and warned of accidental conflict; in October she called the situation 'extremely dangerous and untenable' and urged regional leaders to reject US strikes on alleged drug traffickers. The vocabulary has no statement type, so the speech is logged as an incident."
+    since: 2025-09
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://barbadostoday.bb/2025/09/27/rising-military-tensions-risk-destabilising-region-pm-warns-un/amp", title: "Rising military tensions risk destabilising region, PM warns UN", publisher: "Barbados Today", date: 2025-09-27, tier: 3}
+      - {url: "https://jamaica-gleaner.com/article/lead-stories/20251027/untenable-situation-southern-caribbean", title: "Untenable situation in southern Caribbean", publisher: "Jamaica Gleaner", date: 2025-10-27, tier: 3}

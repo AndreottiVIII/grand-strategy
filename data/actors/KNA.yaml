@@ -8,7 +8,40 @@ coords:
 - 17.3
 seat: Basseterre
 regions:
-- world
-card: stub
+- central-america-caribbean
+card: full
 tier: minor
+last_verified: 2026-10-16
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Keep the citizenship-by-investment programme running as the state's main outside source of money and passport value. Industry guides give the entry routes as a contribution of at least US$250,000 to a government fund or real estate of at least US$325,000 (the real-estate threshold reportedly lowered from US$400,000 in October 2024). These are industry pointers, not the programme's own text."
+    confidence: C
+    sources:
+    - {url: "https://migronis.com/guides/saint-kitts/en/", title: "St Kitts & Nevis Citizenship by Investment in 2026: Costs, Timeline, and What's Changing", publisher: "Migronis (industry guide)", date: 2026, tier: 4}
+    - {url: "https://uglobal.com/immigration/st-kitts-and-nevis/", title: "St. Kitts & Nevis", publisher: "uGlobal (industry guide)", date: 2026, tier: 4}
+  - rank: 2
+    text: "Keep its citizens' route to the United States open while Washington restricts immigrant visas. The government says the 2026 US measure covers immigrant visas only (long-term residency), not tourism, business or study visas, and that applications are still accepted but refused as procedural refusals."
+    confidence: C
+    sources:
+    - {url: "https://ciu.gov.kn/news-st-kitts-and-nevis-provides-clarity-on-us-immigrant-visa-suspensions/", title: "St. Kitts and Nevis provides clarity on US immigrant visa suspensions", publisher: "Government of St Kitts and Nevis (ciu.gov.kn)", date: 2026-02, tier: 1}
+  means:
+  - text: "Recognition and institutional seats as currency. Full diplomatic relations with the Republic of China (Taiwan) since 23 September 1983 and with the United Kingdom since 19 September 1983; Commonwealth membership, shared with the UK as a Commonwealth realm; ties with CARICOM; the Caribbean Development Bank, the ICC and the WTO. The OECS is not covered by the page read."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Saint_Kitts_and_Nevis", title: "Foreign relations of Saint Kitts and Nevis", publisher: "Wikipedia (index)", date: 2026-10-16, tier: 4}
+  constraints:
+  - text: "The visa door and the investment route are the same market. The US immigrant-visa measure of 2026, as the government describes it, falls on buyers seeking long-term residency and not on tourists, so the cost lands on the passport trade rather than on visitors. Read from the government statement and search summaries only; the US original was not read."
+    confidence: C
+    sources:
+    - {url: "https://ciu.gov.kn/news-st-kitts-and-nevis-provides-clarity-on-us-immigrant-visa-suspensions/", title: "St. Kitts and Nevis provides clarity on US immigrant visa suspensions", publisher: "Government of St Kitts and Nevis (ciu.gov.kn)", date: 2026-02, tier: 1}
+  paradoxes:
+  - text: "The programme that earns the money also draws the pressure. Passports sold to buyers from outside the Caribbean are what Washington tightens its visa rules against, and those rules cut the visa access that the passport is sold for. Our reading; the sources give the pieces, not the link."
+    confidence: C
+    sources:
+    - {url: "https://ciu.gov.kn/news-st-kitts-and-nevis-provides-clarity-on-us-immigrant-visa-suspensions/", title: "St. Kitts and Nevis provides clarity on US immigrant visa suspensions", publisher: "Government of St Kitts and Nevis (ciu.gov.kn)", date: 2026-02, tier: 1}
+    - {url: "https://migronis.com/guides/saint-kitts/en/", title: "St Kitts & Nevis Citizenship by Investment in 2026: Costs, Timeline, and What's Changing", publisher: "Migronis (industry guide)", date: 2026, tier: 4}
+  reading: |
+    Saint Kitts and Nevis sells its passport and its Caribbean tourism, and its foreign policy rests on a long recognition of Taipei since 1983, the British and Commonwealth tie, and a US visa door that now narrows for immigrants. The passport trade is both its revenue and the thing that draws pressure, so US visa rules and the investment market are read together. China's pressure and the Nevis secession question are not sourced in this pass and stay open.
