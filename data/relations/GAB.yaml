@@ -1,0 +1,27 @@
+from: GAB
+relations:
+  # ---------- alignment ----------
+  - to: FRA
+    layer: alignment
+    type: treaty
+    summary: "Defence partnership pact with France, renewed for two years by the junta after the August 2023 coup, and due for further approval after the April 2025 presidential election (AFP report, via eNCA). The text of the pact was not read."
+    since: 2023-08
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.enca.com/opinion/gabon-french-army-base-shifts-focus-one-last-africa", title: "In Gabon, French army base shifts focus as one of last in Africa", publisher: "eNCA (AFP report)", date: 2025-03-26, tier: 3}
+
+  # ---------- dependency ----------
+  - to: FRA
+    layer: dependency
+    type: military_presence
+    summary: "De Gaulle camp, Libreville: no more than 200 French troops posted, mainly as instructors and without armour, against nearly 1,200 about ten years earlier (AFP, March 2025). A later figure of about 100 appears in a secondary report that was not opened, so the cap of 200 is used. The value counts posted soldiers, not families or contractors."
+    value: 200
+    unit: soldiers_posted_cap
+    since: 2025-03-26
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.enca.com/opinion/gabon-french-army-base-shifts-focus-one-last-africa", title: "In Gabon, French army base shifts focus as one of last in Africa", publisher: "eNCA (AFP report)", date: 2025-03-26, tier: 3}

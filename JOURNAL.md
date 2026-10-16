@@ -1,5 +1,25 @@
 # Journal
 
+## 2026-10-16 · Equatorial Guinea (GNQ) minor card, Flash: thin, island and sea file only
+
+Minor card, four web calls, all used. Written: the actor card (one objective sourced plus one inferred and flagged C, two means, one constraint, one paradox, 3-sentence reading), two stances (GAB rival C, grievance; MHL rival C, cooling, our reading), three relation rows (GAB territorial_claim; GAB agreement 2016; MHL incident, the mirror of the MHL row with the same sources). No stance toward GNQ existed in any card (grep), so nothing to mirror on that side; the MHL incident row was mirrored as a GNQ-side row. Build passes with `--skip-running` and with the plain build (171 full cards); the plain build adds the reciprocals GAB and MHL toward GNQ.
+
+Gaps (no source read, so nothing written; the brief asked for them and they stay open): the Teodorín conviction in France and the US asset cases; the Bata port and the Chinese naval-base talk; the China debt; the US base question; Spain as former coloniser; Cameroon border; CEMAC and the CFA franc; oil and gas decline as the constraint. Wikipedia's foreign-relations page has no content on any of them (intro only, empty references). Reuters and AP are blocked for the search tool (domain filter refused), so the Mbanié ruling rests on search summaries of BusinessDay and World Oil, not on the ICJ release: the ICJ press release redirects (icj-cij.org), and following the redirect would have been a fifth call. Vote 13-2 (Bloomberg, via a summary) is unverified and is written as such. A 2026 Spanish headline says both states now apply the ruling; unread, so the GAB trend stays stable with no claim.
+
+Queue: `data/queue.yaml` still marks GNQ as `running` (updated 11:02), so `--skip-running` leaves its stance and relation files out of `docs/`. Not changed here: it is orchestration state, as with ZWE.
+
+Other gap: PRT holds a posture toward GNQ in prose (CPLP presidency, opposed by Portugal, Brazil and Timor-Leste) but has no stance row toward GNQ; not mirrored, because a GNQ stance needs a source that reads that posture.
+
+## 2026-10-16 · Gabon (GAB) minor card, Flash: thin, with gaps logged
+
+Minor card, four web calls (Wikipedia foreign-relations extract, a search, the eNCA/AFP page, a second search). No stance toward GAB existed in any card, so nothing to mirror. Written: the actor card (2 objectives, 2 means, 2 constraints, 1 paradox, 3-sentence reading), 1 stance (FRA partner, cooling, C), 2 relation rows (FRA treaty, FRA military presence cap of 200 troops, C). Build passes with `--skip-running` (exit 0).
+
+Caveat: `data/queue.yaml` still marks GAB as `running` (updated 11:02), so the build skips `stances/GAB.yaml` and `relations/GAB.yaml` and they stay out of `docs/`. Not changed here: it is orchestration state.
+
+Gaps (no source read, so nothing written): China (manganese, timber, largest export partner: the only figure, 43% of exports in 2022, came from a search summary of an unopened reference page); the United States (the 9 July 2025 White House meeting and the direct manganese sales idea: the French-language source had no URL in the result); oil decline and public debt as constraints; the CEMAC bloc and ECCAS as actors (no `org-cemac` or `org-eccas` file exists, so no relation row); the CPLP seat (org-cplp exists, but no source read); timber as an economic pillar. The Commonwealth and AU seats are already rows from the Wikidata dataset and are not repeated.
+
+Two sources are pointers only: the eNCA page is an AFP report (tier 3, one source, so C), and the AllAfrica manganese page was not opened (the 2029 raw-export ban and the ore figures come from search summaries). Both are marked C in the rows. The Wikipedia foreign-relations extract is tier 4 and was used only for the CFA/CEMAC membership mention. The troop figure conflicts: the AFP piece says no more than 200, a later secondary report says about 100 (not opened); 200 is used with the discrepancy in the row's summary.
+
 ## 2026-10-16 · Zimbabwe (ZWE) minor card, Flash: thin, with gaps logged
 
 Minor card, five web calls at most. `tools/briefs/ZWE.md` does not exist in the repo, so the card

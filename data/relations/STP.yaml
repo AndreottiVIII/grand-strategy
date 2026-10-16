@@ -1,0 +1,27 @@
+from: STP
+relations:
+  # ---------- alignment ----------
+  - to: CHN
+    layer: alignment
+    type: recognition
+    summary: "São Tomé recognises the People's Republic of China: it cut ties with Taiwan on 20 December 2016 and resumed relations with Beijing on 26 December 2016. The dates come from Wikipedia's citations; the Reuters and Chinese MFA pages were not opened."
+    since: 2016-12-26
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.reuters.com/article/us-china-taiwan-saotome-idUSKBN1492SO", title: "Reuters, 2016: Sao Tome switch from Taiwan to China (cited on Wikipedia, not opened)", publisher: "Reuters", date: 2016-12-20, tier: 3}
+      - {url: "http://www.fmprc.gov.cn/web/zyxw/t1426787.shtml", title: "Chinese MFA, 2016: resumption of relations (cited on Wikipedia, not opened)", publisher: "Chinese Ministry of Foreign Affairs", date: 2016-12-26, tier: 1}
+
+  # ---------- action ----------
+  - to: NGA
+    layer: action
+    type: agreement
+    summary: "The 2001 Abuja treaty (signed 21 February 2001) created the Nigeria-São Tomé and Príncipe Joint Development Authority over a shared offshore zone in the Gulf of Guinea; Nigeria's foreign ministry received an Authority delegation on 27 July 2026. The treaty text was not opened: the date comes from search results."
+    since: 2001-02-21
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://foreignaffairs.gov.ng/news/wp-content/uploads/2026/07/Press-Release-No-2026-173.pdf", title: "Nigerian Foreign Ministry press release No 2026-173: minister receives JDA delegation, 27 July 2026", publisher: "Federal Ministry of Foreign Affairs, Nigeria", date: 2026-07-27, tier: 1}
+      - {url: "https://guardian.ng/saturday-magazine/cover/nigeria-sao-tome-principe-jdz-at-wits-end-17-years-on/", title: "Nigeria-Sao Tome and Principe JDZ at wits' end 17 years on", publisher: "The Guardian (Nigeria)", date: 2018, tier: 3}

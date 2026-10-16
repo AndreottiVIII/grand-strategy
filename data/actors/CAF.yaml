@@ -1,14 +1,66 @@
 id: CAF
 name: Central African Republic
 type: state
-iso2: cf
-wikipedia: https://en.wikipedia.org/wiki/Central_African_Republic
 coords:
 - 18.56
 - 4.37
+iso2: cf
+wikipedia: https://en.wikipedia.org/wiki/Central_African_Republic
 seat: Bangui
 regions:
-- world
-card: stub
+- central-africa
+card: full
 tier: minor
+last_verified: '2026-10-16'
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Keep Faustin-Archange Touadera in power. He was expected to win a third term at the December 2025 election after a 2023 referendum removed the term limits (AP, pre-vote explainer, Dec 2025). The result is not verified in this pass."
+    confidence: C
+    sources:
+    - {url: "https://www.washingtontimes.com/news/2025/dec/24/know-central-african-republic-ahead-election/", title: "What to know about the Central African Republic ahead of its election (AP)", publisher: "Washington Times (AP)", date: "2025-12-24", tier: 3}
+  - rank: 2
+    text: "Hold the state against the armed groups with a foreign guard, paid for in minerals rather than cash. The government preferred to pay for security services with minerals (AP reporting, read through search summaries; the page could not be opened); the UPC and 3R signed a disarmament deal in April 2025 (see the Chad row), but the rest of the armed field is not settled."
+    confidence: C
+    sources:
+    - {url: "https://www.washingtontimes.com/news/2025/dec/24/know-central-african-republic-ahead-election/", title: "What to know about the Central African Republic ahead of its election (AP)", publisher: "Washington Times (AP)", date: "2025-12-24", tier: 3}
+    - {url: "https://naharnet.com/stories/en/277873-c-africa-says-russian-rwandan-troops-sent-after-alleged-coup-bid", title: "C. Africa Says Russian, Rwandan Troops Sent after Alleged Coup Bid", publisher: "Naharnet", date: "2025", tier: 3}
+    - {url: "https://northafricapost.com/?p=88879", title: "Rebel leaders disarm in historic CAR peace deal, hoping to launch new era", publisher: "North Africa Post", date: "2025-04", tier: 4}
+
+  means:
+  - domain: military
+    text: "Foreign forces as the regime's guard. Russian advisers have operated since March 2018 (free military aid, widely believed to be Wagner); Africa Corps was to replace Wagner in 2026 (Touadera in Moscow in March 2026 to finalise it; the USD 15m a month figure has one source only and is not used). A bilateral Rwandan force has operated since 2020 outside MINUSCA; the government said both countries sent hundreds of troops after an alleged coup bid. Rwanda is also among the largest MINUSCA contributors."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_the_Central_African_Republic", title: "Foreign relations of the Central African Republic", publisher: "Wikipedia (index only, tier 4)", date: "2026-10-16", tier: 4}
+    - {url: "https://naharnet.com/stories/en/277873-c-africa-says-russian-rwandan-troops-sent-after-alleged-coup-bid", title: "C. Africa Says Russian, Rwandan Troops Sent after Alleged Coup Bid", publisher: "Naharnet", date: "2025", tier: 3}
+    - {url: "https://www.justiceinfo.net/en/38319-russia-s-involvement-in-car-complicates-un-and-au-task.html", title: "Russia's involvement in CAR complicates UN and AU task", publisher: "JusticeInfo.net", date: "2026", tier: 3}
+  - domain: economic
+    text: "Minerals. Diamonds and gold are the payment for protection: the government said it would rather pay for services with minerals than cash. The value of the concessions is not verified in this pass; gold and timber concessions for Russian firms are our reading and not yet sourced here."
+    confidence: C
+    sources:
+    - {url: "https://www.washingtontimes.com/news/2025/dec/24/know-central-african-republic-ahead-election/", title: "What to know about the Central African Republic ahead of its election (AP)", publisher: "Washington Times (AP)", date: "2025-12-24", tier: 3}
+    - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_the_Central_African_Republic", title: "Foreign relations of the Central African Republic", publisher: "Wikipedia (index only, tier 4)", date: "2026-10-16", tier: 4}
+
+  constraints:
+  - text: "The UN scaffolding is shrinking. MINUSCA was extended for a year, but the Security Council said its presence would scale down because of budget constraints (AP, as summarised in search results). Its own troop mix is led by Rwanda and Bangladesh, so the UN is not an independent guard."
+    confidence: C
+    sources:
+    - {url: "https://www.washingtontimes.com/news/2025/dec/24/know-central-african-republic-ahead-election/", title: "What to know about the Central African Republic ahead of its election (AP)", publisher: "Washington Times (AP)", date: "2025-12-24", tier: 3}
+    - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_the_Central_African_Republic", title: "Foreign relations of the Central African Republic", publisher: "Wikipedia (index only, tier 4)", date: "2026-10-16", tier: 4}
+  - text: "France has left. The last French troops went in 2022 after relations cooled over Bangui's ties to Russia under Touadera (Wikipedia, index only). The aid resumption of 2024-25 is not verified here, so the security market is one-sided: Russia or Rwanda."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_the_Central_African_Republic", title: "Foreign relations of the Central African Republic", publisher: "Wikipedia (index only, tier 4)", date: "2026-10-16", tier: 4}
+
+  paradoxes:
+  - text: "The guard that keeps Touadera in power makes him dependent on the patrons who take the minerals. The government's own account of the foreign deployment is an alleged coup bid that it blamed on former president Bozize's backing of militias (Naharnet); the threat it names is what keeps the guards in place."
+    confidence: C
+    sources:
+    - {url: "https://naharnet.com/stories/en/277873-c-africa-says-russian-rwandan-troops-sent-after-alleged-coup-bid", title: "C. Africa Says Russian, Rwandan Troops Sent after Alleged Coup Bid", publisher: "Naharnet", date: "2025", tier: 3}
+
+  reading: |
+    Bangui's strategy is regime survival through foreign guards: Russian advisers since 2018 and a Rwandan force since 2020 hold the capital and the state, while Touadera seeks a third term under a constitution changed in 2023. The price is minerals, and the mission that is meant to hold the peace, MINUSCA, is itself led by Rwanda and shrinking for budget reasons. France has left, so the choice is Moscow or Kigali, and both of those patrons are paid in the same ground that the armed groups fight over.
+    Not verified for this card: the armed-group field (the CPC coalition has no source here, so no stance or actor file was written for it), the Chad and Sudan border and RSF spillover, diamond and gold export volumes, and the French aid resumption of 2024-25.
