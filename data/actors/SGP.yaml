@@ -1,14 +1,136 @@
 id: SGP
 name: Singapore
+short: Singapore
 type: state
+seat: Singapore
+coords: [103.8, 1.3]
 iso2: sg
 wikipedia: https://en.wikipedia.org/wiki/Singapore
-coords:
-- 103.8
-- 1.3
-seat: Singapore
-regions:
-- world
-card: stub
+regions: ['southeast-asia-oceania']
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Stay sovereign and free to choose: a region not dominated by one power, rules that 'apply equally to all' (the small state's only shield), and no forced choice between Washington and Beijing. Wong, April 2025: for a small open economy the global shifts are 'deeply worrying'; September 2025: Singapore wants to engage all major powers and not be 'forced to choose sides'."
+      confidence: A
+      sources:
+        - {url: "https://www.pmo.gov.sg/newsroom/pm-lawrence-wong-at-the-s-rajaratnam-lecture-2025", title: "PM Lawrence Wong at the S Rajaratnam Lecture 2025", publisher: "Prime Minister's Office, Singapore", date: 2025-04-16, tier: 1}
+        - {url: "https://www.pmo.gov.sg/newsroom/pm-lawrence-wong-in-an-interview-with-the-wall-street-journal-sep-2025/", title: "PM Lawrence Wong in an interview with The Wall Street Journal (Sep 2025)", publisher: "Prime Minister's Office, Singapore", date: 2025-09-17, tier: 1}
+    - rank: 2
+      text: "Make itself useful to both great powers without being used by either: lodge US forces under the 1990 MoU (renewed in 2019 for 15 years, to about 2035) while China stays the first trading partner under the 2023 'all-round high-quality future-oriented partnership'. Balakrishnan, April 2026: 'We will be useful, but we will not be made use of.'"
+      confidence: B
+      sources:
+        - {url: "https://www.mindef.gov.sg/news-and-events/latest-releases/24sep19_fs/", title: "Fact Sheet: 2019 Protocol of Amendment to the 1990 Memorandum of Understanding", publisher: "Ministry of Defence, Singapore", date: 2019-09-24, tier: 1}
+        - {url: "https://www.mfa.gov.sg/newsroom/press-statements-transcripts-and-photos/exchange-of-congratulatory-messages-between-sg-and-china/", title: "Exchange of congratulatory messages between Singapore and China", publisher: "Ministry of Foreign Affairs, Singapore", date: 2025-10, tier: 1}
+        - {url: "https://www.fortune.com/2026/04/22/strait-of-hormuz-chaos-dry-run-us-china-conflict-pacific-singapore-foreign-minister-vivian-balakrishnan/", title: "Hormuz chaos a dry run for a US-China conflict in the Pacific, says Singapore's foreign minister Vivian Balakrishnan", publisher: "Fortune", date: 2026-04-22, tier: 3}
+    - rank: 3
+      text: "Protect the open trading model - entrepot, chips, pharmaceuticals, finance - from tariffs and decoupling: negotiate US exemptions (pharmaceuticals and semiconductors were outside the 10% baseline and the Section 122 tariffs, pending Section 232), keep access to high-end AI chips, and stack free-trade and digital agreements (EU, India, Japan) as insurance."
+      confidence: B
+      sources:
+        - {url: "https://www.mti.gov.sg/newsroom/written-reply-to-pq-on-impact-of-us-tariffs-on-singapore-companies-and-economy-update", title: "Written reply to PQ on impact of US tariffs on Singapore companies and economy update", publisher: "Ministry of Trade and Industry, Singapore", date: 2026-02, tier: 1}
+        - {url: "https://scmp.com/news/asia/southeast-asia/article/3308146/singapore-negotiates-us-chips-access-seeks-pharmaceutical-tariff-concessions", title: "Singapore negotiates US chips access, seeks pharmaceutical tariff concessions", publisher: "South China Morning Post", date: 2025, tier: 3}
+        - {url: "https://www.rajahtannasia.com/viewpoints/european-union-singapore-digital-trade-agreement-enters-into-force/", title: "European Union-Singapore Digital Trade Agreement Enters into Force", publisher: "Rajah & Tann Asia", date: 2026-02, tier: 3}
+    - rank: 4
+      text: "Buy or build what the island lacks - water, gas, land to train on - by contract and diversification: Johor water to 2061 while NEWater and desalination grow, pipeline gas from Malaysia and Indonesia plus LNG from several suppliers, and SAF training areas in Australia, the United States and Taiwan."
+      confidence: B
+      sources:
+        - {url: "https://www.mfa.gov.sg/about-mfa/key-issues/water-agreements/", title: "Water Agreements", publisher: "Ministry of Foreign Affairs, Singapore", date: 2026, tier: 1}
+        - {url: "https://www.hellenicshippingnews.com/?p=1136221", title: "Singapore secures LNG to replace Qatar supply through 2026, regulator says", publisher: "Hellenic Shipping News (S&P Global interview with the Energy Market Authority)", date: 2026-06-03, tier: 3}
+        - {url: "https://www.defenceconnect.com.au/geopolitics-and-policy/16955-australia-singapore-sign-cooperation-agreement-to-expand-defence-reciprocal-access", title: "Australia, Singapore sign cooperation agreement to expand defence reciprocal access", publisher: "Defence Connect", date: 2025-10, tier: 3}
+    - rank: 5
+      text: "Renew the domestic bargain that makes the strategy possible: the PAP won 65.57% of the vote and 87 of 97 seats on 3 May 2025, Wong's first election after succeeding Lee Hsien Loong in 2024, while the resident fertility rate fell to 0.87 in 2025."
+      confidence: B
+      sources:
+        - {url: "https://www.nbcsandiego.com/news/business/money-report/singapores-ruling-party-boosts-vote-share-in-landslide-victory-as-country-navigates-global-uncertainty/3817963/", title: "Singapore's ruling party boosts vote share in landslide victory as country navigates global uncertainty", publisher: "CNBC (via NBC San Diego)", date: 2025-05-03, tier: 3}
+        - {url: "https://lkyspp.nus.edu.sg/gia/article/why-did-some-opposition-parties-see-stinging-losses-at-ge2025", title: "Why did some opposition parties see stinging losses at GE2025?", publisher: "Lee Kuan Yew School of Public Policy, NUS", date: 2025, tier: 2}
+        - {url: "https://asianews.network/?p=259444", title: "Singapore's fertility rate sinks to new low of 0.87, citizen population could shrink by early 2040s", publisher: "Asia News Network", date: 2026-02, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "A ladder of partnerships with everyone: China (2023 all-round high-quality future-oriented partnership; Xi received Wong in Beijing in June 2025 and Li Qiang visited in October 2025), India (comprehensive strategic partnership, September 2024), Vietnam (comprehensive strategic partnership, March 2025), Australia (CSP 2.0, October 2025), Japan (strategic partnership, March 2026), the EU (free-trade agreement 2019, digital trade agreement in force 1 February 2026)."
+      confidence: B
+      sources:
+        - {url: "https://www.pmo.gov.sg/newsroom/pm-lawrence-wongs-interview-with-cctv13-for-leaders-talk-jun-2025", title: "PM Lawrence Wong's interview with CCTV-13 for Leaders' Talk (Jun 2025)", publisher: "Prime Minister's Office, Singapore", date: 2025-06, tier: 1}
+        - {url: "https://bernama.com/en/news.php?id=2337397", title: "Singapore, India elevate ties to comprehensive strategic partnership during Modi visit", publisher: "Bernama", date: 2024-09-05, tier: 3}
+        - {url: "https://www.nippon.com/en/news/yjj2026031800890", title: "Japan, Singapore agree to deepen strategic cooperation", publisher: "nippon.com (Jiji Press)", date: 2026-03-18, tier: 3}
+        - {url: "https://www.thenewdaily.com.au/news/2025/10/08/singapore-australia-defence-ties", title: "Singapore-Australia defence ties", publisher: "The New Daily", date: 2025-10-08, tier: 3}
+    - domain: military
+      text: "A small, high-tech, expensive armed force: defence budget about S$24.93bn in 2026 (+6.4%), held near 3% of GDP, 20 F-35s ordered for about US$4.06bn (first four due from late 2026), overseas training areas because the island is too small (Australia, the United States, Taiwan), and the FPDA with Malaysia, Australia, New Zealand and the UK as a consultative frame."
+      confidence: B
+      sources:
+        - {url: "https://www.janes.com/osint-insights/defence-news/industry/singapore-announces-defence-budget-increase", title: "Singapore announces defence budget increase", publisher: "Janes", date: 2026-02-12, tier: 3}
+        - {url: "https://asianews.network/?p=298882", title: "Eight of Singapore's 20 F-35 jets will be based at Tengah, the rest in the US: Dept of War report", publisher: "Asia News Network", date: 2026, tier: 3}
+        - {url: "https://www.defencepioneer.sg/pioneer-articles/SAF-S-TRAINING-FOOTPRINTS-IN-THE-WORLD", title: "SAF's training footprints in the world (undated page)", publisher: "Pioneer, Ministry of Defence Singapore", date: 2025, tier: 1}
+    - domain: economic
+      text: "Sovereign capital and a financial centre used as an instrument: Temasek's portfolio stood at S$518bn at 31 March 2026 (20-year return 6.8%), GIC's 20-year real return was 3.4% (down from 3.8%), and the government's net investment returns fund part of the Budget. The same centre carried the 2022 sanctions on Russian banks and crypto channels, and is the venue of the AI-server fraud prosecutions."
+      confidence: B
+      sources:
+        - {url: "https://www.temasekreview.com.sg/downloads/Temasek-Review-2026-Media-Release.pdf", title: "Temasek Review 2026 Media Release", publisher: "Temasek", date: 2026-07, tier: 1}
+        - {url: "https://www.mof.gov.sg/news-resources/newsroom/drop-in-gic-s-annualised-rolling-20-year-real-rate-of-return-for-year-ended-31-march-2026/", title: "Drop in GIC's annualised rolling 20-year real rate of return for year ended 31 March 2026", publisher: "Ministry of Finance, Singapore", date: 2026-08-05, tier: 1}
+        - {url: "https://www.mfa.gov.sg/Newsroom/Press-Statements-Transcripts-and-Photos/2022/03/20220305-sanctions", title: "Sanctions and Restrictions Against Russia in Response to its Invasion of Ukraine", publisher: "Ministry of Foreign Affairs, Singapore", date: 2022-03-05, tier: 1}
+
+  constraints:
+    - text: "Water: the 1962 Johor River agreement runs to 2061 (up to 250 million gallons a day), and the 1990 agreement also to 2061; Singapore's plan is to replace imports with NEWater and desalination, but until then the tap sits in another state. Wong, January 2025: water is 'not a pressing issue' but yield and quality of the Johor River are a shared interest; the Joint Technical Committee keeps working."
+      confidence: B
+      sources:
+        - {url: "https://www.mfa.gov.sg/about-mfa/key-issues/water-agreements/", title: "Water Agreements", publisher: "Ministry of Foreign Affairs, Singapore", date: 2026, tier: 1}
+        - {url: "https://asianews.network/singapore-malaysia-deepen-collaboration-continue-talks-on-water-airspace-in-constructive-spirit/", title: "Singapore, Malaysia deepen collaboration; continue talks on water, airspace in 'constructive spirit'", publisher: "Asia News Network", date: 2025-01, tier: 3}
+    - text: "Energy: no domestic fuel. Gas generates more than 90% of electricity; in 2025 piped gas from Malaysia and Indonesia was 43% of gas imports and LNG 57%, of which Qatar about 47%. QatarEnergy declared force majeure on 4 March 2026 and Singapore bought replacement cargoes through 2026; the Indonesian pipeline contracts end by 2028 and the Malaysian ones may end by 2027."
+      confidence: B
+      sources:
+        - {url: "https://www.hellenicshippingnews.com/?p=1136221", title: "Singapore secures LNG to replace Qatar supply through 2026, regulator says", publisher: "Hellenic Shipping News (S&P Global interview with the Energy Market Authority)", date: 2026-06-03, tier: 3}
+        - {url: "https://www.argusmedia.com/ja/news-and-insights/latest-market-news/2800007-singapore-seeks-replacement-lng-as-us-iran-war-rages", title: "Singapore seeks replacement LNG as US-Iran war rages", publisher: "Argus Media", date: 2026, tier: 3}
+    - text: "Demography: resident fertility fell to 0.87 in 2025 (0.97 in 2024); the citizen population could shrink by the early 2040s; 21.4% of citizens are 65 or older, and non-residents (1.98 million of 6.21 million people in June 2026) fill the labour gap that the model needs."
+      confidence: B
+      sources:
+        - {url: "https://asianews.network/?p=259444", title: "Singapore's fertility rate sinks to new low of 0.87, citizen population could shrink by early 2040s", publisher: "Asia News Network", date: 2026-02, tier: 3}
+        - {url: "https://www.malaymail.com/news/singapore/2026/09/26/singapore-gets-bigger-as-foreign-workers-drive-population-growth-and-much-older/236569", title: "Singapore gets bigger as foreign workers drive population growth and much older", publisher: "Malay Mail", date: 2026-09-26, tier: 3}
+    - text: "Size and depth: no natural resources, no hinterland, and not enough land, sea or airspace to train a modern force, which is why the SAF trains in Australia, the United States and Taiwan - and why each of those hosts holds a lever."
+      confidence: B
+      sources:
+        - {url: "https://www.pmo.gov.sg/newsroom/pm-lawrence-wong-at-the-s-rajaratnam-lecture-2025", title: "PM Lawrence Wong at the S Rajaratnam Lecture 2025", publisher: "Prime Minister's Office, Singapore", date: 2025-04-16, tier: 1}
+        - {url: "https://www.defencepioneer.sg/pioneer-articles/SAF-S-TRAINING-FOOTPRINTS-IN-THE-WORLD", title: "SAF's training footprints in the world (undated page)", publisher: "Pioneer, Ministry of Defence Singapore", date: 2025, tier: 1}
+    - text: "The US-China technology war: Washington presses on AI-chip diversion (Commerce Secretary Lutnick raised export controls with Trade Minister Gan in 2025), the US baseline tariff has been 10% since April 2025 with a 15% rate announced in February 2026 but not yet directed in March, and Beijing-linked cyber operations against Singapore's critical infrastructure (UNC3886, July 2025) test the line between the two."
+      confidence: B
+      sources:
+        - {url: "https://scmp.com/news/asia/southeast-asia/article/3308146/singapore-negotiates-us-chips-access-seeks-pharmaceutical-tariff-concessions", title: "Singapore negotiates US chips access, seeks pharmaceutical tariff concessions", publisher: "South China Morning Post", date: 2025, tier: 3}
+        - {url: "https://www.mti.gov.sg/newsroom/oral-reply-to-pqs-on-updated-assessment-on-impact-on-singapore-s-economy-and-businesses-from-new-15--tariffs", title: "Oral reply to PQs on updated assessment on impact on Singapore's economy and businesses from new 15% tariffs", publisher: "Ministry of Trade and Industry, Singapore", date: 2026-03, tier: 1}
+        - {url: "https://www.scmp.com/news/asia/southeast-asia/article/3318847/singapore-battling-sophisticated-cyberattack-unc3886-minister-says", title: "Singapore battling sophisticated cyberattack by UNC3886, minister says", publisher: "South China Morning Post", date: 2025-07-19, tier: 3}
+
+  paradoxes:
+    - text: "Indispensability is the exposure. The more Singapore lodges both great powers in its economy and its bases - US access at Changi and the F-35s, China as first trading partner and a rising source of investment - the more each can demand and the more it loses when they collide. Wong foresees US-China trade grinding to a halt and warns of a miscalculation over Taiwan; Balakrishnan calls Hormuz a possible dry run for the Pacific. The small state that cannot choose is the first to be squeezed when choosing is forced."
+      confidence: B
+      sources:
+        - {url: "https://www.pmo.gov.sg/newsroom/pm-lawrence-wong-at-the-s-rajaratnam-lecture-2025", title: "PM Lawrence Wong at the S Rajaratnam Lecture 2025", publisher: "Prime Minister's Office, Singapore", date: 2025-04-16, tier: 1}
+        - {url: "https://www.fortune.com/2026/04/22/strait-of-hormuz-chaos-dry-run-us-china-conflict-pacific-singapore-foreign-minister-vivian-balakrishnan/", title: "Hormuz chaos a dry run for a US-China conflict in the Pacific, says Singapore's foreign minister Vivian Balakrishnan", publisher: "Fortune", date: 2026-04-22, tier: 3}
+    - text: "Solving the land problem abroad creates levers at home. The SAF trains in Taiwan (since 1975), Australia and the United States because the island is too small; when Hong Kong customs seized nine Terrex vehicles returning from Taiwan in November 2016, Beijing used the training as a diplomatic weapon and the vehicles were returned only in January 2017. The more of the force lives overseas, the more its hosts - and the hosts' enemies - hold a hostage."
+      confidence: C
+      sources:
+        - {url: "https://amp.scmp.com/week-asia/politics/article/2051322/how-singapores-military-vehicles-became-beijings-diplomatic", title: "How Singapore's military vehicles became Beijing's diplomatic weapon", publisher: "South China Morning Post", date: 2016-11, tier: 3}
+        - {url: "https://amp.cnn.com/cnn/2017/01/24/asia/hong-kong-troop-carriers-singapore", title: "Hong Kong to return seized troop carriers to Singapore", publisher: "CNN", date: 2017-01-24, tier: 3}
+    - text: "The rule that protects the small state binds its own hand. Singapore sanctioned Russia in 2022 because it 'cannot accept' violations of sovereignty and territorial integrity - and was put on Moscow's list of unfriendly states within days - yet Israeli defence firms exhibited at its Airshow in 2024 and 2026 while its foreign minister called Israel's Gaza conduct 'unconscionable'. Applying the principle equally is costly; applying it selectively weakens the claim that rules should apply equally to all."
+      confidence: C
+      sources:
+        - {url: "https://www.mfa.gov.sg/Newsroom/Press-Statements-Transcripts-and-Photos/2022/03/20220305-sanctions", title: "Sanctions and Restrictions Against Russia in Response to its Invasion of Ukraine", publisher: "Ministry of Foreign Affairs, Singapore", date: 2022-03-05, tier: 1}
+        - {url: "https://mothership.sg/2022/03/russia-names-singapore-list-unfriendly//amp", title: "Russia names S'pore in list of 'unfriendly' countries", publisher: "Mothership", date: 2022-03-07, tier: 3}
+        - {url: "https://www.malaymail.com/amp/news/singapore/2025/09/22/unconscionable-singapore-slams-israels-gaza-offensive-hints-at-shift-on-palestinian-state-recognition/191968", title: "'Unconscionable': Singapore slams Israel's Gaza offensive, hints at shift on Palestinian state recognition", publisher: "Malay Mail", date: 2025-09-22, tier: 3}
+        - {url: "https://mod.gov.il/en/press-releases/press-room/air-defense-systems-autonomous-uavs-and-counter-drone-solutions-israel-mod-and-leading-defense-companies-participate-in-singapore-airshow-2026", title: "Air defense systems, autonomous UAVs and counter-drone solutions: Israel MOD and leading defense companies participate in Singapore Airshow 2026", publisher: "Israel Ministry of Defense (official statement)", date: 2026-02, tier: 1}
+
+  reading: |
+    Singapore is Luttwak's small state that cannot win a contest of weight and so plays
+    the other game: it makes itself indispensable to everyone. It lodges the American navy
+    at Changi, buys American F-35s, trades more with China than with anyone, signs a
+    partnership with every capital that matters and keeps a budget near 3% of GDP for a
+    force that trains on other people's land. The logic is sound while the great powers
+    compete at a distance; it inverts when they collide, because the state that served
+    both is the first place where each can be denied to the other (the chip diversion
+    cases and the cyber intrusion are early tremors). Wong's doctrine for a disordered
+    world is to say so openly - rules for all, no forced choice, 'useful but not used' -
+    and to spend the political capital of a 65.57% mandate on shock absorbers: stored
+    wealth, replacement LNG, a 2061 water horizon and a Johor zone that turns the
+    neighbour from a lever into a stakeholder. What the strategy cannot fix is the
+    arithmetic underneath: a fertility rate of 0.87 and a labour force that must keep
+    arriving from abroad.
