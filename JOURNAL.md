@@ -198,6 +198,19 @@ are marked C.
 Queue: `data/queue.yaml` still marks ZWE as `running` (updated 10:54), so the `--skip-running`
 build leaves its stance and relation files out of `docs/`. Not changed here: it is orchestration state.
 
+## 2026-10-16 · The world run closes: 200 of 205 cards reviewed, 202 full cards online
+
+By 15:40 UTC every state in the queue is written except three Caribbean micro-states left as stubs
+(Bahamas, Antigua, Grenada: nothing sourceable in the flash budget, Reuters and AP unreachable for
+agents) and the UK and France rechecks (additions only, on Davide's order). After the morning burst
+Davide closed Fable for agents (USA finished with Fable on his explicit order), then Sonnet too:
+everything from the Horn onward ran on Haiku, flash for minors, 4-6 agents at a time, resumed from
+disk after each kill. The flash cards of Africa and the Americas are thin (2-4 stances, sources
+from search summaries, grades C and 'our reading'): the list is in BACKLOG. Still to do before the
+atlas is called complete: the one-sided review with Davide (tools/onesided.py: 1,031 readings, 902
+toward full cards that wrote nothing back), the dossier formatting pass (the reading above all),
+the UK and France rechecks, the three stubs. 38.05M tokens. Weekly usage 37%, Fable 52%.
+
 ## 2026-10-16 · Burst at the weekly reset: 113 cards; Southeast Asia, Oceania, North Africa and the Horn
 
 Davide at the reset: burn the expiring five-hour window with as many cards as possible, then
