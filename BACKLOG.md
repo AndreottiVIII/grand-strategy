@@ -58,4 +58,4 @@ like every improving idea that comes to you".
 
 - **Actor weight.** Clients uses 'cards reading the actor' as a weight proxy; a real weight (GDP, forces, population from Wikidata) would serve Clients, Gatherings and Flanks. Add as a dataset.
 
-- **Dossier formatting pass (Davide, 16/10, for the final checks).** Many dossiers (Somalia for one) read badly: fix the form into proper paragraphs (reading, objectives, paradoxes), never the content.
+- **Dossier formatting pass (Davide, 16/10, for the final checks).** Many dossiers (Somalia for one) read badly: fix the form into proper paragraphs, above all the **reading** (one dense block today: split into paragraphs), never the content.
