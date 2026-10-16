@@ -47,3 +47,5 @@ like every improving idea that comes to you".
 - 2026-10-12 · **Circular board** of relations at scale (actors grouped by region).
 - 2026-10-12 · **Non-state actors beyond the first eight** (Wagner/Africa Corps, PKK,
   Polisario, Somaliland, Houthis' rivals...), and state instruments (Gazprom, Huawei).
+
+- **Eastern Libya as an actor.** The Libya card (16/10) treats the Haftar authority inside objectives and actions only; the GNU's main rival is therefore invisible on the map. Consider a sub-state actor (like sub-rs, sub-somaliland) once the unification talks settle.
