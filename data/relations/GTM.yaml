@@ -1,0 +1,64 @@
+from: GTM
+relations:
+  # ---------- dependency ----------
+  - to: USA
+    layer: dependency
+    type: remittances
+    summary: "Remittances: US$8.431 billion received between January and April 2026, 53.2% of the three Northern Triangle countries' total. The source gives the total, not the country of origin, so the US share is not read here; the row is toward the US as the likely corridor and should be checked. A 1% US tax on cash transfers applies from January 2026."
+    value: 8.431
+    unit: usd_billion_jan_apr_2026
+    since: 2026-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://ticotimes.net/2026/07/06/central-america-remittances-us-tax", title: "Central America remittances US tax (search summary; article not read in full)", publisher: "Tico Times", date: 2026-07-06, tier: 3}
+
+  # ---------- objective ----------
+  - to: TWN
+    layer: objective
+    type: influence_goal
+    summary: "Guatemala's first state visit to Taipei by President Arevalo, June 2025: received with full military honours in the year of 90 years of ties; documents on investment, supply chains, semiconductors and political consultation were to be signed."
+    since: 2025-06
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://stratnewsglobal.com/world-news/guatemala-reaffirms-ties-with-taiwan-during-arevalos-first-visit/", title: "Guatemala reaffirms ties with Taiwan during Arevalo's first visit", publisher: "StratNews Global", date: 2025-06, tier: 3}
+      - {url: "https://www.globalsecurity.org/wmd/library/news/taiwan/2025/taiwan-250605-cna02.htm", title: "INTERVIEW/Taiwan trip to bring relations to next level: Guatemalan president", publisher: "CNA via GlobalSecurity.org", date: 2025-06-05, tier: 3}
+
+  # ---------- action ----------
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "Safe-third-country deal: after a meeting with Secretary of State Rubio, Guatemala agreed to accept non-Guatemalan deportees from the US, and deportation flights were to expand by 40%; Guatemala and Honduras later denied signing the version described by DHS. Implementation from June 2025 is not read in full."
+    since: 2025-02-05
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.bostonglobe.com/2025/02/05/nation/rubio-immigration-guatemala/", title: "Guatemala deal to accept migrants Rubio (Boston Globe, search summary; article not read in full)", publisher: "Boston Globe", date: 2025-02-05, tier: 3}
+      - {url: "https://www.intellinews.com/guatemala-and-honduras-deny-signing-us-immigration-deals-despite-noem-claims-388633", title: "Guatemala and Honduras deny signing US immigration deals despite Noem claims (search summary; article not read in full)", publisher: "Intellinews", date: 2026, tier: 3}
+
+  - to: TWN
+    layer: action
+    type: visit
+    summary: "President Bernardo Arevalo made his first state visit to Taipei in June 2025, received with full military honours in the year marking 90 years of ties; documents on investment and supply chains, semiconductor cooperation and political consultation were to be signed. Mirror of the Taiwan card's row, one grade lower."
+    since: 2025-06
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://stratnewsglobal.com/world-news/guatemala-reaffirms-ties-with-taiwan-during-arevalos-first-visit/", title: "Guatemala reaffirms ties with Taiwan during Arevalo's first visit", publisher: "StratNews Global", date: 2025-06, tier: 3}
+      - {url: "https://www.globalsecurity.org/wmd/library/news/taiwan/2025/taiwan-250605-cna02.htm", title: "INTERVIEW/Taiwan trip to bring relations to next level: Guatemalan president", publisher: "CNA via GlobalSecurity.org", date: 2025-06-05, tier: 3}
+
+  - to: MEX
+    layer: action
+    type: incident
+    summary: "Mexican deportees transited Guatemala: President Arevalo confirmed about 2,300 Mexicans deported from the US had reached Guatemala in 2026, kept under 24 hours; Mexico's foreign ministry opposed the practice and a US spokesperson called them people in transit."
+    since: 2026-08
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://kjzz.org/fronteras-desk/2026-08-20/guatemala-confirms-more-than-2-000-mexican-nationals-were-deported-there-this-year", title: "Guatemala confirms more than 2,000 Mexican nationals were deported there this year (search summary; article not read in full)", publisher: "KJZZ (Fronteras desk)", date: 2026-08-20, tier: 3}
