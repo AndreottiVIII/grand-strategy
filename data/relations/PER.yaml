@@ -1,0 +1,69 @@
+from: PER
+relations:
+  # ---------- dependency ----------
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    summary: "China took 32% of Peru's exports in 2025, a record export year (trade ministry, as reported in the Baird Maritime piece on Chancay; not verified against the ministry itself). Chancay is the Chinese gateway for the minerals."
+    since: '2025'
+    until: null
+    value: 0.32
+    unit: share_of_exports
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "The 32% is taken from a search-result snippet; the attribution to the trade ministry is as the snippet gives it. Not fetched. Replace with the ministry's own figure when it is read."
+    sources:
+      - {url: "https://www.bairdmaritime.com/amp/story/shipping/ports/new-port-lifts-perus-exports-to-record-high-in-2025", title: "New port lifts Peru's exports to record high in 2025 (Port of Chancay)", publisher: "Baird Maritime", date: "2026", tier: 3}
+
+  - to: USA
+    layer: dependency
+    type: trade_share
+    summary: "Peru sends less than 5% of its total copper exports to the United States in a typical year (Council on Foreign Relations). The copper tariff is larger as a narrative than as a volume."
+    since: '2025-07'
+    until: null
+    value: 0.05
+    unit: share_of_copper_exports_upper_bound
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Value is an upper bound ('less than 5 percent'), from a CFR snippet not fetched. Andina's July 2025 figure says about 70% of Peru's mineral exports, copper included, go to China; the two sources are consistent on the direction, not on the exact share."
+    sources:
+      - {url: "https://www.cfr.org/expert-brief/tariffs-sour-public-opinion-us-chile-and-peru", title: "Tariffs Sour Public Opinion on the U.S. in Chile and Peru", publisher: "Council on Foreign Relations", date: "2025", tier: 2}
+      - {url: "https://andina.pe/Ingles/noticia-new-us-tariffs-will-have-limited-impact-on-peruvian-exports-1037870.aspx", title: "New U.S. tariffs will have limited impact on Peruvian exports", publisher: "Andina", date: "2025-07", tier: 3}
+
+  # ---------- action ----------
+  - to: CHN
+    layer: action
+    type: agreement
+    summary: "Chancay concession: COSCO Shipping Ports holds 60% of the terminal under a 30-year concession, inaugurated by video link by Xi and Boluarte on 14 Nov 2024. The same event is written on the CHN side (mirrored evidence; the grade is each side's own)."
+    since: '2024-11-14'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: A
+    sources:
+      - {url: "https://www.mfa.gov.cn/eng/xw/zyxw/202411/t20241116_11527528.html", title: "Xi Jinping and Dina Boluarte attend the inauguration of the Chancay port by video link", publisher: "Ministry of Foreign Affairs of China (official statement)", date: "2024-11-16", tier: 1}
+      - {url: "https://www.nbcnews.com/news/world/xi-jinping-opens-huge-port-peru-funded-china-rcna180289", title: "Xi Jinping opens huge port in Peru funded by China", publisher: "NBC News", date: "2024-11-14", tier: 3}
+      - {url: "https://www.seatrade-maritime.com/ports-logistics/president-xi-attends-inauguration-of-cosco-shipping-port-in-peru", title: "President Xi attends inauguration of Cosco Shipping port in Peru", publisher: "Seatrade Maritime News", date: "2024-11", tier: 3}
+
+  - to: VEN
+    layer: action
+    type: incident
+    summary: "The Maduro government cut diplomatic relations with Peru in July 2024, and both embassies closed. Ties had been re-established in October 2021 under Castillo."
+    since: '2024-07'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "From an Infobae report cited in the Wikipedia foreign-relations article; not fetched. Whether ties have been restored since is not verified."
+    sources:
+      - {url: "https://www.infobae.com/venezuela/2024/07/31/el-regimen-de-nicolas-maduro-rompio-relaciones-diplomaticas-con-peru/", title: "Maduro's regime breaks diplomatic relations with Peru", title_original: "El régimen de Nicolás Maduro rompió relaciones diplomáticas con Perú", publisher: "Infobae", date: "2024-07-30", tier: 3, lang: es}
+
+  - to: IRN
+    layer: action
+    type: incident
+    summary: "Peru broke diplomatic relations with Iran on 1 September 2026, per the Peruvian foreign ministry statement. The reasons are not in the sources read."
+    since: '2026-09-01'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    note: "The statement is a government source (tier 1) cited in the Wikipedia foreign-relations article; the page itself was not fetched, so the date and wording are as cited. Peru had had an embassy in Tehran until 1978 and a lone ambassador from 1977."
+    sources:
+      - {url: "https://www.gob.pe/institucion/rree/noticias/1437604-el-peru-rompe-relaciones-diplomaticas-con-la-republica-islamica-de-iran", title: "Peru breaks diplomatic relations with the Islamic Republic of Iran", title_original: "El Perú rompe relaciones diplomáticas con la República Islámica de Irán", publisher: "Ministry of Foreign Affairs of Peru", date: "2026-09-01", tier: 1, lang: es}

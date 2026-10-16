@@ -1,0 +1,65 @@
+from: ECU
+relations:
+  # ---------- objective ----------
+  - to: USA
+    layer: objective
+    type: influence_goal
+    summary: "Noboa asked voters to lift the 2008 constitutional ban on foreign military bases, a US-backed plan for a base on the Pacific coast. Voters rejected it on 16 November 2025 by about 60%, with all four referendum questions failing."
+    since: '2025-11-16'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.gpb.org/news/2025/11/17/ecuador-rejects-us-military-bases-in-major-defeat-for-president-noboa", title: "Ecuador rejects US military bases in major defeat for President Noboa", publisher: "GPB (AP)", date: "2025-11-17", tier: 3}
+      - {url: "https://aa.com.tr/en/americas/ecuadorians-say-no-to-foreign-military-bases-in-referendum/3745615", title: "Ecuadorians say no to foreign military bases in referendum", publisher: "Anadolu Agency", date: "2025-11", tier: 3}
+      - {url: "https://www.idea.int/democracytracker/report/ecuador/november-2025", title: "Ecuador: November 2025 (Democracy Tracker)", publisher: "International IDEA", date: "2025-11", tier: 2}
+
+  # ---------- action ----------
+  - to: MEX
+    layer: action
+    type: incident
+    summary: "Ecuadorian police entered the Mexican embassy in Quito to arrest former vice-president Jorge Glas; Mexico severed diplomatic relations on 5 April 2024."
+    since: '2024-04-05'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.cnn.com/2024/04/06/americas/ecuador-vice-president-arrest-mexico-embassy-diplomatic-tensions-intl-hnk/index.html", title: "'Outrage against international law': Mexico breaks diplomatic ties with Ecuador over embassy raid", publisher: "CNN", date: "2024-04-06", tier: 3}
+
+  - to: COL
+    layer: action
+    type: sanction
+    summary: "Ecuador's 30% security tariff on Colombian imports (January 2026), raised to 100% from 1 May 2026 and repealed on 31 May 2026. Colombia answered with reciprocal tariffs and an electricity suspension of 22 January 2026."
+    since: '2026-01-22'
+    until: '2026-05-31'
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://elmercurio.com.ec/principal/2026/01/22/ecuador-colombia-guerra-comercial-aranceles/", title: "Guerra comercial entre Ecuador y Colombia escala con aranceles recíprocos", publisher: "El Mercurio (Ecuador)", date: "2026-01-22", tier: 3, lang: es}
+      - {url: "https://www.elcomercio.com/actualidad/negocios/ecuador-aplica-aranceles-100-productos-colombianos-este-mayo/", title: "Ecuador cobra aranceles del 100% a productos colombianos desde este 1 de mayo", publisher: "El Comercio (Ecuador)", date: "2026-04", tier: 3, lang: es}
+
+  - to: nsa-ecuador-gangs
+    layer: action
+    type: incident
+    summary: "Noboa declared an internal armed conflict against organised crime on 9 January 2024, after an armed attack on a live TV station and the escape of Los Choneros leader Fito."
+    since: '2024-01-09'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.bbc.com/news/world-latin-america-67930452", title: "Ecuador declares war on armed gangs after TV station attacked on air", publisher: "BBC", date: "2024-01-09", tier: 3}
+
+  # ---------- dependency ----------
+  - to: COL
+    layer: dependency
+    type: energy_import
+    summary: "Colombian electricity covered about 8% of Ecuador's demand when it resumed on 5 August 2026 after a six-month suspension; the interconnection carries up to 450 MW. Mirror of the COL card, read as Ecuador's import. Figure from the Colombian energy minister as reported; the USD 400m+ annual value is press reporting, not an official series, and is not written here."
+    since: '2024'
+    until: null
+    value: 8
+    unit: percent_of_ecuador_demand
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://forbes.co/2026/08/05/economia-y-finanzas/colombia-reanuda-las-exportaciones-de-energia-hacia-ecuador/", title: "Colombia reanuda las exportaciones de energía hacia Ecuador", publisher: "Forbes Colombia", date: "2026-08-05", tier: 3, lang: es}
+      - {url: "https://www.vistazo.com/amp/actualidad/2026-07-22-colombia-reanudar-venta-energia-ecuador-guerra-comercial-HD11125244", title: "Colombia se prepara para reanudar la venta de energía a Ecuador tras dejar atrás la guerra comercial", publisher: "Vistazo", date: "2026-07-22", tier: 3, lang: es}

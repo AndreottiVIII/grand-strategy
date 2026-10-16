@@ -104,3 +104,16 @@ relations:
     confidence: C
     sources:
       - {url: "https://www.vanguardia.com/colombia/2026/01/13/petro-advierte-al-eln-si-no-sale-de-venezuela-habra-acciones-militares-conjuntas/", title: "Petro warns the ELN: if it does not leave Venezuela there will be joint military action", publisher: "Vanguardia", date: 2026-01-13, tier: 3, lang: es}
+  - to: SWE
+    layer: dependency
+    type: arms_supply
+    summary: Saab signed on 14-15 Nov 2025 a EUR 3.1 billion contract for 15 Gripen E and 2 Gripen F, deliveries 2026-2032 with two offset agreements; the Swedish bid beat a US-backed F-16 offer. The row is mirrored from the Swedish card, same sources.
+    since: 2025-11-14
+    until: null
+    last_verified: 2026-10-16
+    confidence: A
+    value: 3.1
+    unit: EUR_billion_contract_value
+    sources:
+      - {url: "https://www.saab.com/newsroom/press-releases/2025/saab-signs-contract-for-gripen-ef-with-colombia", title: "Saab signs contract for Gripen E/F with Colombia", publisher: "Saab", date: 2025-11-15, tier: 1}
+      - {url: "https://www.government.se/press-releases/2025/11/colombia-acquires-jas-gripen-in-major-export-deal/", title: "Colombia acquires JAS Gripen in major export deal", publisher: "Government Offices of Sweden", date: 2025-11, tier: 1}
