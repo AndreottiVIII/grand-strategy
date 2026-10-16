@@ -210,6 +210,14 @@ are marked C.
 Queue: `data/queue.yaml` still marks ZWE as `running` (updated 10:54), so the `--skip-running`
 build leaves its stance and relation files out of `docs/`. Not changed here: it is orchestration state.
 
+## 2026-10-16 · Thirteen more de facto alignments
+
+On Davide's order the alignment field was extended from the first five pairs to the blocs the
+cards already evidence without a defence clause: Iran-Venezuela, China-Serbia, Belarus-China,
+Myanmar-Russia, Cuba-Russia, Russia-Venezuela, Cuba-Venezuela, Australia-Japan, EU-Ukraine,
+NATO-Ukraine, Germany-Ukraine, Azerbaijan-Pakistan, Egypt-Somalia. Eighteen pairs in all; they
+count as allied legs in Seams, Clients and Gatherings and show as a dashed band on the map.
+
 ## 2026-10-16 · Mirrored readings made structural; the three great powers answer everyone
 
 Davide's screenshot (Bolivia as seen by Washington, 'grievance, open wound' copied from La Paz) led to
