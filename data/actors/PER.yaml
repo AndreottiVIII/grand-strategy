@@ -7,8 +7,57 @@ coords:
 - -77.04
 - -12.06
 seat: Lima
-regions:
-- world
-card: stub
+regions: [south-america]
+card: full
 tier: minor
+last_verified: 2026-10-16
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Sell the minerals on two markets at once: Chinese trade through the Chancay port, and copper into the United States under the tariff threat. Minerals are the economy; the rest follows from them. China took about a third of 2025 exports (32%, trade ministry as reported); copper to the US is under 5% of copper exports, but the US sets the tariff."
+      confidence: C
+      sources:
+        - {url: "https://www.bairdmaritime.com/amp/story/shipping/ports/new-port-lifts-perus-exports-to-record-high-in-2025", title: "New port lifts Peru's exports to record high in 2025 (Port of Chancay)", publisher: "Baird Maritime", date: 2026, tier: 3}
+        - {url: "https://www.cfr.org/expert-brief/tariffs-sour-public-opinion-us-chile-and-peru", title: "Tariffs Sour Public Opinion on the U.S. in Chile and Peru", publisher: "Council on Foreign Relations", date: 2025, tier: 2}
+        - {url: "https://andina.pe/Ingles/noticia-new-us-tariffs-will-have-limited-impact-on-peruvian-exports-1037870.aspx", title: "New U.S. tariffs will have limited impact on Peruvian exports", publisher: "Andina", date: 2025-07, tier: 3}
+    - rank: 2
+      text: "A stable executive after a run of removals. Congress removed Boluarte in October 2025 and José Jerí in February 2026; José María Balcázar succeeded Jerí; Keiko Fujimori was certified the winner of the 7 June runoff on 29 June 2026 after a 50,000-vote margin, and the constitutional date of office is 28 July 2026 (not confirmed in the sources read). Stability is the aim as we read the sequence."
+      confidence: C
+      sources:
+        - {url: "https://en.wikipedia.org/wiki/2026_Peruvian_general_election", title: "2026 Peruvian general election (Wikipedia; index, tier 4 pointer, citations not followed)", publisher: "Wikipedia", date: 2026, tier: 4}
+
+  means:
+    - domain: economic
+      text: "Chancay, the COSCO Shipping Ports terminal (60% owned, a 30-year concession, 1 million TEU a year), the first COSCO terminal in South America, inaugurated by video link by Xi and Boluarte on 14 Nov 2024. Copper and gold are the export base."
+      confidence: A
+      sources:
+        - {url: "https://www.mfa.gov.cn/eng/xw/zyxw/202411/t20241116_11527528.html", title: "Xi Jinping and Dina Boluarte attend the inauguration of the Chancay port by video link", publisher: "Ministry of Foreign Affairs of China (official statement)", date: 2024-11-16, tier: 1}
+        - {url: "https://www.nbcnews.com/news/world/xi-jinping-opens-huge-port-peru-funded-china-rcna180289", title: "Xi Jinping opens huge port in Peru funded by China", publisher: "NBC News", date: 2024-11-14, tier: 3}
+    - domain: military
+      text: "Security cooperation with the United States: counter-narcotics programmes, the Rio Pact, and RIMPAC participation (US-Peru relations article on Wikipedia, tier 4 pointer, not verified against the primary US or Peruvian texts)."
+      confidence: C
+      sources:
+        - {url: "https://en.wikipedia.org/wiki/Peru%E2%80%93United_States_relations", title: "Peru-United States relations (Wikipedia; index, tier 4 pointer)", publisher: "Wikipedia", date: 2026, tier: 4}
+
+  constraints:
+    - text: "Congress is the constraint. The 1993 constitution's vague 'moral incapacity' ground lets Congress remove the president, and it has done so: Castillo in December 2022, Boluarte in October 2025 and Jerí in February 2026. Each removal resets the executive's agenda, and the 2026 transition came under Balcázar, an interim president chosen by Congress."
+      confidence: C
+      sources:
+        - {url: "https://en.wikipedia.org/wiki/2026_Peruvian_general_election", title: "2026 Peruvian general election (Wikipedia; index, tier 4 pointer)", publisher: "Wikipedia", date: 2026, tier: 4}
+    - text: "Export exposure. Copper and gold are the economy, and the US copper tariff is set in Washington: Andina reported a 50% copper tariff in July 2025, and the 2026 rates in the sources found conflict (a 50% and a 53% figure on commercial tariff sites, a proposed phased universal tariff in a CFR brief). Rates not verified; the constraint is the dependence, not the figure."
+      confidence: C
+      sources:
+        - {url: "https://andina.pe/Ingles/noticia-new-us-tariffs-will-have-limited-impact-on-peruvian-exports-1037870.aspx", title: "New U.S. tariffs will have limited impact on Peruvian exports", publisher: "Andina", date: 2025-07, tier: 3}
+        - {url: "https://www.cfr.org/expert-brief/tariffs-sour-public-opinion-us-chile-and-peru", title: "Tariffs Sour Public Opinion on the U.S. in Chile and Peru", publisher: "Council on Foreign Relations", date: 2025, tier: 2}
+
+  paradoxes:
+    - text: "Chancay brings the Chinese money and the Chinese trade, and the Chinese link became a political liability. President Jerí was removed by Congress in February 2026 for undisclosed meetings with Zhihua Yang, a Chinese businessman under government scrutiny. The investment the state needs is also what brings its leaders down."
+      confidence: C
+      sources:
+        - {url: "https://en.wikipedia.org/wiki/2026_Peruvian_general_election", title: "2026 Peruvian general election (Wikipedia; index, tier 4 pointer)", publisher: "Wikipedia", date: 2026, tier: 4}
+        - {url: "https://www.mfa.gov.cn/eng/xw/zyxw/202411/t20241116_11527528.html", title: "Xi Jinping and Dina Boluarte attend the inauguration of the Chancay port by video link", publisher: "Ministry of Foreign Affairs of China (official statement)", date: 2024-11-16, tier: 1}
+
+  reading: |
+    Peru is a minerals economy with two markets: China buys through Chancay and took about a third of 2025 exports, and the United States buys copper under a tariff set in Washington, so Lima has to keep both open at once. Its strategy is held back less by enemies than by its own Congress, which has removed three presidents since 2022 and turned the Chinese port into a political risk as well as a trade gain. Not verified for this card: the Chile, Ecuador, Bolivia, EU and Venezuela-migrant questions (no fetched source), the 1998 Ecuador accord, Bolivia's sea claim, the April 2026 first-round figures, and the Iran rupture of 1 September 2026, whose reasons the sources read do not give.
