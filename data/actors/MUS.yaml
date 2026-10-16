@@ -8,7 +8,53 @@ coords:
 - -20.16
 seat: Port Louis
 regions:
-- world
-card: stub
+- east-africa
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Recover the Chagos Archipelago, Diego Garcia included, through the treaty signed with the UK on 22 May 2025: sovereignty to Mauritius, with a 99-year lease of the base back to London. Ratification has stalled: the Bill ran out of time in the Lords, London has accepted that US consent cannot be secured for now, and the handover was shelved in April 2026."
+    confidence: B
+    sources:
+    - {url: "https://www.chathamhouse.org/2026/01/uk-ratification-chagos-archipelago-treaty-will-not-violate-international-law", title: "UK ratification of the Chagos Archipelago treaty will not violate international law", publisher: "Chatham House", date: 2026-01, tier: 2}
+    - {url: "https://worldview.ranenetwork.com/content/situational-report/2026-04-14/mauritius-u-k-minister-confirms-treaty-ratification-for-chagos-islands-handover-shelved-due-to-u-s-pressure", title: "Mauritius-UK minister confirms treaty ratification for Chagos Islands handover shelved due to US pressure", publisher: "RANE (Worldview)", date: 2026-04-14, tier: 3}
+    - {url: "https://www.e-ir.info/2026/02/02/opinion-will-the-chagos-deal-survive/", title: "Opinion - Will the Chagos Deal Survive?", publisher: "E-International Relations", date: 2026-02-02, tier: 3}
+  - rank: 2
+    text: "Sell its Indian Ocean position to both Asian powers: India's 'enhanced strategic partnership' (state visit of 11-12 March 2025, eight agreements, maritime security and trade in local currencies) and China's free trade agreement, in force since 1 January 2021 with duty-free access to 7,504 tariff lines at entry into force."
+    confidence: B
+    sources:
+    - {url: "https://newsonair.gov.in/india-mauritius-decide-to-reach-the-level-of-enhanced-strategic-partnership", title: "India, Mauritius decide to reach the level of enhanced strategic partnership", publisher: "All India Radio (newsonair)", date: 2025-03, tier: 1}
+    - {url: "https://www.mcci.org/en/media-news-events/business-updates/the-mauritius-china-fta-has-come-into-force-on-01-january-2021/", title: "The Mauritius-China FTA has come into force on 01 January 2021", publisher: "Mauritius Chamber of Commerce and Industry", date: 2021-01, tier: 3}
+  means:
+  - text: "India's money and presence. India funded the Agalega airstrip and jetty, opened by video link in February 2024; Mauritius says Agalega is no military base, while local protests read the project as a cost to sovereignty. The 2025 partnership is the framework through which that money and cooperation flow."
+    confidence: B
+    sources:
+    - {url: "https://seychellesnewsagency.com/articles/20183/mauritius-launches-india-funded-air-strip-in-agalega", title: "Mauritius launches India-funded air strip in Agalega", publisher: "Seychelles News Agency", date: 2024-02, tier: 3}
+    - {url: "https://newsonair.gov.in/india-mauritius-decide-to-reach-the-level-of-enhanced-strategic-partnership", title: "India, Mauritius decide to reach the level of enhanced strategic partnership", publisher: "All India Radio (newsonair)", date: 2025-03, tier: 1}
+  - text: "China's credit and trade access. A China Eximbank preferential buyer's credit of US$73.7m (April 2018, through Mauritius Telecom, with a sovereign guarantee) finances the Safe City surveillance system; the free trade agreement gives Mauritian goods duty-free entry to China on most tariff lines. Both bind Port Louis to Beijing's money without an alliance."
+    confidence: B
+    sources:
+    - {url: "https://china.aiddata.org/projects/55627", title: "Safe City project record: China Eximbank buyer's credit to Mauritius (AidData)", publisher: "AidData (William & Mary)", date: 2018-04, tier: 2}
+    - {url: "https://www.mcci.org/en/media-news-events/business-updates/the-mauritius-china-fta-has-come-into-force-on-01-january-2021/", title: "The Mauritius-China FTA has come into force on 01 January 2021", publisher: "Mauritius Chamber of Commerce and Industry", date: 2021-01, tier: 3}
+  constraints:
+  - text: "Chagos is a lever held by others. The handover needs US consent, which Washington has not given; in September 2026 Trump called the deal a 'terrible deal' and the UK said the annual payments (at least GBP120m) would not be made 'at this stage'. Port Louis cannot make London or Washington move."
+    confidence: B
+    sources:
+    - {url: "https://gulfnews.com/world/asia/uk-says-will-revisit-chagos-deal-after-latest-trump-criticism-3-1.500685166", title: "UK says will revisit Chagos deal after latest Trump criticism", publisher: "Gulf News", date: 2026-09-23, tier: 3}
+    - {url: "https://worldview.ranenetwork.com/content/situational-report/2026-04-14/mauritius-u-k-minister-confirms-treaty-ratification-for-chagos-islands-handover-shelved-due-to-u-s-pressure", title: "Mauritius-UK minister confirms treaty ratification for Chagos Islands handover shelved due to US pressure", publisher: "RANE (Worldview)", date: 2026-04-14, tier: 3}
+  - text: "Scrutiny of its own China project. Safe City is contested in parliament: in March 2025 opposition MPs asked who the contractors were and whether the system works, and Ramgoolam himself reported unexplained camera malfunctions and proposed an independent evaluation. The government's room to trade with Beijing is narrower at home than the FTA suggests."
+    confidence: B
+    sources:
+    - {url: "https://fr.allafrica.com/stories/202503190228.html", title: "Mauritius: Safe City - a multi-billion project under fire", title_original: "Ile Maurice: Safe City - Un projet à plusieurs milliards sous le feu des critiques", lang: fr, publisher: "allAfrica", date: 2025-03-19, tier: 3}
+    - {url: "https://fr.allafrica.com/stories/202503170490.html", title: "Mauritius: Navin Ramgoolam questioned on drugs, Safe City and smart cities", title_original: "Ile Maurice: Navin Ramgoolam interrogé sur la drogue, Safe City et les Smart Cities", lang: fr, publisher: "allAfrica", date: 2025-03-17, tier: 3}
+  paradoxes:
+  - text: "The treaty that would return the islands needs the consent of the power that wants the base kept. Port Louis signed a deal that Washington now blocks, and the ties it builds with India and China for leverage do not buy that consent: the more it courts the rival powers, the less the handover depends on its own treaty."
+    confidence: B
+    sources:
+    - {url: "https://worldview.ranenetwork.com/content/situational-report/2026-04-14/mauritius-u-k-minister-confirms-treaty-ratification-for-chagos-islands-handover-shelved-due-to-u-s-pressure", title: "Mauritius-UK minister confirms treaty ratification for Chagos Islands handover shelved due to US pressure", publisher: "RANE (Worldview)", date: 2026-04-14, tier: 3}
+    - {url: "https://gulfnews.com/world/asia/uk-says-will-revisit-chagos-deal-after-latest-trump-criticism-3-1.500685166", title: "UK says will revisit Chagos deal after latest Trump criticism", publisher: "Gulf News", date: 2026-09-23, tier: 3}
+  reading: |
+    Mauritius wants the Chagos back and has the 2025 treaty as its best instrument, but ratification now waits on a US consent that Washington withholds and that London has accepted it cannot secure for now. Meanwhile Port Louis plays the two Asian powers against each other for money and security, India through funding and an enhanced partnership, China through a loan and a free trade agreement, without an alliance with either. The test is whether London and Washington rework the deal in a form Port Louis can sign, and whether the Safe City questions at home cost the government room to negotiate.

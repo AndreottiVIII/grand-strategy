@@ -1,0 +1,103 @@
+from: MUS
+relations:
+  # ---------- objective ----------
+  - to: sub-chagos
+    layer: objective
+    type: territorial_claim
+    summary: "Mauritius claims the Chagos Archipelago, Diego Garcia included. The treaty of 22 May 2025 would transfer sovereignty to Mauritius with a 99-year lease of the base back to the UK; ratification stalled in 2026."
+    since: 2025-05-22
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.chathamhouse.org/2026/01/uk-ratification-chagos-archipelago-treaty-will-not-violate-international-law", title: "UK ratification of the Chagos Archipelago treaty will not violate international law", publisher: "Chatham House", date: 2026-01, tier: 2}
+      - {url: "https://www.e-ir.info/2026/02/02/opinion-will-the-chagos-deal-survive/", title: "Opinion - Will the Chagos Deal Survive?", publisher: "E-International Relations", date: 2026-02-02, tier: 3}
+
+  # ---------- alignment ----------
+  - to: CHN
+    layer: alignment
+    type: recognition
+    summary: "Mauritius recognises the People's Republic of China; the joint communique establishing diplomatic relations is dated 15 April 1972."
+    since: 1972-04-15
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://lawinfochina.com/display.aspx?id=7505&lib=tax&SearchKeyword=&SearchCKeyword=", title: "Joint Communique on the Establishment of Diplomatic Relations between the People's Republic of China and Mauritius", publisher: "LawInfoChina (text of the joint communique)", date: 1972-04-15, tier: 1}
+
+  - to: CHN
+    layer: alignment
+    type: treaty
+    summary: "Free trade agreement signed in Beijing in October 2019, in force 1 January 2021: duty-free access to 7,504 tariff lines at entry into force, 723 more lines phased out over five to seven years, and a 50,000-tonne sugar quota phased in over eight years. Sources disagree on the product counts (one gives 8,227 lines, 96% of Chinese tariff lines); the figure in the sources read is kept."
+    since: 2021-01-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.mauritiustrade.mu/en/trade-agreements/china", title: "Mauritius - China FTA", publisher: "Government of Mauritius (trade portal)", date: 2021-01, tier: 1}
+      - {url: "https://www.mcci.org/en/media-news-events/business-updates/the-mauritius-china-fta-has-come-into-force-on-01-january-2021/", title: "The Mauritius-China FTA has come into force on 01 January 2021", publisher: "Mauritius Chamber of Commerce and Industry", date: 2021-01, tier: 3}
+
+  # ---------- dependency ----------
+  - to: CHN
+    layer: dependency
+    type: debt
+    summary: "China Eximbank preferential buyer's credit of US$73,687,000 for the Safe City surveillance system, signed in April 2018 with Mauritius Telecom: 2% interest, 20-year maturity, 7-year grace, backed by a sovereign guarantee. Opposition MPs questioned the project in March 2025. This is the only Chinese loan figure read in this flash card; no debt-to-GDP share was sourced."
+    value: 73.687
+    unit: usd_millions_loan
+    since: 2018-04
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://china.aiddata.org/projects/55627", title: "Safe City project record: China Eximbank buyer's credit to Mauritius (AidData)", publisher: "AidData (William & Mary)", date: 2018-04, tier: 2}
+      - {url: "https://fr.allafrica.com/stories/202503190228.html", title: "Mauritius: Safe City - a multi-billion project under fire", title_original: "Ile Maurice: Safe City - Un projet à plusieurs milliards sous le feu des critiques", lang: fr, publisher: "allAfrica", date: 2025-03-19, tier: 3}
+
+  # ---------- action ----------
+  - to: GBR
+    layer: action
+    type: agreement
+    summary: "Chagos treaty signed 22 May 2025: sovereignty over the Chagos Archipelago to Mauritius, a 99-year lease of Diego Garcia to the UK, and continued long-term operation of the UK-US base. Mirror of the UK card's row toward MUS, same sources. Not ratified."
+    since: 2025-05-22
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.e-ir.info/2026/02/02/opinion-will-the-chagos-deal-survive/", title: "Opinion - Will the Chagos Deal Survive?", publisher: "E-International Relations", date: 2026-02-02, tier: 3}
+      - {url: "https://www.chathamhouse.org/2026/01/uk-ratification-chagos-archipelago-treaty-will-not-violate-international-law", title: "UK ratification of the Chagos Archipelago treaty will not violate international law", publisher: "Chatham House", date: 2026-01, tier: 2}
+      - {url: "https://aa.com.tr/en/world/uk-delays-debate-on-chagos-deal-after-trump-backlash-reports/3809359", title: "UK delays debate on Chagos deal after Trump backlash", publisher: "Anadolu Agency", date: 2026, tier: 3}
+
+  - to: GBR
+    layer: action
+    type: incident
+    summary: "Ratification shelved in April 2026: a UK minister told MPs the handover ratification was indefinitely shelved because of opposition from the Trump administration. Port Louis's side of the same story: the lease is in suspended animation until the enabling legislation passes."
+    since: 2026-04-14
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://worldview.ranenetwork.com/content/situational-report/2026-04-14/mauritius-u-k-minister-confirms-treaty-ratification-for-chagos-islands-handover-shelved-due-to-u-s-pressure", title: "Mauritius-UK minister confirms treaty ratification for Chagos Islands handover shelved due to US pressure", publisher: "RANE (Worldview)", date: 2026-04-14, tier: 3}
+      - {url: "https://lboro.ac.uk/news-events/news/2026/april/chagos-islands-deal-mauritius-shelved/", title: "Chagos Islands deal shelved - legal expert explains what happens next", publisher: "Loughborough University", date: 2026-04, tier: 3}
+
+  - to: IND
+    layer: action
+    type: agreement
+    summary: "State visit of Prime Minister Modi to Mauritius, 11-12 March 2025: ties upgraded to an 'enhanced strategic partnership', with a joint vision and eight agreements (maritime security and trade in local currencies among them). The eight agreements are reported, not read in full."
+    since: 2025-03-12
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.narendramodi.in/amp/category/news/sagar", title: "India-Mauritius Joint Vision for an Enhanced Strategic Partnership", publisher: "Office of the Prime Minister of India (narendramodi.in)", date: 2025-03-12, tier: 1}
+      - {url: "https://newsonair.gov.in/india-mauritius-decide-to-reach-the-level-of-enhanced-strategic-partnership", title: "India, Mauritius decide to reach the level of enhanced strategic partnership", publisher: "All India Radio (newsonair)", date: 2025-03, tier: 1}
+
+  - to: CHN
+    layer: action
+    type: incident
+    summary: "Mauritius revoked overflight approval for Taiwan's president Lai's aircraft in April 2026, cancelling his planned Eswatini trip. The Taiwanese Presidential Office says China pressed Mauritius, Seychelles and Madagascar; no Mauritian or Chinese statement was read. Mirror of the Taiwan card's row, same sources."
+    since: 2026-04
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.stimson.org/?p=128712", title: "Analysis of Lai's US stopover row and the April 2026 Eswatini trip cancellation", publisher: "Stimson Center", date: 2026, tier: 2}
+      - {url: "https://www.khan.co.kr/en/article/202604221137027", title: "Taiwan's Lai cancels Eswatini trip after overflight permissions revoked", publisher: "The Kyunghyang Shinmun", date: 2026-04-22, tier: 3}
