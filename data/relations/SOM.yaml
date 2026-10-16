@@ -1,0 +1,523 @@
+from: SOM
+relations:
+
+  # ---------------------------------------------------------------- objectives
+  - to: sub-somaliland
+    layer: objective
+    type: territorial_claim
+    summary: "Mogadishu treats Somaliland as an integral part of Somalia and has not controlled it since the 1991 declaration of independence; the claim is backed by the AU line, the OIC, China, Turkey, Saudi Arabia, Egypt and Djibouti and by a joint statement of 21 states against Israel's recognition."
+    since: 1991-05
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.mfa.gov.cn/mfa_eng/wjbzhd/202601/t20260112_11811365.html", title: "Readout of Wang Yi's call with the Somali foreign minister of 12 January 2026 (Somaliland an inalienable part of Somalia)", publisher: "Ministry of Foreign Affairs of the PRC", date: 2026-01-12, tier: 1}
+      - {url: "https://www.annahar.com/en/international/265048/israels-recognition-of-somaliland-draws-regional-condemnation", title: "Israel's recognition of Somaliland draws regional condemnation", publisher: "An-Nahar", date: 2025-12, tier: 3}
+      - {url: "https://www.yahoo.com/news/articles/state-aggression-somalia-demands-israel-104325906.html", title: "'State aggression': Somalia demands Israel withdraw Somaliland recognition", publisher: "Yahoo News (wire)", date: 2025-12, tier: 3}
+
+  - to: sub-somaliland
+    layer: objective
+    type: recognition_denied
+    summary: "Mogadishu is working to stop and reverse third-state recognition of Somaliland: it called Israel's recognition of 26 Dec 2025 'state aggression', demanded its withdrawal and took the case to the OIC, the AU and the Security Council; Djibouti closed Somaliland's liaison office; a new Taiwan-Somaliland office opened in June 2026 and draws Beijing's warnings. Washington has discussed a naval-base-for-recognition swap and has not recognised."
+    since: 2025-12-26
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.yahoo.com/news/articles/state-aggression-somalia-demands-israel-104325906.html", title: "'State aggression': Somalia demands Israel withdraw Somaliland recognition", publisher: "Yahoo News (wire)", date: 2025-12, tier: 3}
+      - {url: "https://www.africanews.com/amp/2026/01/06/israeli-foreign-minister-visits-somaliland-after-contentious-recognition-of-breakaway-terr/", title: "Israeli foreign minister visits Somaliland after contentious recognition of breakaway territory", publisher: "Africanews", date: 2026-01-06, tier: 3}
+      - {url: "https://app.al-monitor.com/originals/2026/06/somaliland-says-it-has-right-choose-its-relationships-it-opens-new-taiwan-office", title: "Somaliland says it has a right to choose its relationships as it opens new Taiwan office", publisher: "Al-Monitor", date: 2026-06-12, tier: 3}
+      - {url: "https://www.foxnews.com/world/israel-becomes-first-country-recognize-somaliland-trump-not-ready.print", title: "Israel becomes first country to recognize Somaliland; Trump 'not ready'", publisher: "Fox News", date: 2025-12-26, tier: 3}
+
+  - to: ETH
+    layer: objective
+    type: influence_goal
+    summary: "Hold Ethiopia to the Ankara Declaration (sea access only under Somali sovereign authority), keep its 2,500 troops inside AUSSOM and avoid a war. On 5 Oct 2026, a day after El Alamein, Hassan Sheikh congratulated Abiy and said Somalia does not object to Ethiopian Red Sea access through Somali territory if it is negotiated officially. The MoU with Somaliland has never been withdrawn."
+    since: 2024-12-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.thereporterethiopia.com/42967/", title: "Ethiopia, Somalia reconciliation in Ankara garners international praise", publisher: "The Reporter (Ethiopia)", date: 2024-12, tier: 3}
+      - {url: "https://www.theeastafrican.co.ke/tea/news/east-africa/somalia-and-ethiopia-agree-to-work-together-4945528", title: "After a year of tension, Somalia and Ethiopia agree to work together", publisher: "The EastAfrican", date: 2024-12-12, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2026/10/5/ethiopias-pm-insists-on-access-to-red-sea-despite-regional-conflict-threat", title: "Ethiopian PM Abiy demands Red Sea access as tensions with neighbours rise", publisher: "Al Jazeera", date: 2026-10-05, tier: 3}
+
+  - to: sub-puntland
+    layer: objective
+    type: influence_goal
+    summary: "Bring Puntland back under the federal constitutional order after it withdrew its recognition of the federal government in March-April 2024. Mogadishu's levers are the amended constitution and the electoral law and mediated talks (Halane in May 2026, Turkish-brokered talks of 7-8 Jul 2026), none of which has produced an agreement: Puntland sent no delegates in July and questioned Ankara's neutrality."
+    since: 2024-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.jurist.org/news/2024/04/somalia-state-of-puntland-rejects-constitutional-amendments-and-withdraws-from-federal-government/", title: "Somalia state of Puntland rejects constitutional amendments and withdraws from federal government", publisher: "JURIST", date: 2024-04, tier: 3}
+      - {url: "https://app.al-monitor.com/originals/2026/07/turkey-brokers-somalia-talks-federal-rifts-test-ankaras-influence", title: "Turkey brokers Somalia talks, federal rifts test Ankara's influence", publisher: "Al-Monitor", date: 2026-07-09, tier: 3}
+      - {url: "https://africacenter.org/spotlight/en-elections-2026/somalia/", title: "Somalia: Electoral process under construction amid a security crisis", publisher: "Africa Center for Strategic Studies", date: 2026, tier: 2}
+
+  - to: sub-jubaland
+    layer: objective
+    type: influence_goal
+    summary: "Replace Jubaland's hold on Gedo with a federal-aligned administration: a parallel Jubaland administration in Gedo (a 45-day plan of October 2025) that Ethiopia opposed as a direct threat to its security. Jubaland rejected the March 2026 constitutional amendments and by 10 Oct 2026 held Balad Hawo, Dolow, Luuq and El Wak; federal-aligned forces held Bardere and Garbaharey."
+    since: 2025-10
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.somaliguardian.com/news/somalia-news/ethiopia-opposes-somali-government-plans-for-parallel-jubaland-administration-in-gedo/", title: "Ethiopia opposes Somali government plans for parallel Jubaland administration in Gedo", publisher: "Somali Guardian", date: 2025-10-12, tier: 3}
+      - {url: "https://allafrica.com/stories/202603040328.html", title: "Somalia: Jubaland Rejects Somalia Constitutional Amendments Amid Rising Federal Tensions", publisher: "AllAfrica", date: 2026-03-04, tier: 3}
+      - {url: "https://www.somaliguardian.com/news/somalia-news/somalia-government-loses-three-towns-48-hours/", title: "Somalia's govt loses three towns in 48 hours as rivals advance", publisher: "Somali Guardian", date: 2026-10-10, tier: 3}
+
+  - to: nsa-al-shabaab
+    layer: objective
+    type: regime_goal
+    summary: "Destroy al-Shabaab as an armed and governing force, with other people's troops, drones and air strikes. The group's 2025 offensive in Hiran and Middle Shabelle reversed most of the 2022-23 government gains; allied and federal forces claimed at least 54 militants killed in strikes in April 2026 (the ministry's unverified count)."
+    since: 2006
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://euaa.europa.eu/coi/somalia/2025/security-situation/12-armed-actors-and-relevant-developments/122-al-shabaab-control-areas-presence-and-influence", title: "Al-Shabaab: control, areas, presence and influence (Somalia security situation)", publisher: "European Union Agency for Asylum", date: 2026, tier: 1}
+      - {url: "https://www.somaliguardian.com/news/somalia-news/somalia-government-loses-three-towns-48-hours/", title: "Somalia's govt loses three towns in 48 hours as rivals advance", publisher: "Somali Guardian", date: 2026-10-10, tier: 3}
+      - {url: "https://www.dawan.africa/news/somali-forces-partners-kill-54-al-shabaab-militants-in-airstrikes", title: "Somali forces, partners kill 54 al-Shabaab militants in airstrikes", publisher: "Dawan Africa", date: 2026-04, tier: 3}
+
+  - to: USA
+    layer: objective
+    type: influence_goal
+    summary: "Keep Washington engaged. Hassan Sheikh's letter to President Trump (reported 28 Mar 2025) offered exclusive use of the Balidogle and Berbera air bases and the Berbera and Bosaso ports, to keep outside rivals out of the corridor; Berbera lies in Somaliland, whose foreign minister said Washington would deal with Hargeisa. No acceptance was found."
+    since: 2025-03-28
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.yahoo.com/news/somalia-offers-us-exclusive-control-195104782.html", title: "Somalia offers US exclusive control of air bases, ports", publisher: "Reuters (via Yahoo News)", date: 2025-03-28, tier: 3}
+      - {url: "https://www.newarab.com/news/somalia-offers-us-exclusive-control-air-bases-ports", title: "Somalia offers US exclusive control of air bases, ports", publisher: "The New Arab", date: 2025-03, tier: 3}
+      - {url: "https://www.foxnews.com/world/israel-becomes-first-country-recognize-somaliland-trump-not-ready.print", title: "Israel becomes first country to recognize Somaliland; Trump 'not ready'", publisher: "Fox News", date: 2025-12-26, tier: 3}
+
+  # ---------------------------------------------------------------- alignments
+  - to: TUR
+    layer: alignment
+    type: treaty
+    summary: "Defence and economic cooperation agreement of February 2024 (terms undisclosed; sources differ on the date) and a hydrocarbon framework of March 2024. Turkey trains the army at TURKSOM, supplies drones and helicopters and runs Mogadishu's port and airport; the press itself speaks of the Somalia-Turkey alliance."
+    since: 2024-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://allafrica.com/stories/202509160248.html", title: "Somalia: Doha Deal - Hassan Sheikh, Erdogan Double Down On Somalia-Turkey Alliance", publisher: "AllAfrica", date: 2025-09-16, tier: 3}
+      - {url: "https://www.meforum.org/mef-observer/turkey-renews-its-somalia-mandate-to-guard-the-spaceport-and-missile-base", title: "Turkey renews its Somalia mandate to guard the spaceport and missile base", publisher: "Middle East Forum", date: 2026-07, tier: 2}
+      - {url: "https://app.al-monitor.com/originals/2026/07/turkey-brokers-somalia-talks-federal-rifts-test-ankaras-influence", title: "Turkey brokers Somalia talks, federal rifts test Ankara's influence", publisher: "Al-Monitor", date: 2026-07-09, tier: 3}
+
+  - to: EGY
+    layer: alignment
+    type: treaty
+    summary: "Defence cooperation pact of Aug 2024 between Egypt and Somalia, which Ethiopia reads as encirclement (mirror of the EGY row, same sources)."
+    since: 2024-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://fides.org/en/news/75346-AFRICA_SOMALIA_Egypt_and_Somalia_s_military_agreement_alarms_Ethiopia", title: "Egypt and Somalia's military agreement alarms Ethiopia", publisher: "Agenzia Fides", date: 2024-08, tier: 3}
+      - {url: "https://www.thenationalnews.com/news/mena/2026/10/04/egypt-hosts-four-way-summit-as-tensions-with-ethiopia-escalate/", title: "Egypt hosts four-way summit as tensions with Ethiopia escalate", publisher: "The National", date: 2026-10-04, tier: 3}
+
+  # ---------------------------------------------------------------- actions
+  - to: TUR
+    layer: action
+    type: agreement
+    summary: "Turkey's parliament approved on 21 Jul 2026 a two-year extension of the military mission in Somalia to 27 Jul 2028, covering forces in 'jointly determined areas' on land and at sea; work on the Warsheikh spaceport and missile-test range, about 70 km north of Mogadishu, began in Oct 2025 and an agreement to build it was announced by Erdogan in October 2026 (mirror of the TUR row, same sources). The opacity of the Warsheikh terms is a theme of Horn Review's coverage."
+    since: 2026-07-21
+    until: 2028-07-27
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.meforum.org/mef-observer/turkey-renews-its-somalia-mandate-to-guard-the-spaceport-and-missile-base", title: "Turkey renews its Somalia mandate to guard the spaceport and missile base", publisher: "Middle East Forum", date: 2026-07, tier: 2}
+      - {url: "https://allafrica.com/stories/202607060081.html", title: "Somalia: Turkey's new Somalia spaceport doubles as missile range, threatening Israel", publisher: "AllAfrica", date: 2026-07-06, tier: 3}
+      - {url: "https://app.al-monitor.com/originals/2026/02/turkey-touts-somalia-spaceport-horn-africa-rivalry-heats", title: "Turkey touts Somalia spaceport as Horn of Africa rivalry heats", publisher: "Al-Monitor", date: 2026-02, tier: 3}
+      - {url: "https://hornreview.org/2026/08/17/the-warsheikh-facility-and-somalias-pattern-of-asymmetric-agreements-with-turkey/", title: "The Warsheikh facility and Somalia's pattern of asymmetric agreements with Turkey", publisher: "Horn Review", date: 2026-08-17, tier: 3}
+
+  - to: EGY
+    layer: action
+    type: visit
+    summary: "Hassan Sheikh sat at the El Alamein quadrilateral of 4 Oct 2026 with Sisi, Burhan and Isaias; the joint declaration on the Red Sea, the Nile and regional unity rejects any support for Somaliland, and Ethiopia reads the ring as containment."
+    since: 2026-10-04
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.thenationalnews.com/news/mena/2026/10/04/egypt-hosts-four-way-summit-as-tensions-with-ethiopia-escalate/", title: "Egypt hosts four-way summit as tensions with Ethiopia escalate", publisher: "The National", date: 2026-10-04, tier: 3}
+      - {url: "https://www.dawan.africa/news/egypt-somalia-eritrea-and-sudan-issue-joint-declaration-on-red-sea-nile-and-regional-unity", title: "Egypt, Somalia, Eritrea and Sudan issue joint declaration on Red Sea, Nile and regional unity", publisher: "Dawan Africa", date: 2026-10-05, tier: 3}
+
+  - to: ERI
+    layer: action
+    type: agreement
+    summary: "Asmara trilateral summit of 10 Oct 2024 with Egypt: a joint committee of foreign ministers and a commitment to strengthen the Somali National Army, the diplomatic answer to Ethiopia's MoU with Somaliland. Hassan Sheikh returned to Asmara after the Ankara Declaration to reassure Isaias, and Eritrea sat again at El Alamein on 4 Oct 2026."
+    since: 2024-10-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://web.mfa.gov.so/official-statement-on-the-trilateral-summit-between-somalia-eritrea-and-egypt/", title: "Official statement on the trilateral summit between Somalia, Eritrea and Egypt", publisher: "Ministry of Foreign Affairs of Somalia", date: 2024-10-10, tier: 1}
+      - {url: "https://allafrica.com/stories/202410110085.html", title: "Egypt, Eritrea Provide All Forms of Support to Somalia Following Summit Meeting", publisher: "AllAfrica", date: 2024-10-11, tier: 3}
+      - {url: "https://www.somaliguardian.com/news/somalia-news/somalias-president-visits-eritrea-to-address-afwerkis-concerns-over-ethiopia-deal/", title: "Somalia's president visits Eritrea to address Afwerki's concerns over Ethiopia deal", publisher: "Somali Guardian", date: 2025, tier: 3}
+
+  - to: ETH
+    layer: action
+    type: agreement
+    summary: "Ankara Declaration of 11 Dec 2024, mediated by Turkey: Ethiopia respects Somalia's sovereignty and territorial integrity, Somalia gives Ethiopia sea access under its sovereign authority and recognises the sacrifices of Ethiopian soldiers in AU missions; it ended the break caused by the 2024 MoU with Somaliland (mirror of the ETH row, same sources). No concluded sea-access agreement was found."
+    since: 2024-12-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.thereporterethiopia.com/42967/", title: "Ethiopia, Somalia reconciliation in Ankara garners international praise", publisher: "The Reporter (Ethiopia)", date: 2024-12, tier: 3}
+      - {url: "https://www.thereporterethiopia.com/42883/", title: "Ethiopia, Somalia to reach maritime agreement by June 2025", publisher: "The Reporter (Ethiopia)", date: 2024-12, tier: 3}
+
+  - to: ETH
+    layer: action
+    type: visit
+    summary: "Hassan Sheikh met Abiy in Addis Ababa on 29 Sep 2026 and went to Djibouti the next day, within a week of El Alamein; at Djibouti the two presidents discussed the Tigray offensive and the seven-group alliance. He had also attended the Jigjiga trilateral with Abiy and Guelleh on 31 Jan 2026 (mirror of the ETH row, same sources)."
+    since: 2026-09-29
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    sources:
+      - {url: "https://www.dawan.africa/news/somalia-djibouti-presidents-discuss-ethiopia-amid-renewed-fighting", title: "Somalia, Djibouti presidents discuss Ethiopia amid renewed fighting", publisher: "Dawan Africa", date: 2026-09-30, tier: 3}
+      - {url: "https://dawan.africa/news/somalia-ethiopia-djibouti-hold-trilateral-summit-in-jigjiga", title: "Somalia, Ethiopia, Djibouti hold trilateral summit in Jigjiga", publisher: "Dawan Africa", date: 2026-01, tier: 3}
+      - {url: "https://allafrica.com/stories/202509100291.html", title: "Africa: Ethiopia's Abiy meets Somali president after launch of Africa's largest hydroelectric dam", publisher: "AllAfrica", date: 2025-09-10, tier: 3}
+
+  - to: KEN
+    layer: action
+    type: visit
+    summary: "Hassan Sheikh met President Ruto in June 2026 over AUSSOM funding; Ruto raised questions about the status of Somalia's federal institutions. In October 2024 the two presidents had endorsed the new mission in a joint statement."
+    since: 2026-06
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://allafrica.com/stories/202606220511.html", title: "Kenya: Somalia's President Holds Talks With Kenya's Ruto Amid Aussom Funding Concerns", publisher: "AllAfrica", date: 2026-06-22, tier: 3}
+      - {url: "https://capitalfm.africa/kenya-somalia-endorse-new-aussom-mission-set-to-begin-in-2025/", title: "Kenya, Somalia endorse new AUSSOM mission set to begin in 2025", publisher: "Capital FM (Kenya)", date: 2024-10, tier: 3}
+
+  - to: KEN
+    layer: action
+    type: incident
+    summary: "Kenya rejected the International Court of Justice's October 2021 ruling on the Somalia-Kenya maritime boundary 'in totality' after withdrawing from the case; the ruling has not been implemented and Kenya keeps backing Jubaland's Madobe."
+    since: 2021-10
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2021/10/13/kenya-rejects-icjs-verdict-on-somalia-maritime-border-row", title: "Kenya rejects ICJ's verdict on Somalia maritime border row", publisher: "Al Jazeera", date: 2021-10-13, tier: 3}
+      - {url: "https://www.somaliguardian.com/news/somalia-news/ethiopia-opposes-somali-government-plans-for-parallel-jubaland-administration-in-gedo/", title: "Ethiopia opposes Somali government plans for parallel Jubaland administration in Gedo", publisher: "Somali Guardian", date: 2025-10-12, tier: 3}
+
+  - to: ARE
+    layer: action
+    type: sanction
+    summary: "On 12 Jan 2026 Somalia annulled every agreement with the UAE (ports, security, defence) and banned its military aircraft, after alleged sovereignty violations including the flight of an STC leader through Berbera. Puntland and Somaliland rejected the annulment (mirror of the ARE row, same sources)."
+    since: 2026-01-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2026/01/12/somalia-cancels-all-agreements-with-uae-over-alleged-sovereignty-violations", title: "Somalia cancels all agreements with UAE over alleged sovereignty violations", publisher: "Al Jazeera", date: 2026-01-12, tier: 3}
+      - {url: "https://www.theeastafrican.co.ke/tea/news/east-africa/why-somalia-is-cancelling-uae-port-deals-5324586", title: "Why Somalia is cancelling UAE port deals", publisher: "The EastAfrican", date: 2026-01, tier: 3}
+      - {url: "https://www.theeastafrican.co.ke/tea/news/east-africa/3-somali-regions-reject-mogadishu-s-move-to-sever-uae-ties-5325646", title: "3 Somali regions reject Mogadishu's move to sever UAE ties", publisher: "The EastAfrican", date: 2026-01-13, tier: 3}
+
+  - to: SAU
+    layer: action
+    type: visit
+    summary: "Riyadh talks of January 2026: Saudi Arabia reaffirmed its flat-out rejection of attempts to impose entities that compromise Somalia's unity (it was among the 21 states that rejected Israel's recognition of Somaliland), and Bloomberg reported talks on a Saudi-Egyptian-Somali military arrangement that Somalia said was still being finalised (no signature found)."
+    since: 2026-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://allafrica.com/stories/202601060389.html", title: "Somalia: Saudi Arabia Reaffirms Support for Somalia's Unity During Riyadh Talks", publisher: "AllAfrica", date: 2026-01, tier: 3}
+      - {url: "https://www.gulf-times.com/article/718381/region/saudi-arabia-reaffirms-flat-out-rejection-of-attempts-to-impose-entities-compromising-somalias-unity", title: "Saudi Arabia reaffirms flat-out rejection of attempts to impose entities compromising Somalia's unity", publisher: "Gulf Times", date: 2026-01, tier: 3}
+      - {url: "https://dawan.africa/news/bloomberg-saudi-arabia-in-talks-with-egypt-somalia-on-new-military-coalition", title: "Bloomberg: Saudi Arabia in talks with Egypt, Somalia on new military coalition", publisher: "Dawan Africa (citing Bloomberg)", date: 2026-01, tier: 3}
+
+  - to: SAU
+    layer: action
+    type: agreement
+    summary: "Somalia is among the 14 states of the Saudi-led Red Sea maritime coalition announced on 30 Jul 2026 (headquartered in the kingdom, after the Houthis declared a naval blockade of Saudi Arabia)."
+    since: 2026-07-30
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://agbi.com/shipping/2026/07/saudi-arabia-launches-14-nation-coalition-to-secure-red-sea-routes", title: "Saudi Arabia launches 14-nation coalition to secure Red Sea routes", publisher: "AGBI", date: 2026-07-30, tier: 3}
+      - {url: "https://www.khaleejtimes.com/world/mena/saudi-arabia-multinational-maritime-defence-coalition", title: "Saudi Arabia unveils plans for multinational maritime defence coalition", publisher: "Khaleej Times", date: 2026-07-30, tier: 3}
+
+  - to: QAT
+    layer: action
+    type: visit
+    summary: "The Qatari emir pledged full support for Somalia's legitimate state institutions in a call with Hassan Sheikh on 16 Feb 2026, weeks after the UAE break; Hassan Sheikh travelled to Doha in July 2026 and a Somali outlet reports substantial Qatari military and financial help to secure the capital (amounts and dates not given)."
+    since: 2026-02-16
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://thepeninsulaqatar.com/article/16/02/2026/amir-receives-phone-call-from-somali-president-3", title: "Amir receives phone call from Somali President", publisher: "The Peninsula (Qatar)", date: 2026-02-16, tier: 3}
+      - {url: "https://www.somaliguardian.com/news/somalia-news/somalia-and-qatar-leaders-discuss-closer-cooperation-after-uae-fallout/", title: "Somalia and Qatar leaders discuss closer cooperation after UAE fallout", publisher: "Somali Guardian", date: 2026, tier: 3}
+      - {url: "https://www.dawan.africa/news/somalias-president-to-travel-to-qatar-to-pay-respects-to-former-emir", title: "Somalia's president to travel to Qatar to pay respects to former emir", publisher: "Dawan Africa", date: 2026-07, tier: 3}
+
+  - to: CHN
+    layer: action
+    type: agreement
+    summary: "Wang Yi told the Somali foreign minister on 12 Jan 2026 that China backs Somalia's sovereignty, unity and territorial integrity and opposes Somaliland's collusion with Taiwan; Mogadishu backs the one-China principle. Wang's planned Mogadishu stop, the first high-level Chinese visit in four decades, was dropped on the eve of the trip after Israel's recognition."
+    since: 2026-01-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.mfa.gov.cn/mfa_eng/wjbzhd/202601/t20260112_11811365.html", title: "Readout of Wang Yi's call with the Somali foreign minister of 12 January 2026", publisher: "Ministry of Foreign Affairs of the PRC", date: 2026-01-12, tier: 1}
+      - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/01/11/china-voices-support-for-somalia-after-top-diplomat-postpones-visit", title: "China voices support for Somalia after top diplomat postpones visit", publisher: "Reuters (via Internazionale)", date: 2026-01-11, tier: 3}
+      - {url: "https://theeastafrican.co.ke/tea/news/east-africa/why-china-is-deepening-somalia-military-ties-5430176", title: "Why China is deepening Somalia military ties - what Taiwan and Somaliland have to do with it", publisher: "The EastAfrican", date: 2026, tier: 3}
+
+  - to: USA
+    layer: action
+    type: incident
+    summary: "Washington halted all assistance to the federal government on 7-8 Jan 2026 over an allegation of diverted food aid that the UN and Mogadishu call unsubstantiated, and said on 1 Jul 2026 that it would stop paying the UN logistics office UNSOS at the end of 2026 and oppose its renewal."
+    since: 2026-01-08
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://africanews.com/2026/01/08/somalia-us-halts-assistance-to-federal-government/", title: "Somalia: US halts assistance to federal government", publisher: "Africanews", date: 2026-01-08, tier: 3}
+      - {url: "https://www.africanews.com/amp/2026/07/03/us-to-block-un-funding-for-somalia-in-blow-to-au-peace-mission/", title: "US to block UN funding for Somalia in blow to AU peace mission", publisher: "Africanews", date: 2026-07-03, tier: 3}
+
+  - to: org-eu
+    layer: action
+    type: agreement
+    summary: "The Council of the EU approved on 21 Apr 2026 EUR 75m from the European Peace Facility for the military component of AUSSOM (about USD 87m), ending a two-year pause; the package reimburses 2025 and Q1 2026 costs and brings EU support to AU-led missions in Somalia to almost EUR 2.8bn since 2007."
+    since: 2026-04-21
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.consilium.europa.eu/en/press/press-releases/2026/04/21/european-peace-facility-support-for-the-military-component-of-the-african-union-support-and-stabilisation-mission-in-somalia/", title: "European Peace Facility: support for the military component of the African Union Support and Stabilisation Mission in Somalia", publisher: "Council of the European Union", date: 2026-04-21, tier: 1}
+      - {url: "https://theeastafrican.co.ke/tea/news/east-africa/eu-restores-somalia-mission-funding-with-87m-package-5434070", title: "EU restores Somalia mission funding with $87m package", publisher: "The EastAfrican", date: 2026-04, tier: 3}
+
+  - to: org-aussom
+    layer: action
+    type: agreement
+    summary: "The Security Council authorised AUSSOM in resolution 2767 on 27 Dec 2024 (14 votes to none, the United States abstaining) and renewed it unanimously in resolution 2809 on 23 Dec 2025 to 31 Dec 2026; the UN political mission UNTMIS ceases operations on 31 Oct 2026 and the Secretary-General must report on adapting UNSOS support to AUSSOM."
+    since: 2024-12-27
+    until: 2026-12-31
+    last_verified: 2026-10-16
+    confidence: A
+    sources:
+      - {url: "https://press.un.org/en/2024/sc15955.doc.htm", title: "Adopting Resolution 2767 (2024), Security Council endorses new African Union support mission in Somalia", publisher: "United Nations Security Council (press release)", date: 2024-12-27, tier: 1}
+      - {url: "https://www.securitycouncilreport.org/whatsinblue/2025/12/somalia-vote-on-aussom-mandate-renewal.php", title: "Somalia: vote on AUSSOM mandate renewal (resolution 2809)", publisher: "Security Council Report", date: 2025-12, tier: 2}
+
+  - to: nsa-al-shabaab
+    layer: action
+    type: incident
+    summary: "On 9 Oct 2026 al-Shabaab captured Hees in Hiran, near Mataban on the road to Beledweyne, after a brief battle with the army, cutting a government supply line; it follows the 2025 offensive from Hiran and Middle Shabelle that reversed most of the 2022-23 gains."
+    since: 2026-10-09
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.somaliguardian.com/news/somalia-news/somalia-government-loses-three-towns-48-hours/", title: "Somalia's govt loses three towns in 48 hours as rivals advance", publisher: "Somali Guardian", date: 2026-10-10, tier: 3}
+      - {url: "https://euaa.europa.eu/coi/somalia/2025/security-situation/12-armed-actors-and-relevant-developments/122-al-shabaab-control-areas-presence-and-influence", title: "Al-Shabaab: control, areas, presence and influence (Somalia security situation)", publisher: "European Union Agency for Asylum", date: 2026, tier: 1}
+
+  - to: nsa-houthis
+    layer: action
+    type: incident
+    summary: "The UN Panel of Experts on Yemen reported on 17 Oct 2025 intelligence exchange, weapons trafficking, drone and bomb-making training and joint operations between the Houthis and al-Shabaab (as summarised by ADF Magazine, which also reports that Somali forces seized explosives and drones shipped from Yemen and arrested traffickers). The ties are with the armed group, not with any Somali authority. Mogadishu's own statements were not found, only press attribution to the president."
+    since: 2025-10-17
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://adf-magazine.com/2025/11/u-n-report-shows-increasing-collaboration-of-houthis-al-shabaab/", title: "UN report shows increasing collaboration of Houthis, al-Shabaab", publisher: "ADF Magazine (US Africa Command), summarising the UN Panel of Experts on Yemen", date: 2025-11, tier: 3}
+      - {url: "https://adf-magazine.com/2025/06/al-shabaab-alliance-with-houthis-continues-to-grow/", title: "Al-Shabaab alliance with Houthis continues to grow", publisher: "ADF Magazine (US Africa Command)", date: 2025-06, tier: 3}
+      - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/28317", title: "The Houthis Seize Yemen's West Coast: Reactions from Experts", publisher: "Sana'a Center for Strategic Studies", date: 2026-09-15, tier: 2}
+
+  - to: ISR
+    layer: action
+    type: incident
+    summary: "Israel became the first UN member to recognise Somaliland on 26 Dec 2025 in a joint declaration tied to the Abraham Accords. Somalia's state minister for foreign affairs called it 'state aggression' and demanded its withdrawal; the president said, citing intelligence, that Somaliland had agreed to resettle Palestinians and host an Israeli base (unverified)."
+    since: 2025-12-26
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.yahoo.com/news/articles/state-aggression-somalia-demands-israel-104325906.html", title: "'State aggression': Somalia demands Israel withdraw Somaliland recognition", publisher: "Yahoo News (wire)", date: 2025-12, tier: 3}
+      - {url: "https://www.adaderana.lk/news/116434/israel-becomes-first-country-to-formally-recognise-somaliland-as-independent-state", title: "Israel becomes first country to formally recognise Somaliland as independent state", publisher: "Ada Derana (wire)", date: 2025-12-26, tier: 3}
+      - {url: "https://allafrica.com/stories/202512270037.html", title: "Somalia: Israel Recognises Somaliland As Independent State", publisher: "AllAfrica", date: 2025-12-27, tier: 3}
+      - {url: "https://www.aa.com.tr/en/africa/somalias-president-says-somaliland-agreed-to-resettle-palestinians-host-israeli-base-for-recognition/3786171", title: "Somalia's president says Somaliland agreed to resettle Palestinians, host Israeli base for recognition", publisher: "Anadolu Agency (state agency, citing the president)", date: 2025-12, tier: 3}
+
+  - to: sub-jubaland
+    layer: action
+    type: incident
+    summary: "Jubaland forces retook Balad Hawo in Gedo from federal troops who had taken it only months earlier (reported 10 Oct 2026, no exact date); Jubaland now holds Balad Hawo, Dolow, Luuq and El Wak, federal-aligned forces Bardere and Garbaharey."
+    since: 2026-10
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.somaliguardian.com/news/somalia-news/somalia-government-loses-three-towns-48-hours/", title: "Somalia's govt loses three towns in 48 hours as rivals advance", publisher: "Somali Guardian", date: 2026-10-10, tier: 3}
+
+  # ---------------------------------------------------------------- dependencies
+  - to: TUR
+    layer: dependency
+    type: military_presence
+    summary: "About 300 Turkish personnel were in Somalia in May 2025 and 500 more (300 commandos, 200 for drone operations) were reported sent, so roughly 800 in all, by unnamed sources to Middle East Eye; Camp TURKSOM in Mogadishu has trained about 16,000 Somali soldiers, and the 2024 agreement could raise the footprint to as many as 2,500 by 2026 by the same report. Only press sourcing; the 2026 mandate covers forces in jointly determined areas."
+    since: 2025-05
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    value: 800
+    unit: turkish_military_personnel_estimate_may_2025
+    sources:
+      - {url: "https://adf-magazine.com/2025/05/turkey-deploys-more-forces-to-help-in-al-shabaab-fight/", title: "Turkey deploys more forces to help in al-Shabaab fight", publisher: "ADF Magazine (US Africa Command), citing Middle East Eye", date: 2025-05-20, tier: 3}
+      - {url: "https://www.meforum.org/mef-observer/turkey-renews-its-somalia-mandate-to-guard-the-spaceport-and-missile-base", title: "Turkey renews its Somalia mandate to guard the spaceport and missile base", publisher: "Middle East Forum", date: 2026-07, tier: 2}
+
+  - to: EGY
+    layer: dependency
+    type: military_presence
+    summary: "The African Union allocated 1,091 Egyptian troops to AUSSOM (against Ethiopia's 2,500); the deployment is delayed by funding and logistics as of 1 Sep 2026. The National puts Egypt's troops in Somalia at about 15,000, which would mean a bilateral deployment outside AUSSOM that no one has documented; unresolved (mirror of the EGY row, same source)."
+    since: 2025-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    value: 1091
+    unit: troops_allocated_aussom
+    sources:
+      - {url: "https://www.dawan.africa/news/somalia-says-funding-hurdles-delay-egyptian-troops-deployment-to-aussom", title: "Somalia says funding hurdles delay Egyptian troops deployment to AUSSOM", publisher: "Dawan Africa", date: 2026-09-01, tier: 3}
+      - {url: "https://www.thenationalnews.com/news/mena/2026/10/04/egypt-hosts-four-way-summit-as-tensions-with-ethiopia-escalate/", title: "Egypt hosts four-way summit as tensions with Ethiopia escalate", publisher: "The National", date: 2026-10-04, tier: 3}
+
+  - to: ETH
+    layer: dependency
+    type: military_presence
+    summary: "The African Union allocated 2,500 Ethiopian troops to AUSSOM, the second-largest national contingent after Uganda's (mirror of the ETH row, same sources)."
+    since: 2025-02
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    value: 2500
+    unit: troops_allocated_to_AUSSOM
+    sources:
+      - {url: "https://www.dawan.africa/news/somalia-says-funding-hurdles-delay-egyptian-troops-deployment-to-aussom", title: "Somalia says funding hurdles delay Egyptian troops deployment to AUSSOM", publisher: "Dawan Africa", date: 2026-09-01, tier: 3}
+      - {url: "https://northafricapost.com/?p=84705", title: "Ethiopia, Somalia agree on deployment of Ethiopian troops in new African Union mission", publisher: "North Africa Post", date: 2025, tier: 3}
+
+  - to: DJI
+    layer: dependency
+    type: military_presence
+    summary: "Djibouti's allocation to AUSSOM in the African Union-Somalia agreement of February 2025 is 1,520 troops (Uganda 4,500, Ethiopia 2,500, Kenya 1,410, Egypt 1,091). Reported by VOA from an official; no later breakdown was found."
+    since: 2025-02
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    value: 1520
+    unit: troops_allocated_to_AUSSOM
+    sources:
+      - {url: "https://www.globalsecurity.org/military/library/news/2025/02/mil-250225-voa04.htm", title: "AU, Somalia agree on troop numbers for new mission", publisher: "VOA (via GlobalSecurity.org)", date: 2025-02-25, tier: 3}
+
+  - to: KEN
+    layer: dependency
+    type: military_presence
+    summary: "Kenya's allocation to AUSSOM in the African Union-Somalia agreement of February 2025 is 1,410 troops. Kenya is both a contributor and the long-time backer of Jubaland's Madobe. Reported by VOA from an official; no later breakdown was found."
+    since: 2025-02
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    value: 1410
+    unit: troops_allocated_to_AUSSOM
+    sources:
+      - {url: "https://www.globalsecurity.org/military/library/news/2025/02/mil-250225-voa04.htm", title: "AU, Somalia agree on troop numbers for new mission", publisher: "VOA (via GlobalSecurity.org)", date: 2025-02-25, tier: 3}
+      - {url: "https://capitalfm.africa/kenya-somalia-endorse-new-aussom-mission-set-to-begin-in-2025/", title: "Kenya, Somalia endorse new AUSSOM mission set to begin in 2025", publisher: "Capital FM (Kenya)", date: 2024-10, tier: 3}
+
+  - to: USA
+    layer: dependency
+    type: military_presence
+    summary: "AFRICOM confirmed 63 air strikes in Somalia between 1 Jan and 29 May 2026 (at least 124 in 2025 by the same tally), against al-Shabaab and, in Puntland, ISIS-Somalia, some in coordination with the federal government. AFRICOM does not disclose its units or assets and no current count of US ground forces was found."
+    since: 2025-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    value: 63
+    unit: africom_airstrikes_in_somalia_1_jan_29_may_2026
+    sources:
+      - {url: "https://www.newamerica.org/insights/africom-confirms-63-strikes-in-somalia-in-2026/", title: "AFRICOM confirms 63 strikes in Somalia in 2026", publisher: "New America", date: 2026-05-29, tier: 2}
+
+  - to: org-aussom
+    layer: dependency
+    type: military_presence
+    summary: "Ceiling of 11,826 uniformed personnel, including 680 police, authorised for AUSSOM by the Security Council from 1 Jul 2025 and kept in resolution 2809 to 31 Dec 2026 (up to 12,626 until 30 Jun 2025); the 2025 allocation is Uganda 4,500, Ethiopia 2,500, Djibouti 1,520, Kenya 1,410 and Egypt 1,091. Contributors are owed arrears of about USD 94m for 2022-24 by an ISS count."
+    since: 2025-07-01
+    until: 2026-12-31
+    last_verified: 2026-10-16
+    confidence: A
+    value: 11826
+    unit: uniformed_personnel_authorised_ceiling_aussom
+    sources:
+      - {url: "https://press.un.org/en/2024/sc15955.doc.htm", title: "Adopting Resolution 2767 (2024), Security Council endorses new African Union support mission in Somalia", publisher: "United Nations Security Council (press release)", date: 2024-12-27, tier: 1}
+      - {url: "https://www.securitycouncilreport.org/whatsinblue/2025/12/somalia-vote-on-aussom-mandate-renewal.php", title: "Somalia: vote on AUSSOM mandate renewal (resolution 2809)", publisher: "Security Council Report", date: 2025-12, tier: 2}
+      - {url: "https://issafrica.org/iss-today/au-s-somalia-peace-mission-cannot-deliver-on-funding-pledges-alone", title: "AU's Somalia peace mission cannot deliver on funding pledges alone", publisher: "ISS Africa", date: 2025-10-13, tier: 2}
+
+  - to: org-imf
+    layer: dependency
+    type: debt
+    summary: "The IMF Extended Credit Facility arrangement approved on 19 Dec 2023 was augmented on 8 Dec 2025 to SDR 105m (about USD 140m), with USD 30m disbursed at once for budget support; the IMF notes persistent and sharp declines in foreign aid. The programme replaces lost aid as the anchor of a thin budget."
+    since: 2023-12-19
+    until: null
+    last_verified: 2026-10-16
+    confidence: A
+    value: 140
+    unit: usd_m_ecf_total_access_after_augmentation_dec_2025
+    sources:
+      - {url: "https://www.imf.org/en/news/articles/2025/12/08/pr-25412-somalia-imf-concludes-4th-rev-of-ecf-arrangeme-and-approves-req-for-augmentation", title: "Somalia: IMF concludes the 4th review of the ECF arrangement and approves a request for augmentation", publisher: "International Monetary Fund", date: 2025-12-08, tier: 1}
+
+  - to: org-imf
+    layer: dependency
+    type: debt
+    summary: "HIPC completion point approved by the IMF and World Bank boards on 13 Dec 2023: USD 4.5bn of debt service relief; external debt fell from 64% of GDP in 2018 to under 6% by end 2023. The balance sheet is clean, which is why new borrowing from the IMF and the Gulf is possible."
+    since: 2023-12-13
+    until: null
+    last_verified: 2026-10-16
+    confidence: A
+    value: 4.5
+    unit: usd_bn_debt_service_relief_hipc_completion_2023
+    sources:
+      - {url: "https://www.worldbank.org/en/news/press-release/2023/12/13/imf-and-world-bank-announce-us-4-5-billion-in-debt-relief-for-somalia-afe-1223", title: "IMF and World Bank announce US$4.5 billion in debt relief for Somalia", publisher: "World Bank", date: 2023-12-13, tier: 1}
+
+  - to: ARE
+    layer: dependency
+    type: trade_share
+    summary: "The UAE took 39% of Somalia's exports in 2022 (ITC: USD 725m in total; the WTO and World Bank table gives USD 733m), ahead of Oman (24.9%) and Saudi Arabia (18.3%). No 2026 trade figure was found, so the effect of the Jan 2026 annulment of the UAE agreements on this trade is unknown."
+    since: 2022
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    value: 0.39
+    unit: share_of_somali_exports_2022
+    sources:
+      - {url: "https://tradeportal.accio.gencat.cat/ca/mercats-potencials/somalia/perfil-comercial", title: "Somalia: trade profile (ITC data, 2022)", publisher: "ACCIO, Government of Catalonia (citing ITC)", date: 2022, tier: 1}
+
+  - to: ARE
+    layer: dependency
+    type: trade_share
+    summary: "The UAE supplied 32.8% of Somalia's imports in 2022 (ITC: USD 5.76bn in total; the WTO and World Bank table gives USD 4.16bn), ahead of China (18.1%), India (15.8%), Turkey (6.7%) and Ethiopia (4.5%)."
+    since: 2022
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    value: 0.328
+    unit: share_of_somali_imports_2022
+    sources:
+      - {url: "https://tradeportal.accio.gencat.cat/ca/mercats-potencials/somalia/perfil-comercial", title: "Somalia: trade profile (ITC data, 2022)", publisher: "ACCIO, Government of Catalonia (citing ITC)", date: 2022, tier: 1}
+
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    summary: "China was Somalia's second import origin in 2022 with 18.1% of imports (ITC), behind the UAE (32.8%)."
+    since: 2022
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    value: 0.181
+    unit: share_of_somali_imports_2022
+    sources:
+      - {url: "https://tradeportal.accio.gencat.cat/ca/mercats-potencials/somalia/perfil-comercial", title: "Somalia: trade profile (ITC data, 2022)", publisher: "ACCIO, Government of Catalonia (citing ITC)", date: 2022, tier: 1}

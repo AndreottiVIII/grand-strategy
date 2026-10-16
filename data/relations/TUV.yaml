@@ -1,0 +1,90 @@
+from: TUV
+relations:
+- to: CHN
+  layer: objective
+  type: recognition_denied
+  summary: "Refuses the PRC recognition that Beijing presses for: no ties with the PRC; Teo's government ruled out a switch and the 'two-China' option in 2024. Beijing's pressure is reported, not confirmed by a written demand."
+  since: '2024-03'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: C
+  sources:
+  - {url: "https://www.pressreader.com/usa/arkansas-democrat-gazette/20240303/281573770648058", title: "Tuvalu to keep Taiwan ties", publisher: "Arkansas Democrat-Gazette (AP wire)", date: '2024-03-03', tier: 3}
+  - {url: "https://www.reuters.com/article/us-taiwan-diplomacy-tuvalu/tuvalu-changes-pm-adds-to-concerns-over-backing-for-taiwan-in-pacific-idUSKBN1W400A", title: "Tuvalu changes PM, adds to concerns over backing for Taiwan in Pacific", publisher: "Reuters", date: '2019-09-19', tier: 3}
+- to: TWN
+  layer: objective
+  type: recognition_sought
+  summary: "Seeks Taiwan's inclusion in the United Nations and other international bodies (Teo, 2025 independence address), and a treaty framework to secure Tuvalu's statehood, reported in November 2025 as planned."
+  since: '2025-10'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: C
+  sources:
+  - {url: "https://nit.com.au/18-11-2025/21343/tuvalu-treasures-special-relationship-with-taiwan", title: "Tuvalu treasures 'special relationship' with Taiwan", publisher: "NIT (AAP report)", date: '2025-11-18', tier: 3}
+- to: AUS
+  layer: alignment
+  type: treaty
+  summary: "Falepili Union (signed November 2023, in force 28 Aug 2024): Australia must respond when Tuvalu requests help in a major natural disaster, a pandemic or military aggression; Tuvalu agrees with Australia any new defence or security engagement with third parties; mobility pathway for up to 280 Tuvaluans a year from 2025. The same treaty as the AUS row, with the same sources."
+  since: '2024-08-28'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: A
+  sources:
+  - {url: "https://www.pm.gov.au/media/entry-force-historic-australia-tuvalu-falepili-union", title: "Entry into force of historic Australia-Tuvalu Falepili Union", publisher: "Prime Minister of Australia", date: '2024-08-28', tier: 1}
+  - {url: "https://www.dfat.gov.au/geo/tuvalu/australia-tuvalu-falepili-union-treaty", title: "Australia-Tuvalu Falepili Union treaty", publisher: "Department of Foreign Affairs and Trade (Australia)", date: '2024', tier: 1}
+- to: USA
+  layer: alignment
+  type: treaty
+  summary: "Treaty of Friendship (1979, ratified by the US Senate in 1983): the United States renounced its claim to four Tuvaluan islands. A settlement of a territorial claim, not a defence pact."
+  since: '1979-05-10'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: B
+  sources:
+  - {url: "http://www.doi.gov/oia/islands/disputedislands", title: "Formerly disputed islands (Office of Insular Affairs)", publisher: "US Department of the Interior, Office of Insular Affairs", date: '2017-10-13', tier: 1}
+- to: AUS
+  layer: action
+  type: agreement
+  summary: "Falepili Union signed (joint statement, 10 November 2023). The AUS card and DFAT date the signing to 9 and 12 November respectively; the same treaty as the alignment row, here as the dated signing."
+  since: '2023-11-10'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: A
+  sources:
+  - {url: "https://www.pm.gov.au/media/joint-statement-falepili-union-between-tuvalu-and-australia", title: "Joint Statement on the Falepili Union between Tuvalu and Australia", publisher: "Department of the Prime Minister and Cabinet (Australia)", date: '2023-11-10', tier: 1}
+- to: TWN
+  layer: action
+  type: visit
+  summary: "Teo's first official state visit to Taiwan, welcomed by President Lai with a military ceremony. A treaty was reported as planned; reports disagree on whether three pacts were signed (CNA) or only planned (AAP)."
+  since: '2025-11'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: C
+  sources:
+  - {url: "https://nit.com.au/18-11-2025/21343/tuvalu-treasures-special-relationship-with-taiwan", title: "Tuvalu treasures 'special relationship' with Taiwan", publisher: "NIT (AAP report)", date: '2025-11-18', tier: 3}
+- to: org-pif
+  layer: dependency
+  type: trade_share
+  value: 43
+  unit: usd_million
+  summary: "Tuna access and licence receipts, the largest earner: US$43 million in 2023 (Australian Army country guide), about three-fifths of locally generated government income (APIBC, 2025), down about 40% over five years as stocks move into international waters. The access is sold under the Pacific regime (Nauru Agreement, Forum Fisheries Agency) and the US Tuna Treaty, so the counterparty is the regional arrangement, not one state. Note: no export type fits a fishing-access fee; the value is licence receipts, not trade."
+  since: '2023'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: B
+  sources:
+  - {url: "https://cove.army.gov.au/article/kyr-tuvalu-economy", title: "Tuvalu - facts and figures (economy)", publisher: "Australian Army (Country Guide)", date: '2023', tier: 1}
+  - {url: "https://apibc.org.au/2025/tuvalus-tuna-revenue-declines-amid-warming-seas/", title: "Tuvalu's tuna revenue declines amid warming seas", publisher: "APIBC", date: '2025-08', tier: 3}
+  - {url: "http://www.fpir.noaa.gov/IFD/ifd_sptt.html", title: "South Pacific Tuna Treaty (SPTT)", publisher: "NOAA Fisheries (Pacific Islands Region)", date: '2010-09-01', tier: 1}
+- to: TWN
+  layer: dependency
+  type: investment
+  value: 7.06
+  unit: usd_million
+  summary: "Taiwan's contribution to Tuvalu's budget in 2019: US$7.06 million, budget support rather than investment. The vocabulary has no aid type, so investment is used here as the nearest fit; flagged for review."
+  since: '2019'
+  until: '2019'
+  last_verified: '2026-10-16'
+  confidence: C
+  sources:
+  - {url: "https://www.reuters.com/article/us-taiwan-diplomacy-tuvalu/tuvalu-changes-pm-adds-to-concerns-over-backing-for-taiwan-in-pacific-idUSKBN1W400A", title: "Tuvalu changes PM, adds to concerns over backing for Taiwan in Pacific", publisher: "Reuters", date: '2019-09-19', tier: 3}

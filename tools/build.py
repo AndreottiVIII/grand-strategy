@@ -368,7 +368,7 @@ def main():
     allies = {}
     SECURITY = re.compile(r"defen[cs]e|military|security|alliance|mutual assistance|article 5", re.I)
     # a summary that denies the clause ("no military clause", "not a defence pact") is not a binding treaty
-    DENIED = re.compile(r"(no|not an?|without( any)?|neither)\s+(binding\s+)?(mutual[- ])?(defen[cs]e|military|security|alliance)", re.I)
+    DENIED = re.compile(r"\b(no|not an?|without( any)?|neither)\s+(binding\s+)?(mutual[- ])?(defen[cs]e|military|security|alliance)", re.I)
     for rel in rows:
         if rel["layer"] != "alignment":
             continue
