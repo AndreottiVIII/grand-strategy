@@ -349,3 +349,14 @@ svg#tmap { width: 100%; height: 100%; display: block; }
 .stat span { font-family: var(--font-ui); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
 .cols2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0 40px; }
 .page code { font-family: var(--font-ui); color: var(--ink); }
+
+/* levers: one block per pair of rivals, one line per lever */
+.levers { max-width: 860px; }
+.lever-block h3 { color: var(--ink); text-shadow: none; }
+.lever-block h3 a { color: var(--c-rival); text-shadow: 0 0 6px var(--c-rival); }
+.lever-block h3 .x { color: var(--ink-3); margin: 0 4px; }
+.lever-block h3 span { text-transform: none; letter-spacing: 0; font-size: 12px; }
+.lever-block h3 span i { font-style: normal; }
+.lever { font-family: var(--font-text); font-size: 13px; color: var(--ink-2); line-height: 1.55; padding: 3px 0 3px 0; border-top: 1px dotted var(--rule); }
+.lever b { font-family: var(--font-ui); font-weight: 400; color: var(--c-seam); text-transform: uppercase; letter-spacing: .1em; font-size: 11px; display: inline-block; width: 92px; }
+.lever .from { font-family: var(--font-ui); color: var(--ink-3); font-size: 11px; margin-right: 8px; }
