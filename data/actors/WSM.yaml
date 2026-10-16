@@ -8,7 +8,72 @@ coords:
 - -13.83
 seat: Apia
 regions:
-- world
-card: stub
+- southeast-asia-oceania
+card: full
 tier: minor
+last_verified: '2026-10-12'
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the 1962 Treaty of Friendship with New Zealand as its security floor: Samoa has no formal military, and under the treaty New Zealand must consider any Samoan request for defence help."
+      confidence: A
+      sources:
+        - {url: "https://treaties.un.org/doc/Publication/UNTS/Volume%20453/volume-453-I-6515-English.pdf", title: "New Zealand and Western Samoa: Treaty of Friendship", publisher: "UN Treaty Series", date: 1962-08, tier: 1}
+    - rank: 2
+      text: "Turn money from abroad into the budget: personal remittances about a quarter of GDP (24.0% in 2024), Australian budget support and flagship aid, and Chinese lending that was about 37% of external debt at end-2023."
+      confidence: B
+      sources:
+        - {url: "https://www.samoaobserver.ws/category/samoa/108377", title: "Total external debt was $810.4 million; China is owed $299.8 million", publisher: "Samoa Observer", date: 2024-03-10, tier: 3}
+        - {url: "https://www.dfat.gov.au/sites/default/files/development-cooperation-fact-sheet-samoa.docx", title: "Development cooperation fact sheet: Samoa", publisher: "DFAT", date: 2025, tier: 1}
+        - {url: "https://statisticsoftheworld.com/country/samoa/BX.TRF.PWKR.DT.GD.ZS", title: "Personal remittances received (% of GDP), Samoa (World Bank series)", publisher: "Statistics of the World (World Bank data)", date: 2025, tier: 4}
+    - rank: 3
+      text: "Keep the labour schemes in New Zealand and Australia open while taxing their use: 3,798 Samoans recruited under New Zealand's RSE scheme in 2024-25, a NZ$50 fee per worker from June 2025, and Australian PALM contracts capped at three years."
+      confidence: C
+      sources:
+        - {url: "https://devpolicy.org/samoas-new-fees-implications-for-palm-and-rse-employers-20250819/", title: "Samoa's new fees: implications for PALM and RSE employers", publisher: "Devpolicy Blog (Development Policy Centre)", date: 2025-08-19, tier: 3}
+        - {url: "https://devpolicy.org/samoas-participation-in-nz-and-australias-pacific-labour-schemes-20221107/", title: "Growing pains: Samoa's participation in New Zealand and Australia's Pacific labour schemes", publisher: "Devpolicy Blog (Development Policy Centre)", date: 2022-11-07, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "Host of the 27th Commonwealth Heads of Government Meeting in Apia, 25-26 October 2024; Australia's Pacific Policing Initiative made its first deployment there, with more than 40 police from 11 Pacific countries on security."
+      confidence: B
+      sources:
+        - {url: "https://www.pm.gov.au/media/pacific-policing-initiative-steps-chogm-2024", title: "Pacific policing initiative steps up at CHOGM 2024", publisher: "Australian Prime Minister's Office", date: 2024-10, tier: 1}
+    - domain: economic
+      text: "Official development finance from Australia (direct budget support A$105.5m; Tautai A$45m on governance and Tautua A$40m on human development) alongside Chinese loans, which are the main bilateral debt."
+      confidence: B
+      sources:
+        - {url: "https://www.dfat.gov.au/sites/default/files/development-cooperation-fact-sheet-samoa.docx", title: "Development cooperation fact sheet: Samoa", publisher: "DFAT", date: 2025, tier: 1}
+        - {url: "https://www.samoaobserver.ws/category/samoa/108377", title: "Total external debt was $810.4 million; China is owed $299.8 million", publisher: "Samoa Observer", date: 2024-03-10, tier: 3}
+    - domain: informational
+      text: "Ocean as a legal instrument: the Samoa Marine Spatial Plan, legally adopted in June 2025, zones the whole exclusive economic zone and adds nine fully protected marine protected areas."
+      confidence: C
+      sources:
+        - {url: "https://www.samoaocean.org/marine-spatial-plan", title: "Samoa Marine Spatial Plan", publisher: "Samoa Ocean (as cited by Wikipedia; not opened)", date: 2025-06, tier: 4}
+
+  constraints:
+    - text: "No armed forces: defence rests on New Zealand and the 1962 treaty, so any military lever Samoa has is borrowed."
+      confidence: A
+      sources:
+        - {url: "https://treaties.un.org/doc/Publication/UNTS/Volume%20453/volume-453-I-6515-English.pdf", title: "New Zealand and Western Samoa: Treaty of Friendship", publisher: "UN Treaty Series", date: 1962-08, tier: 1}
+    - text: "Debt exposure: external debt was $810.4 million at end-2023, of which $299.8 million owed to China and $56.9 million to Japan; the 2023 IMF-World Bank analysis kept Samoa at high risk of debt distress."
+      confidence: C
+      sources:
+        - {url: "https://www.samoaobserver.ws/category/samoa/108377", title: "Total external debt was $810.4 million; China is owed $299.8 million", publisher: "Samoa Observer", date: 2024-03-10, tier: 3}
+        - {url: "https://www.samoaobserver.ws/category/samoa/103275", title: "Samoa at high risk debt distress: IMF", publisher: "Samoa Observer (title only; not opened)", date: 2023, tier: 3}
+    - text: "Small, exposed economy and thin health cover: the 2019 measles outbreak reached at least 68 deaths by early December 2019 (mostly children under four); later compiled tallies say 83, not checked against an official figure."
+      confidence: C
+      sources:
+        - {url: "https://www.voanews.com/a/science-health_samoas-measles-death-toll-rises-68/6180702", title: "Samoa's measles death toll rises to 68", publisher: "VOA", date: 2019-12, tier: 3}
+
+  paradoxes:
+    - text: "New Zealand gives Samoa its security, but its navy ship Manawanui sank off Siumu in October 2024 and cut off Safata villages from fishing; within months the Chinese embassy gave WST$50,000 (NZ$30,000) to those villages, so the treaty partner's failure became China's showcase."
+      confidence: C
+      sources:
+        - {url: "https://www.rnz.co.nz/international/pacific-news/541251/samoan-communities-affected-by-manawanui-disaster-receive-30-000-donation-from-china", title: "Samoan communities affected by Manawanui disaster receive $30,000 donation from China", publisher: "Radio New Zealand", date: 2025-02, tier: 3}
+        - {url: "https://teaonews.co.nz/2024/10/06/nz-navy-ship-on-fire-and-sinking-report", title: "NZ navy ship on fire and sinking - report", publisher: "Te Ao News", date: 2024-10-06, tier: 3}
+
+  reading: |
+    Samoa is a small state whose security sits in a 1962 treaty with New Zealand, whose money comes from remittances and from Australian and Chinese lending, and whose labour schemes send thousands of its people to work in New Zealand and Australia. The 2025 crisis changed who governs without changing that frame: Fiame Naomi Mataafa's government lost its budget vote 34-16 on 27 May 2025, a snap election on 29 August gave FAST 30 seats (31 with a later defector) out of 51, and the FAST faction led by Laauli Leuatea Schmidt, which had split from Mataafa in January, became the government on 16 September. The stage is the Commonwealth summit of October 2024 in Apia, where Samoa asserted its ocean and climate agenda, and no sourced foreign-policy line from the Schmidt government has been found beyond its March 2026 dispute with New Zealand over a matai title.
