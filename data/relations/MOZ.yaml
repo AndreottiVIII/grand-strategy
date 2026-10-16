@@ -1,0 +1,90 @@
+from: MOZ
+relations:
+  # ---------- dependency ----------
+  - to: RWA
+    layer: dependency
+    type: military_presence
+    summary: "Rwandan troops and police in Cabo Delgado since July 2021, guarding the TotalEnergies LNG area. Kigali's spokeswoman put the force at about 6,300 (April 2026); a new contingent was briefed in Kigali on 30 July 2026 to rotate with the present one. Mirror of the RWA card's row: the evidence is the same, the figure is Kigali's, and the sources conflict (6,200 and 5,000 elsewhere)."
+    value: 6300
+    unit: rwandan_troops_and_police_in_cabo_delgado_2026
+    since: 2021-07
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Figures conflict: Washington Examiner gives 6,200; other press about 5,000; the most recent official-source figure (Kigali's spokeswoman) is kept."
+    sources:
+      - {url: "https://www.washingtonexaminer.com/news/world/4515966/rwanda-gas-project-isis-mozambique/", title: "Rwanda threatens to stop protecting US gas project from ISIS over sanctions", publisher: "Washington Examiner", date: 2026-04-06, tier: 3}
+      - {url: "https://www.newtimes.co.rw/article/37812/news/security/gen-nyakarundi-briefs-rdf-police-contingent-ahead-of-mozambique-deployment/amp", title: "Gen Nyakarundi briefs RDF, Police contingent ahead of Mozambique deployment", publisher: "The New Times (Kigali)", date: 2026-07-30, tier: 3}
+
+  - to: PRT
+    layer: dependency
+    type: military_presence
+    summary: "Portugal leads the EU training mission (EUTM-MOZ, then EUMAM-MOZ since September 2024 as an assistance mission): more than 70 programmes for about 2,000 Mozambican personnel. In 2026 Maputo and Lisbon asked the EU to extend it to 2028. Mirror of the PRT card's row, evidence only."
+    value: 2000
+    unit: mozambican_personnel_in_eumam_moz_programmes
+    since: 2021
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://360mozambique.com/development/mozambican-and-portuguese-governments-request-renewal-of-eu-military-mission-until-2028/", title: "Mozambican and Portuguese governments request renewal of EU military mission until 2028", publisher: "360 Mozambique", date: 2026, tier: 3}
+      - {url: "https://clubofmozambique.com/news/mozambique-mep-backs-two-year-extension-for-eu-military-training-mission/", title: "Mozambique: MEP backs two-year extension for EU military training mission", publisher: "Club of Mozambique", date: 2026, tier: 3}
+
+  - to: USA
+    layer: dependency
+    type: debt
+    summary: "US Export-Import Bank: the board voted on 13 March 2025 to proceed with a loan of up to USD 4.7bn for the integrated LNG project, after the 2021 force majeure had frozen it. The EXIM amendment mainly moved the deadlines so construction could restart; UK and Dutch export agencies were still to re-approve before TotalEnergies lifted force majeure."
+    value: 4.7
+    unit: usd_bn_exim_loan_lng_project
+    since: 2025-03-13
+    until: null
+    last_verified: 2026-10-16
+    confidence: A
+    note: "The FT and Reuters report 'almost USD 5bn'; the official EXIM figure of USD 4.7bn is kept."
+    sources:
+      - {url: "https://www.exim.gov/news/exim-board-directors-votes-proceed-47-billion-lng-equipment-and-services-transaction-after", title: "EXIM Board of Directors Votes to Proceed with $4.7 Billion LNG Equipment and Services Transaction After Four-Year Delay", publisher: "US Export-Import Bank", date: 2025-03-13, tier: 1}
+
+  - to: org-imf
+    layer: dependency
+    type: debt
+    summary: "Mozambique paid its IMF arrears in full in March 2026, about USD 630m (515.04m SDR), as the state agency reported from the government. No new programme is signed: the Finance Ministry aims for board approval by the end of 2026 after a September mission."
+    value: 0.63
+    unit: usd_bn_imf_arrears_paid_2026
+    since: 2026-03
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    note: "The arrears figure is the state agency's report of the government statement. The 2025 status of the earlier programme was not verified in a page read, so no row covers it."
+    sources:
+      - {url: "https://aimnews.org/2026/04/01/mozambique-pays-debt-to-imf-in-full/", title: "Mozambique pays debt to IMF in full", publisher: "AIM (state news agency, quoting government)", date: 2026-04-01, tier: 1}
+      - {url: "https://allafrica.com/stories/202609110252.html", title: "Mozambique: New Programme With IMF By the End of This Year - Finance Ministry", publisher: "allAfrica", date: 2026-09-11, tier: 3}
+
+  - to: FRA
+    layer: dependency
+    type: investment
+    summary: "The TotalEnergies-led Mozambique LNG project, in Cabo Delgado, which was announced as a full restart on 29 January 2026 with first LNG expected in 2029. The investor is a French company, not the French state; France is the home of the operator, not a financier of the state. Cost of about USD 20bn is the project figure as cited in the RWA card, not re-read here."
+    value: 20
+    unit: usd_bn_lng_project_cost
+    since: 2026-01-29
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    note: "The row is the company's project, written under FRA as its home state. The USD 20bn figure is not verified in the company release; treat it as a secondary figure until checked."
+    sources:
+      - {url: "https://www.businesswire.com/news/home/20260129402488/en/Mozambique-LNG-Announces-the-Full-Restart-of-All-Its-Activities-Onshore-and-Offshore-in-Mozambique", title: "Mozambique LNG announces the full restart of all its activities onshore and offshore in Mozambique", publisher: "TotalEnergies (company announcement)", date: 2026-01-29, tier: 3}
+      - {url: "https://worldview.ranenetwork.com/content/analysis/2026-01-29/mozambique-s-lng-sector-turns-a-corner-amid-megaproject-reboot", title: "Mozambique's LNG sector turns a corner amid megaproject reboot", publisher: "RANE Worldview", date: 2026-01-29, tier: 3}
+
+  # ---------- action ----------
+  - to: ZAF
+    layer: action
+    type: incident
+    summary: "South Africa's contingent (about 1,500 troops, Stratfor citing Zitamar) left Cabo Delgado in April 2024 under the SADC mission SAMIM; the SADC drawdown began on 5 April 2024 and the mission ended in July 2024 for financial reasons. No closer action type in the vocabulary, so 'incident', as in the Tanzania and Cambodia cards."
+    since: 2024-04-05
+    until: 2024-07-15
+    last_verified: 2026-10-16
+    confidence: B
+    note: "The end date is 15 July 2024 (Zitamar) and 16 July (CDD); one-day discrepancy between sources. South Africa's part ended on a presidential authorisation effective 15 April 2024."
+    sources:
+      - {url: "https://www.sadc.int/latest-news/withdrawal-southern-african-development-community-mission-mozambique-samim-force", title: "Withdrawal of the Southern African Development Community Mission in Mozambique (SAMIM) force", publisher: "SADC", date: 2024-04-05, tier: 1}
+      - {url: "https://zitamar.com/sadc-confirms-drawdown-of-troops-from-cabo-delgado-has-begun", title: "SADC confirms drawdown of troops from Cabo Delgado has begun", publisher: "Zitamar News", date: 2024-04, tier: 3}
+      - {url: "https://360mozambique.com/development/cabo-delgado-sadc-military-forces-begin-withdrawal/", title: "Cabo Delgado: SADC military forces begin withdrawal", publisher: "360 Mozambique", date: "2024", tier: 3}
