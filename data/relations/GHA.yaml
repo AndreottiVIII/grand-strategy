@@ -16,6 +16,21 @@ relations:
       - {url: "https://www.imf.org/en/news/articles/2026/07/27/pr25260-ghana-imf-exec-board-completes-6th-rev-arr-ecf-concludes-2026-aiv-consult-rev-req-36mo-pci", title: "IMF Executive Board Completes the Sixth Review of Ghana's Arrangement Under the Extended Credit Facility, Concludes the 2026 Article IV Consultation, and Reviews Request of a 36-Month Policy Coordination Instrument for Ghana", publisher: "International Monetary Fund", date: 2026-07-27, tier: 1}
       - {url: "https://www.imf.org/en/news/articles/2025/12/17/pr-25429-ghana-imf-completes-the-fifth-review-under-the-ecf-arrangement", title: "IMF Executive Board Completes the Fifth Review under the Extended Credit Facility Arrangement with Ghana", publisher: "International Monetary Fund", date: 2025-12-17, tier: 1}
 
+  - to: CHN
+    layer: dependency
+    type: investment
+    summary: "Resource-for-infrastructure deal with Sinohydro: Chinese-built infrastructure in exchange for bauxite processing, reported as about US$2bn in 2019."
+    since: null
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    value: 2.0
+    unit: usd_bn
+    note: "Figure and terms come from 2019 reporting: a senior minister's remark tying a deportation decision to the deal, and the Lands Minister's denial of any link. Current status not confirmed; no 2025-26 report found in this pass. Date of the deal not sourced, so since is null. The Graphic title is taken from the URL slug; the article was not opened."
+    sources:
+      - {url: "https://www.africanews.com/amp/2019/04/26/suspicions-mount-is-ghana-exchanging-half-prosecution-for-chinese-deals/", title: "Suspicions mount: is Ghana exchanging 'half prosecution' for Chinese deals?", publisher: "Africanews", date: 2019-04-26, tier: 3}
+      - {url: "https://www.graphic.com.gh/news/general-news/ghana-news-aisha-huang-was-not-exchanged-for-synohydro-deal-gov-t.html", title: "Aisha Huang was not exchanged for Synohydro deal, government says (title from URL slug)", publisher: "Ghana Graphic", date: 2019-04, tier: 3}
+
   # ---------- alignment ----------
   - to: GBR
     layer: alignment
@@ -64,3 +79,28 @@ relations:
     note: "Only the headline and URL were seen in search results, not the article; the speaker and the claim are not verified here."
     sources:
       - {url: "https://www.aljazeera.com/news/2022/12/16/burkina-faso-summons-ghanaian-ambassador-over-wagner-allegations", title: "Burkina Faso summons Ghana envoy over president's claim on Wagner", publisher: "Al Jazeera", date: 2022-12-16, tier: 3}
+
+  - to: BFA
+    layer: action
+    type: agreement
+    summary: "Seven legal instruments signed at the 13th joint cooperation commission in Ouagadougou in February 2026, led by Foreign Minister Ablakwa, after the Titao attack on Ghanaian traders."
+    since: '2026-02'
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    note: "Read from headlines in search results (AFP via NAMPA; allAfrica in French); the articles were not opened. Tier 3 only, so C. The count of seven comes from the headlines and the content of the instruments is not checked."
+    sources:
+      - {url: "https://www.nampa.org/text/22866233", title: "Ghana, Burkina beef up security ties after jihadist attack", publisher: "AFP (via NAMPA)", date: 2026-02-22, tier: 3}
+      - {url: "https://fr.allafrica.com/stories/202602230114.html", title: "West Africa: Burkina-Ghana cooperation - 7 agreements signed (translated)", title_original: "Afrique de l'Ouest: Coopération Burkina - Ghana - 7 accords signés", lang: fr, publisher: "allAfrica", date: 2026-02-23, tier: 3}
+
+  - to: CHN
+    layer: action
+    type: incident
+    summary: "Galamsey crackdown: a national task force arrested 11 Chinese nationals and seized equipment in the Savannah Region in late July 2025."
+    since: '2025-07'
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    note: "Read from the ADF Magazine search summary; the article was not opened. Tier 3 only, so C. Only the arrests are written here, not any diplomatic dispute, which was not tied to a retained source."
+    sources:
+      - {url: "https://adf-magazine.com/2025/08/ghana-crackdown-on-illegal-gold-mining-puts-focus-on-china/", title: "Ghana crackdown on illegal gold mining puts focus on China", publisher: "ADF Magazine", date: 2025-08, tier: 3}

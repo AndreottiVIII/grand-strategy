@@ -276,8 +276,13 @@ confidence A or B, no dataset, no reciprocals) the **lean** is the gap in steps 
 of X and X's grade of A on the scale ally 4, reluctant ally 3, partner 2, reluctant partner 1,
 neutral 0, rival -1, adversary -2. Pairs count only when at least one side is an alliance. The
 higher-grading side is the client, the other the patron; a client bound by kin or affinity is
-loyal, one bound by nothing or by a grievance is bought. Computed by `tools/build.py`
-(`clients`), shown on the Clients page and as the lean column of the ledger.
+loyal, one bound by nothing or by a grievance is bought. Two guards added on 2026-10-16 after the
+United States appeared as a client of the United Kingdom (ally against reluctant ally): a pair in
+which both sides read an alliance and differ only in warmth is a **tepid alliance**, listed apart
+(`tepid`), not a client system; and the patron must carry at least half the weight of the client,
+weight being for now the number of cards that read each actor (a proper weight, GDP or forces,
+is in BACKLOG). Computed by `tools/build.py` (`clients`), shown on the Clients page and as the
+lean column of the ledger.
 
 ## Faults (added 2026-10-13)
 

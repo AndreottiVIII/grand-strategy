@@ -33,6 +33,12 @@ that merely share Russia as a rival. Chosen instead ("proviamo!"): a hand-writte
 Seams, Clients and Gatherings and drawn as a dashed band on the map; the build adds `treaty` by
 itself. Marked on both sides for China-Russia, Russia-Iran, Japan-Taiwan, India-Japan, Qatar-Hamas.
 
+Clients corrected after Davide's screenshot ("ovviamente non puo' essere cosi'"): the United States
+read as a client of the United Kingdom because the lean only measures regard (ally against the
+placeholder UK card's reluctant ally). Two guards: ally/reluctant-ally pairs are tepid alliances,
+listed apart; a patron must weigh at least half its client (cards reading each actor as the proxy).
+Six client pairs remain, three tepid alliances (US-UK, US-Saudi, Croatia-Slovenia).
+
 A Wikidata membership row made Australia an ASEAN member: removed from the dataset and excluded in
 the generator (WRONG set in tools/datasets/wikidata.py). New tool `tools/onesided.py` lists the
 readings that have no hand-written counterpart: Davide wants to review them with me before the

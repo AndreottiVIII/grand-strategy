@@ -456,7 +456,10 @@ def main():
                 continue
             handterr[(a, st["toward"])] = st
     first = lambda t: re.split(r"(?<=[.;])\s", str(t or ""), 1)[0][:220]
-    clients = []
+    readby = {}   # weight proxy: how many hand-written stances point at an actor
+    for (a, x) in handst:
+        readby[x] = readby.get(x, 0) + 1
+    clients, tepid = [], []
     for (a, x), st in handst.items():
         back = handst.get((x, a))
         if not back:
@@ -465,9 +468,19 @@ def main():
         aligned = st.get("alignment") == "de_facto" or back.get("alignment") == "de_facto"
         if lean <= 0 or (max(SCALE[st["grade"]], SCALE[back["grade"]]) < 3 and not aligned):
             continue
+        # two allies who differ only in warmth (ally / reluctant ally) are not a client system but a
+        # tepid alliance: listed apart (Davide, 2026-10-16: the US cannot read as a client of the UK)
+        if SCALE[back["grade"]] >= 3:
+            tepid.append({"warm": a, "tepid": x, "wg": st["grade"], "tg": back["grade"], "wb": st.get("bond"), "tb": back.get("bond"),
+                          "wnote": first(st.get("note")), "tnote": first(back.get("note"))})
+            continue
+        # a patron must carry more weight than its client; the proxy is how many cards read each actor
+        if readby.get(x, 0) * 2 < readby.get(a, 0):
+            continue
         clients.append({"client": a, "patron": x, "lean": lean, "cg": st["grade"], "pg": back["grade"], "cb": st.get("bond"), "pb": back.get("bond"),
                         "cnote": first(st.get("note")), "pnote": first(back.get("note"))})
     clients.sort(key=lambda c: (-c["lean"], c["patron"], c["client"]))
+    tepid.sort(key=lambda t: (t["tepid"], t["warm"]))
 
     # --- faults (Luttwak's levels: the bond is the deep level, the posture the surface; where they
     # contradict each other the relationship rests on a fault). feud = kin + hostile; byzantine =
@@ -640,7 +653,7 @@ def main():
         "generated": today.isoformat(),
         "theatres": theatres,
         "seams": seams,
-        "clients": clients,
+        "clients": clients, "tepid": tepid,
         "faults": faults,
         "gatherings": gatherings,
         "convergences": convergences,
