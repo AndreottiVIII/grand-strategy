@@ -1,0 +1,75 @@
+from: BEN
+relations:
+  # ---------- action ----------
+  - to: NER
+    layer: action
+    type: sanction
+    summary: "Benin enforced the ECOWAS sanctions on Niger's junta after the July 2023 coup and kept the border shut; Niamey objected and kept its side closed even after the regional sanctions were lifted. The closure disrupted trade on a major West African transit corridor."
+    since: '2023-07'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.ecofinagency.com/news/0206-56101-benin-and-niger-move-toward-border-reopening-after-years-of-diplomatic-strain", title: "Benin and Niger move toward border reopening after years of diplomatic strain", publisher: "Ecofin Agency", date: "2026-06-02", tier: 3}
+
+  - to: NER
+    layer: action
+    type: sanction
+    summary: "In May 2024 Benin blocked Niger's crude loading at its port until Niger reopened its side of the border, as reported. Relations were already strained by the Niger-Benin export pipeline's dispute."
+    since: '2024-05'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.hellenicshippingnews.com/benin-blocks-niger-oil-exports-in-border-row/", title: "Benin blocks Niger oil exports in border row", publisher: "Hellenic Shipping News", date: "2024-05", tier: 3}
+
+  - to: NER
+    layer: action
+    type: agreement
+    summary: "On 2 June 2026 President Wadagni visited Niamey at Tiani's invitation. The joint communique committed both sides to remove the obstacles to cooperation, notably the border's reopening; an expert committee was given 15 days to submit recommendations, and Tiani accepted an invitation to Benin with the date left to diplomatic channels. The committee's outcome is not verified."
+    since: '2026-06-02'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.ecofinagency.com/news/0206-56101-benin-and-niger-move-toward-border-reopening-after-years-of-diplomatic-strain", title: "Benin and Niger move toward border reopening after years of diplomatic strain", publisher: "Ecofin Agency", date: "2026-06-02", tier: 3}
+
+  - to: BFA
+    layer: action
+    type: incident
+    summary: "JNIM attacks in northern Benin rose sharply in 2025: an 8 January assault on the Point Triple base killed at least 28 soldiers and an attack on 17 April killed at least 54 (government toll, as reported). ACLED says JNIM uses Tapoa and Kompienga provinces in Burkina Faso as staging grounds for incursions into Benin. The Burkina state is not named as responsible; this row records the spillover, not a Burkinabe act."
+    since: '2025-01'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Counts differ by source (ADF Magazine reports 30 soldiers for January, ACLED 34). The 17 April toll is from a summary of the government's announcement, not opened."
+    sources:
+      - {url: "https://adf-magazine.com/2025/02/benin-reels-from-deadliest-terror-attack/", title: "Benin reels from deadliest terror attack", publisher: "ADF Magazine", date: "2025-02", tier: 3}
+      - {url: "https://acleddata.com/update/africa-overview-may-2025", title: "Africa overview, May 2025", publisher: "ACLED", date: "2025-05", tier: 2}
+
+  - to: FRA
+    layer: action
+    type: incident
+    summary: "In January-February 2025, after the jihadist attack in the north, students in Cotonou demanded the withdrawal of French troops and blamed France. In December 2025 French special forces were reportedly deployed to support the army in defeating the coup attempt; the French government acknowledged surveillance, observation and logistics support."
+    since: '2025-01'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "The December 2025 deployment rests on a French parliamentary written question read from a search summary, not opened, and a fact-check reports France ended its military engagement in West Africa in July 2025. Read the two as conflicting until the French answer is checked in full."
+    sources:
+      - {url: "https://allafrica.com/stories/202502110009.html", title: "Benin: The People of Benin Intensify Anti-French Protests in the Wake of a Terror Attack", publisher: "allAfrica", date: "2025-02-11", tier: 3}
+      - {url: "https://questions.assemblee-nationale.fr/dyn/17/questions/QANR5L17QE11895.pdf", title: "French National Assembly written question on support to Benin (French government answer)", publisher: "Assemblee nationale", date: "2025", tier: 1}
+
+  - to: RWA
+    layer: action
+    type: agreement
+    summary: "Benin and Rwanda signed a defence cooperation agreement to help secure Benin's borders, which Benin's president described in April 2023 as covering coaching, training and joint deployment of troops. The 2022 talks reported by Africa Intelligence put the initial Rwandan element at about 350, with the presidency saying no troops would be deployed on the ground. No Rwandan deployment or 2024 training was found."
+    since: '2023-04'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Mirror of the Rwanda card's row (RWA.yaml, to BEN, agreement, since 2022-07): same URLs reused, one treaty for both sides. Date conflict flagged: the RWA row dates the deal to July 2022 and the Africanews source to April 2023; left for Davide to settle. The 2024 training premise is not supported by any source found."
+    sources:
+      - {url: "https://www.africanews.com/2023/04/16/rwanda-benin-talk-military-cooperation-over-border-security/", title: "Rwanda, Benin talk military cooperation over border security", publisher: "Africanews", date: 2023-04-16, tier: 3}
+      - {url: "https://www.bloomberg.com/news/articles/2022-09-09/rwanda-may-deploy-troops-to-benin-to-fight-jihadists-ai-says", title: "Rwanda may deploy troops to Benin to fight jihadists, Africa Intelligence says", publisher: "Bloomberg", date: 2022-09-09, tier: 3}
+      - {url: "https://www.africanews.com/amp/2022/09/10/benin-rwanda-militaries-hold-bilateral-talks-to-bolster-security/", title: "Benin, Rwanda militaries hold bilateral talks to bolster security", publisher: "Africanews", date: 2022-09-10, tier: 3}

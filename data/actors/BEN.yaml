@@ -7,8 +7,56 @@ coords:
 - 2.62
 - 6.48
 seat: Porto-Novo
-regions:
-- world
-card: stub
+regions: [west-africa]
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the succession inside Talon's coalition. Romuald Wadagni, his finance minister, won the April 2026 presidential election in the first round with about 94% (provisional), since Talon was barred by term limits. The main opposition party fielded no candidate, and the January 2026 parliamentary vote gave Talon's two allied parties all 109 seats in the National Assembly."
+      confidence: C
+      sources:
+        - {url: "https://www.news24.com/world/africa/benins-finance-minister-wins-presidential-election-with-94-20260414-0933", title: "Benin's finance minister wins presidential election with 94%", publisher: "News24", date: 2026-04-14, tier: 3}
+        - {url: "https://www.wsls.com/news/world/2026/04/12/benin-votes-for-new-president-with-finance-minister-favored-to-succeed-talon/", title: "Benin votes for new president with finance minister favored to succeed Talon", publisher: "WSLS", date: 2026-04-12, tier: 3}
+    - rank: 2
+      text: "Keep the north and the Niger corridor open. Jihadist attacks from Burkina Faso killed dozens of Beninese soldiers in 2025, and the Niger pipeline's outlet at Sèmè-Kpodji depends on the border. Benin enforced ECOWAS sanctions on Niger after the 2023 coup; on 2 June 2026 President Wadagni went to Niamey, and both leaders agreed an expert committee, given 15 days, to prepare the border's reopening."
+      confidence: C
+      sources:
+        - {url: "https://adf-magazine.com/2025/02/benin-reels-from-deadliest-terror-attack/", title: "Benin reels from deadliest terror attack", publisher: "ADF Magazine", date: 2025-02, tier: 3}
+        - {url: "https://www.ecofinagency.com/news/0206-56101-benin-and-niger-move-toward-border-reopening-after-years-of-diplomatic-strain", title: "Benin and Niger move toward border reopening after years of diplomatic strain", publisher: "Ecofin Agency", date: 2026-06-02, tier: 3}
+
+  means:
+    - domain: military
+      text: "The army is the front against JNIM in the north. ACLED counts at least 88 military personnel killed in the first four months of 2025, more than the total it reports for 2024. A 2022-23 agreement with Rwanda covers coaching and training; no Rwandan deployment is confirmed."
+      confidence: C
+      sources:
+        - {url: "https://acleddata.com/update/africa-overview-may-2025", title: "Africa overview, May 2025", publisher: "ACLED", date: 2025-05, tier: 2}
+        - {url: "https://www.africanews.com/2023/04/16/rwanda-benin-talk-military-cooperation-over-border-security/", title: "Rwanda, Benin talk military cooperation over border security", publisher: "Africanews", date: 2023-04-16, tier: 3}
+    - domain: economic
+      text: "The coastal outlet and the pipeline as leverage. The Sèmè-Kpodji terminal carries Niger's crude, and in May 2024 Benin blocked Niger's crude loading until Niger reopened its side of the border, as reported. The closure that followed disrupted trade on a major West African transit corridor, so the leverage also costs Benin."
+      confidence: C
+      sources:
+        - {url: "https://www.hellenicshippingnews.com/benin-blocks-niger-oil-exports-in-border-row/", title: "Benin blocks Niger oil exports in border row", publisher: "Hellenic Shipping News", date: 2024-05, tier: 3}
+        - {url: "https://www.ecofinagency.com/news/0206-56101-benin-and-niger-move-toward-border-reopening-after-years-of-diplomatic-strain", title: "Benin and Niger move toward border reopening after years of diplomatic strain", publisher: "Ecofin Agency", date: 2026-06-02, tier: 3}
+
+  constraints:
+    - text: "Its border is also its trade route. The Niger border has been shut since the July 2023 coup, and Niamey kept it closed even after ECOWAS lifted its sanctions. The closure disrupted trade on a major West African transit corridor."
+      confidence: C
+      sources:
+        - {url: "https://www.ecofinagency.com/news/0206-56101-benin-and-niger-move-toward-border-reopening-after-years-of-diplomatic-strain", title: "Benin and Niger move toward border reopening after years of diplomatic strain", publisher: "Ecofin Agency", date: 2026-06-02, tier: 3}
+    - text: "It cannot hold power without outside force. In the failed coup attempt of December 2025, when soldiers seized state television, loyalist forces reversed it within hours with Nigerian airstrikes and ECOWAS support (reported)."
+      confidence: C
+      sources:
+        - {url: "https://www.wsls.com/news/world/2026/04/12/benin-votes-for-new-president-with-finance-minister-favored-to-succeed-talon/", title: "Benin votes for new president with finance minister favored to succeed Talon", publisher: "WSLS", date: 2026-04-12, tier: 3}
+
+  paradoxes:
+    - text: "Benin squeezed Niger over the pipeline and the border, and in June 2026 it reopened talks because jihadist violence on both sides of the border made the squeeze costly. A June 2026 analysis reads the jihadist threat as at least as much a cause of the thaw as economic need."
+      confidence: C
+      sources:
+        - {url: "https://www.ecofinagency.com/news/0206-56101-benin-and-niger-move-toward-border-reopening-after-years-of-diplomatic-strain", title: "Benin and Niger move toward border reopening after years of diplomatic strain", publisher: "Ecofin Agency", date: 2026-06-02, tier: 3}
+        - {url: "https://www.modernghana.com/news/1506510/oil-guns-and-a-common-enemy-niger-and-benins.html", title: "Oil, Guns, and a Common Enemy: Niger and Benin's Fragile Pipeline Detente", publisher: "Modern Ghana", date: 2026-06, tier: 4}
+
+  reading: |
+    Benin's grand strategy is to hold a Talon-backed succession at home and to keep its north and its oil and transit outlet open against a jihadist belt that now reaches from Burkina Faso. It treats Niger as a rival it can squeeze with the border and the pipeline, and it reopens to Niger when the jihadist threat makes the squeeze costly, which is the paradox of the 2026 thaw. France and Rwanda are security partners it needs but cannot lean on openly: the French link is under street pressure, and the Rwandan training is confirmed only as an agreement from 2022-23.
