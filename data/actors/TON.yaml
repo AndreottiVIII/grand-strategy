@@ -8,7 +8,67 @@ coords:
 - -21.13
 seat: Nukuʻalofa
 regions:
-- world
-card: stub
+- southeast-asia-oceania
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Keep the monarchy's hand on the state while elected governments change. Prime Minister Sovaleni resigned in December 2024 hours before a no-confidence motion, after a clash with King Tupou VI; Eke governed until the November 2025 election, and parliament then chose Lord Fakafanua, a noble and former Speaker, by 16 votes to 10."
+    confidence: B
+    sources:
+    - {url: "https://parliament.gov.to/en/media-centre/latest-news/former-speaker-lord-fakafanua-elected-as-tongas-prime-minister-designate", title: "Former Speaker Lord Fakafanua elected as Tonga's prime minister-designate", publisher: "Parliament of the Kingdom of Tonga", date: 2025-12-16, tier: 1}
+    - {url: "https://www.aljazeera.com/news/2024/12/24/tonga-elects-new-prime-minister-after-predecessors-sudden-resignation", title: "Tonga elects new prime minister after predecessor's sudden resignation", publisher: "Al Jazeera", date: 2024-12-24, tier: 3}
+    - {url: "https://islandsbusiness.com/news-break/king-consolidates-power-as-tonga-elects-pm/", title: "King consolidates power as Tonga elects PM", publisher: "Islands Business", date: 2025-12, tier: 3}
+  - rank: 2
+    text: "Cut the debt to China and buy fiscal room. Over US$120 million is owed to Beijing (2024), roughly a quarter of GDP; about 80% of the payments due fall to China, and the bulk of the principal is due by 2028."
+    confidence: B
+    sources:
+    - {url: "https://www.lowyinstitute.org/the-interpreter/tonga-walks-tightrope-its-chinese-debts", title: "Tonga walks tightrope with its Chinese debts", publisher: "Lowy Institute (The Interpreter)", date: 2024-01-31, tier: 2}
+    - {url: "https://kanivatonga.co.nz/2018/11/china-defers-tongas-loan-payments-as-pacific-nation-signs-up-to-belt-and-road/", title: "China defers Tonga's loan payments as Pacific nation signs up to Belt and Road", publisher: "Kaniva News", date: 2018-11, tier: 3}
+  - rank: 3
+    text: "Lead the Pacific agenda through the Forum. Tonga hosted the 53rd Pacific Islands Forum Leaders Meeting in Nuku'alofa, 26-30 August 2024, with its prime minister as chair."
+    confidence: B
+    sources:
+    - {url: "https://forumsec.org/events/53rd-pacific-islands-forum-leaders-meeting-tonga", title: "53rd Pacific Islands Forum Leaders Meeting, Tonga", publisher: "Pacific Islands Forum Secretariat", date: 2024-08, tier: 1}
+  means:
+  - text: "Labour mobility as the main export. Tongans work seasonally in Australia's PALM scheme (2,680 in December 2025, down from about 6,035 in April 2022) and in New Zealand's RSE scheme (about 1,676 in 2025/26 per 1News; about 1,000 per the Deputy Prime Minister in July 2025: the two figures conflict)."
+    confidence: B
+    sources:
+    - {url: "https://www.palmscheme.gov.au/sites/default/files/2026-03/PALM%20scheme%20data%20report%20-%20December%202025%20quarter.docx", title: "PALM scheme data report - December 2025 quarter", publisher: "Australian Government, PALM scheme", date: 2026-03, tier: 1}
+    - {url: "https://tonga.embassy.gov.au/nkfa/PALM.html", title: "PALM scheme (Australian High Commission in Tonga)", publisher: "Australian High Commission in Tonga", date: 2025, tier: 1}
+    - {url: "https://www.1news.co.nz/2026/08/02/seasonal-work-in-nz-helping-tongans-build-businesses-back-home/", title: "Seasonal work in NZ helping Tongans build businesses back home", publisher: "1News", date: 2026-08-02, tier: 3}
+  - text: "Balancing donors. Australia and New Zealand give aid and budget support (Australia added A$30 million of budget support, per Lowy); China lends and offers police help; the United States opened an embassy in May 2023 and signed a maritime security agreement in February 2026. Tonga draws on all of them and aligns with none."
+    confidence: B
+    sources:
+    - {url: "https://www.lowyinstitute.org/the-interpreter/tonga-walks-tightrope-its-chinese-debts", title: "Tonga walks tightrope with its Chinese debts", publisher: "Lowy Institute (The Interpreter)", date: 2024-01-31, tier: 2}
+    - {url: "https://www.nbcnews.com/news/world/us-opens-embassy-tonga-new-pushback-china-pacific-rcna83677", title: "U.S. opens embassy in Tonga in new pushback against China in the Pacific", publisher: "NBC News", date: 2023-05-10, tier: 3}
+    - {url: "https://www.mvariety.com/news/local/us-tonga-sign-law-enforcement-accord/article_90fa957a-dd78-5468-a036-2da2cd227dce.html", title: "US, Tonga sign law enforcement accord", publisher: "Marianas Variety", date: 2026-02-27, tier: 3}
+  - text: "Forum and multilateral seats: a full member of the Pacific Islands Forum and its 2024 host, alongside the Commonwealth, UN and WTO memberships already in the datasets."
+    confidence: B
+    sources:
+    - {url: "https://forumsec.org/events/53rd-pacific-islands-forum-leaders-meeting-tonga", title: "53rd Pacific Islands Forum Leaders Meeting, Tonga", publisher: "Pacific Islands Forum Secretariat", date: 2024-08, tier: 1}
+  constraints:
+  - text: "Debt service. Lowy reports that in 2024 Tonga spends more on debt service than on health, and that repayments take more than a fifth of non-aid revenue at the peak."
+    confidence: B
+    sources:
+    - {url: "https://www.lowyinstitute.org/the-interpreter/tonga-walks-tightrope-its-chinese-debts", title: "Tonga walks tightrope with its Chinese debts", publisher: "Lowy Institute (The Interpreter)", date: 2024-01-31, tier: 2}
+  - text: "Small economy, exposed to disaster. The 15 January 2022 eruption and tsunami caused about US$90 million of damage, about 18.5% of GDP (World Bank rapid estimate), and cut the international cable for five weeks."
+    confidence: B
+    sources:
+    - {url: "https://www.worldbank.org/en/news/press-release/2022/02/14/tonga-volcanic-eruption-and-tsunami-world-bank-disaster-assessment-report-estimates-damages-at-us-90m", title: "Tonga volcanic eruption and tsunami: World Bank disaster assessment report estimates damages at US$90m", publisher: "World Bank", date: 2022-02-14, tier: 1}
+    - {url: "https://subtelforum.com/tonga-cable-successfully-repaired/", title: "Tonga cable successfully repaired", publisher: "Subtel Forum", date: 2022-02, tier: 3}
+  - text: "Remittance dependence. Remittances were about 44% of GDP in 2021 (about US$220 million), mostly from Tongans working seasonally abroad, so a shrinking labour scheme is a macroeconomic shock, not a side issue."
+    confidence: C
+    sources:
+    - {url: "https://tpplus.co.nz/pacific-region/tonga-household-survey-reveals-2021-remittance-details/", title: "Tonga household survey reveals 2021 remittance details (survey year 2021, co-authored by World Bank economists)", publisher: "Tagata Pasifika (TPplus)", date: 2022, tier: 3}
+    - {url: "https://www.palmscheme.gov.au/sites/default/files/2026-03/PALM%20scheme%20data%20report%20-%20December%202025%20quarter.docx", title: "PALM scheme data report - December 2025 quarter", publisher: "Australian Government, PALM scheme", date: 2026-03, tier: 1}
+  paradoxes:
+  - text: "To secure its 2024 Forum, Tonga welcomed a Chinese police role while Australia, its largest patron, said China had no role in Pacific policing. The security help that looked useful for the summit cost goodwill with the patron whose labour schemes and budget support Tonga most needs."
+    confidence: C
+    sources:
+    - {url: "https://kanivatonga.co.nz/2024/04/outrage-as-pm-welcomes-chinese-policing-role-in-tonga-during-pacific-leaders-forum/", title: "Outrage as PM welcomes Chinese policing role in Tonga during Pacific leaders forum", publisher: "Kaniva News", date: 2024-04, tier: 3}
+  reading: |
+    Tonga's strategy is survival by balancing, not alignment: no treaty ties it to any patron, which is why every stance it holds is partner. Its money comes from Chinese loans it wants to shrink, Australian and New Zealand labour schemes and budget support it cannot do without, and remittances that make its economy a function of others' payrolls. The King is the fixed point of Tongan politics; governments change by parliamentary vote inside the room the monarchy leaves them, and the eruption recovery and the China debt are the two tests of the next years.

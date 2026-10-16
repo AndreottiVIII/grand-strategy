@@ -181,6 +181,9 @@ def main():
         print(f"NAM from Wikipedia category: +{len(members) - n0}")
     except Exception as e:  # noqa: BLE001
         print("NAM category failed:", e, file=sys.stderr)
+    # Wikidata rows known to be wrong (checked by hand, 2026-10-16): Australia is an ASEAN dialogue partner, not a member
+    WRONG = {("AUS", "org-asean")}
+    members = [m for m in members if (m["iso3"], m["org"]) not in WRONG]
     json.dump(members, (OUT / "memberships.json").open("w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(f"{len(members)} current memberships in {len(ORGS)} organisations")
 

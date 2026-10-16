@@ -1,0 +1,115 @@
+from: TON
+relations:
+  # ---------- objective ----------
+  - to: org-pif
+    layer: objective
+    type: influence_goal
+    summary: "Tonga hosted the 53rd Pacific Islands Forum Leaders Meeting in Nuku'alofa, 26-30 August 2024, with its prime minister as chair; the host government wanted the summit to move from debate to putting decisions into practice."
+    since: 2024-08
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://forumsec.org/events/53rd-pacific-islands-forum-leaders-meeting-tonga", title: "53rd Pacific Islands Forum Leaders Meeting, Tonga", publisher: "Pacific Islands Forum Secretariat", date: 2024-08, tier: 1}
+      - {url: "https://nit.com.au/30-08-2024/13437/tonga-pulls-off-rift-free-pacific-islands-forum", title: "Tonga pulls off rift-free Pacific Islands Forum", publisher: "NIT", date: 2024-08-30, tier: 3}
+
+  # ---------- alignment ----------
+  - to: org-pif
+    layer: alignment
+    type: membership
+    summary: "Full member of the Pacific Islands Forum. Not in the Wikidata membership rows (those cover other bodies). The since date is the Forum's founding year (1971); Tonga's own entry date was not checked."
+    since: 1971
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://forumsec.org/events/53rd-pacific-islands-forum-leaders-meeting-tonga", title: "53rd Pacific Islands Forum Leaders Meeting, Tonga", publisher: "Pacific Islands Forum Secretariat", date: 2024-08, tier: 1}
+
+  - to: CHN
+    layer: alignment
+    type: recognition
+    summary: "Tonga recognises the People's Republic of China (2 November 1998) and broke relations with Taiwan that year. The Taiwan non-recognition row sits in the datasets, not here."
+    since: 1998-11-02
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.mfa.gov.cn/ce/ceto//eng/zt/CCTDT/t1610024.htm", title: "Ambassador Wang Baodong signed article on the 20th anniversary of China-Tonga diplomatic relations", publisher: "Chinese Embassy in Tonga (Chinese MFA)", date: 2018-11-02, tier: 1}
+      - {url: "https://news.bbc.co.uk/2/hi/asia-pacific/204544.stm", title: "Tonga breaks relations with Taiwan", publisher: "BBC News", date: 1998-10-30, tier: 3}
+
+  # ---------- dependency ----------
+  - to: NZL
+    layer: dependency
+    type: remittances
+    summary: "Personal remittances about 44% of GDP in 2021 (about US$220 million), most of it from Tongans working seasonally in New Zealand and Australia (the split is not in the sources). Sources disagree on the latest year: the 2021 household survey gives about 44%, earlier World Bank-based figures 34-43% for 2017-2023; the most recent figure with a World Bank basis is used. Guinness records 34.2% for 2017 as the world's highest share."
+    value: 0.44
+    unit: share_of_gdp
+    since: 2021
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://tpplus.co.nz/pacific-region/tonga-household-survey-reveals-2021-remittance-details/", title: "Tonga household survey reveals 2021 remittance details (survey year 2021, co-authored by World Bank economists)", publisher: "Tagata Pasifika (TPplus)", date: 2022, tier: 3}
+      - {url: "https://www.guinnessworldrecords.com/world-records/536297-greatest-income-from-remittances-as-a-proportion-of-gdp", title: "Greatest income from remittances (as a proportion of GDP)", publisher: "Guinness World Records", date: 2017, tier: 3}
+
+  - to: CHN
+    layer: dependency
+    type: debt
+    summary: "Over US$120 million owed to China's Export-Import Bank (2024), roughly a quarter of GDP; about 80% of the payments due fall to China. The 2008 EXIM loan financed rebuilding central Nuku'alofa after the November 2006 riots. Repayments were deferred in 2013, 2018 and 2020; by early 2023 China would not negotiate further. Earlier tallies, which included more of the external debt, put the share higher; the 2024 figure is used."
+    value: 0.25
+    unit: share_of_gdp
+    since: 2008
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.lowyinstitute.org/the-interpreter/tonga-walks-tightrope-its-chinese-debts", title: "Tonga walks tightrope with its Chinese debts", publisher: "Lowy Institute (The Interpreter)", date: 2024-01-31, tier: 2}
+      - {url: "https://kanivatonga.co.nz/2018/11/china-defers-tongas-loan-payments-as-pacific-nation-signs-up-to-belt-and-road/", title: "China defers Tonga's loan payments as Pacific nation signs up to Belt and Road", publisher: "Kaniva News", date: 2018-11, tier: 3}
+
+  # ---------- action ----------
+  - to: AUS
+    layer: action
+    type: incident
+    summary: "Hunga Tonga-Hunga Ha'apai eruption and tsunami of 15 January 2022. Australian and New Zealand military aircraft flew over from 17 January to assess the damage, and supply flights followed. The cable to the outside world was repaired around 21-22 February. The vocabulary has no aid type, so relief is logged as an incident."
+    since: 2022-01-17
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://arabnews.com/node/2005766", title: "Australia, New Zealand step up efforts to aid tsunami-hit Tonga", publisher: "Arab News", date: 2022-01, tier: 3}
+      - {url: "https://subtelforum.com/tonga-cable-successfully-repaired/", title: "Tonga cable successfully repaired", publisher: "Subtel Forum", date: 2022-02, tier: 3}
+
+  - to: NZL
+    layer: action
+    type: incident
+    summary: "Same January 2022 relief: New Zealand's military prepared drinking water and supplies, and two New Zealand ships headed to Tonga, with supply aircraft expected from 20 January."
+    since: 2022-01-17
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://arabnews.com/node/2005766", title: "Australia, New Zealand step up efforts to aid tsunami-hit Tonga", publisher: "Arab News", date: 2022-01, tier: 3}
+
+  - to: CHN
+    layer: action
+    type: visit
+    summary: "A six-officer police delegation from Shandong visited Tonga on 3 April 2024 to discuss Chinese help in securing the Forum, including offers of police motorbikes and vehicles; the prime minister welcomed a Chinese policing role, and Australia opposed it. In September 2025 Tonga's police minister co-chaired the fourth China-Pacific police dialogue, in Lianyungang (Chinese official statement)."
+    since: 2024-04-03
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://islandtimes.org/chinese-security-delegation-visits-tonga-to-provide-police-assistance-ahead-of-pacific-islands-forum/", title: "Chinese security delegation visits Tonga to provide police assistance ahead of Pacific Islands Forum", publisher: "Island Times", date: 2024-04, tier: 3}
+      - {url: "https://ydyl.gansu.gov.cn/enggsydyl/jmhz/202509/t20250919_30642.html", title: "China, Pacific Island countries hold dialogue on law enforcement", publisher: "Gansu provincial government (Chinese official statement)", date: 2025-09-19, tier: 1}
+
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "Enhanced maritime security agreement with the United States, signed at Masefield Base in Nuku'alofa with a Coast Guard cutter in the harbour, against illegal fishing, drug smuggling and other transnational crime. The US embassy had opened on 9 May 2023."
+    since: 2026-02-27
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.mvariety.com/news/local/us-tonga-sign-law-enforcement-accord/article_90fa957a-dd78-5468-a036-2da2cd227dce.html", title: "US, Tonga sign law enforcement accord", publisher: "Marianas Variety", date: 2026-02-27, tier: 3}
+      - {url: "https://www.nbcnews.com/news/world/us-opens-embassy-tonga-new-pushback-china-pacific-rcna83677", title: "U.S. opens embassy in Tonga in new pushback against China in the Pacific", publisher: "NBC News", date: 2023-05-10, tier: 3}

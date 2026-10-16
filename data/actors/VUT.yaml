@@ -8,7 +8,74 @@ coords:
 - -17.73
 seat: Port Vila
 regions:
-- world
-card: stub
+- southeast-asia-oceania
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Make the climate obligations of the big emitters binding in practice: the ICJ advisory opinion of 23 July 2025, requested by the General Assembly on Vanuatu's campaign, and the General Assembly resolution of May 2026 that endorses it and calls for reparation."
+      confidence: B
+      sources:
+        - {url: "https://www.icj-cij.org/case/187", title: "Obligations of States in respect of Climate Change (advisory proceedings)", publisher: "International Court of Justice", date: 2025-07-23, tier: 1}
+        - {url: "https://www.jurist.org/news/2023/03/un-seeks-international-court-of-justice-opinion-on-climate-obligations-following-vanuatu-advocacy/", title: "UN seeks International Court of Justice opinion on climate obligations following Vanuatu advocacy", publisher: "JURIST", date: 2023-03, tier: 3}
+        - {url: "https://pina.com.fj/2026/05/21/un-adopts-landmark-climate-resolution-backing-icj-opinion-led-by-vanuatu/", title: "UN adopts landmark climate resolution backing ICJ opinion led by Vanuatu", publisher: "PINA", date: 2026-05-21, tier: 3}
+    - rank: 2
+      text: "Finance infrastructure from Australia and China without giving either a veto over its territory: the Nakamal Agreement with Australia, signed on 29 June 2026 after a 2025 deferral, and the Namele development agreement with China, still unsigned."
+      confidence: B
+      sources:
+        - {url: "https://courthousenews.com/a-long-awaited-australia-vanuatu-pact-blocks-china-from-building-a-military-base/", title: "A long-awaited Australia-Vanuatu pact blocks China from building a military base", publisher: "AP (via Courthouse News)", date: 2026-06-29, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2025/9/9/australian-pm-says-vanuatu-security-climate-agreement-delayed", title: "Australian PM says Vanuatu security, climate agreement delayed", publisher: "Al Jazeera", date: 2025-09-09, tier: 3}
+        - {url: "https://pmn.co.nz/read/pacific-region/vanuatu-to-sign-new-agreements-with-australia-and-china-as-pm-defends-sovereignty-concerns", title: "Vanuatu to sign new agreements with Australia and China as PM defends sovereignty concerns", publisher: "Pacific Media Network", date: 2026-06, tier: 3}
+    - rank: 3
+      text: "Melanesian self-determination inside the Melanesian Spearhead Group: the Kanak cause in New Caledonia and UN access for West Papua, with the MSG threatening to review Indonesia's associate status at its 2027 summit if no UN visit is allowed."
+      confidence: B
+      sources:
+        - {url: "https://islandsbusiness.com/?p=35533", title: "MSG leaders push for strong stance on New Caledonia at Tonga summit", publisher: "Islands Business", date: 2024, tier: 3}
+        - {url: "https://nit.com.au/14-09-2026/26449/melanesian-countries-look-to-ban-indonesias-regional-status-over-un-permission-to-visit-west-papua", title: "Melanesian countries look to ban Indonesia's regional status over delay of UN visit to West Papua", publisher: "NIT", date: 2026-09-14, tier: 3}
+
+  means:
+    - text: "Multilateral diplomacy: the climate campaign that brought the ICJ request (General Assembly resolution 77/276, March 2023), and the Melanesian Spearhead Group, founded in 1986 and given its treaty basis in Port Vila in 1988. These are the levers that let a small state act at the UN."
+      confidence: B
+      sources:
+        - {url: "https://www.jurist.org/news/2023/03/un-seeks-international-court-of-justice-opinion-on-climate-obligations-following-vanuatu-advocacy/", title: "UN seeks International Court of Justice opinion on climate obligations following Vanuatu advocacy", publisher: "JURIST", date: 2023-03, tier: 3}
+        - {url: "https://msgsec.info/about-msg/", title: "About MSG", publisher: "Melanesian Spearhead Group Secretariat", date: 2026-10, tier: 1}
+    - text: "Concessional and project finance: a China Eximbank loan of RMB 541.9 million for the Luganville wharf, and a US$50 million Asian Development Bank loan sought for the Simonsen wharf in Luganville."
+      confidence: B
+      sources:
+        - {url: "https://china.aiddata.org/projects/37748", title: "Luganville wharf project record (China Eximbank loan)", publisher: "AidData", date: 2026-10, tier: 2}
+        - {url: "https://www.gtai.de/de/trade/vanuatu/entwicklungsprojekte/ausbau-eines-hafens--1948600", title: "Vanuatu: expansion of a port (development project notice)", publisher: "Germany Trade and Invest", date: 2025-12, tier: 1}
+    - text: "Policing and security partnerships: Australia becomes the primary policing partner under the Nakamal Agreement; Vanuatu already has policing arrangements with New Zealand, France and the United Kingdom; and China announced police equipment worth over US$400,000 (motorbikes, drones)."
+      confidence: B
+      sources:
+        - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/06/29/australia-vanuatu-sign-delayed-security-deal-that-is-seen-as-curbing-china", title: "Australia, Vanuatu sign delayed security deal that is seen as curbing China", publisher: "Reuters (via Internazionale)", date: 2026-06-29, tier: 3}
+        - {url: "https://www.thestandard.com.hk/china/article/312309/China-to-donate-over-400000-in-police-gear-to-Vanuatu-minister", title: "China to donate over $400,000 in police gear to Vanuatu minister", publisher: "The Standard (Hong Kong)", date: 2025, tier: 3}
+
+  constraints:
+    - text: "A short-lived coalition: Jotham Napat, elected prime minister on 11 February 2025, is the fifth prime minister in four years, and members of his coalition withdrew backing for the September 2025 Nakamal signing over sovereignty and limits on infrastructure investment."
+      confidence: B
+      sources:
+        - {url: "https://asiapacificreport.nz/2025/02/11/vanuatu-parliament-elects-jotham-napat-as-new-prime-minister/", title: "Vanuatu parliament elects Jotham Napat as new prime minister", publisher: "Asia Pacific Report", date: 2025-02-11, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2025/9/9/australian-pm-says-vanuatu-security-climate-agreement-delayed", title: "Australian PM says Vanuatu security, climate agreement delayed", publisher: "Al Jazeera", date: 2025-09-09, tier: 3}
+    - text: "Debt to China and exposure to hazards: press estimates of Vanuatu's debt to China run from US$100 million to US$130 million, figures not reconciled; the magnitude 7.3 earthquake of 17 December 2024 killed 14 people, affected about 80,000 and displaced more than 2,400."
+      confidence: C
+      sources:
+        - {url: "https://www.rfa.org/english/special-reports/one-belt-one-road/assets/vanuatu.html", title: "Vanuatu: One Belt One Road special report", publisher: "Radio Free Asia", date: 2026-10, tier: 3}
+        - {url: "https://reliefweb.int/report/vanuatu/operation-update-4-vanuatu-earthquake-mdrvu012", title: "Operation update 4: Vanuatu earthquake (MDRVU012)", publisher: "IFRC via ReliefWeb (UN OCHA)", date: 2025, tier: 1}
+    - text: "Visa-free access to the EU is gone: the Council ended the visa exemption for Vanuatu citizens on 12 December 2024 over the investor-citizenship scheme, after a partial suspension from 3 March 2022; passport holders now need Schengen visas."
+      confidence: A
+      sources:
+        - {url: "https://www.consilium.europa.eu/en/press/press-releases/2024/12/12/vanuatu-council-ends-visa-exemption/", title: "Vanuatu: Council ends visa exemption", publisher: "Council of the EU", date: 2024-12-12, tier: 1}
+        - {url: "https://www.consilium.europa.eu/en/press/press-releases/2022/03/03/vanuatu-council-partially-suspends-visa-waiver-agreement-due-to-risks-posed-by-golden-passport-schemes/", title: "Vanuatu: Council partially suspends visa waiver agreement due to risks posed by golden passport schemes", publisher: "Council of the EU", date: 2022-03-03, tier: 1}
+
+  paradoxes:
+    - text: "Vanuatu's climate standing rests on being the small state that did least to cause the problem, yet its own citizenship-for-investment scheme is what the EU cited as a security and migration risk when it ended visa-free travel in December 2024: the passports it sold weaken the case it makes at the UN."
+      confidence: B
+      sources:
+        - {url: "https://www.consilium.europa.eu/en/press/press-releases/2024/12/12/vanuatu-council-ends-visa-exemption/", title: "Vanuatu: Council ends visa exemption", publisher: "Council of the EU", date: 2024-12-12, tier: 1}
+        - {url: "https://www.jurist.org/news/2023/03/un-seeks-international-court-of-justice-opinion-on-climate-obligations-following-vanuatu-advocacy/", title: "UN seeks International Court of Justice opinion on climate obligations following Vanuatu advocacy", publisher: "JURIST", date: 2023-03, tier: 3}
+
+  reading: |
+    Vanuatu is a small Pacific state that wins where size counts least: at the UN and the ICJ, where its campaign produced the July 2025 advisory opinion and the May 2026 resolution. Its binding limits are money and sovereignty: it needs Chinese and Australian finance, so it bargains over clauses (no foreign base, consultation rather than a veto) instead of aligning, and its coalitions change often enough to stall treaties. Open items: whether the Luganville wharf loan carries a debt-for-equity clause (the sources conflict), the text of the Namele agreement, the status of the Peace Corps programme, and the earthquake recovery after late 2025.
