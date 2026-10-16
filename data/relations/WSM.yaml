@@ -1,0 +1,138 @@
+from: WSM
+relations:
+  # ---------- objective ----------
+  - to: NZL
+    layer: objective
+    type: influence_goal
+    summary: "Samoa presses New Zealand on the citizenship lost under the Western Samoa Citizenship Act 1982 (overturning a 1982 Privy Council ruling); NZ passed a law on 20 Nov 2024 restoring the right for Samoans born 1924-1949, a claim Samoa pressed as a matter of trust and fairness."
+    since: '1982'
+    until: '2024-11-20'
+    last_verified: '2026-10-12'
+    confidence: B
+    sources:
+      - {url: "https://www.rnz.co.nz/international/pacific-news/534339/685-s-to-the-world-restoring-citizenship-bill-passes-with-unanimous-support", title: "'685's to the world:' Restoring Citizenship Bill passes with unanimous support", publisher: "Radio New Zealand", date: 2024-11-20, tier: 3}
+      - {url: "https://www.rnz.co.nz/international/pacific-news/513986/not-looking-for-money-samoa-citizenship-bill-about-trust-and-fairness-community-leader", title: "'Not looking for money': Samoa citizenship bill 'about trust and fairness' - community leader", publisher: "Radio New Zealand", date: 2024, tier: 3}
+
+  - to: AUS
+    layer: objective
+    type: influence_goal
+    summary: "Keep Samoan workers in Australia's Pacific Labour Scheme on Samoan terms: Samoa capped PALM contracts at three years after a 2021 review; in Feb 2026 Wong said Samoa controls how workers are selected and how many go."
+    since: '2018'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://devpolicy.org/samoas-participation-in-nz-and-australias-pacific-labour-schemes-20221107/", title: "Growing pains: Samoa's participation in New Zealand and Australia's Pacific labour schemes", publisher: "Devpolicy Blog (Development Policy Centre)", date: 2022-11-07, tier: 3}
+      - {url: "https://www.samoaobserver.ws/category/samoa/118681", title: "It's up to Samoa: Wong on labour mobility", publisher: "Samoa Observer", date: 2026-02, tier: 3}
+
+  # ---------- alignment ----------
+  - to: NZL
+    layer: alignment
+    type: treaty
+    summary: "1962 Treaty of Friendship, signed at independence: a special relationship under which Samoa may ask NZ to consider defence assistance; Samoa keeps no formal military."
+    since: '1962-08'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: A
+    sources:
+      - {url: "https://treaties.un.org/doc/Publication/UNTS/Volume%20453/volume-453-I-6515-English.pdf", title: "New Zealand and Western Samoa: Treaty of Friendship", publisher: "UN Treaty Series", date: 1962-08, tier: 1}
+
+  # ---------- dependency ----------
+  - to: NZL
+    layer: dependency
+    type: remittances
+    value: 0.24
+    unit: share_of_gdp
+    summary: "Personal remittances were 24.0% of GDP in 2024 (World Bank series), down from a 31.5% peak in 2022. Most traces to Samoan PALM and RSE workers abroad, but the government does not split seasonal pay from other private transfers; the recent 2024/25 inflow was reported above ST$900m."
+    since: '2024'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://statisticsoftheworld.com/country/samoa/BX.TRF.PWKR.DT.GD.ZS", title: "Personal remittances received (% of GDP), Samoa (World Bank series)", publisher: "Statistics of the World (World Bank data)", date: 2025, tier: 4}
+      - {url: "https://devpolicy.org/samoas-new-fees-implications-for-palm-and-rse-employers-20250819/", title: "Samoa's new fees: implications for PALM and RSE employers", publisher: "Devpolicy Blog (Development Policy Centre)", date: 2025-08-19, tier: 3}
+
+  - to: CHN
+    layer: dependency
+    type: debt
+    value: 0.37
+    unit: share_of_external_debt
+    summary: "China was owed $299.8m of $810.4m total external debt at end-2023, about 37% (our calculation from the government figures; Japan was owed $56.9m). The ratio is ours, not the report's."
+    since: '2023-12'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://www.samoaobserver.ws/category/samoa/108377", title: "Total external debt was $810.4 million; China is owed $299.8 million", publisher: "Samoa Observer", date: 2024-03-10, tier: 3}
+
+  - to: AUS
+    layer: dependency
+    type: investment
+    value: 105.5
+    unit: aud_million_direct_budget_support
+    summary: "Australian direct budget support of A$105.5m, plus flagship programmes Tautai (governance, A$45m, 2022-30) and Tautua (human development, A$40m, 2021-29) and A$30m toward a Legislative Assembly building. Filed as investment because the dependency vocabulary has no aid type: an open question for the ontology."
+    since: '2021'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: B
+    sources:
+      - {url: "https://www.dfat.gov.au/sites/default/files/development-cooperation-fact-sheet-samoa.docx", title: "Development cooperation fact sheet: Samoa", publisher: "DFAT", date: 2025, tier: 1}
+
+  # ---------- action ----------
+  - to: CHN
+    layer: action
+    type: agreement
+    summary: "Prime Minister Mataafa and Chinese Foreign Minister Wang Yi sign a bilateral agreement on climate change, the COVID-19 pandemic and security, during China's Pacific push."
+    since: '2022-05-28'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://www.theguardian.com/world/2022/may/28/samoa-signs-china-bilateral-agreement-during-pacific-push-by-beijing", title: "Samoa signs China bilateral agreement during Pacific push by Beijing", publisher: "The Guardian", date: 2022-05-28, tier: 3}
+
+  - to: NZL
+    layer: action
+    type: agreement
+    summary: "Prime Minister Ardern confirms NZ$15m for Samoa's climate-change mitigation and NZ$12m to rebuild Apia's Savalalo Market after a fire, during an early-August 2022 visit that also discussed seasonal workers."
+    since: '2022-08'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://www.rnz.co.nz/news/political/472037/pm-announces-15m-to-support-samoa-with-climate-change-priorities", title: "PM announces $15m to support Samoa with climate change priorities", publisher: "Radio New Zealand", date: 2022-08, tier: 3}
+      - {url: "https://www.rnz.co.nz/news/political/471760/ardern-luxon-and-ministers-to-visit-samoa-for-treaty-anniversary", title: "Ardern, Luxon and ministers to visit Samoa for treaty anniversary", publisher: "Radio New Zealand", date: 2022, tier: 3}
+
+  - to: NZL
+    layer: action
+    type: incident
+    summary: "HMNZS Manawanui, a New Zealand navy vessel surveying a reef, ran aground on the night of 5 Oct 2024 off Siumu on Upolu's south coast and sank the next morning (6 Oct); the wreck threatened an oil spill and fishing around it was stopped."
+    since: '2024-10-06'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://teaonews.co.nz/2024/10/06/nz-navy-ship-on-fire-and-sinking-report", title: "NZ navy ship on fire and sinking - report", publisher: "Te Ao News", date: 2024-10-06, tier: 3}
+      - {url: "https://www.cnn.com/2024/10/07/world/new-zealand-navy-ship-sinks-intl-hnk/index.html", title: "New Zealand loses first naval ship since WWII; vessel threatening oil spill off Samoan coast", publisher: "CNN", date: 2024-10-07, tier: 3}
+
+  - to: org-commonwealth
+    layer: action
+    type: visit
+    summary: "Samoa hosts the 27th Commonwealth Heads of Government Meeting in Apia, 25-26 Oct 2024 (ministerial side events from 21 Oct); Australia's Pacific Policing Initiative makes its first deployment there, with more than 40 police from 11 Pacific countries on security."
+    since: '2024-10'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: B
+    sources:
+      - {url: "https://www.pm.gov.au/media/pacific-policing-initiative-steps-chogm-2024", title: "Pacific policing initiative steps up at CHOGM 2024", publisher: "Australian Prime Minister's Office", date: 2024-10, tier: 1}
+
+  - to: NZL
+    layer: action
+    type: visit
+    summary: "New Zealand PM Luxon leads a parliamentary delegation to Samoa in mid-March 2026. Before the trip, Prime Minister Schmidt says Luxon sought a matai title through the NZ High Commissioner; Luxon's office denies it, and on 16 March Apia confirms he did not request the title."
+    since: '2026-03'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://www.rnz.co.nz/news/political/589693/samoa-confirms-luxon-did-not-request-matai-title", title: "Samoa confirms Luxon did not request matai title", publisher: "Radio New Zealand", date: 2026-03-16, tier: 3}
+      - {url: "https://www.1news.co.nz/2026/03/14/pm-luxons-office-denies-he-asked-for-a-samoan-matai-title/", title: "PM Luxon's office denies he asked for a Samoan matai title", publisher: "1News", date: 2026-03-14, tier: 3}

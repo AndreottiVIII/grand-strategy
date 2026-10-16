@@ -1,0 +1,129 @@
+from: SLB
+relations:
+- to: org-pif
+  layer: objective
+  type: influence_goal
+  summary: "Honiara, as host and chair of the Pacific Islands Forum, kept every dialogue partner out of its 2025 leaders' meeting (the US, China and Taiwan named among the donors left off) and deferred the partner dialogue to 2026; CSIS reads the compromise as shaped by Chinese pressure."
+  since: 2025-08
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - {url: "https://www.csis.org/analysis/pacific-islands-forum-2025-navigating-great-power-rivalry", title: "Pacific Islands Forum 2025: Navigating Great-Power Rivalry", publisher: "CSIS", date: 2025-09, tier: 2}
+  - {url: "https://pina.com.fj/2025/08/15/forum-dialogue-partners-out/", title: "Forum dialogue partners out", publisher: "PINA", date: 2025-08-15, tier: 3}
+- to: CHN
+  layer: alignment
+  type: treaty
+  summary: "Security cooperation pact signed with Beijing in 2022 under Manasseh Sogavare; the text was not published, and in June 2026 Prime Minister Matthew Wale said it would be reviewed. It is treated as a treaty, not a mutual-defence alliance: no source describes one."
+  since: 2022-04
+  until: null
+  last_verified: 2026-10-12
+  confidence: C
+  sources:
+  - {url: "https://www.click2houston.com/news/world/2026/06/03/new-prime-minister-says-solomon-islands-will-review-its-secretive-security-treaty-with-china/", title: "New prime minister says Solomon Islands will review its secretive security treaty with China", publisher: "Associated Press (via Click2Houston)", date: 2026-06-02, tier: 3}
+  - {url: "https://www.aljazeera.com/news/2022/5/3/solomon-islands-says-it-will-restrict-chinese-police", title: "Solomon Islands says it will restrict Chinese police", publisher: "Al Jazeera", date: 2022-05-03, tier: 3}
+- to: AUS
+  layer: alignment
+  type: treaty
+  summary: "Bilateral security treaty signed in mid-August 2017, after RAMSI (2003-2017) ended; DFAT calls Australia the largest development partner and a key trading partner."
+  since: 2017-08
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - {url: "https://www.dfat.gov.au/geo/solomon-islands/solomon-islands-country-brief", title: "Solomon Islands country brief (page undated; accessed 2026-10-12; fetch timed out, claims as cited by the Wikipedia index)", publisher: "Department of Foreign Affairs and Trade (Australia)", date: 2026-10-12, tier: 1}
+- to: CHN
+  layer: dependency
+  type: debt
+  value: 66
+  unit: usd_million_chinese_loan
+  summary: "A US$66 million loan, state-linked Export-Import Bank of China, two-decade terms at concessional rates, finances Huawei towers (up to 161); an internal consultant report called the plan financially precarious, and the Chinese embassy rejects the debt-trap framing."
+  since: 2022-08
+  until: null
+  last_verified: 2026-10-12
+  confidence: C
+  sources:
+  - {url: "https://asiapacificreport.nz/2022/08/23/huawei-wins-us66m-contract-for-expanding-solomons-telecom-network/", title: "Huawei wins US$66m contract for expanding Solomons telecom network", publisher: "Asia Pacific Report", date: 2022-08-23, tier: 3}
+- to: CHN
+  layer: dependency
+  type: trade_share
+  value: 0.70
+  unit: share_of_merchandise_exports
+  summary: "Trade with China is close to 70 per cent of merchandise exports (UN analysis, 2021 figure), and logs to China remain the dominant export, though the UN notes a recent decline."
+  since: 2021
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - {url: "https://policy.desa.un.org/sites/default/files/2025-06/cdp-pl-2021-pl-5b.4.pdf", title: "Committee for Development Policy, Solomon Islands (2021 analysis; figures from search excerpt, document not opened)", publisher: "UN DESA", date: 2021, tier: 1}
+  - {url: "https://policy.desa.un.org/sites/default/files/2025-06/cdp-pl-2025-slb.pdf", title: "Committee for Development Policy, Solomon Islands (2025 review)", publisher: "UN DESA", date: 2025-06, tier: 1}
+- to: CHN
+  layer: dependency
+  type: investment
+  value: 6000
+  unit: sbd_million_gold_ridge_expansion
+  summary: "Gold Ridge, the country's only large-scale mine, is majority-owned by the Chinese company Wanguo; the owner's 2026 filing reports a roughly SBD 6 billion processing expansion to triple capacity, with reserves of about 7.78 million ounces at end-2025 (figures from the owner's filing as reported, not verified by an official source)."
+  since: 2025-08
+  until: null
+  last_verified: 2026-10-12
+  confidence: C
+  sources:
+  - {url: "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0315/2026031500013.pdf", title: "Gold Ridge mineral resources and reserves at 31 December 2025 (exchange filing)", publisher: "Wanguo Gold Group", date: 2026-03-15, tier: 3}
+  - {url: "https://macaubusiness.com/hunt-for-survivors-after-landslide-at-major-solomons-mine/", title: "Hunt for survivors after landslide at major Solomons mine", publisher: "Macau Business", date: 2026-07, tier: 3}
+- to: CHN
+  layer: action
+  type: agreement
+  summary: "Police cooperation deal signed in July 2023 (at least nine documents, per reporting; the government says it covers cyber security and community policing); Washington, Canberra and Wellington asked for the full text."
+  since: 2023-07
+  until: null
+  last_verified: 2026-10-12
+  confidence: C
+  sources:
+  - {url: "https://www.aljazeera.com/news/2023/7/14/solomon-islands-says-china-to-assist-with-policing-cybersecurity", title: "Solomon Islands says China to assist with policing, cybersecurity", publisher: "Al Jazeera", date: 2023-07-14, tier: 3}
+  - {url: "https://nit.com.au/14-07-2023/6803/solomon-islands-defends-police-deal-with-china-aap23", title: "Solomon Islands defends police deal with China", publisher: "National Indigenous Times (AAP)", date: 2023-07-14, tier: 3}
+- to: AUS
+  layer: action
+  type: agreement
+  summary: "On 20 December 2024 Australia announced a package for the Royal Solomon Islands Police Force (A$190 million over four years per press reports, with a new training centre in Honiara). The PM transcript records an announced step, not a signed agreement, and gives no amount."
+  since: 2024-12-20
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - {url: "https://pmtranscripts.pmc.gov.au/node/42088", title: "Royal Solomon Islands Police Force expansion (PM transcript)", publisher: "Prime Minister of Australia (transcripts)", date: 2024-12-20, tier: 1}
+  - {url: "https://pina.com.fj/2024/12/20/australia-unveils-190-million-security-deal-for-solomon-islands/", title: "Australia unveils $190 million security deal for Solomon Islands", publisher: "PINA", date: 2024-12-20, tier: 3}
+- to: org-pif
+  layer: action
+  type: expulsion
+  summary: "At the 54th Leaders' Meeting in Honiara (September 2025) only the Forum's 18 members attended; Prime Minister Manele had told parliament in August that no dialogue partners would be invited. Recorded as expulsion, as TWN.yaml records the same event; the more exact word is exclusion."
+  since: 2025-09
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - {url: "https://www.csis.org/analysis/pacific-islands-forum-2025-navigating-great-power-rivalry", title: "Pacific Islands Forum 2025: Navigating Great-Power Rivalry", publisher: "CSIS", date: 2025-09, tier: 2}
+  - {url: "https://pina.com.fj/2025/08/15/forum-dialogue-partners-out/", title: "Forum dialogue partners out", publisher: "PINA", date: 2025-08-15, tier: 3}
+  - {url: "https://www.business-standard.com/world-news/taiwan-s-pacific-influence-dwindles-as-china-gains-ground-in-island-nations-125090800161_1.html", title: "Taiwan's Pacific influence dwindles as China gains ground in island nations", publisher: "Business Standard", date: 2025-09-08, tier: 3}
+  - {url: "https://matangitonga.to/2025/09/15/pacific-islands-forum-leaders-declare-ocean-peace", title: "Pacific Islands Forum Leaders declare Ocean of Peace", publisher: "Matangi Tonga", date: 2025-09-15, tier: 3}
+- to: PNG
+  layer: action
+  type: agreement
+  summary: "Updated border frameworks finalised in Honiara in September 2025: an amended 1980 agreement on the administration of special areas and an MoU on combined surveillance of the common maritime border, keeping traditional rights for border communities."
+  since: 2025-09
+  until: null
+  last_verified: 2026-10-12
+  confidence: C
+  sources:
+  - {url: "https://indepthsolomons.com.sb/solomons-and-papua-new-guinea-renew-border-cooperation-with-updated-agreements/", title: "Solomons and Papua New Guinea renew border cooperation with updated agreements", publisher: "In-depth Solomons", date: 2025-09, tier: 3}
+  - {url: "https://pina.com.fj/2025/08/22/png-solomons-pledge-stronger-ties-ahead-of-forum-meeting-png-foreign-minister-tkatchenko/", title: "PNG, Solomons pledge stronger ties ahead of Forum Meeting: PNG Foreign Minister Tkatchenko", publisher: "PINA", date: 2025-08-22, tier: 3}
+- to: USA
+  layer: action
+  type: agreement
+  summary: "Shiprider agreement (Agreement Concerning Counter Illicit Transnational Maritime Activity) signed in Honiara in late July 2026: Solomon officers may board designated US Coast Guard vessels in the EEZ against illegal fishing and trafficking; the opposition leader objects on sovereignty grounds."
+  since: 2026-07
+  until: null
+  last_verified: 2026-10-12
+  confidence: C
+  sources:
+  - {url: "https://pina.com.fj/2026/07/28/u-s-coast-guard-cutter-arrives-ahead-of-historic-solomon-islands-u-s-shiprider-deal/", title: "U.S. Coast Guard cutter arrives ahead of historic Solomon Islands-U.S. shiprider deal", publisher: "PINA", date: 2026-07-28, tier: 3}
+  - {url: "https://islandsbusiness.com/news-break/u-s-solomon-islands-shiprider-agreement-enhances-maritime-security/", title: "U.S.-Solomon Islands shiprider agreement enhances maritime security", publisher: "Islands Business", date: 2026-07-29, tier: 3}

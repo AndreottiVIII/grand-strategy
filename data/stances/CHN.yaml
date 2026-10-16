@@ -1,0 +1,620 @@
+actor: CHN
+stances:
+  # ---------- the United States and the claimed island ----------
+  - toward: USA
+    grade: rival
+    trend: warming
+    bond: grievance
+    since: 2018-07-06
+    last_verified: 2026-10-16
+    confidence: A
+    note: "Rival, the atlas's reference case for the grade (ONTOLOGY: 'the US toward China'), read here from Beijing: competition over technology, trade, Taiwan and the order, no will to destroy the other. Beijing's own words are 'healthy competition kept within bounds' and no 'Thucydides trap' (Xi, Washington, 24 Sep 2026); its structure is a chip embargo it cannot answer in kind, an 'affiliates rule' and a 47% tariff wall answered with rare-earth licences and the market. Warming because three summits in eleven months (Busan 30 Oct 2025, Beijing 14-16 May 2026, Washington 23-25 Sep 2026) each extended the truce, launched a Board of Trade and an AI dialogue, cut tariffs on about USD 30bn of goods and put military-to-military channels back; Brookings reads Xi as preferring 'anemic stability to no stability at all'. Not partner: the truce is a pause on each side's weapons (soybeans excluded, magnets 20% below trend, the arms package to Taiwan 'in abeyance' but not withdrawn), not an alignment. Bond - grievance: the Taiwan Relations Act and arms sales since 1979, the 1999 Belgrade embassy bombing and the 'containment' narrative are the standing wound in Beijing's reading, whatever the mood of the summit."
+    sources:
+      - {url: "https://www.aljazeera.com/news/2026/9/24/trump-xi-summit-four-key-takeaways-from-the-washington-dc-meeting", title: "Trump-Xi summit: four key takeaways from the Washington, DC meeting", publisher: "Al Jazeera", date: 2026-09-24, tier: 3}
+      - {url: "https://www.brookings.edu/articles/what-did-the-trump-xi-summit-actually-accomplish/", title: "What did the Trump-Xi summit actually accomplish?", publisher: "Brookings", date: 2026-09, tier: 2}
+      - {url: "https://www.reuters.com/world/china/china-us-agree-30-billion-tariff-cut-ai-dialogue-during-xi-visit-2026-09-26/", title: "China, US agree $30 billion tariff cut, AI dialogue during Xi visit", publisher: "Reuters", date: 2026-09-26, tier: 3}
+      - {url: "https://www.yahoo.com/news/articles/factbox-did-trump-xi-agree-173832627.html", title: "Factbox: What did Trump, Xi agree to on tariffs, export controls and fentanyl?", publisher: "Reuters (via Yahoo News)", date: 2025-10-30, tier: 3}
+      - {url: "https://www.pbs.org/newshour/world/trump-weighs-taiwan-arms-package-after-summit-aimed-at-steadying-us-china-ties", title: "Trump weighs Taiwan arms package after summit aimed at steadying US-China ties", publisher: "AP via PBS NewsHour", date: 2026-05-15, tier: 3}
+      - {url: "https://www.bloomberg.com/news/articles/2026-07-20/china-is-exporting-20-fewer-magnets-to-us-despite-trade-truce", title: "China is exporting 20% fewer magnets to US despite trade truce", publisher: "Bloomberg", date: 2026-07-20, tier: 3}
+  - toward: TWN
+    grade: claimed_territory
+    trend: stable
+    bond: kin
+    since: 1949-10-01
+    last_verified: 2026-10-16
+    confidence: A
+    note: "Claimed, not controlled: the Anti-Secession Law of 14 Mar 2005 reserves 'non-peaceful means' (Article 8), the Taiwan Affairs Office calls Lai's speeches 'full of lies', and Beijing's declared aim is the end of Taiwan's separateness, which is why Taipei's own card grades the pair asymmetrically (rival from its side). The squeeze is the method: Strait Thunder (Apr 2025) and Justice Mission (29-31 Dec 2025, the closest live fire so far, a Type 075 for the first time), the 'diehard' list (14 names and 12 accomplices by 7 Jan 2026, death penalty in absentia under the June 2024 guidelines), cable incidents, and the KMT received by Xi (10 Apr 2026) while the DPP government is refused. Stable, not cooling: air sorties in 2026 are about half of 2025 and no named exercise followed the two Trump summits, because the American channel is now the main instrument - Xi asked Trump in Washington to 'oppose' independence and the second arms package sits 'in abeyance'. Bond - kin: 'one family', the civil war, language; a feud in the atlas's terms."
+    sources:
+      - {url: "https://news.bbc.co.uk/chinese/trad/hi/newsid_4340000/newsid_4346200/4346289.stm", title: "China's Tenth NPC passes the Anti-Secession Law", title_original: "中國十屆人大三次會議通過反分裂法", lang: zh, publisher: "BBC Chinese", date: 2005-03-14, tier: 3}
+      - {url: "https://news.usni.org/2025/12/31/china-wraps-justice-mission-taiwan-blockade-drills", title: "China Wraps 'Justice Mission' Taiwan Blockade Drills", publisher: "USNI News", date: 2025-12-31, tier: 3}
+      - {url: "https://tsm.schar.gmu.edu/?p=869", title: "Taiwan Security Monitor: Beijing adds names to the 'Taiwan independence diehard' list (7 Jan 2026)", publisher: "Taiwan Security Monitor (George Mason University)", date: 2026-01, tier: 2}
+      - {url: "https://www.thejakartapost.com/world/2026/01/01/taiwan-vows-to-defend-sovereignty-after-chinas-military-drill.html", title: "Taiwan vows to defend sovereignty after China's military drill (TAO reaction to Lai's address)", publisher: "The Jakarta Post (AFP)", date: 2026-01-01, tier: 3}
+      - {url: "https://www.hppr.org/npr-news/2026-04-10/chinas-xi-meets-taiwan-opposition-leader-ahead-of-key-summit-with-trump", title: "China's Xi meets Taiwan opposition leader ahead of key summit with Trump", publisher: "NPR (AP)", date: 2026-04-10, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2026/9/24/trump-xi-summit-four-key-takeaways-from-the-washington-dc-meeting", title: "Trump-Xi summit: four key takeaways (Xi urges Trump to oppose Taiwanese independence)", publisher: "Al Jazeera", date: 2026-09-24, tier: 3}
+      - {url: "https://www.mnd.gov.tw/en/news/plaact/87692", title: "PLA activities in the waters and airspace around Taiwan", publisher: "Ministry of National Defense, Republic of China", date: 2026-09, tier: 1}
+  # ---------- East Asia ----------
+  - toward: JPN
+    grade: rival
+    trend: cooling
+    bond: grievance
+    since: 2025-11-07
+    last_verified: 2026-10-16
+    confidence: A
+    note: "Rival and the one neighbour on which Beijing has unlearned the lesson of 2025: Takaichi's 'survival-threatening situation' sentence (7 Nov 2025) was answered with a travel advisory (14 Nov), the seafood ban re-imposed (19 Nov), a dual-use export ban on military end-users (6 Jan 2026) with 20 entities listed (24 Feb), a joint statement with Moscow against Japanese 'militarism' (Dec 2025), a refusal to reaffirm the 1972 communique and the demand, repeated to Iwaya on 28 Sep 2026, that the remarks be 'corrected'. No Xi-Takaichi meeting is fixed for APEC Shenzhen. Tokyo's white paper calls China the 'greatest strategic challenge'; Beijing calls that 'hyping up'. Rival, not adversary: Beijing wants a Japan that stays out of a Taiwan contingency, not the end of the Japanese state, and keeps selling (23.6% of Japan's imports). Cooling: eleven months without the retraction or the thaw. Bond - grievance: 1937-45 is Beijing's standing narrative (the 2025 parade was the '80th anniversary of victory') and the Diaoyu/Senkaku claim its daily practice (357 days of coast-guard presence in 2025)."
+    sources:
+      - {url: "https://www.pbs.org/newshour/world/japan-and-china-trade-barbs-after-pm-takaichi-says-an-attack-on-taiwan-would-be-an-existential-threat", title: "Japan and China trade barbs after PM Takaichi says an attack on Taiwan would be an existential threat", publisher: "PBS NewsHour (AP)", date: 2025-11-11, tier: 3}
+      - {url: "https://www.caixinglobal.com/2026-01-07/china-bans-exports-of-dual-use-items-to-japan-following-taiwan-remarks-102401228.html", title: "China bans exports of dual-use items to Japan following Taiwan remarks", publisher: "Caixin", date: 2026-01-07, tier: 3}
+      - {url: "https://www.nippon.com/en/news/yjj2026092900133/", title: "China urges Japan's Takaichi to correct Taiwan remarks (Wang Yi to Iwaya, 28 Sep 2026)", publisher: "Jiji Press via nippon.com", date: 2026-09-29, tier: 3}
+      - {url: "https://www.scmp.com/news/china/diplomacy/article/3335058/wwii-allies-china-russia-take-united-stand-against-japanese-militarism", title: "China, Russia united against 'Japanese militarism' as Wang Yi, Shoigu meet", publisher: "South China Morning Post", date: 2025-12, tier: 3}
+      - {url: "https://idsa.in/?p=99444", title: "Assessing Japan's 2026 Defence White Paper", publisher: "IDSA (India)", date: 2026-08, tier: 2}
+      - {url: "https://www.al-monitor.com/originals/2026/01/chinas-coast-guard-organized-134-patrols-around-senkaku-islands-past-five-years", title: "China's coast guard organized 134 patrols around Senkaku Islands in past five years", publisher: "Al-Monitor", date: 2026-01, tier: 3}
+  - toward: PRK
+    grade: ally
+    trend: warming
+    bond: affinity
+    since: 1961-07-11
+    last_verified: 2026-10-16
+    confidence: A
+    note: "China's only treaty ally (Treaty of Friendship, Cooperation and Mutual Assistance, 11 Jul 1961, whose 65th anniversary Xi invoked in Pyongyang on 8-9 Jun 2026) and 98% of the North's official trade. Warming from Beijing's side because the 2022-24 drift to Moscow has been answered: Kim at the Beijing parade (3 Sep 2025, his sixth summit with Xi the next day), trade up 25% to USD 2.7bn in 2025, Xi's first visit in seven years read by analysts as Beijing reasserting itself as 'the principal actor' in the North against Moscow's wartime weight. Beijing wants a client that is dependent on it, not on Russia, and a peninsula that stays frozen; it does not want the nuclear programme, and says so less and less. Bond - affinity: party ties and the Korean War, not kinship."
+    sources:
+      - {url: "https://www.caixinglobal.com/2026-06-08/xi-kim-pledge-closer-china-north-korea-ties-during-pyongyang-meeting-102452248.html", title: "Xi, Kim pledge closer China-North Korea ties during Pyongyang meeting", publisher: "Caixin Global", date: 2026-06-08, tier: 3}
+      - {url: "https://www.aljazeera.com/amp/news/2026/6/8/chinas-xi-jinping-arrives-in-north-korea-on-rare-state-visit", title: "China's Xi Jinping arrives in North Korea on rare state visit", publisher: "Al Jazeera", date: 2026-06-08, tier: 3}
+      - {url: "https://keia.org/analysis/arms-sales-to-russia-and-trade-with-china-drive-north-koreas-economic-recovery/", title: "Arms sales to Russia and trade with China drive North Korea's economic recovery (98% of official trade)", publisher: "Korea Economic Institute of America", date: 2026-09-02, tier: 2}
+      - {url: "https://www.businessday.co.za/world/asia/2026-01-20-chinas-2025-trade-with-north-korea-rebounds-to-pre-covid-levels/", title: "China's 2025 trade with North Korea rebounds to pre-Covid levels", publisher: "Reuters (via BusinessDay)", date: 2026-01-20, tier: 3}
+  - toward: KOR
+    grade: partner
+    trend: warming
+    bond: none
+    since: 2025-11
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner and a seam to work: Seoul is China's market for chips (exports to China up 76% in Jan-Aug 2026) and the ally of Washington that Beijing invites to 'genuine strategic autonomy' (Wang Yi in Seoul, 19-20 Aug 2026). Warming since Lee took office: Xi at Gyeongju APEC (Nov 2025), Lee in Beijing (4-7 Jan 2026, 15 agreements), one Yellow Sea structure moved from January 2026, sea-boundary talks to resume, a Shenzhen APEC summit under consideration. Beijing keeps its levers (the unacknowledged hallyu ban, the sanctions on Hanwha Ocean's US units, two structures still in place) and gives the thaw on its own schedule. Seoul's card grades the pair reluctant_partner with a grievance; from Beijing it is interest without a wound, hence bond none."
+    sources:
+      - {url: "https://www.nbcnews.com/world/asia/south-koreas-lee-beijing-says-seeks-full-restoration-china-ties-2026-rcna252498", title: "South Korea's Lee, in Beijing, says he seeks full restoration of China ties in 2026", publisher: "NBC News (Reuters/AP)", date: 2026-01-05, tier: 3}
+      - {url: "https://chinaglobalsouth.com/2026/08/19/china-south-korea-relations-wang-yi-seoul/", title: "China's Wang Yi in South Korea for talks amid Trump push to revive North Korea diplomacy", publisher: "China-Global South Project", date: 2026-08-19, tier: 3}
+      - {url: "https://amti.csis.org/chinese-platforms-in-the-yellow-seas-south-korea-china-pmz/", title: "Chinese platforms in the Yellow Sea's South Korea-China PMZ", publisher: "CSIS Asia Maritime Transparency Initiative", date: 2025, tier: 2}
+      - {url: "https://www.nst.com.my/amp/business/corporate/2026/09/1526828/south-korea-exports-surpass-full-year-record-hit-us7094bil", title: "South Korea exports surpass full-year record (exports to China up 76% in Jan-Aug 2026)", publisher: "New Straits Times (Reuters)", date: 2026-09, tier: 3}
+  - toward: MNG
+    grade: partner
+    trend: stable
+    bond: none
+    since: 2025-02-14
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner and a corridor: China takes about 91% of Mongolia's exports (90 Mt of coal in 2025), the Ganqimaodu rail link ratified on 14 Feb 2025 is meant to lift that to 165 Mt, and the Soyuz Vostok leg of Power of Siberia 2 would cross Mongolian territory. Pure interest from Beijing's side: a supplier and a transit state it does not need to court. Ulaanbaatar's card records a grievance (the 2020 Inner Mongolia schooling protests); Beijing holds none."
+    sources:
+      - {url: "https://www.mysteel.net/news/5109865-mongolias-2025-coal-exports-top-annual-target-set-new-record-high", title: "Mongolia's 2025 coal exports top annual target, set new record high", publisher: "Mysteel (citing Customs General Administration)", date: 2026-01, tier: 3}
+      - {url: "https://en.sxcoal.com/news/detail/2094955611617955842", title: "Ganqimaodu-Gashuunsukhait cross-border railway enters track-laying stage", publisher: "SXcoal", date: 2025-09, tier: 3}
+      - {url: "https://www.rferl.org/amp/putin-xi-mongolia-power-siberia-china-gas-energy/33519697.html", title: "China, Russia sign deal to build new Siberian gas pipeline but pricing details unclear (route through Mongolia)", publisher: "RFE/RL", date: 2025-09-02, tier: 3}
+  # ---------- South and Central Asia ----------
+  - toward: IND
+    grade: rival
+    trend: warming
+    bond: grievance
+    since: 1962
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Rival by structure, warming by choice. Beijing's own formula is 'partners, not rivals' (Tianjin, 31 Aug 2025) and the grade follows the structure, not the formula: an undemarcated 3,500 km boundary where it holds Aksai Chin and claims Arunachal, Pakistan as its arms client with on-site technical support during Operation Sindoor (May 2025), the Medog dam upstream of the Brahmaputra, rare-earth and fertiliser curbs used on Delhi in 2025. Warming is the lesson learned: the Oct 2024 patrolling deal, Kazan, Tianjin, direct flights resumed (Oct 2025), and Xi's first visit to India since 2019 for the BRICS summit (12 Sep 2026), 'a reset, not a breakthrough'. Beijing wants an India that hedges between Washington and Beijing rather than joins the Quad in earnest, and it lowers its weight on the scale to get it. Not adversary: neither seeks the other's end. Bond - grievance: 1962 and the Dalai Lama's asylum since 1959 on Beijing's side, Galwan on Delhi's."
+    sources:
+      - {url: "https://subsites.chinadaily.com.cn/npc/2025-09/01/c_1120998.htm", title: "Xi, Modi agree China, India are partners instead of rivals", publisher: "China Daily (state media, official statement)", date: 2025-09-01, tier: 1}
+      - {url: "https://www.newstribune.com/news/2026/sep/13/xi-resets-ties-with-modi-on-first-visit-to-india/", title: "Xi resets ties with Modi on first visit to India", publisher: "News Tribune", date: 2026-09-13, tier: 3}
+      - {url: "https://www.deccanherald.com/amp/story/india%2Fmodi-xi-endorse-patrolling-agreement-instruct-resumption-of-special-representatives-dialogue-3245309", title: "Modi, Xi endorse patrolling agreement, instruct resumption of Special Representatives dialogue", publisher: "Deccan Herald", date: 2024-10-23, tier: 3}
+      - {url: "https://www.deccanherald.com/india/after-confirming-support-to-pakistan-during-op-sindoor-beijing-now-vows-to-expand-security-cooperation-with-islamabad-4016031", title: "After confirming support to Pakistan during Op Sindoor, Beijing now vows to expand security cooperation with Islamabad", publisher: "Deccan Herald", date: 2026, tier: 3}
+      - {url: "https://www.tribuneindia.com/news/india/china-to-resume-fertiliser-rare-earth-supplies-to-india", title: "China to resume fertiliser, rare earth supplies to India", publisher: "The Tribune", date: 2025-08, tier: 3}
+  - toward: PAK
+    grade: ally
+    trend: stable
+    bond: affinity
+    since: 1951-05-21
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Stable de facto alignment without a defence treaty: 'ironclad friendship' (Wang Yi, May 2025; 75 years of ties in 2026), 61% of Chinese arms exports and about 80% of Pakistan's imports, the J-10C and PL-15 flown against India with Chinese technicians on site (confirmed by Beijing after it first said it was 'not familiar' with the use of its jets), 23% of Pakistan's external debt, and the CPEC 2.0 joint statement of 26 May 2026 (Karakoram Highway, Gwadar). From Beijing the ally is also a cost: about 20 Chinese nationals killed in 14 attacks since 2021, power producers owed Rs560bn, a security clause written into every visit. Ally because Beijing is Islamabad's supplier and shield and uses it as the counterweight to India; the tie survives the Tianjin thaw with Delhi, which is the measure of its priority. Bond - affinity: shared hostility to India, 'iron brothers', not kinship."
+    sources:
+      - {url: "https://www.cfr.org/article/china-indo-pacific-may-2025", title: "China in the Indo-Pacific: May 2025 ('ironclad friendship')", publisher: "Council on Foreign Relations", date: 2025-05, tier: 2}
+      - {url: "https://deccanchronicle.com/world/neighbours/pakistan-tops-chinese-arms-imports-takes-61-report-1942526", title: "Pakistan tops Chinese arms imports, takes 61%: report (SIPRI data)", publisher: "Deccan Chronicle", date: 2026-03, tier: 3}
+      - {url: "https://worldview.ranenetwork.com/content/situational-report/2026-05-26/china-pakistan-governments-seek-to-upgrade-cpec-gwadar-port", title: "China, Pakistan governments seek to upgrade CPEC, Gwadar port", publisher: "Rane Worldview", date: 2026-05-26, tier: 3}
+      - {url: "https://www.arabnews.pk/node/2644469", title: "Pakistan vows 'highest level of security' for Chinese nationals as both nations mark 75 years of ties", publisher: "Arab News Pakistan", date: 2026-05, tier: 3}
+      - {url: "https://www.deccanherald.com/india/after-confirming-support-to-pakistan-during-op-sindoor-beijing-now-vows-to-expand-security-cooperation-with-islamabad-4016031", title: "After confirming support to Pakistan during Op Sindoor, Beijing now vows to expand security cooperation with Islamabad", publisher: "Deccan Herald", date: 2026, tier: 3}
+  - toward: BGD
+    grade: partner
+    trend: warming
+    bond: none
+    since: 2025-03-28
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner and an opening on India's flank: Yunus received by Xi (28 Mar 2025) with the Teesta project and Mongla port on offer, Rahman in Beijing (June 2026, 13 agreements), USD 4.34bn of financing sought, 100% duty-free access and 20 J-10CE fighters under negotiation. Beijing takes what Dhaka offers - a river project near the Siliguri corridor, a port - and makes no commitment of defence. Bond none: interest."
+    sources:
+      - {url: "https://asiatimes.com/2026/06/everything-bangladeshs-rahman-hopes-to-get-from-china/", title: "Everything Bangladesh's Rahman hopes to get from China", publisher: "Asia Times", date: 2026-06-20, tier: 3}
+      - {url: "https://www.deccanherald.com/amp/story/world%2Fyunus-invites-china-to-take-part-in-river-conservation-project-close-to-indias-chickens-neck-corridor-3468159", title: "Yunus invites China to take part in river conservation project close to India's Chicken's Neck corridor", publisher: "Deccan Herald", date: 2025-03, tier: 3}
+  - toward: AFG
+    grade: partner
+    trend: stable
+    bond: none
+    since: 2021-08-15
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner without recognition: Beijing deals with the Taliban as the government in fact (Mes Aynak restarted in July 2024, the China-Afghanistan-Pakistan trilateral of 21 May 2025 and the Kabul round of August 2025 extending CPEC), and in 2026 made itself the mediator between Kabul and Islamabad (Wang Yi-Muttaqi call of 13 Mar, Urumqi talks in April). The price it asks is the ETIM and the Wakhan frontier, where five Chinese workers were killed in November 2025. Bond none: security and copper."
+    sources:
+      - {url: "https://www.mfa.gov.cn//mfa_eng/wjbzhd/202505/t20250521_11629994.html", title: "Foreign Ministers of China, Afghanistan and Pakistan - informal trilateral meeting (21 May 2025)", publisher: "Ministry of Foreign Affairs of China (official statement)", date: 2025-05-21, tier: 1}
+      - {url: "https://www.aljazeera.com/news/2026/4/2/pakistan-afghanistan-hold-talks-in-china-to-end-months-of-conflict", title: "Pakistan, Afghanistan hold talks in China to end months of conflict", publisher: "Al Jazeera", date: 2026-04-02, tier: 3}
+      - {url: "https://www.rferl.org/amp/china-afghanistan-mes-aynak-copper-mining/33050447.html", title: "China breaks ground on massive Afghan copper mine after 16 years of delays", publisher: "RFE/RL", date: 2024-07, tier: 3}
+  - toward: KAZ
+    grade: partner
+    trend: warming
+    bond: none
+    since: 2019
+    last_verified: 2026-10-16
+    confidence: A
+    note: "'Permanent comprehensive strategic partnership' (2019) under the treaty of permanent good-neighbourliness Xi signed with the five Central Asian presidents in Astana (17 Jun 2025): a record USD 49bn of trade in 2025, more than USD 30bn of Chinese investment, the largest BRI investment destination of 2025 (USD 25.8bn), Tokayev in Tianjin and Shanghai (Jul 2026). Partnership and not alliance: no defence commitment, Astana inside the CSTO, Rosatom not CNNC for the nuclear plant. Beijing's interest is the corridor and the oil; its restraint is the price of a neighbour that fears it. Bond none."
+    sources:
+      - {url: "https://www.mfa.gov.cn/eng/xw/zyxw/202607/t20260716_11984340.html", title: "Xi Jinping meets Tokayev in Shanghai", publisher: "Ministry of Foreign Affairs of China (official statement)", date: 2026-07-16, tier: 1}
+      - {url: "https://www.gov.kz/memleket/entities/mfa/press/news/details/1257443?lang=en", title: "Kazakhstan and China continue to strengthen their permanent comprehensive strategic partnership", publisher: "Ministry of Foreign Affairs of Kazakhstan", date: 2025, tier: 1}
+      - {url: "https://www.intellinews.com/xi-signs-treaty-to-elevate-china-s-ties-with-central-asia-at-astana-summit-386537/", title: "Xi signs treaty to elevate China's ties with Central Asia at Astana summit", publisher: "bne IntelliNews", date: 2025-06-17, tier: 3}
+      - {url: "https://greenfdc.org/china-belt-and-road-initiative-bri-investment-report-2025/", title: "China Belt and Road Initiative (BRI) Investment Report 2025 (Kazakhstan the top investment recipient, USD 25.8bn)", publisher: "Green Finance & Development Center, Fudan University", date: 2026-01-18, tier: 2}
+  - toward: UZB
+    grade: partner
+    trend: warming
+    bond: none
+    since: 2023
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner: first trading partner since 2023 (USD 7.7-8.9bn in H1 2026 depending on the side counting), the China-Kyrgyzstan-Uzbekistan railway under construction since the end of 2024 (17% built by Aug 2026; Xi urged quality on 31 Aug), the 2025 Astana treaty. Beijing is building the second land route to the west that does not cross Russia; no security commitment and none sought. Bond none."
+    sources:
+      - {url: "https://www.kun.uz/en/news/2026/07/13/china-kyrgyzstan-uzbekistan-railway-project-enters-active-construction-phase-a7f659", title: "China-Kyrgyzstan-Uzbekistan railway project enters active construction phase", publisher: "Kun.uz", date: 2026-07-13, tier: 3}
+      - {url: "https://www.kas.de/en/web/auslandsinformationen/artikel/detail/-/content/zentralasien-zwischen-russland-china-und-dem-westen", title: "Central Asia between Russia, China and the West", publisher: "Konrad-Adenauer-Stiftung", date: 2025, tier: 2}
+  - toward: TKM
+    grade: partner
+    trend: stable
+    bond: none
+    since: 2009-12
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner by pipeline: more than three-quarters of Turkmen gas exports go to China through the Central Asia-China line, and the 2026 output plan of about 76 bcm is built around that market. Beijing is the buyer that sets the terms; Ashgabat's neutrality keeps the tie at commerce. Bond none."
+    sources:
+      - {url: "https://osw.waw.pl/en/publikacja/31766/pdf", title: "Centre for Eastern Studies analysis on Turkmen gas exports to China", publisher: "OSW (Centre for Eastern Studies)", date: 2023, tier: 2}
+      - {url: "https://pgjonline.com/news/2026/april/turkmenistan-targets-76-bcm-gas-output-in-2026-as-exports-to-china-continue", title: "Turkmenistan targets 76 bcm gas output in 2026 as exports to China continue", publisher: "PGJ Online", date: 2026-04, tier: 3}
+  # ---------- Southeast Asia and the Pacific ----------
+  - toward: PHL
+    grade: rival
+    trend: stable
+    bond: grievance
+    since: 2012-04
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Rival and the second neighbour where the reflex rules: Beijing calls the 2016 award null, holds Scarborough since 2012 and declared a 'national nature reserve' there (State Council, 10 Sep 2025), blocks the Sierra Madre at Second Thomas (a baton on 20 Jul 2026, water cannon at Scarborough on 23-24 Jul, 12 coast-guard and 3 militia vessels), reads the 2024 provisional arrangement as notice-and-inspection, and sees in Manila the ally that brought US forces and missiles back to the archipelago. Rival, not adversary: coercion short of war for control of features, not the end of the Philippine state; the channel stays open (Wang Yi-Lazaro, 22 Jul 2026, the first ministerial bilateral in two years) and China supplies 28.6% of Philippine imports. Stable: incidents continue at the same pitch. Bond - grievance: the award of 2016 and the fourteen states that reaffirmed it in July 2026, which Beijing reads as a coalition against it."
+    sources:
+      - {url: "https://www.aljazeera.com/amp/news/2025/9/13/us-condemns-beijings-south-china-sea-nature-reserve-plan", title: "US condemns Beijing's South China Sea nature reserve plan", publisher: "Al Jazeera", date: 2025-09-13, tier: 3}
+      - {url: "https://www.aljazeera.com/amp/news/2026/7/24/philippines-accuses-china-of-using-water-cannon-on-vessels-for-second-day", title: "Philippines accuses China of using water cannon on vessels for second day", publisher: "Al Jazeera", date: 2026-07-24, tier: 3}
+      - {url: "https://amti.csis.org/divergence-and-tacit-understanding-in-the-china-philippines-provisional-arrangement-at-second-thomas-shoal/", title: "Divergence and tacit understanding in the China-Philippines provisional arrangement at Second Thomas Shoal", publisher: "CSIS (Asia Maritime Transparency Initiative)", date: 2026-03-23, tier: 2}
+      - {url: "https://mb.com.ph/2026/07/22/philippines-can-protest-china-while-keeping-dialogue-openlazaro", title: "Philippines can protest China while keeping dialogue open - Lazaro", publisher: "Manila Bulletin", date: 2026-07-22, tier: 3}
+      - {url: "https://pca-cpa.org/en/cases/7/", title: "The South China Sea Arbitration (Philippines v. China), Case 2013-19", publisher: "Permanent Court of Arbitration", date: 2016-07-12, tier: 1}
+  - toward: VNM
+    grade: partner
+    trend: stable
+    bond: affinity
+    since: 2023-12-13
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner on the party channel, with the islands kept out of the readouts: the 'community with a shared future' of Dec 2023, Xi in Hanoi (Apr 2025, rail agreements), To Lam's state visit (14-17 Apr 2026: a Global Security Initiative memorandum, a public-security hotline, railways, the 2026-30 party plan, 'the most important diplomatic activity of 2026' for both). Beijing holds the Paracels since 1974, calls them 'inherent territory', reclaimed Antelope Reef and built on Yagong in 2026, and answers Hanoi's protests that it improves its own islands; it supplies 40% of Vietnam's imports. Partner from Beijing's side because Hanoi prioritises the relationship and buys no alignment against it; Hanoi's card records a grievance (1974, 1979, 1988) where Beijing records party affinity - the asymmetry is the pair. Stable."
+    sources:
+      - {url: "https://en.baochinhphu.vn/major-takeaways-from-general-secretary-president-to-lams-state-visit-to-china-111260417202555.htm", title: "Major takeaways from General Secretary, President To Lam's state visit to China", publisher: "Government of Viet Nam (official portal)", date: 2026-04-17, tier: 1}
+      - {url: "https://www.caixinglobal.com/2026-04-15/xi-welcomes-vietnams-to-lam-pushing-broad-pact-on-security-and-tech-102434315.html", title: "Xi welcomes Vietnam's To Lam, pushing broad pact on security and tech", publisher: "Caixin Global", date: 2026-04-15, tier: 3}
+      - {url: "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/08/29/vietnam-demands-end-to-activity-in-paracels-after-report-of-chinese-construction", title: "Vietnam demands end to activity in Paracels after report of Chinese construction", publisher: "The Star (Reuters/AFP)", date: 2026-08-29, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2024/8/19/chinas-xi-holds-talks-with-vietnams-new-leader-in-beijing", title: "China's Xi holds talks with Vietnam's new leader in Beijing", publisher: "Al Jazeera", date: 2024-08-19, tier: 3}
+  - toward: IDN
+    grade: partner
+    trend: warming
+    bond: none
+    since: 2024-11-09
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner and the prize of the region: first trading partner for 13 years (USD 167.4bn in 2025), builder of the smelters and the high-speed rail (debt restructured over 80 years in Aug 2026), seller of the J-10 (Oct 2025), and a Prabowo who signed the 'overlapping claims' formula on 9 Nov 2024 that Jakarta's own ministry then disowned. Wang Yi and Dong Jun in Jakarta (21 Aug 2026) speak of a 'community with a shared future'. Beijing takes the hedger's purchases and ignores the Natuna line; the nickel quota and the Chinese chamber's open letter (May 2026) are the friction it absorbs. Warming on the visits and the arms. Bond none."
+    sources:
+      - {url: "https://www.mfa.gov.cn/eng/wjbzhd/202608/t20260824_12009394.html", title: "Foreign Ministry readout: Wang Yi and Dong Jun call on President Prabowo", publisher: "Ministry of Foreign Affairs of China (official statement)", date: 2026-08-24, tier: 1}
+      - {url: "https://chinaglobalsouth.com/2024/11/12/indonesias-maritime-development-deal-with-china-raises-questions/", title: "Indonesia's maritime development deal with China raises questions", publisher: "China Global South Project", date: 2024-11-12, tier: 3}
+      - {url: "https://theaviationist.com/2025/10/17/indonesia-j-10c-fighter-jet/", title: "Indonesia confirms plan to buy Chinese J-10C fighters", publisher: "The Aviationist", date: 2025-10-17, tier: 3}
+      - {url: "https://chinaglobalsouth.com/2026/01/08/china-indonesia-trade-surplus-2025/", title: "China tops Indonesia trade in 2025", publisher: "China Global South Project", date: 2026-01-08, tier: 3}
+  - toward: MYS
+    grade: partner
+    trend: stable
+    bond: none
+    since: 2025-04-17
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner and the ASEAN chair Beijing wanted: Xi's state visit of April 2025 produced a joint statement on handling the South China Sea through dialogue, Malaysian support for One China and a shared line on Gaza; mutual visa-free entry since Dec 2023; the five-year trade pact renewed with Li Qiang (Jun 2024). Kuala Lumpur disagrees with the nine-dash line at Luconia and the Sarawak gas fields and says so quietly, and Anwar calls 'China-phobia' a Western ailment. 75% of Malaysians view China favourably (Pew, Jul 2026). Beijing's reading: a neighbour that will not join a coalition against it. Bond none."
+    sources:
+      - {url: "https://www.reuters.com/world/asia-pacific/china-malaysia-say-important-maintain-peace-stability-south-china-sea-2025-04-17/", title: "China and Malaysia say important to maintain peace and stability in South China Sea", publisher: "Reuters", date: 2025-04-17, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2024/6/19/china-and-malaysia-deepen-ties-with-renewed-economic-pact", title: "China and Malaysia deepen ties with renewed economic pact", publisher: "Al Jazeera", date: 2024-06-19, tier: 3}
+      - {url: "https://www.pewresearch.org/global/2026/07/15/views-of-china-and-xi-are-improving-globally/", title: "Views of China and Xi are improving globally (Malaysia 75% favourable)", publisher: "Pew Research Center", date: 2026-07-15, tier: 2}
+      - {url: "https://www.businesstoday.com.my/2026/04/07/anwar-calls-for-fierce-independence-in-resolving-south-china-sea-disputes/", title: "Anwar calls for 'fierce independence' in resolving South China Sea disputes", publisher: "BusinessToday (Malaysia)", date: 2026-04-07, tier: 3}
+  - toward: MMR
+    grade: partner
+    trend: stable
+    bond: none
+    since: 2025-01-20
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner with whoever holds the pipeline: Beijing hedges between the junta and the ethnic armies, brokered the Kunming ceasefire of January 2025, pressed the MNDAA out of Lashio (Mar 2025), pledged 1bn yuan after the March 2025 earthquake, and extracted the scam-centre crackdowns and extraditions it wanted (Jan 2024, Feb 2025). The junta pays in loyalty - it backed Beijing against Takaichi in Nov 2025 - and the Kyaukphyu corridor to Kunming is the interest. Partner, not ally: no treaty, no commitment to the regime's survival, and a Beijing that has blocked Security Council statements on the coup while arresting the junta's own allies. Bond none."
+    sources:
+      - {url: "https://www.reuters.com/world/asia-pacific/myanmar-military-minority-armed-group-agree-ceasefire-china-says-2025-01-20/", title: "Myanmar military, minority armed group agree ceasefire, China says", publisher: "Reuters", date: 2025-01-20, tier: 3}
+      - {url: "https://www.reuters.com/business/environment/china-pledges-137-million-myanmar-earthquake-relief-2025-04-11/", title: "China pledges $137 million in Myanmar earthquake relief", publisher: "Reuters", date: 2025-04-11, tier: 3}
+      - {url: "https://www.irrawaddy.com/news/myanmar-china-watch/myanmar-junta-backs-china-in-row-with-japan-over-taiwan-remarks.html", title: "Myanmar junta backs China in row with Japan over Taiwan remarks", publisher: "The Irrawaddy", date: 2025-11-24, tier: 3}
+      - {url: "https://www.usip.org/publications/2022/07/china-bets-strategic-projects-regional-stability-myanmar-coup-regime", title: "China bets on strategic projects, regional stability with Myanmar coup regime", publisher: "United States Institute of Peace (Tower)", date: 2022-07-14, tier: 2}
+  - toward: KHM
+    grade: ally
+    trend: stable
+    bond: affinity
+    since: 2022-06-08
+    last_verified: 2026-10-16
+    confidence: C
+    note: "Stable de facto alignment without a defence treaty: Ream naval base rebuilt with Chinese money and opened on 5 Apr 2025 with a new pier and dry dock and a Central Military Commission delegation calling it a symbol of the 'iron-clad friendship'; the first pier call went to a Japanese ship, as the Cambodian constitution bars foreign bases and Phnom Penh insists the base is open to all under 20,000 tonnes. Ally because Cambodia is the client that has shielded Beijing inside ASEAN since 2012 and hosts the access Washington objects to; no source uses the word 'ally' and the base's terms are unpublished, hence C. Bond - affinity: party-to-party and dynastic ties, not kinship."
+    sources:
+      - {url: "https://www.rfa.org/english/cambodia/2025/04/07/cambodia-china-ream-naval-base/", title: "Cambodia reopens naval base after Chinese upgrade", publisher: "Radio Free Asia", date: 2025-04-07, tier: 3}
+      - {url: "https://sv7.thediplomat.com/2025/04/cambodia-china-open-new-facilities-at-ream-naval-base", title: "Cambodia, China open new facilities at Ream naval base", publisher: "The Diplomat", date: 2025-04, tier: 3}
+      - {url: "https://chinaglobalsouth.com/2025/04/05/cambodia-opens-china-backed-ream-naval-base-to-all-amid-western-scrutiny/", title: "Cambodia opens China-backed Ream naval base to all, amid Western scrutiny", publisher: "China Global South Project", date: 2025-04-05, tier: 3}
+  - toward: AUS
+    grade: partner
+    trend: warming
+    bond: none
+    since: 2025-07-15
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner since the trade war was ended by Beijing's choice: over A$20bn of restrictions (wine, barley, lobster, beef) lifted, Albanese's six-day visit (12-18 Jul 2025, the fourth Xi meeting) filled with farm and coal access and no public word on the Darwin port, Xi 'ready to take the relationship further'. The frictions are Australia's: the Darwin lease it wants back, the live-fire exercise announced without notice, AUKUS. Beijing's reading is that the largest trading partner of a US ally can be kept out of the coalition by the market alone; it is the clearest case of the lesson learned. Warming. Bond none."
+    sources:
+      - {url: "https://uts.edu.au/acri/news/five-things-know-about-albaneses-trip-beijing", title: "Five things to know about Albanese's trip to Beijing", publisher: "Australia-China Relations Institute, UTS", date: 2025-07, tier: 2}
+      - {url: "https://asiatimes.com/2025/07/xi-ready-to-push-china-australia-relationship-further/", title: "Xi ready to push China-Australia relationship further", publisher: "Asia Times", date: 2025-07, tier: 3}
+      - {url: "https://www.scmp.com/economy/china-economy/article/3318508/how-deals-are-trumping-port-dispute-australian-pms-china-visit", title: "How deals are trumping port dispute on Australian PM Albanese's China visit", publisher: "South China Morning Post", date: 2025-07, tier: 3}
+  - toward: SLB
+    grade: partner
+    trend: cooling
+    bond: none
+    since: 2022-04-19
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner on a security pact that is now under review: the April 2022 agreement allowing Chinese police and military personnel on request, a Ministry of Public Security pilot of village surveillance on the 'Fengqiao' model (Sep 2025), suspended in May 2026 after local backlash; Matthew Wale, a critic of the relationship, elected prime minister on 15 May 2026, announced a review of the pact and a comprehensive treaty with Australia (Jun 2026). Cooling because the one Pacific foothold Beijing had in security terms is being renegotiated against it. Bond none."
+    sources:
+      - {url: "https://apnews.com/article/china-new-zealand-australia-beijing-foreign-policy-c57360f8fdf94e9990285ef93e84fdb2", title: "China, Solomon Islands sign draft security pact (reaction of Morrison)", publisher: "Associated Press", date: 2022-03-31, tier: 3}
+      - {url: "https://www.reuters.com/world/china/china-pilots-village-surveillance-solomon-islands-seeks-stability-2025-09-11/", title: "China pilots village surveillance in Solomon Islands as it seeks stability", publisher: "Reuters", date: 2025-09-11, tier: 3}
+      - {url: "https://www.nytimes.com/2026/05/27/world/asia/china-solomons-pacific-security-threats.html", title: "China's police pilot in the Solomon Islands suspended after backlash", publisher: "The New York Times", date: 2026-05-27, tier: 3}
+      - {url: "https://www.reuters.com/world/china/australia-solomon-islands-agree-negotiate-comprehensive-treaty-2026-06-03/", title: "Australia, Solomon Islands agree to negotiate comprehensive treaty", publisher: "Reuters", date: 2026-06-03, tier: 3}
+  # ---------- Russia and its orbit ----------
+  - toward: RUS
+    grade: partner
+    trend: stable
+    bond: affinity
+    since: 2022-02-04
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner, not ally, and the senior side now. The 'no limits' statement of 4 Feb 2022 binds neither to the other's defence; Beijing recognises none of the annexations, abstained again at the General Assembly on 24 Feb 2026, sells no declared weapons and lets the Power of Siberia 2 price wait (memorandum of 2 Sep 2025, price still unsettled). What it takes is the content: USD 234bn of trade in 2025 (57% of Russian imports, the yuan as settlement currency, Chinese cars 57% of Russia's market), the oil at a discount, Putin beside Xi and Kim at the parade of 3 Sep 2025 and in Beijing again on 16 May 2026 days after Trump. Wang Yi's sentence to Kallas - China cannot afford a Russian defeat - is the strategic floor: Russia is the rear that keeps the United States on two fronts, and it must not collapse into a Western settlement. Stable: the need is structural on both sides and the asymmetry is Carnegie's 'yuanization'. Bond - affinity: a shared reading of the order and a shared rival, not kinship."
+    sources:
+      - {url: "https://www.reuters.com/world/china/moscow-beijing-partnership-has-no-limits-2022-02-04/", title: "Moscow-Beijing partnership has 'no limits'", publisher: "Reuters", date: 2022-02-04, tier: 3}
+      - {url: "https://www.scmp.com/news/china/diplomacy/article/3316875/china-tells-eu-it-cannot-afford-russian-loss-ukraine-war-sources-say", title: "China tells EU it does not want to see Russia lose its war in Ukraine: sources", publisher: "South China Morning Post", date: 2025-07-04, tier: 3}
+      - {url: "https://www.reuters.com/world/china/chinas-2025-trade-with-russia-posts-first-decline-5-years-2026-01-14/", title: "China's 2025 trade with Russia posts first decline in 5 years", publisher: "Reuters", date: 2026-01-14, tier: 3}
+      - {url: "https://carnegieendowment.org/russia-eurasia/politika/2024/05/china-russia-yuan?lang=en", title: "What are the limits to Russia's 'yuanization'?", publisher: "Carnegie Endowment for International Peace (Politika)", date: 2024-05-27, tier: 2}
+      - {url: "https://www.aljazeera.com/news/2026/5/19/putin-meets-xi-why-russia-and-china-need-each-other", title: "Putin meets Xi: why Russia and China need each other", publisher: "Al Jazeera", date: 2026-05-19, tier: 3}
+      - {url: "https://www.rferl.org/amp/putin-xi-mongolia-power-siberia-china-gas-energy/33519697.html", title: "China, Russia sign deal to build new Siberian gas pipeline but pricing details unclear", publisher: "RFE/RL", date: 2025-09-02, tier: 3}
+  - toward: UKR
+    grade: partner
+    trend: stable
+    bond: none
+    since: 2011
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner kept open on purpose: the 2011 strategic partnership reaffirmed by Wang Yi and Sybiha at Munich (13 Feb 2026), China as Ukraine's largest trading partner and import source, a new package of humanitarian energy aid, and the standing line that China supplies no weapons to Russia. Beijing keeps a mediation card it does not play, abstains at the General Assembly and tells Brussels it cannot afford a Russian defeat. The grade is the structure Beijing maintains: trade and a channel, no alignment either way. Bond none."
+    sources:
+      - {url: "https://www.mfa.gov.cn/eng/wjbzhd/202602/t20260215_11860282.html", title: "Wang Yi meets Ukrainian Foreign Minister Andrii Sybiha (Munich, 13 Feb 2026)", publisher: "Ministry of Foreign Affairs of China (official statement)", date: 2026-02-15, tier: 1}
+      - {url: "https://www.caixinglobal.com/2026-02-14/china-pledges-energy-aid-to-ukraine-as-top-diplomats-meet-in-munich-102414717.html", title: "China pledges energy aid to Ukraine as top diplomats meet in Munich", publisher: "Caixin", date: 2026-02-14, tier: 3}
+      - {url: "https://euromaidanpress.com/2026/02/25/unga-backs-ukraines-peace-resolution-with-107-votes-rejects-us-push-to-drop-territorial-integrity/", title: "UNGA backs Ukraine's peace resolution with 107 votes (China abstained)", publisher: "Euromaidan Press", date: 2026-02-25, tier: 3}
+  - toward: BLR
+    grade: partner
+    trend: stable
+    bond: affinity
+    since: 2024-07-04
+    last_verified: 2026-10-16
+    confidence: B
+    note: "'All-weather strategic partnership' and SCO membership since the Astana summit of 4 Jul 2024, USD 8.85bn of trade in 2025 with a Belarusian deficit of USD 5.53bn, a Great Stone park whose results Minsk's own yearbook calls minimal. For Beijing a transit state on the rail route to Europe (it pushed Minsk to talk to Warsaw when the border closed in Sep 2025) and a vote, not a commitment; Chinese direct investment is a fraction of what goes to Russia. Bond - affinity: anti-Western solidarity and the model Minsk admires."
+    sources:
+      - {url: "https://nmn.media/yearbook/2026/en/page10.html", title: "Belarus - China relations: ambitious goals, dour achievements, uncertain outlook", publisher: "Belarusian Yearbook 2026", date: 2026-03, tier: 2}
+      - {url: "https://english.www.gov.cn/news/202407/04/content_WS66866147c6d0868f4e8e8dc0.html", title: "Xi congratulates Lukashenko as Belarus joins SCO", publisher: "Government of China (official statement)", date: 2024-07-04, tier: 1}
+      - {url: "https://www.caixinglobal.com/2025-09-24/poland-reopens-belarus-border-restoring-key-china-europe-rail-route-102365374.html", title: "Poland reopens Belarus border, restoring key China-Europe rail route", publisher: "Caixin", date: 2025-09-24, tier: 3}
+  - toward: TUR
+    grade: partner
+    trend: stable
+    bond: none
+    since: 2024-07
+    last_verified: 2026-10-16
+    confidence: C
+    note: "Partner with limits on both sides: Erdogan received in Beijing (Jul 2024) and at Tianjin (31 Aug 2025), the Middle Corridor and Chinese EV investment courted, 13.7% of Turkish imports Chinese with a deficit Ankara raises at every meeting, and a Turkish restraint on the Uyghurs that Beijing values more than any contract. Beijing's reading is a NATO member that buys, hosts a diaspora it must police, and will not join a coalition; MERICS counts the complications on 'many fronts'. Confidence C: no official series and a grade read from the structure. Bond none."
+    sources:
+      - {url: "https://www.merics.org/de/turkey-china-relations-ankara-must-balance-complications-many-fronts", title: "Turkey-China relations: Ankara must balance complications on many fronts", publisher: "MERICS", date: 2024, tier: 2}
+      - {url: "https://www.isdp.eu/?p=32740", title: "A China-Turkey reboot? Erdogan and Xi meet in Beijing", publisher: "ISDP", date: 2024-07, tier: 2}
+      - {url: "https://thediplomaticinsight.com/50-years-silk-road-turkiye-china-rebalance/", title: "50 years of the Silk Road: Turkiye-China rebalance", publisher: "The Diplomatic Insight", date: 2025, tier: 3}
+  # ---------- Middle East ----------
+  - toward: IRN
+    grade: partner
+    trend: stable
+    bond: none
+    since: 2021-03-27
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner and the clearest case of the patron who does not pay. Beijing buys more than 80% of the crude Iran ships (1.4 mb/d in 2025 through Shandong 'teapots'), reaffirmed the 25-year agreement with Pezeshkian on 2 Sep 2025 and shields Tehran at the Security Council; in the war that began on 28 Feb 2026 it condemned the strikes, told Araghchi in Beijing (6 May) to reopen Hormuz and criticised Iran's attacks on the Gulf states, and let its intake fall to 534,000 b/d under the US blockade. Carnegie: neither China nor Russia is 'rushing' to help. Iran is Beijing's discounted barrel and its lever in the Gulf, never its ally: no defence clause, no arms declared, and when Washington asked in September for help 'isolating' Iran, Beijing declined that too. Stable, because Tehran has no other buyer and Beijing no other discount. Bond none."
+    sources:
+      - {url: "https://www.globalsecurity.org/wmd/library/news/iran/2025/09/iran-250902-irna04.htm", title: "Pezeshkian, Xi pledge to fully implement the 25-year comprehensive cooperation agreement (IRNA)", publisher: "IRNA via GlobalSecurity (state agency, official statement)", date: 2025-09-02, tier: 1}
+      - {url: "https://www.aljazeera.com/amp/news/2026/5/6/irans-araghchi-holds-talks-with-chinas-wang-yi-in-beijing", title: "China calls for end to Iran war and Hormuz to reopen during Araghchi visit", publisher: "Al Jazeera", date: 2026-05-06, tier: 3}
+      - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/08/21/iranian-oil-offers-to-chinese-buyers-fall-as-us-blockade-bites-sources-say", title: "Iranian oil offers to Chinese buyers fall as US blockade bites, sources say (Kpler volumes)", publisher: "Reuters (via Internazionale)", date: 2026-08-21, tier: 3}
+      - {url: "https://carnegieendowment.org/russia-eurasia/politika/2026/03/china-russia-rescue-iran", title: "Why are China and Russia not rushing to help Iran?", publisher: "Carnegie Endowment for International Peace", date: 2026-03-10, tier: 2}
+      - {url: "https://www.aljazeera.com/news/2026/9/24/trump-xi-summit-four-key-takeaways-from-the-washington-dc-meeting", title: "Trump-Xi summit: four key takeaways (Trump asked China to help isolate Iran; Beijing reluctant)", publisher: "Al Jazeera", date: 2026-09-24, tier: 3}
+  - toward: SAU
+    grade: partner
+    trend: stable
+    bond: none
+    since: 2023-03-10
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner: the largest buyer of Saudi crude (1.39 mb/d in 2025, 333,000 b/d in June 2026 under the Hormuz closure), the broker of the Saudi-Iran agreement of 10 Mar 2023, and the caller who asked Mohammed bin Salman on 20 Apr 2026 to keep the strait open while buying Iran's oil too. Saudi Arabia is also the third construction market of the Belt and Road in 2025 (USD 19.8bn). Beijing wants both shores of the Gulf as customers and neither as an ally; Riyadh's strategic bet stays with Washington and Beijing does not contest it. Bond none."
+    sources:
+      - {url: "https://al-monitor.com/originals/2026/04/chinas-xi-call-saudi-crown-prince-calls-strait-hormuz-remain-open", title: "China's Xi, in call with Saudi crown prince, calls for Strait of Hormuz to remain open", publisher: "Al-Monitor", date: 2026-04-20, tier: 3}
+      - {url: "https://www.agbi.com/energy/2026/05/saudi-crude-exports-to-china-set-for-record-low/", title: "Saudi crude exports to China set for record low", publisher: "AGBI", date: 2026-05, tier: 3}
+      - {url: "https://greenfdc.org/china-belt-and-road-initiative-bri-investment-report-2025/", title: "China Belt and Road Initiative (BRI) Investment Report 2025 (Saudi Arabia USD 19.8bn of construction)", publisher: "Green Finance & Development Center, Fudan University", date: 2026-01-18, tier: 2}
+  - toward: ARE
+    grade: partner
+    trend: stable
+    bond: none
+    since: 2018-07
+    last_verified: 2026-10-16
+    confidence: B
+    note: "'Comprehensive strategic partnership' (Wang Yi to the UAE's security council secretary-general, 23-25 Jun 2026), USD 111.5bn of non-oil trade in 2025, COSCO's 35-year terminal at Khalifa Port, a BRICS seat. Beijing's reading of Abu Dhabi: a hub that will buy ports and trade but keeps its AI on American chips (the G42 conditions) - a partner whose hedge is shallow by Washington's design. Bond none."
+    sources:
+      - {url: "https://www.fmprc.gov.cn/eng/wjbzhd/202606/t20260625_11951976.html", title: "Wang Yi meets UAE Supreme National Security Council secretary-general", publisher: "Ministry of Foreign Affairs of China (official statement)", date: 2026-06-25, tier: 1}
+      - {url: "https://enterpriseam.com/uae/2026/04/16/uae-china-reaffirm-diplomatic-ties-ramp-up-investments-amid-geopolitical-tensions/", title: "UAE, China reaffirm diplomatic ties, ramp up investments amid geopolitical tensions", publisher: "Enterprise", date: 2026-04-16, tier: 3}
+  - toward: ISR
+    grade: partner
+    trend: cooling
+    bond: none
+    since: 1992-01-24
+    last_verified: 2026-10-16
+    confidence: C
+    note: "Partner cooling: Israel is China's second trading partner in the region (USD 33bn in 2025 by the Chinese ambassador's count) and Beijing suspended neither projects nor flights in the 2026 war, but it told Sa'ar on 3 Mar 2026 that it opposes the strikes on Iran, keeps its Iran line at the Security Council, brokered the Palestinian factions in Beijing (Jul 2024) and recognises Palestine since 1988. Cooling from Beijing's side because the war made the Iran tie the ceiling of the relationship; not rival, because trade continues and Beijing seeks no change in Israel. Israel's card asks the same question from its side and answers partner; the build's warning that China is bound by agreement to Iran, which Israel grades adversary, is answered there: the agreement has no defence clause and Beijing did nothing to defend Tehran. Confidence C: our reading, with an interested trade figure."
+    sources:
+      - {url: "https://www.mfa.gov.cn/eng/wjbzhd/202603/t20260304_11868246.html", title: "Readout: Wang Yi's phone call with Israeli Foreign Minister Gideon Sa'ar (3 March 2026)", publisher: "Ministry of Foreign Affairs of China (official statement)", date: 2026-03-04, tier: 1}
+      - {url: "https://www.jns.org/israel-news/israel-fm-hosts-chinas-special-envoy-to-mideast", title: "Israel FM hosts China's special envoy to Mideast", publisher: "JNS", date: 2026-01, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2024/7/23/palestinian-rivals-hamas-and-fatah-sign-unity-deal-brokered-by-china", title: "Palestinian rivals Hamas and Fatah sign unity deal brokered by China", publisher: "Al Jazeera", date: 2024-07-23, tier: 3}
+  - toward: PSE
+    grade: partner
+    trend: stable
+    bond: affinity
+    since: 1988-11-20
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner for the price of a declaration: recognition since 20 Nov 1988, a 'strategic partnership' with the PA (Abbas in Beijing, Jun 2023), the Beijing Declaration of 14 factions (23 Jul 2024) that Wang Yi called 'a historic moment' and that did not hold, an abstention on Resolution 2803 and a Palestinian Authority that backs One China. Beijing gives the cause diplomatic cover and the Global South its credential; no money, no arms. Bond - affinity: the anti-colonial narrative."
+    sources:
+      - {url: "https://www.mfa.gov.cn/eng/wjdt_665385/wshd_665389/202407/t20240723_11458788.html", title: "Palestinian factions sign Beijing Declaration on ending division and strengthening Palestinian national unity", publisher: "Ministry of Foreign Affairs of China (official statement)", date: 2024-07-23, tier: 1}
+      - {url: "https://apnews.com/article/china-abbas-palestinian-israel-saudi-dd55f1cc81b53cb00cb1d045bc239566", title: "China inks 'strategic partnership' with Palestinian Authority as it expands Middle East role", publisher: "Associated Press", date: 2023-06-14, tier: 3}
+      - {url: "https://english.wafa.ps/Pages/Details/165787", title: "Palestine affirms support for China's sovereignty, territorial integrity", publisher: "WAFA (Palestinian official agency, official statement)", date: 2025-12-31, tier: 1}
+  - toward: EGY
+    grade: partner
+    trend: warming
+    bond: none
+    since: 2026-09-01
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner warming: Xi's first visit to Egypt in a decade (1-2 Sep 2026), five agreements, a third phase of the TEDA zone in the Suez Canal Economic Zone (about 200 companies, USD 4bn), Egypt the second BRI investment destination of 2025 (USD 10.2bn), a BRICS member since 2024, and the first joint air drill with J-10Cs in April 2025 that Beijing uses to test Washington's leverage over Cairo. No contract for the fighters is confirmed; Beijing sells the possibility. Bond none."
+    sources:
+      - {url: "https://english.ahram.org.eg/News/575857.aspx", title: "Factbox: key outcomes of Chinese President Xi Jinping's visit to Egypt", publisher: "Ahram Online", date: 2026-09-02, tier: 3}
+      - {url: "https://www.thenationalnews.com/news/mena/2026/09/02/guide-to-chinese-military-hardware-on-show-in-egypt-during-president-xis-visit/", title: "Guide to Chinese military hardware on show in Egypt during President Xi's visit", publisher: "The National", date: 2026-09-02, tier: 3}
+      - {url: "https://greenfdc.org/china-belt-and-road-initiative-bri-investment-report-2025/", title: "China Belt and Road Initiative (BRI) Investment Report 2025 (Egypt USD 10.2bn of investment)", publisher: "Green Finance & Development Center, Fudan University", date: 2026-01-18, tier: 2}
+  # ---------- Europe ----------
+  - toward: org-eu
+    grade: partner
+    trend: stable
+    bond: none
+    since: 2003-10-30
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner from Beijing's side, rival from Brussels's: the asymmetry is the pair and is deliberate. Beijing's formula is 'partners, not rivals'; its structure is a market it needs to absorb overcapacity (MERICS: 'China needs EU demand', a EUR 36.5bn monthly surplus in July 2026) and a bloc it wants kept out of American decoupling. Its instruments are the ones the EU calls rivalry: countermeasures on cognac for the EV duties, about 2,000 rare-earth licence applications held in the queue in 2025, Nexperia's chips withheld until The Hague suspended its order, a Chinese court freezing Nexperia BV's stakes (31 Aug 2026). The July 2025 summit produced a climate statement; the second trade meeting (Beijing, 8-9 Oct 2026) produced a ten-point list, an understanding on hybrid vehicles and fast-track magnet licences. Partner, not reluctant: Beijing resists nothing here, it bargains. Stable: managed on both sides. Bond none."
+    sources:
+      - {url: "https://www.lovguiden.dk/en/det-offentlige/europa-kommissionen-press-corner/2026-10-09-eu-og-kina-aftaler-hybridbiler-sjaeldne-jordarter-og-eksportkontrol", title: "EU and China agree on hybrid vehicles, rare earths and export controls (second trade meeting, Beijing 8-9 Oct 2026)", publisher: "European Commission press corner (via Lovguiden)", date: 2026-10-09, tier: 3}
+      - {url: "https://merics.org/en/merics-briefs/eu-china-trade-talks-academic-espionage-gender-gap", title: "EU-China trade talks, academic espionage, gender gap (China Essentials)", publisher: "MERICS", date: 2026-10-08, tier: 2}
+      - {url: "https://www.pbs.org/newshour/amp/world/eu-and-china-agree-to-take-action-on-climate-change-and-nothing-else-at-tense-summit", title: "EU and China agree to take action on climate change and nothing else at tense summit", publisher: "PBS NewsHour (AP)", date: 2025-07-24, tier: 3}
+      - {url: "https://newsletter.mw.creamermedia.com/article/eu-trade-chief-to-meet-chinas-wang-to-discuss-rare-earths-2025-10-22", title: "EU trade chief to meet China's Wang to discuss rare earths", publisher: "Reuters (via Creamer Media)", date: 2025-10-22, tier: 3}
+      - {url: "https://www.reuters.com/world/asia-pacific/chinese-court-freezes-dutch-chipmaker-nexperia-bvs-stakes-four-china-units-2026-08-31/", title: "Chinese court freezes Dutch chipmaker Nexperia BV's stakes in four China units", publisher: "Reuters", date: 2026-08-31, tier: 3}
+      - {url: "https://blogs.soas.ac.uk/china-institute/?p=373", title: "'Systemic rivals': Brussels at odds with Beijing", publisher: "SOAS China Institute", date: 2019, tier: 2}
+  - toward: DEU
+    grade: partner
+    trend: stable
+    bond: none
+    since: 2014-03-28
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner and the European market that matters most: Merz's first visit (late Feb 2026) with about 30 executives, government consultations from 2027, a German deficit of about EUR 90bn in 2025, Chinese cars and batteries displacing the German ones the relationship was built on. Beijing offers Berlin what it offered the EU - rare-earth licences and access - and asks it to keep its own 'de-risking' short of decoupling; Merz's request that Beijing press Moscow got the usual answer. Berlin's card grades the pair reluctant_partner; from Beijing it is interest, hence partner and bond none."
+    sources:
+      - {url: "https://www.nbcnews.com/world/asia/german-leader-friedrich-merz-hails-china-ties-seeks-reset-beijing-rcna260759", title: "German leader Friedrich Merz hails China ties, seeks reset in Beijing", publisher: "NBC News", date: 2026-02, tier: 3}
+      - {url: "https://dgap.org/en/mediacenter/dgaps-morning-briefing/china-revisited", title: "China revisited: Wadephul's trip to Beijing amid regional quarrel over Taipei", publisher: "DGAP", date: 2025-12, tier: 2}
+  - toward: FRA
+    grade: partner
+    trend: stable
+    bond: none
+    since: 2014-03-26
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner handled as the EU's envoy: Macron's state visit of 3-5 Dec 2025 (Beijing and Chengdu) got twelve agreements without disclosed money, no Airbus order and no movement on Ukraine; Beijing had answered the EV duties Paris pushed with minimum prices on cognac. France is the European state Beijing treats as a great power in form - a Security Council seat, 'strategic autonomy' - and as a market in substance. Stable. Bond none."
+    sources:
+      - {url: "https://www.euronews.com/2025/11/28/trade-tech-ukraine-what-to-know-about-macrons-trip-to-china", title: "Trade, tech, Ukraine: what to know about Macron's trip to China", publisher: "Euronews", date: 2025-11-28, tier: 3}
+      - {url: "https://www.thejakartapost.com/world/2025/12/05/xi-woos-macron-with-sightseeing-trip-but-little-in-the-way-of-deals", title: "Xi woos Macron with sightseeing trip but little in the way of deals", publisher: "The Jakarta Post (wire)", date: 2025-12-05, tier: 3}
+  - toward: GBR
+    grade: partner
+    trend: warming
+    bond: none
+    since: 2026-01-28
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner warming on London's initiative: Starmer in Beijing (28-31 Jan 2026, the first British prime minister in eight years), the Royal Mint Court embassy approved eight days earlier, visa-free entry for Britons, the whisky tariff cut, a spying prosecution that collapsed because no minister would call China a threat. Beijing gives the reset at no cost to its lines - Jimmy Lai got 20 years in February - and reads AUKUS and the US alignment as the ceiling. Bond none."
+    sources:
+      - {url: "https://www.upi.com/Top_News/World-News/2026/01/29/britain-hail-relationship-reset/4071769678792/", title: "Britain hails relationship reset with China", publisher: "UPI", date: 2026-01-29, tier: 3}
+      - {url: "https://www.lbc.co.uk/news/uk/chinas-embassy-london-plans-approved/", title: "China's embassy in London plans approved", publisher: "LBC", date: 2026-01-20, tier: 3}
+      - {url: "https://www.pbs.org/newshour/world/uk-prosecutor-says-spying-case-collapsed-because-government-wouldnt-call-china-a-threat", title: "UK prosecutor says spying case collapsed because government wouldn't call China a threat", publisher: "AP via PBS NewsHour", date: 2025-10-08, tier: 3}
+  - toward: HUN
+    grade: partner
+    trend: cooling
+    bond: none
+    since: 2024-05-09
+    last_verified: 2026-10-16
+    confidence: B
+    note: "The 'all-weather' partner of Xi's May 2024 visit and the main European destination for Chinese EV and battery money (CATL Debrecen EUR 7.34bn, BYD Szeged, about 31% of Chinese FDI in Europe in 2024) is now governed by Magyar, who audits the Orban-era support, suspended work at CATL areas and fined the plant. Cooling because the political cover Beijing bought inside the Union is gone, not because the factories are leaving. Bond none: the affinity was with Orban, not with Hungary."
+    sources:
+      - {url: "https://insighthungary.444.hu/2024/05/11/xi-jinping-and-orban-agree-on-strategic-partnership", title: "Xi Jinping and Orban agree on strategic partnership", publisher: "Insight Hungary (444)", date: 2024-05-11, tier: 3}
+      - {url: "https://www.electrive.com/2026/09/16/hungary-increases-pressure-on-byd-and-catl/", title: "Hungary increases pressure on BYD and CATL", publisher: "electrive", date: 2026-09-16, tier: 3}
+      - {url: "https://ceias.eu/from-bridgehead-to-boundaries-hungarys-prospective-indo-pacific-strategy-under-peter-magyar/", title: "From bridgehead to boundaries: Hungary's prospective Indo-Pacific strategy under Peter Magyar", publisher: "CEIAS", date: 2026, tier: 2}
+  - toward: SRB
+    grade: partner
+    trend: stable
+    bond: affinity
+    since: 2016-06-18
+    last_verified: 2026-10-16
+    confidence: A
+    note: "Beijing's closest friend in Europe and a client in all but name: the comprehensive strategic partnership of 2016 raised in May 2024 to the first European 'community with a shared future', a free-trade agreement in force since 1 Jul 2024, 61% of Serbia's arms imports (CM-400AKG missiles, FK-3), Exim Bank holding 7.1% of its central-government debt, Vucic at the parade of 3 Sep 2025 and the first joint exercise ('Peace Defenders', Jul 2025). No source calls it an alliance and Beijing offers no guarantee; the 'ironclad friendship' is affinity, not kinship, and Belgrade's non-recognition of Kosovo matches Beijing's. Stable."
+    sources:
+      - {url: "https://subsites.chinadaily.com.cn/npc/2024-05/09/c_985378.htm", title: "Xi, Vucic agree to build community with a shared future", publisher: "Xinhua / China Daily (state media, official readout)", date: 2024-05-09, tier: 1}
+      - {url: "https://www.sipri.org/sites/default/files/2026-03/fs_2603_at_2025.pdf", title: "Trends in International Arms Transfers, 2025 (China 61% of Serbia's arms imports)", publisher: "SIPRI", date: 2026-03-09, tier: 1}
+      - {url: "https://www.rferl.org/a/serbia-china-military-exercises-eu-alarm-russia/33476628.html", title: "Serbia-China military exercises alarm the EU", publisher: "RFE/RL", date: 2025-07-17, tier: 3}
+      - {url: "https://www.tanjug.rs/english/economy/97399/mali-fta-with-china-has-entered-into-force/amp", title: "Mali: FTA with China has entered into force", publisher: "Tanjug (state agency, official statement)", date: 2024-07-01, tier: 1}
+  - toward: ESP
+    grade: partner
+    trend: warming
+    bond: none
+    since: 2005-11
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner warming on Madrid's initiative: Sanchez in Beijing four times in four years (11-15 Apr 2026, 19 agreements, a strategic dialogue), Spain moved from voting for to abstaining on the EV duties and calls China 'a partner of the EU'. For Beijing the useful European: a large member that argues its case inside the Council. Bond none."
+    sources:
+      - {url: "https://www.euronews.com/my-europe/2026/04/14/spain-strengthens-ties-with-china-as-sanchez-backs-beijings-middle-east-role", title: "Spain strengthens ties with China as Sanchez backs Beijing's Middle East role", publisher: "Euronews", date: 2026-04-14, tier: 3}
+      - {url: "https://www.lamoncloa.gob.es/lang/en/presidente/news/Paginas/2025/20250411-trip-to-china.aspx", title: "The President of the Government of Spain's trip to Beijing", publisher: "Moncloa - Presidency of the Government of Spain", date: 2025-04-11, tier: 1}
+  - toward: NLD
+    grade: partner
+    trend: stable
+    bond: none
+    since: 2023-09-01
+    last_verified: 2026-10-16
+    confidence: C
+    note: "Partner through the chokepoint: the Netherlands holds the one machine China cannot make (ASML's advanced DUV, licensed away since 2023-24 under American pressure, China's share of its sales guided from a third to 20%) and Beijing answered the Nexperia seizure of 12 Oct 2025 by withholding the chips until The Hague suspended its order (19 Nov), then froze Nexperia BV's stakes in court (31 Aug 2026) while calling the relationship 'one of the most important' (Wang Yi-Berendsen, 13 Mar 2026) and receiving the first Dutch ministerial trade mission since 2018 (Jul 2026). The Hague's card reads reluctant_partner; Beijing's structure is a partner it must coerce and court in the same year. Stable: reset and litigation cancel out. Confidence C."
+    sources:
+      - {url: "https://www.mfa.gov.cn/mfa_eng/wjbzhd/202603/t20260315_11875064.html", title: "Wang Yi speaks with Dutch Foreign Minister Berendsen by phone (official readout)", publisher: "Ministry of Foreign Affairs of China (official statement)", date: 2026-03-15, tier: 1}
+      - {url: "https://www.reuters.com/world/china/dutch-government-intervenes-chinese-owned-computer-chip-firm-nexperia-2025-10-12/", title: "Dutch government intervenes at Chinese-owned chipmaker Nexperia", publisher: "Reuters", date: 2025-10-12, tier: 3}
+      - {url: "https://www.caixinglobal.com/2026-01-29/asml-expects-china-revenue-drop-following-backlog-fueled-surge-102409285.html", title: "ASML expects China revenue drop following backlog-fueled surge", publisher: "Caixin", date: 2026-01-29, tier: 3}
+  - toward: ITA
+    grade: partner
+    trend: stable
+    bond: none
+    since: 2023-12
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner after the only G7 Belt and Road exit (Dec 2023): Meloni in Beijing in July 2024 to keep the trade, golden power used on Pirelli to cap Sinochem (2023, Apr 2026). Beijing's reading: the exit changed the label, not the trade, and Rome is not a front. Bond none."
+    sources:
+      - {url: "https://www.thestandard.com.hk/china/article/218755/China-says-Italy-PM-Meloni-to-visit-from-Saturday", title: "China says Italy PM Meloni to visit from Saturday", publisher: "The Standard (Hong Kong)", date: 2024-07, tier: 3}
+      - {url: "https://www.ilpost.it/2026/04/11/governo-pirelli-golden-power-sinochem-cda/", title: "The government has again exercised the golden power on Pirelli", publisher: "Il Post", date: 2026-04-11, tier: 3}
+  - toward: LTU
+    grade: rival
+    trend: warming
+    bond: grievance
+    since: 2021-11
+    last_verified: 2026-10-16
+    confidence: C
+    note: "Rival by Beijing's own act: the 'Taiwanese Representative Office' opened in Vilnius in Nov 2021 was answered with a downgrade to charge d'affaires and informal economic restrictions (customs delisting, credit lines closed, rail freight suspended). In 2026 the Lithuanian governments seek normalisation and Beijing's door is 'open' on condition of the One China principle and correcting 'past mistakes' - the office's name. Warming from a low base; rival because the one-China rule is the line Beijing enforces on every state and Vilnius is the example it keeps. No source uses the word; our reading (C). Bond - grievance: the office."
+    sources:
+      - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2026-02-27/lithuania-towards-normalisation-relations-china", title: "Lithuania towards normalisation of relations with China", publisher: "OSW", date: 2026-02-27, tier: 2}
+      - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2026-07-15/new-government-lithuania-third-social-democratic-cabinet", title: "A new government in Lithuania: the third Social Democratic cabinet", publisher: "OSW", date: 2026-07-15, tier: 2}
+  - toward: org-nato
+    grade: rival
+    trend: stable
+    bond: none
+    since: 2022-06-29
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Rival: the 2022 Strategic Concept names China's 'ambitions and coercive policies' and Beijing answers every summit with 'Cold War mentality' and 'hyping up the China threat' (Ankara, Jul 2026); it objects to the Indo-Pacific partners at the table and to being called the enabler of Russia's war. Not adversary: no NATO forces face China and Beijing seeks no end of the alliance, only its absence from Asia. Stable. Bond none."
+    sources:
+      - {url: "https://www.nato.int/cps/en/natohq/topics_210907.htm", title: "NATO 2022 Strategic Concept (para 13 on the PRC)", publisher: "NATO", date: 2022-06-29, tier: 1}
+      - {url: "https://www.turkiyetoday.com/world/north-korea-china-criticize-nato-after-ankara-summit-3223670", title: "North Korea, China criticize NATO after Ankara summit", publisher: "Turkiye Today", date: 2026-07, tier: 3}
+      - {url: "https://www.cna.org/analyses/2026/08/natos-ankara-summit-the-indo-pacific-dimensions", title: "NATO's Ankara summit: the Indo-Pacific dimensions", publisher: "CNA", date: 2026-08, tier: 2}
+  - toward: XKX
+    grade: rival
+    trend: stable
+    bond: none
+    since: 2008-02-18
+    last_verified: 2026-10-16
+    confidence: C
+    note: "Rival by precedent: Beijing does not recognise Kosovo, backs Serbia's territorial integrity at the Security Council and holds a veto over the UN seat, because a seceded province recognised by the West is the Taiwan analogy it will not allow. Chinese goods lead Kosovo's imports and Beijing campaigns against nothing in Pristina; the grade is the structural reading of a state whose existence Beijing refuses to register (confidence C, mirroring Pristina's own card). Bond none."
+    sources:
+      - {url: "https://chinaobservers.eu/not-recognized-but-not-ignored-chinas-quiet-leverage-over-kosovo/", title: "Not recognized but not ignored - China's quiet leverage over Kosovo", publisher: "China Observers in Central and Eastern Europe", date: 2025, tier: 2}
+      - {url: "https://www.securitycouncilreport.org/monthly-forecast/2026-10/kosovo-17.php", title: "Kosovo - October 2026 monthly forecast (Council dynamics)", publisher: "Security Council Report", date: 2026-10, tier: 2}
+  # ---------- Africa, the Americas, the forums ----------
+  - toward: org-au
+    grade: partner
+    trend: stable
+    bond: affinity
+    since: 2000-10-10
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner through FOCAC: RMB 360bn (about USD 51bn) pledged at the ninth forum (Sep 2024: USD 29.6bn of credit, USD 11.2bn of assistance, 30 connectivity and 30 clean-energy projects, a million jobs) and zero tariffs on all lines for the 53 African states that recognise Beijing (Changsha, Jun 2025, Eswatini excluded). Africa is the continent where Beijing's 'modernisation' frame meets no rival offer of the same size, and where every state but one votes One China. Bond - affinity: the anti-colonial narrative and the vote."
+    sources:
+      - {url: "https://www.bu.edu/gdp/2024/10/15/back-in-action-the-ninth-forum-on-china-africa-cooperation-sees-renewed-relations-and-development-prospects", title: "Back in Action: the Ninth Forum on China-Africa Cooperation sees renewed relations and development prospects", publisher: "Boston University Global Development Policy Center", date: 2024-10-15, tier: 2}
+      - {url: "https://cnbcafrica.com/2024/china-offers-africa-51-bln-in-fresh-funding-promises-a-million-jobs", title: "China offers Africa $51 bln in fresh funding, promises a million jobs", publisher: "CNBC Africa (Reuters)", date: 2024-09-05, tier: 3}
+      - {url: "https://www.spglobal.com/commodity-insights/en/news-research/latest-news/agriculture/061225-china-offers-zero-tariffs-to-53-african-nations-amid-us-trade-tensions", title: "China offers zero tariffs to 53 African nations amid US trade tensions", publisher: "S&P Global Commodity Insights", date: 2025-06-12, tier: 3}
+  - toward: COD
+    grade: partner
+    trend: stable
+    bond: none
+    since: 2008-04
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner by minerals: the Sicomines minerals-for-infrastructure deal of 2008, renegotiated under Tshisekedi to USD 7bn of Chinese infrastructure (2024), Chinese companies (CMOC, Huayou, Chengtun, CNMC) running most of the cobalt mining in a country that produces over 70% of the world's supply, most of it shipped to China, a Belt and Road member since January 2021. Kinshasa's US minerals deal of 2025 is the hedge Beijing watches; the mines stay. Bond none."
+    sources:
+      - {url: "https://eiti.org/blog-post/sicomines-how-eiti-drc-helped-secure-4-billion-additional-revenue", title: "Sicomines: how the EITI in DRC helped secure 4 billion in additional revenue", publisher: "Extractive Industries Transparency Initiative", date: 2024-03-25, tier: 2}
+      - {url: "https://www.scmp.com/news/china/diplomacy/article/3145065/why-china-making-big-play-congolese-cobalt-and-other-critical", title: "Why China is making a big play for Congolese cobalt and other critical minerals", publisher: "South China Morning Post", date: 2021-08-15, tier: 3}
+      - {url: "https://www.scmp.com/news/china/diplomacy/article/3116837/china-cancels-democratic-republic-congo-loans-it-joins-belt", title: "China cancels Democratic Republic of Congo loans as it joins Belt and Road", publisher: "South China Morning Post", date: 2021-01-07, tier: 3}
+  - toward: BRA
+    grade: partner
+    trend: stable
+    bond: none
+    since: 2023-04-14
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner and the BRICS co-founder: Lula's visit of April 2023 (15 memoranda, 'nobody can stop Brazil' from developing the relationship), China the largest trading partner since 2009, the soybeans that replaced American ones in 2025. Brasilia declined the Belt and Road (Oct 2024), has imposed more than 120 trade measures on Chinese goods since 2022 and met a 55% tariff on its beef when the quota was reached (30 Sep 2026); a dual-use ground station in Bahia is under scrutiny. Beijing treats Brazil as the anchor of its Latin American trade and the partner that will not align; stable. Bond none."
+    sources:
+      - {url: "https://www.csis.org/analysis/great-balancing-act-lula-china-and-future-us-brazil-relations", title: "The great balancing act: Lula in China and the future of US-Brazil relations", publisher: "CSIS", date: 2023-04-19, tier: 2}
+      - {url: "https://www.livemint.com/news/brazil-follows-in-indias-footsteps-becomes-second-brics-country-to-reject-bri-in-setback-for-china-11730204408442.html", title: "Brazil follows in India's footsteps, becomes second BRICS country to reject BRI in setback for China", publisher: "Mint", date: 2024-10-29, tier: 3}
+      - {url: "https://www.reuters.com/world/china/china-adds-55-tariff-brazil-beef-imports-2026-09-30/", title: "China adds 55% tariff on Brazil beef imports after quota is reached", publisher: "Reuters", date: 2026-09-30, tier: 3}
+      - {url: "https://www.wsj.com/world/china/chinas-flood-of-cheap-goods-is-angering-its-allies-too-51284954", title: "China's flood of cheap goods is angering its allies too", publisher: "The Wall Street Journal", date: 2024-12-03, tier: 3}
+  - toward: PER
+    grade: partner
+    trend: warming
+    bond: none
+    since: 2024-11-14
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner by port: Chancay, COSCO's first South American terminal (60% owned, a 30-year concession, 1 million TEU and a 23-day route to Shanghai), inaugurated by Xi and Boluarte by video link on 14 Nov 2024 during the Lima APEC; Washington's alarm is the measure of its weight. Warming on the volumes. Bond none."
+    sources:
+      - {url: "https://www.mfa.gov.cn/eng/xw/zyxw/202411/t20241116_11527528.html", title: "Xi Jinping and Dina Boluarte attend the inauguration of the Chancay port by video link", publisher: "Ministry of Foreign Affairs of China (official statement)", date: 2024-11-16, tier: 1}
+      - {url: "https://www.nbcnews.com/news/world/xi-jinping-opens-huge-port-peru-funded-china-rcna180289", title: "Xi Jinping opens huge port in Peru funded by China", publisher: "NBC News", date: 2024-11-14, tier: 3}
+  - toward: VEN
+    grade: partner
+    trend: cooling
+    bond: none
+    since: 2001-04
+    last_verified: 2026-10-16
+    confidence: C
+    note: "Partner of a government that was removed by force: when US forces seized Maduro and his wife on 3 Jan 2026, Beijing expressed 'grave concern', called the operation a breach of the UN Charter and demanded their release and an end to 'toppling the government of Venezuela' - and did nothing else. Cooling because the client Beijing lent to and bought oil from is gone and what it holds toward the successor authorities is not yet sourced; the grade records the statement and the structure (oil, debt), not a new alignment. Confidence C."
+    sources:
+      - {url: "https://www.mfa.gov.cn/eng/xw/fyrbt/202601/t20260104_11797389.html", title: "Foreign Ministry spokesperson's remarks on the US seizing Venezuelan President Nicolas Maduro and his wife", publisher: "Ministry of Foreign Affairs of China (official statement)", date: 2026-01-04, tier: 1}
+      - {url: "https://www.caixinglobal.com/2026-01-04/china-demands-us-release-venezuelan-president-maduro-and-wife-102399906.html", title: "China demands US release Venezuelan President Maduro and wife", publisher: "Caixin Global", date: 2026-01-04, tier: 3}
+  - toward: org-brics
+    grade: partner
+    trend: stable
+    bond: affinity
+    since: 2009-06-16
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner and the forum Beijing uses as its frame for the non-Western order: Xi at New Delhi (12-13 Sep 2026), where the declaration dropped Ukraine altogether and the Xi-Modi bilateral reset the border talks; the New Development Bank and the yuan as the instruments; Egypt, the UAE and Iran among the members since 2024. Beijing wants the grouping as a vote and a market, not as a bloc with obligations - India and Brazil both declined the Belt and Road. Bond - affinity: the shared reading of the order."
+    sources:
+      - {url: "https://www.indiatoday.in/world/story/brics-summit-new-delhi-joint-declaration-makes-no-mention-of-ukraine-war-marks-shift-from-rio-2993451-2026-09-13", title: "BRICS joint declaration in New Delhi makes no mention of Ukraine war", publisher: "India Today", date: 2026-09-13, tier: 3}
+      - {url: "https://www.theweek.in/news/india/2026/09/10/brics-summit-modi-xi-meeting.amp.html", title: "Modi, Xi to hold bilateral meeting on day 1 of BRICS Summit", publisher: "The Week", date: 2026-09-10, tier: 3}
+      - {url: "https://www.livemint.com/news/brazil-follows-in-indias-footsteps-becomes-second-brics-country-to-reject-bri-in-setback-for-china-11730204408442.html", title: "Brazil follows in India's footsteps, becomes second BRICS country to reject BRI in setback for China", publisher: "Mint", date: 2024-10-29, tier: 3}

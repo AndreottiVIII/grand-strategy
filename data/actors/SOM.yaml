@@ -1,14 +1,208 @@
 id: SOM
 name: Somalia
+short: Somalia
 type: state
 iso2: so
 wikipedia: https://en.wikipedia.org/wiki/Somalia
-coords:
-- 45.34
-- 2.04
+coords: [45.34, 2.04]
 seat: Mogadishu
-regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+regions: [east-africa]
+card: full
+tier: protagonist
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Stay the government of record. President Hassan Sheikh Mohamud's four-year term ran out on 15 May 2026 by the opposition's count; parliament's amendments of March 2026 turn it into a five-year term, so he says he serves to 15 May 2027, and the plan is a one-person-one-vote election in place of the clan-based indirect vote. The opposition (Puntland's Deni, former president Sharif Sheikh Ahmed, the Somali Future Council) calls the amendments unilateral and no longer recognises him; US- and UK-mediated talks at Halane collapsed on 15 May."
+      confidence: B
+      sources:
+        - {url: "https://www.somaliguardian.com/news/somalia-news/somalia-political-crisis-president-legitimacy-dispute/", title: "Somalia president says term not expired as opposition rejects his legitimacy", publisher: "Somali Guardian", date: 2026-05-16, tier: 3}
+        - {url: "https://www.newsonair.gov.in/somalias-parliament-voted-to-amend-constitution-extending-terms-of-both-lawmakers-president", title: "Somalia's parliament voted to amend constitution, extending terms of both lawmakers and president", publisher: "All India Radio News", date: 2026-03-05, tier: 3}
+        - {url: "https://www.ecoi.net/en/file/local/2132302/b208-somalia-electoral-showdown.pdf", title: "Somalia: electoral showdown (Crisis Group Africa Briefing 208, on the 2026 electoral reforms as a bid to tilt the vote)", publisher: "International Crisis Group (via ecoi.net)", date: 2025-09, tier: 2}
+    - rank: 2
+      text: "Hold the south-centre against al-Shabaab and ISIS-Somalia with other people's forces: AUSSOM troops, Turkish drones and trainers, Egyptian troops (delayed), US air strikes (at least 124 in 2025, 63 by 29 May 2026). The 2025 al-Shabaab offensive from Hiran and Middle Shabelle reversed most of the 2022-23 gains; on 9 Oct 2026 al-Shabaab took Hees in Hiran and cut an army supply road."
+      confidence: B
+      sources:
+        - {url: "https://euaa.europa.eu/coi/somalia/2025/security-situation/12-armed-actors-and-relevant-developments/122-al-shabaab-control-areas-presence-and-influence", title: "Al-Shabaab: control, areas, presence and influence (Somalia security situation)", publisher: "European Union Agency for Asylum", date: 2026, tier: 1}
+        - {url: "https://www.somaliguardian.com/news/somalia-news/somalia-government-loses-three-towns-48-hours/", title: "Somalia's govt loses three towns in 48 hours as rivals advance", publisher: "Somali Guardian", date: 2026-10-10, tier: 3}
+        - {url: "https://www.newamerica.org/insights/africom-confirms-63-strikes-in-somalia-in-2026/", title: "AFRICOM confirms 63 strikes in Somalia in 2026", publisher: "New America", date: 2026-05-29, tier: 2}
+    - rank: 3
+      text: "Undo Somaliland's separation and stop its recognition. Mogadishu treats Somaliland as an integral part of Somalia; Israel's recognition of 26 Dec 2025 (the first by a UN member), the Taiwan-Somaliland offices (a new one opened in June 2026) and talk of a US naval base at Berbera in exchange for recognition are the threats. The counter-coalition is wide but mostly rhetorical: China, Turkey, Saudi Arabia, Egypt, Djibouti, the OIC and the AU all back Somali unity."
+      confidence: B
+      sources:
+        - {url: "https://www.yahoo.com/news/articles/state-aggression-somalia-demands-israel-104325906.html", title: "'State aggression': Somalia demands Israel withdraw Somaliland recognition", publisher: "Yahoo News (wire)", date: 2025-12, tier: 3}
+        - {url: "https://www.mfa.gov.cn/mfa_eng/wjbzhd/202601/t20260112_11811365.html", title: "Readout of Wang Yi's call with the Somali foreign minister of 12 January 2026 (Somaliland an inalienable part of Somalia; opposition to Somaliland-Taiwan collusion)", publisher: "Ministry of Foreign Affairs of the PRC", date: 2026-01-12, tier: 1}
+        - {url: "https://app.al-monitor.com/originals/2026/06/somaliland-says-it-has-right-choose-its-relationships-it-opens-new-taiwan-office", title: "Somaliland says it has a right to choose its relationships as it opens new Taiwan office", publisher: "Al-Monitor", date: 2026-06-12, tier: 3}
+        - {url: "https://www.foxnews.com/world/israel-becomes-first-country-recognize-somaliland-trump-not-ready.print", title: "Israel becomes first country to recognize Somaliland; Trump 'not ready'", publisher: "Fox News", date: 2025-12-26, tier: 3}
+    - rank: 4
+      text: "Bring the federal member states under the new constitutional order. Puntland withdrew its recognition of the federal government in March-April 2024; Jubaland rejected the March 2026 amendments and has retaken Balad Hawo and holds the Gedo towns of Dolow, Luuq and El Wak; in Southwest State the federal government disbanded the assembly after a disputed March vote and the forces of ousted leader Laftagareen have since taken Qansax Dheere and Burhakabo. Mogadishu's tools are a parallel administration in Gedo (a 45-day plan of October 2025), interim appointments and the electoral law."
+      confidence: B
+      sources:
+        - {url: "https://www.somaliguardian.com/news/somalia-news/ethiopia-opposes-somali-government-plans-for-parallel-jubaland-administration-in-gedo/", title: "Ethiopia opposes Somali government plans for parallel Jubaland administration in Gedo", publisher: "Somali Guardian", date: 2025-10-12, tier: 3}
+        - {url: "https://theeastafrican.co.ke/tea/news/east-africa/south-west-state-crisis-a-litmus-test-somalia-political-future-5447756", title: "South West State crisis a litmus test for Somalia's political future", publisher: "The EastAfrican", date: 2026, tier: 3}
+        - {url: "https://allafrica.com/stories/202603040328.html", title: "Somalia: Jubaland Rejects Somalia Constitutional Amendments Amid Rising Federal Tensions", publisher: "AllAfrica", date: 2026-03-04, tier: 3}
+        - {url: "https://www.jurist.org/news/2024/04/somalia-state-of-puntland-rejects-constitutional-amendments-and-withdraws-from-federal-government/", title: "Somalia state of Puntland rejects constitutional amendments and withdraws from federal government", publisher: "JURIST", date: 2024-04, tier: 3}
+        - {url: "https://www.somaliguardian.com/news/somalia-news/somalia-government-loses-burhakabo-southwest/", title: "Somalia's government loses Burhakabo to ousted Southwest leader's forces", publisher: "Somali Guardian", date: 2026-10-15, tier: 3}
+    - rank: 5
+      text: "Keep the security transition financed: AUSSOM (mandate to 31 Dec 2026), the UN logistics office UNSOS that feeds it, and the IMF programme that replaced lost aid. The EU restarted European Peace Facility money in April 2026 (EUR 75m, a bridge of months) while Washington said on 1 July it would stop paying UNSOS at the end of 2026 and oppose its renewal."
+      confidence: B
+      sources:
+        - {url: "https://www.consilium.europa.eu/en/press/press-releases/2026/04/21/european-peace-facility-support-for-the-military-component-of-the-african-union-support-and-stabilisation-mission-in-somalia/", title: "European Peace Facility: support for the military component of the African Union Support and Stabilisation Mission in Somalia", publisher: "Council of the European Union", date: 2026-04-21, tier: 1}
+        - {url: "https://www.africanews.com/amp/2026/07/03/us-to-block-un-funding-for-somalia-in-blow-to-au-peace-mission/", title: "US to block UN funding for Somalia in blow to AU peace mission", publisher: "Africanews", date: 2026-07-03, tier: 3}
+        - {url: "https://www.imf.org/en/news/articles/2025/12/08/pr-25412-somalia-imf-concludes-4th-rev-of-ecf-arrangeme-and-approves-req-for-augmentation", title: "Somalia: IMF concludes the 4th review of the ECF arrangement and approves a request for augmentation", publisher: "International Monetary Fund", date: 2025-12-08, tier: 1}
+    - rank: 6
+      text: "Keep Ethiopia from using Somali fault lines against Mogadishu, without a war. Mogadishu traded the rupture of January 2024 over Ethiopia's MoU with Somaliland for the Ankara Declaration of December 2024 (Ethiopian sea access only under Somali sovereign authority), keeps Ethiopian troops in AUSSOM, and balances Addis Ababa with the Egypt-Eritrea axis, Turkey and the Gulf. On 4 Oct 2026 Hassan Sheikh sat at El Alamein with Sisi, Burhan and Isaias, then congratulated Abiy on his re-election."
+      confidence: B
+      sources:
+        - {url: "https://www.thereporterethiopia.com/42967/", title: "Ethiopia, Somalia reconciliation in Ankara garners international praise", publisher: "The Reporter (Ethiopia)", date: 2024-12, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/10/5/ethiopias-pm-insists-on-access-to-red-sea-despite-regional-conflict-threat", title: "Ethiopian PM Abiy demands Red Sea access as tensions with neighbours rise", publisher: "Al Jazeera", date: 2026-10-05, tier: 3}
+        - {url: "https://www.thenationalnews.com/news/mena/2026/10/04/egypt-hosts-four-way-summit-as-tensions-with-ethiopia-escalate/", title: "Egypt hosts four-way summit as tensions with Ethiopia escalate", publisher: "The National", date: 2026-10-04, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "Patron-hopping as a method. Turkey (the Ankara Declaration, the 2024 defence and economic cooperation agreement, mediator of the July 2026 government-opposition talks), Egypt and Eritrea (the Oct 2024 Asmara trilateral, the 4 Oct 2026 Alamein quadrilateral), Qatar and Saudi Arabia (Riyadh talks of 11 Jan 2026, membership of the Saudi-led Red Sea coalition announced 30 Jul 2026), China (Wang Yi's call of 12 Jan 2026). Each is bought with a piece of Somali sovereignty or a vote against Somaliland."
+      confidence: B
+      sources:
+        - {url: "https://app.al-monitor.com/originals/2026/07/turkey-brokers-somalia-talks-federal-rifts-test-ankaras-influence", title: "Turkey brokers Somalia talks, federal rifts test Ankara's influence", publisher: "Al-Monitor", date: 2026-07-09, tier: 3}
+        - {url: "https://web.mfa.gov.so/official-statement-on-the-trilateral-summit-between-somalia-eritrea-and-egypt/", title: "Official statement on the trilateral summit between Somalia, Eritrea and Egypt", publisher: "Ministry of Foreign Affairs of Somalia", date: 2024-10-10, tier: 1}
+        - {url: "https://agbi.com/shipping/2026/07/saudi-arabia-launches-14-nation-coalition-to-secure-red-sea-routes", title: "Saudi Arabia launches 14-nation coalition to secure Red Sea routes", publisher: "AGBI", date: 2026-07-30, tier: 3}
+    - domain: diplomatic
+      text: "Collective legal and religious cover against Somaliland's recognition: the joint statement of 21 states rejecting Israel's step, endorsed by the OIC, Djibouti's protest at the UN Security Council and closure of Somaliland's liaison office, and the One-China card (Beijing's readout of 12 Jan 2026 and its embassy's warnings to Hargeisa over the Taiwan office)."
+      confidence: B
+      sources:
+        - {url: "https://www.annahar.com/en/international/265048/israels-recognition-of-somaliland-draws-regional-condemnation", title: "Israel's recognition of Somaliland draws regional condemnation", publisher: "An-Nahar", date: 2025-12, tier: 3}
+        - {url: "https://www.somaliguardian.com/news/somalia-news/djibouti-closes-somaliland-liaison-office-over-israel-recognition/", title: "Djibouti closes Somaliland liaison office over Israel recognition", publisher: "Somali Guardian", date: 2026-01, tier: 3}
+        - {url: "https://chinaglobalsouth.com/2026/06/13/somaliland-taiwan-relations-china-somalia-pressure/", title: "Somaliland says it has a right to choose its relationships as it opens new Taiwan office", publisher: "China Global South Project", date: 2026-06-13, tier: 3}
+    - domain: informational
+      text: "Delegitimising the periphery and the opposition by security framing: the president's claim, citing intelligence, that Somaliland agreed to resettle Palestinians and host an Israeli base in exchange for recognition (Dec 2025, unverified), and the defence minister's claim of 13 Oct 2026 that 260 armed men were removed from opposition leaders' homes in Mogadishu."
+      confidence: C
+      sources:
+        - {url: "https://www.aa.com.tr/en/africa/somalias-president-says-somaliland-agreed-to-resettle-palestinians-host-israeli-base-for-recognition/3786171", title: "Somalia's president says Somaliland agreed to resettle Palestinians, host Israeli base for recognition", publisher: "Anadolu Agency (state agency, citing the president)", date: 2025-12, tier: 3}
+        - {url: "https://www.somaliguardian.com/news/somalia-news/somalia-260-armed-men-opposition-leaders-homes/", title: "Somalia says 260 armed men removed from opposition leaders' homes", publisher: "Somali Guardian", date: 2026-10-13, tier: 3}
+    - domain: military
+      text: "Foreign force as the army: Turkey (TURKSOM training base in Mogadishu, Bayraktar TB2 and Akinci drones, T129 helicopters, troop mandate renewed to 27 Jul 2028), the US (63 AFRICOM strikes by 29 May 2026 against al-Shabaab and, in Puntland, ISIS-Somalia), AUSSOM (mandate to 31 Dec 2026) and an Egyptian contingent delayed for lack of funds."
+      confidence: B
+      sources:
+        - {url: "https://www.meforum.org/mef-observer/turkey-renews-its-somalia-mandate-to-guard-the-spaceport-and-missile-base", title: "Turkey renews its Somalia mandate to guard the spaceport and missile base", publisher: "Middle East Forum", date: 2026-07, tier: 2}
+        - {url: "https://allafrica.com/stories/202506040403.html", title: "Somalia: Turkey Supplies Attack Helicopters to Somali Government Amid Al-Shabaab War", publisher: "AllAfrica", date: 2025-06-04, tier: 3}
+        - {url: "https://www.newamerica.org/insights/africom-confirms-63-strikes-in-somalia-in-2026/", title: "AFRICOM confirms 63 strikes in Somalia in 2026", publisher: "New America", date: 2026-05-29, tier: 2}
+    - domain: military
+      text: "Federal troop moves into contested peripheries (Gedo towns in 2025; Bardere and Garbaharey are still held by federal-aligned forces) and the show of force around opposition leaders' homes in Mogadishu on 11 Oct 2026."
+      confidence: C
+      sources:
+        - {url: "https://www.somaliguardian.com/news/somalia-news/somalia-government-masses-forces-near-opposition-leaders-homes-mogadishu/", title: "Somalia: Government forces mass near opposition leaders' homes", publisher: "Somali Guardian", date: 2026-10-11, tier: 3}
+        - {url: "https://www.somaliguardian.com/news/somalia-news/somalia-government-loses-three-towns-48-hours/", title: "Somalia's govt loses three towns in 48 hours as rivals advance", publisher: "Somali Guardian", date: 2026-10-10, tier: 3}
+    - domain: economic
+      text: "Resources and concessions as patronage: the TPAO exploration agreements (three offshore blocks and an onshore area of about 16,000 sq km; the drillship Cagri Bey began the Curad-1 well in April 2026), the Warsheikh spaceport, a standing offer to Washington of Berbera, Balidogle and Bosaso, and the cancellation of every UAE deal on 12 Jan 2026."
+      confidence: B
+      sources:
+        - {url: "https://www.energyintel.com/0000019d-7724-d588-a19d-7f3eefaa0000", title: "Turkey's TPAO launches ultra-deep drilling off Somalia", publisher: "Energy Intelligence", date: 2026-04, tier: 3}
+        - {url: "https://www.marineinsight.com/somalia-offers-us-exclusive-control-over-key-ports-but-somaliland-rejects/", title: "Somalia offers US exclusive control over key ports, but Somaliland rejects", publisher: "Marine Insight", date: 2025-04, tier: 4}
+        - {url: "https://www.aljazeera.com/news/2026/01/12/somalia-cancels-all-agreements-with-uae-over-alleged-sovereignty-violations", title: "Somalia cancels all agreements with UAE over alleged sovereignty violations", publisher: "Al Jazeera", date: 2026-01-12, tier: 3}
+    - domain: economic
+      text: "Balance-sheet repair as a source of leverage: the December 2023 HIPC completion point (USD 4.5bn of relief; external debt from 64% of GDP in 2018 to under 6% at end 2023), an IMF ECF arrangement raised to about USD 140m in December 2025, and a diaspora that sent USD 3.13bn in 2025 by the central bank's count."
+      confidence: A
+      sources:
+        - {url: "https://www.worldbank.org/en/news/press-release/2023/12/13/imf-and-world-bank-announce-us-4-5-billion-in-debt-relief-for-somalia-afe-1223", title: "IMF and World Bank announce US$4.5 billion in debt relief for Somalia", publisher: "World Bank", date: 2023-12-13, tier: 1}
+        - {url: "https://www.imf.org/en/news/articles/2025/12/08/pr-25412-somalia-imf-concludes-4th-rev-of-ecf-arrangeme-and-approves-req-for-augmentation", title: "Somalia: IMF concludes the 4th review of the ECF arrangement and approves a request for augmentation", publisher: "International Monetary Fund", date: 2025-12-08, tier: 1}
+        - {url: "https://theeastafrican.co.ke/tea/business-tech/diaspora-steady-mogadishu-economy-in-times-of-turmoil-5558440", title: "How diaspora steady Mogadishu economy in times of turmoil", publisher: "The EastAfrican (citing the Central Bank of Somalia)", date: 2026, tier: 3}
+
+  constraints:
+    - text: "The state does not hold its territory. The US entry ban of June 2025 itself says Somalia lacks a competent central authority and control over its territory; al-Shabaab holds or taxes large parts of the south and centre, Puntland has run its own affairs since 2024, Jubaland holds Dolow, Luuq, El Wak and Balad Hawo, Somaliland is outside federal control, and Southwest is in revolt."
+      confidence: A
+      sources:
+        - {url: "https://www.whitehouse.gov/presidential-actions/2025/06/restricting-the-entry-of-foreign-nationals-to-protect-the-united-states-from-foreign-terrorists-and-other-national-security-and-public-safety-threats/", title: "Restricting the entry of foreign nationals to protect the United States from foreign terrorists and other national security and public safety threats", publisher: "The White House", date: 2025-06-04, tier: 1}
+        - {url: "https://www.somaliguardian.com/news/somalia-news/somalia-government-loses-three-towns-48-hours/", title: "Somalia's govt loses three towns in 48 hours as rivals advance", publisher: "Somali Guardian", date: 2026-10-10, tier: 3}
+        - {url: "https://euaa.europa.eu/coi/somalia/2025/security-situation/12-armed-actors-and-relevant-developments/122-al-shabaab-control-areas-presence-and-influence", title: "Al-Shabaab: control, areas, presence and influence (Somalia security situation)", publisher: "European Union Agency for Asylum", date: 2026, tier: 1}
+    - text: "The security transition has no funding. AUSSOM's mandate ends on 31 Dec 2026; troop contributors are owed arrears (about USD 94m for 2022-24 by an ISS count) and the EU's EUR 75m covers 2025 and Q1 2026 costs only; the US, which blocked UN assessed funding for AUSSOM in 2025 (Resolution 2719), said on 1 Jul 2026 it will stop paying UNSOS and oppose any extension of UN logistics support."
+      confidence: B
+      sources:
+        - {url: "https://issafrica.org/iss-today/au-s-somalia-peace-mission-cannot-deliver-on-funding-pledges-alone", title: "AU's Somalia peace mission cannot deliver on funding pledges alone", publisher: "ISS Africa", date: 2025-10-13, tier: 2}
+        - {url: "https://www.africanews.com/amp/2026/07/03/us-to-block-un-funding-for-somalia-in-blow-to-au-peace-mission/", title: "US to block UN funding for Somalia in blow to AU peace mission", publisher: "Africanews", date: 2026-07-03, tier: 3}
+        - {url: "https://theglobalobservatory.org/2026/01/with-aussoms-funding-challenges-here-to-stay-what-are-the-options-for-the-missions-future-in-somalia/", title: "With AUSSOM's funding challenges here to stay, what are the options for the mission's future in Somalia?", publisher: "Global Observatory (International Peace Institute)", date: 2026-01, tier: 2}
+    - text: "Legitimacy is contested at home. The opposition (Somali Future Council, former president Sharif Sheikh Ahmed, Puntland's Deni) does not recognise the extension; US, UK, UN, AU and IGAD voices called for consensus after Halane; and the Turkish-brokered talks of 7-8 July 2026 had no Puntland or Jubaland delegates, who questioned Ankara's neutrality."
+      confidence: B
+      sources:
+        - {url: "https://www.somaliguardian.com/news/somalia-news/international-partners-voice-concern-as-somalia-election-talks-collapse/", title: "International partners voice concern as Somalia election talks collapse", publisher: "Somali Guardian", date: 2026-05, tier: 3}
+        - {url: "https://app.al-monitor.com/originals/2026/07/turkey-brokers-somalia-talks-federal-rifts-test-ankaras-influence", title: "Turkey brokers Somalia talks, federal rifts test Ankara's influence", publisher: "Al-Monitor", date: 2026-07-09, tier: 3}
+        - {url: "https://www.somaliguardian.com/news/somalia-news/sharif-sheikh-ahmed-calls-for-united-national-front-to-save-somalia/", title: "Sharif calls for 'united national front to save Somalia'", publisher: "Somali Guardian", date: 2026-10-08, tier: 3}
+    - text: "An aid shock on a thin budget. Washington halted all assistance to the federal government on 7-8 Jan 2026 (over an allegation of diverted food aid that the UN and Mogadishu call unsubstantiated), and the IMF cites 'persistent and sharp declines in foreign aid'. Remittances (USD 3.13bn in 2025, 24% of GDP by the central bank; 17.7% of GDP in 2024 in the World Bank series) cushion households, not the budget."
+      confidence: B
+      sources:
+        - {url: "https://africanews.com/2026/01/08/somalia-us-halts-assistance-to-federal-government/", title: "Somalia: US halts assistance to federal government", publisher: "Africanews", date: 2026-01-08, tier: 3}
+        - {url: "https://www.imf.org/en/news/articles/2025/12/08/pr-25412-somalia-imf-concludes-4th-rev-of-ecf-arrangeme-and-approves-req-for-augmentation", title: "Somalia: IMF concludes the 4th review of the ECF arrangement and approves a request for augmentation", publisher: "International Monetary Fund", date: 2025-12-08, tier: 1}
+        - {url: "https://theeastafrican.co.ke/tea/business-tech/diaspora-steady-mogadishu-economy-in-times-of-turmoil-5558440", title: "How diaspora steady Mogadishu economy in times of turmoil", publisher: "The EastAfrican (citing the Central Bank of Somalia)", date: 2026, tier: 3}
+        - {url: "https://statisticsoftheworld.com/country/somalia/BX.TRF.PWKR.DT.GD.ZS", title: "Personal remittances received (% of GDP), Somalia (World Bank WDI series)", publisher: "Statistics of the World (World Bank data)", date: 2024, tier: 4}
+    - text: "The patrons collide on Somali soil. The UAE (Berbera, Bosaso) backs the peripheries Mogadishu is trying to bring in; Ethiopia protects Jubaland's Gedo and holds a standing MoU with Somaliland; Kenya backs Madobe and rejected the ICJ maritime ruling of 2021; Turkey, Qatar and Egypt back the centre. No patron buys the whole state."
+      confidence: B
+      sources:
+        - {url: "https://www.theeastafrican.co.ke/tea/news/east-africa/3-somali-regions-reject-mogadishu-s-move-to-sever-uae-ties-5325646", title: "3 Somali regions reject Mogadishu's move to sever UAE ties", publisher: "The EastAfrican", date: 2026-01-13, tier: 3}
+        - {url: "https://www.somaliguardian.com/news/somalia-news/ethiopia-opposes-somali-government-plans-for-parallel-jubaland-administration-in-gedo/", title: "Ethiopia opposes Somali government plans for parallel Jubaland administration in Gedo", publisher: "Somali Guardian", date: 2025-10-12, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2021/10/13/kenya-rejects-icjs-verdict-on-somalia-maritime-border-row", title: "Kenya rejects ICJ's verdict on Somalia maritime border row", publisher: "Al Jazeera", date: 2021-10-13, tier: 3}
+    - text: "A colder Washington. Beyond the aid halt and the UNSOS decision, the US put Somalia on the full entry-ban list (signed 4 Jun 2025), and President Trump answered a question on recognising Somaliland with 'Does anyone know what Somaliland is, really?' while saying he would study a recognition-for-naval-port swap."
+      confidence: B
+      sources:
+        - {url: "https://www.whitehouse.gov/presidential-actions/2025/06/restricting-the-entry-of-foreign-nationals-to-protect-the-united-states-from-foreign-terrorists-and-other-national-security-and-public-safety-threats/", title: "Restricting the entry of foreign nationals to protect the United States from foreign terrorists and other national security and public safety threats", publisher: "The White House", date: 2025-06-04, tier: 1}
+        - {url: "https://www.foxnews.com/world/israel-becomes-first-country-recognize-somaliland-trump-not-ready.print", title: "Israel becomes first country to recognize Somaliland; Trump 'not ready'", publisher: "Fox News", date: 2025-12-26, tier: 3}
+
+  paradoxes:
+    - text: "Survival contracted out to a dozen patrons buys time and sells pieces. Turkey gets a base, the oil blocks, a spaceport and missile range and a mandate to 2028; Egypt a pact aimed past Mogadishu at Ethiopia; Qatar and Saudi Arabia a stake against the UAE; China a vote against Taiwan; Washington strikes but not aid. Each is paid in sovereignty, and the patrons' quarrels (Turkey and the UAE, Egypt and Ethiopia, Israel and Turkey) are then fought on Somali ground. Luttwak's client system with no hegemon: the clients are many, the patron is none."
+      confidence: B
+      sources:
+        - {url: "https://www.meforum.org/mef-observer/turkey-renews-its-somalia-mandate-to-guard-the-spaceport-and-missile-base", title: "Turkey renews its Somalia mandate to guard the spaceport and missile base", publisher: "Middle East Forum", date: 2026-07, tier: 2}
+        - {url: "https://app.al-monitor.com/originals/2026/02/turkey-touts-somalia-spaceport-horn-africa-rivalry-heats", title: "Turkey touts Somalia spaceport as Horn of Africa rivalry heats", publisher: "Al-Monitor", date: 2026-02, tier: 3}
+        - {url: "https://www.thenationalnews.com/news/mena/2026/10/04/egypt-hosts-four-way-summit-as-tensions-with-ethiopia-escalate/", title: "Egypt hosts four-way summit as tensions with Ethiopia escalate", publisher: "The National", date: 2026-10-04, tier: 3}
+    - text: "Centralising to hold the state splits it. The constitutional amendments, the one-person-one-vote plan, the parallel Gedo administration and the disbanding of the Southwest assembly were meant to bind the federal member states; they put Puntland and Jubaland in open opposition, gave Ethiopia and Kenya a reason to shield Madobe, and raised armed rivals (Jubaland in Gedo, Laftagareen in Bay) in the same days al-Shabaab took Hees."
+      confidence: B
+      sources:
+        - {url: "https://www.somaliguardian.com/news/somalia-news/somalia-government-loses-three-towns-48-hours/", title: "Somalia's govt loses three towns in 48 hours as rivals advance", publisher: "Somali Guardian", date: 2026-10-10, tier: 3}
+        - {url: "https://africacenter.org/spotlight/en-elections-2026/somalia/", title: "Somalia: Electoral process under construction amid a security crisis", publisher: "Africa Center for Strategic Studies", date: 2026, tier: 2}
+        - {url: "https://www.somaliguardian.com/news/somalia-news/ethiopia-opposes-somali-government-plans-for-parallel-jubaland-administration-in-gedo/", title: "Ethiopia opposes Somali government plans for parallel Jubaland administration in Gedo", publisher: "Somali Guardian", date: 2025-10-12, tier: 3}
+    - text: "The troops for the front are used in the capital. While the army lost Hees and its offensive against al-Shabaab in Hiran and Middle Shabelle stalled, government forces massed near the homes of former president Sharif and former prime minister Khaire in Mogadishu; opposition figures blame a government that put the 2026 election ahead of security, and Crisis Group warned in 2025 that elite squabbling pulls attention from the fight against al-Shabaab."
+      confidence: B
+      sources:
+        - {url: "https://www.somaliguardian.com/news/somalia-news/somalia-government-masses-forces-near-opposition-leaders-homes-mogadishu/", title: "Somalia: Government forces mass near opposition leaders' homes", publisher: "Somali Guardian", date: 2026-10-11, tier: 3}
+        - {url: "https://www.somaliguardian.com/?p=16428", title: "Three-year govt offensive in tatters as militants regroup in central Somalia", publisher: "Somali Guardian", date: 2025, tier: 3}
+        - {url: "https://www.ecoi.net/en/file/local/2132302/b208-somalia-electoral-showdown.pdf", title: "Somalia: electoral showdown (Crisis Group Africa Briefing 208)", publisher: "International Crisis Group (via ecoi.net)", date: 2025-09, tier: 2}
+    - text: "Cancelling the UAE defended sovereignty and fed the peripheries. Abu Dhabi had already bet on Berbera and Bosaso; Mogadishu's annulment of 12 Jan 2026 was rejected by Puntland, which kept DP World's 30-year Bosaso concession and its UAE-friendly security cooperation, and by Somaliland; the result is a federal government dependent on Turkey and Qatar, and a Puntland and a Somaliland with a patron of their own."
+      confidence: B
+      sources:
+        - {url: "https://www.theeastafrican.co.ke/tea/news/east-africa/3-somali-regions-reject-mogadishu-s-move-to-sever-uae-ties-5325646", title: "3 Somali regions reject Mogadishu's move to sever UAE ties", publisher: "The EastAfrican", date: 2026-01-13, tier: 3}
+        - {url: "https://dawan.africa/news/somalias-puntland-state-reaffirms-uae-security-cooperation", title: "Somalia's Puntland state reaffirms UAE security cooperation", publisher: "Dawan Africa", date: 2026-01, tier: 3}
+        - {url: "https://www.somaliguardian.com/news/somalia-news/somalia-and-qatar-leaders-discuss-closer-cooperation-after-uae-fallout/", title: "Somalia and Qatar leaders discuss closer cooperation after UAE fallout", publisher: "Somali Guardian", date: 2026, tier: 3}
+    - text: "Joining Cairo's ring depends on the state the ring encircles. Ethiopia contributes the troops that hold the Hiran and Gedo border (2,500 allocated against Egypt's 1,091, which are delayed for lack of money), yet Mogadishu sat at the Egypt-Eritrea-Sudan summit of 4 Oct 2026 as Ethiopia accused the same three of backing the Tigray rebels and Egypt and Ethiopia expelled diplomats; Ethiopia can answer by sheltering Jubaland or reviving the Berbera MoU."
+      confidence: C
+      sources:
+        - {url: "https://www.dawan.africa/news/somalia-says-funding-hurdles-delay-egyptian-troops-deployment-to-aussom", title: "Somalia says funding hurdles delay Egyptian troops deployment to AUSSOM", publisher: "Dawan Africa", date: 2026-09-01, tier: 3}
+        - {url: "https://www.thenationalnews.com/news/mena/2026/10/04/egypt-hosts-four-way-summit-as-tensions-with-ethiopia-escalate/", title: "Egypt hosts four-way summit as tensions with Ethiopia escalate", publisher: "The National", date: 2026-10-04, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/10/5/ethiopias-pm-insists-on-access-to-red-sea-despite-regional-conflict-threat", title: "Ethiopian PM Abiy demands Red Sea access as tensions with neighbours rise", publisher: "Al Jazeera", date: 2026-10-05, tier: 3}
+    - text: "The Turkish forward base that protects Mogadishu draws the rivals it is meant to deter. The Warsheikh spaceport doubles, in the reading of regional press, as a missile test range 'threatening Israel'; Israel recognised Somaliland within the same twelve months. The more Somalia is Turkey's outpost, the more attractive Somaliland becomes as the counter-outpost."
+      confidence: C
+      sources:
+        - {url: "https://allafrica.com/stories/202607060081.html", title: "Somalia: Turkey's new Somalia spaceport doubles as missile range, threatening Israel", publisher: "AllAfrica", date: 2026-07-06, tier: 3}
+        - {url: "https://allafrica.com/stories/202601260004.html", title: "Somalia: Israel's recognition of Somaliland - the strategic calculations at play", publisher: "AllAfrica (via Polity)", date: 2026-01-26, tier: 3}
+
+  reading: |
+    Somalia is a state whose survival is contracted out. The federal government in Mogadishu
+    holds a capital, and little else it can call its own; its army is trained and its air power
+    flown by foreigners, its soldiers' allowances are paid by Brussels and the AU when they are
+    paid at all, and its budget rests on an IMF programme and a diaspora. A dozen patrons each
+    buy a piece - Ankara the base, the oil and the space range, Cairo and Asmara a pact aimed at
+    Addis Ababa, Doha and Riyadh a bet against Abu Dhabi, Beijing a vote against Taipei and
+    Hargeisa, Washington an air campaign it will not fully fund - and none of them buys the state,
+    so the patrons' quarrels become Somali politics. Luttwak's logic bites twice. Abroad, the
+    manoeuvre is relational: Mogadishu has learnt to sit at the seams of its patrons (at El Alamein
+    on 4 October, then on the telephone to Abiy on the 5th), but the seams run through its own
+    territory. At home the logic is paradoxical: every step to centralise (the March 2026
+    amendments, one person one vote, the parallel Gedo administration) makes the federation
+    weaker, because Puntland, Jubaland and Southwest answer by leaving, and the second week of
+    October 2026 shows the bill - Hees to al-Shabaab, Balad Hawo to Jubaland, Qansax Dheere to
+    Laftagareen, troops massed against opposition leaders at home. Three signals that are not rows:
+    a report, not confirmed by either government, that Somalia will buy Pakistani JF-17 fighters
+    (14 Oct); a former US ambassador calling the government 'illegitimate' (13 Oct), which is not
+    Washington's position; and the gap between 1,091 Egyptian AUSSOM troops and the 'about 15,000'
+    that The National attributes to Egypt in Somalia, which would mean a bilateral deployment outside
+    AUSSOM that no one has yet documented. The decisive date is 31 December 2026: if UNSOS lapses,
+    AUSSOM's contributors go home and the patrons' bets are exposed; if the US relents or the Gulf
+    pays, the same patrons will have bought the next piece.

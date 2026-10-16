@@ -1,14 +1,98 @@
 id: UGA
 name: Uganda
 type: state
+coords: [32.58, 0.31]
 iso2: ug
 wikipedia: https://en.wikipedia.org/wiki/Uganda
-coords:
-- 32.58
-- 0.31
 seat: Kampala
-regions:
-- world
-card: stub
+regions: [east-africa]
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the Museveni system and hand it on inside the family. Museveni won a seventh term (71.65%, election of 15 Jan 2026, official count as reported) and was sworn in in May 2026. His son Gen. Muhoozi Kainerugaba has been Chief of Defence Forces since March 2024 and announced in August 2026 a bid for the presidency in 2031."
+      confidence: B
+      sources:
+        - {url: "https://allafrica.com/stories/202601180053.html", title: "Museveni Wins Again - Uganda President Secures 7th Term As Bobi Wine Cries Foul", publisher: "allAfrica", date: 2026-01-18, tier: 3}
+        - {url: "https://capitalfm.africa/museveni-names-son-as-army-chief-in-major-reshuffle/", title: "Museveni names son as army chief in major reshuffle", publisher: "Capital FM", date: 2024-03, tier: 3}
+        - {url: "https://www.africanews.com/amp/2026/05/12/ugandas-president-yoweri-museveni-sworn-in-to-seventh-consecutive-term/", title: "Uganda's President Yoweri Museveni sworn in to seventh consecutive term", publisher: "Africanews", date: 2026-05-12, tier: 3}
+        - {url: "https://africanews.com/2026/08/26/uganda-presidents-son-muhoozi-announces-2031-presidential-bid", title: "Uganda president's son Muhoozi announces 2031 presidential bid", publisher: "Africanews", date: 2026-08-26, tier: 3}
+    - rank: 2
+      text: "Hold the eastern DRC frontier and the ADF ground through Operation Shujaa, a joint UPDF-FARDC campaign against the ADF launched in November 2021. Congo-focused research reads it also as protection of the Lake Albert oil area and of roads for Ugandan goods."
+      confidence: B
+      sources:
+        - {url: "https://www.monitor.co.ug/uganda/special-reports/gains-losses-as-operation-shujja-marks-2-years--4456670", title: "Gains, losses as Operation Shujaa marks 2 years", publisher: "Daily Monitor", date: 2023-11, tier: 3}
+        - {url: "https://cic.nyu.edu/publications/uganda’s-operation-shujaa-democratic-republic-congo-fighting-adf-or-securing-economic", title: "Uganda's Operation Shujaa in the Democratic Republic of Congo: Fighting the ADF or Securing Economic Interests?", publisher: "NYU Center on International Cooperation", date: 2025, tier: 2}
+    - rank: 3
+      text: "Turn Lake Albert crude into export revenue through the East African Crude Oil Pipeline (EACOP), 1,443 km from Hoima to Chongoleani near Tanga. The pipeline was 79% complete at end-2025; start-up was targeted for 31 July 2026 and first crude from Tanga for October 2026. Neither date is confirmed in sources found."
+      confidence: C
+      sources:
+        - {url: "https://allafrica.com/stories/202601210605.html", title: "EACOP Progress Hits 79 Percent As Uganda Stays On Track for First Oil in July 2026", publisher: "allAfrica", date: 2026-01-21, tier: 3}
+        - {url: "https://publicisteastafrica.com/eacop-hits-79-completion-as-uganda-and-tanzania-target-october-2026-crude-oil-exports/", title: "EACOP Hits 79% Completion as Uganda and Tanzania Target October 2026 Crude Oil Exports", publisher: "Publicis East Africa", date: 2026, tier: 3}
+
+  means:
+    - domain: military
+      text: "The UPDF as the region's expeditionary force: special forces in Juba since March 2025; a joint campaign in eastern DRC; about 4,500 troops on the AUSSOM list in Somalia, the largest contributor. The army is the regime's core and Muhoozi commands it."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/amp/news/2025/3/11/uganda-deploys-troops-in-south-sudan-as-civil-war-fears-grow", title: "Uganda deploys troops in South Sudan as civil war fears grow", publisher: "Al Jazeera", date: 2025-03-11, tier: 3}
+        - {url: "https://www.monitor.co.ug/uganda/news/national/muhoozi-rallies-african-military-chiefs-as-un-cuts-threaten-somalia-peace-mission-5541254", title: "Muhoozi rallies African military chiefs as UN cuts threaten Somalia peace mission", publisher: "Daily Monitor", date: 2026, tier: 3}
+    - domain: economic
+      text: "Gold trading hub. Declared 2025 gold exports of USD 5.8bn (central bank; USD 3.3bn in 2024), a figure the UN panel puts at USD 6.4bn and above Uganda's own output; 31 t of gold went to the UAE in 2024 (SWISSAID, from UN Comtrade data). The UN finding ties much of the surplus to gold smuggled from Ituri, DRC."
+      confidence: C
+      sources:
+        - {url: "https://www.engineeringnews.co.za/article/ugandas-gold-exports-surged-76-last-year-to-58bn-2026-01-20", title: "Uganda's gold exports surged 76% last year to $5.8bn", publisher: "Engineering News", date: 2026-01-20, tier: 3}
+        - {url: "https://www.africanews.com/2026/07/02/gold-smuggling-from-drcs-ituri-province-to-uganda-on-the-rise-says-un/", title: "Gold smuggling from DRC's Ituri province to Uganda on the rise, says UN", publisher: "Africanews", date: 2026-07-02, tier: 3}
+        - {url: "https://www.ecofinagency.com/news-industry/0611-50175-uae-gold-imports-from-africa-rise-18-in-2024-says-swissaid", title: "UAE gold imports from Africa rise 18% in 2024, says SWISSAID", publisher: "Ecofin Agency", date: 2025-11, tier: 3}
+    - domain: economic
+      text: "Oil and export corridor: EACOP through Tanzania, the Kingfisher field and Tilenga as the first production, the largest prospective source of export income. Schedule slippage is the recurrent risk."
+      confidence: C
+      sources:
+        - {url: "https://allafrica.com/stories/202601210605.html", title: "EACOP Progress Hits 79 Percent As Uganda Stays On Track for First Oil in July 2026", publisher: "allAfrica", date: 2026-01-21, tier: 3}
+    - domain: diplomatic
+      text: "Bilateral cooperation as a lever: a trade and cooperation package with Kenya (state visit to Nairobi, July 2025) and defence talks with Rwanda (Gen. Muhoozi and President Kagame in Kigali, July 2026)."
+      confidence: C
+      sources:
+        - {url: "https://citizen.digital/article/ruto-affirms-strong-ties-with-uganda-as-he-signs-8-mous-with-museveni-n367178", title: "Ruto affirms strong ties with Uganda as he signs 8 MoUs with Museveni", publisher: "Citizen Digital", date: 2025-07, tier: 3}
+        - {url: "https://allafrica.com/stories/202607280322.html", title: "Rwanda: Gen Muhoozi in Kigali for Official Defence Cooperation Visit", publisher: "allAfrica", date: 2026-07-28, tier: 3}
+    - domain: informational
+      text: "Control of the domestic space: an internet blackout on polling day (January 2026) and the UPDF (Amendment) Act 2025, which lets military courts try some civilians (court challenges pending in 2026)."
+      confidence: B
+      sources:
+        - {url: "https://www.theeastafrican.co.ke/tea/news/east-africa/museveni-takes-strong-lead-amid-post-poll-violence-claims-5328682", title: "Museveni takes strong lead amid post-poll violence claims", publisher: "The EastAfrican", date: 2026-01, tier: 3}
+        - {url: "https://www.theeastafrican.co.ke/tea/news/east-africa/uganda-passes-law-allowing-civilian-trials-in-military-courts-5049976", title: "Uganda passes law allowing civilian trials in military courts", publisher: "The EastAfrican", date: 2025-05, tier: 3}
+        - {url: "https://www.amnesty.org/en/latest/news/2025/04/military-courts-the-front-line-of-ugandas-war-on-dissent/", title: "Military courts: the front line of Uganda's war on dissent", publisher: "Amnesty International", date: 2025-04, tier: 3}
+
+  constraints:
+    - text: "Donor leverage is shrinking. The US removed Uganda from AGOA over the Anti-Homosexuality Act of 2023 (Biden notice October 2023, effective 1 January 2024); the World Bank has suspended new loans; the UK said it was appalled in 2023 and sanctioned Speaker Anita Among in 2024 (stated grounds: corruption). No EU sanctions on Uganda were found in 2023-26 sources."
+      confidence: B
+      sources:
+        - {url: "https://www.semafor.com/article/10/31/2023/biden-suspends-uganda-niger-gabon-and-car-from-agoa-trade", title: "Biden's AGOA decision will hurt Ugandan exporters", publisher: "Semafor", date: 2023-10-31, tier: 3}
+        - {url: "https://www.africanews.com/2024/01/03/us-removes-uganda-from-agoa-trade-deal", title: "US removes Uganda from AGOA trade deal", publisher: "Africanews", date: 2024-01-03, tier: 3}
+        - {url: "https://www.africanews.com/amp/2024/04/08/with-the-anti-homosexuality-law-upheld-will-uganda-loose-more-donor-funding/", title: "With the Anti-Homosexuality Act upheld, will Uganda lose more donor funding?", publisher: "Africanews", date: 2024-04-08, tier: 3}
+        - {url: "https://cyprus-mail.com/2023/05/29/uk-govt-says-it-is-appalled-at-ugandas-anti-homosexuality-law", title: "UK govt says it is appalled at Uganda's anti-homosexuality law", publisher: "Cyprus Mail", date: 2023-05-29, tier: 3}
+        - {url: "https://www.theeastafrican.co.ke/tea/news/east-africa/uganda-urges-uk-to-stop-meddling-in-its-affairs-after-sanctions-4609634", title: "Uganda urges UK to stop meddling in its affairs after sanctions", publisher: "The EastAfrican", date: 2024-04, tier: 3}
+    - text: "Refugees: about 2.0 million refugees and asylum-seekers, the largest population in Africa (1,999,576 at 31 March 2026, UNHCR; 2,003,369 registered by 13 April 2026, EU and OCHA update), mostly South Sudanese and Congolese. The 2026 UNHCR appeal was about 14% funded by 31 March 2026; asylum policy changed in February 2026 (individual status determination for all nationalities)."
+      confidence: A
+      sources:
+        - {url: "https://reliefweb.int/report/uganda/uganda-refugee-population-milestone-dg-echo-unhcr-echo-daily-flash-16-april-2026", title: "Uganda refugee population milestone - DG ECHO/UNHCR daily flash, 16 April 2026", publisher: "UN OCHA ReliefWeb", date: 2026-04-16, tier: 1}
+        - {url: "https://data.unhcr.org/en/documents/download/123053", title: "UNHCR Uganda operational data", publisher: "UNHCR", date: 2026-03, tier: 1}
+    - text: "Debt and the budget: public debt about 52% of GDP and about 38% of the 2025/26 budget going to debt service; multilaterals hold about 65% of external debt, China Exim about USD 2.2bn (finance ministry data, end-September 2025)."
+      confidence: B
+      sources:
+        - {url: "https://www.monitor.co.ug/uganda/business/finance/inside-uganda-external-debt-currency-problem-5368036", title: "Inside Uganda's external debt and currency problem", publisher: "Daily Monitor", date: 2025-10, tier: 3}
+
+  paradoxes:
+    - text: "Operation Shujaa is meant to contain the ADF, yet the UN panel reports (leaked July 2025 report) that Ugandan units expanded their presence in eastern DRC on their own initiative, forming a buffer that shielded M23 from counter-attacks. The 2024 panel had reported active support from some officers; Uganda denies it. The campaign that secures the border feeds the war on the other side of it."
+      sources:
+        - {url: "https://www.aljazeera.com/news/2025/7/18/un-experts-cast-blame-on-rwanda-and-uganda-what-are-they-doing-in-drc", title: "UN experts cast blame on Rwanda and Uganda. What are they doing in DRC?", publisher: "Al Jazeera", date: 2025-07-18, tier: 3}
+        - {url: "https://thedefensepost.com/2024/07/10/uganda-dismisses-backing-m23/amp/", title: "Uganda dismisses backing M23 (2024 UN panel report as reported)", publisher: "The Defense Post", date: 2024-07-10, tier: 4}
+    - text: "The gold hub adds export income but draws the scrutiny that cost Uganda its AGOA access: a declared export surplus above its own output is exactly the pattern the UN panel calls smuggled DRC gold. The same trade that pays for the state invites the donor and sanctions attention the state can least afford."
+      sources:
+        - {url: "https://www.africanews.com/2026/07/02/gold-smuggling-from-drcs-ituri-province-to-uganda-on-the-rise-says-un/", title: "Gold smuggling from DRC's Ituri province to Uganda on the rise, says UN", publisher: "Africanews", date: 2026-07-02, tier: 3}
+
+  reading: |
+    Uganda's grand strategy is the survival of the Museveni system, now being handed on to Muhoozi, and it pays for that by becoming a regional security power (Juba, Somalia, eastern DRC) and the corridor for Lake Albert oil and for gold. The 2026 election and the 2025 military courts law show a regime that wins at home by control of information and courts while its donors cool (AGOA lost, aid thin). The army is its strength and its trap: each deployment that secures the regime also ties Uganda to the wars on its borders and to the gold trade the UN now traces. Refugees (about two million, largest in Africa) are the regional weight it cannot shed, funded at a fraction of need. Not verified for this card: Israel and Russia (only a 2019 nuclear agreement and a 2025 letter found), the 2025 US sanctions and aid cuts, Turkey, Saudi Arabia and the Gulf beyond gold, and the Ebola outbreak of 2025.

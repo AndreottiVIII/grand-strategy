@@ -1,0 +1,138 @@
+from: VUT
+relations:
+  # ---------- objective ----------
+  - to: FRA
+    layer: objective
+    type: influence_goal
+    summary: "Vanuatu seeks self-determination for New Caledonia (Kanak independence) and presses it through the Melanesian Spearhead Group, where the FLNKS has been a member since 1989, and at the UN."
+    since: "1989"
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://islandsbusiness.com/?p=35533", title: "MSG leaders push for strong stance on New Caledonia at Tonga summit", publisher: "Islands Business", date: 2024, tier: 3}
+      - {url: "https://www.aljazeera.com/gallery/2024/5/18/violent-protests-rage-in-new-caledonia-amid-growing-civil-unrest", title: "Violent protests rage in New Caledonia amid growing civil unrest", publisher: "Al Jazeera", date: 2024-05-18, tier: 3}
+  - to: IDN
+    layer: objective
+    type: influence_goal
+    summary: "Vanuatu presses Jakarta to admit a UN High Commissioner for Human Rights visit to West Papua, and backs West Papuan claims in the MSG and at the UN; in June 2010 parliament committed the state to West Papua's independence claims and to UN action."
+    since: 2010-06-23
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "http://www.rnzi.com/pages/news.php?op=read&id=54332", title: "Vanuatu to seek UN General Assembly support for ICJ opinion on Indonesia's Papua", publisher: "Radio New Zealand International", date: 2010-06-23, tier: 3}
+      - {url: "https://nit.com.au/14-09-2026/26449/melanesian-countries-look-to-ban-indonesias-regional-status-over-un-permission-to-visit-west-papua", title: "Melanesian countries look to ban Indonesia's regional status over delay of UN visit to West Papua", publisher: "NIT", date: 2026-09-14, tier: 3}
+
+  # ---------- alignment ----------
+  - to: AUS
+    layer: alignment
+    type: treaty
+    summary: "Nakamal Agreement, signed in Canberra on 29 June 2026 after a 2025 deferral: no foreign military base on Vanuatu territory; Australia as primary policing partner; consultation, not a veto, on third-party use of critical infrastructure; a joint committee at least every six months."
+    since: 2026-06-29
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Cost figures conflict: Reuters cites A$500 million over ten years; AP reports that figure was in the draft as originally written, and that Albanese said the final cost would be published by December 2026. Treaty text not read: the terms come from press reports."
+    sources:
+      - {url: "https://courthousenews.com/a-long-awaited-australia-vanuatu-pact-blocks-china-from-building-a-military-base/", title: "A long-awaited Australia-Vanuatu pact blocks China from building a military base", publisher: "AP (via Courthouse News)", date: 2026-06-29, tier: 3}
+      - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/06/29/australia-vanuatu-sign-delayed-security-deal-that-is-seen-as-curbing-china", title: "Australia, Vanuatu sign delayed security deal that is seen as curbing China", publisher: "Reuters (via Internazionale)", date: 2026-06-29, tier: 3}
+      - {url: "https://www.euronews.com/2026/06/29/australia-and-vanuatu-sign-deal-barring-foreign-military-base-on-pacific-island", title: "Australia and Vanuatu sign deal barring foreign military base on Pacific island", publisher: "Euronews", date: 2026-06-29, tier: 3}
+  - to: org-msg
+    layer: alignment
+    type: membership
+    summary: "Founding member of the Melanesian Spearhead Group with Papua New Guinea and Solomon Islands; the Agreed Principles were signed in Port Vila on 14 March 1988. The bloc later admitted the FLNKS (1989) and Fiji (1996); Indonesia is an associate member since 2015."
+    since: 1988-03-14
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://msgsec.info/about-msg/", title: "About MSG", publisher: "Melanesian Spearhead Group Secretariat", date: 2026-10, tier: 1}
+      - {url: "https://islandsbusiness.com/?p=35533", title: "MSG leaders push for strong stance on New Caledonia at Tonga summit", publisher: "Islands Business", date: 2024, tier: 3}
+
+  # ---------- dependency ----------
+  - to: CHN
+    layer: dependency
+    type: debt
+    summary: "Public debt owed to China, estimated by Radio Free Asia at about US$130 million, roughly half of external debt; an AP-republished figure of about US$100 million (about 20 per cent of GDP) conflicts, and no official figure was found."
+    value: 130
+    unit: usd_million
+    since: "2018"
+    until: null
+    last_verified: 2026-10-12
+    confidence: C
+    note: "Figures conflict (US$130 million RFA; US$100 million AP-republished). Date of the RFA figure not confirmed. Since 2018 is the first public reporting in the sources, not the start of any loan."
+    sources:
+      - {url: "https://www.rfa.org/english/special-reports/one-belt-one-road/assets/vanuatu.html", title: "Vanuatu: One Belt One Road special report", publisher: "Radio Free Asia", date: 2026-10, tier: 3}
+  - to: CHN
+    layer: dependency
+    type: debt
+    summary: "Luganville wharf: a China Eximbank concessional loan of RMB 541.9 million, final repayment due in 2034; whether the loan carries a debt-for-equity swap clause is disputed, the government saying no such clause was disclosed and a later think-tank review calling the arrangement non-transparent."
+    value: 541.9
+    unit: cny_million
+    since: "2018"
+    until: "2034"
+    last_verified: 2026-10-12
+    confidence: B
+    note: "Start date of the loan not found: 2018 is when the wharf was first reported in the sources. Press figures for the loan differ and are not reconciled with the RMB figure. The clause question is kept open, not resolved."
+    sources:
+      - {url: "https://china.aiddata.org/projects/37748", title: "Luganville wharf project record (China Eximbank loan)", publisher: "AidData", date: 2026-10, tier: 2}
+      - {url: "https://www.dailypost.vu/news/vanuatus-luganville-wharf-geopolitically-risky---report/article_906e2614-b359-5b04-9ade-9bdf77fffc82.html", title: "Vanuatu's Luganville wharf geopolitically risky - report (undated)", publisher: "Vanuatu Daily Post", date: 2026, tier: 3}
+      - {url: "https://www.pressreader.com/new-zealand/the-post-1022/20180413/281917363660439", title: "Interest grows in Vanuatu's great wharf", publisher: "The Post (NZ)", date: 2018-04-13, tier: 3}
+
+  # ---------- action ----------
+  - to: org-eu
+    layer: action
+    type: sanction
+    summary: "The Council of the EU ended visa-free travel for Vanuatu citizens (decision of 12 December 2024), after a partial suspension from 3 March 2022, over the investor-citizenship scheme that the Council treats as a security and migration risk."
+    since: 2024-12-12
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    note: "Date conflict: the legislative record gives entry into force on 3 February 2025 (regulation finalised 14 January 2025), while some travel sites give 12 December 2024. The decision date is used; the Official Journal settles the legal date."
+    sources:
+      - {url: "https://www.consilium.europa.eu/en/press/press-releases/2024/12/12/vanuatu-council-ends-visa-exemption/", title: "Vanuatu: Council ends visa exemption", publisher: "Council of the EU", date: 2024-12-12, tier: 1}
+      - {url: "https://www.consilium.europa.eu/en/press/press-releases/2022/03/03/vanuatu-council-partially-suspends-visa-waiver-agreement-due-to-risks-posed-by-golden-passport-schemes/", title: "Vanuatu: Council partially suspends visa waiver agreement due to risks posed by golden passport schemes", publisher: "Council of the EU", date: 2022-03-03, tier: 1}
+      - {url: "https://www.ksl.com/article/51209753/eu-revokes-pacific-nations-visa-free-travel-for-its-130k-golden-passport-", title: "EU revokes Pacific nation's visa-free travel for its $130K 'golden passport'", publisher: "KSL (Reuters)", date: 2024-12, tier: 3}
+  - to: AUS
+    layer: action
+    type: agreement
+    summary: "The planned signing of the Nakamal Agreement collapsed hours before Albanese was to fly to Port Vila in September 2025: coalition members withdrew backing, fearing erosion of sovereignty and limits on infrastructure investment; the government said the delay was to allow more time and denied it was about China."
+    since: 2025-09-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/9/9/australian-pm-says-vanuatu-security-climate-agreement-delayed", title: "Australian PM says Vanuatu security, climate agreement delayed", publisher: "Al Jazeera", date: 2025-09-09, tier: 3}
+      - {url: "https://chinaglobalsouth.com/2025/09/10/australia-vanuatu-treaty-china/", title: "Vanuatu Pushes Back on China-Excluding Deal with Australia", publisher: "China Global South", date: 2025-09-10, tier: 3}
+  - to: CHN
+    layer: action
+    type: visit
+    summary: "China's Special Envoy for Pacific Island Countries, Qian Bo, visited Vanuatu from 17 to 19 March 2025 and met PM Jotham Napat, Deputy PM and Finance Minister Johnny Koanapo Rasou and Foreign Minister Marc Ati."
+    since: 2025-03-17
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.mfa.gov.cn/eng/gjhdq_665435/2797_665439/3442_664940/3444_664944/202503/t20250321_11579644.html", title: "Special Envoy Qian Bo visits Vanuatu (PRC Ministry of Foreign Affairs)", publisher: "Ministry of Foreign Affairs of the PRC", date: 2025-03-21, tier: 1}
+  - to: IDN
+    layer: action
+    type: incident
+    summary: "At the 81st UN General Assembly, Jakarta used its right of reply on 28 September 2026 to reject as one-sided the criticism of West Papua by Vanuatu and Solomon Islands; Pacific leaders had asked for an unrestricted visit by the UN High Commissioner for Human Rights."
+    since: 2026-09-28
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://nit.com.au/29-09-2026/26695/pacific-states-urge-jakarta-to-allow-un-access-to-west-papua-at-new-york-general-assembly", title: "Pacific states urge Jakarta to allow UN access to West Papua at New York general assembly", publisher: "NIT", date: 2026-09-29, tier: 3}
+      - {url: "https://nit.com.au/14-09-2026/26449/melanesian-countries-look-to-ban-indonesias-regional-status-over-un-permission-to-visit-west-papua", title: "Melanesian countries look to ban Indonesia's regional status over delay of UN visit to West Papua", publisher: "NIT", date: 2026-09-14, tier: 3}
+  - to: AUS
+    layer: action
+    type: visit
+    summary: "Prime Minister Jotham Napat's first official visit to Australia since taking office, on 29 June 2026, the day the revised Nakamal Agreement was signed in Canberra; Albanese called strengthening ties with Vanuatu central to the shared ambition."
+    since: 2026-06-29
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.pm.gov.au/media/visit-australia-prime-minister-vanuatu", title: "Visit to Australia by the Prime Minister of Vanuatu", publisher: "Australian Government, Prime Minister", date: 2026-06-27, tier: 1}

@@ -8,7 +8,87 @@ coords:
 - 11.6
 seat: Djibouti
 regions:
-- world
-card: stub
+- east-africa
+card: full
 tier: minor
+last_verified: 2026-10-12
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the Horn's trade on one corridor: Djibouti's port carries most of Ethiopia's foreign trade (estimates of 90-95%), and Djibouti wants that monopoly kept against Ethiopia's Assab push and against the Berbera port. In 2026 it offered Ethiopia a 60% stake in the Tadjoura port; Addis wants a corridor on top of any equity."
+      confidence: B
+      sources:
+        - {url: "https://hornreview.org/2026/01/13/abiy-ahmed-at-doraleh-ethiopia-acts-to-protect-its-trade-corridor/", title: "Abiy Ahmed at Doraleh: Ethiopia acts to protect its trade corridor", publisher: "The Horn Review", date: 2026-01-13, tier: 3}
+        - {url: "https://capitalethiopia.com/2026/04/11/djibouti-says-ethiopia-rejected-port-stake-preferring-corridor-access/", title: "Djibouti says Ethiopia rejected port stake, preferring corridor access", publisher: "Capital (Ethiopia)", date: 2026-04-11, tier: 3}
+        - {url: "https://abcnews.com/International/wireStory/ethiopia-demands-access-red-sea-tensions-neighbors-escalate-137007336", title: "Ethiopia again demands access to the Red Sea as tensions with neighbors escalate", publisher: "AP (via ABC News)", date: 2026-10, tier: 3}
+    - rank: 2
+      text: "Deny Somaliland's recognition and keep Berbera from displacing Djibouti as the incumbent port. Djibouti condemned Israel's recognition of Somaliland, closed Somaliland's liaison office, backs Somalia's territorial integrity, and warns that an Israeli base at Berbera would threaten the region."
+      confidence: B
+      sources:
+        - {url: "https://dawan.africa/news/djibouti-condemns-israels-recognition-of-somaliland-reaffirms-support-for-somalias-unity", title: "Djibouti condemns Israel's recognition of Somaliland, reaffirms support for Somalia's unity", publisher: "Dawan Africa", date: 2025-12, tier: 3}
+        - {url: "https://www.somaliguardian.com/news/somalia-news/djibouti-closes-somaliland-liaison-office-over-israel-recognition/", title: "Djibouti closes Somaliland liaison office over Israel recognition", publisher: "Somali Guardian", date: 2026, tier: 3}
+        - {url: "https://www.somaliguardian.com/news/somalia-news/djibouti-president-warns-israeli-base-in-somaliland-would-threaten-regional-stability/", title: "Djibouti president warns Israeli base in Somaliland would threaten regional stability", publisher: "Somali Guardian", date: 2026, tier: 3}
+        - {url: "https://pism.pl/publications/israels-recognition-of-somaliland-heightens-tensions-in-the-horn-of-africa", title: "Israel's Recognition of Somaliland Heightens Tensions in the Horn of Africa", publisher: "PISM", date: 2026, tier: 2}
+        - {url: "https://www.crisisgroup.org/sites/default/files/260-somalia-and-the-gulf-crisis_0.pdf", title: "Somalia and the Gulf crisis", publisher: "International Crisis Group", date: 2018-06, tier: 2}
+    - rank: 3
+      text: "Keep the regime in place. The presidential age cap was removed in October 2025, and Ismail Omar Guelleh, in power since 1999, won a sixth term in April 2026 against one challenger, most of the opposition having boycotted or backed him."
+      confidence: A
+      sources:
+        - {url: "https://www.idea.int/democracytracker/report/djibouti/october-2025", title: "Djibouti - October 2025 (Democracy Tracker)", publisher: "International IDEA", date: 2025-10, tier: 2}
+        - {url: "https://businessday.ng/africa/article/djibouti-lifts-presidential-age-cap-clearing-path-for-guelleh-to-seek-sixth-term/", title: "Djibouti lifts presidential age cap, clearing path for Guelleh to seek sixth term", publisher: "BusinessDay", date: 2025-10, tier: 3}
+        - {url: "https://www.wsls.com/news/world/2026/04/11/djibouti-president-ismail-omar-guelleh-is-reelected-for-a-sixth-term/", title: "Djibouti President Ismail Omar Guelleh is reelected for a sixth term", publisher: "AP (via WSLS)", date: 2026-04-11, tier: 3}
+
+  means:
+    - text: "Diplomatic: the IGAD seat and chair in Djibouti City, used as the room for Horn mediation (Guelleh chairs the heads-of-state meetings); the tripartite with the presidents of Ethiopia and Somalia in March 2026 shows the forum at work."
+      confidence: B
+      sources:
+        - {url: "https://www.pulse.ug/story/igad-members-root-for-constructive-dialogue-between-ethiopia-somalia-2024073111494439494", title: "IGAD members root for constructive dialogue between Ethiopia and Somalia", publisher: "Pulse Uganda", date: 2024-07-31, tier: 3}
+        - {url: "https://www.geeska.com/en/abiy-lands-abu-dhabi-and-timing-says-everything", title: "Abiy lands in Abu Dhabi and timing says everything", publisher: "Geeska Afrika", date: 2026-03, tier: 3}
+    - text: "Port and corridor: Ethiopia's trade is the revenue base of Doraleh and Tadjoura; the February 2026 accord with Ethiopia to deepen cooperation at Doraleh ties that dependence closer, while the 2018 seizure of DP World's terminal kept the terminal in state hands (the awards against the government are unpaid)."
+      confidence: B
+      sources:
+        - {url: "https://allafrica.com/stories/202602270391.html", title: "Ethiopia, Djibouti Agree to Deepen Cooperation At Doraleh Port Amid Shifting Red Sea Geopolitics", publisher: "AllAfrica", date: 2026-02-27, tier: 3}
+        - {url: "https://bairdmaritime.com/amp/story/shipping/ports/court-finds-djibouti-government-guilty-of-seizing-terminal-built-by-dp-world", title: "Court finds Djibouti government guilty of seizing terminal built by DP World", publisher: "Baird Maritime", date: 2025-10-03, tier: 3}
+    - text: "Bases as the economy: rent from foreign forces. US Camp Lemonnier (about USD 63m a year at the 2014 renewal), France (fixed payment rising from EUR 30m to EUR 85m a year under the 2024 treaty), Spain's ORION detachment at the French base and Italy's national base (single-outlet sourcing), Japan's SDF base since 2011, the EU's Atalanta logistics base, and Saudi base talks reported in 2016 and not confirmed since. Turkey and India have lesser military ties (training accords, naval visits, no base found)."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2014/5/6/us-secures-10-year-deal-for-djibouti-base", title: "US secures 10-year deal for Djibouti base", publisher: "Al Jazeera", date: 2014-05-06, tier: 3}
+        - {url: "https://www.elysee.fr/en/emmanuel-macron/2025/03/26/compte-rendu-du-conseil-des-ministres-du-26-mars-2025", title: "Council of Ministers report, 26 March 2025 (bill authorising ratification of the France-Djibouti defence treaty)", publisher: "Elysee (French government record)", date: 2025-03-26, tier: 1}
+        - {url: "https://dawan.africa/news/djibouti-france-sign-new-defence-treaty-to-strengthen-strategic-partnership", title: "Djibouti, France sign new defence treaty to strengthen strategic partnership", publisher: "Dawan Africa", date: 2024-07, tier: 3}
+        - {url: "https://emad.defensa.gob.es/en/operaciones/operaciones-en-el-exterior/42-ATALANTA/Noticias/listado/250128-ni-CIMIC-DATorion.html", title: "Atalanta: ORION detachment at Camp Lemonnier (Spanish Defence Staff)", publisher: "Spanish Ministry of Defence", date: 2025-01-28, tier: 1}
+        - {url: "https://eur-lex.europa.eu/eli/agree_internation/2009/88/oj/eng", title: "Council Decision 2009/88/CFSP on the EU-Djibouti agreement on the status of EU-led forces (Atalanta)", publisher: "EUR-Lex (Official Journal)", date: 2009-02, tier: 1}
+        - {url: "https://en.wikipedia.org/wiki/Japan_Self-Defense_Force_Base_Djibouti", title: "Japan Self-Defense Force Base Djibouti (Wikipedia index; date is the opening year)", publisher: "Wikipedia", date: 2011, tier: 4}
+        - {url: "https://www.gulfnews.com/amp/story/world%2Fgulf%2Fsaudi%2Fsaudi-arabia-to-open-military-base-in-djibouti-1.1686291", title: "Saudi Arabia 'to open military base in Djibouti'", publisher: "Gulf News", date: 2016-03, tier: 3}
+        - {url: "https://www.globalsecurity.org/wmd/library/news/turkey/2025/turkey-250210-turkey-mnd02.htm", title: "Turkish Ministry of National Defence briefing: TCG GEDIZ port visit to Djibouti, 10 February 2025 (via GlobalSecurity)", publisher: "GlobalSecurity.org (Turkish MoD briefing)", date: 2025-02-10, tier: 1}
+        - {url: "https://meacms.mea.gov.in/Portal/ForeignRelation/India_Djibouti_Bilateral_Brief.pdf", title: "India-Djibouti Bilateral Brief", publisher: "Ministry of External Affairs, India", date: 2025, tier: 1}
+
+  constraints:
+    - text: "Water: about 150 mm of rain a year and no permanent rivers; under 5% of the rainfall reaches the water table. Supply depends on desalination and the Ethiopian pipeline, and a World Bank grant of USD 35m (March 2026) targets rural access only."
+      confidence: A
+      sources:
+        - {url: "https://www.worldbank.org/en/news/press-release/2026/03/16/-35-million-grant-to-expand-safe-water-access-for-rural-communities-in-djibouti", title: "$35 million grant to expand safe water access for rural communities in Djibouti", publisher: "World Bank", date: 2026-03-16, tier: 1}
+    - text: "Debt: external debt was 68.1% of GDP in 2022 against 33.9% in 2013, judged unsustainable in 2021 and in distress in 2022; China holds the largest share of external arrears (78% in the joint analysis). Figures read from search summaries of the 2024 joint debt analysis, not from the full text."
+      confidence: C
+      sources:
+        - {url: "https://documents1.worldbank.org/curated/en/099070924145514184/pdf/BOSIB-aab02d8c-de3d-4d6b-8bb7-b924a2cb2776.pdf", title: "Djibouti: joint World Bank-IMF debt sustainability analysis", publisher: "World Bank", date: 2024-07-09, tier: 1}
+        - {url: "https://amp.scmp.com/news/china/diplomacy/article/3201251/djibouti-suspends-china-and-other-loan-repayments-banks-forgiveness", title: "Djibouti suspends China and other loan repayments, banks on forgiveness", publisher: "South China Morning Post", date: 2022-11, tier: 3}
+    - text: "Drought: ten major droughts between 1980 and 2019 by World Bank count, the 2008-2011 drought alone cutting GDP by about 4%; rural residents are far less likely than city dwellers to have basic drinking water."
+      confidence: A
+      sources:
+        - {url: "https://documents1.worldbank.org/curated/en/099021625091529230/text/P506969-19a581d3-8ef9-4521-b0ee-a4aa86899f51.txt", title: "Djibouti rural water project document (DJIRESA), World Bank", publisher: "World Bank", date: 2025-02-16, tier: 1}
+
+  paradoxes:
+    - text: "The bases are the economy and also the target: the Houthi advance towards the Bab al-Mandab brings Camp Lemonnier within reach (Stars and Stripes, September 2026), and the Yemen war has pushed refugees into Obock. Renting the coast to every power makes Djibouti a stake in every war around it."
+      confidence: B
+      sources:
+        - {url: "https://www.stripes.com/theaters/africa/2026-09-16/africom-djibouti-houthi-threat-22870192.html", title: "AFRICOM Djibouti Houthi threat", publisher: "Stars and Stripes", date: 2026-09-16, tier: 3}
+        - {url: "https://aljazeera.com/economy/2026/9/13/red-sea-nations-watch-as-houthis-seize-bab-al-mandeb-strait", title: "Red Sea nations watch as Houthis seize Bab al-Mandeb strait", publisher: "Al Jazeera", date: 2026-09-13, tier: 3}
+    - text: "The 2018 seizure of Doraleh kept the terminal in state hands, but the awards of about USD 685m against the government remain unpaid and DP World's 50-year concession is still binding: Djibouti holds the terminal while owing the claim."
+      confidence: C
+      sources:
+        - {url: "https://bairdmaritime.com/amp/story/shipping/ports/court-finds-djibouti-government-guilty-of-seizing-terminal-built-by-dp-world", title: "Court finds Djibouti government guilty of seizing terminal built by DP World", publisher: "Baird Maritime", date: 2025-10-03, tier: 3}
+
+  reading: |
+    Djibouti sells position. Its state is one port, one railway and a set of rented bases, and its strategy is to be the place every outside power and every landlocked neighbour must pass through, so that no single patron gets it. The threats are the ones that would shrink that position: Ethiopia's search for a sea outlet at Assab, the Berbera project backed by the UAE and Israel, and the Houthi war at the Bab al-Mandab. Water and heat limit any growth beyond rent, and the IGAD seat it hosts is the forum in which it keeps its weight.
