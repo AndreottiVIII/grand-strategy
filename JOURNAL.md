@@ -210,6 +210,22 @@ are marked C.
 Queue: `data/queue.yaml` still marks ZWE as `running` (updated 10:54), so the `--skip-running`
 build leaves its stance and relation files out of `docs/`. Not changed here: it is orchestration state.
 
+## 2026-10-16 · Mirrored readings made structural; the three great powers answer everyone
+
+Davide's screenshot (Bolivia as seen by Washington, 'grievance, open wound' copied from La Paz) led to
+three fixes. (1) The provisional reciprocal is now a structural mirror, not a copy: ally comes back as
+partner unless a dataset treaty binds the pair, reluctance is not mirrored, bond and trend are never
+copied (bond 'not assessed'), confidence C, and the note reads as a reading, not a to-do; the 901
+provisional reciprocals already written into cards were rewritten the same way, and the site marks
+them 'mirrored' in the ledger, the tooltip and the dossier. (2) The reading is shown as paragraphs
+of two or three sentences with the hard line breaks of the YAML collapsed, form only. (3) The three
+great powers wrote their own reading of every card that reads them, on the mirrored evidence with
+no web calls: the United States 124 (87 partner, 21 ally, 10 reluctant ally, 5 reluctant partner,
+Bhutan neutral), China 101 (84 partner, 16 neutral, the Holy See rival for Taipei), Russia 45 (31
+partner, 9 neutral, Monaco, Singapore and San Marino rival for the sanctions, Kyrgyzstan and
+Tajikistan ally by the CSTO). About 830k tokens for the three. Still mirrored: the EU, the UK,
+France, Israel, Ukraine and the other patrons, by the rule in ONTOLOGY.
+
 ## 2026-10-16 · Nine big cards enriched; the hostile one-sided readings answered
 
 Davide, on the run's close: integrate the thinnest big non-superpower cards with Sonnet. Brazil,
