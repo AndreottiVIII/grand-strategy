@@ -7,8 +7,66 @@ coords:
 - -0.2
 - 5.56
 seat: Accra
-regions:
-- world
-card: stub
+regions: [west-africa]
+card: full
 tier: minor
+last_verified: 2026-10-16
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Close the IMF track and keep the fiscal room it leaves. The Extended Credit Facility (US$3bn, 39 months, approved May 2023) ended with the sixth and final review on 27 July 2026, releasing about US$371m; a 36-month non-financing Policy Coordination Instrument follows, with a 2026 primary surplus target of 1.5% of GDP and a debt goal of 45% of GDP by 2034."
+      confidence: B
+      sources:
+        - {url: "https://www.imf.org/en/news/articles/2026/07/27/pr25260-ghana-imf-exec-board-completes-6th-rev-arr-ecf-concludes-2026-aiv-consult-rev-req-36mo-pci", title: "IMF Executive Board Completes the Sixth Review of Ghana's Arrangement Under the Extended Credit Facility, Concludes the 2026 Article IV Consultation, and Reviews Request of a 36-Month Policy Coordination Instrument for Ghana", publisher: "International Monetary Fund", date: 2026-07-27, tier: 1}
+        - {url: "https://www.imf.org/-/media/files/publications/cr/2026/english/1ghaea2026001.pdf", title: "IMF Country Report No. 26/212 - Ghana", publisher: "International Monetary Fund", date: 2026, tier: 1}
+    - rank: 2
+      text: "Finish the external debt restructuring with the commercial creditors who remain: about US$2.7bn, under 5% of pre-restructuring public debt, as the IMF put it in the 2025 review. Domestic restructuring was completed in 2023 and the Eurobonds in October 2024; bilateral deals are largely in place."
+      confidence: B
+      sources:
+        - {url: "https://www.imf.org/en/news/articles/2025/12/17/pr-25429-ghana-imf-completes-the-fifth-review-under-the-ecf-arrangement", title: "IMF Executive Board Completes the Fifth Review under the Extended Credit Facility Arrangement with Ghana", publisher: "International Monetary Fund", date: 2025-12-17, tier: 1}
+        - {url: "https://www.imf.org/en/news/articles/2026/07/27/pr25260-ghana-imf-exec-board-completes-6th-rev-arr-ecf-concludes-2026-aiv-consult-rev-req-36mo-pci", title: "IMF Executive Board Completes the Sixth Review of Ghana's Arrangement Under the Extended Credit Facility, Concludes the 2026 Article IV Consultation, and Reviews Request of a 36-Month Policy Coordination Instrument for Ghana", publisher: "International Monetary Fund", date: 2026-07-27, tier: 1}
+    - rank: 3
+      text: "Keep the Western trade and migration arrangements Accra already holds: the UK Interim Trade Partnership Agreement (signed 2 March 2021) and the 2025 deportation arrangement with the United States, both of which give Ghana something to trade with Washington and London."
+      confidence: B
+      sources:
+        - {url: "https://www.gov.uk/government/news/uk-signs-trade-partnership-agreement-with-ghana", title: "UK signs trade partnership agreement with Ghana", publisher: "GOV.UK", date: 2021-03-02, tier: 1}
+        - {url: "https://www.whitehouse.gov/wp-content/uploads/2025/12/2025-National-Security-Strategy.pdf", title: "National Security Strategy (November 2025)", publisher: "The White House", date: 2025-11, tier: 1}
+
+  means:
+    - domain: economic
+      text: "Gold and the cedi: the IMF credits part of the recovery to favourable gold prices and renewed confidence in the cedi, so the consolidation now rests on a commodity the government does not set."
+      confidence: B
+      sources:
+        - {url: "https://www.imf.org/en/news/articles/2026/07/27/pr25260-ghana-imf-exec-board-completes-6th-rev-arr-ecf-concludes-2026-aiv-consult-rev-req-36mo-pci", title: "IMF Executive Board Completes the Sixth Review of Ghana's Arrangement Under the Extended Credit Facility, Concludes the 2026 Article IV Consultation, and Reviews Request of a 36-Month Policy Coordination Instrument for Ghana", publisher: "International Monetary Fund", date: 2026-07-27, tier: 1}
+    - domain: diplomatic
+      text: "Migration cooperation as currency with Washington: Ghana is among the deportation partners the November 2025 US National Security Strategy names, with El Salvador, Uganda, Eswatini, Burundi and the DRC."
+      confidence: B
+      sources:
+        - {url: "https://www.whitehouse.gov/wp-content/uploads/2025/12/2025-National-Security-Strategy.pdf", title: "National Security Strategy (November 2025)", publisher: "The White House", date: 2025-11, tier: 1}
+
+  constraints:
+    - text: "Spending is the only adjustment lever: the IMF says fiscal adjustment depends heavily on cutting spending despite large development and security needs, and state-owned banks carry high non-performing loans."
+      confidence: B
+      sources:
+        - {url: "https://www.imf.org/-/media/files/publications/cr/2026/english/1ghaea2026001.pdf", title: "IMF Country Report No. 26/212 - Ghana", publisher: "International Monetary Fund", date: 2026, tier: 1}
+        - {url: "https://www.imf.org/en/news/articles/2026/07/27/pr25260-ghana-imf-exec-board-completes-6th-rev-arr-ecf-concludes-2026-aiv-consult-rev-req-36mo-pci", title: "IMF Executive Board Completes the Sixth Review of Ghana's Arrangement Under the Extended Credit Facility, Concludes the 2026 Article IV Consultation, and Reviews Request of a 36-Month Policy Coordination Instrument for Ghana", publisher: "International Monetary Fund", date: 2026-07-27, tier: 1}
+    - text: "Gold dependence: part of the gains came from favourable gold prices, which the IMF calls volatile, so the fiscal path cannot assume them."
+      confidence: B
+      sources:
+        - {url: "https://www.imf.org/en/news/articles/2026/07/27/pr25260-ghana-imf-exec-board-completes-6th-rev-arr-ecf-concludes-2026-aiv-consult-rev-req-36mo-pci", title: "IMF Executive Board Completes the Sixth Review of Ghana's Arrangement Under the Extended Credit Facility, Concludes the 2026 Article IV Consultation, and Reviews Request of a 36-Month Policy Coordination Instrument for Ghana", publisher: "International Monetary Fund", date: 2026-07-27, tier: 1}
+    - text: "Friction with the Sahel reached diplomacy early: in December 2022 Burkina Faso summoned Ghana's ambassador over a presidential claim about Wagner. The headline is the only part read in this pass."
+      confidence: C
+      sources:
+        - {url: "https://www.aljazeera.com/news/2022/12/16/burkina-faso-summons-ghanaian-ambassador-over-wagner-allegations", title: "Burkina Faso summons Ghana envoy over president's claim on Wagner", publisher: "Al Jazeera", date: 2022-12-16, tier: 3}
+
+  paradoxes:
+    - text: "The spending cuts that close the IMF programme are the ones the IMF says leave security and development needs underfunded, so the consolidation that buys lender credibility weakens the capacity the northern border requires."
+      confidence: B
+      sources:
+        - {url: "https://www.imf.org/-/media/files/publications/cr/2026/english/1ghaea2026001.pdf", title: "IMF Country Report No. 26/212 - Ghana", publisher: "International Monetary Fund", date: 2026, tier: 1}
+        - {url: "https://www.imf.org/en/news/articles/2026/07/27/pr25260-ghana-imf-exec-board-completes-6th-rev-arr-ecf-concludes-2026-aiv-consult-rev-req-36mo-pci", title: "IMF Executive Board Completes the Sixth Review of Ghana's Arrangement Under the Extended Credit Facility, Concludes the 2026 Article IV Consultation, and Reviews Request of a 36-Month Policy Coordination Instrument for Ghana", publisher: "International Monetary Fund", date: 2026-07-27, tier: 1}
+
+  reading: |
+    Mahama's government, in office since January 2025, inherits an IMF programme that closes in July 2026 with the debt restructuring largely done, but the fiscal room it buys is narrow and rests on gold prices. Its external currency is transactional: a UK trade framework from 2021 and a 2025 US deportation arrangement, while the northern border is where the Sahel juntas reach Accra. The sources in this pass do not cover the AES outreach, the ECOWAS neighbours, the EU, China, the Gulf or the 2025 anti-LGBT bill, so those rows and stances are open gaps.
