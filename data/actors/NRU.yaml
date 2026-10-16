@@ -8,7 +8,52 @@ coords:
 - -0.55
 seat: Yaren District
 regions:
-- world
-card: stub
+- southeast-asia-oceania
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Live on Australian money. The December 2024 treaty brings A$100m for the budget and A$40m for policing and security over five years, and the Regional Processing Centre adds payments under the August 2025 memorandum on people from Australia's NZYQ cohort."
+    confidence: B
+    sources:
+    - {url: "https://pina.com.fj/2024/12/09/australia-gains-effective-veto-over-nauru-security-pact/", title: "Australia gains effective veto over Nauru security pact", publisher: "PINA (Pacific Islands News Association)", date: 2024-12-09, tier: 3}
+    - {url: "https://www.aspistrategist.org.au/friends-to-all-nauru-australia-security-treaty-brings-confidence-and-stability/", title: "Friends to all: Nauru-Australia security treaty brings confidence and stability", publisher: "ASPI (The Strategist)", date: 2024-12, tier: 2}
+    - {url: "https://nit.com.au/01-09-2025/19965/australia-signs-400m-deportation-deal-with-nauru", title: "Australia signs $400m deportation deal with Nauru", publisher: "NIT", date: 2025-09-01, tier: 3}
+  - rank: 2
+    text: "Turn the seabed into revenue. Nauru sponsors Nauru Ocean Resources Inc. (NORI), the exploration subsidiary of The Metals Company, in the Clarion-Clipperton Zone, under a revised agreement that promises Nauruans a share of any future benefit. The commercial step waits on International Seabed Authority rules that are still unfinished."
+    confidence: C
+    sources:
+    - {url: "https://investors.metals.co/news-releases/news-release-details/tmc-and-nauru-announce-updated-sponsorship-agreement-nauru-ocean", title: "TMC and Nauru Announce Updated Sponsorship Agreement for Nauru Ocean Resources Inc. (NORI)", publisher: "The Metals Company (company release, a party to the deal)", date: 2025, tier: 4}
+    - {url: "https://news.mongabay.com/2026/07/un-regulator-delays-deep-sea-mining-rules-but-extends-criticized-exploration-contract/", title: "UN regulator delays deep sea mining rules but extends criticized exploration contract", publisher: "Mongabay", date: 2026-07, tier: 3}
+  means:
+  - text: "Recognition as currency (diplomatic). Nauru severed relations with Taipei on 15 January 2024, two days after the Taiwan election, and restored them with Beijing on 24 January 2024, leaving Taipei with three Pacific allies."
+    confidence: C
+    sources:
+    - {url: "https://www.business-standard.com/world-news/taiwan-s-pacific-influence-dwindles-as-china-gains-ground-in-island-nations-125090800161_1.html", title: "Taiwan's Pacific influence dwindles as China gains ground in island nations", publisher: "Business Standard", date: 2025-09-08, tier: 3}
+  - text: "The Regional Processing Centre as the economy and the lever (economic). Australia pays Nauru to host its asylum-seeker processing; the August 2025 memorandum extends that to people from the NZYQ cohort. Seabed sponsorship is the second, slower lever, and the only one outside Canberra's hands."
+    confidence: C
+    sources:
+    - {url: "https://nit.com.au/01-09-2025/19965/australia-signs-400m-deportation-deal-with-nauru", title: "Australia signs $400m deportation deal with Nauru", publisher: "NIT", date: 2025-09-01, tier: 3}
+    - {url: "https://islandsbusiness.com/news-break/nauru-and-australia-finalise-long-term-funding-for-refugee-processing/", title: "Nauru and Australia finalise long-term funding for refugee processing", publisher: "Islands Business", date: 2025-04, tier: 3}
+  constraints:
+  - text: "Canberra's veto. The December 2024 treaty requires mutual agreement for any engagement in Nauru's security, banking and telecommunications sectors, so Nauru cannot take a third-party security or banking deal without Australia's consent."
+    confidence: B
+    sources:
+    - {url: "https://pina.com.fj/2024/12/09/australia-gains-effective-veto-over-nauru-security-pact/", title: "Australia gains effective veto over Nauru security pact", publisher: "PINA (Pacific Islands News Association)", date: 2024-12-09, tier: 3}
+    - {url: "https://www.aspistrategist.org.au/friends-to-all-nauru-australia-security-treaty-brings-confidence-and-stability/", title: "Friends to all: Nauru-Australia security treaty brings confidence and stability", publisher: "ASPI (The Strategist)", date: 2024-12, tier: 2}
+  - text: "The seabed rules are not written. Commercial sponsorship depends on the ISA's exploitation rules; the ISA delayed them in July 2026 while extending NORI's exploration contract, and the Seabed Disputes Chamber of the International Tribunal for the Law of the Sea issued provisional orders in the dispute over the company's compliance."
+    confidence: C
+    sources:
+    - {url: "https://isa.org.jm/news/statement-on-the-orders-delivered-by-the-seabed-disputes-chamber-of-the-international-tribunal-for-the-law-of-the-sea/", title: "Statement on the orders delivered by the Seabed Disputes Chamber of the International Tribunal for the Law of the Sea", publisher: "International Seabed Authority", date: 2026-07, tier: 1}
+    - {url: "https://news.mongabay.com/2026/07/un-regulator-delays-deep-sea-mining-rules-but-extends-criticized-exploration-contract/", title: "UN regulator delays deep sea mining rules but extends criticized exploration contract", publisher: "Mongabay", date: 2026-07, tier: 3}
+  paradoxes:
+  - text: "The switch bought a second patron, and the treaty capped it. The January 2024 move to Beijing was followed by a treaty that gives Australia an effective veto over any Chinese role in Nauru's security, banking and telecoms: the price of the new tie was a ceiling set by the old patron."
+    confidence: C
+    sources:
+    - {url: "https://www.business-standard.com/world-news/taiwan-s-pacific-influence-dwindles-as-china-gains-ground-in-island-nations-125090800161_1.html", title: "Taiwan's Pacific influence dwindles as China gains ground in island nations", publisher: "Business Standard", date: 2025-09-08, tier: 3}
+    - {url: "https://pina.com.fj/2024/12/09/australia-gains-effective-veto-over-nauru-security-pact/", title: "Australia gains effective veto over Nauru security pact", publisher: "PINA (Pacific Islands News Association)", date: 2024-12-09, tier: 3}
+  reading: |
+    Nauru has a small economy, and its budget and its migration business come from Canberra; its one lever outside Australia is the seabed sponsorship, which waits on rules the International Seabed Authority has not written. The January 2024 switch from Taipei to Beijing shows that recognition is sold to whoever pays, but the December 2024 treaty capped the new patron by giving Australia a veto over security, banking and telecoms. Nauru therefore sells to several buyers while Canberra keeps the veto, and the Regional Processing Centre is at once its economy and its lever.

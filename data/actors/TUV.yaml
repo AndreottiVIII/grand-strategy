@@ -8,7 +8,65 @@ coords:
 - -8.5
 seat: Funafuti
 regions:
-- world
-card: stub
+- southeast-asia-oceania
+card: full
 tier: minor
-dataset: wikidata
+last_verified: '2026-10-16'
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Keep the recognition of Taiwan and refuse Beijing's pull. Teo's government, in office since February 2024, kept the Taipei ties after the election, ruled out a move to the PRC and dismissed a 'two-China' option; the Taiwan tie is the line Beijing contests."
+    confidence: C
+    sources:
+    - {url: "https://www.pressreader.com/usa/arkansas-democrat-gazette/20240303/281573770648058", title: "Tuvalu to keep Taiwan ties", publisher: "Arkansas Democrat-Gazette (AP wire)", date: '2024-03-03', tier: 3}
+    - {url: "https://www.reuters.com/article/us-taiwan-diplomacy-tuvalu/tuvalu-changes-pm-adds-to-concerns-over-backing-for-taiwan-in-pacific-idUSKBN1W400A", title: "Tuvalu changes PM, adds to concerns over backing for Taiwan in Pacific", publisher: "Reuters", date: '2019-09-19', tier: 3}
+  - rank: 2
+    text: "Hold Australia's security and mobility guarantees in place. The Falepili Union (in force 28 August 2024) obliges Australia to respond when Tuvalu asks for help in a major disaster, a pandemic or military aggression, and opens a pathway for up to 280 Tuvaluans a year."
+    confidence: A
+    sources:
+    - {url: "https://www.pm.gov.au/media/entry-force-historic-australia-tuvalu-falepili-union", title: "Entry into force of historic Australia-Tuvalu Falepili Union", publisher: "Prime Minister of Australia", date: '2024-08-28', tier: 1}
+    - {url: "https://www.dfat.gov.au/geo/tuvalu/australia-tuvalu-falepili-union-treaty", title: "Australia-Tuvalu Falepili Union treaty", publisher: "Department of Foreign Affairs and Trade (Australia)", date: '2024', tier: 1}
+  - rank: 3
+    text: "Keep statehood in perpetuity despite sea-level rise, and carry the climate case to the UN. Pre-visit reporting of November 2025 describes a treaty framework with Taiwan to secure recognition of Tuvalu's statehood as the sea rises; the UN has been its platform since the 2009 Copenhagen protocol."
+    confidence: C
+    sources:
+    - {url: "https://nit.com.au/18-11-2025/21343/tuvalu-treasures-special-relationship-with-taiwan", title: "Tuvalu treasures 'special relationship' with Taiwan", publisher: "NIT (AAP report)", date: '2025-11-18', tier: 3}
+    - {url: "http://www.theaustralian.com.au/news/world/tuvalu-no-longer-small-fry-on-world-stage/story-e6frg6so-1225811159361", title: "Tuvalu no longer small fry on world stage", publisher: "The Australian", date: '2009-12', tier: 3}
+
+  means:
+  - domain: diplomatic
+    text: "Recognition and treaty as the two external levers. Taiwan keeps a resident embassy and put US$7.06 million into the budget in 2019; the Falepili Union requires that any new defence or security engagement with third parties is agreed with Canberra, the clause that makes Australia's say decisive."
+    confidence: B
+    sources:
+    - {url: "https://www.reuters.com/article/us-taiwan-diplomacy-tuvalu/tuvalu-changes-pm-adds-to-concerns-over-backing-for-taiwan-in-pacific-idUSKBN1W400A", title: "Tuvalu changes PM, adds to concerns over backing for Taiwan in Pacific", publisher: "Reuters", date: '2019-09-19', tier: 3}
+    - {url: "http://www.rnzi.com/pages/news.php?op=read&id=37244", title: "Taiwan thanks Tuvalu for its backing", publisher: "Radio New Zealand International", date: '2007-12-27', tier: 3}
+    - {url: "https://www.dfat.gov.au/geo/tuvalu/australia-tuvalu-falepili-union-treaty", title: "Australia-Tuvalu Falepili Union treaty", publisher: "Department of Foreign Affairs and Trade (Australia)", date: '2024', tier: 1}
+  - domain: economic
+    text: "Resource rents as the budget. Tuna access is the largest earner: licence receipts reached US$43 million in 2023 and about three-fifths of locally generated government income comes from tuna licences. The .tv domain lease is the second pillar, at about A$11 million in the 2025-26 budget projections (a secondary reading, not yet checked against the budget papers)."
+    confidence: C
+    sources:
+    - {url: "https://cove.army.gov.au/article/kyr-tuvalu-economy", title: "Tuvalu - facts and figures (economy)", publisher: "Australian Army (Country Guide)", date: '2023', tier: 1}
+    - {url: "https://apibc.org.au/2025/tuvalus-tuna-revenue-declines-amid-warming-seas/", title: "Tuvalu's tuna revenue declines amid warming seas", publisher: "APIBC", date: '2025-08', tier: 3}
+    - {url: "https://seasia.co/2026/07/24/tuvalu-a-sinking-country-with-one-of-the-worlds-most-valuable-internet-domains", title: "Tuvalu: a sinking country with one of the world's most valuable internet domains", publisher: "Seasia", date: '2026-07-24', tier: 4}
+
+  constraints:
+  - text: "Volatile income. Tuna licences shrink as stocks move into international waters: receipts fell about 40% over five years, so the largest source of income is also the least stable."
+    confidence: C
+    sources:
+    - {url: "https://apibc.org.au/2025/tuvalus-tuna-revenue-declines-amid-warming-seas/", title: "Tuvalu's tuna revenue declines amid warming seas", publisher: "APIBC", date: '2025-08', tier: 3}
+  - text: "Donor dependence for the budget. Taiwan put US$7.06 million into the budget in 2019 (Reuters) and Australia is a major donor of aid and technical assistance (DFAT, 2019); the state cannot replace these funders alone."
+    confidence: B
+    sources:
+    - {url: "https://www.reuters.com/article/us-taiwan-diplomacy-tuvalu/tuvalu-changes-pm-adds-to-concerns-over-backing-for-taiwan-in-pacific-idUSKBN1W400A", title: "Tuvalu changes PM, adds to concerns over backing for Taiwan in Pacific", publisher: "Reuters", date: '2019-09-19', tier: 3}
+    - {url: "https://dfat.gov.au/geo/tuvalu/development-assistance/pages/development-assistance-in-tuvalu.aspx", title: "Development assistance in Tuvalu", publisher: "Department of Foreign Affairs and Trade (Australia)", date: '2019-04', tier: 1}
+
+  paradoxes:
+  - text: "The Falepili Union protects the state but binds the choices it most wants. Tuvalu agrees with Australia any new defence or security engagement with third parties, so a stronger treaty with Taiwan, or any security step outside the Australian orbit, needs Canberra's assent."
+    confidence: C
+    sources:
+    - {url: "https://www.dfat.gov.au/geo/tuvalu/australia-tuvalu-falepili-union-treaty", title: "Australia-Tuvalu Falepili Union treaty", publisher: "Department of Foreign Affairs and Trade (Australia)", date: '2024', tier: 1}
+    - {url: "https://nit.com.au/18-11-2025/21343/tuvalu-treasures-special-relationship-with-taiwan", title: "Tuvalu treasures 'special relationship' with Taiwan", publisher: "NIT (AAP report)", date: '2025-11-18', tier: 3}
+
+  reading: |
+    Tuvalu's strategy is survival through recognition and treaty, not power: it keeps Taipei against Beijing's pull, binds itself to Canberra through the Falepili Union, and turns the climate case into a claim to statehood in perpetuity. Its budget rests on tuna access, which shrinks as the fish move, on a .tv lease, and on donors it cannot replace, so its freedom of action is largely borrowed. The paradox is that the treaty which keeps the state secure also needs Australia's agreement for any new security step, so the stronger the Taiwan ties become, the more Canberra's assent matters.

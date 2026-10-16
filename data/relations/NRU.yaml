@@ -1,0 +1,88 @@
+from: NRU
+relations:
+  # ---------- alignment ----------
+  - to: AUS
+    layer: alignment
+    type: treaty
+    summary: "Nauru-Australia treaty (December 2024): mutual agreement required for any engagement in Nauru's security, banking and telecommunications sectors, with A$100m for the budget and A$40m for policing and security over five years. The same treaty is recorded in data/relations/AUS.yaml with the same sources. PINA: an 'effective veto'; ASPI: 'friends to all'. Entry into force not confirmed in the sources read."
+    since: 2024-12-09
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://pina.com.fj/2024/12/09/australia-gains-effective-veto-over-nauru-security-pact/", title: "Australia gains effective veto over Nauru security pact", publisher: "PINA (Pacific Islands News Association)", date: 2024-12-09, tier: 3}
+      - {url: "https://www.aspistrategist.org.au/friends-to-all-nauru-australia-security-treaty-brings-confidence-and-stability/", title: "Friends to all: Nauru-Australia security treaty brings confidence and stability", publisher: "ASPI (The Strategist)", date: 2024-12, tier: 2}
+
+  - to: CHN
+    layer: alignment
+    type: recognition
+    summary: "Nauru recognises the People's Republic of China again, after severing relations with Taipei on 15 January 2024. The restoration date (24 January 2024) comes from a Wikipedia citation to Reuters (25 January 2024), not opened; the Business Standard source gives the severance."
+    since: 2024-01-24
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.business-standard.com/world-news/taiwan-s-pacific-influence-dwindles-as-china-gains-ground-in-island-nations-125090800161_1.html", title: "Taiwan's Pacific influence dwindles as China gains ground in island nations", publisher: "Business Standard", date: 2025-09-08, tier: 3}
+
+  - to: org-pif
+    layer: alignment
+    type: membership
+    summary: "Full member of the Pacific Islands Forum. Not in the Wikidata membership rows. The source is the Forum's member-states page, the same page the dataset cites for Australia; Nauru's line on the page was not read in this run, so confidence is C. Entry date not checked."
+    since: null
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://forumsec.org/who-we-are", title: "Pacific Islands Forum - member states", publisher: "Pacific Islands Forum", date: 2026-10-12, tier: 1}
+
+  # ---------- dependency ----------
+  - to: AUS
+    layer: dependency
+    type: investment
+    summary: "Budget support under the December 2024 treaty: A$100m over five years, with A$40m for policing and security. The vocabulary has no aid type, so budget support is logged as investment, as TON.yaml logs relief as an incident."
+    value: 100
+    unit: aud_million_budget_support_5y
+    since: 2024-12-09
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://pina.com.fj/2024/12/09/australia-gains-effective-veto-over-nauru-security-pact/", title: "Australia gains effective veto over Nauru security pact", publisher: "PINA (Pacific Islands News Association)", date: 2024-12-09, tier: 3}
+      - {url: "https://www.aspistrategist.org.au/friends-to-all-nauru-australia-security-treaty-brings-confidence-and-stability/", title: "Friends to all: Nauru-Australia security treaty brings confidence and stability", publisher: "ASPI (The Strategist)", date: 2024-12, tier: 2}
+
+  - to: AUS
+    layer: dependency
+    type: investment
+    summary: "Regional Processing Centre payments under the August 2025 memorandum: reported as $408m up front, once the first transferees arrive, and $70m a year for resettlement. The currency is as printed in the press. The NIT article could not be opened (HTTP 403); the figures come from the search summary of several outlets and are C for that reason."
+    value: 408
+    unit: million_up_front_reported
+    since: 2025-08
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://nit.com.au/01-09-2025/19965/australia-signs-400m-deportation-deal-with-nauru", title: "Australia signs $400m deportation deal with Nauru", publisher: "NIT", date: 2025-09-01, tier: 3}
+      - {url: "https://islandsbusiness.com/news-break/nauru-and-australia-finalise-long-term-funding-for-refugee-processing/", title: "Nauru and Australia finalise long-term funding for refugee processing", publisher: "Islands Business", date: 2025-04, tier: 3}
+
+  # ---------- action ----------
+  - to: AUS
+    layer: action
+    type: agreement
+    summary: "Memorandum of understanding signed in Nauru in late August 2025 by Australia's Home Affairs Minister, Tony Burke, and the government of President David Adeang: Nauru takes people from Australia's NZYQ cohort (people freed after the High Court's ruling against indefinite detention), under long-term visas. The press reported about 280 people. Legal challenges followed in Australia."
+    since: 2025-08
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://nit.com.au/01-09-2025/19965/australia-signs-400m-deportation-deal-with-nauru", title: "Australia signs $400m deportation deal with Nauru", publisher: "NIT", date: 2025-09-01, tier: 3}
+
+  - to: TWN
+    layer: action
+    type: incident
+    summary: "Nauru severed diplomatic relations with Taipei on 15 January 2024, two days after the Taiwan election, leaving Taipei with three Pacific allies (from six in 2019). Mirrors data/relations/TWN.yaml, same source. The Taiwan non-recognition row sits in the datasets, not here."
+    since: 2024-01-15
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.business-standard.com/world-news/taiwan-s-pacific-influence-dwindles-as-china-gains-ground-in-island-nations-125090800161_1.html", title: "Taiwan's Pacific influence dwindles as China gains ground in island nations", publisher: "Business Standard", date: 2025-09-08, tier: 3}
