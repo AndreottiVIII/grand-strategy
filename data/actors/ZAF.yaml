@@ -1,5 +1,6 @@
 id: ZAF
 name: South Africa
+short: South Africa
 type: state
 iso2: za
 wikipedia: https://en.wikipedia.org/wiki/South_Africa
@@ -8,7 +9,77 @@ coords:
 - -29.1
 seat: Bloemfontein
 regions:
-- world
-card: stub
-tier: minor
+- southern-africa
+card: full
+tier: secondary
 dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      confidence: B
+      text: "Win back US market access after the 2025 break: AGOA lapsed on 30 September 2025, was renewed only to the end of 2026 (signed 3 February 2026, applied back to the lapse), and the 30% US tariff of 7 August 2025 still applies. Pretoria negotiates for relief and does not retaliate."
+      sources:
+        - {url: "https://businessreport.co.za/business/economy/2026-02-04-agoa-extension-signed-into-law-but-south-africa-remains-on-the-tariff-frontline", title: "AGOA extension signed into law but South Africa remains on the tariff frontline", publisher: "Business Report", date: 2026-02-04, tier: 3}
+        - {url: "https://www.dailymaverick.co.za/article/2025-10-22-agoa-has-lapsed-but-us-mulls-extension", title: "AGOA has lapsed but US mulls extension", publisher: "Daily Maverick", date: 2025-10-22, tier: 3}
+    - rank: 2
+      confidence: B
+      text: "Win the genocide case against Israel at the ICJ and keep Gaza on the Global South's agenda: the application of 29 December 2023 is in the written phase, Palestine intervened on 3 June 2024, and Colombia withdrew its declaration on 22 September 2026."
+      sources:
+        - {url: "https://www.icj-cij.org/case/192", title: "South Africa v. Israel: Application of the Genocide Convention in the Gaza Strip (case page)", publisher: "International Court of Justice", date: 2026-09-22, tier: 1}
+    - rank: 3
+      confidence: B
+      text: "Keep the continental and Global South standing that the 2025 G20 presidency gave it: Nigeria contests the lead on the continent, and BRICS and the G20 are the stages where Pretoria claims a voice for Africa."
+      sources:
+        - {url: "https://saiia.org.za/research/has-south-africa-overtaken-nigeria-as-africas-giant/", title: "Has South Africa Overtaken Nigeria as Africa's Giant?", publisher: "SAIIA", date: 2025-07-30, tier: 2}
+        - {url: "https://www.timeslive.co.za/news/business/2026-03-28-mashatile-urges-reset-of-south-africachina-trade-ties-to-boost-value-added-exports/", title: "Mashatile urges reset of South Africa-China trade ties to boost value-added exports", publisher: "TimesLive", date: 2026-03-28, tier: 1}
+    - rank: 4
+      confidence: B
+      text: "Restore growth and the rand: economists polled by Reuters expected Q2 2026 GDP to contract 0.1% quarter on quarter after 0.5% growth in Q1, so the priority is to keep the grid and the mines running and to make the China trade grow."
+      sources:
+        - {url: "https://engineeringnews.co.za/print-version/south-african-rand-slips-ahead-of-gdp-data-expected-to-show-a-decline-2026-09-08", title: "South African rand slips ahead of GDP data expected to show a decline", publisher: "Engineering News (Reuters preview)", date: 2026-09-08, tier: 3}
+        - {url: "https://southafrica.un.org/en/309015-macroeconomic-trends-south-africa-january-2026", title: "Macroeconomic Trends in South Africa, January 2026", publisher: "UN South Africa", date: 2026-01, tier: 1}
+
+  means:
+    - text: "Economic: China is the largest trading partner, at about USD 36.4bn in 2025, with platinum, gold and ores among the main exports and a duty-free deal for some goods still being finalised. The mineral base is the lever; the trade balance is the weakness."
+      sources:
+        - {url: "https://www.timeslive.co.za/news/business/2026-03-28-mashatile-urges-reset-of-south-africachina-trade-ties-to-boost-value-added-exports/", title: "Mashatile urges reset of South Africa-China trade ties to boost value-added exports", publisher: "TimesLive", date: 2026-03-28, tier: 1}
+        - {url: "https://capeargus.co.za/news/2025-09-23-south-africa-and-china-strengthen-ties-through-investment-and-cooperation", title: "South Africa and China strengthen ties through investment and cooperation", publisher: "Cape Argus", date: 2025-09-23, tier: 3}
+    - text: "Diplomatic: the G20 seat and presidency of 2025, the BRICS membership, and the ICJ case as a tool of norm-setting that costs little and is aimed at Washington and Tel Aviv alike."
+      sources:
+        - {url: "https://www.icj-cij.org/case/192", title: "South Africa v. Israel: Application of the Genocide Convention in the Gaza Strip (case page)", publisher: "International Court of Justice", date: 2026-09-22, tier: 1}
+        - {url: "https://saiia.org.za/research/has-south-africa-overtaken-nigeria-as-africas-giant/", title: "Has South Africa Overtaken Nigeria as Africa's Giant?", publisher: "SAIIA", date: 2025-07-30, tier: 2}
+    - text: "Military: the largest contributor to the SADC mission in Mozambique (about 1,500 troops in Cabo Delgado from 2021 until the authorisation lapsed in April 2024), and a force in eastern DRC under SAMIDRC that was withdrawn in 2025."
+      sources:
+        - {url: "https://www.aimnews.org/2024/04/16/south-african-forces-leaving-samim-as-presidential-authorization-ends/", title: "South African forces leaving SAMIM as presidential authorization ends", publisher: "AIM News", date: 2024-04-16, tier: 3}
+        - {url: "https://www.dailymaverick.co.za/article/2025-04-29-south-african-and-other-sadc-troops-finally-begin-withdrawal-from-war-torn-drc", title: "South African and other SADC troops finally begin withdrawal from war-torn DRC", publisher: "Daily Maverick", date: 2025-04-29, tier: 3}
+
+  constraints:
+    - text: "The grid: Reserve Bank estimated in 2023 that rolling blackouts cost between R204m and R899m a day. Eskom's own winter 2026 outlook promises no load-shedding, but the grid still caps growth."
+      sources:
+        - {url: "https://www.news24.com/business/economy/load-shedding-costs-sa-r900m-a-day-says-reserve-bank-20230206", title: "Load shedding costs SA R900m a day, says Reserve Bank", publisher: "News24", date: 2023-02-06, tier: 3}
+        - {url: "https://www.freshplaza.com/africa/article/9831932/south-africa-expects-no-load-shedding-in-winter-2026/", title: "South Africa expects no load shedding in winter 2026", publisher: "FreshPlaza", date: 2026, tier: 3}
+    - text: "The rand and the fiscal room: the rand traded near 16.04 to the dollar on 8 September 2026, and the economy was expected to contract in Q2, so the state has little money for distant missions or for buying influence."
+      sources:
+        - {url: "https://engineeringnews.co.za/print-version/south-african-rand-slips-ahead-of-gdp-data-expected-to-show-a-decline-2026-09-08", title: "South African rand slips ahead of GDP data expected to show a decline", publisher: "Engineering News (Reuters preview)", date: 2026-09-08, tier: 3}
+    - text: "Military overstretch: 14 South African soldiers were killed in clashes with M23 in eastern DRC in January 2025, the SADC mandate was ended in March 2025, and the Mozambique force was financed mostly by Pretoria through the SADC Peace Fund."
+      sources:
+        - {url: "https://www.dailymaverick.co.za/article/2025-04-29-south-african-and-other-sadc-troops-finally-begin-withdrawal-from-war-torn-drc", title: "South African and other SADC troops finally begin withdrawal from war-torn DRC", publisher: "Daily Maverick", date: 2025-04-29, tier: 3}
+        - {url: "https://www.engineeringnews.co.za/article/south-africa-main-funder-for-sadc-mission-in-mozambique-which-is-protecting-whole-bloc-2022-04-13", title: "South Africa main funder for SADC mission in Mozambique, which is protecting whole bloc", publisher: "Engineering News", date: 2022-04-13, tier: 3}
+
+  paradoxes:
+    - text: "The 2025 G20 presidency put South Africa at the centre of the Global South and cost it the US trade bridge: Washington boycotted the Johannesburg summit, struck South Africa from the 2026 G20 in Miami, and let AGOA lapse."
+      sources:
+        - {url: "https://truthsocial.com/@realDonaldTrump/posts/115617700844849134", title: "Truth Social post of 26 Nov 2025 (South Africa not invited to the 2026 G20 in Miami; payments and subsidies to stop)", publisher: "Truth Social (presidential statement)", date: 2025-11-26, tier: 1}
+        - {url: "https://www.dailymaverick.co.za/article/2025-10-22-agoa-has-lapsed-but-us-mulls-extension", title: "AGOA has lapsed but US mulls extension", publisher: "Daily Maverick", date: 2025-10-22, tier: 3}
+    - text: "The ICJ case that earns standing in the Global South is the same case Washington cites when it cuts aid: Executive Order 14204 names the ICJ case among the 'egregious actions' of the Republic."
+      sources:
+        - {url: "https://www.whitehouse.gov/presidential-actions/2025/02/addressing-egregious-actions-of-the-republic-of-south-africa/", title: "Addressing egregious actions of the Republic of South Africa (Executive Order 14204)", publisher: "The White House", date: 2025-02-07, tier: 1}
+        - {url: "https://www.icj-cij.org/case/192", title: "South Africa v. Israel: Application of the Genocide Convention in the Gaza Strip (case page)", publisher: "International Court of Justice", date: 2026-09-22, tier: 1}
+    - text: "The more China buys, the more the economy locks into raw exports: South Africa sells minerals and farm goods to China and buys manufactures back, so the trade that grows is the one Pretoria itself says must be rebalanced."
+      sources:
+        - {url: "https://www.timeslive.co.za/news/business/2026-03-28-mashatile-urges-reset-of-south-africachina-trade-ties-to-boost-value-added-exports/", title: "Mashatile urges reset of South Africa-China trade ties to boost value-added exports", publisher: "TimesLive", date: 2026-03-28, tier: 1}
+
+  reading: |
+    South Africa under Ramaphosa's government of national unity has moved from a balance between the West and the Global South to a deliberate Global South stance, with the ICJ case, BRICS and the 2025 G20 presidency as its instruments of standing. The United States is its main rival in 2025-26, but the rivalry runs on tariffs, aid and the Afrikaner refugee question rather than on existence, and the AGOA lapse shows how cheaply Washington can apply pressure. China is the commercial anchor, and the trade deal in preparation is the test of whether Pretoria can turn minerals into value. The constraints are at home (the grid, the rand, a stalled economy) and in the neighbourhood (Nigeria's leadership claim, a withdrawn DRC force), so the stance is louder than the capacity behind it.

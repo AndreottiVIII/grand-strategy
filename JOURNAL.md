@@ -1,5 +1,25 @@
 # Journal
 
+## 2026-10-16 · Zimbabwe (ZWE) minor card, Flash: thin, with gaps logged
+
+Minor card, five web calls at most. `tools/briefs/ZWE.md` does not exist in the repo, so the card
+was written from the brief as given in the request. Written: the actor card (2 objectives, 2 means,
+2 constraints, 1 paradox, 3-sentence reading), 2 stances (CHN partner
+C, USA rival C), 2 relation rows (both CHN: Bikita investment USD 180m, 2022; 1.128 Mt concentrate
+exported in 2025). Build passes with `--skip-running`; the plain build fails only on COD and ZAF, not ZWE.
+
+Gaps (no source read, so nothing written): Russia, South Africa, the United Kingdom, the European
+Union, Mozambique and the Beira corridor; the Commonwealth readmission bid; the arrears talks; the
+ZiG currency; the SADC chair of 2024-25. The Wikipedia foreign-relations page covered none of them
+(only the 2018 Commonwealth bid and the 2003 withdrawal). Reuters and AP are blocked for this
+agent's search tool, so the sources are Al Jazeera only. The 2030 term-extension signature date
+is unverified: the fetched article (24 June 2026) says the bill still needed the president's
+signature. Most 2026 lithium figures come from search results on articles not opened; those rows
+are marked C.
+
+Queue: `data/queue.yaml` still marks ZWE as `running` (updated 10:54), so the `--skip-running`
+build leaves its stance and relation files out of `docs/`. Not changed here: it is orchestration state.
+
 ## 2026-10-16 · Burst at the weekly reset: 113 cards; Southeast Asia, Oceania, North Africa and the Horn
 
 Davide at the reset: burn the expiring five-hour window with as many cards as possible, then

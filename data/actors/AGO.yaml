@@ -8,7 +8,62 @@ coords:
 - -8.84
 seat: Luanda
 regions:
-- world
-card: stub
+- southern-africa
+card: full
 tier: minor
+last_verified: '2026-10-16'
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Use the African Union chair and the Luanda process to make Angola the broker of Central Africa's wars. President Lourenco chaired the AU in 2025. Angola ran the DRC-Rwanda talks from the 2022 Luanda Roadmap and in March 2025 announced it was stepping back as mediator to focus on the AU presidency."
+      confidence: C
+      sources:
+        - {url: "https://allafrica.com/stories/202410210389.html", title: "Africa: The Revived Luanda Process - Inching Towards Peace in East DRC?", publisher: "allAfrica", date: 2024-10-21, tier: 3}
+        - {url: "https://www.ewn.co.za/2025/03/24/angola-relinquishes-mediator-role-in-dr-congo-conflict", title: "Angola relinquishes mediator role in DR Congo conflict", publisher: "EWN", date: 2025-03-24, tier: 3}
+        - {url: "https://www.africanews.com/amp/2022/07/07/drc-rwanda-agree-to-de-escalate-tensions-at-a-mini-summit-in-luanda/", title: "DRC, Rwanda agree to de-escalate tensions at a mini-summit in Luanda", publisher: "Africanews", date: 2022-07-07, tier: 3}
+    - rank: 2
+      text: "Turn the Lobito corridor into Western finance and an export route that does not run on Chinese loans. The US Development Finance Corporation signed a USD 553m loan for the Lobito Atlantic Railway consortium on 17 December 2025, and oil-backed debt to China fell from USD 10.1bn at end-2024 to about USD 7.7bn at end-2025 (finance ministry data, as reported)."
+      confidence: C
+      sources:
+        - {url: "https://www.ecofinagency.com/news/1912-51572-trump-administration-advances-biden-era-financing-for-angola-s-lobito-corridor", title: "Trump administration advances Biden-era financing for Angola's Lobito corridor", publisher: "Ecofin Agency", date: 2025-12, tier: 3}
+        - {url: "https://hydrocarbonprocessing.com/news/2026/02/angolas-state-oil-firm-sonangol-seeks-48-b-loan-from-china-for-refinery/", title: "Angola's state oil firm Sonangol seeks $4.8 B loan from China for refinery", publisher: "Hydrocarbon Processing", date: 2026-02, tier: 3}
+        - {url: "https://businessfront.com/energy/news/angolas-oil-backed-loans-from-china-to-fall-below-8-billion-by-end-of-2025/", title: "Angola's oil-backed loans from China to fall below $8 billion by end of 2025", publisher: "Business Front", date: 2025, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "The AU chair and the Luanda venue. Lourenco chaired the African Union in 2025, and Luanda hosted the 2022 DRC-Rwanda roadmap that de-escalated tensions. The mediator's chair was given up in March 2025, so the means is now a title and a venue, not a standing negotiating role."
+      confidence: C
+      sources:
+        - {url: "https://www.africanews.com/amp/2022/07/07/drc-rwanda-agree-to-de-escalate-tensions-at-a-mini-summit-in-luanda/", title: "DRC, Rwanda agree to de-escalate tensions at a mini-summit in Luanda", publisher: "Africanews", date: 2022-07-07, tier: 3}
+        - {url: "https://www.ewn.co.za/2025/03/24/angola-relinquishes-mediator-role-in-dr-congo-conflict", title: "Angola relinquishes mediator role in DR Congo conflict", publisher: "EWN", date: 2025-03-24, tier: 3}
+    - domain: economic
+      text: "Oil is the rent that pays for the state. Output fell from 1.42 to 1.1 million barrels a day between 2019 and 2023, and China takes nearly 72% of Angolan oil exports. Angola left OPEC on 1 January 2024 after a quota dispute: OPEC+ set its 2024 target at 1.11m barrels a day, below the 1.18m Angola had asked for."
+      confidence: C
+      sources:
+        - {url: "https://adf-magazine.com/2024/09/as-china-buys-less-oil-angola-struggles-to-repay-debt/", title: "As China buys less oil, Angola struggles to repay debt", publisher: "ADF Magazine", date: 2024-09, tier: 3}
+        - {url: "https://www.ogj.com/general-interest/economics-markets/article/14303147/angola-to-leave-opec-in-2024", title: "Angola to leave OPEC in 2024", publisher: "Oil & Gas Journal", date: 2023-12, tier: 3}
+        - {url: "https://www.focus-economics.com/countries/angola/news/commodities/angola-exits-opec-oil-output-dips-in-december/", title: "Angola exits OPEC; oil output dips in December", publisher: "Focus-Economics", date: 2024-01, tier: 3}
+
+  constraints:
+    - text: "Fuel subsidies meet the street. The fuel price rise of 1 July 2025 set off a minibus taxi stoppage that became looting and clashes in Luanda and other cities; the presidency reported 22 dead, 197 injured and 1,214 arrests. Subsidy reform, begun in 2023, has a visible political price."
+      confidence: C
+      sources:
+        - {url: "https://www.aljazeera.com/news/2025/7/30/at-least-22-killed-at-angola-fuel-price-hike-protests-authorities-say", title: "At least 22 killed at Angola fuel price hike protests, authorities say", publisher: "Al Jazeera", date: 2025-07-30, tier: 3}
+        - {url: "https://www.theeastafrican.co.ke/tea/news/southern-africa/angola-says-death-toll-from-fuel-hike-protests-rises-to-22-5137572", title: "Angola says death toll from fuel hike protests rises to 22", publisher: "The EastAfrican", date: 2025-07, tier: 3}
+    - text: "The oil-backed loans are still being paid and new ones are sought. Owed to China, the oil-backed debt falls as output does, and in February 2026 Sonangol was reported to be seeking a USD 4.8bn Chinese loan for a refinery at Lobito: the state still borrows against oil while it says it wants less of it."
+      confidence: C
+      sources:
+        - {url: "https://hydrocarbonprocessing.com/news/2026/02/angolas-state-oil-firm-sonangol-seeks-48-b-loan-from-china-for-refinery/", title: "Angola's state oil firm Sonangol seeks $4.8 B loan from China for refinery", publisher: "Hydrocarbon Processing", date: 2026-02, tier: 3}
+        - {url: "https://businessfront.com/energy/news/angolas-oil-backed-loans-from-china-to-fall-below-8-billion-by-end-of-2025/", title: "Angola's oil-backed loans from China to fall below $8 billion by end of 2025", publisher: "Business Front", date: 2025, tier: 3}
+
+  paradoxes:
+    - text: "The corridor that is meant to bring Angola Western money and a regional role runs into the DRC mining belt, where the war is. Luanda gave up the DRC mediator's chair in March 2025, the same spring the Lobito financing was being settled, so the state that wants to pacify the mining region is also its railway partner."
+      confidence: C
+      sources:
+        - {url: "https://www.ewn.co.za/2025/03/24/angola-relinquishes-mediator-role-in-dr-congo-conflict", title: "Angola relinquishes mediator role in DR Congo conflict", publisher: "EWN", date: 2025-03-24, tier: 3}
+        - {url: "https://www.ecofinagency.com/news/1912-51572-trump-administration-advances-biden-era-financing-for-angola-s-lobito-corridor", title: "Trump administration advances Biden-era financing for Angola's Lobito corridor", publisher: "Ecofin Agency", date: 2025-12, tier: 3}
+
+  reading: |
+    Angola's grand strategy is to turn oil money and a continental chair into a regional and Western role while the Chinese loans of the last two decades are paid down. Its tools are the AU presidency, the Luanda venue and the Lobito corridor, and its limits are the oil output that fell from 1.42 to 1.1 million barrels a day and the 2025 fuel riots, which show how little room subsidy reform has. Not verified in this pass: the Soviet-era legacy and the cooling with Moscow, the 2027 succession, the Trump-era posture beyond the Lobito funding, and diamonds as an export, all of which need their own sources.

@@ -3,12 +3,62 @@ name: Zambia
 type: state
 iso2: zm
 wikipedia: https://en.wikipedia.org/wiki/Zambia
-coords:
-- 28.28
-- -15.42
+coords: [28.28, -15.42]
 seat: Lusaka
-regions:
-- world
-card: stub
+regions: [southern-africa]
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Turn copper into revenue without depending on one rail line or one buyer. Zambia is Africa's second-largest copper producer (Al Jazeera). Lusaka keeps two export routes open at once: the US-backed Lobito corridor to the Atlantic and the China-backed TAZARA revival to Dar es Salaam. The 2026 election was fought on the cost of living, which only copper output and reliable power can pay for."
+      confidence: C
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/8/18/zambias-hichilema-wins-second-term-as-president", title: "Zambia's President Hakainde Hichilema wins second term", publisher: "Al Jazeera", date: "2026-08-18", tier: 3}
+        - {url: "https://www.dabafinance.com/en/news/lobito-corridor-us-africa-china-minerals-trump-aid-cuts", title: "Lobito corridor: US, Africa, China minerals and Trump aid cuts", publisher: "Daba Finance", date: "2025-07", tier: 4}
+        - {url: "https://chinaglobalsouth.com/2025/10/01/china-zambia-tanzania-sign-tazara-modernization-deal", title: "China, Zambia and Tanzania Seal $1.4 Billion Deal to Modernize Tazara Railway", publisher: "China Global South", date: "2025-10-01", tier: 3}
+    - rank: 2
+      text: "Exit the IMF programme cycle on Lusaka's own reform terms. Zambia dropped its request to extend the IMF programme that expired in January 2026, without explanation, and talks on a new programme may run past the August election. The finance minister has named tax reform as the next administration's priority after the vote."
+      confidence: C
+      sources:
+        - {url: "https://www.ecofinagency.com/news/1001-51818-zambia-drops-request-to-extend-imf-program-ahead-of-2026-expiry", title: "Zambia drops request to extend IMF programme ahead of 2026 expiry", publisher: "Ecofin Agency", date: "2026-01", tier: 4}
+        - {url: "https://ae.marketscreener.com/news/imf-says-zambia-programme-talks-may-stretch-beyond-august-elections-ce7e5fdbdd81fe2d", title: "IMF says Zambia programme talks may stretch beyond August elections", publisher: "MarketScreener", date: "2026", tier: 4}
+
+  means:
+    - domain: economic
+      text: "Copper and the mines. Copper is the economy and the export earner; Lusaka's lever is the mines' output and the price, and the state utility ZESCO decides how much of it runs. Power is the bottleneck: the state utility rationed electricity to mining firms as Lake Kariba fell, and the Chambishi smelter (CNMC) cut a fifth of its output in March 2024 for lack of power. The reported 2025 power deficit was about 707 MW (a press figure, not checked against the utility)."
+      confidence: C
+      sources:
+        - {url: "https://www.mining.com/web/zambia-extends-electricity-rationing-to-mining-firms/", title: "Zambia extends electricity rationing to mining firms", publisher: "Mining.com", date: "2024", tier: 4}
+        - {url: "https://www.mining-technology.com/news/zambia-copper-smelter-reduced-capacity-power-outages", title: "Zambia copper smelter reduced capacity power outages", publisher: "Mining Technology", date: "2024-03", tier: 4}
+    - domain: diplomatic
+      text: "Corridor diplomacy: let two powers bid for the same rail routes. The US-backed Lobito corridor has a USD 553m DFC loan to the LAR consortium; the China-backed TAZARA concession of about USD 1.4bn (30 years) was signed in Beijing on 29 September 2025. Lusaka sits at the centre of both and keeps its seats in the African Union, SADC and the Commonwealth, the forums where it is a frontline-state voice rather than a client."
+      confidence: C
+      sources:
+        - {url: "https://www.dabafinance.com/en/news/lobito-corridor-us-africa-china-minerals-trump-aid-cuts", title: "Lobito corridor: US, Africa, China minerals and Trump aid cuts", publisher: "Daba Finance", date: "2025-07", tier: 4}
+        - {url: "https://www.caixinglobal.com/2025-11-22/china-tanzania-and-zambia-launch-major-overhaul-of-tanzania-zambia-railway-102385700.html", title: "China, Tanzania and Zambia launch major overhaul of Tanzania-Zambia railway", publisher: "Caixin Global", date: "2025-11-22", tier: 3}
+        - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Zambia", title: "Foreign relations of Zambia (Wikipedia, index only)", publisher: "Wikipedia", date: "2026-10-16", tier: 4}
+
+  constraints:
+    - text: "The IMF and the creditors set the budget. The programme cycle ended without an extension in January 2026, and the IMF has twice trimmed its 2026 growth outlook, to 4.3%, citing weaker mining output and energy constraints. Reports conflict on whether the programme is complete; the IMF's own page was not checked."
+      confidence: C
+      sources:
+        - {url: "https://www.zambiamonitor.com/again-imf-warns-power-shortages-may-stall-zambias-2025-economic-rebound-seeks-acceleration-of-structural-reforms/", title: "Again, IMF warns power shortages may stall Zambia's 2025 economic rebound", publisher: "Zambia Monitor", date: "2026", tier: 4}
+        - {url: "https://www.ecofinagency.com/news/1001-51818-zambia-drops-request-to-extend-imf-program-ahead-of-2026-expiry", title: "Zambia drops request to extend IMF programme ahead of 2026 expiry", publisher: "Ecofin Agency", date: "2026-01", tier: 4}
+    - text: "The drought is a physical limit. Lake Kariba's fall cuts hydro output, the state utility has rationed power to the mines, and the mines are first in line when the grid is short. Growth and copper output are capped by megawatts, not by the state's diplomacy."
+      confidence: C
+      sources:
+        - {url: "https://www.mining.com/web/zambia-copper-mines-hit-by-state-utilitys-warning-of-power-cuts/", title: "Zambia copper mines hit by state utility's warning of power cuts", publisher: "Mining.com", date: "2024", tier: 4}
+        - {url: "https://www.mining-technology.com/news/zambia-copper-smelter-reduced-capacity-power-outages", title: "Zambia copper smelter reduced capacity power outages", publisher: "Mining Technology", date: "2024-03", tier: 4}
+
+  paradoxes:
+    - text: "The copper plan needs power, yet both corridors Lusaka courts depend on the same grid that the drought has cut: the Chambishi smelter lost a fifth of its output to power shortages in 2024 while Zambia bid for a US line and a Chinese line at once. The more rails Lusaka secures, the more it needs megawatts to fill them."
+      confidence: C
+      sources:
+        - {url: "https://www.mining-technology.com/news/zambia-copper-smelter-reduced-capacity-power-outages", title: "Zambia copper smelter reduced capacity power outages", publisher: "Mining Technology", date: "2024-03", tier: 4}
+        - {url: "https://www.dabafinance.com/en/news/lobito-corridor-us-africa-china-minerals-trump-aid-cuts", title: "Lobito corridor: US, Africa, China minerals and Trump aid cuts", publisher: "Daba Finance", date: "2025-07", tier: 4}
+
+  reading: |
+    Zambia's grand strategy is to turn world demand for copper into revenue and room to manoeuvre: keep the American Atlantic route and the Chinese route to Dar es Salaam open at once, so that no single rail line, lender or buyer holds the mines. The binding limits are physical and financial rather than diplomatic, since the drought-hit hydro grid and the IMF cycle decide how much copper moves and how much reform Hichilema, re-elected on 18 August 2026 with about 61% in a contested count, can afford. The paradox is that the two corridors depend on the same power the drought has cut, so the strategy is only as strong as the next dry season.

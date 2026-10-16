@@ -7,8 +7,52 @@ coords:
 - 31.05
 - -17.83
 seat: Harare
-regions:
-- world
-card: stub
+regions: [southern-africa]
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep Emmerson Mnangagwa in office to 2030. The Senate passed a constitutional amendment on 24 June 2026 by 75 votes to 4, lengthening presidential terms from five to seven years, ending direct election of the president (parliament elects him) and keeping him in office until 2030. The bill still needed his signature in the source read; the signature date is not verified."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/6/24/zimbabwes-senate-approves-amendment-extending-presidential-term", title: "Zimbabwe's Senate approves amendment extending presidential term", publisher: "Al Jazeera", date: 2026-06-24, tier: 3}
+    - rank: 2
+      text: "Turn lithium and other raw minerals into processing income at home. Harare suspended exports of raw minerals and lithium concentrate in February 2026 to push local processing, and officials say the policy drew more than USD 1bn into the lithium value chain. The ban is reported from search results; the article itself was not opened in this pass."
+      confidence: C
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/2/25/zimbabwe-imposes-ban-on-exports-of-all-raw-minerals-and-lithium-concentrate", title: "Zimbabwe imposes ban on exports of all raw minerals and lithium concentrate", publisher: "Al Jazeera", date: 2026-02-25, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/6/18/who-benefits-from-zimbabwes-lithium-boom", title: "Who benefits from Zimbabwe's lithium boom?", publisher: "Al Jazeera", date: 2026-06-18, tier: 3}
+
+  means:
+    - domain: economic
+      text: "Lithium and gold. Zimbabwe exported 1.128 million tonnes of lithium-bearing spodumene concentrate in the year to December 2025, up 11% on the year before, most of it to China for processing into battery materials. The raw-material export ban (February 2026) is the state's lever over that flow."
+      confidence: C
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/6/18/who-benefits-from-zimbabwes-lithium-boom", title: "Who benefits from Zimbabwe's lithium boom?", publisher: "Al Jazeera", date: 2026-06-18, tier: 3}
+    - domain: informational
+      text: "Control of the legal rules. The term extension moves the choice of president from the electorate to parliament. Critics call it a constitutional coup; search results (articles not opened in this pass) also report arrests of activists who opposed it and a court challenge dismissed on procedural grounds."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/6/24/zimbabwes-senate-approves-amendment-extending-presidential-term", title: "Zimbabwe's Senate approves amendment extending presidential term", publisher: "Al Jazeera", date: 2026-06-24, tier: 3}
+
+  constraints:
+    - text: "US sanctions and ZIDERA. In March 2024 the US designated eight individuals, Mnangagwa among them, and three businesses under the Global Magnitsky Act. Washington said it would sanction fewer people from then on, but the Zimbabwe Democracy and Economic Recovery Act (ZIDERA) still restricts access to international financial institution loans and investment."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/features/2024/4/4/whats-behind-the-latest-us-sanctions-on", title: "What's behind the latest US sanctions on Zimbabwe President Mnangagwa?", publisher: "Al Jazeera", date: 2024-04-04, tier: 3}
+    - text: "A single buyer for the mineral chain. Most of Zimbabwe's lithium output goes to China and Chinese firms own the largest mines, so Beijing's processors set the terms of the value chain the export ban is meant to build. The 2022 USD 180m purchase of Bikita Minerals by Sinomine is the best-known case."
+      confidence: C
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/6/18/who-benefits-from-zimbabwes-lithium-boom", title: "Who benefits from Zimbabwe's lithium boom?", publisher: "Al Jazeera", date: 2026-06-18, tier: 3}
+
+  paradoxes:
+    - text: "The export ban meant to keep value at home favours the Chinese-financed plants that can afford processing. A Bikita community leader sees no tangible jobs from value addition, and smaller miners warn that processing plants, unreliable power and scarce finance keep them out, so the policy meant to widen the base may concentrate it."
+      confidence: C
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/7/26/can-zimbabwes-mineral-ambitions-benefit-smaller-producers", title: "Can Zimbabwe's mineral ambitions benefit smaller producers?", publisher: "Al Jazeera", date: 2026-07-26, tier: 3}
+
+  reading: |
+    Zimbabwe's grand strategy is the survival of the ZANU-PF system under Mnangagwa: the 2026 amendment extends his rule to 2030 by moving the choice of president from voters to parliament. Its money comes from minerals, above all lithium, that flow mostly to China, which funds and buys the extraction, while the Western sanctions that remain (the 2024 Global Magnitsky listings and ZIDERA) keep the other door narrow. The export ban is the state's attempt to turn that dependence into domestic value, and the paradox is that the Chinese-financed plants are the ones best placed to benefit from it.

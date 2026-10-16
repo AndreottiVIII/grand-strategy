@@ -1,0 +1,29 @@
+from: ZWE
+relations:
+  # ---------- dependency ----------
+  - to: CHN
+    layer: dependency
+    type: investment
+    summary: "Chinese investment in the lithium chain: Sinomine bought Bikita Minerals, Zimbabwe's largest lithium mine, for USD 180m in February 2022; other Chinese firms (Huayou, Chengxin, Yahua) drive the spodumene build-up. The value is the deal price, not the total investment stock."
+    since: '2022-02'
+    until: null
+    value: 180
+    unit: usd_million_bikita_acquisition
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.aljazeera.com/news/2026/6/18/who-benefits-from-zimbabwes-lithium-boom", title: "Who benefits from Zimbabwe's lithium boom?", publisher: "Al Jazeera", date: "2026-06-18", tier: 3}
+
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    summary: "Most of Zimbabwe's lithium-bearing spodumene concentrate goes to China for processing into battery materials: 1.128 million tonnes exported in the year to December 2025, up 11% on the year before. The value is a volume, not a share of exports; the type vocabulary has no volume type. The raw-material export ban of February 2026 is the state's lever over this flow."
+    since: '2025-01-01'
+    until: '2025-12-31'
+    value: 1.128
+    unit: million_tonnes_spodumene_concentrate
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.aljazeera.com/news/2026/6/18/who-benefits-from-zimbabwes-lithium-boom", title: "Who benefits from Zimbabwe's lithium boom?", publisher: "Al Jazeera", date: "2026-06-18", tier: 3}
+      - {url: "https://www.aljazeera.com/news/2026/2/25/zimbabwe-imposes-ban-on-exports-of-all-raw-minerals-and-lithium-concentrate", title: "Zimbabwe imposes ban on exports of all raw minerals and lithium concentrate", publisher: "Al Jazeera", date: "2026-02-25", tier: 3}

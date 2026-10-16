@@ -1,0 +1,83 @@
+from: AGO
+relations:
+  # ---------- objective ----------
+  - to: COD
+    layer: objective
+    type: influence_goal
+    summary: "Angola mediated between Kinshasa and Kigali from the Luanda Roadmap of July 2022, then announced in March 2025 that it was stepping back to focus on its AU presidency. The objective, a say in the eastern DRC settlement, is our reading of that course (C); the status after March 2025 is not confirmed."
+    since: '2022-07'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.africanews.com/amp/2022/07/07/drc-rwanda-agree-to-de-escalate-tensions-at-a-mini-summit-in-luanda/", title: "DRC, Rwanda agree to de-escalate tensions at a mini-summit in Luanda", publisher: "Africanews", date: "2022-07-07", tier: 3}
+      - {url: "https://www.ewn.co.za/2025/03/24/angola-relinquishes-mediator-role-in-dr-congo-conflict", title: "Angola relinquishes mediator role in DR Congo conflict", publisher: "EWN", date: "2025-03-24", tier: 3}
+      - {url: "https://allafrica.com/stories/202410210389.html", title: "Africa: The Revived Luanda Process - Inching Towards Peace in East DRC?", publisher: "allAfrica", date: "2024-10-21", tier: 3}
+
+  # ---------- alignment ----------
+  - to: org-opec
+    layer: alignment
+    type: membership
+    summary: "Angola joined OPEC in 2007 and left it on 1 January 2024, announced on 21 December 2023, after a quota dispute: OPEC+ set its 2024 target at 1.11m barrels a day against the 1.18m it had asked for. The oil minister said continued membership was no longer in the country's best interests."
+    since: '2007-01'
+    until: '2024-01-01'
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.ogj.com/general-interest/economics-markets/article/14303147/angola-to-leave-opec-in-2024", title: "Angola to leave OPEC in 2024", publisher: "Oil & Gas Journal", date: "2023-12", tier: 3}
+      - {url: "https://www.focus-economics.com/countries/angola/news/commodities/angola-exits-opec-oil-output-dips-in-december/", title: "Angola exits OPEC; oil output dips in December", publisher: "Focus-Economics", date: "2024-01", tier: 3}
+
+  # ---------- dependency ----------
+  - to: CHN
+    layer: dependency
+    type: debt
+    summary: "Oil-backed debt to China fell by almost a quarter in 2025, to about USD 7.7bn from USD 10.1bn at end-2024 (finance ministry data, as reported by secondary outlets). Luanda is reducing its exposure to resource-backed loans; the original Reuters interview was not read."
+    since: '2025-12'
+    until: null
+    value: 7.73
+    unit: usd_bn_china_oil_backed_debt_2025
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://businessfront.com/energy/news/angolas-oil-backed-loans-from-china-to-fall-below-8-billion-by-end-of-2025/", title: "Angola's oil-backed loans from China to fall below $8 billion by end of 2025", publisher: "Business Front", date: "2025", tier: 3}
+      - {url: "https://hydrocarbonprocessing.com/news/2026/02/angolas-state-oil-firm-sonangol-seeks-48-b-loan-from-china-for-refinery/", title: "Angola's state oil firm Sonangol seeks $4.8 B loan from China for refinery", publisher: "Hydrocarbon Processing", date: "2026-02", tier: 3}
+
+  - to: CHN
+    layer: dependency
+    type: energy_export
+    summary: "China takes nearly 72% of Angola's oil exports (ADF Magazine, 2024), making it the largest buyer; Angola's oil output fell from 1.42m to 1.1m barrels a day between 2019 and 2023 in the same piece. The value is a share, not a volume; the year of the share is not stated in the snippet read."
+    since: '2024'
+    until: null
+    value: 0.72
+    unit: share_of_oil_exports
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://adf-magazine.com/2024/09/as-china-buys-less-oil-angola-struggles-to-repay-debt/", title: "As China buys less oil, Angola struggles to repay debt", publisher: "ADF Magazine", date: "2024-09", tier: 3}
+
+  - to: USA
+    layer: dependency
+    type: investment
+    summary: "The US Development Finance Corporation signed a USD 553m loan with the consortium developing the Lobito corridor (Trafigura, Mota-Engil, with the Angolan concession) on 17 December 2025, delivering a pledge made under Biden. The Development Bank of Southern Africa adds USD 200m. Early 2025 funds had been frozen, and the Trump administration kept the loan."
+    since: '2025-12-17'
+    until: null
+    value: 553
+    unit: usd_million_dfc_loan_lobito
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.ecofinagency.com/news/1912-51572-trump-administration-advances-biden-era-financing-for-angola-s-lobito-corridor", title: "Trump administration advances Biden-era financing for Angola's Lobito corridor", publisher: "Ecofin Agency", date: "2025-12", tier: 3}
+      - {url: "https://cnbc.africa/2025/us-committed-to-funding-angolas-lobito-rail-corridor-despite-spending-cuts-diplomat-says", title: "US committed to funding Angola's Lobito rail corridor despite spending cuts, diplomat says", publisher: "CNBC Africa (Reuters)", date: "2025-04", tier: 3}
+
+  # ---------- action ----------
+  - to: PRT
+    layer: action
+    type: visit
+    summary: "Mirror of the PRT card's row: Montenegro made official visits to Luanda in July 2024 and November 2025 (the second before the EU-African Union summit), and Lourenco pledged Angola's support for Portugal's Security Council bid. Same sources as the PRT card; not re-researched."
+    since: '2024-07'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/primeiro-ministro-em-luanda-para-reforcar-cooperacao-bilateral-e-participar-na-cimeira-ueafrica", title: "Prime Minister in Luanda to reinforce bilateral cooperation and attend the EU-Africa summit", publisher: "Government of Portugal", date: "2025-11", tier: 1}
+      - {url: "https://www.dn.pt/joao-lourenco-convida-montenegro-para-visita-oficial-a-angola", title: "Joao Lourenco invites Montenegro for an official visit to Angola", publisher: "Diario de Noticias", date: "2024-04", tier: 3}

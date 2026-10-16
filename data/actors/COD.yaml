@@ -1,14 +1,105 @@
 id: COD
 name: Democratic Republic of the Congo
+short: DR Congo
 type: state
+coords: [15.31, -4.32]
 iso2: cd
 wikipedia: https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo
-coords:
-- 15.31
-- -4.32
 seat: Kinshasa
-regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+regions: [east-africa]
+card: full
+tier: protagonist
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Recover the eastern provinces: push the AFC/M23 out of Goma and Bukavu, taken in January and February 2025, and the Rwandan Defence Force out of the Kivus, through the Washington track (framework of 27 June 2025, Washington Accords of 4 December 2025) and the Doha track (framework of 15 November 2025). Kinshasa wants withdrawal and implementation, not the defeat of Rwanda; its own calendar is the ceasefire verification and the eight Doha protocols, of which only two were signed by early 2026."
+      confidence: B
+      sources:
+        - {url: "https://home.treasury.gov/news/press-releases/sb0022", title: "Treasury Sanctions Rwandan Minister and Senior Militant for Conflict in the Democratic Republic of the Congo", publisher: "US Department of the Treasury", date: "2025-02-20", tier: 1}
+        - {url: "https://www.crisisgroup.org/africa/democratic-republic-congo-rwanda/320-m23-offensive-elusive-peace-great-lakes", title: "The M23 Offensive: Elusive Peace in the Great Lakes (Africa Report N°320)", publisher: "International Crisis Group", date: "2025-12-19", tier: 2}
+        - {url: "https://www.ungeneva.org/en/news-media/news/2026/02/115581/m23-rebels-un-sees-progress-talks-warns-violence-persists", title: "M23 rebels: UN sees progress in talks but warns violence persists", publisher: "UN Geneva (UNOG)", date: "2026-02-05", tier: 1}
+        - {url: "https://peopledaily.digital/news/us-urges-rwanda-to-withdraw-troops-from-dr-congo-end-m23-support", title: "US urges Rwanda to withdraw troops from DR Congo, end M23 support", publisher: "People Daily (Kenya)", date: "2026-10-14", tier: 3}
+    - rank: 2
+      text: "Keep Félix Tshisekedi in office past the 2028 end of his second term: the Constitutional Court cleared a referendum route to amend the protected provisions in late July 2026, and Tshisekedi said in May 2026 that he would accept a third term 'if the people want me to'. Read as an objective of the presidency (our reading of the sources); no source states it as a goal in these words."
+      confidence: B
+      sources:
+        - {url: "https://allafrica.com/stories/202607300402.html", title: "DRC Court Clears Path to Change a Constitution That Says It Can't Be Changed", publisher: "AllAfrica (Congo-Kinshasa)", date: "2026-07-30", tier: 3}
+        - {url: "https://www.africanews.com/amp/2026/07/30/dr-congo-opposition-fury-as-tshisekedi-edges-closer-to-third-term/", title: "DR Congo: Opposition fury as Tshisekedi edges closer to third term", publisher: "Africanews", date: "2026-07-30", tier: 3}
+        - {url: "https://standardmedia.co.ke/business/amp/africa/article/2001550550/dr-congo-president-clears-hurdle-to-seek-third-term", title: "DR Congo president clears hurdle to seek third term", publisher: "The Standard (Kenya)", date: "2026", tier: 3}
+    - rank: 3
+      text: "Turn the subsoil into security and capital: cobalt and copper from the Katanga belt, coltan from the Kivus, sold to the buyers who bring infrastructure and protection. The 2008 Sicomines contract with China, renegotiated to USD 7bn of infrastructure, and the minerals-for-security partnership with the United States of 4 December 2025 are the two instruments; the mines stay Congolese in law and mostly Chinese in operation."
+      confidence: B
+      sources:
+        - {url: "https://eiti.org/blog-post/sicomines-how-eiti-drc-helped-secure-4-billion-additional-revenue", title: "Sicomines: how the EITI in DRC helped secure 4 billion in additional revenue", publisher: "Extractive Industries Transparency Initiative", date: "2024-03-25", tier: 2}
+        - {url: "https://www.news24.com/world/analysis-why-minerals-for-security-deals-wont-save-the-drc-20260422-0613", title: "Analysis: why minerals-for-security deals won't save the DRC", publisher: "News24", date: "2026-04-22", tier: 3}
+        - {url: "https://www.scmp.com/news/china/diplomacy/article/3145065/why-china-making-big-play-congolese-cobalt-and-other-critical", title: "Why China is making a big play for Congolese cobalt and other critical minerals", publisher: "South China Morning Post", date: "2021-08-15", tier: 3}
+    - rank: 4
+      text: "Keep every broker in the room and none in charge: run four tracks at once (Nairobi, Luanda, Doha, Washington) so that Burundi, Kenya, Angola, Qatar, the United States and the EU each keep a stake, and so that no single mediator, Angola's included, decides the outcome. Angola withdrew as mediator on 24 March 2025 and tried to revive its role in February 2026, when Lourenço announced a ceasefire that the M23 disputed; the EAC-SADC summit of February 2025 merged the Nairobi and Luanda tracks."
+      confidence: B
+      sources:
+        - {url: "https://allafrica.com/stories/202503130017.html", title: "Angola Pushes for Direct Talks Between Kinshasa and M23 in DRC Crisis", publisher: "AllAfrica", date: "2025-03-13", tier: 3}
+        - {url: "https://fr.allafrica.com/stories/202503250215.html", title: "Angola: Joao Lourenco se desengage de la mediation du processus de Luanda", publisher: "AllAfrica (fr)", date: "2025-03-25", tier: 3, title_original: "Angola: João Lourenço se désengage de la médiation du processus de Luanda", lang: fr}
+        - {url: "https://www.securitycouncilreport.org/monthly-forecast/2026-03/democratic-republic-of-the-congo-33.php", title: "March 2026 Monthly Forecast: Democratic Republic of the Congo", publisher: "Security Council Report", date: "2026-03", tier: 2}
+        - {url: "https://peopledaily.digital/news/eac-sadc-summit-directs-resumption-of-direct-negotiations-with-drc-m23-rebels-under-merged-luanda-nairobi-process", title: "EAC-SADC Summit directs resumption of direct negotiations with DRC M23 rebels under merged Luanda/Nairobi process", publisher: "People Daily (Kenya)", date: "2025-02", tier: 3}
+
+  means:
+    - domain: military
+      text: "The FARDC cannot retake the Kivus alone, so it fights with the forces of its neighbours: Burundian troops deployed in South Kivu against the M23 (Reuters, January 2025) and the joint Operation Shujaa with the Ugandan army (UPDF) against the ADF since November 2021, which the Congolese government accepted. Both are de facto alignments; neither is a treaty guarantee found in the sources."
+      confidence: B
+      sources:
+        - {url: "https://www.yahoo.com/news/m23-rebels-face-burundian-forces-173819912.html", title: "M23 rebels face Burundian forces", publisher: "Reuters (via Yahoo News)", date: "2025-01-31", tier: 3}
+        - {url: "https://www.monitor.co.ug/uganda/special-reports/gains-losses-as-operation-shujja-marks-2-years--4456670", title: "Gains, losses as Operation Shujaa marks 2 years", publisher: "Daily Monitor (Uganda)", date: "2023-11", tier: 3}
+    - domain: diplomatic
+      text: "Venue and mediator portfolio: Doha (Qatar hosts and chairs the Kinshasa-AFC/M23 talks; declaration of principles July 2025; framework of 15 November 2025), Washington (the Rwanda accords and the US partnership), Nairobi and Luanda (the merged EAC-SADC track), plus the African Union and the UN Security Council. Kinshasa uses the plurality of tracks to keep the initiative; the Doha track moved to Switzerland in August 2026 with a roadmap and a ceasefire verification mission in Minembwe."
+      confidence: B
+      sources:
+        - {url: "https://ewn.co.za/2025/11/15/m23-dr-congo-ink-fresh-roadmap-to-peace-in-doha", title: "M23, DR Congo ink fresh roadmap to peace in Doha", publisher: "EWN (South Africa)", date: "2025-11-15", tier: 3}
+        - {url: "https://newsonair.gov.in/dr-congo-govt-and-m23-rebel-group-agree-on-roadmap-for-peace-negotiations/", title: "DR Congo govt and M23 rebel group agree on roadmap for peace negotiations", publisher: "All India Radio (newsonair)", date: "2026-08", tier: 3}
+        - {url: "https://www.news24.com/world/africa/eu-sanctions-rwandan-officers-m23-rebels-over-congo-violence-20250317", title: "EU sanctions Rwandan officers, M23 rebels over Congo violence", publisher: "News24", date: "2025-03-17", tier: 3}
+    - domain: economic
+      text: "Cobalt, copper and coltan are the currency: China's Sicomines contract (USD 7bn of infrastructure after renegotiation, 2024) and the Chinese firms running most cobalt mining in a country with over 70% of world cobalt supply; the US minerals-for-security partnership of 4 December 2025 offers US access to critical minerals in return for security cooperation, with the US development lender reported to be seeking a stake in a marketing partnership (Reuters, December 2025, as reported)."
+      confidence: B
+      sources:
+        - {url: "https://eiti.org/blog-post/sicomines-how-eiti-drc-helped-secure-4-billion-additional-revenue", title: "Sicomines: how the EITI in DRC helped secure 4 billion in additional revenue", publisher: "Extractive Industries Transparency Initiative", date: "2024-03-25", tier: 2}
+        - {url: "https://allafrica.com/stories/202512040542.html", title: "Congo-Kinshasa: Rwanda's Kagame and Tshisekedi of the DRC sign peace deal", publisher: "AllAfrica", date: "2025-12-04", tier: 3}
+        - {url: "https://www.scmp.com/news/china/diplomacy/article/3116837/china-cancels-democratic-republic-congo-loans-it-joins-belt", title: "China cancels Democratic Republic of Congo loans as it joins Belt and Road", publisher: "South China Morning Post", date: "2021-01-07", tier: 3}
+
+  constraints:
+    - text: "The lost territory. Goma and Bukavu, the provincial capitals of North and South Kivu, fell to the AFC/M23 and the RDF in January and February 2025 (the US Treasury counts thousands of civilians killed in Goma); the state cannot tax, administer or police them, and the rebels went on to take Kavumu airport and, in December 2025, Uvira on the Burundian border, from which they withdrew by February 2026. Every negotiation starts from territory Kinshasa does not hold."
+      confidence: B
+      sources:
+        - {url: "https://home.treasury.gov/news/press-releases/sb0022", title: "Treasury Sanctions Rwandan Minister and Senior Militant for Conflict in the Democratic Republic of the Congo", publisher: "US Department of the Treasury", date: "2025-02-20", tier: 1}
+        - {url: "https://www.aljazeera.com/news/2025/12/19/tens-of-thousands-flee-dr-congo-to-burundi-after-rebel-takeover-of-key-city", title: "Tens of thousands flee DR Congo to Burundi after rebel takeover of key city", publisher: "Al Jazeera", date: "2025-12-19", tier: 3}
+        - {url: "https://ipisresearch.be/publication/shifting-frontlines-in-october-november-and-december-limits-of-diplomacy-afc-m23-advances-after-washington-accords/", title: "Shifting frontlines in October, November and December: limits of diplomacy - AFC/M23 advances after Washington Accords", publisher: "IPIS", date: "2026", tier: 2}
+    - text: "The 2028 succession and the constitution. The current constitution bars a third term and ends Tshisekedi's mandate at the close of 2028. The court's clearance of a referendum route (July 2026) is contested: the Catholic bishops' conference (CENCO) said on 20 June 2026 that a 'forced passage' risked the balkanisation of the country, the C64 opposition bloc called the move 'high treason', and the ruling Sacred Union of the Nation answered that a few bishops cannot substitute themselves for the institutions. Any Kinshasa deal with Kigali or the M23 is read in that light."
+      confidence: B
+      sources:
+        - {url: "https://fr.allafrica.com/stories/202606250280.html", title: "Congo-Kinshasa: La coalition au pouvoir critique l'opposition de l'Eglise catholique a un changement de Constitution", publisher: "AllAfrica (fr)", date: "2026-06-25", tier: 3, lang: fr}
+        - {url: "https://www.africanews.com/amp/2026/07/30/dr-congo-opposition-fury-as-tshisekedi-edges-closer-to-third-term/", title: "DR Congo: Opposition fury as Tshisekedi edges closer to third term", publisher: "Africanews", date: "2026-07-30", tier: 3}
+    - text: "The church as the national voice that the state cannot command. The Catholic bishops' conference (CENCO) is the one national body the sources show acting against the constitutional change: its statement of June 2026 and its 2024 memorandum against changing core articles. Kinshasa cannot silence or command the bishops, and a forced referendum would, in our reading, bring them into open opposition (C: the sources record the statements, not the consequence)."
+      confidence: C
+      sources:
+        - {url: "https://fr.allafrica.com/stories/202606250280.html", title: "Congo-Kinshasa: La coalition au pouvoir critique l'opposition de l'Eglise catholique a un changement de Constitution", publisher: "AllAfrica (fr)", date: "2026-06-25", tier: 3, lang: fr}
+        - {url: "https://www.vaticannews.va/de/welt/news/2024-10/kongo-auch-kirche-besorgt-geplante-verfassungsanderung.html", title: "Kongo: auch Kirche besorgt ueber geplante Verfassungsaenderung", publisher: "Vatican News", date: "2024-10", tier: 3, lang: de}
+
+  paradoxes:
+    - confidence: B
+      text: "The minerals deal that is meant to buy Washington's protection exposes its partners to the war. The US partnership ties preferential access to critical minerals to security cooperation, yet the Chemaf purchase by a US firm drew Reuters questions over due diligence (March 2026) and analysts say the minerals-for-security model will not stop the fighting, because the mines are in the territory the M23 and its backers control or contest."
+      sources:
+        - {url: "https://www.news24.com/world/analysis-why-minerals-for-security-deals-wont-save-the-drc-20260422-0613", title: "Analysis: why minerals-for-security deals won't save the DRC", publisher: "News24", date: "2026-04-22", tier: 3}
+        - {url: "https://www.theeastafrican.co.ke/tea/news/east-africa/drc-officials-defend-minerals-for-security-us-deals-5293100", title: "DRC officials defend 'minerals-for-security' US deals", publisher: "The EastAfrican", date: "2026", tier: 3}
+    - confidence: B
+      text: "The partner it needs against the M23 is the state it has taken to the International Court of Justice. Kinshasa fights beside the Ugandan army in Operation Shujaa and accepts Kampala's troops, although the ICJ ordered Uganda to pay USD 325m for its 1998-2003 occupation (judgment of 9 February 2022), and the UN experts say Ugandan units shielded the M23 (July 2025, Uganda denies it)."
+      sources:
+        - {url: "https://ungeneva.org/en/news-media/news/2022/02/71483/uns-top-court-orders-uganda-pay-325-million-dr-congo", title: "UN top court orders Uganda pay 325 million DR Congo", publisher: "UN Geneva (UNOG)", date: "2022-02", tier: 1}
+        - {url: "https://www.aljazeera.com/news/2025/7/18/un-experts-cast-blame-on-rwanda-and-uganda-what-are-they-doing-in-drc", title: "UN experts cast blame on Rwanda and Uganda. What are they doing in DRC?", publisher: "Al Jazeera", date: "2025-07-18", tier: 3}
+    - confidence: B
+      text: "The more Kinshasa negotiates the peace, the less it controls the state that would keep it. The Washington and Doha tracks require an inclusive national dialogue and internal reform, yet the constitutional route to a third term turns the opposition and the bishops against the presidency just as the eastern front needs unity. A deal signed in Doha or Washington is only as strong as the Kinshasa politics that implement it."
+      sources:
+        - {url: "https://allafrica.com/stories/202607300402.html", title: "DRC Court Clears Path to Change a Constitution That Says It Can't Be Changed", publisher: "AllAfrica (Congo-Kinshasa)", date: "2026-07-30", tier: 3}
+        - {url: "https://www.crisisgroup.org/africa/democratic-republic-congo-rwanda/320-m23-offensive-elusive-peace-great-lakes", title: "The M23 Offensive: Elusive Peace in the Great Lakes (Africa Report N°320)", publisher: "International Crisis Group", date: "2025-12-19", tier: 2}
+
+  reading: |
+    Kinshasa has lost its two largest eastern cities to a rebellion that its neighbour backs, and it cannot retake them alone, so it has spent 2025-2026 buying partners: Burundian troops in South Kivu, Ugandan operations against the ADF, Qatar's Doha track, Washington's minerals-for-security deal and an Angolan mediation that has come and gone. Every track gives it a seat and gives its enemies one too, which is why the strategy works by keeping the initiative with others rather than by winning on the ground. The minerals are the currency of the whole effort and the reason the outside powers are present, with China already holding most of the cobalt through Sicomines and the United States now seeking access. The 2028 succession has moved the decisive contest from the eastern front to the capital, where the Catholic bishops and the opposition are the only national forces able to stop a third term, and that is the constraint no foreign mediator can remove.
