@@ -26,7 +26,7 @@
   const fullActors = data.actors.filter(a => a.card === "full");
   if (/[?&]og=1/.test(location.search)) {
     document.body.classList.add("og");
-    document.querySelector(".stage").insertAdjacentHTML("afterbegin", `<div class="og-title"><h1>Grand <span>Strategy</span></h1><p>What the world's actors want and do, and where it collides</p></div>`);
+    document.querySelector(".stage").insertAdjacentHTML("afterbegin", `<div class="og-title"><h1>Grand <span>Strategy</span></h1><p>The logic of strategy, applied to every state</p></div>`);
   }
   const feature = Object.fromEntries(world.features.map(f => [f.id, f]));
   let pov = null;                 // null = home: the world of today, flags and borders
