@@ -650,7 +650,7 @@ def main():
         "grades": GRADES,
         "layers": list(TYPES.keys()),
         "actors": list(actors.values()),
-        "stances": {k: [dict(st, alignment=st.get("alignment") or ("treaty" if st["toward"] in allies.get(k, ()) and st["grade"] in FRIENDLY else None)) for st in v["stances"]] for k, v in stances.items()},
+        "stances": {k: [dict(st, alignment=st.get("alignment") or ("treaty" if st["toward"] in allies.get(k, ()) and st["grade"] in ("ally", "reluctant_ally") else None)) for st in v["stances"]] for k, v in stances.items()},
         "relations": rows,
         "unga": unga,
         "progress": (lambda q: {"cards": sum(1 for a in q if a["status"] in ("done", "reviewed")), "total": len(q),
