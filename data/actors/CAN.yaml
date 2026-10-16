@@ -1,14 +1,90 @@
 id: CAN
 name: Canada
+short: Canada
 type: state
 iso2: ca
 wikipedia: https://en.wikipedia.org/wiki/Canada
-coords:
-- -75.69
-- 45.42
+coords: [-75.69, 45.42]
 seat: Ottawa
-regions:
-- world
-card: stub
+regions: [north-america]
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the North American frame intact (CUSMA, NORAD, NATO) while Washington coerces it: on 1 July 2026 the United States declined to renew CUSMA 'in its current form', which triggers annual joint reviews while the pact runs to 2036, and a Section 338 duty of 50% on about USD 20bn of Canadian goods applies from 22 August 2026. Carney's line is that the pact survives without any new deal, so the frame is the first objective and the most exposed one."
+      confidence: B
+      sources:
+        - {url: "https://www.whitecase.com/insight-alert/usmca-2026-joint-review-united-states-declines-extend-agreement-triggering-annual", title: "USMCA 2026 Joint Review: United States declines to extend Agreement, triggering annual reviews", publisher: "White & Case", date: 2026-07, tier: 3}
+        - {url: "https://mcmillan.ca/insights/following-july-1st-review-cusma-remains-in-effect-until-2036-on-going-negotiations-as-part-of-annual-reviews-to-agree-on-north-american-free-trade-will-continue/", title: "Following July 1st review, CUSMA remains in effect until 2036", publisher: "McMillan LLP", date: 2026-07, tier: 3}
+        - {url: "https://www.wsj.com/economy/trade/u-s-to-impose-50-tariffs-on-some-canadian-goods-after-failed-talks-d1510425", title: "U.S. imposes 50% tariffs on some Canadian goods after last-ditch talks fail", publisher: "The Wall Street Journal", date: 2026-08-22, tier: 3}
+    - rank: 2
+      text: "Break the dependence on one market: over 70% of Canadian exports go to the United States (Carney, New York Times, 23 September 2026), so Ottawa sells elsewhere: the EU Security and Defence Partnership and SAFE access (Canada the first non-European country in SAFE, Council approval 15 June 2026), a bid to join the UK-led Joint Expeditionary Force and merger talks on defence financing with London (September 2026), a 10-year Cameco uranium deal with India (March 2026) and the January 2026 reopening with China on EVs and canola."
+      confidence: B
+      sources:
+        - {url: "https://www.nytimes.com/2026/09/23/world/canada/mark-carney-canada-us-trump-tariffs.html", title: "Carney lays out his vision for breaking Canada's reliance on US", publisher: "New York Times", date: 2026-09-23, tier: 3}
+        - {url: "https://www.eunews.it/en/2026/06/15/defence-eu-countries-give-final-go-ahead-for-canadas-participation-in-safe-funding/", title: "Defence: EU countries give final go-ahead for Canada's participation in SAFE funding", publisher: "Eunews", date: 2026-06-15, tier: 3}
+        - {url: "https://www.bnnbloomberg.ca/business/politics/2026/09/17/canada-seeks-full-membership-in-uk-led-military-coalition/", title: "Canada seeks full membership in U.K.-led military coalition", publisher: "BNN Bloomberg", date: 2026-09-17, tier: 3}
+        - {url: "https://www.aljazeera.com/economy/2026/1/16/canada-china-strike-trade-deals-to-slash-tariffs-on-evs-canola", title: "Canada, China strike trade deals to slash tariffs on EVs, canola", publisher: "Al Jazeera", date: 2026-01-16, tier: 3}
+    - rank: 3
+      text: "Meet NATO's spending and the Arctic: Canada reached 2% of GDP on defence in 2025 (NATO's annual report, March 2026), Carney has committed to 5% by 2035, about USD 150bn a year, and raised the Arctic presence to 365 days a year with over-the-horizon radar against Russia, which he called 'without question' a threat in the Arctic (January 2026)."
+      confidence: B
+      sources:
+        - {url: "https://www.bnnbloomberg.ca/business/politics/2026/03/26/canada-officially-hits-nato-2-gdp-target/", title: "Canada officially hits NATO 2% GDP target", publisher: "BNN Bloomberg", date: 2026-03-26, tier: 3}
+        - {url: "https://www.am800cklw.com/news/carney-says-canada-to-spend-5-of-gdp-on-defence-by-2035.html", title: "Carney says Canada to spend 5% of GDP on defence by 2035", publisher: "AM800 (CKLW)", date: 2025-06, tier: 3}
+        - {url: "https://www.bloomberg.com/news/articles/2026-01-20/russia-is-without-question-a-threat-in-the-arctic-carney-says", title: "Russia Is 'Without Question' a Threat in the Arctic, Carney Says", publisher: "Bloomberg", date: 2026-01-20, tier: 3}
+    - rank: 4
+      text: "Get the oil to a second coast: an Indigenous co-owned bitumen pipeline from Alberta to the British Columbia coast, declared a project of national interest in the November 2025 memorandum with Alberta, then an implementation agreement of 15 May 2026 that set an Alberta application for 1 July 2026 and a federal national-interest designation by 1 October 2026."
+      confidence: B
+      sources:
+        - {url: "https://www.osler.com/en/insights/updates/canada-and-alberta-advance-proposed-west-coast-oil-pipeline-through-implementation-agreement/", title: "Canada and Alberta advance proposed West Coast oil pipeline through implementation agreement", publisher: "Osler, Hoskin & Harcourt", date: 2026-05, tier: 3}
+        - {url: "https://home.bennettjones.com/Insights/Blogs/Major-Projects-on-the-Horizon-in-Alberta", title: "Major Projects on the Horizon in Alberta", publisher: "Bennett Jones", date: 2026, tier: 3}
+  means:
+    - domain: economic
+      text: "Market access as currency: a quota for 49,000 Chinese EVs at the 6.1% most-favoured-nation rate, rising toward about 70,000 over five years, traded against Chinese duties on canola seed cut from 84% to 15% (asked by 1 March 2026); CUSMA access, the EU's SAFE contracts (up to 80% Canadian content) and the uranium contract with India as the other chips."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/economy/2026/1/16/canada-china-strike-trade-deals-to-slash-tariffs-on-evs-canola", title: "Canada, China strike trade deals to slash tariffs on EVs, canola", publisher: "Al Jazeera", date: 2026-01-16, tier: 3}
+        - {url: "https://www.eunews.it/en/2026/06/15/defence-eu-countries-give-final-go-ahead-for-canadas-participation-in-safe-funding/", title: "Defence: EU countries give final go-ahead for Canada's participation in SAFE funding", publisher: "Eunews", date: 2026-06-15, tier: 3}
+    - domain: military
+      text: "Forces on NATO's eastern and northern flanks: the framework nation of the NATO Multinational Brigade in Latvia, with more than 2,000 troops to 2031 (see the LVA card), a 365-day Arctic posture, and military aid to Ukraine of CAD 2.8bn in 2026 with the July 2026 package of ammunition and armoured vehicles (Prime Minister's readout)."
+      confidence: B
+      sources:
+        - {url: "https://www.pm.gc.ca/en/news/readouts/2026/07/07/prime-minister-carney-meets-president-ukraine-volodymyr-zelenskyy", title: "Prime Minister Carney meets President of Ukraine Volodymyr Zelenskyy", publisher: "Prime Minister of Canada (readout)", date: 2026-07-07, tier: 1}
+        - {url: "https://www.bnnbloomberg.ca/business/politics/2026/05/04/pm-carney-announces-270m-in-military-aid-for-ukraine/", title: "PM Carney announces $270M in military aid for Ukraine", publisher: "BNN Bloomberg", date: 2026-05-04, tier: 3}
+        - {url: "https://www.bnnbloomberg.ca/business/politics/2026/09/17/canada-seeks-full-membership-in-uk-led-military-coalition/", title: "Canada seeks full membership in U.K.-led military coalition", publisher: "BNN Bloomberg", date: 2026-09-17, tier: 3}
+    - domain: diplomatic
+      text: "Coalitions around Washington: the EU Security and Defence Partnership (June 2025), the membership bid in the UK-led Joint Expeditionary Force and talks on merging the Canadian and British defence-finance initiatives (September 2026), the Visiting Forces Agreement with the Philippines (ratified by the Senate on 11 August 2026), and the Beijing visit of January 2026 to rebuild ties while the Chinese side is pressed on interference."
+      confidence: B
+      sources:
+        - {url: "https://www.euronews.com/my-europe/2025/06/24/eu-and-canada-forge-closer-defence-trade-ties", title: "EU and Canada forge closer defence, trade ties", publisher: "Euronews", date: 2025-06-24, tier: 3}
+        - {url: "https://www.bnnbloomberg.ca/business/politics/2026/09/17/canada-seeks-full-membership-in-uk-led-military-coalition/", title: "Canada seeks full membership in U.K.-led military coalition", publisher: "BNN Bloomberg", date: 2026-09-17, tier: 3}
+        - {url: "https://globalnation.inquirer.net/334549/ph-pacts-with-canada-nz-to-boost-afp-readiness-dnd", title: "PH pacts with Canada, New Zealand to boost AFP readiness - DND", publisher: "Philippine Daily Inquirer", date: 2026-08, tier: 3}
+  constraints:
+    - text: "Trade dependence. Canada's two-way goods trade with the United States was USD 712.8bn in 2025, and over 70% of Canadian exports go to one buyer that now uses tariffs as coercion (the USA card's sources). The diversification into Europe, Britain, India and Asia is a multi-year project, not a substitute that can be switched on in 2026."
+      sources:
+        - {url: "https://www.freightwaves.com/news/us-mexico-trade-hits-new-high-of-872b-in-2025", title: "US-Mexico trade hits new high of $872B in 2025 (Canada second at USD 712.76bn)", publisher: "FreightWaves (WorldCity analysis of Census data)", date: 2026-02, tier: 3}
+        - {url: "https://www.nytimes.com/2026/09/23/world/canada/mark-carney-canada-us-trump-tariffs.html", title: "Carney lays out his vision for breaking Canada's reliance on US", publisher: "New York Times", date: 2026-09-23, tier: 3}
+    - text: "A divided domestic consensus. The Alberta pipeline needs British Columbia, where Premier David Eby calls the project 'fictional' and says it threatens the social licence of other coastal projects, and Quebec's Bloc Quebecois opposes it, while a national poll of October 2025 found a majority favourable to a pipeline to the B.C. coast. Ontario's Premier Doug Ford fights the China EV quota as a threat to the car industry."
+      sources:
+        - {url: "https://thehub.ca/2025/10/18/the-week-in-polling-majority-of-canadians-want-the-alberta-b-c-pipeline-optimism-about-the-carney-government-drops-87-percent-of-canadians-concerned-about-the-state-of-housing/", title: "The week in polling: majority of Canadians want the Alberta-B.C. pipeline", publisher: "The Hub", date: 2025-10-18, tier: 3}
+        - {url: "https://www.aljazeera.com/economy/2026/1/16/canada-china-strike-trade-deals-to-slash-tariffs-on-evs-canola", title: "Canada, China strike trade deals to slash tariffs on EVs, canola", publisher: "Al Jazeera", date: 2026-01-16, tier: 3}
+    - text: "Defence capacity. Canada reached 2% of GDP only in 2025, after 1.47% in 2024, when it was one of 11 NATO members that missed the target; the 5% pledge means roughly 2.5 times the current share of GDP, and the Defence Investment Agency that should speed procurement is new."
+      sources:
+        - {url: "https://www.bnnbloomberg.ca/business/politics/2026/03/26/canada-officially-hits-nato-2-gdp-target/", title: "Canada officially hits NATO 2% GDP target", publisher: "BNN Bloomberg", date: 2026-03-26, tier: 3}
+        - {url: "https://www.am800cklw.com/news/carney-says-canada-to-spend-5-of-gdp-on-defence-by-2035.html", title: "Carney says Canada to spend 5% of GDP on defence by 2035", publisher: "AM800 (CKLW)", date: 2025-06, tier: 3}
+  paradoxes:
+    - text: "The EU track answers Washington's coercion and hands Washington a new target. Trump called Canada's association with the EU a possible 'hostile act' (CNN, 15 September 2026), so the partnership that diversifies Canada's trade is also the one the tariffs are now aimed at."
+      sources:
+        - {url: "https://www.cnn.com/2026/09/15/americas/canada-mark-carney-eu-trump-hnk", title: "Trump says Canada becoming 'associate member' of EU could be a 'hostile act'", publisher: "CNN", date: 2026-09-15, tier: 3}
+        - {url: "https://www.eunews.it/en/2026/06/15/defence-eu-countries-give-final-go-ahead-for-canadas-participation-in-safe-funding/", title: "Defence: EU countries give final go-ahead for Canada's participation in SAFE funding", publisher: "Eunews", date: 2026-06-15, tier: 3}
+    - text: "The China reset buys canola access with car-market access. The EV quota that lets Chinese vehicles in at 6.1% is the concession that Ontario and the auto industry fear will close the door on Canadian carmakers in the US market, which is the very market the reset was meant to hedge."
+      sources:
+        - {url: "https://www.aljazeera.com/economy/2026/1/16/canada-china-strike-trade-deals-to-slash-tariffs-on-evs-canola", title: "Canada, China strike trade deals to slash tariffs on EVs, canola", publisher: "Al Jazeera", date: 2026-01-16, tier: 3}
+    - text: "Much alignment with Beijing on the Arctic. After meeting Xi, Carney said he found 'much alignment' with China on the sovereignty of Greenland and its people, while Canada's 2024 defence policy names Chinese and Russian ambitions in the Arctic as the threat that justifies the new spending."
+      sources:
+        - {url: "https://cfjctoday.com/?p=1057932", title: "There is 'much alignment' between Canada, China on Greenland sovereignty: Carney", publisher: "CFJC Today (Canadian Press)", date: 2026-01, tier: 3}
+  reading: |
+    Canada is a middle power whose security and market both point south, and whose largest partner is now its coercer. Ottawa answers with a deliberate turn to Europe, Britain, Asia and the Arctic while keeping NORAD, CUSMA and NATO, the frame it cannot afford to lose. The turn is transactional by design, from the China EV quota to the India uranium deal, and the grades say so: partner with most of them, reluctant only where the alignment is new. Every hedge that answers Washington also gives it a target, so the test is whether the annual CUSMA reviews stay talk or become the exit.
