@@ -443,6 +443,12 @@ def main():
             if st.get("dataset") or st.get("reciprocal_of") or st.get("confidence") not in ("A", "B") or st["grade"] not in SCALE:
                 continue
             handst[(a, st["toward"])] = st
+    handterr = {}   # hand-written A/B claims on territory: not on the lean scale, but they count for the faults
+    for a, v in stances.items():
+        for st in v["stances"]:
+            if st.get("dataset") or st.get("reciprocal_of") or st.get("confidence") not in ("A", "B") or st["grade"] != "claimed_territory":
+                continue
+            handterr[(a, st["toward"])] = st
     first = lambda t: re.split(r"(?<=[.;])\s", str(t or ""), 1)[0][:220]
     clients = []
     for (a, x), st in handst.items():
@@ -462,7 +468,7 @@ def main():
     # A claim on kin territory (claimed_territory + kin) is a feud too: the claim denies the other's statehood (Davide, 2026-10-16, China-Taiwan).
     FAULT_HOSTILE, FAULT_ALLIED = {"rival", "adversary"}, {"ally", "reluctant_ally"}
     faults = []
-    for (a, x), st in handst.items():
+    for (a, x), st in list(handst.items()) + list(handterr.items()):
         g, b = st["grade"], st.get("bond")
         kind = "feud" if b == "kin" and (g in FAULT_HOSTILE or g == "claimed_territory") else "byzantine" if b == "grievance" and g in FAULT_ALLIED else "strained" if b == "kin" and g in ("reluctant_ally", "reluctant_partner") else None
         if kind:
