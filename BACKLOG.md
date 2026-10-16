@@ -51,3 +51,5 @@ like every improving idea that comes to you".
 - **Eastern Libya as an actor.** The Libya card (16/10) treats the Haftar authority inside objectives and actions only; the GNU's main rival is therefore invisible on the map. Consider a sub-state actor (like sub-rs, sub-somaliland) once the unification talks settle.
 
 - **Dataset recognition rows to check**: KIR -> XKX (Kiribati recognising Kosovo since 2010 rests on one image URL; the Kiribati foreign-relations page does not list it), TON -> XKX (2014 citation unchecked).
+
+- **EAC membership dataset gap**: the Wikidata memberships hold only Rwanda for org-eac; Tanzania's card added its own row by hand. Check the other EAC members (KEN, UGA, BDI, SSD, COD, SOM) and fix the generator or memberships-manual.yaml.

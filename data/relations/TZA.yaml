@@ -1,0 +1,143 @@
+from: TZA
+relations:
+  # ---------- objective ----------
+  - to: KEN
+    layer: objective
+    type: influence_goal
+    summary: "Tanzania competes with Mombasa for East African transit. Dar es Salaam offers 30 days of free storage for Uganda- and DRC-bound cargo (up from 15), and port transit rose 17% to 14.61m tonnes in 2025/26."
+    since: '2025'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Date approximate: the free-storage article is undated in the search result and placed here by its order in the feed; the port figures are Tanzanian government data as reported, not checked on the page."
+    sources:
+      - {url: "https://www.theeastafrican.co.ke/tea/business-tech/dar-heats-up-rivalry-with-mombasa-via-free-storage-offer-5213474", title: "Dar heats up rivalry with Mombasa via free storage offer", publisher: "The East African", date: '2026', tier: 3}
+      - {url: "https://www.monitor.co.ug/uganda/news/national/uganda-eyes-dar-es-salaam-as-second-route-to-sea-as-tanzania-expands-port-5622310", title: "Uganda eyes Dar es Salaam as second route to sea as Tanzania expands port", publisher: "Daily Monitor", date: '2026', tier: 3}
+
+  # ---------- alignment ----------
+  - to: org-eac
+    layer: alignment
+    type: membership
+    summary: "Member of the East African Community. The membership datasets hold no Tanzania row for it (dataset gap); written here from the reporting that treats Tanzania as an EAC member state."
+    since: '1999'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Since is the 1999 treaty signature, from the Wikipedia index (uncited there); the original community dates from 1967 and the revived one entered into force later. The treaty text is the proof and was not opened."
+    sources:
+      - {url: "https://theeastafrican.co.ke/tea/business-tech/tanzania-blamed-for-39pc-of-eac-trade-barriers-5575306", title: "Tanzania blamed for 39pc of EAC trade barriers as deadline lapses", publisher: "The East African", date: '2026', tier: 3}
+
+  # ---------- dependency ----------
+  - to: CHN
+    layer: dependency
+    type: investment
+    summary: "China Civil Engineering Construction Corporation (CCECC) pledged about USD 1.4bn to revive the TAZARA railway under a 30-year concession: about USD 1bn for track rehabilitation and USD 0.4bn for 32 locomotives and 762 wagons."
+    value: 1.4
+    unit: usd_bn
+    since: '2025-09-29'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "This is contractor investment under a public-private concession, not a new sovereign loan; no sovereign loan found for 2024-26. The 1970 Chinese loan (USD 401m, shared with Zambia, cited under Wikipedia) is older and not counted. One outlet cites an annual fee of USD 30m to the state; not used, it is one report."
+    sources:
+      - {url: "https://chinaglobalsouth.com/2025/10/01/china-zambia-tanzania-sign-tazara-modernization-deal", title: "China, Zambia and Tanzania Seal $1.4 Billion Deal to Modernize Tazara Railway", publisher: "China Global South", date: '2025-10-01', tier: 3}
+      - {url: "https://www.caixinglobal.com/2025-11-22/china-tanzania-and-zambia-launch-major-overhaul-of-tanzania-zambia-railway-102385700.html", title: "China, Tanzania and Zambia launch major overhaul of Tanzania-Zambia railway", publisher: "Caixin Global", date: '2025-11-22', tier: 3}
+
+  - to: ARE
+    layer: dependency
+    type: investment
+    summary: "DP World committed more than USD 250m at first to upgrade the Dar es Salaam port under a 30-year concession signed on 22 October 2023, with up to USD 1bn over the term."
+    value: 0.25
+    unit: usd_bn
+    since: '2023-10-22'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Figures conflict and both are kept in the summary: 0.25bn is the first commitment (value here), 1bn is the figure over the term (Lloyd's List, as republished by Kuehne+Nagel), which may include hinterland logistics. Revenue-sharing and handback terms are not in our sources."
+    sources:
+      - {url: "https://www.dpworld.com/en/news/dp-world-signs-30-year-concession-to-operate-multi-purpose-dar-es-salaam-port-in-tanzania", title: "DP World signs 30 year concession to operate multi-purpose Dar es Salaam Port in Tanzania", publisher: "DP World (company release, not an official source)", date: '2023-10-22', tier: 3}
+      - {url: "https://gulfbusiness.com/en/2023/logistics/dp-world-concession-to-operate-dar-es-salaam-port", title: "DP World signs 30-year concession to operate multi-purpose Dar Es Salaam Port", publisher: "Gulf Business", date: '2023-10-22', tier: 3}
+
+  - to: COD
+    layer: dependency
+    type: trade_share
+    summary: "DRC cargo through Dar es Salaam rose 30% to 7.77m tonnes in 2025/26, more than half of the port's 14.61m tonnes of transit traffic."
+    value: 0.53
+    unit: share_of_port_transit_tonnage
+    since: '2025-07'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "The value is our arithmetic (7.77 / 14.61), from Tanzanian government figures as reported. It measures the DRC's reliance on this port, not Tanzania's total trade. The row sits under TZA because the port is the Tanzanian side of the dependency."
+    sources:
+      - {url: "https://www.monitor.co.ug/uganda/news/national/uganda-eyes-dar-es-salaam-as-second-route-to-sea-as-tanzania-expands-port-5622310", title: "Uganda eyes Dar es Salaam as second route to sea as Tanzania expands port", publisher: "Daily Monitor", date: '2026', tier: 3}
+      - {url: "https://www.theeastafrican.co.ke/tea/business-tech/dar-heats-up-rivalry-with-mombasa-via-free-storage-offer-5213474", title: "Dar heats up rivalry with Mombasa via free storage offer", publisher: "The East African", date: '2026', tier: 3}
+
+  # ---------- action ----------
+  - to: ARE
+    layer: action
+    type: agreement
+    summary: "The Tanzania Ports Authority and DP World sign the 30-year concession to operate the multi-purpose Dar es Salaam port, after Parliament endorsed the Tanzania-Dubai framework in June 2023."
+    since: '2023-10-22'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "The June 2023 parliamentary endorsement is from a search summary; the signing date is the same across the company release and the trade press."
+    sources:
+      - {url: "https://www.dpworld.com/en/news/dp-world-signs-30-year-concession-to-operate-multi-purpose-dar-es-salaam-port-in-tanzania", title: "DP World signs 30 year concession to operate multi-purpose Dar es Salaam Port in Tanzania", publisher: "DP World (company release, not an official source)", date: '2023-10-22', tier: 3}
+      - {url: "https://gulfbusiness.com/en/2023/logistics/dp-world-concession-to-operate-dar-es-salaam-port", title: "DP World signs 30-year concession to operate multi-purpose Dar Es Salaam Port", publisher: "Gulf Business", date: '2023-10-22', tier: 3}
+
+  - to: CHN
+    layer: action
+    type: agreement
+    summary: "Tanzania, Zambia and China sign the TAZARA concession and a government support agreement in Beijing on 29 September 2025, after a memorandum signed on 4 September 2024. Works opened with a ceremony in Lusaka on 20 November 2025."
+    since: '2025-09-29'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "One outlet dates the concession to November 2025; the September date is the one most sources give. Passenger trains restarted on 10 February 2026 (search summary, not opened)."
+    sources:
+      - {url: "https://chinaglobalsouth.com/2025/10/01/china-zambia-tanzania-sign-tazara-modernization-deal", title: "China, Zambia and Tanzania Seal $1.4 Billion Deal to Modernize Tazara Railway", publisher: "China Global South", date: '2025-10-01', tier: 3}
+      - {url: "https://www.caixinglobal.com/2025-11-22/china-tanzania-and-zambia-launch-major-overhaul-of-tanzania-zambia-railway-102385700.html", title: "China, Tanzania and Zambia launch major overhaul of Tanzania-Zambia railway", publisher: "Caixin Global", date: '2025-11-22', tier: 3}
+      - {url: "https://thechanzo.com/2025/12/30/tazara-china-deal-to-revive-historic-railway-sparks-fierce-debate/", title: "TAZARA-China deal to revive historic railway sparks fierce debate", publisher: "The Chanzo", date: '2025-12-30', tier: 3}
+
+  - to: COD
+    layer: action
+    type: incident
+    summary: "SADC leaders end the SAMIDRC mandate on 13 March 2025. The Tanzanian contingent withdraws in phases from 29 April 2025, returning overland through Rwanda, which had to consent to the transit."
+    since: '2025-03-13'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "No closer action type in the vocabulary, so 'incident', as in the Cambodia card. The SADC mission was not Tanzania's alone: South Africa and Malawi also withdrew."
+    sources:
+      - {url: "https://www.dailymaverick.co.za/article/2025-04-29-south-african-and-other-sadc-troops-finally-begin-withdrawal-from-war-torn-drc.md", title: "South African and other SADC troops finally begin withdrawal from war-torn DRC", publisher: "Daily Maverick", date: '2025-04-29', tier: 3}
+      - {url: "https://www.africanews.com/amp/2025/06/13/sadc-peacekeeping-troops-begin-final-phase-of-withdrawal-from-east-drc/", title: "SADC peacekeeping troops begin final phase of withdrawal from east DRC", publisher: "Africanews", date: '2025-06-13', tier: 3}
+      - {url: "https://mp.scotsman.com/world-news/south-africa-tanzania-and-malawi-to-withdraw-troops-from-conflict-torn-dr-congo-5715852", title: "South Africa, Tanzania and Malawi to withdraw troops from conflict-torn DR Congo", publisher: "The Scotsman", date: '2025', tier: 3}
+
+  - to: org-eu
+    layer: action
+    type: incident
+    summary: "Samia Suluhu Hassan rejects Western criticism of the 2025 election as interference, after the EU statement of 4 November 2025 had voiced serious concern over the violence and the internet shutdown."
+    since: '2025-12'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    note: "The date is the reporting date (OPB, 7 December 2025), not the date of the speech, which is not pinned. The EU statement is tier 1; Samia's reply is from tier 3 reporting."
+    sources:
+      - {url: "https://www.zawya.com/en/press-release/africa-press-releases/tanzania-statement-by-the-high-representative-on-behalf-of-the-european-union-on-the-elections-in-tanzania-kt04tjla", title: "Tanzania: Statement by the High Representative on behalf of the European Union on the elections in Tanzania", publisher: "Zawya (reprint of the EU High Representative statement)", date: '2025-11-04', tier: 1}
+      - {url: "https://www.opb.org/article/2025/12/07/u-s-reconsiders-ties-with-tanzania/", title: "U.S. reconsiders Tanzania ties after deadly post-election crackdown", publisher: "OPB (NPR story)", date: '2025-12-07', tier: 3}
+
+  - to: KEN
+    layer: action
+    type: incident
+    summary: "A Tanzanian levy on Kenyan-made matchboxes is reported to take effect in May 2026 despite a suspension ordered by the East African Court of Justice. The 30 June 2026 deadline to clear non-tariff barriers lapsed with little progress."
+    since: '2026-05'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "The matchbox case rests on one outlet (Dawan Africa); no Tanzanian government response was found. The deadline lapse is from The East African and Capital FM (May 2026 deadline set)."
+    sources:
+      - {url: "https://www.dawan.africa/news/tanzania-allegedly-defies-regional-court-order-in-escalating-matchbox-tax-dispute-with-kenya", title: "Tanzania allegedly defies regional court order in escalating matchbox tax dispute with Kenya", publisher: "Dawan Africa", date: '2026', tier: 3}
+      - {url: "https://www.capitalfm.co.ke/news/2026/05/kenya-tanzania-set-may-2026-deadline-to-eliminate-trade-barriers/", title: "Kenya, Tanzania set May 2026 deadline to eliminate trade barriers", publisher: "Capital FM", date: '2026-05', tier: 3}
+      - {url: "https://theeastafrican.co.ke/tea/business-tech/tanzania-blamed-for-39pc-of-eac-trade-barriers-5575306", title: "Tanzania blamed for 39pc of EAC trade barriers as deadline lapses", publisher: "The East African", date: '2026', tier: 3}

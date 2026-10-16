@@ -1,14 +1,205 @@
 id: KEN
 name: Kenya
+short: Kenya
 type: state
+coords: [36.82, -1.29]
 iso2: ke
 wikipedia: https://en.wikipedia.org/wiki/Kenya
-coords:
-- 36.82
-- -1.29
 seat: Nairobi
-regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+regions: [east-africa]
+card: full
+tier: protagonist
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the government standing until and through the 2027 general election: hold the broad-based coalition with Raila Odinga's ODM after his death on 15 October 2025 (the party is split between those who want to stay with Ruto and Secretary General Sifuna and Governor Orengo, who refuse to back him), and keep the post-2024 street (Gen Z protests, the Finance Bill 2024 withdrawn, 38 dead on Saba Saba 2025, a second anniversary march in June 2026) from turning into a vote against the president. Every external choice below is priced against this one."
+      confidence: B
+      sources:
+        - {url: "https://capitalfm.africa/inside-the-rotting-orange-odms-death-looms-before-2027/", title: "Inside the rotting orange, ODM's death looms before 2027", publisher: "Capital FM (Kenya)", date: 2026-01-05, tier: 3}
+        - {url: "https://nation.africa/kenya/news/saba-saba-protests-death-toll-hits-38--5114860", title: "Saba Saba protests death toll hits 38", publisher: "Nation (Kenya)", date: 2025-07, tier: 3}
+        - {url: "https://www.africanews.com/2026/06/25/two-years-after-gen-z-uprising-kenyan-protesters-return-to-nairobi-streets/", title: "Two years after Gen Z uprising, Kenyan protesters return to Nairobi streets", publisher: "Africanews", date: 2026-06-25, tier: 3}
+    - rank: 2
+      text: "Stay the region's indispensable broker and host: sell mediation, venues and uniformed personnel (Tumaini talks for South Sudan, the Nairobi process for eastern DRC, the RSF charter meetings of February 2025, the Haiti mission from June 2024, 1,410 troops allocated to AUSSOM) and turn the UN presence in Nairobi (UNEP, UN-Habitat, and UNICEF, UNFPA and UN Women global offices announced for relocation) into the permanent capital of a middle power."
+      confidence: B
+      sources:
+        - {url: "https://www.radiotamazuj.org/en/news/article/kenya-led-mediation-explains-delay-in-tumaini-peace-talks", title: "Kenya-led mediation explains delay in Tumaini peace talks", publisher: "Radio Tamazuj", date: 2025, tier: 3}
+        - {url: "https://peopledaily.digital/news/eac-sadc-summit-directs-resumption-of-direct-negotiations-with-drc-m23-rebels-under-merged-luanda-nairobi-process", title: "EAC-SADC Summit directs resumption of direct negotiations with DRC M23 rebels under merged Luanda/Nairobi process", publisher: "People Daily (Kenya)", date: 2025-02, tier: 3}
+        - {url: "https://capitalfm.africa/ruto-trump-washington-visit-kenya-us-health-deal/", title: "Ruto hails Washington engagement with Trump as watershed moment", publisher: "Capital FM (Kenya)", date: 2025-12-06, tier: 3}
+        - {url: "https://www.aljazeera.com/features/2025/8/20/as-un-agencies-mull-kenya-move-some-fear-exclusion-from-nairobis-growth", title: "As UN agencies mull Kenya move, some fear exclusion from Nairobi's growth", publisher: "Al Jazeera", date: 2025-08-20, tier: 3}
+    - rank: 3
+      text: "Keep al-Shabaab off Kenyan soil and keep a buffer on the Somali side of the border: Jubaland under Ahmed Madobe is that buffer, the KDF sits in southern Somalia inside AUSSOM, and the ICJ's October 2021 maritime ruling is rejected 'in totality' rather than implemented. Mandera and Lamu still lose soldiers and police to roadside bombs (five security personnel killed in Mandera in late July 2026, three KDF soldiers in Lamu in July 2025)."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2021/10/13/kenya-rejects-icjs-verdict-on-somalia-maritime-border-row", title: "Kenya rejects ICJ's verdict on Somalia maritime border row", publisher: "Al Jazeera", date: 2021-10-13, tier: 3}
+        - {url: "https://www.somaliguardian.com/news/somalia-news/ethiopia-opposes-somali-government-plans-for-parallel-jubaland-administration-in-gedo/", title: "Ethiopia opposes Somali government plans for parallel Jubaland administration in Gedo", publisher: "Somali Guardian", date: 2025-10-12, tier: 3}
+        - {url: "https://www.kenyans.co.ke/news/125966-six-injured-suspected-al-shabaab-ied-attack-mandera", title: "Six Injured in Suspected Al Shabaab IED Attack in Mandera", publisher: "Kenyans.co.ke", date: 2026-08, tier: 3}
+        - {url: "https://thekenyatimes.com/breaking-news/at-least-3-kdf-soldiers-killed-in-lamu-ied-attack/", title: "At least 3 KDF soldiers killed in Lamu IED attack", publisher: "The Kenya Times", date: 2025-07-15, tier: 3}
+    - rank: 4
+      text: "Stay solvent without a breach with the creditors or the street: public debt passed KSh 13 trillion in May 2026 (about 70% of GDP on the IMF's projection), interest alone is about 45% of 2026/27 ordinary revenue, and the USD 3.6bn IMF programme ended in April 2025 before its last review. Hence the yuan conversion of the SGR loans (October 2025), Gulf supplier credit, Eurobond issues, and a new IMF programme that the Treasury says it has not counted on in its budget."
+      confidence: B
+      sources:
+        - {url: "https://peopledaily.digital/business/kenyas-debt-burden-accelerates-past-ksh13t-mark/amp", title: "Kenya's debt burden accelerates past Ksh13T mark", publisher: "People Daily (Kenya)", date: 2026-05, tier: 3}
+        - {url: "https://www.standardmedia.co.ke/business/amp/columnists/article/2001549613/public-debt-is-the-black-hole-in-mbadis-budget-that-no-one-wants-to-confront", title: "Public debt is the black hole in Mbadi's budget that no one wants to confront", publisher: "The Standard (Kenya)", date: 2026, tier: 3}
+        - {url: "https://polity.org.za/article/imf-staff-mission-due-in-kenya-this-week-for-talks-on-new-deal-2026-02-25", title: "IMF staff mission due in Kenya this week for talks on new deal", publisher: "Reuters (via Polity)", date: 2026-02-25, tier: 3}
+    - rank: 5
+      text: "Widen market access so no single patron holds the exit: the EU-Kenya EPA in force since 1 July 2024 (duty-free, quota-free), AGOA (lapsed 30 September 2025, renewed to 31 December 2026), a US reciprocal trade framework (first round February 2026), the UAE CEPA (14 January 2025), the LAPSSET corridor to give Ethiopia an outlet through Lamu, and labour export (583,868 Kenyans placed abroad between 2022 and early 2026, remittances about USD 5bn)."
+      confidence: B
+      sources:
+        - {url: "https://peopledaily.digital/business/kenya-eu-trade-pact-takes-effect-ushers-in-new-order", title: "Kenya-EU trade pact takes effect, ushers in new order", publisher: "People Daily (Kenya)", date: 2024-07-01, tier: 3}
+        - {url: "https://www.the-star.co.ke/business/2026-02-27-kenya-us-hold-first-round-of-talks-on-reciprocal-trade-framework", title: "Kenya, US hold first round of talks on reciprocal trade framework", publisher: "The Star (Kenya)", date: 2026-02-27, tier: 3}
+        - {url: "https://kntsite.president.go.ke/wp-content/uploads/KENYA-AND-UAE-SIGN-LANDMARK-COMPREHENSIVE-ECONOMIC-PARTNERSHIP-AGREEMENT-IN-ABU-DHABI-UNITED-ARAB-EMIRATES.pdf", title: "Kenya and UAE sign landmark Comprehensive Economic Partnership Agreement in Abu Dhabi", publisher: "State House Kenya", date: 2025-01-14, tier: 1}
+        - {url: "https://thekenyatimes.com/featured/kenyans-work-abroad-2026/", title: "Kenyans work abroad 2026 (National Employment Authority figures to Parliament)", publisher: "The Kenya Times", date: 2026-09-22, tier: 3}
+    - rank: 6
+      text: "Hedge between the West and the East without paying the price of choosing: Major Non-NATO Ally status and the Haiti lead for Washington, BATUK training for London, and at the same time the April 2025 state visit to Beijing, Chinese loans converted to yuan, Gulf fuel credit. The tone is 'a bridge between East and West' (Ruto in China, April 2025); the new foreign policy sessional paper of 2025 is read in Nairobi as a neutral, non-aligned course."
+      confidence: B
+      sources:
+        - {url: "https://citizen.digital/news/kenya-can-be-bridge-between-east-and-west-ruto-tells-china-amid-tension-with-us-n361521", title: "'Kenya can be bridge between East and West': Ruto tells China amid tension with US", publisher: "Citizen Digital (Kenya)", date: 2025-04, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2024/5/23/us-to-designate-kenya-as-non-nato-ally-during-rutos-state-visit", title: "Biden pledges to designate Kenya as 'non-NATO ally' during Ruto visit", publisher: "Al Jazeera", date: 2024-05-23, tier: 3}
+        - {url: "https://capitalfm.africa/kenya-abstains-un-resolution-russia-ukraine-children/", title: "Kenya abstains from UN vote compelling Russia to return abducted Ukrainian children", publisher: "Capital FM (Kenya)", date: 2025-12, tier: 3}
+        - {url: "https://mfa.go.ke/sessional-paper-no-1-2025-anchor-kenyas-foreign-policy", title: "Sessional Paper No. 1 of 2025 to anchor Kenya's foreign policy", publisher: "Ministry of Foreign and Diaspora Affairs (Kenya)", date: 2025, tier: 1}
+
+  means:
+    - domain: diplomatic
+      text: "Convening power: Nairobi hosts the Tumaini talks that Kiir asked Ruto to take over from Sant'Egidio (December 2023), the former president Uhuru Kenyatta's EAC-facilitated DRC track (merged with Luanda by the EAC-SADC summit of February 2025), a special envoy to Juba after Riek Machar's arrest (March 2025), and the RSF charter meetings of February 2025. The venue is the product."
+      confidence: B
+      sources:
+        - {url: "https://www.radiotamazuj.org/en/news/article/kenya-led-mediation-explains-delay-in-tumaini-peace-talks", title: "Kenya-led mediation explains delay in Tumaini peace talks", publisher: "Radio Tamazuj", date: 2025, tier: 3}
+        - {url: "https://allafrica.com/stories/202503280031.html", title: "Sudan: Ruto to Send Special Envoy to Juba to De-Escalate Tensions Following Riek Machar's Detention", publisher: "AllAfrica", date: 2025-03-28, tier: 3}
+        - {url: "https://allafrica.com/stories/202502070033.html", title: "Kenyatta Defends 'Sidelined' Nairobi Peace Process, Urges Fresh Momentum", publisher: "AllAfrica", date: 2025-02-07, tier: 3}
+        - {url: "https://www.bbc.com/news/articles/ckg815277g5o", title: "Sudan bans all imports from Kenya after it hosted civil war rivals", publisher: "BBC", date: 2025-03-14, tier: 3}
+    - domain: diplomatic
+      text: "Security provider for hire: Kenya led the Multinational Security Support mission in Haiti from June 2024 (the UN Security Council turned it into the Gang Suppression Force in September-October 2025; Rubio said that would not have been possible without Kenya) and contributes to AUSSOM; the reward is patrons' goodwill, not payment: Major Non-NATO Ally status announced on 23 May 2024, a USD 1.6bn health framework on 4 December 2025."
+      confidence: B
+      sources:
+        - {url: "https://capitalfm.africa/ruto-trump-washington-visit-kenya-us-health-deal/", title: "Ruto hails Washington engagement with Trump as watershed moment", publisher: "Capital FM (Kenya)", date: 2025-12-06, tier: 3}
+        - {url: "https://capitalfm.africa/over-200-kenyan-police-return-home-from-haiti-mission/", title: "Over 200 Kenyan Police Return Home from Haiti Mission", publisher: "Capital FM (Kenya)", date: 2026-03-18, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2024/5/23/us-to-designate-kenya-as-non-nato-ally-during-rutos-state-visit", title: "Biden pledges to designate Kenya as 'non-NATO ally' during Ruto visit", publisher: "Al Jazeera", date: 2024-05-23, tier: 3}
+    - domain: military
+      text: "The KDF in southern Somalia since 2011 (1,410 troops allocated to AUSSOM in the AU-Somalia agreement of February 2025), the Jubaland forces as an unofficial second line (Nairobi denies arming them), and BATUK training in Laikipia, which also trains the KDF for Somalia. AUSSOM is underfunded: the Security Council ceiling is 11,826 uniformed personnel."
+      confidence: C
+      sources:
+        - {url: "https://www.globalsecurity.org/military/library/news/2025/02/mil-250225-voa04.htm", title: "AU, Somalia agree on troop numbers for new mission", publisher: "VOA (via GlobalSecurity.org)", date: 2025-02-25, tier: 3}
+        - {url: "https://www.voanews.com/a/africa_kenya-denies-role-somalias-internal-conflict/6201325.html", title: "Kenya denies role in Somalia's internal conflict", publisher: "VOA", date: 2021, tier: 3}
+        - {url: "https://thestandard.ke/business/amp/africa/article/2001553978/batuk-training-resumes-as-kenya-hails-uk-defence-partnership", title: "BATUK training resumes as Kenya hails UK defence partnership", publisher: "The Standard (Kenya)", date: 2026-07-28, tier: 3}
+    - domain: economic
+      text: "Financial engineering and trade pacts rather than aid: the SGR loans of about USD 5bn converted from dollars to yuan on 7 October 2025 (about USD 215m a year saved, according to the Treasury as reported), Gulf fuel supply on 180-day credit renewed for two years, the EU EPA (July 2024), the UAE CEPA (January 2025), AGOA, and a labour-export policy (583,868 placements between 2022 and early 2026) that returns about USD 5bn a year."
+      confidence: B
+      sources:
+        - {url: "https://www.intellinews.com/kenya-asks-china-s-approval-to-convert-dollar-denominated-5bn-railway-loan-into-yuan-397562/", title: "Kenya asks China's approval to convert dollar-denominated $5bn railway loan into yuan", publisher: "bne IntelliNews", date: 2025-08, tier: 3}
+        - {url: "https://peopledaily.digital/insights/why-the-imf-is-warning-kenya-and-ethiopia-on-yuan-debt-swaps/amp", title: "Why the IMF is warning Kenya and Ethiopia on yuan debt swaps", publisher: "People Daily (Kenya)", date: 2025-10, tier: 3}
+        - {url: "https://eastleighvoice.co.ke/daniel%20kiptoo/134202/kenya-extends-oil-supply-agreement-with-three-gulf-companies-bloomberg-news-reports", title: "Kenya extends oil supply agreement with three Gulf companies, Bloomberg News reports", publisher: "Eastleigh Voice (Bloomberg)", date: 2025, tier: 3}
+        - {url: "https://thekenyatimes.com/featured/kenyans-work-abroad-2026/", title: "Kenyans work abroad 2026 (National Employment Authority figures to Parliament)", publisher: "The Kenya Times", date: 2026-09-22, tier: 3}
+    - domain: informational
+      text: "A foreign-policy story of non-alignment and global-south voice: Ruto's April 2025 Peking University speech (the world order 'broken, dysfunctional and no longer fit for purpose'), the 'bridge between East and West' line, the sessional paper of 2025 and a UNGA recognition of Palestinian statehood (September 2025). Abroad the story is confident; at home the police are the message (Ruto's 'shoot in the leg' order of 9 July 2025)."
+      confidence: B
+      sources:
+        - {url: "https://www.yahoo.com/news/kenyan-president-vows-closer-ties-062034431.html", title: "Kenyan president vows closer ties to China during visit amid Trump's trade war", publisher: "Associated Press (via Yahoo News)", date: 2025-04-24, tier: 3}
+        - {url: "https://citizen.digital/news/kenya-can-be-bridge-between-east-and-west-ruto-tells-china-amid-tension-with-us-n361521", title: "'Kenya can be bridge between East and West': Ruto tells China amid tension with US", publisher: "Citizen Digital (Kenya)", date: 2025-04, tier: 3}
+        - {url: "https://citizen.digital/article/dont-kill-them-shoot-them-in-the-leg-ruto-tells-police-on-protest-violence-n365987", title: "'Don't kill them, shoot them in the leg,' Ruto tells police on protest violence", publisher: "Citizen Digital (Kenya)", date: 2025-07-09, tier: 3}
+
+  constraints:
+    - text: "Debt. Public debt passed KSh 13 trillion in May 2026; the IMF projects 71.6% of GDP for 2026 against a legal anchor of 55% by 2028; in the 2026/27 budget interest is KSh 1.254 trillion, about 45% of projected ordinary revenue (83% with principal), and MPs were told that total debt service will take 91% of ordinary revenue in 2026/27 on the wider 'consolidated fund services' count. The IMF programme ended in April 2025 before its last review; the Treasury has not counted IMF money in the current or next budget."
+      confidence: B
+      sources:
+        - {url: "https://peopledaily.digital/business/kenyas-debt-burden-accelerates-past-ksh13t-mark/amp", title: "Kenya's debt burden accelerates past Ksh13T mark", publisher: "People Daily (Kenya)", date: 2026-05, tier: 3}
+        - {url: "https://www.standardmedia.co.ke/business/amp/columnists/article/2001549613/public-debt-is-the-black-hole-in-mbadis-budget-that-no-one-wants-to-confront", title: "Public debt is the black hole in Mbadi's budget that no one wants to confront", publisher: "The Standard (Kenya)", date: 2026, tier: 3}
+        - {url: "https://peopledaily.digital/news/mps-raise-alarm-as-kenyas-debt-servicing-set-to-consume-91-of-revenue/amp", title: "MPs raise alarm as Kenya's debt servicing set to consume 91% of revenue", publisher: "People Daily (Kenya)", date: 2026, tier: 3}
+        - {url: "https://www.dawan.africa/news/kenya-prepares-for-fresh-imf-funding-talks-as-new-mission-heads-to-nairobi", title: "Kenya prepares for fresh IMF funding talks as new mission heads to Nairobi", publisher: "Dawan Africa", date: 2026-08-12, tier: 3}
+    - text: "The street. The Finance Bill 2024 was withdrawn after the protests of June 2024; the anniversary of 25 June 2025 left at least 19 dead (KNCHR, as cited by Amnesty) and Saba Saba (7 July 2025) 38 by the Nation's count; the second anniversary on 25 June 2026 passed under heavy policing and arrests outside Parliament. Any new tax or subsidy cut is a protest, so the IMF route is narrow and foreign financing is the only margin."
+      confidence: B
+      sources:
+        - {url: "https://nation.africa/kenya/news/saba-saba-protests-death-toll-hits-38--5114860", title: "Saba Saba protests death toll hits 38", publisher: "Nation (Kenya)", date: 2025-07, tier: 3}
+        - {url: "https://www.amnesty.org/en/location/africa/east-africa-the-horn-and-great-lakes/kenya/report-kenya/", title: "Amnesty International Report: Kenya", publisher: "Amnesty International", date: 2026, tier: 2}
+        - {url: "https://www.amnesty.nl/actueel/kenya-joint-statement-update-on-saba-saba-anniversary-protests", title: "Kenya: Joint Statement: Update on Saba Saba Anniversary Protests", publisher: "Amnesty International (joint statement)", date: 2025-07, tier: 2}
+        - {url: "https://capitalfm.africa/nairobi-falls-quiet-as-kenya-marks-second-anniversary-of-gen-z-protests/", title: "Nairobi Falls Quiet as Kenya Marks Second Anniversary of Gen Z Protests", publisher: "Capital FM (Kenya)", date: 2026-06-25, tier: 3}
+    - text: "The 2027 arithmetic after Odinga. The coalition with ODM was Raila's personal pact with Ruto (an MoU of March 2025, according to People Daily); he died on 15 October 2025 and the party now argues in public about whether to back Ruto (a TIFA survey of December 2025 found only 19% of ODM supporters wanted that), with Gachagua and Kalonzo outside. Ruto's foreign policy has to produce wins before the vote and cannot afford a visible humiliation."
+      confidence: B
+      sources:
+        - {url: "https://capitalfm.africa/inside-the-rotting-orange-odms-death-looms-before-2027/", title: "Inside the rotting orange, ODM's death looms before 2027", publisher: "Capital FM (Kenya)", date: 2026-01-05, tier: 3}
+        - {url: "https://peopledaily.digital/insights/what-is-the-future-of-odm-after-railas-death", title: "What is the future of ODM after Raila's death?", publisher: "People Daily (Kenya)", date: 2025, tier: 3}
+    - text: "Fuel and money from the Gulf, security from the West, credit from China: no single supplier can be offended. Gulf state companies (ADNOC, ENOC, Aramco) supply fuel on 180-day credit; the US supplies the health money and the market preference that depend on a yearly AGOA decision and a governance review (July 2026); the UK can move its exercise out of Laikipia; China holds the SGR debt."
+      confidence: B
+      sources:
+        - {url: "https://eastleighvoice.co.ke/daniel%20kiptoo/134202/kenya-extends-oil-supply-agreement-with-three-gulf-companies-bloomberg-news-reports", title: "Kenya extends oil supply agreement with three Gulf companies, Bloomberg News reports", publisher: "Eastleigh Voice (Bloomberg)", date: 2025, tier: 3}
+        - {url: "https://www.standardmedia.co.ke/sports/amp/business/2001551889/kenyas-agoa-test-as-trump-reviews-rutos-governance-record", title: "Kenya's AGOA test as Trump reviews Ruto's governance record", publisher: "The Standard (Kenya)", date: 2026-07-03, tier: 3}
+        - {url: "https://www.the-star.co.ke/news/2026-07-24-kenya-shuts-down-claims-batuk-deal-has-collapsed", title: "Kenya shuts down claims BATUK deal has collapsed", publisher: "The Star (Kenya)", date: 2026-07-24, tier: 3}
+    - text: "Al-Shabaab's reach into Kenya and a Somali settlement that Nairobi does not control. The border counties (Mandera, Garissa, Lamu) keep suffering roadside bombs, AUSSOM's funding is uncertain and its mandate ends on 31 December 2026 unless renewed, and the ICJ ruling and Jubaland tie Nairobi to a quarrel with the Mogadishu government that it also needs as the host of its troops."
+      confidence: B
+      sources:
+        - {url: "https://www.kenyans.co.ke/news/125966-six-injured-suspected-al-shabaab-ied-attack-mandera", title: "Six Injured in Suspected Al Shabaab IED Attack in Mandera", publisher: "Kenyans.co.ke", date: 2026-08, tier: 3}
+        - {url: "https://allafrica.com/stories/202606220511.html", title: "Kenya: Somalia's President Holds Talks With Kenya's Ruto Amid Aussom Funding Concerns", publisher: "AllAfrica", date: 2026-06-22, tier: 3}
+        - {url: "https://www.securitycouncilreport.org/whatsinblue/2025/12/somalia-vote-on-aussom-mandate-renewal.php", title: "Somalia: vote on AUSSOM mandate renewal (resolution 2809)", publisher: "Security Council Report", date: 2025-12, tier: 2}
+    - text: "A capital with limited coercive reach beyond its neighbourhood. Sudan could punish Kenya for hosting the RSF with an import ban (14 March 2025, still in force in August 2026, with about 3.44 million kg of tea stuck in Mombasa); Tanzania restricts foreign traders in 14 mining services (April 2026) and banned Kenyan poultry and cigarettes; neither is answered. Nairobi can host and talk but has few instruments to retaliate."
+      confidence: B
+      sources:
+        - {url: "https://citizen.digital/article/kalonzo-urges-sudan-govt-to-lift-ban-on-kenyas-imports-n387843", title: "Kalonzo urges Sudan gov't to lift ban on Kenya's imports", publisher: "Citizen Digital (Kenya)", date: 2026-08, tier: 3}
+        - {url: "https://www.theeastafrican.co.ke/tea/news/east-africa/ruto-seeks-to-reset-kenya-tanzania-ties-5444186", title: "Ruto seeks to reset Kenya-Tanzania ties", publisher: "The EastAfrican", date: 2026-05-02, tier: 3}
+
+  paradoxes:
+    - text: "The broker who takes a side loses the room. Nairobi hosted the RSF's founding charter in February 2025 as part of 'efforts to end the war'; the SAF government recalled its ambassador (20 February), banned every Kenyan import (14 March, tea alone about KSh 9bn a year) and accuses Ruto of undermining Sudan. The same convening power that earns Kenya a seat at every table made it a party to the Sudan war in one capital's eyes, and the closer it sits to the UAE (CEPA, fuel credit) the harder it is to show neutrality."
+      confidence: B
+      sources:
+        - {url: "https://sudantribune.com/article297696/", title: "Sudan recalls Kenya envoy, accuses Ruto of undermining ties", publisher: "Sudan Tribune", date: 2025-02-21, tier: 3}
+        - {url: "https://www.bbc.com/news/articles/ckg815277g5o", title: "Sudan bans all imports from Kenya after it hosted civil war rivals", publisher: "BBC", date: 2025-03-14, tier: 3}
+        - {url: "https://citizen.digital/article/kalonzo-urges-sudan-govt-to-lift-ban-on-kenyas-imports-n387843", title: "Kalonzo urges Sudan gov't to lift ban on Kenya's imports", publisher: "Citizen Digital (Kenya)", date: 2026-08, tier: 3}
+    - text: "Policing Port-au-Prince while the police shoot at home. The Haiti mission bought Kenya Washington's thanks (Rubio, December 2025) and a UN force that carries its name, but the same service answered the 2024-26 protests with live fire, 'shoot in the leg' on 9 July 2025, and the Haitians who tried to stop the last Kenyan police leaving in April 2026 are the reverse image of the Kenyans who march every 25 June. A security export that depends on a police force the public does not trust turns the credential into a liability at the election."
+      confidence: C
+      sources:
+        - {url: "https://capitalfm.africa/ruto-trump-washington-visit-kenya-us-health-deal/", title: "Ruto hails Washington engagement with Trump as watershed moment", publisher: "Capital FM (Kenya)", date: 2025-12-06, tier: 3}
+        - {url: "https://citizen.digital/article/dont-kill-them-shoot-them-in-the-leg-ruto-tells-police-on-protest-violence-n365987", title: "'Don't kill them, shoot them in the leg,' Ruto tells police on protest violence", publisher: "Citizen Digital (Kenya)", date: 2025-07-09, tier: 3}
+        - {url: "https://www.timeslive.co.za/news/world/2026-09-29-un-renews-haiti-force-mandate-for-six-months-after-fresh-gang-killings/", title: "UN renews Haiti force mandate for six months after fresh gang killings", publisher: "Reuters (via TimesLIVE)", date: 2026-09-29, tier: 3}
+    - text: "Guarding the Somali buffer feeds the quarrel that endangers it. Backing Madobe and refusing the ICJ ruling give Kenya a friendly strip along its border, but Mogadishu has accused Nairobi of arming militias, Jubaland fighters beaten at Balad Hawo fled to Mandera, and in 2026 the Gedo fighting again reached the border at El Wak, so the buffer is exactly where the federal-local war is hottest. Kenya's 1,410 AUSSOM troops serve the government that Kenya's client resists."
+      confidence: B
+      sources:
+        - {url: "https://www.somaliguardian.com/news/somalia-news/ethiopia-opposes-somali-government-plans-for-parallel-jubaland-administration-in-gedo/", title: "Ethiopia opposes Somali government plans for parallel Jubaland administration in Gedo", publisher: "Somali Guardian", date: 2025-10-12, tier: 3}
+        - {url: "https://www.somaliguardian.com/news/somalia-news/kenya-orders-jubaland-troops-to-withdraw-after-fleeing-somalia-clashes/", title: "Kenya orders Jubaland troops to withdraw after fleeing Somalia clashes", publisher: "Somali Guardian", date: 2021, tier: 3}
+        - {url: "https://www.somaliguardian.com/news/somalia-news/somalia-government-loses-three-towns-48-hours/", title: "Somalia's govt loses three towns in 48 hours as rivals advance", publisher: "Somali Guardian", date: 2026-10-10, tier: 3}
+    - text: "The hedge brings the scrutiny it hoped to avoid. After the April 2025 Beijing visit and the yuan conversion of the SGR debt, which cut the cost of service, the IMF warned of currency risk in such swaps, AGOA lapsed and was renewed only for 2026, Washington started a review of Ruto's governance record (July 2026), and the US embassy in Nairobi has been without a confirmed ambassador for a long stretch. The East gives cheaper money; the West holds the market and the security umbrella, and notices."
+      confidence: C
+      sources:
+        - {url: "https://peopledaily.digital/insights/why-the-imf-is-warning-kenya-and-ethiopia-on-yuan-debt-swaps/amp", title: "Why the IMF is warning Kenya and Ethiopia on yuan debt swaps", publisher: "People Daily (Kenya)", date: 2025-10, tier: 3}
+        - {url: "https://www.standardmedia.co.ke/sports/amp/business/2001551889/kenyas-agoa-test-as-trump-reviews-rutos-governance-record", title: "Kenya's AGOA test as Trump reviews Ruto's governance record", publisher: "The Standard (Kenya)", date: 2026-07-03, tier: 3}
+        - {url: "https://peopledaily.digital/business/ruto-looks-east-as-white-house-tariffs-america-first-policy-bite", title: "Ruto looks East as White House tariffs, 'America First' policy bite", publisher: "People Daily (Kenya)", date: 2025-04, tier: 3}
+    - text: "Shielding the budget from the IMF raises the price of money. The 2024-25 programme lapsed rather than impose taxes the street had just defeated, and to fund development projects the Treasury securitised revenue streams, which Reuters reported complicated the IMF talks that would lower the cost of a Eurobond (a USD 2.25bn issue in 2026). The workaround for financing is the obstacle to the one seal that would make financing cheaper."
+      confidence: B
+      sources:
+        - {url: "https://polity.org.za/article/imf-staff-mission-due-in-kenya-this-week-for-talks-on-new-deal-2026-02-25", title: "IMF staff mission due in Kenya this week for talks on new deal", publisher: "Reuters (via Polity)", date: 2026-02-25, tier: 3}
+        - {url: "https://www.dawan.africa/news/kenya-prepares-for-fresh-imf-funding-talks-as-new-mission-heads-to-nairobi", title: "Kenya prepares for fresh IMF funding talks as new mission heads to Nairobi", publisher: "Dawan Africa", date: 2026-08-12, tier: 3}
+    - text: "A friend of the UAE and a contributor to the mission of the UAE's Somali adversary. Kenya's CEPA with Abu Dhabi (14 January 2025) and its Gulf fuel credit sit beside 1,410 troops in a Somali mission whose host government annulled every agreement with the UAE on 12 January 2026. On the one side the UAE is Kenya's financier and the RSF's patron, on the other Mogadishu is Kenya's host and Khartoum's friend; Nairobi is the seam in Luttwak's sense."
+      confidence: C
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/01/12/somalia-cancels-all-agreements-with-uae-over-alleged-sovereignty-violations", title: "Somalia cancels all agreements with UAE over alleged sovereignty violations", publisher: "Al Jazeera", date: 2026-01-12, tier: 3}
+        - {url: "https://www.africanews.com/amp/2025/01/16/enhancing-trade-relations-uae-and-kenya-sign-economic-pact/", title: "Enhancing trade relations: UAE and Kenya sign economic pact", publisher: "Africanews", date: 2025-01-16, tier: 3}
+        - {url: "https://sudantribune.com/article302581/", title: "Sudan accuses UAE of shielding allied RSF militia at international forums", publisher: "Sudan Tribune", date: 2025-07-05, tier: 3}
+
+  reading: |
+    Kenya plays the strategy of a middle power without a hegemon's resources: it
+    has no oil, an exhausted treasury and a restless street, and what it can sell
+    is the room itself. It hosts the talks nobody else can host (South Sudan's
+    Tumaini track, the DRC process, even the founding charter of the Sudanese army's enemy), supplies
+    police and soldiers to missions that other states design (Haiti, AUSSOM),
+    shelters the UN's Nairobi offices, and takes money from everyone who wants a
+    voice in East Africa - China's yuan loans, Gulf fuel credit, Washington's
+    health compact, London's training ground, Brussels' preferences. Luttwak's
+    reading is that the position is rented, not owned: the broker is indispensable
+    only while the great powers need a neutral address, and each act that proves
+    indispensability - the RSF charter, Madobe's Jubaland, the Haiti command - is
+    the one that draws a retaliation (Sudan's import ban), a quarrel (Mogadishu)
+    or a bill (Haitian crowds, Gen Z at home). Domestically the clock is the 2027
+    election: the Odinga pact that carried Ruto's broad-based government died
+    with Raila on 15 October 2025, and every foreign choice is made with the
+    street and the debt service (interest about 45% of ordinary revenue) in view.
+    Signals that are not rows. First, the 'two pillars' phrase attributed to Ruto
+    in the brief was not found in any source read; what the sources do record is
+    'a bridge between East and West' (Beijing, April 2025), which is a hedge
+    rather than a choice. Second, the US embassy in Nairobi lacked a confirmed
+    ambassador for a long stretch of 2026 although the December 2025 health
+    compact was signed in Washington: the American attention is real but thin.
+    Third, Kenya recognised Morocco's sovereignty over Western Sahara in April
+    2026 and Kosovo in March 2025: recognition looks like a currency Nairobi spends
+    where partners pay, an unsentimental turn from its old non-aligned posture
+    (our reading, not a sourced motive). The
+    open question is the Odinga succession: if ODM fractures, the foreign
+    portfolio loses its domestic anchor before the vote.
