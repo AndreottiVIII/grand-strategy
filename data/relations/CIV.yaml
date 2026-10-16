@@ -1,0 +1,76 @@
+from: CIV
+relations:
+  # ---------- objective ----------
+  - to: MLI
+    layer: objective
+    type: influence_goal
+    summary: "Secure the release of the 46 Ivorian soldiers held in Bamako: ECOWAS set Mali a deadline and did not impose sanctions; Bamako pardoned the men in early January 2023. Read as an influence goal from the case (C)."
+    since: '2022-07'
+    until: '2023-01'
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.aljazeera.com/news/2022/9/4/mali-releases-three-ivorian-soldiers-46-still-detained", title: "Mali releases three Ivorian soldiers; 46 still detained", publisher: "Al Jazeera", date: '2022-09-04', tier: 3}
+      - {url: "https://www.aljazeera.com/amp/news/2023/1/5/mali-avoids-sanctions-over-detention-of-ivorian-soldiers", title: "Mali escapes sanctions over detention of 46 Ivorian soldiers", publisher: "Al Jazeera", date: '2023-01-05', tier: 3}
+
+  # ---------- dependency ----------
+  - to: FRA
+    layer: dependency
+    type: military_presence
+    summary: "Mirror of the FRA card's row toward Ivory Coast, same source. The Port-Bouet base passed from French to Ivorian control from January 2025, after a French military presence since independence. The value is one base handed over, not a troop count."
+    since: '1960'
+    until: '2025'
+    value: 1
+    unit: base_handed_over_port_bouet
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://allafrica.com/stories/202501010178.html", title: "Cote d'Ivoire announces French military exit after decades-long stay", publisher: "AllAfrica", date: '2025-01-01', tier: 3}
+
+  # ---------- action ----------
+  - to: MLI
+    layer: action
+    type: incident
+    summary: "Mali's junta holds 46 Ivorian soldiers arrested in 2022 (three women freed in September 2022). A Bamako court gave them 20-year terms in late December 2022; a pardon followed in early January 2023, and they reached Abidjan that month. Abidjan calls them a backup force for MINUSMA; Bamako calls them mercenaries."
+    since: '2022-07'
+    until: '2023-01'
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.aljazeera.com/news/2022/9/4/mali-releases-three-ivorian-soldiers-46-still-detained", title: "Mali releases three Ivorian soldiers; 46 still detained", publisher: "Al Jazeera", date: '2022-09-04', tier: 3}
+      - {url: "https://theeastafrican.co.ke/tea/news/west-africa/mali-sentences-ivorian-soldiers-to-20-years-jail-4073152", title: "Mali sentences Ivorian soldiers to 20 years in jail", publisher: "The EastAfrican", date: '2022-12', tier: 3}
+      - {url: "https://www.arabnews.com/node/2228451/amp", title: "46 Ivorian soldiers arrive home after six months in Malian captivity", publisher: "Arab News", date: '2023-01', tier: 3}
+
+  - to: BFA
+    layer: action
+    type: incident
+    summary: "Burkina's leader Traore accuses Abidjan of welcoming the destabilisers of his country (April 2024). Abidjan's reply is not in the source read."
+    since: '2024-04'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.zawya.com/en/economy/africa/burkina-faso-leader-accuses-ivory-coast-of-welcoming-destabilisers-m20hrl8l", title: "Burkina Faso leader accuses Ivory Coast of welcoming destabilisers", publisher: "Zawya", date: '2024-04', tier: 3}
+
+  - to: BFA
+    layer: action
+    type: incident
+    summary: "The junta announces a foiled plot to sow chaos and says its masterminds were in Ivory Coast; a dozen military personnel are arrested (junta claim, AFP copy). Ivory Coast's reply is not in the source read."
+    since: '2025-04'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.solardaily.com/reports/Burkina_junta_says_foiled_plot_to_sow_total_chaos_999.html", title: "Burkina junta says foiled plot to sow total chaos", publisher: "Solar Daily (AFP copy)", date: '2025-04', tier: 3}
+
+  - to: BFA
+    layer: action
+    type: incident
+    summary: "The head of state names neighbouring countries, Ivory Coast among them, as destabilisers. Search summaries also report about six Ivorian officials detained in late August 2025; that is not confirmed at source."
+    since: '2025-09'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://fr.allafrica.com/stories/202509290183.html", title: "Burkina Faso: head of state accuses neighbouring countries of destabilisation, including Ivory Coast", title_original: "Afrique de l'Ouest: Burkina Faso - Le chef de l'Etat accuse des pays voisins de destabilisation, dont la Cote d'Ivoire", lang: fr, publisher: "allAfrica", date: '2025-09-29', tier: 3}
+      - {url: "https://fr.allafrica.com/stories/202509300473.html", title: "Ivory Coast-Burkina Faso: relations still tense", title_original: "Afrique de l'Ouest: Cote d'Ivoire-Burkina Faso - Des relations toujours tendues", lang: fr, publisher: "allAfrica", date: '2025-09-30', tier: 3}

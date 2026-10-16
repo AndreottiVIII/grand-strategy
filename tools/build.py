@@ -642,7 +642,7 @@ def main():
             total = sum(heat.values())
             top.sort(key=lambda r: (-r["weight"], r["a"], r["x"]))
             written = sum(1 for m in members if (actors[m].get("card") == "full"))
-            theatres.append({"id": t["id"], "name": t["name"], "centre": t.get("centre"), "label": t.get("label", [12, 0]), "members": members, "cards": written, "pairs": len(pairs),
+            theatres.append({"id": t["id"], "name": t["name"], "centre": t.get("centre"), "radius": t.get("radius", 6), "label": t.get("label", [12, 0]), "members": members, "cards": written, "pairs": len(pairs),
                              "heat": round(total / len(pairs), 2), "parts": heat, "top": top[:6]})
         theatres.sort(key=lambda t: -t["heat"])
         mx = max((t["heat"] for t in theatres), default=0) or 1

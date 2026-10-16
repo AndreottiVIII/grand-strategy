@@ -321,6 +321,10 @@ On the map (posture lens) warming outlines breathe, cooling ones flicker. Comput
 
 ## Theatres (added 2026-10-13)
 
+The map draws each theatre as a zone (16 Oct 2026, Davide: "deve essere rosso e caldo la zona di scontro,
+non gli attori coinvolti"): a circle of hand-set angular `radius` (degrees) around the theatre's
+`centre`, lit in proportion to its heat; the members are outlined only when the theatre is chosen.
+
 Luttwak's theatre level: hand-kept spaces (`data/theatres.yaml`, seventeen of them, an actor may
 sit in several, organisations never) where several actors' forces add up. **Heat** per theatre,
 over the pairs of its members: adversary 16, rival 6, claimed territory 6, reluctant ally or

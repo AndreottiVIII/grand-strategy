@@ -1,14 +1,61 @@
 id: CIV
 name: Ivory Coast
 type: state
+coords: [-5.27, 6.82]
 iso2: ci
 wikipedia: https://en.wikipedia.org/wiki/Ivory_Coast
-coords:
-- -5.27
-- 6.82
 seat: Yamoussoukro
-regions:
-- world
-card: stub
+regions: [west-africa]
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the Ouattara system: a fourth term won on 25 October 2025 with the two strongest rivals kept off the ballot. Thiam was removed from the electoral roll over his nationality, and Laurent Gbagbo was excluded after a criminal conviction; Simone Gbagbo stood. The provisional result gave Ouattara about 89.8% on turnout of about 50%, and the opposition called for new elections."
+      confidence: C
+      sources:
+        - {url: "https://www.semafor.com/article/10/28/2025/outtarra-wins-ivory-coast-election-thiam-gbagbo-barred", title: "Ouattara wins Ivory Coast election; Thiam and Gbagbo barred", publisher: "Semafor", date: '2025-10-28', tier: 3}
+        - {url: "https://www.thecitizen.co.tz/tanzania/news/africa/ivory-coast-s-ouattara-secures-fourth-term-with-landslide-election-win-5247732", title: "Ivory Coast's Ouattara secures fourth term with landslide election win", publisher: "The Citizen", date: '2025-10', tier: 3}
+    - rank: 2
+      text: "Recover the six Ivorian officials reported detained in Burkina Faso in late August 2025, and keep the feud with Ouagadougou from escalating. Abidjan rejects the destabilisation charges and says Burkina has offered no proof; the officials' return was under negotiation."
+      confidence: C
+      sources:
+        - {url: "https://fr.allafrica.com/stories/202509300473.html", title: "Ivory Coast-Burkina Faso: relations still tense", title_original: "Afrique de l'Ouest: Cote d'Ivoire-Burkina Faso - Des relations toujours tendues", lang: fr, publisher: "allAfrica", date: '2025-09-30', tier: 3}
+        - {url: "https://fr.allafrica.com/stories/202509290183.html", title: "Burkina Faso: head of state accuses neighbouring countries of destabilisation, including Ivory Coast", title_original: "Afrique de l'Ouest: Burkina Faso - Le chef de l'Etat accuse des pays voisins de destabilisation, dont la Cote d'Ivoire", lang: fr, publisher: "allAfrica", date: '2025-09-29', tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "ECOWAS as the channel in its quarrels with the Sahel juntas. In 2022-23 the bloc set Mali a deadline over the 46 Ivorian soldiers and then did not impose sanctions; Bamako pardoned the men in early January 2023."
+      confidence: C
+      sources:
+        - {url: "https://www.aljazeera.com/news/2022/9/4/mali-releases-three-ivorian-soldiers-46-still-detained", title: "Mali releases three Ivorian soldiers; 46 still detained", publisher: "Al Jazeera", date: '2022-09-04', tier: 3}
+        - {url: "https://www.aljazeera.com/amp/news/2023/1/5/mali-avoids-sanctions-over-detention-of-ivorian-soldiers", title: "Mali escapes sanctions over detention of 46 Ivorian soldiers", publisher: "Al Jazeera", date: '2023-01-05', tier: 3}
+    - domain: military
+      text: "The army as a peacekeeping contributor abroad. The 46 men held in Mali were, by Abidjan's account, a backup force for the UN mission MINUSMA; Bamako called them mercenaries who had entered without permission."
+      confidence: C
+      sources:
+        - {url: "https://www.aljazeera.com/news/2022/9/4/mali-releases-three-ivorian-soldiers-46-still-detained", title: "Mali releases three Ivorian soldiers; 46 still detained", publisher: "Al Jazeera", date: '2022-09-04', tier: 3}
+        - {url: "https://theeastafrican.co.ke/tea/news/west-africa/mali-sentences-ivorian-soldiers-to-20-years-jail-4073152", title: "Mali sentences Ivorian soldiers to 20 years in jail", publisher: "The EastAfrican", date: '2022-12', tier: 3}
+
+  constraints:
+    - text: "External security backing has shrunk: French forces are leaving after a decades-long stay, and the Port-Bouet base passed to Ivorian control from January 2025."
+      confidence: C
+      sources:
+        - {url: "https://allafrica.com/stories/202501010178.html", title: "Cote d'Ivoire announces French military exit after decades-long stay", publisher: "AllAfrica", date: '2025-01-01', tier: 3}
+    - text: "A hostile neighbour in the north. Burkina Faso's junta accuses Abidjan of harbouring its destabilisers (April 2024, and again in 2025), and Abidjan says Burkina has offered no proof. The border with the AES states is a security and diplomatic drain."
+      confidence: C
+      sources:
+        - {url: "https://www.zawya.com/en/economy/africa/burkina-faso-leader-accuses-ivory-coast-of-welcoming-destabilisers-m20hrl8l", title: "Burkina Faso leader accuses Ivory Coast of welcoming destabilisers", publisher: "Zawya", date: '2024-04', tier: 3}
+        - {url: "https://www.solardaily.com/reports/Burkina_junta_says_foiled_plot_to_sow_total_chaos_999.html", title: "Burkina junta says foiled plot to sow total chaos", publisher: "Solar Daily (AFP copy)", date: '2025-04', tier: 3}
+
+  paradoxes:
+    - text: "Ending the French base removed one exposure, yet Burkina's junta kept charging Abidjan with harbouring destabilisers after the handover (April 2025 and September 2025). Abidjan can cut the French link and still be accused, so the sovereignty move buys no calm on the northern border. Our reading (C)."
+      sources:
+        - {url: "https://www.solardaily.com/reports/Burkina_junta_says_foiled_plot_to_sow_total_chaos_999.html", title: "Burkina junta says foiled plot to sow total chaos", publisher: "Solar Daily (AFP copy)", date: '2025-04', tier: 3}
+        - {url: "https://fr.allafrica.com/stories/202509290183.html", title: "Burkina Faso: head of state accuses neighbouring countries of destabilisation, including Ivory Coast", title_original: "Afrique de l'Ouest: Burkina Faso - Le chef de l'Etat accuse des pays voisins de destabilisation, dont la Cote d'Ivoire", lang: fr, publisher: "allAfrica", date: '2025-09-29', tier: 3}
+        - {url: "https://allafrica.com/stories/202501010178.html", title: "Cote d'Ivoire announces French military exit after decades-long stay", publisher: "AllAfrica", date: '2025-01-01', tier: 3}
+
+  reading: |
+    Abidjan's grand strategy is to keep the Ouattara system intact after the October 2025 election, won with the two strongest rivals barred, and to stay inside ECOWAS as the frame of its regional policy. Its security backing from France has been pared back (the Port-Bouet base passed to Ivorian control from January 2025), and the hostile neighbour is now Burkina Faso, whose junta accuses Abidjan of harbouring its destabilisers. Not verified for this card: the cocoa and Abidjan-port economy, the United States, China, the EU, Morocco, Ghana and Nigeria as stances, the CFA franc, JNIM attacks on the northern border, and the six officials' fate after September 2025.

@@ -39,6 +39,10 @@ placeholder UK card's reluctant ally). Two guards: ally/reluctant-ally pairs are
 listed apart; a patron must weigh at least half its client (cards reading each actor as the proxy).
 Six client pairs remain, three tepid alliances (US-UK, US-Saudi, Croatia-Slovenia).
 
+Theatres map redrawn on Davide's remark that the clash zone must glow, not the actors: each theatre is
+now a circle of hand-set radius around its centre (data/theatres.yaml, `radius`), lit by its heat;
+members are outlined only when a theatre is chosen.
+
 A Wikidata membership row made Australia an ASEAN member: removed from the dataset and excluded in
 the generator (WRONG set in tools/datasets/wikidata.py). New tool `tools/onesided.py` lists the
 readings that have no hand-written counterpart: Davide wants to review them with me before the

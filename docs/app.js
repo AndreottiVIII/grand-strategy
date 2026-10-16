@@ -635,7 +635,7 @@
         <div class="parts">${Object.entries(t.parts).filter(([, v]) => v).map(([k, v]) => `<i>${PART[k]} ${v}</i>`).join(" · ") || "<i>nothing read yet</i>"} <em>· ${t.cards} of ${t.members.length} members with a card</em></div>
         <table class="top">${t.top.map(r => `<tr><td><a href="#/view/${r.a}">${nameOf(r.a)}</a></td><td><b style="color:${gradeBorder(r.grade)}">${r.grade.replace("_", " ")}</b></td><td><a href="#/view/${r.x}">${nameOf(r.x)}</a></td><td><u>${r.trend && r.trend !== "stable" ? TREND_SIGN[r.trend] + " " + r.trend : ""}</u></td><td class="w">${r.weight}</td></tr>`).join("")}</table>
       </div>`).join("") + `</div>
-      <details class="method"><summary>How heat is computed</summary><p>For every pair of members of a theatre the build adds: adversary 16, rival 6, claimed territory 6, a reluctant ally or reluctant partner 1, an ally cooling or a rival warming 3; for every feud inside the theatre 6; for every seam whose three actors are inside it 4. Adversaries weigh very high, rivals high, reluctant postures low. Only hand-written stances of confidence A or B count. The sum is divided by the number of possible pairs among the members, and the result is scaled so that the hottest theatre reads 100. The list of theatres and their members is kept by hand in data/theatres.yaml; organisations are never members. On the map the members of every theatre are lit with its heat, the hottest on top; click a country to see the hottest theatre it sits in, click the lit theatre again to return to the world, or click a theatre below to light it alone.</p></details>`;
+      <details class="method"><summary>How heat is computed</summary><p>On the map each theatre is a zone, a circle of hand-set radius around the theatre's centre, lit in proportion to its heat; the countries inside are not coloured, because the heat belongs to the ground where the forces meet, not to the actors who send them. Click a zone to outline its members; click it again to return to the world. For every pair of members of a theatre the build adds: adversary 16, rival 6, claimed territory 6, a reluctant ally or reluctant partner 1, an ally cooling or a rival warming 3; for every feud inside the theatre 6; for every seam whose three actors are inside it 4. Adversaries weigh very high, rivals high, reluctant postures low. Only hand-written stances of confidence A or B count. The sum is divided by the number of possible pairs among the members, and the result is scaled so that the hottest theatre reads 100. The list of theatres and their members is kept by hand in data/theatres.yaml; organisations are never members. On the map the members of every theatre are lit with its heat, the hottest on top; click a country to see the hottest theatre it sits in, click the lit theatre again to return to the world, or click a theatre below to light it alone.</p></details>`;
     drawTheatreMap();
     el.querySelectorAll(".theatre").forEach(d => d.onclick = ev => { if (ev.target.closest("a")) return; const on = d.classList.toggle("is-on"); el.querySelectorAll(".theatre").forEach(o => { if (o !== d) o.classList.remove("is-on"); }); drawTheatreMap(on ? d.dataset.id : null); });
     el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
@@ -668,22 +668,32 @@
     const chosen = only ? THEATRES.find(t => t.id === only) : null;
     const list = (chosen ? [chosen] : [...THEATRES]).sort((p, q) => p.index - q.index);   // hottest drawn last, on top
     const inTheatres = id => THEATRES.filter(t => t.members.includes(id)).sort((p, q) => q.index - p.index);
+    // the zone of the clash glows, not the actors in it (Davide, 2026-10-16): a circle of hand-set
+    // radius around the theatre's centre, lit by its heat; members are only outlined once a theatre is chosen
+    const defs2 = svg.select("defs").empty() ? svg.append("defs") : svg.select("defs");
     list.forEach(t => {
       const col = heatColor(t.index);
-      g.selectAll(null).data(world.features.filter(f => t.members.includes(f.id))).join("path").attr("class", "m").attr("d", path)
-        .attr("fill", col).attr("fill-opacity", light(t.index)).attr("stroke", col).attr("stroke-width", .8).attr("data-sw", .8).attr("stroke-opacity", .35 + .65 * t.index / 100).attr("filter", "url(#tglow)")
+      const grad = defs2.append("radialGradient").attr("id", "hz-" + t.id);
+      grad.append("stop").attr("offset", "0%").attr("stop-color", col).attr("stop-opacity", .12 + .78 * Math.pow(t.index / 100, .8));
+      grad.append("stop").attr("offset", "55%").attr("stop-color", col).attr("stop-opacity", .06 + .45 * Math.pow(t.index / 100, .8));
+      grad.append("stop").attr("offset", "100%").attr("stop-color", col).attr("stop-opacity", 0);
+      const zone = d3.geoCircle().center(t.centre || [0, 0]).radius(t.radius || 6)();
+      g.append("path").attr("class", "z").attr("d", path(zone)).attr("fill", `url(#hz-${t.id})`).attr("stroke", "none").attr("data-sw", 0)
         .style("cursor", "pointer")
-        .on("click", (ev, f) => {
-          // clicking a lit theatre again returns to the world; otherwise a country shows the hottest theatre it sits in
+        .on("click", () => {
           document.querySelectorAll(".theatre").forEach(o => o.classList.remove("is-on"));
-          if (chosen) { drawTheatreMap(null); return; }
-          const ts = inTheatres(f.id); if (!ts.length) return;
-          const d = document.querySelector(`.theatre[data-id="${ts[0].id}"]`);
+          if (chosen) { drawTheatreMap(null); return; }   // clicking the lit theatre returns to the world
+          const d = document.querySelector(`.theatre[data-id="${t.id}"]`);
           if (d) d.classList.add("is-on");
-          drawTheatreMap(ts[0].id);
+          drawTheatreMap(t.id);
         })
-        .append("title").text(f => inTheatres(f.id).map(t => `${t.name} · ${t.index}`).join("\n"));
+        .append("title").text(`${t.name} · ${t.index}`);
     });
+    if (chosen) {
+      const col = heatColor(chosen.index);
+      g.selectAll(null).data(world.features.filter(f => chosen.members.includes(f.id))).join("path").attr("class", "m").attr("d", path)
+        .attr("fill", "none").attr("stroke", col).attr("stroke-width", .9).attr("data-sw", .9).attr("stroke-opacity", .8).attr("pointer-events", "none");
+    }
     // the name appears only for the theatre you clicked
     if (chosen) {
       const feats = world.features.filter(f => chosen.members.includes(f.id));
