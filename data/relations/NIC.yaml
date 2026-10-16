@@ -1,0 +1,25 @@
+from: NIC
+relations:
+  # ---------- objective ----------
+  - to: CRI
+    layer: objective
+    type: territorial_claim
+    summary: "Nicaragua has taken a territorial dispute with Costa Rica to the International Court of Justice (one of three such disputes, with Honduras and Colombia). The index does not give the case's status; not read in this session."
+    since: null
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Nicaragua", title: "Foreign relations of Nicaragua (index only)", publisher: "Wikipedia", date: 2026-10-16, tier: 4}
+
+  # ---------- action ----------
+  - to: USA
+    layer: action
+    type: sanction
+    summary: "US Section 301 proposal on Nicaragua (October 2025): suspend Nicaragua from CAFTA-DR benefits or impose tariffs of up to 100% on its exports to the United States, citing the Ortega-Murillo regime's laws and practices. The final decision is not confirmed here; a December 2025 aggregator claim of phased tariffs (0% in 2026, 10% in 2027, 15% by 2028) is unverified and not written."
+    since: 2025-10
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://confidencial.digital/en/english/u-s-proposes-axing-nicaragua-from-cafta-and-adding-100-tariffs/", title: "U.S. proposes axing Nicaragua from CAFTA and adding 100% tariffs", publisher: "Confidencial", date: 2025-10, tier: 3}

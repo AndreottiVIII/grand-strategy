@@ -1,0 +1,32 @@
+actor: CRI
+stances:
+- toward: USA
+  grade: partner
+  trend: warming
+  bond: none
+  since: 2026-05-08
+  last_verified: 2026-10-16
+  confidence: C
+  note: "Partner, read from San José. The grade follows the Rubio praise of the drug-trafficking line and the shared security agenda, not a treaty. Since is the start of this government, not of the relation. Trend warming is our reading from the congratulations and the security framing; no US or Costa Rican official statement was read. Bond none: no identity tie or open grievance was found in what was read. Confidence C: one tier 4 pointer (Wikipedia), no primary source read."
+  sources:
+  - {url: "https://en.wikipedia.org/wiki/2026_Costa_Rican_general_election", title: "2026 Costa Rican general election", publisher: "Wikipedia (read through the API)", date: 2026-10-16, tier: 4}
+- toward: CHN
+  grade: partner
+  trend: stable
+  bond: none
+  since: 2008
+  last_verified: 2026-10-16
+  confidence: B
+  note: "Transactional partner, read from San José. The Chinese foreign ministry's statement of 4 February 2026 says the two states have had diplomatic relations for '18 years' and that ties 'developed smoothly'. Since is inferred from that count (2026 minus 18), so the year is our arithmetic and should be checked against a Costa Rican source; the statement itself does not name the year. Recognition is the root of the tie, but the 2007 date is not read in any source here. Trend stable: no source read shows cooling or warming in 2026. Bond none: no kinship and no open grievance. The Costa Rica side has a stance on China only through the statement, so this is the Chinese reading, marked as such. Confidence B: one tier 1 source (Chinese government statement)."
+  sources:
+  - {url: "https://eng.yidaiyilu.gov.cn/p/0HHG2L9N.html", title: "China congratulates Laura Fernandez on election as Costa Rican president", publisher: "Xinhua, via Yidaiyilu (Chinese foreign ministry statement)", date: 2026-02-04, tier: 1}
+- toward: NIC
+  grade: rival
+  trend: cooling
+  bond: grievance
+  since: 2026-05-08
+  last_verified: 2026-10-16
+  confidence: C
+  note: "Rival, read from San José: friction over the Nicaraguan illegal miners who cross the border, and the government's plan to tighten controls, not the will to destroy the neighbour. Cooling is our reading from the bill the new president announces. Bond grievance is our reading of the border and exile history; the old border question is not sourced here, so the bond rests on the mining dispute alone. Confidence C: the only source read is a summary of an EFE item republished by La Prensa (Honduras), the full article was not opened. This stance needs a second source before it moves to B. Our reading in full: the ONTOLOGY 'rival' grade means friction without a will to destroy, which this summary fits but does not prove."
+  sources:
+  - {url: "https://www.laprensa.hn/cronologia/-/meta/laura-fernandez", title: "Costa Rica fearing an invasion of illegal miners linked to Nicaraguan concessions to China (EFE, via La Prensa; summary read, article not opened)", publisher: "La Prensa (Honduras), republishing EFE", date: 2026, tier: 3}

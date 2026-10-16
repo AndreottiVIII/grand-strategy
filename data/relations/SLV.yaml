@@ -1,0 +1,26 @@
+from: SLV
+relations:
+  # ---------- action ----------
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "Deportation arrangement with the United States. El Salvador has taken over 200 deportees from other countries (AP, 2025), and the November 2025 National Security Strategy names deportation deals with El Salvador among its migration arrangements. The date and terms of the deal are not in the sources read."
+    since: 2025
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    note: "The same National Security Strategy source is reused from the USA and GHA cards. The year is the strategy's year (as in GHA), not a signature date. Tier 1 for the naming, tier 3 for the detail."
+    sources:
+      - {url: "https://www.whitehouse.gov/wp-content/uploads/2025/12/2025-National-Security-Strategy.pdf", title: "National Security Strategy (November 2025)", publisher: "The White House", date: 2025-11, tier: 1}
+      - {url: "https://weartv.com/news/nation-world/el-salvador-allows-indefinite-reelection-extends-presidential-terms-to-6-years-nayib-bukele-legislative-assembly-street-gangs-constitutional-rights", title: "El Salvador allows indefinite reelection, extends presidential terms to 6 years", publisher: "Associated Press (via WEAR-TV)", date: 2025-08-01, tier: 3}
+
+  - to: nsa-ms13
+    layer: action
+    type: incident
+    summary: "Government crackdown on the street gangs under a state of emergency that suspended some constitutional rights, as the AP reported in August 2025. The start date of the emergency and any formal terrorist designation of the gangs are not in the source read."
+    since: null
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://weartv.com/news/nation-world/el-salvador-allows-indefinite-reelection-extends-presidential-terms-to-6-years-nayib-bukele-legislative-assembly-street-gangs-constitutional-rights", title: "El Salvador allows indefinite reelection, extends presidential terms to 6 years", publisher: "Associated Press (via WEAR-TV)", date: 2025-08-01, tier: 3}

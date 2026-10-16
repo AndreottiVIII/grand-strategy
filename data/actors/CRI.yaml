@@ -8,7 +8,44 @@ coords:
 - 9.93
 seat: San José
 regions:
-- world
-card: stub
+- central-america-caribbean
+card: full
 tier: minor
+last_verified: 2026-10-16
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Bring the murder rate down. Laura Fernández, sworn in on 8 May 2026 as the successor of Rodrigo Chaves, ran on crime and copies the Bukele model: a mega-prison, states of emergency in gang-held areas and more cargo scanners at ports and airports. Homicides rose by over 50% under Chaves, who took office in 2022."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/2026_Costa_Rican_general_election", title: "2026 Costa Rican general election", publisher: "Wikipedia (read through the API)", date: 2026-10-16, tier: 4}
+  - rank: 2
+    text: "Keep China ties warm while the security track stays with Washington. Beijing congratulated her on the result and calls the relation one that has 'developed smoothly'."
+    confidence: C
+    sources:
+    - {url: "https://eng.yidaiyilu.gov.cn/p/0HHG2L9N.html", title: "China congratulates Laura Fernandez on election as Costa Rican president", publisher: "Xinhua, via Yidaiyilu (Chinese foreign ministry statement)", date: 2026-02-04, tier: 1}
+    - {url: "https://en.wikipedia.org/wiki/2026_Costa_Rican_general_election", title: "2026 Costa Rican general election", publisher: "Wikipedia (read through the API)", date: 2026-10-16, tier: 4}
+  means:
+  - text: "Security law and policy at home: a mega-prison, emergency declarations in gang-controlled areas, and cargo scanners at ports and airports, the Bukele toolkit, announced in the campaign. Not yet confirmed by a government source."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/2026_Costa_Rican_general_election", title: "2026 Costa Rican general election", publisher: "Wikipedia (read through the API)", date: 2026-10-16, tier: 4}
+  - text: "Diplomatic congratulations as a channel: Secretary of State Marco Rubio praised her 'tough stance on drug trafficking' and China's president congratulated her, so both capitals were engaged on the day of the result."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/2026_Costa_Rican_general_election", title: "2026 Costa Rican general election", publisher: "Wikipedia (read through the API)", date: 2026-10-16, tier: 4}
+    - {url: "https://eng.yidaiyilu.gov.cn/p/0HHG2L9N.html", title: "China congratulates Laura Fernandez on election as Costa Rican president", publisher: "Xinhua, via Yidaiyilu (Chinese foreign ministry statement)", date: 2026-02-04, tier: 1}
+  constraints:
+  - text: "The homicide problem is the one the government must answer, and it grew under the government she continues: a murder rate up by over 50% since 2022 makes security the test of the new term."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/2026_Costa_Rican_general_election", title: "2026 Costa Rican general election", publisher: "Wikipedia (read through the API)", date: 2026-10-16, tier: 4}
+  paradoxes:
+  - text: "The campaign promises to end the rise in homicides with the same agenda that Chaves ran on in 2022, and the murder rate rose on his watch. The security line she inherits is the one that has not yet worked, and its praise in Washington rests on the same drug-trafficking issue."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/2026_Costa_Rican_general_election", title: "2026 Costa Rican general election", publisher: "Wikipedia (read through the API)", date: 2026-10-16, tier: 4}
+  reading: |
+    Costa Rica under Laura Fernández is a security government first, the successor of Rodrigo Chaves who won on the homicide rise and promises the Bukele method to reverse it. Its partners are judged on that test: Washington praises the tough line on drug trafficking, while Beijing congratulates her in the language it uses for any relation it wants to keep smooth. The paradox is that the agenda she inherits is the one that did not stop the murders, so the security promise both opens the door to Washington and leaves the economy and the homicide rate exposed to the same trafficking routes. This card is a first draft from one wire-style source per leg; the full picture of the United States, Nicaragua, Panama, the EU and the OECD is still to be sourced.

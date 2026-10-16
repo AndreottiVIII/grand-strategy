@@ -1,0 +1,36 @@
+from: CRI
+relations:
+  # ---------- alignment ----------
+  - to: CHN
+    layer: alignment
+    type: recognition
+    summary: "Costa Rica and China have had diplomatic relations for 18 years, according to the Chinese foreign ministry's statement of 4 February 2026. The year (2008) is inferred from that count; the 2007 date often given elsewhere is not in any source read here."
+    since: 2008
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://eng.yidaiyilu.gov.cn/p/0HHG2L9N.html", title: "China congratulates Laura Fernandez on election as Costa Rican president", publisher: "Xinhua, via Yidaiyilu (Chinese foreign ministry statement)", date: 2026-02-04, tier: 1}
+
+  # ---------- action ----------
+  - to: CHN
+    layer: action
+    type: incident
+    summary: "China's foreign ministry congratulated Laura Fernández on her election, calling Costa Rica an important country in Central America and saying China attaches great importance to the relation. Recorded as an incident because the vocabulary has no statement type."
+    since: 2026-02-04
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://eng.yidaiyilu.gov.cn/p/0HHG2L9N.html", title: "China congratulates Laura Fernandez on election as Costa Rican president", publisher: "Xinhua, via Yidaiyilu (Chinese foreign ministry statement)", date: 2026-02-04, tier: 1}
+
+  - to: NIC
+    layer: action
+    type: incident
+    summary: "Headline and summary of an EFE item republished by La Prensa (Honduras): Costa Rica fears an 'invasion' of illegal miners linked to Nicaraguan concessions to China; Fernández says Nicaraguan illegal miners have been deported more than 35 times and she will push a bill to tighten controls. Read from the summary only; the concessions link is not confirmed. The item's date was not read, so since is the start of the government."
+    since: 2026-05-08
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.laprensa.hn/cronologia/-/meta/laura-fernandez", title: "Costa Rica fearing an invasion of illegal miners linked to Nicaraguan concessions to China (EFE, via La Prensa; summary read, article not opened)", publisher: "La Prensa (Honduras), republishing EFE", date: 2026, tier: 3}
