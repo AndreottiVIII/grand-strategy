@@ -7,8 +7,53 @@ coords:
 - 33.77
 - -13.99
 seat: Lilongwe
-regions:
-- world
-card: stub
+regions: [central-southern-africa]
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Win back an IMF programme and restore forex, the precondition for everything else. The four-year US$175m Extended Credit Facility (approved November 2023) lapsed in May 2025 by mutual decision of government and IMF. An IMF staff visit ended on 18 June 2026 without a new deal, and talks were set to continue; the Mutharika government says it wants a new programme but without reforms that would hit ordinary citizens hardest."
+      confidence: C
+      sources:
+        - {url: "https://allafrica.com/stories/202608170064.html", title: "Malawi's Economic Crisis - Can Recovery Begin?", publisher: "African Arguments via AllAfrica", date: 2026-08-14, tier: 3}
+    - rank: 2
+      text: "Hold the claim to all of Lake Malawi (Lake Nyasa) under the 1890 Anglo-German treaty, against Tanzania's median-line position under UNCLOS. Oil and gas is the stake: Lilongwe licensed the British firm Surestream to explore the lake, and Tanzania objected to exploration in waters it considers disputed."
+      confidence: C
+      sources:
+        - {url: "https://allafrica.com/stories/202412300097.html", title: "Malawi: Former President Muluzi Seeks Unity Among Leaders to Resolve Lake Malawi Dispute", publisher: "AllAfrica", date: 2024-12-30, tier: 3}
+        - {url: "https://namibian.com.na/tanzania-malawi-border-dispute-talks-deadlocked", title: "Tanzania-Malawi border dispute talks deadlocked", publisher: "The Namibian", tier: 3, date: 2024}
+
+  means:
+    - domain: economic
+      text: "Forex and austerity, not a programme. The Reserve Bank devalued the kwacha by 44% on 9 November 2023. The government is reviewing forex rules and buying gold to raise forex, cutting fuel entitlements for senior officials and restricting travel, and targets inflation below 21% in 2026 (from 28.7% in September 2025) with 3.8% growth. Forex reserves remain below the three-month import-cover target."
+      confidence: C
+      sources:
+        - {url: "https://allafrica.com/stories/202608170064.html", title: "Malawi's Economic Crisis - Can Recovery Begin?", publisher: "African Arguments via AllAfrica", date: 2026-08-14, tier: 3}
+    - domain: diplomatic
+      text: "Protest and mediation on the lake. Malawi sends formal protest notes to Dodoma (a February 2024 note on the Mbamba Bay port, and a comprehensive note in December 2024, which Tanzania had not answered in the reporting found). Former president Bakili Muluzi offered to convene national and regional mediation in December 2024, with SADC and the AU named as possible fora."
+      confidence: C
+      sources:
+        - {url: "https://allafrica.com/stories/202412300097.html", title: "Malawi: Former President Muluzi Seeks Unity Among Leaders to Resolve Lake Malawi Dispute", publisher: "AllAfrica", date: 2024-12-30, tier: 3}
+
+  constraints:
+    - text: "Forex and donors are shrinking together. The kwacha was devalued 44% in November 2023; fuel shortages and forex scarcity continue; rising oil prices linked to Middle East tensions have raised transport, food and fertiliser costs. The UK has announced a 60% aid cut for 2026/27 (90% in total by 2029) and the US has terminated contracts worth US$230.4m. Experts warn the cuts could worsen forex shortages and strain health and education."
+      confidence: C
+      sources:
+        - {url: "https://allafrica.com/stories/202608170064.html", title: "Malawi's Economic Crisis - Can Recovery Begin?", publisher: "African Arguments via AllAfrica", date: 2026-08-14, tier: 3}
+    - text: "Citizens' mobility to the United States is restricted. Malawian business and tourist visa applicants face refundable deposits of up to US$15,000 (from August 2025), partial US entry limits apply from 1 January 2026 (overstay rates cited by the US), and routine non-immigrant visa applications moved to Nairobi from 1 August 2026."
+      confidence: C
+      sources:
+        - {url: "https://www.aljazeera.com/features/2025/9/24/money-ill-never-have-15k-us-visa-bond-halts-malawians-american-dreams", title: "'Money I'll never have': $15K US visa bond halts Malawians' American dreams", publisher: "Al Jazeera", date: 2025-09-24, tier: 3}
+        - {url: "https://allafrica.com/stories/202607270438.html", title: "Malawi Visa Blow As US Shifts Embassy Services to Nairobi", publisher: "AllAfrica", date: 2026-07-27, tier: 3}
+
+  paradoxes:
+    - text: "The programme that would unlock donor money requires the reforms the government avoids. The IMF says success 'will depend on the country's willingness to implement the economic reforms', while the government seeks a deal without the measures that would hit ordinary citizens hardest. The donors that cut in 2026 are the ones whose money a deal would have to bring back."
+      confidence: C
+      sources:
+        - {url: "https://allafrica.com/stories/202608170064.html", title: "Malawi's Economic Crisis - Can Recovery Begin?", publisher: "African Arguments via AllAfrica", date: 2026-08-14, tier: 3}
+
+  reading: |
+    Malawi's grand strategy in 2026 is to keep the currency and the budget alive while its donors leave: the IMF programme lapsed in May 2025 and no successor was agreed by August 2026, and the UK and the US have cut or withdrawn money. Its external ties are transactional (the US through a visa channel that is narrowing, Tanzania over the lake, where the prize is oil and gas) and the lake dispute is the one territorial stake the card can read. Not verified in this pass: the Nacala and Beira corridors and the Mozambique and Zambia relations, the Israel farm-worker scheme of 2023, tobacco as the export base, the cyclones and the famine, the EU and China money, and the deportation-flight talk, for which no source was found.

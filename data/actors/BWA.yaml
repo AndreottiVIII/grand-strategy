@@ -8,7 +8,56 @@ coords:
 - -24.66
 seat: Gaborone
 regions:
-- world
-card: stub
+- central-southern-africa
+card: full
 tier: minor
+last_verified: 2026-10-16
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Lift the state's share of De Beers. Gaborone is reported close to a deal that would take its stake from 15% to about 25%; not final as of 14 October 2026. That is a retreat from the majority Boko sought in late 2025."
+      confidence: B
+      sources:
+        - {url: "https://miningmx.com/2026-10-14-botswana-nears-deal-on-bigger-de-beers-stake/", title: "Botswana nears deal on bigger De Beers stake", publisher: "Miningmx", date: 2026-10-14, tier: 3}
+        - {url: "https://www.engineeringnews.co.za/article/botswana-says-anglo-picks-de-beers-buyer-weighs-options-for-optimal-structure-2026-07-17", title: "Botswana says Anglo picks De Beers buyer, weighs options for optimal structure", publisher: "Engineering News", date: 2026-07-17, tier: 3}
+    - rank: 2
+      text: "Keep the state budget and the diamond price afloat while 12 million carats sit in stock at end-December 2025, nearly double the government's 6.5 million carat ceiling. The finance ministry keeps production broadly flat for now."
+      confidence: B
+      sources:
+        - {url: "https://miningmx.com/news/diamonds/2026-01-20-botswana-diamond-glut-constrains-recovery-prospects", title: "Botswana diamond glut constrains recovery prospects", publisher: "Miningmx", date: 2026-01-20, tier: 3}
+
+  means:
+    - domain: economic
+      text: "Debswana, the joint venture with De Beers, makes about 90% of national diamond sales. The state's levers are its stake and the sales arrangement; older reporting says it has threatened not to renew the sales deal, a point not re-checked for this card."
+      confidence: B
+      sources:
+        - {url: "https://miningmx.com/news/diamonds/2026-01-20-botswana-diamond-glut-constrains-recovery-prospects", title: "Botswana diamond glut constrains recovery prospects", publisher: "Miningmx", date: 2026-01-20, tier: 3}
+        - {url: "https://www.mining.com/botswana-threatens-break-up-with-de-beers-in-push-for-better-deal/", title: "Botswana threatens break-up with De Beers in push for better deal", publisher: "Mining.com", date: "2026", tier: 3}
+    - domain: diplomatic
+      text: "South Africa as partner and customs union partner: President Ramaphosa's state visit to Gaborone on 20-21 May 2026, which co-chaired the sixth Bi-National Commission (the last was in 2022). Overseas trade runs through South African and Namibian ports, an undated US trade guide says."
+      confidence: B
+      sources:
+        - {url: "https://www.gov.za/news/media-advisories/conferences-summits-seminars-and-workshops/president-cyril-ramaphosa-38", title: "President Cyril Ramaphosa undertakes State Visit to Republic of Botswana, 20 to 21 May", publisher: "gov.za (Presidency of South Africa)", date: 2026-05, tier: 1}
+        - {url: "https://trade.gov/country-commercial-guides/botswana-market-overview", title: "Botswana Country Commercial Guide", publisher: "US International Trade Administration", date: "undated", tier: 1}
+
+  constraints:
+    - text: "Diamonds are the state: about one-third of government revenue and three-quarters of foreign exchange earnings (finance ministry figures). The 'about 80% of exports' figure is historical and could not be checked against trade data, so this card does not use it."
+      confidence: B
+      sources:
+        - {url: "https://miningmx.com/news/diamonds/2026-01-20-botswana-diamond-glut-constrains-recovery-prospects", title: "Botswana diamond glut constrains recovery prospects", publisher: "Miningmx", date: 2026-01-20, tier: 3}
+    - text: "Lab-grown stones and the US tariff. Industry estimates put lab-grown at about a quarter of the US diamond jewellery market; Botswana's finance ministry warned that 15% US tariffs, with possible Indian duties, could prolong the slump. The 37% rate of an earlier proposal is not the final one."
+      confidence: C
+      sources:
+        - {url: "https://yourbotswana.com/?p=20269", title: "Botswana warns US trade policy could deepen diamond industry slump", publisher: "Your Botswana", date: "2025", tier: 3}
+
+  paradoxes:
+    - text: "Gaborone presses De Beers to sell more and to hand over a larger stake, yet it holds 12 million carats, nearly double its own ceiling. The market, not the stake, is the binding limit: a bigger stake makes the state co-owner of stones it cannot sell."
+      confidence: C
+      sources:
+        - {url: "https://miningmx.com/news/diamonds/2026-01-20-botswana-diamond-glut-constrains-recovery-prospects", title: "Botswana diamond glut constrains recovery prospects", publisher: "Miningmx", date: 2026-01-20, tier: 3}
+        - {url: "https://miningmx.com/2026-10-14-botswana-nears-deal-on-bigger-de-beers-stake/", title: "Botswana nears deal on bigger De Beers stake", publisher: "Miningmx", date: 2026-10-14, tier: 3}
+
+  reading: |
+    Botswana's grand strategy is to turn diamond dependence into state control: a bigger stake in De Beers, a say over sales, and a budget that survives the slump, with Debswana carrying about 90% of national diamond sales. The lab-grown glut and the US tariff erode the value of that stake faster than negotiation can raise it, so Gaborone is reported to be settling for about 25% rather than the majority it wanted. South Africa is the partner it leans on (SACU, the rand, the ports); Namibia, Zimbabwe, the EU and the UK are not yet read from sources, and the card is thinner than its tier because the call budget ran out.
