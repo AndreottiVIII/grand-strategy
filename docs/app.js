@@ -825,7 +825,7 @@
   const paragraphs = text => {
     const t = String(text || "").trim();
     if (!t) return "";
-    const parts = t.split(/\n\s*\n/).map(x => x.trim()).filter(Boolean);
+    const parts = t.split(/\n\s*\n/).map(x => x.replace(/\s*\n\s*/g, " ").replace(/\s{2,}/g, " ").trim()).filter(Boolean);
     const out = [];
     for (const part of parts) {
       const sents = part.match(/[^.!?]+(?:[.!?]+["')\]]*|$)/g) || [part];
