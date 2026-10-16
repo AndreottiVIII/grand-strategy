@@ -1,0 +1,21 @@
+# Reciprocal brief: Houthis (Ansar Allah) (nsa-houthis) - the hostile readings it has not answered
+
+These actors grade Houthis (Ansar Allah) rival or adversary; nsa-houthis's own card holds no hand-written reading back (only a provisional reciprocal, if any). Write nsa-houthis's reading toward each of them in `data/stances/nsa-houthis.yaml`, mirrored on the evidence below (same sources, same links) plus at most 2 web calls per pair for nsa-houthis's own statements. Replace any entry with `reciprocal_of: ...` for these actors by the hand-written one. The grade follows the structural position from nsa-houthis's side, which may differ from the other side's (a small state's rival can be the great power's neutral or partner): say why in the note, cite confidence A/B/C honestly, and never leave the pair unwritten.
+
+## Jordan (JOR) reads nsa-houthis as **rival**, cooling, bond none, confidence C, since 2026-10-12
+
+Note: No direct conflict, but Amman now treats the Houthis as a terrorist threat to a partner and to Jordanians: its foreign ministry condemned the Houthi attacks on King Khalid (Riyadh) and King Fahd (Dammam) airports on 11-12 Oct 2026 as 'a blatant violation of international law', and a Jordanian died in the Riyadh attack. Rival rather than adversary: no source read shows Jordan taking part in the Saudi-led coalition operation, and it seeks no Houthi defeat. The Red Sea effect on Aqaba is not documented in the sources read (gap). Bond - none.
+
+Sources:
+- https://www.jordannews.jo/Section-109/News/Jordan-Condemns-Houthi-Terrorist-Attacks-on-Saudi-Arabia-57315 | Jordan Condemns Houthi Terrorist Attacks on Saudi Arabia | Jordan News (reporting a foreign ministry statement) | 2026-10-12 | tier 3
+- https://www.jordannews.jo/Section-109/News/King-Offers-Condolences-to-Saudi-Crown-Prince-57325 | King Offers Condolences to Saudi Crown Prince | Jordan News | 2026-10-12 | tier 3
+
+## Somalia (SOM) reads nsa-houthis as **rival**, cooling, bond none, confidence C, since 2025-10-17
+
+Note: Not a quarrel of its own: the Houthis do not seek Somalia's destruction and Mogadishu has no means to fight them. The structure is that they feed Mogadishu's mortal enemy. The UN Panel of Experts on Yemen reported on 17 Oct 2025 intelligence exchange, weapons trafficking, drone and bomb-making training and joint operations between the Houthis and al-Shabaab (ADF Magazine summary); President Hassan Sheikh has blamed the Houthis for the arms behind al-Shabaab's 2025 recovery (reported by ADF Magazine without a date); Somali forces have seized explosives and drones shipped from Yemen; Somalia is a member of the Saudi-led Red Sea coalition announced on 30 Jul 2026, after the Houthis declared a naval blockade of Saudi Arabia; and on 11 Sep 2026 the Houthis took Mayyun (Perim), about 20 km from the African shore (Sana'a Center). Rival and not adversary: the aim is interdiction and deterrence, not the end of Ansar Allah. Cooling because the September expansion brought the Houthis to the Horn's doorstep. Confidence C: no Somali government text calls them a rival, and ADF Magazine is published by US Africa Command; the grade is our reading of the structure from a UN report, press and analysts. The Houthi row toward Somalia (Sana'a Center) puts the ties with the armed group, not with the state. Gap: no Eritrean or Djiboutian reading of the same link. Bond none.
+
+Sources:
+- https://adf-magazine.com/2025/11/u-n-report-shows-increasing-collaboration-of-houthis-al-shabaab/ | UN report shows increasing collaboration of Houthis, al-Shabaab | ADF Magazine (US Africa Command), summarising the UN Panel of Experts on Yemen | 2025-11 | tier 3
+- https://adf-magazine.com/2025/06/al-shabaab-alliance-with-houthis-continues-to-grow/ | Al-Shabaab alliance with Houthis continues to grow | ADF Magazine (US Africa Command) | 2025-06 | tier 3
+- https://sanaacenter.org/publications/perspectives-and-analyses/28317 | The Houthis Seize Yemen's West Coast: Reactions from Experts | Sana'a Center for Strategic Studies | 2026-09-15 | tier 2
+- https://agbi.com/shipping/2026/07/saudi-arabia-launches-14-nation-coalition-to-secure-red-sea-routes | Saudi Arabia launches 14-nation coalition to secure Red Sea routes | AGBI | 2026-07-30 | tier 3

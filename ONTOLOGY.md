@@ -108,6 +108,13 @@ that uses that reading (an analysis calling the relationship "reluctant", a trea
 "ally", a government statement for "adversary"). If no source says it, the stance is
 not recorded and the gap goes in JOURNAL.md. This is slower; it was chosen knowingly.
 
+**Provisional reciprocals as readings** (Davide, 2026-10-16, after the world run). Where a card grades X
+partner, neutral, ally or reluctant ally and X's card has written nothing back, the provisional
+reciprocal the build adds (same grade, confidence C, flagged) is the atlas's reading until a card
+contradicts it: the mirror of a partner is a partner. Only a hostile one-sided reading (rival or
+adversary) is answered by hand, because there the silence carries information; `tools/onesided.py`
+lists them and `tools/recip_briefs.py` writes the brief for the silent side.
+
 **But the grade follows the structural position, not the rhetoric.** A government
 calling a neighbour "a reliable partner" is a tier-1 source for the statement, not for
 the grade. If B is the kin or treaty ally of someone A treats as claimed territory or
