@@ -509,15 +509,16 @@ relations:
     sources:
       - {url: "https://tradeportal.accio.gencat.cat/ca/mercats-potencials/somalia/perfil-comercial", title: "Somalia: trade profile (ITC data, 2022)", publisher: "ACCIO, Government of Catalonia (citing ITC)", date: 2022, tier: 1}
 
-  - to: CHN
+  - to: UGA
     layer: dependency
-    type: trade_share
-    summary: "China was Somalia's second import origin in 2022 with 18.1% of imports (ITC), behind the UAE (32.8%)."
-    since: 2022
+    type: military_presence
+    summary: "Uganda is the largest AUSSOM contributor: 4,500 troops in the African Union-Somalia allocation of February 2025 (VOA) and about 4,500 on the 2026 AUSSOM list (Daily Monitor, not re-verified against the AU list, as the UGA card also notes); Muhoozi Kainerugaba rallied African military chiefs in 2026 as UN funding cuts threatened the mission (mirror of the UGA row, same source)."
+    since: 2025-02
     until: null
     last_verified: 2026-10-16
-    confidence: B
-    value: 0.181
-    unit: share_of_somali_imports_2022
+    confidence: C
+    value: 4500
+    unit: troops_allocated_to_AUSSOM
     sources:
-      - {url: "https://tradeportal.accio.gencat.cat/ca/mercats-potencials/somalia/perfil-comercial", title: "Somalia: trade profile (ITC data, 2022)", publisher: "ACCIO, Government of Catalonia (citing ITC)", date: 2022, tier: 1}
+      - {url: "https://www.monitor.co.ug/uganda/news/national/muhoozi-rallies-african-military-chiefs-as-un-cuts-threaten-somalia-peace-mission-5541254", title: "Muhoozi rallies African military chiefs as UN cuts threaten Somalia peace mission", publisher: "Daily Monitor", date: 2026, tier: 3}
+      - {url: "https://www.globalsecurity.org/military/library/news/2025/02/mil-250225-voa04.htm", title: "AU, Somalia agree on troop numbers for new mission", publisher: "VOA (via GlobalSecurity.org)", date: 2025-02-25, tier: 3}
