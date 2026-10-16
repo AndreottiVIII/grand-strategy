@@ -210,6 +210,20 @@ are marked C.
 Queue: `data/queue.yaml` still marks ZWE as `running` (updated 10:54), so the `--skip-running`
 build leaves its stance and relation files out of `docs/`. Not changed here: it is orchestration state.
 
+## 2026-10-16 · Nine big cards enriched; the hostile one-sided readings answered
+
+Davide, on the run's close: integrate the thinnest big non-superpower cards with Sonnet. Brazil,
+Mexico, South Africa, Nigeria, Argentina, then Colombia, Peru, Chile, Canada: from 2-10 stances
+to 15-32 each, 30-40 rows, 5-7 paradoxes (found in passing: the USA card is stale on the IEEPA
+tariffs struck down in February 2026, noted in BACKLOG). Then the one-sided readings: 1,135 in all,
+988 toward full cards. Decision: partner, neutral and ally one-sided readings keep the provisional
+reciprocal as the atlas's reading (rule in ONTOLOGY); only the 87 hostile ones were answered by
+hand, mirrored on the written side's evidence (tools/recip_briefs.py, ten Haiku agents, 26 silent
+actors, about 45 web calls in all). The silence spoke in a few places: Russia reads Andorra and
+Slovenia neutral, not rival; Israel reads Norway reluctant partner and Kuwait neutral; China reads
+Latvia neutral; the Houthis read Jordan neutral; Iran reads the Palestinian Authority rival with an
+affinity bond while Hamas stays partner. The UK and France rechecks rode in the same pass.
+
 ## 2026-10-16 · The world run closes: 200 of 205 cards reviewed, 202 full cards online
 
 By 15:40 UTC every state in the queue is written except three Caribbean micro-states left as stubs
