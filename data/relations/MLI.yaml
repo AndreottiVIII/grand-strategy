@@ -1,0 +1,141 @@
+from: MLI
+relations:
+  # ---------- alignment ----------
+  - to: org-aes
+    layer: alignment
+    type: treaty
+    summary: "Mali, Burkina Faso and Niger signed the confederation treaty of the Alliance of Sahel States at the Niamey summit in July 2024 (Al Jazeera). The treaty is one row for the three juntas; the same row is mirrored from the AES side when that card is written."
+    since: '2024-07'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2024/7/6/niger-mali-and-burkina-faso-military-leaders-sign-new-pact-rebuff-ecowas", title: "Niger, Mali and Burkina Faso military leaders sign new pact, rebuff ECOWAS", publisher: "Al Jazeera", date: "2024-07-06", tier: 3}
+
+  - to: org-ecowas
+    layer: alignment
+    type: membership
+    summary: "Mali left ECOWAS: the three juntas announced the exit on 28 January 2024 and it took effect on 29 January 2025, after the one-year notice (DW; Daily Trust). Membership row ends at the exit; the membership itself is not in the Wikidata layer for Mali."
+    since: null
+    until: '2025-01-29'
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.dw.com/en/mali-burkina-faso-and-niger-quit-ecowas/a-68106116", title: "Mali, Burkina Faso and Niger quit ECOWAS", publisher: "Deutsche Welle", date: "2024-01-28", tier: 3}
+      - {url: "https://dailytrust.com/thousands-rally-as-burkina-faso-niger-mali-exit-ecowas/", title: "Thousands rally as Burkina Faso, Niger, Mali exit ECOWAS", publisher: "Daily Trust", date: "2025-01", tier: 3}
+
+  - to: MAR
+    layer: action
+    type: agreement
+    summary: "On 10 Apr 2026 Mali backed Morocco's autonomy plan for Western Sahara and withdrew its recognition of the Sahrawi Republic. Mirror of the MAR row, same sources."
+    since: '2026-04-10'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://apnews.com/article/mali-morocco-western-sahara-algeria-8d4d6feb4f2da3a1a653b5a9a1aed1e7", title: "Mali backs Morocco's plan for disputed Western Sahara, ending support for the Sahrawi Republic", publisher: "AP", date: "2026-04-10", tier: 3}
+      - {url: "https://www.rfi.fr/fr/en-bref/20260410-sahara-occidental-le-mali-soutient-le-plan-d-autonomie-propos%C3%A9-par-le-maroc-et-retire-sa-reconnaissance-%C3%A0-la-r%C3%A9publique-arabe-sahraouie-d%C3%A9mocratique", title: "Western Sahara: Mali backs the autonomy plan proposed by Morocco and withdraws its recognition of the Sahrawi Republic", title_original: "Sahara occidental : le Mali soutient le plan d'autonomie proposé par le Maroc et retire sa reconnaissance à la République arabe sahraouie démocratique", publisher: "RFI", date: "2026-04-10", tier: 3, lang: fr}
+
+  # ---------- dependency ----------
+  - to: RUS
+    layer: dependency
+    type: military_presence
+    summary: "Africa Corps, the Defence Ministry's successor to Wagner, keeps about 2,000 men in Mali since Wagner left on 6-7 Jun 2025; it abandoned Kidal under attack (Apr 2026) and is accused by HRW of killing nine villagers (Aug 2026). Mirror of the RUS row: the figure is the RUS card's estimate, not an official count."
+    since: '2025-06-07'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    value: 2000
+    unit: africa_corps_personnel_in_mali_estimate
+    sources:
+      - {url: "https://dw.com/en/russias-wagner-group-leaves-mali-africa-corps-will-stay/a-72829045", title: "Russia's Wagner Group leaves Mali, Africa Corps will stay", publisher: "Deutsche Welle", date: "2025-06-07", tier: 3}
+      - {url: "https://www.bbc.com/news/articles/c3w3wyq4v14o", title: "Mali attacks: Russia's Africa Corps confirms withdrawal from Kidal", publisher: "BBC", date: "2026-04-27", tier: 3}
+      - {url: "https://www.hrw.org/news/2026/08/20/mali-russias-africa-corps-massacres-villagers", title: "Mali: Russia's 'Africa Corps' Massacres Villagers", publisher: "Human Rights Watch", date: "2026-08-20", tier: 2}
+
+  # ---------- action ----------
+  - to: DZA
+    layer: action
+    type: incident
+    summary: "The Algerian army said it shot down a Malian drone that entered its airspace near Tin Zaouatine (reported 31 Mar 2025; Algeria says more than 2 km inside its border, Mali says inside Mali). Mali's Sahel partners recalled their ambassadors from Algiers in April 2025, Algeria suspended flights to Mali, and Mali filed an ICJ case on 4 Sep 2025. Mirror of the DZA row."
+    since: '2025-03-31'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://apnews.com/article/mali-algeria-drone-shot-down-tensions-f3ee1d72963b16ae72cd3e061fb56e45", title: "Algeria says it downed a drone near its border with Mali as tensions simmer between the 2 countries", publisher: "Associated Press", date: "2025-04-02", tier: 3}
+      - {url: "https://www.france24.com/en/africa/20250407-sahel-alliance-recalls-ambassadors-from-algiers-over-downed-drone", title: "Sahel alliance recalls ambassadors from Algiers over downed drone", publisher: "France 24", date: "2025-04-07", tier: 3}
+      - {url: "https://www.africanews.com/2025/04/08/algeria-suspends-flights-to-mali-over-airspace-violations/", title: "Algeria suspends flights to Mali over airspace violations", publisher: "Africanews", date: "2025-04-08", tier: 3}
+      - {url: "https://apnews.com/article/mali-icj-case-algeria-drone-0cc0b2aaea816d6386affac4e1556733", title: "Mali files ICJ case against Algeria over the destruction of a military reconnaissance drone", publisher: "Associated Press", date: "2025-09-05", tier: 3}
+
+  - to: DZA
+    layer: action
+    type: agreement
+    summary: "Algeria reopened its airspace to Malian aircraft (10 Jul 2026) and Tebboune announced on 11 Jul 2026 that Algeria's ambassador would return to Mali; Bamako reciprocated. No conditions were stated. Mirror of the DZA row."
+    since: '2026-07-11'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2026/7/11/algeria-and-mali-restore-diplomatic-ties-following-yearlong-rift", title: "Algeria and Mali restore diplomatic ties following yearlong rift", publisher: "Al Jazeera", date: "2026-07-11", tier: 3}
+
+  - to: CIV
+    layer: action
+    type: incident
+    summary: "Mali's junta held 46 Ivorian soldiers arrested in 2022 (three women freed in September 2022). A Bamako court gave them 20-year terms in late December 2022; a pardon followed in early January 2023. Abidjan calls them a backup force for MINUSMA; Bamako calls them mercenaries. Mirror of the CIV row."
+    since: '2022-07'
+    until: '2023-01'
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.aljazeera.com/news/2022/9/4/mali-releases-three-ivorian-soldiers-46-still-detained", title: "Mali releases three Ivorian soldiers; 46 still detained", publisher: "Al Jazeera", date: "2022-09-04", tier: 3}
+      - {url: "https://theeastafrican.co.ke/tea/news/west-africa/mali-sentences-ivorian-soldiers-to-20-years-jail-4073152", title: "Mali sentences Ivorian soldiers to 20 years in jail", publisher: "The EastAfrican", date: "2022-12", tier: 3}
+      - {url: "https://www.arabnews.com/node/2228451/amp", title: "46 Ivorian soldiers arrive home after six months in Malian captivity", publisher: "Arab News", date: "2023-01", tier: 3}
+
+  - to: UKR
+    layer: action
+    type: incident
+    summary: "Mali severed diplomatic relations with Ukraine in early August 2024, after Kyiv was accused of supporting the Tinzaouaten attack (Wikipedia, citing CNN). The CNN article was not opened: it returned HTTP 451 when fetched, so the row rests on the citation alone."
+    since: '2024-08'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.cnn.com/2024/08/04/africa/mali-ukraine-wagner-intelligence-intl-latam/index.html", title: "Mali severs ties with Ukraine (cited via Wikipedia; title not verified)", publisher: "CNN", date: "2024-08-04", tier: 3}
+
+  - to: FRA
+    layer: action
+    type: expulsion
+    summary: "Mali expelled the last French forces, about 2,400 troops, in 2022 after Operation Barkhane (cited via Harvard International Review). The French government later told its nationals to leave Mali as the JNIM blockade tightened (Nov 2025). Mirror of the FRA row, from Mali's side."
+    since: '2022'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://hir.harvard.edu/how-france-failed-mali-the-end-of-operation-barkhane/", title: "How France failed Mali: the end of Operation Barkhane", publisher: "Harvard International Review", date: "2022", tier: 3}
+      - {url: "https://www.aljazeera.com/news/2025/11/7/france-urges-citizens-to-leave-mali-as-armed-group-blockade-intensifies", title: "France urges citizens to leave Mali as armed group blockade intensifies", publisher: "Al Jazeera", date: "2025-11-07", tier: 3}
+
+  - to: nsa-jnim
+    layer: action
+    type: incident
+    summary: "JNIM announced a fuel blockade of Mali in September 2025, enforced on the Senegal-Mali route and around Bamako: trucks were burned on the route, and the army answered with airstrikes. Mirror of the SEN and FRA cards' sources for the blockade."
+    since: '2025-09'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.timeslive.co.za/news/africa/2025-09-09-mali-army-carries-out-airstrikes-after-militants-announce-blockade-on-fuel-imports/", title: "Mali army carries out airstrikes after militants announce blockade on fuel imports", publisher: "TimesLive", date: "2025-09-09", tier: 3}
+      - {url: "https://www.africanews.com/amp/2025/10/08/desperate-search-for-fuel-in-malis-capital-as-al-qaida-linked-group-enforces-blockade/", title: "Desperate search for fuel in Mali's capital as al-Qaida-linked group enforces blockade", publisher: "Africanews", date: "2025-10-08", tier: 3}
+      - {url: "https://rainbowradioonline.com/2025/09/17/trucks-set-ablaze-as-militants-block-key-senegal-mali-trade-route", title: "Trucks set ablaze as militants block key Senegal-Mali trade route", publisher: "Rainbow Radio", date: "2025-09-17", tier: 4}
+
+  - to: nsa-fla
+    layer: action
+    type: incident
+    summary: "The army's drone strike near Tinzaouaten on 1-2 December 2024, the day after the FLA was founded, reportedly killed several of its leaders (RFI, cited via Wikipedia). In April 2026 the FLA launched offensives and claimed Kidal (AP); the Africa Corps confirmed its withdrawal from Kidal (BBC)."
+    since: '2024-12-02'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://rfi.fr/fr/afrique/20241202-mali-frappes-de-drone-%C3%A0-tinzaouat%C3%A8ne-apr%C3%A8s-la-cr%C3%A9ation-d-une-nouvelle-coalition-s%C3%A9paratiste", title: "Mali drone strikes at Tinzaouaten after creation of a new separatist coalition", title_original: "Mali: frappes de drone à Tinzaouatène après la création d'une nouvelle coalition séparatiste", publisher: "RFI", date: "2024-12-02", tier: 3, lang: fr}
+      - {url: "https://apnews.com/article/mali-gunfire-airport-96f93a72f4766d538e0c98d9e6afa912", title: "Gunfire near Kidal airport (title paraphrased; cited via Wikipedia, not opened)", publisher: "AP", date: "2026-04-25", tier: 3}
+      - {url: "https://www.bbc.com/news/articles/c3w3wyq4v14o", title: "Mali attacks: Russia's Africa Corps confirms withdrawal from Kidal", publisher: "BBC", date: "2026-04-27", tier: 3}
