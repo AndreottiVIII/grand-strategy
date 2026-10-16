@@ -1,14 +1,62 @@
 id: MOZ
 name: Mozambique
 type: state
+seat: Maputo
+coords: [32.57, -25.97]
 iso2: mz
 wikipedia: https://en.wikipedia.org/wiki/Mozambique
-coords:
-- 32.57
-- -25.97
-seat: Maputo
-regions:
-- world
-card: stub
+regions: [central-southern-africa]
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the Cabo Delgado gas perimeter secure enough for the TotalEnergies-led LNG project to run. The full restart was announced on 29 January 2026, with first LNG expected in 2029, and the force that guards the site is Rwandan and, from 2026, paid for by Maputo (Kigali's claim)."
+      confidence: B
+      sources:
+        - {url: "https://www.businesswire.com/news/home/20260129402488/en/Mozambique-LNG-Announces-the-Full-Restart-of-All-Its-Activities-Onshore-and-Offshore-in-Mozambique", title: "Mozambique LNG announces the full restart of all its activities onshore and offshore in Mozambique", publisher: "TotalEnergies (company announcement)", date: 2026-01-29, tier: 3}
+        - {url: "https://worldview.ranenetwork.com/content/analysis/2026-01-29/mozambique-s-lng-sector-turns-a-corner-amid-megaproject-reboot", title: "Mozambique's LNG sector turns a corner amid megaproject reboot", publisher: "RANE Worldview", date: 2026-01-29, tier: 3}
+        - {url: "https://polity.org.za/article/rwanda-says-mozambique-has-secured-funds-for-it-to-continue-cabo-delgado-mission-2026-05-20", title: "Rwanda says Mozambique has secured funds for it to continue Cabo Delgado mission", publisher: "Engineering News / Polity", date: 2026-05-20, tier: 3}
+    - rank: 2
+      text: "Refinance the state: a new IMF programme by the end of 2026, and only then an external debt restructuring, which Chapo has sequenced after the Fund deal. The Finance Ministry aims for board approval by year end; no programme is signed."
+      confidence: B
+      sources:
+        - {url: "https://allafrica.com/stories/202609110252.html", title: "Mozambique: New Programme With IMF By the End of This Year - Finance Ministry", publisher: "allAfrica", date: 2026-09-11, tier: 3}
+        - {url: "https://allafrica.com/stories/202609210069.html", title: "Mozambique: Government Closer to New Programme With IMF", publisher: "allAfrica", date: 2026-09-21, tier: 3}
+        - {url: "https://360mozambique.com/economy/mozambique-will-only-negotiate-debt-after-new-imf-program-says-daniel-chapo/", title: "Mozambique will only negotiate debt after new IMF program says Daniel Chapo", publisher: "360 Mozambique", date: 2026, tier: 3}
+  means:
+    - domain: military
+      text: "Paid security. A Rwandan force of about 6,300 soldiers and police (Kigali's figure, April 2026) guards the LNG area, and EU-trained units under EUMAM-MOZ, led by Portugal, number about 2,000 Mozambican personnel in programmes. The EU's EUR 20m for the Rwandans lapsed in May 2026; Maputo now says it has secured the funding, a claim so far made by Kigali."
+      confidence: B
+      sources:
+        - {url: "https://www.washingtonexaminer.com/news/world/4515966/rwanda-gas-project-isis-mozambique/", title: "Rwanda threatens to stop protecting US gas project from ISIS over sanctions", publisher: "Washington Examiner", date: 2026-04-06, tier: 3}
+        - {url: "https://www.newtimes.co.rw/article/37812/news/security/gen-nyakarundi-briefs-rdf-police-contingent-ahead-of-mozambique-deployment/amp", title: "Gen Nyakarundi briefs RDF, Police contingent ahead of Mozambique deployment", publisher: "The New Times (Kigali)", date: 2026-07-30, tier: 3}
+        - {url: "https://360mozambique.com/development/mozambican-and-portuguese-governments-request-renewal-of-eu-military-mission-until-2028/", title: "Mozambican and Portuguese governments request renewal of EU military mission until 2028", publisher: "360 Mozambique", date: 2026, tier: 3}
+    - domain: economic
+      text: "Gas as the bankable asset. The US Export-Import Bank board voted on 13 March 2025 to proceed with a loan of up to USD 4.7bn for the LNG project, after a four-year delay. The loan is what Maputo can show creditors as foreign money already committed, though no source ties it to the IMF talks."
+      confidence: A
+      sources:
+        - {url: "https://www.exim.gov/news/exim-board-directors-votes-proceed-47-billion-lng-equipment-and-services-transaction-after", title: "EXIM Board of Directors Votes to Proceed with $4.7 Billion LNG Equipment and Services Transaction After Four-Year Delay", publisher: "US Export-Import Bank", date: 2025-03-13, tier: 1}
+  constraints:
+    - text: "Debt and no programme. Maputo paid its IMF arrears in full in March 2026 (about USD 630m, state agency report), but no new programme is signed. Chapo has said debt talks with creditors come only after a Fund programme, so the state cannot restructure its external debt on its own terms yet."
+      confidence: B
+      sources:
+        - {url: "https://aimnews.org/2026/04/01/mozambique-pays-debt-to-imf-in-full/", title: "Mozambique pays debt to IMF in full", publisher: "AIM (state news agency, quoting government)", date: 2026-04-01, tier: 1}
+        - {url: "https://360mozambique.com/economy/mozambique-will-only-negotiate-debt-after-new-imf-program-says-daniel-chapo/", title: "Mozambique will only negotiate debt after new IMF program says Daniel Chapo", publisher: "360 Mozambique", date: 2026, tier: 3}
+    - text: "Legitimacy and aid. The October 2024 result is contested; the inauguration in January 2025 drew protests and clashes after Mondlane's return from exile, and Mondlane is largely outside the national dialogue that is to report in November 2026. The regional force left in 2024 and US aid was cut sharply in 2025, so the gap is filled by paid partners."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2025/1/9/clashes-in-mozambique-as-main-opposition-leader-mondlane-returns-from-exile", title: "Clashes in Mozambique as main opposition leader Mondlane returns from exile", publisher: "Al Jazeera", date: 2025-01-09, tier: 3}
+        - {url: "https://www.yahoo.com/news/hundreds-protest-mozambique-inaugurates-president-142248176.html", title: "Hundreds protest as Mozambique inaugurates a new president", publisher: "Yahoo News", date: 2025-01, tier: 3}
+        - {url: "https://aimnews.org/2025/09/11/chapo-launches-national-dialogue/", title: "Chapo launches national dialogue", publisher: "AIM (state news agency)", date: 2025-09-11, tier: 1}
+        - {url: "https://www.zitamar.com/us-to-slash-nearly-half-its-aid-to-mozambique-memo-reveals/", title: "US to slash nearly half its aid to Mozambique, memo reveals", publisher: "Zitamar News", date: 2025, tier: 3}
+  paradoxes:
+    - text: "Maputo buys its gas security from a force Washington has sanctioned. The US designated the Rwandan defence force on 2 March 2026, and Rwanda has threatened to stop protecting the US-financed gas project if its paid mission is not sustained. The security the state buys protects the export-credit project, and the same force is the one that puts that project at risk."
+      confidence: B
+      sources:
+        - {url: "https://www.washingtonexaminer.com/news/world/4515966/rwanda-gas-project-isis-mozambique/", title: "Rwanda threatens to stop protecting US gas project from ISIS over sanctions", publisher: "Washington Examiner", date: 2026-04-06, tier: 3}
+        - {url: "https://www.fdd.org/in_the_news/quotes/2026/03/12/eu-funding-for-rwandas-mozambique-deployment-set-to-end-in-may/", title: "EU funding for Rwanda's Mozambique deployment set to end in May", publisher: "FDD (quoting Bloomberg)", date: 2026-03-12, tier: 4}
+  reading: |
+    Mozambique is a state that sells its gas perimeter and rents its army. The LNG project, relaunched in 2026 with US export credit behind it, is the reason foreign forces stand in Cabo Delgado, and the Rwandan force is now paid for with money Maputo does not yet have, while it answers to Kigali. The IMF deal and the debt restructuring that follows will show whether the state can keep the gas and the paying partners after the EU money and the SADC force have left.
