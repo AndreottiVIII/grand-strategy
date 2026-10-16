@@ -1,0 +1,60 @@
+from: GMB
+relations:
+  # ---------- objective ----------
+  - to: org-commonwealth
+    layer: objective
+    type: membership_goal
+    summary: "Rejoin the Commonwealth: the return process began in February 2017 and the formal application went in on 22 January 2018. The membership itself is in the Wikidata dataset (since 2018-02-08), so this row carries the goal only."
+    since: '2017-02'
+    until: '2018-02-08'
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "http://thecommonwealth.org/media/news/gambia-presents-formal-application-re-join-commonwealth", title: "The Gambia presents formal application to re-join the Commonwealth", publisher: "Commonwealth Secretariat", date: "2018-01-23", tier: 1}
+
+  # ---------- action ----------
+  - to: org-icj
+    layer: action
+    type: incident
+    summary: "The Gambia v. Myanmar (Genocide Convention, Rohingya): filed November 2019; merits hearings held in January 2026, with Myanmar's agent calling the case 'unsubstantiated allegations'; judgment pending. Mirror of the MMR row toward org-icj, same source."
+    since: '2019-11'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://news.un.org/en/story/2026/01/1166782", title: "Myanmar begins defence in landmark genocide case at UN World Court", publisher: "UN News", date: "2026-01-16", tier: 1}
+
+  - to: SEN
+    layer: action
+    type: incident
+    summary: "Senegal sent troops into The Gambia in January 2017 to back the elected leader Adama Barrow, the event that set the post-Jammeh order (mirror of the SEN row toward GMB)."
+    since: '2017-01'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.bbc.com/news/world-africa-38682184", title: "Gambia crisis: Senegal sends in troops to back elected leader", publisher: "BBC", date: "2017-01", tier: 3}
+
+  - to: GBR
+    layer: action
+    type: visit
+    summary: "Foreign Secretary Boris Johnson visited Banjul in February 2017, the first British Foreign Secretary visit since independence, and welcomed the Gambian wish to rejoin the Commonwealth. The visit rests on the Wikipedia index citing thejournal.ie (tier 4 pointer); the welcome is in the BBC report."
+    since: '2017-02'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.bbc.com/news/world-africa-38968336", title: "The Gambia: UK 'very pleased' about Commonwealth return", publisher: "BBC", date: "2017-02", tier: 3}
+      - {url: "http://www.thejournal.ie/boris-johnson-gambia-3241111-Feb2017/", title: "Boris Johnson is only delighted the Gambia wants back into the British Commonwealth", publisher: "TheJournal.ie", date: "2017-02-15", tier: 4}
+
+  # ---------- alignment ----------
+  - to: CHN
+    layer: alignment
+    type: recognition
+    summary: "Recognition of the People's Republic of China from 17 March 2016, replacing Taiwan (the 2013 break with Taipei is in the Wikipedia index)."
+    since: '2016-03-17'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.nytimes.com/2016/03/19/world/asia/china-gambia-taiwan-diplomatic-relations.html", title: "China Resumes Diplomatic Relations With Gambia, Shutting Out Taiwan", publisher: "The New York Times", date: "2016-03-18", tier: 3}
