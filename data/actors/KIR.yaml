@@ -8,7 +8,55 @@ coords:
 - 1.33
 seat: South Tarawa
 regions:
-- world
-card: stub
+- southeast-asia-oceania
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Turn the Phoenix Islands reserve into revenue: reopen the protected area to commercial fishing, which the government says will bring tens of millions of dollars. Officials put the lost licence fees since the 2015 closure at about US$150 million, one report says US$205 million; both are government figures, and the sources do not confirm whether the reopening has taken effect."
+    confidence: C
+    sources:
+    - {url: "https://www.rnz.co.nz/international/pacific-news/455812/kiribati-opens-phoenix-marine-reserve-for-commercial-fishing", title: "Kiribati opens Phoenix marine reserve for commercial fishing", publisher: "RNZ", date: 2022, tier: 3}
+  - rank: 2
+    text: "Take Chinese security help without losing the patrons: a Chinese naval hospital ship docked at Tarawa in July 2023, and uniformed Chinese police have worked with Kiribati police since early 2024, a presence that drew criticism from Washington and Canberra."
+    confidence: C
+    sources:
+    - {url: "http://ki.china-embassy.gov.cn/eng/sghd/202307/t20230717_11114152.htm", title: "The Chinese navy hospital ship 'Peace Ark' Arrived at Tarawa", publisher: "Embassy of the People's Republic of China in the Republic of Kiribati", date: 2023-07-17, tier: 1}
+    - {url: "https://www.rnz.co.nz/news/world/510310/us-cautions-after-hawaii-neighbour-kiribati-gets-chinese-police", title: "US cautions after Hawaii neighbour Kiribati gets Chinese police", publisher: "RNZ", date: 2024, tier: 3}
+  - rank: 3
+    text: "Set the pace of security talks with Australia: the police talks were shelved at Kiribati's behest, the president wanting to wait until a new government was elected after the 2024 election."
+    confidence: C
+    sources:
+    - {url: "https://rnz.co.nz/international/pacific-news/521858/australia-s-ongoing-struggles-with-kiribati", title: "Australia's ongoing struggles with Kiribati", publisher: "RNZ", date: 2024, tier: 3}
+  means:
+  - text: "Recognition as a lever: Kiribati switched recognition from Taiwan to China in September 2019 (announced 20 September); the Chinese foreign ministry records the resumption of relations on 27 September 2019."
+    confidence: B
+    sources:
+    - {url: "https://www.fmprc.gov.cn/ce/ceth/eng/zgyw/t1703154.htm", title: "People's Republic of China and Kiribati resumption diplomatic relations", publisher: "Chinese Ministry of Foreign Affairs", date: 2019-09-27, tier: 1}
+    - {url: "https://www.scmp.com/news/china/diplomacy/article/3029626/taiwan-down-15-allies-kiribati-announces-switch-diplomatic", title: "Taipei down to 15 allies as Kiribati announces switch of diplomatic ties to Beijing", publisher: "South China Morning Post", date: 2019-09-20, tier: 3}
+  - text: "Fishing access as a lever: the Phoenix Islands reserve, closed to commercial fishing since 2015, is the government's revenue lever, and closing it cost, on government figures, about US$150 million in licence fees."
+    confidence: C
+    sources:
+    - {url: "https://www.rnz.co.nz/international/pacific-news/455812/kiribati-opens-phoenix-marine-reserve-for-commercial-fishing", title: "Kiribati opens Phoenix marine reserve for commercial fishing", publisher: "RNZ", date: 2022, tier: 3}
+  constraints:
+  - text: "Fishing access revenue: over 70% of non-aid government revenue comes from tuna access fees, and tuna catch rates are projected to fall by nearly a third by 2050 (scientists, as reported by RNZ; figures taken from a search snippet, article not opened)."
+    confidence: C
+    sources:
+    - {url: "https://www.rnz.co.nz/news/pacific/564065/lifeblood-for-pacific-islands-threatened-as-warming-ocean-drives-tuna-east", title: "Lifeblood for Pacific Islands threatened as warming ocean drives tuna east", publisher: "RNZ", date: 2025, tier: 3}
+  - text: "Cannot easily leave the patrons: Australia and New Zealand each keep a High Commission in Tarawa, and the 2024 policing talks with Australia and the 2025 visit row with New Zealand show that frictions cost goodwill rather than end the ties."
+    confidence: C
+    sources:
+    - {url: "https://kiribati.embassy.gov.au/", title: "High Commission of Australia in Tarawa", publisher: "Australian Government", date: 2020-03-24, tier: 1}
+    - {url: "https://www.mfat.govt.nz/en/countries-and-regions/pacific/kiribati/new-zealand-high-commission/", title: "High Commission of New Zealand in Tarawa", publisher: "New Zealand Ministry of Foreign Affairs and Trade", date: 2020-03-24, tier: 1}
+    - {url: "https://rnz.co.nz/international/pacific-news/521858/australia-s-ongoing-struggles-with-kiribati", title: "Australia's ongoing struggles with Kiribati", publisher: "RNZ", date: 2024, tier: 3}
+  paradoxes:
+  - text: "The Chinese police presence drew US and Australian criticism in 2024 and a New Zealand row followed in 2025: the security help from Beijing cost goodwill with the patrons Kiribati still depends on."
+    confidence: C
+    sources:
+    - {url: "https://www.rnz.co.nz/news/world/510310/us-cautions-after-hawaii-neighbour-kiribati-gets-chinese-police", title: "US cautions after Hawaii neighbour Kiribati gets Chinese police", publisher: "RNZ", date: 2024, tier: 3}
+    - {url: "https://www.rnz.co.nz/news/pacific/540379/new-zealand-born-kiribati-mp-defends-taneti-maamau-over-snub-of-winston-peters", title: "New Zealand-born Kiribati MP defends Taneti Maamau over snub of Winston Peters", publisher: "RNZ", date: 2025, tier: 3}
+  reading: |
+    Kiribati plays the great powers against each other: it switched recognition from Taipei to Beijing in 2019, takes Chinese naval and police help, and still depends on Australian and New Zealand ties and on the fees foreign fleets pay for tuna. The Maamau government's bet is on the sea, reopening the Phoenix Islands reserve to fishing, and the sources give that revenue only as government figures, so the bet is hard to test. The sharpest exposure is the patrons: the policing dispute with Canberra and the visit row with Wellington show that Chinese help costs goodwill exactly where the aid and the ties come from.

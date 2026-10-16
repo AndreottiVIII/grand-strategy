@@ -1,0 +1,101 @@
+from: PLW
+relations:
+  # ---------- objective ----------
+  - to: org-pif
+    layer: objective
+    type: influence_goal
+    summary: "Palau hosted the 55th Pacific Islands Forum Leaders' Meeting, 31 August to 3 September 2026; Australia's visit brought a support package for the host (see the AUS row). The outcome of the meeting is not sourced here."
+    since: 2026-08-31
+    until: 2026-09-03
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.pm.gov.au/media/55th-pacific-islands-forum-leaders-meeting-palau", title: "55th Pacific Islands Forum Leaders' Meeting in Palau", publisher: "Prime Minister of Australia", date: 2026-08, tier: 1}
+
+  - to: CHN
+    layer: objective
+    type: recognition_denied
+    summary: "Refuse Beijing the recognition it seeks: Palau keeps diplomatic relations with Taipei, and officials offered large gains for a switch (per President Whipps) and a million visitors in 2020 (AP)."
+    since: 2020
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://abcnews.go.com/International/wireStory/palaus-president-china-weaponizing-lucrative-tourism-refusal-break-112884974", title: "Palau's president says China weaponizing lucrative tourism over refusal to break Taiwan ties (AP)", publisher: "ABC News (AP)", date: 2024, tier: 3}
+      - {url: "https://focustaiwan.tw/politics/202609030022", title: "Taiwan's foreign minister signs joint statement with Palau, Marshall Islands and Tuvalu leaders (Focus Taiwan report; title descriptive)", publisher: "Focus Taiwan (CNA)", date: 2026-09-03, tier: 3}
+
+  # ---------- alignment ----------
+  - to: USA
+    layer: alignment
+    type: treaty
+    summary: "Compact of Free Association with the United States, with diplomatic relations and the Compact both from 1 October 1994. The 2023 review agreements, enacted in March 2024, renewed the economic assistance (see the dependency row)."
+    since: 1994-10-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: A
+    sources:
+      - {url: "https://www.doi.gov/pressreleases/interior-department-applauds-renewed-economic-assistance-compacts-free-association", title: "Interior Department Applauds Renewed Economic Assistance for Compacts of Free Association", publisher: "U.S. Department of the Interior", date: 2024-03-11, tier: 1}
+      - {url: "https://www.doi.gov/sites/doi.gov/files/migrated/oia/islands/upload/PalauDipRelations.pdf", title: "Countries with which Palau has Diplomatic Relations (as cited by Wikipedia; not opened)", publisher: "U.S. Department of the Interior", date: 1994-10, tier: 1}
+
+  # ---------- dependency ----------
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    value: 0.33
+    unit: share_of_tourist_arrivals
+    summary: "Chinese visitors were 19,060 of 57,370 international arrivals in January to October 2025 (about 33%, computed here), up 25% and back at the top market after halving in 2024 (AP put China at about 30% of tourists then). Tourism is a services export and the vocabulary has no tourism type, so it is filed under trade_share. The tourism share of GDP is about 40% (AP) against more than half (RNZ, 2024): the atlas uses AP and does not reconcile the two."
+    since: 2024
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://abcnews.go.com/International/wireStory/palaus-president-china-weaponizing-lucrative-tourism-refusal-break-112884974", title: "Palau's president says China weaponizing lucrative tourism over refusal to break Taiwan ties (AP)", publisher: "ABC News (AP)", date: 2024, tier: 3}
+      - {url: "https://www.mvariety.com/?p=22746", title: "Palau sees significant tourism growth (headline matched to the 2025 arrivals figures, from a search summary; not opened)", publisher: "Marianas Variety", date: 2025, tier: 3}
+
+  - to: USA
+    layer: dependency
+    type: investment
+    value: 889
+    unit: usd_millions_over_20_years
+    summary: "Compact economic assistance: US$889 million for Palau over 20 years through 2043 under the 2023 review agreements, enacted in March 2024. It is aid, not investment; the vocabulary has no aid type (the gap the Tonga card also records), so it is filed under investment as the nearest type."
+    since: 2024-03
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.doi.gov/pressreleases/interior-department-applauds-renewed-economic-assistance-compacts-free-association", title: "Interior Department Applauds Renewed Economic Assistance for Compacts of Free Association", publisher: "U.S. Department of the Interior", date: 2024-03-11, tier: 1}
+
+  # ---------- action ----------
+  - to: CHN
+    layer: action
+    type: sanction
+    summary: "Economic coercion over Taiwan: Palau's president says China is weaponising tourism to push Palau away from Taipei, and Chinese visitor numbers halved in 2024. The start of the boycott is not sourced here."
+    since: 2024
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://abcnews.go.com/International/wireStory/palaus-president-china-weaponizing-lucrative-tourism-refusal-break-112884974", title: "Palau's president says China weaponizing lucrative tourism over refusal to break Taiwan ties (AP)", publisher: "ABC News (AP)", date: 2024, tier: 3}
+
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "Palau agreed to host a US Air Force over-the-horizon (TACMOR) radar, expected to be operational in 2026. Press reports, not the Palau or US government text, are the sources here."
+    since: 2022-05-05
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://insidedefense.com/insider/air-force-eyes-new-radar-installation-palau", title: "Air Force eyes new radar installation in Palau", publisher: "Inside Defense", date: 2022-05-05, tier: 3}
+      - {url: "https://www.thedrive.com/the-war-zone/u-s-building-advanced-over-the-horizon-radar-on-palau", title: "U.S. Building Advanced Over-The-Horizon Radar On Palau", publisher: "The Drive (The War Zone)", date: 2022-12-30, tier: 3}
+
+  - to: TWN
+    layer: action
+    type: agreement
+    summary: "On 2 Sep 2026 Taiwan's foreign minister signed a joint statement with the leaders of Palau, the Marshall Islands and Tuvalu, pledging closer cooperation (mirror of the TWN row, same source)."
+    since: 2026-09-02
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://focustaiwan.tw/politics/202609030022", title: "Taiwan's foreign minister signs joint statement with Palau, Marshall Islands and Tuvalu leaders (Focus Taiwan report; title descriptive)", publisher: "Focus Taiwan (CNA)", date: 2026-09-03, tier: 3}

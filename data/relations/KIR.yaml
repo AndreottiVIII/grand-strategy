@@ -1,0 +1,85 @@
+from: KIR
+relations:
+  # ---------- objective ----------
+  - to: CHN
+    layer: objective
+    type: influence_goal
+    summary: "Maamau's government seeks Chinese security and aid partnership after the 2019 switch: a naval hospital ship at Tarawa (2023) and uniformed Chinese police working with Kiribati police from early 2024. This is read from the actions below, not a stated goal."
+    since: 2019-09-27
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.rnz.co.nz/news/world/510310/us-cautions-after-hawaii-neighbour-kiribati-gets-chinese-police", title: "US cautions after Hawaii neighbour Kiribati gets Chinese police", publisher: "RNZ", date: 2024, tier: 3}
+      - {url: "http://ki.china-embassy.gov.cn/eng/sghd/202307/t20230717_11114152.htm", title: "The Chinese navy hospital ship 'Peace Ark' Arrived at Tarawa", publisher: "Embassy of the People's Republic of China in the Republic of Kiribati", date: 2023-07-17, tier: 1}
+
+  # ---------- alignment ----------
+  - to: CHN
+    layer: alignment
+    type: recognition
+    summary: "Recognises the People's Republic of China and broke with Taiwan: the switch was announced on 20 September 2019, and the Chinese foreign ministry records the resumption of relations on 27 September 2019. The Taiwan non-recognition row sits in the datasets, not here."
+    since: 2019-09-27
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.fmprc.gov.cn/ce/ceth/eng/zgyw/t1703154.htm", title: "People's Republic of China and Kiribati resumption diplomatic relations", publisher: "Chinese Ministry of Foreign Affairs", date: 2019-09-27, tier: 1}
+      - {url: "https://www.scmp.com/news/china/diplomacy/article/3029626/taiwan-down-15-allies-kiribati-announces-switch-diplomatic", title: "Taipei down to 15 allies as Kiribati announces switch of diplomatic ties to Beijing", publisher: "South China Morning Post", date: 2019-09-20, tier: 3}
+      - {url: "https://www.abc.net.au/news/2019-09-20/kiribati-to-switch-diplomatic-ties-from-taiwan-to-china/11532192", title: "Kiribati cuts ties with Taiwan in diplomatic switch to China days after Solomon Islands pivot", publisher: "ABC News", date: 2019-09-20, tier: 3}
+
+  - to: USA
+    layer: alignment
+    type: treaty
+    summary: "Treaty of Friendship with the United States, signed after independence in 1979, according to the State Department's 2009 background note. A friendship treaty, not an alliance: no security guarantee is recorded. The treaty text itself was not read."
+    since: 1979
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://2009-2017.state.gov/r/pa/ei/bgn/1836.htm", title: "Background Note: Kiribati", publisher: "US Department of State", date: 2009-05, tier: 1}
+
+  # ---------- action ----------
+  - to: CHN
+    layer: action
+    type: visit
+    summary: "The PLA Navy hospital ship Peace Ark docked at Tarawa on 15 July 2023 for a seven-day humanitarian and medical visit, reported by the Chinese embassy and by Reuters on 16 July 2023."
+    since: 2023-07-15
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "http://ki.china-embassy.gov.cn/eng/sghd/202307/t20230717_11114152.htm", title: "The Chinese navy hospital ship 'Peace Ark' Arrived at Tarawa", publisher: "Embassy of the People's Republic of China in the Republic of Kiribati", date: 2023-07-17, tier: 1}
+      - {url: "https://www.reuters.com/world/asia-pacific/chinese-military-run-hospital-ship-arrives-kiribati-2023-07-16/", title: "Chinese military-run hospital ship arrives in Kiribati", publisher: "Reuters", date: 2023-07-16, tier: 3}
+
+  - to: CHN
+    layer: action
+    type: incident
+    summary: "From early 2024 uniformed Chinese police worked with Kiribati police on community policing, training and a crime database, up to a dozen at a time on six-month rotations. The Chinese embassy confirmed the presence but said no police station had been set up; the US warned that importing PRC security forces risks regional tension."
+    since: 2024
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.rnz.co.nz/news/world/510310/us-cautions-after-hawaii-neighbour-kiribati-gets-chinese-police", title: "US cautions after Hawaii neighbour Kiribati gets Chinese police", publisher: "RNZ", date: 2024, tier: 3}
+
+  - to: AUS
+    layer: action
+    type: incident
+    summary: "Police talks with Australia were shelved at Kiribati's behest, the president wanting to wait until a new government was elected in 2024. Australia's Pacific minister argued that China should have 'no role' in Pacific policing."
+    since: 2024
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://rnz.co.nz/international/pacific-news/521858/australia-s-ongoing-struggles-with-kiribati", title: "Australia's ongoing struggles with Kiribati", publisher: "RNZ", date: 2024, tier: 3}
+
+  - to: NZL
+    layer: action
+    type: incident
+    summary: "New Zealand cancelled a visit to Kiribati because Winston Peters specifically wanted to meet President Maamau; RNZ headlines the episode as a snub of Peters, defended by a Kiribati MP."
+    since: 2025
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.rnz.co.nz/news/pacific/540379/new-zealand-born-kiribati-mp-defends-taneti-maamau-over-snub-of-winston-peters", title: "New Zealand-born Kiribati MP defends Taneti Maamau over snub of Winston Peters", publisher: "RNZ", date: 2025, tier: 3}

@@ -8,7 +8,57 @@ coords:
 - 7.5
 seat: Ngerulmud
 regions:
-- world
-card: stub
+- southeast-asia-oceania
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Keep the Taipei tie and refuse Beijing's price for switching. Palau is one of three Pacific states that still recognise Taiwan; President Whipps has said officials promised large gains if Palau dropped Taipei, and Beijing offered a million visitors in 2020."
+    confidence: C
+    sources:
+    - {url: "https://abcnews.go.com/International/wireStory/palaus-president-china-weaponizing-lucrative-tourism-refusal-break-112884974", title: "Palau's president says China weaponizing lucrative tourism over refusal to break Taiwan ties (AP)", publisher: "ABC News (AP)", date: 2024, tier: 3}
+    - {url: "https://focustaiwan.tw/politics/202609030022", title: "Taiwan's foreign minister signs joint statement with Palau, Marshall Islands and Tuvalu leaders (Focus Taiwan report; title descriptive)", publisher: "Focus Taiwan (CNA)", date: 2026-09-03, tier: 3}
+  - rank: 2
+    text: "Keep the US tie that pays and protects: the Compact of Free Association, renewed by 2023 agreements that Congress enacted in March 2024 with US$889 million for Palau over 20 years through 2043, and the US military access Palau hosts, including the radar agreed in 2022."
+    confidence: B
+    sources:
+    - {url: "https://www.doi.gov/pressreleases/interior-department-applauds-renewed-economic-assistance-compacts-free-association", title: "Interior Department Applauds Renewed Economic Assistance for Compacts of Free Association", publisher: "U.S. Department of the Interior", date: 2024-03-11, tier: 1}
+    - {url: "https://insidedefense.com/insider/air-force-eyes-new-radar-installation-palau", title: "Air Force eyes new radar installation in Palau", publisher: "Inside Defense", date: 2022-05-05, tier: 3}
+  - rank: 3
+    text: "Lead the Pacific agenda from its own Forum meeting: Palau hosted the 55th Pacific Islands Forum Leaders' Meeting, 31 August to 3 September 2026, and Australia's prime minister came with a support package for the host."
+    confidence: B
+    sources:
+    - {url: "https://www.pm.gov.au/media/55th-pacific-islands-forum-leaders-meeting-palau", title: "55th Pacific Islands Forum Leaders' Meeting in Palau", publisher: "Prime Minister of Australia", date: 2026-08, tier: 1}
+  means:
+  - text: "Recognition as a card. Taipei's ties give Palau standing with Taiwan and a bargaining chip with Beijing: on 2 September 2026 Taiwan's foreign minister signed a joint statement in Palau with the leaders of Palau, the Marshall Islands and Tuvalu, pledging closer cooperation."
+    confidence: C
+    sources:
+    - {url: "https://focustaiwan.tw/politics/202609030022", title: "Taiwan's foreign minister signs joint statement with Palau, Marshall Islands and Tuvalu leaders (Focus Taiwan report; title descriptive)", publisher: "Focus Taiwan (CNA)", date: 2026-09-03, tier: 3}
+    - {url: "https://www.pacificislandtimes.com/post/palau-taiwan-ties-grow-stronger-in-the-face-of-china-s-pressure", title: "Palau-Taiwan ties grow stronger in the face of China's pressure", publisher: "Pacific Island Times", date: 2024, tier: 3}
+  - text: "US military access. An Air Force over-the-horizon (TACMOR) radar that Palau agreed to host in 2022, expected to be operational in 2026, and US exercises from Palau: Valiant Shield in 2022 brought the first US Patriot launch on Palau and an experimental A-10 deployment at Roman Tmetuchl airport."
+    confidence: C
+    sources:
+    - {url: "https://insidedefense.com/insider/air-force-eyes-new-radar-installation-palau", title: "Air Force eyes new radar installation in Palau", publisher: "Inside Defense", date: 2022-05-05, tier: 3}
+    - {url: "https://www.thedrive.com/the-war-zone/u-s-building-advanced-over-the-horizon-radar-on-palau", title: "U.S. Building Advanced Over-The-Horizon Radar On Palau", publisher: "The Drive (The War Zone)", date: 2022-12-30, tier: 3}
+    - {url: "https://www.thedrive.com/the-war-zone/a-10-warthogs-are-operating-from-a-tent-village-in-palau", title: "A-10 Warthogs Are Operating From A Tent Village In Palau", publisher: "The Drive (The War Zone)", date: 2022-11-02, tier: 3}
+  constraints:
+  - text: "Tourism and China. Tourism is about 40% of GDP (AP, 2024; an RNZ report of the same year says more than half: the conflict is kept, the AP figure is used). Chinese visitors halved in 2024 and were back as the top market in 2025 (19,060 of 57,370 arrivals, January to October), so a market Beijing can switch on and off is also the one the economy needs."
+    confidence: C
+    sources:
+    - {url: "https://abcnews.go.com/International/wireStory/palaus-president-china-weaponizing-lucrative-tourism-refusal-break-112884974", title: "Palau's president says China weaponizing lucrative tourism over refusal to break Taiwan ties (AP)", publisher: "ABC News (AP)", date: 2024, tier: 3}
+    - {url: "https://www.mvariety.com/?p=22746", title: "Palau sees significant tourism growth (headline matched to the 2025 arrivals figures, from a search summary; not opened)", publisher: "Marianas Variety", date: 2025, tier: 3}
+  - text: "Money from Washington is a budget decision, not a fixed right. The 2023 review agreements give US$889 million over 20 years through 2043, and the Interior release itself says both 'would provide' and 'will provide'."
+    confidence: B
+    sources:
+    - {url: "https://www.doi.gov/pressreleases/interior-department-applauds-renewed-economic-assistance-compacts-free-association", title: "Interior Department Applauds Renewed Economic Assistance for Compacts of Free Association", publisher: "U.S. Department of the Interior", date: 2024-03-11, tier: 1}
+  paradoxes:
+  - text: "Refusing to trade Taipei for tourism leaves the economy exposed to the market Beijing switches off. The 2024 pressure halved the Chinese visitors that tourism needs, and the same market was back as the top source in 2025, so the lever is one Beijing can pull again."
+    confidence: C
+    sources:
+    - {url: "https://abcnews.go.com/International/wireStory/palaus-president-china-weaponizing-lucrative-tourism-refusal-break-112884974", title: "Palau's president says China weaponizing lucrative tourism over refusal to break Taiwan ties (AP)", publisher: "ABC News (AP)", date: 2024, tier: 3}
+    - {url: "https://www.mvariety.com/?p=22746", title: "Palau sees significant tourism growth (headline matched to the 2025 arrivals figures, from a search summary; not opened)", publisher: "Marianas Variety", date: 2025, tier: 3}
+  reading: |
+    Palau holds three cards out of proportion to its size: a Taipei recognition that Beijing wants, a US Compact and military access that Washington needs in the western Pacific, and the Forum meeting it hosted in 2026. Its money comes from Washington under the Compact and from tourists, a large share of them Chinese, so the government that refuses Beijing's price depends on Beijing's visitors. The paradox sits at the centre of the card: the cards that keep Palau's standing with Washington and Taipei are the ones that expose its economy to Beijing's pressure.
