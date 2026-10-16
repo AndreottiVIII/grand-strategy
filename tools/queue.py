@@ -41,7 +41,7 @@ SONNET = set("""UKR MDA BLR GEO ARM AZE ROU BGR TUR POL HUN CZE SVK DEU AUT SWE 
 PRT org-eu org-nato ISR IRN SAU ARE QAT EGY IRQ SYR LBN JOR YEM PSE KWT OMN nsa-houthis nsa-hezbollah nsa-hamas nsa-sdf
 IND PAK AFG BGD KAZ UZB JPN KOR PRK TWN IDN VNM PHL THA MYS MMR AUS DZA MAR LBY SDN nsa-rsf ETH KEN SOM RWA COD ZAF NGA MLI
 NER BFA TCD CAN MEX CUB BRA VEN ARG COL CHL sub-rs""".split())
-FABLE = {"USA", "CHN", "RUS", "GBR", "FRA"}
+FABLE = {"USA", "CHN"}  # Davide, 2026-10-16: no more Fable agents after USA and China; UK and France rewritten with Sonnet
 DONE = {"SRB", "XKX", "HRV", "BIH", "MNE", "ALB", "MKD"}
 
 
