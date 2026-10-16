@@ -227,7 +227,12 @@ const STAMP = ((document.querySelector('script[src^="app.js"]') || {}).src || ""
   const tip = document.getElementById("tip");
   function showTip(html, ev) {
     tip.innerHTML = html; tip.hidden = false;
-    const x = Math.min(ev.clientX + 14, window.innerWidth - 360), y = Math.min(ev.clientY + 14, window.innerHeight - 160);
+    // measured after the content is set: flip to the left or above the cursor rather than run off the screen
+    const w = tip.offsetWidth, h = tip.offsetHeight, W = window.innerWidth, H = window.innerHeight;
+    let x = ev.clientX + 14, y = ev.clientY + 14;
+    if (x + w > W - 8) x = Math.max(8, ev.clientX - w - 14);
+    if (y + h > H - 8) y = Math.max(8, ev.clientY - h - 14);
+    if (y + h > H - 8) y = Math.max(8, H - h - 8);
     tip.style.left = x + "px"; tip.style.top = y + "px";
   }
   const hideTip = () => { tip.hidden = true; };
@@ -622,13 +627,15 @@ const STAMP = ((document.querySelector('script[src^="app.js"]') || {}).src || ""
     };
     const inView = g => g.state !== "waiting" || g.n >= 8;
     const main = GATHERINGS.filter(inView), crowds = GATHERINGS.filter(g => !inView(g));
-    const siegeRows = SIEGE.filter(r => r.hostile.length).slice(0, 24);
+    // the 24 most encircled, plus every great power (1% of the world or more) with a hostile neighbour: China at 3 of 18 is low in share and high in meaning (Davide, 2026-10-16)
+    const siegeTop = SIEGE.filter(r => r.hostile.length).slice(0, 24), siegeBig = SIEGE.filter(r => r.hostile.length && r.w >= 0.01);
+    const siegeRows = [...new Set([...siegeTop, ...siegeBig])].sort((p, q) => q.share - p.share || q.hostile_weight - p.hostile_weight || p.a.localeCompare(q.a));
     const sRow = r => `<tr><td class="name"><a href="#/view/${r.a}">${nameOf(r.a)}</a></td><td class="n">${r.hostile.length} of ${r.n}</td><td><span class="bar" style="color:var(--c-rival)">${"▮".repeat(Math.round(r.share * 10))}</span><span class="tr">${"▯".repeat(10 - Math.round(r.share * 10))}</span></td><td>${r.hostile.map(id => `<a href="#/view/${id}">${nameOf(id)}</a>`).join(", ")}</td><td>${r.friendly.length ? r.friendly.map(id => `<a href="#/view/${id}">${nameOf(id)}</a>`).join(", ") : "<span class='tr'>none</span>"}</td><td class="n">${r.unread.length}</td></tr>`;
     el.innerHTML = `<h2>Gatherings</h2><p class="lede">A gathering is the coalition that an actor's weight summons. Luttwak's argument in <i>The Rise of China vs. the Logic of Strategy</i> is that a power which grows or presses provokes, by the logic of strategy alone, the convergence of everyone it threatens, whether or not they speak to each other, and that the great state is the last to see it. The page asks, for every state with at least five declared rivals, who has gathered against it, how much of the world that is, and how far the gathering has become a coalition. <b>Formed</b> measures that: take every pair of actors inside the gathering and count how many are already allies of each other; 100% is a coalition in being, 0% a crowd of actors that share an enemy and nothing else. <b>Unseen</b> are the members the target itself does not read as hostile: the part of the gathering it has not noticed.</p>
       <div class="gatherings">${main.map(card).join("")}</div>
       <details class="method"><summary>Smaller crowds · summoned by the logic, not yet signed (${crowds.length})</summary><div class="gatherings">${crowds.map(card).join("")}</div></details>
       <h3 class="sec">Encirclement · the neighbours</h3>
-      <p class="how">The neighbours are the first the logic summons. For every card with borders, the share of its neighbours that read it hostile or that it reads hostile; friendly are the neighbours allied or partnered on either side, or bound by treaty; unread the ones with nothing written either way. Borders from Wikidata, land and sea.</p>
+      <p class="how">The neighbours are the first the logic summons. For every card with borders, the share of its neighbours that read it hostile or that it reads hostile; friendly are the neighbours allied or partnered on either side, or bound by treaty; unread the ones with nothing written either way. Borders from Wikidata, land and sea. In view: the 24 most encircled and every actor weighing 1% of the world or more with a hostile neighbour.</p>
       <table class="ledger-t"><thead><tr><th>Actor</th><th>Hostile</th><th>Share</th><th>Hostile neighbours</th><th>Friendly neighbours</th><th>Unread</th></tr></thead><tbody>${siegeRows.map(sRow).join("")}</tbody></table>
       <details class="method"><summary>How gatherings are counted</summary><p>The gathering against X is every state or armed actor that grades X rival or adversary in a hand-written stance of confidence A or B; X must be a state (a gathering is summoned by weight; the crowd around an armed group is a hunt, not a counter-coalition) and the crowd at least five. Organisations are left out, since they would double their members. Maturity is the share of pairs within the gathering that are already allied, by a written reading on either side, a de facto alignment, or a defence treaty in the datasets (NATO, EU, CSTO): unlike seams, the question here is whether the coalition exists, not who feels it. A member is <b>enlisted</b> if it is allied with at least half of the others, <b>waiting</b> otherwise. Formed is 60% or more, forming 25% or more, waiting below. <b>Weight</b> is an actor's share of the world, half GDP and half military spending (World Bank, latest year); the gathering's weight is the sum of its members'. "adv" marks a member that grades X adversary rather than rival; "neighbour" one that shares a border with X. In view: the formed and forming gatherings and any crowd of eight or more; the smaller crowds are folded. ${GATHERINGS.length} gatherings so far, from ${fullActors.length} cards; ${SIEGE.length} actors with borders read.</p></details>`;
     el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
