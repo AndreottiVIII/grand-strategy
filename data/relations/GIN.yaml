@@ -1,0 +1,28 @@
+from: GIN
+relations:
+  # ---------- dependency ----------
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    summary: "China takes about half of Guinea's principal export, bauxite (Foreign Policy, September 2021, as cited by Wikipedia). The figure dates from 2021 and is not re-verified; the value is a share of bauxite exports."
+    since: '2021-09-08'
+    until: null
+    value: 0.5
+    unit: share_of_bauxite_exports_to_china
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://foreignpolicy.com/2021/09/08/china-guinea-interference-relations-alpha-conde-xi-jinping/", title: "China Is OK With Interfering in Guinea's Internal Affairs", publisher: "Foreign Policy", date: "2021-09-08", tier: 3}
+
+  - to: CHN
+    layer: dependency
+    type: investment
+    summary: "The Simandou iron-ore project, 75% Chinese-owned, began production in December 2025 after decades of delay (AP, January 2026). The value is the Chinese ownership share of the project, not a Guinean dependency figure; the railway and port are not verified here."
+    since: '2025-12'
+    until: null
+    value: 0.75
+    unit: share_chinese_ownership_simandou
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.pbs.org/newshour/amp/world/guineas-junta-leader-wins-presidency-in-first-election-since-2021-coup", title: "Guinea's junta leader wins presidency in first election since 2021 coup", publisher: "PBS NewsHour (Associated Press)", date: "2026-01-05", tier: 3}

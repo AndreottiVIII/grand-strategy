@@ -25,3 +25,26 @@ relations:
     confidence: C
     sources:
       - {url: "http://voanews.com/english/archive/2007-01/2007-01-31-voa53.cfm", title: "China, Cameroon Sign Economic Agreements", publisher: "Voice of America", date: "2007-01-31", tier: 3}
+
+  # ---------- action ----------
+  - to: CHN
+    layer: action
+    type: agreement
+    summary: "Cameroon and China signed economic agreements in January 2007. The loans in the dependency row above are the sums these agreements gave (VOA)."
+    since: '2007-01-31'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "http://voanews.com/english/archive/2007-01/2007-01-31-voa53.cfm", title: "China, Cameroon Sign Economic Agreements", publisher: "Voice of America", date: "2007-01-31", tier: 3}
+
+  - to: nsa-boko-haram
+    layer: action
+    type: incident
+    summary: "The Institute for Security Studies reports in July 2021 that ISWAP takes aim at the state in Cameroon. Headline read only; the article body was not read, so confidence is C."
+    since: '2021-07-22'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://issafrica.org/iss-today/iswap-takes-aim-at-the-state-in-cameroon", title: "ISWAP takes aim at the state in Cameroon", publisher: "Institute for Security Studies (ISS)", date: "2021-07-22", tier: 2}

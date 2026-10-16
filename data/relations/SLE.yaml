@@ -1,0 +1,49 @@
+from: SLE
+relations:
+  # ---------- objective ----------
+  - to: org-ecowas
+    layer: objective
+    type: influence_goal
+    summary: "Bio chairs the ECOWAS Authority of Heads of State from June 2025, succeeding Bola Tinubu for a one-year term. The chair is the regional platform the government uses to show weight beyond its size; the reading is ours."
+    since: '2025-06-22'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://statehouse.gov.sl/2025/06/23/sierra-leones-president-julius-maada-bio-assumes-ecowas-chairmanship-making-history-for-sierra-leone-3/", title: "Sierra Leone's President Julius Maada Bio Assumes ECOWAS Chairmanship, Making History For Sierra Leone", publisher: "Office of the President of Sierra Leone", date: "2025-06-23", tier: 1}
+      - {url: "https://citinewsroom.com/2025/06/sierra-leones-maada-bio-takes-over-from-tinubu-as-ecowas-chair/", title: "Sierra Leone's Maada Bio takes over from Tinubu as ECOWAS chair", publisher: "Citi Newsroom", date: "2025-06", tier: 3}
+
+  # ---------- alignment ----------
+  - to: LBR
+    layer: alignment
+    type: treaty
+    summary: "A non-aggression pact with Liberia, signed in 2007. A non-aggression pact is not a defence alliance, so this is recorded as a treaty, not as an alignment in the security sense. The Mano River Union membership is left to the dataset."
+    since: '2007'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://2009-2017.state.gov/r/pa/ei/bgn/6618.htm", title: "Foreign relations of Liberia (US State Department record, non-aggression pact 2007)", publisher: "US Department of State (archived)", date: "2007", tier: 1}
+
+  # ---------- action ----------
+  - to: GBR
+    layer: action
+    type: agreement
+    summary: "Bilateral investment treaty between Sierra Leone and the United Kingdom, signed in 2000. The text and ratification status were not checked in this pass."
+    since: '2000'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://investmentpolicy.unctad.org/international-investment-agreements/treaties/bit/2903/sierra-leone---united-kingdom-bit-2000-", title: "Sierra Leone - United Kingdom BIT (2000)", publisher: "UNCTAD Investment Policy Hub", date: "2000", tier: 1}
+
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "Sierra Leone joined the Partnership for Atlantic Cooperation on 8 December 2023, welcomed by the US State Department's science diplomacy account. A partnership welcome, not a treaty; the 2025 visa restrictions and aid cuts are not sourced in this pass."
+    since: '2023-12-08'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://twitter.com/SciDiplomacyUSA/status/1733233450260304130", title: "The Partnership for Atlantic Cooperation welcomes Sierra Leone as its newest member", publisher: "US Department of State, Science Diplomacy (official account)", date: "2023-12-08", tier: 1}

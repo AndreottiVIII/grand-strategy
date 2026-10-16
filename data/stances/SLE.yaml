@@ -1,0 +1,48 @@
+actor: SLE
+stances:
+  - toward: GBR
+    grade: partner
+    trend: stable
+    bond: affinity
+    since: '1961-04-27'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Diplomatic relations since 27 April 1961 (Commonwealth Relations Office Year Book, per Wikipedia's citation); a bilateral investment treaty signed in 2000 (UNCTAD record). Transactional cooperation with no alignment: partner. Bond affinity is our reading of the Commonwealth and former-colonial tie; no source read in this pass names it. Gap: the current UK aid and high commission arrangements, and the UK's stance on the 2023 events, are not verified."
+    sources:
+      - {url: "https://investmentpolicy.unctad.org/international-investment-agreements/treaties/bit/2903/sierra-leone---united-kingdom-bit-2000-", title: "Sierra Leone - United Kingdom BIT (2000)", publisher: "UNCTAD Investment Policy Hub", date: "2000", tier: 1}
+      - {url: "https://books.google.com/books?id=jOqLi_6ER8IC&q=John+Baines+Johnston&pg=PA79", title: "The Commonwealth Relations Office Year Book, Volume 13", publisher: "Commonwealth Relations Office (via Google Books)", date: "1961-04-27", tier: 1}
+
+  - toward: USA
+    grade: partner
+    trend: stable
+    bond: none
+    since: '2023-12-08'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Sierra Leone joined the Partnership for Atlantic Cooperation on 8 December 2023, welcomed in a US State Department science diplomacy post: a transactional, non-aligned partnership. Bond none is our reading. Diplomatic relations date from 27 April 1961 (history.state.gov). Gap: the 2025 US visa restrictions and aid cuts were in the brief but no source was read in this pass, so the trend stays stable and unverified."
+    sources:
+      - {url: "https://twitter.com/SciDiplomacyUSA/status/1733233450260304130", title: "The Partnership for Atlantic Cooperation welcomes Sierra Leone as its newest member", publisher: "US Department of State, Science Diplomacy (official account)", date: "2023-12-08", tier: 1}
+      - {url: "https://history.state.gov/countries/sierra-leone", title: "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Sierra Leone", publisher: "US Department of State, Office of the Historian", date: "1961-04-27", tier: 1}
+
+  - toward: CHN
+    grade: partner
+    trend: stable
+    bond: none
+    since: '1971-07-29'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Diplomatic relations since 29 July 1971, as stated by the Chinese state agency (official statement, tier 1 for the statement only). Transactional cooperation with no alignment: partner. Bond none is our reading. Gap: the fishing harbour and the trade figures named in the brief were not sourced in this pass; no row is written for them."
+    sources:
+      - {url: "https://www.china.org.cn/english/features/focac/183425.htm", title: "Sierra Leone (FOCAC country profile, state agency, official statement)", publisher: "China.org.cn", date: "1971-07-29", tier: 1}
+
+  - toward: LBR
+    grade: partner
+    trend: stable
+    bond: kin
+    since: '2007'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "A non-aggression pact signed in 2007 (US State Department record of Liberia's foreign relations) and a 2011 diplomatic description of relations as 'cordial' (IRIN). Non-aggression without a defence clause is partner. The kin bond comes from the brief's framing through the Mano River Union; no source read in this pass names kinship, so treat it as unverified. Gap: Mano River Union membership is not sourced here and is left to the dataset."
+    sources:
+      - {url: "https://2009-2017.state.gov/r/pa/ei/bgn/6618.htm", title: "Foreign relations of Liberia (US State Department record, non-aggression pact 2007)", publisher: "US Department of State (archived)", date: "2007", tier: 1}
+      - {url: "http://irinnews.org/Report.aspx?ReportID=7282", title: "New ambassador to Sierra Leone named (IRIN, relations described as cordial)", publisher: "IRIN", date: "2011-01", tier: 3}

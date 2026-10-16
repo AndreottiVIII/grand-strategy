@@ -7,8 +7,60 @@ coords:
 - -13.24
 - 8.49
 seat: Freetown
-regions:
-- world
-card: stub
+regions: [west-africa]
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the Bio government in control after the November 2023 armoury attack in Freetown, which the government called a foiled coup attempt. Reported arrests of army officials point to a threat inside the security forces."
+      confidence: C
+      sources:
+        - {url: "https://thisdaylive.com/index.php/2023/11/27/sierra-leone-imposes-nationwide-curfew-after-failed-coup", title: "Sierra Leone Imposes Nationwide Curfew after Failed Coup", publisher: "ThisDay", date: 2023-11-27, tier: 3}
+        - {url: "https://northafricapost.com/?p=73333", title: "Sierra Leone: 13 army officials arrested, 34 wanted in wake of 'attempted coup'", publisher: "North Africa Post", date: 2023, tier: 3}
+    - rank: 2
+      text: "Lead ECOWAS: Bio became chair of the ECOWAS Authority of Heads of State on 22 June 2025 for a one-year term, succeeding Bola Tinubu."
+      confidence: B
+      sources:
+        - {url: "https://statehouse.gov.sl/2025/06/23/sierra-leones-president-julius-maada-bio-assumes-ecowas-chairmanship-making-history-for-sierra-leone-3/", title: "Sierra Leone's President Julius Maada Bio Assumes ECOWAS Chairmanship, Making History For Sierra Leone", publisher: "Office of the President of Sierra Leone", date: 2025-06-23, tier: 1}
+        - {url: "https://citinewsroom.com/2025/06/sierra-leones-maada-bio-takes-over-from-tinubu-as-ecowas-chair/", title: "Sierra Leone's Maada Bio takes over from Tinubu as ECOWAS chair", publisher: "Citi Newsroom", date: 2025-06, tier: 3}
+    - rank: 3
+      text: "Keep the Western partnerships open: a bilateral investment treaty with the United Kingdom signed in 2000, and US welcome into the Partnership for Atlantic Cooperation in December 2023."
+      confidence: B
+      sources:
+        - {url: "https://investmentpolicy.unctad.org/international-investment-agreements/treaties/bit/2903/sierra-leone---united-kingdom-bit-2000-", title: "Sierra Leone - United Kingdom BIT (2000)", publisher: "UNCTAD Investment Policy Hub", date: 2000, tier: 1}
+        - {url: "https://twitter.com/SciDiplomacyUSA/status/1733233450260304130", title: "The Partnership for Atlantic Cooperation welcomes Sierra Leone as its newest member", publisher: "US Department of State, Science Diplomacy (official account)", date: 2023-12-08, tier: 1}
+
+  means:
+    - domain: diplomatic
+      text: "The ECOWAS chair: a regional platform that gives Freetown a voice beyond its size, held by Bio since June 2025."
+      confidence: B
+      sources:
+        - {url: "https://statehouse.gov.sl/2025/06/23/sierra-leones-president-julius-maada-bio-assumes-ecowas-chairmanship-making-history-for-sierra-leone-3/", title: "Sierra Leone's President Julius Maada Bio Assumes ECOWAS Chairmanship, Making History For Sierra Leone", publisher: "Office of the President of Sierra Leone", date: 2025-06-23, tier: 1}
+    - domain: economic
+      text: "The 2000 bilateral investment treaty with the United Kingdom, the legal frame for British investment. Its use in practice is not verified in this pass."
+      confidence: B
+      sources:
+        - {url: "https://investmentpolicy.unctad.org/international-investment-agreements/treaties/bit/2903/sierra-leone---united-kingdom-bit-2000-", title: "Sierra Leone - United Kingdom BIT (2000)", publisher: "UNCTAD Investment Policy Hub", date: 2000, tier: 1}
+
+  constraints:
+    - text: "The security forces are the first constraint: after the November 2023 armoury attack, reported arrests included 13 army officials, with 34 more wanted. A regime that depends on the army must manage a force it has had to police."
+      confidence: C
+      sources:
+        - {url: "https://northafricapost.com/?p=73333", title: "Sierra Leone: 13 army officials arrested, 34 wanted in wake of 'attempted coup'", publisher: "North Africa Post", date: 2023, tier: 3}
+    - text: "ECOWAS norms bind the regime: the bloc condemned the plot, voiced 'zero tolerance for unconstitutional change of government', and sent a solidarity mission to Freetown. Any move that looks like a rule-bend invites regional pressure."
+      confidence: B
+      sources:
+        - {url: "https://blueprint.ng/coup-in-sierra-leone-we-wont-tolerate-plot-to-obstruct-peace-ecowas-warns-nationwide-curfew-shuts-down-flights/", title: "Coup in Sierra Leone: We won't tolerate plot to obstruct peace, ECOWAS warns, nationwide curfew shuts down flights", publisher: "Blueprint", date: 2023, tier: 3}
+
+  paradoxes:
+    - text: "Bio now chairs ECOWAS, the bloc whose zero-tolerance rule against unconstitutional change it invoked over Sierra Leone itself in 2023. The regional role lends credibility that the domestic security problem keeps testing."
+      confidence: C
+      sources:
+        - {url: "https://blueprint.ng/coup-in-sierra-leone-we-wont-tolerate-plot-to-obstruct-peace-ecowas-warns-nationwide-curfew-shuts-down-flights/", title: "Coup in Sierra Leone: We won't tolerate plot to obstruct peace, ECOWAS warns, nationwide curfew shuts down flights", publisher: "Blueprint", date: 2023, tier: 3}
+        - {url: "https://statehouse.gov.sl/2025/06/23/sierra-leones-president-julius-maada-bio-assumes-ecowas-chairmanship-making-history-for-sierra-leone-3/", title: "Sierra Leone's President Julius Maada Bio Assumes ECOWAS Chairmanship, Making History For Sierra Leone", publisher: "Office of the President of Sierra Leone", date: 2025-06-23, tier: 1}
+
+  reading: |
+    Sierra Leone under Bio turns a fragile domestic position into regional standing: the ECOWAS chair since June 2025 and a Western investment frame give it a voice beyond its size. The November 2023 armoury attack shows that the main constraint is at home, inside the security forces, and that the regional rules it now chairs apply to it too. Not verified in this pass: the UN Security Council seat, the 2023 election dispute, the 2025 US visa and aid cuts, the Chinese fishing harbour, Guinea and Yenga, Liberia beyond the 2007 pact, and the kush epidemic.

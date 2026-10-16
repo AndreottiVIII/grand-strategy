@@ -1,14 +1,61 @@
 id: GIN
 name: Guinea
 type: state
-iso2: gn
-wikipedia: https://en.wikipedia.org/wiki/Guinea
 coords:
 - -13.71
 - 9.51
+iso2: gn
+wikipedia: https://en.wikipedia.org/wiki/Guinea
 seat: Conakry
-regions:
-- world
-card: stub
+regions: [west-africa]
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the transition inside the state that the 2021 coup began. A constitution approved by referendum in September 2025 dropped the limits on junta members standing; Gen. Mamadi Doumbouya won the 28 December 2025 presidential election with 86.7% of the vote (preliminary 86.72%), a seven-year mandate upheld by the Supreme Court on 4 January 2026. The main opposition was largely excluded; Alpha Conde and Cellou Dalein Diallo are in exile."
+      confidence: C
+      sources:
+        - {url: "https://www.pbs.org/newshour/amp/world/guineas-junta-leader-wins-presidency-in-first-election-since-2021-coup", title: "Guinea's junta leader wins presidency in first election since 2021 coup", publisher: "PBS NewsHour (Associated Press)", date: 2026-01-05, tier: 3}
+        - {url: "https://citizen.digital/article/guinea-coup-leader-doumbouya-wins-presidential-election-results-show-n375114", title: "Guinea coup leader Doumbouya wins presidential election, results show", publisher: "Citizen Digital", date: 2025-12, tier: 3}
+    - rank: 2
+      text: "Turn bauxite and iron ore into state revenue. Guinea is the world's largest bauxite exporter; the Simandou iron-ore project, 75% Chinese-owned, began production in December 2025 after decades of delay. The railway and port are not verified in this pass."
+      confidence: C
+      sources:
+        - {url: "https://www.pbs.org/newshour/amp/world/guineas-junta-leader-wins-presidency-in-first-election-since-2021-coup", title: "Guinea's junta leader wins presidency in first election since 2021 coup", publisher: "PBS NewsHour (Associated Press)", date: 2026-01-05, tier: 3}
+
+  means:
+    - domain: military
+      text: "The army that seized power on 5 September 2021 holds the state. Early measures included a ban on foreign travel for government officials."
+      confidence: B
+      sources:
+        - {url: "https://www.state.gov/on-the-military-seizure-of-power-in-guinea/", title: "On the Military Seizure of Power in Guinea", publisher: "U.S. Department of State", date: 2021-09-05, tier: 1}
+        - {url: "https://www.reuters.com/world/africa/uneasy-calm-guinea-after-president-condes-apparent-ouster-2021-09-06/", title: "Guinea coup leader bars foreign travel for government officials (as cited by Wikipedia)", publisher: "Reuters", date: 2021-09-06, tier: 3}
+    - domain: economic
+      text: "Bauxite is the main export and China's share is large: China takes about half of Guinea's principal export (Foreign Policy, September 2021, as cited by Wikipedia), and Guinea is the world's largest bauxite exporter (AP, January 2026). Simandou adds iron ore from December 2025, with a 75% Chinese stake. The 2021 share is not re-verified."
+      confidence: C
+      sources:
+        - {url: "https://foreignpolicy.com/2021/09/08/china-guinea-interference-relations-alpha-conde-xi-jinping/", title: "China Is OK With Interfering in Guinea's Internal Affairs", publisher: "Foreign Policy", date: 2021-09-08, tier: 3}
+        - {url: "https://www.pbs.org/newshour/amp/world/guineas-junta-leader-wins-presidency-in-first-election-since-2021-coup", title: "Guinea's junta leader wins presidency in first election since 2021 coup", publisher: "PBS NewsHour (Associated Press)", date: 2026-01-05, tier: 3}
+
+  constraints:
+    - text: "Regional isolation: ECOWAS suspended Guinea after the coup of 5 September 2021. Whether the suspension was lifted after the December 2025 election is not verified in this pass."
+      confidence: C
+      sources:
+        - {url: "https://www.bbc.com/news/world-africa-58487925", title: "West African leaders suspend Guinea from Ecowas following coup", publisher: "BBC News", date: 2021-09-09, tier: 3}
+    - text: "Western pressure: the US condemned the coup and warned against extra-constitutional measures (State Department, 5 September 2021). The US aid cut and any EU measures are not verified in this pass."
+      confidence: B
+      sources:
+        - {url: "https://www.state.gov/on-the-military-seizure-of-power-in-guinea/", title: "On the Military Seizure of Power in Guinea", publisher: "U.S. Department of State", date: 2021-09-05, tier: 1}
+
+  paradoxes:
+    - text: "The 2025 vote turns the coup into a mandate, but the constitution that let junta members run passed after the main opposition was excluded. The legitimacy the junta needs from ECOWAS and Western partners rests on that process."
+      confidence: C
+      sources:
+        - {url: "https://www.pbs.org/newshour/amp/world/guineas-junta-leader-wins-presidency-in-first-election-since-2021-coup", title: "Guinea's junta leader wins presidency in first election since 2021 coup", publisher: "PBS NewsHour (Associated Press)", date: 2026-01-05, tier: 3}
+        - {url: "https://citizen.digital/article/guinea-coup-leader-doumbouya-wins-presidential-election-results-show-n375114", title: "Guinea coup leader Doumbouya wins presidential election, results show", publisher: "Citizen Digital", date: 2025-12, tier: 3}
+
+  reading: |
+    Guinea's grand strategy is to turn the 2021 coup into a constitutional mandate and to live off bauxite and, from December 2025, Simandou iron ore, with China as the main owner of the new mine and a major buyer of the old export. Its weak point is the region: ECOWAS suspended it after the coup, and no source found for this card shows the suspension lifted. Not verified for this card: Mali and the AES, Russia and Rusal, the US aid cut, the Simandou railway and port, and the links to Sierra Leone and Senegal beyond the 1990s refugee and ECOMOG record.

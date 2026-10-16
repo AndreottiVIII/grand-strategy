@@ -3,12 +3,59 @@ name: Liberia
 type: state
 iso2: lr
 wikipedia: https://en.wikipedia.org/wiki/Liberia
-coords:
-- -10.8
-- 6.31
+coords: [-10.8, 6.31]
 seat: Monrovia
-regions:
-- world
-card: stub
+regions: [west-africa]
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Prove the Boakai government's reform course by building the war and economic crimes court. Boakai signed the decree creating the Office of the War and Economic Crimes Court in May 2024. Funding has lagged the pledge: about USD 800,000 was disbursed in the fiscal year to December 2025, against USD 2m promised a year; in May 2026 the government announced a USD 2m annual appropriation, paid in quarterly instalments of USD 500,000."
+      confidence: C
+      sources:
+        - {url: "https://www.africanews.com/amp/2024/05/03/liberia-boakai-signs-decree-for-war-crimes-tribunal/", title: "Liberia: Boakai signs decree for war crimes tribunal", publisher: "Africanews", date: 2024-05-03, tier: 3}
+        - {url: "https://newnarratives.org/?p=9779", title: "More Than Two Years After Boakai's Promise, War Crimes Court Faces Its Biggest Test", publisher: "New Narratives", date: "2026", tier: 4}
+    - rank: 2
+      text: "Use the UN Security Council seat for 2026-27 to act beyond its size. Liberia won the seat on 3 June 2025 with 181 of 187 votes, unopposed for the African Group seat; the term starts on 1 January 2026, and Liberia presides over the Council in December 2026."
+      confidence: B
+      sources:
+        - {url: "https://www.emansion.gov.lr/node/8701", title: "Liberia Elected to United Nations Security Council", publisher: "Executive Mansion, Republic of Liberia", date: "2025-06", tier: 1}
+        - {url: "https://allafrica.com/stories/202506040040.html", title: "Liberia Returns to UN Security Council After 62 Years With Overwhelming Victory", publisher: "allAfrica", date: 2025-06-04, tier: 3}
+        - {url: "https://allafrica.com/stories/202606110321.html", title: "Liberia to Preside Over UNSC in December", publisher: "allAfrica", date: 2026-06-11, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "The UN Security Council seat for 2026-27 and the presidency of the Council in December 2026: the one instrument on the diplomatic side that a state of its size does not usually hold. Memberships in the African Union and ECOWAS sit in the datasets and are not repeated here."
+      confidence: B
+      sources:
+        - {url: "https://www.emansion.gov.lr/node/8701", title: "Liberia Elected to United Nations Security Council", publisher: "Executive Mansion, Republic of Liberia", date: "2025-06", tier: 1}
+        - {url: "https://allafrica.com/stories/202606110321.html", title: "Liberia to Preside Over UNSC in December", publisher: "allAfrica", date: 2026-06-11, tier: 3}
+    - domain: economic
+      text: "The ship registry: the Liberian flag, managed by the Liberian International Ship & Corporate Registry (LISCR), a US-based company, passed 300 million gross tons in June 2026 and is now the world's largest. The state keeps little of it: maritime revenue is put at about USD 30m in 2026, a small share of the national budget."
+      confidence: C
+      sources:
+        - {url: "https://allafrica.com/stories/202607220279.html", title: "Liberia: Researcher George Tengbeh Calls for Transparency, Jobs As Liberia Leads World's Largest Ship Registry", publisher: "allAfrica", date: 2026-07-22, tier: 3}
+        - {url: "https://blog.gettransport.com/fi/trends-in-logistic/largest-ship-registries-flag-states-2026/", title: "Largest ship registries and flag states 2026", publisher: "GetTransport (blog)", date: "2026", tier: 4}
+
+  constraints:
+    - text: "Donor leverage is thin and the main outside donor has cooled. A July 2025 allAfrica report says the United States appears less enthusiastic about the war court, particularly under Trump, and the court's budget sits below its pledge (see objective 1)."
+      confidence: C
+      sources:
+        - {url: "https://allafrica.com/stories/202507210249.html", title: "Liberia: US enthusiasm for the war crimes court appears to cool", publisher: "allAfrica", date: 2025-07-21, tier: 3}
+    - text: "The flag brings the state little cash. Maritime revenue of about USD 30m in 2026 is a small share of the budget, so the reform agenda (the court, the Council seat) runs on a thin budget and on donors."
+      confidence: C
+      sources:
+        - {url: "https://allafrica.com/stories/202607220279.html", title: "Liberia: Researcher George Tengbeh Calls for Transparency, Jobs As Liberia Leads World's Largest Ship Registry", publisher: "allAfrica", date: 2026-07-22, tier: 3}
+
+  paradoxes:
+    - text: "The founding tie with the United States gives Liberia its profile, a flag run from American soil, and the hope of US money for the war court. The same tie was tested in July 2025, when Trump's remarks to Boakai at the White House summit, and the cooling US line on the court, showed how little the tie guarantees."
+      sources:
+        - {url: "https://www.aljazeera.com/amp/news/2025/7/10/such-good-english-liberians-confused-angry-at-trump-comments-to-boakai", title: "'Such good English': Liberians confused, angry at Trump comments to Boakai", publisher: "Al Jazeera", date: 2025-07-10, tier: 3}
+        - {url: "https://allafrica.com/stories/202507210249.html", title: "Liberia: US enthusiasm for the war crimes court appears to cool", publisher: "allAfrica", date: 2025-07-21, tier: 3}
+        - {url: "https://2009-2017.state.gov/r/pa/ei/bgn/6618.htm", title: "Liberia (background note, US State Department)", publisher: "US State Department", date: "2017", tier: 1}
+
+  reading: |
+    Liberia's grand strategy is to turn the reputation of an old, American-founded state into standing: a Security Council seat for 2026-27, a war-crimes court to prove that its civil wars are being answered, and a flag registry that is now the world's largest but earns the state little. The American tie is both its profile and its constraint: the registry is managed from the United States, the court needs outside money, and the July 2025 episode and the cooling donor line show how little that tie guarantees. Not verified for this card: iron ore and rubber, the neighbours (Sierra Leone, Guinea, Cote d'Ivoire, the Mano River Union), China's present role, ECOWAS, and the court's 2026 funding after the May appropriation.
