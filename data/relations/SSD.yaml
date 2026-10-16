@@ -1,0 +1,117 @@
+from: SSD
+relations:
+  # ---------- objective ----------
+  - to: UGA
+    layer: objective
+    type: influence_goal
+    summary: "Juba's aim, inferred from Uganda's own account, is to keep Ugandan troops in Juba as the regime's protection: Kampala said the UPDF deployed to save Kiir and Juba in March 2025. The purpose is our inference (C)."
+    since: '2025-03-11'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://www.radiotamazuj.org/en/news/article/ugandas-army-chief-says-updf-has-deployed-to-save-kiir-juba", title: "Uganda's Army Chief says UPDF has deployed to save Kiir, Juba", publisher: "Radio Tamazuj", date: "2025-03", tier: 3}
+      - {url: "https://www.aljazeera.com/amp/news/2025/3/11/uganda-deploys-troops-in-south-sudan-as-civil-war-fears-grow", title: "Uganda deploys troops in South Sudan as civil war fears grow", publisher: "Al Jazeera", date: "2025-03-11", tier: 3}
+
+  # ---------- alignment ----------
+  - to: UGA
+    layer: alignment
+    type: security_guarantee
+    summary: "A military pact with Uganda, originally against the LRA: Ugandan special forces have been in Juba since March 2025, which Juba calls technical and support units under that pact. No formal guarantee instrument was found."
+    since: '2025-03-11'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://www.aljazeera.com/amp/news/2025/3/11/uganda-deploys-troops-in-south-sudan-as-civil-war-fears-grow", title: "Uganda deploys troops in South Sudan as civil war fears grow", publisher: "Al Jazeera", date: "2025-03-11", tier: 3}
+      - {url: "https://www.sudanspost.com/south-sudan-confirms-ugandan-troop-deployment-in-juba/", title: "South Sudan confirms Ugandan troop deployment in Juba", publisher: "Sudans Post", date: "2025-03", tier: 4}
+
+  # ---------- dependency ----------
+  - to: SDN
+    layer: dependency
+    type: energy_export
+    summary: "Crude reaches the sea only through Sudan. The RSF reportedly collects about USD 4 a barrel of South Sudan's crude for pipeline transit, leaving Khartoum about USD 7 of the original USD 11 tariff (Sudan Tribune, September 2026)."
+    since: '2026'
+    until: null
+    value: 4
+    unit: usd_per_barrel_transit_fee_paid_to_rsf
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://sudantribune.com/?p=319333", title: "Sudan Tribune report on the RSF transit fee for South Sudan crude", publisher: "Sudan Tribune", date: "2026-09", tier: 3}
+
+  - to: ARE
+    layer: dependency
+    type: debt
+    summary: "An oil-backed loan of about EUR 12bn (USD 12.9bn) over 20 years from a UAE-linked company, repaid in crude; according to a UN panel report cited by Bloomberg, the terms were signed between December and February. Juba denied signing an oil deal. Status and disbursement are unverified; no 2026 update was found."
+    since: '2024-02'
+    until: null
+    value: 12.9
+    unit: usd_bn_oil_backed_loan_20_years
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://sudantribune.com/?p=285051", title: "South Sudan's $12 billion loan from UAE sparks public debate", publisher: "Sudan Tribune", date: "2024", tier: 3}
+      - {url: "https://www.eyeradio.org/govt-agrees-13b-uae-loan-for-20-years-of-crude-oil/", title: "Govt agrees 13b UAE loan for 20 years of crude oil", publisher: "Eye Radio", date: "2024", tier: 4}
+
+  - to: org-un
+    layer: dependency
+    type: military_presence
+    summary: "UN peacekeepers (UNMISS), with a ceiling of 12,500 uniformed troops and 2,101 police, mandate renewed to 30 April 2027 by 13 votes in favour, none against and China and Russia abstaining."
+    since: '2011'
+    until: null
+    value: 12500
+    unit: uniformed_troop_ceiling_unmiss
+    last_verified: '2026-10-12'
+    confidence: B
+    sources:
+      - {url: "https://www.globalsecurity.org/military/library/news/2026/04/mil-260430-unsc01.htm", title: "Security Council Adopts Resolution 2824 (2026), Extending Mandate of United Nations Mission in South Sudan for One Year", publisher: "GlobalSecurity.org (UN Security Council press release)", date: "2026-04-30", tier: 1}
+
+  # ---------- action ----------
+  - to: ARE
+    layer: action
+    type: visit
+    summary: "Kiir made three trips to the UAE in 2025 (February, June and October) for investment and infrastructure, the last to Abu Dhabi in October."
+    since: '2025-02'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://www.radiotamazuj.org/en/news/article/south-sudans-kiir-travels-to-uae-for-third-time-this-year", title: "South Sudan's Kiir travels to UAE for third time this year", publisher: "Radio Tamazuj", date: "2025-10", tier: 3}
+
+  - to: USA
+    layer: action
+    type: sanction
+    summary: "Secretary of State Rubio cancelled visas for all South Sudanese passport holders and stopped new issuance on 5 April 2025, after Juba refused a deportee it said was Congolese; Juba then accepted him. In May 2025 targeted visa restrictions were added on transitional-government figures."
+    since: '2025-04-05'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/4/7/why-has-trump-revoked-all-south-sudanese-visas", title: "Why has Trump revoked all South Sudanese visas?", publisher: "Al Jazeera", date: "2025-04-07", tier: 3}
+      - {url: "https://www.africanews.com/amp/2025/04/06/us-to-revoke-all-visas-held-by-south-sudanese-passport-holders/", title: "US to revoke all visas held by South Sudanese passport holders", publisher: "Africanews", date: "2025-04-06", tier: 3}
+      - {url: "https://capitalfm.africa/south-sudan-to-accept-man-deported-from-us-in-bid-to-defuse-visa-row/", title: "South Sudan to accept man deported from US in bid to defuse visa row", publisher: "Capital FM", date: "2025-04-08", tier: 3}
+
+  - to: SDN
+    layer: action
+    type: agreement
+    summary: "After the RSF seized Heglig on 8 December 2025, Juba sent troops to the field under a tripartite arrangement that kept the oilfield out of combat; a separate deal announced on 17 December aimed to restart Heglig and Bamboo. The parties to the tripartite arrangement and whether operations resumed are not confirmed in the sources read."
+    since: '2025-12'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://theeastafrican.co.ke/tea/business-tech/juba-to-resume-oil-production-after-landmark-security-deal-5311552", title: "Juba to resume oil production after landmark security deal", publisher: "The East African", date: "2025-12", tier: 3}
+      - {url: "https://www.rigzone.com/news/wire/south_sudan_oil_exports_at_risk-10-dec-2025-182503-article/?rss=true", title: "South Sudan Oil Exports at Risk", publisher: "Rigzone (wire)", date: "2025-12-10", tier: 3}
+
+  - to: org-un
+    layer: action
+    type: un_vote
+    summary: "The Security Council renewed the South Sudan arms embargo and sanctions to 31 May 2027 by nine votes, with six abstentions (China, Russia, DRC, Liberia, Pakistan, Somalia) and none against. Washington pressed for the renewal; Beijing and Moscow want the restrictions lifted."
+    since: '2026-05-29'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://aa.com.tr/en/politics/un-security-council-renews-south-sudan-sanctions/3951589", title: "UN Security Council renews South Sudan sanctions", publisher: "Anadolu Agency", date: "2026-05-29", tier: 3}
+      - {url: "https://www.radiotamazuj.org/en/news/article/un-security-council-renews-south-sudan-arms-embargo", title: "UN Security Council renews South Sudan arms embargo", publisher: "Radio Tamazuj", date: "2026-05-29", tier: 3}

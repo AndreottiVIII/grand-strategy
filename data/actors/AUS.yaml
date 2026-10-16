@@ -1,14 +1,824 @@
 id: AUS
 name: Australia
+short: Australia
 type: state
-iso2: au
-wikipedia: https://en.wikipedia.org/wiki/Australia
+seat: Canberra
 coords:
 - 149.13
 - -35.29
-seat: Canberra
+iso2: au
+wikipedia: https://en.wikipedia.org/wiki/Australia
 regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+- southeast-asia-oceania
+card: full
+tier: protagonist
+last_verified: '2026-10-12'
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: 'Keep the United States committed to Australia''s defence and present in the region, and bind it with things it cannot easily withdraw: AUKUS Pillar 1 (the Pentagon''s review of December 2025 endorsed the sale of at least three Virginia-class boats from 2032), the critical-minerals framework signed with Trump on 20 Oct 2025, and the AUSMIN process (Washington, 8 Dec 2025).'
+    confidence: B
+    sources:
+    - url: https://courtney.house.gov/media-center/press-releases/ranking-member-courtney-pentagons-review-fully-endorses-aukus
+      title: 'Ranking Member Courtney: Pentagon''s review fully endorses AUKUS'
+      publisher: Office of Rep. Joe Courtney (US House of Representatives)
+      date: 2025-12
+      tier: 1
+    - url: https://gulfnews.com/world/oceania/after-review-pentagon-confirms-submarine-sales-to-australia-1.500369714
+      title: After review, Pentagon confirms submarine sales to Australia
+      publisher: Gulf News (AFP)
+      date: 2025-12
+      tier: 3
+    - url: https://www.scmp.com/news/asia/australasia/article/3335291/aukus-submarine-deal-move-full-steam-ahead-after-surviving-trump-review
+      title: AUKUS submarine deal to move full steam ahead after surviving Trump review
+      publisher: South China Morning Post
+      date: 2025-12
+      tier: 3
+    - url: https://www.reuters.com/world/asia-pacific/australias-albanese-discuss-rare-earths-security-first-trump-summit-2025-10-20/
+      title: Trump, Australia's Albanese sign critical minerals agreement to counter China
+      publisher: Reuters
+      date: '2025-10-21'
+      tier: 3
+    - url: https://www.industry.gov.au/publications/united-states-australia-framework-securing-supply-mining-and-processing-critical-minerals-and-rare-earths
+      title: United States-Australia Framework for Securing of Supply in the Mining and Processing of Critical Minerals and Rare Earths
+      publisher: Department of Industry, Science and Resources (Australia)
+      date: '2025-10-21'
+      tier: 1
+    - url: https://www.minister.defence.gov.au/statements/2025-12-09/joint-fact-sheet-australia-us-ministerial-consultations-ausmin-2025-0
+      title: Joint Fact Sheet on Australia-U.S. Ministerial Consultations (AUSMIN) 2025
+      publisher: Australian Department of Defence (ministers)
+      date: '2025-12-09'
+      tier: 1
+  - rank: 2
+    text: 'Build, in parallel, a ring of treaty partners that does not depend on Washington: Papua New Guinea (Pukpuk, signed 6 Oct 2025, in force July 2026), Fiji (Ocean of Peace Alliance, 6 Jul 2026), Tuvalu (Falepili Union), Nauru, Vanuatu (Nakamal, 29 Jun 2026), Indonesia (Treaty on Common Security, 6 Feb 2026) and the UK (Geelong Treaty, 26 Jul 2025), with Japan, the Philippines, Singapore and India as access and industrial partners.'
+    confidence: A
+    sources:
+    - url: https://www.pm.gov.au/media/joint-communique-papua-new-guinea-and-australia-mutual-defence-treaty
+      title: Joint communique - Papua New Guinea and Australia on a Mutual Defence Treaty
+      publisher: Prime Minister of Australia (joint communique)
+      date: '2025-09-17'
+      tier: 1
+    - url: https://www.aph.gov.au/About_Parliament/Parliamentary_departments/Parliamentary_Library/Research/FlagPost/2025/December/StrengtheningAusPNGdefenceties
+      title: Strengthening Australia-PNG Defence Ties
+      publisher: Parliamentary Library of Australia (FlagPost)
+      date: 2025-12
+      tier: 1
+    - url: https://www.minister.defence.gov.au/media-releases/2026-07-06/australia-fiji-sign-historic-vuvale-union-ocean-peace-alliance
+      title: Australia and Fiji sign historic Vuvale Union and Ocean of Peace Alliance
+      publisher: Australian Department of Defence (ministers)
+      date: '2026-07-06'
+      tier: 1
+    - url: https://www.dfat.gov.au/countries/fiji/ocean-peace-alliance-veitacini-treaty
+      title: Ocean of Peace Alliance (Veitacini Treaty)
+      publisher: Department of Foreign Affairs and Trade (Australia)
+      date: '2026-07-06'
+      tier: 1
+    - url: https://www.pm.gov.au/media/entry-force-historic-australia-tuvalu-falepili-union
+      title: Entry into force of historic Australia-Tuvalu Falepili Union
+      publisher: Prime Minister of Australia
+      date: '2024-08-28'
+      tier: 1
+    - url: https://www.foreignminister.gov.au/minister/penny-wong/media-release/vanuatu-and-australia-sign-nakamal-agreement
+      title: Vanuatu and Australia sign Nakamal Agreement
+      publisher: Department of Foreign Affairs and Trade (Foreign Minister)
+      date: '2026-06-29'
+      tier: 1
+    - url: https://pina.com.fj/2024/12/09/australia-gains-effective-veto-over-nauru-security-pact/
+      title: Australia gains effective veto over Nauru security pact
+      publisher: PINA (Pacific Islands News Association)
+      date: '2024-12-09'
+      tier: 3
+    - url: https://www.pm.gov.au/media/australia-and-indonesia-sign-historic-security-treaty
+      title: Australia and Indonesia sign historic security treaty
+      publisher: Prime Minister of Australia
+      date: 2026-02
+      tier: 1
+    - url: https://wtop.com/australia/2026/02/leaders-of-indonesia-and-australia-sign-a-new-security-treaty-to-affirm-deeper-ties/
+      title: Leaders of Indonesia and Australia sign a new security treaty to affirm deeper ties
+      publisher: AP via WTOP
+      date: 2026-02
+      tier: 3
+    - url: https://www.thenewdaily.com.au/news/world/2025/11/12/australia-confirms-indonesia-pact
+      title: Australia confirms Indonesia pact
+      publisher: The New Daily
+      date: 2025-11-12
+      tier: 3
+    - url: https://www.asa.gov.au/bilateral-nuclear-powered-submarine-partnership-and-collaboration-treaty
+      title: Bilateral Nuclear-Powered Submarine Partnership and Collaboration Treaty
+      publisher: Australian Submarine Agency
+      date: 2025
+      tier: 1
+    - url: https://www.globalgovernmentforum.com/uk-and-australia-sign-50-year-aukus-defence-partnership-treaty/
+      title: UK and Australia sign 50-year AUKUS defence partnership treaty
+      publisher: Global Government Forum
+      date: 2025-07-26
+      tier: 3
+  - rank: 3
+    text: 'Deny China a military or policing foothold in the south-west Pacific and on the northern approaches: vetoes over third-party security deals in the Nauru and Tuvalu treaties, a ban on foreign bases in the Vanuatu agreement, a treaty bid for the Solomon Islands against the 2022 China policing pact, and the pledge to return Port Darwin to Australian control.'
+    confidence: B
+    sources:
+    - url: https://pina.com.fj/2024/12/09/australia-gains-effective-veto-over-nauru-security-pact/
+      title: Australia gains effective veto over Nauru security pact
+      publisher: PINA (Pacific Islands News Association)
+      date: '2024-12-09'
+      tier: 3
+    - url: https://www.pm.gov.au/media/entry-force-historic-australia-tuvalu-falepili-union
+      title: Entry into force of historic Australia-Tuvalu Falepili Union
+      publisher: Prime Minister of Australia
+      date: '2024-08-28'
+      tier: 1
+    - url: https://www.local10.com/news/world/2026/06/29/a-long-awaited-australia-vanuatu-pact-blocks-china-from-building-a-military-base/
+      title: A long-awaited Australia-Vanuatu pact blocks China from building a military base
+      publisher: AP via Local 10
+      date: '2026-06-29'
+      tier: 3
+    - url: https://pina.com.fj/2026/06/02/albanese-launches-bid-for-ambitious-solomon-islands-treaty-to-counter-china/
+      title: Albanese launches bid for ambitious Solomon Islands treaty to counter China
+      publisher: PINA (Pacific Islands News Association)
+      date: '2026-06-02'
+      tier: 3
+    - url: https://pina.com.fj/2026/06/23/chinas-policing-plans-should-be-sidelined-says-top-solomons-minister/
+      title: China's policing plans should be sidelined, says top Solomons minister
+      publisher: PINA (Pacific Islands News Association)
+      date: '2026-06-23'
+      tier: 3
+    - url: https://www.caixinglobal.com/2026-01-31/canberra-reasserts-intent-to-retake-darwin-port-from-chinese-operator-102409956.html
+      title: Canberra reasserts intent to retake Darwin port from Chinese operator
+      publisher: Caixin Global
+      date: '2026-01-31'
+      tier: 3
+  - rank: 4
+    text: Keep the China trade flowing while doing so. Albanese went to Beijing on 12-18 Jul 2025 for the Annual Leaders' Meeting after Beijing had removed the barriers that cost exporters more than A$20bn a year; China is almost a third of Australia's total trade.
+    confidence: A
+    sources:
+    - url: https://www.pm.gov.au/media/visit-peoples-republic-china-8-july-2025
+      title: Visit to the People's Republic of China
+      publisher: Prime Minister of Australia
+      date: '2025-07-08'
+      tier: 1
+    - url: https://www.theweek.in/wire-updates/international/2025/07/13/fgn25-china-aus-ld-pm.html
+      title: Australian Prime Minister Anthony Albanese visits China to strengthen trade relations
+      publisher: The Week (wire)
+      date: '2025-07-13'
+      tier: 3
+    - url: https://dfat.gov.au/geo/china/china-country-brief
+      title: China country brief
+      publisher: Department of Foreign Affairs and Trade (Australia)
+      date: '2025'
+      tier: 1
+  - rank: 5
+    text: 'Rebuild the Australian Defence Force fast enough to matter before the submarines arrive: the 2026 National Defence Strategy (16 Apr 2026) lifts defence spending to 3% of GDP by 2033 on the NATO accounting method (A$14bn extra over four years, A$53bn over the decade), with eleven Mogami-class frigates (about A$10bn), 129 Redback vehicles, long-range strike and air and missile defence.'
+    confidence: B
+    sources:
+    - url: https://news.usni.org/2026/04/23/australia-to-increase-defense-spending-by-37-9b-over-next-decade
+      title: Australia to Increase Defense Spending by $37.9B Over Next Decade
+      publisher: USNI News
+      date: '2026-04-23'
+      tier: 3
+    - url: https://worldview.ranenetwork.com/content/situational-report/2026-04-16/australia-canberra-to-increase-defense-spending-to-3-of-gdp-by-2033
+      title: 'Australia: Canberra to increase defense spending to 3% of GDP by 2033'
+      publisher: RANE (Risk Assistance Network + Exchange)
+      date: '2026-04-16'
+      tier: 3
+    - url: https://www.janes.com/defence-intelligence-insights/defence-news/sea/special-report-australia-updates-defence-strategy-with-focus-on-force-modernisation-and-self-reliance
+      title: 'Special report: Australia updates defence strategy with focus on force modernisation and self-reliance'
+      publisher: Janes
+      date: 2026-04
+      tier: 3
+    - url: https://www.thenewdaily.com.au/news/politics/australian-politics/2025/08/05/australian-navy-japan-warships
+      title: Australia picks Japanese warships for navy
+      publisher: The New Daily
+      date: '2025-08-05'
+      tier: 3
+    - url: https://wtop.com/australia/2026/04/australia-and-japan-seal-6-5b-warship-deal-with-3-mogami-frigates-ordered-first/
+      title: Australia and Japan seal $6.5B warship deal with 3 Mogami frigates ordered first
+      publisher: WTOP (AP)
+      date: 2026-04
+      tier: 3
+    - url: https://www.asianmilitaryreview.com/2026/04/australia-inks-7-billion-mogami-frigate-deal-foc/
+      title: Australia inks $7 billion Mogami frigate deal
+      publisher: Asian Military Review
+      date: 2026-04
+      tier: 3
+    - url: https://www.minister.defence.gov.au/media-releases/2023-12-08/contracts-signed-infantry-fighting-vehicles
+      title: Contracts signed for Infantry Fighting Vehicles
+      publisher: Minister for Defence Industry, Australia
+      date: 2023-12-08
+      tier: 1
+    - url: https://www.army-technology.com/news/australian-government-signs-deal-for-redback-vehicles/
+      title: Australian government signs deal for Redback vehicles
+      publisher: Army Technology
+      date: 2023-12
+      tier: 3
+  - rank: 6
+    text: 'Diversify an economy tied to one customer and one supply chain: the EU free trade agreement (concluded 24 Mar 2026; 98% of exports duty free once ratified), India (ECTA and the July 2026 summit''s economic-cooperation, minerals and uranium agenda) and the Quad Critical Minerals Framework (26 May 2026).'
+    confidence: B
+    sources:
+    - url: https://www.aol.com/articles/eu-australia-agree-text-free-004816966.html
+      title: EU and Australia sign free trade pact and announce a new defense partnership
+      publisher: AP via AOL
+      date: '2026-03-24'
+      tier: 3
+    - url: https://www.wam.ae/en/article/bzd5o1y-eu-australia-strengthen-relations-with-free-trade
+      title: EU, Australia strengthen relations with Free Trade Agreement
+      publisher: WAM (UAE state news agency)
+      date: 2026-03
+      tier: 3
+    - url: https://www.state.gov/releases/office-of-the-spokesperson/2026/05/joint-statement-from-the-quad-foreign-ministers-meeting-in-new-delhi/
+      title: Joint Statement from the Quad Foreign Ministers' Meeting in New Delhi
+      publisher: US Department of State
+      date: '2026-05-26'
+      tier: 1
+    - url: https://www.foreignminister.gov.au/minister/penny-wong/media-release/factsheet-quad-foreign-ministers-meeting-new-delhi-may-2026
+      title: 'Factsheet: Quad Foreign Ministers'' Meeting in New Delhi (May 2026)'
+      publisher: Department of Foreign Affairs and Trade (Foreign Minister)
+      date: '2026-05-26'
+      tier: 1
+    - url: https://www.pmindia.gov.in/en/news_updates/pm-meets-with-the-prime-minister-of-australia-at-the-3rd-india-australia-annual-summit/
+      title: PM meets with the Prime Minister of Australia at the 3rd India-Australia Annual Summit
+      publisher: Prime Minister's Office of India
+      date: '2026-07-09'
+      tier: 1
+    - url: https://www.outlookbusiness.com/news/modi-visits-australia-as-trade-deficit-halves-under-ecta
+      title: Modi visits Australia as trade deficit halves under ECTA
+      publisher: Outlook Business
+      date: 2026-07
+      tier: 3
+  means:
+  - domain: diplomatic
+    text: Treaty-making as the main instrument. Since 2023 Canberra has converted partnerships into texts - Falepili (Tuvalu), Nauru, Pukpuk (PNG), Nakamal (Vanuatu), Ocean of Peace Alliance (Fiji), Indonesia, Geelong (UK) - each with a clause that lets Australia screen third-party security links, and a bid for a comprehensive treaty with the Solomon Islands.
+    confidence: A
+    sources:
+    - url: https://www.pm.gov.au/media/entry-force-historic-australia-tuvalu-falepili-union
+      title: Entry into force of historic Australia-Tuvalu Falepili Union
+      publisher: Prime Minister of Australia
+      date: '2024-08-28'
+      tier: 1
+    - url: https://pina.com.fj/2024/12/09/australia-gains-effective-veto-over-nauru-security-pact/
+      title: Australia gains effective veto over Nauru security pact
+      publisher: PINA (Pacific Islands News Association)
+      date: '2024-12-09'
+      tier: 3
+    - url: https://www.pm.gov.au/media/joint-communique-papua-new-guinea-and-australia-mutual-defence-treaty
+      title: Joint communique - Papua New Guinea and Australia on a Mutual Defence Treaty
+      publisher: Prime Minister of Australia (joint communique)
+      date: '2025-09-17'
+      tier: 1
+    - url: https://www.foreignminister.gov.au/minister/penny-wong/media-release/vanuatu-and-australia-sign-nakamal-agreement
+      title: Vanuatu and Australia sign Nakamal Agreement
+      publisher: Department of Foreign Affairs and Trade (Foreign Minister)
+      date: '2026-06-29'
+      tier: 1
+    - url: https://www.dfat.gov.au/countries/fiji/ocean-peace-alliance-veitacini-treaty
+      title: Ocean of Peace Alliance (Veitacini Treaty)
+      publisher: Department of Foreign Affairs and Trade (Australia)
+      date: '2026-07-06'
+      tier: 1
+    - url: https://pina.com.fj/2026/06/02/albanese-launches-bid-for-ambitious-solomon-islands-treaty-to-counter-china/
+      title: Albanese launches bid for ambitious Solomon Islands treaty to counter China
+      publisher: PINA (Pacific Islands News Association)
+      date: '2026-06-02'
+      tier: 3
+    - url: https://www.pm.gov.au/media/australia-and-indonesia-sign-historic-security-treaty
+      title: Australia and Indonesia sign historic security treaty
+      publisher: Prime Minister of Australia
+      date: 2026-02
+      tier: 1
+    - url: https://wtop.com/australia/2026/02/leaders-of-indonesia-and-australia-sign-a-new-security-treaty-to-affirm-deeper-ties/
+      title: Leaders of Indonesia and Australia sign a new security treaty to affirm deeper ties
+      publisher: AP via WTOP
+      date: 2026-02
+      tier: 3
+    - url: https://www.thenewdaily.com.au/news/world/2025/11/12/australia-confirms-indonesia-pact
+      title: Australia confirms Indonesia pact
+      publisher: The New Daily
+      date: 2025-11-12
+      tier: 3
+  - domain: diplomatic
+    text: 'A ''Pacific-led'' frame for Australian power: the Pacific Policing Initiative (endorsed August 2024; Brisbane hub, police centres of excellence, a deployable regional force) and public backing for the Pacific Islands Forum, with Albanese at the Palau leaders'' meeting (31 Aug-3 Sep 2026). Visible distance from Washington and Jerusalem where the home audience demands it: recognition of Palestine (21 Sep 2025).'
+    confidence: B
+    sources:
+    - url: https://thenightly.com.au/politics/prime-minister-anthony-albanese-gets-pacific-leaders-to-back-australias-regional-police-initiative-c-15857096
+      title: Prime Minister Anthony Albanese gets Pacific leaders to back Australia's regional police initiative
+      publisher: The Nightly
+      date: 2024-08
+      tier: 3
+    - url: https://pina.com.fj/2026/06/08/australia-new-zealand-back-pacific-led-security-and-climate-agenda/
+      title: Australia, New Zealand back Pacific-led security and climate agenda
+      publisher: PINA (Pacific Islands News Association)
+      date: '2026-06-08'
+      tier: 3
+    - url: https://www.pm.gov.au/media/55th-pacific-islands-forum-leaders-meeting-palau
+      title: 55th Pacific Islands Forum Leaders' Meeting in Palau
+      publisher: Prime Minister of Australia
+      date: 2026-08
+      tier: 1
+    - url: https://www.foreignminister.gov.au/minister/penny-wong/media-release/australia-recognises-state-palestine
+      title: Australia recognises the State of Palestine
+      publisher: Department of Foreign Affairs and Trade (Foreign Minister)
+      date: '2025-09-21'
+      tier: 1
+  - domain: informational
+    text: 'Intelligence disclosed as policy: ASIO''s public attribution (26 Aug 2025) of two antisemitic attacks to Iran preceded the expulsion of the ambassador and a new law to list the IRGC; the same disclosure habit ran through the response to the Biak report (Marles naming his Indonesian counterpart''s denial) and the Tasman live-fire (a formal protest after an initial ''complied with international law'').'
+    confidence: B
+    sources:
+    - url: https://www.indailysa.com.au/news/just-in/2025/08/26/iran-behind-antisemitic-attacks-says-albanese
+      title: Iran behind antisemitic attacks, says Albanese
+      publisher: InDaily (AAP)
+      date: '2025-08-26'
+      tier: 3
+    - url: https://www.foreignminister.gov.au/minister/penny-wong/media-release/islamic-revolutionary-guard-corps-listed-state-sponsor-terrorism
+      title: Islamic Revolutionary Guard Corps listed as a state sponsor of terrorism
+      publisher: Department of Foreign Affairs and Trade (Foreign Minister)
+      date: '2025-11-27'
+      tier: 1
+    - url: https://sbs.com.au/news/article/australia-engaging-with-indonesia-as-russia-requests-access-to-island-military-base/nhnwh8zz5
+      title: Indonesia tells Australia prospect of Russian aircraft operations 'simply not true'
+      publisher: SBS News
+      date: 2025-04
+      tier: 3
+    - url: https://www.euronews.com/2025/02/21/chinese-warship-drill-prompts-civilian-flight-diversions-over-tasman-sea
+      title: Chinese warship drill prompts civilian flight diversions over Tasman Sea
+      publisher: Euronews
+      date: '2025-02-21'
+      tier: 3
+  - domain: military
+    text: 'The submarine as the strategic bet: SSN-AUKUS with the UK (Geelong Treaty, 50 years, Submarine Rotational Force-West from 2027) and at least three Virginia-class boats from 2032; ADF crews already train aboard US boats (three personnel were aboard the submarine that sank the Iranian frigate Dena, March 2026). Surface and land fleet bought from allies: Mogami frigates (Japan), Redback vehicles (Korea), plus the Abrams tanks given to Ukraine.'
+    confidence: B
+    sources:
+    - url: https://courtney.house.gov/media-center/press-releases/ranking-member-courtney-pentagons-review-fully-endorses-aukus
+      title: 'Ranking Member Courtney: Pentagon''s review fully endorses AUKUS'
+      publisher: Office of Rep. Joe Courtney (US House of Representatives)
+      date: 2025-12
+      tier: 1
+    - url: https://gulfnews.com/world/oceania/after-review-pentagon-confirms-submarine-sales-to-australia-1.500369714
+      title: After review, Pentagon confirms submarine sales to Australia
+      publisher: Gulf News (AFP)
+      date: 2025-12
+      tier: 3
+    - url: https://www.1news.co.nz/2026/03/06/australians-on-board-us-nuclear-sub-that-struck-iranian-ship/
+      title: Australians on board US nuclear sub that sunk Iranian ship
+      publisher: 1News (New Zealand)
+      date: '2026-03-06'
+      tier: 3
+    - url: https://www.globalsecurity.org/wmd/library/news/ukraine/2026/01/ukraine-260120-audod01.htm
+      title: Final M1A1 Abrams delivered to Ukraine (Australian Defence release of 20 Jan 2026, hosted by GlobalSecurity.org; title paraphrased)
+      publisher: Australian Department of Defence via GlobalSecurity.org
+      date: '2026-01-20'
+      tier: 1
+    - url: https://www.asa.gov.au/bilateral-nuclear-powered-submarine-partnership-and-collaboration-treaty
+      title: Bilateral Nuclear-Powered Submarine Partnership and Collaboration Treaty
+      publisher: Australian Submarine Agency
+      date: 2025
+      tier: 1
+    - url: https://www.globalgovernmentforum.com/uk-and-australia-sign-50-year-aukus-defence-partnership-treaty/
+      title: UK and Australia sign 50-year AUKUS defence partnership treaty
+      publisher: Global Government Forum
+      date: 2025-07-26
+      tier: 3
+    - url: https://www.thenewdaily.com.au/news/politics/australian-politics/2025/08/05/australian-navy-japan-warships
+      title: Australia picks Japanese warships for navy
+      publisher: The New Daily
+      date: '2025-08-05'
+      tier: 3
+    - url: https://wtop.com/australia/2026/04/australia-and-japan-seal-6-5b-warship-deal-with-3-mogami-frigates-ordered-first/
+      title: Australia and Japan seal $6.5B warship deal with 3 Mogami frigates ordered first
+      publisher: WTOP (AP)
+      date: 2026-04
+      tier: 3
+    - url: https://www.asianmilitaryreview.com/2026/04/australia-inks-7-billion-mogami-frigate-deal-foc/
+      title: Australia inks $7 billion Mogami frigate deal
+      publisher: Asian Military Review
+      date: 2026-04
+      tier: 3
+  - domain: military
+    text: 'Presence and exercises in the near abroad: Exercise Alon with the Philippines (about 3,600 personnel, August 2025), Singapore''s training grounds in Queensland, Guardian-class patrol boats and Australian Federal Police officers inside the Fiji police, police and defence advisers across the islands.'
+    confidence: B
+    sources:
+    - url: https://news.usni.org/2025/08/19/philippines-australia-hold-largest-bilateral-military-drills-to-date-u-s-marines-to-join
+      title: Philippines, Australia hold largest bilateral military drills to date; U.S. Marines to join
+      publisher: USNI News
+      date: 2025-08-19
+      tier: 3
+    - url: https://globalnation.inquirer.net/288218/ph-australia-start-exercise-alon-with-us-canadian-observers
+      title: PH, Australia start Exercise Alon with US, Canadian observers
+      publisher: Philippine Daily Inquirer
+      date: 2025-08
+      tier: 3
+    - url: https://www.defenceconnect.com.au/geopolitics-and-policy/16955-australia-singapore-sign-cooperation-agreement-to-expand-defence-reciprocal-access
+      title: Australia, Singapore sign cooperation agreement to expand defence reciprocal access
+      publisher: Defence Connect
+      date: 2025-10
+      tier: 3
+    - url: https://www.aviation-defence-universe.com/significance-exercise-wallaby-saf/
+      title: The significance of Exercise Wallaby for the SAF (undated page)
+      publisher: Aviation & Defence Universe
+      date: 2025
+      tier: 3
+    - url: https://ministers.dfat.gov.au/minister/pat-conroy/media-release/australia-and-fiji-elevate-vuvale-partnership
+      title: Australia and Fiji to elevate Vuvale Partnership
+      publisher: DFAT (Minister for Pacific Island Affairs)
+      date: 2025-07
+      tier: 1
+    - url: https://www.minister.defence.gov.au/statements/2025-10-03/joint-statement-fiji-australia-defence-ministers-meeting
+      title: 'Joint Statement: Fiji-Australia Defence Ministers'' Meeting'
+      publisher: Australian Department of Defence (ministers)
+      date: 2025-10-03
+      tier: 1
+    - url: https://fijisun.com.fj/news/nation/fiji-to-deploy-police-and-defence-attachs-to-australia
+      title: Fiji to deploy Police and Defence attaches to Australia
+      publisher: Fiji Sun
+      date: 2025-08
+      tier: 3
+    - url: https://www.fijitimes.com.fj/?p=851247
+      title: Australia supercharges Vuvale partnership with $500M assistance from 2025-2029
+      publisher: Fiji Times
+      date: 2025-07
+      tier: 3
+  - domain: economic
+    text: 'Finance as statecraft: the critical-minerals framework (at least US$1bn of co-financing from EXIM, the DFC and Export Finance Australia in six months toward a US$8.5bn pipeline), budget and policing money in the island treaties (Nauru A$100m + A$40m; Vanuatu about A$500m over ten years; a A$190m police package for the Solomons; about A$500m for Fiji for 2025-29), and a 10% share of Greater Sunrise revenue offered to Timor-Leste.'
+    confidence: B
+    sources:
+    - url: https://www.industry.gov.au/publications/united-states-australia-framework-securing-supply-mining-and-processing-critical-minerals-and-rare-earths
+      title: United States-Australia Framework for Securing of Supply in the Mining and Processing of Critical Minerals and Rare Earths
+      publisher: Department of Industry, Science and Resources (Australia)
+      date: '2025-10-21'
+      tier: 1
+    - url: https://www.bbc.com/news/articles/cly9kvrdk2xo
+      title: US and Australia sign rare earths deal to counter China's dominance
+      publisher: BBC News
+      date: '2025-10-21'
+      tier: 3
+    - url: https://pina.com.fj/2024/12/09/australia-gains-effective-veto-over-nauru-security-pact/
+      title: Australia gains effective veto over Nauru security pact
+      publisher: PINA (Pacific Islands News Association)
+      date: '2024-12-09'
+      tier: 3
+    - url: https://www.local10.com/news/world/2026/06/29/a-long-awaited-australia-vanuatu-pact-blocks-china-from-building-a-military-base/
+      title: A long-awaited Australia-Vanuatu pact blocks China from building a military base
+      publisher: AP via Local 10
+      date: '2026-06-29'
+      tier: 3
+    - url: https://pina.com.fj/2026/06/03/solomons-pm-to-meet-albanese-with-china-pact-in-focus/
+      title: Solomons PM to meet Albanese with China pact in focus
+      publisher: PINA (Pacific Islands News Association)
+      date: '2026-06-03'
+      tier: 3
+    - url: https://ministers.dfat.gov.au/minister/pat-conroy/media-release/australia-and-fiji-elevate-vuvale-partnership
+      title: Australia and Fiji to elevate Vuvale Partnership
+      publisher: DFAT (Minister for Pacific Island Affairs)
+      date: 2025-07
+      tier: 1
+    - url: https://www.minister.defence.gov.au/statements/2025-10-03/joint-statement-fiji-australia-defence-ministers-meeting
+      title: 'Joint Statement: Fiji-Australia Defence Ministers'' Meeting'
+      publisher: Australian Department of Defence (ministers)
+      date: 2025-10-03
+      tier: 1
+    - url: https://fijisun.com.fj/news/nation/fiji-to-deploy-police-and-defence-attachs-to-australia
+      title: Fiji to deploy Police and Defence attaches to Australia
+      publisher: Fiji Sun
+      date: 2025-08
+      tier: 3
+    - url: https://www.fijitimes.com.fj/?p=851247
+      title: Australia supercharges Vuvale partnership with $500M assistance from 2025-2029
+      publisher: Fiji Times
+      date: 2025-07
+      tier: 3
+    - url: https://www.pm.gov.au/media/strengthening-our-partnership-timor-leste
+      title: Strengthening our partnership with Timor-Leste
+      publisher: Office of the Prime Minister of Australia
+      date: 2026-01-29
+      tier: 1
+    - url: https://en.tatoli.tl/2026/01/28/australian-pm-albanese-arrives-in-dili-received-by-ramos-horta-and-gusmao/11/
+      title: Australian PM Albanese arrives in Dili, received by Ramos-Horta and Gusmao
+      publisher: Tatoli (state agency)
+      date: 2026-01-28
+      tier: 1
+  - domain: economic
+    text: 'Market access and labour mobility as the soft half of the island treaties and of the regional ring: a pathway for up to 280 Tuvaluans a year, 10,000 Timorese workers by 2027-28, an EU deal (24 Mar 2026), an India agenda for 2026, and resource exports (coal to Vietnam: 44% of its imports in 2024).'
+    confidence: B
+    sources:
+    - url: https://www.pm.gov.au/media/entry-force-historic-australia-tuvalu-falepili-union
+      title: Entry into force of historic Australia-Tuvalu Falepili Union
+      publisher: Prime Minister of Australia
+      date: '2024-08-28'
+      tier: 1
+    - url: https://www.aol.com/articles/eu-australia-agree-text-free-004816966.html
+      title: EU and Australia sign free trade pact and announce a new defense partnership
+      publisher: AP via AOL
+      date: '2026-03-24'
+      tier: 3
+    - url: https://www.pm.gov.au/media/strengthening-our-partnership-timor-leste
+      title: Strengthening our partnership with Timor-Leste
+      publisher: Office of the Prime Minister of Australia
+      date: 2026-01-29
+      tier: 1
+    - url: https://en.tatoli.tl/2026/01/28/australian-pm-albanese-arrives-in-dili-received-by-ramos-horta-and-gusmao/11/
+      title: Australian PM Albanese arrives in Dili, received by Ramos-Horta and Gusmao
+      publisher: Tatoli (state agency)
+      date: 2026-01-28
+      tier: 1
+    - url: https://tuoitrenews.vn/news/politics/20240307/vietnam-upgrades-ties-with-australia-to-highest-level/78653.html
+      title: Vietnam upgrades ties with Australia to highest level
+      publisher: Tuoi Tre News
+      date: '2024-03-07'
+      tier: 3
+    - url: https://www.lowyinstitute.org/the-interpreter/australia-vietnam-middle-powers-alike
+      title: 'Australia and Vietnam: middle powers alike'
+      publisher: Lowy Institute
+      date: 2024-03
+      tier: 2
+  constraints:
+  - text: 'Time and numbers: the Virginia-class boats come from 2032 and the SSN-AUKUS fleet in the 2040s, so Australia is exposed in the 2030s to a gap that only an allied rotational force can cover; the Virginia programme is behind schedule and over budget (a 2024 congressional estimate: two years late and US$17bn over to 2030), and an ASPI fellow said Canberra might not receive the boats. Defence spending reaches 3% of GDP only by 2033, and then on the NATO accounting method.'
+    confidence: B
+    sources:
+    - url: https://courtney.house.gov/media-center/press-releases/ranking-member-courtney-pentagons-review-fully-endorses-aukus
+      title: 'Ranking Member Courtney: Pentagon''s review fully endorses AUKUS'
+      publisher: Office of Rep. Joe Courtney (US House of Representatives)
+      date: 2025-12
+      tier: 1
+    - url: https://gulfnews.com/world/oceania/after-review-pentagon-confirms-submarine-sales-to-australia-1.500369714
+      title: After review, Pentagon confirms submarine sales to Australia
+      publisher: Gulf News (AFP)
+      date: 2025-12
+      tier: 3
+    - url: https://news.usni.org/2026/04/23/australia-to-increase-defense-spending-by-37-9b-over-next-decade
+      title: Australia to Increase Defense Spending by $37.9B Over Next Decade
+      publisher: USNI News
+      date: '2026-04-23'
+      tier: 3
+  - text: 'Trade dependence: China is almost a third of total trade, which is why the Tasman live-fire (49 flights diverted) drew a protest but not a break, and why Beijing''s warning over the Darwin port (Jan 2026) is a real cost. The brief''s iron-ore and LNG shares were not sourced in this pass.'
+    confidence: B
+    sources:
+    - url: https://www.pm.gov.au/media/visit-peoples-republic-china-8-july-2025
+      title: Visit to the People's Republic of China
+      publisher: Prime Minister of Australia
+      date: '2025-07-08'
+      tier: 1
+    - url: https://www.euronews.com/2025/02/21/chinese-warship-drill-prompts-civilian-flight-diversions-over-tasman-sea
+      title: Chinese warship drill prompts civilian flight diversions over Tasman Sea
+      publisher: Euronews
+      date: '2025-02-21'
+      tier: 3
+    - url: https://thenightly.com.au/politics/anthony-albaneses-china-warships-response-will-be-read-as-weak-by-beijing-former-us-attach-warns-c-17828399
+      title: Anthony Albanese's China warships response will be read as 'weak' by Beijing, former US attache warns
+      publisher: The Nightly
+      date: 2025-02
+      tier: 3
+    - url: https://www.caixinglobal.com/2026-01-31/canberra-reasserts-intent-to-retake-darwin-port-from-chinese-operator-102409956.html
+      title: Canberra reasserts intent to retake Darwin port from Chinese operator
+      publisher: Caixin Global
+      date: '2026-01-31'
+      tier: 3
+  - text: 'An unpredictable guarantor: the 10% tariff of April 2025, a five-month Pentagon review of the flagship programme, the request for 3.5% of GDP, a reported demand for a Taiwan pre-commitment, and a president who rebuked Australia''s own ambassador in front of the press - each answered, none resolved.'
+    confidence: B
+    sources:
+    - url: https://www.bbc.com/news/articles/c705z2e8wxzo
+      title: '''Not the act of a friend'': Australia angry over Trump tariffs'
+      publisher: BBC News
+      date: '2025-04-03'
+      tier: 3
+    - url: https://courtney.house.gov/media-center/press-releases/ranking-member-courtney-pentagons-review-fully-endorses-aukus
+      title: 'Ranking Member Courtney: Pentagon''s review fully endorses AUKUS'
+      publisher: Office of Rep. Joe Courtney (US House of Representatives)
+      date: 2025-12
+      tier: 1
+    - url: https://thenightly.com.au/world/us-asks-australia-to-raise-defence-budget-to-35-per-cent-of-gdp-in-high-level-talks-c-18890339
+      title: US asks Australia to raise defence budget to 3.5 per cent of GDP in high-level talks
+      publisher: The Nightly
+      date: 2025-06
+      tier: 3
+    - url: https://www.lowyinstitute.org/the-interpreter/aukus-ultimatum-australia-over-taiwan-risks-backfiring-washington
+      title: 'AUKUS ultimatum: Australia over Taiwan risks backfiring on Washington'
+      publisher: Lowy Institute (The Interpreter)
+      date: 2025-07
+      tier: 2
+    - url: https://www.abc.net.au/news/2025-10-22/albanese-defends-kevin-rudd-after-donald-trump-criticisms/105919238
+      title: Anthony Albanese defends Kevin Rudd after criticism from Donald Trump
+      publisher: ABC News (Australia)
+      date: '2025-10-22'
+      tier: 3
+  - text: 'Island sovereignty: Vanuatu rejected the first draft of its agreement (nine months before the signing of 29 Jun 2026) and the final text was reportedly watered down; the Solomon Islands keep the 2022 China pact under review, not cancelled; Beijing is Vanuatu''s largest external creditor; and Fiji''s text, finalised in May 2026, left open whether it limits Chinese engagement.'
+    confidence: B
+    sources:
+    - url: https://www.local10.com/news/world/2026/06/29/a-long-awaited-australia-vanuatu-pact-blocks-china-from-building-a-military-base/
+      title: A long-awaited Australia-Vanuatu pact blocks China from building a military base
+      publisher: AP via Local 10
+      date: '2026-06-29'
+      tier: 3
+    - url: https://nit.com.au/30-06-2026/25085/foreign-bases-ruled-out-as-vanuatu-signs-security-deal
+      title: Foreign bases ruled out as Vanuatu signs security deal
+      publisher: NIT
+      date: '2026-06-30'
+      tier: 3
+    - url: https://pina.com.fj/2026/06/02/albanese-launches-bid-for-ambitious-solomon-islands-treaty-to-counter-china/
+      title: Albanese launches bid for ambitious Solomon Islands treaty to counter China
+      publisher: PINA (Pacific Islands News Association)
+      date: '2026-06-02'
+      tier: 3
+    - url: https://pina.com.fj/2026/06/23/chinas-policing-plans-should-be-sidelined-says-top-solomons-minister/
+      title: China's policing plans should be sidelined, says top Solomons minister
+      publisher: PINA (Pacific Islands News Association)
+      date: '2026-06-23'
+      tier: 3
+    - url: https://www.csis.org/analysis/what-australia-and-fijis-new-treaty-means-pacific-state-play
+      title: What Australia and Fiji's New Treaty Means for the Pacific
+      publisher: CSIS
+      date: 2026-05
+      tier: 2
+  - text: 'A hedging near neighbour: Indonesia is signed to a modest treaty with no common-danger clause and denied a Russian basing request at Biak only after the story was out; the Papua question sits under the relation. The northern approaches depend on a partner Canberra does not control.'
+    confidence: B
+    sources:
+    - url: https://www.pm.gov.au/media/australia-and-indonesia-sign-historic-security-treaty
+      title: Australia and Indonesia sign historic security treaty
+      publisher: Prime Minister of Australia
+      date: 2026-02
+      tier: 1
+    - url: https://wtop.com/australia/2026/02/leaders-of-indonesia-and-australia-sign-a-new-security-treaty-to-affirm-deeper-ties/
+      title: Leaders of Indonesia and Australia sign a new security treaty to affirm deeper ties
+      publisher: AP via WTOP
+      date: 2026-02
+      tier: 3
+    - url: https://www.thenewdaily.com.au/news/world/2025/11/12/australia-confirms-indonesia-pact
+      title: Australia confirms Indonesia pact
+      publisher: The New Daily
+      date: 2025-11-12
+      tier: 3
+    - url: https://sbs.com.au/news/article/australia-engaging-with-indonesia-as-russia-requests-access-to-island-military-base/nhnwh8zz5
+      title: Indonesia tells Australia prospect of Russian aircraft operations 'simply not true'
+      publisher: SBS News
+      date: 2025-04
+      tier: 3
+  - text: 'The home front: a record Labor majority (94 of 150 seats, May 2025) gives room to act, but the response to the Tasman drills was attacked as ''weak'', the Bondi Beach attack of 14 Dec 2025 (15 killed) led to a royal commission on antisemitism (first hearing 24 Feb 2026), and the Israel and Iran lines are fought in the same public arena.'
+    confidence: B
+    sources:
+    - url: https://results.aec.gov.au/31496/Website/HouseDefault-31496.htm
+      title: 2025 Federal Election - House of Representatives final results (Labor 94 of 150 seats)
+      publisher: Australian Electoral Commission
+      date: '2025-06-10'
+      tier: 1
+    - url: https://thenightly.com.au/politics/anthony-albaneses-china-warships-response-will-be-read-as-weak-by-beijing-former-us-attach-warns-c-17828399
+      title: Anthony Albanese's China warships response will be read as 'weak' by Beijing, former US attache warns
+      publisher: The Nightly
+      date: 2025-02
+      tier: 3
+    - url: https://wtop.com/australia/2026/02/australia-begins-sweeping-public-inquiry-probing-antisemitism-after-bondi-beach-killings/
+      title: Australia begins sweeping public inquiry probing antisemitism after Bondi Beach killings
+      publisher: AP via WTOP
+      date: '2026-02-24'
+      tier: 3
+    - url: https://citynews.com.au/2025/public-spat-marks-lowest-point-in-israel-australia-ties/
+      title: Public spat marks lowest point in Israel-Australia ties
+      publisher: CityNews (AAP)
+      date: '2025'
+      tier: 3
+  paradoxes:
+  - text: 'Paying for the guarantee makes it harder to refuse the guarantor. The more of its defence Australia builds around US-designed boats, US training and US-held consent (the Abrams for Ukraine waited on Washington), the more it is drawn into the guarantor''s wars without the guarantor being bound in return: ADF personnel were aboard the US submarine that sank the Iranian frigate Dena in March 2026, while Colby is reported to have asked Canberra for a Taiwan pre-commitment.'
+    confidence: B
+    sources:
+    - url: https://www.1news.co.nz/2026/03/06/australians-on-board-us-nuclear-sub-that-struck-iranian-ship/
+      title: Australians on board US nuclear sub that sunk Iranian ship
+      publisher: 1News (New Zealand)
+      date: '2026-03-06'
+      tier: 3
+    - url: https://www.lowyinstitute.org/the-interpreter/aukus-ultimatum-australia-over-taiwan-risks-backfiring-washington
+      title: 'AUKUS ultimatum: Australia over Taiwan risks backfiring on Washington'
+      publisher: Lowy Institute (The Interpreter)
+      date: 2025-07
+      tier: 2
+    - url: https://thenightly.com.au/politics/us-politics/washingtons-leading-aukus-sceptic-scoffs-at-talk-of-new-middle-powers-alliance--c-22582334
+      title: Washington's leading AUKUS sceptic scoffs at talk of new 'middle powers' alliance
+      publisher: The Nightly
+      date: '2026'
+      tier: 3
+    - url: https://www.yahoo.com/news/transfer-abrams-tanks-australia-ukraine-004807703.html
+      title: Transfer of Abrams tanks from Australia to Ukraine stalled due to US resistance, media reports
+      publisher: Yahoo News (wire)
+      date: '2025'
+      tier: 3
+    - url: https://www.reuters.com/world/asia-pacific/australia-says-it-supports-us-strike-calls-return-diplomacy-2025-06-23/
+      title: Australia says it supports US strike, calls for return to diplomacy
+      publisher: Reuters
+      date: '2025-06-23'
+      tier: 3
+  - text: The route to sovereign submarines runs through lent sovereignty. SSN-AUKUS is the guarantee of independence, but until it exists Australia relies on the Submarine Rotational Force-West (from 2027) and on boats bought from a US navy whose own Virginia programme is late and over budget; the nearer the deadline, the more Canberra depends on the exact capital whose reliability is the question.
+    confidence: B
+    sources:
+    - url: https://courtney.house.gov/media-center/press-releases/ranking-member-courtney-pentagons-review-fully-endorses-aukus
+      title: 'Ranking Member Courtney: Pentagon''s review fully endorses AUKUS'
+      publisher: Office of Rep. Joe Courtney (US House of Representatives)
+      date: 2025-12
+      tier: 1
+    - url: https://gulfnews.com/world/oceania/after-review-pentagon-confirms-submarine-sales-to-australia-1.500369714
+      title: After review, Pentagon confirms submarine sales to Australia
+      publisher: Gulf News (AFP)
+      date: 2025-12
+      tier: 3
+    - url: https://www.asa.gov.au/bilateral-nuclear-powered-submarine-partnership-and-collaboration-treaty
+      title: Bilateral Nuclear-Powered Submarine Partnership and Collaboration Treaty
+      publisher: Australian Submarine Agency
+      date: 2025
+      tier: 1
+    - url: https://www.globalgovernmentforum.com/uk-and-australia-sign-50-year-aukus-defence-partnership-treaty/
+      title: UK and Australia sign 50-year AUKUS defence partnership treaty
+      publisher: Global Government Forum
+      date: 2025-07-26
+      tier: 3
+  - text: 'Vetoes breed hedging. Each island treaty buys Australia a say over third-party security deals (Nauru, Tuvalu, Vanuatu, perhaps Fiji and the Solomons), but the price in sovereignty makes the islands bargain: Vanuatu said no first and signed a softer text nine months later while talking to China about a separate economic arrangement; the Solomon Islands review the China pact rather than cancel it. The tighter the net, the more reason to keep a second door.'
+    confidence: B
+    sources:
+    - url: https://www.local10.com/news/world/2026/06/29/a-long-awaited-australia-vanuatu-pact-blocks-china-from-building-a-military-base/
+      title: A long-awaited Australia-Vanuatu pact blocks China from building a military base
+      publisher: AP via Local 10
+      date: '2026-06-29'
+      tier: 3
+    - url: https://nit.com.au/30-06-2026/25085/foreign-bases-ruled-out-as-vanuatu-signs-security-deal
+      title: Foreign bases ruled out as Vanuatu signs security deal
+      publisher: NIT
+      date: '2026-06-30'
+      tier: 3
+    - url: https://pina.com.fj/2026/06/23/chinas-policing-plans-should-be-sidelined-says-top-solomons-minister/
+      title: China's policing plans should be sidelined, says top Solomons minister
+      publisher: PINA (Pacific Islands News Association)
+      date: '2026-06-23'
+      tier: 3
+    - url: https://pina.com.fj/2024/12/09/australia-gains-effective-veto-over-nauru-security-pact/
+      title: Australia gains effective veto over Nauru security pact
+      publisher: PINA (Pacific Islands News Association)
+      date: '2024-12-09'
+      tier: 3
+    - url: https://www.csis.org/analysis/what-australia-and-fijis-new-treaty-means-pacific-state-play
+      title: What Australia and Fiji's New Treaty Means for the Pacific
+      publisher: CSIS
+      date: 2026-05
+      tier: 2
+  - text: The customer funds the deterrent aimed at it. China's near-third of Australian trade pays for the build-up to 3% of GDP that is directed at China, and the pledge to take back Port Darwin (Beijing's ambassador warned in January 2026 of measures to protect the owner) puts the restored trade at risk in exchange for a symbolic denial of a foothold.
+    confidence: B
+    sources:
+    - url: https://www.pm.gov.au/media/visit-peoples-republic-china-8-july-2025
+      title: Visit to the People's Republic of China
+      publisher: Prime Minister of Australia
+      date: '2025-07-08'
+      tier: 1
+    - url: https://news.usni.org/2026/04/23/australia-to-increase-defense-spending-by-37-9b-over-next-decade
+      title: Australia to Increase Defense Spending by $37.9B Over Next Decade
+      publisher: USNI News
+      date: '2026-04-23'
+      tier: 3
+    - url: https://www.caixinglobal.com/2026-01-31/canberra-reasserts-intent-to-retake-darwin-port-from-chinese-operator-102409956.html
+      title: Canberra reasserts intent to retake Darwin port from Chinese operator
+      publisher: Caixin Global
+      date: '2026-01-31'
+      tier: 3
+  - text: 'A sovereign number shaped like the American one. Canberra answered Hegseth''s 3.5% by saying it would decide capability first, and then adopted 3% by 2033 on the NATO method, which counts defence-adjacent spending: the form of the US demand is met, the content is not, and nobody can say which of the two Washington will read.'
+    confidence: C
+    sources:
+    - url: https://thenightly.com.au/world/us-asks-australia-to-raise-defence-budget-to-35-per-cent-of-gdp-in-high-level-talks-c-18890339
+      title: US asks Australia to raise defence budget to 3.5 per cent of GDP in high-level talks
+      publisher: The Nightly
+      date: 2025-06
+      tier: 3
+    - url: https://worldview.ranenetwork.com/content/situational-report/2026-04-16/australia-canberra-to-increase-defense-spending-to-3-of-gdp-by-2033
+      title: 'Australia: Canberra to increase defense spending to 3% of GDP by 2033'
+      publisher: RANE (Risk Assistance Network + Exchange)
+      date: '2026-04-16'
+      tier: 3
+    - url: https://news.usni.org/2026/04/23/australia-to-increase-defense-spending-by-37-9b-over-next-decade
+      title: Australia to Increase Defense Spending by $37.9B Over Next Decade
+      publisher: USNI News
+      date: '2026-04-23'
+      tier: 3
+    - url: https://www.janes.com/defence-intelligence-insights/defence-news/sea/special-report-australia-updates-defence-strategy-with-focus-on-force-modernisation-and-self-reliance
+      title: 'Special report: Australia updates defence strategy with focus on force modernisation and self-reliance'
+      publisher: Janes
+      date: 2026-04
+      tier: 3
+  - text: Courting Jakarta strengthens the neighbour that also courts Moscow. The Treaty on Common Security (February 2026) is the insurance for the northern approaches, yet it has no common-danger clause and a Russian basing request at Biak was alarm enough in April 2025 to enter the election campaign; a closer Indonesia is not a more predictable Indonesia.
+    confidence: B
+    sources:
+    - url: https://www.pm.gov.au/media/australia-and-indonesia-sign-historic-security-treaty
+      title: Australia and Indonesia sign historic security treaty
+      publisher: Prime Minister of Australia
+      date: 2026-02
+      tier: 1
+    - url: https://wtop.com/australia/2026/02/leaders-of-indonesia-and-australia-sign-a-new-security-treaty-to-affirm-deeper-ties/
+      title: Leaders of Indonesia and Australia sign a new security treaty to affirm deeper ties
+      publisher: AP via WTOP
+      date: 2026-02
+      tier: 3
+    - url: https://www.thenewdaily.com.au/news/world/2025/11/12/australia-confirms-indonesia-pact
+      title: Australia confirms Indonesia pact
+      publisher: The New Daily
+      date: 2025-11-12
+      tier: 3
+    - url: https://sbs.com.au/news/article/australia-engaging-with-indonesia-as-russia-requests-access-to-island-military-base/nhnwh8zz5
+      title: Indonesia tells Australia prospect of Russian aircraft operations 'simply not true'
+      publisher: SBS News
+      date: 2025-04
+      tier: 3
+    - url: https://citynews.com.au/2025/murderous-putin-not-welcome-in-australias-region
+      title: '''Murderous'' Putin not welcome in Australia''s region'
+      publisher: CityNews (AAP)
+      date: '2025-04-15'
+      tier: 3
+  reading: 'Australia is the ally that pays for a guarantor that may not come, and the regional order it is building is the insurance on that premium. Everything since 2023 reads as one move: lock the United States in with submarines, minerals and a statute that survived a Pentagon review (AUKUS, endorsed December 2025; the framework signed on 20 Oct 2025), while turning every neighbour into a treaty partner that screens out China - Papua New Guinea as a mutual-defence ally (2025), Fiji as the fourth ally (6 Jul 2026), vetoes in Nauru and Tuvalu, no foreign bases in Vanuatu, a treaty bid for the Solomon Islands, a security treaty with Indonesia. The Albanese government has a free hand to do this: re-elected in May 2025 with 94 of 150 seats, it faces an opposition that attacks it for weakness on China rather than for the direction. The Luttwakian pattern is in the gap between the two halves. The guarantee is bought at the price of entanglement (an Australian crew aboard the submarine that sank the Dena) and is still conditional (3.5% asked, a Taiwan pre-commitment reportedly asked for, a 10% tariff in April 2025, a five-month review of the flagship programme), while the insurance is built by buying sovereignty from the very islands it is meant to protect, who answer by bargaining. Two signals that are not rows: Albanese''s first reply to the Tasman drills was to stress that China had complied with international law, and the New Delhi Quad meeting of May 2026 spoke of tolls in the Strait of Hormuz and the Red Sea, which points to the Iran war rather than the Taiwan Strait. The question for 2027 is whether the ring of treaties and the submarine timetable hold long enough to outlast the guarantor''s moods; the first stress test is the Solomon Islands treaty, which a Solomon Islands minister floated for the end of 2026.'

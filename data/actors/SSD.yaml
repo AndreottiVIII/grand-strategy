@@ -8,7 +8,80 @@ coords:
 - 4.85
 seat: Juba
 regions:
-- world
-card: stub
+- east-africa
+card: full
 tier: minor
+last_verified: '2026-10-12'
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Hold the regime through the national elections set for 22 December 2026. The first vice president, Riek Machar, has been on trial for treason in Juba since 22 September 2025, and the vote has been put off before: the last move (September 2024) pushed it from December 2024 to December 2026."
+      confidence: B
+      sources:
+        - {url: "https://www.africanews.com/amp/2025/09/22/south-sudan-riek-machar-presented-in-a-cage-as-high-stakes-treason-trial-unfolds/", title: "South Sudan: Riek Machar presented in a cage as high-stakes treason trial unfolds", publisher: "Africanews", date: "2025-09-22", tier: 3}
+        - {url: "https://www.nampa.org/text/22951880", title: "South Sudan announces date for long-delayed national polls", publisher: "AFP via NAMPA", date: "2026-06-22", tier: 3}
+        - {url: "https://www.news24.com/news24/africa/news/south-sudan-postpones-elections-again-until-at-least-end-2026-20240913", title: "South Sudan postpones elections again until at least end 2026", publisher: "News24", date: "2024-09-13", tier: 3}
+        - {url: "https://www.securitycouncilreport.org/monthly-forecast/2026-05/south-sudan-39.php", title: "South Sudan - May 2026 monthly forecast (doubts about the planned polls)", publisher: "Security Council Report", date: "2026-05", tier: 2}
+    - rank: 2
+      text: "Keep the oil flowing, and the revenue with it. Crude reaches the sea only through Sudan's pipeline to Port Sudan, so exports stop whenever the Sudanese war cuts the line (Heglig in November and December 2025), and the state borrows against future oil (the UAE loan)."
+      confidence: C
+      sources:
+        - {url: "https://www.rigzone.com/news/wire/south_sudan_oil_exports_at_risk-10-dec-2025-182503-article/?rss=true", title: "South Sudan Oil Exports at Risk", publisher: "Rigzone (wire)", date: "2025-12-10", tier: 3}
+        - {url: "https://pipeline-journal.net/news/south-sudan-restarts-oil-exports-sudan-after-pipeline-repairs", title: "South Sudan Restarts Oil Exports Via Sudan After Pipeline Repairs", publisher: "Pipeline Journal", date: "2025", tier: 3}
+        - {url: "https://sudantribune.com/?p=319333", title: "Sudan Tribune report on the RSF transit fee for South Sudan crude", publisher: "Sudan Tribune", date: "2026-09", tier: 3}
+    - rank: 3
+      text: "Bring the armed opposition into a Kenyan-mediated process on Juba's terms. The Tumaini track (Kenya, with Ruto and Sumbeiywo as lead mediators) aims to pull in the holdouts outside the 2018 agreement; Juba insists any deal be an annex to that agreement, not a stand-alone one."
+      confidence: C
+      sources:
+        - {url: "https://www.radiotamazuj.org/en/news/article/kenya-led-mediation-explains-delay-in-tumaini-peace-talks", title: "Kenya-led mediation explains delay in Tumaini peace talks", publisher: "Radio Tamazuj", date: "2025", tier: 3}
+
+  means:
+    - domain: military
+      text: "Ugandan special forces in Juba since March 2025, beside the national army (SSPDF), which the Security Council Report describes in sustained hostilities with the SPLA-IO."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/amp/news/2025/3/11/uganda-deploys-troops-in-south-sudan-as-civil-war-fears-grow", title: "Uganda deploys troops in South Sudan as civil war fears grow", publisher: "Al Jazeera", date: "2025-03-11", tier: 3}
+        - {url: "https://www.radiotamazuj.org/en/news/article/ugandas-army-chief-says-updf-has-deployed-to-save-kiir-juba", title: "Uganda's Army Chief says UPDF has deployed to save Kiir, Juba", publisher: "Radio Tamazuj", date: "2025-03", tier: 3}
+        - {url: "https://www.securitycouncilreport.org/monthly-forecast/2026-08/south-sudan-40.php", title: "South Sudan - August 2026 monthly forecast", publisher: "Security Council Report", date: "2026-08", tier: 2}
+    - domain: economic
+      text: "Crude sold through Sudan, with CNPC as the lead Chinese operator, which explored a second export line via Djibouti and Ethiopia in 2024; and an oil-backed loan of about USD 12.9bn over 20 years from a UAE-linked company, whose status is unclear."
+      confidence: C
+      sources:
+        - {url: "https://allafrica.com/stories/202409090658.html", title: "South Sudan, China Mull Alternative Oil Pipeline to Boost Exports", publisher: "AllAfrica", date: "2024-09-09", tier: 3}
+        - {url: "https://sudantribune.com/?p=285051", title: "South Sudan's $12 billion loan from UAE sparks public debate", publisher: "Sudan Tribune", date: "2024", tier: 3}
+    - domain: diplomatic
+      text: "Kenya mediates the holdouts' track; China and Russia abstain on the UN measures against Juba. The arms embargo was renewed on 29 May 2026 by nine votes, with six abstentions."
+      confidence: C
+      sources:
+        - {url: "https://aa.com.tr/en/politics/un-security-council-renews-south-sudan-sanctions/3951589", title: "UN Security Council renews South Sudan sanctions", publisher: "Anadolu Agency", date: "2026-05-29", tier: 3}
+        - {url: "https://www.radiotamazuj.org/en/news/article/un-security-council-renews-south-sudan-arms-embargo", title: "UN Security Council renews South Sudan arms embargo", publisher: "Radio Tamazuj", date: "2026-05-29", tier: 3}
+
+  constraints:
+    - text: "The oil route runs through a war it does not control. Sources disagree on how far the RSF holds Heglig, but the group reportedly takes about USD 4 a barrel for transit (September 2026 report), so the state's main revenue passes through a rival's checkpoint."
+      confidence: C
+      sources:
+        - {url: "https://www.rigzone.com/news/wire/south_sudan_oil_exports_at_risk-10-dec-2025-182503-article/?rss=true", title: "South Sudan Oil Exports at Risk", publisher: "Rigzone (wire)", date: "2025-12-10", tier: 3}
+        - {url: "https://sudantribune.com/?p=319333", title: "Sudan Tribune report on the RSF transit fee for South Sudan crude", publisher: "Sudan Tribune", date: "2026-09", tier: 3}
+    - text: "Sanctions and the blue helmets. The UN arms embargo runs to 31 May 2027 and UNMISS (ceiling 12,500 troops and 2,101 police) to 30 April 2027. The US cancelled visas for all South Sudanese passport holders on 5 April 2025."
+      confidence: B
+      sources:
+        - {url: "https://www.globalsecurity.org/military/library/news/2026/04/mil-260430-unsc01.htm", title: "Security Council Adopts Resolution 2824 (2026), Extending Mandate of United Nations Mission in South Sudan for One Year", publisher: "GlobalSecurity.org (UN Security Council press release)", date: "2026-04-30", tier: 1}
+        - {url: "https://www.aljazeera.com/news/2025/4/7/why-has-trump-revoked-all-south-sudanese-visas", title: "Why has Trump revoked all South Sudanese visas?", publisher: "Al Jazeera", date: "2025-04-07", tier: 3}
+    - text: "Famine and flood. About 7.8 million people (56% of the population) were in IPC phase 3 or worse in spring 2026, with a credible risk of famine in parts of Upper Nile and Jonglei. Floods in 2025 affected about 1.02 million people in 29 counties (OCHA, 31 October 2025)."
+      confidence: B
+      sources:
+        - {url: "https://reliefweb.int/report/south-sudan/south-sudan-key-message-update-conflict-drives-emergency-and-risk-famine-jonglei-and-upper-nile-through-september-march-september-2026", title: "South Sudan key message update: conflict drives emergency and risk of famine in Jonglei and Upper Nile", publisher: "OCHA via ReliefWeb", date: "2026", tier: 1}
+        - {url: "https://www.developmentaid.org/news-stream/post/206564/hunger-intensifies-in-south-sudan", title: "Hunger intensifies in South Sudan as 7.8 million face acute food insecurity", publisher: "DevelopmentAid", date: "2026-04", tier: 3}
+        - {url: "https://reliefweb.int/report/south-sudan/south-sudan-flooding-situation-flash-update-no-9-31-october-2025", title: "South Sudan: flooding situation flash update No. 9", publisher: "OCHA via ReliefWeb", date: "2025-10-31", tier: 1}
+
+  paradoxes:
+    - text: "Removing the rival removes the peace the regime needs. The treason trial takes out the one figure who could contest the 2026 vote, but UN experts said in December 2025 that it is further eroding the 2018 agreement, the frame under which the UN mission and donors deal with Juba."
+      confidence: C
+      sources:
+        - {url: "https://www.news4jax.com/news/world/2025/12/12/treason-trial-of-south-sudans-suspended-vp-is-further-eroding-peace-deal-un-experts-say/", title: "Treason trial of South Sudan's suspended VP is further eroding peace deal, UN experts say", publisher: "Associated Press (via News4Jax)", date: "2025-12-12", tier: 3}
+        - {url: "https://allafrica.com/stories/202509260083.html", title: "South Sudan: Is Riek Machar's Trial Threatening Stability?", publisher: "AllAfrica", date: "2025-09-26", tier: 3}
+
+  reading: |
+    Juba's survival strategy is to keep the army and the oil revenue under one roof, remove the one rival able to contest the December 2026 vote, and buy protection with Ugandan troops and Emirati credit rather than with a settlement. Its weak point is the single pipe: every barrel crosses a Sudanese war in which South Sudan has no say, so the oil that keeps the state alive is also the lever Khartoum and the RSF hold. The 2018 agreement survives only as the diplomatic frame donors still use, and each move against Machar wears it down further.
