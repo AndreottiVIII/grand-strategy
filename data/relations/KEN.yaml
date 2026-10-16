@@ -47,6 +47,17 @@ relations:
     sources:
       - {url: "https://www.radiotamazuj.org/en/news/article/kenya-led-mediation-explains-delay-in-tumaini-peace-talks", title: "Kenya-led mediation explains delay in Tumaini peace talks", publisher: "Radio Tamazuj", date: 2025, tier: 3}
       - {url: "https://www.radiotamazuj.org/en/news/article/kenya-led-south-sudan-peace-talks-not-dead-makuei", title: "Kenya-led South Sudan peace talks 'not dead' - Makuei", publisher: "Radio Tamazuj", date: 2024-08-07, tier: 3}
+  - to: TZA
+    layer: objective
+    type: influence_goal
+    summary: "Keep Mombasa the gateway for Uganda- and DRC-bound cargo against Dar es Salaam, which doubled its free storage to 30 days and whose port transit rose 17% to 14.61m tonnes in 2025/26; Uganda is reported to be eyeing Dar es Salaam as a second route to the sea. Mirror of the TZA row, same sources; the Kenyan side of the objective is an inference from the rivalry those sources describe."
+    since: 2025
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.theeastafrican.co.ke/tea/business-tech/dar-heats-up-rivalry-with-mombasa-via-free-storage-offer-5213474", title: "Dar heats up rivalry with Mombasa via free storage offer", publisher: "The EastAfrican", date: 2026, tier: 3}
+      - {url: "https://www.monitor.co.ug/uganda/news/national/uganda-eyes-dar-es-salaam-as-second-route-to-sea-as-tanzania-expands-port-5622310", title: "Uganda eyes Dar es Salaam as second route to sea as Tanzania expands port", publisher: "Daily Monitor (Uganda)", date: 2026, tier: 3}
   # ---------- alignment ----------
   - to: org-eu
     layer: alignment
@@ -193,6 +204,45 @@ relations:
       - {url: "https://thestandard.ke/sports/amp/business/2001540064/relief-for-kenyas-sh95b-exports-as-trump-renews-agoa-for-one-year", title: "Relief for Kenya's Sh95b exports as Trump renews AGOA for one year", publisher: "The Standard (Kenya)", date: 2026-02, tier: 3}
       - {url: "https://citizen.digital/article/relief-for-kenyan-exporters-as-trump-signs-agoa-extension-into-law-n376973", title: "Relief for Kenyan exporters as Trump signs AGOA extension into law", publisher: "Citizen Digital (Kenya)", date: 2026-02, tier: 3}
       - {url: "https://www.standardmedia.co.ke/sports/amp/business/2001551889/kenyas-agoa-test-as-trump-reviews-rutos-governance-record", title: "Kenya's AGOA test as Trump reviews Ruto's governance record", publisher: "The Standard (Kenya)", date: 2026-07-03, tier: 3}
+  - to: ETH
+    layer: dependency
+    type: energy_import
+    summary: "Kenya buys Ethiopian hydropower over the 200 MW HVDC link (in service since December 2023): the energy regulator's data, reported by allAfrica in October 2025, put Kenya's electricity imports at 1,533.85 GWh (up 27.8%), of which Ethiopia supplied 1,274.42 GWh, 83%; a Business Daily analysis puts imports at about 12% of supply in the six months to June 2026 against 10% a year earlier, with a larger purchase (400 MW) reported for December 2026. Mirror of the ETH row (GERD exports earned over USD 0.5bn from all buyers). The figures were read in search extracts because the articles could not be retrieved, hence C."
+    since: 2022
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    value: 1274.42
+    unit: gwh_electricity_imported_from_ethiopia
+    sources:
+      - {url: "https://allafrica.com/stories/202510010033.html", title: "Kenya's Electricity Imports Up 27.8% On Ethiopia Supply Boost", publisher: "AllAfrica", date: 2025-10-01, tier: 3}
+      - {url: "https://www.businessdailyafrica.com/bd/corporate/industry/kenya-electricity-imports-rise-further-to-avert-rationing-5575112", title: "Kenya electricity imports rise further to avert rationing", publisher: "Business Daily (Kenya)", date: 2026, tier: 3}
+      - {url: "https://allafrica.com/stories/202609150052.html", title: "Ethiopia: GERD drives record earnings and regional energy integration, says EEP CEO", publisher: "AllAfrica", date: 2026-09-15, tier: 3}
+  - to: UGA
+    layer: dependency
+    type: trade_share
+    summary: "Uganda is Kenya's largest single export market: KSh 162.4bn in 2025, 14.5% of KSh 1.119 trillion in total export earnings and 28.8% more than in 2024, according to the 2026 Economic Survey of the national statistics office as reported by The Star. A monthly series of the same office, reported by another Kenyan outlet in search extracts, gives a much lower KSh 40.89bn, probably a narrower definition (domestic exports) that is not verified; the more recent annual survey figure is used. Kenya's imports from Uganda and total two-way trade were not found."
+    since: 2025
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    value: 162.4
+    unit: ksh_bn_exports_to_uganda_2025
+    sources:
+      - {url: "https://www.the-star.co.ke/news/2026-05-04-uganda-remains-kenyas-largest-export-market", title: "Uganda remains Kenya's largest export market", publisher: "The Star (Kenya), citing the Economic Survey 2026 of the Kenya National Bureau of Statistics", date: 2026-05-04, tier: 3}
+  - to: GBR
+    layer: dependency
+    type: military_presence
+    summary: "The British Army Training Unit in Laikipia: about 100 permanent staff plus a short-tour cohort of about 280, and up to six infantry battalions a year on eight-week exercises, according to the British Army page on BATUK (read in a search extract, the page could not be retrieved); the unit also trains the Kenya Defence Forces and resumed training in July 2026 after the licence dispute. The 2015 defence cooperation agreement expired in October 2021 and its successor is unratified."
+    since: 2015
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    value: 100
+    unit: permanent_batuk_staff
+    sources:
+      - {url: "https://www.army.mod.uk/learn-and-explore/global-operations/batuk/", title: "British Army Training Unit Kenya (BATUK)", publisher: "British Army, UK Ministry of Defence", date: 2026, tier: 1}
+      - {url: "https://thestandard.ke/business/amp/africa/article/2001553978/batuk-training-resumes-as-kenya-hails-uk-defence-partnership", title: "BATUK training resumes as Kenya hails UK defence partnership", publisher: "The Standard (Kenya)", date: 2026-07-28, tier: 3}
   # ---------- action ----------
   - to: USA
     layer: action
@@ -476,3 +526,27 @@ relations:
     sources:
       - {url: "https://www.developmentaid.org/news-stream/post/195484/nairobi-to-host-three-new-global-un-offices", title: "Nairobi to host three new global UN offices", publisher: "DevelopmentAid", date: 2025, tier: 3}
       - {url: "https://www.aljazeera.com/features/2025/8/20/as-un-agencies-mull-kenya-move-some-fear-exclusion-from-nairobis-growth", title: "As UN agencies mull Kenya move, some fear exclusion from Nairobi's growth", publisher: "Al Jazeera", date: 2025-08-20, tier: 3}
+  - to: RWA
+    layer: action
+    type: visit
+    summary: "Ruto's state visit to Rwanda in April 2023 produced framework MoUs on correctional services, diplomatic training, ICT, health, youth, cooperatives, education and agriculture; Kagame and Ruto had met in November 2022. Mirror of the RWA row, same sources (Rwandan government statements)."
+    since: 2023-04
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.rwandainkenya.gov.rw/info/info-details/president-william-ruto-visits-rwanda", title: "President William Ruto visits Rwanda", publisher: "Rwanda High Commission in Kenya", date: 2023-04, tier: 1}
+      - {url: "https://www.rwandainkenya.gov.rw/info/info-details/kagame-meets-ruto-discuss-bilateral-ties", title: "Kagame meets Ruto, discuss bilateral ties", publisher: "Rwanda High Commission in Kenya", date: 2022-11, tier: 1}
+  - to: TZA
+    layer: action
+    type: incident
+    summary: "Trade quarrels inside the EAC: Kenya faulted a Tanzanian law targeting non-citizens in July 2025 as criminalising lawful investments; a Tanzanian levy on Kenyan-made matchboxes was reported to take effect in May 2026 despite a suspension ordered by the East African Court of Justice; Tanzania is blamed for 39% of EAC non-tariff barriers and the 30 June 2026 deadline to clear them lapsed with little progress. Mirror of the TZA row, same sources, plus the July 2025 allAfrica report used on the TZA stance."
+    since: 2025-07
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://allafrica.com/stories/202507310033.html", title: "Tanzania: Kenya Faults Tanzania for 'Criminalizing Lawful Investments' in Law Targeting Non-Citizens", publisher: "allAfrica", date: 2025-07-31, tier: 3}
+      - {url: "https://www.dawan.africa/news/tanzania-allegedly-defies-regional-court-order-in-escalating-matchbox-tax-dispute-with-kenya", title: "Tanzania allegedly defies regional court order in escalating matchbox tax dispute with Kenya", publisher: "Dawan Africa", date: 2026, tier: 3}
+      - {url: "https://www.capitalfm.co.ke/news/2026/05/kenya-tanzania-set-may-2026-deadline-to-eliminate-trade-barriers/", title: "Kenya, Tanzania set May 2026 deadline to eliminate trade barriers", publisher: "Capital FM", date: 2026-05, tier: 3}
+      - {url: "https://theeastafrican.co.ke/tea/business-tech/tanzania-blamed-for-39pc-of-eac-trade-barriers-5575306", title: "Tanzania blamed for 39pc of EAC trade barriers as deadline lapses", publisher: "The East African", date: 2026, tier: 3}

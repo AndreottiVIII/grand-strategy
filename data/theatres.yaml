@@ -1,89 +1,107 @@
 # Theatres: the level below grand strategy, where geography and several actors' forces add up.
 # Hand-kept list (Davide, 2026-10-13). An actor may sit in more than one theatre. Organisations never.
-# centre = [lon, lat] of the theatre's marker on its own map; label = [dx, dy] offset of the name in map pixels.
+# centre = [lon, lat] of the theatre's zone on its own map; radius = angular radius in degrees of the zone drawn as a hot haze (Davide, 2026-10-16: the clash zone glows, not the actors);
+# label = [dx, dy] offset of the name in map pixels.
 theatres:
 - id: western-balkans
   name: Western Balkans
   centre: [19.5, 43.5]
+  radius: 4.5
   label: [-150, -28]
   members: [SRB, XKX, HRV, BIH, MNE, ALB, MKD, sub-rs, SVN, HUN, BGR, GRC, TUR, ITA]
 - id: baltic
   name: Baltic and the northern flank
   centre: [22, 58]
+  radius: 7
   label: [-40, -34]
   members: [EST, LVA, LTU, POL, FIN, SWE, NOR, DNK, DEU, RUS, BLR]
 - id: black-sea
   name: Black Sea and Ukraine
   centre: [34, 45.5]
+  radius: 7
   label: [40, -36]
   members: [UKR, RUS, BLR, MDA, ROU, BGR, TUR, GEO, POL]
 - id: caucasus
   name: Caucasus
   centre: [46, 41.5]
+  radius: 4
   label: [70, -18]
   members: [ARM, AZE, GEO, TUR, RUS, IRN]
 - id: eastern-med
   name: Eastern Mediterranean
   centre: [27, 35]
+  radius: 6
   label: [-200, 8]
   members: [GRC, CYP, TUR, ISR, EGY, LBN, SYR, LBY, ITA, FRA]
 - id: levant
   name: Levant
   centre: [36.5, 33]
+  radius: 4
   label: [14, 30]
   members: [ISR, PSE, LBN, SYR, JOR, nsa-hezbollah, nsa-hamas, nsa-sdf, TUR, EGY, IRN]
 - id: gulf
   name: Gulf and Hormuz
   centre: [52, 26.5]
+  radius: 6
   label: [40, 18]
   members: [IRN, SAU, ARE, QAT, KWT, BHR, OMN, IRQ, USA, ISR]
 - id: red-sea
   name: Red Sea and the Horn
   centre: [42, 15]
+  radius: 7
   label: [-20, 44]
   members: [YEM, nsa-houthis, SAU, ARE, EGY, ERI, DJI, SOM, ETH, SDN, nsa-rsf, ISR]
 - id: sahel
   name: Sahel
   centre: [5, 16]
+  radius: 10
   label: [-40, 36]
   members: [MLI, NER, BFA, TCD, MRT, NGA, DZA, FRA, RUS]
 - id: maghreb
   name: Maghreb
   centre: [3, 33]
+  radius: 7
   label: [-120, -24]
   members: [MAR, DZA, TUN, LBY, ESP, FRA, ITA, EGY]
 - id: central-asia
   name: Central Asia
   centre: [65, 42]
+  radius: 9
   label: [30, -30]
   members: [KAZ, UZB, TKM, KGZ, TJK, AFG, RUS, CHN, IRN]
 - id: himalaya
   name: Kashmir and the Himalaya
   centre: [76, 33]
+  radius: 6
   label: [30, 10]
   members: [IND, PAK, CHN, AFG, NPL, BTN]
 - id: bengal
   name: Bay of Bengal
   centre: [89, 16]
+  radius: 7
   label: [-70, 46]
   members: [IND, BGD, MMR, LKA, MDV, CHN]
 - id: taiwan
   name: Taiwan Strait and the East China Sea
   centre: [123, 27]
+  radius: 5
   label: [-30, -44]
   members: [CHN, TWN, JPN, KOR, PRK, USA, PHL]
 - id: south-china-sea
   name: South China Sea
   centre: [114, 12]
+  radius: 8
   label: [24, 34]
   members: [CHN, VNM, PHL, MYS, IDN, BRN, TWN, USA, AUS]
 - id: caribbean
   name: Caribbean and Venezuela
   centre: [-68, 14]
+  radius: 9
   label: [-80, 40]
   members: [VEN, COL, GUY, CUB, USA, MEX, HTI, DOM, NLD]
 - id: southern-cone
   name: Southern Cone and the Andes
   centre: [-62, -28]
+  radius: 9
   label: [-100, 40]
   members: [BRA, ARG, CHL, PER, BOL, PRY, URY, ECU]
