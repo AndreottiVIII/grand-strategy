@@ -279,6 +279,7 @@
       g.selectAll("path.grat").attr("stroke-width", .5 / k).attr("stroke-dasharray", `${2 / k} ${3 / k}`);
       g.selectAll("path.p").attr("stroke-width", f => litWidth(f) / k).attr("stroke-dasharray", f => isClaimed(f) ? `${3 / k} ${2 / k}` : null);
       g.selectAll("path.bond").attr("stroke-width", 3.4 / k);
+      g.selectAll("path.align").attr("stroke-width", 7 / k).attr("stroke-dasharray", `${7 / k} ${5 / k}`);
       g.selectAll("path.seam").attr("stroke-width", 1.6 / k).attr("stroke-dasharray", `${4 / k} ${3 / k}`);
       // a label shows only when its country is wide enough on screen to carry it (the point of view always does)
       g.selectAll(".labels text").attr("font-size", 10 / k).attr("stroke-width", 3 / k)
@@ -323,6 +324,13 @@
       .attr("d", path).attr("fill", "none").attr("pointer-events", "none").attr("stroke-linejoin", "round")
       .attr("clip-path", f => `url(#clip-${f.id})`)
       .attr("stroke", f => stanceOf(f.id).bond === "kin" ? COLOR("partner") : COLOR("rival")).attr("stroke-opacity", .8).attr("stroke-width", 3.4);
+    // alignment without a treaty (ONTOLOGY, 2026-10-16): a dashed band in ally green inside the border
+    const aligned = !posture ? [] : world.features.filter(f => stanceOf(f.id) && stanceOf(f.id).alignment === "de_facto");
+    aligned.forEach(f => { if (defs.select("#clip-" + f.id).empty()) defs.append("clipPath").attr("id", "clip-" + f.id).append("path").attr("d", path(f)); });
+    countries.selectAll("path.align").data(aligned).join("path").attr("class", "align")
+      .attr("d", path).attr("fill", "none").attr("pointer-events", "none").attr("stroke-linejoin", "round")
+      .attr("clip-path", f => `url(#clip-${f.id})`)
+      .attr("stroke", COLOR("ally")).attr("stroke-opacity", .9).attr("stroke-width", 7).attr("stroke-dasharray", "7 5");
 
     // non-state actors and seats
     const seats = g.append("g").attr("class", "seats");
@@ -421,7 +429,7 @@
       <div><h3>Counterparts of ${esc(actors[pov].name)} <span>${counterparts.length}${counterparts.length < total ? " of " + total : ""}</span>${chips ? `<span class="chips">${chips}</span>` : ""}</h3>
         <table><thead><tr><th>Actor</th><th>Posture</th><th>Trend</th><th>Bond</th><th title="lean: who leans on whom">Lean</th><th>Fault</th><th style="text-align:right">Rows</th></tr></thead><tbody>` +
         counterparts.map(c => `<tr class="cp" data-id="${c.id}"><td class="name">${glyph(c.st)}${esc(actors[c.id].short || actors[c.id].name)}</td>
-          <td>${c.st ? fv("grade", c.st.grade, c.st.grade.replace(/_/g, " ")) : "<span class='tr'>-</span>"}</td>
+          <td>${c.st ? fv("grade", c.st.grade, c.st.grade.replace(/_/g, " ")) + (c.st.alignment === "de_facto" ? " <span class='tr' title='aligned without a treaty'>· aligned</span>" : "") : "<span class='tr'>-</span>"}</td>
           <td class="tr">${c.st ? fv("trend", c.st.trend, TREND_SIGN[c.st.trend] + " " + TREND[c.st.trend]) : ""}</td>
           <td class="tr">${c.st ? fv("bond", c.st.bond, BOND_LABEL[c.st.bond].split(" - ")[0].toLowerCase()) : ""}</td>
           <td class="tr lean-c" title="${(l => l == null ? "both sides not written" : l > 0 ? nameOf(c.id) + " leans on " + nameOf(pov) : nameOf(pov) + " leans on " + nameOf(c.id))(leanOf(pov, c.id))}">${(l => l == null ? "·" : l > 0 ? "↑" + l : "↓" + (-l))(leanOf(pov, c.id))}</td>
@@ -483,7 +491,7 @@
       <h3>From the lamp to the data</h3>
       <p>Each actor with a full card carries: <b>objectives</b>, ranked; <b>means</b> by domain; <b>constraints</b>; <b>paradoxes</b>; and a short <b>reading</b>, the only free prose. Every claim has a source with its tier (official document, research, quality press, other) and a confidence grade: <b>A</b> an official document or two independent sources, <b>B</b> one good source, <b>C</b> press or our own inference, always shown.</p>
       <h3>Posture and bond</h3>
-      <p>How one actor sees another is recorded on two axes. The <b>posture</b> is what the relationship is today, on a closed scale: own territory, claimed but not controlled, ally, reluctant ally, partner, reluctant partner, neutral, rival, adversary. "Adversary" is reserved for mortal enemies, where the other's existence or regime is the problem (Iran and Israel); nearly all bad relationships are rivalries. A posture is never our opinion: it needs a source that uses that reading, and it follows the structural position, not the rhetoric of a joint communiqué. The <b>bond</b> is the structure under the posture, what would survive a change of government: kin (shared identity), affinity, none, or grievance (an open historical wound). Two actors can both be "partner" and mean opposite things: for Serbia, Russia is a partner of kin growing colder; the United States a partner with a grievance growing warmer. On the map the posture is the colour and the bond a band inside the border.</p>
+      <p>How one actor sees another is recorded on two axes. The <b>posture</b> is what the relationship is today, on a closed scale: own territory, claimed but not controlled, ally, reluctant ally, partner, reluctant partner, neutral, rival, adversary. "Adversary" is reserved for mortal enemies, where the other's existence or regime is the problem (Iran and Israel); nearly all bad relationships are rivalries. A posture is never our opinion: it needs a source that uses that reading, and it follows the structural position, not the rhetoric of a joint communiqué. The <b>bond</b> is the structure under the posture, what would survive a change of government: kin (shared identity), affinity, none, or grievance (an open historical wound). Two actors can both be "partner" and mean opposite things: for Serbia, Russia is a partner of kin growing colder; the United States a partner with a grievance growing warmer. On the map the posture is the colour and the bond a band inside the border. A partner that moves with the actor as a bloc without any defence clause (China and Russia, Russia and Iran, Japan and Taiwan) carries a third mark, <b>aligned without a treaty</b>: a dashed band inside the border, written only with a source naming the alignment, and counted as an allied leg in Seams, Clients and Gatherings.</p>
       <h3>What the atlas is not</h3>
       <p>It is not a forecast and not a verdict. It is a situation map: a dated, sourced, revisable statement of where everyone stands, built region by region, with the datasets (UN votes, memberships, recognitions) as the floor and researched cards as the reading. Where a card says less than you expected, it is because the sources did not hold.</p>
 
@@ -694,7 +702,7 @@
       <h3>What a card holds</h3>
       <p>Each actor with a full card carries its <b>objectives</b> ranked, its <b>means</b> by domain (diplomatic, informational, military, economic), its <b>constraints</b>, its <b>paradoxes</b> (the places where its own moves turn against it) and a short <b>reading</b>. Every claim has a source with a tier (official document, research, quality press, other) and a confidence grade: <b>A</b> an official document or two independent sources, <b>B</b> one good source, <b>C</b> press or our own inference, always shown.</p>
       <h3>Posture and bond</h3>
-      <p>How one actor sees another is recorded on two axes. The <b>posture</b> is the relationship today, on a closed scale: own territory, claimed but not controlled, ally, reluctant ally, partner, reluctant partner, neutral, rival, adversary. "Adversary" is kept for mortal enemies, where the other's existence or regime is the problem; nearly all bad relationships are rivalries. The grade follows the structural position, never the rhetoric of a communiqué: two members of the same alliance with open friction are reluctant allies, not rivals. The <b>bond</b> is what lies under the posture and would survive a change of government: kin, affinity, none, or grievance. On the map the posture is the colour of the outline and of the light inside a country; the bond is a band inside the border.</p>
+      <p>How one actor sees another is recorded on two axes. The <b>posture</b> is the relationship today, on a closed scale: own territory, claimed but not controlled, ally, reluctant ally, partner, reluctant partner, neutral, rival, adversary. "Adversary" is kept for mortal enemies, where the other's existence or regime is the problem; nearly all bad relationships are rivalries. The grade follows the structural position, never the rhetoric of a communiqué: two members of the same alliance with open friction are reluctant allies, not rivals. The <b>bond</b> is what lies under the posture and would survive a change of government: kin, affinity, none, or grievance. On the map the posture is the colour of the outline and of the light inside a country; the bond is a band inside the border; a dashed band marks a partner aligned with the actor as a bloc, without a treaty.</p>
       <h3>Relations</h3>
       <p>Under the postures sit the relation rows, in four layers: <b>objectives</b> (what an actor wants from another), <b>alignments</b> (treaties, memberships, recognitions), <b>dependencies</b> (energy, trade, debt, arms, remittances, with numbers) and <b>actions</b> (dated events: votes, sanctions, visits, exercises). The datasets are the floor: memberships from Wikidata and official lists, recognition tables from Wikipedia with their citations, every recorded vote of the UN General Assembly since 2022 from the UN Digital Library. The cards are the reading on top of that floor.</p>
       <h3>Seams</h3>
@@ -764,7 +772,7 @@
     }
     const st = stanceOf(id);
     if (!st) return showTip(`<b>${esc(name)}</b><span class="k">No recorded stance${a ? "" : " · not an actor yet"}</span>`, ev);
-    showTip(`<b>${esc(name)}</b>${GRADE_LABEL[st.grade]} · ${TREND_SIGN[st.trend]} ${TREND[st.trend]} · ${BOND_LABEL[st.bond].toLowerCase()} · confidence ${st.confidence}${st.stale ? " · stale" : ""}<br><span class="k">${esc(st.note || "")}</span>`, ev);
+    showTip(`<b>${esc(name)}</b>${GRADE_LABEL[st.grade]} · ${TREND_SIGN[st.trend]} ${TREND[st.trend]} · ${BOND_LABEL[st.bond].toLowerCase()}${st.alignment === "de_facto" ? " · aligned, no treaty" : ""} · confidence ${st.confidence}${st.stale ? " · stale" : ""}<br><span class="k">${esc(st.note || "")}</span>`, ev);
   }
 
   // ---------- dossier with footnotes
@@ -796,7 +804,7 @@
     if (a.card !== "full") {
       const st = stanceOf(id);
       html = head + `<p class="empty">No grand-strategy card yet: what follows comes from datasets only (UN General Assembly votes, memberships from Wikidata).</p>` +
-        (st && pov ? `<h3>As ${esc(actors[pov].name)} sees it</h3><p><b>${GRADE_LABEL[st.grade]}</b>, ${TREND[st.trend]}, ${BOND_LABEL[st.bond].toLowerCase()}${badge(st)}<br>${esc(st.note || "")}${fn(st.sources)}</p>` : "") +
+        (st && pov ? `<h3>As ${esc(actors[pov].name)} sees it</h3><p><b>${GRADE_LABEL[st.grade]}</b>, ${TREND[st.trend]}, ${BOND_LABEL[st.bond].toLowerCase()}${st.alignment === "de_facto" ? ", aligned without a treaty" : ""}${badge(st)}<br>${esc(st.note || "")}${fn(st.sources)}</p>` : "") +
         ungaHtml(id) + relationsHtml(id);
     } else {
       const gs = a.grand_strategy;

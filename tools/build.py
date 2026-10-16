@@ -251,6 +251,8 @@ def main():
                 err(f"{ww}: unknown grade '{st.get('grade')}'")
             if st.get("trend") not in TRENDS:
                 err(f"{ww}: trend must be warming, stable or cooling")
+            if st.get("alignment") not in (None, "de_facto"):
+                err(f"{w} alignment: {st.get('alignment')!r} (only de_facto, hand-written)")
             if st.get("bond") not in BONDS:
                 err(f"{ww}: bond must be kin, affinity, none or grievance")
             check_date(st.get("since"), f"{ww} since")
@@ -403,12 +405,14 @@ def main():
     # hand-written stances of confidence A or B; provisional reciprocals and dataset stances never count.
     # every leg must be a written reading (A or B): the treaty floor alone never makes a seam, or
     # every NATO member would be "pulled" between Cyprus and Turkey (Davide, 2026-10-13)
-    hand = {}
+    hand, defacto = {}, set()   # defacto: hand-written alignment without a treaty (ONTOLOGY, 2026-10-16)
     for a, v in stances.items():
         for st in v["stances"]:
             if st.get("dataset") or st.get("reciprocal_of") or st.get("confidence") not in ("A", "B"):
                 continue
             hand[(a, st["toward"])] = st["grade"]
+            if st.get("alignment") == "de_facto":
+                defacto.add((a, st["toward"]))
     SEAM_HOSTILE, SEAM_ALLIED = {"rival", "adversary"}, {"ally", "reluctant_ally"}
     seams, seen = [], set()
     # an alliance leg counts if either side declares it (A says Y is its ally, or Y says A is)
@@ -416,6 +420,8 @@ def main():
         for g in (hand.get((p, q)), hand.get((q, p))):
             if g in SEAM_ALLIED:
                 return g
+        if (p, q) in defacto or (q, p) in defacto:
+            return "de_facto"
         return None
     ids = {k[0] for k in hand} | {k[1] for k in hand}
     for (a, x), g in hand.items():
@@ -456,7 +462,8 @@ def main():
         if not back:
             continue
         lean = SCALE[st["grade"]] - SCALE[back["grade"]]
-        if lean <= 0 or max(SCALE[st["grade"]], SCALE[back["grade"]]) < 3:
+        aligned = st.get("alignment") == "de_facto" or back.get("alignment") == "de_facto"
+        if lean <= 0 or (max(SCALE[st["grade"]], SCALE[back["grade"]]) < 3 and not aligned):
             continue
         clients.append({"client": a, "patron": x, "lean": lean, "cg": st["grade"], "pg": back["grade"], "cb": st.get("bond"), "pb": back.get("bond"),
                         "cnote": first(st.get("note")), "pnote": first(back.get("note"))})
@@ -492,7 +499,9 @@ def main():
     def is_org(i):
         return (actors.get(i) or {}).get("type") == "org"
     def allied_any(p, q):
-        return handst.get((p, q), {}).get("grade") in FAULT_ALLIED or handst.get((q, p), {}).get("grade") in FAULT_ALLIED or (p, q) in treaty or (q, p) in treaty
+        return (handst.get((p, q), {}).get("grade") in FAULT_ALLIED or handst.get((q, p), {}).get("grade") in FAULT_ALLIED
+                or (p, q) in treaty or (q, p) in treaty
+                or handst.get((p, q), {}).get("alignment") == "de_facto" or handst.get((q, p), {}).get("alignment") == "de_facto")
     hostile_to = {}
     for (a, x), st in handst.items():
         if st["grade"] in FAULT_HOSTILE and not is_org(a) and not is_org(x):
@@ -641,7 +650,7 @@ def main():
         "grades": GRADES,
         "layers": list(TYPES.keys()),
         "actors": list(actors.values()),
-        "stances": {k: v["stances"] for k, v in stances.items()},
+        "stances": {k: [dict(st, alignment=st.get("alignment") or ("treaty" if st["toward"] in allies.get(k, ()) and st["grade"] in FRIENDLY else None)) for st in v["stances"]] for k, v in stances.items()},
         "relations": rows,
         "unga": unga,
         "progress": (lambda q: {"cards": sum(1 for a in q if a["status"] in ("done", "reviewed")), "total": len(q),

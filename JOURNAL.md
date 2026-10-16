@@ -24,6 +24,15 @@ territory (posture claimed_territory with bond kin) is a feud, so China-Taiwan a
 page; Taiwan's reading of China raised from C to B on Taipei's own 'foreign hostile force'
 designation. ONTOLOGY.md updated.
 
+Davide's question of the morning, "Cina e Russia non sono reluctant ally?": by the ontology no (no
+defence clause, and the reluctance is asymmetric, Moscow wants the alliance Beijing refuses), so the
+pair stays partner with affinity. What was missing was the bloc of fact: a derived rule (both
+partner, affinity, a shared enemy) was tried on the data and rejected, since it mostly finds pairs
+that merely share Russia as a rival. Chosen instead ("proviamo!"): a hand-written field
+`alignment: de_facto`, written with a source and reviewed like a grade, counted as an allied leg in
+Seams, Clients and Gatherings and drawn as a dashed band on the map; the build adds `treaty` by
+itself. Marked on both sides for China-Russia, Russia-Iran, Japan-Taiwan, India-Japan, Qatar-Hamas.
+
 A Wikidata membership row made Australia an ASEAN member: removed from the dataset and excluded in
 the generator (WRONG set in tools/datasets/wikidata.py). New tool `tools/onesided.py` lists the
 readings that have no hand-written counterpart: Davide wants to review them with me before the

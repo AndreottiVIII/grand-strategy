@@ -88,6 +88,16 @@ Grades (nine, agreed):
 
 Actors not listed default to `neutral` on the map, drawn in grey.
 
+**Alignment without a treaty** (added 2026-10-16, the China-Russia question). A `partner` stance may
+carry `alignment: de_facto` when the two move together without any defence clause: a joint statement
+of alignment, joint exercises, arms or sanctuary, coordination at the UN. The grade stays `partner`
+(no commitment to the other's defence) and the bond stays what it is; the field records the bloc
+of fact. Hand-written only, with a source naming the alignment, confidence A or B, reviewed like a
+grade; the build adds `alignment: treaty` by itself where a defence treaty or alliance membership
+binds the pair. A de facto alignment counts as an allied leg in Seams, Clients and Gatherings and
+shows on the map as a dashed band inside the border. First pairs: China-Russia, Russia-Iran,
+Japan-Taiwan, India-Japan, Qatar-Hamas (Turkey-Azerbaijan is already ally by the Shusha treaty).
+
 Hostility has two grades and the gap between them is deliberate: `rival` covers almost all
 bad relationships; `adversary` is reserved for enemies in the mortal sense, where a
 declared aim is the other's defeat or disappearance. Serbia in 2026 has rivals and no
