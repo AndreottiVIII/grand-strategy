@@ -111,7 +111,10 @@ Pilot demo built on 2026-10-12: one full card (Serbia) with 18 stances and 43 re
 
 ```bash
 python tools/build.py        # validate data/ and write docs/data.json; exit 1 on errors
+python tools/datasets/worldbank.py   # weight: GDP, military spending, population (World Bank, 3 calls)
+python tools/datasets/borders.py     # neighbours: Wikidata P47 (4 calls)
 ```
+Facts about the atlas itself (start date, tokens spent) live in `data/site.yaml` and show on the Data page.
 
 Preview: the `grand-strategy` entry in `ClaudeTower/.claude/launch.json` serves
 `docs/` on port 8765. Always rebuild before committing: `docs/data.json` is committed

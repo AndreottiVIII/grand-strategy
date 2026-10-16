@@ -298,6 +298,38 @@ weight being for now the number of cards that read each actor (a proper weight, 
 is in BACKLOG). Computed by `tools/build.py` (`clients`), shown on the Clients page and as the
 lean column of the ledger.
 
+## Weight and borders (datasets, added 2026-10-16)
+
+Davide: "fallo, prendendo da un database importante ma non duemila ricerche separate". Two
+dataset passes, one call each, no agents:
+- **Weight** (`tools/datasets/worldbank.py`, `data/datasets/worldbank/weight.json`): GDP, military
+  spending (SIPRI's series as the World Bank republishes it) and population for every economy,
+  latest year available, as shares of the world total; `weight` = half GDP share + half military
+  share. The EU is the Bank's EUU aggregate; Taiwan is not in the Bank's tables and stays blank.
+  Used by gatherings (the weight of the crowd against the weight of the target), flanks (the
+  heaviest open ones), encirclement and levers. Never a judgement: a measure of mass.
+- **Borders** (`tools/datasets/borders.py`, `data/datasets/wikidata/borders.json`): Wikidata P47
+  "shares border with", land and sea, symmetrised, only between states the atlas knows.
+
+## Encirclement (added 2026-10-16)
+
+Luttwak on China: the neighbours are the first the logic of strategy summons. For every full card
+with borders: the neighbours that read it hostile or that it reads hostile (hand-written, A or B),
+the friendly ones (ally, reluctant ally, partner on either side, or a treaty), the unread ones.
+Share = hostile over all neighbours; the hostile and friendly weights are summed. Computed by
+`tools/build.py` (`siege`), shown under the gatherings.
+
+## Levers (added 2026-10-16, first cut)
+
+Luttwak, *From Geopolitics to Geo-Economics* (The National Interest, 1990): the logic of conflict
+in the grammar of commerce. Every dependency row that carries a value between two actors of which at
+least one grades the other rival or adversary (hand-written, A or B). The row is written from the
+card's side and describes the link, so it does not say who holds the handle: the summary does, and
+the same lever can appear from both cards. Organisations count (the dependency is material).
+Computed by `tools/build.py` (`levers`, `lever_index`), Levers page. Davide: "proviamo con una
+piccola parte e se funziona espandi"; next cuts would be a `holder` field on dependency rows and
+the levers between partners.
+
 ## Flanks (added 2026-10-16)
 
 The enemies of my enemies, Luttwak's Byzantine rule (find the enemy behind the enemy and pay him).
@@ -306,7 +338,10 @@ that grades X hostile too (states and non-state actors; organisations never). Z 
 A or Z reads the other ally, reluctant ally or partner, or a treaty or de facto alignment binds
 them; **false** if either reads the other hostile; **open** otherwise. The index per actor counts
 open, recruited and false flanks and the enemies that have no enemies at all (the actor stands
-alone). Computed by `tools/build.py` (`flanks`, `flank_index`), shown on the Flanks page.
+alone). Each flank carries the weight of both actors; the page shows the thirty heaviest open ones
+(ranked by the product of the two weights, so a flank counts when both sides matter), the index,
+and folds the rest (Davide, 2026-10-16: the full tables were unreadable). Computed by
+`tools/build.py` (`flanks`, `flank_index`), shown on the Flanks page.
 
 ## Faults (added 2026-10-13)
 
@@ -323,7 +358,12 @@ that contradicts the colour of its outline.
 
 Luttwak, *The Rise of China vs. the Logic of Strategy*: the counter-coalition an actor's weight
 summons. For every X, the gathering is every state or armed actor that grades X rival or adversary
-(hand-written, A or B; organisations left out, only those who move). **Maturity** = share of pairs
+(hand-written, A or B; organisations left out, only those who move). Since 2026-10-16 (Davide: the
+gathering against ISIS is a hunt, not a counter-coalition) X must be a state and the crowd at least
+five; each gathering carries its **weight** (sum of the members') against the target's, the members
+that border X, and the **unseen**: the members X itself does not grade hostile, the part of the
+gathering it has not noticed (the great state is the last to see it). The page shows the formed and
+forming ones and folds the waiting crowds. **Maturity** = share of pairs
 within the gathering already allied, by a written reading on either side or by treaty (NATO, EU,
 CSTO): here, unlike seams, the question is whether the coalition exists. formed >= 60%, forming
 >= 25%, waiting below; a member is enlisted if allied with at least half of the others. The

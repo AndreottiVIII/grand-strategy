@@ -56,7 +56,9 @@ like every improving idea that comes to you".
 
 - **Alignment without a treaty (China-Russia question, Davide 16/10) - DONE 16/10 as `alignment: de_facto`, see ONTOLOGY.** Both read each other as partner with affinity: no defence clause, Beijing refuses the alliance Moscow would sign. The grade is right by the ontology, but the map does not show their de facto bloc. Idea: a marker 'aligned, no treaty' (a stance flag or a third bond value) that the build can use for gatherings and the map, for pairs like China-Russia, China-Pakistan, Russia-Iran, Turkey-Azerbaijan. Needs an ONTOLOGY decision.
 
-- **Actor weight.** Clients uses 'cards reading the actor' as a weight proxy; a real weight (GDP, forces, population from Wikidata) would serve Clients, Gatherings and Flanks. Add as a dataset.
+- ~~**Actor weight.**~~ DONE 2026-10-16: World Bank dataset (`tools/datasets/worldbank.py`), used by gatherings, flanks, encirclement, levers. Still to do: use it in Clients (the `readby` guard) and in theatre heat.
+- 2026-10-16 · **Levers, next cuts** if the first holds: a `holder` field on dependency rows (who holds the handle), levers between partners that could turn, a lever lens on the map.
+- 2026-10-16 · **Taiwan has no weight** (not in the World Bank tables): add by hand from the IMF WEO with a source, or leave blank and say so.
 
 - **Dossier formatting pass (Davide, 16/10, for the final checks).** Many dossiers (Somalia for one) read badly: fix the form into proper paragraphs, above all the **reading** (one dense block today: split into paragraphs), never the content.
 

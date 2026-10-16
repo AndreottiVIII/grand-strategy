@@ -331,3 +331,21 @@ svg#tmap { width: 100%; height: 100%; display: block; }
 .theatre .top b { font-weight: 400; }
 .theatre .top u { text-decoration: none; color: var(--ink-3); }
 .theatre .top td.w { text-align: right; color: var(--ink-3); }
+
+/* gatherings: neighbours and the members the target does not see (2026-10-16) */
+.gathering h3 span.w { color: var(--c-seam); }
+.gathering .roll i.nb { color: var(--accent); font-size: 10px; margin-left: 2px; }
+.gathering .roll.unseen i.g { color: var(--ink-3); font-size: 10px; margin-left: 3px; }
+.gathering .roll.unseen b { color: var(--c-rival); }
+.ledger-t td.n { white-space: nowrap; color: var(--ink); }
+.ledger-t td .tr, .ledger-t td span.tr { color: var(--ink-3); font-size: 11px; }
+.ledger-t.dist td.kind { width: 180px; }
+.ledger-t.dist .bar { color: var(--c-seam); letter-spacing: .05em; }
+.ledger-t td.n b { font-weight: 400; color: var(--ink); }
+/* data page */
+.stats { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px 20px; margin: 12px 0 10px; }
+.stat { border-top: 1px solid var(--rule); padding: 8px 0 4px; }
+.stat b { display: block; font-family: var(--font-display); font-size: 34px; color: var(--ink); font-weight: 400; line-height: 1; text-shadow: 0 0 8px var(--accent); }
+.stat span { font-family: var(--font-ui); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+.cols2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0 40px; }
+.page code { font-family: var(--font-ui); color: var(--ink); }

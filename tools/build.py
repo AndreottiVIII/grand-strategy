@@ -307,6 +307,15 @@ def main():
         r["stale"] = False
     rows.extend(unga_rows)
 
+    # --- datasets: weight (World Bank: GDP and military spending shares of the world) and borders
+    # (Wikidata P47). Davide, 2026-10-16: the weight from one important database, the neighbours for encirclement.
+    WB = DATA / "datasets" / "worldbank" / "weight.json"
+    weight_ds = json.loads(WB.read_text(encoding="utf-8")) if WB.exists() else {"actors": {}, "source": {}, "world": {}}
+    weight = {a: r["weight"] for a, r in weight_ds["actors"].items() if a in actors}
+    BD = DATA / "datasets" / "wikidata" / "borders.json"
+    borders_ds = json.loads(BD.read_text(encoding="utf-8")) if BD.exists() else {"borders": {}, "source": {}}
+    borders = {a: [b for b in v if b in actors] for a, v in borders_ds["borders"].items() if a in actors}
+
     # --- derived stances: co-members of a defence alliance are treaty allies (dataset, bond unknown)
     ALLIANCES = {
         "org-nato": ("NATO", "Article 5 of the North Atlantic Treaty", "https://www.nato.int/cps/en/natohq/official_texts_17120.htm"),
@@ -561,7 +570,9 @@ def main():
     gatherings = []
     for x, members in hostile_to.items():
         ids = sorted(members)
-        if len(ids) < 3:
+        # Davide, 2026-10-16: a gathering is summoned by a power's weight, so the target is a state and the
+        # crowd at least five; the gathering against ISIS or Hamas is a hunt, not a counter-coalition
+        if len(ids) < 5 or (actors.get(x) or {}).get("type") != "state":
             continue
         pairs = [(p, q) for i, p in enumerate(ids) for q in ids[i + 1:]]
         allied_pairs = sum(1 for p, q in pairs if allied_any(p, q))
@@ -570,9 +581,34 @@ def main():
         for m in ids:
             n_allied = sum(1 for o in ids if o != m and allied_any(m, o))
             rows_.append({"id": m, "grade": members[m], "allies_in": n_allied, "enlisted": n_allied >= (len(ids) - 1) / 2})
+        nb = set(borders.get(x, []))
+        for m in rows_:
+            m["w"] = round(weight.get(m["id"], 0.0), 4)
+            m["neighbour"] = m["id"] in nb
+        # the last to see it (Luttwak on China): the members X itself still reads as neutral, partner or not at all
+        unseen = [{"id": m, "grade": handst.get((x, m), {}).get("grade")} for m in ids if handst.get((x, m), {}).get("grade") not in FAULT_HOSTILE]
         gatherings.append({"x": x, "n": len(ids), "maturity": round(maturity, 2), "allied_pairs": allied_pairs, "pairs": len(pairs),
-                           "state": "formed" if maturity >= 0.6 else "forming" if maturity >= 0.25 else "waiting", "members": rows_})
-    gatherings.sort(key=lambda g: (-g["n"], -g["maturity"], g["x"]))
+                           "state": "formed" if maturity >= 0.6 else "forming" if maturity >= 0.25 else "waiting", "members": rows_,
+                           "weight": round(sum(weight.get(m, 0.0) for m in ids), 4), "x_weight": round(weight.get(x, 0.0), 4),
+                           "neighbours": [m for m in ids if m in nb], "n_neighbours": len(nb), "unseen": unseen})
+    gatherings.sort(key=lambda g: (-g["weight"], -g["n"], g["x"]))
+
+    # --- encirclement (Luttwak, The Rise of China: the neighbours are the first the logic of strategy summons).
+    # For every full card with borders: the neighbours it reads or that read it hostile, the friendly ones
+    # (ally, reluctant ally, partner, or treaty), the unread ones. Share = hostile over all neighbours.
+    SIEGE_FRIEND = {"ally", "reluctant_ally", "partner"}
+    siege = []
+    for a, nb in borders.items():
+        if (actors.get(a) or {}).get("card") != "full" or not nb:
+            continue
+        rd = lambda p, q: handst.get((p, q), {}).get("grade")
+        hostile = [n for n in nb if rd(a, n) in FAULT_HOSTILE or rd(n, a) in FAULT_HOSTILE]
+        friendly = [n for n in nb if n not in hostile and (rd(a, n) in SIEGE_FRIEND or rd(n, a) in SIEGE_FRIEND or (a, n) in treaty or (n, a) in treaty)]
+        unread = [n for n in nb if rd(a, n) is None and rd(n, a) is None and (a, n) not in treaty and (n, a) not in treaty]
+        siege.append({"a": a, "n": len(nb), "hostile": hostile, "friendly": friendly, "unread": unread,
+                      "share": round(len(hostile) / len(nb), 2), "hostile_weight": round(sum(weight.get(n, 0.0) for n in hostile), 4),
+                      "friendly_weight": round(sum(weight.get(n, 0.0) for n in friendly), 4), "w": round(weight.get(a, 0.0), 4)})
+    siege.sort(key=lambda r: (-r["share"], -r["hostile_weight"], r["a"]))
     # convergences, per actor: who shares one of its rivals and is not its ally (the table it has not sat at)
     convergences = {}
     for a in {k[0] for k in handst}:
@@ -716,11 +752,88 @@ def main():
                 kind = "false" if (ga in FLANK_HOST or gb in FLANK_HOST) else "recruited" if (ga in FLANK_FRIEND or gb in FLANK_FRIEND or bound) else "open"
                 counts[kind] += 1
                 flanks.append({"a": a, "x": x, "ax": g, "z": z, "zx": gz, "kind": kind, "az": ga, "za": gb,
+                               "zw": round(weight.get(z, 0.0), 4), "aw": round(weight.get(a, 0.0), 4),
                                "znote": first(handst[(z, x)].get("note"))})
         flank_index.append({"a": a, "enemies": len(mine), **counts})
     flank_index.sort(key=lambda r: (-r["open"], -r["recruited"], r["a"]))
     flanks.sort(key=lambda f: (f["a"], f["kind"], f["x"], f["z"]))
     warnings.append(f"{len(flanks)} flanks for {len(flank_index)} actors ({sum(r['open'] for r in flank_index)} open)")
+
+    # --- levers (Luttwak, From Geopolitics to Geo-Economics, 1990: the logic of conflict in the grammar of
+    # commerce). First cut, Davide 2026-10-16: every dependency row that carries a number between two actors
+    # of which at least one reads the other rival or adversary (hand-written, A or B). The row is written from
+    # the card's side, so it does not say who holds the handle: the summary does. Organisations count here
+    # (the EU buys gas), as the dependency is material, not a vote.
+    LEVER_KIND = {"energy_import": "energy", "energy_export": "energy", "debt": "debt", "trade_share": "trade", "investment": "investment",
+                  "arms_supply": "arms", "military_presence": "bases", "remittances": "remittances"}
+    levers, lever_index = [], {}
+    for r in rows:
+        if r["layer"] != "dependency" or r.get("value") is None:
+            continue
+        a, x = r["from"], r["to"]
+        ax, xa = handst.get((a, x), {}).get("grade"), handst.get((x, a), {}).get("grade")
+        if ax not in FAULT_HOSTILE and xa not in FAULT_HOSTILE:
+            continue
+        levers.append({"a": a, "x": x, "ax": ax, "xa": xa, "type": r["type"], "kind": LEVER_KIND.get(r["type"], r["type"]),
+                       "value": r["value"], "unit": r.get("unit"), "summary": r["summary"], "confidence": r.get("confidence"),
+                       "since": str(r.get("since") or ""), "stale": bool(r.get("stale")), "w": round(max(weight.get(a, 0.0), weight.get(x, 0.0)), 4)})
+        for p in (a, x):
+            e = lever_index.setdefault(p, {"a": p, "n": 0, "kinds": {}})
+            e["n"] += 1
+            e["kinds"][LEVER_KIND.get(r["type"], r["type"])] = e["kinds"].get(LEVER_KIND.get(r["type"], r["type"]), 0) + 1
+    levers.sort(key=lambda r: (r["kind"], -r["w"], r["a"], r["x"]))
+    lever_index = sorted(lever_index.values(), key=lambda e: (-e["n"], e["a"]))
+    warnings.append(f"{len(levers)} levers between rivals for {len(lever_index)} actors")
+
+    # --- stats for the Data page: what the atlas is, counted (Davide, 2026-10-16)
+    from collections import Counter
+    hand_sts = [st for v in stances.values() for st in v["stances"] if not st.get("dataset") and not st.get("reciprocal_of")]
+    all_sts = [st for v in stances.values() for st in v["stances"]]
+    src_tier = {}
+    def take_sources(items):
+        for it in items or []:
+            for sr in it.get("sources") or []:
+                if sr.get("url") and sr["url"] not in src_tier:
+                    src_tier[sr["url"]] = sr.get("tier")
+    for a in actors.values():
+        gs = a.get("grand_strategy") or {}
+        for sec in ("objectives", "means", "constraints", "paradoxes"):
+            take_sources(gs.get(sec))
+    take_sources(hand_sts)
+    take_sources([r for r in rows if not r.get("dataset")])
+    site_meta = yaml.safe_load((DATA / "site.yaml").open(encoding="utf-8")) if (DATA / "site.yaml").exists() else {}
+    MEMB = DATA / "datasets" / "wikidata" / "memberships.json"
+    RECOG = DATA / "datasets" / "wikipedia" / "recognition.json"
+    def fdate(p):
+        return date.fromtimestamp(p.stat().st_mtime).isoformat() if p.exists() else None
+    stats = {
+        "actors": {"total": len(actors), "full": sum(1 for a in actors.values() if a.get("card") == "full"),
+                   "stub": sum(1 for a in actors.values() if a.get("card") != "full"), "by_type": dict(Counter(a.get("type") for a in actors.values()))},
+        "stances": {"total": len(all_sts), "hand": len(hand_sts), "mirrored": sum(1 for st in all_sts if st.get("reciprocal_of")),
+                    "dataset": sum(1 for st in all_sts if st.get("dataset")), "de_facto": sum(1 for st in hand_sts if st.get("alignment") == "de_facto"),
+                    "confidence": dict(Counter(st.get("confidence") for st in hand_sts)), "grades": dict(Counter(st["grade"] for st in hand_sts)),
+                    "trends": dict(Counter(st.get("trend") for st in hand_sts)), "bonds": dict(Counter(st.get("bond") for st in hand_sts)),
+                    "stale": sum(1 for st in hand_sts if st.get("stale"))},
+        "relations": {"total": len(rows), "hand": sum(1 for r in rows if not r.get("dataset")), "dataset": sum(1 for r in rows if r.get("dataset")),
+                      "by_layer": dict(Counter(r["layer"] for r in rows)),
+                      "types": dict(Counter(f"{r['layer']}/{r['type']}" for r in rows).most_common()),
+                      "dependency_with_number": sum(1 for r in rows if r["layer"] == "dependency" and r.get("value") is not None)},
+        "sources": {"unique": len(src_tier), "by_tier": dict(Counter(str(t) for t in src_tier.values()))},
+        "datasets": [
+            {"name": "States and memberships", "publisher": "Wikidata and the organisations' official lists", "rows": len(json.loads(MEMB.read_text(encoding="utf-8"))) if MEMB.exists() else 0, "date": fdate(MEMB), "tier": 1, "tool": "tools/datasets/wikidata.py"},
+            {"name": "Recognition tables", "publisher": "Wikipedia, with its citations", "rows": sum(len(x) for v in json.loads(RECOG.read_text(encoding="utf-8")).values() for x in v.values() if isinstance(x, (list, dict))) if RECOG.exists() else 0, "date": fdate(RECOG), "tier": 3, "tool": "tools/datasets/wikipedia.py"},
+            {"name": "UN General Assembly recorded votes", "publisher": "UN Digital Library", "rows": len(records), "date": fdate(DATA / "datasets" / "unga" / "2026.json"), "tier": 1, "tool": "tools/datasets/unga.py"},
+            {"name": "Weight: GDP, military spending, population", "publisher": "World Bank (military spending is SIPRI's series)", "rows": len(weight_ds.get("actors", {})), "date": weight_ds.get("source", {}).get("fetched"), "tier": 1, "tool": "tools/datasets/worldbank.py"},
+            {"name": "Borders", "publisher": "Wikidata (P47 shares border with)", "rows": sum(len(v) for v in borders_ds.get("borders", {}).values()) // 2, "date": borders_ds.get("source", {}).get("fetched"), "tier": 2, "tool": "tools/datasets/borders.py"},
+        ],
+        "derived": {"seams": len(seams), "buffers": len(buffers), "clients": len(clients), "tepid": len(tepid), "faults": len(faults), "gatherings": len(gatherings),
+                    "flanks": len(flanks), "flanks_open": sum(r["open"] for r in flank_index), "levers": len(levers), "siege": len(siege), "theatres": len(theatres),
+                    "currents": len(currents), "convergences": sum(len(v) for v in convergences.values()), "derived_allies": derived},
+        "snapshots": [p.stem for p in sorted(SNAP.glob("*.json"))],
+        "site": site_meta,
+        "world": weight_ds.get("world", {}),
+    }
+
 
     out = {
         "generated": today.isoformat(),
@@ -730,6 +843,8 @@ def main():
         "faults": faults,
         "gatherings": gatherings,
         "flanks": flanks, "flank_index": flank_index,
+        "levers": levers, "lever_index": lever_index,
+        "siege": siege, "borders": borders, "weight": weight, "stats": stats,
         "convergences": convergences,
         "currents": currents,
         "alarms": {"allies_cooling": allies_cooling, "rivals_warming": rivals_warming},

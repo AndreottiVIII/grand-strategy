@@ -1,5 +1,32 @@
 # Journal
 
+## 2026-10-16 · Weight, borders, encirclement, levers; gatherings pruned; flanks trimmed; Data page; EU reads China as reluctant partner
+
+Davide's review of the site, with his decisions:
+- **EU -> China regraded** rival to reluctant partner (Davide's instinct, checked against the data: Germany,
+  the Netherlands, Canada and Korea read Beijing reluctant partner; rival is the reading of those with a
+  direct security stake). "Systemic rival" is the communiqué; the structure is a bloc that keeps trading
+  with a power it distrusts, resisting. Note rewritten, de-risking speech (30 Mar 2023) added as source.
+  China -> EU stays partner: the asymmetry is the pair.
+- **Gatherings**: targets states only, crowd at least five (ISIS, Hamas, Hezbollah, the Houthis out: a hunt,
+  not a counter-coalition). 19 to 9. Each gathering weighed, neighbours marked, and the *unseen* listed:
+  the members the target does not read as hostile. Formed/forming shown, waiting crowds folded.
+- **Encirclement** under the gatherings: share of hostile neighbours per card, from a new borders dataset.
+- **Flanks** kept (Davide: "proviamo opzione 2"): the thirty heaviest open flanks by the product of the two
+  weights, the index, the rest folded.
+- **Levers**, first cut: the 59 dependency rows with a number between actors of which one reads the other
+  hostile (Russia on 22 of them, mostly energy). Luttwak 1990, geo-economics. Expand if it holds.
+- **Weight dataset** from the World Bank (GDP, military spending, population; three calls, 195 economies)
+  and **borders** from Wikidata P47 (four calls, 435 borders). No agents, no searches.
+- **Data page**: the atlas counted (actors, stances by hand/mirrored/dataset, confidence, grades, relations
+  by layer and type, 8,571 distinct sources by tier, datasets with their dates, what the build derives,
+  snapshots and what moved, tokens: 38.05M as of today, kept in `data/site.yaml`). Last commit read from
+  the GitHub API at page load.
+- Checked on Davide's question: seams with a de facto leg are one (Qatar between Hamas and the US), and
+  that is structurally right: the de facto alignments sit between powers that share enemies, so they
+  feed gatherings and recruited flanks, not seams.
+Cost: zero agents; build and site work only.
+
 ## 2026-10-16 · Mexico (MEX) enriched to protagonist standard, Sonnet, 37 web calls
 
 The Haiku-economy card was extended, not rewritten. Counts: objectives 4 to 6, means 3 to 6 (military, diplomatic, informational added), constraints 3 to 6, paradoxes 3 to 6 (cartels as pretext, judicial reform, nearshoring under tariffs added; the remittance tax and the China tariffs were already there, the US-market lever sits in constraint 3 and the nearshoring paradox), stances 10 to 25, relations 9 to 40. Tier field moved from `minor` to `protagonist` (the queue already said protagonist).
