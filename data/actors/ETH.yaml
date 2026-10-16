@@ -12,11 +12,11 @@ regions:
 - east-africa
 card: full
 tier: protagonist
-last_verified: '2026-10-12'
+last_verified: '2026-10-16'
 grand_strategy:
   objectives:
   - rank: 1
-    text: 'Hold the state and the mandate against the Alliance for Survival: defeat the TPLF-led coalition of seven armed groups that announced on 20 Sep 2026 its aim to overthrow Abiy, keep Mekelle (retaken 3-4 Oct) and the Afar and Amhara fronts, and govern on the Prosperity Party''s 438-seat majority (Abiy sworn in again on 5 Oct 2026; AP counts a third term, Semafor a second full one). Everything else is conditional on this.'
+    text: 'Hold the state and the mandate against the Alliance for Survival: defeat the coalition of seven armed groups (chaired by Fano commander Zemene Kassie and joined by the TPLF, the OLA, the ONLF and the Afar, Benishangul and Gumuz movements) that announced on 20 Sep 2026 its aim to remove Abiy and set up a transitional administration, keep Mekelle (retaken 3-4 Oct) and the Afar and Amhara fronts, and govern on the Prosperity Party''s 438-seat majority (Abiy sworn in again on 5 Oct 2026 for a new five-year term; AP counts a third term, Semafor a second full one). Everything else is conditional on this.'
     confidence: B
     sources:
     - url: https://aljazeera.com/news/2026/9/21/ethiopian-armed-groups-forge-alliance-against-government
@@ -43,6 +43,11 @@ grand_strategy:
       title: Ethiopia again demands access to the Red Sea as tensions with neighbors escalate
       publisher: AP (via ABC News)
       date: '2026-10-05'
+      tier: 3
+    - url: https://aljazeera.com/news/2026/9/23/can-ethiopias-seven-group-rebel-alliance-challenge-abiy-ahmed
+      title: Can Ethiopia's seven-group rebel alliance challenge Abiy Ahmed?
+      publisher: Al Jazeera
+      date: '2026-09-23'
       tier: 3
   - rank: 2
     text: 'Win sovereign sea access (''an outlet to the sea'', ''on the principle of give and take'', Abiy to parliament on 5 Oct 2026): a port Ethiopia controls, which it names a question of survival. Assab, lost with Eritrean independence in 1993, is the prize some in government have long had in view; Berbera (the MoU of 1 Jan 2024) and a Somali-sovereign outlet (Ankara, Dec 2024) are the alternatives that failed or stalled.'
@@ -127,9 +132,14 @@ grand_strategy:
       date: 2024-08
       tier: 3
   - rank: 5
-    text: 'Restore external finance without losing the programme: finish the debt restructuring (official creditors USD 8.4bn in 2025, the defaulted USD 1bn Eurobond swapped for a USD 880m 2029 note in a preliminary deal of 29 Jun 2026), keep the IMF programme of USD 3.4bn and the floated birr, and bring back EU budget support (resumed April 2026).'
+    text: 'Restore external finance without losing the programme: finish the debt restructuring (official creditors USD 8.4bn in 2025, the defaulted USD 1bn Eurobond swapped for a USD 880m 2029 note in a preliminary deal of 29 Jun 2026), keep the IMF programme of USD 3.4bn (fifth review completed on 1 Jul 2026: about USD 464m released, about USD 2.65bn disbursed in all) and the floated birr, and bring back EU budget support (resumed April 2026).'
     confidence: B
     sources:
+    - url: https://www.imf.org/en/news/articles/2026/07/01/pr26235-ethiopia-imf-completes-5th-review-under-ecf-arrangement
+      title: IMF Executive Board Completes the Fifth Review under the Extended Credit Facility Arrangement for Ethiopia
+      publisher: International Monetary Fund
+      date: '2026-07-01'
+      tier: 1
     - url: https://allafrica.com/stories/202601230003.html
       title: 'Ethiopia: IMF approves USD 261 million disbursement to Ethiopia, cites stronger macroeconomic performance'
       publisher: AllAfrica
@@ -320,7 +330,7 @@ grand_strategy:
       date: 2026-04
       tier: 1
   constraints:
-  - text: 'War on every flank at once: the TPLF in Tigray and Afar, Fano in Amhara, the OLA in Oromia, the ONLF, the Afar, Benishangul and Gumuz movements, all joined in one alliance on 20 Sep 2026; the alliance''s drones reportedly struck military sites in Addis Ababa on 1 Oct (unconfirmed by Reuters). A mandate won in June with polling not held in some constituencies for security reasons (Wikipedia''s election page says the whole of Tigray did not vote).'
+  - text: 'War on every flank at once: the TPLF in Tigray and Afar, Fano in Amhara, the OLA in Oromia, the ONLF, the Afar, Benishangul and Gumuz movements, all joined in one alliance on 20 Sep 2026; the alliance''s drones reportedly struck military sites in Addis Ababa on 1 Oct (unconfirmed by Reuters). A mandate won in June on 438 of the 486 seats contested (547 in all), with no voting in Tigray (Al Jazeera).'
     confidence: B
     sources:
     - url: https://aljazeera.com/news/2026/9/21/ethiopian-armed-groups-forge-alliance-against-government
@@ -343,11 +353,6 @@ grand_strategy:
       publisher: Dawan Africa
       date: 2026-06
       tier: 3
-    - url: https://en.wikipedia.org/wiki/2026_Ethiopian_general_election
-      title: 2026 Ethiopian general election
-      publisher: Wikipedia (index only)
-      date: '2026-10-12'
-      tier: 4
   - text: 'Landlocked: Djibouti handled 96.7% of Ethiopia''s external freight in FY2025/26 (17.57 million tonnes) and the Addis-Djibouti road and railway carry it; every alternative (Berbera, Tadjoura, Lamu) is marginal. The state that wants to end the dependence cannot afford to offend Djibouti.'
     confidence: B
     sources:
@@ -368,9 +373,14 @@ grand_strategy:
       publisher: Capital FM (Kenya)
       date: '2025-02-28'
       tier: 3
-  - text: 'The debt is restructured, not cleared: the 2023 default, official creditors'' USD 8.4bn deal in 2025, a Eurobond swap still preliminary, and IMF conditions (fuel subsidies to be phased out, no non-concessional borrowing except Koysha) that leave no room for a war economy.'
+  - text: 'The debt is restructured, not cleared: the 2023 default, official creditors'' USD 8.4bn deal in 2025, a Eurobond swap still preliminary, and IMF conditions (fuel subsidies to be phased out, no non-concessional borrowing except Koysha, debt restructuring to be completed in good faith with creditors) that leave no room for a war economy.'
     confidence: B
     sources:
+    - url: https://www.imf.org/en/news/articles/2026/07/01/pr26235-ethiopia-imf-completes-5th-review-under-ecf-arrangement
+      title: IMF Executive Board Completes the Fifth Review under the Extended Credit Facility Arrangement for Ethiopia
+      publisher: International Monetary Fund
+      date: '2026-07-01'
+      tier: 1
     - url: https://allafrica.com/stories/202601230003.html
       title: 'Ethiopia: IMF approves USD 261 million disbursement to Ethiopia, cites stronger macroeconomic performance'
       publisher: AllAfrica
@@ -530,19 +540,19 @@ grand_strategy:
       publisher: The National
       date: '2026-10-04'
       tier: 3
-  - text: The landslide did not settle the question it was held to settle. The Prosperity Party took 438 of 547 seats in June 2026 with, by Wikipedia's account, the whole of Tigray unable to vote and conflicts in other regions; three months later the people excluded from the count were an armed alliance of seven, and the mandate Abiy was sworn into on 5 Oct was a mandate over a country at war with a part of itself.
-    confidence: C
+  - text: The landslide did not settle the question it was held to settle. The Prosperity Party took 438 of the 486 seats contested (547 in all) in June 2026, with no voting in Tigray and conflict in other regions; three months later the people excluded from the count were an armed alliance of seven, chaired by a Fano commander, and the mandate Abiy was sworn into on 5 Oct was a mandate over a country at war with a part of itself.
+    confidence: B
     sources:
     - url: https://www.dawan.africa/news/prosperity-party-wins-438-seats-in-ethiopias-parliament
       title: Prosperity Party wins 438 seats in Ethiopia's parliament
       publisher: Dawan Africa
       date: 2026-06
       tier: 3
-    - url: https://en.wikipedia.org/wiki/2026_Ethiopian_general_election
-      title: 2026 Ethiopian general election
-      publisher: Wikipedia (index only)
-      date: '2026-10-12'
-      tier: 4
+    - url: https://aljazeera.com/news/2026/9/23/can-ethiopias-seven-group-rebel-alliance-challenge-abiy-ahmed
+      title: Can Ethiopia's seven-group rebel alliance challenge Abiy Ahmed?
+      publisher: Al Jazeera
+      date: '2026-09-23'
+      tier: 3
     - url: https://aljazeera.com/news/2026/9/21/ethiopian-armed-groups-forge-alliance-against-government
       title: Ethiopian armed groups forge alliance against government
       publisher: Al Jazeera
@@ -581,9 +591,14 @@ grand_strategy:
       publisher: Geeska Afrika
       date: 2026-05
       tier: 3
-  - text: Playing Mogadishu and Hargeisa against each other leaves Ethiopia with neither. The MoU with Somaliland (1 Jan 2024) gave it a port option and an enemy in Somalia; Ankara (Dec 2024) repaired Somalia and left the MoU unburied; after Israel recognised Somaliland (26 Dec 2025) Addis Ababa kept what a Somaliland-aligned outlet calls 'studied silence'. Within a week Hassan Sheikh Mohamud met Abiy in Addis Ababa (29 Sep) and signed at El Alamein (4 Oct) a text that rejects any support for Somaliland.
+  - text: Playing Mogadishu and Hargeisa against each other leaves Ethiopia with neither. The MoU with Somaliland (1 Jan 2024) gave it a port option and an enemy in Somalia; Ankara (Dec 2024) repaired Somalia and left the MoU unburied; after Israel recognised Somaliland (26 Dec 2025) Addis Ababa kept what a Somaliland-aligned outlet calls 'studied silence'. Within a week Hassan Sheikh Mohamud met Abiy in Addis Ababa (about 29 Sep) and signed at El Alamein (4 Oct) a text that rejects any support for Somaliland, then congratulated Abiy on his oath (5 Oct) and said Somalia does not object to Ethiopian access through Somali territory if it is negotiated formally.
     confidence: B
     sources:
+    - url: https://www.aljazeera.com/news/2026/10/5/ethiopias-pm-insists-on-access-to-red-sea-despite-regional-conflict-threat
+      title: Ethiopia's PM insists on access to Red Sea despite regional conflict threat
+      publisher: Al Jazeera
+      date: '2026-10-05'
+      tier: 3
     - url: https://www.everycrsreport.com/files/2024-01-23_R47898_a65946e392dd64a86c51d20cb087c065625a52e0.html
       title: 'Ethiopia: In Brief (CRS report R47898)'
       publisher: Congressional Research Service

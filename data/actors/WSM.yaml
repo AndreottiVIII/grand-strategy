@@ -11,23 +11,23 @@ regions:
 - southeast-asia-oceania
 card: full
 tier: minor
-last_verified: '2026-10-12'
+last_verified: '2026-10-16'
 dataset: wikidata
 
 grand_strategy:
   objectives:
     - rank: 1
-      text: "Keep the 1962 Treaty of Friendship with New Zealand as its security floor: Samoa has no formal military, and under the treaty New Zealand must consider any Samoan request for defence help."
+      text: "Keep the 1962 Treaty of Friendship with New Zealand as its security floor: Samoa has no formal military, and the treaty makes New Zealand its channel for defence help."
       confidence: A
       sources:
         - {url: "https://treaties.un.org/doc/Publication/UNTS/Volume%20453/volume-453-I-6515-English.pdf", title: "New Zealand and Western Samoa: Treaty of Friendship", publisher: "UN Treaty Series", date: 1962-08, tier: 1}
     - rank: 2
-      text: "Turn money from abroad into the budget: personal remittances about a quarter of GDP (24.0% in 2024), Australian budget support and flagship aid, and Chinese lending that was about 37% of external debt at end-2023 (our calculation from the Samoa Observer figures)."
+      text: "Turn money from abroad into the budget: personal remittances were 22.4% of GDP in 2025 (24.0% in 2024), Australian budget support and flagship aid, and Chinese lending that was about 37% of external debt at end-2023 (our calculation from the Samoa Observer figures)."
       confidence: B
       sources:
         - {url: "https://www.samoaobserver.ws/category/samoa/108377", title: "Total external debt was $810.4 million; China is owed $299.8 million", publisher: "Samoa Observer", date: 2024-03-10, tier: 3}
         - {url: "https://www.dfat.gov.au/sites/default/files/development-cooperation-fact-sheet-samoa.docx", title: "Development cooperation fact sheet: Samoa", publisher: "DFAT", date: 2025, tier: 1}
-        - {url: "https://statisticsoftheworld.com/country/samoa/BX.TRF.PWKR.DT.GD.ZS", title: "Personal remittances received (% of GDP), Samoa (World Bank series)", publisher: "Statistics of the World (World Bank data)", date: 2025, tier: 4}
+        - {url: "https://api.worldbank.org/v2/country/WS/indicator/BX.TRF.PWKR.DT.GD.ZS?format=json", title: "Personal remittances received (% of GDP), Samoa, World Bank indicator BX.TRF.PWKR.DT.GD.ZS (last updated 2026-10-08)", publisher: "World Bank", date: 2026-10-08, tier: 1}
     - rank: 3
       text: "Keep the labour schemes in New Zealand and Australia open while taxing their use: 3,798 Samoans recruited under New Zealand's RSE scheme in 2024-25, a NZ$50 fee per worker from June 2025, and Australian PALM contracts capped at three years."
       confidence: C
@@ -63,10 +63,12 @@ grand_strategy:
       sources:
         - {url: "https://www.samoaobserver.ws/category/samoa/108377", title: "Total external debt was $810.4 million; China is owed $299.8 million", publisher: "Samoa Observer", date: 2024-03-10, tier: 3}
         - {url: "https://www.samoaobserver.ws/category/samoa/103275", title: "Samoa at high risk debt distress: IMF", publisher: "Samoa Observer (title only; not opened)", date: 2023, tier: 3}
-    - text: "Small, exposed economy and thin health cover: the 2019 measles outbreak reached at least 68 deaths by early December 2019 (mostly children under four); later compiled tallies say 83, not checked against an official figure."
+    - text: "Political churn: the budget was rejected on 27 May 2025, a snap election followed on 29 August, and the government sworn in on 16 September 2025 (FAST, 31 of 51 seats) has no sourced foreign-policy line beyond its March 2026 dispute with New Zealand over a matai title."
       confidence: C
       sources:
-        - {url: "https://www.voanews.com/a/science-health_samoas-measles-death-toll-rises-68/6180702", title: "Samoa's measles death toll rises to 68", publisher: "VOA", date: 2019-12, tier: 3}
+        - {url: "https://www.theweek.in/wire-updates/international/2025/06/10/fes23-samoa-election.html", title: "Samoa to hold snap election on Aug 29 after PM's government collapses (search snippet, not opened)", publisher: "The Week (wire)", date: 2025-06-10, tier: 3}
+        - {url: "https://www.clickondetroit.com/news/world/2025/08/29/samoa-votes-in-an-election-that-will-decide-the-fate-of-its-first-woman-leader/", title: "Samoa votes in an election that will decide the fate of its first woman leader (AP; search snippet, not opened)", publisher: "Associated Press", date: 2025-08-29, tier: 3}
+        - {url: "https://www.samoaobserver.ws/category/samoa/116144", title: "Laaulialemalietoa sworn in as new Prime Minister (search snippet, not opened)", publisher: "Samoa Observer", date: 2025-09, tier: 3}
 
   paradoxes:
     - text: "New Zealand gives Samoa its security, but its navy ship Manawanui sank off Siumu in October 2024 and cut off Safata villages from fishing; within months the Chinese embassy gave WST$50,000 (NZ$30,000) to those villages, so the treaty partner's failure became China's showcase."
@@ -76,4 +78,4 @@ grand_strategy:
         - {url: "https://teaonews.co.nz/2024/10/06/nz-navy-ship-on-fire-and-sinking-report", title: "NZ navy ship on fire and sinking - report", publisher: "Te Ao News", date: 2024-10-06, tier: 3}
 
   reading: |
-    Samoa is a small state whose security sits in a 1962 treaty with New Zealand, whose money comes from remittances and from Australian and Chinese lending, and whose labour schemes send thousands of its people to work in New Zealand and Australia. The 2025 crisis changed who governs without changing that frame: Fiame Naomi Mataafa's government lost its budget vote 34-16 on 27 May 2025, a snap election on 29 August gave FAST 30 seats (31 with a later defector) out of 51, and the FAST faction led by Laauli Leuatea Schmidt, which had split from Mataafa in January, became the government on 16 September. The stage is the Commonwealth summit that Samoa hosted in Apia in October 2024, and no sourced foreign-policy line from the Schmidt government has been found beyond its March 2026 dispute with New Zealand over a matai title.
+    Samoa is a small state whose security sits in a 1962 treaty with New Zealand, whose money comes from remittances and from Australian and Chinese lending, and whose labour schemes send thousands of its people to work in New Zealand and Australia. The 2025 crisis changed who governs without changing that frame: Fiame Naomi Mataafa's government lost its budget vote on 27 May 2025, a snap election on 29 August gave FAST 30 seats (31 with a later defector) out of 51, and the FAST faction led by Laauli Leuatea Schmidt, which had split from Mataafa earlier in 2025, became the government on 16 September. At the UN the atlas records yes votes on all six Ukraine landmark resolutions from 2022 to 2026 and an abstention on the September 2024 resolution ending Israel's presence in the occupied Palestinian territory. The stage is the Commonwealth summit that Samoa hosted in Apia in October 2024, and no sourced foreign-policy line from the Schmidt government has been found beyond its March 2026 dispute with New Zealand over a matai title.
