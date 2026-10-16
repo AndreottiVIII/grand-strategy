@@ -110,8 +110,9 @@
     else if (kind === "flanks") setView("flanks");
     else if (kind === "levers") setView("levers");
     else if (kind === "data") setView("data");
+    else if (kind === "this-site") setView("site");
     else if (kind === "about") setView("about");
-    else if (kind === "colophon") { setView("about"); const c = document.getElementById("colophon"); if (c) c.scrollIntoView(); return; }
+    else if (kind === "colophon") { setView("site"); const c = document.getElementById("colophon"); if (c) c.scrollIntoView(); return; }
     else { clear(); mapMode = "world"; renderLegend(); setView("map"); }
     window.scrollTo(0, 0);
   }
@@ -131,7 +132,7 @@
   orgSel.onchange = () => { orgSel.value ? showOrg(orgSel.value) : goHome(); };
   issueSel.onchange = () => { issueSel.value ? showIssue(issueSel.value) : goHome(); };
   document.querySelectorAll(".tab").forEach(b => b.onclick = () => b.dataset.view === "dossier" ? showDossier(pov || fullActors[0].id) : (pov ? setPov(pov) : goHome()));
-  const PAGE_HASH = { map: "#/", orgs: "#/organisations", issues: "#/issues", luttwak: "#/luttwak", seams: "#/seams", clients: "#/clients", faults: "#/faults", gatherings: "#/gatherings", currents: "#/currents", theatres: "#/theatres", flanks: "#/flanks", levers: "#/levers", about: "#/about", data: "#/data", colophon: "#/colophon" };
+  const PAGE_HASH = { map: "#/", orgs: "#/organisations", issues: "#/issues", luttwak: "#/luttwak", seams: "#/seams", clients: "#/clients", faults: "#/faults", gatherings: "#/gatherings", currents: "#/currents", theatres: "#/theatres", flanks: "#/flanks", levers: "#/levers", about: "#/about", data: "#/data", site: "#/this-site", colophon: "#/colophon" };
   document.querySelectorAll("#topnav a").forEach(a => { a.href = PAGE_HASH[a.dataset.page]; a.onclick = ev => { ev.preventDefault(); navigate(PAGE_HASH[a.dataset.page]); }; });
   document.getElementById("home").onclick = ev => { ev.preventDefault(); goHome(); };
   function setView(v, render = true) {
@@ -139,7 +140,7 @@
     document.querySelectorAll(".tab").forEach(b => b.classList.toggle("is-on", b.dataset.view === v));
     document.querySelectorAll("#topnav a").forEach(a => a.classList.toggle("is-on", a.dataset.page === v || (a.dataset.page === "map" && (v === "map" || v === "dossier"))));
     document.querySelectorAll(".view").forEach(s => s.classList.toggle("is-on", s.id === "view-" + v));
-    const isPage = ["orgs", "issues", "luttwak", "seams", "clients", "faults", "gatherings", "currents", "theatres", "flanks", "levers", "about", "data"].includes(v);
+    const isPage = ["orgs", "issues", "luttwak", "seams", "clients", "faults", "gatherings", "currents", "theatres", "flanks", "levers", "about", "data", "site"].includes(v);
     document.querySelector(".side").style.display = isPage ? "none" : "";
     document.querySelector(".frame").classList.toggle("is-page", isPage);
     if (v === "orgs") renderOrgsPage();
@@ -154,6 +155,7 @@
     if (v === "flanks") renderFlanksPage();
     if (v === "levers") renderLeversPage();
     if (v === "data") renderDataPage();
+    if (v === "site") renderSitePage();
     if (v === "about") renderAboutPage();
     if (!render) return;
     if (v === "map") drawMap();
@@ -869,16 +871,30 @@
       <h3>What it is not</h3>
       <p>It is not a forecast and not a verdict. Where a card says less than you expected, it is because the sources did not hold. Where a posture surprises you, open the dossier: the note under each grade says why it was read that way, and the footnote says who said so.</p>
 
-      <h2 id="colophon" style="margin-top:40px">Colophon</h2>
-      <p class="lede">Provisional. The final text is being written.</p>
-      <h3>Who</h3>
-      <p><b>Grand Strategy</b> is conceived, directed and edited by <b>Davide Caniatti</b>. Research, drafting and code are produced with Claude (Anthropic) under his direction; every grade on the site has been read by a person or is marked as provisional. Started on 12 October 2026.</p>
-      <h3>Data and sources</h3>
-      <p>Borders from Natural Earth (110m), with Kosovo added; neighbours from Wikidata. Flags by flagcdn.com. Memberships from Wikidata and the organisations' official lists; recognition tables from Wikipedia with their citations; UN General Assembly recorded votes from the UN Digital Library; GDP, military spending and population from the World Bank. Each card cites its own sources in the dossier footnotes. Data, method, decision log and code are public on GitHub: <a href="https://github.com/AndreottiVIII/grand-strategy" target="_blank" rel="noopener">AndreottiVIII/grand-strategy</a>.</p>
+      <p>Who made it, how it is built and how it runs: <a href="#/this-site">This site</a>.</p>`;
+  }
+
+  function renderSitePage() {
+    const el = document.getElementById("page-site");
+    if (el.dataset.done) return;
+    el.dataset.done = "1";
+    el.innerHTML = `
+      <h2>This site</h2>
+      <p class="lede">Who made it, how it is built, and how it runs. The terms are explained under <a href="#/about">About</a>; the counts are on <a href="#/data">Data</a>.</p>
+      <h3 id="colophon">Who</h3>
+      <p><b>Grand Strategy</b> is conceived, directed and edited by <b>Davide Caniatti</b>, from Italy. He chose the question, the reading grid, the vocabulary of grades and bonds, the pages and their rules, and reads what goes online; every decision is dated in the journal of the repository. Research, drafting and code are produced with Claude (Anthropic) under his direction: each card is written by a language-model agent from a shared brief and the atlas's own rules, reread by a stronger model against the sources and the neighbouring cards, and sampled by him. Started on 12 October 2026. Contact: <a href="mailto:davide.caniatti@gmail.com">davide.caniatti@gmail.com</a>; code and data at <a href="https://github.com/AndreottiVIII/grand-strategy" target="_blank" rel="noopener">github.com/AndreottiVIII/grand-strategy</a>.</p>
+      <h3>How it is built</h3>
+      <p>The truth is a folder of plain text. Every actor has three YAML files: the <b>card</b> (objectives, means, constraints, paradoxes, reading, each with sources and a confidence grade), its <b>stances</b> (how it reads every other actor: grade, trend, bond, since, last verified, note, sources) and its <b>relations</b> (rows in four layers: objectives, alignments, dependencies, actions). Vocabularies are closed: nine grades, four bonds, three trends, a fixed list of relation types. A stub is an actor with the first file only, a node without a card. Beside the cards sit the <b>datasets</b>, taken by small scripts from one source each and never edited by hand: states and memberships from Wikidata and the organisations' lists, recognition tables from Wikipedia, every recorded vote of the UN General Assembly from the UN Digital Library, GDP, military spending and population from the World Bank, borders from Wikidata.</p>
+      <p>One Python script, the <b>build</b>, turns that folder into the site. It validates every file and refuses to write on any error: an unknown id, a grade outside the vocabulary, a date that does not parse, a claim without a source. It then derives what no card states: treaty allies from the memberships, a provisional mirror for every reading not yet answered from the other side, and the computed pages, seams, buffers, clients, faults, gatherings, encirclement, flanks, levers, currents, theatres, each by a rule written in the ontology. It keeps a snapshot of every grade, so the next build can say what moved. It writes one JSON for the site and one bundle per actor, so any other front end could read a state on its own.</p>
+      <h3>How it runs</h3>
+      <p>There is no server. The site is static files on GitHub Pages: one HTML page, one stylesheet, one script, the compiled JSON, the world outline (Natural Earth 110m, with Kosovo added) and a map from country ids to flag codes. The browser loads the JSON once and computes every view from it: the map in any actor's point of view, the dossiers, the intelligence pages. Routing is in the URL hash, so every view has an address and the back button works. The only outside dependencies are D3 for the maps, three typefaces from Google Fonts, the flag images from flagcdn, and one request to the GitHub API for the date of the last commit. No analytics, no cookies, nothing stored in the browser, nothing sent anywhere.</p>
+      <h3>How it changes</h3>
+      <p>Everything is versioned in git, in the open: the whole history of every grade is in the repository, and a change to the ontology is made only with a journal entry. The atlas is updated on the editor's call, never on a calendar. When he calls, the datasets are refreshed first (they cost nothing), then the dates the cards said to watch, then a short regional scan that lists the cards an event touched, then those cards only: a dated row added, a trend or a grade moved when a source says so, never a rewrite. Between calls, single news items go in as one dated row each.</p>
       <h3>Type and look</h3>
       <p>VT323, Share Tech Mono and IBM Plex Mono via Google Fonts. The display is modelled on the vector screens of the NORAD command centre as shown in <i>WarGames</i> (1983); the home map after Alighiero Boetti's <i>Mappa</i>. Portrait of Edward N. Luttwak by Elekes Andor, 2026, CC BY 4.0, Wikimedia Commons. Maps drawn with D3.</p>
-      <h3>Contact</h3>
-      <p>To be added.</p>`;
+      <h3>Credits</h3>
+      <p>Borders from Natural Earth; flags by flagcdn.com; memberships and borders from Wikidata; recognition tables from Wikipedia and their citations; votes from the UN Digital Library; weights from the World Bank. Each card cites its own sources in the dossier footnotes. The reading grid is Edward N. Luttwak's, and the site is built in his honour.</p>`;
+    el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
   }
 
   function tipFor(id, fallbackName, ev) {

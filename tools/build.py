@@ -821,8 +821,8 @@ def main():
         "sources": {"unique": len(src_tier), "by_tier": dict(Counter(str(t) for t in src_tier.values()))},
         "datasets": [
             {"name": "States and memberships", "publisher": "Wikidata and the organisations' official lists", "rows": len(json.loads(MEMB.read_text(encoding="utf-8"))) if MEMB.exists() else 0, "date": fdate(MEMB), "tier": 1, "tool": "tools/datasets/wikidata.py"},
-            {"name": "Recognition tables", "publisher": "Wikipedia, with its citations", "rows": sum(len(x) for v in json.loads(RECOG.read_text(encoding="utf-8")).values() for x in v.values() if isinstance(x, (list, dict))) if RECOG.exists() else 0, "date": fdate(RECOG), "tier": 3, "tool": "tools/datasets/wikipedia.py"},
-            {"name": "UN General Assembly recorded votes", "publisher": "UN Digital Library", "rows": len(records), "date": fdate(DATA / "datasets" / "unga" / "2026.json"), "tier": 1, "tool": "tools/datasets/unga.py"},
+            {"name": "Recognition tables", "publisher": "Wikipedia, with its citations", "rows": sum(len(x) for v in json.loads(RECOG.read_text(encoding="utf-8")).values() for x in v.values() if isinstance(x, (list, dict))) if RECOG.exists() else 0, "date": fdate(RECOG), "tier": 3, "tool": "tools/datasets/recognition.py"},
+            {"name": "UN General Assembly recorded votes", "publisher": "UN Digital Library", "rows": len(records), "date": fdate(DATA / "datasets" / "unga" / "2026.json"), "tier": 1, "tool": "tools/datasets/unga_page.js + receive.py"},
             {"name": "Weight: GDP, military spending, population", "publisher": "World Bank (military spending is SIPRI's series)", "rows": len(weight_ds.get("actors", {})), "date": weight_ds.get("source", {}).get("fetched"), "tier": 1, "tool": "tools/datasets/worldbank.py"},
             {"name": "Borders", "publisher": "Wikidata (P47 shares border with)", "rows": sum(len(v) for v in borders_ds.get("borders", {}).values()) // 2, "date": borders_ds.get("source", {}).get("fetched"), "tier": 2, "tool": "tools/datasets/borders.py"},
         ],
