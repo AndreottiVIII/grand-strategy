@@ -3,12 +3,61 @@ name: Chile
 type: state
 iso2: cl
 wikipedia: https://en.wikipedia.org/wiki/Chile
-coords:
-- -70.65
-- -33.44
+coords: [-70.65, -33.44]
 seat: Santiago
-regions:
-- world
-card: stub
+regions: [south-america]
+card: full
 tier: minor
 dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Turn copper and lithium into the base of the economy and into leverage with both Washington and Beijing. Kast says Chile must give legal certainty and guarantees to large foreign investors, and that the bigger risk is low investment; he refuses to choose between the United States and China, calling trade with China very important and the US relationship historic and strategic. A regional minerals declaration with Argentina, Bolivia and Peru (Santiago, 28 August 2026) aims at copper and lithium together."
+      confidence: B
+      sources:
+        - {url: "https://www.latercera.com/pulso/noticia/presidente-kast-dice-que-el-pais-no-tiene-una-eleccion-o-presion-para-elegir-a-estados-unidos-o-china-somos-pro-chile/", title: "Presidente Kast afirma que el país no tiene una elección o presión para elegir a EE.UU. o China: 'Somos pro Chile'", title_original: "Presidente Kast afirma que el país no tiene una elección o presión para elegir a EE.UU. o China: “Somos pro Chile”", publisher: "La Tercera", date: "2026", tier: 3, lang: es}
+        - {url: "https://es.euronews.com/2026/08/28/peru-argentina-chile-y-bolivia-unen-fuerzas-para-ganar-peso-en-el-mercado-de-minerales-est", title: "Peru, Argentina, Chile and Bolivia join forces to gain weight in the minerals market", title_original: "Sudamérica se mueve por el litio y el cobre: Chile, Argentina, Bolivia y Perú firman un acuerdo", publisher: "Euronews", date: "2026-08-28", tier: 3, lang: es}
+    - rank: 2
+      text: "Close the northern border to irregular migration and carry out expulsions, the first government agenda of Kast. Border entries fell by 93.5% in January-August 2026 against the same months of 2025 (286 against 4,393, government figures as reported), and expulsion flights began in April 2026. The Border Shield plan promises a 3,000-strong force, walls, towers, drones and trenches."
+      confidence: B
+      sources:
+        - {url: "https://es.euronews.com/2026/04/16/chile-deportaciones-masivas-kast-regularizacion-inmigrantes", title: "Chile begins mass deportations and Kast halts regularisation of 180,000 migrants", title_original: "Chile inicia las deportaciones masivas y Kast frena la regularización de 180.000 inmigrantes", publisher: "Euronews", date: "2026-04-16", tier: 3, lang: es}
+        - {url: "https://www.latercera.com/politica/noticia/kast-destaca-caida-de-93-en-ingresos-irregulares-y-pide-reconsiderar-rechazo-a-reforma-de-detencion-de-migrantes/", title: "Kast highlights 93% drop in irregular entries and asks to reconsider rejection of migrant detention reform", title_original: "Kast destaca caída de 93% en ingresos irregulares y pide reconsiderar rechazo a reforma de detención de migrantes", publisher: "La Tercera", date: "2026", tier: 3, lang: es}
+        - {url: "https://www.aljazeera.com/news/longform/2026/2/9/big-crisis-kasts-immigration-agenda-brings-uncertainty-to-chiles-north", title: "'Big crisis': Kast's immigration agenda brings uncertainty to Chile's north", publisher: "Al Jazeera", date: "2026-02-09", tier: 3}
+
+  means:
+    - domain: economic
+      text: "Copper and lithium exports, with China as a buyer of large volumes and the US as a historic partner. Kast presents Chile's mining capacity as the basis for trade with both. The state-led lithium model of the previous government was not found to have been changed. Gap: the 2025 US copper tariff and its effect on Chilean shipments are not verified in this pass."
+      confidence: C
+      sources:
+        - {url: "https://www.latercera.com/pulso/noticia/presidente-kast-dice-que-el-pais-no-tiene-una-eleccion-o-presion-para-elegir-a-estados-unidos-o-china-somos-pro-chile/", title: "Presidente Kast afirma que el país no tiene una elección o presión para elegir a EE.UU. o China: 'Somos pro Chile'", title_original: "Presidente Kast afirma que el país no tiene una elección o presión para elegir a EE.UU. o China: “Somos pro Chile”", publisher: "La Tercera", date: "2026", tier: 3, lang: es}
+    - domain: military
+      text: "Membership of the Shield of the Americas, a US-promoted security coalition of 15 regional states announced at the UN General Assembly, with the limit that Chile will not join operations outside its territory or let foreign troops fight organised crime on its soil. The Border Shield force on the northern frontier is the domestic arm."
+      confidence: C
+      sources:
+        - {url: "https://www.latercera.com/editorial/noticia/la-incorporacion-de-chile-al-escudo-de-las-americas/", title: "The incorporation of Chile into the Shield of the Americas", title_original: "La incorporación de Chile al “Escudo de las Américas”", publisher: "La Tercera", date: "2026", tier: 3, lang: es}
+        - {url: "https://www.aljazeera.com/news/longform/2026/2/9/big-crisis-kasts-immigration-agenda-brings-uncertainty-to-chiles-north", title: "'Big crisis': Kast's immigration agenda brings uncertainty to Chile's north", publisher: "Al Jazeera", date: "2026-02-09", tier: 3}
+
+  constraints:
+    - text: "Congress and the courts limit the border plan. The lower house rejected by a single vote a constitutional reform that would have extended from five to 30 days the detention of irregular migrants awaiting expulsion, and the regularisation of about 180,000 migrants is halted, which leaves a large population outside the system."
+      confidence: B
+      sources:
+        - {url: "https://www.latercera.com/politica/noticia/kast-destaca-caida-de-93-en-ingresos-irregulares-y-pide-reconsiderar-rechazo-a-reforma-de-detencion-de-migrantes/", title: "Kast highlights 93% drop in irregular entries and asks to reconsider rejection of migrant detention reform", title_original: "Kast destaca caída de 93% en ingresos irregulares y pide reconsiderar rechazo a reforma de detención de migrantes", publisher: "La Tercera", date: "2026", tier: 3, lang: es}
+        - {url: "https://es.euronews.com/2026/04/16/chile-deportaciones-masivas-kast-regularizacion-inmigrantes", title: "Chile begins mass deportations and Kast halts regularisation of 180,000 migrants", title_original: "Chile inicia las deportaciones masivas y Kast frena la regularización de 180.000 inmigrantes", publisher: "Euronews", date: "2026-04-16", tier: 3, lang: es}
+    - text: "Chile cannot pick a side. Kast says the country is not allied with either the United States or China, and China buys large quantities of its exports while the US is the historic and strategic partner. Joining the US coalition is limited by the refusal of foreign troops on its soil and of operations abroad."
+      confidence: C
+      sources:
+        - {url: "https://www.latercera.com/pulso/noticia/presidente-kast-dice-que-el-pais-no-tiene-una-eleccion-o-presion-para-elegir-a-estados-unidos-o-china-somos-pro-chile/", title: "Presidente Kast afirma que el país no tiene una elección o presión para elegir a EE.UU. o China: 'Somos pro Chile'", title_original: "Presidente Kast afirma que el país no tiene una elección o presión para elegir a EE.UU. o China: “Somos pro Chile”", publisher: "La Tercera", date: "2026", tier: 3, lang: es}
+        - {url: "https://www.latercera.com/editorial/noticia/la-incorporacion-de-chile-al-escudo-de-las-americas/", title: "The incorporation of Chile into the Shield of the Americas", title_original: "La incorporación de Chile al “Escudo de las Américas”", publisher: "La Tercera", date: "2026", tier: 3, lang: es}
+
+  paradoxes:
+    - text: "The border works on paper because Bolivia and Peru hold the flows: the 93% fall in entries comes with a Peruvian emergency to block crossings (November 2025) and with a Bolivian government that Chile needs to cooperate on returns. The sealed frontier is therefore as strong as the neighbours' controls, which Chile does not run."
+      confidence: C
+      sources:
+        - {url: "https://www.aljazeera.com/news/2025/11/28/peru-to-declare-state-of-emergency-to-block-chile-border-crossings", title: "Peru to declare state of emergency to block Chile border crossings", publisher: "Al Jazeera", date: "2025-11-28", tier: 3}
+        - {url: "https://www.latercera.com/mundo/noticia/el-tensionado-vecindario-regional-que-recibe-a-jose-antonio-kast/", title: "The tense regional neighbourhood that receives José Antonio Kast", title_original: "El tensionado vecindario regional que recibe a José Antonio Kast", publisher: "La Tercera", date: "2026", tier: 3, lang: es}
+
+  reading: |
+    Chile under Kast is trying to turn its copper and lithium into a position it can hold between the United States and China, while it tightens the northern border as the proof that its security policy works. The balancing line is real but thin: the US coalition is joined with explicit limits, China is needed as a buyer, and the regional minerals pact with Argentina, Bolivia and Peru is the first sign that the neighbours can be partners on resources as well as on migration. The weak point is the border itself, whose results depend on the controls of Peru and Bolivia and on a Congress that has already rejected part of the plan. Not verified for this card: the EU modernised agreement (2024), the Venezuela and Tren de Aragua line, the 2025 US copper tariff, and the Bolivian sea claim and Silala dispute, which need their own sources.
