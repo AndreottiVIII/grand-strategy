@@ -1,121 +1,212 @@
 from: NZL
 relations:
-  # ---------- objective ----------
-  - to: sub-cook-islands
-    layer: objective
-    type: influence_goal
-    summary: "Keeps the Cook Islands' security tied to New Zealand: the February 2025 China partnership excluded security and defence, and Wellington held back development funding until consultation was repaired."
-    since: '2025-02'
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.csis.org/analysis/union-restored-new-zealand-and-cook-islands-repair-ties", title: "A Union Restored: New Zealand and the Cook Islands Repair Ties", publisher: "CSIS", date: 2026-04, tier: 2}
-      - {url: "https://www.1news.co.nz/2025/06/19/nz-pauses-funding-to-cook-islands-after-china-agreements/", title: "NZ pauses nearly $20m in funding to Cook Islands after China agreements", publisher: "1News", date: 2025-06-19, tier: 3}
-
-  # ---------- alignment ----------
-  - to: PHL
-    layer: alignment
-    type: treaty
-    summary: "Status of Visiting Forces Agreement signed 30 Apr 2025 at Malacanang by Teodoro and Judith Collins, ratified by the Philippine Senate 19-0 on 11 Aug 2026 (mirrored from the Philippines' row; same sources)."
-    since: '2025-04-30'
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.philstar.com/headlines/2025/04/30/2439523/philippines-new-zealand-sign-visiting-forces-agreement", title: "Philippines, New Zealand sign visiting forces agreement", publisher: "The Philippine Star", date: 2025-04-30, tier: 3}
-      - {url: "https://mb.com.ph/2026/08/12/dnd-hails-senate-ok-of-defense-pact-with-canada-new-zealand", title: "DND hails Senate OK of defense pact with Canada, New Zealand", publisher: "Manila Bulletin", date: 2026-08-12, tier: 3}
-      - {url: "https://www.lowyinstitute.org/the-interpreter/new-zealand-latest-join-philippines-building-network-defence-partners-amid-south", title: "New Zealand the latest to join the Philippines' building network of defence partners", publisher: "Lowy Institute", date: 2025, tier: 2}
-  - to: IND
-    layer: alignment
-    type: treaty
-    summary: "Free trade agreement signed in New Delhi on 27 Apr 2026 by Piyush Goyal and Todd McClay; reported to take effect on 20 Oct 2026, so not yet in force at the date of this card."
-    since: '2026-04-27'
-    until: null
-    last_verified: 2026-10-12
-    confidence: C
-    sources:
-      - {url: "https://www.news4jax.com/business/2026/04/27/india-and-new-zealand-sign-a-free-trade-agreement-to-deepen-economic-ties/", title: "India and New Zealand sign a free trade agreement to deepen economic ties", publisher: "Associated Press", date: 2026-04-27, tier: 3}
-      - {url: "https://www.1news.co.nz/2026/04/28/new-zealand-and-india-sign-landmark-free-trade-agreement/", title: "New Zealand and India sign landmark free trade agreement", publisher: "1News", date: 2026-04-28, tier: 3}
-
-  - to: FJI
-    layer: alignment
-    type: treaty
-    summary: "Duavata Partnership with its 2023 legal framework for military cooperation on each other's territory (mirrored from Fiji's row; same sources); renewed in Auckland on 16 Jul 2026 for five years."
-    since: '2023-06'
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.foreignaffairs.gov.fj/fiji-and-new-zealand-prime-ministers-reaffirm-strong-bilateral-relationship/", title: "Fiji and New Zealand prime ministers reaffirm strong bilateral relationship", publisher: "Fiji Ministry of Foreign Affairs", date: 2025-09, tier: 1}
-      - {url: "https://www.hawaiipublicradio.org/pacific-news-minute/2023-06-19/pacific-news-minute-new-zealand-fiji-set-legal-framework-for-military-cooperation", title: "New Zealand, Fiji set legal framework for military cooperation", publisher: "Hawaii Public Radio (Pacific News Minute)", date: 2023-06-19, tier: 3}
-      - {url: "https://www.fijitimes.com.fj/new-zealand-fiji-renew-five-year-partnership/", title: "New Zealand, Fiji renew five-year partnership", publisher: "Fiji Times", date: 2026-07-16, tier: 3}
-
-  # ---------- dependency ----------
-  - to: USA
-    layer: dependency
-    type: trade_share
-    value: 2
-    unit: export_market_rank
-    summary: "The United States became New Zealand's second-largest export market in 2024, ahead of Australia. Rank, not share: the share figure is not sourced here. Tariffs of 15% from August 2025."
-    since: '2024'
-    until: null
-    last_verified: 2026-10-12
-    confidence: C
-    sources:
-      - {url: "https://www.odt.co.nz/business/nz-slapped-15-us-tariff-rnz", title: "NZ slapped with 15% US tariff", publisher: "Otago Daily Times (RNZ)", date: 2025-08-01, tier: 3}
-
-  # ---------- action ----------
-  - to: AUS
-    layer: action
-    type: agreement
-    summary: "Leaders' Meeting in Queenstown endorses the December 2024 closer defence relations statement and calls the alliance vital; New Zealand still consulting on AUKUS Pillar II."
-    since: '2025-08-09'
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.pm.gov.au/media/australia-new-zealand-leaders-meeting-2025", title: "Australia-New Zealand Leaders' Meeting 2025", publisher: "Australian Prime Minister (pm.gov.au)", date: 2025-08-09, tier: 1}
-  - to: CHN
-    layer: action
-    type: incident
-    summary: "A Chinese navy task group of three ships held live-fire drills in the Tasman Sea on 21-22 Feb 2025; Wellington had no prior notice and objected to the notification and practice."
-    since: '2025-02-21'
-    until: null
-    last_verified: 2026-10-12
-    confidence: C
-    sources:
-      - {url: "https://www.1news.co.nz/2025/02/22/china-warship-carries-out-second-live-weapons-drill-in-tasman-sea/", title: "China warship carries out second live weapons drill in Tasman Sea", publisher: "1News", date: 2025-02-22, tier: 3}
-  - to: sub-cook-islands
-    layer: action
-    type: incident
-    summary: "Wellington holds NZ$18.2 million of 2025/26 development funding after the Cook Islands-China Comprehensive Strategic Partnership of February 2025, which New Zealand learned of late; the pause was lifted in April 2026."
-    since: '2025-06-19'
-    until: '2026-04'
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.1news.co.nz/2025/06/19/nz-pauses-funding-to-cook-islands-after-china-agreements/", title: "NZ pauses nearly $20m in funding to Cook Islands after China agreements", publisher: "1News", date: 2025-06-19, tier: 3}
-      - {url: "https://www.csis.org/analysis/union-restored-new-zealand-and-cook-islands-repair-ties", title: "A Union Restored: New Zealand and the Cook Islands Repair Ties", publisher: "CSIS", date: 2026-04, tier: 2}
-  - to: sub-cook-islands
-    layer: action
-    type: agreement
-    summary: "Peters signs a defence and security declaration with Prime Minister Mark Brown during a one-day visit (a declaration, not a treaty); Brown calls New Zealand the partner of choice on security."
-    since: '2026-04-01'
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.csis.org/analysis/union-restored-new-zealand-and-cook-islands-repair-ties", title: "A Union Restored: New Zealand and the Cook Islands Repair Ties", publisher: "CSIS", date: 2026-04, tier: 2}
-      - {url: "https://nit.com.au/02-04-2026/23538/new-zealand-cook-islands-patch-up-recent-squabbles", title: "New Zealand, Cook Islands patch up recent squabbles", publisher: "NIT", date: 2026-04-02, tier: 3}
-      - {url: "https://pina.com.fj/2026/04/10/cook-islands-nz-security-pact-is-about-us-moving-forward-as-two-countries-pm-brown/", title: "Cook Islands-NZ security pact is about us moving forward as two countries, PM Brown", publisher: "PINA", date: 2026-04-10, tier: 3}
-  - to: RUS
-    layer: action
-    type: sanction
-    summary: "New Zealand sanctions Russia under the Russia Sanctions Act 2022; the 7 August 2026 amendments designated 9 entities and 24 individuals."
-    since: '2026-08-07'
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.mfat.govt.nz/en/countries-and-regions/europe/ukraine/russian-invasion-of-ukraine/sanctions", title: "Russia Sanctions", publisher: "MFAT", date: 2026-08-07, tier: 1}
+- to: sub-cook-islands
+  layer: objective
+  type: influence_goal
+  summary: 'Keeps the Cook Islands'' security tied to New Zealand: the February 2025 China partnership excluded security and defence, and Wellington held back development funding until consultation was
+    repaired.'
+  since: 2025-02
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.csis.org/analysis/union-restored-new-zealand-and-cook-islands-repair-ties
+    title: 'A Union Restored: New Zealand and the Cook Islands Repair Ties'
+    publisher: CSIS
+    date: 2026-04
+    tier: 2
+  - url: https://www.1news.co.nz/2025/06/19/nz-pauses-funding-to-cook-islands-after-china-agreements/
+    title: NZ pauses nearly $20m in funding to Cook Islands after China agreements
+    publisher: 1News
+    date: 2025-06-19
+    tier: 3
+- to: PHL
+  layer: alignment
+  type: treaty
+  summary: Status of Visiting Forces Agreement signed 30 Apr 2025 at Malacanang by Teodoro and Judith Collins, ratified by the Philippine Senate 19-0 on 11 Aug 2026 (mirrored from the Philippines' row;
+    same sources).
+  since: '2025-04-30'
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.philstar.com/headlines/2025/04/30/2439523/philippines-new-zealand-sign-visiting-forces-agreement
+    title: Philippines, New Zealand sign visiting forces agreement
+    publisher: The Philippine Star
+    date: 2025-04-30
+    tier: 3
+  - url: https://mb.com.ph/2026/08/12/dnd-hails-senate-ok-of-defense-pact-with-canada-new-zealand
+    title: DND hails Senate OK of defense pact with Canada, New Zealand
+    publisher: Manila Bulletin
+    date: 2026-08-12
+    tier: 3
+  - url: https://www.lowyinstitute.org/the-interpreter/new-zealand-latest-join-philippines-building-network-defence-partners-amid-south
+    title: New Zealand the latest to join the Philippines' building network of defence partners
+    publisher: Lowy Institute
+    date: 2025
+    tier: 2
+- to: IND
+  layer: alignment
+  type: treaty
+  summary: Free trade agreement signed in New Delhi on 27 Apr 2026 by Piyush Goyal and Todd McClay; reported to take effect on 20 Oct 2026, so not yet in force at the date of this card.
+  since: '2026-04-27'
+  until: null
+  last_verified: 2026-10-12
+  confidence: C
+  sources:
+  - url: https://www.news4jax.com/business/2026/04/27/india-and-new-zealand-sign-a-free-trade-agreement-to-deepen-economic-ties/
+    title: India and New Zealand sign a free trade agreement to deepen economic ties
+    publisher: Associated Press
+    date: 2026-04-27
+    tier: 3
+  - url: https://www.1news.co.nz/2026/04/28/new-zealand-and-india-sign-landmark-free-trade-agreement/
+    title: New Zealand and India sign landmark free trade agreement
+    publisher: 1News
+    date: 2026-04-28
+    tier: 3
+- to: FJI
+  layer: alignment
+  type: treaty
+  summary: Duavata Partnership with its 2023 legal framework for military cooperation on each other's territory (mirrored from Fiji's row; same sources); renewed in Auckland on 16 Jul 2026 for five years.
+  since: 2023-06
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.foreignaffairs.gov.fj/fiji-and-new-zealand-prime-ministers-reaffirm-strong-bilateral-relationship/
+    title: Fiji and New Zealand prime ministers reaffirm strong bilateral relationship
+    publisher: Fiji Ministry of Foreign Affairs
+    date: 2025-09
+    tier: 1
+  - url: https://www.hawaiipublicradio.org/pacific-news-minute/2023-06-19/pacific-news-minute-new-zealand-fiji-set-legal-framework-for-military-cooperation
+    title: New Zealand, Fiji set legal framework for military cooperation
+    publisher: Hawaii Public Radio (Pacific News Minute)
+    date: 2023-06-19
+    tier: 3
+  - url: https://www.fijitimes.com.fj/new-zealand-fiji-renew-five-year-partnership/
+    title: New Zealand, Fiji renew five-year partnership
+    publisher: Fiji Times
+    date: 2026-07-16
+    tier: 3
+- to: USA
+  layer: dependency
+  type: trade_share
+  value: 2
+  unit: export_market_rank
+  summary: 'The United States became New Zealand''s second-largest export market in 2024, ahead of Australia. Rank, not share: the share figure is not sourced here. Tariffs of 15% from August 2025.'
+  since: '2024'
+  until: null
+  last_verified: 2026-10-12
+  confidence: C
+  sources:
+  - url: https://www.odt.co.nz/business/nz-slapped-15-us-tariff-rnz
+    title: NZ slapped with 15% US tariff
+    publisher: Otago Daily Times (RNZ)
+    date: 2025-08-01
+    tier: 3
+- to: AUS
+  layer: action
+  type: agreement
+  summary: Leaders' Meeting in Queenstown endorses the December 2024 closer defence relations statement and calls the alliance vital; New Zealand still consulting on AUKUS Pillar II.
+  since: '2025-08-09'
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.pm.gov.au/media/australia-new-zealand-leaders-meeting-2025
+    title: Australia-New Zealand Leaders' Meeting 2025
+    publisher: Australian Prime Minister (pm.gov.au)
+    date: 2025-08-09
+    tier: 1
+- to: CHN
+  layer: action
+  type: incident
+  summary: A Chinese navy task group of three ships held live-fire drills in the Tasman Sea on 21-22 Feb 2025; Wellington had no prior notice and objected to the notification and practice.
+  since: '2025-02-21'
+  until: null
+  last_verified: 2026-10-12
+  confidence: C
+  sources:
+  - url: https://www.1news.co.nz/2025/02/22/china-warship-carries-out-second-live-weapons-drill-in-tasman-sea/
+    title: China warship carries out second live weapons drill in Tasman Sea
+    publisher: 1News
+    date: 2025-02-22
+    tier: 3
+- to: sub-cook-islands
+  layer: action
+  type: incident
+  summary: Wellington holds NZ$18.2 million of 2025/26 development funding after the Cook Islands-China Comprehensive Strategic Partnership of February 2025, which New Zealand learned of late; the pause
+    was lifted in April 2026.
+  since: '2025-06-19'
+  until: 2026-04
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.1news.co.nz/2025/06/19/nz-pauses-funding-to-cook-islands-after-china-agreements/
+    title: NZ pauses nearly $20m in funding to Cook Islands after China agreements
+    publisher: 1News
+    date: 2025-06-19
+    tier: 3
+  - url: https://www.csis.org/analysis/union-restored-new-zealand-and-cook-islands-repair-ties
+    title: 'A Union Restored: New Zealand and the Cook Islands Repair Ties'
+    publisher: CSIS
+    date: 2026-04
+    tier: 2
+- to: sub-cook-islands
+  layer: action
+  type: agreement
+  summary: Peters signs a defence and security declaration with Prime Minister Mark Brown during a one-day visit (a declaration, not a treaty); Brown calls New Zealand the partner of choice on security.
+  since: '2026-04-01'
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.csis.org/analysis/union-restored-new-zealand-and-cook-islands-repair-ties
+    title: 'A Union Restored: New Zealand and the Cook Islands Repair Ties'
+    publisher: CSIS
+    date: 2026-04
+    tier: 2
+  - url: https://nit.com.au/02-04-2026/23538/new-zealand-cook-islands-patch-up-recent-squabbles
+    title: New Zealand, Cook Islands patch up recent squabbles
+    publisher: NIT
+    date: 2026-04-02
+    tier: 3
+  - url: https://pina.com.fj/2026/04/10/cook-islands-nz-security-pact-is-about-us-moving-forward-as-two-countries-pm-brown/
+    title: Cook Islands-NZ security pact is about us moving forward as two countries, PM Brown
+    publisher: PINA
+    date: 2026-04-10
+    tier: 3
+- to: RUS
+  layer: action
+  type: sanction
+  summary: New Zealand sanctions Russia under the Russia Sanctions Act 2022; the 7 August 2026 amendments designated 9 entities and 24 individuals.
+  since: '2026-08-07'
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.mfat.govt.nz/en/countries-and-regions/europe/ukraine/russian-invasion-of-ukraine/sanctions
+    title: Russia Sanctions
+    publisher: MFAT
+    date: 2026-08-07
+    tier: 1
+- layer: alignment
+  type: treaty
+  summary: Five Power Defence Arrangements partner (1971); a New Zealand P-8 maritime patrol aircraft took part in Exercise Bersama Lima for the first time in 2024.
+  since: 1971
+  until: null
+  last_verified: '2026-10-16'
+  confidence: A
+  sources:
+  - url: https://www.mindef.gov.sg/news-and-events/latest-releases/31may25_nr3/
+    title: FPDA Defence Ministers Reaffirm Commitment to Five Power Defence Arrangements
+    publisher: Ministry of Defence, Singapore
+    date: 2025-05-31
+    tier: 1
+  - url: https://www.mindef.gov.sg/news-and-events/latest-releases/31may24_fs/
+    title: Joint Ministerial Statement of the 12th FPDA Defence Ministers' Meeting in Singapore, 31 May 2024
+    publisher: Ministry of Defence, Singapore
+    date: 2024-05-31
+    tier: 1
+  to: SGP
+  mirrored_from: SGP

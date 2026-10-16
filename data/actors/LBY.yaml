@@ -1,14 +1,586 @@
 id: LBY
 name: Libya
+short: Libya
 type: state
-iso2: ly
-wikipedia: https://en.wikipedia.org/wiki/Libya
 coords:
 - 13.19
 - 32.89
+iso2: ly
+wikipedia: https://en.wikipedia.org/wiki/Libya
 seat: Tripoli
 regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+- north-africa
+card: full
+tier: protagonist
+last_verified: '2026-10-12'
+recognition:
+  note: 'Two rival governments. This card is the internationally recognised Government of National Unity in Tripoli (prime minister Abdulhamid Dbeibah), listed by the United Nations as Libya''s government.
+    The House of Representatives voted on 13 Aug 2024 to end its term and backs a rival Government of National Stability in Benghazi (the Hammad government), whose military arm is Khalifa Haftar''s Libyan
+    National Army; Haftar''s camp holds most of the oilfields. The eastern authority has no actor of its own in the atlas: it is recorded through this card''s objectives, constraints and actions, and through
+    the other cards that deal with it.'
+  source: https://www.un.org/dgacm/sites/www.un.org.dgacm/files/Documents_Protocol/hspmfmlist.pdf
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: Remain the sole UN-recognised government, and in office, until an election on terms Dbeibah can survive. The GNU was installed through a UN process in 2021 for elections that were set for December
+      2021 and never held; the House of Representatives voted on 13 Aug 2024 to end its term and appointed a rival government in Benghazi, yet the UN protocol list still names Dbeibah as prime minister,
+      and he stayed in office after thousands demanded his resignation on 16 May 2025.
+    confidence: A
+    sources:
+    - url: https://www.un.org/dgacm/sites/www.un.org.dgacm/files/Documents_Protocol/hspmfmlist.pdf
+      title: Heads of State, Heads of Government, Ministers for Foreign Affairs
+      publisher: United Nations Protocol and Liaison Service
+      date: '2025-05-22'
+      tier: 1
+    - url: https://www.trtafrika.com/africa/libyan-parliament-ends-term-of-tripoli-based-govt-18195476
+      title: Libyan parliament ends term of Tripoli-based govt
+      publisher: TRT Afrika
+      date: '2024-08-14'
+      tier: 3
+    - url: https://english.aawsat.com/arab-world/5050458-libyan-parliament-unilaterally-ends-terms-presidential-council-gnu
+      title: Libyan Parliament Unilaterally Ends Terms of Presidential Council, GNU
+      publisher: Asharq Al-Awsat
+      date: '2024-08-14'
+      tier: 3
+    - url: https://www.theglobeandmail.com/world/article-libyan-protesters-demand-prime-minister-quit-as-three-ministers-resign/
+      title: Libyan protesters demand prime minister quit as three ministers resign
+      publisher: The Globe and Mail (Reuters)
+      date: '2025-05-16'
+      tier: 3
+    - url: https://www.securitycouncilreport.org/monthly-forecast/2026-10/libya-70.php
+      title: Libya - October 2026 monthly forecast
+      publisher: Security Council Report
+      date: 2026-10
+      tier: 2
+  - rank: 2
+    text: 'Break the armed groups that rival the government in Tripoli without becoming hostage to any one of them: the killing of Abdel Ghani al-Kikli of the Stability Support Apparatus on 12 May 2025
+      opened a week of fighting in which the 444th Brigade (nominally the Defence Ministry''s) and allied units seized SSA positions and turned on the Special Deterrence Force (Rada); the next round, with
+      drones bought by commanders Mahmoud Hamza and Abdulsalam Zubi against Mitiga-based and other units, is being prepared.'
+    confidence: B
+    sources:
+    - url: https://www.aljazeera.com/amp/news/2025/5/12/un-urges-calm-as-heavy-fire-clashes-erupt-in-libyas-tripoli
+      title: Heavy gunfire, clashes in Libya's Tripoli after killing of militia leader
+      publisher: Al Jazeera
+      date: '2025-05-12'
+      tier: 3
+    - url: https://www.reuters.com/world/africa/most-intense-fighting-years-rocks-libyan-capital-2025-05-14/
+      title: Libya fighting eases after announcement of truce
+      publisher: Reuters
+      date: '2025-05-14'
+      tier: 3
+    - url: https://acleddata.com/report/political-competition-and-infighting-among-tripolis-armed-groups-reach-beyond-libyas-capital
+      title: Political competition and infighting among Tripoli's armed groups reach beyond Libya's capital
+      publisher: ACLED
+      date: '2025'
+      tier: 2
+    - url: https://www.nybooks.com/online/2026/08/05/libya-the-dangerous-gamble/
+      title: 'Libya: The Dangerous Gamble (Wolfram Lacher, SWP)'
+      publisher: The New York Review of Books
+      date: '2026-08-05'
+      tier: 2
+  - rank: 3
+    text: Keep the oil and the money flowing through Tripoli's institutions. Eastern authorities showed in Aug-Sep 2024 that they can shut the whole oil sector over control of the Central Bank (output fell
+      from about 1.28m bpd on 20 July to about 591,000 bpd on 28 August); Tripoli wants output at 1.6m bpd by end-2026 (it was 1.4m, a ten-year high, in spring 2026), a unified budget it can steer (first
+      in 13 years, 11 April 2026) and a dinar that has lost two large devaluations (13.3% in April 2025, 14.7% in January 2026).
+    confidence: B
+    sources:
+    - url: https://www.arabnews.com/node/2569860/amp
+      title: UN hosts talks in Tripoli to resolve Libya's central bank crisis
+      publisher: Arab News (Reuters)
+      date: '2024-09-03'
+      tier: 3
+    - url: https://www.chathamhouse.org/events/all/research-event/there-end-central-bank-libya-crisis
+      title: Is there an end to the Central Bank of Libya crisis?
+      publisher: Chatham House
+      date: 2024-10
+      tier: 2
+    - url: https://www.atlanticcouncil.org/blogs/menasource/an-oil-windfall-will-not-fix-libyas-economy/
+      title: An oil windfall will not fix Libya's economy
+      publisher: Atlantic Council
+      date: '2026-05-26'
+      tier: 2
+    - url: https://www.worldbank.org/en/country/libya/overview
+      title: Libya Overview (Libya Economic Monitor, Fall 2025)
+      publisher: World Bank
+      date: 2025-12
+      tier: 1
+  - rank: 4
+    text: Keep Turkey as its shield and the November 2019 maritime memorandum as its legal title to the sea. Turkish forces have been in Tripoli, including at Mitiga airport, since 2019, Ankara trains Tripoli's
+      soldiers, and the memorandum, which Greece calls illegal and which Egypt asked Washington to press Haftar not to endorse, is the legal title on which Tripoli's claim to its maritime zone rests; whether
+      the eastern House ratifies it is the open question.
+    confidence: B
+    sources:
+    - url: https://www.reuters.com/article/us-turkey-libya-idUSKBN1Y213I
+      title: Turkey and Libya sign deal on maritime zones in the Mediterranean
+      publisher: Reuters
+      date: '2019-11-28'
+      tier: 3
+    - url: https://www.nybooks.com/online/2026/08/05/libya-the-dangerous-gamble/
+      title: 'Libya: The Dangerous Gamble (Wolfram Lacher, SWP)'
+      publisher: The New York Review of Books
+      date: '2026-08-05'
+      tier: 2
+    - url: https://www.newarab.com/analysis/why-haftar-might-ratify-libya-turkey-maritime-deal
+      title: Why Haftar might ratify the Libya-Turkey maritime deal
+      publisher: The New Arab
+      date: 2025-06
+      tier: 3
+    - url: https://origin01-en.protothema.gr/2025/07/02/egypt-asks-washington-to-intervene-with-haftar-to-prevent-signing-of-turkey-libya-memorandum
+      title: Egypt asks Washington to intervene with Haftar to prevent signing of Turkey-Libya memorandum
+      publisher: Protothema
+      date: '2025-07-02'
+      tier: 3
+    - url: https://www.tovima.com/politics/greece-sends-stern-letter-to-un-on-illegal-turkish-libyan-memorandum/amp/
+      title: Greece sends stern letter to UN on illegal Turkish-Libyan memorandum
+      publisher: To Vima
+      date: '2025'
+      tier: 3
+  - rank: 5
+    text: Deal with the Haftars without handing them the state. Dbeibah's nephew Ibrahim and Saddam Haftar are the intermediaries of the unified budget and of the US scheme that would make Saddam president
+      and keep Dbeibah prime minister; the Presidential Council and the High Council of State rejected it, Misrata (Dbeibah's home city) has signalled it would mobilise against it, and Dbeibah has not refused
+      it outright.
+    confidence: B
+    sources:
+    - url: https://www.nybooks.com/online/2026/08/05/libya-the-dangerous-gamble/
+      title: 'Libya: The Dangerous Gamble (Wolfram Lacher, SWP)'
+      publisher: The New York Review of Books
+      date: '2026-08-05'
+      tier: 2
+    - url: https://en.majalla.com/node/331759/politics/us-plan-libya-unification-or-management-division
+      title: 'US plan for Libya: unification or management of division?'
+      publisher: Al Majalla
+      date: '2026-06-26'
+      tier: 3
+    - url: https://www.securitycouncilreport.org/monthly-forecast/2026-10/libya-70.php
+      title: Libya - October 2026 monthly forecast
+      publisher: Security Council Report
+      date: 2026-10
+      tier: 2
+  - rank: 6
+    text: 'Stay indispensable to Europe and the United States, so that Western tolerance outlasts the mandate: Eni''s USD 8bn, 25-year gas deal with the NOC (28 Jan 2023), the 2017 migration memorandum
+      with Italy, the fact that Libya was 88% of Italy''s sea arrivals in January-April 2026, and the release of the ICC suspect Almasri to Tripoli on an Italian state aircraft (Jan 2025) are the currency;
+      the 2025-26 US channel (Boulos, AFRICOM, the unified budget) is the new one.'
+    confidence: B
+    sources:
+    - url: https://www.gulf-times.com/article/654334/business/italys-eni-signs-8bn-libya-gas-deal-as-pm-meloni-visits-tripoli
+      title: Italy's Eni signs USD 8bn Libya gas deal as PM Meloni visits Tripoli
+      publisher: Gulf Times
+      date: '2023-01-28'
+      tier: 3
+    - url: https://eumigrationlawblog.eu/wp-content/uploads/2017/10/MEMORANDUM_translation_finalversion.doc.pdf
+      title: Memorandum of understanding on cooperation in the fields of development, the fight against illegal immigration, human trafficking and fuel smuggling and on reinforcing the security of borders
+        between the State of Libya and the Italian Republic (English translation)
+      publisher: EU Migration Law Blog (text of the memorandum)
+      date: '2017-02-02'
+      tier: 1
+    - url: https://www.ansa.it/english/news/general_news/2026/05/05/2459-migrants-landed-in-italy-in-april-up-14-compared-to-march-unhcr_9e1c34f4-7a03-4b57-9c29-c169cb12bed8.html
+      title: 2,459 migrants landed in Italy in April, up 14% compared to March - UNHCR
+      publisher: ANSA (UNHCR data)
+      date: '2026-05-05'
+      tier: 3
+    - url: https://www.wantedinrome.com/news/italy-meloni-investigation-almasri-libya.html
+      title: Meloni under investigation over release of Libyan general Almasri
+      publisher: Wanted in Rome
+      date: 2025-01
+      tier: 3
+    - url: https://www.atlanticcouncil.org/blogs/menasource/russias-most-important-middle-east-base-is-not-where-you-think/
+      title: Russia's most important Middle East base is not where you think
+      publisher: Atlantic Council
+      date: '2025-12-18'
+      tier: 2
+  means:
+  - domain: diplomatic
+    text: 'Legitimacy as currency: the UN list, the UNSMIL roadmap (21 Aug 2025) and its tracks - the Structured Dialogue (concluded 7 Jun 2026), the ''Smaller Convening'' of GNU, High Council of State,
+      House and LNA (first met in Rome on 29 Apr 2026) and the Tripoli agreement of 30 Aug 2026 on the elections commission and a single executive within 24 months - plus a door open to every patron: Erdogan
+      and Dbeibah talked (7 Nov 2025), the Egyptian intelligence chief came to Tripoli (June 2026; 21 Jun per Libya Security Monitor), Turkey''s Kalin saw Dbeibah and Saddam Haftar on the same trip (23
+      Jun 2026).'
+    confidence: B
+    sources:
+    - url: https://www.securitycouncilreport.org/monthly-forecast/2026-10/libya-70.php
+      title: Libya - October 2026 monthly forecast
+      publisher: Security Council Report
+      date: 2026-10
+      tier: 2
+    - url: https://bnub.unmissions.org/sites/default/files/security_council_press_statement_on_libya_3_september_-_eng.pdf
+      title: Security Council press statement on Libya, 3 September 2025
+      publisher: United Nations Security Council
+      date: '2025-09-03'
+      tier: 1
+    - url: https://www.dailysabah.com/politics/erdogan-libyan-pm-dbeibah-discuss-ties-regional-affairs/news
+      title: Erdogan, Libyan PM Dbeibah discuss ties, regional affairs
+      publisher: Daily Sabah
+      date: '2025-11-07'
+      tier: 3
+    - url: https://libyasecuritymonitor.com/?p=9448
+      title: Egyptian Intelligence chief discusses political developments with Dabaiba in Tripoli
+      publisher: Libya Security Monitor
+      date: '2026-06-21'
+      tier: 3
+    - url: https://en.majalla.com/node/331759/politics/us-plan-libya-unification-or-management-division
+      title: 'US plan for Libya: unification or management of division?'
+      publisher: Al Majalla
+      date: '2026-06-26'
+      tier: 3
+  - domain: diplomatic
+    text: 'Claims at sea as diplomacy: the 2019 memorandum with Turkey and Tripoli''s plan to lodge the outer limits of its maritime zones with the UN, which Malta protested and agreed to negotiate (Sept
+      2025); the same instruments make Greece, Egypt, Malta and Cyprus negotiate with whichever half of Libya they decide to recognise.'
+    confidence: B
+    sources:
+    - url: https://www.reuters.com/article/us-turkey-libya-idUSKBN1Y213I
+      title: Turkey and Libya sign deal on maritime zones in the Mediterranean
+      publisher: Reuters
+      date: '2019-11-28'
+      tier: 3
+    - url: https://northafricapost.com/?p=90492
+      title: Libya and Malta to open talks on maritime borders, migration, regional stability
+      publisher: North Africa Post
+      date: '2025-09-10'
+      tier: 3
+    - url: https://www.tovima.com/politics/greece-sends-stern-letter-to-un-on-illegal-turkish-libyan-memorandum/amp/
+      title: Greece sends stern letter to UN on illegal Turkish-Libyan memorandum
+      publisher: To Vima
+      date: '2025'
+      tier: 3
+  - domain: informational
+    text: 'An anti-militia, anti-corruption frame for the use of force (''a Libya free of militias and corruption'', 17 May 2025) and sovereignty claimed through the courts: the Tripoli court that sentenced
+      Almasri to 7 years 4 months on 21 Jun 2026 answers the ICC and Rome with a Libyan judgment.'
+    confidence: C
+    sources:
+    - url: https://english.ahram.org.eg/News/546449.aspx
+      title: Libya's Tripoli premier calls on armed groups to align with state
+      publisher: Ahram Online
+      date: 2025-05
+      tier: 3
+    - url: https://en.ilsole24ore.com/art/the-tripoli-court-sentences-almasri-to-7-years-and-4-months-AIURKxnD
+      title: The Tripoli court sentences Almasri to 7 years and 4 months
+      publisher: Il Sole 24 Ore
+      date: '2026-06-21'
+      tier: 3
+  - domain: military
+    text: A brigade-based force answering to the Defence Ministry (444th and 111th Brigades), Turkish training (Efes-2026 trained 362 soldiers from East and West, per Agenzia Nova), Turkish forces in Tripoli
+      and drones bought by commanders Hamza and Zubi; the force is big enough to purge a rival in a week, not to cross the frontier of the east.
+    confidence: B
+    sources:
+    - url: https://www.nybooks.com/online/2026/08/05/libya-the-dangerous-gamble/
+      title: 'Libya: The Dangerous Gamble (Wolfram Lacher, SWP)'
+      publisher: The New York Review of Books
+      date: '2026-08-05'
+      tier: 2
+    - url: https://www.aljazeera.com/amp/news/2025/5/12/un-urges-calm-as-heavy-fire-clashes-erupt-in-libyas-tripoli
+      title: Heavy gunfire, clashes in Libya's Tripoli after killing of militia leader
+      publisher: Al Jazeera
+      date: '2025-05-12'
+      tier: 3
+    - url: https://www.agenzianova.com/en/news/Libya--Turkey-concludes-training-of-362-soldiers-from-the-East-and-West/
+      title: 'Libya: Turkey concludes training of 362 soldiers from the East and West'
+      publisher: Agenzia Nova
+      date: '2026'
+      tier: 3
+  - domain: economic
+    text: 'The purse: oil revenue reaches households through public salaries, and the recognised government sits at the Central Bank and the NOC end of that channel; it has devalued the dinar twice (13.3%
+      in April 2025, 14.7% in January 2026, to 6.37 per dollar) while the parallel rate reached about 10 in February 2026, and it uses the Eni-NOC gas deal and the April 2026 unified budget to bind outsiders
+      to its channel.'
+    confidence: B
+    sources:
+    - url: https://www.atlanticcouncil.org/blogs/menasource/an-oil-windfall-will-not-fix-libyas-economy/
+      title: An oil windfall will not fix Libya's economy
+      publisher: Atlantic Council
+      date: '2026-05-26'
+      tier: 2
+    - url: https://www.gulf-times.com/article/654334/business/italys-eni-signs-8bn-libya-gas-deal-as-pm-meloni-visits-tripoli
+      title: Italy's Eni signs USD 8bn Libya gas deal as PM Meloni visits Tripoli
+      publisher: Gulf Times
+      date: '2023-01-28'
+      tier: 3
+    - url: https://www.arabnews.com/node/2569860/amp
+      title: UN hosts talks in Tripoli to resolve Libya's central bank crisis
+      publisher: Arab News (Reuters)
+      date: '2024-09-03'
+      tier: 3
+  constraints:
+  - text: Half a country. The east holds most of the oilfields, the Libyan National Army and the loyalty of the House of Representatives, which treats the GNU as illegitimate; there is no single executive,
+      army or central-bank board, so every fight over the budget is a fight over the one bank (August 2024).
+    confidence: A
+    sources:
+    - url: https://www.nybooks.com/online/2026/08/05/libya-the-dangerous-gamble/
+      title: 'Libya: The Dangerous Gamble (Wolfram Lacher, SWP)'
+      publisher: The New York Review of Books
+      date: '2026-08-05'
+      tier: 2
+    - url: https://www.trtafrika.com/africa/libyan-parliament-ends-term-of-tripoli-based-govt-18195476
+      title: Libyan parliament ends term of Tripoli-based govt
+      publisher: TRT Afrika
+      date: '2024-08-14'
+      tier: 3
+    - url: https://www.arabnews.com/node/2569860/amp
+      title: UN hosts talks in Tripoli to resolve Libya's central bank crisis
+      publisher: Arab News (Reuters)
+      date: '2024-09-03'
+      tier: 3
+    - url: https://www.securitycouncilreport.org/monthly-forecast/2026-10/libya-70.php
+      title: Libya - October 2026 monthly forecast
+      publisher: Security Council Report
+      date: 2026-10
+      tier: 2
+  - text: The street and the brigades. The May 2025 fighting produced large protests against Dbeibah (thousands on 16 May, three ministers resigned) while his security rests on brigades he cannot disband;
+      new fighting broke out in Zawiya and Sorman on 3 Aug 2026 and an armed group shut the Sharara-Zawiya pipeline valve on 21 Sep 2026.
+    confidence: B
+    sources:
+    - url: https://www.theglobeandmail.com/world/article-libyan-protesters-demand-prime-minister-quit-as-three-ministers-resign/
+      title: Libyan protesters demand prime minister quit as three ministers resign
+      publisher: The Globe and Mail (Reuters)
+      date: '2025-05-16'
+      tier: 3
+    - url: https://www.aljazeera.com/amp/news/2025/5/12/un-urges-calm-as-heavy-fire-clashes-erupt-in-libyas-tripoli
+      title: Heavy gunfire, clashes in Libya's Tripoli after killing of militia leader
+      publisher: Al Jazeera
+      date: '2025-05-12'
+      tier: 3
+    - url: https://www.securitycouncilreport.org/monthly-forecast/2026-10/libya-70.php
+      title: Libya - October 2026 monthly forecast
+      publisher: Security Council Report
+      date: 2026-10
+      tier: 2
+    - url: https://www.nybooks.com/online/2026/08/05/libya-the-dangerous-gamble/
+      title: 'Libya: The Dangerous Gamble (Wolfram Lacher, SWP)'
+      publisher: The New York Review of Books
+      date: '2026-08-05'
+      tier: 2
+  - text: One commodity. Hydrocarbons were 65% of GDP, 93% of exports and 72% of government revenue in 2024; the IMF said in April 2026 that the fiscal path is 'unsustainable', the official dinar is 6.37
+      per dollar against about 10 on the parallel market (Feb 2026), and the food basket cost rose 27.7% in a year.
+    confidence: A
+    sources:
+    - url: https://www.worldbank.org/en/country/libya/overview
+      title: Libya Overview (Libya Economic Monitor, Fall 2025)
+      publisher: World Bank
+      date: 2025-12
+      tier: 1
+    - url: https://www.atlanticcouncil.org/blogs/menasource/an-oil-windfall-will-not-fix-libyas-economy/
+      title: An oil windfall will not fix Libya's economy
+      publisher: Atlantic Council
+      date: '2026-05-26'
+      tier: 2
+  - text: A protector with its own game. Turkey blocked Tripoli from using Turkish drones in the May 2025 clashes, hosted Saddam Haftar (April 2025 and again July 2026), trains both halves, and received
+      the eastern speaker Aguila Saleh and the High Council of State's Mohamed Takala in Ankara on 10 Sep 2026; Tripoli cannot threaten to leave a patron that already has two counterparts.
+    confidence: B
+    sources:
+    - url: https://www.nybooks.com/online/2026/08/05/libya-the-dangerous-gamble/
+      title: 'Libya: The Dangerous Gamble (Wolfram Lacher, SWP)'
+      publisher: The New York Review of Books
+      date: '2026-08-05'
+      tier: 2
+    - url: https://www.atlanticcouncil.org/blogs/menasource/russias-most-important-middle-east-base-is-not-where-you-think/
+      title: Russia's most important Middle East base is not where you think
+      publisher: Atlantic Council
+      date: '2025-12-18'
+      tier: 2
+    - url: https://libyasecuritymonitor.com/saddam-haftar-meets-turkish-fm-in-official-visit-to-ankara/
+      title: Saddam Haftar meets Turkish FM in official visit to Ankara
+      publisher: Libya Security Monitor
+      date: 2026-07
+      tier: 3
+    - url: https://www.securitycouncilreport.org/monthly-forecast/2026-10/libya-70.php
+      title: Libya - October 2026 monthly forecast
+      publisher: Security Council Report
+      date: 2026-10
+      tier: 2
+    - url: https://turkishminute.com/2026/06/23/turkish-intelligence-chief-meets-with-son-of-eastern-libya-commander-haftar-in-benghazi/
+      title: Turkish intelligence chief meets with son of eastern Libya commander Haftar in Benghazi
+      publisher: Turkish Minute
+      date: '2026-06-23'
+      tier: 3
+  - text: 'An expired mandate. The UN process that made the GNU now plans its succession: the roadmap of 21 Aug 2025 sets an 18-month path to a unified government and elections, the three councils agreed
+      in June 2026 on elections by 17 Feb 2027, and the 30 Aug 2026 agreement says a single executive and elections within 24 months - which the House endorsed on 14 Sep 2026 and the High Council of State
+      reportedly rejected.'
+    confidence: B
+    sources:
+    - url: https://bnub.unmissions.org/sites/default/files/security_council_press_statement_on_libya_3_september_-_eng.pdf
+      title: Security Council press statement on Libya, 3 September 2025
+      publisher: United Nations Security Council
+      date: '2025-09-03'
+      tier: 1
+    - url: https://www.securitycouncilreport.org/monthly-forecast/2026-10/libya-70.php
+      title: Libya - October 2026 monthly forecast
+      publisher: Security Council Report
+      date: 2026-10
+      tier: 2
+    - url: https://en.majalla.com/node/331759/politics/us-plan-libya-unification-or-management-division
+      title: 'US plan for Libya: unification or management of division?'
+      publisher: Al Majalla
+      date: '2026-06-26'
+      tier: 3
+  - text: Exposure to the Court and to Europe's priorities. The ICC pursues officials of the Mitiga detention complex run by the Rada force that shares Tripoli with the GNU (Khaled El Hishri, arrested in
+      Germany in July 2025 and in ICC custody since 1 Dec 2025; the Almasri warrant, which Italy did not execute) and Europe asks Tripoli for fewer departures rather than for governance, so its backing
+      is cheap and revocable - the EU delegation saw Dbeibah first in July 2025 and was then expelled from Benghazi.
+    confidence: B
+    sources:
+    - url: https://www.bbc.co.uk/news/articles/cn0qnzxq4k0o
+      title: Libyan war crimes suspect arrested in Germany under ICC warrant
+      publisher: BBC News
+      date: '2025-07-18'
+      tier: 3
+    - url: https://www.icc-cpi.int/news/situation-libya-khaled-mohamed-ali-el-hishri-icc-custody
+      title: 'Situation in Libya: Khaled Mohamed Ali El Hishri in ICC custody'
+      publisher: International Criminal Court
+      date: '2025-12-01'
+      tier: 1
+    - url: https://www.bluewin.ch/it/attualita/mondo/la-procura-cpi-accusa-l-italia-inadempiente-su-almasri-li.2760676
+      title: ICC prosecutor accuses Italy of non-compliance over Almasri
+      title_original: La procura CPI accusa l'Italia inadempiente su Almasri
+      lang: it
+      publisher: Bluewin (wire)
+      date: '2026'
+      tier: 3
+    - url: https://www.semafor.com/article/07/08/2025/eu-delegation-expelled-from-libya-in-diplomatic-row
+      title: EU delegation expelled from Libya in diplomatic row
+      publisher: Semafor
+      date: '2025-07-08'
+      tier: 3
+    - url: https://www.nybooks.com/online/2026/08/05/libya-the-dangerous-gamble/
+      title: 'Libya: The Dangerous Gamble (Wolfram Lacher, SWP)'
+      publisher: The New York Review of Books
+      date: '2026-08-05'
+      tier: 2
+  paradoxes:
+  - text: Fighting the armed groups that guard it. The May 2025 purge of the SSA and Rada left the Defence Ministry's 444th Brigade holding the SSA's former positions, put thousands in the street against
+      Dbeibah and cost him three ministers; rival units (Kara's Mitiga-based force, al-Tajuri's) are now arming for a second round, so the victory raised the price of the next defeat.
+    confidence: B
+    sources:
+    - url: https://www.aljazeera.com/amp/news/2025/5/12/un-urges-calm-as-heavy-fire-clashes-erupt-in-libyas-tripoli
+      title: Heavy gunfire, clashes in Libya's Tripoli after killing of militia leader
+      publisher: Al Jazeera
+      date: '2025-05-12'
+      tier: 3
+    - url: https://www.theglobeandmail.com/world/article-libyan-protesters-demand-prime-minister-quit-as-three-ministers-resign/
+      title: Libyan protesters demand prime minister quit as three ministers resign
+      publisher: The Globe and Mail (Reuters)
+      date: '2025-05-16'
+      tier: 3
+    - url: https://www.nybooks.com/online/2026/08/05/libya-the-dangerous-gamble/
+      title: 'Libya: The Dangerous Gamble (Wolfram Lacher, SWP)'
+      publisher: The New York Review of Books
+      date: '2026-08-05'
+      tier: 2
+  - text: Dbeibah's legitimacy is the UN process whose roadmap ends it. The UN list and UNSMIL keep him recognised; the UNSMIL roadmap and the 30 Aug 2026 agreement call for a single executive and elections
+      within 24 months. Backing the process keeps him in office and finishing it removes him, which is why each step stalls between the two councils (the High Council of State reportedly rejected the 30
+      Aug 2026 text for bypassing the 6+6 Committee).
+    confidence: B
+    sources:
+    - url: https://bnub.unmissions.org/sites/default/files/security_council_press_statement_on_libya_3_september_-_eng.pdf
+      title: Security Council press statement on Libya, 3 September 2025
+      publisher: United Nations Security Council
+      date: '2025-09-03'
+      tier: 1
+    - url: https://www.securitycouncilreport.org/monthly-forecast/2026-10/libya-70.php
+      title: Libya - October 2026 monthly forecast
+      publisher: Security Council Report
+      date: 2026-10
+      tier: 2
+    - url: https://www.un.org/dgacm/sites/www.un.org.dgacm/files/Documents_Protocol/hspmfmlist.pdf
+      title: Heads of State, Heads of Government, Ministers for Foreign Affairs
+      publisher: United Nations Protocol and Liaison Service
+      date: '2025-05-22'
+      tier: 1
+  - text: 'The patron that made Tripoli safe also makes it replaceable. Turkey''s 2019 military and maritime memoranda saved the Tripoli government, but Ankara now meets Haftar''s son in Benghazi and in
+      Ankara, trains soldiers from both halves and would gain a second signatory if the eastern House ratifies the 2019 memorandum: the more Tripoli depends on Turkey, the less Turkey needs Tripoli alone.'
+    confidence: B
+    sources:
+    - url: https://www.nybooks.com/online/2026/08/05/libya-the-dangerous-gamble/
+      title: 'Libya: The Dangerous Gamble (Wolfram Lacher, SWP)'
+      publisher: The New York Review of Books
+      date: '2026-08-05'
+      tier: 2
+    - url: https://www.newarab.com/analysis/why-haftar-might-ratify-libya-turkey-maritime-deal
+      title: Why Haftar might ratify the Libya-Turkey maritime deal
+      publisher: The New Arab
+      date: 2025-06
+      tier: 3
+    - url: https://turkishminute.com/2026/06/23/turkish-intelligence-chief-meets-with-son-of-eastern-libya-commander-haftar-in-benghazi/
+      title: Turkish intelligence chief meets with son of eastern Libya commander Haftar in Benghazi
+      publisher: Turkish Minute
+      date: '2026-06-23'
+      tier: 3
+    - url: https://www.agenzianova.com/en/news/Libya--Turkey-concludes-training-of-362-soldiers-from-the-East-and-West/
+      title: 'Libya: Turkey concludes training of 362 soldiers from the East and West'
+      publisher: Agenzia Nova
+      date: '2026'
+      tier: 3
+  - text: Record oil feeds the division. Output at 1.4m bpd on Brent near USD 100 should strengthen the recognised government, but it enlarges what the Haftars (who hold most of the fields) and the Zawiya
+      armed groups can hold hostage - the Sharara-Zawiya valve closed on 21 Sep 2026 and UNSMIL warned on 26 Sep of sanctions for attacks on oil facilities - while the windfall, a falling dinar and the
+      unified budget, which would move billions of dinars to the Haftars' construction funds, make the split a revenue-sharing arrangement.
+    confidence: B
+    sources:
+    - url: https://www.atlanticcouncil.org/blogs/menasource/an-oil-windfall-will-not-fix-libyas-economy/
+      title: An oil windfall will not fix Libya's economy
+      publisher: Atlantic Council
+      date: '2026-05-26'
+      tier: 2
+    - url: https://www.securitycouncilreport.org/monthly-forecast/2026-10/libya-70.php
+      title: Libya - October 2026 monthly forecast
+      publisher: Security Council Report
+      date: 2026-10
+      tier: 2
+    - url: https://www.nybooks.com/online/2026/08/05/libya-the-dangerous-gamble/
+      title: 'Libya: The Dangerous Gamble (Wolfram Lacher, SWP)'
+      publisher: The New York Review of Books
+      date: '2026-08-05'
+      tier: 2
+  - text: Unification by deal makes the rival head of state. The US plan would keep Dbeibah as prime minister and put Saddam Haftar at the head of a presidential administration, with no election; the Presidential
+      Council and the High Council of State rejected it, Misrata signalled it would mobilise, and a Dbeibah adviser told Lacher that if the Boulos initiative fails the alternative is probably war. The compromise
+      that would end the split is the one most likely to start a war inside the west.
+    confidence: B
+    sources:
+    - url: https://en.majalla.com/node/331759/politics/us-plan-libya-unification-or-management-division
+      title: 'US plan for Libya: unification or management of division?'
+      publisher: Al Majalla
+      date: '2026-06-26'
+      tier: 3
+    - url: https://www.nybooks.com/online/2026/08/05/libya-the-dangerous-gamble/
+      title: 'Libya: The Dangerous Gamble (Wolfram Lacher, SWP)'
+      publisher: The New York Review of Books
+      date: '2026-08-05'
+      tier: 2
+  - text: 'Europe''s dependence on departures is Tripoli''s best card, and the east plays it as well. Libya was the point of departure for 88% of Italy''s sea arrivals (January-April 2026) and about half
+      of all arrivals in Greece, but Benghazi expelled the EU migration commissioner and the interior ministers of Greece, Italy and Malta on 8 Jul 2025, received the Greek foreign minister (March 2026)
+      and the head of Italian intelligence (7 Jul 2026) and is to get refurbished Greek patrol boats: the more Europe pays for control of the coast, the more it pays both halves, and the cheaper division
+      becomes.'
+    confidence: B
+    sources:
+    - url: https://www.semafor.com/article/07/08/2025/eu-delegation-expelled-from-libya-in-diplomatic-row
+      title: EU delegation expelled from Libya in diplomatic row
+      publisher: Semafor
+      date: '2025-07-08'
+      tier: 3
+    - url: https://libyasecuritymonitor.com/greek-fm-dicusses-maritime-migration-with-haftar-in-benghazi/
+      title: Greek FM discusses maritime and migration issues with Haftar in Benghazi
+      publisher: Libya Security Monitor
+      date: 2026-03
+      tier: 3
+    - url: https://libyasecuritymonitor.com/italian-intelligence-chief-visits-saddam-haftar/
+      title: Italian intelligence chief visits Saddam Haftar
+      publisher: Libya Security Monitor
+      date: '2026-07-07'
+      tier: 3
+    - url: https://www.iefimerida.gr/english/crete-receives-nearly-6000-migrants-libya-year-half-all-arrivals-greece
+      title: Crete receives nearly 6,000 migrants from Libya this year, half of all arrivals in Greece
+      publisher: iefimerida
+      date: '2026'
+      tier: 3
+    - url: https://www.iefimerida.gr/english/greece-bolsters-libya-coast-guard-migrant-wave-inundates-crete
+      title: Greece bolsters Libya coast guard as migrant wave inundates Crete
+      publisher: iefimerida
+      date: '2026'
+      tier: 3
+    - url: https://www.ansa.it/english/news/general_news/2026/05/05/2459-migrants-landed-in-italy-in-april-up-14-compared-to-march-unhcr_9e1c34f4-7a03-4b57-9c29-c169cb12bed8.html
+      title: 2,459 migrants landed in Italy in April, up 14% compared to March - UNHCR
+      publisher: ANSA (UNHCR data)
+      date: '2026-05-05'
+      tier: 3
+  reading: 'Libya is a state whose two halves are each a client, and the card of the recognised half has to be read as the card of a client that holds the title deeds. Tripoli has the United Nations list,
+    a Turkish shield, the Central Bank and the Italian gas contract; Benghazi has the oilfields, the army, Russian air bases at six sites, the Emirati air bridge to Kufra and the Egyptian border. Luttwak''s
+    relational manoeuvre turns on seams between an opponent and its allies, and here the seams are in the patrons themselves: Turkey backs Tripoli and courts Haftar''s son, Egypt trains the east''s officers
+    and sends its intelligence chief to Dbeibah, Italy and Greece pay both coasts, and Washington brokers a unified budget and a power-sharing scheme that would make Saddam Haftar president. Every patron
+    has a reason to keep the division manageable and none to end it: a united Libya would answer to one capital, and each of them has a deal with a different one. The 2026 state is a stalemate that is eroding
+    - a unified budget (11 Apr), a Tripoli agreement on an elections commission and a single executive (30 Aug), a House that endorsed it and a High Council that did not, UNSMIL''s mandate up for renewal
+    on 31 Oct, new fighting in Zawiya - and the paradox of the card is that Dbeibah''s best moves (purging the militias, courting Washington, selling Europe departures) each work for the east as well or
+    better, so Tripoli''s strength is its recognition, which is the one asset the UN process is designed to retire.'
