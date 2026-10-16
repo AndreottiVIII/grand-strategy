@@ -1,14 +1,620 @@
 id: ETH
 name: Ethiopia
+short: Ethiopia
 type: state
-iso2: et
-wikipedia: https://en.wikipedia.org/wiki/Ethiopia
 coords:
 - 38.75
 - 9.04
+iso2: et
+wikipedia: https://en.wikipedia.org/wiki/Ethiopia
 seat: Addis Ababa
 regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+- east-africa
+card: full
+tier: protagonist
+last_verified: '2026-10-12'
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: 'Hold the state and the mandate against the Alliance for Survival: defeat the TPLF-led coalition of seven armed groups that announced on 20 Sep 2026 its aim to overthrow Abiy, keep Mekelle (retaken 3-4 Oct) and the Afar and Amhara fronts, and govern on the Prosperity Party''s 438-seat majority (Abiy sworn in again on 5 Oct 2026; AP counts a third term, Semafor a second full one). Everything else is conditional on this.'
+    confidence: B
+    sources:
+    - url: https://aljazeera.com/news/2026/9/21/ethiopian-armed-groups-forge-alliance-against-government
+      title: Ethiopian armed groups forge alliance against government
+      publisher: Al Jazeera
+      date: '2026-09-21'
+      tier: 3
+    - url: https://www.euronews.com/2026/09/21/former-enemies-form-alliance-to-overthrow-ethiopias-abiy-ahmed
+      title: Former enemies form alliance to overthrow Ethiopia's Abiy Ahmed
+      publisher: Euronews
+      date: '2026-09-21'
+      tier: 3
+    - url: https://www.africanews.com/amp/2026/10/05/ethiopias-federal-forces-retake-tigrayan-capital-mekelle/
+      title: Ethiopia's federal forces retake Tigrayan capital Mekelle
+      publisher: Africanews
+      date: '2026-10-05'
+      tier: 3
+    - url: https://www.dawan.africa/news/prosperity-party-wins-438-seats-in-ethiopias-parliament
+      title: Prosperity Party wins 438 seats in Ethiopia's parliament
+      publisher: Dawan Africa
+      date: 2026-06
+      tier: 3
+    - url: https://abcnews.com/International/wireStory/ethiopia-demands-access-red-sea-tensions-neighbors-escalate-137007336
+      title: Ethiopia again demands access to the Red Sea as tensions with neighbors escalate
+      publisher: AP (via ABC News)
+      date: '2026-10-05'
+      tier: 3
+  - rank: 2
+    text: 'Win sovereign sea access (''an outlet to the sea'', ''on the principle of give and take'', Abiy to parliament on 5 Oct 2026): a port Ethiopia controls, which it names a question of survival. Assab, lost with Eritrean independence in 1993, is the prize some in government have long had in view; Berbera (the MoU of 1 Jan 2024) and a Somali-sovereign outlet (Ankara, Dec 2024) are the alternatives that failed or stalled.'
+    confidence: B
+    sources:
+    - url: https://abcnews.com/International/wireStory/ethiopia-demands-access-red-sea-tensions-neighbors-escalate-137007336
+      title: Ethiopia again demands access to the Red Sea as tensions with neighbors escalate
+      publisher: AP (via ABC News)
+      date: '2026-10-05'
+      tier: 3
+    - url: https://www.semafor.com/article/10/07/2026/ethiopias-pm-abiy-ahmed-renews-push-for-red-sea-access
+      title: Ethiopia's PM Abiy Ahmed renews push for Red Sea access
+      publisher: Semafor
+      date: '2026-10-07'
+      tier: 3
+    - url: https://aljazeera.com/news/2026/10/11/ethiopia-eritrea-ramp-up-rhetoric-are-they-inching-towards-war
+      title: 'Ethiopia, Eritrea ramp up rhetoric: are they inching towards war?'
+      publisher: Al Jazeera
+      date: '2026-10-11'
+      tier: 3
+    - url: https://www.thereporterethiopia.com/42967/
+      title: Ethiopia, Somalia reconciliation in Ankara garners international praise
+      publisher: The Reporter (Ethiopia)
+      date: 2024-12
+      tier: 3
+    - url: https://www.everycrsreport.com/files/2024-01-23_R47898_a65946e392dd64a86c51d20cb087c065625a52e0.html
+      title: 'Ethiopia: In Brief (CRS report R47898)'
+      publisher: Congressional Research Service
+      date: '2024-01-23'
+      tier: 1
+  - rank: 3
+    text: 'Finish and defend the Blue Nile cascade as the national project: GERD inaugurated on 9 Sep 2025 (USD 5bn), three further dams announced in March 2026 (USD 10.5bn, seven-year target), and the right to operate them without the binding filling-and-operation agreement Egypt and Sudan demand.'
+    confidence: B
+    sources:
+    - url: https://www.vaticannews.va/en/world/news/2025-09/ethiopia-inaugurates-africa-s-largest-hydroelectric-dam.html
+      title: Ethiopia inaugurates Africa's largest hydroelectric dam
+      publisher: Vatican News
+      date: '2025-09-09'
+      tier: 3
+    - url: https://madamasr.com/en/2026/03/26/news/u/ethiopia-unveils-3-new-hydropower-projects-on-nile-stoking-concerns-in-cairo/
+      title: Ethiopia unveils 3 new hydropower projects on Nile, stoking concerns in Cairo
+      publisher: Mada Masr
+      date: '2026-03-26'
+      tier: 3
+    - url: https://www.al-monitor.com/originals/2025/09/sudan-egypt-fms-urge-ethiopia-change-course-ahead-megadam-launch
+      title: Sudan, Egypt FMs urge Ethiopia to change course ahead of megadam launch
+      publisher: Al-Monitor
+      date: 2025-09
+      tier: 3
+    - url: https://www.thenationalnews.com/news/mena/2026/10/02/egypt-ethiopia-nile-dam-latest/
+      title: Egypt Ethiopia Nile dam latest
+      publisher: The National
+      date: '2026-10-02'
+      tier: 3
+  - rank: 4
+    text: 'Break the ring: stop Egypt, Eritrea, Sudan and Somalia from fixing a coalition against Ethiopia (Egypt-Somalia pact of Aug 2024, the Asmara trilateral of Oct 2024, the El Alamein quadrilateral of 4 Oct 2026), keep Mogadishu, Djibouti, Nairobi and Juba on Addis Ababa''s side of the table, and stay the largest troop contributor to AUSSOM (2,500 allocated).'
+    confidence: B
+    sources:
+    - url: https://www.thenationalnews.com/news/mena/2026/10/04/egypt-hosts-four-way-summit-as-tensions-with-ethiopia-escalate/
+      title: Egypt hosts four-way summit as tensions with Ethiopia escalate
+      publisher: The National
+      date: '2026-10-04'
+      tier: 3
+    - url: https://www.dawan.africa/news/egypt-somalia-eritrea-and-sudan-issue-joint-declaration-on-red-sea-nile-and-regional-unity
+      title: Egypt, Somalia, Eritrea and Sudan issue joint declaration on Red Sea, Nile and regional unity
+      publisher: Dawan Africa
+      date: '2026-10-05'
+      tier: 3
+    - url: https://www.dawan.africa/news/somalia-djibouti-presidents-discuss-ethiopia-amid-renewed-fighting
+      title: Somalia, Djibouti presidents discuss Ethiopia amid renewed fighting
+      publisher: Dawan Africa
+      date: '2026-09-30'
+      tier: 3
+    - url: https://www.dawan.africa/news/somalia-says-funding-hurdles-delay-egyptian-troops-deployment-to-aussom
+      title: Somalia says funding hurdles delay Egyptian troops deployment to AUSSOM
+      publisher: Dawan Africa
+      date: '2026-09-01'
+      tier: 3
+    - url: https://fides.org/en/news/75346-AFRICA_SOMALIA_Egypt_and_Somalia_s_military_agreement_alarms_Ethiopia
+      title: Egypt and Somalia's military agreement alarms Ethiopia
+      publisher: Agenzia Fides
+      date: 2024-08
+      tier: 3
+  - rank: 5
+    text: 'Restore external finance without losing the programme: finish the debt restructuring (official creditors USD 8.4bn in 2025, the defaulted USD 1bn Eurobond swapped for a USD 880m 2029 note in a preliminary deal of 29 Jun 2026), keep the IMF programme of USD 3.4bn and the floated birr, and bring back EU budget support (resumed April 2026).'
+    confidence: B
+    sources:
+    - url: https://allafrica.com/stories/202601230003.html
+      title: 'Ethiopia: IMF approves USD 261 million disbursement to Ethiopia, cites stronger macroeconomic performance'
+      publisher: AllAfrica
+      date: '2026-01-23'
+      tier: 3
+    - url: https://www.dawan.africa/news/ethiopia-strikes-preliminary-dollar1-billion-eurobond-restructuring-deal
+      title: Ethiopia strikes preliminary USD 1 billion Eurobond restructuring deal
+      publisher: Dawan Africa
+      date: '2026-06-29'
+      tier: 3
+    - url: https://capitalethiopia.com/2026/06/29/ethiopia-introduces-new-money-warrant-to-break-eurobond-restructuring-deadlock/
+      title: Ethiopia introduces new money warrant to break Eurobond restructuring deadlock
+      publisher: Capital Ethiopia
+      date: '2026-06-29'
+      tier: 3
+    - url: https://www.thereporterethiopia.com/44533/
+      title: Official creditors grant Ethiopia more time to pay debt, no write-down
+      publisher: The Reporter (Ethiopia)
+      date: '2025'
+      tier: 3
+    - url: https://www.eeas.europa.eu/delegations/ethiopia/commissioner-s%C3%ADkela-announces-resumption-budget-support-and-strengthened-partnership-ethiopia_en
+      title: Commissioner Síkela announces resumption of budget support and strengthened partnership with Ethiopia at Business Forum
+      publisher: European External Action Service
+      date: 2026-04
+      tier: 1
+  - rank: 6
+    text: 'Spread the patrons so that none can set terms: UAE money and (alleged) air power, Turkish drones and mediation, Chinese credit and a ''strategic partnership'', Russian nuclear plans, Israeli and Saudi courtship, with the US and EU returning on their own timetable.'
+    confidence: C
+    sources:
+    - url: https://www.geeska.com/en/abiy-lands-abu-dhabi-and-timing-says-everything
+      title: Abiy lands in Abu Dhabi and timing says everything
+      publisher: Geeska Afrika
+      date: 2026-03
+      tier: 3
+    - url: https://www.dailysabah.com/business/energy/turkiye-ethiopia-ink-energy-cooperation-deal-during-erdogan-visit
+      title: Turkiye, Ethiopia ink energy cooperation deal during Erdogan visit
+      publisher: Daily Sabah
+      date: '2026-02-17'
+      tier: 3
+    - url: https://capitalethiopia.com/2026/03/30/ethiopiachina-reach-final-stage-of-strategic-debt-restructuring-negotiations-in-beijing/
+      title: Ethiopia-China reach final stage of strategic debt restructuring negotiations in Beijing
+      publisher: Capital Ethiopia
+      date: '2026-03-30'
+      tier: 3
+    - url: https://www.geeska.com/en/ethiopia-signs-nuclear-deal-russia
+      title: Ethiopia signs nuclear deal with Russia
+      publisher: Geeska Afrika
+      date: 2025-09
+      tier: 3
+    - url: https://www.aljazeera.com/news/2026/2/25/will-ethiopia-be-part-of-israels-hexagon-alliance-rivalling-its-enemies
+      title: Will Ethiopia be part of Israel's 'hexagon' alliance rivalling its enemies?
+      publisher: Al Jazeera
+      date: '2026-02-25'
+      tier: 3
+    - url: https://capitalethiopia.com/2026/02/15/saudi-foreign-minister-meets-ethiopian-premier-to-discuss-ties-regional-issues
+      title: Saudi foreign minister meets Ethiopian premier to discuss ties, regional issues
+      publisher: Capital Ethiopia
+      date: '2026-02-15'
+      tier: 3
+  means:
+  - domain: diplomatic
+    text: 'Mediated reconciliation and a new international platform: the Turkish-brokered Ankara Declaration with Somalia (11 Dec 2024), the Jigjiga trilateral with Djibouti and Somalia (31 Jan 2026), BRICS membership (dataset), the AU seat in Addis Ababa and, on 8-9 Oct 2026, a letter to the UN Security Council invoking Article 51 against Eritrea.'
+    confidence: B
+    sources:
+    - url: https://www.thereporterethiopia.com/42967/
+      title: Ethiopia, Somalia reconciliation in Ankara garners international praise
+      publisher: The Reporter (Ethiopia)
+      date: 2024-12
+      tier: 3
+    - url: https://dawan.africa/news/somalia-ethiopia-djibouti-hold-trilateral-summit-in-jigjiga
+      title: Somalia, Ethiopia, Djibouti hold trilateral summit in Jigjiga
+      publisher: Dawan Africa
+      date: 2026-01
+      tier: 3
+    - url: https://www.aljazeera.com/news/2026/10/9/ethiopia-and-eritrea-accuse-one-another-of-launching-war
+      title: Ethiopia and Eritrea accuse one another of launching war
+      publisher: Al Jazeera
+      date: '2026-10-09'
+      tier: 3
+    - url: https://abcnews.com/International/wireStory/ethiopia-tells-acting-defense-eritrea-137153814
+      title: Ethiopia tells UN it is acting in self-defense against Eritrea
+      publisher: AP (via ABC News)
+      date: 2026-10
+      tier: 3
+  - domain: diplomatic
+    text: 'Dialogue as a public posture while the leverage builds: Abiy invited Egypt and Sudan to the GERD ceremony (July 2025) and told the world that Ethiopia ''will not fire a single bullet'' at Eritrea, Somalia, Djibouti or Kenya (March 2026); the foreign ministry says Nile and Red Sea talks must reflect geography (the Blue Nile starts in Ethiopia, the country lies near the Red Sea) and that Ethiopia remains committed to dialogue.'
+    confidence: B
+    sources:
+    - url: https://www.dabangasudan.org/en?p=20118238
+      title: Ethiopia to inaugurate GERD in September, invites Sudan and Egypt
+      publisher: Radio Dabanga
+      date: 2025-07
+      tier: 3
+    - url: https://www.africanews.com/amp/2026/03/04/abiy-ahmed-insists-ethiopia-will-not-go-to-war-over-sea-access/
+      title: Abiy Ahmed insists Ethiopia will not go to war over sea access
+      publisher: Africanews
+      date: '2026-03-04'
+      tier: 3
+    - url: https://abcnews.com/International/wireStory/ethiopia-demands-access-red-sea-tensions-neighbors-escalate-137007336
+      title: Ethiopia again demands access to the Red Sea as tensions with neighbors escalate
+      publisher: AP (via ABC News)
+      date: '2026-10-05'
+      tier: 3
+  - domain: informational
+    text: 'A narrative of national survival and ''civilization'': access to the sea and the Nile are cast as existential, and the war with the TPLF as a regional conspiracy (Egypt, Eritrea and Sudan accused of backing the opposition alliance on 1 Oct 2026; all three deny it).'
+    confidence: B
+    sources:
+    - url: https://abcnews.com/International/wireStory/ethiopia-demands-access-red-sea-tensions-neighbors-escalate-137007336
+      title: Ethiopia again demands access to the Red Sea as tensions with neighbors escalate
+      publisher: AP (via ABC News)
+      date: '2026-10-05'
+      tier: 3
+    - url: https://www.timeslive.co.za/news/africa/2026-10-01-ethiopia-shuts-embassy-in-eritrea-expels-10-envoys/
+      title: Ethiopia shuts embassy in Eritrea, expels 10 envoys
+      publisher: TimesLIVE (Reuters)
+      date: '2026-10-01'
+      tier: 3
+    - url: https://www.semafor.com/article/10/07/2026/ethiopias-pm-abiy-ahmed-renews-push-for-red-sea-access
+      title: Ethiopia's PM Abiy Ahmed renews push for Red Sea access
+      publisher: Semafor
+      date: '2026-10-07'
+      tier: 3
+  - domain: military
+    text: 'Federal air power and loyal Tigrayan militia: Turkish-supplied drones (Akinci in service since late 2023), the federally backed Tigray Peace Force that entered Mekelle with the army, drone strikes on Eritrean columns near Zalambessa (reported by ACLED), a drone ban over Addis Ababa; 2,500 troops pledged to AUSSOM.'
+    confidence: B
+    sources:
+    - url: https://thedefensepost.com/2024/01/19/ethiopia-akinci-uav-sukhoi/amp/
+      title: Ethiopia acquires Akinci drones and Su-30 jets (report)
+      publisher: The Defense Post
+      date: '2024-01-19'
+      tier: 3
+    - url: https://www.africanews.com/amp/2026/10/05/ethiopias-federal-forces-retake-tigrayan-capital-mekelle/
+      title: Ethiopia's federal forces retake Tigrayan capital Mekelle
+      publisher: Africanews
+      date: '2026-10-05'
+      tier: 3
+    - url: https://www.aljazeera.com/news/2026/10/9/ethiopia-and-eritrea-accuse-one-another-of-launching-war
+      title: Ethiopia and Eritrea accuse one another of launching war
+      publisher: Al Jazeera
+      date: '2026-10-09'
+      tier: 3
+    - url: https://www.timeslive.co.za/news/africa/2026-10-01-ethiopia-shuts-embassy-in-eritrea-expels-10-envoys/
+      title: Ethiopia shuts embassy in Eritrea, expels 10 envoys
+      publisher: TimesLIVE (Reuters)
+      date: '2026-10-01'
+      tier: 3
+    - url: https://northafricapost.com/?p=84705
+      title: Ethiopia, Somalia agree on deployment of Ethiopian troops in new African Union mission
+      publisher: North Africa Post
+      date: '2025'
+      tier: 3
+  - domain: economic
+    text: 'Electricity and aviation as instruments: GERD produced 52% of power-export revenue, which passed USD 0.5bn (EEP, Sept 2026), with buyers in Kenya, Djibouti, Sudan and, through Kenya, Tanzania; Ethiopian Airlines reported USD 9.1bn revenue (+20%), 20.7m passengers and 150 international destinations in FY2025/26 (no profit figure published).'
+    confidence: B
+    sources:
+    - url: https://allafrica.com/stories/202609150052.html
+      title: 'Ethiopia: GERD drives record earnings and regional energy integration, says EEP CEO'
+      publisher: AllAfrica
+      date: '2026-09-15'
+      tier: 3
+    - url: https://www.sowetan.co.za/news/2026-07-29-ethiopian-airlines-posts-strong-growth-in-revenue/
+      title: Ethiopian Airlines posts strong growth in revenue
+      publisher: Sowetan (Reuters)
+      date: '2026-07-29'
+      tier: 3
+  - domain: economic
+    text: 'Credit-and-corridor diplomacy: Lamu port and the LAPSSET corridor with Kenya (Ruto, Feb 2025), the Doraleh cooperation with Djibouti (Feb 2026), the Chinese railway loan rescheduled, EU Global Gateway money (EUR 140m budget support, EUR 150m digital package, EIB EUR 130m, April 2026).'
+    confidence: B
+    sources:
+    - url: https://capitalfm.africa/ethiopia-to-use-lamu-port-to-move-imports-president-ruto-says/
+      title: Ethiopia to use Lamu port to move imports, President Ruto says
+      publisher: Capital FM (Kenya)
+      date: '2025-02-28'
+      tier: 3
+    - url: https://allafrica.com/stories/202602270391.html
+      title: Ethiopia, Djibouti agree to deepen cooperation at Doraleh port amid shifting Red Sea geopolitics
+      publisher: AllAfrica
+      date: '2026-02-27'
+      tier: 3
+    - url: https://capitalethiopia.com/2026/03/30/ethiopiachina-reach-final-stage-of-strategic-debt-restructuring-negotiations-in-beijing/
+      title: Ethiopia-China reach final stage of strategic debt restructuring negotiations in Beijing
+      publisher: Capital Ethiopia
+      date: '2026-03-30'
+      tier: 3
+    - url: https://www.eeas.europa.eu/delegations/ethiopia/commissioner-s%C3%ADkela-announces-resumption-budget-support-and-strengthened-partnership-ethiopia_en
+      title: Commissioner Síkela announces resumption of budget support and strengthened partnership with Ethiopia at Business Forum
+      publisher: European External Action Service
+      date: 2026-04
+      tier: 1
+  constraints:
+  - text: 'War on every flank at once: the TPLF in Tigray and Afar, Fano in Amhara, the OLA in Oromia, the ONLF, the Afar, Benishangul and Gumuz movements, all joined in one alliance on 20 Sep 2026; the alliance''s drones reportedly struck military sites in Addis Ababa on 1 Oct (unconfirmed by Reuters). A mandate won in June with polling not held in some constituencies for security reasons (Wikipedia''s election page says the whole of Tigray did not vote).'
+    confidence: B
+    sources:
+    - url: https://aljazeera.com/news/2026/9/21/ethiopian-armed-groups-forge-alliance-against-government
+      title: Ethiopian armed groups forge alliance against government
+      publisher: Al Jazeera
+      date: '2026-09-21'
+      tier: 3
+    - url: https://aljazeera.com/news/2026/9/23/can-ethiopias-seven-group-rebel-alliance-challenge-abiy-ahmed
+      title: Can Ethiopia's seven-group rebel alliance challenge Abiy Ahmed?
+      publisher: Al Jazeera
+      date: '2026-09-23'
+      tier: 3
+    - url: https://www.timeslive.co.za/news/africa/2026-10-01-ethiopia-shuts-embassy-in-eritrea-expels-10-envoys/
+      title: Ethiopia shuts embassy in Eritrea, expels 10 envoys
+      publisher: TimesLIVE (Reuters)
+      date: '2026-10-01'
+      tier: 3
+    - url: https://www.dawan.africa/news/prosperity-party-wins-438-seats-in-ethiopias-parliament
+      title: Prosperity Party wins 438 seats in Ethiopia's parliament
+      publisher: Dawan Africa
+      date: 2026-06
+      tier: 3
+    - url: https://en.wikipedia.org/wiki/2026_Ethiopian_general_election
+      title: 2026 Ethiopian general election
+      publisher: Wikipedia (index only)
+      date: '2026-10-12'
+      tier: 4
+  - text: 'Landlocked: Djibouti handled 96.7% of Ethiopia''s external freight in FY2025/26 (17.57 million tonnes) and the Addis-Djibouti road and railway carry it; every alternative (Berbera, Tadjoura, Lamu) is marginal. The state that wants to end the dependence cannot afford to offend Djibouti.'
+    confidence: B
+    sources:
+    - url: https://fr.apanews.net/business/djibouti-concentre-967-du-fret-ethiopien/
+      title: Djibouti handles 96.7% of Ethiopian freight
+      publisher: APA news
+      date: 2026-08
+      tier: 3
+      title_original: Djibouti concentre 96,7% du fret éthiopien
+      lang: fr
+    - url: https://allafrica.com/stories/202602270391.html
+      title: Ethiopia, Djibouti agree to deepen cooperation at Doraleh port amid shifting Red Sea geopolitics
+      publisher: AllAfrica
+      date: '2026-02-27'
+      tier: 3
+    - url: https://capitalfm.africa/ethiopia-to-use-lamu-port-to-move-imports-president-ruto-says/
+      title: Ethiopia to use Lamu port to move imports, President Ruto says
+      publisher: Capital FM (Kenya)
+      date: '2025-02-28'
+      tier: 3
+  - text: 'The debt is restructured, not cleared: the 2023 default, official creditors'' USD 8.4bn deal in 2025, a Eurobond swap still preliminary, and IMF conditions (fuel subsidies to be phased out, no non-concessional borrowing except Koysha) that leave no room for a war economy.'
+    confidence: B
+    sources:
+    - url: https://allafrica.com/stories/202601230003.html
+      title: 'Ethiopia: IMF approves USD 261 million disbursement to Ethiopia, cites stronger macroeconomic performance'
+      publisher: AllAfrica
+      date: '2026-01-23'
+      tier: 3
+    - url: https://www.dawan.africa/news/ethiopia-strikes-preliminary-dollar1-billion-eurobond-restructuring-deal
+      title: Ethiopia strikes preliminary USD 1 billion Eurobond restructuring deal
+      publisher: Dawan Africa
+      date: '2026-06-29'
+      tier: 3
+    - url: https://www.thereporterethiopia.com/44533/
+      title: Official creditors grant Ethiopia more time to pay debt, no write-down
+      publisher: The Reporter (Ethiopia)
+      date: '2025'
+      tier: 3
+  - text: 'The Horn is organising against it: Egypt, Eritrea, Sudan and Somalia declared on 4-5 Oct 2026 that the Red Sea is ''the exclusive responsibility of its coastal states'', rejected any support for Somaliland and unilateral measures that harm Egypt''s and Sudan''s Nile uses; Egypt''s AUSSOM allocation (1,091 troops) and its reported sites in Eritrea reach Ethiopia''s flanks.'
+    confidence: B
+    sources:
+    - url: https://www.dawan.africa/news/egypt-somalia-eritrea-and-sudan-issue-joint-declaration-on-red-sea-nile-and-regional-unity
+      title: Egypt, Somalia, Eritrea and Sudan issue joint declaration on Red Sea, Nile and regional unity
+      publisher: Dawan Africa
+      date: '2026-10-05'
+      tier: 3
+    - url: https://www.al-monitor.com/originals/2026/10/egypt-eritrea-somalia-and-sudan-hold-summit-amid-ethiopia-tensions
+      title: Egypt, Eritrea, Somalia and Sudan hold summit amid Ethiopia tensions
+      publisher: Al-Monitor
+      date: '2026-10-04'
+      tier: 3
+    - url: https://www.dawan.africa/news/somalia-says-funding-hurdles-delay-egyptian-troops-deployment-to-aussom
+      title: Somalia says funding hurdles delay Egyptian troops deployment to AUSSOM
+      publisher: Dawan Africa
+      date: '2026-09-01'
+      tier: 3
+    - url: https://www.thenationalnews.com/news/mena/2026/10/04/egypt-hosts-four-way-summit-as-tensions-with-ethiopia-escalate/
+      title: Egypt hosts four-way summit as tensions with Ethiopia escalate
+      publisher: The National
+      date: '2026-10-04'
+      tier: 3
+    - url: https://hornreview.org/2026/04/22/as-ethiopia-doubles-down-on-the-nile-egypt-deepens-its-eritrea-alignment/
+      title: As Ethiopia doubles down on the Nile, Egypt deepens its Eritrea alignment
+      publisher: Horn Review
+      date: '2026-04-22'
+      tier: 3
+  - text: 'Patrons are divided or distracted: Riyadh and Abu Dhabi are rivals and Riyadh named Ethiopia among places where Emirati aircraft operate; Egypt is the UAE''s largest creditor; Washington has cut aid (Ethiopia was the largest USAID recipient in sub-Saharan Africa), toured Cairo, Mogadishu and Asmara in July 2026 without Addis Ababa and is reported to weigh easing sanctions on Eritrea.'
+    confidence: B
+    sources:
+    - url: https://www.pbs.org/newshour/world/saudi-arabia-alleges-uae-smuggled-yemen-separatist-leader-out-of-the-country
+      title: Saudi Arabia alleges UAE smuggled wanted Yemen separatist leader out of the country
+      publisher: AP (via PBS NewsHour)
+      date: '2026-01-09'
+      tier: 3
+    - url: https://aljazeera.com/features/2026/1/23/hunger-death-devastation-no-respite-in-tigray-a-year-after-us-aid-cuts
+      title: 'Hunger, death, devastation: no respite in Tigray a year after US aid cuts'
+      publisher: Al Jazeera
+      date: '2026-01-23'
+      tier: 3
+    - url: https://www.thereporterethiopia.com/51950/
+      title: US official visits Cairo, Asmara for security talks
+      publisher: The Reporter (Ethiopia)
+      date: '2026-07-20'
+      tier: 3
+    - url: https://www.geeska.com/en/abiy-lands-abu-dhabi-and-timing-says-everything
+      title: Abiy lands in Abu Dhabi and timing says everything
+      publisher: Geeska Afrika
+      date: 2026-03
+      tier: 3
+  - text: 'Humanitarian load and weak aid: up to 80% of Tigray''s people need emergency support after the aid cuts (WFP), more than 100,000 South Sudanese fled into Gambella in 2026 (UNHCR), and the new war displaced tens of thousands in Afar.'
+    confidence: B
+    sources:
+    - url: https://aljazeera.com/features/2026/1/23/hunger-death-devastation-no-respite-in-tigray-a-year-after-us-aid-cuts
+      title: 'Hunger, death, devastation: no respite in Tigray a year after US aid cuts'
+      publisher: Al Jazeera
+      date: '2026-01-23'
+      tier: 3
+    - url: https://www.dawan.africa/news/more-than-100000-people-flee-south-sudan-conflict-into-ethiopia-un-says
+      title: More than 100,000 people flee South Sudan conflict into Ethiopia, UN says
+      publisher: Dawan Africa
+      date: 2026-03
+      tier: 3
+    - url: https://www.timeslive.co.za/news/africa/2026-10-01-ethiopia-shuts-embassy-in-eritrea-expels-10-envoys/
+      title: Ethiopia shuts embassy in Eritrea, expels 10 envoys
+      publisher: TimesLIVE (Reuters)
+      date: '2026-10-01'
+      tier: 3
+  paradoxes:
+  - text: 'Naming sea access as an existential right summoned the very coalition that closes it. Abiy''s demand turned Eritrea into a declared enemy (Asmara called Ethiopia''s UN letter a ''declaration of war'' and fears for Assab) and merged Egypt''s Nile grievance with Eritrea''s and Somalia''s fear for their coast: the El Alamein summit of 4 Oct 2026, the day before Abiy repeated the demand in parliament, writes the ''coastal states only'' principle into a four-power text. A landlocked power cannot win a port by making every coastal state its neighbour in arms.'
+    confidence: B
+    sources:
+    - url: https://abcnews.com/International/wireStory/ethiopia-demands-access-red-sea-tensions-neighbors-escalate-137007336
+      title: Ethiopia again demands access to the Red Sea as tensions with neighbors escalate
+      publisher: AP (via ABC News)
+      date: '2026-10-05'
+      tier: 3
+    - url: https://www.dawan.africa/news/egypt-somalia-eritrea-and-sudan-issue-joint-declaration-on-red-sea-nile-and-regional-unity
+      title: Egypt, Somalia, Eritrea and Sudan issue joint declaration on Red Sea, Nile and regional unity
+      publisher: Dawan Africa
+      date: '2026-10-05'
+      tier: 3
+    - url: https://www.aljazeera.com/news/2026/10/9/ethiopia-and-eritrea-accuse-one-another-of-launching-war
+      title: Ethiopia and Eritrea accuse one another of launching war
+      publisher: Al Jazeera
+      date: '2026-10-09'
+      tier: 3
+    - url: https://www.dawan.africa/news/eritrea-accuses-ethiopia-of-planning-war-to-gain-red-sea-access
+      title: Eritrea accuses Ethiopia of planning war to gain Red Sea access
+      publisher: Dawan Africa
+      date: '2026-10-09'
+      tier: 3
+    - url: https://aljazeera.com/news/2026/10/11/ethiopia-eritrea-ramp-up-rhetoric-are-they-inching-towards-war
+      title: 'Ethiopia, Eritrea ramp up rhetoric: are they inching towards war?'
+      publisher: Al Jazeera
+      date: '2026-10-11'
+      tier: 3
+  - text: The separate peace that ended one war created the coalition for the next. Pretoria (2 Nov 2022) swapped the Eritrean ally of 2020-22 for the TPLF; Asmara, excluded from the deal and long hostile to the TPLF, is now accused by Addis Ababa of financing, arming and directing the armed groups - the TPLF Pretoria was meant to pacify, now allied with Fano and the OLA - that fight the government (Eritrea denies it; the allegation is unverified). Making peace with one enemy turned the old ally into a suspect and left a coalition of the excluded.
+    confidence: B
+    sources:
+    - url: https://aljazeera.com/news/2026/10/11/ethiopia-eritrea-ramp-up-rhetoric-are-they-inching-towards-war
+      title: 'Ethiopia, Eritrea ramp up rhetoric: are they inching towards war?'
+      publisher: Al Jazeera
+      date: '2026-10-11'
+      tier: 3
+    - url: https://www.ecoi.net/de/dokument/2140863.html
+      title: 'Power struggle in Ethiopia''s Tigray: averting a return to war'
+      publisher: International Crisis Group (via ecoi.net)
+      date: 2026-05
+      tier: 2
+    - url: https://www.timeslive.co.za/news/africa/2026-10-01-ethiopia-shuts-embassy-in-eritrea-expels-10-envoys/
+      title: Ethiopia shuts embassy in Eritrea, expels 10 envoys
+      publisher: TimesLIVE (Reuters)
+      date: '2026-10-01'
+      tier: 3
+    - url: https://aljazeera.com/news/2026/9/21/ethiopian-armed-groups-forge-alliance-against-government
+      title: Ethiopian armed groups forge alliance against government
+      publisher: Al Jazeera
+      date: '2026-09-21'
+      tier: 3
+  - text: 'Completing the GERD moved Egypt''s pressure from the Nile to the Horn. Water is no longer a lever once the dam is full; the lever became Ethiopia''s flanks: the Somalia pact, AUSSOM troops, Eritrea, Sudan. Announcing three more Blue Nile dams in March 2026 told Cairo that the cascade would continue, which is exactly what the ''firm and decisive response'' (Sisi, Dec 2025) was promised against.'
+    confidence: B
+    sources:
+    - url: https://www.thenationalnews.com/news/mena/2026/10/02/egypt-ethiopia-nile-dam-latest/
+      title: Egypt Ethiopia Nile dam latest
+      publisher: The National
+      date: '2026-10-02'
+      tier: 3
+    - url: https://hornreview.org/2026/02/19/containment-or-co-development-navigating-egypts-strategic-encirclement-of-ethiopia/
+      title: 'Containment or co-development: navigating Egypt''s strategic encirclement of Ethiopia'
+      publisher: Horn Review
+      date: '2026-02-19'
+      tier: 3
+    - url: https://madamasr.com/en/2026/03/26/news/u/ethiopia-unveils-3-new-hydropower-projects-on-nile-stoking-concerns-in-cairo/
+      title: Ethiopia unveils 3 new hydropower projects on Nile, stoking concerns in Cairo
+      publisher: Mada Masr
+      date: '2026-03-26'
+      tier: 3
+    - url: https://www.thenationalnews.com/news/mena/2026/10/04/egypt-hosts-four-way-summit-as-tensions-with-ethiopia-escalate/
+      title: Egypt hosts four-way summit as tensions with Ethiopia escalate
+      publisher: The National
+      date: '2026-10-04'
+      tier: 3
+  - text: The landslide did not settle the question it was held to settle. The Prosperity Party took 438 of 547 seats in June 2026 with, by Wikipedia's account, the whole of Tigray unable to vote and conflicts in other regions; three months later the people excluded from the count were an armed alliance of seven, and the mandate Abiy was sworn into on 5 Oct was a mandate over a country at war with a part of itself.
+    confidence: C
+    sources:
+    - url: https://www.dawan.africa/news/prosperity-party-wins-438-seats-in-ethiopias-parliament
+      title: Prosperity Party wins 438 seats in Ethiopia's parliament
+      publisher: Dawan Africa
+      date: 2026-06
+      tier: 3
+    - url: https://en.wikipedia.org/wiki/2026_Ethiopian_general_election
+      title: 2026 Ethiopian general election
+      publisher: Wikipedia (index only)
+      date: '2026-10-12'
+      tier: 4
+    - url: https://aljazeera.com/news/2026/9/21/ethiopian-armed-groups-forge-alliance-against-government
+      title: Ethiopian armed groups forge alliance against government
+      publisher: Al Jazeera
+      date: '2026-09-21'
+      tier: 3
+    - url: https://abcnews.com/International/wireStory/ethiopia-demands-access-red-sea-tensions-neighbors-escalate-137007336
+      title: Ethiopia again demands access to the Red Sea as tensions with neighbors escalate
+      publisher: AP (via ABC News)
+      date: '2026-10-05'
+      tier: 3
+  - text: Gulf money buys drones and enmities in the same transaction. Emirati backing (finance, infrastructure and, alleged, aircraft at Bahir Dar) earned Ethiopia a Sudanese ambassador's recall and the threat of 'open confrontation' (May 2026), a Saudi public accusation (January 2026) and the position of being the Emirati client against Egypt, the UAE's largest creditor. The patron that arms the federal campaign also makes the ring against it.
+    confidence: C
+    sources:
+    - url: https://www.aljazeera.com/news/2026/5/6/sudan-blames-ethiopia-uae-for-recent-drone-attacks-what-we-know
+      title: 'Sudan blames Ethiopia, UAE for recent drone attacks: what we know'
+      publisher: Al Jazeera
+      date: '2026-05-06'
+      tier: 3
+    - url: https://english.alarabiya.net/News/middle-east/2026/05/05/sudan-s-military-accuses-ethiopia-of-drone-attacks-recalls-its-ambassador
+      title: Sudan accuses Ethiopia of drone attacks as Ethiopia claims Sudan arms mercenaries
+      publisher: Al Arabiya
+      date: '2026-05-05'
+      tier: 3
+    - url: https://www.pbs.org/newshour/world/saudi-arabia-alleges-uae-smuggled-yemen-separatist-leader-out-of-the-country
+      title: Saudi Arabia alleges UAE smuggled wanted Yemen separatist leader out of the country
+      publisher: AP (via PBS NewsHour)
+      date: '2026-01-09'
+      tier: 3
+    - url: https://www.geeska.com/en/abiy-lands-abu-dhabi-and-timing-says-everything
+      title: Abiy lands in Abu Dhabi and timing says everything
+      publisher: Geeska Afrika
+      date: 2026-03
+      tier: 3
+    - url: https://www.geeska.com/en/sudan-accuses-ethiopia-uae-drone-attacks
+      title: Sudan accuses Ethiopia, UAE of drone attacks on Khartoum
+      publisher: Geeska Afrika
+      date: 2026-05
+      tier: 3
+  - text: Playing Mogadishu and Hargeisa against each other leaves Ethiopia with neither. The MoU with Somaliland (1 Jan 2024) gave it a port option and an enemy in Somalia; Ankara (Dec 2024) repaired Somalia and left the MoU unburied; after Israel recognised Somaliland (26 Dec 2025) Addis Ababa kept what a Somaliland-aligned outlet calls 'studied silence'. Within a week Hassan Sheikh Mohamud met Abiy in Addis Ababa (29 Sep) and signed at El Alamein (4 Oct) a text that rejects any support for Somaliland.
+    confidence: B
+    sources:
+    - url: https://www.everycrsreport.com/files/2024-01-23_R47898_a65946e392dd64a86c51d20cb087c065625a52e0.html
+      title: 'Ethiopia: In Brief (CRS report R47898)'
+      publisher: Congressional Research Service
+      date: '2024-01-23'
+      tier: 1
+    - url: https://www.thereporterethiopia.com/42967/
+      title: Ethiopia, Somalia reconciliation in Ankara garners international praise
+      publisher: The Reporter (Ethiopia)
+      date: 2024-12
+      tier: 3
+    - url: https://www.somalilandchronicle.com/2025/12/31/ethiopia-weighs-following-israels-lead-as-somaliland-recognition-gains-momentum/
+      title: Ethiopia weighs following Israel's lead as Somaliland recognition gains momentum
+      publisher: Somaliland Chronicle (Somaliland-aligned outlet)
+      date: '2025-12-31'
+      tier: 4
+    - url: https://www.dawan.africa/news/somalia-djibouti-presidents-discuss-ethiopia-amid-renewed-fighting
+      title: Somalia, Djibouti presidents discuss Ethiopia amid renewed fighting
+      publisher: Dawan Africa
+      date: '2026-09-30'
+      tier: 3
+    - url: https://www.dawan.africa/news/egypt-somalia-eritrea-and-sudan-issue-joint-declaration-on-red-sea-nile-and-regional-unity
+      title: Egypt, Somalia, Eritrea and Sudan issue joint declaration on Red Sea, Nile and regional unity
+      publisher: Dawan Africa
+      date: '2026-10-05'
+      tier: 3
+    - url: https://www.thereporterethiopia.com/?p=48391
+      title: Israel ends Somaliland's three-decade wait for recognition
+      publisher: The Reporter (Ethiopia)
+      date: 2025-12
+      tier: 3
+  reading: |-
+    Ethiopia is Luttwak's landlocked power that named its sea access a right and, by naming it, summoned the Red Sea coalition against itself. Abiy's strategy rests on one national project, the GERD, and one national claim, an outlet to the sea; both are legitimate to Addis Ababa and both are read abroad as a threat. The Nile gave Egypt a motive; the sea claim gave Eritrea, Somalia and Sudan a common text (El Alamein, 4 Oct 2026); and the one war Abiy cannot afford, the internal one, gave Eritrea and Egypt a way to hurt him that no treaty forbids. The pattern is the paradox of success in strategy: each win (the dam built, the election won, Mekelle retaken after the TPLF withdrew) raised the price the neighbours would pay to stop the next.
+
+    Signals that are not rows. Abiy swore the oath on 5 Oct 2026 and repeated the sea claim the day after the Alamein summit, so the speech was an answer, not a plan; he softened it by 'give and take' and by the March 2026 pledge of no bullet at Eritrea, Somalia, Djibouti or Kenya, but the UN letter of 8-9 Oct invoked Article 51 against Eritrea and the diplomatic channel is closed since 1 Oct. Somalia sat at both tables within a week. Washington's July envoy tour took in Cairo, Mogadishu and Asmara, not Addis Ababa. Whether Eritrea is truly behind the alliance is Addis Ababa's allegation, unverified in the sources, and Cairo says it is 'a domestic crisis'. The Pretoria agreement, signed by Addis Ababa and the TPLF but not by Eritrea, is now the document everyone cites and nobody observes. Open question: does the dam, the election and the war on four fronts leave the army enough force to take a port, or only enough to threaten one - and is the threat itself what will keep the ring closed?

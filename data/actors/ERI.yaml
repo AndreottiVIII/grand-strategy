@@ -3,12 +3,86 @@ name: Eritrea
 type: state
 iso2: er
 wikipedia: https://en.wikipedia.org/wiki/Eritrea
-coords:
-- 38.92
-- 15.33
+coords: [38.92, 15.33]
 seat: Asmara
-regions:
-- world
-card: stub
+regions: [east-africa]
+card: full
 tier: minor
-dataset: wikidata
+last_verified: '2026-10-12'
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Stop Ethiopia's Red Sea access drive from becoming an attack on Eritrean territory: Abiy's sea-access claim is read in Asmara as a claim on Assab, so the aim is to keep the port and the border closed to it."
+      confidence: C
+      sources:
+        - {url: "https://www.aljazeera.com/news/2025/3/25/are-ethiopia-and-eritrea-on-the-brink-of-war", title: "Are Ethiopia and Eritrea on the brink of war?", publisher: "Al Jazeera", date: 2025-03-25, tier: 3}
+        - {url: "https://www.africanews.com/amp/2026/03/04/abiy-ahmed-insists-ethiopia-will-not-go-to-war-over-sea-acces/", title: "Abiy Ahmed insists Ethiopia will not go to war over sea access", publisher: "Africanews", date: 2026-03-04, tier: 3}
+    - rank: 2
+      text: "Keep an armed Tigrayan force from reforming next to the border: Asmara was left out of the 2022 Pretoria settlement that disarmed the TPLF, and it treats any renewed Tigrayan army as a threat on its border."
+      confidence: C
+      sources:
+        - {url: "https://www.thenewhumanitarian.org/news-feature/2025/03/04/power-struggle-tigray-risks-ethiopias-peace-deal", title: "A power struggle in Tigray risks Ethiopia's peace deal", publisher: "The New Humanitarian", date: 2025-03-04, tier: 3}
+        - {url: "https://theglobalobservatory.org/2025/08/urgent-action-is-needed-to-prevent-tigray-from-sliding-back-into-war/", title: "Urgent action is needed to prevent Tigray from sliding back into war", publisher: "The Global Observatory (IPI)", date: 2025-08, tier: 3}
+    - rank: 3
+      text: "End the isolation and turn the Red Sea into partners and money: the Asmara ring with Egypt, Somalia and Sudan, the Chinese partners in the Bisha and Colluli mines, and Russia's support at the UN."
+      confidence: C
+      sources:
+        - {url: "https://aljazeera.com/economy/2026/9/13/red-sea-nations-watch-as-houthis-seize-bab-al-mandeb-strait", title: "Red Sea nations watch as Houthis seize Bab al-Mandeb strait", publisher: "Al Jazeera", date: 2026-09-13, tier: 3}
+        - {url: "https://www.mining-technology.com/projects/bisha-project/", title: "Bisha project", publisher: "Mining Technology", date: 2024-04-04, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "The Asmara ring: the trilateral with Egypt and Somalia (Asmara, October 2024), the four-way El Alamein summit with Sudan (4 October 2026), and membership of the Saudi-led Red Sea Council, whose 2020 charter covers piracy and smuggling, not defence."
+      confidence: C
+      sources:
+        - {url: "https://allafrica.com/stories/202410110085.html", title: "Egypt, Eritrea provide all forms of support to Somalia following summit meeting", publisher: "allAfrica", date: 2024-10-11, tier: 3}
+        - {url: "https://www.thenationalnews.com/news/mena/2026/10/04/egypt-hosts-four-way-summit-as-tensions-with-ethiopia-escalate/", title: "Egypt hosts four-way summit as tensions with Ethiopia escalate", publisher: "The National", date: 2026-10-04, tier: 3}
+        - {url: "https://www.arabnews.pk/node/1609121", title: "Saudi Arabia and 7 countries form council to secure Red Sea and Gulf of Aden", publisher: "Arab News", date: 2020, tier: 3}
+    - domain: military
+      text: "A conscript army (see constraints) that, on unverified reports of 7 October 2026, moved into Tigray around Adigrat and Idaga Hamus; the information minister did not deny the crossing and called Ethiopia's self-defence framing a 'fallacious narrative'."
+      confidence: C
+      sources:
+        - {url: "https://www.africanews.com/2026/10/07/eritrean-troops-deploy-in-ethiopias-tigray-region-witnesses-say/", title: "Eritrean troops deploy in Ethiopia's Tigray region, witnesses say", publisher: "Africanews", date: 2026-10-07, tier: 3}
+        - {url: "https://www.ajc.com/news/2026/10/eritrean-forces-seen-entering-towns-in-ethiopias-tigray-region-after-crossing-border/", title: "Eritrean forces seen entering towns in Ethiopia's Tigray region after crossing border", publisher: "AP (via AJC)", date: 2026-10, tier: 3}
+    - domain: economic
+      text: "Mining as state capital: Zijin Mining (China) holds 55% of the Bisha copper-zinc-gold mine and the state miner ENAMCO 45%; the Colluli potash project passed in 2023 from Danakali to China's Sichuan Road and Bridge Group, and the other half is presumed to remain with ENAMCO."
+      confidence: B
+      sources:
+        - {url: "https://www.zvei.org/fileadmin/user_upload/Themen/Maerkte_Recht/Aussenwirtschaft/Afrika/Eritrea/Eritrea-EZ-Elektro-Energie-Rohstoffe/GTAI-Eritrea-Bergbau-ist-fest-in-chinesischer-Hand-2018.pdf", title: "Eritrea: mining is firmly in Chinese hands", title_original: "Bergbau ist fest in chinesischer Hand", publisher: "Germany Trade and Invest (GTAI), copy via ZVEI", date: 2018, tier: 1, lang: de}
+        - {url: "https://www.mining-technology.com/projects/bisha-project/", title: "Bisha project", publisher: "Mining Technology", date: 2024-04-04, tier: 3}
+        - {url: "https://www.mining.com/danakali-sells-stake-in-flagship-colluli-potash-project-in-eritrea/", title: "Danakali sells stake in flagship Colluli potash project in Eritrea", publisher: "mining.com", date: 2023-03, tier: 3}
+    - domain: economic
+      text: "The 2% diaspora tax on Eritreans abroad, which the government calls a rehabilitation levy, was a UN sanctions target from 2011 (resolution 2023, which also covered mining) until the UN lifted its measures in 2018 (resolution 2444)."
+      confidence: C
+      sources:
+        - {url: "https://digitallibrary.un.org/record/1652454", title: "Resolution 2444 (2018), lifting sanctions on Eritrea", publisher: "UN Security Council", date: 2018-11-14, tier: 1}
+
+  constraints:
+    - text: "Indefinite national service: the 1995 proclamation sets 18 months for citizens over 18, but no fixed end is applied; Human Rights Watch says the open-ended service traps successive generations in forced labour, and the UN Special Rapporteur (June 2026) reports grave abuses and grounds to believe crimes against humanity continue."
+      confidence: A
+      sources:
+        - {url: "https://www.hrw.org/news/2026/06/15/eritrea-un-expert-remains-lifeline-as-grave-abuses-continue", title: "Eritrea: UN expert remains lifeline as grave abuses continue", publisher: "Human Rights Watch", date: 2026-06-15, tier: 2}
+        - {url: "https://allafrica.com/stories/202606220366.html", title: "Eritrea: UN Expert Remains Lifeline As Grave Abuses Continue (statement of the UN Special Rapporteur)", publisher: "allAfrica", date: 2026-06-22, tier: 1}
+        - {url: "https://raee.eu/wp-content/uploads/2022/01/POLICY-BRIEF-National-service-in-Eritrea-as-forced-labour.pdf", title: "Policy brief: National service in Eritrea as forced labour", publisher: "RAEE", date: 2022-01, tier: 3}
+    - text: "No constitution in force: the 1997 constitution, approved by referendum, was never implemented; the People's Front for Democracy and Justice is the only party tolerated; Isaias Afwerki has ruled since independence in 1993 with no written succession, and Human Rights Watch dates the last legislative sitting to 2010."
+      confidence: B
+      sources:
+        - {url: "https://www.hrw.org/world-report/2025/country-chapters/eritrea", title: "World Report 2025: Eritrea", publisher: "Human Rights Watch", date: 2025, tier: 2}
+    - text: "Isolation with a memory: UN measures from December 2009 (resolution 1907, over the Djibouti border and support to Somali armed groups) ran until 2018; the EU listed the National Security Office on 22 March 2021; the US full entry ban on Eritrean nationals has applied since June 2025 and survived the December 2025 expansion."
+      confidence: B
+      sources:
+        - {url: "https://digitallibrary.un.org/record/1652454", title: "Resolution 2444 (2018), lifting sanctions on Eritrea", publisher: "UN Security Council", date: 2018-11-14, tier: 1}
+        - {url: "https://www.africanews.com/amp/2021/03/22/eu-sanctions-eritrea-for-rights-abuses-eritrea-calls-it-malicious/", title: "EU sanctions Eritrea for rights abuses, Eritrea calls it 'malicious'", publisher: "Africanews", date: 2021-03-22, tier: 3}
+        - {url: "https://www.fredlaw.com/alert-trump-administration-enacts-travel-ban-for-certain-countries-effective-june-9-2025", title: "Trump administration enacts travel ban for certain countries, effective June 9, 2025", publisher: "Law firm client alert (fredlaw.com)", date: 2025-06, tier: 3}
+        - {url: "https://www.stonybrook.edu/visa-new/resources/news-and-events/government-updates/Presidential-Proclamation-Expanding-US-Entry-Restrictions-12-16-2025.html", title: "Presidential Proclamation: Expanding U.S. Entry Restrictions (16 December 2025)", publisher: "Stony Brook University (summary of proclamation)", date: 2025-12-16, tier: 3}
+
+  paradoxes:
+    - text: "The ring that keeps Ethiopia off the Red Sea is the evidence Addis Ababa uses against Eritrea: on 1 October 2026 Ethiopia accused Egypt, Eritrea and Sudan of backing the TPLF, and the rupture that followed, with troops reported at the border, is the escalation the ring was meant to deter."
+      confidence: C
+      sources:
+        - {url: "https://www.thenationalnews.com/news/mena/2026/10/02/egypt-ethiopia-nile-dam-latest/", title: "Egypt Ethiopia Nile dam latest", publisher: "The National", date: 2026-10-02, tier: 3}
+        - {url: "https://aljazeera.com/news/2026/10/1/eritrea-severs-diplomatic-ties-with-ethiopia-in-tit-for-tat-move", title: "Eritrea severs diplomatic ties with Ethiopia in tit-for-tat move", publisher: "Al Jazeera", date: 2026-10-01, tier: 3}
+
+  reading: |
+    Eritrea runs the strategy of a garrison state that has turned isolation into method: an army with no end date, a constitution never applied, and a ring of partners (Egypt, Somalia, Sudan, with Russia at the UN) built to keep Ethiopia off the Red Sea. The structural problem is that it holds the coast and the port that Ethiopia wants, so each Ethiopian move on Assab reads in Asmara as an attack, and each Eritrean move in Tigray reads in Addis as an invasion. The 1-2 October 2026 rupture shows the paradox at full size: the ring is Addis Ababa's proof of encirclement, and the 'no war, no peace' that Asmara kept from 2000 to 2018 is ending on the border.
