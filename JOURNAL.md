@@ -210,6 +210,14 @@ are marked C.
 Queue: `data/queue.yaml` still marks ZWE as `running` (updated 10:54), so the `--skip-running`
 build leaves its stance and relation files out of `docs/`. Not changed here: it is orchestration state.
 
+## 2026-10-16 · Buffers under the seams
+
+Davide asked for a lighter tier than the seam and for the partner of two rivals to be traced.
+Luttwak's vocabulary gives the buffer (the Roman client states kept between the empire and its
+enemies): a partner of two actors hostile to each other, belonging to neither. Seams keep the
+strong meaning (the ally torn), buffers sit under them on the same page with the same evidence
+rules; de facto alignments now count as allied legs in seams.
+
 ## 2026-10-16 · Thirteen more de facto alignments
 
 On Davide's order the alignment field was extended from the first five pairs to the blocs the

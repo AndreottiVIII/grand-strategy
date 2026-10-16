@@ -424,6 +424,7 @@ def main():
             if st.get("alignment") == "de_facto":
                 defacto.add((a, st["toward"]))
     SEAM_HOSTILE, SEAM_ALLIED = {"rival", "adversary"}, {"ally", "reluctant_ally"}
+    is_org_id = lambda i: (actors.get(i) or {}).get("type") == "org"
     seams, seen = [], set()
     # an alliance leg counts if either side declares it (A says Y is its ally, or Y says A is)
     def allied(p, q):
@@ -448,6 +449,34 @@ def main():
                 seen.add(key)
                 seams.append({"a": a, "x": x, "y": y, "ax": g, "ay": gay, "xy": gxy})
     seams.sort(key=lambda s: (s["y"], s["a"], s["x"]))
+
+    # --- buffers (Davide, 2026-10-16): the lighter tier under the seams. Y is a partner (or reluctant
+    # partner) of both A and X while A and X are hostile to each other: the state between two rivals
+    # that belongs to neither, Luttwak's buffer in the Roman sense. Same evidence rules as seams; a pair
+    # already counted as a seam is not a buffer. A de facto alignment counts as the stronger leg.
+    BUFFER_LEG = {"partner", "reluctant_partner"}
+    def partnered(p, q):
+        for g in (hand.get((p, q)), hand.get((q, p))):
+            if g in BUFFER_LEG:
+                return g
+        return None
+    seam_keys = {(frozenset((s["a"], s["x"])), s["y"]) for s in seams}
+    buffers, seen_b = [], set()
+    for (a, x), g in hand.items():
+        if g not in SEAM_HOSTILE:
+            continue
+        for y in ids:
+            if y in (a, x) or is_org_id(y):
+                continue
+            lay, lxy = allied(a, y) or partnered(a, y), allied(x, y) or partnered(x, y)
+            if not (lay and lxy):
+                continue
+            key = (frozenset((a, x)), y)
+            if key in seen_b or key in seam_keys:
+                continue
+            seen_b.add(key)
+            buffers.append({"a": a, "x": x, "y": y, "ax": g, "ay": lay, "xy": lxy})
+    buffers.sort(key=lambda s: (s["y"], s["a"], s["x"]))
 
     # --- clients (Luttwak's client system): for every pair with both sides written (A or B), the
     # lean is how many steps higher A grades X than X grades A; only pairs where at least one side is
@@ -696,7 +725,7 @@ def main():
     out = {
         "generated": today.isoformat(),
         "theatres": theatres,
-        "seams": seams,
+        "seams": seams, "buffers": buffers,
         "clients": clients, "tepid": tepid,
         "faults": faults,
         "gatherings": gatherings,

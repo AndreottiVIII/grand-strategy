@@ -275,6 +275,13 @@ co-membership from the dataset) never makes a seam, or every NATO member would b
 between Cyprus and Turkey; provisional reciprocals (`reciprocal_of`) never count either. The
 list therefore grows only as cards are written on both sides of a rivalry.
 
+**Buffers** (added 2026-10-16, Davide: "tracciamo anche chi e' partner di due rivali"). The lighter
+tier under the seams: Y is a partner (or reluctant partner) of both A and X while A and X are rivals
+or adversaries. Luttwak's Roman grand strategy (the client-state system of the hegemonic empire)
+kept such states between the empire and its enemies on purpose. Same evidence rules as the seams; a
+de facto alignment counts as the stronger leg; a triple already counted as a seam is not a buffer;
+organisations never buffer. Computed by `tools/build.py` (`buffers`), shown under the seams.
+
 ## Clients (added 2026-10-13)
 
 Luttwak's client system (the hegemonic early Roman empire: client kings more loyal to Rome than
