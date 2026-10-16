@@ -1,0 +1,128 @@
+from: KHM
+relations:
+  # ---------- objective ----------
+  - to: THA
+    layer: objective
+    type: territorial_claim
+    summary: "Cambodia and Thailand both claim the Preah Vihear temple area and the border zones. The July 2025 clash and the fighting of December 2025 reopened the dispute; by April 2026 Phnom Penh was asking Bangkok to resume talks."
+    since: '2025-07'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.cfr.org/blog/thai-cambodian-border-clashes-help-revive-hun-sens-power", title: "Thai-Cambodian border clashes help revive Hun Sen's power", publisher: "Council on Foreign Relations", date: '2025-07-28', tier: 2}
+      - {url: "https://www.csis.org/analysis/fraud-frontlines-scam-centers-caught-cambodia-thailand-conflict", title: "From Fraud to the Frontlines: Scam Centers Caught in the Cambodia-Thailand Conflict", publisher: "CSIS", date: '2026-01-15', tier: 2}
+      - {url: "https://www.nst.com.my/amp/world/region/2026/04/1415999/cambodia-urges-thailand-resume-talks-disputed-border", title: "Cambodia urges Thailand to resume talks on disputed border", publisher: "New Straits Times", date: '2026-04', tier: 3}
+
+  # ---------- dependency ----------
+  - to: CHN
+    layer: dependency
+    type: debt
+    summary: "Public and publicly guaranteed debt owed to Chinese creditors: about USD 3.4bn at end-2024, nearly a third of external public debt and about 7% of GDP."
+    value: 3.4
+    unit: usd_bn
+    since: '2000'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "The figures are taken from a secondary summary of the AidData profile, whose title covers 2000-2023. The end-2024 share and the 7% of GDP must be checked against the PDF before any public use. A further, larger share of exposure is private or opaque (bank and joint-venture loans); not counted here, not verified."
+    sources:
+      - {url: "https://docs.aiddata.org/ad4/pdfs/chinese-development-finance-profiles/2026/Cambodia_2000_2023_China_Development_Finance_Profile.pdf", title: "Cambodia 2000-2023 China Development Finance Profile", publisher: "AidData", date: '2026', tier: 2}
+
+  - to: CHN
+    layer: dependency
+    type: investment
+    summary: "Funan Techo canal, China-financed: USD 1.15bn (PPP). The second phase was launched in April 2026; Hanoi had asked for a joint assessment of its effect on Mekong Delta water in 2024."
+    value: 1.15
+    unit: usd_bn_ppp
+    since: '2024-05'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    note: "Mirrored from data/relations/VNM.yaml (the Funan Techo row, same sources and figure)."
+    sources:
+      - {url: "https://www.eastasiaforum.org/2024/06/04/funan-techo-canal-project-underscores-cambodias-struggle-for-strategic-autonomy/", title: "Funan Techo canal project underscores Cambodia's struggle for strategic autonomy", publisher: "East Asia Forum", date: '2024-06-04', tier: 2}
+      - {url: "https://en.baochinhphu.vn/viet-nam-respects-cambodias-construction-of-funan-techo-canal-111240809102745275.htm", title: "Viet Nam respects Cambodia's construction of Funan Techo Canal", publisher: "Government of Viet Nam (official portal)", date: '2024-08-09', tier: 1}
+      - {url: "https://www.rfa.org/english/news/vietnam/vietnam-cambodia-canal-cooperation-05062024035333.html", title: "Vietnam urges Cambodia to cooperate over Funan Techo canal", publisher: "Radio Free Asia", date: '2024-05-06', tier: 3}
+      - {url: "https://www.globalsecurity.org/military/library/news/2025/04/mil-250418-rfa01.htm", title: "Cambodia's controversial canal project gets boost on Xi visit", publisher: "Radio Free Asia via GlobalSecurity", date: '2025-04-18', tier: 3}
+      - {url: "https://lepetitjournal.com/cambodge/actualites/le-cambodge-engage-la-deuxieme-phase-du-canal-funan-techo-440357", title: "Cambodia launches the second phase of the Funan Techo canal", title_original: "Le Cambodge engage la deuxième phase du canal Funan Techo", lang: fr, publisher: "Le Petit Journal", date: '2026-04-19', tier: 3}
+
+  - to: CHN
+    layer: dependency
+    type: arms_supply
+    summary: "China announced two warships as a grant to the Cambodian navy, tied to the Ream expansion; PLA warships had docked at Ream from December 2023."
+    value: 2
+    unit: warships_donated
+    since: '2024-08'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Tier 3 only (AP and RFA wire and radio reports). Delivery of the ships is not confirmed by a second source in this card."
+    sources:
+      - {url: "https://www.rfa.org/english/news/cambodia/china-cambodia-warship-ream-military-base-08272024134349.html", title: "EXCLUSIVE: China to transfer 2 ships and pier to Cambodian navy", publisher: "Radio Free Asia", date: '2024-08-27', tier: 3}
+      - {url: "https://abcnews.go.com/International/wireStory/cambodia-china-gifting-2-warships-finishes-work-expanding-113373818", title: "Cambodia says China gifting 2 warships after port expansion work", publisher: "Associated Press (via ABC News)", date: '2024-09-04', tier: 3}
+      - {url: "https://www.washingtontimes.com/news/2024/may/8/china-has-docked-warships-in-cambodia-for-5-months/", title: "China has docked warships in Cambodia for 5 months", publisher: "Associated Press (via Washington Times)", date: '2024-05-08', tier: 3}
+
+  # ---------- action ----------
+  - to: CHN
+    layer: action
+    type: incident
+    summary: "The China-backed Ream naval base reopened to all in early April 2025, amid Western scrutiny."
+    since: '2025-04-05'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Mirrored from data/relations/VNM.yaml (same source). Type is 'incident' to match the VNM row; no closer type in the vocabulary."
+    sources:
+      - {url: "https://chinaglobalsouth.com/2025/04/05/cambodia-opens-china-backed-ream-naval-base-to-all-amid-western-scrutiny/", title: "Cambodia opens China-backed Ream naval base to all, amid Western scrutiny", publisher: "China Global South", date: '2025-04-05', tier: 3}
+      - {url: "https://www.globalsecurity.org/military/library/news/2025/04/mil-250418-rfa01.htm", title: "Cambodia's controversial canal project gets boost on Xi visit", publisher: "Radio Free Asia via GlobalSecurity", date: '2025-04-18', tier: 3}
+
+  - to: CHN
+    layer: action
+    type: visit
+    summary: "Xi Jinping visited Phnom Penh in April 2025, and the visit gave the Funan Techo canal a boost."
+    since: '2025-04'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.globalsecurity.org/military/library/news/2025/04/mil-250418-rfa01.htm", title: "Cambodia's controversial canal project gets boost on Xi visit", publisher: "Radio Free Asia via GlobalSecurity", date: '2025-04-18', tier: 3}
+
+  - to: CHN
+    layer: action
+    type: expulsion
+    summary: "Cambodia arrested Chen Zhi, founder of the US- and UK-sanctioned Prince Group, on 6 January 2026 and sent him to China. He is alleged to have built at least ten scam centres (Bloomberg, as cited by CSIS)."
+    since: '2026-01-06'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    note: "Type 'expulsion' is the closest in the vocabulary to a removal of a foreign national (CSIS says extradited; other coverage says deported)."
+    sources:
+      - {url: "https://www.csis.org/analysis/fraud-frontlines-scam-centers-caught-cambodia-thailand-conflict", title: "From Fraud to the Frontlines: Scam Centers Caught in the Cambodia-Thailand Conflict", publisher: "CSIS", date: '2026-01-15', tier: 2}
+      - {url: "https://rfa.org/english/cambodia/2025/10/14/sanctions-scam-prince-group/", title: "US, UK sanction Cambodian conglomerate, alleging role in scam networks", publisher: "Radio Free Asia", date: '2025-10-14', tier: 3}
+
+  - to: THA
+    layer: action
+    type: agreement
+    summary: "The Kuala Lumpur Peace Accord was signed at the ASEAN summit in Malaysia on 26 October 2025, with Trump present. Fighting resumed on 7 December 2025 (CSIS)."
+    since: '2025-10-26'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "The signing at the ASEAN summit in Malaysia and Trump's presence are from Al Jazeera (tier 3); the signatories' names and the accord's terms were not checked in a source and are not written here."
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/10/26/trump-jointly-signs-thailand-cambodia-ceasefire-agreement-at-asean-summit", title: "Trump signs Thailand-Cambodia ceasefire pact at ASEAN summit in Malaysia", publisher: "Al Jazeera", date: '2025-10-26', tier: 3}
+      - {url: "https://www.csis.org/analysis/fraud-frontlines-scam-centers-caught-cambodia-thailand-conflict", title: "From Fraud to the Frontlines: Scam Centers Caught in the Cambodia-Thailand Conflict", publisher: "CSIS", date: '2026-01-15', tier: 2}
+
+  - to: THA
+    layer: action
+    type: agreement
+    summary: "A second ceasefire was signed on 27 December 2025, after fighting resumed on 7 December. By April 2026 Cambodia was urging Thailand to resume talks."
+    since: '2025-12-27'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.csis.org/analysis/fraud-frontlines-scam-centers-caught-cambodia-thailand-conflict", title: "From Fraud to the Frontlines: Scam Centers Caught in the Cambodia-Thailand Conflict", publisher: "CSIS", date: '2026-01-15', tier: 2}
+      - {url: "https://www.opb.org/article/2025/12/27/thailand-and-cambodia-sign-new-ceasefire-agreement-to-end-border-fighting", title: "Thailand and Cambodia sign new ceasefire agreement to end border fighting", publisher: "Oregon Public Broadcasting", date: '2025-12-27', tier: 3}
+      - {url: "https://www.nst.com.my/amp/world/region/2026/04/1415999/cambodia-urges-thailand-resume-talks-disputed-border", title: "Cambodia urges Thailand to resume talks on disputed border", publisher: "New Straits Times", date: '2026-04', tier: 3}

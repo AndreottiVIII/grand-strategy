@@ -1,0 +1,155 @@
+from: PNG
+relations:
+  # ---------- objective ----------
+  - to: CHN
+    layer: objective
+    type: influence_goal
+    summary: "Wants Chinese capital for the economy (Belt and Road membership since 2018, the Ramu nickel mine) while keeping China out of the security sector: the Chinese policing deal was shelved in 2024."
+    since: 2018
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.everycrsreport.com/files/2025-09-11_IF11255_e300bc759d187773bb6c53acc1b0d7f6d3bb3940.html", title: "U.S.-Papua New Guinea Relations: Issues for Congress", publisher: "Congressional Research Service", date: 2025-09-11, tier: 1}
+      - {url: "https://pina.com.fj/2024/02/08/png-rules-out-china-pact-as-pm-arrives-in-australia/", title: "PNG rules out China pact as PM arrives in Australia", publisher: "PINA", date: 2024-02-08, tier: 3}
+
+  - to: AUS
+    layer: objective
+    type: influence_goal
+    summary: "Seeks Australian security cover and police capacity: the Pukpuk treaty, Australian Federal Police advisers in the constabulary, and the funded NRL franchise are what Port Moresby asks of the partnership."
+    since: 2025-10-06
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.pm.gov.au/media/joint-communique-papua-new-guinea-and-australia-mutual-defence-treaty", title: "Joint communique - Papua New Guinea and Australia on a Mutual Defence Treaty", publisher: "Prime Minister of Australia (joint communique)", date: 2025-09, tier: 1}
+      - {url: "https://dfat.gov.au/geo/papua-new-guinea/australia-papua-new-guinea-engagement", title: "Australia-Papua New Guinea engagement", publisher: "DFAT", date: 2026-10, tier: 1}
+
+  # ---------- alignment ----------
+  - to: AUS
+    layer: alignment
+    type: treaty
+    summary: "Pukpuk Mutual Defence Treaty, signed 6 Oct 2025 in Canberra: an armed attack on either country is a danger to both, and neither may enter arrangements with third parties that would undermine it. The first alliance for PNG, Australia's first in more than 70 years. Entry into force not confirmed in the sources read."
+    since: 2025-10-06
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.pm.gov.au/media/joint-communique-papua-new-guinea-and-australia-mutual-defence-treaty", title: "Joint communique - Papua New Guinea and Australia on a Mutual Defence Treaty", publisher: "Prime Minister of Australia (joint communique)", date: 2025-09, tier: 1}
+      - {url: "https://thenightly.com.au/politics/pukpuk-treaty-anthony-albanese-james-marape-finally-ink-landmark-defence-pact-after-false-start-c-20253324", title: "Pukpuk treaty: Anthony Albanese, James Marape finally ink landmark defence pact after false start", publisher: "The Nightly", date: 2025-10-06, tier: 3}
+      - {url: "https://islandsbusiness.com/news-break/australia-png-unveil-first-mutual-defence-treaty-in-more-than-70-years/", title: "Australia, PNG unveil first mutual defence treaty in more than 70 years", publisher: "Islands Business", date: 2025-09, tier: 3}
+
+  - to: IDN
+    layer: alignment
+    type: treaty
+    summary: "The 2010 defence cooperation agreement was ratified by Papua New Guinea's parliament on 14 Feb 2024 and entered into force a week later - sharing military intelligence, logistics and coordinated security operations; joint border patrols with Papua are being discussed."
+    since: 2024-02-14
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://islandsbusiness.com/news-break/png-indonesia-ratify-defence-deal-to-expand-security-cooperation/", title: "PNG, Indonesia ratify defence deal to expand security cooperation", publisher: "Islands Business", date: 2024-02, tier: 3}
+      - {url: "https://www.freemalaysiatoday.com/category/world/2024/02/29/png-ratifies-defence-deal-with-indonesia", title: "PNG ratifies defence deal with Indonesia", publisher: "Free Malaysia Today", date: 2024-02-29, tier: 3}
+
+  # ---------- dependency ----------
+  - to: CHN
+    layer: dependency
+    type: investment
+    value: 1.6
+    unit: usd_bn_cumulative
+    summary: "Chinese aid and investment projects in PNG since 2008 worth about US$1.6 billion, of which US$1.4 billion in loans (Lowy, cited by CRS). China's largest ongoing investment is the Ramu nickel and cobalt mine."
+    since: 2008
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.everycrsreport.com/files/2025-09-11_IF11255_e300bc759d187773bb6c53acc1b0d7f6d3bb3940.html", title: "U.S.-Papua New Guinea Relations: Issues for Congress", publisher: "Congressional Research Service", date: 2025-09-11, tier: 1}
+
+  - to: JPN
+    layer: dependency
+    type: energy_export
+    value: 3.3
+    unit: mtpa_contracted
+    summary: "Japanese buyers hold PNG LNG sales contracts of about 1.5 Mtpa (Osaka Gas) and 1.8 Mtpa (Tepco), each for 20 years per trade press; ENEOS Xplora is a co-owner of the Papua LNG venture. The sources do not show the contract dates."
+    since: 2026-09
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.upstreamonline.com/online/png-lng-seals-osaka-deal/1-1-1128336", title: "PNG LNG seals Osaka deal", publisher: "Upstream", date: 2026-10, tier: 3}
+      - {url: "https://www.energyintel.com/0000017b-a7b9-de4c-a17b-e7fb47cc0000", title: "Tepco Seals PNG LNG Deal", publisher: "Energy Intelligence", date: 2026-10, tier: 3}
+      - {url: "https://pgjonline.com/news/2026/september/papua-lng-clears-key-milestones-as-totalenergies-transfers-operatorship-to-exxonmobil-nears-fid", title: "Papua LNG clears key milestones as TotalEnergies transfers operatorship to ExxonMobil, nears FID", publisher: "PGJ Online", date: 2026-09, tier: 3}
+
+  - to: USA
+    layer: dependency
+    type: military_presence
+    value: 400
+    unit: usd_m_contract
+    summary: "The US Department of Defense awarded a US$400 million contract in 2025 to build a fuel storage facility in PNG for US forces; under the 2023 agreement US forces have unimpeded access to six PNG facilities, including Lombrum naval base on Manus."
+    since: 2025
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.everycrsreport.com/files/2025-09-11_IF11255_e300bc759d187773bb6c53acc1b0d7f6d3bb3940.html", title: "U.S.-Papua New Guinea Relations: Issues for Congress", publisher: "Congressional Research Service", date: 2025-09-11, tier: 1}
+      - {url: "https://islandsbusiness.com/?p=26666", title: "U.S. military granted unimpeded access to key PNG defence facilities in new security agreement", publisher: "Islands Business", date: 2023, tier: 3}
+
+  # ---------- action ----------
+  - to: IDN
+    layer: action
+    type: visit
+    summary: "Indonesia's defence minister Prabowo visited Port Moresby and met PM Marape on 21 Aug 2024; he called PNG a 'brother' nation and promised closer engagement."
+    since: 2024-08-21
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.kemhan.go.id/2024/08/21/menhan-prabowo-berkunjung-ke-papua-nugini-temui-pm-james-marape.html", title: "Defence Minister Prabowo visits Papua New Guinea, meets PM James Marape", title_original: "Menhan Prabowo Berkunjung ke Papua Nugini, Temui PM James Marape", lang: id, publisher: "Indonesian Ministry of Defence (kemhan.go.id)", date: 2024-08-21, tier: 1}
+      - {url: "https://fmtv5.freemalaysiatoday.com/category/world/2024/08/21/indonesias-prabowo-embraces-brother-papua-new-guinea", title: "Indonesia's Prabowo embraces 'brother' Papua New Guinea", publisher: "Free Malaysia Today", date: 2024-08-21, tier: 3}
+
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "Defence Cooperation Agreement signed in May 2023, replacing the status of forces agreement; not an alliance. PNG's foreign minister puts US spending at over US$864 million over ten years; the US embassy says the agreement carries no dollar figure. Both claims are recorded, neither adopted."
+    since: 2023-05
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.everycrsreport.com/files/2025-09-11_IF11255_e300bc759d187773bb6c53acc1b0d7f6d3bb3940.html", title: "U.S.-Papua New Guinea Relations: Issues for Congress", publisher: "Congressional Research Service", date: 2025-09-11, tier: 1}
+      - {url: "https://pina.com.fj/2024/12/12/png-reveals-defence-deal-with-u-s-worth-864m/", title: "PNG reveals defence deal with U.S worth $864m", publisher: "PINA", date: 2024-12-12, tier: 3}
+
+  - to: USA
+    layer: action
+    type: exercise
+    summary: "Talisman Sabre 2025: PNG hosted US and Australian troops for the first time, in August 2025."
+    since: 2025-08
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.everycrsreport.com/files/2025-09-11_IF11255_e300bc759d187773bb6c53acc1b0d7f6d3bb3940.html", title: "U.S.-Papua New Guinea Relations: Issues for Congress", publisher: "Congressional Research Service", date: 2025-09-11, tier: 1}
+
+  - to: AUS
+    layer: action
+    type: agreement
+    summary: "Australia funds a Port Moresby NRL franchise due to enter in 2028, with about A$600 million over ten years. SBS reports the deal is conditional on Australia staying PNG's security partner of choice over China."
+    since: 2024
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.sbs.com.au/news/article/australia-and-pngs-600m-nrl-deal-comes-with-a-security-condition/95sgz67nt", title: "Australia and PNG's $600m NRL deal comes with a security condition", publisher: "SBS News", date: 2025, tier: 3}
+      - {url: "https://theconversation.com/sports-diplomacy-why-the-australian-government-is-spending-600-million-on-a-new-nrl-team-in-png-245560", title: "Sports diplomacy: why the Australian government is spending $600 million on a new NRL team in PNG", publisher: "The Conversation", date: 2025, tier: 3}
+
+  - to: CHN
+    layer: action
+    type: visit
+    summary: "Chinese foreign minister Wang Yi visited Port Moresby in May 2024, when a Chinese policing agreement was reported to be under negotiation; PNG shelved it after Australian and US lobbying."
+    since: 2024-05
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://pina.com.fj/2024/05/07/australian-officials-scrambled-to-halt-china-png-policing-deal/", title: "Australian officials scrambled to halt China-PNG policing deal", publisher: "PINA", date: 2024-05-07, tier: 3}
+      - {url: "https://www.everycrsreport.com/files/2025-09-11_IF11255_e300bc759d187773bb6c53acc1b0d7f6d3bb3940.html", title: "U.S.-Papua New Guinea Relations: Issues for Congress", publisher: "Congressional Research Service", date: 2025-09-11, tier: 1}

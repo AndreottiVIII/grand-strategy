@@ -3,12 +3,64 @@ name: Mauritania
 type: state
 iso2: mr
 wikipedia: https://en.wikipedia.org/wiki/Mauritania
-coords:
-- -15.98
-- 18.09
+coords: [-15.98, 18.09]
 seat: Nouakchott
-regions:
-- world
-card: stub
+regions: [north-africa]
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Turn its place on the Atlantic migration route into EU and Spanish money: a EUR 210m EU package (2024) and a one-year Spanish circular-migration pilot signed in Nouakchott in August 2024."
+      confidence: C
+      sources:
+        - {url: "https://www.ft.com/content/cb864a91-2396-420b-8572-6fc98a720819", title: "Brussels to pay Mauritania for stopping Europe-bound migrants", publisher: "Financial Times", date: 2024, tier: 3}
+        - {url: "https://www.euronews.com/2024/08/28/spain-and-mauritania-sign-an-agreement-to-regulate-migration", title: "Spain and Mauritania sign an agreement to regulate migration", publisher: "Euronews", date: 2024-08-28, tier: 3}
+    - rank: 2
+      text: "Contain the spillover of the Malian crisis at its eastern border; about 150,000 people from Mali have fled into Mauritania in the 2024 surge. The containment aim is our reading, no source states it."
+      confidence: C
+      sources:
+        - {url: "https://www.ft.com/content/cb864a91-2396-420b-8572-6fc98a720819", title: "Brussels to pay Mauritania for stopping Europe-bound migrants", publisher: "Financial Times", date: 2024, tier: 3}
+    - rank: 3
+      text: "Keep iron ore, almost half of all exports, as its main earner. The share is a 2015 IMF figure and was not updated in this pass."
+      confidence: C
+      sources:
+        - {url: "https://books.google.com/books?id=ohP5BgAAQBAJ&pg=PA19", title: "Islamic Republic of Mauritania: Selected Issues Paper", publisher: "International Monetary Fund", date: 2015, tier: 1}
+
+  means:
+    - domain: diplomatic
+      text: "UN votes on the Russia-Ukraine war and Gaza: yes on the 2022 resolution on the aggression against Ukraine (A/RES/ES-11/1), abstention on the 2025 resolution on a just peace in Ukraine (A/RES/ES-11/7), yes on the 2024 demand for a Gaza ceasefire (A/RES/ES-10/26). A seat on the UN Human Rights Council from 2020."
+      confidence: A
+      sources:
+        - {url: "https://digitallibrary.un.org/record/3959039", title: "A/RES/ES-11/1 Aggression against Ukraine", publisher: "United Nations", date: 2022-03-02, tier: 1}
+        - {url: "https://digitallibrary.un.org/record/4076672", title: "A/RES/ES-11/7 Advancing a comprehensive, just and lasting peace in Ukraine", publisher: "United Nations", date: 2025-02-24, tier: 1}
+        - {url: "https://digitallibrary.un.org/record/4069197", title: "A/RES/ES-10/26 Demand for ceasefire in Gaza", publisher: "United Nations", date: 2024-12-11, tier: 1}
+        - {url: "https://www.reuters.com/article/us-mauritania-slavery-un/activists-warn-over-slavery-as-mauritania-joins-u-n-human-rights-council-idUSKCN20K2GS", title: "Activists warn over slavery as Mauritania joins U.N. human rights council", publisher: "Reuters", date: 2020, tier: 3}
+    - domain: economic
+      text: "Iron ore exports (almost half of all exports, IMF 2015) and the EU money for migration control (EUR 210m, 2024) are the two levers of its external income."
+      confidence: C
+      sources:
+        - {url: "https://books.google.com/books?id=ohP5BgAAQBAJ&pg=PA19", title: "Islamic Republic of Mauritania: Selected Issues Paper", publisher: "International Monetary Fund", date: 2015, tier: 1}
+        - {url: "https://www.ft.com/content/cb864a91-2396-420b-8572-6fc98a720819", title: "Brussels to pay Mauritania for stopping Europe-bound migrants", publisher: "Financial Times", date: 2024, tier: 3}
+
+  constraints:
+    - text: "Mali's crisis reaches its border: about 150,000 people from Mali have fled into Mauritania (a UN estimate, as reported by the Financial Times in 2024)."
+      confidence: C
+      sources:
+        - {url: "https://www.ft.com/content/cb864a91-2396-420b-8572-6fc98a720819", title: "Brussels to pay Mauritania for stopping Europe-bound migrants", publisher: "Financial Times", date: 2024, tier: 3}
+    - text: "Its migration income is conditional: Brussels pays for stopping people headed to Europe, so the leverage is bought by enforcing EU priorities on its own territory."
+      confidence: C
+      sources:
+        - {url: "https://www.ft.com/content/cb864a91-2396-420b-8572-6fc98a720819", title: "Brussels to pay Mauritania for stopping Europe-bound migrants", publisher: "Financial Times", date: 2024, tier: 3}
+    - text: "Slavery: officially abolished in 1905, 1981 and 2007 (dates per the index, the Global Slavery Index cited); activists warned about the country's record when it joined the UN Human Rights Council in 2020."
+      confidence: C
+      sources:
+        - {url: "https://cdn.walkfree.org/content/uploads/2023/09/28082229/GSI-Snapshot-Mauritania.pdf", title: "Global Slavery Index country data - Mauritania", publisher: "Walk Free (Global Slavery Index)", date: 2023-09, tier: 2}
+        - {url: "https://www.reuters.com/article/us-mauritania-slavery-un/activists-warn-over-slavery-as-mauritania-joins-u-n-human-rights-council-idUSKCN20K2GS", title: "Activists warn over slavery as Mauritania joins U.N. human rights council", publisher: "Reuters", date: 2020, tier: 3}
+
+  paradoxes: []
+
+  reading: |
+    Mauritania is paid to be a border: Europe buys its enforcement against migrants heading north, while the Malian crisis puts about 150,000 refugees on its eastern side. Its UN votes follow a conventional line, with yes on the 2022 Ukraine aggression resolution and abstention on the 2025 peace text. The card is thin: the 2024 Mali border incidents, the Morocco and Algeria dossiers and the China, US, Russia and Gulf positions remain open gaps.

@@ -3,12 +3,82 @@ name: Brunei
 type: state
 iso2: bn
 wikipedia: https://en.wikipedia.org/wiki/Brunei
-coords:
-- 114.92
-- 4.92
+coords: [114.92, 4.92]
 seat: Bandar Seri Begawan
-regions:
-- world
-card: stub
+regions: ['southeast-asia-oceania']
+card: full
 tier: minor
-dataset: wikidata
+last_verified: '2026-10-12'
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the Islamic monarchy intact and the succession in the Bolkiah line: the Sultan is head of government as well as head of state, Crown Prince Al-Muhtadee Billah is first in line, and the 2014 sharia penal code, with stoning in force from April 2019, is the public statement of that identity."
+      confidence: C
+      sources:
+        - {url: "https://www.mindef.gov.bn/SitePages/DPMM%20Crown%20Prince.aspx", title: "DPMM Crown Prince", publisher: "Ministry of Defence, Brunei", date: '2022-08-18', tier: 1}
+        - {url: "https://www.theguardian.com/world/2014/apr/30/sultan-brunei-sharia-penal-code-flogging-death-stoning", title: "Sultan of Brunei unveils strict sharia penal code", publisher: "The Guardian", date: '2014-04-30', tier: 3}
+        - {url: "https://www.bbc.com/news/world-asia-47769964", title: "Brunei implements stoning to death under new anti-LGBT laws", publisher: "BBC News", date: '2019-04-03', tier: 3}
+    - rank: 2
+      text: "Diversify an economy built on oil and gas under Wawasan Brunei 2035, by attracting Chinese refining and petrochemical capital: the Hengyi complex at Pulau Muara Besar, with Phase 2 launched in January 2026 to lift capacity to about 400,000 barrels a day by late 2028."
+      confidence: B
+      sources:
+        - {url: "http://www.xinhuanet.com/english/2019-11/20/c_138569542.htm", title: "Hengyi project a booster for Brunei-China ties", publisher: "Xinhua (state agency, official statement)", date: '2019-11-20', tier: 1}
+        - {url: "https://stainless-steel-world.net/hengyi-brunei-refining-chemical-phase-ii-project-fully-launched/", title: "Hengyi Brunei Refining & Chemical Phase II project fully launched", publisher: "Stainless Steel World", date: '2026-01-22', tier: 3}
+        - {url: "https://en.wikipedia.org/wiki/Wawasan_Brunei_2035", title: "Wawasan Brunei 2035 (Wikipedia, pointer only; the official report sits at the Prime Minister's Office)", publisher: "Wikipedia", date: '2026-10-12', tier: 4}
+    - rank: 3
+      text: "Keep British and Singaporean troops and training on its soil as the security floor: the UK garrison, whose Royal Gurkha Rifles train in its jungle, renewed on 19 December 2024, and the Singapore Armed Forces' jungle camp at Lakiun in Temburong."
+      confidence: B
+      sources:
+        - {url: "https://www.gov.uk/government/news/pm-meeting-with-his-majesty-the-sultan-of-brunei-19-december-2024", title: "PM meeting with His Majesty the Sultan of Brunei, 19 December 2024", publisher: "UK Government (gov.uk)", date: '2024-12-19', tier: 1}
+        - {url: "https://www.forcesnews.com/services/army/british-troops-remain-brunei-another-five-years", title: "British troops remain in Brunei another five years", publisher: "Forces News", date: '2015', tier: 3}
+        - {url: "https://books.google.com/books?id=cgxkZ8EJihIC&q=Lakiun+camp+Brunei", title: "Asian Defence Journal (on the Lakiun camp in Brunei)", publisher: "Syed Hussain Publications", date: '1988', tier: 4}
+
+  means:
+    - domain: diplomatic
+      text: "Multilateral seats as its shield: a member of ASEAN since 1984 and of the Commonwealth and the OIC, and ASEAN chair in 2013, when it sought Philippine support for the chairmanship."
+      confidence: B
+      sources:
+        - {url: "https://asean.org/member-states/", title: "ASEAN member states", publisher: "ASEAN Secretariat", date: '2026-10-12', tier: 1}
+        - {url: "http://www.bidocean.asia/Asia-tender-business-news/98204-BN--Brunei-Philippines-Renew-Ties.html", title: "Brunei Darussalam - BN - Brunei, Philippines Renew Ties", publisher: "Bidocean Asia", date: '2013-04-22', tier: 3}
+    - domain: economic
+      text: "Oil and gas as the export base: Brunei LNG at Lumut, a joint venture of the government, Shell and Mitsubishi, has supplied Japan since 1972; Hengyi's refinery, financed from China, has covered domestic fuel demand since 2019."
+      confidence: C
+      sources:
+        - {url: "https://www.mitsubishicorp.com/jp/en/bg/environmental-energy/project/brunei-lng/", title: "Brunei LNG project", publisher: "Mitsubishi Corporation", date: '2024-10-06', tier: 3}
+        - {url: "https://www.bruneilng.com/", title: "Brunei LNG", publisher: "Brunei LNG", date: '2022-05-23', tier: 3}
+        - {url: "http://www.xinhuanet.com/english/2019-11/20/c_138569542.htm", title: "Hengyi project a booster for Brunei-China ties", publisher: "Xinhua (state agency, official statement)", date: '2019-11-20', tier: 1}
+    - domain: military
+      text: "Defence bought in and trained: a UK garrison of British Army and RAF personnel, Singapore's jungle camp, and Exercise Airguard with the Republic of Singapore Air Force since 1994."
+      confidence: B
+      sources:
+        - {url: "https://www.gov.uk/government/news/pm-meeting-with-his-majesty-the-sultan-of-brunei-19-december-2024", title: "PM meeting with His Majesty the Sultan of Brunei, 19 December 2024", publisher: "UK Government (gov.uk)", date: '2024-12-19', tier: 1}
+        - {url: "https://thediplomat.com/2018/10/air-force-exercise-puts-brunei-singapore-defense-ties-into-focus/", title: "Air Force Exercise Puts Brunei-Singapore Defense Ties into Focus", publisher: "The Diplomat", date: '2018-10-16', tier: 3}
+
+  constraints:
+    - text: "Oil and gas are the economy: Brunei LNG, the country's largest oil and gas producer, sits at Lumut in Belait, the district where the industry is centred, so the state's wealth still comes from hydrocarbons."
+      confidence: C
+      sources:
+        - {url: "https://www.bruneilng.com/", title: "Brunei LNG", publisher: "Brunei LNG", date: '2022-05-23', tier: 3}
+        - {url: "https://en.wikipedia.org/wiki/Brunei", title: "Brunei (Wikipedia, pointer: the wealth-from-petroleum sentence)", publisher: "Wikipedia", date: '2026-10-12', tier: 4}
+    - text: "Its defence is borrowed: a British garrison and a Singaporean jungle camp cover it, so it cannot press the Limbang question with Malaysia and leaves that claim dormant."
+      confidence: B
+      sources:
+        - {url: "https://www.gov.uk/government/news/pm-meeting-with-his-majesty-the-sultan-of-brunei-19-december-2024", title: "PM meeting with His Majesty the Sultan of Brunei, 19 December 2024", publisher: "UK Government (gov.uk)", date: '2024-12-19', tier: 1}
+        - {url: "https://www.thestar.com.my/news/nation/2009/03/16/brunei-drops-claim-over-limbang-in-sarawak-update3/", title: "Brunei drops claim over Limbang in Sarawak", publisher: "The Star (Malaysia)", date: '2009-03-16', tier: 3}
+    - text: "Its legitimacy at home rests on Islam, which limits it abroad: the 2019 stoning provisions of the sharia penal code drew boycott calls against royal-owned hotels, and its OIC membership (1984) binds it to Islamic solidarity while its defence and investment partners are not Muslim-majority states."
+      confidence: C
+      sources:
+        - {url: "https://www.bbc.com/news/world-asia-47769964", title: "Brunei implements stoning to death under new anti-LGBT laws", publisher: "BBC News", date: '2019-04-03', tier: 3}
+        - {url: "https://www.theguardian.com/world/2019/mar/31/elton-john-joins-call-for-boycott-of-brunei-owned-hotels-george-clooney", title: "Elton John joins call for boycott of Brunei-owned hotels", publisher: "The Guardian", date: '2019-03-31', tier: 3}
+        - {url: "https://www.oic-oci.org/states/?lan=en", title: "OIC member states", publisher: "Organisation of Islamic Cooperation", date: '2026-10-12', tier: 1}
+
+  paradoxes:
+    - text: "The sharia penal code was meant to anchor the sultanate in Islam and in its own rule, but the 2019 stoning provisions made royal-owned hotels and investors the target of boycotts, the very outside capital that the Wawasan 2035 diversification depends on."
+      confidence: C
+      sources:
+        - {url: "https://www.bbc.com/news/world-asia-47769964", title: "Brunei implements stoning to death under new anti-LGBT laws", publisher: "BBC News", date: '2019-04-03', tier: 3}
+        - {url: "https://www.theguardian.com/world/2019/mar/31/elton-john-joins-call-for-boycott-of-brunei-owned-hotels-george-clooney", title: "Elton John joins call for boycott of Brunei-owned hotels", publisher: "The Guardian", date: '2019-03-31', tier: 3}
+
+  reading: |
+    Brunei is a small, rich sultanate whose economy rests on one resource, oil and gas, with LNG sold to Japan since 1972. Its strategy is defensive and borrowed: it keeps its Islamic-monarchic identity at home (the 2014 sharia penal code, stoning in force since 2019), buys its security abroad (a British garrison and Singapore's jungle camp), and buys diversification from outside (Hengyi, Chinese capital at Pulau Muara Besar). The sharia code is the price it has chosen to pay for legitimacy, and the boycott it drew is the cost. The Limbang claim against Malaysia stays dormant rather than pressed.

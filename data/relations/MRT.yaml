@@ -1,0 +1,46 @@
+from: MRT
+relations:
+  - to: ESP
+    layer: action
+    type: agreement
+    summary: "Joint declaration and circular-migration memorandum signed by Ghazouani and Sanchez in Nouakchott on 27-28 Aug 2024 (one-year labour-migration pilot; security cooperation against smuggling). The same agreement as the ESP row toward MRT, with the same sources; no 2025 follow-up found."
+    since: '2024-08-27'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://www.euronews.com/2024/08/28/spain-and-mauritania-sign-an-agreement-to-regulate-migration", title: "Spain and Mauritania sign an agreement to regulate migration", publisher: "Euronews", date: 2024-08-28, tier: 3}
+      - {url: "https://www.thelocal.es/20240828/mauritania-and-spain-pledge-cooperation-on-migration", title: "Mauritania and Spain pledge cooperation on migration", publisher: "The Local Spain", date: 2024-08-28, tier: 3}
+  - to: org-eu
+    layer: action
+    type: agreement
+    summary: "EUR 210m EU package for Mauritania in 2024, paid for stopping migrants headed to Europe (Financial Times). The month is not confirmed by the source; the brief dates the partnership to March 2024."
+    since: '2024'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://www.ft.com/content/cb864a91-2396-420b-8572-6fc98a720819", title: "Brussels to pay Mauritania for stopping Europe-bound migrants", publisher: "Financial Times", date: 2024, tier: 3}
+  - to: DZA
+    layer: dependency
+    type: trade_share
+    value: 0.014
+    unit: share_of_mauritanian_imports
+    summary: "Algerian exports equal about 1.4% of Mauritanian imports (2019): a small trade tie, not a dependency. The figure comes from the citation under the Algeria-Mauritania relations index; the World Bank page was not opened and 2019 is the latest year read."
+    since: '2019'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://wits.worldbank.org/CountryProfile/en/Country/MRT/Year/2019/TradeFlow/EXPIMP/Partner/by-country", title: "Mauritania trade balance, exports and imports by country 2019", publisher: "World Bank (WITS)", date: 2019, tier: 1}
+  - to: ISR
+    layer: action
+    type: expulsion
+    summary: "Mauritania expelled Israeli diplomats and shut its Nouakchott embassy in March 2009; it formally severed diplomatic relations on 21 March 2010."
+    since: '2009-03-06'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://www.reuters.com/article/us-israel-mauritania-idUSTRE52525720090306", title: "Mauritania expels Israeli diplomats, shuts embassy", publisher: "Reuters", date: 2009-03-06, tier: 3}
+      - {url: "https://www.haaretz.com/1.5044807", title: "Mauritania Formally Severs Diplomatic Ties With Israel", publisher: "Haaretz", date: 2010-03-21, tier: 3}

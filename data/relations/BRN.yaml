@@ -1,0 +1,113 @@
+from: BRN
+relations:
+  - to: MYS
+    layer: objective
+    type: territorial_claim
+    summary: "Limbang: Brunei's claim to the Limbang district of Sarawak, dormant since the 2009 exchange of letters. Malaysian press reported in March 2009 that Brunei had dropped it; Brunei denied this, saying the Limbang question was never discussed in the exchange of letters. Dormant, not withdrawn."
+    since: '2009-03-16'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://www.thestar.com.my/news/nation/2009/03/16/brunei-drops-claim-over-limbang-in-sarawak-update3/", title: "Brunei drops claim over Limbang in Sarawak", publisher: "The Star (Malaysia)", date: '2009-03-16', tier: 3}
+      - {url: "http://www.bt.com.bn/home_news/2009/03/17/brunei_drops_all_claims_to_limbang", title: "Brunei drops all claims to Limbang", publisher: "The Brunei Times", date: '2009-03-17', tier: 3}
+      - {url: "http://www.brunei-online.com/bb/wed/mar18h1.htm", title: "Brunei denies Limbang story", publisher: "Borneo Bulletin", date: '2009-03-23', tier: 3}
+
+  - to: MYS
+    layer: alignment
+    type: treaty
+    summary: "Final maritime boundaries agreed in 2009, settling the 2003-2009 dispute over the Kikeh oil field: Brunei holds the Kikeh fields, and commercial arrangement areas in the disputed waters share oil and gas revenue (the quantum is not disclosed)."
+    since: '2009'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: B
+    sources:
+      - {url: "https://ir.uitm.edu.my/id/eprint/55045/1/55045.pdf", title: "The bickering brethren: Malaysia-Brunei Territorial Disputes 2003-2009 and Their Resolution", publisher: "UiTM", date: '2021', tier: 2}
+
+  - to: SGP
+    layer: alignment
+    type: treaty
+    summary: "Currency Interchangeability Agreement: the Brunei dollar and the Singapore dollar are legal tender in both countries and kept at par. The signing date was not found; since carries the date of the MAS notice (2014-08-21), not the signing."
+    since: '2014-08-21'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: B
+    sources:
+      - {url: "http://www.mas.gov.sg/currency/currency-interchangeability-agreement-with-brunei.aspx", title: "Currency Interchangeability Agreement - Brunei Notes and Coins", publisher: "Monetary Authority of Singapore", date: '2014-08-21', tier: 1}
+
+  - to: SGP
+    layer: action
+    type: visit
+    summary: "Singapore PM Lawrence Wong visit to Brunei to mark 50 years of defence ties, announced on 8 October 2026 (CNA also reports on the officers' stories on 10 October)."
+    since: '2026-10-08'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://www.channelnewsasia.com/singapore/pm-wong-brunei-commemorate-50th-anniversary-defence-relations-6441601", title: "PM Wong to visit Brunei to mark 50 years of defence ties", publisher: "CNA", date: '2026-10-08', tier: 3}
+      - {url: "https://www.channelnewsasia.com/singapore/brunei-singapore-officers-50-years-defence-ties-6448251", title: "'Beyond the uniform': Singapore, Brunei officers share stories of lasting friendships as defence ties mark 50 years", publisher: "CNA", date: '2026-10-10', tier: 3}
+
+  - to: IDN
+    layer: action
+    type: visit
+    summary: "Indonesian President Prabowo Subianto's state visit to Brunei, meeting Sultan Hassanal Bolkiah at Istana Nurul Iman; the Sultan awarded him the Family Order of Laila Utama."
+    since: '2025-05-14'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: B
+    sources:
+      - {url: "https://setkab.go.id/en/president-prabowo-sultan-hassanal-bolkiah-discuss-strengthening-strategic-cooperation/", title: "President Prabowo, Sultan Hassanal Bolkiah Discuss Strengthening Strategic Cooperation", publisher: "Cabinet Secretariat of the Republic of Indonesia", date: '2025-05-14', tier: 1}
+      - {url: "https://en.antaranews.com/news/355109/president-prabowo-awarded-brunei-darussalams-highest-royal-honor", title: "President Prabowo awarded Brunei Darussalam's highest royal honor", publisher: "ANTARA News", date: '2025-05-14', tier: 3}
+
+  - to: GBR
+    layer: alignment
+    type: security_guarantee
+    summary: "UK-Brunei Garrison Agreement renewed at Downing Street on 19 December 2024: British Army and RAF personnel stay in Brunei, with the Royal Gurkha Rifles training in its jungle. A 2015 Forces News headline reports a further five years for the earlier arrangement; the term of the 2024 renewal is not verified."
+    since: '2024-12-19'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: B
+    sources:
+      - {url: "https://www.gov.uk/government/news/pm-meeting-with-his-majesty-the-sultan-of-brunei-19-december-2024", title: "PM meeting with His Majesty the Sultan of Brunei, 19 December 2024", publisher: "UK Government (gov.uk)", date: '2024-12-19', tier: 1}
+      - {url: "https://www.forcesnews.com/services/army/british-troops-remain-brunei-another-five-years", title: "British troops remain in Brunei another five years", publisher: "Forces News", date: '2015', tier: 3}
+
+  - to: JPN
+    layer: dependency
+    type: energy_export
+    value: 0.82
+    unit: share_of_lng_exports
+    summary: "Brunei LNG at Lumut (a joint venture of the government, Shell and Mitsubishi) has supplied Japan since 1972. The 82% share is the latest figure found, from 2014; no newer official figure was found, so it is flagged old. The company also cites about 5 million tonnes a year to three Japanese utilities."
+    since: '1972'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://www.mitsubishicorp.com/jp/en/bg/environmental-energy/project/brunei-lng/", title: "Brunei LNG project", publisher: "Mitsubishi Corporation", date: '2024-10-06', tier: 3}
+      - {url: "https://thediplomat.com/2014/01/kenichi-suganuma/", title: "Kenichi Suganuma (The Diplomat, Brunei-Japan economic ties; 82% LNG share to Japan, 2014)", publisher: "The Diplomat", date: '2014-01-16', tier: 3}
+
+  - to: CHN
+    layer: dependency
+    type: investment
+    value: 13.6
+    unit: usd_bn_phase2_package
+    summary: "Hengyi petrochemical complex at Pulau Muara Besar (70% Zhejiang Hengyi, 30% Damai Holdings): Phase 1 cost US$3.445bn and reached full operation in November 2019 at 175,000 barrels a day; Phase 2 was launched in January 2026 on a US$13.6bn package (Brunei Islamic Bank financing and tax incentives), with capacity targeted at about 400,000 barrels a day by late 2028."
+    since: '2011'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: B
+    sources:
+      - {url: "http://www.xinhuanet.com/english/2019-11/20/c_138569542.htm", title: "Hengyi project a booster for Brunei-China ties", publisher: "Xinhua (state agency, official statement)", date: '2019-11-20', tier: 1}
+      - {url: "https://stainless-steel-world.net/hengyi-brunei-refining-chemical-phase-ii-project-fully-launched/", title: "Hengyi Brunei Refining & Chemical Phase II project fully launched", publisher: "Stainless Steel World", date: '2026-01-22', tier: 3}
+
+  - to: USA
+    layer: action
+    type: sanction
+    summary: "US reciprocal tariff of 24% on Brunei exports, announced on 3 April 2025 with a 10% universal tariff; raised to 25% in August 2025 (one table gives 21% for April, a conflict). The US Supreme Court voided the IEEPA-based reciprocal tariffs on 20 February 2026. Vocabulary note: a tariff is a trade measure, not a sanction; the type is borrowed because the ontology has no trade type."
+    since: '2025-04-03'
+    until: null
+    last_verified: '2026-10-12'
+    confidence: B
+    sources:
+      - {url: "https://mofe.gov.bn/Press%20Room/Press%20Release%2003.04.2025%20%5BEnglish%5D%20-%20Tariff%20Regime%20United%20States.pdf", title: "Press Release 03.04.2025 - Tariff Regime United States", publisher: "Ministry of Finance and Economy, Brunei", date: '2025-04-03', tier: 1}
+      - {url: "https://www.ciras.iastate.edu/files/2025/08/ciras_Reciprocal-Tariff-Table_7Aug2025.pdf", title: "Reciprocal Tariff Table (7 Aug 2025)", publisher: "CIRAS, Iowa State University", date: '2025-08-07', tier: 3}
+      - {url: "https://www.ey.com/en_in/technical/alerts-hub/2026/02/reciprocal-tariffs-announced-by-us-government-in-april-2025-struck-down-by-us-supreme-court", title: "Reciprocal tariffs announced by US government in April 2025, struck down by US Supreme Court", publisher: "EY", date: '2026-02', tier: 3}

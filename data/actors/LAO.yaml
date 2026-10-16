@@ -8,7 +8,69 @@ coords:
 - 17.98
 seat: Vientiane
 regions:
-- world
-card: stub
+- southeast-asia-oceania
+card: full
 tier: minor
+last_verified: '2026-10-12'
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Stabilise the economy and cut the debt burden. The kip and the reserves have recovered (a record USD 4.2bn in March 2026), but debt service takes about 13% of GDP in 2026, and the IMF puts public debt at 80.6% of GDP in 2025 against a path to about 57% by 2030 if reforms hold."
+      confidence: B
+      sources:
+        - {url: "https://www.worldbank.org/en/country/lao/publication/lao-economic-monitor-jun-2026-consolidating-reform-momentum-amid-volatility-key-findings", title: "Lao Economic Monitor, June 2026: Consolidating Reform Momentum Amid Volatility - key findings", publisher: "World Bank", date: '2026-07-06', tier: 1}
+        - {url: "https://www.tourismlaos.org/2026/03/06/international-monetary-fund-says-laos-economy-stabilizing-but-risks-remain/", title: "International Monetary Fund says Laos economy stabilizing but risks remain", publisher: "Tourism Laos (press report on the IMF)", date: '2026-03-06', tier: 3}
+    - rank: 2
+      text: "Turn hydropower into export revenue, above all to Vietnam, whose revised power plan targets at least 8 GW of imports from Laos by 2030 (a planning target, not a contract)."
+      confidence: C
+      sources:
+        - {url: "https://news.tuoitre.vn/power-imports-from-laos-surge-as-renewable-projects-come-online-103260421152542366.htm", title: "Power imports from Laos surge as renewable projects come online", publisher: "Tuoi Tre News", date: '2026-04-21', tier: 3}
+        - {url: "https://asianews.network/laos-vietnam-ink-cooperation-agreements-to-strengthen-special-relationship/", title: "Laos, Vietnam ink cooperation agreements to strengthen special relationship", publisher: "Asia News Network", date: '2026-02', tier: 3}
+    - rank: 3
+      text: "Keep the special relationship with Vietnam as the political anchor: party cooperation plans for 2026-2030, agreed when President Thongloun was in Hanoi on 26-27 Jan 2026, and the Vung Ang sea port and a Vientiane-Thakhaek-Vung Ang railway named as priorities when To Lam visited Vientiane on 5 Feb 2026."
+      confidence: B
+      sources:
+        - {url: "https://kpl.gov.la/detail.aspx?id=96794", title: "Lao, Vietnamese Party Leaders Reaffirm Strategic Partnership During State Visit", publisher: "KPL (Lao state news agency, official statement)", date: '2026-01', tier: 1}
+        - {url: "https://asianews.network/laos-vietnam-ink-cooperation-agreements-to-strengthen-special-relationship/", title: "Laos, Vietnam ink cooperation agreements to strengthen special relationship", publisher: "Asia News Network", date: '2026-02', tier: 3}
+
+  means:
+    - domain: economic
+      text: "The grid as a sold asset: 90% of EDL-T, the high-voltage transmission company (lines above 230 kV), went to China Southern Power Grid in 2020 for USD 600m, with a 25-year management mandate from 2021; the buyer is reported to hold majority control."
+      confidence: C
+      sources:
+        - {url: "https://amp.scmp.com/news/asia/southeast-asia/article/3100383/chinese-firm-take-majority-control-laos-electric-grid-amid", title: "Chinese firm 'to take majority control' of Laos' electric grid amid belt and road-linked debt default fears", publisher: "South China Morning Post", date: '2020', tier: 3}
+    - domain: diplomatic
+      text: "Diplomacy beyond Vietnam: President Thongloun to Pyongyang on 7-8 Oct 2025 to 'strengthen bilateral ties', and Prime Minister Sonexay Siphandone to Washington in late September 2025 to seek tariff concessions in talks with USTR Jamieson Greer."
+      confidence: B
+      sources:
+        - {url: "https://kpl.gov.la/En/detail.aspx?id=94960", title: "President Thongloun Sisoulith leads high-level delegation to DPRK to strengthen bilateral ties", publisher: "KPL (Lao state news agency, official statement)", date: '2025-10', tier: 1}
+        - {url: "https://www.tourismlaos.org/2025/10/17/lao-prime-minister-visits-us-to-strengthen-economic-ties-seek-tariff-reductions/", title: "Lao Prime Minister visits US to strengthen economic ties, seek tariff reductions", publisher: "Tourism Laos (reporting on the Lao government)", date: '2025-10-17', tier: 3}
+
+  constraints:
+    - text: "Debt service absorbs the budget: the IMF's February 2026 assessment keeps Laos in debt distress, and the World Bank counts debt payments at about 13% of GDP in 2026, which limits spending on health, education and social protection."
+      confidence: B
+      sources:
+        - {url: "https://www.worldbank.org/en/country/lao/publication/lao-economic-monitor-jun-2026-consolidating-reform-momentum-amid-volatility-key-findings", title: "Lao Economic Monitor, June 2026: Consolidating Reform Momentum Amid Volatility - key findings", publisher: "World Bank", date: '2026-07-06', tier: 1}
+        - {url: "https://www.tourismlaos.org/2026/03/06/international-monetary-fund-says-laos-economy-stabilizing-but-risks-remain/", title: "International Monetary Fund says Laos economy stabilizing but risks remain", publisher: "Tourism Laos (press report on the IMF)", date: '2026-03-06', tier: 3}
+    - text: "Dollar scarcity: the kip lost about 35% against the dollar in January-October 2023, with inflation near 26%, and kept falling in 2024 (19% at the official rate to September); the World Bank ties the slide to the dollars needed for external debt repayments, and the 2026 oil shock has reignited inflation."
+      confidence: C
+      sources:
+        - {url: "https://www.worldbank.org/en/country/lithuania/publication/lao-economic-monitor-october-2024-reforms-for-stability-and-growth-key-findings", title: "Lao Economic Monitor, October 2024: Reforms for Stability and Growth - key findings", publisher: "World Bank", date: '2024-10', tier: 1}
+        - {url: "https://www.worldbank.org/en/country/lao/publication/lao-economic-monitor-jun-2026-consolidating-reform-momentum-amid-volatility-key-findings", title: "Lao Economic Monitor, June 2026: Consolidating Reform Momentum Amid Volatility - key findings", publisher: "World Bank", date: '2026-07-06', tier: 1}
+    - text: "Donor money for the war's bombs: the US paid 73% of international clearance funding in 2024 (USD 23.6m), and the January 2025 aid stop halted US-funded demining; its restart is unclear."
+      confidence: C
+      sources:
+        - {url: "https://fulcrum.sg/us-aid-cuts-and-travel-ban-will-impact-laos/", title: "US aid cuts and travel ban will impact Laos", publisher: "Fulcrum (ISEAS - Yusof Ishak Institute)", date: '2025', tier: 2}
+        - {url: "https://responsiblestatecraft.org/how-us-aid-freeze-threatens-decades-of-de-mining-progress/", title: "How US aid freeze threatens decades of de-mining progress", publisher: "Responsible Statecraft", date: '2025', tier: 3}
+        - {url: "https://the-monitor.org/country-profile/lao-pdr/funding-for-mine-action", title: "Lao PDR - funding for mine action", publisher: "Landmine and Cluster Munition Monitor", date: '2025', tier: 2}
+
+  paradoxes:
+    - text: "The grid sold to ease the debt ties the debt to China: critics read the 2020 transfer of 90% of EDL-T for USD 600m as debt-for-equity, and the payment was expected to go to debts owed to Chinese creditors (not confirmed), while the Chinese partner now shares in the transmission revenue that EDL's finances depend on."
+      confidence: C
+      sources:
+        - {url: "https://amp.scmp.com/news/asia/southeast-asia/article/3100383/chinese-firm-take-majority-control-laos-electric-grid-amid", title: "Chinese firm 'to take majority control' of Laos' electric grid amid belt and road-linked debt default fears", publisher: "South China Morning Post", date: '2020', tier: 3}
+
+  reading: |
+    Laos is a landlocked one-party state whose main asset is water: its dams sell power to Vietnam, and the high-voltage grid that carries it is now majority-controlled through a Chinese company, the price of a debt that the IMF still treats as distressed. Its policy is to hold the Vietnamese special relationship as the political anchor and to spread its partners so that none of them sets its choices. The record reserves of 2026 buy time; they do not solve the debt.

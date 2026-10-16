@@ -1,0 +1,119 @@
+from: FJI
+relations:
+  # ---------- objective ----------
+  - to: org-pif
+    layer: objective
+    type: influence_goal
+    summary: "Ocean of Peace: Rabuka tabled the idea on 16 Aug 2023; the Pacific Islands Forum leaders endorsed the declaration at the 54th Leaders' Meeting in Honiara in September 2025, rejecting militarisation and great-power rivalry, with Fiji's PM hosting the ceremony. Critics say the Forum sidestepped pressing regional issues."
+    since: 2023-08-16
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://matangitonga.to/2025/09/15/pacific-islands-forum-leaders-declare-ocean-peace", title: "Pacific Islands Forum Leaders declare Ocean of Peace", publisher: "Matangi Tonga", date: 2025-09-15, tier: 3}
+      - {url: "https://islandsbusiness.com/?p=41837", title: "Pacific declares itself an 'Ocean of Peace' in historic regional pact", publisher: "Islands Business", date: 2025-09, tier: 3}
+
+  - to: org-msg
+    layer: objective
+    type: influence_goal
+    summary: "Fiji holds the rotating chair of the Melanesian Spearhead Group for two years from June 2025 and hosted the 23rd Leaders' Summit in Suva. In 2023 Rabuka backed the West Papuan ULMWP's bid for full MSG membership, a point of friction with Indonesia."
+    since: 2025-06
+    until: null
+    last_verified: '2026-10-12'
+    confidence: B
+    sources:
+      - {url: "https://www.foreignaffairs.gov.fj/fiji-takes-chairmanship-of-the-melanesian-spearhead-group-msg/", title: "Fiji takes chairmanship of the Melanesian Spearhead Group (MSG)", publisher: "Fiji Ministry of Foreign Affairs", date: 2025-06, tier: 1}
+      - {url: "https://asiapacificreport.nz/2023/02/24/rabuka-backs-call-for-west-papuan-independence-group-to-fully-join-msg/", title: "Rabuka backs call for West Papuan independence group to fully join MSG", publisher: "Asia Pacific Report", date: 2023-02-24, tier: 3}
+
+  # ---------- alignment ----------
+  - to: NZL
+    layer: alignment
+    type: treaty
+    summary: "Defence cooperation framework of June 2023 setting the legal basis for military cooperation in each other's territory, under the Duavata Partnership; the partnership was renewed for five years in Auckland on 16 July 2026, signed by the foreign ministers. Partnership, not alliance."
+    since: 2023-06
+    until: null
+    last_verified: '2026-10-12'
+    confidence: B
+    sources:
+      - {url: "https://www.hawaiipublicradio.org/pacific-news-minute/2023-06-19/pacific-news-minute-new-zealand-fiji-set-legal-framework-for-military-cooperation", title: "New Zealand, Fiji set legal framework for military cooperation", publisher: "Hawaii Public Radio (Pacific News Minute)", date: 2023-06-19, tier: 3}
+      - {url: "https://www.fijitimes.com.fj/new-zealand-fiji-renew-five-year-partnership/", title: "New Zealand, Fiji renew five-year partnership", publisher: "Fiji Times", date: 2026-07-16, tier: 3}
+      - {url: "https://www.foreignaffairs.gov.fj/fiji-and-new-zealand-prime-ministers-reaffirm-strong-bilateral-relationship/", title: "Fiji and New Zealand prime ministers reaffirm strong bilateral relationship", publisher: "Fiji Ministry of Foreign Affairs", date: 2025-09, tier: 1}
+
+  # ---------- dependency ----------
+  - to: USA
+    layer: dependency
+    type: trade_share
+    value: 15
+    unit: pct_us_reciprocal_tariff_on_fiji_origin_goods
+    summary: "US reciprocal tariff on Fiji-origin goods: 32% in April 2025 (the highest in the Pacific, on a US claim of 63% duties on US goods that Fiji disputes), cut to 15% from 8 Aug 2025. The IEEPA duties ended on 24 Feb 2026 and a 10% Section 122 surcharge expired on 24 July 2026; the Foreign Ministry says Fijian exports are no longer under it, while some calculators still show it. A Zero List negotiation is open."
+    since: 2025-08-08
+    until: 2026-02-24
+    last_verified: '2026-10-12'
+    confidence: C
+    note: "Fiji's own average import duty on US goods is under 2%, per the Fiji side. Some third-party tariff calculators conflict with the Foreign Ministry's July 2026 statement; the government statement is the more recent source."
+    sources:
+      - {url: "https://www.fijitimes.com.fj/fiji-hails-trade-win-as-u-s-cuts-tariffs-from-32-to-15/", title: "Fiji hails trade win as U.S. cuts tariffs from 32% to 15%", publisher: "Fiji Times", date: 2025-08, tier: 3}
+      - {url: "https://pina.com.fj/2025/08/04/fiji-secures-15-percent-reduction-in-u-s-tariffs/", title: "Fiji secures 15 percent reduction in U.S. tariffs", publisher: "PINA", date: 2025-08-04, tier: 3}
+      - {url: "https://islandsbusiness.com/news-break/fijis-exports-to-us-unaffected-by-new-tariffs/", title: "Fiji's exports to US unaffected by new tariffs", publisher: "Islands Business", date: 2026-07, tier: 3}
+
+  # ---------- action ----------
+  - to: AUS
+    layer: action
+    type: agreement
+    summary: "Vuvale Partnership elevated in July 2025 (Albanese and Rabuka): development assistance of about A$500m for 2025-29, including an extra A$40m over four years; AFP officers working inside the Fiji police; A$12m for container screening at Lautoka and Suva. At the Defence Ministers' Meeting in Suva on 3 Oct 2025 both sides agreed to start negotiations toward a treaty, and a 20-year maintenance MoU and Guardian-class boats were confirmed. One Fiji Sun headline gives A$734m for the package; to check."
+    since: 2025-07-07
+    until: null
+    last_verified: '2026-10-12'
+    confidence: B
+    sources:
+      - {url: "https://ministers.dfat.gov.au/minister/pat-conroy/media-release/australia-and-fiji-elevate-vuvale-partnership", title: "Australia and Fiji to elevate Vuvale Partnership", publisher: "DFAT (Minister for Pacific Island Affairs)", date: 2025-07, tier: 1}
+      - {url: "https://www.minister.defence.gov.au/statements/2025-10-03/joint-statement-fiji-australia-defence-ministers-meeting", title: "Joint Statement: Fiji-Australia Defence Ministers' Meeting", publisher: "Australian Department of Defence (ministers)", date: 2025-10-03, tier: 1}
+      - {url: "https://pina.com.fj/2025/07/07/australia-and-fiji-elevate-vuvale-partnership/", title: "Australia and Fiji elevate Vuvale Partnership", publisher: "PINA", date: 2025-07-07, tier: 3}
+
+  - to: JPN
+    layer: action
+    type: visit
+    summary: "Rabuka in Tokyo, 12-13 Nov 2025: a summit with PM Takaichi on 13 Nov that created the Japan-Fiji Lomavata Kizuna Partnership, marking 55 years of relations; Defence Minister Koizumi received him, and Fijian cadets have entered Japan's National Defense Academy. The two defence ministries date the courtesy call differently (11 or 12 Nov)."
+    since: 2025-11-12
+    until: null
+    last_verified: '2026-10-12'
+    confidence: B
+    sources:
+      - {url: "https://www.mod.go.jp/en/article/2025/11/31465abc58930e26f5e21b5f85515205cdfca6d2.html", title: "Courtesy Call on Prime Minister of Fiji", publisher: "Japan Ministry of Defense", date: 2025-11-12, tier: 1}
+      - {url: "https://www.foreignaffairs.gov.fj/prime-minister-rabuka-meets-fijian-diaspora-in-japan/", title: "Prime Minister Rabuka meets Fijian diaspora in Japan", publisher: "Fiji Ministry of Foreign Affairs", date: 2025-11, tier: 1}
+
+  - to: USA
+    layer: action
+    type: visit
+    summary: "Rabuka in Washington in early February 2025: a presidential prayer-breakfast speech, meetings at the Commerce Department on trade, investment and technology, and a request that the State Department reconsider its blanket aid freeze, which had named a US$1.5m clean-energy programme for women run by the SPC's Fiji office. He urged the US to rejoin the Paris Agreement."
+    since: 2025-02-05
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://nit.com.au/05-02-2025/16065/fiji-leader-to-raise-concerns-in-us-after-aid-frozen", title: "Fiji leader to raise concerns in US after aid frozen", publisher: "NIT", date: 2025-02-05, tier: 3}
+      - {url: "https://islandsbusiness.com/?p=38205", title: "Fiji leader to press Pacific Islands concerns in Washington after US aid frozen", publisher: "Islands Business", date: 2025-02, tier: 3}
+
+  - to: IND
+    layer: action
+    type: visit
+    summary: "Rabuka's first visit to India as PM (24-26 Aug 2025), with talks at Hyderabad House on 25 Aug: India to open a defence attache post in Suva, the first Joint Working Group on Defence under the 2017 defence memorandum, a 100-bed super-speciality hospital in Suva, and a migration and mobility declaration. An Indian naval port call is planned. No Modi visit to Fiji in 2025 was found."
+    since: 2025-08-24
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://ianslive.in/pm-modi-holds-delegation-level-talks-with-fijian-pm-rabuka-at-hyderabad-house--20250825121200", title: "PM Modi holds delegation-level talks with Fijian PM Rabuka at Hyderabad House", publisher: "IANS", date: 2025-08-25, tier: 3}
+      - {url: "https://sv7.thediplomat.com/2025/08/pm-rabukas-visit-adds-new-momentum-to-india-fiji-relations", title: "PM Rabuka's visit adds new momentum to India-Fiji relations", publisher: "The Diplomat", date: 2025-08, tier: 3}
+
+  - to: ISR
+    layer: action
+    type: visit
+    summary: "Fiji's embassy in Jerusalem opened on 17 Sep 2025, with Rabuka and Netanyahu at the ceremony at Israel's Foreign Ministry, making Fiji the first Pacific island state to open an embassy there. Fiji had abstained on a recent UN vote calling for Palestinian statehood. In October 2025 Deputy FM Haskel's visit to Fiji produced a digital security and cybersecurity memorandum with Israel's National Cyber Directorate."
+    since: 2025-09-17
+    until: null
+    last_verified: '2026-10-12'
+    confidence: C
+    sources:
+      - {url: "https://www.fijitimes.com.fj/fiji-opens-embassy-in-jerusalem-strengthens-ties-with-israel/", title: "Fiji opens embassy in Jerusalem, strengthens ties with Israel", publisher: "Fiji Times", date: 2025-09-17, tier: 3}
+      - {url: "https://www.jns.org/israeli-deputy-fm-kicks-off-historic-visit-to-pacific/", title: "Israeli deputy FM kicks off historic visit to Pacific", publisher: "JNS", date: 2025-10, tier: 3}

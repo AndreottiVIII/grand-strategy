@@ -1,0 +1,138 @@
+from: TLS
+relations:
+  # ---------- objective ----------
+  - to: org-asean
+    layer: objective
+    type: membership_goal
+    summary: "Full ASEAN membership was the bid's goal and was reached on 26 Oct 2025 with the Declaration on Admission at the 47th ASEAN Summit in Kuala Lumpur: the eleventh member and the first enlargement in over 25 years. The aim now is integration (Japan pledged support in Aug 2026)."
+    since: 2025-10-26
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://asean.org/forging-a-new-era-timor-leste-admitted-into-asean/", title: "Forging a New Era: Timor-Leste Admitted into ASEAN", publisher: "ASEAN", date: 2025-10-26, tier: 1}
+      - {url: "https://www.malaymail.com/news/malaysia/2025/10/26/timor-leste-joins-asean-as-11th-member-marking-blocs-first-expansion-in-25-years/195933", title: "Timor-Leste joins ASEAN as 11th member, marking bloc's first expansion in 25 years", publisher: "Malay Mail", date: 2025-10-26, tier: 3}
+  - to: AUS
+    layer: objective
+    type: influence_goal
+    summary: "Dili wants Greater Sunrise on its own terms: a pipeline to a new facility on its south coast rather than the Darwin route Woodside prefers, and a share of the revenue through a Timor-Leste infrastructure fund. The Jan 2026 declaration commits Australia to a 10% share of combined future upstream revenue to that fund."
+    since: 2018-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://en.tatoli.tl/2026/01/09/australias-special-envoy-katrina-cooper-meets-timor-leste-leaders-to-advance-talks-on-greater-sunrise-project/14/", title: "Australia's special envoy Katrina Cooper meets Timor-Leste leaders to advance talks on Greater Sunrise project", publisher: "Tatoli (state agency)", date: 2026-01-09, tier: 1}
+      - {url: "https://www.pm.gov.au/media/strengthening-our-partnership-timor-leste", title: "Strengthening our partnership with Timor-Leste", publisher: "Office of the Prime Minister of Australia", date: 2026-01-29, tier: 1}
+      - {url: "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/15/timor-leste-postpones-earliest-production-from-greater-sunrise-gas-project", title: "Timor-Leste postpones earliest production from Greater Sunrise gas project", publisher: "The Star", date: 2026-09-15, tier: 3}
+
+  # ---------- alignment ----------
+  - to: AUS
+    layer: alignment
+    type: treaty
+    summary: "The March 2018 treaty on maritime arrangements in the Timor Sea (called the Maritime Boundary Treaty in 2026 reporting) requires a single production-sharing agreement for Greater Sunrise. Its implementation is still in negotiation: the petroleum mining code was finalised in March 2026, the production-sharing contract and fiscal regime were open through 2026, and Timor Gap agreed to buy Osaka Gas Australia's 10% stake."
+    since: 2018-03
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://en.tatoli.tl/2022/07/08/tl-welcomes-the-australian-govts-decision-of-dropping-the-charges-against-bernard-collaery/17/", title: "TL welcomes the Australian govt's decision of dropping the charges against Bernard Collaery", publisher: "Tatoli (state agency)", date: 2022-07-08, tier: 1}
+      - {url: "https://en.tatoli.tl/2026/04/15/timor-leste-australia-finalize-petroleum-mining-code-to-advance-greater-sunrise-project/10/", title: "Timor-Leste, Australia finalize petroleum mining code to advance Greater Sunrise project", publisher: "Tatoli (state agency)", date: 2026-04-15, tier: 1}
+      - {url: "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/15/timor-leste-postpones-earliest-production-from-greater-sunrise-gas-project", title: "Timor-Leste postpones earliest production from Greater Sunrise gas project", publisher: "The Star", date: 2026-09-15, tier: 3}
+
+  # ---------- dependency ----------
+  - to: IDN
+    layer: dependency
+    type: trade_share
+    value: 0.70
+    unit: share_of_market_goods
+    summary: "About 70% of goods circulating in Timor-Leste's market are Indonesian-origin (Trade Minister Budi Santoso). Bilateral trade reached US$391.3m in 2024 and US$272.7m in Jan-Aug 2025, with a US$263.5m surplus for Indonesia. The border pact under revision covers daily-needs trade, not formal exports."
+    since: 2024-01-01
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://en.antaranews.com/news/386489/indonesia-timor-leste-to-revise-border-trade-pact-after-2-decades", title: "Indonesia, Timor-Leste to revise border trade pact after 2 decades", publisher: "Antara", date: 2025, tier: 3}
+  - to: AUS
+    layer: dependency
+    type: energy_export
+    value: 2034
+    unit: first_gas_year
+    summary: "Greater Sunrise first gas is now expected in 2034 or 2035, with a final investment decision targeted for 2029 (the petroleum minister, Sept 2026). Oil production from the existing fields ceased in 2025 (IMF), so the state's petroleum income is now the fund's withdrawals."
+    since: 2026-09-15
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/15/timor-leste-postpones-earliest-production-from-greater-sunrise-gas-project", title: "Timor-Leste postpones earliest production from Greater Sunrise gas project", publisher: "The Star", date: 2026-09-15, tier: 3}
+      - {url: "https://www.imf.org/en/news/articles/2025/09/25/pr-25315-timor-leste-imf-executive-board-concludes-2025-article-iv-consultation/index.md", title: "IMF Executive Board Concludes 2025 Article IV Consultation for Timor-Leste", publisher: "IMF", date: 2025-09-26, tier: 1}
+
+  # ---------- action ----------
+  - to: org-asean
+    layer: action
+    type: agreement
+    summary: "Timor-Leste signed the Declaration on the Admission of Timor-Leste to ASEAN at the 47th ASEAN Summit in Kuala Lumpur on 26 Oct 2025, becoming the 11th member (mirrored from the IDN card's row, same sources)."
+    since: 2025-10-26
+    until: null
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://asean.org/forging-a-new-era-timor-leste-admitted-into-asean/", title: "Forging a New Era: Timor-Leste Admitted into ASEAN", publisher: "ASEAN", date: 2025-10-26, tier: 1}
+      - {url: "https://en.antaranews.com/news/388041/prabowo-signs-declaration-on-timor-lestes-admission-to-asean", title: "Prabowo signs declaration on Timor-Leste's admission to ASEAN", publisher: "Antara", date: 2025-10-26, tier: 3}
+      - {url: "https://www.malaymail.com/news/malaysia/2025/10/26/timor-leste-joins-asean-as-11th-member-marking-blocs-first-expansion-in-25-years/195933", title: "Timor-Leste joins ASEAN as 11th member, marking bloc's first expansion in 25 years", publisher: "Malay Mail", date: 2025-10-26, tier: 3}
+  - to: AUS
+    layer: action
+    type: agreement
+    summary: "Joint declaration 'a new partnership for a new era' signed by Albanese and Gusmao in Dili on 28-29 Jan 2026: US$220m for human development, US$80m for private-sector development, US$8.2m for ASEAN and WTO participation, the Greater Sunrise revenue share to the infrastructure fund, a goal of 10,000 Timorese workers in Australia by 2027-28, and police and border-management cooperation."
+    since: 2026-01-28
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.pm.gov.au/media/strengthening-our-partnership-timor-leste", title: "Strengthening our partnership with Timor-Leste", publisher: "Office of the Prime Minister of Australia", date: 2026-01-29, tier: 1}
+      - {url: "https://en.tatoli.tl/2026/01/28/australian-pm-albanese-arrives-in-dili-received-by-ramos-horta-and-gusmao/11/", title: "Australian PM Albanese arrives in Dili, received by Ramos-Horta and Gusmao", publisher: "Tatoli (state agency)", date: 2026-01-28, tier: 1}
+  - to: CHN
+    layer: action
+    type: agreement
+    summary: "Upgraded to a comprehensive strategic partnership in Sept 2023 (Gusmao met Xi at the Hangzhou Asian Games). At Ramos-Horta's state visit to Beijing in July 2024, the first by a Timorese president, the two sides signed a Belt and Road cooperation plan and agreements on agriculture, digital economy, infrastructure and the Global Development Initiative."
+    since: 2023-09
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://www.mfa.gov.cn/eng/xw/zyxw/202407/t20240729_11462543.html", title: "Li Qiang meets with President of Timor-Leste Jose Ramos-Horta", publisher: "Chinese Ministry of Foreign Affairs", date: 2024-07-29, tier: 1}
+      - {url: "https://rsis.edu.sg/rsis-publication/rsis/chinas-engagement-with-timor-leste-amid-geopolitical-tensions/", title: "China's engagement with Timor-Leste amid geopolitical tensions", publisher: "RSIS", date: 2024-07-10, tier: 2}
+  - to: VAT
+    layer: action
+    type: visit
+    summary: "Pope Francis visited Dili from 9 to 11 Sept 2024, the first papal visit since independence in 2002, with an open-air Mass at Tasitolu on 10 Sept. Estimates of the crowd ran to hundreds of thousands, close to half the population."
+    since: 2024-09-09
+    until: 2024-09-11
+    last_verified: 2026-10-12
+    confidence: A
+    sources:
+      - {url: "https://www.vaticannews.va/en/pope/news/2024-09/thousands-of-people-greet-pope-as-he-arrives-in-timor-leste.html", title: "Thousands of people greet Pope as he arrives in Timor-Leste", publisher: "Vatican News", date: 2024-09-09, tier: 1}
+      - {url: "https://tribune.net.ph/2024/09/09/pope-lands-in-east-timor-for-first-papal-visit-since-independence", title: "Pope lands in East Timor for first papal visit since independence", publisher: "Tribune", date: 2024-09-09, tier: 3}
+  - to: PRT
+    layer: action
+    type: agreement
+    summary: "Four-year cooperation framework worth EUR 75m (EUR 5m more than the last), centred on education and the teaching of Portuguese, announced by Portugal's prime minister Montenegro in 2025 (mirrored from the PRT card's row, same sources). Timor-Leste's president led the CPLP mission after the Nov 2025 coup and Timor-Leste took the temporary CPLP presidency in Dec 2025; with Portugal and Brazil it opposes Equatorial Guinea's bid for the 2027-29 presidency (impasse still open in Aug 2026)."
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://thenews.co.pt/montenegro-anuncia-apoio-de-75-milhoes-de-euros-para-timor-leste-e-visita-ao-pais-em-junho-de-2025", title: "Montenegro announces EUR 75 million support for Timor-Leste", title_original: "Montenegro anuncia apoio de 75 milhoes de euros para Timor-Leste", lang: pt, publisher: "The News", date: 2025, tier: 3}
+      - {url: "https://www.verangola.net/va/en/122025/Politics/47141/CPLP-suspends-Guinea-Bissau-and-elects-Timor-Leste-for-temporary-presidency.htm", title: "CPLP suspends Guinea-Bissau and elects Timor-Leste for temporary presidency", publisher: "Ver Angola", date: 2025-12, tier: 3}
+      - {url: "https://www.verangola.net/va/en/082026/Politics/49857/Brazil-says-the-impasse-remains-over-which-country-will-assume-the-presidency-of-the-CPLP.htm", title: "Brazil says the impasse remains over which country will assume the presidency of the CPLP", publisher: "Ver Angola", date: 2026-08, tier: 3}
+  - to: JPN
+    layer: action
+    type: agreement
+    summary: "Grant of 440 million yen (over US$3m) for road maintenance machinery, exchanged in Dili on 11 Dec 2025, channelled through JICA for rural roads damaged each rainy season. Earlier: a JICA grant of 3,093 million yen for the Guido Valadares National Hospital (Aug 2024). Japan pledged continued support for ASEAN integration in Aug 2026."
+    since: 2025-12-11
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://en.tatoli.tl/?p=66643", title: "Japan signs grant for road maintenance equipment in Dili", publisher: "Tatoli (state agency)", date: 2025-12-11, tier: 1}
+      - {url: "https://www.jica.go.jp/english/information/press/2024/20240819_31.html", title: "JICA grant agreement for the Guido Valadares National Hospital improvement project", publisher: "JICA", date: 2024-08-19, tier: 1}
+      - {url: "https://en.tatoli.tl/2026/08/14/japan-pledges-continued-support-for-timor-lestes-asean-integration/16/", title: "Japan pledges continued support for Timor-Leste's ASEAN integration", publisher: "Tatoli (state agency)", date: 2026-08-14, tier: 1}

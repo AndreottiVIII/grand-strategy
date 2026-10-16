@@ -1,14 +1,86 @@
 id: PNG
 name: Papua New Guinea
 type: state
+coords: [147.15, -9.48]
 iso2: pg
 wikipedia: https://en.wikipedia.org/wiki/Papua_New_Guinea
-coords:
-- 147.15
-- -9.48
 seat: Port Moresby
-regions:
-- world
-card: stub
+regions: [southeast-asia-oceania]
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Turn LNG and minerals into state revenue. Papua LNG (capital cost about US$14 billion, final investment decision targeted for Q4 2026 after slipping in 2020, 2024 and 2025) and the Ramu nickel mine are both run by foreign operators; the state holds its equity through Kumul Petroleum Holdings and MRDC."
+      confidence: B
+      sources:
+        - {url: "https://pgjonline.com/news/2026/september/papua-lng-clears-key-milestones-as-totalenergies-transfers-operatorship-to-exxonmobil-nears-fid", title: "Papua LNG clears key milestones as TotalEnergies transfers operatorship to ExxonMobil, nears FID", publisher: "PGJ Online", date: 2026-09, tier: 3}
+        - {url: "https://www.businessday.co.za/world/2026-09-07-totalenergies-to-sell-a-stake-in-papua-lng-joint-venture-to-partners/", title: "TotalEnergies to sell a stake in Papua LNG joint venture to partners", publisher: "BusinessDay", date: 2026-09-07, tier: 3}
+        - {url: "https://www.intellinews.com/papua-lng-on-track-for-fid-by-end-of-year-463231/", title: "Papua LNG on track for FID by end of year", publisher: "Intellinews", date: 2026-08, tier: 3}
+    - rank: 2
+      text: "Keep Bougainville inside the state while managing a peaceful transition. The 2019 referendum gave independence about 98 per cent of the votes; in August 2026 parliament postponed its vote on the result, and the Bougainville government plans a transition from 1 September 2027 with full independence in 2030."
+      confidence: B
+      sources:
+        - {url: "https://www.ifes.org/news/bougainville-referendum-results-announced", title: "Bougainville referendum results announced", publisher: "IFES", date: 2019-12-11, tier: 2}
+        - {url: "https://nit.com.au/31-08-2026/26202/pngs-parliament-delays-the-vote-for-bougainville-independence-further", title: "PNG parliament delays vote for Bougainville independence", publisher: "NIT", date: 2026-08-31, tier: 3}
+        - {url: "https://pina.com.fj/2026/08/06/president-toroama-rejects-png-stand-on-bougainville-vote-says-independence-mandate-cannot-be-denied/", title: "President Toroama rejects PNG stand on Bougainville vote, says independence mandate cannot be denied", publisher: "PINA", date: 2026-08-06, tier: 3}
+    - rank: 3
+      text: "Buy security from partners who take a limited share of control: the Pukpuk mutual defence treaty with Australia (6 Oct 2025), US access to six defence facilities under the 2023 agreement, and no Chinese security pact (ruled out in 2024)."
+      confidence: B
+      sources:
+        - {url: "https://www.pm.gov.au/media/joint-communique-papua-new-guinea-and-australia-mutual-defence-treaty", title: "Joint communique - Papua New Guinea and Australia on a Mutual Defence Treaty", publisher: "Prime Minister of Australia (joint communique)", date: 2025-09, tier: 1}
+        - {url: "https://www.everycrsreport.com/files/2025-09-11_IF11255_e300bc759d187773bb6c53acc1b0d7f6d3bb3940.html", title: "U.S.-Papua New Guinea Relations: Issues for Congress", publisher: "Congressional Research Service", date: 2025-09-11, tier: 1}
+        - {url: "https://pina.com.fj/2024/02/08/png-rules-out-china-pact-as-pm-arrives-in-australia/", title: "PNG rules out China pact as PM arrives in Australia", publisher: "PINA", date: 2024-02-08, tier: 3}
+
+  means:
+    - domain: economic
+      text: "Resource rents and state equity: state companies hold stakes in the LNG venture alongside ExxonMobil as operator; Chinese capital owns and runs the Ramu nickel and cobalt mine, China's largest ongoing project in the country."
+      confidence: B
+      sources:
+        - {url: "https://pgjonline.com/news/2026/september/papua-lng-clears-key-milestones-as-totalenergies-transfers-operatorship-to-exxonmobil-nears-fid", title: "Papua LNG clears key milestones as TotalEnergies transfers operatorship to ExxonMobil, nears FID", publisher: "PGJ Online", date: 2026-09, tier: 3}
+        - {url: "https://www.everycrsreport.com/files/2025-09-11_IF11255_e300bc759d187773bb6c53acc1b0d7f6d3bb3940.html", title: "U.S.-Papua New Guinea Relations: Issues for Congress", publisher: "Congressional Research Service", date: 2025-09-11, tier: 1}
+    - domain: diplomatic
+      text: "Balancing by sector: traditional partners for security, China for the economy. As the CRS report records it, PNG works with its traditional security partners for security and with China for the economy."
+      confidence: B
+      sources:
+        - {url: "https://www.everycrsreport.com/files/2025-09-11_IF11255_e300bc759d187773bb6c53acc1b0d7f6d3bb3940.html", title: "U.S.-Papua New Guinea Relations: Issues for Congress", publisher: "Congressional Research Service", date: 2025-09-11, tier: 1}
+    - domain: military
+      text: "Alliance access: the Pukpuk treaty gives mutual defence with Australia; the 2023 Defence Cooperation Agreement gives US forces unimpeded access to six PNG facilities, including the Lombrum naval base on Manus."
+      confidence: B
+      sources:
+        - {url: "https://www.pm.gov.au/media/joint-communique-papua-new-guinea-and-australia-mutual-defence-treaty", title: "Joint communique - Papua New Guinea and Australia on a Mutual Defence Treaty", publisher: "Prime Minister of Australia (joint communique)", date: 2025-09, tier: 1}
+        - {url: "https://islandsbusiness.com/?p=26666", title: "U.S. military granted unimpeded access to key PNG defence facilities in new security agreement", publisher: "Islands Business", date: 2023, tier: 3}
+    - domain: military
+      text: "Police capacity bought from Australia: Australian Federal Police advisers work with the national constabulary, and Australian support runs through the police programme."
+      confidence: B
+      sources:
+        - {url: "https://dfat.gov.au/geo/papua-new-guinea/australia-papua-new-guinea-engagement", title: "Australia-Papua New Guinea engagement", publisher: "DFAT", date: 2026-10, tier: 1}
+
+  constraints:
+    - text: "Dependence on the partners it is balancing: the 2025 US aid cuts hit health and climate projects, and Australia has had to fill gaps. The NRL franchise (about A$600 million over ten years) is reported as contingent on Australia staying PNG's first security partner over China."
+      confidence: B
+      sources:
+        - {url: "https://nit.com.au/02-02-2026/22425/australia-does-what-it-can-as-us-aid-cuts-savage-png", title: "Australia does what it can as US aid cuts savage PNG", publisher: "NIT", date: 2026-02-02, tier: 3}
+        - {url: "https://www.sbs.com.au/news/article/australia-and-pngs-600m-nrl-deal-comes-with-a-security-condition/95sgz67nt", title: "Australia and PNG's $600m NRL deal comes with a security condition", publisher: "SBS News", date: 2025, tier: 3}
+    - text: "Bougainville cannot be settled by the executive alone: parliament must vote on the 2019 result, the threshold is contested (the government argues for two-thirds or three-quarters of MPs, the Bougainville government for a simple majority), and the governing coalition's count of 89 MPs has not been reached. The vote was postponed in August 2026."
+      confidence: B
+      sources:
+        - {url: "https://nit.com.au/31-08-2026/26202/pngs-parliament-delays-the-vote-for-bougainville-independence-further", title: "PNG parliament delays vote for Bougainville independence", publisher: "NIT", date: 2026-08-31, tier: 3}
+        - {url: "https://nit.com.au/13-06-2025/18526/progress-towards-bougainville-independence-following-talks", title: "Progress towards Bougainville independence following talks", publisher: "NIT", date: 2025-06-13, tier: 3}
+    - text: "Project risk on the main asset: Papua LNG has no final investment decision yet, its financing depends on more than 60 per cent project debt (Santos's target), and operatorship moves from TotalEnergies to ExxonMobil."
+      confidence: B
+      sources:
+        - {url: "https://www.intellinews.com/papua-lng-on-track-for-fid-by-end-of-year-463231/", title: "Papua LNG on track for FID by end of year", publisher: "Intellinews", date: 2026-08, tier: 3}
+        - {url: "https://pgjonline.com/news/2026/september/papua-lng-clears-key-milestones-as-totalenergies-transfers-operatorship-to-exxonmobil-nears-fid", title: "Papua LNG clears key milestones as TotalEnergies transfers operatorship to ExxonMobil, nears FID", publisher: "PGJ Online", date: 2026-09, tier: 3}
+
+  paradoxes:
+    - text: "The Pukpuk treaty bars arrangements with third parties that would undermine it, yet the Ramu nickel mine, China's largest ongoing project in the country, is the foreign money the state can least easily refuse, because the economy depends on it."
+      confidence: B
+      sources:
+        - {url: "https://www.pm.gov.au/media/joint-communique-papua-new-guinea-and-australia-mutual-defence-treaty", title: "Joint communique - Papua New Guinea and Australia on a Mutual Defence Treaty", publisher: "Prime Minister of Australia (joint communique)", date: 2025-09, tier: 1}
+        - {url: "https://www.everycrsreport.com/files/2025-09-11_IF11255_e300bc759d187773bb6c53acc1b0d7f6d3bb3940.html", title: "U.S.-Papua New Guinea Relations: Issues for Congress", publisher: "Congressional Research Service", date: 2025-09-11, tier: 1}
+
+  reading: |
+    Papua New Guinea buys security from its partners (a mutual defence treaty with Australia in 2025, access for US forces since 2023) while its economy stays in foreign hands: LNG and nickel are run by foreign operators, and Chinese money finances the mines. The central constraint is Bougainville: its independence can only be decided by a national parliament that has not yet voted, so the state's future shape is settled in Port Moresby's own politics first. This is a first pass. Tribal violence, the state's own capacity, the Solomon Islands, Fiji, the Philippines, New Zealand and the Ukraine and Gaza positions are not yet sourced.

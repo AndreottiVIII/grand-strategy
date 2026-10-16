@@ -8,7 +8,83 @@ coords:
 - -18.13
 seat: Suva
 regions:
-- world
-card: stub
+- southeast-asia-oceania
+card: full
 tier: minor
+last_verified: '2026-10-12'
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Make the Pacific a zone of peace and keep great-power rivalry out of the Blue Pacific: the Ocean of Peace declaration, tabled by Rabuka in August 2023 and endorsed by the Pacific Islands Forum leaders in Honiara in September 2025."
+      confidence: C
+      sources:
+        - {url: "https://matangitonga.to/2025/09/15/pacific-islands-forum-leaders-declare-ocean-peace", title: "Pacific Islands Forum Leaders declare Ocean of Peace", publisher: "Matangi Tonga", date: 2025-09-15, tier: 3}
+        - {url: "https://islandsbusiness.com/?p=41837", title: "Pacific declares itself an 'Ocean of Peace' in historic regional pact", publisher: "Islands Business", date: 2025-09, tier: 3}
+    - rank: 2
+      text: "Rebuild a tourism-and-sugar economy under a US tariff that was cut from 32% to 15% in 2025: tourism is recovering (823,409 visitor arrivals in 2025 to October) while sugar output keeps falling."
+      confidence: C
+      sources:
+        - {url: "https://www.fijitimes.com.fj/fiji-welcomes-823409-visitors-so-far-in-2025-as-tourism-holds-steady-rbf/", title: "Fiji welcomes 823,409 visitors so far in 2025 as tourism holds steady - RBF", publisher: "Fiji Times (citing Reserve Bank of Fiji)", date: 2025-11, tier: 3}
+        - {url: "https://fijivillage.fulcrum.com.fj/Visitor-arrivals-on-track-for-record-year-while-sugar-output-drops-x4r58f", title: "Visitor arrivals on track for record year while sugar output drops", publisher: "Fiji Village", date: 2025-11, tier: 3}
+        - {url: "https://pina.com.fj/2025/08/04/fiji-secures-15-percent-reduction-in-u-s-tariffs/", title: "Fiji secures 15 percent reduction in U.S. tariffs", publisher: "PINA", date: 2025-08-04, tier: 3}
+    - rank: 3
+      text: "Secure its maritime zone and borders through paid partners - Australia first (the Vuvale Partnership, Australian Federal Police inside the Fiji police, Guardian-class patrol boats), then New Zealand, Japan and India - without a treaty of alliance with any of them."
+      confidence: B
+      sources:
+        - {url: "https://www.minister.defence.gov.au/statements/2025-10-03/joint-statement-fiji-australia-defence-ministers-meeting", title: "Joint Statement: Fiji-Australia Defence Ministers' Meeting", publisher: "Australian Department of Defence (ministers)", date: 2025-10-03, tier: 1}
+        - {url: "https://ministers.dfat.gov.au/minister/pat-conroy/media-release/australia-and-fiji-elevate-vuvale-partnership", title: "Australia and Fiji to elevate Vuvale Partnership", publisher: "DFAT (Minister for Pacific Island Affairs)", date: 2025-07, tier: 1}
+        - {url: "https://www.foreignaffairs.gov.fj/fiji-and-new-zealand-prime-ministers-reaffirm-strong-bilateral-relationship/", title: "Fiji and New Zealand prime ministers reaffirm strong bilateral relationship", publisher: "Fiji Ministry of Foreign Affairs", date: 2025-09, tier: 1}
+
+  means:
+    - domain: diplomatic
+      text: "Pacific leadership by office: Fiji took the rotating chair of the Melanesian Spearhead Group in June 2025 for a two-year term and hosted the 23rd MSG Leaders' Summit; it carried the Ocean of Peace through the Forum; its embassy in Jerusalem opened on 17 September 2025, the first from a Pacific island state."
+      confidence: B
+      sources:
+        - {url: "https://www.foreignaffairs.gov.fj/fiji-takes-chairmanship-of-the-melanesian-spearhead-group-msg/", title: "Fiji takes chairmanship of the Melanesian Spearhead Group (MSG)", publisher: "Fiji Ministry of Foreign Affairs", date: 2025-06, tier: 1}
+        - {url: "https://www.fijitimes.com.fj/fiji-opens-embassy-in-jerusalem-strengthens-ties-with-israel/", title: "Fiji opens embassy in Jerusalem, strengthens ties with Israel", publisher: "Fiji Times", date: 2025-09-17, tier: 3}
+    - domain: military
+      text: "A small professional army sold abroad as a service: the Republic of Fiji Military Forces rotate into the UN Disengagement Observer Force (113 troops flown by the RAAF to Darwin in July 2025), a company spent five months in Australia for Talisman Sabre 2025 and is to be attached to the Australian Army's 7th Brigade in 2026, and Fijian cadets attend Japan's National Defense Academy."
+      confidence: B
+      sources:
+        - {url: "https://www.defence.gov.au/news-events/news/2025-07-25/air-force-aids-fiji-un-israel-mission", title: "Air Force aids Fiji UN Israel mission", publisher: "Australian Department of Defence", date: 2025-07-25, tier: 1}
+        - {url: "https://www.minister.defence.gov.au/statements/2025-10-03/joint-statement-fiji-australia-defence-ministers-meeting", title: "Joint Statement: Fiji-Australia Defence Ministers' Meeting", publisher: "Australian Department of Defence (ministers)", date: 2025-10-03, tier: 1}
+        - {url: "https://www.mod.go.jp/en/article/2025/11/31465abc58930e26f5e21b5f85515205cdfca6d2.html", title: "Courtesy Call on Prime Minister of Fiji", publisher: "Japan Ministry of Defense", date: 2025-11-12, tier: 1}
+    - domain: economic
+      text: "Labour export to the British Army: Fijians have enlisted since the November 1961 recruiting drive (200 men and 12 women that month). Later headcounts, from about 1,350 to over 3,400 serving, are contested and undated, so none is used here."
+      confidence: C
+      sources:
+        - {url: "https://insidestory.org.au/?p=54424", title: "212 soldiers for the Queen: Fijians in the British Army 1961-1997", publisher: "Inside Story", date: 1961-11, tier: 3}
+
+  constraints:
+    - text: "Sea level and cyclones bound every plan, and the climate money that would pay for adaptation is shrinking: in February 2025 Rabuka asked Washington to rejoin the Paris Agreement and to reconsider a freeze that named a US$1.5m clean-energy programme for women, run by the Fiji office of the Pacific Community."
+      confidence: C
+      sources:
+        - {url: "https://nit.com.au/08-02-2025/16140/fiji-pm-rabuka-concerned-by-us-climate-aid-moves", title: "Fiji PM Rabuka concerned by US climate, aid moves", publisher: "NIT", date: 2025-02-08, tier: 3}
+        - {url: "https://islandsbusiness.com/?p=38205", title: "Fiji leader to press Pacific Islands concerns in Washington after US aid frozen", publisher: "Islands Business", date: 2025-02, tier: 3}
+    - text: "The economy is narrow: sugar contributed about 1% of GDP in 2022 (about 4% before its decline), cane output fell 18% in the 2025 crushing season, and tourism leans on US and UK arrivals (up 11.3% and 10.6%) while Australian and New Zealand arrivals fell."
+      confidence: B
+      sources:
+        - {url: "https://www.finance.gov.fj/fact-sheet-sugar", title: "Fact sheet: sugar (draft)", publisher: "Fiji Ministry of Finance", date: 2022, tier: 1}
+        - {url: "https://fijivillage.fulcrum.com.fj/Visitor-arrivals-on-track-for-record-year-while-sugar-output-drops-x4r58f", title: "Visitor arrivals on track for record year while sugar output drops", publisher: "Fiji Village", date: 2025-11, tier: 3}
+    - text: "A three-party coalition (SODELPA, People's Alliance, NFP) faces a general election due between 24 December 2026 and early February 2027, on the Prime Minister's own timetable; no 2026 poll was found, and the last polls cited are from 2018 and 2021."
+      confidence: B
+      sources:
+        - {url: "https://pina.com.fj/2026/06/26/fiji-pm-says-next-election-due-between-24-december-and-early-february-2027/", title: "Fiji PM says next election due between 24 December and early February 2027", publisher: "PINA", date: 2026-06-26, tier: 3}
+        - {url: "https://maitvfiji.com/fiji-pm-says-next-general-election-likely-between-december-2026-and-february-2027/", title: "Fiji PM says next general election likely between December 2026 and February 2027", publisher: "MaiTV Fiji", date: 2026-06, tier: 3}
+
+  paradoxes:
+    - text: "Ocean of Peace rejects militarisation and great-power rivalry, yet Fiji's security depth is becoming Australian (Vuvale treaty talks, police embedded with the AFP, an RFMF company inside an Australian Army brigade): the closer Canberra comes, the less the 'no great power' message reads as neutral to Beijing and to Pacific states that resist Australian primacy, and the declaration was criticised for sidestepping regional issues."
+      confidence: C
+      sources:
+        - {url: "https://www.minister.defence.gov.au/statements/2025-10-03/joint-statement-fiji-australia-defence-ministers-meeting", title: "Joint Statement: Fiji-Australia Defence Ministers' Meeting", publisher: "Australian Department of Defence (ministers)", date: 2025-10-03, tier: 1}
+        - {url: "https://islandsbusiness.com/?p=41837", title: "Pacific declares itself an 'Ocean of Peace' in historic regional pact", publisher: "Islands Business", date: 2025-09, tier: 3}
+
+  reading: |
+    Rabuka's Fiji takes the Pacific frame as its own instrument: it chairs the Melanesian
+    Spearhead Group, carried the Ocean of Peace through the Forum and opened an embassy in
+    Jerusalem, while selling security to Canberra and Wellington and seeking money and tariff
+    relief from Washington. The open question is whether a no-alliance posture survives a
+    Vuvale treaty, closer policing with Australia and a general election due at the turn of
+    2026-27.

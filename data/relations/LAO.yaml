@@ -1,0 +1,72 @@
+from: LAO
+relations:
+- to: VNM
+  layer: alignment
+  type: treaty
+  summary: "Special relationship with Vietnam: a 1977 treaty of friendship and cooperation (named only in the Wikipedia index, to be checked against the treaty text), party plans for 2026-2030 and no collective defence. Treaty row written once for the pair; VNM's card holds the stance and the visits, not this row."
+  since: '1977'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  sources:
+    - {url: "https://kpl.gov.la/detail.aspx?id=96794", title: "Lao, Vietnamese Party Leaders Reaffirm Strategic Partnership During State Visit", publisher: "KPL (Lao state news agency, official statement)", date: '2026-01', tier: 1}
+    - {url: "https://asianews.network/laos-vietnam-ink-cooperation-agreements-to-strengthen-special-relationship/", title: "Laos, Vietnam ink cooperation agreements to strengthen special relationship", publisher: "Asia News Network", date: '2026-02', tier: 3}
+    - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Laos", title: "Foreign relations of Laos (index only; pointer, not a source of record)", publisher: "Wikipedia", date: '2026-10', tier: 4}
+- to: VNM
+  layer: dependency
+  type: energy_export
+  summary: "Hydropower exports to Vietnam: Vietnam's revised power plan lifts imports from Laos to at least 8 GW by 2030 (from 5 GW in the 2023 plan); Lao exports in early 2026 were almost 120% above the same period of 2025 (1.33 billion kWh). Planning target, not a contract. Mirrors the VNM card's row."
+  since: '2025'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  value: 8
+  unit: gw_import_target_by_2030
+  sources:
+    - {url: "https://news.tuoitre.vn/power-imports-from-laos-surge-as-renewable-projects-come-online-103260421152542366.htm", title: "Power imports from Laos surge as renewable projects come online", publisher: "Tuoi Tre News", date: '2026-04-21', tier: 3}
+    - {url: "https://asianews.network/laos-vietnam-ink-cooperation-agreements-to-strengthen-special-relationship/", title: "Laos, Vietnam ink cooperation agreements to strengthen special relationship", publisher: "Asia News Network", date: '2026-02', tier: 3}
+- to: VNM
+  layer: action
+  type: visit
+  summary: "President Thongloun Sisoulith's state visit to Hanoi on 26-27 Jan 2026: the party leaders reaffirmed the strategic partnership and agreed party cooperation plans for 2026-2030. The mirror of To Lam's visit to Vientiane on 5 Feb 2026, held in the VNM card."
+  since: '2026-01-26'
+  until: '2026-01-27'
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+    - {url: "https://kpl.gov.la/detail.aspx?id=96794", title: "Lao, Vietnamese Party Leaders Reaffirm Strategic Partnership During State Visit", publisher: "KPL (Lao state news agency, official statement)", date: '2026-01', tier: 1}
+    - {url: "https://asianews.network/laos-vietnam-ink-cooperation-agreements-to-strengthen-special-relationship/", title: "Laos, Vietnam ink cooperation agreements to strengthen special relationship", publisher: "Asia News Network", date: '2026-02', tier: 3}
+- to: CHN
+  layer: dependency
+  type: investment
+  summary: "Grid: 90% of EDL-T, the high-voltage transmission company (lines above 230 kV), sold to China Southern Power Grid in 2020 for USD 600m, with a 25-year management mandate from March 2021. Reported as majority control; the share is reported in press, not confirmed in an official filing."
+  since: '2020'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  value: 0.9
+  unit: share_of_EDL_T_held_by_CSG
+  sources:
+    - {url: "https://amp.scmp.com/news/asia/southeast-asia/article/3100383/chinese-firm-take-majority-control-laos-electric-grid-amid", title: "Chinese firm 'to take majority control' of Laos' electric grid amid belt and road-linked debt default fears", publisher: "South China Morning Post", date: '2020', tier: 3}
+- to: PRK
+  layer: action
+  type: visit
+  summary: "President Thongloun Sisoulith's state visit to Pyongyang on 7-8 Oct 2025 for the party's 80th anniversary and the 60th of the 1965 Kaysone-Kim Il Sung summit; the first trip since 2011. Mirrors the PRK card's row."
+  since: '2025-10-07'
+  until: '2025-10-08'
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+    - {url: "https://kpl.gov.la/En/detail.aspx?id=94960", title: "President Thongloun Sisoulith leads high-level delegation to DPRK to strengthen bilateral ties", publisher: "KPL (Lao state news agency, official statement)", date: '2025-10', tier: 1}
+    - {url: "https://www.koreatimes.co.kr/amp/foreignaffairs/northkorea/20251008/n-koreas-kim-holds-talks-with-lao-president-in-pyongyang-kcna", title: "N. Korea's Kim holds talks with Lao president in Pyongyang: KCNA", publisher: "The Korea Times", date: '2025-10-08', tier: 3}
+- to: USA
+  layer: action
+  type: visit
+  summary: "Prime Minister Sonexay Siphandone's working visit to Washington in late September 2025: talks with USTR Jamieson Greer on tariff concessions for Lao goods, which the US had set at 40%."
+  since: '2025-09'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  sources:
+    - {url: "https://www.tourismlaos.org/2025/10/17/lao-prime-minister-visits-us-to-strengthen-economic-ties-seek-tariff-reductions/", title: "Lao Prime Minister visits US to strengthen economic ties, seek tariff reductions", publisher: "Tourism Laos (reporting on the Lao government)", date: '2025-10-17', tier: 3}
+    - {url: "https://www.business-humanrights.org/zh-hans/%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF/laos-at-least-20000-garment-workers-expected-to-be-impacted-by-40-us-tariffs/", title: "Laos: at least 20,000 garment workers expected to be impacted by 40% US tariffs", publisher: "Business and Human Rights Resource Centre", date: '2025', tier: 3}
