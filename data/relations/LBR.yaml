@@ -14,6 +14,18 @@ relations:
       - {url: "https://allafrica.com/stories/202506040040.html", title: "Liberia Returns to UN Security Council After 62 Years With Overwhelming Victory", publisher: "allAfrica", date: "2025-06-04", tier: 3}
       - {url: "https://allafrica.com/stories/202606110321.html", title: "Liberia to Preside Over UNSC in December", publisher: "allAfrica", date: "2026-06-11", tier: 3}
 
+  # ---------- alignment ----------
+  - to: SLE
+    layer: alignment
+    type: treaty
+    summary: "A non-aggression pact with Sierra Leone, signed in 2007 (one treaty row, mirrored from the Sierra Leone card with the same source). A non-aggression pact is not a defence alliance, so it is recorded as a treaty, not as a security alignment. The Mano River Union membership is left to the dataset."
+    since: '2007'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://2009-2017.state.gov/r/pa/ei/bgn/6618.htm", title: "Foreign relations of Liberia (US State Department record, non-aggression pact 2007)", publisher: "US Department of State (archived)", date: "2007", tier: 1}
+
   # ---------- action ----------
   - to: USA
     layer: action
