@@ -7,8 +7,66 @@ coords:
 - -17.43
 - 14.67
 seat: Dakar
-regions:
-- world
-card: stub
+regions: [west-africa]
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Restore public finances after the hidden-debt revelation: win IMF Board approval for a new programme (a staff-level agreement of about USD 2.2bn was reported on 1 September 2026, with Board approval still pending in the sources found) and manage the debt by reprofiling rather than formal restructuring, in the words of Prime Minister Lo."
+      confidence: C
+      sources:
+        - {url: "https://www.africanews.com/2026/09/01/senegal-and-imf-agree-new-22-billion-loan-programme/", title: "Senegal and IMF agree new $2.2 billion loan programme", publisher: "Africanews", date: 2026-09-01, tier: 3}
+        - {url: "https://polity.org.za/article/senegal-will-reprofile-debt-instead-of-restructuring-prime-minister-says-2026-09-08", title: "Senegal will reprofile debt instead of restructuring, prime minister says", publisher: "Polity", date: 2026-09-08, tier: 3}
+    - rank: 2
+      text: "Turn the oil and gas start-ups into the new economy and the revenue base for the debt: Sangomar oil (operated by Woodside, 82%; 17.9 million barrels in the first half of 2026, per the energy ministry) and the Grand Tortue Ahmeyim (GTA) LNG field shared with Mauritania, producing since early 2025. The link to debt service is our inference."
+      confidence: C
+      sources:
+        - {url: "https://allafrica.com/stories/202607080022.html", title: "Senegal Oil Output Reaches 17.9m Barrels in First Half", publisher: "allAfrica", date: 2026-07-08, tier: 3}
+        - {url: "https://www.connaissancedesenergies.org/afp/debut-de-la-production-de-gnl-au-large-du-senegal-et-de-la-mauritanie-250211", title: "First LNG output off Senegal and Mauritania", title_original: "Début de la production de GNL au large du Sénégal et de la Mauritanie", publisher: "Connaissance des énergies (AFP)", date: 2025-02-11, tier: 3, lang: fr}
+    - rank: 3
+      text: "Reset the French partnership after the end of all foreign military presence: President Faye announced in December 2024 that foreign military presence would end in 2025, and the French base at Camp Geille and the Dakar airfield were handed over on 17 July 2025."
+      confidence: C
+      sources:
+        - {url: "https://www.rfi.fr/fr/afrique/20241231-s%C3%A9n%C3%A9gal-le-pr%C3%A9sident-bassirou-faye-annonce-la-fin-de-toutes-pr%C3%A9sences-militaires-%C3%A9trang%C3%A8res-d%C3%A8s-2025", title: "President Bassirou Faye announces end of all foreign military presence from 2025", title_original: "Le président Bassirou Faye annonce la fin de toutes présences militaires étrangères dès 2025", publisher: "RFI", date: 2024-12-31, tier: 3, lang: fr}
+        - {url: "https://www.khaleejtimes.com/world/africa/french-army-leaves-senegal", title: "French army leaves Senegal, ending military presence in west Africa", publisher: "Khaleej Times (AFP/AP)", date: 2025-07-17, tier: 3}
+
+  means:
+    - domain: economic
+      text: "Oil and gas: Sangomar has a capacity of 100,000 barrels a day (allAfrica, February 2026), and Kosmos reported 12% production growth in Q2 2026 with GTA among the drivers; GTA gross output was about 2.65 million tonnes a year in that quarter (Kosmos figures as reported, not checked against the primary release). The sources found give no revenue split for Senegal."
+      confidence: C
+      sources:
+        - {url: "https://fr.allafrica.com/stories/202602270146.html", title: "Senegal: Oil production - Sangomar reaches 100,000 barrels per day", title_original: "Sénégal: Production pétrolière - Sangomar atteint 100 000 barils par jour", publisher: "allAfrica", date: 2026-02-27, tier: 3, lang: fr}
+        - {url: "https://worldoil.com/news/2026/8/3/kosmos-reports-12-production-growth-in-q2-as-gta-jubilee-drive-results/", title: "Kosmos reports 12% production growth in Q2 as GTA, Jubilee drive results", publisher: "World Oil", date: 2026-08-03, tier: 3}
+    - domain: military
+      text: "Military: Senegalese troops entered The Gambia in January 2017 to back the elected leader Adama Barrow. Since the last French base closed in July 2025, the army is the state's only military instrument on its own soil (our reading)."
+      confidence: C
+      sources:
+        - {url: "https://www.bbc.com/news/world-africa-38682184", title: "Gambia crisis: Senegal sends in troops to back elected leader", publisher: "BBC", date: 2017-01, tier: 3}
+        - {url: "https://www.khaleejtimes.com/world/africa/french-army-leaves-senegal", title: "French army leaves Senegal, ending military presence in west Africa", publisher: "Khaleej Times (AFP/AP)", date: 2025-07-17, tier: 3}
+
+  constraints:
+    - text: "Debt is the binding constraint. Hidden debt surfaced in 2024-25 and ran to billions of dollars (TimesLive, July 2025). The IMF had outstanding purchases and loans of SDR 829.65 million on 31 March 2026 (IMF). The new programme is agreed at staff level but, in the sources found, not yet approved, and the Prime Minister says arrears must be cleared before the finances can stabilise."
+      confidence: B
+      sources:
+        - {url: "https://www.imf.org/en/countries/sen", title: "Senegal: IMF country page (outstanding purchases and loans, 31 March 2026)", publisher: "International Monetary Fund", date: 2026-08-18, tier: 1}
+        - {url: "https://www.timeslive.co.za/news/africa/2025-07-25-senegals-billions-in-hidden-debt--and-why-its-a-headache-for-the-imf/", title: "Senegal's billions in hidden debt, and why it is an IMF headache", publisher: "TimesLive", date: 2025-07-25, tier: 3}
+        - {url: "https://sowetan.co.za/news/africa/2026-09-09-senegal-must-clear-35bn-arrears-to-stabilise-finances-says-pm-lo", title: "Senegal must clear arrears to stabilise finances, says PM Lo", publisher: "Sowetan", date: 2026-09-09, tier: 3}
+    - text: "The Sahel border is not Senegal's to secure alone. JNIM's fuel blockade of Mali, from September 2025, targeted tankers on the Senegal-Mali route, and trucks were burned on it. Senegal can guard its own trucks but cannot end the blockade (our reading)."
+      confidence: C
+      sources:
+        - {url: "https://www.timeslive.co.za/news/africa/2025-09-09-mali-army-carries-out-airstrikes-after-militants-announce-blockade-on-fuel-imports/", title: "Mali army carries out airstrikes after militants announce blockade on fuel imports", publisher: "TimesLive", date: 2025-09-09, tier: 3}
+        - {url: "https://www.africanews.com/amp/2025/10/08/desperate-search-for-fuel-in-malis-capital-as-al-qaida-linked-group-enforces-blockade/", title: "Desperate search for fuel in Mali's capital as al-Qaida-linked group enforces blockade", publisher: "Africanews", date: 2025-10-08, tier: 3}
+        - {url: "https://rainbowradioonline.com/2025/09/17/trucks-set-ablaze-as-militants-block-key-senegal-mali-trade-route", title: "Trucks set ablaze as militants block key Senegal-Mali trade route", publisher: "Rainbow Radio", date: 2025-09-17, tier: 4}
+
+  paradoxes:
+    - text: "Ending all foreign military presence was meant to show sovereignty (announced December 2024, completed July 2025), but the Dakar-Bamako road that Senegal still depends on is where trucks were burned in 2025. The exit from France's security role did not end Senegal's exposure to the Sahel war."
+      confidence: C
+      sources:
+        - {url: "https://www.rfi.fr/fr/afrique/20241231-s%C3%A9n%C3%A9gal-le-pr%C3%A9sident-bassirou-faye-annonce-la-fin-de-toutes-pr%C3%A9sences-militaires-%C3%A9trang%C3%A8res-d%C3%A8s-2025", title: "President Bassirou Faye announces end of all foreign military presence from 2025", title_original: "Le président Bassirou Faye annonce la fin de toutes présences militaires étrangères dès 2025", publisher: "RFI", date: 2024-12-31, tier: 3, lang: fr}
+        - {url: "https://rainbowradioonline.com/2025/09/17/trucks-set-ablaze-as-militants-block-key-senegal-mali-trade-route", title: "Trucks set ablaze as militants block key Senegal-Mali trade route", publisher: "Rainbow Radio", date: 2025-09-17, tier: 4}
+
+  reading: |
+    Senegal's grand strategy is to turn a debt crisis and a new oil and gas economy into sovereignty: it ended all foreign military presence, keeps the Dakar corridor to Mali open, and is rebuilding its IMF deal while reprofiling rather than formally restructuring. The binding constraint is the debt that the hidden-debt revelation exposed, which turns each lever (IMF approval, arrears, the new oil and gas revenue) into a condition rather than a choice. Not verified in this pass: the 2026 Faye-Sonko rift, the US aid cut and MCC, China's 2024 upgrade, the EU fisheries agreement, Russia, Turkey and the Gulf, the 2025 Casamance peace and the Thiaroye memory.

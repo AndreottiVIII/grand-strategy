@@ -1,0 +1,27 @@
+from: CMR
+relations:
+  # ---------- alignment ----------
+  - to: NGA
+    layer: alignment
+    type: treaty
+    summary: "The Greentree Agreement (2006) resolved the Bakassi Peninsula dispute with Nigeria: Nigerian troops fully withdrew, and the peninsula was transferred back to Cameroon's administration in August 2013."
+    since: '2006'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.loc.gov/lawweb/servlet/lloc_news?disp3_l205403677_text", title: "Cameroon; Nigeria: Bakassi Peninsula Transition Completed", publisher: "Library of Congress", date: "2013-08-13", tier: 1}
+
+  # ---------- dependency ----------
+  - to: CHN
+    layer: dependency
+    type: debt
+    summary: "China and Cameroon signed economic agreements in January 2007 giving more than USD 54 million in loans (VOA). No current figure was found; the value is the most recent one in the sources read and is from 2007, not current exposure."
+    since: '2007-01-31'
+    until: null
+    value: 54
+    unit: usd_million_loans_signed_2007
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "http://voanews.com/english/archive/2007-01/2007-01-31-voa53.cfm", title: "China, Cameroon Sign Economic Agreements", publisher: "Voice of America", date: "2007-01-31", tier: 3}

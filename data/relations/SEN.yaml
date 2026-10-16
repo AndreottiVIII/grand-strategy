@@ -1,0 +1,92 @@
+from: SEN
+relations:
+  # ---------- objective ----------
+  - to: FRA
+    layer: objective
+    type: influence_goal
+    summary: "Reset the French partnership on Senegalese terms after the end of all foreign military presence, announced by President Faye in December 2024 for 2025."
+    since: '2024-12-31'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.rfi.fr/fr/afrique/20241231-s%C3%A9n%C3%A9gal-le-pr%C3%A9sident-bassirou-faye-annonce-la-fin-de-toutes-pr%C3%A9sences-militaires-%C3%A9trang%C3%A8res-d%C3%A8s-2025", title: "President Bassirou Faye announces end of all foreign military presence from 2025", title_original: "Le président Bassirou Faye annonce la fin de toutes présences militaires étrangères dès 2025", publisher: "RFI", date: "2024-12-31", tier: 3, lang: fr}
+
+  - to: MLI
+    layer: objective
+    type: influence_goal
+    summary: "Keep the Dakar-Bamako corridor open as Senegal's trade route to Mali while JNIM attacks fuel tankers on it (from September 2025). The aim is our inference from the trade flows (C)."
+    since: '2025-09'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.timeslive.co.za/news/africa/2025-09-09-mali-army-carries-out-airstrikes-after-militants-announce-blockade-on-fuel-imports/", title: "Mali army carries out airstrikes after militants announce blockade on fuel imports", publisher: "TimesLive", date: "2025-09-09", tier: 3}
+      - {url: "https://rainbowradioonline.com/2025/09/17/trucks-set-ablaze-as-militants-block-key-senegal-mali-trade-route", title: "Trucks set ablaze as militants block key Senegal-Mali trade route", publisher: "Rainbow Radio", date: "2025-09-17", tier: 4}
+
+  # ---------- dependency ----------
+  - to: FRA
+    layer: dependency
+    type: military_presence
+    summary: "Mirror of the FRA card's row: Camp Geille and the Dakar airfield handed over on 17 July 2025, ending the last permanent French military presence in West Africa (about 350 soldiers). The French presence ran from 1960 to that date."
+    since: '1960'
+    until: '2025-07-17'
+    value: 350
+    unit: french_troops_withdrawn_2025
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.khaleejtimes.com/world/africa/french-army-leaves-senegal", title: "French army leaves Senegal, ending military presence in west Africa", publisher: "Khaleej Times (AFP/AP)", date: "2025-07-17", tier: 3}
+
+  - to: MRT
+    layer: dependency
+    type: investment
+    summary: "Senegal's joint stake in the Grand Tortue Ahmeyim LNG field, shared with Mauritania. First LNG was reported in February 2025 (AFP). The value is the field's gross output in Q2 2026, about 2.65 million tonnes a year (Kosmos figures as reported), not Senegal's share."
+    since: '2025-02'
+    until: null
+    value: 2.65
+    unit: mtpa_gta_gross_q2_2026
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.connaissancedesenergies.org/afp/debut-de-la-production-de-gnl-au-large-du-senegal-et-de-la-mauritanie-250211", title: "First LNG output off Senegal and Mauritania", title_original: "Début de la production de GNL au large du Sénégal et de la Mauritanie", publisher: "Connaissance des énergies (AFP)", date: "2025-02-11", tier: 3, lang: fr}
+      - {url: "https://worldoil.com/news/2026/8/3/kosmos-reports-12-production-growth-in-q2-as-gta-jubilee-drive-results/", title: "Kosmos reports 12% production growth in Q2 as GTA, Jubilee drive results", publisher: "World Oil", date: "2026-08-03", tier: 3}
+
+  - to: org-imf
+    layer: dependency
+    type: debt
+    summary: "IMF purchases and loans outstanding: SDR 829.65 million on 31 March 2026, after the hidden-debt revelation. The new arrangement reported in September 2026 is not yet approved in the sources found."
+    since: '2026-03-31'
+    until: null
+    value: 829.65
+    unit: sdr_million_outstanding_2026_03_31
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.imf.org/en/countries/sen", title: "Senegal: IMF country page (outstanding purchases and loans, 31 March 2026)", publisher: "International Monetary Fund", date: "2026-08-18", tier: 1}
+
+  # ---------- action ----------
+  - to: org-imf
+    layer: action
+    type: agreement
+    summary: "Staff-level agreement with the IMF on a new programme of about USD 2.2bn (an Extended Credit Facility proposed at 1.54 billion SDR for 2026-2029), reported on 1 September 2026. Board approval was pending in the sources found."
+    since: '2026-09-01'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.africanews.com/2026/09/01/senegal-and-imf-agree-new-22-billion-loan-programme/", title: "Senegal and IMF agree new $2.2 billion loan programme", publisher: "Africanews", date: "2026-09-01", tier: 3}
+
+  - to: MAR
+    layer: action
+    type: incident
+    summary: "Mirror of the MAR card's row: Senegal won the AFCON final in Morocco on 18 January 2026 amid disorder. CAF fined and banned players from both sides and, on 17 March, awarded Morocco the title. 19 fans (18 Senegalese) were jailed in February; on 23 May the king pardoned 15 of them."
+    since: '2026-01-18'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.dw.com/en/senegal-and-morocco-fined-and-banned-after-afcon-final-chaos/a-75708036", title: "Senegal and Morocco fined and banned after AFCON final chaos", publisher: "Deutsche Welle", date: "2026-01-28", tier: 3}
+      - {url: "https://www.africanews.com/2026/02/20/19-soccer-fans-jailed-for-afcon-final-chaos-in-morocco/", title: "19 soccer fans jailed for AFCON final chaos in Morocco", publisher: "Africanews", date: "2026-02-20", tier: 3}
+      - {url: "https://www.bbc.com/sport/football/articles/ce949glzzglo", title: "Morocco awarded Afcon title after CAF overturns result", publisher: "BBC Sport", date: "2026-03-17", tier: 3}
+      - {url: "https://www.aljazeera.com/sports/2026/5/23/morocco-king-pardons-jailed-senegal-football-fans-for-humanitarian-reasons", title: "Morocco king pardons jailed Senegal football fans from AFCON final", publisher: "Al Jazeera", date: "2026-05-23", tier: 3}

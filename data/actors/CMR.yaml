@@ -8,7 +8,49 @@ coords:
 - 3.86
 seat: Yaoundé
 regions:
-- world
-card: stub
+- west-africa
+card: full
 tier: minor
-dataset: wikidata
+last_verified: '2026-10-16'
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the Biya system through a succession that is not settled. Biya won an eighth term in the October 2025 election, which EWN calls controversial, and the challenger Issa Tchiroma denounced a deadly assault in Garoua after the vote. In May 2026 online claims that he had named his son vice president were reported as false, and no successor was confirmed in the sources read."
+      confidence: C
+      sources:
+        - {url: "https://www.ewn.co.za/2025/10/27/cameroons-veteran-leader-paul-biya-wins-controversial-eighth-term", title: "Cameroon's veteran leader Paul Biya wins controversial eighth term", publisher: "EWN", date: "2025-10-27", tier: 3}
+        - {url: "https://fr.allafrica.com/stories/202510270602.html", title: "Cameroon: post-election violence in Garoua, Issa Tchiroma denounces a deadly assault", title_original: "Cameroun: Violences post-électorales à Garoua, Issa Tchiroma dénonce un assaut meurtrier", lang: fr, publisher: "allAfrica", date: "2025-10-27", tier: 3}
+        - {url: "https://allafrica.com/stories/202605080444.html", title: "Cameroon: Online Posts Falsely Claim Cameroon Leader Paul Biya Appointed His Son As Vice President", publisher: "allAfrica", date: "2026-05-08", tier: 3}
+    - rank: 2
+      text: "Hold the Far North against Boko Haram and its ISWAP faction. The Institute for Security Studies (ISS) headline of July 2021 says ISWAP takes aim at the state in Cameroon."
+      confidence: C
+      sources:
+        - {url: "https://issafrica.org/iss-today/iswap-takes-aim-at-the-state-in-cameroon", title: "ISWAP takes aim at the state in Cameroon", publisher: "Institute for Security Studies (ISS)", date: "2021-07-22", tier: 2}
+
+  means:
+    - domain: diplomatic
+      text: "The Bakassi settlement with Nigeria. The Greentree Agreement (2006) resolved the Bakassi Peninsula dispute: Nigerian troops fully withdrew, and the peninsula was transferred back to Cameroon's administration in August 2013."
+      confidence: B
+      sources:
+        - {url: "https://www.loc.gov/lawweb/servlet/lloc_news?disp3_l205403677_text", title: "Cameroon; Nigeria: Bakassi Peninsula Transition Completed", publisher: "Library of Congress", date: "2013-08-13", tier: 1}
+
+  constraints:
+    - text: "The US trade window is short. The United States extended AGOA, its trade framework for African exporters, only to December 2026 (February 2026). The source does not say how far Cameroon depends on it, and this card does not claim a figure."
+      confidence: C
+      sources:
+        - {url: "https://eagle.co.ug/2026/02/04/us-extends-agoa-to-december-2026-eases-uncertainty-in-africa-us-trade/", title: "US extends AGOA to December 2026, eases uncertainty in Africa-US trade", publisher: "Eagle Online", date: "2026-02-04", tier: 3}
+    - text: "The succession has no confirmed mechanism. Online claims in May 2026 that Biya had named his son vice president were reported as false, so the next transition is open."
+      confidence: C
+      sources:
+        - {url: "https://allafrica.com/stories/202605080444.html", title: "Cameroon: Online Posts Falsely Claim Cameroon Leader Paul Biya Appointed His Son As Vice President", publisher: "allAfrica", date: "2026-05-08", tier: 3}
+
+  paradoxes:
+    - text: "The repression that came with the eighth term drew warnings from the UN and France against repression (allAfrica, 31 October 2025), while the US trade framework AGOA is extended only to December 2026. Winning at home brings outside pressure the regime cannot control."
+      confidence: C
+      sources:
+        - {url: "https://allafrica.com/stories/202510310097.html", title: "Cameroon Opposition Leader Flees As UN, France Warn Against Repression", publisher: "allAfrica", date: "2025-10-31", tier: 3}
+        - {url: "https://www.bloomberg.com/news/articles/2025-10-29/cameroon-blames-opposition-leader-for-post-election-violence", title: "Cameroon blames opposition leader for post-election violence", publisher: "Bloomberg", date: "2025-10-29", tier: 3}
+
+  reading: |
+    On the sources read, Cameroon's grand strategy is the survival of the Biya system through a succession with no confirmed arrangement: an eighth term won in an October 2025 election that EWN calls controversial, after which the main opposition leader fled the country (allAfrica). Its external supports are narrower than the regime needs: a US trade framework extended only to December 2026, a Nigeria border settled by treaty and handed over in 2013, and a Far North front that the Institute for Security Studies has read as aimed at the state since 2021. France, Russia, China beyond the 2007 loans, the EU, Chad, the Central African Republic, the Anglophone war, CEMAC and the CFA franc, and the oil, cocoa and timber economy are not sourced in this card and are the first gaps to fill.

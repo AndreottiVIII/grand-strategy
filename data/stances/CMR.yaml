@@ -1,0 +1,47 @@
+actor: CMR
+stances:
+  - toward: NGA
+    grade: partner
+    trend: stable
+    bond: none
+    since: '2006'
+    last_verified: '2026-10-16'
+    confidence: B
+    note: "Settled by treaty, not allied: the Greentree Agreement (2006) resolved the Bakassi dispute, and the transfer was completed in August 2013 (Library of Congress). Partner, not ally: no defence clause was found. Bond none: the source records no kinship or open grievance. Not sourced in this card: joint action against Boko Haram (MNJTF) and the Anglophone cross-border question; neither is claimed here."
+    sources:
+      - {url: "https://www.loc.gov/lawweb/servlet/lloc_news?disp3_l205403677_text", title: "Cameroon; Nigeria: Bakassi Peninsula Transition Completed", publisher: "Library of Congress", date: "2013-08-13", tier: 1}
+
+  - toward: USA
+    grade: partner
+    trend: stable
+    bond: none
+    since: '1960-01-01'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Diplomatic relations since 1 January 1960 (US Office of the Historian). The partner reading rests on a tier-3 trade item: the US extended AGOA only to December 2026 (February 2026). The 2025 aid cut and visa measures are not verified here: no source for them was read. Trend stable: no source read gives a direction. Bond none: no kinship or grievance source."
+    sources:
+      - {url: "https://history.state.gov/countries/cameroon", title: "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Cameroon", publisher: "Office of the Historian, US Department of State", date: "1960-01-01", tier: 1}
+      - {url: "https://eagle.co.ug/2026/02/04/us-extends-agoa-to-december-2026-eases-uncertainty-in-africa-us-trade/", title: "US extends AGOA to December 2026, eases uncertainty in Africa-US trade", publisher: "Eagle Online", date: "2026-02-04", tier: 3}
+
+  - toward: CHN
+    grade: partner
+    trend: stable
+    bond: none
+    since: '1971-03-26'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Diplomatic relations since 26 March 1971 (China.org.cn, cited by Wikipedia). The partner reading rests on a 2007 item: economic agreements signed in January 2007 gave more than USD 54 million in loans (VOA). No current Chinese debt, port or trade figure was found, so this stance is built on 2007 evidence and should be re-checked. Bond none: no affinity or kinship source was read."
+    sources:
+      - {url: "http://www.china.org.cn/english/features/focac/183577.htm", title: "General picture of bilateral relations between China and Cameroon", publisher: "China.org.cn", date: "2006-10-10", tier: 4}
+      - {url: "http://voanews.com/english/archive/2007-01/2007-01-31-voa53.cfm", title: "China, Cameroon Sign Economic Agreements", publisher: "Voice of America", date: "2007-01-31", tier: 3}
+
+  - toward: nsa-boko-haram
+    grade: adversary
+    trend: stable
+    bond: grievance
+    since: '2021-07-22'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Adversary is our reading (C), not a source's word. The ISS headline 'ISWAP takes aim at the state in Cameroon' (July 2021) makes the state the target; the article body was not read. No government statement calling the group a mortal enemy was read in this card. Bond grievance: an open wound from attacks on civilians and soldiers. Since is the date of the earliest source read, not the start of the conflict; press reports of 2026 raids were not used, since they came from aggregators (tier 4)."
+    sources:
+      - {url: "https://issafrica.org/iss-today/iswap-takes-aim-at-the-state-in-cameroon", title: "ISWAP takes aim at the state in Cameroon", publisher: "Institute for Security Studies (ISS)", date: "2021-07-22", tier: 2}

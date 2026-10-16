@@ -674,8 +674,8 @@
     list.forEach(t => {
       const col = heatColor(t.index);
       const grad = defs2.append("radialGradient").attr("id", "hz-" + t.id);
-      grad.append("stop").attr("offset", "0%").attr("stop-color", col).attr("stop-opacity", .12 + .78 * Math.pow(t.index / 100, .8));
-      grad.append("stop").attr("offset", "55%").attr("stop-color", col).attr("stop-opacity", .06 + .45 * Math.pow(t.index / 100, .8));
+      grad.append("stop").attr("offset", "0%").attr("stop-color", col).attr("stop-opacity", .22 + .7 * Math.pow(t.index / 100, .8));
+      grad.append("stop").attr("offset", "55%").attr("stop-color", col).attr("stop-opacity", .1 + .42 * Math.pow(t.index / 100, .8));
       grad.append("stop").attr("offset", "100%").attr("stop-color", col).attr("stop-opacity", 0);
       const zone = d3.geoCircle().center(t.centre || [0, 0]).radius(t.radius || 6)();
       g.append("path").attr("class", "z").attr("d", path(zone)).attr("fill", `url(#hz-${t.id})`).attr("stroke", "none").attr("data-sw", 0)
