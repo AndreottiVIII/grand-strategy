@@ -1,14 +1,553 @@
 id: MMR
 name: Myanmar
+short: Myanmar
 type: state
-iso2: mm
-wikipedia: https://en.wikipedia.org/wiki/Myanmar
 coords:
 - 96.11
 - 19.75
+iso2: mm
+wikipedia: https://en.wikipedia.org/wiki/Myanmar
 seat: Naypyidaw
 regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+- southeast-asia-oceania
+card: full
+tier: protagonist
+last_verified: '2026-10-12'
+recognition:
+  note: 'The actor of this card is the State Administration Council that took power on 1 Feb 2021, now fronted by President Min Aung Hlaing (sworn in 10 Apr 2026) after the military-run election
+    of Dec 2025-Jan 2026. Its standing is contested: the UN Credentials Committee deferred the junta''s bid to replace Myanmar''s ambassador in Dec 2021 (2026 position of the UN seat not verified),
+    ASEAN keeps it out of summits, and an AFP-quoted analyst counts recognition from India, China, Russia and Thailand as the ones that matter. The NUG, formed in exile in 2021, claims to be the
+    legitimate government.'
+  source: https://www.nst.com.my/amp/world/region/2026/08/1505432/myanmar-ex-junta-chief-first-thailand-trip-civilian-leader
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: Keep the army in power under a constitutional, civilian-looking cover. The three-phase election (28 Dec 2025, 11 Jan and 25 Jan 2026; no vote in 67 townships) gave the military's USDP
+      231 seats in the lower house, parliament voted Min Aung Hlaing president and he was sworn in on 10 Apr 2026, having handed the army to a protege, Gen. Ye Win Oo.
+    confidence: B
+    sources:
+    - url: https://www.thejakartapost.com/world/2026/04/10/myanmar-president-says-many-challenges-ahead-seeks-to-normalise-asean-ties-.html
+      title: Myanmar president says many challenges ahead, seeks to normalise ASEAN ties
+      publisher: The Jakarta Post
+      date: '2026-04-10'
+      tier: 3
+    - url: https://english.dvb.no/military-proxy-usdp-to-form-next-government-in-myanmar/
+      title: Military proxy USDP to form next government in Myanmar
+      publisher: Democratic Voice of Burma (exile media, anti-junta angle)
+      date: '2026'
+      tier: 3
+    - url: https://en.wikipedia.org/wiki/2025%E2%80%9326_Myanmar_general_election
+      title: 2025-26 Myanmar general election
+      publisher: Wikipedia (index)
+      date: '2026-10-12'
+      tier: 4
+    - url: https://aseanmp.org/publications/post/asean-mps-condemn-myanmar-juntas-move-to-install-min-aung-hlaing-as-president
+      title: ASEAN MPs condemn Myanmar junta's move to install Min Aung Hlaing as president
+      publisher: ASEAN Parliamentarians for Human Rights (advocacy group)
+      date: '2026'
+      tier: 3
+  - rank: 2
+    text: 'Stop the loss of territory and regain the towns, bases and border trade posts that matter: the army has retaken ground around Bhamo, Lashio came back through a Chinese-brokered deal
+      in April 2025 and the northern alliance has split, but the Arakan Army holds 14 Rakhine townships and Paletwa, and the army''s stable control is put at between 72 and 220 of 330 townships.'
+    confidence: B
+    sources:
+    - url: https://www.usasean.org/article/lashio-handover-china-factor-and-impact-broader-resistance
+      title: 'Lashio Handover: The China Factor and the Impact on Broader Resistance'
+      publisher: US-ASEAN Business Council
+      date: '2025-05-02'
+      tier: 3
+    - url: https://onpagenews.elisa.supporthost.eu/news/myanmar-military-regains-ground-amid-five-year-civil-war-stalemate-19990
+      title: Myanmar military regains ground amid five-year civil war stalemate
+      publisher: Deutsche Welle (republished by onpagenews)
+      date: '2026-05-01'
+      tier: 3
+    - url: https://myanmar-now.org/en/news/myanmar-military-recaptures-crucial-bases-outside-bhamo/
+      title: Myanmar military recaptures crucial bases outside Bhamo
+      publisher: Myanmar Now (exile media, anti-junta angle)
+      date: '2025'
+      tier: 3
+    - url: https://mail.dmediag.com/news/aacvii.html
+      title: Arakan Army says it controls 14 Arakan townships and Paletwa, fighting continues in Sittwe and Kyaukphyu (DMG, Mrauk-U dateline)
+      publisher: Development Media Group (Arakan press, pro-AA angle)
+      date: '2026-04-11'
+      tier: 3
+    - url: https://en.wikipedia.org/wiki/Myanmar_civil_war_(2021%E2%80%93present)
+      title: Myanmar civil war (2021-present)
+      publisher: Wikipedia (index)
+      date: '2026-10-12'
+      tier: 4
+  - rank: 3
+    text: 'Turn the election into legitimacy abroad: a seat again at ASEAN summits (Min Aung Hlaing''s stated priority is ''normal relations'' with ASEAN), acceptance by India, Thailand, China
+      and Russia (already given) and relief from Western pressure, including the sanctions the US eased on a handful of junta allies in July 2025 after his letter to Trump.'
+    confidence: B
+    sources:
+    - url: https://www.thejakartapost.com/world/2026/04/10/myanmar-president-says-many-challenges-ahead-seeks-to-normalise-asean-ties-.html
+      title: Myanmar president says many challenges ahead, seeks to normalise ASEAN ties
+      publisher: The Jakarta Post
+      date: '2026-04-10'
+      tier: 3
+    - url: https://www.nst.com.my/amp/world/region/2026/08/1505432/myanmar-ex-junta-chief-first-thailand-trip-civilian-leader
+      title: Myanmar ex-junta chief on first Thailand trip as civilian leader
+      publisher: New Straits Times (AFP)
+      date: '2026-08-06'
+      tier: 3
+    - url: https://www.orfonline.org/expert-speak/myanmar-us-ties-under-trump-old-playbook-new-moves
+      title: 'Myanmar-US ties under Trump: Old Playbook, New Moves'
+      publisher: Observer Research Foundation (Indian view)
+      date: '2025-09-10'
+      tier: 2
+    - url: https://www.orfonline.org/research/india-s-road-through-myanmar-is-one-of-engagement
+      title: India's road through Myanmar is one of engagement
+      publisher: Observer Research Foundation (Indian view; first published in The Hindu)
+      date: '2026-06-11'
+      tier: 2
+  - rank: 4
+    text: 'Keep the patrons paying for survival: China first (arms, border trade, Kyaukphyu, pipelines, diplomatic cover; Beijing endorsed the election and Wang Yi came to Naypyidaw on 25 Apr
+      2026), Russia second (arms, a nuclear plant, a refinery), India as the counterweight (Kaladan, Sittwe, rupee-kyat settlement).'
+    confidence: B
+    sources:
+    - url: https://www.bnionline.net/en/news/china-junta-agree-push-ahead-kyaukphyu-deep-sea-port-project
+      title: China, junta agree to push ahead with Kyaukphyu Deep-Sea Port Project
+      publisher: Burma News International (DMG report; ethnic/exile press, anti-junta angle)
+      date: '2026-06-19'
+      tier: 3
+    - url: https://www.borderlens.com/2026/04/27/china-signals-strategic-backing-for-myanmars-new-regime-amid-regional-recalibration/
+      title: China signals strategic backing for Myanmar's new regime amid regional recalibration
+      publisher: BorderLens
+      date: '2026-04-27'
+      tier: 3
+    - url: https://www.thestar.com.my/aseanplus/aseanplus-news/2026/08/19/putin-praises-especially-trusting-ties-with-myanmar-leader
+      title: Putin praises 'especially trusting' ties with Myanmar leader
+      publisher: The Star (Bloomberg)
+      date: '2026-08-19'
+      tier: 3
+    - url: https://www.orfonline.org/research/india-s-road-through-myanmar-is-one-of-engagement
+      title: India's road through Myanmar is one of engagement
+      publisher: Observer Research Foundation (Indian view; first published in The Hindu)
+      date: '2026-06-11'
+      tier: 2
+  - rank: 5
+    text: 'Hold the Rakhine coast as the asset every patron wants: the Kyaukphyu deep-sea port and pipelines (China, CITIC 70%, initial phase about USD 1.3bn) and the Sittwe-Kaladan corridor (India),
+      both inside the zone where the Arakan Army is fighting for Sittwe and Kyaukphyu townships.'
+    confidence: B
+    sources:
+    - url: https://www.bnionline.net/en/news/china-junta-agree-push-ahead-kyaukphyu-deep-sea-port-project
+      title: China, junta agree to push ahead with Kyaukphyu Deep-Sea Port Project
+      publisher: Burma News International (DMG report; ethnic/exile press, anti-junta angle)
+      date: '2026-06-19'
+      tier: 3
+    - url: https://mail.dmediag.com/news/aacvii.html
+      title: Arakan Army says it controls 14 Arakan townships and Paletwa, fighting continues in Sittwe and Kyaukphyu (DMG, Mrauk-U dateline)
+      publisher: Development Media Group (Arakan press, pro-AA angle)
+      date: '2026-04-11'
+      tier: 3
+    - url: https://www.orfonline.org/research/india-s-road-through-myanmar-is-one-of-engagement
+      title: India's road through Myanmar is one of engagement
+      publisher: Observer Research Foundation (Indian view; first published in The Hindu)
+      date: '2026-06-11'
+      tier: 2
+    - url: https://www.bnionline.net/en/node/115769
+      title: Indian Ambassador Visits Sittwe Two Weeks After Myanmar Junta Leader's India Trip
+      publisher: Burma News International
+      date: 2026-06
+      tier: 3
+  - rank: 6
+    text: 'Neutralise the legal exposure of the Rohingya case: win The Gambia v. Myanmar at the ICJ (merits hearings in January 2026, where Myanmar''s agent called the allegations ''unsubstantiated''),
+      keep the ICC warrant requested for Min Aung Hlaing on 27 Nov 2024 from being issued or enforced, and tie repatriation from Bangladesh to security in Rakhine and to the rollback of international
+      cases.'
+    confidence: B
+    sources:
+    - url: https://news.un.org/en/story/2026/01/1166782
+      title: Myanmar begins defence in landmark genocide case at UN World Court
+      publisher: UN News
+      date: '2026-01-16'
+      tier: 1
+    - url: https://www.ewn.co.za/2024/11/27/icc-prosecutor-seeks-arrest-warrant-for-myanmar-junta-chief
+      title: ICC prosecutor seeks arrest warrant for Myanmar junta chief
+      publisher: Eyewitness News (South Africa)
+      date: '2024-11-27'
+      tier: 3
+    - url: https://english.dvb.no/icc-confirms-min-aung-hlaing-presidency-grants-no-immunity-from-arrest-warrant/
+      title: ICC confirms Min Aung Hlaing presidency grants no immunity from arrest warrant
+      publisher: Democratic Voice of Burma (exile media, anti-junta angle)
+      date: 2026-04
+      tier: 3
+    - url: https://asianews.network/?p=304250
+      title: Can Bangladesh PM Tarique Rahman's plan break the Rohingya repatriation deadlock?
+      publisher: Asia News Network
+      date: '2026-09-29'
+      tier: 3
+  means:
+  - domain: diplomatic
+    text: 'State visits of the new president to the four governments that deal with him: India (30 May-3 Jun 2026), China (June 2026, joint statement of 17 Jun), Thailand (6 Aug 2026, with a labour
+      MoU) and Russia (Kremlin, 18 Aug 2026), plus a push for ''normal relations'' with ASEAN while rejecting the Five-Point Consensus; the release of detained politicians and Aung San Suu Kyi''s
+      house arrest are offered as gestures.'
+    confidence: B
+    sources:
+    - url: https://www.orfonline.org/research/india-s-road-through-myanmar-is-one-of-engagement
+      title: India's road through Myanmar is one of engagement
+      publisher: Observer Research Foundation (Indian view; first published in The Hindu)
+      date: '2026-06-11'
+      tier: 2
+    - url: https://www.bnionline.net/en/news/china-junta-agree-push-ahead-kyaukphyu-deep-sea-port-project
+      title: China, junta agree to push ahead with Kyaukphyu Deep-Sea Port Project
+      publisher: Burma News International (DMG report; ethnic/exile press, anti-junta angle)
+      date: '2026-06-19'
+      tier: 3
+    - url: https://www.nst.com.my/amp/world/region/2026/08/1505432/myanmar-ex-junta-chief-first-thailand-trip-civilian-leader
+      title: Myanmar ex-junta chief on first Thailand trip as civilian leader
+      publisher: New Straits Times (AFP)
+      date: '2026-08-06'
+      tier: 3
+    - url: https://www.thestar.com.my/aseanplus/aseanplus-news/2026/08/19/putin-praises-especially-trusting-ties-with-myanmar-leader
+      title: Putin praises 'especially trusting' ties with Myanmar leader
+      publisher: The Star (Bloomberg)
+      date: '2026-08-19'
+      tier: 3
+  - domain: diplomatic
+    text: 'The patron''s veto and the patron''s broker: China (and Russia) shield Naypyidaw at the UN, and Beijing brokers the ceasefires that return towns to the army, so the junta can buy time
+      on the northern front by asking its patron to lean on the ethnic armies.'
+    confidence: C
+    sources:
+    - url: https://www.usasean.org/article/lashio-handover-china-factor-and-impact-broader-resistance
+      title: 'Lashio Handover: The China Factor and the Impact on Broader Resistance'
+      publisher: US-ASEAN Business Council
+      date: '2025-05-02'
+      tier: 3
+    - url: https://www.aljazeera.com/news/2023/5/18/myanmar-military-has-imported-weaponry-worth-1bn-since-coup
+      title: Myanmar military has imported weaponry worth $1bn since coup (UN Special Rapporteur Tom Andrews)
+      publisher: Al Jazeera
+      date: '2023-05-18'
+      tier: 3
+  - domain: informational
+    text: 'Narrative of normalisation: elections as a return to constitutional order, a civilian president, scam-centre demolitions staged for diplomats, and trade-relief and mineral offers to
+      Washington (a July 2025 letter praising Trump''s ''strong leadership''); the junta presents the US aid cuts as a retreat from foreign interference.'
+    confidence: B
+    sources:
+    - url: https://www.orfonline.org/expert-speak/myanmar-us-ties-under-trump-old-playbook-new-moves
+      title: 'Myanmar-US ties under Trump: Old Playbook, New Moves'
+      publisher: Observer Research Foundation (Indian view)
+      date: '2025-09-10'
+      tier: 2
+    - url: https://www.irrawaddy.com/news/burma/scam-bosses-move-business-elsewhere-amid-crackdown-in-kk-park.html
+      title: Scam bosses move business elsewhere amid crackdown in KK Park
+      publisher: The Irrawaddy (exile media, anti-junta angle)
+      date: '2025'
+      tier: 3
+    - url: https://www.thejakartapost.com/world/2026/04/10/myanmar-president-says-many-challenges-ahead-seeks-to-normalise-asean-ties-.html
+      title: Myanmar president says many challenges ahead, seeks to normalise ASEAN ties
+      publisher: The Jakarta Post
+      date: '2026-04-10'
+      tier: 3
+    - url: https://www.bnionline.net/en/node/116120
+      title: Scam Operations Persist in Myanmar's Myawaddy Despite Junta's Staged Crackdowns
+      publisher: Burma News International
+      date: '2026'
+      tier: 3
+  - domain: military
+    text: 'Air power and imported arms: Russia (USD 406m) and China (USD 267m) were the largest suppliers between Feb 2021 and Dec 2022, Singapore-based entities another USD 254m for the weapons
+      factories; airstrikes on Rakhine (a February 2026 strike on a hospital killed over 30 civilians per the UK) and, on the manpower side, conscription of an estimated 120,000 men.'
+    confidence: B
+    sources:
+    - url: https://www.aljazeera.com/news/2023/5/18/myanmar-military-has-imported-weaponry-worth-1bn-since-coup
+      title: Myanmar military has imported weaponry worth $1bn since coup (UN Special Rapporteur Tom Andrews)
+      publisher: Al Jazeera
+      date: '2023-05-18'
+      tier: 3
+    - url: https://questions-statements.parliament.uk/written-questions/detail/2026-04-13/126571
+      title: Written question 126571 on Min Aung Hlaing's inauguration as President of Myanmar (answer of 21 April 2026)
+      publisher: UK Parliament
+      date: '2026-04-21'
+      tier: 1
+    - url: https://en.wikipedia.org/wiki/Myanmar_civil_war_(2021%E2%80%93present)
+      title: Myanmar civil war (2021-present)
+      publisher: Wikipedia (index)
+      date: '2026-10-12'
+      tier: 4
+  - domain: economic
+    text: 'Concessions to whoever can protect the regime: the Kyaukphyu port and the Muse-Mandalay railway to China, direct yuan-kyat and rupee-kyat settlement, a nuclear plant and refinery talks
+      with Russia, and heavy rare earths offered in turn to China, India and the United States.'
+    confidence: B
+    sources:
+    - url: https://www.bnionline.net/en/news/china-junta-agree-push-ahead-kyaukphyu-deep-sea-port-project
+      title: China, junta agree to push ahead with Kyaukphyu Deep-Sea Port Project
+      publisher: Burma News International (DMG report; ethnic/exile press, anti-junta angle)
+      date: '2026-06-19'
+      tier: 3
+    - url: https://www.orfonline.org/research/india-s-road-through-myanmar-is-one-of-engagement
+      title: India's road through Myanmar is one of engagement
+      publisher: Observer Research Foundation (Indian view; first published in The Hindu)
+      date: '2026-06-11'
+      tier: 2
+    - url: https://www.irrawaddy.com/news/burma/russia-to-start-building-myanmars-1st-nuclear-power-plant-next-year.html
+      title: Russia to start building Myanmar's 1st nuclear power plant next year
+      publisher: The Irrawaddy (exile media, anti-junta angle)
+      date: '2026'
+      tier: 3
+    - url: https://foreignpolicy.com/2026/06/01/trump-myanmar-minerals-democracy-rare-earth-junta/
+      title: Washington Wants Myanmar's Minerals
+      publisher: Foreign Policy
+      date: '2026-06-01'
+      tier: 3
+  constraints:
+  - text: 'It cannot win the war on the ground: the army''s stable control is estimated at 72-220 of 330 townships and resistance forces took 96 towns by Dec 2025; DW reads 2026 as a stalemate
+      in which the army is regaining ground, not recovering the country. Manpower comes from conscription.'
+    confidence: B
+    sources:
+    - url: https://en.wikipedia.org/wiki/Myanmar_civil_war_(2021%E2%80%93present)
+      title: Myanmar civil war (2021-present)
+      publisher: Wikipedia (index)
+      date: '2026-10-12'
+      tier: 4
+    - url: https://onpagenews.elisa.supporthost.eu/news/myanmar-military-regains-ground-amid-five-year-civil-war-stalemate-19990
+      title: Myanmar military regains ground amid five-year civil war stalemate
+      publisher: Deutsche Welle (republished by onpagenews)
+      date: '2026-05-01'
+      tier: 3
+    - url: https://www.mappr.co/?p=58391
+      title: 'Mapped: Myanmar''s Conflict Zones in 2026 - Who Controls What Five Years After the Coup'
+      publisher: Mappr (explainer)
+      date: '2026'
+      tier: 4
+  - text: Beijing holds the dials on the northern front. The handback of Lashio on 22 Apr 2025 followed a Chinese commodities blockade and the reported detention of MNDAA leaders; the TNLA's position
+      then worsened with the closure of the Namkham gate. The army moves where China lets the ceasefires hold.
+    confidence: B
+    sources:
+    - url: https://www.usasean.org/article/lashio-handover-china-factor-and-impact-broader-resistance
+      title: 'Lashio Handover: The China Factor and the Impact on Broader Resistance'
+      publisher: US-ASEAN Business Council
+      date: '2025-05-02'
+      tier: 3
+    - url: https://www.mappr.co/?p=58391
+      title: 'Mapped: Myanmar''s Conflict Zones in 2026 - Who Controls What Five Years After the Coup'
+      publisher: Mappr (explainer)
+      date: '2026'
+      tier: 4
+  - text: 'Legal exposure that a presidency does not cure: the ICC prosecutor asked for a warrant for Min Aung Hlaing on 27 Nov 2024 and the court has said his new title changes nothing; the ICJ
+      merits judgment in The Gambia v. Myanmar is pending after the January 2026 hearings; the EU renewed its sanctions (105 individuals, 22 entities) until May 2027.'
+    confidence: B
+    sources:
+    - url: https://www.ewn.co.za/2024/11/27/icc-prosecutor-seeks-arrest-warrant-for-myanmar-junta-chief
+      title: ICC prosecutor seeks arrest warrant for Myanmar junta chief
+      publisher: Eyewitness News (South Africa)
+      date: '2024-11-27'
+      tier: 3
+    - url: https://english.dvb.no/icc-confirms-min-aung-hlaing-presidency-grants-no-immunity-from-arrest-warrant/
+      title: ICC confirms Min Aung Hlaing presidency grants no immunity from arrest warrant
+      publisher: Democratic Voice of Burma (exile media, anti-junta angle)
+      date: 2026-04
+      tier: 3
+    - url: https://news.un.org/en/story/2026/01/1166782
+      title: Myanmar begins defence in landmark genocide case at UN World Court
+      publisher: UN News
+      date: '2026-01-16'
+      tier: 1
+    - url: https://www.internazionale.it/ultime-notizie-reuters/2026/04/27/eu-extends-sanctions-against-myanmar-by-a-year
+      title: EU extends sanctions against Myanmar by a year
+      publisher: Reuters (via Internazionale)
+      date: '2026-04-27'
+      tier: 3
+  - text: ASEAN will not seat the president. No head of state of Myanmar went to the Cebu summit in May 2026, the chair's statement kept the Five-Point Consensus as the main reference, and the
+      Philippine chair defended ASEAN's engagement in July only by reaffirming it.
+    confidence: B
+    sources:
+    - url: https://mobile.chinadaily.com.cn/html5/2026-05/12/content_011_6a022bdced50be540e730188.htm
+      title: ASEAN reaffirms Five-Point Consensus
+      publisher: China Daily (state media, reporting the ASEAN statement)
+      date: '2026-05-12'
+      tier: 3
+    - url: https://www.aa.com.tr/en/asia-pacific/philippine-president-calls-myanmar-s-exclusion-from-asean-tragedy-/3931561
+      title: Philippine president calls Myanmar's exclusion from ASEAN 'tragedy'
+      publisher: Anadolu Agency
+      date: '2026'
+      tier: 3
+    - url: https://mb.com.ph/2026/07/20/philippines-rejects-criticism-of-aseans-myanmar-engagement-reaffirms-five-point-consensus
+      title: Philippines rejects criticism of ASEAN's Myanmar engagement, reaffirms five-point consensus
+      publisher: Manila Bulletin
+      date: '2026-07-20'
+      tier: 3
+  - text: 'The scam economy is run by allied militias. The Karen Border Guard Force that hosts the compounds at Myawaddy is the regime''s partner, so the crackdown that China and Thailand demanded
+      has been partial: 10,119 detained by 27 Oct 2025, but an AP-cited analysis found 14 of 21 known Myawaddy compounds building or expanding in 2025 and reporting shows operations moving to
+      other sites rather than stopping.'
+    confidence: B
+    sources:
+    - url: https://www.business-standard.com/world-news/myanmar-detains-over-10k-foreigners-in-online-scam-centre-crackdown-125102800488_1.html
+      title: Myanmar detains over 10K foreigners in online scam centre crackdown
+      publisher: Business Standard
+      date: '2025-10-28'
+      tier: 3
+    - url: https://www.irrawaddy.com/news/burma/scam-bosses-move-business-elsewhere-amid-crackdown-in-kk-park.html
+      title: Scam bosses move business elsewhere amid crackdown in KK Park
+      publisher: The Irrawaddy (exile media, anti-junta angle)
+      date: '2025'
+      tier: 3
+    - url: https://www.yahoo.com/news/articles/takeaways-associated-press-report-myanmars-160709279.html
+      title: Takeaways from The Associated Press report on Myanmar's crackdown on cyberscam centers
+      publisher: Associated Press (via Yahoo News)
+      date: '2025'
+      tier: 3
+    - url: https://www.bnionline.net/en/node/116120
+      title: Scam Operations Persist in Myanmar's Myawaddy Despite Junta's Staged Crackdowns
+      publisher: Burma News International
+      date: '2026'
+      tier: 3
+  - text: The minerals it offers are not in its hands. Myanmar supplies more than 60% of China's heavy rare-earth imports by value, but the Pangwa-Chipwi belt has been under the Kachin Independence
+      Army since Oct 2024; Washington's courtship via private intermediaries yielded no sanctions relief in 2026.
+    confidence: B
+    sources:
+    - url: https://www.stimson.org/2025/rare-earths-and-realpolitik-future-of-mediation-myanmar/
+      title: Rare Earths and Realpolitik
+      publisher: Stimson Center
+      date: '2025'
+      tier: 2
+    - url: https://foreignpolicy.com/2026/06/01/trump-myanmar-minerals-democracy-rare-earth-junta/
+      title: Washington Wants Myanmar's Minerals
+      publisher: Foreign Policy
+      date: '2026-06-01'
+      tier: 3
+  paradoxes:
+  - text: The regime survives by being useful to its patron against its own people, and each service hands the patron a veto. China brokered the return of Lashio (22 Apr 2025) and pressed the
+      TNLA, so the army regained a town; but China now decides how far it may advance in northern Shan, who trades through which border gate, and whether the KIA keeps selling rare earths. Winning
+      ground through a patron converts the war into a Chinese bargaining instrument.
+    confidence: B
+    sources:
+    - url: https://www.usasean.org/article/lashio-handover-china-factor-and-impact-broader-resistance
+      title: 'Lashio Handover: The China Factor and the Impact on Broader Resistance'
+      publisher: US-ASEAN Business Council
+      date: '2025-05-02'
+      tier: 3
+    - url: https://www.borderlens.com/2026/04/27/china-signals-strategic-backing-for-myanmars-new-regime-amid-regional-recalibration/
+      title: China signals strategic backing for Myanmar's new regime amid regional recalibration
+      publisher: BorderLens
+      date: '2026-04-27'
+      tier: 3
+    - url: https://www.stimson.org/2025/rare-earths-and-realpolitik-future-of-mediation-myanmar/
+      title: Rare Earths and Realpolitik
+      publisher: Stimson Center
+      date: '2025'
+      tier: 2
+  - text: The election bought legitimacy only where it was already given. China, Russia, India and Thailand deal with President Min Aung Hlaing; ASEAN as a body, the EU (sanctions renewed 27 Apr
+      2026) and the UK (no sign it was free or fair) did not move, and the ICC says the new title brings no immunity. The vote set the regime's isolation in a constitutional frame, and made the
+      Five-Point Consensus its permanent counterpart.
+    confidence: B
+    sources:
+    - url: https://www.nst.com.my/amp/world/region/2026/08/1505432/myanmar-ex-junta-chief-first-thailand-trip-civilian-leader
+      title: Myanmar ex-junta chief on first Thailand trip as civilian leader
+      publisher: New Straits Times (AFP)
+      date: '2026-08-06'
+      tier: 3
+    - url: https://www.internazionale.it/ultime-notizie-reuters/2026/04/27/eu-extends-sanctions-against-myanmar-by-a-year
+      title: EU extends sanctions against Myanmar by a year
+      publisher: Reuters (via Internazionale)
+      date: '2026-04-27'
+      tier: 3
+    - url: https://questions-statements.parliament.uk/written-questions/detail/2026-04-13/126571
+      title: Written question 126571 on Min Aung Hlaing's inauguration as President of Myanmar (answer of 21 April 2026)
+      publisher: UK Parliament
+      date: '2026-04-21'
+      tier: 1
+    - url: https://english.dvb.no/icc-confirms-min-aung-hlaing-presidency-grants-no-immunity-from-arrest-warrant/
+      title: ICC confirms Min Aung Hlaing presidency grants no immunity from arrest warrant
+      publisher: Democratic Voice of Burma (exile media, anti-junta angle)
+      date: 2026-04
+      tier: 3
+    - url: https://mobile.chinadaily.com.cn/html5/2026-05/12/content_011_6a022bdced50be540e730188.htm
+      title: ASEAN reaffirms Five-Point Consensus
+      publisher: China Daily (state media, reporting the ASEAN statement)
+      date: '2026-05-12'
+      tier: 3
+  - text: Cracking down on the scam centres for Beijing and Bangkok weakens the allies who guard the Thai border. Demolishing compounds and arresting foreigners (10,119 by 27 Oct 2025) pleases
+      China and Thailand, but the Karen BGF behind Myawaddy is the army's militia and the operations have moved to other sites; the regime pays in ally goodwill for a reduction that the reporting
+      does not confirm.
+    confidence: B
+    sources:
+    - url: https://www.business-standard.com/world-news/myanmar-detains-over-10k-foreigners-in-online-scam-centre-crackdown-125102800488_1.html
+      title: Myanmar detains over 10K foreigners in online scam centre crackdown
+      publisher: Business Standard
+      date: '2025-10-28'
+      tier: 3
+    - url: https://www.irrawaddy.com/news/burma/scam-bosses-move-business-elsewhere-amid-crackdown-in-kk-park.html
+      title: Scam bosses move business elsewhere amid crackdown in KK Park
+      publisher: The Irrawaddy (exile media, anti-junta angle)
+      date: '2025'
+      tier: 3
+    - url: https://www.yahoo.com/news/articles/takeaways-associated-press-report-myanmars-160709279.html
+      title: Takeaways from The Associated Press report on Myanmar's crackdown on cyberscam centers
+      publisher: Associated Press (via Yahoo News)
+      date: '2025'
+      tier: 3
+    - url: https://www.bnionline.net/en/news/myanmar-junta-claims-it-demolished-nearly-60-cyber-scam-buildings-shwe-kokko-operations
+      title: Myanmar junta claims it demolished nearly 60 cyber scam buildings in Shwe Kokko, but operations continue
+      publisher: Burma News International
+      date: '2026'
+      tier: 3
+  - text: Kyaukphyu is the asset that buys a patron's protection and the asset the army is least able to protect. The 17 Jun 2026 joint statement promises to speed up the port; the Arakan Army
+      is fighting around the naval station at Kyaukphyu township, and a local observer says nothing can be built without the AA, which gives the AA a card to play with China directly.
+    confidence: B
+    sources:
+    - url: https://www.bnionline.net/en/news/china-junta-agree-push-ahead-kyaukphyu-deep-sea-port-project
+      title: China, junta agree to push ahead with Kyaukphyu Deep-Sea Port Project
+      publisher: Burma News International (DMG report; ethnic/exile press, anti-junta angle)
+      date: '2026-06-19'
+      tier: 3
+    - url: https://mail.dmediag.com/news/aacvii.html
+      title: Arakan Army says it controls 14 Arakan townships and Paletwa, fighting continues in Sittwe and Kyaukphyu (DMG, Mrauk-U dateline)
+      publisher: Development Media Group (Arakan press, pro-AA angle)
+      date: '2026-04-11'
+      tier: 3
+    - url: https://www.orfonline.org/research/india-s-road-through-myanmar-is-one-of-engagement
+      title: India's road through Myanmar is one of engagement
+      publisher: Observer Research Foundation (Indian view; first published in The Hindu)
+      date: '2026-06-11'
+      tier: 2
+  - text: The same minerals are offered to three buyers who cannot collect them. Heavy rare earths (60% of China's imports by value) are sold to China, discussed with India (rupee-kyat settlement,
+      critical minerals) and dangled to Washington; the supply sits with the KIA, so each offer is a promise the army cannot keep and reminds each buyer of the other two.
+    confidence: C
+    sources:
+    - url: https://www.stimson.org/2025/rare-earths-and-realpolitik-future-of-mediation-myanmar/
+      title: Rare Earths and Realpolitik
+      publisher: Stimson Center
+      date: '2025'
+      tier: 2
+    - url: https://www.orfonline.org/research/india-s-road-through-myanmar-is-one-of-engagement
+      title: India's road through Myanmar is one of engagement
+      publisher: Observer Research Foundation (Indian view; first published in The Hindu)
+      date: '2026-06-11'
+      tier: 2
+    - url: https://foreignpolicy.com/2026/06/01/trump-myanmar-minerals-democracy-rare-earth-junta/
+      title: Washington Wants Myanmar's Minerals
+      publisher: Foreign Policy
+      date: '2026-06-01'
+      tier: 3
+  - text: Tying Rohingya return to security in Rakhine and to the rollback of international cases presumes a control over Rakhine the army no longer has. The Arakan Army holds the entire 271 km
+      border with Bangladesh since Dec 2024, so the 308,797 names Naypyidaw verified in Aug 2026 would land in AA-held territory, and the ICJ and ICC clocks run whatever the junta says.
+    confidence: B
+    sources:
+    - url: https://asianews.network/?p=304250
+      title: Can Bangladesh PM Tarique Rahman's plan break the Rohingya repatriation deadlock?
+      publisher: Asia News Network
+      date: '2026-09-29'
+      tier: 3
+    - url: https://asianews.network/?p=180129
+      title: Tension, fear in Teknaf as Myanmar's Arakan Army claims taking control of border with Bangladesh
+      publisher: Asia News Network
+      date: 2024-12
+      tier: 3
+    - url: https://news.un.org/en/story/2026/01/1166782
+      title: Myanmar begins defence in landmark genocide case at UN World Court
+      publisher: UN News
+      date: '2026-01-16'
+      tier: 1
+    - url: https://www.ewn.co.za/2024/11/27/icc-prosecutor-seeks-arrest-warrant-for-myanmar-junta-chief
+      title: ICC prosecutor seeks arrest warrant for Myanmar junta chief
+      publisher: Eyewitness News (South Africa)
+      date: '2024-11-27'
+      tier: 3
+  reading: 'Myanmar''s strategy is that of a client whose army lives on its usefulness to others. After 2021 the Tatmadaw lost the periphery but kept the centre, the air force and what its patrons
+    want: a government in Naypyidaw that signs the Kyaukphyu port and the pipelines for Beijing, the Kaladan corridor for Delhi, the nuclear and refinery contracts for Moscow, and a border that
+    stays quiet for Bangkok. Luttwak''s logic runs through the patron''s calculus: China does not need the junta to win, it needs the border calm, the pipelines open, the scam business under control
+    and no Western-aligned government in Naypyidaw, so it brokers just enough ceasefires (Lashio, pressure on the TNLA) to keep the army alive and no more, while the KIA, the UWSA and others keep
+    the leverage that lets Beijing bargain with both sides. The 2025-26 election and the presidency convert that client status into an appearance of normality: the four governments that already
+    dealt with the regime (China, Russia, India, Thailand) now deal with a president, while ASEAN as a body and the West have only renewed their pressure. Each concession that buys survival, from
+    Lashio to Kyaukphyu to the rare-earth promises, gives some other power a veto over the army''s next move. Rakhine is the test: the Arakan Army, not Naypyidaw, now decides whether Kyaukphyu,
+    Sittwe and the Bangladesh border, which are three patrons'' interests at once, are safe. '
