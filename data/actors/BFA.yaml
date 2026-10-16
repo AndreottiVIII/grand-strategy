@@ -1,14 +1,72 @@
 id: BFA
 name: Burkina Faso
 type: state
-iso2: bf
-wikipedia: https://en.wikipedia.org/wiki/Burkina_Faso
 coords:
 - -1.53
 - 12.37
+iso2: bf
+wikipedia: https://en.wikipedia.org/wiki/Burkina_Faso
 seat: Ouagadougou
-regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+regions: [west-africa]
+card: full
+tier: protagonist
+last_verified: '2026-10-16'
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Build a sovereign bloc outside ECOWAS and French influence: Burkina Faso, Mali and Niger turned their backs on ECOWAS in January 2024 and signed a pact in July 2024 to form their own confederation, the Alliance of Sahel States."
+      confidence: C
+      sources:
+        - {url: "https://www.dw.com/en/mali-burkina-faso-and-niger-quit-ecowas/a-68106116", title: "Mali, Burkina Faso and Niger quit ECOWAS", publisher: "Deutsche Welle", date: "2024-01-28", tier: 3}
+        - {url: "https://www.aljazeera.com/news/2024/7/6/niger-mali-and-burkina-faso-military-leaders-sign-new-pact-rebuff-ecowas", title: "Niger, Mali and Burkina Faso military leaders sign new pact, rebuff ECOWAS", publisher: "Al Jazeera", date: "2024-07-06", tier: 3}
+    - rank: 2
+      text: "Contain JNIM in the north and centre of the country. The JNIM attack on Barsalogho in August 2024 killed up to 200 people, and the junta condemned it without giving a soldier casualty figure."
+      confidence: C
+      sources:
+        - {url: "https://www.longwarjournal.org/archives/2024/08/analysis-al-qaeda-kills-hundreds-in-burkina-faso-attack.php", title: "Analysis: Al Qaeda kills hundreds in Burkina Faso attack", publisher: "FDD's Long War Journal", date: "2024-08-26", tier: 3}
+        - {url: "https://acleddata.com/update/africa-overview-may-2025", title: "Africa overview, May 2025", publisher: "ACLED", date: "2025-05", tier: 2}
+    - rank: 3
+      text: "Turn gold into state revenue. In June 2025 the state completed the takeover of five gold assets (two operating mines and three exploration licences held by Endeavour and Lilium subsidiaries), placed in SOPAMIB, its state-owned mining vehicle."
+      confidence: C
+      sources:
+        - {url: "https://www.kitco.com/news/off-the-wire/2025-06-12/burkina-faso-completes-nationalization-five-gold-mining-assets", title: "Burkina Faso completes nationalization of five gold mining assets", publisher: "Kitco (Reuters wire)", date: "2025-06-12", tier: 3}
+        - {url: "https://newsletter.mw.creamermedia.com/article/burkina-faso-completes-nationalisation-of-five-gold-mining-assets-2025-06-12", title: "Burkina Faso completes nationalisation of five gold mining assets", publisher: "Creamer Media (Reuters)", date: "2025-06-12", tier: 3}
+
+  means:
+    - domain: military
+      text: "Russian Africa Corps instructors and a contingent that Africa Corps itself put at about 100 men, flown in during 2024 to guard the head of state and train Burkinabe troops. Burkina did not confirm the deployment. The army is the regime's base and the instrument against JNIM."
+      confidence: C
+      sources:
+        - {url: "https://bnnbloomberg.ca/russian-troops-begin-burkina-faso-deployment-to-bolster-security-1.2026130", title: "Russian Troops Begin Burkina Faso Deployment to Bolster Security", publisher: "Bloomberg (via BNN)", date: "2024", tier: 3}
+        - {url: "https://themoscowtimes.com/2024/06/05/moscow-to-deploy-more-military-instructors-in-burkina-faso-a85324", title: "Moscow to deploy more military instructors in Burkina Faso", publisher: "The Moscow Times", date: "2024-06-05", tier: 3}
+    - domain: economic
+      text: "Gold, nationalised in part. The state took over five gold assets in June 2025 and officials said further nationalisation would bring the state more income; Burkina is Africa's fourth-largest gold producer (more than 57 t in 2023, Reuters). The mining code was revised in 2024, as in Mali and Niger."
+      confidence: C
+      sources:
+        - {url: "https://www.kitco.com/news/off-the-wire/2025-06-12/burkina-faso-completes-nationalization-five-gold-mining-assets", title: "Burkina Faso completes nationalization of five gold mining assets", publisher: "Kitco (Reuters wire)", date: "2025-06-12", tier: 3}
+
+  constraints:
+    - text: "The army cannot hold the rural north and centre against JNIM. The Barsalogho attack of August 2024 and the use of Burkinabe provinces as staging grounds for raids into Benin (ACLED) show the reach of the armed group."
+      confidence: C
+      sources:
+        - {url: "https://www.longwarjournal.org/archives/2024/08/analysis-al-qaeda-kills-hundreds-in-burkina-faso-attack.php", title: "Analysis: Al Qaeda kills hundreds in Burkina Faso attack", publisher: "FDD's Long War Journal", date: "2024-08-26", tier: 3}
+        - {url: "https://acleddata.com/update/africa-overview-may-2025", title: "Africa overview, May 2025", publisher: "ACLED", date: "2025-05", tier: 2}
+    - text: "Few formal channels are left. Burkina has left ECOWAS (2024) and cut diplomatic relations with France (26 June 2026), so its formal ties now run through the Alliance of Sahel States, Russia and its neighbours, with Ghana and Côte d'Ivoire the two it deals with most, one by security pact and one by open accusation."
+      confidence: C
+      sources:
+        - {url: "https://www.dw.com/en/mali-burkina-faso-and-niger-quit-ecowas/a-68106116", title: "Mali, Burkina Faso and Niger quit ECOWAS", publisher: "Deutsche Welle", date: "2024-01-28", tier: 3}
+        - {url: "https://www.thestar.com.my/news/world/2026/06/27/burkina-faso-breaks-off-diplomatic-relations-with-france", title: "Burkina Faso breaks off diplomatic relations with France", publisher: "The Star (Reuters copy)", date: "2026-06-27", tier: 3}
+
+  paradoxes:
+    - text: "Taking the mines into state hands to capture more of the gold rent alarmed the Western investors whose capital the mines need. Reuters names IAMGOLD, Nordgold and West African Resources among the companies affected."
+      confidence: C
+      sources:
+        - {url: "https://newsletter.mw.creamermedia.com/article/burkina-faso-completes-nationalisation-of-five-gold-mining-assets-2025-06-12", title: "Burkina Faso completes nationalisation of five gold mining assets", publisher: "Creamer Media (Reuters)", date: "2025-06-12", tier: 3}
+    - text: "Russian units sent in 2024 to protect Traoré personally, by Africa Corps' own account, put part of the foreign security effort around the head of state while the army fights JNIM in the field. The protection of the regime and the defence of the territory compete for the same troops."
+      confidence: C
+      sources:
+        - {url: "https://bnnbloomberg.ca/russian-troops-begin-burkina-faso-deployment-to-bolster-security-1.2026130", title: "Russian Troops Begin Burkina Faso Deployment to Bolster Security", publisher: "Bloomberg (via BNN)", date: "2024", tier: 3}
+
+  reading: |
+    Burkina Faso's grand strategy is sovereignty by rupture: it has left ECOWAS and France, built a confederation with Mali and Niger, and taken Russian instructors to guard the regime while the state takes over the gold mines to pay for the war. The ruptures buy autonomy at the cost of the channels that once held its security and its capital, and the mine takeover frightens the investors that the mines need. The war against JNIM is the test that the sovereignty doctrine has not yet passed, and this card rests on 2024 to mid-2026 sources without verified 2026 battlefield data, so the transition timetable and the 2025 US aid cut are not confirmed here.

@@ -1,0 +1,89 @@
+from: TCD
+relations:
+  # ---------- alignment ----------
+  - to: FRA
+    layer: alignment
+    type: treaty
+    summary: "The defence cooperation accord with France, which Chad broke in November 2024 (Le Monde, 29 Nov 2024). The accord's origin is 1966 per the Wikipedia index, not verified against a primary text. The row is Chad's side of the treaty, mirroring the France-side military presence rows, which record the Faya base handed over on 26 Dec 2024."
+    since: '1966'
+    until: '2024-11'
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.lemonde.fr/afrique/article/2024/11/29/le-tchad-rompt-ses-accords-de-defense-avec-la-france-un-camouflet-pour-paris_6419906_3212.html", title: "Le Tchad rompt ses accords de défense avec la France, un camouflet pour Paris", title_original: "Le Tchad rompt ses accords de défense avec la France, un camouflet pour Paris", lang: fr, publisher: "Le Monde", date: "2024-11-29", tier: 3}
+      - {url: "https://worldview.stratfor.com/situation-report/france-country-reduce-military-presence-western-and-central-africa", title: "France, country: to reduce military presence in Western and Central Africa", publisher: "Stratfor Worldview", date: "2024-12", tier: 3}
+
+  # ---------- objective ----------
+  - to: SDN
+    layer: objective
+    type: influence_goal
+    summary: "Keep the Sudan war off Chadian soil: the eastern border closed indefinitely from 23 Feb 2026, citing Sudanese armed groups after fighting at al-Tina. Sudan reads the closure as part of the feud over the RSF; Chad's stated aim is the security of its own border."
+    since: '2026-02-23'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.bbc.com/news/articles/cm2x1n95z5vo", title: "Chad shuts border with Sudan in bid to stop conflict spreading", publisher: "BBC", date: "2026-02-23", tier: 3}
+      - {url: "https://sudantribune.com/article292971/", title: "Sudan accuses Chad of aiding RSF in complaint to African Rights Commission", publisher: "Sudan Tribune", date: "2024-11-06", tier: 3}
+
+  - to: org-mnjtf
+    layer: objective
+    type: membership_goal
+    summary: "Hold the Lake Chad front through the MNJTF with Cameroon and Nigeria, mandated against Boko Haram and ISWAP. The June 2026 preview says Chad has threatened to reduce or pull out; the membership objective is what the threat puts in question."
+    since: '2026-06'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.securitycouncilreport.org/monthly-forecast/2026-06/unoca-central-africa-13.php", title: "June 2026 Monthly Forecast: UNOCA and Central Africa", publisher: "Security Council Report", date: "2026-06", tier: 2}
+
+  # ---------- action ----------
+  - to: SDN
+    layer: action
+    type: incident
+    summary: "Chad closed its eastern border with Sudan indefinitely on 23 Feb 2026 after fighting at al-Tina, citing Sudanese armed groups. Earlier, Chad expelled four Sudanese diplomats (mid-Dec 2023)."
+    since: '2026-02-23'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.bbc.com/news/articles/cm2x1n95z5vo", title: "Chad shuts border with Sudan in bid to stop conflict spreading", publisher: "BBC", date: "2026-02-23", tier: 3}
+      - {url: "https://sudantribune.com/article280415/", title: "Sudan confirms receiving Chadian decision to expel four Sudanese diplomats", publisher: "Sudan Tribune", date: "2023-12-16", tier: 3}
+
+  - to: LBY
+    layer: action
+    type: agreement
+    summary: "Joint border force of the Chadian army and Haftar's LNA, formed under Saddam Haftar's directives on 14 Nov 2025 to secure the shared border. The Government of National Unity is not mentioned in the announcement. Mirror of the LBY row, same sources."
+    since: '2025-11-14'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://libyareview.com/60902/libya-chad-launch-joint-border-force/", title: "Libya & Chad launch joint border force", publisher: "Libya Review", date: "2025-11-14", tier: 3}
+      - {url: "https://lana.gov.ly/post.php?lang=en&id=352264", title: "Dbeibah receives the new Chadian ambassador to Libya", publisher: "Libyan News Agency (LANA, official statement)", date: "2026-03-05", tier: 1}
+
+  - to: RUS
+    layer: action
+    type: visit
+    summary: "Mahamat Idriss Déby's visit to Moscow on 24 Jan 2024. Putin praised the stabilisation of the country and offered help. Lavrov visited N'Djamena in June 2024."
+    since: '2024-01-24'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.malaymail.com/news/world/2024/01/24/putin-meets-chad-junta-leader-as-russia-competes-with-france-in-africa/114362", title: "Putin meets Chad junta leader as Russia competes with France in Africa", publisher: "Malay Mail (Reuters report)", date: "2024-01-24", tier: 3}
+
+  # ---------- dependency ----------
+  - to: HUN
+    layer: dependency
+    type: military_presence
+    summary: "Planned Hungarian mission of about 200 soldiers to train Chadian forces against armed groups, under a security deal backed by the Hungarian parliament in Nov 2023. Not confirmed as deployed in sources found; the Chadian National Assembly had not approved it by late 2024. The value counts planned soldiers, not present ones."
+    since: '2024-10'
+    until: null
+    value: 200
+    unit: planned_hungarian_soldiers
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.aljazeera.com/news/2024/10/23/why-is-hungarys-orban-sending-soldiers-to-chad", title: "Why is Hungary's Orban sending soldiers to Chad?", publisher: "Al Jazeera", date: "2024-10-23", tier: 3}
+      - {url: "https://pism.pl/webroot/upload/files/Biuletyn/PISM%20Bulletin%20no%20165%20(2453)%208%20November%202024.pdf", title: "PISM Bulletin no. 165 (2453), 8 November 2024", publisher: "Polish Institute of International Affairs (PISM)", date: "2024-11-08", tier: 2}

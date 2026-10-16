@@ -1,14 +1,73 @@
 id: TCD
 name: Chad
 type: state
+coords: [15.05, 12.11]
 iso2: td
 wikipedia: https://en.wikipedia.org/wiki/Chad
-coords:
-- 15.05
-- 12.11
 seat: N'Djamena
-regions:
-- world
-card: stub
+regions: [west-africa]
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the regime of Mahamat Idriss Déby in power. Putin praised him in January 2024 for having stabilised the country and offered help; the 2025 accounts of attacks near the presidential palace are not sourced here."
+      confidence: C
+      sources:
+        - {url: "https://www.malaymail.com/news/world/2024/01/24/putin-meets-chad-junta-leader-as-russia-competes-with-france-in-africa/114362", title: "Putin meets Chad junta leader as Russia competes with France in Africa", publisher: "Malay Mail (Reuters report)", date: "2024-01-24", tier: 3}
+    - rank: 2
+      text: "Keep the Sudan war off Chadian soil. The eastern border was closed indefinitely on 23 Feb 2026, citing Sudanese armed groups after fighting at al-Tina; Chad had expelled four Sudanese diplomats in December 2023, and Khartoum accuses N'Djamena of aiding the RSF."
+      confidence: B
+      sources:
+        - {url: "https://www.bbc.com/news/articles/cm2x1n95z5vo", title: "Chad shuts border with Sudan in bid to stop conflict spreading", publisher: "BBC", date: "2026-02-23", tier: 3}
+        - {url: "https://sudantribune.com/article292971/", title: "Sudan accuses Chad of aiding RSF in complaint to African Rights Commission", publisher: "Sudan Tribune", date: "2024-11-06", tier: 3}
+        - {url: "https://sudantribune.com/article280415/", title: "Sudan confirms receiving Chadian decision to expel four Sudanese diplomats", publisher: "Sudan Tribune", date: "2023-12-16", tier: 3}
+    - rank: 3
+      text: "Hold the Lake Chad and Libyan borders with partners: the MNJTF with Cameroon and Nigeria, mandated against Boko Haram and ISWAP, and a joint border force with Haftar's LNA in the east (14 Nov 2025). The June 2026 preview says Chad has threatened to reduce or leave the MNJTF."
+      confidence: C
+      sources:
+        - {url: "https://www.securitycouncilreport.org/monthly-forecast/2026-06/unoca-central-africa-13.php", title: "June 2026 Monthly Forecast: UNOCA and Central Africa", publisher: "Security Council Report", date: "2026-06", tier: 2}
+        - {url: "https://libyareview.com/60902/libya-chad-launch-joint-border-force/", title: "Libya & Chad launch joint border force", publisher: "Libya Review", date: "2025-11-14", tier: 3}
+
+  means:
+    - domain: military
+      text: "The Chadian army as the regional force: a column on the Niger-Libya border (press-reported ambush, 27 Feb 2026), the joint border force with the LNA, and the MNJTF contingent. The Lake Chad force has capability gaps, so the army carries the weight."
+      confidence: C
+      sources:
+        - {url: "https://www.agenzianova.com/en/news/Chad-press-sources%3A-an-army-column-is-ambushed-on-the-border-between-Niger-and-Libya/", title: "Chad: Press reports: Army column ambushed on Niger-Libya border", publisher: "Agenzia Nova", date: "2026-02-27", tier: 3}
+        - {url: "https://www.securitycouncilreport.org/monthly-forecast/2026-06/unoca-central-africa-13.php", title: "June 2026 Monthly Forecast: UNOCA and Central Africa", publisher: "Security Council Report", date: "2026-06", tier: 2}
+    - domain: diplomatic
+      text: "Multi-vector patronage since the French exit: Abu Dhabi's field hospital at Amdjarass and rising military aid (2023-24), Putin's welcome of January 2024, a planned Hungarian training mission of about 200 soldiers, and a Tripoli embassy. Each patron buys access; none has been shown to buy a guarantee."
+      confidence: C
+      sources:
+        - {url: "https://guardian.ng/apo-press-releases/united-arab-emirates-opens-field-hospital-in-chad-to-support-sudanese-refugees/", title: "United Arab Emirates opens field hospital in Chad to support Sudanese refugees", publisher: "APO (UAE government release, via Guardian Nigeria)", date: "2023-07", tier: 1}
+        - {url: "https://adf-magazine.com/2024/02/uae-increases-military-support-aid-to-chad-amid-sahel-strife/", title: "UAE increases military support, aid to Chad amid Sahel strife", publisher: "ADF Magazine", date: "2024-02", tier: 3}
+        - {url: "https://www.aljazeera.com/news/2024/10/23/why-is-hungarys-orban-sending-soldiers-to-chad", title: "Why is Hungary's Orban sending soldiers to Chad?", publisher: "Al Jazeera", date: "2024-10-23", tier: 3}
+
+  constraints:
+    - text: "The French guarantor is gone. Chad ended the defence accord in November 2024 (Le Monde, 29 Nov 2024), and France handed over its Faya base on 26 Dec 2024 and finished withdrawal in January 2025 (Stratfor). The army now needs other patrons for its own defence."
+      confidence: B
+      sources:
+        - {url: "https://www.lemonde.fr/afrique/article/2024/11/29/le-tchad-rompt-ses-accords-de-defense-avec-la-france-un-camouflet-pour-paris_6419906_3212.html", title: "Le Tchad rompt ses accords de défense avec la France, un camouflet pour Paris", publisher: "Le Monde", date: "2024-11-29", tier: 3}
+        - {url: "https://worldview.stratfor.com/situation-report/france-country-reduce-military-presence-western-and-central-africa", title: "France, country: to reduce military presence in Western and Central Africa", publisher: "Stratfor Worldview", date: "2024-12", tier: 3}
+    - text: "The shared security framework is thin. The MNJTF has persistent capability gaps (air assets, counter-drone systems, IED disposal) and its membership is contested in the sources; Chad's threat to pull out is the sharpest sign. Chad cannot count on the force as a shield."
+      confidence: C
+      sources:
+        - {url: "https://www.securitycouncilreport.org/monthly-forecast/2026-06/unoca-central-africa-13.php", title: "June 2026 Monthly Forecast: UNOCA and Central Africa", publisher: "Security Council Report", date: "2026-06", tier: 2}
+
+  paradoxes:
+    - text: "Chad closes the border against the Sudanese side of the RSF supply while taking Abu Dhabi's hospital, aid and cargo flights, which Khartoum and the reports call the RSF's western door. The closure answers a threat that the patron relation helps sustain."
+      confidence: C
+      sources:
+        - {url: "https://www.newarab.com/news/uae-accused-covert-arms-routes-sudans-rsf-0", title: "UAE accused of using covert arms routes to Sudan's RSF (Le Monde investigation; RFI: about 600 flights to Koufra in 2025)", publisher: "The New Arab", date: "2026-03-23", tier: 3}
+        - {url: "https://www.bbc.com/news/articles/cm2x1n95z5vo", title: "Chad shuts border with Sudan in bid to stop conflict spreading", publisher: "BBC", date: "2026-02-23", tier: 3}
+    - text: "Leaving France to gain room has brought promises rather than troops. Moscow and Budapest offered cooperation, but no Africa Corps presence in Chad is confirmed in sources found and the Hungarian mission had no confirmed start; the exit from a guarantor leaves the army with patrons it cannot see on the ground."
+      confidence: C
+      sources:
+        - {url: "https://www.criticalthreats.org/analysis/africa-file-december-5-2024-french-influence-in-africa-erodes-further-syrias-impact-on-russia-in-africa-and-the-mediterranean-somalia-political-dispute-turns-hot-drc-rwanda-peace-plans", title: "Africa File, December 5, 2024", publisher: "Critical Threats", date: "2024-12-05", tier: 2}
+        - {url: "https://pism.pl/webroot/upload/files/Biuletyn/PISM%20Bulletin%20no%20165%20(2453)%208%20November%202024.pdf", title: "PISM Bulletin no. 165 (2453), 8 November 2024", publisher: "Polish Institute of International Affairs (PISM)", date: "2024-11-08", tier: 2}
+
+  reading: |
+    Chad's grand strategy is the survival of the Déby regime on borders it cannot seal: Sudan's war, the Libyan east and the Lake Chad jihadists all press on one army. Having lost France as guarantor, N'Djamena spreads its patronage across Abu Dhabi, Moscow, Budapest and Haftar, and buys access more than protection. The gaps are the Zaghawa question (the clan's Darfur kin among the RSF's victims, a reading taken from the SDN card and not sourced here), the oil corridor, the Central African Republic, Cameroon and the United States, none yet sourced for this card.

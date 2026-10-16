@@ -1,14 +1,101 @@
 id: NGA
 name: Nigeria
+short: Nigeria
 type: state
+coords: [7.49, 9.06]
 iso2: ng
 wikipedia: https://en.wikipedia.org/wiki/Nigeria
-coords:
-- 7.49
-- 9.06
 seat: Abuja
-regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+regions: [west-africa]
+card: full
+tier: protagonist
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Win the presidential election of 2027 with the reform record as the campaign: Tinubu seeks re-election on the APC ticket, and the polling date is disputed (the electoral commission's 20 February 2027 against a report giving 16 January). Every choice below is priced against that vote."
+      confidence: C
+      sources:
+        - {url: "https://allafrica.com/stories/202602130124.html", title: "Nigeria: President Jittery Over 2027 Election - APC Chieftain", publisher: "AllAfrica", date: 2026-02-13, tier: 3}
+        - {url: "https://africa.com/top-10-news/nigeria-sets-february-2027-election-date", title: "Nigeria sets February 2027 election date", publisher: "Africa.com", date: 2026, tier: 4}
+        - {url: "https://africa.com/top-10-news/tinubu-secures-apc-ticket-for-2027-presidential-bid", title: "Tinubu secures APC ticket for 2027 presidential bid", publisher: "Africa.com", date: 2026, tier: 4}
+    - rank: 2
+      text: "Turn the oil into dollars and hold the naira: production above the OPEC quota (1.573 million bpd in August 2026, against a quota of 1.5 million and a budget target of 1.84 million), while the Dangote refinery takes domestic crude that would otherwise be exported."
+      confidence: C
+      sources:
+        - {url: "https://nairametrics.com/2026/09/13/nigeria-hits-opec-quota-again-but-oil-output-still-trails-budget-target/", title: "Nigeria hits OPEC quota again but oil output still trails budget target", publisher: "Nairametrics", date: 2026-09-13, tier: 3}
+        - {url: "https://beninwebtv.bj/en/nigeria-dangote-refinery-secures-at-least-16-million-barrels-for-october/", title: "Nigeria: Dangote refinery secures at least 16 million barrels for October", publisher: "Benin Web TV (citing Reuters)", date: 2026-09, tier: 3}
+        - {url: "https://nairametrics.com/2026/09/05/naira-gains-n13-as-weekly-fx-turnover-falls-by-1-05-billion/", title: "Naira gains N13 as weekly FX turnover falls by $1.05 billion", publisher: "Nairametrics", date: 2026-09-05, tier: 3}
+    - rank: 3
+      text: "Keep ECOWAS as the regional instrument and win the Sahel back: the AES exit leaves the bloc without its Sahel flank, Abuja wants the AES back 'under a different status' so that ECOWAS survives, and the Lake Chad task force (MNJTF) against Boko Haram and ISWAP has had no regional operation since July 2024."
+      confidence: B
+      sources:
+        - {url: "https://allafrica.com/stories/202502100296.html", title: "West Africa: Scenarios of Ecowas-AES Relationships - Nigeria's Strategic Autonomy As a Major Dynamic", publisher: "AllAfrica", date: 2025-02-10, tier: 3}
+        - {url: "https://issafrica.org/pscreport/psc-insights/lake-chad-basin-s-counter-terrorism-must-adapt-to-defeat-boko-haram", title: "Lake Chad Basin's counter-terrorism must adapt to defeat Boko Haram", publisher: "ISS Africa", date: 2025, tier: 2}
+        - {url: "https://adf-magazine.com/2026/09/diplomatic-divide-threatens-sahel-security/", title: "Diplomatic divide threatens Sahel security", publisher: "ADF Magazine", date: 2026-09, tier: 3}
+    - rank: 4
+      text: "Keep the claim to lead Africa against South Africa's co-claim: Nigeria's case rests on its population, its oil, its role in founding ECOWAS and its peacekeeping, and South Africa now competes for the same standing through its G20 seat and its ICJ case against Israel."
+      confidence: B
+      sources:
+        - {url: "https://saiia.org.za/research/has-south-africa-overtaken-nigeria-as-africas-giant/", title: "Has South Africa Overtaken Nigeria as Africa's Giant?", publisher: "SAIIA", date: 2025-07-30, tier: 2}
+        - {url: "https://mg.co.za/news/africa/2012-06-07-why-nigeria-hates-sa-gloves-off-to-be-champion-of-africa/", title: "Why Nigeria hates SA: gloves off to be champion of Africa", publisher: "Mail & Guardian", date: 2012-06-07, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "ECOWAS and the Atlantic partnerships around it: Abuja, which helped found the bloc, sits in the ECOWAS that imposed sanctions on Niger after the 2023 coup; the bloc backed the Nigeria-Morocco pipeline agreement at its July 2026 summit; the UK strategic partnership (November 2024) is the most formal Western tie."
+      confidence: B
+      sources:
+        - {url: "https://allafrica.com/stories/202502100296.html", title: "West Africa: Scenarios of Ecowas-AES Relationships - Nigeria's Strategic Autonomy As a Major Dynamic", publisher: "AllAfrica", date: 2025-02-10, tier: 3}
+        - {url: "https://www.reuters.com/business/energy/west-africas-ecowas-bloc-signs-agreement-backing-nigeria-morocco-atlantic-gas-2026-07-19/", title: "West Africa's ECOWAS bloc signs agreement backing Nigeria-Morocco Atlantic gas pipeline", publisher: "Reuters", date: 2026-07-19, tier: 3}
+        - {url: "https://www.gov.uk/government/publications/joint-communique-nigeria-united-kingdom-strategic-partnership/establishing-the-nigeria-united-kingdom-strategic-partnership-joint-communique", title: "Establishing the Nigeria-United Kingdom Strategic Partnership: joint communique", publisher: "UK Government (FCDO)", date: 2024-11-06, tier: 1}
+    - domain: military
+      text: "Counter-terrorism with foreign help: US strikes on ISIS sites in Sokoto (25-26 December 2025) with Abuja's consent, a joint operation that killed the ISWAP leader al-Minuki (15 May 2026, per Trump), a UK security and defence dialogue in Abuja (June 2026); AFRICOM withdrew almost all personnel by 3 July 2026 and kept intelligence assets."
+      confidence: C
+      sources:
+        - {url: "https://www.theguardian.com/us-news/2025/dec/25/us-carries-out-airstrikes-against-islamic-state-terrorist-scum-in-nigeria-trump-says", title: "US carries out strikes on Nigeria targeting Islamic State militants, Trump says", publisher: "The Guardian", date: 2025-12-25, tier: 3}
+        - {url: "https://www.nytimes.com/2026/05/16/world/africa/trump-isis-nigeria-al-minuki.html", title: "Trump says a top ISIS leader was killed in a U.S.-Nigerian mission", publisher: "The New York Times", date: 2026-05-16, tier: 3}
+        - {url: "https://www.militarytimes.com/news/pentagon-congress/2026/07/03/us-withdrew-forces-from-nigeria-after-operation-against-isis-africom-chief-says/", title: "US withdrew forces from Nigeria after operation against ISIS, AFRICOM chief says", publisher: "Military Times (Reuters)", date: 2026-07-03, tier: 3}
+    - domain: economic
+      text: "Oil, debt and the gas corridor: crude exports (OPEC quota compliance for four months to August 2026), the Dangote refinery meant to end fuel imports, and the Morocco pipeline (USD 25bn, first gas expected in 2031). External debt is about USD 54.5bn: the World Bank's IDA is the largest single creditor and China Exim the largest bilateral one."
+      confidence: C
+      sources:
+        - {url: "https://nairametrics.com/2026/10/08/top-10-largest-creditors-behind-nigerias-54-5-billion-external-debt/", title: "Top 10 largest creditors behind Nigeria's $54.5 billion external debt", publisher: "Nairametrics", date: 2026-10-08, tier: 3}
+        - {url: "https://www.reuters.com/sustainability/boards-policy-regulation/intergovernmental-deal-25-billion-nigeria-morocco-gas-pipeline-due-this-year-2026-04-13/", title: "Intergovernmental deal for $25 billion Nigeria-Morocco gas pipeline due this year, official", publisher: "Reuters", date: 2026-04-13, tier: 3}
+
+  constraints:
+    - text: "Debt service on a dollar budget. External debt is about USD 54.5bn in mid-2026; the World Bank's IDA (35%) and Eurobond holders (34%) are the largest creditors and China Exim (about 9%) the largest bilateral one. The naira stood at about N1,322 to the dollar in early September 2026, so every dollar of crude that stays at home is a dollar the debt does not get."
+      confidence: C
+      sources:
+        - {url: "https://nairametrics.com/2026/10/08/top-10-largest-creditors-behind-nigerias-54-5-billion-external-debt/", title: "Top 10 largest creditors behind Nigeria's $54.5 billion external debt", publisher: "Nairametrics", date: 2026-10-08, tier: 3}
+        - {url: "https://nairametrics.com/2026/09/05/naira-gains-n13-as-weekly-fx-turnover-falls-by-1-05-billion/", title: "Naira gains N13 as weekly FX turnover falls by $1.05 billion", publisher: "Nairametrics", date: 2026-09-05, tier: 3}
+    - text: "A northern border it cannot police alone. The Nigeria-Niger border is 1,608 km long and, in the Chief of Defence Staff's words, cooperation on it is 'not as elaborate as we want'; Niger has left the MNJTF; Burkina Faso's leaders threatened in December 2025 to 'neutralize' Nigerian aircraft flying over their territory without permission; ISWAP has used drones for intelligence and attack since 2025."
+      confidence: B
+      sources:
+        - {url: "https://adf-magazine.com/2026/09/diplomatic-divide-threatens-sahel-security/", title: "Diplomatic divide threatens Sahel security", publisher: "ADF Magazine", date: 2026-09, tier: 3}
+        - {url: "https://issafrica.org/pscreport/psc-insights/lake-chad-basin-s-counter-terrorism-must-adapt-to-defeat-boko-haram", title: "Lake Chad Basin's counter-terrorism must adapt to defeat Boko Haram", publisher: "ISS Africa", date: 2025, tier: 2}
+    - text: "A 2027 vote with the date still contested. The electoral commission's 20 February 2027 date is challenged in a report giving 16 January, and every concession to a foreign partner becomes a domestic campaign issue before the vote."
+      confidence: C
+      sources:
+        - {url: "https://allafrica.com/stories/202602130124.html", title: "Nigeria: President Jittery Over 2027 Election - APC Chieftain", publisher: "AllAfrica", date: 2026-02-13, tier: 3}
+        - {url: "https://africa.com/top-10-news/nigeria-sets-february-2027-election-date", title: "Nigeria sets February 2027 election date", publisher: "Africa.com", date: 2026-10, tier: 4}
+
+  paradoxes:
+    - text: "The sanctions aimed at reversing the 2023 coup in Niger pushed the Sahel states out of the bloc. The MNJTF lost Niger's troops and Nigeria lost the Sahel flank it needs against Boko Haram; ECOWAS now needs the AES back to survive."
+      confidence: C
+      sources:
+        - {url: "https://allafrica.com/stories/202502100296.html", title: "West Africa: Scenarios of Ecowas-AES Relationships - Nigeria's Strategic Autonomy As a Major Dynamic", publisher: "AllAfrica", date: 2025-02-10, tier: 3}
+        - {url: "https://adf-magazine.com/2026/09/diplomatic-divide-threatens-sahel-security/", title: "Diplomatic divide threatens Sahel security", publisher: "ADF Magazine", date: 2026-09, tier: 3}
+    - text: "The refinery built to end fuel imports takes the crude that earns the dollars. Dangote bought at least 16 million barrels of Nigerian crude for October, about 520,000 b/d (Reuters-reported), so less crude is left for export; the mechanism from crude to naira and debt service is our reading, not a sourced motive."
+      confidence: C
+      sources:
+        - {url: "https://beninwebtv.bj/en/nigeria-dangote-refinery-secures-at-least-16-million-barrels-for-october/", title: "Nigeria: Dangote refinery secures at least 16 million barrels for October", publisher: "Benin Web TV (citing Reuters)", date: 2026-09, tier: 3}
+        - {url: "https://nairametrics.com/2026/09/05/naira-gains-n13-as-weekly-fx-turnover-falls-by-1-05-billion/", title: "Naira gains N13 as weekly FX turnover falls by $1.05 billion", publisher: "Nairametrics", date: 2026-09-05, tier: 3}
+    - text: "Courting Paris to bring the French-speaking neighbours back into West African politics costs Nigeria its anti-French line. Tinubu's private dinner with Macron in Paris (17 September 2026) follows a 2024 state visit; Adebajo (Project Syndicate, June 2026, an opinion piece) reads it as a break with the policy aimed at reducing French influence in West Africa."
+      confidence: C
+      sources:
+        - {url: "https://allafrica.com/stories/202609180555.html", title: "Nigeria: Tinubu Meets Macron for Private Dinner in Paris", publisher: "AllAfrica", date: 2026-09-18, tier: 3}
+        - {url: "https://www2.project-syndicate.org/commentary/tinubu-french-reconciliation-strategy-could-have-far-reaching-strategic-costs-for-nigeria-by-adekeye-adebajo-2026-06", title: "Tinubu's French reconciliation strategy could have far-reaching strategic costs for Nigeria", publisher: "Project Syndicate", date: 2026-06, tier: 3}
+
+  reading: |
+    Nigeria is the region's indispensable state and a leader short of the means to lead: it holds the oil, the population and the ECOWAS flag, but its money goes to debt service, its north is pressed from the Sahel, and it relies on outside force and outside capital to fight insurgents it cannot beat alone. Its moves work against its aims in three places: the Sahel, where the ECOWAS sanctions on Niger drove the AES out and left the Lake Chad force without Niger; the oil, where the refinery built to end imports takes the crude that earns the dollars; and Paris and Washington, where the partners it courts bring frictions it must then manage at home. The 2027 election will decide whether the reform record survives its costs, which makes every concession to a partner a domestic question. This is a structural reading built on thin evidence (most rows are C, and the gaps are listed in the stance notes), not a verdict on Abuja's intentions.

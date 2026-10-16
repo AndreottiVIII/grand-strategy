@@ -1,0 +1,131 @@
+actor: NER
+stances:
+  # ---------- Sahel bloc ----------
+  - toward: MLI
+    grade: ally
+    trend: stable
+    bond: affinity
+    since: '2025-01'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Ally by a written alignment rather than kinship: Niger, Mali and Burkina Faso left ECOWAS together, the exit effective 29 January 2025, and launched a joint passport and a joint military arrangement (AllAfrica, Feb 2025). The Alliance of Sahel States is the bloc of juntas that sets Niamey's foreign line. Bond affinity is our reading: the three share coup-led governments and an anti-French line in every source, and none names kinship. Confidence C: all sources are tier-3 reporting. Mali's own card, written in parallel, carries its own reading of the pair."
+    sources:
+      - {url: "https://allafrica.com/stories/202502060018.html", title: "Sahel States Exit Ecowas, Launch Regional Passport and Joint Military", publisher: "AllAfrica", date: "2025-02-06", tier: 3}
+      - {url: "https://www.channelstv.com/2025/01/28/thousands-rally-in-burkina-faso-niger-to-cheer-ecowas-exit", title: "Thousands rally in Burkina Faso, Niger to cheer ECOWAS exit", publisher: "Channels TV", date: "2025-01-28", tier: 3}
+
+  - toward: BFA
+    grade: ally
+    trend: stable
+    bond: affinity
+    since: '2025-01'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Ally on the same footing as Mali: the joint exit from ECOWAS and the joint passport and military arrangement bind Niamey and Ouagadougou. Bond affinity, our reading, for the same reasons as the Mali row. Confidence C: tier-3 reporting only, and the sources do not name Burkina Faso's role in detail beyond the joint launch."
+    sources:
+      - {url: "https://allafrica.com/stories/202502060018.html", title: "Sahel States Exit Ecowas, Launch Regional Passport and Joint Military", publisher: "AllAfrica", date: "2025-02-06", tier: 3}
+      - {url: "https://www.channelstv.com/2025/01/28/thousands-rally-in-burkina-faso-niger-to-cheer-ecowas-exit", title: "Thousands rally in Burkina Faso, Niger to cheer ECOWAS exit", publisher: "Channels TV", date: "2025-01-28", tier: 3}
+
+  # ---------- neighbours ----------
+  - toward: NGA
+    grade: reluctant_partner
+    trend: stable
+    bond: none
+    since: '2025'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Cooperates out of necessity while resisting alignment: Abuja extended an olive branch in 2025, reaffirming Niger's sovereignty and inviting talks, and a Nigerian foreign-minister visit to Niamey was planned for April 2025 on cross-border security. The reading is reluctant because Niamey alleged Nigerian involvement in an armed group's attack (arise.tv, 2025) and the friction has not been resolved. Stable: no source in this pass shows a decisive change in 2026. Bond none: no kinship or affinity is named. Gap: the 2023 severing of ties reported by secondary sources is not verified here; the Nigeria card (written in parallel) should be checked against it."
+    sources:
+      - {url: "https://www.arise.tv/nigeria-extends-olive-branch-to-niger-calls-for-discussion-on-issues-of-mutual-interest/", title: "Nigeria extends olive branch to Niger, calls for discussion on issues of mutual interest", publisher: "Arise News", date: "2025", tier: 3}
+      - {url: "https://fr.allafrica.com/stories/202504160122.html", title: "Le chef de la diplomatie nigériane attendu pour une visite à Niamey", publisher: "AllAfrica", date: "2025-04-16", lang: fr, tier: 3}
+
+  - toward: BEN
+    grade: rival
+    trend: warming
+    bond: none
+    since: '2023-07'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Mirror of the Benin card (BEN toward NER, rival, warming, same sources): the same reading from the Niamey side. The border has been shut since the July 2023 coup, Niamey kept its side closed after ECOWAS lifted its sanctions, and in May 2024 Benin blocked Niger's crude loading until Niger reopened its side. Warming: the 2 June 2026 visit to Niamey and the expert committee given 15 days to recommend a reopening. Rival, not adversary: the dispute is over trade and the pipeline, with no declared aim of the other state's end. Bond none: no kinship or affinity is named. Confidence C: tier-3 reporting; the committee's outcome is not verified."
+    sources:
+      - {url: "https://www.ecofinagency.com/news/0206-56101-benin-and-niger-move-toward-border-reopening-after-years-of-diplomatic-strain", title: "Benin and Niger move toward border reopening after years of diplomatic strain", publisher: "Ecofin Agency", date: "2026-06-02", tier: 3}
+      - {url: "https://www.hellenicshippingnews.com/benin-blocks-niger-oil-exports-in-border-row/", title: "Benin blocks Niger oil exports in border row", publisher: "Hellenic Shipping News", date: "2024-05", tier: 3}
+
+  - toward: DZA
+    grade: reluctant_partner
+    trend: warming
+    bond: none
+    since: '2025-04-06'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Friction and necessity at once. Niger withdrew its ambassador from Algiers on 6 April 2025, with Mali and Burkina Faso, over the downing of a drone (France 24). Warming: Tiani travelled to Algiers on 15-16 February 2026, read as a search for another outlet given the Benin pipeline dispute (AllAfrica, Feb 2026). Reluctant rather than rival because the trip reads as need, not as a declared rivalry; the Algeria card holds the mirror as neutral and the build will show the asymmetry. Confidence C: tier-3 reporting; whether Niamey's ambassador returned alongside Mali in July 2026 is a gap, as the Algeria card notes."
+    sources:
+      - {url: "https://www.france24.com/en/africa/20250407-sahel-alliance-recalls-ambassadors-from-algiers-over-downed-drone", title: "Sahel alliance recalls ambassadors from Algiers over downed drone", publisher: "France 24", date: "2025-04-07", tier: 3}
+      - {url: "https://fr.allafrica.com/stories/202602230466.html", title: "Niger: Tiani's strategic repositioning", title_original: "Niger: Le repositionnement stratégique de Tiani", publisher: "AllAfrica", date: "2026-02-23", lang: fr, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2026/7/11/algeria-and-mali-restore-diplomatic-ties-following-yearlong-rift", title: "Algeria and Mali restore diplomatic ties following yearlong rift", publisher: "Al Jazeera", date: "2026-07-11", tier: 3}
+
+  # ---------- outside powers ----------
+  - toward: FRA
+    grade: rival
+    trend: cooling
+    bond: grievance
+    since: '2023-08-25'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "The junta gave the French ambassador 48 hours to leave on 25 August 2023 and he left in late September; Paris ordered its troops out in the following months, and the junta nationalised the Somair uranium mine in June 2025 as the spat with Orano worsened (Al Jazeera). Rival, not adversary: the aim is expulsion and control of resources, not France's destruction; the junta's grievances are over French interference, not a declared aim to end the French state. Cooling: each step since 2023 has deepened the quarrel. Bond grievance: the open wound of the colonial mining and security relationship. Confidence C: tier-3 reporting. Gap: the date of the French troop withdrawal is not sourced in this pass."
+    sources:
+      - {url: "https://english.alarabiya.net/News/world/2023/08/25/Niger-junta-orders-French-ambassador-to-leave-country-within-48-hours", title: "Niger junta orders French ambassador to leave country within 48 hours", publisher: "Al Arabiya", date: "2023-08-25", tier: 3}
+      - {url: "https://www.timeslive.co.za/news/africa/2023-09-27-french-ambassador-to-niger-leaves-as-relations-nosedive-after-coup/", title: "French ambassador to Niger leaves as relations nosedive after coup", publisher: "TimesLIVE (AFP)", date: "2023-09-27", tier: 3}
+      - {url: "https://www.aljazeera.com/news/2025/6/20/niger-nationalises-uranium-mine-as-spat-with-french-nuclear-giant-worsens", title: "Niger nationalises uranium mine as spat with French nuclear giant worsens", publisher: "Al Jazeera", date: "2025-06-20", tier: 3}
+
+  - toward: USA
+    grade: rival
+    trend: stable
+    bond: grievance
+    since: '2024-03-17'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "The junta revoked the 2012 military cooperation agreement in March 2024 and called the US military presence 'no longer justified'; the US then withdrew from Air Base 101 in Niamey (early July 2024) and from Air Base 201 in Agadez (completed 5 August 2024). Rival, not adversary: the dispute is over a military presence and its legal basis, with no declared aim of the other's end. Stable: sources in this pass record no change of posture in 2025-26 (a US reading of renewed engagement is unsourced here and not used). Bond grievance: a forced exit after a coup the US declared a coup. Confidence C: tier-3 reporting only."
+    sources:
+      - {url: "https://www.africanews.com/amp/2024/03/17/nigers-junta-revokes-relations-with-us-military/", title: "Niger's junta revokes relations with US military", publisher: "Africanews", date: "2024-03-17", tier: 3}
+      - {url: "https://allafrica.com/stories/202403180001.html", title: "Niger: Niamey Revokes Military Cooperation Agreement with the United States After Tense Bilateral Talks", publisher: "AllAfrica", date: "2024-03-18", tier: 3}
+      - {url: "https://thestar.com.my/news/world/2024/07/08/us-troops-pull-out-of-niger039s-air-base-101", title: "US troops pull out of Niger's Air Base 101", publisher: "The Star", date: "2024-07-08", tier: 3}
+      - {url: "https://english.ahram.org.eg/News/528606.aspx", title: "US military completes withdrawal from final base in Niger", publisher: "Ahram Online", date: "2024-08", tier: 3}
+
+  - toward: RUS
+    grade: partner
+    trend: warming
+    bond: none
+    alignment: de_facto
+    since: '2026-02-03'
+    last_verified: '2026-10-16'
+    confidence: B
+    note: "Partner with a de facto alignment, not an ally: Russia's Africa Corps guards the capital and its airport and Moscow confirmed its role in repelling the ISIL attack on Niamey airport (Feb 2026) and in putting down an attempted coup (Aug 2026), but no defence treaty is named in any source, so the grade stays partner and the alignment is de facto (arms and sanctuary, per the ontology). Warming: the 2025 embassy reopening announced by Moscow and the 2026 military help. Bond none: interest, not kinship. Confidence B: the Russian government's own confirmation is tier 1 for what Moscow says, tier 3 for the facts. Gap: the Africa Corps' arrival date is not sourced in this pass; since is set to the first confirmed joint action. Mirror: the Russia card's incident row carries the same sources."
+    sources:
+      - {url: "https://www.aljazeera.com/news/2026/2/3/moscow-confirms-russian-forces-helped-repel-isil-attack-on-niger-airport", title: "Moscow confirms Russian forces helped repel ISIL attack on Niger airport", publisher: "Al Jazeera", date: "2026-02-03", tier: 3}
+      - {url: "https://www.bbc.com/news/articles/c5ye8egg596o", title: "Niger attempted coup: Russia says it helped to repel attack", publisher: "BBC", date: "2026-08-30", tier: 3}
+      - {url: "https://africa.businessinsider.com/local/lifestyle/russia-reveals-its-intention-to-open-an-embassy-in-niger/mlcqbsg", title: "Russia reveals its intention to open an embassy in Niger", publisher: "Business Insider Africa", date: "2025-04-04", tier: 3}
+
+  - toward: CHN
+    grade: partner
+    trend: cooling
+    bond: none
+    since: '2025-03-14'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Transactional partner, cooling. The oil and the Benin pipeline keep Beijing in the state's economy, but in March 2025 the junta gave the Niger-based heads of CNPC, WAPCO and the SORAZ refinery 48 hours to leave, citing a pay gap between expatriate and local staff; a tourism decree revoked a Chinese-run hotel's licence the same week. The government's stated reason is a pay dispute; the Alliance of Sahel States called the companies' conduct a 'flagrant disregard' for sovereignty (Capital FM, as reported). Partner, not reluctant: no source reads the pair as forced on Niamey. Bond none: interest only. Confidence C: tier-3 reporting; the reasons differ by source and are recorded here as reported."
+    sources:
+      - {url: "https://chinaglobalsouth.com/2025/03/15/niger-expels-three-chinese-oil-executives-reports/", title: "Niger expels three Chinese oil executives: reports", publisher: "China Global South", date: "2025-03-15", tier: 3}
+      - {url: "https://fmtv5.freemalaysiatoday.com/category/business/2025/03/14/niger-expels-chinese-oil-executives", title: "Niger expels Chinese oil executives", publisher: "Free Malaysia Today", date: "2025-03-14", tier: 3}
+
+  # ---------- armed non-state actor ----------
+  - toward: nsa-jnim
+    grade: adversary
+    trend: stable
+    bond: grievance
+    since: '2026-03'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Mortal enemy in Tillabéri, on the structural reading: JNIM fights the state's forces and its airport, and the junta's stated aim is the defeat of the armed groups on its soil; the sources describe continuous attacks, not a declared aim of the group's wish to end the state, so the grade rests on the continuity of the war. Sources are tier 3 and the grade is ours; the rivalry with ISSP (ACLED, via ADF) raises the stakes but is not the grade's basis. Stable: attacks recur through 2026 in the same provinces. Bond grievance: an open war with no channel of talks in any source. Gap: the start of the war is not dated in these sources; since is the earliest dated JNIM attack in them (the March 2026 Banibangou convoy ambush, reported as JNIM and ISSP)."
+    sources:
+      - {url: "https://adf-magazine.com/2026/07/terror-rivalry-fuels-chaos-in-niger/", title: "Terror rivalry fuels chaos in Niger", publisher: "ADF Magazine", date: "2026-07", tier: 3}
+      - {url: "https://www.africanews.com/amp/2026/03/13/nearly-1300-killed-in-nigers-tillaberi-as-jihadist-attacks-surge/", title: "Nearly 1,300 killed in Niger's Tillaberi as jihadist attacks surge", publisher: "Africanews", date: "2026-03-13", tier: 3}

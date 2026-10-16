@@ -1,14 +1,98 @@
 id: NER
 name: Niger
+short: Niger
 type: state
 iso2: ne
 wikipedia: https://en.wikipedia.org/wiki/Niger
-coords:
-- 2.12
-- 13.52
+coords: [2.12, 13.52]
 seat: Niamey
-regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+regions: [west-africa]
+card: full
+tier: protagonist
+last_verified: '2026-10-16'
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the officers in power after the July 2023 coup that ousted President Bazoum, with Russia's Africa Corps guarding the capital and its airport. Moscow confirmed its forces helped repel the ISIL attack on Niamey airport in February 2026 and helped put down an attempted coup in August 2026. Every other choice below serves the regime's survival."
+      confidence: B
+      sources:
+        - {url: "https://www.timeslive.co.za/news/africa/2023-09-27-french-ambassador-to-niger-leaves-as-relations-nosedive-after-coup/", title: "French ambassador to Niger leaves as relations nosedive after coup", publisher: "TimesLIVE (AFP)", date: "2023-09-27", tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/2/3/moscow-confirms-russian-forces-helped-repel-isil-attack-on-niger-airport", title: "Moscow confirms Russian forces helped repel ISIL attack on Niger airport", publisher: "Al Jazeera", date: "2026-02-03", tier: 3}
+        - {url: "https://www.bbc.com/news/articles/c5ye8egg596o", title: "Niger attempted coup: Russia says it helped to repel attack", publisher: "BBC", date: "2026-08-30", tier: 3}
+    - rank: 2
+      text: "Take the state's mineral and oil revenue out of foreign hands. The junta approved the takeover of the Somair uranium mine on 19 June 2025, where Orano held 63.4 per cent, and the government says Orano took 86.3 per cent of output from 1971 to 2024 (Al Jazeera puts Orano's stake at 63 per cent). In March 2025 it gave three Chinese oil directors (CNPC, WAPCO, SORAZ) 48 hours to leave, citing a pay dispute over local staff."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2025/6/20/niger-nationalises-uranium-mine-as-spat-with-french-nuclear-giant-worsens", title: "Niger nationalises uranium mine as spat with French nuclear giant worsens", publisher: "Al Jazeera", date: "2025-06-20", tier: 3}
+        - {url: "https://www.ecofinagency.com/news-industry/2006-47367-niger-nationalizes-somair-s-uranium-mine-amid-fallout-with-france-s-orano", title: "Niger nationalizes Somair's uranium mine amid fallout with France's Orano", publisher: "Ecofin Agency", date: "2025-06", tier: 3}
+        - {url: "https://chinaglobalsouth.com/2025/03/15/niger-expels-three-chinese-oil-executives-reports/", title: "Niger expels three Chinese oil executives: reports", publisher: "China Global South", date: "2025-03-15", tier: 3}
+    - rank: 3
+      text: "Reopen the one trade route to the sea. The border with Benin has been shut since the 2023 coup and the crude pipeline to Benin's port is the state's only oil outlet; on 2 June 2026 Niamey and Cotonou agreed to reopen the border through an expert committee given 15 days. The committee's outcome is not verified in this card."
+      confidence: C
+      sources:
+        - {url: "https://www.ecofinagency.com/news/0206-56101-benin-and-niger-move-toward-border-reopening-after-years-of-diplomatic-strain", title: "Benin and Niger move toward border reopening after years of diplomatic strain", publisher: "Ecofin Agency", date: "2026-06-02", tier: 3}
+        - {url: "https://www.hellenicshippingnews.com/benin-blocks-niger-oil-exports-in-border-row/", title: "Benin blocks Niger oil exports in border row", publisher: "Hellenic Shipping News", date: "2024-05", tier: 3}
+    - rank: 4
+      text: "Hold the Tillabéri border against the jihadists. JNIM and the Islamic State's Sahel province (ISSP) now fight each other and the state in the same western provinces. ISSP attacked the military bases at Inates (at least 51 soldiers killed) and Banibangou (34) on 15 June 2026, and JNIM hit the Niamey airport, which hosts Air Base 101 and the Africa Corps, three days later."
+      confidence: C
+      sources:
+        - {url: "https://adf-magazine.com/2026/07/terror-rivalry-fuels-chaos-in-niger/", title: "Terror rivalry fuels chaos in Niger", publisher: "ADF Magazine", date: "2026-07", tier: 3}
+        - {url: "https://www.africanews.com/amp/2026/03/13/nearly-1300-killed-in-nigers-tillaberi-as-jihadist-attacks-surge/", title: "Nearly 1,300 killed in Niger's Tillaberi as jihadist attacks surge", publisher: "Africanews", date: "2026-03-13", tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "The Alliance of Sahel States. Niger, Mali and Burkina Faso left ECOWAS together, the exit taking effect on 29 January 2025, and launched a joint passport and a joint military arrangement, a bloc of juntas that sets the state's foreign line. Outside the bloc, Niamey keeps a second door open: Tiani's visit to Algiers on 15-16 February 2026 is read as a search for another outlet, given the Benin pipeline dispute."
+      confidence: C
+      sources:
+        - {url: "https://allafrica.com/stories/202502060018.html", title: "Sahel States Exit Ecowas, Launch Regional Passport and Joint Military", publisher: "AllAfrica", date: "2025-02-06", tier: 3}
+        - {url: "https://www.channelstv.com/2025/01/28/thousands-rally-in-burkina-faso-niger-to-cheer-ecowas-exit", title: "Thousands rally in Burkina Faso, Niger to cheer ECOWAS exit", publisher: "Channels TV", date: "2025-01-28", tier: 3}
+        - {url: "https://fr.allafrica.com/stories/202602230466.html", title: "Niger: Tiani's strategic repositioning", title_original: "Niger: Le repositionnement stratégique de Tiani", publisher: "AllAfrica", date: "2026-02-23", lang: fr, tier: 3}
+    - domain: military
+      text: "The Africa Corps as the regime's guard. Moscow confirmed its forces helped repel the ISIL attack on Niamey airport (3 February 2026) and helped put down an attempted coup (August 2026). Russia had also announced in April 2025 that it would reopen its embassy in Niamey. The guard protects the capital, not the whole territory: see the Tillabéri paradox below."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/2/3/moscow-confirms-russian-forces-helped-repel-isil-attack-on-niger-airport", title: "Moscow confirms Russian forces helped repel ISIL attack on Niger airport", publisher: "Al Jazeera", date: "2026-02-03", tier: 3}
+        - {url: "https://www.bbc.com/news/articles/c5ye8egg596o", title: "Niger attempted coup: Russia says it helped to repel attack", publisher: "BBC", date: "2026-08-30", tier: 3}
+        - {url: "https://africa.businessinsider.com/local/lifestyle/russia-reveals-its-intention-to-open-an-embassy-in-niger/mlcqbsg", title: "Russia reveals its intention to open an embassy in Niger", publisher: "Business Insider Africa", date: "2025-04-04", tier: 3}
+    - domain: economic
+      text: "Uranium and crude oil. Somair, nationalised in June 2025, is the state's only active uranium mine after the 2024 removal of Orano's operational control of its other mines (Al Jazeera). Crude is exported through the Benin pipeline, whose loading Benin blocked in May 2024 until Niger reopened its side."
+      confidence: C
+      sources:
+        - {url: "https://www.aljazeera.com/news/2025/6/20/niger-nationalises-uranium-mine-as-spat-with-french-nuclear-giant-worsens", title: "Niger nationalises uranium mine as spat with French nuclear giant worsens", publisher: "Al Jazeera", date: "2025-06-20", tier: 3}
+        - {url: "https://www.hellenicshippingnews.com/benin-blocks-niger-oil-exports-in-border-row/", title: "Benin blocks Niger oil exports in border row", publisher: "Hellenic Shipping News", date: "2024-05", tier: 3}
+
+  constraints:
+    - text: "Landlocked, with one way to the sea. Every route to a port runs through Benin, whose border has been shut since July 2023, or through the Nigerian frontier, where relations are being negotiated case by case (a Nigerian foreign-minister visit was planned for April 2025 after Niamey accused Abuja of backing an armed group). The junta cannot choose its outlet; it can only choose which neighbour to fight."
+      confidence: C
+      sources:
+        - {url: "https://www.ecofinagency.com/news/0206-56101-benin-and-niger-move-toward-border-reopening-after-years-of-diplomatic-strain", title: "Benin and Niger move toward border reopening after years of diplomatic strain", publisher: "Ecofin Agency", date: "2026-06-02", tier: 3}
+        - {url: "https://fr.allafrica.com/stories/202504160122.html", title: "Le chef de la diplomatie nigériane attendu pour une visite à Niamey", publisher: "AllAfrica", date: "2025-04-16", lang: fr, tier: 3}
+    - text: "Security on its own soil. JNIM and ISSP strike Tillabéri and the capital's airport, and the province accounted for more than 1,200 of the 1,939 deaths recorded in Niger in 2025 (ACLED data, cited by ADF Magazine)."
+      confidence: C
+      sources:
+        - {url: "https://adf-magazine.com/2026/07/terror-rivalry-fuels-chaos-in-niger/", title: "Terror rivalry fuels chaos in Niger", publisher: "ADF Magazine", date: "2026-07", tier: 3}
+        - {url: "https://www.africanews.com/amp/2026/03/13/nearly-1300-killed-in-nigers-tillaberi-as-jihadist-attacks-surge/", title: "Nearly 1,300 killed in Niger's Tillaberi as jihadist attacks surge", publisher: "Africanews", date: "2026-03-13", tier: 3}
+    - text: "No regional or Western cover. The three juntas left ECOWAS, which asked that their passports stay recognised and their citizens keep visa-free rights only until further notice. The exit removes the bloc's mediation, its financing and its legitimacy from the security problem. Our reading: what remains is bilateral money and the Russian guard, both of which are hard to sustain without a trade outlet."
+      confidence: C
+      sources:
+        - {url: "https://allafrica.com/stories/202502060018.html", title: "Sahel States Exit Ecowas, Launch Regional Passport and Joint Military", publisher: "AllAfrica", date: "2025-02-06", tier: 3}
+
+  paradoxes:
+    - text: "Sealing the state off as a defence, then buying the way out. The Benin border closure, kept on the Nigerien side even after ECOWAS lifted its sanctions, was meant to punish a neighbour; it cut the state off from its only sea route and from its own pipeline revenue, and the reopening Niamey now negotiates is the price of that isolation."
+      confidence: C
+      sources:
+        - {url: "https://www.ecofinagency.com/news/0206-56101-benin-and-niger-move-toward-border-reopening-after-years-of-diplomatic-strain", title: "Benin and Niger move toward border reopening after years of diplomatic strain", publisher: "Ecofin Agency", date: "2026-06-02", tier: 3}
+        - {url: "https://www.hellenicshippingnews.com/benin-blocks-niger-oil-exports-in-border-row/", title: "Benin blocks Niger oil exports in border row", publisher: "Hellenic Shipping News", date: "2024-05", tier: 3}
+    - text: "The guard that cannot hold the gate. The Africa Corps protects the capital and its airport, yet the ISSP attack on Niamey airport in January 2026 and JNIM's raid in June 2026 both reached the same airport, which hosts Air Base 101 and the Russian force, and ISSP killed dozens of soldiers in the bases of Inates and Banibangou. Russia's protection is for the capital; the war is in the provinces."
+      confidence: C
+      sources:
+        - {url: "https://adf-magazine.com/2026/07/terror-rivalry-fuels-chaos-in-niger/", title: "Terror rivalry fuels chaos in Niger", publisher: "ADF Magazine", date: "2026-07", tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/2/3/moscow-confirms-russian-forces-helped-repel-isil-attack-on-niger-airport", title: "Moscow confirms Russian forces helped repel ISIL attack on Niger airport", publisher: "Al Jazeera", date: "2026-02-03", tier: 3}
+    - text: "Taking the mine from Orano turns a French asset into a court case. The junta answers Orano's 86.3 per cent of output with a nationalisation and a sovereign win at home, but Orano replies with arbitration and lawsuits, so the state must now defend a mine it runs in courts abroad and at home."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/news/2025/6/20/niger-nationalises-uranium-mine-as-spat-with-french-nuclear-giant-worsens", title: "Niger nationalises uranium mine as spat with French nuclear giant worsens", publisher: "Al Jazeera", date: "2025-06-20", tier: 3}
+
+  reading: |
+    Niger's junta has traded the old French security partnership for a Russian guard and a regional bloc of juntas, and it has tried to pay for its isolation by taking the uranium and the oil out of foreign hands. Its two real problems are geography and war: a landlocked state whose only outlets run through Benin and the Nigerian frontier, and a Tillabéri border where JNIM and the Islamic State's Sahel province strike the bases and the capital's airport. The paradox is that each act of sealing the state off, from the Benin border to the ECOWAS exit to the expulsions, shrinks the outlets the uranium and the oil need, while the Russian guard protects the capital and not the provinces where the state is losing. Luttwak's reading is a regime that chose isolation as a defence and must now buy its way back out through partners it has already expelled.

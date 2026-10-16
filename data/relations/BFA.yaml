@@ -1,0 +1,82 @@
+from: BFA
+relations:
+  # ---------- alignment ----------
+  - to: org-aes
+    layer: alignment
+    type: treaty
+    summary: "Burkina Faso, Mali and Niger left ECOWAS (January 2024) and signed a pact in July 2024 to form their own confederation, the Alliance of Sahel States. The treaty text was not opened; whether it carries a mutual defence clause is not verified here."
+    since: '2024-07'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.aljazeera.com/news/2024/7/6/niger-mali-and-burkina-faso-military-leaders-sign-new-pact-rebuff-ecowas", title: "Niger, Mali and Burkina Faso military leaders sign new pact, rebuff ECOWAS", publisher: "Al Jazeera", date: "2024-07-06", tier: 3}
+      - {url: "https://www.dw.com/en/mali-burkina-faso-and-niger-quit-ecowas/a-68106116", title: "Mali, Burkina Faso and Niger quit ECOWAS", publisher: "Deutsche Welle", date: "2024-01-28", tier: 3}
+
+  # ---------- dependency ----------
+  - to: RUS
+    layer: dependency
+    type: military_presence
+    summary: "Russian Africa Corps instructors in Burkina Faso, with an initial contingent that Africa Corps put at about 100 personnel in 2024 (its own Telegram claim, as carried by Bloomberg); AFP reported a few dozen instructors the same year. Burkina did not confirm the deployment. The value is the claimed contingent, not a verified count."
+    since: '2024-06'
+    until: null
+    value: 100
+    unit: africa_corps_initial_contingent_claimed
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://bnnbloomberg.ca/russian-troops-begin-burkina-faso-deployment-to-bolster-security-1.2026130", title: "Russian Troops Begin Burkina Faso Deployment to Bolster Security", publisher: "Bloomberg (via BNN)", date: "2024", tier: 3}
+      - {url: "https://themoscowtimes.com/2024/06/05/moscow-to-deploy-more-military-instructors-in-burkina-faso-a85324", title: "Moscow to deploy more military instructors in Burkina Faso", publisher: "The Moscow Times", date: "2024-06-05", tier: 3}
+
+  # ---------- action ----------
+  - to: CIV
+    layer: action
+    type: incident
+    summary: "Traoré accuses Abidjan of welcoming the destabilisers of his country (April 2024). In April 2025 the junta announced a foiled plot and linked its masterminds to Ivory Coast; in September 2025 the head of state named neighbouring countries, Ivory Coast among them. Abidjan's reply is not in the sources read here. Mirrored from the CIV card's incident rows."
+    since: '2024-04'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.zawya.com/en/economy/africa/burkina-faso-leader-accuses-ivory-coast-of-welcoming-destabilisers-m20hrl8l", title: "Burkina Faso leader accuses Ivory Coast of welcoming destabilisers", publisher: "Zawya", date: "2024-04", tier: 3}
+      - {url: "https://www.solardaily.com/reports/Burkina_junta_says_foiled_plot_to_sow_total_chaos_999.html", title: "Burkina junta says foiled plot to sow total chaos", publisher: "Solar Daily (AFP copy)", date: "2025-04", tier: 3}
+      - {url: "https://fr.allafrica.com/stories/202509290183.html", title: "Burkina Faso: head of state accuses neighbouring countries of destabilisation, including Ivory Coast", title_original: "Afrique de l'Ouest: Burkina Faso - Le chef de l'Etat accuse des pays voisins de destabilisation, dont la Cote d'Ivoire", lang: fr, publisher: "allAfrica", date: "2025-09-29", tier: 3}
+
+  - to: FRA
+    layer: action
+    type: incident
+    summary: "Burkina Faso breaks off diplomatic relations with France on 26 June 2026, announced on state television by the communications minister. It cites non-interference and accuses France of supporting 'subversive networks' and 'terrorists'; Paris calls the move hostile and unfounded and is considering reciprocal measures."
+    since: '2026-06-26'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    note: "The French foreign ministry statement was seen in search results and not opened; the Reuters copy was read. The break is recorded as a single dated act, not as the 2023 expulsion of French forces, which is not sourced in this pass."
+    sources:
+      - {url: "https://www.diplomatie.gouv.fr/en/presse-et-ressources/decouvrir-et-informer/actualites/decision-unilaterale-du-burkina-faso-de-rompre-ses-relations-diplomatiques-avec-la-france", title: "Burkina's unilateral decision to break off diplomatic relations with France", publisher: "French Ministry for Europe and Foreign Affairs", date: "2026-06", tier: 1}
+      - {url: "https://www.thestar.com.my/news/world/2026/06/27/burkina-faso-breaks-off-diplomatic-relations-with-france", title: "Burkina Faso breaks off diplomatic relations with France", publisher: "The Star (Reuters copy)", date: "2026-06-27", tier: 3}
+
+  - to: GHA
+    layer: action
+    type: agreement
+    summary: "Seven legal instruments signed in February 2026 at the joint cooperation commission in Ouagadougou, led by Ghana's Foreign Minister Ablakwa, after the Titao attack that killed Ghanaian traders. Mirrored from the GHA card's agreement row; the content of the instruments is not checked."
+    since: '2026-02'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Read from headlines and search summaries (AFP via NAMPA; allAfrica in French), not the articles. Tier 3 only, so C. The count of seven comes from those headlines."
+    sources:
+      - {url: "https://www.nampa.org/text/22866233", title: "Ghana, Burkina beef up security ties after jihadist attack", publisher: "AFP (via NAMPA)", date: "2026-02-22", tier: 3}
+      - {url: "https://fr.allafrica.com/stories/202602230114.html", title: "West Africa: Burkina-Ghana cooperation - 7 agreements signed (translated)", title_original: "Afrique de l'Ouest: Coopération Burkina - Ghana - 7 accords signés", lang: fr, publisher: "allAfrica", date: "2026-02-23", tier: 3}
+
+  - to: nsa-jnim
+    layer: action
+    type: incident
+    summary: "JNIM attack on Barsalogho (Kaya province, 24 August 2024): up to 200 killed and at least 140 injured, mostly civilians and militia members digging trenches beside soldiers. The junta condemned the attack without a casualty figure for its own forces. ACLED says JNIM uses Tapoa and Kompienga provinces in Burkina Faso as staging grounds for raids into Benin; the row records the group's use of Burkinabe ground, not a state act."
+    since: '2024-08-24'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Death tolls differ by source; the range is recorded, not one number. The Djibo attack is not verified: the search returned nothing on it. The ACLED source is mirrored from the BEN card, which holds the Benin side of the same spillover."
+    sources:
+      - {url: "https://www.longwarjournal.org/archives/2024/08/analysis-al-qaeda-kills-hundreds-in-burkina-faso-attack.php", title: "Analysis: Al Qaeda kills hundreds in Burkina Faso attack", publisher: "FDD's Long War Journal", date: "2024-08-26", tier: 3}
+      - {url: "https://acleddata.com/update/africa-overview-may-2025", title: "Africa overview, May 2025", publisher: "ACLED", date: "2025-05", tier: 2}

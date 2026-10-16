@@ -22,7 +22,7 @@ grand_strategy:
         - {url: "https://www.aljazeera.com/news/2025/7/4/mali-military-chief-granted-renewable-five-year-presidential-term", title: "Mali military chief granted renewable five-year presidential term", publisher: "Al Jazeera", date: "2025-07-04", tier: 3}
         - {url: "https://www.bbc.com/news/articles/cqj7z92xw9no", title: "Mali junta dissolves all political parties in latest opposition crackdown", publisher: "BBC", date: "2025-05-14", tier: 3}
     - rank: 2
-      text: "Retake the north. The Azawad Liberation Front (FLA, founded 30 November 2024 by the merger of the MNLA, the HCUA and armed fringes of two Tuareg and Arab groups) claimed Kidal in its offensive from 25 April 2026. Bamako answers with drone strikes (the Tinzaouaten strike of December 2024 killed several FLA leaders, per RFI) and with a foreign army it cannot fully control."
+      text: "Retake the north. The Azawad Liberation Front (FLA, founded 30 November 2024 by the merger of the MNLA, the HCUA and armed fringes of two Tuareg and Arab groups) claimed Kidal in its offensive from 25 April 2026. Bamako answers with drone strikes (the Tinzaouaten strike of December 2024 reportedly killed several FLA leaders, per RFI) and with a foreign army it cannot fully control."
       confidence: C
       sources:
         - {url: "https://apnews.com/article/mali-gunfire-airport-96f93a72f4766d538e0c98d9e6afa912", title: "Gunfire near Kidal airport (title paraphrased; cited via Wikipedia, not opened)", publisher: "AP", date: "2026-04-25", tier: 3}
@@ -63,28 +63,34 @@ grand_strategy:
         - {url: "https://www.bloomberg.com/news/articles/2025-07-10/mali-helicopters-seize-117-million-of-gold-from-barrick-s-giant-mine", title: "Mali helicopters seize $117 million of gold from Barrick's giant mine", publisher: "Bloomberg", date: "2025-07-10", tier: 3}
 
   constraints:
-    - text: "The port belongs to someone else. Mali is landlocked, so its fuel and trade run through Dakar and Abidjan. The JNIM blockade from September 2025 hit fuel tankers from Senegal and Cote d'Ivoire on the Senegal-Mali route, and by October 2025 fuel was scarce in Bamako."
+    - confidence: B
+      text: "The port belongs to someone else. Mali is landlocked, so its fuel and trade run through Dakar and Abidjan. The JNIM blockade from September 2025 hit fuel tankers from Senegal and Cote d'Ivoire on the Senegal-Mali route, and by October 2025 fuel was scarce in Bamako."
       sources:
         - {url: "https://www.timeslive.co.za/news/africa/2025-09-09-mali-army-carries-out-airstrikes-after-militants-announce-blockade-on-fuel-imports/", title: "Mali army carries out airstrikes after militants announce blockade on fuel imports", publisher: "TimesLive", date: "2025-09-09", tier: 3}
         - {url: "https://www.africanews.com/amp/2025/10/08/desperate-search-for-fuel-in-malis-capital-as-al-qaida-linked-group-enforces-blockade/", title: "Desperate search for fuel in Mali's capital as al-Qaida-linked group enforces blockade", publisher: "Africanews", date: "2025-10-08", tier: 3}
-    - text: "Gold cannot be run alone. The Barrick dispute (seizure in 2025, reopening under a tax settlement in November 2025) shows that the state still needs the company's capital and operating skills."
+    - confidence: B
+      text: "Gold cannot be run alone. The Barrick dispute (seizure in 2025, reopening under a tax settlement in November 2025) shows that the state still needs the company's capital and operating skills."
       sources:
         - {url: "https://apnews.com/article/mali-barrick-gold-mine-dispute-8917f68fed7baa1090a4517bfa275bc4", title: "Mali and Barrick agree to resolve tax dispute and reopen gold mine", publisher: "AP", date: "2025-11-25", tier: 3}
-    - text: "The foreign army is thin and unpopular. The Africa Corps abandoned Kidal under attack in April 2026, lost a helicopter to Tuareg fire in July 2026 (reported), and HRW accuses it of killing nine villagers in August 2026."
+    - confidence: B
+      text: "The foreign army is thin and unpopular. The Africa Corps abandoned Kidal under attack in April 2026, lost a helicopter to Tuareg fire in July 2026 (reported), and HRW accuses it of killing nine villagers in August 2026."
       sources:
         - {url: "https://www.bbc.com/news/articles/c3w3wyq4v14o", title: "Mali attacks: Russia's Africa Corps confirms withdrawal from Kidal", publisher: "BBC", date: "2026-04-27", tier: 3}
         - {url: "https://www.hrw.org/news/2026/08/20/mali-russias-africa-corps-massacres-villagers", title: "Mali: Russia's 'Africa Corps' Massacres Villagers", publisher: "Human Rights Watch", date: "2026-08-20", tier: 2}
 
   paradoxes:
-    - text: "Leaving ECOWAS to be sovereign made the corridors the target. The exit removed the regional framework that kept the coastal routes open, and the blockade now hits the same Dakar and Abidjan fuel lines Bamako depends on."
+    - confidence: B
+      text: "Leaving ECOWAS to be sovereign made the corridors the target. The exit removed the regional framework that kept the coastal routes open, and the blockade now hits the same Dakar and Abidjan fuel lines Bamako depends on."
       sources:
         - {url: "https://www.dw.com/en/mali-burkina-faso-and-niger-quit-ecowas/a-68106116", title: "Mali, Burkina Faso and Niger quit ECOWAS", publisher: "Deutsche Welle", date: "2024-01-28", tier: 3}
         - {url: "https://www.timeslive.co.za/news/africa/2025-09-09-mali-army-carries-out-airstrikes-after-militants-announce-blockade-on-fuel-imports/", title: "Mali army carries out airstrikes after militants announce blockade on fuel imports", publisher: "TimesLive", date: "2025-09-09", tier: 3}
-    - text: "The patron protects the junta from the north and makes it hostage. Each Africa Corps loss (Kidal, the helicopter) and each abuse report (HRW) is read at home as the regime's failure, and the regime cannot leave the patron without losing the north."
+    - confidence: B
+      text: "The patron protects the junta from the north and makes it hostage. Each Africa Corps loss (Kidal, the helicopter) and each abuse report (HRW) is read at home as the regime's failure, and the regime cannot leave the patron without losing the north."
       sources:
         - {url: "https://www.bbc.com/news/articles/c3w3wyq4v14o", title: "Mali attacks: Russia's Africa Corps confirms withdrawal from Kidal", publisher: "BBC", date: "2026-04-27", tier: 3}
         - {url: "https://www.hrw.org/news/2026/08/20/mali-russias-africa-corps-massacres-villagers", title: "Mali: Russia's 'Africa Corps' Massacres Villagers", publisher: "Human Rights Watch", date: "2026-08-20", tier: 2}
-    - text: "The rupture with the northern neighbour closed the path the north needs. Ambassadors were recalled in December 2023, flights were suspended in April 2025, and Mali took Algeria to the ICJ in September 2025; the envoys returned only in July 2026, after a year in which Bamako had no working channel to its largest northern neighbour."
+    - confidence: B
+      text: "The rupture with the northern neighbour closed the path the north needs. Ambassadors were recalled in December 2023, flights were suspended in April 2025, and Mali took Algeria to the ICJ in September 2025; the envoys returned only in July 2026, after a year in which Bamako had no working channel to its largest northern neighbour."
       sources:
         - {url: "https://apnews.com/article/mali-algeria-ambassador-recall-tuareg-c5a3c71db2d3f1df9dd94b094fb20494", title: "Mali recalls its envoy in Algeria after alleging interference, deepening tension", publisher: "AP", date: "2023-12-23", tier: 3}
         - {url: "https://www.aljazeera.com/news/2026/7/11/algeria-and-mali-restore-diplomatic-ties-following-yearlong-rift", title: "Algeria and Mali restore diplomatic ties following yearlong rift", publisher: "Al Jazeera", date: "2026-07-11", tier: 3}

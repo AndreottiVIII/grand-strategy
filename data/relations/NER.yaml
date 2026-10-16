@@ -1,0 +1,148 @@
+from: NER
+relations:
+  # ---------- objective ----------
+  - to: FRA
+    layer: objective
+    type: influence_goal
+    summary: "Take the state's uranium and its mining revenue out of French hands: the junta expelled France's ambassador in August 2023 and nationalised the Somair mine, where Orano held 63.4 per cent, on 19 June 2025."
+    since: '2023-08-25'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/6/20/niger-nationalises-uranium-mine-as-spat-with-french-nuclear-giant-worsens", title: "Niger nationalises uranium mine as spat with French nuclear giant worsens", publisher: "Al Jazeera", date: "2025-06-20", tier: 3}
+      - {url: "https://english.alarabiya.net/News/world/2023/08/25/Niger-junta-orders-French-ambassador-to-leave-country-within-48-hours", title: "Niger junta orders French ambassador to leave country within 48 hours", publisher: "Al Arabiya", date: "2023-08-25", tier: 3}
+
+  # ---------- alignment ----------
+  - to: MLI
+    layer: alignment
+    type: treaty
+    summary: "The Alliance of Sahel States: Niger and Mali (with Burkina Faso) left ECOWAS together, effective 29 January 2025, and launched a joint passport and a joint military arrangement. The date of the confederation treaty itself is not verified in this pass; since is the exit date that the joint arrangement followed."
+    since: '2025-01-29'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://allafrica.com/stories/202502060018.html", title: "Sahel States Exit Ecowas, Launch Regional Passport and Joint Military", publisher: "AllAfrica", date: "2025-02-06", tier: 3}
+      - {url: "https://www.channelstv.com/2025/01/28/thousands-rally-in-burkina-faso-niger-to-cheer-ecowas-exit", title: "Thousands rally in Burkina Faso, Niger to cheer ECOWAS exit", publisher: "Channels TV", date: "2025-01-28", tier: 3}
+
+  - to: RUS
+    layer: alignment
+    type: security_guarantee
+    summary: "Africa Corps as the junta's guard: Moscow confirmed its forces helped repel the ISIL attack on Niamey airport (3 February 2026) and helped put down an attempted coup (August 2026). No defence treaty is named; the grade is partner with a de facto alignment. Mirror of the Russia card's incident row, same sources."
+    since: '2026-02-03'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2026/2/3/moscow-confirms-russian-forces-helped-repel-isil-attack-on-niger-airport", title: "Moscow confirms Russian forces helped repel ISIL attack on Niger airport", publisher: "Al Jazeera", date: "2026-02-03", tier: 3}
+      - {url: "https://www.bbc.com/news/articles/c5ye8egg596o", title: "Niger attempted coup: Russia says it helped to repel attack", publisher: "BBC", date: "2026-08-30", tier: 3}
+
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "The junta revoked the 2012 military cooperation agreement that allowed US personnel in Niger in March 2024, calling the US military presence no longer justified; the US left Air Base 101 in Niamey in July 2024 and Air Base 201 in Agadez by 5 August 2024."
+    since: '2024-03-17'
+    until: '2024-08-05'
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.africanews.com/amp/2024/03/17/nigers-junta-revokes-relations-with-us-military/", title: "Niger's junta revokes relations with US military", publisher: "Africanews", date: "2024-03-17", tier: 3}
+      - {url: "https://allafrica.com/stories/202403180001.html", title: "Niger: Niamey Revokes Military Cooperation Agreement with the United States After Tense Bilateral Talks", publisher: "AllAfrica", date: "2024-03-18", tier: 3}
+      - {url: "https://thestar.com.my/news/world/2024/07/08/us-troops-pull-out-of-niger039s-air-base-101", title: "US troops pull out of Niger's Air Base 101", publisher: "The Star", date: "2024-07-08", tier: 3}
+
+  # ---------- action ----------
+  - to: BEN
+    layer: action
+    type: incident
+    summary: "Niamey kept its side of the border closed after ECOWAS lifted its sanctions, and in May 2024 Benin blocked Niger's crude loading until Niger reopened its side. Mirror of the Benin card's rows, same sources."
+    since: '2023-07'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.ecofinagency.com/news/0206-56101-benin-and-niger-move-toward-border-reopening-after-years-of-diplomatic-strain", title: "Benin and Niger move toward border reopening after years of diplomatic strain", publisher: "Ecofin Agency", date: "2026-06-02", tier: 3}
+      - {url: "https://www.hellenicshippingnews.com/benin-blocks-niger-oil-exports-in-border-row/", title: "Benin blocks Niger oil exports in border row", publisher: "Hellenic Shipping News", date: "2024-05", tier: 3}
+
+  - to: BEN
+    layer: action
+    type: agreement
+    summary: "On 2 June 2026 Niamey hosted Benin's President Wadagni, and the joint communique committed both sides to remove obstacles to cooperation, notably the border's reopening; an expert committee was given 15 days to report. The outcome is not verified. Mirror of the Benin card's agreement row."
+    since: '2026-06-02'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.ecofinagency.com/news/0206-56101-benin-and-niger-move-toward-border-reopening-after-years-of-diplomatic-strain", title: "Benin and Niger move toward border reopening after years of diplomatic strain", publisher: "Ecofin Agency", date: "2026-06-02", tier: 3}
+
+  - to: CHN
+    layer: action
+    type: expulsion
+    summary: "The junta gave the Niger-based heads of CNPC, WAPCO and the SORAZ refinery 48 hours to leave, citing a pay gap between expatriate and local staff; the government's stated reason is a pay dispute, and the sources differ on the full motive."
+    since: '2025-03-14'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://chinaglobalsouth.com/2025/03/15/niger-expels-three-chinese-oil-executives-reports/", title: "Niger expels three Chinese oil executives: reports", publisher: "China Global South", date: "2025-03-15", tier: 3}
+      - {url: "https://fmtv5.freemalaysiatoday.com/category/business/2025/03/14/niger-expels-chinese-oil-executives", title: "Niger expels Chinese oil executives", publisher: "Free Malaysia Today", date: "2025-03-14", tier: 3}
+
+  - to: FRA
+    layer: action
+    type: expulsion
+    summary: "The junta gave France's ambassador Sylvain Itte 48 hours to leave on 25 August 2023, after the coup that ousted President Bazoum; he left in late September 2023 when France recalled him. The sources do not date a formal troop-withdrawal order, so that step is not recorded here."
+    since: '2023-08-25'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://english.alarabiya.net/News/world/2023/08/25/Niger-junta-orders-French-ambassador-to-leave-country-within-48-hours", title: "Niger junta orders French ambassador to leave country within 48 hours", publisher: "Al Arabiya", date: "2023-08-25", tier: 3}
+      - {url: "https://www.timeslive.co.za/news/africa/2023-09-27-french-ambassador-to-niger-leaves-as-relations-nosedive-after-coup/", title: "French ambassador to Niger leaves as relations nosedive after coup", publisher: "TimesLIVE (AFP)", date: "2023-09-27", tier: 3}
+
+  - to: FRA
+    layer: dependency
+    type: investment
+    value: 0.634
+    unit: share_of_somair_equity_held_by_orano
+    summary: "Orano held 63.4 per cent of the Somair venture until the junta approved its takeover on 19 June 2025 (Al Jazeera gives 63 per cent; the figures differ and the Ecofin figure is used). The junta says Orano took 86.3 per cent of output from 1971 to 2024, a claim the state makes and not a verified figure."
+    since: '2025-06-19'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.ecofinagency.com/news-industry/2006-47367-niger-nationalizes-somair-s-uranium-mine-amid-fallout-with-france-s-orano", title: "Niger nationalizes Somair's uranium mine amid fallout with France's Orano", publisher: "Ecofin Agency", date: "2025-06", tier: 3}
+      - {url: "https://www.aljazeera.com/news/2025/6/20/niger-nationalises-uranium-mine-as-spat-with-french-nuclear-giant-worsens", title: "Niger nationalises uranium mine as spat with French nuclear giant worsens", publisher: "Al Jazeera", date: "2025-06-20", tier: 3}
+
+  - to: DZA
+    layer: action
+    type: incident
+    summary: "Niger withdrew its ambassador from Algiers on 6 April 2025, with Mali and Burkina Faso, in solidarity over a downed drone. Sources as in the Algeria stance (DZA card: neutral, the friction not read there); same event, same sources."
+    since: '2025-04-06'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.france24.com/en/africa/20250407-sahel-alliance-recalls-ambassadors-from-algiers-over-downed-drone", title: "Sahel alliance recalls ambassadors from Algiers over downed drone", publisher: "France 24", date: "2025-04-07", tier: 3}
+
+  - to: nsa-jnim
+    layer: action
+    type: incident
+    summary: "JNIM attacked Niamey's international airport, which hosts Air Base 101 and the Africa Corps, on about 18 June 2026, three days after ISSP's assault on the military bases at Inates and Banibangou; the attack killed 11 soldiers and two civilians, according to ADF Magazine. The attribution and toll rest on tier-3 reporting."
+    since: '2026-06-18'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://adf-magazine.com/2026/07/terror-rivalry-fuels-chaos-in-niger/", title: "Terror rivalry fuels chaos in Niger", publisher: "ADF Magazine", date: "2026-07", tier: 3}
+
+  - to: LBY
+    layer: action
+    type: incident
+    summary: "Fighting on the Niger-Libya border in February-March 2026: a Chadian army column was reportedly ambushed on the border on 27 Feb, and Asharq Al-Awsat reported widening clashes between the LNA and armed men on the Niger border on 2 Mar 2026. Mirror of the Libya card's row, same sources."
+    since: '2026-02-27'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.agenzianova.com/en/news/Chad-press-sources%3A-an-army-column-is-ambushed-on-the-border-between-Niger-and-Libya/", title: "Chad: Press reports: Army column ambushed on Niger-Libya border", publisher: "Agenzia Nova", date: "2026-02-27", tier: 3}
+      - {url: "https://aawsat.com/node/5245858", title: "Clashes widen between the Libyan National Army and gunmen on the Niger border", title_original: "اتساع رقعة الاشتباكات بين «الوطني الليبي» ومسلحين على حدود النيجر", publisher: "Asharq Al-Awsat", date: "2026-03-02", lang: ar, tier: 3}

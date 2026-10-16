@@ -1,0 +1,124 @@
+actor: NGA
+stances:
+  # ---------- neighbours and blocs ----------
+  - toward: NER
+    grade: reluctant_partner
+    trend: cooling
+    bond: grievance
+    since: 2023-07
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Cooperation out of necessity, under a wound. The Chief of Defence Staff says Nigeria and Niger still work together on security along their 1,608 km border, though 'not as elaborate as we want' (reported). Against that: the ECOWAS sanctions after the July 2023 coup, the AES exit, Niger's exit from the MNJTF, and Niamey's charge that Nigeria meddles in its affairs. Bond grievance is our reading: the sanctions dispute is the open wound on both sides. Cooling trend. Rival was considered; the cooperation that still runs is what keeps the grade reluctant."
+    sources:
+      - {url: "https://adf-magazine.com/2026/09/diplomatic-divide-threatens-sahel-security/", title: "Diplomatic divide threatens Sahel security", publisher: "ADF Magazine", date: 2026-09, tier: 3}
+      - {url: "https://allafrica.com/stories/202502100296.html", title: "West Africa: Scenarios of Ecowas-AES Relationships - Nigeria's Strategic Autonomy As a Major Dynamic", publisher: "AllAfrica", date: 2025-02-10, tier: 3}
+
+  - toward: org-aes
+    grade: rival
+    trend: cooling
+    bond: grievance
+    since: '2025'
+    last_verified: 2026-10-16
+    confidence: B
+    note: "A rival bloc, not a partner: the AES left ECOWAS, called the sanctions 'inhumane and irresponsible', accuses Nigeria of meddling, and Burkina Faso's leaders threatened Nigerian aircraft over their territory (December 2025). Rival, not adversary: no source calls for the AES's destruction, and Abuja's stated aim is ECOWAS's survival with the AES back 'under a different status'. The exit's effective date is reported differently across sources; the year is recorded, not the day."
+    sources:
+      - {url: "https://allafrica.com/stories/202502100296.html", title: "West Africa: Scenarios of Ecowas-AES Relationships - Nigeria's Strategic Autonomy As a Major Dynamic", publisher: "AllAfrica", date: 2025-02-10, tier: 3}
+      - {url: "https://adf-magazine.com/2026/09/diplomatic-divide-threatens-sahel-security/", title: "Diplomatic divide threatens Sahel security", publisher: "ADF Magazine", date: 2026-09, tier: 3}
+
+  - toward: BEN
+    grade: partner
+    trend: stable
+    bond: none
+    since: '2025-12'
+    last_verified: 2026-10-16
+    confidence: C
+    note: "Transactional security cooperation with no alignment: partner. Mirrors the Benin card's one sourced case: the December 2025 coup attempt, reversed with Nigerian airstrikes and ECOWAS support (reported). Bond none is our reading. Gap: the cited article is about Benin's April 2026 election and mentions the coup attempt; a direct source for the coup and the airstrikes is needed before this stance is trusted."
+    sources:
+      - {url: "https://www.wsls.com/news/world/2026/04/12/benin-votes-for-new-president-with-finance-minister-favored-to-succeed-talon/", title: "Benin votes for new president with finance minister favored to succeed Talon", publisher: "WSLS", date: 2026-04-12, tier: 3}
+
+  - toward: CMR
+    grade: partner
+    trend: stable
+    bond: none
+    since: '2006'
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Settled by treaty, not allied: the Greentree Agreement (2006) resolved the Bakassi dispute, and the transfer was completed in August 2013 (Library of Congress). Partner, not ally: no defence clause in the sources. Bond none: no kinship or open grievance recorded. Mirrored from the Cameroon card: same source. Not sourced here: joint action in the MNJTF against Boko Haram; the Anglophone border question."
+    sources:
+      - {url: "https://www.loc.gov/lawweb/servlet/lloc_news?disp3_l205403677_text", title: "Cameroon; Nigeria: Bakassi Peninsula Transition Completed", publisher: "Library of Congress", date: "2013-08-13", tier: 1}
+
+  # ---------- insurgency ----------
+  - toward: nsa-boko-haram
+    grade: adversary
+    trend: stable
+    bond: grievance
+    since: '2014'
+    last_verified: 2026-10-16
+    confidence: B
+    note: "The one mortal enemy in the card. Boko Haram and ISWAP fight to replace the Nigerian state in the north-east, and the federal campaign's declared aim is their defeat (ISS: 'must adapt to defeat Boko Haram'). Adversary by the ontology's test: the state's existence is at stake, not only its order. Since 2014 is the MNJTF's reactivation against Boko Haram, from a search summary without a page; to be checked. Stable trend: the May 2026 killing of al-Minuki is a setback reported by the US, not an end; ISWAP's drone use has risen since 2025."
+    sources:
+      - {url: "https://issafrica.org/pscreport/psc-insights/lake-chad-basin-s-counter-terrorism-must-adapt-to-defeat-boko-haram", title: "Lake Chad Basin's counter-terrorism must adapt to defeat Boko Haram", publisher: "ISS Africa", date: 2025, tier: 2}
+      - {url: "https://www.nytimes.com/2026/05/16/world/africa/trump-isis-nigeria-al-minuki.html", title: "Trump says a top ISIS leader was killed in a U.S.-Nigerian mission", publisher: "The New York Times", date: 2026-05-16, tier: 3}
+
+  # ---------- the great powers and the rest ----------
+  - toward: USA
+    grade: partner
+    trend: stable
+    bond: grievance
+    since: '2025-11'
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Partner with friction, no treaty. Washington's charge that Christians are being killed (the November 2025 threat to 'prepare for possible action', as the USA card records) became a joint campaign: US strikes on ISIS sites in Sokoto on 25-26 December 2025 with Abuja's consent, an advance team in February 2026, a joint operation that killed al-Minuki (15 May 2026, per Trump's statement), and the withdrawal of almost all US personnel by 3 July 2026 while intelligence assets stayed. Military Times describes 'structured security cooperation'. Bond grievance is our reading: the persecution charge is the open wound, the cooperation the necessity. Stable trend. Abuja's own statements are not in this pass."
+    sources:
+      - {url: "https://www.theguardian.com/us-news/2025/dec/25/us-carries-out-airstrikes-against-islamic-state-terrorist-scum-in-nigeria-trump-says", title: "US carries out strikes on Nigeria targeting Islamic State militants, Trump says", publisher: "The Guardian", date: 2025-12-25, tier: 3}
+      - {url: "https://www.militarytimes.com/news/pentagon-congress/2026/07/03/us-withdrew-forces-from-nigeria-after-operation-against-isis-africom-chief-says/", title: "US withdrew forces from Nigeria after operation against ISIS, AFRICOM chief says", publisher: "Military Times (Reuters)", date: 2026-07-03, tier: 3}
+      - {url: "https://www.nytimes.com/2026/05/16/world/africa/trump-isis-nigeria-al-minuki.html", title: "Trump says a top ISIS leader was killed in a U.S.-Nigerian mission", publisher: "The New York Times", date: 2026-05-16, tier: 3}
+
+  - toward: GBR
+    grade: partner
+    trend: warming
+    bond: none
+    since: '2024-11-04'
+    last_verified: 2026-10-16
+    confidence: A
+    note: "Strategic partnership signed by the two foreign ministers on 4 November 2024; the joint communique (6 November 2024) sets dialogues on economic, trade and investment matters, security and defence, migration, and a new foreign-policy dialogue, with a biennial Bi-National Commission. Partner, not ally: no defence clause. The Fourth Security and Defence Partnership Dialogue took place in Abuja on 23-24 June 2026 (counter-terrorism, cybersecurity, illicit finance). Warming. Bond none."
+    sources:
+      - {url: "https://www.gov.uk/government/publications/joint-communique-nigeria-united-kingdom-strategic-partnership/establishing-the-nigeria-united-kingdom-strategic-partnership-joint-communique", title: "Establishing the Nigeria-United Kingdom Strategic Partnership: joint communique", publisher: "UK Government (FCDO)", date: 2024-11-06, tier: 1}
+      - {url: "https://leadership.ng/nigeria-uk-deepen-security-partnership-step-up-counter-terrorism-cybersecurity-cooperation/", title: "Nigeria, UK deepen security partnership, step up counter-terrorism, cybersecurity cooperation", publisher: "Leadership (Nigeria)", date: 2026-06, tier: 3}
+
+  - toward: CHN
+    grade: partner
+    trend: warming
+    bond: none
+    since: '2024-09'
+    last_verified: 2026-10-16
+    confidence: C
+    note: "Partner by the logic of the largest lender, not by alignment. China Exim is the largest bilateral creditor (USD 4.91bn, about 9% of external debt, June 2026), and it takes about three quarters of bilateral debt service. The comprehensive strategic partnership (September 2024) and trade of about USD 22bn in 2025 make the warming, but the second source is a tier-4 pointer. Bond none is our reading: the sources record interest, not kinship; affinity was not sourced. Gaps: the Lekki deep-sea port (not sourced in this pass), the DMO's official figures and Beijing's own statements."
+    sources:
+      - {url: "https://nairametrics.com/2026/10/08/top-10-largest-creditors-behind-nigerias-54-5-billion-external-debt/", title: "Top 10 largest creditors behind Nigeria's $54.5 billion external debt", publisher: "Nairametrics", date: 2026-10-08, tier: 3}
+      - {url: "https://serrarigroup.com/nigeria-and-china-strengthen-comprehensive-strategic-partnership-as-bilateral-trade-surpasses-22-billion-in-2025/", title: "Nigeria and China strengthen comprehensive strategic partnership as bilateral trade surpasses $22 billion in 2025", publisher: "Serrari Group", date: 2026, tier: 4}
+
+  - toward: MAR
+    grade: partner
+    trend: warming
+    bond: none
+    since: '2022-09'
+    last_verified: 2026-10-16
+    confidence: C
+    note: "Partner by project, not alignment: the African Atlantic gas pipeline (about 5,600 km, USD 25bn, first gas expected in 2031). Mirrored from the Morocco card: same sources. Memorandum with ECOWAS in September 2022, the intergovernmental deal reported for 2026, and the ECOWAS summit's backing in July 2026. Confidence C here because every source is tier 3; the Morocco card grades the same pair B. Bond none."
+    sources:
+      - {url: "https://www.energyvoice.com/oilandgas/africa/pipelines-africa/444823/nigeria-morocco-nmgp-offshore/", title: "Nigeria, Morocco double down on mega pipeline project", publisher: "Energy Voice", date: "2022-09-16", tier: 3}
+      - {url: "https://www.reuters.com/sustainability/boards-policy-regulation/intergovernmental-deal-25-billion-nigeria-morocco-gas-pipeline-due-this-year-2026-04-13/", title: "Intergovernmental deal for $25 billion Nigeria-Morocco gas pipeline due this year, official", publisher: "Reuters", date: "2026-04-13", tier: 3}
+      - {url: "https://www.reuters.com/business/energy/west-africas-ecowas-bloc-signs-agreement-backing-nigeria-morocco-atlantic-gas-2026-07-19/", title: "West Africa's ECOWAS bloc signs agreement backing Nigeria-Morocco Atlantic gas pipeline", publisher: "Reuters", date: 2026-07-19, tier: 3}
+
+  - toward: ZAF
+    grade: rival
+    trend: stable
+    bond: none
+    since: '2012'
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Rival, not adversary: a contest for continental leadership. The 2012 contest for the AU Commission chair is the case in the sources, where the rivalry was the central fact and smaller states feared South African control. The 2025 SAIIA argument is that Pretoria now co-claims the standing, through its G20 seat and its ICJ case against Israel. The Nigerian reply in 2026 is not in the sources. Bond none: the sources record interests, not kinship or a wound. The football rivalry is noise, not the grade."
+    sources:
+      - {url: "https://saiia.org.za/research/has-south-africa-overtaken-nigeria-as-africas-giant/", title: "Has South Africa Overtaken Nigeria as Africa's Giant?", publisher: "SAIIA", date: 2025-07-30, tier: 2}
+      - {url: "https://mg.co.za/news/africa/2012-06-07-why-nigeria-hates-sa-gloves-off-to-be-champion-of-africa/", title: "Why Nigeria hates SA: gloves off to be champion of Africa", publisher: "Mail & Guardian", date: 2012-06-07, tier: 3}

@@ -1,0 +1,128 @@
+from: NGA
+relations:
+  # ---------- alignment ----------
+  - to: CMR
+    layer: alignment
+    type: treaty
+    summary: "The Greentree Agreement (2006) settled the Bakassi Peninsula dispute: Nigerian troops withdrew and the peninsula passed to Cameroon's administration in August 2013. Mirror of the Cameroon card's row: one treaty, the same source."
+    since: '2006'
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.loc.gov/lawweb/servlet/lloc_news?disp3_l205403677_text", title: "Cameroon; Nigeria: Bakassi Peninsula Transition Completed", publisher: "Library of Congress", date: "2013-08-13", tier: 1}
+
+  # ---------- objective ----------
+  - to: ZAF
+    layer: objective
+    type: influence_goal
+    summary: "Nigeria's claim to lead Africa is contested by South Africa. SAIIA (2025) argues that Pretoria now co-claims or usurps the continental standing through its G20 seat and its ICJ case against Israel; the 2012 AU Commission contest was the rivalry's clearest test."
+    since: '2012'
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://saiia.org.za/research/has-south-africa-overtaken-nigeria-as-africas-giant/", title: "Has South Africa Overtaken Nigeria as Africa's Giant?", publisher: "SAIIA", date: 2025-07-30, tier: 2}
+      - {url: "https://mg.co.za/news/africa/2012-06-07-why-nigeria-hates-sa-gloves-off-to-be-champion-of-africa/", title: "Why Nigeria hates SA: gloves off to be champion of Africa", publisher: "Mail & Guardian", date: 2012-06-07, tier: 3}
+
+  - to: org-aes
+    layer: objective
+    type: membership_goal
+    summary: "Abuja wants ECOWAS to survive, with the AES states able to return 'under a different status'. The AES exit is read as a loss for Nigeria, which helped found the bloc, and as a threat to Lake Chad security. Our reading of the analysis, not an official Nigerian statement."
+    since: '2025'
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://allafrica.com/stories/202502100296.html", title: "West Africa: Scenarios of Ecowas-AES Relationships - Nigeria's Strategic Autonomy As a Major Dynamic", publisher: "AllAfrica", date: 2025-02-10, tier: 3}
+
+  # ---------- dependency ----------
+  - to: PRT
+    layer: dependency
+    type: energy_export
+    summary: "Nigeria supplied about half of Portugal's LNG deliveries in 2024 (51%, ERSE figures) against about 40% from the US; in 2025 Nigeria accounted for 50% of Sines discharges, the US 43% and Russia 7%. Mirror of the Portugal card's row: the same source."
+    value: 0.51
+    unit: share_of_lng_deliveries_2024
+    since: '2024'
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.gasprocessingnews.com/news/2025/01/portugal-to-import-more-us-nigerian-lng-aims-to-end-russian-supply/", title: "Portugal to import more US, Nigerian LNG, aims to end Russian supply", publisher: "Reuters (via Gas Processing News)", date: 2025-01, tier: 3}
+      - {url: "https://www.rtp.pt/noticias/economia/sines-recebeu-95-do-gas-que-entrou-em-portugal-e-tres-navios-russos-em-2025_n1764920", title: "Sines received 95% of the gas that entered Portugal and three Russian ships in 2025", title_original: "Sines recebeu 95% do gas que entrou em Portugal e tres navios russos em 2025", lang: pt, publisher: "RTP (ERSE report)", date: 2026, tier: 3}
+
+  - to: USA
+    layer: dependency
+    type: military_presence
+    summary: "Nigeria's counter-ISWAP campaign depended on US advisers: an advance team arrived on 3 February 2026 and grew to about 200 trainers; AFRICOM withdrew almost all personnel by 3 July 2026 and kept intelligence assets. Dependency on US help, not a basing agreement."
+    value: 200
+    unit: us_trainers_peak_2026
+    since: '2026-02-03'
+    until: '2026-07-03'
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.militarytimes.com/news/pentagon-congress/2026/07/03/us-withdrew-forces-from-nigeria-after-operation-against-isis-africom-chief-says/", title: "US withdrew forces from Nigeria after operation against ISIS, AFRICOM chief says", publisher: "Military Times (Reuters)", date: 2026-07-03, tier: 3}
+      - {url: "https://www.nytimes.com/2026/05/16/world/africa/trump-isis-nigeria-al-minuki.html", title: "Trump says a top ISIS leader was killed in a U.S.-Nigerian mission", publisher: "The New York Times", date: 2026-05-16, tier: 3}
+
+  - to: CHN
+    layer: dependency
+    type: debt
+    summary: "China Exim Bank is Nigeria's largest bilateral creditor: USD 4.91bn outstanding, about 9% of external debt in June 2026. The World Bank's IDA (35%) and Eurobond holders (34%) are larger creditors. Figures differ by report; the DMO is the primary source and was not opened."
+    value: 0.0901
+    unit: share_of_external_debt_2026-06
+    since: '2026-06'
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://nairametrics.com/2026/10/08/top-10-largest-creditors-behind-nigerias-54-5-billion-external-debt/", title: "Top 10 largest creditors behind Nigeria's $54.5 billion external debt", publisher: "Nairametrics", date: 2026-10-08, tier: 3}
+
+  # ---------- action ----------
+  - to: MAR
+    layer: action
+    type: agreement
+    summary: "The African Atlantic gas pipeline: a memorandum with ECOWAS (September 2022), an intergovernmental agreement reported for 2026, and the ECOWAS summit's signed backing in July 2026; about USD 25bn, about 5,600 km offshore, first gas expected in 2031. Mirror of the Morocco card's sources."
+    since: '2022-09'
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.energyvoice.com/oilandgas/africa/pipelines-africa/444823/nigeria-morocco-nmgp-offshore/", title: "Nigeria, Morocco double down on mega pipeline project", publisher: "Energy Voice", date: "2022-09-16", tier: 3}
+      - {url: "https://www.reuters.com/sustainability/boards-policy-regulation/intergovernmental-deal-25-billion-nigeria-morocco-gas-pipeline-due-this-year-2026-04-13/", title: "Intergovernmental deal for $25 billion Nigeria-Morocco gas pipeline due this year, official", publisher: "Reuters", date: "2026-04-13", tier: 3}
+      - {url: "https://www.reuters.com/business/energy/west-africas-ecowas-bloc-signs-agreement-backing-nigeria-morocco-atlantic-gas-2026-07-19/", title: "West Africa's ECOWAS bloc signs agreement backing Nigeria-Morocco Atlantic gas pipeline", publisher: "Reuters", date: 2026-07-19, tier: 3}
+
+  - to: USA
+    layer: action
+    type: incident
+    summary: "US strikes on ISIS sites in Sokoto State on 25-26 December 2025, carried out with Abuja's consent and coordination (the Guardian's report of Trump's announcement)."
+    since: '2025-12-25'
+    until: '2025-12-26'
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.theguardian.com/us-news/2025/dec/25/us-carries-out-airstrikes-against-islamic-state-terrorist-scum-in-nigeria-trump-says", title: "US carries out strikes on Nigeria targeting Islamic State militants, Trump says", publisher: "The Guardian", date: 2025-12-25, tier: 3}
+
+  - to: GBR
+    layer: action
+    type: agreement
+    summary: "The foreign ministers signed the Nigeria-UK Strategic Partnership on 4 November 2024 (joint communique published 6 November 2024): dialogues on trade, security and defence, migration, and a biennial Bi-National Commission. The Fourth Security and Defence Partnership Dialogue took place in Abuja on 23-24 June 2026."
+    since: '2024-11-04'
+    until: null
+    last_verified: 2026-10-16
+    confidence: A
+    sources:
+      - {url: "https://www.gov.uk/government/publications/joint-communique-nigeria-united-kingdom-strategic-partnership/establishing-the-nigeria-united-kingdom-strategic-partnership-joint-communique", title: "Establishing the Nigeria-United Kingdom Strategic Partnership: joint communique", publisher: "UK Government (FCDO)", date: 2024-11-06, tier: 1}
+      - {url: "https://leadership.ng/nigeria-uk-deepen-security-partnership-step-up-counter-terrorism-cybersecurity-cooperation/", title: "Nigeria, UK deepen security partnership, step up counter-terrorism, cybersecurity cooperation", publisher: "Leadership (Nigeria)", date: 2026-06, tier: 3}
+
+  - to: nsa-boko-haram
+    layer: action
+    type: incident
+    summary: "A joint Nigerian-US operation killed the ISWAP leader al-Minuki on 15 May 2026, according to Trump's statement; the ISS (2025) judges that the MNJTF has had no regional operation since July 2024 while the insurgents rearm."
+    since: '2026-05-15'
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.nytimes.com/2026/05/16/world/africa/trump-isis-nigeria-al-minuki.html", title: "Trump says a top ISIS leader was killed in a U.S.-Nigerian mission", publisher: "The New York Times", date: 2026-05-16, tier: 3}
+      - {url: "https://issafrica.org/pscreport/psc-insights/lake-chad-basin-s-counter-terrorism-must-adapt-to-defeat-boko-haram", title: "Lake Chad Basin's counter-terrorism must adapt to defeat Boko Haram", publisher: "ISS Africa", date: 2025, tier: 2}
