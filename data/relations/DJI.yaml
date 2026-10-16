@@ -1,0 +1,248 @@
+from: DJI
+relations:
+- to: USA
+  layer: dependency
+  type: military_presence
+  summary: "Camp Lemonnier, the only permanent US base in Africa and home of the Combined Joint Task Force Horn of Africa, rents for about USD 63m a year since the 2014 renewal (up from USD 38m; later terms are not public). Since September 2026 the Houthi advance towards Bab al-Mandab puts the base within reach."
+  since: '2014-05'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: C
+  value: 63
+  unit: usd_million_per_year
+  sources:
+  - url: https://www.aljazeera.com/news/2014/5/6/us-secures-10-year-deal-for-djibouti-base
+    title: US secures 10-year deal for Djibouti base
+    publisher: Al Jazeera
+    date: 2014-05-06
+    tier: 3
+  - url: https://www.stripes.com/theaters/africa/2026-09-16/africom-djibouti-houthi-threat-22870192.html
+    title: AFRICOM Djibouti Houthi threat
+    publisher: Stars and Stripes
+    date: 2026-09-16
+    tier: 3
+- to: FRA
+  layer: alignment
+  type: treaty
+  summary: "Defence treaty signed in 2011 and in force from 2014. France keeps its largest base abroad here (about 1,500 personnel). Ratification of the 2024 text is not confirmed in our sources."
+  since: '2011'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: A
+  sources:
+  - url: https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_afetr/l17cion_afetr2425071_compte-rendu.pdf
+    title: National Assembly committee report on the France-Djibouti defence treaty
+    publisher: Assemblee nationale
+    date: 2025
+    tier: 1
+  - url: https://www.elysee.fr/en/emmanuel-macron/2025/03/26/compte-rendu-du-conseil-des-ministres-du-26-mars-2025
+    title: Council of Ministers report, 26 March 2025 (bill authorising ratification of the France-Djibouti defence treaty)
+    publisher: Elysee (French government record)
+    date: 2025-03-26
+    tier: 1
+  - url: https://dawan.africa/news/djibouti-france-sign-new-defence-treaty-to-strengthen-strategic-partnership
+    title: Djibouti, France sign new defence treaty to strengthen strategic partnership
+    publisher: Dawan Africa
+    date: 2024-07
+    tier: 3
+- to: FRA
+  layer: action
+  type: agreement
+  summary: "Renewal of the France-Djibouti defence treaty, signed in July 2024 (24 Jul) for twenty years: the fixed annual payment rises from EUR 30m to EUR 85m. A bill authorising ratification was on the Council of Ministers agenda on 26 Mar 2025."
+  since: '2024-07'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: B
+  sources:
+  - url: https://www.elysee.fr/en/emmanuel-macron/2025/03/26/compte-rendu-du-conseil-des-ministres-du-26-mars-2025
+    title: Council of Ministers report, 26 March 2025 (bill authorising ratification of the France-Djibouti defence treaty)
+    publisher: Elysee (French government record)
+    date: 2025-03-26
+    tier: 1
+  - url: https://dawan.africa/news/djibouti-france-sign-new-defence-treaty-to-strengthen-strategic-partnership
+    title: Djibouti, France sign new defence treaty to strengthen strategic partnership
+    publisher: Dawan Africa
+    date: 2024-07
+    tier: 3
+- to: CHN
+  layer: dependency
+  type: military_presence
+  summary: "The PLA's first overseas base, opened in Djibouti on 1 Aug 2017, with about 1,000-2,000 navy personnel (low estimate used) and a pier of over 330 m completed in December 2019. CSIS lists it among the sites supporting Chinese intelligence collection."
+  since: '2017-08-01'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: B
+  value: 1000
+  unit: personnel_low_estimate
+  sources:
+  - url: https://www.reuters.com/article/us-china-djibouti-idUSKBN1AH3E3
+    title: China formally opens first overseas military base in Djibouti
+    publisher: Reuters
+    date: 2017-08-01
+    tier: 3
+  - url: https://www.eastasiaforum.org/2020/05/16/chinas-djibouti-naval-base-increasing-its-power/
+    title: China's Djibouti naval base increasing its power
+    publisher: East Asia Forum (Cabestan)
+    date: 2020-05-16
+    tier: 2
+  - url: https://www.csis.org/analysis/chinas-intelligence-footprint-cuba-new-evidence-and-implications-us-security
+    title: China's intelligence footprint in Cuba: new evidence and implications for US security (Djibouti among the sites)
+    publisher: CSIS
+    date: 2024-12-06
+    tier: 2
+- to: JPN
+  layer: dependency
+  type: military_presence
+  summary: "Japan's only overseas base, beside Djibouti-Ambouli airport: set up in June 2011 under a 2009 status-of-forces agreement. About 180 Japanese personnel are reported in most sources (rotations; a 2021 report gave over a hundred)."
+  since: '2011-06'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: C
+  value: 180
+  unit: japan_sdf_personnel_approx
+  sources:
+  - url: https://manage.thediplomat.com/2023/04/why-does-japan-have-a-military-base-in-djibouti
+    title: Why does Japan have a military base in Djibouti (search result, article not re-read)
+    publisher: The Diplomat
+    date: 2023-04
+    tier: 3
+  - url: https://en.wikipedia.org/wiki/Japan_Self-Defense_Force_Base_Djibouti
+    title: Japan Self-Defense Force Base Djibouti (Wikipedia index; pointer only)
+    publisher: Wikipedia
+    date: 2011
+    tier: 4
+- to: ITA
+  layer: dependency
+  type: military_presence
+  summary: "Italy's Amedeo Guillet base in Djibouti: about one hundred military personnel in December 2025, per the Foreign Ministry, which also credits the base with training about 9,000 Djiboutian and Somali security personnel since 2014. The 2013 start date is from the Wikipedia index only."
+  since: '2013'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: B
+  value: 100
+  unit: italian_personnel_approx
+  sources:
+  - url: https://www.esteri.it/it/sala_stampa/archivionotizie/comunicati/2025/12/tajani-domani-a-gibuti-visita-ai-militari-italiani/
+    title: Foreign Minister Tajani visits Italian troops at the Guillet base in Djibouti (press release)
+    publisher: Italian Ministry of Foreign Affairs
+    date: 2025-12-22
+    tier: 1
+    lang: it
+  - url: https://en.wikipedia.org/wiki/Italian_Military_Support_Base_in_Djibouti
+    title: Italian Military Support Base in Djibouti (Wikipedia index; pointer only)
+    publisher: Wikipedia
+    date: 2013
+    tier: 4
+- to: ETH
+  layer: dependency
+  type: trade_share
+  summary: "Djibouti's port carried about 96.7% of Ethiopia's external freight tonnage in the fiscal year to July 2026 (17.57 Mt; road 80%, the Addis-Djibouti railway 19%, per the transport minister's report quoted by APA). Older estimates put 90-95% of Ethiopia's foreign trade through Djibouti."
+  since: '1998'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: B
+  value: 0.9671
+  unit: share_of_external_freight_tonnage
+  sources:
+  - url: https://fr.apanews.net/business/djibouti-concentre-967-du-fret-ethiopien/
+    title: Djibouti handles 96.7% of Ethiopian freight
+    publisher: APA news
+    date: 2026-08
+    tier: 3
+    title_original: Djibouti concentre 96,7% du fret éthiopien
+    lang: fr
+  - url: https://hornreview.org/2026/01/13/abiy-ahmed-at-doraleh-ethiopia-acts-to-protect-its-trade-corridor/
+    title: Abiy Ahmed at Doraleh: Ethiopia acts to protect its trade corridor
+    publisher: The Horn Review
+    date: 2026-01-13
+    tier: 3
+- to: ETH
+  layer: objective
+  type: influence_goal
+  summary: "Keep the Horn's trade on one corridor: Djibouti wants its port monopoly kept against Ethiopia's Assab push and against the Berbera port. In 2026 it offered a 60% stake in the Tadjoura port; Addis declined in favour of corridor access, according to Djibouti."
+  since: '2026-01'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: C
+  sources:
+  - url: https://hornreview.org/2026/01/13/abiy-ahmed-at-doraleh-ethiopia-acts-to-protect-its-trade-corridor/
+    title: Abiy Ahmed at Doraleh: Ethiopia acts to protect its trade corridor
+    publisher: The Horn Review
+    date: 2026-01-13
+    tier: 3
+  - url: https://capitalethiopia.com/2026/04/11/djibouti-says-ethiopia-rejected-port-stake-preferring-corridor-access/
+    title: Djibouti says Ethiopia rejected port stake, preferring corridor access
+    publisher: Capital (Ethiopia)
+    date: 2026-04-11
+    tier: 3
+  - url: https://abcnews.com/International/wireStory/ethiopia-demands-access-red-sea-tensions-neighbors-escalate-137007336
+    title: Ethiopia again demands access to the Red Sea as tensions with neighbors escalate
+    publisher: AP (via ABC News)
+    date: 2026-10
+    tier: 3
+- to: ETH
+  layer: action
+  type: agreement
+  summary: "Ethiopia and Djibouti agreed to deepen cooperation at the Doraleh port amid shifting Red Sea geopolitics (AllAfrica, 27 Feb 2026)."
+  since: '2026-02-27'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: C
+  sources:
+  - url: https://allafrica.com/stories/202602270391.html
+    title: Ethiopia, Djibouti Agree to Deepen Cooperation At Doraleh Port Amid Shifting Red Sea Geopolitics
+    publisher: AllAfrica
+    date: 2026-02-27
+    tier: 3
+- to: ETH
+  layer: action
+  type: visit
+  summary: "Trilateral summit with Somalia and Ethiopia at Jigjiga on 31 Jan 2026 (economic cooperation, connectivity, security coordination)."
+  since: '2026-01-31'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: C
+  sources:
+  - url: https://dawan.africa/news/somalia-ethiopia-djibouti-hold-trilateral-summit-in-jigjiga
+    title: Somalia, Ethiopia, Djibouti hold trilateral summit in Jigjiga
+    publisher: Dawan Africa
+    date: 2026-01
+    tier: 3
+- to: inst-dpworld
+  layer: action
+  type: incident
+  summary: "Djibouti seized DP World's Doraleh Container Terminal in February 2018. The arbitration went for DP World; the final award of October 2025 found the seizure unlawful, and the awards (about USD 685m) remain unpaid while the 50-year concession stands. DP World is Dubai-based; its link to the UAE state is our reading."
+  since: '2018-02'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: C
+  sources:
+  - url: https://bairdmaritime.com/amp/story/shipping/ports/court-finds-djibouti-government-guilty-of-seizing-terminal-built-by-dp-world
+    title: Court finds Djibouti government guilty of seizing terminal built by DP World
+    publisher: Baird Maritime
+    date: 2025-10-03
+    tier: 3
+- to: sub-somaliland
+  layer: alignment
+  type: non_recognition
+  summary: "Djibouti does not recognise Somaliland: it condemned Israel's recognition of Somaliland (Dec 2025), backs Somalia's territorial integrity, and closed Somaliland's liaison office in Djibouti (Jan 2026)."
+  since: '2025-12'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: B
+  sources:
+  - url: https://dawan.africa/news/djibouti-condemns-israels-recognition-of-somaliland-reaffirms-support-for-somalias-unity
+    title: Djibouti condemns Israel's recognition of Somaliland, reaffirms support for Somalia's unity
+    publisher: Dawan Africa
+    date: 2025-12
+    tier: 3
+  - url: https://pism.pl/publications/israels-recognition-of-somaliland-heightens-tensions-in-the-horn-of-africa
+    title: Israel's Recognition of Somaliland Heightens Tensions in the Horn of Africa
+    publisher: PISM
+    date: 2026
+    tier: 2
+  - url: https://www.somaliguardian.com/news/somalia-news/djibouti-closes-somaliland-liaison-office-over-israel-recognition/
+    title: Djibouti closes Somaliland liaison office over Israel recognition
+    publisher: Somali Guardian
+    date: 2026-01
+    tier: 3

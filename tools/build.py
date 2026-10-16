@@ -376,6 +376,8 @@ def main():
         binding = (rel["type"] == "security_guarantee"
                    or (rel["type"] == "membership" and rel["to"] in ("org-nato", "org-csto", "org-eu"))
                    or (rel["type"] == "treaty" and SECURITY.search(summary) and not DENIED.search(summary)))
+        if rel.get("binding") is False:   # a row may state that the treaty binds nobody to anybody's defence
+            binding = False
         if binding:   # trade agreements and cooperation memoranda do not make allies
             allies.setdefault(rel["from"], set()).add(rel["to"])
             allies.setdefault(rel["to"], set()).add(rel["from"])

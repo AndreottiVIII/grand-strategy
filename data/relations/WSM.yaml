@@ -29,10 +29,10 @@ relations:
   - to: NZL
     layer: alignment
     type: treaty
-    summary: "1962 Treaty of Friendship, signed at independence: a special relationship under which Samoa may ask NZ to consider defence assistance; Samoa keeps no formal military."
+    summary: "1962 Treaty of Friendship, signed at independence: New Zealand is Samoa's channel for defence assistance; Samoa keeps no formal military. The treaty's exact modal wording was not re-checked on 2026-10-16 (the UN PDF returned no readable text)."
     since: '1962-08'
     until: null
-    last_verified: '2026-10-12'
+    last_verified: '2026-10-16'
     confidence: A
     sources:
       - {url: "https://treaties.un.org/doc/Publication/UNTS/Volume%20453/volume-453-I-6515-English.pdf", title: "New Zealand and Western Samoa: Treaty of Friendship", publisher: "UN Treaty Series", date: 1962-08, tier: 1}
@@ -41,15 +41,16 @@ relations:
   - to: NZL
     layer: dependency
     type: remittances
-    value: 0.24
+    value: 0.224
     unit: share_of_gdp
-    summary: "Personal remittances were 24.0% of GDP in 2024 (World Bank series), down from a 31.5% peak in 2022. Most traces to Samoan PALM and RSE workers abroad, but the government does not split seasonal pay from other private transfers; the recent 2024/25 inflow was reported above ST$900m."
+    summary: "Personal remittances were 22.4% of GDP in 2025 (World Bank), 24.0% in 2024 and a 31.5% peak in 2022. Most traces to Samoan PALM and RSE workers abroad, but the government does not split seasonal pay from other private transfers, and the 2024/25 inflow was reported above ST$900m. The series does not split senders by country, so the link to NZL is our inference."
     since: '2024'
     until: null
-    last_verified: '2026-10-12'
+    last_verified: '2026-10-16'
     confidence: C
     sources:
-      - {url: "https://statisticsoftheworld.com/country/samoa/BX.TRF.PWKR.DT.GD.ZS", title: "Personal remittances received (% of GDP), Samoa (World Bank series)", publisher: "Statistics of the World (World Bank data)", date: 2025, tier: 4}
+      - {url: "https://api.worldbank.org/v2/country/WS/indicator/BX.TRF.PWKR.DT.GD.ZS?format=json", title: "Personal remittances received (% of GDP), Samoa, World Bank indicator BX.TRF.PWKR.DT.GD.ZS (last updated 2026-10-08)", publisher: "World Bank", date: 2026-10-08, tier: 1}
+      - {url: "https://devpolicy.org/samoas-new-fees-implications-for-palm-and-rse-employers-20250819/", title: "Samoa's new fees: implications for PALM and RSE employers", publisher: "Devpolicy Blog (Development Policy Centre)", date: 2025-08-19, tier: 3}
       - {url: "https://devpolicy.org/samoas-new-fees-implications-for-palm-and-rse-employers-20250819/", title: "Samoa's new fees: implications for PALM and RSE employers", publisher: "Devpolicy Blog (Development Policy Centre)", date: 2025-08-19, tier: 3}
 
   - to: CHN
@@ -77,6 +78,19 @@ relations:
     confidence: B
     sources:
       - {url: "https://www.dfat.gov.au/sites/default/files/development-cooperation-fact-sheet-samoa.docx", title: "Development cooperation fact sheet: Samoa", publisher: "DFAT", date: 2025, tier: 1}
+
+  - to: USA
+    layer: dependency
+    type: trade_share
+    value: 0.5
+    unit: share_of_exports
+    summary: "The United States is Samoa's largest export market, nearly half of total exports, per the US Embassy as summarised in a search result (page not opened). The year is not given in the summary, so the row starts at the year it was recorded."
+    since: '2026'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://ws.usembassy.gov/", title: "U.S. Embassy in Samoa (not opened: fetch returned 403; figure from a search summary)", publisher: "US Embassy Apia", date: 2026-10, tier: 1}
 
   # ---------- action ----------
   - to: CHN

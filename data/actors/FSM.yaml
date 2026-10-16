@@ -8,7 +8,47 @@ coords:
 - 6.92
 seat: Palikir
 regions:
-- world
-card: stub
+- southeast-asia-oceania
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Keep the Compact of Free Association with the United States in force and funded. The 2024 renewal gives the FSM US$3.3 billion over 20 years, through 2043 (Interior Department). The aim is read from that outcome, not from a statement of the government's own."
+    confidence: C
+    sources:
+    - {url: "https://www.doi.gov/pressreleases/interior-department-applauds-renewed-economic-assistance-compacts-free-association", title: "Interior Department Applauds Renewed Economic Assistance for Compacts of Free Association", publisher: "US Department of the Interior", date: 2024, tier: 1}
+  - rank: 2
+    text: "Hold the relation with Beijing, in place since 1989, as a second source of trade and aid. China was the FSM's third-largest trade partner in the government's own 2009 account."
+    confidence: C
+    sources:
+    - {url: "https://www.fsmgov.org/press/pr091809.htm", title: "FSM Celebrates 20 Years of Diplomatic Relations with China", publisher: "Government of the Federated States of Micronesia", date: 2009-09, tier: 1}
+  means:
+  - text: "Economic: the renewed Compact package, US$3.3 billion over 20 years through 2043 (about US$165 million a year, our arithmetic)."
+    confidence: B
+    sources:
+    - {url: "https://www.doi.gov/pressreleases/interior-department-applauds-renewed-economic-assistance-compacts-free-association", title: "Interior Department Applauds Renewed Economic Assistance for Compacts of Free Association", publisher: "US Department of the Interior", date: 2024, tier: 1}
+  - text: "Diplomatic: recognition of Beijing since 1989, and votes taken alongside Washington. In September 2025 the FSM was one of ten states that voted against the General Assembly endorsement of the New York Declaration on the two-state solution."
+    confidence: B
+    sources:
+    - {url: "https://www.fsmgov.org/press/pr091809.htm", title: "FSM Celebrates 20 Years of Diplomatic Relations with China", publisher: "Government of the Federated States of Micronesia", date: 2009-09, tier: 1}
+    - {url: "https://news.un.org/en/story/2025/09/1165835", title: "General Assembly endorses New York Declaration on two-State solution (142 in favour, 10 against, 12 abstentions)", publisher: "UN News", date: 2025-09-12, tier: 1}
+  constraints:
+  - text: "Money on a fixed clock. The renewed package runs for 20 years, through 2043, so the FSM plans its budget around an amount agreed with Washington and cannot change it alone."
+    confidence: C
+    sources:
+    - {url: "https://www.doi.gov/pressreleases/interior-department-applauds-renewed-economic-assistance-compacts-free-association", title: "Interior Department Applauds Renewed Economic Assistance for Compacts of Free Association", publisher: "US Department of the Interior", date: 2024, tier: 1}
+  - text: "Small trade base. Trade with China was about US$9.5 million in 2007, and the sourced trade figures are all from before 2022: no recent trade share has been read."
+    confidence: C
+    sources:
+    - {url: "https://www.fsmgov.org/press/pr091809.htm", title: "FSM Celebrates 20 Years of Diplomatic Relations with China", publisher: "Government of the Federated States of Micronesia", date: 2009-09, tier: 1}
+    - {url: "https://www.census.gov/foreign-trade/balance/c6820.html", title: "Foreign Trade: US trade balance with Federated States of Micronesia", publisher: "US Census Bureau", date: 2010, tier: 1}
+  paradoxes:
+  - text: "Voting with the Compact patron costs standing with the wider UN. The September 2025 vote placed the FSM among the ten states against the New York Declaration, while 142 states endorsed it; the alignment that the US money rewards is the one that isolates it on Palestine."
+    confidence: C
+    sources:
+    - {url: "https://news.un.org/en/story/2025/09/1165835", title: "General Assembly endorses New York Declaration on two-State solution (142 in favour, 10 against, 12 abstentions)", publisher: "UN News", date: 2025-09-12, tier: 1}
+  reading: |
+    Federated States of Micronesia runs its foreign policy inside a treaty: the Compact with the United States, renewed and funded in 2024 with US$3.3 billion over 20 years, is the anchor, and the one stance here sourced at B. Its second relation, with Beijing since 1989, is a small trade and aid tie whose recent record this pass did not read, and the Compact pair (Marshall Islands and Palau), Japan, Australia and the Pacific Islands Forum are open gaps. The one dated action read so far, the September 2025 vote against the New York Declaration, shows the Compact alignment at work in the UN.

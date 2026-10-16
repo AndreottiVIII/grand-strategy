@@ -1,0 +1,157 @@
+from: UGA
+relations:
+  # ---------- objective ----------
+  - to: COD
+    layer: objective
+    type: influence_goal
+    summary: "Hold the eastern DRC frontier against the ADF through Operation Shujaa, a joint UPDF-FARDC campaign launched in November 2021. Research reads it also as protection of the Lake Albert oil area and of roads for Ugandan goods; that reading is an inference (C)."
+    since: '2021-11'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.monitor.co.ug/uganda/special-reports/gains-losses-as-operation-shujja-marks-2-years--4456670", title: "Gains, losses as Operation Shujaa marks 2 years", publisher: "Daily Monitor", date: "2023-11", tier: 3}
+      - {url: "https://cic.nyu.edu/publications/uganda’s-operation-shujaa-democratic-republic-congo-fighting-adf-or-securing-economic", title: "Uganda's Operation Shujaa in the Democratic Republic of Congo: Fighting the ADF or Securing Economic Interests?", publisher: "NYU Center on International Cooperation", date: "2025", tier: 2}
+
+  - to: SSD
+    layer: objective
+    type: regime_goal
+    summary: "Kampala's account: the UPDF deployed in March 2025 to save Kiir and Juba. Keeping Kiir's government in power is the aim as we read it from that account (C)."
+    since: '2025-03-11'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.radiotamazuj.org/en/news/article/ugandas-army-chief-says-updf-has-deployed-to-save-kiir-juba", title: "Uganda's Army Chief says UPDF has deployed to save Kiir, Juba", publisher: "Radio Tamazuj", date: "2025-03", tier: 3}
+      - {url: "https://www.aljazeera.com/amp/news/2025/3/11/uganda-deploys-troops-in-south-sudan-as-civil-war-fears-grow", title: "Uganda deploys troops in South Sudan as civil war fears grow", publisher: "Al Jazeera", date: "2025-03-11", tier: 3}
+
+  # ---------- alignment ----------
+  - to: SSD
+    layer: alignment
+    type: security_guarantee
+    summary: "A military pact with Uganda, originally against the LRA: Ugandan special forces have been in Juba since March 2025, which Juba calls technical and support units under that pact. No formal guarantee instrument was found."
+    since: '2025-03-11'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.aljazeera.com/amp/news/2025/3/11/uganda-deploys-troops-in-south-sudan-as-civil-war-fears-grow", title: "Uganda deploys troops in South Sudan as civil war fears grow", publisher: "Al Jazeera", date: "2025-03-11", tier: 3}
+      - {url: "https://www.sudanspost.com/south-sudan-confirms-ugandan-troop-deployment-in-juba/", title: "South Sudan confirms Ugandan troop deployment in Juba", publisher: "Sudans Post", date: "2025-03", tier: 4}
+
+  # ---------- dependency ----------
+  - to: TZA
+    layer: dependency
+    type: energy_export
+    summary: "Uganda's crude leaves through Tanzania: the 1,443 km East African Crude Oil Pipeline from Hoima to Chongoleani near Tanga, 79% complete at end-2025. Start-up was targeted for 31 July 2026 and first crude from Tanga for October 2026; neither is confirmed in sources found. The value is pipeline length, not a share."
+    since: '2026-01-21'
+    until: null
+    value: 1443
+    unit: km_pipeline_hoima_to_tanga
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://allafrica.com/stories/202601210605.html", title: "EACOP Progress Hits 79 Percent As Uganda Stays On Track for First Oil in July 2026", publisher: "allAfrica", date: "2026-01-21", tier: 3}
+      - {url: "https://publicisteastafrica.com/eacop-hits-79-completion-as-uganda-and-tanzania-target-october-2026-crude-oil-exports/", title: "EACOP Hits 79% Completion as Uganda and Tanzania Target October 2026 Crude Oil Exports", publisher: "Publicis East Africa", date: "2026", tier: 3}
+
+  - to: ARE
+    layer: dependency
+    type: trade_share
+    summary: "Gold: 31 t went to the UAE in 2024 (SWISSAID, from UN Comtrade data), within a declared 2025 gold export of USD 5.8bn (central bank). The UN panel puts exports at USD 6.4bn, above Uganda's own output, and ties much of the surplus to gold smuggled from Ituri, DRC. The value is tonnes, not a share."
+    since: '2024'
+    until: null
+    value: 31
+    unit: tonnes_gold_to_uae_2024
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.ecofinagency.com/news-industry/0611-50175-uae-gold-imports-from-africa-rise-18-in-2024-says-swissaid", title: "UAE gold imports from Africa rise 18% in 2024, says SWISSAID", publisher: "Ecofin Agency", date: "2025-11", tier: 3}
+      - {url: "https://www.engineeringnews.co.za/article/ugandas-gold-exports-surged-76-last-year-to-58bn-2026-01-20", title: "Uganda's gold exports surged 76% last year to $5.8bn", publisher: "Engineering News", date: "2026-01-20", tier: 3}
+      - {url: "https://www.africanews.com/2026/07/02/gold-smuggling-from-drcs-ituri-province-to-uganda-on-the-rise-says-un/", title: "Gold smuggling from DRC's Ituri province to Uganda on the rise, says UN", publisher: "Africanews", date: "2026-07-02", tier: 3}
+
+  - to: CHN
+    layer: dependency
+    type: debt
+    summary: "China Exim holds about USD 2.2bn of Uganda's external debt (finance ministry data, end-September 2025); multilaterals hold about 65% of external debt. Separately, the EACOP financing of about USD 3bn (60:40 debt to equity, Exim Bank of China with Sinosure) slipped repeatedly: a financial close targeted for October 2023 was still unfinalised in June 2024."
+    since: '2025-09'
+    until: null
+    value: 2.2
+    unit: usd_bn_china_exim_debt_2025_09
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.monitor.co.ug/uganda/business/finance/inside-uganda-external-debt-currency-problem-5368036", title: "Inside Uganda's external debt and currency problem", publisher: "Daily Monitor", date: "2025-10", tier: 3}
+      - {url: "https://eagle.co.ug/2024/06/17/eacop-encounters-obstacles-as-financiers-delay-loan-disbursement/", title: "EACOP encounters obstacles as financiers delay loan disbursement", publisher: "Eagle Online", date: "2024-06-17", tier: 3}
+
+  - to: SOM
+    layer: dependency
+    type: military_presence
+    summary: "About 4,500 Ugandan troops on the AUSSOM list, the largest contributor; the UN funding cuts threaten the mission (Daily Monitor, 2026). The count is from that source and is not re-verified against the AU list."
+    since: '2026'
+    until: null
+    value: 4500
+    unit: uniformed_troops_aussom_list
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.monitor.co.ug/uganda/news/national/muhoozi-rallies-african-military-chiefs-as-un-cuts-threaten-somalia-peace-mission-5541254", title: "Muhoozi rallies African military chiefs as UN cuts threaten Somalia peace mission", publisher: "Daily Monitor", date: "2026", tier: 3}
+
+  # ---------- action ----------
+  - to: USA
+    layer: action
+    type: sanction
+    summary: "AGOA exclusion: the US removed Uganda from the trade preference over the Anti-Homosexuality Act, effective 1 January 2024 (Biden notice, October 2023). AGOA lapsed on 30 September 2025 and was reauthorised on 3 February 2026 to 31 December 2026; sources conflict on whether Uganda is back on the eligibility list."
+    since: '2024-01-01'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.semafor.com/article/10/31/2023/biden-suspends-uganda-niger-gabon-and-car-from-agoa-trade", title: "Biden's AGOA decision will hurt Ugandan exporters", publisher: "Semafor", date: "2023-10-31", tier: 3}
+      - {url: "https://www.africanews.com/2024/01/03/us-removes-uganda-from-agoa-trade-deal", title: "US removes Uganda from AGOA trade deal", publisher: "Africanews", date: "2024-01-03", tier: 3}
+      - {url: "https://eagle.co.ug/2026/02/04/us-extends-agoa-to-december-2026-eases-uncertainty-in-africa-us-trade/", title: "US extends AGOA to December 2026, eases uncertainty in Africa-US trade", publisher: "Eagle Online", date: "2026-02-04", tier: 3}
+
+  - to: GBR
+    layer: action
+    type: sanction
+    summary: "The UK sanctioned Speaker Anita Among in 2024 (stated grounds: corruption); Kampala answered that the UK should stop meddling in its affairs. The UK had said in May 2023 it was appalled by the Anti-Homosexuality Act."
+    since: '2024-04'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.theeastafrican.co.ke/tea/news/east-africa/uganda-urges-uk-to-stop-meddling-in-its-affairs-after-sanctions-4609634", title: "Uganda urges UK to stop meddling in its affairs after sanctions", publisher: "The EastAfrican", date: "2024-04", tier: 3}
+      - {url: "https://cyprus-mail.com/2023/05/29/uk-govt-says-it-is-appalled-at-ugandas-anti-homosexuality-law", title: "UK govt says it is appalled at Uganda's anti-homosexuality law", publisher: "Cyprus Mail", date: "2023-05-29", tier: 3}
+
+  - to: KEN
+    layer: action
+    type: agreement
+    summary: "State visit to Nairobi, July 2025: Ruto and Museveni signed eight memoranda of understanding on trade and cooperation."
+    since: '2025-07'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://citizen.digital/article/ruto-affirms-strong-ties-with-uganda-as-he-signs-8-mous-with-museveni-n367178", title: "Ruto affirms strong ties with Uganda as he signs 8 MoUs with Museveni", publisher: "Citizen Digital", date: "2025-07", tier: 3}
+
+  - to: RWA
+    layer: action
+    type: visit
+    summary: "Gen. Muhoozi, Uganda's Chief of Defence Forces, made a defence cooperation visit to Kigali from 25 July 2026 and met President Kagame; both sides framed it as security and bilateral cooperation. Relations had been broken by the 2019 border closure; military talks followed in 2025."
+    since: '2026-07-25'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://allafrica.com/stories/202607280322.html", title: "Rwanda: Gen Muhoozi in Kigali for Official Defence Cooperation Visit", publisher: "allAfrica", date: "2026-07-28", tier: 3}
+      - {url: "https://allafrica.com/stories/202510030079.html", title: "Rwanda, Uganda Military Commanders Conclude Talks to Strengthen Border Ties", publisher: "allAfrica", date: "2025-10-03", tier: 3}
+
+  - to: COD
+    layer: action
+    type: incident
+    summary: "A UN experts' report (leaked, July 2025) says Ugandan units expanded their presence in eastern DRC on their own initiative, forming a buffer that shielded M23 from counter-attacks. Uganda denies backing M23; the 2024 panel had reported active support by some officers."
+    since: '2025-07'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/7/18/un-experts-cast-blame-on-rwanda-and-uganda-what-are-they-doing-in-drc", title: "UN experts cast blame on Rwanda and Uganda. What are they doing in DRC?", publisher: "Al Jazeera", date: "2025-07-18", tier: 3}
+      - {url: "https://thedefensepost.com/2024/07/10/uganda-dismisses-backing-m23/amp/", title: "Uganda dismisses backing M23 (2024 UN panel report as reported)", publisher: "The Defense Post", date: "2024-07-10", tier: 4}
