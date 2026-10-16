@@ -1,0 +1,75 @@
+from: CHL
+relations:
+  # ---------- alignment ----------
+  - to: USA
+    layer: alignment
+    type: membership
+    summary: "Chile joined the Shield of the Americas, a US-promoted security coalition of 15 regional states announced at the UN General Assembly. Chile said it will not join military operations outside its territory nor let foreign troops fight organised crime on its soil. Membership of a coalition without a defence clause is recorded as membership, not treaty; the 2026 date is from the report, not confirmed to the day."
+    since: '2026'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.latercera.com/editorial/noticia/la-incorporacion-de-chile-al-escudo-de-las-americas/", title: "The incorporation of Chile into the Shield of the Americas", publisher: "La Tercera", date: "2026", tier: 3}
+
+  # ---------- dependency ----------
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    summary: "China is Chile's largest trade partner, a buyer of large volumes of copper and lithium, and Kast calls trade with China very important. The value is the rank, not a share: the rank is from the brief and not verified in the source text read here. Gap: a verified share of exports and the Chancay port competition are not sourced."
+    since: '2026-03-11'
+    until: null
+    value: 1
+    unit: rank_trade_partner
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.latercera.com/pulso/noticia/presidente-kast-dice-que-el-pais-no-tiene-una-eleccion-o-presion-para-elegir-a-estados-unidos-o-china-somos-pro-chile/", title: "Presidente Kast afirma que el país no tiene una elección o presión para elegir a EE.UU. o China: 'Somos pro Chile'", publisher: "La Tercera", date: "2026", tier: 3}
+
+  - to: ARG
+    layer: dependency
+    type: trade_share
+    summary: "Argentina became Chile's second-largest trading partner in Latin America in 2025, with bilateral trade near USD 7.98bn. The figure is from a search summary and was not checked on the cited page; treat it as C until the trade statistics are read."
+    since: '2025'
+    until: null
+    value: 7.98
+    unit: usd_bn_bilateral_trade_2025
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://es.euronews.com/2026/04/06/kast-elige-argentina-para-su-primer-viaje-refuerza-un-eje-conservador-frente-a-brasil", title: "Kast chooses Argentina for his first trip and reinforces a conservative axis against Brazil", publisher: "Euronews", date: "2026-04-06", tier: 3, lang: es}
+
+  # ---------- action ----------
+  - to: ARG
+    layer: action
+    type: visit
+    summary: "Kast's first official trip abroad as president was to Argentina, to meet Javier Milei, in April 2026. Both governments read it as an offset to Lula's regional influence."
+    since: '2026-04-06'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://es.euronews.com/2026/04/06/kast-elige-argentina-para-su-primer-viaje-refuerza-un-eje-conservador-frente-a-brasil", title: "Kast chooses Argentina for his first trip and reinforces a conservative axis against Brazil", publisher: "Euronews", date: "2026-04-06", tier: 3, lang: es}
+      - {url: "https://www.latercera.com/politica/noticia/kast-dice-que-no-le-exigira-a-milei-firmar-la-derogacion-del-decreto-porque-los-tratados-establecen-la-soberania-de-chile-sobre-magallanes/", title: "Kast says he will not require Milei to sign the repeal of the decree because the treaties establish Chile's sovereignty over Magallanes", publisher: "La Tercera", date: "2026", tier: 3, lang: es}
+
+  - to: PER
+    layer: action
+    type: incident
+    summary: "Peru declared a state of emergency in November 2025 to block the Chilean border crossings, a response to migration flows heading into Chile."
+    since: '2025-11-28'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/11/28/peru-to-declare-state-of-emergency-to-block-chile-border-crossings", title: "Peru to declare state of emergency to block Chile border crossings", publisher: "Al Jazeera", date: "2025-11-28", tier: 3}
+
+  - to: BOL
+    layer: action
+    type: agreement
+    summary: "Chile, Argentina, Peru and Bolivia signed a joint declaration on strategic minerals in Santiago on 28 August 2026, focused on copper and lithium, of which the four countries hold significant reserves. Mining authorities signed; the declaration is the first multi-country minerals pact of the Kast government."
+    since: '2026-08-28'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://es.euronews.com/2026/08/28/peru-argentina-chile-y-bolivia-unen-fuerzas-para-ganar-peso-en-el-mercado-de-minerales-est", title: "Peru, Argentina, Chile and Bolivia join forces to gain weight in the minerals market", publisher: "Euronews", date: "2026-08-28", tier: 3, lang: es}
