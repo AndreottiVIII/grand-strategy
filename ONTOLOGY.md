@@ -272,7 +272,7 @@ loyal, one bound by nothing or by a grievance is bought. Computed by `tools/buil
 ## Faults (added 2026-10-13)
 
 Luttwak's levels: the bond is the deep level, the posture the surface; a relationship whose two
-levels contradict each other rests on a fault. **Feud** = bond kin with posture rival or adversary.
+levels contradict each other rests on a fault. **Feud** = bond kin with posture rival or adversary, or with a claim on the other's territory (`claimed_territory` + kin: the claim denies the kin state's existence; China-Taiwan is the type case, added 2026-10-16).
 **Byzantine alliance** = bond grievance with posture ally or reluctant ally. **Strained** = bond kin
 with a reluctant posture: a warning, not a fault, shown only in the ledger. A fault written by both
 sides is mutual and weighs double. Trend read against the kind: a warming feud is healing, a

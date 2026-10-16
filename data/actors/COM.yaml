@@ -8,7 +8,54 @@ coords:
 - -11.7
 seat: Moroni
 regions:
-- world
-card: stub
+- east-africa
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Keep Azali Assoumani's personal rule intact after the disputed January 2024 vote. The electoral commission first announced 63% for him (16 January 2024); the Supreme Court confirmed 57.2% (24 January); the opposition's annulment demand and the protests were answered with a curfew from 18 January and at least one death."
+    confidence: B
+    sources:
+    - {url: "https://www.bbc.com/news/world-africa-68002934", title: "Comoros President Azali Assoumani wins fourth term in disputed poll", publisher: "BBC News", date: 2024-01-17, tier: 3}
+    - {url: "https://www.barrons.com/news/comoros-top-court-confirms-president-assoumani-s-re-election-e7526bec", title: "Comoros Court Confirms President's Re-election, Opposition Cries Foul", publisher: "Barron's", date: 2024-01-24, tier: 3}
+    - {url: "https://apnews.com/article/comoros-protests-unrest-elections-assoumani-bbea90c144941c0cae2c129c2fee6507", title: "Post-election protests in Comoros (title as cited by Wikipedia; page not opened)", publisher: "Associated Press", date: 2024-01-18, tier: 3}
+    - {url: "https://ceni-comores.org/dists/documents/20240125135901.pdf", title: "Presidential election results (archived; cited by Wikipedia, not opened)", publisher: "CENI, Comorian electoral commission", date: 2024-01-25, tier: 1}
+  - rank: 2
+    text: "Keep the claim to Mayotte on the record. Comoros put the claim before the UN General Assembly in its 2012 general-debate statement, and France's 1976 Security Council veto of a draft recognising Comorian sovereignty (11 votes in favour) has blocked the one UN route to it ever since."
+    confidence: B
+    sources:
+    - {url: "https://gadebate.un.org/en/67/comoros", title: "Comoros: statement at the UN General Assembly general debate, 67th session (cited by Wikipedia, not opened)", publisher: "UN General Assembly, general debate", date: 2012-09-26, tier: 1}
+    - {url: "https://research.un.org/en/docs/sc/quick", title: "Security Council veto list (cited by Wikipedia, not opened)", publisher: "United Nations", date: 2020-05-16, tier: 1}
+  means:
+  - text: "The UN General Assembly podium: Comoros restates the Mayotte claim in the general debate (2012 statement), and the General Assembly resolutions of the 1970s that rejected continued French rule are the record it rests on, read through a pointer (tier 4) that needs corroboration."
+    confidence: B
+    sources:
+    - {url: "https://gadebate.un.org/en/67/comoros", title: "Comoros: statement at the UN General Assembly general debate, 67th session (cited by Wikipedia, not opened)", publisher: "UN General Assembly, general debate", date: 2012-09-26, tier: 1}
+    - {url: "https://www.diploweb.com/Le-bras-de-fer-franco-comorien-au-sujet-de-Mayotte.html", title: "The Franco-Comorian tug-of-war over Mayotte", title_original: "Le bras de fer franco-comorien au sujet de Mayotte", lang: fr, publisher: "Diploweb", date: 2018-12-12, tier: 4}
+  - text: "Chinese assistance and diplomacy: a Chinese-assisted malaria programme on Moheli (New York Times, 2007), a 2008 military-cooperation pledge after a Comorian army delegation met China's defence minister (Xinhua), and Beijing's congratulations on the January 2024 re-election (Xinhua)."
+    confidence: B
+    sources:
+    - {url: "https://www.nytimes.com/2007/06/05/world/europe/05iht-malaria.2.6006557.html", title: "On island off Africa, China tries to wipe out malaria", publisher: "New York Times", date: 2007-06-05, tier: 3}
+    - {url: "http://news.xinhuanet.com/english/2008-10/21/content_10227730.htm", title: "Chinese defense minister meets Comoros army chief", publisher: "Xinhua (state agency, official statement)", date: 2008-10-22, tier: 1}
+    - {url: "https://english.news.cn/20240129/c146fbfb7b2247b2ade54ff3f5defce5/c.html", title: "China congratulates Assoumani on re-election as president of the Comoros", publisher: "Xinhua (state agency, official statement)", date: 2024-01-29, tier: 1}
+  constraints:
+  - text: "No resident US embassy since 2006. The embassy in Moroni (opened 1985) closed on 30 September 1993, and US responsibilities for Comoros moved to Antananarivo on 6 March 2006, so Washington's presence is run from Madagascar."
+    confidence: B
+    sources:
+    - {url: "https://history.state.gov/countries/comoros", title: "Comoros (Office of the Historian, accessed 30 May 2023)", publisher: "US Department of State, Office of the Historian", date: 2023-05-30, tier: 1}
+  - text: "Post-electoral fragility. The January 2024 protests left at least one dead and at least 25 injured, a curfew ran from 18 January, and internet access was disrupted (Reuters and AP reports, as cited by Wikipedia; not opened). A regime that has to hold its own result has less room in the external arena where the Mayotte claim is argued."
+    confidence: C
+    sources:
+    - {url: "https://apnews.com/article/comoros-protests-unrest-elections-assoumani-bbea90c144941c0cae2c129c2fee6507", title: "Post-election protests in Comoros (title as cited by Wikipedia; page not opened)", publisher: "Associated Press", date: 2024-01-18, tier: 3}
+  paradoxes:
+  - text: "Beijing congratulated Azali on his re-election on 29 January 2024, in the same month the US embassy asked the authorities for full transparency and clarification of the results. The claim to Mayotte gains its audience in New York, where France's 1976 veto has blocked it, and loses credibility on the ballot that the government had to defend with a curfew."
+    confidence: C
+    sources:
+    - {url: "https://english.news.cn/20240129/c146fbfb7b2247b2ade54ff3f5defce5/c.html", title: "China congratulates Assoumani on re-election as president of the Comoros", publisher: "Xinhua (state agency, official statement)", date: 2024-01-29, tier: 1}
+    - {url: "https://www.barrons.com/news/us-urges-comoros-to-clarify-disputed-election-results-5421786f", title: "US urges Comoros to clarify disputed election results", publisher: "Barron's", date: 2024-01-19, tier: 3}
+    - {url: "https://research.un.org/en/docs/sc/quick", title: "Security Council veto list (cited by Wikipedia, not opened)", publisher: "United Nations", date: 2020-05-16, tier: 1}
+  reading: |
+    Comoros is a small state whose founding claim to Mayotte is its main diplomatic asset, pursued at the UN because a 1976 French veto closed the Security Council to it. Under Azali the regime's international standing rests on a patron that does not ask about elections (Beijing congratulated him in January 2024, while the US embassy asked for clarification) and on a presidency that the 2024 vote and the curfew left more personal, not less. The succession to his son, the Gulf and Indian Ocean ties and the French flows the brief lists are not covered by the sources read in this pass, so they stay open.

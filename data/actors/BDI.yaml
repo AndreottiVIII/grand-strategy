@@ -3,12 +3,67 @@ name: Burundi
 type: state
 iso2: bi
 wikipedia: https://en.wikipedia.org/wiki/Burundi
-coords:
-- 29.93
-- -3.43
+coords: [29.93, -3.43]
 seat: Gitega
-regions:
-- world
-card: stub
+regions: [east-africa]
+card: full
 tier: minor
+last_verified: 2026-10-16
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the CNDD-FDD in power under President Ndayishimiye. A 2018 constitutional referendum let Nkurunziza stay in office until 2034 (New York Times, 2018), and the ruling party won the 2020 presidential election (Reuters, 2020). The aim is our reading of that record (C); the 2025 legislative vote is not yet sourced here."
+      confidence: C
+      sources:
+        - {url: "https://www.nytimes.com/2018/05/17/world/africa/burundi-referendum-vote.html", title: "In Tiny Burundi, a Huge Vote", publisher: "New York Times", date: "2018-05-17", tier: 3}
+        - {url: "https://www.reuters.com/article/uk-burundi-election-idUKKBN2320HF", title: "Burundi's ruling party wins presidential election", publisher: "Reuters", date: "2020-05-26", tier: 3}
+    - rank: 2
+      text: "Hold the Congolese army's line in South Kivu against M23. Burundi deployed thousands of soldiers to help the Congolese army (Reuters, January 2025), and when M23 seized Uvira on 10 December 2025 tens of thousands of Congolese crossed into Burundi (Al Jazeera, December 2025). The objective is our inference from the deployment."
+      confidence: C
+      sources:
+        - {url: "https://www.yahoo.com/news/m23-rebels-face-burundian-forces-173819912.html", title: "M23 rebels face Burundian forces", publisher: "Reuters (via Yahoo News)", date: "2025-01-31", tier: 3}
+        - {url: "https://www.aljazeera.com/news/2025/12/19/tens-of-thousands-flee-dr-congo-to-burundi-after-rebel-takeover-of-key-city", title: "Tens of thousands flee DR Congo to Burundi after rebel takeover of key city", publisher: "Al Jazeera", date: "2025-12-19", tier: 3}
+    - rank: 3
+      text: "Keep Rwanda from backing armed opposition against Bujumbura. Burundi accused Rwanda of backing the 2015 coup attempt (Reuters, January 2025), and Al Jazeera reports Rwanda is described as backing the M23 offensive, which Rwanda denies (December 2025). The objective is inferred (C)."
+      confidence: C
+      sources:
+        - {url: "https://www.yahoo.com/news/m23-rebels-face-burundian-forces-173819912.html", title: "M23 rebels face Burundian forces", publisher: "Reuters (via Yahoo News)", date: "2025-01-31", tier: 3}
+        - {url: "https://www.aljazeera.com/news/2025/12/19/tens-of-thousands-flee-dr-congo-to-burundi-after-rebel-takeover-of-key-city", title: "Tens of thousands flee DR Congo to Burundi after rebel takeover of key city", publisher: "Al Jazeera", date: "2025-12-19", tier: 3}
+
+  means:
+    - domain: military
+      text: "Thousands of soldiers in South Kivu beside the Congolese army (Reuters, January 2025), and troop contributions to the African Union mission in Somalia, which the Somali president acknowledged in February 2019 (Burundi presidency, a tier-1 statement). The revenue value of the Somali contribution is not sourced here."
+      confidence: C
+      sources:
+        - {url: "https://www.yahoo.com/news/m23-rebels-face-burundian-forces-173819912.html", title: "M23 rebels face Burundian forces", publisher: "Reuters (via Yahoo News)", date: "2025-01-31", tier: 3}
+        - {url: "https://www.presidence.gov.bi/2019/02/19/le-president-somalien-reconnait-la-contribution-des-troupes-du-burundi-dans-le-retour-a-la-paix-en-somalie/", title: "The Somali President acknowledges the contribution of Burundian troops to the return of peace in Somalia", title_original: "Le Président Somalien reconnaît la contribution des troupes du Burundi dans le retour à la paix en Somalie", lang: fr, publisher: "Presidency of Burundi", date: "2019-02-19", tier: 1}
+    - domain: economic
+      text: "Little economic lever. GDP was about USD 6.75bn in 2025, about USD 489 a head (IMF, April 2025). External support is thin: the sourced Belgian cooperation is EUR 75m for 2024-28 (Belga, 2023; North Africa Post, 2023)."
+      confidence: B
+      sources:
+        - {url: "https://www.imf.org/en/Publications/WEO/weo-database/2025/april", title: "World Economic Outlook Database, April 2025", publisher: "IMF", date: "2025-04", tier: 1}
+        - {url: "https://www.belganewsagency.eu/new-cooperation-programme-set-up-with-burundi-for-first-time-since-2015", title: "Belgium renews development cooperation with Burundi", publisher: "Belga News Agency", date: "2023", tier: 3}
+        - {url: "https://northafricapost.com/73962-burundi-belgium-ink-e75-million-cooperation-deal.html", title: "Burundi, Belgium ink EUR 75 million cooperation deal", publisher: "North Africa Post", date: "2023", tier: 3}
+
+  constraints:
+    - text: "A small, farm-based economy: about USD 6.75bn of GDP and about USD 489 a head (IMF, April 2025), with agriculture about half of GDP (EEAS, 2017 figure; the page is undated)."
+      confidence: B
+      sources:
+        - {url: "https://www.imf.org/en/Publications/WEO/weo-database/2025/april", title: "World Economic Outlook Database, April 2025", publisher: "IMF", date: "2025-04", tier: 1}
+        - {url: "https://eeas.europa.eu/headquarters/headquarters-homepage/996/burundi-and-eu_en", title: "Burundi and the EU", publisher: "EEAS", date: "2017", tier: 1}
+    - text: "The Congo war reaches the border: tens of thousands of Congolese crossed into Burundi after M23 seized Uvira on 10 December 2025, and UNHCR said on 19 December that Burundi had reached a 'critical point' (Al Jazeera, December 2025)."
+      confidence: C
+      sources:
+        - {url: "https://www.aljazeera.com/news/2025/12/19/tens-of-thousands-flee-dr-congo-to-burundi-after-rebel-takeover-of-key-city", title: "Tens of thousands flee DR Congo to Burundi after rebel takeover of key city", publisher: "Al Jazeera", date: "2025-12-19", tier: 3}
+
+  paradoxes:
+    - text: "Fighting M23 puts Burundi on the side opposite the Rwanda-backed rebels, so the Congo war becomes the Rwanda rivalry; and the same fighting sends refugees across the Burundian border (Al Jazeera, December 2025)."
+      confidence: C
+      sources:
+        - {url: "https://www.yahoo.com/news/m23-rebels-face-burundian-forces-173819912.html", title: "M23 rebels face Burundian forces", publisher: "Reuters (via Yahoo News)", date: "2025-01-31", tier: 3}
+        - {url: "https://www.aljazeera.com/news/2025/12/19/tens-of-thousands-flee-dr-congo-to-burundi-after-rebel-takeover-of-key-city", title: "Tens of thousands flee DR Congo to Burundi after rebel takeover of key city", publisher: "Al Jazeera", date: "2025-12-19", tier: 3}
+
+  reading: |
+    Burundi's grand strategy is to keep the CNDD-FDD in power, which the 2018 referendum and the 2020 election secured for the long term, and to keep the Congo war off its own soil by fighting beside Kinshasa. That alignment puts Bujumbura against the side Kigali is described as backing, so the rivalry with Rwanda now runs through the M23 war as well as through the 2015 coup accusation. The weak point is the economy, a farm-based state of about USD 6.75bn that hosts the refugees the war pushes across its border; the 2025 legislative election, the Rwanda border closure and the sanctions record are not yet verified here.

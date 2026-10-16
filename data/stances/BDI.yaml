@@ -1,0 +1,47 @@
+actor: BDI
+stances:
+  - toward: RWA
+    grade: rival
+    trend: stable
+    bond: grievance
+    since: '2015'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Burundi accused Rwanda of backing the 2015 coup attempt, a charge Reuters recalled in January 2025. The two now stand on opposite sides of the M23 war: Burundi's troops fight M23 beside Kinshasa, and Al Jazeera reports Rwanda is described as backing the offensive, which Rwanda denies. Rival is our reading (C): friction and opposed interests, with no source calling it an aim to destroy the other state. Bond grievance is our reading of the 2015 accusation; trend stable, since no source shows a change. Gaps: the border closure since January 2024 and the RED-Tabara charge are not verified in this pass. Mirror: the RWA card is not written yet, so nothing is mirrored. The Reuters page was cited through Wikipedia and not opened."
+    sources:
+      - {url: "https://www.yahoo.com/news/m23-rebels-face-burundian-forces-173819912.html", title: "M23 rebels face Burundian forces", publisher: "Reuters (via Yahoo News)", date: "2025-01-31", tier: 3}
+      - {url: "https://www.aljazeera.com/news/2025/12/19/tens-of-thousands-flee-dr-congo-to-burundi-after-rebel-takeover-of-key-city", title: "Tens of thousands flee DR Congo to Burundi after rebel takeover of key city", publisher: "Al Jazeera", date: "2025-12-19", tier: 3}
+
+  - toward: COD
+    grade: ally
+    trend: stable
+    bond: none
+    since: '2025-01'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Burundi deployed thousands of soldiers to South Kivu to help the Congolese army against M23 (Reuters, January 2025). Ally is our reading of a de facto military alignment with Kinshasa; no treaty or guarantee was found, and no source uses the word. Bond none is our reading: nothing sourced names kinship or affinity between the two states. Earlier accounts put the start of the deployment in 2023; that is not sourced here, so the since date follows the earliest source read. Gaps: the 2023 start and any 2025 withdrawal are not verified. Mirror: the COD card is a stub, so nothing is mirrored. The Reuters page was cited through Wikipedia and not opened."
+    sources:
+      - {url: "https://www.yahoo.com/news/m23-rebels-face-burundian-forces-173819912.html", title: "M23 rebels face Burundian forces", publisher: "Reuters (via Yahoo News)", date: "2025-01-31", tier: 3}
+
+  - toward: BEL
+    grade: partner
+    trend: warming
+    bond: none
+    since: '2023'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Belgium is Burundi's former colonial power. The sourced record is a EUR 75m cooperation programme for 2024-28 (health, education, agriculture, climate, governance), implemented by Enabel and the first since 2015 (Belga and North Africa Post, 2023). Partner is our reading of transactional development cooperation with no alignment or defence tie found. Trend warming: the renewal ended a gap since 2015. Bond none is our reading; the colonial past is not sourced for Burundi here. Mirror: the BEL card's row toward BDI (agreement) carries the same two URLs. Gap: the Belgian foreign ministry's statement that Burundi is its main bilateral partner is not verified here."
+    sources:
+      - {url: "https://www.belganewsagency.eu/new-cooperation-programme-set-up-with-burundi-for-first-time-since-2015", title: "Belgium renews development cooperation with Burundi", publisher: "Belga News Agency", date: "2023", tier: 3}
+      - {url: "https://northafricapost.com/73962-burundi-belgium-ink-e75-million-cooperation-deal.html", title: "Burundi, Belgium ink EUR 75 million cooperation deal", publisher: "North Africa Post", date: "2023", tier: 3}
+
+  - toward: SOM
+    grade: partner
+    trend: stable
+    bond: none
+    since: '2019-02'
+    last_verified: '2026-10-16'
+    confidence: B
+    note: "Burundi contributes troops to an African Union mission in Somalia. The Somali president acknowledged the Burundian contribution to the return of peace in Somalia (Burundi presidency, February 2019; a tier-1 government statement). Partner is our reading: a troop contribution under an AU mandate, with no alignment. Bond none is our reading. Gaps: the AUSSOM troop count, the mission's 2025-26 funding cuts and the revenue value to Bujumbura are not verified here. Mirror: the SOM card is not yet written, so nothing is mirrored."
+    sources:
+      - {url: "https://www.presidence.gov.bi/2019/02/19/le-president-somalien-reconnait-la-contribution-des-troupes-du-burundi-dans-le-retour-a-la-paix-en-somalie/", title: "The Somali President acknowledges the contribution of Burundian troops to the return of peace in Somalia", title_original: "Le Président Somalien reconnaît la contribution des troupes du Burundi dans le retour à la paix en Somalie", lang: fr, publisher: "Presidency of Burundi", date: "2019-02-19", tier: 1}

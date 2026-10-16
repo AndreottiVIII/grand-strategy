@@ -1,0 +1,71 @@
+from: BDI
+relations:
+  # ---------- objective ----------
+  - to: COD
+    layer: objective
+    type: influence_goal
+    summary: "Help the Congolese army hold South Kivu against M23: Burundi deployed thousands of soldiers there (Reuters, January 2025). The aim is our inference (C) from that deployment."
+    since: '2025-01'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.yahoo.com/news/m23-rebels-face-burundian-forces-173819912.html", title: "M23 rebels face Burundian forces", publisher: "Reuters (via Yahoo News)", date: "2025-01-31", tier: 3}
+
+  - to: RWA
+    layer: objective
+    type: influence_goal
+    summary: "Keep Rwanda from backing armed opposition against Bujumbura: Burundi accused Rwanda of backing the 2015 coup attempt, a charge Reuters recalled in January 2025. The aim is inferred (C)."
+    since: '2015'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.yahoo.com/news/m23-rebels-face-burundian-forces-173819912.html", title: "M23 rebels face Burundian forces", publisher: "Reuters (via Yahoo News)", date: "2025-01-31", tier: 3}
+
+  # ---------- alignment ----------
+  - to: COD
+    layer: alignment
+    type: security_guarantee
+    summary: "De facto military alignment: Burundian troops fight beside the Congolese army in South Kivu. No treaty or guarantee instrument was found; the type is our reading (C)."
+    since: '2025-01'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.yahoo.com/news/m23-rebels-face-burundian-forces-173819912.html", title: "M23 rebels face Burundian forces", publisher: "Reuters (via Yahoo News)", date: "2025-01-31", tier: 3}
+
+  # ---------- action ----------
+  - to: BEL
+    layer: action
+    type: agreement
+    summary: "EUR 75m cooperation programme for 2024-28 (health, education, agriculture, climate, governance), implemented by Enabel, the first since 2015. Mirrored from the BEL card's row toward BDI (same sources)."
+    since: '2023'
+    until: '2028'
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.belganewsagency.eu/new-cooperation-programme-set-up-with-burundi-for-first-time-since-2015", title: "Belgium renews development cooperation with Burundi", publisher: "Belga News Agency", date: "2023", tier: 3}
+      - {url: "https://northafricapost.com/73962-burundi-belgium-ink-e75-million-cooperation-deal.html", title: "Burundi, Belgium ink EUR 75 million cooperation deal", publisher: "North Africa Post", date: "2023", tier: 3}
+
+  - to: COD
+    layer: action
+    type: incident
+    summary: "Refugees from the DRC began crossing into Burundi on 5 December 2025; M23 seized Uvira on 10 December, and UNHCR said on 19 December that Burundi had reached a 'critical point' (Al Jazeera)."
+    since: '2025-12-05'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/12/19/tens-of-thousands-flee-dr-congo-to-burundi-after-rebel-takeover-of-key-city", title: "Tens of thousands flee DR Congo to Burundi after rebel takeover of key city", publisher: "Al Jazeera", date: "2025-12-19", tier: 3}
+
+  - to: RWA
+    layer: action
+    type: incident
+    summary: "Burundi accused Rwanda of backing the 2015 coup attempt. The charge is dated 2015, outside the 2022-26 window; it is kept as the only sourced Burundi-Rwanda action found. The border closure since January 2024 is not verified here."
+    since: '2015'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.yahoo.com/news/m23-rebels-face-burundian-forces-173819912.html", title: "M23 rebels face Burundian forces", publisher: "Reuters (via Yahoo News)", date: "2025-01-31", tier: 3}

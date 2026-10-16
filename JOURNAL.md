@@ -19,6 +19,11 @@ partner, mirrored from Myanmar's card; Fiji now reads Australia as ally (Veitaci
 Eritrea (the October 2026 rupture: embassy closed, troops in Tigray, Article 51 at the Security
 Council, Assab); Australia reads China as rival, warming (AUKUS and the Pacific denial web against
 the trade thaw); Morocco reads the Polisario as adversary and Ceuta-Melilla as claimed territory.
+Faults rule widened on Davide's decision ("loro sono tipico esempio e devono esserci"): a claim on kin
+territory (posture claimed_territory with bond kin) is a feud, so China-Taiwan appears on the Faults
+page; Taiwan's reading of China raised from C to B on Taipei's own 'foreign hostile force'
+designation. ONTOLOGY.md updated.
+
 A Wikidata membership row made Australia an ASEAN member: removed from the dataset and excluded in
 the generator (WRONG set in tools/datasets/wikidata.py). New tool `tools/onesided.py` lists the
 readings that have no hand-written counterpart: Davide wants to review them with me before the

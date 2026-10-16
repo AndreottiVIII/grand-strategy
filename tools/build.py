@@ -459,11 +459,12 @@ def main():
     # --- faults (Luttwak's levels: the bond is the deep level, the posture the surface; where they
     # contradict each other the relationship rests on a fault). feud = kin + hostile; byzantine =
     # grievance + allied; strained = kin + reluctant (a warning, not a fault). Hand-written A/B only.
+    # A claim on kin territory (claimed_territory + kin) is a feud too: the claim denies the other's statehood (Davide, 2026-10-16, China-Taiwan).
     FAULT_HOSTILE, FAULT_ALLIED = {"rival", "adversary"}, {"ally", "reluctant_ally"}
     faults = []
     for (a, x), st in handst.items():
         g, b = st["grade"], st.get("bond")
-        kind = "feud" if b == "kin" and g in FAULT_HOSTILE else "byzantine" if b == "grievance" and g in FAULT_ALLIED else "strained" if b == "kin" and g in ("reluctant_ally", "reluctant_partner") else None
+        kind = "feud" if b == "kin" and (g in FAULT_HOSTILE or g == "claimed_territory") else "byzantine" if b == "grievance" and g in FAULT_ALLIED else "strained" if b == "kin" and g in ("reluctant_ally", "reluctant_partner") else None
         if kind:
             faults.append({"a": a, "x": x, "kind": kind, "grade": g, "bond": b, "trend": st.get("trend"), "note": first(st.get("note"))})
     seen_pairs = {}

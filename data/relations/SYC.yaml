@@ -1,0 +1,73 @@
+from: SYC
+relations:
+  # ---------- objective ----------
+  - to: IND
+    layer: objective
+    type: influence_goal
+    summary: "Seychelles seeks India's help on maritime security: Indian coastal radar since 2022 and defence and technology agreements at the June 2026 state visit. The Assumption Island base planned in 2018 was never built."
+    since: 2022-05
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://seychellesnewsagency.com/articles/16768/india-to-install-coast-guard-radar-system-for-seychelles-coast-guard", title: "India to install coast guard radar system for Seychelles Coast Guard", publisher: "Seychelles News Agency", date: 2022-05, tier: 3}
+      - {url: "https://www.outlookindia.com/national/modi-concludes-seychelles-state-visit-with-defence-technology-agreements", title: "Modi concludes Seychelles state visit with defence, technology agreements", publisher: "Outlook India", date: 2026-06, tier: 3}
+
+  - to: USA
+    layer: objective
+    type: influence_goal
+    summary: "President Herminie pledged to widen cooperation with Washington on security, education, trade and economic opportunity, as the two countries marked fifty years of diplomatic relations in 2026."
+    since: 2026-08
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://statehouse.gov.sc/news/7168/president-herminie-receives-commemorative-plaque-as-seychelles-and-united-states-mark-50-years-of-diplomatic-relations", title: "President Herminie Receives Commemorative Plaque as Seychelles and United States Mark 50 Years of Diplomatic Relations", publisher: "State House (Seychelles)", date: 2026-08, tier: 1}
+      - {url: "https://nation.sc/articles/31794/new-us-charg-daffaires-presents-commemorative-plaque-to-president-herminie", title: "New US chargé d'affaires presents commemorative plaque to President Herminie", publisher: "Seychelles Nation", date: 2026-08, tier: 3}
+
+  - to: CHN
+    layer: objective
+    type: influence_goal
+    summary: "Seychelles' government stresses partnership with China: Xi Jinping and Herminie exchanged messages on 30 June 2026 for fifty years of diplomatic ties, and the government's line is one China and Belt and Road cooperation."
+    since: 2026-06-30
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.mfa.gov.cn/fra/wjdt/zyxw/202607/t20260702_11956276.html", title: "Chinese foreign ministry news item on the 50th anniversary of China-Seychelles ties (French-language page)", publisher: "Chinese Ministry of Foreign Affairs", date: 2026-07-02, tier: 1, lang: fr}
+      - {url: "https://nation.sc/articles/31339/seychelleschina-relations-enter-new-phase-of-partnership", title: "Seychelles-China relations enter new phase of partnership", publisher: "Seychelles Nation", date: 2026, tier: 3}
+
+  # ---------- action ----------
+  - to: IND
+    layer: action
+    type: visit
+    summary: "Indian Prime Minister Narendra Modi's state visit to Seychelles, 27-29 June 2026, for the country's 50th National Day. The official page sets the dates; the press reports defence and technology agreements."
+    since: 2026-06-27
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.narendramodi.in/ma/state-visit-of-prime-minister-narendra-modi-to-seychelles-june-27-29-2026-", title: "State visit of Prime Minister Narendra Modi to Seychelles June 27-29 2026", publisher: "Narendra Modi (official website of the Prime Minister of India)", date: 2026-06, tier: 1}
+      - {url: "https://www.outlookindia.com/national/modi-concludes-seychelles-state-visit-with-defence-technology-agreements", title: "Modi concludes Seychelles state visit with defence, technology agreements", publisher: "Outlook India", date: 2026-06, tier: 3}
+
+  - to: GBR
+    layer: action
+    type: agreement
+    summary: "Seychelles and the United Kingdom signed an Economic Security Partnership on 9 October 2024. Both are Commonwealth members, and both belong to the Eastern and Southern Africa-UK Economic Partnership Agreement, per the report."
+    since: 2024-10-09
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.nation.sc/articles/23729/seychelles-uk-sign-economic-security-partnership", title: "Seychelles, UK sign Economic Security Partnership", publisher: "Seychelles Nation", date: 2024-10-09, tier: 3}
+
+  - to: ARE
+    layer: action
+    type: visit
+    summary: "President Herminie's official visit to the UAE was announced by the State House for 6-11 December 2025. No readout or agreement from the trip was found, so its outcome is not recorded."
+    since: 2025-12-06
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://statehouse.gov.sc/news/6660/president-herminie-to-undertake-official-visit-to-the-uae-from-december-6th-to-11th-2025", title: "President Herminie to undertake official visit to the UAE from December 6th to 11th 2025", publisher: "State House (Seychelles)", date: 2025-12, tier: 1}
