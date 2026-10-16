@@ -1,14 +1,92 @@
 id: BRA
 name: Brazil
+short: Brazil
 type: state
 iso2: br
+coords: [-47.88, -15.79]
 wikipedia: https://en.wikipedia.org/wiki/Brazil
-coords:
-- -47.88
-- -15.79
 seat: Brasília
-regions:
-- world
-card: stub
+regions: [south-america]
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Win the 25 October 2026 runoff, or at least keep the Lula line in office: in the first round on 4 October Flávio Bolsonaro took 47.03% and Lula 45.16%. The vote is the constraint on every choice below."
+      confidence: C
+      sources:
+        - {url: "https://www.bbc.com/news/articles/ck1l34ed592no", title: "First-round result, 2026 Brazilian general election (BBC, as cited by Wikipedia)", publisher: "BBC", date: 2026-10-04, tier: 3}
+        - {url: "https://www.reuters.com/world/americas/brazilians-head-polls-high-stakes-polarized-election-2026-10-04/", title: "Brazilians head to the polls in a high-stakes, polarized election", publisher: "Reuters", date: 2026-10-04, tier: 3}
+    - rank: 2
+      text: "Sell to Europe and Asia without losing the Mercosur bloc: the EU-Mercosur partnership agreement was signed on 17 January 2026, provisionally applied from 1 May 2026, and referred by the European Parliament to the EU's top court on 21 January. Argentina's Milei pulls the bloc towards the US and the EU instead of Asia."
+      confidence: C
+      sources:
+        - {url: "https://en.wikipedia.org/wiki/EU%E2%80%93Mercosur_Partnership_Agreement", title: "EU-Mercosur Partnership Agreement (as cited by Wikipedia: Euractiv, 17 Jan 2026; Politico, 1 May 2026; Reuters, 21 Jan 2026)", publisher: "Wikipedia (citations to Euractiv, Politico, Reuters)", date: 2026-05, tier: 4}
+        - {url: "https://en.mercopress.com/2026/06/29/milei-brings-open-disputes-with-brazil-to-a-mercosur-summit-focused-on-trade-deals", title: "Milei brings open disputes with Brazil to a Mercosur summit focused on trade deals", publisher: "MercoPress", date: 2026-06-29, tier: 3}
+    - rank: 3
+      text: "Make the Amazon the leadership card: a joint pledge with France (March 2024) to halt Amazon deforestation by 2030 with EUR 1 billion over four years for the Brazilian and Guyanese Amazon, and COP30 hosted in Belém in November 2025 as the stage."
+      confidence: C
+      sources:
+        - {url: "https://www.pressreader.com/philippines/philippine-daily-inquirer-1109/20240328/281895893246207", title: "Brazil, France launch $1.1-B program to protect Amazon rainforest", publisher: "Philippine Daily Inquirer (via PressReader)", date: 2024-03-28, tier: 3}
+    - rank: 4
+      text: "Contain the US coercion of 2025-2026 without a rupture: the 50% tariff of 30 July 2025 over the Bolsonaro trial, partly rolled back, and the 25% Section 301 duty of 15 July 2026 are the costs; the delisting of Justice de Moraes (12 Dec 2025) is the sign that the pressure can be negotiated."
+      confidence: B
+      sources:
+        - {url: "https://www.whitehouse.gov/presidential-actions/2025/07/addressing-threats-to-the-us/", title: "Addressing threats to the United States by the Government of Brazil (Executive Order 14323)", publisher: "The White House", date: 2025-07-30, tier: 1}
+        - {url: "https://ofac.treasury.gov/recent-actions/20251212", title: "Global Magnitsky designations removals (de Moraes delisted)", publisher: "US Department of the Treasury, OFAC", date: 2025-12-12, tier: 1}
+        - {url: "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ustr-section-301-action-brazils-unreasonable-acts-policies-and-practices", title: "USTR Section 301 action on Brazil's unreasonable acts, policies, and practices", publisher: "Office of the United States Trade Representative", date: 2026-07-15, tier: 1}
+
+  means:
+    - domain: economic
+      text: "Agribusiness: soybeans and beef sold to China, which replaced American soybean buyers in 2025 and is the largest trading partner. China's 55% tariff on Brazilian beef after the quota was reached (30 Sep 2026) shows the lever runs both ways."
+      confidence: B
+      sources:
+        - {url: "https://www.reuters.com/world/china/china-adds-55-tariff-brazil-beef-imports-2026-09-30/", title: "China adds 55% tariff on Brazil beef imports after quota is reached", publisher: "Reuters", date: 2026-09-30, tier: 3}
+        - {url: "https://www.csis.org/analysis/great-balancing-act-lula-china-and-future-us-brazil-relations", title: "The great balancing act: Lula in China and the future of US-Brazil relations", publisher: "CSIS", date: 2023-04-19, tier: 2}
+    - domain: diplomatic
+      text: "Multilateral platforms: a BRICS co-founder (Rio summit July 2025; the New Delhi declaration of September 2026 dropped any mention of Ukraine), Mercosur, and the COP30 host. Brazil abstained on the UN General Assembly text on Ukraine of 24 February 2026."
+      confidence: B
+      sources:
+        - {url: "https://digitallibrary.un.org/record/4103179", title: "A/RES/ES-11/10 Support for lasting peace in Ukraine - voting record (Brazil abstained)", publisher: "United Nations", date: 2026-02-24, tier: 1}
+        - {url: "https://www.indiatoday.in/world/story/brics-summit-new-delhi-joint-declaration-makes-no-mention-of-ukraine-war-marks-shift-from-rio-2993451-2026-09-13", title: "BRICS joint declaration in New Delhi makes no mention of Ukraine war", publisher: "India Today", date: 2026-09-13, tier: 3}
+    - domain: informational
+      text: "Sovereignty language: Lula called the US removal of Maduro in January 2026 an 'unacceptable line' and a grave affront to Venezuela's sovereignty, and asked the UN to respond. It is the argument the government uses against US pressure in general."
+      confidence: C
+      sources:
+        - {url: "https://www.elheraldo.hn/mundo/lula-da-silva-afirma-captura-nicolas-maduro-parte-estados-unidos-cruza-linea-inaceptable-AC28803311", title: "Lula da Silva says the US capture of Nicolas Maduro crosses an unacceptable line", publisher: "El Heraldo (Honduras)", date: 2026-01, tier: 3, lang: es}
+
+  constraints:
+    - text: "The runoff: the winner of 25 October decides which foreign policy line the next government carries. Every choice above is a bet on Lula's re-election, and the first round put him 1.9 points behind."
+      confidence: C
+      sources:
+        - {url: "https://www.bbc.com/news/articles/ck1l34ed592no", title: "First-round result, 2026 Brazilian general election (BBC, as cited by Wikipedia)", publisher: "BBC", date: 2026-10-04, tier: 3}
+    - text: "Dependence on China as a buyer: China takes the soybeans and beef that carry the trade balance, and it can hit them with tariffs (the 55% beef duty of 30 Sep 2026). Brasilia cannot choose freely between Washington and Beijing on trade."
+      confidence: B
+      sources:
+        - {url: "https://www.reuters.com/world/china/china-adds-55-tariff-brazil-beef-imports-2026-09-30/", title: "China adds 55% tariff on Brazil beef imports after quota is reached", publisher: "Reuters", date: 2026-09-30, tier: 3}
+    - text: "US market access: the 2025 tariff was partly rolled back, but the Section 301 case ended in a 25% duty on Brazilian goods (15 July 2026). Washington chooses the sectors and the timing of the pressure."
+      confidence: B
+      sources:
+        - {url: "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ustr-section-301-action-brazils-unreasonable-acts-policies-and-practices", title: "USTR Section 301 action on Brazil's unreasonable acts, policies, and practices", publisher: "Office of the United States Trade Representative", date: 2026-07-15, tier: 1}
+
+  paradoxes:
+    - text: "The sovereignty case against Washington's pressure over the Bolsonaro trial gives Lula an issue, yet his runoff rival is Jair Bolsonaro's son Flávio. The fight with the US keeps the Bolsonaro question at the centre of the vote."
+      confidence: C
+      sources:
+        - {url: "https://www.reuters.com/world/americas/brazilians-head-polls-high-stakes-polarized-election-2026-10-04/", title: "Brazilians head to the polls in a high-stakes, polarized election", publisher: "Reuters", date: 2026-10-04, tier: 3}
+        - {url: "https://www.whitehouse.gov/presidential-actions/2025/07/addressing-threats-to-the-us/", title: "Addressing threats to the United States by the Government of Brazil (Executive Order 14323)", publisher: "The White House", date: 2025-07-30, tier: 1}
+    - text: "The Amazon agenda depends on the commodities that drive clearing: the COP30 and France pledges are credible only if the agribusiness that earns the trade surplus does not push the forest back. China's beef duty shows how exposed that trade is."
+      confidence: C
+      sources:
+        - {url: "https://www.pressreader.com/philippines/philippine-daily-inquirer-1109/20240328/281895893246207", title: "Brazil, France launch $1.1-B program to protect Amazon rainforest", publisher: "Philippine Daily Inquirer (via PressReader)", date: 2024-03-28, tier: 3}
+        - {url: "https://www.reuters.com/world/china/china-adds-55-tariff-brazil-beef-imports-2026-09-30/", title: "China adds 55% tariff on Brazil beef imports after quota is reached", publisher: "Reuters", date: 2026-09-30, tier: 3}
+    - text: "Brazil needs the EU deal most, and its own bloc blocks it: Milei called Lula a 'thief' and a 'convict' at a July 2026 rally in São Paulo for Flávio Bolsonaro, and the European Parliament's referral to the court slows the agreement Brasilia wants."
+      confidence: C
+      sources:
+        - {url: "https://en.mercopress.com/2026/08/14/pena-says-the-milei-lula-crisis-has-not-affected-how-mercosur-functions", title: "Peña says the Milei-Lula crisis has not affected how Mercosur functions", publisher: "MercoPress", date: 2026-08-14, tier: 3}
+        - {url: "https://en.wikipedia.org/wiki/EU%E2%80%93Mercosur_Partnership_Agreement", title: "EU-Mercosur Partnership Agreement (as cited by Wikipedia: Reuters, 21 Jan 2026)", publisher: "Wikipedia (citations to Reuters)", date: 2026-05, tier: 4}
+
+  reading: |
+    Brazil plays the strategy of a continental power that will not take sides. It sells soybeans and beef to China, trades with the EU, speaks for the Global South in the BRICS and wants to lead on the Amazon, while US tariffs and sanctions and Argentina's feud push it to lean on its own bloc. The 25 October runoff is the constraint that decides how long this holds, because the sovereignty line that works against Washington is also the line that the Bolsonaro camp contests. Brazil's partners are many and none is a bloc of its own, so its room is the room that the vote leaves.

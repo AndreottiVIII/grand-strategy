@@ -1,0 +1,105 @@
+from: BRA
+relations:
+  # ---------- objective ----------
+  - to: VEN
+    layer: objective
+    type: influence_goal
+    summary: "Brazil wants a say in Venezuela's transition and presents itself as the government that talks to whoever governs Caracas: after the US removal of Maduro in January 2026 Lula called the acting president Delcy Rodríguez and offered dialogue and cooperation. Mirror of the VEN side, same sources; the recognition reported by one outlet is not used."
+    since: 2026-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.elheraldo.hn/mundo/lula-da-silva-afirma-captura-nicolas-maduro-parte-estados-unidos-cruza-linea-inaceptable-AC28803311", title: "Lula da Silva says the US capture of Nicolas Maduro crosses an unacceptable line", publisher: "El Heraldo (Honduras)", date: 2026-01, tier: 3, lang: es}
+      - {url: "https://www.deccanherald.com/world/brazils-lula-held-call-with-venezuelas-interim-president-on-saturday-3852611", title: "Brazil's Lula held call with Venezuela's interim president on Saturday", publisher: "Deccan Herald", date: 2026-01, tier: 3}
+
+  # ---------- action ----------
+  - to: CHN
+    layer: action
+    type: agreement
+    summary: "Lula's state visit to China in April 2023: 15 memoranda signed with Beijing, the relationship called a priority for Brazil's trade. Mirror of the CHN card's dated row, same sources."
+    since: 2023-04-14
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.csis.org/analysis/great-balancing-act-lula-china-and-future-us-brazil-relations", title: "The great balancing act: Lula in China and the future of US-Brazil relations", publisher: "CSIS", date: 2023-04-19, tier: 2}
+  - to: RUS
+    layer: action
+    type: un_vote
+    summary: "Brazil abstained on General Assembly resolution ES-11/10 (Support for lasting peace in Ukraine), 24 Feb 2026; the New Delhi BRICS declaration of Sept 2026 that Brazil signed dropped any mention of Ukraine. Mirror of the RUS side, same sources."
+    since: 2026-02-24
+    until: 2026-02-24
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://digitallibrary.un.org/record/4103179", title: "A/RES/ES-11/10 Support for lasting peace in Ukraine - voting record (Brazil abstained)", publisher: "United Nations", date: 2026-02-24, tier: 1}
+      - {url: "https://www.indiatoday.in/world/story/brics-summit-new-delhi-joint-declaration-makes-no-mention-of-ukraine-war-marks-shift-from-rio-2993451-2026-09-13", title: "BRICS joint declaration in New Delhi makes no mention of Ukraine war", publisher: "India Today", date: 2026-09-13, tier: 3}
+  - to: org-eu
+    layer: action
+    type: agreement
+    summary: "The Mercosur-EU partnership agreement was signed on 17 January 2026 in Paraguay by the Mercosur states, Brazil among them, and provisionally applied from 1 May 2026; the European Parliament referred it to the EU court on 21 January 2026. The agreement was signed in 2026, not 2025."
+    since: 2026-01-17
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/EU%E2%80%93Mercosur_Partnership_Agreement", title: "EU-Mercosur Partnership Agreement (as cited by Wikipedia: Euractiv, 17 Jan 2026; Politico, 1 May 2026; Reuters, 21 Jan 2026)", publisher: "Wikipedia (citations to Euractiv, Politico, Reuters)", date: 2026-05, tier: 4}
+  - to: PRT
+    layer: action
+    type: visit
+    summary: "Lula's one-day visit to Lisbon on 21 Apr 2026, the last leg of a European tour: talks with Montenegro and Seguro, Portugal named as Brazil's gateway to Europe. Mirror of the PRT row, same sources."
+    since: 2026-04-21
+    until: 2026-04-21
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.rtp.pt/noticias/pais/lula-termina-visita-muito-boa-a-portugal_e1735652", title: "Lula ends 'very good' visit to Portugal", title_original: "Lula termina visita 'muito boa' a Portugal", lang: pt, publisher: "RTP", date: 2026-04-21, tier: 3}
+      - {url: "https://www.portaltela.com/noticias/internacional/2026/04/21/lula-aponta-portugal-como-porta-de-entrada-de-interesses-empresariais-brasileiros/", title: "Lula points to Portugal as the gateway for Brazilian business interests", title_original: "Lula aponta Portugal como porta de entrada de interesses empresariais brasileiros", lang: pt, publisher: "Portal Tela", date: 2026-04-21, tier: 3}
+  - to: FRA
+    layer: action
+    type: visit
+    summary: "Macron in Belém, 28 March 2024 (Combú island): Brazil and France launched a EUR 1 billion programme to protect the Brazilian and Guyanese Amazon and pledged to halt Amazon deforestation by 2030. Macron said in June 2025 he would attend COP30 in Belém."
+    since: 2024-03-28
+    until: 2024-03-28
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.pressreader.com/philippines/philippine-daily-inquirer-1109/20240328/281895893246207", title: "Brazil, France launch $1.1-B program to protect Amazon rainforest", publisher: "Philippine Daily Inquirer (via PressReader)", date: 2024-03-28, tier: 3}
+  - to: USA
+    layer: action
+    type: incident
+    summary: "Lula's government called the US removal of Maduro in January 2026 an 'unacceptable line' and a grave affront to Venezuela's sovereignty. It is Brazil's answer to the US pressure of 2025-2026 (the 50% tariff over the Bolsonaro trial, the Section 301 duty of 15 July 2026), which the USA card records from the other side."
+    since: 2026-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.elheraldo.hn/mundo/lula-da-silva-afirma-captura-nicolas-maduro-parte-estados-unidos-cruza-linea-inaceptable-AC28803311", title: "Lula da Silva says the US capture of Nicolas Maduro crosses an unacceptable line", publisher: "El Heraldo (Honduras)", date: 2026-01, tier: 3, lang: es}
+      - {url: "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ustr-section-301-action-brazils-unreasonable-acts-policies-and-practices", title: "USTR Section 301 action on Brazil's unreasonable acts, policies, and practices", publisher: "Office of the United States Trade Representative", date: 2026-07-15, tier: 1}
+  - to: ARG
+    layer: action
+    type: incident
+    summary: "Milei's feud with Lula reached Mercosur: at a July 2026 rally in São Paulo for Flávio Bolsonaro he called Lula a 'thief' and a 'convict', and Brazil recalled its ambassador from Buenos Aires for consultations (per the coverage; not checked against a primary source). Paraguay's president says the crisis has not stopped the bloc working."
+    since: 2026-07
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://en.mercopress.com/2026/06/29/milei-brings-open-disputes-with-brazil-to-a-mercosur-summit-focused-on-trade-deals", title: "Milei brings open disputes with Brazil to a Mercosur summit focused on trade deals", publisher: "MercoPress", date: 2026-06-29, tier: 3}
+      - {url: "https://en.mercopress.com/2026/08/14/pena-says-the-milei-lula-crisis-has-not-affected-how-mercosur-functions", title: "Peña says the Milei-Lula crisis has not affected how Mercosur functions", publisher: "MercoPress", date: 2026-08-14, tier: 3}
+
+  # ---------- dependency ----------
+  - to: PRT
+    layer: dependency
+    type: remittances
+    value: 341.4
+    unit: eur_million_remitted_by_brazilians_in_portugal_2025
+    summary: "Brazilians living in Portugal sent EUR 341.4m home in 2025 (-6.8%). Mirror of the PRT row: the flow runs from Portugal to Brazil, so it is a dependency of Brazil on its diaspora's money, not of Portugal on Brazil."
+    since: 2025
+    until: null
+    last_verified: 2026-10-12
+    confidence: B
+    sources:
+      - {url: "https://dnbrasil.dn.pt/brasileiros-receberam-115709-novas-autorizaes-de-residncia-em-portugal-em-2025", title: "Brazilians received 115,709 new residence permits in Portugal in 2025", title_original: "Brasileiros receberam 115.709 novas autorizacoes de residencia em Portugal em 2025", lang: pt, publisher: "DN Brasil (AIMA report)", date: 2026-09, tier: 3}
+      - {url: "https://www.dnoticias.pt/2026/2/23/482430-remessas-dos-emigrantes-subiram-214-em-2025-para-4387-milhoes-de-euros/", title: "Emigrant remittances rose 2.14% in 2025 to EUR 4,387 million", title_original: "Remessas dos emigrantes subiram 2,14% em 2025 para 4.387 milhoes de euros", lang: pt, publisher: "DNoticias (Lusa, Banco de Portugal data)", date: 2026-02-23, tier: 3}

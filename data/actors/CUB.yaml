@@ -8,7 +8,70 @@ coords:
 - 23.14
 seat: Havana
 regions:
-- world
-card: stub
+- central-america-caribbean
+card: full
 tier: minor
+last_verified: 2026-10-16
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the one-party system, the presidency and every official's post off any deal with Washington. On 20 March 2026 a deputy foreign minister said these were not negotiable, after reports that the administration wanted Díaz-Canel out with two years of his term left."
+      confidence: C
+      sources:
+        - {url: "https://www.newstribune.com/news/2026/mar/22/cuba-refuses-to-negotiate-presidents-term-in/", title: "Cuba refuses to negotiate president's term in talks with United States", publisher: "Newstribune", date: 2026-03-22, tier: 3}
+        - {url: "https://www.scmp.com/news/world/united-states-canada/article/3339642/cubas-diaz-say-no-conversations-us-after-trump-threats-amid-venezuela-tensions", title: "Cuba's Diaz-Canel says no conversations with US after Trump threats amid Venezuela tensions", publisher: "South China Morning Post", date: 2026-01, tier: 3}
+    - rank: 2
+      text: "Get fuel through the blockade. The energy minister said on 13 May 2026 that Cuba had run out of diesel and fuel oil and was still negotiating fuel imports, which rising oil prices linked to the US-Israeli war with Iran complicate."
+      confidence: C
+      sources:
+        - {url: "https://www.dailymaverick.co.za/article/2026-05-14-cuba-has-run-out-of-diesel-and-fuel-oil-amid-us-oil-blockade", title: "Cuba has run out of diesel and fuel oil amid US oil blockade (Reuters, Dave Sherwood)", publisher: "Daily Maverick", date: 2026-05-14, tier: 3}
+    - rank: 3
+      text: "Keep the outside lifelines open, whichever partner can still send them: a Russian crude tanker, Vietnamese rice, Spanish hotel operators, and a Mexican offer, made in June 2026, to restart shipments through commercial firms with no timeline."
+      confidence: C
+      sources:
+        - {url: "https://www.wsls.com/news/world/2026/03/19/cuba-readies-for-first-russian-oil-shipment-of-the-year-as-energy-crisis-deepens/", title: "Cuba readies for first Russian oil shipment of the year as energy crisis deepens", publisher: "AP (via WSLS)", date: 2026-03-19, tier: 3}
+        - {url: "https://www.wlrn.org/americas/2026-06-22/mexicos-president-seeks-to-restart-oil-shipments-to-cuba-as-islands-crises-deepen", title: "Mexico's president seeks to restart oil shipments to Cuba as island's crises deepen", publisher: "WLRN (AP)", date: 2026-06-22, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "Channels that stay open under pressure. Havana confirmed high-level talks with Washington on 13 March 2026, while holding its political line. Vatican-linked mediation preceded the release of 51 prisoners in March 2026."
+      confidence: C
+      sources:
+        - {url: "https://apnews.com/article/cuba-us-talks-68bec1bfee9efe696c8ce357463c7a56", title: "Cuban president confirms US talks as island's energy and economic crises intensify", publisher: "Associated Press", date: 2026-03-13, tier: 3}
+        - {url: "https://www.aleteia.org/2026/03/14/vatican-mediation-leads-to-cuba-prisoner-release/", title: "Vatican mediation leads to Cuba prisoner release", publisher: "Aleteia", date: 2026-03-14, tier: 3}
+    - domain: economic
+      text: "Tourism, run largely by foreign hotel chains. Spanish chains run much of the sector; Meliá, with 34 hotels, announced in July 2026 that it would cease operations in Cuba amid US sanctions and the fuel squeeze, after Iberostar had stopped managing hotels."
+      confidence: C
+      sources:
+        - {url: "https://diplomatictimes.net/2026/07/21/spanish-melia-to-cease-operations-in-cuba/", title: "Spanish Melia to cease operations in Cuba", publisher: "Diplomatic Times", date: 2026-07-21, tier: 4}
+
+  constraints:
+    - text: "No fuel reserves. On 13 May 2026 the energy minister said Cuba had 'no reserves' of fuel; many Havana neighbourhoods were without power for 20 to 22 hours a day, and the grid runs on domestic crude, gas and renewables."
+      confidence: C
+      sources:
+        - {url: "https://www.dailymaverick.co.za/article/2026-05-14-cuba-has-run-out-of-diesel-and-fuel-oil-amid-us-oil-blockade", title: "Cuba has run out of diesel and fuel oil amid US oil blockade (Reuters, Dave Sherwood)", publisher: "Daily Maverick", date: 2026-05-14, tier: 3}
+    - text: "The US fuel blockade. The executive order of 29 January 2026 declared Cuba an 'unusual and extraordinary threat' and authorised tariffs on any country selling it oil. UN human rights experts called the measure unlawful in February 2026, and by May the blockade had run for four months."
+      confidence: B
+      sources:
+        - {url: "https://www.whitehouse.gov/fact-sheets/2026/01/fact-sheet-president-donald-j-trump-addresses-threats-to-the-united-states-by-the-government-of-cuba/", title: "Fact Sheet: President Donald J. Trump addresses threats to the United States by the Government of Cuba", publisher: "The White House", date: 2026-01-29, tier: 1}
+        - {url: "https://www.ohchr.org/en/press-releases/2026/02/un-experts-condemn-us-executive-order-imposing-fuel-blockade-cuba", title: "UN experts condemn US executive order imposing fuel blockade on Cuba", publisher: "UN Office of the High Commissioner for Human Rights", date: 2026-02-12, tier: 1}
+    - text: "Out-migration. With US doors largely closed to Cubans, they travel to Brazil, often through Guyana, which admits them without a visa. Brazilian police intercepted 108 Cubans in one day in June 2026."
+      confidence: C
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/6/10/brazil-intercepts-108-cuban-immigrants-amid-growing-asylum-applications", title: "Brazil intercepts 108 Cuban immigrants amid growing asylum applications", publisher: "Al Jazeera", date: 2026-06-10, tier: 3}
+
+  paradoxes:
+    - text: "The fuel tariff is meant to starve Havana's grid, but it works through Havana's suppliers. Mexico's shipments stopped in January 2026 under US pressure, and Sheinbaum warned in February that tariffs could trigger a humanitarian crisis. The harder Havana refuses Washington, the fewer ships reach its grid."
+      confidence: C
+      sources:
+        - {url: "https://www.aljazeera.com/amp/video/newsfeed/2026/2/10/mexicos-sheinbaum-laments-us-oil-block-on-cuba", title: "Mexico's Sheinbaum laments US' oil block on Cuba", publisher: "Al Jazeera", date: 2026-02-10, tier: 3}
+        - {url: "https://www.dailymaverick.co.za/article/2026-05-14-cuba-has-run-out-of-diesel-and-fuel-oil-amid-us-oil-blockade", title: "Cuba has run out of diesel and fuel oil amid US oil blockade (Reuters, Dave Sherwood)", publisher: "Daily Maverick", date: 2026-05-14, tier: 3}
+    - text: "Tourism is the hard-currency earner, yet it runs through foreign chains that US sanctions can drive out. The Meliá exit shrinks the sector Havana most needs in order to pay for fuel."
+      confidence: C
+      sources:
+        - {url: "https://diplomatictimes.net/2026/07/21/spanish-melia-to-cease-operations-in-cuba/", title: "Spanish Melia to cease operations in Cuba", publisher: "Diplomatic Times", date: 2026-07-21, tier: 4}
+
+  reading: |
+    Cuba's strategy is to outlast the fuel blockade without changing its political order, and it keeps every channel open, from a Russian tanker and Vietnamese rice to a Mexican offer and Vatican mediation, while refusing to negotiate the system itself. Its means are thin: tourism run by foreign chains and a few diplomatic channels, against a US that has turned the fuel supply itself into the lever. The paradox is structural: the pressure meant to make Havana bend works through its suppliers, so each partner who hesitates leaves the grid darker and pushes more Cubans out.

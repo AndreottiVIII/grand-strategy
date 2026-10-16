@@ -1,5 +1,6 @@
 id: MEX
 name: Mexico
+short: Mexico
 type: state
 iso2: mx
 wikipedia: https://en.wikipedia.org/wiki/Mexico
@@ -8,7 +9,91 @@ coords:
 - 19.35
 seat: Mexico City
 regions:
-- world
-card: stub
+- north-america
+card: full
 tier: minor
+last_verified: 2026-10-16
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the security cooperation with Washington under Mexican control: cartel figures handed over, CIA flights and National Guard at the border accepted, but no US troops and no unilateral strikes on Mexican soil ('we operate in Mexico, no one else', Sheinbaum, 2025-2026). Every other choice below is priced against the risk that Washington turns cooperation into intervention."
+      confidence: B
+      sources:
+        - {url: "https://www.reuters.com/world/americas/sheinbaum-says-she-rejected-trumps-offer-send-troops-mexico-2025-05-03/", title: "Sheinbaum says she rejected Trump's offer to send troops to Mexico", publisher: "Reuters", date: 2025-05-04, tier: 3}
+        - {url: "https://www.semafor.com/article/08/08/2025/mexicos-sheinbaum-rejects-us-invasion-after-reports-of-trump-ordering-military-force-against-drug-cartels", title: "Mexico's Sheinbaum rejects US invasion after reports of Trump ordering military force against drug cartels", publisher: "Semafor", date: 2025-08-08, tier: 3}
+        - {url: "https://www.aljazeera.com/amp/news/2026/7/15/sheinbaum-rejects-us-claim-that-mexicos-government-is-linked-to-cartels", title: "Sheinbaum rejects US claim that Mexico's government is linked to cartels", publisher: "Al Jazeera", date: 2026-07-15, tier: 3}
+    - rank: 2
+      text: "Keep the USMCA and the tariff exemption alive through the 2026 review: Washington did not agree to extend the agreement at the joint review (USTR, 1 July 2026), so it now runs on annual reviews while bilateral rounds continue, and USMCA-compliant goods stay outside the 25% fentanyl tariffs."
+      confidence: B
+      sources:
+        - {url: "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ambassador-greer-issues-statement-usmca-joint-review", title: "Ambassador Greer issues statement on the USMCA joint review (the US does not agree to extend)", publisher: "Office of the United States Trade Representative", date: 2026-07-01, tier: 1}
+        - {url: "https://www.everycrsreport.com/files/2026-09-29_R48787_5ae6023cfc219857241e8dc2f089b81264583ddc.html", title: "USMCA Joint Review: Process and Role of Congress (CRS R48787, updated 29 Sep 2026)", publisher: "Congressional Research Service", date: 2026-09-29, tier: 1}
+    - rank: 3
+      text: "Keep the remittance flow and the migrant corridor intact: remittances received in Mexico fell to USD 61.8bn in 2025 (Banxico), the first annual fall in eleven years, under deportations and the 1% US remittance tax, and Mexico cannot afford a rupture that would cut it further."
+      confidence: B
+      sources:
+        - {url: "https://www.banxico.org.mx/publicaciones-y-prensa/remesas/%7BED06F2CB-06BA-2EC6-D145-73FF4579BADA%7D.pdf", title: "Information on remittance income and outflows, December 2025", publisher: "Banco de Mexico", date: 2026-02-03, tier: 1, lang: es}
+        - {url: "https://zetatijuana.com/2026/02/remesas-familiares-caen-4-56-en-2025-su-mayor-desplome-en-16-anos/", title: "Family remittances fall 4.56% in 2025, their biggest drop in 16 years", publisher: "Zeta Tijuana", date: 2026-02, tier: 3, lang: es}
+    - rank: 4
+      text: "Diversify the trade base away from the United States without alignment with anyone: the modernised EU agreement signed on 22 May 2026, and, on the Asian side, tariffs of up to 50% on cars and other imports from countries without a free-trade agreement, aimed first at China and in force from 2026. Diversification is pursued by treaty with Brussels and by duties on Beijing, not by a bloc."
+      confidence: B
+      sources:
+        - {url: "https://www.eeas.europa.eu/delegations/mexico/eu-and-mexico-deepen-long-term-ties-historic-summit_en", title: "EU and Mexico deepen long-term ties at a historic summit", publisher: "EEAS (EU External Action Service)", date: 2026-05-22, tier: 1}
+        - {url: "https://www.cbtnews.com/mexico-plans-tariffs-of-up-to-50-on-chinese-cars-aligning-with-u-s-trade-stance/", title: "Mexico plans tariffs of up to 50% on Chinese cars, aligning with US trade stance", publisher: "CBT News", date: 2025-12, tier: 3}
+
+  means:
+    - domain: economic
+      text: "Tariff wall on non-FTA imports: duties of up to 50% on automobiles, auto parts, textiles, plastics and steel from China, South Korea, India and others, over 1,400 product lines, passed by Congress in late 2025 and in force in 2026. The US, Canada, Japan and the EU are exempt through existing agreements, which is the point: the tariffs are a price for Washington's review."
+      confidence: B
+      sources:
+        - {url: "https://www.tribuneindia.com/news/india/mexico-hikes-tariffs-up-to-50-on-imports-from-china-india", title: "Mexico hikes tariffs up to 50% on imports from China, India", publisher: "Tribune India", date: 2025-12, tier: 3}
+        - {url: "https://www.cbtnews.com/mexico-plans-tariffs-of-up-to-50-on-chinese-cars-aligning-with-u-s-trade-stance/", title: "Mexico plans tariffs of up to 50% on Chinese cars, aligning with US trade stance", publisher: "CBT News", date: 2025-12, tier: 3}
+    - domain: diplomatic
+      text: "Cooperation as the currency of sovereignty: 29 cartel figures transferred to US custody on 27 February 2025 and dozens more in January 2026, 10,000 National Guard at the border, and intelligence sharing that Mexico calls collaboration. Each transfer is presented as sovereign and autonomous, which is how Mexico keeps troops out while giving Washington what it asks."
+      confidence: B
+      sources:
+        - {url: "https://www.nytimes.com/2025/02/27/us/politics/mexico-cartel-sheinbaum-trump.html", title: "Mexico transfers dozens of cartel operatives to U.S. custody", publisher: "The New York Times", date: 2025-02-27, tier: 3}
+        - {url: "https://www.npr.org/2026/01/28/nx-s1-5691086/mexico-oil-shipments-cuba", title: "Mexican president says her country has paused oil shipments to Cuba", publisher: "NPR", date: 2026-01-28, tier: 3}
+    - domain: economic
+      text: "State oil as foreign policy: Pemex shipped nearly 20,000 barrels a day to Cuba from January to September 2025, the lifeline Havana depends on, and Mexico paused the shipments in January 2026, calling it a 'sovereign decision' while refusing to link it to US pressure. The lever is real and Mexico uses it quietly."
+      confidence: B
+      sources:
+        - {url: "https://www.npr.org/2026/01/28/nx-s1-5691086/mexico-oil-shipments-cuba", title: "Mexican president says her country has paused oil shipments to Cuba", publisher: "NPR", date: 2026-01-28, tier: 3}
+
+  constraints:
+    - text: "Judicial reform and investor doubt: the 2024 reform elects Supreme Court justices from candidates nominated by the president, Congress and sitting justices, and foreign companies have reportedly held back about USD 35bn of investment over the uncertainty (WSJ, as cited by Aberdeen); nearshoring, which the economy needs, depends on the legal certainty and arbitration the reform puts in doubt. Date of the Aberdeen piece not confirmed."
+      confidence: C
+      sources:
+        - {url: "https://www.aberdeeninvestments.com/en-us/institutional/insights-and-research/mexico-under-pressure", title: "Mexico under pressure", publisher: "Aberdeen Investments", date: 2025, tier: 3}
+    - text: "Pemex is a debt carrier: financial debt of about USD 79-80bn at the end of Q1 2026, the lowest since 2014 but still large, three consecutive quarterly losses, and a Moody's B1 rating held at stable only because the state is expected to support it; Mexico's own sovereign was cut to Baa3 by Moody's. The state cannot spend its way out and cannot let Pemex fail."
+      confidence: B
+      sources:
+        - {url: "https://www.razon.com.mx/negocios/2026/05/22/moodys-ratifica-la-calificacion-crediticia-de-pemex-en-b1-y-mantiene-perspectiva-estable/", title: "Moody's affirms Pemex at B1 with stable outlook", title_original: "Moody's ratifica la calificacion crediticia de Pemex en B1 y mantiene perspectiva estable", publisher: "La Razon (Mexico)", date: 2026-05-22, tier: 3, lang: es}
+        - {url: "https://finance.yahoo.com/sectors/energy/articles/mexico-pemex-still-struggles-despite-220000883.html", title: "Mexico's Pemex Still Struggles Despite the Oil Price Surge", publisher: "Yahoo Finance", date: 2026, tier: 3}
+    - text: "Dependence on the northern market: the United States is Mexico's largest trading partner and the first export market, and the USD 61.8bn of remittances come almost entirely from there. Every choice toward Washington is made with the USMCA unrenewed and the remittance tax in force; the room to refuse is small."
+      confidence: B
+      sources:
+        - {url: "https://www.banxico.org.mx/publicaciones-y-prensa/remesas/%7BED06F2CB-06BA-2EC6-D145-73FF4579BADA%7D.pdf", title: "Information on remittance income and outflows, December 2025", publisher: "Banco de Mexico", date: 2026-02-03, tier: 1, lang: es}
+        - {url: "https://www.everycrsreport.com/files/2026-09-29_R48787_5ae6023cfc219857241e8dc2f089b81264583ddc.html", title: "USMCA Joint Review: Process and Role of Congress (CRS R48787, updated 29 Sep 2026)", publisher: "Congressional Research Service", date: 2026-09-29, tier: 1}
+
+  paradoxes:
+    - text: "The cooperation that keeps US troops out is the reason US intelligence operates inside Mexico: each cartel transfer and drone flight Sheinbaum calls collaboration is the file Washington cites when CIA 'deadly operations' inside Mexico are reported (May 2026)."
+      confidence: B
+      sources:
+        - {url: "https://lite.cnn.com/2026/05/12/politics/cia-drug-cartels-deadly-operations-mexico", title: "Exclusive: CIA escalates secret war on cartels with deadly operations inside Mexico", publisher: "CNN", date: 2026-05-12, tier: 3}
+        - {url: "https://www.nytimes.com/2025/02/27/us/politics/mexico-cartel-sheinbaum-trump.html", title: "Mexico transfers dozens of cartel operatives to U.S. custody", publisher: "The New York Times", date: 2025-02-27, tier: 3}
+    - text: "The remittance tax and the deportations that cut the USD 61.8bn flow (down 4.6% in 2025) shrink the dollar cushion that would let Mexico say no to Washington, so the defence of sovereignty is paid for in the remittances of the migrants who would be its first casualties."
+      confidence: B
+      sources:
+        - {url: "https://www.banxico.org.mx/publicaciones-y-prensa/remesas/%7BED06F2CB-06BA-2EC6-D145-73FF4579BADA%7D.pdf", title: "Information on remittance income and outflows, December 2025", publisher: "Banco de Mexico", date: 2026-02-03, tier: 1, lang: es}
+        - {url: "https://zetatijuana.com/2026/02/remesas-familiares-caen-4-56-en-2025-su-mayor-desplome-en-16-anos/", title: "Family remittances fall 4.56% in 2025, their biggest drop in 16 years", publisher: "Zeta Tijuana", date: 2026-02, tier: 3, lang: es}
+    - text: "The tariffs on China are timed to the US review: Mexico diversifies toward the EU and Asia to lower its exposure to Washington, but the tariff wall it builds to do so is the price of the USMCA review, so the diversification is shaped by the partner it is diversifying from."
+      confidence: C
+      sources:
+        - {url: "https://www.tribuneindia.com/news/india/mexico-hikes-tariffs-up-to-50-on-imports-from-china-india", title: "Mexico hikes tariffs up to 50% on imports from China, India", publisher: "Tribune India", date: 2025-12, tier: 3}
+        - {url: "https://www.eeas.europa.eu/delegations/mexico/eu-and-mexico-deepen-long-term-ties-historic-summit_en", title: "EU and Mexico deepen long-term ties at a historic summit", publisher: "EEAS (EU External Action Service)", date: 2026-05-22, tier: 1}
+
+  reading: |
+    Mexico is a state that cooperates with its strongest neighbour in order to keep that neighbour out of its territory, and Sheinbaum, in office since October 2024, has held that line with a steady sovereignty language. Its posture toward the United States is reluctant partnership: it hands over cartel figures, accepts CIA flights and the National Guard at the border, and refuses troops and unilateral strikes, while the USMCA stays unrenewed and the tariff exemption is the lever of the 2026 review. Mexico hedges through the EU agreement and tariffs on Chinese goods rather than through alignment with anyone, so its foreign policy is measured less by the partners it picks than by how far Washington lets it pick. Its weakest flanks are at home: a judicial reform that frightens investors, a Pemex still losing money on about USD 80bn of debt, and a remittance flow that deportations and the 1% tax are already shrinking.

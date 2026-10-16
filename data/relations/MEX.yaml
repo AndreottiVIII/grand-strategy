@@ -1,0 +1,117 @@
+from: MEX
+relations:
+  # ---------- objective ----------
+  - to: USA
+    layer: objective
+    type: influence_goal
+    summary: "Keep the security cooperation with Washington under Mexican control: cartel figures handed over, CIA flights and the National Guard at the border accepted, but no US troops and no unilateral strikes on Mexican soil. Sheinbaum rejected US troops (May 2025) and called any US military action 'absolutely off the table' (Aug 2025). Mirror of the USA row toward MEX, read from the Mexican side."
+    since: 2025-02-27
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.reuters.com/world/americas/sheinbaum-says-she-rejected-trumps-offer-send-troops-mexico-2025-05-03/", title: "Sheinbaum says she rejected Trump's offer to send troops to Mexico", publisher: "Reuters", date: 2025-05-04, tier: 3}
+      - {url: "https://www.semafor.com/article/08/08/2025/mexicos-sheinbaum-rejects-us-invasion-after-reports-of-trump-ordering-military-force-against-drug-cartels", title: "Mexico's Sheinbaum rejects US invasion after reports of Trump ordering military force against drug cartels", publisher: "Semafor", date: 2025-08-08, tier: 3}
+      - {url: "https://www.aljazeera.com/amp/news/2026/7/15/sheinbaum-rejects-us-claim-that-mexicos-government-is-linked-to-cartels", title: "Sheinbaum rejects US claim that Mexico's government is linked to cartels", publisher: "Al Jazeera", date: 2026-07-15, tier: 3}
+
+  # ---------- alignment ----------
+  - to: USA
+    layer: alignment
+    type: treaty
+    summary: "USMCA (CUSMA/T-MEC), the trilateral trade treaty with Canada, in force since 1 July 2020. The US did not agree to extend it at the 2026 joint review (1 July 2026), so it runs on annual reviews while bilateral rounds continue. A trade treaty with no defence clause: a treaty for the purposes of the alignment layer, not an alliance."
+    since: 2020-07-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: A
+    sources:
+      - {url: "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ambassador-greer-issues-statement-usmca-joint-review", title: "Ambassador Greer issues statement on the USMCA joint review (the US does not agree to extend)", publisher: "Office of the United States Trade Representative", date: 2026-07-01, tier: 1}
+      - {url: "https://www.everycrsreport.com/files/2026-09-29_R48787_5ae6023cfc219857241e8dc2f089b81264583ddc.html", title: "USMCA Joint Review: Process and Role of Congress (CRS R48787, updated 29 Sep 2026)", publisher: "Congressional Research Service", date: 2026-09-29, tier: 1}
+
+  - to: CAN
+    layer: alignment
+    type: treaty
+    summary: "USMCA/CUSMA, the trilateral trade treaty of Mexico, Canada and the United States in force since 1 July 2020, the same treaty as the USA row (one treaty, one row for each side). The 2026 joint review did not renew it for the US side; Canada and Mexico coordinate inside it. No defence clause."
+    since: 2020-07-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: A
+    sources:
+      - {url: "https://www.everycrsreport.com/files/2026-09-29_R48787_5ae6023cfc219857241e8dc2f089b81264583ddc.html", title: "USMCA Joint Review: Process and Role of Congress (CRS R48787, updated 29 Sep 2026)", publisher: "Congressional Research Service", date: 2026-09-29, tier: 1}
+      - {url: "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ambassador-greer-issues-statement-usmca-joint-review", title: "Ambassador Greer issues statement on the USMCA joint review (the US does not agree to extend)", publisher: "Office of the United States Trade Representative", date: 2026-07-01, tier: 1}
+
+  # ---------- dependency ----------
+  - to: USA
+    layer: dependency
+    type: remittances
+    summary: "Mexico receives its remittances almost entirely from the United States: USD 61,791m in 2025 (Banxico), down 4.6% from USD 64,746m in 2024, the first annual fall in eleven years, under deportations and the 1% US remittance tax. Mirror of the USA remittances row, read as Mexico's dependency."
+    value: 61791
+    unit: usd_m_remittances_received_by_mexico_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.banxico.org.mx/publicaciones-y-prensa/remesas/%7BED06F2CB-06BA-2EC6-D145-73FF4579BADA%7D.pdf", title: "Information on remittance income and outflows, December 2025", title_original: "Informacion de Ingresos y Egresos por Remesas, diciembre de 2025", lang: es, publisher: "Banco de Mexico", date: 2026-02-03, tier: 1}
+      - {url: "https://zetatijuana.com/2026/02/remesas-familiares-caen-4-56-en-2025-su-mayor-desplome-en-16-anos/", title: "Family remittances fall 4.56% in 2025, their biggest drop in 16 years", title_original: "Remesas familiares caen 4.56% en 2025, su mayor desplome en 16 anos", lang: es, publisher: "Zeta Tijuana", date: 2026-02, tier: 3}
+
+  - to: CUB
+    layer: dependency
+    type: energy_export
+    summary: "Pemex shipped nearly 20,000 barrels of oil a day to Cuba from January to 30 September 2025, a key lifeline for Havana, and Sheinbaum announced a pause on 27 January 2026 as a 'sovereign decision', declining to link it to US pressure. Whether shipments resumed is not confirmed in the sources read."
+    value: 20000
+    unit: barrels_per_day_2025
+    since: 2025-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.npr.org/2026/01/28/nx-s1-5691086/mexico-oil-shipments-cuba", title: "Mexican president says her country has paused oil shipments to Cuba", publisher: "NPR", date: 2026-01-28, tier: 3}
+
+  # ---------- action ----------
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "Mexico transferred 29 cartel figures to US custody on 27 Feb 2025 (NYT), and dozens more in January 2026 (NPR), presented by Sheinbaum as sovereign and autonomous cooperation, the means behind the cooperation objective above."
+    since: 2025-02-27
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.nytimes.com/2025/02/27/us/politics/mexico-cartel-sheinbaum-trump.html", title: "Mexico transfers dozens of cartel operatives to U.S. custody", publisher: "The New York Times", date: 2025-02-27, tier: 3}
+      - {url: "https://www.npr.org/2026/01/28/nx-s1-5691086/mexico-oil-shipments-cuba", title: "Mexican president says her country has paused oil shipments to Cuba", publisher: "NPR", date: 2026-01-28, tier: 3}
+
+  - to: CHN
+    layer: action
+    type: sanction
+    summary: "Tariffs of up to 50% on cars, auto parts, textiles, plastics and steel from countries without a free-trade agreement, aimed first at China, approved by Congress in late 2025 and in force in 2026, covering more than 1,400 product categories. Recorded as 'sanction' because the vocabulary has no trade-measure type; a question for Davide (see JOURNAL)."
+    since: 2026-01-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.cbtnews.com/mexico-plans-tariffs-of-up-to-50-on-chinese-cars-aligning-with-u-s-trade-stance/", title: "Mexico plans tariffs of up to 50% on Chinese cars, aligning with US trade stance", publisher: "CBT News", date: 2025-12, tier: 3}
+      - {url: "https://www.tribuneindia.com/news/india/mexico-hikes-tariffs-up-to-50-on-imports-from-china-india", title: "Mexico hikes tariffs up to 50% on imports from China, India", publisher: "Tribune India", date: 2025-12, tier: 3}
+
+  - to: org-eu
+    layer: action
+    type: agreement
+    summary: "The modernised Global Agreement and the interim Trade Agreement signed at the 8th EU-Mexico Summit in Mexico City on 22 May 2026. The trade pillar removes most high Mexican tariffs, including on EU agri-food, and protects EU geographical indications."
+    since: 2026-05-22
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.eeas.europa.eu/delegations/mexico/eu-and-mexico-deepen-long-term-ties-historic-summit_en", title: "EU and Mexico deepen long-term ties at a historic summit", publisher: "EEAS (EU External Action Service)", date: 2026-05-22, tier: 1}
+      - {url: "https://www.wam.ae/en/article/178hkd1-eu-mexico-sign-modernised-interim-trade-agreement", title: "EU, Mexico sign Modernised Interim Trade Agreement", publisher: "WAM (Emirates News Agency)", date: 2026-05-22, tier: 3}
+
+  - to: ESP
+    layer: action
+    type: visit
+    summary: "Sheinbaum welcomed King Felipe VI's acknowledgement of 'much abuse' during the conquest (Madrid, Mar 2026); the King visited her in Mexico City in June 2026, ending the rift opened by AMLO's 2019 demand for an apology and the 2024 inauguration snub. Mirror of the ESP visit row, read from the host side."
+    since: 2026-06
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.thelocal.es/20260318/mexican-president-hails-spanish-kings-acknowledgement-of-abuses-during-conquest", title: "Mexican president hails Spanish King's acknowledgement of abuses during conquest", publisher: "The Local Spain", date: 2026-03-18, tier: 3}
+      - {url: "https://www.nst.com.my/amp/sports/football/2026/06/1473427/mexicos-sheinbaum-and-spanish-king-use-world-cup-to-mend-diplomatic", title: "Mexico's Sheinbaum and Spanish king use World Cup to mend diplomatic rift", publisher: "New Straits Times", date: 2026-06, tier: 3}

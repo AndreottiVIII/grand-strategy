@@ -1,0 +1,260 @@
+from: CAN
+relations:
+- to: USA
+  layer: objective
+  type: influence_goal
+  summary: 'Keep the United States inside the shared structures (CUSMA, NORAD, NATO) while trade is moved away from it: over 70% of Canadian exports go to the US, and Carney''s stated plan is to break that
+    reliance. Mirror of the USA row''s trade and treaty facts, same sources.'
+  since: 2025-02-01
+  until: null
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://www.nytimes.com/2026/09/23/world/canada/mark-carney-canada-us-trump-tariffs.html
+    title: Carney lays out his vision for breaking Canada's reliance on US
+    publisher: New York Times
+    date: 2026-09-23
+    tier: 3
+  - url: https://www.whitecase.com/insight-alert/usmca-2026-joint-review-united-states-declines-extend-agreement-triggering-annual
+    title: 'USMCA 2026 Joint Review: United States declines to extend Agreement, triggering annual reviews'
+    publisher: White & Case
+    date: 2026-07
+    tier: 3
+- to: USA
+  layer: alignment
+  type: treaty
+  summary: CUSMA (USMCA) stays in force to at least 1 July 2036, but the US declined on 1 July 2026 to renew it 'in its current form', so annual joint reviews now run under Article 34.7.4. Mirror of the
+    USA row, same sources.
+  since: 2020-07-01
+  until: 2036-07-01
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://www.whitecase.com/insight-alert/usmca-2026-joint-review-united-states-declines-extend-agreement-triggering-annual
+    title: 'USMCA 2026 Joint Review: United States declines to extend Agreement, triggering annual reviews'
+    publisher: White & Case
+    date: 2026-07
+    tier: 3
+  - url: https://mcmillan.ca/insights/following-july-1st-review-cusma-remains-in-effect-until-2036-on-going-negotiations-as-part-of-annual-reviews-to-agree-on-north-american-free-trade-will-continue/
+    title: Following July 1st review, CUSMA remains in effect until 2036
+    publisher: McMillan LLP
+    date: 2026-07
+    tier: 3
+- to: org-eu
+  layer: alignment
+  type: treaty
+  summary: EU-Canada Security and Defence Partnership signed at the Brussels summit of June 2025; in 2026 Canada became the first non-European country in SAFE (Council approval 15 June 2026, up to 80% Canadian
+    content). Mirror of the org-eu row, same sources.
+  since: 2025-06
+  until: null
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://www.euronews.com/my-europe/2025/06/24/eu-and-canada-forge-closer-defence-trade-ties
+    title: EU and Canada forge closer defence, trade ties
+    publisher: Euronews
+    date: 2025-06-24
+    tier: 3
+  - url: https://www.aljazeera.com/news/2025/12/2/canada-joins-key-eu-defence-programme-as-pm-carney-pivots-away-from-us
+    title: Canada joins key EU defence programme as PM Carney pivots away from US
+    publisher: Al Jazeera
+    date: 2025-12-02
+    tier: 3
+  - url: https://www.eunews.it/en/2026/06/15/defence-eu-countries-give-final-go-ahead-for-canadas-participation-in-safe-funding/
+    title: 'Defence: EU countries give final go-ahead for Canada''s participation in SAFE funding'
+    publisher: Eunews
+    date: 2026-06-15
+    tier: 3
+- to: GBR
+  layer: alignment
+  type: candidate
+  summary: Canada applied in September 2026 to join the UK-led Joint Expeditionary Force as a full-time member, which London supports; the two are also in talks to merge their defence-finance initiatives
+    (Canada's Defence, Security and Resilience Bank and the UK's Multilateral Defence Mechanism). First Carney-Burnham meeting in Liverpool, 16 September 2026.
+  since: 2026-09-16
+  until: null
+  last_verified: 2026-10-16
+  confidence: C
+  sources:
+  - url: https://www.bnnbloomberg.ca/business/politics/2026/09/17/canada-seeks-full-membership-in-uk-led-military-coalition/
+    title: Canada seeks full membership in U.K.-led military coalition
+    publisher: BNN Bloomberg
+    date: 2026-09-17
+    tier: 3
+  - url: https://www.ctvnews.ca/canada/article/canada-seeks-full-membership-in-uk-led-military-coalition/
+    title: Canada seeks full membership in U.K.-led military coalition
+    publisher: CTV News
+    date: 2026-09-17
+    tier: 3
+- to: USA
+  layer: dependency
+  type: trade_share
+  summary: Over 70% of Canadian exports go to the United States, the reliance Carney plans to break; two-way goods trade with the US was USD 712.8bn in 2025, second only to Mexico for the US. Mirror of
+    the USA trade row, figures from the same sources; the 70% share is the NYT's.
+  value: 0.7
+  unit: share_of_canadian_exports_to_us
+  since: 2025
+  until: null
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://www.nytimes.com/2026/09/23/world/canada/mark-carney-canada-us-trump-tariffs.html
+    title: Carney lays out his vision for breaking Canada's reliance on US
+    publisher: New York Times
+    date: 2026-09-23
+    tier: 3
+  - url: https://www.freightwaves.com/news/us-mexico-trade-hits-new-high-of-872b-in-2025
+    title: US-Mexico trade hits new high of $872B in 2025 (Canada second at USD 712.76bn)
+    publisher: FreightWaves (WorldCity analysis of Census data)
+    date: 2026-02
+    tier: 3
+- to: LVA
+  layer: dependency
+  type: military_presence
+  summary: Canada is the framework nation of the NATO Multinational Brigade in Latvia, with more than 2,000 troops there, confirmed in July 2026 to stay until 2031; Canada paid EUR 18.5m for the Adazi barracks.
+    Mirror of the LVA row, same sources.
+  value: 2000
+  unit: canadian_troops_in_latvia_2026
+  since: 2017-06
+  until: 2031
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://www.mod.gov.lv/en/nato/nato-capabilities/nato-efp-battle-group
+    title: NATO Multinational Brigade in Latvia
+    publisher: Ministry of Defence of Latvia
+    date: 2026
+    tier: 1
+  - url: https://www.baltictimes.com/nato_summit_provided_latvia_with_assurances_regarding_importance_of_collective_defense_commitments_-_rinkevics/
+    title: NATO summit provided Latvia with assurances regarding importance of collective defense commitments - Rinkevics
+    publisher: The Baltic Times
+    date: 2026-07-10
+    tier: 3
+  - url: https://eng.lsm.lv/article/society/defence/22.05.2025-barracks-for-natos-multinational-brigade-unveiled-in-adazi-latvia.a600038/
+    title: Barracks for NATO's Multinational Brigade unveiled in Adazi, Latvia
+    publisher: LSM (Latvian public broadcaster)
+    date: 2025-05-22
+    tier: 3
+- to: CHN
+  layer: action
+  type: agreement
+  summary: 'Preliminary trade deal of 16 January 2026 in Beijing: Canada admits up to 49,000 Chinese EVs at a 6.1% most-favoured-nation tariff, rising toward about 70,000 over five years, and China is expected
+    to cut canola seed duties from 84% to 15% by 1 March 2026. Carney called it ''preliminary but landmark''; implementation was not confirmed in the sources.'
+  since: 2026-01-16
+  until: null
+  last_verified: 2026-10-16
+  confidence: C
+  sources:
+  - url: https://www.aljazeera.com/economy/2026/1/16/canada-china-strike-trade-deals-to-slash-tariffs-on-evs-canola
+    title: Canada, China strike trade deals to slash tariffs on EVs, canola
+    publisher: Al Jazeera
+    date: 2026-01-16
+    tier: 3
+- to: IND
+  layer: action
+  type: agreement
+  summary: 'Carney''s state visit (March 2026): 10-year Cameco uranium supply deal (reported at about USD 1.9bn) and the launch of CEPA talks, aimed at conclusion by end-2026. Mirror of the IND row, same
+    sources; confidence C as there.'
+  since: 2026-03
+  until: null
+  last_verified: 2026-10-16
+  confidence: C
+  sources:
+  - url: https://www.businesstoday.in/amp/india/story/canadian-pm-in-india-mark-carney-holds-talk-with-s-jaishankar-to-meet-pm-soon-trade-uranium-deal-on-agenda-518716-2026-03-02
+    title: 'Canadian PM in India: Carney holds talks with Jaishankar; trade, uranium deal on agenda'
+    publisher: Business Today
+    date: '2026-03-02'
+    tier: 3
+  - url: https://www.aol.com/articles/canada-carney-signs-uranium-deal-101114003.html
+    title: Canada's Carney signs uranium deal with Modi during historic India visit
+    publisher: AOL
+    date: 2026-03
+    tier: 3
+- to: RUS
+  layer: action
+  type: sanction
+  summary: New Canadian sanctions on Russia announced with CAD 2bn of military assistance to Ukraine on 24 February 2026, the anniversary of the invasion; the Arctic is treated as a Russian threat (Carney,
+    January 2026).
+  since: 2022-02-24
+  until: null
+  last_verified: 2026-10-16
+  confidence: C
+  sources:
+  - url: https://nationalnewswatch.com/2026/02/24/cp-newsalert-carney-pledges-2-billion-for-ukraine-more-sanctions
+    title: 'CP NewsAlert: Carney pledges $2 billion for Ukraine, more sanctions'
+    publisher: Canadian Press (via National News Watch)
+    date: 2026-02-24
+    tier: 3
+  - url: https://www.bloomberg.com/news/articles/2026-01-20/russia-is-without-question-a-threat-in-the-arctic-carney-says
+    title: Russia Is 'Without Question' a Threat in the Arctic, Carney Says
+    publisher: Bloomberg
+    date: 2026-01-20
+    tier: 3
+- to: UKR
+  layer: dependency
+  type: arms_supply
+  summary: 'Canadian military aid to Ukraine in 2026: CAD 2bn announced in February, a further 270m in May, and 2.8bn (the readout''s dollars, currency not specified) of military support by the July 2026
+    readout, including 475m for ammunition and nearly 400m for 35 Canadian-made armoured vehicles. The row records what Canada sends.'
+  value: 2800000000
+  unit: dollars_military_aid_2026_as_reported
+  since: 2022-02-24
+  until: null
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://www.pm.gc.ca/en/news/readouts/2026/07/07/prime-minister-carney-meets-president-ukraine-volodymyr-zelenskyy
+    title: Prime Minister Carney meets President of Ukraine Volodymyr Zelenskyy
+    publisher: Prime Minister of Canada (readout)
+    date: 2026-07-07
+    tier: 1
+  - url: https://www.bnnbloomberg.ca/business/politics/2026/05/04/pm-carney-announces-270m-in-military-aid-for-ukraine/
+    title: PM Carney announces $270M in military aid for Ukraine
+    publisher: BNN Bloomberg
+    date: 2026-05-04
+    tier: 3
+  - url: https://nationalnewswatch.com/2026/02/24/cp-newsalert-carney-pledges-2-billion-for-ukraine-more-sanctions
+    title: 'CP NewsAlert: Carney pledges $2 billion for Ukraine, more sanctions'
+    publisher: Canadian Press (via National News Watch)
+    date: 2026-02-24
+    tier: 3
+- layer: alignment
+  type: security_guarantee
+  summary: Canada is the framework nation of the NATO Multinational Brigade in Latvia and confirmed in July 2026 that its forces (more than 2,000) will stay until 2031, a five-year extension; Latvia is
+    the Canadian Armed Forces' largest standing deployment in Europe.
+  since: 2017-06
+  until: 2031
+  last_verified: '2026-10-16'
+  confidence: B
+  sources:
+  - url: https://www.baltictimes.com/nato_summit_provided_latvia_with_assurances_regarding_importance_of_collective_defense_commitments_-_rinkevics/
+    title: NATO summit provided Latvia with assurances regarding importance of collective defense commitments - Rinkevics
+    publisher: The Baltic Times
+    date: 2026-07-10
+    tier: 3
+  - url: https://www.cmfmag.ca/operations/nato-multinational-brigade-latvia-enters-new-chapter
+    title: NATO Multinational Brigade Latvia enters new chapter
+    publisher: Canadian Military Family Magazine
+    date: 2024
+    tier: 3
+  to: LVA
+  mirrored_from: LVA
+- layer: alignment
+  type: treaty
+  summary: Status of Visiting Forces Agreement signed 2 Nov 2025 in Makati by Teodoro and McGuinty, Canada's first such pact in the Indo-Pacific; ratified by the Philippine Senate 19-0 on 11 Aug 2026 (Senate
+    Resolution 548).
+  since: 2025-11-02
+  until: null
+  last_verified: '2026-10-16'
+  confidence: A
+  sources:
+  - url: https://globalnation.inquirer.net/334549/ph-pacts-with-canada-nz-to-boost-afp-readiness-dnd
+    title: PH pacts with Canada, New Zealand to boost AFP readiness - DND
+    publisher: Philippine Daily Inquirer
+    date: 2026-08
+    tier: 3
+  - url: https://mb.com.ph/2026/08/12/dnd-hails-senate-ok-of-defense-pact-with-canada-new-zealand
+    title: DND hails Senate OK of defense pact with Canada, New Zealand
+    publisher: Manila Bulletin
+    date: 2026-08-12
+    tier: 3
+  to: PHL
+  mirrored_from: PHL

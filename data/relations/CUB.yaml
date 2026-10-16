@@ -1,0 +1,83 @@
+from: CUB
+relations:
+  # ---------- objective ----------
+  - to: USA
+    layer: objective
+    type: regime_goal
+    summary: "Keep the political system, the presidency and every official's post off any deal with Washington. On 20 March 2026 a deputy foreign minister said so, after reports that the administration wanted Díaz-Canel out."
+    since: '2026-03-20'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.newstribune.com/news/2026/mar/22/cuba-refuses-to-negotiate-presidents-term-in/", title: "Cuba refuses to negotiate president's term in talks with United States", publisher: "Newstribune", date: "2026-03-22", tier: 3}
+      - {url: "https://www.scmp.com/news/world/united-states-canada/article/3339642/cubas-diaz-say-no-conversations-us-after-trump-threats-amid-venezuela-tensions", title: "Cuba's Diaz-Canel says no conversations with US after Trump threats amid Venezuela tensions", publisher: "South China Morning Post", date: "2026-01", tier: 3}
+
+  # ---------- dependency ----------
+  - to: RUS
+    layer: dependency
+    type: energy_import
+    summary: "Russian crude: one large Russian-flagged tanker, the Anatoly Kolodkin, delivered from December 2025 and gave temporary relief in April 2026. The 100,000 t figure is the one Russia gave for the March cargo, as reported; the reports differ on dates and volumes, and the value is that single cargo, not a total."
+    since: '2025-12'
+    until: null
+    value: 100000
+    unit: tonnes_crude_single_tanker_2026
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.dailymaverick.co.za/article/2026-05-14-cuba-has-run-out-of-diesel-and-fuel-oil-amid-us-oil-blockade", title: "Cuba has run out of diesel and fuel oil amid US oil blockade (Reuters, Dave Sherwood)", publisher: "Daily Maverick", date: "2026-05-14", tier: 3}
+      - {url: "https://www.wsls.com/news/world/2026/03/19/cuba-readies-for-first-russian-oil-shipment-of-the-year-as-energy-crisis-deepens/", title: "Cuba readies for first Russian oil shipment of the year as energy crisis deepens", publisher: "AP (via WSLS)", date: "2026-03-19", tier: 3}
+
+  - to: MEX
+    layer: dependency
+    type: energy_import
+    summary: "Mexico has sent no fuel to Cuba since the US executive order of January 2026 (Reuters, 13 May 2026). Sheinbaum said in June 2026 that Mexico wanted to restart shipments through commercial and private firms, with no timeline. The value is the deliveries since January: none."
+    since: '2026-01'
+    until: null
+    value: 0
+    unit: fuel_deliveries_since_2026_01
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.dailymaverick.co.za/article/2026-05-14-cuba-has-run-out-of-diesel-and-fuel-oil-amid-us-oil-blockade", title: "Cuba has run out of diesel and fuel oil amid US oil blockade (Reuters, Dave Sherwood)", publisher: "Daily Maverick", date: "2026-05-14", tier: 3}
+      - {url: "https://www.wlrn.org/americas/2026-06-22/mexicos-president-seeks-to-restart-oil-shipments-to-cuba-as-islands-crises-deepen", title: "Mexico's president seeks to restart oil shipments to Cuba as island's crises deepen", publisher: "WLRN (AP)", date: "2026-06-22", tier: 3}
+
+  - to: VEN
+    layer: dependency
+    type: energy_import
+    summary: "Venezuela was Cuba's main supplier. It has sent no fuel since the US executive order of January 2026 (Reuters, 13 May 2026). The value is the deliveries since January: none."
+    since: '2026-01'
+    until: null
+    value: 0
+    unit: fuel_deliveries_since_2026_01
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.dailymaverick.co.za/article/2026-05-14-cuba-has-run-out-of-diesel-and-fuel-oil-amid-us-oil-blockade", title: "Cuba has run out of diesel and fuel oil amid US oil blockade (Reuters, Dave Sherwood)", publisher: "Daily Maverick", date: "2026-05-14", tier: 3}
+
+  - to: ESP
+    layer: dependency
+    type: investment
+    summary: "Spanish hotel chains run much of Cuba's tourism. Meliá (34 hotels in Cuba) announced in July 2026 that it would cease operations amid US sanctions and the fuel squeeze. Mirrored from data/relations/ESP.yaml; the value is that exit, as the outlet reports it, and needs corroboration."
+    since: '2026-07'
+    until: null
+    value: 34
+    unit: melia_hotels_in_cuba_2026
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://diplomatictimes.net/2026/07/21/spanish-melia-to-cease-operations-in-cuba/", title: "Spanish Melia to cease operations in Cuba", publisher: "Diplomatic Times", date: "2026-07-21", tier: 4}
+      - {url: "https://easternherald.com/2026/06/02/spain-rejects-us-military-intervention-cuba-albares-latin-america/", title: "Spain rejects US military intervention in Cuba - Albares", publisher: "Eastern Herald", date: "2026-06-02", tier: 4}
+
+  # ---------- action ----------
+  - to: VNM
+    layer: action
+    type: agreement
+    summary: "Non-refundable rice aid under an agreement between the two agriculture ministries (250 tonnes in February 2026, 1,200 tonnes in June 2026), and rice seed for Cuba's 2026 programme. Mirrored from data/relations/VNM.yaml, same URLs."
+    since: '2026-02'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://news.tuoitre.vn/vietnam-sends-250-tonnes-of-rice-to-support-cubas-food-security-103260214165002189.htm", title: "Vietnam sends 250 tonnes of rice to support Cuba's food security", publisher: "Tuoi Tre News", date: "2026-02-14", tier: 3}
+      - {url: "https://en.qdnd.vn/economy/news/vietnamese-firm-delivers-1-200-tons-of-rice-to-cuba-592102", title: "Vietnamese firm delivers 1,200 tons of rice to Cuba", publisher: "People's Army Newspaper (QDND)", date: "2026-06-17", tier: 3}
