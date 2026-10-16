@@ -1,0 +1,28 @@
+from: LBR
+relations:
+  # ---------- objective ----------
+  - to: org-un
+    layer: objective
+    type: membership_goal
+    summary: "Liberia won a non-permanent seat on the UN Security Council for 2026-27 (181 of 187 votes on 3 June 2025, unopposed for the African Group seat), starting 1 January 2026, and presides over the Council in December 2026."
+    since: '2026-01-01'
+    until: '2027-12-31'
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.emansion.gov.lr/node/8701", title: "Liberia Elected to United Nations Security Council", publisher: "Executive Mansion, Republic of Liberia", date: "2025-06", tier: 1}
+      - {url: "https://allafrica.com/stories/202506040040.html", title: "Liberia Returns to UN Security Council After 62 Years With Overwhelming Victory", publisher: "allAfrica", date: "2025-06-04", tier: 3}
+      - {url: "https://allafrica.com/stories/202606110321.html", title: "Liberia to Preside Over UNSC in December", publisher: "allAfrica", date: "2026-06-11", tier: 3}
+
+  # ---------- action ----------
+  - to: USA
+    layer: action
+    type: visit
+    summary: "Boakai attended Trump's White House summit with five African leaders in July 2025. Trump remarked three times on his English; Liberia's foreign minister said no offence was taken, and the opposition chairman called the tone condescending."
+    since: '2025-07-10'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.aljazeera.com/amp/news/2025/7/10/such-good-english-liberians-confused-angry-at-trump-comments-to-boakai", title: "'Such good English': Liberians confused, angry at Trump comments to Boakai", publisher: "Al Jazeera", date: "2025-07-10", tier: 3}
+      - {url: "https://allafrica.com/stories/202507170380.html", title: "Liberia: Boakai Stole the Show At Trump's African Summit - but Implications", publisher: "allAfrica", date: "2025-07-17", tier: 3}
