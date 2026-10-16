@@ -1,0 +1,486 @@
+from: RWA
+relations:
+  # ---------- objective ----------
+  - to: COD
+    layer: objective
+    type: influence_goal
+    summary: "Keep a security zone and leverage in the Kivus. Kigali's stated line is that its 'defensive measures' (troops and operations beyond its territory) stay until Kinshasa neutralises the FDLR; the UN experts judge Kigali's 'final objective' to be control of territory and natural resources; the US told the Security Council on 13 Oct 2026 that Rwanda must withdraw 'immediately and unconditionally'."
+    since: "2021"
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Rwanda denies backing M23 and rejects the experts' reading; the aim is inferred from Kigali's own conditions (FDLR first) and the experts' findings."
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/7/18/un-experts-cast-blame-on-rwanda-and-uganda-what-are-they-doing-in-drc", title: "UN experts cast blame on Rwanda and Uganda. What are they doing in DRC?", publisher: "Al Jazeera", date: 2025-07-18, tier: 3}
+      - {url: "https://minaffet.gov.rw/updates/news-details/ceasefire-violation-of-washington-accords-by-the-drc-and-burundi-armies", title: "Ceasefire violation of Washington Accords by the DRC and Burundi armies (Rwanda foreign ministry statement)", publisher: "Ministry of Foreign Affairs and International Cooperation of Rwanda", date: 2025-12-10, tier: 1}
+      - {url: "https://www.xtrafrica.com/news/kagame-refuses-withdraw-troops-congo-us-pressure", title: "Kagame refuses to withdraw troops from Congo, defying US pressure (citing his Jeune Afrique interview)", publisher: "XtrAfrica", date: 2026-04-03, tier: 4}
+      - {url: "https://peopledaily.digital/news/us-urges-rwanda-to-withdraw-troops-from-dr-congo-end-m23-support", title: "US urges Rwanda to withdraw troops from DR Congo, end M23 support", publisher: "People Daily (Kenya)", date: 2026-10-14, tier: 3}
+  - to: nsa-fdlr
+    layer: objective
+    type: influence_goal
+    summary: "Eliminate the FDLR, the group founded by remnants of the 1994 perpetrators, as a threat on the border: Kigali's stated casus belli, written into the Washington Accords as a Congolese obligation ('neutralise') against which Rwandan disengagement is measured; the US pressed Kinshasa on it on 13 Oct 2026 and noted 120+ ex-combatants and family repatriated with UN help."
+    since: "2000"
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://minaffet.gov.rw/updates/news-details/ceasefire-violation-of-washington-accords-by-the-drc-and-burundi-armies", title: "Ceasefire violation of Washington Accords by the DRC and Burundi armies (Rwanda foreign ministry statement)", publisher: "Ministry of Foreign Affairs and International Cooperation of Rwanda", date: 2025-12-10, tier: 1}
+      - {url: "https://www.ktpress.rw/2026/03/rwanda-puts-fdlr-at-centre-of-drc-conflict-debate-at-un-security-council/", title: "Rwanda puts FDLR at centre of DRC conflict debate at UN Security Council", publisher: "KT Press (Kigali, government-aligned)", date: 2026-03, tier: 4}
+      - {url: "https://peopledaily.digital/news/us-urges-rwanda-to-withdraw-troops-from-dr-congo-end-m23-support", title: "US urges Rwanda to withdraw troops from DR Congo, end M23 support", publisher: "People Daily (Kenya)", date: 2026-10-14, tier: 3}
+  - to: BDI
+    layer: objective
+    type: influence_goal
+    summary: "Deny Burundi a role in the Kivus: Kigali accuses the Burundian army, with the Congolese army, the FDLR and the Wazalendo, of bombing villages near the Rwandan border and says it has about 20,000 troops in South Kivu; Burundi accuses Rwanda of backing RED-Tabara and (BBC, March 2025) of preparing an attack. Each wants the other's armed clients out; neither states the other regime's end."
+    since: 2024-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    note: "The 20,000 figure is Rwanda's own claim (foreign ministry, 10 Dec 2025) and is not independently confirmed. Mirrors the evidence on Burundi's side (same Reuters link)."
+    sources:
+      - {url: "https://minaffet.gov.rw/updates/news-details/ceasefire-violation-of-washington-accords-by-the-drc-and-burundi-armies", title: "Ceasefire violation of Washington Accords by the DRC and Burundi armies (Rwanda foreign ministry statement)", publisher: "Ministry of Foreign Affairs and International Cooperation of Rwanda", date: 2025-12-10, tier: 1}
+      - {url: "https://www.the-star.co.ke/news/world/2025-03-25-rwanda-planning-to-attack-burundi-president-tells-bbc", title: "Rwanda planning to attack Burundi, president tells BBC", publisher: "The Star (Kenya)", date: 2025-03-25, tier: 3}
+      - {url: "https://www.yahoo.com/news/m23-rebels-face-burundian-forces-173819912.html", title: "M23 rebels face Burundian forces", publisher: "Reuters (via Yahoo News)", date: 2025-01-31, tier: 3}
+  - to: USA
+    layer: objective
+    type: influence_goal
+    summary: "Turn the Washington track into a US business and security relationship - the minerals-for-security logic of the Accords (economic integration framework, strategic-minerals framework, deportees) - while refusing the unconditional withdrawal Washington now demands. The aim is read from what Kigali signed and what it refuses."
+    since: 2025-06-27
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/8/2/drc-rwanda-agree-economic-framework-outline-as-part-of-peace-deal", title: "DRC, Rwanda agree economic framework outline as part of peace deal", publisher: "Al Jazeera", date: 2025-08-02, tier: 3}
+      - {url: "https://allafrica.com/stories/202512040542.html", title: "Congo-Kinshasa: Rwanda's Kagame and Tshisekedi of the DRC sign peace deal", publisher: "allAfrica", date: 2025-12-04, tier: 3}
+      - {url: "https://peopledaily.digital/news/us-urges-rwanda-to-withdraw-troops-from-dr-congo-end-m23-support", title: "US urges Rwanda to withdraw troops from DR Congo, end M23 support", publisher: "People Daily (Kenya)", date: 2026-10-14, tier: 3}
+
+  # ---------- alignment ----------
+  - to: COD
+    layer: alignment
+    type: treaty
+    summary: "The Washington peace agreement between the two foreign ministers (27 Jun 2025) and the Washington Accords signed by Kagame and Tshisekedi before Trump (4 Dec 2025): ceasefire, Rwandan disengagement from defined areas against Congolese operations to neutralise the FDLR, and a regional economic integration framework. M23 is not covered and is dealt with in the separate Doha track (framework of 15 Nov 2025, eight protocols, two finalised). Text read through press only."
+    since: 2025-06-27
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/8/2/drc-rwanda-agree-economic-framework-outline-as-part-of-peace-deal", title: "DRC, Rwanda agree economic framework outline as part of peace deal", publisher: "Al Jazeera", date: 2025-08-02, tier: 3}
+      - {url: "https://allafrica.com/stories/202512040542.html", title: "Congo-Kinshasa: Rwanda's Kagame and Tshisekedi of the DRC sign peace deal", publisher: "allAfrica", date: 2025-12-04, tier: 3}
+      - {url: "https://ewn.co.za/2025/11/15/m23-dr-congo-ink-fresh-roadmap-to-peace-in-doha", title: "M23, DR Congo ink fresh roadmap to peace in Doha", publisher: "Eyewitness News (AFP)", date: 2025-11-15, tier: 3}
+      - {url: "https://ipisresearch.be/publication/shifting-frontlines-in-october-november-and-december-limits-of-diplomacy-afc-m23-advances-after-washington-accords/", title: "Shifting frontlines in October, November and December: limits of diplomacy - AFC/M23 advances after Washington Accords", publisher: "IPIS", date: 2026, tier: 2}
+  - to: RUS
+    layer: alignment
+    type: treaty
+    summary: "2019 intergovernmental agreement with Russia on peaceful use of atomic energy (Rosatom; a nuclear science and technology centre); renewed in 2026 when Lavrov and Nduhungirehe agreed in Antalya (18 Apr) to strengthen nuclear cooperation. No power plant is confirmed."
+    since: 2019-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://powerline.net.in/2019/01/08/rwandan-government-signs-nuclear-agreement-russias-rosatom/", title: "Rwandan government signs nuclear agreement with Russia's Rosatom", publisher: "Powerline", date: 2019-01-08, tier: 4}
+      - {url: "https://themoscowtimes.com/2024/11/09/rwanda-counting-on-russia-to-train-nuclear-power-specialists-a86964", title: "Rwanda counting on Russia to train nuclear power specialists", publisher: "The Moscow Times (AFP)", date: 2024-11-09, tier: 3}
+      - {url: "https://www.newtimes.co.rw/article/34994/news/energy/rwanda-russia-discuss-nuclear-energy-ties/amp", title: "Rwanda, Russia discuss nuclear energy ties", publisher: "The New Times (Kigali)", date: 2026-04, tier: 3}
+  - to: CAF
+    layer: alignment
+    type: security_guarantee
+    summary: "A bilateral Rwandan force operates in the Central African Republic outside the UN mission (MINUSCA), under an agreement between the two presidents, protecting the Touadera government; Rwanda also contributes troops to MINUSCA."
+    since: "2020"
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    note: "No treaty text found; the type is our reading of a bilateral presidential agreement. Troop numbers not found. Sources are an analysis blog and a Spanish defence-ministry think-tank paper read through search summaries."
+    sources:
+      - {url: "https://martinplaut.com/2024/10/04/why-rwanda-is-increasingly-the-preferred-african-security-force-operator/", title: "Why Rwanda is increasingly the preferred African security force operator", publisher: "Martin Plaut (blog)", date: 2024-10-04, tier: 4}
+      - {url: "https://www.defensa.gob.es/documents/2073105/2352431/la_diplomacia_militar_ruandesa_2025_dieeea13_eng.pdf/b27dcecc-7f97-15d2-ce20-774b963a9436?t=1739961408421", title: "Rwanda's military diplomacy", publisher: "Spanish Institute for Strategic Studies (IEEE), Ministry of Defence of Spain", date: 2025, tier: 2}
+
+  # ---------- dependency ----------
+  - to: COD
+    layer: dependency
+    type: military_presence
+    summary: "The UN group of experts' 2024 report put 3,000-4,000 Rwanda Defence Force troops in eastern DRC operating alongside M23; the July 2025 report gave no new figure and found 'de facto direction and effective control'. Rwanda denies the deployment while calling its presence 'defensive measures'; no 2026 figure was found."
+    value: 4000
+    unit: rdf_troops_in_eastern_drc_upper_estimate_un_experts_2024
+    since: "2021"
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Range 3,000-4,000; the upper figure is kept. Rwandan denial recorded."
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/7/18/un-experts-cast-blame-on-rwanda-and-uganda-what-are-they-doing-in-drc", title: "UN experts cast blame on Rwanda and Uganda. What are they doing in DRC?", publisher: "Al Jazeera", date: 2025-07-18, tier: 3}
+      - {url: "https://www.businessday.co.za/bd/world/africa/2025-07-02-rwanda-is-running-m23-rebels-in-drc-says-un/", title: "Rwanda is running M23 rebels in DRC, says UN", publisher: "BusinessDay (Reuters)", date: 2025-07-02, tier: 3}
+  - to: TZA
+    layer: dependency
+    type: trade_share
+    summary: "About 70% of Rwandan cargo passed through the port of Dar es Salaam on Rwanda Revenue Authority figures (2018); later press estimates put the share of imports near 80%, with exports of minerals, tea and coffee still partly via Mombasa. Dar es Salaam is Kigali's main sea outlet."
+    value: 0.7
+    unit: share_of_rwandan_cargo_through_dar_es_salaam_2018
+    since: "2018"
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Figures vary by year and by what is counted (imports, deep-sea cargo, total trade); the sourced RRA figure is kept. The EastAfrican (2025) reports Rwanda-Tanzania ties 'on the rocks' as Mombasa gains business."
+    sources:
+      - {url: "https://www.trademarkafrica.com/news/dar-port-now-handles-70-per-cent-of-rwandan-cargo", title: "Dar port now handles 70 per cent of Rwandan cargo", publisher: "TradeMark Africa", date: 2018, tier: 3}
+      - {url: "https://www.theeastafrican.co.ke/tea/business-tech/rwanda-tanzania-ties-on-the-rocks-as-mombasa-port-5265732", title: "Rwanda-Tanzania ties on the rocks as Mombasa port gains in business", publisher: "The EastAfrican", date: 2025, tier: 3}
+  - to: ARE
+    layer: dependency
+    type: trade_share
+    summary: "Gold is Rwanda's first export: USD 1.5bn in 2024, 88% of mineral earnings. UAE-based firms keep importing Rwandan gold, which UN experts document as an exit route for smuggled Congolese gold; the EU sanctioned the Gasabo Gold Refinery in Kigali on 17 Mar 2025 for transiting Congolese gold. The UAE's exact share is not in the sources."
+    value: 1.5
+    unit: usd_bn_gold_exports_2024_all_destinations
+    since: "2024"
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    note: "The value is Rwanda's total gold exports in 2024 (all destinations), not the UAE share, which no source read gives. Rwanda and the UAE are not shown to have acted unlawfully; the findings concern flows and weak due diligence."
+    sources:
+      - {url: "https://www.newtimes.co.rw/article/25225/news/economy/rwanda-records-15bn-in-gold-exports-in-2024/amp", title: "Rwanda records $1.5bn in gold exports in 2024", publisher: "The New Times (Kigali)", date: 2025, tier: 3}
+      - {url: "https://globalinitiative.net/analysis/tracing-opaque-gold-supply-chains-and-deals-central-africa/", title: "Tracing opaque gold supply chains and deals in Central Africa", publisher: "Global Initiative Against Transnational Organized Crime", date: 2026-01-28, tier: 2}
+      - {url: "https://theeastafrican.co.ke/tea/business-tech/rwanda-gold-refinery-under-fire-sanctions-threaten-key-export-4971724", title: "Rwanda's gold refinery under fire as sanctions threaten key export", publisher: "The EastAfrican", date: 2025-03, tier: 3}
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    summary: "Bilateral trade of USD 849m in 2025, up 27% on 2024, per Rwandan media reporting a Chinese plan that casts Rwanda as a key partner; China will apply zero tariffs to 53 African states including Rwanda."
+    value: 849
+    unit: usd_m_bilateral_trade_2025
+    since: "2025"
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    note: "Single government-aligned Rwandan source (tier 4); to be checked against Chinese customs data. Not a share of Rwanda's trade."
+    sources:
+      - {url: "https://www.ktpress.rw/2026/04/chinas-new-economic-plan-casts-rwanda-as-a-key-partner-in-africa/", title: "China's new economic plan casts Rwanda as a key partner in Africa", publisher: "KT Press (Kigali, government-aligned)", date: 2026-04, tier: 4}
+  - to: QAT
+    layer: dependency
+    type: investment
+    summary: "Qatar Airways agreed in December 2019 to take 60% of the new Bugesera international airport near Kigali (a project of about USD 1.3bn, Qatari stake about USD 780m, first phase seven million passengers a year)."
+    value: 60
+    unit: percent_stake_qatar_airways_bugesera_airport
+    since: 2019-12
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Signed as a memorandum of understanding in 2019; the 2026 construction and ownership status was not confirmed. A reported Qatar Airways stake in RwandAir (49%) comes from a source labelled automatically generated and is not used."
+    sources:
+      - {url: "https://www.aljazeera.com/economy/2019/12/10/qatar-airways-to-take-60-stake-in-rwanda-international-airport/", title: "Qatar Airways to take 60% stake in Rwanda international airport", publisher: "Al Jazeera", date: 2019-12-10, tier: 3}
+  - to: MOZ
+    layer: dependency
+    type: military_presence
+    summary: "Rwandan troops and police in Cabo Delgado: sent in July 2021 (about 1,000), grown to about 6,300 on the Rwandan spokeswoman's figure (April 2026); a new contingent was briefed in Kigali on 30 Jul 2026 to rotate with the present one. The force guards the TotalEnergies LNG area."
+    value: 6300
+    unit: rwandan_troops_and_police_in_cabo_delgado_2026
+    since: 2021-07
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Figures conflict: the Washington Examiner gives 6,200 and a growth from 2,000 to 6,300 (Makolo); other press says about 5,000 and Lusa 'more than 2,000'. The most recent official-source figure is kept."
+    sources:
+      - {url: "https://www.washingtonexaminer.com/news/world/4515966/rwanda-gas-project-isis-mozambique/", title: "Rwanda threatens to stop protecting US gas project from ISIS over sanctions", publisher: "Washington Examiner", date: 2026-04-06, tier: 3}
+      - {url: "https://www.newtimes.co.rw/article/37812/news/security/gen-nyakarundi-briefs-rdf-police-contingent-ahead-of-mozambique-deployment/amp", title: "Gen Nyakarundi briefs RDF, Police contingent ahead of Mozambique deployment", publisher: "The New Times (Kigali)", date: 2026-07-30, tier: 3}
+  - to: org-imf
+    layer: dependency
+    type: debt
+    summary: "A 38-month Extended Credit Facility of about USD 250m approved on 8 Jun 2026 to help Rwanda absorb external shocks, including the fallout of the Middle East war, and keep social spending while rebuilding fiscal buffers."
+    value: 250
+    unit: usd_m_imf_ecf_38_months_2026
+    since: 2026-06-08
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.theeastafrican.co.ke/tea/business-tech/imf-approves-250m-for-rwanda-as-growth-outlook-softens-5490366", title: "IMF approves $250m for Rwanda as growth outlook softens", publisher: "The EastAfrican", date: 2026-06, tier: 3}
+      - {url: "https://www.minecofin.gov.rw/news-detail/rwanda-and-imf-reach-staff-level-agreement-on-250-million-program", title: "Rwanda and IMF reach staff-level agreement on $250 million program", publisher: "Ministry of Finance and Economic Planning of Rwanda", date: 2026-04, tier: 1}
+      - {url: "https://www.ktpress.rw/2026/04/rwanda-secures-250-million-imf-financing-to-cope-with-middle-east-war-fallout/", title: "Rwanda secures 250 million IMF financing to cope with Middle East war fallout", publisher: "KT Press (Kigali, government-aligned)", date: 2026-04, tier: 4}
+
+  # ---------- action ----------
+  - to: COD
+    layer: action
+    type: incident
+    summary: "AFC/M23 and the RDF took Goma at the end of January 2025 (thousands of civilians killed, per Treasury) and Bukavu in February; they went on to seize Kavumu airport and the Rubaya mining area. The UN experts report that Rwandan officials said a week before the Goma attack that Kagame had decided to take Goma and Bukavu."
+    since: 2025-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: A
+    sources:
+      - {url: "https://home.treasury.gov/news/press-releases/sb0022", title: "Treasury Sanctions Rwandan Minister and Senior Militant for Conflict in the Democratic Republic of the Congo", publisher: "US Department of the Treasury", date: 2025-02-20, tier: 1}
+      - {url: "https://www.aljazeera.com/news/2025/7/18/un-experts-cast-blame-on-rwanda-and-uganda-what-are-they-doing-in-drc", title: "UN experts cast blame on Rwanda and Uganda. What are they doing in DRC?", publisher: "Al Jazeera", date: 2025-07-18, tier: 3}
+  - to: COD
+    layer: action
+    type: incident
+    summary: "AFC/M23 entered Uvira, South Kivu's second city on the Burundian border, on 10 Dec 2025, six days after the Washington Accords; Burundian and Congolese troops fell back to Bujumbura, tens of thousands fled to Burundi, and the US later cited the capture as a 'clear violation' of the Accords. AFC/M23 left the city by late February 2026."
+    since: 2025-12-10
+    until: 2026-02
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://allafrica.com/stories/202512090010.html", title: "Rwanda: Burundian, Congolese Soldiers Withdraw to Bujumbura Amid M23 Rebel Advance - Reports", publisher: "allAfrica", date: 2025-12-09, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2025/12/19/tens-of-thousands-flee-dr-congo-to-burundi-after-rebel-takeover-of-key-city", title: "Tens of thousands flee DR Congo to Burundi after rebel takeover of key city", publisher: "Al Jazeera", date: 2025-12-19, tier: 3}
+      - {url: "https://gazettengr.com/u-s-sanctions-rwandan-defence-force-for-violating-washington-accords-peace-deal-with-drc/", title: "U.S. sanctions Rwandan Defence Force for violating Washington Accords peace deal with DRC", publisher: "Gazette NGR", date: 2026-03-02, tier: 4}
+      - {url: "https://lemandat.org/en/?p=257", title: "UN Experts' Report: RED-Tabara and FNL redeployment toward Burundi's border revives security concerns (AFC/M23 withdrew from Uvira by 25 Feb 2026)", publisher: "Le Mandat", date: 2026-07-02, tier: 4}
+  - to: COD
+    layer: action
+    type: agreement
+    summary: "In March 2026 Rwanda and the DRC announced de-escalation steps toward implementing the Washington Accords (disengagement of Rwandan forces from defined areas against Congolese operations on the FDLR). By 13 Oct 2026 the US still demanded Rwandan withdrawal, and Kagame had said in April that the 'defensive measures' stay."
+    since: 2026-03
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    note: "Read from a search summary of the JURIST article, not opened (403). Kept at C."
+    sources:
+      - {url: "https://www.jurist.org/news/2026/03/drc-and-rwanda-announce-deescalation-amid-ongoing-conflict/", title: "DRC and Rwanda announce de-escalation amid ongoing conflict", publisher: "JURIST", date: 2026-03, tier: 3}
+      - {url: "https://peopledaily.digital/news/us-urges-rwanda-to-withdraw-troops-from-dr-congo-end-m23-support", title: "US urges Rwanda to withdraw troops from DR Congo, end M23 support", publisher: "People Daily (Kenya)", date: 2026-10-14, tier: 3}
+  - to: COD
+    layer: action
+    type: incident
+    summary: "UN experts: coltan looted from mines in towns M23 seized is smuggled into Rwanda, mixed with local output and passed off as Rwandan (a firm named as buyer); Treasury says Kabarebe coordinates the export of minerals from DRC mining sites through Rwanda; the EU says conflict minerals are trafficked to Rwanda and mixed with Rwandan production. Rwanda denies it."
+    since: 2025-02-20
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/7/18/un-experts-cast-blame-on-rwanda-and-uganda-what-are-they-doing-in-drc", title: "UN experts cast blame on Rwanda and Uganda. What are they doing in DRC?", publisher: "Al Jazeera", date: 2025-07-18, tier: 3}
+      - {url: "https://home.treasury.gov/news/press-releases/sb0022", title: "Treasury Sanctions Rwandan Minister and Senior Militant for Conflict in the Democratic Republic of the Congo", publisher: "US Department of the Treasury", date: 2025-02-20, tier: 1}
+      - {url: "https://www.news24.com/world/africa/eu-sanctions-rwandan-officers-m23-rebels-over-congo-violence-20250317", title: "EU sanctions Rwandan officers, M23 rebels over Congo violence", publisher: "News24 (Reuters)", date: 2025-03-17, tier: 3}
+  - to: BDI
+    layer: action
+    type: incident
+    summary: "Burundi closed its land border with Rwanda in January 2024 and cut diplomatic ties after accusing Kigali of backing RED-Tabara; Kigali rejects the charge as unfounded. The border is still shut in 2026."
+    since: 2024-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.theeastafrican.co.ke/tea/news/east-africa/burundi-closes-rwanda-border-after-deadly-rebel-attack-4489504", title: "Burundi closes Rwanda border in new row over rebels", publisher: "The EastAfrican", date: 2024-01, tier: 3}
+      - {url: "https://theeastafrican.co.ke/tea/news/east-africa/red-tabara-rebel-attacks-add-to-regional-tensions-4591914", title: "Burundi-Rwanda rivalry: RED-Tabara rebel attacks add to regional tensions", publisher: "The EastAfrican", date: 2024, tier: 3}
+      - {url: "https://lemandat.org/en/?p=257", title: "UN Experts' Report: RED-Tabara and FNL redeployment toward Burundi's border revives security concerns", publisher: "Le Mandat", date: 2026-07-02, tier: 4}
+  - to: UGA
+    layer: action
+    type: visit
+    summary: "Gen. Muhoozi, Uganda's Chief of Defence Forces, made a two-day defence cooperation visit to Kigali from 25 July 2026 and met Kagame; Rwandan and Ugandan commanders had held border talks in October 2025 and Muhoozi was in Rwanda for a 'military pact' in March 2025."
+    since: 2026-07-25
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Mirror of Uganda's row toward Rwanda, same links, plus the Rwandan report."
+    sources:
+      - {url: "https://allafrica.com/stories/202607280322.html", title: "Rwanda: Gen Muhoozi in Kigali for Official Defence Cooperation Visit", publisher: "allAfrica", date: 2026-07-28, tier: 3}
+      - {url: "https://allafrica.com/stories/202510030079.html", title: "Rwanda, Uganda Military Commanders Conclude Talks to Strengthen Border Ties", publisher: "allAfrica", date: 2025-10-03, tier: 3}
+      - {url: "https://www.newtimes.co.rw/article/37673/news/security/kagame-gen-muhoozi-discuss-rwanda-uganda-ties/amp", title: "Kagame, Gen Muhoozi discuss Rwanda-Uganda ties", publisher: "The New Times (Kigali)", date: 2026-07-25, tier: 3}
+  - to: UGA
+    layer: action
+    type: incident
+    summary: "The Gatuna/Katuna crossing was shut by Rwanda in February 2019 amid rival accusations of espionage and political meddling, and reopened in early 2022 after Muhoozi's shuttle diplomacy."
+    since: 2019-02
+    until: 2022-01
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://aa.com.tr/en/africa/rwanda-reopens-border-with-uganda-as-neighbors-push-for-thaw-in-relations/2490099", title: "Rwanda reopens border with Uganda as neighbors push for thaw in relations", publisher: "Anadolu Agency", date: 2022-01, tier: 3}
+      - {url: "https://theconversation.com/rwanda-has-reopened-the-border-with-uganda-but-distrust-could-close-it-again-176861", title: "Rwanda has reopened the border with Uganda but distrust could close it again", publisher: "The Conversation", date: 2022-02, tier: 2}
+      - {url: "https://www.aljazeera.com/news/2022/3/15/musevenis-army-general-son-meets-kagame-to-fix-rwanda-relations", title: "Museveni's army general son meets Kagame to fix Rwanda relations", publisher: "Al Jazeera", date: 2022-03-15, tier: 3}
+  - to: org-sadc
+    layer: action
+    type: incident
+    summary: "SADC leaders ended the SAMIDRC mandate on 13 Mar 2025 after its troops (South Africa, Malawi, Tanzania) took casualties as M23 took Goma; the troops withdrew in phases from 29 Apr 2025 overland through Rwanda, which had to consent to the transit."
+    since: 2025-03-13
+    until: 2025-06
+    last_verified: 2026-10-16
+    confidence: C
+    note: "Mirror of Tanzania's row (same links). The convoy-consent detail comes from that card's reading of the Daily Maverick coverage."
+    sources:
+      - {url: "https://www.dailymaverick.co.za/article/2025-04-29-south-african-and-other-sadc-troops-finally-begin-withdrawal-from-war-torn-drc.md", title: "South African and other SADC troops finally begin withdrawal from war-torn DRC", publisher: "Daily Maverick", date: 2025-04-29, tier: 3}
+      - {url: "https://www.africanews.com/amp/2025/06/13/sadc-peacekeeping-troops-begin-final-phase-of-withdrawal-from-east-drc/", title: "SADC peacekeeping troops begin final phase of withdrawal from east DRC", publisher: "Africanews", date: 2025-06-13, tier: 3}
+      - {url: "https://mp.scotsman.com/world-news/south-africa-tanzania-and-malawi-to-withdraw-troops-from-conflict-torn-dr-congo-5715852", title: "South Africa, Tanzania and Malawi to withdraw troops from conflict-torn DR Congo", publisher: "The Scotsman", date: 2025, tier: 3}
+  - to: KEN
+    layer: action
+    type: visit
+    summary: "President Ruto's state visit to Rwanda (April 2023) produced framework MoUs on correctional services, diplomatic training, ICT, health, youth, cooperatives, education and agriculture."
+    since: 2023-04
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.rwandainkenya.gov.rw/info/info-details/president-william-ruto-visits-rwanda", title: "President William Ruto visits Rwanda", publisher: "Rwanda High Commission in Kenya", date: 2023-04, tier: 1}
+      - {url: "https://www.rwandainkenya.gov.rw/info/info-details/kagame-meets-ruto-discuss-bilateral-ties", title: "Kagame meets Ruto, discuss bilateral ties", publisher: "Rwanda High Commission in Kenya", date: 2022-11, tier: 1}
+  - to: USA
+    layer: action
+    type: sanction
+    summary: "On 20 Feb 2025 OFAC designated James Kabarebe, Rwanda's Minister of State for Regional Integration and a former army chief, as the liaison to M23 who coordinates RDF support and manages the mineral revenue, together with M23 spokesman Lawrence Kanyuka and two firms. Rwanda's foreign ministry called the measures 'unjustified and unfounded'."
+    since: 2025-02-20
+    until: null
+    last_verified: 2026-10-16
+    confidence: A
+    sources:
+      - {url: "https://home.treasury.gov/news/press-releases/sb0022", title: "Treasury Sanctions Rwandan Minister and Senior Militant for Conflict in the Democratic Republic of the Congo", publisher: "US Department of the Treasury", date: 2025-02-20, tier: 1}
+      - {url: "https://www.bostonglobe.com/2025/02/21/world/us-sanctions-rwanda-official-rebel-spokesperson-over-violence-congo/", title: "US sanctions Rwanda official, rebel spokesperson over violence in Congo", publisher: "The Boston Globe (AP)", date: 2025-02-21, tier: 3}
+  - to: USA
+    layer: action
+    type: sanction
+    summary: "On 2 Mar 2026 the US sanctioned the Rwanda Defence Force and four senior officers for 'direct operational support' to M23 and, as announced by the State Department, for M23's capture of Uvira 'in clear violation of the Washington Accords'; a general licence allowed wind-down of RDF transactions to 1 Apr 2026. Rwanda rejects the sanctions as baseless."
+    since: 2026-03-02
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Names and titles of the four officers differ across outlets and are not stated here."
+    sources:
+      - {url: "https://www.the-star.co.ke/news/africa/2026-03-03-us-sanctions-rwanda-military-over-m23-support", title: "US sanctions Rwanda military over M23 support", publisher: "The Star (Kenya)", date: 2026-03-03, tier: 3}
+      - {url: "https://www.ecofinagency.com/news/0303-53409-u-s-sanctions-rwanda-defence-force-four-officials-over-role-in-eastern-drc-conflict", title: "U.S. sanctions Rwanda Defence Force, four officials over role in eastern DRC conflict", publisher: "Ecofin Agency", date: 2026-03-03, tier: 3}
+      - {url: "https://asil.org/ilib/us-treasury-sanctions-rwanda-defence-force-and-senior-officials/", title: "US Treasury sanctions Rwanda Defence Force and senior officials", publisher: "American Society of International Law (ASIL Insights)", date: 2026-03, tier: 2}
+      - {url: "https://www.clearytradewatch.com/2026/03/ofac-sanctions-rwanda-defence-force-and-senior-officials-in-connection-with-drc-conflict/", title: "OFAC sanctions Rwanda Defence Force and senior officials in connection with DRC conflict", publisher: "Cleary Gottlieb (trade watch)", date: 2026-03, tier: 3}
+      - {url: "https://gazettengr.com/u-s-sanctions-rwandan-defence-force-for-violating-washington-accords-peace-deal-with-drc/", title: "U.S. sanctions Rwandan Defence Force for violating Washington Accords peace deal with DRC", publisher: "Gazette NGR", date: 2026-03-02, tier: 4}
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "Rwanda agreed to accept up to 250 migrants deported from the US (signed in Kigali in June 2025, reported August 2025); Rwanda approves each individual and US funds support Rwandan immigration authorities and training. Critics read the deal as part of the minerals-and-influence package."
+    since: 2025-08
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/8/5/rwanda-agrees-to-accept-third-party-migrant-deportations-from-the-us", title: "Rwanda agrees to accept 'third-country' deportations from the US", publisher: "Al Jazeera", date: 2025-08-05, tier: 3}
+      - {url: "https://theeastafrican.co.ke/tea/news/east-africa/us-rwanda-migrant-deal-will-trump-succeed-where-uk-failed-5026882", title: "US-Rwanda migrant deal: Would Trump succeed where UK failed?", publisher: "The EastAfrican", date: 2025, tier: 3}
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "Alongside the Washington Accords (4 Dec 2025) the US launched a tripartite strategic-minerals cooperation framework with the DRC and Rwanda and concluded a separate bilateral agreement with Rwanda; the regional economic integration framework is the economic pillar of the Accords. Texts of the US-Rwanda agreements are not public."
+    since: 2025-12-04
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://bankable.africa/en/mining/0512-2097-drc-u-s-rwanda-launch-strategic-minerals-cooperation-framework", title: "DRC, U.S., Rwanda launch strategic minerals cooperation framework", publisher: "Bankable", date: 2025-12-05, tier: 4}
+      - {url: "https://allafrica.com/stories/202512040542.html", title: "Congo-Kinshasa: Rwanda's Kagame and Tshisekedi of the DRC sign peace deal", publisher: "allAfrica", date: 2025-12-04, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2025/8/2/drc-rwanda-agree-economic-framework-outline-as-part-of-peace-deal", title: "DRC, Rwanda agree economic framework outline as part of peace deal", publisher: "Al Jazeera", date: 2025-08-02, tier: 3}
+  - to: org-eu
+    layer: action
+    type: sanction
+    summary: "On 17 Mar 2025 the EU listed nine people over the Congo violence, among them Rwandan commanders (including the former Special Forces commander and the commanders of the 2nd and 3rd divisions) and the chief executive of the Rwanda Mines, Petroleum and Gas Board, together with the Gasabo Gold Refinery; the EU had suspended security and defence consultations with Rwanda on 24 Feb 2025."
+    since: 2025-03-17
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Counts differ across outlets (nine people; five Rwandans plus the refinery)."
+    sources:
+      - {url: "https://www.news24.com/world/africa/eu-sanctions-rwandan-officers-m23-rebels-over-congo-violence-20250317", title: "EU sanctions Rwandan officers, M23 rebels over Congo violence", publisher: "News24 (Reuters)", date: 2025-03-17, tier: 3}
+      - {url: "https://allafrica.com/stories/202503180050.html", title: "Rwanda: Who Are the Top Rwandan Officials, M23 Leaders Sanctioned By EU?", publisher: "allAfrica", date: 2025-03-18, tier: 3}
+      - {url: "https://www.euronews.com/2025/02/24/eu-to-review-raw-materials-deal-with-rwanda-over-drc-conflict-top-diplomat", title: "EU to review raw materials deal with Rwanda over DRC conflict, top diplomat says", publisher: "Euronews", date: 2025-02-24, tier: 3}
+  - to: org-eu
+    layer: action
+    type: agreement
+    summary: "The EU-Rwanda memorandum of understanding on critical raw materials value chains (signed February 2024) was put 'under review' on 24 Feb 2025 (Kallas); the Council did not agree to suspend it, although Belgium and the European Parliament asked. No 2026 outcome of the review was found."
+    since: 2024-02
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    note: "The brief for this card speaks of a suspended MoU; the sources say reviewed, not suspended."
+    sources:
+      - {url: "https://www.euronews.com/2025/02/24/eu-to-review-raw-materials-deal-with-rwanda-over-drc-conflict-top-diplomat", title: "EU to review raw materials deal with Rwanda over DRC conflict, top diplomat says", publisher: "Euronews", date: 2025-02-24, tier: 3}
+      - {url: "https://www.belganewsagency.eu/eu-to-review-raw-materials-deal-with-rwanda-over-conflict-in-eastern-congo", title: "EU to 'review' raw materials deal with Rwanda over conflict in eastern DRC", publisher: "Belga News Agency", date: 2025-02, tier: 3}
+  - to: org-eu
+    layer: action
+    type: agreement
+    summary: "European Peace Facility support of EUR 20m for the Rwandan forces in Cabo Delgado lapsed in May 2026 with no renewal; Kigali's spokeswoman said the real cost to Rwanda is far higher and that Mozambique would fund the mission."
+    since: "2024"
+    until: 2026-05
+    last_verified: 2026-10-16
+    confidence: B
+    note: "The start year is approximate (the assistance measure post-dates the 2021 deployment); the end date is from the EU delegation as reported by Lusa and Bloomberg."
+    sources:
+      - {url: "https://www.fdd.org/in_the_news/quotes/2026/03/12/eu-funding-for-rwandas-mozambique-deployment-set-to-end-in-may/", title: "EU funding for Rwanda's Mozambique deployment set to end in May", publisher: "FDD (quoting Bloomberg)", date: 2026-03-12, tier: 4}
+      - {url: "https://worldview.ranenetwork.com/content/situational-report/2026-03-12/mozambique-eu-to-decide-on-renewal-of-funding-for-rwandan-deployment-in-cabo-delgado", title: "Mozambique: EU to decide on renewal of funding for Rwandan deployment in Cabo Delgado", publisher: "RANE Worldview", date: 2026-03-12, tier: 3}
+      - {url: "https://paxchristi.net/wp-content/uploads/2026/04/EurAc-Statement-End-of-EU-support-to-Rwanda-under-EPF-April-2026.pdf", title: "EurAc statement: end of EU support to Rwanda under the European Peace Facility", publisher: "EurAc / Pax Christi", date: 2026-04, tier: 4}
+  - to: BEL
+    layer: action
+    type: expulsion
+    summary: "On 17 Mar 2025 Rwanda cut diplomatic relations with Belgium and gave its diplomats 48 hours to leave, citing 'neo-colonial delusions', weeks after Belgium suspended aid and led calls for EU sanctions over the M23; the two countries expelled each other's diplomats."
+    since: 2025-03-17
+    until: 2026-09-22
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Mirror of Belgium's row toward Rwanda, same sources."
+    sources:
+      - {url: "https://www.the-star.co.ke/news/africa/2025-03-17-rwanda-severs-ties-with-belgium-over-neo-colonial-delusions", title: "Rwanda severs ties with Belgium over 'neo-colonial delusions'", publisher: "The Star (Kenya)", date: 2025-03-17, tier: 3}
+      - {url: "https://theafricanmirror.africa/special-features/special-features-analysis/rwanda-and-belgium-are-at-odds-over-the-drc-whats-led-to-the-latest-low-point/", title: "Rwanda and Belgium are at odds over the DRC: what has led to the latest low point", publisher: "The African Mirror", date: 2025, tier: 3}
+  - to: BEL
+    layer: action
+    type: agreement
+    summary: "On 22 Sep 2026, at the UN General Assembly, Rwandan Foreign Minister Nduhungirehe and Belgium's Prevot announced the resumption of diplomatic relations after 18 months, thanking Qatar for facilitating a first meeting in June 2025; embassies to reopen soon, a chargé d'affaires first; Prevot said Belgium keeps defending the DRC's territorial integrity."
+    since: 2026-09-22
+    until: null
+    last_verified: 2026-10-16
+    confidence: A
+    note: "A joint announcement is one row for both sides; mirror of Belgium's row, same sources."
+    sources:
+      - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/09/22/belgium-rwanda-resume-diplomatic-relations-after-drc-conflict-dispute", title: "Belgium, Rwanda resume diplomatic relations after DRC conflict dispute", publisher: "Reuters via Internazionale", date: 2026-09-22, tier: 3}
+      - {url: "https://allafrica.com/stories/202609230609.html", title: "Rwanda: Belgium and Rwanda restore diplomatic ties after 18-month rupture", publisher: "AllAfrica", date: 2026-09-23, tier: 3}
+  - to: GBR
+    layer: action
+    type: agreement
+    summary: "The 2022 UK-Rwanda asylum partnership was declared 'dead and buried' by Starmer on 6 Jul 2024; Rwanda then claimed two GBP 50m payments in arbitration (a total of about USD 134m), and the Permanent Court of Arbitration rejected all its claims (ruling dated 15 May, announced 1 Jun 2026), finding that the exchanges after the cancellation amounted to an agreement that the payments would not be made."
+    since: "2022"
+    until: 2024-07-06
+    last_verified: 2026-10-16
+    confidence: B
+    note: "The partnership ended in practice on 6 Jul 2024; the arbitration is the aftermath. Whether the treaty was formally terminated is unclear (Full Fact)."
+    sources:
+      - {url: "https://wtop.com/world/2026/06/international-arbitrators-reject-134-claim-by-rwanda-against-uk-for-scrapped-migrant-deal/", title: "International arbitrators reject $134M claim by Rwanda against UK for scrapped migrant deal", publisher: "AP via WTOP", date: 2026-06-01, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2026/1/27/rwanda-sues-uk-over-scrapped-asylum-seeker-deal", title: "Rwanda sues UK over scrapped asylum seeker deal", publisher: "Al Jazeera", date: 2026-01-27, tier: 3}
+      - {url: "https://live.fullfact.org/government-tracker/ending-rwanda-agreement", title: "Has the government scrapped the Rwanda migrant agreement?", publisher: "Full Fact", date: 2024-07, tier: 3}
+  - to: GBR
+    layer: action
+    type: sanction
+    summary: "In February 2025 (after Lammy's visits to Kinshasa and Kigali on 21-22 Feb) the UK paused most direct bilateral aid to Rwanda until progress on a ceasefire and the exit of M23 and Rwandan forces, ended high-level attendance at Rwandan events, limited trade promotion, suspended defence training and reviewed export licences for the RDF; Kigali called the measures 'punitive'."
+    since: 2025-02
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    note: "Whether the pause was lifted in 2026 was not found."
+    sources:
+      - {url: "https://african.business/2025/02/politics/uk-pauses-bilateral-aid-to-rwanda-over-role-in-drc-conflict", title: "UK pauses bilateral aid to Rwanda over role in DRC conflict", publisher: "African Business", date: 2025-02, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2025/2/26/rwanda-slams-uk-sanctions-over-dr-congo-violence", title: "Rwanda slams UK sanctions over DR Congo violence", publisher: "Al Jazeera", date: 2025-02-26, tier: 3}
+  - to: FRA
+    layer: action
+    type: visit
+    summary: "Kagame met Macron at the Elysee on 11 Sep 2026 to discuss strengthening relations; they had last met in June 2026 for the unveiling of France's first permanent memorial to the victims of the 1994 Genocide against the Tutsi. In May 2026 Macron warned against isolating Rwanda while asking for the withdrawal of all foreign forces from the DRC."
+    since: 2026-09-11
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.newtimes.co.rw/article/38888/news/politics/kagame-macron-discuss-bilateral-ties/amp", title: "Kagame, Macron discuss bilateral ties", publisher: "The New Times (Kigali)", date: 2026-09-11, tier: 3}
+      - {url: "https://www.ktpress.rw/2026/05/french-president-macron-warns-against-isolating-rwanda-over-dr-congo-conflict/", title: "French President Macron warns against isolating Rwanda over DR Congo conflict", publisher: "KT Press (Kigali, government-aligned)", date: 2026-05, tier: 4}
+  - to: QAT
+    layer: action
+    type: agreement
+    summary: "Qatar facilitated the first Belgium-Rwanda meeting in June 2025 and was thanked by both foreign ministers when the two countries restored diplomatic relations at the UN General Assembly on 22 Sep 2026, after an 18-month rupture."
+    since: 2026-09-22
+    until: null
+    last_verified: 2026-10-16
+    confidence: A
+    note: "Mirror of Qatar's row toward Rwanda and of Belgium's row; same sources."
+    sources:
+      - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/09/22/belgium-rwanda-resume-diplomatic-relations-after-drc-conflict-dispute", title: "Belgium, Rwanda resume diplomatic relations after DRC conflict dispute", publisher: "Reuters via Internazionale", date: 2026-09-22, tier: 3}
+      - {url: "https://allafrica.com/stories/202609230609.html", title: "Rwanda: Belgium and Rwanda restore diplomatic ties after 18-month rupture", publisher: "AllAfrica", date: 2026-09-23, tier: 3}
+  - to: MOZ
+    layer: action
+    type: agreement
+    summary: "On 19-20 May 2026, with the EU's money gone, Foreign Minister Nduhungirehe said Rwanda had decided to deal exclusively with the Mozambican government, which had secured and would continue to secure the funding for the Rwandan forces in Cabo Delgado (amount and term undisclosed). In March 2026 he had said Rwanda 'will withdraw' if funding were not sustainable."
+    since: 2026-05-20
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    note: "The funding is Rwanda's statement; no independent confirmation was found."
+    sources:
+      - {url: "https://polity.org.za/article/rwanda-says-mozambique-has-secured-funds-for-it-to-continue-cabo-delgado-mission-2026-05-20", title: "Rwanda says Mozambique has secured funds for it to continue Cabo Delgado mission", publisher: "Engineering News / Polity", date: 2026-05-20, tier: 3}
+      - {url: "https://www.washingtonexaminer.com/news/world/4515966/rwanda-gas-project-isis-mozambique/", title: "Rwanda threatens to stop protecting US gas project from ISIS over sanctions", publisher: "Washington Examiner", date: 2026-04-06, tier: 3}
+  - to: BEN
+    layer: action
+    type: agreement
+    summary: "In July 2022 Benin's army chief of staff signed a deal allowing up to 350 Rwandan troops (press: up to 700) to help against jihadists; Kagame pledged support in April 2023 and Talon spoke of 'joint deployment'. By 2024 Beninese officials said no Rwandan troops were on the ground, and no deployment was found in 2025-26 reporting."
+    since: 2022-07
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    note: "The brief for this card speaks of a Benin deployment; the sources show an agreement and talks, not a confirmed deployment. Read through search summaries; the Bloomberg/Africa Intelligence report (Sep 2022) is behind a paywall."
+    sources:
+      - {url: "https://www.africanews.com/2023/04/16/rwanda-benin-talk-military-cooperation-over-border-security/", title: "Rwanda, Benin talk military cooperation over border security", publisher: "Africanews", date: 2023-04-16, tier: 3}
+      - {url: "https://www.bloomberg.com/news/articles/2022-09-09/rwanda-may-deploy-troops-to-benin-to-fight-jihadists-ai-says", title: "Rwanda may deploy troops to Benin to fight jihadists, Africa Intelligence says", publisher: "Bloomberg", date: 2022-09-09, tier: 3}

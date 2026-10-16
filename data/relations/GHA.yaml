@@ -1,0 +1,66 @@
+from: GHA
+relations:
+  # ---------- dependency ----------
+  - to: org-imf
+    layer: dependency
+    type: debt
+    summary: Ghana borrowed about US$3bn from the IMF under a 39-month Extended Credit Facility approved in May 2023; the sixth and final review on 27 July 2026 released about US$371m and closed the arrangement, which a 36-month non-financing Policy Coordination Instrument now follows.
+    since: '2023-05'
+    until: '2026-07'
+    last_verified: 2026-10-16
+    confidence: B
+    value: 3.0
+    unit: usd_bn
+    note: "Figure is the total disbursed under the facility, given as roughly US$3 billion in the IMF release. Residual external commercial creditors (about US$2.7bn in the 2025 review, under 5% of pre-restructuring public debt) are not an actor and are not written as a row; they sit in the card's objectives."
+    sources:
+      - {url: "https://www.imf.org/en/news/articles/2026/07/27/pr25260-ghana-imf-exec-board-completes-6th-rev-arr-ecf-concludes-2026-aiv-consult-rev-req-36mo-pci", title: "IMF Executive Board Completes the Sixth Review of Ghana's Arrangement Under the Extended Credit Facility, Concludes the 2026 Article IV Consultation, and Reviews Request of a 36-Month Policy Coordination Instrument for Ghana", publisher: "International Monetary Fund", date: 2026-07-27, tier: 1}
+      - {url: "https://www.imf.org/en/news/articles/2025/12/17/pr-25429-ghana-imf-completes-the-fifth-review-under-the-ecf-arrangement", title: "IMF Executive Board Completes the Fifth Review under the Extended Credit Facility Arrangement with Ghana", publisher: "International Monetary Fund", date: 2025-12-17, tier: 1}
+
+  # ---------- alignment ----------
+  - to: GBR
+    layer: alignment
+    type: treaty
+    summary: Interim Trade Partnership Agreement with the United Kingdom, signed 2 March 2021, on top of a 1989 bilateral investment treaty.
+    since: '2021-03-02'
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.gov.uk/government/news/uk-signs-trade-partnership-agreement-with-ghana", title: "UK signs trade partnership agreement with Ghana", publisher: "GOV.UK", date: 2021-03-02, tier: 1}
+      - {url: "https://investmentpolicy.unctad.org/international-investment-agreements/treaties/bilateral-investment-treaties/1796/ghana---united-kingdom-bit-1989-", title: "Ghana - United Kingdom BIT (1989)", publisher: "UNCTAD", date: 1989, tier: 1}
+
+  - to: CHN
+    layer: alignment
+    type: recognition
+    summary: Diplomatic relations with the People's Republic of China since 5 July 1960, according to the Chinese embassy in Accra.
+    since: '1960-07-05'
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "http://gh.china-embassy.gov.cn/eng/zjgx/zzwl/200412/t20041231_6894669.htm", title: "China-Ghana relations (Chinese embassy page; title not read in this pass)", publisher: "Embassy of the People's Republic of China in Ghana", date: 2004-12-31, tier: 1}
+
+  # ---------- action ----------
+  - to: USA
+    layer: action
+    type: agreement
+    summary: Deportation arrangement with the United States, named in the November 2025 National Security Strategy among the deals with El Salvador, Uganda, Eswatini, Ghana, Burundi and the DRC.
+    since: 2025
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    note: "The source names the deal but gives neither its date nor its terms; the year is the strategy's year, not the signature. Only one tier-1 source read."
+    sources:
+      - {url: "https://www.whitehouse.gov/wp-content/uploads/2025/12/2025-National-Security-Strategy.pdf", title: "National Security Strategy (November 2025)", publisher: "The White House", date: 2025-11, tier: 1}
+
+  - to: BFA
+    layer: action
+    type: incident
+    summary: Burkina Faso summoned Ghana's ambassador in December 2022 over a presidential claim on Wagner (headline read only).
+    since: '2022-12-16'
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    note: "Only the headline and URL were seen in search results, not the article; the speaker and the claim are not verified here."
+    sources:
+      - {url: "https://www.aljazeera.com/news/2022/12/16/burkina-faso-summons-ghanaian-ambassador-over-wagner-allegations", title: "Burkina Faso summons Ghana envoy over president's claim on Wagner", publisher: "Al Jazeera", date: 2022-12-16, tier: 3}

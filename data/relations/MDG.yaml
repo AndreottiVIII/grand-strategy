@@ -1,0 +1,101 @@
+from: MDG
+relations:
+  # ---------- objective ----------
+  - to: FRA
+    layer: objective
+    type: territorial_claim
+    summary: "Madagascar claims the Scattered Islands (Îles Éparses), which France administers. Macron refused restitution in April 2025; the joint commission's second meeting (Paris, 30 June 2025) made no progress; in September 2026 the file stayed on the UN General Assembly agenda (date from a news summary, page not opened)."
+    since: '2025-04'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://allafrica.com/stories/202504230249.html", title: "Madagascar: France and Madagascar Wrangle Over Sovereignty of Scattered Islands", publisher: "allAfrica", date: "2025-04-23", tier: 3}
+      - {url: "https://fr.allafrica.com/stories/202504250131.html", title: "Madagascar: Scattered Islands - Emmanuel Macron says no to restitution", title_original: "Madagascar: Îles Éparses - Emmanuel Macron dit non à une restitution", lang: fr, publisher: "allAfrica", date: "2025-04-25", tier: 3}
+      - {url: "https://fr.allafrica.com/stories/202507020114.html", title: "Madagascar: Scattered Islands - No progress at second meeting of the Franco-Malagasy joint commission", title_original: "Madagascar: Îles Éparses - Pas d'avancée à la deuxième réunion de la commission mixte franco-malgache", lang: fr, publisher: "allAfrica", date: "2025-07-02", tier: 3}
+      - {url: "https://www.capmad.com/post/iles-eparses-madagascar-maintient-le-dossier-a-lordre-du-jour-de-lassemblee-generale-de-lonu", title: "Scattered Islands: Madagascar keeps the file on the UN General Assembly agenda", title_original: "Îles Éparses: Madagascar maintient le dossier à l'ordre du jour de l'Assemblée générale de l'ONU", lang: fr, publisher: "CapMad", date: "2026-09", tier: 3}
+
+  - to: org-au
+    layer: objective
+    type: membership_goal
+    summary: "Return to the African Union after the suspension of 15 October 2025, when the AU Peace and Security Council suspended Madagascar from all its activities and organs. Malagasy press in February 2026 still showed the country pleading its case at the AU."
+    since: '2025-10-15'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://fr.allafrica.com/stories/202510160154.html", title: "African Union suspends Madagascar from its organs and all activities", title_original: "Afrique: L'Union africaine suspend Madagascar de ses instances ainsi que de toutes ses activités", lang: fr, publisher: "allAfrica", date: "2025-10-16", tier: 3}
+      - {url: "https://www.lexpress.mg/2026/02/union-africaine-razanamahasoa-plaide-la.html", title: "African Union: Razanamahasoa pleads Madagascar's case", title_original: "UNION AFRICAINE - Razanamahasoa plaide la cause malgache", lang: fr, publisher: "L'Express de Madagascar", date: "2026-02", tier: 3}
+
+  # ---------- dependency ----------
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    summary: "China has been Madagascar's largest trading partner for nine consecutive years, by China's own statement to the WTO. The value is the number of consecutive years, not a share; the trade share itself is not verified in this pass."
+    since: '2025'
+    until: null
+    value: 9
+    unit: consecutive_years_largest_trading_partner
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://wto.mofcom.gov.cn/meetingsandstatements/art/2025/art_703abae3e6594130ab4e66fab2dac329.html", title: "China's statement at the WTO on trade with Madagascar (page title not captured; descriptive)", publisher: "China MOFCOM (Ministry of Commerce, WTO statement)", date: "2025", tier: 1}
+
+  # ---------- action ----------
+  - to: FRA
+    layer: action
+    type: visit
+    summary: "Macron's state visit to Antananarivo in April 2025, the first visit by a French president in about twenty years. He refused restitution of the Scattered Islands. Hosted by Madagascar."
+    since: '2025-04-23'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.euronews.com/my-europe/2025/04/23/macron-visits-madagascar-in-first-visit-by-french-leader-to-former-colony-in-20-years", title: "Macron visits Madagascar in first visit by French leader to former colony in 20 years", publisher: "Euronews", date: "2025-04-23", tier: 3}
+      - {url: "https://fr.allafrica.com/stories/202504250131.html", title: "Madagascar: Scattered Islands - Emmanuel Macron says no to restitution", title_original: "Madagascar: Îles Éparses - Emmanuel Macron dit non à une restitution", lang: fr, publisher: "allAfrica", date: "2025-04-25", tier: 3}
+
+  - to: FRA
+    layer: action
+    type: visit
+    summary: "Col. Michael Randrianirina was received by Macron at the Élysée in February 2026, on a trip after Moscow that Malagasy coverage framed as economic."
+    since: '2026-02-24'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://africanews.com/2026/02/24/president-of-madagascar-visits-his-french-counterpart-in-paris/", title: "President of Madagascar visits his French counterpart in Paris", publisher: "Africanews", date: "2026-02-24", tier: 3}
+      - {url: "https://fr.allafrica.com/stories/202602250141.html", title: "Madagascar: Michaël Randrianirina in Paris - A trip with an economic purpose", title_original: "Madagascar: Michaël Randrianirina à Paris - Un voyage à vocation économique", lang: fr, publisher: "allAfrica", date: "2026-02-25", tier: 3}
+
+  - to: TWN
+    layer: action
+    type: incident
+    summary: "Madagascar, with Seychelles and Mauritius, revoked overflight approval for Lai's aircraft in April 2026; his Eswatini visit was cancelled and not rescheduled months later. Taiwan's Presidential Office says China pressed them (Taiwanese government statement, not verified). Mirrored from the TWN row toward SWZ, same sources."
+    since: '2026-04'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.stimson.org/?p=128712", title: "Analysis of Lai's US stopover row and the April 2026 Eswatini trip cancellation (Stimson Center; title descriptive)", publisher: "Stimson Center", date: "2026", tier: 2}
+      - {url: "https://www.khan.co.kr/en/article/202604221137027", title: "Taiwan's Lai cancels Eswatini trip after overflight permissions revoked (Kyunghyang report; title descriptive)", publisher: "The Kyunghyang Shinmun", date: "2026-04-22", tier: 3}
+
+  - to: USA
+    layer: action
+    type: visit
+    summary: "Madagascar's trade minister went to Washington in September 2025 to plead for an AGOA extension, before the preference was due to lapse at the end of September 2025."
+    since: '2025-09-12'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://fr.allafrica.com/stories/202509120164.html", title: "Madagascar: Trade minister in Washington to plead for AGOA extension", title_original: "Madagascar: Le ministre du Commerce à Washington pour plaider la prolongation de l'Agoa", lang: fr, publisher: "allAfrica", date: "2025-09-12", tier: 3}
+
+  - to: RUS
+    layer: action
+    type: visit
+    summary: "Col. Michael Randrianirina visited Moscow in February 2026, before Paris, as reported by Mayotte Hebdo."
+    since: '2026-02'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.mayottehebdo.com/?p=86918", title: "After Moscow, Michaël Randrianirina in Paris on Tuesday to meet Emmanuel Macron", title_original: "Après Moscou, Michaël Randrianirina à Paris mardi pour une rencontre avec Emmanuel Macron", lang: fr, publisher: "Mayotte Hebdo", date: "2026-02", tier: 3}

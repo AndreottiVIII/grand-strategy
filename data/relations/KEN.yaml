@@ -1,0 +1,478 @@
+from: KEN
+relations:
+  # ---------- objective ----------
+  - to: SOM
+    layer: objective
+    type: territorial_claim
+    summary: "Kenya rejects the International Court of Justice's judgment of October 2021 on the Kenya-Somalia maritime boundary 'in totality', after withdrawing from the case; the ruling is unimplemented and Nairobi keeps backing Jubaland's Madobe. Mirror of the SOM row, same sources."
+    since: 2021-10
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2021/10/13/kenya-rejects-icjs-verdict-on-somalia-maritime-border-row", title: "Kenya rejects ICJ's verdict on Somalia maritime border row", publisher: "Al Jazeera", date: 2021-10-13, tier: 3}
+      - {url: "https://www.somaliguardian.com/news/somalia-news/ethiopia-opposes-somali-government-plans-for-parallel-jubaland-administration-in-gedo/", title: "Ethiopia opposes Somali government plans for parallel Jubaland administration in Gedo", publisher: "Somali Guardian", date: 2025-10-12, tier: 3}
+  - to: sub-jubaland
+    layer: objective
+    type: influence_goal
+    summary: "Keep Ahmed Madobe's Jubaland as a buffer between Kenya and al-Shabaab and as a counterweight to Mogadishu: Kenyan peacekeepers have been accused since 2013 of building a buffer state around Kismayo, Mogadishu has accused Nairobi of arming militias, Jubaland fighters fled to Mandera in 2021 and were reported there again in 2026, and Nairobi denies the backing."
+    since: 2013-07
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://m.csmonitor.com/World/Africa/2013/0705/Kenyan-peacekeepers-accused-of-creating-buffer-state-inside-Somalia", title: "Kenyan peacekeepers accused of creating buffer state inside Somalia", publisher: "Christian Science Monitor", date: 2013-07-05, tier: 3}
+      - {url: "https://www.voanews.com/a/africa_kenya-denies-role-somalias-internal-conflict/6201325.html", title: "Kenya denies role in Somalia's internal conflict", publisher: "VOA", date: 2021, tier: 3}
+      - {url: "https://www.somaliguardian.com/news/somalia-news/somalia-government-loses-three-towns-48-hours/", title: "Somalia's govt loses three towns in 48 hours as rivals advance", publisher: "Somali Guardian", date: 2026-10-10, tier: 3}
+  - to: nsa-al-shabaab
+    layer: objective
+    type: regime_goal
+    summary: "Break the group's hold on southern Somalia and keep it off Kenyan soil: Kenyan troops have fought it in Somalia since 2011 and are now inside AUSSOM (mandate renewed by Security Council resolution 2809 to 31 December 2026), while the Kenyan security forces on the border lose men to roadside bombs (five security personnel killed in Mandera in late July 2026; three KDF soldiers in Lamu in July 2025; a bomb on the Mandera-Elwak road in August 2026)."
+    since: 2011-10
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.securitycouncilreport.org/whatsinblue/2025/12/somalia-vote-on-aussom-mandate-renewal.php", title: "Somalia: vote on AUSSOM mandate renewal (resolution 2809)", publisher: "Security Council Report", date: 2025-12, tier: 2}
+      - {url: "https://www.kenyans.co.ke/news/125966-six-injured-suspected-al-shabaab-ied-attack-mandera", title: "Six Injured in Suspected Al Shabaab IED Attack in Mandera", publisher: "Kenyans.co.ke", date: 2026-08, tier: 3}
+      - {url: "https://thekenyatimes.com/breaking-news/at-least-3-kdf-soldiers-killed-in-lamu-ied-attack/", title: "At least 3 KDF soldiers killed in Lamu IED attack", publisher: "The Kenya Times", date: 2025-07-15, tier: 3}
+  - to: SSD
+    layer: objective
+    type: influence_goal
+    summary: "Be the mediator that brings South Sudan's holdouts into a process on Juba's terms: Kiir asked Ruto in December 2023 to take over the Tumaini track from Sant'Egidio, and the talks in Nairobi (May 2024, resumed January 2025) aim at a deal that Juba wants as an annex to the 2018 agreement. Mirror of the SSD reading, same Radio Tamazuj source."
+    since: 2023-12
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.radiotamazuj.org/en/news/article/kenya-led-mediation-explains-delay-in-tumaini-peace-talks", title: "Kenya-led mediation explains delay in Tumaini peace talks", publisher: "Radio Tamazuj", date: 2025, tier: 3}
+      - {url: "https://www.radiotamazuj.org/en/news/article/kenya-led-south-sudan-peace-talks-not-dead-makuei", title: "Kenya-led South Sudan peace talks 'not dead' - Makuei", publisher: "Radio Tamazuj", date: 2024-08-07, tier: 3}
+  # ---------- alignment ----------
+  - to: org-eu
+    layer: alignment
+    type: treaty
+    summary: "The EU-Kenya Economic Partnership Agreement entered into force on 1 July 2024: duty-free, quota-free access to the EU for Kenyan goods, gradual opening of Kenya's market over 25 years, safeguard clauses, a sustainability chapter; it implements the EU-EAC EPA bilaterally and stays open to other EAC states."
+    since: 2024-07-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: A
+    sources:
+      - {url: "https://policy.trade.ec.europa.eu/news/key-elements-eu-kenya-economic-partnership-agreement-2023-06-19_it", title: "Key elements of the EU-Kenya Economic Partnership Agreement", publisher: "European Commission", date: 2023-06-19, tier: 1}
+      - {url: "https://peopledaily.digital/business/kenya-eu-trade-pact-takes-effect-ushers-in-new-order", title: "Kenya-EU trade pact takes effect, ushers in new order", publisher: "People Daily (Kenya)", date: 2024-07-01, tier: 3}
+      - {url: "https://www.the-star.co.ke/business/kenya/2024-07-01-kenyan-exports-start-accessing-eu-market-duty-free", title: "Kenyan exports start accessing EU market duty free", publisher: "The Star (Kenya)", date: 2024-07-01, tier: 3}
+  # ---------- dependency ----------
+  - to: SOM
+    layer: dependency
+    type: military_presence
+    summary: "Kenya's allocation to AUSSOM in the African Union-Somalia agreement of February 2025 is 1,410 troops (Uganda 4,500, Ethiopia 2,500, Djibouti 1,520, Egypt 1,091); the Security Council ceiling is 11,826 uniformed personnel to 31 December 2026, and the troop-contributing countries worry about funding (Hassan Sheikh and Ruto, June 2026). Mirror of the SOM row, same sources."
+    since: 2025-02
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    value: 1410
+    unit: troops_allocated_to_AUSSOM
+    sources:
+      - {url: "https://www.globalsecurity.org/military/library/news/2025/02/mil-250225-voa04.htm", title: "AU, Somalia agree on troop numbers for new mission", publisher: "VOA (via GlobalSecurity.org)", date: 2025-02-25, tier: 3}
+      - {url: "https://allafrica.com/stories/202606220511.html", title: "Kenya: Somalia's President Holds Talks With Kenya's Ruto Amid Aussom Funding Concerns", publisher: "AllAfrica", date: 2026-06-22, tier: 3}
+  - to: HTI
+    layer: dependency
+    type: military_presence
+    summary: "Kenya has led the police mission in Haiti since June 2024 (Multinational Security Support, converted by the Security Council into the Gang Suppression Force on 30 September 2025); the fifth contingent of 230 officers landed in December 2025, bringing Kenyan police in Haiti to over 700; the second contingent returned home on 17-18 March 2026 and Chadian troops are to replace the Kenyans gradually."
+    since: 2024-06
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    value: 230
+    unit: police_officers_fifth_contingent_dec_2025
+    sources:
+      - {url: "https://www.the-star.co.ke/news/2025-12-09-kenya-deploys-fifth-contingent-to-haiti", title: "Kenya deploys fifth contingent to Haiti", publisher: "The Star (Kenya)", date: 2025-12-09, tier: 3}
+      - {url: "https://capitalfm.africa/over-200-kenyan-police-return-home-from-haiti-mission/", title: "Over 200 Kenyan Police Return Home from Haiti Mission", publisher: "Capital FM (Kenya)", date: 2026-03-18, tier: 3}
+      - {url: "https://ntvkenya.co.ke/news/chad-to-gradually-replace-kenyan-force-in-haiti-through-october-dominican-republic-says/", title: "Chad to gradually replace Kenyan force in Haiti through October, Dominican Republic says", publisher: "NTV Kenya", date: 2026, tier: 3}
+  - to: CHN
+    layer: dependency
+    type: debt
+    summary: "About USD 5bn of the SGR railway loans from China were converted from dollars into yuan, completed on 7 October 2025 (officials said the interest rate nearly halves, with savings projected at about USD 215m a year; two facilities were extended to 15 years with a four-year grace period); the IMF warned that such swaps can bring currency risk. The total of Kenya's debt to China was not found."
+    since: 2025-10-07
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    value: 5.0
+    unit: usd_bn_sgr_loans_converted_to_yuan
+    sources:
+      - {url: "https://www.intellinews.com/kenya-asks-china-s-approval-to-convert-dollar-denominated-5bn-railway-loan-into-yuan-397562/", title: "Kenya asks China's approval to convert dollar-denominated $5bn railway loan into yuan", publisher: "bne IntelliNews", date: 2025-08, tier: 3}
+      - {url: "https://peopledaily.digital/insights/why-the-imf-is-warning-kenya-and-ethiopia-on-yuan-debt-swaps/amp", title: "Why the IMF is warning Kenya and Ethiopia on yuan debt swaps", publisher: "People Daily (Kenya)", date: 2025-10, tier: 3}
+      - {url: "https://khusoko.com/2025/10/08/kenya-converts-sgr-debt-to-yuan-saving-215m-annually-in-servicing-costs/", title: "Kenya converts SGR debt to yuan, saving $215m annually in servicing costs", publisher: "Khusoko (pointer only)", date: 2025-10-08, tier: 4}
+  - to: org-imf
+    layer: dependency
+    type: debt
+    summary: "The USD 3.6bn IMF programme ended in April 2025 before its last review; staff missions in September-October 2025 and 24 February - 4 March 2026 discussed a new programme, the Treasury has not counted on IMF money in the current or next budget, and a new mission was being prepared in August 2026. Public debt passed KSh 13 trillion in May 2026 and the IMF projects 71.6% of GDP for 2026."
+    since: 2025-04
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    value: 3.6
+    unit: usd_bn_imf_programme_ended_april_2025
+    sources:
+      - {url: "https://polity.org.za/article/imf-staff-mission-due-in-kenya-this-week-for-talks-on-new-deal-2026-02-25", title: "IMF staff mission due in Kenya this week for talks on new deal", publisher: "Reuters (via Polity)", date: 2026-02-25, tier: 3}
+      - {url: "https://www.dawan.africa/news/kenya-prepares-for-fresh-imf-funding-talks-as-new-mission-heads-to-nairobi", title: "Kenya prepares for fresh IMF funding talks as new mission heads to Nairobi", publisher: "Dawan Africa", date: 2026-08-12, tier: 3}
+      - {url: "https://peopledaily.digital/business/kenyas-debt-burden-accelerates-past-ksh13t-mark/amp", title: "Kenya's debt burden accelerates past Ksh13T mark", publisher: "People Daily (Kenya)", date: 2026-05, tier: 3}
+  - to: ARE
+    layer: dependency
+    type: energy_import
+    summary: "Kenya buys fuel on a 180-day credit plan from three Gulf state companies (ADNOC and Emirates National Oil of the UAE, and Saudi Aramco); the contract was renewed for two years with lower margins from late 2025. Value is the credit period, not a share of imports (none was found)."
+    since: 2023-09
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    value: 180
+    unit: days_of_supplier_credit_on_fuel_imports
+    sources:
+      - {url: "https://eastleighvoice.co.ke/daniel%20kiptoo/134202/kenya-extends-oil-supply-agreement-with-three-gulf-companies-bloomberg-news-reports", title: "Kenya extends oil supply agreement with three Gulf companies, Bloomberg News reports", publisher: "Eastleigh Voice (Bloomberg)", date: 2025, tier: 3}
+  - to: SAU
+    layer: dependency
+    type: remittances
+    summary: "Saudi Arabia is the favourite destination of Kenyan migrant workers: a labour recruitment agreement reported in July 2026 is said to protect more than 350,000 Kenyans in the kingdom; Kenyan remittances in total reached about USD 5.04bn in 2025 (all sources) and 583,868 Kenyans were placed abroad between 2022 and early 2026."
+    since: 2017
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    value: 350000
+    unit: kenyan_workers_in_saudi_arabia
+    sources:
+      - {url: "https://thestandard.ke/business/amp/national/article/2001551743/why-saudi-arabia-remains-favourite-destination-for-kenyan-migrant-workers", title: "Why Saudi Arabia remains favourite destination for Kenyan migrant workers", publisher: "The Standard (Kenya)", date: 2026, tier: 3}
+      - {url: "https://thekenyatimes.com/featured/kenyans-work-abroad-2026/", title: "Kenyans work abroad 2026 (National Employment Authority figures to Parliament)", publisher: "The Kenya Times", date: 2026-09-22, tier: 3}
+  - to: QAT
+    layer: dependency
+    type: remittances
+    summary: "Over 300,000 Kenyans worked in Saudi Arabia, Qatar and the UAE together by 2025; the figure is for the three states combined (no Qatar-only count was found)."
+    since: 2025
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    value: 300000
+    unit: kenyans_working_in_saudi_qatar_uae_combined
+    sources:
+      - {url: "https://thekenyatimes.com/featured/kenyans-work-abroad-2026/", title: "Kenyans work abroad 2026 (National Employment Authority figures to Parliament)", publisher: "The Kenya Times", date: 2026-09-22, tier: 3}
+  - to: TZA
+    layer: dependency
+    type: trade_share
+    summary: "Tanzania is Kenya's second-largest trading partner after Uganda; goods trade fell 9.4% in 2025 to KSh 114.1bn from a record KSh 125.9bn in 2024 (Kenyan exports KSh 63.6bn, imports from Tanzania KSh 50.5bn), the first fall in almost a decade, despite warmer diplomacy."
+    since: 2025
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    value: 114.1
+    unit: ksh_bn_total_goods_trade_2025
+    sources:
+      - {url: "https://www.businessdailyafrica.com/bd/economy/kenya-tanzania-trade-falls-for-first-time-in-nearly-a-decade-5447214", title: "Kenya-Tanzania trade falls for first time in nearly a decade", publisher: "Business Daily (Kenya)", date: 2026-05-05, tier: 3}
+      - {url: "https://www.theeastafrican.co.ke/tea/news/east-africa/ruto-seeks-to-reset-kenya-tanzania-ties-5444186", title: "Ruto seeks to reset Kenya-Tanzania ties", publisher: "The EastAfrican", date: 2026-05-02, tier: 3}
+  - to: SDN
+    layer: dependency
+    type: trade_share
+    summary: "Sudan bought about 35 million kg of Kenyan tea a year, roughly KSh 9bn, before its import ban of March 2025 (figure given by the Kenyan opposition leader Kalonzo Musyoka to the Sudanese ambassador); over 3.44 million kg worth more than USD 10.3m was still in warehouses in Mombasa in August 2026."
+    since: 2025-03-14
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    value: 9
+    unit: ksh_bn_tea_exports_per_year_before_ban
+    sources:
+      - {url: "https://citizen.digital/article/kalonzo-urges-sudan-govt-to-lift-ban-on-kenyas-imports-n387843", title: "Kalonzo urges Sudan gov't to lift ban on Kenya's imports", publisher: "Citizen Digital (Kenya)", date: 2026-08, tier: 3}
+      - {url: "https://theeastafrican.co.ke/tea/business-tech/sudan-willing-to-reopen-tea-market-for-kenya-5550596", title: "Sudan 'willing' to reopen tea market for Kenya", publisher: "The EastAfrican", date: 2026, tier: 3}
+  - to: USA
+    layer: dependency
+    type: trade_share
+    summary: "Kenyan exports of about KSh 95bn depend on AGOA preferences, which lapsed on 30 September 2025 (duties of 15-42% were reported for four months on top of the 10% reciprocal tariff), were renewed by Trump in February 2026 to 31 December 2026, and are under a US review of Kenya's governance record (July 2026). The value is the headline figure of the exports concerned, not a share."
+    since: 2025-09-30
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    value: 95
+    unit: ksh_bn_exports_covered_by_agoa
+    sources:
+      - {url: "https://thestandard.ke/sports/amp/business/2001540064/relief-for-kenyas-sh95b-exports-as-trump-renews-agoa-for-one-year", title: "Relief for Kenya's Sh95b exports as Trump renews AGOA for one year", publisher: "The Standard (Kenya)", date: 2026-02, tier: 3}
+      - {url: "https://citizen.digital/article/relief-for-kenyan-exporters-as-trump-signs-agoa-extension-into-law-n376973", title: "Relief for Kenyan exporters as Trump signs AGOA extension into law", publisher: "Citizen Digital (Kenya)", date: 2026-02, tier: 3}
+      - {url: "https://www.standardmedia.co.ke/sports/amp/business/2001551889/kenyas-agoa-test-as-trump-reviews-rutos-governance-record", title: "Kenya's AGOA test as Trump reviews Ruto's governance record", publisher: "The Standard (Kenya)", date: 2026-07-03, tier: 3}
+  # ---------- action ----------
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "Biden announced on 23 May 2024, at Ruto's state visit, that the US would designate Kenya a Major Non-NATO Ally, the first sub-Saharan state, citing counter-terrorism cooperation and shared support for Ukraine as Kenya prepared to send forces to Haiti; the sources read do not show Congress completing the designation."
+    since: 2024-05-23
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2024/5/23/us-to-designate-kenya-as-non-nato-ally-during-rutos-state-visit", title: "Biden pledges to designate Kenya as 'non-NATO ally' during Ruto visit", publisher: "Al Jazeera", date: 2024-05-23, tier: 3}
+      - {url: "https://www.cbsnews.com/amp/colorado/news/biden-kenya-major-non-nato-us-ally-state-visit", title: "Biden moves to designate Kenya as a major non-NATO U.S. ally", publisher: "CBS News", date: 2024-05-23, tier: 3}
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "On 4 December 2025 Mudavadi and Rubio signed in Washington a five-year Kenya-US health cooperation framework worth USD 1.6bn paid directly to government institutions (the first such government-to-government health arrangement in Africa after the USAID exit); Kenya pledged USD 850m of additional health spending. Ruto witnessed it, thanked Washington for Horn of Africa and counter-terrorism support and reaffirmed Kenya's stay in Haiti; Rubio credited Kenya's role for the move to a gang suppression force."
+    since: 2025-12-04
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.aa.com.tr/en/africa/kenya-us-sign-16b-health-cooperation-deal/3762624", title: "Kenya, US sign $1.6B health cooperation deal", publisher: "Anadolu Agency", date: 2025-12, tier: 3}
+      - {url: "https://capitalfm.africa/ruto-trump-washington-visit-kenya-us-health-deal/", title: "Ruto hails Washington engagement with Trump as watershed moment", publisher: "Capital FM (Kenya)", date: 2025-12-06, tier: 3}
+      - {url: "https://www.theeastafrican.co.ke/tea/sustainability/health/us-signs-pact-with-kenya-under-america-first-health-plan-5287210", title: "US signs pact with Kenya under 'America First' global health plan", publisher: "The EastAfrican", date: 2025-12, tier: 3}
+  - to: USA
+    layer: action
+    type: incident
+    summary: "Washington imposed a 10% reciprocal tariff on Kenyan imports in April 2025; AGOA lapsed on 30 September 2025 and was renewed retroactively in February 2026 to 31 December 2026; the first round of talks on a reciprocal trade framework was held in February 2026; a Senate-approved extension to 2028 awaited the House in 2026."
+    since: 2025-04
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://peopledaily.digital/business/ruto-looks-east-as-white-house-tariffs-america-first-policy-bite", title: "Ruto looks East as White House tariffs, 'America First' policy bite", publisher: "People Daily (Kenya)", date: 2025-04, tier: 3}
+      - {url: "https://www.the-star.co.ke/business/2026-02-27-kenya-us-hold-first-round-of-talks-on-reciprocal-trade-framework", title: "Kenya, US hold first round of talks on reciprocal trade framework", publisher: "The Star (Kenya)", date: 2026-02-27, tier: 3}
+      - {url: "https://citizen.digital/article/relief-for-kenyan-exporters-as-trump-signs-agoa-extension-into-law-n376973", title: "Relief for Kenyan exporters as Trump signs AGOA extension into law", publisher: "Citizen Digital (Kenya)", date: 2026-02, tier: 3}
+  - to: CHN
+    layer: action
+    type: visit
+    summary: "Ruto's five-day state visit to China (22-26 April 2025, his third trip to Beijing since 2022): agreements on security, technology, the economy and railways and a Kenyan consulate in Guangzhou; Ruto called the world order 'broken' and Kenya 'a bridge between East and West' while Trump's tariffs were announced; financing for the SGR extension was the sticking point. Whether a comprehensive strategic partnership agreement was signed under that name is not confirmed by the AP account."
+    since: 2025-04-22
+    until: 2025-04-26
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.yahoo.com/news/kenyan-president-vows-closer-ties-062034431.html", title: "Kenyan president vows closer ties to China during visit amid Trump's trade war", publisher: "Associated Press (via Yahoo News)", date: 2025-04-24, tier: 3}
+      - {url: "https://theeastafrican.co.ke/tea/business-tech/ruto-in-china-kenya-seeks-credit-wiggle-room-to-fund-sgr-5012432", title: "Ruto in China: Kenya seeks credit wiggle room to fund SGR", publisher: "The EastAfrican", date: 2025-04, tier: 3}
+      - {url: "https://citizen.digital/news/kenya-can-be-bridge-between-east-and-west-ruto-tells-china-amid-tension-with-us-n361521", title: "'Kenya can be bridge between East and West': Ruto tells China amid tension with US", publisher: "Citizen Digital (Kenya)", date: 2025-04, tier: 3}
+  - to: GBR
+    layer: action
+    type: agreement
+    summary: "The 2015 Kenya-UK defence cooperation agreement expired on 6 October 2021; the successor approved by the Cabinet in 2021 is still unratified, because the National Assembly's committee wants Kenyan jurisdiction over serious crimes by British soldiers."
+    since: 2021-10
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://nation.africa/kenya/news/kenya-delays-uk-defence-deal-over-troop-immunity-row-5531990", title: "Kenya delays UK defence deal over troop immunity row", publisher: "Nation (Kenya)", date: 2026, tier: 3}
+      - {url: "https://www.kenyans.co.ke/news/125568-batuk-deal-has-not-ended-govt-says-defence-talks-continue", title: "BATUK Deal Has Not Ended, Govt Says as Defence Talks Continue", publisher: "Kenyans.co.ke", date: 2026-07, tier: 3}
+  - to: GBR
+    layer: action
+    type: incident
+    summary: "In July 2026 the UK Ministry of Defence said the licences needed for its September exercise in Laikipia 'have not been forthcoming' and warned it could move the exercise out of Kenya; reports said BATUK was relocating or had collapsed; Nairobi denied the deal had ended and on 28 July approved the exercise (Mudavadi: differences can be solved by dialogue)."
+    since: 2026-07
+    until: 2026-07-28
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.the-star.co.ke/news/2026-07-24-kenya-shuts-down-claims-batuk-deal-has-collapsed", title: "Kenya shuts down claims BATUK deal has collapsed", publisher: "The Star (Kenya)", date: 2026-07-24, tier: 3}
+      - {url: "https://thestandard.ke/business/amp/africa/article/2001553978/batuk-training-resumes-as-kenya-hails-uk-defence-partnership", title: "BATUK training resumes as Kenya hails UK defence partnership", publisher: "The Standard (Kenya)", date: 2026-07-28, tier: 3}
+      - {url: "https://peopledaily.digital/news/batuk-relocates-laikipia-training-exercise-amid-defence-pact-delay", title: "BATUK relocates Laikipia training exercise amid defence pact delay", publisher: "People Daily (Kenya)", date: 2026-07, tier: 3}
+  - to: ARE
+    layer: action
+    type: agreement
+    summary: "Ruto and Sheikh Mohamed bin Zayed signed the Kenya-UAE Comprehensive Economic Partnership Agreement in Abu Dhabi on 14 January 2025 (Mudavadi and Al Zeyoudi as ministers), described by State House as the first of its kind the UAE has signed with a mainland African state; it aims to remove trade barriers and draw investment instead of new borrowing."
+    since: 2025-01-14
+    until: null
+    last_verified: 2026-10-16
+    confidence: A
+    sources:
+      - {url: "https://kntsite.president.go.ke/wp-content/uploads/KENYA-AND-UAE-SIGN-LANDMARK-COMPREHENSIVE-ECONOMIC-PARTNERSHIP-AGREEMENT-IN-ABU-DHABI-UNITED-ARAB-EMIRATES.pdf", title: "Kenya and UAE sign landmark Comprehensive Economic Partnership Agreement in Abu Dhabi", publisher: "State House Kenya", date: 2025-01-14, tier: 1}
+      - {url: "https://www.africanews.com/amp/2025/01/16/enhancing-trade-relations-uae-and-kenya-sign-economic-pact/", title: "Enhancing trade relations: UAE and Kenya sign economic pact", publisher: "Africanews", date: 2025-01-16, tier: 3}
+  - to: SAU
+    layer: action
+    type: agreement
+    summary: "A Labour Recruitment and Employment Agreement was reported signed in Riyadh on 5 July 2026 to protect Kenyan workers (said to number over 350,000 in the kingdom), replacing the domestic-worker agreement of 2016-17 that Kenya had been reviewing after abuse reports."
+    since: 2026-07-05
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.kenyanews.go.ke/?p=170669", title: "Kenya News Agency report on the Kenya-Saudi Arabia labour recruitment and employment agreement (July 2026)", publisher: "Kenya News Agency (state agency, official statement)", date: 2026-07-22, tier: 1}
+      - {url: "https://theeastafrican.co.ke/tea/business-tech/kenya-ethiopia-lobby-better-terms-domestic-workers-saudi-arabia-5529302", title: "Kenya, Ethiopia lobby for better terms for domestic workers in Saudi Arabia", publisher: "The EastAfrican", date: 2026, tier: 3}
+  - to: nsa-rsf
+    layer: action
+    type: agreement
+    summary: "Nairobi hosted talks between the RSF and allied groups, among them the SPLM-N of Abdelaziz al-Hilu, from 18 to 23 February 2025, which produced the political charter and transitional constitution of a parallel authority in RSF-held areas; Kenya says it hosted them 'without any ulterior motives' to help end the war."
+    since: 2025-02-18
+    until: 2025-02-23
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://sudantribune.com/article297696/", title: "Sudan recalls Kenya envoy, accuses Ruto of undermining ties", publisher: "Sudan Tribune", date: 2025-02-21, tier: 3}
+      - {url: "https://www.bbc.com/news/articles/ckg815277g5o", title: "Sudan bans all imports from Kenya after it hosted civil war rivals", publisher: "BBC", date: 2025-03-14, tier: 3}
+  - to: SDN
+    layer: action
+    type: incident
+    summary: "Sudan recalled its ambassador from Nairobi on 20 February 2025 and banned all Kenyan imports from 14 March 2025; Ruto claimed the ban had been reversed, the Sudanese embassy said it has not been revoked, and in August 2026 the Kenyan opposition leader Kalonzo Musyoka asked the Sudanese ambassador to lift it, with no decision reported. Mirror of the SDN row (sanction on Kenya), same sources."
+    since: 2025-02-20
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://sudantribune.com/article297696/", title: "Sudan recalls Kenya envoy, accuses Ruto of undermining ties", publisher: "Sudan Tribune", date: 2025-02-21, tier: 3}
+      - {url: "https://www.bbc.com/news/articles/ckg815277g5o", title: "Sudan bans all imports from Kenya after it hosted civil war rivals", publisher: "BBC", date: 2025-03-14, tier: 3}
+      - {url: "https://nation.africa/kenya/business/sudan-to-ruto-we-still-won-t-trade-with-you--4986820", title: "Sudan to Ruto: We still won't trade with you", publisher: "Nation (Kenya)", date: 2025, tier: 3}
+      - {url: "https://citizen.digital/article/kalonzo-urges-sudan-govt-to-lift-ban-on-kenyas-imports-n387843", title: "Kalonzo urges Sudan gov't to lift ban on Kenya's imports", publisher: "Citizen Digital (Kenya)", date: 2026-08, tier: 3}
+  - to: SSD
+    layer: action
+    type: agreement
+    summary: "Tumaini Initiative talks led by Kenya (chief mediator Gen. Lazarus Sumbeiywo) began in Nairobi on 9 May 2024, stalled after the SPLM-IO walked out, resumed in January 2025 and stalled again; Juba says the process is alive. The talks aim to bring the groups outside the 2018 agreement into it."
+    since: 2024-05-09
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.radiotamazuj.org/en/news/article/kenya-led-south-sudan-peace-talks-not-dead-makuei", title: "Kenya-led South Sudan peace talks 'not dead' - Makuei", publisher: "Radio Tamazuj", date: 2024-08-07, tier: 3}
+      - {url: "https://www.radiotamazuj.org/en/news/article/kenya-led-mediation-explains-delay-in-tumaini-peace-talks", title: "Kenya-led mediation explains delay in Tumaini peace talks", publisher: "Radio Tamazuj", date: 2025, tier: 3}
+  - to: SSD
+    layer: action
+    type: visit
+    summary: "After Riek Machar's detention in March 2025 Ruto said he would send a special envoy to Juba to de-escalate; he had discussed the arrest with Kiir by phone and urged restraint. Machar's trial is in Juba and was described as nearing completion in April 2026."
+    since: 2025-03-28
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://allafrica.com/stories/202503280031.html", title: "Sudan: Ruto to Send Special Envoy to Juba to De-Escalate Tensions Following Riek Machar's Detention", publisher: "AllAfrica", date: 2025-03-28, tier: 3}
+      - {url: "https://www.sudanspost.com/machar-trial-near-completion-says-makuei/", title: "Machar trial near completion, says Makuei", publisher: "Sudans Post", date: 2026-04, tier: 3}
+  - to: COD
+    layer: action
+    type: agreement
+    summary: "The EAC-SADC summit of February 2025 merged the Nairobi process (facilitated by former president Uhuru Kenyatta) with the Luanda process and asked for additional facilitators; Kenyatta complained that Nairobi had been sidelined. Washington (accords of 4 December 2025) and Doha (November 2025 framework) now carry the main tracks."
+    since: 2025-02
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://peopledaily.digital/news/eac-sadc-summit-directs-resumption-of-direct-negotiations-with-drc-m23-rebels-under-merged-luanda-nairobi-process", title: "EAC-SADC Summit directs resumption of direct negotiations with DRC M23 rebels under merged Luanda/Nairobi process", publisher: "People Daily (Kenya)", date: 2025-02, tier: 3}
+      - {url: "https://allafrica.com/stories/202502070033.html", title: "Kenyatta Defends 'Sidelined' Nairobi Peace Process, Urges Fresh Momentum", publisher: "AllAfrica", date: 2025-02-07, tier: 3}
+      - {url: "https://www.globalsecurity.org/military/library/news/2026/02/mil-260205-unnews02.htm", title: "M23 rebels: UN sees progress in talks but warns violence persists", publisher: "UN News (via GlobalSecurity.org)", date: 2026-02-05, tier: 1}
+  - to: TZA
+    layer: action
+    type: visit
+    summary: "Ruto addressed Tanzania's parliament in Dodoma on 5 May 2026, the second Kenyan head of state to do so after Moi in 2002, to reset trade and investment ties after Tanzania's bans on Kenyan poultry and cigarettes and its April 2026 ban on foreigners providing 14 mining services."
+    since: 2026-05-05
+    until: 2026-05-05
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.theeastafrican.co.ke/tea/news/east-africa/ruto-seeks-to-reset-kenya-tanzania-ties-5444186", title: "Ruto seeks to reset Kenya-Tanzania ties", publisher: "The EastAfrican", date: 2026-05-02, tier: 3}
+  - to: TZA
+    layer: action
+    type: incident
+    summary: "In May 2025 Tanzania detained and deported the Kenyan activist Boniface Mwangi and the Ugandan Agather Atuhaire, who had gone to observe the treason case of Tundu Lissu (Mwangi says he was tortured), and turned back other Kenyans (Martha Karua, Willy Mutunga, Hanifa Adan). In the October 2025 election violence at least 518 people were killed in Tanzania, several of them Kenyans, according to The EastAfrican; no Kenyan official reaction is recorded in the sources read."
+    since: 2025-05
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://nation.africa/africa/news/tanzania-deports-foreign-activists-supporting-detained-opposition-leader-tundu-lissu-5049342", title: "Tanzania deports foreign activists supporting detained opposition leader Tundu Lissu", publisher: "Nation (Kenya)", date: 2025-05, tier: 3}
+      - {url: "https://www.thestandard.ke/business/amp/national/article/2001519848/boniface-mwangi-recounts-torture-deportation-by-tanzanian-authorities", title: "Boniface Mwangi recounts torture, deportation by Tanzanian authorities", publisher: "The Standard (Kenya)", date: 2025-05, tier: 3}
+      - {url: "https://www.theeastafrican.co.ke/tea/news/east-africa/ruto-seeks-to-reset-kenya-tanzania-ties-5444186", title: "Ruto seeks to reset Kenya-Tanzania ties", publisher: "The EastAfrican", date: 2026-05-02, tier: 3}
+  - to: UGA
+    layer: action
+    type: agreement
+    summary: "Museveni's state visit to Nairobi, July 2025: Ruto and Museveni signed eight memoranda of understanding on trade and cooperation. Mirror of the UGA row, same Citizen Digital source."
+    since: 2025-07
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://citizen.digital/article/ruto-affirms-strong-ties-with-uganda-as-he-signs-8-mous-with-museveni-n367178", title: "Ruto affirms strong ties with Uganda as he signs 8 MoUs with Museveni", publisher: "Citizen Digital (Kenya)", date: 2025-07, tier: 3}
+  - to: UGA
+    layer: action
+    type: incident
+    summary: "The Ugandan opposition leader Kizza Besigye was last seen at an apartment block in Nairobi on 16 November 2024 and surfaced in a military jail in Kampala on 20 November; a Kenyan Foreign Ministry official called it an abduction not sanctioned by Kenya and promised an inquiry, Kampala denied involvement and the US State Department's Africa bureau asked for clarity. No outcome of the Kenyan inquiry was found."
+    since: 2024-11-16
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.africanews.com/amp/2024/11/21/kenya-investigates-alleged-abduction-in-nairobi-of-uganda-opposition-figure/", title: "Kenya investigates alleged abduction in Nairobi of Uganda opposition figure", publisher: "Africanews", date: 2024-11-21, tier: 3}
+      - {url: "https://capitalfm.africa/us-demands-answers-on-besigyes-reported-abduction-in-nairobi/", title: "US demands answers on Besigye's reported abduction in Nairobi", publisher: "Capital FM (Kenya)", date: 2024-11, tier: 3}
+  - to: RUS
+    layer: action
+    type: agreement
+    summary: "On 16 March 2026 Mudavadi and Lavrov agreed in Moscow that Kenyans would no longer be eligible to enlist through the Russian Ministry of Defence, after a joint intelligence and police report to Parliament (February 2026) put the number of Kenyans recruited at over 1,000 (about 200 had been admitted in December); Lavrov said they signed voluntarily; consular help for those under contract was promised, with no word on compensation or repatriation. UN votes on Ukraine are in the dataset."
+    since: 2026-03-16
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2026/03/16/kenya-and-russia-agree-no-kenyans-will-be-recruited-for-ukraine-war", title: "Kenya and Russia agree no Kenyans will be recruited for Ukraine war", publisher: "Al Jazeera", date: 2026-03-16, tier: 3}
+      - {url: "https://standardmedia.co.ke/business/national/article/2001543198/russia-agrees-to-stop-recruiting-kenyans-in-the-military-amid-war-against-ukraine", title: "Russia agrees to stop recruiting Kenyans in the military amid war against Ukraine", publisher: "The Standard (Kenya)", date: 2026-03, tier: 3}
+  - to: IND
+    layer: action
+    type: incident
+    summary: "On 21 November 2024 Ruto cancelled the Adani deals for a 30-year concession at Jomo Kenyatta airport (USD 750m terminal build-out) and a KETRACO power line (about KSh 355bn together) a day after Adani's indictment in the US, citing information from 'investigative agencies and partner nations'; the Kenya Airports Authority told the High Court in February 2026 that the cancellation letter was filed."
+    since: 2024-11-21
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://theeastafrican.co.ke/tea/business-tech/president-ruto-orders-cancellation-of-adani-deals-4831460", title: "Kenya's President Ruto orders cancellation of Adani deals", publisher: "The EastAfrican", date: 2024-11-21, tier: 3}
+      - {url: "https://www.citizen.digital/news/inside-the-ksh355b-cancelled-adani-deals-for-jkia-and-ketraco-n353374", title: "Inside the Ksh.355B cancelled Adani deals for JKIA and KETRACO", publisher: "Citizen Digital (Kenya)", date: 2024-11, tier: 3}
+      - {url: "https://thestandard.ke/business/amp/national/article/2001541640/kaa-confirms-cancellation-of-sh230bn-jkia-adani-deal", title: "KAA confirms cancellation of Sh230bn JKIA-Adani deal", publisher: "The Standard (Kenya)", date: 2026-02, tier: 3}
+  - to: ISR
+    layer: action
+    type: visit
+    summary: "Mudavadi and the Israeli ambassador Gideon Behar discussed cooperation in geothermal energy, climate action, food security, defence and technology in Nairobi (the Kenyan foreign ministry release is undated in our reading; a secondary summary puts it in February 2026); in September 2025 Ruto told the UN General Assembly that Kenya has recognised Palestinian statehood since 1989."
+    since: 2026-02
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.mfa.go.ke/advancing-kenya-israel-relations", title: "Advancing Kenya-Israel relations", publisher: "Ministry of Foreign and Diaspora Affairs (Kenya)", date: 2026, tier: 1}
+      - {url: "https://citizen.digital/article/ruto-acknowledges-palestinian-statehood-commits-to-support-peace-talks-n370153", title: "Ruto acknowledges Palestinian statehood, commits to support peace talks", publisher: "Citizen Digital (Kenya)", date: 2025-09, tier: 3}
+  - to: MAR
+    layer: action
+    type: agreement
+    summary: "Kenya declared its support for Morocco's sovereignty over Western Sahara in April 2026 as the two countries signed 11 agreements in Nairobi (mirror of the MAR card, same source)."
+    since: 2026-04
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://thekenyatimes.com/africa/kenya-morocco-sign-deals/", title: "Kenya Supports Morocco's Sovereignty as the Two Countries Sign 11 Deals in Nairobi", publisher: "The Kenya Times", date: 2026-04-09, tier: 3}
+  - to: ETH
+    layer: action
+    type: agreement
+    summary: "Kenya and Ethiopia committed in 2023 to the LAPSSET corridor and the use of Lamu port; Ruto said in February 2025 that Ethiopia would route imports through Lamu (first three berths complete); the first Ethiopian cargo, 60,000 tonnes of fertiliser, docked in 2024. Mirror of the ETH row, same sources."
+    since: 2025-02-28
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://capitalfm.africa/ethiopia-to-use-lamu-port-to-move-imports-president-ruto-says/", title: "Ethiopia to use Lamu port to move imports, President Ruto says", publisher: "Capital FM (Kenya)", date: 2025-02-28, tier: 3}
+      - {url: "https://www.the-star.co.ke/news/world/2023-08-16-ethiopia-affirms-use-of-lamu-port-commits-to-lapsset", title: "Ethiopia affirms use of Lamu port, commits to LAPSSET", publisher: "The Star (Kenya)", date: 2023-08-16, tier: 3}
+  - to: ETH
+    layer: action
+    type: visit
+    summary: "Ruto attended the inauguration of the Grand Ethiopian Renaissance Dam in September 2025 with the presidents of Djibouti, South Sudan and Somalia, said no country should be denied the chance to unlock such a resource, called it 'a living example of regional integration' and said Kenya was ready to sign an additional power purchase agreement for spare GERD output; Kenya took no public position against Egypt."
+    since: 2025-09-09
+    until: 2025-09-09
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://allafrica.com/stories/202509100094.html", title: "Ethiopia: No Country Should Be Denied Opportunity to Unlock Huge Resource Like GERD - Pres. Ruto", publisher: "AllAfrica", date: 2025-09-10, tier: 3}
+      - {url: "https://www.dawan.africa/news/ethiopia-inaugurates-grand-ethiopian-renaissance-dam", title: "Ethiopia inaugurates Grand Ethiopian Renaissance Dam", publisher: "Dawan Africa", date: 2025-09, tier: 3}
+  - to: SOM
+    layer: action
+    type: visit
+    summary: "Hassan Sheikh Mohamud met Ruto at Narok in June 2026 over AUSSOM funding and Somalia's political crisis, after Ruto's return from the G7; in October 2024 the two presidents had endorsed the new mission in a joint statement; on 27 December 2025 Ruto and the leaders of Uganda, Tanzania and Djibouti told Hassan Sheikh by phone that they back Somalia's unity after Israel recognised Somaliland. Mirror of the SOM row, same sources."
+    since: 2026-06
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://allafrica.com/stories/202606220511.html", title: "Kenya: Somalia's President Holds Talks With Kenya's Ruto Amid Aussom Funding Concerns", publisher: "AllAfrica", date: 2026-06-22, tier: 3}
+      - {url: "https://capitalfm.africa/kenya-somalia-endorse-new-aussom-mission-set-to-begin-in-2025/", title: "Kenya, Somalia endorse new AUSSOM mission set to begin in 2025", publisher: "Capital FM (Kenya)", date: 2024-10, tier: 3}
+      - {url: "https://www.kenyans.co.ke/news/119386-ruto-holds-talks-somali-president-amid-somaliland-dispute", title: "Ruto Holds Talks With Somalia President Amid Somaliland Dispute", publisher: "Kenyans.co.ke", date: 2025-12-27, tier: 3}
+  - to: org-un
+    layer: action
+    type: agreement
+    summary: "Nairobi hosts the UN Environment Programme, UN-Habitat and 23 UN agencies; under the UN80 cost-cutting reform the global offices of UNICEF, UNFPA and UN Women are to move to Nairobi (Mudavadi confirmed the decision in February 2025 after talks with the President of the 79th General Assembly), though the UN said in August 2025 that scope and timing were not final."
+    since: 2025-02
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.developmentaid.org/news-stream/post/195484/nairobi-to-host-three-new-global-un-offices", title: "Nairobi to host three new global UN offices", publisher: "DevelopmentAid", date: 2025, tier: 3}
+      - {url: "https://www.aljazeera.com/features/2025/8/20/as-un-agencies-mull-kenya-move-some-fear-exclusion-from-nairobis-growth", title: "As UN agencies mull Kenya move, some fear exclusion from Nairobi's growth", publisher: "Al Jazeera", date: 2025-08-20, tier: 3}
