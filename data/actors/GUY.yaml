@@ -9,6 +9,47 @@ coords:
 seat: Georgetown
 regions:
 - world
-card: stub
+card: full
 tier: minor
+last_verified: 2026-10-16
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Keep the 1899 arbitral line and have the ICJ confirm it. Venezuela claims the Essequibo and rejects the 1899 award. Guyana filed at the ICJ on 29 March 2018, and the merits hearings were held 4-11 May 2026; the ICJ page shows no judgment date yet, and Guyana's government expects a ruling as early as November 2026."
+    confidence: B
+    sources:
+    - {url: "https://www.icj-cij.org/case/171", title: "Arbitral Award of 3 October 1899 (Guyana v. Venezuela)", publisher: "International Court of Justice", date: 2026-05-11, tier: 1}
+    - {url: "https://oilnow.gy/featured/guyana-government-expects-world-court-ruling-as-early-as-november-2026-in-essequibo-border-case/", title: "Guyana government expects world court ruling as early as November 2026 in Essequibo border case", publisher: "OilNOW", date: 2026, tier: 3}
+  - rank: 2
+    text: "Turn the oil windfall into a fund that pays for development at a steady pace. The sovereign wealth fund was set up in 2019 and holds all oil revenue; it lets the government draw money at a steady rate. Reuters calculates Guyana's 2026 oil revenue at about USD 4.3bn at USD 100 a barrel, 67% above last year."
+    confidence: C
+    sources:
+    - {url: "https://boereport.com/2026/05/30/tiny-guyana-poised-for-big-iran-oil-gains-and-growth-strains/amp/", title: "Tiny Guyana poised for big Iran oil gains and growth strains", publisher: "Reuters (republished by BOE Report)", date: 2026-05-30, tier: 3}
+  means:
+  - text: "The ICJ as the legal lever. Guyana takes the border to the court rather than to force. The court indicated provisional measures on 1 December 2023 against changes on the ground and modified its order on 1 May 2025, after Guyana's second request of 6 March 2025."
+    confidence: B
+    sources:
+    - {url: "https://www.icj-cij.org/case/171", title: "Arbitral Award of 3 October 1899 (Guyana v. Venezuela)", publisher: "International Court of Justice", date: 2026-05-11, tier: 1}
+  - text: "Oil money held in a fund. Output is over 900,000 barrels a day after seven years; the fund holds all oil revenue, and Guyana's GDP more than quadrupled to USD 27.5bn between 2019 and 2024 (World Bank figure, as cited by Reuters)."
+    confidence: C
+    sources:
+    - {url: "https://boereport.com/2026/05/30/tiny-guyana-poised-for-big-iran-oil-gains-and-growth-strains/amp/", title: "Tiny Guyana poised for big Iran oil gains and growth strains", publisher: "Reuters (republished by BOE Report)", date: 2026-05-30, tier: 3}
+  constraints:
+  - text: "The operator takes the first oil. An ExxonMobil-led consortium controls all of Guyana's oil production and takes 75% of it to recover costs; profit oil to the state is 12.5% now and is expected to rise to 50% once cost recovery is complete (Exxon has said this could happen in 2026)."
+    confidence: C
+    sources:
+    - {url: "https://boereport.com/2026/05/30/tiny-guyana-poised-for-big-iran-oil-gains-and-growth-strains/amp/", title: "Tiny Guyana poised for big Iran oil gains and growth strains", publisher: "Reuters (republished by BOE Report)", date: 2026-05-30, tier: 3}
+  - text: "The claim is a state policy in Caracas. Venezuela's 2023 referendum (3 December 2023) asked about a Guayana Esequiba state, and a March 2024 law designated the Essequibo as a new Venezuelan state. In May 2026 Venezuela's leader, Delcy Rodriguez, was to defend the claim in person before the court."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/Guyana%E2%80%93Venezuela_territorial_dispute", title: "Guyana-Venezuela territorial dispute (index only; referendum and 2024 law are pointers, not corroborated)", publisher: "Wikipedia", date: 2026-10-16, tier: 4}
+    - {url: "https://wtop.com/national/2026/05/venezuelas-leader-to-defend-her-countrys-claim-over-mineral-rich-guyana-region-before-un-court/", title: "Venezuela's leader to defend her country's claim over mineral-rich Guyana region before UN court", publisher: "AP (via WTOP)", date: 2026-05, tier: 3}
+  paradoxes:
+  - text: "The oil that pays for the defence of the border is what makes the border worth contesting. Drilling licences granted in September 2023 after the offshore finds triggered the 2023 escalation; the windfall now rising 67% gives Guyana the means to fight the case and gives Venezuela the reason to press it."
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/Guyana%E2%80%93Venezuela_territorial_dispute", title: "Guyana-Venezuela territorial dispute (index only; the 2023 escalation is a pointer)", publisher: "Wikipedia", date: 2026-10-16, tier: 4}
+    - {url: "https://boereport.com/2026/05/30/tiny-guyana-poised-for-big-iran-oil-gains-and-growth-strains/amp/", title: "Tiny Guyana poised for big Iran oil gains and growth strains", publisher: "Reuters (republished by BOE Report)", date: 2026-05-30, tier: 3}
+  reading: |
+    Guyana runs its strategy on three levers: the 1899 line argued at The Hague, oil revenue held in a fund, and an Exxon-led operator that carries the output. Its weakness is that the same oil makes the disputed territory worth claiming, so each step of its growth is also a step in the Venezuelan dispute. Its strength is that a legal case backed by a fund is slow but durable, and the outside partners (Brazil, the United States, the UK, CARICOM, China) are not yet graded because their cards and sources are not written.

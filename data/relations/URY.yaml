@@ -1,0 +1,53 @@
+from: URY
+relations:
+  # ---------- objective ----------
+  - to: org-mercosur
+    layer: objective
+    type: influence_goal
+    summary: "Uruguay pushes the bloc to let members negotiate bilateral trade deals, which it needs for a free trade agreement with China. At the July 2022 Asuncion summit the disagreement ended with no joint declaration signed by all members. Argentina, Brazil and Paraguay opposed a separate deal."
+    since: 2022-07
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.bilaterals.org/uruguay-china-fta-negotiations?lang=en", title: "Uruguay-China FTA negotiations raise tensions over Mercosur's future (Dialogo Chino, reposted)", publisher: "bilaterals.org", date: 2022-07-28, tier: 3}
+      - {url: "https://www.thecattlesite.com/news/uruguay-china-agree-to-pursue-bilateral-trade-pact", title: "Uruguay, China agree to pursue bilateral trade pact", publisher: "The Cattle Site", date: 2023-11-24, tier: 3}
+
+  # ---------- action ----------
+  - to: org-eu
+    layer: action
+    type: agreement
+    summary: "Uruguay, as a Mercosur member, is a party to the EU-Mercosur partnership agreement signed on 17 January 2026; the interim trade part has applied provisionally since 1 May 2026, and Uruguay ratified on 26 February 2026. Entry into force still awaits Brussels and the EU court referral is open."
+    since: 2026-01-17
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.bilaterals.org/uruguay-and-argentina-ratify-the?lang=es", title: "Uruguay and Argentina ratify the EU-Mercosur deal, leaving entry into force to Brussels", publisher: "bilaterals.org", date: 2026-02, tier: 3}
+      - {url: "https://en.wikipedia.org/wiki/EU%E2%80%93Mercosur_Partnership_Agreement", title: "EU-Mercosur Partnership Agreement (Wikipedia, index only; reused from the BRA card)", publisher: "Wikipedia", date: 2026-05, tier: 4}
+
+  - to: CHN
+    layer: action
+    type: agreement
+    summary: "Uruguay and China upgraded their ties to a comprehensive strategic partnership in November 2023 and committed to a bilateral free trade agreement after a completed feasibility study. The Mercosur rules still bar the deal without the bloc."
+    since: 2023-11
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.thecattlesite.com/news/uruguay-china-agree-to-pursue-bilateral-trade-pact", title: "Uruguay, China agree to pursue bilateral trade pact (reporting a Reuters story of 24 November 2023)", publisher: "The Cattle Site", date: 2023-11-24, tier: 3}
+
+  # ---------- dependency ----------
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    summary: "China took about 27% of Uruguay's exports in 2022, two-thirds of them beef. Earlier 2021 figures put China at 28% (US$2.7 billion of US$9.8 billion), with beef at 45% of total exports."
+    value: 0.27
+    unit: share_of_exports
+    since: 2022
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.thecattlesite.com/news/uruguay-china-agree-to-pursue-bilateral-trade-pact", title: "Uruguay, China agree to pursue bilateral trade pact (2022 share from UN Comtrade data, as reported)", publisher: "The Cattle Site", date: 2023-11-24, tier: 3}
+      - {url: "https://www.bilaterals.org/uruguay-china-fta-negotiations?lang=en", title: "Uruguay-China FTA negotiations raise tensions over Mercosur's future (Dialogo Chino, 2021 figures)", publisher: "bilaterals.org", date: 2022-07-28, tier: 3}

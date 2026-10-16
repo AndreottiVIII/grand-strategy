@@ -1,0 +1,62 @@
+from: BOL
+relations:
+  # ---------- objective ----------
+  - to: CHL
+    layer: objective
+    type: territorial_claim
+    summary: "Bolivia seeks sovereign access to the Pacific Ocean from Chile. The ICJ found on 1 Oct 2018 (12 votes to 3) that Chile has no obligation to negotiate it; the claim itself is older and is not resolved in law."
+    since: '2018-10-01'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: A
+    sources:
+      - {url: "https://www.icj-cij.org/node/105707", title: "Obligation to Negotiate Access to the Pacific Ocean (Bolivia v. Chile), Judgment of 1 October 2018", publisher: "International Court of Justice", date: "2018-10-01", tier: 1}
+
+  # ---------- action ----------
+  - to: CHL
+    layer: action
+    type: agreement
+    summary: "Chile, Argentina, Peru and Bolivia signed a joint declaration on strategic minerals in Santiago on 28 Aug 2026, focused on copper and lithium; mining authorities signed. Mirrored from the Chilean card; the source is the same."
+    since: '2026-08-28'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://es.euronews.com/2026/08/28/peru-argentina-chile-y-bolivia-unen-fuerzas-para-ganar-peso-en-el-mercado-de-minerales-est", title: "Peru, Argentina, Chile and Bolivia join forces to gain weight in the minerals market", title_original: "Sudamérica se mueve por el litio y el cobre: Chile, Argentina, Bolivia y Perú firman un acuerdo", publisher: "Euronews", date: "2026-08-28", tier: 3, lang: es}
+
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "Paz and US Deputy Secretary of State Christopher Landau announced the normalisation of diplomatic relations cut in 2008, with an exchange of ambassadors to follow. The DEA's return was announced by the new drug czar; not confirmed as implemented in this pass."
+    since: '2025-11'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://batimes.com.ar/news/latin-america/bolivia-to-restore-us-ties-cut-nearly-two-decades-ago-says-paz.phtml", title: "Bolivia to restore US ties cut nearly two decades ago, says Paz", publisher: "Buenos Aires Times", date: "2025-10", tier: 3}
+      - {url: "https://www.diariodepernambuco.com.br/amp/mundo/2025/11/11700059-eua-e-bolivia-anunciam-normalizacao-da-relacao-diplomatica-apos-quase-duas-decadas.html", title: "US and Bolivia announce normalisation of diplomatic relations after almost two decades", title_original: "EUA e Bolívia anunciam normalização da relação diplomática após quase duas décadas", publisher: "Diario de Pernambuco", date: "2025-11", tier: 3, lang: pt}
+
+  - to: RUS
+    layer: action
+    type: agreement
+    summary: "The Uranium One lithium project, linked to the state company YLB, awaits congressional approval; Russia's ambassador said in February 2025 that Moscow expected approval soon. Under review by the Paz government since November 2025."
+    since: '2025-02'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.mining.com/web/bolivia-is-rethinking-lithium-deals-with-china-russia-in-us-pivot/", title: "Bolivia is rethinking lithium deals with China, Russia in US pivot", publisher: "Mining.com", date: "2025-11-07", tier: 3}
+
+  # ---------- dependency ----------
+  - to: CHN
+    layer: dependency
+    type: investment
+    value: 1.4
+    unit: usd_bn_contract
+    summary: "The 2023 lithium contract with CATL, worth USD 1.4bn, is under the Paz government's review and has not been approved by the legislature, which had blocked earlier agreements. The value is the contract's, not a share of Bolivian income or exports."
+    since: '2023'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.mining.com/web/bolivia-is-rethinking-lithium-deals-with-china-russia-in-us-pivot/", title: "Bolivia is rethinking lithium deals with China, Russia in US pivot", publisher: "Mining.com", date: "2025-11-07", tier: 3}

@@ -8,7 +8,54 @@ coords:
 - -25.28
 seat: Asunción
 regions:
-- world
-card: stub
+- south-america
+card: full
 tier: minor
+last_verified: 2026-10-16
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the tie with the Republic of China (Taiwan), the only South American state on Taipei's side, and show it to Taipei: President Santiago Peña made a state visit from 7 May 2026, received with a military welcome and a sit-down with President Lai, and called Taiwan a 'fundamental partner'."
+      confidence: B
+      sources:
+        - {url: "https://www.arabnews.pk/node/2642768", title: "Taiwan welcomes Paraguay leader as China applies diplomatic pressure", publisher: "Arab News (AP)", date: 2026-05-08, tier: 3}
+        - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Paraguay", title: "Foreign relations of Paraguay (index: Paraguay recognises the Republic of China, not the PRC)", publisher: "Wikipedia (index)", date: 2026-10-16, tier: 4}
+    - rank: 2
+      text: "Resist Beijing's pull to switch recognition. Beijing has been poaching Taiwan's diplomatic allies, leaving Taipei with 12, and the May 2026 visit came as China sought to lure Asunción away."
+      confidence: B
+      sources:
+        - {url: "https://www.arabnews.pk/node/2642768", title: "Taiwan welcomes Paraguay leader as China applies diplomatic pressure", publisher: "Arab News (AP)", date: 2026-05-08, tier: 3}
+        - {url: "https://abcnews.com/International/wireStory/paraguay-taiwan-reaffirm-ties-after-china-sought-lure-132772079", title: "Paraguay and Taiwan reaffirm ties after China sought to lure away another Taipei ally (title as cited in the Taiwan card; page not re-read)", publisher: "AP via ABC News", date: 2026-05, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "Recognition as a bargaining chip with Taipei: a military welcome, a meeting with President Lai and an honorary doctorate from National Taiwan University of Science and Technology in May 2026."
+      confidence: B
+      sources:
+        - {url: "https://www.arabnews.pk/node/2642768", title: "Taiwan welcomes Paraguay leader as China applies diplomatic pressure", publisher: "Arab News (AP)", date: 2026-05-08, tier: 3}
+    - domain: military
+      text: "Security cooperation on the Triple Frontier: Paraguay and the United States have alleged Hezbollah fundraising in Ciudad del Este since 2002, the security file the two states share."
+      confidence: C
+      sources:
+        - {url: "http://news.bbc.co.uk/2/hi/americas/2248487.stm", title: "Frontier in terror spotlight (Paraguayan allegations about Hezbollah in the Triple Frontier; no terrorism conviction)", publisher: "BBC News", date: 2002, tier: 3}
+
+  constraints:
+    - text: "Regional isolation: with Taiwan's ties, Paraguay is the only South American state on Taipei's side, and it has no regional partner to share the cost of that position (our reading, C; the 'only South American ally' fact is AP's)."
+      confidence: C
+      sources:
+        - {url: "https://www.arabnews.pk/node/2642768", title: "Taiwan welcomes Paraguay leader as China applies diplomatic pressure", publisher: "Arab News (AP)", date: 2026-05-08, tier: 3}
+    - text: "Evidence limit on the security line: the Triple Frontier claims have run since 2002 and the BBC notes no terrorism conviction, so Asunción's security case rests on allegations, not judgements."
+      confidence: C
+      sources:
+        - {url: "http://news.bbc.co.uk/2/hi/americas/2248487.stm", title: "Frontier in terror spotlight (Paraguayan allegations about Hezbollah in the Triple Frontier; no terrorism conviction)", publisher: "BBC News", date: 2002, tier: 3}
+
+  paradoxes:
+    - text: "The tie that earns Paraguay Taipei's visits and its place in Taiwan's diplomacy is also what isolates it in the region: its main diplomatic currency is its main regional cost. Our reading (C); the sources read give the recognition and the pressure, not the Mercosur or trade figures."
+      confidence: C
+      sources:
+        - {url: "https://www.arabnews.pk/node/2642768", title: "Taiwan welcomes Paraguay leader as China applies diplomatic pressure", publisher: "Arab News (AP)", date: 2026-05-08, tier: 3}
+
+  reading: |
+    Paraguay plays one card: recognition of Taipei, the only South American state that still holds it, which buys a state visit with military honours and a place in Taiwan's diplomacy. Beijing's pressure to switch is the constant test of that card, and the Triple Frontier allegations, which Paraguay shares with Washington, are its second security file. The card is thin: the sources read cover the Taiwan tie and the security allegations, not Brazil, Argentina, the United States, Israel, the EU, soy, beef or hydropower, which stay open until read.

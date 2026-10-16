@@ -1,0 +1,24 @@
+from: PRY
+relations:
+  # ---------- action ----------
+  - to: TWN
+    layer: action
+    type: visit
+    summary: "President Santiago Peña made a state visit to Taipei from 7 May 2026, with a military welcome and a meeting with President Lai, and a meeting with the vice president and senior ministers. Mirrors the TWN row; the end date (10 May) is the TWN card's, the article gives four days without an end date."
+    since: 2026-05-07
+    until: 2026-05-10
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.arabnews.pk/node/2642768", title: "Taiwan welcomes Paraguay leader as China applies diplomatic pressure", publisher: "Arab News (AP)", date: 2026-05-08, tier: 3}
+
+  - to: nsa-hezbollah
+    layer: action
+    type: incident
+    summary: "Paraguay has alleged Hezbollah fundraising in Ciudad del Este, in the Triple Frontier, since 2002, together with the United States; the BBC notes no terrorism conviction. Mirrors the nsa-hezbollah row."
+    since: '2002'
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "http://news.bbc.co.uk/2/hi/americas/2248487.stm", title: "Frontier in terror spotlight (Paraguayan allegations about Hezbollah in the Triple Frontier; no terrorism conviction)", publisher: "BBC News", date: 2002, tier: 3}

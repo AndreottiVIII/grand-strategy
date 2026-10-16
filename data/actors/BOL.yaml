@@ -8,7 +8,68 @@ coords:
 - -19.05
 seat: Sucre
 regions:
-- world
-card: stub
+- south-america
+card: full
 tier: minor
+last_verified: 2026-10-16
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the state solvent in a fuel and dollar crisis: restore fuel supply and foreign credit by re-normalising relations with Washington (ambassadors, the DEA, a fuel channel), reversing the 2008 expulsions that defined the MAS era."
+      confidence: C
+      sources:
+        - {url: "https://batimes.com.ar/news/latin-america/bolivia-to-restore-us-ties-cut-nearly-two-decades-ago-says-paz.phtml", title: "Bolivia to restore US ties cut nearly two decades ago, says Paz", publisher: "Buenos Aires Times", date: "2025-10", tier: 3}
+        - {url: "https://www.diariodepernambuco.com.br/amp/mundo/2025/11/11700059-eua-e-bolivia-anunciam-normalizacao-da-relacao-diplomatica-apos-quase-duas-decadas.html", title: "US and Bolivia announce normalisation of diplomatic relations after almost two decades", title_original: "EUA e Bolívia anunciam normalização da relação diplomática após quase duas décadas", publisher: "Diario de Pernambuco", date: "2025-11", tier: 3, lang: pt}
+        - {url: "https://rpp.pe/mundo/latinoamerica/presidente-electo-de-bolivia-viajara-a-eeuu-para-solucionar-la-falta-de-combustible-noticia-1661033", title: "Bolivia's president-elect to travel to the US to solve the fuel shortage", title_original: "Presidente electo de Bolivia viajará a EE.UU. para solucionar la falta de combustible", publisher: "RPP", date: "2025", tier: 3, lang: es}
+    - rank: 2
+      text: "Turn lithium and gas into an export economy under a legal regime: certify the reserves, pass a lithium law, and review the Chinese and Russian contracts that Congress had blocked, keeping what can be salvaged."
+      confidence: C
+      sources:
+        - {url: "https://www.mining.com/web/bolivia-is-rethinking-lithium-deals-with-china-russia-in-us-pivot/", title: "Bolivia is rethinking lithium deals with China, Russia in US pivot", publisher: "Mining.com", date: "2025-11-07", tier: 3}
+        - {url: "https://balkangreenenergynews.com/germany-seeks-bolivias-lithium-as-project-jadar-in-serbia-stalls/", title: "Germany seeks Bolivia's lithium as Project Jadar in Serbia stalls", publisher: "Balkan Green Energy News", date: "2025-11", tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "Re-normalisation with the United States, announced by Paz and Deputy Secretary of State Christopher Landau in November 2025 with an exchange of ambassadors to follow; the DEA's return was announced by the new drug czar, not yet confirmed as implemented. Washington's public backing against the 2026 protests is the visible return."
+      confidence: C
+      sources:
+        - {url: "https://www.diariodepernambuco.com.br/amp/mundo/2025/11/11700059-eua-e-bolivia-anunciam-normalizacao-da-relacao-diplomatica-apos-quase-duas-decadas.html", title: "US and Bolivia announce normalisation of diplomatic relations after almost two decades", publisher: "Diario de Pernambuco", date: "2025-11", tier: 3, lang: pt}
+        - {url: "https://www.foxnews.com/world/us-shield-americas-condemn-ongoing-efforts-overthrow-bolivias-elected-president-unrest", title: "US, Shield of the Americas condemn ongoing efforts to overthrow Bolivia's elected president", publisher: "Fox News", date: "2026", tier: 3}
+    - domain: economic
+      text: "Lithium as the bargaining chip: the contracts with CATL (a 2023 deal worth USD 1.4bn) and with Uranium One, a Russian firm, are under review, neither approved by the legislature, and neither close to commercial production."
+      confidence: C
+      sources:
+        - {url: "https://www.mining.com/web/bolivia-is-rethinking-lithium-deals-with-china-russia-in-us-pivot/", title: "Bolivia is rethinking lithium deals with China, Russia in US pivot", publisher: "Mining.com", date: "2025-11-07", tier: 3}
+
+  constraints:
+    - text: "The fuel and dollar crisis: Bolivia needs US fuel and foreign loans now, which gives Washington leverage and limits what the lithium review can cancel without losing supply. Protests over the economic and fuel crisis in 2026 show the cost of the wait."
+      confidence: C
+      sources:
+        - {url: "https://www.montevideo.com.uy/Noticias/Bolivia-contacta-con-EE-UU-y-paises-vecinos-por-crisis-de-combustible-uc940452", title: "Bolivia contacts US and neighbouring countries over fuel crisis", publisher: "Montevideo Portal", date: "2026", tier: 3, lang: es}
+        - {url: "https://www.foxnews.com/world/us-shield-americas-condemn-ongoing-efforts-overthrow-bolivias-elected-president-unrest", title: "US, Shield of the Americas condemn ongoing efforts to overthrow Bolivia's elected president", publisher: "Fox News", date: "2026", tier: 3}
+    - text: "Closed in law: the ICJ held on 1 Oct 2018 (12 votes to 3) that Chile has no obligation to negotiate sovereign access to the Pacific, so the sea route is shut in law; the 1 Dec 2022 Silala judgment did not settle the status of the river waters. Congress has blocked earlier China and Russia lithium agreements, so any new deal needs a legislature that has already said no once."
+      confidence: B
+      sources:
+        - {url: "https://www.icj-cij.org/node/105707", title: "Obligation to Negotiate Access to the Pacific Ocean (Bolivia v. Chile), Judgment of 1 October 2018", publisher: "International Court of Justice", date: "2018-10-01", tier: 1}
+        - {url: "https://api.icj-cij.org/sites/default/files/case-related/162/162-20221201-jud-01-00-bi.pdf", title: "Dispute over the Status and Use of the Waters of the Silala (Chile v. Bolivia), Judgment of 1 December 2022", publisher: "International Court of Justice", date: "2022-12-01", tier: 1}
+        - {url: "https://www.mining.com/web/bolivia-is-rethinking-lithium-deals-with-china-russia-in-us-pivot/", title: "Bolivia is rethinking lithium deals with China, Russia in US pivot", publisher: "Mining.com", date: "2025-11-07", tier: 3}
+
+  paradoxes:
+    - text: "The pivot to Washington for fuel and dollars reverses the 2008 expulsions that defined the MAS sovereignty story, while the lithium review that must attract capital means renegotiating the Chinese and Russian contracts that the same government is leaving behind."
+      confidence: C
+      sources:
+        - {url: "https://batimes.com.ar/news/latin-america/bolivia-to-restore-us-ties-cut-nearly-two-decades-ago-says-paz.phtml", title: "Bolivia to restore US ties cut nearly two decades ago, says Paz", publisher: "Buenos Aires Times", date: "2025-10", tier: 3}
+        - {url: "https://www.mining.com/web/bolivia-is-rethinking-lithium-deals-with-china-russia-in-us-pivot/", title: "Bolivia is rethinking lithium deals with China, Russia in US pivot", publisher: "Mining.com", date: "2025-11-07", tier: 3}
+
+  reading: |
+    Rodrigo Paz, in office since 8 November 2025, is trying to end the MAS era by buying
+    his way out of the fuel and dollar crisis: re-normalising relations with the United
+    States, reviewing the Chinese and Russian lithium contracts, and accepting a sea claim
+    that is closed in law, which keeps Chile a rival rather than an enemy. The real
+    constraint is the balance sheet, not the alignment: the lithium and gas that could
+    repay the debt are slow to monetise, and Washington's fuel and loans come at the price
+    of a sovereignty signal that the country built carefully since 2008. Not written in
+    this pass: the 2025-26 terms with Argentina, Brazil, Peru (the Ilo port) and Iran (the
+    2023 agreement), for which no source was read.

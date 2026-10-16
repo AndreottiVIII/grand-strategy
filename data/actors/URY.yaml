@@ -9,6 +9,54 @@ coords:
 seat: Montevideo
 regions:
 - world
-card: stub
+- south-america
+card: full
 tier: minor
+last_verified: 2026-10-16
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Hold the EU-Mercosur partnership on course: Uruguay ratified it on 26 February 2026, and the interim trade part has applied provisionally since 1 May 2026 with Argentina and Uruguay as the ratifying members. The deal is the market Montevideo needs beyond China and the one Brazil and Argentina share with it."
+    confidence: C
+    sources:
+    - {url: "https://www.bilaterals.org/uruguay-and-argentina-ratify-the?lang=es", title: "Uruguay and Argentina ratify the EU-Mercosur deal, leaving entry into force to Brussels", publisher: "bilaterals.org", date: 2026-02, tier: 3}
+    - {url: "https://en.wikipedia.org/wiki/EU%E2%80%93Mercosur_Partnership_Agreement", title: "EU-Mercosur Partnership Agreement (Wikipedia, index only; reused from the BRA card)", publisher: "Wikipedia", date: 2026-05, tier: 4}
+  - rank: 2
+    text: "Sell beef and other goods to China on better terms: the government in 2023 sought a bilateral free trade agreement with Beijing, because Uruguayan beef faced a 12% tariff there against 0% for New Zealand. Orsi's own line on China was not read in this card; the sourced push is from the Lacalle Pou government, and its continuation under Orsi is our reading (C)."
+    confidence: C
+    sources:
+    - {url: "https://www.thecattlesite.com/news/uruguay-china-agree-to-pursue-bilateral-trade-pact", title: "Uruguay, China agree to pursue bilateral trade pact (reporting a Reuters story of 24 November 2023)", publisher: "The Cattle Site", date: 2023-11-24, tier: 3}
+    - {url: "https://www.bilaterals.org/uruguay-china-fta-negotiations?lang=en", title: "Uruguay-China FTA negotiations raise tensions over Mercosur's future (Dialogo Chino, reposted)", publisher: "bilaterals.org", date: 2022-07-28, tier: 3}
+
+  means:
+  - text: "Beef, soy and pulp as the export base. In 2021 Uruguay exported a record US$9.8 billion; beef was 45% of that, cellulose and timber 13%, soybeans 12%, and China took US$2.7 billion (28%). In 2022 China took 27% of Uruguay's exports, two-thirds of it beef (UN Comtrade, as reported by The Cattle Site)."
+    confidence: C
+    sources:
+    - {url: "https://www.bilaterals.org/uruguay-china-fta-negotiations?lang=en", title: "Uruguay-China FTA negotiations raise tensions over Mercosur's future (Dialogo Chino, 2021 figures)", publisher: "bilaterals.org", date: 2022-07-28, tier: 3}
+    - {url: "https://www.thecattlesite.com/news/uruguay-china-agree-to-pursue-bilateral-trade-pact", title: "Uruguay, China agree to pursue bilateral trade pact (2022 figures from UN Comtrade)", publisher: "The Cattle Site", date: 2023-11-24, tier: 3}
+  - text: "Mercosur membership as the frame for every trade move: Uruguay is a full member and pushes the bloc to let members negotiate bilateral deals, while the EU agreement is the bloc's shared gain. Membership is recorded from the Mercosur member list (dataset row, tier 1)."
+    confidence: C
+    sources:
+    - {url: "https://www.mercosur.int/en/about-mercosur/mercosur-countries/", title: "Mercosur - member states", publisher: "Mercosur", date: 2026-10-12, tier: 1}
+    - {url: "https://www.bilaterals.org/uruguay-china-fta-negotiations?lang=en", title: "Uruguay-China FTA negotiations raise tensions over Mercosur's future (Dialogo Chino, reposted)", publisher: "bilaterals.org", date: 2022-07-28, tier: 3}
+
+  constraints:
+  - text: "Mercosur rules: members may not negotiate separate trade deals without the bloc's endorsement, so the China FTA waits on the bloc. Argentina, Brazil and Paraguay opposed a Uruguay-China deal (2022 summit with no joint declaration; in November 2023 they warned of measures against Uruguay)."
+    sources:
+    - {url: "https://www.bilaterals.org/uruguay-china-fta-negotiations?lang=en", title: "Uruguay-China FTA negotiations raise tensions over Mercosur's future (Dialogo Chino, reposted)", publisher: "bilaterals.org", date: 2022-07-28, tier: 3}
+    - {url: "https://www.thecattlesite.com/news/uruguay-china-agree-to-pursue-bilateral-trade-pact", title: "Uruguay, China agree to pursue bilateral trade pact", publisher: "The Cattle Site", date: 2023-11-24, tier: 3}
+  - text: "Export concentration: three primary products (beef, cellulose, soy) carry most of the export income, and the largest single buyer, China, applies a 12% beef tariff that Australia and New Zealand, with their free trade agreements, do not pay in full (3.3% and 0%)."
+    sources:
+    - {url: "https://www.thecattlesite.com/news/uruguay-china-agree-to-pursue-bilateral-trade-pact", title: "Uruguay, China agree to pursue bilateral trade pact (tariff figures as reported)", publisher: "The Cattle Site", date: 2023-11-24, tier: 3}
+    - {url: "https://www.bilaterals.org/uruguay-china-fta-negotiations?lang=en", title: "Uruguay-China FTA negotiations raise tensions over Mercosur's future (Dialogo Chino, 2021 export shares)", publisher: "bilaterals.org", date: 2022-07-28, tier: 3}
+
+  paradoxes:
+  - text: "The China market is what pushes Montevideo against the bloc, and the bloc's larger members answer by opposing the China deal, which puts at risk the EU agreement the bloc gained together and which Uruguay needs as its second market."
+    sources:
+    - {url: "https://www.bilaterals.org/uruguay-china-fta-negotiations?lang=en", title: "Uruguay-China FTA negotiations raise tensions over Mercosur's future (Dialogo Chino, reposted)", publisher: "bilaterals.org", date: 2022-07-28, tier: 3}
+    - {url: "https://www.bilaterals.org/uruguay-and-argentina-ratify-the?lang=es", title: "Uruguay and Argentina ratify the EU-Mercosur deal, leaving entry into force to Brussels", publisher: "bilaterals.org", date: 2026-02, tier: 3}
+
+  reading: |
+    Uruguay is a small, open economy that sells beef, cellulose and soy mostly to China and depends on Mercosur for its legal frame and for the EU deal that the bloc signed together. Its strategy since 2022 has been to push the bloc towards flexibility so that it can sign its own China deal, and Argentina, Brazil and Paraguay have answered by opposing it. This card rests on tier 3 and 4 sources; the Orsi government's own line on China and on the United States was not read, and the US partner row is a gap logged in the JOURNAL.
