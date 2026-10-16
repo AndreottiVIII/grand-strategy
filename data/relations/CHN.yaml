@@ -169,7 +169,7 @@ relations:
   - to: RUS
     layer: alignment
     type: treaty
-    summary: "'Comprehensive strategic partnership of coordination for a new era', declared without limits or 'forbidden areas' on 4 Feb 2022; a trade and political alignment with no clause binding either side to the other's defence, no Chinese recognition of the annexations and no declared arms transfers."
+    summary: "'Comprehensive strategic partnership of coordination for a new era', declared without limits or 'forbidden areas' on 4 Feb 2022; a trade and political alignment that binds neither side to fight for the other, with no Chinese recognition of the annexations and no declared arms transfers."
     since: 2022-02-04
     until: null
     last_verified: 2026-10-16
@@ -180,7 +180,7 @@ relations:
   - to: PAK
     layer: alignment
     type: treaty
-    summary: "'All-weather strategic cooperative partnership' and 'ironclad friendship' (75 years of relations in 2026) without a defence treaty: the CPEC framework (2015) renewed as CPEC 2.0 by the joint statement of 26 May 2026 (Karakoram Highway, Gwadar, industry, agriculture, clean energy) with a Pakistani pledge on the security of Chinese nationals."
+    summary: "'All-weather strategic cooperative partnership' and 'ironclad friendship' (75 years of relations in 2026) without a treaty obliging either to fight for the other: the CPEC framework (2015) renewed as CPEC 2.0 by the joint statement of 26 May 2026 (Karakoram Highway, Gwadar, industry, agriculture, clean energy) with a Pakistani pledge on the safety of Chinese nationals."
     since: 2015-04-20
     until: null
     last_verified: 2026-10-16
@@ -192,7 +192,7 @@ relations:
   - to: IRN
     layer: alignment
     type: treaty
-    summary: "25-year comprehensive cooperation agreement (signed 27 Mar 2021), reaffirmed in full by Xi and Pezeshkian on 2 Sep 2025; an economic and political framework with no military clause."
+    summary: "25-year comprehensive cooperation agreement (signed 27 Mar 2021), reaffirmed in full by Xi and Pezeshkian on 2 Sep 2025; an economic and political framework that commits neither side to the other's protection in war, as the 2026 war showed."
     since: 2021-03-27
     until: null
     last_verified: 2026-10-16
@@ -202,7 +202,7 @@ relations:
   - to: KAZ
     layer: alignment
     type: treaty
-    summary: "Permanent comprehensive strategic partnership (2019) and the treaty of permanent good-neighbourliness and friendly cooperation signed by Xi with the five Central Asian presidents at the second China-Central Asia summit in Astana (17 Jun 2025); no defence commitment."
+    summary: "Permanent comprehensive strategic partnership (2019) and the treaty of permanent good-neighbourliness and friendly cooperation signed by Xi with the five Central Asian presidents at the second China-Central Asia summit in Astana (17 Jun 2025); it commits neither side to come to the other's aid in war."
     since: 2019-09-11
     until: null
     last_verified: 2026-10-16
@@ -517,6 +517,19 @@ relations:
     sources:
       - {url: "https://www.rfa.org/english/cambodia/2025/04/07/cambodia-china-ream-naval-base/", title: "Cambodia reopens naval base after Chinese upgrade", publisher: "Radio Free Asia", date: 2025-04-07, tier: 3}
       - {url: "https://sv7.thediplomat.com/2025/04/cambodia-china-open-new-facilities-at-ream-naval-base", title: "Cambodia, China open new facilities at Ream naval base", publisher: "The Diplomat", date: 2025-04, tier: 3}
+  - to: TJK
+    layer: dependency
+    type: military_presence
+    summary: "A Chinese security installation at Shaimak (Murghob district, Gorno-Badakhshan), near the Wakhan corridor, reported by OSW in 2019 and by Tajik officials quoted to the International Crisis Group, and denied as a 'base' by both governments; the interest it serves is the one Beijing states to Kabul and Dushanbe alike - the ETIM and the Afghan frontier, where three Chinese nationals were killed in November 2025. Unconfirmed, hence C."
+    since: 2016
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    value: 1
+    unit: reported_security_installation_(shaimak)
+    sources:
+      - {url: "https://www.osw.waw.pl/en/publikacje/analyses/2019-02-27/chinas-military-presence-tajikistan", title: "China's military presence in Tajikistan", publisher: "OSW (Centre for Eastern Studies)", date: 2019-02-27, tier: 2}
+      - {url: "https://www.rferl.org/amp/tajikistan-afghanistan-border-attack-chinese-nationals-death-gold-mining-taliban/33607228.html", title: "Three Chinese nationals killed in Afghan-Tajik border attack on gold mining camp", publisher: "RFE/RL", date: 2025-11, tier: 3}
   # ---------- action ----------
   - to: USA
     layer: action
@@ -797,3 +810,15 @@ relations:
       - {url: "https://www.mfa.gov.cn/eng/wjdt_665385/wshd_665389/202407/t20240723_11458788.html", title: "Palestinian factions sign Beijing Declaration on ending division and strengthening Palestinian national unity", publisher: "Ministry of Foreign Affairs of China (official statement)", date: 2024-07-23, tier: 1}
       - {url: "https://www.aljazeera.com/news/2024/7/23/palestinian-rivals-hamas-and-fatah-sign-unity-deal-brokered-by-china", title: "Palestinian rivals Hamas and Fatah sign unity deal brokered by China", publisher: "Al Jazeera", date: 2024-07-23, tier: 3}
       - {url: "https://apnews.com/article/china-abbas-palestinian-israel-saudi-dd55f1cc81b53cb00cb1d045bc239566", title: "China inks 'strategic partnership' with Palestinian Authority as it expands Middle East role", publisher: "Associated Press", date: 2023-06-14, tier: 3}
+  - to: KGZ
+    layer: action
+    type: agreement
+    summary: "Ceremonial start of the China-Kyrgyzstan-Uzbekistan railway at Tosh-Kutchu (Jalal-Abad) on 27 Dec 2024 with Japarov present: China builds its own section, Uzbekistan upgrades its own, a Kyrgyz-Chinese-Uzbek joint venture finances and builds the Kyrgyz section from July 2025 over six years (cost estimates USD 4.7-8bn); 17% built by August 2026, when Xi urged quality. The second land route to the west that does not cross Russia."
+    since: 2024-12-27
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://english.www.gov.cn/news/202412/27/content_WS676eabb1c6d0868f4e8ee51f.html", title: "China-Kyrgyzstan-Uzbekistan railway ceremonial start", publisher: "Government of China (official statement)", date: 2024-12-27, tier: 1}
+      - {url: "https://chinadailyhk.com/hk/article/601137", title: "China-Kyrgyzstan-Uzbekistan railway construction begins", publisher: "China Daily HK (state media)", date: 2024-12-27, tier: 3}
+      - {url: "https://www.kun.uz/en/news/2026/07/13/china-kyrgyzstan-uzbekistan-railway-project-enters-active-construction-phase-a7f659", title: "China-Kyrgyzstan-Uzbekistan railway project enters active construction phase", publisher: "Kun.uz", date: 2026-07-13, tier: 3}
