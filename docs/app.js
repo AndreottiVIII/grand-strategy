@@ -203,7 +203,7 @@ const STAMP = ((document.querySelector('script[src^="app.js"]') || {}).src || ""
       return;
     }
     if (!pov) {
-      el.innerHTML = `<h3>The world of today</h3><div class="row">Borders and flags as of ${data.generated}. Click a country that has a card to see the world as it sees it; ${fullActors.length} card${fullActors.length > 1 ? "s" : ""} so far: ${fullActors.map(a => a.name).join(", ")}.</div>`;
+      el.innerHTML = `<h3>The world of today</h3><div class="row">Borders and flags as of ${data.generated}. Click a country that has a card to see the world as it sees it; ${fullActors.length} card${fullActors.length > 1 ? "s" : ""} so far<span class="cardlist">: ${fullActors.map(a => a.name).join(", ")}</span>.</div>`;
       return;
     }
     if (lens === "votes") {
@@ -394,7 +394,7 @@ const STAMP = ((document.querySelector('script[src^="app.js"]') || {}).src || ""
       svg.selectAll(".frame-btn").classed("is-on", function () { return this.dataset.mode === mode; });
     }
     const ctl = svg.append("foreignObject").attr("x", 12).attr("y", 12).attr("width", 240).attr("height", 40);
-    ctl.attr("width", 560);
+    ctl.attr("width", Math.min(560, Math.max(200, (svg.node().getBoundingClientRect().width || 560) - 24))).attr("height", 80);
     ctl.append("xhtml:div").attr("class", "frame-ctl").html(pov
       ? `<button class="frame-btn" data-mode="near">Neighbourhood</button><button class="frame-btn" data-mode="world">World</button>` +
         `<span class="frame-gap"></span>` +
