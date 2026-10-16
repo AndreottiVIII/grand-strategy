@@ -1,5 +1,17 @@
 # Journal
 
+## 2026-10-16 · Saint Lucia (LCA) card, Flash: thin, two web calls, gaps logged
+
+Two web calls: the Wikipedia API for "Foreign relations of Saint Lucia" (wikitext: Taiwan relations from 7 May 1984 (13 January 1984 in the list), severed 29 August 1997 for the PRC, restored 30 April 2007 (1 May 2007 in the prose), embassy in Taipei 4 June 2015, the first in Asia; US relations since 11 June 1979 with drug transit as the lead's "tension"; UK relations since 22 February 1979 and the CARIFORUM-UK EPA; UNSC 940 backing on Haiti as a CARICOM member). The second call, the AP Saint Lucia hub, was refused by the fetch tool (apnews.com is not reachable from our agent), so no wire page was read.
+
+Written: the actor card, stub turned full (two objectives, one means, one constraint, one paradox, three-sentence reading; all C, the only source being Wikipedia, tier 4, plus the Commonwealth member list for the UK link); a relations file with two rows (TWN recognition since 30 April 2007, C; GBR CARIFORUM-UK EPA, C, since = the 1979 diplomatic-relations date because the signing date is not in the source). No stances file: a grade must cite a source that uses that reading, and Wikipedia does not carry "partner", so none was recorded. The build passes with `--skip-running`; LCA's relations file is validated only in an unskipped build, where no LCA error appears.
+
+Mirror: no stance in data/stances names LCA (grep "toward: LCA": none), so nothing is mirrored; TWN holds none toward LCA. The dataset rows (recognition of Kosovo 2011 and Palestine 2015, the LCA-to-TWN row with since null, Commonwealth and OAS memberships) are untouched.
+
+Gaps (brief items with no source read): the December 2025 election and whether Pierre was re-elected (not in the Wikipedia text, no wire page); the United States' 2025 posture and citizenship-by-investment pressure (absent from the text); China's current posture (only the 1997 and 2007 switches are read; no grade); CARICOM and the OECS as seats (not in the text); tourism and the citizenship-by-investment scheme as the economy (no figure, so no dependency rows); the homicide rate and hurricanes as constraints (no source). Next step: a sourced pass with a fresh budget: the Saint Lucia government's foreign ministry, the US State Department page, and a Reuters or AP story on the 2025 election, read directly. Then write the three stances (TWN, GBR, USA) at C with the bond named as our reading.
+
+Note: `data/queue.yaml` lists LCA as `running` (haiku, updated 2026-10-16 14:56) and the build skips its relations file for that reason. If another agent holds LCA, it should pick up these gaps; if not, the queue marker is stale and should be reset.
+
 ## 2026-10-16 · Belize (BLZ) card, Flash minor: three web calls, gaps logged
 
 Three web calls: the Wikipedia API (search generator on the dispute, extracts and external links in one call), the ICJ case page 177 (redirected to http://www.icj-cij.org/case/177, not followed: the budget was spent), and one search summary on the 2025 election and the 2021 debt-for-nature swap. No Reuters or AP page was reached: the search tool does not return them here, as the ATG entry also found.
