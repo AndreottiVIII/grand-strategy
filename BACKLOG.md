@@ -13,6 +13,7 @@ Ideas and deferred steps, with the date they were parked. Davide: "keep them in 
 like every improving idea that comes to you".
 
 - 2026-10-13 · **Thin minor cards to thicken later**: Bahrain has no stance toward Saudi Arabia (its patron since 2011) or the UK base; the Haiku budget ran out. Revisit with the Gulf reverse pass.
+- 2026-10-16 · **One-sided readings review** (Davide): before the atlas is shown as complete, list every pair where one side is hand-written and the other holds only a provisional reciprocal or nothing, and review them with him. Tool ready: `python tools/onesided.py` (toward full cards first).
 - 2026-10-14 · **Derived treaty allies are not real allies** (Davide, looking at Kazakhstan -> Armenia/Belarus "Treaty ally: both members of CSTO"): the dataset floor grades co-members of NATO/EU/CSTO "ally" and paints them green like a written ally. Options: a separate grade `treaty_ally` shown paler, or a lower weight for derived stances in every computed page (seams already ignore them; theatres and gatherings count them). CSTO is the worst case (Armenia frozen, Kazakhstan hedging).
 - 2026-10-13 · **Great-state autism index** (Luttwak on China): per big actor, the share of counterparts
   that grade it hostile or cooling while it grades them partner or ally. Zero research; best once
