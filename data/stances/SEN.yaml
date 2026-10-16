@@ -1,49 +1,115 @@
 actor: SEN
 stances:
-  - toward: FRA
-    grade: partner
-    trend: cooling
-    bond: grievance
-    since: '2024-12-31'
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "Faye announced in December 2024 the end of all foreign military presence from 2025 (RFI), and the Camp Geille base and Dakar airfield were handed over on 17 July 2025 (AFP via Khaleej Times). Trend cooling from the end of the bases. Partner is our reading: transactional, with no alignment; no source uses the word (C). Bond grievance is our reading: the colonial past is the wound behind the exit, but no source in this pass names the Thiaroye memory or a French apology (gap). The 2025 reset and French aid and trade figures are not verified. The FRA card has no stance toward SEN, so France's side is a provisional reciprocal."
-    sources:
-      - {url: "https://www.rfi.fr/fr/afrique/20241231-s%C3%A9n%C3%A9gal-le-pr%C3%A9sident-bassirou-faye-annonce-la-fin-de-toutes-pr%C3%A9sences-militaires-%C3%A9trang%C3%A8res-d%C3%A8s-2025", title: "President Bassirou Faye announces end of all foreign military presence from 2025", title_original: "Le président Bassirou Faye annonce la fin de toutes présences militaires étrangères dès 2025", publisher: "RFI", date: "2024-12-31", tier: 3, lang: fr}
-      - {url: "https://www.khaleejtimes.com/world/africa/french-army-leaves-senegal", title: "French army leaves Senegal, ending military presence in west Africa", publisher: "Khaleej Times (AFP/AP)", date: "2025-07-17", tier: 3}
-
-  - toward: GMB
-    grade: partner
-    trend: stable
-    bond: kin
-    since: '2017-01'
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "Senegal sent troops in January 2017 to back Adama Barrow (BBC). Partner is our reading: cooperation without an alignment treaty. Bond kin is our reading (C): shared faith and language, and the 1981-89 Senegambia confederation, which Senegal left abruptly (Wikipedia index, tier 4, not cited here). Trend stable is a default, not a finding. Gaps: no 2022-26 source on Gambian relations was reached in this pass; the Casamance question (rear bases for the MFDC in The Gambia, alleged under Jammeh) and the 2025 Casamance peace are unsourced; the GMB card does not exist yet, so nothing is mirrored."
-    sources:
-      - {url: "https://www.bbc.com/news/world-africa-38682184", title: "Gambia crisis: Senegal sends in troops to back elected leader", publisher: "BBC", date: "2017-01", tier: 3}
-
-  - toward: MRT
-    grade: partner
-    trend: warming
-    bond: grievance
-    since: '2025-02'
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "The Grand Tortue Ahmeyim gas field is shared by the two states; first LNG was reported in February 2025 (AFP), and 8-9 cargoes were expected for Q2 2026 (allAfrica, May 2026). Partner is our reading: transactional joint development with no alignment. Trend warming from the joint production and the 2026 cargo plan. Bond grievance is our reading: Wikipedia's index cites late-1980s clashes between farmers and herders that brought the two near war (no URL in the wikitext, tier 4, not cited here). Gaps: the revenue split and the text of the 2018 intergovernmental agreement are not verified; the MRT card is not yet written, so nothing is mirrored."
-    sources:
-      - {url: "https://www.connaissancedesenergies.org/afp/debut-de-la-production-de-gnl-au-large-du-senegal-et-de-la-mauritanie-250211", title: "First LNG output off Senegal and Mauritania", title_original: "Début de la production de GNL au large du Sénégal et de la Mauritanie", publisher: "Connaissance des énergies (AFP)", date: "2025-02-11", tier: 3, lang: fr}
-      - {url: "https://fr.allafrica.com/stories/202605080084.html", title: "Senegal: Grand Tortue Ahmeyim - 8 to 9 gas cargoes expected in Q2 2026", title_original: "Sénégal: Grand Tortue Ahmeyim - 8 à 9 cargaisons de gaz attendues au 2e trimestre 2026", publisher: "allAfrica", date: "2026-05-08", tier: 3, lang: fr}
-
-  - toward: MLI
-    grade: partner
-    trend: stable
-    bond: none
-    since: '2025-09'
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "JNIM's fuel blockade of Mali began in September 2025; the reporting centres on tankers from Senegal and Cote d'Ivoire and on trucks burned on the Senegal-Mali route (TimesLive, Africanews, regional radio). Partner is our reading: Dakar keeps trading with Bamako with no alignment. Bond none is our reading: no source names affinity or kinship. Trend stable: no source shows a change in Senegal's posture toward Mali. Gaps: Senegal's position on the Alliance of Sahel States (AES, Mali's junta bloc) and the role of the Port of Dakar are not sourced in this pass; the MLI card is a stub, so the reciprocal is provisional."
-    sources:
-      - {url: "https://www.timeslive.co.za/news/africa/2025-09-09-mali-army-carries-out-airstrikes-after-militants-announce-blockade-on-fuel-imports/", title: "Mali army carries out airstrikes after militants announce blockade on fuel imports", publisher: "TimesLive", date: "2025-09-09", tier: 3}
-      - {url: "https://www.africanews.com/amp/2025/10/08/desperate-search-for-fuel-in-malis-capital-as-al-qaida-linked-group-enforces-blockade/", title: "Desperate search for fuel in Mali's capital as al-Qaida-linked group enforces blockade", publisher: "Africanews", date: "2025-10-08", tier: 3}
-      - {url: "https://rainbowradioonline.com/2025/09/17/trucks-set-ablaze-as-militants-block-key-senegal-mali-trade-route", title: "Trucks set ablaze as militants block key Senegal-Mali trade route", publisher: "Rainbow Radio", date: "2025-09-17", tier: 4}
+- toward: FRA
+  grade: partner
+  trend: cooling
+  bond: grievance
+  since: '2024-12-31'
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'Faye announced in December 2024 the end of all foreign military presence from 2025 (RFI), and the Camp Geille base and Dakar airfield were handed over on 17 July 2025 (AFP via Khaleej Times). Trend
+    cooling from the end of the bases. Partner is our reading: transactional, with no alignment; no source uses the word (C). Bond grievance is our reading: the colonial past is the wound behind the exit,
+    but no source in this pass names the Thiaroye memory or a French apology (gap). The 2025 reset and French aid and trade figures are not verified. The FRA card has no stance toward SEN, so France''s
+    side is a provisional reciprocal.'
+  sources:
+  - url: https://www.rfi.fr/fr/afrique/20241231-s%C3%A9n%C3%A9gal-le-pr%C3%A9sident-bassirou-faye-annonce-la-fin-de-toutes-pr%C3%A9sences-militaires-%C3%A9trang%C3%A8res-d%C3%A8s-2025
+    title: President Bassirou Faye announces end of all foreign military presence from 2025
+    title_original: Le président Bassirou Faye annonce la fin de toutes présences militaires étrangères dès 2025
+    publisher: RFI
+    date: '2024-12-31'
+    tier: 3
+    lang: fr
+  - url: https://www.khaleejtimes.com/world/africa/french-army-leaves-senegal
+    title: French army leaves Senegal, ending military presence in west Africa
+    publisher: Khaleej Times (AFP/AP)
+    date: '2025-07-17'
+    tier: 3
+- toward: GMB
+  grade: partner
+  trend: stable
+  bond: kin
+  since: 2017-01
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'Senegal sent troops in January 2017 to back Adama Barrow (BBC). Partner is our reading: cooperation without an alignment treaty. Bond kin is our reading (C): shared faith and language, and the
+    1981-89 Senegambia confederation, which Senegal left abruptly (Wikipedia index, tier 4, not cited here). Trend stable is a default, not a finding. Gaps: no 2022-26 source on Gambian relations was reached
+    in this pass; the Casamance question (rear bases for the MFDC in The Gambia, alleged under Jammeh) and the 2025 Casamance peace are unsourced; the GMB card does not exist yet, so nothing is mirrored.'
+  sources:
+  - url: https://www.bbc.com/news/world-africa-38682184
+    title: 'Gambia crisis: Senegal sends in troops to back elected leader'
+    publisher: BBC
+    date: 2017-01
+    tier: 3
+- toward: MRT
+  grade: partner
+  trend: warming
+  bond: grievance
+  since: 2025-02
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'The Grand Tortue Ahmeyim gas field is shared by the two states; first LNG was reported in February 2025 (AFP), and 8-9 cargoes were expected for Q2 2026 (allAfrica, May 2026). Partner is our reading:
+    transactional joint development with no alignment. Trend warming from the joint production and the 2026 cargo plan. Bond grievance is our reading: Wikipedia''s index cites late-1980s clashes between
+    farmers and herders that brought the two near war (no URL in the wikitext, tier 4, not cited here). Gaps: the revenue split and the text of the 2018 intergovernmental agreement are not verified; the
+    MRT card is not yet written, so nothing is mirrored.'
+  sources:
+  - url: https://www.connaissancedesenergies.org/afp/debut-de-la-production-de-gnl-au-large-du-senegal-et-de-la-mauritanie-250211
+    title: First LNG output off Senegal and Mauritania
+    title_original: Début de la production de GNL au large du Sénégal et de la Mauritanie
+    publisher: Connaissance des énergies (AFP)
+    date: '2025-02-11'
+    tier: 3
+    lang: fr
+  - url: https://fr.allafrica.com/stories/202605080084.html
+    title: 'Senegal: Grand Tortue Ahmeyim - 8 to 9 gas cargoes expected in Q2 2026'
+    title_original: 'Sénégal: Grand Tortue Ahmeyim - 8 à 9 cargaisons de gaz attendues au 2e trimestre 2026'
+    publisher: allAfrica
+    date: '2026-05-08'
+    tier: 3
+    lang: fr
+- toward: MLI
+  grade: partner
+  trend: stable
+  bond: none
+  since: 2025-09
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'JNIM''s fuel blockade of Mali began in September 2025; the reporting centres on tankers from Senegal and Cote d''Ivoire and on trucks burned on the Senegal-Mali route (TimesLive, Africanews, regional
+    radio). Partner is our reading: Dakar keeps trading with Bamako with no alignment. Bond none is our reading: no source names affinity or kinship. Trend stable: no source shows a change in Senegal''s
+    posture toward Mali. Gaps: Senegal''s position on the Alliance of Sahel States (AES, Mali''s junta bloc) and the role of the Port of Dakar are not sourced in this pass; the MLI card is a stub, so the
+    reciprocal is provisional.'
+  sources:
+  - url: https://www.timeslive.co.za/news/africa/2025-09-09-mali-army-carries-out-airstrikes-after-militants-announce-blockade-on-fuel-imports/
+    title: Mali army carries out airstrikes after militants announce blockade on fuel imports
+    publisher: TimesLive
+    date: '2025-09-09'
+    tier: 3
+  - url: https://www.africanews.com/amp/2025/10/08/desperate-search-for-fuel-in-malis-capital-as-al-qaida-linked-group-enforces-blockade/
+    title: Desperate search for fuel in Mali's capital as al-Qaida-linked group enforces blockade
+    publisher: Africanews
+    date: '2025-10-08'
+    tier: 3
+  - url: https://rainbowradioonline.com/2025/09/17/trucks-set-ablaze-as-militants-block-key-senegal-mali-trade-route
+    title: Trucks set ablaze as militants block key Senegal-Mali trade route
+    publisher: Rainbow Radio
+    date: '2025-09-17'
+    tier: 4
+- toward: GNB
+  grade: partner
+  trend: stable
+  bond: none
+  since: 2025-12
+  last_verified: '2026-10-16'
+  confidence: C
+  reciprocal_of: GNB
+  note: Provisional reciprocal of Guinea-Bissau's 'partner' stance toward Senegal, written on 2026-10-16 by tools/reciprocate.py from the same evidence; to be rewritten from Senegal's side.
+  sources:
+  - url: https://www.aljazeera.com/news/2025/12/1/ecowas-delegation-visits-guinea-bissau-for-talks-after-military-coup
+    title: ECOWAS delegation visits Guinea-Bissau for talks after military coup
+    publisher: Al Jazeera
+    date: '2025-12-01'
+    tier: 3
+  - url: https://www.aljazeera.com/news/2026/8/29/guinea-bissau-votes-on-a-stronger-presidency-whats-at-stake
+    title: 'Guinea-Bissau votes on a stronger presidency: What''s at stake?'
+    publisher: Al Jazeera
+    date: '2026-08-29'
+    tier: 3
