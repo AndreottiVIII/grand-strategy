@@ -8,7 +8,41 @@ coords:
 - 14.92
 seat: Praia
 regions:
-- world
-card: stub
+- west-africa
+card: full
 tier: minor
+last_verified: 2026-10-16
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Keep the economy growing under the new PAICV government. After its 17 May 2026 win, the party promised a 'novo Cabo Verde' of growth with all islands taking part in governance, not only Praia."
+    confidence: C
+    sources:
+    - {url: "https://inforpress.cv/pt/legislativas-2026-francisco-carvalho-anuncia-novo-cabo-verde-apos-vitoria-do-paicv-com-maioria-absoluta", title: "Legislativas 2026: Francisco Carvalho anuncia 'novo Cabo Verde' apos vitoria do PAICV com maioria absoluta", title_original: "Legislativas 2026: Francisco Carvalho anuncia 'novo Cabo Verde' apos vitoria do PAICV com maioria absoluta", lang: pt, publisher: "Inforpress", date: 2026-05-17, tier: 3}
+  - rank: 2
+    text: "Bring Portuguese investment into renewable energy and a technology park in Praia. Prime Minister Montenegro, in Cabo Verde in April 2024, urged Portuguese investors to use the diversification strategy, and the country is a founding partner of the AIR Centre."
+    confidence: C
+    sources:
+    - {url: "https://www.dnoticias.pt/2024/4/20/402459-montenegro-quer-mais-investimento-portugues-em-cabo-verde/", title: "Montenegro wants more Portuguese investment in Cabo Verde", title_original: "Montenegro quer mais investimento portugues em Cabo Verde", lang: pt, publisher: "DNoticias", date: 2024-04-20, tier: 3}
+    - {url: "https://www.fct.pt/en/media/noticias/air-centre-is-formally-founded-today/", title: "AIR Centre is formally founded today", publisher: "Fundacao para a Ciencia e a Tecnologia", date: 2017-11, tier: 1}
+  means:
+  - text: "Portugal as the channel into Europe's funds and investors: the AIR Centre (founded 2017, Cabo Verde a founding partner) and the Portuguese investment courted in 2024. The Atlantic-island diplomacy runs mainly through Lisbon, and the sources read show no other channel in 2025-2026."
+    confidence: C
+    sources:
+    - {url: "https://www.fct.pt/en/media/noticias/air-centre-is-formally-founded-today/", title: "AIR Centre is formally founded today", publisher: "Fundacao para a Ciencia e a Tecnologia", date: 2017-11, tier: 1}
+    - {url: "https://www.dnoticias.pt/2024/4/20/402459-montenegro-quer-mais-investimento-portugues-em-cabo-verde/", title: "Montenegro wants more Portuguese investment in Cabo Verde", title_original: "Montenegro quer mais investimento portugues em Cabo Verde", lang: pt, publisher: "DNoticias", date: 2024-04-20, tier: 3}
+  constraints:
+  - text: "A bare majority. The PAICV won 37 of the 72 National Assembly seats (48.04% of the vote) and the MpD kept 33 (44.75%). Thirty-seven is exactly the majority line, so the new government has no margin for a lost vote in the house; turnout was 46.5%."
+    confidence: B
+    sources:
+    - {url: "https://drive.google.com/file/d/1VVSUbB5BnfugA3JV08IaIhj1wv_Q2Mxu/view", title: "Edital n.o 3/Eleicao/2026 (National Elections Commission, final result; cited via Wikipedia, document not opened)", title_original: "Edital n.o 3/Eleicao/2026", lang: pt, publisher: "Comissao Nacional de Eleicoes (CNE)", date: 2026-05-29, tier: 1}
+    - {url: "https://www.inforpress.cv/en/article-10068", title: "2026 General Election: CNE announces final election results and confirms PAICV victory", publisher: "Inforpress", date: 2026-05-29, tier: 3}
+  - text: "Opposition on the other side of a near-even split. The MpD, which had sought a third term for Ulisses Correia e Silva, keeps 33 seats and nearly 45% of the vote, so each foreign or fiscal decision will be argued in the house at close quarters."
+    confidence: C
+    sources:
+    - {url: "https://www.inforpress.cv/en/article-10068", title: "2026 General Election: CNE announces final election results and confirms PAICV victory", publisher: "Inforpress", date: 2026-05-29, tier: 3}
+  paradoxes: []
+  reading: |
+    Cape Verde's 17 May 2026 election ended the MpD's bid for a third term: the PAICV won 37 of 72 seats, and Francisco Carvalho was named prime minister-designate, with 19 June given as the swearing-in date by one search summary that no second source confirmed. The state's external ties that the sources read here run through Lisbon (the AIR Centre and Portuguese investment), with China and the United States present but not sourced in this pass. The EU, ECOWAS, Brazil and the CPLP, the Chinese port and debt, the MCC compacts and the remittance and tourism figures are open gaps for a second pass.

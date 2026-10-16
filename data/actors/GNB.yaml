@@ -1,14 +1,60 @@
 id: GNB
 name: Guinea-Bissau
 type: state
+coords: [-15.58, 11.86]
 iso2: gw
 wikipedia: https://en.wikipedia.org/wiki/Guinea-Bissau
-coords:
-- -15.58
-- 11.86
 seat: Bissau
-regions:
-- world
-card: stub
+regions: [west-africa]
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Run a military-led transition on its own timetable: a referendum on 30 August 2026 on a new constitution that strengthens the presidency (parliament cut from 102 to 65 seats), then presidential and legislative elections on 6 December 2026. The transition charter bars the transitional president and prime minister from standing."
+      confidence: C
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/8/29/guinea-bissau-votes-on-a-stronger-presidency-whats-at-stake", title: "Guinea-Bissau votes on a stronger presidency: What's at stake?", publisher: "Al Jazeera", date: 2026-08-29, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/1/22/guinea-bissau-sets-election-date-following-last-years-coup", title: "Guinea-Bissau sets election date following last year's coup", publisher: "Al Jazeera", date: 2026-01-22, tier: 3}
+    - rank: 2
+      text: "Refuse outside norm-setting while keeping the mediation channel open: in March 2026 the military National Transition Council said Portugal had no legitimacy to set norms, and in December 2025 it received the ECOWAS mediators, Sierra Leone's Julius Maada Bio and Senegal's Bassirou Diomaye Faye."
+      confidence: C
+      sources:
+        - {url: "https://www.plataformamedia.com/en/2026/03/24/guinea-bissau-military-cnt-rejects-portugal-corridor-diplomacy-paulo-rangel/", title: "Military rulers in Guinea-Bissau reject Portugal's 'hostile corridor diplomacy'", publisher: "Plataforma Media", date: 2026-03-24, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2025/12/1/ecowas-delegation-visits-guinea-bissau-for-talks-after-military-coup", title: "ECOWAS delegation visits Guinea-Bissau for talks after military coup", publisher: "Al Jazeera", date: 2025-12-01, tier: 3}
+
+  means:
+    - domain: military
+      text: "The army is the regime. General Horta Inta-A Na Man, the former army chief of staff, was installed as transitional president after the coup of 26 November 2025, three days after the elections. Former president Embalo has reportedly left for Brazzaville; the reports are not confirmed in a fetched source."
+      confidence: C
+      sources:
+        - {url: "https://www.aljazeera.com/news/2026/8/29/guinea-bissau-votes-on-a-stronger-presidency-whats-at-stake", title: "Guinea-Bissau votes on a stronger presidency: What's at stake?", publisher: "Al Jazeera", date: 2026-08-29, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2025/11/28/guinea-bissaus-new-military-ruler-moves-to-consolidate-power-after-coup", title: "Guinea-Bissau's new military ruler moves to consolidate power after coup", publisher: "Al Jazeera", date: 2025-11-28, tier: 3}
+    - domain: economic
+      text: "A poor economy with cashew as its largest legitimate export and agriculture above 35% of GNP (figure for 2010). No export or budget figure for 2025-26 was found in this pass; the source is an academic paper and is a pointer only."
+      confidence: C
+      sources:
+        - {url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4485029/", title: "Tracking cashew economically important diseases in the West African region using metagenomics", publisher: "NCBI PubMed Central", date: "2010", tier: 4}
+
+  constraints:
+    - text: "ECOWAS has suspended Guinea-Bissau from all its decision-making bodies until constitutional order is restored. The regional bloc that could share the cost of the transition is closed to the junta while its mediators set the terms (a short, structured and transparent transition). The stabilisation force's withdrawal in 2025 is not verified in this pass."
+      confidence: C
+      sources:
+        - {url: "https://www.aljazeera.com/news/2025/12/1/ecowas-delegation-visits-guinea-bissau-for-talks-after-military-coup", title: "ECOWAS delegation visits Guinea-Bissau for talks after military coup", publisher: "Al Jazeera", date: 2025-12-01, tier: 3}
+        - {url: "https://www.aljazeera.com/news/2026/1/22/guinea-bissau-sets-election-date-following-last-years-coup", title: "Guinea-Bissau sets election date following last year's coup", publisher: "Al Jazeera", date: 2026-01-22, tier: 3}
+    - text: "Cocaine transit is the structural base of the state's weakness. Traffickers use the uninhabited islands and have bought officials and the military, which gave the country the 'narco-state' label. In 2019 President Vaz said the state had no aircraft, no boats and no radars for its maritime zone. No 2025-26 source on the trade was found; the 2019 report is the latest used here."
+      confidence: C
+      sources:
+        - {url: "https://www.aljazeera.com/features/2019/3/10/president-worried-about-drug-trade-as-guinea-bissau-votes", title: "President worried about drug trade as Guinea-Bissau votes", publisher: "Al Jazeera", date: 2019-03-10, tier: 3}
+
+  paradoxes:
+    - text: "Calling Lisbon's 'corridor diplomacy' illegitimate narrows the Portuguese channel that keeps health and education cooperation running, and the one through which Portugal presses for the release of detainees."
+      confidence: C
+      sources:
+        - {url: "https://www.plataformamedia.com/en/2026/03/24/guinea-bissau-military-cnt-rejects-portugal-corridor-diplomacy-paulo-rangel/", title: "Military rulers in Guinea-Bissau reject Portugal's 'hostile corridor diplomacy'", publisher: "Plataforma Media", date: 2026-03-24, tier: 3}
+        - {url: "https://observador.pt/2025/12/16/guine-bissau-governo-portugues-transmitiu-necessidade-de-libertacao-dos-presos/", title: "Guinea-Bissau: Portuguese government conveyed the need to free the prisoners", publisher: "Observador", date: 2025-12-16, tier: 3, lang: pt}
+
+  reading: |
+    Guinea-Bissau's strategy is to run a military-led transition on its own timetable, with a presidency strengthened for whoever wins the December vote, in a state too weak to police its own coast. Its outside links are narrow: a suspended ECOWAS seat, a Portuguese channel the junta has just rejected, and a Senegalese neighbour that co-leads the mediation. Gaps: Russia's 2025 contacts, the ECOMIB withdrawal, the Casamance rear (our inference, not sourced here) and any current cashew or cocaine figure are not verified in this pass.

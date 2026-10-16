@@ -1,0 +1,14 @@
+from: CPV
+relations:
+  # ---------- action (mirrored from data/relations/PRT.yaml, same sources) ----------
+  - to: PRT
+    layer: action
+    type: visit
+    summary: "Received Portugal's prime minister Montenegro in April 2024, on his first trip outside Europe as prime minister, who urged Portuguese investors to use the country's diversification strategy (renewable-energy centre, technology park in Praia). Cabo Verde is a founding partner of the AIR Centre. No 2026 follow-up was found."
+    since: 2024-04
+    until: 2024-04
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.dnoticias.pt/2024/4/20/402459-montenegro-quer-mais-investimento-portugues-em-cabo-verde/", title: "Montenegro wants more Portuguese investment in Cabo Verde", title_original: "Montenegro quer mais investimento portugues em Cabo Verde", lang: pt, publisher: "DNoticias", date: 2024-04-20, tier: 3}
+      - {url: "https://www.fct.pt/en/media/noticias/air-centre-is-formally-founded-today/", title: "AIR Centre is formally founded today", publisher: "Fundacao para a Ciencia e a Tecnologia", date: 2017-11, tier: 1}

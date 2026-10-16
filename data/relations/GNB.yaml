@@ -1,0 +1,26 @@
+from: GNB
+relations:
+  # ---------- objective ----------
+  - to: org-ecowas
+    layer: objective
+    type: regime_goal
+    summary: "The junta keeps its own transition timetable: a referendum on 30 August 2026 on a stronger presidency, then elections on 6 December 2026. ECOWAS, which suspended Guinea-Bissau after the coup, has called for a short, structured and transparent transition. Reading the timetable as a regime goal is ours (C)."
+    since: '2025-11-26'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.aljazeera.com/news/2026/8/29/guinea-bissau-votes-on-a-stronger-presidency-whats-at-stake", title: "Guinea-Bissau votes on a stronger presidency: What's at stake?", publisher: "Al Jazeera", date: "2026-08-29", tier: 3}
+      - {url: "https://www.aljazeera.com/news/2025/12/1/ecowas-delegation-visits-guinea-bissau-for-talks-after-military-coup", title: "ECOWAS delegation visits Guinea-Bissau for talks after military coup", publisher: "Al Jazeera", date: "2025-12-01", tier: 3}
+
+  # ---------- action ----------
+  - to: PRT
+    layer: action
+    type: incident
+    summary: "In March 2026 the military National Transition Council rejected Portugal's 'corridor diplomacy' as lacking legitimacy and said Lisbon had no standing to set norms for Bissau. The statement is the junta's; Portugal's own position is in the PRT card."
+    since: '2026-03-24'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.plataformamedia.com/en/2026/03/24/guinea-bissau-military-cnt-rejects-portugal-corridor-diplomacy-paulo-rangel/", title: "Military rulers in Guinea-Bissau reject Portugal's 'hostile corridor diplomacy'", publisher: "Plataforma Media", date: "2026-03-24", tier: 3}
