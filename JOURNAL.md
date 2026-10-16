@@ -1,5 +1,25 @@
 # Journal
 
+## 2026-10-16 · Dominican Republic (DOM) minor card, Flash: thin, four web calls, gaps logged
+
+Four web calls: the Wikipedia API batched (Haiti-DR, DR-US, DR-China, Abinader; the first and third pages empty or missing, the US page gave only expat counts); a search for Reuters/AP on the border wall and deportations (the Reuters story of 6 April 2025 is read through the search summary only); a fetch of the Reuters syndication on Fidelity.com (returned navigation text, no article); a search on the Rubio visit of 6 February 2025 (summaries of Dominican Today, Caribbean Today, EFE via Primicias). No Reuters or AP page text was read.
+
+Written: the actor card, stub turned full (two-to-three objectives, two means, two constraints, one paradox, three-sentence reading; all C); a stances file with two stances (HTI reluctant_partner, cooling, grievance, C; USA partner, warming, none, C); a relations file with two rows (HTI incident, 6 Apr 2025, C; USA visit, 6 Feb 2025, C). The build passes.
+
+Mirror: no card in data/stances holds a stance toward DOM (grep "toward: DOM": none). The build adds the reciprocal USA-to-DOM partner stance as provisional, flagged for the USA reverse pass. `reciprocate.py --write` was not run: it would also write into HTI's files, which are in progress. USA's own file is untouched.
+
+Gaps (no source read, nothing written): the 2026 deportation figures (the search summaries give 67,940 for January-February 2026 and about 226,500 for January-July, but no outlet URL was recorded); the 2018 switch from Taiwan to China (the Wikipedia page for DR-China is missing); the canal or water dispute with Haiti; the gang war in Haiti (only the Kenyan-card sources on the mission); Spain and the EU; CARICOM and the Haiti mission's Caribbean members; tourism and free zones as the economy (no figure read, so no dependency rows). The Wikipedia pages give no dated facts beyond Abinader's own biography. Next step if wanted: a sourced pass on China, Spain-EU and the economy with a fresh web budget, and the deportation figures from the Dominican migration directorate.
+
+## 2026-10-16 · The Bahamas (BHS) minor card, Flash: thin, three web calls, gaps logged
+
+Three web calls: the Wikipedia API for 2026 Bahamian general election (extract: held 12 May 2026, PLP 33 of 41 seats, Davis re-elected); an unfiltered search (Al Jazeera headline and date, plus search summaries); a Reuters/AP domain-filter search (refused by the search tool, so no wire page was read). The search summaries are not written as sourced facts beyond the Al Jazeera headline.
+
+Written: the actor card, stub turned full (one objective, C, Al Jazeera tier 3 and Wikipedia tier 4 as pointer; one mean, A, Commonwealth and OAS official lists, the memberships already in the Wikidata rows; no constraints, no paradox; three-sentence reading). No stance file and no relation file: no tier 1 to 3 source for a Bahamas posture was read. The build passes (`python tools/build.py --skip-running`, 300 actors, 188 full).
+
+Mirror: no card in data/stances holds a stance toward BHS (grep "toward: BHS": none). BHS appears only as the source of Wikidata and recognition dataset rows, not as a target. Nothing mirrored.
+
+Gaps (no source read, so nothing written; the brief asked for them): the United States (proximity, the third-country deportation talks the Bahamas refused in 2025, the OPBAT drug cooperation, tourism); Haiti (migrants, repatriations); China (the port, the stadium, the debt); the United Kingdom (Commonwealth ties, the Privy Council as final court); CARICOM; tourism and offshore finance as the economy (no figure read, so no dependency rows: the layer needs a value and unit); hurricanes; the FATF grey list (the MCO card's FATF copy is a Bahamas-hosted document, but its Bahamas status was not read). Next step if wanted: a sourced pass on the US and China legs and the grey-list status, with a fresh web budget.
+
 ## 2026-10-16 · Panama (PAN) card, Flash: three stances, four web calls, gaps logged
 
 Four web calls: the Wikipedia API (batched extracts; Panama-China, Panama-US and the 2025 protests pages missing); a search with the Reuters/AP domain filter (refused, the domains are not reachable for us); an unfiltered search (Reuters-reported canal, port and strike coverage via other outlets); an unfiltered search on the 2024 Venezuela rupture and the Darien figures. No Reuters or AP page was read.

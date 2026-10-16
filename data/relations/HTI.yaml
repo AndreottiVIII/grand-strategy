@@ -1,0 +1,31 @@
+from: HTI
+relations:
+  # ---------- objective ----------
+  - to: nsa-haiti-gangs
+    layer: objective
+    type: influence_goal
+    summary: "Retake Port-au-Prince from Viv Ansanm, the gang alliance formed in September 2023 by G9 and G-Pèp, with the Gang Suppression Force; read as the aim of the transition government (C). The force's strength and the gangs' reach are in the rows of the GSF and the Kenyan contingent."
+    since: '2024-06'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Viv_Ansanm", title: "Viv Ansanm (Wikipedia)", publisher: "Wikipedia", date: "2026-10", tier: 4}
+      - {url: "https://en.wikipedia.org/wiki/Gang_Suppression_Force", title: "Gang Suppression Force (Wikipedia)", publisher: "Wikipedia", date: "2026-10", tier: 4}
+      - {url: "https://www.timeslive.co.za/news/world/2026-09-29-un-renews-haiti-force-mandate-for-six-months-after-fresh-gang-killings/", title: "UN renews Haiti force mandate for six months after fresh gang killings", publisher: "Reuters (via TimesLIVE)", date: "2026-09-29", tier: 3}
+
+  # ---------- dependency ----------
+  - to: KEN
+    layer: dependency
+    type: military_presence
+    summary: "Kenya has led the police mission in Haiti since June 2024 (Multinational Security Support, converted by the Security Council into the Gang Suppression Force on 30 September 2025); the fifth contingent of 230 officers landed in December 2025, bringing Kenyan police in Haiti to over 700; the second contingent returned home on 17-18 March 2026 and Chadian troops are to replace the Kenyans gradually. Mirror of the KEN row, same sources."
+    since: '2024-06'
+    until: null
+    value: 230
+    unit: police_officers_fifth_contingent_dec_2025
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.the-star.co.ke/news/2025-12-09-kenya-deploys-fifth-contingent-to-haiti", title: "Kenya deploys fifth contingent to Haiti", publisher: "The Star (Kenya)", date: "2025-12-09", tier: 3}
+      - {url: "https://capitalfm.africa/over-200-kenyan-police-return-home-from-haiti-mission/", title: "Over 200 Kenyan Police Return Home from Haiti Mission", publisher: "Capital FM (Kenya)", date: "2026-03-18", tier: 3}
+      - {url: "https://ntvkenya.co.ke/news/chad-to-gradually-replace-kenyan-force-in-haiti-through-october-dominican-republic-says/", title: "Chad to gradually replace Kenyan force in Haiti through October, Dominican Republic says", publisher: "NTV Kenya", date: "2026", tier: 3}

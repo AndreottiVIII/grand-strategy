@@ -8,7 +8,47 @@ coords:
 - 10.67
 seat: Port of Spain
 regions:
-- world
-card: stub
+- south-america
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Keep Atlantic LNG running on gas from Venezuela. The Dragon field is the route: Atlantic LNG produces below nameplate capacity for want of gas, and the energy minister puts the first Dragon deliveries at Q3 2027. Caracas froze the gas arrangements in October 2025, so the goal depends on Venezuela's consent."
+    confidence: C
+    sources:
+    - {url: "https://www.aljazeera.com/news/2025/10/28/venezuela-suspends-trinidad-and-tobago-gas-accord-over-us-warship-visit", title: "Venezuela suspends Trinidad and Tobago gas accord over US warship visit", publisher: "Al Jazeera", date: 2025-10-28, tier: 3}
+    - {url: "https://guardian.co.tt/news/dragon-gas-collapses-diplomacy-frays-and-crises-converge-in-tt-6.2.2482112.88c352c1c1", title: "Dragon gas collapses, diplomacy frays and crises converge in T&T", publisher: "Trinidad Guardian", date: 2026, tier: 3}
+  - rank: 2
+    text: "Keep Washington close while Caracas is hostile. Persad-Bissessar backed the US boat strikes of 2025, and a US warship docked in Trinidad in October 2025 despite the protests from Caracas. The US security tie is what Port of Spain offers for the gas it needs from Venezuela."
+    confidence: C
+    sources:
+    - {url: "https://www.aljazeera.com/news/2025/10/28/venezuela-suspends-trinidad-and-tobago-gas-accord-over-us-warship-visit", title: "Venezuela suspends Trinidad and Tobago gas accord over US warship visit", publisher: "Al Jazeera", date: 2025-10-28, tier: 3}
+    - {url: "https://guardian.co.tt/news/dragon-gas-collapses-diplomacy-frays-and-crises-converge-in-tt-6.2.2482112.88c352c1c1", title: "Dragon gas collapses, diplomacy frays and crises converge in T&T", publisher: "Trinidad Guardian", date: 2026, tier: 3}
+  means:
+  - text: "Access to Washington. The US Treasury licence (OFAC) for the Dragon project, which the attorney general announced in October 2025, and the US warship visit of the same month are the two levers. Nation News later reports the licence revoked in April 2026, while the Trinidad Express account describes it as ongoing: the sources conflict and both are kept."
+    confidence: C
+    sources:
+    - {url: "https://guardian.co.tt/news/dragon-gas-collapses-diplomacy-frays-and-crises-converge-in-tt-6.2.2482112.88c352c1c1", title: "Dragon gas collapses, diplomacy frays and crises converge in T&T", publisher: "Trinidad Guardian", date: 2026, tier: 3}
+    - {url: "https://www.aljazeera.com/news/2025/10/28/venezuela-suspends-trinidad-and-tobago-gas-accord-over-us-warship-visit", title: "Venezuela suspends Trinidad and Tobago gas accord over US warship visit", publisher: "Al Jazeera", date: 2025-10-28, tier: 3}
+  constraints:
+  - text: "Gas shortage and one neighbour. The nearest gas is the Dragon field, shared with Venezuela, and Caracas froze the 2025 accord and declared the prime minister persona non grata. Venezuela's vice president had already said any gas exported has to be paid for."
+    confidence: C
+    sources:
+    - {url: "https://www.aljazeera.com/news/2025/10/28/venezuela-suspends-trinidad-and-tobago-gas-accord-over-us-warship-visit", title: "Venezuela suspends Trinidad and Tobago gas accord over US warship visit", publisher: "Al Jazeera", date: 2025-10-28, tier: 3}
+    - {url: "https://guardian.co.tt/news/tt-must-pay-for-dragon-gas-warns-venezuela-vp-6.2.2430384.8e2029c403", title: "TT must pay for Dragon gas, warns Venezuela VP", publisher: "Trinidad Guardian", date: 2025, tier: 3}
+  - text: "A small energy economy with one market for its gas. The Trinidad economy is mainly industrial and built on oil and gas reserves (Wikipedia, tier 4: a pointer, not a source of record). The gas-shortage constraint is the same fact seen from the plant: the LNG train runs below capacity."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/Trinidad_and_Tobago", title: "Trinidad and Tobago", publisher: "Wikipedia (extract retrieved 2026-10-16)", date: 2026-10-16, tier: 4}
+    - {url: "https://guardian.co.tt/news/dragon-gas-collapses-diplomacy-frays-and-crises-converge-in-tt-6.2.2482112.88c352c1c1", title: "Dragon gas collapses, diplomacy frays and crises converge in T&T", publisher: "Trinidad Guardian", date: 2026, tier: 3}
+  paradoxes:
+  - text: "The moves that bought US backing for the Dragon licence, the support for the boat strikes and the warship visit, are the moves Caracas used to freeze the gas accord. The alignment that unlocks Washington's permission is the one that closes the Venezuelan molecules Trinidad needs."
+    confidence: C
+    sources:
+    - {url: "https://www.aljazeera.com/news/2025/10/28/venezuela-suspends-trinidad-and-tobago-gas-accord-over-us-warship-visit", title: "Venezuela suspends Trinidad and Tobago gas accord over US warship visit", publisher: "Al Jazeera", date: 2025-10-28, tier: 3}
+    - {url: "https://guardian.co.tt/news/dragon-gas-collapses-diplomacy-frays-and-crises-converge-in-tt-6.2.2482112.88c352c1c1", title: "Dragon gas collapses, diplomacy frays and crises converge in T&T", publisher: "Trinidad Guardian", date: 2026, tier: 3}
+  reading: |
+    Trinidad and Tobago plays for gas. Its LNG plant runs below capacity, and the field it needs, Dragon, is shared with Venezuela, so the strategy is to buy Venezuelan molecules with a visible loyalty to Washington. That loyalty brought a US licence and a warship visit, and Caracas answered in the same month by freezing the accord; the first deliveries, due in 2027, depend on a neighbour Port of Spain has angered and a patron it has courted.

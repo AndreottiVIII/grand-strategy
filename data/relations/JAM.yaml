@@ -1,0 +1,39 @@
+from: JAM
+relations:
+  # ---------- dependency ----------
+  - to: org-imf
+    layer: dependency
+    type: debt
+    value: 6.7
+    unit: usd_billion
+    summary: "Up to US$6.7 billion over three years from five international lenders, the IMF, World Bank and Inter-American Development Bank among them, put together at Prime Minister Holness's request after Hurricane Melissa. The World Bank and IDB put the physical damage at US$8.8 billion. The figures are from the search summary of the Gleaner article; the row is a package, not a single loan."
+    since: 2025-12-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://jamaica-gleaner.com/article/news/20251201/jamaica-gets-trillion-dollar-aid-package-rebuild-after-hurricane-melissa", title: "Jamaica gets trillion-dollar aid package to rebuild after Hurricane Melissa", publisher: "The Gleaner", date: 2025-12-01, tier: 3}
+
+  # ---------- action ----------
+  - to: GUY
+    layer: action
+    type: incident
+    summary: "After Hurricane Melissa, Guyana deployed Guyana Defence Force engineers to repair roofs in hard-hit Westmoreland (about 200, per the Gleaner search summary). The vocabulary has no aid type, so the relief is logged as an incident. The article body was not read; the detail comes from the summary."
+    since: 2025-11-18
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://jamaica-gleaner.com/article/news/20251118/caricom-leaders-rally-around-jamaica-amid-unprecendented-destruction", title: "CARICOM leaders rally around Jamaica amid 'unprecendented' destruction", publisher: "The Gleaner", date: 2025-11-18, tier: 3}
+
+  - to: CUB
+    layer: action
+    type: incident
+    summary: "Jamaica ended its roughly 50-year medical cooperation programme with Cuba in March 2026, after the two governments could not agree new terms. Havana said Kingston bowed to US pressure; the Jamaican foreign minister denied it. Cuban workers may now be engaged individually by the Ministry of Health to finish their contracts."
+    since: 2026-03-05
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://jamaica-gleaner.com/article/news/20260305/jamaica-end-50-year-old-medical-programme-cuba", title: "Jamaica to end 50-year-old medical programme with Cuba", publisher: "The Gleaner", date: 2026-03-05, tier: 3}
+      - {url: "https://jamaica-gleaner.com/article/news/20260307/cuban-foreign-ministry-jamaicas-decision-end-medical-programme-disregarded", title: "Cuban foreign ministry: Jamaica's decision to end medical programme 'disregarded' history of fruitful, sustained collaboration", publisher: "The Gleaner", date: 2026-03-07, tier: 3}
