@@ -3,8 +3,168 @@ name: Rapid Support Forces
 short: RSF
 type: armed-non-state
 wikipedia: https://en.wikipedia.org/wiki/Rapid_Support_Forces
-coords: [24.88, 12.05]
+coords:
+- 24.88
+- 12.05
 seat: Nyala / El Fasher
-regions: [middle-east]
-card: stub
-tier: minor
+regions:
+- north-africa
+card: full
+tier: protagonist
+last_verified: '2026-10-16'
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: 'Take the state in Khartoum by force and replace the army-led government with its own. The RSF built a parallel Government of Peace and Unity (charter signed in Nairobi in Feb 2025, announced by Hemedti on 15 Apr 2025, seat Nyala). On 22 Sep 2026 Reuters reported Hemedti telling his troops that the time for fighting had come. The aim is the state, not a truce: its humanitarian truce of 6 Nov 2025 was a tactical pause.'
+    confidence: B
+    sources:
+    - url: https://www.aljazeera.com/news/2025/4/15/sudan-paramilitary-declares-rival-government-two-years-into-civil-war
+      title: Sudan paramilitary declares rival government two years into civil war
+      publisher: Al Jazeera
+      date: '2025-04-15'
+      tier: 3
+    - url: https://www.al-monitor.com/originals/2026/09/us-ties-sudanese-army-leaders-un-visa-ceasefire-plan-sources-say
+      title: US ties Sudanese army leader's UN visa to ceasefire plan, sources say
+      publisher: Reuters (via Al-Monitor)
+      date: '2026-09-22'
+      tier: 3
+  - rank: 2
+    text: 'Win recognition for the parallel government. The African Union Peace and Security Council, the Arab League, Saudi Arabia, Qatar and Egypt rejected it in 2025, so the RSF has no state standing: its diplomacy runs through Nairobi, the Quad truce track and its allied groups (SPLM-N of al-Hilu) rather than through recognised embassies.'
+    confidence: B
+    sources:
+    - url: https://www.peaceau.org/en/article/press-statement-of-the-1264th-meeting-of-the-peace-and-security-council-held-on-11-march-2025-on-the-situation-in-sudan
+      title: Press statement of the 1264th meeting of the Peace and Security Council, held on 11 March 2025, on the situation in Sudan
+      publisher: African Union Peace and Security Council
+      date: '2025-03-11'
+      tier: 1
+    - url: https://sudantribune.com/article298021/
+      title: Saudi Arabia, Qatar, Kuwait reject parallel Sudan government plan
+      publisher: Sudan Tribune
+      date: '2025-03-01'
+      tier: 3
+    - url: https://www.reuters.com/world/africa/sudans-rsf-allies-formalise-vision-parallel-government-2025-03-04/
+      title: Sudan's RSF and allies formalise vision for parallel government
+      publisher: Reuters
+      date: '2025-03-04'
+      tier: 3
+  - rank: 3
+    text: 'Hold Darfur and open the road to Kordofan and El Obeid. The RSF holds almost all of Darfur and parts of Kordofan; the army has been retaking Kordofan since January 2026 (Kadugli, Dilling, the Khartoum-El Obeid road in late July, al-Mazroub on 2 Oct 2026). Losing Kordofan would cut the RSF off from the centre, so the western and southern front is where the objective is decided.'
+    confidence: B
+    sources:
+    - url: https://www.aljazeera.com/news/2026/10/4/is-the-sudanese-army-gaining-momentum-against-the-rsf
+      title: Is the Sudanese army gaining momentum against the RSF?
+      publisher: Al Jazeera
+      date: '2026-10-04'
+      tier: 3
+    - url: https://sudanwarmonitor.com/p/sudanese-army-restores-khartoum-el-obeid-road-link
+      title: Sudanese Army Restores Khartoum-El Obeid Road Link
+      publisher: Sudan War Monitor
+      date: '2026-07-27'
+      tier: 3
+    - url: https://www.securitycouncilreport.org/monthly-forecast/2026-02/sudan-38.php
+      title: Sudan - Security Council Report monthly forecast
+      publisher: Security Council Report
+      date: '2026-02'
+      tier: 2
+  means:
+  - domain: economic
+    text: 'Gold. The RSF seized key mines, the Sudan Gold Refinery and control of gold processing and exports through the RSF-linked Al Gunade company. Smuggled gold reaches the UAE, the main buyer, by routes through Libya, Chad, South Sudan and Egypt, with Dubai as the entry point. Gold revenue finances the war; the figures are reported, not audited.'
+    confidence: B
+    sources:
+    - url: https://www.ispionline.it/en/publication/the-role-of-gold-in-the-sudanese-war-207364
+      title: The Role of Gold in the Sudanese War
+      publisher: ISPI
+      date: '2025-04-30'
+      tier: 2
+  - domain: military
+    text: 'The Darfur base and the supply lines that reach it. The base is Darfur and the Nyala seat; the reported arms and fighter routes run through Amdjarass in Chad and Kufra in eastern Libya (about 600 flights to Kufra in 2025 by RFI count, UAE denied). The UN fact-finding mission of 3 Sep 2026 names Benghazi, Kufra and Jufra as hubs and says RSF fighters trained in Libya took part in the Zamzam attack (Apr 2025) and the El Fasher assault (Oct 2025).'
+    confidence: B
+    sources:
+    - url: https://libyasecuritymonitor.com/?p=9572
+      title: UN report mentions Libya as one of the transit and logistical hubs for Sudan's RSF rebels
+      publisher: Libya Security Monitor (reporting the UN Fact-Finding Mission for the Sudan)
+      date: '2026-09-03'
+      tier: 3
+    - url: https://www.newarab.com/news/uae-accused-covert-arms-routes-sudans-rsf-0
+      title: 'UAE accused of using covert arms routes to Sudan''s RSF (Le Monde investigation; RFI: about 600 flights to Koufra in 2025)'
+      publisher: The New Arab
+      date: '2026-03-23'
+      tier: 3
+    - url: https://www.libya-analysis.com/blogs/reuters-how-a-remote-airstrip-in-libya-reshaped-sudans-civil-war
+      title: 'Reuters: ''How a remote airstrip in Libya reshaped Sudan''s civil war'''
+      publisher: Libya Analysis (summarising Reuters)
+      date: '2025-12-22'
+      tier: 3
+  constraints:
+  - text: 'No recognised state and no sovereign routes. The parallel government is rejected by the African Union, the Arab League and most of the region, and the RSF has neither port nor airspace of its own: every reported supply line runs through a third state (Chad, eastern Libya, Ethiopia). Those doors can close: Chad shut its eastern border on 23 Feb 2026 and Kufra airport was shut for a month in Jan 2026.'
+    confidence: B
+    sources:
+    - url: https://www.bbc.com/news/articles/cm2x1n95z5vo
+      title: Chad shuts border with Sudan in bid to stop conflict spreading
+      publisher: BBC
+      date: '2026-02-23'
+      tier: 3
+    - url: https://libyasecuritymonitor.com/kufra-airport-shut-for-one-month-likely-due-to-saudi-and-egyptian-pressure/
+      title: Kufra Airport shut for one month likely due to Saudi and Egyptian pressure
+      publisher: Libya Security Monitor
+      date: '2026-01'
+      tier: 3
+  - text: 'Exposure to atrocity findings and sanctions. The US determined on 7 Jan 2025 that the RSF and allied militias committed genocide and sanctioned Hemedti; the El Fasher capture of Oct 2025 was followed by reports that more than 2,000 civilians were executed and by satellite images of burial and burning. Any patron that backs the RSF openly pays for it, and the record closes the Western door to any settlement that leaves the RSF with power.'
+    confidence: B
+    sources:
+    - url: https://www.voanews.com/a/us-determines-sudan-s-rsf-committed-genocide-sanctions-leader/7927309.html
+      title: US determines Sudan's RSF committed genocide, sanctions leader
+      publisher: Voice of America
+      date: '2025-01-07'
+      tier: 3
+    - url: https://www.abc.net.au/news/2025-10-29/sudanese-paramilitary-accused-of-killing-2-000-civilians/105945372
+      title: Sudan paramilitary group accused of killing 2,000 civilians in El-Fasher
+      publisher: ABC News (Australia)
+      date: '2025-10-28'
+      tier: 3
+    - url: https://www.theguardian.com/global-development/2025/dec/05/rsf-massacres-sudanese-city-el-fasher-slaughterhouse-satellite-images
+      title: RSF massacres left Sudanese city 'a slaughterhouse', satellite images show
+      publisher: The Guardian
+      date: '2025-12-05'
+      tier: 3
+  paradoxes:
+  - text: 'The patron that arms the RSF is the reason it cannot be recognised. Abu Dhabi supplies the RSF, but the UAE is inside the Quad and Egypt, Saudi Arabia and the AU reject the parallel government as the UAE''s creature. The more the UAE backs the RSF, the less the RSF can become a state, and the truce it accepts (6 Nov 2025) is one it negotiated through the same Quad.'
+    confidence: B
+    sources:
+    - url: https://www.aljazeera.com/news/2025/11/24/sudan-army-chief-rejects-truce-proposal-citing-uae-role
+      title: Sudan army chief rejects the Quad's truce proposal, citing UAE role
+      publisher: Al Jazeera
+      date: '2025-11-24'
+      tier: 3
+    - url: https://www.al-monitor.com/originals/2025/11/sudans-rsf-declares-truce-after-army-rejects-us-plan
+      title: Sudan's RSF declares truce after army rejects US plan
+      publisher: Al-Monitor
+      date: '2025-11'
+      tier: 3
+    - url: https://www.peaceau.org/en/article/press-statement-of-the-1264th-meeting-of-the-peace-and-security-council-held-on-11-march-2025-on-the-situation-in-sudan
+      title: Press statement of the 1264th meeting of the Peace and Security Council, held on 11 March 2025, on the situation in Sudan
+      publisher: African Union Peace and Security Council
+      date: '2025-03-11'
+      tier: 1
+  - text: 'Territory taken by massacre cannot be governed. El Fasher (Oct 2025) gave the RSF the army''s last Darfur base and control of almost all of Darfur, but the atrocities made the genocide finding the frame of any settlement, and the army has since retaken Kordofan towns and claims momentum. A state needs the population it has terrorised; the means it used to take the territory are the ones that stop it from holding the state.'
+    confidence: B
+    sources:
+    - url: https://www.aljazeera.com/news/2026/10/4/is-the-sudanese-army-gaining-momentum-against-the-rsf
+      title: Is the Sudanese army gaining momentum against the RSF?
+      publisher: Al Jazeera
+      date: '2026-10-04'
+      tier: 3
+    - url: https://www.theguardian.com/global-development/2025/dec/05/rsf-massacres-sudanese-city-el-fasher-slaughterhouse-satellite-images
+      title: RSF massacres left Sudanese city 'a slaughterhouse', satellite images show
+      publisher: The Guardian
+      date: '2025-12-05'
+      tier: 3
+    - url: https://www.voanews.com/a/us-determines-sudan-s-rsf-committed-genocide-sanctions-leader/7927309.html
+      title: US determines Sudan's RSF committed genocide, sanctions leader
+      publisher: Voice of America
+      date: '2025-01-07'
+      tier: 3
+  reading: |
+    The RSF is a militia that has tried to become a state: it took Darfur and the gold fields, and it declared its own government in 2025, but it has no recognition, its supply runs through the neighbours of Sudan, and the El Fasher record has made the genocide finding the frame of any settlement.
+    On the Luttwak reading its central paradox is that the patron that makes it strong, the UAE, is also the reason it cannot be recognised, and the army's retaking of Kordofan since January 2026 shows that a massacre can take territory without making a state.
+    Its truces are tactical pauses, not a change of aim, so the state in Khartoum remains the objective and the war continues.
