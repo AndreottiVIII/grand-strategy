@@ -2045,3 +2045,31 @@ relations:
     tier: 3
   to: NER
   mirrored_from: NER
+- layer: alignment
+  type: security_guarantee
+  summary: Russian military advisers have guarded the regime since 2018, widely believed to be Wagner; Africa Corps was to succeed Wagner in 2026 under a security deal Touadera finalised in Moscow in March
+    2026. No treaty text was found.
+  since: 2018-03
+  until: null
+  last_verified: '2026-10-16'
+  confidence: C
+  note: The type is our reading of a stable de facto security alignment. The Africa Corps date rests on one outlet's report of the March 2026 visit and is not confirmed; the USD 15m a month figure is single-source
+    and not used.
+  sources:
+  - url: https://en.wikipedia.org/wiki/Foreign_relations_of_the_Central_African_Republic
+    title: Foreign relations of the Central African Republic
+    publisher: Wikipedia (index only)
+    date: '2026-10-16'
+    tier: 4
+  - url: https://www.justiceinfo.net/en/38319-russia-s-involvement-in-car-complicates-un-and-au-task.html
+    title: Russia's involvement in CAR complicates UN and AU task
+    publisher: JusticeInfo.net
+    date: '2026'
+    tier: 3
+  - url: https://naharnet.com/stories/en/277873-c-africa-says-russian-rwandan-troops-sent-after-alleged-coup-bid
+    title: C. Africa Says Russian, Rwandan Troops Sent after Alleged Coup Bid
+    publisher: Naharnet
+    date: '2025'
+    tier: 3
+  to: CAF
+  mirrored_from: CAF
