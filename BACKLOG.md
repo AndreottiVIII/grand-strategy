@@ -53,3 +53,5 @@ like every improving idea that comes to you".
 - **Dataset recognition rows to check**: KIR -> XKX (Kiribati recognising Kosovo since 2010 rests on one image URL; the Kiribati foreign-relations page does not list it), TON -> XKX (2014 citation unchecked).
 
 - **EAC membership dataset gap**: the Wikidata memberships hold only Rwanda for org-eac; Tanzania's card added its own row by hand. Check the other EAC members (KEN, UGA, BDI, SSD, COD, SOM) and fix the generator or memberships-manual.yaml.
+
+- **Alignment without a treaty (China-Russia question, Davide 16/10).** Both read each other as partner with affinity: no defence clause, Beijing refuses the alliance Moscow would sign. The grade is right by the ontology, but the map does not show their de facto bloc. Idea: a marker 'aligned, no treaty' (a stance flag or a third bond value) that the build can use for gatherings and the map, for pairs like China-Russia, China-Pakistan, Russia-Iran, Turkey-Azerbaijan. Needs an ONTOLOGY decision.
