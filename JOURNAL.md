@@ -1,5 +1,32 @@
 # Journal
 
+## 2026-10-16 · Burst at the weekly reset: 113 cards; Southeast Asia, Oceania, North Africa and the Horn
+
+Davide at the reset: burn the expiring five-hour window with as many cards as possible, then
+hold to 80% weekly in the next window. Up to twenty agents ran at once: Thailand, Malaysia,
+Singapore, Myanmar, Australia, Cambodia, Laos, Brunei, Timor-Leste, Papua New Guinea, Fiji, New
+Zealand, Tunisia, Mauritania, Algeria, Morocco, Libya, Sudan, Eritrea, South Sudan, Tonga and
+Solomon Islands reviewed and online (115 full cards, ~24.7M tokens). Cost of the burst: the
+shared web-search quota ran out after 10-17 searches per agent, so the late cards lean on
+fetches and the Wikipedia API; and at 07:00 the five-hour limit killed eleven agents in flight
+(USA, China, Ethiopia, Somalia, Kenya, Rwanda, Tanzania, Djibouti, Uganda, Samoa, Vanuatu). Files
+left on disk were resumed after the 07:30 reset, six agents at a time.
+
+Decisions and corrections in review: the junta's reading of the NUG and PDFs is adversary (the
+2021 terrorist designation), the Arakan Army rival (truces); Singapore reads Myanmar as reluctant
+partner, mirrored from Myanmar's card; Fiji now reads Australia as ally (Veitacini Treaty of 6 Jul
+2026, mirrored from Australia's card); Eritrea reads Ethiopia as adversary, as Ethiopia reads
+Eritrea (the October 2026 rupture: embassy closed, troops in Tigray, Article 51 at the Security
+Council, Assab); Australia reads China as rival, warming (AUKUS and the Pacific denial web against
+the trade thaw); Morocco reads the Polisario as adversary and Ceuta-Melilla as claimed territory.
+A Wikidata membership row made Australia an ASEAN member: removed from the dataset and excluded in
+the generator (WRONG set in tools/datasets/wikidata.py). New tool `tools/onesided.py` lists the
+readings that have no hand-written counterpart: Davide wants to review them with me before the
+atlas is declared complete. Thin minor cards (South Sudan, Eritrea, Tonga, Solomon Islands,
+Mauritania, Laos, Bahrain) and an eastern-Libya actor are in BACKLOG. Next: the Horn resumed,
+Tanzania, Rwanda, Burundi and the Indian Ocean islands, the Pacific micro-states, then West,
+Central and Southern Africa and the Americas; UK and France rewritten with Fable last.
+
 ## 2026-10-14 · 91 cards: Russia, Israel, Central Asia, East Asia; stopped at 91% weekly, Fable at 97%
 
 Davide reopened the run in the morning ("fino al 95%", then 93%). Written: Russia (Fable, part
