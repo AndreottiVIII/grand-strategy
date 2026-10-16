@@ -7,9 +7,14 @@ stances:
   since: '2024'
   last_verified: '2026-10-12'
   confidence: C
-  note: "Transactional: the EU pays (EUR 210m, 2024) for Mauritania's control of migration toward Europe, with no alignment. Warming rests on that 2024 money deal alone; no later source was checked. Bond none: pure interest, nothing underneath."
+  note: 'Transactional: the EU pays (EUR 210m, 2024) for Mauritania''s control of migration toward Europe, with no alignment. Warming rests on that 2024 money deal alone; no later source was checked. Bond
+    none: pure interest, nothing underneath.'
   sources:
-    - {url: "https://www.ft.com/content/cb864a91-2396-420b-8572-6fc98a720819", title: "Brussels to pay Mauritania for stopping Europe-bound migrants", publisher: "Financial Times", date: 2024, tier: 3}
+  - url: https://www.ft.com/content/cb864a91-2396-420b-8572-6fc98a720819
+    title: Brussels to pay Mauritania for stopping Europe-bound migrants
+    publisher: Financial Times
+    date: 2024
+    tier: 3
 - toward: ESP
   grade: partner
   trend: stable
@@ -17,7 +22,36 @@ stances:
   since: '2024-08-27'
   last_verified: '2026-10-12'
   confidence: C
-  note: "Transactional migration pact signed in Nouakchott on 27-28 Aug 2024: a one-year labour-migration pilot and security cooperation against smuggling. No 2025 follow-up was found, so stable is a default, not a reading. Bond none."
+  note: 'Transactional migration pact signed in Nouakchott on 27-28 Aug 2024: a one-year labour-migration pilot and security cooperation against smuggling. No 2025 follow-up was found, so stable is a default,
+    not a reading. Bond none.'
   sources:
-    - {url: "https://www.euronews.com/2024/08/28/spain-and-mauritania-sign-an-agreement-to-regulate-migration", title: "Spain and Mauritania sign an agreement to regulate migration", publisher: "Euronews", date: 2024-08-28, tier: 3}
-    - {url: "https://www.thelocal.es/20240828/mauritania-and-spain-pledge-cooperation-on-migration", title: "Mauritania and Spain pledge cooperation on migration", publisher: "The Local Spain", date: 2024-08-28, tier: 3}
+  - url: https://www.euronews.com/2024/08/28/spain-and-mauritania-sign-an-agreement-to-regulate-migration
+    title: Spain and Mauritania sign an agreement to regulate migration
+    publisher: Euronews
+    date: 2024-08-28
+    tier: 3
+  - url: https://www.thelocal.es/20240828/mauritania-and-spain-pledge-cooperation-on-migration
+    title: Mauritania and Spain pledge cooperation on migration
+    publisher: The Local Spain
+    date: 2024-08-28
+    tier: 3
+- toward: MAR
+  grade: partner
+  trend: stable
+  bond: none
+  since: '2023'
+  last_verified: '2026-10-16'
+  confidence: C
+  reciprocal_of: MAR
+  note: Provisional reciprocal of Morocco's 'partner' stance toward Mauritania, written on 2026-10-16 by tools/reciprocate.py from the same evidence; to be rewritten from Mauritania's side.
+  sources:
+  - url: https://carnegieendowment.org/middle-east/diwan/2025/09/between-the-sahel-and-the-maghreb
+    title: Between the Sahel and the Maghreb
+    publisher: Carnegie Middle East Center (Diwan, Yasmine Zarhloule)
+    date: '2025-09-11'
+    tier: 2
+  - url: https://www.moroccoworldnews.com/2026/02/280650/us-intensifies-backing-of-moroccos-autonomy-plan-in-new-western-sahara-talks/
+    title: US intensifies backing of Morocco's autonomy plan in new Western Sahara talks
+    publisher: Morocco World News (Moroccan outlet; used for dated facts only)
+    date: '2026-02-24'
+    tier: 3

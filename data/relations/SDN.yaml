@@ -1,0 +1,954 @@
+from: SDN
+relations:
+- to: nsa-rsf
+  layer: objective
+  type: regime_goal
+  summary: 'Destroy the RSF as an armed force and keep it out of any settlement: Burhan called the Quad''s Nov 2025 text ''the worst yet'' because it would leave the militia where it is, urged the UN in
+    2023 to declare the RSF a terrorist organisation, and in 2026 wrote that earlier pauses only let the RSF and its backers regroup. The army holds Khartoum and most of the north, east and centre; the
+    RSF almost all of Darfur and parts of Kordofan.'
+  since: '2023-04-15'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/news/2025/11/24/sudan-army-chief-rejects-truce-proposal-citing-uae-role
+    title: Sudan army chief rejects the Quad's truce proposal, citing UAE role
+    publisher: Al Jazeera
+    date: '2025-11-24'
+    tier: 3
+  - url: https://www.al-monitor.com/originals/2025/11/sudans-rsf-declares-truce-after-army-rejects-us-plan
+    title: Sudan's RSF declares truce after army rejects US plan
+    publisher: Al-Monitor
+    date: 2025-11
+    tier: 3
+  - url: https://www.al-monitor.com/originals/2026/09/us-ties-sudanese-army-leaders-un-visa-ceasefire-plan-sources-say
+    title: US ties Sudanese army leader's UN visa to ceasefire plan, sources say
+    publisher: Reuters (via Al-Monitor)
+    date: '2026-09-22'
+    tier: 3
+  - url: https://www.france24.com/en/live-news/20230921-sudan-army-chief-warns-un-that-war-could-spill-over-in-region
+    title: Sudan army chief warns UN that war could spill over in region
+    publisher: France 24
+    date: '2023-09-21'
+    tier: 3
+  - url: https://www.aljazeera.com/news/2026/10/4/is-the-sudanese-army-gaining-momentum-against-the-rsf
+    title: Is the Sudanese army gaining momentum against the RSF?
+    publisher: Al Jazeera
+    date: '2026-10-04'
+    tier: 3
+- to: nsa-rsf
+  layer: objective
+  type: recognition_denied
+  summary: Refuses to recognise the RSF's Government of Peace and Unity (charter signed in Nairobi Feb 2025, announced by Hemedti on 15 Apr 2025, seat Nyala, Leadership Council 1 Jul 2025); the African
+    Union Peace and Security Council, the Arab League, Saudi Arabia, Qatar and Egypt rejected it too.
+  since: '2025-04-15'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://www.aljazeera.com/news/2025/4/15/sudan-paramilitary-declares-rival-government-two-years-into-civil-war
+    title: Sudan paramilitary declares rival government two years into civil war
+    publisher: Al Jazeera
+    date: '2025-04-15'
+    tier: 3
+  - url: https://www.reuters.com/world/africa/sudans-rsf-allies-formalise-vision-parallel-government-2025-03-04/
+    title: Sudan's RSF and allies formalise vision for parallel government
+    publisher: Reuters
+    date: '2025-03-04'
+    tier: 3
+  - url: https://www.peaceau.org/en/article/press-statement-of-the-1264th-meeting-of-the-peace-and-security-council-held-on-11-march-2025-on-the-situation-in-sudan
+    title: Press statement of the 1264th meeting of the Peace and Security Council, held on 11 March 2025, on the situation in Sudan
+    publisher: African Union Peace and Security Council
+    date: '2025-03-11'
+    tier: 1
+  - url: https://www.middleeastmonitor.com/20250221-arab-league-warns-against-any-steps-leading-to-sudans-division/
+    title: Arab League warns against any steps leading to Sudan's division
+    publisher: Middle East Monitor
+    date: '2025-02-21'
+    tier: 3
+  - url: https://sudantribune.com/article298021/
+    title: Saudi Arabia, Qatar, Kuwait reject parallel Sudan government plan
+    publisher: Sudan Tribune
+    date: '2025-03-01'
+    tier: 3
+  - url: https://www.aa.com.tr/en/middle-east/egypt-rejects-formation-of-any-parallel-government-in-sudan-khartoum/3491184
+    title: 'Egypt rejects formation of any parallel government in Sudan: Khartoum'
+    publisher: Anadolu Agency
+    date: '2025-03-05'
+    tier: 3
+- to: ARE
+  layer: objective
+  type: influence_goal
+  summary: 'End the UAE''s role as the RSF''s reported patron and bar it from the table: Khartoum took the UAE to the ICJ (dismissed 5 May 2025), cut relations on 6 May 2025, rejects the Quad because the
+    UAE sits in it, and in May 2026 said the drones that hit Khartoum were Emirati, launched from Bahir Dar in Ethiopia. The UAE denies arming the RSF.'
+  since: '2023-12-10'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/news/2025/11/24/sudan-army-chief-rejects-truce-proposal-citing-uae-role
+    title: Sudan army chief rejects the Quad's truce proposal, citing UAE role
+    publisher: Al Jazeera
+    date: '2025-11-24'
+    tier: 3
+  - url: https://www.aljazeera.com/news/2025/5/5/icj-dismisses-sudans-genocide-case-alleging-uae-backing-of-rsf-rebels
+    title: ICJ dismisses Sudan's genocide case alleging UAE backing of RSF rebels
+    publisher: Al Jazeera
+    date: '2025-05-05'
+    tier: 3
+  - url: https://www.newarab.com/news/sudan-government-declares-uae-aggressor-state-cuts-ties
+    title: Sudan government declares UAE 'aggressor state', cuts ties
+    publisher: The New Arab
+    date: '2025-05-06'
+    tier: 3
+  - url: https://allafrica.com/stories/202605060016.html
+    title: 'Sudan: ''Drones that targeted Khartoum were Emirati, launched from Bahir Dar, Ethiopia'' - Sudanese Armed Forces'
+    publisher: AllAfrica
+    date: '2026-05-06'
+    tier: 3
+- to: EGY
+  layer: objective
+  type: influence_goal
+  summary: 'Keep Egypt as the army''s rear base and strategic backer: Cairo''s presidency named Sudan''s territorial integrity and the rejection of ''parallel entities'' as red lines (Dec 2025), Prime Minister
+    Idris made Egypt his first foreign visit (Aug 2025) and Egyptian-flown Akincis operate from East Oweinat (Cairo does not confirm).'
+  since: '2023-04-15'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.yahoo.com/news/articles/egypt-steps-military-role-sudan-084629102.html
+    title: Turkey delivers advanced drones to Egypt for Sudan operations
+    publisher: Reuters (via Yahoo News)
+    date: '2026-02-03'
+    tier: 3
+  - url: https://www.nytimes.com/2026/02/01/world/africa/egypt-sudan-drones.html
+    title: The Secret Egyptian Air Base Behind Sudan's Drone War
+    publisher: The New York Times
+    date: '2026-02-01'
+    tier: 3
+  - url: https://www.france24.com/en/live-news/20250807-sudan-s-pm-in-egypt-on-first-foreign-visit
+    title: Sudan's PM in Egypt on first foreign visit
+    publisher: France 24
+    date: '2025-08-07'
+    tier: 3
+  - url: https://www.aa.com.tr/en/middle-east/egypt-rejects-formation-of-any-parallel-government-in-sudan-khartoum/3491184
+    title: 'Egypt rejects formation of any parallel government in Sudan: Khartoum'
+    publisher: Anadolu Agency
+    date: '2025-03-05'
+    tier: 3
+- to: USA
+  layer: objective
+  type: influence_goal
+  summary: 'Win Washington to Khartoum''s reading of the war - the RSF a terrorist force, no truce that freezes the lines - without taking US direction: Burhan urged the UN in 2023 to declare the RSF a
+    terrorist organisation and wrote in Foreign Policy (2026) that he would refuse external directives on the war.'
+  since: 2023-09
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.france24.com/en/live-news/20230921-sudan-army-chief-warns-un-that-war-could-spill-over-in-region
+    title: Sudan army chief warns UN that war could spill over in region
+    publisher: France 24
+    date: '2023-09-21'
+    tier: 3
+  - url: https://www.dabangasudan.org/en/all-news/article/el-burhan-returns-to-sudan-from-unga78-meets-foreign-delegates
+    title: 'El Burhan returns to Sudan from #UNGA78, meets foreign delegates'
+    publisher: Radio Dabanga
+    date: '2023-09-25'
+    tier: 3
+  - url: https://www.al-monitor.com/originals/2026/09/us-ties-sudanese-army-leaders-un-visa-ceasefire-plan-sources-say
+    title: US ties Sudanese army leader's UN visa to ceasefire plan, sources say
+    publisher: Reuters (via Al-Monitor)
+    date: '2026-09-22'
+    tier: 3
+- to: ETH
+  layer: objective
+  type: territorial_claim
+  summary: 'Keeps al-Fashaga: in July 2025 a Sudanese official accused Ethiopian-backed militias of new incursions into the border district while the army''s units were redeployed to the war fronts.'
+  since: '2025-07-04'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  note: Single tier-3 report of an official's allegation; the older al-Fashaga dispute is not modelled here.
+  sources:
+  - url: https://sudantribune.com/article302566/
+    title: Ethiopian militias making new incursions on Sudan border, official says
+    publisher: Sudan Tribune
+    date: '2025-07-04'
+    tier: 3
+- to: SSD
+  layer: objective
+  type: territorial_claim
+  summary: Holds that Heglig is Sudanese (the 2012 clash with South Sudan over the field); the RSF took it on 8 Dec 2025, the army withdrew across the border and a South Sudanese garrison replaced both
+    on 10 Dec, a placement the army preferred to RSF control.
+  since: '2012-04-12'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.bbc.co.uk/news/world-africa-17691506
+    title: South Sudan refuses to withdraw troops from oilfield
+    publisher: BBC
+    date: '2012-04-12'
+    tier: 3
+  - url: https://www.aljazeera.com/news/2025/12/11/south-sudan-army-to-secure-critical-heglig-oilfield-in-sudan-war-spillover
+    title: South Sudan army to secure critical Heglig oilfield in Sudan war spillover
+    publisher: Al Jazeera
+    date: '2025-12-11'
+    tier: 3
+  - url: https://www.aljazeera.com/news/2025/12/8/rsf-claims-seizure-of-key-heglig-oil-field-in-sudan
+    title: RSF seizes key Heglig oilfield as it pushes to expand control in Sudan
+    publisher: Al Jazeera
+    date: '2025-12-08'
+    tier: 3
+- to: RUS
+  layer: alignment
+  type: treaty
+  summary: Agreement of December 2020 for a Russian naval facility at Port Sudan (25 years, up to 300 personnel, four warships); never ratified. The army reviewed it in 2021 and 2023 and in Feb 2025 the
+    foreign minister said in Moscow that only ratification was missing. No source seen shows ratification or construction by Oct 2026.
+  since: 2020-12
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  note: Unratified, therefore not an alliance. Some 2026-dated web pages repeat the 2021 'review' story; none was used.
+  sources:
+  - url: https://apnews.com/article/international-news-sudan-moscow-africa-russia-0e1932a384bba427e13e590a4ac7a1f8
+    title: Russia to establish navy base in Sudan for at least 25 years
+    publisher: Associated Press
+    date: '2020-12-08'
+    tier: 3
+  - url: https://apnews.com/article/europe-russia-middle-east-africa-sudan-ea6d67264535d5caa01b21ef01a04b47
+    title: 'Sudan general: Military to review navy base deal with Russia'
+    publisher: Associated Press
+    date: '2021-06-02'
+    tier: 3
+  - url: https://apnews.com/article/politics-sudan-government-moscow-803738fba4d8f91455f0121067c118dd
+    title: Sudan military finishes review of Russian Red Sea base deal
+    publisher: Associated Press
+    date: '2023-02-11'
+    tier: 3
+  - url: https://www.intellinews.com/sudan-agrees-to-host-russian-naval-base-in-port-sudan-says-foreign-minister-366943/
+    title: Sudan agrees to host Russian naval base in Port Sudan, says foreign minister
+    publisher: bne IntelliNews
+    date: 2025-02
+    tier: 3
+- to: SSD
+  layer: dependency
+  type: energy_export
+  summary: 'South Sudan''s crude exits through Sudanese pipelines to the Red Sea: Heglig''s central processing facility can handle up to 130,000 barrels a day of it, under a Khartoum-Juba oil and security
+    agreement covering oilfields, pipelines and pumping stations. Heglig''s own output was about 20,000 barrels a day against 64,000 before the war.'
+  since: '2012'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 130000
+  unit: barrels_per_day_heglig_processing_capacity_for_south_sudanese_crude
+  note: A capacity, not a flow; transit fees are not published in the sources read. Treated as export-side dependency (the transit revenue).
+  sources:
+  - url: https://www.aljazeera.com/news/2025/12/11/south-sudan-army-to-secure-critical-heglig-oilfield-in-sudan-war-spillover
+    title: South Sudan army to secure critical Heglig oilfield in Sudan war spillover
+    publisher: Al Jazeera
+    date: '2025-12-11'
+    tier: 3
+  - url: https://sudantribune.com/article/307913
+    title: RSF seizes strategic Heglig oilfield, local administration deploys protection force
+    publisher: Sudan Tribune
+    date: '2025-12-08'
+    tier: 3
+- to: TUR
+  layer: dependency
+  type: arms_supply
+  summary: 'Baykar drones for the army: a reported USD 120m contract (2024, citing the Washington Post) covering drones, ammunition, air defence and Turkish specialists; the army used the TB2 and adopted
+    the Akinci in June 2026.'
+  since: '2024'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 120
+  unit: usd_million_reported_baykar_contract
+  note: Figure is a press report, not a published contract; Baykar and the army did not comment.
+  sources:
+  - url: https://fr.allafrica.com/stories/202608190458.html
+    title: 'Sudan: military cooperation between the army and Turkey grows around drones'
+    publisher: RFI (via AllAfrica)
+    date: '2026-08-19'
+    tier: 3
+    title_original: 'Soudan: La coopération militaire entre l''armée et la Turquie se renforce autour des drones'
+    lang: fr
+  - url: https://www.fdd.org/analysis/op_eds/2025/03/15/is-turkey-playing-both-sides-of-sudans-civil-war/
+    title: Is Turkey Playing Both Sides of Sudan's Civil War?
+    publisher: Foundation for Defense of Democracies
+    date: '2025-03-15'
+    tier: 3
+- to: PAK
+  layer: dependency
+  type: arms_supply
+  summary: Pakistan neared a USD 1.5bn package (10 K-8 jets, 200+ drones, air defence) in Jan 2026; the sale was put on hold in April after a Saudi objection; about 100 Mohafiz-V armoured cars reached the
+    army in early Aug 2026.
+  since: 2026-01
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 1.5
+  unit: usd_bn_proposed_package_on_hold
+  note: Only the armoured-car delivery is reported as completed.
+  sources:
+  - url: https://www.reuters.com/business/aerospace-defense/pakistan-nears-15-billion-deal-supply-weapons-jets-sudan-sources-say-2026-01-09/
+    title: Pakistan nears $1.5 billion deal to supply weapons, jets to Sudan, sources say
+    publisher: Reuters
+    date: '2026-01-09'
+    tier: 3
+  - url: https://www.reuters.com/world/middle-east/pakistan-places-15-billion-sudan-weapons-sale-hold-after-saudi-objection-sources-2026-04-20/
+    title: Pakistan places $1.5 billion Sudan weapons sale on hold after Saudi objection, sources say
+    publisher: Reuters
+    date: '2026-04-20'
+    tier: 3
+  - url: https://sudantribune.com/article/317072
+    title: Sudan army receives Pakistani armoured vehicles and drones, military sources say
+    publisher: Sudan Tribune
+    date: '2026-08-06'
+    tier: 3
+  - url: http://thedefensepost.com/2026/08/07/sudan-mohafiz-vehicles-pakistan/
+    title: Sudanese Forces Expand Arsenal With Mohafiz Armored Vehicles From Pakistan
+    publisher: The Defense Post
+    date: '2026-08-07'
+    tier: 3
+- to: IRN
+  layer: dependency
+  type: arms_supply
+  summary: 'Iranian drones (Mohajer-6) are reported to have arrived by air: flight tracking showed a Qeshm Fars Air Boeing 747 making six trips from Iran to Port Sudan in Dec 2023-Jan 2024. Sudan''s government
+    denied receiving Iranian military aid.'
+  since: 2023-12
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 6
+  unit: cargo_flights_iran_to_port_sudan_dec_2023_jan_2024_flight_tracking
+  note: A count of flights, not of weapons; cargo inferred, supply denied by Khartoum.
+  sources:
+  - url: https://www.reuters.com/world/middle-east/are-iranian-drones-turning-tide-sudans-civil-war-2024-04-10/
+    title: 'Sudan civil war: are Iranian drones helping the army gain ground?'
+    publisher: Reuters
+    date: '2024-04-10'
+    tier: 3
+  - url: https://theeastafrican.co.ke/tea/news/north-africa/are-iranian-drones-turning-tide-of-sudan-war-4585936
+    title: Are Iranian drones turning the tide of Sudan war?
+    publisher: The EastAfrican (reproducing the Reuters report)
+    date: '2024-04-10'
+    tier: 3
+  - url: https://sudantribune.com/article283689/
+    title: Sudan denies receiving military aid from Iran
+    publisher: Sudan Tribune
+    date: '2024-03-24'
+    tier: 3
+- to: RUS
+  layer: dependency
+  type: military_presence
+  summary: The planned Russian presence at Port Sudan (up to 300 personnel, four warships under the Dec 2020 agreement); no source seen shows it in operation.
+  since: 2020-12
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  value: 300
+  unit: personnel_planned_port_sudan_base_not_shown_operating
+  note: A plan, not a presence.
+  sources:
+  - url: https://apnews.com/article/international-news-sudan-moscow-africa-russia-0e1932a384bba427e13e590a4ac7a1f8
+    title: Russia to establish navy base in Sudan for at least 25 years
+    publisher: Associated Press
+    date: '2020-12-08'
+    tier: 3
+  - url: https://apnews.com/article/politics-sudan-government-moscow-803738fba4d8f91455f0121067c118dd
+    title: Sudan military finishes review of Russian Red Sea base deal
+    publisher: Associated Press
+    date: '2023-02-11'
+    tier: 3
+- to: EGY
+  layer: dependency
+  type: military_presence
+  summary: 'Egyptian-operated Bayraktar Akinci drones stationed at East Oweinat, an airstrip near the Sudan border, striking RSF targets for the army since about mid-2025: imagery of 28 Dec 2025 likely
+    shows two; a reported strike on an RSF convoy on 9 Jan 2026. Egypt''s government does not answer questions about the base.'
+  since: 2025-06
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  value: 2
+  unit: akinci_drones_identified_at_east_oweinat_planet_labs_28_dec_2025
+  note: Egyptian-owned aircraft acting for the army, so a foreign presence in effect; strikes are not officially confirmed.
+  sources:
+  - url: https://www.yahoo.com/news/articles/egypt-steps-military-role-sudan-084629102.html
+    title: Turkey delivers advanced drones to Egypt for Sudan operations
+    publisher: Reuters (via Yahoo News)
+    date: '2026-02-03'
+    tier: 3
+  - url: https://www.nytimes.com/2026/02/01/world/africa/egypt-sudan-drones.html
+    title: The Secret Egyptian Air Base Behind Sudan's Drone War
+    publisher: The New York Times
+    date: '2026-02-01'
+    tier: 3
+- to: QAT
+  layer: dependency
+  type: arms_supply
+  summary: Qatar is reported to give the army discreet military help, at least six Chinese warplanes according to an Arab-language report; Doha has not commented in the sources read.
+  since: '2025'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  value: 6
+  unit: chinese_warplanes_reported_supplied_by_qatar
+  note: Tier-3/4 reporting; the six-aircraft figure rests on one Arab-language outlet.
+  sources:
+  - url: https://www.africaintelligence.com/eastern-africa-and-the-horn/2025/10/14/doha-s-discreet-military-support-for-sudanese-armed-forces,110533861-eve
+    title: Doha's discreet military support for Sudanese Armed Forces
+    publisher: Africa Intelligence
+    date: '2025-10-14'
+    tier: 3
+  - url: https://arabefiles.com/arabefiles/17042/
+    title: 'Qatari support for the Sudanese army: strengthening capabilities or fuelling internal conflict?'
+    publisher: Arab Files
+    date: '2025-03-31'
+    tier: 4
+    title_original: الدعم القطري للجيش السوداني.. تعزيز للقدرات العسكرية أم تأجيج للصراع الداخلي؟
+    lang: ar
+- to: ARE
+  layer: action
+  type: incident
+  summary: Sudan sued the UAE at the ICJ for breaching the Genocide Convention by arming and funding the RSF; hearings on provisional measures were held on 10 Apr 2025 and the court dismissed the case on
+    5 May 2025 as manifestly lacking jurisdiction, because of the UAE's reservation to Article IX, not on the merits.
+  since: 2025-03
+  until: '2025-05-05'
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://www.aljazeera.com/news/2025/5/5/icj-dismisses-sudans-genocide-case-alleging-uae-backing-of-rsf-rebels
+    title: ICJ dismisses Sudan's genocide case alleging UAE backing of RSF rebels
+    publisher: Al Jazeera
+    date: '2025-05-05'
+    tier: 3
+  - url: https://apnews.com/article/sudan-war-uae-icj-genocide-convention-rsf-857a66e660bf9ea8417e8e32c097e7c8
+    title: Sudan tells top UN court that UAE is breaching genocide convention by funding rebels
+    publisher: Associated Press
+    date: '2025-04-10'
+    tier: 3
+  - url: https://www.icj-cij.org/sites/default/files/case-related/197/197-20250328-pre-01-00-en.pdf
+    title: Request for the indication of provisional measures - Public hearings to be held on Thursday 10 April 2025
+    publisher: International Court of Justice
+    date: '2025-03-28'
+    tier: 1
+- to: ARE
+  layer: action
+  type: incident
+  summary: On 6 May 2025, the day after the ICJ ruling, the army government cut diplomatic relations with the UAE, called it a 'state of aggression' and withdrew its ambassador; the UAE said it did not
+    recognise the decision. Khartoum had already declared 15 Emirati diplomats persona non grata on 10 Dec 2023.
+  since: '2025-05-06'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.newarab.com/news/sudan-government-declares-uae-aggressor-state-cuts-ties
+    title: Sudan government declares UAE 'aggressor state', cuts ties
+    publisher: The New Arab
+    date: '2025-05-06'
+    tier: 3
+  - url: https://www.ewn.co.za/2025/05/06/sudan-cuts-ties-with-uae-accused-of-backing-paramilitaries
+    title: Sudan cuts ties with UAE, accused of backing paramilitaries
+    publisher: AFP (via EWN)
+    date: '2025-05-06'
+    tier: 3
+  - url: https://www.reuters.com/world/africa/sudan-declares-15-uae-diplomats-persona-non-grata-2023-12-10/
+    title: Sudan declares 15 UAE diplomats persona non grata
+    publisher: Reuters
+    date: '2023-12-10'
+    tier: 3
+- to: nsa-rsf
+  layer: action
+  type: incident
+  summary: On 28 Oct 2025 Burhan confirmed the army's withdrawal from El Fasher, its last Darfur stronghold, after the RSF took the 6th Infantry Division headquarters; humanitarian workers and officials
+    reported more than 2,500 civilians executed and satellite images later showed bodies being buried and burned.
+  since: '2025-10-28'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.abc.net.au/news/2025-10-29/sudanese-paramilitary-accused-of-killing-2-000-civilians/105945372
+    title: Sudan paramilitary group accused of killing 2,000 civilians in El-Fasher
+    publisher: ABC News (Australia)
+    date: '2025-10-28'
+    tier: 3
+  - url: https://www.theguardian.com/global-development/2025/dec/05/rsf-massacres-sudanese-city-el-fasher-slaughterhouse-satellite-images
+    title: RSF massacres left Sudanese city 'a slaughterhouse', satellite images show
+    publisher: The Guardian
+    date: '2025-12-05'
+    tier: 3
+- to: nsa-rsf
+  layer: action
+  type: incident
+  summary: 'Army gains in Kordofan: Kadugli reached and the siege of Dilling broken (late Jan 2026), the Khartoum-El Obeid road restored (late Jul 2026), al-Mazroub taken on 2 Oct 2026 and a ''knockout
+    blow'' claimed in Blue Nile on 3 Oct; the US warned in June of ''imminent'' RSF atrocities if El Obeid fell. Claims are the parties'' own; independent confirmation is thin.'
+  since: 2026-01
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/news/2026/10/4/is-the-sudanese-army-gaining-momentum-against-the-rsf
+    title: Is the Sudanese army gaining momentum against the RSF?
+    publisher: Al Jazeera
+    date: '2026-10-04'
+    tier: 3
+  - url: https://sudanwarmonitor.com/p/sudanese-army-restores-khartoum-el-obeid-road-link
+    title: Sudanese Army Restores Khartoum-El Obeid Road Link
+    publisher: Sudan War Monitor
+    date: '2026-07-27'
+    tier: 3
+  - url: https://www.securitycouncilreport.org/monthly-forecast/2026-02/sudan-38.php
+    title: Sudan - Security Council Report monthly forecast
+    publisher: Security Council Report
+    date: 2026-02
+    tier: 2
+  - url: https://www.bbc.com/news/articles/cjwz6z14w65o
+    title: 'Kordofan drone strikes: Sudan''s pivotal new front line as truce remains elusive'
+    publisher: BBC
+    date: '2026-02-25'
+    tier: 3
+  - url: https://www.nytimes.com/2026/06/23/world/africa/sudan-war-rsf-atrocities.html
+    title: U.S. Warns of 'Imminent' Atrocities in Sudanese City
+    publisher: The New York Times
+    date: '2026-06-23'
+    tier: 3
+- to: EGY
+  layer: action
+  type: visit
+  summary: Prime Minister Kamil Idris's first foreign visit was to Egypt (Aug 2025); on 4 Oct 2026 Burhan joined Sisi, Isaias Afwerki and Hassan Sheikh Mohamud at the El Alamein summit, reported to aim
+    at consolidating a four-state alignment with wider military cooperation and at protecting Red Sea shipping.
+  since: '2025-08-07'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.france24.com/en/live-news/20250807-sudan-s-pm-in-egypt-on-first-foreign-visit
+    title: Sudan's PM in Egypt on first foreign visit
+    publisher: France 24
+    date: '2025-08-07'
+    tier: 3
+  - url: https://www.thenationalnews.com/news/mena/2026/10/04/egypt-hosts-four-way-summit-as-tensions-with-ethiopia-escalate/
+    title: Egypt hosts four-way summit as tensions with Ethiopia escalate
+    publisher: The National
+    date: '2026-10-04'
+    tier: 3
+- to: SAU
+  layer: action
+  type: visit
+  summary: Burhan's first trip abroad after the army retook Khartoum was to Saudi Arabia (Mar 2025); a US-Saudi truce proposal reached the army in Jan 2026; Sudan signed the Red Sea coalition statement
+    (30 Jul 2026); and a new Saudi ambassador presented credentials to Burhan in Khartoum in Aug 2026, read by the Horn Review as affirming the authorities in Port Sudan and Khartoum as interlocutors.
+  since: 2025-03
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.middleeastmonitor.com/20250329-al-burhan-in-saudi-arabia-as-his-forces-advance-in-sudan/
+    title: Al-Burhan in Saudi Arabia as his forces advance in Sudan
+    publisher: Middle East Monitor
+    date: '2025-03-29'
+    tier: 3
+  - url: https://www.newarab.com/news/sudan-army-studying-new-us-saudi-truce-proposal
+    title: Sudan army studying new US-Saudi truce proposal
+    publisher: The New Arab
+    date: '2026-01-21'
+    tier: 3
+  - url: https://www.khaleejtimes.com/world/mena/saudi-arabia-multinational-maritime-defence-coalition
+    title: Saudi Arabia unveils plans for multinational maritime defence coalition
+    publisher: Khaleej Times
+    date: '2026-07-30'
+    tier: 3
+  - url: https://hornreview.org/2026/08/31/the-geopolitics-of-legitimacy-and-saudis-recalibration-in-sudan-and-the-red-sea-area/
+    title: The geopolitics of legitimacy and Saudi's recalibration in Sudan and the Red Sea area
+    publisher: Horn Review
+    date: '2026-08-31'
+    tier: 2
+- to: USA
+  layer: action
+  type: incident
+  summary: 'US measures against both camps: genocide determination against the RSF and sanctions on Hemedti (7 Jan 2025); Treasury sanctions on Burhan under E.O. 14098 and on an army weapons supplier (16
+    Jan 2025); a determination that the army used chemical weapons with new sanctions (22-23 May 2025).'
+  since: '2025-01-07'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://home.treasury.gov/news/press-releases/jy2789
+    title: Treasury Sanctions Leader of Sudanese Armed Forces and Weapons Supplier
+    publisher: U.S. Department of the Treasury
+    date: '2025-01-16'
+    tier: 1
+  - url: https://www.nbcnews.com/news/world/us-says-sudans-rebels-committed-genocide-sanctions-leaders-rcna186741
+    title: U.S. says Sudan's rebels have committed genocide and sanctions their leaders
+    publisher: NBC News
+    date: '2025-01-07'
+    tier: 3
+  - url: https://www.bbc.com/news/articles/cwynkdyk14zo
+    title: US says Sudan used chemical weapons in war as it issues new sanctions
+    publisher: BBC
+    date: '2025-05-23'
+    tier: 3
+- to: USA
+  layer: action
+  type: incident
+  summary: On 9 Mar 2026 the State Department designated the Sudanese Muslim Brotherhood as a terrorist group, citing training and support from Iran's IRGC and naming the Al-Baraa bin Malik brigade as its
+    armed wing; the brigade's spokesman called it 'only ink on paper'.
+  since: '2026-03-09'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.middleeasteye.net/news/inside-sudanese-army-coalition-split-over-iran-and-muslim-brotherhood
+    title: Inside the Sudanese army coalition split over Iran and the Muslim Brotherhood
+    publisher: Middle East Eye
+    date: '2026-04-11'
+    tier: 3
+  - url: https://www.state.gov/releases/office-of-the-spokesperson/2026/03/terrorist-designation-of-the-sudanese-muslim-brotherhood
+    title: Terrorist Designation of the Sudanese Muslim Brotherhood
+    publisher: U.S. Department of State
+    date: 2026-03
+    tier: 1
+- to: USA
+  layer: action
+  type: incident
+  summary: Reuters reported on 22 Sept 2026 that Washington was withholding Burhan's visa for the UN General Assembly until he accepts a 90-day ceasefire proposed by envoy Massad Boulos; Sudan's UN ambassador
+    asked Guterres to intervene (21 Sept) and the State Department said it would 'raise the cost of continued conflict on all belligerents'.
+  since: '2026-09-21'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.al-monitor.com/originals/2026/09/us-ties-sudanese-army-leaders-un-visa-ceasefire-plan-sources-say
+    title: US ties Sudanese army leader's UN visa to ceasefire plan, sources say
+    publisher: Reuters (via Al-Monitor)
+    date: '2026-09-22'
+    tier: 3
+  - url: https://aljazeera.com/news/2026/9/24/outcry-in-sudan-as-us-reportedly-holds-army-chiefs-un-visa-over-ceasefire
+    title: Outcry in Sudan as US reportedly holds al-Burhan's UN visa over truce plan
+    publisher: Al Jazeera
+    date: '2026-09-24'
+    tier: 3
+- to: USA
+  layer: action
+  type: incident
+  summary: In March 2025 reports that Washington and Israel had floated resettling Palestinians from Gaza in Sudan, Somalia and Somaliland were rejected by Sudanese officials.
+  since: 2025-03
+  until: null
+  last_verified: '2026-10-12'
+  confidence: C
+  note: A report of a proposal and of Sudan's rejection; no official US source seen.
+  sources:
+  - url: https://www.aljazeera.com/news/2025/3/14/us-and-israel-look-to-africa-for-resettling-palestinians-uprooted-from-gaza
+    title: 'US, Israel want to displace Palestinians from Gaza to East Africa: Report'
+    publisher: Al Jazeera
+    date: '2025-03-17'
+    tier: 3
+- to: IRN
+  layer: action
+  type: agreement
+  summary: Iran and Sudan agreed to restore diplomatic relations on 9 Oct 2023 after seven years; ambassadors were exchanged in July 2024; Iran's foreign minister reaffirmed support for Sudan's territorial
+    integrity in Nov 2025. Ties cooled in 2026 as Burhan condemned Iranian strikes on Gulf states during the Iran war.
+  since: '2023-10-09'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://apnews.com/article/iran-sudan-diplomatic-ties-saudi-8ce7690acb75bfaff092e63713ae52c0
+    title: Sudan and Iran resume diplomatic relations severed 7 years ago, promising to 'open embassies soon'
+    publisher: Associated Press
+    date: '2023-10-09'
+    tier: 3
+  - url: https://www.aljazeera.com/news/2024/7/21/iran-sudan-exchange-ambassadors-after-eight-years
+    title: Iran, Sudan exchange ambassadors after eight years
+    publisher: Al Jazeera
+    date: '2024-07-21'
+    tier: 3
+  - url: https://en.mehrnews.com/news/238295/Iran-supports-Sudan-s-territorial-integrity
+    title: FM declares Iran's support for Sudan's territorial integrity
+    publisher: Mehr News (state agency, official statement)
+    date: '2025-11-01'
+    tier: 1
+  - url: https://www.middleeasteye.net/news/inside-sudanese-army-coalition-split-over-iran-and-muslim-brotherhood
+    title: Inside the Sudanese army coalition split over Iran and the Muslim Brotherhood
+    publisher: Middle East Eye
+    date: '2026-04-11'
+    tier: 3
+- to: TUR
+  layer: action
+  type: visit
+  summary: Lt Gen Yasser al-Atta, the army's deputy chief of staff, held talks in Ankara on 17 Aug 2026 with his Turkish counterpart and the defence minister, with Baykar's chief Haluk Bayraktar present;
+    on 18 Aug Erdogan told Al Jazeera he would keep supporting Sudan.
+  since: '2026-08-17'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://fr.allafrica.com/stories/202608190458.html
+    title: 'Sudan: military cooperation between the army and Turkey grows around drones'
+    publisher: RFI (via AllAfrica)
+    date: '2026-08-19'
+    tier: 3
+    title_original: 'Soudan: La coopération militaire entre l''armée et la Turquie se renforce autour des drones'
+    lang: fr
+- to: ERI
+  layer: action
+  type: visit
+  summary: Burhan visited Asmara in Nov 2024 and thanked Isaias Afwerki for support on the eastern border; Isaias joined the El Alamein summit on 4 Oct 2026.
+  since: 2024-11
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://allafrica.com/stories/202411300163.html
+    title: 'Sudan: ''Sudan-Eritrea Military Alliance Risks Igniting Tribal Conflict'''
+    publisher: AllAfrica
+    date: '2024-11-29'
+    tier: 3
+  - url: https://www.thenationalnews.com/news/mena/2026/10/04/egypt-hosts-four-way-summit-as-tensions-with-ethiopia-escalate/
+    title: Egypt hosts four-way summit as tensions with Ethiopia escalate
+    publisher: The National
+    date: '2026-10-04'
+    tier: 3
+- to: ETH
+  layer: action
+  type: incident
+  summary: Reuters reported on 10 Feb 2026 that Ethiopia hosts a secret camp near Asosa training RSF fighters (about 4,300 in January), built with Emirati money; in May 2026 Burhan accused Ethiopia and
+    the UAE of drone attacks on Khartoum launched from Bahir Dar. Both deny.
+  since: '2026-02-10'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.reuters.com/investigations/ethiopia-builds-secret-camp-train-sudan-rsf-fighters-sources-say-2026-02-10/
+    title: Ethiopia builds secret camp to train Sudan RSF fighters, sources say
+    publisher: Reuters
+    date: '2026-02-10'
+    tier: 3
+  - url: https://allafrica.com/stories/202605060016.html
+    title: 'Sudan: ''Drones that targeted Khartoum were Emirati, launched from Bahir Dar, Ethiopia'' - Sudanese Armed Forces'
+    publisher: AllAfrica
+    date: '2026-05-06'
+    tier: 3
+  - url: https://www.geeska.com/en/sudan-accuses-ethiopia-uae-drone-attacks
+    title: Sudan accuses Ethiopia, UAE of drone attacks on Khartoum
+    publisher: Geeska Afrika
+    date: 2026-05
+    tier: 3
+- to: TCD
+  layer: action
+  type: incident
+  summary: Chad closed its eastern border with Sudan indefinitely on 23 Feb 2026 after fighting at al-Tina, citing incursions by Sudanese armed groups; Sudan had accused Chad of aiding the RSF in a complaint
+    to the African Commission on Human and Peoples' Rights (Nov 2024), and Chad expelled four Sudanese diplomats in Dec 2023.
+  since: '2026-02-23'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.bbc.com/news/articles/cm2x1n95z5vo
+    title: Chad shuts border with Sudan in bid to stop conflict spreading
+    publisher: BBC
+    date: '2026-02-23'
+    tier: 3
+  - url: https://sudantribune.com/article292971/
+    title: Sudan accuses Chad of aiding RSF in complaint to African Rights Commission
+    publisher: Sudan Tribune
+    date: '2024-11-06'
+    tier: 3
+  - url: https://sudantribune.com/article280415/
+    title: Sudan confirms receiving Chadian decision to expel four Sudanese diplomats
+    publisher: Sudan Tribune
+    date: '2023-12-16'
+    tier: 3
+- to: LBY
+  layer: action
+  type: incident
+  summary: On 10 Jun 2025 the army accused Khalifa Haftar's Libyan National Army of a joint border attack with the RSF at the Egypt-Libya-Sudan triangle; Reuters describes the Kufra airstrip as the RSF's
+    conduit.
+  since: '2025-06-10'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/news/2025/6/10/sudanese-army-accuses-libyas-haftar-of-joint-border-attack-with-rsf
+    title: Sudanese army accuses Libya's Haftar of joint border attack with RSF
+    publisher: Al Jazeera
+    date: '2025-06-10'
+    tier: 3
+  - url: https://www.libya-analysis.com/blogs/reuters-how-a-remote-airstrip-in-libya-reshaped-sudans-civil-war
+    title: 'Reuters: ''How a remote airstrip in Libya reshaped Sudan''s civil war'''
+    publisher: Libya Analysis (summarising Reuters)
+    date: '2025-12-22'
+    tier: 3
+- to: LBY
+  layer: action
+  type: agreement
+  summary: 'Early April 2026: Sudan''s military intelligence chief met the head of the Tripoli-aligned Libyan army, who offered logistical and mechanical support to the Sudanese army.'
+  since: '2026-04-02'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://sudantribune.com/article/312446
+    title: Sudan, Libya military officials discuss security ties in Tripoli
+    publisher: Sudan Tribune
+    date: '2026-04-05'
+    tier: 3
+  - url: https://www.thenationalnews.com/news/mena/2026/04/06/sudans-military-intelligence-chief-and-head-of-libyas-army-hold-talks-in-tripoli/
+    title: Sudan's military intelligence chief and head of Libya's army hold talks in Tripoli
+    publisher: The National
+    date: '2026-04-06'
+    tier: 3
+- to: SSD
+  layer: action
+  type: agreement
+  summary: 'Tripartite arrangement of 10 Dec 2025 among Salva Kiir, Burhan and Hemedti: both Sudanese forces leave Heglig and South Sudan''s army guards the field neutrally; about 3,900 Sudanese soldiers
+    crossed into Unity State and handed over heavy weapons.'
+  since: '2025-12-10'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/news/2025/12/11/south-sudan-army-to-secure-critical-heglig-oilfield-in-sudan-war-spillover
+    title: South Sudan army to secure critical Heglig oilfield in Sudan war spillover
+    publisher: Al Jazeera
+    date: '2025-12-11'
+    tier: 3
+  - url: https://www.reuters.com/world/africa/south-sudan-says-its-troops-are-guarding-strategic-heglig-oil-field-sudan-2025-12-11/
+    title: South Sudan says its troops are guarding strategic Heglig oil field in Sudan
+    publisher: Reuters
+    date: '2025-12-11'
+    tier: 3
+  - url: https://sudantribune.com/article/308012
+    title: South Sudan army deploys to secure Heglig oilfield after deal with Sudan, RSF
+    publisher: Sudan Tribune
+    date: '2025-12-10'
+    tier: 3
+- to: KEN
+  layer: action
+  type: sanction
+  summary: After Nairobi hosted the RSF's founding charter (18-23 Feb 2025), Sudan recalled its ambassador (20 Feb) and banned all Kenyan imports from 14 Mar 2025.
+  since: '2025-02-20'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://sudantribune.com/article297696/
+    title: Sudan recalls Kenya envoy, accuses Ruto of undermining ties
+    publisher: Sudan Tribune
+    date: '2025-02-21'
+    tier: 3
+  - url: https://www.bbc.com/news/articles/ckg815277g5o
+    title: Sudan bans all imports from Kenya after it hosted civil war rivals
+    publisher: BBC
+    date: '2025-03-14'
+    tier: 3
+- to: GBR
+  layer: action
+  type: incident
+  summary: Khartoum demanded a British policy shift (Dec 2024, Malik Agar asked London to press the UAE) and in Oct 2025 gave the Security Council documents on UK-made equipment found with the RSF; the
+    UK is the Council's penholder on Sudan and led the London conference of 15 Apr 2025, which set up no contact group.
+  since: '2024-12-13'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://sudantribune.com/article/294599
+    title: Sudan demands UK policy shift for improved ties
+    publisher: Sudan Tribune
+    date: '2024-12-13'
+    tier: 3
+  - url: https://www.theguardian.com/global-development/2025/oct/28/uk-military-equipment-rapid-support-forces-rsf-militia-accused-genocide-found-sudan-united-nations
+    title: UK military equipment used by militia accused of genocide found in Sudan, UN told
+    publisher: The Guardian
+    date: '2025-10-29'
+    tier: 3
+  - url: https://www.theguardian.com/world/2025/apr/15/uk-conference-hopes-to-map-pathway-to-end-suffering-in-sudan
+    title: UK conference on Sudan fails to set up contact group for ceasefire talks
+    publisher: The Guardian
+    date: '2025-04-15'
+    tier: 3
+- to: org-eu
+  layer: action
+  type: incident
+  summary: The Council of the EU listed two individuals and two entities, among them Alkhaleej Bank and Red Rock Mining, on 18 Jul 2025; the EU pressed for a ceasefire at the London conference of 15 Apr
+    2025, where Egypt, Saudi Arabia and the UAE would not endorse a communiqué.
+  since: '2025-04-15'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.consilium.europa.eu/en/press/press-releases/2025/07/18/sudan-council-sanctions-individuals-and-entities-over-serious-human-rights-violations-and-threats-to-the-peace-stability-and-security-of-the-country/
+    title: 'Sudan: Council sanctions individuals and entities over serious human rights violations and threats to the peace, stability and security of the country'
+    publisher: Council of the European Union
+    date: '2025-07-18'
+    tier: 1
+  - url: https://www.theguardian.com/world/2025/apr/15/uk-conference-hopes-to-map-pathway-to-end-suffering-in-sudan
+    title: UK conference on Sudan fails to set up contact group for ceasefire talks
+    publisher: The Guardian
+    date: '2025-04-15'
+    tier: 3
+  - url: https://www.crisisgroup.org/africa/sudan/london-conference-puts-paralysed-sudan-peace-efforts-display
+    title: London Conference Puts Paralysed Sudan Peace Efforts on Display
+    publisher: International Crisis Group
+    date: '2025-04-18'
+    tier: 2
+- to: org-au
+  layer: action
+  type: incident
+  summary: The African Union Peace and Security Council, on 11 Mar 2025, refused to recognise the RSF's parallel government and urged states not to back armed or political groups; it condemned the July
+    2025 cabinet. Reuters notes the AU withdrew recognition from Burhan after the Oct 2021 coup.
+  since: '2025-03-11'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: A
+  sources:
+  - url: https://www.peaceau.org/en/article/press-statement-of-the-1264th-meeting-of-the-peace-and-security-council-held-on-11-march-2025-on-the-situation-in-sudan
+    title: Press statement of the 1264th meeting of the Peace and Security Council, held on 11 March 2025, on the situation in Sudan
+    publisher: African Union Peace and Security Council
+    date: '2025-03-11'
+    tier: 1
+  - url: https://qna.org.qa/en/news/news-details?id=african-union-condemns-forming-new-parallel-government-in-sudan-calls-for-ceasefire&date=30/07/2025
+    title: African Union condemns forming new parallel government in Sudan, calls for ceasefire
+    publisher: Qatar News Agency (state agency, report of AU statement)
+    date: '2025-07-30'
+    tier: 3
+  - url: https://www.al-monitor.com/originals/2026/09/us-ties-sudanese-army-leaders-un-visa-ceasefire-plan-sources-say
+    title: US ties Sudanese army leader's UN visa to ceasefire plan, sources say
+    publisher: Reuters (via Al-Monitor)
+    date: '2026-09-22'
+    tier: 3
+- to: org-arab-league
+  layer: action
+  type: incident
+  summary: On 21 Feb 2025 the Arab League expressed 'deep concern and strong disapproval' of any action that could undermine Sudan's unity or lead to its division, ahead of the RSF's parallel government.
+  since: '2025-02-21'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://www.middleeastmonitor.com/20250221-arab-league-warns-against-any-steps-leading-to-sudans-division/
+    title: Arab League warns against any steps leading to Sudan's division
+    publisher: Middle East Monitor
+    date: '2025-02-21'
+    tier: 3
+- to: CHN
+  layer: action
+  type: agreement
+  summary: China donated 1,250 tonnes of rice in Jan 2025 and keeps to non-interference; Amnesty (Jul 2024) traced recently made Chinese arms to both camps in breach of the Darfur arms embargo.
+  since: '2025-01-09'
+  until: null
+  last_verified: '2026-10-12'
+  confidence: B
+  sources:
+  - url: https://english.news.cn/africa/20250109/95e45a22a6f94bd2937096083820113b/c.html
+    title: Sudan starts distribution of China-donated rice
+    publisher: Xinhua (state agency, official statement)
+    date: '2025-01-09'
+    tier: 1
+  - url: https://www.amnesty.org/en/latest/research/2024/07/new-weapons-fuelling-the-sudan-conflict/
+    title: New weapons fuelling the Sudan conflict
+    publisher: Amnesty International
+    date: '2024-07-24'
+    tier: 2
