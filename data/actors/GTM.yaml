@@ -9,6 +9,50 @@ coords:
 seat: Guatemala City
 regions:
 - world
-card: stub
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Keep the Taipei relation, in place since 1933, as a diplomatic asset that brings investment and supply-chain money. President Arevalo's first state visit to Taipei in June 2025 ended with documents on investment, supply chains, semiconductors and political consultation."
+    confidence: C
+    sources:
+    - {url: "https://stratnewsglobal.com/world-news/guatemala-reaffirms-ties-with-taiwan-during-arevalos-first-visit/", title: "Guatemala reaffirms ties with Taiwan during Arevalo's first visit", publisher: "StratNews Global", date: 2025-06, tier: 3}
+    - {url: "https://www.globalsecurity.org/wmd/library/news/taiwan/2025/taiwan-250605-cna02.htm", title: "INTERVIEW/Taiwan trip to bring relations to next level: Guatemalan president", publisher: "CNA via GlobalSecurity.org", date: 2025-06-05, tier: 3}
+    - {url: "https://en.wikipedia.org/wiki/Guatemala%E2%80%93Taiwan_relations", title: "Guatemala-Taiwan relations (intro: relations since 1933)", publisher: "Wikipedia", date: 2026-10-16, tier: 4}
+  - rank: 2
+    text: "Keep Washington as the partner that pays for migration control: take non-Guatemalan deportees and expand deportation flights by 40% in exchange for money and security cooperation, as agreed with Secretary of State Rubio in February 2025."
+    confidence: C
+    sources:
+    - {url: "https://www.bostonglobe.com/2025/02/05/nation/rubio-immigration-guatemala/", title: "Guatemala deal to accept migrants Rubio (Boston Globe, search summary; article not read in full)", publisher: "Boston Globe", date: 2025-02-05, tier: 3}
+    - {url: "https://www.foxnews.com/politics/guatemala-agrees-accept-deportees-from-other-countries-deal-rubio", title: "Guatemala agrees to accept deportees from other countries, deal with Rubio (search summary; article not read in full)", publisher: "Fox News", date: 2025-02, tier: 3}
+  means:
+  - text: "Migration as a bargaining chip. Guatemala accepts third-country deportees under the US deal: an agreement took effect in June 2025, the first flight arrived on 3 October 2025, and the Migration Institute counts 119 non-Guatemalan deportees between January and April 2026, mostly from Honduras and El Salvador."
+    confidence: C
+    sources:
+    - {url: "https://www.bostonglobe.com/2025/02/05/nation/rubio-immigration-guatemala/", title: "Guatemala deal to accept migrants Rubio (Boston Globe, search summary; article not read in full)", publisher: "Boston Globe", date: 2025-02-05, tier: 3}
+    - {url: "https://www.intellinews.com/guatemala-and-honduras-deny-signing-us-immigration-deals-despite-noem-claims-388633", title: "Guatemala and Honduras deny signing US immigration deals despite Noem claims (search summary; article not read in full)", publisher: "Intellinews", date: 2026, tier: 3}
+  - text: "Taiwan as a diplomatic card: the ties date from 1933 and Guatemala is, in its own framing, the oldest continuing state recognising the Republic of China. The June 2025 visit was received with full military honours in the year of 90 years of ties."
+    confidence: C
+    sources:
+    - {url: "https://www.globalsecurity.org/wmd/library/news/taiwan/2025/taiwan-250605-cna02.htm", title: "INTERVIEW/Taiwan trip to bring relations to next level: Guatemalan president", publisher: "CNA via GlobalSecurity.org", date: 2025-06-05, tier: 3}
+    - {url: "https://en.wikipedia.org/wiki/Guatemala%E2%80%93Taiwan_relations", title: "Guatemala-Taiwan relations (intro)", publisher: "Wikipedia", date: 2026-10-16, tier: 4}
+  constraints:
+  - text: "Remittance dependence. Guatemala took in US$8.431 billion in remittances between January and April 2026, 53.2% of the three Northern Triangle countries' total. From January 2026 a 1% US tax applies to transfers made in cash, money orders or cashier's cheques, so the economy rests on a corridor Washington can tax."
+    confidence: C
+    sources:
+    - {url: "https://ticotimes.net/2026/07/06/central-america-remittances-us-tax", title: "Central America remittances US tax (search summary; article not read in full)", publisher: "Tico Times", date: 2026-07-06, tier: 3}
+  - text: "Congress, the judiciary and the attorney general. Wikipedia records strong opposition to the Arevalo government from the judiciary, Congress and the establishment. The attorney general serves a four-year term and can be removed only for a conviction for an offence committed in office, so the chief prosecutor is not the president's to dismiss."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/Attorney_General_of_Guatemala", title: "Attorney General of Guatemala (intro, citing Organic Law of the Ministerio Publico art. 14; law not read)", publisher: "Wikipedia", date: 2026-10-16, tier: 4}
+    - {url: "https://en.wikipedia.org/wiki/Bernardo_Ar%C3%A9valo", title: "Bernardo Arevalo (intro)", publisher: "Wikipedia", date: 2026-10-16, tier: 4}
+  paradoxes:
+  - text: "The deal that buys US goodwill makes Mexico the aggrieved neighbour. Guatemala received about 2,300 Mexicans deported from the US in 2026 and kept them for less than 24 hours; Mexico's foreign ministry opposed the practice, so the border partner now protests the transit country."
+    confidence: C
+    sources:
+    - {url: "https://kjzz.org/fronteras-desk/2026-08-20/guatemala-confirms-more-than-2-000-mexican-nationals-were-deported-there-this-year", title: "Guatemala confirms more than 2,000 Mexican nationals were deported there this year (search summary; article not read in full)", publisher: "KJZZ (Fronteras desk)", date: 2026-08-20, tier: 3}
+  reading: |
+    Guatemala under Arevalo trades migration services for US money and security, and keeps Taiwan as a diplomatic card it has not spent on Beijing. Its economy is remittances, a corridor Washington taxes and can tighten, so the deportation deal is a lever it cannot easily refuse. The attorney general and the courts, shielded from quick removal, are the constraint that decides how far the president can move.

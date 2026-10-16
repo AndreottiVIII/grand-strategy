@@ -1,0 +1,25 @@
+from: SUR
+relations:
+  # ---------- action ----------
+  - to: NLD
+    layer: action
+    type: visit
+    summary: "King Willem-Alexander and Queen Maxima made a state visit to Suriname on 1-3 December 2025, at President Geerlings-Simons' invitation (the visit is announced on the Royal House page; the dates are taken from the Dutch card's note on that page)."
+    since: 2025-12-01
+    until: 2025-12-03
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.royal-house.nl/latest/news/2025/10/10/state-visit-to-suriname", title: "State visit to Suriname", publisher: "Royal House of the Netherlands", date: 2025-10-10, tier: 1}
+
+  # ---------- action ----------
+  - to: org-imf
+    layer: action
+    type: agreement
+    summary: "Suriname was in a three-year IMF restructuring programme when AP reported on its oil plans in October 2024. The programme's terms, its amount and its status in 2026 were not read; the 2024 wording is 'undergoing', not a completion date."
+    since: 2024-10-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://kvia.com/ap-national-news/2024/10/01/french-and-us-companies-to-invest-10-billion-to-extract-oil-off-surinames-coast/", title: "French and US companies to invest $10 billion to extract oil off Suriname's coast", publisher: "Associated Press (via KVIA)", date: 2024-10-01, tier: 3}
