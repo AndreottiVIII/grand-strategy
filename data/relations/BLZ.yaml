@@ -1,0 +1,24 @@
+from: BLZ
+relations:
+  # ---------- objective ----------
+  - to: GTM
+    layer: objective
+    type: recognition_sought
+    summary: "Belize seeks Guatemala's recognition of the 1859 boundary, which Guatemala accepted in the Wyke-Aycinena treaty. Guatemala has not accepted it since 1999, and the question is before the ICJ."
+    since: 1999
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Belizean%E2%80%93Guatemalan_territorial_dispute", title: "Belizean–Guatemalan territorial dispute", publisher: "Wikipedia (index, tier 4 pointer)", date: 2026-10-16, tier: 4}
+
+  - to: org-icj
+    layer: objective
+    type: influence_goal
+    summary: "Belize routes the boundary question to the International Court of Justice under the 2008 special agreement with Guatemala. Oral arguments began in November 2025 (Wikipedia, tier 4); the ICJ record was not read."
+    since: 2008
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Belizean%E2%80%93Guatemalan_territorial_dispute", title: "Belizean–Guatemalan territorial dispute", publisher: "Wikipedia (index, tier 4 pointer)", date: 2026-10-16, tier: 4}

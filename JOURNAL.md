@@ -1,5 +1,37 @@
 # Journal
 
+## 2026-10-16 · Trinidad and Tobago (TTO) minor card, Flash: thin, three web calls, gaps logged
+
+Minor card, three web calls: the Wikipedia API for five titles (Dragon and Manakin-Cocuina gas field pages missing, CARICOM with no extract); one search with a Reuters/AP domain filter, refused by the tool, so Reuters and AP were not reached; one unfiltered search returning Trinidad press and an Al Jazeera page, titles and snippets only, bodies not read. Written: the TTO actor card (stub turned full: 2 objectives, 1 mean, 2 constraints, 1 paradox, 3-sentence reading), 3 stances (USA partner, VEN rival, IND partner with bond kin, all C), 2 relation rows (USA visit and VEN incident, Oct 2025, C).
+
+Grades are our reading, flagged C in each note. No source read uses "partner", "rival" or "kin" for this pair, which the ontology rule ("a grade is never our own judgement") does not allow at confidence A or B. The brief asked for C where the grade is ours; this follows the brief, and Davide should decide whether the rule should tighten for minor cards.
+
+Mirror: no stance or relation in any card pointed toward TTO (grep of data/stances and data/relations for `toward: TTO` and `to: TTO` found nothing), so nothing was mirrored. The Wikidata and Wikipedia-recognition rows from TTO (Commonwealth membership, non-recognition of Kosovo) were left as they are.
+
+Conflict kept: the US Treasury licence for the Dragon project. The Trinidad Express account says it was granted in October 2025 and talks continued; Nation News says it was revoked in April 2026. Both are written into the means.
+
+Gaps (no source read, so nothing written): the CARICOM split over the US strikes (no CARICOM statement found; no org-caricom actor file exists); China (nothing read); Manakin-Cocuina (no Wikipedia page); gas volumes and the share of exports (no sourced number, so no dependency row, which the brief asked for); India (no bilateral source read; the kin bond is our reading from the diaspora); the 2026 Shell and Venezuela talks beyond the search summary.
+
+Build: `tools/build.py --skip-running` exits 1 in the live tree, on errors in NIC, CHN, USA, RUS and BHS, which other cards in progress are writing. TTO is skipped there because `data/queue.yaml` still marks it running (left as orchestration state). In a scratch copy with the other cards reverted and TTO marked done, the TTO files raise no error; the build warns that USA, VEN and IND need their reverse stances (reciprocal, pending). `reciprocate.py --write` was not run, since it writes into other cards.
+
+## 2026-10-16 · Saint Vincent and the Grenadines (VCT) card, Flash: thin, two web calls, gaps logged
+
+Two web calls: the Wikipedia API for Foreign relations of Saint Vincent and the Grenadines (no mention of Taiwan, China, Venezuela, Cuba, Godwin Friday or the post-2025 government; US and UK "close ties", CARICOM and OECS cooperation, UN, OAS and Commonwealth membership, and the drug transshipment point, all tier 4); and a search restricted to reuters.com and apnews.com, which the search tool refused (400, domains not reachable for our user agent), so no wire page was read.
+
+Written: the actor card, stub turned full (two objectives, one mean, one constraint, one paradox, three-sentence reading; grades C as our reading, the UN, OAS and Commonwealth memberships A from the official lists). Stances: TWN partner (C) and USA partner (C), both bond none, trend stable, our reading. No relation file: the only VCT rows that exist come from the Wikidata and recognition datasets (Commonwealth, OAS, UN, Taiwan, Palestine, Kosovo non-recognition), so no new sourced row was added.
+
+Mirror: no stance in data/stances holds a stance toward VCT (grep "toward: VCT": none), and TWN has none toward VCT either. Nothing mirrored.
+
+Note on Taiwan: the Wikipedia page for Saint Vincent's foreign relations does not mention Taiwan, so the recognition rests on the recognition index alone (tier 4). The "since 1981" in the brief is not sourced; the index gives no date and since is null.
+
+Gaps (no source read, nothing written): the government after the November 2025 election and its Taiwan position; China; the Gonsalves-era ties with Venezuela and Cuba (cooling); the UK beyond "close ties"; CARICOM and OECS beyond a pointer; bananas and tourism as the economy; Hurricane Beryl (2024); the La Soufriere volcano. Next pass: a wire page on the post-election policy, read by WebFetch directly (the search tool refuses the wire domains).
+
+Queue: data/queue.yaml still reads VCT "running". Because the card is now full, `build.py --skip-running` publishes a running actor as a stub (tools/build.py line 122), so the status needs setting to reviewed by whoever closes the run.
+
+## 2026-10-16 · Jamaica (JAM) minor card, Flash: thin, three web calls, gaps logged
+
+Three web calls: the Wikipedia API for Foreign relations of Jamaica (empty extract) and Andrew Holness (read, tier 4 pointer only: the 2025 election, the 2022 royal-visit remark, the UK aid mention); one WebSearch with the Reuters/AP domain filter (refused: those domains are not reachable for us, the call may count); one WebSearch restricted to jamaica-gleaner.com (its result summaries, no article body read). Written: the JAM actor card (stub turned full, regions central-america-caribbean; 2 objectives, 2 means, 2 constraints, 1 paradox, 3-sentence reading), 3 stances (USA partner, stable, bond none; GBR partner, stable, bond kin, our reading; CUB partner, cooling, bond affinity), 3 relation rows (org-imf debt package up to US$6.7bn; GUY incident, roofs in Westmoreland; CUB incident, end of the medical programme). All C: tier 3 Gleaner and a tier 4 Wikipedia pointer; no government, UN or IMF page read. Mirrored: nothing, no stance or row toward JAM existed in any card (grep). Gaps logged, not written: no CHN stance (no infrastructure source read); no US security or Rubio-visit row; no UK or CARICOM source beyond the Gleaner headline; tourism, bauxite, remittances and the gangs are the brief's economy and constraint, not yet sourced. Build: the JAM files are valid, but `data/queue.yaml` marks JAM as `running` (another agent may be on it), so `--skip-running` skips them; the plain build fails on NIC and BHS, not on JAM.
+
 ## 2026-10-16 · Antigua and Barbuda (ATG) card, Flash: nothing written, two web calls, gaps logged
 
 Two web calls: the Wikipedia API for "Foreign relations of Antigua and Barbuda" (wikitext: diplomatic relations dated 1 November 1981 with the United States and the United Kingdom, 1 January 1983 with China; the citations behind them, history.state.gov and the government's bilateral chronology, were not opened). No citizenship-by-investment, Chinese port or special economic zone, Barbuda land, hurricane or CARICOM posture in the wikitext. One search with the Reuters/AP domain filter: refused by the search tool (both domains are not accessible to our user agent), so no wire page was read and the second call went to that refusal.

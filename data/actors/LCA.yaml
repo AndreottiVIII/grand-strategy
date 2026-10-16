@@ -9,6 +9,42 @@ coords:
 seat: Castries
 regions:
 - world
-card: stub
+card: full
 tier: minor
 dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Hold the Taiwan tie restored in 2007. Our reading, not a stated aim: the embassy in Taipei opened on 4 June 2015, described as its first in Asia, which is the one visible investment in the tie."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Saint_Lucia", title: "Foreign relations of Saint Lucia (read via the Wikipedia API)", publisher: "Wikipedia (index)", date: 2026-10-16, tier: 4}
+    - {url: "https://en.wikipedia.org/w/index.php?title=Foreign_relations_of_Taiwan&oldid=1378208098", title: "Foreign relations of Taiwan", publisher: "Wikipedia (index)", date: 2026-10-12, tier: 4}
+  - rank: 2
+    text: "Keep the British and Commonwealth link as the older anchor of its foreign ties. Our reading: diplomatic relations with the United Kingdom since 22 February 1979, high commissions in London and Castries, the CARIFORUM-UK Economic Partnership Agreement, and Commonwealth membership."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Saint_Lucia", title: "Foreign relations of Saint Lucia (read via the Wikipedia API)", publisher: "Wikipedia (index)", date: 2026-10-16, tier: 4}
+    - {url: "https://thecommonwealth.org/our-member-countries", title: "Commonwealth of Nations - member states", publisher: "Commonwealth of Nations", date: 2026-10-12, tier: 1}
+  means:
+  - text: "A small but wide diplomatic network: embassies in Washington and Taipei (opened 2015), a high commission in London, and seats in the Commonwealth, the OAS and the UN. As a CARICOM member it backed US efforts on UN Security Council Resolution 940 regarding Haiti."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Saint_Lucia", title: "Foreign relations of Saint Lucia (read via the Wikipedia API)", publisher: "Wikipedia (index)", date: 2026-10-16, tier: 4}
+  constraints:
+  - text: "Drug transit. Its use as a transit point for South American drugs bound for the United States and Europe is the source of the tension in its US relation, per the Wikipedia lead."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Saint_Lucia", title: "Foreign relations of Saint Lucia (read via the Wikipedia API)", publisher: "Wikipedia (index)", date: 2026-10-16, tier: 4}
+  paradoxes:
+  - text: "The Taiwan recognition has changed hands twice since 1984 (Taipei to Beijing in 1997, back to Taipei in 2007), and the 2015 embassy in Taipei binds it to a recognition that its own history shows can be reversed. Our reading."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Saint_Lucia", title: "Foreign relations of Saint Lucia (read via the Wikipedia API)", publisher: "Wikipedia (index)", date: 2026-10-16, tier: 4}
+    - {url: "https://en.wikipedia.org/w/index.php?title=Foreign_relations_of_Taiwan&oldid=1378208098", title: "Foreign relations of Taiwan", publisher: "Wikipedia (index)", date: 2026-10-12, tier: 4}
+  reading: |
+    Saint Lucia runs a small but wide diplomacy: embassies in Washington and Taipei, a high commission in London, and seats in the Commonwealth, the OAS and the UN.
+    Its Taiwan tie is the choice that matters most (restored in 2007, the Taipei embassy in 2015), and its British and Commonwealth link is the older anchor.
+    Every row here is C because the only source read was Wikipedia (tier 4); the posture grades, the 2025 election, the US citizenship-by-investment pressure and the economy are left open until a sourced pass.

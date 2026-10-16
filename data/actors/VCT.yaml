@@ -9,6 +9,38 @@ coords:
 seat: Kingstown
 regions:
 - world
-card: stub
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Keep its recognition of the Republic of China (Taiwan), which the Wikipedia recognition index records as full diplomatic relations with no date. Whether the government that took office after the November 2025 election keeps it is not sourced here."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/w/index.php?title=Foreign_relations_of_Taiwan&oldid=1378208098", title: "Foreign relations of Taiwan", publisher: "Wikipedia (index)", date: 2026-10-12, tier: 4}
+  - rank: 2
+    text: "Stay inside the Commonwealth, the OAS and the UN, the forums where a small state's vote counts as much as any other. Our reading of why these memberships matter; the memberships themselves are sourced in the means."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines", title: "Saint Vincent and the Grenadines", publisher: "Wikipedia (index)", date: 2026-10-16, tier: 4}
+  means:
+  - text: "Multilateral seats: member of the United Nations, the Organization of American States and the Commonwealth of Nations, with the membership dates in the datasets. Wikipedia adds close ties with the UK and cooperation with the OECS and CARICOM, undated (tier 4)."
+    confidence: A
+    sources:
+    - {url: "https://www.un.org/en/about-us/member-states", title: "United Nations - member states", publisher: "United Nations", date: 2026-10-12, tier: 1}
+    - {url: "https://www.oas.org/en/member_states/default.asp", title: "Organization of American States - member states", publisher: "Organization of American States", date: 2026-10-12, tier: 1}
+    - {url: "https://thecommonwealth.org/our-member-countries", title: "Commonwealth of Nations - member states", publisher: "Commonwealth of Nations", date: 2026-10-12, tier: 1}
+  constraints:
+  - text: "Drug transit. Wikipedia's foreign relations page says the country is a transshipment point for South American illicit drugs bound for the US and Europe. Tier 4: a pointer, not yet checked against a government or UN source."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Saint_Vincent_and_the_Grenadines", title: "Foreign relations of Saint Vincent and the Grenadines", publisher: "Wikipedia (index)", date: 2026-10-16, tier: 4}
+  paradoxes:
+  - text: "The drug route that makes the US tie matter is also what exposes a small state to pressure from the partner it needs for counternarcotics. Our reading, from the Wikipedia pointer only."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Saint_Vincent_and_the_Grenadines", title: "Foreign relations of Saint Vincent and the Grenadines", publisher: "Wikipedia (index)", date: 2026-10-16, tier: 4}
+  reading: |
+    Saint Vincent and the Grenadines is a small Caribbean state whose standing rests on its seats in the UN, the OAS and the Commonwealth and on its recognition of Taipei, which the datasets record without a date. The sources gathered on 16 October 2026 do not cover the government that took office after the November 2025 election, the Gonsalves-era ties with Venezuela and Cuba, China, or the hurricane and volcano constraints, so this card is a thin first pass and every grade on it is our reading. The next pass needs a wire page on the post-election foreign policy, which the search tool did not reach.

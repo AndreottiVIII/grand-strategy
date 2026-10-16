@@ -1,0 +1,25 @@
+from: KNA
+relations:
+  # ---------- alignment ----------
+  - to: TWN
+    layer: alignment
+    type: recognition
+    summary: "Full diplomatic relations with the Republic of China (Taiwan) since 23 September 1983 (Wikipedia, 'Diplomatic relations' table). The dataset row from the Taiwan recognition list carries no date; this row adds it and does not replace it."
+    since: 1983-09-23
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Saint_Kitts_and_Nevis", title: "Foreign relations of Saint Kitts and Nevis", publisher: "Wikipedia (index)", date: 2026-10-16, tier: 4}
+
+  # ---------- action ----------
+  - to: USA
+    layer: action
+    type: incident
+    summary: "The Government of St Kitts and Nevis says the US suspended immigrant visa processing in 2026 for a group of countries, its own included; applications are accepted but refused as procedural refusals under section 221(g). Immigrant visas only, per the government: tourism, business and study visas are not affected. The US original was not read; the date is the statement's month."
+    since: 2026-02
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://ciu.gov.kn/news-st-kitts-and-nevis-provides-clarity-on-us-immigrant-visa-suspensions/", title: "St. Kitts and Nevis provides clarity on US immigrant visa suspensions", publisher: "Government of St Kitts and Nevis (ciu.gov.kn)", date: 2026-02, tier: 1}
