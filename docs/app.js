@@ -524,8 +524,9 @@
     const byY = d3.group(SEAMS, s => s.y);
     const byYb = d3.group(BUFFERS, s => s.y);
     const orderB = [...byYb.entries()].sort((p, q) => q[1].length - p[1].length || actors[p[0]].name.localeCompare(actors[q[0]].name));
-    const bufferBlocks = orderB.map(([y, list]) => `<div class="seam-block"><h3><a href="#/view/${y}">${nameOf(y)}</a> <span>between ${list.length} pair${list.length > 1 ? "s" : ""}</span></h3>` +
-        list.map(s => `<div class="seam"><a href="#/view/${s.a}">${nameOf(s.a)}</a> <i class="h">${s.ax}</i> <a href="#/view/${s.x}">${nameOf(s.x)}</a><span class="both">both <i class="al">${s.ay === s.xy ? s.ay.replace("_", " ") : s.ay.replace("_", " ") + " / " + s.xy.replace("_", " ")}</i></span></div>`).join("") + `</div>`).join("");
+    const bufferList = orderB.map(([y, list]) => `<div class="seam-block"><h3><a href="#/view/${y}">${nameOf(y)}</a> <span>between ${list.length} pair${list.length > 1 ? "s" : ""}</span></h3>` +
+        list.map(s => `<div class="seam"><a href="#/view/${s.a}">${nameOf(s.a)}</a> <i class="h">${s.ax}</i> <a href="#/view/${s.x}">${nameOf(s.x)}</a><span class="both">both <i class="al">${s.ay === s.xy ? s.ay.replace("_", " ") : s.ay.replace("_", " ") + " / " + s.xy.replace("_", " ")}</i></span></div>`).join("") + `</div>`));
+    const bufferBlocks = bufferList.slice(0, 12).join("") + (bufferList.length > 12 ? `<details class="method"><summary>${bufferList.length - 12} more actors between rivals</summary><div class="seams">${bufferList.slice(12).join("")}</div></details>` : "");
     const order = [...byY.entries()].sort((p, q) => q[1].length - p[1].length || actors[p[0]].name.localeCompare(actors[q[0]].name));
     el.innerHTML = `<h2>Seams</h2><p class="lede">A seam is an actor pulled two ways: it is an ally of two actors that are rivals or adversaries of each other. In Luttwak's grammar the seam between an opponent and its allies is where relational manoeuvre aims, and where an alliance is tested first.</p>
       <div class="seams">` + order.map(([y, list]) => `<div class="seam-block"><h3><a href="#/view/${y}">${nameOf(y)}</a> <span>pulled ${list.length} way${list.length > 1 ? "s" : ""}</span></h3>` +

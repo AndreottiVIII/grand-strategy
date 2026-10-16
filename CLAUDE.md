@@ -128,3 +128,19 @@ ally puts the reciprocal into Turkey's files, flagged `reciprocal_of`), then bui
 3. `python tools/build.py`; fix every error it names.
 4. Add a JOURNAL entry if a decision or a vocabulary changed; update `last_verified`.
 5. Commit and push; Pages redeploys from `docs/` on `main`.
+
+## Update cycle (Davide, 2026-10-16): on call only, never on a calendar
+
+The atlas is updated only when Davide asks for it in chat (his explicit order is the password:
+no cron, no scheduled wake-up, no agent launched on a date). When he does, the cycle is:
+1. **Floor, free**: regenerate the datasets (UN votes, memberships, recognitions) and rebuild; the
+   build's `changes` since the last snapshot say what moved.
+2. **Watch dates**: the build warns about `watch` dates that have passed (elections, mandates,
+   rulings written in the cards); those cards go first.
+3. **Regional scan, Haiku**: one agent per region reads two months of headlines (about 5 searches)
+   and lists the cards touched by events, one line each. No writing.
+4. **Delta pass**: only the cards listed, Sonnet for protagonists and Haiku for minors: add dated
+   rows with sources, move a trend or a grade when a source says so, never rewrite. Mirrors are
+   never touched. Review, reciprocate, build, commit, push, as always.
+5. **Token cap** fixed by Davide before the cycle starts (default 6M); stop when reached.
+Between cycles, single news items go in as one dated row each ("nota alla scheda").
