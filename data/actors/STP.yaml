@@ -9,6 +9,47 @@ coords:
 seat: São Tomé
 regions:
 - world
-card: stub
+card: full
 tier: minor
+last_verified: 2026-10-16
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Keep Lisbon as the first partner, now that Carlos Vila Nova has a second term. He won in the first round (19 July 2026) with about 55.9% of the vote on preliminary counts, and Portugal's prime minister attended his swearing-in on 3 September 2026."
+    confidence: C
+    sources:
+    - {url: "https://www.thestar.com.my/news/world/2026/07/20/sao-tome-and-principe-president-vila-nova-wins-second-term-preliminary-results-show", title: "Sao Tome and Principe President Vila Nova wins second term, preliminary results show", publisher: "Reuters (via The Star)", date: 2026-07-20, tier: 3}
+    - {url: "https://portugal.gov.pt/en/gc25/communication/news/portugal-and-sao-tome-and-principe-prepare-new-impetus-for-bilateral-cooperation", title: "Portugal and Sao Tome and Principe prepare new impetus for bilateral cooperation", publisher: "Government of Portugal", date: 2026-09, tier: 1}
+  - rank: 2
+    text: "Hold the recognition of Beijing that it chose in 2016, after breaking with Taipei. Relations with the People's Republic were resumed on 26 December 2016, six days after Taiwan ties were cut on 20 December."
+    confidence: C
+    sources:
+    - {url: "https://www.reuters.com/article/us-china-taiwan-saotome-idUSKBN1492SO", title: "Reuters, 2016: Sao Tome switch from Taiwan to China (cited on Wikipedia, not opened)", publisher: "Reuters", date: 2016-12-20, tier: 3}
+    - {url: "http://www.fmprc.gov.cn/web/zyxw/t1426787.shtml", title: "Chinese MFA, 2016: resumption of relations (cited on Wikipedia, not opened)", publisher: "Chinese Ministry of Foreign Affairs", date: 2016-12-26, tier: 1}
+  means:
+  - text: "The Nigeria joint development zone. A 2001 treaty set up a bi-national authority over a shared offshore area in the Gulf of Guinea, with petroleum and other resources to be shared. The authority's running costs took 43% of the zone's revenue in 2014 (São Tomé EITI report), so the lever pays for its own administration first."
+    confidence: C
+    sources:
+    - {url: "https://foreignaffairs.gov.ng/news/wp-content/uploads/2026/07/Press-Release-No-2026-173.pdf", title: "Nigerian Foreign Ministry press release No 2026-173: minister receives JDA delegation, 27 July 2026", publisher: "Federal Ministry of Foreign Affairs, Nigeria", date: 2026-07-27, tier: 1}
+    - {url: "https://guardian.ng/saturday-magazine/cover/nigeria-sao-tome-principe-jdz-at-wits-end-17-years-on/", title: "Nigeria-Sao Tome and Principe JDZ at wits' end 17 years on", publisher: "The Guardian (Nigeria)", date: 2018, tier: 3}
+    - {url: "https://api.eiti.org/es/node/18368", title: "São Tomé and Príncipe EITI report (2014), revenue from the joint zone", publisher: "EITI", date: 2014, tier: 1}
+  - text: "Portuguese language and aid. Lisbon is the historic and language partner; a bilateral summit on education, health, energy and Portuguese investment was being prepared in September 2026."
+    confidence: C
+    sources:
+    - {url: "https://portugal.gov.pt/en/gc25/communication/news/portugal-and-sao-tome-and-principe-prepare-new-impetus-for-bilateral-cooperation", title: "Portugal and Sao Tome and Principe prepare new impetus for bilateral cooperation", publisher: "Government of Portugal", date: 2026-09, tier: 1}
+  constraints:
+  - text: "Small resource base, with revenue from the shared zone below expectations. The Guardian reports the zone struggling 17 years after the treaty, and the 2014 EITI figures show how much of its revenue is absorbed by the authority's costs."
+    confidence: C
+    sources:
+    - {url: "https://guardian.ng/saturday-magazine/cover/nigeria-sao-tome-principe-jdz-at-wits-end-17-years-on/", title: "Nigeria-Sao Tome and Principe JDZ at wits' end 17 years on", publisher: "The Guardian (Nigeria)", date: 2018, tier: 3}
+    - {url: "https://api.eiti.org/es/node/18368", title: "São Tomé and Príncipe EITI report (2014), revenue from the joint zone", publisher: "EITI", date: 2014, tier: 1}
+  paradoxes:
+  - text: "The zone was meant to fund the state, but the authority that runs it absorbs a large share of what it earns, so the tool built to pay for the state drains part of the budget it was meant to fill."
+    confidence: C
+    sources:
+    - {url: "https://api.eiti.org/es/node/18368", title: "São Tomé and Príncipe EITI report (2014), revenue from the joint zone", publisher: "EITI", date: 2014, tier: 1}
+    - {url: "https://guardian.ng/saturday-magazine/cover/nigeria-sao-tome-principe-jdz-at-wits-end-17-years-on/", title: "Nigeria-Sao Tome and Principe JDZ at wits' end 17 years on", publisher: "The Guardian (Nigeria)", date: 2018, tier: 3}
+  reading: |
+    São Tomé and Príncipe plays a small hand between Lisbon, which the re-election of Carlos Vila Nova reinforces through language and aid, and Beijing, the recognition it chose in 2016 after dropping Taiwan. Its one large lever is the shared offshore zone with Nigeria, and that lever has so far paid its own authority more than the state. The tests of the coming years are whether the Portuguese summit turns into money and whether the zone ever produces commercial output.

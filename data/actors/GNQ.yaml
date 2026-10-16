@@ -9,6 +9,44 @@ coords:
 seat: Ciudad de la Paz
 regions:
 - world
-card: stub
+card: full
 tier: minor
+last_verified: 2026-10-16
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Win the Mbanié, Cocotiers and Conga islands dispute with Gabon in law. The case went to the ICJ under a 2016 Special Agreement after UN mediation (proceedings instituted 5 March 2021); the merits judgment of 19 May 2025 went largely in Equatorial Guinea's favour, holding that the 1974 Bata Convention was not a treaty with the force of law between the parties and that the title which counts is the one Spain held on 12 October 1968, which Equatorial Guinea succeeded to. Reported vote 13-2 (search summary, not verified)."
+    confidence: C
+    sources:
+    - {url: "https://www.businessday.co.za/bd/world/2025-05-19-icj-rules-for-equatorial-guinea-in-islands-dispute-with-gabon", title: "ICJ rules for Equatorial Guinea in islands dispute with Gabon", publisher: "BusinessDay", date: 2025-05-19, tier: 3}
+    - {url: "https://www.worldoil.com/news/2025/5/19/equatorial-guinea-wins-rights-to-islands-following-long-dispute-with-gabon", title: "Equatorial Guinea wins rights to islands following long dispute with Gabon", publisher: "World Oil", date: 2025-05-19, tier: 3}
+  - rank: 2
+    text: "Enforce its own control of the sea off its coast. Our reading, from one incident: forces boarded a Marshallese-flagged ship in August 2022 and held its crew for over nine months. No source read states this as a policy aim."
+    confidence: C
+    sources:
+    - {url: "https://maritime-executive.com/article/flag-state-sues-equatorial-guinea-for-illegal-seizure-of-heroic-idun", title: "Flag State Sues Equatorial Guinea for Illegal Seizure of Heroic Idun", publisher: "Maritime Executive", date: 2025-10-07, tier: 3}
+    - {url: "https://safety4sea.com/crew-of-heroic-idun-returns-home-after-nine-months-detention-in-africa/", title: "Crew of Heroic Idun returns home after nine months detention in Africa", publisher: "Safety4Sea", date: 2023-06-13, tier: 3}
+  means:
+  - text: "Law and the UN. The 2016 Special Agreement and UN mediation turned a border quarrel with Gabon into a case Equatorial Guinea could win in The Hague, and the 2025 judgment gives it a legal title over the islands."
+    confidence: C
+    sources:
+    - {url: "https://www.businessday.co.za/bd/world/2025-05-19-icj-rules-for-equatorial-guinea-in-islands-dispute-with-gabon", title: "ICJ rules for Equatorial Guinea in islands dispute with Gabon", publisher: "BusinessDay", date: 2025-05-19, tier: 3}
+  - text: "Coastal enforcement. Boarding and detaining a foreign-flagged ship off its coast is the one coercive instrument the sources record for the state in 2022-2025."
+    confidence: C
+    sources:
+    - {url: "https://safety4sea.com/crew-of-heroic-idun-returns-home-after-nine-months-detention-in-africa/", title: "Crew of Heroic Idun returns home after nine months detention in Africa", publisher: "Safety4Sea", date: 2023-06-13, tier: 3}
+  constraints:
+  - text: "Legal exposure at sea. The Marshall Islands sued Equatorial Guinea at the International Tribunal for the Law of the Sea for nearly US$60 million; the case opened in early October 2025."
+    confidence: C
+    sources:
+    - {url: "https://maritime-executive.com/article/flag-state-sues-equatorial-guinea-for-illegal-seizure-of-heroic-idun", title: "Flag State Sues Equatorial Guinea for Illegal Seizure of Heroic Idun", publisher: "Maritime Executive", date: 2025-10-07, tier: 3}
+  paradoxes:
+  - text: "Force at sea, law on land. The boarding that asserted its control of the sea brought a tribunal suit against it, while the same state won its island title by going to the ICJ rather than holding the islands by force."
+    confidence: C
+    sources:
+    - {url: "https://maritime-executive.com/article/flag-state-sues-equatorial-guinea-for-illegal-seizure-of-heroic-idun", title: "Flag State Sues Equatorial Guinea for Illegal Seizure of Heroic Idun", publisher: "Maritime Executive", date: 2025-10-07, tier: 3}
+    - {url: "https://www.businessday.co.za/bd/world/2025-05-19-icj-rules-for-equatorial-guinea-in-islands-dispute-with-gabon", title: "ICJ rules for Equatorial Guinea in islands dispute with Gabon", publisher: "BusinessDay", date: 2025-05-19, tier: 3}
+  reading: |
+    On the sources read here, Equatorial Guinea runs two tracks: it takes its border dispute with Gabon to court when the law can be made to favour it, and it enforces control at sea with the means it has, which has since become a tribunal suit. The card is thin because the sources read here do not cover the Obiang succession, China's port and debt, the United States, France, Spain, Cameroon, CEMAC or the decline of oil and gas; those gaps are logged in JOURNAL, not filled from memory. Until they are sourced, read this card as the island and sea file only.

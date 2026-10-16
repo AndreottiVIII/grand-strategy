@@ -9,6 +9,45 @@ coords:
 seat: Libreville
 regions:
 - world
-card: stub
+card: full
 tier: minor
 dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Turn the French military camp at Libreville into a Gabonese-run training hub. Under Brice Oligui Nguema, who took power in the August 2023 coup and was elected in April 2025, the De Gaulle camp is described as shared with the host nation, with Gabonese military institutions integrated into it and the French role being reduced."
+    confidence: C
+    sources:
+    - {url: "https://www.enca.com/opinion/gabon-french-army-base-shifts-focus-one-last-africa", title: "In Gabon, French army base shifts focus as one of last in Africa", publisher: "eNCA (AFP report)", date: 2025-03-26, tier: 3}
+  - rank: 2
+    text: "Move from raw to processed manganese: a ban on raw manganese exports from 2029 was announced as part of a national industrial plan. The ban and its date come from search summaries of 2025 press reporting; the article was not opened, so this objective is a pointer until it is read."
+    confidence: C
+    sources:
+    - {url: "https://allafrica.com/stories/202506020647.html", title: "Gabon: French Mining Group Digs in As Gabon Tightens Grip On Manganese Exports", publisher: "AllAfrica", date: 2025-06-02, tier: 3}
+  means:
+  - text: "Manganese through Eramet, the French miner. Eramet extracts about 7 to 7.5 million tonnes of raw manganese a year; local processing capacity is only 65,000 tonnes of silicomanganese and 20,000 tonnes of ferromanganese. The figures come from a search summary, not an opened page, so they are a pointer until checked."
+    confidence: C
+    sources:
+    - {url: "https://allafrica.com/stories/202506020647.html", title: "Gabon: French Mining Group Digs in As Gabon Tightens Grip On Manganese Exports", publisher: "AllAfrica", date: 2025-06-02, tier: 3}
+  - text: "Monetary and regional membership: the CFA franc zone and the Central African customs and economic bloc (UDEAC/CEMAC). Listed in Wikipedia's foreign-relations article only, which is tier 4 and cited as a pointer. The bloc's own record and the ECCAS seat were not read."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Gabon", title: "Foreign relations of Gabon", publisher: "Wikipedia (pointer only, tier 4)", date: 2026-10-16, tier: 4}
+  constraints:
+  - text: "A French security pact on short leash. The pact was renewed for two years by the junta after the 2023 coup and needs further approval after the presidential vote, so Libreville's main security partner holds its terms on a timetable Gabon does not fully set."
+    confidence: C
+    sources:
+    - {url: "https://www.enca.com/opinion/gabon-french-army-base-shifts-focus-one-last-africa", title: "In Gabon, French army base shifts focus as one of last in Africa", publisher: "eNCA (AFP report)", date: 2025-03-26, tier: 3}
+  - text: "Processing capacity is the bottleneck. Local smelting covers a small fraction of the raw ore Eramet extracts, so a raw-export ban depends on plants that do not yet exist."
+    confidence: C
+    sources:
+    - {url: "https://allafrica.com/stories/202506020647.html", title: "Gabon: French Mining Group Digs in As Gabon Tightens Grip On Manganese Exports", publisher: "AllAfrica", date: 2025-06-02, tier: 3}
+  paradoxes:
+  - text: "The shrinking French camp is meant to make Gabon's security its own, yet the camp stays the place where Gabonese forces are trained, so the sovereignty the junta sells rests on French instructors. Fewer French tanks, more French teaching."
+    confidence: C
+    sources:
+    - {url: "https://www.enca.com/opinion/gabon-french-army-base-shifts-focus-one-last-africa", title: "In Gabon, French army base shifts focus as one of last in Africa", publisher: "eNCA (AFP report)", date: 2025-03-26, tier: 3}
+  reading: |
+    Gabon under Oligui Nguema is trying to turn a French-era security relationship and a single extractive commodity into a sovereign model: the camp is shrinking into a Gabonese training hub, and manganese is to be processed at home rather than exported raw. The relationships with China and the United States are not yet written: no source for them was read in this pass, and the gap is logged in the journal. The two constraints the card cannot yet price, oil decline and public debt, are the first things to read before the card can be called complete.

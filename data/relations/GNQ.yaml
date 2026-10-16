@@ -1,0 +1,38 @@
+from: GNQ
+relations:
+  # ---------- objective ----------
+  - to: GAB
+    layer: objective
+    type: territorial_claim
+    summary: "Equatorial Guinea claims sovereignty over the islands of Mbanié, Cocotiers and Conga, disputed with Gabon. The ICJ's merits judgment of 19 May 2025 went largely in Equatorial Guinea's favour: the 1974 Bata Convention was not held to be a treaty with the force of law between the parties, and the title that counts is the one Spain held on 12 October 1968, which Equatorial Guinea succeeded to. The Court was not asked to draw the boundaries. Read from search summaries of the press coverage; the ICJ press release was not opened."
+    since: 2021-03-05
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.businessday.co.za/bd/world/2025-05-19-icj-rules-for-equatorial-guinea-in-islands-dispute-with-gabon", title: "ICJ rules for Equatorial Guinea in islands dispute with Gabon", publisher: "BusinessDay", date: 2025-05-19, tier: 3}
+      - {url: "https://www.worldoil.com/news/2025/5/19/equatorial-guinea-wins-rights-to-islands-following-long-dispute-with-gabon", title: "Equatorial Guinea wins rights to islands following long dispute with Gabon", publisher: "World Oil", date: 2025-05-19, tier: 3}
+
+  # ---------- action ----------
+  - to: GAB
+    layer: action
+    type: agreement
+    summary: "Special Agreement signed in 2016 after years of UN mediation, taking the island dispute with Gabon to the ICJ; the proceedings were instituted on 5 March 2021. Background from search summaries of the press coverage, not opened."
+    since: 2016
+    until: 2025-05-19
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.businessday.co.za/bd/world/2025-05-19-icj-rules-for-equatorial-guinea-in-islands-dispute-with-gabon", title: "ICJ rules for Equatorial Guinea in islands dispute with Gabon", publisher: "BusinessDay", date: 2025-05-19, tier: 3}
+
+  - to: MHL
+    layer: action
+    type: incident
+    summary: "Equatoguinean forces boarded a Marshallese-flagged ship off Equatorial Guinea in August 2022 and held its crew for over nine months. The Marshall Islands sued Equatorial Guinea at the International Tribunal for the Law of the Sea for nearly US$60 million; the case opened in early October 2025. Mirror of the incident row in the Marshall Islands file, with the same sources."
+    since: 2022-08
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://maritime-executive.com/article/flag-state-sues-equatorial-guinea-for-illegal-seizure-of-heroic-idun", title: "Flag State Sues Equatorial Guinea for Illegal Seizure of Heroic Idun", publisher: "Maritime Executive", date: 2025-10-07, tier: 3}
+      - {url: "https://safety4sea.com/crew-of-heroic-idun-returns-home-after-nine-months-detention-in-africa/", title: "Crew of Heroic Idun returns home after nine months detention in Africa", publisher: "Safety4Sea", date: 2023-06-13, tier: 3}
