@@ -1,87 +1,192 @@
 actor: TCD
 stances:
-  - toward: SDN
-    grade: rival
-    trend: cooling
-    bond: none
-    since: '2023-12-16'
-    last_verified: '2026-10-16'
-    confidence: B
-    note: "Chad's side of the rivalry: N'Djamena expelled four Sudanese diplomats (mid-Dec 2023), and on 23 Feb 2026 closed the eastern border indefinitely, citing Sudanese armed groups after fighting at al-Tina. Khartoum's complaint of Nov 2024 accuses Chad of aiding the RSF; Chad does not accept it. Rival: friction and mutual blame, no declared aim to destroy the other state. Mirror of the SDN card (rival, cooling, bond none), same sources. Trend cooling because the border closure is the latest step. Bond none. Gap: Chad's own statement on the RSF accusation is not found."
-    sources:
-      - {url: "https://www.bbc.com/news/articles/cm2x1n95z5vo", title: "Chad shuts border with Sudan in bid to stop conflict spreading", publisher: "BBC", date: "2026-02-23", tier: 3}
-      - {url: "https://sudantribune.com/article292971/", title: "Sudan accuses Chad of aiding RSF in complaint to African Rights Commission", publisher: "Sudan Tribune", date: "2024-11-06", tier: 3}
-      - {url: "https://sudantribune.com/article280415/", title: "Sudan confirms receiving Chadian decision to expel four Sudanese diplomats", publisher: "Sudan Tribune", date: "2023-12-16", tier: 3}
-
-  - toward: LBY
-    grade: partner
-    trend: stable
-    bond: none
-    since: '2025-11-14'
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "Chad's Libya file runs through the east. The joint border force with Haftar's LNA (formed 14 Nov 2025) is a security partnership with the eastern authority, not the Tripoli government. Chad keeps an ambassador in Tripoli: Dbeibah received the new Chadian ambassador on 5 Mar 2026 (LANA, official). Transactional cooperation without alignment: partner. Mirror of the LBY card (neutral toward Chad, the Libyan view); the grade here is Chad's own. Bond none. Gap: the Chadian side of the 27 Feb 2026 ambush is press-reported only."
-    sources:
-      - {url: "https://libyareview.com/60902/libya-chad-launch-joint-border-force/", title: "Libya & Chad launch joint border force", publisher: "Libya Review", date: "2025-11-14", tier: 3}
-      - {url: "https://lana.gov.ly/post.php?lang=en&id=352264", title: "Dbeibah receives the new Chadian ambassador to Libya", publisher: "Libyan News Agency (LANA, official statement)", date: "2026-03-05", tier: 1}
-      - {url: "https://www.agenzianova.com/en/news/Chad-press-sources%3A-an-army-column-is-ambushed-on-the-border-between-Niger-and-Libya/", title: "Chad: Press reports: Army column ambushed on Niger-Libya border", publisher: "Agenzia Nova", date: "2026-02-27", tier: 3}
-
-  - toward: ARE
-    grade: partner
-    trend: stable
-    bond: none
-    since: '2023-07'
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "Chad takes Emirati money and a field hospital at Amdjarass (opened July 2023, 'humanitarian' in the official account), and military support and aid increased in 2024. The New York Times and Le Monde (reported) describe the hospital and the cargo flights through Chad as a route for the RSF; Abu Dhabi denies it. N'Djamena's own posture is transactional: partner, confidence C. Mirror of the ARE card (partner toward Chad, the UAE view), same sources. Bond none. Gap: Chad's reaction to the flight reports is not found."
-    sources:
-      - {url: "https://guardian.ng/apo-press-releases/united-arab-emirates-opens-field-hospital-in-chad-to-support-sudanese-refugees/", title: "United Arab Emirates opens field hospital in Chad to support Sudanese refugees", publisher: "APO (UAE government release, via Guardian Nigeria)", date: "2023-07", tier: 1}
-      - {url: "https://adf-magazine.com/2024/02/uae-increases-military-support-aid-to-chad-amid-sahel-strife/", title: "UAE increases military support, aid to Chad amid Sahel strife", publisher: "ADF Magazine", date: "2024-02", tier: 3}
-      - {url: "https://www.newarab.com/news/uae-accused-covert-arms-routes-sudans-rsf-0", title: "UAE accused of using covert arms routes to Sudan's RSF (Le Monde investigation; RFI: about 600 flights to Koufra in 2025)", publisher: "The New Arab", date: "2026-03-23", tier: 3}
-
-  - toward: FRA
-    grade: reluctant_partner
-    trend: cooling
-    bond: none
-    since: '2024-11-29'
-    last_verified: '2026-10-16'
-    confidence: B
-    note: "N'Djamena ended the defence accord with France in November 2024 (Le Monde, 29 Nov 2024: 'un camouflet pour Paris'). France handed over its Faya base on 26 Dec 2024 and finished withdrawal in January 2025 (Stratfor). Chad still keeps its embassy in Paris and French aid, so the two cooperate, but Chad resists alignment: reluctant_partner is our reading of that structure, and no source uses the word. Trend cooling from the 2024 break. Bond none: no kinship and no sourced open wound (the 'foreign meddling' language on Wikipedia has no usable source). Mirror of the FRA relation rows (military presence ended), same sources. Gap: French aid figures since 2025 are not found."
-    sources:
-      - {url: "https://www.lemonde.fr/afrique/article/2024/11/29/le-tchad-rompt-ses-accords-de-defense-avec-la-france-un-camouflet-pour-paris_6419906_3212.html", title: "Le Tchad rompt ses accords de défense avec la France, un camouflet pour Paris", title_original: "Le Tchad rompt ses accords de défense avec la France, un camouflet pour Paris", lang: fr, publisher: "Le Monde", date: "2024-11-29", tier: 3}
-      - {url: "https://worldview.stratfor.com/situation-report/france-country-reduce-military-presence-western-and-central-africa", title: "France, country: to reduce military presence in Western and Central Africa", publisher: "Stratfor Worldview", date: "2024-12", tier: 3}
-
-  - toward: RUS
-    grade: partner
-    trend: stable
-    bond: none
-    since: '2024-01-24'
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "Mahamat Déby's visit to Moscow on 24 Jan 2024: Putin said Russia was pleased with how he had stabilised the country and offered help. Foreign Minister Lavrov followed in June 2024 (Chadian account: counterterrorism, military, economy). Transactional courtship with no alignment and no treaty found: partner. Bond none. Gap: no Africa Corps presence in Chad is confirmed in sources found, so the military reading stays at the level of talk. Critical Threats (Dec 2024) reads Russian capacity as too limited to expand into Chad."
-    sources:
-      - {url: "https://www.malaymail.com/news/world/2024/01/24/putin-meets-chad-junta-leader-as-russia-competes-with-france-in-africa/114362", title: "Putin meets Chad junta leader as Russia competes with France in Africa", publisher: "Malay Mail (Reuters report)", date: "2024-01-24", tier: 3}
-      - {url: "https://www.criticalthreats.org/analysis/africa-file-december-5-2024-french-influence-in-africa-erodes-further-syrias-impact-on-russia-in-africa-and-the-mediterranean-somalia-political-dispute-turns-hot-drc-rwanda-peace-plans", title: "Africa File, December 5, 2024", publisher: "Critical Threats", date: "2024-12-05", tier: 2}
-
-  - toward: HUN
-    grade: partner
-    trend: stable
-    bond: none
-    since: '2024-10'
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "Hungary's planned mission: a Hungarian parliament vote of Nov 2023 backed a security deal, and about 200 Hungarian soldiers were to train Chadian forces against armed groups, with a 200m EUR aid loan in the same package (Al Jazeera, Oct 2024; PISM, Nov 2024). The Chadian National Assembly had not approved it by late 2024 and no deployment is confirmed. Transactional, no alignment: partner, confidence C. Bond none. Gap: whether the force has deployed since 2024 is not confirmed in sources found."
-    sources:
-      - {url: "https://www.aljazeera.com/news/2024/10/23/why-is-hungarys-orban-sending-soldiers-to-chad", title: "Why is Hungary's Orban sending soldiers to Chad?", publisher: "Al Jazeera", date: "2024-10-23", tier: 3}
-      - {url: "https://pism.pl/webroot/upload/files/Biuletyn/PISM%20Bulletin%20no%20165%20(2453)%208%20November%202024.pdf", title: "PISM Bulletin no. 165 (2453), 8 November 2024", publisher: "Polish Institute of International Affairs (PISM)", date: "2024-11-08", tier: 2}
-
-  - toward: NGA
-    grade: reluctant_partner
-    trend: cooling
-    bond: none
-    since: '2026'
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "Chad is one of the three MNJTF members (with Cameroon and Nigeria) mandated against Boko Haram and ISWAP. The Security Council Report preview of June 2026 says Chad has threatened to reduce or pull out of the force, after earlier threats following the loss of about 40 soldiers in an attack. Cooperation out of necessity with visible friction: reluctant_partner, confidence C; no source uses the word. Trend cooling from the 2026 threat. Bond none. Gap: whether Chad has actually reduced its contribution is not confirmed; the Nigerian card is not yet tied to this reading."
-    sources:
-      - {url: "https://www.securitycouncilreport.org/monthly-forecast/2026-06/unoca-central-africa-13.php", title: "June 2026 Monthly Forecast: UNOCA and Central Africa", publisher: "Security Council Report", date: "2026-06", tier: 2}
+- toward: SDN
+  grade: rival
+  trend: cooling
+  bond: none
+  since: '2023-12-16'
+  last_verified: '2026-10-16'
+  confidence: B
+  note: 'Chad''s side of the rivalry: N''Djamena expelled four Sudanese diplomats (mid-Dec 2023), and on 23 Feb 2026 closed the eastern border indefinitely, citing Sudanese armed groups after fighting at
+    al-Tina. Khartoum''s complaint of Nov 2024 accuses Chad of aiding the RSF; Chad does not accept it. Rival: friction and mutual blame, no declared aim to destroy the other state. Mirror of the SDN card
+    (rival, cooling, bond none), same sources. Trend cooling because the border closure is the latest step. Bond none. Gap: Chad''s own statement on the RSF accusation is not found.'
+  sources:
+  - url: https://www.bbc.com/news/articles/cm2x1n95z5vo
+    title: Chad shuts border with Sudan in bid to stop conflict spreading
+    publisher: BBC
+    date: '2026-02-23'
+    tier: 3
+  - url: https://sudantribune.com/article292971/
+    title: Sudan accuses Chad of aiding RSF in complaint to African Rights Commission
+    publisher: Sudan Tribune
+    date: '2024-11-06'
+    tier: 3
+  - url: https://sudantribune.com/article280415/
+    title: Sudan confirms receiving Chadian decision to expel four Sudanese diplomats
+    publisher: Sudan Tribune
+    date: '2023-12-16'
+    tier: 3
+- toward: LBY
+  grade: partner
+  trend: stable
+  bond: none
+  since: '2025-11-14'
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'Chad''s Libya file runs through the east. The joint border force with Haftar''s LNA (formed 14 Nov 2025) is a security partnership with the eastern authority, not the Tripoli government. Chad keeps
+    an ambassador in Tripoli: Dbeibah received the new Chadian ambassador on 5 Mar 2026 (LANA, official). Transactional cooperation without alignment: partner. Mirror of the LBY card (neutral toward Chad,
+    the Libyan view); the grade here is Chad''s own. Bond none. Gap: the Chadian side of the 27 Feb 2026 ambush is press-reported only.'
+  sources:
+  - url: https://libyareview.com/60902/libya-chad-launch-joint-border-force/
+    title: Libya & Chad launch joint border force
+    publisher: Libya Review
+    date: '2025-11-14'
+    tier: 3
+  - url: https://lana.gov.ly/post.php?lang=en&id=352264
+    title: Dbeibah receives the new Chadian ambassador to Libya
+    publisher: Libyan News Agency (LANA, official statement)
+    date: '2026-03-05'
+    tier: 1
+  - url: https://www.agenzianova.com/en/news/Chad-press-sources%3A-an-army-column-is-ambushed-on-the-border-between-Niger-and-Libya/
+    title: 'Chad: Press reports: Army column ambushed on Niger-Libya border'
+    publisher: Agenzia Nova
+    date: '2026-02-27'
+    tier: 3
+- toward: ARE
+  grade: partner
+  trend: stable
+  bond: none
+  since: 2023-07
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'Chad takes Emirati money and a field hospital at Amdjarass (opened July 2023, ''humanitarian'' in the official account), and military support and aid increased in 2024. The New York Times and Le
+    Monde (reported) describe the hospital and the cargo flights through Chad as a route for the RSF; Abu Dhabi denies it. N''Djamena''s own posture is transactional: partner, confidence C. Mirror of the
+    ARE card (partner toward Chad, the UAE view), same sources. Bond none. Gap: Chad''s reaction to the flight reports is not found.'
+  sources:
+  - url: https://guardian.ng/apo-press-releases/united-arab-emirates-opens-field-hospital-in-chad-to-support-sudanese-refugees/
+    title: United Arab Emirates opens field hospital in Chad to support Sudanese refugees
+    publisher: APO (UAE government release, via Guardian Nigeria)
+    date: 2023-07
+    tier: 1
+  - url: https://adf-magazine.com/2024/02/uae-increases-military-support-aid-to-chad-amid-sahel-strife/
+    title: UAE increases military support, aid to Chad amid Sahel strife
+    publisher: ADF Magazine
+    date: 2024-02
+    tier: 3
+  - url: https://www.newarab.com/news/uae-accused-covert-arms-routes-sudans-rsf-0
+    title: 'UAE accused of using covert arms routes to Sudan''s RSF (Le Monde investigation; RFI: about 600 flights to Koufra in 2025)'
+    publisher: The New Arab
+    date: '2026-03-23'
+    tier: 3
+- toward: FRA
+  grade: reluctant_partner
+  trend: cooling
+  bond: none
+  since: '2024-11-29'
+  last_verified: '2026-10-16'
+  confidence: B
+  note: 'N''Djamena ended the defence accord with France in November 2024 (Le Monde, 29 Nov 2024: ''un camouflet pour Paris''). France handed over its Faya base on 26 Dec 2024 and finished withdrawal in
+    January 2025 (Stratfor). Chad still keeps its embassy in Paris and French aid, so the two cooperate, but Chad resists alignment: reluctant_partner is our reading of that structure, and no source uses
+    the word. Trend cooling from the 2024 break. Bond none: no kinship and no sourced open wound (the ''foreign meddling'' language on Wikipedia has no usable source). Mirror of the FRA relation rows (military
+    presence ended), same sources. Gap: French aid figures since 2025 are not found.'
+  sources:
+  - url: https://www.lemonde.fr/afrique/article/2024/11/29/le-tchad-rompt-ses-accords-de-defense-avec-la-france-un-camouflet-pour-paris_6419906_3212.html
+    title: Le Tchad rompt ses accords de défense avec la France, un camouflet pour Paris
+    title_original: Le Tchad rompt ses accords de défense avec la France, un camouflet pour Paris
+    lang: fr
+    publisher: Le Monde
+    date: '2024-11-29'
+    tier: 3
+  - url: https://worldview.stratfor.com/situation-report/france-country-reduce-military-presence-western-and-central-africa
+    title: 'France, country: to reduce military presence in Western and Central Africa'
+    publisher: Stratfor Worldview
+    date: 2024-12
+    tier: 3
+- toward: RUS
+  grade: partner
+  trend: stable
+  bond: none
+  since: '2024-01-24'
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'Mahamat Déby''s visit to Moscow on 24 Jan 2024: Putin said Russia was pleased with how he had stabilised the country and offered help. Foreign Minister Lavrov followed in June 2024 (Chadian account:
+    counterterrorism, military, economy). Transactional courtship with no alignment and no treaty found: partner. Bond none. Gap: no Africa Corps presence in Chad is confirmed in sources found, so the military
+    reading stays at the level of talk. Critical Threats (Dec 2024) reads Russian capacity as too limited to expand into Chad.'
+  sources:
+  - url: https://www.malaymail.com/news/world/2024/01/24/putin-meets-chad-junta-leader-as-russia-competes-with-france-in-africa/114362
+    title: Putin meets Chad junta leader as Russia competes with France in Africa
+    publisher: Malay Mail (Reuters report)
+    date: '2024-01-24'
+    tier: 3
+  - url: https://www.criticalthreats.org/analysis/africa-file-december-5-2024-french-influence-in-africa-erodes-further-syrias-impact-on-russia-in-africa-and-the-mediterranean-somalia-political-dispute-turns-hot-drc-rwanda-peace-plans
+    title: Africa File, December 5, 2024
+    publisher: Critical Threats
+    date: '2024-12-05'
+    tier: 2
+- toward: HUN
+  grade: partner
+  trend: stable
+  bond: none
+  since: 2024-10
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'Hungary''s planned mission: a Hungarian parliament vote of Nov 2023 backed a security deal, and about 200 Hungarian soldiers were to train Chadian forces against armed groups, with a 200m EUR aid
+    loan in the same package (Al Jazeera, Oct 2024; PISM, Nov 2024). The Chadian National Assembly had not approved it by late 2024 and no deployment is confirmed. Transactional, no alignment: partner,
+    confidence C. Bond none. Gap: whether the force has deployed since 2024 is not confirmed in sources found.'
+  sources:
+  - url: https://www.aljazeera.com/news/2024/10/23/why-is-hungarys-orban-sending-soldiers-to-chad
+    title: Why is Hungary's Orban sending soldiers to Chad?
+    publisher: Al Jazeera
+    date: '2024-10-23'
+    tier: 3
+  - url: https://pism.pl/webroot/upload/files/Biuletyn/PISM%20Bulletin%20no%20165%20(2453)%208%20November%202024.pdf
+    title: PISM Bulletin no. 165 (2453), 8 November 2024
+    publisher: Polish Institute of International Affairs (PISM)
+    date: '2024-11-08'
+    tier: 2
+- toward: NGA
+  grade: reluctant_partner
+  trend: cooling
+  bond: none
+  since: '2026'
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'Chad is one of the three MNJTF members (with Cameroon and Nigeria) mandated against Boko Haram and ISWAP. The Security Council Report preview of June 2026 says Chad has threatened to reduce or
+    pull out of the force, after earlier threats following the loss of about 40 soldiers in an attack. Cooperation out of necessity with visible friction: reluctant_partner, confidence C; no source uses
+    the word. Trend cooling from the 2026 threat. Bond none. Gap: whether Chad has actually reduced its contribution is not confirmed; the Nigerian card is not yet tied to this reading.'
+  sources:
+  - url: https://www.securitycouncilreport.org/monthly-forecast/2026-06/unoca-central-africa-13.php
+    title: 'June 2026 Monthly Forecast: UNOCA and Central Africa'
+    publisher: Security Council Report
+    date: 2026-06
+    tier: 2
+- toward: nsa-rsf
+  grade: partner
+  trend: stable
+  bond: none
+  since: 2023-04
+  last_verified: '2026-10-16'
+  confidence: C
+  reciprocal_of: nsa-rsf
+  note: Provisional reciprocal of Rapid Support Forces's 'partner' stance toward Chad, written on 2026-10-16 by tools/reciprocate.py from the same evidence; to be rewritten from Chad's side.
+  sources:
+  - url: https://sudantribune.com/article280415/
+    title: Sudan confirms receiving Chadian decision to expel four Sudanese diplomats
+    publisher: Sudan Tribune
+    date: '2023-12-16'
+    tier: 3
+  - url: https://sudantribune.com/article292971/
+    title: Sudan accuses Chad of aiding RSF in complaint to African Rights Commission
+    publisher: Sudan Tribune
+    date: '2024-11-06'
+    tier: 3
+  - url: https://www.bbc.com/news/articles/cm2x1n95z5vo
+    title: Chad shuts border with Sudan in bid to stop conflict spreading
+    publisher: BBC
+    date: '2026-02-23'
+    tier: 3
+  - url: https://www.guardian.ng/apo-press-releases/united-arab-emirates-opens-field-hospital-in-chad-to-support-sudanese-refugees/
+    title: United Arab Emirates opens field hospital in Chad to support Sudanese refugees
+    publisher: APO Group (press release)
+    date: 2023-07
+    tier: 3
