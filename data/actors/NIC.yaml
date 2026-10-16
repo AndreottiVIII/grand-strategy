@@ -9,6 +9,48 @@ coords:
 seat: Managua
 regions:
 - world
-card: stub
+card: full
 tier: minor
+last_verified: 2026-10-16
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Keep the Ortega-Murillo government's hold on the state. The regime expelled the papal nuncio (March 2022) and the bishops' conference president (November 2024); the US Section 301 proposal itself cites the regime's 'laws, policies, and practices'. Confidence C: two tier-3 reports and one index, read as the structure of the regime's choices."
+    confidence: C
+    sources:
+    - {url: "https://www.pbs.org/newshour/world/vatican-closes-embassy-in-nicaragua-in-response-to-crackdown-on-catholic-church", title: "Vatican closes embassy in Nicaragua in response to crackdown on Catholic Church", publisher: "PBS NewsHour (AP)", date: 2023-03-18, tier: 3}
+    - {url: "https://www.catholicworldreport.com/2025/08/25/pope-leo-xiv-receives-exiled-president-of-nicaraguan-bishops-conference/", title: "Pope Leo XIV receives exiled president of Nicaraguan bishops' conference", publisher: "Catholic World Report", date: 2025-08-25, tier: 3}
+    - {url: "https://confidencial.digital/en/english/u-s-proposes-axing-nicaragua-from-cafta-and-adding-100-tariffs/", title: "U.S. proposes axing Nicaragua from CAFTA and adding 100% tariffs", publisher: "Confidencial", date: 2025-10, tier: 3}
+  - rank: 2
+    text: "Find patrons outside the United States. The Wikipedia index describes Nicaragua's foreign policy as subordinated to Russia and China. Confidence C: index only, the partnerships are not yet read in primary sources here."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Nicaragua", title: "Foreign relations of Nicaragua (index only)", publisher: "Wikipedia", date: 2026-10-16, tier: 4}
+  means:
+  - text: "Diplomacy and litigation in Central America: Nicaragua sits on the Central American Security Commission, pushes regional demilitarisation, and has taken three territorial disputes (Honduras, Colombia, Costa Rica) to the International Court of Justice. Confidence C, from the index."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Nicaragua", title: "Foreign relations of Nicaragua (index only)", publisher: "Wikipedia", date: 2026-10-16, tier: 4}
+  - text: "Partnership with Russia and China as a counterweight to US pressure. The index describes the subordination; the specific military, training and trade instruments are not sourced in this card."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Nicaragua", title: "Foreign relations of Nicaragua (index only)", publisher: "Wikipedia", date: 2026-10-16, tier: 4}
+  constraints:
+  - text: "The United States is the main trading partner. The US Section 301 proposal (October 2025) offered suspension from CAFTA-DR benefits or tariffs of up to 100% on Nicaraguan exports; economists warn of collapse if Nicaragua is excluded. Confidence C: tier-3 reporting; the final decision is not confirmed here."
+    confidence: C
+    sources:
+    - {url: "https://confidencial.digital/en/english/u-s-proposes-axing-nicaragua-from-cafta-and-adding-100-tariffs/", title: "U.S. proposes axing Nicaragua from CAFTA and adding 100% tariffs", publisher: "Confidencial", date: 2025-10, tier: 3}
+  - text: "China cannot replace the US market. An analyst quoted by Confidencial says China cannot match the trade volume the United States represents. Confidence C."
+    confidence: C
+    sources:
+    - {url: "https://confidencial.digital/en/english/u-s-proposes-axing-nicaragua-from-cafta-and-adding-100-tariffs/", title: "U.S. proposes axing Nicaragua from CAFTA and adding 100% tariffs", publisher: "Confidencial", date: 2025-10, tier: 3}
+  paradoxes:
+  - text: "The repression that secures the regime (the expulsion of the nuncio and of the bishops' conference president) is part of the record the US trade measures cite. The means that keep the regime in place invite the measures that threaten the export income that funds it."
+    confidence: C
+    sources:
+    - {url: "https://confidencial.digital/en/english/u-s-proposes-axing-nicaragua-from-cafta-and-adding-100-tariffs/", title: "U.S. proposes axing Nicaragua from CAFTA and adding 100% tariffs", publisher: "Confidencial", date: 2025-10, tier: 3}
+    - {url: "https://www.pbs.org/newshour/world/vatican-closes-embassy-in-nicaragua-in-response-to-crackdown-on-catholic-church", title: "Vatican closes embassy in Nicaragua in response to crackdown on Catholic Church", publisher: "PBS NewsHour (AP)", date: 2023-03-18, tier: 3}
+  reading: |
+    Nicaragua is a regime that has chosen control over the Church and the exiles, and pays for it in its one large market, the United States, which is now proposing to close or tax it. Its answer is the patronage of Russia and China, but neither can replace the US trade it needs, so the strategy is survival by protest and litigation rather than by growth. The CAFTA decision and the Church file are the two tests to watch; the co-presidency of Ortega and Murillo and the exiles' nationality are not sourced in this thin card (gaps in the journal).
