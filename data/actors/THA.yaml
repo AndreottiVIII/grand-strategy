@@ -1,14 +1,194 @@
 id: THA
 name: Thailand
+short: Thailand
 type: state
 iso2: th
 wikipedia: https://en.wikipedia.org/wiki/Thailand
-coords:
-- 100.52
-- 13.75
+coords: [100.52, 13.75]
 seat: Bangkok
-regions:
-- world
-card: stub
-tier: minor
-dataset: wikidata
+regions: ['southeast-asia-oceania']
+card: full
+tier: protagonist
+last_verified: 2026-10-12
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep the established order at home intact: a monarchy protected by the lese-majeste law, and an army, courts and Senate that can remove or dissolve what the voters elect, with a conservative-business coalition in government. The 2025-26 cycle is the proof: Paetongtarn Shinawatra was removed by the Constitutional Court (6-3, 29 Aug 2025), Anutin Charnvirakul took over (5 Sep 2025), called a snap election and won it (Bhumjaithai 192 of 499 seats on 8 Feb 2026), and an amnesty law in force from 24 Aug 2026 covers political offences from 2005 to July 2025 but excludes Section 112."
+      confidence: B
+      sources:
+        - {url: "https://www.khaleejtimes.com/world/asia/thai-court-sacks-pm-paetongtarn-shinawatra-for-ethics-violation-in-leaked-call?amp=1", title: "Thai court sacks PM Paetongtarn Shinawatra for ethics violation in leaked call", publisher: "Khaleej Times (wire)", date: 2025-08-29, tier: 3}
+        - {url: "https://www.nst.com.my/amp/world/region/2026/02/1374108/thailand-pm-anutin-consolidates-power-dominating-election-win", title: "Thailand PM Anutin consolidates power with dominating election win", publisher: "New Straits Times (Reuters)", date: 2026-02, tier: 3}
+        - {url: "https://wtop.com/world/2026/08/a-political-amnesty-law-takes-effect-in-thailand-but-excludes-lese-majeste/", title: "A political amnesty law takes effect in Thailand but excludes lese majeste", publisher: "AP via WTOP", date: 2026-08, tier: 3}
+    - rank: 2
+      text: "Settle the Cambodian frontier on Thai terms and keep it bilateral: hold the positions taken in 2025, send boundary questions only to the Joint Boundary Commission, and make demining, no new violations and action on the scam compounds the price of normal relations. Bangkok cannot be seen to concede: the leaked call with Hun Sen cost Paetongtarn her office, and the Cambodian fighting was the setting in which Anutin called his election."
+      confidence: B
+      sources:
+        - {url: "https://thailand.prd.go.th/en/content/category/detail/id/3243/iid/463662", title: "Developments on Thailand-Cambodia Border Situation, 8 January 2026", publisher: "Government Public Relations Department (Ministry of Foreign Affairs spokesperson)", date: 2026-01-08, tier: 1}
+        - {url: "https://cambodianess.com/article/international-crisis-group-warns-cambodia-faces-uphill-battle-to-resolve-border-dispute-with-thailand", title: "International Crisis Group warns Cambodia faces uphill battle to resolve border dispute with Thailand (report 'Toward a Thaw in the Cambodia-Thailand Border Conflict', 9 Oct 2026)", publisher: "Cambodianess, reporting International Crisis Group", date: 2026-10-10, tier: 3}
+        - {url: "https://www.nst.com.my/amp/world/region/2026/02/1374108/thailand-pm-anutin-consolidates-power-dominating-election-win", title: "Thailand PM Anutin consolidates power with dominating election win", publisher: "New Straits Times (Reuters)", date: 2026-02, tier: 3}
+    - rank: 3
+      text: "Stay on good terms with every great power and join none of their blocs: treaty ally and Major Non-NATO Ally of the United States (Cobra Gold, a tariff framework), China's first economic and now defence partner (high-speed rail, a 2+2 mechanism, a Chinese submarine), a summit with Putin in Kazan, an EU free-trade agreement in the making, and Swedish jets instead of American ones."
+      confidence: B
+      sources:
+        - {url: "https://www.presidency.ucsb.edu/documents/joint-statement-president-trump-and-prime-minister-anutin-charnvirakul-thailand-framework", title: "Joint Statement by President Trump and Prime Minister Anutin Charnvirakul on a Framework for an Agreement on Reciprocal Trade", publisher: "White House (American Presidency Project)", date: 2025-10-26, tier: 1}
+        - {url: "https://mfa.go.th/en/content/join-statement-thailand-china-july-2026-en", title: "Joint Statement between the Kingdom of Thailand and the People's Republic of China, July 2026", publisher: "Ministry of Foreign Affairs of Thailand", date: 2026-07, tier: 1}
+        - {url: "https://thailand.prd.go.th/en/content/category/detail/id/49/iid/514367", title: "Thailand and Russia Reaffirm Their Commitment to Further Strengthening the Partnership between Them", publisher: "Government Public Relations Department", date: 2026-06-19, tier: 1}
+    - rank: 4
+      text: "Protect an export-and-tourism economy that sells abroad the equivalent of 71% of GDP: lock in market access (a US framework at a 19% reciprocal rate, an EU agreement with 15 of 24 chapters closed by June 2026, a Eurasian Economic Union agreement mooted) and manage the shift of its largest industry, cars, from Japanese to Chinese brands."
+      confidence: B
+      sources:
+        - {url: "https://api.worldbank.org/v2/country/THA/indicator/NE.EXP.GNFS.ZS?format=json&per_page=8", title: "Exports of goods and services (% of GDP) - Thailand (71.1% in 2025)", publisher: "World Bank", date: 2026-10-08, tier: 1}
+        - {url: "https://www.nst.com.my/amp/world/region/2026/10/1550049/thailand-us-trade-deal-down-final-clause-pm", title: "Thailand, US trade deal down to final clause: PM", publisher: "New Straits Times (Reuters)", date: 2026-10-07, tier: 3}
+        - {url: "https://www.pattayamail.com/thailandnews/thailand-accelerates-eu-fta-talks-with-key-chapters-finalized-556669", title: "Thailand accelerates EU FTA talks with key chapters finalized", publisher: "Pattaya Mail", date: 2026-06, tier: 3}
+    - rank: 5
+      text: "Contain the Myanmar collapse and the criminal economy that grew on the 2,400 km frontier (scam compounds, drugs, refugees) by working with whoever holds the ground: the junta first ('it's not about legitimacy, it's about reality'), while keeping a dual track with the other side of the border."
+      confidence: B
+      sources:
+        - {url: "https://www.aljazeera.com/amp/news/2026/8/20/myanmar-military-chief-visits-bangkok-as-diplomatic-offensive-continues", title: "Myanmar military chief visits Bangkok as diplomatic offensive continues", publisher: "Al Jazeera", date: 2026-08-20, tier: 3}
+        - {url: "https://www.nst.com.my/amp/world/region/2026/08/1515296/thai-myanmar-military-chiefs-meet-post-coup-thaw-progresses", title: "Thai, Myanmar military chiefs meet as post-coup thaw progresses", publisher: "New Straits Times", date: 2026-08, tier: 3}
+        - {url: "https://www.nst.com.my/amp/world/region/2025/02/1170467/thailand-cut-power-myanmar-border-areas-curb-scam-centres", title: "Thailand to cut power to Myanmar border areas to curb scam centres", publisher: "New Straits Times (Reuters)", date: 2025-02-04, tier: 3}
+    - rank: 6
+      text: "End the southern insurgency without internationalising it: a Malaysia-facilitated dialogue with the BRN, a new chief negotiator (the intelligence chief, appointed in May 2026) and a high-level round planned in Malaysia in September, with decentralisation and amnesties reportedly on the table."
+      confidence: B
+      sources:
+        - {url: "https://www.malaymail.com/news/malaysia/2026/07/01/thailand-malaysia-eye-september-peace-talks-on-southern-border-conflict/225945", title: "Thailand, Malaysia eye September peace talks on southern border conflict", publisher: "Malay Mail", date: 2026-07-01, tier: 3}
+        - {url: "https://www.nst.com.my/amp/news/regional/2026/07/1480966/brn-says-peace-process-remains-key-resolving-southern-thailand", title: "BRN says peace process remains key to resolving southern Thailand conflict", publisher: "New Straits Times", date: 2026-07, tier: 3}
+        - {url: "https://www.scmp.com/news/asia/southeast-asia/article/3364553/thailand-seeks-new-path-end-deadly-southern-insurgency-top-negotiator", title: "Thailand seeks new path to end deadly southern insurgency: top negotiator", publisher: "South China Morning Post", date: 2026, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "Omnidirectional hedging at leader level: Xi Jinping received Anutin in Shanghai on 17 Jul 2026 (joint statement, a new 2+2 mechanism for foreign affairs and defence); Putin met him in Kazan on 18 Jun 2026; Trump and he exchanged letters and agreed a trade framework on 26 Oct 2025; Modi's strategic partnership (Apr 2025) and Vietnam's comprehensive strategic partnership (May 2025) complete the set. Nothing is added to the American treaty and no bloc is joined."
+      confidence: B
+      sources:
+        - {url: "https://mfa.go.th/en/content/join-statement-thailand-china-july-2026-en", title: "Joint Statement between the Kingdom of Thailand and the People's Republic of China, July 2026", publisher: "Ministry of Foreign Affairs of Thailand", date: 2026-07, tier: 1}
+        - {url: "https://thailand.prd.go.th/en/content/category/detail/id/49/iid/514367", title: "Thailand and Russia Reaffirm Their Commitment to Further Strengthening the Partnership between Them", publisher: "Government Public Relations Department", date: 2026-06-19, tier: 1}
+        - {url: "https://pmindia.gov.in/en/news_updates/joint-declaration-on-the-establishment-of-india-thailand-strategic-partnership", title: "Joint Declaration on the establishment of India-Thailand Strategic Partnership", publisher: "Prime Minister's Office, India", date: 2025-04, tier: 1}
+    - domain: diplomatic
+      text: "ASEAN as an envelope, not a referee: Bangkok accepted Malaysia's chairmanship mediation (Putrajaya talks and ceasefire from 28 Jul 2025; Kuala Lumpur declaration of 26 Oct 2025) when Washington's tariff threat made refusal costly, then kept the boundary question bilateral through the Joint Boundary Commission; both sides use ASEAN Observer Teams to support competing accounts (Crisis Group)."
+      confidence: B
+      sources:
+        - {url: "https://www.hawaiitribune-herald.com/2025/07/29/nation-world-news/ceasefire-takes-effect-between-thailand-and-cambodia-after-five-day-border-battle/", title: "Ceasefire takes effect between Thailand and Cambodia after five-day border battle", publisher: "AP via Hawaii Tribune-Herald", date: 2025-07-29, tier: 3}
+        - {url: "https://www.whitehouse.gov/fact-sheets/2025/10/fact-sheet-president-donald-j-trump-secures-peace-and-prosperity-in-malaysia/", title: "Fact Sheet: President Donald J. Trump Secures Peace and Prosperity in Malaysia", publisher: "White House", date: 2025-10, tier: 1}
+        - {url: "https://cambodianess.com/article/international-crisis-group-warns-cambodia-faces-uphill-battle-to-resolve-border-dispute-with-thailand", title: "International Crisis Group warns Cambodia faces uphill battle to resolve border dispute with Thailand", publisher: "Cambodianess, reporting International Crisis Group", date: 2026-10-10, tier: 3}
+    - domain: military
+      text: "Force on the frontier and diversified kit. Thai forces hold much of the high ground and land on both sides of the contested line (Crisis Group), after air strikes in the 2025 fighting; the air force chose Swedish Gripen E/F over the American F-16 despite US lobbying (four aircraft, about SEK 5.3bn, signed 25 Aug 2025, inside a 12-aircraft plan); the navy buys a Chinese S26T submarine. Cobra Gold 2026 (24 Feb-6 Mar, about 8,000 troops from 30 nations) keeps the American channel open."
+      confidence: B
+      sources:
+        - {url: "https://breakingdefense.com/2025/08/saab-secures-550m-gripen-e-f-order-for-thailand/", title: "Saab secures $550M Gripen E/F order for Thailand", publisher: "Breaking Defense", date: 2025-08, tier: 3}
+        - {url: "https://www.csis.org/analysis/thailand-launches-airstrikes-amid-border-dispute-cambodia", title: "Thailand Launches Airstrikes Amid Border Dispute with Cambodia", publisher: "CSIS", date: 2025, tier: 2}
+        - {url: "https://www.pacom.mil/Media/News/News-Articles/Article/4428125/exercise-cobra-gold-2026-coming-to-a-close/", title: "Exercise Cobra Gold 2026 coming to a close", publisher: "US Indo-Pacific Command", date: 2026-03, tier: 1}
+    - domain: economic
+      text: "Border trade as a lever and market access as a shield. Bilateral trade with Cambodia fell 40% to USD 1.3bn in the first half of 2026 as relations froze; power, internet and fuel to five Myanmar border areas were cut on 5 Feb 2025 to pressure the scam compounds; and the tariff framework with Washington (tariff barriers removed on about 99% of US goods, USD 5.4bn a year of energy, 80 Boeing aircraft) is the price of the 19% rate."
+      confidence: B
+      sources:
+        - {url: "https://cambodianess.com/article/international-crisis-group-warns-cambodia-faces-uphill-battle-to-resolve-border-dispute-with-thailand", title: "International Crisis Group warns Cambodia faces uphill battle to resolve border dispute with Thailand", publisher: "Cambodianess, reporting International Crisis Group", date: 2026-10-10, tier: 3}
+        - {url: "https://www.nst.com.my/amp/world/region/2025/02/1170467/thailand-cut-power-myanmar-border-areas-curb-scam-centres", title: "Thailand to cut power to Myanmar border areas to curb scam centres", publisher: "New Straits Times (Reuters)", date: 2025-02-04, tier: 3}
+        - {url: "https://www.presidency.ucsb.edu/documents/joint-statement-president-trump-and-prime-minister-anutin-charnvirakul-thailand-framework", title: "Joint Statement by President Trump and Prime Minister Anutin Charnvirakul on a Framework for an Agreement on Reciprocal Trade", publisher: "White House (American Presidency Project)", date: 2025-10-26, tier: 1}
+    - domain: informational
+      text: "A nationalist frame for the Cambodian war, a realist frame for Myanmar. The foreign ministry's weekly briefing publishes Thailand's version of each incident (6 Jan 2026 Chong Bok shooting: no retaliation, a formal protest); Anutin's snap election was called during the fighting, which analysts read as an attempt to capitalise on nationalism; on Myanmar the line is 'it's not about legitimacy, it's about reality'."
+      confidence: B
+      sources:
+        - {url: "https://thailand.prd.go.th/en/content/category/detail/id/3243/iid/463662", title: "Developments on Thailand-Cambodia Border Situation, 8 January 2026", publisher: "Government Public Relations Department (Ministry of Foreign Affairs spokesperson)", date: 2026-01-08, tier: 1}
+        - {url: "https://www.aljazeera.com/amp/news/2026/8/20/myanmar-military-chief-visits-bangkok-as-diplomatic-offensive-continues", title: "Myanmar military chief visits Bangkok as diplomatic offensive continues", publisher: "Al Jazeera", date: 2026-08-20, tier: 3}
+        - {url: "https://www.nst.com.my/amp/world/region/2026/02/1374108/thailand-pm-anutin-consolidates-power-dominating-election-win", title: "Thailand PM Anutin consolidates power with dominating election win", publisher: "New Straits Times (Reuters)", date: 2026-02, tier: 3}
+
+  constraints:
+    - text: "The establishment's veto over any prime minister. The Constitutional Court removed Paetongtarn over a leaked call with Hun Sen (June 2025), on a petition that had reached it through the Senate president; no government can be seen to yield on Cambodia. The People's Party (120 seats, the largest opposition) is outside, and Anutin governs with the party of the Shinawatras the court removed."
+      confidence: B
+      sources:
+        - {url: "https://www.khaleejtimes.com/world/asia/thai-court-sacks-pm-paetongtarn-shinawatra-for-ethics-violation-in-leaked-call?amp=1", title: "Thai court sacks PM Paetongtarn Shinawatra for ethics violation in leaked call", publisher: "Khaleej Times (wire)", date: 2025-08-29, tier: 3}
+        - {url: "https://www.nst.com.my/amp/world/region/2026/02/1374108/thailand-pm-anutin-consolidates-power-dominating-election-win", title: "Thailand PM Anutin consolidates power with dominating election win", publisher: "New Straits Times (Reuters)", date: 2026-02, tier: 3}
+        - {url: "https://www.dailymaverick.co.za/article/thailands-election-winner-bhumjaithai-seals-coalition-deal-with-pheu-thai", title: "Thailand's election winner Bhumjaithai seals coalition deal with Pheu Thai", publisher: "Daily Maverick (Reuters)", date: 2026-02, tier: 3}
+    - text: "The monarchy and the lese-majeste law are off the table. The amnesty in force from 24 Aug 2026 (about 6,000 people) excludes Section 112: of roughly 290 people charged since 2020, only about 10 were expected to benefit, and on 16 Jul 2026 the Chiang Mai appeal court upheld Arnon Nampa's conviction. The same taboo caps what any government can say about reform at home and what partners can press."
+      confidence: B
+      sources:
+        - {url: "https://wtop.com/world/2026/08/a-political-amnesty-law-takes-effect-in-thailand-but-excludes-lese-majeste/", title: "A political amnesty law takes effect in Thailand but excludes lese majeste", publisher: "AP via WTOP", date: 2026-08, tier: 3}
+        - {url: "https://www.asianews.it/news-en/Amnesty-for-past-protests,-not-the-latest-65818.html", title: "Amnesty for past protests, not the latest", publisher: "AsiaNews", date: 2026-09, tier: 3}
+    - text: "A war that cannot be won or ended alone. The frontier has been quiet since the ceasefire of 27 Dec 2025 but is unsettled: Crisis Group rates the immediate prospects for a settlement as poor, bilateral trade has collapsed, the Joint Boundary Commission is stalled, and Cambodia keeps protesting Thai trenches and a power-grid extension (10 Aug 2026). The first truce came only after Washington told both sides there would be no trade deal while the fighting went on."
+      confidence: B
+      sources:
+        - {url: "https://cambodianess.com/article/international-crisis-group-warns-cambodia-faces-uphill-battle-to-resolve-border-dispute-with-thailand", title: "International Crisis Group warns Cambodia faces uphill battle to resolve border dispute with Thailand", publisher: "Cambodianess, reporting International Crisis Group", date: 2026-10-10, tier: 3}
+        - {url: "https://opendevelopmentcambodia.net/announcements/press-release-on-cambodia-protesting-thailands-continued-violations-of-cambodian-sovereignty-and-territorial-integrity/", title: "Press release on Cambodia protesting Thailand's continued violations of Cambodian sovereignty and territorial integrity", publisher: "Cambodian Ministry of Foreign Affairs (republished statement)", date: 2026-08-10, tier: 1}
+        - {url: "https://library.stratfor.com/article/thailand-and-cambodia-maintain-uneasy-ceasefire", title: "Thailand and Cambodia maintain uneasy ceasefire", publisher: "Stratfor (RANE)", date: 2026-08, tier: 3}
+    - text: "Dependence on foreign demand: goods and services exports were 71.1% of GDP in 2025, and tourism receipts were 19.9% of exports in 2019, the last year with a value in the World Bank series. The United States imposed a 12.5% tariff on Thai imports in July 2026 and the reciprocal agreement is still unsigned; Japanese carmakers, the industry's core, are losing share to Chinese brands."
+      confidence: B
+      sources:
+        - {url: "https://api.worldbank.org/v2/country/THA/indicator/NE.EXP.GNFS.ZS?format=json&per_page=8", title: "Exports of goods and services (% of GDP) - Thailand", publisher: "World Bank", date: 2026-10-08, tier: 1}
+        - {url: "https://api.worldbank.org/v2/country/THA/indicator/ST.INT.RCPT.XP.ZS?format=json&per_page=8", title: "International tourism, receipts (% of total exports) - Thailand", publisher: "World Bank", date: 2026-10-08, tier: 1}
+        - {url: "https://www.nst.com.my/amp/world/region/2026/10/1550049/thailand-us-trade-deal-down-final-clause-pm", title: "Thailand, US trade deal down to final clause: PM", publisher: "New Straits Times (Reuters)", date: 2026-10-07, tier: 3}
+        - {url: "https://www.omanobserver.om/article/1157018/business/cars/japan-built-thailands-car-industry-now-china-is-gunning-for-it", title: "Japan built Thailand's car industry, now China is gunning for it", publisher: "Oman Observer", date: 2026-07, tier: 3}
+    - text: "A frontier it cannot seal, beside a neighbour it cannot govern. The scam compounds of Myawaddy and Shwe Kokko were the target of the Feb 2025 power cut, which analysts expected would only make them move or find other power and internet; the war in Myanmar has killed more than 100,000 people (ACLED, quoted by Al Jazeera); and Bangkok's engagement with Naypyidaw draws fire from the Special Advisory Council for Myanmar."
+      confidence: B
+      sources:
+        - {url: "https://www.nst.com.my/amp/world/region/2025/02/1170467/thailand-cut-power-myanmar-border-areas-curb-scam-centres", title: "Thailand to cut power to Myanmar border areas to curb scam centres", publisher: "New Straits Times (Reuters)", date: 2025-02-04, tier: 3}
+        - {url: "https://www.aljazeera.com/amp/news/2026/8/20/myanmar-military-chief-visits-bangkok-as-diplomatic-offensive-continues", title: "Myanmar military chief visits Bangkok as diplomatic offensive continues", publisher: "Al Jazeera", date: 2026-08-20, tier: 3}
+        - {url: "https://www.nst.com.my/amp/world/region/2026/08/1515296/thai-myanmar-military-chiefs-meet-post-coup-thaw-progresses", title: "Thai, Myanmar military chiefs meet as post-coup thaw progresses", publisher: "New Straits Times", date: 2026-08, tier: 3}
+    - text: "An insurgency in the Malay-Muslim south that has outlasted every government: violence continued through June 2026 (a roadside bomb at Tak Bai on 29 June injured two Malaysians) while the BRN says the talks remain the route; the facilitator is Malaysia, which was also the ASEAN mediator on Cambodia, so one neighbour holds two of Bangkok's problems."
+      confidence: B
+      sources:
+        - {url: "https://www.nst.com.my/amp/news/regional/2026/07/1480966/brn-says-peace-process-remains-key-resolving-southern-thailand", title: "BRN says peace process remains key to resolving southern Thailand conflict", publisher: "New Straits Times", date: 2026-07, tier: 3}
+        - {url: "https://www.malaymail.com/news/malaysia/2026/07/01/thailand-malaysia-eye-september-peace-talks-on-southern-border-conflict/225945", title: "Thailand, Malaysia eye September peace talks on southern border conflict", publisher: "Malay Mail", date: 2026-07-01, tier: 3}
+
+  paradoxes:
+    - text: "The patron treated the ally like the foe. Thailand holds the 1954 treaty and Major Non-NATO Ally status, yet in July 2025 Trump told both Bangkok and Phnom Penh that there would be no trade deal while the fighting went on; the ceasefire of 28 Jul followed his calls, and Washington then branded the October accord as its own. Bangkok held the ground but not the terms of the ending."
+      confidence: B
+      sources:
+        - {url: "https://www.hawaiitribune-herald.com/2025/07/29/nation-world-news/ceasefire-takes-effect-between-thailand-and-cambodia-after-five-day-border-battle/", title: "Ceasefire takes effect between Thailand and Cambodia after five-day border battle", publisher: "AP via Hawaii Tribune-Herald", date: 2025-07-29, tier: 3}
+        - {url: "https://www.khaleejtimes.com/world/asia/thailand-suspends-cambodia-deal", title: "Thailand suspends Cambodia deal after landmine injures troops", publisher: "Khaleej Times (AFP)", date: 2025-11-10, tier: 3}
+        - {url: "https://www.jurist.org/documents/presidentialdocuments/04-897/", title: "Designation of the Kingdom of Thailand as a Major Non-NATO Ally", publisher: "Presidential determination (Jurist reproduction)", date: 2003, tier: 1}
+    - text: "Diversifying away from American arms created a Chinese dependency. The Gripen order (Aug 2025) displaced the F-16, but the S26T submarine ordered from China was specified with a German MTU engine that Germany would not release for it; a revised contract (September 2025) substitutes the Chinese CHD620 and delivery is expected at the end of 2028, with further boats left to be decided after the first. The hedge meant to reduce reliance on one supplier puts the navy's first submarine in the hands of another supplier's engine."
+      confidence: B
+      sources:
+        - {url: "https://www.janes.com/defence-intelligence-insights/defence-news/defence/defense-security-2025-china-on-track-with-thai-submarine-delivery", title: "Defense & Security 2025: China on track with Thai submarine delivery", publisher: "Janes", date: 2025, tier: 3}
+        - {url: "https://defencesecurityasia.com/?p=60934", title: "Thailand Pushes China's S26T Submarine Towards 2028, Renewing Underwater Ambitions", publisher: "Defence Security Asia", date: 2025, tier: 3}
+        - {url: "https://breakingdefense.com/2025/08/saab-secures-550m-gripen-e-f-order-for-thailand/", title: "Saab secures $550M Gripen E/F order for Thailand", publisher: "Breaking Defense", date: 2025-08, tier: 3}
+    - text: "The deportation that pleased Beijing cost goodwill in Washington. On 27 Feb 2025 Thailand sent 40 Uyghur men to China despite assurances that it would not; on 14 Mar 2025 Rubio announced visa restrictions on the current and former Thai officials responsible, and Bangkok could only say that it had 'received assurances' from China about their safety."
+      confidence: B
+      sources:
+        - {url: "https://www.arabnews.com/node/2593683", title: "Thailand says assured of Uyghurs' safety after US visa bans", publisher: "Arab News (Reuters)", date: 2025-03-15, tier: 3}
+        - {url: "https://thediplomat.com/2025/03/us-imposes-visa-restrictions-on-thai-officials-over-uyghur-deportation/", title: "US imposes visa restrictions on Thai officials over Uyghur deportation", publisher: "The Diplomat", date: 2025-03, tier: 3}
+    - text: "The border closure punishes the economy it is meant to protect. Bilateral trade with Cambodia fell 40% to USD 1.3bn in the first half of 2026, yet Crisis Group finds that Thailand has little incentive to change the status quo because it holds the high ground; the cost falls on the border provinces while the dispute stays open."
+      confidence: B
+      sources:
+        - {url: "https://cambodianess.com/article/international-crisis-group-warns-cambodia-faces-uphill-battle-to-resolve-border-dispute-with-thailand", title: "International Crisis Group warns Cambodia faces uphill battle to resolve border dispute with Thailand", publisher: "Cambodianess, reporting International Crisis Group", date: 2026-10-10, tier: 3}
+    - text: "The court that removed a Shinawatra made the Shinawatras indispensable. After Paetongtarn's removal (Aug 2025) the conservatives won 192 seats in February 2026 but, short of a majority, formed the government with Pheu Thai, Thaksin's party, which took the coalition to about 292 of 499 seats; Anutin was re-elected prime minister on 19 Mar 2026 with 293 votes."
+      confidence: B
+      sources:
+        - {url: "https://www.dailymaverick.co.za/article/thailands-election-winner-bhumjaithai-seals-coalition-deal-with-pheu-thai", title: "Thailand's election winner Bhumjaithai seals coalition deal with Pheu Thai", publisher: "Daily Maverick (Reuters)", date: 2026-02, tier: 3}
+        - {url: "https://www.nst.com.my/amp/world/region/2026/02/1374108/thailand-pm-anutin-consolidates-power-dominating-election-win", title: "Thailand PM Anutin consolidates power with dominating election win", publisher: "New Straits Times (Reuters)", date: 2026-02, tier: 3}
+    - text: "Engagement with the junta in the name of order may disturb the order on the border. Bangkok hosted Min Aung Hlaing and then the new army chief Ye Win Oo in August 2026 to secure cooperation on drugs and scams, eighteen months after cutting power to its border towns; Burma News International weighs that the engagement may heighten pressure on the border, and the Special Advisory Council for Myanmar says Thailand 'torched its credibility'."
+      confidence: C
+      sources:
+        - {url: "https://www.bnionline.net/en/news/thailands-engagement-junta-may-heighten-border-pressure-resistance-groups-see-limited-risk", title: "Thailand's engagement with junta may heighten border pressure, but resistance groups see limited risk", publisher: "Burma News International", date: 2026-08, tier: 3}
+        - {url: "https://www.aljazeera.com/amp/news/2026/8/20/myanmar-military-chief-visits-bangkok-as-diplomatic-offensive-continues", title: "Myanmar military chief visits Bangkok as diplomatic offensive continues", publisher: "Al Jazeera", date: 2026-08-20, tier: 3}
+
+  reading: |
+    Thailand is the textbook of a state that survives by bending: treaty ally of the
+    United States, first trading partner and now arms customer of China, summit
+    partner of Putin and Modi, comprehensive strategic partner of Vietnam, and it
+    has not paid the price of joining any camp. What 2025 added is the rest of
+    Luttwak's lesson: the same state that yields to every great power fought its
+    small neighbour, and in that war the bending came back. Bangkok held the ground
+    (Crisis Group: it holds the high ground and land on both sides of the line)
+    but the end of the war was set in Washington and Putrajaya, by a tariff threat
+    to both belligerents, and the accord that Trump named for Kuala Lumpur was
+    suspended by Thailand within a fortnight of signing. The domestic cycle runs on
+    the same logic. The courts that removed Paetongtarn over a telephone call to
+    Hun Sen made the border a test of loyalty, Anutin took office on it, called his
+    election in the middle of the fighting and won 192 seats, and has to govern
+    with Thaksin's party; the monarchy and Section 112 stay outside every bargain,
+    the 2026 amnesty included. Adversary or rival: Thailand's grade of Cambodia is
+    rival, because neither government seeks the other's end (the 27 Dec 2025
+    statement commits both to demarcation through the Joint Boundary Commission and
+    ICG's recommendations are about a thaw), though the fighting was the deadliest
+    between the two in decades. Three signals are not rows: Anutin was the first
+    ASEAN leader to congratulate Min Aung Hlaing as president (April 2026) and
+    hosted him in August, a thaw that reverses the 2025 power cut; the United
+    States put a 12.5% tariff on Thai goods in July 2026 while the reciprocal
+    agreement is described as 'at the last paragraph'; and the Cambodian frontier
+    stays shut to trade while both sides insist that the ceasefire holds. Relational
+    manoeuvre against Thailand therefore does not pass through its alliances but
+    through its seams: a treaty ally that buys Chinese submarines and Swedish jets,
+    a neighbour of Cambodia that needs a Malaysian mediator and an American
+    patron to end its own war, and a junta it needs more than it respects.
