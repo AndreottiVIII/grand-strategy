@@ -204,6 +204,7 @@
        <div class="row"><span class="sw" style="box-shadow:inset 0 0 0 3px var(--c-partner)"></span>Kin - shared identity</div>
        <div class="row"><span class="sw" style="box-shadow:inset 0 0 0 3px var(--c-rival)"></span>Grievance - open wound</div>
        <div class="row"><span class="sw"></span>Affinity or no standing tie</div>
+       <div class="row"><span class="sw" style="border:2px dashed var(--c-ally)"></span>Aligned, no treaty</div>
        <div class="row fault-hint">A band that contradicts its outline is a fault: kin inside red = feud, grievance inside green = Byzantine alliance.</div>` +
       (SEAMS_ON_MAP && seamsAround(pov).length ? `<h3>Seams</h3><div class="row"><span class="sw" style="border:1.5px dashed var(--c-seam)"></span>Pulled between ${actors[pov].short || actors[pov].name} and a rival (${new Set(seamsAround(pov).map(s => s.y)).size})</div>` : "");
   }
