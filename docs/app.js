@@ -432,7 +432,7 @@
       <div><h3>Counterparts of ${esc(actors[pov].name)} <span>${counterparts.length}${counterparts.length < total ? " of " + total : ""}</span>${chips ? `<span class="chips">${chips}</span>` : ""}</h3>
         <table><thead><tr><th>Actor</th><th>Posture</th><th>Trend</th><th>Bond</th><th title="lean: who leans on whom">Lean</th><th>Fault</th><th style="text-align:right">Rows</th></tr></thead><tbody>` +
         counterparts.map(c => `<tr class="cp" data-id="${c.id}"><td class="name">${glyph(c.st)}${esc(actors[c.id].short || actors[c.id].name)}</td>
-          <td>${c.st ? fv("grade", c.st.grade, c.st.grade.replace(/_/g, " ")) + (c.st.alignment === "de_facto" ? " <span class='tr' title='aligned without a treaty'>· aligned</span>" : "") : "<span class='tr'>-</span>"}</td>
+          <td>${c.st ? fv("grade", c.st.grade, c.st.grade.replace(/_/g, " ")) + (c.st.alignment === "de_facto" ? " <span class='tr' title='aligned without a treaty'>· aligned</span>" : "") + ((c.st.reciprocal_of || c.st.dataset === "reciprocal") ? " <span class='tr' title='not written from this side: mirrored from the other card'>· mirrored</span>" : "") : "<span class='tr'>-</span>"}</td>
           <td class="tr">${c.st ? fv("trend", c.st.trend, TREND_SIGN[c.st.trend] + " " + TREND[c.st.trend]) : ""}</td>
           <td class="tr">${c.st ? fv("bond", c.st.bond, BOND_LABEL[c.st.bond].split(" - ")[0].toLowerCase()) : ""}</td>
           <td class="tr lean-c" title="${(l => l == null ? "both sides not written" : l > 0 ? nameOf(c.id) + " leans on " + nameOf(pov) : nameOf(pov) + " leans on " + nameOf(c.id))(leanOf(pov, c.id))}">${(l => l == null ? "·" : l > 0 ? "↑" + l : "↓" + (-l))(leanOf(pov, c.id))}</td>
@@ -808,7 +808,7 @@
     }
     const st = stanceOf(id);
     if (!st) return showTip(`<b>${esc(name)}</b><span class="k">No recorded stance${a ? "" : " · not an actor yet"}</span>`, ev);
-    showTip(`<b>${esc(name)}</b>${GRADE_LABEL[st.grade]} · ${TREND_SIGN[st.trend]} ${TREND[st.trend]} · ${BOND_LABEL[st.bond].toLowerCase()}${st.alignment === "de_facto" ? " · aligned, no treaty" : ""} · confidence ${st.confidence}${st.stale ? " · stale" : ""}<br><span class="k">${esc(st.note || "")}</span>`, ev);
+    showTip(`<b>${esc(name)}</b>${GRADE_LABEL[st.grade]} · ${TREND_SIGN[st.trend]} ${TREND[st.trend]} · ${BOND_LABEL[st.bond].toLowerCase()}${st.alignment === "de_facto" ? " · aligned, no treaty" : ""} · confidence ${st.confidence}${st.stale ? " · stale" : ""}${(st.reciprocal_of || st.dataset === "reciprocal") ? " · mirrored, not written from this side" : ""}<br><span class="k">${esc(st.note || "")}</span>`, ev);
   }
 
   // ---------- dossier with footnotes
@@ -821,7 +821,22 @@
       return `<sup class="fn" data-n="${i}">${i + 1}</sup>`;
     }).join(`<sup class="fn-sep">,</sup>`);
   }
-  const badge = x => `<span class="badge ${x.confidence}">${x.confidence}</span>${x.stale ? ' <span class="stale">stale</span>' : ""}`;
+  // the reading is stored as one block; shown as paragraphs of two or three sentences (form only, 2026-10-16)
+  const paragraphs = text => {
+    const t = String(text || "").trim();
+    if (!t) return "";
+    const parts = t.split(/\n\s*\n/).map(x => x.trim()).filter(Boolean);
+    const out = [];
+    for (const part of parts) {
+      const sents = part.match(/[^.!?]+(?:[.!?]+["')\]]*|$)/g) || [part];
+      let buf = [];
+      sents.forEach((sn, i) => { buf.push(sn.trim()); if (buf.length === 3 || i === sents.length - 1) { out.push(buf.join(" ")); buf = []; } });
+      if (out.length >= 2 && out[out.length - 1].length < 90) { const last = out.pop(); out[out.length - 1] += " " + last; }
+    }
+    return out.map(x => `<p class="reading">${esc(x)}</p>`).join("");
+  };
+  const mirrored = st => st && (st.reciprocal_of || st.dataset === "reciprocal");
+  const badge = x => `<span class="badge ${x.confidence}">${x.confidence}</span>${x.stale ? ' <span class="stale">stale</span>' : ""}${mirrored(x) ? ' <span class="stale" title="not written from this side: mirrored from the other card at low confidence">mirrored</span>' : ""}`;
   const claimList = (items, ordered) =>
     `<${ordered ? "ol" : "ul"}>` + items.map(it => `<li>${esc(it.text)}${fn(it.sources)}${badge(it)}</li>`).join("") + `</${ordered ? "ol" : "ul"}>`;
   const notesHtml = () => notes.length ? `<h3>Sources</h3><ol class="fn-list">` + notes.map(s =>
@@ -851,7 +866,7 @@
         <h4>Means</h4>${[...byDomain].map(([d, ms]) => `<h4>${esc(d)}</h4>${claimList(ms, false)}`).join("")}
         <h4>Constraints</h4>${claimList(gs.constraints, false)}
         <h4>Paradoxes</h4>${claimList(gs.paradoxes, true)}
-        <h4>Reading</h4><p class="reading">${esc(gs.reading)}</p>
+        <h4>Reading</h4>${paragraphs(gs.reading)}
         ${CONV[id] ? `<h3>Convergences</h3><p class="conv">Actors that share one of ${esc(a.short || a.name)}'s rivals and are not its allies, the tables it has not sat at: ${CONV[id].map(c => `<a href="#/view/${c.id}">${nameOf(c.id)}</a> <span class="meta">(against ${c.shared.map(nameOf).join(", ")})</span>`).join(" · ")}.</p>` : ""}
         <h3>The world as ${esc(a.name)} sees it</h3>
         <table class="tbl"><thead><tr><th>Toward</th><th>Posture</th><th>Bond</th><th>Why this reading</th></tr></thead><tbody>
