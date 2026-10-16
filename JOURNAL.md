@@ -1,5 +1,25 @@
 # Journal
 
+## 2026-10-16 · Dominica (DMA) card, Flash: thin, two web calls, gaps logged
+
+Two web calls: the Wikipedia API wikitext of "Foreign relations of Dominica" (read; China 2004 communique and US$12m aid, UK and US dates, US aid channels, no CBI, no Maria, no Reuters or AP citation) and a Reuters site-search (refused by the fetch tool; no Reuters or AP page read).
+
+Written: the actor card, stub turned full (two objectives, one means, one constraint, one paradox, three-sentence reading; all C, Wikipedia tier 4 as pointer); a stances file (CHN partner, USA partner, both stable, bond none, C); a relations file (CHN recognition 2004-03-23, USA recognition 1979-07-18, GBR recognition 1978-11-03, all C). The build passes with `--skip-running`; DMA's stance and relation files are skipped there because data/queue.yaml marks DMA running (14:56), so they were validated only by the full run, which fails on other agents' files (GRD, BLZ, VCT, LCA), not on DMA. Queue not changed.
+
+Mirror: grep "toward: DMA" over data/stances: none; grep "to: DMA" over data/relations: none. Nothing mirrored. The DMA rows in _wikidata and _recognition are dataset rows, left as they are.
+
+Gaps (nothing written, the brief asked for them): citizenship by investment and the 2025 US pressure on it (the Reuters fetch was refused, so no source); the geothermal project; Venezuela (the Isla Aves waters claim is in the Wikipedia index but ALBA and Petrocaribe are not, so no VEN stance); China's post-2004 aid and debt beyond the 2004 figures; CARICOM and OECS (org-caricom and org-oecs do not exist as stubs, and the Wikipedia index gives only the 1994 Haiti contribution); Hurricane Maria 2017 as the constraint (not in the Wikipedia index read, so no row). Next step if wanted: a fresh web budget for a Reuters or AP page on CBI and the US visa measures, and a Maria source (ReliefWeb or World Bank) for the constraint.
+
+## 2026-10-16 · Grenada (GRD) card, Flash: thin, two web calls, almost all gaps
+
+Two web calls, and only press summaries: the Wikipedia API for "Foreign relations of Grenada" (read; its facts are tier 4 pointers, so nothing was cited from it: the 1983 US intervention, the 20 January 2005 resumption of ties with the PRC, the UK ties of 1974, CARICOM and OECS membership, Resolution 940, the Regional Security System) and one search restricted to Reuters and AP, which the domain filter refused with an API error (the search was then repeated unfiltered: the second web call, which returned no Reuters or AP page). The search summaries of the Beryl coverage are cited as tier 3 at C, with the page not opened.
+
+Written: the actor card, stub turned full (two objectives, one means, one constraint, an empty paradoxes list, a three-sentence reading; all C, Beryl and the CARICOM reflex only). A stances file and a relations file with empty lists: the brief asked for two or three stances and rows, but no source read supports any grade toward the United States, China or the UK, and no row toward an actor is sourced. The build skips both files as "agent running" because `data/queue.yaml` still marks GRD as running; they need to be validated after the queue is cleared.
+
+Mirror: no stance in data/stances and no relation in data/relations holds a row toward GRD (grep "toward: GRD" and "to: GRD": none); the only GRD rows in the datasets are Wikidata memberships, the Kosovo and Palestine recognitions and the non-recognition of Taiwan, which were not rewritten. Reuse from neighbours: JAM's CARICOM citations concern Jamaica after Melissa, not Grenada, so none was reused.
+
+Gaps, to fill with a fresh web budget: the United States (1983 is in Wikipedia only; the 2025 Caribbean posture and any radar request are unread); China (the 2005 switch and the stadium are unread; the Wikipedia date is a pointer); the UK and the Commonwealth (the membership is in the datasets; the UK stance needs a source that reads the relation); CARICOM (the 2025-26 chair was not sourced; one search snippet mentions Mitchell taking over the chair, with no date, so it was not written); OECS; the citizenship-by-investment scheme; nutmeg and tourism as the economy (no figure read, so no dependency rows); the paradox (none sourced). The Beryl figure of ninety percent of buildings destroyed on Carriacou is attributed in press to a CARICOM summit report that was not checked.
+
 ## 2026-10-16 · Trinidad and Tobago (TTO) minor card, Flash: thin, three web calls, gaps logged
 
 Minor card, three web calls: the Wikipedia API for five titles (Dragon and Manakin-Cocuina gas field pages missing, CARICOM with no extract); one search with a Reuters/AP domain filter, refused by the tool, so Reuters and AP were not reached; one unfiltered search returning Trinidad press and an Al Jazeera page, titles and snippets only, bodies not read. Written: the TTO actor card (stub turned full: 2 objectives, 1 mean, 2 constraints, 1 paradox, 3-sentence reading), 3 stances (USA partner, VEN rival, IND partner with bond kin, all C), 2 relation rows (USA visit and VEN incident, Oct 2025, C).

@@ -1,77 +1,176 @@
 actor: CUB
 stances:
-  - toward: USA
-    grade: rival
-    trend: cooling
-    bond: grievance
-    since: '2025-01-20'
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "Havana's view as the press reports it: Díaz-Canel says there are no conversations with Washington beyond migration technicalities and that any external aggressor will face an impenetrable resistance (January 2026), and on 20 March 2026 Havana's line hardened to a refusal to negotiate the system. The structure is a fuel blockade and a stated wish, as reported, to remove the president. Rival, not adversary: Havana's aim is to defend its order and survive the pressure, not to see the United States destroyed, and no source reports a Cuban aim against the US state. Cooling since the January 2026 measures; the March talks are the one counter-movement. Bond grievance: the embargo and the 1959-62 rupture. Grade is our reading of the structure (C); the US side's stance is in data/stances/USA.yaml and is not copied."
-    sources:
-      - {url: "https://www.politico.com/live-updates/2025/01/20/donald-trump-inauguration-day-news-updates-analysis/a-quick-reversal-on-cuba-00199531", title: "Trump quickly puts Cuba back on the list of state sponsors of terrorism", publisher: "Politico", date: 2025-01-20, tier: 3}
-      - {url: "https://www.scmp.com/news/world/united-states-canada/article/3339642/cubas-diaz-say-no-conversations-us-after-trump-threats-amid-venezuela-tensions", title: "Cuba's Diaz-Canel says no conversations with US after Trump threats amid Venezuela tensions", publisher: "South China Morning Post", date: 2026-01, tier: 3}
-      - {url: "https://www.newstribune.com/news/2026/mar/22/cuba-refuses-to-negotiate-presidents-term-in/", title: "Cuba refuses to negotiate president's term in talks with United States", publisher: "Newstribune", date: 2026-03-22, tier: 3}
-      - {url: "https://www.whitehouse.gov/fact-sheets/2026/01/fact-sheet-president-donald-j-trump-addresses-threats-to-the-united-states-by-the-government-of-cuba/", title: "Fact Sheet: President Donald J. Trump addresses threats to the United States by the Government of Cuba", publisher: "The White House", date: 2026-01-29, tier: 1}
-      - {url: "https://www.ohchr.org/en/press-releases/2026/02/un-experts-condemn-us-executive-order-imposing-fuel-blockade-cuba", title: "UN experts condemn US executive order imposing fuel blockade on Cuba", publisher: "UN Office of the High Commissioner for Human Rights", date: 2026-02-12, tier: 1}
-
-  - toward: RUS
-    grade: partner
-    trend: warming
-    bond: affinity
-    since: '2025-12'
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "Transactional, the fuel tanker is the content: a Russian-flagged tanker, the Anatoly Kolodkin, delivered crude from December 2025 and gave temporary relief in April 2026 (Reuters, 13 May 2026); Moscow said it would keep working on supplies despite the US blockade. No treaty, no defence clause, no de facto alignment named in the sources. Warming is the direction of the 2026 shipments. The dates differ across reports (one places the first arrival at the end of March); the grade does not depend on the exact day. Bond affinity is our reading of the Soviet-era tie, not a source's word."
-    sources:
-      - {url: "https://www.dailymaverick.co.za/article/2026-05-14-cuba-has-run-out-of-diesel-and-fuel-oil-amid-us-oil-blockade", title: "Cuba has run out of diesel and fuel oil amid US oil blockade (Reuters, Dave Sherwood)", publisher: "Daily Maverick", date: 2026-05-14, tier: 3}
-      - {url: "https://www.wsls.com/news/world/2026/03/19/cuba-readies-for-first-russian-oil-shipment-of-the-year-as-energy-crisis-deepens/", title: "Cuba readies for first Russian oil shipment of the year as energy crisis deepens", publisher: "AP (via WSLS)", date: 2026-03-19, tier: 3}
-
-  - toward: VNM
-    grade: partner
-    trend: stable
-    bond: kin
-    since: '1960'
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "Mirrored from the Vietnamese side (data/stances/VNM.yaml, same URLs): non-refundable rice under an agriculture-ministry agreement (250 tonnes in February 2026, 1,200 tonnes in June 2026), rice seed for Cuba's 2026 programme. Cuba's grade is its own reading of what it receives: transactional, no alignment. Bond kin is the Vietnamese card's reading of socialist solidarity; no Cuban source is cited for it."
-    sources:
-      - {url: "https://news.tuoitre.vn/vietnam-sends-250-tonnes-of-rice-to-support-cubas-food-security-103260214165002189.htm", title: "Vietnam sends 250 tonnes of rice to support Cuba's food security", publisher: "Tuoi Tre News", date: "2026-02-14", tier: 3}
-      - {url: "https://en.qdnd.vn/economy/news/vietnamese-firm-delivers-1-200-tons-of-rice-to-cuba-592102", title: "Vietnamese firm delivers 1,200 tons of rice to Cuba", publisher: "People's Army Newspaper (QDND)", date: "2026-06-17", tier: 3}
-
-  - toward: ESP
-    grade: partner
-    trend: cooling
-    bond: none
-    since: '2026-07'
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "Mirrored from the Spanish side (data/relations/ESP.yaml, same URLs). Spanish hotel chains run much of Cuba's tourism; Meliá (34 hotels) announced in July 2026 it would cease operations, after Iberostar stopped managing hotels. Madrid's foreign minister says Spain rejects military intervention in Latin America (June 2026). Cooling since July 2026. Bond none is our reading: no source names kinship or affinity, and the historic colonial tie is not sourced in this pass. Both sources are tier 4 pointers; corroboration is a gap."
-    sources:
-      - {url: "https://diplomatictimes.net/2026/07/21/spanish-melia-to-cease-operations-in-cuba/", title: "Spanish Melia to cease operations in Cuba", publisher: "Diplomatic Times", date: 2026-07-21, tier: 4}
-      - {url: "https://easternherald.com/2026/06/02/spain-rejects-us-military-intervention-cuba-albares-latin-america/", title: "Spain rejects US military intervention in Cuba - Albares", publisher: "Eastern Herald", date: 2026-06-02, tier: 4}
-
-  - toward: MEX
-    grade: partner
-    trend: cooling
-    bond: none
-    since: '2026-01'
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "Mexico was a fuel supplier and has sent none since the US executive order of January 2026 (Reuters, 13 May 2026); Sheinbaum said in February that tariffs could cause a humanitarian crisis, and in June 2026 said Mexico wanted to restart shipments through commercial and private firms, with humanitarian aid continuing, but gave no timeline. Partner, not ally: the supply is transactional and contingent on US pressure. Cooling is the flow stopping; the June offer is the counter-signal. Bond none is our reading: no source names kinship or affinity. Mexico's own card is in progress and is not edited here."
-    sources:
-      - {url: "https://www.dailymaverick.co.za/article/2026-05-14-cuba-has-run-out-of-diesel-and-fuel-oil-amid-us-oil-blockade", title: "Cuba has run out of diesel and fuel oil amid US oil blockade (Reuters, Dave Sherwood)", publisher: "Daily Maverick", date: 2026-05-14, tier: 3}
-      - {url: "https://www.aljazeera.com/amp/video/newsfeed/2026/2/10/mexicos-sheinbaum-laments-us-oil-block-on-cuba", title: "Mexico's Sheinbaum laments US' oil block on Cuba", publisher: "Al Jazeera", date: 2026-02-10, tier: 3}
-      - {url: "https://www.wlrn.org/americas/2026-06-22/mexicos-president-seeks-to-restart-oil-shipments-to-cuba-as-islands-crises-deepen", title: "Mexico's president seeks to restart oil shipments to Cuba as island's crises deepen", publisher: "WLRN (AP)", date: 2026-06-22, tier: 3}
-
-  - toward: VEN
-    grade: partner
-    trend: cooling
-    bond: affinity
-    since: '2026-01'
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "Venezuela was Cuba's main oil supplier and, by Havana's account, a key source of economic support until Washington cut it off in January 2026. Reuters reports Venezuela has sent no fuel since the January 2026 executive order (13 May 2026). The sources do not establish who governs Venezuela now, so this grade reads the flow, not the regime. Partner, not ally: the tie is material and no source uses an alliance word for the 2026 period. Cooling because the flow stopped. Bond affinity is our reading of the Chavista-era ties, not a source's word, and is unverified in this pass."
-    sources:
-      - {url: "https://www.dailymaverick.co.za/article/2026-05-14-cuba-has-run-out-of-diesel-and-fuel-oil-amid-us-oil-blockade", title: "Cuba has run out of diesel and fuel oil amid US oil blockade (Reuters, Dave Sherwood)", publisher: "Daily Maverick", date: 2026-05-14, tier: 3}
-      - {url: "https://www.scmp.com/news/world/united-states-canada/article/3339642/cubas-diaz-say-no-conversations-us-after-trump-threats-amid-venezuela-tensions", title: "Cuba's Diaz-Canel says no conversations with US after Trump threats amid Venezuela tensions", publisher: "South China Morning Post", date: 2026-01, tier: 3}
+- toward: USA
+  grade: rival
+  trend: cooling
+  bond: grievance
+  since: '2025-01-20'
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'Havana''s view as the press reports it: Díaz-Canel says there are no conversations with Washington beyond migration technicalities and that any external aggressor will face an impenetrable resistance
+    (January 2026), and on 20 March 2026 Havana''s line hardened to a refusal to negotiate the system. The structure is a fuel blockade and a stated wish, as reported, to remove the president. Rival, not
+    adversary: Havana''s aim is to defend its order and survive the pressure, not to see the United States destroyed, and no source reports a Cuban aim against the US state. Cooling since the January 2026
+    measures; the March talks are the one counter-movement. Bond grievance: the embargo and the 1959-62 rupture. Grade is our reading of the structure (C); the US side''s stance is in data/stances/USA.yaml
+    and is not copied.'
+  sources:
+  - url: https://www.politico.com/live-updates/2025/01/20/donald-trump-inauguration-day-news-updates-analysis/a-quick-reversal-on-cuba-00199531
+    title: Trump quickly puts Cuba back on the list of state sponsors of terrorism
+    publisher: Politico
+    date: 2025-01-20
+    tier: 3
+  - url: https://www.scmp.com/news/world/united-states-canada/article/3339642/cubas-diaz-say-no-conversations-us-after-trump-threats-amid-venezuela-tensions
+    title: Cuba's Diaz-Canel says no conversations with US after Trump threats amid Venezuela tensions
+    publisher: South China Morning Post
+    date: 2026-01
+    tier: 3
+  - url: https://www.newstribune.com/news/2026/mar/22/cuba-refuses-to-negotiate-presidents-term-in/
+    title: Cuba refuses to negotiate president's term in talks with United States
+    publisher: Newstribune
+    date: 2026-03-22
+    tier: 3
+  - url: https://www.whitehouse.gov/fact-sheets/2026/01/fact-sheet-president-donald-j-trump-addresses-threats-to-the-united-states-by-the-government-of-cuba/
+    title: 'Fact Sheet: President Donald J. Trump addresses threats to the United States by the Government of Cuba'
+    publisher: The White House
+    date: 2026-01-29
+    tier: 1
+  - url: https://www.ohchr.org/en/press-releases/2026/02/un-experts-condemn-us-executive-order-imposing-fuel-blockade-cuba
+    title: UN experts condemn US executive order imposing fuel blockade on Cuba
+    publisher: UN Office of the High Commissioner for Human Rights
+    date: 2026-02-12
+    tier: 1
+- toward: RUS
+  grade: partner
+  trend: warming
+  bond: affinity
+  since: 2025-12
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'Transactional, the fuel tanker is the content: a Russian-flagged tanker, the Anatoly Kolodkin, delivered crude from December 2025 and gave temporary relief in April 2026 (Reuters, 13 May 2026);
+    Moscow said it would keep working on supplies despite the US blockade. No treaty, no defence clause, no de facto alignment named in the sources. Warming is the direction of the 2026 shipments. The dates
+    differ across reports (one places the first arrival at the end of March); the grade does not depend on the exact day. Bond affinity is our reading of the Soviet-era tie, not a source''s word.'
+  sources:
+  - url: https://www.dailymaverick.co.za/article/2026-05-14-cuba-has-run-out-of-diesel-and-fuel-oil-amid-us-oil-blockade
+    title: Cuba has run out of diesel and fuel oil amid US oil blockade (Reuters, Dave Sherwood)
+    publisher: Daily Maverick
+    date: 2026-05-14
+    tier: 3
+  - url: https://www.wsls.com/news/world/2026/03/19/cuba-readies-for-first-russian-oil-shipment-of-the-year-as-energy-crisis-deepens/
+    title: Cuba readies for first Russian oil shipment of the year as energy crisis deepens
+    publisher: AP (via WSLS)
+    date: 2026-03-19
+    tier: 3
+- toward: VNM
+  grade: partner
+  trend: stable
+  bond: kin
+  since: '1960'
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'Mirrored from the Vietnamese side (data/stances/VNM.yaml, same URLs): non-refundable rice under an agriculture-ministry agreement (250 tonnes in February 2026, 1,200 tonnes in June 2026), rice
+    seed for Cuba''s 2026 programme. Cuba''s grade is its own reading of what it receives: transactional, no alignment. Bond kin is the Vietnamese card''s reading of socialist solidarity; no Cuban source
+    is cited for it.'
+  sources:
+  - url: https://news.tuoitre.vn/vietnam-sends-250-tonnes-of-rice-to-support-cubas-food-security-103260214165002189.htm
+    title: Vietnam sends 250 tonnes of rice to support Cuba's food security
+    publisher: Tuoi Tre News
+    date: '2026-02-14'
+    tier: 3
+  - url: https://en.qdnd.vn/economy/news/vietnamese-firm-delivers-1-200-tons-of-rice-to-cuba-592102
+    title: Vietnamese firm delivers 1,200 tons of rice to Cuba
+    publisher: People's Army Newspaper (QDND)
+    date: '2026-06-17'
+    tier: 3
+- toward: ESP
+  grade: partner
+  trend: cooling
+  bond: none
+  since: 2026-07
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'Mirrored from the Spanish side (data/relations/ESP.yaml, same URLs). Spanish hotel chains run much of Cuba''s tourism; Meliá (34 hotels) announced in July 2026 it would cease operations, after
+    Iberostar stopped managing hotels. Madrid''s foreign minister says Spain rejects military intervention in Latin America (June 2026). Cooling since July 2026. Bond none is our reading: no source names
+    kinship or affinity, and the historic colonial tie is not sourced in this pass. Both sources are tier 4 pointers; corroboration is a gap.'
+  sources:
+  - url: https://diplomatictimes.net/2026/07/21/spanish-melia-to-cease-operations-in-cuba/
+    title: Spanish Melia to cease operations in Cuba
+    publisher: Diplomatic Times
+    date: 2026-07-21
+    tier: 4
+  - url: https://easternherald.com/2026/06/02/spain-rejects-us-military-intervention-cuba-albares-latin-america/
+    title: Spain rejects US military intervention in Cuba - Albares
+    publisher: Eastern Herald
+    date: 2026-06-02
+    tier: 4
+- toward: MEX
+  grade: partner
+  trend: cooling
+  bond: none
+  since: 2026-01
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'Mexico was a fuel supplier and has sent none since the US executive order of January 2026 (Reuters, 13 May 2026); Sheinbaum said in February that tariffs could cause a humanitarian crisis, and
+    in June 2026 said Mexico wanted to restart shipments through commercial and private firms, with humanitarian aid continuing, but gave no timeline. Partner, not ally: the supply is transactional and
+    contingent on US pressure. Cooling is the flow stopping; the June offer is the counter-signal. Bond none is our reading: no source names kinship or affinity. Mexico''s own card is in progress and is
+    not edited here.'
+  sources:
+  - url: https://www.dailymaverick.co.za/article/2026-05-14-cuba-has-run-out-of-diesel-and-fuel-oil-amid-us-oil-blockade
+    title: Cuba has run out of diesel and fuel oil amid US oil blockade (Reuters, Dave Sherwood)
+    publisher: Daily Maverick
+    date: 2026-05-14
+    tier: 3
+  - url: https://www.aljazeera.com/amp/video/newsfeed/2026/2/10/mexicos-sheinbaum-laments-us-oil-block-on-cuba
+    title: Mexico's Sheinbaum laments US' oil block on Cuba
+    publisher: Al Jazeera
+    date: 2026-02-10
+    tier: 3
+  - url: https://www.wlrn.org/americas/2026-06-22/mexicos-president-seeks-to-restart-oil-shipments-to-cuba-as-islands-crises-deepen
+    title: Mexico's president seeks to restart oil shipments to Cuba as island's crises deepen
+    publisher: WLRN (AP)
+    date: 2026-06-22
+    tier: 3
+- toward: VEN
+  grade: partner
+  trend: cooling
+  bond: affinity
+  since: 2026-01
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'Venezuela was Cuba''s main oil supplier and, by Havana''s account, a key source of economic support until Washington cut it off in January 2026. Reuters reports Venezuela has sent no fuel since
+    the January 2026 executive order (13 May 2026). The sources do not establish who governs Venezuela now, so this grade reads the flow, not the regime. Partner, not ally: the tie is material and no source
+    uses an alliance word for the 2026 period. Cooling because the flow stopped. Bond affinity is our reading of the Chavista-era ties, not a source''s word, and is unverified in this pass.'
+  sources:
+  - url: https://www.dailymaverick.co.za/article/2026-05-14-cuba-has-run-out-of-diesel-and-fuel-oil-amid-us-oil-blockade
+    title: Cuba has run out of diesel and fuel oil amid US oil blockade (Reuters, Dave Sherwood)
+    publisher: Daily Maverick
+    date: 2026-05-14
+    tier: 3
+  - url: https://www.scmp.com/news/world/united-states-canada/article/3339642/cubas-diaz-say-no-conversations-us-after-trump-threats-amid-venezuela-tensions
+    title: Cuba's Diaz-Canel says no conversations with US after Trump threats amid Venezuela tensions
+    publisher: South China Morning Post
+    date: 2026-01
+    tier: 3
+- toward: JAM
+  grade: partner
+  trend: cooling
+  bond: affinity
+  since: 2026-03-05
+  last_verified: '2026-10-16'
+  confidence: C
+  reciprocal_of: JAM
+  note: Provisional reciprocal of Jamaica's 'partner' stance toward Cuba, written on 2026-10-16 by tools/reciprocate.py from the same evidence; to be rewritten from Cuba's side.
+  sources:
+  - url: https://jamaica-gleaner.com/article/news/20260305/jamaica-end-50-year-old-medical-programme-cuba
+    title: Jamaica to end 50-year-old medical programme with Cuba
+    publisher: The Gleaner
+    date: 2026-03-05
+    tier: 3
+  - url: https://jamaica-gleaner.com/article/news/20260319/holness-defends-decision-end-jamaicas-medical-cooperation-cuba
+    title: Holness defends decision to end Jamaica's medical cooperation with Cuba
+    publisher: The Gleaner
+    date: 2026-03-19
+    tier: 3
+  - url: https://jamaica-gleaner.com/article/news/20260307/cuban-foreign-ministry-jamaicas-decision-end-medical-programme-disregarded
+    title: 'Cuban foreign ministry: Jamaica''s decision to end medical programme ''disregarded'' history of fruitful, sustained collaboration'
+    publisher: The Gleaner
+    date: 2026-03-07
+    tier: 3
