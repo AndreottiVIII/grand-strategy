@@ -1,5 +1,15 @@
 # Journal
 
+## 2026-10-16 · Belize (BLZ) card, Flash minor: three web calls, gaps logged
+
+Three web calls: the Wikipedia API (search generator on the dispute, extracts and external links in one call), the ICJ case page 177 (redirected to http://www.icj-cij.org/case/177, not followed: the budget was spent), and one search summary on the 2025 election and the 2021 debt-for-nature swap. No Reuters or AP page was reached: the search tool does not return them here, as the ATG entry also found.
+
+Written: `data/actors/BLZ.yaml` (card full, two objectives, two means, two constraints, one paradox, reading); `data/stances/BLZ.yaml` (rival toward GTM, partner toward GBR with bond kin as the brief asked, partner toward TWN with since null); `data/relations/BLZ.yaml` (recognition_sought toward GTM, influence_goal toward org-icj). Mirror: `grep "toward: BLZ" data/stances/*.yaml` returned nothing, so no card held a stance toward BLZ; the one mirror written is in `data/stances/GTM.yaml` (claimed_territory toward BLZ, bond grievance, the claim itself, C) and `data/relations/GTM.yaml` (territorial_claim toward BLZ, C). Guatemala's claim sits on Guatemala's side, so the mirror is hand-written, not the reciprocal rule's rival.
+
+Gaps (brief items with no source read): the United States (partner, the 2023 embassy and any 2026 accord), Mexico (partner), CARICOM and SICA (no `org-caricom` or `org-sica` actor files exist; the double membership is not in any row), the UK garrison as a relation (no row toward GBR military_presence), the Taiwan recognition date (null). The ICJ hearing dates of 2026 are not sourced: Wikipedia gives the oral arguments from November 2025 and nothing later. The debt-for-nature and tourism figures come from search summaries, not read articles (confidence C). Next step: a sourced pass for the US, Mexico and the regional bodies with a fresh web budget.
+
+Build note: `data/queue.yaml` marks BLZ `running` (14:54), so `tools/build.py` skips `stances/BLZ.yaml` and `relations/BLZ.yaml` while the status holds. Release the status to include them in `docs/data.json`.
+
 ## 2026-10-16 · Dominica (DMA) card, Flash: thin, two web calls, gaps logged
 
 Two web calls: the Wikipedia API wikitext of "Foreign relations of Dominica" (read; China 2004 communique and US$12m aid, UK and US dates, US aid channels, no CBI, no Maria, no Reuters or AP citation) and a Reuters site-search (refused by the fetch tool; no Reuters or AP page read).
