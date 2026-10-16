@@ -21,7 +21,8 @@ import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 D = ROOT / "data"
-RECIP = {"ally": "ally", "reluctant_ally": "reluctant_ally", "partner": "partner", "reluctant_partner": "reluctant_partner",
+# Davide, 2026-10-16: structural mirror, see tools/build.py (ally comes back as partner unless a treaty binds)
+RECIP = {"ally": "partner", "reluctant_ally": "partner", "partner": "partner", "reluctant_partner": "partner",
          "neutral": "neutral", "rival": "rival", "adversary": "adversary", "claimed_territory": "rival"}
 LOWER = {"A": "B", "B": "C", "C": "C"}
 MIRROR_TYPES = {"treaty", "membership", "security_guarantee"}   # recognition is directional, never mirrored
@@ -62,10 +63,10 @@ def main(write):
             if any(x["toward"] == a for x in tgt["stances"]):
                 continue
             tgt["stances"].append({
-                "toward": a, "grade": RECIP[st["grade"]], "trend": st.get("trend", "stable"), "bond": st.get("bond", "unknown"),
+                "toward": a, "grade": RECIP[st["grade"]], "trend": "stable", "bond": "unknown",
                 "since": st.get("since"), "last_verified": today, "confidence": LOWER.get(st.get("confidence", "C"), "C"),
                 "reciprocal_of": a,
-                "note": f"Provisional reciprocal of {actors[a]['name']}'s '{st['grade']}' stance toward {actors[b]['name']}, written on {today} by tools/reciprocate.py from the same evidence; to be rewritten from {actors[b]['name']}'s side.",
+                "note": f"{actors[b]['name']} has not written its reading of {actors[a]['name']}; the atlas mirrors {actors[a]['name']}'s '{st['grade'].replace('_', ' ')}' reading as '{RECIP[st['grade']].replace('_', ' ')}' at low confidence, on the same evidence (tools/reciprocate.py, {today}). Bond and trend are not assessed from this side.",
                 "sources": st.get("sources", [])})
             added_st.append((b, a, RECIP[st["grade"]]))
 

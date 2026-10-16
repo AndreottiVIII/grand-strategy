@@ -341,8 +341,17 @@ def main():
     # flagged `reciprocal`, so the map never shows an alliance from one side only. Rivalries are never mirrored.
     lower = {"A": "B", "B": "C", "C": "C"}
     # Davide, 2026-10-12: every grade gets its provisional reciprocal, not only ally; territorial grades map to rival/none
-    RECIP = {"ally": "ally", "reluctant_ally": "reluctant_ally", "partner": "partner", "reluctant_partner": "reluctant_partner",
+    # Davide, 2026-10-16: the mirror is structural, not a copy. An alliance comes back as ally only where a
+    # treaty binds the pair (the dataset floor); otherwise a small state's "ally" is the patron's partner.
+    # Reluctance is felt by the side that wrote it, so it is not mirrored. Bond and trend are never copied.
+    RECIP = {"ally": "partner", "reluctant_ally": "partner", "partner": "partner", "reluctant_partner": "partner",
              "neutral": "neutral", "rival": "rival", "adversary": "adversary", "claimed_territory": "rival"}
+    def mirror_grade(a, b, g):
+        if g in ("ally", "reluctant_ally"):
+            for x in (stances.get(b) or {}).get("stances", []):
+                if x["toward"] == a and x.get("dataset") == "wikidata-memberships" and x["grade"] == "ally":
+                    return "ally"
+        return RECIP[g]
     recip = 0
     for a, s in list(stances.items()):
         for st in s.get("stances", []):
@@ -354,14 +363,15 @@ def main():
             existing = {x["toward"] for x in (stances.get(b) or {}).get("stances", [])}
             if a in existing:
                 continue
+            mg = mirror_grade(a, b, st["grade"])
             stances.setdefault(b, {"actor": b, "stances": []})["stances"].append({
-                "toward": a, "grade": RECIP[st["grade"]], "trend": st.get("trend", "stable"), "bond": st.get("bond", "unknown"),
-                "since": st.get("since"), "last_verified": st.get("last_verified"), "confidence": lower.get(st.get("confidence", "C"), "C"),
+                "toward": a, "grade": mg, "trend": "stable", "bond": "unknown",
+                "since": st.get("since"), "last_verified": st.get("last_verified"), "confidence": "C",
                 "dataset": "reciprocal", "stale": st.get("stale", False),
-                "note": f"Reciprocal of {actors[a]['name']}'s '{st['grade']}' stance toward {actors[b]['name']}, provisional and not yet written from this side; same evidence. ",
+                "note": f"{actors[b]['name']} has not written its reading of {actors[a]['name']}; the atlas mirrors {actors[a]['name']}'s '{st['grade'].replace('_', ' ')}' reading as '{mg.replace('_', ' ')}' at low confidence, on the same evidence. Bond and trend are not assessed from this side.",
                 "sources": st.get("sources", [])})
             recip += 1
-            warn(f"{b} -> {a}: reciprocal '{RECIP[st['grade']]}' stance added from {a}'s card; write {b}'s own side in the reverse pass")
+            warn(f"{b} -> {a}: mirrored '{mg}' stance added from {a}'s card; write {b}'s own side if the silence matters")
     if recip:
         warnings.append(f"{recip} reciprocal stances added")
 
