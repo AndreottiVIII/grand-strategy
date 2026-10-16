@@ -649,6 +649,40 @@ def main():
         for t in theatres:
             t["index"] = round(100 * t["heat"] / mx)
 
+    # --- flanks (Luttwak, The Grand Strategy of the Byzantine Empire: do not fight the enemy, find
+    # the enemy behind him and pay him). For every actor A and every X it grades hostile, the actors Z
+    # that grade X hostile too: recruited if A and Z already read each other friendly (or are bound by
+    # treaty or de facto alignment), false if either reads the other hostile, open otherwise. Hand-written
+    # A/B only, states and non-state actors only (organisations never move). Davide, 2026-10-16.
+    FLANK_HOST, FLANK_FRIEND = {"rival", "adversary"}, {"ally", "reluctant_ally", "partner"}
+    hostile_of = {}
+    for (a, x), st in handst.items():
+        if st["grade"] in FLANK_HOST and not is_org(a):
+            hostile_of.setdefault(x, {})[a] = st["grade"]
+    flanks, flank_index = [], []
+    for a in sorted({k[0] for k in handst}):
+        if is_org(a):
+            continue
+        mine = [(x, st["grade"]) for (p, x), st in handst.items() if p == a and st["grade"] in FLANK_HOST]
+        if not mine:
+            continue
+        counts = {"open": 0, "recruited": 0, "false": 0, "lonely": 0}
+        for x, g in mine:
+            zs = {z: gz for z, gz in hostile_of.get(x, {}).items() if z != a}
+            if not zs:
+                counts["lonely"] += 1
+            for z, gz in sorted(zs.items()):
+                ga = handst.get((a, z), {}).get("grade"); gb = handst.get((z, a), {}).get("grade")
+                bound = (a, z) in treaty or (z, a) in treaty or handst.get((a, z), {}).get("alignment") == "de_facto" or handst.get((z, a), {}).get("alignment") == "de_facto"
+                kind = "false" if (ga in FLANK_HOST or gb in FLANK_HOST) else "recruited" if (ga in FLANK_FRIEND or gb in FLANK_FRIEND or bound) else "open"
+                counts[kind] += 1
+                flanks.append({"a": a, "x": x, "ax": g, "z": z, "zx": gz, "kind": kind, "az": ga, "za": gb,
+                               "znote": first(handst[(z, x)].get("note"))})
+        flank_index.append({"a": a, "enemies": len(mine), **counts})
+    flank_index.sort(key=lambda r: (-r["open"], -r["recruited"], r["a"]))
+    flanks.sort(key=lambda f: (f["a"], f["kind"], f["x"], f["z"]))
+    warnings.append(f"{len(flanks)} flanks for {len(flank_index)} actors ({sum(r['open'] for r in flank_index)} open)")
+
     out = {
         "generated": today.isoformat(),
         "theatres": theatres,
@@ -656,6 +690,7 @@ def main():
         "clients": clients, "tepid": tepid,
         "faults": faults,
         "gatherings": gatherings,
+        "flanks": flanks, "flank_index": flank_index,
         "convergences": convergences,
         "currents": currents,
         "alarms": {"allies_cooling": allies_cooling, "rivals_warming": rivals_warming},

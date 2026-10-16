@@ -107,6 +107,7 @@
     else if (kind === "gatherings") setView("gatherings");
     else if (kind === "currents") setView("currents");
     else if (kind === "theatres") setView("theatres");
+    else if (kind === "flanks") setView("flanks");
     else if (kind === "about") setView("about");
     else if (kind === "colophon") { setView("about"); const c = document.getElementById("colophon"); if (c) c.scrollIntoView(); return; }
     else { clear(); mapMode = "world"; renderLegend(); setView("map"); }
@@ -128,7 +129,7 @@
   orgSel.onchange = () => { orgSel.value ? showOrg(orgSel.value) : goHome(); };
   issueSel.onchange = () => { issueSel.value ? showIssue(issueSel.value) : goHome(); };
   document.querySelectorAll(".tab").forEach(b => b.onclick = () => b.dataset.view === "dossier" ? showDossier(pov || fullActors[0].id) : (pov ? setPov(pov) : goHome()));
-  const PAGE_HASH = { map: "#/", orgs: "#/organisations", issues: "#/issues", luttwak: "#/luttwak", seams: "#/seams", clients: "#/clients", faults: "#/faults", gatherings: "#/gatherings", currents: "#/currents", theatres: "#/theatres", about: "#/about", colophon: "#/colophon" };
+  const PAGE_HASH = { map: "#/", orgs: "#/organisations", issues: "#/issues", luttwak: "#/luttwak", seams: "#/seams", clients: "#/clients", faults: "#/faults", gatherings: "#/gatherings", currents: "#/currents", theatres: "#/theatres", flanks: "#/flanks", about: "#/about", colophon: "#/colophon" };
   document.querySelectorAll("#topnav a").forEach(a => { a.href = PAGE_HASH[a.dataset.page]; a.onclick = ev => { ev.preventDefault(); navigate(PAGE_HASH[a.dataset.page]); }; });
   document.getElementById("home").onclick = ev => { ev.preventDefault(); goHome(); };
   function setView(v, render = true) {
@@ -136,7 +137,7 @@
     document.querySelectorAll(".tab").forEach(b => b.classList.toggle("is-on", b.dataset.view === v));
     document.querySelectorAll("#topnav a").forEach(a => a.classList.toggle("is-on", a.dataset.page === v || (a.dataset.page === "map" && (v === "map" || v === "dossier"))));
     document.querySelectorAll(".view").forEach(s => s.classList.toggle("is-on", s.id === "view-" + v));
-    const isPage = ["orgs", "issues", "luttwak", "seams", "clients", "faults", "gatherings", "currents", "theatres", "about"].includes(v);
+    const isPage = ["orgs", "issues", "luttwak", "seams", "clients", "faults", "gatherings", "currents", "theatres", "flanks", "about"].includes(v);
     document.querySelector(".side").style.display = isPage ? "none" : "";
     document.querySelector(".frame").classList.toggle("is-page", isPage);
     if (v === "orgs") renderOrgsPage();
@@ -148,6 +149,7 @@
     if (v === "gatherings") renderGatheringsPage();
     if (v === "currents") renderCurrentsPage();
     if (v === "theatres") renderTheatresPage();
+    if (v === "flanks") renderFlanksPage();
     if (v === "about") renderAboutPage();
     if (!render) return;
     if (v === "map") drawMap();
@@ -705,6 +707,25 @@
     }
   }
 
+
+  // ---------- flanks: the enemies of my enemies (computed by the build from hand-written stances)
+  const FLANKS = data.flanks || [], FLANK_INDEX = data.flank_index || [];
+  function renderFlanksPage() {
+    const el = document.getElementById("page-flanks");
+    const g = kind => FLANKS.filter(f => f.kind === kind);
+    const open = g("open"), rec = g("recruited"), fals = g("false");
+    const rdg = r => r.open === 0 && r.enemies > 0 && r.lonely === r.enemies ? "alone: its enemies have no enemies" : r.open === 0 ? "the move is spent: every flank already recruited" : r.open >= 10 ? "many cheap options" : r.open >= 4 ? "options to work" : "few flanks";
+    const between = f => f.az || f.za ? `${f.az ? nameOf(f.a) + " reads " + f.az.replace("_", " ") : ""}${f.az && f.za ? "; " : ""}${f.za ? nameOf(f.z) + " reads " + f.za.replace("_", " ") : ""}` : "<span class='tr'>nothing written either way</span>";
+    const row = f => `<tr><td class="name"><a href="#/view/${f.a}">${nameOf(f.a)}</a></td><td class="name"><a href="#/view/${f.x}">${nameOf(f.x)}</a> <i style="color:${gradeBorder(f.ax)}">${f.ax}</i></td><td class="name"><a href="#/view/${f.z}">${nameOf(f.z)}</a> <i style="color:${gradeBorder(f.zx)}">${f.zx}</i></td><td>${between(f)}</td><td><div class="why">${esc(f.znote)}</div></td></tr>`;
+    const table = (list, head, cols) => `<h3 class="sec">${head}</h3><table class="ledger-t"><thead><tr>${cols.map(c => `<th>${c}</th>`).join("")}</tr></thead><tbody>${list.map(row).join("") || `<tr><td colspan="5" class="empty">None written yet.</td></tr>`}</tbody></table>`;
+    el.innerHTML = `<h2>Flanks</h2><p class="lede">The enemies of my enemies. Luttwak's reading of Byzantium, in <i>The Grand Strategy of the Byzantine Empire</i>, is that the empire outlived Rome by a thousand years because it rarely fought the enemy in front of it: it found the enemy behind him, the Khazars behind the Avars, the Pechenegs behind the Rus, and paid him. For every actor and every enemy it reads, this page lists who else reads that enemy as hostile, and whether the flank is already recruited, still open, or false, the enemy of my enemy being my enemy too.</p>
+      <h3 class="sec">Who has flanks</h3><table class="ledger-t"><thead><tr><th>Actor</th><th>Enemies</th><th>Open</th><th>Recruited</th><th>False</th><th>Enemies without enemies</th><th>Reading</th></tr></thead><tbody>` +
+      FLANK_INDEX.map(r => `<tr><td class="name"><a href="#/view/${r.a}">${nameOf(r.a)}</a></td><td class="n">${r.enemies}</td><td class="n"><b>${r.open}</b></td><td class="n">${r.recruited}</td><td class="n">${r.false}</td><td class="n">${r.lonely}</td><td class="kind">${rdg(r)}</td></tr>`).join("") + `</tbody></table>` +
+      table(open, "Open flanks · the Byzantine move not yet made", ["Actor", "Against", "Open flank", "Between them", "The flank's own reading of the enemy"]) +
+      table(fals, "False flanks · the enemy of my enemy is my enemy too", ["Actor", "Against", "False flank", "Between them", "The flank's own reading of the enemy"]) +
+      `<details class="method"><summary>Recruited flanks (${rec.length})</summary>` + table(rec, "Recruited · the move already made", ["Actor", "Against", "Recruited flank", "Between them", "The flank's own reading of the enemy"]) + `</details>
+      <details class="method"><summary>How flanks are found</summary><p>For every actor A and every X that A grades rival or adversary, the build takes every Z that also grades X rival or adversary (hand-written stances of confidence A or B; organisations never count, only those who move). Z is <b>recruited</b> if A or Z already reads the other as ally, reluctant ally or partner, or if a treaty or a de facto alignment binds them; <b>false</b> if either reads the other as rival or adversary; <b>open</b> otherwise, which is the flank nobody has worked. An enemy with no enemies at all leaves A alone in front of it. The ranking counts open flanks: many open flanks are cheap options, none means the move is spent or the actor is alone. ${FLANKS.length} flanks for ${FLANK_INDEX.length} actors, ${open.length} of them open.</p></details>`;
+  }
   function renderAboutPage() {
     const el = document.getElementById("page-about");
     if (el.dataset.done) return;
@@ -730,6 +751,8 @@
       <p>Every posture carries a <b>trend</b>, warming, stable or cooling, and the trends are the first derivative of the map: not where the relationships stand but where they are going. The frame is Luttwak's <b>culminating point</b>, the moment at which a success begins to produce its own reversal. The Currents page reads the trends two ways. The alarms: allies that are cooling, which is the culminating point of an alliance, the protection that has begun to cost, and rivals that are warming, the rivalry past its useful peak. And two measures per actor: <b>drift</b>, which way its world is going, and <b>turbulence</b>, how much of it is moving. Each build keeps a snapshot of every grade, so the page can also say what changed since the last one. On the map, in the posture lens, a warming relationship pulses and a cooling one flickers, like phosphor brightening or dying.</p>
       <h3>Theatres</h3>
       <p>Below grand strategy in Luttwak's ladder of levels sits the <b>theatre</b>, where geography and several actors' forces add up and where strategy is actually conducted. The atlas keeps a hand list of seventeen theatres, from the Western Balkans to the Southern Cone, and computes for each a <b>heat</b> from what it has read between the members: declared hostility, seams, feuds, claimed territory and movements with stakes, divided by the number of possible pairs so that a small dense theatre is not outweighed by a large one. The Theatres page has its own map, lit by heat, and the list of what makes each theatre hot. A theatre whose members have few cards reads cold for lack of data, not for peace.</p>
+      <h3>Flanks</h3>
+      <p>The <b>enemies of my enemies</b>. Luttwak reads Byzantium's survival as the refusal to fight the enemy in front when the enemy behind him could be found and paid: the Khazars against the Avars, the Pechenegs against the Rus. The Flanks page runs that search for every actor: for each enemy it reads, who else reads that enemy as hostile, and whether that flank is already <b>recruited</b> (a written friendship, a treaty or a de facto alignment), <b>false</b> (the enemy of my enemy is my enemy too) or still <b>open</b>, the move nobody has made. The ranking counts open flanks; an actor whose enemies have no enemies stands alone.</p>
       <h3>How it is made</h3>
       <p>The data lives in plain files, one per actor, separate from the site, and is versioned in the open: the whole history of every grade is in the repository. Cards are researched and drafted by language-model agents working from a shared brief and the atlas's own rules, then reread by a stronger model that checks objectives, paradoxes and every posture grade against the sources and against the neighbouring cards; the owner samples the result. A new card's grades retroact on the cards already written as provisional reciprocals, flagged as such until written from the other side. Nothing is embedded in the site: it renders the data as it stands on the day of the last build, and the stamp in the top bar says which day that was.</p>
       <h3>What it is not</h3>

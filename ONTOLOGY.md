@@ -284,6 +284,16 @@ weight being for now the number of cards that read each actor (a proper weight, 
 is in BACKLOG). Computed by `tools/build.py` (`clients`), shown on the Clients page and as the
 lean column of the ledger.
 
+## Flanks (added 2026-10-16)
+
+The enemies of my enemies, Luttwak's Byzantine rule (find the enemy behind the enemy and pay him).
+For every actor A and every X that A grades rival or adversary (hand-written, A or B), every Z
+that grades X hostile too (states and non-state actors; organisations never). Z is **recruited** if
+A or Z reads the other ally, reluctant ally or partner, or a treaty or de facto alignment binds
+them; **false** if either reads the other hostile; **open** otherwise. The index per actor counts
+open, recruited and false flanks and the enemies that have no enemies at all (the actor stands
+alone). Computed by `tools/build.py` (`flanks`, `flank_index`), shown on the Flanks page.
+
 ## Faults (added 2026-10-13)
 
 Luttwak's levels: the bond is the deep level, the posture the surface; a relationship whose two

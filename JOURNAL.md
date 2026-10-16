@@ -43,6 +43,10 @@ Theatres map redrawn on Davide's remark that the clash zone must glow, not the a
 now a circle of hand-set radius around its centre (data/theatres.yaml, `radius`), lit by its heat;
 members are outlined only when a theatre is chosen.
 
+Flanks page added on Davide's question ("qualcosa sui nemici dei miei nemici?"): for every actor and
+every enemy it reads, the others who read that enemy as hostile, sorted as recruited, open or false;
+ranking by open flanks; Byzantine reading in the lede and in About. Section in ONTOLOGY.md.
+
 A Wikidata membership row made Australia an ASEAN member: removed from the dataset and excluded in
 the generator (WRONG set in tools/datasets/wikidata.py). New tool `tools/onesided.py` lists the
 readings that have no hand-written counterpart: Davide wants to review them with me before the
