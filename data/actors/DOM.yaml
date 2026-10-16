@@ -9,6 +9,53 @@ coords:
 seat: Santo Domingo
 regions:
 - world
-card: stub
+card: full
 tier: minor
+last_verified: 2026-10-16
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Hold the Haitian border with walls, troops and tougher rules. In April 2025 Abinader announced fifteen measures: accelerating the border wall, 1,500 soldiers for border surveillance, and tougher penalties for people who help migrants enter or stay."
+    confidence: C
+    sources:
+    - {url: "https://fidelity.com/news/article/default/202504061831RTRSNEWSCOMBINED_KCN3GE0I7-OUSWD_1", title: "Dominican Republic reinforces border security, migration controls towards Haiti", publisher: "Reuters (syndicated on Fidelity.com)", date: 2025-04-06, tier: 3}
+    - {url: "https://www.aljazeera.com/news/2025/4/7/dominican-republic-boosts-security-on-border-with-crisis-ridden-haiti", title: "Dominican Republic boosts security on border with crisis-ridden Haiti", publisher: "Al Jazeera", date: 2025-04-07, tier: 3}
+  - rank: 2
+    text: "Keep Washington engaged on security, migration and trade. Abinader thanked the United States for help against drug smuggling, organised crime and irregular migration; the 6 February 2025 Rubio visit covered those, trade, and economic opportunities in rare earths and semiconductors."
+    confidence: C
+    sources:
+    - {url: "https://dominicantoday.com/?p=237077", title: "Local, 6 February 2025: Rubio visit to Santo Domingo (Dominican Today; article title not recorded)", publisher: "Dominican Today", date: 2025-02-06, tier: 3}
+    - {url: "https://caribbeantoday.com/sections/politics/us-secretary-of-state-to-meet-with-president-of-the-dominican-republic", title: "US Secretary of State to Meet With President of the Dominican Republic", publisher: "Caribbean Today", date: 2025-02, tier: 3}
+  - rank: 3
+    text: "Keep the multinational mission in Haiti running with others. The Dominican foreign minister said Chadian troops would gradually replace the Kenyan force through October; the Rubio talks put the mission's continuation on the agenda."
+    confidence: C
+    sources:
+    - {url: "https://ntvkenya.co.ke/news/chad-to-gradually-replace-kenyan-force-in-haiti-through-october-dominican-republic-says/", title: "Chad to gradually replace Kenyan force in Haiti through October, Dominican Republic says", publisher: "NTV Kenya", date: 2026, tier: 3}
+    - {url: "https://dominicantoday.com/?p=237077", title: "Local, 6 February 2025: Rubio visit to Santo Domingo (Dominican Today; article title not recorded)", publisher: "Dominican Today", date: 2025-02-06, tier: 3}
+  means:
+  - text: "Border force and wall: a 1,500-soldier surveillance reinforcement and a wall under construction, announced in April 2025."
+    confidence: C
+    sources:
+    - {url: "https://fidelity.com/news/article/default/202504061831RTRSNEWSCOMBINED_KCN3GE0I7-OUSWD_1", title: "Dominican Republic reinforces border security, migration controls towards Haiti", publisher: "Reuters (syndicated on Fidelity.com)", date: 2025-04-06, tier: 3}
+  - text: "Washington's security channel: the February 2025 Rubio visit made drug, crime and migration cooperation the working agenda."
+    confidence: C
+    sources:
+    - {url: "https://caribbeantoday.com/sections/politics/us-secretary-of-state-to-meet-with-president-of-the-dominican-republic", title: "US Secretary of State to Meet With President of the Dominican Republic", publisher: "Caribbean Today", date: 2025-02, tier: 3}
+  constraints:
+  - text: "The crisis next door sets the agenda. At the February 2025 meeting the foreign minister briefed Rubio on Haiti's crisis and its impact on the Dominican Republic before the presidential talks."
+    confidence: C
+    sources:
+    - {url: "https://dominicantoday.com/?p=237077", title: "Local, 6 February 2025: Rubio visit to Santo Domingo (Dominican Today; article title not recorded)", publisher: "Dominican Today", date: 2025-02-06, tier: 3}
+  - text: "Foreign contingents carry the Haitian mission. Kenyan police are rotating out and Chadian troops are replacing them gradually, a rotation announced by the Dominican foreign minister."
+    confidence: C
+    sources:
+    - {url: "https://ntvkenya.co.ke/news/chad-to-gradually-replace-kenyan-force-in-haiti-through-october-dominican-republic-says/", title: "Chad to gradually replace Kenyan force in Haiti through October, Dominican Republic says", publisher: "NTV Kenya", date: 2026, tier: 3}
+  paradoxes:
+  - text: "Walling Haiti off buys Santo Domingo a closer security tie to Washington, but the same agenda that brings it to Rubio also puts the Haitian mission, which it does not run, at the centre of the talks."
+    confidence: C
+    sources:
+    - {url: "https://dominicantoday.com/?p=237077", title: "Local, 6 February 2025: Rubio visit to Santo Domingo (Dominican Today; article title not recorded)", publisher: "Dominican Today", date: 2025-02-06, tier: 3}
+  reading: |
+    Santo Domingo treats Haiti as a border to be fenced and policed rather than a neighbour to be governed, and it pays part of its security bill with Washington, which thanks it publicly and sets the agenda. The wall, the troops and the tougher penalties are the visible answer to the crisis next door, while the mission that might end that crisis runs on other countries' contingents. Confidence C throughout: the sources read cover the 2025 measures, the February 2025 visit and the 2026 mission rotation, not yet the economy, Spain, the EU, China or the Caribbean bloc.

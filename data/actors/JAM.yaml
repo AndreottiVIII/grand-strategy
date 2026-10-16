@@ -8,7 +8,48 @@ coords:
 - 17.97
 seat: Kingston
 regions:
-- world
-card: stub
+- central-america-caribbean
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Rebuild after Hurricane Melissa on borrowed money. Five international lenders, the IMF, World Bank and Inter-American Development Bank among them, put together up to US$6.7 billion over three years at Prime Minister Holness's request; the World Bank and IDB put the physical damage at US$8.8 billion, and US$662 million arrived at once. The figures are from the search summary of the Gleaner article, not from a full read."
+    confidence: C
+    sources:
+    - {url: "https://jamaica-gleaner.com/article/news/20251201/jamaica-gets-trillion-dollar-aid-package-rebuild-after-hurricane-melissa", title: "Jamaica gets trillion-dollar aid package to rebuild after Hurricane Melissa", publisher: "The Gleaner", date: 2025-12-01, tier: 3}
+  - rank: 2
+    text: "Keep Washington's goodwill while ending the Cuban medical programme. Jamaica ended its roughly 50-year medical cooperation with Cuba in March 2026, after the two governments could not agree new terms. Holness defended the decision; Havana said Kingston bowed to US pressure; the foreign minister denied any US pressure. The objective is our reading of the act, not a stated aim."
+    confidence: C
+    sources:
+    - {url: "https://jamaica-gleaner.com/article/news/20260305/jamaica-end-50-year-old-medical-programme-cuba", title: "Jamaica to end 50-year-old medical programme with Cuba", publisher: "The Gleaner", date: 2026-03-05, tier: 3}
+    - {url: "https://jamaica-gleaner.com/article/news/20260319/holness-defends-decision-end-jamaicas-medical-cooperation-cuba", title: "Holness defends decision to end Jamaica's medical cooperation with Cuba", publisher: "The Gleaner", date: 2026-03-19, tier: 3}
+    - {url: "https://jamaica-gleaner.com/article/news/20260307/cuban-foreign-ministry-jamaicas-decision-end-medical-programme-disregarded", title: "Cuban foreign ministry: Jamaica's decision to end medical programme 'disregarded' history of fruitful, sustained collaboration", publisher: "The Gleaner", date: 2026-03-07, tier: 3}
+  means:
+  - text: "Multilateral credit: the five-lender package above, which makes the rebuild a loan programme, not a grant. The Cuban programme's end also freed the Ministry of Health to engage the Cuban workers individually to finish their contracts (Gleaner, March 2026)."
+    confidence: C
+    sources:
+    - {url: "https://jamaica-gleaner.com/article/news/20251201/jamaica-gets-trillion-dollar-aid-package-rebuild-after-hurricane-melissa", title: "Jamaica gets trillion-dollar aid package to rebuild after Hurricane Melissa", publisher: "The Gleaner", date: 2025-12-01, tier: 3}
+    - {url: "https://jamaica-gleaner.com/article/news/20260307/cuban-foreign-ministry-jamaicas-decision-end-medical-programme-disregarded", title: "Cuban foreign ministry: Jamaica's decision to end medical programme 'disregarded' history of fruitful, sustained collaboration", publisher: "The Gleaner", date: 2026-03-07, tier: 3}
+  - text: "CARICOM solidarity: Guyana sent defence engineers to repair roofs in hard-hit Westmoreland and Barbados pledged money and soldiers, as reported by the Gleaner; the CARICOM leaders' rally after the storm is the frame. Help in kind, not money, is the regional share of the means."
+    confidence: C
+    sources:
+    - {url: "https://jamaica-gleaner.com/article/news/20251118/caricom-leaders-rally-around-jamaica-amid-unprecendented-destruction", title: "CARICOM leaders rally around Jamaica amid 'unprecendented' destruction", publisher: "The Gleaner", date: 2025-11-18, tier: 3}
+  constraints:
+  - text: "Cannot fund the rebuild alone. Physical damage of US$8.8 billion against an immediate inflow of US$662 million leaves the rest to lenders and to the pace of disbursement."
+    confidence: C
+    sources:
+    - {url: "https://jamaica-gleaner.com/article/news/20251201/jamaica-gets-trillion-dollar-aid-package-rebuild-after-hurricane-melissa", title: "Jamaica gets trillion-dollar aid package to rebuild after Hurricane Melissa", publisher: "The Gleaner", date: 2025-12-01, tier: 3}
+  - text: "Cannot renew the Cuban doctors' terms on the old footing. The previous agreement expired in February 2023; both governments said they could not agree new terms, and the programme ended in March 2026."
+    confidence: C
+    sources:
+    - {url: "https://jamaica-gleaner.com/article/news/20260305/jamaica-end-50-year-old-medical-programme-cuba", title: "Jamaica to end 50-year-old medical programme with Cuba", publisher: "The Gleaner", date: 2026-03-05, tier: 3}
+  paradoxes:
+  - text: "Dropping the Cuban programme to stay in Washington's good books lands in the rebuild. Havana says its brigade stayed at its posts for more than 72 consecutive hours after the storm, and the US congressman who welcomed the cut had earlier criticised Holness."
+    sources:
+    - {url: "https://jamaica-gleaner.com/article/news/20260307/cuban-foreign-ministry-jamaicas-decision-end-medical-programme-disregarded", title: "Cuban foreign ministry: Jamaica's decision to end medical programme 'disregarded' history of fruitful, sustained collaboration", publisher: "The Gleaner", date: 2026-03-07, tier: 3}
+    - {url: "https://jamaica-gleaner.com/article/news/20260305/us-lawmaker-who-criticised-holness-welcomes-jamaica-ending-cuban-medical", title: "US lawmaker who criticised Holness welcomes Jamaica ending Cuban medical programme", publisher: "The Gleaner", date: 2026-03-05, tier: 3}
+  reading: |
+    Jamaica is a small, indebted state whose rebuild after Hurricane Melissa now runs through lenders and CARICOM rather than its own means. Its clearest foreign-policy act, ending the Cuban medical programme, is read in Havana as Washington's price, and Kingston denies it, which is the ambiguity a small state buys with. This card is thin on purpose: the United States, United Kingdom, China and CARICOM postures, and the economy and gangs, wait for sources the card has not yet read.

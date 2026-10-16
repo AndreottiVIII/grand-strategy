@@ -1,0 +1,27 @@
+from: DOM
+relations:
+  # ---------- action ----------
+  - to: HTI
+    layer: action
+    type: incident
+    summary: "April 2025 border package: fifteen measures announced by Abinader, among them accelerating the border wall, 1,500 soldiers for border surveillance, and legal reforms to toughen penalties for people who facilitate migrants' entry and stay. The sources read give the measures, not the number of expulsions; no deportation figure is recorded here until a source is read."
+    since: 2025-04-06
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://fidelity.com/news/article/default/202504061831RTRSNEWSCOMBINED_KCN3GE0I7-OUSWD_1", title: "Dominican Republic reinforces border security, migration controls towards Haiti", publisher: "Reuters (syndicated on Fidelity.com)", date: 2025-04-06, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2025/4/7/dominican-republic-boosts-security-on-border-with-crisis-ridden-haiti", title: "Dominican Republic boosts security on border with crisis-ridden Haiti", publisher: "Al Jazeera", date: 2025-04-07, tier: 3}
+
+  - to: USA
+    layer: action
+    type: visit
+    summary: "US Secretary of State Marco Rubio visited Santo Domingo on 6 February 2025 and met President Abinader at the National Palace, closing a regional tour. The talks covered security, migration and trade, drug trafficking and the Haitian mission; Rubio is reported to have called the Dominican Republic an ally (his word)."
+    since: 2025-02-06
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://dominicantoday.com/?p=237077", title: "Local, 6 February 2025: Rubio visit to Santo Domingo (Dominican Today; article title not recorded)", publisher: "Dominican Today", date: 2025-02-06, tier: 3}
+      - {url: "https://caribbeantoday.com/sections/politics/us-secretary-of-state-to-meet-with-president-of-the-dominican-republic", title: "US Secretary of State to Meet With President of the Dominican Republic", publisher: "Caribbean Today", date: 2025-02, tier: 3}
+      - {url: "https://primicias.ec/internacional/marco-rubio-republica-dominicana-pais-aliado-estados-unidos-89207", title: "Marco Rubio says the Dominican Republic is considered an 'ally' of the United States", title_original: "Marco Rubio dice que República Dominicana es considerado un \"país aliado\" de Estados Unidos", lang: es, publisher: "Primicias (EFE)", date: 2025-02, tier: 3}

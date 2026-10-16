@@ -9,6 +9,54 @@ coords:
 seat: Port-au-Prince
 regions:
 - world
-card: stub
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Get back an elected government. The Transitional Presidential Council, formed in April 2024 to hold power until an election or 7 February 2026, dissolved on that date with no presidential election held and no successor structure agreed. The prime minister, Alix Didier Fils-Aime, governs with the backing of Washington, which threatened 'serious consequences' against any move to oust him. No election date was found in sources."
+      confidence: C
+      sources:
+        - {url: "https://citizen.digital/article/haiti-enters-political-limbo-as-transition-governments-mandate-ends-n377092", title: "Haiti enters political limbo as transition government's mandate ends", publisher: "Citizen Digital (Reuters copy)", date: 2026-02-07, tier: 3}
+        - {url: "https://en.wikipedia.org/wiki/Transitional_Presidential_Council", title: "Transitional Presidential Council (Wikipedia)", publisher: "Wikipedia", date: 2026-10, tier: 4}
+    - rank: 2
+      text: "Retake Port-au-Prince from the gang coalition Viv Ansanm with a foreign force, the Gang Suppression Force (GSF), authorised by the Security Council at up to 5,550 personnel. About 1,500 troops were in place when the mandate was renewed on 29 September 2026, and the Kenyan contingent is being replaced by Chadian troops."
+      confidence: C
+      sources:
+        - {url: "https://www.timeslive.co.za/news/world/2026-09-29-un-renews-haiti-force-mandate-for-six-months-after-fresh-gang-killings/", title: "UN renews Haiti force mandate for six months after fresh gang killings", publisher: "Reuters (via TimesLIVE)", date: 2026-09-29, tier: 3}
+        - {url: "https://en.wikipedia.org/wiki/Gang_Suppression_Force", title: "Gang Suppression Force (Wikipedia)", publisher: "Wikipedia", date: 2026-10, tier: 4}
+
+  means:
+    - domain: military
+      text: "A foreign-manned force, not a Haitian one: the GSF works with the Haitian National Police and the Armed Forces of Haiti. Personnel were pledged by Kenya (until its exit), Chad, Jamaica, the Bahamas, Guyana, Barbados, Antigua and Barbuda, Bangladesh and Benin. Pledges are not deployments; the troops in place are about 1,500."
+      confidence: C
+      sources:
+        - {url: "https://en.wikipedia.org/wiki/Gang_Suppression_Force", title: "Gang Suppression Force (Wikipedia)", publisher: "Wikipedia", date: 2026-10, tier: 4}
+        - {url: "https://www.timeslive.co.za/news/world/2026-09-29-un-renews-haiti-force-mandate-for-six-months-after-fresh-gang-killings/", title: "UN renews Haiti force mandate for six months after fresh gang killings", publisher: "Reuters (via TimesLIVE)", date: 2026-09-29, tier: 3}
+    - domain: economic
+      text: "Remittances. They are the primary source of foreign exchange, nearly 20% of GDP. Exports are agricultural (vetiver oil, bananas, cocoa, mangoes) with some light manufacturing, and the United States is the major trading partner, through the HOPE and HELP preference acts."
+      confidence: C
+      sources:
+        - {url: "https://en.wikipedia.org/wiki/Economy_of_Haiti", title: "Economy of Haiti (Wikipedia)", publisher: "Wikipedia", date: 2026-10, tier: 4}
+
+  constraints:
+    - text: "No elected authority and no agreed successor since 7 February 2026. The Security Council's force depends on the Haitian state having a counterpart, and the US sanctions on five council members show how far Washington will go to keep the interim it chose."
+      confidence: C
+      sources:
+        - {url: "https://citizen.digital/article/haiti-enters-political-limbo-as-transition-governments-mandate-ends-n377092", title: "Haiti enters political limbo as transition government's mandate ends", publisher: "Citizen Digital (Reuters copy)", date: 2026-02-07, tier: 3}
+    - text: "The force is funded and staffed below plan and its contributors are leaving: Kenya brought its second contingent home in March 2026 and Chad is replacing it. Haiti's own police cannot yet hold the ground the force takes."
+      confidence: C
+      sources:
+        - {url: "https://capitalfm.africa/over-200-kenyan-police-return-home-from-haiti-mission/", title: "Over 200 Kenyan Police Return Home from Haiti Mission", publisher: "Capital FM (Kenya)", date: 2026-03-18, tier: 3}
+        - {url: "https://en.wikipedia.org/wiki/Gang_Suppression_Force", title: "Gang Suppression Force (Wikipedia)", publisher: "Wikipedia", date: 2026-10, tier: 4}
+
+  paradoxes:
+    - text: "The foreign force that keeps the capital from falling to the gangs also keeps the Haitian police and army from being rebuilt, since the GSF is the security. When the contributors leave, the gap returns to the streets; the security bought from outside is what makes the interim survivable, and the interim is what should have built Haitian security."
+      sources:
+        - {url: "https://en.wikipedia.org/wiki/Gang_Suppression_Force", title: "Gang Suppression Force (Wikipedia)", publisher: "Wikipedia", date: 2026-10, tier: 4}
+        - {url: "https://capitalfm.africa/over-200-kenyan-police-return-home-from-haiti-mission/", title: "Over 200 Kenyan Police Return Home from Haiti Mission", publisher: "Capital FM (Kenya)", date: 2026-03-18, tier: 3}
+
+  reading: |
+    Haiti's grand strategy is to get back an elected government and to retake Port-au-Prince, and it pays for both by renting its security from a UN-authorised foreign force (Kenya first, now Chad and others) and by living on remittances that tie it to its diaspora and to the United States. The transition ended on 7 February 2026 without an election or a successor, and the prime minister now governs on Washington's backing, while the force holds about a quarter of its authorised strength and its own police are not yet rebuilt. Not verified for this card: cholera and famine, which were asked for as constraints but for which no source was reached within the budget, the CARICOM mediation, the OAS and UN positions beyond the mission, and the Dominican wall.

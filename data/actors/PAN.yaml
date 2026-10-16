@@ -9,6 +9,51 @@ coords:
 seat: Panama City
 regions:
 - world
-card: stub
-tier: minor
+card: full
+tier: secondary
+last_verified: 2026-10-16
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Keep the canal Panamanian, neutral and open to all flags. The 1977 Torrijos-Carter treaties handed the waterway to Panama; in 2025 Trump spoke of 'taking back' the canal, and President Mulino answered that Panama would keep ownership. The objective is to hold that line without a fight, which is why the concession went to security rather than to sovereignty."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/Panama_Canal", title: "Panama Canal", publisher: "Wikipedia (index)", date: 2026-10-16, tier: 4}
+    - {url: "https://www.nbcnews.com/news/world/trump-china-panama-canal-ports-blackrock-rcna194833", title: "Trump says U.S. is 'reclaiming' Panama Canal after investors strike deal to buy Chinese-backed ports", publisher: "NBC News", date: 2025-03-05, tier: 3}
+    - {url: "https://www.scmp.com/news/china/diplomacy/article/3297689/panama-pulls-out-chinas-belt-and-road-initiative-president-mulino-says", title: "Panama pulls out of China's Belt and Road Initiative, President Mulino says", publisher: "South China Morning Post", date: 2025-02, tier: 3}
+  - rank: 2
+    text: "Keep the port concessions under Panamanian law and the revenue at home. A Panamanian lawsuit sought to annul the 25-year CK Hutchison contract for the ports at both canal entrances as unconstitutional, while the BlackRock purchase was pushed through as the solution Washington praised."
+    confidence: C
+    sources:
+    - {url: "https://www.scmp.com/news/china/diplomacy/article/3297689/panama-pulls-out-chinas-belt-and-road-initiative-president-mulino-says", title: "Panama pulls out of China's Belt and Road Initiative, President Mulino says", publisher: "South China Morning Post", date: 2025-02, tier: 3}
+    - {url: "https://www.nbcnews.com/news/world/trump-china-panama-canal-ports-blackrock-rcna194833", title: "Trump says U.S. is 'reclaiming' Panama Canal after investors strike deal to buy Chinese-backed ports", publisher: "NBC News", date: 2025-03-05, tier: 3}
+  means:
+  - text: "Security for sovereignty, traded. The April 2025 memorandum with the US Defence Department reopens a rotational US presence at three former bases along the canal and records a declaration on first and free transit for US warships. The price was a US military presence that Panama's own treaty history had ended."
+    confidence: B
+    sources:
+    - {url: "https://www.defense.gov/News/News-Stories/Article/Article/4150935/hegseth-says-us-partnering-with-panama-to-secure-canal-deter-china/", title: "Hegseth says US partnering with Panama to secure canal, deter China", publisher: "US Department of Defense", date: 2025-04-09, tier: 1}
+    - {url: "https://www.aljazeera.com/news/2025/4/12/camouflaged-invasion-panama-opposition-slams-security-pact-with-the-us", title: "'Camouflaged invasion': Panama opposition slams security pact with the US", publisher: "Al Jazeera", date: 2025-04-12, tier: 3}
+  - text: "Port review as leverage. Mulino agreed to review Chinese-linked businesses in Panama, including the CK Hutchison ports, after Rubio's February 2025 ultimatum; the review is a regulatory lever that Panama can turn on and off."
+    confidence: C
+    sources:
+    - {url: "https://www.scmp.com/news/china/diplomacy/article/3297689/panama-pulls-out-chinas-belt-and-road-initiative-president-mulino-says", title: "Panama pulls out of China's Belt and Road Initiative, President Mulino says", publisher: "South China Morning Post", date: 2025-02, tier: 3}
+  constraints:
+  - text: "Street and social cost. An indefinite strike from 28 April 2025 against pension reform and US interference paralysed Bocas del Toro; Chiquita lost more than US$75 million and fired thousands of its roughly 6,500 Panamanian workers; Panama declared a state of emergency in June 2025 after deadly clashes. The government cannot make a US-facing move without a domestic price."
+    confidence: C
+    sources:
+    - {url: "https://www.aljazeera.com/news/2025/6/21/panama-declares-emergency-in-western-province-after-deadly-pension-protests", title: "Panama declares emergency in western province after deadly pension protests", publisher: "Al Jazeera", date: 2025-06-21, tier: 3}
+    - {url: "https://www.yahoo.com/news/chiquita-fires-thousands-striking-banana-013718460.html", title: "Chiquita fires thousands of striking banana workers in Panama, says it suffered $75 million losses", publisher: "Yahoo News (Reuters report)", date: 2025-05, tier: 3}
+  - text: "Opposition to the US pact. The opposition calls the security memorandum a 'camouflaged invasion', and the protests named the deal among their grievances. The alignment Mulino needs for the canal is the one his own politics resist."
+    confidence: C
+    sources:
+    - {url: "https://www.aljazeera.com/news/2025/4/12/camouflaged-invasion-panama-opposition-slams-security-pact-with-the-us", title: "'Camouflaged invasion': Panama opposition slams security pact with the US", publisher: "Al Jazeera", date: 2025-04-12, tier: 3}
+  paradoxes:
+  - text: "The treaties that gave the canal back in 1977 barred the foreign bases that the 2025 memorandum brings back along the waterway. Panama defends its sovereignty over the canal with the presence that sovereignty was meant to end, and the protests show the cost is paid at home."
+    confidence: C
+    sources:
+    - {url: "https://en.wikipedia.org/wiki/Panama_Canal", title: "Panama Canal (the Torrijos-Carter treaties provided for its handover to Panama in 1977)", publisher: "Wikipedia (index)", date: 2026-10-16, tier: 4}
+    - {url: "https://www.defense.gov/News/News-Stories/Article/Article/4150935/hegseth-says-us-partnering-with-panama-to-secure-canal-deter-china/", title: "Hegseth says US partnering with Panama to secure canal, deter China", publisher: "US Department of Defense", date: 2025-04-09, tier: 1}
+  reading: |
+    Panama's strategy is to keep the canal Panamanian and its revenue flowing, and in 2025 the only protector of both was the power that had threatened to take the canal back. Mulino paid for US cover with a military presence and a rupture with Beijing's Belt and Road, and kept the Chinese-linked ports under review rather than seized. The cost shows at home in the strike, the emergency and the word 'invasion', so the next test is whether neutrality of the canal survives a patron that is also its loudest claimant.

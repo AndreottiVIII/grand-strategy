@@ -1,5 +1,25 @@
 # Journal
 
+## 2026-10-16 · Panama (PAN) card, Flash: three stances, four web calls, gaps logged
+
+Four web calls: the Wikipedia API (batched extracts; Panama-China, Panama-US and the 2025 protests pages missing); a search with the Reuters/AP domain filter (refused, the domains are not reachable for us); an unfiltered search (Reuters-reported canal, port and strike coverage via other outlets); an unfiltered search on the 2024 Venezuela rupture and the Darien figures. No Reuters or AP page was read.
+
+Written: the actor card (two objectives, two means, two constraints, one paradox, three-sentence reading; tier secondary), three stances (USA reluctant_partner warming grievance; CHN partner cooling; VEN rival warming grievance; all confidence C, grades our reading), four relation rows (USA agreement 9 Apr 2025, B; CHN withdrawal from the Belt and Road memorandum, Feb 2025; VEN rupture of 29 Jul 2024; USA Darien crossings fall, 2025). The build passes with no flag; with --skip-running the PAN stance and relation files are skipped because data/queue.yaml marks PAN as running (14:51). Not changed here.
+
+Mirror: USA holds partner (warming, bond none) toward PAN, with the DoD memorandum, the NBC canal-reclaiming piece, the Al Jazeera opposition piece and the Seatrade crisis-over piece; those sources were reused on the PAN side, with the grade and bond read from Panama's side (C, since it is our reading).
+
+Gaps (no source read, nothing written): Colombia (the Darien closure is sourced as a US-driven fall, not a Colombian relation); the EU; the banking centre and the grey lists; the canal drought and the revenue; the 1989 invasion. Stances for COL and EU are therefore not recorded.
+
+## 2026-10-16 · Nicaragua (NIC) minor card, Flash: thin, four web calls, gaps logged
+
+Four web calls: the Wikipedia API for Foreign relations of Nicaragua (extract cut off after the ICJ and UN list); a search with the Reuters/AP domain filter (refused, the domains are not reachable for us); an unfiltered search (Confidencial, USTR proposal of October 2025); a Wikipedia API extract for Costa Rica (refused: exchars above 1,200). No Reuters or AP page was read.
+
+Written: the actor card (one objective sourced, one index-only; two means; two constraints; one paradox; three-sentence reading), four stances (USA rival, CRI rival, RUS partner, CHN partner; all confidence C, grades our reading), two relation rows (CRI territorial_claim; USA sanction, October 2025 proposal). The build passes; the stance and relation files are skipped in docs/ because data/queue.yaml marks NIC as running (14:50), as with other cards. Not changed here.
+
+Mirror: the only card holding a stance toward NIC is the Holy See (VAT: rival, cooling, grievance, confidence C, plus the 2022-2025 incident row). The build adds the reciprocal NIC -> VAT in memory (provisional, flagged); no hand-written NIC -> VAT row, and tools/reciprocate.py --write added nothing (dry run: 0). No USA, RUS or CHN stance toward NIC exists in the data, so nothing was mirrored from them.
+
+Gaps (no source read, so nothing written; the brief asked for them): the Church as internal enemy beyond the VAT incident (bishops' expulsions beyond the Nov 2024 one); the exiles' stripping of nationality (no source here); Ortega and Murillo as co-presidents since 2025 (no source here; the unfiltered search gave no date); the Russian military cooperation and training centre; the 2021 switch from Taiwan and the FTA (the recognition dataset gives non-recognition of Taiwan only, no date); Venezuela and Cuba (affinity); Honduras; the Costa Rica border, San Juan river and exiles; the canal project; remittances and free zones; the USTR final decision (a December 2025 aggregator claim of phased tariffs is unverified and not written). Bonds for RUS and CHN are our reading, not sourced.
+
 ## 2026-10-16 · Suriname (SUR) minor card, Flash: thin, mostly gaps
 
 Minor card, three web calls, all used (Wikipedia API, one search, one AP page on kvia.com; the search returned no Reuters page). Written: the actor card (2 objectives, 2 means, 1 constraint, 1 paradox, 3-sentence reading), one stance (NLD, the mirror of the Dutch card's partner/warming/kin reading, same sources, C, `reciprocal_of: NLD`), two relation rows (SUR visit to NLD, Dec 2025, B, royal-house tier 1; SUR agreement with org-imf, C, AP tier 3). The brief asked for three stances and three to four rows; the rest had no tier 1 to 3 source read, so nothing was written.

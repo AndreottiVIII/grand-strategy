@@ -1,0 +1,51 @@
+from: PAN
+relations:
+  # ---------- action ----------
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "Security memorandum of 9 April 2025 with the US Defense Department: a rotational US presence at three former bases along the canal, and a declaration on first and free transit for US warships. Mulino conceded it after Trump's repeated threats to 'take back' the canal; the opposition called it a camouflaged invasion."
+    since: 2025-04-09
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.defense.gov/News/News-Stories/Article/Article/4150935/hegseth-says-us-partnering-with-panama-to-secure-canal-deter-china/", title: "Hegseth says US partnering with Panama to secure canal, deter China", publisher: "US Department of Defense", date: 2025-04-09, tier: 1}
+      - {url: "https://www.aljazeera.com/news/2025/4/12/camouflaged-invasion-panama-opposition-slams-security-pact-with-the-us", title: "'Camouflaged invasion': Panama opposition slams security pact with the US", publisher: "Al Jazeera", date: 2025-04-12, tier: 3}
+      - {url: "https://www.nbcnews.com/news/world/trump-china-panama-canal-ports-blackrock-rcna194833", title: "Trump says U.S. is 'reclaiming' Panama Canal after investors strike deal to buy Chinese-backed ports", publisher: "NBC News", date: 2025-03-05, tier: 3}
+
+  - to: CHN
+    layer: action
+    type: agreement
+    summary: "Panama instructed its embassy in Beijing to give the 90-day notice of withdrawal from the 2017 Belt and Road memorandum, in February 2025, after Rubio's ultimatum on Chinese influence over the canal. China's foreign ministry said the US was undermining Belt and Road cooperation through coercion. The vocabulary has no withdrawal type, so the exit is logged as an agreement."
+    since: 2025-02
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.scmp.com/news/china/diplomacy/article/3297689/panama-pulls-out-chinas-belt-and-road-initiative-president-mulino-says", title: "Panama pulls out of China's Belt and Road Initiative, President Mulino says", publisher: "South China Morning Post", date: 2025-02, tier: 3}
+      - {url: "https://www.bairdmaritime.com/marine-projects/marine-infrastructure/panama-crumbles-to-trump-pressure-will-not-renew-chinese-belt-and-road-contracts", title: "Panama crumbles to Trump pressure, will not renew Chinese Belt and Road contracts", publisher: "Baird Maritime", date: 2025-02, tier: 3}
+
+  - to: VEN
+    layer: action
+    type: incident
+    summary: "Panama suspended diplomatic relations with Venezuela on 29 July 2024, the day after the disputed presidential vote, and pulled its diplomats out of Caracas. Venezuela answered by suspending commercial flights to Panama. The vocabulary has no suspension type, so the rupture is logged as an incident. Consular services were restored in June 2025."
+    since: 2024-07-29
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.theweek.in/wire-updates/international/2025/06/20/fes3-panama-venezuela.html", title: "Panama, Venezuela to restore consular services in each other's countries", publisher: "The Week (wire)", date: 2025-06-20, tier: 3}
+      - {url: "https://en.wikipedia.org/wiki/Panama%E2%80%93Venezuela_relations", title: "Panama-Venezuela relations", publisher: "Wikipedia (index)", date: 2026-10-16, tier: 4}
+
+  - to: USA
+    layer: action
+    type: incident
+    summary: "Irregular crossings through the Darien Gap fell from about 302,000 in 2024 to 3,091 in 2025, a 99% drop reported by Panama's Security Ministry. MSF attributes the fall mainly to stricter US migration policy. The vocabulary has no migration type, so the fall is logged as an incident toward the state whose policy drove it."
+    since: 2025-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://eldiario.com/2026/01/02/panama-paso-de-migrantes-por-el-darien-disminuyo-en-2025/", title: "Panama: migrant crossings through the Darien fell in 2025 (Security Ministry figures)", publisher: "El Diario", date: 2026-01-02, tier: 3, lang: es}
+      - {url: "https://www.telemundo.com/noticias/amp/rcna251801", title: "El paso de migrantes por la selva del Darien se redujo un 99% en 2025, con 3,091 cruces", publisher: "Telemundo", date: 2026-01, tier: 3, lang: es}

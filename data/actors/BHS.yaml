@@ -9,6 +9,26 @@ coords:
 seat: Nassau
 regions:
 - world
-card: stub
+card: full
 tier: minor
+last_verified: 2026-10-16
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Keep Philip Davis's Progressive Liberal Party in government for a second term. The PLP won 33 of 41 seats on 12 May 2026, and Davis was sworn in again on 14 May 2026. The election was called early, after parliament was dissolved on 8 April 2026."
+    confidence: C
+    sources:
+    - {url: "https://www.aljazeera.com/news/2026/5/13/philip-davis-and-progressive-liberal-party-win-general-election-in-bahamas", title: "Philip Davis and Progressive Liberal Party win general election in Bahamas (read as search result, headline and date only)", publisher: "Al Jazeera", date: 2026-05-13, tier: 3}
+    - {url: "https://en.wikipedia.org/wiki/2026_Bahamian_general_election", title: "2026 Bahamian general election (seat count 33 of 41, preliminary; pointer only)", publisher: "Wikipedia", date: 2026-10-16, tier: 4}
+  means:
+  - text: "Multilateral seats: full member of the Commonwealth since 1973-01-01, the Organization of American States since 1982-01-01 and the United Nations since 1973-09-18. The memberships are already in the Wikidata dataset rows; the Commonwealth and OAS official lists are their sources."
+    confidence: A
+    sources:
+    - {url: "https://thecommonwealth.org/our-member-countries", title: "Commonwealth of Nations - member states", publisher: "Commonwealth of Nations", date: 2026-10-12, tier: 1}
+    - {url: "https://www.oas.org/en/member_states/default.asp", title: "Organization of American States - member states", publisher: "Organization of American States", date: 2026-10-12, tier: 1}
+  constraints: []
+  paradoxes: []
+  reading: |
+    The Bahamas is a small Caribbean state whose government has just renewed its mandate with a wide majority, so its immediate aim is continuity rather than a change of course. This card holds only what could be sourced in this pass: the 12 May 2026 result and the multilateral seats it keeps. The relations with the United States, Haiti, China and the United Kingdom, and the economic and hurricane constraints, are not written yet because no tier 1 to 3 source for them has been read.
