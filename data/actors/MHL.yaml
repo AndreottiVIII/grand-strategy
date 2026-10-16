@@ -8,7 +8,61 @@ coords:
 - 7.09
 seat: Majuro
 regions:
-- world
-card: stub
+- southeast-asia-oceania
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+recognition:
+  note: "Recognises the Republic of China (Taiwan) since 20 November 1998 and lists relations with the PRC, opened in 1990, as suspended. One of three Pacific states that still recognise Taipei, with Palau and Tuvalu, as of September 2026. The Taiwan, Kosovo and Palestine recognition rows sit in the datasets."
+  source: {url: "https://focustaiwan.tw/politics/202609030022", title: "Taiwan pledges closer cooperation with Pacific allies at PIF gathering", publisher: "Focus Taiwan (CNA)", date: 2026-09-03, tier: 3}
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Keep the Compact's money flowing past 2023. Its financial assistance was set to expire in 2023 and was extended for another 20 years that year."
+    confidence: B
+    sources:
+    - {url: "https://www.doi.gov/oia/compacts-of-free-association", title: "Compacts of Free Association (undated page, read 2026-10-16)", publisher: "U.S. Department of the Interior, Office of Insular Affairs", date: 2026-10-16, tier: 1}
+    - {url: "https://www.japantimes.co.jp/news/2023/10/17/asia-pacific/politics/us-negotiator-marshall-islands/", title: "U.S. finalizes 20-year extension of Marshall Islands ties", publisher: "The Japan Times (Reuters report)", date: 2023-10-17, tier: 3}
+  - rank: 2
+    text: "Keep the recognition of Taipei and the trade tie with Taiwan. The Marshall Islands is one of three Pacific states that still recognise Taipei, and a 2019 trade agreement with Taiwan, approved in 2023, is still to take effect."
+    confidence: B
+    sources:
+    - {url: "https://focustaiwan.tw/politics/202609030022", title: "Taiwan pledges closer cooperation with Pacific allies at PIF gathering", publisher: "Focus Taiwan (CNA)", date: 2026-09-03, tier: 3}
+    - {url: "https://fta.trade.gov.tw/", title: "ECA/FTA partners", publisher: "Bureau of Foreign Trade, Taiwan", date: 2023-06, tier: 1}
+  - rank: 3
+    text: "Hold its claim to Wake Island, which the embassy calls a disputed United States territory that the Marshall Islands also claims."
+    confidence: B
+    sources:
+    - {url: "http://www.rmiembassyus.org/Geography.htm", title: "Geography (Embassy of the Republic of the Marshall Islands in the US; undated page)", publisher: "Embassy of the Republic of the Marshall Islands in the United States", date: 2026-10-16, tier: 1}
+  means:
+  - text: "The flag registry, the second largest in the world as of 2017 after Panama, and a legal instrument as well: in 2025 the Marshall Islands took Equatorial Guinea to the International Tribunal for the Law of the Sea over a Marshallese-flagged ship that Equatoguinean forces had detained from August 2022 for over nine months."
+    confidence: C
+    sources:
+    - {url: "https://www.seatrade-maritime.com/news/europe/marshall-islands-becomes-the-world-s-second-largest-ship-registry.html", title: "Marshall Islands becomes the world's second largest ship registry", publisher: "Seatrade Maritime News", date: 2017-03-22, tier: 3}
+    - {url: "https://maritime-executive.com/article/flag-state-sues-equatorial-guinea-for-illegal-seizure-of-heroic-idun", title: "Flag State Sues Equatorial Guinea for Illegal Seizure of Heroic Idun", publisher: "Maritime Executive", date: 2025-10-07, tier: 3}
+    - {url: "https://safety4sea.com/crew-of-heroic-idun-returns-home-after-nine-months-detention-in-africa/", title: "Crew of Heroic Idun returns home after nine months detention in Africa", publisher: "Safety4Sea", date: 2023-06-13, tier: 3}
+  - text: "Visa-free residence in the United States. Under the Compact, Marshallese citizens may live, work and study there without a visa, an emigration route the treaty guarantees and Majuro does not control."
+    confidence: B
+    sources:
+    - {url: "https://cdn.ca9.uscourts.gov/datastore/opinions/2021/08/02/19-73099.pdf", title: "Bryan Maie v. Merrick Garland, No. 19-73099", publisher: "U.S. Court of Appeals for the Ninth Circuit", date: 2021-08-02, tier: 1}
+    - {url: "https://www.nytimes.com/interactive/2015/12/02/world/The-Marshall-Islands-Are-Disappearing.html", title: "The Marshall Islands Are Disappearing", publisher: "The New York Times", date: 2015-12-01, tier: 3}
+  constraints:
+  - text: "Money and defence come from one treaty. Compact assistance was due to expire in 2023, and the United States holds sole responsibility for the islands' international defence, so leaving the Compact would cost both."
+    confidence: B
+    sources:
+    - {url: "https://www.doi.gov/oia/compacts-of-free-association", title: "Compacts of Free Association (undated page, read 2026-10-16)", publisher: "U.S. Department of the Interior, Office of Insular Affairs", date: 2026-10-16, tier: 1}
+    - {url: "https://www.nytimes.com/interactive/2015/12/02/world/The-Marshall-Islands-Are-Disappearing.html", title: "The Marshall Islands Are Disappearing", publisher: "The New York Times", date: 2015-12-01, tier: 3}
+    - {url: "https://www.japantimes.co.jp/news/2023/10/17/asia-pacific/politics/us-negotiator-marshall-islands/", title: "U.S. finalizes 20-year extension of Marshall Islands ties", publisher: "The Japan Times (Reuters report)", date: 2023-10-17, tier: 3}
+  - text: "A country seven feet above the sea. The embassy gives an average altitude of seven feet, and a US$1 billion Air Force radar site on Kwajalein is among the assets rising seas could threaten."
+    confidence: B
+    sources:
+    - {url: "http://www.rmiembassyus.org/Geography.htm", title: "Geography (Embassy of the Republic of the Marshall Islands in the US; undated page)", publisher: "Embassy of the Republic of the Marshall Islands in the United States", date: 2026-10-16, tier: 1}
+    - {url: "https://www.cbsnews.com/news/rising-sea-warnings-air-force-radar-site/", title: "Rising seas could threaten $1 billion Air Force radar site", publisher: "CBS News", date: 2016-10-18, tier: 3}
+  paradoxes:
+  - text: "The registry flies the flag of ships that need not be Marshallese-owned, and after the 2015 Maersk Tigris seizure the United States said its treaty duty to defend the islands did not extend to foreign-owned Marshallese-flagged ships at sea. The flag that gives the state its place in world shipping is the one the protector said it would not cover."
+    confidence: C
+    sources:
+    - {url: "https://www.washingtonpost.com/news/volokh-conspiracy/wp/2015/05/01/u-s-treaty-obligation-to-defend-marshall-islands-ships/", title: "U.S. treaty obligation to defend Marshall Islands ships", publisher: "The Washington Post (Volokh Conspiracy blog)", date: 2015-05-01, tier: 3}
+  reading: |
+    Under President Hilda Heine, the Marshall Islands runs its foreign policy inside a treaty it cannot leave cheaply: the Compact pays for the state and carries its defence, and the 2023 extension bought twenty years, not a settlement of the nuclear grievance. Inside that frame it has three instruments it actually uses: the Taipei tie, one of three Pacific recognitions left; a flag registry, second largest in the world as of 2017, whose foreign-owned ships the United States said it would not defend at sea; and the visa-free right to live and work in America, which makes emigration a lever. The sea is the one constraint no treaty can renegotiate: the country averages seven feet above sea level, and a US$1 billion radar site at Kwajalein is on the list of what rising seas could threaten.

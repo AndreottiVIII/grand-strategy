@@ -1,0 +1,76 @@
+from: MHL
+relations:
+  # ---------- alignment ----------
+  - to: USA
+    layer: alignment
+    type: treaty
+    summary: "Compact of Free Association with the United States. Its first financial period runs from 1986 (DOI); amended by Public Law 108-188 in 2003; the 2023 extension is in the action row below. The Compact gives Marshallese citizens visa-free residence, work and study in the United States (Ninth Circuit, quoting the Compact)."
+    since: 1986
+    until: null
+    last_verified: 2026-10-16
+    confidence: A
+    sources:
+      - {url: "https://www.doi.gov/oia/compacts-of-free-association", title: "Compacts of Free Association (undated page, read 2026-10-16)", publisher: "U.S. Department of the Interior, Office of Insular Affairs", date: 2026-10-16, tier: 1}
+      - {url: "https://cdn.ca9.uscourts.gov/datastore/opinions/2021/08/02/19-73099.pdf", title: "Bryan Maie v. Merrick Garland, No. 19-73099", publisher: "U.S. Court of Appeals for the Ninth Circuit", date: 2021-08-02, tier: 1}
+
+  - to: CHN
+    layer: alignment
+    type: non_recognition
+    summary: "Does not recognise the PRC: relations, opened on 16 November 1990, are listed as suspended, in the same list that dates the Marshall Islands' recognition of the Republic of China to 20 November 1998."
+    since: 1998-11-20
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.doi.gov/sites/doi.gov/files/migrated/oia/islands/upload/RMIDipRelations.pdf", title: "Countries with which the Marshall Islands has Diplomatic Relations", publisher: "U.S. Department of the Interior", date: 2018-03-31, tier: 1}
+      - {url: "https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/dyz_681240/1206_681492/sbgx_681496/", title: "China and the Marshall Islands: bilateral relations (title in Chinese)", publisher: "Chinese Ministry of Foreign Affairs", date: 2018-11-16, tier: 1, lang: zh, title_original: "中国同马绍尔群岛的关系"}
+
+  # ---------- dependency ----------
+  - to: USA
+    layer: dependency
+    type: investment
+    summary: "Compact financial assistance of US$62.7 million a year from 2014 to 2023, before a perpetual trust fund starts (Public Law 108-188, as cited by Wikipedia). Recorded as investment because the vocabulary has no aid type: flagged for a decision."
+    value: 62.7
+    unit: usd_million_per_year
+    since: 2014
+    until: 2023
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://web.archive.org/web/20071026023104/http://www.doi.gov/oia/Firstpginfo/laws/public%20law%20108-188,%20December%2017,%202003.pdf", title: "Compact of Free Association Amendments Act of 2003 (Public Law 108-188; archived copy)", publisher: "U.S. Department of the Interior", date: 2003-12-17, tier: 1}
+      - {url: "https://www.doi.gov/oia/compacts-of-free-association", title: "Compacts of Free Association (undated page, read 2026-10-16)", publisher: "U.S. Department of the Interior, Office of Insular Affairs", date: 2026-10-16, tier: 1}
+
+  # ---------- action ----------
+  - to: GNQ
+    layer: action
+    type: incident
+    summary: "Equatoguinean forces boarded a Marshallese-flagged ship off Equatorial Guinea in August 2022 and held its crew for over nine months. The Marshall Islands sued Equatorial Guinea at the International Tribunal for the Law of the Sea for nearly US$60 million; the case opened in early October 2025."
+    since: 2022-08
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://maritime-executive.com/article/flag-state-sues-equatorial-guinea-for-illegal-seizure-of-heroic-idun", title: "Flag State Sues Equatorial Guinea for Illegal Seizure of Heroic Idun", publisher: "Maritime Executive", date: 2025-10-07, tier: 3}
+      - {url: "https://safety4sea.com/crew-of-heroic-idun-returns-home-after-nine-months-detention-in-africa/", title: "Crew of Heroic Idun returns home after nine months detention in Africa", publisher: "Safety4Sea", date: 2023-06-13, tier: 3}
+
+  - to: TWN
+    layer: action
+    type: agreement
+    summary: "On 2 Sep 2026 Foreign Minister Lin Chia-lung signed a joint statement in Palau with the leaders of the Marshall Islands (President Hilda Heine), Palau and Tuvalu, pledging to work more closely: Taiwan's three diplomatic allies in the Pacific."
+    since: 2026-09-02
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://focustaiwan.tw/politics/202609030022", title: "Taiwan pledges closer cooperation with Pacific allies at PIF gathering", publisher: "Focus Taiwan (CNA)", date: 2026-09-03, tier: 3}
+
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "The 20-year extension of the Compact's financial assistance was finalised in October 2023, after the assistance had been set to expire in 2023 (Reuters report, via The Japan Times)."
+    since: 2023-10
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.japantimes.co.jp/news/2023/10/17/asia-pacific/politics/us-negotiator-marshall-islands/", title: "U.S. finalizes 20-year extension of Marshall Islands ties", publisher: "The Japan Times (Reuters report)", date: 2023-10-17, tier: 3}

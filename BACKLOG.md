@@ -49,3 +49,5 @@ like every improving idea that comes to you".
   Polisario, Somaliland, Houthis' rivals...), and state instruments (Gazprom, Huawei).
 
 - **Eastern Libya as an actor.** The Libya card (16/10) treats the Haftar authority inside objectives and actions only; the GNU's main rival is therefore invisible on the map. Consider a sub-state actor (like sub-rs, sub-somaliland) once the unification talks settle.
+
+- **Dataset recognition rows to check**: KIR -> XKX (Kiribati recognising Kosovo since 2010 rests on one image URL; the Kiribati foreign-relations page does not list it), TON -> XKX (2014 citation unchecked).
