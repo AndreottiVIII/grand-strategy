@@ -1,0 +1,51 @@
+from: COG
+relations:
+  # ---------- action ----------
+  - to: FRA
+    layer: action
+    type: visit
+    summary: "Denis Sassou Nguesso met President Macron in Paris on 23 May 2025 (photo caption in Al Jazeera's March 2026 explainer)."
+    since: 2025-05-23
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://aljazeera.com/news/2026/3/14/republic-of-congo-election-who-is-running-and-whats-at-stake", title: "Republic of Congo election: Who is running and what's at stake?", publisher: "Al Jazeera", date: 2026-03-14, tier: 3}
+
+  - to: FRA
+    layer: action
+    type: incident
+    summary: "French investigations into the Sassou Nguesso family's assets in Europe and the US began in 2013; French authorities seized property belonging to the President's son, Denis-Christel Sassou Nguesso, in 2022 (Al Jazeera). Coface calls the investigations a cause of the tense relations."
+    since: 2013
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://aljazeera.com/news/2026/3/14/republic-of-congo-election-who-is-running-and-whats-at-stake", title: "Republic of Congo election: Who is running and what's at stake?", publisher: "Al Jazeera", date: 2026-03-14, tier: 3}
+      - {url: "https://www.coface.com/news-economy-and-insights/business-risk-dashboard/country-risk-files/congo-republic-of-the", title: "Congo (Republic of the) - country risk file", publisher: "Coface", date: 2026, tier: 2}
+
+  - to: RUS
+    layer: action
+    type: agreement
+    summary: "A pipeline between Pointe-Noire and Brazzaville, 90% owned by Russian interests, was approved in 2024; work could begin in 2026 (Coface). Read only in a search summary of the Coface file; the agreement's text was not read."
+    since: 2024
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.coface.com/news-economy-and-insights/business-risk-dashboard/country-risk-files/congo-republic-of-the", title: "Congo (Republic of the) - country risk file", publisher: "Coface", date: 2026, tier: 2}
+
+  # ---------- dependency ----------
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    summary: "China is the main partner for Congolese oil exports, taking 36% in 2024 (Coface). Oil is over 80% of export revenue (World Bank via Al Jazeera), so this share is a share of the largest export line. Read only in a search summary of the Coface file."
+    value: 0.36
+    unit: share_of_oil_exports
+    since: 2024
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.coface.com/news-economy-and-insights/business-risk-dashboard/country-risk-files/congo-republic-of-the", title: "Congo (Republic of the) - country risk file", publisher: "Coface", date: 2026, tier: 2}
+      - {url: "https://aljazeera.com/news/2026/3/14/republic-of-congo-election-who-is-running-and-whats-at-stake", title: "Republic of Congo election: Who is running and what's at stake?", publisher: "Al Jazeera", date: 2026-03-14, tier: 3}

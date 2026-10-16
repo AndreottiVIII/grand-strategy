@@ -1,0 +1,62 @@
+from: NAM
+relations:
+  # ---------- objective ----------
+  - to: DEU
+    layer: objective
+    type: recognition_sought
+    summary: "Namibia seeks German acknowledgment and a settlement of the 1904-1908 genocide. The 2021 joint declaration (about EUR 1.1bn over 30 years, framed as development aid) was rejected in Namibia; the president says a revised text is nearing conclusion and should be concluded by end-2026. Not signed as of the April 2026 reporting."
+    since: '2021-05'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://allafrica.com/stories/202604090063.html", title: "Namibia: Genocide Issue Nearly Finalised - Nandi-Ndaitwah", publisher: "allAfrica (The Namibian)", date: "2026-04-08", tier: 3}
+
+  - to: USA
+    layer: objective
+    type: influence_goal
+    summary: "After AGOA lapsed on 30 September 2025, Namibia seeks a new bilateral trade pact with Washington to keep duty-free access for beef, fish and other exports. Sought, not agreed, in the sources found."
+    since: '2025'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://bilaterals.org/namibia-eyes-new-trade-pact-with", title: "Namibia eyes new trade pact with US after AGOA ended", publisher: "Bilaterals (quoting Windhoek Observer)", date: "2025", tier: 3}
+
+  # ---------- alignment ----------
+  - to: org-eu
+    layer: action
+    type: agreement
+    summary: "Renewal of the strategic partnership with the EU for 2026-2030 (green hydrogen, critical raw materials, infrastructure), announced at the second Namibia-EU Business Forum in Windhoek on 13 May 2026. The framework began with a COP27 memorandum in November 2022."
+    since: '2026-05-13'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.republikein.com.na/mw-main/namibia-and-eu-reset-for-the-long-game-NMH010800-3015-12856", title: "Namibia and EU reset for the long game", publisher: "Republikein", date: "2026-05", tier: 3}
+
+  # ---------- dependency ----------
+  - to: USA
+    layer: dependency
+    type: trade_share
+    summary: "Exports to the United States rose from N$1.09bn in 2023 to N$5.52bn in 2024, mainly mineral commodities. The value is exports in Namibian dollars, not a share of total exports. Set against the 2025 21% tariff and the AGOA lapse (see the actor card)."
+    value: 5.52
+    unit: N$bn_exports_to_US_2024
+    since: '2024'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://bilaterals.org/namibia-eyes-new-trade-pact-with", title: "Namibia eyes new trade pact with US after AGOA ended", publisher: "Bilaterals (quoting Windhoek Observer)", date: "2025", tier: 3}
+
+  # ---------- action ----------
+  - to: CHN
+    layer: action
+    type: visit
+    summary: "Nandi-Ndaitwah met China's foreign minister Wang Yi as president-elect in January 2025, per the Chinese foreign ministry readout. Cooperation was then reaffirmed by the Chinese ambassador and the president in April 2025."
+    since: '2025-01-08'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.fmprc.gov.cn/esp/zxxx/202501/t20250108_11528957.html", title: "Chinese foreign ministry readout of Wang Yi meeting Namibia's president-elect (Spanish version)", publisher: "Chinese Foreign Ministry", date: "2025-01-08", tier: 1}

@@ -1,0 +1,36 @@
+from: BWA
+relations:
+  # ---------- action ----------
+  - to: ZAF
+    layer: action
+    type: visit
+    summary: "President Ramaphosa's state visit to Gaborone on 20-21 May 2026, co-chairing the sixth Bi-National Commission with Boko (the previous session was in 2022)."
+    since: '2026-05-20'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.gov.za/news/media-advisories/conferences-summits-seminars-and-workshops/president-cyril-ramaphosa-38", title: "President Cyril Ramaphosa undertakes State Visit to Republic of Botswana, 20 to 21 May", publisher: "gov.za (Presidency of South Africa)", date: "2026-05", tier: 1}
+
+  - to: ZWE
+    layer: action
+    type: expulsion
+    summary: "Botswana deported about 22,000 Zimbabweans in 2015 and nearly 29,000 in 2018, per a VOA report of 2019. Taken from Wikipedia's citation and not opened; the figures are press-reported, not an official count."
+    since: '2015'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.voanews.com/a/africa_botswana-battles-influx-zimbabwean-illegal-immigrants/6173868.html", title: "Botswana Battles Influx of Zimbabwean Illegal Immigrants", publisher: "Voice of America", date: "2019-08-14", tier: 3}
+
+  # ---------- alignment ----------
+  - to: GBR
+    layer: alignment
+    type: treaty
+    summary: "SACUM-UK Economic Partnership Agreement, the post-Brexit trade deal with the UK agreed in September 2019 (Botswana is a SACUM member). Trade treaty only, no defence clause. Taken from Wikipedia's citation and not opened."
+    since: '2019-09-11'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.reuters.com/article/uk-britain-africa-trade-idUKKCN1VW1N5", title: "Britain agrees post-Brexit trade deal with southern Africa", publisher: "Reuters", date: "2019-09-11", tier: 3}

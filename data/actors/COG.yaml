@@ -8,7 +8,48 @@ coords:
 - -4.27
 seat: Brazzaville
 regions:
-- world
-card: stub
+- central-southern-africa
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Keep Denis Sassou Nguesso in power to 2031. He won a fifth term on 15 March 2026 with 94.82% of the vote and 84.65% turnout (official count, as reported by Chronicle.lu) after several opposition parties were suspended and the internet was cut on election day; most opposition parties fielded no candidate."
+    confidence: C
+    sources:
+    - {url: "https://aljazeera.com/news/2026/3/14/republic-of-congo-election-who-is-running-and-whats-at-stake", title: "Republic of Congo election: Who is running and what's at stake?", publisher: "Al Jazeera", date: 2026-03-14, tier: 3}
+    - {url: "https://chronicle.lu/category/international-news/60166-congo-republics-sassou-wins-re-election-in-tightly-controlled-vote", title: "Sassou wins re-election in tightly controlled vote", publisher: "Chronicle.lu", date: 2026-03, tier: 3}
+  - rank: 2
+    text: "Refinance the debt and keep oil income flowing. Moody's raised Congo's outlook in May 2026 on a refinancing of $850 million of bonds due 2036 at 9.5%, with a tender for $575 million of bonds due 2032. Debt is about 98% of GDP, arrears about 13% of GDP (Moody's, as carried by allAfrica)."
+    confidence: C
+    sources:
+    - {url: "https://allafrica.com/stories/202605300008.html", title: "Congo-Brazzaville: Moody's Raises Congo Republic Outlook On Debt Refinancing", publisher: "allAfrica", date: 2026-05-30, tier: 3}
+  means:
+  - text: "Oil as the lever. Congo is Africa's third-largest oil exporter, shipping 236,000 to 252,000 barrels a day; oil earns more than 80% of export revenue (World Bank, as cited by Al Jazeera). Moody's puts oil at about 90% of exports: the sources differ, so the share is approximate."
+    confidence: C
+    sources:
+    - {url: "https://aljazeera.com/news/2026/3/14/republic-of-congo-election-who-is-running-and-whats-at-stake", title: "Republic of Congo election: Who is running and what's at stake?", publisher: "Al Jazeera", date: 2026-03-14, tier: 3}
+    - {url: "https://allafrica.com/stories/202605300008.html", title: "Congo-Brazzaville: Moody's Raises Congo Republic Outlook On Debt Refinancing", publisher: "allAfrica", date: 2026-05-30, tier: 3}
+  - text: "Several capitals at once. Al Jazeera names Paris, Beijing and Moscow among the alliances that have brought Nguesso investment; China is the main buyer of Congolese oil (36% in 2024, Coface); a pipeline between Pointe-Noire and Brazzaville, 90% Russian-owned, was approved in 2024 (Coface)."
+    confidence: C
+    sources:
+    - {url: "https://aljazeera.com/news/2026/3/14/republic-of-congo-election-who-is-running-and-whats-at-stake", title: "Republic of Congo election: Who is running and what's at stake?", publisher: "Al Jazeera", date: 2026-03-14, tier: 3}
+    - {url: "https://www.coface.com/news-economy-and-insights/business-risk-dashboard/country-risk-files/congo-republic-of-the", title: "Congo (Republic of the) - country risk file", publisher: "Coface", date: 2026, tier: 2}
+  constraints:
+  - text: "Debt. About 98% of GDP in May 2026, with arrears of about 13% of GDP; a parliamentary report gives 98.03% for end-May 2026 and external debt about 42% of the total (Moody's, as carried by allAfrica)."
+    confidence: C
+    sources:
+    - {url: "https://allafrica.com/stories/202605300008.html", title: "Congo-Brazzaville: Moody's Raises Congo Republic Outlook On Debt Refinancing", publisher: "allAfrica", date: 2026-05-30, tier: 3}
+  - text: "Oil dependence. Oil is more than 80% of export revenue (World Bank via Al Jazeera), so the budget, the debt service and the patronage all run on one commodity's price and volume. Our reading: a fall in either is the first shock the state faces."
+    confidence: C
+    sources:
+    - {url: "https://aljazeera.com/news/2026/3/14/republic-of-congo-election-who-is-running-and-whats-at-stake", title: "Republic of Congo election: Who is running and what's at stake?", publisher: "Al Jazeera", date: 2026-03-14, tier: 3}
+  paradoxes:
+  - text: "The buyer that funds the state is also a creditor. China takes the largest share of Congolese oil exports and is a large lender (Coface), so the relation that pays the budget is also one whose claims the refinancing has to manage."
+    confidence: C
+    sources:
+    - {url: "https://www.coface.com/news-economy-and-insights/business-risk-dashboard/country-risk-files/congo-republic-of-the", title: "Congo (Republic of the) - country risk file", publisher: "Coface", date: 2026, tier: 2}
+  reading: |
+    Sassou Nguesso's aim is to keep the system he has run for decades in power to 2031, and the oil income that pays for it is also the tightest constraint: more than 80% of export revenue against debt near 98% of GDP. He plays the great powers against each other for money and cover, Paris for aid and a long tie that also carries its own legal exposure over the family's assets, Beijing as oil buyer and creditor, and Moscow for the 2024 pipeline, and none of them is a treaty patron. The test of the next years is whether the refinancing buys enough time for oil to hold its price, and the paradox is that the buyer who funds the state is also a creditor whose claims it must manage.

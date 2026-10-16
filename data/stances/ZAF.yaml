@@ -1,100 +1,190 @@
 actor: ZAF
 stances:
-  # ---------- the great powers and the rivals ----------
-  - toward: USA
-    grade: rival
-    trend: cooling
-    bond: grievance
-    since: 2025-02-07
-    last_verified: 2026-10-16
-    confidence: B
-    note: "Rival, not adversary: aid, trade and the refugee question are contested, and neither side seeks the other's end. Mirror of the USA card, same sources: Executive Order 14204 cut aid (7 Feb 2025), the Ramaphosa-Trump White House meeting of 21 May 2025 turned on claims of white-farmer killings, the 30% tariff applied from 7 August 2025, AGOA lapsed on 30 September 2025 and was renewed only to the end of 2026, and South Africa was left out of the 2026 G20 in Miami (Truth Social, 26 Nov 2025). Trend cooling. Bond grievance, South Africa's side (our reading): the aid cut and the Afrikaner refugee order are read in Pretoria as an attack on the state. The expulsion of the US ambassador is in the USA card but no source for it is cited here, so it is not counted."
-    sources:
-      - {url: "https://www.whitehouse.gov/presidential-actions/2025/02/addressing-egregious-actions-of-the-republic-of-south-africa/", title: "Addressing egregious actions of the Republic of South Africa (Executive Order 14204)", publisher: "The White House", date: 2025-02-07, tier: 1}
-      - {url: "https://apnews.com/article/trump-ramaphosa-south-africa-9ce43dd5a9cd58e912653c99a8ab1944", title: "Trump confronts South African leader with baseless claims of the systematic killing of white farmers", publisher: "Associated Press", date: 2025-05-21, tier: 3}
-      - {url: "https://truthsocial.com/@realDonaldTrump/posts/115617700844849134", title: "Truth Social post of 26 Nov 2025 (South Africa not invited to the 2026 G20 in Miami; payments and subsidies to stop)", publisher: "Truth Social (presidential statement)", date: 2025-11-26, tier: 1}
-      - {url: "https://businessreport.co.za/business/economy/2026-02-04-agoa-extension-signed-into-law-but-south-africa-remains-on-the-tariff-frontline", title: "AGOA extension signed into law but South Africa remains on the tariff frontline", publisher: "Business Report", date: 2026-02-04, tier: 3}
-      - {url: "https://www.cbc.ca/news/world/us-south-africa-refugees-9.7159402", title: "U.S. allows nearly 4,500 South African refugees since October - and only 3 from elsewhere", publisher: "CBC News", date: 2026-04-10, tier: 3}
-
-  - toward: ISR
-    grade: rival
-    trend: stable
-    bond: grievance
-    since: 2023-12-29
-    last_verified: 2026-10-16
-    confidence: C
-    note: "Rival, our reading (confidence C): South Africa is not a belligerent and seeks no end to the Israeli state, but it has taken Israel to the ICJ for genocide in Gaza, and that legal confrontation is the central fact of the pair. No source retrieved calls the relation 'rival'; the gap is to be logged in JOURNAL. Not adversary: the aim is a ruling and a ceasefire, not Israel's disappearance. Trend stable: the case is in its written phase, Palestine intervened on 3 June 2024, Nicaragua withdrew in April 2025 and Colombia on 22 September 2026. Bond grievance, South Africa's side (our reading): the apartheid analogy in its pleadings."
-    sources:
-      - {url: "https://www.icj-cij.org/case/192", title: "South Africa v. Israel: Application of the Genocide Convention in the Gaza Strip (case page)", publisher: "International Court of Justice", date: 2026-09-22, tier: 1}
-
-  - toward: NGA
-    grade: rival
-    trend: stable
-    bond: none
-    since: '2012'
-    last_verified: 2026-10-16
-    confidence: B
-    note: "Rival, not adversary: a contest for continental leadership. Mirror of the NGA card, same sources: the 2012 contest for the AU Commission chair, and the 2025 SAIIA argument that Pretoria co-claims the continental standing through its G20 seat and its ICJ case. South Africa's own reading in 2026 is not in the sources retrieved. Bond none: interests, not kinship or a wound."
-    sources:
-      - {url: "https://saiia.org.za/research/has-south-africa-overtaken-nigeria-as-africas-giant/", title: "Has South Africa Overtaken Nigeria as Africa's Giant?", publisher: "SAIIA", date: 2025-07-30, tier: 2}
-      - {url: "https://mg.co.za/news/africa/2012-06-07-why-nigeria-hates-sa-gloves-off-to-be-champion-of-africa/", title: "Why Nigeria hates SA: gloves off to be champion of Africa", publisher: "Mail & Guardian", date: 2012-06-07, tier: 3}
-
-  # ---------- the partners ----------
-  - toward: CHN
-    grade: partner
-    trend: warming
-    bond: none
-    since: '2023'
-    last_verified: 2026-10-16
-    confidence: B
-    note: "Partner: transactional trade, no alignment. China overtook the EU as the largest trading partner in 2023 (government statement via the Deputy President). Bilateral trade rose from USD 34.2bn in 2024 to 36.4bn in 2025, up 6.4 per cent. Pretoria complains of the imbalance (minerals out, manufactures in) and is restructuring towards value-added exports; a duty-free deal for some goods is being finalised. Trend warming. Bond none: no kinship or wound in the sources. Confidence B: one government statement, reported by TimesLive, and a tier 3 report of it."
-    sources:
-      - {url: "https://www.timeslive.co.za/news/business/2026-03-28-mashatile-urges-reset-of-south-africachina-trade-ties-to-boost-value-added-exports/", title: "Mashatile urges reset of South Africa-China trade ties to boost value-added exports", publisher: "TimesLive (Deputy President's statement)", date: 2026-03-28, tier: 1}
-      - {url: "https://capeargus.co.za/news/2025-09-23-south-africa-and-china-strengthen-ties-through-investment-and-cooperation", title: "South Africa and China strengthen ties through investment and cooperation", publisher: "Cape Argus", date: 2025-09-23, tier: 3}
-
-  - toward: RUS
-    grade: partner
-    trend: stable
-    bond: none
-    since: '2023-05'
-    last_verified: 2026-10-16
-    confidence: C
-    note: "Partner, transactional, under Western pressure. The Lady R affair of May 2023: the US ambassador said weapons and ammunition were loaded at Simon's Town on 6-8 December 2022 and that South Africa's neutrality on Ukraine was undercut; Pretoria said US intelligence had not been shared and opened a judicial inquiry, and the defence minister said the cargo was an old consignment offloaded. Not ally: no treaty appears in the sources. Trend stable: no 2025-26 source on the outcome of the inquiry or on the Johannesburg summit of August 2023, which the ICC warrant against Putin complicated and which is not sourced here. Bond none: the Soviet-era tie is not sourced. Confidence C: the accusation is a tier 1 statement, the rest is 2023 reporting."
-    sources:
-      - {url: "https://allafrica.com/stories/202305140006.html", title: "South Africa Summons U.S. Ambassador Over Russia Weapons Row", publisher: "AllAfrica", date: 2023-05-14, tier: 3}
-
-  - toward: org-brics
-    grade: partner
-    trend: warming
-    bond: none
-    since: '2010-12'
-    last_verified: 2026-10-16
-    confidence: B
-    note: "Partner: a BRICS member, and the forum in which Pretoria frames its trade with China (with FOCAC). The 2010 accession date is not in the sources retrieved and must be verified before publication. Trend warming: the bloc is the stage on which South Africa claims a Global South voice after the 2025 G20. Bond none: membership is interest."
-    sources:
-      - {url: "https://www.timeslive.co.za/news/business/2026-03-28-mashatile-urges-reset-of-south-africachina-trade-ties-to-boost-value-added-exports/", title: "Mashatile urges reset of South Africa-China trade ties to boost value-added exports", publisher: "TimesLive (Deputy President's statement)", date: 2026-03-28, tier: 1}
-
-  # ---------- the neighbours ----------
-  - toward: MOZ
-    grade: partner
-    trend: stable
-    bond: none
-    since: '2021-07'
-    last_verified: 2026-10-16
-    confidence: C
-    note: "Partner in security, transactional: South African forces entered Cabo Delgado in mid-2021 under the SADC mission (SAMIM) and grew to about 1,500 troops, the largest contingent, funded mostly by Pretoria through the SADC Peace Fund. The presidential authorisation lapsed in April 2024, and the Mozambican government said in May 2024 that it knew of no plan for a South African force to stay. Trend stable: no later source on the relation. The Mozambique card is a stub, so there is no mirror. Confidence C: two tier 3 reports, and the troop figure comes from press reporting."
-    sources:
-      - {url: "https://www.aimnews.org/2024/04/16/south-african-forces-leaving-samim-as-presidential-authorization-ends/", title: "South African forces leaving SAMIM as presidential authorization ends", publisher: "AIM News", date: 2024-04-16, tier: 3}
-      - {url: "https://www.engineeringnews.co.za/article/south-africa-main-funder-for-sadc-mission-in-mozambique-which-is-protecting-whole-bloc-2022-04-13", title: "South Africa main funder for SADC mission in Mozambique, which is protecting whole bloc", publisher: "Engineering News", date: 2022-04-13, tier: 3}
-
-  - toward: org-sadc
-    grade: partner
-    trend: cooling
-    bond: none
-    since: '2025-03-13'
-    last_verified: 2026-10-16
-    confidence: C
-    note: "Partner, with the bloc's failure in view: the SADC summit of 13 March 2025 ended the SAMIDRC mandate in eastern DRC after 14 South African soldiers died in January, and the withdrawal began on 29 April 2025 with M23 still in the field. Cooling: South Africa's commitment to bloc-wide force shrank. Our reading (confidence C). Bond none."
-    sources:
-      - {url: "https://www.aljazeera.com/news/2025/3/13/southern-africa-regional-bloc-to-withdraw-troops-from-drc-amid-m23-advance", title: "Southern Africa regional bloc to withdraw troops from DRC amid M23 advance", publisher: "Al Jazeera", date: 2025-03-13, tier: 3}
-      - {url: "https://www.dailymaverick.co.za/article/2025-04-29-south-african-and-other-sadc-troops-finally-begin-withdrawal-from-war-torn-drc", title: "South African and other SADC troops finally begin withdrawal from war-torn DRC", publisher: "Daily Maverick", date: 2025-04-29, tier: 3}
+- toward: USA
+  grade: rival
+  trend: cooling
+  bond: grievance
+  since: 2025-02-07
+  last_verified: 2026-10-16
+  confidence: B
+  note: 'Rival, not adversary: aid, trade and the refugee question are contested, and neither side seeks the other''s end. Mirror of the USA card, same sources: Executive Order 14204 cut aid (7 Feb 2025),
+    the Ramaphosa-Trump White House meeting of 21 May 2025 turned on claims of white-farmer killings, the 30% tariff applied from 7 August 2025, AGOA lapsed on 30 September 2025 and was renewed only to
+    the end of 2026, and South Africa was left out of the 2026 G20 in Miami (Truth Social, 26 Nov 2025). Trend cooling. Bond grievance, South Africa''s side (our reading): the aid cut and the Afrikaner
+    refugee order are read in Pretoria as an attack on the state. The expulsion of the US ambassador is in the USA card but no source for it is cited here, so it is not counted.'
+  sources:
+  - url: https://www.whitehouse.gov/presidential-actions/2025/02/addressing-egregious-actions-of-the-republic-of-south-africa/
+    title: Addressing egregious actions of the Republic of South Africa (Executive Order 14204)
+    publisher: The White House
+    date: 2025-02-07
+    tier: 1
+  - url: https://apnews.com/article/trump-ramaphosa-south-africa-9ce43dd5a9cd58e912653c99a8ab1944
+    title: Trump confronts South African leader with baseless claims of the systematic killing of white farmers
+    publisher: Associated Press
+    date: 2025-05-21
+    tier: 3
+  - url: https://truthsocial.com/@realDonaldTrump/posts/115617700844849134
+    title: Truth Social post of 26 Nov 2025 (South Africa not invited to the 2026 G20 in Miami; payments and subsidies to stop)
+    publisher: Truth Social (presidential statement)
+    date: 2025-11-26
+    tier: 1
+  - url: https://businessreport.co.za/business/economy/2026-02-04-agoa-extension-signed-into-law-but-south-africa-remains-on-the-tariff-frontline
+    title: AGOA extension signed into law but South Africa remains on the tariff frontline
+    publisher: Business Report
+    date: 2026-02-04
+    tier: 3
+  - url: https://www.cbc.ca/news/world/us-south-africa-refugees-9.7159402
+    title: U.S. allows nearly 4,500 South African refugees since October - and only 3 from elsewhere
+    publisher: CBC News
+    date: 2026-04-10
+    tier: 3
+- toward: ISR
+  grade: rival
+  trend: stable
+  bond: grievance
+  since: 2023-12-29
+  last_verified: 2026-10-16
+  confidence: C
+  note: 'Rival, our reading (confidence C): South Africa is not a belligerent and seeks no end to the Israeli state, but it has taken Israel to the ICJ for genocide in Gaza, and that legal confrontation
+    is the central fact of the pair. No source retrieved calls the relation ''rival''; the gap is to be logged in JOURNAL. Not adversary: the aim is a ruling and a ceasefire, not Israel''s disappearance.
+    Trend stable: the case is in its written phase, Palestine intervened on 3 June 2024, Nicaragua withdrew in April 2025 and Colombia on 22 September 2026. Bond grievance, South Africa''s side (our reading):
+    the apartheid analogy in its pleadings.'
+  sources:
+  - url: https://www.icj-cij.org/case/192
+    title: 'South Africa v. Israel: Application of the Genocide Convention in the Gaza Strip (case page)'
+    publisher: International Court of Justice
+    date: 2026-09-22
+    tier: 1
+- toward: NGA
+  grade: rival
+  trend: stable
+  bond: none
+  since: '2012'
+  last_verified: 2026-10-16
+  confidence: B
+  note: 'Rival, not adversary: a contest for continental leadership. Mirror of the NGA card, same sources: the 2012 contest for the AU Commission chair, and the 2025 SAIIA argument that Pretoria co-claims
+    the continental standing through its G20 seat and its ICJ case. South Africa''s own reading in 2026 is not in the sources retrieved. Bond none: interests, not kinship or a wound.'
+  sources:
+  - url: https://saiia.org.za/research/has-south-africa-overtaken-nigeria-as-africas-giant/
+    title: Has South Africa Overtaken Nigeria as Africa's Giant?
+    publisher: SAIIA
+    date: 2025-07-30
+    tier: 2
+  - url: https://mg.co.za/news/africa/2012-06-07-why-nigeria-hates-sa-gloves-off-to-be-champion-of-africa/
+    title: 'Why Nigeria hates SA: gloves off to be champion of Africa'
+    publisher: Mail & Guardian
+    date: 2012-06-07
+    tier: 3
+- toward: CHN
+  grade: partner
+  trend: warming
+  bond: none
+  since: '2023'
+  last_verified: 2026-10-16
+  confidence: B
+  note: 'Partner: transactional trade, no alignment. China overtook the EU as the largest trading partner in 2023 (government statement via the Deputy President). Bilateral trade rose from USD 34.2bn in
+    2024 to 36.4bn in 2025, up 6.4 per cent. Pretoria complains of the imbalance (minerals out, manufactures in) and is restructuring towards value-added exports; a duty-free deal for some goods is being
+    finalised. Trend warming. Bond none: no kinship or wound in the sources. Confidence B: one government statement, reported by TimesLive, and a tier 3 report of it.'
+  sources:
+  - url: https://www.timeslive.co.za/news/business/2026-03-28-mashatile-urges-reset-of-south-africachina-trade-ties-to-boost-value-added-exports/
+    title: Mashatile urges reset of South Africa-China trade ties to boost value-added exports
+    publisher: TimesLive (Deputy President's statement)
+    date: 2026-03-28
+    tier: 1
+  - url: https://capeargus.co.za/news/2025-09-23-south-africa-and-china-strengthen-ties-through-investment-and-cooperation
+    title: South Africa and China strengthen ties through investment and cooperation
+    publisher: Cape Argus
+    date: 2025-09-23
+    tier: 3
+- toward: RUS
+  grade: partner
+  trend: stable
+  bond: none
+  since: 2023-05
+  last_verified: 2026-10-16
+  confidence: C
+  note: 'Partner, transactional, under Western pressure. The Lady R affair of May 2023: the US ambassador said weapons and ammunition were loaded at Simon''s Town on 6-8 December 2022 and that South Africa''s
+    neutrality on Ukraine was undercut; Pretoria said US intelligence had not been shared and opened a judicial inquiry, and the defence minister said the cargo was an old consignment offloaded. Not ally:
+    no treaty appears in the sources. Trend stable: no 2025-26 source on the outcome of the inquiry or on the Johannesburg summit of August 2023, which the ICC warrant against Putin complicated and which
+    is not sourced here. Bond none: the Soviet-era tie is not sourced. Confidence C: the accusation is a tier 1 statement, the rest is 2023 reporting.'
+  sources:
+  - url: https://allafrica.com/stories/202305140006.html
+    title: South Africa Summons U.S. Ambassador Over Russia Weapons Row
+    publisher: AllAfrica
+    date: 2023-05-14
+    tier: 3
+- toward: org-brics
+  grade: partner
+  trend: warming
+  bond: none
+  since: 2010-12
+  last_verified: 2026-10-16
+  confidence: B
+  note: 'Partner: a BRICS member, and the forum in which Pretoria frames its trade with China (with FOCAC). The 2010 accession date is not in the sources retrieved and must be verified before publication.
+    Trend warming: the bloc is the stage on which South Africa claims a Global South voice after the 2025 G20. Bond none: membership is interest.'
+  sources:
+  - url: https://www.timeslive.co.za/news/business/2026-03-28-mashatile-urges-reset-of-south-africachina-trade-ties-to-boost-value-added-exports/
+    title: Mashatile urges reset of South Africa-China trade ties to boost value-added exports
+    publisher: TimesLive (Deputy President's statement)
+    date: 2026-03-28
+    tier: 1
+- toward: MOZ
+  grade: partner
+  trend: stable
+  bond: none
+  since: 2021-07
+  last_verified: 2026-10-16
+  confidence: C
+  note: 'Partner in security, transactional: South African forces entered Cabo Delgado in mid-2021 under the SADC mission (SAMIM) and grew to about 1,500 troops, the largest contingent, funded mostly by
+    Pretoria through the SADC Peace Fund. The presidential authorisation lapsed in April 2024, and the Mozambican government said in May 2024 that it knew of no plan for a South African force to stay. Trend
+    stable: no later source on the relation. The Mozambique card is a stub, so there is no mirror. Confidence C: two tier 3 reports, and the troop figure comes from press reporting.'
+  sources:
+  - url: https://www.aimnews.org/2024/04/16/south-african-forces-leaving-samim-as-presidential-authorization-ends/
+    title: South African forces leaving SAMIM as presidential authorization ends
+    publisher: AIM News
+    date: 2024-04-16
+    tier: 3
+  - url: https://www.engineeringnews.co.za/article/south-africa-main-funder-for-sadc-mission-in-mozambique-which-is-protecting-whole-bloc-2022-04-13
+    title: South Africa main funder for SADC mission in Mozambique, which is protecting whole bloc
+    publisher: Engineering News
+    date: 2022-04-13
+    tier: 3
+- toward: org-sadc
+  grade: partner
+  trend: cooling
+  bond: none
+  since: '2025-03-13'
+  last_verified: 2026-10-16
+  confidence: C
+  note: 'Partner, with the bloc''s failure in view: the SADC summit of 13 March 2025 ended the SAMIDRC mandate in eastern DRC after 14 South African soldiers died in January, and the withdrawal began on
+    29 April 2025 with M23 still in the field. Cooling: South Africa''s commitment to bloc-wide force shrank. Our reading (confidence C). Bond none.'
+  sources:
+  - url: https://www.aljazeera.com/news/2025/3/13/southern-africa-regional-bloc-to-withdraw-troops-from-drc-amid-m23-advance
+    title: Southern Africa regional bloc to withdraw troops from DRC amid M23 advance
+    publisher: Al Jazeera
+    date: 2025-03-13
+    tier: 3
+  - url: https://www.dailymaverick.co.za/article/2025-04-29-south-african-and-other-sadc-troops-finally-begin-withdrawal-from-war-torn-drc
+    title: South African and other SADC troops finally begin withdrawal from war-torn DRC
+    publisher: Daily Maverick
+    date: 2025-04-29
+    tier: 3
+- toward: BWA
+  grade: partner
+  trend: warming
+  bond: none
+  since: '2026-05-20'
+  last_verified: '2026-10-16'
+  confidence: C
+  reciprocal_of: BWA
+  note: Provisional reciprocal of Botswana's 'partner' stance toward South Africa, written on 2026-10-16 by tools/reciprocate.py from the same evidence; to be rewritten from South Africa's side.
+  sources:
+  - url: https://www.gov.za/news/media-advisories/conferences-summits-seminars-and-workshops/president-cyril-ramaphosa-38
+    title: President Cyril Ramaphosa undertakes State Visit to Republic of Botswana, 20 to 21 May
+    publisher: gov.za (Presidency of South Africa)
+    date: 2026-05
+    tier: 1
+  - url: https://www.bankofbotswana.bw/news/pula-depreciated-against-south-african-rand
+    title: Pula depreciated against South African rand
+    publisher: Bank of Botswana
+    date: 2026-08
+    tier: 1

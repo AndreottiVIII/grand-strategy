@@ -1,0 +1,50 @@
+from: MWI
+relations:
+  # ---------- objective ----------
+  - to: TZA
+    layer: objective
+    type: territorial_claim
+    summary: "Malawi claims all of Lake Malawi (Lake Nyasa) under the 1890 Anglo-German treaty; Tanzania argues for a median line under UNCLOS. The claim is Lilongwe's, as reported; the reading that it is a territorial objective is ours (C)."
+    since: '1890'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://allafrica.com/stories/202412300097.html", title: "Malawi: Former President Muluzi Seeks Unity Among Leaders to Resolve Lake Malawi Dispute", publisher: "AllAfrica", date: "2024-12-30", tier: 3}
+      - {url: "https://namibian.com.na/tanzania-malawi-border-dispute-talks-deadlocked", title: "Tanzania-Malawi border dispute talks deadlocked", publisher: "The Namibian", date: "2024", tier: 3}
+
+  - to: org-imf
+    layer: objective
+    type: influence_goal
+    summary: "Malawi seeks a new IMF Extended Credit Facility to replace the programme that lapsed in May 2025. An IMF visit ended on 18 June 2026 without a deal; talks continue, and the IMF says success depends on reforms."
+    since: '2023-11'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://allafrica.com/stories/202608170064.html", title: "Malawi's Economic Crisis - Can Recovery Begin?", publisher: "African Arguments via AllAfrica", date: "2026-08-14", tier: 3}
+
+  # ---------- action ----------
+  - to: TZA
+    layer: action
+    type: incident
+    summary: "Malawi's formal protest notes to Tanzania over the Mbamba Bay port in the contested waters: a February 2024 note and a comprehensive note in December 2024. Tanzania had not formally replied in the reporting found."
+    since: '2024-02'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://allafrica.com/stories/202412300097.html", title: "Malawi: Former President Muluzi Seeks Unity Among Leaders to Resolve Lake Malawi Dispute", publisher: "AllAfrica", date: "2024-12-30", tier: 3}
+      - {url: "https://namibian.com.na/tanzania-malawi-border-dispute-talks-deadlocked", title: "Tanzania-Malawi border dispute talks deadlocked", publisher: "The Namibian", date: "2024", tier: 3}
+
+  - to: USA
+    layer: action
+    type: sanction
+    summary: "US measures on Malawians rather than on the state: refundable visa bonds of up to USD 15,000 for business and tourist visitors (from August 2025), partial entry limits from 1 January 2026, and routine non-immigrant visa processing moved to Nairobi from 1 August 2026. The vocabulary offers no restriction type, so 'sanction' is our fit (C); the measures are not sanctions on the Malawian government."
+    since: '2025-08'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.aljazeera.com/features/2025/9/24/money-ill-never-have-15k-us-visa-bond-halts-malawians-american-dreams", title: "'Money I'll never have': $15K US visa bond halts Malawians' American dreams", publisher: "Al Jazeera", date: "2025-09-24", tier: 3}
+      - {url: "https://allafrica.com/stories/202607270438.html", title: "Malawi Visa Blow As US Shifts Embassy Services to Nairobi", publisher: "AllAfrica", date: "2026-07-27", tier: 3}

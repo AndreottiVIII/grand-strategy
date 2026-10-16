@@ -8,7 +8,49 @@ coords:
 - -26.45
 seat: Lobamba
 regions:
-- world
-card: stub
+- central-southern-africa
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+  - rank: 1
+    text: "Keep the Taiwan tie, which pays. Eswatini has recognised the Republic of China since 1968 and is the last African state still doing so; Taipei's aid and trade are the return. The April 2026 visit by Taiwan's president, cancelled after overflight was revoked, shows how much the tie depends on others' airspace."
+    confidence: B
+    sources:
+    - {url: "https://www.taiwanembassy.org/sz_en/post/2914.html", title: "R.O.C. (Taiwan) Ambassador reiterates robust friendship and cooperation between Taiwan and Eswatini (as cited by Wikipedia, not opened)", publisher: "Embassy of the Republic of China (Taiwan) in Eswatini", date: 2018-09-20, tier: 1}
+    - {url: "https://www.khan.co.kr/en/article/202604221137027", title: "Taiwan's Lai cancels Eswatini trip after overflight permissions revoked (Kyunghyang report; title descriptive)", publisher: "The Kyunghyang Shinmun", date: 2026-04-22, tier: 3}
+  - rank: 2
+    text: "Turn hosting US deportees into money and goodwill in Washington. A memorandum of understanding reportedly takes up to 160 third-country nationals removed from the United States for US$5.1 million of border and migration help; the text is unpublished, and the figures come from press reports, not from the two governments."
+    confidence: C
+    sources:
+    - {url: "https://www.theeastafrican.co.ke/tea/news/southern-africa/eswatini-got-5-1m-from-us-to-accept-third-country-deportees-5269482", title: "Eswatini got $5.1m from US to accept third-country deportees (read as search summary; page not opened)", publisher: "The EastAfrican", date: 2026, tier: 3}
+    - {url: "https://www.aljazeera.com/news/2025/10/6/us-sends-another-third-country-deportation-flight-to-eswatini", title: "US sends another 'third-country' deportation flight to Eswatini (read as search result)", publisher: "Al Jazeera", date: 2025-10-06, tier: 3}
+  means:
+  - text: "Recognition as a bargaining chip. Taiwan's aid and trade are traded for the tie, which makes Eswatini Taipei's only African ally on the Taiwanese reading (Presidential Office, via Stimson and the Kyunghyang report)."
+    confidence: B
+    sources:
+    - {url: "https://www.stimson.org/?p=128712", title: "Analysis of Lai's US stopover row and the April 2026 Eswatini trip cancellation (Stimson Center; title descriptive)", publisher: "Stimson Center", date: 2026, tier: 2}
+    - {url: "https://www.khan.co.kr/en/article/202604221137027", title: "Taiwan's Lai cancels Eswatini trip after overflight permissions revoked (Kyunghyang report; title descriptive)", publisher: "The Kyunghyang Shinmun", date: 2026-04-22, tier: 3}
+  - text: "Hosting third-country deportees. Groups have arrived from the United States since July 2025 (further flights in October 2025, March 2026, July 2026 and August 2026); totals differ between reports, from at least 30 to more than 30."
+    confidence: C
+    sources:
+    - {url: "https://iol.co.za/news/africa/2026-07-09-eswatini-receives-11-more-us-deportees-as-controversial-third-country-deal-enters-fourth-phase/", title: "Eswatini receives 11 more US deportees as controversial third-country deal enters fourth phase (read as search summary)", publisher: "IOL", date: 2026-07-09, tier: 3}
+  constraints:
+  - text: "Access depends on other states' airspace. In April 2026 Seychelles, Madagascar and Mauritius revoked overflight for Taiwan's president's plane, which the Presidential Office blames on Chinese pressure; the trip was not rescheduled months later."
+    confidence: B
+    sources:
+    - {url: "https://www.stimson.org/?p=128712", title: "Analysis of Lai's US stopover row and the April 2026 Eswatini trip cancellation (Stimson Center; title descriptive)", publisher: "Stimson Center", date: 2026, tier: 2}
+    - {url: "https://www.khan.co.kr/en/article/202604221137027", title: "Taiwan's Lai cancels Eswatini trip after overflight permissions revoked (Kyunghyang report; title descriptive)", publisher: "The Kyunghyang Shinmun", date: 2026-04-22, tier: 3}
+  - text: "Domestic legal and rights pressure over the deal. Civic groups have taken the government to court over holding foreign nationals without charge, and lawyers say some deportees remain detained after serving US sentences; nationalities and legal status are not disclosed."
+    confidence: C
+    sources:
+    - {url: "https://iol.co.za/news/africa/2026-07-09-eswatini-receives-11-more-us-deportees-as-controversial-third-country-deal-enters-fourth-phase/", title: "Eswatini receives 11 more US deportees as controversial third-country deal enters fourth phase (read as search summary)", publisher: "IOL", date: 2026-07-09, tier: 3}
+  paradoxes:
+  - text: "The deal wins Washington's money and goodwill, but its secrecy and detentions without charge give civic groups and courts a case against the government at home, the very legitimacy a monarchy without elections depends on."
+    confidence: C
+    sources:
+    - {url: "https://iol.co.za/news/africa/2026-07-09-eswatini-receives-11-more-us-deportees-as-controversial-third-country-deal-enters-fourth-phase/", title: "Eswatini receives 11 more US deportees as controversial third-country deal enters fourth phase (read as search summary)", publisher: "IOL", date: 2026-07-09, tier: 3}
+  reading: |
+    Eswatini is an absolute monarchy with no treaty partner to protect it, so it trades what it has: a recognition of Taiwan that Beijing would like to buy, and a place for deportees that Washington pays for in secret. Taipei is the patron the state has kept since 1968, and the United States is the new one, paying for a service no one else is offering. The weak point is that both bargains rest on others' airspace, courts and goodwill rather than on anything Eswatini controls.
