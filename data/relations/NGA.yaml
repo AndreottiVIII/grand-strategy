@@ -126,3 +126,389 @@ relations:
     sources:
       - {url: "https://www.nytimes.com/2026/05/16/world/africa/trump-isis-nigeria-al-minuki.html", title: "Trump says a top ISIS leader was killed in a U.S.-Nigerian mission", publisher: "The New York Times", date: 2026-05-16, tier: 3}
       - {url: "https://issafrica.org/pscreport/psc-insights/lake-chad-basin-s-counter-terrorism-must-adapt-to-defeat-boko-haram", title: "Lake Chad Basin's counter-terrorism must adapt to defeat Boko Haram", publisher: "ISS Africa", date: 2025, tier: 2}
+
+  # ================= added 2026-10-16 (protagonist enrichment) =================
+  # ---------- alignment ----------
+  - to: org-mnjtf
+    layer: alignment
+    type: membership
+    summary: "Nigeria is one of the three members of the Multinational Joint Task Force against Boko Haram and ISWAP (with Cameroon and Chad, per Security Council Report, June 2026); Niger has left it, Chad has threatened to reduce or pull out, and the ISS (2025) counts no regional operation since July 2024."
+    since: 2024-07
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.securitycouncilreport.org/monthly-forecast/2026-06/unoca-central-africa-13.php", title: "June 2026 Monthly Forecast: UNOCA and Central Africa", publisher: "Security Council Report", date: 2026-06, tier: 2}
+      - {url: "https://issafrica.org/pscreport/psc-insights/lake-chad-basin-s-counter-terrorism-must-adapt-to-defeat-boko-haram", title: "Lake Chad Basin's counter-terrorism must adapt to defeat Boko Haram", publisher: "ISS Africa", date: 2025, tier: 2}
+
+  - to: org-brics
+    layer: alignment
+    type: candidate
+    summary: "Nigeria became a BRICS partner country in January 2025 (the ninth), a step below membership and without voting rights; Tinubu attended the Rio summit in July 2025 and the foreign minister said Nigeria was considering full membership (undated). Not a membership row: the dataset holds none."
+    since: 2025-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://nannews.ng/2025/07/05/tinubu-arrives-in-brazil-for-brics-summit", title: "Tinubu arrives in Brazil for BRICS summit", publisher: "News Agency of Nigeria", date: 2025-07-05, tier: 3}
+      - {url: "https://arise.tv/nigeria-considering-joining-brics-says-foreign-minister-tuggar/amp", title: "Nigeria considering joining BRICS, says Foreign Minister Tuggar", publisher: "Arise News", date: 2025, tier: 3}
+
+  # ---------- objective ----------
+  - to: USA
+    layer: objective
+    type: influence_goal
+    summary: "Abuja wants the Country of Particular Concern designation lifted or kept free of sanctions while the joint security campaign continues: Tinubu said 'We will overcome the CPC designation'; the second Joint Working Group (Washington, 12 August 2026, led by NSA Nuhu Ribadu and Under Secretary Allison Hooker) left the listing unchanged and set three priorities: Middle Belt Christian communities, judicial and security institutions, military cooperation."
+    since: 2025-10-31
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://nairametrics.com/2026/08/14/us-retains-nigeria-on-country-of-particular-concern-list-despite-security-efforts/", title: "US retains Nigeria on Country of Particular Concern list despite security efforts", publisher: "Nairametrics", date: 2026-08-14, tier: 3}
+      - {url: "https://www.thisdaylive.com/2026/08/14/us-nigeria-review-security-cooperation-efforts-to-address-country-of-particular-concern-designation/", title: "US, Nigeria Review Security Cooperation, Efforts to Address Country of Particular Concern Designation", publisher: "ThisDay", date: 2026-08-14, tier: 3}
+      - {url: "https://allafrica.com/stories/202511010013.html", title: "Nigeria Reacts to U.S. 'Country of Concern' Designation, Denies Christian Genocide Allegation", publisher: "AllAfrica", date: 2025-11-01, tier: 3}
+
+  - to: org-un
+    layer: objective
+    type: membership_goal
+    summary: "Nigeria demands a permanent seat on the UN Security Council: 'Nigeria must have a permanent seat at the UN Security Council' (the 2025 address, 24 September, read by Vice President Shettima after Tinubu stayed away); the 2024 address made the same case for Africa."
+    since: 2024-09
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://allafrica.com/stories/202509250233.html", title: "Nigeria: UNGA - Tinubu Proposes Reforms, Demands Nigeria's Seat At UN Security Council", publisher: "AllAfrica", date: 2025-09-25, tier: 3}
+      - {url: "https://guardian.ng/news/unga-at-80-tinubu-urges-sweeping-un-reforms-permanent-seat-at-unsc-amid-global-shifts/", title: "UNGA at 80: Tinubu urges sweeping UN reforms, permanent seat at UNSC amid global shifts", publisher: "The Guardian (Nigeria)", date: 2025-09-24, tier: 3}
+
+  # ---------- dependency ----------
+  - to: IND
+    layer: dependency
+    type: trade_share
+    summary: "India was Nigeria's first export destination in the first quarter of 2025: N2.84 trillion, 13.80% of exports, ahead of the Netherlands (10.96%), the US (7.49%), France (7.01%) and Spain (6.99%); crude was 62.89% of all exports. Indian refiners bought more Nigerian crude in September-October 2025 and in April-May 2026 (Kpler figures cited by Blueprint). NBS data via the News Agency of Nigeria."
+    value: 0.138
+    unit: share_of_exports_q1_2025
+    since: 2025-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://nannews.ng/nigerias-total-trade-for-q1-2025-stood-at-nn36024bn-nbs/", title: "Nigeria's total trade for Q1 2025 stood at N36,024bn - NBS", publisher: "News Agency of Nigeria (NBS data)", date: 2025-06, tier: 3}
+      - {url: "https://shippingposition.com.ng/india-china-us-dominate-nigerias-foreign-trade-in-q1-2025-as-trade-surplus-hits-%E2%82%A65-17trn/", title: "India, China, US dominate Nigeria's foreign trade in Q1 2025 as trade surplus hits N5.17trn", publisher: "Shipping Position", date: 2025-06, tier: 3}
+      - {url: "https://blueprint.ng/nigerian-oil-stands-to-gain-as-india-shies-away-from-russian-crude/", title: "Nigerian oil stands to gain as India shies away from Russian crude", publisher: "Blueprint", date: 2025, tier: 3}
+
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    summary: "China is Nigeria's first source of imports: N4.66 trillion, 30.19% of imports in the first quarter of 2025 (NBS); the Chinese ambassador says trade passed USD 22bn in 2025, while NBS figures cited by the central bank put 2024 at USD 11.58bn, so the two sets do not agree (method not established). Nigeria's trade deficit with China is put at about USD 20bn by officials."
+    value: 0.3019
+    unit: share_of_imports_q1_2025
+    since: 2025-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://nannews.ng/nigerias-total-trade-for-q1-2025-stood-at-nn36024bn-nbs/", title: "Nigeria's total trade for Q1 2025 stood at N36,024bn - NBS", publisher: "News Agency of Nigeria (NBS data)", date: 2025-06, tier: 3}
+      - {url: "https://www.arise.tv/nigerias-exports-to-china-jump-200-as-trade-crosses-22bn/", title: "Nigeria's exports to China jump 200% as trade crosses $22bn", publisher: "Arise News", date: 2025, tier: 3}
+      - {url: "https://allafrica.com/stories/202411290056.html", title: "Nigeria: Federal Govt Moves to Reverse Nigeria's $20bn Trade Deficit With China", publisher: "AllAfrica", date: 2024-11-29, tier: 3}
+
+  - to: GBR
+    layer: dependency
+    type: trade_share
+    summary: "UK-Nigeria trade in the latest UK factsheet (July 2026): goods GBP 2.8bn (down 20.0%), services GBP 4.5bn (up 11.1%); UK goods exports to Nigeria fell 27.1% to GBP 1.4bn and imports fell 9.3% to GBP 2.0bn. The period covered is not stated in the page seen."
+    value: 2.8
+    unit: gbp_billion_uk_nigeria_goods_trade_latest_period
+    since: 2026-07
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.tralac.org/documents/resources/by-country/nigeria/7902-nigeria-trade-and-investment-factsheet-july-2026-uk-department-for-business-and-trade.html", title: "Nigeria trade and investment factsheet, July 2026", publisher: "UK Department for Business and Trade (via tralac)", date: 2026-07, tier: 1}
+
+  - to: USA
+    layer: dependency
+    type: investment
+    summary: "The US-Nigeria health agreement (signed December 2025) commits nearly USD 2bn of US grants for April 2026 to December 2030 for health security and primary care, against Nigeria spending at least 6% of executed budgets on health (about USD 3bn of domestic money); the US gave more than USD 497m in health assistance in 2025, USD 336m of it through PEPFAR. A share is earmarked for faith-based clinics."
+    value: 2.0
+    unit: usd_billion_us_health_grants_2026_2030_approx
+    since: 2025-12
+    until: 2030-12
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://nairametrics.com/2025/12/20/us-pledges-2-billion-grants-for-nigerias-health-sector-from-2026-2030/", title: "US pledges $2 billion grants for Nigeria's health sector from 2026-2030", publisher: "Nairametrics", date: 2025-12-20, tier: 3}
+      - {url: "https://fmino.gov.ng/nigeria-and-united-states-sign-landmark-agreement-to-strengthen-health-security-expand-primary-care-and-drive-self-reliance/", title: "Nigeria and United States sign landmark agreement to strengthen health security, expand primary care and drive self-reliance", publisher: "Federal Ministry of Information and National Orientation, Nigeria", date: 2025-12, tier: 1}
+
+  - to: TUR
+    layer: dependency
+    type: arms_supply
+    summary: "Nigeria ordered six Bayraktar TB2 drones with two ground control stations in 2022 (pilots trained in Turkey; delivery delayed by US and Canadian sanctions on a component); delivery and operation are not confirmed in the sources found, so the value counts drones ordered."
+    value: 6
+    unit: bayraktar_tb2_ordered_2022
+    since: 2022
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.modernghana.com/news/1486852/nigeriatrkiye-defense-ties-a-growing-strategic.html", title: "Nigeria-Turkiye defense ties: a growing strategic partnership", publisher: "ModernGhana", date: 2026, tier: 3}
+      - {url: "https://www.military.africa/2022/09/nigeria-acquiring-bayraktar-tb2-drone-and-not-akinci/", title: "Nigeria acquiring Bayraktar TB2 drone and not Akinci", publisher: "Military Africa", date: 2022-09, tier: 4}
+
+  - to: GHA
+    layer: dependency
+    type: energy_export
+    summary: "The West African Gas Pipeline moved about 80 million MMBtu in 2025 (+22%) to Ghana, Benin and Togo, and 613 million MMBtu since it began, Nigeria supplying more than 68% of that volume (Nigeria's gas minister); the figure is the pipeline total, not Ghana's share. Nigeria is amending the WAGP Act to expand it."
+    value: 80
+    unit: million_mmbtu_wagp_all_destinations_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://nannews.ng/nigeria-reaffirms-commitment-to-wagp-expansion-sustainability/", title: "Nigeria reaffirms commitment to WAGP expansion, sustainability", publisher: "News Agency of Nigeria", date: 2025, tier: 3}
+
+  - to: GHA
+    layer: dependency
+    type: debt
+    summary: "Ghana's power company owed the NNPC-led N-Gas consortium about USD 75m in early 2025; Nigeria's gas minister pressed Mahama in Accra on 29 April 2025 and Ghana says it paid about 90% in three tranches between February and April (bne IntelliNews; Nigeria did not publicly confirm). The older WAPCo claim of USD 180m is from earlier years."
+    value: 75
+    unit: usd_million_ghana_gas_arrears_to_n_gas_2025
+    since: 2025-02
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.intellinews.com/ghana-clears-bulk-of-75mn-gas-debt-to-nigeria-amid-regional-energy-tensions-382154", title: "Ghana clears bulk of $75mn gas debt to Nigeria amid regional energy tensions", publisher: "bne IntelliNews", date: 2025, tier: 3}
+      - {url: "https://businessday.ng/energy/article/ghana-pays-90-of-75m-gas-debt-to-nigeria/", title: "Ghana pays 90% of $75m gas debt to Nigeria", publisher: "BusinessDay", date: 2025, tier: 3}
+
+  - to: org-eu
+    layer: dependency
+    type: investment
+    summary: "An EU envoy says a third of Nigeria's foreign-direct-investment stock comes from the EU, with over 200 European firms employing 130,000 people; the March 2026 dialogue added Global Gateway projects of EUR 66m in grants and EUR 221m in low-interest loans. The one-third share is the envoy's claim, not a statistical-office figure."
+    value: 0.33
+    unit: share_of_fdi_stock_from_eu_envoy_claim
+    since: 2026-03
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.eeas.europa.eu/eeas/nigeria-joint-press-conference-following-8th-nigeria-eu-ministerial-dialogue-high-representative_en", title: "Nigeria: Joint press conference following the 8th Nigeria-EU Ministerial Dialogue", publisher: "European External Action Service", date: 2026-03, tier: 1}
+      - {url: "https://www.arise.tv/eu-envoy-says-efforts-ongoing-to-boost-nigerias-10bn-trade-surplus-with-europe", title: "EU envoy says efforts ongoing to boost Nigeria's $10bn trade surplus with Europe", publisher: "Arise News", date: 2025, tier: 3}
+
+  # ---------- action ----------
+  - to: DZA
+    layer: action
+    type: agreement
+    summary: "The Trans-Saharan gas pipeline (Nigeria-Niger-Algeria, about 4,128 km, 30 bcm a year, USD 13bn to 25bn by estimate): Algeria began building its 1,210 km section in Adrar in June 2026 at the fifth ministerial meeting in Algiers; Niger's 720 km section is planned for early 2027; NNPC and Sonatrach hold 90% between them, Niger 10%. Rival to the Morocco route. A February 2026 report claiming the line was 60% complete is contradicted by the June start."
+    since: 2026-06
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.enerdata.net/publications/daily-energy-news/algeria-begins-building-section-30-bcmyear-trans-saharan-gas-pipeline.html", title: "Algeria begins building section of 30 bcm/year Trans-Saharan gas pipeline", publisher: "Enerdata", date: 2026-06, tier: 3}
+      - {url: "https://www.intellinews.com/trans-saharan-gas-pipeline-gainingmomentum-424723/", title: "Trans-Saharan gas pipeline gaining momentum", publisher: "bne IntelliNews", date: 2026, tier: 3}
+      - {url: "https://guest.meed.com/construction-of-13bn-trans-sahara-gas-pipeline-starts-in-algeria/", title: "Construction of $13bn Trans-Sahara gas pipeline starts in Algeria", publisher: "MEED", date: 2026-06, tier: 3}
+
+  - to: CHN
+    layer: action
+    type: agreement
+    summary: "The naira-yuan currency swap, first signed in 2018 and renewed most recently in December 2024 (15bn yuan, about USD 2.1bn, N3.28 trillion by the January 2025 reports), lets firms settle in naira and renminbi; proposals to enlarge it to USD 10bn are reported, with no confirmation. Beijing and Abuja raised relations to a comprehensive strategic partnership at FOCAC in September 2024."
+    since: 2018
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://allafrica.com/stories/202501280132.html", title: "Nigeria: What Govt Must Do to Make Currency Swap With China Work", publisher: "AllAfrica", date: 2025-01-28, tier: 3}
+      - {url: "https://businessday.ng/news/article/fg-pushes-10bn-naira-yuan-swap-deal-to-ease-dollar-pressure-rebalance-china-trade/", title: "FG pushes $10bn naira-yuan swap deal to ease dollar pressure, rebalance China trade", publisher: "BusinessDay", date: 2025, tier: 3}
+      - {url: "https://ecofinagency.com/public-management/0509-45851-nigeria-and-china-strengthen-ties-with-new-cooperation-agreements-at-focac", title: "Nigeria and China strengthen ties with new cooperation agreements at FOCAC", publisher: "Ecofin Agency", date: 2024-09-05, tier: 3}
+
+  - to: GBR
+    layer: action
+    type: incident
+    summary: "The UK's Foreign Office annual report for 2025-26 projects direct aid to Nigeria falling by 50.2%, from GBP 136.62m in 2025-26 to GBP 68m by 2028-29, as UK aid goes to 0.3% of national income by 2027 to pay for defence; London says it will focus on humanitarian work and trade and investment."
+    since: 2026-08
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://allafrica.com/stories/202608050145.html", title: "Nigeria to Lose Over 50% of UK Aid As U.S., Europe Slash Foreign Assistance", publisher: "AllAfrica", date: 2026-08-05, tier: 3}
+      - {url: "https://blueprint.ng/?p=833643", title: "UK to slash Nigeria's development aid by 50% in 3 years", publisher: "Blueprint", date: 2026, tier: 3}
+
+  - to: USA
+    layer: action
+    type: incident
+    summary: "President Trump designated Nigeria a Country of Particular Concern on 31 October 2025 over the killing of Christians, after Republican senators and Rep. Riley Moore (whose figures of 7,000 Christians killed in 2025 are disputed) pressed for it; Abuja rejected the 'genocide' framing, and in November 2025 a State Department official said a plan including sanctions was being prepared (no sanctions on named officials were found in later reporting). Kept in place after the 12 August 2026 working group."
+    since: 2025-10-31
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://appropriations.house.gov/news/press-releases/cole-diaz-balart-moore-commend-president-trumps-cpc-designation-nigeria-action", title: "Cole, Diaz-Balart, Moore Commend President Trump's CPC Designation for Nigeria, Action to Protect Persecuted Christians", publisher: "US House Committee on Appropriations", date: 2025-10-31, tier: 1}
+      - {url: "https://www.semafor.com/article/11/21/2025/us-mulls-sanctions-on-nigeria-over-disputed-christian-killings", title: "US mulls sanctions on Nigeria over disputed Christian killings", publisher: "Semafor", date: 2025-11-21, tier: 3}
+      - {url: "https://nairametrics.com/2026/08/14/us-retains-nigeria-on-country-of-particular-concern-list-despite-security-efforts/", title: "US retains Nigeria on Country of Particular Concern list despite security efforts", publisher: "Nairametrics", date: 2026-08-14, tier: 3}
+
+  - to: USA
+    layer: action
+    type: incident
+    summary: "The 2026 US Trafficking in Persons report (published 11 October 2026) puts Nigeria on the Child Soldiers Prevention Act list because Boko Haram and ISIS-West Africa recruit children as young as 12; restrictions on US military training, weapons sales and defence financing could apply from the new fiscal year unless the president waives them. No waiver decision and no Nigerian response were found."
+    since: 2026-10-11
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.legit.ng/nigeria/1735808-trump-govt-lists-nigeria-nations-facing-military-aid-cuts-reasons/", title: "Trump: US Govt Lists Nigeria Among Nations Facing Military Aid Cuts, Gives Reasons", publisher: "Legit.ng", date: 2026-10-13, tier: 3}
+
+  - to: TUR
+    layer: action
+    type: agreement
+    summary: "Tinubu's state visit to Ankara (January 2026) produced a protocol on military cooperation (special-forces training, satellite intelligence, a link between the two intelligence agencies) and a USD 5bn trade ambition; at the Antalya Diplomacy Forum (April 2026) Defence Minister Christopher Musa announced training, production and cooperation in the defence industry, with 200 Nigerian special-forces personnel to train in Turkey."
+    since: 2026-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://allafrica.com/stories/202601290391.html", title: "West Africa: Nigeria, Turkiye Sign Pact On Counter-Terrorism", publisher: "AllAfrica", date: 2026-01-29, tier: 3}
+      - {url: "https://www.modernghana.com/news/1486852/nigeriatrkiye-defense-ties-a-growing-strategic.html", title: "Nigeria-Turkiye defense ties: a growing strategic partnership", publisher: "ModernGhana", date: 2026, tier: 3}
+
+  - to: NER
+    layer: action
+    type: agreement
+    summary: "The Nigeria-Niger Joint Standing Committee of Experts met in Zinder on 8-10 December 2025, reviewed the boundary re-demarcation (pillars built in Katsina along the Maigatari corridor, work left over for lack of funds and security) and adopted a 2025-26 programme; a cross-border security meeting was planned for early 2026. The border is 1,608 km. The Foreign Minister's visit to Niamey on cross-border security and a Kano-Maradi railway dates from April 2025."
+    since: 2025-12-08
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://fmino.gov.ng/nigeria-niger-advance-boundary-work-approve-2026-plan/", title: "Nigeria, Niger advance boundary work, approve 2026 plan", publisher: "Federal Ministry of Information and National Orientation, Nigeria", date: 2025-12, tier: 1}
+      - {url: "https://fr.allafrica.com/stories/202504160122.html", title: "Afrique de l'Ouest: Le chef de la diplomatie nigeriane attendu pour une visite a Niamey", title_original: "Afrique de l'Ouest: Le chef de la diplomatie nigériane attendu pour une visite à Niamey", lang: fr, publisher: "AllAfrica", date: 2025-04-16, tier: 3}
+
+  - to: BFA
+    layer: action
+    type: incident
+    summary: "A Nigerian Air Force C-130, on a ferry flight to Portugal, made an emergency landing at Bobo-Dioulasso on 8 December 2025 and was held with 11 personnel; the AES statement called the landing an unfriendly act and said members may neutralise aircraft that violate their airspace; after Foreign Minister Tuggar met the Burkinabe leader and Abuja apologised for the irregular clearance, the aircraft and crew were released around 17 December."
+    since: 2025-12-08
+    until: 2025-12-17
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://allafrica.com/stories/202512100120.html", title: "West Africa: Airspace Violations - Nigeria, Sahel States Differ Over Detained Aircraft, Soldiers", publisher: "AllAfrica", date: 2025-12-10, tier: 3}
+      - {url: "https://allafrica.com/stories/202512180121.html", title: "Nigeria: Govt Confirms Release of Nigerian Aircraft, Soldiers After Tuggar Meets Burkina Faso Leader", publisher: "AllAfrica", date: 2025-12-18, tier: 3}
+      - {url: "https://businessday.ng/news/article/burkina-faso-releases-11-nigerian-troops-after-unauthorised-landing/", title: "Burkina Faso releases 11 Nigerian troops after unauthorised landing", publisher: "BusinessDay", date: 2025-12, tier: 3}
+
+  - to: BEN
+    layer: action
+    type: incident
+    summary: "Nigerian fighter jets helped foil the coup attempt in Benin in the first week of December 2025, with ECOWAS support (BusinessDay places it a day before the 8 December C-130 landing; the direct report of the airstrikes was not opened)."
+    since: 2025-12-07
+    until: 2025-12-07
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://businessday.ng/news/article/burkina-faso-releases-11-nigerian-troops-after-unauthorised-landing/", title: "Burkina Faso releases 11 Nigerian troops after unauthorised landing", publisher: "BusinessDay", date: 2025-12, tier: 3}
+      - {url: "https://www.wsls.com/news/world/2026/04/12/benin-votes-for-new-president-with-finance-minister-favored-to-succeed-talon/", title: "Benin votes for new president with finance minister favored to succeed Talon", publisher: "WSLS", date: 2026-04-12, tier: 3}
+
+  - to: MLI
+    layer: action
+    type: visit
+    summary: "Nigeria's ambassador-designate to Mali presented copies of his credentials to Foreign Minister Abdoulaye Diop in Bamako on 6 August 2026; in July the two sides agreed to hold a Joint Commission to revive dormant agreements and a political dialogue on trafficking and shared security, and a Nigerian airline plans a Lagos-Bamako route."
+    since: 2026-08-06
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://von.gov.ng/nigeria-mali-strengthen-bilateral-relations-pledge-co-operation/", title: "Nigeria, Mali strengthen bilateral relations, pledge co-operation", publisher: "Voice of Nigeria", date: 2026, tier: 3}
+      - {url: "https://foreignaffairs.gov.ng/news/wp-json/wp/v2/posts/253684", title: "Nigerian Ministry of Foreign Affairs release on the Mali-Nigeria Joint Commission", publisher: "Federal Ministry of Foreign Affairs, Nigeria", date: 2026-07, tier: 1}
+
+  - to: FRA
+    layer: action
+    type: visit
+    summary: "Tinubu and Macron dined privately in Paris on 17 September 2026, two years after Tinubu's November 2024 state visit (the first by a sitting Nigerian president to the Champs-Elysees in two decades), which produced about EUR 300m of agreements, two with the French development agency (Finance Minister Edun signed)."
+    since: 2026-09-17
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://allafrica.com/stories/202609180555.html", title: "Nigeria: Tinubu Meets Macron for Private Dinner in Paris", publisher: "AllAfrica", date: 2026-09-18, tier: 3}
+      - {url: "https://www.africanews.com/amp/2024/11/28/paris-seeks-to-renew-ties-with-nigeria-as-president-tinubu-visits-france/", title: "Paris seeks to renew ties with Nigeria as President Tinubu visits France", publisher: "Africanews", date: 2024-11-28, tier: 3}
+
+  - to: ISR
+    layer: action
+    type: visit
+    summary: "Foreign Minister Bianca Odumegwu-Ojukwu received Israel's ambassador Michael Freeman in Abuja on 26 May 2026 (agriculture, health, technology, food security, security coordination; an invitation to visit Israel); Nigeria's new ambassador Nkechi Linda Ufochukwu presented credentials to President Herzog on 3 August 2026."
+    since: 2026-05-26
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://foreignaffairs.gov.ng/news/wp-content/uploads/2026/06/Press-Release-No-2026-076.pdf", title: "Nigerian Ministry of Foreign Affairs press release No 2026-076", publisher: "Federal Ministry of Foreign Affairs, Nigeria", date: 2026-06, tier: 1}
+      - {url: "https://foreignaffairs.gov.ng/news/wp-content/uploads/2026/08/Press-Release-No-2026-187.pdf", title: "Nigerian Ministry of Foreign Affairs press release No 2026-187", publisher: "Federal Ministry of Foreign Affairs, Nigeria", date: 2026-08, tier: 1}
+
+  - to: ARE
+    layer: action
+    type: agreement
+    summary: "Nigeria and the UAE concluded an economic partnership agreement in January 2026 (renewable energy, aviation, logistics, agriculture, digital trade, climate-smart infrastructure); it followed the 2022-23 visa dispute, which Abuja announced as lifted in September 2023 and the UAE did not confirm at the time."
+    since: 2026-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://news.bloomberglaw.com/international-trade/nigeria-uae-agree-accord-to-boost-trade-unlock-investment-1", title: "Nigeria, UAE Agree Accord to Boost Trade, Unlock Investment", publisher: "Bloomberg Law", date: 2026-01, tier: 3}
+      - {url: "https://gazettengr.com/presidency-says-uae-has-lifted-year-long-visa-ban-on-nigerians-after-tinubus-meeting-in-abu-dhabi/", title: "Presidency says UAE has lifted year-long visa ban on Nigerians after Tinubu's meeting in Abu Dhabi", publisher: "Peoples Gazette", date: 2023-09, tier: 3}
+
+  - to: RUS
+    layer: action
+    type: agreement
+    summary: "A memorandum with a Russian consortium including Tyazhpromexport, the original builder, to rehabilitate, complete and operate the Ajaokuta Steel Plant and the National Iron Ore Mining Company in Kogi State, signed in Moscow during the minister's visit of 14-21 September 2024; officials claim over 500,000 jobs. No delivery is reported."
+    since: 2024-09
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://guardian.ng/news/nigeria-russia-sign-deal-to-revitalise-ajaokuta-steel-iron-ore-mining-coy/", title: "Nigeria, Russia sign deal to revitalise Ajaokuta steel, iron ore mining coy", publisher: "The Guardian (Nigeria)", date: 2024-09, tier: 3}
+      - {url: "https://von.gov.ng/?p=353328", title: "Nigeria, Russia sign MoU to complete, operate Ajaokuta Steel Company", publisher: "Voice of Nigeria", date: 2024-09, tier: 3}
+
+  - to: org-eu
+    layer: action
+    type: agreement
+    summary: "The 8th Nigeria-EU Ministerial Dialogue (March 2026) initialled a readmission agreement under negotiation since 2016, institutionalised a Peace, Security and Defence Dialogue and announced Global Gateway projects; Nigeria tied returns to reintegration aid and legal pathways and raised the EU carbon border levy. Initialled, not signed."
+    since: 2026-03
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.eeas.europa.eu/eeas/nigeria-joint-press-conference-following-8th-nigeria-eu-ministerial-dialogue-high-representative_en", title: "Nigeria: Joint press conference following the 8th Nigeria-EU Ministerial Dialogue", publisher: "European External Action Service", date: 2026-03, tier: 1}
+      - {url: "https://foreignaffairs.gov.ng/news/wp-content/uploads/2026/03/Press-Release-No.-31-1.pdf", title: "Nigerian Ministry of Foreign Affairs press release No 31 (8th Nigeria-EU Ministerial Dialogue)", publisher: "Federal Ministry of Foreign Affairs, Nigeria", date: 2026-03, tier: 1}
+
+  - to: org-ecowas
+    layer: action
+    type: agreement
+    summary: "The 69th ECOWAS summit in Freetown (July 2026), where Vice President Shettima stood in for Tinubu and Senegal's Faye took the chair, endorsed the revised roadmap for a 1,650-strong counter-terrorism brigade of the Standby Force (operational July 2027; activation estimated at EUR 2.26bn) and signed the agreement backing the Nigeria-Morocco gas pipeline."
+    since: 2026-07-19
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://issafrica.org/pscreport/psc-insights/can-the-incoming-ecowas-commission-reclaim-regional-relevance", title: "Can the incoming ECOWAS Commission reclaim regional relevance?", publisher: "ISS Africa", date: 2026, tier: 2}
+      - {url: "https://www.reuters.com/business/energy/west-africas-ecowas-bloc-signs-agreement-backing-nigeria-morocco-atlantic-gas-2026-07-19/", title: "West Africa's ECOWAS bloc signs agreement backing Nigeria-Morocco Atlantic gas pipeline", publisher: "Reuters", date: 2026-07-19, tier: 3}
+      - {url: "https://www.thisdaylive.com/2026/07/19/shettima-departs-abuja-sunday-to-attend-69th-ecowas-summit-in-freetown/", title: "Shettima Departs Abuja Sunday, To Attend 69th ECOWAS Summit in Freetown", publisher: "ThisDay", date: 2026-07-19, tier: 3}
+
+  - to: STP
+    layer: action
+    type: agreement
+    summary: "The 2001 Abuja treaty (signed 21 February 2001) created the Nigeria-Sao Tome and Principe Joint Development Authority over a shared offshore zone in the Gulf of Guinea; Nigeria's foreign ministry received an Authority delegation on 27 July 2026. Mirror of the STP card's row: the treaty text was not opened and the date comes from search results."
+    since: 2001-02-21
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://foreignaffairs.gov.ng/news/wp-content/uploads/2026/07/Press-Release-No-2026-173.pdf", title: "Nigerian Foreign Ministry press release No 2026-173: minister receives JDA delegation, 27 July 2026", publisher: "Federal Ministry of Foreign Affairs, Nigeria", date: 2026-07-27, tier: 1}
+      - {url: "https://guardian.ng/saturday-magazine/cover/nigeria-sao-tome-principe-jdz-at-wits-end-17-years-on/", title: "Nigeria-Sao Tome and Principe JDZ at wits' end 17 years on", publisher: "The Guardian (Nigeria)", date: 2018, tier: 3}
+
+  - to: org-opec
+    layer: action
+    type: agreement
+    summary: "Nigeria kept to its OPEC production quota of 1.5 million bpd for five straight months to September 2026: 1.50 million bpd in August and 1.53 million bpd in September per OPEC data (Q3 average 1.512 million, Q2 1.525 million, Q1 1.388 million); the quota was extended to December 2026. The 2026 budget assumes 1.84 million bpd including condensates, which NUPRC counted at about 1.7 million in September."
+    since: 2026-05
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://nairametrics.com/2026/10/13/nigerias-oil-output-hits-1-53-million-bpd-maintains-opec-quota-for-fifth-month/", title: "Nigeria's oil output hits 1.53 million bpd, maintains OPEC quota for fifth month", publisher: "Nairametrics (citing OPEC)", date: 2026-10-13, tier: 3}
+      - {url: "https://www.thisdaylive.com/2026/10/14/nigeria-ramps-up-crude-output-meets-opec-quota-for-five-straight-months/", title: "Nigeria Ramps Up Crude Output, Meets OPEC Quota for Five Straight Months", publisher: "ThisDay", date: 2026-10-14, tier: 3}

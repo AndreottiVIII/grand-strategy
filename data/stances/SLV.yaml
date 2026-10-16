@@ -7,10 +7,20 @@ stances:
   since: 2025
   last_verified: 2026-10-16
   confidence: C
-  note: "Transactional, no treaty. The grade is our reading (confidence C): the sources name a deportation arrangement (the National Security Strategy, tier 1) and report Washington's shift from concern to quiet acceptance as Bukele moved toward re-election (AP, read in a search summary). Warming rests on the arrangement, not on a dated statement. Bond none: no shared identity and no open grievance found. The CECOT and remittance figures are not in the sources read."
+  note: 'Transactional, no treaty. The grade is our reading (confidence C): the sources name a deportation arrangement (the National Security Strategy, tier 1) and report Washington''s shift from concern
+    to quiet acceptance as Bukele moved toward re-election (AP, read in a search summary). Warming rests on the arrangement, not on a dated statement. Bond none: no shared identity and no open grievance
+    found. The CECOT and remittance figures are not in the sources read.'
   sources:
-  - {url: "https://www.whitehouse.gov/wp-content/uploads/2025/12/2025-National-Security-Strategy.pdf", title: "National Security Strategy (November 2025)", publisher: "The White House", date: 2025-11, tier: 1}
-  - {url: "https://weartv.com/news/nation-world/el-salvador-allows-indefinite-reelection-extends-presidential-terms-to-6-years-nayib-bukele-legislative-assembly-street-gangs-constitutional-rights", title: "El Salvador allows indefinite reelection, extends presidential terms to 6 years", publisher: "Associated Press (via WEAR-TV)", date: 2025-08-01, tier: 3}
+  - url: https://www.whitehouse.gov/wp-content/uploads/2025/12/2025-National-Security-Strategy.pdf
+    title: National Security Strategy (November 2025)
+    publisher: The White House
+    date: 2025-11
+    tier: 1
+  - url: https://weartv.com/news/nation-world/el-salvador-allows-indefinite-reelection-extends-presidential-terms-to-6-years-nayib-bukele-legislative-assembly-street-gangs-constitutional-rights
+    title: El Salvador allows indefinite reelection, extends presidential terms to 6 years
+    publisher: Associated Press (via WEAR-TV)
+    date: 2025-08-01
+    tier: 3
 - toward: nsa-ms13
   grade: adversary
   trend: stable
@@ -18,6 +28,33 @@ stances:
   since: 2025-08-01
   last_verified: 2026-10-16
   confidence: C
-  note: "Our reading (confidence C). The since date is the AP report's date, not the start of the crackdown, which the source read does not date. The AP account presents the crackdown on the street gangs as the government's central project under a state of emergency. No government statement calling the gangs an existential enemy was read, and no formal terrorist designation was found, so the adversary grade is the weakest of this card and should be checked against the government's own words. Bond grievance: an open wound between state and gang, not kinship. Trend stable, since the crackdown continues in the August 2025 report."
+  note: 'Our reading (confidence C). The since date is the AP report''s date, not the start of the crackdown, which the source read does not date. The AP account presents the crackdown on the street gangs
+    as the government''s central project under a state of emergency. No government statement calling the gangs an existential enemy was read, and no formal terrorist designation was found, so the adversary
+    grade is the weakest of this card and should be checked against the government''s own words. Bond grievance: an open wound between state and gang, not kinship. Trend stable, since the crackdown continues
+    in the August 2025 report.'
   sources:
-  - {url: "https://weartv.com/news/nation-world/el-salvador-allows-indefinite-reelection-extends-presidential-terms-to-6-years-nayib-bukele-legislative-assembly-street-gangs-constitutional-rights", title: "El Salvador allows indefinite reelection, extends presidential terms to 6 years", publisher: "Associated Press (via WEAR-TV)", date: 2025-08-01, tier: 3}
+  - url: https://weartv.com/news/nation-world/el-salvador-allows-indefinite-reelection-extends-presidential-terms-to-6-years-nayib-bukele-legislative-assembly-street-gangs-constitutional-rights
+    title: El Salvador allows indefinite reelection, extends presidential terms to 6 years
+    publisher: Associated Press (via WEAR-TV)
+    date: 2025-08-01
+    tier: 3
+- toward: MEX
+  grade: neutral
+  trend: cooling
+  bond: none
+  since: 2025-03
+  last_verified: '2026-10-16'
+  confidence: C
+  reciprocal_of: MEX
+  note: Provisional reciprocal of Mexico's 'neutral' stance toward El Salvador, written on 2026-10-16 by tools/reciprocate.py from the same evidence; to be rewritten from El Salvador's side.
+  sources:
+  - url: https://mexiconewsdaily.com/?p=451566
+    title: 'Mexico News Daily daily page of 19-21 March 2025 (headline: Sheinbaum responde a Bukele - Pedimos respeto para Mexico; headline only, body not read)'
+    publisher: Mexico News Daily
+    date: 2025-03-21
+    tier: 3
+  - url: https://www.foxnews.com/world/us-capture-maduro-championed-condemned-across-world-stage-after-surgical-venezuela-strikes.amp
+    title: US capture of Maduro championed, condemned across world stage after surgical Venezuela strikes
+    publisher: Fox News
+    date: 2026-01-03
+    tier: 3

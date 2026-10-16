@@ -1,467 +1,827 @@
 from: DNK
 relations:
-  # ---------- objective ----------
-  - to: sub-greenland
-    layer: objective
-    type: territorial_claim
-    summary: "Denmark holds and defends sovereignty and territorial integrity over Greenland as part of the Realm; the third Frederiksen government's programme (June 2026) pledges to uphold both and to involve Greenland's government fully in foreign-policy decisions touching the island. Greenland's prime minister Nielsen says Greenland does not want to be owned or governed by the US (January 2026)."
-    since: 2009-06-21
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.eurointegration.com.ua/eng/news/2026/06/5/7239050/", title: "How Denmark's government has changed and what to expect from the pro-Ukraine PM Frederiksen", publisher: "Evropeiska Pravda", date: 2026-06-05, tier: 3}
-      - {url: "https://www.idea.int/node/107705", title: "Legal provisions for mandatory referendums at national level (Greenland Self-Government Act, section 21)", publisher: "International IDEA", date: 2009, tier: 2}
-      - {url: "https://gulfnews.com/amp/story/world%2Famericas%2Fdont-want-to-be-owned-by-us-denmark-greenland-hit-back-at-trumps-takeover-claims-1.500408897", title: "Don't want to be owned by US: Denmark, Greenland hit back at Trump's takeover claims", publisher: "Gulf News", date: 2026-01-15, tier: 3}
-  - to: USA
-    layer: objective
-    type: influence_goal
-    summary: "Copenhagen's aim toward Washington is to answer 'American concerns about security in the Arctic' while 'respecting the red lines of the Kingdom' - more US presence and an Arctic build-up in exchange for no change of sovereignty (framing of the Danish Foreign Ministry in the Jan 2026 working group)."
-    since: 2025-01-06
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.koreatimes.co.kr/amp/world/20260129/rubio-process-to-resolve-greenland-dispute-has-begun", title: "Rubio: Process to resolve Greenland dispute has begun", publisher: "Korea Times (wire)", date: 2026-01-29, tier: 3}
-      - {url: "https://www.aljazeera.com/news/2026/9/18/trump-claims-deal-with-denmark-gives-us-permanent-control-over-greenland", title: "Trump claims deal with Denmark gives US 'permanent control' over Greenland", publisher: "Al Jazeera", date: 2026-09-18, tier: 3}
-  - to: org-nato
-    layer: objective
-    type: influence_goal
-    summary: "Denmark steers the Greenland question into NATO channels - Rutte brokered the 21 Jan 2026 'framework', Arctic Sentry started in February 2026 and NATO welcomed the 22 Sep agreement - so that Arctic security becomes an alliance matter and not a bilateral US-Greenland one."
-    since: 2026-01-21
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.koreajoongangdaily.com/world/trump-says-he-will-not-impose-greenlandrelated-tariffs-on-8-nato-allies/12150007", title: "Trump says he will not impose Greenland-related tariffs on 8 NATO allies", publisher: "Korea JoongAng Daily (wire)", date: 2026-01-21, tier: 3}
-      - {url: "https://greekcitytimes.com/2026/09/23/us-to-build-two-military-bases-in-greenland-under-new-deal/", title: "US to build two military bases in Greenland under new deal", publisher: "Greek City Times", date: 2026-09-23, tier: 4}
-  - to: UKR
-    layer: objective
-    type: membership_goal
-    summary: "The government programme of June 2026 commits Denmark to help candidate countries implement reforms and meet accession criteria, naming Ukraine as the only candidate in that section, alongside continued strong support for Kyiv."
-    since: 2026-06-03
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.eurointegration.com.ua/eng/news/2026/06/5/7239050/", title: "How Denmark's government has changed and what to expect from the pro-Ukraine PM Frederiksen", publisher: "Evropeiska Pravda", date: 2026-06-05, tier: 3}
-  - to: org-eu
-    layer: objective
-    type: influence_goal
-    summary: "Denmark pushes a stricter EU migration regime - 'safe third country' concept, return hubs, faster returns, secured at the end of its July-December 2025 presidency - and, with eight other governments, asked the Council of Europe to revisit how the European Convention on Human Rights is read on expulsions (open letter of 22 May 2025)."
-    since: 2025-05-22
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://euronews.com/my-europe/2025/12/18/danish-presidency-has-bolstered-europes-defence-and-competitiveness-minister-says", title: "Danish presidency has bolstered Europe's defence and competitiveness, minister says", publisher: "Euronews", date: 2025-12-18, tier: 3}
-      - {url: "https://stm.dk/media/00ug0tai/final-letter.pdf", title: "Open letter on the European Convention on Human Rights (nine heads of government)", publisher: "Prime Minister's Office of Denmark", date: 2025-05-22, tier: 1}
-  - to: CHN
-    layer: objective
-    type: influence_goal
-    summary: "Denmark works to keep Chinese capital out of Greenland's strategic assets - it objected on security grounds to a Chinese airport bid in 2018, and Danish and US officials lobbied the Tanbreez rare-earth developer not to sell to Chinese-linked buyers (CEO to Reuters, January 2025)."
-    since: 2018
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.mining.com/web/us-lobbied-greenland-rare-earths-developer-tanbreez-not-to-sell-to-china/", title: "US lobbied Greenland rare earths developer Tanbreez not to sell to China", publisher: "Reuters via Mining.com", date: 2025-01-10, tier: 3}
-
-  # ---------- alignment ----------
-  - to: USA
-    layer: alignment
-    type: treaty
-    summary: "The 1951 Defence of Greenland agreement (updated in 2004) was brought 'into 2026' by the trilateral agreement of 22 Sep 2026, signed by Frederiksen, Nielsen and Trump at the UN; it lets the US establish two more Defence Areas (Narsarsuaq, Mestersvig), expand Pituffik and bars non-NATO military presence. It needs approval in the Folketing and Inatsisartut. The text is not public; the two sides read it differently."
-    claims:
-      - by: USA
-        text: "permanent control over security and all other needs; no expiry date; enemies cannot make sensitive investments without US approval (Trump, 18 Sep 2026)"
-        source: https://www.aljazeera.com/news/2026/9/18/trump-claims-deal-with-denmark-gives-us-permanent-control-over-greenland
-      - by: DNK
-        text: "the agreement recognises the sovereignty and territorial integrity of the Kingdom and Greenland's right to self-determination (Frederiksen)"
-        source: https://www.aljazeera.com/news/2026/9/18/trump-claims-deal-with-denmark-gives-us-permanent-control-over-greenland
-    since: 1951-04-27
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://um.dk/usa/en/nyheder/joint-agreement-on-defense-and-security-in-the-arctic/", title: "Joint agreement on defense and security in the Arctic", publisher: "Ministry of Foreign Affairs of Denmark", date: 2026-09-22, tier: 1}
-      - {url: "https://www.aljazeera.com/news/2026/9/18/trump-claims-deal-with-denmark-gives-us-permanent-control-over-greenland", title: "Trump claims deal with Denmark gives US 'permanent control' over Greenland", publisher: "Al Jazeera", date: 2026-09-18, tier: 3}
-      - {url: "https://greekcitytimes.com/2026/09/23/us-to-build-two-military-bases-in-greenland-under-new-deal/", title: "US to build two military bases in Greenland under new deal", publisher: "Greek City Times", date: 2026-09-23, tier: 4}
-  - to: USA
-    layer: alignment
-    type: treaty
-    summary: "The Defence Cooperation Agreement of 2023 lets US forces use Danish bases; the Folketing approved the enabling bill 94-11 in June 2025, in the middle of the Greenland pressure."
-    since: 2023-12-16
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.bostonglobe.com/2025/06/11/world/denmark-approves-us-military-bases-danish-soil-trump-eyes-greenland", title: "Denmark approves US military bases on Danish soil as Trump eyes Greenland", publisher: "AP via Boston Globe", date: 2025-06-11, tier: 3}
-  - to: UKR
-    layer: alignment
-    type: treaty
-    summary: "Bilateral security cooperation agreement of 22 Feb 2024, the first with a Nordic state: ten years of long-term military and civilian support (F-16s, reconstruction of Mykolaiv, reforms), financed through the Ukraine Fund to 2028."
-    since: 2024-02-22
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.globalsecurity.org/wmd/library/news/ukraine/2024/02/ukraine-240222-dk-mfa01.htm", title: "Denmark becomes first Nordic country to enter an agreement with Ukraine on security cooperation and long-term support", publisher: "Ministry of Foreign Affairs of Denmark (via GlobalSecurity)", date: 2024-02-22, tier: 1}
-  - to: sub-greenland
-    layer: alignment
-    type: membership
-    summary: "Greenland is a self-governing part of the Realm under the 2009 Self-Government Act, whose section 21 gives the people of Greenland the right to decide on independence (negotiated agreement, Greenland referendum, consent of Inatsisartut and the Folketing)."
-    since: 2009-06-21
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.idea.int/node/107705", title: "Legal provisions for mandatory referendums at national level (Greenland Self-Government Act, section 21)", publisher: "International IDEA", date: 2009, tier: 2}
-  - to: sub-faroe
-    layer: alignment
-    type: membership
-    summary: "The Faroe Islands are a self-governing part of the Realm (home rule since 1948). In early 2026 Faroese leaders put heavy negotiations with Copenhagen on hold because of the Greenland crisis; independence moved up the local agenda."
-    since: 1948
-    until: null
-    last_verified: 2026-10-12
-    confidence: C
-    sources:
-      - {url: "https://www.bostonglobe.com/2026/02/07/world/trumps-greenland-threats-spill-into-another-danish-territory", title: "Trump's Greenland threats spill into another Danish territory", publisher: "The Boston Globe", date: 2026-02-07, tier: 3}
-      - {url: "https://en.ara.cat/international/the-other-danish-islands-threatened-by-putin-and-which-now-also-fear-trump_1_5699048.html", title: "The other Danish islands, threatened by Putin and which now also fear Trump", publisher: "Ara", date: 2026, tier: 3}
-  - to: DEU
-    layer: alignment
-    type: treaty
-    summary: "The Bonn-Copenhagen Declarations of 29 Mar 1955 guarantee the rights of the Danish minority in South Schleswig and the German minority in North Schleswig; non-binding in international law but written into national law, and the condition for West Germany's NATO entry."
-    since: 1955-03-29
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://coe.int/en/web/portal/-/the-situation-of-german-minority-in-denmark-rather-satisfactory-but-media-presence-and-general-awareness-need-to-be-improved", title: "The situation of the German minority in Denmark is rather satisfactory, but media presence and general awareness need to be improved", publisher: "Council of Europe", date: 2020, tier: 1}
-      - {url: "https://syfo.de/en/about-ssf/the-danish-minority/rights-and-recognition", title: "The Danish minority - rights and recognition", publisher: "Sydslesvigsk Forening", date: 2024, tier: 4}
-
-  # ---------- dependency ----------
-  - to: USA
-    layer: dependency
-    type: trade_share
-    value: 0.17
-    unit: "share_of_exports_of_goods_and_services_2024_derived"
-    summary: "The USA took roughly 17% of Danish exports of goods and services in 2024 (derived by us from Statistics Denmark growth figures relayed by the Trade Council - exports to the USA rose DKK 14.3bn, +4.0%, in 2025 out of a total rise of DKK 71.0bn, +3.4%). The EU-US deal of July 2025 sets a 15% US tariff on most EU goods."
-    since: 2025
-    until: null
-    last_verified: 2026-10-12
-    confidence: C
-    sources:
-      - {url: "https://um.dk/trade-council/nyheder/eksporttal/dansk-eksport-i-december-2025/", title: "Danish exports in December 2025 (Statistics Denmark data)", title_original: "Dansk eksport i december 2025", lang: da, publisher: "Ministry of Foreign Affairs of Denmark (Trade Council)", date: 2026, tier: 1}
-      - {url: "https://www.sverigesradio.se/artikel/tariffs-the-eu-and-the-united-states-cut-trade-deal", title: "Tariffs: The EU and the United States cut trade deal", publisher: "Sveriges Radio", date: 2025-07, tier: 3}
-  - to: DEU
-    layer: dependency
-    type: trade_share
-    value: 0.12
-    unit: "share_of_exports_of_goods_and_services_2024_derived"
-    summary: "Germany took roughly 12% of Danish exports of goods and services in 2024 (derived by us from the same Statistics Denmark figures - exports to Germany rose DKK 4.4bn, +1.8%, in 2025). Germany was the largest single market until the US surge; the Fehmarn Belt link will tie them physically from 2031 at the earliest."
-    since: 2025
-    until: null
-    last_verified: 2026-10-12
-    confidence: C
-    sources:
-      - {url: "https://um.dk/trade-council/nyheder/eksporttal/dansk-eksport-i-december-2025/", title: "Danish exports in December 2025 (Statistics Denmark data)", title_original: "Dansk eksport i december 2025", lang: da, publisher: "Ministry of Foreign Affairs of Denmark (Trade Council)", date: 2026, tier: 1}
-      - {url: "https://www.tunnel-online.info/en/artikel/fehmarn-belt-fixed-link-german-rail-connection-delayed-4311841.html", title: "Fehmarn Belt Fixed Link: German rail connection delayed", publisher: "Tunnel Online", date: 2025, tier: 3}
-  - to: NOR
-    layer: dependency
-    type: energy_import
-    value: 0.25
-    unit: "share_of_expected_gas_consumption_2023_24_contract"
-    summary: "The 2022 Orsted-Equinor deal brought about 8 TWh of Norwegian gas through the Baltic Pipe in 2023-24, roughly a quarter of expected Danish gas consumption. The contract has expired; no current share was found. Baltic Pipe (10 bcm a year to Denmark and Poland) opened in October 2022."
-    since: 2022-10-27
-    until: 2024-04
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://orsted.com/en/media/newsroom/news/2022/10/20221027579311", title: "Orsted enters into agreement with Equinor on Norwegian gas for Denmark", publisher: "Orsted", date: 2022-10-27, tier: 1}
-      - {url: "https://www.rechargenews.com/energy-transition/equinor-to-flow-gas-to-meet-25-of-danish-demand-via-supply-ensuring-orsted-deal/2-1-1342566", title: "Equinor to flow gas to meet 25% of Danish demand via 'supply ensuring' Orsted deal", publisher: "Recharge", date: 2022-10, tier: 3}
-  - to: USA
-    layer: dependency
-    type: arms_supply
-    value: 43
-    unit: "F-35A_aircraft_ordered_in_total"
-    summary: "Denmark is buying 16 more F-35s (DKK 29bn, announced October 2025) on top of its first 27, for 43; the choice of US combat aircraft contrasts with the European air-defence choice and ties the Danish air force to American maintenance and software."
-    since: 2025-10-11
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.aljazeera.com/news/2025/10/11/denmark-to-boost-arctic-defence-by-4-26bn-plans-to-buy-16-new-f-35s", title: "Denmark to boost Arctic defence by $4.26bn, plans to buy 16 new F-35s", publisher: "Al Jazeera", date: 2025-10-11, tier: 3}
-  - to: FRA
-    layer: dependency
-    type: arms_supply
-    value: 58
-    unit: "DKK_bn_planned_for_eight_medium_and_long_range_air_defence_systems"
-    summary: "Denmark picked the French-Italian SAMP/T over the US Patriot for long-range air defence (12 Sep 2025; about DKK 58bn for eight medium- and long-range systems, the medium-range component still to be chosen among NASAMS, IRIS-T and VL MICA); first EU export customer of SAMP/T."
-    since: 2025-09-12
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://defensenews.com/global/europe/2025/09/12/denmark-picks-french-italian-sampt-air-defense-system-over-patriot", title: "Denmark picks French-Italian SAMP/T air defense system over Patriot", publisher: "Defense News", date: 2025-09-12, tier: 3}
-      - {url: "https://www.defensemagazine.com/article/denmark-says-no-to-patriot-eur78-billion-for-a-fully-european-air-defense-system", title: "Denmark says no to Patriot: EUR 7.8 billion for a fully European air defense system", publisher: "Defense Magazine", date: 2025-09, tier: 3}
-  - to: USA
-    layer: dependency
-    type: military_presence
-    value: 2
-    unit: "additional_US_Defence_Areas_authorised_in_Greenland_beyond_Pituffik"
-    summary: "Beyond the Pituffik Space Base, the 22 Sep 2026 agreement lets the US establish additional Defence Areas at Narsarsuaq (south) and Mestersvig (east) and modernise Pituffik; modalities are not yet specified and require agreement of all three parties."
-    since: 2026-09-22
-    until: null
-    last_verified: 2026-10-12
-    confidence: C
-    sources:
-      - {url: "https://greekcitytimes.com/2026/09/23/us-to-build-two-military-bases-in-greenland-under-new-deal/", title: "US to build two military bases in Greenland under new deal", publisher: "Greek City Times", date: 2026-09-23, tier: 4}
-      - {url: "https://www.aljazeera.com/video/newsfeed/2026/9/22/us-signs-tremendous-security-deal-with-denmark-and-greenland", title: "US signs 'tremendous' security deal with Denmark and Greenland", publisher: "Al Jazeera", date: 2026-09-22, tier: 3}
-  - to: sub-greenland
-    layer: dependency
-    type: investment
-    value: 623
-    unit: "USD_million_per_year_annual_fiscal_transfer_estimate"
-    summary: "Denmark pays Greenland an annual block grant of about USD 623m (roughly USD 11,000 a head, by one estimate), nearer USD 1bn a year counting other services, and a further DKK 1.6bn pledged for health and infrastructure to 2029. It is Copenhagen's main economic argument against American money offers."
-    since: 2009-06-21
-    until: null
-    last_verified: 2026-10-12
-    confidence: C
-    sources:
-      - {url: "https://www.project-syndicate.org/commentary/resistance-to-trump-effort-for-us-control-of-greenland-by-simon-johnson-2025-03", title: "Resistance to Trump's effort for US control of Greenland", publisher: "Project Syndicate (Simon Johnson)", date: 2025-03, tier: 3}
-  - to: UKR
-    layer: dependency
-    type: arms_supply
-    value: 70
-    unit: "DKK_bn_military_support_committed_2022_2028"
-    summary: "The Ukraine Fund (set up March 2023) commits more than DKK 70bn of military aid for 2022-2028, DKK 14.0bn in 2026 (after a DKK 3.8bn top-up on 22 Feb 2026); since 2024 the Danish model buys output from Ukrainian defence firms, with over DKK 17bn contributed through the channel by Denmark, the EU and allies."
-    since: 2022-02-24
-    until: 2028
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://euromaidanpress.com/2026/02/23/denmark-commits-70-bn-kroner-in-military-aid-to-ukraine-through-2028-adds-600-mn-for-2026", title: "Denmark commits 70 bn kroner in military aid to Ukraine through 2028, adds $600 mn for 2026", publisher: "Euromaidan Press", date: 2026-02-23, tier: 3}
-      - {url: "https://mod.gov.ua/en/news/ukraine-and-denmark-have-signed-an-agreement-to-enhance-cooperation-based-on-the-danish-model", title: "Ukraine and Denmark have signed an agreement to enhance cooperation based on the 'Danish model'", publisher: "Ministry of Defence of Ukraine", date: 2025, tier: 1}
-
-  # ---------- action ----------
-  - to: USA
-    layer: action
-    type: visit
-    summary: "On 28 Mar 2025 Vice President Vance visited the Pituffik Space Base (the trip was scaled back after an uproar) and said Denmark had 'not done a good job by the people of Greenland' and under-invested in its security; Rasmussen replied that this is not how you speak to close allies, Frederiksen called the description unfair, Nielsen spoke of a lack of respect."
-    since: 2025-03-28
-    until: 2025-03-28
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.timesleader.com/news/1690206/vance-accuses-denmark-of-uninvesting-in-greenland-as-trump-presses-for-us-takeover-of-the-island", title: "Vance accuses Denmark of under-investing in Greenland as Trump presses for US takeover", publisher: "AP via Times Leader", date: 2025-03-28, tier: 3}
-      - {url: "https://www.freemalaysiatoday.com/category/world/2025/03/29/denmark-criticises-tone-of-vances-greenland-comments", title: "Denmark criticises 'tone' of Vance's Greenland comments", publisher: "Free Malaysia Today (wire)", date: 2025-03-29, tier: 3}
-  - to: USA
-    layer: action
-    type: incident
-    summary: "Tariff and coercion episode of January 2026 - on 17 Jan Trump announced 10% tariffs (25% from 1 June) on Denmark and seven other allies that sent forces to Greenland, 'no going back' on annexation, then on 21 Jan at Davos ruled out force and dropped the tariffs after a 'framework' with NATO's Rutte; Denmark and Greenland denied any deal touching sovereignty."
-    since: 2026-01-17
-    until: 2026-01-21
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://ruralradio.com/krvn/abc_news/trump-announces-tariffs-on-nato-allies-for-opposing-us-control-of-greenland-abcid918184d3/", title: "Trump announces tariffs on NATO allies for opposing US control of Greenland", publisher: "ABC News", date: 2026-01-17, tier: 3}
-      - {url: "https://www.axios.com/2026/01/21/trump-drops-greenland-tariff-invasion-threats", title: "Trump backs off Greenland tariff threat based on new 'solution'", publisher: "Axios", date: 2026-01-21, tier: 3}
-  - to: USA
-    layer: action
-    type: incident
-    summary: "Denmark summoned the US ambassador in August 2025 over reports that at least three people tied to Trump ran covert influence operations in Greenland, and again on 22 Dec 2025 after Trump named Louisiana governor Jeff Landry special envoy to Greenland; Rasmussen called Landry's remarks 'completely unacceptable'."
-    since: 2025-08
-    until: 2025-12-22
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.pbs.org/newshour/amp/world/trumps-envoy-appointment-sparks-new-tension-with-leaders-of-greenland-and-denmark", title: "Trump's envoy appointment sparks new tension with leaders of Greenland and Denmark", publisher: "AP via PBS NewsHour", date: 2025-12-22, tier: 3}
-  - to: USA
-    layer: action
-    type: agreement
-    summary: "Joint working group agreed with Vance and Rubio in Washington in January 2026 and launched at technical level on 29 Jan, described by Rasmussen as 'frank but constructive', with a 'fundamental disagreement' left standing; it led to the 22 Sep 2026 trilateral agreement."
-    since: 2026-01
-    until: 2026-09-22
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.koreatimes.co.kr/amp/world/20260129/rubio-process-to-resolve-greenland-dispute-has-begun", title: "Rubio: Process to resolve Greenland dispute has begun", publisher: "Korea Times (wire)", date: 2026-01-29, tier: 3}
-      - {url: "https://theglobeandmail.com/world/video-fundamental-disagreement-with-trump-over-greenland-danish-foreign", title: "'Fundamental disagreement' with Trump over Greenland, Danish Foreign Minister says", publisher: "The Globe and Mail", date: 2026-01, tier: 3}
-  - to: USA
-    layer: action
-    type: incident
-    summary: "At the NATO summit in Ankara (7-8 Jul 2026) Trump restated that the US should control Greenland; Frederiksen answered that Denmark was 'ready to defend every inch of NATO including our own territory', that Greenland is not for sale and that Greenlanders' self-determination must be respected - two months before the September agreement."
-    since: 2026-07-07
-    until: 2026-07-08
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.arctictoday.com/denmark-ready-to-defend-every-inch-of-nato-including-danish-kingdom-pm-says/", title: "Denmark ready to defend every inch of NATO, including Danish Kingdom, PM says", publisher: "Arctic Today", date: 2026-07-08, tier: 3}
-      - {url: "https://lasvegassun.com/news/2026/jul/08/the-latest-danish-prime-minister-vows-to-defend-gr/", title: "The Latest: Danish prime minister vows to defend Greenland during NATO summit in Turkey", publisher: "AP via Las Vegas Sun", date: 2026-07-08, tier: 3}
-  - to: sub-greenland
-    layer: action
-    type: exercise
-    summary: "Arctic build-up for Greenland - DKK 14.6bn (27 Jan 2025: ships, drones, radar, Joint Arctic Command) and DKK 27.4bn (10 Oct 2025: Arctic special-forces unit, East Greenland radar, new undersea cable, two Arctic vessels), plus the January 2026 reinforcement (Operation Arctic Endurance) with French, Swedish, Norwegian and German contingents."
-    since: 2025-01-27
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://ktvz.com/news/national-world/cnn-world/2025/01/27/denmark-boosts-arctic-defense-spending-by-2-billion-after-trumps-greenland-interest/", title: "Denmark boosts Arctic defense spending by $2 billion after Trump's Greenland interest", publisher: "CNN via KTVZ", date: 2025-01-27, tier: 3}
-      - {url: "https://www.aljazeera.com/news/2025/10/11/denmark-to-boost-arctic-defence-by-4-26bn-plans-to-buy-16-new-f-35s", title: "Denmark to boost Arctic defence by $4.26bn, plans to buy 16 new F-35s", publisher: "Al Jazeera", date: 2025-10-11, tier: 3}
-      - {url: "https://aa.com.tr/en/americas/germany-seeks-mutually-agreeable-nato-solution-for-greenland/3797296", title: "Germany seeks mutually agreeable NATO solution for Greenland", publisher: "Anadolu Agency", date: 2026-01, tier: 3}
-  - to: RUS
-    layer: action
-    type: incident
-    summary: "Drones closed Copenhagen airport for about four hours on 22 Sep 2025 (some 100 flights cancelled) and appeared over Aalborg, Esbjerg, Sonderborg and Skrydstrup air base through 25 Sep; Frederiksen called it 'hybrid attacks' and the most serious attack on Danish critical infrastructure to date, named Russia the main threat without attributing the drones; the Kremlin denied involvement and called it a 'staged provocation'. Responsibility was not established."
-    since: 2025-09-22
-    until: 2025-09-25
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.aljazeera.com/news/2025/9/25/denmark-shuts-second-airport-in-a-week-more-unidentified-drones-spotted", title: "Denmark reports 'hybrid attack' as drones shutter major airport", publisher: "Al Jazeera", date: 2025-09-25, tier: 3}
-      - {url: "https://www.rferl.org/amp/drone-wall-uav-denmark-norway-poland-romania-russia-ukraine-hybrid-war/33541567.html", title: "EU eyes 'drone wall' amid concerns over Russian airspace violations", publisher: "RFE/RL", date: 2025-10, tier: 3}
-  - to: RUS
-    layer: action
-    type: incident
-    summary: "On 14 Sep 2026 a Russian warship off Gedser fired flares that passed close to a Danish Air Force helicopter photographing it; Denmark summoned the Russian ambassador (Frederiksen: 'reckless', meant to intimidate), and on 1 Oct Russia summoned Denmark's ambassador-designate, saying the helicopter approached dangerously. Danish military intelligence (24 Sep) expects more frequent hybrid attacks."
-    since: 2026-09-14
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.euronews.com/2026/09/15/russia-summoned-by-denmark-after-warship-fires-flares-at-helicopter", title: "Russia summoned by Denmark after warship fires flares at helicopter", publisher: "Euronews", date: 2026-09-15, tier: 3}
-      - {url: "https://www.pravda.com.ua/eng/news/2026/10/01/8055905/index.amp", title: "Russia summons Denmark's ambassador after Russian corvette fires flares at Danish helicopter", publisher: "Ukrainska Pravda", date: 2026-10-01, tier: 3}
-      - {url: "https://www.thestar.com.my/news/world/2026/09/24/denmark-expects-russia-to-escalate-hybrid-warfare-in-coming-months-intelligence-service-says", title: "Denmark expects Russia to escalate hybrid warfare in coming months, intelligence service says", publisher: "Reuters via The Star", date: 2026-09-24, tier: 3}
-  - to: RUS
-    layer: action
-    type: sanction
-    summary: "Port-state control aimed at the shadow fleet - from February 2025 the Danish Maritime Authority inspects tankers that anchor at Skagen Red outside harmless passage, and from October 2025 controls on old vessels were tightened; about a third of Russian seaborne oil passes the Danish straits and Denmark logged 292 transits by sanctioned tankers in 2025. A physical interdiction of tankers in the straits has not been reported."
-    since: 2025-02
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://maritime-executive.com/index.php/article/denmark-targets-shadow-tankers-in-new-port-state-inspection-program", title: "Denmark targets shadow tankers in new port state inspection program", publisher: "The Maritime Executive", date: 2025-02, tier: 3}
-      - {url: "https://moderndiplomacy.eu/2026/08/11/why-the-shadow-fleets-baltic-reckoning-wont-look-like-the-mediterraneans/", title: "Why the shadow fleet's Baltic reckoning won't look like the Mediterranean's", publisher: "Modern Diplomacy", date: 2026-08-11, tier: 3}
-  - to: org-nato
-    layer: action
-    type: exercise
-    summary: "Baltic Sentry, launched in January 2025 after the Estlink 2 cable damage (Eagle S, 25 Dec 2024): Denmark raised surveillance of its waters and the western Baltic with ships and aircraft coordinated from the National Maritime Operations Centre at Karup, alongside Commander Task Force Baltic in Rostock."
-    since: 2025-01-14
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.forsvaret.dk/en/news/2025/the-danish-defence-supports-increased-nato-monitoring-of-critical-infrastructure/", title: "The Danish Defence supports increased NATO monitoring of critical infrastructure", publisher: "Danish Defence (Forsvaret)", date: 2025-01, tier: 1}
-      - {url: "https://www.defensenews.com/global/europe/2025/01/14/nato-launches-baltic-patrol-mission-eyes-standard-for-detaining-ships/", title: "NATO launches Baltic patrol mission, eyes standard for detaining ships", publisher: "Defense News", date: 2025-01-14, tier: 3}
-  - to: org-eu
-    layer: action
-    type: agreement
-    summary: "The Danish referendum of 1 Jun 2022 abolished the 1993 defence opt-out (66.9% yes, 65.8% turnout), the first of the Maastricht exemptions to fall; Denmark has joined the EU defence framework since."
-    since: 2022-06-01
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.eeas.europa.eu/eeas/denmark-statement-high-representative-outcome-referendum-opt-out-defence-matters_en", title: "Denmark: Statement by the High Representative on the outcome of the referendum on the opt-out in defence matters", publisher: "European External Action Service", date: 2022-06-02, tier: 1}
-      - {url: "https://www.thelocal.dk/20220601/breaking-danes-vote-scrap-eus-defence-opt-out", title: "Danes vote to scrap EU's defence opt-out", publisher: "The Local Denmark", date: 2022-06-01, tier: 3}
-  - to: FRA
-    layer: action
-    type: agreement
-    summary: "Strategic nuclear-deterrence agreement announced on 2 Mar 2026 as part of Macron's offer to eight European partners; no French nuclear weapons on Danish soil, and Frederiksen said it complements NATO deterrence and responds to a growing Russian threat."
-    since: 2026-03-02
-    until: null
-    last_verified: 2026-10-12
-    confidence: A
-    sources:
-      - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/03/02/denmark-to-cooperate-with-france-on-nuclear-deterrence", title: "Denmark to cooperate with France on nuclear deterrence", publisher: "Reuters via Internazionale", date: 2026-03-02, tier: 3}
-      - {url: "https://www.thelocal.dk/20260303/today-in-denmark-a-roundup-of-the-latest-news-on-tuesday-36", title: "Denmark confirms role in French plan to expand nuclear arsenal", publisher: "The Local Denmark", date: 2026-03-03, tier: 3}
-  - to: SWE
-    layer: action
-    type: agreement
-    summary: "Denmark and Sweden signed a joint CV90 infantry-vehicle procurement in December 2024 (about USD 2.5bn, over 200 vehicles); in 2025 other states joined the exploration of a wider CV90 group."
-    since: 2024-12-01
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://breakingdefense.com/tag/sweden", title: "Denmark and Sweden sign $2.5 billion CV90 IFV joint procurement for over 200 vehicles", publisher: "Breaking Defense", date: 2024-12, tier: 3}
-      - {url: "https://www.defensenews.com/global/europe/2025/09/12/bae-braces-for-biggest-ever-order-of-cv90-combat-vehicle-in-2026/", title: "BAE braces for biggest-ever order of CV90 combat vehicle in 2026", publisher: "Defense News", date: 2025-09-12, tier: 3}
-  - to: SWE
-    layer: action
-    type: exercise
-    summary: "In January 2026 Sweden, with France, Norway, Finland, Germany and the Netherlands, sent a small military contingent to Greenland at Denmark's request; Trump threatened tariffs on the eight countries (withdrawn 21 Jan)."
-    since: 2026-01-14
-    until: 2026-01-21
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://ruralradio.com/krvn/abc_news/trump-announces-tariffs-on-nato-allies-for-opposing-us-control-of-greenland-abcid918184d3/", title: "Trump announces tariffs on NATO allies for opposing US control of Greenland", publisher: "ABC News", date: 2026-01-17, tier: 3}
-      - {url: "https://www.axios.com/2026/01/21/trump-drops-greenland-tariff-invasion-threats", title: "Trump backs off Greenland tariff threat based on new 'solution'", publisher: "Axios", date: 2026-01-21, tier: 3}
-  - to: FIN
-    layer: action
-    type: incident
-    summary: "Finland sided with Denmark in the January 2026 Greenland crisis: Stubb set out three scenarios (off-ramp through NATO Arctic security, tariff war, military intervention) and Finnish officers studied how Finland could add to Arctic defence; no new troops were planned."
-    since: 2026-01
-    until: 2026-01
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://news.liga.net/en/world/news/stubb-named-three-possible-scenarios-for-greenland-one-of-them-is-a-military-takeover", title: "Stubb named three possible scenarios for Greenland. One of them is a military takeover", publisher: "Liga.net", date: 2026-01, tier: 3}
-      - {url: "https://yle.fi/a/74-20205400", title: "Stubb: Greenland is the hardest issue for Finland", publisher: "Yle", date: 2026-01, tier: 3}
-  - to: DEU
-    layer: action
-    type: exercise
-    summary: "A small Bundeswehr reconnaissance team (13 to 15 soldiers) went to Nuuk in January 2026 at Denmark's invitation, tied to a Danish-led exercise, and left after a short mission; Merz said allies were discussing Greenland's protection within NATO and that Berlin was in 'extensive discussions' with Copenhagen."
-    since: 2026-01-15
-    until: 2026-01-18
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://aa.com.tr/en/americas/germany-seeks-mutually-agreeable-nato-solution-for-greenland/3797296", title: "Germany seeks mutually agreeable NATO solution for Greenland", publisher: "Anadolu Agency", date: 2026-01, tier: 3}
-      - {url: "https://www.yahoo.com/news/articles/germany-pulls-troops-greenland-trump-140012481.html", title: "Germany pulls troops from Greenland as Trump pressures Denmark", publisher: "DPA via Yahoo News", date: 2026-01, tier: 3}
-  - to: GBR
-    layer: action
-    type: agreement
-    summary: "On 6 Jan 2026 Frederiksen joined Macron, Merz, Meloni, Tusk, Sanchez and Starmer in a statement affirming Greenland's sovereignty and territorial integrity and that only Denmark and Greenland decide matters concerning them."
-    since: 2026-01-06
-    until: 2026-01-06
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://news.liga.net/en/politics/news/greenland-belongs-to-its-people-europeans-issue-statement-after-trumps-claims", title: "'Greenland belongs to its people'. Europeans issue statement after Trump's claims", publisher: "Liga.net", date: 2026-01-06, tier: 3}
-  - to: ISR
-    layer: action
-    type: incident
-    summary: "Frederiksen called Netanyahu a 'problem', criticised the E1 settlement plan and pushed EU measures against violent settlers and ministers (August 2025), while saying Denmark was not ready to recognise Palestine without a negotiated two-state solution; at the UN General Assembly in September 2025 Denmark's representative stopped short of recognition, leaving Denmark the only Nordic state without it."
-    since: 2025-08
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://themedialine.org/headlines/danish-pm-calls-netanyahu-a-problem-pushes-eu-sanctions-rejects-palestinian-state-recognition/", title: "Danish PM calls Netanyahu a 'problem', pushes EU sanctions, rejects Palestinian state recognition", publisher: "The Media Line", date: 2025-08, tier: 3}
-      - {url: "https://www.arabnews.pk/node/2617201", title: "Denmark stops short of recognizing Palestine at UN General Assembly", publisher: "Arab News", date: 2025-09, tier: 3}
-  - to: CHN
-    layer: action
-    type: incident
-    summary: "The Danish Centre for Cyber Security said in March 2025 that state-backed Chinese hackers were actively targeting the Danish telecom sector; the Danish intelligence service named China, with Russia, a main external risk for 2026 (December 2025). Chinese-linked firms were kept away from Greenland's Tanbreez rare-earth project."
-    since: 2025-03
-    until: null
-    last_verified: 2026-10-12
-    confidence: C
-    sources:
-      - {url: "https://euroweeklynews.com/2025/12/10/denmark-intelligence-warns-of-rising-threats-from-russia-and-china-in-2026/", title: "Denmark intelligence warns of rising threats from Russia and China in 2026", publisher: "Euro Weekly News", date: 2025-12-10, tier: 4}
-      - {url: "https://www.mining.com/web/us-lobbied-greenland-rare-earths-developer-tanbreez-not-to-sell-to-china/", title: "US lobbied Greenland rare earths developer Tanbreez not to sell to China", publisher: "Reuters via Mining.com", date: 2025-01-10, tier: 3}
-  - to: sub-greenland
-    layer: action
-    type: agreement
-    summary: "Greenland's election of 11 Mar 2025 returned Demokraatit (29.9%, gradual independence, Nielsen premier in a broad coalition with three-quarters of the seats) ahead of Naleraq (24.5%, fast independence, closer US ties) and Inuit Ataqatigiit (21.4%); the Kingdom holds the Arctic Council chair for 2025-2027 with Greenland leading it, a first."
-    since: 2025-03-11
-    until: null
-    last_verified: 2026-10-12
-    confidence: B
-    sources:
-      - {url: "https://www.euronews.com/news/2025/03/12/centre-right-demokraatit-party-comes-out-on-top-in-greenland-elections", title: "Centre-right Demokraatit party comes out on top in Greenland elections", publisher: "Euronews", date: 2025-03-12, tier: 3}
-      - {url: "https://www.arcticportal.org/ap-library/news/3758-kingdom-of-denmark-takes-over-arctic-council-chairship-with-greenland-in-prominent-role", title: "Kingdom of Denmark takes over Arctic Council chairship with Greenland in prominent role", publisher: "Arctic Portal", date: 2025-05, tier: 3}
+- to: sub-greenland
+  layer: objective
+  type: territorial_claim
+  summary: Denmark holds and defends sovereignty and territorial integrity over Greenland as part of the Realm; the third Frederiksen government's programme (June 2026) pledges to uphold both and to involve
+    Greenland's government fully in foreign-policy decisions touching the island. Greenland's prime minister Nielsen says Greenland does not want to be owned or governed by the US (January 2026).
+  since: 2009-06-21
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.eurointegration.com.ua/eng/news/2026/06/5/7239050/
+    title: How Denmark's government has changed and what to expect from the pro-Ukraine PM Frederiksen
+    publisher: Evropeiska Pravda
+    date: 2026-06-05
+    tier: 3
+  - url: https://www.idea.int/node/107705
+    title: Legal provisions for mandatory referendums at national level (Greenland Self-Government Act, section 21)
+    publisher: International IDEA
+    date: 2009
+    tier: 2
+  - url: https://gulfnews.com/amp/story/world%2Famericas%2Fdont-want-to-be-owned-by-us-denmark-greenland-hit-back-at-trumps-takeover-claims-1.500408897
+    title: 'Don''t want to be owned by US: Denmark, Greenland hit back at Trump''s takeover claims'
+    publisher: Gulf News
+    date: 2026-01-15
+    tier: 3
+- to: USA
+  layer: objective
+  type: influence_goal
+  summary: Copenhagen's aim toward Washington is to answer 'American concerns about security in the Arctic' while 'respecting the red lines of the Kingdom' - more US presence and an Arctic build-up in exchange
+    for no change of sovereignty (framing of the Danish Foreign Ministry in the Jan 2026 working group).
+  since: 2025-01-06
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.koreatimes.co.kr/amp/world/20260129/rubio-process-to-resolve-greenland-dispute-has-begun
+    title: 'Rubio: Process to resolve Greenland dispute has begun'
+    publisher: Korea Times (wire)
+    date: 2026-01-29
+    tier: 3
+  - url: https://www.aljazeera.com/news/2026/9/18/trump-claims-deal-with-denmark-gives-us-permanent-control-over-greenland
+    title: Trump claims deal with Denmark gives US 'permanent control' over Greenland
+    publisher: Al Jazeera
+    date: 2026-09-18
+    tier: 3
+- to: org-nato
+  layer: objective
+  type: influence_goal
+  summary: Denmark steers the Greenland question into NATO channels - Rutte brokered the 21 Jan 2026 'framework', Arctic Sentry started in February 2026 and NATO welcomed the 22 Sep agreement - so that
+    Arctic security becomes an alliance matter and not a bilateral US-Greenland one.
+  since: 2026-01-21
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.koreajoongangdaily.com/world/trump-says-he-will-not-impose-greenlandrelated-tariffs-on-8-nato-allies/12150007
+    title: Trump says he will not impose Greenland-related tariffs on 8 NATO allies
+    publisher: Korea JoongAng Daily (wire)
+    date: 2026-01-21
+    tier: 3
+  - url: https://greekcitytimes.com/2026/09/23/us-to-build-two-military-bases-in-greenland-under-new-deal/
+    title: US to build two military bases in Greenland under new deal
+    publisher: Greek City Times
+    date: 2026-09-23
+    tier: 4
+- to: UKR
+  layer: objective
+  type: membership_goal
+  summary: The government programme of June 2026 commits Denmark to help candidate countries implement reforms and meet accession criteria, naming Ukraine as the only candidate in that section, alongside
+    continued strong support for Kyiv.
+  since: 2026-06-03
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.eurointegration.com.ua/eng/news/2026/06/5/7239050/
+    title: How Denmark's government has changed and what to expect from the pro-Ukraine PM Frederiksen
+    publisher: Evropeiska Pravda
+    date: 2026-06-05
+    tier: 3
+- to: org-eu
+  layer: objective
+  type: influence_goal
+  summary: Denmark pushes a stricter EU migration regime - 'safe third country' concept, return hubs, faster returns, secured at the end of its July-December 2025 presidency - and, with eight other governments,
+    asked the Council of Europe to revisit how the European Convention on Human Rights is read on expulsions (open letter of 22 May 2025).
+  since: 2025-05-22
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://euronews.com/my-europe/2025/12/18/danish-presidency-has-bolstered-europes-defence-and-competitiveness-minister-says
+    title: Danish presidency has bolstered Europe's defence and competitiveness, minister says
+    publisher: Euronews
+    date: 2025-12-18
+    tier: 3
+  - url: https://stm.dk/media/00ug0tai/final-letter.pdf
+    title: Open letter on the European Convention on Human Rights (nine heads of government)
+    publisher: Prime Minister's Office of Denmark
+    date: 2025-05-22
+    tier: 1
+- to: CHN
+  layer: objective
+  type: influence_goal
+  summary: Denmark works to keep Chinese capital out of Greenland's strategic assets - it objected on security grounds to a Chinese airport bid in 2018, and Danish and US officials lobbied the Tanbreez
+    rare-earth developer not to sell to Chinese-linked buyers (CEO to Reuters, January 2025).
+  since: 2018
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.mining.com/web/us-lobbied-greenland-rare-earths-developer-tanbreez-not-to-sell-to-china/
+    title: US lobbied Greenland rare earths developer Tanbreez not to sell to China
+    publisher: Reuters via Mining.com
+    date: 2025-01-10
+    tier: 3
+- to: USA
+  layer: alignment
+  type: treaty
+  summary: The 1951 Defence of Greenland agreement (updated in 2004) was brought 'into 2026' by the trilateral agreement of 22 Sep 2026, signed by Frederiksen, Nielsen and Trump at the UN; it lets the US
+    establish two more Defence Areas (Narsarsuaq, Mestersvig), expand Pituffik and bars non-NATO military presence. It needs approval in the Folketing and Inatsisartut. The text is not public; the two sides
+    read it differently.
+  claims:
+  - by: USA
+    text: permanent control over security and all other needs; no expiry date; enemies cannot make sensitive investments without US approval (Trump, 18 Sep 2026)
+    source: https://www.aljazeera.com/news/2026/9/18/trump-claims-deal-with-denmark-gives-us-permanent-control-over-greenland
+  - by: DNK
+    text: the agreement recognises the sovereignty and territorial integrity of the Kingdom and Greenland's right to self-determination (Frederiksen)
+    source: https://www.aljazeera.com/news/2026/9/18/trump-claims-deal-with-denmark-gives-us-permanent-control-over-greenland
+  since: 1951-04-27
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://um.dk/usa/en/nyheder/joint-agreement-on-defense-and-security-in-the-arctic/
+    title: Joint agreement on defense and security in the Arctic
+    publisher: Ministry of Foreign Affairs of Denmark
+    date: 2026-09-22
+    tier: 1
+  - url: https://www.aljazeera.com/news/2026/9/18/trump-claims-deal-with-denmark-gives-us-permanent-control-over-greenland
+    title: Trump claims deal with Denmark gives US 'permanent control' over Greenland
+    publisher: Al Jazeera
+    date: 2026-09-18
+    tier: 3
+  - url: https://greekcitytimes.com/2026/09/23/us-to-build-two-military-bases-in-greenland-under-new-deal/
+    title: US to build two military bases in Greenland under new deal
+    publisher: Greek City Times
+    date: 2026-09-23
+    tier: 4
+- to: USA
+  layer: alignment
+  type: treaty
+  summary: The Defence Cooperation Agreement of 2023 lets US forces use Danish bases; the Folketing approved the enabling bill 94-11 in June 2025, in the middle of the Greenland pressure.
+  since: 2023-12-16
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.bostonglobe.com/2025/06/11/world/denmark-approves-us-military-bases-danish-soil-trump-eyes-greenland
+    title: Denmark approves US military bases on Danish soil as Trump eyes Greenland
+    publisher: AP via Boston Globe
+    date: 2025-06-11
+    tier: 3
+- to: UKR
+  layer: alignment
+  type: treaty
+  summary: 'Bilateral security cooperation agreement of 22 Feb 2024, the first with a Nordic state: ten years of long-term military and civilian support (F-16s, reconstruction of Mykolaiv, reforms), financed
+    through the Ukraine Fund to 2028.'
+  since: 2024-02-22
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.globalsecurity.org/wmd/library/news/ukraine/2024/02/ukraine-240222-dk-mfa01.htm
+    title: Denmark becomes first Nordic country to enter an agreement with Ukraine on security cooperation and long-term support
+    publisher: Ministry of Foreign Affairs of Denmark (via GlobalSecurity)
+    date: 2024-02-22
+    tier: 1
+- to: sub-greenland
+  layer: alignment
+  type: membership
+  summary: Greenland is a self-governing part of the Realm under the 2009 Self-Government Act, whose section 21 gives the people of Greenland the right to decide on independence (negotiated agreement, Greenland
+    referendum, consent of Inatsisartut and the Folketing).
+  since: 2009-06-21
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.idea.int/node/107705
+    title: Legal provisions for mandatory referendums at national level (Greenland Self-Government Act, section 21)
+    publisher: International IDEA
+    date: 2009
+    tier: 2
+- to: sub-faroe
+  layer: alignment
+  type: membership
+  summary: The Faroe Islands are a self-governing part of the Realm (home rule since 1948). In early 2026 Faroese leaders put heavy negotiations with Copenhagen on hold because of the Greenland crisis;
+    independence moved up the local agenda.
+  since: 1948
+  until: null
+  last_verified: 2026-10-12
+  confidence: C
+  sources:
+  - url: https://www.bostonglobe.com/2026/02/07/world/trumps-greenland-threats-spill-into-another-danish-territory
+    title: Trump's Greenland threats spill into another Danish territory
+    publisher: The Boston Globe
+    date: 2026-02-07
+    tier: 3
+  - url: https://en.ara.cat/international/the-other-danish-islands-threatened-by-putin-and-which-now-also-fear-trump_1_5699048.html
+    title: The other Danish islands, threatened by Putin and which now also fear Trump
+    publisher: Ara
+    date: 2026
+    tier: 3
+- to: DEU
+  layer: alignment
+  type: treaty
+  summary: The Bonn-Copenhagen Declarations of 29 Mar 1955 guarantee the rights of the Danish minority in South Schleswig and the German minority in North Schleswig; non-binding in international law but
+    written into national law, and the condition for West Germany's NATO entry.
+  since: 1955-03-29
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://coe.int/en/web/portal/-/the-situation-of-german-minority-in-denmark-rather-satisfactory-but-media-presence-and-general-awareness-need-to-be-improved
+    title: The situation of the German minority in Denmark is rather satisfactory, but media presence and general awareness need to be improved
+    publisher: Council of Europe
+    date: 2020
+    tier: 1
+  - url: https://syfo.de/en/about-ssf/the-danish-minority/rights-and-recognition
+    title: The Danish minority - rights and recognition
+    publisher: Sydslesvigsk Forening
+    date: 2024
+    tier: 4
+- to: USA
+  layer: dependency
+  type: trade_share
+  value: 0.17
+  unit: share_of_exports_of_goods_and_services_2024_derived
+  summary: The USA took roughly 17% of Danish exports of goods and services in 2024 (derived by us from Statistics Denmark growth figures relayed by the Trade Council - exports to the USA rose DKK 14.3bn,
+    +4.0%, in 2025 out of a total rise of DKK 71.0bn, +3.4%). The EU-US deal of July 2025 sets a 15% US tariff on most EU goods.
+  since: 2025
+  until: null
+  last_verified: 2026-10-12
+  confidence: C
+  sources:
+  - url: https://um.dk/trade-council/nyheder/eksporttal/dansk-eksport-i-december-2025/
+    title: Danish exports in December 2025 (Statistics Denmark data)
+    title_original: Dansk eksport i december 2025
+    lang: da
+    publisher: Ministry of Foreign Affairs of Denmark (Trade Council)
+    date: 2026
+    tier: 1
+  - url: https://www.sverigesradio.se/artikel/tariffs-the-eu-and-the-united-states-cut-trade-deal
+    title: 'Tariffs: The EU and the United States cut trade deal'
+    publisher: Sveriges Radio
+    date: 2025-07
+    tier: 3
+- to: DEU
+  layer: dependency
+  type: trade_share
+  value: 0.12
+  unit: share_of_exports_of_goods_and_services_2024_derived
+  summary: Germany took roughly 12% of Danish exports of goods and services in 2024 (derived by us from the same Statistics Denmark figures - exports to Germany rose DKK 4.4bn, +1.8%, in 2025). Germany
+    was the largest single market until the US surge; the Fehmarn Belt link will tie them physically from 2031 at the earliest.
+  since: 2025
+  until: null
+  last_verified: 2026-10-12
+  confidence: C
+  sources:
+  - url: https://um.dk/trade-council/nyheder/eksporttal/dansk-eksport-i-december-2025/
+    title: Danish exports in December 2025 (Statistics Denmark data)
+    title_original: Dansk eksport i december 2025
+    lang: da
+    publisher: Ministry of Foreign Affairs of Denmark (Trade Council)
+    date: 2026
+    tier: 1
+  - url: https://www.tunnel-online.info/en/artikel/fehmarn-belt-fixed-link-german-rail-connection-delayed-4311841.html
+    title: 'Fehmarn Belt Fixed Link: German rail connection delayed'
+    publisher: Tunnel Online
+    date: 2025
+    tier: 3
+- to: NOR
+  layer: dependency
+  type: energy_import
+  value: 0.25
+  unit: share_of_expected_gas_consumption_2023_24_contract
+  summary: The 2022 Orsted-Equinor deal brought about 8 TWh of Norwegian gas through the Baltic Pipe in 2023-24, roughly a quarter of expected Danish gas consumption. The contract has expired; no current
+    share was found. Baltic Pipe (10 bcm a year to Denmark and Poland) opened in October 2022.
+  since: 2022-10-27
+  until: 2024-04
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://orsted.com/en/media/newsroom/news/2022/10/20221027579311
+    title: Orsted enters into agreement with Equinor on Norwegian gas for Denmark
+    publisher: Orsted
+    date: 2022-10-27
+    tier: 1
+  - url: https://www.rechargenews.com/energy-transition/equinor-to-flow-gas-to-meet-25-of-danish-demand-via-supply-ensuring-orsted-deal/2-1-1342566
+    title: Equinor to flow gas to meet 25% of Danish demand via 'supply ensuring' Orsted deal
+    publisher: Recharge
+    date: 2022-10
+    tier: 3
+- to: USA
+  layer: dependency
+  type: arms_supply
+  value: 43
+  unit: F-35A_aircraft_ordered_in_total
+  summary: Denmark is buying 16 more F-35s (DKK 29bn, announced October 2025) on top of its first 27, for 43; the choice of US combat aircraft contrasts with the European air-defence choice and ties the
+    Danish air force to American maintenance and software.
+  since: 2025-10-11
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/news/2025/10/11/denmark-to-boost-arctic-defence-by-4-26bn-plans-to-buy-16-new-f-35s
+    title: Denmark to boost Arctic defence by $4.26bn, plans to buy 16 new F-35s
+    publisher: Al Jazeera
+    date: 2025-10-11
+    tier: 3
+- to: FRA
+  layer: dependency
+  type: arms_supply
+  value: 58
+  unit: DKK_bn_planned_for_eight_medium_and_long_range_air_defence_systems
+  summary: Denmark picked the French-Italian SAMP/T over the US Patriot for long-range air defence (12 Sep 2025; about DKK 58bn for eight medium- and long-range systems, the medium-range component still
+    to be chosen among NASAMS, IRIS-T and VL MICA); first EU export customer of SAMP/T.
+  since: 2025-09-12
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://defensenews.com/global/europe/2025/09/12/denmark-picks-french-italian-sampt-air-defense-system-over-patriot
+    title: Denmark picks French-Italian SAMP/T air defense system over Patriot
+    publisher: Defense News
+    date: 2025-09-12
+    tier: 3
+  - url: https://www.defensemagazine.com/article/denmark-says-no-to-patriot-eur78-billion-for-a-fully-european-air-defense-system
+    title: 'Denmark says no to Patriot: EUR 7.8 billion for a fully European air defense system'
+    publisher: Defense Magazine
+    date: 2025-09
+    tier: 3
+- to: USA
+  layer: dependency
+  type: military_presence
+  value: 2
+  unit: additional_US_Defence_Areas_authorised_in_Greenland_beyond_Pituffik
+  summary: Beyond the Pituffik Space Base, the 22 Sep 2026 agreement lets the US establish additional Defence Areas at Narsarsuaq (south) and Mestersvig (east) and modernise Pituffik; modalities are not
+    yet specified and require agreement of all three parties.
+  since: 2026-09-22
+  until: null
+  last_verified: 2026-10-12
+  confidence: C
+  sources:
+  - url: https://greekcitytimes.com/2026/09/23/us-to-build-two-military-bases-in-greenland-under-new-deal/
+    title: US to build two military bases in Greenland under new deal
+    publisher: Greek City Times
+    date: 2026-09-23
+    tier: 4
+  - url: https://www.aljazeera.com/video/newsfeed/2026/9/22/us-signs-tremendous-security-deal-with-denmark-and-greenland
+    title: US signs 'tremendous' security deal with Denmark and Greenland
+    publisher: Al Jazeera
+    date: 2026-09-22
+    tier: 3
+- to: sub-greenland
+  layer: dependency
+  type: investment
+  value: 623
+  unit: USD_million_per_year_annual_fiscal_transfer_estimate
+  summary: Denmark pays Greenland an annual block grant of about USD 623m (roughly USD 11,000 a head, by one estimate), nearer USD 1bn a year counting other services, and a further DKK 1.6bn pledged for
+    health and infrastructure to 2029. It is Copenhagen's main economic argument against American money offers.
+  since: 2009-06-21
+  until: null
+  last_verified: 2026-10-12
+  confidence: C
+  sources:
+  - url: https://www.project-syndicate.org/commentary/resistance-to-trump-effort-for-us-control-of-greenland-by-simon-johnson-2025-03
+    title: Resistance to Trump's effort for US control of Greenland
+    publisher: Project Syndicate (Simon Johnson)
+    date: 2025-03
+    tier: 3
+- to: UKR
+  layer: dependency
+  type: arms_supply
+  value: 70
+  unit: DKK_bn_military_support_committed_2022_2028
+  summary: The Ukraine Fund (set up March 2023) commits more than DKK 70bn of military aid for 2022-2028, DKK 14.0bn in 2026 (after a DKK 3.8bn top-up on 22 Feb 2026); since 2024 the Danish model buys output
+    from Ukrainian defence firms, with over DKK 17bn contributed through the channel by Denmark, the EU and allies.
+  since: 2022-02-24
+  until: 2028
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://euromaidanpress.com/2026/02/23/denmark-commits-70-bn-kroner-in-military-aid-to-ukraine-through-2028-adds-600-mn-for-2026
+    title: Denmark commits 70 bn kroner in military aid to Ukraine through 2028, adds $600 mn for 2026
+    publisher: Euromaidan Press
+    date: 2026-02-23
+    tier: 3
+  - url: https://mod.gov.ua/en/news/ukraine-and-denmark-have-signed-an-agreement-to-enhance-cooperation-based-on-the-danish-model
+    title: Ukraine and Denmark have signed an agreement to enhance cooperation based on the 'Danish model'
+    publisher: Ministry of Defence of Ukraine
+    date: 2025
+    tier: 1
+- to: USA
+  layer: action
+  type: visit
+  summary: On 28 Mar 2025 Vice President Vance visited the Pituffik Space Base (the trip was scaled back after an uproar) and said Denmark had 'not done a good job by the people of Greenland' and under-invested
+    in its security; Rasmussen replied that this is not how you speak to close allies, Frederiksen called the description unfair, Nielsen spoke of a lack of respect.
+  since: 2025-03-28
+  until: 2025-03-28
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.timesleader.com/news/1690206/vance-accuses-denmark-of-uninvesting-in-greenland-as-trump-presses-for-us-takeover-of-the-island
+    title: Vance accuses Denmark of under-investing in Greenland as Trump presses for US takeover
+    publisher: AP via Times Leader
+    date: 2025-03-28
+    tier: 3
+  - url: https://www.freemalaysiatoday.com/category/world/2025/03/29/denmark-criticises-tone-of-vances-greenland-comments
+    title: Denmark criticises 'tone' of Vance's Greenland comments
+    publisher: Free Malaysia Today (wire)
+    date: 2025-03-29
+    tier: 3
+- to: USA
+  layer: action
+  type: incident
+  summary: Tariff and coercion episode of January 2026 - on 17 Jan Trump announced 10% tariffs (25% from 1 June) on Denmark and seven other allies that sent forces to Greenland, 'no going back' on annexation,
+    then on 21 Jan at Davos ruled out force and dropped the tariffs after a 'framework' with NATO's Rutte; Denmark and Greenland denied any deal touching sovereignty.
+  since: 2026-01-17
+  until: 2026-01-21
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://ruralradio.com/krvn/abc_news/trump-announces-tariffs-on-nato-allies-for-opposing-us-control-of-greenland-abcid918184d3/
+    title: Trump announces tariffs on NATO allies for opposing US control of Greenland
+    publisher: ABC News
+    date: 2026-01-17
+    tier: 3
+  - url: https://www.axios.com/2026/01/21/trump-drops-greenland-tariff-invasion-threats
+    title: Trump backs off Greenland tariff threat based on new 'solution'
+    publisher: Axios
+    date: 2026-01-21
+    tier: 3
+- to: USA
+  layer: action
+  type: incident
+  summary: Denmark summoned the US ambassador in August 2025 over reports that at least three people tied to Trump ran covert influence operations in Greenland, and again on 22 Dec 2025 after Trump named
+    Louisiana governor Jeff Landry special envoy to Greenland; Rasmussen called Landry's remarks 'completely unacceptable'.
+  since: 2025-08
+  until: 2025-12-22
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.pbs.org/newshour/amp/world/trumps-envoy-appointment-sparks-new-tension-with-leaders-of-greenland-and-denmark
+    title: Trump's envoy appointment sparks new tension with leaders of Greenland and Denmark
+    publisher: AP via PBS NewsHour
+    date: 2025-12-22
+    tier: 3
+- to: USA
+  layer: action
+  type: agreement
+  summary: Joint working group agreed with Vance and Rubio in Washington in January 2026 and launched at technical level on 29 Jan, described by Rasmussen as 'frank but constructive', with a 'fundamental
+    disagreement' left standing; it led to the 22 Sep 2026 trilateral agreement.
+  since: 2026-01
+  until: 2026-09-22
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.koreatimes.co.kr/amp/world/20260129/rubio-process-to-resolve-greenland-dispute-has-begun
+    title: 'Rubio: Process to resolve Greenland dispute has begun'
+    publisher: Korea Times (wire)
+    date: 2026-01-29
+    tier: 3
+  - url: https://theglobeandmail.com/world/video-fundamental-disagreement-with-trump-over-greenland-danish-foreign
+    title: '''Fundamental disagreement'' with Trump over Greenland, Danish Foreign Minister says'
+    publisher: The Globe and Mail
+    date: 2026-01
+    tier: 3
+- to: USA
+  layer: action
+  type: incident
+  summary: At the NATO summit in Ankara (7-8 Jul 2026) Trump restated that the US should control Greenland; Frederiksen answered that Denmark was 'ready to defend every inch of NATO including our own territory',
+    that Greenland is not for sale and that Greenlanders' self-determination must be respected - two months before the September agreement.
+  since: 2026-07-07
+  until: 2026-07-08
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.arctictoday.com/denmark-ready-to-defend-every-inch-of-nato-including-danish-kingdom-pm-says/
+    title: Denmark ready to defend every inch of NATO, including Danish Kingdom, PM says
+    publisher: Arctic Today
+    date: 2026-07-08
+    tier: 3
+  - url: https://lasvegassun.com/news/2026/jul/08/the-latest-danish-prime-minister-vows-to-defend-gr/
+    title: 'The Latest: Danish prime minister vows to defend Greenland during NATO summit in Turkey'
+    publisher: AP via Las Vegas Sun
+    date: 2026-07-08
+    tier: 3
+- to: sub-greenland
+  layer: action
+  type: exercise
+  summary: 'Arctic build-up for Greenland - DKK 14.6bn (27 Jan 2025: ships, drones, radar, Joint Arctic Command) and DKK 27.4bn (10 Oct 2025: Arctic special-forces unit, East Greenland radar, new undersea
+    cable, two Arctic vessels), plus the January 2026 reinforcement (Operation Arctic Endurance) with French, Swedish, Norwegian and German contingents.'
+  since: 2025-01-27
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://ktvz.com/news/national-world/cnn-world/2025/01/27/denmark-boosts-arctic-defense-spending-by-2-billion-after-trumps-greenland-interest/
+    title: Denmark boosts Arctic defense spending by $2 billion after Trump's Greenland interest
+    publisher: CNN via KTVZ
+    date: 2025-01-27
+    tier: 3
+  - url: https://www.aljazeera.com/news/2025/10/11/denmark-to-boost-arctic-defence-by-4-26bn-plans-to-buy-16-new-f-35s
+    title: Denmark to boost Arctic defence by $4.26bn, plans to buy 16 new F-35s
+    publisher: Al Jazeera
+    date: 2025-10-11
+    tier: 3
+  - url: https://aa.com.tr/en/americas/germany-seeks-mutually-agreeable-nato-solution-for-greenland/3797296
+    title: Germany seeks mutually agreeable NATO solution for Greenland
+    publisher: Anadolu Agency
+    date: 2026-01
+    tier: 3
+- to: RUS
+  layer: action
+  type: incident
+  summary: Drones closed Copenhagen airport for about four hours on 22 Sep 2025 (some 100 flights cancelled) and appeared over Aalborg, Esbjerg, Sonderborg and Skrydstrup air base through 25 Sep; Frederiksen
+    called it 'hybrid attacks' and the most serious attack on Danish critical infrastructure to date, named Russia the main threat without attributing the drones; the Kremlin denied involvement and called
+    it a 'staged provocation'. Responsibility was not established.
+  since: 2025-09-22
+  until: 2025-09-25
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/news/2025/9/25/denmark-shuts-second-airport-in-a-week-more-unidentified-drones-spotted
+    title: Denmark reports 'hybrid attack' as drones shutter major airport
+    publisher: Al Jazeera
+    date: 2025-09-25
+    tier: 3
+  - url: https://www.rferl.org/amp/drone-wall-uav-denmark-norway-poland-romania-russia-ukraine-hybrid-war/33541567.html
+    title: EU eyes 'drone wall' amid concerns over Russian airspace violations
+    publisher: RFE/RL
+    date: 2025-10
+    tier: 3
+- to: RUS
+  layer: action
+  type: incident
+  summary: 'On 14 Sep 2026 a Russian warship off Gedser fired flares that passed close to a Danish Air Force helicopter photographing it; Denmark summoned the Russian ambassador (Frederiksen: ''reckless'',
+    meant to intimidate), and on 1 Oct Russia summoned Denmark''s ambassador-designate, saying the helicopter approached dangerously. Danish military intelligence (24 Sep) expects more frequent hybrid attacks.'
+  since: 2026-09-14
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.euronews.com/2026/09/15/russia-summoned-by-denmark-after-warship-fires-flares-at-helicopter
+    title: Russia summoned by Denmark after warship fires flares at helicopter
+    publisher: Euronews
+    date: 2026-09-15
+    tier: 3
+  - url: https://www.pravda.com.ua/eng/news/2026/10/01/8055905/index.amp
+    title: Russia summons Denmark's ambassador after Russian corvette fires flares at Danish helicopter
+    publisher: Ukrainska Pravda
+    date: 2026-10-01
+    tier: 3
+  - url: https://www.thestar.com.my/news/world/2026/09/24/denmark-expects-russia-to-escalate-hybrid-warfare-in-coming-months-intelligence-service-says
+    title: Denmark expects Russia to escalate hybrid warfare in coming months, intelligence service says
+    publisher: Reuters via The Star
+    date: 2026-09-24
+    tier: 3
+- to: RUS
+  layer: action
+  type: sanction
+  summary: Port-state control aimed at the shadow fleet - from February 2025 the Danish Maritime Authority inspects tankers that anchor at Skagen Red outside harmless passage, and from October 2025 controls
+    on old vessels were tightened; about a third of Russian seaborne oil passes the Danish straits and Denmark logged 292 transits by sanctioned tankers in 2025. A physical interdiction of tankers in the
+    straits has not been reported.
+  since: 2025-02
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://maritime-executive.com/index.php/article/denmark-targets-shadow-tankers-in-new-port-state-inspection-program
+    title: Denmark targets shadow tankers in new port state inspection program
+    publisher: The Maritime Executive
+    date: 2025-02
+    tier: 3
+  - url: https://moderndiplomacy.eu/2026/08/11/why-the-shadow-fleets-baltic-reckoning-wont-look-like-the-mediterraneans/
+    title: Why the shadow fleet's Baltic reckoning won't look like the Mediterranean's
+    publisher: Modern Diplomacy
+    date: 2026-08-11
+    tier: 3
+- to: org-nato
+  layer: action
+  type: exercise
+  summary: 'Baltic Sentry, launched in January 2025 after the Estlink 2 cable damage (Eagle S, 25 Dec 2024): Denmark raised surveillance of its waters and the western Baltic with ships and aircraft coordinated
+    from the National Maritime Operations Centre at Karup, alongside Commander Task Force Baltic in Rostock.'
+  since: 2025-01-14
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.forsvaret.dk/en/news/2025/the-danish-defence-supports-increased-nato-monitoring-of-critical-infrastructure/
+    title: The Danish Defence supports increased NATO monitoring of critical infrastructure
+    publisher: Danish Defence (Forsvaret)
+    date: 2025-01
+    tier: 1
+  - url: https://www.defensenews.com/global/europe/2025/01/14/nato-launches-baltic-patrol-mission-eyes-standard-for-detaining-ships/
+    title: NATO launches Baltic patrol mission, eyes standard for detaining ships
+    publisher: Defense News
+    date: 2025-01-14
+    tier: 3
+- to: org-eu
+  layer: action
+  type: agreement
+  summary: The Danish referendum of 1 Jun 2022 abolished the 1993 defence opt-out (66.9% yes, 65.8% turnout), the first of the Maastricht exemptions to fall; Denmark has joined the EU defence framework
+    since.
+  since: 2022-06-01
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.eeas.europa.eu/eeas/denmark-statement-high-representative-outcome-referendum-opt-out-defence-matters_en
+    title: 'Denmark: Statement by the High Representative on the outcome of the referendum on the opt-out in defence matters'
+    publisher: European External Action Service
+    date: 2022-06-02
+    tier: 1
+  - url: https://www.thelocal.dk/20220601/breaking-danes-vote-scrap-eus-defence-opt-out
+    title: Danes vote to scrap EU's defence opt-out
+    publisher: The Local Denmark
+    date: 2022-06-01
+    tier: 3
+- to: FRA
+  layer: action
+  type: agreement
+  summary: Strategic nuclear-deterrence agreement announced on 2 Mar 2026 as part of Macron's offer to eight European partners; no French nuclear weapons on Danish soil, and Frederiksen said it complements
+    NATO deterrence and responds to a growing Russian threat.
+  since: 2026-03-02
+  until: null
+  last_verified: 2026-10-12
+  confidence: A
+  sources:
+  - url: https://www.internazionale.it/ultime-notizie-reuters/2026/03/02/denmark-to-cooperate-with-france-on-nuclear-deterrence
+    title: Denmark to cooperate with France on nuclear deterrence
+    publisher: Reuters via Internazionale
+    date: 2026-03-02
+    tier: 3
+  - url: https://www.thelocal.dk/20260303/today-in-denmark-a-roundup-of-the-latest-news-on-tuesday-36
+    title: Denmark confirms role in French plan to expand nuclear arsenal
+    publisher: The Local Denmark
+    date: 2026-03-03
+    tier: 3
+- to: SWE
+  layer: action
+  type: agreement
+  summary: Denmark and Sweden signed a joint CV90 infantry-vehicle procurement in December 2024 (about USD 2.5bn, over 200 vehicles); in 2025 other states joined the exploration of a wider CV90 group.
+  since: 2024-12-01
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://breakingdefense.com/tag/sweden
+    title: Denmark and Sweden sign $2.5 billion CV90 IFV joint procurement for over 200 vehicles
+    publisher: Breaking Defense
+    date: 2024-12
+    tier: 3
+  - url: https://www.defensenews.com/global/europe/2025/09/12/bae-braces-for-biggest-ever-order-of-cv90-combat-vehicle-in-2026/
+    title: BAE braces for biggest-ever order of CV90 combat vehicle in 2026
+    publisher: Defense News
+    date: 2025-09-12
+    tier: 3
+- to: SWE
+  layer: action
+  type: exercise
+  summary: In January 2026 Sweden, with France, Norway, Finland, Germany and the Netherlands, sent a small military contingent to Greenland at Denmark's request; Trump threatened tariffs on the eight countries
+    (withdrawn 21 Jan).
+  since: 2026-01-14
+  until: 2026-01-21
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://ruralradio.com/krvn/abc_news/trump-announces-tariffs-on-nato-allies-for-opposing-us-control-of-greenland-abcid918184d3/
+    title: Trump announces tariffs on NATO allies for opposing US control of Greenland
+    publisher: ABC News
+    date: 2026-01-17
+    tier: 3
+  - url: https://www.axios.com/2026/01/21/trump-drops-greenland-tariff-invasion-threats
+    title: Trump backs off Greenland tariff threat based on new 'solution'
+    publisher: Axios
+    date: 2026-01-21
+    tier: 3
+- to: FIN
+  layer: action
+  type: incident
+  summary: 'Finland sided with Denmark in the January 2026 Greenland crisis: Stubb set out three scenarios (off-ramp through NATO Arctic security, tariff war, military intervention) and Finnish officers
+    studied how Finland could add to Arctic defence; no new troops were planned.'
+  since: 2026-01
+  until: 2026-01
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://news.liga.net/en/world/news/stubb-named-three-possible-scenarios-for-greenland-one-of-them-is-a-military-takeover
+    title: Stubb named three possible scenarios for Greenland. One of them is a military takeover
+    publisher: Liga.net
+    date: 2026-01
+    tier: 3
+  - url: https://yle.fi/a/74-20205400
+    title: 'Stubb: Greenland is the hardest issue for Finland'
+    publisher: Yle
+    date: 2026-01
+    tier: 3
+- to: DEU
+  layer: action
+  type: exercise
+  summary: A small Bundeswehr reconnaissance team (13 to 15 soldiers) went to Nuuk in January 2026 at Denmark's invitation, tied to a Danish-led exercise, and left after a short mission; Merz said allies
+    were discussing Greenland's protection within NATO and that Berlin was in 'extensive discussions' with Copenhagen.
+  since: 2026-01-15
+  until: 2026-01-18
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://aa.com.tr/en/americas/germany-seeks-mutually-agreeable-nato-solution-for-greenland/3797296
+    title: Germany seeks mutually agreeable NATO solution for Greenland
+    publisher: Anadolu Agency
+    date: 2026-01
+    tier: 3
+  - url: https://www.yahoo.com/news/articles/germany-pulls-troops-greenland-trump-140012481.html
+    title: Germany pulls troops from Greenland as Trump pressures Denmark
+    publisher: DPA via Yahoo News
+    date: 2026-01
+    tier: 3
+- to: GBR
+  layer: action
+  type: agreement
+  summary: On 6 Jan 2026 Frederiksen joined Macron, Merz, Meloni, Tusk, Sanchez and Starmer in a statement affirming Greenland's sovereignty and territorial integrity and that only Denmark and Greenland
+    decide matters concerning them.
+  since: 2026-01-06
+  until: 2026-01-06
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://news.liga.net/en/politics/news/greenland-belongs-to-its-people-europeans-issue-statement-after-trumps-claims
+    title: '''Greenland belongs to its people''. Europeans issue statement after Trump''s claims'
+    publisher: Liga.net
+    date: 2026-01-06
+    tier: 3
+- to: ISR
+  layer: action
+  type: incident
+  summary: Frederiksen called Netanyahu a 'problem', criticised the E1 settlement plan and pushed EU measures against violent settlers and ministers (August 2025), while saying Denmark was not ready to
+    recognise Palestine without a negotiated two-state solution; at the UN General Assembly in September 2025 Denmark's representative stopped short of recognition, leaving Denmark the only Nordic state
+    without it.
+  since: 2025-08
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://themedialine.org/headlines/danish-pm-calls-netanyahu-a-problem-pushes-eu-sanctions-rejects-palestinian-state-recognition/
+    title: Danish PM calls Netanyahu a 'problem', pushes EU sanctions, rejects Palestinian state recognition
+    publisher: The Media Line
+    date: 2025-08
+    tier: 3
+  - url: https://www.arabnews.pk/node/2617201
+    title: Denmark stops short of recognizing Palestine at UN General Assembly
+    publisher: Arab News
+    date: 2025-09
+    tier: 3
+- to: CHN
+  layer: action
+  type: incident
+  summary: The Danish Centre for Cyber Security said in March 2025 that state-backed Chinese hackers were actively targeting the Danish telecom sector; the Danish intelligence service named China, with
+    Russia, a main external risk for 2026 (December 2025). Chinese-linked firms were kept away from Greenland's Tanbreez rare-earth project.
+  since: 2025-03
+  until: null
+  last_verified: 2026-10-12
+  confidence: C
+  sources:
+  - url: https://euroweeklynews.com/2025/12/10/denmark-intelligence-warns-of-rising-threats-from-russia-and-china-in-2026/
+    title: Denmark intelligence warns of rising threats from Russia and China in 2026
+    publisher: Euro Weekly News
+    date: 2025-12-10
+    tier: 4
+  - url: https://www.mining.com/web/us-lobbied-greenland-rare-earths-developer-tanbreez-not-to-sell-to-china/
+    title: US lobbied Greenland rare earths developer Tanbreez not to sell to China
+    publisher: Reuters via Mining.com
+    date: 2025-01-10
+    tier: 3
+- to: sub-greenland
+  layer: action
+  type: agreement
+  summary: Greenland's election of 11 Mar 2025 returned Demokraatit (29.9%, gradual independence, Nielsen premier in a broad coalition with three-quarters of the seats) ahead of Naleraq (24.5%, fast independence,
+    closer US ties) and Inuit Ataqatigiit (21.4%); the Kingdom holds the Arctic Council chair for 2025-2027 with Greenland leading it, a first.
+  since: 2025-03-11
+  until: null
+  last_verified: 2026-10-12
+  confidence: B
+  sources:
+  - url: https://www.euronews.com/news/2025/03/12/centre-right-demokraatit-party-comes-out-on-top-in-greenland-elections
+    title: Centre-right Demokraatit party comes out on top in Greenland elections
+    publisher: Euronews
+    date: 2025-03-12
+    tier: 3
+  - url: https://www.arcticportal.org/ap-library/news/3758-kingdom-of-denmark-takes-over-arctic-council-chairship-with-greenland-in-prominent-role
+    title: Kingdom of Denmark takes over Arctic Council chairship with Greenland in prominent role
+    publisher: Arctic Portal
+    date: 2025-05
+    tier: 3
+- layer: alignment
+  type: treaty
+  summary: Agreement of June 2022 between Canada, Denmark and Greenland that ended the Hans Island dispute by splitting the island along a natural ridge and set the maritime boundary in the Lincoln Sea
+    and Labrador Sea, the world's longest maritime border; officials of the three governments took part in the signing.
+  since: 2022-06
+  until: null
+  last_verified: '2026-10-16'
+  confidence: A
+  sources:
+  - url: https://blogs.loc.gov/law/2022/06/the-hans-island-peace-agreement-between-canada-denmark-and-greenland/
+    title: The Hans Island Peace Agreement between Canada, Denmark and Greenland
+    publisher: Library of Congress (Law Library blog)
+    date: 2022-06
+    tier: 1
+  - url: https://www.arctictoday.com/?p=14424
+    title: Denmark, Canada agree to settle Hans Island dispute
+    publisher: Arctic Today
+    date: 2022-06
+    tier: 3
+  to: CAN
+  mirrored_from: CAN

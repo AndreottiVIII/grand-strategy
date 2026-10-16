@@ -1,51 +1,197 @@
 actor: BOL
 stances:
-  - toward: USA
-    grade: partner
-    trend: warming
-    bond: grievance
-    since: '2025-11-08'
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "Transactional cooperation, not alignment: normalisation of relations cut in 2008 announced in November 2025, an exchange of ambassadors to follow, a DEA return announced by the drug czar, and fuel talks in Washington. The grievance is the 2008 expulsion of the DEA and the US ambassador, which the warming reverses. partner, warming and grievance are our reading (C); the sources state the moves, not the grades. Gap: no 2026 confirmation that DEA staff are back or that an ambassador is in post."
-    sources:
-      - {url: "https://batimes.com.ar/news/latin-america/bolivia-to-restore-us-ties-cut-nearly-two-decades-ago-says-paz.phtml", title: "Bolivia to restore US ties cut nearly two decades ago, says Paz", publisher: "Buenos Aires Times", date: "2025-10", tier: 3}
-      - {url: "https://www.diariodepernambuco.com.br/amp/mundo/2025/11/11700059-eua-e-bolivia-anunciam-normalizacao-da-relacao-diplomatica-apos-quase-duas-decadas.html", title: "US and Bolivia announce normalisation of diplomatic relations after almost two decades", title_original: "EUA e Bolívia anunciam normalização da relação diplomática após quase duas décadas", publisher: "Diario de Pernambuco", date: "2025-11", tier: 3, lang: pt}
-      - {url: "https://rpp.pe/mundo/latinoamerica/presidente-electo-de-bolivia-viajara-a-eeuu-para-solucionar-la-falta-de-combustible-noticia-1661033", title: "Bolivia's president-elect to travel to the US to solve the fuel shortage", title_original: "Presidente electo de Bolivia viajará a EE.UU. para solucionar la falta de combustible", publisher: "RPP", date: "2025", tier: 3, lang: es}
-      - {url: "https://www.foxnews.com/world/us-shield-americas-condemn-ongoing-efforts-overthrow-bolivias-elected-president-unrest", title: "US, Shield of the Americas condemn ongoing efforts to overthrow Bolivia's elected president", publisher: "Fox News", date: "2026", tier: 3}
-
-  - toward: CHL
-    grade: rival
-    trend: stable
-    bond: grievance
-    since: '2018-10-01'
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "Bolivia's claim is to sovereign access to the Pacific: the ICJ rejected the obligation to negotiate on 1 Oct 2018 (12 votes to 3), and the 2022 Silala judgment left the water dispute unresolved in law. rival is our reading (C): a sea-corridor claim on Chilean coast without war, the same reading as the Chilean card, which is not a source's word. The open wound is older (1879; Wikipedia index only, tier 4). Trend stable, not warming: no source read on the Paz-Kast relationship in 2026, so the warming the Chilean card reads is not confirmed here. Gap: Paz's own statements on the sea claim are not sourced. The shared minerals declaration of 28 Aug 2026 is a partnership on resources, not a change in the claim."
-    sources:
-      - {url: "https://www.icj-cij.org/node/105707", title: "Obligation to Negotiate Access to the Pacific Ocean (Bolivia v. Chile), Judgment of 1 October 2018", publisher: "International Court of Justice", date: "2018-10-01", tier: 1}
-      - {url: "https://api.icj-cij.org/sites/default/files/case-related/162/162-20221201-jud-01-00-bi.pdf", title: "Dispute over the Status and Use of the Waters of the Silala (Chile v. Bolivia), Judgment of 1 December 2022", publisher: "International Court of Justice", date: "2022-12-01", tier: 1}
-      - {url: "https://es.euronews.com/2026/08/28/peru-argentina-chile-y-bolivia-unen-fuerzas-para-ganar-peso-en-el-mercado-de-minerales-est", title: "Peru, Argentina, Chile and Bolivia join forces to gain weight in the minerals market", title_original: "Sudamérica se mueve por el litio y el cobre: Chile, Argentina, Bolivia y Perú firman un acuerdo", publisher: "Euronews", date: "2026-08-28", tier: 3, lang: es}
-      - {url: "https://www.latercera.com/mundo/noticia/el-tensionado-vecindario-regional-que-recibe-a-jose-antonio-kast/", title: "The tense regional neighbourhood that receives José Antonio Kast", title_original: "El tensionado vecindario regional que recibe a José Antonio Kast", publisher: "La Tercera", date: "2026", tier: 3, lang: es}
-
-  - toward: CHN
-    grade: partner
-    trend: cooling
-    bond: none
-    since: '2025-11-08'
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "Transactional: the 2023 lithium contract with CATL (USD 1.4bn) is under the Paz government's review, with a Russian project alongside it; neither has legislative approval. Cooling is our reading (C) from the review, not a source's word; partner and bond none are ours too. Gap: the Chinese embassy has not commented, and no 2026 statement from either side was read."
-    sources:
-      - {url: "https://www.mining.com/web/bolivia-is-rethinking-lithium-deals-with-china-russia-in-us-pivot/", title: "Bolivia is rethinking lithium deals with China, Russia in US pivot", publisher: "Mining.com", date: "2025-11-07", tier: 3}
-
-  - toward: RUS
-    grade: partner
-    trend: cooling
-    bond: none
-    since: '2025-11-08'
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "Transactional: the Uranium One lithium project awaits congressional approval, which Moscow expected soon in February 2025; the Paz review puts it under scrutiny with a Chinese deal. Cooling and partner are our reading (C); no source grades the relationship. Bond none. Gap: Russian statements since Paz took office are not sourced."
-    sources:
-      - {url: "https://www.mining.com/web/bolivia-is-rethinking-lithium-deals-with-china-russia-in-us-pivot/", title: "Bolivia is rethinking lithium deals with China, Russia in US pivot", publisher: "Mining.com", date: "2025-11-07", tier: 3}
+- toward: USA
+  grade: partner
+  trend: warming
+  bond: grievance
+  since: '2025-11-08'
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'Transactional cooperation, not alignment: normalisation of relations cut in 2008 announced in November 2025, an exchange of ambassadors to follow, a DEA return announced by the drug czar, and fuel
+    talks in Washington. The grievance is the 2008 expulsion of the DEA and the US ambassador, which the warming reverses. partner, warming and grievance are our reading (C); the sources state the moves,
+    not the grades. Gap: no 2026 confirmation that DEA staff are back or that an ambassador is in post.'
+  sources:
+  - url: https://batimes.com.ar/news/latin-america/bolivia-to-restore-us-ties-cut-nearly-two-decades-ago-says-paz.phtml
+    title: Bolivia to restore US ties cut nearly two decades ago, says Paz
+    publisher: Buenos Aires Times
+    date: 2025-10
+    tier: 3
+  - url: https://www.diariodepernambuco.com.br/amp/mundo/2025/11/11700059-eua-e-bolivia-anunciam-normalizacao-da-relacao-diplomatica-apos-quase-duas-decadas.html
+    title: US and Bolivia announce normalisation of diplomatic relations after almost two decades
+    title_original: EUA e Bolívia anunciam normalização da relação diplomática após quase duas décadas
+    publisher: Diario de Pernambuco
+    date: 2025-11
+    tier: 3
+    lang: pt
+  - url: https://rpp.pe/mundo/latinoamerica/presidente-electo-de-bolivia-viajara-a-eeuu-para-solucionar-la-falta-de-combustible-noticia-1661033
+    title: Bolivia's president-elect to travel to the US to solve the fuel shortage
+    title_original: Presidente electo de Bolivia viajará a EE.UU. para solucionar la falta de combustible
+    publisher: RPP
+    date: '2025'
+    tier: 3
+    lang: es
+  - url: https://www.foxnews.com/world/us-shield-americas-condemn-ongoing-efforts-overthrow-bolivias-elected-president-unrest
+    title: US, Shield of the Americas condemn ongoing efforts to overthrow Bolivia's elected president
+    publisher: Fox News
+    date: '2026'
+    tier: 3
+- toward: CHL
+  grade: rival
+  trend: stable
+  bond: grievance
+  since: '2018-10-01'
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'Bolivia''s claim is to sovereign access to the Pacific: the ICJ rejected the obligation to negotiate on 1 Oct 2018 (12 votes to 3), and the 2022 Silala judgment left the water dispute unresolved
+    in law. rival is our reading (C): a sea-corridor claim on Chilean coast without war, the same reading as the Chilean card, which is not a source''s word. The open wound is older (1879; Wikipedia index
+    only, tier 4). Trend stable, not warming: no source read on the Paz-Kast relationship in 2026, so the warming the Chilean card reads is not confirmed here. Gap: Paz''s own statements on the sea claim
+    are not sourced. The shared minerals declaration of 28 Aug 2026 is a partnership on resources, not a change in the claim.'
+  sources:
+  - url: https://www.icj-cij.org/node/105707
+    title: Obligation to Negotiate Access to the Pacific Ocean (Bolivia v. Chile), Judgment of 1 October 2018
+    publisher: International Court of Justice
+    date: '2018-10-01'
+    tier: 1
+  - url: https://api.icj-cij.org/sites/default/files/case-related/162/162-20221201-jud-01-00-bi.pdf
+    title: Dispute over the Status and Use of the Waters of the Silala (Chile v. Bolivia), Judgment of 1 December 2022
+    publisher: International Court of Justice
+    date: '2022-12-01'
+    tier: 1
+  - url: https://es.euronews.com/2026/08/28/peru-argentina-chile-y-bolivia-unen-fuerzas-para-ganar-peso-en-el-mercado-de-minerales-est
+    title: Peru, Argentina, Chile and Bolivia join forces to gain weight in the minerals market
+    title_original: 'Sudamérica se mueve por el litio y el cobre: Chile, Argentina, Bolivia y Perú firman un acuerdo'
+    publisher: Euronews
+    date: '2026-08-28'
+    tier: 3
+    lang: es
+  - url: https://www.latercera.com/mundo/noticia/el-tensionado-vecindario-regional-que-recibe-a-jose-antonio-kast/
+    title: The tense regional neighbourhood that receives José Antonio Kast
+    title_original: El tensionado vecindario regional que recibe a José Antonio Kast
+    publisher: La Tercera
+    date: '2026'
+    tier: 3
+    lang: es
+- toward: CHN
+  grade: partner
+  trend: cooling
+  bond: none
+  since: '2025-11-08'
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'Transactional: the 2023 lithium contract with CATL (USD 1.4bn) is under the Paz government''s review, with a Russian project alongside it; neither has legislative approval. Cooling is our reading
+    (C) from the review, not a source''s word; partner and bond none are ours too. Gap: the Chinese embassy has not commented, and no 2026 statement from either side was read.'
+  sources:
+  - url: https://www.mining.com/web/bolivia-is-rethinking-lithium-deals-with-china-russia-in-us-pivot/
+    title: Bolivia is rethinking lithium deals with China, Russia in US pivot
+    publisher: Mining.com
+    date: '2025-11-07'
+    tier: 3
+- toward: RUS
+  grade: partner
+  trend: cooling
+  bond: none
+  since: '2025-11-08'
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'Transactional: the Uranium One lithium project awaits congressional approval, which Moscow expected soon in February 2025; the Paz review puts it under scrutiny with a Chinese deal. Cooling and
+    partner are our reading (C); no source grades the relationship. Bond none. Gap: Russian statements since Paz took office are not sourced.'
+  sources:
+  - url: https://www.mining.com/web/bolivia-is-rethinking-lithium-deals-with-china-russia-in-us-pivot/
+    title: Bolivia is rethinking lithium deals with China, Russia in US pivot
+    publisher: Mining.com
+    date: '2025-11-07'
+    tier: 3
+- toward: ARG
+  grade: partner
+  trend: warming
+  bond: none
+  since: 2025-11
+  last_verified: '2026-10-16'
+  confidence: C
+  reciprocal_of: ARG
+  note: Provisional reciprocal of Argentina's 'partner' stance toward Bolivia, written on 2026-10-16 by tools/reciprocate.py from the same evidence; to be rewritten from Bolivia's side.
+  sources:
+  - url: https://es.euronews.com/2026/08/28/peru-argentina-chile-y-bolivia-unen-fuerzas-para-ganar-peso-en-el-mercado-de-minerales-est
+    title: Peru, Argentina, Chile and Bolivia join forces to gain weight in the strategic minerals market
+    title_original: Peru, Argentina, Chile y Bolivia unen fuerzas para ganar peso en el mercado de minerales estrategicos
+    lang: es
+    publisher: Euronews
+    date: '2026-08-28'
+    tier: 3
+  - url: https://en.mercopress.com/2026/07/28/milei-and-fujimori-meet-in-lima-and-agree-to-strengthen-economic-and-security-cooperation
+    title: Milei and Fujimori meet in Lima and agree to strengthen economic and security cooperation
+    publisher: MercoPress
+    date: '2026-07-28'
+    tier: 3
+  - url: https://www.industrialinfo.com/news/article/bolivias-new-leader-vows-to-boost-natural-gas-exploit-lithium--347709
+    title: Bolivia's new leader vows to boost natural gas, exploit lithium
+    publisher: IIR Energy
+    date: 2025-11
+    tier: 3
+- toward: BRA
+  grade: partner
+  trend: warming
+  bond: none
+  since: 2026-03-16
+  last_verified: '2026-10-16'
+  confidence: C
+  reciprocal_of: BRA
+  note: Provisional reciprocal of Brazil's 'partner' stance toward Bolivia, written on 2026-10-16 by tools/reciprocate.py from the same evidence; to be rewritten from Bolivia's side.
+  sources:
+  - url: https://www.lostiempos.com/actualidad/pais/20260316/lula-bolivia-mantiene-condicion-mayor-proveedor-gas-natural-brasil
+    title: Lula - Bolivia remains Brazil's largest natural gas supplier
+    title_original: Lula - Bolivia mantiene la condicion de mayor proveedor de gas natural para Brasil
+    lang: es
+    publisher: Los Tiempos
+    date: 2026-03-16
+    tier: 3
+  - url: https://www.lostiempos.com/actualidad/economia/20260630/lula-paz-acuerdan-acelerar-acuerdos-petrobras-ypfb
+    title: Lula and Paz agree to speed up the Petrobras-YPFB agreements
+    title_original: Lula y Paz acuerdan acelerar acuerdos entre Petrobras y YPFB
+    lang: es
+    publisher: Los Tiempos
+    date: 2026-06-30
+    tier: 3
+  - url: https://tribunadosertao.com.br/geral/2026/06/30/931615-lula-se-reune-com-presidente-da-bolivia-e-anuncia-acordos-na-area-de-gas
+    title: Lula meets the president of Bolivia and announces gas agreements
+    title_original: Lula se reune com presidente da Bolivia e anuncia acordos na area de gas
+    lang: pt
+    publisher: Tribuna do Sertao
+    date: 2026-06-30
+    tier: 3
+- toward: PER
+  grade: partner
+  trend: stable
+  bond: none
+  since: '2010-10-19'
+  last_verified: '2026-10-16'
+  confidence: C
+  reciprocal_of: PER
+  note: Provisional reciprocal of Peru's 'partner' stance toward Bolivia, written on 2026-10-16 by tools/reciprocate.py from the same evidence; to be rewritten from Bolivia's side.
+  sources:
+  - url: https://peruviantimes.com/20/peru-signs-pact-providing-bolivia-access-to-pacific/9430
+    title: Peru signs pact providing Bolivia access to Pacific
+    publisher: Peruvian Times
+    date: 2010-10
+    tier: 3
+  - url: https://www.eluniverso.com/2010/10/20/1/1361/bolivia-alcanza-un-acceso-oceano-pacifico.html
+    title: Bolivia gains an outlet to the Pacific Ocean
+    title_original: Bolivia alcanza un acceso al océano Pacífico
+    publisher: El Universo
+    date: '2010-10-20'
+    tier: 3
+    lang: es
+  - url: https://gestion.pe/mundo/internacional/rodrigo-paz-ofrece-a-chile-los-puertos-de-bolivia-para-que-se-conecte-con-brasil-noticia/
+    title: Rodrigo Paz offers Chile Bolivia's ports to connect with Brazil
+    title_original: Rodrigo Paz ofrece a Chile los puertos de Bolivia para que se conecte con Brasil
+    publisher: Gestión
+    date: 2026-01
+    tier: 3
+    lang: es
+  - url: https://es.euronews.com/2026/08/28/peru-argentina-chile-y-bolivia-unen-fuerzas-para-ganar-peso-en-el-mercado-de-minerales-est
+    title: Peru, Argentina, Chile and Bolivia join forces to gain weight in the minerals market
+    title_original: 'Sudamérica se mueve por el litio y el cobre: Chile, Argentina, Bolivia y Perú firman un acuerdo'
+    publisher: Euronews
+    date: '2026-08-28'
+    tier: 3
+    lang: es

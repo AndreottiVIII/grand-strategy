@@ -7,10 +7,20 @@ stances:
   since: 1957-07-12
   last_verified: 2026-10-16
   confidence: B
-  note: "Partner by recognition, not ally: no defence clause. Mirrors the TWN card's stance toward PRY (same sources, same bond). Peña's state visit to Taipei from 7 May 2026, with a military welcome and a meeting with Lai, and his call for Taiwan as a 'fundamental partner' (AP via Arab News) are the statement; the grade stays partner. Bond affinity: anti-communism and a shared democratic frame, as the TWN card reads it. Trend stable: the visit is the reaffirmation of an existing tie, not a move."
+  note: 'Partner by recognition, not ally: no defence clause. Mirrors the TWN card''s stance toward PRY (same sources, same bond). Peña''s state visit to Taipei from 7 May 2026, with a military welcome
+    and a meeting with Lai, and his call for Taiwan as a ''fundamental partner'' (AP via Arab News) are the statement; the grade stays partner. Bond affinity: anti-communism and a shared democratic frame,
+    as the TWN card reads it. Trend stable: the visit is the reaffirmation of an existing tie, not a move.'
   sources:
-  - {url: "https://www.arabnews.pk/node/2642768", title: "Taiwan welcomes Paraguay leader as China applies diplomatic pressure", publisher: "Arab News (AP)", date: 2026-05-08, tier: 3}
-  - {url: "https://abcnews.com/International/wireStory/paraguay-taiwan-reaffirm-ties-after-china-sought-lure-132772079", title: "Paraguay and Taiwan reaffirm ties after China sought to lure away another Taipei ally (title as cited in the Taiwan card; page not re-read)", publisher: "AP via ABC News", date: 2026-05, tier: 3}
+  - url: https://www.arabnews.pk/node/2642768
+    title: Taiwan welcomes Paraguay leader as China applies diplomatic pressure
+    publisher: Arab News (AP)
+    date: 2026-05-08
+    tier: 3
+  - url: https://abcnews.com/International/wireStory/paraguay-taiwan-reaffirm-ties-after-china-sought-lure-132772079
+    title: Paraguay and Taiwan reaffirm ties after China sought to lure away another Taipei ally (title as cited in the Taiwan card; page not re-read)
+    publisher: AP via ABC News
+    date: 2026-05
+    tier: 3
 - toward: CHN
   grade: rival
   trend: stable
@@ -18,7 +28,74 @@ stances:
   since: 1957-07-12
   last_verified: 2026-10-16
   confidence: C
-  note: "Our reading, C: Paraguay keeps no diplomatic relations with Beijing, and Beijing presses it to switch recognition, which is competing interests with friction. The grade is rival, not adversary: nothing read points to Beijing's defeat or disappearance as Asunción's aim. No source read uses the word rival for this pair, so it rests on the AP reporting of the pressure. Bond none: no shared identity and no open grievance. The soy and beef trade with China, through third parties, is not read yet and is not in the grade. Since: the date of Paraguay's recognition of the Republic of China, as the start of the tie that Beijing contests."
+  note: 'Our reading, C: Paraguay keeps no diplomatic relations with Beijing, and Beijing presses it to switch recognition, which is competing interests with friction. The grade is rival, not adversary:
+    nothing read points to Beijing''s defeat or disappearance as Asunción''s aim. No source read uses the word rival for this pair, so it rests on the AP reporting of the pressure. Bond none: no shared
+    identity and no open grievance. The soy and beef trade with China, through third parties, is not read yet and is not in the grade. Since: the date of Paraguay''s recognition of the Republic of China,
+    as the start of the tie that Beijing contests.'
   sources:
-  - {url: "https://www.arabnews.pk/node/2642768", title: "Taiwan welcomes Paraguay leader as China applies diplomatic pressure", publisher: "Arab News (AP)", date: 2026-05-08, tier: 3}
-  - {url: "https://abcnews.com/International/wireStory/paraguay-taiwan-reaffirm-ties-after-china-sought-lure-132772079", title: "Paraguay and Taiwan reaffirm ties after China sought to lure away another Taipei ally (title as cited in the Taiwan card; page not re-read)", publisher: "AP via ABC News", date: 2026-05, tier: 3}
+  - url: https://www.arabnews.pk/node/2642768
+    title: Taiwan welcomes Paraguay leader as China applies diplomatic pressure
+    publisher: Arab News (AP)
+    date: 2026-05-08
+    tier: 3
+  - url: https://abcnews.com/International/wireStory/paraguay-taiwan-reaffirm-ties-after-china-sought-lure-132772079
+    title: Paraguay and Taiwan reaffirm ties after China sought to lure away another Taipei ally (title as cited in the Taiwan card; page not re-read)
+    publisher: AP via ABC News
+    date: 2026-05
+    tier: 3
+- toward: ARG
+  grade: partner
+  trend: stable
+  bond: affinity
+  since: 2023-12
+  last_verified: '2026-10-16'
+  confidence: C
+  reciprocal_of: ARG
+  note: Provisional reciprocal of Argentina's 'partner' stance toward Paraguay, written on 2026-10-16 by tools/reciprocate.py from the same evidence; to be rewritten from Paraguay's side.
+  sources:
+  - url: https://news.un.org/en/story/2025/09/1165835
+    title: General Assembly endorses New York Declaration on two-state solution
+    publisher: UN News
+    date: '2025-09-12'
+    tier: 1
+  - url: https://www.ultimahora.com/santiago-pena-viaja-a-argentina-para-un-encuentro-con-javier-milei
+    title: Santiago Peña travels to Argentina for a meeting with Javier Milei
+    title_original: Santiago Peña viaja a Argentina para un encuentro con Javier Milei
+    lang: es
+    publisher: Ultima Hora
+    date: 2026-07
+    tier: 3
+  - url: https://en.mercopress.com/2026/06/29/milei-brings-open-disputes-with-brazil-to-a-mercosur-summit-focused-on-trade-deals
+    title: Milei brings open disputes with Brazil to a Mercosur summit focused on trade deals
+    publisher: MercoPress
+    date: '2026-06-29'
+    tier: 3
+- toward: BRA
+  grade: partner
+  trend: stable
+  bond: none
+  since: 1973
+  last_verified: '2026-10-16'
+  confidence: C
+  reciprocal_of: BRA
+  note: Provisional reciprocal of Brazil's 'partner' stance toward Paraguay, written on 2026-10-16 by tools/reciprocate.py from the same evidence; to be rewritten from Paraguay's side.
+  sources:
+  - url: https://www.ultimahora.com/lula-y-pena-se-reunen-en-brasilia-para-hablar-de-un-nuevo-acuerdo-sobre-itaipu
+    title: Lula and Pena meet in Brasilia to discuss a new Itaipu agreement
+    title_original: Lula y Pena se reunen en Brasilia para hablar de un nuevo acuerdo sobre Itaipu
+    lang: es
+    publisher: Ultima Hora
+    date: 2026-07-15
+    tier: 3
+  - url: https://infonegocios.com.py/y-ademas/paraguay-y-brasil-tienen-asuntos-pendientes-3-negociaciones-que-siguen-en-pulseada
+    title: Paraguay and Brazil have pending matters - three negotiations still in a tug of war
+    title_original: Paraguay y Brasil tienen asuntos pendientes - 3 negociaciones que siguen en pulseada
+    lang: es
+    publisher: Infonegocios
+    date: 2026
+    tier: 3
+  - url: https://en.mercopress.com/2026/08/14/pena-says-the-milei-lula-crisis-has-not-affected-how-mercosur-functions
+    title: Peña says the Milei-Lula crisis has not affected how Mercosur functions
+    publisher: MercoPress
+    date: 2026-08-14
+    tier: 3

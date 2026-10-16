@@ -279,3 +279,508 @@ relations:
     tier: 1
   to: MEX
   mirrored_from: MEX
+- to: USA
+  layer: dependency
+  type: trade_share
+  summary: "The monthly data of May 2026: Canada's goods surplus with the United States was CAD 11.6bn, the largest since the January 2025 record; exports to the US rose 1.5%, the fourth monthly increase in a row, to a record total of CAD 77.1bn of exports, while exports to other countries fell 0.3% and Canada ran a CAD 7.4bn deficit with non-US partners. The diversification away from the US is not yet visible in the flows."
+  value: 11600000000
+  unit: cad_goods_surplus_with_us_may_2026
+  since: 2026-05
+  until: null
+  last_verified: 2026-10-16
+  confidence: A
+  sources:
+  - url: https://www150.statcan.gc.ca/n1/daily-quotidien/260707/dq260707a-eng.htm
+    title: "The Daily: Canadian international merchandise trade, May 2026"
+    publisher: Statistics Canada
+    date: 2026-07-07
+    tier: 1
+- to: USA
+  layer: action
+  type: sanction
+  summary: "Canada's counter-tariffs, announced on 25 August 2026 and in force from 8 September: dollar-for-dollar duties of 50%, 25% or 15% on CAD 27.6bn of US goods across more than 600 tariff lines (50% on steel and aluminium products, dairy, pulp and paper, plywood, electronics, clothing; 25% on lumber, household steel and aluminium articles, cheeses; 15% on forklifts, farm-machinery parts, air conditioners), not stacked on existing duties; existing counter-tariffs on US autos stay. The answer to the US Section 338 duties of 22 August."
+  since: 2026-09-08
+  until: null
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://www.blakes.com/insights/canada-imposes-counter-tariffs-on-27-6-billion-of-u-s-imports-effective-september-8-2026/
+    title: Canada imposes counter-tariffs on $27.6 billion of U.S. imports effective September 8, 2026
+    publisher: Blake, Cassels & Graydon
+    date: 2026-08-27
+    tier: 3
+  - url: https://www.mondaq.com/us-tariffs-on-a-broad-range-of-canadian-goods-take-effect-august-22-2026/1837232
+    title: US tariffs on a broad range of Canadian goods take effect August 22, 2026
+    publisher: Mondaq (law-firm bulletin)
+    date: 2026-08
+    tier: 3
+- to: USA
+  layer: action
+  type: incident
+  summary: "The legal ground of the US tariffs moved three times in 2026. The Supreme Court held in February that IEEPA does not authorise tariffs, which ended the 35% duty on non-CUSMA goods but not the Section 232 duties on steel, aluminium, autos, copper and lumber; Trump answered with a 10% global surcharge under Section 122 from 20 February, exempting CUSMA-origin goods, then with Section 338 (announced 20 July, in force 22 August 2026), the first US duties to reach CUSMA-compliant goods. A 50% tariff on autos from 1 January 2027 was announced on 24 August in one law-firm bulletin only (single source)."
+  since: 2026-02
+  until: null
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://www.fasken.com/en/knowledge/2026/02/us-supreme-court-rejects-ieepa-tariffs
+    title: US Supreme Court rejects IEEPA tariffs
+    publisher: Fasken
+    date: 2026-02
+    tier: 3
+  - url: https://search.open.canada.ca/qpnotes/record/dfatd-maecd%2C0003-2026
+    title: "Question Period Note: U.S. Supreme Court Decision on IEEPA Tariffs"
+    publisher: Global Affairs Canada (Question Period note)
+    date: 2026-02
+    tier: 1
+  - url: https://www.mondaq.com/us-tariffs-on-a-broad-range-of-canadian-goods-take-effect-august-22-2026/1837232
+    title: US tariffs on a broad range of Canadian goods take effect August 22, 2026
+    publisher: Mondaq (law-firm bulletin)
+    date: 2026-08
+    tier: 3
+- to: USA
+  layer: action
+  type: incident
+  summary: "On 7 September 2026 Trump posted a map showing Iceland, Greenland, Canada and Mexico under the US flag; Iceland summoned the US ambassador and its prime minister called the post an insult to Icelanders, Canadians and Greenlanders. Canada's own answer was not retained in this pass (gap). Reused from Iceland's row."
+  since: 2026-09-07
+  until: null
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://www.inquirer.com/news/nation-world/trump-post-map-iceland-greenland-canada-mexico-us-flag-ambassador-summoned-prime-minister-nato-eu-20260908.html
+    title: Iceland summons US ambassador after Trump posts map showing island under American flag
+    publisher: The Inquirer (wire report)
+    date: 2026-09-08
+    tier: 3
+  - url: https://www.cp24.com/news/world/2026/09/08/iceland-calls-trump-post-wholly-inappropriate-summons-us-ambassador/
+    title: Iceland calls Trump post wholly inappropriate, summons US ambassador
+    publisher: CP24 (Canadian Press)
+    date: 2026-09-08
+    tier: 3
+- to: AUS
+  layer: dependency
+  type: arms_supply
+  summary: "Canada buys its Arctic over-the-horizon radar from Australia: Carney announced on 19 March 2025 a partnership on radar based on the Jindalee Operational Radar Network, an investment of more than CAD 6bn (about USD 4.2bn) that Albanese called a significant export; it is part of the NORAD modernisation, and BAE Systems Australia is the supplier. A trade site reports key agreements signed in Canberra on 21 June 2026 (single source, unverified)."
+  value: 6000000000
+  unit: cad_over_the_horizon_radar_investment
+  since: 2025-03-19
+  until: null
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://www.twz.com/land/canada-looks-to-close-critical-arctic-radar-gaps-with-australias-help
+    title: Canada Looks To Close Critical Arctic Radar Gaps With Australia's Help
+    publisher: The War Zone
+    date: 2025-03-19
+    tier: 3
+  - url: https://bdtimes.com.au/news/regional/canada-to-buy-australian-over-the-horizon-radar-defence-system-that-has-key-base-in-goldfields-c-18090239
+    title: Canada to buy Australian over-the-horizon radar defence system that has key base in Goldfields
+    publisher: Business Daily Times (Australia)
+    date: 2025-03
+    tier: 3
+- to: PHL
+  layer: action
+  type: exercise
+  summary: "Canadian personnel took part in or observed Exercise Alon (15-29 August 2025, about 3,600 personnel from the Philippines, Australia, Canada and the US) and Canadian ships and troops joined Balikatan 2026 (the Philippines' card). Reused from the Australian and Philippine rows."
+  since: 2025-08-15
+  until: null
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://globalnation.inquirer.net/288218/ph-australia-start-exercise-alon-with-us-canadian-observers
+    title: PH, Australia start Exercise Alon with US, Canadian observers
+    publisher: Philippine Daily Inquirer
+    date: 2025-08
+    tier: 3
+  - url: https://globalnation.inquirer.net/334549/ph-pacts-with-canada-nz-to-boost-afp-readiness-dnd
+    title: PH pacts with Canada, New Zealand to boost AFP readiness - DND
+    publisher: Philippine Daily Inquirer
+    date: 2026-08
+    tier: 3
+- to: DEU
+  layer: action
+  type: agreement
+  summary: "Carney and Merz, on the margins of the Ankara NATO summit on 7 July 2026, opened negotiations on a Canada-Germany Strategic Partnership Agreement covering security and defence, technology, investment, supply chains and raw materials, energy and space, with the foreign ministers told to finish before the end of 2026. A later readout (24 August 2026) calls it the talks launched the month before."
+  since: 2026-07-07
+  until: null
+  last_verified: 2026-10-16
+  confidence: A
+  sources:
+  - url: https://www.pm.gc.ca/en/node/53346
+    title: Prime Minister Carney meets with Chancellor of Germany Friedrich Merz
+    publisher: Prime Minister of Canada (readout)
+    date: 2026-07-07
+    tier: 1
+  - url: https://www.pm.gc.ca/en/news/readouts/2026/08/24/prime-minister-carney-speaks-chancellor-germany-friedrich-merz
+    title: Prime Minister Carney speaks with Chancellor of Germany Friedrich Merz
+    publisher: Prime Minister of Canada (readout)
+    date: 2026-08-24
+    tier: 1
+- to: DEU
+  layer: dependency
+  type: trade_share
+  summary: "Germany is Canada's largest trading partner in the EU, with bilateral trade above 34bn (the readout's wording, currency not specified, most likely Canadian dollars)."
+  value: 34000000000
+  unit: dollars_bilateral_trade_above_per_pmo_readout
+  since: 2026-07
+  until: null
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://www.pm.gc.ca/en/node/53346
+    title: Prime Minister Carney meets with Chancellor of Germany Friedrich Merz
+    publisher: Prime Minister of Canada (readout)
+    date: 2026-07-07
+    tier: 1
+- to: DEU
+  layer: dependency
+  type: arms_supply
+  summary: "On 6 July 2026 Carney named Germany's TKMS preferred supplier for the Canadian Patrol Submarine Project, up to 12 under-ice-capable submarines on the German-Norwegian 212CD framework, the largest defence procurement in Canadian history. Contract negotiations run to the end of 2027 and Canada keeps the right to open talks with Hanwha Ocean if they fail; first boats are reported for 2034. Sources differ on the day (6 or 7 July); the Asia Pacific Foundation gives 6 July."
+  value: 12
+  unit: submarines_planned_tkms
+  since: 2026-07-06
+  until: null
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://www.asiapacific.ca/publication/what-ottawas-tkms-submarine-decision-means-for-canada-south-korea-relations
+    title: What Ottawa's TKMS submarine decision means for Canada-South Korea relations
+    publisher: Asia Pacific Foundation of Canada
+    date: 2026-07-08
+    tier: 2
+  - url: https://news.usni.org/2026/07/08/canada-selects-german-firm-to-build-12-attack-boats-for-royal-canadian-navy
+    title: Canada Selects German Firm to Build 12 Attack Boats for Royal Canadian Navy
+    publisher: USNI News
+    date: 2026-07-08
+    tier: 3
+- to: KOR
+  layer: action
+  type: incident
+  summary: "Korea loses the submarine competition: Hanwha Ocean was held in reserve when Canada chose TKMS on 6 July 2026, after Hanwha tied its bid to the Canada-Korea Free Trade Agreement, the Comprehensive Strategic Partnership and the Security and Defence Cooperation Partnership. Korean media read the result as NATO interoperability outweighing the industrial offer; the Asia Pacific Foundation sees disappointment, not rupture."
+  since: 2026-07-06
+  until: null
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://www.asiapacific.ca/publication/what-ottawas-tkms-submarine-decision-means-for-canada-south-korea-relations
+    title: What Ottawa's TKMS submarine decision means for Canada-South Korea relations
+    publisher: Asia Pacific Foundation of Canada
+    date: 2026-07-08
+    tier: 2
+- to: JPN
+  layer: action
+  type: agreement
+  summary: "Strategic partnership of 6 March 2026 in Tokyo (Carney and Takaichi): wider military exercises, defence procurement and dual-use technology, LNG (Carney said exports could double by 2030), critical minerals, trade of nearly 40bn (currency not stated), and three memoranda on crisis response, coast-guard cooperation and joint patrols against illegal fishing in the North Pacific. The readout says the memoranda were discussed, the press says signed (conflict noted)."
+  since: 2026-03-06
+  until: null
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://www.pm.gc.ca/en/news/readouts/2026/03/06/prime-minister-carney-meets-prime-minister-japan-Takaichi-Sanae
+    title: Prime Minister Carney meets with Prime Minister of Japan Takaichi Sanae
+    publisher: Prime Minister of Canada (readout)
+    date: 2026-03-06
+    tier: 1
+  - url: https://nationalnewswatch.com/2026/03/06/carney-signs-defence-trade-agreement-with-japan-in-final-stop-of-10-day-trip
+    title: Carney signs defence, trade agreement with Japan in final stop of 10-day trip
+    publisher: Canadian Press (via National News Watch)
+    date: 2026-03-06
+    tier: 3
+- to: POL
+  layer: action
+  type: agreement
+  summary: "Joint statement of 25 August 2025 in Warsaw (Carney and Tusk) on a renewed strategic partnership: annual consultations and a high-level steering group, defence-industry partnerships and joint procurement through EU and NATO mechanisms, nuclear, LNG, critical minerals and offshore wind cooperation, shadow-fleet work against Russia, and Canada as lead nation at the MSPO defence show in Kielce in 2026."
+  since: 2025-08-25
+  until: null
+  last_verified: 2026-10-16
+  confidence: A
+  sources:
+  - url: https://www.pm.gc.ca/en/news/statements/2025/08/25/joint-statement-enhancing-canada-poland-strategic-partnership
+    title: Joint statement on enhancing the Canada-Poland strategic partnership
+    publisher: Prime Minister of Canada
+    date: 2025-08-25
+    tier: 1
+- to: POL
+  layer: dependency
+  type: investment
+  summary: "A Canadian contribution of CAD 20m to the Leopard 2A4 repair facility in Gliwice, Poland, which services tanks for Ukraine."
+  value: 20000000
+  unit: cad_contribution_leopard_repair_facility_gliwice
+  since: 2025-08
+  until: null
+  last_verified: 2026-10-16
+  confidence: A
+  sources:
+  - url: https://www.pm.gc.ca/en/news/statements/2025/08/25/joint-statement-enhancing-canada-poland-strategic-partnership
+    title: Joint statement on enhancing the Canada-Poland strategic partnership
+    publisher: Prime Minister of Canada
+    date: 2025-08-25
+    tier: 1
+- to: SAU
+  layer: action
+  type: visit
+  summary: "Carney in Jeddah on 8-10 July 2026, the first Canadian prime-ministerial visit in 26 years: a Coordination Council led by foreign ministers, double-taxation talks, an investment-protection agreement aimed for early 2027, an energy MOU, an AI MOU, and a shared condemnation of Iranian attacks on shipping in Hormuz on 7 July; bilateral trade exceeded USD 20bn since 2020. Canada backs Saudi Arabia's bid for the 2030 G20."
+  since: 2026-07-08
+  until: 2026-07-10
+  last_verified: 2026-10-16
+  confidence: A
+  sources:
+  - url: https://www.pm.gc.ca/en/node/53360
+    title: Prime Minister of Canada Mark Carney and the Crown Prince and Prime Minister of Saudi Arabia, His Royal Highness Mohammed bin Salman commit to deepening bilateral engagement and economic cooperation
+    publisher: Prime Minister of Canada (readout)
+    date: 2026-07-09
+    tier: 1
+  - url: https://www.cp24.com/news/world/2026/07/08/carney-in-saudi-arabia-seeking-economic-partnership-amid-human-rights-concerns/
+    title: Carney in Saudi Arabia seeking economic partnership amid human rights concerns
+    publisher: Canadian Press (via CP24)
+    date: 2026-07-08
+    tier: 3
+- to: ARE
+  layer: dependency
+  type: investment
+  summary: "Carney's Abu Dhabi visit of November 2025 produced a foreign investment promotion and protection agreement, the start of talks on a comprehensive economic partnership agreement (negotiations to begin in February 2026 per a January 2026 report) and a UAE pledge to invest 70bn in Canada, which an official said covers about a year (currency not specified, hence the unit); a critical-minerals processing deal above 1bn was also reported."
+  value: 70000000000
+  unit: dollars_uae_investment_pledge_as_reported_currency_unspecified
+  since: 2025-11-20
+  until: null
+  last_verified: 2026-10-16
+  confidence: C
+  sources:
+  - url: https://globalnews.ca/news/11536783/carney-uae-visit-70b-investment-pledge-canada
+    title: "Carney UAE visit: $70B investment pledge for Canada"
+    publisher: Global News
+    date: 2025-11
+    tier: 3
+  - url: https://www.bnnbloomberg.ca/business/2025/11/19/carney-to-sign-investment-agreement-launch-talks-towards-new-trade-pact-with-uae-official/
+    title: "Carney to sign investment agreement, launch talks towards new trade pact with UAE: official"
+    publisher: BNN Bloomberg
+    date: 2025-11-19
+    tier: 3
+  - url: https://www.agbi.com/trade/2026/01/canada-and-uae-to-begin-free-trade-talks-next-month/
+    title: Canada and UAE to begin free trade talks next month
+    publisher: AGBI
+    date: 2026-01
+    tier: 3
+- to: IRN
+  layer: action
+  type: expulsion
+  summary: "Canada broke diplomatic relations with Iran in 2012 and, in February 2026, Foreign Minister Anand said ties would not reopen without regime change; Global Affairs frames it as so long as the Iranian government brutalises its people."
+  since: 2012
+  until: null
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://www.cp24.com/news/canada/2026/02/16/anand-says-regime-change-in-iran-would-be-required-for-restarting-diplomatic-ties/
+    title: Anand says 'regime change' in Iran would be required for restarting diplomatic ties
+    publisher: Canadian Press (via CP24)
+    date: 2026-02-16
+    tier: 3
+- to: IRN
+  layer: action
+  type: sanction
+  summary: "Listing of the Islamic Revolutionary Guard Corps as a terrorist entity on 19 June 2024 (members barred from entry, dealings illegal, assets seizable), with about 500 sanctions tied to the Iranian regime by March 2026; Tehran answered by designating the Royal Canadian Navy a terrorist organisation."
+  since: 2024-06-19
+  until: null
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://www.arabnews.com/node/2533656/amp
+    title: Canada declares Iran's Revolutionary Guards a terrorist group
+    publisher: Arab News
+    date: 2024-06-19
+    tier: 3
+  - url: https://www.cp24.com/news/canada/2026/03/02/anand-wont-say-if-canada-views-strikes-on-iran-as-legal/
+    title: Anand won't say if Canada views strikes on Iran as legal
+    publisher: Canadian Press (via CP24)
+    date: 2026-03-02
+    tier: 3
+- to: IRN
+  layer: action
+  type: incident
+  summary: "The war of 28 February 2026: Carney and Anand said the same day that Canada supports the US acting to stop Iran from getting a nuclear weapon, took no part and had no advance notice; on 2 March Anand condemned Iranian strikes on civilian infrastructure across the Middle East including the Gulf states, called for a return to negotiations and sent consular surge teams, and would not say whether the strikes were legal."
+  since: 2026-02-28
+  until: null
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://www.cp24.com/news/canada/2026/03/02/anand-wont-say-if-canada-views-strikes-on-iran-as-legal/
+    title: Anand won't say if Canada views strikes on Iran as legal
+    publisher: Canadian Press (via CP24)
+    date: 2026-03-02
+    tier: 3
+  - url: https://www.canada.ca/en/global-affairs/news/2026/03/statement-by-minister-anand-on-hostilities-in-the-middle-east.html
+    title: Statement by Minister Anand on hostilities in the Middle East
+    publisher: Global Affairs Canada
+    date: 2026-03-02
+    tier: 1
+- to: ISR
+  layer: action
+  type: sanction
+  summary: "No new permits for military exports to Israel since January 2024; in August 2025 Anand said all existing permits that could allow military components to reach the region were suspended and the suspension remains. Advocacy groups dispute this and point to Canadian components in Israeli aircraft; the government says no direct evidence of use in Gaza was shown."
+  since: 2024-01
+  until: null
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://www.gulf-times.com/article/708315/international/canada-confirms-ban-on-export-military-equipment-to-israel-used-in-war-on-gaza
+    title: Canada confirms ban on export of military equipment to Israel used in war on Gaza
+    publisher: Gulf Times (QNA)
+    date: 2025-08-03
+    tier: 3
+- to: ISR
+  layer: action
+  type: incident
+  summary: "The ICC warrant for Netanyahu (November 2024): Carney said in October 2025 that Canada would arrest him if he entered the country; on 23 September 2026, with Netanyahu flying to New York, Anand said she was checking whether his plane would cross Canadian airspace and declined to say whether Canada considers him a war criminal. Legal experts criticise past permissions for overflights."
+  since: 2025-10-22
+  until: null
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://www.business-standard.com/world-news/netanyahu-will-be-arrested-if-he-enters-canada-says-pm-mark-carney-125102200329_1.html
+    title: Netanyahu will be arrested if he enters Canada, says PM Mark Carney
+    publisher: Business Standard
+    date: 2025-10-22
+    tier: 3
+  - url: https://www.cp24.com/news/canada/2026/09/23/anand-to-see-if-netanyahu-is-crossing-canadian-airspace-with-arrest-warrant-in-effect/
+    title: Anand to see if Netanyahu is crossing Canadian airspace with arrest warrant in effect
+    publisher: Canadian Press (via CP24)
+    date: 2026-09-23
+    tier: 3
+- to: CHN
+  layer: action
+  type: sanction
+  summary: "The tariff wall that the January 2026 deal opened: since 22 October 2024 a 100% surtax on Chinese electric vehicles and 25% on certain Chinese steel and aluminium products; the EV surtax was replaced from 1 March 2026 by a quota of 49,000 electrified vehicles a year at 6.1% (about 70,000 within five years, half of them under CAD 35,000 by 2030), while the 25% steel and aluminium surtax and a 25% surtax on steel derivatives from all countries (from 26 December 2025) remain. China's canola duty cut was expected by 1 March 2026 but its implementation is not confirmed in the sources."
+  since: 2024-10-22
+  until: null
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://blog.coleintl.com/tradenews/100-percent-surtax-on-china-origin-ev-imports-ends-as-permit-and-quota-controls-begin
+    title: 100 percent surtax on China-origin EV imports ends as permit and quota controls begin
+    publisher: Cole International
+    date: 2026-03
+    tier: 3
+  - url: https://www.cp24.com/news/canada/2026/01/16/carney-reaches-landmark-tariff-quota-deal-with-china-on-evs-canola/
+    title: Carney reaches landmark tariff-quota deal with China on EVs, canola
+    publisher: Canadian Press (via CP24)
+    date: 2026-01-16
+    tier: 3
+- to: CHN
+  layer: action
+  type: visit
+  summary: "Chinese Foreign Minister Wang Yi in Ottawa on 28-30 May 2026, the first such visit in ten years, meeting Anand and Carney; Anand described a recalibrated relationship with cooperation on trade, energy, finance and public security, the leaders covered human rights and foreign interference in a frank and constructive manner, and Wang said Canadian exports to China could double. Canada is country of honour at the China International Import Expo."
+  since: 2026-05-28
+  until: 2026-05-30
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://nationalnewswatch.com/2026/05/29/chinas-foreign-minister-wang-yi-set-to-meet-carney-anand-today
+    title: China's foreign minister Wang Yi set to meet Carney, Anand today
+    publisher: Canadian Press (via National News Watch)
+    date: 2026-05-29
+    tier: 3
+  - url: https://q107.com/news/11873420/wang-yi-ottawa-meeting-anita-anand-mark-carney/
+    title: Anand calls China ties 'significant,' says Canada must safeguard 'values'
+    publisher: Canadian Press (via Q107)
+    date: 2026-05-29
+    tier: 3
+- to: TWN
+  layer: action
+  type: exercise
+  summary: "HMCS Charlottetown sailed through the Taiwan Strait on 22-23 May 2026 without allied ships after a port call in Da Nang, disclosed by National Defence as a routine transit; Defence Minister McGuinty has said the Strait is international waters. Beijing's ambassador had warned that more transits would harm the new partnership. Reported as the second transit under Carney."
+  since: 2026-05-22
+  until: 2026-05-23
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://www.theglobeandmail.com/politics/article-hmcs-charlottetown-canadian-warship-taiwan-strait/
+    title: Canadian warship HMCS Charlottetown transits the Taiwan Strait (title reconstructed from the URL)
+    publisher: The Globe and Mail
+    date: 2026-05-28
+    tier: 3
+- to: DNK
+  layer: alignment
+  type: treaty
+  summary: "Agreement of June 2022 between Canada, Denmark and Greenland that ended the Hans Island dispute by splitting the island along a natural ridge and set the maritime boundary in the Lincoln Sea and Labrador Sea, the world's longest maritime border; officials of the three governments took part in the signing."
+  since: 2022-06
+  until: null
+  last_verified: 2026-10-16
+  confidence: A
+  sources:
+  - url: https://blogs.loc.gov/law/2022/06/the-hans-island-peace-agreement-between-canada-denmark-and-greenland/
+    title: The Hans Island Peace Agreement between Canada, Denmark and Greenland
+    publisher: Library of Congress (Law Library blog)
+    date: 2022-06
+    tier: 1
+  - url: https://www.arctictoday.com/?p=14424
+    title: Denmark, Canada agree to settle Hans Island dispute
+    publisher: Arctic Today
+    date: 2022-06
+    tier: 3
+- to: sub-greenland
+  layer: action
+  type: visit
+  summary: "Canada opened a consulate in Nuuk in early February 2026, with Foreign Minister Anand and Governor General Mary Simon present; France opened its own the same day. Announced in the Arctic Foreign Policy of December 2024, so officials say it predates the Greenland crisis; a consulate in Anchorage was also planned without a date."
+  since: 2026-02
+  until: null
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://nbcnews.com/world/greenland/canada-france-opening-consulates-greenland-tensions-us-push-control-rcna257758
+    title: Canada and France open consulates in Greenland following tensions over U.S. push for control
+    publisher: NBC News
+    date: 2026-02
+    tier: 3
+  - url: https://www.castanetkamloops.net/news/Canada/598323/Canada-bolsters-Arctic-security-and-Inuit-ties-with-new-Nuuk-consulate-Anand
+    title: "Canada bolsters Arctic security and Inuit ties with new Nuuk consulate: Anand"
+    publisher: Canadian Press (via Castanet)
+    date: 2026-02
+    tier: 3
+- to: org-nato
+  layer: action
+  type: agreement
+  summary: "The defence spending path: 2% of GDP reached in the 2025-26 fiscal year (five years early; NATO figures of March 2026; the 2024 share was about 1.45-1.47%, sources differ), then the Hague pledge of June 2025 to reach 5% by 2035 (3.5% core, 1.5% resilience). Budget 2025 (November) puts CAD 81.8bn over five years into the forces, CAD 9bn of it already announced in June 2025, with CAD 6.6bn for a Defence Industrial Strategy and CAD 1bn for an Arctic Infrastructure Fund; the budget says planned federal, provincial and municipal spending meets the 1.5% without showing the calculation. Dollars are Canadian."
+  since: 2025-06
+  until: 2035
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://www.janes.com/osint-insights/defence-news/industry/canadian-prime-minister-unveils-five-year-cad818-billion-defence-spending-plan
+    title: Canadian prime minister unveils five-year CAD81.8 billion defence spending plan
+    publisher: Janes
+    date: 2025-11
+    tier: 3
+  - url: https://www.theglobeandmail.com/politics/article-federal-budget-2025-defence
+    title: Federal budget 2025 and defence (title reconstructed from the URL)
+    publisher: The Globe and Mail
+    date: 2025-11
+    tier: 3
+  - url: https://www.bnnbloomberg.ca/business/politics/2026/03/26/canada-officially-hits-nato-2-gdp-target/
+    title: Canada officially hits NATO 2% GDP target
+    publisher: BNN Bloomberg
+    date: 2026-03-26
+    tier: 3
+- to: RUS
+  layer: objective
+  type: influence_goal
+  summary: "Deter Russia in the Arctic: Carney called Russia without question a threat there (January 2026); the 365-day Arctic posture, an over-the-horizon radar bought from Australia for more than CAD 6bn and a CAD 1bn Arctic Infrastructure Fund of dual-use airports, ports and roads (Budget 2025) are the means; the Nuuk consulate and the Hans Island settlement close the diplomatic side."
+  since: 2025-03
+  until: null
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://www.bloomberg.com/news/articles/2026-01-20/russia-is-without-question-a-threat-in-the-arctic-carney-says
+    title: Russia Is 'Without Question' a Threat in the Arctic, Carney Says
+    publisher: Bloomberg
+    date: 2026-01-20
+    tier: 3
+  - url: https://www.twz.com/land/canada-looks-to-close-critical-arctic-radar-gaps-with-australias-help
+    title: Canada Looks To Close Critical Arctic Radar Gaps With Australia's Help
+    publisher: The War Zone
+    date: 2025-03-19
+    tier: 3
+  - url: https://www.theglobeandmail.com/politics/article-federal-budget-2025-defence
+    title: Federal budget 2025 and defence (title reconstructed from the URL)
+    publisher: The Globe and Mail
+    date: 2025-11
+    tier: 3

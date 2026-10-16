@@ -57,7 +57,7 @@ relations:
   - to: CUB
     layer: dependency
     type: energy_export
-    summary: "Pemex shipped nearly 20,000 barrels of oil a day to Cuba from January to 30 September 2025, a key lifeline for Havana, and Sheinbaum announced a pause on 27 January 2026 as a 'sovereign decision', declining to link it to US pressure. Whether shipments resumed is not confirmed in the sources read."
+    summary: "Pemex shipped nearly 20,000 barrels of oil a day to Cuba from January to 30 September 2025, a key lifeline for Havana, and Sheinbaum announced a pause on 27 January 2026 as a 'sovereign decision', declining to link it to US pressure. Sharpened 2026-10-16 from the CUB card: Mexico has sent no fuel since the US executive order of January 2026 (Reuters, 13 May 2026), and in June 2026 Sheinbaum said she wanted to restart shipments through commercial and private firms, with no timeline; the 20,000 b/d value is the 2025 flow, not the current one."
     value: 20000
     unit: barrels_per_day_2025
     since: 2025-01
@@ -66,12 +66,14 @@ relations:
     confidence: B
     sources:
       - {url: "https://www.npr.org/2026/01/28/nx-s1-5691086/mexico-oil-shipments-cuba", title: "Mexican president says her country has paused oil shipments to Cuba", publisher: "NPR", date: 2026-01-28, tier: 3}
+      - {url: "https://www.dailymaverick.co.za/article/2026-05-14-cuba-has-run-out-of-diesel-and-fuel-oil-amid-us-oil-blockade", title: "Cuba has run out of diesel and fuel oil amid US oil blockade (Reuters, Dave Sherwood)", publisher: "Daily Maverick (Reuters)", date: 2026-05-14, tier: 3}
+      - {url: "https://www.wlrn.org/americas/2026-06-22/mexicos-president-seeks-to-restart-oil-shipments-to-cuba-as-islands-crises-deepen", title: "Mexico's president seeks to restart oil shipments to Cuba as island's crises deepen", publisher: "WLRN (AP)", date: 2026-06-22, tier: 3}
 
   # ---------- action ----------
   - to: USA
     layer: action
     type: agreement
-    summary: "Mexico transferred 29 cartel figures to US custody on 27 Feb 2025 (NYT), and dozens more in January 2026 (NPR), presented by Sheinbaum as sovereign and autonomous cooperation, the means behind the cooperation objective above."
+    summary: "Mexico transferred cartel figures to US custody in three batches: 29 on 27 Feb 2025 (including Rafael Caro Quintero; NYT), 26 in Aug 2025 and 37 on 20 Jan 2026, 92 in all, flown on seven Mexican military aircraft to six US cities (NBC News, Mexico News Daily). Sheinbaum says the US asked for them and the choice was sovereign, weighed by the National Security Council. Sharpened 2026-10-16 from 'dozens more in January 2026'. The means behind the cooperation objective above."
     since: 2025-02-27
     until: null
     last_verified: 2026-10-16
@@ -79,11 +81,13 @@ relations:
     sources:
       - {url: "https://www.nytimes.com/2025/02/27/us/politics/mexico-cartel-sheinbaum-trump.html", title: "Mexico transfers dozens of cartel operatives to U.S. custody", publisher: "The New York Times", date: 2025-02-27, tier: 3}
       - {url: "https://www.npr.org/2026/01/28/nx-s1-5691086/mexico-oil-shipments-cuba", title: "Mexican president says her country has paused oil shipments to Cuba", publisher: "NPR", date: 2026-01-28, tier: 3}
+      - {url: "https://www.nbcnews.com/world/mexico/mexico-sends-37-cartel-members-us-latest-offer-trump-administration-rcna255092", title: "Mexico sends 37 cartel members to U.S. in latest offer to Trump administration", publisher: "NBC News", date: 2026-01-20, tier: 3}
+      - {url: "https://mexiconewsdaily.com/news/prisoner-handover-usmca-mexico-week-in-review/", title: "Mexico's week in review: Prisoner handover deepens US security ties while trade tensions threaten USMCA", publisher: "Mexico News Daily", date: 2026-01, tier: 3}
 
   - to: CHN
     layer: action
     type: sanction
-    summary: "Tariffs of up to 50% on cars, auto parts, textiles, plastics and steel from countries without a free-trade agreement, aimed first at China, approved by Congress in late 2025 and in force in 2026, covering more than 1,400 product categories. Recorded as 'sanction' because the vocabulary has no trade-measure type; a question for Davide (see JOURNAL)."
+    summary: "Tariffs on cars, auto parts, textiles, plastics and steel from countries without a free-trade agreement, aimed first at China, approved by the Senate 76-5 on 10 Dec 2025 and in force from 1 Jan 2026, covering more than 1,400 product categories. Sharpened 2026-10-16: the 50% figure was the Sept 2025 proposal; enacted rates run from 5% to 50%, most lines capped at 35% (passenger cars 20% to 35%, steel articles 15% to 35%), 50% on some auto, textile, plastic and steel lines (Thomson Reuters). Recorded as 'sanction' because the vocabulary has no trade-measure type; a question for Davide (see JOURNAL)."
     since: 2026-01-01
     until: null
     last_verified: 2026-10-16
@@ -91,6 +95,7 @@ relations:
     sources:
       - {url: "https://www.cbtnews.com/mexico-plans-tariffs-of-up-to-50-on-chinese-cars-aligning-with-u-s-trade-stance/", title: "Mexico plans tariffs of up to 50% on Chinese cars, aligning with US trade stance", publisher: "CBT News", date: 2025-12, tier: 3}
       - {url: "https://www.tribuneindia.com/news/india/mexico-hikes-tariffs-up-to-50-on-imports-from-china-india", title: "Mexico hikes tariffs up to 50% on imports from China, India", publisher: "Tribune India", date: 2025-12, tier: 3}
+      - {url: "https://www.thomsonreuters.com/en-us/help/onesource-global-trade/regulatory-insights/2025/december-15th/mexico-approves-tariff-hikes-on-imports-from-china.html", title: "Mexico approves tariff hikes on imports from China", publisher: "Thomson Reuters", date: 2025-12-15, tier: 3}
 
   - to: org-eu
     layer: action
@@ -115,3 +120,399 @@ relations:
     sources:
       - {url: "https://www.thelocal.es/20260318/mexican-president-hails-spanish-kings-acknowledgement-of-abuses-during-conquest", title: "Mexican president hails Spanish King's acknowledgement of abuses during conquest", publisher: "The Local Spain", date: 2026-03-18, tier: 3}
       - {url: "https://www.nst.com.my/amp/sports/football/2026/06/1473427/mexicos-sheinbaum-and-spanish-king-use-world-cup-to-mend-diplomatic", title: "Mexico's Sheinbaum and Spanish king use World Cup to mend diplomatic rift", publisher: "New Straits Times", date: 2026-06, tier: 3}
+
+  # ---------- added 2026-10-16 (protagonist pass) ----------
+  # objective
+  - to: USA
+    layer: objective
+    type: influence_goal
+    summary: "Win relief from the sectoral US tariffs and keep the USMCA through the annual reviews: Mexico asks for zero tariffs on vehicles or, failing that, quotas no tighter than those on the EU and South Korea, and for the removal of steel and aluminium duties on goods that meet the rules of origin; Economy Minister Ebrard met Commerce Secretary Lutnick on 2 Sep 2026, and Sheinbaum said after a call with Trump that progress was being made but gave no detail. USTR Greer said in April 2026 that Mexico's auto and steel sectors would probably not be exempted; Sheinbaum prefers dialogue to a 25% retaliatory tariff on US steel and aluminium. Talks reported stalled on 12 Oct 2026."
+    since: 2026-04
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://mexicobusiness.news/automotive/news/mexico-push-steel-auto-tariff-cuts-usmca-talks", title: "Mexico to Push Steel, Auto Tariff Cuts in USMCA Talks", publisher: "Mexico Business News", date: 2026-09, tier: 3}
+      - {url: "https://gvwire.com/2026/09/02/mexico-presses-us-on-auto-steel-tariffs-in-meeting-with-lutnick/", title: "Mexico presses US on auto, steel tariffs in meeting with Lutnick", publisher: "GV Wire (wire report)", date: 2026-09-02, tier: 3}
+      - {url: "https://www.cp24.com/news/world/2026/04/20/mexico-eyes-early-trade-deal-on-steel-aluminum-autos-ahead-of-cusma/", title: "Mexico eyes early trade deal on steel, aluminum, autos ahead of CUSMA", publisher: "CP24 (Canadian Press)", date: 2026-04-20, tier: 3}
+
+  - to: org-un
+    layer: objective
+    type: influence_goal
+    summary: "Back Michelle Bachelet for UN Secretary-General: Chile nominated her on 2 Feb 2026 with the backing of Mexico and Brazil (joint statement); Chile under Kast withdrew its support on 24 Mar 2026 and said it would abstain from backing any candidate, and Sheinbaum said Mexico would keep supporting her ('the ideal person to lead the United Nations') and received her at the National Palace in May 2026. Status of the candidacy after March not established."
+    since: 2026-02-02
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://passblue.com/2026/02/02/michelle-bachelet-of-chile-is-running-for-the-uns-top-post-with-regional-backing/", title: "Michelle Bachelet of Chile Is Running for the UN's Top Post With Regional Backing", publisher: "PassBlue", date: 2026-02-02, tier: 3}
+      - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/03/25/mexico-will-keep-supporting-bachelet-for-un-chief-president-says", title: "Mexico will keep supporting Bachelet for UN chief, president says", publisher: "Reuters (via Internazionale)", date: 2026-03-25, tier: 3}
+
+  # alignment
+  - to: org-eu
+    layer: alignment
+    type: treaty
+    summary: "The EU-Mexico Global Agreement, a trade and political agreement in force since 2000, modernised and re-signed together with an interim trade agreement at the 8th EU-Mexico Summit on 22 May 2026 (EEAS). The signing itself is the action row above; this row records the standing treaty. Not yet ratified on Mexico's side in the sources read. No defence clause."
+    since: 2000
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://latinnews.com/component/k2/item/110437-mexico-mexico-signs-updated-trade-deal-with-eu.html", title: "Mexico signs updated trade deal with EU (an updated version of the agreement in force since 2000)", publisher: "LatinNews", date: 2026-05, tier: 3}
+      - {url: "https://www.eeas.europa.eu/delegations/mexico/eu-and-mexico-deepen-long-term-ties-historic-summit_en", title: "EU and Mexico deepen long-term ties at a historic summit", publisher: "EEAS (EU External Action Service)", date: 2026-05-22, tier: 1}
+
+  - to: CHL
+    layer: alignment
+    type: treaty
+    summary: "Chile-Mexico free trade agreement in force since August 1999 and a strategic partnership agreement of 2006 (Wikipedia index, tier 4 pointer; the foreign ministry of Chile describes Mexico as a friend with traditional influence). Both are founding members of the Pacific Alliance with Colombia and Peru, which Kast says he wants to revive."
+    since: 1999-08
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Chile%E2%80%93Mexico_relations", title: "Chile-Mexico relations (index only; the 1999 free trade agreement and 2006 strategic partnership are pointers)", publisher: "Wikipedia", date: 2026-10-16, tier: 4}
+      - {url: "https://www.minrel.gov.cl/minrel/news/mexico-is-a-friend-of-chile-with-a-traditional-influence-and", title: "Mexico is a friend of Chile with a traditional influence and international prestige", publisher: "Ministry of Foreign Affairs of Chile", date: 2025, tier: 1}
+
+  # dependency
+  - to: USA
+    layer: dependency
+    type: trade_share
+    summary: "More than 80% of Mexico's exports go to the United States: exports were a record USD 664.84bn in 2025 (INEGI via Mexico Business News) with a small overall trade surplus of USD 771m, and in July 2025 the US took 84.03% of non-oil exports. The mirror of the USA row (Mexico is 15.5% of US goods exports and the first US trading partner for a third year, two-way goods trade USD 872.8bn). The value is the floor of the stated share."
+    value: 0.8
+    unit: share_of_mexican_exports_to_us_2025_at_least
+    since: 2025
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://mexicobusiness.news/trade-and-investment/news/mexico-sets-us66484-billion-export-record-2025", title: "Mexico Sets US$664.84 Billion Export Record in 2025", publisher: "Mexico Business News (INEGI data)", date: 2026-02, tier: 3}
+      - {url: "https://www.everycrsreport.com/files/2026-07-31_IF11175_e32014361d44bf632e56a0b91d09b051cf947179.html", title: "U.S.-Mexico Trade Relations (CRS IF11175)", publisher: "Congressional Research Service", date: 2026-07-31, tier: 1}
+      - {url: "https://www.freightwaves.com/news/us-mexico-trade-hits-new-high-of-872b-in-2025", title: "US-Mexico trade hits new high of $872B in 2025", publisher: "FreightWaves", date: 2026-02, tier: 3}
+
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    summary: "Mexico imported USD 129.8bn from China in 2024 and exported USD 9.9bn, a record deficit of USD 119.86bn (INEGI via Fundacion Andres Bello); the deficit was USD 57.54bn in the first half of 2025. Intermediate goods were 76.8% of total Mexican imports in Jan-Jul 2025, so most of the flow is inputs for export manufacturing. Full-year 2025 China figures and China's share of Mexican imports were not found."
+    value: 129795
+    unit: usd_m_imports_from_china_2024
+    since: 2024
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.fundacionandresbello.org/?p=14593", title: "Mexico records trade deficit of nearly USD 120 billion with China", publisher: "Fundacion Andres Bello (INEGI data)", date: 2025-07-23, tier: 3}
+      - {url: "https://mexicobusiness.news/trade-and-investment/news/mexico-sets-us66484-billion-export-record-2025", title: "Mexico Sets US$664.84 Billion Export Record in 2025", publisher: "Mexico Business News (INEGI data)", date: 2026-02, tier: 3}
+
+  - to: USA
+    layer: dependency
+    type: investment
+    summary: "The United States was the largest source of foreign direct investment in Mexico in 2025 with USD 15.877bn, 38.8% of the record total of USD 40.871bn (Secretaria de Economia, +10.8% on 2024); 67.7% of the total was reinvested profits, new investment 18% and intercompany accounts 14.3%, and the fourth quarter was a net outflow of USD 5.026bn. Bloomberg Linea notes a slowdown in US flows."
+    value: 15877
+    unit: usd_m_fdi_inflow_from_us_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://expansion.mx/economia/2026/02/25/mexico-cierra-2025-con-ied-record-de-40-871-mdd-aunque-tropieza-al-final", title: "Mexico closes 2025 with a record FDI of USD 40.871bn though it stumbles at the end", title_original: "Mexico cierra 2025 con IED record de 40,871 mdd aunque tropieza al final", publisher: "Expansion (Mexico)", date: 2026-02-25, tier: 3, lang: es}
+      - {url: "https://www.bloomberglinea.com/latinoamerica/mexico/inversion-extranjera-en-mexico-anota-record-en-2025-aun-con-desaceleracion-de-flujos-de-eeuu/", title: "Foreign investment in Mexico sets a record in 2025 despite slowing US flows", title_original: "Inversion extranjera en Mexico anota record en 2025 aun con desaceleracion de flujos de EEUU", publisher: "Bloomberg Linea", date: 2026-02, tier: 3, lang: es}
+
+  - to: ESP
+    layer: dependency
+    type: investment
+    summary: "Spain was the second investor in Mexico in 2025 with USD 4.431bn, 10.8% of the record FDI total of USD 40.871bn (Secretaria de Economia, via Expansion and press summaries)."
+    value: 4431
+    unit: usd_m_fdi_inflow_from_spain_2025
+    since: 2025
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://expansion.mx/economia/2026/02/25/mexico-cierra-2025-con-ied-record-de-40-871-mdd-aunque-tropieza-al-final", title: "Mexico closes 2025 with a record FDI of USD 40.871bn though it stumbles at the end", title_original: "Mexico cierra 2025 con IED record de 40,871 mdd aunque tropieza al final", publisher: "Expansion (Mexico)", date: 2026-02-25, tier: 3, lang: es}
+      - {url: "https://www.unotv.com/negocios/mexico-rompe-record-de-inversion-extranjera-directa-durante-el-2025/", title: "Mexico breaks the record for foreign direct investment in 2025", title_original: "Mexico rompe record de inversion extranjera directa durante el 2025", publisher: "UnoTV", date: 2026-02, tier: 3, lang: es}
+
+  - to: USA
+    layer: dependency
+    type: remittances
+    summary: "Since 1 Jan 2026 the United States levies a 1% federal tax on remittances sent in cash, money orders and cashier's checks, with transfers funded from bank accounts or by debit and credit cards exempt (BBVA Research); the rate is well below the 3.5% and 5% first discussed, and Western Union estimated a fall of about 1.6% in flows. BBVA had projected 2025 remittances at USD 61.7bn (-4.7%); Banxico's outcome was USD 61.791bn (-4.6%). Banxico's 2026 first-half figures were not found."
+    value: 1
+    unit: pct_us_tax_on_cash_remittances_from_2026
+    since: 2026-01-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.bbvaresearch.com/en/publicaciones/mexico-2026-begins-with-new-remittance-tax/", title: "Mexico: 2026 begins with new remittance tax", publisher: "BBVA Research", date: 2026-01, tier: 2}
+      - {url: "https://www.banxico.org.mx/publicaciones-y-prensa/remesas/%7BED06F2CB-06BA-2EC6-D145-73FF4579BADA%7D.pdf", title: "Information on remittance income and outflows, December 2025", publisher: "Banco de Mexico", date: 2026-02-03, tier: 1, lang: es}
+
+  - to: BRA
+    layer: dependency
+    type: trade_share
+    summary: "Two-way trade between Brazil and Mexico was USD 16.4bn in 2023 (Mexican economy ministry, Data Mexico), small beside the US track of USD 872.8bn. The frame is the ACE 53 preferential agreement of 2002; a free trade agreement has been discussed for years. One report says Brazil received Mercosur authorisation in December 2025 to negotiate directly with Mexico and another that Sheinbaum ruled out an FTA in August 2025 (search-result summaries, not reconciled). Mirror of the BRA row. Foreign Secretary Roberto Velasco visited Brasilia in August 2026."
+    value: 16.4
+    unit: usd_bn_two_way_trade_2023
+    since: 2023
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.economia.gob.mx/datamexico/es/profile/country/brasil", title: "Data Mexico - Brazil (bilateral trade profile)", title_original: "Data Mexico - Brasil", publisher: "Secretaria de Economia (Data Mexico)", date: 2023, tier: 1, lang: es}
+      - {url: "https://heraldodemexico.com.mx/nacional/2026/8/8/concluye-visita-de-roberto-velasco-brasil-865252.html", title: "Roberto Velasco concludes his visit to Brazil", title_original: "Concluye visita de Roberto Velasco a Brasil", publisher: "Heraldo de Mexico", date: 2026-08-08, tier: 3, lang: es}
+
+  - to: DEU
+    layer: dependency
+    type: investment
+    summary: "More than 2,000 German companies are active in Mexico, many with a presence of over a century, and Volkswagen and Audi run large plants there (BDI, the German industry federation); Volkswagen Puebla is reported to be considering layoffs (undated report, not cited)."
+    value: 2000
+    unit: german_companies_active_in_mexico_at_least
+    since: 2025
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://bdi.eu/en/articles/internationales/mexico-and-germany-unlocking-the-potential-of-a-stronger-partnership", title: "Mexico and Germany - unlocking the potential of a stronger partnership", publisher: "Federation of German Industries (BDI)", date: 2025, tier: 3}
+
+  - to: JPN
+    layer: dependency
+    type: investment
+    summary: "Japanese investment in Mexico reached a record USD 4.29bn in 2024 (+44.7%), after USD 2.96bn in 2023 and USD 2.21bn in 2022 (Mexico Business News, 31 Oct 2025). Toyota, Honda, Nissan and Mazda build cars in Mexico for export to the US; Toyota is moving Tacoma production to Texas over four years and Nissan closed its Morelos plant."
+    value: 4290
+    unit: usd_m_japanese_fdi_in_mexico_2024
+    since: 2024
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://mexicobusiness.news/trade-and-investment/news/japan-reaffirms-commitment-mexico-despite-stronger-us-ties", title: "Japan Reaffirms Commitment to Mexico Despite Stronger US Ties", publisher: "Mexico Business News", date: 2025-10-31, tier: 3}
+      - {url: "https://asianews.network/?p=187211", title: "Japanese companies with production bases in Mexico, Canada concerned about U.S. tariffs' impact", publisher: "Asia News Network", date: 2025, tier: 3}
+
+  # action
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "On 3 Feb 2025, after a call with Trump, Sheinbaum agreed to send 10,000 National Guard troops to the northern border against fentanyl and illegal migration and the US paused the 25% tariffs for a month; about 1,650 troops were sent to Ciudad Juarez and 1,949 to Tijuana at the start, and the first arrived in Ciudad Juarez on 4 Feb. The US promised to work on stopping the flow of high-powered weapons into Mexico."
+    since: 2025-02-03
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.adn.com/nation-world/2025/02/03/trump-pauses-tariffs-on-mexico-as-president-sheinbaum-agrees-to-send-troops-to-border/", title: "Trump pauses tariffs on Mexico as President Sheinbaum agrees to send troops to border", publisher: "Anchorage Daily News (AP)", date: 2025-02-03, tier: 3}
+      - {url: "https://www.fox26houston.com/news/mexico-troops-us-border", title: "Mexico deploys first troops at US border near El Paso", publisher: "Fox 26 Houston", date: 2025-02-04, tier: 3}
+
+  - to: USA
+    layer: action
+    type: sanction
+    summary: "The US tariff regime on Mexico as of Oct 2026: the 25% IEEPA tariff on non-USMCA goods (4 Mar 2025) was struck down by the Supreme Court on 20 Feb 2026 (6-3, Learning Resources v. Trump); a 10% Section 122 surcharge ran from 24 Feb for 150 days; a 10% Section 301 tariff, announced 23 Jul 2026, applies to non-preferential Mexican goods from 24 Jul 2026 (the Mexican government says it replaces and does not add to the Section 122 duty); goods that qualify under the USMCA are exempt; Section 232 duties of 25% to 50% on steel, aluminium, vehicles and parts are outside the Section 301 action and continue. A US refund of IEEPA duties was undecided. Supersedes the 25% description in the fentanyl-tariff wording of the USA card."
+    since: 2025-03-04
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.wilmerhale.com/en/sitecore/content/whlaunch/home/research/news-publications/20260220-supreme-court-strikes-down-ieepa-tariffs-what-now", title: "Supreme Court Strikes Down IEEPA Tariffs - What Now?", publisher: "WilmerHale", date: 2026-02-20, tier: 3}
+      - {url: "https://www.hklaw.com/en/insights/publications/2026/07/mexico-mantiene-acceso-preferencial-bajo-el-tmec", title: "Mexico keeps preferential access under the USMCA (Section 301 tariff of 10% from 24 July 2026)", title_original: "Mexico mantiene acceso preferencial bajo el T-MEC", publisher: "Holland & Knight", date: 2026-07-27, tier: 3, lang: es}
+      - {url: "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ambassador-greer-issues-statement-usmca-joint-review", title: "Ambassador Greer issues statement on the USMCA joint review (the US does not agree to extend)", publisher: "Office of the United States Trade Representative", date: 2026-07-01, tier: 1}
+
+  - to: USA
+    layer: action
+    type: incident
+    summary: "The US State Department designated six Mexican criminal groups as foreign terrorist organisations (Sinaloa, CJNG, Cartel del Noreste, Gulf, La Nueva Familia Michoacana, Carteles Unidos; signed 6 Feb 2025, in force on Federal Register publication 20 Feb 2025), plus Tren de Aragua and MS-13; two more Mexican cartels were added in July 2026 (AP). Sheinbaum answered that Mexico would never tolerate an invasion of its sovereignty and denies that the cartels pursue political aims. On 3 Jan 2026 Trump said after the Venezuela operation that 'something's going to have to be done' about the cartels but called Sheinbaum 'a good woman'."
+    since: 2025-02-20
+    until: null
+    last_verified: 2026-10-16
+    confidence: A
+    sources:
+      - {url: "https://www.govinfo.gov/content/pkg/FR-2025-02-20/html/2025-02873.htm", title: "Foreign Terrorist Organization designations (Federal Register, 20 Feb 2025)", publisher: "US Department of State / Federal Register", date: 2025-02-20, tier: 1}
+      - {url: "https://abcnews.com/amp/US/wireStory/us-designates-2-new-mexican-cartels-foreign-terrorist-134815485", title: "US designates 2 new Mexican cartels as foreign terrorist organizations", publisher: "ABC News (AP wire)", date: 2026-07-16, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2026/1/3/world-reacts-to-reported-us-bombing-of-venezuela", title: "World reacts to US bombing of Venezuela, 'capture' of Maduro", publisher: "Al Jazeera", date: 2026-01-03, tier: 3}
+
+  - to: USA
+    layer: action
+    type: incident
+    summary: "CNN reported on 12 May 2026 that the CIA had escalated its secret war on the cartels with deadly operations inside Mexico; Sheinbaum had said earlier that CIA drone flights were requested by Mexico, and Mexico's position is that it operates in Mexico and no one else. On 15 Jul 2026 Sheinbaum rejected a US claim that the Mexican government is linked to cartels (Al Jazeera). Mexico's reading of the CIA reports as a breach is stated in the stance note, not by a source read here."
+    since: 2026-05-12
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://lite.cnn.com/2026/05/12/politics/cia-drug-cartels-deadly-operations-mexico", title: "Exclusive: CIA escalates secret war on cartels with deadly operations inside Mexico", publisher: "CNN", date: 2026-05-12, tier: 3}
+      - {url: "https://www.aljazeera.com/amp/news/2026/7/15/sheinbaum-rejects-us-claim-that-mexicos-government-is-linked-to-cartels", title: "Sheinbaum rejects US claim that Mexico's government is linked to cartels", publisher: "Al Jazeera", date: 2026-07-15, tier: 3}
+
+  - to: nsa-cartels
+    layer: action
+    type: incident
+    summary: "On 22 Feb 2026 Mexican special forces, with support from the air force and National Guard, killed CJNG leader Nemesio 'El Mencho' Oseguera in Tapalpa, Jalisco; the White House confirmed intelligence support, the defence secretary said Mexico benefited from US agencies, and Sheinbaum said no US troops took part. CJNG retaliated with burned vehicles and road blocks in Jalisco and other states and the US and Canadian embassies issued shelter-in-place warnings. Sheinbaum told Trump the next day that coordination was going 'very well'. An OSAC assessment of 9 Oct 2026 looks at whether the cartel changed."
+    since: 2026-02-22
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.tribuneindia.com/news/world/white-house-confirms-providing-intelligence-support-to-mexican-govt-for-operation-that-killed-cartel-leader-el-mencho/", title: "White House confirms providing intelligence support to Mexican govt for operation that killed cartel leader El Mencho", publisher: "Tribune India (wire)", date: 2026-02-23, tier: 3}
+      - {url: "https://www.hstoday.us/featured/el-mencho-killed-inside-the-mexican-military-operation-u-s-intelligence-role-and-what-it-means-for-cjng-and-the-u-s-fentanyl-crisis/", title: "El Mencho killed: inside the Mexican military operation, US intelligence role and what it means for CJNG and the US fentanyl crisis", publisher: "Homeland Security Today", date: 2026-02, tier: 3}
+
+  - to: USA
+    layer: action
+    type: incident
+    summary: "On 12 Oct 2026 the Financial Times reported that Trump raised energy deals with Sheinbaum, pushing Mexico to sign deals with US companies, which caused alarm in Mexico City; the trade talks are described as stalled. Headline only, article not read."
+    since: 2026-10-12
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://mexiconewsdaily.com/news/", title: "Mexico News Daily news index, headline of 12 Oct 2026: FT - Trump raised energy deals with Sheinbaum amid stalled trade talks", publisher: "Mexico News Daily", date: 2026-10-12, tier: 3}
+
+  - to: CHN
+    layer: action
+    type: incident
+    summary: "China's Commerce Ministry opened a trade-barrier investigation into Mexico in September 2025, after Mexico announced tariffs of up to 50% on Chinese cars and other goods; the inquiry, which could last up to six months, covers tariffs and other trade and investment restrictions. China's embassy in Mexico called the move coercive and warned of necessary measures, and Beijing opened anti-dumping inquiries into pecans from Mexico and the US. The outcome of the investigation and any Chinese retaliation after Jan 2026 were not found."
+    since: 2025-09
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://news.bgov.com/tariff-news/china-launches-trade-barrier-probe-into-mexico-over-tariff-plan", title: "China launches trade barrier probe into Mexico over tariff plan", publisher: "Bloomberg Government", date: 2025-09, tier: 3}
+      - {url: "https://www.automotiveworld.com/analysis/china-probes-mexicos-planned-50-car-import-tariffs/", title: "China probes Mexico's planned 50% car import tariffs", publisher: "Automotive World", date: 2025-09, tier: 3}
+
+  - to: KOR
+    layer: action
+    type: sanction
+    summary: "Mexico's tariff law, in force 1 Jan 2026, applies up to 50% (mostly 35%) to imports from countries without a trade agreement and names South Korea; Seoul asked for exemptions for Hyundai, Kia, Samsung and LG, whose Mexican plants export to the US under the USMCA, and Foreign Minister Cho Hyun welcomed a suspension in Nov 2025 that the December vote overtook. The two have agreed a joint study toward a trade agreement; a StockHub summary of 27 Sep 2026 adds a supply-chain joint committee (secondary). Recorded as 'sanction' as for the China row, a vocabulary question for Davide."
+    since: 2026-01-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://mexicobusiness.news/aerospace/news/south-korea-asks-mexico-exemptions-ahead-2026-tariffs", title: "South Korea Asks Mexico for Exemptions Ahead of 2026 Tariffs", publisher: "Mexico Business News", date: 2025-12, tier: 3}
+      - {url: "https://koreapro.org/2025/12/south-korea-faces-35-tariff-wall-as-mexico-targets-asian-supply-chains/", title: "South Korea faces 35% tariff wall as Mexico targets Asian supply chains", publisher: "Korea Pro", date: 2025-12, tier: 3}
+
+  - to: PER
+    layer: action
+    type: incident
+    summary: "Peru severed diplomatic relations on 3 Nov 2025 after Mexico granted asylum in its Lima embassy to former prime minister Betssy Chavez, accused of rebellion over Castillo's 2022 attempt to dissolve Congress and facing up to 25 years; foreign minister De Zela called the asylum an unfriendly act and the presidency accused Mexico of repeated interference. Sheinbaum called the break disproportionate and said Mexico acted in line with international law; she said later that Mexico had not severed ties and Peru had started the break."
+    since: 2025-11-03
+    until: 2026-08-07
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://andina.pe/ingles/noticia-peru-announces-breaking-ties-with-mexico-after-asylum-granted-to-betssy-chavez-1050642.aspx", title: "Peru announces breaking ties with Mexico after asylum granted to Betssy Chavez", publisher: "Andina (Peruvian state agency, official statement)", date: 2025-11-04, tier: 1}
+      - {url: "https://www.cp24.com/news/world/2025/11/04/peru-breaks-diplomatic-relations-with-mexico-over-asylum-claim-of-former-prime-minister/", title: "Peru breaks diplomatic relations with Mexico over asylum claim of former prime minister", publisher: "CP24 (wire)", date: 2025-11-04, tier: 3}
+
+  - to: PER
+    layer: action
+    type: agreement
+    summary: "Peru and Mexico resumed diplomatic relations on 7 Aug 2026 under President Keiko Fujimori, who had said in July she would restore them; Peru granted safe conduct to Betssy Chavez to travel to Mexico under the 1954 Caracas Convention and reserved the right to request her extradition, and the joint statement gave no timeline. Mexico's Senate ratified Lydia Antonio de la Garza as ambassador to Peru on 13 Oct 2026; the two had no ambassadors since early 2023 (Reuters). Peru's ambassador to Mexico is unconfirmed."
+    since: 2026-08-07
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/08/07/peru-and-mexico-resume-diplomatic-relations", title: "Peru and Mexico resume diplomatic relations after dispute over leftist politician", publisher: "Reuters (via Internazionale)", date: 2026-08-07, tier: 3}
+      - {url: "https://www.cronica.com.mx/nacional/2026/10/13/senado-ratifica-a-lydia-antonio-de-la-garza-como-embajadora-en-peru-se-reestablecen-relaciones-tras-ruptura/", title: "Senate ratifies Lydia Antonio de la Garza as ambassador to Peru, relations re-established after the rupture", title_original: "Senado ratifica a Lydia Antonio de la Garza como embajadora en Peru; se reestablecen relaciones tras ruptura", publisher: "Cronica (Mexico)", date: 2026-10-13, tier: 3, lang: es}
+      - {url: "https://caretas.pe/?p=825862", title: "Peru and Mexico re-establish diplomatic relations after months of tension", title_original: "Peru y Mexico restablecen relaciones diplomaticas tras meses de tension", publisher: "Caretas", date: 2026-08-07, tier: 3, lang: es}
+
+  - to: ECU
+    layer: action
+    type: incident
+    summary: "Ecuadorian police entered the Mexican embassy in Quito to arrest former vice-president Jorge Glas, and Mexico severed diplomatic relations on 5 April 2024 (mirror of the ECU row, read from the Mexican side)."
+    since: 2024-04-05
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.cnn.com/2024/04/06/americas/ecuador-vice-president-arrest-mexico-embassy-diplomatic-tensions-intl-hnk/index.html", title: "'Outrage against international law': Mexico breaks diplomatic ties with Ecuador over embassy raid", publisher: "CNN", date: 2024-04-06, tier: 3}
+
+  - to: GTM
+    layer: action
+    type: incident
+    summary: "Mexican deportees transited Guatemala: President Arevalo confirmed about 2,300 Mexicans deported from the US reached Guatemala in 2026, held under 24 hours; Mexico's foreign ministry opposed the practice and a US spokesperson called them people in transit (mirror of the GTM row, read from the Mexican side)."
+    since: 2026-08
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://kjzz.org/fronteras-desk/2026-08-20/guatemala-confirms-more-than-2-000-mexican-nationals-were-deported-there-this-year", title: "Guatemala confirms more than 2,000 Mexican nationals were deported there this year (search summary; article not read in full)", publisher: "KJZZ (Fronteras desk)", date: 2026-08-20, tier: 3}
+
+  - to: VEN
+    layer: action
+    type: incident
+    summary: "On 3 Jan 2026, after the US bombing of Caracas and capture of Maduro, Mexico's foreign ministry called the intervention a clear violation of international law, Sheinbaum posted Article 2(4) of the UN Charter and said Mexico categorically rejects intervention in the internal affairs of other countries, and Foreign Secretary De la Fuente said the UN had proved ineffective against hegemonic powers. Trump said the raid was not a warning to Mexico."
+    since: 2026-01-03
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://aa.com.tr/en/americas/mexican-president-condemns-us-military-intervention-in-venezuela/3790911", title: "Mexican president condemns US military intervention in Venezuela", publisher: "Anadolu Agency", date: 2026-01-03, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2026/1/3/world-reacts-to-reported-us-bombing-of-venezuela", title: "World reacts to US bombing of Venezuela, 'capture' of Maduro", publisher: "Al Jazeera", date: 2026-01-03, tier: 3}
+
+  - to: ISR
+    layer: action
+    type: incident
+    summary: "Sheinbaum demanded in Oct 2025 the immediate release and repatriation of six Mexicans held at Ashdod after the Gaza-bound flotilla; the foreign ministry sent four diplomatic notes and Israel's foreign minister called the flotilla a provocation. In May 2026 the ministry again acted for Mexicans on the Global Sumud Flotilla intercepted off Crete (177 detained, one Mexican home on 2 May) and demanded consular access and respect for their integrity."
+    since: 2025-10
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://zetatijuana.com/2025/10/sheinbaum-exige-a-israel-repatriacion-de-6-mexicanos-detenidos-en-flotilla-que-iba-a-gaza/", title: "Sheinbaum demands Israel repatriate 6 Mexicans detained on Gaza-bound flotilla", title_original: "Sheinbaum exige a Israel repatriacion de 6 mexicanos detenidos en flotilla que iba a Gaza", publisher: "Zeta Tijuana", date: 2025-10, tier: 3, lang: es}
+      - {url: "https://aa.com.tr/en/americas/mexico-reaffirms-protection-of-nationals-aboard-gaza-bound-aid-flotilla/3932085", title: "Mexico reaffirms protection of nationals aboard Gaza-bound aid flotilla", publisher: "Anadolu Agency", date: 2026-05-09, tier: 3}
+
+  - to: ARG
+    layer: action
+    type: incident
+    summary: "On Sunday 26 Jul 2026 Milei said in an interview that Mexico, Brazil and the US Democratic Party designed and funded a campaign to defame Argentina during the World Cup, without evidence; on 27 Jul Sheinbaum said at her morning conference that it was false and that Mexico does not meddle in other countries' affairs. Brazil recalled its ambassador from Buenos Aires for consultations after Milei's insults to Lula."
+    since: 2026-07-26
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://buenosairesherald.com/world/international-relations/claudia-sheinbaum-rejects-mileis-claim-on-mexico-funding-anti-argentina-campaign", title: "Claudia Sheinbaum rejects Milei's claim on Mexico financing 'anti-Argentina campaign'", publisher: "Buenos Aires Herald", date: 2026-07-27, tier: 3}
+      - {url: "https://www.elfinanciero.com.mx/nacional/2026/07/27/mexico-no-financia-campana-contra-argentina-afirma-sheinbaum/", title: "Mexico does not finance a campaign against Argentina, says Sheinbaum", title_original: "Mexico no financia campana contra Argentina, afirma Sheinbaum", publisher: "El Financiero", date: 2026-07-27, tier: 3, lang: es}
+
+  - to: COL
+    layer: action
+    type: agreement
+    summary: "On 29 Apr 2026 the deputy foreign ministers of Colombia and Mexico agreed to reactivate dialogue bodies including the High-Level Security Group, citing shared positions on democracy, multilateralism and Latin American integration. In late June 2026 President-elect De la Espriella called the Mexican cartels a 'military objective', Mexico asked him to take his own part in the fight and Sheinbaum answered that each country handles its share (N+, Cronica, 26 Jun). On 7 Aug 2026 he was inaugurated; Sheinbaum did not attend and sent an official delegation (an undersecretary, per the COL card). Bilateral trade was USD 2.005bn in the 2026 period reported (Mexican exports 1.241bn, imports from Colombia 764m; UnoTV)."
+    since: 2026-04-29
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://cancilleria.gov.co/sala-de-prensa/noticias/colombia-y-mexico-reactivan-agenda-bilateral-y-refuerzan-coordinacion-regional-en-seguridad-migracion-y-cooperacion", title: "Colombia and Mexico reactivate the bilateral agenda and reinforce regional coordination on security, migration and cooperation", title_original: "Colombia y Mexico reactivan agenda bilateral y refuerzan coordinacion regional en seguridad, migracion y cooperacion", publisher: "Ministry of Foreign Affairs of Colombia", date: 2026-04-29, tier: 1, lang: es}
+      - {url: "https://forbes.com.mx/sheinbaum-no-ira-a-investidura-del-presidente-de-colombia-de-la-espriella-enviara-representacion-oficial/", title: "Sheinbaum will not attend the inauguration of Colombia's president De la Espriella and will send an official delegation", title_original: "Sheinbaum no ira a investidura del presidente de Colombia, De la Espriella; enviara representacion oficial", publisher: "Forbes Mexico", date: 2026-08, tier: 3, lang: es}
+      - {url: "https://www.cronica.com.mx/nacional/2026/06/26/mexico-pide-a-de-la-espriella-involucrarse-en-la-lucha-contra-el-narcotrafico/", title: "Mexico asks De la Espriella to get involved in the fight against drug trafficking", title_original: "Mexico pide a De la Espriella involucrarse en la lucha contra el narcotrafico", publisher: "Cronica (Mexico)", date: 2026-06-26, tier: 3, lang: es}
+      - {url: "https://www.unotv.com/negocios/mexico-y-colombia-2005-mdd-en-comercio-durante-2026-estos-son-sus-principales-productos/", title: "Mexico and Colombia: USD 2.005bn in trade during 2026 and their main products", title_original: "Mexico y Colombia: 2,005 mdd en comercio durante 2026, estos son sus principales productos", publisher: "UnoTV", date: 2026, tier: 3, lang: es}
+
+  - to: HND
+    layer: action
+    type: agreement
+    summary: "In late Nov 2025 Presidents Sheinbaum and Xiomara Castro met in Mexico City (energy, youth programmes, migration) and Honduras' foreign minister said Honduras would renew its agreement with Pemex for oil exploration and technical cooperation. Castro's successor Asfura, backed by Trump, said through people close to him that he would work with Mexico despite a different ideology; the Pemex agreements' status under him was not found."
+    since: 2025-11
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.revistaeyn.com/centroamericaymundo/acuerdos-logrados-entre-mexico-y-honduras-tras-encuentros-de-presidentas-EJ28473250", title: "Agreements reached between Mexico and Honduras after the presidents' meetings", title_original: "Acuerdos logrados entre Mexico y Honduras tras encuentros de presidentas", publisher: "Revista EyN", date: 2025-11, tier: 3, lang: es}
+      - {url: "https://www.milenio.com/internacional/asfura-trabajara-con-mexico-pese-a-ideologia-distinta-a-sheinbaum", title: "Asfura will work with Mexico despite a different ideology from Sheinbaum", title_original: "Asfura trabajara con Mexico pese a ideologia distinta a Sheinbaum", publisher: "Milenio", date: 2025-12, tier: 3, lang: es}
+
+  - to: GBR
+    layer: action
+    type: agreement
+    summary: "The UK and Mexico launched negotiations in 2022 for a free trade agreement building on the UK-Mexico Trade Continuity Agreement, aiming at a new agreement within two years; on 22 Jun 2026 the UK Trade Minister wrote to Parliament about UK-Mexico trade under the CPTPP, which both belong to. Whether the FTA was concluded is not established in the sources read."
+    since: 2022
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.gov.uk/government/news/joint-statement-on-the-launch-of-the-negotiations-for-a-free-trade-agreement-between-the-uk-and-mexico", title: "Joint statement on the launch of the negotiations for a free trade agreement between the UK and Mexico", publisher: "UK Government", date: 2022, tier: 1}
+      - {url: "https://api.parliament.uk/committees/publications/53908", title: "Letter from the Minister for Trade relating to UK-Mexico trade under CPTPP, 22 June 2026 (title only read)", publisher: "UK Parliament", date: 2026-06-22, tier: 1}
+
+  - to: RUS
+    layer: action
+    type: visit
+    summary: "Mexico invited Russia, like every state it has relations with, to Sheinbaum's inauguration of 1 Oct 2024, which drew criticism because Mexico is a party to the Rome Statute; Putin did not attend and sent an envoy. Sheinbaum had declined Zelensky's invitation to Ukraine as president-elect. Mexico condemns the invasion but has not joined Western sanctions."
+    since: 2024-10-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://zetatijuana.com/2024/09/putin-no-asistira-a-la-toma-de-protesta-de-sheinbaum-como-presidenta-de-mexico/", title: "Putin will not attend Sheinbaum's inauguration as president of Mexico", title_original: "Putin no asistira a la toma de protesta de Sheinbaum como presidenta de Mexico", publisher: "Zeta Tijuana", date: 2024-09, tier: 3, lang: es}
+      - {url: "https://intellinews.com/mexico-s-president-elect-sheinbaum-turns-down-zelensky-s-invitation-to-ukraine-344262", title: "Mexico's President-elect Sheinbaum turns down Zelensky's invitation to Ukraine", publisher: "bne IntelliNews", date: 2024, tier: 3}

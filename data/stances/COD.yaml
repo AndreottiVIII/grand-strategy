@@ -1,138 +1,316 @@
 actor: COD
 stances:
-  # ---------- the war in the Kivus ----------
-  - toward: RWA
-    grade: rival
-    trend: stable
-    bond: grievance
-    since: "2025-01"
-    last_verified: 2026-10-16
-    confidence: B
-    note: "Rival, not adversary, read from Kinshasa's side. For adversary: the RDF fights inside the DRC alongside AFC/M23 (UN experts: 3,000-4,000 troops in 2024), took Goma and Bukavu in January-February 2025 with the rebels, the US sanctioned Minister Kabarebe (20 Feb 2025) and the RDF (2 Mar 2026), and the Congolese government calls Rwanda's presence an invasion. Against: Kinshasa's declared aim is the Rwandan withdrawal and the Washington framework, not the end of the Rwandan state; it signed the Washington framework (27 Jun 2025) and the Accords (4 Dec 2025) with Kigali, and its ceasefire complaints go to the Washington mechanism, not to a war aim. The same reading the RWA card gives from the other side, with the same sources. Bond grievance: the wars of 1996-2003 and the 1994 refugee camps. State of play, 14 Oct 2026: the US asked Rwanda to withdraw and end its M23 support."
-    sources:
-      - {url: "https://www.crisisgroup.org/africa/democratic-republic-congo-rwanda/320-m23-offensive-elusive-peace-great-lakes", title: "The M23 Offensive: Elusive Peace in the Great Lakes (Africa Report N°320)", publisher: "International Crisis Group", date: "2025-12-19", tier: 2}
-      - {url: "https://www.aljazeera.com/news/2025/7/18/un-experts-cast-blame-on-rwanda-and-uganda-what-are-they-doing-in-drc", title: "UN experts cast blame on Rwanda and Uganda. What are they doing in DRC?", publisher: "Al Jazeera", date: "2025-07-18", tier: 3}
-      - {url: "https://home.treasury.gov/news/press-releases/sb0022", title: "Treasury Sanctions Rwandan Minister and Senior Militant for Conflict in the Democratic Republic of the Congo", publisher: "US Department of the Treasury", date: "2025-02-20", tier: 1}
-      - {url: "https://www.ungeneva.org/en/news-media/news/2026/02/115581/m23-rebels-un-sees-progress-talks-warns-violence-persists", title: "M23 rebels: UN sees progress in talks but warns violence persists", publisher: "UN Geneva (UNOG)", date: "2026-02-05", tier: 1}
-      - {url: "https://peopledaily.digital/news/us-urges-rwanda-to-withdraw-troops-from-dr-congo-end-m23-support", title: "US urges Rwanda to withdraw troops from DR Congo, end M23 support", publisher: "People Daily (Kenya)", date: "2026-10-14", tier: 3}
-
-  - toward: nsa-m23
-    grade: adversary
-    trend: stable
-    bond: grievance
-    since: "2025-01"
-    last_verified: 2026-10-16
-    confidence: B
-    note: "Adversary in the mortal sense, read from Kinshasa's side, and the only adversary in this file. The test of the ontology is met on both sides: the AFC's political leadership openly aims to topple the government in Kinshasa (its president Corneille Nangaa: 'our objective is neither Goma nor Bukavu but Kinshasa'), and Kinshasa's court sentenced Nangaa to death in absentia in August 2025 (Crisis Group). The government's aim is the rebels' defeat and disarmament, not a settlement that keeps them. Confidence B: the aim is stated by the AFC and reported by Crisis Group and Reuters, while the Congolese aim is read from the Doha framework and the court sentence. Bond grievance: the M23 is the armed face of the 2009 CNDP integration deal that Kinshasa did not honour (our reading, not sourced here). Trend stable: the Doha roadmap of August 2026 has not ended the fighting."
-    sources:
-      - {url: "https://www.crisisgroup.org/africa/democratic-republic-congo-rwanda/320-m23-offensive-elusive-peace-great-lakes", title: "The M23 Offensive: Elusive Peace in the Great Lakes (Africa Report N°320)", publisher: "International Crisis Group", date: "2025-12-19", tier: 2}
-      - {url: "https://www.thenewhumanitarian.org/analysis/2025/03/20/after-fall-goma-and-bukavu-where-dr-congos-m23-war-headed", title: "After the Fall of Goma and Bukavu, Where Is DR Congo's M23 War Headed?", publisher: "The New Humanitarian", date: "2025-03-20", tier: 3}
-      - {url: "https://ewn.co.za/2025/11/15/m23-dr-congo-ink-fresh-roadmap-to-peace-in-doha", title: "M23, DR Congo ink fresh roadmap to peace in Doha", publisher: "EWN (South Africa)", date: "2025-11-15", tier: 3}
-      - {url: "https://www.ungeneva.org/en/news-media/news/2026/02/115581/m23-rebels-un-sees-progress-talks-warns-violence-persists", title: "M23 rebels: UN sees progress in talks but warns violence persists", publisher: "UN Geneva (UNOG)", date: "2026-02-05", tier: 1}
-
-  - toward: UGA
-    grade: reluctant_partner
-    trend: stable
-    bond: grievance
-    since: "2021-11"
-    last_verified: 2026-10-16
-    confidence: B
-    note: "Cooperates out of necessity while resisting alignment, read from Kinshasa's side. Necessity: Operation Shujaa, the joint UPDF-FARDC campaign against the ADF, which the Congolese government accepted from November 2021. Resistance: the ICJ judgment of 9 February 2022 ordered Uganda to pay USD 325m for its 1998-2003 occupation (the first instalment was paid in September 2022), and the UN experts say Ugandan units shielded the M23 (July 2025; Uganda denies it). The UGA card reads the same pair from the other side with the same sources. Bond grievance: the ICJ case and the occupation. Later instalments, due from 1 September 2026, are not verified."
-    sources:
-      - {url: "https://ungeneva.org/en/news-media/news/2022/02/71483/uns-top-court-orders-uganda-pay-325-million-dr-congo", title: "UN top court orders Uganda pay 325 million DR Congo", publisher: "UN Geneva (UNOG)", date: "2022-02", tier: 1}
-      - {url: "https://www.aljazeera.com/news/2022/9/12/uganda-pays-first-installment-of-325m-war-reparations-to-drc", title: "Uganda pays first installment of $325m war reparations to DRC", publisher: "Al Jazeera", date: "2022-09-12", tier: 3}
-      - {url: "https://www.monitor.co.ug/uganda/special-reports/gains-losses-as-operation-shujja-marks-2-years--4456670", title: "Gains, losses as Operation Shujaa marks 2 years", publisher: "Daily Monitor (Uganda)", date: "2023-11", tier: 3}
-      - {url: "https://www.aljazeera.com/news/2025/7/18/un-experts-cast-blame-on-rwanda-and-uganda-what-are-they-doing-in-drc", title: "UN experts cast blame on Rwanda and Uganda. What are they doing in DRC?", publisher: "Al Jazeera", date: "2025-07-18", tier: 3}
-
-  - toward: BDI
-    grade: ally
-    trend: stable
-    bond: none
-    since: "2025-01"
-    last_verified: 2026-10-16
-    confidence: C
-    note: "Ally in the sense of a de facto military alignment: Burundian troops fight beside the FARDC in South Kivu (Reuters, January 2025), and refugees crossed from the DRC into Burundi after the M23 took Uvira in December 2025. No treaty or guarantee was found and no source uses the word ally, so the grade is our reading (hence C). Mirror: the BDI card reads the pair from Bujumbura's side with the same sources, graded ally on the same reasoning. Bond none: nothing sourced names kinship or affinity. Gap: the 2023 start of the deployment and any 2025-26 withdrawal are not verified."
-    sources:
-      - {url: "https://www.yahoo.com/news/m23-rebels-face-burundian-forces-173819912.html", title: "M23 rebels face Burundian forces", publisher: "Reuters (via Yahoo News)", date: "2025-01-31", tier: 3}
-      - {url: "https://www.aljazeera.com/news/2025/12/19/tens-of-thousands-flee-dr-congo-to-burundi-after-rebel-takeover-of-key-city", title: "Tens of thousands flee DR Congo to Burundi after rebel takeover of key city", publisher: "Al Jazeera", date: "2025-12-19", tier: 3}
-
-  # ---------- the region and the mediators ----------
-  - toward: TZA
-    grade: partner
-    trend: cooling
-    bond: none
-    since: "2025-03"
-    last_verified: 2026-10-16
-    confidence: C
-    note: "Partner, cooling, read from Kinshasa's side (our reading, C). Tanzania's contingent in the SADC mission SAMIDRC was withdrawn in phases from 29 April 2025, after the SADC leaders ended the mandate on 13 March 2025 and the M23 had taken Goma. The SADC withdrawal cools a commitment; it is not a dispute. Not hostile: the DRC is the largest user of the Dar es Salaam transit route, 7.77m tonnes of 14.61m in 2025/26 (about 53%, our arithmetic on Tanzanian figures), and the Dar route is the one Kinshasa's imports rely on. Mirror: the TZA card reads the pair from Dodoma's side with the same sources."
-    sources:
-      - {url: "https://www.dailymaverick.co.za/article/2025-04-29-south-african-and-other-sadc-troops-finally-begin-withdrawal-from-war-torn-drc.md", title: "South African and other SADC troops finally begin withdrawal from war-torn DRC", publisher: "Daily Maverick", date: "2025-04-29", tier: 3}
-      - {url: "https://www.africanews.com/amp/2025/06/13/sadc-peacekeeping-troops-begin-final-phase-of-withdrawal-from-east-drc/", title: "SADC peacekeeping troops begin final phase of withdrawal from east DRC", publisher: "Africanews", date: "2025-06-13", tier: 3}
-      - {url: "https://www.monitor.co.ug/uganda/news/national/uganda-eyes-dar-es-salaam-as-second-route-to-sea-as-tanzania-expands-port-5622310", title: "Uganda eyes Dar es Salaam as second route to sea as Tanzania expands port", publisher: "Daily Monitor (Uganda)", date: "2026", tier: 3}
-
-  - toward: KEN
-    grade: partner
-    trend: cooling
-    bond: none
-    since: "2025-02"
-    last_verified: 2026-10-16
-    confidence: C
-    note: "Partner (EAC co-member) and cooling, read from Kinshasa's side (our reading, C). Kenya's DRC file is the Nairobi process, and it is shrinking: the EAC-SADC summit of February 2025 merged it with the Luanda track, Kenyatta complained that Nairobi had been sidelined, and then Washington and Doha took the lead. Mudavadi welcomed the Qatari-brokered deal in 2025. No quarrel with Kinshasa, only a diminishing role. Mirror: the KEN card reads the pair from Nairobi's side with the same sources."
-    sources:
-      - {url: "https://peopledaily.digital/news/eac-sadc-summit-directs-resumption-of-direct-negotiations-with-drc-m23-rebels-under-merged-luanda-nairobi-process", title: "EAC-SADC Summit directs resumption of direct negotiations with DRC M23 rebels under merged Luanda/Nairobi process", publisher: "People Daily (Kenya)", date: "2025-02", tier: 3}
-      - {url: "https://allafrica.com/stories/202502070033.html", title: "Kenyatta Defends 'Sidelined' Nairobi Peace Process, Urges Fresh Momentum", publisher: "AllAfrica", date: "2025-02-07", tier: 3}
-      - {url: "https://peopledaily.digital/news/mudavadi-hails-drc-m23-peace-deal-brokered-by-qatar", title: "Mudavadi hails DRC-M23 peace deal brokered by Qatar", publisher: "People Daily (Kenya)", date: "2025", tier: 3}
-      - {url: "https://www.securitycouncilreport.org/whatsinblue/2025/02/democratic-republic-of-the-congo-briefing-4.php", title: "Democratic Republic of the Congo: briefing", publisher: "Security Council Report", date: "2025-02", tier: 2}
-
-  - toward: AGO
-    grade: partner
-    trend: warming
-    bond: none
-    since: "2025-03"
-    last_verified: 2026-10-16
-    confidence: B
-    note: "Partner, warming: Angola is the African Union's mediator in the first track and tried to revive its role in 2026. It hosted the first direct Kinshasa-M23 talks in Luanda (March 2025), its president stepped aside as mediator on 24 March 2025 to focus on the AU chair, and Tshisekedi visited Luanda repeatedly in early 2026 to revive the role; Lourenço's ceasefire announced in February 2026 was disputed by the M23. Transactional and diplomatic, with no alignment or guarantee found. Bond none. Mirror: the AGO card is not yet written, so this stance is the first reading of the pair; the Angolan side is a gap."
-    sources:
-      - {url: "https://allafrica.com/stories/202503130017.html", title: "Angola Pushes for Direct Talks Between Kinshasa and M23 in DRC Crisis", publisher: "AllAfrica", date: "2025-03-13", tier: 3}
-      - {url: "https://fr.allafrica.com/stories/202503250215.html", title: "Angola: João Lourenço se désengage de la médiation du processus de Luanda", publisher: "AllAfrica (fr)", date: "2025-03-25", tier: 3, lang: fr}
-      - {url: "https://www.verangola.net/va/en/022026/Politics/47711/Angola-proposes-a-ceasefire-between-the-DRC-government-and-M23-starting-on-February-18th.htm", title: "Angola proposes a ceasefire between the DRC government and M23 starting on February 18th", publisher: "Angola Press (VerAngola)", date: "2026-02", tier: 3}
-      - {url: "https://www.securitycouncilreport.org/monthly-forecast/2026-03/democratic-republic-of-the-congo-33.php", title: "March 2026 Monthly Forecast: Democratic Republic of the Congo", publisher: "Security Council Report", date: "2026-03", tier: 2}
-
-  # ---------- the great powers and the former coloniser ----------
-  - toward: USA
-    grade: partner
-    trend: warming
-    bond: none
-    since: "2025-12-04"
-    last_verified: 2026-10-16
-    confidence: C
-    note: "Partner, warming: the US-DRC strategic partnership signed in Washington on 4 December 2025 ties preferential US access to critical minerals to security and defence cooperation, and the Washington accord with Rwanda was signed the same day. The idea dates from Tshisekedi's February 2025 proposal of resource access for US security. Confidence C: the text of the partnership was not read, the sources are press and analysis, and the implementation has been mixed (the Chemaf purchase was questioned in March 2026). Bond none: pure interest. Mirror: the USA card has no stance toward the DRC; the reading is ours from the press."
-    sources:
-      - {url: "https://allafrica.com/stories/202512040542.html", title: "Congo-Kinshasa: Rwanda's Kagame and Tshisekedi of the DRC sign peace deal", publisher: "AllAfrica", date: "2025-12-04", tier: 3}
-      - {url: "https://www.news24.com/world/analysis-why-minerals-for-security-deals-wont-save-the-drc-20260422-0613", title: "Analysis: why minerals-for-security deals won't save the DRC", publisher: "News24", date: "2026-04-22", tier: 3}
-      - {url: "https://www.theeastafrican.co.ke/tea/news/east-africa/drc-officials-defend-minerals-for-security-us-deals-5293100", title: "DRC officials defend 'minerals-for-security' US deals", publisher: "The EastAfrican", date: "2026", tier: 3}
-
-  - toward: CHN
-    grade: partner
-    trend: stable
-    bond: none
-    since: "2008-04"
-    last_verified: 2026-10-16
-    confidence: B
-    note: "Partner by minerals: the Sicomines minerals-for-infrastructure contract of 2008, renegotiated under Tshisekedi to USD 7bn of Chinese infrastructure (2024). Chinese companies (CMOC, Huayou and others) run most of the cobalt mining in a country that produces over 70% of the world's supply, most of it shipped to China. Kinshasa's US minerals deal of 2025 is a hedge, not an exit: the mines stay. Bond none: interest only. Mirror: the CHN card reads the pair from Beijing's side with the same sources."
-    sources:
-      - {url: "https://eiti.org/blog-post/sicomines-how-eiti-drc-helped-secure-4-billion-additional-revenue", title: "Sicomines: how the EITI in DRC helped secure 4 billion in additional revenue", publisher: "Extractive Industries Transparency Initiative", date: "2024-03-25", tier: 2}
-      - {url: "https://www.scmp.com/news/china/diplomacy/article/3145065/why-china-making-big-play-congolese-cobalt-and-other-critical", title: "Why China is making a big play for Congolese cobalt and other critical minerals", publisher: "South China Morning Post", date: "2021-08-15", tier: 3}
-      - {url: "https://www.scmp.com/news/china/diplomacy/article/3116837/china-cancels-democratic-republic-congo-loans-it-joins-belt", title: "China cancels Democratic Republic of Congo loans as it joins Belt and Road", publisher: "South China Morning Post", date: "2021-01-07", tier: 3}
-
-  - toward: BEL
-    grade: partner
-    trend: stable
-    bond: grievance
-    since: "1960-06-30"
-    last_verified: 2026-10-16
-    confidence: B
-    note: "The former coloniser and still a main partner: a development programme of about EUR 50m a year (2023-27, as the BEL card reads it), and Belgian positions that defend the DRC's territorial integrity against the M23 and urge an inclusive national dialogue. The wound is open: a Brussels court ruled on 17 March 2026 that Étienne Davignon will stand trial for the 1961 killing of Patrice Lumumba, a trial expected in 2027. Partner, not ally: no alignment or guarantee. Bond grievance: the colonial past, per the BEL card. Mirror: the BEL card reads the pair from Brussels' side with the same sources."
-    sources:
-      - {url: "https://www.hrw.org/news/2026/03/18/landmark-trial-for-belgian-colonial-crimes-to-go-ahead", title: "Landmark trial for Belgian colonial crimes to go ahead", publisher: "Human Rights Watch", date: "2026-03-18", tier: 2}
-      - {url: "https://www.belganewsagency.eu/as-congo-peace-deadline-slips-belgiums-prevot-pushes-for-african-role-on-visit-to-region", title: "As Congo peace deadline slips, Belgium's Prevot pushes for African role on visit to region", publisher: "Belga News Agency", date: "2025", tier: 3}
+- toward: RWA
+  grade: rival
+  trend: stable
+  bond: grievance
+  since: 2025-01
+  last_verified: 2026-10-16
+  confidence: B
+  note: 'Rival, not adversary, read from Kinshasa''s side. For adversary: the RDF fights inside the DRC alongside AFC/M23 (UN experts: 3,000-4,000 troops in 2024), took Goma and Bukavu in January-February
+    2025 with the rebels, the US sanctioned Minister Kabarebe (20 Feb 2025) and the RDF (2 Mar 2026), and the Congolese government calls Rwanda''s presence an invasion. Against: Kinshasa''s declared aim
+    is the Rwandan withdrawal and the Washington framework, not the end of the Rwandan state; it signed the Washington framework (27 Jun 2025) and the Accords (4 Dec 2025) with Kigali, and its ceasefire
+    complaints go to the Washington mechanism, not to a war aim. The same reading the RWA card gives from the other side, with the same sources. Bond grievance: the wars of 1996-2003 and the 1994 refugee
+    camps. State of play, 14 Oct 2026: the US asked Rwanda to withdraw and end its M23 support.'
+  sources:
+  - url: https://www.crisisgroup.org/africa/democratic-republic-congo-rwanda/320-m23-offensive-elusive-peace-great-lakes
+    title: 'The M23 Offensive: Elusive Peace in the Great Lakes (Africa Report N°320)'
+    publisher: International Crisis Group
+    date: '2025-12-19'
+    tier: 2
+  - url: https://www.aljazeera.com/news/2025/7/18/un-experts-cast-blame-on-rwanda-and-uganda-what-are-they-doing-in-drc
+    title: UN experts cast blame on Rwanda and Uganda. What are they doing in DRC?
+    publisher: Al Jazeera
+    date: '2025-07-18'
+    tier: 3
+  - url: https://home.treasury.gov/news/press-releases/sb0022
+    title: Treasury Sanctions Rwandan Minister and Senior Militant for Conflict in the Democratic Republic of the Congo
+    publisher: US Department of the Treasury
+    date: '2025-02-20'
+    tier: 1
+  - url: https://www.ungeneva.org/en/news-media/news/2026/02/115581/m23-rebels-un-sees-progress-talks-warns-violence-persists
+    title: 'M23 rebels: UN sees progress in talks but warns violence persists'
+    publisher: UN Geneva (UNOG)
+    date: '2026-02-05'
+    tier: 1
+  - url: https://peopledaily.digital/news/us-urges-rwanda-to-withdraw-troops-from-dr-congo-end-m23-support
+    title: US urges Rwanda to withdraw troops from DR Congo, end M23 support
+    publisher: People Daily (Kenya)
+    date: '2026-10-14'
+    tier: 3
+- toward: nsa-m23
+  grade: adversary
+  trend: stable
+  bond: grievance
+  since: 2025-01
+  last_verified: 2026-10-16
+  confidence: B
+  note: 'Adversary in the mortal sense, read from Kinshasa''s side, and the only adversary in this file. The test of the ontology is met on both sides: the AFC''s political leadership openly aims to topple
+    the government in Kinshasa (its president Corneille Nangaa: ''our objective is neither Goma nor Bukavu but Kinshasa''), and Kinshasa''s court sentenced Nangaa to death in absentia in August 2025 (Crisis
+    Group). The government''s aim is the rebels'' defeat and disarmament, not a settlement that keeps them. Confidence B: the aim is stated by the AFC and reported by Crisis Group and Reuters, while the
+    Congolese aim is read from the Doha framework and the court sentence. Bond grievance: the M23 is the armed face of the 2009 CNDP integration deal that Kinshasa did not honour (our reading, not sourced
+    here). Trend stable: the Doha roadmap of August 2026 has not ended the fighting.'
+  sources:
+  - url: https://www.crisisgroup.org/africa/democratic-republic-congo-rwanda/320-m23-offensive-elusive-peace-great-lakes
+    title: 'The M23 Offensive: Elusive Peace in the Great Lakes (Africa Report N°320)'
+    publisher: International Crisis Group
+    date: '2025-12-19'
+    tier: 2
+  - url: https://www.thenewhumanitarian.org/analysis/2025/03/20/after-fall-goma-and-bukavu-where-dr-congos-m23-war-headed
+    title: After the Fall of Goma and Bukavu, Where Is DR Congo's M23 War Headed?
+    publisher: The New Humanitarian
+    date: '2025-03-20'
+    tier: 3
+  - url: https://ewn.co.za/2025/11/15/m23-dr-congo-ink-fresh-roadmap-to-peace-in-doha
+    title: M23, DR Congo ink fresh roadmap to peace in Doha
+    publisher: EWN (South Africa)
+    date: '2025-11-15'
+    tier: 3
+  - url: https://www.ungeneva.org/en/news-media/news/2026/02/115581/m23-rebels-un-sees-progress-talks-warns-violence-persists
+    title: 'M23 rebels: UN sees progress in talks but warns violence persists'
+    publisher: UN Geneva (UNOG)
+    date: '2026-02-05'
+    tier: 1
+- toward: UGA
+  grade: reluctant_partner
+  trend: stable
+  bond: grievance
+  since: 2021-11
+  last_verified: 2026-10-16
+  confidence: B
+  note: 'Cooperates out of necessity while resisting alignment, read from Kinshasa''s side. Necessity: Operation Shujaa, the joint UPDF-FARDC campaign against the ADF, which the Congolese government accepted
+    from November 2021. Resistance: the ICJ judgment of 9 February 2022 ordered Uganda to pay USD 325m for its 1998-2003 occupation (the first instalment was paid in September 2022), and the UN experts
+    say Ugandan units shielded the M23 (July 2025; Uganda denies it). The UGA card reads the same pair from the other side with the same sources. Bond grievance: the ICJ case and the occupation. Later instalments,
+    due from 1 September 2026, are not verified.'
+  sources:
+  - url: https://ungeneva.org/en/news-media/news/2022/02/71483/uns-top-court-orders-uganda-pay-325-million-dr-congo
+    title: UN top court orders Uganda pay 325 million DR Congo
+    publisher: UN Geneva (UNOG)
+    date: 2022-02
+    tier: 1
+  - url: https://www.aljazeera.com/news/2022/9/12/uganda-pays-first-installment-of-325m-war-reparations-to-drc
+    title: Uganda pays first installment of $325m war reparations to DRC
+    publisher: Al Jazeera
+    date: '2022-09-12'
+    tier: 3
+  - url: https://www.monitor.co.ug/uganda/special-reports/gains-losses-as-operation-shujja-marks-2-years--4456670
+    title: Gains, losses as Operation Shujaa marks 2 years
+    publisher: Daily Monitor (Uganda)
+    date: 2023-11
+    tier: 3
+  - url: https://www.aljazeera.com/news/2025/7/18/un-experts-cast-blame-on-rwanda-and-uganda-what-are-they-doing-in-drc
+    title: UN experts cast blame on Rwanda and Uganda. What are they doing in DRC?
+    publisher: Al Jazeera
+    date: '2025-07-18'
+    tier: 3
+- toward: BDI
+  grade: ally
+  trend: stable
+  bond: none
+  since: 2025-01
+  last_verified: 2026-10-16
+  confidence: C
+  note: 'Ally in the sense of a de facto military alignment: Burundian troops fight beside the FARDC in South Kivu (Reuters, January 2025), and refugees crossed from the DRC into Burundi after the M23 took
+    Uvira in December 2025. No treaty or guarantee was found and no source uses the word ally, so the grade is our reading (hence C). Mirror: the BDI card reads the pair from Bujumbura''s side with the
+    same sources, graded ally on the same reasoning. Bond none: nothing sourced names kinship or affinity. Gap: the 2023 start of the deployment and any 2025-26 withdrawal are not verified.'
+  sources:
+  - url: https://www.yahoo.com/news/m23-rebels-face-burundian-forces-173819912.html
+    title: M23 rebels face Burundian forces
+    publisher: Reuters (via Yahoo News)
+    date: '2025-01-31'
+    tier: 3
+  - url: https://www.aljazeera.com/news/2025/12/19/tens-of-thousands-flee-dr-congo-to-burundi-after-rebel-takeover-of-key-city
+    title: Tens of thousands flee DR Congo to Burundi after rebel takeover of key city
+    publisher: Al Jazeera
+    date: '2025-12-19'
+    tier: 3
+- toward: TZA
+  grade: partner
+  trend: cooling
+  bond: none
+  since: 2025-03
+  last_verified: 2026-10-16
+  confidence: C
+  note: 'Partner, cooling, read from Kinshasa''s side (our reading, C). Tanzania''s contingent in the SADC mission SAMIDRC was withdrawn in phases from 29 April 2025, after the SADC leaders ended the mandate
+    on 13 March 2025 and the M23 had taken Goma. The SADC withdrawal cools a commitment; it is not a dispute. Not hostile: the DRC is the largest user of the Dar es Salaam transit route, 7.77m tonnes of
+    14.61m in 2025/26 (about 53%, our arithmetic on Tanzanian figures), and the Dar route is the one Kinshasa''s imports rely on. Mirror: the TZA card reads the pair from Dodoma''s side with the same sources.'
+  sources:
+  - url: https://www.dailymaverick.co.za/article/2025-04-29-south-african-and-other-sadc-troops-finally-begin-withdrawal-from-war-torn-drc.md
+    title: South African and other SADC troops finally begin withdrawal from war-torn DRC
+    publisher: Daily Maverick
+    date: '2025-04-29'
+    tier: 3
+  - url: https://www.africanews.com/amp/2025/06/13/sadc-peacekeeping-troops-begin-final-phase-of-withdrawal-from-east-drc/
+    title: SADC peacekeeping troops begin final phase of withdrawal from east DRC
+    publisher: Africanews
+    date: '2025-06-13'
+    tier: 3
+  - url: https://www.monitor.co.ug/uganda/news/national/uganda-eyes-dar-es-salaam-as-second-route-to-sea-as-tanzania-expands-port-5622310
+    title: Uganda eyes Dar es Salaam as second route to sea as Tanzania expands port
+    publisher: Daily Monitor (Uganda)
+    date: '2026'
+    tier: 3
+- toward: KEN
+  grade: partner
+  trend: cooling
+  bond: none
+  since: 2025-02
+  last_verified: 2026-10-16
+  confidence: C
+  note: 'Partner (EAC co-member) and cooling, read from Kinshasa''s side (our reading, C). Kenya''s DRC file is the Nairobi process, and it is shrinking: the EAC-SADC summit of February 2025 merged it with
+    the Luanda track, Kenyatta complained that Nairobi had been sidelined, and then Washington and Doha took the lead. Mudavadi welcomed the Qatari-brokered deal in 2025. No quarrel with Kinshasa, only
+    a diminishing role. Mirror: the KEN card reads the pair from Nairobi''s side with the same sources.'
+  sources:
+  - url: https://peopledaily.digital/news/eac-sadc-summit-directs-resumption-of-direct-negotiations-with-drc-m23-rebels-under-merged-luanda-nairobi-process
+    title: EAC-SADC Summit directs resumption of direct negotiations with DRC M23 rebels under merged Luanda/Nairobi process
+    publisher: People Daily (Kenya)
+    date: 2025-02
+    tier: 3
+  - url: https://allafrica.com/stories/202502070033.html
+    title: Kenyatta Defends 'Sidelined' Nairobi Peace Process, Urges Fresh Momentum
+    publisher: AllAfrica
+    date: '2025-02-07'
+    tier: 3
+  - url: https://peopledaily.digital/news/mudavadi-hails-drc-m23-peace-deal-brokered-by-qatar
+    title: Mudavadi hails DRC-M23 peace deal brokered by Qatar
+    publisher: People Daily (Kenya)
+    date: '2025'
+    tier: 3
+  - url: https://www.securitycouncilreport.org/whatsinblue/2025/02/democratic-republic-of-the-congo-briefing-4.php
+    title: 'Democratic Republic of the Congo: briefing'
+    publisher: Security Council Report
+    date: 2025-02
+    tier: 2
+- toward: AGO
+  grade: partner
+  trend: warming
+  bond: none
+  since: 2025-03
+  last_verified: 2026-10-16
+  confidence: B
+  note: 'Partner, warming: Angola is the African Union''s mediator in the first track and tried to revive its role in 2026. It hosted the first direct Kinshasa-M23 talks in Luanda (March 2025), its president
+    stepped aside as mediator on 24 March 2025 to focus on the AU chair, and Tshisekedi visited Luanda repeatedly in early 2026 to revive the role; Lourenço''s ceasefire announced in February 2026 was disputed
+    by the M23. Transactional and diplomatic, with no alignment or guarantee found. Bond none. Mirror: the AGO card is not yet written, so this stance is the first reading of the pair; the Angolan side
+    is a gap.'
+  sources:
+  - url: https://allafrica.com/stories/202503130017.html
+    title: Angola Pushes for Direct Talks Between Kinshasa and M23 in DRC Crisis
+    publisher: AllAfrica
+    date: '2025-03-13'
+    tier: 3
+  - url: https://fr.allafrica.com/stories/202503250215.html
+    title: 'Angola: João Lourenço se désengage de la médiation du processus de Luanda'
+    publisher: AllAfrica (fr)
+    date: '2025-03-25'
+    tier: 3
+    lang: fr
+  - url: https://www.verangola.net/va/en/022026/Politics/47711/Angola-proposes-a-ceasefire-between-the-DRC-government-and-M23-starting-on-February-18th.htm
+    title: Angola proposes a ceasefire between the DRC government and M23 starting on February 18th
+    publisher: Angola Press (VerAngola)
+    date: 2026-02
+    tier: 3
+  - url: https://www.securitycouncilreport.org/monthly-forecast/2026-03/democratic-republic-of-the-congo-33.php
+    title: 'March 2026 Monthly Forecast: Democratic Republic of the Congo'
+    publisher: Security Council Report
+    date: 2026-03
+    tier: 2
+- toward: USA
+  grade: partner
+  trend: warming
+  bond: none
+  since: '2025-12-04'
+  last_verified: 2026-10-16
+  confidence: C
+  note: 'Partner, warming: the US-DRC strategic partnership signed in Washington on 4 December 2025 ties preferential US access to critical minerals to security and defence cooperation, and the Washington
+    accord with Rwanda was signed the same day. The idea dates from Tshisekedi''s February 2025 proposal of resource access for US security. Confidence C: the text of the partnership was not read, the sources
+    are press and analysis, and the implementation has been mixed (the Chemaf purchase was questioned in March 2026). Bond none: pure interest. Mirror: the USA card has no stance toward the DRC; the reading
+    is ours from the press.'
+  sources:
+  - url: https://allafrica.com/stories/202512040542.html
+    title: 'Congo-Kinshasa: Rwanda''s Kagame and Tshisekedi of the DRC sign peace deal'
+    publisher: AllAfrica
+    date: '2025-12-04'
+    tier: 3
+  - url: https://www.news24.com/world/analysis-why-minerals-for-security-deals-wont-save-the-drc-20260422-0613
+    title: 'Analysis: why minerals-for-security deals won''t save the DRC'
+    publisher: News24
+    date: '2026-04-22'
+    tier: 3
+  - url: https://www.theeastafrican.co.ke/tea/news/east-africa/drc-officials-defend-minerals-for-security-us-deals-5293100
+    title: DRC officials defend 'minerals-for-security' US deals
+    publisher: The EastAfrican
+    date: '2026'
+    tier: 3
+- toward: CHN
+  grade: partner
+  trend: stable
+  bond: none
+  since: 2008-04
+  last_verified: 2026-10-16
+  confidence: B
+  note: 'Partner by minerals: the Sicomines minerals-for-infrastructure contract of 2008, renegotiated under Tshisekedi to USD 7bn of Chinese infrastructure (2024). Chinese companies (CMOC, Huayou and others)
+    run most of the cobalt mining in a country that produces over 70% of the world''s supply, most of it shipped to China. Kinshasa''s US minerals deal of 2025 is a hedge, not an exit: the mines stay. Bond
+    none: interest only. Mirror: the CHN card reads the pair from Beijing''s side with the same sources.'
+  sources:
+  - url: https://eiti.org/blog-post/sicomines-how-eiti-drc-helped-secure-4-billion-additional-revenue
+    title: 'Sicomines: how the EITI in DRC helped secure 4 billion in additional revenue'
+    publisher: Extractive Industries Transparency Initiative
+    date: '2024-03-25'
+    tier: 2
+  - url: https://www.scmp.com/news/china/diplomacy/article/3145065/why-china-making-big-play-congolese-cobalt-and-other-critical
+    title: Why China is making a big play for Congolese cobalt and other critical minerals
+    publisher: South China Morning Post
+    date: '2021-08-15'
+    tier: 3
+  - url: https://www.scmp.com/news/china/diplomacy/article/3116837/china-cancels-democratic-republic-congo-loans-it-joins-belt
+    title: China cancels Democratic Republic of Congo loans as it joins Belt and Road
+    publisher: South China Morning Post
+    date: '2021-01-07'
+    tier: 3
+- toward: BEL
+  grade: partner
+  trend: stable
+  bond: grievance
+  since: '1960-06-30'
+  last_verified: 2026-10-16
+  confidence: B
+  note: 'The former coloniser and still a main partner: a development programme of about EUR 50m a year (2023-27, as the BEL card reads it), and Belgian positions that defend the DRC''s territorial integrity
+    against the M23 and urge an inclusive national dialogue. The wound is open: a Brussels court ruled on 17 March 2026 that Étienne Davignon will stand trial for the 1961 killing of Patrice Lumumba, a
+    trial expected in 2027. Partner, not ally: no alignment or guarantee. Bond grievance: the colonial past, per the BEL card. Mirror: the BEL card reads the pair from Brussels'' side with the same sources.'
+  sources:
+  - url: https://www.hrw.org/news/2026/03/18/landmark-trial-for-belgian-colonial-crimes-to-go-ahead
+    title: Landmark trial for Belgian colonial crimes to go ahead
+    publisher: Human Rights Watch
+    date: '2026-03-18'
+    tier: 2
+  - url: https://www.belganewsagency.eu/as-congo-peace-deadline-slips-belgiums-prevot-pushes-for-african-role-on-visit-to-region
+    title: As Congo peace deadline slips, Belgium's Prevot pushes for African role on visit to region
+    publisher: Belga News Agency
+    date: '2025'
+    tier: 3
+- toward: ZAF
+  grade: partner
+  trend: cooling
+  bond: none
+  since: '2025-03-13'
+  last_verified: '2026-10-16'
+  confidence: C
+  reciprocal_of: ZAF
+  note: Provisional reciprocal of South Africa's 'partner' stance toward Democratic Republic of the Congo, written on 2026-10-16 by tools/reciprocate.py from the same evidence; to be rewritten from Democratic
+    Republic of the Congo's side.
+  sources:
+  - url: https://www.dailymaverick.co.za/article/2025-04-29-south-african-and-other-sadc-troops-finally-begin-withdrawal-from-war-torn-drc
+    title: South African and other SADC troops finally begin withdrawal from war-torn DRC
+    publisher: Daily Maverick
+    date: 2025-04-29
+    tier: 3
+  - url: https://www.africanews.com/amp/2025/06/13/sadc-peacekeeping-troops-begin-final-phase-of-withdrawal-from-east-drc/
+    title: SADC peacekeeping troops begin final phase of withdrawal from east DRC
+    publisher: Africanews
+    date: 2025-06-13
+    tier: 3
+  - url: https://allafrica.com/stories/202502100404.html
+    title: 'Congo-Kinshasa: Ramaphosa backs decision to include M23 in DR Congo peace talks'
+    publisher: allAfrica
+    date: 2025-02-10
+    tier: 3

@@ -117,3 +117,303 @@ relations:
     sources:
       - {url: "https://www.saab.com/newsroom/press-releases/2025/saab-signs-contract-for-gripen-ef-with-colombia", title: "Saab signs contract for Gripen E/F with Colombia", publisher: "Saab", date: 2025-11-15, tier: 1}
       - {url: "https://www.government.se/press-releases/2025/11/colombia-acquires-jas-gripen-in-major-export-deal/", title: "Colombia acquires JAS Gripen in major export deal", publisher: "Government Offices of Sweden", date: 2025-11, tier: 1}
+  - to: SWE
+    layer: dependency
+    type: arms_supply
+    summary: The Gripen contract stands but is under review by the new government. The programme is budgeted at COP 16.86 trillion for 2026-2032; the review reopens the offsets (solar power for off-grid areas, water in La Guajira, the San Juan de Dios hospital), reportedly to convert part into sensors, target identification and ground-attack capability for the air force, not to stop the purchase; a popular action to halt the contract was filed in September 2026.
+    since: 2026-09-13
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    value: 16.86
+    unit: COP_trillion_programmed_2026_2032
+    note: Budget figure as reported by Portafolio from tracking documents (Spanish "billones", i.e. 10^12); the outcome of the review and of the popular action is not in any source found.
+    sources:
+      - {url: "https://www.portafolio.co/economia/gobierno/aviones-gripen-por-3-100-millones-de-euros-gobierno-revisa-condiciones-del-millonario-contrato-502399", title: "Gripen jets for EUR 3.1 billion: government reviews the terms of the contract", publisher: "Portafolio", date: 2026-09-13, tier: 3, lang: es}
+      - {url: "https://www.noticiasrcn.com/colombia/accion-popular-busca-frenar-el-contrato-de-los-aviones-gripen-1064999", title: "Will the Gripen contract suffer a setback? A popular action seeks to stop it", publisher: "Noticias RCN", date: 2026-09, tier: 3, lang: es}
+  - to: USA
+    layer: action
+    type: incident
+    summary: OFAC sanctions on President Petro, his son Nicolás, his former wife Verónica Alcocer and Armando Benedetti (24 Oct 2025, Illicit Drugs EO 14059) remain in force after the change of government; on 7 Oct 2026 all four were still on the SDN list, after OFAC's clean-up of 5 Oct removed dozens of other Colombian persons and firms. Petro said in July he had asked Trump by phone to lift them; a State Department official told a House hearing that no orders existed to remove him. The row is mirrored from the USA card (Treasury, AP), with the 2026 status added.
+    since: 2025-10-24
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://home.treasury.gov/news/press-releases/sb0292", title: "Treasury sanctions Colombian President Gustavo Petro and his support network", publisher: "US Department of the Treasury", date: 2025-10-24, tier: 1}
+      - {url: "https://www.vanguardia.com/colombia/2026/10/07/estados-unidos-mantiene-a-gustavo-petro-y-a-su-circulo-en-la-lista-clinton/", title: "The United States keeps Gustavo Petro and his circle on the Clinton list", publisher: "Vanguardia", date: 2026-10-07, tier: 3, lang: es}
+      - {url: "https://en.mercopress.com/2026/07/04/petro-says-he-asked-trump-to-lift-his-ofac-sanctions-in-a-phone-call", title: "Petro says he asked Trump to lift his OFAC sanctions in a phone call", publisher: "MercoPress", date: 2026-07-04, tier: 3}
+      - {url: "https://www.publimetro.co/noticias/2026/07/16/alto-funcionario-de-ee-uu-revelo-que-aun-no-hay-ordenes-de-sacar-a-petro-de-la-lista-ofac-pese-a-dialogo-con-trump/", title: "Senior US official revealed there are still no orders to remove Petro from the OFAC list despite dialogue with Trump", publisher: "Publimetro", date: 2026-07-16, tier: 3, lang: es}
+      - {url: "https://apnews.com/article/trump-colombia-venezuela-petro-610cfdb86d38544712c3f673639845e1", title: "Trump invites Colombian president to White House after threatening his country with military strike", publisher: "Associated Press", date: 2026-01-08, tier: 3}
+  - to: USA
+    layer: action
+    type: incident
+    summary: Decertification as a drug-control partner, twice. On 15-16 Sep 2025 Washington decertified Colombia for the first time in decades, with a national-interest waiver that preserved aid; on 16 Sep 2026 it kept Colombia on the list for a second year, again with a waiver, blaming Petro, praising de la Espriella and promising to consider lifting the designation if eradication and the dismantling of 'narcoterrorist' networks progress within a year. Venezuela was removed from the list the same day. Coca stood at 261,386 hectares in 2024 (UNODC-government report).
+    since: 2025-09-16
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.npr.org/2025/09/16/nx-s1-5543055/colombia-drugs-u-s-trump-petro", title: "US decertifies Colombia as ally in drugs fight", publisher: "NPR", date: 2025-09-16, tier: 3}
+      - {url: "https://www.vanguardia.com/colombia/2026/09/16/trump-mantiene-a-colombia-en-la-lista-antidrogas-y-deja-una-puerta-abierta-a-de-la-espriella/", title: "Trump keeps Colombia on the anti-drug list and leaves a door open to De la Espriella", publisher: "Vanguardia", date: 2026-09-16, tier: 3, lang: es}
+  - to: USA
+    layer: dependency
+    type: trade_share
+    summary: The United States was the first destination of Colombian exports in 2025 with 29.6% of the total of USD 50.2 billion (up 1.3% on 2024); it was followed by Panama, India, Brazil, the Netherlands, Ecuador and China. Share by month ranged from 28.8% (Feb) to 33% (Jun).
+    since: 2025
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    value: 29.6
+    unit: share_of_exports_2025
+    note: Shares as reported in Analdex's monthly note on DANE data and in a Radio Nacional report seen through search summaries; the DANE series itself was not opened. Bloomberg Línea gives the total.
+    sources:
+      - {url: "https://analdex.org/wp-content/uploads/2026/02/260203-Informe-de-Exportaciones-Diciembre-2025.pdf", title: "Export report, December 2025 (DANE data)", publisher: "Analdex", date: 2026-02-03, tier: 3, lang: es}
+      - {url: "https://radionacional.co/actualidad/economia/exportaciones-colombianas-en-noviembre-de-2025-estados-unidos-principal-socio", title: "Colombian exports in November 2025: the United States, main partner", publisher: "Radio Nacional de Colombia", date: 2026-01, tier: 3, lang: es}
+      - {url: "https://www.bloomberglinea.com/latinoamerica/colombia/exportaciones-de-colombia-sumaron-us50199-millones-en-2025-y-aumentaron-13/", title: "Colombia's exports reached USD 50,199 million in 2025, up 1.3%", publisher: "Bloomberg Línea", date: 2026-02, tier: 3, lang: es}
+  - to: USA
+    layer: action
+    type: incident
+    summary: The US lethal strikes on alleged drug boats in the Caribbean and the Pacific (first strike 2 Sep 2025, 11 dead) became the defining quarrel of the Petro years. Petro said Colombians were among the dead, named a fisherman, called at the UN General Assembly for a criminal process against Trump, and on 11 Nov 2025 suspended intelligence sharing with US agencies while the strikes continued. Death counts in the sources differ (34 dead in eight strikes in the AFP count of Oct 2025; 'more than seventy' in Latin American reports by mid-Nov). Whether the intelligence suspension was lifted after 7 Aug 2026, and the new government's position on the strikes, were not found.
+    since: 2025-09-02
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.ctvnews.ca/world/article/at-un-colombias-petro-urges-criminal-process-against-trump-for-caribbean-strikes/", title: "At UN, Colombia's Petro urges criminal process against Trump for Caribbean strikes", publisher: "CTV News", date: 2025-09, tier: 3}
+      - {url: "https://www.vanguardia.com/colombia/2025/11/11/petro-suspende-cooperacion-de-inteligencia-con-ee-uu-por-ataques-a-lanchas-en-el-caribe/", title: "Petro suspends intelligence cooperation with the US over boat strikes in the Caribbean", publisher: "Vanguardia", date: 2025-11-11, tier: 3, lang: es}
+      - {url: "https://www.telemundo.com/noticias/amp/rcna243306", title: "Petro says Colombia will stop sharing intelligence with the US over boat strikes in the Caribbean", publisher: "Telemundo", date: 2025-11, tier: 3, lang: es}
+  - to: USA
+    layer: action
+    type: agreement
+    summary: Security cooperation is rebuilt at speed. Secretary of State Rubio met de la Espriella in Barranquilla on 8 Sep 2026 (antinarcotics named a priority, deeper cooperation announced); US officials were again at his table on 8 Oct to review the joint anti-drug strategy; and a US announcement that joint military operations against traffickers are authorised is reported in headlines of the same weeks (Secretary Hegseth named; page not opened). The interim attorney general Todd Blanche attended the inauguration on 7 Aug.
+    since: 2026-09-08
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://gbm.com/media/noticia/eeuu-y-colombia-acuerdan-incrementar-cooperacion-en-seguridad-y-lucha-contra-el-narcotrafico/", title: "US and Colombia agree to increase cooperation on security and the fight against drug trafficking", publisher: "GBM", date: 2026-09-09, tier: 3, lang: es}
+      - {url: "https://www.vanguardia.com/colombia/2026/10/08/de-la-espriella-reviso-con-estados-unidos-nueva-estrategia-contra-el-narcotrafico/", title: "De la Espriella reviewed a new anti-drug strategy with the United States", publisher: "Vanguardia", date: 2026-10-08, tier: 3, lang: es}
+      - {url: "https://crhoy.com/mundo/colombia-autoriza-operaciones-militares-de-ee-uu-contra-el-narco/", title: "Colombia authorises US military operations against drug trafficking", publisher: "CRHoy", date: 2026-09, tier: 3, lang: es, note: "headline and snippet only; page not opened, date approximate"}
+      - {url: "https://www.lapoliticaonline.com/mexico/internacionales-mx/rodeado-por-enviados-de-eu-de-la-espriella-asumio-la-presidencia-de-colombia-y-promovio-el-escudo-de-las-americas/", title: "Surrounded by US envoys, De la Espriella took office in Colombia and promoted the Shield of the Americas", publisher: "La Política Online", date: 2026-08-07, tier: 3, lang: es}
+  - to: ISR
+    layer: action
+    type: agreement
+    summary: Restoration of relations after the rupture of Petro (1 May 2024, over Gaza). The incoming foreign minister Bula and Israel's Sa'ar agreed in Washington on 15 Jul 2026 a roadmap for the full and immediate restoration of diplomatic and economic ties from 7 Aug (ambassadors, reciprocal visa waiver, embassy moved to Jerusalem); Sa'ar met de la Espriella in Barranquilla on 6 Aug; Colombia committed to resume coal exports to Israel. A report says the embassy in Jerusalem has been inaugurated (date not seen).
+    since: 2026-07-15
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.jns.org/es/noticias/noticias-del-mundo/saar-comienza-una-epoca-dorada-en-las-relaciones-entre-israel-y-colombia", title: "Sa'ar: a 'golden age' begins in Israel-Colombia relations", publisher: "JNS", date: 2026-08-07, tier: 3, lang: es}
+      - {url: "https://www.valoraanalitik.com/de-la-espriella-abrira-embajada-en-jerusalen-y-no-habra-visa-para-ir-a-israel/", title: "De la Espriella government will open an embassy in Jerusalem and drop the visa requirement with Israel", publisher: "Valora Analitik", date: 2026-07, tier: 3, lang: es}
+      - {url: "https://www.ntn24.com/noticias-politica/colombia-e-israel-restableceran-relaciones-tras-dos-anos-de-ruptura-con-el-gobierno-de-abelardo-de-la-espriella-633544", title: "Colombia and Israel to restore relations after two years of rupture under De la Espriella", publisher: "NTN24", date: 2026-07, tier: 3, lang: es}
+      - {url: "https://www.lasillavacia.com/?p=454630", title: "La Silla Vacía report on the opening of the Colombian embassy in Jerusalem", publisher: "La Silla Vacía", date: 2026, tier: 3, lang: es, note: "seen as a search-result snippet; date of the inauguration not seen"}
+  - to: org-un
+    layer: action
+    type: un_vote
+    summary: "A/RES/81/1 (17 Sep 2026), participation of the State of Palestine in the 81st session: 152 in favour, 3 against (US, Israel, Paraguay), 4 abstentions, among them Colombia (with Honduras, Panama and Peru). The row is mirrored from the PSE card, same sources."
+    since: 2026-09-17
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://en.yenisafak.com/world/un-backs-abbas-video-speech-after-us-visa-denial-3723357", title: "UN backs Abbas video speech after US visa denial", publisher: "Yeni Safak", date: 2026-09-18, tier: 3}
+      - {url: "https://www.aljazeera.com/news/2026/9/17/us-extends-visa-ban-on-palestinian-officials-before-un-general-assembly", title: "US extends visa ban on Palestinian officials before UN General Assembly", publisher: "Al Jazeera", date: 2026-09-17, tier: 3}
+  - to: org-un
+    layer: action
+    type: agreement
+    summary: The joint UNODC-government coca monitoring report for 2024, published in June 2026 after a nine-month pause and a technical dispute with Petro, put coca cultivation at 261,386 hectares (+3.5% on 253,000 in 2023, the smallest rise in four years), with the Pacific at 121,612 ha (+14%), Catatumbo 48,739 ha (+11%), Putumayo-Caquetá -14%, Central -7%. Forced eradication fell 54% (20,325 to 9,403 ha) and cocaine seizures hit a record 889,201 kg (+19%). For the first time the report gave no cocaine production estimate.
+    since: 2026-06-25
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    value: 261386
+    unit: hectares_of_coca_2024
+    note: Figures as reported by Colombian press (Forbes Colombia, Cambio, Blu Radio) from the UNODC-Colombia report; the report itself was not opened, so the regional splits and the exact total should be checked against the UNODC publication.
+    sources:
+      - {url: "https://forbes.co/2026/06/25/actualidad/cultivos-de-coca-llegaron-a-261-000-hectareas-en-2024-tras-aumentar-35/", title: "Coca crops reached 261,000 hectares in 2024 after rising 3.5%", publisher: "Forbes Colombia", date: 2026-06-25, tier: 3, lang: es}
+      - {url: "https://cambiocolombia.com/pais/articulo/2026/6/cifra-record-de-cultivos-de-coca-en-colombia-las-hectareas-crecieron-a-261000-en-2024", title: "Record coca crop figure in Colombia: hectares grew to 261,000 in 2024", publisher: "Cambio", date: 2026-06, tier: 3, lang: es}
+      - {url: "https://www.bluradio.com/nacion/cultivos-de-coca-en-colombia-siguen-creciendo-2024-cerro-con-261-000-hectareas-rg10", title: "Coca crops in Colombia keep growing: 2024 closed with 261,000 hectares", publisher: "Blu Radio", date: 2026-06, tier: 3, lang: es}
+  - to: ZAF
+    layer: action
+    type: incident
+    summary: Colombia withdrew its declaration of intervention in South Africa's ICJ case against Israel on 22 Sep 2026, as agreed in the roadmap with Israel; the embassy in Pretoria is among the 14 closed for budget reasons. The first part is mirrored from the PSE and ZAF cards, same source.
+    since: 2026-09-22
+    until: null
+    last_verified: 2026-10-16
+    confidence: A
+    sources:
+      - {url: "https://www.icj-cij.org/case/192", title: "South Africa v. Israel: Application of the Genocide Convention in the Gaza Strip (case page)", publisher: "International Court of Justice", date: 2026-09-22, tier: 1}
+      - {url: "https://en.mercopress.com/2026/07/27/de-la-espriella-to-close-colombian-embassies-in-14-countries-and-cut-ties-with-cuba-and-nicaragua", title: "De la Espriella to close Colombian embassies in 14 countries and cut ties with Cuba and Nicaragua", publisher: "MercoPress", date: 2026-07-27, tier: 3}
+  - to: MAR
+    layer: action
+    type: incident
+    summary: Colombia froze diplomatic relations with the entity called the Sahrawi Arab Democratic Republic on 10 Aug 2026, which Morocco counts among its recognition gains of Aug-Sep 2026. The row is mirrored from the MAR card, same source.
+    since: 2026-08-10
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.cancilleria.gov.co/sala-de-prensa/noticias/colombia-congela-relaciones-diplomaticas-con-la-entidad-denominada-como-republica-arabe-saharaui-democratica-rasd", title: "Colombia freezes diplomatic relations with the entity called the Sahrawi Arab Democratic Republic", title_original: "Colombia congela relaciones diplomáticas con la entidad denominada como República Árabe Saharaui Democrática (RASD)", publisher: "Colombian Ministry of Foreign Affairs", date: 2026-08-10, tier: 1, lang: es}
+  - to: CUB
+    layer: action
+    type: incident
+    summary: Colombia cut ties with Cuba from the inauguration on 7 Aug 2026, announced on 26 Jul, when de la Espriella called Havana and Managua 'tyrannies' and said there would be 'no link whatsoever'; the embassy in Havana is among the 14 closed.
+    since: 2026-08-07
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://en.mercopress.com/2026/07/27/de-la-espriella-to-close-colombian-embassies-in-14-countries-and-cut-ties-with-cuba-and-nicaragua", title: "De la Espriella to close Colombian embassies in 14 countries and cut ties with Cuba and Nicaragua", publisher: "MercoPress", date: 2026-07-27, tier: 3}
+  - to: NIC
+    layer: action
+    type: incident
+    summary: Colombia cut ties with Nicaragua from 7 Aug 2026 on the same announcement as Cuba (26 Jul); the embassy in Managua is among the 14 closed.
+    since: 2026-08-07
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://en.mercopress.com/2026/07/27/de-la-espriella-to-close-colombian-embassies-in-14-countries-and-cut-ties-with-cuba-and-nicaragua", title: "De la Espriella to close Colombian embassies in 14 countries and cut ties with Cuba and Nicaragua", publisher: "MercoPress", date: 2026-07-27, tier: 3}
+  - to: VEN
+    layer: objective
+    type: influence_goal
+    summary: The new government's declared line is that Bogotá will not deal directly with the chavista government, only through the US State Department, which puts the Venezuela file under Washington's management; Delcy Rodríguez congratulated de la Espriella and asked that the past be left behind. The row is mirrored from the VEN card, same sources.
+    since: 2026-08-03
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.elobservador.com.uy/estados-unidos/america-latina/de-la-espriella-subordina-la-politica-colombia-venezuela-washington-que-implica-la-relacion-bilateral-n6052833", title: "De la Espriella subordinates Colombia's Venezuela policy to Washington", publisher: "El Observador (Uruguay)", date: 2026-08-03, tier: 3, lang: es}
+      - {url: "https://www.latribuna.hn/2026/06/24/delcy-rodriguez-felicita-de-la-espriella-y-espera-tener-una-relacion-bilateral-de-respeto/", title: "Delcy Rodríguez congratulates De la Espriella and hopes for a bilateral relationship of respect", publisher: "La Tribuna (Honduras)", date: 2026-06-24, tier: 3, lang: es}
+  - to: PER
+    layer: objective
+    type: territorial_claim
+    summary: Colombia does not accept that Santa Rosa island, opposite Leticia in the Amazon, was assigned to Peru under the 1929 boundary arrangements and says it needs a bilateral assignment; Peru created the district of Santa Rosa de Loreto on the island by Law 32403 (July 2025) and says it lies on Chinería island, assigned to Peru in 1929. Petro went to Leticia on 7 Aug 2025 to restate the position. No source read says the dispute was settled or taken up by either new government (Fujimori took office in Peru in July 2026).
+    since: 2025-07
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.rtvcnoticias.com/colombia/cancilleria-aclara-que-la-isla-santa-rosa-no-ha-sido-asignada-peru", title: "Colombia reiterates that Santa Rosa island does not belong to Peru and must be assigned by bilateral agreement", publisher: "RTVC Noticias", date: 2025-07, tier: 3, lang: es}
+      - {url: "https://www.primicias.ec/internacional/isla-santa-rosa-leticia-rios-colombia-tension-peru-mapa-102326/", title: "Santa Rosa island, Leticia: territorial tension between Colombia and Peru", publisher: "Primicias", date: 2025-08, tier: 3, lang: es}
+      - {url: "https://www.eltiempo.com/politica/gobierno/que-hay-detras-del-conflicto-limitrofe-entre-colombia-y-peru-por-la-isla-santa-rosa-del-amazonas-3478502", title: "What is behind the border conflict between Colombia and Peru over Santa Rosa island on the Amazon", publisher: "El Tiempo", date: 2025, tier: 3, lang: es}
+  - to: PAN
+    layer: action
+    type: visit
+    summary: "President Mulino of Panama travelled to Cali for the inauguration on 7 Aug 2026 with his security and foreign ministers; the agenda named was security and organised crime, electrical interconnection, trade and the Darién frontier. Panama agreed to reopen a consulate in Montería at de la Espriella's public request."
+    since: 2026-08-07
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.infobae.com/america/agencias/2026/08/06/mulino-viaja-el-viernes-a-colombia-a-la-investidura-de-abelardo-de-la-espriella/", title: "Mulino travels on Friday to Colombia for Abelardo de la Espriella's inauguration", publisher: "Infobae (agencies)", date: 2026-08-06, tier: 3, lang: es}
+      - {url: "https://www.panamaamerica.com.pa/sociedad/mulino-reabrira-consulado-de-panama-en-monteria-tras-solicitud-abelardo-de-la-espriella", title: "Mulino will reopen Panama's consulate in Montería after a request by Abelardo de la Espriella", publisher: "Panamá América", date: 2026-08, tier: 3, lang: es}
+  - to: MEX
+    layer: action
+    type: incident
+    summary: In late June 2026 de la Espriella called the Mexican drug cartels a 'military objective'; Mexico asked him to join the fight, Sheinbaum answered that each country takes care of its part and that military cooperation with Colombia predates Petro, and she sent an undersecretary instead of attending the inauguration.
+    since: 2026-06-26
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.nmas.com.mx/politica/sheinbaum-responde-a-colombia-sobre-combate-a-carteles-cada-quien-se-encargue-de-su-parte/", title: "Sheinbaum answers Colombia on the fight against cartels: 'everyone takes care of their part'", publisher: "N+", date: 2026-06, tier: 3, lang: es}
+      - {url: "https://www.cronica.com.mx/nacional/2026/06/26/mexico-pide-a-de-la-espriella-involucrarse-en-la-lucha-contra-el-narcotrafico/", title: "Mexico asks De la Espriella to get involved in the fight against drug trafficking", publisher: "Crónica", date: 2026-06-26, tier: 3, lang: es}
+      - {url: "https://www.abc.com.py/internacionales/2026/08/05/sheinbaum-no-ira-a-investidura-del-presidente-de-colombia-y-enviara-representacion-oficial/", title: "Sheinbaum will not attend the Colombian president's inauguration and will send an official representative", publisher: "ABC Color", date: 2026-08-05, tier: 3, lang: es}
+  - to: MEX
+    layer: dependency
+    type: trade_share
+    summary: Bilateral trade with Mexico was USD 2.005 billion in the period reported for 2026, with Mexican exports of USD 1.241 billion and imports from Colombia of USD 764 million; Colombia runs a trade deficit with Mexico.
+    since: 2026
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    value: 764
+    unit: USD_million_colombian_exports_to_mexico_2026
+    note: The reporting period inside 2026 is not stated in the UnoTV piece (seen through a search summary); the figures may be partial-year.
+    sources:
+      - {url: "https://www.unotv.com/negocios/mexico-y-colombia-2005-mdd-en-comercio-durante-2026-estos-son-sus-principales-productos/", title: "Mexico and Colombia: USD 2,005 million in trade during 2026; these are the main products", publisher: "UnoTV", date: 2026, tier: 3, lang: es}
+  - to: ESP
+    layer: action
+    type: agreement
+    summary: Spain is one of four mediators (with Qatar, Norway and Switzerland) of the Doha process between the Petro government and the Clan del Golfo, which began in Sept 2025 and which the new government has ruled out; the process resumed in Feb 2026 at the mediators' request after a crisis. King Felipe VI and foreign minister Albares attended the inauguration in Cali on 7 Aug 2026; prime minister Sánchez did not. Whether Spain's mediation continues was not found.
+    since: 2025-09
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.rtvcnoticias.com/colombia/petro-mantiene-mediacion-de-qatar-espana-y-suiza-con-el-clan-del-golfo", title: "Petro keeps the mediation of Qatar, Spain and Switzerland with the Clan del Golfo", publisher: "RTVC Noticias", date: 2025-12, tier: 3, lang: es}
+      - {url: "https://www.publimetro.co/noticias/2026/02/17/fin-de-la-crisis-gobierno-y-clan-del-golfo-reanudan-dialogos-de-paz-tras-el-choque-por-la-reunion-petro-trump/", title: "End of the crisis: government and Clan del Golfo resume peace talks after the clash over the Petro-Trump meeting", publisher: "Publimetro", date: 2026-02-17, tier: 3, lang: es}
+      - {url: "https://www.democrata.es/politica/abelardo-espriella-toma-posesion-como-presidente-colombia-con-felipe-vi-sin-pedro-sanchez/", title: "Abelardo de la Espriella takes office as president of Colombia with Felipe VI and without Pedro Sánchez", publisher: "Demócrata", date: 2026-08-07, tier: 3, lang: es}
+  - to: org-eu
+    layer: alignment
+    type: treaty
+    summary: A trade agreement with the European Union is in force (EEAS country page); the EEAS statement of 25 Jun 2026 congratulated de la Espriella and listed trade and investment, peace and security, sustainable development and multilateral cooperation as the areas of the partnership. The Cancillería's January 2026 agenda mentioned an Alliance and Cooperation Agreement under negotiation (not re-read).
+    since: 2013
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    note: The year 2013 (provisional application of the EU-Colombia-Peru trade agreement) is not in the EEAS pages as seen through search summaries; to be checked against the agreement text. The "in force" status is the EEAS page's.
+    sources:
+      - {url: "https://www.eeas.europa.eu/eeas/colombia-statement-spokesperson-presidential-elections_en", title: "Colombia: Statement by the Spokesperson on the presidential elections", publisher: "European External Action Service", date: 2026-06-25, tier: 1}
+      - {url: "https://eeas.europa.eu/colombia/la-union-europea-y-colombia_es", title: "The European Union and Colombia", title_original: "La Unión Europea y Colombia", publisher: "European External Action Service", date: 2026, tier: 1, lang: es}
+  - to: org-nato
+    layer: action
+    type: agreement
+    summary: Colombia became NATO's global partner in Latin America in 2018 (individual partnership agreement; renewed in 2021 and extended to training of the armed forces, per a search summary); in July 2026 the new government named an ambassador to both the EU and NATO. A partnership, not membership, so no Article 5 cover.
+    since: 2018-05-25
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.elheraldo.co/colombia/2018/05/26/colombia-ingresara-a-la-otan-como-primer-socio-global-latinoamericano-499314/", title: "Colombia will join NATO as the first Latin American global partner", publisher: "El Heraldo", date: 2018-05-26, tier: 3, lang: es}
+      - {url: "https://www.elindependiente.com/internacional/2026/07/14/el-abogado-de-vito-quiles-sera-el-embajador-de-abelardo-de-la-espriella-ante-la-ue-y-la-otan/", title: "Vito Quiles's lawyer will be De la Espriella's ambassador to the EU and NATO", publisher: "El Independiente", date: 2026-07-14, tier: 3, lang: es}
+  - to: RUS
+    layer: action
+    type: visit
+    summary: Foreign minister Murillo went to Moscow in Nov 2024 to 'reactivate' relations and offered help on Ukraine; Colombia's ambassador presented his credentials to Putin on 15 Jan 2026. The new government's line on Russia is not in any source found.
+    since: 2024-11-14
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.elheraldo.co/colombia/2024/11/14/canciller-murillo-hablo-con-el-gobierno-ruso-sobre-la-politica-de-paz-total-implementada-por-petro/", title: "Foreign minister Murillo spoke with the Russian government about Petro's total peace policy", publisher: "El Heraldo", date: 2024-11-14, tier: 3, lang: es}
+      - {url: "https://cancilleria.gov.co/politica-exterior/asuntos-bilaterales/europa/federacion-de-rusia", title: "Foreign policy: bilateral affairs, Russian Federation", publisher: "Colombian Ministry of Foreign Affairs", date: 2026-01-15, tier: 1, lang: es}
+  - to: nsa-eln
+    layer: action
+    type: incident
+    summary: The first air strike of the new government hit ELN structures in Tibú and San Calixto (Catatumbo) on the night of 10 Aug 2026; the army confirmed two ELN fighters dead and the Defensoría reported three farmers wounded. A rebel attack on a military post in the same region on 5 Sep killed three soldiers.
+    since: 2026-08-10
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.noticiasrcn.com/colombia/gobierno-de-la-espriella-se-pronuncia-sobre-bombardeo-en-catatumbo-contra-el-eln-1049549", title: "De la Espriella government speaks on the Catatumbo bombing against the ELN", publisher: "Noticias RCN", date: 2026-08-11, tier: 3, lang: es}
+      - {url: "https://www.asuntoslegales.com.co/actualidad/defensoria-alerto-afectaciones-en-la-poblacion-por-bombardeo-militar-en-el-catatumbo-4456666", title: "Ombudsman warned of effects on the population from military bombing in Catatumbo", publisher: "Asuntos Legales", date: 2026-08-12, tier: 3, lang: es}
+      - {url: "https://www.aljazeera.com/amp/news/2026/9/5/colombian-government-reports-three-killed-in-rebel-attack-on-military-post", title: "Colombian government reports three killed in rebel attack on military post", publisher: "Al Jazeera", date: 2026-09-05, tier: 3}
+  - to: nsa-farc-dissidents
+    layer: action
+    type: incident
+    summary: On 11 Oct 2026 about 01:00 an air strike ordered personally by the president hit the dissident Frente 33 (alias Calarcá) in Norte de Santander, the fourth of the government's term; the special operations command ran it, early reports spoke of several dead and seized war material, no official tally the next day. Five alleged Frente 33 members, and a minor, had been captured at La Gabarra (Tibú) on 6 Oct.
+    since: 2026-10-11
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.publimetro.co/noticias/2026/10/11/de-la-espriella-ordeno-bombardeo-en-plena-madrugada-contra-disidencias-de-las-farc-que-paso-con-los-hombres-de-calarca/", title: "De la Espriella ordered a pre-dawn bombing of FARC dissidents: what happened to Calarcá's men", publisher: "Publimetro", date: 2026-10-11, tier: 3, lang: es}
+      - {url: "https://minuto60.com/colombia/espriella-ordeno-bombardeo-contra-frente-33-catatumbo/16957", title: "De la Espriella ordered a bombing against the Frente 33 in Catatumbo", publisher: "Minuto60", date: 2026-10, tier: 3, lang: es}
+  - to: nsa-clan-del-golfo
+    layer: action
+    type: incident
+    summary: Ultimatum and surrender. On 25 Jun 2026 the president-elect told the armed groups to submit to the rule of law and ruled out negotiating with the Clan del Golfo; the Clan replied on 29 Jun that submission was inevitable and the debate was over its terms; on 17 Sep 2026 four members of the Juan de Dios Úsuga structure surrendered in Briceño (Antioquia) with an arsenal. The Tierralta (Córdoba) location zone planned for 25 Jun was postponed, and the submission bill promised since July had not been filed by mid-September.
+    since: 2026-06-25
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.elespectador.com/colombia-20/paz-y-memoria/clan-del-golfo-responde-a-abelardo-de-la-espriella-sobre-sometimiento-a-justicia-y-reitera-disposicion-de-negociar/", title: "Clan del Golfo answers Abelardo de la Espriella on submission to justice and reiterates its willingness to negotiate", publisher: "El Espectador", date: 2026-06-29, tier: 3, lang: es}
+      - {url: "https://www.publimetro.co/noticias/2026/09/18/cuatro-integrantes-del-clan-del-golfo-se-sometieron-en-antioquia-y-entregaron-un-arsenal-de-armas/", title: "Four Clan del Golfo members submitted in Antioquia and handed over an arsenal", publisher: "Publimetro", date: 2026-09-18, tier: 3, lang: es}
+      - {url: "https://cambiocolombia.com/conflicto-armado-en-colombia/articulo/2026/9/gobierno-reporto-el-sometimiento-de-cuatro-integrantes-del-clan-del-golfo-en-antioquia", title: "Government reports the submission of four Clan del Golfo members in Antioquia", publisher: "Cambio", date: 2026-09, tier: 3, lang: es}
+      - {url: "https://www.publimetro.co/noticias/2026/06/25/paz-total-aplazan-el-inicio-de-zona-de-ubicacion-temporal-para-los-integrantes-del-clan-del-golfo-en-cordoba/", title: "Total peace: the start of the temporary location zone for Clan del Golfo members in Córdoba is postponed", publisher: "Publimetro", date: 2026-06-25, tier: 3, lang: es}

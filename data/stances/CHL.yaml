@@ -2,15 +2,18 @@ actor: CHL
 stances:
   - toward: USA
     grade: partner
-    trend: warming
+    trend: cooling
     bond: none
     since: '2026-03-11'
     last_verified: '2026-10-16'
     confidence: C
-    note: "Kast calls the US relationship historic and strategic but says Chile is not allied with either superpower. Chile joined the Shield of the Americas, a US-promoted security coalition, and refused foreign troops on its soil and operations abroad. Warming is our reading of the coalition membership against the 2026 posture (C); the grade partner is our reading, since no source uses it and Kast's own word is that Chile is not aligned. Bond none is our reading. Gap: the 2025 copper tariff and its effect are not verified in this pass."
+    note: "Kast calls the US relationship historic and strategic but says Chile is not allied with either superpower. Chile joined the Shield of the Americas, a US-promoted security coalition, and refused foreign troops on its soil and operations abroad. Warming is our reading of the coalition membership against the 2026 posture (C); the grade partner is our reading, since no source uses it and Kast's own word is that Chile is not aligned. Bond none is our reading. Update of 2026-10-16: the trend was warming until July 2026; the 12.5% US surcharge of that month (Section 301, about 40% of Chilean exports to the US, copper and lithium excluded) led the defence minister to say it raises doubts about the closeness and reliability of the relationship, and Washington asks for a rewrite of the 2004 FTA, so cooling is our reading (C) from those statements. The tie rests on the FTA in force since 1 January 2004 (USD 38.1bn of goods trade in 2025, USTR). Gap: the effect of the 2025 copper tariff on cathodes is not verified (sources conflict); the July 2026 surcharge excludes copper concentrates and cathodes."
     sources:
       - {url: "https://www.latercera.com/pulso/noticia/presidente-kast-dice-que-el-pais-no-tiene-una-eleccion-o-presion-para-elegir-a-estados-unidos-o-china-somos-pro-chile/", title: "Presidente Kast afirma que el país no tiene una elección o presión para elegir a EE.UU. o China: 'Somos pro Chile'", publisher: "La Tercera", date: "2026", tier: 3}
       - {url: "https://www.latercera.com/editorial/noticia/la-incorporacion-de-chile-al-escudo-de-las-americas/", title: "The incorporation of Chile into the Shield of the Americas", publisher: "La Tercera", date: "2026", tier: 3}
+      - {url: "https://www.latercera.com/politica/noticia/el-golpe-de-estados-unidos-que-pone-en-cuestion-la-apuesta-internacional-de-kast/", title: "The US blow that calls into question Kast's international bet", title_original: "El golpe de Estados Unidos que pone en cuestión la apuesta internacional de Kast", publisher: "La Tercera", date: "2026-08-02", tier: 3, lang: es}
+      - {url: "https://kuwaittimes.com/article/47222/business/tariffs-raise-doubts-about-us-reliability-says-chile/", title: "Tariffs raise doubts about US reliability, says Chile", publisher: "Kuwait Times (wire)", date: "2026-07-28", tier: 3}
+      - {url: "https://ustr.gov/countries-regions/americas/chile", title: "Chile (US-Chile trade profile; FTA in force 1 January 2004)", publisher: "Office of the US Trade Representative", date: "2026-10-16", tier: 1}
 
   - toward: CHN
     grade: partner
@@ -19,9 +22,13 @@ stances:
     since: '2026-03-11'
     last_verified: '2026-10-16'
     confidence: C
-    note: "Kast describes trade with China as very important and says Chile sells large quantities of its products there, while refusing any alignment with China. Transactional cooperation without alignment: partner, and bond none, are our reading (C). The largest-trade-partner status is from the brief, not from the source text read here. Gap: the Chancay port competition and the Chinese lithium investments are not sourced in this pass."
+    note: "Kast describes trade with China as very important and says Chile sells large quantities of its products there, while refusing any alignment with China. Transactional cooperation without alignment: partner, and bond none, are our reading (C). The largest-trade-partner status is from the brief, not from the source text read here. Update of 2026-10-16: China took 43.7% of Chile's copper exports in January-June 2026 (Cochilco, as reported) and about 36-40% of all goods exports, so China is the largest market. Kast received the Chinese ambassador at La Moneda at the end of July, the day after the US surcharge by one report, and a first Kast-Xi meeting is planned at the APEC summit in Shenzhen on 18-19 November 2026. The Chinese cable was dropped under US pressure and Tianqi holds 22.1% of SQM. Warming is not supported by a source; stable stays. Gap: the Chancay port competition is not sourced."
     sources:
       - {url: "https://www.latercera.com/pulso/noticia/presidente-kast-dice-que-el-pais-no-tiene-una-eleccion-o-presion-para-elegir-a-estados-unidos-o-china-somos-pro-chile/", title: "Presidente Kast afirma que el país no tiene una elección o presión para elegir a EE.UU. o China: 'Somos pro Chile'", publisher: "La Tercera", date: "2026", tier: 3}
+      - {url: "https://www.pauta.cl/actualidad/2026/07/31/presidente-kast-se-reune-con-embajador-de-china-y-prepara-agenda-para-su-participacion-en-la-cumbre-apec-2026.html", title: "President Kast meets the Chinese ambassador and prepares his agenda for the 2026 APEC summit", title_original: "Presidente Kast se reúne con embajador de China y prepara agenda para su participación en la cumbre APEC 2026", publisher: "Pauta", date: "2026-07-31", tier: 3, lang: es}
+      - {url: "https://www.cnnchile.com/tag/festival-de-vina.-del-mar/page/111/", title: "Copper exports: China concentrates more than 40% in the first half, followed by the US with 16.8% (headline on a CNN Chile tag page)", title_original: "Exportaciones de cobre: China concentra más del 40% en el primer semestre seguido de EE.UU. con 16,8%", publisher: "CNN Chile", date: "2026-07", tier: 3, lang: es}
+      - {url: "https://restofworld.org/2026/chile-china-america-google-cable/", title: "Report on the Chile-China Express cable, US pressure and the Humboldt cable (Rest of World)", publisher: "Rest of World", date: "2026-06-18", tier: 3}
+      - {url: "https://source.benchmarkminerals.com/article/sqm-atacama-lithium-operation-secured-to-2060-with-codelco-partnership-approval", title: "SQM's Atacama lithium operation secured to 2060 with Codelco partnership approval", publisher: "Benchmark Mineral Intelligence", date: "2026-01-02", tier: 3}
 
   - toward: ARG
     grade: partner
@@ -30,10 +37,12 @@ stances:
     since: '2026-04-06'
     last_verified: '2026-10-16'
     confidence: C
-    note: "Kast's first official trip abroad was to Milei in Argentina (April 2026), a move both governments see as offsetting Lula's regional influence; the press calls it a conservative axis. No treaty binds them, so the grade is partner, not ally, and warming is our reading (C). Affinity is our reading of the shared right-wing government line, which the sources describe but do not name as kinship. Kast will not demand that Milei repeal Decree 457 on Magallanes, since the treaties establish Chile's sovereignty. Gap: the Apablaza extradition case is a live irritant, not yet sourced beyond the press summary."
+    note: "Kast's first official trip abroad was to Milei in Argentina (April 2026), a move both governments see as offsetting Lula's regional influence; the press calls it a conservative axis. No treaty binds them, so the grade is partner, not ally, and warming is our reading (C). Affinity is our reading of the shared right-wing government line, which the sources describe but do not name as kinship. Kast will not demand that Milei repeal Decree 457 on Magallanes, since the treaties establish Chile's sovereignty. Gap: the Apablaza extradition case is a live irritant, not yet sourced beyond the press summary. Update of 2026-10-16: the April communique backing Argentina's rights over the Malvinas 'and the surrounding maritime spaces' drew a Magallanes senator's objection (overlap with Chilean waters south of Cape Horn), and in September Argentine authorities questioned Chile's sovereignty over the Strait; Kast answered on 2 September that Argentina has no sovereignty or control over it, and the two presidents were to meet the next day. The warming reading is therefore tempered: the pair is aligned on politics and exposed on the south, and the overlapping Antarctic claims are frozen by Article IV of the Antarctic Treaty."
     sources:
       - {url: "https://es.euronews.com/2026/04/06/kast-elige-argentina-para-su-primer-viaje-refuerza-un-eje-conservador-frente-a-brasil", title: "Kast chooses Argentina for his first trip and reinforces a conservative axis against Brazil", title_original: "Kast elige Argentina para su primer viaje y refuerza un eje derechista frente a Brasil", publisher: "Euronews", date: "2026-04-06", tier: 3, lang: es}
       - {url: "https://www.latercera.com/politica/noticia/kast-dice-que-no-le-exigira-a-milei-firmar-la-derogacion-del-decreto-porque-los-tratados-establecen-la-soberania-de-chile-sobre-magallanes/", title: "Kast says he will not require Milei to sign the repeal of the decree because the treaties establish Chile's sovereignty over Magallanes", title_original: "Kast dice que no le exigirá a Milei firmar la derogación del decreto “porque los tratados establecen la soberanía de Chile sobre Magallanes”", publisher: "La Tercera", date: "2026", tier: 3, lang: es}
+      - {url: "https://eldesconcierto.cl/actualidad/senador-exige-explicaciones-kast-posible-superposicion-territorio-chileno-y-argentino-respaldo-milei-n5457868", title: "Senator demands explanations from Kast over possible overlap of Chilean and Argentine territory after backing for Milei", title_original: "Senador exige explicaciones a Kast por posible superposición de territorio chileno y argentino tras respaldo a Milei", publisher: "El Desconcierto", date: "2026-04-07", tier: 3, lang: es}
+      - {url: "https://www.emol.com/noticias/Nacional/2026/09/10/1211145/gestos-gobierno-congreso-magallanes.html", title: "Gestures of the government and Congress over Magallanes", title_original: "Gestos del gobierno y el Congreso por Magallanes", publisher: "Emol", date: "2026-09-10", tier: 3, lang: es}
 
   - toward: BOL
     grade: rival
@@ -57,3 +66,136 @@ stances:
     sources:
       - {url: "https://www.aljazeera.com/news/2025/11/28/peru-to-declare-state-of-emergency-to-block-chile-border-crossings", title: "Peru to declare state of emergency to block Chile border crossings", publisher: "Al Jazeera", date: "2025-11-28", tier: 3}
       - {url: "https://es.euronews.com/2026/08/28/peru-argentina-chile-y-bolivia-unen-fuerzas-para-ganar-peso-en-el-mercado-de-minerales-est", title: "Peru, Argentina, Chile and Bolivia join forces to gain weight in the minerals market", title_original: "Sudamérica se mueve por el litio y el cobre: Chile, Argentina, Bolivia y Perú firman un acuerdo", publisher: "Euronews", date: "2026-08-28", tier: 3, lang: es}
+
+  - toward: BRA
+    grade: partner
+    trend: stable
+    bond: none
+    since: '2026-01'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Brazil is Chile's third trading partner after China and the US (bilateral trade USD 13.05bn in 2023, Chile's trade ministry) and in a La Tercera expert's words its main partner in Latin America. Kast and Lula met in Panama in January 2026; Lula did not attend the March inauguration, and Kast's first trip abroad went to Milei, a move the press read as an axis against Brazil. Transactional cooperation without alignment: partner is our reading (C), stable because no source shows a change of line since March. Bond none is our reading. The runoff of 25 October 2026 between Lula and Flavio Bolsonaro, who led the first round, can turn this into an ideological pair. Gap: no Chilean-Brazilian bilateral dispute or agreement of 2026 was sourced."
+    sources:
+      - {url: "https://www.latercera.com/mundo/noticia/el-tensionado-vecindario-regional-que-recibe-a-jose-antonio-kast/", title: "The tense regional neighbourhood that receives José Antonio Kast", title_original: "El tensionado vecindario regional que recibe a José Antonio Kast", publisher: "La Tercera", date: "2026-03-12", tier: 3, lang: es}
+      - {url: "https://es.euronews.com/2026/04/06/kast-elige-argentina-para-su-primer-viaje-refuerza-un-eje-conservador-frente-a-brasil", title: "Kast chooses Argentina for his first trip and reinforces a conservative axis against Brazil", title_original: "Kast elige Argentina para su primer viaje y refuerza un eje derechista frente a Brasil", publisher: "Euronews", date: "2026-04-06", tier: 3, lang: es}
+      - {url: "https://www.subrei.gob.cl/docs/default-source/estudios-y-documentos/fichas/brasil-anual.pdf?sfvrsn=31ce6259_1", title: "Brazil: annual trade sheet (USD 13.05bn in 2023)", title_original: "Ficha anual Brasil", publisher: "Subsecretaría de Relaciones Económicas Internacionales", date: "2024-02", tier: 1, lang: es}
+
+  - toward: URY
+    grade: partner
+    trend: stable
+    bond: none
+    since: '2016'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Uruguay and Chile are linked by Chile's associate membership of Mercosur (ACE 35, in force 1 October 1996) and by a bilateral free trade agreement of 2016 (the 2016 date rests on the Wikipedia index only, tier 4). Partner and bond none are our reading (C). Gap: no source on the Orsi government's relation with Kast was read, and Uruguay's push to sign its own China deal inside Mercosur, which touches Chile's hedge, is only in Uruguay's own card."
+    sources:
+      - {url: "https://www.aduana.cl/ace-chile-mercosur-ace-n-35/aduana/2007-07-11/131941.html", title: "Chile-Mercosur Economic Complementation Agreement (ACE No. 35)", title_original: "ACE Chile-Mercosur (ACE N° 35)", publisher: "Servicio Nacional de Aduanas", date: "2007-07-11", tier: 1, lang: es}
+      - {url: "https://en.wikipedia.org/wiki/Chile%E2%80%93Uruguay_relations", title: "Chile-Uruguay relations (free trade agreement of 2016; index only)", publisher: "Wikipedia", date: "2026-10-16", tier: 4}
+
+  - toward: ECU
+    grade: partner
+    trend: warming
+    bond: affinity
+    since: '2026-03-11'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Daniel Noboa attended Kast's inauguration and the press presents him as a natural ally of Kast on security because of his war on gangs. No treaty binds them, so partner, not ally; warming and affinity (the shared right-wing security line) are our reading (C). Ecuador's own card records that voters refused US bases in November 2025, which limits how far the pair can go together under the Shield of the Americas. Gap: no Chilean-Ecuadorian agreement of 2026 was sourced."
+    sources:
+      - {url: "https://www.latercera.com/mundo/noticia/el-tensionado-vecindario-regional-que-recibe-a-jose-antonio-kast/", title: "The tense regional neighbourhood that receives José Antonio Kast", title_original: "El tensionado vecindario regional que recibe a José Antonio Kast", publisher: "La Tercera", date: "2026-03-12", tier: 3, lang: es}
+
+  - toward: COL
+    grade: partner
+    trend: warming
+    bond: affinity
+    since: '2026-08-07'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "In March, La Tercera counted Colombia (Petro) among the left-wing governments that complicate Kast's regional picture. Abelardo de la Espriella, a hard-line Trump ally, won the 21 June 2026 runoff by about one point and took office on 7 August 2026, and his government wants to return to the Shield of the Americas bloc that Chile has joined. The two now share a security line and a patron, which is why warming and affinity are our reading (C); no source describes a Kast-De la Espriella meeting or agreement. Gap: that bilateral link is unsourced."
+    sources:
+      - {url: "https://www.latercera.com/mundo/noticia/el-tensionado-vecindario-regional-que-recibe-a-jose-antonio-kast/", title: "The tense regional neighbourhood that receives José Antonio Kast", title_original: "El tensionado vecindario regional que recibe a José Antonio Kast", publisher: "La Tercera", date: "2026-03-12", tier: 3, lang: es}
+      - {url: "https://www.gpb.org/news/2026/08/07/colombias-new-president-vows-remake-the-country-and-challenge-rebel-groups", title: "Colombia's new president vows to remake the country and challenge rebel groups", publisher: "GPB (AP)", date: "2026-08-07", tier: 3}
+
+  - toward: VEN
+    grade: reluctant_partner
+    trend: warming
+    bond: none
+    since: '2026-07-30'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Relations were suspended in January 2025 (El Mercurio/Emol; EFE dates the rupture to the 2024 election). Kast was a harsh critic of Maduro, but the expulsions he promised need consular ties, and on 30 July 2026 both governments announced the reactivation of consular relations as a first step towards normalisation, with about 700,000 Venezuelans in Chile and 25,000 Chileans in Venezuela. Venezuela's card reads the state as governed under US licences since 3 January 2026. Cooperation out of necessity while resisting alignment: reluctant_partner is our reading (C), warming because of the July agreement, bond none. Gap: whether the consulates have opened or any expulsion flight reached Venezuela after July is not sourced."
+    sources:
+      - {url: "https://www.abc.com.py/internacionales/2026/07/30/venezuela-acuerda-con-chile-reactivar-relaciones-consulares-y-normalizar-vinculo-bilateral/", title: "Venezuela agrees with Chile to reactivate consular relations and normalise the bilateral link", title_original: "Venezuela acuerda con Chile reactivar relaciones consulares y normalizar vínculo bilateral", publisher: "ABC Color (wire)", date: "2026-07-30", tier: 3, lang: es}
+      - {url: "https://elmercurio.com.ec/mundo-noticias/2026/07/31/chile-y-venezuela-acuerdan-la-normalizacion-de-sus-relaciones-tras-romper-en-2024/", title: "Chile and Venezuela agree to the 'normalisation' of their relations after the 2024 rupture", title_original: "Chile y Venezuela acuerdan la «normalización» de sus relaciones tras romper en 2024", publisher: "El Mercurio (Ecuador, wire)", date: "2026-07-31", tier: 3, lang: es}
+      - {url: "https://www.eldinamo.cl/pais/2026/04/16/venezuela-no-los-recibe-gobierno-admite-problemas-para-expulsar-migrantes-irregulares/", title: "Venezuela does not take them: government admits problems expelling irregular migrants", title_original: "Venezuela no los recibe: gobierno admite problemas para expulsar migrantes irregulares", publisher: "El Dínamo", date: "2026-04-16", tier: 3, lang: es}
+
+  - toward: MEX
+    grade: partner
+    trend: stable
+    bond: none
+    since: '1999'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "The two are founding members of the Pacific Alliance and linked by a free trade agreement in force since 1999 (both facts rest on the Wikipedia index, tier 4). In March, La Tercera named Mexico (Sheinbaum, in office to 2030), with Brazil and Colombia, as one of the left-wing governments that complicate Kast's regional picture; Colombia has since changed hands. Partner and bond none are our reading (C). Gap: no source on a Kast-Sheinbaum contact or on the current state of the Pacific Alliance was read."
+    sources:
+      - {url: "https://www.latercera.com/mundo/noticia/el-tensionado-vecindario-regional-que-recibe-a-jose-antonio-kast/", title: "The tense regional neighbourhood that receives José Antonio Kast", title_original: "El tensionado vecindario regional que recibe a José Antonio Kast", publisher: "La Tercera", date: "2026-03-12", tier: 3, lang: es}
+      - {url: "https://en.wikipedia.org/wiki/Chile%E2%80%93Mexico_Free_Trade_Agreement", title: "Chile-Mexico Free Trade Agreement (in force 1999; index only)", publisher: "Wikipedia", date: "2026-10-16", tier: 4}
+
+  - toward: ESP
+    grade: partner
+    trend: warming
+    bond: kin
+    since: '2026-03-11'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "At the lunch after his inauguration on 11 March 2026 Kast renewed an invitation, first made privately, to King Felipe VI to visit Antarctica, and the Defence Ministry is weighing a cabinet council in the Chilean Antarctic Territory in late January 2027, possibly with the King. Bond kin is our reading (shared language and history, the former colonial power); partner and warming are our reading (C). Gap: the Sanchez government's own line towards Kast is not sourced, and the pair has no treaty beyond the EU ones."
+    sources:
+      - {url: "https://www.cnnchile.com/pais/presidente-jose-antonio-kast-invita-felipe-vi-otras-autoridades-internacionales-visitar-antartica/", title: "President José Antonio Kast invites Felipe VI and other international authorities to visit Antarctica", title_original: "Presidente José Antonio Kast invita a Felipe VI y otras autoridades internacionales a visitar la Antártica", publisher: "CNN Chile", date: "2026-03-11", tier: 3, lang: es}
+      - {url: "https://www.emol.com/noticias/Nacional/2026/09/10/1211145/gestos-gobierno-congreso-magallanes.html", title: "Gestures of the government and Congress over Magallanes", title_original: "Gestos del gobierno y el Congreso por Magallanes", publisher: "Emol", date: "2026-09-10", tier: 3, lang: es}
+
+  - toward: org-eu
+    grade: partner
+    trend: stable
+    bond: none
+    since: '2025-02-01'
+    last_verified: '2026-10-16'
+    confidence: B
+    note: "The EU-Chile Interim Trade Agreement has been in force since 1 February 2025; the Advanced Framework Agreement (signed 13 December 2023, with a political and cooperation pillar) awaits ratification by all EU member states. The EU is Chile's third-largest trade partner, about 10% of its trade (EUR 21bn of goods in 2025). Partner is the grade the atlas gives non-members of the EU; stable because no source shows a change of line under Kast. Bond none is our reading. Chile's side of the Advanced Framework Agreement was approved by the Senate (Foreign Ministry)."
+    sources:
+      - {url: "https://policy.trade.ec.europa.eu/eu-trade-relationships-country-and-region/countries-and-regions/chile_en", title: "EU trade relations with Chile", publisher: "European Commission", date: "2026", tier: 1}
+      - {url: "https://trade.ec.europa.eu/access-to-markets/en/content/eu-chile-interim-trade-agreement", title: "EU-Chile Interim Trade Agreement", publisher: "European Commission (Access2Markets)", date: "2025-02-01", tier: 1}
+      - {url: "https://minrel.gob.cl/news/minister-of-foreign-affairs-highlights-senate-approval-of-the-advanced", title: "Minister of Foreign Affairs highlights Senate approval of the Advanced Framework Agreement", publisher: "Ministerio de Relaciones Exteriores de Chile", date: "2025", tier: 1}
+
+  - toward: GBR
+    grade: neutral
+    trend: stable
+    bond: none
+    since: '2026-04-06'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Recorded because of one fact, not because of a posture: after Kast's April 2026 visit to Buenos Aires the communique repeated Chile's support for Argentina's sovereignty rights over the Malvinas, South Georgia, South Sandwich and the surrounding maritime spaces, which the Foreign Ministry says is state policy since a 1992 declaration (Aylwin-Menem). The United Kingdom administers those islands and also holds an Antarctic claim that overlaps the Chilean one (Antarctic Treaty Secretariat: some claims overlap). Neutral is the default grade, kept so that the Falklands line is visible. Gap: bilateral trade, the UK-Chile association agreement and any UK reaction are not sourced."
+    sources:
+      - {url: "https://eldesconcierto.cl/actualidad/senador-exige-explicaciones-kast-posible-superposicion-territorio-chileno-y-argentino-respaldo-milei-n5457868", title: "Senator demands explanations from Kast over possible overlap of Chilean and Argentine territory after backing for Milei", title_original: "Senador exige explicaciones a Kast por posible superposición de territorio chileno y argentino tras respaldo a Milei", publisher: "El Desconcierto", date: "2026-04-07", tier: 3, lang: es}
+      - {url: "https://www.ats.aq/e/antarctictreaty.html", title: "The Antarctic Treaty (signed 1 December 1959; Article IV on claims)", publisher: "Antarctic Treaty Secretariat", date: "1959-12-01", tier: 1}
+
+  - toward: JPN
+    grade: partner
+    trend: stable
+    bond: none
+    since: '2007-11'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Chile and Japan are linked by an economic partnership agreement in force since November 2007 (METI, archived page, taken from the Wikipedia citation and not opened in this pass); Japanese companies have been in Chilean copper since Mitsubishi's 1985 stake in Escondida (Wikipedia index). Partner and bond none are our reading (C). Gap: no 2024-26 source on Japan-Chile trade, lithium or visits was read."
+    sources:
+      - {url: "https://web.archive.org/web/20170607200647/http://www.meti.go.jp/policy/trade_policy/epa/epa_en/cl/", title: "Japan-Chile Economic Partnership Agreement (archived 2017)", publisher: "Ministry of Economy, Trade and Industry of Japan", date: "2017-06-07", tier: 1}
+
+  - toward: KOR
+    grade: partner
+    trend: stable
+    bond: none
+    since: '2004'
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Chile and South Korea have had a free trade agreement since 2004 (Yonhap, taken from the Wikipedia citation); a summit on upgrading it was reported in 2019. Partner and bond none are our reading (C). Gap: no 2024-26 source on Korea-Chile trade, the FTA upgrade or lithium was read."
+    sources:
+      - {url: "https://en.yna.co.kr/view/AEN20190429001000315", title: "S. Korea, Chile to hold summit on upgrading bilateral ties", publisher: "Yonhap", date: "2019-04-29", tier: 3}
+      - {url: "https://koreajoongangdaily.joins.com/2022/09/19/national/diplomacy/korea-chile-free-trade/20220919144557043.html", title: "Korea-Chile free trade (Korea JoongAng Daily)", publisher: "Korea JoongAng Daily", date: "2022-09-19", tier: 3}

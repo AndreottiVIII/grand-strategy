@@ -1,34 +1,78 @@
 actor: LSO
 stances:
-  - toward: USA
-    grade: partner
-    trend: cooling
-    bond: none
-    since: 1966-10-04
-    last_verified: 2026-10-16
-    confidence: C
-    note: "Transactional, no alignment. Diplomatic relations since 1966 (US Office of the Historian). The 2025 tariff rate of 50%, announced in April, is the cooling: it hit textiles, the state of disaster followed in July 2025, and the rate was reported as paused with a 10% baseline. The grade partner is our reading, not a source's word; the bond is none because nothing deeper is documented. Status of the pause and of AGOA in 2026 not re-checked."
-    sources:
-      - {url: "https://history.state.gov/countries/lesotho", title: "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Lesotho", publisher: "Office of the Historian, US Department of State", date: 2023-11-08, tier: 1}
-      - {url: "https://www.businessday.co.za/bd/world/africa/2025-07-09-lesotho-reels-as-tariff-uncertainty-causes-order-cancellations-mass-lay-offs/", title: "Lesotho reels as tariff uncertainty causes order cancellations, mass lay-offs", publisher: "BusinessDay", date: 2025-07-09, tier: 3}
-      - {url: "https://www.timeslive.co.za/news/africa/2025-07-10-trump-tariffs-create-national-disaster-for-tiny-lesotho/", title: "WATCH | Trump tariffs create national disaster for tiny Lesotho", publisher: "TimesLIVE", date: 2025-07-10, tier: 3}
-  - toward: CHN
-    grade: partner
-    trend: stable
-    bond: none
-    since: 1983-04-30
-    last_verified: 2026-10-16
-    confidence: C
-    note: "Transactional. Diplomatic relations established 30 April 1983 by joint communique with the PRC. The 1990 switch to Taiwan and the 1994 return to Beijing, given in the Wikipedia index without citation, are not used here. The grade partner is our reading: no treaty, no alignment, no source found in this run for Chinese lending or trade with Lesotho."
-    sources:
-      - {url: "https://www.fmprc.gov.cn/mfa_eng/wjdt_665385/2649_665393/200204/t20020425_679068.html", title: "Joint Communiqué on the Establishment of Diplomatic Relations between the People's Republic of China and the Kingdom of Lesotho", publisher: "Ministry of Foreign Affairs of the PRC", date: 1983-04-30, tier: 1}
-  - toward: GBR
-    grade: partner
-    trend: stable
-    bond: affinity
-    since: 1966-10-04
-    last_verified: 2026-10-16
-    confidence: C
-    note: "Former protecting power, now a partner by diplomatic relation and trade. The Lesotho government's own 2021 speech on reopening the British High Commission is the only source here, and it gives the relation since 1966. The affinity bond is our reading (former colonial tie, Commonwealth member) and no source states it. The UK's position on the 2025 tariff is not checked."
-    sources:
-      - {url: "https://www.gov.ls/wp-content/uploads/2021/09/Remarks-by-the-Hon-PM-on-the-Reopening-of-the-British-High-Commission.-210930.pdf", title: "Remarks by the Right Honourable Prime Minister Dr. Moeketsi Majoro on the Reopening of the British High Commission", publisher: "Government of Lesotho", date: 2021-09-30, tier: 1}
+- toward: USA
+  grade: partner
+  trend: cooling
+  bond: none
+  since: 1966-10-04
+  last_verified: 2026-10-16
+  confidence: C
+  note: 'Transactional, no alignment. Diplomatic relations since 1966 (US Office of the Historian). The 2025 tariff rate of 50%, announced in April, is the cooling: it hit textiles, the state of disaster
+    followed in July 2025, and the rate was reported as paused with a 10% baseline. The grade partner is our reading, not a source''s word; the bond is none because nothing deeper is documented. Status
+    of the pause and of AGOA in 2026 not re-checked.'
+  sources:
+  - url: https://history.state.gov/countries/lesotho
+    title: 'A Guide to the United States'' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Lesotho'
+    publisher: Office of the Historian, US Department of State
+    date: 2023-11-08
+    tier: 1
+  - url: https://www.businessday.co.za/bd/world/africa/2025-07-09-lesotho-reels-as-tariff-uncertainty-causes-order-cancellations-mass-lay-offs/
+    title: Lesotho reels as tariff uncertainty causes order cancellations, mass lay-offs
+    publisher: BusinessDay
+    date: 2025-07-09
+    tier: 3
+  - url: https://www.timeslive.co.za/news/africa/2025-07-10-trump-tariffs-create-national-disaster-for-tiny-lesotho/
+    title: WATCH | Trump tariffs create national disaster for tiny Lesotho
+    publisher: TimesLIVE
+    date: 2025-07-10
+    tier: 3
+- toward: CHN
+  grade: partner
+  trend: stable
+  bond: none
+  since: 1983-04-30
+  last_verified: 2026-10-16
+  confidence: C
+  note: 'Transactional. Diplomatic relations established 30 April 1983 by joint communique with the PRC. The 1990 switch to Taiwan and the 1994 return to Beijing, given in the Wikipedia index without citation,
+    are not used here. The grade partner is our reading: no treaty, no alignment, no source found in this run for Chinese lending or trade with Lesotho.'
+  sources:
+  - url: https://www.fmprc.gov.cn/mfa_eng/wjdt_665385/2649_665393/200204/t20020425_679068.html
+    title: Joint Communiqué on the Establishment of Diplomatic Relations between the People's Republic of China and the Kingdom of Lesotho
+    publisher: Ministry of Foreign Affairs of the PRC
+    date: 1983-04-30
+    tier: 1
+- toward: GBR
+  grade: partner
+  trend: stable
+  bond: affinity
+  since: 1966-10-04
+  last_verified: 2026-10-16
+  confidence: C
+  note: Former protecting power, now a partner by diplomatic relation and trade. The Lesotho government's own 2021 speech on reopening the British High Commission is the only source here, and it gives the
+    relation since 1966. The affinity bond is our reading (former colonial tie, Commonwealth member) and no source states it. The UK's position on the 2025 tariff is not checked.
+  sources:
+  - url: https://www.gov.ls/wp-content/uploads/2021/09/Remarks-by-the-Hon-PM-on-the-Reopening-of-the-British-High-Commission.-210930.pdf
+    title: Remarks by the Right Honourable Prime Minister Dr. Moeketsi Majoro on the Reopening of the British High Commission
+    publisher: Government of Lesotho
+    date: 2021-09-30
+    tier: 1
+- toward: ZAF
+  grade: partner
+  trend: stable
+  bond: none
+  since: '2026-06-02'
+  last_verified: '2026-10-16'
+  confidence: C
+  reciprocal_of: ZAF
+  note: Provisional reciprocal of South Africa's 'partner' stance toward Lesotho, written on 2026-10-16 by tools/reciprocate.py from the same evidence; to be rewritten from Lesotho's side.
+  sources:
+  - url: https://www.gov.ls/?p=9552
+    title: Lesotho engages South Africa in pursuit of peace, stability and sustainable development
+    publisher: Government of Lesotho
+    date: 2026-06-02
+    tier: 1
+  - url: https://www.engineeringnews.co.za/article/lesotho-highlands-water-project-phase-ii-2026-09-18
+    title: Lesotho Highlands Water Project - Phase II
+    publisher: Engineering News
+    date: 2026-09-18
+    tier: 3

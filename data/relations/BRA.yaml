@@ -12,6 +12,53 @@ relations:
     sources:
       - {url: "https://www.elheraldo.hn/mundo/lula-da-silva-afirma-captura-nicolas-maduro-parte-estados-unidos-cruza-linea-inaceptable-AC28803311", title: "Lula da Silva says the US capture of Nicolas Maduro crosses an unacceptable line", publisher: "El Heraldo (Honduras)", date: 2026-01, tier: 3, lang: es}
       - {url: "https://www.deccanherald.com/world/brazils-lula-held-call-with-venezuelas-interim-president-on-saturday-3852611", title: "Brazil's Lula held call with Venezuela's interim president on Saturday", publisher: "Deccan Herald", date: 2026-01, tier: 3}
+  - to: org-un
+    layer: objective
+    type: influence_goal
+    summary: "Brazil campaigns for a permanent seat on a reformed Security Council (the G4 with Germany, India and Japan) and for multilateral reform. Lula opened the 81st General Assembly debate on 22 September 2026, the tenth time he has done so; the speech was received with applause when he said Brazil 'doesn't fit in anyone's backyard' (press report). The specific reform proposals made on the day were not seen in the sources read."
+    since: 2026-09-22
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.dgabc.com.br/Noticia/4348046/onu-lula-defende-multilateralismo-e-reforma-do-conselho-de-seguranca", title: "UN: Lula defends multilateralism and Security Council reform", title_original: "ONU: Lula defende multilateralismo e reforma do Conselho de Seguranca", lang: pt, publisher: "Diario do Grande ABC", date: 2026-09-22, tier: 3}
+      - {url: "https://www.poder360.com.br/poder-midia/imprensa-internacional-destaca-discurso-de-lula-na-onu-2/", title: "International press highlights Lula's speech at the UN", title_original: "Imprensa internacional destaca discurso de Lula na ONU", lang: pt, publisher: "Poder360", date: 2026-09, tier: 3}
+  - to: PSE
+    layer: objective
+    type: influence_goal
+    summary: "Brazil pushes the creation of a Palestinian state through the UN: at the General Assembly in September 2025 Lula argued that the UN should have the same strength to create the Palestinian state that it had to create Israel, and the Foreign Ministry hoped the two-state conference convened by France and Saudi Arabia would bring more recognitions. Brazil has recognised Palestine since 1 December 2010 (dataset row)."
+    since: 2025-09
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://anba.com.br/en/brazils-lulas-ny-agenda-to-include-palestine/", title: "Brazil's Lula's New York agenda to include Palestine", publisher: "ANBA", date: 2025-09, tier: 3}
+      - {url: "https://www.newarab.com/news/world-recognising-gaza-war-actually-genocide-brazils-lula?amp", title: "World recognising Gaza war actually genocide, Brazil's Lula says", publisher: "The New Arab", date: 2025-09, tier: 3}
+  - to: org-mercosur
+    layer: objective
+    type: influence_goal
+    summary: "Brazil uses Mercosur as the vehicle for its trade opening: the EU agreement (Senate approval 4 March 2026, promulgation 17 March, provisional application 1 May) and the economic partnership negotiations with Japan launched on 30 June 2026, all inside the bloc and against the pull of Argentina's bilateral line. Bolivia and Paraguay attended the June summit in Paraguay where Lula met Paz and Kast."
+    since: 2026-03
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www12.senado.leg.br/noticias/materias/2026/03/04/por-unanimidade-senado-aprova-acordo-entre-mercosul-e-ue", title: "Senate approves Mercosur-EU agreement unanimously", title_original: "Por unanimidade, Senado aprova acordo entre Mercosul e UE", lang: pt, publisher: "Senado Federal", date: 2026-03-04, tier: 1}
+      - {url: "https://datamarnews.com/noticias/mercosur-launches-economic-partnership-talks-with-japan-eyes-china/", title: "Mercosur launches economic partnership talks with Japan, eyes China", publisher: "Datamar News", date: 2026-06-30, tier: 3}
+
+  # ---------- alignment ----------
+  - to: VEN
+    layer: alignment
+    type: recognition
+    summary: "On 4 January 2026 Brazil's acting foreign minister, Maria Laura da Rocha, said Brasilia recognises Delcy Rodríguez as head of state in Maduro's absence and opposes any territorial aggression; Lula called the US operation a grave affront to Venezuela's sovereignty and asked the UN for a strong response. This is recognition of a government, not of the state, and the Venezuelan card cites the same reports."
+    since: 2026-01-04
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://s.thepeninsula.qa/article/04/01/2026/brazil-recognises-venezuelan-vp-as-head-of-state", title: "Brazil recognizes Venezuelan VP as head of state", publisher: "The Peninsula", date: 2026-01-04, tier: 3}
+      - {url: "https://jornaldebrasilia.com.br/noticias/mundo/brasil-reconhece-vice-como-presidente-interina-da-venezuela-diz-no-2-do-itamaraty/", title: "Brazil recognises the vice president as interim president of Venezuela, says Itamaraty's number two", title_original: "Brasil reconhece vice como presidente interina da Venezuela, diz no 2 do Itamaraty", lang: pt, publisher: "Jornal de Brasilia", date: 2026-01-04, tier: 3}
+      - {url: "https://cyprus-mail.com/2026/01/03/brazil-says-us-crossed-unacceptable-line-over-military-strikes-on-venezuela", title: "Brazil says US crossed 'unacceptable line' over military strikes on Venezuela", publisher: "Cyprus Mail", date: 2026-01-03, tier: 3}
 
   # ---------- action ----------
   - to: CHN
@@ -24,6 +71,18 @@ relations:
     confidence: B
     sources:
       - {url: "https://www.csis.org/analysis/great-balancing-act-lula-china-and-future-us-brazil-relations", title: "The great balancing act: Lula in China and the future of US-Brazil relations", publisher: "CSIS", date: 2023-04-19, tier: 2}
+  - to: CHN
+    layer: action
+    type: sanction
+    summary: "China's beef safeguard: a 55% duty on imports above a country quota, on top of the 12% base rate; Brazil's quota is 1.106 million tonnes in 2026 (1.128 in 2027, 1.151 in 2028). Brazil had filled 65.4% of it by the end of May, and the 55% duty began on 30 September 2026 once the quota was reached (Reuters). China took 47.67% of Brazil's beef exports on average in 2025 (46.3% in January 2026); the beef association projects a fall of about 10% in 2026 exports, and packers halted output as the limit neared."
+    since: 2026-09-30
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.reuters.com/world/china/china-adds-55-tariff-brazil-beef-imports-2026-09-30/", title: "China adds 55% tariff on Brazil beef imports after quota is reached", publisher: "Reuters", date: 2026-09-30, tier: 3}
+      - {url: "https://www.foodbusinessmea.com/brazils-beef-exports-to-china-set-to-reach-annual-quota-by-september-cepea/", title: "Brazil's beef exports to China set to reach annual quota by September - CEPEA", publisher: "Food Business Middle East & Africa", date: 2026, tier: 4}
+      - {url: "https://datamarnews.com/?p=71028", title: "Brazilian meatpackers halt output as China beef quota nears limit", publisher: "Datamar News", date: 2026, tier: 3}
   - to: RUS
     layer: action
     type: un_vote
@@ -35,6 +94,17 @@ relations:
     sources:
       - {url: "https://digitallibrary.un.org/record/4103179", title: "A/RES/ES-11/10 Support for lasting peace in Ukraine - voting record (Brazil abstained)", publisher: "United Nations", date: 2026-02-24, tier: 1}
       - {url: "https://www.indiatoday.in/world/story/brics-summit-new-delhi-joint-declaration-makes-no-mention-of-ukraine-war-marks-shift-from-rio-2993451-2026-09-13", title: "BRICS joint declaration in New Delhi makes no mention of Ukraine war", publisher: "India Today", date: 2026-09-13, tier: 3}
+  - to: org-brics
+    layer: action
+    type: agreement
+    summary: "The BRICS summit in Rio, 6-7 July 2025, chaired by Brazil: the joint statement warned that tariff rises threaten global trade, Xi sent his premier and Putin joined online, and hours later Trump posted that countries aligning with BRICS 'anti-American policies' would face an extra 10% tariff, repeating it two days later. Lula framed the group as a way to update global governance. The measure was a threat, not an act, in the sources read."
+    since: 2025-07-06
+    until: 2025-07-07
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.arabnews.com/node/2607166/amp", title: "Trump threatens extra 10% tariffs on BRICS as leaders meet in Brazil", publisher: "Arab News", date: 2025-07-07, tier: 3}
+      - {url: "https://www.ewn.co.za/2025/07/07/brics-criticism-brings-trump-10-tariff-threat", title: "BRICS criticism brings Trump 10% tariff threat", publisher: "Eyewitness News (South Africa)", date: 2025-07-07, tier: 3}
   - to: org-eu
     layer: action
     type: agreement
@@ -77,17 +147,179 @@ relations:
     sources:
       - {url: "https://www.elheraldo.hn/mundo/lula-da-silva-afirma-captura-nicolas-maduro-parte-estados-unidos-cruza-linea-inaceptable-AC28803311", title: "Lula da Silva says the US capture of Nicolas Maduro crosses an unacceptable line", publisher: "El Heraldo (Honduras)", date: 2026-01, tier: 3, lang: es}
       - {url: "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ustr-section-301-action-brazils-unreasonable-acts-policies-and-practices", title: "USTR Section 301 action on Brazil's unreasonable acts, policies, and practices", publisher: "Office of the United States Trade Representative", date: 2026-07-15, tier: 1}
-  - to: ARG
+  - to: USA
+    layer: action
+    type: sanction
+    summary: "The Section 301 duty: on 15 July 2026 the USTR imposed a 25% tariff on certain Brazilian goods, in force from 22 July, on grounds of digital trade and electronic payments, preferential tariffs, anti-corruption enforcement, intellectual property, ethanol access and illegal deforestation. Beef, coffee, aircraft, energy products and rare earths are exempt; Brazil's trade minister put the covered share at about 18% of exports to the US, nearly USD 7bn (as reported). A separate forced-labour Section 301 measure adding 12.5% followed three days later (reported). It replaced the 50% IEEPA tariff of 30 July 2025 (EO 14323) that the Supreme Court's February 2026 ruling cut down. Mirror of the USA row, same sources; Brazil called the duties unfounded and prepared a reciprocity response."
+    since: 2026-07-15
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ustr-section-301-action-brazils-unreasonable-acts-policies-and-practices", title: "USTR Section 301 action on Brazil's unreasonable acts, policies, and practices", publisher: "Office of the United States Trade Representative", date: 2026-07-15, tier: 1}
+      - {url: "https://profit.pakistantoday.com.pk/2026/07/17/us-imposes-25percent-tariffs-on-brazilian-goods-keeps-exemptions-for-beef-coffee-and-aircraft", title: "US imposes 25% tariffs on Brazilian goods, keeps exemptions for beef, coffee and aircraft", publisher: "Profit (Pakistan Today)", date: 2026-07-17, tier: 3}
+      - {url: "https://www.sekologistics.com/en/resource-hub/news/client-advisory-united-states-imposes-25-section-301-tariffs-on-products-of-brazil-effective-july-22/", title: "Client advisory: United States imposes 25% Section 301 tariffs on products of Brazil, effective July 22", publisher: "SEKO Logistics", date: 2026-07, tier: 4}
+      - {url: "https://www.cbsnews.com/news/supreme-court-tariffs-decision-trump/", title: "Supreme Court strikes down Trump tariffs in major setback for economic agenda", publisher: "CBS News", date: 2026-02, tier: 3}
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "Lula and Trump met at the White House on 7 May 2026 and told their ministers to settle the tariff differences within 30 days, each side to cut its tariffs if needed; Brazil's aim was to close the Section 301 inquiry, and it put its average tariff on US goods at 2.7%. A later phone call set another round of talks, but the 25% duty still came on 15 July, so the track did not hold."
+    since: 2026-05-07
+    until: 2026-07-15
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.diariodepernambuco.com.br/economia/2026/05/11713769-lula-e-trump-orientam-ministros-a-resolverem-tarifas-em-30-dias.html", title: "Lula and Trump tell ministers to resolve the tariffs in 30 days", title_original: "Lula e Trump orientam ministros a resolverem tarifas em 30 dias", lang: pt, publisher: "Diario de Pernambuco", date: 2026-05, tier: 3}
+      - {url: "https://www.congressoemfoco.com.br/noticia/121538/lula-e-trump-discutem-tarifas-e-combinam-nova-rodada-de-negociacoes", title: "Lula and Trump discuss tariffs and agree a new round of negotiations", title_original: "Lula e Trump discutem tarifas e combinam nova rodada de negociacoes", lang: pt, publisher: "Congresso em Foco", date: 2026, tier: 3}
+  - to: USA
     layer: action
     type: incident
-    summary: "Milei's feud with Lula reached Mercosur: at a July 2026 rally in São Paulo for Flávio Bolsonaro he called Lula a 'thief' and a 'convict', and Brazil recalled its ambassador from Buenos Aires for consultations (per the coverage; not checked against a primary source). Paraguay's president says the crisis has not stopped the bloc working."
-    since: 2026-07
+    summary: "On 13 March 2026 Lula barred the US official Darren Beattie from entering Brazil after he sought to visit Jair Bolsonaro in prison (Reuters, as reported). In the same weeks Washington sought a federal critical-minerals agreement and by 18 March was 'still waiting for a political response from Brasilia'; federal officials withdrew from a US embassy-backed minerals summit in Sao Paulo, and the US signed a preliminary agreement with the state of Goias, home of Serra Verde, Brazil's only rare-earth producer."
+    since: 2026-03-13
     until: null
     last_verified: 2026-10-16
     confidence: C
     sources:
+      - {url: "https://www.miningreporters.com/noticia/news/2026/03/us-brazil-critical-minerals-deal-lula-summit", title: "US-Brazil critical minerals deal hinges on Brasilia's go-ahead", publisher: "Mining Reporters", date: 2026-03-18, tier: 4}
+  - to: ARG
+    layer: action
+    type: incident
+    summary: "Milei's feud with Lula reached Mercosur: at a rally of Flávio Bolsonaro's party in São Paulo on 25 July 2026 he called Lula a 'thief' and a 'convict' (and Justice de Moraes worse). Itamaraty summoned the Argentine ambassador, Daniel Raimondi, and on 26 July called its own ambassador in Buenos Aires, Julio Bitelli, for consultations; Milei repeated the accusations on 2 August and Bitelli was told to stay in Brazil indefinitely. Argentina's foreign minister Pablo Quirno said a rupture is out of the question, Brazil being the main trading partner. Outlets disagree on whether Brazil downgraded the embassy to a chargé d'affaires; not recorded. Paraguay's president says the crisis has not stopped the bloc working."
+    since: 2026-07-25
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
       - {url: "https://en.mercopress.com/2026/06/29/milei-brings-open-disputes-with-brazil-to-a-mercosur-summit-focused-on-trade-deals", title: "Milei brings open disputes with Brazil to a Mercosur summit focused on trade deals", publisher: "MercoPress", date: 2026-06-29, tier: 3}
       - {url: "https://en.mercopress.com/2026/08/14/pena-says-the-milei-lula-crisis-has-not-affected-how-mercosur-functions", title: "Peña says the Milei-Lula crisis has not affected how Mercosur functions", publisher: "MercoPress", date: 2026-08-14, tier: 3}
+      - {url: "https://www.opovo.com.br/noticias/mundo/2026/07/27/brasil-convoca-embaixador-apos-ataques-de-milei-a-lula.html", title: "Brazil summons ambassador after Milei's attacks on Lula", title_original: "Brasil convoca embaixador apos ataques de Milei a Lula", lang: pt, publisher: "O Povo", date: 2026-07-27, tier: 3}
+      - {url: "https://www.dgabc.com.br/Noticia/4339074/novos-ataques-de-milei-a-lula-complicam-retorno-de-embaixador-do-brasil-a-argentina", title: "New attacks by Milei on Lula complicate the return of Brazil's ambassador to Argentina", title_original: "Novos ataques de Milei a Lula complicam retorno de embaixador do Brasil a Argentina", lang: pt, publisher: "Diario do Grande ABC (Estadao)", date: 2026-08, tier: 3}
+  - to: DEU
+    layer: action
+    type: agreement
+    summary: "Third German-Brazilian government consultations in Hanover, April 2026: about 20 declarations of intent and agreements; Brazil was the partner country of the Hannover Messe and Lula pitched niobium, graphite and rare earths, AI and data centres; both leaders welcomed the EU-Mercosur start of 1 May. Germany pledged EUR 1bn to the Tropical Forest Forever Facility at COP30 and NGOs asked for EUR 3bn; the joint fair walk fell apart over scheduling."
+    since: 2026-04-19
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/04/19/germany-s-merz-brazil-s-lula-stress-close-european-brazilian-cooperation", title: "Germany's Merz, Brazil's Lula stress close European-Brazilian cooperation", publisher: "Reuters (via Internazionale)", date: 2026-04-19, tier: 3}
+      - {url: "https://www.zdfheute.de/politik/merz-lula-messe-hannover-brasilien-wirtschaft-100.html", title: "Hannover Messe: Brazil's president tours without Merz", title_original: "Hannover-Messe: Brasiliens Praesident macht Rundgang ohne Merz", lang: de, publisher: "ZDFheute", date: 2026-04, tier: 3}
+  - to: GBR
+    layer: action
+    type: agreement
+    summary: "The UK-Brazil Strategic Partnership 2026 to 2030 was signed on 26 March 2026 by Yvette Cooper and Mauro Vieira on the margins of a G7 foreign ministers' meeting, covering foreign and security policy, growth, defence and sustainable development; bilateral trade was GBP 13.3bn in 2025. A framework, not a trade agreement. Earlier: joint statement at the Rio G20, 19 November 2024."
+    since: 2026-03-26
+    until: null
+    last_verified: 2026-10-16
+    confidence: A
+    sources:
+      - {url: "https://www.gov.uk/government/publications/uk-brazil-strategic-partnership-2026-to-2030", title: "UK-Brazil Strategic Partnership 2026 to 2030", publisher: "UK Government (FCDO)", date: 2026-03-26, tier: 1}
+      - {url: "https://www.gov.uk/government/news/joint-statement-by-the-governments-of-the-united-kingdom-and-brazil-19-november-2024", title: "Joint statement by the governments of the United Kingdom and Brazil, 19 November 2024", publisher: "UK Government", date: 2024-11-19, tier: 1}
+  - to: ESP
+    layer: action
+    type: agreement
+    summary: "First Spain-Brazil summit, Barcelona, 17 April 2026, chaired by Lula and Sanchez: a Political Declaration and agreements on critical minerals, information technology, science and innovation, and social cooperation (racial equality, gender violence); the first such summit between Spain and a Latin American state. It followed the declaration of 21 July 2025 in Santiago with the leaders of Chile, Uruguay and Colombia on a renewed multilateralism and the defence of democracy."
+    since: 2026-04-17
+    until: null
+    last_verified: 2026-10-16
+    confidence: A
+    sources:
+      - {url: "https://www.lamoncloa.gob.es/lang/en/presidente/news/paginas/2026/20260417-spain-brazil-summit.aspx", title: "Spain-Brazil summit (Barcelona, 17 April 2026)", publisher: "Government of Spain (La Moncloa)", date: 2026-04-17, tier: 1}
+      - {url: "https://www.lamoncloa.gob.es/lang/en/presidente/news/Paginas/2025/20250721-chile-declaration.aspx", title: "Pedro Sanchez and the leaders of Chile, Brazil, Uruguay and Colombia approve a declaration in defence of democracy", publisher: "Government of Spain (La Moncloa)", date: 2025-07-21, tier: 1}
+  - to: JPN
+    layer: action
+    type: agreement
+    summary: "Mercosur and Japan formally launched economic partnership negotiations on 30 June 2026, after a first partnership meeting in Asuncion in January 2026; Lula and Takaichi discussed the launch at a bilateral at the G7 in June. Japan's motive is to diversify critical-mineral and energy supplies; the state agency JOGMEC signed a memorandum with the state of Goias in March 2026. Beef is the main friction."
+    since: 2026-06-30
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://datamarnews.com/noticias/mercosur-launches-economic-partnership-talks-with-japan-eyes-china/", title: "Mercosur launches economic partnership talks with Japan, eyes China", publisher: "Datamar News", date: 2026-06-30, tier: 3}
+      - {url: "https://www.nippon.com/en/news/yjj2026012800791", title: "Japan, Mercosur hold 1st partnership meeting", publisher: "Nippon.com (Jiji)", date: 2026-01-28, tier: 3}
+      - {url: "https://english.adnkronos.com/2026/05/03/exclusive-japan-prepares-to-launch-trade-talks-with-mercosur/", title: "EXCLUSIVE: Japan prepares to launch trade talks with Mercosur", publisher: "Adnkronos", date: 2026-05-03, tier: 4}
+  - to: ITA
+    layer: action
+    type: incident
+    summary: "Italy asked at the EU summit of 18 December 2025 for more time on the Mercosur signing for its farmers, moving the signing to January 2026. Lula said Meloni told him she was not against the deal and needed days to persuade the farmers, and in February 2026 he urged the EU to finish it, voicing frustration with Macron and Meloni. The agreement was signed on 17 January 2026."
+    since: 2025-12-18
+    until: 2026-01-17
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.eunews.it/en/2025/12/18/italy-the-tipping-point-on-mercosur-macron-meloni-agrees-were-not-ready", title: "Italy, the tipping point on Mercosur: Macron, Meloni agree 'we are not ready'", publisher: "Eunews", date: 2025-12-18, tier: 3}
+      - {url: "https://www.infomoney.com.br/?p=3146684", title: "Lula says he spoke to Meloni and that she asked for a few days to close the Mercosur-EU deal", title_original: "Lula diz que falou com Meloni e que ela pediu uns dias para fechar acordo Mercosul-UE", lang: pt, publisher: "InfoMoney", date: 2025-12, tier: 3}
+      - {url: "https://batimes.com.ar/news/economy/lula-tells-eu-its-now-or-never-for-mercosur-trade-deal.phtml", title: "Lula tells EU it's now or never for Mercosur trade deal", publisher: "Buenos Aires Times", date: 2026-02-10, tier: 3}
+  - to: NOR
+    layer: action
+    type: agreement
+    summary: "At the COP30 leaders' summit in Belem (November 2025) Brazil launched the Tropical Forest Forever Facility with more than USD 5.5bn pledged: Norway USD 3bn, the largest, Indonesia and Brazil USD 1bn each, France EUR 500m, with Germany's EUR 1bn announced later (about USD 5.65bn in total); 53 countries endorsed the declaration. The target is USD 125bn (USD 25bn from sponsor governments, USD 100bn private) and Brazil's finance minister expects USD 10bn before the COP presidency passes on in November 2026. The UK endorsed without pledging."
+    since: 2025-11
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.gov.br/mre/en/subjects/cop-30/over-usd-5-5-billion-announced-for-tropical-forest-forever-facility-as-53-countries-endorse-the-historic-tfff-launch-declaration", title: "Over USD 5.5 billion announced for Tropical Forest Forever Facility as 53 countries endorse the historic TFFF launch declaration", publisher: "Brazilian Ministry of Foreign Affairs (Itamaraty)", date: 2025-11, tier: 1}
+      - {url: "https://www.intellinews.com/brazil-unveils-125bn-tropical-forest-fund-ahead-of-cop30-summit-410145/", title: "Brazil unveils USD 125bn tropical forest fund ahead of COP30 summit", publisher: "bne IntelliNews", date: 2025-11, tier: 3}
+      - {url: "https://www.worldports.org/?p=656565", title: "COP: Germany commits EUR 1bn to TFFF", publisher: "World Ports", date: 2025-11, tier: 4}
+  - to: ZAF
+    layer: action
+    type: visit
+    summary: "Ramaphosa's state visit to Brazil, 9-10 March 2026, at Lula's invitation: agreements on trade and tourism, including a memorandum between ApexBrasil and South Africa's trade department, and a business forum (mining, aviation, agriculture, energy). Trade was ZAR 32.5bn in 2025 on the South African figure (exports ZAR 5.2bn, imports ZAR 27.3bn), about USD 2bn on Brazil's. The partnership rests on the 2010 Declaration of Strategic Partnership; Lula named BRICS, IBSA and the G20 as the shared frames."
+    since: 2026-03-09
+    until: 2026-03-10
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.gov.br/planalto/en/latest-news/2026/03/201csouth-africa-and-brazil-are-working-to-bring-our-continents-closer-together-201d-says-lula-as-he-receives-president-cyril-ramaphosa", title: "South Africa and Brazil are working to bring our continents closer together, says Lula as he receives President Cyril Ramaphosa", publisher: "Presidency of Brazil (Planalto)", date: 2026-03, tier: 1}
+      - {url: "https://presidency.gov.za/node/9808", title: "President Ramaphosa state visit to Brazil", publisher: "The Presidency of South Africa", date: 2026-03, tier: 1}
+      - {url: "https://mg.co.za/2026-03-19-brazil-and-sa-strengthen-ties/", title: "Brazil and SA strengthen ties", publisher: "Mail & Guardian", date: 2026-03-19, tier: 3}
+  - to: AGO
+    layer: action
+    type: visit
+    summary: "President Lourenco's state visit to Brasilia, May 2025: four memoranda (public security, family farming, energy, rights of disabled people), a Federal Police-Angolan police cooperation memorandum and a Petrobras-Sonangol agreement, with Brazil brokering BNDES and Embraer financing for three Embraer 190 jets. Lula said trade had fallen from USD 4.5bn at its best to USD 1.5bn and that Angola, a good payer, repaid its debt five years early; financing lines are to resume."
+    since: 2025-05
+    until: 2025-05
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.rtp.pt/noticias/economia/lula-quer-reforcar-investimentos-e-trocas-comerciais-com-angola-e-elogia-bom-pagador_n1657173", title: "Lula wants to reinforce investment and trade with Angola and praises a 'good payer'", title_original: "Lula quer reforcar investimentos e trocas comerciais com Angola e elogia 'bom pagador'", lang: pt, publisher: "RTP", date: 2025-05, tier: 3}
+      - {url: "https://safras.com.br/presidente-lula-assina-acordos-de-cooperacao-com-angola-petrobras-assina-com-sonangol/", title: "President Lula signs cooperation agreements with Angola; Petrobras signs with Sonangol", title_original: "Presidente Lula assina acordos de cooperacao com Angola; Petrobras assina com Sonangol", lang: pt, publisher: "Safras & Mercado", date: 2025-05, tier: 3}
+  - to: CHL
+    layer: action
+    type: visit
+    summary: "Lula and Kast met on the sidelines of the Mercosur summit in Paraguay (30 June-1 July 2026) and agreed to expand business and investment and to cooperate in aeronautics, science, defence and education; Lula invited Kast to visit Brazil in 2026. Lula had cancelled his trip to Kast's inauguration in March (Vieira went); Kast's delegation said no trip to Brazil would be considered before the Brazilian vote."
+    since: 2026-07-01
+    until: 2026-07-01
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.eldinamo.cl/politica/2026/07/01/los-acuerdos-con-kast-que-anuncio-lula-da-silva-luego-de-su-reunion-bilateral-en-paraguay/", title: "The agreements with Kast announced by Lula da Silva after their bilateral meeting in Paraguay", title_original: "Los acuerdos con Kast que anuncio Lula da Silva luego de su reunion bilateral en Paraguay", lang: es, publisher: "El Dinamo", date: 2026-07-01, tier: 3}
+      - {url: "https://www.emol.com/noticias/Nacional/2026/07/04/1204633/kast-lula-elecciones-brasil-2026.html", title: "Kast, Lula and the 2026 Brazilian elections", title_original: "Kast, Lula y las elecciones de Brasil 2026", lang: es, publisher: "Emol", date: 2026-07-04, tier: 3}
+  - to: ISR
+    layer: action
+    type: incident
+    summary: "After Lula compared the Gaza war to the Holocaust at the African Union summit (17 Feb 2024), Israel declared him persona non grata (19 Feb 2024) and Brazil recalled its ambassador, who never returned and was moved to the Geneva mission, leaving an embassy under a chargé. In August 2025 Israel announced a downgrade of relations after Brazil refused to approve its newly named ambassador (the Anadolu report's date is inconsistent in the Wikipedia index; verify)."
+    since: 2024-02-19
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://apnews.com/article/israel-brazil-palestinians-gaza-holocaust-netanyahu-lula-3816f5b18bcb4922898f79824c6f3350", title: "Israel declares Brazil's Lula persona non grata over Holocaust comparison (AP, 19 Feb 2024)", publisher: "AP", date: 2024-02-19, tier: 3}
+      - {url: "https://www.ynetnews.com/article/skwnwree0", title: "Brazil's president recalls ambassador from Israel over Gaza war", publisher: "Ynetnews", date: 2024, tier: 3}
+      - {url: "https://www.aa.com.tr/en/americas/israel-downgrades-diplomatic-ties-with-brazil-following-its-refusal-to-approve-new-ambassador/3669076", title: "Israel downgrades diplomatic ties with Brazil following its refusal to approve new ambassador", publisher: "Anadolu Agency", date: 2025-08, tier: 3}
+  - to: ISR
+    layer: action
+    type: incident
+    summary: "On 17 September 2025 Brazil filed a declaration of intervention under Article 63 of the ICJ Statute in South Africa v. Israel (Application of the Genocide Convention in the Gaza Strip), arguing as a party to the 1948 Convention on the reading of Articles I, II and III; Brazil had flagged the step in July 2025. The effect is largely symbolic (the eventual interpretation binds Brazil). Spain, Ireland, Mexico and Turkey had already joined."
+    since: 2025-09-17
+    until: null
+    last_verified: 2026-10-16
+    confidence: A
+    sources:
+      - {url: "https://www.un.org/unispal/document/brazil-files-a-declaration-icj-19sep25", title: "Brazil files a declaration of intervention at the ICJ (South Africa v. Israel)", publisher: "United Nations (UNISPAL)", date: 2025-09-19, tier: 1}
+      - {url: "https://www.aljazeera.com/news/2025/9/20/brazil-joins-south-africas-genocide-case-against-israel-at-icj", title: "Brazil joins South Africa's 'genocide' case against Israel at ICJ", publisher: "Al Jazeera", date: 2025-09-20, tier: 3}
 
   # ---------- dependency ----------
   - to: PRT
@@ -103,3 +335,140 @@ relations:
     sources:
       - {url: "https://dnbrasil.dn.pt/brasileiros-receberam-115709-novas-autorizaes-de-residncia-em-portugal-em-2025", title: "Brazilians received 115,709 new residence permits in Portugal in 2025", title_original: "Brasileiros receberam 115.709 novas autorizacoes de residencia em Portugal em 2025", lang: pt, publisher: "DN Brasil (AIMA report)", date: 2026-09, tier: 3}
       - {url: "https://www.dnoticias.pt/2026/2/23/482430-remessas-dos-emigrantes-subiram-214-em-2025-para-4387-milhoes-de-euros/", title: "Emigrant remittances rose 2.14% in 2025 to EUR 4,387 million", title_original: "Remessas dos emigrantes subiram 2,14% em 2025 para 4.387 milhoes de euros", lang: pt, publisher: "DNoticias (Lusa, Banco de Portugal data)", date: 2026-02-23, tier: 3}
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    value: 0.29
+    unit: share_of_brazilian_exports_2025
+    summary: "China is the first market for Brazilian goods: about USD 100.0bn of Brazil's record USD 349bn exports in 2025 (+6% on 2024's USD 94.4bn), roughly 29% (our calculation from the two reported totals). In January-September 2025 the Brazil-China Business Council put China at 29.3% of shipments against 11.3% for the United States, and in September 2025 exports to China grew 14.7% while those to the US fell 20.3%."
+    since: 2025
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://amdjus.com.br/brasil-vendas-para-a-china-tem-alta-de-6-e-superam-us-100-bilhoes-em-2025/", title: "Brazil: sales to China up 6% and exceed USD 100 billion in 2025", title_original: "Brasil: vendas para a China tem alta de 6% e superam US$ 100 bilhoes em 2025", lang: pt, publisher: "AmdJus", date: 2026-01, tier: 4}
+      - {url: "https://agenciagov.ebc.com.br/noticias/202601/exportacoes-brasileiras-alcancam-us-349-bi-em-2025-e-batem-recorde-historico", title: "Brazilian exports reach USD 349bn in 2025 and set a historic record", title_original: "Exportacoes brasileiras alcancam US$ 349 bi em 2025 e batem recorde historico", lang: pt, publisher: "Agencia Gov (EBC)", date: 2026-01, tier: 1}
+      - {url: "https://datamarnews.com/?p=65299", title: "China strengthens lead in Brazilian exports", publisher: "Datamar News", date: 2025, tier: 3}
+      - {url: "https://www.band.com.br/economia/noticias/exportacoes-em-setembro-cairam-203-para-os-eua-e-cresceram-147-para-a-china-202510061627", title: "September exports fell 20.3% to the US and rose 14.7% to China", title_original: "Exportacoes em setembro cairam 20,3% para os EUA e cresceram 14,7% para a China", lang: pt, publisher: "Band", date: 2025-10-06, tier: 3}
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    value: 0.80
+    unit: share_of_soybean_exports_jan_oct_2025
+    summary: "Soybeans are the sharpest dependency: through October 2025 China took nearly 80% of Brazil's soybean exports (Anec), up from a 74% average in 2021-24, and 93% of September's shipments, as US soy lost the Chinese market in the trade war. Brazilian soy exports were forecast at a record of about 110 million tonnes for 2025."
+    since: 2025
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.agrolatam.com/amp/brazil-soybean-exports-record-2025", title: "Brazil soybean exports record 2025", publisher: "AgroLatam", date: 2025, tier: 4}
+      - {url: "https://www.country-guide.ca/?p=146168", title: "Brazil to raise soy sales to China after record shipments in 2025, consultancy says", publisher: "Country Guide", date: 2025, tier: 4}
+  - to: USA
+    layer: dependency
+    type: trade_share
+    value: 0.113
+    unit: share_of_brazilian_exports_jan_sep_2025
+    summary: "The United States took 11.3% of Brazilian exports in January-September 2025 (USD 29.2bn, -0.6% on the year) against 29.3% for China, the second-largest market and the one the tariff targeted. In September 2025, in the second month of the 50% surcharge, exports to the US fell 20.3% to USD 2.58bn (boneless beef -66%, green coffee -29%); in the quarter the surcharge applied, -36.4%. Coffee exports to the US still reached a record USD 2.68bn in 2025."
+    since: 2025
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.band.com.br/economia/noticias/exportacoes-em-setembro-cairam-203-para-os-eua-e-cresceram-147-para-a-china-202510061627", title: "September exports fell 20.3% to the US and rose 14.7% to China", title_original: "Exportacoes em setembro cairam 20,3% para os EUA e cresceram 14,7% para a China", lang: pt, publisher: "Band", date: 2025-10-06, tier: 3}
+      - {url: "https://datamarnews.com/?p=65299", title: "China strengthens lead in Brazilian exports", publisher: "Datamar News", date: 2025, tier: 3}
+      - {url: "https://datamarnews.com/?p=66036", title: "Tariff hike cost Brazilian agribusiness USD 240 million in exports to the United States", publisher: "Datamar News", date: 2025, tier: 3}
+  - to: FRA
+    layer: dependency
+    type: arms_supply
+    value: 10
+    unit: usd_billion_prosub_programme_investment_since_2008
+    summary: "PROSUB, the submarine development programme signed with France in 2008 (investment about USD 10bn): Naval Group's Scorpene-derived Riachuelo class (S40 Riachuelo commissioned September 2022, S41 Humaita January 2024, S Tonelero, a fourth boat due in 2026 whose name the sources give differently) and Brazil's first nuclear-powered submarine, first steel cut at Itaguai in June 2025, with a July 2026 contract to build its non-nuclear section."
+    since: 2008
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.janes.com/osint-insights/defence-news/industry/brazil-reaches-submarine-programme-milestones", title: "Brazil reaches submarine programme milestones", publisher: "Janes", date: 2026, tier: 3}
+      - {url: "https://www.janes.com/defence-intelligence-insights/defence-news/industry/brazil-commissions-second-riachuelo-class-ssk", title: "Brazil commissions second Riachuelo-class SSK", publisher: "Janes", date: 2024-01, tier: 3}
+  - to: SWE
+    layer: dependency
+    type: arms_supply
+    value: 36
+    unit: gripen_fighters_contracted_2014_28e_8f
+    summary: "36 Saab Gripen (28 single-seat E and 8 two-seat F) contracted in 2014 and assembled at Embraer's Gaviao Peixoto plant, deliveries to finish by 2027. On 21 July 2026, at Farnborough, Embraer and Saab signed a Heads of Agreement for 20 more aircraft assembled in Brazil, with the production agreement to follow during 2026: a framework, not a firm order. Brazil's defence spending was USD 23.9bn in 2025 (SIPRI)."
+    since: 2014
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://quwa.org/defense-news/brazil/saab-and-embraer-sign-framework-to-add-20-gripens-at-brazils-gaviao-peixoto-line/", title: "Saab and Embraer sign framework to add 20 Gripens at Brazil's Gaviao Peixoto line", publisher: "Quwa", date: 2026-07, tier: 3}
+      - {url: "https://www.airforce-technology.com/news/brazil-sweden-saab-gripen/", title: "Brazil, Sweden and the Saab Gripen", publisher: "Airforce Technology", date: 2026, tier: 3}
+  - to: BOL
+    layer: dependency
+    type: energy_import
+    value: 30
+    unit: million_m3_per_day_gas_pipeline_capacity
+    summary: "Bolivia is Brazil's largest natural gas supplier, through a 3,150 km pipeline able to carry up to 30 million cubic metres a day. Petrobras, once responsible for 60% of Bolivian gas production, now operates 25%. Lula and President Paz signed a five-point agreement on 16 March 2026 and at the Mercosur summit of 30 June decided to speed up the Petrobras-YPFB agreements on gas extraction; Lula also spoke of river access to the Atlantic."
+    since: 2026-03-16
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.lostiempos.com/actualidad/pais/20260316/lula-bolivia-mantiene-condicion-mayor-proveedor-gas-natural-brasil", title: "Lula: Bolivia remains Brazil's largest natural gas supplier", title_original: "Lula: Bolivia mantiene la condicion de mayor proveedor de gas natural para Brasil", lang: es, publisher: "Los Tiempos", date: 2026-03-16, tier: 3}
+      - {url: "https://www.lostiempos.com/actualidad/economia/20260630/lula-paz-acuerdan-acelerar-acuerdos-petrobras-ypfb", title: "Lula and Paz agree to speed up the Petrobras-YPFB agreements", title_original: "Lula y Paz acuerdan acelerar acuerdos entre Petrobras y YPFB", lang: es, publisher: "Los Tiempos", date: 2026-06-30, tier: 3}
+      - {url: "https://tribunadosertao.com.br/geral/2026/06/30/931615-lula-se-reune-com-presidente-da-bolivia-e-anuncia-acordos-na-area-de-gas", title: "Lula meets the president of Bolivia and announces gas agreements", title_original: "Lula se reune com presidente da Bolivia e anuncia acordos na area de gas", lang: pt, publisher: "Tribuna do Sertao", date: 2026-06-30, tier: 3}
+  - to: PRY
+    layer: dependency
+    type: energy_import
+    value: 19.28
+    unit: usd_per_kw_month_itaipu_tariff_reported
+    summary: "Itaipu, the binational dam: Brazil buys Paraguay's share of the power under the 1973 treaty, whose Annex C (the financial bases) is due for review 50 years after entry into force. One source puts the tariff at USD 19.28 per kW-month, while a January 2024 report had Brazil defending USD 16.71 and an analyst argued for USD 12-15; the sources do not agree on which figure is current. Lula and Peña met in Brasilia on 15 July 2026 with Itaipu the main item, after ministers met in Asuncion in March; Paraguay wants to sell its surplus on the Brazilian free market. No signed agreement was found; Lula reportedly will not raise the price before the vote."
+    since: 2026-03
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.ultimahora.com/lula-y-pena-se-reunen-en-brasilia-para-hablar-de-un-nuevo-acuerdo-sobre-itaipu", title: "Lula and Pena meet in Brasilia to discuss a new Itaipu agreement", title_original: "Lula y Pena se reunen en Brasilia para hablar de un nuevo acuerdo sobre Itaipu", lang: es, publisher: "Ultima Hora", date: 2026-07-15, tier: 3}
+      - {url: "https://infonegocios.com.py/y-ademas/paraguay-y-brasil-tienen-asuntos-pendientes-3-negociaciones-que-siguen-en-pulseada", title: "Paraguay and Brazil have pending matters - three negotiations still in a tug of war", title_original: "Paraguay y Brasil tienen asuntos pendientes - 3 negociaciones que siguen en pulseada", lang: es, publisher: "Infonegocios", date: 2026, tier: 3}
+      - {url: "https://www.cnbcafrica.com/wire/632907", title: "Brazil heralds Itaipu dam tariff agreement, Paraguay says deal not yet done", publisher: "Reuters (via CNBC Africa)", date: 2024-05, tier: 3}
+  - to: ARG
+    layer: dependency
+    type: trade_share
+    value: 7.5
+    unit: usd_billion_brazilian_exports_to_argentina_jan_may_2025
+    summary: "Brazil exported USD 7.5bn to Argentina in January-May 2025, up 52% on the same period of 2024 (Brazilian side, partial year). On the Argentine side the Chamber of Commerce put Argentina's 2025 trade deficit with Brazil at USD 5.224bn. Argentina's foreign minister calls Brazil its main trading partner; the full 2025 Brazilian figure was not found."
+    since: 2025
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://economicnewsbrasil.com.br/2025/06/06/exportacao-para-a-argentina-sobe-e-vira-alivio-em-2025/", title: "Exports to Argentina rise and become a relief in 2025", title_original: "Exportacao para a Argentina sobe e vira alivio em 2025", lang: pt, publisher: "Economic News Brasil", date: 2025-06-06, tier: 4}
+      - {url: "https://aduananews.com/pt/disminuyo-el-comercio-bilateral-con-brasil-en-diciembre/", title: "Bilateral trade with Brazil fell in December", title_original: "Disminuyo el comercio bilateral con Brasil en diciembre", lang: es, publisher: "Aduana News (Argentine Chamber of Commerce data)", date: 2026-01, tier: 3}
+      - {url: "https://www.opovo.com.br/noticias/mundo/2026/07/27/brasil-convoca-embaixador-apos-ataques-de-milei-a-lula.html", title: "Brazil summons ambassador after Milei's attacks on Lula", title_original: "Brasil convoca embaixador apos ataques de Milei a Lula", lang: pt, publisher: "O Povo", date: 2026-07-27, tier: 3}
+  - to: org-eu
+    layer: dependency
+    type: trade_share
+    value: 0.93
+    unit: share_of_tariffs_mercosur_removes_on_eu_goods_over_up_to_15_years
+    summary: "Terms of the EU-Mercosur agreement as Brazil applies it: Mercosur removes 93% of its tariffs on EU goods and the EU 91% of its tariffs on Mercosur goods, over up to 15 years; the EU opens a beef quota of 99,000 tonnes a year at a 7.5% duty, with safeguards for farmers. Steps: Council approval 9 January 2026 (21-5, Belgium abstaining), signature 17 January, European Parliament referral to the court 21 January (334-324), Brazil's Senate unanimous on 4 March and promulgation on 17 March, provisional application from 1 May 2026. The 2019 Commission estimate of duties saved was EUR 4.5bn."
+    since: 2026-05-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/EU%E2%80%93Mercosur_Partnership_Agreement", title: "EU-Mercosur Partnership Agreement (as cited by Wikipedia: Politico, 9 Jan and 1 May 2026; Euractiv, 17 Jan 2026; Reuters, 21 Jan 2026; Senado Federal, 4 Mar 2026)", publisher: "Wikipedia (citations to Politico, Euractiv, Reuters, Senado Federal)", date: 2026-05, tier: 4}
+      - {url: "https://www12.senado.leg.br/noticias/materias/2026/03/04/por-unanimidade-senado-aprova-acordo-entre-mercosul-e-ue", title: "Senate approves Mercosur-EU agreement unanimously", title_original: "Por unanimidade, Senado aprova acordo entre Mercosul e UE", lang: pt, publisher: "Senado Federal", date: 2026-03-04, tier: 1}
+      - {url: "https://www.politico.eu/article/eu-countries-approve-mercosur-trade-deal-for-signature/", title: "EU countries approve Mercosur trade deal for signature", publisher: "Politico Europe", date: 2026-01-09, tier: 3}
+  - to: MEX
+    layer: dependency
+    type: trade_share
+    value: 16.4
+    unit: usd_billion_two_way_trade_2023
+    summary: "Two-way trade with Mexico was USD 16.4bn in 2023 (Mexican economy ministry data). The frame is the ACE 53 preferential agreement of 2002; a free trade agreement has been discussed for years without a breakthrough in the sources read. Lula attended Sheinbaum's inauguration (29 September 2024) and Mexico's foreign secretary Roberto Velasco visited Brasilia in August 2026, meeting Vieira and Lula."
+    since: 2023
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.economia.gob.mx/datamexico/es/profile/country/brasil", title: "Data Mexico profile for Brazil (two-way trade USD 16.4bn, 2023)", publisher: "Secretaria de Economia (Mexico)", date: 2023, tier: 1}
+      - {url: "https://heraldodemexico.com.mx/nacional/2026/8/8/concluye-visita-de-roberto-velasco-brasil-865252.html", title: "Roberto Velasco's visit to Brazil concludes", title_original: "Concluye visita de Roberto Velasco a Brasil", lang: es, publisher: "Heraldo de Mexico", date: 2026-08-08, tier: 3}

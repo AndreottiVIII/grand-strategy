@@ -64,7 +64,7 @@ relations:
   - to: RUS
     layer: action
     type: incident
-    summary: "The Lady R affair: the US said weapons and ammunition were loaded for Russia at Simon's Town on 6-8 December 2022; Pretoria denied the account, asked for the intelligence, and opened a judicial inquiry in May 2023. Outcome not in the sources retrieved."
+    summary: "The Lady R affair: the US said weapons and ammunition were loaded for Russia at Simon's Town on 6-8 December 2022; Pretoria denied the account, asked for the intelligence, and opened a judicial inquiry in May 2023. Outcome: see the row of 3 September 2023 (the panel found no evidence of weapons loaded)."
     since: 2022-12-06
     until: 2023-05-14
     last_verified: 2026-10-16
@@ -123,3 +123,375 @@ relations:
     sources:
       - {url: "https://www.aimnews.org/2024/04/16/south-african-forces-leaving-samim-as-presidential-authorization-ends/", title: "South African forces leaving SAMIM as presidential authorization ends", publisher: "AIM News", date: 2024-04-16, tier: 3}
       - {url: "https://www.engineeringnews.co.za/article/south-africa-main-funder-for-sadc-mission-in-mozambique-which-is-protecting-whole-bloc-2022-04-13", title: "South Africa main funder for SADC mission in Mozambique, which is protecting whole bloc", publisher: "Engineering News", date: 2022-04-13, tier: 3}
+
+  # ---------- objective (added in the protagonist pass, 2026-10-16) ----------
+  - to: org-sadc
+    layer: objective
+    type: influence_goal
+    summary: "Hold the regional chair: after Madagascar gave up the SADC chair, the extraordinary summit of 7 November 2025 appointed South Africa interim Chair until August 2026 (Ramaphosa convened and chaired it), and at the 46th summit in Durban on 17 August 2026 Ramaphosa formally took the chair."
+    since: 2025-11-07
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://dirco.gov.za/wp-content/uploads/2025/11/Communique-of-the-SADC-Extraordinary-Summit-held-on-7-November-2025.pdf", title: "Communique of the SADC Extraordinary Summit held on 7 November 2025", publisher: "DIRCO (SADC communique)", date: 2025-11-07, tier: 1}
+      - {url: "https://sadc.int/latest-news/communique-46th-ordinary-summit-sadc-heads-state-and-government-17th-august-2026", title: "Communique of the 46th SADC Summit, Durban, South Africa (17 August 2026)", publisher: "SADC", date: 2026-08-17, tier: 1}
+
+  # ---------- action: the ICJ case ----------
+  - to: org-icj
+    layer: action
+    type: incident
+    summary: "South Africa v. Israel (case 192): the application under the Genocide Convention was filed on 29 December 2023; Palestine filed a declaration of intervention on 3 June 2024; Nicaragua withdrew (April 2025) and Colombia withdrew its declaration (22 September 2026); the case is in the written phase. Dates as in the PSE and ISR rows."
+    since: 2023-12-29
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.icj-cij.org/case/192", title: "South Africa v. Israel: Application of the Genocide Convention in the Gaza Strip (case page)", publisher: "International Court of Justice", date: 2026-09-22, tier: 1}
+
+  - to: ISR
+    layer: action
+    type: incident
+    summary: "The ICJ calendar: Israel filed its counter-memorial in March 2026, objecting to the Court's jurisdiction; by an order of 21 May 2026 the Court set South Africa's reply for 22 November 2027 and Israel's rejoinder for 22 May 2029, so the case outlasts the present government; the 2024 provisional orders remain in force. Mirror of the ISR row, same sources."
+    since: 2026-03
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.gov.za/news/media-statements/presidency-notes-icj-order-south-africa-and-israel-case-02-jun-2026", title: "Presidency notes ICJ Order on South Africa and Israel case", publisher: "Government of South Africa (Presidency)", date: 2026-06-02, tier: 1}
+      - {url: "https://ewn.co.za/2026/06/03/icj-sets-new-deadlines-for-sa-israel-genocide-case", title: "ICJ sets new deadlines for SA-Israel genocide case", publisher: "Eyewitness News", date: 2026-06-03, tier: 3}
+
+  - to: EGY
+    layer: action
+    type: agreement
+    summary: "Egypt announced on 12 May 2024 that it would back South Africa's genocide case by intervening at the ICJ. Whether the intervention was actually filed is not confirmed in the sources read; the ICJ case page was not checked for it."
+    since: 2024-05-12
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.news24.com/world/egypt-says-it-will-support-south-africas-icj-genocide-case-against-israel-20240512", title: "Egypt says it will support South Africa's ICJ genocide case against Israel", publisher: "News24", date: 2024-05-12, tier: 3}
+      - {url: "https://www.newarab.com/news/egypt-joins-south-africa-israel-genocide-case-icj", title: "Egypt joins South Africa in Israel genocide case at the ICJ", publisher: "The New Arab", date: 2024-05, tier: 3}
+
+  # ---------- action: the United States ----------
+  - to: USA
+    layer: action
+    type: expulsion
+    summary: "Secretary of State Rubio declared Ambassador Ebrahim Rasool persona non grata on 14 March 2025 after remarks at a Johannesburg think-tank webinar, and he had to leave by 21 March. Pretoria called the expulsion regrettable and asked for diplomatic decorum. A US act, recorded on Pretoria's side of the pair."
+    since: 2025-03-14
+    until: 2025-03-21
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://allafrica.com/stories/202503150001.html", title: "South Africa's Ambassador to U.S. 'Persona Non Grata' - U.S. Secretary of State Marco Rubio", publisher: "allAfrica", date: 2025-03-15, tier: 3}
+      - {url: "https://thecitizen.co.tz/tanzania/news/africa/us-declares-south-africa-s-ambassador-persona-non-grata-4965556", title: "US declares South Africa's ambassador persona non grata", publisher: "The Citizen (Tanzania)", date: 2025-03, tier: 3}
+
+  - to: USA
+    layer: action
+    type: incident
+    summary: "The G20 boycott: the US stayed away from the Johannesburg summit of 22-23 November 2025, the White House calling South Africa's handling of the presidency an 'instrumentalisation'; Pretoria refused to hand the presidency to a low-ranking US chargé and passed it at DIRCO to an embassy official, which Trump said was a refusal; on 26 November 2025 Trump wrote that South Africa would not receive an invitation to the 2026 G20 in Miami. Mirror of the USA row."
+    since: 2025-11-22
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.ecofinagency.com/news/2411-50761-g20-pretoria-defies-trump-after-u-s-rejects-joint-declaration", title: "G20: Pretoria defies Trump after U.S. rejects joint declaration", publisher: "Ecofin Agency", date: 2025-11-24, tier: 3}
+      - {url: "https://www.timeslive.co.za/news/2025-11-26-trump-says-south-africa-wont-receive-invitation-to-g20-in-2026/", title: "Trump says South Africa won't receive invitation to G20 in 2026", publisher: "TimesLIVE", date: 2025-11-26, tier: 3}
+      - {url: "https://truthsocial.com/@realDonaldTrump/posts/115617700844849134", title: "Truth Social post of 26 Nov 2025 (South Africa not invited to the 2026 G20 in Miami; payments and subsidies to stop)", publisher: "Truth Social (presidential statement)", date: 2025-11-26, tier: 1}
+
+  - to: USA
+    layer: action
+    type: incident
+    summary: "The Afrikaner refugee order: Executive Order 14204 of 7 February 2025 turned US refugee policy toward Afrikaners; the US admitted nearly 4,500 South African refugees from October 2025 to April 2026 against three from everywhere else (CBC), and the 2026 refugee ceiling was set at 7,500, mostly for white South Africans (Guardian, 30 October 2025). Pretoria rejects the persecution claim. Mirror of the USA row."
+    since: 2025-02-07
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.cbc.ca/news/world/us-south-africa-refugees-9.7159402", title: "U.S. allows nearly 4,500 South African refugees since October - and only 3 from elsewhere", publisher: "CBC News", date: 2026-04-10, tier: 3}
+      - {url: "https://www.theguardian.com/us-news/2025/oct/30/trump-refugee-restrictions-white-south-africans", title: "US will limit number of refugees to 7,500 and give priority to white South Africans", publisher: "The Guardian", date: 2025-10-30, tier: 3}
+      - {url: "https://www.whitehouse.gov/presidential-actions/2025/02/addressing-egregious-actions-of-the-republic-of-south-africa/", title: "Addressing egregious actions of the Republic of South Africa (Executive Order 14204)", publisher: "The White House", date: 2025-02-07, tier: 1}
+
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "AGOA was reauthorised and signed on 3 February 2026, retroactive to the 30 September 2025 lapse and running only to 31 December 2026; South Africa remains eligible, and the trade ministry says it is negotiating an Agreement on Reciprocal Tariffs to cut the 30% rate. Under AGOA vehicles pay 0% against 2.5% at MFN, but an Absa economist says that with the reciprocal tariffs AGOA is no longer a major advantage."
+    since: 2026-02-03
+    until: 2026-12-31
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.ewn.co.za/2026/02/04/agoa-extended-for-a-year-but-how-much-will-it-help-sa-business-in-view-of-trump-tariffs", title: "AGOA extended for a year, but how much will it help SA business in view of Trump tariffs?", publisher: "EWN", date: 2026-02-04, tier: 3}
+      - {url: "https://businessreport.co.za/business/economy/2026-02-04-agoa-extension-signed-into-law-but-south-africa-remains-on-the-tariff-frontline", title: "AGOA extension signed into law but South Africa remains on the tariff frontline", publisher: "Business Report", date: 2026-02-04, tier: 3}
+
+  - to: USA
+    layer: action
+    type: incident
+    summary: "Trump threatened in July 2025, as the Rio BRICS summit met, an extra 10% tariff on countries aligning with BRICS's 'anti-American policies'; Pretoria answered that it is not anti-American and still awaited formal word on a trade deal, and the rand slipped (about 1% in one report). A threat, not an applied measure."
+    since: 2025-07
+    until: 2025-07
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.yahoo.com/news/south-africa-says-not-anti-090626077.html", title: "South Africa says it is not anti-American after Trump's BRICS tariff threat", publisher: "Reuters via Yahoo News", date: 2025-07, tier: 3}
+      - {url: "https://newscentraltv.com/?p=347416", title: "Rand dips 1% after Trump BRICS tariff threat", publisher: "News Central TV", date: 2025-07, tier: 3}
+
+  - to: USA
+    layer: dependency
+    type: trade_share
+    value: 0.071
+    unit: share_of_exports_2025
+    summary: "The US took 7.1% of South African exports in 2025, down from 7.7% in 2024 and 7.9% in 2010, and fell from second to third place as a destination; vehicles and transport equipment were hit hardest by the 25% tariff of April 2025 and the 30% reciprocal tariff of August 2025. BNP Paribas gives 7.5% for a later 2025 window (vehicles 22% of exports to the US in 2024, farm goods 7%); the SARB figure is used (official basis wins)."
+    since: '2025'
+    until: null
+    last_verified: 2026-10-16
+    confidence: A
+    sources:
+      - {url: "https://www.resbank.co.za/en/home/publications/publication-detail-pages/quarterly-bulletins/Stories/trade", title: "Trade (Quarterly Bulletin, March 2026)", publisher: "South African Reserve Bank", date: 2026-05-05, tier: 1}
+      - {url: "https://economic-research.bnpparibas.com/html/en-US/South-Africa-Resilience-face-US-tariffs-3/6/2026,53286", title: "South Africa: resilience in the face of US tariffs", publisher: "BNP Paribas Economic Research", date: 2026-03-06, tier: 2}
+
+  # ---------- action: Russia, Iran, China, Ukraine ----------
+  - to: RUS
+    layer: action
+    type: incident
+    summary: "The Lady R outcome: the independent panel chaired by Judge Mojapelo (appointed May 2023) found no evidence that any cargo of weapons was loaded for export onto the ship, only the offloading of a 2018 Armscor order for the SANDF, and no evidence of criminal conduct; the summary was published on 3 September 2023 and the full report stays classified."
+    since: 2023-09-03
+    until: 2023-09-03
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.sanews.gov.za/node/65053", title: "No evidence of weapons loaded for export onto Lady R", publisher: "SAnews (official)", date: 2023-09-03, tier: 1}
+
+  - to: RUS
+    layer: action
+    type: exercise
+    summary: "Russia took part, with China, Iran and South Africa, in the week-long BRICS+ naval exercise 'Will for Peace 2026' in False Bay in January 2026."
+    since: 2026-01
+    until: 2026-01-16
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.georgeherald.com/News/Article/National-News/presidency-confirms-ramaphosa-s-instruction-to-motshekhga-that-iran-exit-naval-drills-202601170545", title: "Presidency confirms Ramaphosa's instruction to Motshekga that Iran exit naval drills", publisher: "George Herald (The Citizen)", date: 2026-01-17, tier: 3}
+
+  - to: CHN
+    layer: action
+    type: exercise
+    summary: "China led and facilitated the invitations to 'Will for Peace 2026' (False Bay, January 2026); the Presidency spokesman said South Africa agreed to participate and to the use of its waters."
+    since: 2026-01
+    until: 2026-01-16
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.georgeherald.com/News/Article/National-News/presidency-confirms-ramaphosa-s-instruction-to-motshekhga-that-iran-exit-naval-drills-202601170545", title: "Presidency confirms Ramaphosa's instruction to Motshekga that Iran exit naval drills", publisher: "George Herald (The Citizen)", date: 2026-01-17, tier: 3}
+
+  - to: IRN
+    layer: action
+    type: exercise
+    summary: "Three Iranian warships were stationed off False Bay for 'Will for Peace 2026'; Ramaphosa instructed the defence minister to ensure Iran withdrew, the SANDF posted (then deleted) that the corvette Naghdi took part in the sea phase, a board of inquiry was opened, and the US embassy called the welcome of Iranian forces 'unconscionable'. The board's findings were not found."
+    since: 2026-01
+    until: 2026-01-16
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.georgeherald.com/News/Article/National-News/presidency-confirms-ramaphosa-s-instruction-to-motshekhga-that-iran-exit-naval-drills-202601170545", title: "Presidency confirms Ramaphosa's instruction to Motshekga that Iran exit naval drills", publisher: "George Herald (The Citizen)", date: 2026-01-17, tier: 3}
+      - {url: "https://allafrica.com/stories/202601160215.html", title: "South Africa: U.S. slams South Africa for hosting naval drills with Iran", publisher: "allAfrica", date: 2026-01-16, tier: 3}
+
+  - to: UKR
+    layer: action
+    type: visit
+    summary: "Zelensky's first visit to South Africa, in 2025 (the page gives only 'Thursday'; cut short after a deadly strike on Kyiv): Ramaphosa welcomed Ukraine's acceptance of an unconditional ceasefire, urged talks without preconditions on the model of South Africa's own transition, and said he had spoken to Putin and Trump; Zelensky handed over a list of 400 Ukrainian children said to be held in Russia. No agreement was signed."
+    since: '2025'
+    until: '2025'
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.kyivpost.com/amp/post/51413", title: "South African President Backs Ukraine Truce Push at Zelensky Meeting", publisher: "Kyiv Post (AFP)", date: '2025', tier: 3}
+      - {url: "https://clubofmozambique.com/news/south-africa-says-ukraine-peace-talks-should-have-no-preconditions/", title: "South Africa says Ukraine peace talks should have no preconditions", publisher: "Club of Mozambique", date: '2025', tier: 3}
+
+  # ---------- action and dependency: Europe, India, the Gulf ----------
+  - to: org-eu
+    layer: action
+    type: agreement
+    summary: "The Clean Trade and Investment Partnership was signed by both sides at the Sandton trilateral meeting of 20 November 2025 (Ramaphosa, Costa, von der Leyen); the EU announced five projects under a Team Europe Global Gateway package of nearly EUR 12bn, including a European Investment Bank loan to Transnet. It follows the 8th summit (Cape Town, March 2025) and its EUR 4.7bn package."
+    since: 2025-11-20
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.sanews.gov.za/node/78358", title: "President Ramaphosa, EU leaders reaffirm the deepening of partnerships", publisher: "SAnews (official)", date: 2025-11-20, tier: 1}
+      - {url: "https://www.dailymaverick.co.za/article/2025-03-13-eu-and-sa-announce-r94bn-package-for-new-investments-in-clean-energy-vaccine-manufacturing", title: "EU and SA announce R94bn package for new investments in clean energy, vaccine manufacturing", publisher: "Daily Maverick", date: 2025-03-13, tier: 3}
+
+  - to: org-eu
+    layer: dependency
+    type: trade_share
+    value: 50
+    unit: eur_bn_annual_trade_approx
+    summary: "Annual trade with the EU is almost EUR 50bn and 98% of South African exports to the EU enter duty- and quota-free, according to the Commission President at the March 2025 summit. A speech figure, not a statistical-office series; the label 'largest partner' is Ramaphosa's own."
+    since: '2025-03'
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.dailymaverick.co.za/article/2025-03-13-eu-and-sa-announce-r94bn-package-for-new-investments-in-clean-energy-vaccine-manufacturing", title: "EU and SA announce R94bn package for new investments in clean energy, vaccine manufacturing", publisher: "Daily Maverick", date: 2025-03-13, tier: 3}
+      - {url: "https://www.engineeringnews.co.za/article/sa-eu-summit-reaffirmed-unwavering-commitment-to-multilateralism-ramaphosa-2025-03-17", title: "SA, EU summit reaffirmed unwavering commitment to multilateralism - Ramaphosa", publisher: "Engineering News", date: 2025-03-17, tier: 3}
+
+  - to: GBR
+    layer: dependency
+    type: trade_share
+    value: 12.1
+    unit: gbp_bn_trade_goods_and_services_4q_to_2025q3
+    summary: "Goods and services trade was GBP 12.1bn in the four quarters to Q3 2025, up 8.5% (UK exports GBP 5.0bn, imports GBP 7.1bn), making South Africa the UK's 28th trading partner at 0.6% of UK trade. Figure as quoted from the UK factsheet; the PDF itself was not opened. An older figure of GBP 10.7bn (2022 state visit) is superseded."
+    since: '2025'
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://assets.publishing.service.gov.uk/media/697a359f005d288bf850defd/south-africa-trade-and-investment-factsheet-2026-02-02.pdf", title: "South Africa trade and investment factsheet", publisher: "UK Department for Business and Trade", date: 2026-02-02, tier: 1}
+
+  - to: GBR
+    layer: dependency
+    type: investment
+    value: 26.0
+    unit: gbp_bn_uk_fdi_stock_in_south_africa_end_2024
+    summary: "The stock of UK foreign direct investment in South Africa was GBP 26.0bn at the end of 2024 (South African FDI in the UK: GBP 3.5bn). Figure as quoted from the UK factsheet; the PDF itself was not opened."
+    since: '2024'
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://assets.publishing.service.gov.uk/media/697a359f005d288bf850defd/south-africa-trade-and-investment-factsheet-2026-02-02.pdf", title: "South Africa trade and investment factsheet", publisher: "UK Department for Business and Trade", date: 2026-02-02, tier: 1}
+
+  - to: DEU
+    layer: dependency
+    type: trade_share
+    value: 0.08
+    unit: share_of_exports_2025
+    summary: "Germany took 8.0% of South African exports in 2025 (7.6% in 2024) and edged out the United States as a destination."
+    since: '2025'
+    until: null
+    last_verified: 2026-10-16
+    confidence: A
+    sources:
+      - {url: "https://www.resbank.co.za/en/home/publications/publication-detail-pages/quarterly-bulletins/Stories/trade", title: "Trade (Quarterly Bulletin, March 2026)", publisher: "South African Reserve Bank", date: 2026-05-05, tier: 1}
+
+  - to: IND
+    layer: dependency
+    type: trade_share
+    value: 19.25
+    unit: usd_bn_bilateral_trade_fy2023_24
+    summary: "Bilateral trade was USD 19.25bn in 2023-24 according to the Indian side's reporting; an IOL-based report of November 2025 says above USD 18bn and puts India fourth among South Africa's trading partners. The figures differ and neither is a calendar-2025 series."
+    since: '2023'
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.orissapost.com/pm-modi-holds-talks-with-south-african-president-ramaphosa-discusses-cooperation-in-trade/amp/", title: "PM Modi holds talks with South African President Ramaphosa, discusses cooperation in trade", publisher: "Orissa Post", date: 2025-11-23, tier: 3}
+      - {url: "https://www.newsonair.gov.in/iol-highlights-strong-india-south-africa-ties-at-g20", title: "IOL highlights strong India-South Africa ties at G20", publisher: "All India Radio News", date: 2025-11-21, tier: 3}
+
+  - to: org-brics
+    layer: action
+    type: visit
+    summary: "Ramaphosa attended the 18th BRICS summit in New Delhi on 12-13 September 2026 with the foreign minister and the minister in the Presidency; South Africa's agenda was intra-BRICS trade and industrialisation, reform of the UN and the financial institutions, and investment in African infrastructure linked to the AfCFTA; the summit was to close with the New Delhi Declaration."
+    since: 2026-09-12
+    until: 2026-09-13
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.gov.za/news/media-advisories/visits-foreign-countries/president-cyril-ramaphosa-participates-18th-brics", title: "President Cyril Ramaphosa participates in 18th BRICS Summit in India, 12 to 13 Sept", publisher: "gov.za (Presidency of South Africa)", date: 2026-09-08, tier: 1}
+
+  - to: org-g20
+    layer: action
+    type: agreement
+    summary: "The Johannesburg leaders' declaration of 22 November 2025 (climate, debt relief for vulnerable countries, solidarity) was adopted without the United States and after Argentina left the talks; Pretoria's spokesman said it considered the consensus sufficient. Ramaphosa called it the first African presidency of the G20."
+    since: 2025-11-22
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.ecofinagency.com/news/2411-50761-g20-pretoria-defies-trump-after-u-s-rejects-joint-declaration", title: "G20: Pretoria defies Trump after U.S. rejects joint declaration", publisher: "Ecofin Agency", date: 2025-11-24, tier: 3}
+      - {url: "https://www.timeslive.co.za/news/2025-11-26-trump-says-south-africa-wont-receive-invitation-to-g20-in-2026/", title: "Trump says South Africa won't receive invitation to G20 in 2026", publisher: "TimesLIVE", date: 2025-11-26, tier: 3}
+
+  - to: ARE
+    layer: action
+    type: visit
+    summary: "Ramaphosa's official visit to the UAE on 12-13 January 2026 (Abu Dhabi Sustainability Week, at the invitation of the UAE President); the two presidents met again in June 2026. South African exports to the UAE were about USD 2.68bn in 2024 with a deficit of USD 284m (UAE foreign ministry, Pretoria mission)."
+    since: 2026-01-12
+    until: 2026-01-13
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.gov.za/news/media-advisories/visits-foreign-countries/president-cyril-ramaphosa-undertakes-official-visit", title: "President Cyril Ramaphosa undertakes official visit to United Arab Emirates, 12 to 13 Jan", publisher: "gov.za (Presidency of South Africa)", date: 2026-01, tier: 1}
+      - {url: "https://www.mofa.gov.ae/en/Missions/Pretoria/UAE-Relationships/Bilateral-Relations", title: "Bilateral Relations (UAE Embassy, Pretoria)", publisher: "UAE Ministry of Foreign Affairs", date: 2026, tier: 1}
+
+  # ---------- action and dependency: the neighbourhood and Africa ----------
+  - to: ZWE
+    layer: action
+    type: agreement
+    summary: "Fourth session of the South Africa-Zimbabwe Bi-National Commission, Pretoria, 21 August 2026: agreements on diplomacy (foreign service institute and diplomatic academy), correctional services, gender equality, agriculture, and arts and heritage; Ramaphosa called Zimbabwe one of South Africa's largest trading partners. The Zimbabwean Exemption Permit runs to 28 May 2027."
+    since: 2026-08-21
+    until: 2026-08-21
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.sanews.gov.za/node/83754", title: "South Africa, Zimbabwe strengthen bilateral ties", publisher: "SAnews (official)", date: 2026-08-21, tier: 1}
+      - {url: "https://allafrica.com/stories/202510080170.html", title: "Zimbabwe: South Africa extends Zimbabwe's exemption permit by 18 months", publisher: "allAfrica", date: 2025-10-08, tier: 3}
+
+  - to: NAM
+    layer: action
+    type: agreement
+    summary: "Ramaphosa and President Nandi-Ndaitwah co-chaired the 4th South Africa-Namibia Bi-National Commission in Pretoria on 17 July 2026, a month after her working visit to Johannesburg (June 2026). Page contents seen only as a search summary."
+    since: 2026-07-17
+    until: 2026-07-17
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.sanews.gov.za/node/82186", title: "President Ramaphosa meets with President Netumbo Nandi-Ndaitwah", publisher: "SAnews (official)", date: 2026-06, tier: 1}
+      - {url: "https://dirco.gov.za/tag/namibia/", title: "DIRCO Namibia page (Binational Commission, 17 July 2026)", publisher: "DIRCO", date: 2026-07-17, tier: 1}
+
+  - to: BWA
+    layer: action
+    type: visit
+    summary: "Ramaphosa's state visit to Gaborone on 20-21 May 2026, co-chairing the sixth Bi-National Commission with President Boko (the previous session was in 2022). Mirror of the BWA row, same source."
+    since: 2026-05-20
+    until: 2026-05-21
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.gov.za/news/media-advisories/conferences-summits-seminars-and-workshops/president-cyril-ramaphosa-38", title: "President Cyril Ramaphosa undertakes State Visit to Republic of Botswana, 20 to 21 May", publisher: "gov.za (Presidency of South Africa)", date: 2026-05, tier: 1}
+
+  - to: LSO
+    layer: dependency
+    type: investment
+    value: 1.27
+    unit: bn_m3_per_year_planned_supply_lhwp_phase_ii
+    summary: "Lesotho Highlands Water Project Phase II is to raise supply from 780 million to more than 1.27 billion cubic metres a year; the Polihali dam was about 50% built by early July 2026, the Senqu bridge was completed in February 2026, and impoundment is due in 2027/28 with completion in 2029. No closer dependency type in the vocabulary for water, so 'investment'."
+    since: '2026'
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.engineeringnews.co.za/article/lesotho-highlands-water-project-phase-ii-2026-09-18", title: "Lesotho Highlands Water Project - Phase II", publisher: "Engineering News", date: 2026-09-18, tier: 3}
+      - {url: "https://www.sanews.gov.za/node/80868", title: "SA and Lesotho to launch Senqu Bridge as LHWP Phase II gains momentum", publisher: "SAnews (official)", date: 2026, tier: 1}
+
+  - to: KEN
+    layer: action
+    type: visit
+    summary: "Ruto's state visit to Pretoria on 3-5 June 2026 raised the relation to a strategic partnership and produced six agreements (trade facilitation, shipping and maritime cooperation, gender, technical training, arts and heritage, sport); Ruto put bilateral trade at USD 590m in 2024 and USD 650m in 2025, tilted to South Africa."
+    since: 2026-06-03
+    until: 2026-06-05
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.ewn.co.za/2026/06/04/sa-and-kenya-sign-six-new-agreements-to-deepen-bilateral-ties", title: "SA and Kenya sign six new agreements to deepen bilateral ties", publisher: "EWN", date: 2026-06-04, tier: 3}
+      - {url: "https://citizen.digital/article/ruto-ramaphosa-seal-deals-to-deepen-kenya-south-africa-cooperation-n384012", title: "Ruto, Ramaphosa sign deals to deepen Kenya-South Africa cooperation", publisher: "Citizen Digital", date: 2026-06, tier: 3}
+
+  - to: COD
+    layer: action
+    type: agreement
+    summary: "In February 2025 Ramaphosa backed the regional summit's decision to bring non-state actors such as the M23 into the DRC peace talks, framing inclusion of all parties as the route to resolution, while South African troops were still fighting the M23 under the SAMIDRC mandate."
+    since: 2025-02
+    until: 2025-02
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://allafrica.com/stories/202502100404.html", title: "Congo-Kinshasa: Ramaphosa backs decision to include M23 in DR Congo peace talks", publisher: "allAfrica", date: 2025-02-10, tier: 3}

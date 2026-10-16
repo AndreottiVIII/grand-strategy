@@ -11,7 +11,7 @@ relations:
     unit: share_of_exports
     last_verified: '2026-10-16'
     confidence: C
-    note: "The 32% is taken from a search-result snippet; the attribution to the trade ministry is as the snippet gives it. Not fetched. Replace with the ministry's own figure when it is read."
+    note: "The 32% is taken from a search-result snippet; the attribution to the trade ministry is as the snippet gives it. Not fetched. Superseded on 2026-10-16 by the Mincetur figure of 36.2% for 2025 (next China row, Infomercado 3 Feb 2026): per the ontology rule the most recent figure with an official basis wins, and the gap is probably the denominator or the snapshot date. Row kept as the earlier reading."
     sources:
       - {url: "https://www.bairdmaritime.com/amp/story/shipping/ports/new-port-lifts-perus-exports-to-record-high-in-2025", title: "New port lifts Peru's exports to record high in 2025 (Port of Chancay)", publisher: "Baird Maritime", date: "2026", tier: 3}
 
@@ -59,11 +59,338 @@ relations:
   - to: IRN
     layer: action
     type: incident
-    summary: "Peru broke diplomatic relations with Iran on 1 September 2026, per the Peruvian foreign ministry statement. The reasons are not in the sources read."
+    summary: "Peru broke diplomatic relations with Iran on 1 September 2026, per the Peruvian foreign ministry statement (consular ties kept). The ministry gave four grounds: the human-rights record as denounced by UN mechanisms, Iranian obstruction of IAEA inspectors, Iranian restrictions on shipping through the Strait of Hormuz since March, and Iran's incitement of escalation in the Middle East; the note went through Iran's embassy in Ecuador. Trade with Iran was about US$1.3m in 2025 (bne IntelliNews, opinion piece, tier 4)."
     since: '2026-09-01'
     until: null
     last_verified: '2026-10-16'
     confidence: B
     note: "The statement is a government source (tier 1) cited in the Wikipedia foreign-relations article; the page itself was not fetched, so the date and wording are as cited. Peru had had an embassy in Tehran until 1978 and a lone ambassador from 1977."
     sources:
+      - {url: "https://andina.pe/ingles/noticia-peru-breaks-diplomatic-relations-with-islamic-republic-of-iran-1090073.aspx", title: "Peru breaks diplomatic relations with Islamic Republic of Iran", publisher: "Andina (state agency, official statement)", date: "2026-09-01", tier: 1}
+      - {url: "https://forbes.pe/actualidad/2026-09-02/peru-rompio-relaciones-diplomaticas-con-iran-y-lo-culpa-de-escalar-el-conflicto-en-medio-oriente/", title: "Peru broke diplomatic relations with Iran and blames it for escalating the Middle East conflict", title_original: "Perú rompió relaciones diplomáticas con Irán y lo culpa de escalar el conflicto en Medio Oriente", publisher: "Forbes Peru", date: "2026-09-02", tier: 3, lang: es}
       - {url: "https://www.gob.pe/institucion/rree/noticias/1437604-el-peru-rompe-relaciones-diplomaticas-con-la-republica-islamica-de-iran", title: "Peru breaks diplomatic relations with the Islamic Republic of Iran", title_original: "El Perú rompe relaciones diplomáticas con la República Islámica de Irán", publisher: "Ministry of Foreign Affairs of Peru", date: "2026-09-01", tier: 1, lang: es}
+
+  # ---------- added 2026-10-16: protagonist pass ----------
+  # ---------- dependency ----------
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    summary: "China took 36.2% of Peru's goods exports in 2025, the main destination, with growth above 30%, on a record total of US$90.082bn (Mincetur, as reported by Infomercado on 3 Feb 2026). China, the EU and the US together take over 60%."
+    since: '2025'
+    until: null
+    value: 0.362
+    unit: share_of_exports
+    last_verified: '2026-10-16'
+    confidence: B
+    note: "Conflicts with the earlier 32% row above (a snippet attributed to the trade ministry); the Mincetur figure read here is the more recent with an official basis and wins. Not read on the Mincetur site itself."
+    sources:
+      - {url: "https://infomercado.pe/exportaciones-peruanas-superaron-los-us90000-millones-con-china-como-principal-destino/", title: "Peruvian exports exceeded US$90 billion with China as main destination", title_original: "Exportaciones peruanas superaron los US$90,000 millones con China como principal destino", publisher: "Infomercado (citing Mincetur)", date: "2026-02-03", tier: 3, lang: es}
+
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    summary: "In January-May 2026 Peru exported US$17.39bn to China, up 44.3% on the same months of 2025, against US$4.28bn to the US (+19.8%) and US$3.96bn to the EU (+11.7%); minerals led the rise (US$33.4bn, +53.1%)."
+    since: '2026-01'
+    until: '2026-05'
+    value: 17.39
+    unit: usd_bn_exports_jan_may_2026
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://andina.pe/ingles/noticia-peru-maintains-export-growth-for-fifth-consecutive-year-in-2025-1083926.aspx", title: "Peru maintains export growth for fifth consecutive year in 2025", publisher: "Andina (state agency, official statement)", date: "2026", tier: 1}
+
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    summary: "Copper and gold carry the Chinese demand: in 2025 mining exports hit a record US$61.849bn (+28%), of which copper US$28.130bn (45% of mining exports, +19.3%) and gold US$23.244bn (38%, +48.8%), and mining was 66% of all goods exports. The value here is copper's share of mining exports; China is the main buyer of the concentrates, but gold goes mostly to other markets."
+    since: '2025'
+    until: null
+    value: 0.45
+    unit: copper_share_of_mining_exports
+    last_verified: '2026-10-16'
+    confidence: B
+    note: "The row sits under China because the Chinese share of the copper is the dependency that matters (existing rows: about 70% of mineral exports, Andina July 2025). A share of copper going to China in 2025 (75.2% in January-November, from a search result) was not attributed to a page and is not recorded. Source: SNMPE as reported by Andina."
+    sources:
+      - {url: "https://andina.pe/ingles/noticia-peru-mining-exports-hit-record-61849-billion-in-2025-1065718.aspx", title: "Peru: Mining exports hit record US$61.849 billion in 2025", publisher: "Andina (citing SNMPE)", date: "2026-01", tier: 3}
+
+  - to: CHN
+    layer: dependency
+    type: investment
+    summary: "Chancay handled 336,200 TEU in 2025, its first full year, against a target above 350,000 (49,400 TEU in Q1, 70,500 in Q2, 111,900 in Q3, 104,400 in Q4; peak month August at 40,100). The terminal company lost US$10.8m on US$57.1m of revenue; SUNAT credited it with about US$308m of customs revenue."
+    since: '2025'
+    until: null
+    value: 336200
+    unit: teu_chancay_2025
+    last_verified: '2026-10-16'
+    confidence: B
+    note: "COSCO's own reporting via Baird Maritime and Datamar; the customs figure is 'reportedly' SUNAT's, from the Datamar search summary, not read on a SUNAT page. Capacity is 1 million TEU, so the port ran at about a third in 2025."
+    sources:
+      - {url: "https://www.bairdmaritime.com/shipping/ports/cosco-shipping-ports-reports-one-per-cent-rise-in-2025-annual-profit", title: "COSCO Shipping Ports reports one per cent rise in 2025 annual profit", publisher: "Baird Maritime", date: "2026", tier: 3}
+      - {url: "https://datamarnews.com/noticias/perus-chancay-port-posts-10-8-mln-loss-in-first-full-operating-year/", title: "Peru's Chancay port posts $10.8 mln loss in first full operating year", publisher: "Datamar News", date: "2026", tier: 3}
+
+  - to: USA
+    layer: dependency
+    type: trade_share
+    summary: "The United States bought US$10.15bn of Peruvian goods in 2025 (Peruvian government data cited by Reuters); in January-May 2026 US$4.275bn (+19.8%). It is the third destination after China and the EU in the Mincetur ranking, led by grapes, blueberries and gold."
+    since: '2025'
+    until: null
+    value: 10.15
+    unit: usd_bn_exports_2025
+    last_verified: '2026-10-16'
+    confidence: B
+    note: "The US share of the US$90.082bn total (about 11%) is our division, not a source's. Reuters says nearly half of Peru's exports to the US would be hit by the new tariff, while Mincetur says the exclusions cover 45% of the value of US imports from Peru; the two are not reconciled here."
+    sources:
+      - {url: "https://hirunews.lk/goldfmnews/480815/perus-new-foreign-minister-eyes-stronger-us-ties-as-fujimori-takes-office", title: "Peru's new foreign minister eyes stronger US ties as Fujimori takes office", publisher: "Reuters (via Hiru News)", date: "2026-08-01", tier: 3}
+      - {url: "https://andina.pe/ingles/noticia-peru-maintains-export-growth-for-fifth-consecutive-year-in-2025-1083926.aspx", title: "Peru maintains export growth for fifth consecutive year in 2025", publisher: "Andina (state agency, official statement)", date: "2026", tier: 1}
+
+  - to: org-eu
+    layer: dependency
+    type: trade_share
+    summary: "The EU is Peru's second export destination: US$3.957bn in January-May 2026 (+11.7%), after growth of 24% in 2025; China, the EU and the US together take more than 60% of exports."
+    since: '2025'
+    until: null
+    value: 3.957
+    unit: usd_bn_exports_jan_may_2026
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://andina.pe/ingles/noticia-peru-maintains-export-growth-for-fifth-consecutive-year-in-2025-1083926.aspx", title: "Peru maintains export growth for fifth consecutive year in 2025", publisher: "Andina (state agency, official statement)", date: "2026", tier: 1}
+      - {url: "https://infomercado.pe/exportaciones-peruanas-superaron-los-us90000-millones-con-china-como-principal-destino/", title: "Peruvian exports exceeded US$90 billion with China as main destination", title_original: "Exportaciones peruanas superaron los US$90,000 millones con China como principal destino", publisher: "Infomercado (citing Mincetur)", date: "2026-02-03", tier: 3, lang: es}
+
+  - to: JPN
+    layer: dependency
+    type: trade_share
+    summary: "Japan took 4.5% of Peru's exports and supplied 2% of its imports in 2024 (third trading partner in Asia, seventh in the world), under a free-trade agreement in force since 2012; Japanese investment in 2003-2024 was US$860m in 24 projects, 55% in metals."
+    since: '2024'
+    until: null
+    value: 0.045
+    unit: share_of_exports
+    last_verified: '2026-10-16'
+    confidence: B
+    note: "The article also gives US$129m of exports to Japan in 2024, which does not fit a 4.5% share of a US$80bn-plus export total; the share is recorded and the dollar figure is not."
+    sources:
+      - {url: "https://elperuano.pe/noticia/275958-fortalecimiento-de-relaciones-con-japon-garantiza-al-peru-mas-comercio-inversiones-y-cooperacion", title: "Strengthening relations with Japan guarantees Peru more trade, investment and cooperation", title_original: "Fortalecimiento de relaciones con Japón garantiza al Perú más comercio, inversiones y cooperación", publisher: "El Peruano (official gazette)", date: "2025-08-02", tier: 1, lang: es}
+
+  - to: USA
+    layer: dependency
+    type: trade_share
+    summary: "The new US tariff excludes more than 2,000 Peruvian products, which accounted for 45% of the value of US imports from Peru; the rest is exposed to the 12.5% rate."
+    since: '2026-07-24'
+    until: null
+    value: 0.45
+    unit: share_of_us_imports_from_peru_excluded_from_tariff
+    last_verified: '2026-10-16'
+    confidence: B
+    note: "Mincetur's own account of the USTR determination, reported by Andina. Reuters (31 Jul) quotes Peruvian government data that nearly half of Peru's exports to the US would be affected, which sits uneasily with 45% excluded; not reconciled. The exclusion list was not read, so copper's treatment (a separate Section 232 action) is not stated."
+    sources:
+      - {url: "https://andina.pe/ingles/noticia-perus-mincetur-usimposed-tariff-does-not-affect-all-exports-1084914.aspx", title: "Peru's Mincetur: U.S.-imposed tariff does not affect all exports", publisher: "Andina (state agency, official statement)", date: "2026-07-24", tier: 1}
+
+  - to: VEN
+    layer: dependency
+    type: remittances
+    summary: "Peru hosts about 1.54 million Venezuelan refugees and migrants (UNHCR, end of 2023; 493,476 of them asylum-seekers), the second-largest host country, Lima holding more than a million; 32% live in monetary poverty. R4V's August 2026 update reported 1.63 million and another early-August report 1.22 million."
+    since: '2023'
+    until: null
+    value: 1540000
+    unit: venezuelan_refugees_and_migrants_hosted
+    last_verified: '2026-10-16'
+    confidence: B
+    note: "Not a remittance flow: the vocabulary has no stock-of-people type, so the nearest dependency type is used and the unit says what is counted. The UNHCR figure (tier 1) is kept as the base; the later figures come from press reports of R4V, which conflict with each other, and R4V's own page was not read."
+    sources:
+      - {url: "https://www.unhcr.org/sites/default/files/2025-01/Peru%20-%20Strategy%202023%20%E2%80%93%202026_0.pdf", title: "Peru - Strategy 2023-2026", publisher: "UNHCR", date: "2025", tier: 1}
+
+  # ---------- action ----------
+  - to: CHN
+    layer: action
+    type: incident
+    summary: "In early 2026 a Peruvian judge ruled that the regulator Ositran cannot supervise Chancay beyond the tariffs for its services, in favour of COSCO. The US State Department's Western Hemisphere bureau said it was concerned Peru could lose oversight of critical infrastructure, and China expressed 'strong dissatisfaction' and called the US claims fabricated. Lima said the port must comply with Peruvian regulations."
+    since: '2026-02'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    note: "The date of the ruling is not given in the El Universal report of 12 Feb 2026; a mention that Peru would appeal came from a search summary and is not confirmed by the page read."
+    sources:
+      - {url: "https://www.eluniversal.com.co/mundo/2026/02/12/tension-por-el-puerto-de-chancay-ee-uu-cuestiona-control-y-peru-responde/", title: "Tension over the port of Chancay: the US questions control and Peru replies", title_original: "Tensión por el puerto de Chancay: EE.UU. cuestiona control y Perú responde", publisher: "El Universal (Colombia)", date: "2026-02-12", tier: 3, lang: es}
+
+  - to: USA
+    layer: action
+    type: sanction
+    summary: "On 24 July 2026 the US put an additional 12.5% tariff on Peru under Section 301 (failure to ban forced-labour imports; 10% or 12.5% for 60 economies), replacing the 10% Section 122 surcharge that expired that day. Mincetur will seek a review and has sent Congress a forced-labour import-ban bill."
+    since: '2026-07-24'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://andina.pe/ingles/noticia-perus-mincetur-usimposed-tariff-does-not-affect-all-exports-1084914.aspx", title: "Peru's Mincetur: U.S.-imposed tariff does not affect all exports", publisher: "Andina (state agency, official statement)", date: "2026-07-24", tier: 1}
+      - {url: "https://hirunews.lk/goldfmnews/480815/perus-new-foreign-minister-eyes-stronger-us-ties-as-fujimori-takes-office", title: "Peru's new foreign minister eyes stronger US ties as Fujimori takes office", publisher: "Reuters (via Hiru News)", date: "2026-08-01", tier: 3}
+
+  - to: USA
+    layer: action
+    type: incident
+    summary: "On the Chancay court ruling of early 2026 the State Department's Western Hemisphere bureau said it supports Peru's 'sovereign right to supervise critical infrastructure on its own territory' and warned that Chinese cheap money comes at the cost of sovereignty. Peru answered that the port is under its port-security rules."
+    since: '2026-02'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.eluniversal.com.co/mundo/2026/02/12/tension-por-el-puerto-de-chancay-ee-uu-cuestiona-control-y-peru-responde/", title: "Tension over the port of Chancay: the US questions control and Peru replies", title_original: "Tensión por el puerto de Chancay: EE.UU. cuestiona control y Perú responde", publisher: "El Universal (Colombia)", date: "2026-02-12", tier: 3, lang: es}
+
+  - to: MEX
+    layer: action
+    type: incident
+    summary: "Peru cut diplomatic relations with Mexico on 3 November 2025 after Mexico gave asylum in its Lima embassy to ex-prime minister Betssy Chavez, charged over Castillo's 2022 attempt to dissolve Congress; foreign minister De Zela called the asylum an unfriendly act, and Peru's Congress also declared President Sheinbaum persona non grata. Sheinbaum called the break disproportionate. The two had had no ambassadors since early 2023 (Reuters)."
+    since: '2025-11-03'
+    until: '2026-08-07'
+    last_verified: '2026-10-16'
+    confidence: B
+    note: "The date, the Andina statement and the foreign minister's words are mirrored from the MEX card (same sources); Reuters and LatinNews differ on the timeline (the rupture dated to November 2025 by one, the ambassadors' absence to early 2023 by the other), both recorded. The persona non grata vote is from the Reuters/Star summary, not a Peruvian source."
+    sources:
+      - {url: "https://andina.pe/ingles/noticia-peru-announces-breaking-ties-with-mexico-after-asylum-granted-to-betssy-chavez-1050642.aspx", title: "Peru announces breaking ties with Mexico after asylum granted to Betssy Chavez", publisher: "Andina (Peruvian state agency, official statement)", date: "2025-11-04", tier: 1}
+      - {url: "https://www.cp24.com/news/world/2025/11/04/peru-breaks-diplomatic-relations-with-mexico-over-asylum-claim-of-former-prime-minister/", title: "Peru breaks diplomatic relations with Mexico over asylum claim of former prime minister", publisher: "CP24 (wire)", date: "2025-11-04", tier: 3}
+      - {url: "https://www.thestar.com.my/news/world/2026/08/07/peru-and-mexico-resume-diplomatic-relations", title: "Peru and Mexico resume diplomatic relations after dispute over leftist politician", publisher: "Reuters (via The Star)", date: "2026-08-07", tier: 3}
+
+  - to: MEX
+    layer: action
+    type: agreement
+    summary: "Peru and Mexico restored diplomatic relations on 7 August 2026 by joint foreign-ministry statement; Fujimori's government gave Chavez safe-conduct to Mexico as a goodwill gesture, reserving the right to ask for her extradition. Fujimori had announced the restoration in July. Mexico's Senate ratified Lydia Antonio de la Garza as ambassador to Peru on 13 October 2026; Peru's ambassador to Mexico is not confirmed."
+    since: '2026-08-07'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.thestar.com.my/news/world/2026/08/07/peru-and-mexico-resume-diplomatic-relations", title: "Peru and Mexico resume diplomatic relations after dispute over leftist politician", publisher: "Reuters (via The Star)", date: "2026-08-07", tier: 3}
+      - {url: "https://www.cronica.com.mx/nacional/2026/10/13/senado-ratifica-a-lydia-antonio-de-la-garza-como-embajadora-en-peru-se-reestablecen-relaciones-tras-ruptura/", title: "Senate ratifies Lydia Antonio de la Garza as ambassador to Peru, relations re-established after the rupture", title_original: "Senado ratifica a Lydia Antonio de la Garza como embajadora en Perú; se reestablecen relaciones tras ruptura", publisher: "Crónica (Mexico)", date: "2026-10-13", tier: 3, lang: es}
+      - {url: "https://english.adnkronos.com/2026/08/07/peru-diplomatic-relations-with-mexico-re-established-after-safe-conduct-for-ex-premier/", title: "Peru: diplomatic relations with Mexico re-established after safe conduct for ex-premier", publisher: "Adnkronos", date: "2026-08-07", tier: 3}
+
+  - to: VEN
+    layer: action
+    type: agreement
+    summary: "On 24 July 2026 Peru and Venezuela announced a gradual resumption of relations starting with consular ones; on 14 August the foreign ministers Espa and Plasencia agreed that Peru's consulate in Caracas would reopen on 1 September, with a Venezuelan consular official to be named in Lima. Plasencia spoke of voluntary returns of Venezuelans."
+    since: '2026-07-24'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://andina.pe/ingles/noticia-peru-and-venezuela-announce-resumption-of-consular-relations-1084941.aspx", title: "Peru and Venezuela announce resumption of consular relations", publisher: "Andina (state agency, official statement)", date: "2026-07-24", tier: 1}
+      - {url: "https://andina.pe/ingles/noticia-peru-and-venezuelas-foreign-ministers-advance-in-resuming-relations-1087689.aspx", title: "Peru and Venezuela's Foreign Ministers advance in resuming relations", publisher: "Andina (state agency, official statement)", date: "2026-08-15", tier: 1}
+
+  - to: CHL
+    layer: action
+    type: incident
+    summary: "Peru declared a state of emergency on 28 November 2025 to block the Chilean border crossings while migrants piled up at the frontier. Mirrored from the CHL card; the same source, read from Lima's side."
+    since: '2025-11-28'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/news/2025/11/28/peru-to-declare-state-of-emergency-to-block-chile-border-crossings", title: "Peru to declare state of emergency to block Chile border crossings", publisher: "Al Jazeera", date: "2025-11-28", tier: 3}
+
+  - to: CHL
+    layer: action
+    type: agreement
+    summary: "Peru, Chile, Argentina and Bolivia signed a joint declaration on strategic minerals, copper and lithium, in Santiago on 28 August 2026; mining authorities signed. Mirrored from the CHL and BOL cards (same source)."
+    since: '2026-08-28'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://es.euronews.com/2026/08/28/peru-argentina-chile-y-bolivia-unen-fuerzas-para-ganar-peso-en-el-mercado-de-minerales-est", title: "Peru, Argentina, Chile and Bolivia join forces to gain weight in the minerals market", title_original: "Sudamérica se mueve por el litio y el cobre: Chile, Argentina, Bolivia y Perú firman un acuerdo", publisher: "Euronews", date: "2026-08-28", tier: 3, lang: es}
+
+  - to: BOL
+    layer: action
+    type: agreement
+    summary: "Bolivia's sea question on Peru's side: the Ilo protocol signed in October 2010 by Garcia and Morales gives Bolivia a duty-free maritime zone of 99 years at Peru's port of Ilo. Bolivia ratified it in February 2011; whether Peru's full Congress did is not verified. In January 2026 President Paz said the Pacific, through Chile or Peru, has to be Bolivia's gateway."
+    since: '2010-10-19'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "From press reports of 2010 and from search summaries on the ratification; the treaty text and a Peruvian ratification instrument were not read. The 1929 Treaty of Lima is described in the same results as blocking Bolivia's access by both Chile and Peru, background not read in its text."
+    sources:
+      - {url: "https://peruviantimes.com/20/peru-signs-pact-providing-bolivia-access-to-pacific/9430", title: "Peru signs pact providing Bolivia access to Pacific", publisher: "Peruvian Times", date: "2010-10", tier: 3}
+      - {url: "https://www.eluniverso.com/2010/10/20/1/1361/bolivia-alcanza-un-acceso-oceano-pacifico.html", title: "Bolivia gains an outlet to the Pacific Ocean", title_original: "Bolivia alcanza un acceso al océano Pacífico", publisher: "El Universo", date: "2010-10-20", tier: 3, lang: es}
+      - {url: "https://gestion.pe/mundo/internacional/rodrigo-paz-ofrece-a-chile-los-puertos-de-bolivia-para-que-se-conecte-con-brasil-noticia/", title: "Rodrigo Paz offers Chile Bolivia's ports to connect with Brazil", title_original: "Rodrigo Paz ofrece a Chile los puertos de Bolivia para que se conecte con Brasil", publisher: "Gestión", date: "2026-01", tier: 3, lang: es}
+
+  - to: BOL
+    layer: action
+    type: agreement
+    summary: "Bolivia is the fourth signatory of the Santiago strategic-minerals declaration of 28 August 2026 with Peru, Chile and Argentina (mirrored from the BOL card; the same source)."
+    since: '2026-08-28'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://es.euronews.com/2026/08/28/peru-argentina-chile-y-bolivia-unen-fuerzas-para-ganar-peso-en-el-mercado-de-minerales-est", title: "Peru, Argentina, Chile and Bolivia join forces to gain weight in the minerals market", title_original: "Sudamérica se mueve por el litio y el cobre: Chile, Argentina, Bolivia y Perú firman un acuerdo", publisher: "Euronews", date: "2026-08-28", tier: 3, lang: es}
+
+  - to: ECU
+    layer: alignment
+    type: treaty
+    summary: "The Brasilia peace accords of October 1998 settled the Peru-Ecuador border after armed conflict; four guarantor states, the US among them, pledged US$40m for a border integration project and US$4m for demining. Peru's foreign ministry on 28 July 2026 called the relation a 'strategic priority' set by these accords and a Binational Cabinet continues to meet."
+    since: '1998-10'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    note: "The 1998 dates and the pledges come from the Wikipedia Foreign relations of Peru index (tier 4, cited as a pointer, not followed to its sources); the 2026 reaffirmation is from the Peruvian foreign ministry as reported by El Diario and Andina."
+    sources:
+      - {url: "https://andina.pe/ingles/noticia-peru-fujimori-and-ecuadors-president-discuss-possible-binational-cabinet-meeting-in-lima-1085375.aspx", title: "Peru: Fujimori and Ecuador's President discuss possible Binational Cabinet meeting in Lima", publisher: "Andina (state agency, official statement)", date: "2026-07-28", tier: 1}
+      - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Peru", title: "Foreign relations of Peru (Wikipedia; index, tier 4 pointer)", publisher: "Wikipedia", date: "2026", tier: 4}
+
+  - to: ECU
+    layer: action
+    type: visit
+    summary: "On 28 July 2026, before Fujimori's inauguration in Lima, she and President Noboa (with FM Kury, Galarreta and Espa present) agreed to deepen cooperation on public safety and transnational crime, share prison management, use sensors and drones on Ecuador's southern border against arms trafficking, assess Peruvian natural gas for Ecuador's power plants, and hold the next Binational Cabinet in Lima later in 2026."
+    since: '2026-07-28'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://andina.pe/ingles/noticia-peru-fujimori-and-ecuadors-president-discuss-possible-binational-cabinet-meeting-in-lima-1085375.aspx", title: "Peru: Fujimori and Ecuador's President discuss possible Binational Cabinet meeting in Lima", publisher: "Andina (state agency, official statement)", date: "2026-07-28", tier: 1}
+      - {url: "https://www.eldiario.ec/ecuador/daniel-noboa-y-keiko-fujimori-sostienen-primer-encuentro-bilateral-previo-a-la-investidura-en-lima-28072026/", title: "Daniel Noboa and Keiko Fujimori hold first bilateral meeting ahead of the inauguration in Lima", title_original: "Daniel Noboa y Keiko Fujimori sostienen primer encuentro bilateral previo a la investidura en Lima", publisher: "El Diario (Ecuador)", date: "2026-07-28", tier: 3, lang: es}
+
+  - to: COL
+    layer: action
+    type: incident
+    summary: "Santa Rosa island: after Peru's Law 32403 (July 2025) made it the district of Santa Rosa de Loreto, President Petro said on 7 August 2025 that Colombia 'does not recognize Peru's sovereignty' over it; Boluarte replied that 'there is nothing pending to discuss', the prime minister led a ministerial delegation and troops were deployed. Peru rests on the 1922 and 1929 treaties; Colombia says the island had not emerged when they were signed."
+    since: '2025-08-07'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    note: "Accounts differ on the Peruvian law (a June vote or a July law; the COL card gives Law 32403 of July 2025) and on the island's population (under 1,000 to about 3,000). No 2026 source was found, so the state of the dispute under the new governments in Lima and Bogota is not known."
+    sources:
+      - {url: "https://aljazeera.com/news/2025/8/5/colombias-president-petro-accuses-peru-of-annexing-disputed-amazon-island", title: "Colombia's President Petro accuses Peru of annexing disputed Amazon island", publisher: "Al Jazeera", date: "2025-08-05", tier: 3}
+      - {url: "https://colombiareports.com/colombia-and-peru-clash-over-amazonian-river-island/", title: "Colombia and Peru clash over Amazonian river island", publisher: "Colombia Reports", date: "2025-08", tier: 3}
+
+  - to: KOR
+    layer: alignment
+    type: treaty
+    summary: "Free-trade agreement between Peru and South Korea, signed in November 2010 and in force from August 2011."
+    since: '2011-08'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    note: "Both dates are from the titles and summaries of the Korea Times and Korea JoongAng Daily pages as returned by search; the pages were not fetched and the exact day is not recorded."
+    sources:
+      - {url: "https://www.koreatimes.co.kr/amp/southkorea/20101115/korea-peru-sign-free-trade-pact", title: "Korea, Peru sign free trade pact", publisher: "The Korea Times", date: "2010-11-15", tier: 3}
+      - {url: "https://www.koreajoongangdaily.com/business/free-trade-pact-with-peru-takes-effect-today/10339344", title: "Free trade pact with Peru takes effect today", publisher: "Korea JoongAng Daily", date: "2011-08", tier: 3}
+
+  - to: ARG
+    layer: action
+    type: visit
+    summary: "On 28 July 2026 President Milei met Keiko Fujimori in Lima (Torre Tagle), hours before the handover, with FM Quirno; the two governments agreed to strengthen economic, security and science cooperation. Milei had congratulated her on the runoff win and Galarreta had seen Santiago Caputo at the Casa Rosada. Mirrored from the ARG card (same sources)."
+    since: '2026-07-28'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://en.mercopress.com/2026/07/28/milei-and-fujimori-meet-in-lima-and-agree-to-strengthen-economic-and-security-cooperation", title: "Milei and Fujimori meet in Lima and agree to strengthen economic and security cooperation", publisher: "MercoPress", date: "2026-07-28", tier: 3}
+      - {url: "https://www.conclusion.com.ar/?p=1439836", title: "Milei met Keiko Fujimori in Lima: political harmony and bilateral agenda in Peru", title_original: "Milei se reunió con Keiko Fujimori en Lima: sintonía política y agenda bilateral en Perú", publisher: "Conclusión", date: "2026-07", tier: 3, lang: es}
+
+  - to: ARG
+    layer: action
+    type: agreement
+    summary: "Argentina is the third signatory, with Peru, Chile and Bolivia, of the Santiago strategic-minerals declaration of 28 August 2026 (copper and lithium); mirrored from the ARG card (same source)."
+    since: '2026-08-28'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://es.euronews.com/2026/08/28/peru-argentina-chile-y-bolivia-unen-fuerzas-para-ganar-peso-en-el-mercado-de-minerales-est", title: "Peru, Argentina, Chile and Bolivia join forces to gain weight in the minerals market", title_original: "Sudamérica se mueve por el litio y el cobre: Chile, Argentina, Bolivia y Perú firman un acuerdo", publisher: "Euronews", date: "2026-08-28", tier: 3, lang: es}

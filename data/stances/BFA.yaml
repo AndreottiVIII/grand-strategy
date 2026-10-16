@@ -1,99 +1,205 @@
 actor: BFA
 stances:
-  - toward: org-aes
-    grade: ally
-    trend: stable
-    bond: affinity
-    since: '2024-07'
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "The Alliance of Sahel States is the bloc Burkina chose after leaving ECOWAS: a pact signed in July 2024 with Mali and Niger (Al Jazeera headline; the exit from ECOWAS is dated January 2024, DW). The grade ally rests on the pact; the treaty text was not opened here, so whether it carries a defence clause is not verified. Bond affinity is our reading: the three juntas share a coup origin, the sovereignty frame and a hostility to ECOWAS and France, with no kinship. Two tier 3 sources only, so C. The MLI card reads the same pact as ally from its side."
-    sources:
-      - {url: "https://www.aljazeera.com/news/2024/7/6/niger-mali-and-burkina-faso-military-leaders-sign-new-pact-rebuff-ecowas", title: "Niger, Mali and Burkina Faso military leaders sign new pact, rebuff ECOWAS", publisher: "Al Jazeera", date: "2024-07-06", tier: 3}
-      - {url: "https://www.dw.com/en/mali-burkina-faso-and-niger-quit-ecowas/a-68106116", title: "Mali, Burkina Faso and Niger quit ECOWAS", publisher: "Deutsche Welle", date: "2024-01-28", tier: 3}
-
-  - toward: MLI
-    grade: ally
-    trend: stable
-    bond: affinity
-    since: '2024-07'
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "The Mali side of the Alliance of Sahel States pact (July 2024), read from Ouagadougou. Mirror: the MLI card holds ally toward org-aes and the same Al Jazeera source; the grade here is Burkina's own reading of the pair. Bond affinity is our reading, as on the org-aes row: a shared coup origin and sovereignty frame, with no kinship named. Tier 3 only, so C."
-    sources:
-      - {url: "https://www.aljazeera.com/news/2024/7/6/niger-mali-and-burkina-faso-military-leaders-sign-new-pact-rebuff-ecowas", title: "Niger, Mali and Burkina Faso military leaders sign new pact, rebuff ECOWAS", publisher: "Al Jazeera", date: "2024-07-06", tier: 3}
-
-  - toward: NER
-    grade: ally
-    trend: stable
-    bond: affinity
-    since: '2025-01'
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "The Niger side of the same bloc. Mirror: the NER card reads ally toward Burkina with the same bond and the same two tier 3 sources (joint ECOWAS exit, joint passport and military arrangement, early 2025). Grade ally rests on the joint exit and the joint military arrangement; no treaty text was opened here. Bond affinity is our reading, with no kinship named. Tier 3 only, so C."
-    sources:
-      - {url: "https://allafrica.com/stories/202502060018.html", title: "Sahel States Exit Ecowas, Launch Regional Passport and Joint Military", publisher: "AllAfrica", date: "2025-02-06", tier: 3}
-      - {url: "https://www.channelstv.com/2025/01/28/thousands-rally-in-burkina-faso-niger-to-cheer-ecowas-exit", title: "Thousands rally in Burkina Faso, Niger to cheer ECOWAS exit", publisher: "Channels TV", date: "2025-01-28", tier: 3}
-
-  - toward: RUS
-    grade: partner
-    trend: stable
-    bond: none
-    since: '2024-06'
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "Russia sent Africa Corps instructors and, by its own account, a contingent of about 100 in 2024 to protect Traoré and train troops (Bloomberg; AFP via the Moscow Times). Burkina did not confirm the deployment. No treaty or defence clause was found, so the grade is transactional security cooperation: partner, not ally. Bond none is our reading; no source names kinship or affinity. Trend stable, not warming: the sources are from 2024, and no 2025-26 source on the size of the Africa Corps presence was found. Gap: current size and any drawdown."
-    sources:
-      - {url: "https://bnnbloomberg.ca/russian-troops-begin-burkina-faso-deployment-to-bolster-security-1.2026130", title: "Russian Troops Begin Burkina Faso Deployment to Bolster Security", publisher: "Bloomberg (via BNN)", date: "2024", tier: 3}
-      - {url: "https://themoscowtimes.com/2024/06/05/moscow-to-deploy-more-military-instructors-in-burkina-faso-a85324", title: "Moscow to deploy more military instructors in Burkina Faso", publisher: "The Moscow Times", date: "2024-06-05", tier: 3}
-
-  - toward: CIV
-    grade: rival
-    trend: cooling
-    bond: grievance
-    since: '2024-04'
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "Mirror: the CIV card holds the same sources and the same reading from the other side (rival, grievance, cooling). Traoré accused Abidjan of welcoming Burkina's destabilisers in April 2024; in April 2025 the junta announced a foiled plot it linked to Ivory Coast; in September 2025 the head of state named neighbouring countries, Ivory Coast among them. Rival is our reading (C): mutual charges and detentions, with no sign that either regime seeks the other's end. Ivory Coast denies the charges; its reply is not in the sources read here. The six Ivorian officials reported detained in late 2025 are not confirmed at source."
-    sources:
-      - {url: "https://www.zawya.com/en/economy/africa/burkina-faso-leader-accuses-ivory-coast-of-welcoming-destabilisers-m20hrl8l", title: "Burkina Faso leader accuses Ivory Coast of welcoming destabilisers", publisher: "Zawya", date: "2024-04", tier: 3}
-      - {url: "https://www.solardaily.com/reports/Burkina_junta_says_foiled_plot_to_sow_total_chaos_999.html", title: "Burkina junta says foiled plot to sow total chaos", publisher: "Solar Daily (AFP copy)", date: "2025-04", tier: 3}
-      - {url: "https://fr.allafrica.com/stories/202509290183.html", title: "Burkina Faso: head of state accuses neighbouring countries of destabilisation, including Ivory Coast", title_original: "Afrique de l'Ouest: Burkina Faso - Le chef de l'Etat accuse des pays voisins de destabilisation, dont la Cote d'Ivoire", lang: fr, publisher: "allAfrica", date: "2025-09-29", tier: 3}
-
-  - toward: GHA
-    grade: partner
-    trend: warming
-    bond: none
-    since: '2026-02'
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "Mirror of evidence from the GHA card; the grade is Burkina's own reading and differs from Ghana's. Ghana's card reads reluctant_partner (its side resists alignment). From Ouagadougou the February 2026 joint commission produced seven instruments after the Titao attack on Ghanaian traders (AFP via NAMPA): a transactional security and trade partnership, so partner. Warming is our reading of the step from the 2022 summons to the 2026 instruments. Bond none: no current kinship or grievance is documented. Tier 3 sources only, so C."
-    sources:
-      - {url: "https://www.nampa.org/text/22866233", title: "Ghana, Burkina beef up security ties after jihadist attack", publisher: "AFP (via NAMPA)", date: "2026-02-22", tier: 3}
-      - {url: "https://www.nampa.org/text/22861428", title: "7 Ghanaians dead in suspected Burkina jihadist attack", publisher: "AFP (via NAMPA)", date: "2026-02-16", tier: 3}
-      - {url: "https://fr.allafrica.com/stories/202602230114.html", title: "West Africa: Burkina-Ghana cooperation - 7 agreements signed (translated)", title_original: "Afrique de l'Ouest: Coopération Burkina - Ghana - 7 accords signés", lang: fr, publisher: "allAfrica", date: "2026-02-23", tier: 3}
-      - {url: "https://adf-magazine.com/2026/08/ghana-faces-brewing-crisis-as-it-avoids-conflict-with-jnim/", title: "Ghana faces brewing crisis as it avoids conflict with JNIM", publisher: "ADF Magazine", date: "2026-08", tier: 3}
-
-  - toward: FRA
-    grade: rival
-    trend: cooling
-    bond: grievance
-    since: '2026-06-26'
-    last_verified: '2026-10-16'
-    confidence: B
-    note: "Burkina broke off diplomatic relations with France on 26 June 2026, through its communications minister, citing non-interference and accusing France of supporting 'subversive networks' and 'terrorists'. Paris called the move hostile and unfounded and is weighing reciprocal measures. The French foreign ministry's own statement was seen in search results but not opened; the Reuters copy was read. Rival, not adversary: both sides keep the break at state level and the junta says the people's ties stand. Bond grievance is our reading: the colonial past and the 2023 expulsion of French forces. The 2023 expulsion and the media bans are not sourced in this pass; the cooling since January 2023 rests on Wikipedia's citation of Reuters, not opened."
-    sources:
-      - {url: "https://www.diplomatie.gouv.fr/en/presse-et-ressources/decouvrir-et-informer/actualites/decision-unilaterale-du-burkina-faso-de-rompre-ses-relations-diplomatiques-avec-la-france", title: "Burkina's unilateral decision to break off diplomatic relations with France", publisher: "French Ministry for Europe and Foreign Affairs", date: "2026-06", tier: 1}
-      - {url: "https://www.thestar.com.my/news/world/2026/06/27/burkina-faso-breaks-off-diplomatic-relations-with-france", title: "Burkina Faso breaks off diplomatic relations with France", publisher: "The Star (Reuters copy)", date: "2026-06-27", tier: 3}
-
-  - toward: nsa-jnim
-    grade: adversary
-    trend: stable
-    bond: grievance
-    since: '2024-08'
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "Adversary is our reading, and no source uses the word. The structure is mortal: JNIM fights to take the state's territory and the junta fights to destroy the group, so each side's aim is the other's defeat. The Barsalogho attack (August 2024) is the dated marker; the start of the war is not dated here. Mirror: the BEN card's ACLED source says JNIM uses Tapoa and Kompienga provinces in Burkina Faso for raids into Benin; that is about the group's use of Burkinabe ground, not an act of the state. Bond grievance is our reading of an open war with massacres on both sides. Gaps: the Djibo attack is not verified (the search found only Barsalogho); the junta's own casualty figures are not published here."
-    sources:
-      - {url: "https://www.longwarjournal.org/archives/2024/08/analysis-al-qaeda-kills-hundreds-in-burkina-faso-attack.php", title: "Analysis: Al Qaeda kills hundreds in Burkina Faso attack", publisher: "FDD's Long War Journal", date: "2024-08-26", tier: 3}
-      - {url: "https://acleddata.com/update/africa-overview-may-2025", title: "Africa overview, May 2025", publisher: "ACLED", date: "2025-05", tier: 2}
+- toward: org-aes
+  grade: ally
+  trend: stable
+  bond: affinity
+  since: 2024-07
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'The Alliance of Sahel States is the bloc Burkina chose after leaving ECOWAS: a pact signed in July 2024 with Mali and Niger (Al Jazeera headline; the exit from ECOWAS is dated January 2024, DW).
+    The grade ally rests on the pact; the treaty text was not opened here, so whether it carries a defence clause is not verified. Bond affinity is our reading: the three juntas share a coup origin, the
+    sovereignty frame and a hostility to ECOWAS and France, with no kinship. Two tier 3 sources only, so C. The MLI card reads the same pact as ally from its side.'
+  sources:
+  - url: https://www.aljazeera.com/news/2024/7/6/niger-mali-and-burkina-faso-military-leaders-sign-new-pact-rebuff-ecowas
+    title: Niger, Mali and Burkina Faso military leaders sign new pact, rebuff ECOWAS
+    publisher: Al Jazeera
+    date: '2024-07-06'
+    tier: 3
+  - url: https://www.dw.com/en/mali-burkina-faso-and-niger-quit-ecowas/a-68106116
+    title: Mali, Burkina Faso and Niger quit ECOWAS
+    publisher: Deutsche Welle
+    date: '2024-01-28'
+    tier: 3
+- toward: MLI
+  grade: ally
+  trend: stable
+  bond: affinity
+  since: 2024-07
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'The Mali side of the Alliance of Sahel States pact (July 2024), read from Ouagadougou. Mirror: the MLI card holds ally toward org-aes and the same Al Jazeera source; the grade here is Burkina''s
+    own reading of the pair. Bond affinity is our reading, as on the org-aes row: a shared coup origin and sovereignty frame, with no kinship named. Tier 3 only, so C.'
+  sources:
+  - url: https://www.aljazeera.com/news/2024/7/6/niger-mali-and-burkina-faso-military-leaders-sign-new-pact-rebuff-ecowas
+    title: Niger, Mali and Burkina Faso military leaders sign new pact, rebuff ECOWAS
+    publisher: Al Jazeera
+    date: '2024-07-06'
+    tier: 3
+- toward: NER
+  grade: ally
+  trend: stable
+  bond: affinity
+  since: 2025-01
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'The Niger side of the same bloc. Mirror: the NER card reads ally toward Burkina with the same bond and the same two tier 3 sources (joint ECOWAS exit, joint passport and military arrangement, early
+    2025). Grade ally rests on the joint exit and the joint military arrangement; no treaty text was opened here. Bond affinity is our reading, with no kinship named. Tier 3 only, so C.'
+  sources:
+  - url: https://allafrica.com/stories/202502060018.html
+    title: Sahel States Exit Ecowas, Launch Regional Passport and Joint Military
+    publisher: AllAfrica
+    date: '2025-02-06'
+    tier: 3
+  - url: https://www.channelstv.com/2025/01/28/thousands-rally-in-burkina-faso-niger-to-cheer-ecowas-exit
+    title: Thousands rally in Burkina Faso, Niger to cheer ECOWAS exit
+    publisher: Channels TV
+    date: '2025-01-28'
+    tier: 3
+- toward: RUS
+  grade: partner
+  trend: stable
+  bond: none
+  since: 2024-06
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'Russia sent Africa Corps instructors and, by its own account, a contingent of about 100 in 2024 to protect Traoré and train troops (Bloomberg; AFP via the Moscow Times). Burkina did not confirm
+    the deployment. No treaty or defence clause was found, so the grade is transactional security cooperation: partner, not ally. Bond none is our reading; no source names kinship or affinity. Trend stable,
+    not warming: the sources are from 2024, and no 2025-26 source on the size of the Africa Corps presence was found. Gap: current size and any drawdown.'
+  sources:
+  - url: https://bnnbloomberg.ca/russian-troops-begin-burkina-faso-deployment-to-bolster-security-1.2026130
+    title: Russian Troops Begin Burkina Faso Deployment to Bolster Security
+    publisher: Bloomberg (via BNN)
+    date: '2024'
+    tier: 3
+  - url: https://themoscowtimes.com/2024/06/05/moscow-to-deploy-more-military-instructors-in-burkina-faso-a85324
+    title: Moscow to deploy more military instructors in Burkina Faso
+    publisher: The Moscow Times
+    date: '2024-06-05'
+    tier: 3
+- toward: CIV
+  grade: rival
+  trend: cooling
+  bond: grievance
+  since: 2024-04
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'Mirror: the CIV card holds the same sources and the same reading from the other side (rival, grievance, cooling). Traoré accused Abidjan of welcoming Burkina''s destabilisers in April 2024; in
+    April 2025 the junta announced a foiled plot it linked to Ivory Coast; in September 2025 the head of state named neighbouring countries, Ivory Coast among them. Rival is our reading (C): mutual charges
+    and detentions, with no sign that either regime seeks the other''s end. Ivory Coast denies the charges; its reply is not in the sources read here. The six Ivorian officials reported detained in late
+    2025 are not confirmed at source.'
+  sources:
+  - url: https://www.zawya.com/en/economy/africa/burkina-faso-leader-accuses-ivory-coast-of-welcoming-destabilisers-m20hrl8l
+    title: Burkina Faso leader accuses Ivory Coast of welcoming destabilisers
+    publisher: Zawya
+    date: 2024-04
+    tier: 3
+  - url: https://www.solardaily.com/reports/Burkina_junta_says_foiled_plot_to_sow_total_chaos_999.html
+    title: Burkina junta says foiled plot to sow total chaos
+    publisher: Solar Daily (AFP copy)
+    date: 2025-04
+    tier: 3
+  - url: https://fr.allafrica.com/stories/202509290183.html
+    title: 'Burkina Faso: head of state accuses neighbouring countries of destabilisation, including Ivory Coast'
+    title_original: 'Afrique de l''Ouest: Burkina Faso - Le chef de l''Etat accuse des pays voisins de destabilisation, dont la Cote d''Ivoire'
+    lang: fr
+    publisher: allAfrica
+    date: '2025-09-29'
+    tier: 3
+- toward: GHA
+  grade: partner
+  trend: warming
+  bond: none
+  since: 2026-02
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'Mirror of evidence from the GHA card; the grade is Burkina''s own reading and differs from Ghana''s. Ghana''s card reads reluctant_partner (its side resists alignment). From Ouagadougou the February
+    2026 joint commission produced seven instruments after the Titao attack on Ghanaian traders (AFP via NAMPA): a transactional security and trade partnership, so partner. Warming is our reading of the
+    step from the 2022 summons to the 2026 instruments. Bond none: no current kinship or grievance is documented. Tier 3 sources only, so C.'
+  sources:
+  - url: https://www.nampa.org/text/22866233
+    title: Ghana, Burkina beef up security ties after jihadist attack
+    publisher: AFP (via NAMPA)
+    date: '2026-02-22'
+    tier: 3
+  - url: https://www.nampa.org/text/22861428
+    title: 7 Ghanaians dead in suspected Burkina jihadist attack
+    publisher: AFP (via NAMPA)
+    date: '2026-02-16'
+    tier: 3
+  - url: https://fr.allafrica.com/stories/202602230114.html
+    title: 'West Africa: Burkina-Ghana cooperation - 7 agreements signed (translated)'
+    title_original: 'Afrique de l''Ouest: Coopération Burkina - Ghana - 7 accords signés'
+    lang: fr
+    publisher: allAfrica
+    date: '2026-02-23'
+    tier: 3
+  - url: https://adf-magazine.com/2026/08/ghana-faces-brewing-crisis-as-it-avoids-conflict-with-jnim/
+    title: Ghana faces brewing crisis as it avoids conflict with JNIM
+    publisher: ADF Magazine
+    date: 2026-08
+    tier: 3
+- toward: FRA
+  grade: rival
+  trend: cooling
+  bond: grievance
+  since: '2026-06-26'
+  last_verified: '2026-10-16'
+  confidence: B
+  note: 'Burkina broke off diplomatic relations with France on 26 June 2026, through its communications minister, citing non-interference and accusing France of supporting ''subversive networks'' and ''terrorists''.
+    Paris called the move hostile and unfounded and is weighing reciprocal measures. The French foreign ministry''s own statement was seen in search results but not opened; the Reuters copy was read. Rival,
+    not adversary: both sides keep the break at state level and the junta says the people''s ties stand. Bond grievance is our reading: the colonial past and the 2023 expulsion of French forces. The 2023
+    expulsion and the media bans are not sourced in this pass; the cooling since January 2023 rests on Wikipedia''s citation of Reuters, not opened.'
+  sources:
+  - url: https://www.diplomatie.gouv.fr/en/presse-et-ressources/decouvrir-et-informer/actualites/decision-unilaterale-du-burkina-faso-de-rompre-ses-relations-diplomatiques-avec-la-france
+    title: Burkina's unilateral decision to break off diplomatic relations with France
+    publisher: French Ministry for Europe and Foreign Affairs
+    date: 2026-06
+    tier: 1
+  - url: https://www.thestar.com.my/news/world/2026/06/27/burkina-faso-breaks-off-diplomatic-relations-with-france
+    title: Burkina Faso breaks off diplomatic relations with France
+    publisher: The Star (Reuters copy)
+    date: '2026-06-27'
+    tier: 3
+- toward: nsa-jnim
+  grade: adversary
+  trend: stable
+  bond: grievance
+  since: 2024-08
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'Adversary is our reading, and no source uses the word. The structure is mortal: JNIM fights to take the state''s territory and the junta fights to destroy the group, so each side''s aim is the
+    other''s defeat. The Barsalogho attack (August 2024) is the dated marker; the start of the war is not dated here. Mirror: the BEN card''s ACLED source says JNIM uses Tapoa and Kompienga provinces in
+    Burkina Faso for raids into Benin; that is about the group''s use of Burkinabe ground, not an act of the state. Bond grievance is our reading of an open war with massacres on both sides. Gaps: the Djibo
+    attack is not verified (the search found only Barsalogho); the junta''s own casualty figures are not published here.'
+  sources:
+  - url: https://www.longwarjournal.org/archives/2024/08/analysis-al-qaeda-kills-hundreds-in-burkina-faso-attack.php
+    title: 'Analysis: Al Qaeda kills hundreds in Burkina Faso attack'
+    publisher: FDD's Long War Journal
+    date: '2024-08-26'
+    tier: 3
+  - url: https://acleddata.com/update/africa-overview-may-2025
+    title: Africa overview, May 2025
+    publisher: ACLED
+    date: 2025-05
+    tier: 2
+- toward: NGA
+  grade: reluctant_partner
+  trend: stable
+  bond: none
+  since: 2025-12-08
+  last_verified: '2026-10-16'
+  confidence: C
+  reciprocal_of: NGA
+  note: Provisional reciprocal of Nigeria's 'reluctant_partner' stance toward Burkina Faso, written on 2026-10-16 by tools/reciprocate.py from the same evidence; to be rewritten from Burkina Faso's side.
+  sources:
+  - url: https://allafrica.com/stories/202512100120.html
+    title: 'West Africa: Airspace Violations - Nigeria, Sahel States Differ Over Detained Aircraft, Soldiers'
+    publisher: AllAfrica
+    date: 2025-12-10
+    tier: 3
+  - url: https://allafrica.com/stories/202512180121.html
+    title: 'Nigeria: Govt Confirms Release of Nigerian Aircraft, Soldiers After Tuggar Meets Burkina Faso Leader'
+    publisher: AllAfrica
+    date: 2025-12-18
+    tier: 3

@@ -43,16 +43,19 @@ relations:
   - to: USA
     layer: dependency
     type: debt
-    summary: "The US Treasury currency swap of USD 20bn, announced 9 October 2025 and signed 20 October 2025, which Milei said could cover 2026 foreign-currency debt payments if markets did not refinance. The value is the swap line size; drawn amounts were not found."
+    summary: "The US Treasury currency swap of USD 20bn, announced 9 October 2025 and signed 20 October 2025, which Milei said could cover 2026 foreign-currency debt payments if markets did not refinance. The value is the swap line size. Sharpened 2026-10-16: the drawn amount is now known - Argentina drew USD 2.5bn in the fourth quarter of 2025 and repaid it by 9 January 2026 (Bessent: fully repaid, 'tens of millions' of profit for the taxpayer; the Treasury report showed the amount; the central bank funded the repayment from an unnamed multilateral lender that was not the IMF, per the Buenos Aires Times, alongside a USD 3bn one-year repo from international banks at about 7.4%). Whether the line remains open was not confirmed."
     since: '2025-10-20'
     until: null
     value: 20
     unit: usd_bn_swap_line
     last_verified: '2026-10-16'
-    confidence: C
+    confidence: B
     sources:
       - {url: "https://news.bloomberglaw.com/capital-markets/us-argentina-sign-20-billion-swap-deal-as-peso-rout-deepens", title: "US, Argentina Sign $20 Billion Swap Deal Amid Deep Peso Rout", publisher: "Bloomberg Law", date: "2025-10-20", tier: 3}
       - {url: "https://batimes.com.ar/news/economy/us-argentina-sign-us20-billion-swap-deal-amid-deep-peso-rout.phtml", title: "US, Argentina sign US$20 billion swap deal amid deep peso rout", publisher: "Buenos Aires Times", date: "2025-10-20", tier: 3}
+      - {url: "https://news.bloomberglaw.com/capital-markets/bessent-says-argentina-repaid-drawdown-on-20-billion-swap-line", title: "Argentina Pays US Swap Line, Bondholders in Boost for Milei", publisher: "Bloomberg Law", date: "2026-01-09", tier: 3}
+      - {url: "https://dc.fortune.com/2026/01/09/argentina-has-repaid-its-20-billion-credit-line-from-trump-administration-scott-bessent-says", title: "Argentina has repaid its $20 billion credit line from Trump administration, Scott Bessent says", publisher: "Fortune", date: "2026-01-09", tier: 3}
+      - {url: "https://batimes.com.ar/news/economy/argentina-used-multilateral-funds-to-repay-us25-billion-us-swap.phtml", title: "Argentina used multilateral funds to repay US$2.5 billion US swap", publisher: "Buenos Aires Times", date: "2026-02", tier: 3}
 
   - to: CHN
     layer: dependency
@@ -95,7 +98,7 @@ relations:
   - to: org-eu
     layer: action
     type: agreement
-    summary: "Argentina's Senate ratified the EU-Mercosur agreement on 26 February 2026 by 69 votes to 3, after the Chamber of Deputies; Milei welcomed the deal as a starting point and asked Mercosur for more flexibility. The European side (Parliament consent, provisional application) was not confirmed in sources found."
+    summary: "Argentina's Senate ratified the EU-Mercosur agreement on 26 February 2026 by 69 votes to 3, after the Chamber of Deputies; Milei welcomed the deal as a starting point and asked Mercosur for more flexibility. Sharpened 2026-10-16: on the European side the interim trade agreement has applied provisionally since 1 May 2026 with the ratifying members (Argentina, Uruguay) while the Parliament's referral to the Court of Justice (21 January, 334-324) and Poland's annulment suit stay open."
     since: '2026-02-26'
     until: null
     last_verified: '2026-10-16'
@@ -103,3 +106,406 @@ relations:
     sources:
       - {url: "https://www.bilaterals.org/uruguay-and-argentina-ratify-the?lang=es", title: "Uruguay and Argentina ratify the EU-Mercosur deal, leaving entry into force to Brussels", publisher: "bilaterals.org", date: "2026-02", tier: 3}
       - {url: "https://www.batimes.com.ar/news/economy/milei-welcomes-eu-trade-deal-but-puts-mercosur-on-notice.phtml", title: "Milei welcomes EU trade deal but puts Mercosur on notice", publisher: "Buenos Aires Times", date: "2026-05", tier: 3}
+
+  # ============ added 2026-10-16 (protagonist enrichment) ============
+
+  # ---------- objective ----------
+  - to: org-mercosur
+    layer: objective
+    type: influence_goal
+    summary: "Loosen the bloc so that each member may negotiate trade deals on its own. Milei put the demand at the Asuncion summit of 29-30 June 2026 and, in May, 'put Mercosur on notice' after the EU ratification; Argentina also keeps its veto on reinstating Venezuela (Ushuaia Protocol). Brazil opposes the direction and proposed reopening the Venezuela question."
+    since: '2024-01'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://en.mercopress.com/2026/06/29/milei-brings-open-disputes-with-brazil-to-a-mercosur-summit-focused-on-trade-deals", title: "Milei brings open disputes with Brazil to a Mercosur summit focused on trade deals", publisher: "MercoPress", date: "2026-06-29", tier: 3}
+      - {url: "https://www.batimes.com.ar/news/economy/milei-welcomes-eu-trade-deal-but-puts-mercosur-on-notice.phtml", title: "Milei welcomes EU trade deal but puts Mercosur on notice", publisher: "Buenos Aires Times", date: "2026-05", tier: 3}
+
+  # ---------- alignment ----------
+  - to: org-cptpp
+    layer: alignment
+    type: candidate
+    summary: "Argentina formally requested accession to the Comprehensive and Progressive Agreement for Trans-Pacific Partnership, announced by Foreign Minister Pablo Quirno around the Mercosur summit of 29-30 June 2026. The CPTPP has twelve members, including Japan, Canada, Australia and the United Kingdom, so accession needs the consent of London while Argentina sanctions firms operating in the Falklands (our observation). Uruguay is named as another possible individual applicant; Brazil answered with a Mercosur-Japan negotiation."
+    since: '2026-06'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://en.mercopress.com/2026/06/29/milei-brings-open-disputes-with-brazil-to-a-mercosur-summit-focused-on-trade-deals", title: "Milei brings open disputes with Brazil to a Mercosur summit focused on trade deals", publisher: "MercoPress", date: "2026-06-29", tier: 3}
+
+  - to: org-eu
+    layer: alignment
+    type: treaty
+    summary: "The EU-Mercosur interim trade agreement, signed 17 January 2026, has applied provisionally since 1 May 2026 with the members that ratified it, Argentina and Uruguay (Argentine Senate, 26 February 2026, 69 votes to 3). The association agreement and the full entry into force wait on Brussels: the European Parliament sent the texts to the Court of Justice on 21 January (334-324) and Poland has asked the Court to annul the Council decision."
+    since: '2026-05-01'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.whitecase.com/insight-alert/eu-provisionally-apply-eu-mercosur-interim-trade-agreement-pending-cjeu-opinion", title: "EU to provisionally apply the EU-Mercosur interim trade agreement pending the CJEU opinion", publisher: "White & Case", date: "2026-02", tier: 2}
+      - {url: "https://www.bilaterals.org/uruguay-and-argentina-ratify-the?lang=es", title: "Uruguay and Argentina ratify the EU-Mercosur deal, leaving entry into force to Brussels", publisher: "bilaterals.org", date: "2026-02", tier: 3}
+
+  # ---------- dependency ----------
+  - to: BRA
+    layer: dependency
+    type: trade_share
+    summary: "Brazil was Argentina's first export market in 2025: USD 12.77bn, about 14.7% of USD 87.08bn of total exports (down 6.3% on 2024). Share computed from INDEC preliminary totals as reported by CIRA."
+    since: '2025'
+    until: '2025'
+    value: 14.7
+    unit: share_of_exports_2025_pct
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.cira.org.ar/?p=24535", title: "Argentina consolidates its 2025 trade surplus: exports exceeded USD 87,000 million", title_original: "Argentina consolida su superavit comercial en 2025: las exportaciones superaron los US$ 87.000 millones", lang: es, publisher: "CIRA (INDEC data)", date: "2026-02", tier: 3}
+
+  - to: BRA
+    layer: dependency
+    type: trade_share
+    summary: "Brazil was Argentina's first source of imports in 2025: USD 18.42bn, about 24.3% of USD 75.79bn of total imports (up 28.5% on 2024). Share computed from INDEC preliminary totals as reported by CIRA."
+    since: '2025'
+    until: '2025'
+    value: 24.3
+    unit: share_of_imports_2025_pct
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.cira.org.ar/?p=24535", title: "Argentina consolidates its 2025 trade surplus: exports exceeded USD 87,000 million", title_original: "Argentina consolida su superavit comercial en 2025: las exportaciones superaron los US$ 87.000 millones", lang: es, publisher: "CIRA (INDEC data)", date: "2026-02", tier: 3}
+
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    summary: "China was Argentina's second export market in 2025: USD 9.80bn, about 11.3% of total exports, up 61.4% on 2024 while sales to Brazil fell. First-half 2026 sales to China were reported up 59.1% to USD 4.89bn (a search summary of INDEC data, not checked at source). China is the top buyer of Argentine unprocessed soybeans and beef."
+    since: '2025'
+    until: '2025'
+    value: 11.3
+    unit: share_of_exports_2025_pct
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.cira.org.ar/?p=24535", title: "Argentina consolidates its 2025 trade surplus: exports exceeded USD 87,000 million", title_original: "Argentina consolida su superavit comercial en 2025: las exportaciones superaron los US$ 87.000 millones", lang: es, publisher: "CIRA (INDEC data)", date: "2026-02", tier: 3}
+      - {url: "https://batimes.com.ar/news/economy/giving-up-china-is-hard-even-for-argentinas-anarcho-capitalist.phtml", title: "Giving up China is hard, even for Argentina's anarcho-capitalist", publisher: "Buenos Aires Times", date: "2024-04-05", tier: 3}
+
+  - to: CHN
+    layer: dependency
+    type: trade_share
+    summary: "China was Argentina's second source of imports in 2025, almost level with Brazil: USD 17.95bn, about 23.7% of total imports, up 53.9% on 2024. Imports rose from every origin (total up 24.7%). Share computed from INDEC preliminary totals as reported by CIRA."
+    since: '2025'
+    until: '2025'
+    value: 23.7
+    unit: share_of_imports_2025_pct
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.cira.org.ar/?p=24535", title: "Argentina consolidates its 2025 trade surplus: exports exceeded USD 87,000 million", title_original: "Argentina consolida su superavit comercial en 2025: las exportaciones superaron los US$ 87.000 millones", lang: es, publisher: "CIRA (INDEC data)", date: "2026-02", tier: 3}
+
+  - to: CHL
+    layer: dependency
+    type: trade_share
+    summary: "Mirrored from the CHL card: Argentina became Chile's second-largest regional trading partner in 2025, bilateral trade near USD 7.98bn. The figure is from a search summary and was not checked on the cited page; the CHL card treats it as C."
+    since: '2025'
+    until: '2025'
+    value: 7.98
+    unit: usd_bn_bilateral_trade_2025
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://es.euronews.com/2026/04/06/kast-elige-argentina-para-su-primer-viaje-refuerza-un-eje-conservador-frente-a-brasil", title: "Kast chooses Argentina for his first trip and reinforces a conservative axis against Brazil", title_original: "Kast elige Argentina para su primer viaje y refuerza un eje derechista frente a Brasil", lang: es, publisher: "Euronews", date: "2026-04-06", tier: 3}
+
+  - to: RUS
+    layer: dependency
+    type: trade_share
+    summary: "Token trade with Moscow: Argentine exports to Russia were USD 37m in April 2025 (up 25.2%) against USD 17.5m of imports (down 32%), a surplus of about USD 19.5m, per OEC data cited in a Buenos Aires Times interview with Russia's ambassador. The value is a one-month export figure, not a share."
+    since: '2025-04'
+    until: '2025-04'
+    value: 37
+    unit: usd_m_exports_apr_2025
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.batimes.com.ar/news/amp/world/russias-relationship-with-milei-government-is-frozen-says-ambassador-in-argentina.phtml", title: "Russia's relationship with Milei government is 'frozen', says ambassador in Argentina", publisher: "Buenos Aires Times", date: "2025-06-21", tier: 3}
+
+  # ---------- action ----------
+  - to: GBR
+    layer: action
+    type: sanction
+    summary: "On 3 September 2026 Milei announced sanctions on the companies behind the Sea Lion oil project north of the Falklands (Navitas Petroleum, operator with 65%; Rockhopper; Eco Atlantic, which holds an adjacent licence) and a bill to toughen Law 26,659 of 2011, which bars unauthorised hydrocarbon activity on the claimed shelf for 5 to 20 years and can reach shareholders, directors and suppliers; the decree names the Foreign Ministry as enforcer and requires compliance declarations from firms seeking incentives or permits. By 8 September Argentina had opened proceedings against 60 people and companies (45 announced the week before, 15 added) and filed a criminal complaint against Navitas, its subsidiaries and directors; Halliburton, SLB and Baker Hughes said they will not work on Sea Lion. Phase 1 is planned at 50,000 barrels a day with first oil in 2028. London calls the activity legitimate under the islands' law. Record output of 916,200 b/d from Vaca Muerta in July 2026 is the leverage Milei threatened to use (exclusion of oil companies)."
+    since: '2026-09-03'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://aljazeera.com/news/2026/9/4/argentinas-milei-threatens-sanctions-as-he-refocuses-on-falklands", title: "Argentina's Milei threatens sanctions as he refocuses on Falklands", publisher: "Al Jazeera", date: "2026-09-04", tier: 3}
+      - {url: "https://al-monitor.com/originals/2026/09/argentina-initiates-sanction-proceedings-against-60-people-and-companies-over", title: "Argentina initiates sanction proceedings against 60 people and companies over Falklands oil", publisher: "Al-Monitor (Reuters)", date: "2026-09-08", tier: 3}
+      - {url: "https://en.mercopress.com/2026/10/08/why-argentina-s-falklands-sanctions-do-not-automatically-reach-sea-lion-s-operator", title: "Why Argentina's Falklands sanctions do not automatically reach Sea Lion's operator", publisher: "MercoPress", date: "2026-10-08", tier: 3}
+      - {url: "https://batimes.com.ar/news/argentina/milei-presses-malvinas-claim-slams-useless-united-nations-in-speech.phtml", title: "Milei presses Malvinas claim, slams 'useless' United Nations 'parasites' in speech", publisher: "Buenos Aires Times", date: "2026-09-23", tier: 3}
+
+  - to: GBR
+    layer: action
+    type: incident
+    summary: "On 29 September 2026 Milei reportedly posted that he had told the Foreign Ministry and legal teams to start international arbitration against the United Kingdom over Sea Lion, and that if the project was not halted within two weeks Argentina would go to the International Tribunal for the Law of the Sea. Navitas said it was replacing two contractors in breach of their obligations and expects no material adverse effect; the consortium took its final investment decision on phase 1 in December 2025 (reported at USD 1.8bn) and Rockhopper shares fell 10% after the September announcements. Reported, not read at source: the filing itself, and whether the two-week deadline led to one, were not found."
+    since: '2026-09-29'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.ajbell.co.uk/news/articles/rockhopper-notes-argentine-sanctions-navitas-replace-two-contractors", title: "Rockhopper notes Argentine sanctions; Navitas replace two contractors", publisher: "AJ Bell", date: "2026-09", tier: 3}
+      - {url: "https://en.mercopress.com/2026/09/04/rockhopper-and-navitas-shares-fall-as-operators-defend-sea-lion-timetable", title: "Rockhopper and Navitas shares fall as operators defend Sea Lion timetable", publisher: "MercoPress", date: "2026-09-04", tier: 3}
+      - {url: "https://www.offshore-technology.com/newsletters/sea-lion-argentine-sanctions-falklands-oil/", title: "Sea Lion and the Argentine sanctions on Falklands oil", publisher: "Offshore Technology", date: "2026-09", tier: 3}
+
+  - to: sub-falklands
+    layer: action
+    type: incident
+    summary: "The fisheries side of the claim. The Falklands fishery earned GBP 30.5m of licence fees in 2022 and accounts for over 60% of the islands' GDP (Eurofish, 2023; no 2025 figure found); the fisheries director issued individual transferable quotas in a resolution of 31 May 2022 for 25 years from 1 January 2023 (so to 2047), to companies flagged in Spain, South Korea, Vanuatu and the UK, which Argentine commentary calls illegal under Law 26,659. Taiwan-flagged squid fleets have not accepted British licensing since 2010. The ITQs are the economic anchor that makes the Sea Lion oil case a second front rather than the first."
+    since: '2023-01-01'
+    until: '2047'
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://eurofish.dk/careful-management-of-falklands-fisheries-boosts-local-economy-and-protects-the-regions-ecosystem/", title: "Careful management of Falklands fisheries boosts local economy and protects the region's ecosystem", publisher: "Eurofish", date: "2023", tier: 3}
+      - {url: "https://batimes.com.ar/news/amp/argentina/from-squid-to-oil-how-the-uk-is-consolidating-the-illegal-exploitation-of-the-malvinas-waters-through-to-2047.phtml", title: "From squid to oil: how the UK is consolidating the illegal exploitation of the Malvinas waters through to 2047", publisher: "Buenos Aires Times", date: "2026-08-10", tier: 3}
+
+  - to: org-un
+    layer: action
+    type: visit
+    summary: "Milei's third address to the General Assembly, 23 September 2026 (19 minutes): the Malvinas as a 'national cause', a call on Britain to return to negotiations, a charge that the UN 'decided to look the other way' and does not enforce its own resolutions against unilateral acts, and the description of the body as 'useless'. He also threatened oil firms with exclusion from Vaca Muerta and attacked attempts to regulate artificial intelligence."
+    since: '2026-09-23'
+    until: '2026-09-23'
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://batimes.com.ar/news/argentina/milei-presses-malvinas-claim-slams-useless-united-nations-in-speech.phtml", title: "Milei presses Malvinas claim, slams 'useless' United Nations 'parasites' in speech", publisher: "Buenos Aires Times", date: "2026-09-23", tier: 3}
+      - {url: "https://en.mercopress.com/2026/09/23/milei-at-the-un-the-malvinas-are-a-national-cause-for-us", title: "Milei at the UN: the Malvinas are a national cause for us", publisher: "MercoPress", date: "2026-09-23", tier: 3}
+      - {url: "https://www.itv.com/news/2026-09-23/argentinas-president-doubles-down-on-falklands-claim-during-un-speech", title: "Argentina's president doubles down on Falklands claim during UN speech", publisher: "ITV News", date: "2026-09-23", tier: 3}
+
+  - to: org-un
+    layer: action
+    type: un_vote
+    summary: "General Assembly endorsement of the New York Declaration on the two-state solution (12 September 2025): 142 in favour, 10 against, 12 abstentions. Argentina voted against, with Israel, the United States, Hungary, Micronesia, Nauru, Palau, Papua New Guinea, Paraguay and Tonga. Mirrored from the PSE and FSM cards' rows, same UN News record."
+    since: '2025-09-12'
+    until: '2025-09-12'
+    last_verified: '2026-10-16'
+    confidence: A
+    sources:
+      - {url: "https://news.un.org/en/story/2025/09/1165835", title: "General Assembly endorses New York Declaration on two-state solution", publisher: "UN News", date: "2025-09-12", tier: 1}
+      - {url: "https://aa.com.tr/en/world/un-general-assembly-adopts-resolution-endorsing-new-york-declaration-on-two-state-solution/3686017", title: "UN General Assembly adopts resolution endorsing New York Declaration on two-state solution", publisher: "Anadolu Agency", date: "2025-09-12", tier: 3}
+
+  - to: BRA
+    layer: action
+    type: incident
+    summary: "Argentina's side of the BRA card's row. At the launch of Flavio Bolsonaro's presidential campaign in Sao Paulo (25-26 July 2026) Milei called Lula 'the prisoner' and 'the thief' and Justice Alexandre de Moraes 'a bald piece of trash'. On 26 July Brazil recalled its ambassador, Julio Bitelli, after Foreign Minister Mauro Vieira consulted Lula, and summoned Argentina's ambassador; Vieira called the remarks 'an unacceptable interference'. Analysts call it the most serious crisis between the two since December 2023; Lula and Milei had never held a bilateral meeting or phone call. Added from the BRA card's later reading: the rally was on 25 July, Itamaraty summoned Argentina's ambassador Daniel Raimondi, Milei repeated the accusations on 2 August and Bitelli was told to stay in Brazil indefinitely; Quirno said a rupture is out of the question, Brazil being the main trading partner (outlets disagree on whether Brazil downgraded the embassy; not recorded). Paraguay's president says Mercosur still works."
+    since: '2026-07-26'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.thestar.com.my/news/world/2026/07/27/brazil-recalls-ambassador-to-argentina-after-milei-attacks-lula-sources-say", title: "Brazil recalls ambassador to Argentina after Milei attacks Lula, sources say", publisher: "Reuters (via The Star)", date: "2026-07-27", tier: 3}
+      - {url: "https://batimes.com.ar/news/amp/latin-america/brazil-recalls-ambassador-to-argentina-over-mileis-insults-at-bolsonaro-rally.phtml", title: "Brazil recalls ambassador to Argentina over Milei's 'insults' at Bolsonaro rally", publisher: "Buenos Aires Times", date: "2026-07-26", tier: 3}
+      - {url: "https://en.mercopress.com/2026/08/14/pena-says-the-milei-lula-crisis-has-not-affected-how-mercosur-functions", title: "Pena says the Milei-Lula crisis has not affected how Mercosur functions", publisher: "MercoPress", date: "2026-08-14", tier: 3}
+      - {url: "https://www.dgabc.com.br/Noticia/4339074/novos-ataques-de-milei-a-lula-complicam-retorno-de-embaixador-do-brasil-a-argentina", title: "New attacks by Milei on Lula complicate the return of Brazil's ambassador to Argentina", title_original: "Novos ataques de Milei a Lula complicam retorno de embaixador do Brasil a Argentina", lang: pt, publisher: "DGABC", date: "2026-08", tier: 3}
+
+  - to: org-mercosur
+    layer: action
+    type: incident
+    summary: "Brazil examined the US-Argentina trade agreement for breaches of Mercosur rules (tariffs, rules of origin, technical barriers). Argentina says the cuts fall inside its 150 national exceptions to the common external tariff; Brazilian officials told Reuters the deal covers close to 200 items. The US removed tariffs on 1,675 Argentine lines and raised the beef quota; Argentina gave preferential access to about 200 US lines. Foreign Minister Quirno argued the bloc does not bar such agreements and that parts could be applied by decree while the full pact needs Congress. Brazil raised the issue formally at a March preparatory meeting; any answer was expected at the council level in June (outcome not found)."
+    since: '2026-02-10'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://invezz.com/news/2026/02/10/brazil-reviews-us-argentina-trade-deal-for-possible-mercosur-breach-report/", title: "Brazil reviews US-Argentina trade deal for possible Mercosur breach", publisher: "Invezz (Reuters report)", date: "2026-02-10", tier: 3}
+      - {url: "https://en.mercopress.com/2026/06/29/milei-brings-open-disputes-with-brazil-to-a-mercosur-summit-focused-on-trade-deals", title: "Milei brings open disputes with Brazil to a Mercosur summit focused on trade deals", publisher: "MercoPress", date: "2026-06-29", tier: 3}
+
+  - to: VEN
+    layer: action
+    type: incident
+    summary: "Gendarme Nahuel Gallo, held in Venezuela since December 2024 on espionage charges, was released on 1 March 2026 after Argentina had asked the transitional authorities for his freedom (Argentina's UN ambassador welcomed the US action that captured Maduro on 3 January 2026). Relations have been severed since 1 August 2024 and Brazil handled Argentina's consular affairs. At the June 2026 Mercosur summit Argentina kept its veto on reinstating Venezuela; after the earthquake that killed more than 1,400 people the two governments talked about humanitarian aid. Restoration of relations or of the embassy was not found."
+    since: '2026-03-01'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://batimes.com.ar/news/latin-america/venezuela-releases-nahuel-gallo-argentine-border-guard-jailed-since-december-2024.phtml", title: "Venezuela releases Nahuel Gallo, Argentine border guard jailed since December 2024", publisher: "Buenos Aires Times", date: "2026-03", tier: 3}
+      - {url: "https://www.canal26.com/internacionales/2026/01/05/venezuela-argentina-pidio-por-la-liberacion-del-gendarme-nahuel-gallo-y-apoyo-a-estados-unidos-en-la-onu/", title: "Venezuela: Argentina asked for the release of gendarme Nahuel Gallo and backed the United States at the UN", title_original: "Venezuela: Argentina pidio por la liberacion del gendarme Nahuel Gallo y apoyo a Estados Unidos en la ONU", lang: es, publisher: "Canal 26", date: "2026-01-05", tier: 3}
+      - {url: "https://en.mercopress.com/2026/06/29/milei-brings-open-disputes-with-brazil-to-a-mercosur-summit-focused-on-trade-deals", title: "Milei brings open disputes with Brazil to a Mercosur summit focused on trade deals", publisher: "MercoPress", date: "2026-06-29", tier: 3}
+
+  - to: MEX
+    layer: action
+    type: incident
+    summary: "On 27 July 2026 President Sheinbaum rejected as false Milei's claim, made without evidence in an interview, that Mexico, Brazil and the US Democratic Party funded a social-media campaign against Argentina during the 2026 World Cup (he named Brazil as the largest funder). Sheinbaum: Mexico has no habit of meddling in other countries' affairs and asks the same in return. Relations had been strained since December 2023."
+    since: '2026-07-27'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://buenosairesherald.com/world/international-relations/claudia-sheinbaum-rejects-mileis-claim-on-mexico-funding-anti-argentina-campaign", title: "Claudia Sheinbaum rejects Milei's claim on Mexico funding 'anti-Argentina campaign'", publisher: "Buenos Aires Herald", date: "2026-07-27", tier: 3}
+      - {url: "https://www.elfinanciero.com.mx/nacional/2026/07/27/mexico-no-financia-campana-contra-argentina-afirma-sheinbaum/", title: "Mexico does not fund a campaign against Argentina, says Sheinbaum", title_original: "Mexico no financia campana contra Argentina, afirma Sheinbaum", lang: es, publisher: "El Financiero", date: "2026-07-27", tier: 3}
+
+  - to: COL
+    layer: action
+    type: visit
+    summary: "Milei attended the inauguration of Abelardo De La Espriella in Cali on 7 August 2026 and met him shortly before the ceremony, after backing him before the June runoff (De La Espriella 49.65%, Ivan Cepeda 48.7% in the provisional count). The visit opens a reset after the Petro years."
+    since: '2026-08-07'
+    until: '2026-08-07'
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.vanguardia.com/colombia/2026/08/07/milei-llego-a-cali-para-la-posesion-de-de-la-espriella-esta-es-la-agenda-que-tendra-el-mandatario-argentino/", title: "Milei arrived in Cali for De La Espriella's inauguration: his agenda", title_original: "Milei llego a Cali para la posesion de De La Espriella: esta es la agenda que tendra el mandatario argentino", lang: es, publisher: "Vanguardia", date: "2026-08-07", tier: 3}
+      - {url: "https://www.diariopanorama.com/noticia/562365/milei-participo-asuncion-abelardo-espriella-fortalecio-vinculo-entre-argentina-colombia", title: "Milei took part in De La Espriella's inauguration and strengthened the Argentina-Colombia link", title_original: "Milei participo de la asuncion de Abelardo De La Espriella y fortalecio el vinculo entre Argentina y Colombia", lang: es, publisher: "Diario Panorama", date: "2026-08", tier: 3}
+
+  - to: PER
+    layer: action
+    type: visit
+    summary: "Milei met Keiko Fujimori in Lima at the Torre Tagle on 28 July 2026, hours before her inauguration as president for 2026-2031, with Foreign Minister Quirno; the two agreed to strengthen economic, security and science cooperation. It was their first official contact; Peru's vice president-elect Luis Galarreta had visited the Casa Rosada beforehand. Paraguay's Pena, Ecuador's Noboa, Bolivia's Paz, Uruguay's Orsi and Chile's Kast also attended."
+    since: '2026-07-28'
+    until: '2026-07-28'
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://en.mercopress.com/2026/07/28/milei-and-fujimori-meet-in-lima-and-agree-to-strengthen-economic-and-security-cooperation", title: "Milei and Fujimori meet in Lima and agree to strengthen economic and security cooperation", publisher: "MercoPress", date: "2026-07-28", tier: 3}
+      - {url: "https://www.conclusion.com.ar/?p=1439836", title: "Milei met Keiko Fujimori in Lima: political harmony and bilateral agenda in Peru", title_original: "Milei se reunio con Keiko Fujimori en Lima: sintonia politica y agenda bilateral en Peru", lang: es, publisher: "Conclusion", date: "2026-07", tier: 3}
+
+  - to: FRA
+    layer: action
+    type: visit
+    summary: "Milei visited France at the start of October 2026 for a bilateral meeting with Macron and talks with business leaders (reported for Thursday 1 October). The Elysee had said the two leaders have 'quite different political inspirations', called Argentina an important country for economic ties with strategic interest in lithium and copper, noted France is the seventh investor in Argentina, and said it would stay watchful on the EU-Mercosur deal that French farmers oppose. The outcome of the meeting was not found."
+    since: '2026-10-01'
+    until: '2026-10-01'
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.dhnet.be/dernieres-depeches/2026/10/01/agenda-charge-jeudi-pour-la-rencontre-entre-macron-et-milei-WBCSUMFPTVG5ZKO5Q5XR2WKKAM/", title: "Busy agenda on Thursday for the Macron-Milei meeting", title_original: "Agenda charge jeudi pour la rencontre entre Macron et Milei", lang: fr, publisher: "DH (agency)", date: "2026-10-01", tier: 3}
+
+  - to: CHL
+    layer: action
+    type: agreement
+    summary: "Chile, Argentina, Peru and Bolivia signed a joint declaration on strategic minerals, focused on copper and lithium, in Santiago on 28 August 2026; mining authorities signed. Mirrored from the CHL and BOL cards, same source."
+    since: '2026-08-28'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://es.euronews.com/2026/08/28/peru-argentina-chile-y-bolivia-unen-fuerzas-para-ganar-peso-en-el-mercado-de-minerales-est", title: "Peru, Argentina, Chile and Bolivia join forces to gain weight in the strategic minerals market", title_original: "Peru, Argentina, Chile y Bolivia unen fuerzas para ganar peso en el mercado de minerales estrategicos", lang: es, publisher: "Euronews", date: "2026-08-28", tier: 3}
+
+  - to: CHL
+    layer: action
+    type: agreement
+    summary: "Mirrored from the CHL card: the joint communique after Kast's visit to Buenos Aires (6-7 April 2026), in which Chile reiterated its support for Argentina's sovereignty rights over the Malvinas, South Georgia, South Sandwich Islands and the surrounding maritime spaces. A Magallanes senator objected that the wording overlaps Chilean waters south of Cape Horn; Chile's Foreign Ministry said the formula follows presidential declarations for over 35 years, first used by Aylwin with Menem in 1992. Argentina and Chile also hold overlapping Antarctic claims, frozen by Article IV of the Antarctic Treaty (1959)."
+    since: '2026-04-07'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://eldesconcierto.cl/actualidad/senador-exige-explicaciones-kast-posible-superposicion-territorio-chileno-y-argentino-respaldo-milei-n5457868", title: "Senator demands explanations from Kast over possible overlap of Chilean and Argentine territory in backing Milei", title_original: "Senador exige explicaciones a Kast por posible superposicion de territorio chileno y argentino en respaldo a Milei", lang: es, publisher: "El Desconcierto", date: "2026-04-07", tier: 3}
+      - {url: "https://www.ats.aq/e/antarctictreaty.html", title: "The Antarctic Treaty (signed 1 December 1959; Article IV on claims)", publisher: "Antarctic Treaty Secretariat", date: "1959-12-01", tier: 1}
+
+  - to: CHL
+    layer: action
+    type: incident
+    summary: "Decree 457/2021 (Argentina's national defence policy directive) refers to jointly exploring, studying and controlling 'shared spaces' including the Strait of Magellan and the Hoces Sea, which Chile rejects. In Sep-Oct 2026 the issue returned: Chile's defence minister said a replacement document was in Milei's hands; Foreign Minister Perez Mackenna said Milei had committed to change the decree; Kast said Chile would not demand the signature because the treaties of 1881 and 1984 settle Chilean sovereignty; Chile's Chamber of Deputies passed a resolution demanding repeal (reported as 83 votes in favour and 12 abstentions, 7 October, from a search summary; the chamber's page could not be read); a La Nacion editorial of 14 October called the tensions unjustified. Sources conflict on whether Argentina has replaced the decree."
+    since: '2026-09'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.cnnchile.com/pais/bilateral-kast-milei-la-moneda-baja-presion-por-decreto-argentino-sobre-el-estrecho-de-magallanes/", title: "Kast-Milei bilateral: La Moneda lowers the pressure over the Argentine decree on the Strait of Magellan", title_original: "Bilateral Kast-Milei: La Moneda baja presion por decreto argentino sobre el Estrecho de Magallanes", lang: es, publisher: "CNN Chile", date: "2026", tier: 3}
+      - {url: "https://www.emol.com/noticias/Nacional/2026/09/04/1210538/declaracion-chile-y-argentina.html", title: "Declaration of Chile and Argentina", title_original: "Declaracion Chile y Argentina", lang: es, publisher: "Emol", date: "2026-09-04", tier: 3}
+      - {url: "https://www.emol.com/noticias/Nacional/2026/09/10/1211145/gestos-gobierno-congreso-magallanes.html", title: "Gestures of the government and Congress over Magallanes", title_original: "Gestos del gobierno y el Congreso por Magallanes", lang: es, publisher: "Emol", date: "2026-09-10", tier: 3}
+      - {url: "https://www.lanacion.com.ar/editoriales/chile-y-la-argentina-ante-injustificadas-tensiones-nid14102026/", title: "Chile and Argentina, facing unjustified tensions", title_original: "Chile y la Argentina, ante injustificadas tensiones", lang: es, publisher: "La Nacion", date: "2026-10-14", tier: 3}
+      - {url: "https://www.camara.cl/cms/2026/10/07/camara-reafirma-soberania-sobre-el-estrecho-de-magallanes/", title: "Chamber reaffirms sovereignty over the Strait of Magellan", title_original: "Camara reafirma soberania sobre el Estrecho de Magallanes", lang: es, publisher: "Camara de Diputadas y Diputados de Chile", date: "2026-10-07", tier: 1}
+
+  - to: IND
+    layer: action
+    type: visit
+    summary: "Prime Minister Modi's visit to Buenos Aires, 5-6 July 2025, the first by an Indian prime minister in 57 years: the two sides agreed to widen the trade basket and to cooperate on critical minerals (lithium, copper, rare earths), energy, defence, space and pharmaceuticals, building on the 2022 critical-minerals MoU and a first joint working group in January 2025."
+    since: '2025-07-05'
+    until: '2025-07-06'
+    last_verified: '2026-10-16'
+    confidence: A
+    sources:
+      - {url: "https://www.newsonair.gov.in/pm-modis-historic-visit-to-argentina-after-57-years-deepens-strategic-partnership-across-key-sectors/", title: "PM Modi's historic visit to Argentina after 57 years deepens strategic partnership across key sectors", publisher: "All India Radio (News on AIR)", date: "2025-07-06", tier: 1}
+      - {url: "https://www.gatewayhouse.in/argentina-india-grow-the-strategic-partnership/", title: "Argentina and India grow the strategic partnership", publisher: "Gateway House", date: "2025-07", tier: 2}
+
+  - to: ESP
+    layer: action
+    type: incident
+    summary: "Argentina's side of the ESP card's row, sharpened: after Milei called Sanchez's wife 'corrupt' at a Vox event in Madrid, Spain withdrew its ambassador 'definitively' on 21 May 2024; the post stayed empty about five months until Spain named a new ambassador in October 2024 with a joint statement of the two foreign ministries; Argentina never withdrew its own ambassador. In 2025 Milei insulted Sanchez again in Madrid and on a later visit had no meeting planned with the king or the prime minister."
+    since: '2024-05-21'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.laprensa.hn/mundo/milei-califica-disparate-retiro-embajadora-espana-NP19436092", title: "Milei calls Spain's withdrawal of its ambassador 'nonsense'", title_original: "Milei califica de disparate el retiro de la embajadora de Espana", lang: es, publisher: "La Prensa (Honduras)", date: "2024-05", tier: 3}
+      - {url: "https://www.batimes.com.ar/news/amp/argentina/spain-names-new-ambassador-to-argentina-five-months-on-from-sanchez-milei-spat.phtml", title: "Spain names new ambassador to Argentina, five months on from Sanchez-Milei spat", publisher: "Buenos Aires Times", date: "2024-10", tier: 3}
+
+  - to: PRY
+    layer: action
+    type: visit
+    summary: "President Santiago Pena travelled to Buenos Aires in July 2026 to meet Milei, saying the meeting would help restore issues tied to the Yacyreta binational entity, navigation on the Parana-Paraguay waterway and projects such as the Pilar-Puerto Cano bridge. Milei had replaced the Argentine executive director of Yacyreta; the waterway toll and privatisation are the live dispute."
+    since: '2026-07'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.ultimahora.com/santiago-pena-viaja-a-argentina-para-un-encuentro-con-javier-milei", title: "Santiago Pena travels to Argentina for a meeting with Javier Milei", title_original: "Santiago Pena viaja a Argentina para un encuentro con Javier Milei", lang: es, publisher: "Ultima Hora", date: "2026-07", tier: 3}
+
+  - to: IRN
+    layer: action
+    type: expulsion
+    summary: "Argentina expelled Iran's top diplomat in Buenos Aires, the chargé d'affaires, in April 2026, after designating the IRGC Quds Force a terrorist group on 17 January 2026. The 1994 AMIA bombing (85 dead) is the standing grievance. Mirrored from the Hezbollah card's evidence."
+    since: '2026-04-02'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://batimes.com.ar/news/argentina/argentina-expels-irans-top-diplomatic-envoy-for-xxx.phtml", title: "Argentina expels Iran's top diplomatic envoy", publisher: "Buenos Aires Times", date: "2026-04-02", tier: 3}
+      - {url: "https://www.iranintl.com/en/202601173783", title: "Argentina designates Iran's IRGC Quds Force as terrorist group", publisher: "Iran International", date: "2026-01-17", tier: 3}
+
+  - to: nsa-hezbollah
+    layer: action
+    type: sanction
+    summary: "Argentina designated Hezbollah as a terrorist organisation and froze its assets on 18 July 2019, twenty-five years after the AMIA bombing, and extended the designation to the IRGC Quds Force on 17 January 2026. Argentine prosecutors attribute AMIA to Iran and Hezbollah."
+    since: '2019-07-18'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.aljazeera.com/economy/2019/7/18/argentina-freezes-hezbollah-assets-25-years-after-amia-attack", title: "Argentina freezes Hezbollah assets, 25 years after AMIA attack", publisher: "Al Jazeera", date: "2019-07-18", tier: 3}
+      - {url: "https://www.iranintl.com/en/202601173783", title: "Argentina designates Iran's IRGC Quds Force as terrorist group", publisher: "Iran International", date: "2026-01-17", tier: 3}
+
+  - to: USA
+    layer: action
+    type: incident
+    summary: "The Falklands inside the US relationship: a leaked Pentagon email of April 2026 suggested Washington might review its position on the islands in retaliation for Britain's stance on Iran, and the State Department then reasserted neutrality (per the GBR card). In September 2026 Trump hinted that Washington could shift its neutral position towards Argentina and declined to say whether the US would back the UK in a future Falklands conflict, while criticising Britain for not doing more in the US-led campaign against Iran. Milei's sanctions are also read as an answer to critics who call his ties to Trump subservient."
+    since: '2026-04'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://aljazeera.com/news/2026/9/4/argentinas-milei-threatens-sanctions-as-he-refocuses-on-falklands", title: "Argentina's Milei threatens sanctions as he refocuses on Falklands", publisher: "Al Jazeera", date: "2026-09-04", tier: 3}
+      - {url: "https://www.eurasiantimes.com/argentina-wants-falkland-islands-back-via-diplomatic-means/", title: "Argentina wants Falkland Islands back via diplomatic means", publisher: "Eurasian Times", date: "2026-08", tier: 3}
+
+  - to: CHN
+    layer: action
+    type: agreement
+    summary: "April 2025: the China-Argentina swap line was extended, in a deal reported as allowing Argentina to borrow another USD 5bn from China, before the five-year renewal of August 2026 (more than USD 19bn). Milei has said he would not touch the swap and that trade with China has not changed 'one bit'."
+    since: '2025-04-11'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://www.theweek.in/wire-updates/international/2025/04/11/fgn15-argentina-china.html", title: "Deal extension allows Trump ally Argentina to borrow another 5 billion from China", publisher: "The Week (wire)", date: "2025-04-11", tier: 3}
+      - {url: "https://new.intellinews.com/articles/argentina-renews-19bn-china-swap-line-for-five-more-years-459346", title: "Argentina renews $19bn China swap line for five more years", publisher: "intellinews", date: "2026-08", tier: 3}
+
+  - to: ISR
+    layer: action
+    type: incident
+    summary: "The Jerusalem embassy move announced by Milei in June 2025 for 2026 was reported halted in January 2026 over a Falklands drilling dispute involving an Israeli firm (Navitas Petroleum, the Sea Lion operator); in April 2026 Milei reaffirmed the move 'once conditions are met'. The Navitas sanctions of September 2026 reopen the tension."
+    since: '2026-01-11'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.timesofisrael.com/report-argentina-halts-jerusalem-embassy-move-over-falklands-drilling-dispute/", title: "Report: Argentina halts Jerusalem embassy move over Falklands drilling dispute", publisher: "The Times of Israel", date: "2026-01-11", tier: 3}
+      - {url: "https://www.aljazeera.com/news/2025/6/12/milei-says-argentina-to-move-embassy-from-tel-aviv-to-jerusalem-in-2026", title: "Milei says Argentina to move embassy from Tel Aviv to Jerusalem in 2026", publisher: "Al Jazeera", date: "2025-06-12", tier: 3}
