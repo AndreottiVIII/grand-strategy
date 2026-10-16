@@ -1,10 +1,12 @@
 /* Grand Strategy - renders docs/data.json (compiled from data/ by tools/build.py).
    Two views: the situation map from the point-of-view actor (posture as colour, bond as
    screen, relations as arrows by layer) and the dossier with footnoted sources. */
+// cache key: the ?v= stamp the build writes into index.html for this script (same stamp, same data)
+const STAMP = ((document.querySelector('script[src^="app.js"]') || {}).src || "").split("v=")[1] || "0";
 (async function () {
   const stamp = document.querySelector('script[src^="app.js"]').src.split("?")[1];
   const [data, world, iso2] = await Promise.all([
-    fetch("data.json?t=" + Date.now()).then(r => r.json()),   // always fresh, even when a cached index.html is served
+    fetch("data.json?v=" + STAMP).then(r => r.json()),   // the build's stamp: the browser keeps the JSON until the next publish
     fetch("world.geojson").then(r => r.json()),
     fetch("iso2.json").then(r => r.json()),
   ]);

@@ -9,6 +9,11 @@
   with the same sources. Known cases: UKR ← PRK troops; UKR ← IRN drones; UKR ← CHN
   dual-use trade.
 
+- 2026-10-16 · **Mobile.** Davide: on a phone the site "si vede proprio male e compresso". The layout has two media queries and was never designed for a narrow screen: the map, the sidebar, the 13-entry menu, the ledger tables. To be reviewed as a whole, not patched.
+- 2026-10-16 · **Payload.** data.json is 17 MB (4 MB gzipped); sources alone are 6 MB and only the dossier uses them. Split: a main JSON without sources and relation rows, the dossier loading the per-actor bundle (docs/actors/<id>.json, already built, never read today). Expected first load under 1 MB.
+- 2026-10-16 · **Safety net.** No tests, no CI: a GitHub Action that runs tools/build.py on every push and a JavaScript syntax check (a stray parenthesis went live on 16 Oct). Davide: later.
+- 2026-10-16 · **Build constants.** The thresholds of every computed page (five members, 60% formed, twelve shown, 6° radius, 50% readby...) sit inside a 700-line main(); gather them in one block at the top.
+- 2026-10-16 · **Menu.** Thirteen entries on four rows; the ten reading pages could sit under one entry.
 Ideas and deferred steps, with the date they were parked. Davide: "keep them in mind,
 like every improving idea that comes to you".
 
