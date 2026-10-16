@@ -8,7 +8,84 @@ coords:
 - -6.18
 seat: Dodoma
 regions:
-- world
-card: stub
+- east-africa
+card: full
 tier: minor
-dataset: wikidata
+last_verified: '2026-10-16'
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Hold power and close the 2025 protest wave. The electoral commission declared Samia Suluhu Hassan the winner with 97.66% on 1 November 2025, after the main opposition party Chadema was disqualified (12 April 2025) and its leader Tundu Lissu was charged with treason. Samia called the unrest an attempted coup and defended the security forces. Two claims on the dead, not one number: the opposition says about 2,000 (CNN, 5 Nov 2025), the UN and rights groups say hundreds (OPB, Dec 2025); the government has published no toll."
+      confidence: B
+      sources:
+        - {url: "https://www.inec.go.tz/news/mwenyekiti-wa-inec-mhe-jaji-wa-mahakama-ya-rufani-jacobs-mwambegele-amekabidhi-hati-kwa-rais-mteule-na-makamu-wa-rais-mteule-wa-jamhuri-ya-muungano-wa-tanzania", title: "INEC: certificate handed to the president-elect and vice-president-elect (title from URL, Swahili)", publisher: "National Electoral Commission (INEC)", date: '2025-11-01', tier: 1, lang: sw}
+        - {url: "https://www.bbc.com/news/articles/c793qd2x7yzo", title: "Tanzania election: Chadema disqualified and Lissu charged (BBC report)", publisher: "BBC", date: '2025-04-13', tier: 3}
+        - {url: "https://www.opb.org/article/2025/12/07/u-s-reconsiders-ties-with-tanzania/", title: "U.S. reconsiders Tanzania ties after deadly post-election crackdown", publisher: "OPB (NPR story)", date: '2025-12-07', tier: 3}
+        - {url: "https://www.cnn.com/2025/11/05/world/tanzania-election-protest-deaths-intl", title: "Tanzania election protest deaths (CNN)", publisher: "CNN", date: '2025-11-05', tier: 3}
+    - rank: 2
+      text: "Make Dar es Salaam the transit port of the region and take Uganda and DRC cargo from Mombasa. Transit reached 14.61m tonnes in 2025/26 (up 17%), with DRC cargo at 7.77m tonnes, more than half; the port extended free storage for Uganda- and DRC-bound cargo from 15 to 30 days. Figures are Tanzanian government data as reported; the pages were not opened."
+      confidence: C
+      sources:
+        - {url: "https://www.theeastafrican.co.ke/tea/business-tech/dar-heats-up-rivalry-with-mombasa-via-free-storage-offer-5213474", title: "Dar heats up rivalry with Mombasa via free storage offer", publisher: "The East African", date: '2026', tier: 3}
+        - {url: "https://www.monitor.co.ug/uganda/news/national/uganda-eyes-dar-es-salaam-as-second-route-to-sea-as-tanzania-expands-port-5622310", title: "Uganda eyes Dar es Salaam as second route to sea as Tanzania expands port", publisher: "Daily Monitor", date: '2026', tier: 3}
+    - rank: 3
+      text: "Turn foreign capital into rail and port infrastructure on concession terms: the TAZARA railway to China's CCECC (about USD 1.4bn, 30-year concession, signed in Beijing on 29 September 2025), and the Dar es Salaam port to DP World (30-year concession signed 22 October 2023, more than USD 250m at first)."
+      confidence: C
+      sources:
+        - {url: "https://chinaglobalsouth.com/2025/10/01/china-zambia-tanzania-sign-tazara-modernization-deal", title: "China, Zambia and Tanzania Seal $1.4 Billion Deal to Modernize Tazara Railway", publisher: "China Global South", date: '2025-10-01', tier: 3}
+        - {url: "https://www.caixinglobal.com/2025-11-22/china-tanzania-and-zambia-launch-major-overhaul-of-tanzania-zambia-railway-102385700.html", title: "China, Tanzania and Zambia launch major overhaul of Tanzania-Zambia railway", publisher: "Caixin Global", date: '2025-11-22', tier: 3}
+        - {url: "https://gulfbusiness.com/en/2023/logistics/dp-world-concession-to-operate-dar-es-salaam-port", title: "DP World signs 30-year concession to operate multi-purpose Dar Es Salaam Port", publisher: "Gulf Business", date: '2023-10-22', tier: 3}
+
+  means:
+    - domain: economic
+      text: "Concessions as the currency of access: the DP World port concession (initial USD 250m, up to USD 1bn over the term per Lloyd's List as republished by Kuehne+Nagel; DP World to run four of the port's twelve berths per one report) and the CCECC rail concession, with the state keeping a stake through the Tanzania Ports Authority. Both are long contracts that bind the state for thirty years."
+      confidence: C
+      sources:
+        - {url: "https://gulfbusiness.com/en/2023/logistics/dp-world-concession-to-operate-dar-es-salaam-port", title: "DP World signs 30-year concession to operate multi-purpose Dar Es Salaam Port", publisher: "Gulf Business", date: '2023-10-22', tier: 3}
+        - {url: "https://mykn.kuehne-nagel.com/news/article/141e7e86-1c3a-4aff-be65-a77c69eae267", title: "DP World wins Dar es Salaam concession", publisher: "Kuehne+Nagel (republishing Lloyd's List)", date: '2023-10', tier: 3}
+        - {url: "https://www.drybulkmagazine.com/ports-terminals/23102023/dp-world-takes-over-the-running-of-tanzanias-largest-port/", title: "DP World takes over the running of Tanzania's largest port", publisher: "Dry Bulk Magazine", date: '2023-10-23', tier: 3}
+    - domain: diplomatic
+      text: "A party-to-party channel with Beijing: the Julius Nyerere Leadership School, funded with USD 40m from the Chinese Communist Party International Department and the Central Party School, opened in February 2022. Cited under Wikipedia to the South China Morning Post, which was not opened for this card."
+      confidence: C
+      sources:
+        - {url: "https://en.wikipedia.org/wiki/Tanzania%E2%80%93China_relations", title: "Tanzania-China relations (Wikipedia, pointer only; the SCMP report of 26 Feb 2022 is cited under it)", publisher: "Wikipedia", date: '2026', tier: 4}
+    - domain: military
+      text: "Security forces as the main instrument at home, and a regional force pulled back abroad. Police fired shots and tear gas at protesters who defied the curfew in Dar es Salaam (30 Oct 2025) and the army was deployed. Tanzania's contingent in the SADC mission in the DRC went home in 2025 after the mandate ended."
+      confidence: C
+      sources:
+        - {url: "https://www.aljazeera.com/news/2025/10/30/tanzania-police-fire-shots-tear-gas-at-protesters-after-chaotic-election", title: "Tanzania police fire shots, tear gas at protesters after chaotic election", publisher: "Al Jazeera", date: '2025-10-30', tier: 3}
+        - {url: "https://www.aljazeera.com/news/2025/10/31/protests-over-disputed-tanzania-election-enter-3rd-day-military-deployed", title: "Protests over disputed Tanzania election enter 3rd day as military deployed", publisher: "Al Jazeera", date: '2025-10-31', tier: 3}
+        - {url: "https://mp.scotsman.com/world-news/south-africa-tanzania-and-malawi-to-withdraw-troops-from-conflict-torn-dr-congo-5715852", title: "South Africa, Tanzania and Malawi to withdraw troops from conflict-torn DR Congo", publisher: "The Scotsman", date: '2025', tier: 3}
+
+  constraints:
+    - text: "Western money is under pressure. The European Parliament pressed for a full EU aid cut over the crackdown; a EUR 156m package for 2025 was approved in October and was pending Council and Commission endorsement, while OPB reports the EU suspended tens of millions of dollars in November 2025 (the two reports disagree). The State Department said in December 2025 that it was 'comprehensively reviewing' ties; no aid cut by the US was found. The East African warns of a sharp fall in external support in 2026."
+      confidence: C
+      sources:
+        - {url: "https://theeastafrican.co.ke/tea/news/east-africa/samia-faces-more-pressure-as-us-eu-mull-funding-cuts-5287870", title: "Samia faces more pressure as US, EU mull funding cuts", publisher: "The East African", date: '2025-11', tier: 3}
+        - {url: "https://www.opb.org/article/2025/12/07/u-s-reconsiders-ties-with-tanzania/", title: "U.S. reconsiders Tanzania ties after deadly post-election crackdown", publisher: "OPB (NPR story)", date: '2025-12-07', tier: 3}
+        - {url: "https://theeastafrican.co.ke/tea/news/east-africa/suluhu-s-fresh-headache-in-2026-amid-poll-crisis-5309238", title: "Suluhu's fresh headache in 2026 amid poll crisis", publisher: "The East African", date: '2026', tier: 3}
+    - text: "Domestic legitimacy limits the big concessions. Chadema denounced the TAZARA deal as corrupt in late December 2025, questions of transparency and sovereignty were raised by analysts, and the government defended it as the end of years of losses (about TZS 28bn a year to keep the line running, per the government spokesman)."
+      confidence: C
+      sources:
+        - {url: "https://thechanzo.com/2025/12/30/tazara-china-deal-to-revive-historic-railway-sparks-fierce-debate/", title: "TAZARA-China deal to revive historic railway sparks fierce debate", publisher: "The Chanzo", date: '2025-12-30', tier: 3}
+    - text: "The regional military reach is short. SADC leaders ended the SAMIDRC mandate on 13 March 2025 and the phased withdrawal began on 29 April, with the Tanzanian contingent going home overland through Rwanda, which had to consent to the transit. Tanzania cannot keep a force in eastern DRC without a regional mandate and a neighbour's agreement."
+      confidence: C
+      sources:
+        - {url: "https://www.dailymaverick.co.za/article/2025-04-29-south-african-and-other-sadc-troops-finally-begin-withdrawal-from-war-torn-drc.md", title: "South African and other SADC troops finally begin withdrawal from war-torn DRC", publisher: "Daily Maverick", date: '2025-04-29', tier: 3}
+        - {url: "https://www.africanews.com/amp/2025/06/13/sadc-peacekeeping-troops-begin-final-phase-of-withdrawal-from-east-drc/", title: "SADC peacekeeping troops begin final phase of withdrawal from east DRC", publisher: "Africanews", date: '2025-06-13', tier: 3}
+
+  paradoxes:
+    - text: "The crackdown that keeps the ruling party in power costs the Western aid and legitimacy that help finance its ports and railways, and the Chinese and Gulf concessions that replace them bring their own opposition, which the government answers as if it were a coup."
+      confidence: C
+      sources:
+        - {url: "https://www.opb.org/article/2025/12/07/u-s-reconsiders-ties-with-tanzania/", title: "U.S. reconsiders Tanzania ties after deadly post-election crackdown", publisher: "OPB (NPR story)", date: '2025-12-07', tier: 3}
+        - {url: "https://thechanzo.com/2025/12/30/tazara-china-deal-to-revive-historic-railway-sparks-fierce-debate/", title: "TAZARA-China deal to revive historic railway sparks fierce debate", publisher: "The Chanzo", date: '2025-12-30', tier: 3}
+    - text: "Dar es Salaam wins transit traffic with free storage and concessions, yet the non-tariff barriers Tanzania keeps against Kenya (a matchbox levy reported in May 2026 despite an East African Court of Justice suspension) are what feed the complaints that threaten the same East African corridor."
+      confidence: C
+      sources:
+        - {url: "https://www.theeastafrican.co.ke/tea/business-tech/tanzania-blamed-for-39pc-of-eac-trade-barriers-5575306", title: "Tanzania blamed for 39pc of EAC trade barriers as deadline lapses", publisher: "The East African", date: '2026', tier: 3}
+        - {url: "https://www.dawan.africa/news/tanzania-allegedly-defies-regional-court-order-in-escalating-matchbox-tax-dispute-with-kenya", title: "Tanzania allegedly defies regional court order in escalating matchbox tax dispute with Kenya", publisher: "Dawan Africa", date: '2026', tier: 3}
+
+  reading: |
+    Samia Suluhu Hassan's government has answered the 2025 election protests with the security forces and a tighter grip on the opposition, and has paid for it with the Western money that its own ports and railways need. It is building a transit state: Dar es Salaam takes the Uganda and DRC cargo, and the concessions to DP World and CCECC tie the infrastructure to Gulf and Chinese capital, which it can take in place of the aid. The test is whether that capital can replace the Western aid lost since 2025 without the price in legitimacy and in the East African trade that the same policy strains, and whether a regional military role is possible again once the SADC mission has gone.
