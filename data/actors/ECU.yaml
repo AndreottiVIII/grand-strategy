@@ -3,12 +3,59 @@ name: Ecuador
 type: state
 iso2: ec
 wikipedia: https://en.wikipedia.org/wiki/Ecuador
-coords:
-- -78.51
-- -0.22
+coords: [-78.51, -0.22]
 seat: Quito
-regions:
-- world
-card: stub
+regions: [south-america]
+card: full
 tier: minor
+last_verified: 2026-10-16
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Win the security fight with US help: lift the constitutional ban on foreign military bases (in force since the Correa era). Noboa, re-elected in the April 2025 run-off, put the question to voters on 16 November 2025; they rejected it by about 60%, and all four referendum questions failed."
+      confidence: C
+      sources:
+        - {url: "https://www.gpb.org/news/2025/11/17/ecuador-rejects-us-military-bases-in-major-defeat-for-president-noboa", title: "Ecuador rejects US military bases in major defeat for President Noboa", publisher: "GPB (AP)", date: "2025-11-17", tier: 3}
+        - {url: "https://www.idea.int/democracytracker/report/ecuador/november-2025", title: "Ecuador: November 2025 (Democracy Tracker)", publisher: "International IDEA", date: "2025-11", tier: 2}
+        - {url: "https://www.bbc.com/news/articles/c4gr8dw20evo", title: "Daniel Noboa: Centre-right leader wins re-election in Ecuador", publisher: "BBC", date: "2025-04", tier: 3}
+    - rank: 2
+      text: "Break the gangs by force. On 9 January 2024, after an armed attack on a live TV station and the escape of Los Choneros leader Fito, Noboa declared an internal armed conflict against organised crime."
+      confidence: C
+      sources:
+        - {url: "https://www.bbc.com/news/world-latin-america-67930452", title: "Ecuador declares war on armed gangs after TV station attacked on air", publisher: "BBC", date: "2024-01-09", tier: 3}
+
+  means:
+    - domain: military
+      text: "The armed forces, deployed under the internal armed conflict declared in January 2024. The foreign-base referendum of November 2025 marks the limit: Quito wanted US bases for this fight and voters refused them."
+      confidence: C
+      sources:
+        - {url: "https://www.bbc.com/news/world-latin-america-67930452", title: "Ecuador declares war on armed gangs after TV station attacked on air", publisher: "BBC", date: "2024-01-09", tier: 3}
+        - {url: "https://www.gpb.org/news/2025/11/17/ecuador-rejects-us-military-bases-in-major-defeat-for-president-noboa", title: "Ecuador rejects US military bases in major defeat for President Noboa", publisher: "GPB (AP)", date: "2025-11-17", tier: 3}
+    - domain: economic
+      text: "Trade and transit as leverage over Colombia: a 30% security tariff on Colombian imports (January 2026), raised to 100% from 1 May 2026 and repealed on 31 May 2026, and a higher transit fee on Colombian crude through the SOTE pipeline (reported as from USD 3 to USD 30 a barrel; one Spanish-language report, not yet corroboated against the SOTE tariff filing)."
+      confidence: C
+      sources:
+        - {url: "https://elmercurio.com.ec/principal/2026/01/22/ecuador-colombia-guerra-comercial-aranceles/", title: "Guerra comercial entre Ecuador y Colombia escala con aranceles recíprocos", publisher: "El Mercurio (Ecuador)", date: "2026-01-22", tier: 3, lang: es}
+        - {url: "https://www.elcomercio.com/actualidad/negocios/ecuador-aplica-aranceles-100-productos-colombianos-este-mayo/", title: "Ecuador cobra aranceles del 100% a productos colombianos desde este 1 de mayo", publisher: "El Comercio (Ecuador)", date: "2026-04", tier: 3, lang: es}
+        - {url: "https://www.ambito.com/mundo/efecto-donald-trump-ecuador-subio-900-la-tarifa-transporte-del-petroleo-colombia-n6239117", title: "Efecto Donald Trump: Ecuador subió 900% la tarifa de transporte del petróleo colombiano", publisher: "Ámbito", date: "2026", tier: 3, lang: es}
+
+  constraints:
+    - text: "The electricity link to Colombia: Colombian power, about 8% of Ecuador's demand, was suspended for six months after 22 January 2026 and resumed on 5 August 2026. Ecuador repealed its 100% tariffs on 31 May 2026, before the power came back; the sequence is reported, the causation is not proven."
+      confidence: C
+      sources:
+        - {url: "https://forbes.co/2026/08/05/economia-y-finanzas/colombia-reanuda-las-exportaciones-de-energia-hacia-ecuador/", title: "Colombia reanuda las exportaciones de energía hacia Ecuador", publisher: "Forbes Colombia", date: "2026-08-05", tier: 3, lang: es}
+        - {url: "https://www.vistazo.com/amp/actualidad/2026-07-22-colombia-reanudar-venta-energia-ecuador-guerra-comercial-HD11125244", title: "Colombia se prepara para reanudar la venta de energía a Ecuador tras dejar atrás la guerra comercial", publisher: "Vistazo", date: "2026-07-22", tier: 3, lang: es}
+    - text: "No foreign bases under the present constitution: the 16 November 2025 vote kept the ban, so the US basing route Noboa wanted is closed for now."
+      confidence: C
+      sources:
+        - {url: "https://www.gpb.org/news/2025/11/17/ecuador-rejects-us-military-bases-in-major-defeat-for-president-noboa", title: "Ecuador rejects US military bases in major defeat for President Noboa", publisher: "GPB (AP)", date: "2025-11-17", tier: 3}
+
+  paradoxes:
+    - text: "A security act cost a diplomatic channel: the entry into the Mexican embassy in Quito in April 2024 to arrest former vice-president Jorge Glas led Mexico to sever relations on 5 April 2024. A state fighting trafficking gave up an embassy channel for one arrest."
+      sources:
+        - {url: "https://www.cnn.com/2024/04/06/americas/ecuador-vice-president-arrest-mexico-embassy-diplomatic-tensions-intl-hnk/index.html", title: "'Outrage against international law': Mexico breaks diplomatic ties with Ecuador over embassy raid", publisher: "CNN", date: "2024-04-06", tier: 3}
+
+  reading: |
+    Ecuador's grand strategy is to hold the state together against gangs that now fight it as an armed conflict, and to find a stronger patron for that fight than its own police and army. The route it wanted, US bases, was refused by voters in November 2025, and the other tools it used, the raid on the Mexican embassy and the tariff war with Colombia, produced a rupture and then a truce. Not verified for this card: oil and bananas as the economy, the debt, the 2025-26 energy crisis, the Chinese FTA and loans, the EU, Peru, and the US tariff.

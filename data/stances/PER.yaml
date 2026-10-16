@@ -1,28 +1,83 @@
 actor: PER
 stances:
-  - toward: CHN
-    grade: partner
-    trend: warming
-    bond: none
-    since: 2024-11-14
-    last_verified: 2026-10-16
-    confidence: B
-    note: "Lima's side of the Chancay relation. The sources are mirrored from the CHN card (same URLs): the Chancay inauguration by video link on 14 Nov 2024 with Xi and Boluarte, a COSCO-owned terminal (60%, 30-year concession). Partner, not ally: no defence clause or alignment instrument was found. Warming on the volumes is our reading from the export figures (China 32% of 2025 exports, reported; not verified against the trade ministry). Friction sits under the posture: Congress removed President Jerí in February 2026 over undisclosed meetings with a Chinese businessman under scrutiny (Wikipedia pointer, tier 4). No Peruvian government statement on China was fetched; the grade is our reading of the structure (C) on top of the mirrored B evidence. Bond none: no kinship or grievance found."
-    sources:
-      - {url: "https://www.mfa.gov.cn/eng/xw/zyxw/202411/t20241116_11527528.html", title: "Xi Jinping and Dina Boluarte attend the inauguration of the Chancay port by video link", publisher: "Ministry of Foreign Affairs of China (official statement)", date: "2024-11-16", tier: 1}
-      - {url: "https://www.nbcnews.com/news/world/xi-jinping-opens-huge-port-peru-funded-china-rcna180289", title: "Xi Jinping opens huge port in Peru funded by China", publisher: "NBC News", date: "2024-11-14", tier: 3}
-      - {url: "https://www.seatrade-maritime.com/ports-logistics/president-xi-attends-inauguration-of-cosco-shipping-port-in-peru", title: "President Xi attends inauguration of Cosco Shipping port in Peru", publisher: "Seatrade Maritime News", date: "2024-11", tier: 3}
-      - {url: "https://www.bairdmaritime.com/amp/story/shipping/ports/new-port-lifts-perus-exports-to-record-high-in-2025", title: "New port lifts Peru's exports to record high in 2025 (Port of Chancay)", publisher: "Baird Maritime", date: "2026", tier: 3}
-
-  - toward: USA
-    grade: partner
-    trend: cooling
-    bond: none
-    since: '2025-07'
-    last_verified: 2026-10-16
-    confidence: C
-    note: "Transaction, not alignment. The United States is named by Wikipedia as Peru's number one trade partner in total trade (tier 4 pointer), and the two cooperate on counter-narcotics and under the Rio Pact. Cooling: the 2025 push on copper tariffs (Andina reported a 50% copper rate in July 2025), and the Boluarte-era rift over US condemnation of rights abuses (Wikipedia pointer). Public opinion cools too: a CFR brief links the tariffs to a sour view of the US in Peru. Peru sends under 5% of its copper to the US, so the tariff is more narrative than volume (CFR, as seen in search results). The grade is our reading (C); no source names it. Bond none: no kinship or grievance found in the sources read. Gap: the current US-Peru trade agreement status and the 2026 tariff rate are not verified."
-    sources:
-      - {url: "https://www.cfr.org/expert-brief/tariffs-sour-public-opinion-us-chile-and-peru", title: "Tariffs Sour Public Opinion on the U.S. in Chile and Peru", publisher: "Council on Foreign Relations", date: "2025", tier: 2}
-      - {url: "https://andina.pe/Ingles/noticia-new-us-tariffs-will-have-limited-impact-on-peruvian-exports-1037870.aspx", title: "New U.S. tariffs will have limited impact on Peruvian exports", publisher: "Andina", date: "2025-07", tier: 3}
-      - {url: "https://en.wikipedia.org/wiki/Peru%E2%80%93United_States_relations", title: "Peru-United States relations (Wikipedia; index, tier 4 pointer)", publisher: "Wikipedia", date: "2026", tier: 4}
+- toward: CHN
+  grade: partner
+  trend: warming
+  bond: none
+  since: 2024-11-14
+  last_verified: 2026-10-16
+  confidence: B
+  note: 'Lima''s side of the Chancay relation. The sources are mirrored from the CHN card (same URLs): the Chancay inauguration by video link on 14 Nov 2024 with Xi and Boluarte, a COSCO-owned terminal
+    (60%, 30-year concession). Partner, not ally: no defence clause or alignment instrument was found. Warming on the volumes is our reading from the export figures (China 32% of 2025 exports, reported;
+    not verified against the trade ministry). Friction sits under the posture: Congress removed President Jerí in February 2026 over undisclosed meetings with a Chinese businessman under scrutiny (Wikipedia
+    pointer, tier 4). No Peruvian government statement on China was fetched; the grade is our reading of the structure (C) on top of the mirrored B evidence. Bond none: no kinship or grievance found.'
+  sources:
+  - url: https://www.mfa.gov.cn/eng/xw/zyxw/202411/t20241116_11527528.html
+    title: Xi Jinping and Dina Boluarte attend the inauguration of the Chancay port by video link
+    publisher: Ministry of Foreign Affairs of China (official statement)
+    date: '2024-11-16'
+    tier: 1
+  - url: https://www.nbcnews.com/news/world/xi-jinping-opens-huge-port-peru-funded-china-rcna180289
+    title: Xi Jinping opens huge port in Peru funded by China
+    publisher: NBC News
+    date: '2024-11-14'
+    tier: 3
+  - url: https://www.seatrade-maritime.com/ports-logistics/president-xi-attends-inauguration-of-cosco-shipping-port-in-peru
+    title: President Xi attends inauguration of Cosco Shipping port in Peru
+    publisher: Seatrade Maritime News
+    date: 2024-11
+    tier: 3
+  - url: https://www.bairdmaritime.com/amp/story/shipping/ports/new-port-lifts-perus-exports-to-record-high-in-2025
+    title: New port lifts Peru's exports to record high in 2025 (Port of Chancay)
+    publisher: Baird Maritime
+    date: '2026'
+    tier: 3
+- toward: USA
+  grade: partner
+  trend: cooling
+  bond: none
+  since: 2025-07
+  last_verified: 2026-10-16
+  confidence: C
+  note: 'Transaction, not alignment. The United States is named by Wikipedia as Peru''s number one trade partner in total trade (tier 4 pointer), and the two cooperate on counter-narcotics and under the
+    Rio Pact. Cooling: the 2025 push on copper tariffs (Andina reported a 50% copper rate in July 2025), and the Boluarte-era rift over US condemnation of rights abuses (Wikipedia pointer). Public opinion
+    cools too: a CFR brief links the tariffs to a sour view of the US in Peru. Peru sends under 5% of its copper to the US, so the tariff is more narrative than volume (CFR, as seen in search results).
+    The grade is our reading (C); no source names it. Bond none: no kinship or grievance found in the sources read. Gap: the current US-Peru trade agreement status and the 2026 tariff rate are not verified.'
+  sources:
+  - url: https://www.cfr.org/expert-brief/tariffs-sour-public-opinion-us-chile-and-peru
+    title: Tariffs Sour Public Opinion on the U.S. in Chile and Peru
+    publisher: Council on Foreign Relations
+    date: '2025'
+    tier: 2
+  - url: https://andina.pe/Ingles/noticia-new-us-tariffs-will-have-limited-impact-on-peruvian-exports-1037870.aspx
+    title: New U.S. tariffs will have limited impact on Peruvian exports
+    publisher: Andina
+    date: 2025-07
+    tier: 3
+  - url: https://en.wikipedia.org/wiki/Peru%E2%80%93United_States_relations
+    title: Peru-United States relations (Wikipedia; index, tier 4 pointer)
+    publisher: Wikipedia
+    date: '2026'
+    tier: 4
+- toward: CHL
+  grade: reluctant_partner
+  trend: stable
+  bond: grievance
+  since: '2025-11-28'
+  last_verified: '2026-10-16'
+  confidence: C
+  reciprocal_of: CHL
+  note: Provisional reciprocal of Chile's 'reluctant_partner' stance toward Peru, written on 2026-10-16 by tools/reciprocate.py from the same evidence; to be rewritten from Peru's side.
+  sources:
+  - url: https://www.aljazeera.com/news/2025/11/28/peru-to-declare-state-of-emergency-to-block-chile-border-crossings
+    title: Peru to declare state of emergency to block Chile border crossings
+    publisher: Al Jazeera
+    date: '2025-11-28'
+    tier: 3
+  - url: https://es.euronews.com/2026/08/28/peru-argentina-chile-y-bolivia-unen-fuerzas-para-ganar-peso-en-el-mercado-de-minerales-est
+    title: Peru, Argentina, Chile and Bolivia join forces to gain weight in the minerals market
+    title_original: 'Sudamérica se mueve por el litio y el cobre: Chile, Argentina, Bolivia y Perú firman un acuerdo'
+    publisher: Euronews
+    date: '2026-08-28'
+    tier: 3
+    lang: es
