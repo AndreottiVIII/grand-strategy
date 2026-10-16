@@ -1,0 +1,55 @@
+from: BHS
+relations:
+  - to: USA
+    layer: action
+    type: incident
+    summary: "Nassau told Washington in late 2024 that it is unwilling and unable to accept US deportation flights, after a reported transition-team proposal."
+    since: 2024
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://caribbeantoday.com/sections/politics/bahamas-government-restates-position-on-deportation-of-migrants-from-the-united-states", title: "Bahamas Government Restates Position on Deportation of Migrants From the United States", publisher: "Caribbean Today", date: 2024, tier: 3}
+  - to: HTI
+    layer: action
+    type: incident
+    summary: "The Bahamas barred Haitian nationals from entering to apply for US visas (September 2025), after US restrictions on Haitian entry."
+    since: 2025-09
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.cbc.bb/news/caribbean-news/haitians-not-allowed-to-enter-bahamas-to-apply-for-us-visas/", title: "Haitians not allowed to enter Bahamas to apply for US visas", publisher: "CBC Barbados", date: 2025-09, tier: 3}
+  - to: HTI
+    layer: action
+    type: expulsion
+    summary: "Removal flights to Cap-Haitien at scale: 107 Haitians in May 2026 and 116 on 27 August 2026, after the election, with removals running daily across the islands."
+    since: 2026-05
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.caribbeannationalweekly.com/news/bahamas-deport-107-haitians-in-latest-immigration-enforcement-operation/", title: "Bahamas deport 107 Haitians in latest immigration enforcement operation", publisher: "Caribbean National Weekly", date: 2026-05, tier: 3}
+      - {url: "https://lenouvelliste.com/en/article/271347/expulsion-de-116-haitiens-des-bahamas", title: "Deportation of 116 Haitians from the Bahamas", publisher: "Le Nouvelliste", date: 2026-08-27, tier: 3}
+  - to: GBR
+    layer: action
+    type: agreement
+    summary: "Both the Bahamas and the UK are parties to the CARIFORUM-UK Economic Partnership Agreement, signed 22 March 2019."
+    since: 2019-03-22
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.theguardian.com/business/2019/mar/22/uk-secures-post-brexit-trade-deal-with-group-of-caribbean-countries", title: "UK secures post-Brexit trade deal with group of Caribbean countries", publisher: "The Guardian", date: 2019-03-22, tier: 3}
+  - to: USA
+    layer: dependency
+    type: trade_share
+    value: 0.8
+    unit: share_of_visitors
+    summary: "The United States is the main source of visitors to the Bahamas (nearly 80 per cent in a 2014 USDA report, the latest figure found; tourism is about half of GDP). Figure is 2014, confidence C."
+    since: 2014-12-16
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://gain.fas.usda.gov/Recent%20GAIN%20Publications/Food%20Service%20-%20Hotel%20Restaurant%20Institutional_Miami%20ATO_Caribbean%20Basin_12-16-2014.pdf", title: "USDA GAIN report, Caribbean Basin (Bahamas tourist origin, 2014)", publisher: "USDA Foreign Agricultural Service", date: 2014-12-16, tier: 1}

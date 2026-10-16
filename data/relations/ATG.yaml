@@ -1,0 +1,59 @@
+from: ATG
+relations:
+  # ---------- objective ----------
+  - to: USA
+    layer: objective
+    type: influence_goal
+    summary: "Seeks a US review of the visa restrictions under Proclamation 10998 and of the US visa bond programme; Browne wrote to Trump in early August 2026 asking for both and pointed to the tougher residency rules now in place under the citizenship-by-investment programme."
+    since: 2026-08-03
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://jamaica-gleaner.com/article/world-news/20260803/antigua-and-barbuda-seeks-us-review-visa-restrictions-and-bond", title: "Antigua and Barbuda seeks US review of visa restrictions and bond", publisher: "Jamaica Gleaner", date: 2026-08-03, tier: 3}
+  - to: CHN
+    layer: objective
+    type: influence_goal
+    summary: "Seeks Chinese investment and a development partnership: an embassy in Beijing opened on 24 January 2024, and Browne framed the China ties as compatible with the US tie."
+    since: 2024-01-24
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    note: "The embassy opening is from Caribbean Today; the 'compatible with US ties' framing is Browne's reply to the Newsweek report (April 2024)."
+    sources:
+      - {url: "https://caribbeantoday.com/sections/politics/antigua-and-barbuda-opens-first-embassy-in-china", title: "Antigua and Barbuda Opens First Embassy in China", publisher: "Caribbean Today", date: 2024-01-24, tier: 3}
+      - {url: "https://www.newsweek.com/antigua-says-it-friend-both-us-china-after-newsweek-article-1892475", title: "Antigua says it is a friend of both U.S. and China, after Newsweek article", publisher: "Newsweek", date: 2024-04-20, tier: 3}
+
+  # ---------- action ----------
+  - to: USA
+    layer: action
+    type: incident
+    summary: "Partial US visa and entry restrictions on Antigua and Barbuda nationals under Presidential Proclamation 10998 (December 2025), in effect from 1 January 2026 for new business, visitor and student visas and for immigrant visas, citing the citizenship-by-investment programme. Existing visas are largely unaffected; no lifting was reported in the latest coverage read."
+    since: 2026-01-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    note: "A US measure against Antigua's nationals, recorded as the event this row is about, not as an act of Antigua. Dominica is named in the same proclamation."
+    sources:
+      - {url: "https://antiguaobserver.com/?p=326422", title: "'New partial restrictions' re US visas for nationals of A&B now in effect", publisher: "Antigua Observer", date: 2026-01, tier: 3}
+      - {url: "https://jamaica-gleaner.com/article/world-news/20260803/antigua-and-barbuda-seeks-us-review-visa-restrictions-and-bond", title: "Antigua and Barbuda seeks US review of visa restrictions and bond", publisher: "Jamaica Gleaner", date: 2026-08-03, tier: 3}
+  - to: USA
+    layer: action
+    type: incident
+    summary: "Browne wrote to Trump about the US military build-up in waters shared by Caribbean states, arguing that tourism-dependent small economies are exposed and calling for renewed US-Venezuela diplomacy."
+    since: 2025-11
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://abstvradio.com/prime-minister-gaston-browne-calls-for-dialogue-in-letter-to-u-s-president/", title: "Prime Minister Gaston Browne calls for dialogue in letter to U.S. president", publisher: "ABS TV", date: 2025-11, tier: 3}
+  - to: VEN
+    layer: action
+    type: visit
+    summary: "Venezuelan Foreign Minister Yvan Gil met Prime Minister Browne as Caracas sought regional support after the US increased its naval presence in the Caribbean; the two discussed the regional security situation."
+    since: 2025-08-29
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.jamaicaobserver.com/2025/08/29/venezuela-seeking-support-light-us-military-presence-region/", title: "Venezuela seeking support in light of US military presence in the region", publisher: "Jamaica Observer", date: 2025-08-29, tier: 3}

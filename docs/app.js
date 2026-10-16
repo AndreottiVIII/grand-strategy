@@ -24,6 +24,10 @@
 
   const actors = Object.fromEntries(data.actors.map(a => [a.id, a]));
   const fullActors = data.actors.filter(a => a.card === "full");
+  if (/[?&]og=1/.test(location.search)) {
+    document.body.classList.add("og");
+    document.querySelector(".stage").insertAdjacentHTML("afterbegin", `<div class="og-title"><h1>Grand <span>Strategy</span></h1><p>What the world's actors want and do, and where it collides</p></div>`);
+  }
   const feature = Object.fromEntries(world.features.map(f => [f.id, f]));
   let pov = null;                 // null = home: the world of today, flags and borders
   let view = "map";
@@ -897,6 +901,43 @@
     el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
   }
 
+
+  // ---------- the egg: type "luttwak" on any page (Davide, 2026-10-16)
+  const EGG_LINES = [
+    ["The entire realm of strategy is pervaded by a paradoxical logic very different from the ordinary linear logic by which we live in all other spheres of life.", "Strategy: The Logic of War and Peace, 1987"],
+    ["Avoid war by every possible means, in all possible circumstances, but always act as if it might start at any time.", "The Grand Strategy of the Byzantine Empire, 2009, the first of the seven rules"],
+    ["Gather intelligence on the enemy and his mentality, and monitor his movements continuously.", "The Grand Strategy of the Byzantine Empire, 2009, the second rule"],
+    ["Campaign vigorously, both offensively and defensively, but attack mostly with small units; emphasize patrolling, raiding and skirmishing rather than all-out attacks.", "The Grand Strategy of the Byzantine Empire, 2009, the third rule"],
+    ["Replace the battle of attrition by the non-battle of manoeuvre.", "The Grand Strategy of the Byzantine Empire, 2009, the fourth rule"],
+    ["Strive to end wars successfully by recruiting allies to change the overall balance of power.", "The Grand Strategy of the Byzantine Empire, 2009, the fifth rule"],
+    ["Subversion is the cheapest path to victory, so cheap in fact as compared with the costs and risks of battle that it must always be attempted.", "The Grand Strategy of the Byzantine Empire, 2009, the sixth rule"],
+    ["When diplomacy and subversion are not enough and there must be fighting, it should be done with relational operational methods and tactics that circumvent the enemy's most pronounced strengths and exploit his weaknesses.", "The Grand Strategy of the Byzantine Empire, 2009, the seventh rule"],
+    ["Although war is a great evil, it does have a great virtue: it can resolve political conflicts and lead to peace.", "Give War a Chance, Foreign Affairs, 1999"],
+    ["The logic of conflict in the grammar of commerce.", "From Geopolitics to Geo-Economics, The National Interest, 1990"],
+  ];
+  let eggBuf = "", eggTimer = null;
+  const eggEl = document.createElement("div");
+  eggEl.id = "egg";
+  eggEl.innerHTML = `<div class="line"></div><div class="src"></div><img class="who" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Edward_Luttwak_in_2026.jpg/400px-Edward_Luttwak_in_2026.jpg" alt=""><div class="hint">click or esc to return</div>`;
+  document.body.appendChild(eggEl);
+  const eggClose = () => { eggEl.classList.remove("is-on", "is-read"); clearTimeout(eggTimer); };
+  eggEl.onclick = eggClose;
+  const eggShow = () => {
+    const [text, src] = EGG_LINES[Math.floor(Math.random() * EGG_LINES.length)];
+    const line = eggEl.querySelector(".line"), srcEl = eggEl.querySelector(".src");
+    line.textContent = ""; srcEl.textContent = "Edward N. Luttwak · " + src;
+    eggEl.classList.add("is-on"); eggEl.classList.remove("is-read");
+    let i = 0;
+    const tick = () => { line.textContent = text.slice(0, ++i); if (i < text.length) eggTimer = setTimeout(tick, text[i - 1] === " " ? 70 : 34); else eggTimer = setTimeout(() => eggEl.classList.add("is-read"), 500); };
+    eggTimer = setTimeout(tick, 400);
+  };
+  document.addEventListener("keydown", ev => {
+    if (ev.key === "Escape" && eggEl.classList.contains("is-on")) return eggClose();
+    if (ev.target && /^(INPUT|SELECT|TEXTAREA)$/.test(ev.target.tagName)) return;
+    if (ev.key.length !== 1) return;
+    eggBuf = (eggBuf + ev.key.toLowerCase()).slice(-7);
+    if (eggBuf === "luttwak" && !eggEl.classList.contains("is-on")) eggShow();
+  });
   function tipFor(id, fallbackName, ev) {
     const a = actors[id], name = a ? a.name : fallbackName;
     if (id === pov) return showTip(`<b>${esc(name)}</b><span class="k">Point of view</span>`, ev);

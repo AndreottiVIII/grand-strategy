@@ -1157,3 +1157,43 @@ relations:
     tier: 3
   to: BWA
   mirrored_from: BWA
+- to: ISR
+  layer: action
+  type: sanction
+  summary: "On 8 Sep 2026 the Foreign Secretary told the Commons that the British government's official view is that Israel's occupation of the Palestinian territories is unlawful: an import ban on goods from settlements through a new sanctions regime, and refusal of arms licences for exports that materially contribute to the occupation, for as long as the occupation persists. The earlier Gaza suspensions stand."
+  since: 2026-09-08
+  until: null
+  last_verified: 2026-10-16
+  confidence: B
+  sources:
+  - url: https://www.gov.uk/government/speeches/foreign-secretary-oral-statement-on-israel-palestine
+    title: Foreign Secretary Oral Statement on Israel-Palestine
+    publisher: UK Government (Foreign, Commonwealth and Development Office)
+    date: 2026-09-08
+    tier: 1
+  - url: https://hansard.parliament.uk/commons/2026-09-14/debates/91E6D250-A8AA-42DD-9A33-71CE446FEE13/IsraelAndPalestine
+    title: Israel and Palestine (Commons debate)
+    publisher: UK Parliament (Hansard)
+    date: 2026-09-14
+    tier: 1
+  note: "Figures conflict: the 8 Sep statement says over 30 Gaza-related licences are suspended; the minister in the 14 Sep debate gave more than 80 suspended or refused. Per the ontology rule the most recent official figure is recorded here, and the gap is open. The debate did not clearly settle whether existing licences are cancelled."
+- to: MUS
+  layer: action
+  type: agreement
+  summary: "After the 2025 Chagos treaty stalled in Parliament and in Washington's eyes, Trump told Burnham at their first meeting in New York on 22 Sep 2026 that he thought the Chagos deal 'terrible'. On 23 Sep Defence Secretary Wes Streeting said that Trump's position on the deal 'as currently drafted' was not changing and that the government had to do more work with the US to bring the deal to a place it could support. Reported as a rework rather than an abandonment."
+  since: 2026-09-22
+  until: null
+  last_verified: 2026-10-16
+  confidence: C
+  sources:
+  - url: https://gulfnews.com/world/mena/trump-tells-uks-burnham-we-can-do-business-but-blasts-terrible-chagos-deal-1.500684385
+    title: "Trump tells UK's Burnham: 'We can do business' - but blasts 'terrible' Chagos deal"
+    publisher: Gulf News
+    date: 2026-09-22
+    tier: 3
+  - url: https://www.enca.com/news/uk-says-will-revisit-chagos-deal-after-latest-trump-criticism
+    title: UK says will revisit Chagos deal after latest Trump criticism
+    publisher: eNCA
+    date: 2026-09-23
+    tier: 3
+  note: "Tier 3 only, so confidence C. Streeting's remarks reached these outlets via a BBC interview (not fetched); eNCA and VRT read them differently (rework vs abandonment). No government readout or Hansard text checked for this row. Burnham's pre-meeting reaffirmation of the handover commitment is reported only in tier 4 pointers and is not cited."

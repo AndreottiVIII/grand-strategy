@@ -1,5 +1,18 @@
 # Journal
 
+## 2026-10-16 · The queue closes at 205 of 205; favicon, preview image, the egg
+
+The last five with the cheapest Haiku, on Davide's order: Bahamas, Antigua and Grenada written flash
+(5 web calls each; 3 stances and 2-5 rows apiece, grades mostly C, the Caribbean press as source;
+Grenada added a stub for CARICOM), the UK and France rechecked for additions only (two dated rows
+each: the UK's settlement-goods ban and the Chagos quarrel with Trump; the Paris coalition summit
+and the provisional Mercosur application). About 700k tokens for the five. Thin cards, listed as
+such; the run is complete. Site: a `?og=1` mode renders the Boetti home map alone at 1200x630 with
+the title, captured as `docs/preview.png` for the social meta tags (Davide: "parti dal Boetti");
+the egg: typing "luttwak" on any page blacks the screen and types one of ten lines from his books,
+letter by letter, with the portrait fading in (click or Esc to return). Favicon: four proposals
+sent, Davide to choose.
+
 ## 2026-10-16 · Weight, borders, encirclement, levers; gatherings pruned; flanks trimmed; Data page; EU reads China as reluctant partner
 
 Davide's review of the site, with his decisions:

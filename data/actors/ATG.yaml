@@ -6,9 +6,79 @@ wikipedia: https://en.wikipedia.org/wiki/Antigua_and_Barbuda
 coords:
 - -61.84
 - 17.12
-seat: Q36262
+seat: St. John's
 regions:
-- world
-card: stub
+- central-america-caribbean
+card: full
 tier: minor
+last_verified: 2026-10-16
 dataset: wikidata
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Keep US access (visas, tourism, investment) while the citizenship-by-investment programme is tightened to satisfy Washington. Partial US visa restrictions on its nationals took effect on 1 January 2026; in early August 2026 Prime Minister Gaston Browne asked Trump for a review."
+      confidence: B
+      sources:
+        - {url: "https://jamaica-gleaner.com/article/world-news/20260803/antigua-and-barbuda-seeks-us-review-visa-restrictions-and-bond", title: "Antigua and Barbuda seeks US review of visa restrictions and bond", publisher: "Jamaica Gleaner", date: 2026-08-03, tier: 3}
+        - {url: "https://antiguaobserver.com/?p=326422", title: "'New partial restrictions' re US visas for nationals of A&B now in effect", publisher: "Antigua Observer", date: 2026-01, tier: 3}
+    - rank: 2
+      text: "Hedge between Washington and Beijing: 'friends of all; enemies of none', with an embassy in China opened on 24 January 2024 and China treated as a development partner, without a break with the United States."
+      confidence: C
+      sources:
+        - {url: "https://caribbeantoday.com/sections/politics/antigua-and-barbuda-opens-first-embassy-in-china", title: "Antigua and Barbuda Opens First Embassy in China", publisher: "Caribbean Today", date: 2024-01-24, tier: 3}
+        - {url: "https://www.newsweek.com/antigua-says-it-friend-both-us-china-after-newsweek-article-1892475", title: "Antigua says it is a friend of both U.S. and China, after Newsweek article", publisher: "Newsweek", date: 2024-04-20, tier: 3}
+    - rank: 3
+      text: "Keep the Caribbean a zone of peace and keep its voice inside CARICOM, so that no great-power rivalry lands on its territory: Browne urged dialogue over Venezuela and told Trump in November 2025 that small tourism economies are exposed to the military build-up."
+      confidence: C
+      sources:
+        - {url: "https://barbadostoday.bb/2025/09/03/caricom-urges-us-to-consult-region-before-military-action-near-venezuela/", title: "CARICOM urges US to consult region before military action near Venezuela", publisher: "Barbados Today", date: 2025-09-03, tier: 3}
+        - {url: "https://abstvradio.com/prime-minister-gaston-browne-calls-for-dialogue-in-letter-to-u-s-president/", title: "Prime Minister Gaston Browne calls for dialogue in letter to U.S. president", publisher: "ABS TV", date: 2025-11, tier: 3}
+
+  means:
+    - domain: diplomatic
+      text: "Multilateral voice through CARICOM and the Small Island Developing States group, and the offer of dialogue to Washington on Venezuela (Browne's letter to Trump, November 2025)."
+      confidence: C
+      sources:
+        - {url: "https://barbadostoday.bb/2025/09/03/caricom-urges-us-to-consult-region-before-military-action-near-venezuela/", title: "CARICOM urges US to consult region before military action near Venezuela", publisher: "Barbados Today", date: 2025-09-03, tier: 3}
+        - {url: "https://abstvradio.com/prime-minister-gaston-browne-calls-for-dialogue-in-letter-to-u-s-president/", title: "Prime Minister Gaston Browne calls for dialogue in letter to U.S. president", publisher: "ABS TV", date: 2025-11, tier: 3}
+    - domain: economic
+      text: "The citizenship-by-investment programme, run by a government unit: a source of revenue and, since 2026, the reason Washington restricts its citizens. The government reports tougher residency rules under the programme as its reform answer."
+      confidence: C
+      sources:
+        - {url: "https://www.cip.gov.ag", title: "Antigua and Barbuda Citizenship by Investment Program", publisher: "Citizenship by Investment Unit (government)", date: 2019-11-02, tier: 1}
+        - {url: "https://jamaica-gleaner.com/article/world-news/20260803/antigua-and-barbuda-seeks-us-review-visa-restrictions-and-bond", title: "Antigua and Barbuda seeks US review of visa restrictions and bond", publisher: "Jamaica Gleaner", date: 2026-08-03, tier: 3}
+    - domain: diplomatic
+      text: "An embassy in Beijing (opened 24 January 2024) alongside the older recognition ties; Browne answers US criticism of the China ties by pointing to the US tie that matters for tourism, trade and investment."
+      confidence: C
+      sources:
+        - {url: "https://caribbeantoday.com/sections/politics/antigua-and-barbuda-opens-first-embassy-in-china", title: "Antigua and Barbuda Opens First Embassy in China", publisher: "Caribbean Today", date: 2024-01-24, tier: 3}
+        - {url: "https://caribbeantoday.com/sections/politics/antigua-and-barbuda-rubbishes-us-publication-story-regarding-island-s-relationship-with-china", title: "Antigua and Barbuda Rubbishes US Publication Story Regarding Island's Relationship With China", publisher: "Caribbean Today", date: 2024-04, tier: 3}
+
+  constraints:
+    - text: "A small, tourism-dependent economy cannot absorb a US visa squeeze. Browne's own government describes the US as a key partner in tourism, trade and investment, and advises citizens not to apply for US visas unless 'absolutely urgent'. Visa issuance to Antiguans fell to near zero in early 2026."
+      confidence: B
+      sources:
+        - {url: "https://antiguaobserver.com/?p=339784", title: "US visitor visa issuances to Antiguans fall to zero", publisher: "Antigua Observer", date: 2026, tier: 3}
+        - {url: "https://antiguaobserver.com/?p=326422", title: "'New partial restrictions' re US visas for nationals of A&B now in effect", publisher: "Antigua Observer", date: 2026-01, tier: 3}
+        - {url: "https://www.newsweek.com/antigua-says-it-friend-both-us-china-after-newsweek-article-1892475", title: "Antigua says it is a friend of both U.S. and China, after Newsweek article", publisher: "Newsweek", date: 2024-04-20, tier: 3}
+    - text: "Reform has to be shown to Washington, not only announced: the proclamation names the programme itself and names Dominica with it, while St Kitts and Nevis, Grenada and Saint Lucia run similar programmes and are not named."
+      confidence: C
+      sources:
+        - {url: "https://antiguaobserver.com/?p=326422", title: "'New partial restrictions' re US visas for nationals of A&B now in effect", publisher: "Antigua Observer", date: 2026-01, tier: 3}
+        - {url: "https://jamaica-gleaner.com/article/world-news/20260803/antigua-and-barbuda-seeks-us-review-visa-restrictions-and-bond", title: "Antigua and Barbuda seeks US review of visa restrictions and bond", publisher: "Jamaica Gleaner", date: 2026-08-03, tier: 3}
+    - text: "No collective cover on the hard questions: CARICOM's October 2025 statement on the US build-up was reached after weeks of silence, Trinidad and Tobago declined to back it, and Browne is publicly challenged on whether CARICOM, Antigua included, aligned with the Maduro government."
+      confidence: C
+      sources:
+        - {url: "https://barbadostoday.bb/2025/09/03/caricom-urges-us-to-consult-region-before-military-action-near-venezuela/", title: "CARICOM urges US to consult region before military action near Venezuela", publisher: "Barbados Today", date: 2025-09-03, tier: 3}
+        - {url: "https://jamaica-gleaner.com/article/lead-stories/20260104/other-nations-react-maduro-ouster", title: "Other nations react to Maduro ouster", publisher: "Jamaica Gleaner", date: 2026-01-04, tier: 3}
+
+  paradoxes:
+    - text: "The programme that brings in the revenue is the reason Washington restricts its citizens, and the China hedge is credible only while Washington accepts the reform. Each step towards Beijing tests the US tie the island most needs."
+      confidence: C
+      sources:
+        - {url: "https://jamaica-gleaner.com/article/world-news/20260803/antigua-and-barbuda-seeks-us-review-visa-restrictions-and-bond", title: "Antigua and Barbuda seeks US review of visa restrictions and bond", publisher: "Jamaica Gleaner", date: 2026-08-03, tier: 3}
+        - {url: "https://www.newsweek.com/antigua-says-it-friend-both-us-china-after-newsweek-article-1892475", title: "Antigua says it is a friend of both U.S. and China, after Newsweek article", publisher: "Newsweek", date: 2024-04-20, tier: 3}
+
+  reading: |
+    Antigua and Barbuda plays a hedge with a small toolkit: a vote in CARICOM, an embassy in Beijing, and a passport programme that keeps a seat at Washington's table only while it is reformed. In 2026 the United States answered that hedge with visa restrictions tied to the programme; the government's response has been to request a review and promise tighter residency rules, not to change its line. The card is thin on the UK, Ukraine and Gaza, and on current trade and tourism shares, because those sources were not available within the flash budget.

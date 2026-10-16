@@ -1,2 +1,25 @@
 from: GRD
-relations: []
+relations:
+  # ---------- alignment ----------
+  - to: CHN
+    layer: alignment
+    type: recognition
+    summary: Diplomatic relations with the People's Republic of China were established in October 1985, suspended from 1989 and restored in 2005, according to the Chinese embassy in Grenada. The Taiwan side of the switch is not sourced here.
+    since: '2005'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+    - {url: "https://gd.china-embassy.gov.cn/eng/gywm_1/dshyc/", title: "Embassy of the People's Republic of China in Grenada: diplomatic relations (undated page, opened 2026-10-16)", publisher: "Embassy of China in Grenada (official statement)", date: 2026-10-16, tier: 1}
+  # ---------- objective ----------
+  - to: org-caricom
+    layer: objective
+    type: influence_goal
+    summary: Keep the CARICOM partners as the first call for relief and security support. Before Beryl's landfall Mitchell said his colleagues were ready to help; afterwards he asked neighbouring states for a helicopter.
+    since: '2024-07-01'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+    - {url: "https://caribbeantoday.com/fr/sections/environment/three-dead-after-hurricane-beryl-passes-through-grenada", title: "Three Dead After Hurricane Beryl Passes Through Grenada", publisher: "Caribbean Today", date: 2024-07, tier: 3}
+    - {url: "https://www.guardian.co.tt/news/grenada-pm-three-dead-when-hurricane-beryl-made-landfall-in-grenada-6.2.2042078.82a01658d9", title: "Grenada PM: three dead when Hurricane Beryl made landfall in Grenada", publisher: "Guardian (Trinidad and Tobago)", date: 2024-07, tier: 3}

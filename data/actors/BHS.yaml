@@ -8,8 +8,8 @@ coords:
 - 25.08
 seat: Nassau
 regions:
-- world
-card: stub
+- central-america-caribbean
+card: full
 tier: minor
 last_verified: 2026-10-16
 dataset: wikidata
@@ -17,18 +17,56 @@ dataset: wikidata
 grand_strategy:
   objectives:
   - rank: 1
-    text: "Keep Philip Davis's Progressive Liberal Party in government for a second term. The PLP won 33 of 41 seats on 12 May 2026, and Davis was sworn in again on 14 May 2026. The election was called early, after parliament was dissolved on 8 April 2026."
+    text: "Govern on the mandate of 12 May 2026: the Progressive Liberal Party under Philip Davis was re-elected for a second straight term, with 33 of 41 seats in the preliminary count, after Davis called an early vote. That mandate is the constraint on every choice below."
     confidence: C
     sources:
-    - {url: "https://www.aljazeera.com/news/2026/5/13/philip-davis-and-progressive-liberal-party-win-general-election-in-bahamas", title: "Philip Davis and Progressive Liberal Party win general election in Bahamas (read as search result, headline and date only)", publisher: "Al Jazeera", date: 2026-05-13, tier: 3}
-    - {url: "https://en.wikipedia.org/wiki/2026_Bahamian_general_election", title: "2026 Bahamian general election (seat count 33 of 41, preliminary; pointer only)", publisher: "Wikipedia", date: 2026-10-16, tier: 4}
+    - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/05/13/bahamas-prime-minister-re-elected-in-early-election-victory", title: "Bahamas prime minister re-elected in early election victory (Reuters, reprinted by Internazionale)", publisher: "Reuters", date: 2026-05-13, tier: 3}
+    - {url: "https://www.caribbeannationalweekly.com/news/caricom-election-observation-mission-says-bahamas-2026-polls-peaceful-orderly", title: "CARICOM election observation mission says Bahamas 2026 polls peaceful, orderly (33 of 41 seats, preliminary)", publisher: "Caribbean National Weekly", date: 2026-05, tier: 3}
+  - rank: 2
+    text: "Control irregular migration, above all from Haiti: after the May 2026 election the government stepped up removals (107 Haitians flown out in May, 116 on 27 August 2026) and announced a biometric immigration system, stiffer penalties for employers and daily overstay fines."
+    confidence: C
+    sources:
+    - {url: "https://www.caribbeannationalweekly.com/news/bahamas-deport-107-haitians-in-latest-immigration-enforcement-operation/", title: "Bahamas deport 107 Haitians in latest immigration enforcement operation (Department of Immigration)", publisher: "Caribbean National Weekly", date: 2026-05, tier: 3}
+    - {url: "https://lenouvelliste.com/en/article/271347/expulsion-de-116-haitiens-des-bahamas", title: "Deportation of 116 Haitians from the Bahamas", publisher: "Le Nouvelliste", date: 2026-08-27, tier: 3}
+    - {url: "https://www.thenassauguardian.com/news/over-100-haitian-migrants-repatriated/article_8b74d137-12b6-46a1-bd4c-357b5ab73b02.html", title: "Over 100 Haitian migrants repatriated (Nassau Guardian: biometric system, employer penalties, overstay fines)", publisher: "The Nassau Guardian", date: 2026, tier: 3}
+  - rank: 3
+    text: "Keep the United States as the anchor partner: it is the main source of visitors (about 80 per cent in 2014, the latest figure found), and the US ambassador calls the Bahamas a valued partner (January 2026)."
+    confidence: C
+    sources:
+    - {url: "https://gain.fas.usda.gov/Recent%20GAIN%20Publications/Food%20Service%20-%20Hotel%20Restaurant%20Institutional_Miami%20ATO_Caribbean%20Basin_12-16-2014.pdf", title: "USDA GAIN report, Caribbean Basin (Bahamas tourist origin, 2014)", publisher: "USDA Foreign Agricultural Service", date: 2014-12-16, tier: 1}
+    - {url: "https://tribune242.com/news/2026/jan/16/walker-bahamas-is-a-valued-partner-not-just-another-pretty-island", title: "Walker: Bahamas is a valued partner, not just another pretty island", publisher: "The Tribune (Nassau)", date: 2026-01-16, tier: 3}
   means:
-  - text: "Multilateral seats: full member of the Commonwealth since 1973-01-01, the Organization of American States since 1982-01-01 and the United Nations since 1973-09-18. The memberships are already in the Wikidata dataset rows; the Commonwealth and OAS official lists are their sources."
+  - domain: diplomatic
+    text: "Enforce on its own soil the entry rules Washington sets, while refusing to take US deportees: the government said in late 2024 it is unwilling and unable to accept US deportation flights, yet in September 2025 it barred Haitians from entering to apply for US visas after Washington restricted Haitian entry."
+    confidence: C
+    sources:
+    - {url: "https://caribbeantoday.com/sections/politics/bahamas-government-restates-position-on-deportation-of-migrants-from-the-united-states", title: "Bahamas Government Restates Position on Deportation of Migrants From the United States", publisher: "Caribbean Today", date: 2024, tier: 3}
+    - {url: "https://www.cbc.bb/news/caribbean-news/haitians-not-allowed-to-enter-bahamas-to-apply-for-us-visas/", title: "Haitians not allowed to enter Bahamas to apply for US visas", publisher: "CBC Barbados", date: 2025-09, tier: 3}
+  - domain: economic
+    text: "Tourism as the main earner, now tilted to cruise: the World Bank reports cruise arrivals up 11.6 per cent year on year through October 2025, while stayover visitors fell 1.9 per cent."
+    confidence: B
+    sources:
+    - {url: "https://thedocs.worldbank.org/en/doc/e408a7e21ba62d843bdd90dc37e61b57-0500032021/related/mpo-bhs.pdf", title: "World Bank Macro Poverty Outlook - The Bahamas", publisher: "World Bank", date: 2025-10, tier: 1}
+  constraints:
+  - text: "Tourism is most of the economy: a US Commercial Service guide puts tourism at about 50 per cent of GDP (more with related services), and the stayover base is flat, so a hurricane, a change in US travel rules or a shift in the cruise mix hits the same sector."
+    confidence: B
+    sources:
+    - {url: "https://www.trade.gov/country-commercial-guides/bahamas-tourism-related-construction-and-materials", title: "Bahamas Country Commercial Guide - tourism-related construction and materials (undated, c. 2023)", publisher: "US International Trade Administration", date: 2023, tier: 1}
+    - {url: "https://thedocs.worldbank.org/en/doc/e408a7e21ba62d843bdd90dc37e61b57-0500032021/related/mpo-bhs.pdf", title: "World Bank Macro Poverty Outlook - The Bahamas", publisher: "World Bank", date: 2025-10, tier: 1}
+  - text: "Debt: central government debt is about 74 per cent of GDP in FY2024/25, and the IMF says more measures are needed to reach the government's target of 50 per cent by FY2030/31."
     confidence: A
     sources:
-    - {url: "https://thecommonwealth.org/our-member-countries", title: "Commonwealth of Nations - member states", publisher: "Commonwealth of Nations", date: 2026-10-12, tier: 1}
-    - {url: "https://www.oas.org/en/member_states/default.asp", title: "Organization of American States - member states", publisher: "Organization of American States", date: 2026-10-12, tier: 1}
-  constraints: []
-  paradoxes: []
+    - {url: "https://www.imf.org/en/news/articles/2026/02/04/pr-26031-the-bahamas-imf-executive-board-concludes-2025-article-iv-consultation", title: "The Bahamas: IMF Executive Board concludes 2025 Article IV consultation", publisher: "IMF", date: 2026-02-04, tier: 1}
+  - text: "US restrictions on Haitian entry shape Nassau's own Haiti rules: in September 2025 the Bahamas barred Haitian visa applicants from entering to apply for US visas, so its border policy follows Washington's visa policy."
+    confidence: C
+    sources:
+    - {url: "https://www.cbc.bb/news/caribbean-news/haitians-not-allowed-to-enter-bahamas-to-apply-for-us-visas/", title: "Haitians not allowed to enter Bahamas to apply for US visas", publisher: "CBC Barbados", date: 2025-09, tier: 3}
+  paradoxes:
+  - text: "The Bahamas refuses to take US deportees, yet removes Haitians on its own flights at scale (107 in May 2026, 116 on 27 August 2026). It says it cannot receive migrants from Washington while it runs the same kind of removals itself, so its refusal and its removals sit side by side."
+    confidence: C
+    sources:
+    - {url: "https://caribbeantoday.com/sections/politics/bahamas-government-restates-position-on-deportation-of-migrants-from-the-united-states", title: "Bahamas Government Restates Position on Deportation of Migrants From the United States", publisher: "Caribbean Today", date: 2024, tier: 3}
+    - {url: "https://www.caribbeannationalweekly.com/news/bahamas-deport-107-haitians-in-latest-immigration-enforcement-operation/", title: "Bahamas deport 107 Haitians in latest immigration enforcement operation", publisher: "Caribbean National Weekly", date: 2026-05, tier: 3}
+    - {url: "https://lenouvelliste.com/en/article/271347/expulsion-de-116-haitiens-des-bahamas", title: "Deportation of 116 Haitians from the Bahamas", publisher: "Le Nouvelliste", date: 2026-08-27, tier: 3}
   reading: |
-    The Bahamas is a small Caribbean state whose government has just renewed its mandate with a wide majority, so its immediate aim is continuity rather than a change of course. This card holds only what could be sourced in this pass: the 12 May 2026 result and the multilateral seats it keeps. The relations with the United States, Haiti, China and the United Kingdom, and the economic and hurricane constraints, are not written yet because no tier 1 to 3 source for them has been read.
+    The Bahamas is a small, tourism-dependent state whose government was renewed in May 2026 with a large majority, so its aim is continuity and control of migration rather than a change of course. Its sharpest test is with Haiti and the United States: Nassau removes Haitians at scale and bars Haitian visa applicants, in line with Washington's entry rules, while it refuses to take US deportees. This card holds only what was sourced in this pass; its positions on Cuba, China, CARICOM and Ukraine or Gaza are not written, because no source for them was read.

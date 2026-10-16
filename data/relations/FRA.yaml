@@ -1196,3 +1196,39 @@ relations:
     tier: 3
   to: GAB
   mirrored_from: GAB
+- to: UKR
+  layer: action
+  type: exercise
+  summary: 'Paris summit of the Coalition of the Willing on 13 Jul 2026: the Multinational Force for Ukraine was due to be declared operationally ready for deployment after hostilities end, with first joint exercises announced and air defence as the core agenda. The post-summit declaration was not confirmed in any source read; this row records the plan.'
+  since: '2026-07-13'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: C
+  note: Source read through its search summary only; the page itself was not opened. Tier 1 as a government readout, but confidence C until the text is checked.
+  sources:
+  - url: https://www.president.gov.ua/en/news/v-parizhi-uchasniki-koaliciyi-ohochih-viznachili-prioriteti-105421
+    title: 'Coalition of the Willing in Paris: participants define priorities (presidential readout)'
+    publisher: Office of the President of Ukraine
+    date: '2026-07-13'
+    tier: 1
+    lang: uk
+  - url: https://www.eurointegration.com.ua/eng/news/2026/07/13/7241510/
+    title: Participants in Coalition of the Willing summit named in Paris
+    publisher: Eurointegration
+    date: '2026-07-13'
+    tier: 3
+- to: org-mercosur
+  layer: action
+  type: incident
+  summary: 'On 27 Feb 2026 the Commission decided to apply the EU-Mercosur agreement provisionally despite the European Parliament''s referral of it to the Court of Justice (Jan 2026); France, which led the opposition (see the Mercosur objective row), was among the states against it.'
+  since: '2026-02-27'
+  until: null
+  last_verified: '2026-10-16'
+  confidence: C
+  note: 'Single tier-3 source for the decision and its date; the French position is taken from the existing objective row and is not restated by this source. The start of provisional application (reported for 1 May 2026) is not recorded here, only a tier-4 pointer was found.'
+  sources:
+  - url: https://www.euronews.com/my-europe/2026/02/27/commission-to-implement-contentious-mercosur-trade-deal-despite-eu-parliament-opposition
+    title: Commission to implement contentious Mercosur trade deal despite EU Parliament opposition
+    publisher: Euronews
+    date: '2026-02-27'
+    tier: 3

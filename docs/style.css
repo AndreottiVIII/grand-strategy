@@ -360,3 +360,25 @@ svg#tmap { width: 100%; height: 100%; display: block; }
 .lever { font-family: var(--font-text); font-size: 13px; color: var(--ink-2); line-height: 1.55; padding: 3px 0 3px 0; border-top: 1px dotted var(--rule); }
 .lever b { font-family: var(--font-ui); font-weight: 400; color: var(--c-seam); text-transform: uppercase; letter-spacing: .1em; font-size: 11px; display: inline-block; width: 92px; }
 .lever .from { font-family: var(--font-ui); color: var(--ink-3); font-size: 11px; margin-right: 8px; }
+
+/* og mode (?og=1): the home map alone at 1200x630 with the title, for the social preview image */
+body.og header.top, body.og .side, body.og .relpanel, body.og .stamp, body.og .frame-ctl { display: none !important; }
+body.og::after { display: none; }
+body.og .frame { grid-template-columns: 1fr; min-height: 0; }
+body.og .map-wrap { height: 630px; min-height: 630px; border: 0; }
+body.og .stage { width: 1200px; height: 630px; overflow: hidden; }
+.og-title { position: absolute; left: 36px; bottom: 30px; z-index: 5; pointer-events: none; }
+.og-title h1 { font-family: var(--font-display); font-size: 92px; line-height: .9; margin: 0; color: var(--ink); text-shadow: 0 0 14px var(--accent), 0 0 2px #000; letter-spacing: .02em; }
+.og-title h1 span { color: var(--c-rival); text-shadow: 0 0 14px var(--c-rival); }
+.og-title p { font-family: var(--font-ui); font-size: 22px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-2); margin: 10px 0 0; text-shadow: 0 0 6px #000; }
+
+/* the egg: type "luttwak" anywhere and the screen reads a line of his, letter by letter */
+#egg { position: fixed; inset: 0; z-index: 200; background: #000; color: var(--ink); display: none; padding: 9vh 10vw; box-sizing: border-box; cursor: pointer; }
+#egg.is-on { display: block; }
+#egg .line { font-family: var(--font-display); font-size: clamp(26px, 3.6vw, 46px); line-height: 1.25; max-width: 980px; text-shadow: 0 0 10px var(--accent); min-height: 5em; white-space: pre-wrap; }
+#egg .line::after { content: "_"; animation: blink 1s steps(1) infinite; color: var(--accent); }
+#egg .src { font-family: var(--font-ui); font-size: 14px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); margin-top: 26px; opacity: 0; transition: opacity 1.2s; }
+#egg .who { position: absolute; right: 8vw; bottom: 8vh; width: 220px; opacity: 0; transition: opacity 2.4s; filter: grayscale(.3) contrast(1.05); border: 1px solid var(--accent); box-shadow: 0 0 16px var(--accent); }
+#egg.is-read .src, #egg.is-read .who { opacity: 1; }
+#egg .hint { position: absolute; left: 10vw; bottom: 6vh; font-family: var(--font-ui); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); }
+@keyframes blink { 50% { opacity: 0; } }
