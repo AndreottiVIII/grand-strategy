@@ -1,0 +1,118 @@
+from: ARG
+relations:
+  # ---------- objective ----------
+  - to: sub-falklands
+    layer: objective
+    type: territorial_claim
+    summary: "Argentina claims the Falklands/Malvinas. Milei reaffirmed the claim in April 2026 and at the UN in September 2026, and said in December 2025 that arms-export talks with London had begun, which the Foreign Office denied; London says sovereignty is not up for negotiation."
+    since: '1982-04-02'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://batimes.com.ar/news/argentina/uk-denies-mileis-claim-over-lifting-of-argentina-arms-sales.phtml", title: "UK denies Milei's claim over lifting of Argentina arms sales", publisher: "Buenos Aires Times", date: "2026-04-14", tier: 3}
+      - {url: "https://www.eurasiantimes.com/argentina-wants-falkland-islands-back-via-diplomatic-means/", title: "Argentina wants Falkland Islands back via diplomatic means", publisher: "Eurasian Times", date: "2026-08", tier: 3}
+
+  - to: USA
+    layer: objective
+    type: influence_goal
+    summary: "Anchor the stabilisation on Washington: the USD 20bn Treasury swap of October 2025 and the trade deal of February 2026 are what the government sought from the Trump administration, in exchange for alignment and tariff cuts."
+    since: '2025-10-09'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://news.bloomberglaw.com/capital-markets/us-argentina-sign-20-billion-swap-deal-as-peso-rout-deepens", title: "US, Argentina Sign $20 Billion Swap Deal Amid Deep Peso Rout", publisher: "Bloomberg Law", date: "2025-10-20", tier: 3}
+      - {url: "https://batimes.com.ar/news/economy/us-argentina-sign-us20-billion-swap-deal-amid-deep-peso-rout.phtml", title: "US, Argentina sign US$20 billion swap deal amid deep peso rout", publisher: "Buenos Aires Times", date: "2025-10-20", tier: 3}
+
+  # ---------- alignment ----------
+  - to: ISR
+    layer: alignment
+    type: recognition
+    summary: "Milei's embrace of Israel: the Isaac Accords with Netanyahu (April 2026) and the pledge to move the embassy to Jerusalem, pending 'once conditions are met' and halted in January 2026 over a Falklands drilling dispute. Not a recognition act in itself; the alignment is political and no treaty exists."
+    since: '2023-12'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.timesofisrael.com/liveblog_entry/netanyahu-milei-launch-isaac-accords-to-foster-cooperation-between-israel-and-western-hemisphere/", title: "Netanyahu, Milei launch 'Isaac Accords' to foster cooperation between Israel and Western Hemisphere", publisher: "The Times of Israel", date: "2026-04-19", tier: 3}
+      - {url: "https://www.timesofisrael.com/report-argentina-halts-jerusalem-embassy-move-over-falklands-drilling-dispute/", title: "Report: Argentina halts Jerusalem embassy move over Falklands drilling dispute", publisher: "The Times of Israel", date: "2026-01-11", tier: 3}
+
+  # ---------- dependency ----------
+  - to: org-imf
+    layer: dependency
+    type: debt
+    summary: "The 48-month Extended Fund Facility of USD 20bn (SDR 15.267bn, 479% of quota), approved 11-12 April 2025. About USD 15.8bn disbursed by the May 2026 review. The value is the arrangement size, not a debt stock."
+    since: '2025-04-11'
+    until: null
+    value: 20
+    unit: usd_bn_eff_arrangement
+    last_verified: '2026-10-16'
+    confidence: A
+    sources:
+      - {url: "https://www.imf.org/en/news/articles/2025/04/12/pr25101-argentina-imf-executive-board-approves-48-month-usd20-billion-extended-arrangement", title: "IMF Executive Board Approves 48-month US$20 billion Extended Arrangement for Argentina", publisher: "IMF", date: "2025-04-12", tier: 1}
+      - {url: "https://www.imf.org/en/news/articles/2026/05/21/pr26165-argentina-imf-completes-2nd-rev-of-extended-arr-under-eff-concludes-2026-aiv-consultation", title: "Argentina: IMF completes 2nd review of extended arrangement under the EFF", publisher: "IMF", date: "2026-05-21", tier: 1}
+
+  - to: USA
+    layer: dependency
+    type: debt
+    summary: "The US Treasury currency swap of USD 20bn, announced 9 October 2025 and signed 20 October 2025, which Milei said could cover 2026 foreign-currency debt payments if markets did not refinance. The value is the swap line size; drawn amounts were not found."
+    since: '2025-10-20'
+    until: null
+    value: 20
+    unit: usd_bn_swap_line
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://news.bloomberglaw.com/capital-markets/us-argentina-sign-20-billion-swap-deal-as-peso-rout-deepens", title: "US, Argentina Sign $20 Billion Swap Deal Amid Deep Peso Rout", publisher: "Bloomberg Law", date: "2025-10-20", tier: 3}
+      - {url: "https://batimes.com.ar/news/economy/us-argentina-sign-us20-billion-swap-deal-amid-deep-peso-rout.phtml", title: "US, Argentina sign US$20 billion swap deal amid deep peso rout", publisher: "Buenos Aires Times", date: "2025-10-20", tier: 3}
+
+  - to: CHN
+    layer: dependency
+    type: debt
+    summary: "The China swap line, renewed for five years to 2031 on 5 August 2026 (more than USD 19bn). The drawn balance fell from about CNY21bn (around USD 3bn) at end-2024 to about CNY7bn (USD 1bn) at end-2025. The value is the line size, not the drawn amount."
+    since: '2026-08-05'
+    until: '2031'
+    value: 19
+    unit: usd_bn_swap_line
+    last_verified: '2026-10-16'
+    confidence: C
+    sources:
+      - {url: "https://new.intellinews.com/articles/argentina-renews-19bn-china-swap-line-for-five-more-years-459346", title: "Argentina renews $19bn China swap line for five more years", publisher: "intellinews", date: "2026-08", tier: 3}
+
+  # ---------- action ----------
+  - to: USA
+    layer: action
+    type: agreement
+    summary: "The Agreement on Reciprocal Trade and Investment, signed in Washington on 5 February 2026 by Argentina's foreign minister and the US Trade Representative. The US removes over 1,600 reciprocal tariffs on Argentine goods and keeps a 10% ceiling; Argentina cuts duties on more than 200 items of US origin and moves to automatic import licensing. Entry into force is 60 days after both sides notify completion of domestic procedures; that status was not confirmed."
+    since: '2026-02-05'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://news.bloomberglaw.com/international-trade/argentina-says-it-signed-us-trade-deal-with-trump-administration", title: "Argentina Signs US Trade Deal That Cuts Hundreds of Tariffs", publisher: "Bloomberg Law", date: "2026-02-05", tier: 3}
+      - {url: "https://kpmg.com/us/en/taxnewsflash/news/2026/02/united-states-argentina-reciprocal-trade-investment-agreement.html", title: "United States-Argentina reciprocal trade and investment agreement", publisher: "KPMG", date: "2026-02", tier: 3}
+
+  - to: ISR
+    layer: action
+    type: agreement
+    summary: "Milei's state visit to Israel (19-22 April 2026): the 'Isaac Accords' for ties between Israel and the Western Hemisphere were launched with Netanyahu and three memoranda on military and scientific cooperation were signed; the Jerusalem embassy move was reaffirmed 'once conditions are met' and is pending. The first direct Israel-Argentina flight was announced for November 2026."
+    since: '2026-04-19'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.timesofisrael.com/liveblog_entry/netanyahu-milei-launch-isaac-accords-to-foster-cooperation-between-israel-and-western-hemisphere/", title: "Netanyahu, Milei launch 'Isaac Accords' to foster cooperation between Israel and Western Hemisphere", publisher: "The Times of Israel", date: "2026-04-19", tier: 3}
+      - {url: "https://www.infobae.com/america/agencias/2026/04/19/milei-anuncia-que-la-primera-ruta-directa-israel-argentina-estara-operativa-en-noviembre/", title: "Milei announces that the first direct Israel-Argentina route will be operating in November", title_original: "Milei anuncia que la primera ruta directa Israel-Argentina estara operativa en noviembre", lang: es, publisher: "Infobae", date: "2026-04-19", tier: 3}
+
+  - to: org-eu
+    layer: action
+    type: agreement
+    summary: "Argentina's Senate ratified the EU-Mercosur agreement on 26 February 2026 by 69 votes to 3, after the Chamber of Deputies; Milei welcomed the deal as a starting point and asked Mercosur for more flexibility. The European side (Parliament consent, provisional application) was not confirmed in sources found."
+    since: '2026-02-26'
+    until: null
+    last_verified: '2026-10-16'
+    confidence: B
+    sources:
+      - {url: "https://www.bilaterals.org/uruguay-and-argentina-ratify-the?lang=es", title: "Uruguay and Argentina ratify the EU-Mercosur deal, leaving entry into force to Brussels", publisher: "bilaterals.org", date: "2026-02", tier: 3}
+      - {url: "https://www.batimes.com.ar/news/economy/milei-welcomes-eu-trade-deal-but-puts-mercosur-on-notice.phtml", title: "Milei welcomes EU trade deal but puts Mercosur on notice", publisher: "Buenos Aires Times", date: "2026-05", tier: 3}

@@ -8,7 +8,79 @@ coords:
 - -34.6
 seat: Buenos Aires
 regions:
-- world
-card: stub
+- south-america
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Stabilise the peso and roll the debt over without default, with two large external lifelines: a USD 20bn IMF Extended Fund Facility approved in April 2025 (SDR 15.267bn) and a USD 20bn Treasury currency swap announced on 9 October 2025 and signed on 20 October 2025. The IMF second review of May 2026 reports about USD 15.8bn disbursed under the arrangement. Milei said the swap could cover 2026 foreign-currency debt payments if markets did not refinance."
+      confidence: A
+      sources:
+        - {url: "https://www.imf.org/en/news/articles/2025/04/12/pr25101-argentina-imf-executive-board-approves-48-month-usd20-billion-extended-arrangement", title: "IMF Executive Board Approves 48-month US$20 billion Extended Arrangement for Argentina", publisher: "IMF", date: 2025-04-12, tier: 1}
+        - {url: "https://www.imf.org/en/news/articles/2026/05/21/pr26165-argentina-imf-completes-2nd-rev-of-extended-arr-under-eff-concludes-2026-aiv-consultation", title: "Argentina: IMF completes 2nd review of extended arrangement under the EFF", publisher: "IMF", date: 2026-05-21, tier: 1}
+        - {url: "https://news.bloomberglaw.com/capital-markets/us-argentina-sign-20-billion-swap-deal-as-peso-rout-deepens", title: "US, Argentina Sign $20 Billion Swap Deal Amid Deep Peso Rout", publisher: "Bloomberg Law", date: 2025-10-20, tier: 3}
+        - {url: "https://batimes.com.ar/news/economy/us-argentina-sign-us20-billion-swap-deal-amid-deep-peso-rout.phtml", title: "US, Argentina sign US$20 billion swap deal amid deep peso rout", publisher: "Buenos Aires Times", date: 2025-10-20, tier: 3}
+    - rank: 2
+      text: "Open the economy to the outside and cut tariffs: the Agreement on Reciprocal Trade and Investment with the United States, signed in Washington on 5 February 2026, under which the US removes over 1,600 reciprocal tariffs on Argentine goods and Argentina cuts duties on more than 200 items of US origin. Argentina's Senate ratified the EU-Mercosur deal on 26 February 2026, which Milei called a starting point and used to ask Mercosur for more flexibility."
+      confidence: B
+      sources:
+        - {url: "https://news.bloomberglaw.com/international-trade/argentina-says-it-signed-us-trade-deal-with-trump-administration", title: "Argentina Signs US Trade Deal That Cuts Hundreds of Tariffs", publisher: "Bloomberg Law", date: 2026-02-05, tier: 3}
+        - {url: "https://kpmg.com/us/en/taxnewsflash/news/2026/02/united-states-argentina-reciprocal-trade-investment-agreement.html", title: "United States-Argentina reciprocal trade and investment agreement", publisher: "KPMG", date: 2026-02, tier: 3}
+        - {url: "https://www.bilaterals.org/uruguay-and-argentina-ratify-the?lang=es", title: "Uruguay and Argentina ratify the EU-Mercosur deal, leaving entry into force to Brussels", publisher: "bilaterals.org", date: 2026-02, tier: 3}
+        - {url: "https://www.batimes.com.ar/news/economy/milei-welcomes-eu-trade-deal-but-puts-mercosur-on-notice.phtml", title: "Milei welcomes EU trade deal but puts Mercosur on notice", publisher: "Buenos Aires Times", date: 2026-05, tier: 3}
+    - rank: 3
+      text: "Keep the Falklands/Malvinas claim alive as a constitutional matter while the relationship with London stays workable. Milei reaffirmed the claim in April 2026 and at the UN in September 2026, and said in December 2025 that arms-export talks had begun, which the Foreign Office denied; London says sovereignty is not up for negotiation."
+      confidence: B
+      sources:
+        - {url: "https://batimes.com.ar/news/argentina/uk-denies-mileis-claim-over-lifting-of-argentina-arms-sales.phtml", title: "UK denies Milei's claim over lifting of Argentina arms sales", publisher: "Buenos Aires Times", date: 2026-04-14, tier: 3}
+        - {url: "https://www.eurasiantimes.com/argentina-wants-falkland-islands-back-via-diplomatic-means/", title: "Argentina wants Falkland Islands back via diplomatic means", publisher: "Eurasian Times", date: 2026-08, tier: 3}
+
+  means:
+    - domain: economic
+      text: "Dollar and credit access as the currency of diplomacy: the US Treasury swap and the IMF programme are the two large lifelines, and the government offers policy in return (the 2025 trade deal, the IMF reform path). Trade is the second lever: soybeans, beef and wheat sold to China, which is a major buyer and a main source of imports, and the EU-Mercosur deal as an export route."
+      confidence: B
+      sources:
+        - {url: "https://www.imf.org/en/news/articles/2025/04/12/pr25101-argentina-imf-executive-board-approves-48-month-usd20-billion-extended-arrangement", title: "IMF Executive Board Approves 48-month US$20 billion Extended Arrangement for Argentina", publisher: "IMF", date: 2025-04-12, tier: 1}
+        - {url: "https://news.bloomberglaw.com/capital-markets/us-argentina-sign-20-billion-swap-deal-as-peso-rout-deepens", title: "US, Argentina Sign $20 Billion Swap Deal Amid Deep Peso Rout", publisher: "Bloomberg Law", date: 2025-10-20, tier: 3}
+        - {url: "https://new.intellinews.com/articles/argentina-renews-19bn-china-swap-line-for-five-more-years-459346", title: "Argentina renews $19bn China swap line for five more years", publisher: "intellinews", date: 2026-08, tier: 3}
+    - domain: diplomatic
+      text: "Alignment with the Trump administration and with Israel as the political currency: the Isaac Accords with Netanyahu (April 2026), three memoranda on military and scientific cooperation, and Milei's public thanks to Bessent and Trump for the rescue. Diplomacy with the big blocs goes through the Mercosur summits, where Milei and Brazil contest the bloc's direction."
+      confidence: B
+      sources:
+        - {url: "https://www.timesofisrael.com/liveblog_entry/netanyahu-milei-launch-isaac-accords-to-foster-cooperation-between-israel-and-western-hemisphere/", title: "Netanyahu, Milei launch 'Isaac Accords' to foster cooperation between Israel and Western Hemisphere", publisher: "The Times of Israel", date: 2026-04-19, tier: 3}
+        - {url: "https://buenosairesherald.com/world/international-relations/mercosur-summit-overshadowed-by-fate-of-eu-trade-deal-milei-in-the-wings", title: "Mercosur summit overshadowed by fate of EU trade deal, Milei in the wings", publisher: "Buenos Aires Herald", date: 2026-06, tier: 3}
+
+  constraints:
+    - text: "Debt and reserves: the IMF programme sets the conditions of the lifeline, and the China swap line, renewed in August 2026, had about USD 1bn drawn at end-2025. A default would cut the external lifelines the government now depends on."
+      confidence: A
+      sources:
+        - {url: "https://www.imf.org/en/news/articles/2026/05/21/pr26165-argentina-imf-completes-2nd-rev-of-extended-arr-under-eff-concludes-2026-aiv-consultation", title: "Argentina: IMF completes 2nd review of extended arrangement under the EFF", publisher: "IMF", date: 2026-05-21, tier: 1}
+        - {url: "https://new.intellinews.com/articles/argentina-renews-19bn-china-swap-line-for-five-more-years-459346", title: "Argentina renews $19bn China swap line for five more years", publisher: "intellinews", date: 2026-08, tier: 3}
+    - text: "The China trade and the American alliance pull in opposite directions: Beijing buys Argentine soybeans, beef and wheat and holds a swap line of more than USD 19bn, while the US rescue was announced with its own interest in the trade. The renewal of the China swap in August 2026 shows that the government needs both. Our reading (C), not a source's word."
+      confidence: C
+      sources:
+        - {url: "https://new.intellinews.com/articles/argentina-renews-19bn-china-swap-line-for-five-more-years-459346", title: "Argentina renews $19bn China swap line for five more years", publisher: "intellinews", date: 2026-08, tier: 3}
+        - {url: "https://news.bloomberglaw.com/capital-markets/us-argentina-sign-20-billion-swap-deal-as-peso-rout-deepens", title: "US, Argentina Sign $20 Billion Swap Deal Amid Deep Peso Rout", publisher: "Bloomberg Law", date: 2025-10-20, tier: 3}
+    - text: "The Mercosur bloc limits what Milei can do alone. Brazil's Lula has clashed with Milei repeatedly and skipped the Asuncion ceremony for the EU deal; Brazil and Argentina contest the bloc's direction at the June 2026 summit. Our reading: a bilateral US deal sits uneasily inside a bloc with a common external tariff (C)."
+      confidence: B
+      sources:
+        - {url: "https://buenosairesherald.com/world/international-relations/mercosur-summit-overshadowed-by-fate-of-eu-trade-deal-milei-in-the-wings", title: "Mercosur summit overshadowed by fate of EU trade deal, Milei in the wings", publisher: "Buenos Aires Herald", date: 2026-06, tier: 3}
+        - {url: "https://www.batimes.com.ar/news/economy/milei-welcomes-eu-trade-deal-but-puts-mercosur-on-notice.phtml", title: "Milei welcomes EU trade deal but puts Mercosur on notice", publisher: "Buenos Aires Times", date: 2026-05, tier: 3}
+
+  paradoxes:
+    - text: "Argentina holds two large lifelines from two rival powers: the US swap of October 2025 and a China swap renewed to 2031 in August 2026. Our reading: the hedge that keeps the peso liquid is the one Washington would prefer to see closed, so the American rescue and the Chinese trade keep pulling against each other (C)."
+      confidence: C
+      sources:
+        - {url: "https://new.intellinews.com/articles/argentina-renews-19bn-china-swap-line-for-five-more-years-459346", title: "Argentina renews $19bn China swap line for five more years", publisher: "intellinews", date: 2026-08, tier: 3}
+        - {url: "https://news.bloomberglaw.com/capital-markets/us-argentina-sign-20-billion-swap-deal-as-peso-rout-deepens", title: "US, Argentina Sign $20 Billion Swap Deal Amid Deep Peso Rout", publisher: "Bloomberg Law", date: 2025-10-20, tier: 3}
+    - text: "Milei pushes Mercosur towards bilateral deals with the United States and others, which weakens the bloc that gives Argentina its weight in the EU negotiation. The EU-Mercosur deal was ratified because the bloc acted together; the flexibility he asks for is what would split it. Our reading (C)."
+      confidence: C
+      sources:
+        - {url: "https://www.batimes.com.ar/news/economy/milei-welcomes-eu-trade-deal-but-puts-mercosur-on-notice.phtml", title: "Milei welcomes EU trade deal but puts Mercosur on notice", publisher: "Buenos Aires Times", date: 2026-05, tier: 3}
+        - {url: "https://www.bilaterals.org/uruguay-and-argentina-ratify-the?lang=es", title: "Uruguay and Argentina ratify the EU-Mercosur deal, leaving entry into force to Brussels", publisher: "bilaterals.org", date: 2026-02, tier: 3}
+
+  reading: |
+    Milei's Argentina trades strategic alignment for money: the USD 20bn US Treasury swap and the USD 20bn IMF programme keep the peso and the debt afloat, and the price is a trade deal with Washington, the Isaac Accords with Israel and loud alignment with Trump. The hedge is the China swap, renewed to 2031, and the grain trade Beijing buys, and the paradox is that the American rescue and the Chinese trade pull against each other. Within South America the Mercosur bloc and the friction with Lula limit how far Milei can go, while the Falklands claim stays alive in rhetoric without stopping the London relationship.

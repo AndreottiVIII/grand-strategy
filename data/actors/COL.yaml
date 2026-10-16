@@ -3,12 +3,66 @@ name: Colombia
 type: state
 iso2: co
 wikipedia: https://en.wikipedia.org/wiki/Colombia
-coords:
-- -74.08
-- 4.61
+coords: [-74.08, 4.61]
 seat: Bogotá
-regions:
-- world
-card: stub
+regions: [south-america]
+card: full
 tier: minor
-dataset: wikidata
+last_verified: 2026-10-16
+
+grand_strategy:
+  objectives:
+    - rank: 1
+      text: "Win the drug war with Washington behind it: cut cocaine output through fumigation, strikes on labs and boats, and extraditions. Abelardo de la Espriella, who won the 21 Jun 2026 runoff by about one point (49.66% to 48.70%), took office on 7 Aug 2026 and promised this line in his inaugural speech, ending Petro's negotiating approach. US officials described the coca and cocaine output as at 'all-time records' in the Sept 2025 decertification memo."
+      confidence: C
+      sources:
+        - {url: "https://www.gpb.org/news/2026/08/07/colombias-new-president-vows-remake-the-country-and-challenge-rebel-groups", title: "Colombia's new president vows to remake the country and challenge rebel groups", publisher: "GPB (AP)", date: 2026-08-07, tier: 3}
+        - {url: "https://www.intellinews.com/colombia-inaugurates-hardline-lawyer-abelardo-de-la-espriella-as-president-459765/", title: "Colombia inaugurates hardline lawyer Abelardo de la Espriella as president", publisher: "Intellinews", date: 2026-08, tier: 3}
+        - {url: "https://americasquarterly.org/article/reaction-de-la-espriella-wins-colombias-election-by-narrow-margin/", title: "De la Espriella wins Colombia's election by narrow margin", publisher: "Americas Quarterly", date: 2026-06-22, tier: 3}
+        - {url: "https://www.npr.org/2025/09/16/nx-s1-5543055/colombia-drugs-u-s-trump-petro", title: "US decertifies Colombia as ally in drugs fight", publisher: "NPR", date: 2025-09-16, tier: 3}
+    - rank: 2
+      text: "Recover the security and trade partnership with the United States after the 2025-26 rupture: US aid, the Shield of the Americas bloc, and an end to decertification. Under Petro, Washington decertified Colombia as a counternarcotics partner (Sept 2025) and sanctioned the president and his support network (OFAC, 24 Oct 2025); the new government has pledged to join the Shield of the Americas from its first day."
+      confidence: B
+      sources:
+        - {url: "https://home.treasury.gov/news/press-releases/sb0292", title: "Treasury sanctions Colombian President Gustavo Petro and his support network", publisher: "US Department of the Treasury", date: 2025-10-24, tier: 1}
+        - {url: "https://www.npr.org/2025/09/16/nx-s1-5543055/colombia-drugs-u-s-trump-petro", title: "US decertifies Colombia as ally in drugs fight", publisher: "NPR", date: 2025-09-16, tier: 3}
+        - {url: "https://www.intellinews.com/colombia-inaugurates-hardline-lawyer-abelardo-de-la-espriella-as-president-459765/", title: "Colombia inaugurates hardline lawyer Abelardo de la Espriella as president", publisher: "Intellinews", date: 2026-08, tier: 3}
+    - rank: 3
+      text: "Take back the Venezuelan border and the Catatumbo from the ELN. After the US strike on Caracas (3 Jan 2026) the group pulled back from Venezuela into Colombia; Petro's government activated a plan against attacks and warned the ELN that joint military action with Venezuela would follow if it did not leave Venezuelan territory."
+      confidence: B
+      sources:
+        - {url: "https://www.vanguardia.com/colombia/2026/01/06/los-movimientos-del-eln-en-la-frontera-inquietan-a-colombia-tras-la-detencion-de-maduro/", title: "ELN movements on the border worry Colombia after Maduro's detention", publisher: "Vanguardia", date: 2026-01-06, tier: 3, lang: es}
+        - {url: "https://www.vanguardia.com/colombia/2026/01/13/petro-advierte-al-eln-si-no-sale-de-venezuela-habra-acciones-militares-conjuntas/", title: "Petro warns the ELN: if it does not leave Venezuela there will be joint military action", publisher: "Vanguardia", date: 2026-01-13, tier: 3, lang: es}
+        - {url: "https://insightcrime.org/es/?p=233348", title: "ELN binational structure in Venezuela (InSight Crime profile)", publisher: "InSight Crime", date: 2026, tier: 2, lang: es}
+  means:
+    - text: "Security and intelligence with the United States: the armed forces and police, the Plan Colombia legacy, and a US security package after the swearing-in. The new government also proposes to let US forces operate from Colombian territory, to bomb cocaine labs in the jungle and to speed extraditions of armed-group leaders wanted in the US."
+      sources:
+        - {url: "https://www.gpb.org/news/2026/08/07/colombias-new-president-vows-remake-the-country-and-challenge-rebel-groups", title: "Colombia's new president vows to remake the country and challenge rebel groups", publisher: "GPB (AP)", date: 2026-08-07, tier: 3}
+        - {url: "https://www.intellinews.com/colombia-inaugurates-hardline-lawyer-abelardo-de-la-espriella-as-president-459765/", title: "Colombia inaugurates hardline lawyer Abelardo de la Espriella as president", publisher: "Intellinews", date: 2026-08, tier: 3}
+    - text: "Energy as a lever: electricity exports to Ecuador (about 8% of its demand, more than USD 400 million in sales 2024-25) were suspended for six months during the 2026 tariff war and resumed on 5 Aug 2026."
+      sources:
+        - {url: "https://forbes.co/2026/08/05/economia-y-finanzas/colombia-reanuda-las-exportaciones-de-energia-hacia-ecuador/", title: "Colombia reanuda las exportaciones de energía hacia Ecuador", publisher: "Forbes Colombia", date: 2026-08-05, tier: 3, lang: es}
+        - {url: "https://www.vistazo.com/amp/actualidad/2026-07-22-colombia-reanudar-venta-energia-ecuador-guerra-comercial-HD11125244", title: "Colombia se prepara para reanudar la venta de energía a Ecuador tras dejar atrás la guerra comercial", publisher: "Vistazo", date: 2026-07-22, tier: 3, lang: es}
+  constraints:
+    - text: "Cocaine output at record levels, as the US memo of Sept 2025 stated, so force alone does not shrink supply. The new government's tools (fumigation, shoot-downs of suspect planes, bombing of labs) have not yet been tested; the coca-spraying question is contested, Petro arguing that demand must be cut."
+      sources:
+        - {url: "https://www.npr.org/2025/09/16/nx-s1-5543055/colombia-drugs-u-s-trump-petro", title: "US decertifies Colombia as ally in drugs fight", publisher: "NPR", date: 2025-09-16, tier: 3}
+        - {url: "https://www.intellinews.com/colombia-inaugurates-hardline-lawyer-abelardo-de-la-espriella-as-president-459765/", title: "Colombia inaugurates hardline lawyer Abelardo de la Espriella as president", publisher: "Intellinews", date: 2026-08, tier: 3}
+    - text: "A border it does not hold: the ELN moves between Venezuela and Catatumbo, and cooperation with the government in Caracas is partial and conditional, so the armed groups on the frontier cannot be cleared from one side."
+      sources:
+        - {url: "https://insightcrime.org/es/?p=233348", title: "ELN binational structure in Venezuela (InSight Crime profile)", publisher: "InSight Crime", date: 2026, tier: 2, lang: es}
+        - {url: "https://www.vanguardia.com/colombia/2026/01/06/los-movimientos-del-eln-en-la-frontera-inquietan-a-colombia-tras-la-detencion-de-maduro/", title: "ELN movements on the border worry Colombia after Maduro's detention", publisher: "Vanguardia", date: 2026-01-06, tier: 3, lang: es}
+    - text: "An export economy whose crude leaves through Ecuador: Colombian crude runs through Ecuador's SOTE pipeline, and during the 2026 dispute Ecuador raised the transit fee from 3 to 30 dollars a barrel."
+      sources:
+        - {url: "https://www.ambito.com/mundo/efecto-donald-trump-ecuador-subio-900-la-tarifa-transporte-del-petroleo-colombia-n6239117", title: "Efecto Donald Trump: Ecuador subió 900% la tarifa de transporte del petróleo colombiano", publisher: "Ámbito", date: 2026, tier: 3, lang: es, note: "date not shown in the search result; year from the context of the 2026 dispute"}
+  paradoxes:
+    - text: "Petro's sovereignty stand against the boat strikes brought the decertification, the sanctions on the president and the loss of aid, leaving Bogotá less able to fight the cocaine economy that his own policy wanted to end by negotiation."
+      sources:
+        - {url: "https://home.treasury.gov/news/press-releases/sb0292", title: "Treasury sanctions Colombian President Gustavo Petro and his support network", publisher: "US Department of the Treasury", date: 2025-10-24, tier: 1}
+        - {url: "https://www.npr.org/2025/09/16/nx-s1-5543055/colombia-drugs-u-s-trump-petro", title: "US decertifies Colombia as ally in drugs fight", publisher: "NPR", date: 2025-09-16, tier: 3}
+    - text: "Its tariff war with Ecuador, justified by Bogotá's lack of drug-control reciprocity, was fought with the lever that hurt Colombia's own exports: the electricity cut, plus 30% reciprocal tariffs on Ecuadorian goods, while Colombia's crude still depends on Ecuador's pipeline."
+      sources:
+        - {url: "https://forbes.co/2026/08/05/economia-y-finanzas/colombia-reanuda-las-exportaciones-de-energia-hacia-ecuador/", title: "Colombia reanuda las exportaciones de energía hacia Ecuador", publisher: "Forbes Colombia", date: 2026-08-05, tier: 3, lang: es}
+        - {url: "https://elmercurio.com.ec/principal/2026/01/22/ecuador-colombia-guerra-comercial-aranceles/", title: "Guerra comercial entre Ecuador y Colombia escala con aranceles recíprocos", publisher: "El Mercurio (Ecuador)", date: 2026-01-22, tier: 3, lang: es}
+  reading: |
+    Colombia changed its partner in 2026 without changing its problem: the cocaine economy and the armed groups on the Venezuelan border are the same, and a hard-line Trump ally sworn in on 7 Aug 2026 has bet that Washington's force can do what negotiation did not. The reset reverses the Petro-era rupture (decertification, sanctions on the president, the tariff war with Ecuador), and the energy lever is back in use, while the Belt and Road pact of May 2025 is a non-binding letter that the new government has not yet addressed in any source found. The paradox is that the rupture cost Colombia its aid and its standing, and the reset buys security cooperation at a price that the policy itself may push across the borders, into Venezuela and Ecuador (an inference, not yet sourced).

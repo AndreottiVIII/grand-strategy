@@ -1,0 +1,99 @@
+from: VEN
+relations:
+  # ---------- objective ----------
+  - to: GUY
+    layer: objective
+    type: territorial_claim
+    summary: "Venezuela claims the Essequibo, about two-thirds of Guyana's territory, under the 1966 Geneva Agreement reading that voids the 1899 arbitral award; it rejects the ICJ's competence in Guyana's case (filed 2018), and the judgment is expected between November 2026 and January 2027. The court's provisional measures of 2023 and May 2025 forbade changing the situation or holding elections in the region."
+    since: 1899
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://oilnow.gy/featured/guyana-government-expects-world-court-ruling-as-early-as-november-2026-in-essequibo-border-case/", title: "Guyana government expects world court ruling as early as November 2026 in Essequibo border case", publisher: "OilNOW", date: 2026, tier: 3}
+      - {url: "https://wtop.com/national/2026/05/venezuelas-leader-to-defend-her-countrys-claim-over-mineral-rich-guyana-region-before-un-court/", title: "Venezuela's leader to defend her country's claim over mineral-rich Guyana region before UN court", publisher: "AP (via WTOP)", date: 2026-05, tier: 3}
+  - to: USA
+    layer: objective
+    type: influence_goal
+    summary: "After the raid of 3 Jan 2026, the government of Delcy Rodriguez works for the licences that keep its oil and its finances moving (OFAC general licences 46, 46B and 52, Jan-Mar 2026), while Washington, in the words of the NYT, effectively controls Venezuela's finances. Mirror of the USA row, same sources."
+    since: 2026-01-03
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.nytimes.com/2026/07/11/us/politics/how-marco-rubio-runs-venezuela.html", title: "How Marco Rubio is running Venezuela from afar", publisher: "The New York Times", date: 2026-07-11, tier: 3}
+      - {url: "https://www.internationaltradeinsights.com/2026/02/ofac-issues-general-license-authorizing-certain-activities-involving-venezuelan-oil/", title: "OFAC issues general license authorizing certain activities involving Venezuelan oil", publisher: "International Trade Insights", date: 2026-02, tier: 3}
+  # ---------- alignment ----------
+  - to: IRN
+    layer: alignment
+    type: treaty
+    summary: "20-year cooperation plan signed in Tehran by Maduro and Raisi on 11 Jun 2022 (oil, petrochemicals, defence). Washington made the cut of Iranian ties the price of oil after 3 Jan 2026, and on 29 Jul 2026 Caracas summoned Iran's ambassador. Mirror of the IRN row, same sources."
+    since: '2022-06-11'
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.reuters.com/world/iran-venezuela-sign-20-year-cooperation-plan-state-tv-2022-06-11/", title: "Under U.S. sanctions, Iran and Venezuela sign 20-year cooperation plan", publisher: "Reuters", date: '2022-06-11', tier: 3}
+      - {url: "https://www.cnn.com/2026/01/07/politics/venezuela-trump-oil-demands", title: "US demands on Venezuela after the Maduro operation: cut ties with adversaries including Iran (CNN, 7 Jan 2026)", publisher: "CNN", date: '2026-01-07', tier: 3}
+  # ---------- dependency ----------
+  - to: USA
+    layer: dependency
+    type: trade_share
+    summary: "About USD 13bn of Venezuelan oil money is held by the United States, per the Financial Times (July 2026), while PDVSA's exports run under US licences. Entered as the headline sum of proceeds, not a share of trade: the vocabulary has no better type for it."
+    since: 2026-01-03
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    value: 13
+    unit: usd_bn_oil_proceeds_held_in_us
+    sources:
+      - {url: "https://www.ft.com/content/0e562e03-106e-4729-83d7-675c27eb8c4d?syn-25a6b1a6=1", title: "The US has collected about USD 13bn of Venezuela's oil money. Where is it?", publisher: "Financial Times", date: 2026-07-22, tier: 3}
+      - {url: "https://www.internationaltradeinsights.com/2026/02/ofac-issues-general-license-authorizing-certain-activities-involving-venezuelan-oil/", title: "OFAC issues general license authorizing certain activities involving Venezuelan oil", publisher: "International Trade Insights", date: 2026-02, tier: 3}
+  - to: CUB
+    layer: dependency
+    type: energy_export
+    summary: "Venezuela was Cuba's largest oil supplier: about 26,500 bpd in 2025, roughly a third of the island's need, per a secondary analysis that is not audited; the shipments stopped in early 2026 (last cargo mid-December 2025 per the same reporting)."
+    since: 2000
+    until: 2026-01
+    last_verified: 2026-10-16
+    confidence: C
+    value: 26500
+    unit: bpd_crude_to_cuba_2025
+    sources:
+      - {url: "https://www.bnnbloomberg.ca/business/2026/01/13/clock-ticks-in-cuba-as-trump-cuts-off-venezuelan-oil", title: "Clock ticks in Cuba as Trump cuts off Venezuelan oil", publisher: "Bloomberg (via BNN)", date: 2026-01-13, tier: 3}
+      - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/01/13/clock-ticks-in-cuba-as-trump-cuts-off-venezuelan-oil", title: "Clock ticks in Cuba as Trump cuts off Venezuelan oil (Reuters, reprinted)", publisher: "Internazionale (Reuters)", date: 2026-01-13, tier: 3}
+  - to: CHN
+    layer: dependency
+    type: debt
+    summary: "China is a creditor of Venezuela for about USD 10-15bn in oil-linked loans, repaid through an account Beijing controls (S&P Global estimate, June 2026); the total external debt is put at USD 150-200bn by the market and up to about USD 240bn by the government's own acknowledgement. The lower end of the Chinese range is entered; the restructuring has no date."
+    since: 2026-06
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    value: 10
+    unit: usd_bn_owed_to_china_low_estimate
+    sources:
+      - {url: "https://oilnow.gy/featured/china-debt-seen-as-major-hurdle-in-venezuelas-bid-to-restructure-us150b-liabilities-sp-global/", title: "China debt seen as major hurdle in Venezuela's bid to restructure US$150B+ liabilities (S&P Global)", publisher: "OilNOW (citing S&P Global)", date: 2026-06, tier: 3}
+  # ---------- action ----------
+  - to: USA
+    layer: action
+    type: incident
+    summary: "The Caracas raid of 3 Jan 2026 (Operation Absolute Resolve, about 150 aircraft) seized President Maduro; 32 Cuban security personnel died in it, and the government that remained chose to deal with Washington rather than the opposition (second wave of strikes cancelled on 9 Jan). Mirror of the USA row, same sources."
+    since: 2026-01-03
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.defenseone.com/threats/2026/01/inside-absolute-resolve-regime-change-assault-venezuela/410440/", title: "How 'Absolute Resolve' harnessed 150 aircraft and more to launch a regime change in Venezuela", publisher: "Defense One", date: 2026-01-03, tier: 3}
+      - {url: "https://www.reuters.com/world/americas/trump-cancels-second-wave-attacks-venezuela-after-cooperation-2026-01-09/", title: "Trump cancels second wave of attacks on Venezuela after cooperation", publisher: "Reuters", date: 2026-01-09, tier: 3}
+  - to: CUB
+    layer: action
+    type: incident
+    summary: "Venezuela stopped its oil to Cuba in early 2026 as the US blockade and pressure closed the route; Trump wrote that 'there will be no more oil or money going to Cuba' and the executive order of 29 Jan 2026 authorised tariffs on any country selling oil to Cuba."
+    since: 2026-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: B
+    sources:
+      - {url: "https://www.bnnbloomberg.ca/business/2026/01/13/clock-ticks-in-cuba-as-trump-cuts-off-venezuelan-oil", title: "Clock ticks in Cuba as Trump cuts off Venezuelan oil", publisher: "Bloomberg (via BNN)", date: 2026-01-13, tier: 3}
+      - {url: "https://peopledaily.digital/news/trump-no-more-venezuelan-oil-or-money-to-cuba/amp", title: "Trump: No more Venezuelan oil or money to Cuba", publisher: "People Daily", date: 2026-01, tier: 3}

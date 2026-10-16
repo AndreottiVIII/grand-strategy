@@ -1,0 +1,106 @@
+from: COL
+relations:
+  - to: USA
+    layer: objective
+    type: influence_goal
+    summary: The new government wants Washington's backing for the drug war (aid, support for strikes on labs and boats, extraditions) and an end to the decertification that the Petro government received in Sept 2025.
+    since: 2026-08-07
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.gpb.org/news/2026/08/07/colombias-new-president-vows-remake-the-country-and-challenge-rebel-groups", title: "Colombia's new president vows to remake the country and challenge rebel groups", publisher: "GPB (AP)", date: 2026-08-07, tier: 3}
+      - {url: "https://www.intellinews.com/colombia-inaugurates-hardline-lawyer-abelardo-de-la-espriella-as-president-459765/", title: "Colombia inaugurates hardline lawyer Abelardo de la Espriella as president", publisher: "Intellinews", date: 2026-08, tier: 3}
+      - {url: "https://www.npr.org/2025/09/16/nx-s1-5543055/colombia-drugs-u-s-trump-petro", title: "US decertifies Colombia as ally in drugs fight", publisher: "NPR", date: 2025-09-16, tier: 3}
+  - to: USA
+    layer: alignment
+    type: membership
+    summary: The new government pledged to join the Shield of the Americas, the regional security bloc Trump leads, from its first day in office; a pledge at inauguration, not a treaty.
+    since: 2026-08-07
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.intellinews.com/colombia-inaugurates-hardline-lawyer-abelardo-de-la-espriella-as-president-459765/", title: "Colombia inaugurates hardline lawyer Abelardo de la Espriella as president", publisher: "Intellinews", date: 2026-08, tier: 3}
+      - {url: "https://www.gpb.org/news/2026/08/07/colombias-new-president-vows-remake-the-country-and-challenge-rebel-groups", title: "Colombia's new president vows to remake the country and challenge rebel groups", publisher: "GPB (AP)", date: 2026-08-07, tier: 3}
+  - to: ECU
+    layer: dependency
+    type: energy_export
+    summary: Colombian electricity to Ecuador covered about 8% of Ecuador's demand when it resumed on 5 Aug 2026 after a six-month suspension; Colombia sold more than USD 400 million to the Ecuadorian market in 2024-25; the interconnection carries up to 450 MW.
+    since: 2024
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    value: 8
+    unit: percent_of_ecuador_demand
+    note: Figures from the Colombian energy minister as reported on 5 Aug 2026; the USD 400 million figure is press reporting, not an official series.
+    sources:
+      - {url: "https://forbes.co/2026/08/05/economia-y-finanzas/colombia-reanuda-las-exportaciones-de-energia-hacia-ecuador/", title: "Colombia reanuda las exportaciones de energía hacia Ecuador", publisher: "Forbes Colombia", date: 2026-08-05, tier: 3, lang: es}
+      - {url: "https://www.vistazo.com/amp/actualidad/2026-07-22-colombia-reanudar-venta-energia-ecuador-guerra-comercial-HD11125244", title: "Colombia se prepara para reanudar la venta de energía a Ecuador tras dejar atrás la guerra comercial", publisher: "Vistazo", date: 2026-07-22, tier: 3, lang: es}
+  - to: ECU
+    layer: dependency
+    type: energy_export
+    summary: Colombian crude is shipped through Ecuador's SOTE pipeline; during the 2026 dispute Ecuador raised the transit fee on Colombian crude from 3 to 30 dollars a barrel, and kept it after the tariffs were lifted.
+    since: 2026-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    value: 30
+    unit: USD_per_barrel_sote_fee
+    note: The date is not shown in the search result; the year is taken from the context of the 2026 dispute. Fee figure from one Spanish-language report, to be corroborated against the SOTE tariff filing.
+    sources:
+      - {url: "https://www.ambito.com/mundo/efecto-donald-trump-ecuador-subio-900-la-tarifa-transporte-del-petroleo-colombia-n6239117", title: "Efecto Donald Trump: Ecuador subió 900% la tarifa de transporte del petróleo colombiano", publisher: "Ámbito", date: 2026, tier: 3, lang: es}
+      - {url: "https://www.elcomercio.com/actualidad/negocios/ecuador-elimina-aranceles-colombia/", title: "Ecuador elimina aranceles a Colombia", publisher: "El Comercio (Ecuador)", date: 2026-05-31, tier: 3, lang: es}
+  - to: USA
+    layer: action
+    type: sanction
+    summary: Retaliation by Petro to the 25% tariff threat over deportation flights: Colombia ordered higher import tariffs on US goods (Jan 2025), a counter-measure that the new government has not reversed in any source found.
+    since: 2025-01
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.cbsnews.com/amp/miami/news/south-florida-colombia-trump-reaction-tariffs-deportation-flights", title: "South Florida watches political fight evolve between Trump and Colombia's Petro over deportation flights", publisher: "CBS News Miami", date: 2025-01, tier: 3}
+  - to: USA
+    layer: action
+    type: incident
+    summary: Colombia recalled its ambassador from Washington after Trump announced higher tariffs and a halt to payments to Colombia over the strikes on boats (20 Oct 2025); the US chargé insisted the tariff decision was Trump's alone.
+    since: 2025-10-20
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://gvwire.com/2025/10/20/colombia-recalls-ambassador-from-us-amid-tariff-drug-spat/", title: "Colombia recalls ambassador from US amid tariff, drug spat", publisher: "GV Wire", date: 2025-10-20, tier: 3}
+      - {url: "https://www.bairdmaritime.com/security/incidents/piracy/colombia-us-envoys-meet-after-trumps-tariff-threat-over-drug-boats", title: "Colombia, US envoys meet after Trump's tariff threat over drug boats", publisher: "Baird Maritime", date: 2025-10, tier: 3}
+  - to: CHN
+    layer: action
+    type: agreement
+    summary: Colombia signed a Belt and Road cooperation pact with China on the margins of the China-CELAC forum in Beijing (14 May 2025); Petro called his letter of intent non-binding, the Chinese side reads it as a signed joint plan.
+    since: 2025-05-14
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.fortune.com/asia/2025/05/14/colombia-joins-beijing-belt-road-initiative-china-us-fight-control-latin-america", title: "Colombia joins Beijing's Belt and Road Initiative as China and US fight for control of Latin America", publisher: "Fortune", date: 2025-05-14, tier: 3}
+      - {url: "https://chinaglobalsouth.com/2025/05/07/colombia-moves-to-join-chinas-belt-and-road-2", title: "Colombia Moves to Join China's Belt and Road", publisher: "China Global South", date: 2025-05-07, tier: 3}
+  - to: ECU
+    layer: action
+    type: sanction
+    summary: Reciprocal tariffs on Ecuadorian goods and the electricity suspension of 22 Jan 2026, answering Ecuador's 30% security tariff on Colombian imports; Ecuador repealed its tariffs on 31 May 2026, and electricity exports resumed on 5 Aug 2026.
+    since: 2026-01-22
+    until: 2026-05-31
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://elmercurio.com.ec/principal/2026/01/22/ecuador-colombia-guerra-comercial-aranceles/", title: "Guerra comercial entre Ecuador y Colombia escala con aranceles recíprocos", publisher: "El Mercurio (Ecuador)", date: 2026-01-22, tier: 3, lang: es}
+      - {url: "https://www.eluniversal.com.co/colombia/2026/05/31/ecuador-elimina-oficialmente-los-aranceles-del-100-a-productos-colombianos/", title: "Ecuador elimina oficialmente los aranceles del 100% a productos colombianos", publisher: "El Universal (Colombia)", date: 2026-05-31, tier: 3, lang: es}
+  - to: VEN
+    layer: action
+    type: incident
+    summary: After the US strike on Caracas, Petro's government warned the ELN that if it did not leave Venezuelan territory, joint military action with Venezuela would follow (13 Jan 2026); the threat is aimed at the group, the joint action at Caracas.
+    since: 2026-01-13
+    until: null
+    last_verified: 2026-10-16
+    confidence: C
+    sources:
+      - {url: "https://www.vanguardia.com/colombia/2026/01/13/petro-advierte-al-eln-si-no-sale-de-venezuela-habra-acciones-militares-conjuntas/", title: "Petro warns the ELN: if it does not leave Venezuela there will be joint military action", publisher: "Vanguardia", date: 2026-01-13, tier: 3, lang: es}
