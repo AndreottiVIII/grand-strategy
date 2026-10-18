@@ -1,12 +1,15 @@
 # Journal
 
-## 2026-10-18 · Hinges: the tier between seam and buffer
+## 2026-10-18 · Hedging: the tier between seam and buffer
 
 Davide, reading the buffers (Australia rival Russia, "both partner / de facto"): an allied or de facto
 leg on one side is graver than a buffer. Split into three tiers: seam (both legs allied), **hinge**
 (one leg ally, reluctant ally or de facto, the other partner: it has chosen a side and keeps the door
-open, the quarrel turns on it) and buffer (both legs partner, allied with neither). The word is ours,
-not Luttwak's; the Roman buffer stays his. Same evidence rules; Seams page, ontology, Data page.
+open) and buffer (both legs partner, allied with neither). First called "hinge" (our word); Davide
+chose **hedging**, the literature's word for Australia between the US and China, which Luttwak
+describes in the China book without naming. Two cautions in the ontology: position, not intention;
+and hedging within an alliance, not the no-alignment hedging of the textbooks. Same evidence rules;
+Seams page, ontology, Data page.
 
 ## 2026-10-16 · The queue closes at 205 of 205; favicon, preview image, the egg
 

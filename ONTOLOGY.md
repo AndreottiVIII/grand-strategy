@@ -275,17 +275,21 @@ co-membership from the dataset) never makes a seam, or every NATO member would b
 between Cyprus and Turkey; provisional reciprocals (`reciprocal_of`) never count either. The
 list therefore grows only as cards are written on both sides of a rivalry.
 
-**Hinges and buffers** (buffers added 2026-10-16, Davide: "tracciamo anche chi e' partner di due
+**Hedging and buffers** (buffers added 2026-10-16, Davide: "tracciamo anche chi e' partner di due
 rivali"; split 2026-10-18, Davide: an allied leg on one side is graver than a buffer). Two lighter
 tiers under the seams, same hostile leg (A rival or adversary of X) and same evidence rules:
-- **hinge**: Y is allied with one of the two (ally, reluctant ally or de facto) and a partner (or
-  reluctant partner) of the other. It has chosen a side and keeps the door open; the quarrel turns
-  on it. Australia between the United States and China.
+- **hedging** (the hedger): Y is allied with one of the two (ally, reluctant ally or de facto) and a
+  partner (or reluctant partner) of the other. It has chosen a side and keeps the door open,
+  insurance against both outcomes. Australia between the United States and China. The word is the
+  literature's (Goh, Kuik), not Luttwak's, who describes the Australian case in the China book
+  without naming it. Two cautions, Davide 2026-10-18: the atlas sees the position, not the
+  intention; and hedging in the literature often means no full alignment, while here one side has
+  been chosen (hedging within an alliance).
 - **buffer**: Y is a partner (or reluctant partner) of both and the ally of neither. Luttwak's Roman
   grand strategy (the client-state system of the hegemonic empire) kept such states between the
   empire and its enemies on purpose.
-A triple already counted as a seam is neither; organisations are never hinges or buffers. Computed
-by `tools/build.py` (`hinges`, `buffers`), shown under the seams.
+A triple already counted as a seam is neither; organisations never hedge or buffer. Computed by
+`tools/build.py` (`hedges`, `buffers`), shown under the seams.
 
 ## Clients (added 2026-10-13)
 

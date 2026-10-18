@@ -471,8 +471,8 @@ def main():
         return None
     seam_keys = {(frozenset((s["a"], s["x"])), s["y"]) for s in seams}
     # Davide, 2026-10-18: an allied leg on one side is graver than a buffer. Three tiers: seam (both legs
-    # allied), hinge (one leg ally, reluctant ally or de facto, the other partner), buffer (both legs partner).
-    buffers, hinges, seen_b = [], [], set()
+    # allied), hedging (one leg ally, reluctant ally or de facto, the other partner: Davide 2026-10-18, the word of the literature), buffer (both legs partner).
+    buffers, hedges, seen_b = [], [], set()
     for (a, x), g in hand.items():
         if g not in SEAM_HOSTILE:
             continue
@@ -488,9 +488,9 @@ def main():
                 continue
             seen_b.add(key)
             row = {"a": a, "x": x, "y": y, "ax": g, "ay": lay, "xy": lxy}
-            (hinges if (aa or axy) else buffers).append(row)
+            (hedges if (aa or axy) else buffers).append(row)
     buffers.sort(key=lambda s: (s["y"], s["a"], s["x"]))
-    hinges.sort(key=lambda s: (s["y"], s["a"], s["x"]))
+    hedges.sort(key=lambda s: (s["y"], s["a"], s["x"]))
 
     # --- clients (Luttwak's client system): for every pair with both sides written (A or B), the
     # lean is how many steps higher A grades X than X grades A; only pairs where at least one side is
@@ -831,7 +831,7 @@ def main():
             {"name": "Weight: GDP, military spending, population", "publisher": "World Bank (military spending is SIPRI's series)", "rows": len(weight_ds.get("actors", {})), "date": weight_ds.get("source", {}).get("fetched"), "tier": 1, "tool": "tools/datasets/worldbank.py"},
             {"name": "Borders", "publisher": "Wikidata (P47 shares border with)", "rows": sum(len(v) for v in borders_ds.get("borders", {}).values()) // 2, "date": borders_ds.get("source", {}).get("fetched"), "tier": 2, "tool": "tools/datasets/borders.py"},
         ],
-        "derived": {"seams": len(seams), "hinges": len(hinges), "buffers": len(buffers), "clients": len(clients), "tepid": len(tepid), "faults": len(faults), "gatherings": len(gatherings),
+        "derived": {"seams": len(seams), "hedges": len(hedges), "buffers": len(buffers), "clients": len(clients), "tepid": len(tepid), "faults": len(faults), "gatherings": len(gatherings),
                     "flanks": len(flanks), "flanks_open": sum(r["open"] for r in flank_index), "levers": len(levers), "siege": len(siege), "theatres": len(theatres),
                     "currents": len(currents), "convergences": sum(len(v) for v in convergences.values()), "derived_allies": derived},
         "snapshots": [p.stem for p in sorted(SNAP.glob("*.json"))],
@@ -843,7 +843,7 @@ def main():
     out = {
         "generated": today.isoformat(),
         "theatres": theatres,
-        "seams": seams, "hinges": hinges, "buffers": buffers,
+        "seams": seams, "hedges": hedges, "buffers": buffers,
         "clients": clients, "tepid": tepid,
         "faults": faults,
         "gatherings": gatherings,
