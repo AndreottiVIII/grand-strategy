@@ -1,5 +1,13 @@
 # Journal
 
+## 2026-10-18 · Hinges: the tier between seam and buffer
+
+Davide, reading the buffers (Australia rival Russia, "both partner / de facto"): an allied or de facto
+leg on one side is graver than a buffer. Split into three tiers: seam (both legs allied), **hinge**
+(one leg ally, reluctant ally or de facto, the other partner: it has chosen a side and keeps the door
+open, the quarrel turns on it) and buffer (both legs partner, allied with neither). The word is ours,
+not Luttwak's; the Roman buffer stays his. Same evidence rules; Seams page, ontology, Data page.
+
 ## 2026-10-16 · The queue closes at 205 of 205; favicon, preview image, the egg
 
 The last five with the cheapest Haiku, on Davide's order: Bahamas, Antigua and Grenada written flash
