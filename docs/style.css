@@ -417,22 +417,6 @@ body.og .stage { width: 1200px; height: 630px; overflow: hidden; }
   .lever b { width: auto; margin-right: 8px; }
 }
 
-/* hot this week: the news heat beside the menu (GDELT, 2026-10-22) */
-.hot { flex: none; font-family: var(--font-ui); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; line-height: 1.5; min-width: 230px; align-self: flex-start; }
-.hot h4 { margin: 0 0 2px; font-weight: 400; font-size: 11px; color: var(--c-rival); text-shadow: 0 0 6px var(--c-rival); letter-spacing: .14em; }
-.hot h4 a { color: inherit; text-decoration: none; }
-.hot h4 span { color: var(--ink-3); margin-left: 6px; letter-spacing: .04em; text-shadow: none; }
-.hot .hrow { display: grid; grid-template-columns: 1fr auto auto; gap: 0 8px; color: var(--ink-2); text-decoration: none; }
-.hot .hrow:hover .n { color: var(--ink); }
-.hot .hrow .b { color: var(--c-rival); letter-spacing: 0; }
-.hot .hrow .x { color: var(--ink-3); min-width: 34px; text-align: right; }
-.hot .k { color: var(--ink-3); margin-top: 4px; }
-.hot .more { color: var(--accent); text-decoration: none; display: inline-block; margin-top: 3px; }
-.hot .cols { display: flex; flex-direction: column; }
-@media (max-width: 1180px) {
-  .top { flex-wrap: wrap; }
-  .hot { order: 5; width: 100%; min-width: 0; }
-  .hot .cols { flex-direction: row; gap: 28px; }
-  .hot .cols > div { flex: 1 1 0; min-width: 0; }
-}
-@media (max-width: 600px) { .hot .cols { flex-direction: column; gap: 4px; } }
+/* watch page: the ledger tables carry the bars */
+.page .ledger-t .bar { letter-spacing: .05em; }
+

@@ -331,8 +331,10 @@ before), **ratio** = week over baseline (smoothed), the conflict events and thei
 baseline, the conflict share, the mean Goldstein score. Two ranks: **surging** (ratio, among actors
 with at least 150 events) and **burning** (conflict share times conflict ratio, same floor, share at
 least 30%). Never a judgement: attention of English-language and major-language media, not truth;
-the francophone Sahel and the Pacific read quiet for lack of coverage. Shown beside the menu ("Hot
-this week") and as the `#/heat` lens on the home map (fill by ratio, four bins from 1.25x). Raw
+the francophone Sahel and the Pacific read quiet for lack of coverage. Shown on the **Watch** page (Davide, 2026-10-22: a menu entry, not a block in the header; the
+name from Luttwak's second Byzantine rule, "monitor his movements continuously", and the Bureau of
+Barbarians named in the text) with the surging, the burning and the loud, and as the `#/heat` lens
+on the home map (fill by ratio, four bins from 1.25x). Raw
 zips cached in `data/datasets/gdelt/raw/`, ignored by git. Its use in the update cycle: the scan
 starts from the hot countries instead of searching blind.
 

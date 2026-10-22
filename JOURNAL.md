@@ -5,8 +5,10 @@
 Davide asked how a short weekly update would run without bleeding tokens, then whether the countries
 that made the headlines could be seen without spending. Answer: GDELT, one zip a day, a program, zero
 model tokens. `tools/datasets/gdelt.py` counts the week's events per country against the country's
-own four-week average (surging) and the conflict events against their normal (burning); a block
-beside the menu lists the top five of each, a lens on the home map colours the surge. First week
+own four-week average (surging) and the conflict events against their normal (burning); first a block
+beside the menu (Davide: too much space), then the **Watch** page, named after the second Byzantine
+rule, with surging, burning and loud and the method open on the page; a lens on the home map colours
+the surge. First week
 (15-21 Oct): Tajikistan, the Vatican, Uzbekistan, Albania, Norway surging; the loud (US, UK, Russia,
 Ukraine) are not on top, by design. Limits written in the ontology: attention, not truth.
 The weekly update agreed in principle (Davide: "1 e 2 ci sta"): datasets free, twelve Haiku regional

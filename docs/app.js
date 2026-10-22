@@ -118,6 +118,7 @@ const STAMP = ((document.querySelector('script[src^="app.js"]') || {}).src || ""
     else if (kind === "flanks") setView("flanks");
     else if (kind === "levers") setView("levers");
     else if (kind === "data") setView("data");
+    else if (kind === "watch") setView("watch");
     else if (kind === "this-site") setView("site");
     else if (kind === "about") setView("about");
     else if (kind === "colophon") { setView("site"); const c = document.getElementById("colophon"); if (c) c.scrollIntoView(); return; }
@@ -140,7 +141,7 @@ const STAMP = ((document.querySelector('script[src^="app.js"]') || {}).src || ""
   orgSel.onchange = () => { orgSel.value ? showOrg(orgSel.value) : goHome(); };
   issueSel.onchange = () => { issueSel.value ? showIssue(issueSel.value) : goHome(); };
   document.querySelectorAll(".tab").forEach(b => b.onclick = () => b.dataset.view === "dossier" ? showDossier(pov || fullActors[0].id) : (pov ? setPov(pov) : goHome()));
-  const PAGE_HASH = { map: "#/", orgs: "#/organisations", issues: "#/issues", luttwak: "#/luttwak", seams: "#/seams", clients: "#/clients", faults: "#/faults", gatherings: "#/gatherings", currents: "#/currents", theatres: "#/theatres", flanks: "#/flanks", levers: "#/levers", about: "#/about", data: "#/data", site: "#/this-site", colophon: "#/colophon" };
+  const PAGE_HASH = { map: "#/", orgs: "#/organisations", issues: "#/issues", luttwak: "#/luttwak", seams: "#/seams", clients: "#/clients", faults: "#/faults", gatherings: "#/gatherings", currents: "#/currents", theatres: "#/theatres", flanks: "#/flanks", levers: "#/levers", watch: "#/watch", about: "#/about", data: "#/data", site: "#/this-site", colophon: "#/colophon" };
   document.querySelectorAll("#topnav a").forEach(a => { a.href = PAGE_HASH[a.dataset.page]; a.onclick = ev => { ev.preventDefault(); navigate(PAGE_HASH[a.dataset.page]); }; });
   document.getElementById("home").onclick = ev => { ev.preventDefault(); goHome(); };
   function setView(v, render = true) {
@@ -148,7 +149,7 @@ const STAMP = ((document.querySelector('script[src^="app.js"]') || {}).src || ""
     document.querySelectorAll(".tab").forEach(b => b.classList.toggle("is-on", b.dataset.view === v));
     document.querySelectorAll("#topnav a").forEach(a => a.classList.toggle("is-on", a.dataset.page === v || (a.dataset.page === "map" && (v === "map" || v === "dossier"))));
     document.querySelectorAll(".view").forEach(s => s.classList.toggle("is-on", s.id === "view-" + v));
-    const isPage = ["orgs", "issues", "luttwak", "seams", "clients", "faults", "gatherings", "currents", "theatres", "flanks", "levers", "about", "data", "site"].includes(v);
+    const isPage = ["orgs", "issues", "luttwak", "seams", "clients", "faults", "gatherings", "currents", "theatres", "flanks", "levers", "watch", "about", "data", "site"].includes(v);
     document.querySelector(".side").style.display = isPage ? "none" : "";
     document.querySelector(".frame").classList.toggle("is-page", isPage);
     if (v === "orgs") renderOrgsPage();
@@ -163,6 +164,7 @@ const STAMP = ((document.querySelector('script[src^="app.js"]') || {}).src || ""
     if (v === "flanks") renderFlanksPage();
     if (v === "levers") renderLeversPage();
     if (v === "data") renderDataPage();
+    if (v === "watch") renderWatchPage();
     if (v === "site") renderSitePage();
     if (v === "about") renderAboutPage();
     if (!render) return;
@@ -886,7 +888,7 @@ const STAMP = ((document.querySelector('script[src^="app.js"]') || {}).src || ""
       <h3>Posture and bond</h3>
       <p>How one actor sees another is recorded on two axes. The <b>posture</b> is the relationship today, on a closed scale: own territory, claimed but not controlled, ally, reluctant ally, partner, reluctant partner, neutral, rival, adversary. "Adversary" is kept for mortal enemies, where the other's existence or regime is the problem; nearly all bad relationships are rivalries. The grade follows the structural position, never the rhetoric of a communiqué: two members of the same alliance with open friction are reluctant allies, not rivals. The <b>bond</b> is what lies under the posture and would survive a change of government: kin, affinity, none, or grievance. On the map the posture is the colour of the outline and of the light inside a country; the bond is a band inside the border; a dashed band marks a partner aligned with the actor as a bloc, without a treaty.</p>
       <h3>Relations</h3>
-      <p>Under the postures sit the relation rows, in four layers: <b>objectives</b> (what an actor wants from another), <b>alignments</b> (treaties, memberships, recognitions), <b>dependencies</b> (energy, trade, debt, arms, remittances, with numbers) and <b>actions</b> (dated events: votes, sanctions, visits, exercises). The datasets are the floor: memberships from Wikidata and official lists, recognition tables from Wikipedia with their citations, every recorded vote of the UN General Assembly since 2022 from the UN Digital Library. The cards are the reading on top of that floor. A lighter floor still is the <b>news heat</b>: every week the events GDELT codes from the world's news are counted per country and set against the country's own four-week average, shown beside the menu and as a lens on the home map; attention, not truth, and a pointer for where the next update should look.</p>
+      <p>Under the postures sit the relation rows, in four layers: <b>objectives</b> (what an actor wants from another), <b>alignments</b> (treaties, memberships, recognitions), <b>dependencies</b> (energy, trade, debt, arms, remittances, with numbers) and <b>actions</b> (dated events: votes, sanctions, visits, exercises). The datasets are the floor: memberships from Wikidata and official lists, recognition tables from Wikipedia with their citations, every recorded vote of the UN General Assembly since 2022 from the UN Digital Library. The cards are the reading on top of that floor. A lighter floor still is the <b>Watch</b>: every week the events GDELT codes from the world's news are counted per country and set against the country's own four-week average, Luttwak's Byzantine rule of monitoring the other continuously; attention, not truth, kept apart from the cards, and a pointer for where the next update should look.</p>
       <h3>Seams</h3>
       <p>A <b>seam</b> is an actor pulled two ways: an ally of two actors that are rivals or adversaries of each other. Greece between Israel and Turkey, the United States between Saudi Arabia and the Emirates, Italy between Hungary and Ukraine. The word is Luttwak's. In <i>Strategy</i> he describes <b>relational manoeuvre</b> as the style that aims not at the enemy's strength but at his specific weaknesses, his doctrine, his habits and the <i>seams</i> between him and his allies, where a small force can obtain a large effect. The Byzantine book shows the same idea at the scale of an empire that survived a thousand years by dividing its enemies rather than destroying them. The Seams page lists every such triangle the atlas can see; the map marks them for the actor you are looking at. They are computed from hand-written postures of confidence A or B only. Under the seams sit two lighter tiers. The <b>hedger</b> is allied with one of two rivals and a partner of the other: it has chosen a side and keeps the door open, insurance against both outcomes. The <b>buffer</b> is the partner of both and the ally of neither, the state that belongs to neither and deals with both, which Rome kept on purpose between itself and its enemies; the buffer profits from the quarrel until it is forced to choose.</p>
       <h3>Clients</h3>
@@ -971,6 +973,37 @@ const STAMP = ((document.querySelector('script[src^="app.js"]') || {}).src || ""
     eggBuf = (eggBuf + ev.key.toLowerCase()).slice(-7);
     if (eggBuf === "luttwak" && !eggEl.classList.contains("is-on")) eggShow();
   });
+  // ---------- watch: the week's news heat as a page (Davide, 2026-10-22: a Luttwakian entry in the menu, the method inside)
+  function renderWatchPage() {
+    const el = document.getElementById("page-watch");
+    if (!NEWS) { el.innerHTML = `<h2>Watch</h2><p class="empty">No news heat in this build.</p>`; return; }
+    const rows = Object.entries(NEWS.actors);
+    const bar = (v, max) => "▮".repeat(Math.max(1, Math.min(10, Math.round(v / max * 10))));
+    const surging = rows.filter(([, r]) => r.hot_rank).sort((p, q) => p[1].hot_rank - q[1].hot_rank).slice(0, 15);
+    const burning = rows.filter(([, r]) => r.burn_rank).sort((p, q) => p[1].burn_rank - q[1].burn_rank).slice(0, 15);
+    const loud = rows.filter(([, r]) => r.loud_rank).sort((p, q) => p[1].loud_rank - q[1].loud_rank).slice(0, 10);
+    const n = x => Number(x || 0).toLocaleString("en-GB");
+    const sRow = ([id, r]) => `<tr><td class="name"><a href="#/view/${id}">${nameOf(id)}</a></td><td><span class="bar" style="color:var(--c-rival)">${bar(r.ratio, surging[0][1].ratio)}</span></td><td class="n"><b>×${r.ratio.toFixed(1)}</b></td><td class="n">${n(r.events)} <span class="tr">vs ${n(Math.round(r.baseline))}</span></td><td class="n">${Math.round((r.conflict_share || 0) * 100)}%</td></tr>`;
+    const bRow = ([id, r]) => `<tr><td class="name"><a href="#/view/${id}">${nameOf(id)}</a></td><td><span class="bar" style="color:var(--c-rival)">${bar(r.conflict_ratio, burning[0][1].conflict_ratio)}</span></td><td class="n"><b>×${r.conflict_ratio.toFixed(1)}</b></td><td class="n">${n(r.conflict)} <span class="tr">of ${n(r.events)}</span></td><td class="n">${Math.round((r.conflict_share || 0) * 100)}%</td></tr>`;
+    const lRow = ([id, r]) => `<tr><td class="name"><a href="#/view/${id}">${nameOf(id)}</a></td><td class="n">${n(r.articles)}</td><td class="n">${n(r.events)}</td><td class="n">×${r.ratio.toFixed(1)}</td></tr>`;
+    el.innerHTML = `<h2>Watch</h2>
+      <p class="lede">Luttwak's second rule for Byzantium, in <i>The Grand Strategy of the Byzantine Empire</i>: gather intelligence on the other and his mentality, and monitor his movements continuously. Constantinople kept an office for it, the Bureau of Barbarians, which read every envoy and every rumour from beyond the border. This page is the atlas's monitor: every week, the events that GDELT codes from the world's news are counted per country and set against the country's own four-week average. A country is <b>surging</b> when it makes a multiple of its normal, whatever its size; it is <b>burning</b> when the conflict in its news runs above its normal. The loud, who make the most news every week, are listed apart so they do not hide the rest.</p>
+      <p class="how">Week ${fmtDay(NEWS.week.from)} to ${fmtDay(NEWS.week.to)}, taken on ${esc(NEWS.fetched)}. <a href="#/heat">See it on the map</a>.</p>
+      <div class="cols2">
+      <div><h3 class="sec">Surging · news against its own normal</h3>
+      <table class="ledger-t"><thead><tr><th>Actor</th><th></th><th>Ratio</th><th>Events vs normal</th><th>Conflict</th></tr></thead><tbody>${surging.map(sRow).join("")}</tbody></table></div>
+      <div><h3 class="sec">Burning · conflict against its normal</h3>
+      <table class="ledger-t"><thead><tr><th>Actor</th><th></th><th>Ratio</th><th>Conflict events</th><th>Share</th></tr></thead><tbody>${burning.map(bRow).join("")}</tbody></table></div>
+      </div>
+      <h3 class="sec">Loud · the most news in absolute terms</h3>
+      <table class="ledger-t"><thead><tr><th>Actor</th><th>Articles</th><th>Events</th><th>Against its normal</th></tr></thead><tbody>${loud.map(lRow).join("")}</tbody></table>
+      <details class="method" open><summary>How the watch works</summary>
+      <p>The source is the <b>GDELT Project</b>, which has coded the world's news into events since 1979: for every event the two actors with their country codes, the kind of act on a scale from cooperation to conflict, and the number of articles that carried it. The atlas downloads one file a day, the last seven days plus four weeks before them, and counts for every country the events it was party to.</p>
+      <p><b>Surging</b> is the week's events divided by the country's own mean week over the four weeks before, smoothed so that very small counts do not explode; only countries with at least 150 events in the week are ranked. <b>Burning</b> takes the conflict events alone (verbal and material conflict, GDELT's classes 3 and 4), divides them by the country's normal conflict, and multiplies by the share of conflict in the week's news; same floor, and a share of at least 30%. <b>Loud</b> is the plain count of articles. Each country is set against itself, so the United States, which makes a tenth of the world's coded news every week, is loud but seldom surging.</p>
+      <p>What it is not: it measures the attention of English-language and major-language media, not what happened. A hurricane and a coup read alike until the conflict share tells them apart; the francophone Sahel and the Pacific read quiet for lack of coverage; a surge may be a summit or a scandal. It is a pointer, kept apart from the cards: the weekly update starts its searches from the surging and the burning, and nothing enters a card from here without a source read by a person. Nothing on this page is a reading of the atlas.</p></details>`;
+    el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
+  }
+
   function tipFor(id, fallbackName, ev) {
     const a = actors[id], name = a ? a.name : fallbackName;
     if (id === pov) return showTip(`<b>${esc(name)}</b><span class="k">Point of view</span>`, ev);
@@ -1123,21 +1156,6 @@ const STAMP = ((document.querySelector('script[src^="app.js"]') || {}).src || ""
       (!out.length && !inn.length ? `<p class="empty">No relation rows yet.</p>` : "");
   }
 
-  // hot this week, beside the menu: surging = most above its own normal; burning = where the news is conflict
-  (function renderHot() {
-    const el = document.getElementById("hot");
-    if (!el || !NEWS) return;
-    const rows = Object.entries(NEWS.actors);
-    const surging = rows.filter(([, r]) => r.hot_rank).sort((p, q) => p[1].hot_rank - q[1].hot_rank).slice(0, 5);
-    const burning = rows.filter(([, r]) => r.burn_rank).sort((p, q) => p[1].burn_rank - q[1].burn_rank).slice(0, 5);
-    const bar = v => "▮".repeat(Math.max(1, Math.min(8, Math.round(v * 2))));
-    const row = ([id, r], v) => `<a class="hrow" href="#/view/${id}"><span class="n">${nameOf(id)}</span><span class="b">${bar(v)}</span><span class="x">×${v.toFixed(1)}</span></a>`;
-    el.innerHTML = `<h4><a href="#/heat">Hot this week</a><span>${fmtDay(NEWS.week.from)} to ${fmtDay(NEWS.week.to)}</span></h4><div class="cols">` +
-      `<div><div class="k">surging · news against its own normal</div>${surging.map(x => row(x, x[1].ratio)).join("")}</div>` +
-      `<div><div class="k">burning · conflict against its normal</div>${burning.map(x => row(x, x[1].conflict_ratio)).join("")}</div></div>` +
-      `<a class="more" href="#/heat">on the map</a>`;
-    el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
-  })();
   window.addEventListener("resize", () => { if (view === "map") drawMap(); });
   apply(location.hash);
 })();
