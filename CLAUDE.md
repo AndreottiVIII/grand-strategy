@@ -141,10 +141,15 @@ no cron, no scheduled wake-up, no agent launched on a date). When he does, the c
    build's `changes` since the last snapshot say what moved.
 2. **Watch dates**: the build warns about `watch` dates that have passed (elections, mandates,
    rulings written in the cards); those cards go first.
-3. **Regional scan, Haiku**: one agent per region reads two months of headlines (about 5 searches)
-   and lists the cards touched by events, one line each. No writing.
-4. **Delta pass**: only the cards listed, Sonnet for protagonists and Haiku for minors: add dated
-   rows with sources, move a trend or a grade when a source says so, never rewrite. Mirrors are
-   never touched. Review, reciprocate, build, commit, push, as always.
-5. **Token cap** fixed by Davide before the cycle starts (default 6M); stop when reached.
+3. **News heat, free**: `python tools/datasets/gdelt.py` (the week's events per country against its
+   own four-week normal) says where to look; it feeds the briefs and the "Hot this week" block.
+4. **Scan, Haiku, ten groups** (`python tools/scan_briefs.py` writes the briefs, 4-5 agents at a time,
+   5 searches each, about 40k tokens each): they write candidate rows to `data/inbox/<week>-<group>.yaml`,
+   never to the cards. The build ignores `data/inbox`.
+5. **Triage by hand**: `python tools/inbox.py list <week>` (validated, duplicates flagged); Davide sees the
+   list; `python tools/inbox.py apply <week> --accept=...` appends the accepted rows to the cards. Grade
+   and trend changes only by hand, with the note rewritten; `proposes` in the inbox is a hint, never applied.
+6. Then reciprocate, build, commit, push; a journal entry with rows and tokens. Light tier about
+   0.8-1M tokens a week; the delta pass per card (Sonnet for protagonists) only on Davide's call.
+7. **Token cap** fixed by Davide before the cycle starts; stop when reached.
 Between cycles, single news items go in as one dated row each ("nota alla scheda").
