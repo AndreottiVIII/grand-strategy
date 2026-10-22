@@ -14,6 +14,8 @@
 - 2026-10-16 · **Safety net.** No tests, no CI: a GitHub Action that runs tools/build.py on every push and a JavaScript syntax check (a stray parenthesis went live on 16 Oct). Davide: later.
 - 2026-10-16 · **Build constants.** The thresholds of every computed page (five members, 60% formed, twelve shown, 6° radius, 50% readby...) sit inside a 700-line main(); gather them in one block at the top.
 - 2026-10-16 · **Menu.** Thirteen entries on four rows; the ten reading pages could sit under one entry.
+- 2026-10-22 · **Vocabulary gaps seen by the W43 scans**: a `talks` action (a negotiation round with no outcome, Israel-Lebanon in Tampa), domestic turns with a foreign bearing (an election, a government change, an arrest warrant) that have no counterpart row, an envoy's meeting that is not a `visit`. Decide whether to widen `action` or keep them in the card text.
+- 2026-10-22 · **Stance moves suggested by the week, for the hand**: Hungary-Ukraine (Magyar-Zelenskyy reset, objection to accession talks lifted), Colombia-Israel (embassy in Jerusalem, FTA restored), eastern Libya-Turkey (2019 maritime deal approved), Egypt-Saudi (declared defence commitment). Rows are in; grades and trends only after reading the cards.
 Ideas and deferred steps, with the date they were parked. Davide: "keep them in mind,
 like every improving idea that comes to you".
 

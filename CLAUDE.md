@@ -143,9 +143,12 @@ no cron, no scheduled wake-up, no agent launched on a date). When he does, the c
    rulings written in the cards); those cards go first.
 3. **News heat, free**: `python tools/datasets/gdelt.py` (the week's events per country against its
    own four-week normal) says where to look; it feeds the briefs and the "Hot this week" block.
-4. **Scan, Haiku, ten groups** (`python tools/scan_briefs.py` writes the briefs, 4-5 agents at a time,
-   5 searches each, about 40k tokens each): they write candidate rows to `data/inbox/<week>-<group>.yaml`,
-   never to the cards. The build ignores `data/inbox`.
+4. **Portal pass, Haiku, two agents** (`tools/brief_portal.md`): they read the English Wikipedia
+   Portal:Current events page of each day in the window through the API (dated events, each with its
+   news citation) and write candidate rows to `data/inbox/<week>-portal-<days>.yaml`, never to the cards.
+   The build ignores `data/inbox`. Measured on W43: 41 rows for about 260k tokens. The blind regional
+   scans (`tools/scan_briefs.py`, 5 searches per group) gave 4 rows for 420k: use them only for a region
+   the portal under-covers, on Davide's word.
 5. **Triage by hand**: `python tools/inbox.py list <week>` (validated, duplicates flagged); Davide sees the
    list; `python tools/inbox.py apply <week> --accept=...` appends the accepted rows to the cards. Grade
    and trend changes only by hand, with the note rewritten; `proposes` in the inbox is a hint, never applied.

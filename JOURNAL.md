@@ -1,5 +1,19 @@
 # Journal
 
+## 2026-10-22 · First weekly update (W43): the blind scan fails, the portal pass works
+
+Davide: start the round now, publish whatever survives. First wave, five Haiku regional scans with 5 web
+searches each (about 420k tokens): 4 rows, three groups at zero (search summaries, 403s, events outside
+the eight-day window). Second wave, changed on the spot: two Haiku agents reading the English Wikipedia
+Portal:Current events page of each day (14-22 Oct) through the API, each event with its news citation,
+about 260k tokens: 41 rows, 39 accepted (the unattributed Hormuz sinkings refused; one duplicate), among
+them the Houthi strikes on Aden's palace and Riyadh, the Kyiv power station, the Magyar-Zelenskyy reset,
+Colombia's embassy in Jerusalem, the Badr defence MoU, eastern Libya's approval of the Turkey maritime
+deal, Andorra and San Marino's EU association, Vietnam-EFTA. Rows only; stance moves listed in BACKLOG
+for the hand. Lessons: the portal is the feed, the heat is the pointer, the blind scan is for gaps; the
+inbox tool must respect each file's indentation (Albania's rows are indented, the first append broke
+the build before it was pushed). Tokens for the week: about 0.7M. CLAUDE.md cycle rewritten.
+
 ## 2026-10-22 · News heat from GDELT, and the shape of the weekly update
 
 Davide asked how a short weekly update would run without bleeding tokens, then whether the countries
