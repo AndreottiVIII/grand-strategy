@@ -420,3 +420,9 @@ body.og .stage { width: 1200px; height: 630px; overflow: hidden; }
 /* watch page: the ledger tables carry the bars */
 .page .ledger-t .bar { letter-spacing: .05em; }
 
+
+/* language toggle (2026-10-22) */
+.lang { flex: none; align-self: flex-start; font-family: var(--font-ui); font-size: 11px; letter-spacing: .14em; margin-left: 12px; }
+.lang a { color: var(--ink-3); text-decoration: none; padding: 0 2px; }
+.lang a.is-on { color: var(--ink); text-shadow: 0 0 6px var(--accent); }
+.lang span { color: var(--rule); margin: 0 2px; }

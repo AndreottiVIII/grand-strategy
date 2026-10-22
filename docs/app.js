@@ -3,13 +3,49 @@
    screen, relations as arrows by layer) and the dossier with footnoted sources. */
 // cache key: the ?v= stamp the build writes into index.html for this script (same stamp, same data)
 const STAMP = ((document.querySelector('script[src^="app.js"]') || {}).src || "").split("v=")[1] || "0";
+// language (2026-10-22): ?lang=it sets it and the browser remembers it; English is the truth, Italian a lookup
+const LANG = (() => { try { const q = new URLSearchParams(location.search).get("lang"); if (q) localStorage.setItem("lang", q); return localStorage.getItem("lang") || "en"; } catch (e) { return "en"; } })();
 (async function () {
   const stamp = document.querySelector('script[src^="app.js"]').src.split("?")[1];
-  const [data, world, iso2] = await Promise.all([
+  const [data, world, iso2, i18n] = await Promise.all([
     fetch("data.json?v=" + STAMP).then(r => r.json()),   // the build's stamp: the browser keeps the JSON until the next publish
     fetch("world.geojson").then(r => r.json()),
     fetch("iso2.json").then(r => r.json()),
+    LANG === "en" ? Promise.resolve(null) : fetch(`i18n/${LANG}.json?v=` + STAMP).then(r => r.ok ? r.json() : null).catch(() => null),
   ]);
+  // ---------- translation layer: every text goes through T(); a text is found by its fingerprint (tools/i18n.py)
+  const I18N = i18n || { t: {}, names: {} };
+  const h = s => { let x = 0x811c9dc5; for (const b of new TextEncoder().encode(String(s))) { x ^= b; x = Math.imul(x, 0x01000193) >>> 0; } return x.toString(16).padStart(8, "0"); };
+  const T = s => { if (LANG === "en" || s === null || s === undefined || s === "") return s; const k = I18N.t[h(String(s).trim())]; return k === undefined ? s : k; };
+  if (LANG !== "en") data.actors.forEach(a => { if (I18N.names[a.id]) { a.name_en = a.name; a.name = I18N.names[a.id]; } });
+  // the site's own strings: rendered elements are matched by their English markup with numbers blanked, so one key serves every count
+  const UI_SEL = "p, h1, h2, h3, h4, li, th, summary, button, label, option, i, .row, .tag, .stamp, .lbl, .k, .hint, .src, .more, figcaption";
+  const NUM = /\d[\d,.]*%?/g;
+  const escRe = x => x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const NAMES = [...new Set(data.actors.flatMap(a => [a.name_en || a.name, a.name, a.short].filter(Boolean)))].sort((p, q) => q.length - p.length);
+  const NAME_RE = new RegExp("\\b(?:" + NAMES.map(escRe).join("|") + ")\\b", "g");
+  const HREF = /#\/(?:view|dossier|organisation|issue)\/[A-Za-z0-9_-]+/g;   // links to actors carry their id: a placeholder too
+  const TOKEN = /\u27e8[nah]\u27e9/g;
+  const uiKey = html => html.replace(HREF, "\u27e8h\u27e9").replace(NUM, "\u27e8n\u27e9").replace(NAME_RE, "\u27e8a\u27e9").replace(/\s+/g, " ").trim();
+  function translateDom(root) {
+    if (LANG === "en" || !root || !root.querySelectorAll) return;
+    const els = [root, ...root.querySelectorAll(UI_SEL)];
+    for (const el of els) {
+      if (!el.matches || !el.matches(UI_SEL) || el.dataset.i18n) continue;
+      const html = el.innerHTML.trim();
+      if (!html || html.length > 4000) continue;
+      const it = I18N.t[h(uiKey(html))];
+      if (!it) continue;
+      const vals = [];   // numbers and names in order of appearance, put back into the translation's placeholders
+      html.replace(new RegExp(HREF.source + "|" + NUM.source + "|" + NAME_RE.source, "g"), m => { vals.push(m); return m; });
+      let i = 0;
+      el.innerHTML = it.replace(TOKEN, () => vals[i++] ?? "");
+      el.dataset.i18n = "1";
+    }
+  }
+  window.__i18nKeys = () => [...new Set([...document.querySelectorAll(UI_SEL)].map(el => el.innerHTML.trim()).filter(x => x && x.length <= 4000 && !/^\d[\d,.]*%?$/.test(x)).map(uiKey))];
+  if (LANG !== "en") new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(n => { if (n.nodeType === 1) translateDom(n); }))).observe(document.body, { childList: true, subtree: true });
+  document.querySelectorAll("#lang a").forEach(a => { a.classList.toggle("is-on", a.dataset.lang === LANG); a.onclick = ev => { ev.preventDefault(); try { localStorage.setItem("lang", a.dataset.lang); } catch (e) {} location.search = "?lang=" + a.dataset.lang; }; });
 
   const GRADE_LABEL = {
     own_territory: "Own territory", claimed_territory: "Claimed, not controlled", ally: "Ally",
@@ -974,9 +1010,10 @@ const STAMP = ((document.querySelector('script[src^="app.js"]') || {}).src || ""
     if (eggBuf === "luttwak" && !eggEl.classList.contains("is-on")) eggShow();
   });
   // ---------- watch: the week's news heat as a page (Davide, 2026-10-22: a Luttwakian entry in the menu, the method inside)
+  const CW = data.changes_week || { since: null, grades: [], trends: [] }, RM = data.recent_moves || [];
   function renderWatchPage() {
     const el = document.getElementById("page-watch");
-    if (!NEWS) { el.innerHTML = `<h2>Watch</h2><p class="empty">No news heat in this build.</p>`; return; }
+    if (!NEWS) { el.innerHTML = `<h2>Watch</h2><p class="empty">No news heat in this build.</p>`; return; }   // the moves below need the heat too, for now
     const rows = Object.entries(NEWS.actors);
     const bar = (v, max) => "▮".repeat(Math.max(1, Math.min(10, Math.round(v / max * 10))));
     const surging = rows.filter(([, r]) => r.hot_rank).sort((p, q) => p[1].hot_rank - q[1].hot_rank).slice(0, 15);
@@ -997,6 +1034,12 @@ const STAMP = ((document.querySelector('script[src^="app.js"]') || {}).src || ""
       </div>
       <h3 class="sec">Loud · the most news in absolute terms</h3>
       <table class="ledger-t"><thead><tr><th>Actor</th><th>Articles</th><th>Events</th><th>Against its normal</th></tr></thead><tbody>${loud.map(lRow).join("")}</tbody></table>
+      <h3 class="sec">Postures moved · since ${CW.since ? esc(CW.since) : "the first snapshot"}</h3>
+      <p class="how">The atlas's own movement, not the news: every grade and every trend the cards changed since the snapshot of ${CW.since ? esc(CW.since) : "the start"}${CW.new ? ` (${CW.new} readings were written new in the same span and are not moves)` : ""}, and the readings written or verified in the last fourteen days that are warming or cooling, the heaviest pairs first.</p>
+      ${CW.grades.length ? `<table class="ledger-t"><thead><tr><th>Actor</th><th>Toward</th><th>From</th><th>To</th></tr></thead><tbody>${CW.grades.map(c => `<tr><td class="name"><a href="#/view/${c.a}">${nameOf(c.a)}</a></td><td class="name"><a href="#/view/${c.x}">${nameOf(c.x)}</a></td><td><i style="color:${c.from ? gradeBorder(c.from) : "var(--ink-3)"}">${c.from ? c.from.replace("_", " ") : "new"}</i></td><td><i style="color:${gradeBorder(c.to)}">${c.to.replace("_", " ")}</i></td></tr>`).join("")}</tbody></table>` : `<p class="empty">No grade changed.</p>`}
+      ${CW.trends.length ? `<h3 class="sec">Trends moved</h3><table class="ledger-t"><thead><tr><th>Actor</th><th>Toward</th><th>From</th><th>To</th></tr></thead><tbody>${CW.trends.map(c => `<tr><td class="name"><a href="#/view/${c.a}">${nameOf(c.a)}</a></td><td class="name"><a href="#/view/${c.x}">${nameOf(c.x)}</a></td><td>${esc(c.from)}</td><td><b>${esc(c.to)}</b></td></tr>`).join("")}</tbody></table>` : ""}
+      <h3 class="sec">Warming or cooling, read in the last fourteen days${RM.length ? ` <span class="tr">· ${RM.length}, the forty heaviest shown</span>` : ""}</h3>
+      ${RM.length ? `<table class="ledger-t"><thead><tr><th>Actor</th><th>Toward</th><th>Grade</th><th>Trend</th><th>Read on</th><th>Why</th></tr></thead><tbody>${RM.slice(0, 40).map(r => `<tr><td class="name"><a href="#/view/${r.a}">${nameOf(r.a)}</a></td><td class="name"><a href="#/view/${r.x}">${nameOf(r.x)}</a></td><td><i style="color:${gradeBorder(r.grade)}">${r.grade.replace("_", " ")}</i></td><td class="${r.trend}">${r.trend === "warming" ? "↗" : "↘"} ${esc(r.trend)}</td><td class="n">${esc(r.last_verified)}</td><td><div class="why">${esc(r.note || "")}</div></td></tr>`).join("")}</tbody></table>` : `<p class="empty">None in the last fourteen days.</p>`}
       <details class="method" open><summary>How the watch works</summary>
       <p>The source is the <b>GDELT Project</b>, which has coded the world's news into events since 1979: for every event the two actors with their country codes, the kind of act on a scale from cooperation to conflict, and the number of articles that carried it. The atlas downloads one file a day, the last seven days plus four weeks before them, and counts for every country the events it was party to.</p>
       <p><b>Surging</b> is the week's events divided by the country's own mean week over the four weeks before, smoothed so that very small counts do not explode; only countries with at least 150 events in the week are ranked. <b>Burning</b> takes the conflict events alone (verbal and material conflict, GDELT's classes 3 and 4), divides them by the country's normal conflict, and multiplies by the share of conflict in the week's news; same floor, and a share of at least 30%. <b>Loud</b> is the plain count of articles. Each country is set against itself, so the United States, which makes a tenth of the world's coded news every week, is loud but seldom surging.</p>
@@ -1047,7 +1090,7 @@ const STAMP = ((document.querySelector('script[src^="app.js"]') || {}).src || ""
   }
 
   // ---------- dossier with footnotes
-  const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const esc = s => String(T(s) ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   let notes = [];
   function fn(sources) {
     return (sources || []).map(s => {

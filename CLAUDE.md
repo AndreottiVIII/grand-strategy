@@ -114,6 +114,9 @@ python tools/build.py        # validate data/ and write docs/data.json; exit 1 o
 python tools/datasets/worldbank.py   # weight: GDP, military spending, population (World Bank, 3 calls)
 python tools/datasets/borders.py     # neighbours: Wikidata P47 (4 calls)
 python tools/datasets/gdelt.py       # news heat: GDELT daily events, last 7 days + 4 weeks baseline (35 zips, cached)
+python tools/i18n.py status --lang=it            # translations: how much of cards, notes, rows and site strings is done
+python tools/i18n.py extract --lang=it --kinds=cards,ui --batch=60000   # cut batches of untranslated texts for agents
+python tools/i18n.py merge --lang=it             # fold the agents' .out.yaml files into data/i18n/it/texts.json
 ```
 Facts about the atlas itself (start date, tokens spent) live in `data/site.yaml` and show on the Data page.
 
@@ -156,3 +159,13 @@ no cron, no scheduled wake-up, no agent launched on a date). When he does, the c
    0.8-1M tokens a week; the delta pass per card (Sonnet for protagonists) only on Davide's call.
 7. **Token cap** fixed by Davide before the cycle starts; stop when reached.
 Between cycles, single news items go in as one dated row each ("nota alla scheda").
+
+## Italian version (Davide, 2026-10-22)
+
+English is the truth; Italian is a lookup by fingerprint of the English text (`tools/i18n.py`, `data/i18n/it/`,
+`docs/i18n/it.json`, the `?lang=it` toggle). Whatever is untranslated shows in English. **Rule: new content is
+translated once a day, not per edit**: at the end of a day that changed cards or site text, run `i18n.py extract`
+for the kinds touched, one Haiku (notes, rows) or Sonnet (cards, site strings) agent per batch writing
+`<batch>.out.yaml` one item at a time, then `i18n.py merge`, build, push. Never more than one translation pass a
+day; never a pass on a day without new text. Site strings: collect the keys with `window.__i18nKeys()` on each
+page (see the journal of 2026-10-22) before extracting `ui`. Glossary in `data/i18n/glossary-it.yaml`.

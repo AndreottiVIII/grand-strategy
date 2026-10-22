@@ -1,5 +1,21 @@
 # Journal
 
+## 2026-10-22 · Italian version: the layer, and the first translation batches
+
+Davide: "una versione in italiano e' fattibile?" Measured: 4.4M characters of hand-written text (cards 1.3M,
+stance notes 1.6M, row summaries 1.3M, site strings about 60k rendered), about 2.8M tokens to translate in
+full. Decision: start with the layer, the site strings and the cards (about 0.9M). The layer: English stays
+the truth; `data/i18n/it/texts.json` maps the FNV-1a fingerprint of each English text to its Italian, so an
+edited text loses its translation by itself; `docs/i18n/it.json` loads only with `?lang=it` (toggle in the
+header, remembered by the browser); every text passes through T() in esc(); the site's own strings are
+matched on the rendered markup with numbers, actor names and link targets as placeholders, collected once
+from the pages with `window.__i18nKeys()`; actor names from Wikidata's Italian labels (229). Glossary in
+`data/i18n/glossary-it.yaml`: page names stay English, grades and terms translated. Agents (Sonnet for cards
+and site strings, Haiku later for notes and rows) write `<batch>.out.yaml` one item at a time, so a cut
+loses nothing; `tools/i18n.py merge` folds what exists. Rule (Davide): new content translated once a day,
+never per edit. Watch gained the postures and trends moved since the week-old snapshot and the heaviest
+warming or cooling readings of the last fourteen days. Launched at 94% of the weekly quota on Davide's order.
+
 ## 2026-10-22 · First weekly update (W43): the blind scan fails, the portal pass works
 
 Davide: start the round now, publish whatever survives. First wave, five Haiku regional scans with 5 web

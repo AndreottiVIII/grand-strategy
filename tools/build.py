@@ -683,6 +683,34 @@ def main():
                 elif pt != t:
                     changes["trends"].append({"a": a, "x": x, "from": pt, "to": t})
     (SNAP / f"{today.isoformat()}.json").write_text(json.dumps(snap_now, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    # Davide, 2026-10-22: the Watch page shows the postures that moved and the readings that are warming or cooling.
+    # The week's changes are measured against the latest snapshot at least seven days old (or the oldest there is).
+    older = [p for p in previous if (today - date.fromisoformat(p.stem)).days >= 7]
+    base_snap = older[-1] if older else (previous[0] if previous else None)
+    changes_week = {"since": base_snap.stem if base_snap else None, "grades": [], "trends": []}
+    if base_snap:
+        prev = json.loads(base_snap.read_text(encoding="utf-8"))
+        for k, (g, t) in snap_now.items():
+            a, x = k.split(">")
+            if k in prev:
+                pg, pt = prev[k]
+                if pg != g:
+                    changes_week["grades"].append({"a": a, "x": x, "from": pg, "to": g})
+                elif pt != t:
+                    changes_week["trends"].append({"a": a, "x": x, "from": pt, "to": t})
+            else:
+                changes_week["new"] = changes_week.get("new", 0) + 1   # a reading that did not exist: written, not moved
+    recent_moves = []
+    for (a, x), st in handst.items():
+        if st.get("trend") in ("warming", "cooling") and st.get("last_verified"):
+            try:
+                age = (today - date.fromisoformat(str(st["last_verified"])[:10])).days
+            except ValueError:
+                continue
+            if age <= 14:
+                recent_moves.append({"a": a, "x": x, "grade": st["grade"], "trend": st["trend"], "last_verified": str(st["last_verified"])[:10], "note": first(st.get("note"))})
+    # the heaviest pairs first: in a week when half the atlas was written, the date alone ranks nothing
+    recent_moves.sort(key=lambda r: (-max(weight.get(r["a"], 0.0), weight.get(r["x"], 0.0)), r["last_verified"], r["a"], r["x"]))
 
     # --- theatres (Luttwak's theatre level): hand-kept spaces where several actors' forces add up
     # (data/theatres.yaml). Heat per theatre, over the pairs of members, on the doubling scale:
@@ -860,7 +888,7 @@ def main():
         "convergences": convergences,
         "currents": currents,
         "alarms": {"allies_cooling": allies_cooling, "rivals_warming": rivals_warming},
-        "changes": changes,
+        "changes": changes, "changes_week": changes_week, "recent_moves": recent_moves,
         "grades": GRADES,
         "layers": list(TYPES.keys()),
         "actors": list(actors.values()),
@@ -882,6 +910,15 @@ def main():
              "relations_from": [r for r in rows if r["from"] == aid], "relations_to": [r for r in rows if r["to"] == aid],
              "unga": {"affinity": unga["affinity"].get(aid), "landmarks": unga["landmarks"].get(aid)}}   # no date: a bundle changes only when its data does
         (bundles / f"{aid}.json").write_text(json.dumps(b, ensure_ascii=False, separators=(",", ":"), default=str), encoding="utf-8")
+    # translations (2026-10-22): one JSON per language, loaded by the site only when that language is chosen
+    I18N = DATA / "i18n"
+    (ROOT / "docs" / "i18n").mkdir(exist_ok=True)
+    for ldir in sorted(p for p in I18N.iterdir() if p.is_dir()):
+        tx = json.loads((ldir / "texts.json").read_text(encoding="utf-8")) if (ldir / "texts.json").exists() else {}
+        nm = json.loads((ldir / "names.json").read_text(encoding="utf-8")) if (ldir / "names.json").exists() else {}
+        (ROOT / "docs" / "i18n" / f"{ldir.name}.json").write_text(json.dumps({"lang": ldir.name, "t": tx, "names": nm}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+        warnings.append(f"i18n {ldir.name}: {len(tx)} texts, {len(nm)} names")
+
     # cache-busting: rewrite ?v= stamps in docs/index.html so GitHub Pages visitors get the new files
     idx = ROOT / "docs" / "index.html"
     stamp = __import__("datetime").datetime.now().strftime("%Y%m%d%H%M")
