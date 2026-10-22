@@ -1111,3 +1111,45 @@ relations:
     tier: 3
   to: MAR
   mirrored_from: MAR
+- to: COL
+  layer: action
+  type: agreement
+  summary: Israel gained a restored free trade agreement and an embassy in Jerusalem from Colombia; the portal line does not specify the instrument.
+  since: 2026-10-14
+  until: null
+  last_verified: '2026-10-22'
+  confidence: B
+  sources:
+  - url: https://www.reuters.com/world/americas/colombia-opens-embassy-jerusalem-restores-free-trade-deal-with-israel-2026-10-14/
+    title: Colombia opens embassy in Jerusalem and restores free trade deal with Israel
+    publisher: Reuters
+    date: '2026-10-14'
+    tier: 3
+- to: nsa-hamas
+  layer: action
+  type: incident
+  summary: The IDF and Shin Bet say they killed a Hamas Nukhba-force militant who took part in planning the killing of four IDF soldiers in September 2025. The claim is Israel's own, reported by Ynetnews.
+  since: 2026-10-21
+  until: null
+  last_verified: '2026-10-22'
+  confidence: C
+  sources:
+  - url: https://www.ynetnews.com/article/s1l00peuhgl
+    title: 'Ynetnews: IDF and Shin Bet kill Hamas Nukhba militant'
+    publisher: Ynetnews
+    date: '2026-10-21'
+    tier: 4
+- to: USA
+  layer: action
+  type: incident
+  summary: Israeli soldiers detained more than 80 Americans, British citizens and Israelis in the occupied West Bank, including US House candidate Brad Lander. The portal gives no charge or release date.
+  since: 2026-10-21
+  until: null
+  last_verified: '2026-10-22'
+  confidence: B
+  sources:
+  - url: https://www.theguardian.com/world/2026/oct/21/israeli-military-detains-brad-lander-rabbis-west-bank-olive-harvest
+    title: 'The Guardian: Israeli military detains Brad Lander and rabbis in West Bank'
+    publisher: The Guardian
+    date: '2026-10-21'
+    tier: 3

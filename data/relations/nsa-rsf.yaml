@@ -172,3 +172,36 @@ relations:
     publisher: Al Jazeera
     date: '2026-05-06'
     tier: 3
+- to: SDN
+  layer: action
+  type: incident
+  summary: The Rapid Support Forces lost control of Bir Kelekel in West Darfur, which the Sudanese Armed Forces announced as recaptured.
+  since: 2026-10-14
+  until: null
+  last_verified: '2026-10-22'
+  confidence: C
+  sources:
+  - url: https://www.radiotamazuj.org/en/news/article/sudanese-army-announces-capture-of-strategic-area-in-west-darfur
+    title: Sudanese army announces capture of strategic area in West Darfur
+    publisher: Radio Tamazuj
+    date: '2026-10-14'
+    tier: 4
+  - url: https://www.aa.com.tr/en/middle-east/sudanese-army-takes-control-of-strategic-area-in-west-darfur-official/4088852
+    title: Sudanese army takes control of strategic area in West Darfur, official says
+    publisher: Anadolu Agency
+    date: '2026-10-14'
+    tier: 4
+- to: SDN
+  layer: action
+  type: incident
+  summary: An RSF drone strike on a power plant in Tendelti, White Nile State, knocked out the main transmission line connecting North Kordofan. Single source (Sudan Tribune), so the grade stays C.
+  since: 2026-10-20
+  until: null
+  last_verified: '2026-10-22'
+  confidence: C
+  sources:
+  - url: https://sudantribune.com/article/320202
+    title: 'Sudan Tribune: RSF drone strike on Tendelti power plant'
+    publisher: Sudan Tribune
+    date: '2026-10-20'
+    tier: 4

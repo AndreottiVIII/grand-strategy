@@ -25,3 +25,31 @@ relations:
     note: "The since date is the AP report's date (August 2025), not the start of the crackdown, which the source read does not date."
     sources:
       - {url: "https://weartv.com/news/nation-world/el-salvador-allows-indefinite-reelection-extends-presidential-terms-to-6-years-nayib-bukele-legislative-assembly-street-gangs-constitutional-rights", title: "El Salvador allows indefinite reelection, extends presidential terms to 6 years", publisher: "Associated Press (via WEAR-TV)", date: 2025-08-01, tier: 3}
+  - to: nsa-haiti-gangs
+    layer: action
+    type: incident
+    summary: Four Salvadoran service members serving with the Gang Suppression Force in Port-au-Prince were reported missing after a gang ambush with gunfire and explosives.
+    since: 2026-10-18
+    until: null
+    last_verified: '2026-10-22'
+    confidence: B
+    sources:
+    - url: https://www.reuters.com/business/aerospace-defense/four-salvadoran-air-force-members-missing-after-gang-ambush-haiti-2026-10-19/
+      title: Four Salvadoran air force members missing after gang ambush in Haiti
+      publisher: Reuters
+      date: '2026-10-18'
+      tier: 3
+  - to: nsa-haiti-gangs
+    layer: action
+    type: incident
+    summary: President Nayib Bukele announced the start of a military operation to rescue the four technicians held by the gangs after the 18 Oct ambush. The portal reports the announcement; no outcome yet.
+    since: 2026-10-21
+    until: null
+    last_verified: '2026-10-22'
+    confidence: B
+    sources:
+    - url: https://www.reuters.com/world/americas/el-salvador-says-haiti-gangs-holding-4-force-members-hostage-announces-new-2026-10-21/
+      title: 'Reuters: El Salvador says Haiti gangs hold four Force members hostage'
+      publisher: Reuters
+      date: '2026-10-21'
+      tier: 3

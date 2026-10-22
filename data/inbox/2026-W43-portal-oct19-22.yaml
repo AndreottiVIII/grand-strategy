@@ -1,0 +1,266 @@
+week: 2026-W43
+group: portal-oct19-22
+items:
+- from: nsa-houthis
+  to: YEM
+  layer: action
+  type: incident
+  since: 2026-10-19
+  summary: A Houthi missile attack on a training centre in Shabwah Governorate killed 58 soldiers and injured over 200, with 14 missing (portal figures, 19 Oct). The cited Reuters URL slug reads 'at least
+    18 killed', so the toll was probably revised upward; check before using the number.
+  confidence: B
+  sources:
+  - url: https://www.reuters.com/world/least-18-killed-houthi-attack-yemeni-government-military-camp-shabwa-sources-say-2026-10-19/
+    title: 'Reuters: Houthi missile attack on Yemeni government military camp in Shabwah'
+    publisher: Reuters
+    date: '2026-10-19'
+    tier: 3
+  why: Deadliest entry in this batch; belongs on the Houthi card and the Yemen card.
+- from: YEM
+  to: nsa-houthis
+  layer: action
+  type: incident
+  since: 2026-10-19
+  summary: 'Reverse of the Shabwah attack: the Yemeni government''s military camp was the target (58 soldiers killed, over 200 injured, 14 missing, per the portal''s 19 Oct entry; see the Houthi row on
+    the figure).'
+  confidence: B
+  sources:
+  - url: https://www.reuters.com/world/least-18-killed-houthi-attack-yemeni-government-military-camp-shabwa-sources-say-2026-10-19/
+    title: 'Reuters: Houthi missile attack on Yemeni government military camp in Shabwah'
+    publisher: Reuters
+    date: '2026-10-19'
+    tier: 3
+  why: Reverse row so the Yemen card carries the attack it suffered.
+- from: nsa-houthis
+  to: SAU
+  layer: action
+  type: incident
+  since: 2026-10-20
+  summary: Houthi attacks on Saudi Arabia are ramping up. On 20 Oct the UK said it will deploy RAF Typhoons to help Saudi Arabia defend against them; on 21 Oct the US ordered non-emergency staff to leave
+    its embassy in Riyadh. The portal names attacks on Saudi airports only in a link, not in its text.
+  confidence: B
+  sources:
+  - url: https://www.bbc.com/news/articles/ckr5yqe1r1llo
+    title: 'BBC News: UK to deploy RAF Typhoons to help defend Saudi Arabia against Houthi attacks'
+    publisher: BBC News
+    date: '2026-10-20'
+    tier: 3
+  - url: https://www.reuters.com/business/aerospace-defense/uk-fly-raf-missions-defending-saudi-arabia-against-houthi-attacks-bloomberg-2026-10-20/
+    title: 'Reuters: UK to fly RAF missions defending Saudi Arabia against Houthi attacks'
+    publisher: Reuters
+    date: '2026-10-20'
+    tier: 3
+  - url: https://www.aljazeera.com/news/2026/10/21/us-orders-departure-of-personnel-from-saudi-arabia-citing-houthi-threat
+    title: 'Al Jazeera: US orders departure of personnel from Saudi Arabia, citing Houthi threat'
+    publisher: Al Jazeera
+    date: '2026-10-21'
+    tier: 3
+  why: Escalation signal for the Saudi card; confirm a dated strike on Saudi soil before grading the incident up.
+- from: LBY
+  to: TUR
+  layer: alignment
+  type: treaty
+  since: 2026-10-20
+  summary: Eastern Libya's House of Representatives approved the 2019 maritime boundary agreement that Turkey signed with Tripoli's GNA, and repealed two 2020 decisions that had rejected it. The approving
+    body is the eastern-based parliament, not the Tripoli side.
+  confidence: B
+  sources:
+  - url: https://www.reuters.com/world/europe/eastern-libya-parliament-approves-maritime-deal-with-turkey-lifts-2020-boycott-2026-10-20/
+    title: 'Reuters: Eastern Libya parliament approves maritime deal with Turkey, lifts 2020 boycott'
+    publisher: Reuters
+    date: '2026-10-20'
+    tier: 3
+  why: 'Treaty-layer step in the Turkey-Libya alignment, on a split Libyan side: the card has to show who approved what.'
+- from: TUR
+  to: PAK
+  layer: action
+  type: agreement
+  since: 2026-10-21
+  summary: 'Turkey, Pakistan, Qatar and Indonesia jointly signed the Badr Memorandum of Understanding on deeper defence-industry cooperation: joint military production projects, technical training, research
+    and development. Written from Turkey as hub; the same signing gives one row to each of the other three.'
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/news/2026/10/21/how-qatar-turkiye-pakistan-and-indonesia-are-deepening-defence-ties
+    title: 'Al Jazeera: how Qatar, Turkiye, Pakistan and Indonesia are deepening defence ties'
+    publisher: Al Jazeera
+    date: '2026-10-21'
+    tier: 3
+  - url: https://www.reuters.com/world/asia-pacific/turkey-qatar-pakistan-indonesia-sign-defence-cooperation-accord-ankara-says-2026-10-21/
+    title: 'Reuters: Turkey, Qatar, Pakistan, Indonesia sign defence cooperation accord, Ankara says'
+    publisher: Reuters
+    date: '2026-10-21'
+    tier: 3
+  why: Four-state defence-industry memorandum; an MoU sits in action (agreement), not alignment (treaty).
+- from: TUR
+  to: QAT
+  layer: action
+  type: agreement
+  since: 2026-10-21
+  summary: 'Turkey and Qatar, with Pakistan and Indonesia, jointly signed the Badr Memorandum of Understanding on defence-industry cooperation: joint military production projects, technical training, research
+    and development. Row from Turkey as hub.'
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/news/2026/10/21/how-qatar-turkiye-pakistan-and-indonesia-are-deepening-defence-ties
+    title: 'Al Jazeera: how Qatar, Turkiye, Pakistan and Indonesia are deepening defence ties'
+    publisher: Al Jazeera
+    date: '2026-10-21'
+    tier: 3
+  - url: https://www.reuters.com/world/asia-pacific/turkey-qatar-pakistan-indonesia-sign-defence-cooperation-accord-ankara-says-2026-10-21/
+    title: 'Reuters: Turkey, Qatar, Pakistan, Indonesia sign defence cooperation accord, Ankara says'
+    publisher: Reuters
+    date: '2026-10-21'
+    tier: 3
+  why: Gulf partner in the Badr defence-industry memorandum; MoU, so action, not alignment.
+- from: TUR
+  to: IDN
+  layer: action
+  type: agreement
+  since: 2026-10-21
+  summary: 'Turkey and Indonesia, with Pakistan and Qatar, jointly signed the Badr Memorandum of Understanding on defence-industry cooperation: joint military production projects, technical training, research
+    and development. Row from Turkey as hub.'
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/news/2026/10/21/how-qatar-turkiye-pakistan-and-indonesia-are-deepening-defence-ties
+    title: 'Al Jazeera: how Qatar, Turkiye, Pakistan and Indonesia are deepening defence ties'
+    publisher: Al Jazeera
+    date: '2026-10-21'
+    tier: 3
+  - url: https://www.reuters.com/world/asia-pacific/turkey-qatar-pakistan-indonesia-sign-defence-cooperation-accord-ankara-says-2026-10-21/
+    title: 'Reuters: Turkey, Qatar, Pakistan, Indonesia sign defence cooperation accord, Ankara says'
+    publisher: Reuters
+    date: '2026-10-21'
+    tier: 3
+  why: Southeast Asian partner in the Badr defence-industry memorandum; MoU, so action, not alignment.
+- from: MEX
+  to: USA
+  layer: action
+  type: incident
+  since: 2026-10-19
+  summary: Mexico arrested former Chihuahua attorney general César Jáuregui Moreno on a treason warrant for allowing US agents, reported to be CIA officers, to join an anti-drug operation in April without
+    federal approval. The US role is the incident; the arrest is Mexico's response.
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/news/2026/10/21/mexico-charges-prosecutor-with-treason-over-us-involvement-in-drug-raid
+    title: 'Al Jazeera: Mexico charges prosecutor with treason over US involvement in drug raid'
+    publisher: Al Jazeera
+    date: '2026-10-21'
+    tier: 3
+  - url: https://www.reuters.com/world/americas/ex-chihuahua-attorney-general-accused-treason-allowing-us-participation-drug-2026-10-18/
+    title: 'Reuters: Ex-Chihuahua attorney general accused of treason over US participation in drug operation'
+    publisher: Reuters
+    date: '2026-10-18'
+    tier: 3
+  why: Unapproved US security role on Mexican soil; 'incident' stretches the vocabulary here, so grade it as friction, not an attack.
+- from: AND
+  to: org-eu
+  layer: action
+  type: agreement
+  since: 2026-10-19
+  summary: Andorra signed an association agreement with the European Union that brings it into the EU internal market. The portal does not say when it enters into force.
+  confidence: B
+  sources:
+  - url: https://www.brusselstimes.com/eu-affairs/2368520/eu-agreement-brings-andorra-san-marino-into-internal-market?utm_term=Autofeed&utm_medium=Social&utm_source=Twitter
+    title: 'The Brussels Times: EU agreement brings Andorra and San Marino into internal market'
+    publisher: The Brussels Times
+    date: '2026-10-19'
+    tier: 3
+  why: Signed EU association deal for a microstate; the card needs the entry-into-force date before any treaty layer.
+- from: SMR
+  to: org-eu
+  layer: action
+  type: agreement
+  since: 2026-10-19
+  summary: San Marino signed an association agreement with the European Union that brings it into the EU internal market. The portal does not say when it enters into force.
+  confidence: B
+  sources:
+  - url: https://www.brusselstimes.com/eu-affairs/2368520/eu-agreement-brings-andorra-san-marino-into-internal-market?utm_term=Autofeed&utm_medium=Social&utm_source=Twitter
+    title: 'The Brussels Times: EU agreement brings Andorra and San Marino into internal market'
+    publisher: The Brussels Times
+    date: '2026-10-19'
+    tier: 3
+  why: Signed EU association deal for a microstate; the card needs the entry-into-force date before any treaty layer.
+- from: nsa-haiti-gangs
+  to: SLV
+  layer: action
+  type: incident
+  since: 2026-10-21
+  summary: Gangs ambushed a Salvadoran Air Force armoured vehicle on 18 Oct and took four Salvadoran technicians, attached to the international Gang Suppression Force, hostage. The portal reports it on
+    21 Oct.
+  confidence: B
+  sources:
+  - url: https://www.reuters.com/world/americas/el-salvador-says-haiti-gangs-holding-4-force-members-hostage-announces-new-2026-10-21/
+    title: 'Reuters: El Salvador says Haiti gangs hold four Force members hostage'
+    publisher: Reuters
+    date: '2026-10-21'
+    tier: 3
+  why: Haitian gangs holding a Salvadoran state's personnel; it links the Haiti security mission to El Salvador's card.
+- from: SLV
+  to: nsa-haiti-gangs
+  layer: action
+  type: incident
+  since: 2026-10-21
+  summary: President Nayib Bukele announced the start of a military operation to rescue the four technicians held by the gangs after the 18 Oct ambush. The portal reports the announcement; no outcome yet.
+  confidence: B
+  sources:
+  - url: https://www.reuters.com/world/americas/el-salvador-says-haiti-gangs-holding-4-force-members-hostage-announces-new-2026-10-21/
+    title: 'Reuters: El Salvador says Haiti gangs hold four Force members hostage'
+    publisher: Reuters
+    date: '2026-10-21'
+    tier: 3
+  why: 'Reverse row: El Salvador''s counter-operation against the gangs, for the El Salvador card.'
+- from: nsa-rsf
+  to: SDN
+  layer: action
+  type: incident
+  since: 2026-10-20
+  summary: An RSF drone strike on a power plant in Tendelti, White Nile State, knocked out the main transmission line connecting North Kordofan. Single source (Sudan Tribune), so the grade stays C.
+  confidence: C
+  sources:
+  - url: https://sudantribune.com/article/320202
+    title: 'Sudan Tribune: RSF drone strike on Tendelti power plant'
+    publisher: Sudan Tribune
+    date: '2026-10-20'
+    tier: 4
+  why: Strike on the Sudanese state's power grid, for the RSF card; check a second source before grading it up.
+- from: nsa-rsf
+  to: SDN
+  layer: action
+  type: incident
+  since: 2026-10-20
+  summary: The Sudanese Army says it repelled an attack by the RSF and the SPLM-N on Blue Nile state. The claim is the army's own, as reported by Sudan Tribune.
+  confidence: C
+  sources:
+  - url: https://sudantribune.com/article/320207#google_vignette
+    title: 'Sudan Tribune: Army says it repelled RSF and SPLM-N attack on Blue Nile'
+    publisher: Sudan Tribune
+    date: '2026-10-20'
+    tier: 4
+  why: Clash on a second front; the army's claim only, so it stays C until independently confirmed.
+- from: ISR
+  to: nsa-hamas
+  layer: action
+  type: incident
+  since: 2026-10-21
+  summary: The IDF and Shin Bet say they killed a Hamas Nukhba-force militant who took part in planning the killing of four IDF soldiers in September 2025. The claim is Israel's own, reported by Ynetnews.
+  confidence: C
+  sources:
+  - url: https://www.ynetnews.com/article/s1l00peuhgl
+    title: 'Ynetnews: IDF and Shin Bet kill Hamas Nukhba militant'
+    publisher: Ynetnews
+    date: '2026-10-21'
+    tier: 4
+  why: Targeted killing claimed by the IDF and not independently confirmed; the Hamas card needs the event, not the claim.
+- from: ISR
+  to: USA
+  layer: action
+  type: incident
+  since: 2026-10-21
+  summary: Israeli soldiers detained more than 80 Americans, British citizens and Israelis in the occupied West Bank, including US House candidate Brad Lander. The portal gives no charge or release date.
+  confidence: B
+  sources:
+  - url: https://www.theguardian.com/world/2026/oct/21/israeli-military-detains-brad-lander-rabbis-west-bank-olive-harvest
+    title: 'The Guardian: Israeli military detains Brad Lander and rabbis in West Bank'
+    publisher: The Guardian
+    date: '2026-10-21'
+    tier: 3
+  why: Detention of US and UK citizens by the IDF; a friction point for the Israel-US card, to be read with the release news.
