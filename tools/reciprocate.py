@@ -70,7 +70,7 @@ def main(write):
                 "sources": st.get("sources", [])})
             added_st.append((b, a, RECIP[st["grade"]]))
 
-    for a, r in relations.items():
+    for a, r in list(relations.items()):
         if a in running:
             continue
         for row in r.get("relations", []):

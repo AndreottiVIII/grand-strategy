@@ -25,6 +25,7 @@ Rows are appended to data/relations/<from>.yaml as text (the file is not rewritt
 last_verified = today. Proposals are printed, never applied. Then: reciprocate --write, build, commit.
 """
 import datetime
+import re
 import sys
 from pathlib import Path
 
@@ -133,6 +134,9 @@ def cmd_apply(week, accept):
         text = p.read_text(encoding="utf-8")
         doc = yaml.safe_load(text) or {}
         block = yaml.safe_dump([row], sort_keys=False, allow_unicode=True, width=200, default_flow_style=False)
+        m = re.search(r"^( *)- to:", text, re.M)   # the file's own indentation for list items (some cards indent them)
+        if m and m.group(1):
+            block = "".join((m.group(1) + line if line.strip() else line) for line in block.splitlines(True))
         if list(doc.keys())[-1] == "relations" and not text.rstrip().endswith("relations: []"):
             if not text.endswith("\n"):
                 text += "\n"
