@@ -1,5 +1,19 @@
 # Journal
 
+## 2026-10-22 · News heat from GDELT, and the shape of the weekly update
+
+Davide asked how a short weekly update would run without bleeding tokens, then whether the countries
+that made the headlines could be seen without spending. Answer: GDELT, one zip a day, a program, zero
+model tokens. `tools/datasets/gdelt.py` counts the week's events per country against the country's
+own four-week average (surging) and the conflict events against their normal (burning); a block
+beside the menu lists the top five of each, a lens on the home map colours the surge. First week
+(15-21 Oct): Tajikistan, the Vatican, Uzbekistan, Albania, Norway surging; the loud (US, UK, Russia,
+Ukraine) are not on top, by design. Limits written in the ontology: attention, not truth.
+The weekly update agreed in principle (Davide: "1 e 2 ci sta"): datasets free, twelve Haiku regional
+scans writing candidate rows to an inbox file the build ignores, triage by hand, a merge tool, then
+reciprocate, build, push; about 0.8-1M tokens a week, light tier. The heat tells the scans where to
+look. To build next: the inbox format and `tools/inbox.py`.
+
 ## 2026-10-18 · Hedging: the tier between seam and buffer
 
 Davide, reading the buffers (Australia rival Russia, "both partner / de facto"): an allied or de facto

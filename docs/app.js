@@ -104,6 +104,8 @@ const STAMP = ((document.querySelector('script[src^="app.js"]') || {}).src || ""
       clear(); homeLens = { kind: "org", id }; orgSel.value = id; mapMode = "world"; renderLegend(); setView("map");
     } else if (kind === "issue" && ISSUES[id]) {
       clear(); homeLens = { kind: "issue", id }; issueSel.value = id; mapMode = "world"; renderLegend(); setView("map");
+    } else if (kind === "heat") {
+      clear(); homeLens = { kind: "heat" }; mapMode = "world"; renderLegend(); setView("map");
     } else if (kind === "organisations") setView("orgs");
     else if (kind === "issues") setView("issues");
     else if (kind === "luttwak") setView("luttwak");
@@ -185,7 +187,12 @@ const STAMP = ((document.querySelector('script[src^="app.js"]') || {}).src || ""
   // the other lenses borrow the posture colours: blue for "with", red for "apart", green for yes, orange for withdrew
   const VCLASS = { v90: ["partner", .5], v80: ["partner", .35], v70: ["partner", .24], v60: ["partner", .14], vlow: ["rival", .3],
                    c6: ["partner", .5], c4: ["partner", .35], c2: ["partner", .22], c1: ["partner", .12],
-                   yes: ["ally", .35], withdrew: ["reluctant_ally", .35], no: ["rival", .3], abst: ["partner", .2], member: ["ally", .35] };
+                   yes: ["ally", .35], withdrew: ["reluctant_ally", .35], no: ["rival", .3], abst: ["partner", .2], member: ["ally", .35],
+                   h1: ["rival", .14], h2: ["rival", .26], h3: ["rival", .4], h4: ["rival", .58] };
+  const NEWS = data.news || null;
+  const HEAT_BINS = [["h4", 4, "4 times its normal or more"], ["h3", 2.5, "2.5 to 4 times"], ["h2", 1.6, "1.6 to 2.5 times"], ["h1", 1.25, "1.25 to 1.6 times"]];
+  const heatClass = id => { const r = NEWS && NEWS.actors[id]; if (!r || r.events < 50) return null; const b = HEAT_BINS.find(x => r.ratio >= x[1]); return b ? b[0] : null; };
+  const fmtDay = iso => new Date(iso + "T00:00:00").toLocaleDateString("en-GB", { day: "numeric", month: "short" });
   const voteSwatch = c => alpha(COLOR(VCLASS[c][0]), VCLASS[c][1]);
   const voteBorder = c => COLOR(VCLASS[c][0]);
   function renderLegend() {
@@ -193,6 +200,12 @@ const STAMP = ((document.querySelector('script[src^="app.js"]') || {}).src || ""
     if (!pov && homeLens && homeLens.kind === "org") {
       const o = actors[homeLens.id], n = Object.keys(membersOf[homeLens.id]).length;
       el.innerHTML = `<h3>${esc(o.name)}</h3><div class="row"><span class="sw" style="background:${voteSwatch("member")};border-color:${voteBorder("member")}"></span>Member (${n})</div><div class="row"><span class="sw"></span>Not a member</div><div class="row" style="color:var(--ink-3)">Memberships from the official list and Wikidata; some lists are hand-checked.</div>`;
+      return;
+    }
+    if (!pov && homeLens && homeLens.kind === "heat") {
+      el.innerHTML = `<h3>News heat, ${NEWS ? fmtDay(NEWS.week.from) + " to " + fmtDay(NEWS.week.to) : "no data"}</h3>` +
+        HEAT_BINS.map(([c, , lbl]) => `<div class="row"><span class="sw" style="background:${voteSwatch(c)};border-color:${voteBorder(c)}"></span>${lbl}</div>`).join("") +
+        `<div class="row"><span class="sw"></span>Its usual week, or fewer than 50 events</div><div class="row" style="color:var(--ink-3)">Events coded by GDELT from the world's news, counted per country and set against the country's own four-week average: a country is hot when it makes a multiple of its normal, so the loud are not always on top. Attention, not truth; English-language and major-language media.</div>`;
       return;
     }
     if (!pov && homeLens && homeLens.kind === "issue") {
@@ -279,6 +292,7 @@ const STAMP = ((document.querySelector('script[src^="app.js"]') || {}).src || ""
     const homeClass = id => {
       if (!homeLens) return null;
       if (homeLens.kind === "org") return membersOf[homeLens.id][id] !== undefined ? "member" : null;
+      if (homeLens.kind === "heat") return heatClass(id);
       const iss = ISSUES[homeLens.id];
       if (iss.kind === "recognition") return id === iss.target ? "member" : (recog[iss.target] || {})[id] || null;
       const v = voteOn(iss.symbol, id); return v ? VOTE_CLS[v] : null;
@@ -407,7 +421,7 @@ const STAMP = ((document.querySelector('script[src^="app.js"]') || {}).src || ""
         (hasRecog(pov) ? `<button class="frame-btn lens ${lens === "recognition" ? "is-on" : ""}" data-lens="recognition">Recognition</button>` : "") +
         (hasVotes(pov) ? `<button class="frame-btn lens ${lens === "votes" ? "is-on" : ""}" data-lens="votes">UN votes</button>` : "") +
         (hasClubs(pov) ? `<button class="frame-btn lens ${lens === "clubs" ? "is-on" : ""}" data-lens="clubs">Clubs</button>` : "")
-      : homeLens ? `<button class="frame-btn" data-home="flags">Flags</button><button class="frame-btn is-on" data-mode="world">${esc(homeLens.kind === "org" ? actors[homeLens.id].name : ISSUES[homeLens.id].label.split(" - ")[0])}</button>`
+      : homeLens ? `<button class="frame-btn" data-home="flags">Flags</button><button class="frame-btn is-on" data-mode="world">${esc(homeLens.kind === "org" ? actors[homeLens.id].name : homeLens.kind === "heat" ? "News heat this week" : ISSUES[homeLens.id].label.split(" - ")[0])}</button>`
       : `<button class="frame-btn is-on" data-mode="world">The world of today</button>`);
     ctl.selectAll("button[data-home]").on("click", () => goHome());
     ctl.selectAll("button[data-mode]").on("click", ev => { mapMode = ev.currentTarget.dataset.mode; frame(mapMode); });
@@ -872,7 +886,7 @@ const STAMP = ((document.querySelector('script[src^="app.js"]') || {}).src || ""
       <h3>Posture and bond</h3>
       <p>How one actor sees another is recorded on two axes. The <b>posture</b> is the relationship today, on a closed scale: own territory, claimed but not controlled, ally, reluctant ally, partner, reluctant partner, neutral, rival, adversary. "Adversary" is kept for mortal enemies, where the other's existence or regime is the problem; nearly all bad relationships are rivalries. The grade follows the structural position, never the rhetoric of a communiqué: two members of the same alliance with open friction are reluctant allies, not rivals. The <b>bond</b> is what lies under the posture and would survive a change of government: kin, affinity, none, or grievance. On the map the posture is the colour of the outline and of the light inside a country; the bond is a band inside the border; a dashed band marks a partner aligned with the actor as a bloc, without a treaty.</p>
       <h3>Relations</h3>
-      <p>Under the postures sit the relation rows, in four layers: <b>objectives</b> (what an actor wants from another), <b>alignments</b> (treaties, memberships, recognitions), <b>dependencies</b> (energy, trade, debt, arms, remittances, with numbers) and <b>actions</b> (dated events: votes, sanctions, visits, exercises). The datasets are the floor: memberships from Wikidata and official lists, recognition tables from Wikipedia with their citations, every recorded vote of the UN General Assembly since 2022 from the UN Digital Library. The cards are the reading on top of that floor.</p>
+      <p>Under the postures sit the relation rows, in four layers: <b>objectives</b> (what an actor wants from another), <b>alignments</b> (treaties, memberships, recognitions), <b>dependencies</b> (energy, trade, debt, arms, remittances, with numbers) and <b>actions</b> (dated events: votes, sanctions, visits, exercises). The datasets are the floor: memberships from Wikidata and official lists, recognition tables from Wikipedia with their citations, every recorded vote of the UN General Assembly since 2022 from the UN Digital Library. The cards are the reading on top of that floor. A lighter floor still is the <b>news heat</b>: every week the events GDELT codes from the world's news are counted per country and set against the country's own four-week average, shown beside the menu and as a lens on the home map; attention, not truth, and a pointer for where the next update should look.</p>
       <h3>Seams</h3>
       <p>A <b>seam</b> is an actor pulled two ways: an ally of two actors that are rivals or adversaries of each other. Greece between Israel and Turkey, the United States between Saudi Arabia and the Emirates, Italy between Hungary and Ukraine. The word is Luttwak's. In <i>Strategy</i> he describes <b>relational manoeuvre</b> as the style that aims not at the enemy's strength but at his specific weaknesses, his doctrine, his habits and the <i>seams</i> between him and his allies, where a small force can obtain a large effect. The Byzantine book shows the same idea at the scale of an empire that survived a thousand years by dividing its enemies rather than destroying them. The Seams page lists every such triangle the atlas can see; the map marks them for the actor you are looking at. They are computed from hand-written postures of confidence A or B only. Under the seams sit two lighter tiers. The <b>hedger</b> is allied with one of two rivals and a partner of the other: it has chosen a side and keeps the door open, insurance against both outcomes. The <b>buffer</b> is the partner of both and the ally of neither, the state that belongs to neither and deals with both, which Rome kept on purpose between itself and its enemies; the buffer profits from the quarrel until it is forced to choose.</p>
       <h3>Clients</h3>
@@ -963,6 +977,7 @@ const STAMP = ((document.querySelector('script[src^="app.js"]') || {}).src || ""
     if (!pov && homeLens) {
       const c = (lens => lens)(null);
       if (homeLens.kind === "org") { const since = membersOf[homeLens.id][id]; return showTip(`<b>${esc(name)}</b>${since !== undefined ? `Member of ${esc(actors[homeLens.id].name)}${since ? " since " + esc(since) : ""}` : "Not a member"}`, ev); }
+      if (homeLens.kind === "heat") { const r = NEWS && NEWS.actors[id]; return showTip(`<b>${esc(name)}</b>${r ? `${r.events.toLocaleString("en-GB")} events this week, ${r.ratio} times its four-week normal<span class="k">${Math.round((r.conflict_share || 0) * 100)}% of them conflict, ${r.conflict_ratio} times its normal conflict · ${r.articles.toLocaleString("en-GB")} articles</span>` : "No events coded this week"}`, ev); }
       const iss = ISSUES[homeLens.id];
       if (iss.kind === "recognition") { const r = (recog[iss.target] || {})[id]; return showTip(`<b>${esc(name)}</b>${id === iss.target ? "The subject" : r ? REC_LABEL[r] : "No data"}`, ev); }
       const v = voteOn(iss.symbol, id); return showTip(`<b>${esc(name)}</b>${v ? VOTE_LBL[VOTE_CLS[v]] : "Did not vote / not a member"} on ${esc(iss.symbol)}`, ev);
@@ -1108,6 +1123,21 @@ const STAMP = ((document.querySelector('script[src^="app.js"]') || {}).src || ""
       (!out.length && !inn.length ? `<p class="empty">No relation rows yet.</p>` : "");
   }
 
+  // hot this week, beside the menu: surging = most above its own normal; burning = where the news is conflict
+  (function renderHot() {
+    const el = document.getElementById("hot");
+    if (!el || !NEWS) return;
+    const rows = Object.entries(NEWS.actors);
+    const surging = rows.filter(([, r]) => r.hot_rank).sort((p, q) => p[1].hot_rank - q[1].hot_rank).slice(0, 5);
+    const burning = rows.filter(([, r]) => r.burn_rank).sort((p, q) => p[1].burn_rank - q[1].burn_rank).slice(0, 5);
+    const bar = v => "▮".repeat(Math.max(1, Math.min(8, Math.round(v * 2))));
+    const row = ([id, r], v) => `<a class="hrow" href="#/view/${id}"><span class="n">${nameOf(id)}</span><span class="b">${bar(v)}</span><span class="x">×${v.toFixed(1)}</span></a>`;
+    el.innerHTML = `<h4><a href="#/heat">Hot this week</a><span>${fmtDay(NEWS.week.from)} to ${fmtDay(NEWS.week.to)}</span></h4><div class="cols">` +
+      `<div><div class="k">surging · news against its own normal</div>${surging.map(x => row(x, x[1].ratio)).join("")}</div>` +
+      `<div><div class="k">burning · conflict against its normal</div>${burning.map(x => row(x, x[1].conflict_ratio)).join("")}</div></div>` +
+      `<a class="more" href="#/heat">on the map</a>`;
+    el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
+  })();
   window.addEventListener("resize", () => { if (view === "map") drawMap(); });
   apply(location.hash);
 })();

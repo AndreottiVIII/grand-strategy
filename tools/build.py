@@ -316,6 +316,12 @@ def main():
     borders_ds = json.loads(BD.read_text(encoding="utf-8")) if BD.exists() else {"borders": {}, "source": {}}
     borders = {a: [b for b in v if b in actors] for a, v in borders_ds["borders"].items() if a in actors}
 
+    # --- dataset: news heat from GDELT (Davide, 2026-10-22: see without spending where the headlines were)
+    HEAT = DATA / "datasets" / "gdelt" / "heat.json"
+    heat_ds = json.loads(HEAT.read_text(encoding="utf-8")) if HEAT.exists() else None
+    news = ({"week": heat_ds["week"], "fetched": heat_ds["source"]["fetched"], "baseline_days": heat_ds["baseline_days"],
+             "actors": {a: r for a, r in heat_ds["actors"].items() if a in actors}} if heat_ds else None)
+
     # --- derived stances: co-members of a defence alliance are treaty allies (dataset, bond unknown)
     ALLIANCES = {
         "org-nato": ("NATO", "Article 5 of the North Atlantic Treaty", "https://www.nato.int/cps/en/natohq/official_texts_17120.htm"),
@@ -829,6 +835,7 @@ def main():
             {"name": "Recognition tables", "publisher": "Wikipedia, with its citations", "rows": sum(len(x) for v in json.loads(RECOG.read_text(encoding="utf-8")).values() for x in v.values() if isinstance(x, (list, dict))) if RECOG.exists() else 0, "date": fdate(RECOG), "tier": 3, "tool": "tools/datasets/recognition.py"},
             {"name": "UN General Assembly recorded votes", "publisher": "UN Digital Library", "rows": len(records), "date": fdate(DATA / "datasets" / "unga" / "2026.json"), "tier": 1, "tool": "tools/datasets/unga_page.js + receive.py"},
             {"name": "Weight: GDP, military spending, population", "publisher": "World Bank (military spending is SIPRI's series)", "rows": len(weight_ds.get("actors", {})), "date": weight_ds.get("source", {}).get("fetched"), "tier": 1, "tool": "tools/datasets/worldbank.py"},
+            {"name": "News heat, last seven days", "publisher": "GDELT Project (1.0 daily event export)", "rows": len(news["actors"]) if news else 0, "date": news["fetched"] if news else None, "tier": 2, "tool": "tools/datasets/gdelt.py"},
             {"name": "Borders", "publisher": "Wikidata (P47 shares border with)", "rows": sum(len(v) for v in borders_ds.get("borders", {}).values()) // 2, "date": borders_ds.get("source", {}).get("fetched"), "tier": 2, "tool": "tools/datasets/borders.py"},
         ],
         "derived": {"seams": len(seams), "hedges": len(hedges), "buffers": len(buffers), "clients": len(clients), "tepid": len(tepid), "faults": len(faults), "gatherings": len(gatherings),
@@ -849,7 +856,7 @@ def main():
         "gatherings": gatherings,
         "flanks": flanks, "flank_index": flank_index,
         "levers": levers, "lever_index": lever_index,
-        "siege": siege, "borders": borders, "weight": weight, "stats": stats,
+        "siege": siege, "borders": borders, "weight": weight, "stats": stats, "news": news,
         "convergences": convergences,
         "currents": currents,
         "alarms": {"allies_cooling": allies_cooling, "rivals_warming": rivals_warming},

@@ -113,6 +113,7 @@ Pilot demo built on 2026-10-12: one full card (Serbia) with 18 stances and 43 re
 python tools/build.py        # validate data/ and write docs/data.json; exit 1 on errors
 python tools/datasets/worldbank.py   # weight: GDP, military spending, population (World Bank, 3 calls)
 python tools/datasets/borders.py     # neighbours: Wikidata P47 (4 calls)
+python tools/datasets/gdelt.py       # news heat: GDELT daily events, last 7 days + 4 weeks baseline (35 zips, cached)
 ```
 Facts about the atlas itself (start date, tokens spent) live in `data/site.yaml` and show on the Data page.
 

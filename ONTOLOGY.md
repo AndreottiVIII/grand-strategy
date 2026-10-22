@@ -320,6 +320,22 @@ dataset passes, one call each, no agents:
 - **Borders** (`tools/datasets/borders.py`, `data/datasets/wikidata/borders.json`): Wikidata P47
   "shares border with", land and sea, symmetrised, only between states the atlas knows.
 
+## News heat (dataset, added 2026-10-22)
+
+Davide: "vedere senza spendere quali paesi hanno generato tante notizie, e indicare le aree calde".
+`tools/datasets/gdelt.py` downloads the GDELT 1.0 daily event export (every event its monitors code
+from the world's news, with the two actors' country codes, a conflict class and the article count)
+for the last seven days and four weeks of baseline, and writes `data/datasets/gdelt/heat.json`:
+per actor the week's events and articles, the baseline (mean events per week over the four weeks
+before), **ratio** = week over baseline (smoothed), the conflict events and their ratio to the
+baseline, the conflict share, the mean Goldstein score. Two ranks: **surging** (ratio, among actors
+with at least 150 events) and **burning** (conflict share times conflict ratio, same floor, share at
+least 30%). Never a judgement: attention of English-language and major-language media, not truth;
+the francophone Sahel and the Pacific read quiet for lack of coverage. Shown beside the menu ("Hot
+this week") and as the `#/heat` lens on the home map (fill by ratio, four bins from 1.25x). Raw
+zips cached in `data/datasets/gdelt/raw/`, ignored by git. Its use in the update cycle: the scan
+starts from the hot countries instead of searching blind.
+
 ## Encirclement (added 2026-10-16)
 
 Luttwak on China: the neighbours are the first the logic of strategy summons. For every full card
