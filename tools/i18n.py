@@ -135,7 +135,7 @@ def cmd_merge():
     t = texts()
     bdir = D / "batches"
     added = 0
-    for p in sorted(x for x in bdir.glob("*.yaml") if not x.name.endswith(".out.yaml")):
+    for p in sorted(x for x in bdir.glob("*.yaml") if ".out" not in x.name):
         doc = yaml.safe_load(p.open(encoding="utf-8")) or {}
         items = doc.get("items") or []
         got = {it["hash"]: str(it["it"]).strip() for it in items if str(it.get("it") or "").strip()}
