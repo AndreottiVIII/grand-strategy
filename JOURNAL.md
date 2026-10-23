@@ -1,5 +1,15 @@
 # Journal
 
+## 2026-10-23 · Italian: site strings and cards complete; the cost of agents measured
+
+Resumed after the weekly reset. Site strings 361/361 (Sonnet), card texts 3,348/3,348 (Haiku, 27 batches of
+40k characters). What the day taught about cost: an agent's price is in its turns, not its text. Appending one
+item per Bash call cost 200-250k tokens a batch (60-100 calls, each resending the context); the Bash heredoc
+also mangles long blocks. The protocol that held: the agent reads the batch, writes the whole translation in
+two Write calls (`<batch>.out1.yaml`, `.out2.yaml`), reports; about 170-210k tokens per 40k-character batch on
+the meter, which on the plan's quota moved the week from 2% to about 8% for the whole job. Notes (1.6M chars)
+and rows (1.3M) remain English; same protocol when Davide calls. The merge now reads every `.out*.yaml` part.
+
 ## 2026-10-22 · Italian version: the layer, and the first translation batches
 
 Davide: "una versione in italiano e' fattibile?" Measured: 4.4M characters of hand-written text (cards 1.3M,
