@@ -16,7 +16,7 @@
 - 2026-10-16 · **Menu.** Thirteen entries on four rows; the ten reading pages could sit under one entry.
 - 2026-10-22 · **Vocabulary gaps seen by the W43 scans**: a `talks` action (a negotiation round with no outcome, Israel-Lebanon in Tampa), domestic turns with a foreign bearing (an election, a government change, an arrest warrant) that have no counterpart row, an envoy's meeting that is not a `visit`. Decide whether to widen `action` or keep them in the card text.
 - 2026-10-22 · **Stance moves suggested by the week, for the hand**: Hungary-Ukraine (Magyar-Zelenskyy reset, objection to accession talks lifted), Colombia-Israel (embassy in Jerusalem, FTA restored), eastern Libya-Turkey (2019 maritime deal approved), Egypt-Saudi (declared defence commitment). Rows are in; grades and trends only after reading the cards.
-- 2026-10-22 · **Italian translation**: site strings and cards done (23 Oct). Left: stance notes (2,721, 1.6M chars) and row summaries (4,619, 1.3M chars) in English; `python tools/i18n.py extract --lang=it --kinds=notes,rows --batch=40000`, one Haiku agent per batch writing two Write files, then merge. Measured cost about 0.2M tokens per batch on the meter.
+- 2026-10-22 · **Italian translation**: site strings and cards done (23 Oct). Stance notes and row summaries stay English (Davide, 23 Oct). Standing rule: new card texts, site strings and names are always translated, one pass a day at most (`i18n.py extract --kinds=cards,ui`, Haiku, two Write files per batch, merge).
 Ideas and deferred steps, with the date they were parked. Davide: "keep them in mind,
 like every improving idea that comes to you".
 

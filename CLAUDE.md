@@ -163,8 +163,9 @@ Between cycles, single news items go in as one dated row each ("nota alla scheda
 ## Italian version (Davide, 2026-10-22)
 
 English is the truth; Italian is a lookup by fingerprint of the English text (`tools/i18n.py`, `data/i18n/it/`,
-`docs/i18n/it.json`, the `?lang=it` toggle). Whatever is untranslated shows in English. **Rule: new content is
-translated once a day, not per edit**: at the end of a day that changed cards or site text, run `i18n.py extract`
+`docs/i18n/it.json`, the `?lang=it` toggle). Whatever is untranslated shows in English. Stance notes and relation rows stay English by Davide's choice
+(2026-10-23); card texts, site strings and names are translated. **Rule: every new text of those kinds is always
+translated, once a day at most, never per edit**: at the end of a day that changed cards or site text, run `i18n.py extract`
 for the kinds touched, one Haiku (notes, rows) or Sonnet (cards, site strings) agent per batch writing
 `<batch>.out.yaml` one item at a time, then `i18n.py merge`, build, push. Never more than one translation pass a
 day; never a pass on a day without new text. Site strings: collect the keys with `window.__i18nKeys()` on each
