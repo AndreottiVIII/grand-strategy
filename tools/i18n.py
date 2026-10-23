@@ -139,8 +139,8 @@ def cmd_merge():
         doc = yaml.safe_load(p.open(encoding="utf-8")) or {}
         items = doc.get("items") or []
         got = {it["hash"]: str(it["it"]).strip() for it in items if str(it.get("it") or "").strip()}
-        out = p.with_name(p.stem + ".out.yaml")
-        if out.exists():
+        outs = sorted(bdir.glob(p.stem + ".out*.yaml"))   # .out.yaml, .out1.yaml, .out2.yaml: parts written by the agents
+        for out in outs:
             try:
                 for it in (yaml.safe_load(out.open(encoding="utf-8")) or {}).get("items") or []:
                     if it.get("hash") and str(it.get("it") or "").strip():
@@ -154,7 +154,7 @@ def cmd_merge():
                 added += 1
         if items and all(it["hash"] in got for it in items):
             p.unlink()
-            if out.exists():
+            for out in outs:
                 out.unlink()
         else:
             print(f"  {p.name}: {sum(1 for it in items if it['hash'] in got)}/{len(items)} translated, kept")
