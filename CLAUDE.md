@@ -96,16 +96,16 @@ Pilot demo built on 2026-10-12: one full card (Serbia) with 18 stances and 43 re
   bundle per actor in `docs/actors/<id>.json` (card, stances both ways, relations both
   ways, votes): any future front end can read a state on its own. Refuses to
   write on any error (missing source, unknown id, grade or type outside the vocabulary).
-- `docs/`: the static site served by GitHub Pages (`index.html`, `app.js`, `style.css`,
-  `world.geojson` from Natural Earth 110m with Kosovo as `XKX`, and the compiled
-  `data.json`). D3 7.9 from cdnjs is the only dependency. The home is the world of
-  today, every country in its current flag (`iso2.json` maps Natural Earth ids to
-  flagcdn codes); clicking a country with a card turns the map into its point of view
-  (posture = dot screen, bond = band inside the border). Relations are cards under the
-  map, never arrows on it. The dossier has footnoted sources, flag and Wikipedia link. The look is a 1970s three-ink
-  print on cold white (green allies, navy partners, vermilion the hostile side; dot
-  screens for posture, denser is stronger; Archivo type): keep it that way, no fourth
-  colour.
+- `docs/`: the static site served by GitHub Pages (`index.html`, `app.js`, `style.css`, `world.geojson` from Natural Earth 110m
+  with Kosovo as `XKX`, `iso2.json` mapping Natural Earth ids to flagcdn codes, and the compiled `data.json`, slim, plus one
+  bundle per actor in `docs/actors/` fetched on demand). The look is a NORAD command-centre vector screen (phosphor
+  lines on dark, as in *WarGames*): VT323, Share Tech Mono and IBM Plex Mono from Google Fonts, the colours are the
+  tokens at the top of `style.css`: keep it that way, add no new one. D3 7.9 from cdnjs draws the maps; flags come from flagcdn and Luttwak's portrait from
+  Wikimedia Commons. The home is the world of today, every country in its current flag; clicking a country with a card turns
+  the map into its point of view (posture = dot screen, bond = band inside the border). Relations are cards under the map,
+  never arrows on it. The dossier has footnoted sources, flag and Wikipedia link. The nav has three entries: Map, Readings
+  (the computed pages: Seams, Clients, Faults, Gatherings, Currents, Theatres, Flanks, Levers, Watch) and About (Luttwak,
+  About, Data, This site).
 
 ## Commands
 

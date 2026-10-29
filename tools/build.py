@@ -45,6 +45,27 @@ STALE_DAYS = 365
 errors, warnings = [], []
 
 
+ABBREV = {"art", "arts", "no", "nos", "st", "dr", "mr", "mrs", "ms", "gen", "col", "sen", "rep", "cf", "vs", "inc", "ltd", "approx", "ca", "e.g", "i.e", "u.s", "u.k", "jan", "feb", "mar", "apr", "jun", "jul", "aug", "sep", "sept", "oct", "nov", "dec"}
+
+
+def first_sentence(t, limit=220):
+    """First sentence of a note for the computed tables: ends at a point or semicolon followed by a space and a capital
+    letter or a quote (never after Art., No., St., an initial), and is cut at the last word boundary before `limit`."""
+    t = re.sub(r"\s+", " ", str(t or "")).strip()
+    end = len(t)
+    for m in re.finditer(r"[.;](?=\s+[A-Z\"'‘“(])", t):
+        w = re.search(r"([A-Za-z.]+)$", t[:m.start()])
+        word = w.group(1).lower() if w else ""
+        if m.group() == "." and (word.rstrip(".") in ABBREV or len(word.rstrip(".")) == 1):
+            continue
+        end = m.start() + 1
+        break
+    out = t[:end]
+    if len(out) > limit:
+        out = out[:limit].rsplit(" ", 1)[0].rstrip(" ,;:-(") + "…"
+    return out
+
+
 def err(msg):
     errors.append(msg)
 
@@ -234,6 +255,17 @@ def main():
                 warn(f"{w}: no reading")
             check_date(a.get("last_verified"), f"{w} last_verified")
             a["stale"] = stale(a["last_verified"], today) if a.get("last_verified") else True
+            # watch dates (CLAUDE.md, update cycle step 2): `watch: [{date: 2026-11-03, what: "..."}]` in a card; a date already past is
+            # a warning naming the card, so the cards with a passed election, mandate or ruling go first in the next cycle
+            for i, wd in enumerate(a.get("watch") or []):
+                wdate, what = (wd.get("date"), wd.get("what") or wd.get("note") or "") if isinstance(wd, dict) else (wd, "")
+                check_date(wdate, f"{w} watch[{i}]")
+                try:
+                    due = date.fromisoformat(str(wdate)[:10]) if len(str(wdate)) >= 10 else None
+                except ValueError:
+                    due = None
+                if due and due < today:
+                    warn(f"{fid}: watch date {wdate} has passed" + (f" ({what})" if what else "") + " - review this card first")
 
     # --- stances
     for fid, s in stances.items():
@@ -342,9 +374,9 @@ def main():
             members_of.setdefault(rel["to"], set()).add(rel["from"])
     derived = 0
     for org, (name, article, url) in ALLIANCES.items():
-        for a in members_of.get(org, ()):
+        for a in sorted(members_of.get(org, ())):
             existing = {st["toward"] for st in (stances.get(a) or {}).get("stances", [])}
-            for b in members_of[org]:
+            for b in sorted(members_of[org]):
                 if a == b or b in existing:
                     continue
                 st = {"toward": b, "grade": "ally", "trend": "stable", "bond": "unknown", "since": None, "last_verified": today.isoformat(),
@@ -521,7 +553,7 @@ def main():
             if st.get("dataset") or st.get("reciprocal_of") or st.get("confidence") not in ("A", "B") or st["grade"] != "claimed_territory":
                 continue
             handterr[(a, st["toward"])] = st
-    first = lambda t: re.split(r"(?<=[.;])\s", str(t or ""), 1)[0][:220]
+    first = first_sentence
     readby = {}   # weight proxy: how many hand-written stances point at an actor
     for (a, x) in handst:
         readby[x] = readby.get(x, 0) + 1
@@ -629,7 +661,7 @@ def main():
     siege.sort(key=lambda r: (-r["share"], -r["hostile_weight"], r["a"]))
     # convergences, per actor: who shares one of its rivals and is not its ally (the table it has not sat at)
     convergences = {}
-    for a in {k[0] for k in handst}:
+    for a in sorted({k[0] for k in handst}):
         if is_org(a):
             continue
         rivals = {x for (p, x), st in handst.items() if p == a and st["grade"] in FAULT_HOSTILE and not is_org(x)}
@@ -675,7 +707,8 @@ def main():
     SNAP = DATA / "snapshots"
     SNAP.mkdir(exist_ok=True)
     snap_now = {f"{a}>{x}": [st["grade"], st.get("trend") or "stable"] for (a, x), st in handst.items()}
-    previous = sorted(SNAP.glob("*.json"))
+    # a second build on the same day must not compare today with today: the day's own snapshot is overwritten, never a baseline
+    previous = sorted(p for p in SNAP.glob("*.json") if p.stem < today.isoformat())
     changes = {"since": None, "grades": [], "trends": []}
     if previous:
         prev_path = previous[-1]
@@ -856,8 +889,11 @@ def main():
     site_meta = yaml.safe_load((DATA / "site.yaml").open(encoding="utf-8")) if (DATA / "site.yaml").exists() else {}
     MEMB = DATA / "datasets" / "wikidata" / "memberships.json"
     RECOG = DATA / "datasets" / "wikipedia" / "recognition.json"
-    def fdate(p):
-        return date.fromtimestamp(p.stat().st_mtime).isoformat() if p.exists() else None
+    fetched_p = DATA / "datasets" / "fetched.json"   # written by the dataset scripts: the day each dataset was fetched (a file time changes with every clone)
+    fetched = json.loads(fetched_p.read_text(encoding="utf-8")) if fetched_p.exists() else {}
+
+    def fdate(p, key):
+        return fetched.get(key) or (date.fromtimestamp(p.stat().st_mtime).isoformat() if p.exists() else None)
     stats = {
         "actors": {"total": len(actors), "full": sum(1 for a in actors.values() if a.get("card") == "full"),
                    "stub": sum(1 for a in actors.values() if a.get("card") != "full"), "by_type": dict(Counter(a.get("type") for a in actors.values()))},
@@ -872,9 +908,9 @@ def main():
                       "dependency_with_number": sum(1 for r in rows if r["layer"] == "dependency" and r.get("value") is not None)},
         "sources": {"unique": len(src_tier), "by_tier": dict(Counter(str(t) for t in src_tier.values()))},
         "datasets": [
-            {"name": "States and memberships", "publisher": "Wikidata and the organisations' official lists", "rows": len(json.loads(MEMB.read_text(encoding="utf-8"))) if MEMB.exists() else 0, "date": fdate(MEMB), "tier": 1, "tool": "tools/datasets/wikidata.py"},
-            {"name": "Recognition tables", "publisher": "Wikipedia, with its citations", "rows": sum(len(x) for v in json.loads(RECOG.read_text(encoding="utf-8")).values() for x in v.values() if isinstance(x, (list, dict))) if RECOG.exists() else 0, "date": fdate(RECOG), "tier": 3, "tool": "tools/datasets/recognition.py"},
-            {"name": "UN General Assembly recorded votes", "publisher": "UN Digital Library", "rows": len(records), "date": fdate(DATA / "datasets" / "unga" / "2026.json"), "tier": 1, "tool": "tools/datasets/unga_page.js + receive.py"},
+            {"name": "States and memberships", "publisher": "Wikidata and the organisations' official lists", "rows": len(json.loads(MEMB.read_text(encoding="utf-8"))) if MEMB.exists() else 0, "date": fdate(MEMB, "wikidata"), "tier": 1, "tool": "tools/datasets/wikidata.py"},
+            {"name": "Recognition tables", "publisher": "Wikipedia, with its citations", "rows": sum(len(x) for v in json.loads(RECOG.read_text(encoding="utf-8")).values() for x in v.values() if isinstance(x, (list, dict))) if RECOG.exists() else 0, "date": fdate(RECOG, "recognition"), "tier": 3, "tool": "tools/datasets/recognition.py"},
+            {"name": "UN General Assembly recorded votes", "publisher": "UN Digital Library", "rows": len(records), "date": fdate(DATA / "datasets" / "unga" / "2026.json", "unga"), "tier": 1, "tool": "tools/datasets/unga_page.js + receive.py"},
             {"name": "Weight: GDP, military spending, population", "publisher": "World Bank (military spending is SIPRI's series)", "rows": len(weight_ds.get("actors", {})), "date": weight_ds.get("source", {}).get("fetched"), "tier": 1, "tool": "tools/datasets/worldbank.py"},
             {"name": "News heat, last seven days", "publisher": "GDELT Project (1.0 daily event export)", "rows": len(news["actors"]) if news else 0, "date": news["fetched"] if news else None, "tier": 2, "tool": "tools/datasets/gdelt.py"},
             {"name": "Borders", "publisher": "Wikidata (P47 shares border with)", "rows": sum(len(v) for v in borders_ds.get("borders", {}).values()) // 2, "date": borders_ds.get("source", {}).get("fetched"), "tier": 2, "tool": "tools/datasets/borders.py"},

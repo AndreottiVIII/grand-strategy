@@ -60,12 +60,10 @@ ORGS = {
     "org-icc": ("International Criminal Court (Rome Statute)", "Q47488", "https://asp.icc-cpi.int/states-parties"),
 }
 
-# Natural Earth / our ids differ from ISO in a few cases
-ISO3_FIX = {"XKX": "XKX"}
-
 STATES_Q = """
 SELECT ?s ?sLabel ?iso3 ?iso2 ?capitalLabel ?coord ?article WHERE {
-  ?s wdt:P31 wd:Q3624078 .
+  { ?s wdt:P31 wd:Q3624078 }
+  UNION { VALUES ?s { wd:Q35 } }   # Denmark: Wikidata types the sovereign state as "Kingdom of Denmark" (no ISO code) and Q35 only as a "state" (id and P298 DNK checked through the API, 2026-10-29)
   FILTER NOT EXISTS { ?s wdt:P31 wd:Q3024240 }       # not a historical country
   FILTER NOT EXISTS { ?s wdt:P576 ?dissolved }         # not dissolved
   OPTIONAL { ?s wdt:P298 ?iso3 }
@@ -86,6 +84,15 @@ SELECT ?s ?iso3 ?org ?start ?end WHERE {
   OPTIONAL { ?st pq:P582 ?end }
 }
 """
+
+
+# when this dataset was fetched, for the Data page (build.py reads data/datasets/fetched.json)
+def stamp_fetched(key):
+    import datetime
+    p = ROOT / "data" / "datasets" / "fetched.json"
+    d = json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+    d[key] = datetime.date.today().isoformat()
+    p.write_text(json.dumps(d, indent=1, sort_keys=True), encoding="utf-8")
 
 
 def sparql(q):
@@ -184,8 +191,10 @@ def main():
     # Wikidata rows known to be wrong (checked by hand, 2026-10-16): Australia is an ASEAN dialogue partner, not a member
     WRONG = {("AUS", "org-asean")}
     members = [m for m in members if (m["iso3"], m["org"]) not in WRONG]
+    members.sort(key=lambda m: (m["org"], m["iso3"]))   # the same file on every run (the SPARQL rows come back in any order)
     json.dump(members, (OUT / "memberships.json").open("w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(f"{len(members)} current memberships in {len(ORGS)} organisations")
+    stamp_fetched("wikidata")
 
     # --- stubs for every state and organisation that has no actor file yet
     made = 0

@@ -88,6 +88,7 @@ a { color: var(--accent); }
 .lbl::before, .legend h3::before { content: "> "; }
 select { width: 100%; padding: 5px 8px; font-size: 13px; font-family: var(--font-ui); background: var(--paper); color: var(--ink); border: 1px solid var(--accent); border-radius: 0; text-transform: uppercase; letter-spacing: .04em; }
 select:focus { outline: none; box-shadow: 0 0 8px var(--accent); }
+#pov { text-overflow: ellipsis; letter-spacing: .02em; }   /* a long name ends in an ellipsis; the full text is the select's title */
 .tabs { display: flex; gap: 18px; margin: 4px 0 12px; }
 .tab { padding: 0; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; background: transparent; color: var(--accent); border: 0; cursor: pointer; }
 .tab::before { content: "[ "; color: var(--ink-3); } .tab::after { content: " ]"; color: var(--ink-3); }
@@ -434,7 +435,7 @@ body.og .stage { width: 1200px; height: 630px; overflow: hidden; }
   .page table.ledger-t, .relpanel table, .dossier table { display: block; overflow-x: auto; max-width: 100%; -webkit-overflow-scrolling: touch; }
   .relpanel { padding: 10px 14px; }
   .ledger-t td .why { max-width: 260px; }
-  .seams, .gatherings, .patrons, .cols2 { grid-template-columns: 1fr; }
+  .seams, .gatherings, .patrons, .cols2 { grid-template-columns: minmax(0, 1fr); }
   .stats { grid-template-columns: repeat(2, 1fr); gap: 8px 14px; }
   .stat b { font-size: 28px; }
   .page.prose .portrait { float: none; width: 200px; margin: 0 0 14px; }
@@ -460,6 +461,6 @@ body.og .stage { width: 1200px; height: 630px; overflow: hidden; }
 .theatre .tnews { font-family: var(--font-ui); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--c-rival); margin: -2px 0 6px; }
 
 /* watch: the two tables stacked, not side by side (Davide, 2026-10-29: headers were colliding) */
-#page-watch .cols2 { grid-template-columns: 1fr; }
+#page-watch .cols2 { grid-template-columns: minmax(0, 1fr); }
 #page-watch .ledger-t th { white-space: nowrap; }
-#page-watch .ledger-t { max-width: 820px; }
+#page-watch .ledger-t { max-width: min(820px, 100%); }

@@ -32,6 +32,13 @@ DAYS, BASE = args.get("days", 7), args.get("baseline", 28)
 # GDELT's own codes that are not states (regional actors); left out of the heat, listed in the output
 NOT_STATES = {"EUR", "AFR", "ASA", "MEA", "LAM", "NMR", "SAS", "EEC", "WST", "CAU", "CRB", "CFR", "SCN", "BLK", "PGS", "WAF", "EAF", "SAF", "NAF", "SEA", "OCE", "ARB", "IGO", "NGO", "UNO", "MUL", "ANT", "IOM"}
 
+# GDELT 1.0 spells East Timor TMP; the atlas, like ISO 3166, TLS
+ACTOR_CODE_FIX = {"TMP": "TLS"}
+# five states never appear as an actor country code in the daily files (Romania, Slovenia, Montenegro, Bosnia-Herzegovina, Kosovo:
+# checked on the raw files, no ROM/ROU/SVN/MNE/BIH/KSV on any actor), so they are counted by where the event happened: the
+# ActionGeo country in FIPS 10-4 (column 51), each pair checked against the place names in column 50 of the same file
+PLACE_CODE = {"RO": "ROU", "SI": "SVN", "MJ": "MNE", "BK": "BIH", "KV": "XKX", "TT": "TLS"}
+
 actors = {p.stem for p in (ROOT / "data" / "actors").glob("*.yaml")}
 today = datetime.date.today()
 days = [today - datetime.timedelta(days=i) for i in range(1, DAYS + BASE + 1)]   # yesterday back; today's file is partial
@@ -55,7 +62,9 @@ def count(p):
             t = line.rstrip("\n").split("\t")
             if len(t) < 58:
                 continue
-            codes = {t[7], t[17]} - {""}
+            codes = {ACTOR_CODE_FIX.get(c, c) for c in (t[7], t[17]) if c}
+            if t[51] in PLACE_CODE:
+                codes.add(PLACE_CODE[t[51]])
             try:
                 quad, g, n = int(t[29]), float(t[30]), int(t[33])
             except ValueError:
@@ -85,9 +94,11 @@ for d in days:
     done += 1
     print(f"  {d}: {sum(ev.values()):,} country-events" + ("" if target is week else " (baseline)"))
 
+if done == 0:   # every download failed: keep the previous heat.json and heat-<week>.json as they are
+    sys.exit("GDELT: no day could be read, nothing written (the previous heat.json stays)")
 base_weeks = max(1.0, BASE / 7)
 out = {"source": {"publisher": "GDELT Project", "url": "https://www.gdeltproject.org/", "dataset": "GDELT 1.0 daily event export",
-                  "fetched": today.isoformat(), "tier": 2, "note": "English-language and major-language media; attention, not truth"},
+                  "fetched": today.isoformat(), "tier": 2, "note": "English-language and major-language media; attention, not truth. ROU, SVN, MNE, BIH, XKX are counted by where the event happened (GDELT codes no actor to them), TLS from GDELT's TMP and its place code"},
        "week": {"from": (today - datetime.timedelta(days=DAYS)).isoformat(), "to": (today - datetime.timedelta(days=1)).isoformat(), "days": DAYS},
        "baseline_days": BASE, "files": done, "actors": {}, "not_actors": {}}
 ev, art, con, gold = week

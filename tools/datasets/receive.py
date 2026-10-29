@@ -16,6 +16,15 @@ ROOT = Path(__file__).resolve().parent.parent.parent
 UNGA = ROOT / "data" / "datasets" / "unga"
 
 
+def stamp_fetched(key):
+    """when this dataset was fetched, for the Data page (build.py reads data/datasets/fetched.json)"""
+    import datetime
+    p = ROOT / "data" / "datasets" / "fetched.json"
+    d = json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+    d[key] = datetime.date.today().isoformat()
+    p.write_text(json.dumps(d, indent=1, sort_keys=True), encoding="utf-8")
+
+
 class H(BaseHTTPRequestHandler):
     def _cors(self):
         # a public https page posting to localhost needs the private-network allowance too
@@ -37,6 +46,7 @@ class H(BaseHTTPRequestHandler):
                 UNGA.mkdir(parents=True, exist_ok=True)
                 out = UNGA / f"{parts[1]}.json"
                 out.write_text(json.dumps(obj, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+                stamp_fetched("unga")
                 msg = f"saved {out.name}: {len(obj['records'])} records"
             else:
                 msg = "ignored"

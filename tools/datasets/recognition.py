@@ -56,6 +56,15 @@ NAME_FIX = {
 }
 
 
+# when this dataset was fetched, for the Data page (build.py reads data/datasets/fetched.json)
+def stamp_fetched(key):
+    import datetime
+    p = ROOT / "data" / "datasets" / "fetched.json"
+    d = json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+    d[key] = datetime.date.today().isoformat()
+    p.write_text(json.dumps(d, indent=1, sort_keys=True), encoding="utf-8")
+
+
 def fetch(page):
     url = API + "?" + urllib.parse.urlencode({"action": "parse", "page": page, "prop": "wikitext|revid", "format": "json", "formatversion": 2, "redirects": 1})
     req = urllib.request.Request(url, headers={"User-Agent": UA})
@@ -198,6 +207,7 @@ def main():
         print(f"{target}: {len(yes)} rows parsed, {len(yes_ids & set(members))} UN members recognise, {len(withdrawn)} withdrawn, "
               f"{sum(1 for r in yes if r['ref'])} with a citation, {sum(1 for r in yes if r['date'])} with a date")
     json.dump(result, (OUT / "recognition.json").open("w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    stamp_fetched("recognition")
     (ROOT / "data" / "relations" / "_recognition.yaml").write_text(
         yaml.safe_dump({"generated": today, "relations": rel}, sort_keys=False, allow_unicode=True, width=200), encoding="utf-8")
     print(f"{len(rel)} rows -> data/relations/_recognition.yaml")

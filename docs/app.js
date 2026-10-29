@@ -19,31 +19,42 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
   const T = s => { if (LANG === "en" || s === null || s === undefined || s === "") return s; const k = I18N.t[h(String(s).trim())]; return k === undefined ? s : k; };
   if (LANG !== "en") data.actors.forEach(a => { if (I18N.names[a.id]) { a.name_en = a.name; a.name = I18N.names[a.id]; if (a.short && !/^[A-Z][A-Z.&\s]{1,6}$/.test(a.short)) { a.short_en = a.short; delete a.short; } } });
   // the site's own strings: rendered elements are matched by their English markup with numbers blanked, so one key serves every count
+  document.documentElement.lang = LANG;   // the page says which language it is in (screen readers, hyphenation, translation prompts)
   const UI_SEL = "p, h1, h2, h3, h4, li, th, summary, button, label, option, i, .row, .tag, .stamp, .lbl, .k, .hint, .src, .more, figcaption, .topnav span, .topnav a";
+  // cells, labels and spans that templates fill with the site's own words (2026-10-29): only the leaves, and only short ones
+  // (longer texts in a cell are data, which has its own lookup); a container that holds a block is never a string
+  const GEN_SEL = "td, b, em, span, div";
+  const GEN_BLOCK = "div, span, p, table, tr, ul, ol, li, h1, h2, h3, h4, td, details, select, button, svg";   // a cell, span or div that holds another is not itself a string
+  const isUi = el => el.matches && (el.matches(UI_SEL) || (el.matches(GEN_SEL) && !el.matches(".lst, .lst *") && !el.querySelector(GEN_BLOCK) && el.innerHTML.length <= 700 && /[A-Za-z]{3}/.test(el.textContent) && /[A-Za-z]{3}/.test(uiKey(el.innerHTML).replace(/<[^>]*>|⟨\w⟩/g, ""))));   // and some word of its own once names and numbers are blanked
+  const UI_ALL = UI_SEL + ", " + GEN_SEL;
   const NUM = /\d[\d,.]*%?/g;
   const escRe = x => x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const NAMES = [...new Set(data.actors.flatMap(a => [a.name_en || a.name, a.name, a.short].filter(Boolean)))].sort((p, q) => q.length - p.length);
-  const NAME_RE = new RegExp("\\b(?:" + NAMES.map(escRe).join("|") + ")\\b", "g");
+  // a run of names joined by ", " or " · " is one placeholder: a sentence about a list keeps one key whatever the list holds
+  // (\b would not see the end of "Perù" or "Côte d'Ivoire": a name ends where no letter or digit follows)
+  const NAME_ALT = "(?<![\\p{L}\\p{N}_])(?:" + NAMES.map(escRe).join("|") + ")(?![\\p{L}\\p{N}_])";
+  const NAME_RE = new RegExp(NAME_ALT + "(?:(?:, | · )" + NAME_ALT + ")*", "gu");
+  const LST = /<span class="lst">(?:[^<]|<(?!\/?span[ >])|<span[^>]*>[^<]*<\/span>)*<\/span>/g;   // a list of names and figures a template fills in: one placeholder, left as it is
   const HREF = /#\/(?:view|dossier|organisation|issue)\/[A-Za-z0-9_-]+/g;   // links to actors carry their id: a placeholder too
-  const TOKEN = /\u27e8[nah]\u27e9/g;
-  const uiKey = html => html.replace(HREF, "\u27e8h\u27e9").replace(NUM, "\u27e8n\u27e9").replace(NAME_RE, "\u27e8a\u27e9").replace(/\s+/g, " ").trim();
+  const TOKEN = /\u27e8[nahl]\u27e9/g;
+  const uiKey = html => html.replace(/ data-i18n="1"/g, "").replace(LST, "\u27e8l\u27e9").replace(HREF, "\u27e8h\u27e9").replace(NUM, "\u27e8n\u27e9").replace(NAME_RE, "\u27e8a\u27e9").replace(/\s+/g, " ").trim();
   function translateDom(root) {
     if (LANG === "en" || !root || !root.querySelectorAll) return;
-    const els = [root, ...root.querySelectorAll(UI_SEL)];
+    const els = [root, ...root.querySelectorAll(UI_ALL)];
     for (const el of els) {
-      if (!el.matches || !el.matches(UI_SEL) || el.dataset.i18n) continue;
+      if (!el.matches || el.dataset.i18n || !isUi(el)) continue;
       const html = el.innerHTML.trim();
       if (!html || html.length > 4000) continue;
       const it = I18N.t[h(uiKey(html))];
       if (!it) continue;
       const vals = [];   // numbers and names in order of appearance, put back into the translation's placeholders
-      html.replace(new RegExp(HREF.source + "|" + NUM.source + "|" + NAME_RE.source, "g"), m => { vals.push(m); return m; });
+      html.replace(new RegExp(LST.source + "|" + HREF.source + "|" + NUM.source + "|" + NAME_RE.source, "gu"), m => { vals.push(m); return m; });
       let i = 0;
       el.innerHTML = it.replace(TOKEN, () => vals[i++] ?? "");
       el.dataset.i18n = "1";
     }
   }
-  window.__i18nKeys = () => [...new Set([...document.querySelectorAll(UI_SEL)].map(el => el.innerHTML.trim()).filter(x => x && x.length <= 4000 && !/^\d[\d,.]*%?$/.test(x)).map(uiKey))];
+  window.__i18nKeys = () => [...new Set([...document.querySelectorAll(UI_ALL)].filter(isUi).map(el => el.innerHTML.trim()).filter(x => x && x.length <= 4000 && !/^\d[\d,.]*%?$/.test(x)).map(uiKey))];
   if (LANG !== "en") new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(n => { if (n.nodeType === 1) translateDom(n); }))).observe(document.body, { childList: true, subtree: true });
   if (LANG !== "en") translateDom(document.body);   // the static markup (menu, toggle) is not an added node: translate it once
   if (LANG !== "en") translateDom(document.body);   // the static markup (menu, toggle) is not an added node: translate it once
@@ -68,6 +79,9 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
     document.body.classList.add("og");
     document.querySelector(".stage").insertAdjacentHTML("afterbegin", `<div class="og-title"><h1>Grand <span>Strategy</span></h1><p>The logic of strategy, applied to every state</p></div>`);
   }
+  // Natural Earth ids that differ from the actor ids: the polygon takes the actor's id (the flag follows), once, at load
+  const GEO_ALIAS = { PSX: "PSE", GRL: "sub-greenland", SAH: "sub-western-sahara", FLK: "sub-falklands", NCL: "sub-new-caledonia", SOL: "sub-somaliland" };
+  world.features.forEach(f => { const to = GEO_ALIAS[f.id]; if (to && actors[to]) { if (iso2[f.id] && !iso2[to]) iso2[to] = iso2[f.id]; f.id = to; } });
   const feature = Object.fromEntries(world.features.map(f => [f.id, f]));
   let pov = null;                 // null = home: the world of today, flags and borders
   let view = "map";
@@ -115,14 +129,14 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
 
   // ---------- chrome
   document.getElementById("meta").innerHTML =
-    `Situation map · in construction<br>compiled ${data.generated} · ${data.progress ? `${data.progress.cards} of ${data.progress.total} cards` : `${fullActors.length} cards`}, ${data.actors.length} actors<br>${Object.values(data.stances).flat().length} stances · ${data.stats.relations.total} relations`;
+    `Situation map · in construction<br>compiled ${data.generated} · ${fullActors.length} cards of ${data.actors.length} actors<br>${Object.values(data.stances).flat().length.toLocaleString("en-GB")} stances · ${data.stats.relations.total.toLocaleString("en-GB")} relations`;
 
   const povSel = document.getElementById("pov");
   povSel.add(new Option("The world of today", ""));
-  const grpFull = document.createElement("optgroup"); grpFull.label = "With a grand-strategy card";
+  const grpFull = document.createElement("optgroup"); grpFull.label = T("With a grand-strategy card");
   fullActors.forEach(a => grpFull.appendChild(new Option(`The world as ${a.name} sees it`, a.id)));
   povSel.appendChild(grpFull);
-  const grpData = document.createElement("optgroup"); grpData.label = "Data only (UN votes, memberships, treaty allies)";
+  const grpData = document.createElement("optgroup"); grpData.label = T("Data only (UN votes, memberships, treaty allies)");
   data.actors.filter(a => a.card !== "full" && (hasVotes(a.id) || hasStances(a.id) || hasClubs(a.id) || hasRecog(a.id))).sort((x, y) => x.name.localeCompare(y.name))
     .forEach(a => grpData.appendChild(new Option(a.name, a.id)));
   povSel.appendChild(grpData);
@@ -130,8 +144,11 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
   // every screen is a URL (#/view/SRB/posture, #/dossier/SRB, #/organisation/org-eu ...) so the browser's back and forward work
   function navigate(h) { if (location.hash === h) apply(h); else location.hash = h; }
   window.addEventListener("hashchange", () => apply(location.hash));
+  // on a phone `body` is the scroll container (overflow-x: hidden on html and body), so the reset has to reach all three
+  function toTop() { window.scrollTo(0, 0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0; }
   function apply(h) {
-    const [kind, id, extra] = h.replace(/^#\/?/, "").split("/").map(decodeURIComponent);
+    let parts; try { parts = h.replace(/^#\/?/, "").split("/").map(decodeURIComponent); } catch (e) { parts = []; }   // a malformed %-escape in the address falls back to home
+    const [kind, id, extra] = parts;
     const clear = () => { homeLens = null; orgSel.value = ""; issueSel.value = ""; pov = null; povSel.value = ""; };
     if (kind === "view" && actors[id]) {
       pov = id; povSel.value = id; homeLens = null; orgSel.value = ""; issueSel.value = "";
@@ -139,6 +156,9 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
       mapMode = hasStances(id) ? "near" : "world";
       renderLegend(); setView("map");
     } else if (kind === "dossier" && actors[id]) {
+      // a dossier opened from a reading page or by address (no point of view to keep): the select and the "Situation map" tab point at this actor;
+      // from a map or from another dossier the point of view stays, because the dossier then says "as X sees it"
+      if ((!pov || !["map", "dossier"].includes(view)) && (actors[id].card === "full" || hasVotes(id) || hasStances(id) || hasClubs(id) || hasRecog(id))) { pov = id; povSel.value = id; }
       renderDossier(id);
     } else if (kind === "organisation" && actors[id]) {
       clear(); homeLens = { kind: "org", id }; orgSel.value = id; mapMode = "world"; renderLegend(); setView("map");
@@ -163,7 +183,8 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
     else if (kind === "about") setView("about");
     else if (kind === "colophon") { setView("site"); const c = document.getElementById("colophon"); if (c) c.scrollIntoView(); return; }
     else { clear(); mapMode = "world"; renderLegend(); setView("map"); }
-    window.scrollTo(0, 0);
+    povSel.title = povSel.selectedOptions[0] ? povSel.selectedOptions[0].text : "";
+    toTop();
   }
   function goHome() { navigate("#/"); }
   function setPov(id) { navigate(`#/view/${id}`); }
@@ -280,7 +301,7 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
     if (!pov && homeLens && homeLens.kind === "heat") {
       el.innerHTML = `<h3>News heat, ${NEWS ? fmtDay(NEWS.week.from) + " to " + fmtDay(NEWS.week.to) : "no data"}</h3>` +
         HEAT_BINS.map(([c, , lbl]) => `<div class="row"><span class="sw" style="background:${voteSwatch(c)};border-color:${voteBorder(c)}"></span>${lbl}</div>`).join("") +
-        `<div class="row"><span class="sw"></span>Its usual week, or fewer than 50 events</div><div class="row" style="color:var(--ink-3)">Events coded by GDELT from the world's news, counted per country and set against the country's own four-week average: a country is hot when it makes a multiple of its normal, so the loud are not always on top. Attention, not truth; English-language and major-language media.</div>`;
+        `<div class="row"><span class="sw"></span>Its usual week, or fewer than 50 events</div><div class="row" style="color:var(--ink-3)">Events coded by GDELT from the world's news, counted per country and set against the country's own four-week average: a country is hot when it makes a multiple of its normal, so the loud are not always on top. Attention, not truth; mostly English and other major-language media.</div>`;
       return;
     }
     if (!pov && homeLens && homeLens.kind === "issue") {
@@ -291,13 +312,25 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
       return;
     }
     if (!pov) {
-      el.innerHTML = `<h3>The world of today</h3><div class="row">Borders and flags as of ${data.generated}. Click a country that has a card to see the world as it sees it; ${fullActors.length} card${fullActors.length > 1 ? "s" : ""} so far<span class="cardlist">: ${fullActors.map(a => a.name).join(", ")}</span>.</div>`;
+      el.innerHTML = `<h3>The world of today</h3><div class="row">Borders and flags as of ${data.generated}. Click a country that has a card to see the world as it sees it; ${fullActors.length} card${fullActors.length > 1 ? "s" : ""} so far<span class="cardlist">: ${[...fullActors].sort((p, q) => p.name.localeCompare(q.name)).map(a => a.name).join(", ")}</span>.</div>`;
       return;
     }
     if (lens === "votes") {
       el.innerHTML = `<h3>Votes with ${actors[pov].name}</h3><div class="row" style="color:var(--ink-3)">UN General Assembly, recorded votes ${unga.span || ""}</div>` +
         ["v90", "v80", "v70", "v60", "vlow"].map(c => `<div class="row"><span class="sw" style="background:${voteSwatch(c)};border-color:${voteBorder(c)}"></span>${VOTE_LABEL[c]}</div>`).join("") +
         `<div class="row"><span class="sw"></span>Fewer than 20 common votes</div>`;
+      return;
+    }
+    if (lens === "clubs") {
+      el.innerHTML = `<h3>Organisations shared with ${actors[pov].name}</h3><div class="row" style="color:var(--ink-3)">Of ${[...clubs[pov]].filter(o => o !== "org-un").length} memberships besides the UN (NATO, EU, BRICS, OPEC...)</div>` +
+        ["c6", "c4", "c2", "c1"].map(c => `<div class="row"><span class="sw" style="background:${voteSwatch(c)} var(--land)"></span>${CLUB_LABEL[c]}</div>`).join("") +
+        `<div class="row"><span class="sw"></span>None in common</div>`;
+      return;
+    }
+    if (lens === "recognition") {
+      el.innerHTML = `<h3>Who recognises ${actors[pov].name}</h3>` +
+        ["yes", "withdrew", "no"].map(c => `<div class="row"><span class="sw" style="background:${voteSwatch(c)} var(--land)"></span>${REC_LABEL[c]}</div>`).join("") +
+        `<div class="row"><span class="sw"></span>Not a UN member / no data</div>`;
       return;
     }
     el.innerHTML = `<h3>Posture of ${actors[pov].name}</h3>` +
@@ -499,7 +532,8 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
 
     // non-state actors and seats
     const seats = g.append("g").attr("class", "seats");
-    const nonState = posture ? data.actors.filter(a => !feature[a.id] && (a.id === pov || stanceOf(a.id))) : [];
+    const seated = a => !!feature[a.id] || !!(a.coords && (a.coords[0] || a.coords[1]));   // an organisation without a headquarters sits at [0, 0] and is not drawn
+    const nonState = posture ? data.actors.filter(a => !feature[a.id] && seated(a) && (a.id === pov || stanceOf(a.id))) : [];
     seats.selectAll("rect").data(nonState).join("rect")
       .attr("x", a => proj(a.coords)[0] - 4).attr("y", a => proj(a.coords)[1] - 4).attr("width", 8).attr("height", 8)
       .attr("fill", a => COLOR(gradeOf(a.id))).attr("fill-opacity", a => LIGHT[gradeOf(a.id)] || 0).attr("stroke", a => COLOR(gradeOf(a.id))).attr("stroke-width", 1).attr("filter", "url(#glow)")
@@ -507,7 +541,7 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
       .on("mousemove", (ev, a) => { tipFor(a.id, a.name, ev); lightCard(a.id); }).on("mouseleave", () => { hideTip(); lightCard(null); }).on("click", (ev, a) => showDossier(a.id));
 
     // labels: display capitals for every lit actor
-    const labelled = !pov ? [] : !posture ? data.actors.filter(a => a.id === pov) : data.actors.filter(a => a.id === pov || stanceOf(a.id));
+    const labelled = !pov ? [] : !posture ? data.actors.filter(a => a.id === pov && seated(a)) : data.actors.filter(a => seated(a) && (a.id === pov || stanceOf(a.id)));
     const stacked = {}; // non-state actors sharing a seat (EU and NATO in Brussels) stack their labels
     const labels = g.append("g").attr("class", "labels").attr("pointer-events", "none");
     labels.selectAll("text").data(labelled).join("text")
@@ -540,13 +574,28 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
     svg.call(zoom);
     function frame(mode) {
       let t = d3.zoomIdentity;
-      const home = pov && feature[pov] ? path.bounds(feature[pov]) : null;
+      // a country that crosses the antimeridian (Fiji, Russia) has bounds as wide as the map: frame its largest piece that does not,
+      // and if there is none, the seat point with a fixed radius
+      const homeBounds = id => {
+        const f = feature[id], b = path.bounds(f);
+        if (b[1][0] - b[0][0] <= width / 2) return b;
+        let best = null, area = -1;
+        (f.geometry.type === "MultiPolygon" ? f.geometry.coordinates : [f.geometry.coordinates]).forEach(c => {
+          const pb = path.bounds({ type: "Feature", geometry: { type: "Polygon", coordinates: c } }), w = pb[1][0] - pb[0][0];
+          if (w <= width / 2 && w * (pb[1][1] - pb[0][1]) > area) { area = w * (pb[1][1] - pb[0][1]); best = pb; }
+        });
+        if (best) return best;
+        const [sx, sy] = proj(actors[id].coords);
+        return [[sx - 6, sy - 6], [sx + 6, sy + 6]];
+      };
+      const home = pov && feature[pov] ? homeBounds(pov) : null;
       if (mode === "near" && home) {
         const [[x0, y0], [x1, y1]] = home;
         const span = Math.max(x1 - x0, y1 - y0) * 9;
         const k = Math.max(1.5, Math.min(14, Math.min(width, height) / span));
         t = d3.zoomIdentity.translate(width / 2 - k * (x0 + x1) / 2, height / 2 - k * (y0 + y1) / 2).scale(k);
       }
+      if (![t.k, t.x, t.y].every(Number.isFinite)) t = d3.zoomIdentity;   // a map drawn while the pane has no size (hidden tab) must not leave a NaN transform
       svg.transition().duration(600).call(zoom.transform, t);
       svg.selectAll(".frame-btn").classed("is-on", function () { return this.dataset.mode === mode; });
     }
@@ -665,12 +714,12 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
     el.innerHTML = `
       <h2>Luttwak, the lamp</h2>
       <figure class="portrait"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Edward_Luttwak_in_2026.jpg/500px-Edward_Luttwak_in_2026.jpg" alt="Edward N. Luttwak in 2026"><figcaption>Edward N. Luttwak, 2026. Photo Elekes Andor, CC BY 4.0, Wikimedia Commons.</figcaption></figure>
-      <p class="honour">This site is built in honour of Edward N. Luttwak. It is not his work and he has not seen it; it is an attempt to look at the whole world, every state at once, with the lamp he built.</p>
+      <p class="honour">This site is built in honour of Edward N. Luttwak. It is not his work and was built without his involvement; it is an attempt to look at the whole world, every state at once, with the lamp he built.</p>
       <p class="lede">This atlas reads the world through Edward N. Luttwak's idea of grand strategy. Not because he is always right, but because his grid forces the questions that a map of flags leaves out: what does each actor want, with what, against what, and where do its own moves turn against it.</p>
       <h3>The paradoxical logic</h3>
-      <p>Luttwak's central claim (<i>Strategy: The Logic of War and Peace</i>, 1987) is that in any contest between adversaries the ordinary, linear logic of everyday life stops working. The worse road may be the better one precisely because it is unexpected; the weapon that works is the one the enemy adapts to, so it stops working; a victory pressed too far becomes a defeat, because it summons the coalition that undoes it. Strategy is paradoxical because the other side reacts. Every card in this atlas therefore ends with <b>paradoxes</b>: the places where an actor's own instruments undermine its own goals. Serbia's veto on Kosovo needs Moscow and Beijing, and Moscow and Beijing close the road to Brussels. Kosovo's proofs of statehood in the north cost it the patrons who could confer statehood.</p>
+      <p>Luttwak's central claim (<i>Strategy: The Logic of War and Peace</i>, 1987) is that strategy is paradoxical, because the other side reacts; the argument is set out under The work, below. Every card in this atlas therefore ends with <b>paradoxes</b>: the places where an actor's own instruments undermine its own goals. Serbia withholds its alignment with Brussels to keep UN cover on Kosovo, which rests on the Russian and Chinese veto, and the Commission ties the pace of its negotiations to normalisation with Kosovo. Kosovo's assertion of sovereignty in the north cost it three years of Brussels.</p>
       <h3>The levels</h3>
-      <p>Luttwak stacks conflict in levels that interact but do not sum: the technical, the tactical, the operational, the theatre strategy, and above them all <b>grand strategy</b>, where military force meets diplomacy, economics, alliances and persuasion, and where a state's whole external conduct can be read as one design. This atlas lives on the top level only. It does not model battles or armies; it models what states and state-like actors want, the means they use across the four domains (diplomatic, informational, military, economic), what constrains them, and how they see each other.</p>
+      <p>Luttwak stacks conflict in levels (set out under The work, below), and above them all sits <b>grand strategy</b>, where military force meets diplomacy, economics, alliances and persuasion, and where a state's whole external conduct can be read as one design. This atlas lives on the top level only. It does not model battles or armies; it models what states and state-like actors want, the means they use across the four domains (diplomatic, informational, military, economic), what constrains them, and how they see each other.</p>
       <h3>From the lamp to the data</h3>
       <p>Each actor with a full card carries: <b>objectives</b>, ranked; <b>means</b> by domain; <b>constraints</b>; <b>paradoxes</b>; and a short <b>reading</b>, the only free prose. Every claim has a source with its tier (official document, research, quality press, other) and a confidence grade: <b>A</b> an official document or two independent sources, <b>B</b> one good source, <b>C</b> press or our own inference, always shown.</p>
       <h3>Posture and bond</h3>
@@ -698,6 +747,7 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
   const seamsAround = id => SEAMS.filter(s => s.a === id || s.x === id);   // the seams this actor pulls on
   const SEAMS_ON_MAP = false;   // the dashed seam outline on the map: on once Davide approves the look
   const nameOf = id => esc(actors[id] ? (actors[id].short || actors[id].name) : id);
+  const poss = name => /s$/.test(name) ? name + "'" : name + "'s";   // "Serbia's", "United States'"
   const BUFFERS = data.buffers || [], HEDGES = data.hedges || [];
   function renderSeamsPage() {
     const el = document.getElementById("page-seams");
@@ -724,7 +774,7 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
       <h3 class="sec">Buffers · partner of two rivals</h3>
       <p class="lede">The lightest tier. A buffer is a partner of both of two actors that are rivals of each other, allied with neither: it belongs to neither and deals with both. Luttwak's Roman grand strategy kept such states between the empire and its enemies on purpose, cheap to hold and useful to both sides as long as they stayed between. The seam is the ally torn; the buffer is the partner that profits from the quarrel until it is forced to choose.</p>
       <div class="seams">${bufferBlocks || `<p class="empty">None written yet.</p>`}</div>
-      <details class="method"><summary>How seams are found</summary><p>A seam needs three legs: A hostile to X (rival or adversary), A allied to Y, X allied to Y (ally or reluctant ally). Every leg must be a written reading of confidence A or B, from either side of the leg. A treaty membership alone never counts, or every NATO member would be pulled between Cyprus and Turkey; provisional reciprocals never count; since 16 October a de facto alignment counts as an allied leg. A <b>hedger</b> needs the same hostile leg, one allied leg (ally, reluctant ally or de facto) and one partner leg (partner or reluctant partner, written A or B from either side); a <b>buffer</b> needs two partner legs and no allied one. A triple already counted as a seam is neither; organisations never hedge or buffer. ${SEAMS.length} seams, ${HEDGES.length} hedgers and ${BUFFERS.length} buffers so far, from ${fullActors.length} cards; the lists grow by themselves as cards are written on both sides of a rivalry.</p></details>`;
+      <details class="method"><summary>How seams are found</summary><p>A seam needs three legs: A hostile to X (rival or adversary), A allied to Y, X allied to Y (ally or reluctant ally). Every leg must be a written reading of confidence A or B, from either side of the leg. A treaty membership alone never counts, or every state in both NATO and the EU would be pulled between Cyprus and Turkey; provisional reciprocals never count; a de facto alignment counts as an allied leg. A <b>hedger</b> needs the same hostile leg, one allied leg (ally, reluctant ally or de facto) and one partner leg (partner or reluctant partner, written A or B from either side); a <b>buffer</b> needs two partner legs and no allied one. A triple already counted as a seam is neither; organisations never hedge or buffer. ${SEAMS.length} seams, ${HEDGES.length} hedgers and ${BUFFERS.length} buffers so far, from ${fullActors.length} cards; the lists grow by themselves as cards are written on both sides of a rivalry.</p></details>`;
     el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
   }
 
@@ -739,7 +789,7 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
     const patrons = [...byP.entries()].sort((p, q) => q[1].length - p[1].length || d3.sum(q[1], c => c.lean) - d3.sum(p[1], c => c.lean));
     el.innerHTML = `<h2>Clients</h2><p class="lede">A client is an actor that leans on another more than it is leaned on: it grades the other higher than the other grades it. Luttwak's name for the arrangement is the client system of the early Roman empire, where the patron buys security cheaply because the client's loyalty exceeds the patron's commitment.</p>
       <h3 class="sec">Patrons</h3><div class="patrons">` + (patrons.length ? patrons.map(([p, list]) => `<div class="patron"><a href="#/view/${p}">${nameOf(p)}</a> <span>${list.length} client${list.length > 1 ? "s" : ""}</span><div class="who">${list.map(c => `<a href="#/view/${c.client}">${nameOf(c.client)}</a> <i>+${c.lean}</i>`).join(" · ")}</div></div>`).join("") : `<p class="empty">No pair with both sides written yet.</p>`) + `</div>
-      <h3 class="sec">Who leans on whom</h3><table class="ledger-t"><thead><tr><th>Client</th><th>Lean</th><th>Patron</th><th>Client's reading</th><th>Patron's reading</th><th>Client</th></tr></thead><tbody>` +
+      <h3 class="sec">Who leans on whom</h3><table class="ledger-t"><thead><tr><th>Client</th><th>Lean</th><th>Patron</th><th>Client's reading</th><th>Patron's reading</th><th>Loyalty</th></tr></thead><tbody>` +
       CLIENTS.map(c => `<tr><td class="name"><a href="#/view/${c.client}">${nameOf(c.client)}</a></td><td class="lean">+${c.lean}</td><td class="name"><a href="#/view/${c.patron}">${nameOf(c.patron)}</a></td>
         <td><i style="color:${gradeBorder(c.cg)}">${c.cg.replace("_", " ")}</i> · ${esc(c.cb || "")}<div class="why">${esc(c.cnote)}</div></td>
         <td><i style="color:${gradeBorder(c.pg)}">${c.pg.replace("_", " ")}</i> · ${esc(c.pb || "")}<div class="why">${esc(c.pnote)}</div></td>
@@ -748,7 +798,7 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
       ((data.tepid || []).map(t => `<tr><td class="name"><a href="#/view/${t.warm}">${nameOf(t.warm)}</a></td><td class="name"><a href="#/view/${t.tepid}">${nameOf(t.tepid)}</a></td><td><i style="color:${gradeBorder(t.wg)}">${t.wg.replace("_", " ")}</i> · ${esc(t.wb || "")}<div class="why">${esc(t.wnote)}</div></td><td><i style="color:${gradeBorder(t.tg)}">${t.tg.replace("_", " ")}</i> · ${esc(t.tb || "")}<div class="why">${esc(t.tnote)}</div></td></tr>`).join("") || `<tr><td colspan="4" class="empty">None written yet.</td></tr>`) + `</tbody></table>
       <details class="method"><summary>How the lean is computed</summary>
       <p>Every posture is a step on one scale: <b>ally 4</b> · <b>reluctant ally 3</b> · <b>partner 2</b> · <b>reluctant partner 1</b> · <b>neutral 0</b> · <b>rival −1</b> · <b>adversary −2</b>. For a pair A and X the lean of A on X is <b>step(A's grade of X) − step(X's grade of A)</b>. If Serbia grades Hungary "ally" (4) and Hungary grades Serbia "partner" (2), Serbia leans on Hungary by 2: Serbia is the client, Hungary the patron. A lean of 1 is a tilt; 2 or more is a client in the full sense.</p>
-      <p>Three conditions, all of them in the build: both readings must be hand-written at confidence A or B (provisional reciprocals and treaty-floor stances never count, so a pair appears only when both cards exist); at least one side must be an alliance (ally or reluctant ally), because a lean between two partners is a mood, not a client system; and the lean must be positive, so each pair appears once, from the client's side. Two further guards (16 Oct): two allies who differ only in warmth, one reading ally and the other reluctant ally, are not a client system but a <b>tepid alliance</b>, listed apart below; and a patron must carry at least half the weight of its client, weight being measured for now by how many cards read each actor, so that a great power never appears as the client of a small one. The last column reads the client's bond: <b>loyal</b> if kin or affinity, <b>bought</b> if none or grievance, since a bought client holds only while the patron pays.</p>
+      <p>Three conditions, all of them in the build: both readings must be hand-written at confidence A or B (provisional reciprocals and treaty-floor stances never count, so a pair appears only when both cards exist); at least one side must be an alliance (ally or reluctant ally), because a lean between two partners is a mood, not a client system; and the lean must be positive, so each pair appears once, from the client's side. Two further guards: two allies who differ only in warmth, one reading ally and the other reluctant ally, are not a client system but a <b>tepid alliance</b>, listed apart below; and a patron must carry at least half the weight of its client, weight being measured for now by how many cards read each actor, so that a great power never appears as the client of a small one. The last column reads the client's bond: <b>loyal</b> if kin or affinity, <b>bought</b> if none or grievance, since a bought client holds only while the patron pays.</p>
       <p>${CLIENTS.length} pair${CLIENTS.length === 1 ? "" : "s"} so far, from ${fullActors.length} cards. The list grows by itself as cards are written on both sides of an alliance.</p></details>
 `;
     el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
@@ -771,10 +821,10 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
     const carriers = Object.entries(byActor).map(([id, m]) => [id, Object.values(m)]).sort((p, q) => q[1].length - p[1].length || actors[p[0]].name.localeCompare(actors[q[0]].name));
     const row = f => `<tr class="${f.mutual ? "mutual" : ""}"><td class="name"><a href="#/view/${f.a}">${nameOf(f.a)}</a></td><td><i style="color:${gradeBorder(f.grade)}">${f.grade.replace("_", " ")}</i></td><td class="name"><a href="#/view/${f.x}">${nameOf(f.x)}</a></td><td class="tr">${f.mutual ? "mutual" : "one-sided"}</td><td class="tend ${TEND[f.kind][f.trend] || ""}">${TREND_SIGN[f.trend] || ""} ${TEND[f.kind][f.trend] || f.trend}</td><td><div class="why">${esc(f.note)}</div></td></tr>`;
     const table = (kind, head) => `<h3 class="sec">${head}</h3><table class="ledger-t"><thead><tr><th>Actor</th><th>Posture</th><th>Toward</th><th>Direction</th><th>Tendency</th><th>Reading</th></tr></thead><tbody>${shown.filter(f => f.kind === kind).map(row).join("") || `<tr><td colspan="6" class="empty">None written yet.</td></tr>`}</tbody></table>`;
-    el.innerHTML = `<h2>Faults</h2><p class="lede">A fault is a relationship whose deep level contradicts its surface: the bond says one thing, the posture another. Luttwak's rule is that strategy works only when its levels are in harmony; a relationship resting on a fault is the one that breaks first. Two kinds matter. A <b>feud</b> is kin graded rival or adversary, the quarrel inside the family, the most intense because closeness multiplies the points of contact. A <b>Byzantine alliance</b> is an open wound graded ally: the Byzantine maxim that every enemy is a possible ally, and the alliance that holds over the wound because it must.</p>
+    el.innerHTML = `<h2>Faults</h2><p class="lede">A fault is a relationship whose deep level contradicts its surface: the bond says one thing, the posture another. Luttwak's rule is that strategy works only when its levels are in harmony; a relationship resting on a fault is the one that breaks first. Two kinds matter. A <b>feud</b> is kin graded rival, adversary or claimed territory, the quarrel inside the family, the most intense because closeness multiplies the points of contact. A <b>Byzantine alliance</b> is an open wound graded ally: the Byzantine maxim that every enemy is a possible ally, and the alliance that holds over the wound because it must.</p>
       ${table("feud", "Feuds · kin, hostile")}
       ${table("byzantine", "Byzantine alliances · grievance, allied")}
-      <details class="method"><summary>How faults are found</summary><p>Each stance carries a posture (today) and a bond (what would survive a change of government). A <b>feud</b> is bond kin with posture rival or adversary; a <b>Byzantine alliance</b> is bond grievance with posture ally or reluctant ally. A fault written by both sides of a pair is <b>mutual</b>; written by one side only, it says who feels it. The tendency reads the trend against the kind: a warming feud is <b>healing</b>, a cooling one <b>deepening</b>; a cooling Byzantine alliance is <b>tearing</b>. Only hand-written stances of confidence A or B count. Kin graded reluctant ally or reluctant partner is not a fault but a warning, <b>strained</b>, shown only in the ledger under the map. ${shown.length} faults so far, from ${fullActors.length} cards.</p></details>`;
+      <details class="method"><summary>How faults are found</summary><p>Each stance carries a posture (today) and a bond (what would survive a change of government). A <b>feud</b> is bond kin with posture rival, adversary or claimed territory; a <b>Byzantine alliance</b> is bond grievance with posture ally or reluctant ally. A fault written by both sides of a pair is <b>mutual</b>; written by one side only, it says who feels it. The tendency reads the trend against the kind: a warming feud is <b>healing</b>, a cooling one <b>deepening</b>; a cooling Byzantine alliance is <b>tearing</b>. Only hand-written stances of confidence A or B count. Kin graded reluctant ally or reluctant partner is not a fault but a warning, <b>strained</b>, shown only in the ledger under the map. ${shown.length} faults so far, from ${fullActors.length} cards.</p></details>`;
     el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
   }
 
@@ -782,7 +832,7 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
   const GATHERINGS = data.gatherings || [];
   const CONV = data.convergences || {};
   const STATE_LINE = { formed: "the counter-coalition has arrived", forming: "the coalition is taking shape", waiting: "summoned by the logic of strategy, not yet signed" };
-  const bar = g => { const n = Math.round(g.maturity * 10); return `<span class="bar">${"▮".repeat(n)}${"▯".repeat(10 - n)}</span> ${Math.round(g.maturity * 100)}% formed <span class="pairs">· ${g.allied_pairs} of the ${g.pairs} pairs inside the gathering are already allies</span>`; };
+  const bar = g => { const n = Math.round(g.maturity * 10); return `<span class="bar">${"▮".repeat(n)}${"▯".repeat(10 - n)}</span> <span class="pf">${Math.round(g.maturity * 100)}% formed</span> <span class="pairs">· ${g.allied_pairs} of the ${g.pairs} pairs inside the gathering are already allies</span>`; };
   const WEIGHT = data.weight || {}, SIEGE = data.siege || [];
   const pct = w => !w ? "0%" : w >= 0.095 ? Math.round(w * 100) + "%" : (w * 100).toFixed(1) + "%";
   function renderGatheringsPage() {
@@ -793,10 +843,10 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
       const unseen = g.unseen || [];
       return `<div class="gathering ${g.state}"><h3>The gathering against <a href="#/view/${g.x}">${nameOf(g.x)}</a> <span>${g.n} actors · <span class="w">${pct(g.weight)}</span> of the world against ${pct(g.x_weight)}</span></h3>
         <div class="mat">${bar(g)}<br><em>${g.state}: ${STATE_LINE[g.state]}</em></div>
-        ${enl.length ? `<div class="roll"><b>enlisted</b> ${who(enl)}</div>` : ""}
-        ${wait.length ? `<div class="roll"><b>waiting</b> ${who(wait)}</div>` : ""}
-        <div class="roll"><b>neighbours</b> ${g.neighbours.length} of ${nameOf(g.x)}'s ${g.n_neighbours} neighbours are in the gathering${g.neighbours.length ? ": " + g.neighbours.map(id => `<a href="#/view/${id}">${nameOf(id)}</a>`).join(", ") : ""}</div>
-        <div class="roll unseen"><b>unseen</b> ${unseen.length ? unseen.map(u => `<a href="#/view/${u.id}">${nameOf(u.id)}</a><i class="g">${u.grade ? u.grade.replace("_", " ") : "unread"}</i>`).join(" · ") + ` <span class="tr">· ${nameOf(g.x)} does not read ${unseen.length === 1 ? "this one" : "these"} as hostile</span>` : `none: ${nameOf(g.x)} reads every one of them as hostile`}</div></div>`;
+        ${enl.length ? `<div class="roll"><b>enlisted</b> <span class="lst">${who(enl)}</span></div>` : ""}
+        ${wait.length ? `<div class="roll"><b>waiting</b> <span class="lst">${who(wait)}</span></div>` : ""}
+        <div class="roll"><b>neighbours</b> <span class="rt">${g.neighbours.length} of ${poss(nameOf(g.x))} ${g.n_neighbours} neighbours are in the gathering</span>${g.neighbours.length ? `<span class="lst">: ${g.neighbours.map(id => `<a href="#/view/${id}">${nameOf(id)}</a>`).join(", ")}</span>` : ""}</div>
+        <div class="roll unseen"><b>unseen</b> ${unseen.length ? `<span class="lst">${unseen.map(u => `<a href="#/view/${u.id}">${nameOf(u.id)}</a><i class="g">${u.grade ? u.grade.replace("_", " ") : "unread"}</i>`).join(" · ")}</span>` + ` <span class="tr">· ${nameOf(g.x)} does not read ${unseen.length === 1 ? "this one" : "these"} as hostile</span>` : `<span class="rt">none: ${nameOf(g.x)} reads every one of them as hostile</span>`}</div></div>`;
     };
     const inView = g => g.state !== "waiting" || g.n >= 8;
     const main = GATHERINGS.filter(inView), crowds = GATHERINGS.filter(g => !inView(g));
@@ -844,8 +894,8 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
   function renderTheatresPage() {
     const el = document.getElementById("page-theatres");
     const PART = { hostility: "hostility", seams: "seams", faults: "feuds", claims: "claims", movement: "movement", friction: "friction" };
-    el.innerHTML = `<h2>Theatres</h2><p class="lede">The level below grand strategy in Luttwak's ladder: the theatre, where geography and several actors' forces add up, and where the readings on these pages become acute. Seventeen theatres, kept by hand; an actor may sit in more than one. The heat of a theatre is computed from what the atlas has read between its members: declared hostility, seams, feuds, claimed territory and movements with stakes.</p>
-      <div class="tmap-wrap"><svg id="tmap"></svg><div class="tmap-note">scroll to zoom · drag to pan · click a country to name its theatre, click again to return</div></div>
+    el.innerHTML = `<h2>Theatres</h2><p class="lede">The level below grand strategy in Luttwak's ladder: the theatre, where geography and several actors' forces add up, and where the readings on these pages become acute. There are ${THEATRES.length} theatres, kept by hand; an actor may sit in more than one. The heat of a theatre is computed from what the atlas has read between its members: declared hostility, seams, feuds, claimed territory and movements with stakes.</p>
+      <div class="tmap-wrap"><svg id="tmap"></svg><div class="tmap-note">scroll to zoom · drag to pan · click a zone to outline its members, click again to return</div></div>
       <p class="how">Heat is the sum of the weights between the members of a theatre, divided by the number of possible pairs, so a small dense theatre is not outweighed by a large one; 100 is the hottest theatre today, the others are scaled to it. Theatres whose members have few cards yet read cold for lack of data, not for peace: the card count says how far each one is written.</p>
       <div class="theatres">` + THEATRES.map(t => `<div class="theatre" data-id="${t.id}"><h3>${esc(t.name)} <span>${t.index}</span></h3>
         <div class="hbar"><span style="width:${t.index}%"></span></div>
@@ -853,7 +903,7 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
         <div class="parts">${Object.entries(t.parts).filter(([, v]) => v).map(([k, v]) => `<i>${PART[k]} ${v}</i>`).join(" · ") || "<i>nothing read yet</i>"} <em>· ${t.cards} of ${t.members.length} members with a card</em></div>
         <table class="top">${t.top.map(r => `<tr><td><a href="#/view/${r.a}">${nameOf(r.a)}</a></td><td><b style="color:${gradeBorder(r.grade)}">${r.grade.replace("_", " ")}</b></td><td><a href="#/view/${r.x}">${nameOf(r.x)}</a></td><td><u>${r.trend && r.trend !== "stable" ? TREND_SIGN[r.trend] + " " + r.trend : ""}</u></td><td class="w">${r.weight}</td></tr>`).join("")}</table>
       </div>`).join("") + `</div>
-      <details class="method"><summary>How heat is computed</summary><p>On the map each theatre is a zone, a circle of hand-set radius around the theatre's centre, lit in proportion to its heat; the countries inside are not coloured, because the heat belongs to the ground where the forces meet, not to the actors who send them. Click a zone to outline its members; click it again to return to the world. For every pair of members of a theatre the build adds: adversary 16, rival 6, claimed territory 6, a reluctant ally or reluctant partner 1, an ally cooling or a rival warming 3; for every feud inside the theatre 6; for every seam whose three actors are inside it 4. Adversaries weigh very high, rivals high, reluctant postures low. Only hand-written stances of confidence A or B count. The sum is divided by the number of possible pairs among the members, and the result is scaled so that the hottest theatre reads 100. The list of theatres and their members is kept by hand in data/theatres.yaml; organisations are never members. The line "this week in the news" is the Watch page's heat summed over the members: their events of the last seven days against their own four-week normal, and the share of them that is conflict; attention, not a reading. On the map the members of every theatre are lit with its heat, the hottest on top; click a country to see the hottest theatre it sits in, click the lit theatre again to return to the world, or click a theatre below to light it alone.</p></details>`;
+      <details class="method"><summary>How heat is computed</summary><p>On the map each theatre is a zone, a circle of hand-set radius around the theatre's centre, lit in proportion to its heat; the countries inside are not coloured, because the heat belongs to the ground where the forces meet, not to the actors who send them. Click a zone to outline its members; click it again to return to the world. For every pair of members of a theatre the build adds: adversary 16, rival 6, claimed territory 6, a reluctant ally or reluctant partner 1, an ally cooling or a rival warming 3; for every feud inside the theatre 6; for every seam whose three actors are inside it 4. Adversaries weigh very high, rivals high, reluctant postures low. Only hand-written stances of confidence A or B count. The sum is divided by the number of possible pairs among the members, and the result is scaled so that the hottest theatre reads 100. The list of theatres and their members is kept by hand in data/theatres.yaml; organisations are never members. The line "this week in the news" is the Watch page's heat summed over the members: their events of the last seven days against their own four-week normal, and the share of them that is conflict; attention, not a reading.</p></details>`;
     drawTheatreMap();
     el.querySelectorAll(".theatre").forEach(d => d.onclick = ev => { if (ev.target.closest("a")) return; const on = d.classList.toggle("is-on"); el.querySelectorAll(".theatre").forEach(o => { if (o !== d) o.classList.remove("is-on"); }); drawTheatreMap(on ? d.dataset.id : null); });
     el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
@@ -905,7 +955,7 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
           if (d) d.classList.add("is-on");
           drawTheatreMap(t.id);
         })
-        .append("title").text(`${t.name} · ${t.index}`);
+        .append("title").text(`${T(t.name)} · ${t.index}`);
     });
     if (chosen) {
       const col = heatColor(chosen.index);
@@ -919,7 +969,7 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
       const [cx, cy] = chosen.centre ? proj(chosen.centre) : [d3.mean(cs, c => c[0]), d3.mean(cs, c => c[1])];
       g.append("text").attr("class", "tl").attr("x", cx).attr("y", cy).attr("text-anchor", "middle").attr("dominant-baseline", "middle")
         .attr("font-family", css("--font-ui")).attr("font-size", 12).attr("letter-spacing", ".12em").attr("fill", heatColor(chosen.index)).attr("paint-order", "stroke").attr("stroke", css("--paper")).attr("stroke-width", 4)
-        .text(`${chosen.name.toUpperCase()} ${chosen.index}`);
+        .text(`${T(chosen.name).toUpperCase()} ${chosen.index}`);
     }
   }
 
@@ -970,10 +1020,10 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
       const rd = (id, g) => g ? `${nameOf(id)} reads <i style="color:${gradeBorder(g)}">${g.replace("_", " ")}</i>` : `${nameOf(id)} <span class="tr">has not written</span>`;
       const seen = new Set();
       const lines = pr.rows.sort((a, b) => KIND_ORDER.indexOf(a.kind) - KIND_ORDER.indexOf(b.kind) || a.a.localeCompare(b.a)).filter(f => { const key = f.kind + "|" + String(f.value); if (seen.has(key)) return false; seen.add(key); return true; })
-        .map(f => `<div class="lever"><b>${f.kind}</b><span class="from">${nameOf(f.a)}'s card</span> ${esc(firstSentence(f.summary))} <span class="badge ${f.confidence}">${f.confidence}</span></div>`).join("");
+        .map(f => `<div class="lever"><b>${f.kind}</b><span class="from">${poss(nameOf(f.a))} card</span> ${esc(firstSentence(f.summary))} <span class="badge ${f.confidence}">${f.confidence}</span></div>`).join("");
       return `<div class="seam-block lever-block"><h3><a href="#/view/${p}">${nameOf(p)}</a> <span class="x">·</span> <a href="#/view/${q}">${nameOf(q)}</a> <span>${rd(p, gp)}; ${rd(q, gq)}</span></h3>${lines}</div>`;
     });
-    el.innerHTML = `<h2>Levers</h2><p class="lede">The logic of conflict in the grammar of commerce. In 1990 Luttwak wrote that with the great wars over, states would carry their rivalries into the economy, with capital for firepower, market penetration for garrisons and research for armament: <i>geo-economics</i>. The atlas keeps a thousand dependency rows with a number in them, energy, trade, debt, investment, arms, troops. This page is the first cut of the lever: for every pair of actors of which at least one reads the other as rival or adversary, what still binds them materially. The gas a bloc buys from the power it sanctions, the market a rival cannot do without, the ground an enemy holds. Heaviest pairs first (the two weights multiplied, so a pair counts when both sides matter); one line per lever, from the card that wrote it, cut to its first sentence: the full row is in the dossier.</p>
+    el.innerHTML = `<h2>Levers</h2><p class="lede">The logic of conflict in the grammar of commerce. In 1990 Luttwak wrote that with the great wars over, states would carry their rivalries into the economy, with capital for firepower, market penetration for garrisons and research for armament: <i>geo-economics</i>. The atlas keeps ${STATS && STATS.relations ? Number(STATS.relations.dependency_with_number).toLocaleString("en-GB") : "many"} dependency rows with a number in them: energy, trade, debt, investment, bases, arms and remittances. This page is the first cut of the lever: for every pair of actors of which at least one reads the other as rival or adversary, what still binds them materially. The gas a bloc buys from the power it sanctions, the market a rival cannot do without, the ground an enemy holds. Heaviest pairs first (the two weights multiplied, so a pair counts when both sides matter); one line per lever, from the card that wrote it, cut to its first sentence: the full row is in the dossier.</p>
       <div class="levers">${blocks.join("") || "<p class='empty'>None written yet.</p>"}</div>
       <details class="method"><summary>How levers are found</summary><p>Every relation row of the dependency layer that carries a value, written from either card, between two actors of which at least one grades the other rival or adversary in a hand-written stance of confidence A or B. The row is written from the card's side and describes the link, so it does not by itself say which side depends: the line says. A lever written from both cards with the same measure shows once. Organisations count here, since the dependency is material (the Union buys gas) and not a vote. ${pairs.size} pairs, ${LEVERS.length} rows, out of ${(STATS && STATS.relations && STATS.relations.dependency_with_number) || "–"} dependency rows with a number. Next cuts, if this one holds: who holds the handle as a field of its own, and the levers between partners that could turn.</p></details>`;
     el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
@@ -994,7 +1044,7 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
     const D = S.derived || {};
     const snaps = S.snapshots || [];
     el.innerHTML = `<h2>Data</h2>
-      <p class="lede">What the atlas is, counted. Compiled ${esc(data.generated)} from ${n(S.actors.full)} cards and ${n(S.sources.unique)} distinct sources${tok.total_millions ? `, with about <b>${tok.total_millions} million tokens</b> of model work since ${esc(site.started || "")}` : ""}. Last change to the repository: <span id="lastcommit">reading…</span>.</p>
+      <p class="lede">What the atlas is, counted. Compiled ${esc(data.generated)} from ${n(S.actors.full)} cards and ${n(S.sources.unique)} distinct sources${tok.total_millions ? `, with about <b>${tok.total_millions} million tokens</b> of model work since ${esc(site.started ? new Date(site.started + "T00:00:00").toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" }) : "")}` : ""}. Last change to the repository: <span id="lastcommit">reading…</span>.</p>
       <div class="stats">${tile(n(S.actors.total), "actors")}${tile(n(S.actors.full), "full cards")}${tile(n(S.stances.hand), "readings written")}${tile(n(S.relations.total), "relation rows")}${tile(n(S.sources.unique), "sources")}${tile(tok.total_millions ? tok.total_millions + "M" : "–", "tokens")}</div>
       <h3 class="sec">How it is built</h3>
       <p class="how">One file per actor in three folders, the card, its postures, its relations, all in plain YAML, plus the datasets. The build (<code>tools/build.py</code>) validates every file, ids against the actor list, grades and types against closed vocabularies, dates, a source with a tier on every claim, and refuses to write on any error. It then derives the treaty allies from the memberships, mirrors every unanswered reading as a provisional one at confidence C, computes the pages (seams, buffers, clients, faults, gatherings, encirclement, flanks, levers, currents, theatres), keeps a snapshot of every grade so the next build can say what moved, and writes the JSON the site renders: one main file${(S.payload || {}).main_bytes ? ` (${(S.payload.main_bytes / 1e6).toFixed(1)} MB, ${(S.payload.main_gzip / 1e6).toFixed(2)} MB compressed)` : ""} for the map and the computed pages, and one small bundle per actor, fetched only when you open its dossier or its point of view, with the card texts, the notes and the sources. No fact lives in the site code. Data, method, decision log and code are public: <a href="https://github.com/AndreottiVIII/grand-strategy" target="_blank" rel="noopener">AndreottiVIII/grand-strategy</a>.</p>
@@ -1011,15 +1061,15 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
       <h3 class="sec">Datasets · the floor</h3>
       <table class="ledger-t"><thead><tr><th>Dataset</th><th>Publisher</th><th>Rows</th><th>Taken on</th><th>Tier</th><th>Tool</th></tr></thead><tbody>${ds}</tbody></table>
       <h3 class="sec">Derived · what the build computes</h3>
-      <div class="stats">${tile(n(D.seams), "seams")}${tile(n(D.hedges), "hedgers")}${tile(n(D.buffers), "buffers")}${tile(n(D.clients), "client pairs")}${tile(n(D.faults), "faults")}${tile(n(D.gatherings), "gatherings")}${tile(n(D.siege), "encirclements")}${tile(n(D.flanks_open), "open flanks")}${tile(n(D.levers), "levers")}${tile(n(D.theatres), "theatres")}${tile(n(D.derived_allies), "treaty allies derived")}</div>
+      <div class="stats">${tile(n(D.seams), "seams")}${tile(n(D.hedges), "hedging pairs")}${tile(n(D.buffers), "buffer pairs")}${tile(n(D.clients), "client pairs")}${tile(n(D.faults), "faults")}${tile(n(D.gatherings), "gatherings")}${tile(n(D.siege), "encirclements")}${tile(n(D.flanks_open), "open flanks")}${tile(n(D.levers), "levers")}${tile(n(D.theatres), "theatres")}${tile(n(D.derived_allies), "treaty allies derived")}</div>
       <h3 class="sec">Last build and what moved</h3>
-      <p class="how">Compiled ${esc(data.generated)}. Snapshots of every grade kept since ${esc(snaps[0] || "–")} (${snaps.length}); since the previous one${CHANGES.since ? ` (${esc(CHANGES.since)})` : ""}: ${n(CHANGES.grades.length)} grade${CHANGES.grades.length === 1 ? "" : "s"} and ${n(CHANGES.trends.length)} trend${CHANGES.trends.length === 1 ? "" : "s"} changed${CHANGES.grades.length || CHANGES.trends.length ? `, listed on the <a href="#/currents">Currents</a> page` : ""}. The atlas is updated on the owner's call, never on a calendar: datasets first (free), then the watch dates, then a regional scan that lists the cards an event touched, then those cards only.</p>
+      <p class="how">Compiled ${esc(data.generated)}. Snapshots of every grade kept since ${esc(snaps[0] || "–")} (${snaps.length}); since the previous one${CHANGES.since ? ` (${esc(CHANGES.since)})` : ""}: ${n(CHANGES.grades.length)} grade${CHANGES.grades.length === 1 ? "" : "s"} and ${n(CHANGES.trends.length)} trend${CHANGES.trends.length === 1 ? "" : "s"} changed${CHANGES.grades.length || CHANGES.trends.length ? `, listed on the <a href="#/currents">Currents</a> page` : ""}. The atlas is updated on the editor's call, never on a calendar (so far, once a week): the datasets first (free), then the news heat and the watch dates, then a pass over Wikipedia's current-events pages that proposes rows, sorted by hand, then a fresh reading of the cards an event touched.</p>
       <h3 class="sec">Cost</h3>
       <p class="how">${tok.total_millions ? `About ${tok.total_millions} million tokens as of ${esc(tok.as_of || "")}: ${esc(tok.note || "")}.` : "Not recorded."} Recorded per card in the decision log.</p>`;
     el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
     fetch("https://api.github.com/repos/AndreottiVIII/grand-strategy/commits/main").then(r => r.json()).then(c => {
       const lc = document.getElementById("lastcommit");
-      if (lc && c && c.commit) lc.innerHTML = `${esc(c.commit.committer.date.slice(0, 10))} · ${esc(c.commit.message.split("\n")[0])}`;
+      if (lc && c && c.commit) lc.innerHTML = esc(new Date(c.commit.committer.date).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" }));
       else if (lc) lc.textContent = "see the repository";
     }).catch(() => { const lc = document.getElementById("lastcommit"); if (lc) lc.textContent = "see the repository"; });
   }
@@ -1036,25 +1086,25 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
       <h3>Posture and bond</h3>
       <p>How one actor sees another is recorded on two axes. The <b>posture</b> is the relationship today, on a closed scale: own territory, claimed but not controlled, ally, reluctant ally, partner, reluctant partner, neutral, rival, adversary. "Adversary" is kept for mortal enemies, where the other's existence or regime is the problem; nearly all bad relationships are rivalries. The grade follows the structural position, never the rhetoric of a communiqué: two members of the same alliance with open friction are reluctant allies, not rivals. The <b>bond</b> is what lies under the posture and would survive a change of government: kin, affinity, none, or grievance. On the map the posture is the colour of the outline and of the light inside a country; the bond is a band inside the border; a dashed band marks a partner aligned with the actor as a bloc, without a treaty.</p>
       <h3>Relations</h3>
-      <p>Under the postures sit the relation rows, in four layers: <b>objectives</b> (what an actor wants from another), <b>alignments</b> (treaties, memberships, recognitions), <b>dependencies</b> (energy, trade, debt, arms, remittances, with numbers) and <b>actions</b> (dated events: votes, sanctions, visits, exercises). The datasets are the floor: memberships from Wikidata and official lists, recognition tables from Wikipedia with their citations, every recorded vote of the UN General Assembly since 2022 from the UN Digital Library. The cards are the reading on top of that floor. A lighter floor still is the <b>Watch</b>: every week the events GDELT codes from the world's news are counted per country and set against the country's own four-week average, Luttwak's Byzantine rule of monitoring the other continuously; attention, not truth, kept apart from the cards, and a pointer for where the next update should look.</p>
+      <p>Under the postures sit the relation rows, in four layers: <b>objectives</b> (what an actor wants from another), <b>alignments</b> (treaties, memberships, recognitions), <b>dependencies</b> (energy, trade, debt, arms, remittances, with numbers) and <b>actions</b> (dated events: votes, sanctions, visits, exercises). The datasets are the floor: memberships from Wikidata and official lists, recognition tables from Wikipedia with their citations, every recorded vote of the UN General Assembly since 2022 from the UN Digital Library. The cards are the reading on top of that floor. A lighter floor still is the <b>Watch</b>: the events GDELT codes from the world's news in the last seven days are counted per country and set against the country's own four-week average, Luttwak's Byzantine rule of monitoring the other continuously; attention, not truth, kept apart from the cards, and a pointer for where the next update should look.</p>
       <h3>Seams</h3>
-      <p>A <b>seam</b> is an actor pulled two ways: an ally of two actors that are rivals or adversaries of each other. Greece between Israel and Turkey, the United States between Saudi Arabia and the Emirates, Italy between Hungary and Ukraine. The word is Luttwak's. In <i>Strategy</i> he describes <b>relational manoeuvre</b> as the style that aims not at the enemy's strength but at his specific weaknesses, his doctrine, his habits and the <i>seams</i> between him and his allies, where a small force can obtain a large effect. The Byzantine book shows the same idea at the scale of an empire that survived a thousand years by dividing its enemies rather than destroying them. The Seams page lists every such triangle the atlas can see; the map marks them for the actor you are looking at. They are computed from hand-written postures of confidence A or B only. Under the seams sit two lighter tiers. The <b>hedger</b> is allied with one of two rivals and a partner of the other: it has chosen a side and keeps the door open, insurance against both outcomes. The <b>buffer</b> is the partner of both and the ally of neither, the state that belongs to neither and deals with both, which Rome kept on purpose between itself and its enemies; the buffer profits from the quarrel until it is forced to choose.</p>
+      <p>A <b>seam</b> is an actor pulled two ways: an ally of two actors that are rivals or adversaries of each other. Greece between Israel and Turkey, the United States between Saudi Arabia and the Emirates, Hungary between Croatia and Serbia. The word is Luttwak's. In <i>Strategy</i> he describes <b>relational manoeuvre</b> as the style that aims not at the enemy's strength but at his specific weaknesses, his doctrine, his habits and the <i>seams</i> between him and his allies, where a small force can obtain a large effect. The Byzantine book shows the same idea at the scale of an empire that survived a thousand years by dividing its enemies rather than destroying them. The Seams page lists every such triangle the atlas can see. They are computed from hand-written postures of confidence A or B only. Under the seams sit two lighter tiers. The <b>hedger</b> is allied with one of two rivals and a partner of the other: it has chosen a side and keeps the door open, insurance against both outcomes. The <b>buffer</b> is the partner of both and the ally of neither, the state that belongs to neither and deals with both, which Rome kept on purpose between itself and its enemies; the buffer profits from the quarrel until it is forced to choose.</p>
       <h3>Clients</h3>
-      <p>A <b>client</b> is an actor that leans on another more than it is leaned on: it grades the other higher than the other grades it. Luttwak's name for the arrangement is the <b>client system</b> of the early Roman empire, described in <i>The Grand Strategy of the Roman Empire</i>: the hegemonic empire of the Julio-Claudians ruled through client kings whose loyalty exceeded Rome's commitment to them, which is why it was cheap. The Clients page measures the <b>lean</b> of every pair the atlas has read from both sides, in steps on the posture scale; the higher-grading side is the client, the other the patron. A client bound by kin or affinity is loyal; one bound by nothing, or by a grievance, is bought, and holds as long as the patron pays. The tepid ally, graded "ally" by its patron and answering "partner", is the costly kind, the one Rome subsidised. In the ledger under the map the lean column shows, for each counterpart, who leans on whom.</p>
+      <p>A <b>client</b> is an actor that leans on another more than it is leaned on: it grades the other higher than the other grades it. Luttwak's name for the arrangement is the <b>client system</b> of the early Roman empire, described in <i>The Grand Strategy of the Roman Empire</i>: the hegemonic empire of the Julio-Claudians ruled through client kings whose loyalty exceeded Rome's commitment to them, which is why it was cheap. The Clients page measures the <b>lean</b> of every pair the atlas has read from both sides, in steps on the posture scale; the higher-grading side is the client, the other the patron. A client bound by kin or affinity is loyal; one bound by nothing, or by a grievance, is bought, and holds as long as the patron pays. The tepid ally, graded "ally" by its patron and answering "reluctant ally", is the costly kind, the one Rome subsidised. In the ledger under the map the lean column shows, for each counterpart, who leans on whom.</p>
       <h3>Faults</h3>
-      <p>A <b>fault</b> is a relationship whose deep level contradicts its surface. The frame is Luttwak's structure of <b>levels</b>: in <i>Strategy</i> success at one level can be undone at a higher one, and a strategy works only when its levels are in harmony. Here the levels are two: the bond, which would survive a change of government, and the posture of today. Two contradictions matter. The <b>feud</b> is kin graded rival or adversary, the quarrel inside the family, which Luttwak counts as the most intense of rivalries because closeness multiplies the points of contact. The <b>Byzantine alliance</b> is a grievance graded ally: the maxim from <i>The Grand Strategy of the Byzantine Empire</i> that every enemy is a possible ally, and the alliance that holds over an open wound because it must. The Faults page lists both, says whether each is felt by one side or both, and reads its trend as healing or tearing; on the map a fault shows as a bond band that contradicts the colour of its outline.</p>
+      <p>A <b>fault</b> is a relationship whose deep level contradicts its surface. The frame is Luttwak's structure of <b>levels</b>: in <i>Strategy</i> success at one level can be undone at a higher one, and a strategy works only when its levels are in harmony. Here the levels are two: the bond, which would survive a change of government, and the posture of today. Two contradictions matter. The <b>feud</b> is kin graded rival, adversary or claimed territory, the quarrel inside the family, which Luttwak counts as the most intense of rivalries because closeness multiplies the points of contact. The <b>Byzantine alliance</b> is a grievance graded ally: the maxim from <i>The Grand Strategy of the Byzantine Empire</i> that every enemy is a possible ally, and the alliance that holds over an open wound because it must. The Faults page lists both, says whether each is felt by one side or both, and reads its trend as healing or tearing; on the map a fault shows as a bond band that contradicts the colour of its outline.</p>
       <h3>Gatherings</h3>
-      <p>A <b>gathering</b> is the coalition that an actor's weight summons. The frame is <i>The Rise of China vs. the Logic of Strategy</i>: a power that grows or presses provokes, by the logic of strategy alone, the convergence of everyone it threatens, whether or not they speak to each other, and the great state, absorbed in its own scale, is the last to see it. Byzantium made a method of the same law from the other side, recruiting the enemies of its enemies. The Gatherings page lists, for every actor with at least three declared rivals, who has gathered against it, and measures how far the gathering has become a coalition: formed when most of its members are already allied with each other, waiting when they are not, which is the coalition the logic is still summoning. Each gathering is weighed, as a share of the world's economy and armed spending, against the weight of its target; and for each the page says which members the target itself does not read as hostile, the part of the gathering it has not seen. Under the gatherings sits the <b>encirclement</b>: for every actor, the share of its neighbours that stand against it, since the neighbours are the first the logic summons. In each actor's dossier the <b>convergences</b> are the other side of the same reading: the actors that share one of its rivals and are not yet its allies, the tables it has not sat at.</p>
+      <p>A <b>gathering</b> is the coalition that an actor's weight summons. The frame is <i>The Rise of China vs. the Logic of Strategy</i>: a power that grows or presses provokes, by the logic of strategy alone, the convergence of everyone it threatens, whether or not they speak to each other, and the great state, absorbed in its own scale, is the last to see it. Byzantium made a method of the same law from the other side, recruiting the enemies of its enemies. The Gatherings page lists, for every actor with at least five declared rivals, who has gathered against it, and measures how far the gathering has become a coalition: formed when most of its members are already allied with each other, waiting when they are not, which is the coalition the logic is still summoning. Each gathering is weighed, as a share of the world's economy and armed spending, against the weight of its target; and for each the page says which members the target itself does not read as hostile, the part of the gathering it has not seen. Under the gatherings sits the <b>encirclement</b>: for every actor, the share of its neighbours that stand against it, since the neighbours are the first the logic summons. In each actor's dossier the <b>convergences</b> are the other side of the same reading: the actors that share one of its rivals and are not yet its allies, the tables it has not sat at.</p>
       <h3>Currents</h3>
       <p>Every posture carries a <b>trend</b>, warming, stable or cooling, and the trends are the first derivative of the map: not where the relationships stand but where they are going. The frame is Luttwak's <b>culminating point</b>, the moment at which a success begins to produce its own reversal. The Currents page reads the trends two ways. The alarms: allies that are cooling, which is the culminating point of an alliance, the protection that has begun to cost, and rivals that are warming, the rivalry past its useful peak. And two measures per actor: <b>drift</b>, which way its world is going, and <b>turbulence</b>, how much of it is moving. Each build keeps a snapshot of every grade, so the page can also say what changed since the last one. On the map, in the posture lens, a warming relationship pulses and a cooling one flickers, like phosphor brightening or dying.</p>
       <h3>Theatres</h3>
-      <p>Below grand strategy in Luttwak's ladder of levels sits the <b>theatre</b>, where geography and several actors' forces add up and where strategy is actually conducted. The atlas keeps a hand list of seventeen theatres, from the Western Balkans to the Southern Cone, and computes for each a <b>heat</b> from what it has read between the members: declared hostility, seams, feuds, claimed territory and movements with stakes, divided by the number of possible pairs so that a small dense theatre is not outweighed by a large one. The Theatres page has its own map, lit by heat, and the list of what makes each theatre hot. A theatre whose members have few cards reads cold for lack of data, not for peace.</p>
+      <p>Below grand strategy in Luttwak's ladder of levels sits the <b>theatre</b>, where geography and several actors' forces add up and where strategy is actually conducted. The atlas keeps a hand list of ${THEATRES.length} theatres, from the Western Balkans to the Southern Cone, and computes for each a <b>heat</b> from what it has read between the members: declared hostility, seams, feuds, claimed territory and movements with stakes, divided by the number of possible pairs so that a small dense theatre is not outweighed by a large one. The Theatres page has its own map, lit by heat, and the list of what makes each theatre hot. A theatre whose members have few cards reads cold for lack of data, not for peace.</p>
       <h3>Flanks</h3>
       <p>The <b>enemies of my enemies</b>. Luttwak reads Byzantium's survival as the refusal to fight the enemy in front when the enemy behind him could be found and paid: the Khazars against the Avars, the Pechenegs against the Rus. The Flanks page runs that search for every actor: for each enemy it reads, who else reads that enemy as hostile, and whether that flank is already <b>recruited</b> (a written friendship, a treaty or a de facto alignment), <b>false</b> (the enemy of my enemy is my enemy too) or still <b>open</b>, the move nobody has made. The page shows the heaviest open flanks, where both the actor and the flank carry weight; an actor whose enemies have no enemies stands alone.</p>
       <h3>Levers</h3>
-      <p>In 1990 Luttwak gave a name to the form rivalry would take once the great wars were over: <b>geo-economics</b>, the logic of conflict in the grammar of commerce, capital in place of firepower, market penetration in place of garrisons. The atlas keeps the material dependencies between actors with their numbers: energy, trade, debt, investment, arms, troops. The Levers page lists every such dependency between two actors of which one reads the other as rival or adversary, the handle one side holds over the other, or that both hold. It is a first cut; the direction of each lever is in the row's summary, not yet in a field of its own.</p>
+      <p>In 1990 Luttwak gave a name to the form rivalry would take once the great wars were over: <b>geo-economics</b>, the logic of conflict in the grammar of commerce, capital in place of firepower, market penetration in place of garrisons. The atlas keeps the material dependencies between actors with their numbers: energy, trade, debt, investment, bases, arms, remittances. The Levers page lists every such dependency between two actors of which one reads the other as rival or adversary, the handle one side holds over the other, or that both hold. It is a first cut; the direction of each lever is in the row's summary, not yet in a field of its own.</p>
       <h3>How it is made</h3>
-      <p>The data lives in plain files, one per actor, separate from the site, and is versioned in the open: the whole history of every grade is in the repository. Cards are researched and drafted by language-model agents working from a shared brief and the atlas's own rules, then reread by a stronger model that checks objectives, paradoxes and every posture grade against the sources and against the neighbouring cards; the owner samples the result. A new card's grades retroact on the cards already written as provisional reciprocals, flagged as such until written from the other side. Nothing is embedded in the site: it renders the data as it stands on the day of the last build, and the stamp in the top bar says which day that was. The <a href="#/data">Data</a> page counts all of it: actors, readings, rows, sources by tier, the datasets and when they were taken, what the build derives, and what it has cost.</p>
+      <p>The data lives in plain files, one per actor, separate from the site, and is versioned in the open: the whole history of every grade is in the repository. Cards are researched and drafted by language-model agents working from a shared brief and the atlas's own rules, then reread by a stronger model that checks objectives, paradoxes and every posture grade against the sources and against the neighbouring cards; the editor samples the result. A new card's grades retroact on the cards already written as provisional reciprocals, flagged as such until written from the other side. Nothing is embedded in the site: it renders the data as it stands on the day of the last build, and the stamp in the top bar says which day that was. The <a href="#/data">Data</a> page counts all of it: actors, readings, rows, sources by tier, the datasets and when they were taken, what the build derives, and what it has cost.</p>
       <h3>What it is not</h3>
       <p>It is not a forecast and not a verdict. Where a card says less than you expected, it is because the sources did not hold. Where a posture surprises you, open the dossier: the note under each grade says why it was read that way, and the footnote says who said so.</p>
 
@@ -1074,9 +1124,9 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
       <p>The truth is a folder of plain text. Every actor has three YAML files: the <b>card</b> (objectives, means, constraints, paradoxes, reading, each with sources and a confidence grade), its <b>stances</b> (how it reads every other actor: grade, trend, bond, since, last verified, note, sources) and its <b>relations</b> (rows in four layers: objectives, alignments, dependencies, actions). Vocabularies are closed: nine grades, four bonds, three trends, a fixed list of relation types. A stub is an actor with the first file only, a node without a card. Beside the cards sit the <b>datasets</b>, taken by small scripts from one source each and never edited by hand: states and memberships from Wikidata and the organisations' lists, recognition tables from Wikipedia, every recorded vote of the UN General Assembly from the UN Digital Library, GDP, military spending and population from the World Bank, borders from Wikidata.</p>
       <p>One Python script, the <b>build</b>, turns that folder into the site. It validates every file and refuses to write on any error: an unknown id, a grade outside the vocabulary, a date that does not parse, a claim without a source. It then derives what no card states: treaty allies from the memberships, a provisional mirror for every reading not yet answered from the other side, and the computed pages, seams, buffers, clients, faults, gatherings, encirclement, flanks, levers, currents, theatres, each by a rule written in the ontology. It keeps a snapshot of every grade, so the next build can say what moved. It writes one JSON for the site and one bundle per actor, so any other front end could read a state on its own.</p>
       <h3>How it runs</h3>
-      <p>There is no server. The site is static files on GitHub Pages: one HTML page, one stylesheet, one script, the compiled JSON, the world outline (Natural Earth 110m, with Kosovo added) and a map from country ids to flag codes. The browser loads the JSON once and computes every view from it: the map in any actor's point of view, the dossiers, the intelligence pages. Routing is in the URL hash, so every view has an address and the back button works. The only outside dependencies are D3 for the maps, three typefaces from Google Fonts, the flag images from flagcdn, and one request to the GitHub API for the date of the last commit. No analytics, no cookies, nothing stored in the browser, nothing sent anywhere.</p>
+      <p>There is no server. The site is static files on GitHub Pages: one HTML page, one stylesheet, one script, the compiled JSON, one small bundle per actor, the world outline (Natural Earth 110m, with Kosovo added) and a map from country ids to flag codes. The browser loads the main JSON once and computes the map and the intelligence pages from it; an actor's bundle, with its card texts, notes and sources, is fetched only when you open its dossier or its point of view. Routing is in the URL hash, so every view has an address and the back button works. The outside dependencies are D3 for the maps (from cdnjs), three typefaces from Google Fonts, the flag images from flagcdn, the portrait of Luttwak from Wikimedia Commons, and, on the Data page, one request to the GitHub API for the date of the last commit; each of those hosts sees the visitor's address, as any host does. No analytics, no cookies, no account. The only thing kept in the browser is the language you choose, and nothing you do on the site is sent to anyone.</p>
       <h3>How it changes</h3>
-      <p>Everything is versioned in git, in the open: the whole history of every grade is in the repository, and a change to the ontology is made only with a journal entry. The atlas is updated on the editor's call, never on a calendar. When he calls, the datasets are refreshed first (they cost nothing), then the dates the cards said to watch, then a short regional scan that lists the cards an event touched, then those cards only: a dated row added, a trend or a grade moved when a source says so, never a rewrite. Between calls, single news items go in as one dated row each.</p>
+      <p>Everything is versioned in git, in the open: the whole history of every grade is in the repository, and a change to the ontology is made only with a journal entry. The atlas is updated on the editor's call, never on a calendar; so far he has called it once a week. When he calls, the datasets are refreshed first (they cost nothing), then the news heat from GDELT and the dates the cards said to watch, then a pass over Wikipedia's daily current-events pages, each event with its news citation, that proposes candidate rows, which he sorts by hand. A card that a major event touches, an election, a change of government, a war, a treaty, is then reread against the outcome: a dated row added, a trend or a grade moved when a source says so, never a rewrite. Between calls, single news items go in as one dated row each.</p>
       <h3>Type and look</h3>
       <p>VT323, Share Tech Mono and IBM Plex Mono via Google Fonts. The display is modelled on the vector screens of the NORAD command centre as shown in <i>WarGames</i> (1983); the home map after Alighiero Boetti's <i>Mappa</i>. Portrait of Edward N. Luttwak by Elekes Andor, 2026, CC BY 4.0, Wikimedia Commons. Maps drawn with D3.</p>
       <h3>Credits</h3>
@@ -1101,7 +1151,7 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
   let eggBuf = "", eggTimer = null;
   const eggEl = document.createElement("div");
   eggEl.id = "egg";
-  eggEl.innerHTML = `<div class="line"></div><div class="src"></div><img class="who" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Edward_Luttwak_in_2026.jpg/400px-Edward_Luttwak_in_2026.jpg" alt=""><div class="hint">click or esc to return</div>`;
+  eggEl.innerHTML = `<div class="line"></div><div class="src"></div><img class="who" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Edward_Luttwak_in_2026.jpg/500px-Edward_Luttwak_in_2026.jpg" alt=""><div class="hint">click or esc to return</div>`;
   document.body.appendChild(eggEl);
   const eggClose = () => { eggEl.classList.remove("is-on", "is-read"); clearTimeout(eggTimer); };
   eggEl.onclick = eggClose;
@@ -1129,14 +1179,14 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
     const rows = Object.entries(NEWS.actors);
     const bar = (v, max) => "▮".repeat(Math.max(1, Math.min(10, Math.round(v / max * 10))));
     const surging = rows.filter(([, r]) => r.hot_rank).sort((p, q) => p[1].hot_rank - q[1].hot_rank).slice(0, 15);
-    const burning = rows.filter(([, r]) => r.burn_rank).sort((p, q) => p[1].burn_rank - q[1].burn_rank).slice(0, 15);
+    const burning = rows.filter(([, r]) => r.burn_rank && r.conflict_ratio >= 1).sort((p, q) => p[1].burn_rank - q[1].burn_rank).slice(0, 15);
     const loud = rows.filter(([, r]) => r.loud_rank).sort((p, q) => p[1].loud_rank - q[1].loud_rank).slice(0, 10);
     const n = x => Number(x || 0).toLocaleString("en-GB");
     const sRow = ([id, r]) => `<tr><td class="name"><a href="#/view/${id}">${nameOf(id)}</a></td><td><span class="bar" style="color:var(--c-rival)">${bar(r.ratio, surging[0][1].ratio)}</span></td><td class="n"><b>×${r.ratio.toFixed(1)}</b></td><td class="n">${n(r.events)} <span class="tr">vs ${n(Math.round(r.baseline))}</span></td><td class="n">${Math.round((r.conflict_share || 0) * 100)}%</td></tr>`;
     const bRow = ([id, r]) => `<tr><td class="name"><a href="#/view/${id}">${nameOf(id)}</a></td><td><span class="bar" style="color:var(--c-rival)">${bar(r.conflict_ratio, burning[0][1].conflict_ratio)}</span></td><td class="n"><b>×${r.conflict_ratio.toFixed(1)}</b></td><td class="n">${n(r.conflict)} <span class="tr">of ${n(r.events)}</span></td><td class="n">${Math.round((r.conflict_share || 0) * 100)}%</td></tr>`;
     const lRow = ([id, r]) => `<tr><td class="name"><a href="#/view/${id}">${nameOf(id)}</a></td><td class="n">${n(r.articles)}</td><td class="n">${n(r.events)}</td><td class="n">×${r.ratio.toFixed(1)}</td></tr>`;
     el.innerHTML = `<h2>Watch</h2>
-      <p class="lede">Luttwak's second rule for Byzantium, in <i>The Grand Strategy of the Byzantine Empire</i>: gather intelligence on the other and his mentality, and monitor his movements continuously. Constantinople kept an office for it, the Bureau of Barbarians, which read every envoy and every rumour from beyond the border. This page is the atlas's monitor: every week, the events that GDELT codes from the world's news are counted per country and set against the country's own four-week average. A country is <b>surging</b> when it makes a multiple of its normal, whatever its size; it is <b>burning</b> when the conflict in its news runs above its normal. The loud, who make the most news every week, are listed apart so they do not hide the rest.</p>
+      <p class="lede">Luttwak's second rule for Byzantium, in <i>The Grand Strategy of the Byzantine Empire</i>: gather intelligence on the other and his mentality, and monitor his movements continuously. Constantinople kept an office for it, the Bureau of Barbarians, which read every envoy and every rumour from beyond the border. This page is the atlas's monitor: the events that GDELT codes from the world's news in the last seven days are counted per country and set against the country's own four-week average. A country is <b>surging</b> when it makes a multiple of its normal, whatever its size; it is <b>burning</b> when the conflict in its news runs above its normal. The loud, who make the most news every week, are listed apart so they do not hide the rest.</p>
       <p class="how">Week ${fmtDay(NEWS.week.from)} to ${fmtDay(NEWS.week.to)}, taken on ${esc(NEWS.fetched)}. <a href="#/heat">See it on the map</a>.</p>
       <div class="cols2">
       <div><h3 class="sec">Surging · news against its own normal</h3>
@@ -1154,8 +1204,8 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
       ${RM.length ? `<table class="ledger-t"><thead><tr><th>Actor</th><th>Toward</th><th>Grade</th><th>Trend</th><th>Read on</th><th>Why</th></tr></thead><tbody>${RM.slice(0, 40).map(r => `<tr><td class="name"><a href="#/view/${r.a}">${nameOf(r.a)}</a></td><td class="name"><a href="#/view/${r.x}">${nameOf(r.x)}</a></td><td><i style="color:${gradeBorder(r.grade)}">${r.grade.replace("_", " ")}</i></td><td class="${r.trend}">${r.trend === "warming" ? "↗" : "↘"} ${esc(r.trend)}</td><td class="n">${esc(r.last_verified)}</td><td><div class="why">${esc(r.note || "")}</div></td></tr>`).join("")}</tbody></table>` : `<p class="empty">None in the last fourteen days.</p>`}
       <details class="method" open><summary>How the watch works</summary>
       <p>The source is the <b>GDELT Project</b>, which has coded the world's news into events since 1979: for every event the two actors with their country codes, the kind of act on a scale from cooperation to conflict, and the number of articles that carried it. The atlas downloads one file a day, the last seven days plus four weeks before them, and counts for every country the events it was party to. Each week's result is kept (${NEWS.history ? NEWS.history.length : 1} so far, since ${NEWS.history && NEWS.history.length ? fmtDay(NEWS.history[0].from) : fmtDay(NEWS.week.from)}), so the curve of every country and theatre grows by itself.</p>
-      <p><b>Surging</b> is the week's events divided by the country's own mean week over the four weeks before, smoothed so that very small counts do not explode; only countries with at least 150 events in the week are ranked. <b>Burning</b> takes the conflict events alone (verbal and material conflict, GDELT's classes 3 and 4), divides them by the country's normal conflict, and multiplies by the share of conflict in the week's news; same floor, and a share of at least 30%. <b>Loud</b> is the plain count of articles. Each country is set against itself, so the United States, which makes a tenth of the world's coded news every week, is loud but seldom surging.</p>
-      <p>What it is not: it measures the attention of English-language and major-language media, not what happened. A hurricane and a coup read alike until the conflict share tells them apart; the francophone Sahel and the Pacific read quiet for lack of coverage; a surge may be a summit or a scandal. It is a pointer, kept apart from the cards: the weekly update starts its searches from the surging and the burning, and nothing enters a card from here without a source read by a person. Nothing on this page is a reading of the atlas.</p></details>`;
+      <p><b>Surging</b> is the week's events divided by the country's own mean week over the four weeks before, smoothed so that very small counts do not explode; only countries with at least 150 events in the week are ranked. <b>Burning</b> takes the conflict events alone (verbal and material conflict, GDELT's classes 3 and 4), divides them by the country's normal conflict, and multiplies by the share of conflict in the week's news; same floor, and a share of at least 30%. <b>Loud</b> is the plain count of articles. Each country is set against itself, so the United States, which makes more than a quarter of the world's coded news, is loud but seldom surging.</p>
+      <p>What it is not: it measures the attention of the media GDELT reads, mostly in English and other major languages, not what happened. A hurricane and a coup read alike until the conflict share tells them apart; the francophone Sahel and the Pacific read quiet for lack of coverage; a surge may be a summit or a scandal. It is a pointer, kept apart from the cards: each update starts its searches from the surging and the burning, and nothing enters a card from here without a source read by a person. Nothing on this page is a reading of the atlas.</p></details>`;
     el.querySelectorAll("a[href^='#/']").forEach(a => a.onclick = ev => { ev.preventDefault(); navigate(a.getAttribute("href")); });
   }
 
@@ -1176,18 +1226,6 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
       const v = voteOn(iss.symbol, id); return showTip(`<b>${esc(name)}</b>${v ? VOTE_LBL[VOTE_CLS[v]] : "Did not vote / not a member"} on ${esc(iss.symbol)}`, ev);
     }
     if (!pov) return showTip(`<b>${esc(name)}</b><span class="k">${a && a.card === "full" ? "Has a card - click to see the world as it sees it" : a && (hasVotes(a.id) || hasClubs(a.id) || hasRecog(a.id)) ? "Data only - click to see the world from its seat" : a ? "Actor without data yet" : "Not an actor yet"}</span>`, ev);
-    if (lens === "clubs") {
-      el.innerHTML = `<h3>Organisations shared with ${actors[pov].name}</h3><div class="row" style="color:var(--ink-3)">Of ${[...clubs[pov]].filter(o => o !== "org-un").length} memberships besides the UN (NATO, EU, BRICS, OPEC...)</div>` +
-        ["c6", "c4", "c2", "c1"].map(c => `<div class="row"><span class="sw" style="background:${voteSwatch(c)} var(--land)"></span>${CLUB_LABEL[c]}</div>`).join("") +
-        `<div class="row"><span class="sw"></span>None in common</div>`;
-      return;
-    }
-    if (lens === "recognition") {
-      el.innerHTML = `<h3>Who recognises ${actors[pov].name}</h3>` +
-        ["yes", "withdrew", "no"].map(c => `<div class="row"><span class="sw" style="background:${voteSwatch(c)} var(--land)"></span>${REC_LABEL[c]}</div>`).join("") +
-        `<div class="row"><span class="sw"></span>Not a UN member / no data</div>`;
-      return;
-    }
     if (lens === "clubs") {
       const sh = sharedClubs(pov, id);
       return showTip(`<b>${esc(name)}</b>${sh.length ? `${sh.length} in common: ${sh.map(o => esc(actors[o] ? actors[o].name : o)).join(", ")}` : "No organisation in common"}`, ev);
@@ -1217,13 +1255,18 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
     }).join(`<sup class="fn-sep">,</sup>`);
   }
   // the reading is stored as one block; shown as paragraphs of two or three sentences (form only, 2026-10-16)
+  // the whole block is translated first (the Italian is stored per reading), then cut: a sentence ends at .!? followed by
+  // whitespace and a capital letter or an opening quote, never inside a number ("51.8%") and never after an abbreviation
+  const SENT_END = /(?<=[.!?]["'’”)\]]*)\s+(?=["'‘“(\[]*\p{Lu})/u;
+  const ABBR_END = /(?:\b(?:U\.S|U\.K|St|Mr|Mrs|Ms|Dr|No|Art|Arts|vs|Gen|Sen|Col|Cf|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)|\b\p{Lu})\.$/u;
+  const sentences = part => part.split(SENT_END).reduce((acc, x) => { if (acc.length && ABBR_END.test(acc[acc.length - 1])) acc[acc.length - 1] += " " + x; else acc.push(x); return acc; }, []);
   const paragraphs = text => {
-    const t = String(text || "").trim();
+    const t = String(T(String(text || "").trim()) || "").trim();
     if (!t) return "";
     const parts = t.split(/\n\s*\n/).map(x => x.replace(/\s*\n\s*/g, " ").replace(/\s{2,}/g, " ").trim()).filter(Boolean);
     const out = [];
     for (const part of parts) {
-      const sents = part.match(/[^.!?]+(?:[.!?]+["')\]]*|$)/g) || [part];
+      const sents = sentences(part);
       let buf = [];
       sents.forEach((sn, i) => { buf.push(sn.trim()); if (buf.length === 3 || i === sents.length - 1) { out.push(buf.join(" ")); buf = []; } });
       if (out.length >= 2 && out[out.length - 1].length < 90) { const last = out.pop(); out[out.length - 1] += " " + last; }
@@ -1251,7 +1294,7 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
     let html;
     const flag = a.flag ? a.flag : a.iso2 ? `https://flagcdn.com/w160/${a.iso2}.png` : null;
     const head = `<div class="head">${flag ? `<img class="flag" src="${esc(flag)}" alt="Flag of ${esc(a.name)}">` : ""}<div><h2>${esc(a.name)}</h2>` +
-      `<p class="sub">${esc(a.type)} · seat ${esc(a.seat)} · ${a.regions.join(", ")}${a.card === "full" ? ` · card verified ${esc(a.last_verified)}` : ""}${a.stale ? ' · <span class="stale">stale</span>' : ""}` +
+      `<p class="sub">${esc(a.type)} · seat <span class="lst">${esc(a.seat)}</span> · <span class="lst">${a.regions.map(r => r.replace(/-/g, " ")).join(", ")}</span>${a.card === "full" ? ` · card verified ${esc(a.last_verified)}` : ""}${a.stale ? ' · <span class="stale">stale</span>' : ""}` +
       `${a.wikipedia ? ` · <a href="${esc(a.wikipedia)}" target="_blank" rel="noopener">Wikipedia ↗</a>` : ""}</p></div></div>`;
     if (a.card !== "full") {
       const st = (PB && PB.stIdx.get(id)) || stanceOf(id);
@@ -1260,16 +1303,16 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
         ungaHtml(id) + relationsHtml(id, B);
     } else {
       const gs = B && B.actor && B.actor.grand_strategy;
-      if (!gs) { el.innerHTML = head + `<p class="empty">The card could not be loaded. Reload the page.</p>`; window.scrollTo(0, 0); return; }
+      if (!gs) { el.innerHTML = head + `<p class="empty">The card could not be loaded. Reload the page.</p>`; toTop(); return; }
       const byDomain = d3.group(gs.means, m => m.domain);
       html = head + `
         <h3>Grand strategy</h3>
         <h4>Objectives, ranked</h4>${claimList(gs.objectives, true)}
-        <h4>Means</h4>${[...byDomain].map(([d, ms]) => `<h4>${esc(d)}</h4>${claimList(ms, false)}`).join("")}
+        <h4>Means</h4>${[...byDomain].map(([d, ms]) => `${d ? `<h4>${esc(d)}</h4>` : ""}${claimList(ms, false)}`).join("")}
         <h4>Constraints</h4>${claimList(gs.constraints, false)}
         <h4>Paradoxes</h4>${claimList(gs.paradoxes, true)}
         <h4>Reading</h4>${paragraphs(gs.reading)}
-        ${CONV[id] ? `<h3>Convergences</h3><p class="conv">Actors that share one of ${esc(a.short || a.name)}'s rivals and are not its allies, the tables it has not sat at: ${CONV[id].map(c => `<a href="#/view/${c.id}">${nameOf(c.id)}</a> <span class="meta">(against ${c.shared.map(nameOf).join(", ")})</span>`).join(" · ")}.</p>` : ""}
+        ${CONV[id] ? `<h3>Convergences</h3><p class="conv">Actors that share one of ${poss(esc(a.short || a.name))} rivals and are not its allies, the tables it has not sat at: <span class="lst">${CONV[id].map(c => `<a href="#/view/${c.id}">${nameOf(c.id)}</a> <span class="meta">(against ${c.shared.map(nameOf).join(", ")})</span>`).join(" · ")}</span>.</p>` : ""}
         <h3>The world as ${esc(a.name)} sees it</h3>
         <table class="tbl"><thead><tr><th>Toward</th><th>Posture</th><th>Bond</th><th>Why this reading</th></tr></thead><tbody>
         ${(B.stances || []).map(s => `<tr><td><b>${esc(actors[s.toward].name)}</b><br><span class="meta">since ${esc(s.since)}</span></td>
@@ -1286,7 +1329,7 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
       s.onmouseleave = hideTip;
       s.onclick = () => el.querySelector(".fn-list").scrollIntoView({ behavior: "smooth" });
     });
-    window.scrollTo(0, 0);
+    toTop();
   }
 
   function ungaHtml(id) {
@@ -1299,8 +1342,8 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
     const word = { Y: "YES", N: "NO", A: "abstained", "-": "did not vote" };
     return `<h3>UN General Assembly, recorded votes ${esc(unga.span || "")}</h3>
       <p>Votes together with <b>United States</b> ${pct(aff.USA)} · <b>Russia</b> ${pct(aff.RUS)} · <b>China</b> ${pct(aff.CHN)}.
-      Closest: ${top.map(([c, x]) => `${esc(actors[c].name)} ${pct(x)}`).join(", ")}. Furthest: ${low.map(([c, x]) => `${esc(actors[c].name)} ${pct(x)}`).join(", ")}.
-      <span class="meta">Share of recorded votes cast the same way, pairs with at least 20 common votes. Source: UN Digital Library voting records, harvested by tools/datasets.</span></p>` +
+      Closest: <span class="lst">${top.map(([c, x]) => `${esc(actors[c].name)} ${pct(x)}`).join(", ")}</span>. Furthest: <span class="lst">${low.map(([c, x]) => `${esc(actors[c].name)} ${pct(x)}`).join(", ")}</span>.
+      <span class="meta">Share of recorded votes cast the same way, pairs with at least 20 common votes. Source: UN Digital Library voting records.</span></p>` +
       (lms.length ? `<table class="tbl"><thead><tr><th>Date</th><th>Resolution</th><th>${esc(a_name(id))}</th></tr></thead><tbody>` +
         lms.map(l => `<tr><td>${esc(l.date)}</td><td><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.symbol)}</a> ${esc(l.label)}</td><td><b>${word[l.vote] || l.vote}</b></td></tr>`).join("") + `</tbody></table>` : "");
   }
@@ -1312,7 +1355,7 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
       const rs = rows.filter(r => r.layer === l);
       if (!rs.length) return "";
       return `<h4>${LAYER_LABEL[l]}</h4>` + rs.map(r => `<div class="rel" style="border-color:${layerColor(l)}">
-        <div class="hd"><b>${dir === "out" ? "→ " + esc(actors[r.to].name) : "← " + esc(actors[r.from].name)}</b> · ${esc(r.type.replace(/_/g, " "))} · ${esc(r.since)}${r.until && r.until !== r.since ? " – " + esc(r.until) : ""}${badge(r)}</div>
+        <div class="hd"><b>${dir === "out" ? "→ " + esc(actors[r.to].name) : "← " + esc(actors[r.from].name)}</b> · <span>${esc(r.type.replace(/_/g, " "))}</span> · ${esc(r.since)}${r.until && r.until !== r.since ? " – " + esc(r.until) : ""}${badge(r)}</div>
         <div>${r.value !== undefined ? `<span class="val">${esc(r.value)} ${esc(String(r.unit).replace(/_/g, " "))}</span> · ` : ""}${esc(r.summary)}${fn(r.sources)}</div>
         ${r.note ? `<div class="note">${esc(r.note)}</div>` : ""}
         ${r.claims ? `<div class="note">Contested: ` + r.claims.map(c => { const who = actors[c.by] ? actors[c.by].name : String(c.by); return `<b>${esc(who)}</b> says ${esc(c.text)}${fn([{ url: c.source, title: c.text, publisher: who, date: "", tier: 4 }])}`; }).join("; ") + `</div>` : ""}
