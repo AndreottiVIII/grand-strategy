@@ -458,3 +458,8 @@ body.og .stage { width: 1200px; height: 630px; overflow: hidden; }
 
 /* theatres: the week's news heat under the structural bar (2026-10-29) */
 .theatre .tnews { font-family: var(--font-ui); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--c-rival); margin: -2px 0 6px; }
+
+/* watch: the two tables stacked, not side by side (Davide, 2026-10-29: headers were colliding) */
+#page-watch .cols2 { grid-template-columns: 1fr; }
+#page-watch .ledger-t th { white-space: nowrap; }
+#page-watch .ledger-t { max-width: 820px; }
