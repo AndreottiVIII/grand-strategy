@@ -34,7 +34,12 @@ ONTOLOGY makes the treaty floor "ally" and the build derives it, so a written "p
 silently; `reciprocate.py` now skips treaty co-members. The 12 mirrors of a hand-written "partner" stay. Stances 4417.
 
 Tokens: about 2.9M (reviews 1.1M, fixes 1.0M, translations 0.24M, cards 0.4M, coordination); total 44.5M on the Data
-page. Left for later in BACKLOG. Next: the domain `grandstrategy.davidecaniatti.com` (CNAME first, by Davide), then the
+page.
+
+Same evening: the site moved to `https://grandstrategy.davidecaniatti.com/` (CNAME in the Squarespace DNS, `docs/CNAME`,
+HTTPS enforced, the github.io address redirects) and got a visit counter, GoatCounter (page views, country, referrer; no
+cookies, no personal data; hash navigations counted through `window.goatcounter.count`), declared on This site in both
+languages. Search Console sees only Google; the counter is what tells whether a link was opened. Left for later in BACKLOG. Next: the domain `grandstrategy.davidecaniatti.com` (CNAME first, by Davide), then the
 letter.
 
 ## 2026-10-29 · W44, second delta pass: nine more cards from the week's heat and rows
