@@ -1,5 +1,28 @@
 # Journal
 
+## 2026-10-29 · Weekly update W44: rows, and for the first time the cards
+
+Davide: run the week now, and update the cards too ("si e' votato in Israele"). Floor: GDELT heat for 22-28
+October (Liechtenstein, Serbia, Brazil, El Salvador surging; Jordan and Albania burning), Wikidata memberships
+refreshed. Portal pass, two Haiku agents on 23-29 October: 30 rows, all accepted (the Oleshky local ceasefire,
+Jordan's strikes in Daraa and Suwayda and Syria's closure of Nasib, Houthi missiles at Riyadh and coalition
+strikes in Hamdan and Al Hazm, US sanctions on Rwanda's defence ministry, Hebron and Gaza, Sudan, the ELN,
+Australia on North Korea, Iran's notice to Sinokor). Then the new step 6, the delta pass on the cards a major
+event touched, one agent per card (Sonnet, Haiku for Jordan), additions and reasoned changes only:
+- Israel: vote of 27 October, turnout 77.7%, Netanyahu's bloc 53 seats (68 before), Eisenkot 48, Arab parties
+  19, no bloc at 61; constraint and objective updated, Qatar trend to cooling (Shin Bet probe into alleged
+  Qatari influence).
+- Serbia: the card's premise was wrong, Vucic lost: the Student List 53% and 141 of 250 seats, Vucic conceded;
+  objective 2 rewritten as failed, EU trend cooling to warming; Kosovo, Russia and China untouched until the
+  new government speaks.
+- Brazil: Lula re-elected 51.8-48.2, Flavio Bolsonaro refuses to concede; objective 1 rewritten, USA trend to
+  cooling (Trump questioned the result), Argentina stays cooling (Milei last to recognise).
+- Saudi Arabia: the Houthi war reopened in fact, no official end of the 2022 truce; objective and constraint
+  updated, grade kept with the reason written.
+- Jordan: Syria trend warming to cooling, a new paradox (striking across the border closes Nasib).
+Lesson: the portal skips domestic turns by rule, so elections never enter as rows; the delta pass is where
+they enter, and the heat (Serbia x3.75, Brazil x2.3) points at them. About 1.1M tokens for the week.
+
 ## 2026-10-29 · The menu on three entries, the map in front
 
 A reader (a friend of Davide's): fourteen entries are too many, the map is the only fully interactive view
