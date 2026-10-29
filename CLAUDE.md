@@ -120,6 +120,10 @@ python tools/i18n.py merge --lang=it             # fold the agents' .out.yaml fi
 ```
 Facts about the atlas itself (start date, tokens spent) live in `data/site.yaml` and show on the Data page.
 
+Payload (2026-10-29): `docs/data.json` is slim (no card texts, notes or sources); the dossier, the ledger
+under the map and the tooltip notes fetch `docs/actors/<id>.json` on demand. The map's animations run on
+two overlay `<svg>` layers (`svg.fx-overlay`); `?fx=noanim|nofilter|nozoomopt` switch parts off for A/B tests.
+
 Preview: the `grand-strategy` entry in `ClaudeTower/.claude/launch.json` serves
 `docs/` on port 8765. Always rebuild before committing: `docs/data.json` is committed
 because GitHub Pages serves it as-is.

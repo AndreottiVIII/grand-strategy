@@ -1,5 +1,23 @@
 # Journal
 
+## 2026-10-29 · Map performance: the friend's diagnosis, seven changes, the benchmark
+
+A friend of Davide measured the map (Chrome, Apple M4, 1440x900 @2x): 70-75% CPU at rest on Armenia, ~100%
+during zoom; without the CSS animations 8-11% and 44%. Diagnosis confirmed in the code, not reproducible here
+(the pane is 800x600 and CPU is not readable from the page; our in-page probe measures script time per zoom
+event and frames). The animations (`breathe`, `flicker`) animated `stroke-opacity` on filtered SVG paths, a
+main-thread repaint of the blurred outline every frame, forever; `rescale` reprojected every label on every
+zoom event; the tooltip rewrote itself on every mousemove. Seven changes, Sonnet on code, no change to the
+look: (1) the animated outlines live in two overlay `<svg>` layers whose root `opacity` is animated, so the
+compositor does the work, paused during zoom, off under `prefers-reduced-motion`; (2) `vector-effect:
+non-scaling-stroke` on every path, label widths cached at k=1, one `rescale` per frame; (3) glow off during
+the zoom gesture; (4) tooltip and ledger rebuilt only when the actor under the cursor changes; (5) reduced
+motion; (6) stances indexed by `toward`; (7) `data.json` from 17.6 MB (4.22 gz) to 2.2 MB (0.24 gz): card
+texts, notes and sources moved to the per-actor bundles, fetched when a dossier or a point of view opens
+(USA bundle 1.4 MB, 410 KB gz; Serbia 235 KB). `?fx=noanim|nofilter|nozoomopt` switch each part off for
+A/B measurement. In-page probe: zoom handler USA 7.3 to 2.0 ms per wheel event, Armenia 1.4 to 0.3; frames
+60 fps, p95 17 ms before and after. CPU to be re-measured by the friend with his script on the live site.
+
 ## 2026-10-23 · Italian: site strings and cards complete; the cost of agents measured
 
 Resumed after the weekly reset. Site strings 361/361 (Sonnet), card texts 3,348/3,348 (Haiku, 27 batches of
