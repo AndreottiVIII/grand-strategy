@@ -118,6 +118,9 @@ burn = sorted((c for c, r in out["actors"].items() if r["events"] >= 150 and (r[
 for i, c in enumerate(burn):
     out["actors"][c]["burn_rank"] = i + 1
 (OUT / "heat.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+# memory (Davide, 2026-10-29): one compact file per week, so Watch and Theatres can show the curve later
+compact = {"from": out["week"]["from"], "to": out["week"]["to"], "actors": {a: [r["events"], r["ratio"], r["conflict_ratio"]] for a, r in out["actors"].items()}}
+(OUT / f"heat-{out['week']['to']}.json").write_text(json.dumps(compact, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 print(f"\n{len(out['actors'])} actors, {done} days; week {out['week']['from']} to {out['week']['to']}")
 print("hot (ratio to own baseline):", [(c, out["actors"][c]["ratio"], out["actors"][c]["events"]) for c in hot[:12]])
 print("burning (conflict share x conflict ratio):", [(c, out["actors"][c]["conflict_share"], out["actors"][c]["conflict_ratio"]) for c in burn[:10]])

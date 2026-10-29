@@ -322,6 +322,12 @@ def main():
     heat_ds = json.loads(HEAT.read_text(encoding="utf-8")) if HEAT.exists() else None
     news = ({"week": heat_ds["week"], "fetched": heat_ds["source"]["fetched"], "baseline_days": heat_ds["baseline_days"],
              "actors": {a: r for a, r in heat_ds["actors"].items() if a in actors}} if heat_ds else None)
+    if news:   # the weeks kept so far (one compact file per week, written by gdelt.py): the curve builds by itself
+        hist = []
+        for hp in sorted((DATA / "datasets" / "gdelt").glob("heat-*.json")):
+            hd = json.loads(hp.read_text(encoding="utf-8"))
+            hist.append({"from": hd["from"], "to": hd["to"], "actors": {a: v for a, v in hd["actors"].items() if a in actors}})
+        news["history"] = hist
 
     # --- derived stances: co-members of a defence alliance are treaty allies (dataset, bond unknown)
     ALLIANCES = {
@@ -757,8 +763,14 @@ def main():
             total = sum(heat.values())
             top.sort(key=lambda r: (-r["weight"], r["a"], r["x"]))
             written = sum(1 for m in members if (actors[m].get("card") == "full"))
+            tnews = None
+            if news:
+                ev = sum(news["actors"].get(m, {}).get("events", 0) for m in members)
+                base = sum(news["actors"].get(m, {}).get("baseline", 0) for m in members)
+                con = sum(news["actors"].get(m, {}).get("conflict", 0) for m in members)
+                tnews = {"events": ev, "ratio": round((ev + 50) / (base + 50), 2), "conflict_share": round(con / ev, 2) if ev else None}
             theatres.append({"id": t["id"], "name": t["name"], "centre": t.get("centre"), "radius": t.get("radius", 6), "label": t.get("label", [12, 0]), "members": members, "cards": written, "pairs": len(pairs),
-                             "heat": round(total / len(pairs), 2), "parts": heat, "top": top[:6]})
+                             "heat": round(total / len(pairs), 2), "parts": heat, "top": top[:6], "news": tnews})
         theatres.sort(key=lambda t: -t["heat"])
         mx = max((t["heat"] for t in theatres), default=0) or 1
         for t in theatres:

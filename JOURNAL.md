@@ -1,5 +1,17 @@
 # Journal
 
+## 2026-10-29 · Three free additions: the heat remembered, theatres in the news, Italian map labels
+
+Davide's choice among nine ideas. The GDELT pass now keeps one compact file per week
+(`data/datasets/gdelt/heat-<date>.json`) and the build carries the list as `news.history`, so the curve of
+every country and theatre grows by itself; nothing drawn yet. Each theatre shows "this week in the news":
+its members' events against their normal and the share of conflict (attention, kept apart from the
+structural heat). In Italian the map labels and the pages drop the English short name for the Italian one
+unless the short is an acronym (UAE, DRC). Ideas left in the message for later: a per-actor history in the
+dossier from the snapshots, a coherence audit by program, lenses from existing rows (sanctions, Russian
+energy, foreign troops, Chinese debt), a printable card, the watch dates, a source-finding pass on the
+C-grade readings.
+
 ## 2026-10-29 · Map performance: the friend's diagnosis, seven changes, the benchmark
 
 A friend of Davide measured the map (Chrome, Apple M4, 1440x900 @2x): 70-75% CPU at rest on Armenia, ~100%
