@@ -181,6 +181,30 @@ relations:
     confidence: C
     sources:
       - {url: "https://www.miningreporters.com/noticia/news/2026/03/us-brazil-critical-minerals-deal-lula-summit", title: "US-Brazil critical minerals deal hinges on Brasilia's go-ahead", publisher: "Mining Reporters", date: 2026-03-18, tier: 4}
+  - to: USA
+    layer: action
+    type: incident
+    summary: "After Lula won the runoff on 25 October 2026, Trump questioned the result on 26 October without offering evidence of irregularities, calling it another rigged election in remarks reported by MercoPress and the Buenos Aires Herald; the White House had not formally commented. In his victory speech Lula said Brazil had prevented foreign interference through digital platforms and is 'nobody's backyard' (Ynetnews). No change to the 2025-2026 tariffs reported."
+    since: 2026-10-26
+    until: null
+    last_verified: 2026-10-29
+    confidence: B
+    sources:
+      - {url: "https://en.mercopress.com/2026/10/26/trump-questions-lula-s-victory-as-most-of-the-region-including-the-right-congratulates-him", title: "Trump questions Lula's victory as most of the region, including the right, congratulates him", publisher: "MercoPress", date: 2026-10-26, tier: 3}
+      - {url: "https://buenosairesherald.com/?p=1091577", title: "Latin American leaders congratulate Lula, Trump claims election 'rigged'", publisher: "Buenos Aires Herald", date: 2026-10-26, tier: 3}
+      - {url: "https://www.ynetnews.com/article/4yx1b9vrz", title: "Lula delivers victory speech: 'We prevented foreign interference, Brazil is nobody's backyard'", publisher: "Ynetnews", date: 2026-10, tier: 3}
+  - to: ARG
+    layer: action
+    type: incident
+    summary: "Milei, who had backed Flávio Bolsonaro and called Lula a thief, issued no congratulations after the 25 October 2026 runoff while most of South America, including right-wing presidents (Kast, Peña, Paz, Noboa, Mulino), congratulated Lula; on 26 October Milei was the only South American leader yet to recognise the win (MercoPress, Buenos Aires Times). A La Politica Online headline later reports a grudging acknowledgement ('se tomó nota del resultado'), article not opened."
+    since: 2026-10-26
+    until: null
+    last_verified: 2026-10-29
+    confidence: B
+    sources:
+      - {url: "https://en.mercopress.com/2026/10/26/trump-questions-lula-s-victory-as-most-of-the-region-including-the-right-congratulates-him", title: "Trump questions Lula's victory as most of the region, including the right, congratulates him", publisher: "MercoPress", date: 2026-10-26, tier: 3}
+      - {url: "https://batimes.com.ar/news/amp/latin-america/milei-is-lone-south-american-leader-yet-to-recognise-lulas-win.phtml", title: "Milei is lone South American leader yet to recognise Lula's win", publisher: "Buenos Aires Times", date: 2026-10-26, tier: 3}
+      - {url: "https://www.lapoliticaonline.com/politica/muy-aturdido-milei-reconoce-a-disgusto-el-triunfo-de-lula-se-tomo-nota-del-resultado-638/", title: "Muy aturdido, Milei reconoce a disgusto el triunfo de Lula: 'se tomo nota del resultado' (headline as returned by search, article not opened)", publisher: "La Politica Online", date: 2026-10, tier: 3}
   - to: ARG
     layer: action
     type: incident

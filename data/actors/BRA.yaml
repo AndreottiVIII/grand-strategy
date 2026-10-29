@@ -9,17 +9,19 @@ seat: Brasília
 regions: [south-america]
 card: full
 tier: protagonist
-last_verified: 2026-10-16
+last_verified: 2026-10-29
 
 grand_strategy:
   objectives:
     - rank: 1
-      text: "Win the 25 October 2026 runoff, or at least keep the Lula line in office: in the first round on 4 October Flávio Bolsonaro took 47.03% and Lula 45.16%. The vote is the constraint on every choice below."
-      confidence: C
+      text: "Keep the Lula line in office: done on 25 October 2026. In the first round on 4 October Flávio Bolsonaro led with 47.03% to Lula's 45.16%, but Lula won the runoff with about 51.8% to 48.2% (electoral court count as reported), a fourth term from 2027, the first candidate to win a runoff after finishing second in the first round. Flávio Bolsonaro says he will not recognise the result and will seek its annulment. The objective now becomes governing with a strong right-wing bloc in Congress and a foreign line already tested by the vote."
+      confidence: B
       sources:
         - {url: "https://www.bbc.com/news/articles/ck1l34ed592no", title: "First-round result, 2026 Brazilian general election (BBC, as cited by Wikipedia)", publisher: "BBC", date: 2026-10-04, tier: 3}
         - {url: "https://www.reuters.com/world/americas/brazilians-head-polls-high-stakes-polarized-election-2026-10-04/", title: "Brazilians head to the polls in a high-stakes, polarized election", publisher: "Reuters", date: 2026-10-04, tier: 3}
         - {url: "https://www.thestar.com.my/news/world/2026/10/09/flavio-bolsonaro-slightly-ahead-of-lula-in-brazil-runoff-datafolha-poll-shows", title: "Flavio Bolsonaro slightly ahead of Lula in Brazil runoff, Datafolha poll shows (49% to 45%, 6-7 Oct, margin 2 points)", publisher: "Reuters (via The Star)", date: 2026-10-08, tier: 3}
+        - {url: "https://political.org/2026/10/25/lula-wins-reelection-in-brazil-securing-fourth-presidential-term/", title: "Lula wins reelection in Brazil, securing fourth presidential term (TSE count: about 51.8% to 48.2%)", publisher: "political.org", date: 2026-10-25, tier: 4}
+        - {url: "https://en.mercopress.com/2026/10/26/trump-questions-lula-s-victory-as-most-of-the-region-including-the-right-congratulates-him", title: "Trump questions Lula's victory as most of the region, including the right, congratulates him", publisher: "MercoPress", date: 2026-10-26, tier: 3}
     - rank: 2
       text: "Sell to Europe and Asia without losing the Mercosur bloc: the EU-Mercosur partnership agreement was signed on 17 January 2026, provisionally applied from 1 May 2026, and referred by the European Parliament to the EU's top court on 21 January. Argentina's Milei pulls the bloc towards the US and the EU instead of Asia."
       confidence: C
@@ -93,10 +95,12 @@ grand_strategy:
         - {url: "https://datamarnews.com/noticias/mercosur-launches-economic-partnership-talks-with-japan-eyes-china/", title: "Mercosur launches economic partnership talks with Japan, eyes China", publisher: "Datamar News", date: 2026-06-30, tier: 3}
 
   constraints:
-    - text: "The runoff: the winner of 25 October decides which foreign policy line the next government carries. Every choice above is a bet on Lula's re-election, and the first round put him 1.9 points behind."
+    - text: "The vote of 25 October settled which foreign policy line the next government carries (Lula's, re-elected with about 51.8%), but not the argument: the loser contests the result, Trump has questioned it, and Lula faces a strong right-wing bloc in Congress that limits his room for manoeuvre. Every choice above was a bet on his re-election; it paid, narrowly."
       confidence: C
       sources:
         - {url: "https://www.bbc.com/news/articles/ck1l34ed592no", title: "First-round result, 2026 Brazilian general election (BBC, as cited by Wikipedia)", publisher: "BBC", date: 2026-10-04, tier: 3}
+        - {url: "https://en.mercopress.com/2026/10/26/trump-questions-lula-s-victory-as-most-of-the-region-including-the-right-congratulates-him", title: "Trump questions Lula's victory as most of the region, including the right, congratulates him", publisher: "MercoPress", date: 2026-10-26, tier: 3}
+        - {url: "https://www.scmp.com/news/china/diplomacy/article/3372318/lulas-win-brazil-deals-blow-trumps-latin-america-push-former-china-envoy", title: "Lula's win in Brazil deals blow to Trump's Latin America push: former China envoy", publisher: "South China Morning Post", date: 2026-10, tier: 3}
     - text: "Dependence on China as a buyer: China takes the soybeans and beef that carry the trade balance, and it can hit them with tariffs (the 55% beef duty of 30 Sep 2026). Brasilia cannot choose freely between Washington and Beijing on trade."
       confidence: B
       sources:
@@ -166,3 +170,5 @@ grand_strategy:
     Brazil plays the strategy of a continental power that will not take sides. It sells soybeans and beef to China, trades with the EU, speaks for the Global South in the BRICS and wants to lead on the Amazon, while US tariffs and sanctions and Argentina's feud push it to lean on its own bloc. The 25 October runoff is the constraint that decides how long this holds, because the sovereignty line that works against Washington is also the line that the Bolsonaro camp contests. Brazil's partners are many and none is a bloc of its own, so its room is the room that the vote leaves.
 
     Enriched 2026-10-16 (protagonist pass). Read through Luttwak, Brazil is a country whose paradoxes all come from one fact: it is strong enough to be courted by every pole and too weak in arms to be feared by any. Each coercion has found it a substitute (China for the US soybean trade, the EU and Japan through Mercosur for the US market, the forest fund for the money of the rich states), and each substitute has made a new dependency (China's beef duty, the Brussels court, Argentina's veto in the bloc). The seams are visible: Washington presses it with tariffs and a Section 301 duty while Berlin, Madrid, London and Tokyo court it as a supplier of minerals and a partner in governance; Beijing buys what it grows and taxes it when it grows too much. The neighbourhood has turned right (Argentina, Chile, Paraguay, Bolivia, now Colombia and Peru) just as Brasilia needs it most, which makes the 25 October runoff a hinge for the whole card: a Flavio Bolsonaro victory would put the sovereignty line against Washington, the BRICS posture and the Gaza line in question at once (our reading: the campaign coverage read does not set out either candidate's foreign policy), while a Lula victory keeps the card as it stands, with the neighbours cooler and the tariff in place. The runoff polls are tight and lean to Flavio (Datafolha, 6-7 October: 49% to 45%, margin 2 points).
+
+    After the election of 25 October 2026 (added 2026-10-29). Lula won the runoff with about 51.8% to Flávio Bolsonaro's 48.2%, reversing the first round and the polls that leaned to Flávio. His victory speech put sovereignty first: Brazil prevented foreign interference through digital platforms and "is nobody's backyard" (Ynetnews); adviser Celso Amorim is reported to have read the result as a defeat of the US strategy in Latin America and to have ruled out Brazil joining its "Shield of the Americas" (Ynetnews, SCMP). Washington answered coldly: Trump questioned the result without evidence on 26 October, while the tariff regime of 2025-2026 is not reported changed (MercoPress, Buenos Aires Herald). The neighbourhood split: Uruguay, Chile, Mexico, Paraguay, Bolivia, Ecuador and Panama congratulated Lula, including right-wing presidents, while Milei, who had backed Flávio, withheld congratulations and was the last South American leader not to recognise the win (MercoPress, Buenos Aires Times). Not verified in this pass: any stated line on BRICS, Venezuela, the EU-Mercosur agreement or China beyond reports that Lula will not exclude Chinese investors from minerals processing; those stances stay as written. Luttwak reading: the vote has not removed the paradox, it has given Lula four more years of it, with a loser who will not concede and a Congress that can slow every move.
