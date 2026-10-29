@@ -1,20 +1,6 @@
 from: PER
 relations:
   # ---------- dependency ----------
-  - to: CHN
-    layer: dependency
-    type: trade_share
-    summary: "China took 32% of Peru's exports in 2025, a record export year (trade ministry, as reported in the Baird Maritime piece on Chancay; not verified against the ministry itself). Chancay is the Chinese gateway for the minerals."
-    since: '2025'
-    until: null
-    value: 0.32
-    unit: share_of_exports
-    last_verified: '2026-10-16'
-    confidence: C
-    note: "The 32% is taken from a search-result snippet; the attribution to the trade ministry is as the snippet gives it. Not fetched. Superseded on 2026-10-16 by the Mincetur figure of 36.2% for 2025 (next China row, Infomercado 3 Feb 2026): per the ontology rule the most recent figure with an official basis wins, and the gap is probably the denominator or the snapshot date. Row kept as the earlier reading."
-    sources:
-      - {url: "https://www.bairdmaritime.com/amp/story/shipping/ports/new-port-lifts-perus-exports-to-record-high-in-2025", title: "New port lifts Peru's exports to record high in 2025 (Port of Chancay)", publisher: "Baird Maritime", date: "2026", tier: 3}
-
   - to: USA
     layer: dependency
     type: trade_share
@@ -80,9 +66,9 @@ relations:
     until: null
     value: 0.362
     unit: share_of_exports
-    last_verified: '2026-10-16'
+    last_verified: '2026-10-29'
     confidence: B
-    note: "Conflicts with the earlier 32% row above (a snippet attributed to the trade ministry); the Mincetur figure read here is the more recent with an official basis and wins. Not read on the Mincetur site itself."
+    note: "An earlier reading of 32% (a search-result snippet attributed to the trade ministry, in a Baird Maritime piece on Chancay; not fetched) is superseded by this figure, the more recent with an official basis. Not read on the Mincetur site itself."
     sources:
       - {url: "https://infomercado.pe/exportaciones-peruanas-superaron-los-us90000-millones-con-china-como-principal-destino/", title: "Peruvian exports exceeded US$90 billion with China as main destination", title_original: "Exportaciones peruanas superaron los US$90,000 millones con China como principal destino", publisher: "Infomercado (citing Mincetur)", date: "2026-02-03", tier: 3, lang: es}
 

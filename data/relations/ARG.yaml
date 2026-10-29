@@ -43,12 +43,12 @@ relations:
   - to: USA
     layer: dependency
     type: debt
-    summary: "The US Treasury currency swap of USD 20bn, announced 9 October 2025 and signed 20 October 2025, which Milei said could cover 2026 foreign-currency debt payments if markets did not refinance. The value is the swap line size. Sharpened 2026-10-16: the drawn amount is now known - Argentina drew USD 2.5bn in the fourth quarter of 2025 and repaid it by 9 January 2026 (Bessent: fully repaid, 'tens of millions' of profit for the taxpayer; the Treasury report showed the amount; the central bank funded the repayment from an unnamed multilateral lender that was not the IMF, per the Buenos Aires Times, alongside a USD 3bn one-year repo from international banks at about 7.4%). Whether the line remains open was not confirmed."
+    summary: "The US Treasury currency swap of USD 20bn, announced 9 October 2025 and signed 20 October 2025, which Milei said could cover 2026 foreign-currency debt payments if markets did not refinance. The value is the swap line size. The drawn amount is now known - Argentina drew USD 2.5bn in the fourth quarter of 2025 and repaid it by 9 January 2026 (Bessent: fully repaid, 'tens of millions' of profit for the taxpayer; the Treasury report showed the amount; the central bank funded the repayment from an unnamed multilateral lender that was not the IMF, per the Buenos Aires Times, alongside a USD 3bn one-year repo from international banks at about 7.4%). Whether the line remains open was not confirmed."
     since: '2025-10-20'
     until: null
     value: 20
     unit: usd_bn_swap_line
-    last_verified: '2026-10-16'
+    last_verified: '2026-10-29'
     confidence: B
     sources:
       - {url: "https://news.bloomberglaw.com/capital-markets/us-argentina-sign-20-billion-swap-deal-as-peso-rout-deepens", title: "US, Argentina Sign $20 Billion Swap Deal Amid Deep Peso Rout", publisher: "Bloomberg Law", date: "2025-10-20", tier: 3}
@@ -98,10 +98,10 @@ relations:
   - to: org-eu
     layer: action
     type: agreement
-    summary: "Argentina's Senate ratified the EU-Mercosur agreement on 26 February 2026 by 69 votes to 3, after the Chamber of Deputies; Milei welcomed the deal as a starting point and asked Mercosur for more flexibility. Sharpened 2026-10-16: on the European side the interim trade agreement has applied provisionally since 1 May 2026 with the ratifying members (Argentina, Uruguay) while the Parliament's referral to the Court of Justice (21 January, 334-324) and Poland's annulment suit stay open."
+    summary: "Argentina's Senate ratified the EU-Mercosur agreement on 26 February 2026 by 69 votes to 3, after the Chamber of Deputies; Milei welcomed the deal as a starting point and asked Mercosur for more flexibility. On the European side the interim trade agreement has applied provisionally since 1 May 2026 with the ratifying members (Argentina, Uruguay) while the Parliament's referral to the Court of Justice (21 January, 334-324) and Poland's annulment suit stay open."
     since: '2026-02-26'
     until: null
-    last_verified: '2026-10-16'
+    last_verified: '2026-10-29'
     confidence: B
     sources:
       - {url: "https://www.bilaterals.org/uruguay-and-argentina-ratify-the?lang=es", title: "Uruguay and Argentina ratify the EU-Mercosur deal, leaving entry into force to Brussels", publisher: "bilaterals.org", date: "2026-02", tier: 3}
@@ -143,7 +143,7 @@ relations:
     last_verified: '2026-10-16'
     confidence: B
     sources:
-      - {url: "https://www.whitecase.com/insight-alert/eu-provisionally-apply-eu-mercosur-interim-trade-agreement-pending-cjeu-opinion", title: "EU to provisionally apply the EU-Mercosur interim trade agreement pending the CJEU opinion", publisher: "White & Case", date: "2026-02", tier: 2}
+      - {url: "https://www.whitecase.com/insight-alert/eu-provisionally-apply-eu-mercosur-interim-trade-agreement-pending-cjeu-opinion", title: "EU to provisionally apply the EU-Mercosur interim trade agreement pending the CJEU opinion", publisher: "White & Case", date: "2026-02", tier: 3}
       - {url: "https://www.bilaterals.org/uruguay-and-argentina-ratify-the?lang=es", title: "Uruguay and Argentina ratify the EU-Mercosur deal, leaving entry into force to Brussels", publisher: "bilaterals.org", date: "2026-02", tier: 3}
 
   # ---------- dependency ----------
@@ -442,10 +442,10 @@ relations:
   - to: ESP
     layer: action
     type: incident
-    summary: "Argentina's side of the ESP card's row, sharpened: after Milei called Sanchez's wife 'corrupt' at a Vox event in Madrid, Spain withdrew its ambassador 'definitively' on 21 May 2024; the post stayed empty about five months until Spain named a new ambassador in October 2024 with a joint statement of the two foreign ministries; Argentina never withdrew its own ambassador. In 2025 Milei insulted Sanchez again in Madrid and on a later visit had no meeting planned with the king or the prime minister."
+    summary: "Argentina's side of the ESP card's row: after Milei called Sanchez's wife 'corrupt' at a Vox event in Madrid, Spain withdrew its ambassador 'definitively' on 21 May 2024; the post stayed empty about five months until Spain named a new ambassador in October 2024 with a joint statement of the two foreign ministries; Argentina never withdrew its own ambassador. In 2025 Milei insulted Sanchez again in Madrid and on a later visit had no meeting planned with the king or the prime minister."
     since: '2024-05-21'
     until: null
-    last_verified: '2026-10-16'
+    last_verified: '2026-10-29'
     confidence: B
     sources:
       - {url: "https://www.laprensa.hn/mundo/milei-califica-disparate-retiro-embajadora-espana-NP19436092", title: "Milei calls Spain's withdrawal of its ambassador 'nonsense'", title_original: "Milei califica de disparate el retiro de la embajadora de Espana", lang: es, publisher: "La Prensa (Honduras)", date: "2024-05", tier: 3}

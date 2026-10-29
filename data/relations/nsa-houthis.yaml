@@ -353,7 +353,7 @@ relations:
     sources:
       - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/27637", title: "Why the US Failed to Defeat Iran and What it Means for the Axis of Resistance", publisher: "Sana'a Center for Strategic Studies", date: 2026-06-20, tier: 2}
       - {url: "https://sanaacenter.org/publications/perspectives-and-analyses/28317", title: "The Houthis Seize Yemen's West Coast: Reactions from Experts", publisher: "Sana'a Center for Strategic Studies", date: 2026-09-15, tier: 2}
-      - {url: "https://hornreview.org/2026/08/31/the-geopolitics-of-legitimacy-and-saudis-recalibration-in-sudan-and-the-red-sea-area/", title: "The Horn Review, Houthi-al-Shabaab headline of 8 October 2026 (page teaser)", publisher: "The Horn Review", date: 2026-10-08, tier: 4}
+      - {url: "https://hornreview.org/2026/08/31/the-geopolitics-of-legitimacy-and-saudis-recalibration-in-sudan-and-the-red-sea-area/", title: "The Horn Review, Houthi-al-Shabaab headline of 8 October 2026 (page teaser)", publisher: "The Horn Review", date: 2026-10-08, tier: 3}
   - to: ARE
     layer: action
     type: incident
@@ -403,16 +403,26 @@ relations:
   - to: YEM
     layer: action
     type: incident
-    summary: A Houthi missile attack on a training centre in Shabwah Governorate killed 58 soldiers and injured over 200, with 14 missing (portal figures, 19 Oct). The cited Reuters URL slug reads 'at least
-      18 killed', so the toll was probably revised upward; check before using the number.
+    summary: A Houthi ballistic-missile strike on the al-Alam training camp in Shabwah on 19 Oct 2026 killed at least 53 security and police recruits and wounded over 200, per the Shabwa authorities (preliminary, AP). The first wire counts were at least 18 and at least 20. The Houthis acknowledged targeting the camp and said it was run by Saudi officers.
+    note: 'The portal''s 19 Oct figure of 58 killed and 14 missing is not in the sources found; the AP count (at least 53) is the latest with an official basis. Recheck before the next update.'
     since: 2026-10-19
     until: null
-    last_verified: '2026-10-22'
+    last_verified: '2026-10-29'
     confidence: B
     sources:
     - url: https://www.reuters.com/world/least-18-killed-houthi-attack-yemeni-government-military-camp-shabwa-sources-say-2026-10-19/
       title: 'Reuters: Houthi missile attack on Yemeni government military camp in Shabwah'
       publisher: Reuters
+      date: '2026-10-19'
+      tier: 3
+    - url: https://www.clickondetroit.com/news/world/2026/10/19/houthi-rebels-strike-a-government-military-camp-in-southern-yemen-killing-at-least-20-fighters/
+      title: 'Houthi rebels strike a government military camp in southern Yemen, killing at least 20 fighters'
+      publisher: ClickOnDetroit
+      date: '2026-10-19'
+      tier: 3
+    - url: https://www.theleader.com.au/story/9371525/houthi-rebels-strike-yemeni-govt-forces-killing-53/
+      title: 'Houthi rebels strike Yemeni govt forces, killing 53 (AP)'
+      publisher: The Leader (AP)
       date: '2026-10-19'
       tier: 3
   - to: SAU
@@ -481,7 +491,7 @@ relations:
     sources:
     - url: https://apnews.com/article/mideast-iran-saudi-yemen-israel-palestinians-october-282026-c032db4b09725fea0f6320eec49de5d4
       title: 'AP: Saudi airstrike on Al Hazm market, Yemen'
-      publisher: AP
+      publisher: Associated Press
       date: '2026-10-28'
       tier: 3
     - url: https://english.news.cn/20261028/0bff5197bf7d4bd8aef67cc902090535/c.html

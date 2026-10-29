@@ -65,6 +65,20 @@ def stamp_fetched(key):
     p.write_text(json.dumps(d, indent=1, sort_keys=True), encoding="utf-8")
 
 
+def cite_tier(url):
+    """Tier of a citation taken from Wikipedia, by the publisher class of its domain: a government,
+    foreign-ministry or UN page is tier 1 (it is the primary document), anything else stays tier 3."""
+    u = url
+    m = re.match(r"https?://web\.archive\.org/web/\d+[a-z_]*/(.*)", u)
+    if m:
+        u = m.group(1)
+    host = urllib.parse.urlparse(u if "://" in u else "http://" + u).netloc.lower()
+    if re.search(r"(^|\.)(gov|gouv|gob|govt)(\.|$)", host) or re.search(r"(^|\.)(admin\.ch|un\.org|undocs\.org)$", host) \
+            or host.startswith("gouvernement."):
+        return 1
+    return 3
+
+
 def fetch(page):
     url = API + "?" + urllib.parse.urlencode({"action": "parse", "page": page, "prop": "wikitext|revid", "format": "json", "formatversion": 2, "redirects": 1})
     req = urllib.request.Request(url, headers={"User-Agent": UA})
@@ -191,7 +205,7 @@ def main():
             if m in yes_ids:
                 srcs = []
                 if row and row["ref"]:
-                    srcs.append({"url": row["ref"], "title": f"Citation under the {c['name']} row in Wikipedia's list ({m})", "publisher": "as cited by Wikipedia", "date": row["date"] or today, "tier": 3, "dataset": "wikipedia-recognition"})
+                    srcs.append({"url": row["ref"], "title": f"Citation under the {c['name'].removeprefix('the ')} row in Wikipedia's list ({m})", "publisher": "as cited by Wikipedia", "date": row["date"] or today, "tier": cite_tier(row["ref"]), "dataset": "wikipedia-recognition"})
                 srcs.append({"url": page_url, "title": title, "publisher": "Wikipedia (index)", "date": today, "tier": 4, "dataset": "wikipedia-recognition"})
                 rel.append({"from": m, "to": target, "layer": "alignment", "type": "recognition",
                             "summary": f"Recognises {c['name']}" + (f" since {row['date']}" if row and row["date"] else "") + ("" if kind == "recognition of" else " (full diplomatic relations)") + ".",

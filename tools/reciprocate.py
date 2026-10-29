@@ -26,6 +26,19 @@ RECIP = {"ally": "partner", "reluctant_ally": "partner", "partner": "partner", "
          "neutral": "neutral", "rival": "rival", "adversary": "adversary", "claimed_territory": "rival"}
 LOWER = {"A": "B", "B": "C", "C": "C"}
 MIRROR_TYPES = {"treaty", "membership", "security_guarantee"}   # recognition is directional, never mirrored
+# Co-members of these alliances are treaty allies by the dataset floor that tools/build.py derives (ONTOLOGY.md,
+# 2026-10-16): a written "partner" reciprocal would replace that floor, so such pairs are skipped here.
+TREATY_ORGS = ("org-nato", "org-eu", "org-csto")
+
+
+def treaty_members():
+    """org -> set of full members from the Wikidata memberships dataset, the same rows build.py uses"""
+    rows = (load(D / "relations" / "_wikidata.yaml") or {}).get("relations", [])
+    out = {o: set() for o in TREATY_ORGS}
+    for r in rows:
+        if r.get("layer") == "alignment" and r.get("type") == "membership" and r.get("to") in out and r.get("dataset") == "wikidata":
+            out[r["to"]].add(r["from"])
+    return out
 
 
 class Dumper(yaml.SafeDumper):
@@ -51,6 +64,8 @@ def main(write):
     stances = {p.stem: v for p in (D / "stances").glob("*.yaml") if not p.stem.startswith("_") and (v := load(p))}
     relations = {p.stem: v for p in (D / "relations").glob("*.yaml") if not p.stem.startswith("_") and (v := load(p))}
     added_st, added_rel = [], []
+    members = treaty_members()
+    skipped = 0
 
     for a, s in stances.items():
         if a in running:          # a draft is not evidence yet
@@ -61,6 +76,9 @@ def main(write):
                 continue
             tgt = stances.setdefault(b, {"actor": b, "stances": []})
             if any(x["toward"] == a for x in tgt["stances"]):
+                continue
+            if any(a in m and b in m for m in members.values()):
+                skipped += 1      # co-members of NATO, the EU or the CSTO: the treaty floor ("ally") stands
                 continue
             tgt["stances"].append({
                 "toward": a, "grade": RECIP[st["grade"]], "trend": "stable", "bond": "unknown",
@@ -86,6 +104,8 @@ def main(write):
             added_rel.append((b, a, row["type"]))
 
     print(f"{len(added_st)} reciprocal stances, {len(added_rel)} mirrored rows" + ("" if write else " (dry run)"))
+    if skipped:
+        print(f"  ({skipped} pairs skipped: co-members of a treaty alliance keep the dataset floor)")
     for b, a, g in added_st:
         print(f"  stance {b} -> {a}: {g}")
     for b, a, t in added_rel:

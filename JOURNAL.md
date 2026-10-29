@@ -1,5 +1,42 @@
 # Journal
 
+## 2026-10-29 · Review before the letter to Luttwak: three reviewers, three fixing hands, 27 card corrections
+
+Davide: "fai check per bug o altro? poi lo mettiamo sul mio sito dopo e mandiamo a Luttwak". Three Sonnet reviewers in
+parallel, report only (mandates and reports in `tools/briefs/review/`): the site in the browser, build and data, the
+English a reader sees. Found 22 bugs, 46 inconsistencies, 31 cosmetic items, 9 ideas; the worst were real: the Clubs and
+Recognition lenses threw on hover (legend code pasted into the tooltip builder), Palestine's full card unreachable from
+the map (`PSX` in the geojson, `PSE` in the data; same for five territories), the dossier reading split at every decimal
+point ("51. 8%") and, for the same reason, never shown in Italian although all 205 readings were translated, 35
+organisations drawn in the Gulf of Guinea at [0,0], nine org pages linking Wikipedia to a village in Botswana or to
+Giotto (ids typed by hand on day one), the About page contradicting the site on four points, "Serbia's veto on Kosovo"
+on the Luttwak page, a false privacy paragraph. Davide approved A (code) and B (texts) together and C (cards) with
+before/after.
+
+Fixes: a code hand (Sonnet, `fix-code.md`) and a text hand (Sonnet, `fix-text.md`) on `docs/app.js` at the same time
+with small edits; the code hand also wrote `tools/datasets/org_seats.py` (Wikidata P159/P625: 27 seats found, 8 orgs
+without one are no longer drawn), rebuilt Denmark into the datasets (Wikidata types it as "Kingdom of Denmark" without
+an ISO code), made the build deterministic, extended the Italian DOM translator to `div`/`td`/`span` (844 site strings,
+451 of them new, translated the same day), implemented the watch-date warning CLAUDE.md promised, and dropped two
+design mock-ups from `docs/`. The text hand rewrote the method paragraphs, the Luttwak and About pages, This site,
+created `README.md` and corrected the Layout paragraph of CLAUDE.md; "About" in Italian is "Info" everywhere (one key).
+Cards: a third hand wrote `cards-prima-dopo.md` (27 numbered items, Italian for Davide, English texts quoted); Davide
+approved all but one (VCT needs research) by group, plus `parent: MAR` for Western Sahara (administering state, as
+for Falklands, Chagos and Mayotte; not a legal finding) and two grade changes (CAN->IND rival to reluctant partner, the
+same thaw the Indian card already read; ARE->ERI partner to neutral, the Assab base dismantled in 2021 with nothing
+since). Applied by a fourth hand: 9 card texts, 106 working notes cleaned in 53 files ("Review 2026-10-12: regraded",
+"Mirror of the X card", "Sharpened", ONTOLOGY references), 12 dates, 82 tiers, 10 publisher spellings, "the the" in 83
+titles, units, a new `data/stances/LCA.yaml`, GRC/HTI/Houthis corrected from the W44 flags, Russia's key rate (14% on 29
+Oct, Bank of Russia), the USA reading counting its two adversaries.
+
+Decision (Davide): the 57 stances `reciprocate.py` had written as "partner" between NATO/EU/CSTO co-members are deleted;
+ONTOLOGY makes the treaty floor "ally" and the build derives it, so a written "partner" was overriding the floor
+silently; `reciprocate.py` now skips treaty co-members. The 12 mirrors of a hand-written "partner" stay. Stances 4417.
+
+Tokens: about 2.9M (reviews 1.1M, fixes 1.0M, translations 0.24M, cards 0.4M, coordination); total 44.5M on the Data
+page. Left for later in BACKLOG. Next: the domain `grandstrategy.davidecaniatti.com` (CNAME first, by Davide), then the
+letter.
+
 ## 2026-10-29 · W44, second delta pass: nine more cards from the week's heat and rows
 
 Davide: "un'altra passata dal milioncino". Nine agents in parallel on the cards the week and the heat pointed
