@@ -302,11 +302,21 @@ sup.fn-sep { font-size: 10px; color: var(--ink-3); }
 .changes a { color: var(--ink); text-decoration: none; text-transform: uppercase; letter-spacing: .06em; }
 .changes i { font-style: normal; }
 
-/* ---------- the pulse: warming outlines breathe, cooling ones flicker like dying phosphor */
-@keyframes breathe { 0%, 100% { stroke-opacity: .55; } 50% { stroke-opacity: 1; } }
-@keyframes flicker { 0%, 84%, 100% { stroke-opacity: 1; } 86% { stroke-opacity: .15; } 88% { stroke-opacity: 1; } 91% { stroke-opacity: .3; } 93% { stroke-opacity: 1; } }
-svg#map path.p.warming { animation: breathe 2.8s ease-in-out infinite; }
-svg#map path.p.cooling { animation: flicker 3.6s linear infinite; }
+/* ---------- the pulse: warming outlines breathe, cooling ones flicker like dying phosphor.
+   Painted properties are never animated: the pulsing outlines are copied into two overlay <svg>s stacked over the
+   map (app.js drawMap) and the opacity of each whole overlay is animated, which the compositor does without
+   repainting. The outline underneath keeps the keyframes' minimum as a static stroke-opacity; the overlay adds the
+   rest, so 0 here means "the outline at its dimmest" and 1 "at full light". */
+@keyframes breathe { 0%, 100% { opacity: 0; } 50% { opacity: 1; } }
+@keyframes flicker { 0%, 84%, 100% { opacity: 1; } 86% { opacity: 0; } 88% { opacity: 1; } 91% { opacity: .18; } 93% { opacity: 1; } }
+.map-wrap { position: relative; }
+svg.fx-overlay { position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: block; pointer-events: none; will-change: opacity; }
+svg.fx-overlay.warming { animation: breathe 2.8s ease-in-out infinite; }
+svg.fx-overlay.cooling { animation: flicker 3.6s linear infinite; }
+/* during a zoom gesture: the pulse holds still and the glow is off (both come back when the gesture ends) */
+.map-wrap.zooming svg.fx-overlay { animation-play-state: paused; }
+.map-wrap.zooming [filter], .map-wrap.fx-nofilter [filter] { filter: none; }
+@media (prefers-reduced-motion: reduce) { svg.fx-overlay { animation: none; display: none; } }
 .page p.how { font-size: 12.5px; color: var(--ink-3); max-width: 760px; margin: -2px 0 10px; line-height: 1.5; }
 
 /* ---------- theatres page */

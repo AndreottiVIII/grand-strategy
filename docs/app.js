@@ -208,7 +208,17 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
     if (v === "dossier") renderDossier(pov || fullActors[0].id);
   }
 
-  const stanceOf = id => pov ? (data.stances[pov] || []).find(s => s.toward === id) : undefined;
+  // stances indexed by `toward`, rebuilt only when the point of view's list changes (first row wins, as `find` did)
+  let stanceIdxSrc = null, stanceIdx = null;
+  const stanceOf = id => {
+    if (!pov) return undefined;
+    const src = data.stances[pov];
+    if (src !== stanceIdxSrc || !stanceIdx) {
+      stanceIdxSrc = src; stanceIdx = new Map();
+      (src || []).forEach(s => { if (!stanceIdx.has(s.toward)) stanceIdx.set(s.toward, s); });
+    }
+    return stanceIdx.get(id);
+  };
   const gradeOf = id => id === pov ? "own_territory" : (stanceOf(id) ? stanceOf(id).grade : "neutral");
 
   // the vector display: a posture is a colour, drawn as the outline of the country and a faint light inside it
@@ -276,22 +286,45 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
 
   // ---------- tooltip
   const tip = document.getElementById("tip");
-  function showTip(html, ev) {
-    tip.innerHTML = html; tip.hidden = false;
-    // measured after the content is set: flip to the left or above the cursor rather than run off the screen
-    const w = tip.offsetWidth, h = tip.offsetHeight, W = window.innerWidth, H = window.innerHeight;
+  // the tooltip is rebuilt only when the hovered id changes; plain movement only moves it (size measured once per content)
+  let tipId = null, tipW = 0, tipH = 0;
+  function placeTip(ev) {
+    const w = tipW, h = tipH, W = window.innerWidth, H = window.innerHeight;
     let x = ev.clientX + 14, y = ev.clientY + 14;
     if (x + w > W - 8) x = Math.max(8, ev.clientX - w - 14);
     if (y + h > H - 8) y = Math.max(8, ev.clientY - h - 14);
     if (y + h > H - 8) y = Math.max(8, H - h - 8);
     tip.style.left = x + "px"; tip.style.top = y + "px";
   }
-  const hideTip = () => { tip.hidden = true; };
+  function showTip(html, ev) {
+    tipId = null;
+    tip.innerHTML = html; tip.hidden = false;
+    // measured after the content is set: flip to the left or above the cursor rather than run off the screen
+    tipW = tip.offsetWidth; tipH = tip.offsetHeight;
+    placeTip(ev);
+  }
+  const hideTip = () => { tip.hidden = true; tipId = null; };
 
   // ---------- map
-  let mapState = null;
+  let mapState = null, zoomRaf = 0;
+  // Performance switches, read once from the address (?fx=a,b,c), for A/B tests:
+  //   noanim     no animated overlays: warming/cooling outlines stay static at full opacity
+  //   nofilter   no phosphor glow filter at all
+  //   nozoomopt  the old zoom path: stroke widths and dashes recomputed on every zoom event, no frame coalescing,
+  //              label widths re-measured every time
+  // The pulse lives in two overlay <svg>s (warming, cooling) over the map, animated by CSS opacity on the compositor;
+  // the glow is switched off and the pulse paused (class "zooming" on .map-wrap) while a zoom gesture is in progress.
+  const FX = new Set((new URLSearchParams(location.search).get("fx") || "").split(",").map(x => x.trim()).filter(Boolean));
+  const REDUCED_MOTION = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  // lowest stroke opacity of each pulse; the static outline under the overlay carries it, the overlay adds the rest
+  const PULSE_FLOOR = { warming: .55, cooling: .15 };
   function drawMap() {
     const svg = d3.select("#map");
+    const wrap = d3.select(svg.node().parentNode);
+    if (zoomRaf) { cancelAnimationFrame(zoomRaf); zoomRaf = 0; }
+    tipId = null; litId = null;
+    wrap.selectAll("svg.fx-overlay").remove();
+    wrap.classed("zooming", false).classed("fx-nofilter", FX.has("nofilter"));
     svg.selectAll("*").remove();
     const { width, height } = svg.node().getBoundingClientRect();
     const proj = d3.geoNaturalEarth1().fitExtent([[10, 10], [width - 10, height - 10]], world);
@@ -344,21 +377,33 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
     const isClaimed = f => posture && f.id !== pov && stanceOf(f.id).grade === "claimed_territory";
     const screened = !pov ? (homeLens ? world.features.filter(f => lensClass(f.id)) : []) : posture ? world.features.filter(f => f.id === pov || stanceOf(f.id)) : world.features.filter(f => f.id === pov || lensClass(f.id));
 
-    // keep line weights, dashes and type at screen size whatever the zoom
+    // keep line weights, dashes and type at screen size whatever the zoom. The lines are drawn with
+    // vector-effect: non-scaling-stroke, so their widths and dashes are set once, in screen units, at creation;
+    // only the type, the hatch and the seats follow k.
+    const NSS = !FX.has("nozoomopt");
+    let ov = d3.select(null); // the pulse overlays' outline paths, filled in below
+    const labelExtent = new Map(); // projected x-extent of each country at k=1, measured once per draw
+    function extentOf(id) {
+      let e = labelExtent.get(id);
+      if (e === undefined) { const [[x0], [x1]] = path.bounds(feature[id]); e = x1 - x0; labelExtent.set(id, e); }
+      return e;
+    }
     function rescale(k) {
       defs.select("#hatch").attr("patternTransform", `rotate(45) scale(${1 / k})`);
-      g.selectAll("path.c").attr("stroke-width", .55 / k);
-      g.selectAll("path.grat").attr("stroke-width", .5 / k).attr("stroke-dasharray", `${2 / k} ${3 / k}`);
-      g.selectAll("path.p").attr("stroke-width", f => litWidth(f) / k).attr("stroke-dasharray", f => isClaimed(f) ? `${3 / k} ${2 / k}` : null);
-      g.selectAll("path.bond").attr("stroke-width", 3.4 / k);
-      g.selectAll("path.align").attr("stroke-width", 7 / k).attr("stroke-dasharray", `${7 / k} ${5 / k}`);
-      g.selectAll("path.seam").attr("stroke-width", 1.6 / k).attr("stroke-dasharray", `${4 / k} ${3 / k}`);
+      if (!NSS) {
+        g.selectAll("path.c").attr("stroke-width", .55 / k);
+        g.selectAll("path.grat").attr("stroke-width", .5 / k).attr("stroke-dasharray", `${2 / k} ${3 / k}`);
+        g.selectAll("path.p").attr("stroke-width", f => litWidth(f) / k).attr("stroke-dasharray", f => isClaimed(f) ? `${3 / k} ${2 / k}` : null);
+        g.selectAll("path.bond").attr("stroke-width", 3.4 / k);
+        g.selectAll("path.align").attr("stroke-width", 7 / k).attr("stroke-dasharray", `${7 / k} ${5 / k}`);
+        g.selectAll("path.seam").attr("stroke-width", 1.6 / k).attr("stroke-dasharray", `${4 / k} ${3 / k}`);
+        ov.attr("stroke-width", f => litWidth(f) / k);
+      }
       // a label shows only when its country is wide enough on screen to carry it (the point of view always does)
       g.selectAll(".labels text").attr("font-size", 10 / k).attr("stroke-width", 3 / k)
         .attr("opacity", a => {
           if (a.id === pov || !feature[a.id]) return 1;
-          const [[x0], [x1]] = path.bounds(feature[a.id]);
-          return (x1 - x0) * k >= (a.short || a.name).length * 5.6 ? 1 : 0;
+          return (NSS ? extentOf(a.id) : (([[x0], [x1]]) => x1 - x0)(path.bounds(feature[a.id]))) * k >= (a.short || a.name).length * 5.6 ? 1 : 0;
         });
       g.selectAll(".seats rect").attr("transform", a => { const [x, y] = proj(a.coords); return `translate(${x},${y}) scale(${1 / k}) translate(${-x},${-y})`; });
     }
@@ -367,7 +412,7 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
     const g = svg.append("g");
 
     const countries = g.append("g");
-    if (!flagHome) countries.append("path").attr("class", "grat").attr("d", path(d3.geoGraticule10())).attr("fill", "none").attr("stroke", css("--grat")).attr("pointer-events", "none");
+    if (!flagHome) countries.append("path").attr("class", "grat").attr("d", path(d3.geoGraticule10())).attr("fill", "none").attr("stroke", css("--grat")).attr("stroke-width", .5).attr("stroke-dasharray", "2 3").attr("pointer-events", "none");
     // the flag pieces go under the country outlines, which stay transparent on top so hover and click still work
     countries.selectAll("path.flag").data(pieces).join("path").attr("class", "flag")
       .attr("d", path).attr("fill", p => `url(#flag-${p.id}-${p.i})`).attr("pointer-events", "none");
@@ -380,11 +425,28 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
       .on("mouseleave", () => { hideTip(); lightCard(null); })
       .on("click", (ev, f) => { if (!actors[f.id]) return; if (!pov && (actors[f.id].card === "full" || hasVotes(f.id) || hasStances(f.id) || hasClubs(f.id) || hasRecog(f.id))) setPov(f.id); else showDossier(f.id); });
     // lit countries: outline in the posture's colour, the same light inside, phosphor glow
-    countries.selectAll("path.p").data(screened).join("path").attr("class", "p")
+    const pulseOf = f => PULSE_ON_MAP && posture && f.id !== pov && stanceOf(f.id) ? ({ warming: "warming", cooling: "cooling" }[stanceOf(f.id).trend] || "") : "";
+    const overlays = !FX.has("noanim") && !REDUCED_MOTION; // the pulse rides on overlays; without them the outlines stay still
+    countries.selectAll("path.p").data(screened).join("path")
       .attr("d", path).attr("pointer-events", "none").attr("stroke-linejoin", "round")
       .attr("fill", f => isClaimed(f) ? "url(#hatch)" : litColor(f)).attr("fill-opacity", f => isClaimed(f) ? 1 : litLight(f))
       .attr("stroke", litColor).attr("stroke-width", litWidth).attr("filter", "url(#glow)")
-      .attr("class", f => "p" + (PULSE_ON_MAP && posture && f.id !== pov && stanceOf(f.id) ? { warming: " warming", cooling: " cooling" }[stanceOf(f.id).trend] || "" : ""));
+      .attr("stroke-dasharray", f => isClaimed(f) ? "3 2" : null)
+      .attr("stroke-opacity", f => overlays && pulseOf(f) ? PULSE_FLOOR[pulseOf(f)] : null)
+      .attr("class", f => "p" + (pulseOf(f) ? " " + pulseOf(f) : ""));
+    // the pulse overlays: one <svg> per kind stacked over the map, holding only the outlines of the pulsing
+    // countries; the CSS animates the opacity of the whole overlay (compositor), never a paint property
+    const overlayG = {};
+    if (overlays) ["warming", "cooling"].forEach(kind => {
+      const feats = screened.filter(f => pulseOf(f) === kind);
+      if (!feats.length) return;
+      const osvg = wrap.append("svg").attr("class", "fx-overlay " + kind).attr("aria-hidden", "true");
+      overlayG[kind] = osvg.append("g");
+      overlayG[kind].selectAll("path").data(feats).join("path").attr("class", "fxp")
+        .attr("d", path).attr("fill", "none").attr("pointer-events", "none").attr("stroke-linejoin", "round")
+        .attr("stroke", litColor).attr("stroke-width", litWidth).attr("filter", "url(#glow)");
+    });
+    ov = wrap.selectAll("svg.fx-overlay path");
     // seams: the actors pulled between the point of view and one of its rivals get a dashed outline in the seam colour
     const seamIds = SEAMS_ON_MAP && posture ? new Set(seamsAround(pov).map(s => s.y)) : new Set();
     countries.selectAll("path.seam").data(world.features.filter(f => seamIds.has(f.id))).join("path").attr("class", "seam")
@@ -403,6 +465,10 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
       .attr("d", path).attr("fill", "none").attr("pointer-events", "none").attr("stroke-linejoin", "round")
       .attr("clip-path", f => `url(#clip-${f.id})`)
       .attr("stroke", COLOR("ally")).attr("stroke-opacity", .9).attr("stroke-width", 7).attr("stroke-dasharray", "7 5");
+    if (NSS) { // line weights and dashes stay in screen units whatever the zoom
+      countries.selectAll("path.grat, path.c, path.p, path.seam, path.bond, path.align").attr("vector-effect", "non-scaling-stroke");
+      ov.attr("vector-effect", "non-scaling-stroke");
+    }
 
     // non-state actors and seats
     const seats = g.append("g").attr("class", "seats");
@@ -432,10 +498,17 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
     mapState = { svg, g, proj, path, width, height, labels };
 
     // framing: the whole world, or a neighbourhood around the point of view
-    const zoom = d3.zoom().scaleExtent([1, 14]).on("zoom", ev => {
-      g.attr("transform", ev.transform);
-      rescale(ev.transform.k);
-    });
+    let pendingK = 1;
+    const zoom = d3.zoom().scaleExtent([1, 14]).on("start", () => wrap.classed("zooming", true))
+      .on("zoom", ev => {
+        g.attr("transform", ev.transform);
+        Object.values(overlayG).forEach(og => og.attr("transform", ev.transform));
+        if (!NSS) return rescale(ev.transform.k);
+        // everything that follows k is done once per frame, with the latest k
+        pendingK = ev.transform.k;
+        if (!zoomRaf) zoomRaf = requestAnimationFrame(() => { zoomRaf = 0; rescale(pendingK); });
+      })
+      .on("end", () => wrap.classed("zooming", false));
     mapState.rescale = rescale;
     svg.call(zoom);
     function frame(mode) {
@@ -473,13 +546,17 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
 
   // ---------- relations ledger under the map: counterparts on the left, the latest traffic on the right
   const flagOf = a => a.flag ? a.flag : a.iso2 ? `https://flagcdn.com/w80/${a.iso2}.png` : null;
+  let litId = null;
   function lightCard(id) {
+    if (id === litId) return;
+    litId = id;
     document.querySelectorAll(".ledger tr.cp").forEach(c => c.classList.toggle("is-lit", c.dataset.id === id));
   }
   // filters on the ledger: click a posture, trend, bond or type to keep only that; click again to clear
   let ledgerFilter = {};
   function renderRelPanel() {
     const el = document.getElementById("relpanel");
+    litId = null;
     if (!pov) { el.innerHTML = ""; ledgerFilter = {}; return; }
     const rows = data.relations.filter(r => r.from === pov && r.dataset !== "unga-votes");
     const byTo = d3.group(rows, r => r.to);
@@ -1048,6 +1125,11 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
   }
 
   function tipFor(id, fallbackName, ev) {
+    if (id === tipId && !tip.hidden) return placeTip(ev);
+    tipBuild(id, fallbackName, ev);
+    tipId = id;
+  }
+  function tipBuild(id, fallbackName, ev) {
     const a = actors[id], name = a ? a.name : fallbackName;
     if (id === pov) return showTip(`<b>${esc(name)}</b><span class="k">Point of view</span>`, ev);
     if (!pov && homeLens) {
