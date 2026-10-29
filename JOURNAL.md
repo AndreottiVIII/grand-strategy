@@ -1,5 +1,19 @@
 # Journal
 
+## 2026-10-29 · W44, second delta pass: nine more cards from the week's heat and rows
+
+Davide: "un'altra passata dal milioncino". Nine agents in parallel on the cards the week and the heat pointed
+at (Sonnet for Syria and Argentina, Haiku for the rest): Syria (Nasib reopened on the 28th against a joint
+committee; Jordan trend warming to cooling), Argentina (Milei "takes note" of Lula's win, no ambassadors since
+August; Brazil stays reluctant partner cooling), the Houthis and Yemen (the war reopened on 15 October; grades
+kept, Shabwah toll corrected to AP's "at least 53"), El Salvador and Haiti (the four hostages still unaccounted
+for; the Gang Suppression Force at a third of its planned strength; new stances SLV-HTI and SLV-gangs), Albania
+(protests since 13 October, over a thousand arrests, Rama refusing to resign and talking of a foreign hand),
+Libya (the eastern House's approval recorded as fact; Greek and Egyptian reactions as rows). Rwanda unchanged:
+the Reuters piece on the 28 October designation could not be opened. About 1.2M tokens. Flags for the hand:
+GRC's card cites an October 2025 assurance that the House would not ratify, now contradicted; the HTI card's
+GSF strength (1,500) against AP's 2,000. The Watch tables stacked after Davide's screenshot.
+
 ## 2026-10-29 · Weekly update W44: rows, and for the first time the cards
 
 Davide: run the week now, and update the cards too ("si e' votato in Israele"). Floor: GDELT heat for 22-28
