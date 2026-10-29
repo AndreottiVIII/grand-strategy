@@ -53,3 +53,44 @@ relations:
       publisher: Reuters
       date: '2026-10-21'
       tier: 3
+  - to: HTI
+    layer: dependency
+    type: military_presence
+    value: 100
+    unit: special_forces_personnel
+    summary: "Salvadoran special forces sent to Haiti on 22 October to help find the four Salvadoran personnel held by gangs after the 18 October ambush; about 100 landed, according to two officials who spoke to AP. A Reuters report of 27 October, citing one unnamed Haitian security official, puts the total near 1,000 in staggered waves, with the command and duration unclear."
+    since: 2026-10-22
+    until: null
+    last_verified: 2026-10-29
+    confidence: C
+    note: "Two figures for one deployment: about 100 (AP, two officials) and around 1,000 (Reuters, one unnamed official). The row carries the AP count, the first report; the later Reuters figure is the reason confidence is C."
+    sources:
+    - url: https://www.news4jax.com/news/world/2026/10/22/el-salvador-deploys-special-forces-to-haiti-to-help-find-4-missing-soldiers-who-came-under-attack/
+      title: El Salvador deploys special forces to Haiti to help find 4 missing soldiers who came under attack
+      publisher: Associated Press (via News4JAX)
+      date: '2026-10-22'
+      tier: 3
+    - url: https://gvwire.com/2026/10/27/around-1000-soldiers-from-el-salvador-have-deployed-to-haiti-source-says/
+      title: Around 1,000 Soldiers From El Salvador Have Deployed to Haiti, Source Says
+      publisher: GV Wire (Reuters report)
+      date: '2026-10-27'
+      tier: 3
+  - to: nsa-haiti-gangs
+    layer: action
+    type: incident
+    summary: "Salvadoran special forces deployed to Haiti on 22 October to find the four men held by gangs, after Bukele warned on 21 October that the gangs would face a harsher response if they were not freed alive and unharmed (AP). The sources read to 27 October report neither a release nor a confirmed death, and do not name the group holding the men."
+    since: 2026-10-22
+    until: null
+    last_verified: 2026-10-29
+    confidence: C
+    sources:
+    - url: https://www.news4jax.com/news/world/2026/10/22/el-salvador-deploys-special-forces-to-haiti-to-help-find-4-missing-soldiers-who-came-under-attack/
+      title: El Salvador deploys special forces to Haiti to help find 4 missing soldiers who came under attack
+      publisher: Associated Press (via News4JAX)
+      date: '2026-10-22'
+      tier: 3
+    - url: https://www.clickorlando.com/news/world/2026/10/21/bukele-says-military-operation-launched-to-rescue-salvadorans-held-by-gangs-in-haiti/
+      title: Bukele says military operation launched to rescue Salvadorans held by gangs in Haiti
+      publisher: Associated Press (via ClickOrlando)
+      date: '2026-10-21'
+      tier: 3

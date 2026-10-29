@@ -2,14 +2,14 @@ actor: HTI
 stances:
 - toward: nsa-haiti-gangs
   grade: adversary
-  trend: stable
+  trend: cooling
   bond: none
   since: 2023-09
-  last_verified: 2026-10-16
+  last_verified: 2026-10-29
   confidence: C
   note: 'Viv Ansanm, formed in September 2023 by G9 and G-Pèp, was created to attack the Haitian government (police stations, government buildings, infrastructure) and to fight the international force (Wikipedia,
     tier 4). Adversary is our reading, not a source''s word, and it is the rare grade by design: the sources show hostile attacks on the state, not a stated aim of replacing it, so if a stricter reading
-    is taken this becomes rival. Bond none: no kinship or affinity is named. Trend stable: the 2026 coverage shows continued killings, with no sign of a turn.'
+    is taken this becomes rival. Bond none: no kinship or affinity is named. Trend stable: the 2026 coverage shows continued killings, with no sign of a turn. Trend moved to cooling on 29 October 2026 on the events of 18-21 October: gangs attacked the force in Croix-des-Bouquets and left four Salvadoran technicians missing, which El Salvador says the gangs hold (AP, 21 Oct); the mission''s envoy told the Security Council that the gangs were testing the force, with reprisal killings and advances into Kenscoff and the Artibonite (AP, 19 Oct). Cooling here means the hostility is hardening; the grade stays adversary.'
   sources:
   - url: https://en.wikipedia.org/wiki/Viv_Ansanm
     title: Viv Ansanm (Wikipedia)
@@ -25,6 +25,16 @@ stances:
     title: UN renews Haiti force mandate for six months after fresh gang killings
     publisher: Reuters (via TimesLIVE)
     date: '2026-09-29'
+    tier: 3
+  - url: https://www.wsbtv.com/news/world/gangs-haiti-target/F27GTLE4N4YJ7N5V4AII2EWKMI/
+    title: Gangs in Haiti target foreign troops in biggest attack since new force began operations
+    publisher: Associated Press (via WSB-TV)
+    date: '2026-10-19'
+    tier: 3
+  - url: https://www.ajc.com/news/2026/10/bukele-says-military-operation-launched-to-rescue-salvadorans-held-by-gangs-in-haiti/
+    title: Bukele says military operation launched to rescue Salvadorans held by gangs in Haiti
+    publisher: Associated Press (via AJC)
+    date: '2026-10-21'
     tier: 3
 - toward: KEN
   grade: partner
@@ -138,4 +148,28 @@ stances:
     title: Haitians not allowed to enter Bahamas to apply for US visas
     publisher: CBC Barbados
     date: 2025-09
+    tier: 3
+- toward: SLV
+  grade: partner
+  trend: warming
+  bond: none
+  since: 2026-10-18
+  last_verified: '2026-10-29'
+  confidence: C
+  note: 'Added 29 October 2026 in the delta pass on the events of 18-21 October. El Salvador has personnel in the Gang Suppression Force: pilots and technical staff for medical evacuation, by the account of President Bukele (AP, 21 Oct). Four of them went missing after the gang ambush of 18 October in Croix-des-Bouquets; El Salvador announced a rescue operation on 21 October, and more special forces reached Haiti on 22 October (Tico Times, 25 Oct). Grade partner: a contributor to a UN-authorised force, with no treaty or alliance named in the sources, so this is our reading (confidence C). Trend warming: the Haitian government called the captives its foremost concern and said it was deploying all the assets needed (AP, 21 Oct). The since date is the first report of the Salvadoran contingent in the sources read, not the start of that deployment, which the sources do not date. Bond none: no shared identity or open wound is named. El Salvador has no stance toward Haiti in its own file, so the build adds a provisional reciprocal.'
+  sources:
+  - url: https://www.ajc.com/news/2026/10/bukele-says-military-operation-launched-to-rescue-salvadorans-held-by-gangs-in-haiti/
+    title: Bukele says military operation launched to rescue Salvadorans held by gangs in Haiti
+    publisher: Associated Press (via AJC)
+    date: '2026-10-21'
+    tier: 3
+  - url: https://www.internazionale.it/ultime-notizie-reuters/2026/10/21/el-salvador-says-haiti-gangs-holding-4-force-members-hostage-announces-new-rescue-mission
+    title: El Salvador says Haiti gangs holding 4 force members hostage, announces new rescue mission
+    publisher: Reuters (via Internazionale)
+    date: '2026-10-21'
+    tier: 3
+  - url: https://ticotimes.net/2026/10/25/bukele-haiti-remains-not-missing-salvadoran-technicians
+    title: Bukele Says Remains Handed Over in Haiti Do Not Belong to Missing Salvadoran Technicians
+    publisher: Tico Times
+    date: '2026-10-25'
     tier: 3

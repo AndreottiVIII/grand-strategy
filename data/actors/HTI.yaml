@@ -11,30 +11,35 @@ regions:
 - world
 card: full
 tier: minor
-last_verified: 2026-10-16
+last_verified: 2026-10-29
 
 grand_strategy:
   objectives:
     - rank: 1
-      text: "Get back an elected government. The Transitional Presidential Council, formed in April 2024 to hold power until an election or 7 February 2026, dissolved on that date with no presidential election held and no successor structure agreed. The prime minister, Alix Didier Fils-Aime, governs with the backing of Washington, which threatened 'serious consequences' against any move to oust him. No election date was found in sources."
+      text: "Get back an elected government. The Transitional Presidential Council, formed in April 2024 to hold power until an election or 7 February 2026, dissolved on that date with no presidential election held and no successor structure agreed. The prime minister, Alix Didier Fils-Aime, governs with the backing of Washington, which threatened 'serious consequences' against any move to oust him. The provisional electoral council (CEP) published a calendar on 27 July 2026 for a general election in December 2026 (13 December in the Wikipedia summary read, with a runoff on 21 February 2027 listed). The election is conditional on security and funding, and the 30 August date set earlier was dropped; elections have slipped since 2019, so the date is a target, not a fact."
       confidence: C
       sources:
         - {url: "https://citizen.digital/article/haiti-enters-political-limbo-as-transition-governments-mandate-ends-n377092", title: "Haiti enters political limbo as transition government's mandate ends", publisher: "Citizen Digital (Reuters copy)", date: 2026-02-07, tier: 3}
         - {url: "https://en.wikipedia.org/wiki/Transitional_Presidential_Council", title: "Transitional Presidential Council (Wikipedia)", publisher: "Wikipedia", date: 2026-10, tier: 4}
+        - {url: "https://www.lalibre.be/international/amerique/2026/07/28/haiti-les-autorites-annoncent-des-elections-en-fin-dannee-sous-condition-de-securite-Q5Q2RICDGBDCFLTHA224JFUHAQ/", title: "Haiti authorities announce elections at year end, subject to security conditions (translated from French)", publisher: "La Libre (Belgium)", date: 2026-07-28, tier: 3}
+        - {url: "https://lenouvelliste.com/en/article/261737/cep-sets-general-elections-in-haiti-for-august-30-2026", title: "CEP Sets General Elections in Haiti for August 30, 2026", publisher: "Le Nouvelliste", date: "2026", tier: 3}
+        - {url: "https://en.wikipedia.org/wiki/2026_Haitian_general_election", title: "2026 Haitian general election (Wikipedia)", publisher: "Wikipedia", date: 2026-10, tier: 4}
     - rank: 2
-      text: "Retake Port-au-Prince from the gang coalition Viv Ansanm with a foreign force, the Gang Suppression Force (GSF), authorised by the Security Council at up to 5,550 personnel. About 1,500 troops were in place when the mandate was renewed on 29 September 2026, and the Kenyan contingent is being replaced by Chadian troops."
+      text: "Retake Port-au-Prince from the gang coalition Viv Ansanm with a foreign force, the Gang Suppression Force (GSF), authorised by the Security Council at up to 5,550 personnel. About 1,500 troops were in place when the mandate was renewed on 29 September 2026, and the Kenyan contingent is being replaced by Chadian troops. Reuters put the force at roughly a third of its planned size on 21 October, and Sri Lanka has also deployed soldiers."
       confidence: C
       sources:
         - {url: "https://www.timeslive.co.za/news/world/2026-09-29-un-renews-haiti-force-mandate-for-six-months-after-fresh-gang-killings/", title: "UN renews Haiti force mandate for six months after fresh gang killings", publisher: "Reuters (via TimesLIVE)", date: 2026-09-29, tier: 3}
         - {url: "https://en.wikipedia.org/wiki/Gang_Suppression_Force", title: "Gang Suppression Force (Wikipedia)", publisher: "Wikipedia", date: 2026-10, tier: 4}
+        - {url: "https://www.internazionale.it/ultime-notizie-reuters/2026/10/21/el-salvador-says-haiti-gangs-holding-4-force-members-hostage-announces-new-rescue-mission", title: "El Salvador says Haiti gangs holding 4 force members hostage, announces new rescue mission", publisher: "Reuters (via Internazionale)", date: 2026-10-21, tier: 3}
 
   means:
     - domain: military
-      text: "A foreign-manned force, not a Haitian one: the GSF works with the Haitian National Police and the Armed Forces of Haiti. Personnel were pledged by Kenya (until its exit), Chad, Jamaica, the Bahamas, Guyana, Barbados, Antigua and Barbuda, Bangladesh and Benin. Pledges are not deployments; the troops in place are about 1,500."
+      text: "A foreign-manned force, not a Haitian one: the GSF works with the Haitian National Police and the Armed Forces of Haiti. Personnel were pledged by Kenya (until its exit), Chad, Jamaica, the Bahamas, Guyana, Barbados, Antigua and Barbuda, Bangladesh and Benin. Pledges are not deployments; the troops in place are about 1,500. El Salvador is in the force too, with pilots and technical staff for medical evacuation by its president's account, and four of its personnel went missing after the ambush of 18 October (AP, 21 October)."
       confidence: C
       sources:
         - {url: "https://en.wikipedia.org/wiki/Gang_Suppression_Force", title: "Gang Suppression Force (Wikipedia)", publisher: "Wikipedia", date: 2026-10, tier: 4}
         - {url: "https://www.timeslive.co.za/news/world/2026-09-29-un-renews-haiti-force-mandate-for-six-months-after-fresh-gang-killings/", title: "UN renews Haiti force mandate for six months after fresh gang killings", publisher: "Reuters (via TimesLIVE)", date: 2026-09-29, tier: 3}
+        - {url: "https://www.ajc.com/news/2026/10/bukele-says-military-operation-launched-to-rescue-salvadorans-held-by-gangs-in-haiti/", title: "Bukele says military operation launched to rescue Salvadorans held by gangs in Haiti", publisher: "Associated Press (via AJC)", date: 2026-10-21, tier: 3}
     - domain: economic
       text: "Remittances. They are the primary source of foreign exchange, nearly 20% of GDP. Exports are agricultural (vetiver oil, bananas, cocoa, mangoes) with some light manufacturing, and the United States is the major trading partner, through the HOPE and HELP preference acts."
       confidence: C
@@ -46,11 +51,12 @@ grand_strategy:
       confidence: C
       sources:
         - {url: "https://citizen.digital/article/haiti-enters-political-limbo-as-transition-governments-mandate-ends-n377092", title: "Haiti enters political limbo as transition government's mandate ends", publisher: "Citizen Digital (Reuters copy)", date: 2026-02-07, tier: 3}
-    - text: "The force is funded and staffed below plan and its contributors are leaving: Kenya brought its second contingent home in March 2026 and Chad is replacing it. Haiti's own police cannot yet hold the ground the force takes."
+    - text: "The force is funded and staffed below plan and its contributors are leaving: Kenya brought its second contingent home in March 2026 and Chad is replacing it. Haiti's own police cannot yet hold the ground the force takes. The biggest attack on the force since it began operating came on 18 October in Croix-des-Bouquets, and the mission's envoy told the Security Council that the gangs were testing it, with reprisal killings and advances into Kenscoff and the Artibonite (AP, 19 October)."
       confidence: C
       sources:
         - {url: "https://capitalfm.africa/over-200-kenyan-police-return-home-from-haiti-mission/", title: "Over 200 Kenyan Police Return Home from Haiti Mission", publisher: "Capital FM (Kenya)", date: 2026-03-18, tier: 3}
         - {url: "https://en.wikipedia.org/wiki/Gang_Suppression_Force", title: "Gang Suppression Force (Wikipedia)", publisher: "Wikipedia", date: 2026-10, tier: 4}
+        - {url: "https://www.wsbtv.com/news/world/gangs-haiti-target/F27GTLE4N4YJ7N5V4AII2EWKMI/", title: "Gangs in Haiti target foreign troops in biggest attack since new force began operations", publisher: "Associated Press (via WSB-TV)", date: 2026-10-19, tier: 3}
 
   paradoxes:
     - text: "The foreign force that keeps the capital from falling to the gangs also keeps the Haitian police and army from being rebuilt, since the GSF is the security. When the contributors leave, the gap returns to the streets; the security bought from outside is what makes the interim survivable, and the interim is what should have built Haitian security."
@@ -61,3 +67,5 @@ grand_strategy:
 
   reading: |
     Haiti's grand strategy is to get back an elected government and to retake Port-au-Prince, and it pays for both by renting its security from a UN-authorised foreign force (Kenya first, now Chad and others) and by living on remittances that tie it to its diaspora and to the United States. The transition ended on 7 February 2026 without an election or a successor, and the prime minister now governs on Washington's backing, while the force holds about a quarter of its authorised strength and its own police are not yet rebuilt. Not verified for this card: cholera and famine, which were asked for as constraints but for which no source was reached within the budget, the CARICOM mediation, the OAS and UN positions beyond the mission, and the Dominican wall.
+
+    After the ambush of 18 October in Croix-des-Bouquets, which left four Salvadoran technicians of the force missing, and El Salvador's rescue announcement of 21 October, the attack shows the gangs testing the foreign force the interim rents its security from. As of 25 October no rescue or release was confirmed: remains handed over at Port-au-Prince airport were disputed by President Bukele, who said they were not the four men. The electoral council's calendar of 27 July, which puts a general election in December 2026, is conditional on the same security.

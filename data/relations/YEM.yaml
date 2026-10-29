@@ -921,15 +921,39 @@ relations:
 - to: nsa-houthis
   layer: action
   type: incident
-  summary: 'Reverse of the Shabwah attack: the Yemeni government''s military camp was the target (58 soldiers killed, over 200 injured, 14 missing, per the portal''s 19 Oct entry; see the Houthi row on
-    the figure).'
+  summary: 'A Houthi ballistic-missile strike on the al-Alam training camp in Shabwah on 19 Oct 2026 killed at least 53 security and police recruits and wounded over 200, per the Shabwa authorities (preliminary, AP). The first wire counts were at least 18 and at least 20. Al-Alimi promised a ''firm response''. The Houthis acknowledged targeting the camp and said it was run by Saudi officers.'
+  note: 'The portal''s 19 Oct figure of 58 killed and 14 missing is not in the sources found; the AP count (at least 53) is the latest with an official basis. Recheck before the next update.'
   since: 2026-10-19
   until: null
-  last_verified: '2026-10-22'
+  last_verified: '2026-10-29'
   confidence: B
   sources:
   - url: https://www.reuters.com/world/least-18-killed-houthi-attack-yemeni-government-military-camp-shabwa-sources-say-2026-10-19/
     title: 'Reuters: Houthi missile attack on Yemeni government military camp in Shabwah'
     publisher: Reuters
     date: '2026-10-19'
+    tier: 3
+  - url: https://www.theleader.com.au/story/9371525/houthi-rebels-strike-yemeni-govt-forces-killing-53/
+    title: 'Houthi rebels strike Yemeni govt forces, killing 53 (AP)'
+    publisher: The Leader (AP)
+    date: '2026-10-19'
+    tier: 3
+  - url: https://www.clickondetroit.com/news/world/2026/10/19/houthi-rebels-strike-a-government-military-camp-in-southern-yemen-killing-at-least-20-fighters/
+    title: 'Houthi rebels strike a government military camp in southern Yemen, killing at least 20 fighters'
+    publisher: ClickOnDetroit
+    date: '2026-10-19'
+    tier: 3
+- to: nsa-houthis
+  layer: action
+  type: incident
+  summary: 'Saudi airstrike on a market in Al Hazm, Al-Jawf Governorate, killed 14 civilians and wounded ten on 28 Oct 2026 (AP). It belongs to the air campaign that backs the government''s offensive; the sources do not say who held the market.'
+  since: '2026-10-28'
+  until: null
+  last_verified: '2026-10-29'
+  confidence: C
+  sources:
+  - url: https://apnews.com/article/mideast-iran-saudi-yemen-israel-palestinians-october-282026-c032db4b09725fea0f6320eec49de5d4
+    title: 'AP: Saudi airstrike on Al Hazm market, Yemen'
+    publisher: AP
+    date: '2026-10-28'
     tier: 3
