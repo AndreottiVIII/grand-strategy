@@ -72,15 +72,17 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
   let mapMode = "world";
   let lens = "posture";           // posture (stances) | votes (UN General Assembly affinity)
   const unga = data.unga || { affinity: {}, landmarks: {}, members: [], resolutions: {} };
-  // dataset vote rows are stored compact; give them their text and source back
-  const VOTE_WORD = { Y: "YES", N: "NO", A: "ABSTAINED" };
-  data.relations.forEach(r => {
-    if (r.dataset !== "unga-votes") return;
-    const res = unga.resolutions[r.symbol] || {};
-    r.summary = `Voted ${VOTE_WORD[r.vote] || r.vote} on ${r.symbol} - ${res.label || ""} (${res.tally || ""}).`;
-    r.until = r.since; r.last_verified = r.since; r.stale = false;
-    r.sources = [{ url: res.url, title: `${r.symbol} voting record`, publisher: "UN Digital Library", date: r.since, tier: 1 }];
-  });
+  // payload split (2026-10-29): data.json is the slim map; everything with a text or a source (card, notes, rows) lives in
+  // docs/actors/<id>.json, fetched once on demand. bundle(id) -> promise of the bundle, or null if the file is missing.
+  const BUNDLES = new Map(), LOADED = new Map();
+  const bundle = id => {
+    if (!BUNDLES.has(id)) BUNDLES.set(id, fetch(`actors/${encodeURIComponent(id)}.json?v=` + STAMP)
+      .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(b => { b.stIdx = new Map(); (b.stances || []).forEach(x => { if (!b.stIdx.has(x.toward)) b.stIdx.set(x.toward, x); }); LOADED.set(id, b); return b; })
+      .catch(() => { BUNDLES.delete(id); return null; }));
+    return BUNDLES.get(id);
+  };
+  const realRows = rows => (rows || []).filter(r => r.dataset !== "unga-votes");   // the vote rows are never shown as rows (the votes lens and the landmarks carry them)
   const hasStances = id => !!(data.stances[id] && data.stances[id].length);
   const hasVotes = id => !!unga.affinity[id];
   const VOTE_CLASSES = [[.9, "v90"], [.8, "v80"], [.7, "v70"], [.6, "v60"], [0, "vlow"]];
@@ -111,7 +113,7 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
 
   // ---------- chrome
   document.getElementById("meta").innerHTML =
-    `Situation map · in construction<br>compiled ${data.generated} · ${data.progress ? `${data.progress.cards} of ${data.progress.total} cards` : `${fullActors.length} cards`}, ${data.actors.length} actors<br>${Object.values(data.stances).flat().length} stances · ${data.relations.length} relations`;
+    `Situation map · in construction<br>compiled ${data.generated} · ${data.progress ? `${data.progress.cards} of ${data.progress.total} cards` : `${fullActors.length} cards`}, ${data.actors.length} actors<br>${Object.values(data.stances).flat().length} stances · ${data.stats.relations.total} relations`;
 
   const povSel = document.getElementById("pov");
   povSel.add(new Option("The world of today", ""));
@@ -219,6 +221,8 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
     }
     return stanceIdx.get(id);
   };
+  // the note and sources of a stance live in the point of view's bundle; until it arrives the tooltip shows the grade line alone
+  const noteOf = id => { const b = LOADED.get(pov), x = b && b.stIdx.get(id); return x && x.note || ""; };
   const gradeOf = id => id === pov ? "own_territory" : (stanceOf(id) ? stanceOf(id).grade : "neutral");
 
   // the vector display: a posture is a colour, drawn as the outline of the country and a faint light inside it
@@ -558,7 +562,14 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
     const el = document.getElementById("relpanel");
     litId = null;
     if (!pov) { el.innerHTML = ""; ledgerFilter = {}; return; }
-    const rows = data.relations.filter(r => r.from === pov && r.dataset !== "unga-votes");
+    const pb = LOADED.get(pov);
+    if (!pb) {   // the rows live in the point of view's bundle: draw the ledger when it arrives
+      el.innerHTML = "";
+      const want = pov;
+      bundle(want).then(b => { if (b && pov === want) renderRelPanel(); });
+      return;
+    }
+    const rows = realRows(pb.relations_from);
     const byTo = d3.group(rows, r => r.to);
     const F = ledgerFilter;
     let counterparts = [...new Set([...byTo.keys(), ...(data.stances[pov] || []).map(s => s.toward)])]
@@ -962,7 +973,7 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
       <p class="lede">What the atlas is, counted. Compiled ${esc(data.generated)} from ${n(S.actors.full)} cards and ${n(S.sources.unique)} distinct sources${tok.total_millions ? `, with about <b>${tok.total_millions} million tokens</b> of model work since ${esc(site.started || "")}` : ""}. Last change to the repository: <span id="lastcommit">reading…</span>.</p>
       <div class="stats">${tile(n(S.actors.total), "actors")}${tile(n(S.actors.full), "full cards")}${tile(n(S.stances.hand), "readings written")}${tile(n(S.relations.total), "relation rows")}${tile(n(S.sources.unique), "sources")}${tile(tok.total_millions ? tok.total_millions + "M" : "–", "tokens")}</div>
       <h3 class="sec">How it is built</h3>
-      <p class="how">One file per actor in three folders, the card, its postures, its relations, all in plain YAML, plus the datasets. The build (<code>tools/build.py</code>) validates every file, ids against the actor list, grades and types against closed vocabularies, dates, a source with a tier on every claim, and refuses to write on any error. It then derives the treaty allies from the memberships, mirrors every unanswered reading as a provisional one at confidence C, computes the pages (seams, buffers, clients, faults, gatherings, encirclement, flanks, levers, currents, theatres), keeps a snapshot of every grade so the next build can say what moved, and writes one JSON that the site renders. No fact lives in the site code. Data, method, decision log and code are public: <a href="https://github.com/AndreottiVIII/grand-strategy" target="_blank" rel="noopener">AndreottiVIII/grand-strategy</a>.</p>
+      <p class="how">One file per actor in three folders, the card, its postures, its relations, all in plain YAML, plus the datasets. The build (<code>tools/build.py</code>) validates every file, ids against the actor list, grades and types against closed vocabularies, dates, a source with a tier on every claim, and refuses to write on any error. It then derives the treaty allies from the memberships, mirrors every unanswered reading as a provisional one at confidence C, computes the pages (seams, buffers, clients, faults, gatherings, encirclement, flanks, levers, currents, theatres), keeps a snapshot of every grade so the next build can say what moved, and writes the JSON the site renders: one main file${(S.payload || {}).main_bytes ? ` (${(S.payload.main_bytes / 1e6).toFixed(1)} MB, ${(S.payload.main_gzip / 1e6).toFixed(2)} MB compressed)` : ""} for the map and the computed pages, and one small bundle per actor, fetched only when you open its dossier or its point of view, with the card texts, the notes and the sources. No fact lives in the site code. Data, method, decision log and code are public: <a href="https://github.com/AndreottiVIII/grand-strategy" target="_blank" rel="noopener">AndreottiVIII/grand-strategy</a>.</p>
       <h3 class="sec">Actors · ${n(S.actors.total)}</h3>
       <div class="cols2"><div>${dist(S.actors.by_type, { state: "states", org: "organisations", "armed-non-state": "armed non-state actors", "sub-state": "sub-state entities", "state-instrument": "instruments of a state" })}</div><div>${dist({ full: S.actors.full, stub: S.actors.stub }, { full: "full card", stub: "stub (node only)" }, ["full", "stub"])}</div></div>
       <h3 class="sec">Postures · ${n(S.stances.total)} stances</h3>
@@ -1168,7 +1179,7 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
     }
     const st = stanceOf(id);
     if (!st) return showTip(`<b>${esc(name)}</b><span class="k">No recorded stance${a ? "" : " · not an actor yet"}</span>`, ev);
-    showTip(`<b>${esc(name)}</b>${GRADE_LABEL[st.grade]} · ${TREND_SIGN[st.trend]} ${TREND[st.trend]} · ${BOND_LABEL[st.bond].toLowerCase()}${st.alignment === "de_facto" ? " · aligned, no treaty" : ""} · confidence ${st.confidence}${st.stale ? " · stale" : ""}${(st.reciprocal_of || st.dataset === "reciprocal") ? " · mirrored, not written from this side" : ""}<br><span class="k">${esc(st.note || "")}</span>`, ev);
+    showTip(`<b>${esc(name)}</b>${GRADE_LABEL[st.grade]} · ${TREND_SIGN[st.trend]} ${TREND[st.trend]} · ${BOND_LABEL[st.bond].toLowerCase()}${st.alignment === "de_facto" ? " · aligned, no treaty" : ""} · confidence ${st.confidence}${st.stale ? " · stale" : ""}${(st.reciprocal_of || st.dataset === "reciprocal") ? " · mirrored, not written from this side" : ""}<br><span class="k">${esc(noteOf(id))}</span>`, ev);
   }
 
   // ---------- dossier with footnotes
@@ -1202,10 +1213,16 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
   const notesHtml = () => notes.length ? `<h3>Sources</h3><ol class="fn-list">` + notes.map(s =>
     `<li><span class="t">T${s.tier}</span><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a> · ${esc(s.publisher)} · ${esc(s.date)}</li>`).join("") + `</ol>` : "";
 
-  function renderDossier(id) {
+  let dossierSeq = 0;
+  async function renderDossier(id) {
     const a = actors[id];
     const el = document.getElementById("dossier");
     setView("dossier", false);
+    const seq = ++dossierSeq;
+    if (!LOADED.has(id)) el.innerHTML = "";
+    // the card, the notes and the sources come from the bundles: this actor's, and the point of view's for "as X sees it"
+    const [B, PB] = await Promise.all([bundle(id), pov && pov !== id ? bundle(pov) : null]);
+    if (seq !== dossierSeq) return;   // the reader has moved on while the bundle travelled
     notes = [];
     let html;
     const flag = a.flag ? a.flag : a.iso2 ? `https://flagcdn.com/w160/${a.iso2}.png` : null;
@@ -1213,12 +1230,13 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
       `<p class="sub">${esc(a.type)} · seat ${esc(a.seat)} · ${a.regions.join(", ")}${a.card === "full" ? ` · card verified ${esc(a.last_verified)}` : ""}${a.stale ? ' · <span class="stale">stale</span>' : ""}` +
       `${a.wikipedia ? ` · <a href="${esc(a.wikipedia)}" target="_blank" rel="noopener">Wikipedia ↗</a>` : ""}</p></div></div>`;
     if (a.card !== "full") {
-      const st = stanceOf(id);
+      const st = (PB && PB.stIdx.get(id)) || stanceOf(id);
       html = head + `<p class="empty">No grand-strategy card yet: what follows comes from datasets only (UN General Assembly votes, memberships from Wikidata).</p>` +
         (st && pov ? `<h3>As ${esc(actors[pov].name)} sees it</h3><p><b>${GRADE_LABEL[st.grade]}</b>, ${TREND[st.trend]}, ${BOND_LABEL[st.bond].toLowerCase()}${st.alignment === "de_facto" ? ", aligned without a treaty" : ""}${badge(st)}<br>${esc(st.note || "")}${fn(st.sources)}</p>` : "") +
-        ungaHtml(id) + relationsHtml(id);
+        ungaHtml(id) + relationsHtml(id, B);
     } else {
-      const gs = a.grand_strategy;
+      const gs = B && B.actor && B.actor.grand_strategy;
+      if (!gs) { el.innerHTML = head + `<p class="empty">The card could not be loaded. Reload the page.</p>`; window.scrollTo(0, 0); return; }
       const byDomain = d3.group(gs.means, m => m.domain);
       html = head + `
         <h3>Grand strategy</h3>
@@ -1230,11 +1248,11 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
         ${CONV[id] ? `<h3>Convergences</h3><p class="conv">Actors that share one of ${esc(a.short || a.name)}'s rivals and are not its allies, the tables it has not sat at: ${CONV[id].map(c => `<a href="#/view/${c.id}">${nameOf(c.id)}</a> <span class="meta">(against ${c.shared.map(nameOf).join(", ")})</span>`).join(" · ")}.</p>` : ""}
         <h3>The world as ${esc(a.name)} sees it</h3>
         <table class="tbl"><thead><tr><th>Toward</th><th>Posture</th><th>Bond</th><th>Why this reading</th></tr></thead><tbody>
-        ${(data.stances[id] || []).map(s => `<tr><td><b>${esc(actors[s.toward].name)}</b><br><span class="meta">since ${esc(s.since)}</span></td>
+        ${(B.stances || []).map(s => `<tr><td><b>${esc(actors[s.toward].name)}</b><br><span class="meta">since ${esc(s.since)}</span></td>
           <td><span class="sw" style="background:${gradeSwatch(s.grade)};border-color:${gradeBorder(s.grade)}"></span>${GRADE_LABEL[s.grade]}<br><span class="meta">${TREND_SIGN[s.trend]} ${TREND[s.trend]}${badge(s)}</span></td>
           <td>${BOND_LABEL[s.bond]}</td>
           <td class="note">${esc(s.note || "")}${fn(s.sources)}</td></tr>`).join("")}
-        </tbody></table>` + ungaHtml(id) + relationsHtml(id);
+        </tbody></table>` + ungaHtml(id) + relationsHtml(id, B);
     }
     el.innerHTML = html + notesHtml();
     el.querySelectorAll(".conv a[href^='#/']").forEach(x => x.onclick = ev => { ev.preventDefault(); navigate(x.getAttribute("href")); });
@@ -1264,8 +1282,8 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
   }
   const a_name = id => actors[id].name;
 
-  function relationsHtml(id) {
-    const out = data.relations.filter(r => r.from === id && !(r.dataset === "unga-votes")), inn = data.relations.filter(r => r.to === id && !(r.dataset === "unga-votes"));
+  function relationsHtml(id, B) {
+    const out = realRows(B && B.relations_from), inn = realRows(B && B.relations_to);
     const block = (rows, dir) => data.layers.map(l => {
       const rs = rows.filter(r => r.layer === l);
       if (!rs.length) return "";

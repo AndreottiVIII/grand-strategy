@@ -3,6 +3,7 @@
 Usage: python tools/build.py          (from the repo root)
 Exit code 1 on any validation error; warnings do not fail the build.
 """
+import gzip
 import json
 import re
 import sys
@@ -875,6 +876,12 @@ def main():
     }
 
 
+    # payload split (2026-10-29): the main JSON keeps what the map and the computed pages read; the card texts, the
+    # notes and the sources travel in the per-actor bundles the site fetches on demand (dossier, ledger, tooltip notes)
+    SLIM_ACTOR_DROP = ("grand_strategy", "recognition")
+    SLIM_STANCE_KEEP = ("toward", "grade", "trend", "bond", "since", "confidence", "alignment", "stale", "reciprocal_of", "dataset")
+    SLIM_REL_TYPES = ("membership", "recognition", "non_recognition")   # read at start: clubs, members, recognition lens and its tooltip
+    full_stances = {k: [dict(st, alignment=st.get("alignment") or ("treaty" if st["toward"] in allies.get(k, ()) and st["grade"] in ("ally", "reluctant_ally") else None)) for st in v["stances"]] for k, v in stances.items()}
     out = {
         "generated": today.isoformat(),
         "theatres": theatres,
@@ -891,22 +898,27 @@ def main():
         "changes": changes, "changes_week": changes_week, "recent_moves": recent_moves,
         "grades": GRADES,
         "layers": list(TYPES.keys()),
-        "actors": list(actors.values()),
-        "stances": {k: [dict(st, alignment=st.get("alignment") or ("treaty" if st["toward"] in allies.get(k, ()) and st["grade"] in ("ally", "reluctant_ally") else None)) for st in v["stances"]] for k, v in stances.items()},
-        "relations": rows,
+        "actors": [{k: v for k, v in x.items() if k not in SLIM_ACTOR_DROP} for x in actors.values()],
+        "stances": {k: [{f: st[f] for f in SLIM_STANCE_KEEP if f in st} for st in v] for k, v in full_stances.items()},
+        "relations": [{f: r[f] for f in ("from", "to", "type", "since", "summary") if f in r and not (f == "summary" and r["type"] == "membership")} for r in rows if r["type"] in SLIM_REL_TYPES],
         "unga": unga,
         "progress": (lambda q: {"cards": sum(1 for a in q if a["status"] in ("done", "reviewed")), "total": len(q),
                                 "running": [a["id"] for a in q if a["status"] == "running"]})(
             (yaml.safe_load((DATA / "queue.yaml").open(encoding="utf-8")) or {}).get("actors", []) if (DATA / "queue.yaml").exists() else []),
         "issues": (yaml.safe_load((DATA / "issues.yaml").open(encoding="utf-8")) or {}).get("issues", []) if (DATA / "issues.yaml").exists() else [],
     }
-    OUT.write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":"), default=str), encoding="utf-8")
+    dump = lambda o: json.dumps(o, ensure_ascii=False, separators=(",", ":"), default=str)
+    before = dump(dict(out, actors=list(actors.values()), stances=full_stances, relations=rows)).encode("utf-8")   # what the one big JSON used to be
+    txt = dump(out)
+    stats["payload"] = {"main_bytes": len(txt.encode("utf-8")), "main_gzip": len(gzip.compress(txt.encode("utf-8"), 9)), "bundles": len(actors)}
+    txt = dump(out)
+    OUT.write_text(txt, encoding="utf-8")
     # one self-contained bundle per actor, so any future front end can read a state without the whole atlas
     bundles = ROOT / "docs" / "actors"
     bundles.mkdir(exist_ok=True)
     for aid, a in actors.items():
-        b = {"actor": a, "stances": out["stances"].get(aid, []),
-             "stances_toward": [dict(st, actor=k) for k, v in out["stances"].items() for st in v if st["toward"] == aid],
+        b = {"actor": a, "stances": full_stances.get(aid, []),
+             "stances_toward": [dict(st, actor=k) for k, v in full_stances.items() for st in v if st["toward"] == aid],
              "relations_from": [r for r in rows if r["from"] == aid], "relations_to": [r for r in rows if r["to"] == aid],
              "unga": {"affinity": unga["affinity"].get(aid), "landmarks": unga["landmarks"].get(aid)}}   # no date: a bundle changes only when its data does
         (bundles / f"{aid}.json").write_text(json.dumps(b, ensure_ascii=False, separators=(",", ":"), default=str), encoding="utf-8")
@@ -925,10 +937,12 @@ def main():
     html = re.sub(r'((?:style\.css|app\.js))(\?v=\d+)?', lambda m: f"{m.group(1)}?v={stamp}", idx.read_text(encoding="utf-8"))
     idx.write_text(html, encoding="utf-8")
     full = sum(1 for a in actors.values() if a.get("card") == "full")
+    sz = stats["payload"]
+    pay = f"data.json {len(before) / 1e6:.1f} MB ({len(gzip.compress(before, 9)) / 1e6:.2f} gz) -> {sz['main_bytes'] / 1e6:.1f} MB ({sz['main_gzip'] / 1e6:.2f} gz) "
     print(f"OK  {len(actors)} actors ({full} full), "
           f"{sum(len(v) for v in out['stances'].values())} stances, {len(rows)} relations "
           f"({len(unga_rows)} from UNGA votes, {unga['n_records']} recorded votes loaded), "
-          f"{len(warnings)} warning(s) -> {OUT.relative_to(ROOT)}")
+          f"{len(warnings)} warning(s), {pay}-> {OUT.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":
