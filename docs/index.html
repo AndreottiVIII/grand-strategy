@@ -22,7 +22,7 @@
 <meta name="twitter:title" content="Grand Strategy">
 <meta name="twitter:description" content="What the world's actors want and do, and where it collides.">
 <meta name="twitter:image" content="https://andreottiviii.github.io/grand-strategy/preview.png">
-<link rel="stylesheet" href="style.css?v=202610291102">
+<link rel="stylesheet" href="style.css?v=202610291116">
 </head>
 <body>
 <header class="top">
@@ -30,24 +30,33 @@
     <h1><a href="#" id="home" title="Back to the map">Grand <span>Strategy</span></a></h1>
     <p class="tag">What the world's actors want and do, and where it collides.</p>
   </div>
-  <nav class="topnav" id="topnav">
-    <a href="#" data-page="map" class="is-on">Map</a>
-    <a href="#" data-page="seams">Seams</a>
-    <a href="#" data-page="clients">Clients</a>
-    <a href="#" data-page="faults">Faults</a>
-    <a href="#" data-page="gatherings">Gatherings</a>
-    <a href="#" data-page="currents">Currents</a>
-    <a href="#" data-page="theatres">Theatres</a>
-    <a href="#" data-page="flanks">Flanks</a>
-    <a href="#" data-page="levers">Levers</a>
-    <a href="#" data-page="watch">Watch</a>
-    <a href="#" data-page="luttwak">Luttwak</a>
-    <a href="#" data-page="about">About</a>
-    <a href="#" data-page="data">Data</a>
-    <a href="#" data-page="site">This site</a>
+  <nav class="topnav" id="topnav" aria-label="Main">
+    <a href="#" data-page="map" class="nav-map is-on"><span>Map</span></a>
+    <div class="dd" id="dd-readings">
+      <a href="#" class="ddt" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="ddm-readings"><span>Readings</span></a>
+      <div class="ddm" id="ddm-readings" role="menu">
+        <a href="#" data-page="seams" role="menuitem"><span>Seams</span><span class="sub">the ally pulled two ways</span></a>
+        <a href="#" data-page="clients" role="menuitem"><span>Clients</span><span class="sub">who leans on whom</span></a>
+        <a href="#" data-page="faults" role="menuitem"><span>Faults</span><span class="sub">where the bond contradicts the posture</span></a>
+        <a href="#" data-page="gatherings" role="menuitem"><span>Gatherings</span><span class="sub">the coalitions a weight summons</span></a>
+        <a href="#" data-page="currents" role="menuitem"><span>Currents</span><span class="sub">where the world is going</span></a>
+        <a href="#" data-page="theatres" role="menuitem"><span>Theatres</span><span class="sub">where strategy is conducted</span></a>
+        <a href="#" data-page="flanks" role="menuitem"><span>Flanks</span><span class="sub">the enemies of my enemies</span></a>
+        <a href="#" data-page="levers" role="menuitem"><span>Levers</span><span class="sub">the geo-economics</span></a>
+        <a href="#" data-page="watch" role="menuitem"><span>Watch</span><span class="sub">the week's news and moves</span></a>
+      </div>
+    </div>
+    <div class="dd" id="dd-about">
+      <a href="#" class="ddt" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="ddm-about"><span>About</span></a>
+      <div class="ddm" id="ddm-about" role="menu">
+        <a href="#" data-page="luttwak" role="menuitem"><span>Luttwak</span></a>
+        <a href="#" data-page="about" role="menuitem"><span>About</span><span class="sub">the method</span></a>
+        <a href="#" data-page="data" role="menuitem"><span>Data</span></a>
+        <a href="#" data-page="site" role="menuitem"><span>This site</span></a>
+      </div>
+    </div>
   </nav>
   <div class="lang" id="lang"><a href="?lang=en" data-lang="en">EN</a><span>·</span><a href="?lang=it" data-lang="it">IT</a></div>
-  <div class="stamp" id="meta"></div>
 </header>
 
 <div class="frame">
@@ -68,6 +77,7 @@
   <main class="stage">
     <section id="view-map" class="view is-on">
       <div class="map-wrap"><svg id="map"></svg></div>
+      <div class="stamp" id="meta"></div>
       <section class="relpanel" id="relpanel"></section>
     </section>
     <section id="view-dossier" class="view">
@@ -94,6 +104,6 @@
 <div id="tip" class="tip" hidden></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
-<script src="app.js?v=202610291102"></script>
+<script src="app.js?v=202610291116"></script>
 </body>
 </html>

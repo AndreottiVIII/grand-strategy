@@ -19,7 +19,7 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
   const T = s => { if (LANG === "en" || s === null || s === undefined || s === "") return s; const k = I18N.t[h(String(s).trim())]; return k === undefined ? s : k; };
   if (LANG !== "en") data.actors.forEach(a => { if (I18N.names[a.id]) { a.name_en = a.name; a.name = I18N.names[a.id]; if (a.short && !/^[A-Z][A-Z.&\s]{1,6}$/.test(a.short)) { a.short_en = a.short; delete a.short; } } });
   // the site's own strings: rendered elements are matched by their English markup with numbers blanked, so one key serves every count
-  const UI_SEL = "p, h1, h2, h3, h4, li, th, summary, button, label, option, i, .row, .tag, .stamp, .lbl, .k, .hint, .src, .more, figcaption";
+  const UI_SEL = "p, h1, h2, h3, h4, li, th, summary, button, label, option, i, .row, .tag, .stamp, .lbl, .k, .hint, .src, .more, figcaption, .topnav span, .topnav a";
   const NUM = /\d[\d,.]*%?/g;
   const escRe = x => x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const NAMES = [...new Set(data.actors.flatMap(a => [a.name_en || a.name, a.name, a.short].filter(Boolean)))].sort((p, q) => q.length - p.length);
@@ -45,6 +45,8 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
   }
   window.__i18nKeys = () => [...new Set([...document.querySelectorAll(UI_SEL)].map(el => el.innerHTML.trim()).filter(x => x && x.length <= 4000 && !/^\d[\d,.]*%?$/.test(x)).map(uiKey))];
   if (LANG !== "en") new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(n => { if (n.nodeType === 1) translateDom(n); }))).observe(document.body, { childList: true, subtree: true });
+  if (LANG !== "en") translateDom(document.body);   // the static markup (menu, toggle) is not an added node: translate it once
+  if (LANG !== "en") translateDom(document.body);   // the static markup (menu, toggle) is not an added node: translate it once
   document.querySelectorAll("#lang a").forEach(a => { a.classList.toggle("is-on", a.dataset.lang === LANG); a.onclick = ev => { ev.preventDefault(); try { localStorage.setItem("lang", a.dataset.lang); } catch (e) {} location.search = "?lang=" + a.dataset.lang; }; });
 
   const GRADE_LABEL = {
@@ -180,12 +182,33 @@ const LANG = (() => { try { const q = new URLSearchParams(location.search).get("
   issueSel.onchange = () => { issueSel.value ? showIssue(issueSel.value) : goHome(); };
   document.querySelectorAll(".tab").forEach(b => b.onclick = () => b.dataset.view === "dossier" ? showDossier(pov || fullActors[0].id) : (pov ? setPov(pov) : goHome()));
   const PAGE_HASH = { map: "#/", orgs: "#/organisations", issues: "#/issues", luttwak: "#/luttwak", seams: "#/seams", clients: "#/clients", faults: "#/faults", gatherings: "#/gatherings", currents: "#/currents", theatres: "#/theatres", flanks: "#/flanks", levers: "#/levers", watch: "#/watch", about: "#/about", data: "#/data", site: "#/this-site", colophon: "#/colophon" };
-  document.querySelectorAll("#topnav a").forEach(a => { a.href = PAGE_HASH[a.dataset.page]; a.onclick = ev => { ev.preventDefault(); navigate(PAGE_HASH[a.dataset.page]); }; });
+  // top menu: Map, then two dropdowns (Readings, About). Open on hover, focus and click/tap (click pins it); close on Escape, outside click, choice
+  const dds = [...document.querySelectorAll("#topnav .dd")];
+  const ddSet = (dd, on, pin) => {
+    if (on) dds.forEach(o => { if (o !== dd) ddSet(o, false); });
+    dd.classList.toggle("open", on); dd.dataset.pin = on && pin ? "1" : "";
+    dd.querySelector(".ddt").setAttribute("aria-expanded", on ? "true" : "false");
+    document.querySelector(".top").classList.toggle("dd-open", dds.some(o => o.classList.contains("open")));
+  };
+  const ddClose = () => dds.forEach(o => ddSet(o, false));
+  dds.forEach(dd => {
+    const t = dd.querySelector(".ddt"); let timer = 0;
+    dd.addEventListener("pointerenter", e => { if (e.pointerType !== "mouse") return; clearTimeout(timer); ddSet(dd, true, dd.dataset.pin === "1"); });
+    dd.addEventListener("pointerleave", e => { if (e.pointerType !== "mouse" || dd.dataset.pin === "1") return; timer = setTimeout(() => ddSet(dd, false), 150); });
+    dd.addEventListener("focusin", () => { if (!dd.classList.contains("open")) ddSet(dd, true, false); });
+    dd.addEventListener("focusout", e => { if (!dd.contains(e.relatedTarget) && dd.dataset.pin !== "1") ddSet(dd, false); });
+    t.addEventListener("click", ev => { ev.preventDefault(); if (dd.classList.contains("open") && dd.dataset.pin === "1") ddSet(dd, false); else ddSet(dd, true, true); });
+  });
+  document.addEventListener("click", ev => { if (!ev.target.closest("#topnav .dd")) ddClose(); });
+  document.addEventListener("keydown", ev => { if (ev.key !== "Escape") return; const o = dds.find(d => d.classList.contains("open")); if (!o) return; ddClose(); if (o.contains(document.activeElement)) o.querySelector(".ddt").focus(); });
+  document.querySelectorAll("#topnav a[data-page]").forEach(a => { a.href = PAGE_HASH[a.dataset.page]; a.onclick = ev => { ev.preventDefault(); ddClose(); navigate(PAGE_HASH[a.dataset.page]); }; });
   document.getElementById("home").onclick = ev => { ev.preventDefault(); goHome(); };
   function setView(v, render = true) {
     view = v;
     document.querySelectorAll(".tab").forEach(b => b.classList.toggle("is-on", b.dataset.view === v));
-    document.querySelectorAll("#topnav a").forEach(a => a.classList.toggle("is-on", a.dataset.page === v || (a.dataset.page === "map" && (v === "map" || v === "dossier"))));
+    document.querySelectorAll("#topnav a[data-page]").forEach(a => a.classList.toggle("is-on", a.dataset.page === v || (a.dataset.page === "map" && (v === "map" || v === "dossier"))));
+    dds.forEach(dd => dd.classList.toggle("is-on", !!dd.querySelector("a.is-on")));
+    ddClose();
     document.querySelectorAll(".view").forEach(s => s.classList.toggle("is-on", s.id === "view-" + v));
     const isPage = ["orgs", "issues", "luttwak", "seams", "clients", "faults", "gatherings", "currents", "theatres", "flanks", "levers", "watch", "about", "data", "site"].includes(v);
     document.querySelector(".side").style.display = isPage ? "none" : "";

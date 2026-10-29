@@ -1,5 +1,15 @@
 # Journal
 
+## 2026-10-29 · The menu on three entries, the map in front
+
+A reader (a friend of Davide's): fourteen entries are too many, the map is the only fully interactive view
+and should lead, Currents is the view he likes most. Davide chose three entries with the map in evidence:
+Map (one size larger), Readings (the nine reading pages in a dropdown, each with its Luttwak subtitle: the
+ally pulled two ways, who leans on whom, where the bond contradicts the posture...), About (Luttwak, the
+method, data, this site). Dropdowns on hover, focus and tap; on phones a block under the header. The stamp
+(compiled date, counts) moved from the header to under the map, on the map view only. Sonnet on the code,
+labels and subtitles added to the Italian dictionary by hand. Pages and hashes unchanged.
+
 ## 2026-10-29 · Three free additions: the heat remembered, theatres in the news, Italian map labels
 
 Davide's choice among nine ideas. The GDELT pass now keeps one compact file per week
