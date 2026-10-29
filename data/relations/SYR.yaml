@@ -914,3 +914,23 @@ relations:
     tier: 3
   to: nsa-sdf
   mirrored_from: nsa-sdf
+- to: JOR
+  layer: action
+  type: incident
+  summary: 'Reverse of the Jordanian strikes: Syria''s transitional government says they were not coordinated and closes the Nasib crossing with Jordan to passengers and trade in both directions; the closure
+    is reported by Anadolu only.'
+  since: 2026-10-26
+  until: null
+  last_verified: '2026-10-29'
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/amp/news/2026/10/26/jordan-launches-air-strikes-in-syria-in-response-to-a-fatal-church-shooting
+    title: 'Al Jazeera: Jordan launches air strikes in Syria in response to fatal church shooting'
+    publisher: Al Jazeera
+    date: '2026-10-26'
+    tier: 3
+  - url: https://www.aa.com.tr/en/middle-east/syria-closes-border-crossing-with-jordan-to-passengers-trade/4101844
+    title: 'Anadolu: Syria closes border crossing with Jordan to passengers, trade'
+    publisher: Anadolu Agency
+    date: '2026-10-26'
+    tier: 4

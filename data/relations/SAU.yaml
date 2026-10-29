@@ -968,3 +968,53 @@ relations:
     tier: 3
   to: EGY
   mirrored_from: EGY
+- to: nsa-houthis
+  layer: action
+  type: incident
+  summary: 'Reverse of the Riyadh interceptions: Saudi-led coalition air defences shot down or intercepted a Houthi missile and two drones aimed at Riyadh Province, as the airport reopened on a limited
+    basis.'
+  since: 2026-10-25
+  until: null
+  last_verified: '2026-10-29'
+  confidence: B
+  sources:
+  - url: https://www.abs-cbn.com/news/world/2026/10/25/explosions-heard-in-saudi-capital-as-airport-due-to-reopen-1753
+    title: 'ABS-CBN (AFP): Explosions heard in Saudi capital as airport due to reopen'
+    publisher: AFP via ABS-CBN News
+    date: '2026-10-25'
+    tier: 3
+- to: nsa-houthis
+  layer: action
+  type: incident
+  summary: Saudi-led coalition airstrikes hit a residential building and a cement factory in Hamdan district, Yemen, killing ten people and wounding more. The cited text does not name the group holding
+    the district, so confirm the Houthi target before grading.
+  since: 2026-10-24
+  until: null
+  last_verified: '2026-10-29'
+  confidence: C
+  sources:
+  - url: https://en.tempo.co/read/2122301/more-than-10-killed-in-saudi-led-coalition-airstrikes-in-yemen
+    title: 'Tempo: More than 10 killed in Saudi-led coalition airstrikes in Yemen'
+    publisher: Tempo
+    date: '2026-10-24'
+    tier: 4
+- to: nsa-houthis
+  layer: action
+  type: incident
+  summary: Saudi airstrike on a market in Al Hazm, Al-Jawf Governorate, Yemen, kills 14 civilians and wounds ten (AP and Xinhua, 28 Oct), in the Houthi-Saudi fighting that the portal files under Yemen's
+    civil war. The sources do not say who held the market.
+  since: 2026-10-28
+  until: null
+  last_verified: '2026-10-29'
+  confidence: B
+  sources:
+  - url: https://apnews.com/article/mideast-iran-saudi-yemen-israel-palestinians-october-282026-c032db4b09725fea0f6320eec49de5d4
+    title: 'AP: Saudi airstrike on Al Hazm market, Yemen'
+    publisher: AP
+    date: '2026-10-28'
+    tier: 3
+  - url: https://english.news.cn/20261028/0bff5197bf7d4bd8aef67cc902090535/c.html
+    title: 'Xinhua: Saudi airstrike in Al-Jawf, Yemen'
+    publisher: Xinhua
+    date: '2026-10-28'
+    tier: 4

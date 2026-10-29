@@ -1,0 +1,111 @@
+week: 2026-W44
+group: portal-oct27-29
+items:
+- from: SAU
+  to: nsa-houthis
+  layer: action
+  type: incident
+  since: 2026-10-28
+  summary: "Saudi airstrike on a market in Al Hazm, Al-Jawf Governorate, Yemen, kills 14 civilians and wounds ten (AP and Xinhua, 28 Oct), in the Houthi-Saudi fighting that the portal files under Yemen's civil war. The sources do not say who held the market."
+  confidence: B
+  sources:
+  - url: https://apnews.com/article/mideast-iran-saudi-yemen-israel-palestinians-october-282026-c032db4b09725fea0f6320eec49de5d4
+    title: "AP: Saudi airstrike on Al Hazm market, Yemen"
+    publisher: AP
+    date: '2026-10-28'
+    tier: 3
+  - url: https://english.news.cn/20261028/0bff5197bf7d4bd8aef67cc902090535/c.html
+    title: "Xinhua: Saudi airstrike in Al-Jawf, Yemen"
+    publisher: Xinhua
+    date: '2026-10-28'
+    tier: 4
+  why: "Would show the Saudi-Houthi war reopening after the Houthi attacks on Saudi soil of 19-21 Oct; check who holds Al Hazm before grading the escalation."
+- from: nsa-houthis
+  to: SAU
+  layer: action
+  type: incident
+  since: 2026-10-28
+  summary: "Reverse of the Al Hazm strike: the Saudi airstrike on the market killed 14 civilians and wounded ten in Al-Jawf Governorate (AP and Xinhua, 28 Oct). Filed on the Houthi side because the portal frames the fighting as Houthi-Saudi; the sources do not name the market's holder."
+  confidence: B
+  sources:
+  - url: https://apnews.com/article/mideast-iran-saudi-yemen-israel-palestinians-october-282026-c032db4b09725fea0f6320eec49de5d4
+    title: "AP: Saudi airstrike on Al Hazm market, Yemen"
+    publisher: AP
+    date: '2026-10-28'
+    tier: 3
+  - url: https://english.news.cn/20261028/0bff5197bf7d4bd8aef67cc902090535/c.html
+    title: "Xinhua: Saudi airstrike in Al-Jawf, Yemen"
+    publisher: Xinhua
+    date: '2026-10-28'
+    tier: 4
+  why: "Mirror of the row above so the Houthi card carries the Saudi strike; drop it if the market proves government-held."
+- from: USA
+  to: RWA
+  layer: action
+  type: sanction
+  since: 2026-10-28
+  summary: "The United States sanctions Rwanda's Ministry of Defence over its role in the M23 campaign in eastern DR Congo, alleging that Rwanda backs the M23 rebels against Congolese forces (Reuters, 28 Oct)."
+  confidence: B
+  sources:
+  - url: https://www.reuters.com/world/africa/us-imposes-sanctions-rwandas-ministry-defense-2026-10-28/
+    title: "Reuters: US imposes sanctions on Rwanda's defence ministry"
+    publisher: Reuters
+    date: '2026-10-28'
+    tier: 3
+  why: "A sanction on a state ministry, not on a person; the US card gets this row, the Rwanda card the mirror below."
+- from: RWA
+  to: USA
+  layer: action
+  type: sanction
+  since: 2026-10-28
+  summary: "Reverse of the US sanctions on Rwanda's Ministry of Defence (28 Oct, Reuters): the measure targets Rwanda's defence ministry over alleged backing of the M23 rebels in eastern DR Congo."
+  confidence: B
+  sources:
+  - url: https://www.reuters.com/world/africa/us-imposes-sanctions-rwandas-ministry-defense-2026-10-28/
+    title: "Reuters: US imposes sanctions on Rwanda's defence ministry"
+    publisher: Reuters
+    date: '2026-10-28'
+    tier: 3
+  why: "Mirror for the Rwanda card, which is the sanctioned side."
+- from: IRN
+  to: KOR
+  layer: action
+  type: sanction
+  since: 2026-10-27
+  summary: "Iran's Persian Gulf Strait Authority says vessels of the South Korean shipping company Sinokor will face legal action from 1 November 2026 (Reuters, 27 Oct). This is an announced measure against a company, not yet applied on the day; the portal line gives no legal basis."
+  confidence: B
+  sources:
+  - url: https://www.reuters.com/world/asia-pacific/iranian-strait-authority-says-sinokor-vessels-will-face-legal-action-2026-10-27/
+    title: "Reuters: Iranian strait authority says Sinokor vessels will face legal action"
+    publisher: Reuters
+    date: '2026-10-27'
+    tier: 3
+  why: "A Hormuz-crisis measure that hits a third-country firm; the Korea card needs a mirror only if Seoul responds, so none for now."
+- from: ISR
+  to: PSE
+  layer: action
+  type: incident
+  since: 2026-10-27
+  summary: "Israeli airstrike on a tent in Khan Yunis, Gaza Strip, kills three people, including a child (AFP via Asharq Al-Awsat, 27 Oct)."
+  confidence: B
+  sources:
+  - url: https://english.aawsat.com/arab-world/5333747-israeli-strike-gaza-kills-three-including-child
+    title: "Asharq Al-Awsat (AFP): Israeli strike in Gaza kills three, including a child"
+    publisher: Asharq Al-Awsat (AFP)
+    date: '2026-10-27'
+    tier: 3
+  why: "A routine strike in the Gaza war: take it only as a tally for the Israel card, not as one row per strike."
+- from: USA
+  to: nsa-cartels
+  layer: action
+  type: incident
+  since: 2026-10-27
+  summary: "US airstrike on an alleged drug boat in the Pacific Ocean kills five people (AP, 27 Oct). The portal names no group, so nsa-cartels is the umbrella used here; the source does not confirm the boat's affiliation."
+  confidence: B
+  sources:
+  - url: https://apnews.com/article/boat-strikes-alleged-drug-boat-latin-america-cartels-trump-ef5e229630e00f370e0d1772edc34dd9
+    title: "AP: US airstrike on alleged drug boat in Pacific"
+    publisher: AP
+    date: '2026-10-27'
+    tier: 3
+  why: "Part of the boat-strike series under Operation Southern Spear; count the series on the US card rather than one row per strike."

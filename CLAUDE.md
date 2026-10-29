@@ -159,8 +159,12 @@ no cron, no scheduled wake-up, no agent launched on a date). When he does, the c
 5. **Triage by hand**: `python tools/inbox.py list <week>` (validated, duplicates flagged); Davide sees the
    list; `python tools/inbox.py apply <week> --accept=...` appends the accepted rows to the cards. Grade
    and trend changes only by hand, with the note rewritten; `proposes` in the inbox is a hint, never applied.
-6. Then reciprocate, build, commit, push; a journal entry with rows and tokens. Light tier about
-   0.8-1M tokens a week; the delta pass per card (Sonnet for protagonists) only on Davide's call.
+6. **Delta pass on the cards touched by a major event** (Davide, 2026-10-29: "si e' votato in Israele"):
+   an election, a change of government, a war, a coup, a treaty signed. One agent per card (Sonnet for
+   protagonists, Haiku for minors; mandate in `tools/briefs/delta-mandate.md`): it reads the card and the
+   inbox rows about it, searches the outcome (at most 6 calls), and updates objectives, reading and stances
+   with sources, additions and reasoned changes, never a rewrite. Then reciprocate, build, commit, push; a
+   journal entry with rows, cards and tokens; the new card texts translated the same day (`i18n.py`).
 7. **Token cap** fixed by Davide before the cycle starts; stop when reached.
 Between cycles, single news items go in as one dated row each ("nota alla scheda").
 
