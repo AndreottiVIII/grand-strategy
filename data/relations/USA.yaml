@@ -2243,17 +2243,22 @@ relations:
 - to: RWA
   layer: action
   type: sanction
-  summary: The United States sanctions Rwanda's Ministry of Defence over its role in the M23 campaign in eastern DR Congo, alleging that Rwanda backs the M23 rebels against Congolese forces (Reuters, 28
+  summary: The United States sanctions Rwanda's Ministry of Defence over its role in the M23 campaign in eastern DR Congo, alleging that Rwanda backs the M23 rebels against Congolese forces (US Treasury, 28
     Oct).
   since: 2026-10-28
   until: null
-  last_verified: '2026-10-29'
+  last_verified: '2026-11-05'
   confidence: B
   sources:
-  - url: https://www.reuters.com/world/africa/us-imposes-sanctions-rwandas-ministry-defense-2026-10-28/
-    title: 'Reuters: US imposes sanctions on Rwanda''s defence ministry'
-    publisher: Reuters
+  - url: https://content.govdelivery.com/accounts/USTREAS/bulletins/430c4a3
+    title: 'Treasury Sanctions Rwandan Ministry of Defence and Financial Institution Supporting M23'
+    publisher: US Department of the Treasury
     date: '2026-10-28'
+    tier: 1
+  - url: https://www.africanews.com/2026/10/29/us-imposes-sanctions-on-rwandan-defence-ministry-over-links-to-congo-rebels/
+    title: 'US imposes sanctions on Rwandan defence ministry over links to Congo rebels'
+    publisher: Africanews
+    date: '2026-10-29'
     tier: 3
 - to: nsa-cartels
   layer: action
@@ -2269,4 +2274,54 @@ relations:
     title: 'AP: US airstrike on alleged drug boat in Pacific'
     publisher: Associated Press
     date: '2026-10-27'
+    tier: 3
+- to: IRN
+  layer: action
+  type: incident
+  summary: The US military carries out airstrikes on Iranian targets across the Strait of Hormuz after Iranian surface-to-air missiles attacked American aircraft in the Strait; explosions reported at Qeshm
+    Island on 3 November.
+  since: 2026-11-02
+  until: null
+  last_verified: '2026-11-05'
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/news/2026/11/3/explosions-hit-irans-qeshm-island-as-us-media-report-us-strikes-in-hormuz
+    title: Explosions hit Iran's Qeshm Island as US media report US strikes in Hormuz
+    publisher: Al Jazeera
+    date: '2026-11-03'
+    tier: 3
+  - url: https://apnews.com/article/iran-us-trump-netanyahu-israel-war-b4519ef86bafe2672e0855d7a48ce309
+    title: Iran-US war coverage (AP)
+    publisher: AP
+    date: '2026-11-02'
+    tier: 3
+- to: ZAF
+  layer: action
+  type: sanction
+  summary: The United States announces the suspension of South Africa from duty-free trade benefits under the African Growth and Opportunity Act, effective 1 January 2027, citing trade barriers, human rights
+    concerns and threats to US interests.
+  since: 2026-11-02
+  until: null
+  last_verified: '2026-11-05'
+  confidence: B
+  sources:
+  - url: https://www.reuters.com/world/africa/us-suspend-south-africa-rwanda-duty-free-trade-access-2026-11-02/
+    title: US to suspend South Africa, Rwanda duty-free trade access
+    publisher: Reuters
+    date: '2026-11-02'
+    tier: 3
+- to: RWA
+  layer: action
+  type: sanction
+  summary: The United States announces the suspension of Rwanda from duty-free trade benefits under the African Growth and Opportunity Act, effective 1 January 2027, citing the same grounds as for South
+    Africa.
+  since: 2026-11-02
+  until: null
+  last_verified: '2026-11-05'
+  confidence: B
+  sources:
+  - url: https://www.reuters.com/world/africa/us-suspend-south-africa-rwanda-duty-free-trade-access-2026-11-02/
+    title: US to suspend South Africa, Rwanda duty-free trade access
+    publisher: Reuters
+    date: '2026-11-02'
     tier: 3

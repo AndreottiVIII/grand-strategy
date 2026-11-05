@@ -1,5 +1,22 @@
 # Journal
 
+## 2026-11-05 · W45: midterms, Hormuz, AGOA; 12 rows, 4 cards
+
+Davide: "momento del nostro aggiornamento settimanale, sguinzaglia gli haiku. ricordati che c'e' anche appena stato mid
+term americano". Weekly usage at 70% at the start, so Haiku everywhere except the USA card (Sonnet). Datasets regenerated
+(932 memberships, 579 recognition rows), GDELT heat for 29 Oct-4 Nov (surging: Antigua, Bahamas, Bhutan, Madagascar,
+Senegal; burning: Trinidad, North Korea, Nicaragua, Haiti, Chad; loud: USA far ahead with the midterms). Portal pass by
+two Haiku (30 Oct-1 Nov: 3 rows, a quiet weekend, the skipped list checked; 2-5 Nov: 9 rows): 12 candidate rows, all
+valid, all accepted by Davide ("tutte e 12") including three at C (RSF drones on aid stations, the Salvadoran offensive
+in Haiti, Houthi strikes cited only through the Asian Cup postponement). Delta pass: USA (Democrats take both chambers,
+Senate 54-44, House 228 called; constraint and reading updated, no stance moved: the consequences for Ukraine aid,
+tariffs, Taiwan and NATO are unsourced yet), Iran (the 2-3 Nov exchange around Hormuz: IRGC fire at a US aircraft, US
+strikes on Qeshm and Bandar Lengeh; grade adversary kept), South Africa and Rwanda (AGOA benefits suspended from 1 Jan
+2027; grades kept; the RWA 28 Oct designation row re-sourced to the Treasury bulletin on both sides). Bulgaria: the
+Haiku found no 31 Oct election (the last is April 2026, already in the card) and changed nothing, as it should.
+reciprocate.py added nothing (57 treaty pairs skipped by the new rule). Build OK: 4417 stances, 10317 relations.
+Tokens: about 0.9M (portal 0.27M, deltas 0.56M, translation and coordination). Total 45.4M.
+
 ## 2026-10-29 · Review before the letter to Luttwak: three reviewers, three fixing hands, 27 card corrections
 
 Davide: "fai check per bug o altro? poi lo mettiamo sul mio sito dopo e mandiamo a Luttwak". Three Sonnet reviewers in

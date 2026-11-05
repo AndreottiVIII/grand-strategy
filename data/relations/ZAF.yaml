@@ -4,12 +4,13 @@ relations:
   - to: USA
     layer: objective
     type: influence_goal
-    summary: "Win back US market access after the 2025 break: AGOA lapsed on 30 September 2025 and was renewed only to the end of 2026 (signed 3 February 2026, applied back to the lapse), while the 30% tariff of 7 August 2025 still applies. Pretoria negotiates for relief."
+    summary: "Win back US market access after the 2025 break: AGOA lapsed on 30 September 2025 and was renewed only to the end of 2026 (signed 3 February 2026, applied back to the lapse), while the 30% tariff of 7 August 2025 still applies. On 2 November 2026 the US announced the suspension of South Africa from AGOA from 1 January 2027; Pretoria negotiates to keep access and a tariff deal."
     since: 2025-09-30
     until: null
-    last_verified: 2026-10-29
+    last_verified: 2026-11-05
     confidence: C
     sources:
+      - {url: "https://www.devdiscourse.com/article/international/4000905-us-to-suspend-south-africa-and-rwanda-from-duty-free-trade-access", title: "US to suspend South Africa and Rwanda from duty-free trade access", publisher: "Reuters (wire copy via Devdiscourse)", date: 2026-11-02, tier: 3}
       - {url: "https://businessreport.co.za/business/economy/2026-02-04-agoa-extension-signed-into-law-but-south-africa-remains-on-the-tariff-frontline", title: "AGOA extension signed into law but South Africa remains on the tariff frontline", publisher: "Business Report", date: 2026-02-04, tier: 3}
       - {url: "https://www.dailymaverick.co.za/article/2025-10-22-agoa-has-lapsed-but-us-mulls-extension", title: "AGOA has lapsed but US mulls extension", publisher: "Daily Maverick", date: 2025-10-22, tier: 3}
 
@@ -211,6 +212,19 @@ relations:
       - {url: "https://www.cbc.ca/news/world/us-south-africa-refugees-9.7159402", title: "U.S. allows nearly 4,500 South African refugees since October - and only 3 from elsewhere", publisher: "CBC News", date: 2026-04-10, tier: 3}
       - {url: "https://www.theguardian.com/us-news/2025/oct/30/trump-refugee-restrictions-white-south-africans", title: "US will limit number of refugees to 7,500 and give priority to white South Africans", publisher: "The Guardian", date: 2025-10-30, tier: 3}
       - {url: "https://www.whitehouse.gov/presidential-actions/2025/02/addressing-egregious-actions-of-the-republic-of-south-africa/", title: "Addressing egregious actions of the Republic of South Africa (Executive Order 14204)", publisher: "The White House", date: 2025-02-07, tier: 1}
+
+  - to: USA
+    layer: action
+    type: sanction
+    summary: "The United States announced on 2 November 2026 that South Africa will be suspended from duty-free access under the African Growth and Opportunity Act from 1 January 2027, citing trade barriers, corruption and threats to US interests. Pretoria's trade ministry said it would support the affected sectors and that AGOA is not the whole relationship. AGOA exports to the US were about USD 1.7bn in 2025 (Reuters wire copy)."
+    since: 2026-11-02
+    until: null
+    last_verified: 2026-11-05
+    confidence: B
+    sources:
+      - {url: "https://www.ewn.co.za/2026/11/02/south-africa-officially-booted-from-agoa-trade-pact-by-us-administration", title: "Trump administration suspends South Africa from AGOA, ending duty-free access from 2027", publisher: "EWN", date: 2026-11-02, tier: 3}
+      - {url: "https://www.devdiscourse.com/article/international/4000905-us-to-suspend-south-africa-and-rwanda-from-duty-free-trade-access", title: "US to suspend South Africa and Rwanda from duty-free trade access", publisher: "Reuters (wire copy via Devdiscourse)", date: 2026-11-02, tier: 3}
+      - {url: "https://www.devdiscourse.com/article/international/4000896-south-africa-to-support-sectors-affected-by-suspension-from-us-trade-initiative", title: "South Africa to support sectors affected by suspension from US trade initiative", publisher: "Devdiscourse (Reuters)", date: 2026-11-02, tier: 3}
 
   - to: USA
     layer: action

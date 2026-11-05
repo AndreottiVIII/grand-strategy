@@ -1,0 +1,144 @@
+week: 2026-W45
+group: portal-nov2-5
+items:
+- from: USA
+  to: IRN
+  layer: action
+  type: incident
+  since: 2026-11-02
+  summary: 'The US military carries out airstrikes on Iranian targets across the Strait of Hormuz after Iranian surface-to-air missiles attacked American aircraft in the Strait; explosions reported at Qeshm Island on 3 November.'
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/news/2026/11/3/explosions-hit-irans-qeshm-island-as-us-media-report-us-strikes-in-hormuz
+    title: Explosions hit Iran's Qeshm Island as US media report US strikes in Hormuz
+    publisher: Al Jazeera
+    date: '2026-11-03'
+    tier: 3
+  - url: https://apnews.com/article/iran-us-trump-netanyahu-israel-war-b4519ef86bafe2672e0855d7a48ce309
+    title: Iran-US war coverage (AP)
+    publisher: AP
+    date: '2026-11-02'
+    tier: 3
+  why: Direct US-Iran kinetic exchange inside the 2026 Iran war; belongs in the US and IRN cards and the Hormuz seam.
+- from: IRN
+  to: USA
+  layer: action
+  type: incident
+  since: 2026-11-02
+  summary: 'Iranian surface-to-air missiles attack American aircraft over the Strait of Hormuz, the trigger for US strikes on Iranian targets reported on 2-3 November.'
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/news/2026/11/3/explosions-hit-irans-qeshm-island-as-us-media-report-us-strikes-in-hormuz
+    title: Explosions hit Iran's Qeshm Island as US media report US strikes in Hormuz
+    publisher: Al Jazeera
+    date: '2026-11-03'
+    tier: 3
+  - url: https://apnews.com/article/iran-us-trump-netanyahu-israel-war-b4519ef86bafe2672e0855d7a48ce309
+    title: Iran-US war coverage (AP)
+    publisher: AP
+    date: '2026-11-02'
+    tier: 3
+  why: The reverse side of the same exchange; the Iranian attack on US aircraft is the act that opens the escalation in the IRN card.
+- from: ISR
+  to: PSE
+  layer: action
+  type: incident
+  since: 2026-11-02
+  summary: 'Israeli forces withdraw from areas around Hebron in the occupied West Bank after a 10-day operation that followed the killing of two Israeli soldiers at a checkpoint, according to the Hebron governor.'
+  confidence: B
+  sources:
+  - url: https://www.rfi.fr/en/international-news/20261102-israel-army-withdraws-after-hebron-operation
+    title: Israel army withdraws after Hebron operation
+    publisher: AFP via RFI
+    date: '2026-11-02'
+    tier: 3
+  - url: https://www.aljazeera.com/amp/news/2026/11/2/hebron-governor-says-israeli-forces-withdraw-from-city-after-10-day-siege
+    title: Hebron governor says Israeli forces withdraw from city after 10-day siege
+    publisher: Al Jazeera
+    date: '2026-11-02'
+    tier: 3
+  why: Concrete West Bank military operation affecting the Palestinian side; relevant to the ISR and PSE cards.
+- from: RUS
+  to: UKR
+  layer: action
+  type: incident
+  since: 2026-11-02
+  summary: 'Russian forces drop at least nine bombs on a school building used as a civilian shelter and humanitarian aid centre in Komyshuvakha, Zaporizhzhia Oblast, killing at least 33 people and leaving 50 missing.'
+  confidence: B
+  sources:
+  - url: https://edition.cnn.com/2026/11/03/europe/ukraine-russia-zaporiszhzha-school-strike-intl
+    title: Russian strike on school shelter in Zaporizhzhia
+    publisher: CNN
+    date: '2026-11-03'
+    tier: 3
+  why: Mass-casualty strike on civilians; a recent incident row for the RUS card and the Russo-Ukrainian war entry.
+- from: USA
+  to: ZAF
+  layer: action
+  type: sanction
+  since: 2026-11-02
+  summary: 'The United States announces the suspension of South Africa from duty-free trade benefits under the African Growth and Opportunity Act, effective 1 January 2027, citing trade barriers, human rights concerns and threats to US interests.'
+  confidence: B
+  sources:
+  - url: https://www.reuters.com/world/africa/us-suspend-south-africa-rwanda-duty-free-trade-access-2026-11-02/
+    title: US to suspend South Africa, Rwanda duty-free trade access
+    publisher: Reuters
+    date: '2026-11-02'
+    tier: 3
+  why: Trade-benefit sanction on South Africa; feeds the US-ZAF relations and trade dependency picture.
+- from: USA
+  to: RWA
+  layer: action
+  type: sanction
+  since: 2026-11-02
+  summary: 'The United States announces the suspension of Rwanda from duty-free trade benefits under the African Growth and Opportunity Act, effective 1 January 2027, citing the same grounds as for South Africa.'
+  confidence: B
+  sources:
+  - url: https://www.reuters.com/world/africa/us-suspend-south-africa-rwanda-duty-free-trade-access-2026-11-02/
+    title: US to suspend South Africa, Rwanda duty-free trade access
+    publisher: Reuters
+    date: '2026-11-02'
+    tier: 3
+  why: Trade-benefit sanction on Rwanda; relevant to the RWA card and the US Africa trade stance.
+- from: nsa-rsf
+  to: SDN
+  layer: action
+  type: incident
+  since: 2026-11-02
+  summary: 'The Rapid Support Forces launch drone strikes against three distribution stations in Sudan Kassala and Northern states, per Sudan Tribune.'
+  confidence: C
+  sources:
+  - url: https://sudantribune.com/article/320792
+    title: RSF drone strikes on distribution stations (Sudan Tribune)
+    publisher: Sudan Tribune
+    date: '2026-11-02'
+    tier: 4
+  why: Single-source report of RSF drone attacks on civilian aid infrastructure; to check before it moves any card.
+- from: SLV
+  to: nsa-haiti-gangs
+  layer: action
+  type: incident
+  since: 2026-11-02
+  summary: 'Salvadoran, Haitian and Gang Suppression Force soldiers launch an offensive on the Plain of the Cul-de-Sac, killing at least a dozen gang members, per EFE.'
+  confidence: C
+  sources:
+  - url: https://efe.com/mundo/2026-11-03/soldados-el-salvador-operacion-haiti/
+    title: Soldados de El Salvador operacion Haiti (EFE)
+    publisher: EFE
+    date: '2026-11-03'
+    tier: 3
+  why: Salvadoran military role in the Haiti intervention; the source is an agency summary in Spanish.
+- from: nsa-houthis
+  to: SAU
+  layer: action
+  type: incident
+  since: 2026-11-03
+  summary: 'Houthi attacks on Saudi Arabia are cited as the reason the Asian Football Confederation postpones the 2027 Asian Cup in Saudi Arabia to January 2028; the attacks themselves are context in the portal line, not the cited source.'
+  confidence: C
+  sources:
+  - url: https://www.france24.com/en/live-news/20261103-asian-cup-latest-event-in-saudi-arabia-to-be-postponed-over-safety
+    title: Asian Cup to be postponed in Saudi Arabia over safety (AFP via France 24)
+    publisher: AFP via France 24
+    date: '2026-11-03'
+    tier: 3
+  why: Signal of Houthi strikes reaching Saudi territory in the Houthi-Saudi conflict; needs a primary source before it moves the SAU card.
