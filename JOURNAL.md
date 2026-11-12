@@ -1,5 +1,22 @@
 # Journal
 
+## 2026-11-12 · W46 on a 5% budget: Riyadh hit, Eisenkot's mandate, 18 rows
+
+Davide: "ammazza il 5% settimanale che ho ancora di haiku per aggiornare pagina, non oltre a quello". Weekly usage at
+93%, so the whole cycle in Haiku and nothing above 98%. Datasets regenerated; GDELT heat for 5-11 Nov (surging and
+burning: Paraguay far ahead, then Uruguay, Gabon, El Salvador, the UAE, Poland, Argentina, Peru; loud: the US, the UK,
+Ukraine, Russia, China, Iran). Portal pass by two Haiku (6-8 Nov: 5 rows; 9-12 Nov: 13 rows; one 429 from the API,
+retried): 18 candidate rows, all valid, all accepted by Davide including five at C. The week: the Houthi missile that
+damaged an Aramco building in Riyadh (8 Nov) and the Saudi strikes near Sanaa and on a Taiz market; Israel's strike on
+the Nasser Medical Complex; Iran against navigation systems in Oman and designating Argentina's navy and air force;
+the TTP at Kohat; a Russian sanction on France; al-Shabaab in Kenya; the Abu Dhabi talks on Ukraine (not a row: no
+act signed). Delta pass, two Haiku: Saudi Arabia (objective and reading updated; trends kept; the Taiz row lowered to C
+because the attribution is contested; the UAE condemned, no dated US, Iranian or Omani reaction found) and Israel (the
+mandate to Gadi Eisenkot on 8 Nov, 67 recommendations against 46; government not sworn in, no grade moved; no source
+yet on his stated priorities). Post-midterm: still no sourced statement on US foreign policy by the new majorities, the
+USA second pass waits. Paraguay's heat has no row behind it on the portal: domestic, unread. Build OK: 4417 stances,
+10335 relations. Tokens: about 0.6M. Total 46.0M.
+
 ## 2026-11-05 · W45: midterms, Hormuz, AGOA; 12 rows, 4 cards
 
 Davide: "momento del nostro aggiornamento settimanale, sguinzaglia gli haiku. ricordati che c'e' anche appena stato mid

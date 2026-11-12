@@ -1,0 +1,205 @@
+week: 2026-W46
+group: portal-nov9-12
+items:
+- from: ISR
+  to: PSE
+  layer: action
+  type: incident
+  since: 2026-11-11
+  summary: 'Israel strikes the Nasser Medical Complex in Khan Younis, killing six Palestinians including a surgeon and wounding more than 20; four more people are killed in other airstrikes in the Gaza Strip the same day (Al Jazeera). Reuters separately reports a strike on a southern Gaza hospital that killed four, per Gaza civil defence.'
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/news/2026/11/11/israeli-strikes-hit-tent-camp-as-five-killed-in-gaza
+    title: Israeli strikes hit tent camp as five killed in Gaza
+    publisher: Al Jazeera
+    date: '2026-11-11'
+    tier: 3
+  - url: https://www.reuters.com/world/middle-east/israeli-strike-southern-gaza-hospital-kills-four-gaza-civil-defence-says-2026-11-11/
+    title: Israeli strike on southern Gaza hospital kills four, Gaza civil defence says
+    publisher: Reuters
+    date: '2026-11-11'
+    tier: 3
+  why: Strike on a hospital during the Gaza war, a recurring pattern for the Israel-Palestine card and the protection of medical facilities.
+- from: IRN
+  to: OMN
+  layer: action
+  type: incident
+  since: 2026-11-11
+  summary: 'Iran attacks ship navigation systems on Didamar Island, Oman, according to Reuters sources; the extent of the damage is unknown. The attack is part of the wider 2026 Iran war.'
+  confidence: B
+  sources:
+  - url: https://www.reuters.com/world/middle-east/iran-attacks-shipping-navigation-systems-omans-didamar-island-sources-say-2026-11-11/
+    title: Iran attacks shipping navigation systems on Oman's Didamar Island, sources say
+    publisher: Reuters
+    date: '2026-11-11'
+    tier: 3
+  why: Iranian attack on a Gulf neighbour's territory and shipping infrastructure, relevant to the Iran card and to the Oman card's neutrality.
+- from: OMN
+  to: IRN
+  layer: action
+  type: incident
+  since: 2026-11-11
+  summary: 'Mirror of the Iranian attack on Didamar Island navigation systems: Oman is the target, damage unknown (Reuters, sources).'
+  confidence: B
+  sources:
+  - url: https://www.reuters.com/world/middle-east/iran-attacks-shipping-navigation-systems-omans-didamar-island-sources-say-2026-11-11/
+    title: Iran attacks shipping navigation systems on Oman's Didamar Island, sources say
+    publisher: Reuters
+    date: '2026-11-11'
+    tier: 3
+  why: Mirror row for the Oman card.
+- from: nsa-ttp
+  to: PAK
+  layer: action
+  type: incident
+  since: 2026-11-11
+  summary: 'Pakistani Taliban ambush Khyber Pakhtunkhwa police in Kohat District, killing ten officers; eighteen gunmen are killed in the ensuing shootout (AP).'
+  confidence: B
+  sources:
+  - url: https://apnews.com/article/pakistan-militants-attack-kohat-afghanistan-police-ttp-260c8876601c767a4111b17fa9dd255c
+    title: Militants ambush police in Pakistan's Kohat district
+    publisher: AP
+    date: '2026-11-11'
+    tier: 3
+  why: Deadly TTP attack on the Pakistani state, a recurring incident line for the Pakistan card and for the TTP card.
+- from: PAK
+  to: nsa-ttp
+  layer: action
+  type: incident
+  since: 2026-11-11
+  summary: 'Pakistani security forces kill eighteen gunmen in the shootout that followed the Kohat ambush on police (AP).'
+  confidence: B
+  sources:
+  - url: https://apnews.com/article/pakistan-militants-attack-kohat-afghanistan-police-ttp-260c8876601c767a4111b17fa9dd255c
+    title: Militants ambush police in Pakistan's Kohat district
+    publisher: AP
+    date: '2026-11-11'
+    tier: 3
+  why: Mirror row for the TTP card, the group loses eighteen gunmen in the response.
+- from: IRN
+  to: ARG
+  layer: action
+  type: sanction
+  since: 2026-11-11
+  summary: 'Iran designates the Argentine navy and air force as terrorist organisations, a reciprocal move after Argentina designated the Islamic Revolutionary Guard Corps in March 2026 (Al Jazeera, Reuters).'
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/news/2026/11/11/iran-designates-argentinian-navy-air-force-as-terrorist
+    title: Iran designates Argentinian navy, air force as terrorist
+    publisher: Al Jazeera
+    date: '2026-11-11'
+    tier: 3
+  - url: https://www.reuters.com/world/americas/iran-designates-argentinas-navy-air-force-terrorist-organizations-2026-11-11/
+    title: Iran designates Argentina's navy, air force as terrorist organizations
+    publisher: Reuters
+    date: '2026-11-11'
+    tier: 3
+  why: Tit-for-tat terrorist designation between Tehran and Buenos Aires, relevant to the Argentina and Iran cards.
+- from: RUS
+  to: FRA
+  layer: action
+  type: sanction
+  since: 2026-11-11
+  summary: 'Russia bans two French lawmakers (Arthur Delaporte, Sacha Houlié) and two journalists (Ariane Chemin, Paul Gogo) from entering the country, alleging they harassed Xenia Fedorova, head of RT France, from 2017 to 2023 (Al Jazeera).'
+  confidence: B
+  sources:
+  - url: https://www.aljazeera.com/news/2026/11/11/russia-bans-two-french-lawmakers-two-journalists-in-tit-for-tat-move
+    title: Russia bans two French lawmakers, two journalists in tit-for-tat move
+    publisher: Al Jazeera
+    date: '2026-11-11'
+    tier: 3
+  why: Tit-for-tat entry ban on French officials and reporters, a small but dated RUS-FRA sanction.
+- from: KEN
+  to: SDN
+  layer: action
+  type: agreement
+  since: 2026-11-11
+  summary: 'Kenyan President William Ruto signs a deal for Sudan to lift its 20-month ban on Kenyan tea imports (Business Daily Africa).'
+  confidence: C
+  sources:
+  - url: https://www.businessdailyafrica.com/bd/markets/commodities/sudan-lifts-20-month-ban-on-kenyan-tea-after-ruto-deal-5667376
+    title: Sudan lifts 20-month ban on Kenyan tea after Ruto deal
+    publisher: Business Daily Africa
+    date: '2026-11-11'
+    tier: 4
+  why: Signed trade deal with a dated end to a trade ban, relevant to the Kenya and Sudan cards; single weak source, grade C.
+- from: SDN
+  to: KEN
+  layer: action
+  type: agreement
+  since: 2026-11-11
+  summary: 'Sudan lifts its 20-month ban on Kenyan tea imports under the deal signed by President Ruto (Business Daily Africa).'
+  confidence: C
+  sources:
+  - url: https://www.businessdailyafrica.com/bd/markets/commodities/sudan-lifts-20-month-ban-on-kenyan-tea-after-ruto-deal-5667376
+    title: Sudan lifts 20-month ban on Kenyan tea after Ruto deal
+    publisher: Business Daily Africa
+    date: '2026-11-11'
+    tier: 4
+  why: Mirror row for the Sudan card; single weak source, grade C.
+- from: RUS
+  to: ROU
+  layer: action
+  type: incident
+  since: 2026-11-11
+  summary: 'Romanian intelligence (SRI) says it stopped a cyberattack from December 2025 against an unnamed government institution, attributing it to the Russia-linked Turla malware; no sensitive data was found stolen (Reuters).'
+  confidence: C
+  sources:
+  - url: https://www.reuters.com/technology/romanian-intelligence-agency-says-it-identified-russian-linked-cyber-attack-2026-11-11/
+    title: Romanian intelligence says it identified Russian-linked cyber attack
+    publisher: Reuters
+    date: '2026-11-11'
+    tier: 3
+  why: Agency attribution of a cyberattack to Russia, grade C because it is the agency's own claim and the attack dates from December 2025.
+- from: KAZ
+  to: TJK
+  layer: action
+  type: incident
+  since: 2026-11-11
+  summary: 'Cybersecurity firm CloudSek reports that the Kazakhstan-linked hacker group Silent Lynx used an autonomous agent to breach Tajikistan''s government database and steal more than 2,000 national-security documents (Reuters, The Record).'
+  confidence: C
+  sources:
+  - url: https://www.reuters.com/legal/government/kazakhstan-linked-hackers-used-ai-steal-tajik-government-documents-researchers-2026-11-11/
+    title: Kazakhstan-linked hackers used AI to steal Tajik government documents, researchers say
+    publisher: Reuters
+    date: '2026-11-11'
+    tier: 3
+  - url: https://therecord.media/suspected-kazakhstan-phishing-central-asia-espionage
+    title: Suspected Kazakhstan phishing in Central Asia espionage
+    publisher: The Record
+    date: '2026-11-11'
+    tier: 3
+  why: Attribution to Kazakhstan by a private firm, grade C; a state-linked espionage line for the Kazakhstan and Tajikistan cards.
+- from: nsa-al-shabaab
+  to: KEN
+  layer: action
+  type: incident
+  since: 2026-11-10
+  summary: 'Suspected al-Shabaab militants ambush a vehicle in Mandera County near the Somali border, killing eight people, including five workers and two police reservists (Reuters, AFP).'
+  confidence: B
+  sources:
+  - url: https://www.reuters.com/world/africa/eight-people-killed-kenyas-northeast-suspected-al-shabaab-attack-2026-11-10/
+    title: Eight people killed in Kenya's northeast in suspected al-Shabaab attack
+    publisher: Reuters
+    date: '2026-11-10'
+    tier: 3
+  - url: https://aa.com.tr/en/africa/suspected-al-shabaab-militants-kill-8-in-northeastern-kenya-ambush/4119429
+    title: Suspected al-Shabaab militants kill 8 in northeastern Kenya ambush
+    publisher: Anadolu Agency
+    date: '2026-11-10'
+    tier: 4
+  why: Lethal attack on Kenyan territory by the Somali group, a recurring incident line for the Kenya and al-Shabaab cards.
+- from: KEN
+  to: nsa-al-shabaab
+  layer: action
+  type: incident
+  since: 2026-11-10
+  summary: 'Kenyan security forces are the target of the Mandera ambush that killed eight, including two police reservists (Reuters, AFP).'
+  confidence: B
+  sources:
+  - url: https://www.reuters.com/world/africa/eight-people-killed-kenyas-northeast-suspected-al-shabaab-attack-2026-11-10/
+    title: Eight people killed in Kenya's northeast in suspected al-Shabaab attack
+    publisher: Reuters
+    date: '2026-11-10'
+    tier: 3
+  why: Mirror row for the al-Shabaab card, the attack on Kenyan forces and civilians.
