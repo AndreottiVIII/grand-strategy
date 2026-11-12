@@ -150,6 +150,10 @@ no cron, no scheduled wake-up, no agent launched on a date). When he does, the c
    rulings written in the cards); those cards go first.
 3. **News heat, free**: `python tools/datasets/gdelt.py` (the week's events per country against its
    own four-week normal) says where to look; it feeds the briefs and the "Hot this week" block.
+   **Spike rule (Davide, 2026-11-12: "quando hai impennata come paraguay un micro haiku mandalo che vediamo che è")**:
+   every country at the top of surging or burning (say above 2.5 times its normal) that the portal pass left
+   without a row gets a micro Haiku, two searches per country, that says what happened and writes an inbox item
+   only if it is an act between atlas actors; otherwise the journal notes "domestic" in one line.
 4. **Portal pass, Haiku, two agents** (`tools/brief_portal.md`): they read the English Wikipedia
    Portal:Current events page of each day in the window through the API (dated events, each with its
    news citation) and write candidate rows to `data/inbox/<week>-portal-<days>.yaml`, never to the cards.

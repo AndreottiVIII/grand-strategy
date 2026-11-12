@@ -14,8 +14,16 @@ act signed). Delta pass, two Haiku: Saudi Arabia (objective and reading updated;
 because the attribution is contested; the UAE condemned, no dated US, Iranian or Omani reaction found) and Israel (the
 mandate to Gadi Eisenkot on 8 Nov, 67 recommendations against 46; government not sworn in, no grade moved; no source
 yet on his stated priorities). Post-midterm: still no sourced statement on US foreign policy by the new majorities, the
-USA second pass waits. Paraguay's heat has no row behind it on the portal: domestic, unread. Build OK: 4417 stances,
-10335 relations. Tokens: about 0.6M. Total 46.0M.
+USA second pass waits. Build OK: 4417 stances, 10335 relations.
+
+Same evening, a new rule from Davide ("quando hai impennata come paraguay un micro haiku mandalo che vediamo che e'",
+now step 3 of the cycle in CLAUDE.md): a micro Haiku with two searches per country explained the two spikes the portal
+had left blank. Paraguay: President Santiago Pena resigned on 5 Nov after the collapse of the digital bank Ueno, the
+Chamber voted impeachment 78-0, Vice President Pedro Alliana sworn in on 6 Nov (term to 15 Aug 2028); a change of
+government, so a Haiku delta on the PRY card: a new constraint, a reading paragraph, the Taiwan and Brazil stances
+annotated (Alliana has cut foreign travel and postponed a Taiwan visit; Rubio called on 8 Nov; no grade moved).
+Uruguay: Pope Leo XIV in Montevideo from 6 Nov, written as a VAT->URY visit row. Relations 10336. Tokens for the week
+about 0.8M. Total 46.0M.
 
 ## 2026-11-05 · W45: midterms, Hormuz, AGOA; 12 rows, 4 cards
 
