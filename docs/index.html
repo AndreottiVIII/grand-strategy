@@ -24,7 +24,7 @@
 <meta name="twitter:title" content="Grand Strategy">
 <meta name="twitter:description" content="What the world's actors want and do, and where it collides.">
 <meta name="twitter:image" content="https://grandstrategy.davidecaniatti.com/preview.png">
-<link rel="stylesheet" href="style.css?v=202611192334">
+<link rel="stylesheet" href="style.css?v=202611192343">
 </head>
 <body>
 <header class="top">
@@ -107,7 +107,79 @@
 
 <script>window.goatcounter = {path: function () { return location.pathname + location.hash; }};</script>
 <script data-goatcounter="https://grandstrategy.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>
+/* Visits: Google Analytics (G-RL3G7S1M0W) starts ONLY after "Accept" in the notice (equal weight to both buttons; closing the
+   page without choosing means no counting). The choice stays in the browser (localStorage 'gs-cookie'). The "This site" page,
+   section #visite, explains it and links back here (window.gsCookie()). Outside the real host (local previews, automated checks)
+   Analytics never starts; with navigator.webdriver the notice is not shown, so it cannot cover the map in automated checks. */
+(function () {
+  'use strict';
+  var ID = 'G-RL3G7S1M0W', KEY = 'gs-cookie';
+  var SITE = /(^|\.)grandstrategy\.davidecaniatti\.com$/.test(location.hostname);
+  var IT = false;
+  try { var q = new URLSearchParams(location.search).get('lang'); IT = (q || localStorage.getItem('lang')) === 'it'; } catch (e) { /* English */ }
+  function read() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+  function write(v) { try { localStorage.setItem(KEY, v); } catch (e) { /* nothing */ } }
+  var started = false;
+  function start() {
+    if (started || !SITE) return;
+    started = true;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    // cookies stay on this host alone (not on davidecaniatti.com, shared with the other sites); advertising signals off;
+    // IP anonymisation is already the rule in GA4, so there is no switch for it
+    window.gtag('config', ID, { allow_google_signals: false, allow_ad_personalization_signals: false, cookie_domain: location.hostname });
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID;
+    document.head.appendChild(s);
+  }
+  function dropCookies() {
+    document.cookie.split(';').forEach(function (c) {
+      var n = c.split('=')[0].trim();
+      if (!/^_ga/.test(n)) return;
+      ['', location.hostname, '.' + location.hostname.replace(/^www\./, '')].forEach(function (d) {
+        document.cookie = n + '=; Max-Age=0; path=/' + (d ? '; domain=' + d : '');
+      });
+    });
+  }
+  var box = null;
+  function close() { if (box && box.parentNode) box.parentNode.removeChild(box); box = null; }
+  function choose(v) {
+    var before = read();
+    write(v);
+    close();
+    if (v === 'yes') start();
+    else {
+      window['ga-disable-' + ID] = true;   // stop Analytics at once: otherwise Google rewrites the cookies while the page reloads
+      dropCookies();
+      if (before === 'yes' && started) location.reload();
+    }
+  }
+  function show() {
+    if (box || !document.body) return;
+    box = document.createElement('div');
+    box.id = 'gs-ck';
+    box.setAttribute('role', 'region');
+    box.setAttribute('aria-label', IT ? 'Avviso sui cookie' : 'Cookie notice');
+    box.innerHTML =
+      '<p>This site counts visits with Google Analytics, which sets cookies. It runs only if you accept, and only to learn which pages are read: no advertising. <a href="#/visite">How it works</a></p>' +
+      '<div class="gs-ck-b"><button type="button" data-v="yes">Accept</button><button type="button" data-v="no">Refuse</button></div>';
+    box.addEventListener('click', function (e) {
+      var b = e.target.closest ? e.target.closest('button[data-v]') : null;
+      if (b) choose(b.getAttribute('data-v'));
+    });
+    document.body.appendChild(box);
+  }
+  window.gsCookie = show;
+  var saved = read();
+  if (saved === 'yes') start();
+  else if (saved === 'no') dropCookies();   // cookies left over from before the refusal
+  else if (!navigator.webdriver) show();
+})();
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
-<script src="app.js?v=202611192334"></script>
+<script src="app.js?v=202611192343"></script>
 </body>
 </html>
