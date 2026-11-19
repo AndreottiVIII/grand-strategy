@@ -59,6 +59,12 @@ from the last line and from `git log`.
   now a state in both NATO and the EU (Cyprus is not in NATO). Borders dataset lists Cameroon and DR Congo as
   neighbours: wrong, in BACKLOG. Build OK: 4491 stances, 10383 relations, warnings 146 -> 177 (to read next time).
   Tokens for the evening about 1.6M. Total 48.7M.
+- Fourth wave (night of 19-20 Nov): France's seven unread neighbours (CHE, MUS with Tromelin, SUR, VEN rival, KIR, SLB,
+  SYC) and Venezuela's seven (DOM rival warming, FRA and GBR rival, DMA, LCA, KNA, VCT partner) written; the five
+  remaining African pairs; the build warnings read by a Haiku (174 lines: 168 provisional mirrors, 4 partner-of-an-
+  adversary's-ally, no watch date passed; five points for a human look, in BACKLOG). The unconfirmed US-Venezuela
+  "treaty" rows of 18 Nov were deleted: talks on a status-of-forces agreement are not an alignment, and the only
+  source was a portal citation nobody could open. Stances 4521. Tokens about 0.5M. Total 49.2M.
 - Left for the next cycle: Shenzhen outcome (CHN and USA), the US-Venezuela agreement (confirm or delete), the
   Qatar-Pakistan memorandum, Estonia's effective date, the date of Macron's Cambodia visit (9 or 15 Nov).
 
