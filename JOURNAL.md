@@ -35,6 +35,12 @@ from the last line and from `git log`.
   reports the outcome yet; the joint declaration in the USA->CHN row is marked as to be confirmed; next week).
 - Stage 5: card texts translated, build OK (4417 stances, 10368 relations), pushed. Tokens for the week about 1.1M
   (portal 0.22M, spike check 0.1M, deltas 0.7M, translation and coordination). Total 47.1M.
+- Same evening, on Davide's word ("anzi fallo ora"): Google Analytics (G-RL3G7S1M0W) behind a consent notice, Sonnet on
+  `tools/briefs/analytics-mandate.md` after the model of Milano in dati: Accept and Refuse of equal weight, gtag only
+  after Accept, advertising signals off, the choice in localStorage, Refuse deletes the _ga cookies, `window.gsCookie()`
+  to change it, nothing outside the real host, no notice for webdriver; a "Visits and cookies" section on This site in
+  both languages. Verified locally and on the live site: no request to Google before a choice, GoatCounter unchanged,
+  console clean. Commit 8174c264.
 - Left for the next cycle: Shenzhen outcome (CHN and USA), the US-Venezuela agreement (confirm or delete), the
   Qatar-Pakistan memorandum, Estonia's effective date, the date of Macron's Cambodia visit (9 or 15 Nov).
 
