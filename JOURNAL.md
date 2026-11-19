@@ -1,5 +1,15 @@
 # Journal
 
+## 2026-11-19 · W47, in progress (written step by step: tokens are short, the session may die)
+
+Davide: "update settimanale MA stiamo finendo i token ... fatto in un modo che scrive tutto quello che trova man mano".
+Plan: datasets and GDELT first (committed as soon as done), then two Haiku portal passes (13-15 and 16-19 Nov) writing
+the inbox item by item (committed as soon as done), then triage, rows applied, deltas only for the biggest events,
+translation, build, push. Each stage below is appended when it closes; if the entry stops, the next session picks up
+from the last line and from `git log`.
+
+- Stage 1, datasets: started.
+
 ## 2026-11-12 · W46 on a 5% budget: Riyadh hit, Eisenkot's mandate, 18 rows
 
 Davide: "ammazza il 5% settimanale che ho ancora di haiku per aggiornare pagina, non oltre a quello". Weekly usage at
