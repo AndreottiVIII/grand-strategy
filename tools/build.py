@@ -468,7 +468,7 @@ def main():
     # aims): A hostile to X while A and X are both allies of Y, so Y is pulled two ways. Only from
     # hand-written stances of confidence A or B; provisional reciprocals and dataset stances never count.
     # every leg must be a written reading (A or B): the treaty floor alone never makes a seam, or
-    # every NATO member would be "pulled" between Cyprus and Turkey (Davide, 2026-10-13)
+    # every state in both NATO and the EU would be "pulled" between Cyprus (EU) and Turkey (NATO) (Davide, 2026-10-13)
     hand, defacto = {}, set()   # defacto: hand-written alignment without a treaty (ONTOLOGY, 2026-10-16)
     for a, v in stances.items():
         for st in v["stances"]:

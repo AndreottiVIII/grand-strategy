@@ -271,8 +271,8 @@ computes them and the site shows them (Seams page; a dashed outline on the map, 
 
 Rule, decided with Davide: **every leg must be a written reading** - a hand-written stance of
 confidence A or B, from either side of the leg. The treaty floor alone (NATO, EU, CSTO
-co-membership from the dataset) never makes a seam, or every NATO member would be "pulled"
-between Cyprus and Turkey; provisional reciprocals (`reciprocal_of`) never count either. The
+co-membership from the dataset) never makes a seam, or every state in both NATO and the EU would
+be "pulled" between Cyprus (EU) and Turkey (NATO); provisional reciprocals (`reciprocal_of`) never count either. The
 list therefore grows only as cards are written on both sides of a rivalry.
 
 **Hedging and buffers** (buffers added 2026-10-16, Davide: "tracciamo anche chi e' partner di due
