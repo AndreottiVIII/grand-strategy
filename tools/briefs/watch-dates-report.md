@@ -1,0 +1,155 @@
+# Date di scadenza nelle schede (watch)
+
+Data di controllo: 2026-11-19. Fonte: solo i testi delle schede `card: full` (nessuna ricerca web). Ogni voce copia una data o un periodo scritto nella scheda; dove il testo dà solo mese o anno si usa il primo giorno (per fine anno, dicembre) e la precisione sta in `what`.
+
+Schede toccate: 88. Voci scritte: 134.
+
+## Prossime 10 date
+
+- 2026-11-21 HUN: US waiver on Russian oil and gas lapses on 21 Nov 2026
+- 2026-11-24 BGD: LDC graduation: preferential EU access ends 24 Nov 2026
+- 2026-11-29 ESP: Snap general election called for 29 Nov 2026
+- 2026-11-30 PHL: Duterte trial at the ICC opens 30 Nov 2026
+- 2026-12-01 BGD: Ganges Water Treaty with India expires December 2026
+- 2026-12-01 BGD: Rooppur nuclear grid connection targeted end-2026 (month assumed December)
+- 2026-12-01 CAN: Germany submarine talks to conclude before end of 2026 (month assumed December)
+- 2026-12-01 CHE: Final decision on UBS capital rules not expected before end of 2026 (month assumed December)
+- 2026-12-01 CMR: US AGOA trade framework extended only to December 2026
+- 2026-12-01 CZE: Dukovany state-aid decision expected by end-2026 (month assumed December)
+
+## Tutte le voci
+
+- 2026-11-21 HUN: US waiver on Russian oil and gas lapses on 21 Nov 2026
+- 2026-11-24 BGD: LDC graduation: preferential EU access ends 24 Nov 2026
+- 2026-11-29 ESP: Snap general election called for 29 Nov 2026
+- 2026-11-30 PHL: Duterte trial at the ICC opens 30 Nov 2026
+- 2026-12-01 BGD: Ganges Water Treaty with India expires December 2026
+- 2026-12-01 BGD: Rooppur nuclear grid connection targeted end-2026 (month assumed December)
+- 2026-12-01 CAN: Germany submarine talks to conclude before end of 2026 (month assumed December)
+- 2026-12-01 CHE: Final decision on UBS capital rules not expected before end of 2026 (month assumed December)
+- 2026-12-01 CMR: US AGOA trade framework extended only to December 2026
+- 2026-12-01 CZE: Dukovany state-aid decision expected by end-2026 (month assumed December)
+- 2026-12-01 DEU: LNG ban on Russian gas from end-2026 (month assumed December)
+- 2026-12-01 JPN: Three security documents due by end of 2026 (month assumed December)
+- 2026-12-01 LBR: Liberia presides over the UN Security Council in December 2026
+- 2026-12-01 LVA: Belarus border sensors due end-2026 (month assumed December)
+- 2026-12-01 MNE: Close all 33 EU negotiating chapters by end of 2026 (month assumed December)
+- 2026-12-01 MOZ: New IMF programme needed by end of 2026 (month assumed December)
+- 2026-12-01 NAM: Revised constitution to be concluded by end of 2026 (month assumed December)
+- 2026-12-01 PNG: Papua LNG final investment decision targeted for Q4 2026 (month assumed December)
+- 2026-12-01 SWE: Gripens and a corvette to Finland until end-2026 (month assumed December)
+- 2026-12-01 TUR: Akkuyu nuclear plant first unit due by end of 2026 (month assumed December)
+- 2026-12-01 VEN: Debt restructuring Caracas wants done before end of 2026 (month assumed December)
+- 2026-12-13 HTI: General election per electoral council calendar of 27 Jul 2026, December 2026 (13 Dec as cited)
+- 2026-12-15 EGY: IMF programme (USD 8bn) extended to 15 Dec 2026
+- 2026-12-22 SSD: National elections set for 22 Dec 2026
+- 2026-12-24 FJI: General election due between 24 Dec 2026 and early Feb 2027, on PM's timetable
+- 2026-12-31 BIH: EU Growth Plan: EUR 373.9m at risk after 31 Dec 2026
+- 2026-12-31 CYP: Presidency of the EU Council leaves office on 31 Dec 2026
+- 2026-12-31 FRA: UNIFIL ends 31 Dec 2026 (French presence in south Lebanon)
+- 2026-12-31 KEN: AUSSOM mandate ends 31 Dec 2026 unless renewed; AGOA renewed to 31 Dec 2026
+- 2026-12-31 LBN: UNIFIL mandate ends 31 Dec 2026 (UNSC resolution 2790)
+- 2026-12-31 MDA: Moldovagaz mandate to 31 Dec 2026 (gas to Tiraspol)
+- 2026-12-31 SOM: AUSSOM mandate ends 31 Dec 2026
+- 2026-12-31 ZAF: AGOA renewed only to 31 Dec 2026
+- 2026-12-31 sub-rs: EU Growth Plan money (EUR 373.9m) at risk by 31 Dec 2026
+- 2027-01-01 ARG: Lula's new Brazilian term starts 1 Jan 2027 (counterpart in Brasilia); year only in text
+- 2027-01-01 AUS: Submarine Rotational Force-West (with UK) starts from 2027 (year only)
+- 2027-01-01 AZE: Armenian constitutional referendum expected in 2027 at the earliest (year only)
+- 2027-01-01 BEL: EU ban on Russian LNG takes effect 1 Jan 2027
+- 2027-01-01 BRA: Lula's fourth term starts 2027 (inauguration, year only)
+- 2027-01-01 CYP: Block 12 gas final investment decision expected in 2027 (year only)
+- 2027-01-01 CZE: Temporary-protection rule changes for Ukrainians planned from 1 Jan 2027
+- 2027-01-01 DEU: Pipeline Russian-gas phase-out from autumn 2027 (year only in data, 'autumn' in text)
+- 2027-01-01 EST: Parliamentary election due in 2027 (year only)
+- 2027-01-01 FIN: 2027 election (parliamentary, year only) is the next test
+- 2027-01-01 GRC: Spring 2027 election (month not given)
+- 2027-01-01 IDN: CPTPP accession target 2027 (year only)
+- 2027-01-01 KEN: 2027 general election (year only)
+- 2027-01-01 LTU: Permanent German brigade in Lithuania full by 2027 (year only)
+- 2027-01-01 POL: Next parliamentary election due in 2027 (year only)
+- 2027-01-01 ROU: Neptun Deep first gas planned for H1 2027 (month not given)
+- 2027-01-01 RWA: AGOA duty-free access ends 1 Jan 2027 (USTR notice of 2 Nov 2026)
+- 2027-01-01 SGP: Malaysian pipeline gas contracts may end by 2027 (year only)
+- 2027-01-01 SVK: 2027 election (year only) decides the coalition
+- 2027-01-01 VEN: ICJ judgment on Essequibo expected between Nov 2026 and Jan 2027 (day not given)
+- 2027-01-01 ZAF: US notice: South Africa suspended from AGOA from 1 Jan 2027
+- 2027-01-01 org-eu: EU ban on Russian LNG from 1 Jan 2027
+- 2027-01-12 LTU: Nuclear amendment final vote planned 12 Jan 2027
+- 2027-01-27 KGZ: Presidential election on 27 Jan 2027
+- 2027-02-17 LBY: Elections agreed by 17 Feb 2027 (per June 2026 deal)
+- 2027-02-19 ARM: EU civilian mission EUMA on the border runs to 19 Feb 2027, then a successor mission
+- 2027-02-19 org-eu: EU civilian mission in Armenia (EUMA) runs to Feb 2027 (day per EU text)
+- 2027-02-20 NGA: Presidential election date set by electoral commission: 20 Feb 2027 (still contested per card)
+- 2027-02-28 BLR: EU Belarus sanctions renewed until 28 Feb 2027
+- 2027-02-28 org-eu: EU Belarus sanctions renewed until Feb 2027
+- 2027-03-01 JPN: Current US-Japan agreement expires March 2027
+- 2027-03-01 SRB: 75-day conscription from March 2027
+- 2027-04-30 SSD: UNMISS mandate runs to 30 Apr 2027
+- 2027-05-01 FRA: President leaves office in May 2027 (presidential election)
+- 2027-05-01 MMR: EU sanctions renewed until May 2027
+- 2027-05-15 SOM: President says he serves to 15 May 2027 (term end)
+- 2027-05-31 SSD: UN arms embargo runs to 31 May 2027
+- 2027-06-01 GBR: SPS agreement with EU takes effect; alignment planned mid-2027
+- 2027-06-01 MNE: Parliamentary elections due June 2027
+- 2027-06-01 SLV: Proposed change would end current presidential term on 1 June 2027
+- 2027-06-30 IRQ: PMF and Iran-aligned factions brought under Commander-in-Chief by 30 June 2027
+- 2027-06-30 LSO: State of disaster reported to run until 30 June 2027
+- 2027-07-01 DEU: Needs-based conscription trigger from 1 Jul 2027
+- 2027-07-01 NGA: Counter-terrorism brigade due to be operational in July 2027
+- 2027-07-01 TTO: First Dragon gas deliveries at Q3 2027 (month assumed July)
+- 2027-09-01 PNG: Bougainville transition from 1 Sep 2027
+- 2027-09-11 PSE: Legislative elections postponed from 28 Nov 2026 to 11 Sep 2027
+- 2027-09-11 nsa-hamas: Palestinian legislative elections postponed to 11 Sep 2027
+- 2027-09-30 RUS: EU ban on Russian gas by 30 Sep 2027
+- 2027-09-30 org-eu: EU ban on Russian gas by 30 Sep 2027
+- 2027-11-01 ISR: ICJ genocide case: reply due Nov 2027 (day not given)
+- 2027-12-01 ALB: EU talks: government aims to finish by end-2027 ('by end-2027'); month not given, December assumed
+- 2027-12-01 BIH: Southern Interconnection gas pipeline due by end-2027 (month assumed December)
+- 2027-12-01 CAN: Submarine contract not expected before end of 2027
+- 2027-12-01 DEU: 45th Panzer Brigade in Lithuania by end-2027 (month assumed December)
+- 2027-12-01 EST: Baltic Defence Line planned by end-2027 (month assumed December)
+- 2027-12-01 ITA: UN force UNIFIL leaves at end-2027; Italy plans to stay in south Lebanon after (month assumed December)
+- 2027-12-01 MDG: Presidential elections due in late 2027 (month assumed December)
+- 2027-12-01 MYS: Parliament expires December 2027 (month assumed December)
+- 2027-12-01 NLD: EU ban on Russian gas complete by end-2027 (month assumed December)
+- 2028-01-01 COD: End of Tshisekedi's second term (2028); referendum route to change constitution (year only)
+- 2028-01-01 ESP: Bay of Biscay interconnector with France due 2028 (year only)
+- 2028-01-01 IDN: Capital move date slipping to 2028 (year only)
+- 2028-01-01 ISR: US MOU with Israel expires in 2028 (year only)
+- 2028-01-01 MDA: PAS aims to close EU negotiations by 2028 and join by 2030 (year only)
+- 2028-01-01 MNE: EU accession target 2028 (year only)
+- 2028-01-01 PHL: 2028 succession (presidential, year only)
+- 2028-01-01 PRT: Bay of Biscay interconnector due 2028; EU investment screening mandatory by Jan 2028 (year only)
+- 2028-01-01 ROU: NATO rotating command of Black Sea task force from 2028 (year only)
+- 2028-01-01 SGP: Indonesian pipeline gas contracts end by 2028 (year only)
+- 2028-01-01 TON: Bulk of the principal of China loans due by 2028 (year only)
+- 2028-01-01 UZB: Qosh Tepa canal expected finished in 2028 (year only)
+- 2028-02-01 MYS: General election must be held by February 2028
+- 2028-05-01 KWT: Constitution suspension (decree rule) can last until May 2028 (restoration window)
+- 2028-05-01 LBN: Parliament's extended term runs to May 2028
+- 2028-05-01 nsa-hezbollah: Parliament's mandate extended to May 2028
+- 2028-06-01 SUR: Block 58 first oil expected by mid-2028 (month assumed June)
+- 2028-07-01 TUR: Troop and spaceport mandate in Somalia renewed to July 2028 (month of renewal, year only in text)
+- 2028-07-27 SOM: Turkish troop mandate renewed to 27 Jul 2028
+- 2028-08-23 MYS: Najib's house arrest after pardon runs until 23 Aug 2028
+- 2028-12-01 GEO: EU membership talks suspended until end of 2028 (month assumed December)
+- 2028-12-01 THA: Replacement submarine delivery expected at end of 2028 (month assumed December)
+- 2029-01-01 DZA: Presidential term ends 2029; constitutional revision to extend it reported in preparation
+- 2029-01-01 GAB: Ban on raw manganese exports from 2029 (announced)
+- 2029-01-01 KAZ: Tokayev's presidential term ends 2029 (year only)
+- 2029-01-01 TLS: Final investment decision on the gas project targeted for 2029 (year only)
+- 2029-01-20 CAN: Quebec sovereignty referendum not before 20 Jan 2029
+- 2030-01-01 ZWE: Constitutional amendment extends Mnangagwa's rule to 2030 (year only)
+- 2031-01-01 COG: Sassou Nguesso's mandate runs to 2031 (fifth term from March 2026)
+- 2031-01-01 LVA: Canadian presence in NATO brigade at Adazi confirmed until 2031 (year only)
+- 2031-01-01 PER: President's term 2026-2031 ends (year only)
+- 2031-03-01 JPN: Yonaguni missiles by March 2031
+- 2031-12-01 VNM: Ninh Thuan 1 nuclear units target before end-2031 (month assumed December)
+- 2032-01-01 SWE: Baltic naval HQ move to Sweden around 2032 (year only)
+- 2034-01-01 RWA: 2015 referendum lets the president rule to 2034 (year only)
+- 2034-01-01 SVK: SPP-Gazprom long-term gas contract to 2034 (year only)
+- 2035-01-01 SGP: 1990 US forces MoU runs to about 2035 (year only)
+- 2043-01-01 FSM: US Compact package runs through 2043 (20 years)
+- 2043-01-01 PLW: US Compact funding runs 20 years through 2043
+- 2061-01-01 SGP: 1962 Johor water agreement runs to 2061
