@@ -8,7 +8,14 @@ the inbox item by item (committed as soon as done), then triage, rows applied, d
 translation, build, push. Each stage below is appended when it closes; if the entry stops, the next session picks up
 from the last line and from `git log`.
 
-- Stage 1, datasets: started.
+- Stage 1, datasets: running in the background (the scripts' client name no longer carries an address, the privacy
+  rule blocked the first run).
+- Stage 2, portal pass: done. 13-15 Nov: 10 rows (Iran against Bahrain and a US base, 13-14 Nov, Iranian sources
+  only; Qatar-Turkey defence pact signed in Istanbul, 13 Nov; arson in Estonia attributed to the GRU, crossings closed
+  from 1 Dec; Australia-Philippines defence agreement, 15 Nov; Israel kills Hamas commander Samir Abu Younis).
+  16-19 Nov: 25 rows (Ukraine hits the Kerch bridge three times in four days; US strikes on Qeshm and an MQ-9 claimed
+  shot down, 17 Nov; Iranian drones on Sheikh Isa air base in Bahrain; a US-Venezuela military agreement signed,
+  18 Nov; Houthi missiles on Riyadh damaging the PIF tower, 19 Nov). 35 candidates in `data/inbox/2026-W47-*`.
 
 ## 2026-11-12 · W46 on a 5% budget: Riyadh hit, Eisenkot's mandate, 18 rows
 
