@@ -1,6 +1,6 @@
 # Journal
 
-## 2026-11-19 · W47, in progress (written step by step: tokens are short, the session may die)
+## 2026-11-19 · W47, written step by step (tokens were short): Riyadh again, Estonia closes, Qatar-Turkey pact, Shenzhen pending
 
 Davide: "update settimanale MA stiamo finendo i token ... fatto in un modo che scrive tutto quello che trova man mano".
 Plan: datasets and GDELT first (committed as soon as done), then two Haiku portal passes (13-15 and 16-19 Nov) writing
@@ -24,6 +24,19 @@ from the last line and from `git log`.
   fighting, domestic).
 - Stage 3, triage: Davide accepted all rows ("tutte e 25") and asked for deltas on Venezuela, Qatar, Estonia, plus
   the Shenzhen APEC meeting ("più meeting di shenzen"): CHN and USA cards. Rows applied, build OK.
+- Stage 4, deltas (five Haiku, low effort): Qatar (defence pact with Turkey, 13 Nov, a mutual-defence clause per
+  France 24/AFP: QAT->TUR trend stable to warming, grade ally kept; the 19 Nov memorandum with Pakistan is internal
+  security only and its Al Jazeera source would not open, row to verify), Estonia (reading, RUS note, two rows:
+  the closure announced 15 Nov, the Russian charge d'affaires summoned 16 Nov; effective date 1 Dec to verify),
+  United States (a dated reading paragraph; no stance moved), Venezuela (no change: two Haiku found only talks
+  on a status-of-forces agreement and no second source for the 18 Nov signing, so both rows of the agreement
+  are lowered to C with the caveat in the summary), China (no change: three passes, ten web calls, the Shenzhen
+  trilateral Xi-Trump-Putin of 19 Nov is confirmed by the White House announcement but no quality source
+  reports the outcome yet; the joint declaration in the USA->CHN row is marked as to be confirmed; next week).
+- Stage 5: card texts translated, build OK (4417 stances, 10368 relations), pushed. Tokens for the week about 1.1M
+  (portal 0.22M, spike check 0.1M, deltas 0.7M, translation and coordination). Total 47.1M.
+- Left for the next cycle: Shenzhen outcome (CHN and USA), the US-Venezuela agreement (confirm or delete), the
+  Qatar-Pakistan memorandum, Estonia's effective date, the date of Macron's Cambodia visit (9 or 15 Nov).
 
 ## 2026-11-12 · W46 on a 5% budget: Riyadh hit, Eisenkot's mandate, 18 rows
 
