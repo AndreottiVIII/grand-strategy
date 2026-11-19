@@ -25,7 +25,7 @@ except ImportError:  # pragma: no cover
 ROOT = Path(__file__).resolve().parent.parent.parent
 OUT = ROOT / "data" / "datasets" / "wikipedia"
 ACTORS = ROOT / "data" / "actors"
-UA = "grand-strategy-atlas/0.1 (https://github.com/AndreottiVIII/grand-strategy; davide.caniatti@gmail.com)"
+UA = "grand-strategy-atlas/0.1 (https://grandstrategy.davidecaniatti.com; contact via the site)"
 API = "https://en.wikipedia.org/w/api.php"
 
 CASES = {

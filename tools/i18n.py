@@ -179,7 +179,7 @@ def cmd_names():
     for i in range(0, len(ids), 50):
         batch = ids[i:i + 50]
         u = ("https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&props=labels&languages=" + LANG + "&ids=" + "|".join(batch))
-        req = urllib.request.Request(u, headers={"User-Agent": "grand-strategy-atlas/1.0 (davide.caniatti@gmail.com)"})
+        req = urllib.request.Request(u, headers={"User-Agent": "grand-strategy-atlas/1.0 (https://grandstrategy.davidecaniatti.com)"})
         ents = json.load(urllib.request.urlopen(req, timeout=120))["entities"]
         for q, e in ents.items():
             lab = (e.get("labels") or {}).get(LANG, {}).get("value")

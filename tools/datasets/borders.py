@@ -14,7 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 WD = ROOT / "data" / "datasets" / "wikidata"
-UA = "grand-strategy-atlas/1.0 (https://github.com/AndreottiVIII/grand-strategy; davide.caniatti@gmail.com)"
+UA = "grand-strategy-atlas/1.0 (https://grandstrategy.davidecaniatti.com; contact via the site)"
 API = "https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&props=claims&ids="
 sys.stdout.reconfigure(encoding="utf-8")
 

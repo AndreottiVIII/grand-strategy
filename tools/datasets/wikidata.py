@@ -18,7 +18,7 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent.parent
 OUT = ROOT / "data" / "datasets" / "wikidata"
 ACTORS = ROOT / "data" / "actors"
-UA = "grand-strategy-atlas/0.1 (https://github.com/AndreottiVIII/grand-strategy; davide.caniatti@gmail.com)"
+UA = "grand-strategy-atlas/0.1 (https://grandstrategy.davidecaniatti.com; contact via the site)"
 SPARQL = "https://query.wikidata.org/sparql"
 
 # organisations whose membership is an alignment row: our id, Wikidata item (resolved by name and label-checked,
