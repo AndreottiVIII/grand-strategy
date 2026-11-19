@@ -16,6 +16,14 @@ from the last line and from `git log`.
   16-19 Nov: 25 rows (Ukraine hits the Kerch bridge three times in four days; US strikes on Qeshm and an MQ-9 claimed
   shot down, 17 Nov; Iranian drones on Sheikh Isa air base in Bahrain; a US-Venezuela military agreement signed,
   18 Nov; Houthi missiles on Riyadh damaging the PIF tower, 19 Nov). 35 candidates in `data/inbox/2026-W47-*`.
+- Stage 1 closed: 932 memberships, 579 recognition rows; GDELT heat 12-18 Nov: surging Estonia, Philippines, Bahrain,
+  Cambodia, Seychelles, Guinea, Peru; burning Bahrain (10 times its normal), Estonia, Guinea, Burkina Faso, Kuwait.
+- Spike rule: a micro Haiku on the Philippines (Marcos at ASEAN Manila and APEC Shenzhen, no bilateral act found),
+  Cambodia (Macron's state visit, 29 agreements, date to check: a FRA->KHM row at C), Guinea (Siguiri gold-mining
+  crackdown, domestic), Peru (Pope Leo XIV, 13-16 Nov, no citable url found, not written), Burkina Faso (jihadist
+  fighting, domestic).
+- Stage 3, triage: Davide accepted all rows ("tutte e 25") and asked for deltas on Venezuela, Qatar, Estonia, plus
+  the Shenzhen APEC meeting ("più meeting di shenzen"): CHN and USA cards. Rows applied, build OK.
 
 ## 2026-11-12 · W46 on a 5% budget: Riyadh hit, Eisenkot's mandate, 18 rows
 

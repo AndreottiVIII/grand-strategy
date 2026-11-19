@@ -1305,3 +1305,32 @@ relations:
     publisher: Reuters
     date: '2026-11-11'
     tier: 3
+- to: nsa-hamas
+  layer: action
+  type: incident
+  summary: The Israeli military says it killed Samir Abu Younis, commander of the Rafah brigade of the Al-Qassam Brigades, in an airstrike in southern Gaza on 15 November. Hamas confirmed his death. Source
+    is the Israeli claim, with Hamas confirmation.
+  since: 2026-11-15
+  until: null
+  last_verified: '2026-11-19'
+  confidence: B
+  sources:
+  - url: https://www.middleeasteye.net/live-blog/live-blog-update/hamas-commander-samir-abu-younis-killed-israeli-strike-khan-younis
+    title: Hamas commander Samir Abu Younis killed in Israeli strike
+    publisher: Middle East Eye
+    date: '2026-11-15'
+    tier: 4
+- to: PSE
+  layer: action
+  type: incident
+  summary: Israeli troops shelled and fired on areas of the Gaza Strip on 15 November, killing three Palestinians. The attacks continue what the source calls violations of the October 2025 ceasefire.
+  since: 2026-11-15
+  until: null
+  last_verified: '2026-11-19'
+  confidence: C
+  sources:
+  - url: https://www.aa.com.tr/en/middle-east/3-palestinians-killed-in-israeli-attacks-across-gaza-medical-sources/4126079
+    title: 3 Palestinians killed in Israeli attacks across Gaza, medical sources
+    publisher: AA
+    date: '2026-11-15'
+    tier: 4
