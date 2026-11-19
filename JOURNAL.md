@@ -41,6 +41,24 @@ from the last line and from `git log`.
   to change it, nothing outside the real host, no notice for webdriver; a "Visits and cookies" section on This site in
   both languages. Verified locally and on the live site: no request to Google before a choice, GoatCounter unchanged,
   console clean. Commit 8174c264.
+- Evening wave, Davide: "finisci i token mandando gli agenti come prima a vedere anche altro e scrivano mentre vanno".
+  Fourteen Haiku (low effort), all writing file by file, each result committed as it came:
+  Shenzhen: three Haiku passes could not open AFP or BBC; the coordinator read the BBC article in the browser pane,
+  saved the facts in `tools/briefs/shenzhen-bbc-2026-11-19.md`, and a Haiku wrote CHN, RUS and USA (readings, stance
+  notes, the USA->CHN row confirmed at B, a USA->RUS visit row); the trilateral issued a "joint declaration of peace"
+  (nuclear war must never be fought, more petroleum, UN reform, the ICC must not abuse its jurisdiction); no trend moved.
+  Checks: the US-Venezuela "agreement" is talks on a status-of-forces agreement (rows rewritten, C); Qatar-Pakistan is
+  an internal-security agreement (action/agreement, C); Estonia's closure confirmed for 1 Dec, three road crossings;
+  Macron in Cambodia confirmed 15 Nov (B). USA post-midterm: still no concrete act by the new majorities, nothing
+  written. Bahamas, Antigua, Grenada: already full since 16 Oct (stale backlog note, corrected). Saint Vincent: a
+  relations file, 8 rows. Watch dates: 134 scheduled events in 88 cards, from the cards' own texts (nearest: Hungary's
+  Russia waiver 21 Nov, Bangladesh's LDC graduation 24 Nov, Spain's election 29 Nov). Neighbour stances: 22 on MOZ,
+  ZMB, COD, CMR, COG; 7 on HND, SLV, GTM; 8 on PLW, NRU, FJI, LCA, DMA, ATG; Togo, Gabon, Suriname +6 stances and
+  +6 rows; the agents left `since` out, so the coordinator dated each new stance from its earliest source (comment in
+  the file). HUN-BIH and ISR-NOR: asymmetries kept, notes dated. ONTOLOGY and the build comment: the seam example is
+  now a state in both NATO and the EU (Cyprus is not in NATO). Borders dataset lists Cameroon and DR Congo as
+  neighbours: wrong, in BACKLOG. Build OK: 4491 stances, 10383 relations, warnings 146 -> 177 (to read next time).
+  Tokens for the evening about 1.6M. Total 48.7M.
 - Left for the next cycle: Shenzhen outcome (CHN and USA), the US-Venezuela agreement (confirm or delete), the
   Qatar-Pakistan memorandum, Estonia's effective date, the date of Macron's Cambodia visit (9 or 15 Nov).
 
