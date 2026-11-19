@@ -1,0 +1,97 @@
+from: VCT
+# Rows drawn from the VCT card's own sources (Wikipedia index, tier 4, and the UN/OAS/Commonwealth
+# member pages, tier 1) and from a small set of web checks dated 2026-11-19. Memberships,
+# recognitions and UN votes are NOT written here: they come from the datasets.
+relations:
+  # ---------- objective ----------
+  - to: TWN
+    layer: objective
+    type: recognition_sought
+    summary: "Keeps its recognition of the Republic of China (Taiwan), recorded by the Wikipedia recognition index as full diplomatic relations with no start date. Whether the government that took office after the November 2025 election keeps it is checked in the web pass below, not here."
+    since: 1981-08-15
+    until: null
+    last_verified: 2026-11-19
+    confidence: C
+    sources:
+      - {url: "https://en.wikipedia.org/w/index.php?title=Foreign_relations_of_Taiwan&oldid=1378208098", title: "Foreign relations of Taiwan", publisher: "Wikipedia (index)", date: 2026-10-12, tier: 4}
+
+  - to: org-un
+    layer: objective
+    type: membership_goal
+    summary: "Stays inside the United Nations, one of the forums where a small state's vote counts as much as any other. This is our reading of the card; the membership itself is in the datasets."
+    since: 1979-10-27
+    until: null
+    last_verified: 2026-11-19
+    confidence: C
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines", title: "Saint Vincent and the Grenadines", publisher: "Wikipedia (index)", date: 2026-10-16, tier: 4}
+
+  - to: org-oas
+    layer: objective
+    type: membership_goal
+    summary: "Stays inside the Organization of American States, the regional forum where its vote counts as much as any other. Our reading of the card; the membership itself is in the datasets."
+    since: 1979-10-27
+    until: null
+    last_verified: 2026-11-19
+    confidence: C
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines", title: "Saint Vincent and the Grenadines", publisher: "Wikipedia (index)", date: 2026-10-16, tier: 4}
+
+  - to: org-commonwealth
+    layer: objective
+    type: membership_goal
+    summary: "Stays inside the Commonwealth of Nations, the forum that gives a small state a seat at the table with the UK. Our reading of the card; the membership itself is in the datasets."
+    since: 1979-10-27
+    until: null
+    last_verified: 2026-11-19
+    confidence: C
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines", title: "Saint Vincent and the Grenadines", publisher: "Wikipedia (index)", date: 2026-10-16, tier: 4}
+
+  # ---------- action ----------
+  - to: USA
+    layer: action
+    type: visit
+    summary: "Summit with President Bill Clinton at Bridgetown in May 1997, on justice, counternarcotics, finance and trade (the Wikipedia foreign relations page). Dated to the month only; no other source read here."
+    since: 1997-05-01
+    until: null
+    last_verified: 2026-11-19
+    confidence: C
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Foreign_relations_of_Saint_Vincent_and_the_Grenadines", title: "Foreign relations of Saint Vincent and the Grenadines", publisher: "Wikipedia (index)", date: 2026-10-16, tier: 4}
+
+  - to: TWN
+    layer: action
+    type: visit
+    summary: "Prime Minister Godwin Friday's first official visit to Taiwan as prime minister, for the 45th anniversary of ties (reported 13 August 2026). He pledged the new administration would keep the relationship, which the Taiwanese presidency reports and Focus Taiwan confirms. The since date is the month of the report, not a confirmed day of the visit."
+    since: 2026-08-13
+    until: null
+    last_verified: 2026-11-19
+    confidence: B
+    sources:
+      - {url: "https://english.president.gov.tw/NEWS/7199", title: "Taiwan presidency news item on the St Vincent and the Grenadines prime minister visit", publisher: "Office of the President, Republic of China (Taiwan)", date: 2026-08-13, tier: 1}
+      - {url: "https://focustaiwan.tw/politics/202608100007", title: "St. Vincent and the Grenadines prime minister to visit Taiwan", publisher: "Focus Taiwan (Central News Agency)", date: 2026-08-10, tier: 3}
+
+  - to: VEN
+    layer: action
+    type: agreement
+    summary: "Memorandum of understanding signed in October 2025 for the ALBA Azul project between Saint Vincent and the Grenadines and Venezuela, described by the Venezuelan embassy as a milestone in regional integration. Ties continued under the Friday government: a March 2026 meeting of officials with Venezuela's vice foreign minister for the Caribbean. The source names Agriculture Minister Saboto Caesar, so the signing government is not confirmed. Single tier-3 source, so C."
+    since: 2025-10-07
+    until: null
+    last_verified: 2026-11-19
+    confidence: C
+    sources:
+      - {url: "https://www.searchlight.vc/press-release/2025/10/07/minister-agriculture-visits-venezuela/", title: "Minister of Agriculture visits Venezuela (ALBA Azul memorandum)", publisher: "Searchlight (St Vincent)", date: 2025-10-07, tier: 3}
+
+  - to: GBR
+    layer: dependency
+    type: trade_share
+    value: 35
+    unit: gbp_million_exports_to_vct
+    summary: "UK exports to Saint Vincent and the Grenadines of GBP 35 million in the four quarters to the end of Q1 2026, per the UK government trade factsheet. This is a value, not a share of the country's imports, so the unit says so. Trade runs under a continuity agreement based on the EU deal."
+    since: 2025-04-01
+    until: 2026-03-31
+    last_verified: 2026-11-19
+    confidence: A
+    sources:
+      - {url: "https://assets.publishing.service.gov.uk/media/6ab2544fa9c3d267bcccecc7/st-vincent-trade-and-investment-factsheet-2026-09-24.pdf", title: "St Vincent and the Grenadines trade and investment factsheet", publisher: "UK Government (Department for Business and Trade)", date: 2026-09-24, tier: 1}
